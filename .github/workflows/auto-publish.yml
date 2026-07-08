@@ -3,7 +3,7 @@ name: Publicar artículo de Psicotrading automáticamente
 on:
   schedule:
     - cron: '0 14 * * 1,4'
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 jobs:
   generate-article:
