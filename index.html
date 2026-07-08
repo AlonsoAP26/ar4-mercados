@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AR4 Mercados — Brokers, Copytrading y Fondeo para Latinoamérica</title>
+<meta name="description" content="Reviews de brokers forex, cuentas de fondeo, copytrading, noticias de mercado y calendario económico para traders de Latinoamérica.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ticker superior -->
+<div class="ticker-bar">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        {"proName": "FX_IDC:USDMXN", "title": "USD/MXN"},
+        {"proName": "FX_IDC:USDARS", "title": "USD/ARS"},
+        {"proName": "FX_IDC:USDCOP", "title": "USD/COP"},
+        {"proName": "FX_IDC:USDPEN", "title": "USD/PEN"},
+        {"proName": "FX_IDC:USDCLP", "title": "USD/CLP"},
+        {"proName": "FX:EURUSD", "title": "EUR/USD"},
+        {"proName": "OANDA:XAUUSD", "title": "ORO"},
+        {"proName": "TVC:USOIL", "title": "PETRÓLEO"},
+        {"proName": "BITSTAMP:BTCUSD", "title": "BTC/USD"},
+        {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"}
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": true,
+      "displayMode": "compact",
+      "colorTheme": "dark",
+      "locale": "es"
+    }
+    </script>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">AR4 <span>MERCADOS</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="brokers.html">Brokers</a>
+      <a href="copytrading.html">Copytrading</a>
+      <a href="fondeo.html">Fondeo</a>
+      <a href="psicotrading.html">Psicotrading</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="calendario.html">Calendario</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Trading · Inversiones · Latinoamérica</span>
+      <h1>Información de mercado que <span class="gold">respalda tus decisiones</span></h1>
+      <p>Reviews imparciales de brokers y cuentas de fondeo, guías de copytrading, noticias resumidas y el calendario económico — todo en un solo lugar, pensado para el trader latinoamericano.</p>
+      <div class="hero-actions">
+        <a href="brokers.html" class="btn btn-gold">Ver mejores brokers</a>
+        <a href="fondeo.html" class="btn btn-outline">Cuentas de fondeo</a>
+      </div>
+    </div>
+    <div class="hero-widget">
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+        {
+          "colorTheme": "dark",
+          "dateRange": "12M",
+          "showChart": true,
+          "locale": "es",
+          "width": "100%",
+          "height": "400",
+          "largeChartUrl": "",
+          "isTransparent": true,
+          "showSymbolLogo": true,
+          "showFloatingTooltip": false,
+          "plotLineColorGrowing": "rgba(212, 175, 55, 1)",
+          "plotLineColorFalling": "rgba(212, 175, 55, 1)",
+          "gridLineColor": "rgba(240, 243, 250, 0.06)",
+          "scaleFontColor": "rgba(139, 147, 167, 1)",
+          "belowLineFillColorGrowing": "rgba(212, 175, 55, 0.12)",
+          "belowLineFillColorFalling": "rgba(212, 175, 55, 0.12)",
+          "belowLineFillColorGrowingBottom": "rgba(212, 175, 55, 0)",
+          "belowLineFillColorFallingBottom": "rgba(212, 175, 55, 0)",
+          "symbolActiveColor": "rgba(212, 175, 55, 0.18)",
+          "tabs": [
+            {
+              "title": "Forex",
+              "symbols": [
+                {"s": "FX:EURUSD"},
+                {"s": "FX:USDMXN"},
+                {"s": "FX:USDCOP"},
+                {"s": "FX:GBPUSD"},
+                {"s": "FX:USDJPY"}
+              ]
+            },
+            {
+              "title": "Índices",
+              "symbols": [
+                {"s": "FOREXCOM:SPXUSD"},
+                {"s": "FOREXCOM:NSXUSD"},
+                {"s": "BMV:ME"},
+                {"s": "BCBA:IMV"}
+              ]
+            }
+          ]
+        }
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Aviso de riesgo -->
+<div class="risk-strip">
+  <div class="container">
+    ⚠️ El trading conlleva un alto riesgo de pérdida de capital. La información de este sitio es educativa e informativa, no constituye asesoría financiera. Opera bajo tu propio criterio y responsabilidad.
+  </div>
+</div>
+
+<!-- Brokers destacados -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Broker recomendado</h2>
+      <a href="brokers.html" class="see-all">Ver comparativa completa →</a>
+    </div>
+
+    <div class="featured-broker">
+      <div class="featured-ribbon">★ BROKER RECOMENDADO #1</div>
+      <div class="featured-grid">
+        <div class="featured-main">
+          <div class="featured-brand">PEPPERSTONE</div>
+          <div class="stars" style="margin:10px 0 16px;">★★★★★ <span>4.9 / 5</span></div>
+          <p class="featured-desc">Regulado por ASIC, FCA y CySEC. Spreads desde 0.0 pips en cuenta Razor, sin comisión por depósito ni retiro, y ejecución rápida ideal para operar noticias de alto impacto.</p>
+          <ul class="featured-facts">
+            <li><span>Regulación</span><strong>ASIC · FCA · CySEC</strong></li>
+            <li><span>Depósito mínimo</span><strong>Desde $0 USD</strong></li>
+            <li><span>Spreads (Razor)</span><strong>Desde 0.0 pips</strong></li>
+          </ul>
+          <div class="hero-actions" style="margin-top:20px;">
+            <a href="https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935" target="_blank" rel="noopener sponsored" class="btn btn-crimson">Abrir cuenta en Pepperstone →</a>
+          </div>
+        </div>
+        <div class="featured-side">
+          <div class="why-box">
+            <h4>¿Por qué Pepperstone?</h4>
+            <ul>
+              <li>✔ Regulación de primer nivel</li>
+              <li>✔ Sin comisión por depósito/retiro</li>
+              <li>✔ Compatible con copytrading</li>
+            </ul>
+            <a href="https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935" target="_blank" rel="noopener sponsored" class="btn btn-gold btn-block">Ver oferta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Copytrading + Fondeo -->
+<section class="section section-alt">
+  <div class="container two-col">
+    <div class="promo-card">
+      <span class="eyebrow small">Copytrading</span>
+      <h3>Copia a los mejores traders automáticamente</h3>
+      <p>Aprende qué es el copytrading y compara las plataformas más usadas en Latinoamérica para replicar operaciones sin experiencia previa.</p>
+      <a href="copytrading.html" class="btn btn-outline">Explorar plataformas</a>
+    </div>
+    <div class="promo-card">
+      <span class="eyebrow small">Cuentas de fondeo</span>
+      <h3>Opera con capital de una prop firm</h3>
+      <p>Comparativa de las mejores cuentas de fondeo: reglas, costos, splits de ganancia y cuál se adapta mejor a tu estilo de trading.</p>
+      <a href="fondeo.html" class="btn btn-outline">Ver comparativa</a>
+    </div>
+  </div>
+</section>
+
+<!-- Noticias -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Noticias del mercado <span class="badge-live">actualizado hoy</span></h2>
+      <a href="noticias.html" class="see-all">Ver todas →</a>
+    </div>
+    <div class="news-list">
+      <article class="news-item">
+        <span class="news-tag">Forex</span>
+        <span class="badge-impact high" style="margin-left:8px;">Alto impacto</span>
+        <h4>El euro se mantiene cerca de mínimos anuales frente al dólar</h4>
+        <p>El EUR/USD cotiza cerca de 1.14 mientras el repunte del petróleo por la tensión EE.UU.-Irán reaviva las expectativas de una subida de tasas del BCE.</p>
+        <span class="news-meta">Fuente: <a href="https://www.dailyforex.com/forex-technical-analysis/2026/07/eurusd-analysis-8-july-2026/247419" target="_blank" rel="noopener">DailyForex</a> · hace 25 min</span>
+      </article>
+      <article class="news-item">
+        <span class="news-tag">LatAm</span>
+        <span class="badge-impact medium" style="margin-left:8px;">Impacto medio</span>
+        <h4>Real, peso chileno y peso mexicano se afianzan por un dólar más débil</h4>
+        <p>El carry trade regional sigue siendo el gran soporte: con la Selic en 14.25%, Brasil continúa pagando bien a quien mantiene posiciones en reales.</p>
+        <span class="news-meta">Fuente: <a href="https://www.riotimesonline.com/latam-pre-open-wednesday-july-8-2026/" target="_blank" rel="noopener">Rio Times Online</a> · hace 1 h</span>
+      </article>
+      <article class="news-item">
+        <span class="news-tag">Commodities</span>
+        <span class="badge-impact high" style="margin-left:8px;">Alto impacto</span>
+        <h4>El petróleo Brent toca máximos de dos semanas</h4>
+        <p>Nuevos ataques entre EE.UU. e Irán impulsan al crudo y complican el panorama de inflación global justo antes de las minutas de la Fed.</p>
+        <span class="news-meta">Fuente: <a href="https://tradingeconomics.com/euro-area/currency" target="_blank" rel="noopener">Trading Economics</a> · hace 40 min</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Calendario económico -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Calendario económico</h2>
+      <a href="calendario.html" class="see-all">Ver completo →</a>
+    </div>
+    <div class="calendar-embed">
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+        {
+          "colorTheme": "dark",
+          "isTransparent": true,
+          "width": "100%",
+          "height": "450",
+          "locale": "es",
+          "importanceFilter": "-1,0,1",
+          "countryFilter": "us,mx,br,ar,co,cl,pe,eu,gb"
+        }
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">AR4 <span>MERCADOS</span></div>
+      <p class="footer-text">Información de mercado, brokers y educación financiera para Latinoamérica.</p>
+    </div>
+    <div>
+      <h5>Explorar</h5>
+      <a href="brokers.html">Brokers</a>
+      <a href="copytrading.html">Copytrading</a>
+      <a href="fondeo.html">Fondeo</a>
+      <a href="psicotrading.html">Psicotrading</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="calendario.html">Calendario</a>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <p class="footer-text">© <span id="year"></span> AR4 Mercados. Este sitio no ofrece asesoría financiera regulada. Algunos enlaces son de afiliados: podemos recibir una comisión sin costo adicional para ti.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

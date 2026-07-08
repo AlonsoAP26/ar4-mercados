@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psicotrading: Psicología y Disciplina del Trader — AR4 Mercados</title>
+<meta name="description" content="Artículos sobre psicología de trading, gestión de riesgo emocional, FOMO, revenge trading, disciplina y rutinas para traders latinoamericanos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ticker-bar">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        {"proName": "FX_IDC:USDMXN", "title": "USD/MXN"},
+        {"proName": "FX_IDC:USDCOP", "title": "USD/COP"},
+        {"proName": "FX:EURUSD", "title": "EUR/USD"},
+        {"proName": "OANDA:XAUUSD", "title": "ORO"}
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": true,
+      "displayMode": "compact",
+      "colorTheme": "dark",
+      "locale": "es"
+    }
+    </script>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">AR4 <span>MERCADOS</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="brokers.html">Brokers</a>
+      <a href="copytrading.html">Copytrading</a>
+      <a href="fondeo.html">Fondeo</a>
+      <a href="psicotrading.html">Psicotrading</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="calendario.html">Calendario</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Psicotrading</div>
+    <span class="badge-live">NUEVOS ARTÍCULOS AUTOMÁTICOS</span>
+    <h1 style="margin-top:14px;">La mente es el <span class="gold">indicador más importante</span></h1>
+    <p>La mayoría de las pérdidas no vienen de un mal análisis técnico, vienen de decisiones emocionales: FOMO, revenge trading, sobre-apalancamiento. Aquí encuentras artículos para entrenar la parte del trading que ningún indicador puede mostrarte.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+
+    <div class="filter-bar" id="psicoFilterBar">
+      <button class="filter-chip active" data-filter="all">Todos</button>
+    </div>
+
+    <div class="card-grid two-up" id="articulosGrid">
+      <p class="footer-text">Cargando artículos...</p>
+    </div>
+
+    <div class="promo-banner" style="margin-top:36px;">
+      <div class="promo-banner-text">
+        <h3>¿Ya tienes tu plan pero te falta el broker adecuado?</h3>
+        <p>La disciplina también depende de operar con ejecución rápida y spreads bajos, sin excusas técnicas de por medio.</p>
+      </div>
+      <a href="https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935" target="_blank" rel="noopener sponsored" class="btn btn-crimson">Ver oferta de Pepperstone</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">AR4 <span>MERCADOS</span></div>
+      <p class="footer-text">Información de mercado, brokers y educación financiera para Latinoamérica.</p>
+    </div>
+    <div>
+      <h5>Explorar</h5>
+      <a href="brokers.html">Brokers</a>
+      <a href="copytrading.html">Copytrading</a>
+      <a href="fondeo.html">Fondeo</a>
+      <a href="psicotrading.html">Psicotrading</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="calendario.html">Calendario</a>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <p class="footer-text">© <span id="year"></span> AR4 Mercados. Los artículos de Psicotrading son educativos, generados por IA y revisados editorialmente; no sustituyen apoyo psicológico profesional. El enlace de Pepperstone es de afiliado.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/articulos.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
