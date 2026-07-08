@@ -59,7 +59,8 @@ exports.handler = async (event) => {
     }
 
     const data = await res.json();
-    const reply = data.content && data.content[0] ? data.content[0].text : 'No pude generar una respuesta, intenta de nuevo.';
+    const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
+    const reply = textBlock ? textBlock.text : 'No pude generar una respuesta, intenta de nuevo.';
 
     return {
       statusCode: 200,

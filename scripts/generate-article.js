@@ -60,7 +60,12 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   }
 
   const data = await res.json();
-  const rawText = data.content[0].text.trim();
+  const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
+  if (!textBlock) {
+    console.error('Respuesta inesperada de la API:', JSON.stringify(data));
+    process.exit(1);
+  }
+  const rawText = textBlock.text.trim();
 
   let nuevo;
   try {
