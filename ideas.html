@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="pageTitle">Artículo — AR4 Mercados</title>
-<meta name="description" id="pageDesc" content="Artículo de psicotrading — AR4 Mercados">
+<title>Ideas de Trading: Análisis de Mercado — AR4 Mercados</title>
+<meta name="description" content="Análisis de mercado sobre forex, materias primas y divisas latinoamericanas: contexto, niveles clave y catalizadores. Contenido informativo, no señales de compra/venta.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -18,8 +18,11 @@
     {
       "symbols": [
         {"proName": "FX_IDC:USDMXN", "title": "USD/MXN"},
+        {"proName": "FX_IDC:USDCOP", "title": "USD/COP"},
+        {"proName": "FX_IDC:USDCLP", "title": "USD/CLP"},
         {"proName": "FX:EURUSD", "title": "EUR/USD"},
-        {"proName": "OANDA:XAUUSD", "title": "ORO"}
+        {"proName": "OANDA:XAUUSD", "title": "ORO"},
+        {"proName": "TVC:USOIL", "title": "PETRÓLEO"}
       ],
       "showSymbolLogo": true,
       "isTransparent": true,
@@ -49,30 +52,32 @@
 
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Inicio</a> / <a href="psicotrading.html">Psicotrading</a> / <span id="breadcrumbTitle">Artículo</span></div>
-    <div id="articleMeta"></div>
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Ideas de Trading</div>
+    <span class="badge-live">ANÁLISIS ACTUALIZADO</span>
+    <h1 style="margin-top:14px;">Contexto de mercado, <span class="gold">no señales mágicas</span></h1>
+    <p>Analizamos qué está moviendo al dólar, las materias primas y las divisas latinoamericanas: contexto, niveles clave y catalizadores a vigilar. Esto es información para entender el mercado — la decisión de operar siempre es tuya.</p>
   </div>
 </section>
 
 <section class="section" style="padding-top:32px;">
   <div class="container">
-    <article class="article-body" id="articleBody">
-      <p class="footer-text">Cargando artículo...</p>
-    </article>
 
-    <div class="promo-banner" style="margin-top:40px;">
+    <div class="filter-bar" id="ideasFilterBar">
+      <button class="filter-chip active" data-filter="all">Todas</button>
+    </div>
+
+    <div class="card-grid two-up" id="ideasGrid">
+      <p class="footer-text">Cargando análisis...</p>
+    </div>
+
+    <div class="promo-banner" style="margin-top:36px;">
       <div class="promo-banner-text">
-        <h3>¿Quieres poner esto en práctica?</h3>
-        <p>Abre una cuenta demo gratuita en Pepperstone y aplica estas reglas de gestión de riesgo sin arriesgar capital real.</p>
+        <h3>¿Quieres seguir estos niveles en tiempo real?</h3>
+        <p>Opera con un broker de ejecución rápida y spreads bajos para reaccionar cuando el precio toque los niveles clave.</p>
       </div>
-      <a href="https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935" target="_blank" rel="noopener sponsored" class="btn btn-crimson">Probar cuenta demo gratis</a>
+      <a href="https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935" target="_blank" rel="noopener sponsored" class="btn btn-crimson">Ver oferta de Pepperstone</a>
     </div>
 
-    <div class="section-head" style="margin-top:40px;">
-      <h2>Más artículos</h2>
-      <a href="psicotrading.html" class="see-all">Ver todos →</a>
-    </div>
-    <div class="card-grid two-up" id="relatedGrid"></div>
   </div>
 </section>
 
@@ -94,13 +99,13 @@
     </div>
     <div>
       <h5>Legal</h5>
-      <p class="footer-text">© <span id="year"></span> AR4 Mercados. Los artículos de Psicotrading son educativos, generados por IA y revisados editorialmente; no sustituyen apoyo psicológico profesional.</p>
+      <p class="footer-text">© <span id="year"></span> AR4 Mercados. Los análisis de Ideas de Trading son contenido informativo generado por IA y revisado editorialmente; no constituyen asesoría financiera ni recomendaciones de inversión. El enlace de Pepperstone es de afiliado.</p>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-<script src="js/articulos.js"></script>
+<script src="js/ideas.js"></script>
 <script src="js/chatbot.js"></script>
 </body>
 </html>
