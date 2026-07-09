@@ -13,6 +13,8 @@
   --red: #ff4d5e;
   --crimson: #e13a4b;
   --crimson-bright: #ff5468;
+  --blue: #4f8cff;
+  --blue-bright: #7aa8ff;
   --radius: 10px;
   --mono: 'JetBrains Mono', monospace;
 }
@@ -570,6 +572,9 @@ a { color: inherit; text-decoration: none; }
   .main-nav.open { display: flex; }
   .nav-toggle { display: block; }
   .chat-panel { width: calc(100vw - 32px); height: 70vh; right: 16px; bottom: 84px; }
+  .chat-launcher-text { display: none; }
+  .chat-launcher { padding: 0; width: 54px; justify-content: center; border-radius: 50%; }
+  .chat-greeting { right: 16px; max-width: calc(100vw - 90px); }
 }
 
 /* Chatbot widget */
@@ -577,22 +582,58 @@ a { color: inherit; text-decoration: none; }
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
+  height: 54px;
+  padding: 0 20px 0 16px;
+  border-radius: 30px;
   background: linear-gradient(135deg, var(--gold-bright), var(--gold));
   color: #16130a;
   border: none;
-  font-size: 1.4rem;
+  font-size: 0.92rem;
+  font-weight: 700;
   cursor: pointer;
   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.35);
   z-index: 200;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 9px;
   transition: transform 0.15s;
 }
-.chat-launcher:hover { transform: scale(1.06); }
+.chat-launcher:hover { transform: scale(1.04); }
+.chat-launcher-icon { font-size: 1.2rem; }
+
+.chat-greeting {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  max-width: 240px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  border-bottom-right-radius: 4px;
+  padding: 14px 34px 14px 16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+  z-index: 199;
+  font-size: 0.85rem;
+  color: var(--text-hi);
+  display: none;
+  animation: greeting-pop 0.25s ease;
+}
+.chat-greeting.show { display: block; }
+.chat-greeting-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--text-low);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px;
+}
+@keyframes greeting-pop {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 .chat-panel {
   position: fixed;
@@ -788,4 +829,67 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 700px) {
   .glossary-grid { grid-template-columns: 1fr; }
+}
+
+/* Noticias: portadas graficas por categoria */
+.news-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  padding: 40px 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--card-border);
+}
+.news-hero .hero-icon { font-size: 3rem; line-height: 1; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)); }
+.news-hero .hero-cat { font-family: var(--mono); text-transform: uppercase; letter-spacing: 1px; font-size: 0.78rem; font-weight: 700; }
+.news-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(115deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 22px);
+  pointer-events: none;
+}
+.news-hero.cat-forex { background: linear-gradient(120deg, #241d0a, #362a0c); }
+.news-hero.cat-forex .hero-cat { color: var(--gold-bright); }
+.news-hero.cat-latam { background: linear-gradient(120deg, #0e2418, #123321); }
+.news-hero.cat-latam .hero-cat { color: var(--green); }
+.news-hero.cat-commodities { background: linear-gradient(120deg, #2a1210, #3a1613); }
+.news-hero.cat-commodities .hero-cat { color: var(--crimson-bright); }
+.news-hero.cat-acciones { background: linear-gradient(120deg, #10192c, #16233c); }
+.news-hero.cat-acciones .hero-cat { color: var(--blue-bright); }
+
+/* Mini portada en tarjetas de noticias */
+.news-hero-mini {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+  margin: -24px -24px 16px;
+}
+.news-hero-mini.cat-forex { background: linear-gradient(120deg, #241d0a, #362a0c); }
+.news-hero-mini.cat-latam { background: linear-gradient(120deg, #0e2418, #123321); }
+.news-hero-mini.cat-commodities { background: linear-gradient(120deg, #2a1210, #3a1613); }
+.news-hero-mini.cat-acciones { background: linear-gradient(120deg, #10192c, #16233c); }
+
+.source-box {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-top: 28px;
+  font-size: 0.85rem;
+  color: var(--text-mid);
+}
+.source-box a { color: var(--gold-bright); font-weight: 600; }
+
+@media (max-width: 600px) {
+  .news-hero { flex-direction: column; text-align: center; padding: 28px 20px; }
 }

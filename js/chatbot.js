@@ -1,8 +1,15 @@
 (function () {
   const launcher = document.createElement('button');
   launcher.className = 'chat-launcher';
-  launcher.setAttribute('aria-label', 'Abrir asistente de psicotrading');
-  launcher.innerHTML = '💬';
+  launcher.setAttribute('aria-label', 'Chatea con nosotros');
+  launcher.innerHTML = '<span class="chat-launcher-icon">💬</span><span class="chat-launcher-text">Chatea con nosotros</span>';
+
+  const greeting = document.createElement('div');
+  greeting.className = 'chat-greeting';
+  greeting.innerHTML = `
+    <button class="chat-greeting-close" aria-label="Cerrar">✕</button>
+    ¿Dudas sobre gestión de riesgo o qué broker elegir? Pregúntame 👋
+  `;
 
   const panel = document.createElement('div');
   panel.className = 'chat-panel';
@@ -25,9 +32,11 @@
   `;
 
   document.body.appendChild(launcher);
+  document.body.appendChild(greeting);
   document.body.appendChild(panel);
 
   const closeBtn = panel.querySelector('.chat-close');
+  const greetingClose = greeting.querySelector('.chat-greeting-close');
   const messagesEl = panel.querySelector('#chatMessages');
   const inputEl = panel.querySelector('#chatInput');
   const sendBtn = panel.querySelector('#chatSend');
@@ -35,7 +44,28 @@
   let history = [];
   let sending = false;
 
-  launcher.addEventListener('click', () => panel.classList.toggle('open'));
+  function hideGreeting() {
+    greeting.classList.remove('show');
+    sessionStorage.setItem('ar4ChatGreetingSeen', '1');
+  }
+
+  if (!sessionStorage.getItem('ar4ChatGreetingSeen')) {
+    setTimeout(() => greeting.classList.add('show'), 4000);
+  }
+
+  greetingClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    hideGreeting();
+  });
+  greeting.addEventListener('click', () => {
+    hideGreeting();
+    panel.classList.add('open');
+  });
+
+  launcher.addEventListener('click', () => {
+    hideGreeting();
+    panel.classList.toggle('open');
+  });
   closeBtn.addEventListener('click', () => panel.classList.remove('open'));
 
   function addMessage(text, role) {
