@@ -42,7 +42,9 @@ Elige también el instrumento principal del que trata el análisis, usando EXACT
 REGLAS ESTRICTAS DE CONTENIDO (muy importantes):
 - Este es un análisis de CONTEXTO, no una señal de trading. NUNCA digas "compra", "vende", "entra en", ni des niveles específicos de entrada/stop loss/take profit como instrucción.
 - Describe qué está moviendo el activo (catalizadores, datos económicos, contexto), qué niveles técnicos son relevantes de VIGILAR (no de operar), y qué podría cambiar el escenario.
-- Escribe en LENGUAJE BÁSICO Y CLARO: evita jerga innecesaria. Si usas un término técnico (soporte, resistencia, catalizador, carry trade, etc.), va bien porque ya hay un glosario en la página, pero explica brevemente el concepto la primera vez que lo uses dentro del texto, en una frase corta entre paréntesis o aposición.
+- Escribe en LENGUAJE BÁSICO Y CLARO pero TÉCNICO: evita jerga innecesaria, pero cuando uses un término técnico (soporte, resistencia, catalizador, carry trade, etc.) explica el concepto brevemente la primera vez que lo uses, en una frase corta entre paréntesis o aposición.
+- TONO HUMANO, NO ROBÓTICO: escribe como lo haría un analista experimentado explicándoselo a un colega, no como una plantilla corporativa. Varía el largo de las frases, usa alguna pregunta retórica si encaja natural, evita fórmulas repetidas como "es importante destacar que" o "cabe mencionar que".
+- SUBTÍTULOS ÚNICOS Y ESPECÍFICOS AL TEMA: nunca uses subtítulos genéricos como "Contexto", "Qué está moviendo el par", "Niveles a vigilar" o "Qué podría cambiar el escenario" literalmente. Inventa 3-4 subtítulos distintos y específicos para ESTE análisis en particular (ej. si es sobre el peso mexicano, algo como "El diferencial de tasas que nadie quiere soltar"). Cada artículo debe sentirse escrito por separado, no con una plantilla fija.
 - Termina siempre con este disclaimer exacto como último párrafo dentro del HTML: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>"
 
 Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), con esta forma exacta:
@@ -51,7 +53,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   "category": "una de las categorías listadas",
   "symbol": "uno de los códigos de instrumento listados arriba, EXACTO",
   "excerpt": "string de 1-2 frases, máximo 200 caracteres",
-  "body": "string HTML con secciones <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">Contexto</h3>, párrafos <p>, listas <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> para niveles a vigilar, terminando con el disclaimer indicado arriba."
+  "body": "string HTML con 3-4 secciones <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo único y específico, NO genérico]</h3>, párrafos <p>, listas <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> para niveles a vigilar cuando aplique, terminando con el disclaimer indicado arriba."
 }`;
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {

@@ -31,6 +31,8 @@ Elige una categoría de esta lista: ${CATEGORIES.join(', ')}.
 No repitas ninguno de estos temas ya publicados:
 ${existingTitles}
 
+TONO: escribe como un analista/coach de trading experimentado hablándole directo a otro trader, no como una plantilla corporativa. Varía el largo de las frases y evita fórmulas repetidas ("es importante destacar que", "cabe mencionar que"). Si usas subtítulos, que sean específicos al tema del artículo, no genéricos.
+
 Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), con esta forma exacta:
 {
   "title": "string, máximo 90 caracteres",
