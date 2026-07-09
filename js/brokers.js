@@ -16,6 +16,78 @@ function brokerCtaUrl(b) {
   return b.affiliateUrl || b.officialUrl;
 }
 
+const TIER1_REGULATORS = ['ASIC', 'FCA', 'CySEC', 'FINMA', 'BaFin', 'Banco Central de Irlanda', 'DFSA', 'FSA Japón'];
+const TIER2_REGULATORS = ['FSCA', 'ADGM'];
+
+function regulationScore(regulationStr) {
+  const parts = (regulationStr || '').split('·').map((s) => s.trim()).filter(Boolean);
+  let tier1 = 0, tier2 = 0, tier3 = 0;
+  parts.forEach((part) => {
+    if (TIER1_REGULATORS.some((k) => part.includes(k))) tier1++;
+    else if (TIER2_REGULATORS.some((k) => part.includes(k))) tier2++;
+    else tier3++;
+  });
+  return Math.min(30, tier1 * 12 + tier2 * 6 + tier3 * 2);
+}
+
+function computeTrustScore(b) {
+  const regScore = regulationScore(b.regulation);
+  const trustpilotScore = (parseFloat(b.trustpilotRating) / 5) * 25;
+  const founded = parseInt(b.founded, 10);
+  const trackRecordScore = Number.isFinite(founded) ? Math.min(15, 2026 - founded) : 0;
+  const ratingValues = b.ratingBreakdown ? Object.values(b.ratingBreakdown) : [];
+  const avgRating = ratingValues.length ? ratingValues.reduce((a, v) => a + v, 0) / ratingValues.length : 0;
+  const operativaScore = (avgRating / 5) * 20;
+  const noInactivityFee = /no cobra/i.test(b.inactivityFee || '');
+  const demoUnlimited = /ilimitada/i.test(b.demoAccount || '');
+  const policyScore = (noInactivityFee ? 5 : 0) + (demoUnlimited ? 5 : 0);
+
+  const total = Math.round(regScore + trustpilotScore + trackRecordScore + operativaScore + policyScore);
+
+  return {
+    total: Math.min(100, total),
+    breakdown: [
+      { label: 'Regulación', points: Math.round(regScore), max: 30 },
+      { label: 'Reputación (Trustpilot)', points: Math.round(trustpilotScore), max: 25 },
+      { label: 'Track record (antigüedad)', points: Math.round(trackRecordScore), max: 15 },
+      { label: 'Calidad operativa', points: Math.round(operativaScore), max: 20 },
+      { label: 'Políticas al cliente', points: policyScore, max: 10 }
+    ]
+  };
+}
+
+function trustScoreLabel(score) {
+  if (score >= 85) return 'Excelente';
+  if (score >= 70) return 'Muy bueno';
+  if (score >= 55) return 'Aceptable';
+  return 'Por debajo del promedio';
+}
+
+function recommendedProfile(b) {
+  const rb = b.ratingBreakdown || {};
+  const eduScore = rb.educacion || 0;
+  const comisionesScore = rb.comisiones || 0;
+  const isECN = /ECN/i.test(b.executionType || '');
+  const depositNum = parseInt((b.minDeposit || '').match(/\d+/) || ['999'], 10);
+
+  if (eduScore >= 4.2 && depositNum <= 100) {
+    return { label: 'Principiante', reason: 'Depósito mínimo accesible y buena calificación en educación/recursos para quienes recién empiezan.' };
+  }
+  if (isECN && comisionesScore >= 4.5) {
+    return { label: 'Trader intermedio/profesional', reason: 'Ejecución ECN con costos competitivos, pensado para quien ya opera con volumen o estrategias sensibles a la velocidad de ejecución.' };
+  }
+  return { label: 'Trader intermedio', reason: 'Buen equilibrio entre costos, plataformas y soporte para quien ya tiene experiencia básica operando.' };
+}
+
+function trustScoreBreakdownHTML(scoreData) {
+  return scoreData.breakdown.map((item) => `
+    <div class="trust-score-row">
+      <div class="trust-score-row-head"><span>${item.label}</span><strong>${item.points}/${item.max}</strong></div>
+      <div class="trust-score-bar-track"><div class="trust-score-bar-fill" style="width:${(item.points / item.max) * 100}%;"></div></div>
+    </div>
+  `).join('');
+}
+
 const RATING_CATEGORY_LABELS = {
   instrumentos: 'Gama de instrumentos',
   comisiones: 'Comisiones y costos',
@@ -44,6 +116,9 @@ function brokerDeepDiveHTML(b) {
     ? Object.values(b.ratingBreakdown).reduce((a, v) => a + v, 0) / Object.values(b.ratingBreakdown).length
     : null;
 
+  const trustScore = computeTrustScore(b);
+  const profile = recommendedProfile(b);
+
   const faqHTML = (b.faq || []).map(item => `
     <details class="faq-item">
       <summary>${item.q}</summary>
@@ -60,7 +135,26 @@ function brokerDeepDiveHTML(b) {
       </div>
     </div>
 
-    <div class="section-head" style="margin-top:8px;"><h2>Datos clave de ${b.name}</h2></div>
+    <div class="section-head" style="margin-top:28px;">
+      <h2>AR4 Trust Score</h2>
+      <span class="badge-live">${trustScoreLabel(trustScore.total)}</span>
+    </div>
+    <div class="trust-score-panel">
+      <div class="trust-score-total">
+        <strong>${trustScore.total}</strong>
+        <span>/ 100</span>
+      </div>
+      <div class="trust-score-breakdown">${trustScoreBreakdownHTML(trustScore)}</div>
+    </div>
+    <p style="color:var(--text-low);font-size:0.78rem;margin:10px 0 28px;">Puntuación calculada por AR4 Mercados con una fórmula transparente y pública: regulación (30 pts, según jerarquía de reguladores), reputación en Trustpilot (25 pts), antigüedad/track record (15 pts), calidad operativa medida en las categorías de arriba (20 pts) y políticas al cliente como comisión por inactividad y cuenta demo (10 pts). Es un dato objetivo calculado a partir de información pública — no sustituye tu propia investigación ni constituye una recomendación de inversión.</p>
+
+    <div class="section-head"><h2>¿Para qué tipo de trader es ${b.name}?</h2></div>
+    <div class="recommended-profile-card">
+      <span class="badge-impact medium">${profile.label}</span>
+      <p style="color:var(--text-mid);font-size:0.9rem;margin-top:10px;">${profile.reason}</p>
+    </div>
+
+    <div class="section-head" style="margin-top:28px;"><h2>Datos clave de ${b.name}</h2></div>
     <ul class="featured-facts" style="margin-bottom:28px;">
       <li><span>Año de fundación</span><strong>${b.founded}</strong></li>
       <li><span>¿Cotiza en bolsa?</span><strong>${b.publiclyTraded ? 'Sí' : 'No'}</strong></li>
@@ -111,9 +205,13 @@ function brokerDeepDiveHTML(b) {
 function brokerRankCardHTML(b) {
   const ctaLabel = b.affiliateUrl ? 'Abrir cuenta' : 'Ver review completa';
   const sponsoredTag = b.affiliateUrl ? '<span class="badge-premium" style="background:linear-gradient(135deg,var(--crimson-bright),var(--crimson));">Patrocinado</span>' : '';
+  const trustScore = computeTrustScore(b);
   return `
     <article class="broker-card broker-rank-card">
       <div class="broker-rank">#${b.rank}</div>
+      <div class="trust-score-badge" title="AR4 Trust Score: puntuación transparente calculada a partir de regulación, reputación, antigüedad, calidad operativa y políticas al cliente">
+        <strong>${trustScore.total}</strong><span>Trust Score</span>
+      </div>
       ${brokerLogoHTML(b, 'sm')}
       <div class="stars" style="margin:8px 0;">⭐ ${b.trustpilotRating}/5 <span>Trustpilot · ${b.trustpilotReviews} reseñas</span></div>
       <p style="color:var(--text-mid); font-size:0.85rem; margin-bottom:14px;">${b.resumen}</p>
