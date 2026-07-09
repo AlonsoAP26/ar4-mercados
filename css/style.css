@@ -1221,6 +1221,36 @@ a { color: inherit; text-decoration: none; }
 
 .shared-post-highlight { border-color: var(--gold) !important; box-shadow: 0 0 0 2px rgba(212,175,55,0.25); }
 
+.sentiment-picker { display: flex; gap: 8px; margin-top: 8px; }
+.sentiment-option {
+  background: var(--bg-0);
+  border: 1px solid var(--card-border);
+  color: var(--text-mid);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.84rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.sentiment-option:hover { border-color: var(--gold); }
+.sentiment-option.selected { background: rgba(212,175,55,0.12); border-color: var(--gold); color: var(--gold-bright); font-weight: 600; }
+
+.sentiment-pulse-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+.sentiment-pulse-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.sentiment-pulse-header strong { font-size: 1rem; color: var(--text-hi); }
+.sentiment-pulse-header span { font-size: 0.78rem; color: var(--text-low); font-family: var(--mono); }
+.sentiment-pulse-bar { display: flex; height: 14px; border-radius: 20px; overflow: hidden; background: rgba(255,255,255,0.06); }
+.sentiment-pulse-segment { height: 100%; }
+.sentiment-seg-alcista { background: var(--green); }
+.sentiment-seg-neutral { background: var(--text-low); opacity: 0.5; }
+.sentiment-seg-bajista { background: var(--crimson-bright); }
+.sentiment-pulse-legend { display: flex; gap: 16px; margin-top: 10px; font-size: 0.82rem; color: var(--text-mid); flex-wrap: wrap; }
+
 .comments-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 16px; }
 .comment-row { display: flex; gap: 10px; }
 .comment-avatar {

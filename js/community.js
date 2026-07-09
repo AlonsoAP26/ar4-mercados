@@ -338,6 +338,12 @@
         <input type="text" id="postTitle" maxlength="120">
         <label for="postBody">Tu análisis</label>
         <textarea id="postBody" maxlength="2000"></textarea>
+        <label>Tu sesgo (opcional) — alimenta el Pulso de Sentimiento de la comunidad</label>
+        <div class="sentiment-picker" id="sentimentPicker">
+          <button type="button" class="sentiment-option" data-sentiment="alcista">🟢 Alcista</button>
+          <button type="button" class="sentiment-option" data-sentiment="bajista">🔴 Bajista</button>
+          <button type="button" class="sentiment-option" data-sentiment="neutral">⚪ Neutral</button>
+        </div>
         <label style="display:flex;align-items:center;gap:8px;margin-top:14px;font-weight:400;text-transform:none;font-family:inherit;cursor:pointer;">
           <input type="checkbox" id="postAddPoll" style="width:16px;height:16px;"> Agregar una encuesta (opcional)
         </label>
@@ -526,8 +532,17 @@
     `;
   }
 
+  const SENTIMENT_META = {
+    alcista: { icon: '🟢', label: 'Alcista' },
+    bajista: { icon: '🔴', label: 'Bajista' },
+    neutral: { icon: '⚪', label: 'Neutral' }
+  };
+
   function postCardHTML(post, authorProfile, bookmarkedIds) {
     const symbolTag = post.symbol ? `<span class="instrument-badge">${escapeHtml(post.symbol)}</span>` : '';
+    const sentimentTag = post.sentiment && SENTIMENT_META[post.sentiment]
+      ? `<span class="instrument-badge">${SENTIMENT_META[post.sentiment].icon} ${SENTIMENT_META[post.sentiment].label}</span>`
+      : '';
     const resolvedSymbol = resolvePostSymbol(post.symbol);
     const chartHTML = resolvedSymbol
       ? `<div class="community-post-chart"><div class="tradingview-widget-container" id="postChart-${post.id}"></div></div>`
@@ -537,7 +552,7 @@
       <article class="community-post-card" data-post-id="${post.id}">
         <div class="community-post-head">
           ${avatarHTML(authorProfile, 'trader-avatar')}
-          <div><strong>${escapeHtml(authorProfile.username)}</strong>${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag} · ${timeAgo(post.created_at)}</span></div>
+          <div><strong>${escapeHtml(authorProfile.username)}</strong>${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
         </div>
         <h4>${escapeHtml(post.title)}</h4>
         ${chartHTML}
@@ -898,6 +913,19 @@
   }
 
   function wirePostForm() {
+    let selectedSentiment = null;
+    const sentimentPicker = document.getElementById('sentimentPicker');
+    if (sentimentPicker) {
+      sentimentPicker.querySelectorAll('.sentiment-option').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const alreadySelected = btn.classList.contains('selected');
+          sentimentPicker.querySelectorAll('.sentiment-option').forEach((b) => b.classList.remove('selected'));
+          selectedSentiment = alreadySelected ? null : btn.dataset.sentiment;
+          if (selectedSentiment) btn.classList.add('selected');
+        });
+      });
+    }
+
     const addPollCheckbox = document.getElementById('postAddPoll');
     const pollFields = document.getElementById('postPollFields');
     if (addPollCheckbox && pollFields) {
@@ -938,10 +966,14 @@
       msgEl.textContent = '';
       msgEl.className = 'community-form-msg';
       try {
-        await callFunction('community-post', { title, body, category, symbol, pollOptions });
+        await callFunction('community-post', { title, body, category, symbol, pollOptions, sentiment: selectedSentiment });
         document.getElementById('postTitle').value = '';
         document.getElementById('postBody').value = '';
         document.getElementById('postSymbol').value = '';
+        if (sentimentPicker) {
+          sentimentPicker.querySelectorAll('.sentiment-option').forEach((b) => b.classList.remove('selected'));
+          selectedSentiment = null;
+        }
         if (addPollCheckbox) {
           addPollCheckbox.checked = false;
           pollFields.hidden = true;

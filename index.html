@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AR4 Mercados">
@@ -227,6 +228,13 @@
         <p>Sube de básico a élite ganando puntos por participar, personaliza tu perfil con avatares exclusivos y desbloquea beneficios reales conforme creces dentro de la comunidad.</p>
       </div>
     </div>
+    <div class="sentiment-pulse-card" style="margin-bottom:20px;">
+      <div class="section-head" style="margin-bottom:14px;">
+        <h3 style="font-size:1rem;">📡 Pulso de Sentimiento de la Comunidad</h3>
+        <span class="badge-live">EXCLUSIVO AR4</span>
+      </div>
+      <div id="sentimentPulseContainer"><p class="footer-text">Cargando...</p></div>
+    </div>
     <div class="hero-actions" style="margin-top:8px;">
       <a href="comunidad.html" class="btn btn-gold">Entrar a la comunidad →</a>
       <a href="membresia.html" class="btn btn-outline">Ver beneficios Premium</a>
@@ -324,6 +332,7 @@
 <script src="js/main.js?v=2"></script>
 <script src="js/auth.js?v=2"></script>
 <script src="js/hero-graphics.js?v=4"></script>
+<script src="js/sentiment-pulse.js"></script>
 <script src="js/noticias.js?v=7"></script>
 <script src="js/chatbot.js?v=3"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "PENDIENTE_TOKEN_CLOUDFLARE"}'></script>

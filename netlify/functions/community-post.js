@@ -4,6 +4,7 @@ const { effectiveRank } = require('./_rank');
 const { incrementMissionCounter } = require('./_gamification');
 
 const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
+const ALLOWED_SENTIMENTS = ['alcista', 'bajista', 'neutral'];
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };
@@ -23,6 +24,8 @@ exports.handler = async (event, context) => {
       const cleaned = body.pollOptions.map((o) => String(o || '').trim().slice(0, 60)).filter(Boolean);
       if (cleaned.length >= 2 && cleaned.length <= 4) pollOptions = cleaned;
     }
+
+    const sentiment = ALLOWED_SENTIMENTS.includes(body.sentiment) ? body.sentiment : null;
 
     if (title.length < 8 || text.length < 20) {
       return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El título y el contenido son demasiado cortos.' }) };
@@ -59,6 +62,7 @@ exports.handler = async (event, context) => {
         title,
         body: text,
         symbol,
+        sentiment,
         poll_options: pollOptions,
         poll_votes_count: pollOptions ? pollOptions.map(() => 0) : null
       })
