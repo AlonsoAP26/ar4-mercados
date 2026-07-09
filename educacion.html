@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educación de Trading: De Básico a Avanzado — AR4 Mercados</title>
+<meta name="description" content="Aprende trading desde cero o profundiza tu nivel: velas japonesas, patrones, soporte y resistencia, indicadores, gestión de riesgo, order flow y más. Módulos progresivos con puntos de comunidad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AR4 Mercados">
+<meta property="og:title" content="Educación de Trading: De Básico a Avanzado — AR4 Mercados">
+<meta property="og:description" content="Aprende trading desde cero o profundiza tu nivel, con módulos progresivos y puntos de comunidad.">
+<meta property="og:url" content="https://ar4mercados.com/educacion.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=1200&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<div class="ticker-bar">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        {"proName": "FX_IDC:USDMXN", "title": "USD/MXN"},
+        {"proName": "FX:EURUSD", "title": "EUR/USD"},
+        {"proName": "OANDA:XAUUSD", "title": "ORO"}
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": true,
+      "displayMode": "compact",
+      "colorTheme": "dark",
+      "locale": "es"
+    }
+    </script>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-top">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 150 40" width="120" height="32">
+        <defs><linearGradient id="lgGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fbe9b0"/><stop offset="45%" stop-color="#f0c75e"/><stop offset="100%" stop-color="#b8860b"/></linearGradient></defs>
+        <text x="0" y="29" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="28" letter-spacing="-0.5" fill="url(#lgGrad)">AR4</text>
+        <path d="M79 21 L91 10 L101 17 L117 3" fill="none" stroke="url(#lgGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="117" cy="3" r="2.3" fill="url(#lgGrad)"/>
+        <path d="M0 35 L75 35" stroke="url(#lgGrad)" stroke-width="1.3" opacity="0.5"/>
+      </svg>
+      <span class="logo-text">MERCADOS</span>
+    </a>
+  </div>
+  <div class="container header-inner">
+    <button class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="mainNav">
+      <span class="nav-menu-icon">☰</span><span>Secciones</span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="brokers.html">Brokers</a>
+      <a href="copytrading.html">Copytrading</a>
+      <a href="fondeo.html">Fondeo</a>
+      <a href="psicotrading.html">Psicotrading</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="educacion.html">Educación</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+    <div class="header-actions">
+      <a href="membresia.html" class="nav-premium">★ <span>Premium</span></a>
+      <a href="#" id="authBtn">Iniciar sesión</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Educación</div>
+    <span class="badge-live">12 MÓDULOS · GRATIS</span>
+    <h1 style="margin-top:14px;">De cero a avanzado, <span class="gold">a tu propio ritmo</span></h1>
+    <p>Desde qué es una vela japonesa hasta order flow y gestión de riesgo profesional. Todos los módulos están abiertos para todos — pero si no sabes por dónde empezar, responde 5 preguntas rápidas y te recomendamos un punto de partida. Cada módulo completado suma puntos a tu perfil de comunidad.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+
+    <div class="community-form" id="quizCard">
+      <h3 style="margin-bottom:4px;">📋 ¿Por dónde deberías empezar?</h3>
+      <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">5 preguntas, 1 minuto. Esto solo te da una recomendación — puedes leer cualquier módulo en cualquier momento.</p>
+      <div id="quizForm"></div>
+      <button class="btn btn-gold" id="quizSubmitBtn" style="margin-top:14px;">Ver mi recomendación</button>
+      <div id="quizResult"></div>
+    </div>
+
+    <div class="section-head" style="margin-top:36px;">
+      <h2>Todos los módulos</h2>
+    </div>
+    <div class="filter-bar" id="levelFilterBar">
+      <button class="filter-chip active" data-filter="all">Todos</button>
+      <button class="filter-chip" data-filter="basico">Básico</button>
+      <button class="filter-chip" data-filter="intermedio">Intermedio</button>
+      <button class="filter-chip" data-filter="avanzado">Avanzado</button>
+    </div>
+
+    <div class="card-grid two-up" id="modulesGrid">
+      <p class="footer-text">Cargando módulos...</p>
+    </div>
+
+    <div class="promo-banner" style="margin-top:36px;">
+      <div class="promo-banner-text">
+        <h3>¿Ya sabes lo básico? Ponlo en práctica en la comunidad</h3>
+        <p>Publica tus propias ideas, comenta análisis de otros traders y sube de rango a medida que participas.</p>
+      </div>
+      <a href="comunidad.html" class="btn btn-crimson">Entrar a la comunidad</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">AR4 <span>MERCADOS</span></div>
+      <p class="footer-text">Información de mercado, brokers y educación financiera para Latinoamérica.</p>
+    </div>
+    <div>
+      <h5>Explorar</h5>
+      <a href="brokers.html">Brokers</a>
+      <a href="copytrading.html">Copytrading</a>
+      <a href="fondeo.html">Fondeo</a>
+      <a href="psicotrading.html">Psicotrading</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="educacion.html">Educación</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="comunidad.html">Comunidad</a>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <a href="terminos.html">Términos de Servicio</a>
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="nosotros.html">Nosotros / Contacto</a>
+      <p class="footer-text">© <span id="year"></span> AR4 Mercados. El contenido de Educación es informativo, no constituye asesoría financiera ni recomendaciones de inversión.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=2"></script>
+<script src="js/auth.js?v=2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/educacion.js"></script>
+<script src="js/chatbot.js?v=3"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "PENDIENTE_TOKEN_CLOUDFLARE"}'></script>
+</body>
+</html>
