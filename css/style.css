@@ -664,6 +664,74 @@ a { color: inherit; text-decoration: none; }
 .testimonial-card p { color: var(--text-mid); font-size: 0.88rem; line-height: 1.55; margin-bottom: 12px; font-style: italic; }
 .testimonial-card .testimonial-author { font-size: 0.78rem; color: var(--text-low); font-family: var(--mono); }
 
+/* CTA de suscripcion + modal de venta Premium */
+.upsell-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: linear-gradient(120deg, rgba(212,175,55,0.12), rgba(212,175,55,0.03));
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-top: 18px;
+}
+.upsell-banner-text strong { display: block; color: var(--gold-bright); font-size: 0.98rem; margin-bottom: 4px; }
+.upsell-banner-text span { color: var(--text-mid); font-size: 0.84rem; }
+.upsell-banner .btn { flex-shrink: 0; }
+@media (max-width: 640px) {
+  .upsell-banner { flex-direction: column; align-items: flex-start; }
+}
+
+.upsell-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(4,6,11,0.75);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+.upsell-overlay.hidden { display: none; }
+.upsell-modal {
+  background: var(--bg-1);
+  border: 1px solid rgba(212,175,55,0.35);
+  border-radius: var(--radius);
+  max-width: 480px;
+  width: 100%;
+  padding: 30px 28px 26px;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+}
+.upsell-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-mid);
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.upsell-modal h3 { font-size: 1.25rem; margin-bottom: 6px; }
+.upsell-modal .upsell-sub { color: var(--text-mid); font-size: 0.88rem; margin-bottom: 18px; }
+.upsell-modal ul { list-style: none; margin-bottom: 22px; }
+.upsell-modal ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  padding: 7px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.07);
+}
+.upsell-modal ul li::before { content: "✓"; color: var(--gold-bright); font-weight: 700; flex-shrink: 0; }
+.upsell-modal .upsell-price { font-family: var(--mono); color: var(--gold-bright); font-size: 1.4rem; font-weight: 700; margin-bottom: 4px; }
+.upsell-modal .upsell-price span { color: var(--text-mid); font-size: 0.8rem; font-weight: 400; }
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--card-border);
