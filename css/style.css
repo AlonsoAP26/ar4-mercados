@@ -1125,6 +1125,24 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.4;
 }
 
+.chat-quicklinks {
+  display: flex;
+  gap: 8px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--card-border);
+  flex-wrap: wrap;
+}
+.chat-quicklinks a {
+  font-size: 0.72rem;
+  color: var(--gold-bright);
+  background: rgba(212,175,55,0.1);
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 20px;
+  padding: 5px 11px;
+  white-space: nowrap;
+}
+.chat-quicklinks a:hover { background: rgba(212,175,55,0.18); }
+
 .chat-messages {
   flex: 1;
   overflow-y: auto;

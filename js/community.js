@@ -286,13 +286,13 @@
           ${currentRooms().map(r => `<button class="discord-room-btn${r.id === currentRoom ? ' active' : ''}" data-room="${r.id}">${r.label}</button>`).join('')}
         </div>
         <div class="discord-main">
-          <div class="discord-header" id="chatHeader"></div>
-          <div class="discord-messages" id="chatMessages"><p class="footer-text">Cargando chat...</p></div>
+          <div class="discord-header" id="communityChatHeader"></div>
+          <div class="discord-messages" id="communityChatMessages"><p class="footer-text">Cargando chat...</p></div>
           <div class="discord-input-row">
-            <button class="discord-attach-btn" id="chatAttachBtn" type="button" title="Adjuntar imagen">📎</button>
-            <input type="file" id="chatImageInput" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
-            <input type="text" id="chatInput" maxlength="500" placeholder="Escribe un mensaje...">
-            <button class="discord-send-btn" id="chatSendBtn">Enviar</button>
+            <button class="discord-attach-btn" id="communityChatAttachBtn" type="button" title="Adjuntar imagen">📎</button>
+            <input type="file" id="communityChatImageInput" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+            <input type="text" id="communityChatInput" maxlength="500" placeholder="Escribe un mensaje...">
+            <button class="discord-send-btn" id="communityChatSendBtn">Enviar</button>
           </div>
         </div>
       </div>
@@ -427,7 +427,7 @@
 
   async function loadChatRoom(roomId) {
     currentRoom = roomId;
-    const msgsEl = document.getElementById('chatMessages');
+    const msgsEl = document.getElementById('communityChatMessages');
     if (!msgsEl) return;
     msgsEl.innerHTML = '<p class="footer-text">Cargando chat...</p>';
 
@@ -436,7 +436,7 @@
     });
 
     const meta = ROOM_META[roomId] || { icon: '💬', name: roomId, desc: '' };
-    const headerEl = document.getElementById('chatHeader');
+    const headerEl = document.getElementById('communityChatHeader');
     if (headerEl) headerEl.innerHTML = `<span style="font-size:1.3rem;">${meta.icon}</span><div><strong>${escapeHtml(meta.name)}</strong><span>${escapeHtml(meta.desc)}</span></div>`;
 
     stopLiveUpdates();
@@ -484,10 +484,10 @@
     document.querySelectorAll('.discord-room-btn').forEach((btn) => {
       btn.addEventListener('click', () => loadChatRoom(btn.dataset.room));
     });
-    const sendBtn = document.getElementById('chatSendBtn');
-    const input = document.getElementById('chatInput');
-    const attachBtn = document.getElementById('chatAttachBtn');
-    const fileInput = document.getElementById('chatImageInput');
+    const sendBtn = document.getElementById('communityChatSendBtn');
+    const input = document.getElementById('communityChatInput');
+    const attachBtn = document.getElementById('communityChatAttachBtn');
+    const fileInput = document.getElementById('communityChatImageInput');
 
     const canAttach = RANK_ORDER[myEffectiveRank()] >= RANK_ORDER.vip;
     if (!canAttach) {
@@ -517,7 +517,7 @@
         input.value = '';
         fileInput.value = '';
         attachBtn.textContent = '📎';
-        if (currentRoom === 'elite') await loadEliteRoom(document.getElementById('chatMessages'));
+        if (currentRoom === 'elite') await loadEliteRoom(document.getElementById('communityChatMessages'));
       } catch (e) {
         alert(e.message);
       } finally {

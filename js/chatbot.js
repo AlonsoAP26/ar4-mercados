@@ -22,6 +22,10 @@
       <button class="chat-close" aria-label="Cerrar">✕</button>
     </div>
     <div class="chat-disclaimer">Apoyo educativo sobre psicología de trading. No es asesoría financiera ni terapia profesional. En caso de crisis emocional, busca ayuda de un profesional de salud mental.</div>
+    <div class="chat-quicklinks">
+      <a href="ideas.html">💡 Ver Ideas de Trading</a>
+      <a href="comunidad.html">💬 Ir al chat de la comunidad</a>
+    </div>
     <div class="chat-messages" id="chatMessages">
       <div class="chat-msg bot">Hola 👋 Soy el asistente de AR4 Mercados. Puedo ayudarte a pensar en gestión de riesgo, disciplina, o cómo manejar emociones después de una operación. ¿Qué tienes en mente?</div>
     </div>
