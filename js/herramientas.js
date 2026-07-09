@@ -239,8 +239,220 @@
     loadEntries();
   }
 
+  const SUPABASE_URL = 'https://gxiybgirkjsqnagcabnz.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_uqWQ2hoarxuLrKi816sfzw_ngOFppYx';
+
+  const WATCHLIST_SYMBOL_MAP = {
+    'EURUSD': 'FX:EURUSD', 'EUR/USD': 'FX:EURUSD',
+    'GBPUSD': 'FX:GBPUSD', 'GBP/USD': 'FX:GBPUSD',
+    'USDJPY': 'FX:USDJPY', 'USD/JPY': 'FX:USDJPY',
+    'USDMXN': 'FX_IDC:USDMXN', 'USD/MXN': 'FX_IDC:USDMXN',
+    'USDCOP': 'FX_IDC:USDCOP', 'USD/COP': 'FX_IDC:USDCOP',
+    'USDCLP': 'FX_IDC:USDCLP', 'USD/CLP': 'FX_IDC:USDCLP',
+    'USDARS': 'FX_IDC:USDARS', 'USD/ARS': 'FX_IDC:USDARS',
+    'USDBRL': 'FX_IDC:USDBRL', 'USD/BRL': 'FX_IDC:USDBRL',
+    'USDPEN': 'FX_IDC:USDPEN', 'USD/PEN': 'FX_IDC:USDPEN',
+    'ORO': 'OANDA:XAUUSD', 'GOLD': 'OANDA:XAUUSD', 'XAUUSD': 'OANDA:XAUUSD', 'XAU/USD': 'OANDA:XAUUSD',
+    'PLATA': 'OANDA:XAGUSD', 'SILVER': 'OANDA:XAGUSD', 'XAGUSD': 'OANDA:XAGUSD', 'XAG/USD': 'OANDA:XAGUSD',
+    'PETROLEO': 'TVC:USOIL', 'WTI': 'TVC:USOIL', 'OIL': 'TVC:USOIL', 'USOIL': 'TVC:USOIL',
+    'BRENT': 'TVC:UKOIL', 'UKOIL': 'TVC:UKOIL',
+    'BTC': 'BITSTAMP:BTCUSD', 'BTCUSD': 'BITSTAMP:BTCUSD', 'BTC/USD': 'BITSTAMP:BTCUSD', 'BITCOIN': 'BITSTAMP:BTCUSD',
+    'ETH': 'COINBASE:ETHUSD', 'ETHUSD': 'COINBASE:ETHUSD', 'ETH/USD': 'COINBASE:ETHUSD', 'ETHEREUM': 'COINBASE:ETHUSD',
+    'SP500': 'FOREXCOM:SPXUSD', 'S&P500': 'FOREXCOM:SPXUSD', 'US500': 'FOREXCOM:SPXUSD', 'SPX': 'FOREXCOM:SPXUSD',
+    'NASDAQ': 'FOREXCOM:NSXUSD', 'NAS100': 'FOREXCOM:NSXUSD', 'US100': 'FOREXCOM:NSXUSD',
+    'DXY': 'CAPITALCOM:DXY'
+  };
+
+  function resolveWatchlistSymbol(raw) {
+    if (!raw) return null;
+    const trimmed = String(raw).trim().toUpperCase();
+    if (/^[A-Z0-9_]+:[A-Z0-9]+$/.test(trimmed)) return trimmed;
+    return WATCHLIST_SYMBOL_MAP[trimmed.replace(/\s+/g, '')] || null;
+  }
+
+  function mountWatchlistTicker(container, items) {
+    if (!container) return;
+    if (!items || !items.length) { container.innerHTML = ''; return; }
+    container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
+    script.async = true;
+    script.text = JSON.stringify({
+      symbols: items.map((it) => ({ proName: it.symbol, title: it.label })),
+      showSymbolLogo: true,
+      isTransparent: true,
+      displayMode: 'compact',
+      colorTheme: 'dark',
+      locale: 'es'
+    });
+    container.appendChild(script);
+  }
+
+  function watchlistItemRowHTML(item, editable) {
+    return `
+      <div class="community-post-card" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+        <div><strong>${item.label}</strong> <span class="news-meta">${item.symbol}</span></div>
+        ${editable ? `<button class="btn btn-outline watchlist-remove-btn" data-symbol="${item.symbol}" style="padding:6px 12px;font-size:0.78rem;">Quitar</button>` : ''}
+      </div>
+    `;
+  }
+
+  async function initWatchlist() {
+    const section = document.getElementById('watchlistSection');
+    const titleEl = document.getElementById('watchlistTitle');
+    const shareBtn = document.getElementById('watchlistShareBtn');
+    if (!section) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const sharedProfileId = params.get('watchlist');
+
+    if (sharedProfileId) {
+      if (shareBtn) shareBtn.hidden = true;
+      if (typeof supabase === 'undefined') {
+        section.innerHTML = '<p class="footer-text">No se pudo cargar la watchlist compartida.</p>';
+        return;
+      }
+      const sb = supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+      const [itemsRes, profileRes] = await Promise.all([
+        sb.from('watchlists').select('*').eq('profile_id', sharedProfileId).order('created_at', { ascending: true }),
+        sb.from('profiles').select('username').eq('id', sharedProfileId)
+      ]);
+      if (itemsRes.error || !itemsRes.data) {
+        section.innerHTML = '<p class="footer-text">No se pudo cargar esta watchlist.</p>';
+        return;
+      }
+      const username = profileRes.data && profileRes.data[0] ? profileRes.data[0].username : null;
+      if (titleEl) titleEl.textContent = username ? `📌 Watchlist de @${username}` : '📌 Watchlist compartida';
+      if (!itemsRes.data.length) {
+        section.innerHTML = '<p class="footer-text">Esta watchlist está vacía por ahora.</p><a href="herramientas.html" class="btn btn-outline" style="margin-top:14px;">Ver mi propia Watchlist</a>';
+        return;
+      }
+      section.innerHTML = `
+        <div id="watchlistTickerContainer" class="tradingview-widget-container" style="margin-bottom:16px;"></div>
+        <div id="watchlistItemsList"></div>
+        <a href="herramientas.html" class="btn btn-outline" style="margin-top:14px;">Ver mi propia Watchlist</a>
+      `;
+      document.getElementById('watchlistItemsList').innerHTML = itemsRes.data.map((it) => watchlistItemRowHTML(it, false)).join('');
+      mountWatchlistTicker(document.getElementById('watchlistTickerContainer'), itemsRes.data);
+      return;
+    }
+
+    if (titleEl) titleEl.textContent = '📌 Mi Watchlist';
+    if (typeof netlifyIdentity === 'undefined') return;
+    const user = netlifyIdentity.currentUser();
+
+    if (!user) {
+      if (shareBtn) shareBtn.hidden = true;
+      section.innerHTML = `<div class="community-form"><p style="color:var(--text-mid);">Inicia sesión y crea tu perfil de comunidad para armar tu watchlist y compartirla con un enlace.</p><a href="comunidad.html" class="btn btn-outline" style="margin-top:10px;">Ir a Comunidad</a></div>`;
+      return;
+    }
+
+    let myProfileId = null;
+
+    section.innerHTML = `
+      <div class="community-form">
+        <label for="wSymbol">Instrumento (ej. EUR/USD, ORO, BTC, DXY o EXCHANGE:TICKER)</label>
+        <input type="text" id="wSymbol" maxlength="40" placeholder="ej. EUR/USD">
+        <label for="wLabel">Etiqueta (opcional)</label>
+        <input type="text" id="wLabel" maxlength="40" placeholder="ej. EUR/USD">
+        <button class="btn btn-gold" id="wAddBtn" style="margin-top:14px;">Agregar a mi watchlist</button>
+        <div class="community-form-msg" id="wMsg"></div>
+      </div>
+      <div id="watchlistTickerContainer" class="tradingview-widget-container" style="margin:16px 0;"></div>
+      <div id="watchlistItemsList"><p class="footer-text">Cargando...</p></div>
+    `;
+
+    async function loadItems() {
+      const listEl = document.getElementById('watchlistItemsList');
+      const tickerEl = document.getElementById('watchlistTickerContainer');
+      try {
+        const jwt = await user.jwt();
+        const res = await fetch('/.netlify/functions/community-watchlist', { headers: { 'Authorization': 'Bearer ' + jwt } });
+        const data = await res.json();
+        if (!data.success) throw new Error(data.error || 'Error desconocido');
+        myProfileId = data.profileId;
+        if (shareBtn) shareBtn.hidden = false;
+        listEl.innerHTML = data.items.map((it) => watchlistItemRowHTML(it, true)).join('') || '<p class="footer-text">Todavía no agregaste ningún instrumento.</p>';
+        mountWatchlistTicker(tickerEl, data.items);
+        listEl.querySelectorAll('.watchlist-remove-btn').forEach((btn) => {
+          btn.addEventListener('click', async () => {
+            btn.disabled = true;
+            try {
+              const jwt2 = await user.jwt();
+              await fetch('/.netlify/functions/community-watchlist', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt2 },
+                body: JSON.stringify({ action: 'remove', symbol: btn.dataset.symbol })
+              });
+              loadItems();
+            } catch (e) {
+              btn.disabled = false;
+            }
+          });
+        });
+      } catch (e) {
+        listEl.innerHTML = `<p class="footer-text">${e.message}</p>`;
+      }
+    }
+
+    document.getElementById('wAddBtn').addEventListener('click', async () => {
+      const btn = document.getElementById('wAddBtn');
+      const msgEl = document.getElementById('wMsg');
+      const rawSymbol = document.getElementById('wSymbol').value.trim();
+      const rawLabel = document.getElementById('wLabel').value.trim();
+      const resolved = resolveWatchlistSymbol(rawSymbol);
+      msgEl.textContent = '';
+      msgEl.className = 'community-form-msg';
+      if (!resolved) {
+        msgEl.textContent = 'No reconocemos ese instrumento. Prueba con EUR/USD, ORO, BTC, DXY, SP500... o el formato EXCHANGE:TICKER de TradingView.';
+        msgEl.className = 'community-form-msg error';
+        return;
+      }
+      btn.disabled = true;
+      try {
+        const jwt = await user.jwt();
+        const res = await fetch('/.netlify/functions/community-watchlist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt },
+          body: JSON.stringify({ symbol: resolved, label: rawLabel || rawSymbol.toUpperCase() })
+        });
+        const data = await res.json();
+        if (!data.success) throw new Error(data.error || 'Error desconocido');
+        msgEl.textContent = 'Instrumento agregado.';
+        msgEl.className = 'community-form-msg success';
+        document.getElementById('wSymbol').value = '';
+        document.getElementById('wLabel').value = '';
+        loadItems();
+      } catch (e) {
+        msgEl.textContent = e.message;
+        msgEl.className = 'community-form-msg error';
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    if (shareBtn) {
+      shareBtn.addEventListener('click', async () => {
+        if (!myProfileId) return;
+        const url = window.location.origin + window.location.pathname + '?watchlist=' + myProfileId;
+        try {
+          await navigator.clipboard.writeText(url);
+          const original = shareBtn.textContent;
+          shareBtn.textContent = '✔ Enlace copiado';
+          setTimeout(() => { shareBtn.textContent = original; }, 2000);
+        } catch (e) {
+          prompt('Copia este enlace:', url);
+        }
+      });
+    }
+
+    loadItems();
+  }
+
   wirePositionCalculator();
   wireRRCalculator();
   wireChecklist();
   initJournal();
+  initWatchlist();
 })();
