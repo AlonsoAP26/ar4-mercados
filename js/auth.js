@@ -55,7 +55,7 @@
       e.preventDefault();
       const user = currentUser();
       if (user) {
-        window.location.href = 'membresia.html';
+        window.location.href = 'comunidad.html';
       } else {
         netlifyIdentity.open('login');
       }

@@ -17,12 +17,17 @@
   const ELITE_ROOM = { id: 'elite', label: '★ Elite Traders' };
   const RANK_LABELS = { basico: 'Básico', vip: 'VIP', premium: 'Premium', elite: 'Élite', administrador: 'Administrador' };
   const RANK_ORDER = { basico: 0, vip: 1, premium: 2, elite: 3, administrador: 4 };
+  const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
+  const TRADING_STYLES = ['Day trader', 'Swing trader', 'Scalper', 'Macro / posicional', 'HODLer', 'Recién empezando'];
+  const REACTION_EMOJI = ['🔥', '🚀', '💡', '🤔'];
 
   const profileCache = {};
+  const reactionCache = {};
   let myProfile = null;
   let currentRoom = 'forex';
   let chatChannel = null;
   let elitePollTimer = null;
+  let editingProfile = false;
 
   function timeAgo(iso) {
     const diffMs = Date.now() - new Date(iso).getTime();
@@ -54,6 +59,10 @@
 
   function myEffectiveRank() {
     return (myProfile && myProfile.effectiveRank) || 'basico';
+  }
+
+  function levelFromPoints(points) {
+    return Math.floor((points || 0) / 100) + 1;
   }
 
   function currentRooms() {
@@ -107,16 +116,36 @@
     `;
   }
 
-  function profileSetupHTML() {
+  function avatarPickerHTML(selectedColor) {
+    return `
+      <label>Color de avatar</label>
+      <div class="avatar-picker">
+        ${AVATAR_COLORS.map((c) => `<button type="button" class="avatar-swatch${c === selectedColor ? ' selected' : ''}" data-color="${c}" style="background:${c};" aria-label="Elegir color ${c}"></button>`).join('')}
+      </div>
+    `;
+  }
+
+  function profileSetupHTML(isEdit) {
+    const p = isEdit ? myProfile : null;
+    const selectedColor = (p && p.avatar_color) || AVATAR_COLORS[0];
     return `
       <div class="community-form">
-        <h3 style="margin-bottom:4px;">Crea tu perfil de comunidad</h3>
-        <p style="color:var(--text-mid);font-size:0.86rem;">Elige un nombre de usuario para publicar, votar y chatear. Recibes 20 puntos de bienvenida al crearlo.</p>
+        <h3 style="margin-bottom:4px;">${isEdit ? 'Editar tu perfil' : 'Crea tu perfil de comunidad'}</h3>
+        <p style="color:var(--text-mid);font-size:0.86rem;">${isEdit ? 'Actualiza cómo te ven los demás en la comunidad.' : 'Elige un nombre de usuario para publicar, votar y chatear. Recibes 20 puntos de bienvenida al crearlo.'}</p>
         <label for="cpUsername">Nombre de usuario</label>
-        <input type="text" id="cpUsername" placeholder="ej. TraderLima2026" maxlength="24">
+        <input type="text" id="cpUsername" placeholder="ej. TraderLima2026" maxlength="24" value="${isEdit ? escapeHtml(p.username) : ''}">
         <label for="cpBio">Bio (opcional)</label>
-        <textarea id="cpBio" maxlength="160" placeholder="Cuéntanos qué operas o qué te interesa aprender..."></textarea>
-        <button class="btn btn-gold" id="cpSubmit" style="margin-top:14px;">Crear perfil</button>
+        <textarea id="cpBio" maxlength="160" placeholder="Cuéntanos qué operas o qué te interesa aprender...">${isEdit ? escapeHtml(p.bio || '') : ''}</textarea>
+        <label for="cpStyle">Estilo de trading (opcional)</label>
+        <select id="cpStyle">
+          <option value="">Sin especificar</option>
+          ${TRADING_STYLES.map((s) => `<option value="${s}"${isEdit && p.trading_style === s ? ' selected' : ''}>${s}</option>`).join('')}
+        </select>
+        <label for="cpPhone">Teléfono (opcional, privado — no se muestra a otros usuarios)</label>
+        <input type="tel" id="cpPhone" placeholder="ej. +51 999 999 999" maxlength="20" value="${isEdit && p.phone ? escapeHtml(p.phone) : ''}">
+        ${avatarPickerHTML(selectedColor)}
+        <button class="btn btn-gold" id="cpSubmit" style="margin-top:14px;">${isEdit ? 'Guardar cambios' : 'Crear perfil'}</button>
+        ${isEdit ? '<button class="btn btn-outline" id="cpCancel" style="margin-top:14px;margin-left:8px;">Cancelar</button>' : ''}
         <div class="community-form-msg" id="cpMsg"></div>
       </div>
     `;
@@ -144,14 +173,18 @@
       ? '<p style="color:var(--text-low);font-size:0.78rem;margin-top:8px;">Rango Básico: 1 publicación cada 24 horas. Sube a VIP para publicar sin límite.</p>'
       : '';
 
+    const styleTag = myProfile.trading_style ? `<span class="instrument-badge">${escapeHtml(myProfile.trading_style)}</span>` : '';
     return `
       <div class="community-header-card">
         <div class="community-user-chip">
           <div class="trader-avatar" style="background:${myProfile.avatar_color};">${avatarInitials(myProfile.username)}</div>
-          <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)}</h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'}</span></div>
+          <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span></h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span></div>
         </div>
         <div class="community-points" id="communityPointsDisplay">${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span></div>
-        <button class="btn btn-outline" id="communityRedeemBtn">Canjear puntos</button>
+        <div style="display:flex;gap:8px;">
+          <button class="btn btn-outline" id="communityEditProfileBtn">Editar perfil</button>
+          <button class="btn btn-outline" id="communityRedeemBtn">Canjear puntos</button>
+        </div>
       </div>
       <div class="community-form-msg" id="redeemMsg" style="margin-bottom:14px;"></div>
 
@@ -197,6 +230,15 @@
     return data;
   }
 
+  function reactionsRowHTML(postId) {
+    const counts = reactionCache[postId] || {};
+    return `
+      <div class="community-reactions" data-post-id="${postId}">
+        ${REACTION_EMOJI.map((e) => `<button class="reaction-btn" data-emoji="${e}">${e} <span>${counts[e] || 0}</span></button>`).join('')}
+      </div>
+    `;
+  }
+
   function postCardHTML(post, authorProfile) {
     const symbolTag = post.symbol ? `<span class="instrument-badge">${escapeHtml(post.symbol)}</span>` : '';
     return `
@@ -207,7 +249,10 @@
         </div>
         <h4>${escapeHtml(post.title)}</h4>
         <p>${escapeHtml(post.body)}</p>
-        <button class="community-vote-btn" data-vote-id="${post.id}">▲ ${post.upvotes} útil</button>
+        <div class="community-post-footer">
+          <button class="community-vote-btn" data-vote-id="${post.id}">▲ ${post.upvotes} útil</button>
+          ${reactionsRowHTML(post.id)}
+        </div>
       </article>
     `;
   }
@@ -226,6 +271,13 @@
       return;
     }
 
+    const postIds = posts.map((p) => p.id);
+    const { data: reactions } = await sb.from('post_reactions').select('post_id,emoji').in('post_id', postIds);
+    (reactions || []).forEach((r) => {
+      if (!reactionCache[r.post_id]) reactionCache[r.post_id] = {};
+      reactionCache[r.post_id][r.emoji] = (reactionCache[r.post_id][r.emoji] || 0) + 1;
+    });
+
     const cards = await Promise.all(posts.map(async (p) => {
       const author = await getProfileById(p.profile_id) || { username: 'Usuario', avatar_color: '#8b93a7', rank: 'basico' };
       return postCardHTML(p, author);
@@ -240,6 +292,23 @@
           btn.textContent = `▲ ${data.upvotes} útil`;
         } catch (e) {
           alert(e.message);
+          btn.disabled = false;
+        }
+      });
+    });
+
+    feedEl.querySelectorAll('.reaction-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const postId = btn.closest('.community-reactions').dataset.postId;
+        const emoji = btn.dataset.emoji;
+        btn.disabled = true;
+        try {
+          const data = await callFunction('community-react', { postId, emoji });
+          reactionCache[postId] = data.counts;
+          btn.closest('.community-reactions').outerHTML = reactionsRowHTML(postId);
+        } catch (e) {
+          alert(e.message);
+        } finally {
           btn.disabled = false;
         }
       });
@@ -410,17 +479,32 @@
   }
 
   function wireProfileForm() {
+    let selectedAvatarColor = document.querySelector('.avatar-swatch.selected')?.dataset.color || AVATAR_COLORS[0];
+    document.querySelectorAll('.avatar-swatch').forEach((sw) => {
+      sw.addEventListener('click', () => {
+        document.querySelectorAll('.avatar-swatch').forEach((s) => s.classList.remove('selected'));
+        sw.classList.add('selected');
+        selectedAvatarColor = sw.dataset.color;
+      });
+    });
+
+    const cancelBtn = document.getElementById('cpCancel');
+    if (cancelBtn) cancelBtn.addEventListener('click', () => { editingProfile = false; render(); });
+
     document.getElementById('cpSubmit').addEventListener('click', async () => {
       const btn = document.getElementById('cpSubmit');
       const msgEl = document.getElementById('cpMsg');
       const username = document.getElementById('cpUsername').value.trim();
       const bio = document.getElementById('cpBio').value.trim();
+      const tradingStyle = document.getElementById('cpStyle').value;
+      const phone = document.getElementById('cpPhone').value.trim();
       btn.disabled = true;
       msgEl.textContent = '';
       msgEl.className = 'community-form-msg';
       try {
-        const data = await callFunction('community-profile', { username, bio });
+        const data = await callFunction('community-profile', { username, bio, tradingStyle, avatarColor: selectedAvatarColor, phone });
         myProfile = data.profile;
+        editingProfile = false;
         await render();
       } catch (e) {
         msgEl.textContent = e.message;
@@ -443,7 +527,13 @@
     if (!myProfile) myProfile = await fetchMyProfile();
 
     if (!myProfile) {
-      root.innerHTML = profileSetupHTML();
+      root.innerHTML = profileSetupHTML(false);
+      wireProfileForm();
+      return;
+    }
+
+    if (editingProfile) {
+      root.innerHTML = profileSetupHTML(true);
       wireProfileForm();
       return;
     }
@@ -454,6 +544,7 @@
     wireRedeemButton();
     wireAdminPanel();
     wireChatTabs();
+    document.getElementById('communityEditProfileBtn').addEventListener('click', () => { editingProfile = true; render(); });
     loadFeed();
     loadChatRoom(currentRoom);
   }

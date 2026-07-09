@@ -2,6 +2,7 @@ const { supabaseRequest } = require('./_supabase');
 const { effectiveRank } = require('./_rank');
 
 const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
+const TRADING_STYLES = ['Day trader', 'Swing trader', 'Scalper', 'Macro / posicional', 'HODLer', 'Recién empezando'];
 
 function withEffectiveRank(profile, user) {
   if (!profile) return profile;
@@ -25,6 +26,13 @@ exports.handler = async (event, context) => {
       const body = JSON.parse(event.body || '{}');
       const username = (body.username || '').trim().slice(0, 24);
       const bio = (body.bio || '').trim().slice(0, 160);
+      const tradingStyle = TRADING_STYLES.includes(body.tradingStyle) ? body.tradingStyle : null;
+      const requestedColor = AVATAR_COLORS.includes(body.avatarColor) ? body.avatarColor : null;
+      const phoneRaw = (body.phone || '').trim().slice(0, 20);
+      if (phoneRaw && !/^[0-9+\-\s()]{6,20}$/.test(phoneRaw)) {
+        return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El número de teléfono no es válido.' }) };
+      }
+      const phone = phoneRaw || null;
 
       if (!/^[a-zA-Z0-9_]{3,24}$/.test(username)) {
         return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El nombre de usuario debe tener 3-24 caracteres: letras, números o guion bajo.' }) };
@@ -33,19 +41,21 @@ exports.handler = async (event, context) => {
       const existing = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id', { method: 'GET' });
 
       if (existing.length > 0) {
+        const patch = { username, bio, trading_style: tradingStyle, phone };
+        if (requestedColor) patch.avatar_color = requestedColor;
         const updated = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub), {
           method: 'PATCH',
-          body: JSON.stringify({ username, bio })
+          body: JSON.stringify(patch)
         });
         return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: withEffectiveRank(updated[0], user) }) };
       }
 
-      const color = AVATAR_COLORS[Math.floor(Math.random() * AVATAR_COLORS.length)];
+      const color = requestedColor || AVATAR_COLORS[Math.floor(Math.random() * AVATAR_COLORS.length)];
       let created;
       try {
         created = await supabaseRequest('profiles', {
           method: 'POST',
-          body: JSON.stringify({ netlify_user_id: user.sub, username, bio, avatar_color: color })
+          body: JSON.stringify({ netlify_user_id: user.sub, username, bio, avatar_color: color, trading_style: tradingStyle, phone })
         });
       } catch (e) {
         if (e.statusCode === 409) {
