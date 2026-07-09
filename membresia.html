@@ -42,7 +42,7 @@
 </div>
 
 <header class="site-header">
-  <div class="container header-inner">
+  <div class="header-top">
     <a href="index.html" class="logo">
       <svg class="logo-mark" viewBox="0 0 150 40" width="120" height="32">
         <defs><linearGradient id="lgGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fbe9b0"/><stop offset="45%" stop-color="#f0c75e"/><stop offset="100%" stop-color="#b8860b"/></linearGradient></defs>
@@ -53,6 +53,11 @@
       </svg>
       <span class="logo-text">MERCADOS</span>
     </a>
+  </div>
+  <div class="container header-inner">
+    <button class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="mainNav">
+      <span class="nav-menu-icon">☰</span><span>Secciones</span>
+    </button>
     <nav class="main-nav" id="mainNav">
       <a href="brokers.html">Brokers</a>
       <a href="copytrading.html">Copytrading</a>
@@ -60,12 +65,14 @@
       <a href="psicotrading.html">Psicotrading</a>
       <a href="ideas.html">Ideas</a>
       <a href="noticias.html">Noticias</a>
+      <a href="educacion.html">Educación</a>
       <a href="calendario.html">Calendario</a>
       <a href="comunidad.html">Comunidad</a>
-      <a href="membresia.html" class="nav-premium">★ Premium</a>
-      <a href="#" id="authBtn">Iniciar sesión</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Menú">☰</button>
+    <div class="header-actions">
+      <a href="membresia.html" class="nav-premium">★ <span>Premium</span></a>
+      <a href="#" id="authBtn">Iniciar sesión</a>
+    </div>
   </div>
 </header>
 
@@ -172,6 +179,7 @@
       <a href="psicotrading.html">Psicotrading</a>
       <a href="ideas.html">Ideas</a>
       <a href="noticias.html">Noticias</a>
+      <a href="educacion.html">Educación</a>
       <a href="calendario.html">Calendario</a>
       <a href="comunidad.html">Comunidad</a>
     </div>
@@ -185,7 +193,7 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2"></script>
 <script src="js/auth.js?v=2"></script>
 <script src="js/chatbot.js?v=3"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "PENDIENTE_TOKEN_CLOUDFLARE"}'></script>

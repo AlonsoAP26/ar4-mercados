@@ -1,10 +1,33 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const navToggle = document.getElementById('navToggle');
+const navMenuBtn = document.getElementById('navMenuBtn');
 const mainNav = document.getElementById('mainNav');
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('open');
+if (navMenuBtn && mainNav) {
+  function closeNav() {
+    mainNav.classList.remove('open');
+    navMenuBtn.setAttribute('aria-expanded', 'false');
+  }
+  function openNav() {
+    mainNav.classList.add('open');
+    navMenuBtn.setAttribute('aria-expanded', 'true');
+  }
+  navMenuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (mainNav.classList.contains('open')) closeNav(); else openNav();
+  });
+  mainNav.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') closeNav();
+  });
+  document.addEventListener('click', (e) => {
+    if (mainNav.classList.contains('open') && !mainNav.contains(e.target) && e.target !== navMenuBtn) closeNav();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeNav();
+  });
+
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  mainNav.querySelectorAll('a').forEach((a) => {
+    if (a.getAttribute('href') === currentPath) a.classList.add('nav-active');
   });
 }
 

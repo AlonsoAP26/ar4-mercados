@@ -49,11 +49,18 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 50;
 }
+.header-top {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 8px;
+  border-bottom: 1px solid var(--card-border);
+}
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 60px;
+  position: relative;
 }
 .logo {
   display: flex;
@@ -75,23 +82,64 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-mid);
   margin-left: -2px;
 }
-.main-nav { display: flex; gap: 28px; }
+
+.nav-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-hi);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s, color 0.15s;
+}
+.nav-menu-btn:hover, .nav-menu-btn[aria-expanded="true"] { border-color: var(--gold); color: var(--gold-bright); }
+.nav-menu-icon { font-size: 1rem; line-height: 1; }
+
+.main-nav {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background: var(--bg-1);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  min-width: 230px;
+  z-index: 60;
+  gap: 2px;
+}
+.main-nav.open { display: flex; }
 .main-nav a {
   font-size: 0.92rem;
   font-weight: 500;
   color: var(--text-mid);
-  transition: color 0.15s;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
 }
-.main-nav a:hover { color: var(--gold-bright); }
-.main-nav a.nav-premium { color: var(--gold-bright); font-weight: 700; }
-.main-nav a#authBtn {
+.main-nav a:hover { background: rgba(255,255,255,0.05); color: var(--gold-bright); }
+.main-nav a.nav-active { color: var(--gold-bright); background: rgba(212,175,55,0.08); }
+
+.header-actions { display: flex; align-items: center; gap: 14px; }
+.header-actions a.nav-premium { color: var(--gold-bright); font-weight: 700; font-size: 0.86rem; }
+.header-actions a#authBtn {
   border: 1px solid var(--card-border);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.82rem;
+  color: var(--text-mid);
+  transition: border-color 0.15s;
 }
-.main-nav a#authBtn:hover { border-color: var(--gold); }
-.main-nav a#authBtn.has-avatar { display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px 5px 6px; }
+.header-actions a#authBtn:hover { border-color: var(--gold); }
+.header-actions a#authBtn.has-avatar { display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px 5px 6px; }
 .nav-avatar { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .nav-avatar-color { display: inline-flex; align-items: center; justify-content: center; font-family: var(--mono); font-weight: 800; font-size: 0.7rem; color: #0a0f1c; }
 
@@ -130,18 +178,6 @@ a { color: inherit; text-decoration: none; }
   border-radius: 20px;
   text-transform: uppercase;
   margin-left: 8px;
-}
-
-.nav-toggle {
-  display: none;
-  background: none;
-  border: 1px solid var(--card-border);
-  color: var(--text-hi);
-  font-size: 1.2rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  cursor: pointer;
 }
 
 /* Hero */
@@ -1159,25 +1195,6 @@ a { color: inherit; text-decoration: none; }
 .site-footer a:hover { color: var(--gold-bright); }
 
 /* Responsive */
-/* El nav colapsa a hamburguesa antes que el resto del layout: con 8+ enlaces
-   mas el boton de cuenta, se queda sin espacio bastante antes de 900px. */
-@media (max-width: 1150px) {
-  .main-nav {
-    display: none;
-    position: absolute;
-    top: 68px;
-    left: 0;
-    right: 0;
-    background: var(--bg-1);
-    flex-direction: column;
-    padding: 16px 20px;
-    border-bottom: 1px solid var(--card-border);
-    gap: 14px;
-    z-index: 50;
-  }
-  .main-nav.open { display: flex; }
-  .nav-toggle { display: block; }
-}
 @media (max-width: 900px) {
   .hero-grid, .two-col, .footer-grid { grid-template-columns: 1fr; }
   .card-grid, .card-grid.two-up, .highlight-strip, .info-grid { grid-template-columns: 1fr; }
@@ -1189,6 +1206,9 @@ a { color: inherit; text-decoration: none; }
   .chat-launcher-text { display: none; }
   .chat-launcher { padding: 0; width: 54px; justify-content: center; border-radius: 50%; }
   .chat-greeting { right: 16px; max-width: calc(100vw - 90px); }
+  .nav-menu-btn span:not(.nav-menu-icon) { display: none; }
+  .header-actions { gap: 8px; }
+  .header-actions a.nav-premium span { display: none; }
 }
 
 /* Chatbot widget */
