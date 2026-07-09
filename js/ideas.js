@@ -109,7 +109,7 @@ function renderTVMiniChart(container, symbol) {
     style: '1',
     hide_side_toolbar: false,
     allow_symbol_change: false,
-    studies: ['MASimple@tv-basicstudies'],
+    studies: ['MASimple@tv-basicstudies', 'MAExp@tv-basicstudies'],
     support_host: 'https://www.tradingview.com'
   });
   container.appendChild(script);
@@ -132,7 +132,7 @@ function renderPremiumChart(container, symbol) {
     style: '1',
     hide_side_toolbar: false,
     allow_symbol_change: false,
-    studies: ['MASimple@tv-basicstudies', 'Volume@tv-basicstudies', 'VbPFixed@tv-volumebyprice'],
+    studies: ['MASimple@tv-basicstudies', 'MAExp@tv-basicstudies', 'Volume@tv-basicstudies', 'VbPFixed@tv-volumebyprice'],
     support_host: 'https://www.tradingview.com'
   });
   container.appendChild(script);

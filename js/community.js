@@ -28,6 +28,57 @@
   const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
   const TRADING_STYLES = ['Day trader', 'Swing trader', 'Scalper', 'Macro / posicional', 'HODLer', 'Recién empezando'];
   const REACTION_EMOJI = ['🔥', '🚀', '💡', '🤔'];
+  const POST_SYMBOL_MAP = {
+    'EURUSD': 'FX:EURUSD', 'EUR/USD': 'FX:EURUSD',
+    'GBPUSD': 'FX:GBPUSD', 'GBP/USD': 'FX:GBPUSD',
+    'USDJPY': 'FX:USDJPY', 'USD/JPY': 'FX:USDJPY',
+    'USDMXN': 'FX_IDC:USDMXN', 'USD/MXN': 'FX_IDC:USDMXN',
+    'USDCOP': 'FX_IDC:USDCOP', 'USD/COP': 'FX_IDC:USDCOP',
+    'USDCLP': 'FX_IDC:USDCLP', 'USD/CLP': 'FX_IDC:USDCLP',
+    'USDARS': 'FX_IDC:USDARS', 'USD/ARS': 'FX_IDC:USDARS',
+    'USDBRL': 'FX_IDC:USDBRL', 'USD/BRL': 'FX_IDC:USDBRL',
+    'USDPEN': 'FX_IDC:USDPEN', 'USD/PEN': 'FX_IDC:USDPEN',
+    'ORO': 'OANDA:XAUUSD', 'GOLD': 'OANDA:XAUUSD', 'XAUUSD': 'OANDA:XAUUSD', 'XAU/USD': 'OANDA:XAUUSD',
+    'PLATA': 'OANDA:XAGUSD', 'SILVER': 'OANDA:XAGUSD', 'XAGUSD': 'OANDA:XAGUSD', 'XAG/USD': 'OANDA:XAGUSD',
+    'PETROLEO': 'TVC:USOIL', 'WTI': 'TVC:USOIL', 'OIL': 'TVC:USOIL', 'USOIL': 'TVC:USOIL',
+    'BRENT': 'TVC:UKOIL', 'UKOIL': 'TVC:UKOIL',
+    'BTC': 'BITSTAMP:BTCUSD', 'BTCUSD': 'BITSTAMP:BTCUSD', 'BTC/USD': 'BITSTAMP:BTCUSD', 'BITCOIN': 'BITSTAMP:BTCUSD',
+    'ETH': 'COINBASE:ETHUSD', 'ETHUSD': 'COINBASE:ETHUSD', 'ETH/USD': 'COINBASE:ETHUSD', 'ETHEREUM': 'COINBASE:ETHUSD',
+    'SP500': 'FOREXCOM:SPXUSD', 'S&P500': 'FOREXCOM:SPXUSD', 'US500': 'FOREXCOM:SPXUSD', 'SPX': 'FOREXCOM:SPXUSD',
+    'NASDAQ': 'FOREXCOM:NSXUSD', 'NAS100': 'FOREXCOM:NSXUSD', 'US100': 'FOREXCOM:NSXUSD',
+    'DXY': 'TVC:DXY'
+  };
+
+  function resolvePostSymbol(raw) {
+    if (!raw) return null;
+    const trimmed = String(raw).trim().toUpperCase();
+    if (/^[A-Z0-9_]+:[A-Z0-9]+$/.test(trimmed)) return trimmed;
+    return POST_SYMBOL_MAP[trimmed.replace(/\s+/g, '')] || null;
+  }
+
+  function mountPostChart(container, symbol) {
+    container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+    script.async = true;
+    script.text = JSON.stringify({
+      symbol,
+      width: '100%',
+      height: 280,
+      interval: '60',
+      locale: 'es',
+      timezone: 'America/Lima',
+      theme: 'dark',
+      style: '1',
+      hide_top_toolbar: true,
+      hide_side_toolbar: true,
+      allow_symbol_change: false,
+      studies: ['MASimple@tv-basicstudies', 'MAExp@tv-basicstudies'],
+      support_host: 'https://www.tradingview.com'
+    });
+    container.appendChild(script);
+  }
   const FREE_AVATARS = [
     { id: 'bot-1', name: 'Bot Ámbar', url: 'https://api.dicebear.com/9.x/bottts/svg?seed=Robo1' },
     { id: 'bot-2', name: 'Bot Cobalto', url: 'https://api.dicebear.com/9.x/bottts/svg?seed=Robo2' },
@@ -235,13 +286,58 @@
     `;
   }
 
-  function dashboardShellHTML() {
+  function foroPanelHTML() {
     const rank = myEffectiveRank();
-    const isAdmin = rank === 'administrador';
     const basicoNote = rank === 'basico'
       ? '<p style="color:var(--text-low);font-size:0.78rem;margin-top:8px;">Rango Básico: 1 publicación cada 24 horas. Sube a VIP para publicar sin límite.</p>'
       : '';
+    return `
+      <div class="community-form">
+        <h3 style="margin-bottom:14px;">Publicar una idea</h3>
+        <label for="postCategory">Categoría</label>
+        <select id="postCategory">${CATEGORY_LABELS.map(c => `<option value="${c}">${c}</option>`).join('')}</select>
+        <label for="postSymbol">Instrumento (opcional, ej. EUR/USD, ORO, BTC/USD)</label>
+        <input type="text" id="postSymbol" maxlength="40">
+        <label for="postTitle">Título</label>
+        <input type="text" id="postTitle" maxlength="120">
+        <label for="postBody">Tu análisis</label>
+        <textarea id="postBody" maxlength="2000"></textarea>
+        <button class="btn btn-gold" id="postSubmit" style="margin-top:14px;">Publicar (+10 pts)</button>
+        <div class="community-form-msg" id="postMsg"></div>
+        ${basicoNote}
+        <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Si indicas un instrumento reconocido (ej. EUR/USD, USD/MXN, ORO, BTC/USD), tu publicación mostrará automáticamente un gráfico de TradingView con medias móviles.</p>
+      </div>
 
+      <div class="section-head"><h2>Ideas de la comunidad</h2></div>
+      <div id="communityFeed"><p class="footer-text">Cargando publicaciones...</p></div>
+    `;
+  }
+
+  function chatPanelHTML() {
+    return `
+      <p style="color:var(--text-low);font-size:0.8rem;margin-bottom:14px;">Chat moderado automáticamente. Sé respetuoso, no promociones esquemas de rentabilidad garantizada ni compartas enlaces externos. Las imágenes no pasan por moderación automática — repórtanos cualquier abuso.</p>
+      <div class="discord-chat-shell">
+        <div class="discord-sidebar">
+          <div class="discord-sidebar-title">Salas</div>
+          ${currentRooms().map(r => `<button class="discord-room-btn${r.id === currentRoom ? ' active' : ''}" data-room="${r.id}">${r.label}</button>`).join('')}
+        </div>
+        <div class="discord-main">
+          <div class="discord-header" id="communityChatHeader"></div>
+          <div class="discord-messages" id="communityChatMessages"><p class="footer-text">Cargando chat...</p></div>
+          <div class="discord-input-row">
+            <button class="discord-attach-btn" id="communityChatAttachBtn" type="button" title="Adjuntar imagen">📎</button>
+            <input type="file" id="communityChatImageInput" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+            <input type="text" id="communityChatInput" maxlength="500" placeholder="Escribe un mensaje...">
+            <button class="discord-send-btn" id="communityChatSendBtn">Enviar</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function dashboardShellHTML() {
+    const rank = myEffectiveRank();
+    const isAdmin = rank === 'administrador';
     const styleTag = myProfile.trading_style ? `<span class="instrument-badge">${escapeHtml(myProfile.trading_style)}</span>` : '';
     return `
       <div class="community-header-card">
@@ -260,42 +356,11 @@
 
       ${isAdmin ? adminPanelHTML() : ''}
 
-      <div class="community-form">
-        <h3 style="margin-bottom:14px;">Publicar una idea</h3>
-        <label for="postCategory">Categoría</label>
-        <select id="postCategory">${CATEGORY_LABELS.map(c => `<option value="${c}">${c}</option>`).join('')}</select>
-        <label for="postSymbol">Instrumento (opcional, ej. EUR/USD)</label>
-        <input type="text" id="postSymbol" maxlength="40">
-        <label for="postTitle">Título</label>
-        <input type="text" id="postTitle" maxlength="120">
-        <label for="postBody">Tu análisis</label>
-        <textarea id="postBody" maxlength="2000"></textarea>
-        <button class="btn btn-gold" id="postSubmit" style="margin-top:14px;">Publicar (+10 pts)</button>
-        <div class="community-form-msg" id="postMsg"></div>
-        ${basicoNote}
+      <div class="community-tabs">
+        <button class="community-tab-btn active" data-view="foro">📋 Foro de ideas</button>
+        <button class="community-tab-btn" data-view="chat">💬 Chat en vivo</button>
       </div>
-
-      <div class="section-head"><h2>Ideas de la comunidad</h2></div>
-      <div id="communityFeed"><p class="footer-text">Cargando publicaciones...</p></div>
-
-      <div class="section-head" style="margin-top:36px;"><h2>Chat de la comunidad</h2></div>
-      <p style="color:var(--text-low);font-size:0.8rem;margin-bottom:14px;">Chat moderado automáticamente. Sé respetuoso, no promociones esquemas de rentabilidad garantizada ni compartas enlaces externos. Las imágenes no pasan por moderación automática — repórtanos cualquier abuso.</p>
-      <div class="discord-chat-shell">
-        <div class="discord-sidebar">
-          <div class="discord-sidebar-title">Salas</div>
-          ${currentRooms().map(r => `<button class="discord-room-btn${r.id === currentRoom ? ' active' : ''}" data-room="${r.id}">${r.label}</button>`).join('')}
-        </div>
-        <div class="discord-main">
-          <div class="discord-header" id="communityChatHeader"></div>
-          <div class="discord-messages" id="communityChatMessages"><p class="footer-text">Cargando chat...</p></div>
-          <div class="discord-input-row">
-            <button class="discord-attach-btn" id="communityChatAttachBtn" type="button" title="Adjuntar imagen">📎</button>
-            <input type="file" id="communityChatImageInput" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
-            <input type="text" id="communityChatInput" maxlength="500" placeholder="Escribe un mensaje...">
-            <button class="discord-send-btn" id="communityChatSendBtn">Enviar</button>
-          </div>
-        </div>
-      </div>
+      <div id="communityMainView">${foroPanelHTML()}</div>
     `;
   }
 
@@ -317,6 +382,10 @@
 
   function postCardHTML(post, authorProfile) {
     const symbolTag = post.symbol ? `<span class="instrument-badge">${escapeHtml(post.symbol)}</span>` : '';
+    const resolvedSymbol = resolvePostSymbol(post.symbol);
+    const chartHTML = resolvedSymbol
+      ? `<div class="community-post-chart"><div class="tradingview-widget-container" id="postChart-${post.id}"></div></div>`
+      : '';
     return `
       <article class="community-post-card" data-post-id="${post.id}">
         <div class="community-post-head">
@@ -324,6 +393,7 @@
           <div><strong>${escapeHtml(authorProfile.username)}</strong>${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag} · ${timeAgo(post.created_at)}</span></div>
         </div>
         <h4>${escapeHtml(post.title)}</h4>
+        ${chartHTML}
         <p>${escapeHtml(post.body)}</p>
         <div class="community-post-footer">
           <button class="community-vote-btn" data-vote-id="${post.id}">▲ ${post.upvotes} útil</button>
@@ -359,6 +429,13 @@
       return postCardHTML(p, author);
     }));
     feedEl.innerHTML = cards.join('');
+
+    posts.forEach((p) => {
+      const resolved = resolvePostSymbol(p.symbol);
+      if (!resolved) return;
+      const chartContainer = document.getElementById('postChart-' + p.id);
+      if (chartContainer) mountPostChart(chartContainer, resolved);
+    });
 
     feedEl.querySelectorAll('.community-vote-btn').forEach((btn) => {
       btn.addEventListener('click', async () => {
@@ -527,6 +604,28 @@
     }
     sendBtn.addEventListener('click', send);
     input.addEventListener('keydown', (e) => { if (e.key === 'Enter') send(); });
+  }
+
+  function switchDashboardView(view) {
+    const mainView = document.getElementById('communityMainView');
+    if (!mainView) return;
+    document.querySelectorAll('.community-tab-btn').forEach((b) => b.classList.toggle('active', b.dataset.view === view));
+    stopLiveUpdates();
+    if (view === 'chat') {
+      mainView.innerHTML = chatPanelHTML();
+      wireChatTabs();
+      loadChatRoom(currentRoom);
+    } else {
+      mainView.innerHTML = foroPanelHTML();
+      wirePostForm();
+      loadFeed();
+    }
+  }
+
+  function wireDashboardTabs() {
+    document.querySelectorAll('.community-tab-btn').forEach((btn) => {
+      btn.addEventListener('click', () => switchDashboardView(btn.dataset.view));
+    });
   }
 
   function wirePostForm() {
@@ -758,11 +857,10 @@
     wirePostForm();
     wireRedeemButton();
     wireAdminPanel();
-    wireChatTabs();
+    wireDashboardTabs();
     document.getElementById('communityEditProfileBtn').addEventListener('click', () => { editingProfile = true; render(); });
     document.getElementById('communityAvatarShopBtn').addEventListener('click', () => { shoppingAvatars = true; render(); });
     loadFeed();
-    loadChatRoom(currentRoom);
   }
 
   netlifyIdentity.on('init', render);

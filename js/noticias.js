@@ -96,17 +96,21 @@ function renderNewsChart(container, symbol) {
   container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
   const script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
   script.async = true;
   script.text = JSON.stringify({
     symbol: symbol,
     width: '100%',
-    height: 240,
+    height: 420,
+    interval: '60',
     locale: 'es',
-    dateRange: '1M',
-    colorTheme: 'dark',
-    isTransparent: true,
-    autosize: false
+    timezone: 'America/Lima',
+    theme: 'dark',
+    style: '1',
+    hide_side_toolbar: false,
+    allow_symbol_change: false,
+    studies: ['MASimple@tv-basicstudies', 'MAExp@tv-basicstudies'],
+    support_host: 'https://www.tradingview.com'
   });
   container.appendChild(script);
 }
