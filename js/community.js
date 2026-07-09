@@ -62,6 +62,12 @@
     votes: { icon: '👍', label: 'Vota 3 publicaciones' },
     chat: { icon: '💬', label: 'Manda 5 mensajes en el chat' }
   };
+  const SOCIAL_META = {
+    twitter: { icon: '𝕏', placeholder: 'usuario de X/Twitter', urlBase: 'https://x.com/' },
+    instagram: { icon: '📷', placeholder: 'usuario de Instagram', urlBase: 'https://instagram.com/' },
+    tiktok: { icon: '🎵', placeholder: 'usuario de TikTok', urlBase: 'https://tiktok.com/@' },
+    youtube: { icon: '▶️', placeholder: 'canal de YouTube', urlBase: 'https://youtube.com/@' }
+  };
 
   function resolvePostSymbol(raw) {
     if (!raw) return null;
@@ -223,6 +229,21 @@
     `;
   }
 
+  function socialLinksFormHTML(socialLinks) {
+    const links = socialLinks || {};
+    return `
+      <label style="margin-top:18px;">Redes sociales (opcional)</label>
+      <div class="social-links-form">
+        ${Object.keys(SOCIAL_META).map((key) => `
+          <div class="social-links-row">
+            <span class="social-links-icon">${SOCIAL_META[key].icon}</span>
+            <input type="text" id="cpSocial_${key}" placeholder="${SOCIAL_META[key].placeholder}" maxlength="30" value="${escapeHtml(links[key] || '')}">
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
   function profileSetupHTML(isEdit) {
     const p = isEdit ? myProfile : null;
     const selectedColor = (p && p.avatar_color) || AVATAR_COLORS[0];
@@ -241,6 +262,7 @@
         </select>
         <label for="cpPhone">Teléfono (opcional, privado — no se muestra a otros usuarios)</label>
         <input type="tel" id="cpPhone" placeholder="ej. +51 999 999 999" maxlength="20" value="${isEdit && p.phone ? escapeHtml(p.phone) : ''}">
+        ${isEdit ? socialLinksFormHTML(p.social_links) : ''}
         ${avatarPickerHTML(selectedColor)}
         <button class="btn btn-gold" id="cpSubmit" style="margin-top:14px;">${isEdit ? 'Guardar cambios' : 'Crear perfil'}</button>
         ${isEdit ? '<button class="btn btn-outline" id="cpCancel" style="margin-top:14px;margin-left:8px;">Cancelar</button>' : ''}
@@ -398,6 +420,13 @@
     }).join('')}</div>`;
   }
 
+  function socialLinksRowHTML(socialLinks) {
+    const links = socialLinks || {};
+    const keys = Object.keys(SOCIAL_META).filter((k) => links[k]);
+    if (!keys.length) return '';
+    return `<div class="social-links-row-display">${keys.map((k) => `<a href="${SOCIAL_META[k].urlBase}${encodeURIComponent(links[k])}" target="_blank" rel="noopener" title="${k}">${SOCIAL_META[k].icon}</a>`).join('')}</div>`;
+  }
+
   function dashboardShellHTML() {
     const rank = myEffectiveRank();
     const isAdmin = rank === 'administrador';
@@ -408,7 +437,7 @@
       <div class="community-header-card">
         <div class="community-user-chip">
           ${avatarHTML(myProfile, 'trader-avatar')}
-          <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span> ${streakChip}</h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span>${badgesRowHTML(myProfile.badges)}</div>
+          <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span> ${streakChip}</h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span>${badgesRowHTML(myProfile.badges)}${socialLinksRowHTML(myProfile.social_links)}</div>
         </div>
         <div class="community-points" id="communityPointsDisplay">${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span></div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
@@ -880,6 +909,7 @@
             myProfile = data.profile;
             shoppingAvatars = false;
             render();
+            if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile();
           } catch (e) {
             msgEl.textContent = e.message;
             msgEl.className = 'community-form-msg error';
@@ -961,14 +991,20 @@
       const bio = document.getElementById('cpBio').value.trim();
       const tradingStyle = document.getElementById('cpStyle').value;
       const phone = document.getElementById('cpPhone').value.trim();
+      const socialLinks = {};
+      Object.keys(SOCIAL_META).forEach((key) => {
+        const input = document.getElementById('cpSocial_' + key);
+        if (input) socialLinks[key] = input.value.trim();
+      });
       btn.disabled = true;
       msgEl.textContent = '';
       msgEl.className = 'community-form-msg';
       try {
-        const data = await callFunction('community-profile', { username, bio, tradingStyle, avatarColor: selectedAvatarColor, phone });
+        const data = await callFunction('community-profile', { username, bio, tradingStyle, avatarColor: selectedAvatarColor, phone, socialLinks });
         myProfile = data.profile;
         editingProfile = false;
         await render();
+        if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile();
       } catch (e) {
         msgEl.textContent = e.message;
         msgEl.className = 'community-form-msg error';

@@ -11,6 +11,26 @@
     return netlifyIdentity.currentUser();
   }
 
+  function escapeHtmlLocal(str) {
+    const div = document.createElement('div');
+    div.textContent = str == null ? '' : String(str);
+    return div.innerHTML;
+  }
+
+  let cachedProfile = null;
+  async function fetchCommunityProfile(user) {
+    if (cachedProfile !== null) return cachedProfile;
+    try {
+      const jwt = await user.jwt();
+      const res = await fetch('/.netlify/functions/community-profile', { headers: { 'Authorization': 'Bearer ' + jwt } });
+      const data = await res.json();
+      cachedProfile = (data.success && data.profile) ? data.profile : false;
+    } catch (e) {
+      cachedProfile = false;
+    }
+    return cachedProfile;
+  }
+
   async function isPremiumUser(user) {
     if (!user) return false;
     try {
@@ -23,11 +43,31 @@
     return isPremiumUser(currentUser());
   };
 
+  window.AR4_refreshNavProfile = function () {
+    cachedProfile = null;
+    refreshUI();
+  };
+
   async function refreshUI() {
     const user = currentUser();
 
     if (authBtn) {
-      authBtn.textContent = user ? '👤 ' + (user.email || '').split('@')[0] : 'Iniciar sesión';
+      if (!user) {
+        authBtn.textContent = 'Iniciar sesión';
+        authBtn.classList.remove('has-avatar');
+      } else {
+        const profile = await fetchCommunityProfile(user);
+        if (profile) {
+          const avatarHTML = profile.avatar_url
+            ? `<img class="nav-avatar" src="${escapeHtmlLocal(profile.avatar_url)}" alt="">`
+            : `<span class="nav-avatar nav-avatar-color" style="background:${escapeHtmlLocal(profile.avatar_color || '#d4af37')};">${escapeHtmlLocal((profile.username || '?').charAt(0).toUpperCase())}</span>`;
+          authBtn.innerHTML = avatarHTML + `<span>${escapeHtmlLocal(profile.username)}</span>`;
+          authBtn.classList.add('has-avatar');
+        } else {
+          authBtn.textContent = '👤 ' + (user.email || '').split('@')[0];
+          authBtn.classList.remove('has-avatar');
+        }
+      }
     }
 
     if (statusEl) {

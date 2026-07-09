@@ -4,6 +4,28 @@ const { STREAK_MILESTONES, awardPoints, computeBadges } = require('./_gamificati
 
 const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
 const TRADING_STYLES = ['Day trader', 'Swing trader', 'Scalper', 'Macro / posicional', 'HODLer', 'Recién empezando'];
+const SOCIAL_PLATFORMS = ['twitter', 'instagram', 'tiktok', 'youtube'];
+
+function normalizeHandle(raw) {
+  if (!raw) return null;
+  let v = String(raw).trim();
+  if (!v) return null;
+  v = v.replace(/^https?:\/\/(www\.)?[^/]+\//i, '');
+  v = v.replace(/^@/, '');
+  v = v.split(/[/?#]/)[0].trim();
+  if (!v || !/^[a-zA-Z0-9._-]{1,30}$/.test(v)) return null;
+  return v;
+}
+
+function parseSocialLinks(input) {
+  const raw = input && typeof input === 'object' ? input : {};
+  const links = {};
+  for (const platform of SOCIAL_PLATFORMS) {
+    const handle = normalizeHandle(raw[platform]);
+    if (handle) links[platform] = handle;
+  }
+  return links;
+}
 
 function withEffectiveRank(profile, user) {
   if (!profile) return profile;
@@ -71,6 +93,7 @@ exports.handler = async (event, context) => {
         return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El número de teléfono no es válido.' }) };
       }
       const phone = phoneRaw || null;
+      const socialLinks = parseSocialLinks(body.socialLinks);
 
       if (!/^[a-zA-Z0-9_]{3,24}$/.test(username)) {
         return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El nombre de usuario debe tener 3-24 caracteres: letras, números o guion bajo.' }) };
@@ -79,7 +102,7 @@ exports.handler = async (event, context) => {
       const existing = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id', { method: 'GET' });
 
       if (existing.length > 0) {
-        const patch = { username, bio, trading_style: tradingStyle, phone };
+        const patch = { username, bio, trading_style: tradingStyle, phone, social_links: socialLinks };
         if (requestedColor) patch.avatar_color = requestedColor;
         const updated = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub), {
           method: 'PATCH',
