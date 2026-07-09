@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "ftmo",
+    "rank": 1,
+    "name": "FTMO",
+    "brandColor": "#8a3ffc",
+    "resumen": "La firma más establecida y con mejor reputación de pago del sector, con más de 200,000 traders fondeados desde 2014.",
+    "descripcion": "FTMO es la prop firm más reconocida del mercado, con una trayectoria de más de una década y estadísticas de pago publicadas trimestralmente de forma transparente. Su modelo de dos fases (Challenge + Verificación) es el más replicado por el resto de la industria. Cubre forex, índices, materias primas, algo de cripto y acciones de Estados Unidos.",
+    "founded": "2014",
+    "tracRecordTraders": "+200,000 traders fondeados",
+    "evaluationCost": "$155 – $1,080 USD (según tamaño de cuenta)",
+    "accountSizes": "Desde $10,000 hasta $200,000 USD (escalable hasta $2,000,000)",
+    "profitSplit": "Hasta 90% para el trader",
+    "phases": "2 fases: Challenge (10% objetivo) + Verificación (5% objetivo)",
+    "dailyLossLimit": "5% del balance inicial",
+    "maxDrawdown": "10% del balance inicial",
+    "minTradingDays": "4 días mínimos de trading en cada fase",
+    "payoutFrequency": "Cada 14 días una vez fondeado (bajo solicitud)",
+    "platforms": "MT4 · MT5 · cTrader · DXtrade",
+    "trustpilotRating": "4.6",
+    "trustpilotReviews": "16,000+",
+    "trustpilotLabel": "Excelente",
+    "approvalRate": "~11% completa el challenge (estimado, según reportes públicos del sector)",
+    "avgPayoutTime": "1-2 días hábiles tras solicitarlo",
+    "pros": [
+      "La firma más establecida y con mejor reputación de pago",
+      "Publica estadísticas trimestrales de forma transparente",
+      "Cubre forex, índices, materias primas, algo de cripto y acciones de EE.UU.",
+      "Comunidad y soporte más grandes del sector"
+    ],
+    "cons": [
+      "Evaluación más cara que competidores nuevos",
+      "Ya no acepta traders residentes en EE.UU.",
+      "Reset de la pérdida diaria a medianoche CET, incómodo según zona horaria"
+    ],
+    "faq": [
+      { "q": "¿Cuánto cuesta la evaluación de FTMO?", "a": "Entre $155 y $1,080 USD dependiendo del tamaño de cuenta que elijas (desde $10,000 hasta $200,000). Cuentas más grandes cuestan más pero también permiten operar con más capital una vez fondeado." },
+      { "q": "¿Cuántas fases tiene el proceso de FTMO?", "a": "Dos: el Challenge (objetivo de 10% de ganancia) y la Verificación (objetivo de 5%). Solo después de aprobar ambas fases recibes una cuenta fondeada real." },
+      { "q": "¿Qué pasa si rompo la regla de pérdida diaria?", "a": "La evaluación se reprueba de inmediato, incluso si en general la cuenta está en ganancia. Es la regla que más traders rompen sin darse cuenta, especialmente en días de alta volatilidad." },
+      { "q": "¿FTMO acepta traders de Latinoamérica?", "a": "Sí, FTMO opera globalmente y acepta traders de la mayoría de países de Latinoamérica. La única restricción notable es que ya no acepta residentes de Estados Unidos." }
+    ],
+    "officialUrl": "https://www.ftmo.com"
+  },
+  {
+    "slug": "fundednext",
+    "rank": 2,
+    "name": "FundedNext",
+    "brandColor": "#00c2a8",
+    "resumen": "Único que paga un 15% de tu ganancia aunque no completes el challenge, con precios de evaluación más accesibles.",
+    "descripcion": "FundedNext es una de las prop firms más nuevas del sector con mayor crecimiento, apoyada en un modelo de precios más accesible y en un beneficio poco común: si generas ganancia durante el challenge pero no llegas a completarlo, igual te pagan un 15% de esa ganancia. Ha pagado más de $261 millones a traders desde su fundación.",
+    "founded": "2022",
+    "tracRecordTraders": "+$261M pagados a traders",
+    "evaluationCost": "$129 – $449 USD (según tamaño de cuenta)",
+    "accountSizes": "Desde $6,000 hasta $200,000 USD",
+    "profitSplit": "Hasta 90% para el trader",
+    "phases": "1 o 2 fases, según el tipo de cuenta elegido",
+    "dailyLossLimit": "5% del balance inicial",
+    "maxDrawdown": "10% del balance inicial",
+    "minTradingDays": "Sin requisito mínimo de días en la mayoría de cuentas",
+    "payoutFrequency": "Bajo solicitud, sin ciclo fijo",
+    "platforms": "MT4 · MT5 · cTrader",
+    "trustpilotRating": "4.6",
+    "trustpilotReviews": "14,500+",
+    "trustpilotLabel": "Excelente",
+    "approvalRate": "~14% completa el challenge (estimado, según reportes públicos del sector)",
+    "avgPayoutTime": "Menos de 24 horas en la mayoría de los casos",
+    "pros": [
+      "Único que paga 15% de tu ganancia aunque no completes el reto",
+      "Precio de evaluación más accesible que FTMO",
+      "Sin comisiones recurrentes",
+      "Sin requisito de días mínimos de trading en la mayoría de cuentas"
+    ],
+    "cons": [
+      "Límites de pérdida diaria más estrictos en algunas cuentas",
+      "Solo unos años de trayectoria frente a la década de FTMO",
+      "Condiciones varían bastante según el tipo de cuenta elegido"
+    ],
+    "faq": [
+      { "q": "¿Qué pasa si no completo el challenge de FundedNext pero voy en ganancia?", "a": "FundedNext paga un 15% de la ganancia generada durante el challenge aunque no llegues a completarlo, algo poco común en la industria de cuentas de fondeo." },
+      { "q": "¿Cuál es el depósito mínimo para la evaluación?", "a": "La evaluación más económica parte de $129 USD para la cuenta de $6,000, y sube según el tamaño de cuenta elegido." },
+      { "q": "¿FundedNext tiene requisito de días mínimos de trading?", "a": "En la mayoría de sus cuentas no exige un número mínimo de días operando, lo que da más flexibilidad comparado con firmas que sí lo requieren." },
+      { "q": "¿Qué tan rápido paga FundedNext?", "a": "Según la mayoría de reseñas de usuarios, los retiros se procesan en menos de 24 horas una vez solicitados." }
+    ],
+    "officialUrl": "https://fundednext.com"
+  },
+  {
+    "slug": "the5ers",
+    "rank": 3,
+    "name": "The5ers",
+    "brandColor": "#2e6fd9",
+    "resumen": "El techo de escalado más alto del mercado (hasta $4,000,000 USD), con split de ganancia que sube hasta 100%.",
+    "descripcion": "The5ers se diferencia del resto por su programa de escalado: cada vez que alcanzas un 10% de ganancia, tu cuenta y tu porcentaje de reparto suben, hasta llegar a gestionar cuentas de hasta $4,000,000 USD con un split de hasta el 100%. No exige un número mínimo de días de trading, lo que le da flexibilidad a quien no puede operar todos los días.",
+    "founded": "2016",
+    "tracRecordTraders": "Programa de escalado activo desde 2016",
+    "evaluationCost": "$95 – $825 USD (según tamaño de cuenta y programa)",
+    "accountSizes": "Desde $5,000, escalable hasta $4,000,000 USD",
+    "profitSplit": "80% inicial, escalando hasta 100%",
+    "phases": "Programas de 1 o 2 fases, más un programa \"Instant Funding\" sin evaluación previa",
+    "dailyLossLimit": "5% del balance inicial (según programa)",
+    "maxDrawdown": "10% del balance inicial (según programa)",
+    "minTradingDays": "Sin requisito mínimo de días de trading",
+    "payoutFrequency": "Bajo solicitud, sin ciclo fijo",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "4.7",
+    "trustpilotReviews": "3,200+",
+    "trustpilotLabel": "Excelente",
+    "approvalRate": "~9% completa el programa Bootcamp (estimado, según reportes públicos del sector)",
+    "avgPayoutTime": "1-3 días hábiles",
+    "pros": [
+      "El techo de escalado más alto del mercado (hasta $4M)",
+      "Cada 10% de ganancia, tu cuenta y tu split escalan",
+      "Sin presión de días mínimos de trading",
+      "Programa \"Instant Funding\" disponible sin evaluación previa (con condiciones más estrictas)"
+    ],
+    "cons": [
+      "El split inicial del programa \"Bootcamp\" (50/50 en algunos casos) es el más bajo de los tres",
+      "Llegar al split más alto toma tiempo y consistencia",
+      "Menor volumen de reseñas que FTMO o FundedNext"
+    ],
+    "faq": [
+      { "q": "¿Cómo funciona el escalado de cuenta en The5ers?", "a": "Cada vez que tu cuenta fondeada alcanza un 10% de ganancia, el tamaño de la cuenta y tu porcentaje de reparto de ganancias aumentan, hasta llegar a un techo de $4,000,000 USD gestionados y un split de hasta 100%." },
+      { "q": "¿The5ers exige un número mínimo de días operando?", "a": "No, es una de las pocas firmas del sector que no impone un requisito de días mínimos de trading, lo que da flexibilidad a quien no puede operar todos los días." },
+      { "q": "¿Qué es el programa Instant Funding de The5ers?", "a": "Es un programa que permite acceder a una cuenta fondeada sin pasar por una evaluación previa, a cambio de condiciones de riesgo más estrictas y un split inicial más bajo." },
+      { "q": "¿Cuál es el split inicial en The5ers?", "a": "Depende del programa elegido: los programas de evaluación tradicional suelen partir con un split más generoso, mientras que el programa Bootcamp/Instant Funding inicia más bajo (cercano a 50/50) y escala con el tiempo." }
+    ],
+    "officialUrl": "https://the5ers.com"
+  }
+]
