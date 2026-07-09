@@ -732,6 +732,91 @@ a { color: inherit; text-decoration: none; }
 .upsell-modal .upsell-price { font-family: var(--mono); color: var(--gold-bright); font-size: 1.4rem; font-weight: 700; margin-bottom: 4px; }
 .upsell-modal .upsell-price span { color: var(--text-mid); font-size: 0.8rem; font-weight: 400; }
 
+/* Comunidad */
+.community-header-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.community-user-chip { display: flex; align-items: center; gap: 14px; }
+.community-user-chip .trader-avatar { width: 46px; height: 46px; font-size: 1rem; }
+.community-user-chip h4 { font-size: 1rem; margin-bottom: 2px; }
+.community-points {
+  font-family: var(--mono);
+  color: var(--gold-bright);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.community-points span { color: var(--text-mid); font-size: 0.76rem; font-weight: 400; display: block; margin-top: 2px; }
+
+.community-form { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 22px; margin-bottom: 28px; }
+.community-form label { display: block; font-size: 0.78rem; color: var(--text-mid); margin: 12px 0 6px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.4px; }
+.community-form label:first-child { margin-top: 0; }
+.community-form input, .community-form textarea, .community-form select {
+  width: 100%;
+  background: var(--bg-0);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--text-hi);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+.community-form textarea { resize: vertical; min-height: 90px; }
+.community-form-msg { font-size: 0.82rem; margin-top: 10px; }
+.community-form-msg.error { color: var(--crimson-bright); }
+.community-form-msg.success { color: var(--green); }
+
+.community-post-card { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 20px; margin-bottom: 14px; }
+.community-post-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.community-post-head .trader-avatar { width: 34px; height: 34px; font-size: 0.78rem; }
+.community-post-head strong { font-size: 0.86rem; }
+.community-post-head span { font-size: 0.72rem; color: var(--text-low); font-family: var(--mono); }
+.community-post-card h4 { font-size: 1rem; margin-bottom: 6px; }
+.community-post-card p { color: var(--text-mid); font-size: 0.86rem; line-height: 1.5; margin-bottom: 12px; }
+.community-vote-btn {
+  background: rgba(212,175,55,0.1);
+  border: 1px solid rgba(212,175,55,0.3);
+  color: var(--gold-bright);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.community-vote-btn:hover { background: rgba(212,175,55,0.2); }
+.community-vote-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.community-chat-tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.community-chat-tabs button {
+  background: transparent; border: 1px solid var(--card-border); color: var(--text-mid);
+  font-size: 0.82rem; padding: 7px 14px; border-radius: 8px; cursor: pointer; font-family: inherit;
+}
+.community-chat-tabs button.active { background: var(--gold); color: #16130a; border-color: transparent; font-weight: 700; }
+.community-chat-window { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 16px; margin-bottom: 8px; }
+.community-chat-messages { height: 360px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; padding-right: 4px; }
+.community-chat-msg { font-size: 0.86rem; }
+.community-chat-msg strong { color: var(--gold-bright); margin-right: 6px; }
+.community-chat-msg span.community-chat-time { color: var(--text-low); font-size: 0.7rem; font-family: var(--mono); margin-left: 6px; }
+.community-chat-msg p { display: inline; color: var(--text-mid); }
+.community-chat-input-row { display: flex; gap: 10px; }
+.community-chat-input-row input {
+  flex: 1; background: var(--bg-0); border: 1px solid var(--card-border); border-radius: 8px;
+  padding: 10px 12px; color: var(--text-hi); font-family: inherit; font-size: 0.88rem;
+}
+.community-chat-input-row button {
+  background: var(--gold); color: #16130a; border: none; border-radius: 8px;
+  padding: 0 18px; font-weight: 700; cursor: pointer; font-size: 0.86rem;
+}
+.community-chat-input-row button:disabled { opacity: 0.5; cursor: not-allowed; }
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--card-border);

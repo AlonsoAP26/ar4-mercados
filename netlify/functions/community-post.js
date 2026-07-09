@@ -1,0 +1,51 @@
+const { supabaseRequest } = require('./_supabase');
+const { isFlagged } = require('./_moderation');
+
+const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
+
+exports.handler = async (event, context) => {
+  if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };
+
+  const user = context.clientContext && context.clientContext.user;
+  if (!user) return { statusCode: 401, body: JSON.stringify({ success: false, error: 'Debes iniciar sesión.' }) };
+
+  try {
+    const body = JSON.parse(event.body || '{}');
+    const title = (body.title || '').trim().slice(0, 120);
+    const text = (body.body || '').trim().slice(0, 2000);
+    const category = ALLOWED_CATEGORIES.includes(body.category) ? body.category : 'Forex';
+    const symbol = body.symbol ? String(body.symbol).trim().slice(0, 40) : null;
+
+    if (title.length < 8 || text.length < 20) {
+      return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El título y el contenido son demasiado cortos.' }) };
+    }
+
+    const profileRows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id,points', { method: 'GET' });
+    if (!profileRows.length) {
+      return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Primero crea tu perfil de comunidad.' }) };
+    }
+    const profile = profileRows[0];
+
+    if (await isFlagged(title + '\n' + text)) {
+      return { statusCode: 422, body: JSON.stringify({ success: false, error: 'Tu publicación no pasó la revisión automática (posible spam, promesas de rentabilidad garantizada o lenguaje inapropiado). Ajústala e inténtalo de nuevo.' }) };
+    }
+
+    const created = await supabaseRequest('community_posts', {
+      method: 'POST',
+      body: JSON.stringify({ profile_id: profile.id, category, title, body: text, symbol })
+    });
+
+    await supabaseRequest('points_ledger', {
+      method: 'POST',
+      body: JSON.stringify({ profile_id: profile.id, amount: 10, reason: 'post_created' })
+    });
+    await supabaseRequest('profiles?id=eq.' + profile.id, {
+      method: 'PATCH',
+      body: JSON.stringify({ points: (profile.points || 0) + 10 })
+    });
+
+    return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, post: created[0] }) };
+  } catch (e) {
+    return { statusCode: 500, body: JSON.stringify({ success: false, error: String(e.message || e) }) };
+  }
+};

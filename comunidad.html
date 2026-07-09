@@ -3,13 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="pageTitle">Review de Broker — AR4 Mercados</title>
-<meta name="description" id="pageDesc" content="Review completa de broker — AR4 Mercados">
+<title>Comunidad AR4 Mercados — Ideas, puntos y chat entre traders</title>
+<meta name="description" content="Únete a la comunidad de AR4 Mercados: publica tus ideas de trading, vota las de otros, gana puntos canjeables por Premium y chatea en salas de Forex, Acciones y Criptomonedas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AR4 Mercados">
+<meta property="og:title" content="Comunidad AR4 Mercados — Ideas, puntos y chat entre traders">
+<meta property="og:description" content="Publica tus ideas de trading, vota las de otros, gana puntos canjeables por Premium y chatea en salas de Forex, Acciones y Criptomonedas.">
+<meta property="og:url" content="https://ar4mercados.com/comunidad.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=1200&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -20,8 +28,10 @@
     {
       "symbols": [
         {"proName": "FX_IDC:USDMXN", "title": "USD/MXN"},
+        {"proName": "FX_IDC:USDCOP", "title": "USD/COP"},
         {"proName": "FX:EURUSD", "title": "EUR/USD"},
-        {"proName": "OANDA:XAUUSD", "title": "ORO"}
+        {"proName": "OANDA:XAUUSD", "title": "ORO"},
+        {"proName": "BITSTAMP:BTCUSD", "title": "BTC/USD"}
       ],
       "showSymbolLogo": true,
       "isTransparent": true,
@@ -61,29 +71,19 @@
   </div>
 </header>
 
-<section class="page-hero" style="padding-bottom:0;">
+<section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Inicio</a> / <a href="brokers.html">Brokers</a> / <span id="breadcrumbTitle">Review</span></div>
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Comunidad</div>
+    <h1>La <span class="gold">comunidad</span> de AR4 Mercados</h1>
+    <p>Publica tus propias ideas de trading, vota las de otros traders latinoamericanos, gana puntos canjeables por Premium, y chatea en tiempo real en las salas de Forex, Acciones e Índices, y Criptomonedas.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:24px;">
-  <div class="container" id="brokerBody">
-
-    <div id="brokerHero">
-      <p class="footer-text">Cargando review...</p>
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+    <div id="communityRoot">
+      <p class="footer-text">Cargando comunidad...</p>
     </div>
-
-    <div id="brokerDeepDive"></div>
-
-    <div id="brokerBottomCta" style="margin-top:36px;"></div>
-
-    <div class="section-head" style="margin-top:40px;">
-      <h2>Otros brokers del Top 10</h2>
-      <a href="brokers.html" class="see-all">Ver ranking completo →</a>
-    </div>
-    <div class="card-grid" id="relatedBrokersGrid"></div>
-
   </div>
 </section>
 
@@ -109,14 +109,15 @@
       <a href="terminos.html">Términos de Servicio</a>
       <a href="privacidad.html">Política de Privacidad</a>
       <a href="nosotros.html">Nosotros / Contacto</a>
-      <p class="footer-text">© <span id="year"></span> AR4 Mercados. Los datos de regulación, depósito y Trustpilot se recopilan de fuentes públicas y pueden cambiar — verifica siempre en el sitio oficial del broker. Este sitio no ofrece asesoría financiera regulada.</p>
+      <p class="footer-text">© <span id="year"></span> AR4 Mercados. Las publicaciones de la comunidad son opiniones de otros usuarios, no de AR4 Mercados, y no constituyen asesoría financiera regulada. El chat está moderado automáticamente, pero repórtanos cualquier abuso a través de Nosotros/Contacto.</p>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
 <script src="js/auth.js"></script>
-<script src="js/brokers.js?v=4"></script>
+<script src="js/community.js"></script>
 <script src="js/chatbot.js?v=2"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "PENDIENTE_TOKEN_CLOUDFLARE"}'></script>
 </body>
 </html>
