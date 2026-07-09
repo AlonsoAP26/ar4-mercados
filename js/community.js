@@ -430,6 +430,54 @@
     }
   }
 
+  function tradingDnaPanelHTML() {
+    return `
+      <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">Calculado en tiempo real a partir de las operaciones que registraste en tu <a href="herramientas.html">diario de trading</a>. Ningún dato aquí está inventado — si no ves algo, es porque todavía no lo registraste.</p>
+      <div id="tradingDnaContent"><p class="footer-text">Cargando tu Trading DNA...</p></div>
+    `;
+  }
+
+  function dnaStatCardHTML(label, value, sublabel) {
+    return `
+      <div class="dna-stat-card">
+        <span class="dna-stat-label">${label}</span>
+        <strong class="dna-stat-value">${value}</strong>
+        ${sublabel ? `<span class="dna-stat-sub">${sublabel}</span>` : ''}
+      </div>
+    `;
+  }
+
+  async function loadTradingDna() {
+    const el = document.getElementById('tradingDnaContent');
+    if (!el) return;
+    try {
+      const data = await callFunctionGET('community-trading-dna');
+      if (!data.hasData) {
+        el.innerHTML = `
+          <div class="community-form" style="text-align:center;">
+            <p style="color:var(--text-mid);">Todavía no registraste ninguna operación.</p>
+            <a href="herramientas.html" class="btn btn-gold" style="margin-top:10px;">Ir al diario de trading</a>
+          </div>
+        `;
+        return;
+      }
+
+      const cards = [
+        dnaStatCardHTML('Operaciones registradas', data.totalTrades, `${data.closedTrades} cerradas · ${data.openTrades} abiertas`),
+        data.winRate !== null ? dnaStatCardHTML('Win rate', data.winRate + '%', `sobre ${data.closedTrades} cerradas`) : null,
+        dnaStatCardHTML('Sesgo direccional', `${data.longPct}% 📈 / ${data.shortPct}% 📉`, 'long vs. short'),
+        data.favoriteSymbol ? dnaStatCardHTML('Instrumento favorito', data.favoriteSymbol.symbol, `${data.favoriteSymbol.count} operaciones`) : null,
+        data.avgRR !== null ? dnaStatCardHTML('R:R promedio realizado', '1:' + data.avgRR, `sobre ${data.rrSampleSize} operaciones con datos completos`) : null,
+        data.currentStreak ? dnaStatCardHTML('Racha actual', data.currentStreak.count + ' ' + (data.currentStreak.type === 'ganadora' ? '✅' : '❌'), data.currentStreak.type) : null,
+        data.topEmotion ? dnaStatCardHTML('Estado emocional frecuente', data.topEmotion.emotion, `${data.topEmotion.count} veces`) : null
+      ].filter(Boolean).join('');
+
+      el.innerHTML = `<div class="dna-stat-grid">${cards}</div>`;
+    } catch (e) {
+      el.innerHTML = `<p class="footer-text">${escapeHtml(e.message)}</p>`;
+    }
+  }
+
   function badgesRowHTML(badges) {
     if (!badges || !badges.length) return '';
     return `<div class="community-badges">${badges.map((b) => {
@@ -480,6 +528,7 @@
         <button class="community-tab-btn active" data-view="foro">📋 Foro de ideas</button>
         <button class="community-tab-btn" data-view="chat">💬 Chat en vivo</button>
         <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
+        <button class="community-tab-btn" data-view="dna">🧬 Trading DNA</button>
       </div>
       <div id="communityMainView">${foroPanelHTML()}</div>
     `;
@@ -899,6 +948,9 @@
     } else if (view === 'ranking') {
       mainView.innerHTML = rankingPanelHTML();
       loadLeaderboard();
+    } else if (view === 'dna') {
+      mainView.innerHTML = tradingDnaPanelHTML();
+      loadTradingDna();
     } else {
       mainView.innerHTML = foroPanelHTML();
       wirePostForm();
