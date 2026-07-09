@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membresía Premium — AR4 Mercados</title>
+<meta name="description" content="Accede a Ideas de Trading avanzadas, chatbot ilimitado y contenido premium de AR4 Mercados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<div class="ticker-bar">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        {"proName": "FX_IDC:USDMXN", "title": "USD/MXN"},
+        {"proName": "FX:EURUSD", "title": "EUR/USD"},
+        {"proName": "OANDA:XAUUSD", "title": "ORO"}
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": true,
+      "displayMode": "compact",
+      "colorTheme": "dark",
+      "locale": "es"
+    }
+    </script>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">AR4 <span>MERCADOS</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="brokers.html">Brokers</a>
+      <a href="copytrading.html">Copytrading</a>
+      <a href="fondeo.html">Fondeo</a>
+      <a href="psicotrading.html">Psicotrading</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="membresia.html" class="nav-premium">★ Premium</a>
+      <a href="#" id="authBtn">Iniciar sesión</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Membresía</div>
+    <span class="badge-live" style="background:rgba(212,175,55,0.15);color:var(--gold-bright);border-color:rgba(212,175,55,0.35);">★ AR4 PREMIUM</span>
+    <h1 style="margin-top:14px;">Lleva tu trading <span class="gold">al siguiente nivel</span></h1>
+    <p>Análisis más profundos, sin límites en el asistente de IA, y acceso prioritario a contenido que no publicamos en la versión gratuita.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+
+    <div id="accountStatus"></div>
+
+    <div class="card-grid two-up">
+
+      <article class="broker-card">
+        <div class="broker-rank">Plan actual</div>
+        <h3>Gratis</h3>
+        <div class="stars"><span style="font-family:var(--mono);font-size:1.4rem;color:var(--text-hi);">$0</span> <span>/ siempre</span></div>
+        <div class="pros-cons">
+          <div class="pros">
+            <h5>Incluye</h5>
+            <ul>
+              <li>Todas las reviews de brokers y fondeo</li>
+              <li>Noticias y calendario económico</li>
+              <li>Ideas de Trading básicas</li>
+              <li>Chatbot con límite diario</li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-outline btn-block" disabled>Tu plan actual</button>
+      </article>
+
+      <article class="broker-card" style="border-color:rgba(212,175,55,0.4); box-shadow:0 16px 40px rgba(212,175,55,0.08);">
+        <div class="broker-rank" style="color:var(--gold-bright);">★ Recomendado</div>
+        <h3>Premium</h3>
+        <div class="stars"><span style="font-family:var(--mono);font-size:1.4rem;color:var(--gold-bright);">$9.99</span> <span>USD / mes</span></div>
+        <div class="pros-cons">
+          <div class="pros">
+            <h5>Todo lo de Gratis, más</h5>
+            <ul>
+              <li>Ideas de Trading avanzadas y exclusivas</li>
+              <li>Chatbot sin límite de mensajes</li>
+              <li>Acceso a la sección de Señales Premium (próximamente)</li>
+              <li>Cancela cuando quieras</li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-gold btn-block" id="subscribeBtn">Suscribirme ahora</button>
+      </article>
+
+    </div>
+
+    <p class="footer-text" style="margin-top:20px;">Precio de lanzamiento, sujeto a ajuste. La sección de Señales Premium está en preparación y no incluye asesoría financiera personalizada — es contenido educativo bajo revisión legal antes de su publicación.</p>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">AR4 <span>MERCADOS</span></div>
+      <p class="footer-text">Información de mercado, brokers y educación financiera para Latinoamérica.</p>
+    </div>
+    <div>
+      <h5>Explorar</h5>
+      <a href="brokers.html">Brokers</a>
+      <a href="copytrading.html">Copytrading</a>
+      <a href="fondeo.html">Fondeo</a>
+      <a href="psicotrading.html">Psicotrading</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="calendario.html">Calendario</a>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <p class="footer-text">© <span id="year"></span> AR4 Mercados. La membresía Premium da acceso a contenido educativo adicional; no constituye asesoría financiera regulada. Los pagos se procesan de forma segura vía Stripe.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/chatbot.js?v=2"></script>
+</body>
+</html>

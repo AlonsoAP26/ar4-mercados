@@ -47,7 +47,8 @@
     "excerpt": "Chile y Perú enfrentan datos clave de inflación y tasas esta semana, en lo que podría marcar el rumbo de sus divisas en el corto plazo.",
     "body": "<p><strong>Contexto:</strong> El USD/COP se ubica cerca de 3,345, todavía lejos de sus máximos de 52 semanas, mientras que el USD/CLP cotiza cerca de 927.6, con el peso chileno cerca de la zona fuerte de su rango anual. Ambas divisas están a la espera de datos macro relevantes esta semana.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué está moviendo estas divisas</h3><p>En Chile, el dato de inflación (IPC) es el gran protagonista — el mercado incluso contempla la posibilidad de una lectura negativa mensual, señal de que la desinflación avanza más rápido de lo previsto. En Perú, la decisión de tasas del banco central es el evento clave, en lo que se perfila como una prueba conjunta de desinflación para la región andina.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Niveles y factores a vigilar</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Una sorpresa a la baja en el IPC chileno podría reforzar las apuestas por más recortes de tasas del Banco Central de Chile, con impacto directo en el peso.</li><li>La decisión de Perú marcará si el banco central mantiene una postura cautelosa o acelera el ciclo de ajuste.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué podría cambiar el escenario</h3><p>Ambas divisas siguen expuestas al apetito de riesgo global y al precio de las materias primas (cobre para Chile, contexto energético regional para Perú) — factores externos que pueden pesar tanto o más que los datos locales.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>",
     "heroType": "latam",
-    "trend": "neutral"
+    "trend": "neutral",
+    "premium": true
   },
   {
     "title": "Wall Street a la espera: los índices bursátiles frente a la temporada de resultados",
@@ -59,6 +60,7 @@
     "author": "IA · AR4 Mercados",
     "date": "2026-07-08",
     "heroType": "index",
-    "trend": "neutral"
+    "trend": "neutral",
+    "premium": true
   }
 ]

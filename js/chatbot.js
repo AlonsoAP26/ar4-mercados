@@ -43,6 +43,31 @@
 
   let history = [];
   let sending = false;
+  let premiumCache = null;
+
+  const FREE_DAILY_LIMIT = 8;
+
+  async function isPremiumUser() {
+    if (premiumCache !== null) return premiumCache;
+    if (typeof window.AR4_checkPremium === 'function') {
+      try { premiumCache = await window.AR4_checkPremium(); } catch (e) { premiumCache = false; }
+    } else {
+      premiumCache = false;
+    }
+    return premiumCache;
+  }
+
+  function todayKey() {
+    return 'ar4ChatCount_' + new Date().toISOString().slice(0, 10);
+  }
+
+  function messagesUsedToday() {
+    return parseInt(localStorage.getItem(todayKey()) || '0', 10);
+  }
+
+  function registerMessageUsed() {
+    localStorage.setItem(todayKey(), String(messagesUsedToday() + 1));
+  }
 
   function hideGreeting() {
     greeting.classList.remove('show');
@@ -80,6 +105,18 @@
     const text = inputEl.value.trim();
     if (!text || sending) return;
 
+    const premium = await isPremiumUser();
+    if (!premium && messagesUsedToday() >= FREE_DAILY_LIMIT) {
+      addMessage(text, 'user');
+      const div = document.createElement('div');
+      div.className = 'chat-msg error';
+      div.innerHTML = `Llegaste al límite gratuito de ${FREE_DAILY_LIMIT} mensajes por hoy. <a href="membresia.html" style="color:inherit;text-decoration:underline;">Hazte Premium</a> para chatear sin límite.`;
+      messagesEl.appendChild(div);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+      inputEl.value = '';
+      return;
+    }
+
     addMessage(text, 'user');
     history.push({ role: 'user', content: text });
     inputEl.value = '';
@@ -106,6 +143,7 @@
       const data = await res.json();
       addMessage(data.reply, 'bot');
       history.push({ role: 'assistant', content: data.reply });
+      if (!premium) registerMessageUsed();
     } catch (e) {
       thinking.remove();
       addMessage('El asistente todavía no está conectado en esta versión del sitio. Vuelve a intentarlo cuando esté publicado con la integración activa.', 'error');
