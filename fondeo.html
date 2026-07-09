@@ -128,7 +128,19 @@
 
     <p class="footer-text" style="margin-top:10px;margin-bottom:40px;">Datos recopilados y resumidos por IA a partir de fuentes públicas (TradeZella, Track360, OnlinePropFirm, Benzinga, entre otras) a julio de 2026. Los precios, reglas, splits y tasas de aprobación son estimaciones ilustrativas basadas en cifras públicas del sector y cambian con frecuencia — verifica siempre las condiciones actuales en el sitio oficial de cada firma antes de comprar una evaluación.</p>
 
-    <div class="section-head">
+    <div class="section-head" style="margin-top:12px;">
+      <h2>📊 Tabla comparativa detallada</h2>
+    </div>
+    <div class="filter-bar" style="margin-bottom:18px;">
+      <button class="filter-chip fondeo-phase-filter active" data-filter="all">Todas</button>
+      <button class="filter-chip fondeo-phase-filter" data-filter="1">1 fase</button>
+      <button class="filter-chip fondeo-phase-filter" data-filter="2">2 fases</button>
+    </div>
+    <div id="fondeoCompareTable">
+      <p class="footer-text">Cargando tabla...</p>
+    </div>
+
+    <div class="section-head" style="margin-top:36px;">
       <h2>Cómo prepararte antes de pagar una evaluación</h2>
     </div>
     <div class="info-grid" style="margin-bottom:36px;">
@@ -243,7 +255,7 @@
 
 <script src="js/main.js?v=2"></script>
 <script src="js/auth.js?v=2"></script>
-<script src="js/fondeo.js"></script>
+<script src="js/fondeo.js?v=2"></script>
 <script src="js/chatbot.js?v=3"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "PENDIENTE_TOKEN_CLOUDFLARE"}'></script>
 </body>

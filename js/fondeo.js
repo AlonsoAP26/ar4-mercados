@@ -134,5 +134,73 @@ async function initFondeoDetail() {
   }
 }
 
+function fondeoMatchesPhaseFilter(f, filter) {
+  if (filter === 'all') return true;
+  const phasesText = (f.phases || '').toLowerCase();
+  if (filter === '1') return /\b1\s*(o\s*2\s*)?fase/.test(phasesText);
+  if (filter === '2') return /\b2\s*fases/.test(phasesText) || /1\s*o\s*2\s*fases/.test(phasesText);
+  return true;
+}
+
+function fondeoCompareRowHTML(label, values) {
+  return `<tr><th>${label}</th>${values.map((v) => `<td>${v}</td>`).join('')}</tr>`;
+}
+
+function renderFondeoCompareTable(firmas, filter) {
+  const wrap = document.getElementById('fondeoCompareTable');
+  if (!wrap) return;
+
+  const filtered = firmas.filter((f) => fondeoMatchesPhaseFilter(f, filter));
+  if (!filtered.length) {
+    wrap.innerHTML = '<p class="footer-text">Ninguna firma coincide con ese filtro.</p>';
+    return;
+  }
+
+  const rows = [
+    ['Costo de evaluación', filtered.map((f) => f.evaluationCost)],
+    ['Tamaños de cuenta', filtered.map((f) => f.accountSizes)],
+    ['Split de ganancia', filtered.map((f) => f.profitSplit)],
+    ['Fases', filtered.map((f) => f.phases)],
+    ['Pérdida diaria máxima', filtered.map((f) => f.dailyLossLimit)],
+    ['Drawdown máximo', filtered.map((f) => f.maxDrawdown)],
+    ['Días mínimos de trading', filtered.map((f) => f.minTradingDays)],
+    ['Frecuencia de pago', filtered.map((f) => f.payoutFrequency)],
+    ['Plataformas', filtered.map((f) => f.platforms)],
+    ['Trustpilot', filtered.map((f) => f.trustpilotRating + '/5 (' + f.trustpilotReviews + ')')]
+  ];
+
+  wrap.innerHTML = `
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead><tr><th></th>${filtered.map((f) => `<th>${f.name}</th>`).join('')}</tr></thead>
+        <tbody>
+          ${rows.map(([label, values]) => fondeoCompareRowHTML(label, values)).join('')}
+          <tr><th></th>${filtered.map((f) => `<td><a href="fondeo-detail.html?slug=${encodeURIComponent(f.slug)}" class="btn btn-outline" style="padding:8px 14px;font-size:0.78rem;">Ver review →</a></td>`).join('')}</tr>
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+async function initFondeoCompareTable() {
+  const wrap = document.getElementById('fondeoCompareTable');
+  if (!wrap) return;
+  try {
+    const firmas = await loadFondeo();
+    firmas.sort((a, b) => a.rank - b.rank);
+    renderFondeoCompareTable(firmas, 'all');
+    document.querySelectorAll('.fondeo-phase-filter').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.fondeo-phase-filter').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderFondeoCompareTable(firmas, btn.dataset.filter);
+      });
+    });
+  } catch (e) {
+    wrap.innerHTML = '<p class="footer-text">No se pudo cargar la tabla comparativa.</p>';
+  }
+}
+
 initFondeoListing();
 initFondeoDetail();
+initFondeoCompareTable();
