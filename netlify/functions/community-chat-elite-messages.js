@@ -27,7 +27,7 @@ exports.handler = async (event, context) => {
     let profilesById = {};
     if (profileIds.length) {
       const filter = profileIds.map((id) => `"${id}"`).join(',');
-      const profiles = await supabaseRequest('profiles?id=in.(' + filter + ')&select=id,username,avatar_color', { method: 'GET' });
+      const profiles = await supabaseRequest('profiles?id=in.(' + filter + ')&select=id,username,avatar_color,rank', { method: 'GET' });
       profilesById = Object.fromEntries(profiles.map((p) => [p.id, p]));
     }
 

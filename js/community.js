@@ -10,11 +10,19 @@
 
   const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
   const BASE_ROOMS = [
-    { id: 'forex', label: 'Forex' },
-    { id: 'acciones', label: 'Acciones e Índices' },
-    { id: 'cripto', label: 'Criptomonedas' }
+    { id: 'forex', label: '💱 Forex' },
+    { id: 'commodities', label: '🛢️ Commodities' },
+    { id: 'acciones', label: '📈 Acciones e Índices' },
+    { id: 'cripto', label: '₿ Criptomonedas' }
   ];
   const ELITE_ROOM = { id: 'elite', label: '★ Elite Traders' };
+  const ROOM_META = {
+    forex: { icon: '💱', name: 'Forex', desc: 'Charla general sobre pares de divisas' },
+    commodities: { icon: '🛢️', name: 'Commodities', desc: 'Oro, petróleo y materias primas' },
+    acciones: { icon: '📈', name: 'Acciones e Índices', desc: 'Índices bursátiles y acciones' },
+    cripto: { icon: '₿', name: 'Criptomonedas', desc: 'Bitcoin, Ethereum y el resto del mercado cripto' },
+    elite: { icon: '★', name: 'Elite Traders', desc: 'Sala exclusiva para rango Élite y Administrador' }
+  };
   const RANK_LABELS = { basico: 'Básico', vip: 'VIP', premium: 'Premium', elite: 'Élite', administrador: 'Administrador' };
   const RANK_ORDER = { basico: 0, vip: 1, premium: 2, elite: 3, administrador: 4 };
   const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
@@ -209,15 +217,21 @@
       <div id="communityFeed"><p class="footer-text">Cargando publicaciones...</p></div>
 
       <div class="section-head" style="margin-top:36px;"><h2>Chat de la comunidad</h2></div>
-      <p style="color:var(--text-low);font-size:0.8rem;margin-bottom:14px;">Chat moderado automáticamente. Sé respetuoso, no promociones esquemas de rentabilidad garantizada ni compartas enlaces externos.</p>
-      <div class="community-chat-tabs">
-        ${currentRooms().map(r => `<button data-room="${r.id}" class="${r.id === currentRoom ? 'active' : ''}">${r.label}</button>`).join('')}
-      </div>
-      <div class="community-chat-window">
-        <div class="community-chat-messages" id="chatMessages"><p class="footer-text">Cargando chat...</p></div>
-        <div class="community-chat-input-row">
-          <input type="text" id="chatInput" maxlength="500" placeholder="Escribe un mensaje...">
-          <button id="chatSendBtn">Enviar</button>
+      <p style="color:var(--text-low);font-size:0.8rem;margin-bottom:14px;">Chat moderado automáticamente. Sé respetuoso, no promociones esquemas de rentabilidad garantizada ni compartas enlaces externos. Las imágenes no pasan por moderación automática — repórtanos cualquier abuso.</p>
+      <div class="discord-chat-shell">
+        <div class="discord-sidebar">
+          <div class="discord-sidebar-title">Salas</div>
+          ${currentRooms().map(r => `<button class="discord-room-btn${r.id === currentRoom ? ' active' : ''}" data-room="${r.id}">${r.label}</button>`).join('')}
+        </div>
+        <div class="discord-main">
+          <div class="discord-header" id="chatHeader"></div>
+          <div class="discord-messages" id="chatMessages"><p class="footer-text">Cargando chat...</p></div>
+          <div class="discord-input-row">
+            <button class="discord-attach-btn" id="chatAttachBtn" type="button" title="Adjuntar imagen">📎</button>
+            <input type="file" id="chatImageInput" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+            <input type="text" id="chatInput" maxlength="500" placeholder="Escribe un mensaje...">
+            <button class="discord-send-btn" id="chatSendBtn">Enviar</button>
+          </div>
         </div>
       </div>
     `;
@@ -316,7 +330,18 @@
   }
 
   function chatMsgHTML(msg, author) {
-    return `<div class="community-chat-msg"><strong>${escapeHtml(author.username)}</strong>${rankBadgeHTML(author.rank)}<p>${escapeHtml(msg.body)}</p><span class="community-chat-time">${timeAgo(msg.created_at)}</span></div>`;
+    const imgHTML = msg.image_url ? `<img class="discord-msg-image" src="${escapeHtml(msg.image_url)}" alt="Imagen adjunta" loading="lazy" onclick="window.open(this.src,'_blank')">` : '';
+    const textHTML = msg.body ? `<p>${escapeHtml(msg.body)}</p>` : '';
+    return `
+      <div class="discord-msg">
+        <div class="discord-msg-avatar" style="background:${author.avatar_color || '#8b93a7'};">${avatarInitials(author.username)}</div>
+        <div class="discord-msg-body">
+          <div class="discord-msg-head"><strong>${escapeHtml(author.username)}</strong>${rankBadgeHTML(author.rank)}<span class="discord-msg-time">${timeAgo(msg.created_at)}</span></div>
+          ${textHTML}
+          ${imgHTML}
+        </div>
+      </div>
+    `;
   }
 
   function stopLiveUpdates() {
@@ -344,9 +369,13 @@
     if (!msgsEl) return;
     msgsEl.innerHTML = '<p class="footer-text">Cargando chat...</p>';
 
-    document.querySelectorAll('.community-chat-tabs button').forEach((b) => {
+    document.querySelectorAll('.discord-room-btn').forEach((b) => {
       b.classList.toggle('active', b.dataset.room === roomId);
     });
+
+    const meta = ROOM_META[roomId] || { icon: '💬', name: roomId, desc: '' };
+    const headerEl = document.getElementById('chatHeader');
+    if (headerEl) headerEl.innerHTML = `<span style="font-size:1.3rem;">${meta.icon}</span><div><strong>${escapeHtml(meta.name)}</strong><span>${escapeHtml(meta.desc)}</span></div>`;
 
     stopLiveUpdates();
 
@@ -380,24 +409,58 @@
       .subscribe();
   }
 
+  function fileToBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result).split(',')[1]);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
   function wireChatTabs() {
-    document.querySelectorAll('.community-chat-tabs button').forEach((btn) => {
+    document.querySelectorAll('.discord-room-btn').forEach((btn) => {
       btn.addEventListener('click', () => loadChatRoom(btn.dataset.room));
     });
     const sendBtn = document.getElementById('chatSendBtn');
     const input = document.getElementById('chatInput');
+    const attachBtn = document.getElementById('chatAttachBtn');
+    const fileInput = document.getElementById('chatImageInput');
+
+    const canAttach = RANK_ORDER[myEffectiveRank()] >= RANK_ORDER.vip;
+    if (!canAttach) {
+      attachBtn.disabled = true;
+      attachBtn.title = 'Enviar imágenes requiere rango VIP o superior';
+    }
+    attachBtn.addEventListener('click', () => { if (canAttach) fileInput.click(); });
+    fileInput.addEventListener('change', () => {
+      if (fileInput.files[0]) attachBtn.textContent = '🖼️';
+    });
+
     async function send() {
       const text = input.value.trim();
-      if (!text) return;
+      const file = fileInput.files[0];
+      if (!text && !file) return;
       sendBtn.disabled = true;
+      attachBtn.disabled = true;
       try {
-        await callFunction('community-chat-send', { roomId: currentRoom, body: text });
+        let imageBase64 = null;
+        let imageType = null;
+        if (file) {
+          if (file.size > 4 * 1024 * 1024) throw new Error('La imagen no puede pesar más de 4 MB.');
+          imageBase64 = await fileToBase64(file);
+          imageType = file.type;
+        }
+        await callFunction('community-chat-send', { roomId: currentRoom, body: text, imageBase64, imageType });
         input.value = '';
+        fileInput.value = '';
+        attachBtn.textContent = '📎';
         if (currentRoom === 'elite') await loadEliteRoom(document.getElementById('chatMessages'));
       } catch (e) {
         alert(e.message);
       } finally {
         sendBtn.disabled = false;
+        attachBtn.disabled = !canAttach;
       }
     }
     sendBtn.addEventListener('click', send);
