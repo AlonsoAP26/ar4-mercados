@@ -1,7 +1,8 @@
 const { supabaseRequest } = require('./_supabase');
 const { isFlagged } = require('./_moderation');
+const { effectiveRank, atLeast } = require('./_rank');
 
-const ALLOWED_ROOMS = ['forex', 'acciones', 'cripto'];
+const ALLOWED_ROOMS = ['forex', 'acciones', 'cripto', 'elite'];
 const MAX_MESSAGES_PER_MINUTE = 8;
 
 exports.handler = async (event, context) => {
@@ -18,11 +19,19 @@ exports.handler = async (event, context) => {
     if (!roomId) return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Sala inválida.' }) };
     if (!text) return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El mensaje está vacío.' }) };
 
-    const profileRows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id,username', { method: 'GET' });
+    const profileRows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id,username,rank', { method: 'GET' });
     if (!profileRows.length) {
       return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Primero crea tu perfil de comunidad.' }) };
     }
     const profile = profileRows[0];
+
+    if (roomId === 'elite') {
+      const isPremiumPaid = !!(user.app_metadata && user.app_metadata.premium);
+      const rank = effectiveRank(profile.rank, isPremiumPaid);
+      if (!atLeast(rank, 'elite')) {
+        return { statusCode: 403, body: JSON.stringify({ success: false, error: 'La sala Elite Traders es exclusiva para rango Élite o Administrador.' }) };
+      }
+    }
 
     const oneMinuteAgo = new Date(Date.now() - 60000).toISOString();
     const recent = await supabaseRequest(

@@ -1,6 +1,13 @@
 const { supabaseRequest } = require('./_supabase');
+const { effectiveRank } = require('./_rank');
 
 const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
+
+function withEffectiveRank(profile, user) {
+  if (!profile) return profile;
+  const isPremiumPaid = !!(user.app_metadata && user.app_metadata.premium);
+  return { ...profile, effectiveRank: effectiveRank(profile.rank, isPremiumPaid) };
+}
 
 exports.handler = async (event, context) => {
   const user = context.clientContext && context.clientContext.user;
@@ -11,7 +18,7 @@ exports.handler = async (event, context) => {
   try {
     if (event.httpMethod === 'GET') {
       const rows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=*', { method: 'GET' });
-      return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: rows[0] || null }) };
+      return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: withEffectiveRank(rows[0], user) || null }) };
     }
 
     if (event.httpMethod === 'POST') {
@@ -30,7 +37,7 @@ exports.handler = async (event, context) => {
           method: 'PATCH',
           body: JSON.stringify({ username, bio })
         });
-        return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: updated[0] }) };
+        return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: withEffectiveRank(updated[0], user) }) };
       }
 
       const color = AVATAR_COLORS[Math.floor(Math.random() * AVATAR_COLORS.length)];
@@ -56,7 +63,7 @@ exports.handler = async (event, context) => {
         body: JSON.stringify({ points: 20 })
       });
 
-      return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: { ...created[0], points: 20 } }) };
+      return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: withEffectiveRank({ ...created[0], points: 20 }, user) }) };
     }
 
     return { statusCode: 405, body: 'Method Not Allowed' };

@@ -9,16 +9,20 @@
   if (!root) return;
 
   const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
-  const ROOMS = [
+  const BASE_ROOMS = [
     { id: 'forex', label: 'Forex' },
     { id: 'acciones', label: 'Acciones e Índices' },
     { id: 'cripto', label: 'Criptomonedas' }
   ];
+  const ELITE_ROOM = { id: 'elite', label: '★ Elite Traders' };
+  const RANK_LABELS = { basico: 'Básico', vip: 'VIP', premium: 'Premium', elite: 'Élite', administrador: 'Administrador' };
+  const RANK_ORDER = { basico: 0, vip: 1, premium: 2, elite: 3, administrador: 4 };
 
   const profileCache = {};
   let myProfile = null;
   let currentRoom = 'forex';
   let chatChannel = null;
+  let elitePollTimer = null;
 
   function timeAgo(iso) {
     const diffMs = Date.now() - new Date(iso).getTime();
@@ -30,10 +34,6 @@
     return `hace ${Math.round(diffH / 24)} d`;
   }
 
-  function avatarInitials(username) {
-    return escapeHtml((username || '?').slice(0, 2).toUpperCase());
-  }
-
   function escapeHtml(str) {
     return String(str == null ? '' : str)
       .replace(/&/g, '&amp;')
@@ -41,6 +41,23 @@
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#39;');
+  }
+
+  function avatarInitials(username) {
+    return escapeHtml((username || '?').slice(0, 2).toUpperCase());
+  }
+
+  function rankBadgeHTML(rank) {
+    if (!rank || !RANK_LABELS[rank]) return '';
+    return `<span class="rank-badge rank-${rank}">${RANK_LABELS[rank]}</span>`;
+  }
+
+  function myEffectiveRank() {
+    return (myProfile && myProfile.effectiveRank) || 'basico';
+  }
+
+  function currentRooms() {
+    return RANK_ORDER[myEffectiveRank()] >= RANK_ORDER.elite ? [...BASE_ROOMS, ELITE_ROOM] : BASE_ROOMS;
   }
 
   async function callFunction(name, payload) {
@@ -52,6 +69,16 @@
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt },
       body: JSON.stringify(payload || {})
     });
+    const data = await res.json();
+    if (!data.success) throw new Error(data.error || 'Error desconocido');
+    return data;
+  }
+
+  async function callFunctionGET(name) {
+    const user = netlifyIdentity.currentUser();
+    if (!user) throw new Error('Debes iniciar sesión.');
+    const jwt = await user.jwt();
+    const res = await fetch('/.netlify/functions/' + name, { headers: { 'Authorization': 'Bearer ' + jwt } });
     const data = await res.json();
     if (!data.success) throw new Error(data.error || 'Error desconocido');
     return data;
@@ -95,17 +122,40 @@
     `;
   }
 
+  function adminPanelHTML() {
+    return `
+      <div class="community-admin-panel">
+        <h3>Panel de administrador</h3>
+        <p style="color:var(--text-mid);font-size:0.86rem;">Cambia el rango de cualquier usuario de la comunidad por su nombre de usuario.</p>
+        <div class="community-form-row">
+          <input type="text" id="adminUsername" placeholder="Nombre de usuario">
+          <select id="adminRank">${Object.keys(RANK_LABELS).map((r) => `<option value="${r}">${RANK_LABELS[r]}</option>`).join('')}</select>
+          <button class="btn btn-crimson" id="adminSetRankBtn">Aplicar rango</button>
+        </div>
+        <div class="community-form-msg" id="adminMsg"></div>
+      </div>
+    `;
+  }
+
   function dashboardShellHTML() {
+    const rank = myEffectiveRank();
+    const isAdmin = rank === 'administrador';
+    const basicoNote = rank === 'basico'
+      ? '<p style="color:var(--text-low);font-size:0.78rem;margin-top:8px;">Rango Básico: 1 publicación cada 24 horas. Sube a VIP para publicar sin límite.</p>'
+      : '';
+
     return `
       <div class="community-header-card">
         <div class="community-user-chip">
           <div class="trader-avatar" style="background:${myProfile.avatar_color};">${avatarInitials(myProfile.username)}</div>
-          <div><h4>${escapeHtml(myProfile.username)}</h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'}</span></div>
+          <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)}</h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'}</span></div>
         </div>
         <div class="community-points" id="communityPointsDisplay">${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span></div>
         <button class="btn btn-outline" id="communityRedeemBtn">Canjear puntos</button>
       </div>
       <div class="community-form-msg" id="redeemMsg" style="margin-bottom:14px;"></div>
+
+      ${isAdmin ? adminPanelHTML() : ''}
 
       <div class="community-form">
         <h3 style="margin-bottom:14px;">Publicar una idea</h3>
@@ -119,6 +169,7 @@
         <textarea id="postBody" maxlength="2000"></textarea>
         <button class="btn btn-gold" id="postSubmit" style="margin-top:14px;">Publicar (+10 pts)</button>
         <div class="community-form-msg" id="postMsg"></div>
+        ${basicoNote}
       </div>
 
       <div class="section-head"><h2>Ideas de la comunidad</h2></div>
@@ -127,7 +178,7 @@
       <div class="section-head" style="margin-top:36px;"><h2>Chat de la comunidad</h2></div>
       <p style="color:var(--text-low);font-size:0.8rem;margin-bottom:14px;">Chat moderado automáticamente. Sé respetuoso, no promociones esquemas de rentabilidad garantizada ni compartas enlaces externos.</p>
       <div class="community-chat-tabs">
-        ${ROOMS.map(r => `<button data-room="${r.id}" class="${r.id === currentRoom ? 'active' : ''}">${r.label}</button>`).join('')}
+        ${currentRooms().map(r => `<button data-room="${r.id}" class="${r.id === currentRoom ? 'active' : ''}">${r.label}</button>`).join('')}
       </div>
       <div class="community-chat-window">
         <div class="community-chat-messages" id="chatMessages"><p class="footer-text">Cargando chat...</p></div>
@@ -141,7 +192,7 @@
 
   async function getProfileById(id) {
     if (profileCache[id]) return profileCache[id];
-    const { data } = await sb.from('profiles').select('username,avatar_color').eq('id', id).single();
+    const { data } = await sb.from('profiles').select('username,avatar_color,rank').eq('id', id).single();
     if (data) profileCache[id] = data;
     return data;
   }
@@ -152,7 +203,7 @@
       <article class="community-post-card" data-post-id="${post.id}">
         <div class="community-post-head">
           <div class="trader-avatar" style="background:${authorProfile.avatar_color};">${avatarInitials(authorProfile.username)}</div>
-          <div><strong>${escapeHtml(authorProfile.username)}</strong><br><span>${escapeHtml(post.category)}${symbolTag} · ${timeAgo(post.created_at)}</span></div>
+          <div><strong>${escapeHtml(authorProfile.username)}</strong>${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag} · ${timeAgo(post.created_at)}</span></div>
         </div>
         <h4>${escapeHtml(post.title)}</h4>
         <p>${escapeHtml(post.body)}</p>
@@ -176,7 +227,7 @@
     }
 
     const cards = await Promise.all(posts.map(async (p) => {
-      const author = await getProfileById(p.profile_id) || { username: 'Usuario', avatar_color: '#8b93a7' };
+      const author = await getProfileById(p.profile_id) || { username: 'Usuario', avatar_color: '#8b93a7', rank: 'basico' };
       return postCardHTML(p, author);
     }));
     feedEl.innerHTML = cards.join('');
@@ -195,8 +246,27 @@
     });
   }
 
-  function chatMsgHTML(msg, authorUsername) {
-    return `<div class="community-chat-msg"><strong>${escapeHtml(authorUsername)}</strong><p>${escapeHtml(msg.body)}</p><span class="community-chat-time">${timeAgo(msg.created_at)}</span></div>`;
+  function chatMsgHTML(msg, author) {
+    return `<div class="community-chat-msg"><strong>${escapeHtml(author.username)}</strong>${rankBadgeHTML(author.rank)}<p>${escapeHtml(msg.body)}</p><span class="community-chat-time">${timeAgo(msg.created_at)}</span></div>`;
+  }
+
+  function stopLiveUpdates() {
+    if (chatChannel) { sb.removeChannel(chatChannel); chatChannel = null; }
+    if (elitePollTimer) { clearInterval(elitePollTimer); elitePollTimer = null; }
+  }
+
+  async function loadEliteRoom(msgsEl) {
+    try {
+      const data = await callFunctionGET('community-chat-elite-messages');
+      const rows = data.messages.map((m) => {
+        const author = data.profiles[m.profile_id] || { username: 'Usuario', rank: 'elite' };
+        return chatMsgHTML(m, author);
+      });
+      msgsEl.innerHTML = rows.join('') || '<p class="footer-text">Todavía no hay mensajes en Elite Traders. ¡Empieza la conversación!</p>';
+      msgsEl.scrollTop = msgsEl.scrollHeight;
+    } catch (e) {
+      msgsEl.innerHTML = `<p class="footer-text">${escapeHtml(e.message)}</p>`;
+    }
   }
 
   async function loadChatRoom(roomId) {
@@ -209,6 +279,14 @@
       b.classList.toggle('active', b.dataset.room === roomId);
     });
 
+    stopLiveUpdates();
+
+    if (roomId === 'elite') {
+      await loadEliteRoom(msgsEl);
+      elitePollTimer = setInterval(() => loadEliteRoom(msgsEl), 6000);
+      return;
+    }
+
     const { data: messages } = await sb
       .from('chat_messages')
       .select('*')
@@ -217,18 +295,17 @@
       .limit(50);
 
     const rows = await Promise.all((messages || []).map(async (m) => {
-      const author = await getProfileById(m.profile_id) || { username: 'Usuario' };
-      return chatMsgHTML(m, author.username);
+      const author = await getProfileById(m.profile_id) || { username: 'Usuario', rank: 'basico' };
+      return chatMsgHTML(m, author);
     }));
     msgsEl.innerHTML = rows.join('') || '<p class="footer-text">Todavía no hay mensajes en esta sala. ¡Empieza la conversación!</p>';
     msgsEl.scrollTop = msgsEl.scrollHeight;
 
-    if (chatChannel) sb.removeChannel(chatChannel);
     chatChannel = sb
       .channel('room-' + roomId)
       .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'chat_messages', filter: 'room_id=eq.' + roomId }, async (payload) => {
-        const author = await getProfileById(payload.new.profile_id) || { username: 'Usuario' };
-        msgsEl.insertAdjacentHTML('beforeend', chatMsgHTML(payload.new, author.username));
+        const author = await getProfileById(payload.new.profile_id) || { username: 'Usuario', rank: 'basico' };
+        msgsEl.insertAdjacentHTML('beforeend', chatMsgHTML(payload.new, author));
         msgsEl.scrollTop = msgsEl.scrollHeight;
       })
       .subscribe();
@@ -247,6 +324,7 @@
       try {
         await callFunction('community-chat-send', { roomId: currentRoom, body: text });
         input.value = '';
+        if (currentRoom === 'elite') await loadEliteRoom(document.getElementById('chatMessages'));
       } catch (e) {
         alert(e.message);
       } finally {
@@ -306,6 +384,31 @@
     });
   }
 
+  function wireAdminPanel() {
+    const btn = document.getElementById('adminSetRankBtn');
+    if (!btn) return;
+    btn.addEventListener('click', async () => {
+      const msgEl = document.getElementById('adminMsg');
+      const username = document.getElementById('adminUsername').value.trim();
+      const rank = document.getElementById('adminRank').value;
+      msgEl.textContent = '';
+      msgEl.className = 'community-form-msg';
+      btn.disabled = true;
+      try {
+        await callFunction('community-set-rank', { username, rank });
+        msgEl.textContent = `Listo: ${username} ahora es ${RANK_LABELS[rank]}.`;
+        msgEl.className = 'community-form-msg success';
+        document.getElementById('adminUsername').value = '';
+        delete profileCache[username];
+      } catch (e) {
+        msgEl.textContent = e.message;
+        msgEl.className = 'community-form-msg error';
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  }
+
   function wireProfileForm() {
     document.getElementById('cpSubmit').addEventListener('click', async () => {
       const btn = document.getElementById('cpSubmit');
@@ -330,6 +433,7 @@
   async function render() {
     const user = netlifyIdentity.currentUser();
     if (!user) {
+      stopLiveUpdates();
       root.innerHTML = loggedOutHTML();
       const loginBtn = document.getElementById('communityLoginBtn');
       if (loginBtn) loginBtn.addEventListener('click', (e) => { e.preventDefault(); netlifyIdentity.open('signup'); });
@@ -344,9 +448,11 @@
       return;
     }
 
+    currentRoom = 'forex';
     root.innerHTML = dashboardShellHTML();
     wirePostForm();
     wireRedeemButton();
+    wireAdminPanel();
     wireChatTabs();
     loadFeed();
     loadChatRoom(currentRoom);

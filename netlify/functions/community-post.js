@@ -1,5 +1,6 @@
 const { supabaseRequest } = require('./_supabase');
 const { isFlagged } = require('./_moderation');
+const { effectiveRank } = require('./_rank');
 
 const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
 
@@ -20,11 +21,24 @@ exports.handler = async (event, context) => {
       return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El título y el contenido son demasiado cortos.' }) };
     }
 
-    const profileRows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id,points', { method: 'GET' });
+    const profileRows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id,points,rank', { method: 'GET' });
     if (!profileRows.length) {
       return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Primero crea tu perfil de comunidad.' }) };
     }
     const profile = profileRows[0];
+    const isPremiumPaid = !!(user.app_metadata && user.app_metadata.premium);
+    const rank = effectiveRank(profile.rank, isPremiumPaid);
+
+    if (rank === 'basico') {
+      const since = new Date(Date.now() - 24 * 3600 * 1000).toISOString();
+      const todayPosts = await supabaseRequest(
+        'community_posts?profile_id=eq.' + profile.id + '&created_at=gte.' + since + '&select=id',
+        { method: 'GET' }
+      );
+      if (todayPosts.length >= 1) {
+        return { statusCode: 429, body: JSON.stringify({ success: false, error: 'Los usuarios de rango Básico pueden publicar 1 idea cada 24 horas. Sube a VIP para publicar sin límite.' }) };
+      }
+    }
 
     if (await isFlagged(title + '\n' + text)) {
       return { statusCode: 422, body: JSON.stringify({ success: false, error: 'Tu publicación no pasó la revisión automática (posible spam, promesas de rentabilidad garantizada o lenguaje inapropiado). Ajústala e inténtalo de nuevo.' }) };
