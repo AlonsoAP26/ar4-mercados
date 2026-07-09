@@ -11,21 +11,16 @@
     return netlifyIdentity.currentUser();
   }
 
-  async function checkAccess(email) {
+  async function isPremiumUser(user) {
+    if (!user) return false;
     try {
-      const res = await fetch('/.netlify/functions/check-access?email=' + encodeURIComponent(email));
-      if (!res.ok) return { premium: false };
-      return res.json();
-    } catch (e) {
-      return { premium: false };
-    }
+      await user.jwt(true); // fuerza refresco del token para traer el app_metadata más reciente
+    } catch (e) { /* si falla el refresco, usamos lo que ya tenemos */ }
+    return !!(user.app_metadata && user.app_metadata.premium);
   }
 
   window.AR4_checkPremium = async function () {
-    const user = currentUser();
-    if (!user) return false;
-    const access = await checkAccess(user.email);
-    return !!access.premium;
+    return isPremiumUser(currentUser());
   };
 
   async function refreshUI() {
@@ -41,17 +36,16 @@
         const btn = document.getElementById('statusLoginBtn');
         if (btn) btn.addEventListener('click', (e) => { e.preventDefault(); netlifyIdentity.open('signup'); });
       } else {
-        const access = await checkAccess(user.email);
-        window.AR4_PREMIUM = !!access.premium;
-        statusEl.innerHTML = access.premium
+        const premium = await isPremiumUser(user);
+        window.AR4_PREMIUM = premium;
+        statusEl.innerHTML = premium
           ? `<div class="promo-banner" style="margin-bottom:28px;border-color:rgba(34,192,122,0.35);"><div class="promo-banner-text"><h3>✅ Ya eres miembro Premium</h3><p>Sesión: ${user.email}</p></div><button class="btn btn-outline" id="logoutBtn">Cerrar sesión</button></div>`
           : `<div class="promo-banner" style="margin-bottom:28px;"><div class="promo-banner-text"><h3>Estás en el plan Gratis</h3><p>Sesión: ${user.email} — suscríbete para desbloquear el contenido Premium.</p></div><button class="btn btn-outline" id="logoutBtn">Cerrar sesión</button></div>`;
         const logoutBtn = document.getElementById('logoutBtn');
         if (logoutBtn) logoutBtn.addEventListener('click', () => netlifyIdentity.logout());
       }
     } else if (user) {
-      const access = await checkAccess(user.email);
-      window.AR4_PREMIUM = !!access.premium;
+      window.AR4_PREMIUM = await isPremiumUser(user);
       document.dispatchEvent(new CustomEvent('ar4-access-ready'));
     }
   }
@@ -69,31 +63,63 @@
   }
 
   if (subscribeBtn) {
+    let culqiPublicKey = null;
+
+    fetch('/.netlify/functions/culqi-config')
+      .then(r => r.json())
+      .then(d => { culqiPublicKey = d.publicKey || null; })
+      .catch(() => { culqiPublicKey = null; });
+
     subscribeBtn.addEventListener('click', async () => {
       const user = currentUser();
       if (!user) {
         netlifyIdentity.open('signup');
         return;
       }
-      subscribeBtn.disabled = true;
-      subscribeBtn.textContent = 'Redirigiendo a pago seguro...';
-      try {
-        const res = await fetch('/.netlify/functions/create-checkout-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: user.email })
-        });
-        const data = await res.json();
-        if (data.url) {
-          window.location.href = data.url;
-        } else {
-          throw new Error('no url');
-        }
-      } catch (e) {
-        subscribeBtn.disabled = false;
-        subscribeBtn.textContent = 'Suscribirme ahora';
-        alert('El pago todavía no está conectado en esta versión del sitio. Vuelve a intentarlo cuando Stripe esté configurado.');
+
+      if (typeof Culqi === 'undefined' || !culqiPublicKey) {
+        alert('El pago todavía no está conectado en esta versión del sitio. Vuelve a intentarlo cuando Culqi esté configurado.');
+        return;
       }
+
+      Culqi.publicKey = culqiPublicKey;
+      Culqi.settings({
+        title: 'AR4 Mercados Premium',
+        currency: 'PEN',
+        amount: 0
+      });
+
+      window.culqi = async function () {
+        if (Culqi.token) {
+          const token = Culqi.token.id;
+          subscribeBtn.disabled = true;
+          subscribeBtn.textContent = 'Procesando suscripción...';
+          try {
+            const jwt = await user.jwt();
+            const res = await fetch('/.netlify/functions/create-culqi-subscription', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt },
+              body: JSON.stringify({ token, email: user.email })
+            });
+            const data = await res.json();
+            if (data.success) {
+              alert('¡Listo! Ya eres miembro Premium de AR4 Mercados.');
+              window.location.reload();
+            } else {
+              throw new Error(data.error || 'Error desconocido');
+            }
+          } catch (e) {
+            alert('No se pudo procesar la suscripción: ' + e.message);
+          } finally {
+            subscribeBtn.disabled = false;
+            subscribeBtn.textContent = 'Suscribirme ahora';
+          }
+        } else if (Culqi.error) {
+          alert('Error de Culqi: ' + (Culqi.error.user_message || 'no se pudo procesar la tarjeta'));
+        }
+      };
+
+      Culqi.open();
     });
   }
 
