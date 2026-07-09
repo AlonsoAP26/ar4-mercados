@@ -11,7 +11,7 @@ insert into community_posts (profile_id, category, title, body, symbol, upvotes,
 
   ('a0000000-0000-4000-8000-000000000011', 'Forex', 'Lo que el indice dolar (DXY) me esta diciendo antes de las minutas de la Fed',
    'Llevo mas de una decada operando y una de las lecciones mas caras que aprendi es a no ignorar el DXY cuando se acerca a los extremos de su rango de los ultimos tres meses. Ahora mismo esta comprimido justo debajo de la resistencia que respeto desde el trimestre pasado, y el mercado de tasas ya esta descontando buena parte de un tono neutral en las minutas. Eso significa que cualquier sorpresa -hawkish o dovish- probablemente se traduzca en un movimiento amplificado, no en uno tibio. Estoy operando pares individuales en vez del dolar index directamente, pero uso el DXY como filtro de sesgo antes de entrar a cualquier cosa en la sesion americana.',
-   'TVC:DXY', 15, now() - interval '13 hours'),
+   'CAPITALCOM:DXY', 15, now() - interval '13 hours'),
 
   ('a0000000-0000-4000-8000-000000000007', 'Forex', 'GBP/USD: la divergencia entre precio y RSI que no me gusta ignorar',
    'Desde el enfoque cuantitativo con el que suelo operar, las divergencias entre precio y osciladores no son una garantia de reversion, pero si son una señal de que el momentum se esta agotando. En las ultimas dos semanas el GBP/USD hizo un maximo mas alto mientras el RSI en el grafico de 4 horas marco un maximo mas bajo -divergencia bajista clasica-. Eso no significa vender a mercado sin mas, pero si me hace exigir mas confirmacion antes de sumar largos nuevos. Estoy vigilando si el precio pierde la media movil de 20 periodos en 4H como primera señal de que el mercado le esta dando la razon al oscilador.',
