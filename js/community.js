@@ -293,7 +293,7 @@
     return `
       <div class="community-form">
         <h3 style="margin-bottom:4px;">Tienda de avatares</h3>
-        <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">Elige un avatar gratuito o desbloquea uno exclusivo. Los pagos se procesan de forma segura vía Culqi.</p>
+        <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">Elige un avatar gratuito o desbloquea uno exclusivo. Los pagos se procesan de forma segura vía Mercado Pago.</p>
         <h4 style="font-size:0.9rem;margin-bottom:10px;">Gratuitos</h4>
         <div class="avatar-shop-grid">${FREE_AVATARS.map((a) => cardHTML(a, false)).join('')}</div>
         <h4 style="font-size:0.9rem;margin:24px 0 10px;">Exclusivos${isAdmin ? ' <span style="color:var(--gold-bright);font-size:0.76rem;">(incluidos en tu rango de administrador)</span>' : ''}</h4>
@@ -1195,55 +1195,26 @@
           return;
         }
 
-        if (typeof Culqi === 'undefined') {
-          msgEl.textContent = 'El pago no está disponible en este momento.';
-          msgEl.className = 'community-form-msg error';
-          return;
-        }
-
-        let culqiPublicKey = null;
+        btn.disabled = true;
+        btn.textContent = 'Conectando con Mercado Pago...';
         try {
-          const r = await fetch('/.netlify/functions/culqi-config');
-          const d = await r.json();
-          culqiPublicKey = d.publicKey || null;
-        } catch (e) { /* culqiPublicKey queda null */ }
-
-        if (!culqiPublicKey) {
-          msgEl.textContent = 'El pago no está disponible en este momento.';
-          msgEl.className = 'community-form-msg error';
-          return;
-        }
-
-        const avatar = PREMIUM_AVATARS.find((a) => a.id === avatarId);
-        if (!avatar) return;
-
-        Culqi.publicKey = culqiPublicKey;
-        Culqi.settings({ title: 'AR4 Mercados — ' + avatar.name, currency: 'PEN', amount: Math.round(avatar.priceSoles * 100) });
-
-        window.culqi = async function () {
-          if (Culqi.token) {
-            const token = Culqi.token.id;
-            btn.disabled = true;
-            btn.textContent = 'Procesando...';
-            try {
-              await callFunction('community-buy-avatar', { avatarId, token });
-              msgEl.textContent = '¡Compra exitosa! Ya puedes usar tu nuevo avatar.';
-              msgEl.className = 'community-form-msg success';
-              shoppingAvatars = false;
-              render();
-            } catch (e) {
-              msgEl.textContent = e.message;
-              msgEl.className = 'community-form-msg error';
-              btn.disabled = false;
-              btn.textContent = 'Comprar';
-            }
-          } else if (Culqi.error) {
-            msgEl.textContent = 'Error de pago: ' + (Culqi.error.user_message || 'no se pudo procesar la tarjeta');
-            msgEl.className = 'community-form-msg error';
+          const buyData = await callFunction('community-buy-avatar', { avatarId });
+          if (buyData.alreadyOwned || buyData.free) {
+            const setData = await callFunction('community-set-avatar', { avatarId });
+            myProfile = setData.profile;
+            shoppingAvatars = false;
+            render();
+            if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile();
+            return;
           }
-        };
-
-        Culqi.open();
+          const prefData = await callFunction('create-mercadopago-avatar-preference', { avatarId });
+          window.location.href = prefData.initPoint;
+        } catch (e) {
+          msgEl.textContent = e.message;
+          msgEl.className = 'community-form-msg error';
+          btn.disabled = false;
+          btn.textContent = 'Comprar';
+        }
       });
     });
   }

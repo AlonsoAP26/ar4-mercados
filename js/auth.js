@@ -103,13 +103,6 @@
   }
 
   if (subscribeBtn) {
-    let culqiPublicKey = null;
-
-    fetch('/.netlify/functions/culqi-config')
-      .then(r => r.json())
-      .then(d => { culqiPublicKey = d.publicKey || null; })
-      .catch(() => { culqiPublicKey = null; });
-
     subscribeBtn.addEventListener('click', async () => {
       const user = currentUser();
       if (!user) {
@@ -117,51 +110,45 @@
         return;
       }
 
-      if (typeof Culqi === 'undefined' || !culqiPublicKey) {
-        alert('El pago todavía no está conectado en esta versión del sitio. Vuelve a intentarlo cuando Culqi esté configurado.');
-        return;
-      }
-
-      Culqi.publicKey = culqiPublicKey;
-      Culqi.settings({
-        title: 'AR4 Mercados Premium',
-        currency: 'PEN',
-        amount: 0
-      });
-
-      window.culqi = async function () {
-        if (Culqi.token) {
-          const token = Culqi.token.id;
-          subscribeBtn.disabled = true;
-          subscribeBtn.textContent = 'Procesando suscripción...';
-          try {
-            const jwt = await user.jwt();
-            const res = await fetch('/.netlify/functions/create-culqi-subscription', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt },
-              body: JSON.stringify({ token, email: user.email })
-            });
-            const data = await res.json();
-            if (data.success) {
-              alert('¡Listo! Ya eres miembro Premium de AR4 Mercados.');
-              window.location.reload();
-            } else {
-              throw new Error(data.error || 'Error desconocido');
-            }
-          } catch (e) {
-            alert('No se pudo procesar la suscripción: ' + e.message);
-          } finally {
-            subscribeBtn.disabled = false;
-            subscribeBtn.textContent = 'Suscribirme ahora';
-          }
-        } else if (Culqi.error) {
-          alert('Error de Culqi: ' + (Culqi.error.user_message || 'no se pudo procesar la tarjeta'));
+      subscribeBtn.disabled = true;
+      subscribeBtn.textContent = 'Conectando con Mercado Pago...';
+      try {
+        const jwt = await user.jwt();
+        const res = await fetch('/.netlify/functions/create-mercadopago-subscription', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt }
+        });
+        const data = await res.json();
+        if (data.success && data.initPoint) {
+          window.location.href = data.initPoint;
+        } else {
+          throw new Error(data.error || 'Error desconocido');
         }
-      };
-
-      Culqi.open();
+      } catch (e) {
+        alert('No se pudo iniciar la suscripción: ' + e.message);
+        subscribeBtn.disabled = false;
+        subscribeBtn.textContent = 'Suscribirme ahora';
+      }
     });
   }
+
+  (function checkMpStatusBanner() {
+    const params = new URLSearchParams(window.location.search);
+    const mpStatus = params.get('mp_status');
+    if (!mpStatus) return;
+    const banner = document.createElement('div');
+    banner.className = 'community-form-msg ' + (mpStatus === 'success' ? 'success' : mpStatus === 'pending' ? '' : 'error');
+    banner.style.cssText = 'margin:16px auto;max-width:700px;';
+    if (mpStatus === 'success') {
+      banner.textContent = 'Tu pago se está confirmando con Mercado Pago. Esto puede tardar unos segundos — recarga la página si no ves el cambio reflejado.';
+    } else if (mpStatus === 'pending') {
+      banner.textContent = 'Tu pago está pendiente de confirmación en Mercado Pago.';
+    } else {
+      banner.textContent = 'El pago no se completó. Puedes intentarlo de nuevo cuando quieras.';
+    }
+    const hero = document.querySelector('.page-hero .container');
+    if (hero) hero.appendChild(banner);
+  })();
 
   netlifyIdentity.on('init', refreshUI);
   netlifyIdentity.on('login', () => { refreshUI(); netlifyIdentity.close(); });

@@ -40,34 +40,7 @@ exports.handler = async (event, context) => {
       return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, free: true }) };
     }
 
-    const token = body.token;
-    if (!token) return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Falta el token de la tarjeta.' }) };
-
-    const secretKey = process.env.CULQI_SECRET_KEY;
-    if (!secretKey) return { statusCode: 500, body: JSON.stringify({ success: false, error: 'Culqi no está configurado todavía.' }) };
-
-    const chargeRes = await fetch('https://api.culqi.com/v2/charges', {
-      method: 'POST',
-      headers: { 'Authorization': 'Bearer ' + secretKey, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        amount: Math.round(avatar.priceSoles * 100),
-        currency_code: 'PEN',
-        email: user.email,
-        source_id: token,
-        description: 'Avatar exclusivo AR4 Mercados: ' + avatar.name
-      })
-    });
-    const charge = await chargeRes.json();
-    if (!chargeRes.ok) {
-      return { statusCode: 502, body: JSON.stringify({ success: false, error: 'No se pudo procesar el pago.', detail: charge }) };
-    }
-
-    await supabaseRequest('avatar_purchases', {
-      method: 'POST',
-      body: JSON.stringify({ profile_id: profile.id, avatar_id: avatarId, amount_soles: avatar.priceSoles, culqi_charge_id: charge.id })
-    });
-
-    return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true }) };
+    return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, needsPayment: true }) };
   } catch (e) {
     return { statusCode: 500, body: JSON.stringify({ success: false, error: String(e.message || e) }) };
   }
