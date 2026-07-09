@@ -48,7 +48,13 @@ REGLAS ESTRICTAS DE CONTENIDO (muy importantes):
 - ESTRUCTURA VARIABLE, NO REPETIR SIEMPRE EL MISMO ESQUEMA: no uses en todos los análisis el mismo arco narrativo fijo (causa → niveles a vigilar → comodín de cierre). Varía cuántas secciones usas (2 a 5), el orden en que presentas la información (a veces empieza con el nivel técnico, a veces con el dato macro, a veces comparando dos activos) y el tipo de cierre. Cada análisis debe sentirse estructurado de forma distinta a los anteriores, no como una plantilla rellenada con datos nuevos.
 - SUBTÍTULOS ÚNICOS Y ESPECÍFICOS AL TEMA: nunca uses subtítulos genéricos como "Contexto", "Qué está moviendo el par", "Niveles a vigilar" o "Qué podría cambiar el escenario". Inventa subtítulos concretos y descriptivos del contenido real de esa sección, en tono de titular de análisis financiero (no de blog casual).
 - SECCIÓN OBLIGATORIA DE NIVELES TÉCNICOS E INDICADORES, al estilo de un desk de research (ej. DailyForex): incluye SIEMPRE una sección con 3 soportes y 3 resistencias numéricos concretos (formato "<strong style=\\"color:var(--green);\\">Soportes:</strong> X · Y · Z" y "<strong style=\\"color:var(--crimson-bright);\\">Resistencias:</strong> X · Y · Z"), una lectura de RSI diario con el número aproximado y su interpretación (sobrecompra/sobreventa/neutral), una referencia a medias móviles (ej. si cotiza por encima/debajo de la media de 50 o 200 periodos), y una observación breve sobre el patrón de la última vela o velas recientes (ej. vela envolvente, doji, martillo, rango estrecho/inside bar, mecha de rechazo). Usa niveles ilustrativos coherentes con el precio mencionado en el análisis, no inventes cifras absurdas.
-- Termina siempre con este disclaimer exacto como último párrafo dentro del HTML: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>"
+- Termina el "body" siempre con este disclaimer exacto como último párrafo: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>"
+
+Además del "body", genera un "bodyPremium" (análisis exclusivo para suscriptores Premium, más profundo, con estos elementos EN TEXTO — no se dibuja nada sobre ningún gráfico, es lectura escrita):
+- Una sección de LECTURA DE FLUJO INSTITUCIONAL usando terminología de Smart Money Concepts / ICT explicada en texto: menciona zonas de Order Blocks (bloques de órdenes: la última vela opuesta antes de un movimiento fuerte, donde suele haber órdenes institucionales pendientes), Fair Value Gaps o FVG (vacíos de precio dejados por movimientos impulsivos, que el precio tiende a "rellenar" después), zonas de liquidez (agrupaciones de stops por encima de máximos recientes o por debajo de mínimos recientes), y si aplica, un Break of Structure (BOS, ruptura de estructura a favor de la tendencia) o Change of Character (CHoCH, señal temprana de posible reversión). Usa niveles numéricos ilustrativos coherentes con el precio del análisis, igual que en el body.
+- Una sección con ESCENARIO ALCISTA: qué tendría que confirmarse para que el sesgo alcista se mantenga, el nivel de invalidación (dónde el escenario dejaría de tener sentido) y un objetivo razonable.
+- Una sección con ESCENARIO BAJISTA: mismo formato que el alcista pero en la dirección opuesta.
+- Termina el "bodyPremium" con este disclaimer exacto: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>"
 
 Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), con esta forma exacta:
 {
@@ -57,6 +63,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   "symbol": "uno de los códigos de instrumento listados arriba, EXACTO",
   "excerpt": "string de 1-2 frases, máximo 200 caracteres",
   "body": "string HTML con 3-4 secciones <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo único y específico, NO genérico]</h3>, párrafos <p>, listas <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> para niveles a vigilar cuando aplique, terminando con el disclaimer indicado arriba.",
+  "bodyPremium": "string HTML con la sección de flujo institucional (Order Blocks/FVG/liquidez/BOS-CHoCH) y las secciones de escenario alcista y bajista descritas arriba, cada una con su <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo específico]</h3>, terminando con el disclaimer de bodyPremium indicado arriba.",
   "trend": "'up' si el sesgo del análisis es alcista, 'down' si es bajista, 'neutral' si está en rango o a la espera de un catalizador"
 }`;
 
@@ -69,7 +76,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     },
     body: JSON.stringify({
       model: 'claude-sonnet-5',
-      max_tokens: 2500,
+      max_tokens: 3500,
       messages: [{ role: 'user', content: prompt }]
     })
   });
