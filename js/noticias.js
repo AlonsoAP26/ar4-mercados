@@ -10,7 +10,9 @@ const NEWS_SYMBOL_LABELS = {
   'TVC:USOIL': 'PETRÓLEO WTI',
   'TVC:DXY': 'ÍNDICE DÓLAR (DXY)',
   'BMFBOVESPA:IBOV': 'IBOVESPA',
-  'OANDA:XAUUSD': 'ORO (XAU/USD)'
+  'OANDA:XAUUSD': 'ORO (XAU/USD)',
+  'BITSTAMP:BTCUSD': 'BTC/USD',
+  'COINBASE:ETHUSD': 'ETH/USD'
 };
 
 function newsSymbolLabel(symbol) {

@@ -23,7 +23,8 @@ const FIN_PHOTOS = {
   forex: 'https://images.unsplash.com/photo-1515606378517-3451a4fa2e12?fm=jpg&q=75&w=900&auto=format&fit=crop',
   bank: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop',
   latam: 'https://images.unsplash.com/photo-1683684931126-50e9afd0e63f?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  index: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop'
+  index: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop',
+  crypto: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?fm=jpg&q=75&w=900&auto=format&fit=crop'
 };
 
 const FIN_ICONS = {
@@ -32,7 +33,8 @@ const FIN_ICONS = {
   forex: `<svg viewBox="0 0 100 100"><circle cx="40" cy="42" r="26" fill="none" stroke="currentColor" stroke-width="5" opacity="0.85"/><circle cx="62" cy="60" r="26" fill="none" stroke="currentColor" stroke-width="5" opacity="0.5"/><text x="40" y="49" font-size="22" font-weight="700" text-anchor="middle" fill="currentColor">$</text><text x="62" y="67" font-size="20" font-weight="700" text-anchor="middle" fill="currentColor" opacity="0.7">€</text></svg>`,
   index: `<svg viewBox="0 0 100 100"><rect x="18" y="58" width="12" height="24" fill="currentColor" opacity="0.55"/><rect x="36" y="44" width="12" height="38" fill="currentColor" opacity="0.7"/><rect x="54" y="30" width="12" height="52" fill="currentColor" opacity="0.85"/><rect x="72" y="18" width="12" height="64" fill="currentColor"/></svg>`,
   latam: `<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="4" opacity="0.35"/><path d="M50 16 A34 34 0 0 1 50 84" stroke="currentColor" stroke-width="4" fill="none" opacity="0.55"/><circle cx="42" cy="38" r="4" fill="currentColor"/><circle cx="58" cy="52" r="4" fill="currentColor" opacity="0.8"/><circle cx="46" cy="66" r="4" fill="currentColor" opacity="0.6"/><path d="M42 38 L58 52 L46 66" stroke="currentColor" stroke-width="2.5" fill="none"/></svg>`,
-  bank: `<svg viewBox="0 0 100 100"><path d="M50 16 L86 34 L14 34 Z" fill="currentColor" opacity="0.85"/><rect x="20" y="40" width="8" height="34" fill="currentColor" opacity="0.7"/><rect x="38" y="40" width="8" height="34" fill="currentColor" opacity="0.7"/><rect x="54" y="40" width="8" height="34" fill="currentColor" opacity="0.7"/><rect x="72" y="40" width="8" height="34" fill="currentColor" opacity="0.7"/><rect x="14" y="78" width="72" height="7" fill="currentColor"/></svg>`
+  bank: `<svg viewBox="0 0 100 100"><path d="M50 16 L86 34 L14 34 Z" fill="currentColor" opacity="0.85"/><rect x="20" y="40" width="8" height="34" fill="currentColor" opacity="0.7"/><rect x="38" y="40" width="8" height="34" fill="currentColor" opacity="0.7"/><rect x="54" y="40" width="8" height="34" fill="currentColor" opacity="0.7"/><rect x="72" y="40" width="8" height="34" fill="currentColor" opacity="0.7"/><rect x="14" y="78" width="72" height="7" fill="currentColor"/></svg>`,
+  crypto: `<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="5" opacity="0.4"/><text x="50" y="63" font-size="42" font-weight="700" text-anchor="middle" fill="currentColor">₿</text></svg>`
 };
 
 const TREND_LABELS = {
@@ -42,7 +44,7 @@ const TREND_LABELS = {
 };
 
 function catClassFromType(type) {
-  const map = { gold: 'cat-commodities', oil: 'cat-commodities', forex: 'cat-forex', index: 'cat-acciones', latam: 'cat-latam', bank: 'cat-forex' };
+  const map = { gold: 'cat-commodities', oil: 'cat-commodities', forex: 'cat-forex', index: 'cat-acciones', latam: 'cat-latam', bank: 'cat-forex', crypto: 'cat-crypto' };
   return map[type] || 'cat-forex';
 }
 

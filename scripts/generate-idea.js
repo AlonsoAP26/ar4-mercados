@@ -2,12 +2,13 @@ const fs = require('fs');
 const path = require('path');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'ideas.json');
-const CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices'];
+const CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
 const ALLOWED_SYMBOLS = [
   'FX:EURUSD', 'FX:GBPUSD', 'FX:USDJPY',
   'FX_IDC:USDMXN', 'FX_IDC:USDCOP', 'FX_IDC:USDCLP', 'FX_IDC:USDARS', 'FX_IDC:USDBRL', 'FX_IDC:USDPEN',
   'OANDA:XAUUSD', 'TVC:USOIL', 'TVC:UKOIL',
-  'FOREXCOM:SPXUSD', 'FOREXCOM:NSXUSD', 'BITSTAMP:BTCUSD'
+  'FOREXCOM:SPXUSD', 'FOREXCOM:NSXUSD',
+  'BITSTAMP:BTCUSD', 'COINBASE:ETHUSD'
 ];
 
 function slugify(title) {
@@ -54,7 +55,8 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   "category": "una de las categorías listadas",
   "symbol": "uno de los códigos de instrumento listados arriba, EXACTO",
   "excerpt": "string de 1-2 frases, máximo 200 caracteres",
-  "body": "string HTML con 3-4 secciones <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo único y específico, NO genérico]</h3>, párrafos <p>, listas <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> para niveles a vigilar cuando aplique, terminando con el disclaimer indicado arriba."
+  "body": "string HTML con 3-4 secciones <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo único y específico, NO genérico]</h3>, párrafos <p>, listas <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> para niveles a vigilar cuando aplique, terminando con el disclaimer indicado arriba.",
+  "trend": "'up' si el sesgo del análisis es alcista, 'down' si es bajista, 'neutral' si está en rango o a la espera de un catalizador"
 }`;
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -97,6 +99,14 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     console.warn('Symbol no reconocido, se omite el gráfico:', nueva.symbol);
     delete nueva.symbol;
   }
+
+  const CATEGORY_HERO = { 'Forex': 'forex', 'LatAm': 'latam', 'Índices': 'index', 'Criptomonedas': 'crypto' };
+  if (nueva.category === 'Materias Primas') {
+    nueva.heroType = (nueva.symbol || '').includes('OIL') ? 'oil' : 'gold';
+  } else {
+    nueva.heroType = CATEGORY_HERO[nueva.category] || 'index';
+  }
+  if (!['up', 'down', 'neutral'].includes(nueva.trend)) nueva.trend = 'neutral';
 
   nueva.slug = slugify(nueva.title) + '-' + Date.now().toString(36);
   nueva.author = 'IA · AR4 Mercados';
