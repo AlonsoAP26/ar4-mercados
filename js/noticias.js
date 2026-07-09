@@ -222,6 +222,8 @@ async function initNoticiaDetail() {
     sourceBox.innerHTML = `📎 Fuente original de los datos: <a href="${n.sourceUrl}" target="_blank" rel="noopener">${n.sourceName}</a>. Resumen y análisis redactados por AR4 Mercados.`;
   }
 
+  if (window.AR4_initComments) window.AR4_initComments('commentsSection', 'noticia', n.slug);
+
   const relatedGrid = document.getElementById('relatedNoticiasGrid');
   if (relatedGrid) {
     const related = noticias.filter(x => x.slug !== slug).sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 2);

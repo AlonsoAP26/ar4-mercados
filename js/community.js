@@ -501,7 +501,9 @@
         <div class="community-post-footer">
           <button class="community-vote-btn" data-vote-id="${post.id}">▲ ${post.upvotes} útil</button>
           ${reactionsRowHTML(post.id)}
+          <button class="comments-toggle-btn" data-comments-toggle="${post.id}">💬 Comentarios</button>
         </div>
+        <div class="comments-section" id="commentsFor-${post.id}" hidden></div>
       </article>
     `;
   }
@@ -566,6 +568,20 @@
           alert(e.message);
         } finally {
           btn.disabled = false;
+        }
+      });
+    });
+
+    feedEl.querySelectorAll('.comments-toggle-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const postId = btn.dataset.commentsToggle;
+        const section = document.getElementById('commentsFor-' + postId);
+        if (!section) return;
+        const opening = section.hidden;
+        section.hidden = !opening;
+        if (opening && !section.dataset.loaded) {
+          section.dataset.loaded = '1';
+          if (window.AR4_initComments) window.AR4_initComments('commentsFor-' + postId, 'post', postId);
         }
       });
     });

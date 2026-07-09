@@ -254,6 +254,8 @@ async function initIdeaDetail() {
     }
   }
 
+  if (window.AR4_initComments) window.AR4_initComments('commentsSection', 'idea', idea.slug);
+
   const relatedGrid = document.getElementById('relatedIdeasGrid');
   if (relatedGrid) {
     const related = ideas.filter(a => a.slug !== slug).sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 2);
