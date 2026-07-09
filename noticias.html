@@ -9,6 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AR4 Mercados">
+<meta property="og:title" content="Noticias del Mercado — AR4 Mercados">
+<meta property="og:description" content="Resúmenes propios de las noticias más relevantes de forex, acciones, commodities y economía latinoamericana, con enlace a la fuente original.">
+<meta property="og:url" content="https://ar4mercados.com/noticias.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=1200&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -39,7 +47,15 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo">AR4 <span>MERCADOS</span></a>
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 40 40" width="30" height="30">
+        <defs><linearGradient id="lgGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f0c75e"/><stop offset="100%" stop-color="#d4af37"/></linearGradient></defs>
+        <rect x="1.5" y="1.5" width="37" height="37" rx="7.5" fill="none" stroke="url(#lgGrad)" stroke-width="1.4" opacity="0.55"/>
+        <path d="M9 27 L15.5 14.5 L19.5 21.5 L25 10.5 L31 27" fill="none" stroke="url(#lgGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="25" cy="10.5" r="2.4" fill="url(#lgGrad)"/>
+      </svg>
+      <span class="logo-text">AR4 <em>MERCADOS</em></span>
+    </a>
     <nav class="main-nav" id="mainNav">
       <a href="brokers.html">Brokers</a>
       <a href="copytrading.html">Copytrading</a>
@@ -104,6 +120,9 @@
     </div>
     <div>
       <h5>Legal</h5>
+      <a href="terminos.html">Términos de Servicio</a>
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="nosotros.html">Nosotros / Contacto</a>
       <p class="footer-text">© <span id="year"></span> AR4 Mercados. Este sitio no ofrece asesoría financiera regulada ni reproduce artículos de terceros; los resúmenes son de elaboración propia con enlace a la fuente original. Algunos enlaces son de afiliados: podemos recibir una comisión sin costo adicional para ti.</p>
     </div>
   </div>
@@ -114,5 +133,6 @@
 <script src="js/hero-graphics.js?v=2"></script>
 <script src="js/noticias.js"></script>
 <script src="js/chatbot.js?v=2"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "PENDIENTE_TOKEN_CLOUDFLARE"}'></script>
 </body>
 </html>
