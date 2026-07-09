@@ -328,5 +328,102 @@ async function initBrokerDetail() {
   }
 }
 
+const BROKER_FINDER_QUESTIONS = [
+  { key: 'capital', q: '¿Con cuánto capital inicial planeas empezar?', options: [['Menos de $200', 'bajo'], ['Entre $200 y $1000', 'medio'], ['Más de $1000', 'alto']] },
+  { key: 'experience', q: '¿Cuál es tu nivel de experiencia operando?', options: [['Principiante', 'principiante'], ['Intermedio', 'intermedio'], ['Profesional', 'profesional']] },
+  { key: 'priority', q: '¿Qué priorizas más en un broker?', options: [['Costos y comisiones bajas', 'comisiones'], ['Variedad de plataformas', 'plataformas'], ['Investigación y análisis', 'investigacion'], ['Contenido educativo', 'educacion']] }
+];
+
+function brokerFinderMatch(b, answers) {
+  const trust = computeTrustScore(b);
+  const profile = recommendedProfile(b);
+  const profileLower = profile.label.toLowerCase();
+
+  let experienceMatch = false;
+  if (answers.experience === 'principiante' && profileLower.includes('principiante')) experienceMatch = true;
+  if (answers.experience === 'profesional' && profileLower.includes('profesional')) experienceMatch = true;
+  if (answers.experience === 'intermedio' && profileLower.includes('intermedio')) experienceMatch = true;
+
+  const depositNum = parseInt(((b.minDeposit || '').match(/\d+/) || ['0'])[0], 10);
+  const capitalLimits = { bajo: 200, medio: 1000, alto: Infinity };
+  const capitalMatch = depositNum <= capitalLimits[answers.capital];
+
+  const rb = b.ratingBreakdown || {};
+  const priorityScore = rb[answers.priority] || 0;
+
+  let score = trust.total;
+  if (experienceMatch) score += 15;
+  if (capitalMatch) score += 10; else score -= 25;
+  score += priorityScore * 4;
+
+  const reasons = [];
+  if (capitalMatch) reasons.push(`su depósito mínimo (${b.minDeposit}) encaja con tu capital inicial`);
+  if (experienceMatch) reasons.push(`tu perfil coincide con "${profile.label}"`);
+  if (priorityScore >= 4) reasons.push(`tiene ${priorityScore.toFixed(1)}/5 en ${RATING_CATEGORY_LABELS[answers.priority] || answers.priority}`);
+
+  return { score, reasons, trust };
+}
+
+function renderBrokerFinderForm() {
+  const el = document.getElementById('brokerFinderForm');
+  if (!el) return;
+
+  el.innerHTML = BROKER_FINDER_QUESTIONS.map((item) => `
+    <div style="margin-bottom:16px;">
+      <label style="display:block;margin-bottom:8px;font-size:0.9rem;color:var(--text-hi);">${item.q}</label>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        ${item.options.map(([label, value]) => `
+          <label style="display:flex;align-items:center;gap:6px;font-weight:400;font-size:0.85rem;color:var(--text-mid);">
+            <input type="radio" name="finder_${item.key}" value="${value}"> ${label}
+          </label>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  const btn = document.getElementById('brokerFinderBtn');
+  const resultEl = document.getElementById('brokerFinderResult');
+  if (!btn || !resultEl) return;
+
+  btn.addEventListener('click', async () => {
+    const answers = {};
+    BROKER_FINDER_QUESTIONS.forEach((item) => {
+      const checked = document.querySelector(`input[name="finder_${item.key}"]:checked`);
+      answers[item.key] = checked ? checked.value : null;
+    });
+
+    if (!answers.capital || !answers.experience || !answers.priority) {
+      resultEl.innerHTML = '<div class="community-form-msg error" style="margin-top:14px;">Responde las 3 preguntas para ver tu recomendación.</div>';
+      return;
+    }
+
+    resultEl.innerHTML = '<p class="footer-text">Calculando...</p>';
+    try {
+      const brokers = await loadBrokers();
+      const scored = brokers
+        .map((b) => ({ b, m: brokerFinderMatch(b, answers) }))
+        .sort((a, x) => x.m.score - a.m.score)
+        .slice(0, 3);
+
+      resultEl.innerHTML = `
+        <div class="section-head" style="margin-top:24px;"><h2 style="font-size:1.05rem;">Tus recomendaciones</h2></div>
+        ${scored.map(({ b, m }, i) => `
+          <div class="broker-card broker-rank-card" style="margin-bottom:14px;">
+            <div class="broker-rank">#${i + 1} para ti</div>
+            <div class="trust-score-badge" title="AR4 Trust Score"><strong>${m.trust.total}</strong><span>Trust Score</span></div>
+            ${brokerLogoHTML(b, 'sm')}
+            <p style="color:var(--text-mid);font-size:0.85rem;margin:10px 0;">${m.reasons.length ? 'Te lo recomendamos porque ' + m.reasons.join(', ') + '.' : 'Buen balance general según tus respuestas.'}</p>
+            <a href="broker.html?slug=${encodeURIComponent(b.slug)}" class="btn btn-outline btn-block">Ver review completa →</a>
+          </div>
+        `).join('')}
+        <p style="color:var(--text-low);font-size:0.78rem;margin-top:8px;">Recomendación calculada solo a partir de datos públicos de este ranking — no es asesoría financiera personalizada.</p>
+      `;
+    } catch (e) {
+      resultEl.innerHTML = '<p class="footer-text">No se pudo calcular tu recomendación.</p>';
+    }
+  });
+}
+
+renderBrokerFinderForm();
 initBrokersListing();
 initBrokerDetail();
