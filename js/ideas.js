@@ -33,25 +33,9 @@ function formatFechaIdea(iso) {
   return d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
-function ideaCardHTML(a, isPremiumUser) {
+function ideaCardHTML(a) {
   const badge = a.symbol ? `<span class="instrument-badge">${symbolLabel(a.symbol)}</span>` : '';
-  const premiumBadge = a.premium ? '<span class="badge-premium">★ Premium</span>' : '';
-  const locked = a.premium && !isPremiumUser;
-
-  if (locked) {
-    return `
-      <article class="broker-card premium-lock">
-        ${finHeroHTML(a.heroType, a.trend, 'size-mini')}
-        <span class="news-tag">${a.category}</span>${badge}${premiumBadge}
-        <h3 style="margin-top:10px;">${a.title}</h3>
-        <div class="premium-lock-overlay">
-          <span class="lock-icon">🔒</span>
-          <p>Este análisis es exclusivo para miembros Premium.</p>
-          <a href="membresia.html" class="btn btn-gold">Ver membresía</a>
-        </div>
-      </article>
-    `;
-  }
+  const premiumBadge = a.bodyPremium ? '<span class="badge-premium">★ Análisis Premium disponible</span>' : '';
 
   return `
     <article class="broker-card">
@@ -87,8 +71,6 @@ async function initIdeasListing() {
 
   ideas.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  const isPremiumUser = await getPremiumStatus();
-
   const categories = ['all', ...new Set(ideas.map(a => a.category))];
   filterBar.innerHTML = categories.map(c =>
     `<button class="filter-chip ${c === 'all' ? 'active' : ''}" data-filter="${c}">${c === 'all' ? 'Todas' : c}</button>`
@@ -96,7 +78,7 @@ async function initIdeasListing() {
 
   function render(filter) {
     const filtered = filter === 'all' ? ideas : ideas.filter(a => a.category === filter);
-    grid.innerHTML = filtered.map(a => ideaCardHTML(a, isPremiumUser)).join('') || '<p class="footer-text">No hay análisis en esta categoría todavía.</p>';
+    grid.innerHTML = filtered.map(a => ideaCardHTML(a)).join('') || '<p class="footer-text">No hay análisis en esta categoría todavía.</p>';
   }
 
   render('all');
@@ -114,17 +96,44 @@ function renderTVMiniChart(container, symbol) {
   container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
   const script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
   script.async = true;
   script.text = JSON.stringify({
     symbol: symbol,
     width: '100%',
-    height: 240,
+    height: 480,
+    interval: '60',
     locale: 'es',
-    dateRange: '3M',
-    colorTheme: 'dark',
-    isTransparent: true,
-    autosize: false
+    timezone: 'America/Lima',
+    theme: 'dark',
+    style: '1',
+    hide_side_toolbar: false,
+    allow_symbol_change: false,
+    studies: ['MASimple@tv-basicstudies'],
+    support_host: 'https://www.tradingview.com'
+  });
+  container.appendChild(script);
+}
+
+function renderPremiumChart(container, symbol) {
+  container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+  script.async = true;
+  script.text = JSON.stringify({
+    symbol: symbol,
+    width: '100%',
+    height: 480,
+    interval: '60',
+    locale: 'es',
+    timezone: 'America/Lima',
+    theme: 'dark',
+    style: '1',
+    hide_side_toolbar: false,
+    allow_symbol_change: false,
+    studies: ['MASimple@tv-basicstudies', 'Volume@tv-basicstudies', 'VbPFixed@tv-volumebyprice'],
+    support_host: 'https://www.tradingview.com'
   });
   container.appendChild(script);
 }
@@ -190,7 +199,6 @@ async function initIdeaDetail() {
   }
 
   const isPremiumUser = await getPremiumStatus();
-  const locked = idea.premium && !isPremiumUser;
 
   document.title = idea.title + ' — AR4 Mercados';
   const descTag = document.getElementById('pageDesc');
@@ -204,37 +212,52 @@ async function initIdeaDetail() {
   const metaEl = document.getElementById('ideaMeta');
   if (metaEl) {
     const badge = idea.symbol ? `<span class="instrument-badge">${symbolLabel(idea.symbol)}</span>` : '';
-    const premiumBadge = idea.premium ? '<span class="badge-premium">★ Premium</span>' : '';
     metaEl.innerHTML = `
-      <span class="badge-impact medium">${idea.category}</span>${badge}${premiumBadge}
+      <span class="badge-impact medium">${idea.category}</span>${badge}
       <h1 style="margin:14px 0 10px;">${idea.title}</h1>
       <span class="news-meta">${idea.author} · ${formatFechaIdea(idea.date)}</span>
     `;
   }
 
-  if (locked) {
-    body.innerHTML = `
-      <div class="premium-lock" style="border-radius:var(--radius);">
-        <p style="color:var(--text-mid);font-size:1rem;margin-bottom:20px;">${idea.excerpt}</p>
-        <div class="promo-banner">
-          <div class="promo-banner-text">
-            <span class="lock-icon">🔒</span>
-            <h3 style="margin-top:8px;">Este análisis es exclusivo para miembros Premium</h3>
-            <p>Suscríbete para desbloquear este y todos los análisis avanzados de AR4 Mercados.</p>
-          </div>
-          <a href="membresia.html" class="btn btn-gold">Ver membresía Premium</a>
+  initIdeaChart(idea);
+  body.innerHTML = idea.body;
+
+  const conclusionEl = document.getElementById('ideaConclusion');
+  if (conclusionEl && idea.bodyPremium) {
+    if (isPremiumUser) {
+      conclusionEl.innerHTML = `
+        <div class="section-head" style="margin-top:8px;">
+          <h2 style="font-size:1.2rem;">Análisis Premium: volumen y flujo institucional</h2>
+          <span class="badge-premium">★ Premium</span>
         </div>
-      </div>
-    `;
-  } else {
-    initIdeaChart(idea);
-    body.innerHTML = idea.body;
+        <div class="idea-chart-wrap" style="margin-bottom:24px;" id="ideaPremiumChartWrap">
+          <div class="tradingview-widget-container" id="ideaPremiumChart"></div>
+        </div>
+        <article class="article-body">${idea.bodyPremium}</article>
+      `;
+      const premiumChartContainer = document.getElementById('ideaPremiumChart');
+      if (premiumChartContainer && idea.symbol) renderPremiumChart(premiumChartContainer, idea.symbol);
+    } else {
+      conclusionEl.innerHTML = `
+        <div class="premium-lock" style="border-radius:var(--radius);min-height:260px;margin-top:8px;">
+          <div class="broker-card-inner-blur">
+            <div class="section-head"><h2 style="font-size:1.2rem;">Análisis Premium: volumen y flujo institucional</h2></div>
+            <article class="article-body">${idea.bodyPremium}</article>
+          </div>
+          <div class="premium-lock-overlay">
+            <span class="lock-icon">🔒</span>
+            <p><strong>Análisis Premium</strong><br>Gráfico con volumen y volume profile, más la lectura de flujo institucional, exclusivos para miembros Premium.</p>
+            <a href="membresia.html" class="btn btn-gold">Ver membresía Premium</a>
+          </div>
+        </div>
+      `;
+    }
   }
 
   const relatedGrid = document.getElementById('relatedIdeasGrid');
   if (relatedGrid) {
     const related = ideas.filter(a => a.slug !== slug).sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 2);
-    relatedGrid.innerHTML = related.map(a => ideaCardHTML(a, isPremiumUser)).join('');
+    relatedGrid.innerHTML = related.map(a => ideaCardHTML(a)).join('');
   }
 }
 
