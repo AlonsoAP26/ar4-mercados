@@ -36,6 +36,7 @@ function ideaCardHTML(a) {
   const badge = a.symbol ? `<span class="instrument-badge">${symbolLabel(a.symbol)}</span>` : '';
   return `
     <article class="broker-card">
+      ${finHeroHTML(a.heroType, a.trend, 'size-mini')}
       <span class="news-tag">${a.category}</span>${badge}
       <h3 style="margin-top:10px;"><a href="idea.html?slug=${encodeURIComponent(a.slug)}" style="color:inherit;">${a.title}</a></h3>
       <p style="color:var(--text-mid); font-size:0.88rem; margin-bottom:14px;">${a.excerpt}</p>
@@ -161,6 +162,9 @@ async function initIdeaDetail() {
   if (descTag) descTag.setAttribute('content', idea.excerpt);
   const breadcrumbTitle = document.getElementById('breadcrumbTitle');
   if (breadcrumbTitle) breadcrumbTitle.textContent = idea.title;
+
+  const heroEl = document.getElementById('ideaHeroGraphic');
+  if (heroEl) heroEl.innerHTML = finHeroHTML(idea.heroType, idea.trend, 'size-full');
 
   const metaEl = document.getElementById('ideaMeta');
   if (metaEl) {

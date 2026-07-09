@@ -18,11 +18,6 @@ function newsSymbolLabel(symbol) {
   return NEWS_SYMBOL_LABELS[symbol] || symbol.split(':').pop();
 }
 
-function catClass(category) {
-  const map = { 'Forex': 'cat-forex', 'LatAm': 'cat-latam', 'Commodities': 'cat-commodities', 'Acciones': 'cat-acciones' };
-  return map[category] || 'cat-forex';
-}
-
 async function loadNoticias() {
   const res = await fetch('data/noticias.json');
   if (!res.ok) throw new Error('No se pudieron cargar las noticias');
@@ -42,7 +37,7 @@ function tiempoRelativo(iso) {
 function newsCardHTML(n) {
   return `
     <article class="broker-card" data-category="${n.category}">
-      <div class="news-hero-mini ${catClass(n.category)}">${n.heroIcon || '📰'}</div>
+      ${finHeroHTML(n.heroType, n.trend, 'size-mini')}
       <span class="news-tag">${n.category}</span>
       <h3 style="margin-top:10px;"><a href="noticia.html?slug=${encodeURIComponent(n.slug)}" style="color:inherit;">${n.title}</a></h3>
       <p style="color:var(--text-mid); font-size:0.88rem; margin-bottom:14px;">${n.excerpt}</p>
@@ -136,21 +131,17 @@ async function initNoticiaDetail() {
 
   const heroEl = document.getElementById('noticiaHero');
   if (heroEl) {
-    heroEl.innerHTML = `
-      <div class="news-hero ${catClass(n.category)}">
-        <span class="hero-icon">${n.heroIcon || '📰'}</span>
-        <div>
-          <span class="hero-cat">${n.category}</span>
-          <h1 style="margin-top:8px;">${n.title}</h1>
-        </div>
-      </div>
-    `;
+    heroEl.innerHTML = finHeroHTML(n.heroType, n.trend, 'size-full');
   }
 
   const metaEl = document.getElementById('noticiaMeta');
   if (metaEl) {
     const badge = n.symbol ? `<span class="instrument-badge">${newsSymbolLabel(n.symbol)}</span>` : '';
-    metaEl.innerHTML = `<span class="badge-live">ACTUALIZADO</span>${badge} <span class="news-meta" style="margin-left:8px;">${n.author} · ${tiempoRelativo(n.date)}</span>`;
+    metaEl.innerHTML = `
+      <span class="badge-impact medium">${n.category}</span>${badge}
+      <h1 style="margin:14px 0 10px;">${n.title}</h1>
+      <span class="badge-live">ACTUALIZADO</span> <span class="news-meta" style="margin-left:8px;">${n.author} · ${tiempoRelativo(n.date)}</span>
+    `;
   }
 
   if (n.symbol) {
