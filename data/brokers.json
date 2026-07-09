@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "pepperstone",
+    "rank": 1,
+    "name": "Pepperstone",
+    "featured": true,
+    "brandColor": "#8bc53f",
+    "regulation": "ASIC · FCA · CySEC",
+    "minDeposit": "Desde $0 USD (recomendado $200)",
+    "spreadsFrom": "Desde 0.0 pips + comisión (cuenta Razor)",
+    "platforms": "MT4 · MT5 · cTrader · TradingView",
+    "trustpilotRating": "4.3",
+    "trustpilotReviews": "3,400+",
+    "trustpilotLabel": "Excelente",
+    "resumen": "El broker mejor regulado de esta lista con spreads ultra bajos y ejecución rápida — nuestra recomendación #1, especialmente para quien opera noticias de alto impacto o usa copytrading.",
+    "descripcion": "Pepperstone lleva más de una década operando y combina regulación de primer nivel en tres jurisdicciones (Australia, Reino Unido y Chipre) con una de las estructuras de costos más competitivas del mercado. Su cuenta Razor, con spreads desde 0.0 pips, está pensada para traders activos y estrategias sensibles al costo de ejecución. No cobra comisiones por depósito ni retiro, y su infraestructura tecnológica es de las más estables durante eventos de alta volatilidad como los NFP o decisiones de bancos centrales.",
+    "pros": [
+      "Regulado por 3 autoridades de primer nivel (ASIC, FCA, CySEC)",
+      "Spreads desde 0.0 pips en la cuenta Razor",
+      "Sin comisión por depósito ni retiro",
+      "Retiros procesados en menos de 24h según la mayoría de reseñas",
+      "Compatible con copytrading (Myfxbook, DupliTrade)"
+    ],
+    "cons": [
+      "~7% de las reseñas en Trustpilot son negativas, sobre todo por demoras puntuales",
+      "Atención al cliente puede tardar más en horas de alta demanda",
+      "La cuenta Standard tiene spreads más altos que la Razor"
+    ],
+    "officialUrl": "https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935",
+    "affiliateUrl": "https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935"
+  },
+  {
+    "slug": "ic-markets",
+    "rank": 2,
+    "name": "IC Markets",
+    "brandColor": "#2e6fd9",
+    "regulation": "ASIC · CySEC · FSA (Seychelles)",
+    "minDeposit": "$200 USD",
+    "spreadsFrom": "Desde 0.0 pips + comisión (Raw)",
+    "platforms": "MT4 · MT5 · cTrader",
+    "trustpilotRating": "4.8",
+    "trustpilotReviews": "54,000+",
+    "trustpilotLabel": "Excelente",
+    "resumen": "El rating más alto y consistente de todo el sector, con el mayor volumen de reseñas. Ideal si priorizas soporte al cliente y ejecución por encima del depósito mínimo.",
+    "descripcion": "IC Markets se ha construido una reputación sólida gracias a su liquidez profunda (más de 25 proveedores tier-1) y spreads Raw desde 0.0 pips, ejecutados vía servidores de baja latencia en NY4. Es la opción favorita de traders algorítmicos y de alta frecuencia por su velocidad de ejecución. El 91% de sus reseñas en Trustpilot son de 5 estrellas, con el soporte al cliente como el aspecto más elogiado — usuarios reportan respuestas en minutos, no horas.",
+    "pros": [
+      "91% de sus reseñas en Trustpilot son de 5 estrellas",
+      "Soporte al cliente muy elogiado — respuestas rápidas",
+      "Liquidez profunda de 25+ proveedores tier-1",
+      "Ejecución de baja latencia, ideal para scalping/algo trading"
+    ],
+    "cons": [
+      "Depósito mínimo más alto ($200) que la mayoría de esta lista",
+      "La cuenta Raw cobra comisión por operación además del spread",
+      "Regulación offshore (FSA Seychelles) para clientes fuera de Australia/Europa"
+    ],
+    "officialUrl": "https://www.icmarkets.com"
+  },
+  {
+    "slug": "avatrade",
+    "rank": 3,
+    "name": "AvaTrade",
+    "brandColor": "#1e88c7",
+    "regulation": "Banco Central de Irlanda · ASIC · FSA Japón · FSCA · ADGM",
+    "minDeposit": "$100 USD",
+    "spreadsFrom": "Desde 0.9 pips (sin comisión)",
+    "platforms": "MT4 · MT5 · AvaTradeGO",
+    "trustpilotRating": "4.8",
+    "trustpilotReviews": "12,200+",
+    "trustpilotLabel": "Excelente",
+    "resumen": "El broker con más licencias regulatorias de esta lista (9 en total). Todo el costo va en el spread, sin comisiones — simple y transparente.",
+    "descripcion": "AvaTrade es uno de los brokers más regulados del mundo, con 9 licencias que incluyen al Banco Central de Irlanda como regulador principal. Su modelo sin comisiones (todo el costo va en el spread) simplifica el cálculo de costos para traders que no quieren estar sumando comisiones aparte. Ofrece protección de saldo negativo y fondos segregados, con una app propia (AvaTradeGO) bien valorada para quienes operan desde el celular.",
+    "pros": [
+      "9 licencias regulatorias, incluida el Banco Central de Irlanda",
+      "Modelo sin comisiones — todo el costo va en el spread",
+      "Protección de saldo negativo y fondos segregados",
+      "App propia (AvaTradeGO) bien valorada"
+    ],
+    "cons": [
+      "Depósito mínimo de $100, más alto que FBS, XM o HFM",
+      "Spreads desde 0.9 pips, no son los más ajustados de la lista",
+      "Menos opciones de plataformas de terceros que IC Markets o Pepperstone"
+    ],
+    "officialUrl": "https://www.avatrade.com"
+  },
+  {
+    "slug": "exness",
+    "rank": 4,
+    "name": "Exness",
+    "brandColor": "#ffd400",
+    "regulation": "CySEC · FCA · FSCA (mayoría retail vía entidad offshore)",
+    "minDeposit": "$10 USD",
+    "spreadsFrom": "Desde 1.0 pips (Standard)",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "4.7",
+    "trustpilotReviews": "29,000+",
+    "trustpilotLabel": "Excelente",
+    "resumen": "Rating alto y accesible desde $10. Muy popular en Latinoamérica por sus retiros rápidos, aunque la mayoría de clientes retail operan bajo entidad offshore.",
+    "descripcion": "Exness combina un depósito mínimo muy bajo ($10) con un volumen enorme de reseñas positivas — casi 30,000 en Trustpilot. Sus retiros instantáneos son uno de los puntos más mencionados favorablemente por los usuarios. Es importante entender que, aunque Exness tiene licencias CySEC y FCA, la mayoría de clientes retail de Latinoamérica quedan registrados bajo su entidad de Seychelles o Sudáfrica, con menor protección regulatoria que la europea.",
+    "pros": [
+      "Depósito mínimo accesible de solo $10",
+      "Retiros instantáneos destacados por la mayoría de usuarios",
+      "Gran volumen de reseñas positivas (29,000+)",
+      "Muy popular y con soporte establecido en Latinoamérica"
+    ],
+    "cons": [
+      "Clientes retail suelen quedar bajo entidad offshore (Seychelles/Sudáfrica)",
+      "Quejas puntuales sobre verificación de cuenta y retiros rechazados",
+      "Spreads Standard (1.0 pips) no son los más competitivos"
+    ],
+    "officialUrl": "https://www.exness.com"
+  },
+  {
+    "slug": "hfm",
+    "rank": 5,
+    "name": "HFM",
+    "brandColor": "#f37021",
+    "regulation": "FCA · CySEC · DFSA · FSA Seychelles · FSCA · CMA Kenya",
+    "minDeposit": "Desde $5 USD (cuenta Cent/Premium/Zero)",
+    "spreadsFrom": "Desde 0.0 pips + comisión (Zero)",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "4.5",
+    "trustpilotReviews": "2,900+",
+    "trustpilotLabel": "Excelente",
+    "resumen": "Regulación de primer nivel (FCA + CySEC) combinada con depósito mínimo bajo. Más del 85% de sus reseñas en Trustpilot son de 4 y 5 estrellas.",
+    "descripcion": "HFM (antes HotForex) destaca por combinar dos licencias tier-1 (FCA del Reino Unido y CySEC de Chipre) con múltiples tipos de cuenta accesibles desde $5. Su cuenta Zero ofrece spreads desde 0.0 pips con comisión fija, mientras que las cuentas Premium y Pro operan sin comisión. Los usuarios destacan retiros confiables y rápidos, aunque existen reportes puntuales de suspensión de cuentas que vale la pena tener en cuenta.",
+    "pros": [
+      "Regulación tier-1 (FCA + CySEC), poco común combinado con depósito bajo",
+      "Más del 85% de reseñas en Trustpilot son 4-5 estrellas",
+      "Múltiples tipos de cuenta según nivel de experiencia",
+      "Retiros reportados como rápidos y confiables"
+    ],
+    "cons": [
+      "Reportes puntuales de suspensión de cuentas",
+      "La cuenta con spreads más bajos (Zero) requiere comisión aparte",
+      "Menos plataformas de terceros que Pepperstone o IC Markets"
+    ],
+    "officialUrl": "https://www.hfm.com"
+  },
+  {
+    "slug": "octafx",
+    "rank": 6,
+    "name": "Octa",
+    "brandColor": "#00a19a",
+    "regulation": "CySEC · FSC · MISA",
+    "minDeposit": "$25 USD",
+    "spreadsFrom": "Desde 0.6 pips (sin comisión)",
+    "platforms": "MT4 · MT5 · Octa Trader",
+    "trustpilotRating": "4.6",
+    "trustpilotReviews": "8,000+",
+    "trustpilotLabel": "Muy bueno",
+    "resumen": "Sin comisiones ni swaps, con más de 8,000 reseñas positivas y una base de más de 12 millones de cuentas en 150+ países.",
+    "descripcion": "Octa (antes OctaFX) opera con un modelo 100% libre de comisiones y sin swap, lo que simplifica mucho el cálculo de costos para principiantes. Con más de 12 millones de cuentas registradas y 60+ premios de la industria, es uno de los brokers con mayor base de usuarios activos a nivel global, aunque su depósito mínimo ($25) es algo más alto que FBS o HFM.",
+    "pros": [
+      "Sin comisiones y sin swap en los 3 tipos de cuenta",
+      "Más de 8,000 reseñas positivas en Trustpilot",
+      "Base de usuarios enorme (12M+ cuentas en 150+ países)",
+      "Plataforma propia (Octa Trader) además de MT4/MT5"
+    ],
+    "cons": [
+      "Regulación principal offshore (FSC, MISA), sin licencia tier-1",
+      "Reportes recientes de demoras en verificación de cuenta",
+      "Depósito mínimo ($25) más alto que FBS o HFM"
+    ],
+    "officialUrl": "https://www.octafx.com"
+  },
+  {
+    "slug": "fbs",
+    "rank": 7,
+    "name": "FBS",
+    "brandColor": "#00a651",
+    "regulation": "CySEC · ASIC · IFSC Belize · FSCA",
+    "minDeposit": "$5 USD",
+    "spreadsFrom": "Desde 0.7 pips",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "4.3",
+    "trustpilotReviews": "8,500+",
+    "trustpilotLabel": "Excelente",
+    "resumen": "Depósito mínimo de solo $5 y sin comisiones ni cargos por inactividad. Buena puerta de entrada para quien recién empieza con poco capital.",
+    "descripcion": "FBS es reconocido por su barrera de entrada extremadamente baja ($5) y apalancamiento alto, dirigido a traders que empiezan con poco capital. No cobra comisiones en la mayoría de instrumentos de su cuenta estándar, ni cargos por mantenimiento o inactividad. Sus spreads (desde 0.7 pips) son razonables para trading casual, aunque no son de los más ajustados para estrategias sensibles al costo.",
+    "pros": [
+      "Depósito mínimo de solo $5",
+      "Sin comisiones, sin cargos por inactividad ni mantenimiento",
+      "Rating sólido en Trustpilot (4.3, 8,500+ reseñas)",
+      "Apalancamiento alto disponible para cuentas pequeñas"
+    ],
+    "cons": [
+      "Spreads no son de los más ajustados (desde 0.7 pips)",
+      "Regulación principal offshore (IFSC Belize) para la mayoría de clientes LatAm",
+      "Apalancamiento alto puede ser un riesgo para principiantes sin experiencia"
+    ],
+    "officialUrl": "https://fbs.com"
+  },
+  {
+    "slug": "xm",
+    "rank": 8,
+    "name": "XM",
+    "brandColor": "#e2001a",
+    "regulation": "CySEC · ASIC · FSC Belize",
+    "minDeposit": "$5 USD",
+    "spreadsFrom": "Desde 0.6 pips",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "3.7",
+    "trustpilotReviews": "2,500+",
+    "trustpilotLabel": "Bueno",
+    "resumen": "El broker más accesible para empezar con casi nada de capital. A cambio, sus reviews son las más polarizadas de la lista — conviene leer bien la letra chica de bonos y retiros.",
+    "descripcion": "XM combina un depósito mínimo de solo $5 con un extenso programa educativo (webinars, seminarios presenciales en la región) muy valorado por traders principiantes. Sin embargo, su base de reseñas en Trustpilot es la más polarizada de esta lista: 46% de 5 estrellas por velocidad de ejecución y educación, pero 31% de 1 estrella por demoras en retiros y disputas de bonos promocionales.",
+    "pros": [
+      "Depósito mínimo de solo $5",
+      "Programa educativo extenso (webinars, eventos presenciales en LatAm)",
+      "46% de sus reseñas son de 5 estrellas por ejecución y soporte"
+    ],
+    "cons": [
+      "31% de sus reseñas en Trustpilot son de 1 estrella — el porcentaje más alto de esta lista",
+      "Quejas recurrentes por demoras en retiros y disputas de bonos",
+      "Reportes de cierre de cuentas sin previo aviso en algunos casos"
+    ],
+    "officialUrl": "https://www.xm.com"
+  },
+  {
+    "slug": "roboforex",
+    "rank": 9,
+    "name": "RoboForex",
+    "brandColor": "#f7941d",
+    "regulation": "FSC Belize (offshore, sin regulación tier-1)",
+    "minDeposit": "$10 USD",
+    "spreadsFrom": "Desde 0.0 pips (ECN/Prime) o 1.3 pips (Pro)",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "2.6",
+    "trustpilotReviews": "730+",
+    "trustpilotLabel": "Regular",
+    "resumen": "Depósito mínimo bajo y spreads competitivos en cuentas ECN, pero su rating de Trustpilot es de los más bajos de esta lista — conviene leer bien las reseñas negativas antes de depositar montos grandes.",
+    "descripcion": "RoboForex ofrece spreads competitivos desde 0.0 pips en sus cuentas Prime y ECN, con depósito mínimo accesible de $10. Sin embargo, su regulación principal (FSC de Belice) es considerada offshore/tier-4, sin el nivel de supervisión de reguladores como la FCA o ASIC. Su rating en Trustpilot (2.6/5) es notablemente más bajo que el resto de brokers de esta lista, con quejas recurrentes sobre estabilidad de la plataforma, retiros y precisión de spreads.",
+    "pros": [
+      "Spreads desde 0.0 pips en cuentas Prime/ECN",
+      "Depósito mínimo accesible de $10",
+      "Amplia variedad de tipos de cuenta"
+    ],
+    "cons": [
+      "Rating de Trustpilot bajo (2.6/5) — el más bajo de esta lista",
+      "Regulación offshore (FSC Belice), sin licencia tier-1",
+      "Quejas recurrentes sobre estabilidad de plataforma y retiros"
+    ],
+    "officialUrl": "https://roboforex.com"
+  },
+  {
+    "slug": "fxtm",
+    "rank": 10,
+    "name": "FXTM",
+    "brandColor": "#e4032e",
+    "regulation": "FCA · FSC Mauricio · CMA Kenia · FSCA",
+    "minDeposit": "Desde $10 USD (varía según cuenta)",
+    "spreadsFrom": "Desde 0.0 pips + comisión",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "2.4",
+    "trustpilotReviews": "1,080+",
+    "trustpilotLabel": "Regular",
+    "resumen": "Tiene licencia FCA y sirve a más de un millón de clientes globalmente, pero su rating de Trustpilot es el más bajo de esta lista — revisa bien las reseñas de soporte y retiros antes de decidir.",
+    "descripcion": "FXTM (ForexTime) es un broker global establecido, con licencia FCA entre sus reguladores y más de un millón de clientes en 150+ países. Ofrece spreads competitivos desde 0.0 pips en su cuenta con comisión. A pesar de su trayectoria y regulación, su rating en Trustpilot (2.4/5) es el más bajo de esta lista, con quejas frecuentes sobre tiempos de respuesta del soporte y velocidad de procesamiento de retiros.",
+    "pros": [
+      "Cuenta con licencia FCA entre sus reguladores",
+      "Spreads competitivos desde 0.0 pips (cuenta con comisión)",
+      "Trayectoria larga, más de 1 millón de clientes globales"
+    ],
+    "cons": [
+      "Rating de Trustpilot más bajo de esta lista (2.4/5)",
+      "Quejas frecuentes sobre soporte y velocidad de retiros",
+      "Condiciones (depósito mínimo, spreads) varían bastante según el tipo de cuenta"
+    ],
+    "officialUrl": "https://www.forextime.com"
+  }
+]
