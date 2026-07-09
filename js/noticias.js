@@ -20,6 +20,13 @@ function newsSymbolLabel(symbol) {
   return NEWS_SYMBOL_LABELS[symbol] || symbol.split(':').pop();
 }
 
+async function getPremiumStatus() {
+  if (typeof window.AR4_checkPremium === 'function') {
+    try { return await window.AR4_checkPremium(); } catch (e) { return false; }
+  }
+  return false;
+}
+
 async function loadNoticias() {
   const res = await fetch('data/noticias.json');
   if (!res.ok) throw new Error('No se pudieron cargar las noticias');
@@ -184,6 +191,27 @@ async function initNoticiaDetail() {
   }
 
   body.innerHTML = n.body;
+
+  const conclusionEl = document.getElementById('noticiaConclusion');
+  if (conclusionEl && n.bodyPremium) {
+    const isPremiumUser = await getPremiumStatus();
+    if (isPremiumUser) {
+      conclusionEl.innerHTML = `<article class="article-body">${n.bodyPremium}</article>`;
+    } else {
+      conclusionEl.innerHTML = `
+        <div class="premium-lock" style="border-radius:var(--radius);min-height:220px;">
+          <div class="broker-card-inner-blur">
+            <article class="article-body">${n.bodyPremium}</article>
+          </div>
+          <div class="premium-lock-overlay">
+            <span class="lock-icon">🔒</span>
+            <p><strong>Conclusión y análisis final</strong><br>Los datos macro completos y la lectura final de este movimiento son exclusivos para miembros Premium.</p>
+            <a href="membresia.html" class="btn btn-gold">Ver membresía Premium</a>
+          </div>
+        </div>
+      `;
+    }
+  }
 
   const sourceBox = document.getElementById('noticiaSource');
   if (sourceBox) {
