@@ -18,6 +18,12 @@ exports.handler = async (event, context) => {
     const category = ALLOWED_CATEGORIES.includes(body.category) ? body.category : 'Forex';
     const symbol = body.symbol ? String(body.symbol).trim().slice(0, 40) : null;
 
+    let pollOptions = null;
+    if (Array.isArray(body.pollOptions)) {
+      const cleaned = body.pollOptions.map((o) => String(o || '').trim().slice(0, 60)).filter(Boolean);
+      if (cleaned.length >= 2 && cleaned.length <= 4) pollOptions = cleaned;
+    }
+
     if (title.length < 8 || text.length < 20) {
       return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El título y el contenido son demasiado cortos.' }) };
     }
@@ -47,7 +53,15 @@ exports.handler = async (event, context) => {
 
     const created = await supabaseRequest('community_posts', {
       method: 'POST',
-      body: JSON.stringify({ profile_id: profile.id, category, title, body: text, symbol })
+      body: JSON.stringify({
+        profile_id: profile.id,
+        category,
+        title,
+        body: text,
+        symbol,
+        poll_options: pollOptions,
+        poll_votes_count: pollOptions ? pollOptions.map(() => 0) : null
+      })
     });
 
     await supabaseRequest('points_ledger', {

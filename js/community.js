@@ -338,13 +338,25 @@
         <input type="text" id="postTitle" maxlength="120">
         <label for="postBody">Tu análisis</label>
         <textarea id="postBody" maxlength="2000"></textarea>
+        <label style="display:flex;align-items:center;gap:8px;margin-top:14px;font-weight:400;text-transform:none;font-family:inherit;cursor:pointer;">
+          <input type="checkbox" id="postAddPoll" style="width:16px;height:16px;"> Agregar una encuesta (opcional)
+        </label>
+        <div id="postPollFields" hidden style="margin-top:10px;">
+          <input type="text" id="postPollOption0" maxlength="60" placeholder="Opción 1" style="margin-bottom:8px;">
+          <input type="text" id="postPollOption1" maxlength="60" placeholder="Opción 2" style="margin-bottom:8px;">
+          <input type="text" id="postPollOption2" maxlength="60" placeholder="Opción 3 (opcional)" style="margin-bottom:8px;">
+          <input type="text" id="postPollOption3" maxlength="60" placeholder="Opción 4 (opcional)">
+        </div>
         <button class="btn btn-gold" id="postSubmit" style="margin-top:14px;">Publicar (+10 pts)</button>
         <div class="community-form-msg" id="postMsg"></div>
         ${basicoNote}
         <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Si indicas un instrumento reconocido (ej. EUR/USD, USD/MXN, ORO, BTC/USD), tu publicación mostrará automáticamente un gráfico de TradingView con medias móviles.</p>
       </div>
 
-      <div class="section-head"><h2>Ideas de la comunidad</h2></div>
+      <div class="section-head">
+        <h2>Ideas de la comunidad</h2>
+        <button class="filter-chip" id="bookmarksToggleBtn" data-filter="all">🔖 Ver guardados</button>
+      </div>
       <div id="communityFeed"><p class="footer-text">Cargando publicaciones...</p></div>
     `;
   }
@@ -483,12 +495,44 @@
     `;
   }
 
-  function postCardHTML(post, authorProfile) {
+  function pollHTML(post) {
+    if (!post.poll_options) return '';
+    const counts = post.poll_votes_count || post.poll_options.map(() => 0);
+    const total = counts.reduce((a, v) => a + v, 0);
+    const votedIndex = localStorage.getItem('ar4PollVoted_' + post.id);
+
+    if (votedIndex !== null) {
+      return `
+        <div class="poll-box" data-post-id="${post.id}">
+          ${post.poll_options.map((opt, i) => {
+            const pct = total ? Math.round((counts[i] / total) * 100) : 0;
+            const isMine = String(i) === votedIndex;
+            return `
+              <div class="poll-result-row${isMine ? ' poll-my-vote' : ''}">
+                <div class="poll-result-head"><span>${escapeHtml(opt)}${isMine ? ' ✓' : ''}</span><strong>${pct}%</strong></div>
+                <div class="poll-result-bar-track"><div class="poll-result-bar-fill" style="width:${pct}%;"></div></div>
+              </div>
+            `;
+          }).join('')}
+          <span class="news-meta">${total} voto${total === 1 ? '' : 's'}</span>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="poll-box poll-unvoted" data-post-id="${post.id}">
+        ${post.poll_options.map((opt, i) => `<button class="poll-option-btn" data-poll-post="${post.id}" data-poll-option="${i}">${escapeHtml(opt)}</button>`).join('')}
+      </div>
+    `;
+  }
+
+  function postCardHTML(post, authorProfile, bookmarkedIds) {
     const symbolTag = post.symbol ? `<span class="instrument-badge">${escapeHtml(post.symbol)}</span>` : '';
     const resolvedSymbol = resolvePostSymbol(post.symbol);
     const chartHTML = resolvedSymbol
       ? `<div class="community-post-chart"><div class="tradingview-widget-container" id="postChart-${post.id}"></div></div>`
       : '';
+    const isBookmarked = bookmarkedIds && bookmarkedIds.has(post.id);
     return `
       <article class="community-post-card" data-post-id="${post.id}">
         <div class="community-post-head">
@@ -498,14 +542,29 @@
         <h4>${escapeHtml(post.title)}</h4>
         ${chartHTML}
         <p>${escapeHtml(post.body)}</p>
+        ${pollHTML(post)}
         <div class="community-post-footer">
           <button class="community-vote-btn" data-vote-id="${post.id}">▲ ${post.upvotes} útil</button>
           ${reactionsRowHTML(post.id)}
           <button class="comments-toggle-btn" data-comments-toggle="${post.id}">💬 Comentarios</button>
+          <button class="comments-toggle-btn bookmark-btn" data-bookmark-id="${post.id}">${isBookmarked ? '🔖 Guardado' : '🔖 Guardar'}</button>
+          <button class="comments-toggle-btn share-btn" data-share-id="${post.id}">🔗 Compartir</button>
         </div>
         <div class="comments-section" id="commentsFor-${post.id}" hidden></div>
       </article>
     `;
+  }
+
+  let lastLoadedPosts = [];
+  let showBookmarksOnly = false;
+
+  async function getMyBookmarks() {
+    try {
+      const data = await callFunctionGET('community-bookmark');
+      return new Set(data.postIds || []);
+    } catch (e) {
+      return new Set();
+    }
   }
 
   async function loadFeed() {
@@ -522,6 +581,9 @@
       return;
     }
 
+    lastLoadedPosts = posts;
+    const bookmarkedIds = await getMyBookmarks();
+
     const postIds = posts.map((p) => p.id);
     const { data: reactions } = await sb.from('post_reactions').select('post_id,emoji').in('post_id', postIds);
     (reactions || []).forEach((r) => {
@@ -529,17 +591,102 @@
       reactionCache[r.post_id][r.emoji] = (reactionCache[r.post_id][r.emoji] || 0) + 1;
     });
 
-    const cards = await Promise.all(posts.map(async (p) => {
+    const visiblePosts = showBookmarksOnly ? posts.filter((p) => bookmarkedIds.has(p.id)) : posts;
+
+    if (!visiblePosts.length) {
+      feedEl.innerHTML = '<p class="footer-text">Todavía no guardaste ninguna publicación.</p>';
+      return;
+    }
+
+    const cards = await Promise.all(visiblePosts.map(async (p) => {
       const author = await getProfileById(p.profile_id) || { username: 'Usuario', avatar_color: '#8b93a7', rank: 'basico' };
-      return postCardHTML(p, author);
+      return postCardHTML(p, author, bookmarkedIds);
     }));
     feedEl.innerHTML = cards.join('');
 
-    posts.forEach((p) => {
+    const sharedPostId = new URLSearchParams(window.location.search).get('post');
+    if (sharedPostId && !showBookmarksOnly) {
+      const alreadyVisible = document.querySelector(`.community-post-card[data-post-id="${sharedPostId}"]`);
+      if (alreadyVisible) {
+        alreadyVisible.classList.add('shared-post-highlight');
+        alreadyVisible.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        sb.from('community_posts').select('*').eq('id', sharedPostId).single().then(async ({ data: sharedPost }) => {
+          if (!sharedPost) return;
+          const author = await getProfileById(sharedPost.profile_id) || { username: 'Usuario', avatar_color: '#8b93a7', rank: 'basico' };
+          feedEl.insertAdjacentHTML('afterbegin', postCardHTML(sharedPost, author, bookmarkedIds));
+          const el = feedEl.querySelector(`.community-post-card[data-post-id="${sharedPostId}"]`);
+          if (el) {
+            el.classList.add('shared-post-highlight');
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+      }
+    }
+
+    visiblePosts.forEach((p) => {
       const resolved = resolvePostSymbol(p.symbol);
       if (!resolved) return;
       const chartContainer = document.getElementById('postChart-' + p.id);
       if (chartContainer) mountPostChart(chartContainer, resolved);
+    });
+
+    feedEl.querySelectorAll('.poll-option-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const postId = btn.dataset.pollPost;
+        const optionIndex = btn.dataset.pollOption;
+        const box = btn.closest('.poll-box');
+        box.querySelectorAll('.poll-option-btn').forEach((b) => (b.disabled = true));
+        try {
+          const data = await callFunction('community-poll-vote', { postId, optionIndex });
+          localStorage.setItem('ar4PollVoted_' + postId, String(optionIndex));
+          const post = lastLoadedPosts.find((p) => p.id === postId);
+          if (post) post.poll_votes_count = data.counts;
+          box.outerHTML = pollHTML(post || { poll_options: [], poll_votes_count: [] });
+        } catch (e) {
+          if (String(e.message).includes('Ya votaste')) {
+            localStorage.setItem('ar4PollVoted_' + postId, 'unknown');
+            const post = lastLoadedPosts.find((p) => p.id === postId);
+            box.outerHTML = pollHTML(post || { poll_options: [], poll_votes_count: [] });
+            return;
+          }
+          alert(e.message);
+          box.querySelectorAll('.poll-option-btn').forEach((b) => (b.disabled = false));
+        }
+      });
+    });
+
+    feedEl.querySelectorAll('.bookmark-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const postId = btn.dataset.bookmarkId;
+        btn.disabled = true;
+        try {
+          const data = await callFunction('community-bookmark', { postId });
+          btn.textContent = data.bookmarked ? '🔖 Guardado' : '🔖 Guardar';
+          if (showBookmarksOnly && !data.bookmarked) {
+            btn.closest('.community-post-card').remove();
+          }
+        } catch (e) {
+          alert(e.message);
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    });
+
+    feedEl.querySelectorAll('.share-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const postId = btn.dataset.shareId;
+        const url = window.location.origin + window.location.pathname + '?post=' + postId;
+        try {
+          await navigator.clipboard.writeText(url);
+          const original = btn.textContent;
+          btn.textContent = '✔ Enlace copiado';
+          setTimeout(() => { btn.textContent = original; }, 2000);
+        } catch (e) {
+          prompt('Copia este enlace:', url);
+        }
+      });
     });
 
     feedEl.querySelectorAll('.community-vote-btn').forEach((btn) => {
@@ -751,6 +898,22 @@
   }
 
   function wirePostForm() {
+    const addPollCheckbox = document.getElementById('postAddPoll');
+    const pollFields = document.getElementById('postPollFields');
+    if (addPollCheckbox && pollFields) {
+      addPollCheckbox.addEventListener('change', () => { pollFields.hidden = !addPollCheckbox.checked; });
+    }
+
+    const bookmarksToggleBtn = document.getElementById('bookmarksToggleBtn');
+    if (bookmarksToggleBtn) {
+      bookmarksToggleBtn.addEventListener('click', () => {
+        showBookmarksOnly = !showBookmarksOnly;
+        bookmarksToggleBtn.classList.toggle('active', showBookmarksOnly);
+        bookmarksToggleBtn.textContent = showBookmarksOnly ? '📋 Ver todas' : '🔖 Ver guardados';
+        loadFeed();
+      });
+    }
+
     document.getElementById('postSubmit').addEventListener('click', async () => {
       const btn = document.getElementById('postSubmit');
       const msgEl = document.getElementById('postMsg');
@@ -759,14 +922,31 @@
       const category = document.getElementById('postCategory').value;
       const symbol = document.getElementById('postSymbol').value.trim();
 
+      let pollOptions = null;
+      if (addPollCheckbox && addPollCheckbox.checked) {
+        pollOptions = [0, 1, 2, 3]
+          .map((i) => document.getElementById('postPollOption' + i).value.trim())
+          .filter(Boolean);
+        if (pollOptions.length < 2) {
+          msgEl.textContent = 'La encuesta necesita al menos 2 opciones.';
+          msgEl.className = 'community-form-msg error';
+          return;
+        }
+      }
+
       btn.disabled = true;
       msgEl.textContent = '';
       msgEl.className = 'community-form-msg';
       try {
-        await callFunction('community-post', { title, body, category, symbol });
+        await callFunction('community-post', { title, body, category, symbol, pollOptions });
         document.getElementById('postTitle').value = '';
         document.getElementById('postBody').value = '';
         document.getElementById('postSymbol').value = '';
+        if (addPollCheckbox) {
+          addPollCheckbox.checked = false;
+          pollFields.hidden = true;
+          [0, 1, 2, 3].forEach((i) => { document.getElementById('postPollOption' + i).value = ''; });
+        }
         msgEl.textContent = '¡Publicado! Ganaste 10 puntos.';
         msgEl.className = 'community-form-msg success';
         myProfile.points += 10;
