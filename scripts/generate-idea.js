@@ -3,6 +3,12 @@ const path = require('path');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'ideas.json');
 const CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices'];
+const ALLOWED_SYMBOLS = [
+  'FX:EURUSD', 'FX:GBPUSD', 'FX:USDJPY',
+  'FX_IDC:USDMXN', 'FX_IDC:USDCOP', 'FX_IDC:USDCLP', 'FX_IDC:USDARS', 'FX_IDC:USDBRL', 'FX_IDC:USDPEN',
+  'OANDA:XAUUSD', 'TVC:USOIL', 'TVC:UKOIL',
+  'FOREXCOM:SPXUSD', 'FOREXCOM:NSXUSD', 'BITSTAMP:BTCUSD'
+];
 
 function slugify(title) {
   return title
@@ -31,15 +37,19 @@ Elige una categoría de esta lista: ${CATEGORIES.join(', ')}.
 No repitas ninguno de estos temas ya publicados:
 ${existingTitles}
 
+Elige también el instrumento principal del que trata el análisis, usando EXACTAMENTE uno de estos códigos: ${ALLOWED_SYMBOLS.join(', ')}.
+
 REGLAS ESTRICTAS DE CONTENIDO (muy importantes):
 - Este es un análisis de CONTEXTO, no una señal de trading. NUNCA digas "compra", "vende", "entra en", ni des niveles específicos de entrada/stop loss/take profit como instrucción.
 - Describe qué está moviendo el activo (catalizadores, datos económicos, contexto), qué niveles técnicos son relevantes de VIGILAR (no de operar), y qué podría cambiar el escenario.
+- Escribe en LENGUAJE BÁSICO Y CLARO: evita jerga innecesaria. Si usas un término técnico (soporte, resistencia, catalizador, carry trade, etc.), va bien porque ya hay un glosario en la página, pero explica brevemente el concepto la primera vez que lo uses dentro del texto, en una frase corta entre paréntesis o aposición.
 - Termina siempre con este disclaimer exacto como último párrafo dentro del HTML: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>"
 
 Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), con esta forma exacta:
 {
   "title": "string, máximo 90 caracteres",
   "category": "una de las categorías listadas",
+  "symbol": "uno de los códigos de instrumento listados arriba, EXACTO",
   "excerpt": "string de 1-2 frases, máximo 200 caracteres",
   "body": "string HTML con secciones <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">Contexto</h3>, párrafos <p>, listas <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> para niveles a vigilar, terminando con el disclaimer indicado arriba."
 }`;
@@ -78,6 +88,11 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   } catch (e) {
     console.error('La IA no devolvió un JSON válido:', rawText);
     process.exit(1);
+  }
+
+  if (!ALLOWED_SYMBOLS.includes(nueva.symbol)) {
+    console.warn('Symbol no reconocido, se omite el gráfico:', nueva.symbol);
+    delete nueva.symbol;
   }
 
   nueva.slug = slugify(nueva.title) + '-' + Date.now().toString(36);

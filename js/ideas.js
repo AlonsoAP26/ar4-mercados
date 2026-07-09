@@ -1,3 +1,26 @@
+const SYMBOL_LABELS = {
+  'FX:EURUSD': 'EUR/USD',
+  'FX_IDC:USDMXN': 'USD/MXN',
+  'FX_IDC:USDCOP': 'USD/COP',
+  'FX_IDC:USDCLP': 'USD/CLP',
+  'FX_IDC:USDARS': 'USD/ARS',
+  'FX_IDC:USDBRL': 'USD/BRL',
+  'FX_IDC:USDPEN': 'USD/PEN',
+  'FX:GBPUSD': 'GBP/USD',
+  'FX:USDJPY': 'USD/JPY',
+  'OANDA:XAUUSD': 'ORO (XAU/USD)',
+  'TVC:USOIL': 'PETRÓLEO WTI',
+  'TVC:UKOIL': 'PETRÓLEO BRENT',
+  'FOREXCOM:SPXUSD': 'S&P 500',
+  'FOREXCOM:NSXUSD': 'NASDAQ 100',
+  'BITSTAMP:BTCUSD': 'BTC/USD'
+};
+
+function symbolLabel(symbol) {
+  if (!symbol) return '';
+  return SYMBOL_LABELS[symbol] || symbol.split(':').pop();
+}
+
 async function loadIdeas() {
   const res = await fetch('data/ideas.json');
   if (!res.ok) throw new Error('No se pudieron cargar las ideas');
@@ -10,9 +33,10 @@ function formatFechaIdea(iso) {
 }
 
 function ideaCardHTML(a) {
+  const badge = a.symbol ? `<span class="instrument-badge">${symbolLabel(a.symbol)}</span>` : '';
   return `
     <article class="broker-card">
-      <span class="news-tag">${a.category}</span>
+      <span class="news-tag">${a.category}</span>${badge}
       <h3 style="margin-top:10px;"><a href="idea.html?slug=${encodeURIComponent(a.slug)}" style="color:inherit;">${a.title}</a></h3>
       <p style="color:var(--text-mid); font-size:0.88rem; margin-bottom:14px;">${a.excerpt}</p>
       <span class="news-meta">${a.author} · ${formatFechaIdea(a.date)}</span>
@@ -57,6 +81,60 @@ async function initIdeasListing() {
   });
 }
 
+function renderTVMiniChart(container, symbol) {
+  container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+  script.async = true;
+  script.text = JSON.stringify({
+    symbol: symbol,
+    width: '100%',
+    height: 240,
+    locale: 'es',
+    dateRange: '3M',
+    colorTheme: 'dark',
+    isTransparent: true,
+    autosize: false
+  });
+  container.appendChild(script);
+}
+
+function initIdeaChart(idea) {
+  const wrap = document.getElementById('ideaChart');
+  if (!wrap || !idea.symbol) return;
+
+  let tabsHTML = '';
+  if (idea.symbol2) {
+    tabsHTML = `
+      <div class="idea-chart-tabs">
+        <button class="active" data-symbol="${idea.symbol}">${symbolLabel(idea.symbol)}</button>
+        <button data-symbol="${idea.symbol2}">${symbolLabel(idea.symbol2)}</button>
+      </div>
+    `;
+  }
+
+  wrap.innerHTML = `
+    <div class="idea-chart-wrap">
+      ${tabsHTML}
+      <div class="tradingview-widget-container" id="tvChartContainer"></div>
+    </div>
+  `;
+
+  const chartContainer = document.getElementById('tvChartContainer');
+  renderTVMiniChart(chartContainer, idea.symbol);
+
+  if (idea.symbol2) {
+    wrap.querySelectorAll('.idea-chart-tabs button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        wrap.querySelectorAll('.idea-chart-tabs button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderTVMiniChart(chartContainer, btn.dataset.symbol);
+      });
+    });
+  }
+}
+
 async function initIdeaDetail() {
   const body = document.getElementById('ideaBody');
   if (!body) return;
@@ -86,13 +164,15 @@ async function initIdeaDetail() {
 
   const metaEl = document.getElementById('ideaMeta');
   if (metaEl) {
+    const badge = idea.symbol ? `<span class="instrument-badge">${symbolLabel(idea.symbol)}</span>` : '';
     metaEl.innerHTML = `
-      <span class="badge-impact medium">${idea.category}</span>
+      <span class="badge-impact medium">${idea.category}</span>${badge}
       <h1 style="margin:14px 0 10px;">${idea.title}</h1>
       <span class="news-meta">${idea.author} · ${formatFechaIdea(idea.date)}</span>
     `;
   }
 
+  initIdeaChart(idea);
   body.innerHTML = idea.body;
 
   const relatedGrid = document.getElementById('relatedIdeasGrid');
