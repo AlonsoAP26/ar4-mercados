@@ -1,4 +1,5 @@
 const { supabaseRequest } = require('./_supabase');
+const { incrementMissionCounter } = require('./_gamification');
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };
@@ -44,6 +45,8 @@ exports.handler = async (event, context) => {
       method: 'PATCH',
       body: JSON.stringify({ upvotes: (post.upvotes || 0) + 1 })
     });
+
+    await incrementMissionCounter(profile.id, 'votes_count');
 
     const authorRows = await supabaseRequest('profiles?id=eq.' + post.profile_id + '&select=id,points', { method: 'GET' });
     if (authorRows.length) {

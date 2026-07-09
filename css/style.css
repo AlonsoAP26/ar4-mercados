@@ -770,6 +770,83 @@ a { color: inherit; text-decoration: none; }
 }
 .community-points span { color: var(--text-mid); font-size: 0.76rem; font-weight: 400; display: block; margin-top: 2px; }
 
+.community-donate-form {
+  flex-basis: 100%;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.community-donate-form input {
+  background: var(--bg-0);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  color: var(--text-hi);
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+.community-donate-form input#donateUsername { flex: 1; min-width: 160px; }
+.community-donate-form input#donateAmount { width: 140px; }
+
+.streak-chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.76rem;
+  font-family: var(--mono);
+  color: var(--gold-bright);
+  background: rgba(212,175,55,0.12);
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 20px;
+  padding: 2px 9px;
+  margin-left: 4px;
+}
+
+.community-badges { display: flex; gap: 6px; margin-top: 6px; }
+.badge-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--card-border);
+  font-size: 0.86rem;
+  cursor: default;
+}
+
+.mission-widget { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 20px 22px; margin-bottom: 24px; }
+.mission-row { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-top: 1px dashed rgba(255,255,255,0.08); }
+.mission-row:first-of-type { border-top: none; }
+.mission-icon { font-size: 1.3rem; flex-shrink: 0; }
+.mission-info { flex: 1; min-width: 0; }
+.mission-info strong { display: block; font-size: 0.86rem; margin-bottom: 6px; }
+.mission-progress-bar { background: rgba(255,255,255,0.08); border-radius: 20px; height: 6px; overflow: hidden; }
+.mission-progress-fill { background: linear-gradient(90deg, var(--gold), var(--gold-bright)); height: 100%; transition: width 0.3s; }
+.mission-done { color: var(--green); font-size: 0.82rem; font-weight: 600; flex-shrink: 0; }
+.mission-progress-text { color: var(--text-low); font-size: 0.8rem; font-family: var(--mono); flex-shrink: 0; }
+.mission-claim-btn { padding: 8px 14px; font-size: 0.8rem; flex-shrink: 0; }
+
+.leaderboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.leaderboard-list { display: flex; flex-direction: column; gap: 8px; }
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.leaderboard-row .trader-avatar { width: 32px; height: 32px; font-size: 0.72rem; }
+.leaderboard-rank { font-family: var(--mono); color: var(--text-low); font-size: 0.82rem; width: 26px; flex-shrink: 0; }
+.leaderboard-name { flex: 1; min-width: 0; font-size: 0.86rem; }
+.leaderboard-points { font-family: var(--mono); color: var(--gold-bright); font-size: 0.84rem; flex-shrink: 0; }
+@media (max-width: 700px) {
+  .leaderboard-grid { grid-template-columns: 1fr; }
+}
+
 .community-form { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 22px; margin-bottom: 28px; }
 .community-form label { display: block; font-size: 0.78rem; color: var(--text-mid); margin: 12px 0 6px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.4px; }
 .community-form label:first-child { margin-top: 0; }

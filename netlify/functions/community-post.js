@@ -1,6 +1,7 @@
 const { supabaseRequest } = require('./_supabase');
 const { isFlagged } = require('./_moderation');
 const { effectiveRank } = require('./_rank');
+const { incrementMissionCounter } = require('./_gamification');
 
 const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
 
@@ -57,6 +58,8 @@ exports.handler = async (event, context) => {
       method: 'PATCH',
       body: JSON.stringify({ points: (profile.points || 0) + 10 })
     });
+
+    await incrementMissionCounter(profile.id, 'posted');
 
     return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, post: created[0] }) };
   } catch (e) {

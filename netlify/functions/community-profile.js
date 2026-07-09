@@ -1,5 +1,6 @@
 const { supabaseRequest } = require('./_supabase');
 const { effectiveRank } = require('./_rank');
+const { STREAK_MILESTONES, awardPoints, computeBadges } = require('./_gamification');
 
 const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
 const TRADING_STYLES = ['Day trader', 'Swing trader', 'Scalper', 'Macro / posicional', 'HODLer', 'Recién empezando'];
@@ -8,6 +9,39 @@ function withEffectiveRank(profile, user) {
   if (!profile) return profile;
   const isPremiumPaid = !!(user.app_metadata && user.app_metadata.premium);
   return { ...profile, effectiveRank: effectiveRank(profile.rank, isPremiumPaid) };
+}
+
+async function updateStreakAndBadges(profile) {
+  const today = new Date().toISOString().slice(0, 10);
+  let working = profile;
+
+  if (profile.last_active_date !== today) {
+    const yesterday = new Date(Date.now() - 24 * 3600 * 1000).toISOString().slice(0, 10);
+    const newStreak = profile.last_active_date === yesterday ? (profile.streak_days || 0) + 1 : 1;
+
+    let points = profile.points;
+    if (STREAK_MILESTONES[newStreak]) {
+      points = await awardPoints(profile.id, profile.points, STREAK_MILESTONES[newStreak], 'streak_bonus_' + newStreak);
+    }
+
+    const patched = await supabaseRequest('profiles?id=eq.' + profile.id, {
+      method: 'PATCH',
+      body: JSON.stringify({ streak_days: newStreak, last_active_date: today, points })
+    });
+    working = patched[0];
+  }
+
+  const newBadges = await computeBadges(working);
+  const badgesChanged = newBadges.length !== (working.badges || []).length;
+  if (badgesChanged) {
+    const patched = await supabaseRequest('profiles?id=eq.' + working.id, {
+      method: 'PATCH',
+      body: JSON.stringify({ badges: newBadges })
+    });
+    working = patched[0];
+  }
+
+  return working;
 }
 
 exports.handler = async (event, context) => {
@@ -19,7 +53,11 @@ exports.handler = async (event, context) => {
   try {
     if (event.httpMethod === 'GET') {
       const rows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=*', { method: 'GET' });
-      return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: withEffectiveRank(rows[0], user) || null }) };
+      let profile = rows[0] || null;
+      if (profile) {
+        try { profile = await updateStreakAndBadges(profile); } catch (e) { /* racha/badges son best-effort, no deben romper el login */ }
+      }
+      return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: withEffectiveRank(profile, user) }) };
     }
 
     if (event.httpMethod === 'POST') {

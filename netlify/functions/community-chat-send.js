@@ -2,6 +2,7 @@ const crypto = require('crypto');
 const { supabaseRequest } = require('./_supabase');
 const { isFlagged } = require('./_moderation');
 const { effectiveRank, atLeast } = require('./_rank');
+const { incrementMissionCounter } = require('./_gamification');
 
 const ALLOWED_ROOMS = ['forex', 'commodities', 'acciones', 'cripto', 'elite'];
 const MAX_MESSAGES_PER_MINUTE = 8;
@@ -93,6 +94,8 @@ exports.handler = async (event, context) => {
       method: 'POST',
       body: JSON.stringify({ room_id: roomId, profile_id: profile.id, body: text.slice(0, 500), image_url: imageUrl })
     });
+
+    await incrementMissionCounter(profile.id, 'chat_count');
 
     return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, message: created[0] }) };
   } catch (e) {

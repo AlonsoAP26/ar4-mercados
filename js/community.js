@@ -48,6 +48,20 @@
     'NASDAQ': 'FOREXCOM:NSXUSD', 'NAS100': 'FOREXCOM:NSXUSD', 'US100': 'FOREXCOM:NSXUSD',
     'DXY': 'CAPITALCOM:DXY'
   };
+  const BADGE_META = {
+    first_post: { icon: '📝', name: 'Primera publicación' },
+    century: { icon: '💯', name: '100 puntos' },
+    high_roller: { icon: '💰', name: '1000 puntos' },
+    streak_7: { icon: '🔥', name: '7 días de racha' },
+    streak_30: { icon: '🌟', name: '30 días de racha' },
+    philanthropist: { icon: '🎁', name: 'Donó puntos' },
+    elite_member: { icon: '★', name: 'Rango Élite' }
+  };
+  const MISSION_META = {
+    post: { icon: '📝', label: 'Publica 1 idea en el Foro' },
+    votes: { icon: '👍', label: 'Vota 3 publicaciones' },
+    chat: { icon: '💬', label: 'Manda 5 mensajes en el chat' }
+  };
 
   function resolvePostSymbol(raw) {
     if (!raw) return null;
@@ -335,30 +349,90 @@
     `;
   }
 
+  function rankingPanelHTML() {
+    return `
+      <div class="leaderboard-grid">
+        <div>
+          <div class="section-head"><h2 style="font-size:1.05rem;">🔥 Ranking semanal</h2></div>
+          <div id="leaderboardWeekly"><p class="footer-text">Cargando ranking...</p></div>
+        </div>
+        <div>
+          <div class="section-head"><h2 style="font-size:1.05rem;">🏆 Ranking histórico</h2></div>
+          <div id="leaderboardAllTime"><p class="footer-text">Cargando ranking...</p></div>
+        </div>
+      </div>
+    `;
+  }
+
+  function leaderboardListHTML(rows) {
+    if (!rows || !rows.length) return '<p class="footer-text">Todavía no hay datos suficientes.</p>';
+    return `<div class="leaderboard-list">${rows.map((p, i) => `
+      <div class="leaderboard-row">
+        <span class="leaderboard-rank">#${i + 1}</span>
+        ${avatarHTML(p, 'trader-avatar')}
+        <div class="leaderboard-name"><strong>${escapeHtml(p.username)}</strong>${rankBadgeHTML(p.rank)}</div>
+        <span class="leaderboard-points">${p.points} pts</span>
+      </div>
+    `).join('')}</div>`;
+  }
+
+  async function loadLeaderboard() {
+    const weeklyEl = document.getElementById('leaderboardWeekly');
+    const allTimeEl = document.getElementById('leaderboardAllTime');
+    if (!weeklyEl || !allTimeEl) return;
+    try {
+      const data = await callFunctionGET('community-leaderboard');
+      weeklyEl.innerHTML = leaderboardListHTML(data.weekly.map((p) => ({ ...p, points: p.weeklyPoints })));
+      allTimeEl.innerHTML = leaderboardListHTML(data.allTime);
+    } catch (e) {
+      weeklyEl.innerHTML = `<p class="footer-text">${escapeHtml(e.message)}</p>`;
+      allTimeEl.innerHTML = '';
+    }
+  }
+
+  function badgesRowHTML(badges) {
+    if (!badges || !badges.length) return '';
+    return `<div class="community-badges">${badges.map((b) => {
+      const meta = BADGE_META[b];
+      return meta ? `<span class="badge-chip" title="${escapeHtml(meta.name)}">${meta.icon}</span>` : '';
+    }).join('')}</div>`;
+  }
+
   function dashboardShellHTML() {
     const rank = myEffectiveRank();
     const isAdmin = rank === 'administrador';
     const styleTag = myProfile.trading_style ? `<span class="instrument-badge">${escapeHtml(myProfile.trading_style)}</span>` : '';
+    const streak = myProfile.streak_days || 0;
+    const streakChip = streak > 0 ? `<span class="streak-chip">🔥 ${streak} ${streak === 1 ? 'día' : 'días'}</span>` : '';
     return `
       <div class="community-header-card">
         <div class="community-user-chip">
           ${avatarHTML(myProfile, 'trader-avatar')}
-          <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span></h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span></div>
+          <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span> ${streakChip}</h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span>${badgesRowHTML(myProfile.badges)}</div>
         </div>
         <div class="community-points" id="communityPointsDisplay">${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span></div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
           <button class="btn btn-outline" id="communityAvatarShopBtn">Cambiar avatar</button>
           <button class="btn btn-outline" id="communityEditProfileBtn">Editar perfil</button>
           <button class="btn btn-outline" id="communityRedeemBtn">Canjear puntos</button>
+          <button class="btn btn-outline" id="communityDonateBtn">🎁 Donar puntos</button>
+        </div>
+        <div class="community-donate-form" id="communityDonateForm" hidden>
+          <input type="text" id="donateUsername" placeholder="Usuario destinatario" maxlength="24">
+          <input type="number" id="donateAmount" placeholder="Puntos (5-500)" min="5" max="500">
+          <button class="btn btn-gold" id="donateSubmitBtn">Enviar</button>
         </div>
       </div>
       <div class="community-form-msg" id="redeemMsg" style="margin-bottom:14px;"></div>
 
       ${isAdmin ? adminPanelHTML() : ''}
 
+      <div class="mission-widget" id="missionWidget"><p class="footer-text">Cargando misiones diarias...</p></div>
+
       <div class="community-tabs">
         <button class="community-tab-btn active" data-view="foro">📋 Foro de ideas</button>
         <button class="community-tab-btn" data-view="chat">💬 Chat en vivo</button>
+        <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
       </div>
       <div id="communityMainView">${foroPanelHTML()}</div>
     `;
@@ -615,6 +689,9 @@
       mainView.innerHTML = chatPanelHTML();
       wireChatTabs();
       loadChatRoom(currentRoom);
+    } else if (view === 'ranking') {
+      mainView.innerHTML = rankingPanelHTML();
+      loadLeaderboard();
     } else {
       mainView.innerHTML = foroPanelHTML();
       wirePostForm();
@@ -675,6 +752,89 @@
         msgEl.className = 'community-form-msg error';
       }
     });
+  }
+
+  function wireDonateForm() {
+    const toggleBtn = document.getElementById('communityDonateBtn');
+    const form = document.getElementById('communityDonateForm');
+    const submitBtn = document.getElementById('donateSubmitBtn');
+    toggleBtn.addEventListener('click', () => { form.hidden = !form.hidden; });
+    submitBtn.addEventListener('click', async () => {
+      const msgEl = document.getElementById('redeemMsg');
+      const toUsername = document.getElementById('donateUsername').value.trim();
+      const amount = parseInt(document.getElementById('donateAmount').value, 10);
+      msgEl.textContent = '';
+      msgEl.className = 'community-form-msg';
+      submitBtn.disabled = true;
+      try {
+        const data = await callFunction('community-donate-points', { toUsername, amount });
+        myProfile.points = data.points;
+        document.getElementById('communityPointsDisplay').innerHTML = `${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span>`;
+        msgEl.textContent = `¡Listo! Le donaste ${amount} puntos a ${data.recipientUsername}.`;
+        msgEl.className = 'community-form-msg success';
+        document.getElementById('donateUsername').value = '';
+        document.getElementById('donateAmount').value = '';
+        form.hidden = true;
+      } catch (e) {
+        msgEl.textContent = e.message;
+        msgEl.className = 'community-form-msg error';
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
+  function missionRowHTML(key, mission) {
+    const meta = MISSION_META[key];
+    const pct = Math.min(100, Math.round((mission.progress / mission.target) * 100));
+    const done = mission.progress >= mission.target;
+    let actionHTML;
+    if (mission.claimed) {
+      actionHTML = '<span class="mission-done">✔ Reclamada</span>';
+    } else if (done) {
+      actionHTML = `<button class="btn btn-gold mission-claim-btn" data-mission="${key}">Reclamar +${mission.reward} pts</button>`;
+    } else {
+      actionHTML = `<span class="mission-progress-text">${mission.progress}/${mission.target}</span>`;
+    }
+    return `
+      <div class="mission-row">
+        <span class="mission-icon">${meta.icon}</span>
+        <div class="mission-info">
+          <strong>${meta.label}</strong>
+          <div class="mission-progress-bar"><div class="mission-progress-fill" style="width:${pct}%;"></div></div>
+        </div>
+        ${actionHTML}
+      </div>
+    `;
+  }
+
+  async function loadMissions() {
+    const widget = document.getElementById('missionWidget');
+    if (!widget) return;
+    try {
+      const data = await callFunctionGET('community-missions');
+      widget.innerHTML = `
+        <div class="section-head" style="margin-bottom:10px;"><h2 style="font-size:1rem;">🎯 Misiones de hoy</h2></div>
+        ${Object.keys(data.missions).map((key) => missionRowHTML(key, data.missions[key])).join('')}
+      `;
+      widget.querySelectorAll('.mission-claim-btn').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          btn.disabled = true;
+          try {
+            const res = await callFunction('community-claim-mission', { missionKey: btn.dataset.mission });
+            myProfile.points = res.points;
+            const pointsEl = document.getElementById('communityPointsDisplay');
+            if (pointsEl) pointsEl.innerHTML = `${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span>`;
+            loadMissions();
+          } catch (e) {
+            alert(e.message);
+            btn.disabled = false;
+          }
+        });
+      });
+    } catch (e) {
+      widget.innerHTML = '';
+    }
   }
 
   function wireAdminPanel() {
@@ -856,11 +1016,13 @@
     root.innerHTML = dashboardShellHTML();
     wirePostForm();
     wireRedeemButton();
+    wireDonateForm();
     wireAdminPanel();
     wireDashboardTabs();
     document.getElementById('communityEditProfileBtn').addEventListener('click', () => { editingProfile = true; render(); });
     document.getElementById('communityAvatarShopBtn').addEventListener('click', () => { shoppingAvatars = true; render(); });
     loadFeed();
+    loadMissions();
   }
 
   netlifyIdentity.on('init', render);
