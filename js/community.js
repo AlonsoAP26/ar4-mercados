@@ -520,6 +520,7 @@
       ${isAdmin ? adminPanelHTML() : ''}
 
       <div class="mission-widget" id="missionWidget"><p class="footer-text">Cargando misiones diarias...</p></div>
+      <div class="mission-widget" id="weeklyChallengeWidget"><p class="footer-text">Cargando reto semanal...</p></div>
 
       <div class="community-tabs">
         <button class="community-tab-btn active" data-view="foro">📋 Foro de ideas</button>
@@ -1143,6 +1144,57 @@
     }
   }
 
+  function weeklyChallengeHTML(data) {
+    const pct = Math.min(100, Math.round((data.progress / data.target) * 100));
+    const done = data.progress >= data.target;
+    let actionHTML;
+    if (data.claimed) {
+      actionHTML = '<span class="mission-done">✔ Reclamado</span>';
+    } else if (done) {
+      actionHTML = `<button class="btn btn-gold" id="weeklyClaimBtn">Reclamar +${data.reward} pts</button>`;
+    } else {
+      actionHTML = `<span class="mission-progress-text">${data.progress}/${data.target}</span>`;
+    }
+    return `
+      <div class="section-head" style="margin-bottom:10px;"><h2 style="font-size:1rem;">🏆 Reto semanal</h2></div>
+      <div class="mission-row">
+        <span class="mission-icon">⚡</span>
+        <div class="mission-info">
+          <strong>${data.label}</strong>
+          <div class="mission-progress-bar"><div class="mission-progress-fill" style="width:${pct}%;"></div></div>
+        </div>
+        ${actionHTML}
+      </div>
+    `;
+  }
+
+  async function loadWeeklyChallenge() {
+    const widget = document.getElementById('weeklyChallengeWidget');
+    if (!widget) return;
+    try {
+      const data = await callFunctionGET('community-weekly-challenge');
+      widget.innerHTML = weeklyChallengeHTML(data);
+      const btn = document.getElementById('weeklyClaimBtn');
+      if (btn) {
+        btn.addEventListener('click', async () => {
+          btn.disabled = true;
+          try {
+            const res = await callFunction('community-weekly-challenge', { action: 'claim' });
+            myProfile.points += res.reward;
+            const pointsEl = document.getElementById('communityPointsDisplay');
+            if (pointsEl) pointsEl.innerHTML = `${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span>`;
+            loadWeeklyChallenge();
+          } catch (e) {
+            alert(e.message);
+            btn.disabled = false;
+          }
+        });
+      }
+    } catch (e) {
+      widget.innerHTML = '';
+    }
+  }
+
   function wireAdminPanel() {
     const btn = document.getElementById('adminSetRankBtn');
     if (!btn) return;
@@ -1307,6 +1359,7 @@
     document.getElementById('communityAvatarShopBtn').addEventListener('click', () => { shoppingAvatars = true; render(); });
     loadFeed();
     loadMissions();
+    loadWeeklyChallenge();
   }
 
   netlifyIdentity.on('init', render);

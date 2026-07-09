@@ -82,4 +82,30 @@ async function computeBadges(profile) {
   return merged;
 }
 
-module.exports = { MISSION_DEFS, STREAK_MILESTONES, BADGE_DEFS, awardPoints, getOrCreateTodayMission, incrementMissionCounter, computeBadges };
+const WEEKLY_CHALLENGE_DEFS = [
+  { key: 'posts', label: 'Publica 3 ideas en el Foro esta semana', target: 3, reward: 40 },
+  { key: 'votes', label: 'Vota 15 publicaciones esta semana', target: 15, reward: 40 },
+  { key: 'chat', label: 'Manda 30 mensajes en el chat esta semana', target: 30, reward: 40 },
+  { key: 'journal', label: 'Registra 3 operaciones en tu diario de trading esta semana', target: 3, reward: 40 }
+];
+
+function getWeekStart(date) {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const day = d.getUTCDay();
+  const diff = (day === 0 ? -6 : 1) - day;
+  d.setUTCDate(d.getUTCDate() + diff);
+  return d.toISOString().slice(0, 10);
+}
+
+function getISOWeekNumber(date) {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+}
+
+module.exports = {
+  MISSION_DEFS, STREAK_MILESTONES, BADGE_DEFS, awardPoints, getOrCreateTodayMission, incrementMissionCounter, computeBadges,
+  WEEKLY_CHALLENGE_DEFS, getWeekStart, getISOWeekNumber
+};
