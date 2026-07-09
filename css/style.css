@@ -936,6 +936,17 @@ a { color: inherit; text-decoration: none; }
   cursor: pointer; padding: 0;
 }
 .avatar-swatch.selected { border-color: #fff; box-shadow: 0 0 0 2px var(--gold); }
+
+/* Tienda de avatares */
+.avatar-shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
+.avatar-shop-card {
+  background: var(--bg-0); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 14px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.avatar-shop-card.current { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+.avatar-shop-card img { width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,0.05); }
+.avatar-shop-card strong { font-size: 0.82rem; }
+.avatar-price { font-family: var(--mono); font-size: 0.74rem; color: var(--gold-bright); margin-bottom: 4px; }
 .community-post-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
 .community-reactions { display: flex; gap: 6px; }
 .reaction-btn {

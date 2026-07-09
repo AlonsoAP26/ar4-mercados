@@ -28,6 +28,22 @@
   const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
   const TRADING_STYLES = ['Day trader', 'Swing trader', 'Scalper', 'Macro / posicional', 'HODLer', 'Recién empezando'];
   const REACTION_EMOJI = ['🔥', '🚀', '💡', '🤔'];
+  const FREE_AVATARS = [
+    { id: 'bot-1', name: 'Bot Ámbar', url: 'https://api.dicebear.com/9.x/bottts/svg?seed=Robo1' },
+    { id: 'bot-2', name: 'Bot Cobalto', url: 'https://api.dicebear.com/9.x/bottts/svg?seed=Robo2' },
+    { id: 'bot-3', name: 'Bot Esmeralda', url: 'https://api.dicebear.com/9.x/bottts/svg?seed=Robo3' },
+    { id: 'bot-4', name: 'Bot Coral', url: 'https://api.dicebear.com/9.x/bottts/svg?seed=Robo4' },
+    { id: 'bot-5', name: 'Bot Grafito', url: 'https://api.dicebear.com/9.x/bottts/svg?seed=Robo5' },
+    { id: 'bot-6', name: 'Bot Plata', url: 'https://api.dicebear.com/9.x/bottts/svg?seed=Robo6' }
+  ];
+  const PREMIUM_AVATARS = [
+    { id: 'guerrero-oro', name: 'Guerrero de Oro', url: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Warrior1', priceSoles: 10 },
+    { id: 'ninja-sombra', name: 'Ninja de la Sombra', url: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Ninja1', priceSoles: 10 },
+    { id: 'caballero-plata', name: 'Caballero de Plata', url: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Knight1', priceSoles: 8 },
+    { id: 'mago-arcano', name: 'Mago Arcano', url: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Mage1', priceSoles: 8 },
+    { id: 'cyborg-neon', name: 'Cyborg Neón', url: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Cyborg1', priceSoles: 10 },
+    { id: 'fenix-leyenda', name: 'Fénix Leyenda', url: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Phoenix1', priceSoles: 10 }
+  ];
 
   const profileCache = {};
   const reactionCache = {};
@@ -36,6 +52,7 @@
   let chatChannel = null;
   let elitePollTimer = null;
   let editingProfile = false;
+  let shoppingAvatars = false;
 
   function timeAgo(iso) {
     const diffMs = Date.now() - new Date(iso).getTime();
@@ -58,6 +75,14 @@
 
   function avatarInitials(username) {
     return escapeHtml((username || '?').slice(0, 2).toUpperCase());
+  }
+
+  function avatarHTML(profile, sizeClass) {
+    const color = profile.avatar_color || '#8b93a7';
+    if (profile.avatar_url) {
+      return `<div class="${sizeClass}" style="background:${color};"><img src="${escapeHtml(profile.avatar_url)}" alt="" style="width:100%;height:100%;object-fit:cover;"></div>`;
+    }
+    return `<div class="${sizeClass}" style="background:${color};">${avatarInitials(profile.username)}</div>`;
   }
 
   function rankBadgeHTML(rank) {
@@ -159,6 +184,42 @@
     `;
   }
 
+  function avatarShopHTML(ownedIds) {
+    const rank = myEffectiveRank();
+    const isAdmin = rank === 'administrador';
+
+    function cardHTML(a, isPremium) {
+      const owned = !isPremium || isAdmin || ownedIds.includes(a.id);
+      const isCurrent = myProfile.avatar_url === a.url;
+      const priceLabel = isPremium
+        ? (owned ? (isAdmin ? 'Incluido (admin)' : 'Ya lo tienes') : `S/ ${a.priceSoles.toFixed(2)}`)
+        : 'Gratis';
+      return `
+        <div class="avatar-shop-card${isCurrent ? ' current' : ''}">
+          <img src="${a.url}" alt="${escapeHtml(a.name)}">
+          <strong>${escapeHtml(a.name)}</strong>
+          <span class="avatar-price">${priceLabel}</span>
+          <button class="btn ${owned ? 'btn-outline' : 'btn-gold'} btn-block avatar-action-btn" data-avatar-id="${a.id}" data-owned="${owned}" data-premium="${isPremium}" ${isCurrent ? 'disabled' : ''}>
+            ${isCurrent ? 'Seleccionado' : (owned ? 'Usar' : 'Comprar')}
+          </button>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="community-form">
+        <h3 style="margin-bottom:4px;">Tienda de avatares</h3>
+        <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">Elige un avatar gratuito o desbloquea uno exclusivo. Los pagos se procesan de forma segura vía Culqi.</p>
+        <h4 style="font-size:0.9rem;margin-bottom:10px;">Gratuitos</h4>
+        <div class="avatar-shop-grid">${FREE_AVATARS.map((a) => cardHTML(a, false)).join('')}</div>
+        <h4 style="font-size:0.9rem;margin:24px 0 10px;">Exclusivos${isAdmin ? ' <span style="color:var(--gold-bright);font-size:0.76rem;">(incluidos en tu rango de administrador)</span>' : ''}</h4>
+        <div class="avatar-shop-grid">${PREMIUM_AVATARS.map((a) => cardHTML(a, true)).join('')}</div>
+        <button class="btn btn-outline" id="avatarShopBackBtn" style="margin-top:22px;">← Volver</button>
+        <div class="community-form-msg" id="avatarShopMsg"></div>
+      </div>
+    `;
+  }
+
   function adminPanelHTML() {
     return `
       <div class="community-admin-panel">
@@ -185,11 +246,12 @@
     return `
       <div class="community-header-card">
         <div class="community-user-chip">
-          <div class="trader-avatar" style="background:${myProfile.avatar_color};">${avatarInitials(myProfile.username)}</div>
+          ${avatarHTML(myProfile, 'trader-avatar')}
           <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span></h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span></div>
         </div>
         <div class="community-points" id="communityPointsDisplay">${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span></div>
-        <div style="display:flex;gap:8px;">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="btn btn-outline" id="communityAvatarShopBtn">Cambiar avatar</button>
           <button class="btn btn-outline" id="communityEditProfileBtn">Editar perfil</button>
           <button class="btn btn-outline" id="communityRedeemBtn">Canjear puntos</button>
         </div>
@@ -239,7 +301,7 @@
 
   async function getProfileById(id) {
     if (profileCache[id]) return profileCache[id];
-    const { data } = await sb.from('profiles').select('username,avatar_color,rank').eq('id', id).single();
+    const { data } = await sb.from('profiles').select('username,avatar_color,avatar_url,rank').eq('id', id).single();
     if (data) profileCache[id] = data;
     return data;
   }
@@ -258,7 +320,7 @@
     return `
       <article class="community-post-card" data-post-id="${post.id}">
         <div class="community-post-head">
-          <div class="trader-avatar" style="background:${authorProfile.avatar_color};">${avatarInitials(authorProfile.username)}</div>
+          ${avatarHTML(authorProfile, 'trader-avatar')}
           <div><strong>${escapeHtml(authorProfile.username)}</strong>${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag} · ${timeAgo(post.created_at)}</span></div>
         </div>
         <h4>${escapeHtml(post.title)}</h4>
@@ -334,7 +396,7 @@
     const textHTML = msg.body ? `<p>${escapeHtml(msg.body)}</p>` : '';
     return `
       <div class="discord-msg">
-        <div class="discord-msg-avatar" style="background:${author.avatar_color || '#8b93a7'};">${avatarInitials(author.username)}</div>
+        ${avatarHTML(author, 'discord-msg-avatar')}
         <div class="discord-msg-body">
           <div class="discord-msg-head"><strong>${escapeHtml(author.username)}</strong>${rankBadgeHTML(author.rank)}<span class="discord-msg-time">${timeAgo(msg.created_at)}</span></div>
           ${textHTML}
@@ -541,6 +603,85 @@
     });
   }
 
+  function wireAvatarShop() {
+    document.getElementById('avatarShopBackBtn').addEventListener('click', () => { shoppingAvatars = false; render(); });
+
+    document.querySelectorAll('.avatar-action-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const avatarId = btn.dataset.avatarId;
+        const owned = btn.dataset.owned === 'true';
+        const msgEl = document.getElementById('avatarShopMsg');
+        msgEl.textContent = '';
+        msgEl.className = 'community-form-msg';
+
+        if (owned) {
+          btn.disabled = true;
+          try {
+            const data = await callFunction('community-set-avatar', { avatarId });
+            myProfile = data.profile;
+            shoppingAvatars = false;
+            render();
+          } catch (e) {
+            msgEl.textContent = e.message;
+            msgEl.className = 'community-form-msg error';
+            btn.disabled = false;
+          }
+          return;
+        }
+
+        if (typeof Culqi === 'undefined') {
+          msgEl.textContent = 'El pago no está disponible en este momento.';
+          msgEl.className = 'community-form-msg error';
+          return;
+        }
+
+        let culqiPublicKey = null;
+        try {
+          const r = await fetch('/.netlify/functions/culqi-config');
+          const d = await r.json();
+          culqiPublicKey = d.publicKey || null;
+        } catch (e) { /* culqiPublicKey queda null */ }
+
+        if (!culqiPublicKey) {
+          msgEl.textContent = 'El pago no está disponible en este momento.';
+          msgEl.className = 'community-form-msg error';
+          return;
+        }
+
+        const avatar = PREMIUM_AVATARS.find((a) => a.id === avatarId);
+        if (!avatar) return;
+
+        Culqi.publicKey = culqiPublicKey;
+        Culqi.settings({ title: 'AR4 Mercados — ' + avatar.name, currency: 'PEN', amount: Math.round(avatar.priceSoles * 100) });
+
+        window.culqi = async function () {
+          if (Culqi.token) {
+            const token = Culqi.token.id;
+            btn.disabled = true;
+            btn.textContent = 'Procesando...';
+            try {
+              await callFunction('community-buy-avatar', { avatarId, token });
+              msgEl.textContent = '¡Compra exitosa! Ya puedes usar tu nuevo avatar.';
+              msgEl.className = 'community-form-msg success';
+              shoppingAvatars = false;
+              render();
+            } catch (e) {
+              msgEl.textContent = e.message;
+              msgEl.className = 'community-form-msg error';
+              btn.disabled = false;
+              btn.textContent = 'Comprar';
+            }
+          } else if (Culqi.error) {
+            msgEl.textContent = 'Error de pago: ' + (Culqi.error.user_message || 'no se pudo procesar la tarjeta');
+            msgEl.className = 'community-form-msg error';
+          }
+        };
+
+        Culqi.open();
+      });
+    });
+  }
+
   function wireProfileForm() {
     let selectedAvatarColor = document.querySelector('.avatar-swatch.selected')?.dataset.color || AVATAR_COLORS[0];
     document.querySelectorAll('.avatar-swatch').forEach((sw) => {
@@ -601,6 +742,17 @@
       return;
     }
 
+    if (shoppingAvatars) {
+      let owned = [];
+      try {
+        const data = await callFunctionGET('community-my-avatars');
+        owned = data.owned || [];
+      } catch (e) { /* owned queda vacío si falla */ }
+      root.innerHTML = avatarShopHTML(owned);
+      wireAvatarShop();
+      return;
+    }
+
     currentRoom = 'forex';
     root.innerHTML = dashboardShellHTML();
     wirePostForm();
@@ -608,6 +760,7 @@
     wireAdminPanel();
     wireChatTabs();
     document.getElementById('communityEditProfileBtn').addEventListener('click', () => { editingProfile = true; render(); });
+    document.getElementById('communityAvatarShopBtn').addEventListener('click', () => { shoppingAvatars = true; render(); });
     loadFeed();
     loadChatRoom(currentRoom);
   }
