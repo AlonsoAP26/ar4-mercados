@@ -164,12 +164,17 @@ async function initNoticiaDetail() {
       `;
       const chartContainer = document.getElementById('noticiaTvChart');
       renderNewsChart(chartContainer, n.symbol);
+
+      const techContainer = document.getElementById('noticiaTechnical');
+      if (techContainer) renderTechnicalAnalysis(techContainer, n.symbol);
+
       if (n.symbol2) {
         chartWrap.querySelectorAll('.idea-chart-tabs button').forEach(btn => {
           btn.addEventListener('click', () => {
             chartWrap.querySelectorAll('.idea-chart-tabs button').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             renderNewsChart(chartContainer, btn.dataset.symbol);
+            if (techContainer) renderTechnicalAnalysis(techContainer, btn.dataset.symbol);
           });
         });
       }

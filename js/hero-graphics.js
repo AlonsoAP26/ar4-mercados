@@ -1,3 +1,22 @@
+function renderTechnicalAnalysis(container, symbol, interval) {
+  container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js';
+  script.async = true;
+  script.text = JSON.stringify({
+    interval: interval || '1h',
+    width: '100%',
+    isTransparent: true,
+    height: 425,
+    symbol: symbol,
+    showIntervalTabs: true,
+    locale: 'es',
+    colorTheme: 'dark'
+  });
+  container.appendChild(script);
+}
+
 const FIN_PHOTOS = {
   gold: 'https://images.unsplash.com/photo-1762463176319-8416bf1e6a8e?fm=jpg&q=75&w=900&auto=format&fit=crop',
   oil: 'https://images.unsplash.com/photo-1648555394313-494797ad48fc?fm=jpg&q=75&w=900&auto=format&fit=crop',

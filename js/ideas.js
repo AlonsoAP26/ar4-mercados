@@ -152,12 +152,16 @@ function initIdeaChart(idea) {
   const chartContainer = document.getElementById('tvChartContainer');
   renderTVMiniChart(chartContainer, idea.symbol);
 
+  const techContainer = document.getElementById('ideaTechnical');
+  if (techContainer) renderTechnicalAnalysis(techContainer, idea.symbol);
+
   if (idea.symbol2) {
     wrap.querySelectorAll('.idea-chart-tabs button').forEach(btn => {
       btn.addEventListener('click', () => {
         wrap.querySelectorAll('.idea-chart-tabs button').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         renderTVMiniChart(chartContainer, btn.dataset.symbol);
+        if (techContainer) renderTechnicalAnalysis(techContainer, btn.dataset.symbol);
       });
     });
   }

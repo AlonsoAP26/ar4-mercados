@@ -5,6 +5,9 @@ async function loadBrokers() {
 }
 
 function brokerLogoHTML(b, size) {
+  if (b.logoUrl) {
+    return `<div class="broker-logo-img-wrap size-${size}"><img class="broker-logo-img" src="${b.logoUrl}" alt="${b.name} logo" loading="eager"></div>`;
+  }
   const fontSize = size === 'lg' ? '2.1rem' : '1.15rem';
   return `<div class="broker-logo" style="color:${b.brandColor};font-size:${fontSize};">${b.name}</div>`;
 }

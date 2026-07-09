@@ -27,7 +27,8 @@
       "La cuenta Standard tiene spreads más altos que la Razor"
     ],
     "officialUrl": "https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935",
-    "affiliateUrl": "https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935"
+    "affiliateUrl": "https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/Pepperstone.png"
   },
   {
     "slug": "ic-markets",
@@ -54,7 +55,8 @@
       "La cuenta Raw cobra comisión por operación además del spread",
       "Regulación offshore (FSA Seychelles) para clientes fuera de Australia/Europa"
     ],
-    "officialUrl": "https://www.icmarkets.com"
+    "officialUrl": "https://www.icmarkets.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Icmarkets.png"
   },
   {
     "slug": "avatrade",
@@ -81,7 +83,8 @@
       "Spreads desde 0.9 pips, no son los más ajustados de la lista",
       "Menos opciones de plataformas de terceros que IC Markets o Pepperstone"
     ],
-    "officialUrl": "https://www.avatrade.com"
+    "officialUrl": "https://www.avatrade.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/AvaTrade-Logo.png"
   },
   {
     "slug": "exness",
@@ -267,6 +270,7 @@
       "Quejas frecuentes sobre soporte y velocidad de retiros",
       "Condiciones (depósito mínimo, spreads) varían bastante según el tipo de cuenta"
     ],
-    "officialUrl": "https://www.forextime.com"
+    "officialUrl": "https://www.forextime.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/FXTM_logo.svg"
   }
 ]
