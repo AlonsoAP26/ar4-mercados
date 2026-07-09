@@ -31,7 +31,7 @@ Elige una categoría de esta lista: ${CATEGORIES.join(', ')}.
 No repitas ninguno de estos temas ya publicados:
 ${existingTitles}
 
-TONO: escribe como un analista/coach de trading experimentado hablándole directo a otro trader, no como una plantilla corporativa. Varía el largo de las frases y evita fórmulas repetidas ("es importante destacar que", "cabe mencionar que"). Si usas subtítulos, que sean específicos al tema del artículo, no genéricos.
+TONO: registro serio y profesional, propio de un coach de trading con experiencia real, no una plantilla corporativa ni una charla casual entre amigos. Frases claras y directas, sin ganchos retóricos ("ojo con", "aquí viene lo interesante") ni muletillas de relleno ("es importante destacar que", "cabe mencionar que"). Varía la estructura de un artículo a otro: no repitas siempre el mismo orden de secciones. Si usas subtítulos, que sean específicos al tema del artículo, no genéricos.
 
 Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), con esta forma exacta:
 {
