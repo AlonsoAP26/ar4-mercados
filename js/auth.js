@@ -27,7 +27,7 @@
     const user = currentUser();
 
     if (authBtn) {
-      authBtn.textContent = user ? 'Mi cuenta (' + (user.email || '').split('@')[0] + ')' : 'Iniciar sesión';
+      authBtn.textContent = user ? '👤 ' + (user.email || '').split('@')[0] : 'Iniciar sesión';
     }
 
     if (statusEl) {
