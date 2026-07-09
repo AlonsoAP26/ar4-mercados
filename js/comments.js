@@ -1,9 +1,6 @@
 (function () {
-  const SUPABASE_URL = 'https://gxiybgirkjsqnagcabnz.supabase.co';
-  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_uqWQ2hoarxuLrKi816sfzw_ngOFppYx';
-
-  if (typeof supabase === 'undefined') return;
-  const sb = supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  if (typeof supabase === 'undefined' || !window.AR4_supabase) return;
+  const sb = window.AR4_supabase;
 
   const RANK_LABELS = { basico: 'Básico', vip: 'VIP', premium: 'Premium', elite: 'Élite', administrador: 'Administrador' };
 

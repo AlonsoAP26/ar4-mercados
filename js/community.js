@@ -1,9 +1,6 @@
 (function () {
-  const SUPABASE_URL = 'https://gxiybgirkjsqnagcabnz.supabase.co';
-  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_uqWQ2hoarxuLrKi816sfzw_ngOFppYx';
-
-  if (typeof supabase === 'undefined' || typeof netlifyIdentity === 'undefined') return;
-  const sb = supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  if (typeof supabase === 'undefined' || typeof netlifyIdentity === 'undefined' || !window.AR4_supabase) return;
+  const sb = window.AR4_supabase;
 
   const root = document.getElementById('communityRoot');
   if (!root) return;

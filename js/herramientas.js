@@ -239,9 +239,6 @@
     loadEntries();
   }
 
-  const SUPABASE_URL = 'https://gxiybgirkjsqnagcabnz.supabase.co';
-  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_uqWQ2hoarxuLrKi816sfzw_ngOFppYx';
-
   const WATCHLIST_SYMBOL_MAP = {
     'EURUSD': 'FX:EURUSD', 'EUR/USD': 'FX:EURUSD',
     'GBPUSD': 'FX:GBPUSD', 'GBP/USD': 'FX:GBPUSD',
@@ -309,11 +306,11 @@
 
     if (sharedProfileId) {
       if (shareBtn) shareBtn.hidden = true;
-      if (typeof supabase === 'undefined') {
+      if (typeof supabase === 'undefined' || !window.AR4_supabase) {
         section.innerHTML = '<p class="footer-text">No se pudo cargar la watchlist compartida.</p>';
         return;
       }
-      const sb = supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+      const sb = window.AR4_supabase;
       const [itemsRes, profileRes] = await Promise.all([
         sb.from('watchlists').select('*').eq('profile_id', sharedProfileId).order('created_at', { ascending: true }),
         sb.from('profiles').select('username').eq('id', sharedProfileId)
