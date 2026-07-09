@@ -867,6 +867,31 @@ a { color: inherit; text-decoration: none; }
 .glossary-grid dt { color: var(--gold-bright); font-family: var(--mono); font-size: 0.82rem; font-weight: 700; margin-bottom: 2px; }
 .glossary-grid dd { color: var(--text-mid); font-size: 0.82rem; margin: 0 0 10px; }
 
+/* FAQ acordeon (paginas de broker) */
+.faq-item {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 4px 20px;
+  margin-bottom: 10px;
+}
+.faq-item summary {
+  cursor: pointer;
+  padding: 14px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-hi);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; font-family: var(--mono); color: var(--gold); font-size: 1.1rem; flex-shrink: 0; }
+.faq-item[open] summary::after { content: "−"; }
+.faq-item p { color: var(--text-mid); font-size: 0.85rem; line-height: 1.55; padding-bottom: 16px; margin: 0; }
+
 /* Instrument badge (tarjetas de ideas) */
 .instrument-badge {
   display: inline-block;

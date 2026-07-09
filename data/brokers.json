@@ -28,7 +28,24 @@
     ],
     "officialUrl": "https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935",
     "affiliateUrl": "https://trk.pepperstonepartners.com/aff_c?offer_id=367&aff_id=46935",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/Pepperstone.png"
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/Pepperstone.png",
+    "founded": "2010",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "ECN / STP (Market Execution)",
+    "leverage": "Hasta 1:400 (según jurisdicción del cliente)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, PayPal, Skrill, Neteller",
+    "depositTime": "Instantáneo con tarjeta o e-wallet · 1-2 días hábiles por transferencia",
+    "withdrawalTime": "Menos de 24 horas según la mayoría de reseñas de usuarios",
+    "inactivityFee": "No cobra comisión por inactividad",
+    "ratingBreakdown": { "instrumentos": 4.5, "comisiones": 4.7, "plataformas": 4.8, "investigacion": 4.2, "movil": 4.4, "educacion": 4.0 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en Pepperstone?", "a": "Pepperstone no exige un depósito mínimo obligatorio, aunque en la práctica se recomienda empezar con al menos $200 USD para operar con un margen de maniobra razonable en la cuenta Razor." },
+      { "q": "¿Cuánto tarda un retiro en Pepperstone?", "a": "Según la mayoría de reseñas de usuarios, los retiros se procesan en menos de 24 horas hábiles, aunque el tiempo final también depende del método de pago (las e-wallets suelen ser más rápidas que las transferencias bancarias)." },
+      { "q": "¿Pepperstone es un broker ECN real?", "a": "Sí, en su cuenta Razor opera bajo un modelo de ejecución de mercado (Market Execution) con acceso a liquidez de múltiples proveedores, característico de un broker ECN/STP, sin mesa de dealing propia." },
+      { "q": "¿Puedo usar copytrading con Pepperstone?", "a": "Sí, es compatible con plataformas de copytrading de terceros como Myfxbook AutoTrade y DupliTrade, además de la funcionalidad de señales integrada en MetaTrader." }
+    ]
   },
   {
     "slug": "ic-markets",
@@ -56,7 +73,24 @@
       "Regulación offshore (FSA Seychelles) para clientes fuera de Australia/Europa"
     ],
     "officialUrl": "https://www.icmarkets.com",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Icmarkets.png"
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Icmarkets.png",
+    "founded": "2007",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "ECN (True ECN)",
+    "leverage": "Hasta 1:500 (según jurisdicción del cliente)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, PayPal, Skrill, Neteller, criptomonedas",
+    "depositTime": "Instantáneo con tarjeta, e-wallet o cripto · 1-3 días hábiles por transferencia",
+    "withdrawalTime": "Procesado el mismo día hábil en la mayoría de los casos",
+    "inactivityFee": "No cobra comisión por inactividad",
+    "ratingBreakdown": { "instrumentos": 4.6, "comisiones": 4.5, "plataformas": 4.9, "investigacion": 4.3, "movil": 4.5, "educacion": 4.1 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en IC Markets?", "a": "El depósito mínimo recomendado es de $200 USD, sensiblemente más alto que brokers como FBS o XM, en línea con su posicionamiento hacia traders más activos." },
+      { "q": "¿IC Markets cobra comisión?", "a": "Sí, la cuenta Raw cobra una comisión fija por lote operado además del spread, que en esta cuenta puede llegar a 0.0 pips. Es un modelo típico de bróker ECN, donde el costo se separa entre spread y comisión." },
+      { "q": "¿Qué tan rápido son los retiros en IC Markets?", "a": "La mayoría de los usuarios reporta que los retiros se procesan el mismo día hábil, uno de los tiempos más rápidos entre los brokers de esta comparativa." },
+      { "q": "¿Sirve IC Markets para trading algorítmico?", "a": "Sí, es una de las opciones preferidas para estrategias automatizadas y de alta frecuencia gracias a su ejecución de baja latencia y servidores ubicados en centros de datos NY4 de Equinix." }
+    ]
   },
   {
     "slug": "avatrade",
@@ -84,7 +118,24 @@
       "Menos opciones de plataformas de terceros que IC Markets o Pepperstone"
     ],
     "officialUrl": "https://www.avatrade.com",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/AvaTrade-Logo.png"
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/AvaTrade-Logo.png",
+    "founded": "2006",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "Market Maker (Dealing Desk)",
+    "leverage": "Hasta 1:400 (según jurisdicción del cliente)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, Skrill, Neteller, WebMoney",
+    "depositTime": "Instantáneo con tarjeta o e-wallet · 2-5 días hábiles por transferencia",
+    "withdrawalTime": "2-5 días hábiles en promedio",
+    "inactivityFee": "Sí, tras 3 meses sin actividad en la cuenta",
+    "ratingBreakdown": { "instrumentos": 4.4, "comisiones": 4.0, "plataformas": 4.3, "investigacion": 4.5, "movil": 4.6, "educacion": 4.7 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en AvaTrade?", "a": "El depósito mínimo es de $100 USD, más alto que brokers de entrada como FBS o HFM pero acorde a su perfil de broker más regulado y orientado a traders que valoran la solidez institucional." },
+      { "q": "¿AvaTrade cobra comisión por inactividad?", "a": "Sí, aplica un cargo por inactividad después de 3 meses sin operaciones en la cuenta. Es importante revisar los términos actualizados antes de abrir una cuenta si no se planea operar con frecuencia." },
+      { "q": "¿AvaTrade es un broker Market Maker?", "a": "Sí, AvaTrade opera bajo un modelo de creador de mercado (dealing desk), donde el bróker es la contraparte de las operaciones del cliente. Esto no implica necesariamente peor ejecución, pero es distinto al modelo ECN de otros brokers de esta lista." },
+      { "q": "¿AvaTrade tiene app móvil propia?", "a": "Sí, AvaTradeGO es su aplicación propia, calificada de forma consistente por encima de la plataforma móvil estándar de MetaTrader en cuanto a experiencia de usuario." }
+    ]
   },
   {
     "slug": "exness",
@@ -111,7 +162,24 @@
       "Quejas puntuales sobre verificación de cuenta y retiros rechazados",
       "Spreads Standard (1.0 pips) no son los más competitivos"
     ],
-    "officialUrl": "https://www.exness.com"
+    "officialUrl": "https://www.exness.com",
+    "founded": "2008",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "ECN (cuenta Raw Spread) / Market Maker (cuenta Standard)",
+    "leverage": "Hasta 1:2000 (según jurisdicción y tipo de cuenta)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, criptomonedas, billeteras electrónicas locales",
+    "depositTime": "Instantáneo en la mayoría de métodos",
+    "withdrawalTime": "Instantáneo según la mayoría de reseñas de usuarios",
+    "inactivityFee": "No cobra comisión por inactividad",
+    "ratingBreakdown": { "instrumentos": 4.3, "comisiones": 4.4, "plataformas": 4.2, "investigacion": 3.8, "movil": 4.3, "educacion": 3.9 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en Exness?", "a": "Exness permite abrir una cuenta desde $10 USD, uno de los depósitos mínimos más bajos de esta comparativa, lo que lo hace accesible para quienes están empezando con poco capital." },
+      { "q": "¿Bajo qué entidad opera Exness para clientes de Latinoamérica?", "a": "La mayoría de los clientes retail de la región quedan registrados bajo la entidad de Exness en Seychelles o Sudáfrica, y no bajo las licencias CySEC o FCA del grupo, que aplican principalmente a clientes europeos." },
+      { "q": "¿Qué tan rápidos son los retiros en Exness?", "a": "Según la mayoría de las reseñas de usuarios, los retiros en Exness se procesan de forma prácticamente instantánea, siendo uno de los puntos más valorados del bróker." },
+      { "q": "¿Exness cobra comisión en la cuenta Standard?", "a": "No, la cuenta Standard no cobra comisión explícita; el costo va incluido en el spread, que parte desde 1.0 pips. La cuenta Raw Spread sí cobra comisión pero ofrece spreads más ajustados." }
+    ]
   },
   {
     "slug": "hfm",
@@ -138,7 +206,24 @@
       "La cuenta con spreads más bajos (Zero) requiere comisión aparte",
       "Menos plataformas de terceros que Pepperstone o IC Markets"
     ],
-    "officialUrl": "https://www.hfm.com"
+    "officialUrl": "https://www.hfm.com",
+    "founded": "2010",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "ECN (cuenta Zero) / STP (cuentas Premium y Pro)",
+    "leverage": "Hasta 1:1000 (según jurisdicción y tipo de cuenta)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, Skrill, Neteller, criptomonedas",
+    "depositTime": "Instantáneo con tarjeta o e-wallet · 1-3 días hábiles por transferencia",
+    "withdrawalTime": "Menos de 24 horas según la mayoría de reseñas",
+    "inactivityFee": "Sí, tras 6 meses sin actividad en la cuenta",
+    "ratingBreakdown": { "instrumentos": 4.4, "comisiones": 4.5, "plataformas": 4.2, "investigacion": 4.0, "movil": 4.1, "educacion": 4.3 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en HFM?", "a": "Depende del tipo de cuenta: la cuenta Cent permite empezar desde $5 USD, mientras que las cuentas Premium y Zero requieren montos algo mayores según las condiciones vigentes en el sitio oficial." },
+      { "q": "¿HFM tiene regulación de primer nivel?", "a": "Sí, cuenta con licencias FCA (Reino Unido) y CySEC (Chipre), ambas consideradas tier-1, combinadas con licencias adicionales en Sudáfrica, Kenia, Dubái y Seychelles según la entidad bajo la que se registre el cliente." },
+      { "q": "¿Qué diferencia hay entre las cuentas Zero, Premium y Pro de HFM?", "a": "La cuenta Zero ofrece spreads desde 0.0 pips con una comisión fija por lote (modelo ECN), mientras que Premium y Pro no cobran comisión explícita y el costo va incluido en un spread algo más amplio (modelo STP)." },
+      { "q": "¿HFM cobra comisión por inactividad?", "a": "Sí, aplica un cargo tras 6 meses sin actividad en la cuenta. Conviene revisar los términos actualizados si se planea dejar la cuenta inactiva por un periodo prolongado." }
+    ]
   },
   {
     "slug": "octafx",
@@ -165,7 +250,24 @@
       "Reportes recientes de demoras en verificación de cuenta",
       "Depósito mínimo ($25) más alto que FBS o HFM"
     ],
-    "officialUrl": "https://www.octafx.com"
+    "officialUrl": "https://www.octafx.com",
+    "founded": "2011",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "STP (Straight Through Processing)",
+    "leverage": "Hasta 1:500",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, criptomonedas, billeteras electrónicas",
+    "depositTime": "Instantáneo en la mayoría de métodos",
+    "withdrawalTime": "Menos de 24 horas según la mayoría de reseñas",
+    "inactivityFee": "No cobra comisión por inactividad",
+    "ratingBreakdown": { "instrumentos": 4.0, "comisiones": 4.6, "plataformas": 4.3, "investigacion": 3.9, "movil": 4.2, "educacion": 4.0 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en Octa?", "a": "El depósito mínimo es de $25 USD, un poco más alto que brokers como FBS o HFM pero aún accesible para traders que están empezando." },
+      { "q": "¿Octa cobra swap (interés por mantener posiciones abiertas)?", "a": "No, Octa opera con un modelo libre de swap en sus tres tipos de cuenta, lo que resulta atractivo para estrategias que mantienen posiciones abiertas por varios días." },
+      { "q": "¿Octa tiene regulación tier-1?", "a": "No. Su regulación principal es offshore, a través de la FSC de San Vicente y las Granadinas y otras licencias regionales, sin contar con una licencia de primer nivel como FCA o ASIC." },
+      { "q": "¿Qué es Octa Trader?", "a": "Es la plataforma propia del bróker, una alternativa a MT4/MT5 pensada para simplificar la experiencia de trading desde el navegador o el celular, sin necesidad de instalar software adicional." }
+    ]
   },
   {
     "slug": "fbs",
@@ -192,7 +294,24 @@
       "Regulación principal offshore (IFSC Belize) para la mayoría de clientes LatAm",
       "Apalancamiento alto puede ser un riesgo para principiantes sin experiencia"
     ],
-    "officialUrl": "https://fbs.com"
+    "officialUrl": "https://fbs.com",
+    "founded": "2009",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "Market Maker (Dealing Desk)",
+    "leverage": "Hasta 1:3000 (según jurisdicción del cliente)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, criptomonedas, billeteras electrónicas locales",
+    "depositTime": "Instantáneo en la mayoría de métodos",
+    "withdrawalTime": "Menos de 24 horas según la mayoría de reseñas",
+    "inactivityFee": "No cobra comisión por inactividad",
+    "ratingBreakdown": { "instrumentos": 3.9, "comisiones": 4.4, "plataformas": 4.0, "investigacion": 3.6, "movil": 4.1, "educacion": 4.2 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en FBS?", "a": "El depósito mínimo es de solo $5 USD, uno de los más bajos de esta comparativa, pensado para traders que quieren empezar a operar con muy poco capital." },
+      { "q": "¿Por qué el apalancamiento de FBS es tan alto?", "a": "FBS ofrece apalancamiento de hasta 1:3000 en algunas cuentas, disponible principalmente bajo su entidad offshore. Un apalancamiento tan alto amplifica tanto las ganancias como las pérdidas potenciales, por lo que requiere gestión de riesgo cuidadosa." },
+      { "q": "¿FBS cobra comisión por sus operaciones?", "a": "No, la cuenta estándar de FBS no cobra comisión explícita; el costo está incluido en el spread, que parte desde 0.7 pips." },
+      { "q": "¿Qué regulación tiene FBS para clientes de Latinoamérica?", "a": "La mayoría de los clientes retail de la región operan bajo la entidad regulada por la IFSC de Belice, una licencia offshore con menor nivel de supervisión que ASIC o CySEC." }
+    ]
   },
   {
     "slug": "xm",
@@ -218,7 +337,24 @@
       "Quejas recurrentes por demoras en retiros y disputas de bonos",
       "Reportes de cierre de cuentas sin previo aviso en algunos casos"
     ],
-    "officialUrl": "https://www.xm.com"
+    "officialUrl": "https://www.xm.com",
+    "founded": "2009",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "Market Maker / STP híbrido",
+    "leverage": "Hasta 1:1000 (según jurisdicción del cliente)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, Skrill, Neteller",
+    "depositTime": "Instantáneo con tarjeta o e-wallet · 1-3 días hábiles por transferencia",
+    "withdrawalTime": "1-3 días hábiles según el método, con demoras reportadas en periodos de alta demanda",
+    "inactivityFee": "Sí, tras 90 días sin actividad en la cuenta",
+    "ratingBreakdown": { "instrumentos": 4.0, "comisiones": 4.1, "plataformas": 3.9, "investigacion": 4.3, "movil": 3.8, "educacion": 4.6 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en XM?", "a": "El depósito mínimo es de $5 USD, similar a FBS, pensado para que cualquier trader pueda abrir una cuenta con muy poco capital inicial." },
+      { "q": "¿Por qué XM tiene reseñas tan polarizadas?", "a": "El 46% de sus reseñas en Trustpilot son de 5 estrellas, principalmente por su ejecución y programa educativo, pero un 31% son de 1 estrella, sobre todo por demoras en retiros y disputas relacionadas con bonos promocionales. Conviene leer ambos extremos antes de depositar montos grandes." },
+      { "q": "¿XM cobra comisión por inactividad?", "a": "Sí, aplica un cargo después de 90 días sin actividad en la cuenta, uno de los periodos más cortos de esta comparativa." },
+      { "q": "¿XM ofrece educación para principiantes?", "a": "Sí, es uno de sus puntos más fuertes: cuenta con webinars regulares, cursos estructurados y eventos presenciales en varios países de Latinoamérica, algo que no todos los brokers de esta lista ofrecen." }
+    ]
   },
   {
     "slug": "roboforex",
@@ -244,7 +380,24 @@
       "Regulación offshore (FSC Belice), sin licencia tier-1",
       "Quejas recurrentes sobre estabilidad de plataforma y retiros"
     ],
-    "officialUrl": "https://roboforex.com"
+    "officialUrl": "https://roboforex.com",
+    "founded": "2009",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "ECN (cuentas Prime/ECN) / Market Maker (cuenta Pro)",
+    "leverage": "Hasta 1:2000",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, criptomonedas, billeteras electrónicas",
+    "depositTime": "Instantáneo en la mayoría de métodos",
+    "withdrawalTime": "1-3 días hábiles, con quejas puntuales de demoras mayores",
+    "inactivityFee": "Sí, tras 180 días sin actividad en la cuenta",
+    "ratingBreakdown": { "instrumentos": 3.7, "comisiones": 4.2, "plataformas": 3.3, "investigacion": 3.0, "movil": 3.4, "educacion": 3.2 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en RoboForex?", "a": "El depósito mínimo es de $10 USD, accesible, aunque conviene revisar con cuidado las reseñas de usuarios antes de depositar montos considerables dado el rating más bajo de esta comparativa." },
+      { "q": "¿Por qué el rating de RoboForex en Trustpilot es tan bajo?", "a": "Con 2.6/5, es el más bajo de esta lista. Las quejas más recurrentes mencionan estabilidad de la plataforma en momentos de alta volatilidad, demoras en retiros y diferencias entre el spread anunciado y el ejecutado." },
+      { "q": "¿RoboForex tiene regulación tier-1?", "a": "No. Su regulación principal proviene de la FSC de Belice, considerada una licencia offshore de menor nivel de supervisión frente a reguladores como la FCA, ASIC o CySEC." },
+      { "q": "¿Qué diferencia hay entre las cuentas Prime, ECN y Pro?", "a": "Prime y ECN ofrecen spreads desde 0.0 pips bajo un modelo de ejecución de mercado con comisión aparte, mientras que la cuenta Pro opera sin comisión explícita pero con spreads más amplios, desde 1.3 pips." }
+    ]
   },
   {
     "slug": "fxtm",
@@ -271,6 +424,23 @@
       "Condiciones (depósito mínimo, spreads) varían bastante según el tipo de cuenta"
     ],
     "officialUrl": "https://www.forextime.com",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/FXTM_logo.svg"
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/FXTM_logo.svg",
+    "founded": "2011",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "ECN (cuenta Pro) / STP (cuenta Standard)",
+    "leverage": "Hasta 1:1000 (según jurisdicción del cliente)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta de crédito/débito, transferencia bancaria, Skrill, Neteller",
+    "depositTime": "Instantáneo con tarjeta o e-wallet · 1-3 días hábiles por transferencia",
+    "withdrawalTime": "1-3 días hábiles, con quejas puntuales de demoras mayores",
+    "inactivityFee": "Sí, tras 6 meses sin actividad en la cuenta",
+    "ratingBreakdown": { "instrumentos": 3.8, "comisiones": 4.0, "plataformas": 3.5, "investigacion": 3.4, "movil": 3.6, "educacion": 3.9 },
+    "faq": [
+      { "q": "¿Cuál es el depósito mínimo en FXTM?", "a": "Varía según el tipo de cuenta, con opciones desde $10 USD, aunque las condiciones exactas (spread, comisión) cambian de forma notable entre cuentas Standard, Pro y Cent." },
+      { "q": "¿Por qué el rating de FXTM en Trustpilot es tan bajo pese a tener licencia FCA?", "a": "Contar con una licencia tier-1 no garantiza automáticamente una buena experiencia de usuario. Las quejas más frecuentes en FXTM se refieren a tiempos de respuesta del soporte y demoras en el procesamiento de retiros, no a la validez de su regulación." },
+      { "q": "¿FXTM es un broker ECN?", "a": "Su cuenta Pro opera bajo un modelo de ejecución de mercado tipo ECN con comisión aparte, mientras que la cuenta Standard funciona bajo un modelo STP con el costo incluido en el spread." },
+      { "q": "¿Cuántos clientes tiene FXTM a nivel global?", "a": "FXTM reporta más de un millón de clientes registrados en más de 150 países, lo que refleja una trayectoria y escala considerables dentro de la industria." }
+    ]
   }
 ]
