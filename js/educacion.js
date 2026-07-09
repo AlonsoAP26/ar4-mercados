@@ -82,6 +82,44 @@ function wireQuiz(modules) {
   });
 }
 
+const ACADEMY_STAGES = [
+  { level: 'basico', icon: '🌱', title: 'Primeros pasos' },
+  { level: 'intermedio', icon: '📈', title: 'Bases del trading' },
+  { level: 'avanzado', icon: '🧠', title: 'Análisis y gestión avanzada' }
+];
+
+function renderAcademyPath(modules, completedSet) {
+  const wrap = document.getElementById('academyPath');
+  if (!wrap) return;
+
+  wrap.innerHTML = ACADEMY_STAGES.map((stage, i) => {
+    const stageModules = modules.filter((m) => m.level === stage.level);
+    const doneCount = stageModules.filter((m) => completedSet.has(m.slug)).length;
+    const pct = stageModules.length ? Math.round((doneCount / stageModules.length) * 100) : 0;
+    const isComplete = stageModules.length > 0 && doneCount === stageModules.length;
+    return `
+      <div class="academy-stage${isComplete ? ' complete' : ''}" data-filter="${stage.level}">
+        <div class="academy-stage-icon">${isComplete ? '✅' : stage.icon}</div>
+        <div class="academy-stage-info">
+          <strong>${stage.title}</strong>
+          <span>${doneCount}/${stageModules.length} módulos completados</span>
+          <div class="mission-progress-bar"><div class="mission-progress-fill" style="width:${pct}%;"></div></div>
+        </div>
+      </div>
+      ${i < ACADEMY_STAGES.length - 1 ? '<div class="academy-path-line"></div>' : ''}
+    `;
+  }).join('');
+
+  wrap.querySelectorAll('.academy-stage').forEach((el) => {
+    el.addEventListener('click', () => {
+      const chip = document.querySelector(`.filter-chip[data-filter="${el.dataset.filter}"]`);
+      if (chip) chip.click();
+      const grid = document.getElementById('modulesGrid');
+      if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+}
+
 async function initEducacionListing() {
   const grid = document.getElementById('modulesGrid');
   const filterBar = document.getElementById('levelFilterBar');
@@ -100,6 +138,7 @@ async function initEducacionListing() {
   wireQuiz(modules);
 
   const completed = await getMyCompletedModules();
+  renderAcademyPath(modules, completed);
 
   function render(filter) {
     const filtered = filter === 'all' ? modules : modules.filter((m) => m.level === filter);
