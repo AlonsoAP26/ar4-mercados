@@ -282,6 +282,25 @@ async function initModuloDetail() {
     `;
   }
 
+  const toggleEl = document.getElementById('moduloExplainToggle');
+  if (toggleEl && m.bodySimple) {
+    toggleEl.innerHTML = `
+      <div class="filter-bar" style="margin-bottom:18px;">
+        <button class="filter-chip" data-version="simple">🌱 Explicación sencilla</button>
+        <button class="filter-chip active" data-version="pro">🎓 Explicación profesional</button>
+      </div>
+    `;
+    toggleEl.querySelectorAll('.filter-chip').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        toggleEl.querySelectorAll('.filter-chip').forEach((c) => c.classList.remove('active'));
+        chip.classList.add('active');
+        body.innerHTML = chip.dataset.version === 'simple' ? m.bodySimple : m.body;
+      });
+    });
+  } else if (toggleEl) {
+    toggleEl.innerHTML = '';
+  }
+
   body.innerHTML = m.body;
   renderModuleQuiz(m);
 
