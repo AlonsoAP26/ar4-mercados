@@ -138,8 +138,14 @@
     "rsi": 58,
     "trendMA": "above",
     "volatility": "media",
-    "strengths": ["Seis sesiones consecutivas de entradas netas en ETF spot", "Precio sostenido por encima de las medias móviles de 50 y 200"],
-    "weaknesses": ["RSI acercándose a zona de posible sobrecompra", "Sensible a una sorpresa hawkish de la Fed"],
+    "strengths": [
+      "Seis sesiones consecutivas de entradas netas en ETF spot",
+      "Precio sostenido por encima de las medias móviles de 50 y 200"
+    ],
+    "weaknesses": [
+      "RSI acercándose a zona de posible sobrecompra",
+      "Sensible a una sorpresa hawkish de la Fed"
+    ],
     "category": "Criptomonedas",
     "symbol": "BITSTAMP:BTCUSD",
     "author": "AR4 Mercados",
@@ -157,8 +163,13 @@
     "rsi": 47,
     "trendMA": "mixed",
     "volatility": "media",
-    "strengths": ["Récord de actividad de transacciones en redes Layer 2"],
-    "weaknesses": ["Ratio ETH/BTC cerca de mínimos de varios meses", "Velas recientes muestran indecisión (mechas en ambos sentidos)"],
+    "strengths": [
+      "Récord de actividad de transacciones en redes Layer 2"
+    ],
+    "weaknesses": [
+      "Ratio ETH/BTC cerca de mínimos de varios meses",
+      "Velas recientes muestran indecisión (mechas en ambos sentidos)"
+    ],
     "category": "Criptomonedas",
     "symbol": "COINBASE:ETHUSD",
     "author": "AR4 Mercados",
@@ -176,8 +187,14 @@
     "rsi": 63,
     "trendMA": "above",
     "volatility": "media-alta",
-    "strengths": ["TVL en DeFi en su nivel más alto en cinco meses", "Actividad on-chain amplia, no solo especulación en tokens meme"],
-    "weaknesses": ["RSI cerca de zona de sobrecompra", "Riesgo idiosincrático de interrupciones técnicas en la red"],
+    "strengths": [
+      "TVL en DeFi en su nivel más alto en cinco meses",
+      "Actividad on-chain amplia, no solo especulación en tokens meme"
+    ],
+    "weaknesses": [
+      "RSI cerca de zona de sobrecompra",
+      "Riesgo idiosincrático de interrupciones técnicas en la red"
+    ],
     "category": "Criptomonedas",
     "symbol": "BINANCE:SOLUSDT",
     "author": "AR4 Mercados",
@@ -195,8 +212,14 @@
     "rsi": 66,
     "trendMA": "above",
     "volatility": "alta",
-    "strengths": ["Avance de casi 8% en la semana con volumen elevado", "Vela con cuerpo amplio y cierre cerca de máximos"],
-    "weaknesses": ["Movimiento impulsado por noticias, propenso a reversiones rápidas", "RSI cerca de zona de sobrecompra"],
+    "strengths": [
+      "Avance de casi 8% en la semana con volumen elevado",
+      "Vela con cuerpo amplio y cierre cerca de máximos"
+    ],
+    "weaknesses": [
+      "Movimiento impulsado por noticias, propenso a reversiones rápidas",
+      "RSI cerca de zona de sobrecompra"
+    ],
     "category": "Criptomonedas",
     "symbol": "BINANCE:XRPUSDT",
     "author": "AR4 Mercados",
@@ -214,8 +237,13 @@
     "rsi": 54,
     "trendMA": "mixed",
     "volatility": "media",
-    "strengths": ["Actividad on-chain en repunte antes de la actualización"],
-    "weaknesses": ["Riesgo de \"comprar el rumor, vender la noticia\"", "Rango estrecho reciente refleja cautela del mercado"],
+    "strengths": [
+      "Actividad on-chain en repunte antes de la actualización"
+    ],
+    "weaknesses": [
+      "Riesgo de \"comprar el rumor, vender la noticia\"",
+      "Rango estrecho reciente refleja cautela del mercado"
+    ],
     "category": "Criptomonedas",
     "symbol": "BINANCE:ADAUSDT",
     "author": "AR4 Mercados",
@@ -233,8 +261,13 @@
     "rsi": 51,
     "trendMA": "mixed",
     "volatility": "baja",
-    "strengths": ["Rango estable, sin señales de estrés previo al evento"],
-    "weaknesses": ["Volatilidad implícita elevada de cara a la decisión del BoE", "Comité de política monetaria dividido internamente"],
+    "strengths": [
+      "Rango estable, sin señales de estrés previo al evento"
+    ],
+    "weaknesses": [
+      "Volatilidad implícita elevada de cara a la decisión del BoE",
+      "Comité de política monetaria dividido internamente"
+    ],
     "category": "Forex",
     "symbol": "FX:GBPUSD",
     "author": "AR4 Mercados",
@@ -252,8 +285,13 @@
     "rsi": 69,
     "trendMA": "above",
     "volatility": "alta",
-    "strengths": ["Diferencial de tasas EE.UU.-Japón sigue favoreciendo al dólar"],
-    "weaknesses": ["RSI muy cerca de sobrecompra", "Riesgo asimétrico de intervención directa del Ministerio de Finanzas"],
+    "strengths": [
+      "Diferencial de tasas EE.UU.-Japón sigue favoreciendo al dólar"
+    ],
+    "weaknesses": [
+      "RSI muy cerca de sobrecompra",
+      "Riesgo asimétrico de intervención directa del Ministerio de Finanzas"
+    ],
     "category": "Forex",
     "symbol": "FX:USDJPY",
     "author": "AR4 Mercados",
@@ -271,8 +309,13 @@
     "rsi": 49,
     "trendMA": "mixed",
     "volatility": "baja",
-    "strengths": ["Precio del cobre en niveles favorables da soporte relativo al peso"],
-    "weaknesses": ["Sin tendencia dominante, cuerpos de vela pequeños", "Muy dependiente de la demanda externa de cobre"],
+    "strengths": [
+      "Precio del cobre en niveles favorables da soporte relativo al peso"
+    ],
+    "weaknesses": [
+      "Sin tendencia dominante, cuerpos de vela pequeños",
+      "Muy dependiente de la demanda externa de cobre"
+    ],
     "category": "LatAm",
     "symbol": "FX_IDC:USDCLP",
     "author": "AR4 Mercados",
@@ -290,8 +333,13 @@
     "rsi": 64,
     "trendMA": "above",
     "volatility": "media-alta",
-    "strengths": ["Tendencia de depreciación del real confirmada por medias móviles"],
-    "weaknesses": ["Movimiento impulsado por percepción de riesgo, no por fundamentos nuevos", "Podría revertirse rápido ante señales fiscales positivas"],
+    "strengths": [
+      "Tendencia de depreciación del real confirmada por medias móviles"
+    ],
+    "weaknesses": [
+      "Movimiento impulsado por percepción de riesgo, no por fundamentos nuevos",
+      "Podría revertirse rápido ante señales fiscales positivas"
+    ],
     "category": "LatAm",
     "symbol": "FX_IDC:USDBRL",
     "author": "AR4 Mercados",
@@ -309,8 +357,14 @@
     "rsi": 52,
     "trendMA": "mixed",
     "volatility": "baja",
-    "strengths": ["Desaceleración inflacionaria sostenida durante varios trimestres", "Brecha cambiaria en tendencia de estrechamiento"],
-    "weaknesses": ["Menor liquidez relativa frente a pares más líquidos", "Sensible a shocks de aversión al riesgo global"],
+    "strengths": [
+      "Desaceleración inflacionaria sostenida durante varios trimestres",
+      "Brecha cambiaria en tendencia de estrechamiento"
+    ],
+    "weaknesses": [
+      "Menor liquidez relativa frente a pares más líquidos",
+      "Sensible a shocks de aversión al riesgo global"
+    ],
     "category": "LatAm",
     "symbol": "FX_IDC:USDARS",
     "author": "AR4 Mercados",
@@ -320,5 +374,18 @@
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Lectura de flujo institucional</h3><p>El rango de las últimas semanas ha dejado una zona de acumulación entre 1.270 y 1.295, sin señales claras de un Order Block dominante dada la menor liquidez y profundidad relativa de este mercado frente a pares más líquidos. La liquidez más relevante en el segmento paralelo se concentra por encima de la brecha actual, un nivel que el mercado sigue de cerca como referencia de estrés cambiario.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario de mayor presión sobre el peso</h3><p>Un evento de aversión al riesgo global, o dudas sobre la acumulación de reservas, podría ampliar la brecha nuevamente y presionar el oficial hacia 1.310 y 1.340. El escenario se invalida si la brecha continúa estrechándose de forma sostenida.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario de mayor estabilidad relativa</h3><p>De continuar la desaceleración inflacionaria y la acumulación de reservas, el tipo de cambio oficial podría mantenerse contenido cerca de 1.260-1.285, con la brecha cambiaria continuando su tendencia de estrechamiento. El escenario se invalida ante un evento de estrés cambiario súbito.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>",
     "heroType": "latam",
     "trend": "neutral"
+  },
+  {
+    "title": "USD/PEN: el sol peruano se sostiene pese al ruido político interno",
+    "category": "LatAm",
+    "symbol": "FX_IDC:USDPEN",
+    "excerpt": "El sol peruano exhibe una estabilidad inusual frente a sus pares regionales, sostenido por la intervención cambiaria del BCRP y el precio del cobre.",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Una moneda que no refleja el clima institucional</h3><p>El sol peruano se mantiene entre las divisas más estables de la región, incluso mientras el país atraviesa un período de alta rotación política y bajos niveles de aprobación presidencial. Esta aparente desconexión entre el ruido institucional y el comportamiento cambiario responde en gran medida al manejo activo del Banco Central de Reserva del Perú (BCRP), que interviene con regularidad en el mercado spot y a través de instrumentos derivados para contener la volatilidad del par USD/PEN. A diferencia de Argentina o Colombia, donde los episodios políticos suelen traducirse rápido en presión cambiaria, en Perú el mercado ha aprendido a operar con un descuento parcial del riesgo político mientras las reservas internacionales netas se mantengan en niveles holgados.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El cobre como ancla de fondo</h3><p>El precio internacional del cobre continúa siendo el principal determinante estructural del sol. Perú es el segundo productor mundial del metal, y los flujos de exportación mineros generan una oferta constante de dólares que limita la depreciación de la moneda local incluso en contextos de aversión al riesgo global. Un repunte sostenido del cobre, vinculado a expectativas de demanda desde China o a interrupciones de oferta en otros productores, tiende a coincidir con fases de apreciación del sol. Por el contrario, una corrección en los precios de metales industriales podría quitarle parte de ese soporte fundamental al peso peruano.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Zonas técnicas bajo observación</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Resistencia inmediata en 3.755, coincidente con la zona de intervención habitual del BCRP.</li><li>Soporte técnico en 3.700, nivel psicológico que ha funcionado como piso en las últimas semanas.</li><li>Un quiebre por debajo de 3.680 abriría espacio hacia mínimos de varios meses.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Lectura técnica del momento</h3><p><strong style=\"color:var(--green);\">Soportes:</strong> 3.700 · 3.680 · 3.650</p><p><strong style=\"color:var(--crimson-bright);\">Resistencias:</strong> 3.755 · 3.780 · 3.810</p><p>El RSI diario se ubica cerca de 47, en territorio neutral, sin señales de sobrecompra ni sobreventa que sugieran un movimiento inminente. El par cotiza justo por debajo de su media móvil de 50 periodos, mientras que la media de 200 periodos actúa como soporte de mediano plazo algo más abajo, reforzando la idea de un rango lateral. Las velas de las últimas sesiones muestran cuerpos reducidos y mechas cortas, un patrón de rango estrecho (inside bar) que refleja la falta de un catalizador claro que empuje al par fuera de su banda reciente.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Mapa de liquidez y zonas de interés institucional</h3><p>Desde una perspectiva de flujo institucional, el rango 3.700-3.755 concentra la mayor parte de la actividad reciente del par, lo que sugiere la formación de un bloque de órdenes (order block, la última vela opuesta antes de un impulso fuerte, donde suelen quedar órdenes institucionales pendientes) entre 3.690 y 3.705, zona desde la cual se originaron los últimos repuntes. Por encima, en 3.780-3.800, se acumula liquidez de corto plazo (agrupación de órdenes stop por encima de máximos recientes) que podría actuar como imán de precio en caso de un impulso alcista repentino. Existe además un vacío de precio (Fair Value Gap, un desequilibrio dejado por un movimiento impulsivo que el mercado tiende a rellenar después) entre 3.715 y 3.730, generado durante la última fase de aceleración, que permanece parcialmente sin cubrir. Mientras el precio no confirme una ruptura de estructura (Break of Structure) por encima de 3.755 con cierre diario, el escenario de rango se mantiene como el más probable; una ruptura clara de ese nivel activaría una señal de continuidad alcista de corto plazo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario alcista: sol bajo presión renovada</h3><p>Para que el escenario de depreciación del sol (apreciación del dólar) gane tracción, sería necesario observar un deterioro adicional en el precio del cobre combinado con señales de mayor inestabilidad política interna, como una moción de censura o adelanto electoral. La confirmación técnica llegaría con un cierre diario por encima de 3.755, lo que habilitaría un recorrido hacia 3.780 y, en extensión, hacia 3.810. El nivel de invalidación de este escenario se ubica en 3.700; un retorno por debajo de ese umbral cuestionaría la fortaleza del impulso alcista del dólar frente al sol.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario bajista: el sol recupera terreno</h3><p>El escenario de apreciación del sol (dólar más débil frente al PEN) tomaría fuerza con un repunte sostenido del cobre por encima de sus máximos recientes y con señales de mayor estabilidad institucional en Lima. La confirmación técnica requeriría un quiebre por debajo de 3.680, lo que abriría la puerta hacia 3.650 y, en un escenario más extendido, hacia 3.620. El nivel de invalidación se sitúa en 3.755; un regreso por encima de esa zona anularía la tesis de apreciación del sol en el corto plazo.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>",
+    "trend": "neutral",
+    "heroType": "latam",
+    "slug": "usdpen-el-sol-peruano-se-sostiene-pese-al-ruido-politico-int-mrf38m95",
+    "author": "IA · AR4 Mercados",
+    "date": "2026-07-10"
   }
 ]
