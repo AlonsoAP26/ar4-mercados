@@ -24,12 +24,19 @@ exports.handler = async (event, context) => {
     });
 
     const identity = context.clientContext && context.clientContext.identity;
-    if (identity) {
-      await fetch(identity.url + '/admin/users/' + user.sub, {
-        method: 'PUT',
-        headers: { 'Authorization': 'Bearer ' + identity.token, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ app_metadata: { premium: true, bootstrap_admin: true } })
-      });
+    if (!identity) {
+      return { statusCode: 500, body: JSON.stringify({ success: false, error: 'Se activó tu rango de administrador, pero no se pudo activar Premium: falta el contexto de Identity en esta función.' }) };
+    }
+
+    const identityRes = await fetch(identity.url + '/admin/users/' + user.sub, {
+      method: 'PUT',
+      headers: { 'Authorization': 'Bearer ' + identity.token, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ app_metadata: Object.assign({}, user.app_metadata, { premium: true, bootstrap_admin: true }) })
+    });
+
+    if (!identityRes.ok) {
+      const detail = await identityRes.text().catch(() => '');
+      return { statusCode: 502, body: JSON.stringify({ success: false, error: 'Se activó tu rango de administrador, pero Netlify Identity rechazó la actualización de Premium (' + identityRes.status + ').', detail }) };
     }
 
     return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true }) };
