@@ -49,6 +49,148 @@ function ideaCardHTML(a) {
   `;
 }
 
+const STATUS_META = {
+  activo:      { emoji: '🟢', label: 'Activo',           stage: 1 },
+  esperando:   { emoji: '🟡', label: 'A la espera del catalizador', stage: 0 },
+  parcial:     { emoji: '🟠', label: 'Escenario parcialmente confirmado', stage: 2 },
+  breakeven:   { emoji: '🔵', label: 'Punto de equilibrio', stage: 3 },
+  objetivo:    { emoji: '🏆', label: 'Objetivo de referencia alcanzado', stage: 4 },
+  invalidado:  { emoji: '🔴', label: 'Escenario invalidado', stage: -1 },
+  finalizado:  { emoji: '⚫', label: 'Análisis cerrado', stage: 5 }
+};
+const STAGE_LABELS = ['Publicado', 'Escenario activo', 'Confirmación parcial', 'Punto de equilibrio', 'Objetivo alcanzado', 'Cerrado'];
+
+const SYMBOL_COUNTRIES = {
+  'FX:EURUSD': 'us,eu', 'FX:GBPUSD': 'us,gb', 'FX:USDJPY': 'us,jp',
+  'FX_IDC:USDMXN': 'us,mx', 'FX_IDC:USDCOP': 'us,co', 'FX_IDC:USDCLP': 'us,cl',
+  'FX_IDC:USDARS': 'us,ar', 'FX_IDC:USDBRL': 'us,br', 'FX_IDC:USDPEN': 'us,pe',
+  'OANDA:XAUUSD': 'us', 'TVC:USOIL': 'us', 'TVC:UKOIL': 'gb,us',
+  'FOREXCOM:SPXUSD': 'us', 'FOREXCOM:NSXUSD': 'us',
+  'BITSTAMP:BTCUSD': 'us', 'COINBASE:ETHUSD': 'us', 'BINANCE:SOLUSDT': 'us',
+  'BINANCE:XRPUSDT': 'us', 'BINANCE:ADAUSDT': 'us'
+};
+
+function renderTradeStatusCard(idea) {
+  const wrap = document.getElementById('ideaStatusCard');
+  if (!wrap) return;
+  const meta = STATUS_META[idea.status] || STATUS_META.activo;
+  const biasClass = idea.trend === 'up' ? 'bias-up' : idea.trend === 'down' ? 'bias-down' : 'bias-neutral';
+  const biasLabel = idea.trend === 'up' ? 'Sesgo alcista' : idea.trend === 'down' ? 'Sesgo bajista' : 'Sesgo neutral / en rango';
+
+  let stepperHTML = '';
+  if (meta.stage >= 0) {
+    stepperHTML = `
+      <div class="trade-stepper">
+        ${STAGE_LABELS.map((label, i) => `
+          <div class="trade-step ${i <= meta.stage ? 'done' : ''} ${i === meta.stage ? 'current' : ''}">
+            <span class="trade-step-dot"></span><span class="trade-step-label">${label}</span>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } else {
+    stepperHTML = `<p class="footer-text" style="margin-top:10px;">Este escenario técnico fue invalidado — el precio rompió los niveles que sostenían la lectura original.</p>`;
+  }
+
+  wrap.innerHTML = `
+    <div class="glass-card trade-card ${biasClass}">
+      <div class="trade-card-head">
+        <span class="trade-status-badge">${meta.emoji} ${meta.label}</span>
+        <span class="trade-bias-badge">${biasLabel}</span>
+      </div>
+      <div class="trade-card-meta">
+        <div><span class="trade-card-label">Activo</span><span class="trade-card-value">${symbolLabel(idea.symbol)}</span></div>
+        <div><span class="trade-card-label">Categoría</span><span class="trade-card-value">${idea.category}</span></div>
+        <div><span class="trade-card-label">Tipo de contenido</span><span class="trade-card-value">Análisis de contexto</span></div>
+      </div>
+      ${stepperHTML}
+      <p class="trade-card-note">⚠️ Esta tarjeta resume el estado del análisis, no una orden de compra/venta. Los niveles de soporte, resistencia e invalidación están descritos en el texto del análisis.</p>
+    </div>
+  `;
+}
+
+function computeConsistency(idea) {
+  if (typeof idea.rsi !== 'number' || !idea.trendMA) return null;
+  let aligned = 0;
+  let total = 2;
+  if (idea.trend === 'up') {
+    if (idea.rsi >= 50) aligned++;
+    if (idea.trendMA === 'above') aligned++;
+  } else if (idea.trend === 'down') {
+    if (idea.rsi < 50) aligned++;
+    if (idea.trendMA === 'below') aligned++;
+  } else {
+    total = 1;
+    if (idea.trendMA === 'mixed') aligned++;
+  }
+  return Math.round((aligned / total) * 100);
+}
+
+function renderAIPanel(idea) {
+  const wrap = document.getElementById('ideaAIPanel');
+  if (!wrap) return;
+  const consistency = computeConsistency(idea);
+  if (consistency === null) { wrap.innerHTML = ''; return; }
+
+  const sentimentLabel = idea.trend === 'up' ? 'Alcista' : idea.trend === 'down' ? 'Bajista' : 'Neutral / en rango';
+  const volatilityLabel = idea.volatility ? idea.volatility.charAt(0).toUpperCase() + idea.volatility.slice(1) : '—';
+  const circleDeg = Math.round(consistency * 3.6);
+  const strengthsHTML = (idea.strengths || []).map(s => `<li>${s}</li>`).join('');
+  const weaknessesHTML = (idea.weaknesses || []).map(s => `<li>${s}</li>`).join('');
+
+  wrap.innerHTML = `
+    <div class="section-head" style="margin-top:32px;margin-bottom:14px;">
+      <h2 style="font-size:1.1rem;">🤖 Análisis IA AR4</h2>
+      <span class="badge-live">RESUMEN AUTOMÁTICO</span>
+    </div>
+    <div class="glass-card ai-panel">
+      <div class="ai-panel-gauge">
+        <div class="ai-gauge-circle" style="--gauge-deg:${circleDeg}deg;">
+          <div class="ai-gauge-inner">
+            <span class="ai-gauge-value">${consistency}%</span>
+            <span class="ai-gauge-caption">Consistencia técnica</span>
+          </div>
+        </div>
+      </div>
+      <div class="ai-panel-stats">
+        <div><span class="trade-card-label">Sentimiento</span><span class="trade-card-value">${sentimentLabel}</span></div>
+        <div><span class="trade-card-label">Volatilidad estimada</span><span class="trade-card-value">${volatilityLabel}</span></div>
+        <div><span class="trade-card-label">RSI diario</span><span class="trade-card-value">${idea.rsi}</span></div>
+      </div>
+      <div class="ai-panel-lists">
+        ${strengthsHTML ? `<div><strong style="color:var(--green);">Fortalezas</strong><ul>${strengthsHTML}</ul></div>` : ''}
+        ${weaknessesHTML ? `<div><strong style="color:var(--crimson-bright);">Debilidades</strong><ul>${weaknessesHTML}</ul></div>` : ''}
+      </div>
+      <p class="footer-text" style="font-size:0.76rem;margin-top:6px;">"Consistencia técnica" mide qué tan alineados están el RSI y la posición del precio frente a sus medias móviles con la tendencia descrita en este análisis. No es una predicción de resultado ni una probabilidad de éxito.</p>
+    </div>
+  `;
+}
+
+function renderRelatedCalendar(idea) {
+  const wrap = document.getElementById('ideaRelatedCalendar');
+  if (!wrap || !idea.symbol) return;
+  const countries = SYMBOL_COUNTRIES[idea.symbol] || 'us';
+
+  wrap.innerHTML = `
+    <div class="section-head" style="margin-top:32px;margin-bottom:14px;">
+      <h2 style="font-size:1.1rem;">📅 Calendario económico relacionado</h2>
+      <a href="calendario.html" class="see-all">Ver calendario completo →</a>
+    </div>
+    <div class="calendar-embed glass-card">
+      <div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
+    </div>
+  `;
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-events.js';
+  script.async = true;
+  script.text = JSON.stringify({
+    colorTheme: 'dark', isTransparent: true, width: '100%', height: '400',
+    locale: 'es', importanceFilter: '0,1', countryFilter: countries
+  });
+  wrap.querySelector('.tradingview-widget-container').appendChild(script);
+}
+
 async function getPremiumStatus() {
   if (typeof window.AR4_checkPremium === 'function') {
     try { return await window.AR4_checkPremium(); } catch (e) { return false; }
@@ -220,6 +362,7 @@ async function initIdeaDetail() {
   }
 
   initIdeaChart(idea);
+  renderTradeStatusCard(idea);
   body.innerHTML = idea.body;
 
   const conclusionEl = document.getElementById('ideaConclusion');
@@ -253,6 +396,10 @@ async function initIdeaDetail() {
       `;
     }
   }
+
+  renderAIPanel(idea);
+  renderRelatedCalendar(idea);
+  if (window.AR4_initSocial) window.AR4_initSocial(idea);
 
   if (window.AR4_initComments) window.AR4_initComments('commentsSection', 'idea', idea.slug);
 
