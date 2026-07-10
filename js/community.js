@@ -24,7 +24,12 @@
   const RANK_ORDER = { basico: 0, vip: 1, premium: 2, elite: 3, administrador: 4 };
   const AVATAR_COLORS = ['#f0c75e', '#7aa8ff', '#4fd18a', '#ff8a5c', '#f7931a', '#e2001a', '#22c07a'];
   const TRADING_STYLES = ['Day trader', 'Swing trader', 'Scalper', 'Macro / posicional', 'HODLer', 'Recién empezando'];
-  const REACTION_EMOJI = ['🔥', '🚀', '💡', '🤔'];
+  const REACTIONS = [
+    { emoji: '📚', label: 'Educativo' },
+    { emoji: '📈', label: 'Buen análisis' },
+    { emoji: '💡', label: 'Buena explicación' },
+    { emoji: '🎯', label: 'Bien argumentado' }
+  ];
   const POST_SYMBOL_MAP = {
     'EURUSD': 'FX:EURUSD', 'EUR/USD': 'FX:EURUSD',
     'GBPUSD': 'FX:GBPUSD', 'GBP/USD': 'FX:GBPUSD',
@@ -503,6 +508,7 @@
           <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span> ${streakChip}</h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span>${badgesRowHTML(myProfile.badges)}${socialLinksRowHTML(myProfile.social_links)}</div>
         </div>
         <div class="community-points" id="communityPointsDisplay">${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span></div>
+        <div style="color:var(--text-mid);font-size:0.8rem;margin-bottom:10px;" id="communityFollowCounts"></div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
           <button class="btn btn-outline" id="communityAvatarShopBtn">Cambiar avatar</button>
           <button class="btn btn-outline" id="communityEditProfileBtn">Editar perfil</button>
@@ -524,13 +530,121 @@
       <div class="mission-widget" id="weeklyChallengeWidget"><p class="footer-text">Cargando reto semanal...</p></div>
 
       <div class="community-tabs">
-        <button class="community-tab-btn active" data-view="foro">📋 Foro de ideas</button>
+        <button class="community-tab-btn active" data-view="resumen">🏠 Resumen</button>
+        <button class="community-tab-btn" data-view="foro">📋 Foro de ideas</button>
         <button class="community-tab-btn" data-view="chat">💬 Chat en vivo</button>
         <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
         <button class="community-tab-btn" data-view="dna">🧬 Trading DNA</button>
       </div>
-      <div id="communityMainView">${foroPanelHTML()}</div>
+      <div id="communityMainView">${resumenPanelHTML()}</div>
     `;
+  }
+
+  function greetingWord() {
+    const h = new Date().getHours();
+    if (h < 12) return 'Buenos días';
+    if (h < 19) return 'Buenas tardes';
+    return 'Buenas noches';
+  }
+
+  function resumenPanelHTML() {
+    return `
+      <div class="community-form" id="resumenGreeting">
+        <p class="footer-text">Cargando resumen...</p>
+      </div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔔 Notificaciones</h2></div>
+      <div id="resumenNotifications"><p class="footer-text">Cargando...</p></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">📌 Tu Watchlist</h2></div>
+      <div id="resumenWatchlist"><p class="footer-text">Cargando...</p></div>
+    `;
+  }
+
+  function notificationRowHTML(n) {
+    const actorName = n.actor ? escapeHtml(n.actor.username) : 'Alguien';
+    let text;
+    if (n.type === 'follow') text = `${actorName} empezó a seguirte`;
+    else if (n.type === 'mention') text = `${actorName} te mencionó en un comentario`;
+    else text = `${actorName} respondió a tu comentario`;
+    return `
+      <div class="mission-row">
+        <span class="mission-icon">${n.read ? '·' : '🔔'}</span>
+        <div class="mission-info">
+          <strong style="font-weight:${n.read ? '400' : '700'};">${text}</strong>
+          <span style="color:var(--text-low);font-size:0.76rem;">${timeAgo(n.created_at)}</span>
+        </div>
+      </div>
+    `;
+  }
+
+  function mountResumenTicker(container, items) {
+    if (!container) return;
+    if (!items || !items.length) {
+      container.innerHTML = '<p class="footer-text">Todavía no tienes símbolos en tu watchlist. <a href="herramientas.html">Agrega algunos aquí</a>.</p>';
+      return;
+    }
+    container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
+    script.async = true;
+    script.text = JSON.stringify({
+      symbols: items.map((it) => ({ proName: it.symbol, title: it.label })),
+      showSymbolLogo: true,
+      isTransparent: true,
+      displayMode: 'compact',
+      colorTheme: 'dark',
+      locale: 'es'
+    });
+    container.appendChild(script);
+  }
+
+  async function loadResumen() {
+    const greetingEl = document.getElementById('resumenGreeting');
+    const notifEl = document.getElementById('resumenNotifications');
+    const watchlistEl = document.getElementById('resumenWatchlist');
+    if (!greetingEl) return;
+
+    const streak = myProfile.streak_days || 0;
+    greetingEl.innerHTML = `
+      <h3 style="margin-bottom:4px;">${greetingWord()}, ${escapeHtml(myProfile.username)} 👋</h3>
+      <p style="color:var(--text-mid);font-size:0.86rem;">Nivel ${levelFromPoints(myProfile.points)} · ${myProfile.points} pts${streak > 0 ? ` · 🔥 ${streak} ${streak === 1 ? 'día' : 'días'} de racha` : ''}</p>
+    `;
+
+    if (notifEl) {
+      try {
+        const data = await callFunctionGET('community-notifications');
+        const notifs = data.notifications || [];
+        notifEl.innerHTML = notifs.length
+          ? notifs.slice(0, 8).map(notificationRowHTML).join('')
+          : '<p class="footer-text">No tienes notificaciones nuevas.</p>';
+      } catch (e) {
+        notifEl.innerHTML = '<p class="footer-text">No se pudieron cargar las notificaciones.</p>';
+      }
+    }
+
+    if (watchlistEl) {
+      try {
+        const data = await callFunctionGET('community-watchlist');
+        watchlistEl.innerHTML = '<div id="resumenTickerContainer" class="tradingview-widget-container"></div>';
+        mountResumenTicker(document.getElementById('resumenTickerContainer'), data.items);
+      } catch (e) {
+        watchlistEl.innerHTML = '<p class="footer-text">Agrega símbolos en <a href="herramientas.html">Herramientas</a> para verlos aquí.</p>';
+      }
+    }
+  }
+
+  async function loadFollowCounts() {
+    const el = document.getElementById('communityFollowCounts');
+    if (!el) return;
+    try {
+      const [{ count: followersCount }, { count: followingCount }] = await Promise.all([
+        sb.from('follows').select('*', { count: 'exact', head: true }).eq('following_id', myProfile.id),
+        sb.from('follows').select('*', { count: 'exact', head: true }).eq('follower_id', myProfile.id)
+      ]);
+      el.textContent = `${followersCount || 0} seguidores · ${followingCount || 0} siguiendo`;
+    } catch (e) {
+      el.textContent = '';
+    }
   }
 
   async function getProfileById(id) {
@@ -544,7 +658,7 @@
     const counts = reactionCache[postId] || {};
     return `
       <div class="community-reactions" data-post-id="${postId}">
-        ${REACTION_EMOJI.map((e) => `<button class="reaction-btn" data-emoji="${e}">${e} <span>${counts[e] || 0}</span></button>`).join('')}
+        ${REACTIONS.map((r) => `<button class="reaction-btn" data-emoji="${r.emoji}" title="${r.label}">${r.emoji} <span>${counts[r.emoji] || 0}</span></button>`).join('')}
       </div>
     `;
   }
@@ -586,7 +700,7 @@
     neutral: { icon: '⚪', label: 'Neutral' }
   };
 
-  function postCardHTML(post, authorProfile, bookmarkedIds) {
+  function postCardHTML(post, authorProfile, bookmarkedIds, followingIds) {
     const symbolTag = post.symbol ? `<span class="instrument-badge">${escapeHtml(post.symbol)}</span>` : '';
     const sentimentTag = post.sentiment && SENTIMENT_META[post.sentiment]
       ? `<span class="instrument-badge">${SENTIMENT_META[post.sentiment].icon} ${SENTIMENT_META[post.sentiment].label}</span>`
@@ -596,11 +710,16 @@
       ? `<div class="community-post-chart"><div class="tradingview-widget-container" id="postChart-${post.id}"></div></div>`
       : '';
     const isBookmarked = bookmarkedIds && bookmarkedIds.has(post.id);
+    const isFollowing = followingIds && followingIds.has(authorProfile.id);
+    const followBtnHTML = (myProfile && authorProfile.id !== myProfile.id)
+      ? `<button class="follow-btn${isFollowing ? ' following' : ''}" data-follow-id="${authorProfile.id}" data-following="${isFollowing}">${isFollowing ? '✔ Siguiendo' : '+ Seguir'}</button>`
+      : '';
     return `
       <article class="community-post-card" data-post-id="${post.id}">
         <div class="community-post-head">
           ${avatarHTML(authorProfile, 'trader-avatar')}
           <div><strong>${escapeHtml(authorProfile.username)}</strong>${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
+          ${followBtnHTML}
         </div>
         <h4>${escapeHtml(post.title)}</h4>
         ${chartHTML}
@@ -654,6 +773,14 @@
       reactionCache[r.post_id][r.emoji] = (reactionCache[r.post_id][r.emoji] || 0) + 1;
     });
 
+    let followingIds = new Set();
+    if (myProfile) {
+      try {
+        const { data: myFollows } = await sb.from('follows').select('following_id').eq('follower_id', myProfile.id);
+        followingIds = new Set((myFollows || []).map((f) => f.following_id));
+      } catch (e) { /* followingIds queda vacío si falla */ }
+    }
+
     const visiblePosts = showBookmarksOnly ? posts.filter((p) => bookmarkedIds.has(p.id)) : posts;
 
     if (!visiblePosts.length) {
@@ -663,9 +790,28 @@
 
     const cards = await Promise.all(visiblePosts.map(async (p) => {
       const author = await getProfileById(p.profile_id) || { username: 'Usuario', avatar_color: '#8b93a7', rank: 'basico' };
-      return postCardHTML(p, author, bookmarkedIds);
+      return postCardHTML(p, author, bookmarkedIds, followingIds);
     }));
     feedEl.innerHTML = cards.join('');
+
+    feedEl.querySelectorAll('.follow-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const targetId = btn.dataset.followId;
+        const currentlyFollowing = btn.dataset.following === 'true';
+        btn.disabled = true;
+        try {
+          await callFunction('community-follow', { action: currentlyFollowing ? 'unfollow' : 'follow', targetProfileId: targetId });
+          const nowFollowing = !currentlyFollowing;
+          btn.dataset.following = String(nowFollowing);
+          btn.textContent = nowFollowing ? '✔ Siguiendo' : '+ Seguir';
+          btn.classList.toggle('following', nowFollowing);
+        } catch (e) {
+          alert(e.message);
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    });
 
     const sharedPostId = new URLSearchParams(window.location.search).get('post');
     if (sharedPostId && !showBookmarksOnly) {
@@ -950,6 +1096,9 @@
     } else if (view === 'dna') {
       mainView.innerHTML = tradingDnaPanelHTML();
       loadTradingDna();
+    } else if (view === 'resumen') {
+      mainView.innerHTML = resumenPanelHTML();
+      loadResumen();
     } else {
       mainView.innerHTML = foroPanelHTML();
       wirePostForm();
@@ -993,7 +1142,9 @@
       });
     }
 
-    document.getElementById('postSubmit').addEventListener('click', async () => {
+    const postSubmitBtn = document.getElementById('postSubmit');
+    if (!postSubmitBtn) return;
+    postSubmitBtn.addEventListener('click', async () => {
       const btn = document.getElementById('postSubmit');
       const msgEl = document.getElementById('postMsg');
       const title = document.getElementById('postTitle').value.trim();
@@ -1351,7 +1502,6 @@
 
     currentRoom = 'forex';
     root.innerHTML = dashboardShellHTML();
-    wirePostForm();
     wireRedeemButton();
     wireDonateForm();
     wireAdminPanel();
@@ -1376,7 +1526,8 @@
         }
       });
     }
-    loadFeed();
+    loadResumen();
+    loadFollowCounts();
     loadMissions();
     loadWeeklyChallenge();
   }
