@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const { supabaseRequest } = require('./_supabase');
 const { isFlagged } = require('./_moderation');
 const { effectiveRank } = require('./_rank');
@@ -5,6 +6,40 @@ const { incrementMissionCounter } = require('./_gamification');
 
 const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
 const ALLOWED_SENTIMENTS = ['alcista', 'bajista', 'neutral'];
+const ALLOWED_MEDIA_TYPES = {
+  'image/png': { ext: 'png', kind: 'image' }, 'image/jpeg': { ext: 'jpg', kind: 'image' },
+  'image/gif': { ext: 'gif', kind: 'image' }, 'image/webp': { ext: 'webp', kind: 'image' },
+  'video/mp4': { ext: 'mp4', kind: 'video' }, 'video/webm': { ext: 'webm', kind: 'video' },
+  'application/pdf': { ext: 'pdf', kind: 'pdf' }
+};
+const MAX_MEDIA_BYTES = 8 * 1024 * 1024;
+
+async function uploadPostMedia(profileId, base64, mimeType) {
+  const meta = ALLOWED_MEDIA_TYPES[mimeType];
+  if (!meta) throw Object.assign(new Error('Formato de archivo no soportado.'), { statusCode: 400 });
+
+  const buffer = Buffer.from(base64, 'base64');
+  if (buffer.length > MAX_MEDIA_BYTES) {
+    throw Object.assign(new Error('El archivo no puede pesar más de 8 MB.'), { statusCode: 400 });
+  }
+
+  const path = `${profileId}/${Date.now()}-${crypto.randomUUID()}.${meta.ext}`;
+  const url = process.env.SUPABASE_KEY;
+  const key = process.env.SUPABASE_SECRET_KEY;
+
+  const res = await fetch(url + '/storage/v1/object/post-media/' + path, {
+    method: 'POST',
+    headers: { 'Authorization': 'Bearer ' + key, 'apikey': key, 'Content-Type': mimeType },
+    body: buffer
+  });
+
+  if (!res.ok) {
+    const errText = await res.text();
+    throw Object.assign(new Error('No se pudo subir el archivo: ' + errText), { statusCode: 502 });
+  }
+
+  return { url: url + '/storage/v1/object/public/post-media/' + path, kind: meta.kind };
+}
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };
@@ -26,6 +61,8 @@ exports.handler = async (event, context) => {
     }
 
     const sentiment = ALLOWED_SENTIMENTS.includes(body.sentiment) ? body.sentiment : null;
+    const mediaBase64 = body.mediaBase64 || null;
+    const mediaType = body.mediaType || null;
 
     if (title.length < 8 || text.length < 20) {
       return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El título y el contenido son demasiado cortos.' }) };
@@ -54,6 +91,14 @@ exports.handler = async (event, context) => {
       return { statusCode: 422, body: JSON.stringify({ success: false, error: 'Tu publicación no pasó la revisión automática (posible spam, promesas de rentabilidad garantizada o lenguaje inapropiado). Ajústala e inténtalo de nuevo.' }) };
     }
 
+    let mediaUrl = null;
+    let mediaKind = null;
+    if (mediaBase64) {
+      const uploaded = await uploadPostMedia(profile.id, mediaBase64, mediaType);
+      mediaUrl = uploaded.url;
+      mediaKind = uploaded.kind;
+    }
+
     const created = await supabaseRequest('community_posts', {
       method: 'POST',
       body: JSON.stringify({
@@ -64,7 +109,9 @@ exports.handler = async (event, context) => {
         symbol,
         sentiment,
         poll_options: pollOptions,
-        poll_votes_count: pollOptions ? pollOptions.map(() => 0) : null
+        poll_votes_count: pollOptions ? pollOptions.map(() => 0) : null,
+        media_url: mediaUrl,
+        media_type: mediaKind
       })
     });
 

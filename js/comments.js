@@ -30,6 +30,10 @@
     return `<span class="rank-badge rank-${rank}">${RANK_LABELS[rank]}</span>`;
   }
 
+  function verifiedBadgeHTML(profile) {
+    return profile && profile.verified ? '<span class="verified-badge" title="Cuenta verificada por AR4">✔</span>' : '';
+  }
+
   function linkifyMentions(text) {
     return escapeHtml(text).replace(/@([a-z0-9_]{3,24})/gi, '<span class="comment-mention">@$1</span>');
   }
@@ -76,7 +80,7 @@
         <div class="comment-row" style="margin-left:${Math.min(depth, 4) * 26}px;" data-comment-id="${c.id}">
           ${avatarHTML(author)}
           <div class="comment-body">
-            <div class="comment-head"><strong>${escapeHtml(author.username)}</strong>${rankBadgeHTML(author.rank)}<span class="comment-time">${timeAgo(c.created_at)}${editedHTML}</span></div>
+            <div class="comment-head"><strong>${escapeHtml(author.username)}</strong>${verifiedBadgeHTML(author)}${rankBadgeHTML(author.rank)}<span class="comment-time">${timeAgo(c.created_at)}${editedHTML}</span></div>
             <div class="comment-text" data-comment-text="${c.id}"><p>${linkifyMentions(c.body)}</p>${imgHTML}</div>
             <div class="comment-actions-row">
               <button class="comment-like-btn ${liked ? 'active' : ''}" data-like="${c.id}">❤️ <span class="like-count">${likeCount}</span></button>
@@ -94,6 +98,12 @@
       let children = byParent[parentKey] || [];
       if (parentKey === 'root' && sortMode === 'populares') {
         children = [...children].sort((a, b) => (likeCounts[b.id] || 0) - (likeCounts[a.id] || 0));
+      } else if (parentKey === 'root' && sortMode === 'verificados') {
+        children = [...children].sort((a, b) => {
+          const av = (profilesById[a.profile_id] || {}).verified ? 1 : 0;
+          const bv = (profilesById[b.profile_id] || {}).verified ? 1 : 0;
+          return bv - av;
+        });
       }
       return children.map((c) => {
         const author = profilesById[c.profile_id] || { username: 'Usuario' };
@@ -258,7 +268,7 @@
       const profileIds = [...new Set((comments || []).map((c) => c.profile_id))];
       let profilesById = {};
       if (profileIds.length) {
-        const { data: profiles } = await sb.from('profiles').select('id,username,avatar_color,avatar_url,rank').in('id', profileIds);
+        const { data: profiles } = await sb.from('profiles').select('id,username,avatar_color,avatar_url,rank,verified').in('id', profileIds);
         profilesById = Object.fromEntries((profiles || []).map((p) => [p.id, p]));
       }
 
@@ -274,6 +284,7 @@
         <div class="comments-sort-bar">
           <button class="sort-chip ${sortMode === 'recientes' ? 'active' : ''}" data-sort="recientes">Más recientes</button>
           <button class="sort-chip ${sortMode === 'populares' ? 'active' : ''}" data-sort="populares">Más populares</button>
+          <button class="sort-chip ${sortMode === 'verificados' ? 'active' : ''}" data-sort="verificados">Analistas verificados</button>
         </div>
       ` : '';
 

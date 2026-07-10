@@ -180,6 +180,10 @@
     return `<span class="rank-badge rank-${rank}">${RANK_LABELS[rank]}</span>`;
   }
 
+  function verifiedBadgeHTML(profile) {
+    return profile && profile.verified ? '<span class="verified-badge" title="Cuenta verificada por AR4">✔</span>' : '';
+  }
+
   function myEffectiveRank() {
     return (myProfile && myProfile.effectiveRank) || 'basico';
   }
@@ -282,6 +286,7 @@
           <button class="btn btn-outline" id="guestLoginBtn" type="button">Iniciar sesión</button>
         </div>
       </div>
+      ${storiesBarHTML()}
       <div class="community-tabs">
         <button class="community-tab-btn active" data-view="resumen">🏠 Resumen</button>
         <button class="community-tab-btn" data-view="foro">📋 Foro de ideas</button>
@@ -389,6 +394,13 @@
           <button class="btn btn-crimson" id="adminSetRankBtn">Aplicar rango</button>
         </div>
         <div class="community-form-msg" id="adminMsg"></div>
+        <p style="color:var(--text-mid);font-size:0.86rem;margin-top:14px;">Marca o quita la insignia ✔ Verificado de un usuario.</p>
+        <div class="community-form-row">
+          <input type="text" id="adminVerifyUsername" placeholder="Nombre de usuario">
+          <select id="adminVerifyValue"><option value="true">Verificar ✔</option><option value="false">Quitar verificación</option></select>
+          <button class="btn btn-crimson" id="adminSetVerifiedBtn">Aplicar</button>
+        </div>
+        <div class="community-form-msg" id="adminVerifyMsg"></div>
       </div>
     `;
   }
@@ -402,7 +414,7 @@
         : '';
     return `
       <div class="community-form">
-        <h3 style="margin-bottom:14px;">Publicar una idea</h3>
+        <h3 style="margin-bottom:14px;">¿Qué oportunidad estás viendo hoy?</h3>
         <label for="postCategory">Categoría</label>
         <select id="postCategory">${CATEGORY_LABELS.map(c => `<option value="${c}">${c}</option>`).join('')}</select>
         <label for="postSymbol">Instrumento (opcional, ej. EUR/USD, ORO, BTC/USD)</label>
@@ -417,6 +429,11 @@
           <button type="button" class="sentiment-option" data-sentiment="bajista">🔴 Bajista</button>
           <button type="button" class="sentiment-option" data-sentiment="neutral">⚪ Neutral</button>
         </div>
+        <div class="comment-attach-row" style="margin-top:12px;">
+          <button type="button" class="comment-attach-btn" id="postAttachBtn">📎 Adjuntar imagen, video o PDF</button>
+          <input type="file" id="postMediaInput" accept="image/png,image/jpeg,image/gif,image/webp,video/mp4,video/webm,application/pdf" hidden>
+          <span class="comment-attach-name" id="postMediaName"></span>
+        </div>
         <label style="display:flex;align-items:center;gap:8px;margin-top:14px;font-weight:400;text-transform:none;font-family:inherit;cursor:pointer;">
           <input type="checkbox" id="postAddPoll" style="width:16px;height:16px;"> Agregar una encuesta (opcional)
         </label>
@@ -429,7 +446,7 @@
         <button class="btn btn-gold" id="postSubmit" style="margin-top:14px;">Publicar (+10 pts)</button>
         <div class="community-form-msg" id="postMsg"></div>
         ${basicoNote}
-        <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Si indicas un instrumento reconocido (ej. EUR/USD, USD/MXN, ORO, BTC/USD), tu publicación mostrará automáticamente un gráfico de TradingView con medias móviles.</p>
+        <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Si indicas un instrumento reconocido (ej. EUR/USD, USD/MXN, ORO, BTC/USD), tu publicación mostrará automáticamente un gráfico de TradingView con medias móviles. Archivos hasta 8 MB.</p>
       </div>
 
       <div class="section-head">
@@ -465,10 +482,14 @@
 
   function rankingPanelHTML() {
     return `
-      <div class="leaderboard-grid">
+      <div class="leaderboard-grid leaderboard-grid-3">
         <div>
           <div class="section-head"><h2 style="font-size:1.05rem;">🔥 Ranking semanal</h2></div>
           <div id="leaderboardWeekly"><p class="footer-text">Cargando ranking...</p></div>
+        </div>
+        <div>
+          <div class="section-head"><h2 style="font-size:1.05rem;">📅 Ranking mensual</h2></div>
+          <div id="leaderboardMonthly"><p class="footer-text">Cargando ranking...</p></div>
         </div>
         <div>
           <div class="section-head"><h2 style="font-size:1.05rem;">🏆 Ranking histórico</h2></div>
@@ -484,7 +505,7 @@
       <div class="leaderboard-row">
         <span class="leaderboard-rank">#${i + 1}</span>
         ${avatarHTML(p, 'trader-avatar')}
-        <div class="leaderboard-name"><strong>${escapeHtml(p.username)}</strong>${rankBadgeHTML(p.rank)}</div>
+        <div class="leaderboard-name"><strong>${escapeHtml(p.username)}</strong>${verifiedBadgeHTML(p)}${rankBadgeHTML(p.rank)}</div>
         <span class="leaderboard-points">${p.points} pts</span>
       </div>
     `).join('')}</div>`;
@@ -492,14 +513,17 @@
 
   async function loadLeaderboard() {
     const weeklyEl = document.getElementById('leaderboardWeekly');
+    const monthlyEl = document.getElementById('leaderboardMonthly');
     const allTimeEl = document.getElementById('leaderboardAllTime');
     if (!weeklyEl || !allTimeEl) return;
     try {
       const data = await callFunctionGETPublic('community-leaderboard');
       weeklyEl.innerHTML = leaderboardListHTML(data.weekly.map((p) => ({ ...p, points: p.weeklyPoints })));
+      if (monthlyEl) monthlyEl.innerHTML = leaderboardListHTML((data.monthly || []).map((p) => ({ ...p, points: p.monthlyPoints })));
       allTimeEl.innerHTML = leaderboardListHTML(data.allTime);
     } catch (e) {
       weeklyEl.innerHTML = `<p class="footer-text">${escapeHtml(e.message)}</p>`;
+      if (monthlyEl) monthlyEl.innerHTML = '';
       allTimeEl.innerHTML = '';
     }
   }
@@ -601,6 +625,8 @@
       <div class="mission-widget" id="missionWidget"><p class="footer-text">Cargando misiones diarias...</p></div>
       <div class="mission-widget" id="weeklyChallengeWidget"><p class="footer-text">Cargando reto semanal...</p></div>
 
+      ${storiesBarHTML()}
+
       <div class="community-tabs">
         <button class="community-tab-btn active" data-view="resumen">🏠 Resumen</button>
         <button class="community-tab-btn" data-view="foro">📋 Foro de ideas</button>
@@ -635,6 +661,8 @@
           <span class="pulse-value" id="pulseTradersCount">—</span>
         </div>
       </div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">⭐ Traders destacados</h2></div>
+      <div id="pulseFeaturedTraders" class="featured-traders-row"><p class="footer-text">Cargando traders destacados...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔥 Tendencias</h2></div>
       <div id="pulseTrending" class="trending-bar"><p class="footer-text">Cargando tendencias...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">⚡ Actividad reciente</h2></div>
@@ -706,6 +734,7 @@
     const trendingEl = document.getElementById('pulseTrending');
     const activityEl = document.getElementById('pulseActivity');
     const topEl = document.getElementById('pulseTopAnalysts');
+    const featuredEl = document.getElementById('pulseFeaturedTraders');
 
     if (onlineEl) onlineEl.textContent = String(presenceCount);
 
@@ -717,6 +746,7 @@
       const { count } = await sb.from('profiles').select('id', { count: 'exact' }).limit(1);
       tradersEl.textContent = count || 0;
     }
+    if (featuredEl) await loadFeaturedTraders(featuredEl);
     if (trendingEl) await loadTrending(trendingEl);
     if (activityEl) await loadActivityFeed(activityEl);
     if (topEl) {
@@ -843,9 +873,175 @@
 
   async function getProfileById(id) {
     if (profileCache[id]) return profileCache[id];
-    const { data } = await sb.from('profiles').select('username,avatar_color,avatar_url,rank').eq('id', id).single();
+    const { data } = await sb.from('profiles').select('username,avatar_color,avatar_url,rank,verified').eq('id', id).single();
     if (data) profileCache[id] = data;
     return data;
+  }
+
+  function wireFollowButtons(scopeEl) {
+    scopeEl.querySelectorAll('.follow-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        if (!requireAuthOrPrompt()) return;
+        const targetId = btn.dataset.followId;
+        const currentlyFollowing = btn.dataset.following === 'true';
+        btn.disabled = true;
+        try {
+          await callFunction('community-follow', { action: currentlyFollowing ? 'unfollow' : 'follow', targetProfileId: targetId });
+          const nowFollowing = !currentlyFollowing;
+          btn.dataset.following = String(nowFollowing);
+          btn.textContent = nowFollowing ? '✔ Siguiendo' : '+ Seguir';
+          btn.classList.toggle('following', nowFollowing);
+        } catch (e) {
+          alert(e.message);
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    });
+  }
+
+  function featuredTraderCardHTML(p, isFollowing) {
+    const isSelf = myProfile && myProfile.id === p.id;
+    const followBtnHTML = !isSelf
+      ? `<button class="follow-btn featured-follow-btn${isFollowing ? ' following' : ''}" data-follow-id="${p.id}" data-following="${isFollowing}">${isFollowing ? '✔ Siguiendo' : '+ Seguir'}</button>`
+      : '';
+    return `
+      <div class="featured-trader-card glass-card">
+        ${avatarHTML(p, 'trader-avatar')}
+        <strong>${escapeHtml(p.username)}${verifiedBadgeHTML(p)}</strong>
+        <div class="featured-trader-meta">${rankBadgeHTML(p.rank)}<span class="level-badge">Nv. ${levelFromPoints(p.points)}</span></div>
+        ${p.streak_days ? `<span class="streak-chip">🔥 ${p.streak_days} ${p.streak_days === 1 ? 'día' : 'días'}</span>` : ''}
+        ${followBtnHTML}
+      </div>
+    `;
+  }
+
+  async function loadFeaturedTraders(container) {
+    try {
+      const data = await callFunctionGETPublic('community-leaderboard');
+      const source = (data.allTime || []).slice(0, 8);
+      if (!source.length) { container.innerHTML = '<p class="footer-text">Todavía no hay suficientes traders destacados.</p>'; return; }
+      let followingIds = new Set();
+      if (myProfile) {
+        try {
+          const { data: myFollows } = await sb.from('follows').select('following_id').eq('follower_id', myProfile.id);
+          followingIds = new Set((myFollows || []).map((f) => f.following_id));
+        } catch (e) { /* followingIds queda vacío si falla */ }
+      }
+      container.innerHTML = source.map((p) => featuredTraderCardHTML(p, followingIds.has(p.id))).join('');
+      wireFollowButtons(container);
+    } catch (e) {
+      container.innerHTML = '<p class="footer-text">No se pudieron cargar los traders destacados.</p>';
+    }
+  }
+
+  function storiesBarHTML() {
+    return `<div id="storiesBar" class="stories-bar"><p class="footer-text">Cargando historias...</p></div>`;
+  }
+
+  function openStoryViewer(storiesForProfile) {
+    let idx = 0;
+    const overlay = document.createElement('div');
+    overlay.className = 'story-viewer-overlay';
+    function renderStory() {
+      const s = storiesForProfile[idx];
+      const mediaHTML = s.media_type === 'video'
+        ? `<video src="${escapeHtml(s.media_url)}" controls autoplay class="story-viewer-media"></video>`
+        : `<img src="${escapeHtml(s.media_url)}" class="story-viewer-media" alt="">`;
+      overlay.innerHTML = `
+        <div class="story-viewer-card">
+          <button class="story-viewer-close" type="button">✕</button>
+          ${mediaHTML}
+          ${s.caption ? `<p class="story-viewer-caption">${escapeHtml(s.caption)}</p>` : ''}
+          <div class="story-viewer-nav">
+            <button type="button" class="story-viewer-prev" ${idx === 0 ? 'disabled' : ''}>‹</button>
+            <span>${idx + 1} / ${storiesForProfile.length}</span>
+            <button type="button" class="story-viewer-next" ${idx === storiesForProfile.length - 1 ? 'disabled' : ''}>›</button>
+          </div>
+        </div>
+      `;
+      overlay.querySelector('.story-viewer-close').addEventListener('click', () => overlay.remove());
+      overlay.querySelector('.story-viewer-prev').addEventListener('click', () => { if (idx > 0) { idx--; renderStory(); } });
+      overlay.querySelector('.story-viewer-next').addEventListener('click', () => { if (idx < storiesForProfile.length - 1) { idx++; renderStory(); } });
+    }
+    renderStory();
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+    document.body.appendChild(overlay);
+  }
+
+  function openStoryUploadModal() {
+    if (!requireAuthOrPrompt()) return;
+    const overlay = document.createElement('div');
+    overlay.className = 'story-viewer-overlay';
+    overlay.innerHTML = `
+      <div class="story-viewer-card story-upload-card glass-card">
+        <button class="story-viewer-close" type="button">✕</button>
+        <h3>Comparte una historia</h3>
+        <p class="footer-text">Se muestra a toda la comunidad durante 24 horas. Imagen o video, hasta 8 MB.</p>
+        <input type="file" id="storyFileInput" accept="image/png,image/jpeg,image/gif,image/webp,video/mp4,video/webm">
+        <textarea id="storyCaptionInput" maxlength="140" placeholder="Descripción breve (opcional)"></textarea>
+        <button class="btn btn-gold" id="storySubmitBtn" style="margin-top:10px;">Publicar historia</button>
+        <div class="community-form-msg" id="storyMsg"></div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+    overlay.querySelector('.story-viewer-close').addEventListener('click', () => overlay.remove());
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+    document.getElementById('storySubmitBtn').addEventListener('click', async () => {
+      const fileInput = document.getElementById('storyFileInput');
+      const msgEl = document.getElementById('storyMsg');
+      const file = fileInput.files[0];
+      if (!file) { msgEl.textContent = 'Selecciona una imagen o video.'; msgEl.className = 'community-form-msg error'; return; }
+      if (file.size > 8 * 1024 * 1024) { msgEl.textContent = 'El archivo no puede pesar más de 8 MB.'; msgEl.className = 'community-form-msg error'; return; }
+      const btn = document.getElementById('storySubmitBtn');
+      btn.disabled = true;
+      msgEl.textContent = '';
+      msgEl.className = 'community-form-msg';
+      try {
+        const base64 = await fileToBase64(file);
+        const caption = document.getElementById('storyCaptionInput').value.trim();
+        await callFunction('community-story-post', { mediaBase64: base64, mediaType: file.type, caption });
+        overlay.remove();
+        const bar = document.getElementById('storiesBar');
+        if (bar) loadStoriesBar(bar);
+      } catch (e) {
+        msgEl.textContent = e.message;
+        msgEl.className = 'community-form-msg error';
+        btn.disabled = false;
+      }
+    });
+  }
+
+  async function loadStoriesBar(container) {
+    try {
+      const nowIso = new Date().toISOString();
+      const { data: stories } = await sb.from('stories').select('*').gt('expires_at', nowIso).order('created_at', { ascending: false }).limit(60);
+      const byProfile = {};
+      (stories || []).forEach((s) => {
+        if (!byProfile[s.profile_id]) byProfile[s.profile_id] = [];
+        byProfile[s.profile_id].push(s);
+      });
+      const profileIds = Object.keys(byProfile);
+
+      const addBubbleHTML = `<div class="story-bubble story-add-bubble" id="storyAddBtn"><span class="story-add-icon">+</span><span class="story-bubble-label">Tu historia</span></div>`;
+
+      if (!profileIds.length) {
+        container.innerHTML = addBubbleHTML + '<p class="footer-text" style="padding:10px 4px;">Nadie ha publicado historias todavía.</p>';
+      } else {
+        const rows = await Promise.all(profileIds.map(async (pid) => {
+          const author = await getProfileById(pid) || { username: 'Usuario', avatar_color: '#8b93a7' };
+          return `<div class="story-bubble" data-profile-id="${pid}">${avatarHTML(author, 'trader-avatar')}<span class="story-bubble-label">${escapeHtml(author.username)}</span></div>`;
+        }));
+        container.innerHTML = addBubbleHTML + rows.join('');
+      }
+
+      document.getElementById('storyAddBtn').addEventListener('click', openStoryUploadModal);
+      container.querySelectorAll('.story-bubble[data-profile-id]').forEach((el) => {
+        el.addEventListener('click', () => openStoryViewer(byProfile[el.dataset.profileId]));
+      });
+    } catch (e) {
+      container.innerHTML = '<p class="footer-text">No se pudieron cargar las historias.</p>';
+    }
   }
 
   function reactionsRowHTML(postId) {
@@ -903,6 +1099,14 @@
     const chartHTML = resolvedSymbol
       ? `<div class="community-post-chart"><div class="tradingview-widget-container" id="postChart-${post.id}"></div></div>`
       : '';
+    let mediaHTML = '';
+    if (post.media_url && post.media_type === 'image') {
+      mediaHTML = `<img class="community-post-media-image" src="${escapeHtml(post.media_url)}" alt="Imagen adjunta" loading="lazy" onclick="window.open(this.src,'_blank')">`;
+    } else if (post.media_url && post.media_type === 'video') {
+      mediaHTML = `<video class="community-post-media-video" src="${escapeHtml(post.media_url)}" controls preload="metadata"></video>`;
+    } else if (post.media_url && post.media_type === 'pdf') {
+      mediaHTML = `<a class="community-post-media-pdf" href="${escapeHtml(post.media_url)}" target="_blank" rel="noopener">📄 Ver documento PDF adjunto</a>`;
+    }
     const isBookmarked = bookmarkedIds && bookmarkedIds.has(post.id);
     const isFollowing = followingIds && followingIds.has(authorProfile.id);
     const followBtnHTML = (myProfile && authorProfile.id !== myProfile.id)
@@ -912,11 +1116,12 @@
       <article class="community-post-card" data-post-id="${post.id}">
         <div class="community-post-head">
           ${avatarHTML(authorProfile, 'trader-avatar')}
-          <div><strong>${escapeHtml(authorProfile.username)}</strong>${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
+          <div><strong>${escapeHtml(authorProfile.username)}</strong>${verifiedBadgeHTML(authorProfile)}${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
           ${followBtnHTML}
         </div>
         <h4>${escapeHtml(post.title)}</h4>
         ${chartHTML}
+        ${mediaHTML}
         <p>${escapeHtml(post.body)}</p>
         ${pollHTML(post)}
         <div class="community-post-footer">
@@ -997,25 +1202,7 @@
     }));
     feedEl.innerHTML = cards.join('');
 
-    feedEl.querySelectorAll('.follow-btn').forEach((btn) => {
-      btn.addEventListener('click', async () => {
-        if (!requireAuthOrPrompt()) return;
-        const targetId = btn.dataset.followId;
-        const currentlyFollowing = btn.dataset.following === 'true';
-        btn.disabled = true;
-        try {
-          await callFunction('community-follow', { action: currentlyFollowing ? 'unfollow' : 'follow', targetProfileId: targetId });
-          const nowFollowing = !currentlyFollowing;
-          btn.dataset.following = String(nowFollowing);
-          btn.textContent = nowFollowing ? '✔ Siguiendo' : '+ Seguir';
-          btn.classList.toggle('following', nowFollowing);
-        } catch (e) {
-          alert(e.message);
-        } finally {
-          btn.disabled = false;
-        }
-      });
-    });
+    wireFollowButtons(feedEl);
 
     const sharedPostId = new URLSearchParams(window.location.search).get('post');
     if (sharedPostId && !showBookmarksOnly) {
@@ -1361,6 +1548,20 @@
       });
     }
 
+    let pendingPostMediaFile = null;
+    const postAttachBtn = document.getElementById('postAttachBtn');
+    const postMediaInput = document.getElementById('postMediaInput');
+    if (postAttachBtn && postMediaInput) {
+      postAttachBtn.addEventListener('click', () => {
+        if (!requireAuthOrPrompt()) return;
+        postMediaInput.click();
+      });
+      postMediaInput.addEventListener('change', () => {
+        pendingPostMediaFile = postMediaInput.files[0] || null;
+        document.getElementById('postMediaName').textContent = pendingPostMediaFile ? pendingPostMediaFile.name : '';
+      });
+    }
+
     const postSubmitBtn = document.getElementById('postSubmit');
     if (!postSubmitBtn) return;
     postSubmitBtn.addEventListener('click', async () => {
@@ -1388,10 +1589,21 @@
       msgEl.textContent = '';
       msgEl.className = 'community-form-msg';
       try {
-        await callFunction('community-post', { title, body, category, symbol, pollOptions, sentiment: selectedSentiment });
+        let mediaBase64 = null;
+        let mediaType = null;
+        if (pendingPostMediaFile) {
+          if (pendingPostMediaFile.size > 8 * 1024 * 1024) throw new Error('El archivo no puede pesar más de 8 MB.');
+          mediaBase64 = await fileToBase64(pendingPostMediaFile);
+          mediaType = pendingPostMediaFile.type;
+        }
+        await callFunction('community-post', { title, body, category, symbol, pollOptions, sentiment: selectedSentiment, mediaBase64, mediaType });
         document.getElementById('postTitle').value = '';
         document.getElementById('postBody').value = '';
         document.getElementById('postSymbol').value = '';
+        pendingPostMediaFile = null;
+        if (postMediaInput) postMediaInput.value = '';
+        const postMediaNameEl = document.getElementById('postMediaName');
+        if (postMediaNameEl) postMediaNameEl.textContent = '';
         if (sentimentPicker) {
           sentimentPicker.querySelectorAll('.sentiment-option').forEach((b) => b.classList.remove('selected'));
           selectedSentiment = null;
@@ -1590,6 +1802,29 @@
         btn.disabled = false;
       }
     });
+
+    const verifyBtn = document.getElementById('adminSetVerifiedBtn');
+    if (verifyBtn) {
+      verifyBtn.addEventListener('click', async () => {
+        const msgEl = document.getElementById('adminVerifyMsg');
+        const username = document.getElementById('adminVerifyUsername').value.trim();
+        const verified = document.getElementById('adminVerifyValue').value === 'true';
+        msgEl.textContent = '';
+        msgEl.className = 'community-form-msg';
+        verifyBtn.disabled = true;
+        try {
+          await callFunction('community-set-verified', { username, verified });
+          msgEl.textContent = `Listo: ${username} ${verified ? 'ahora está verificado.' : 'ya no está verificado.'}`;
+          msgEl.className = 'community-form-msg success';
+          document.getElementById('adminVerifyUsername').value = '';
+        } catch (e) {
+          msgEl.textContent = e.message;
+          msgEl.className = 'community-form-msg error';
+        } finally {
+          verifyBtn.disabled = false;
+        }
+      });
+    }
   }
 
   function wireAvatarShop() {
@@ -1696,6 +1931,7 @@
       document.getElementById('guestLoginBtn').addEventListener('click', () => netlifyIdentity.open('login'));
       wireDashboardTabs();
       switchDashboardView('resumen');
+      loadStoriesBar(document.getElementById('storiesBar'));
       return;
     }
 
@@ -1754,6 +1990,7 @@
     loadFollowCounts();
     loadMissions();
     loadWeeklyChallenge();
+    loadStoriesBar(document.getElementById('storiesBar'));
   }
 
   const heroSignupBtn = document.getElementById('heroSignupBtn');

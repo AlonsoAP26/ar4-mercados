@@ -981,6 +981,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 .leaderboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.leaderboard-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+@media (max-width: 900px) {
+  .leaderboard-grid-3 { grid-template-columns: 1fr; }
+}
 .leaderboard-list { display: flex; flex-direction: column; gap: 8px; }
 .leaderboard-row {
   display: flex;
@@ -2041,3 +2045,72 @@ a { color: inherit; text-decoration: none; }
 .activity-row:last-child { border-bottom: none; }
 .activity-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
 .activity-time { margin-left: auto; color: var(--text-low); font-size: 0.74rem; font-family: var(--mono); flex-shrink: 0; }
+
+.verified-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 15px; height: 15px; border-radius: 50%; background: var(--blue);
+  color: #fff; font-size: 0.62rem; margin-left: 3px; vertical-align: middle;
+}
+
+.featured-traders-row {
+  display: flex; gap: 14px; overflow-x: auto; padding-bottom: 6px; scroll-snap-type: x proximity;
+}
+.featured-trader-card {
+  flex: 0 0 160px; scroll-snap-align: start; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 18px 14px;
+}
+.featured-trader-card .trader-avatar { width: 52px; height: 52px; font-size: 1rem; }
+.featured-trader-meta { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.featured-trader-card .featured-follow-btn { width: 100%; margin-top: 4px; }
+
+.community-post-media-image { display: block; width: 100%; max-height: 380px; object-fit: cover; border-radius: 10px; margin: 10px 0; cursor: pointer; }
+.community-post-media-video { display: block; width: 100%; max-height: 380px; border-radius: 10px; margin: 10px 0; background: #000; }
+.community-post-media-pdf {
+  display: inline-flex; align-items: center; gap: 6px; margin: 10px 0; padding: 8px 14px;
+  border: 1px solid var(--card-border); border-radius: 8px; color: var(--gold-bright); font-size: 0.86rem;
+}
+.community-post-media-pdf:hover { border-color: var(--gold); }
+
+/* Historias (24h) */
+.stories-bar {
+  display: flex; gap: 14px; overflow-x: auto; padding: 14px 4px; margin-bottom: 18px;
+  border-bottom: 1px solid var(--card-border);
+}
+.story-bubble {
+  flex: 0 0 68px; display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer;
+}
+.story-bubble .trader-avatar {
+  width: 58px; height: 58px; font-size: 1.1rem;
+  border: 2px solid var(--gold-bright); padding: 2px; box-sizing: content-box; border-radius: 50%;
+}
+.story-bubble-label { font-size: 0.68rem; color: var(--text-mid); max-width: 68px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.story-add-bubble .story-add-icon {
+  width: 58px; height: 58px; border-radius: 50%; border: 2px dashed var(--card-border);
+  display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: var(--text-low);
+}
+.story-add-bubble:hover .story-add-icon { border-color: var(--gold); color: var(--gold-bright); }
+
+.story-viewer-overlay {
+  position: fixed; inset: 0; background: rgba(2,4,9,0.92); backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center; z-index: 300; padding: 20px;
+}
+.story-viewer-card { max-width: 420px; width: 100%; text-align: center; position: relative; }
+.story-viewer-media { width: 100%; max-height: 70vh; border-radius: 14px; background: #000; object-fit: contain; }
+.story-viewer-caption { color: var(--text-hi); font-size: 0.9rem; margin-top: 12px; }
+.story-viewer-nav { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 14px; color: var(--text-mid); font-size: 0.82rem; }
+.story-viewer-nav button {
+  background: rgba(255,255,255,0.08); border: none; color: var(--text-hi); width: 34px; height: 34px;
+  border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+}
+.story-viewer-nav button:disabled { opacity: 0.3; cursor: default; }
+.story-viewer-close {
+  position: absolute; top: -36px; right: 0; background: none; border: none; color: var(--text-hi);
+  font-size: 1.2rem; cursor: pointer;
+}
+.story-upload-card { padding: 28px; text-align: left; }
+.story-upload-card h3 { margin-bottom: 6px; }
+.story-upload-card input[type="file"] { margin: 14px 0 10px; color: var(--text-mid); font-size: 0.84rem; }
+.story-upload-card textarea {
+  width: 100%; min-height: 60px; background: var(--bg-0); border: 1px solid var(--card-border);
+  border-radius: 8px; color: var(--text-hi); font-size: 0.86rem; padding: 8px 10px; font-family: inherit;
+}
