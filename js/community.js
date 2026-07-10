@@ -516,6 +516,7 @@
         </div>
       </div>
       <div class="community-form-msg" id="redeemMsg" style="margin-bottom:14px;"></div>
+      ${!isAdmin ? '<button class="btn btn-outline" id="bootstrapAdminBtn" style="font-size:0.72rem;padding:6px 10px;margin-bottom:14px;">🔑 Activar cuenta de administrador (solo dueño del sitio)</button><div class="community-form-msg" id="bootstrapAdminMsg" style="margin-bottom:14px;"></div>' : ''}
 
       ${isAdmin ? adminPanelHTML() : ''}
 
@@ -1357,6 +1358,24 @@
     wireDashboardTabs();
     document.getElementById('communityEditProfileBtn').addEventListener('click', () => { editingProfile = true; render(); });
     document.getElementById('communityAvatarShopBtn').addEventListener('click', () => { shoppingAvatars = true; render(); });
+    const bootstrapBtn = document.getElementById('bootstrapAdminBtn');
+    if (bootstrapBtn) {
+      bootstrapBtn.addEventListener('click', async () => {
+        const msgEl = document.getElementById('bootstrapAdminMsg');
+        bootstrapBtn.disabled = true;
+        msgEl.textContent = '';
+        msgEl.className = 'community-form-msg';
+        try {
+          await callFunction('bootstrap-admin', {});
+          msgEl.textContent = '¡Listo! Cierra sesión y vuelve a iniciarla para que se active del todo.';
+          msgEl.className = 'community-form-msg success';
+        } catch (e) {
+          msgEl.textContent = e.message;
+          msgEl.className = 'community-form-msg error';
+          bootstrapBtn.disabled = false;
+        }
+      });
+    }
     loadFeed();
     loadMissions();
     loadWeeklyChallenge();
