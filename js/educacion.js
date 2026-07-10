@@ -197,6 +197,54 @@ function wireCompleteButton(m) {
   });
 }
 
+function renderModuleQuiz(m) {
+  const section = document.getElementById('moduloQuizSection');
+  if (!section) return;
+  if (!m.quiz || !m.quiz.length) { section.innerHTML = ''; return; }
+
+  section.innerHTML = `
+    <div class="community-form" style="margin-top:28px;">
+      <h3 style="margin-bottom:4px;">🧩 Pon a prueba lo que aprendiste</h3>
+      <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">${m.quiz.length} preguntas rápidas, solo para reforzar — no afecta tu progreso si te equivocas.</p>
+      <div id="moduloQuizForm"></div>
+      <button class="btn btn-gold" id="moduloQuizSubmitBtn" style="margin-top:14px;">Revisar respuestas</button>
+      <div id="moduloQuizResult"></div>
+    </div>
+  `;
+
+  const formEl = document.getElementById('moduloQuizForm');
+  formEl.innerHTML = m.quiz.map((item, qi) => `
+    <div style="margin-bottom:16px;">
+      <label style="display:block;margin-bottom:8px;font-size:0.9rem;color:var(--text-hi);">${qi + 1}. ${item.q}</label>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        ${item.options.map((opt, oi) => `
+          <label style="display:flex;align-items:center;gap:8px;font-weight:400;font-size:0.85rem;color:var(--text-mid);cursor:pointer;">
+            <input type="radio" name="moduloquiz_${qi}" value="${oi}"> ${opt}
+          </label>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('moduloQuizSubmitBtn').addEventListener('click', () => {
+    let correctCount = 0;
+    m.quiz.forEach((item, qi) => {
+      const checked = document.querySelector(`input[name="moduloquiz_${qi}"]:checked`);
+      if (checked && parseInt(checked.value, 10) === item.correct) correctCount++;
+      formEl.querySelectorAll(`input[name="moduloquiz_${qi}"]`).forEach((input) => {
+        const label = input.closest('label');
+        const val = parseInt(input.value, 10);
+        label.style.color = '';
+        if (val === item.correct) label.style.color = 'var(--green)';
+        else if (input.checked) label.style.color = 'var(--crimson-bright)';
+      });
+    });
+    const resultEl = document.getElementById('moduloQuizResult');
+    const pct = Math.round((correctCount / m.quiz.length) * 100);
+    resultEl.innerHTML = `<div class="community-form-msg ${pct === 100 ? 'success' : ''}" style="margin-top:14px;">Acertaste ${correctCount}/${m.quiz.length}. ${pct === 100 ? '¡Perfecto!' : 'Revisa en verde la respuesta correcta.'}</div>`;
+  });
+}
+
 async function initModuloDetail() {
   const body = document.getElementById('moduloBody');
   if (!body) return;
@@ -235,6 +283,7 @@ async function initModuloDetail() {
   }
 
   body.innerHTML = m.body;
+  renderModuleQuiz(m);
 
   wireCompleteButton(m);
 
