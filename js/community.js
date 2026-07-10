@@ -126,6 +126,23 @@
   let elitePollTimer = null;
   let editingProfile = false;
   let shoppingAvatars = false;
+  let presenceCount = 1;
+  let activeTagFilter = null;
+
+  function initPresence() {
+    const presenceKey = (netlifyIdentity.currentUser() && netlifyIdentity.currentUser().id) || ('guest-' + Math.random().toString(36).slice(2));
+    const channel = sb.channel('community-online', { config: { presence: { key: presenceKey } } });
+    channel
+      .on('presence', { event: 'sync' }, () => {
+        presenceCount = Math.max(1, Object.keys(channel.presenceState()).length);
+        const el = document.getElementById('pulseOnlineCount');
+        if (el) el.textContent = String(presenceCount);
+        document.dispatchEvent(new CustomEvent('ar4-presence-update'));
+      })
+      .subscribe(async (status) => {
+        if (status === 'SUBSCRIBED') await channel.track({ online_at: new Date().toISOString() });
+      });
+  }
 
   function timeAgo(iso) {
     const diffMs = Date.now() - new Date(iso).getTime();
@@ -210,15 +227,67 @@
     return data.success ? data.profile : null;
   }
 
-  function loggedOutHTML() {
-    return `
-      <div class="promo-banner">
-        <div class="promo-banner-text">
-          <h3>Inicia sesión para unirte a la comunidad</h3>
-          <p>Crea perfil, publica ideas, vota las de otros traders y chatea en las salas de Forex, Acciones y Criptomonedas.</p>
+  async function callFunctionGETPublic(name) {
+    const res = await fetch('/.netlify/functions/' + name);
+    const data = await res.json();
+    if (!data.success) throw new Error(data.error || 'Error desconocido');
+    return data;
+  }
+
+  function isLoggedIn() {
+    return !!netlifyIdentity.currentUser();
+  }
+
+  function requireAuthOrPrompt() {
+    if (isLoggedIn()) return true;
+    showJoinPrompt();
+    return false;
+  }
+
+  function showJoinPrompt() {
+    let el = document.getElementById('communityJoinPrompt');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'communityJoinPrompt';
+      el.className = 'join-prompt-overlay';
+      document.body.appendChild(el);
+      el.addEventListener('click', (e) => { if (e.target === el) el.classList.remove('visible'); });
+    }
+    el.innerHTML = `
+      <div class="join-prompt-card glass-card">
+        <button class="join-prompt-close" id="joinPromptClose" type="button">✕</button>
+        <h3>Únete gratis a AR4 Mercados</h3>
+        <p>Crea tu cuenta para participar en la comunidad, publicar tus análisis, seguir traders profesionales y acceder a herramientas exclusivas.</p>
+        <div class="join-prompt-actions">
+          <button class="btn btn-gold" id="joinPromptSignup" type="button">Crear cuenta</button>
+          <button class="btn btn-outline" id="joinPromptLogin" type="button">Iniciar sesión</button>
         </div>
-        <a href="#" class="btn btn-gold" id="communityLoginBtn">Iniciar sesión / Crear cuenta</a>
       </div>
+    `;
+    el.classList.add('visible');
+    document.getElementById('joinPromptClose').addEventListener('click', () => el.classList.remove('visible'));
+    document.getElementById('joinPromptSignup').addEventListener('click', () => { el.classList.remove('visible'); netlifyIdentity.open('signup'); });
+    document.getElementById('joinPromptLogin').addEventListener('click', () => { el.classList.remove('visible'); netlifyIdentity.open('login'); });
+  }
+
+  function guestShellHTML() {
+    return `
+      <div class="community-guest-banner glass-card">
+        <div>
+          <h3>Únete gratis a la comunidad AR4</h3>
+          <p>Publica tus análisis, sigue a otros traders, comenta, reacciona y construye tu reputación.</p>
+        </div>
+        <div class="community-guest-actions">
+          <button class="btn btn-gold" id="guestSignupBtn" type="button">Crear cuenta</button>
+          <button class="btn btn-outline" id="guestLoginBtn" type="button">Iniciar sesión</button>
+        </div>
+      </div>
+      <div class="community-tabs">
+        <button class="community-tab-btn active" data-view="resumen">🏠 Resumen</button>
+        <button class="community-tab-btn" data-view="foro">📋 Foro de ideas</button>
+        <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
+      </div>
+      <div id="communityMainView"><p class="footer-text">Cargando...</p></div>
     `;
   }
 
@@ -326,9 +395,11 @@
 
   function foroPanelHTML() {
     const rank = myEffectiveRank();
-    const basicoNote = rank === 'basico'
-      ? '<p style="color:var(--text-low);font-size:0.78rem;margin-top:8px;">Rango Básico: 1 publicación cada 24 horas. Sube a VIP para publicar sin límite.</p>'
-      : '';
+    const basicoNote = !myProfile
+      ? '<p style="color:var(--text-low);font-size:0.78rem;margin-top:8px;">Crea tu cuenta gratis para publicar tu propio análisis.</p>'
+      : rank === 'basico'
+        ? '<p style="color:var(--text-low);font-size:0.78rem;margin-top:8px;">Rango Básico: 1 publicación cada 24 horas. Sube a VIP para publicar sin límite.</p>'
+        : '';
     return `
       <div class="community-form">
         <h3 style="margin-bottom:14px;">Publicar una idea</h3>
@@ -365,6 +436,7 @@
         <h2>Ideas de la comunidad</h2>
         <button class="filter-chip" id="bookmarksToggleBtn" data-filter="all">🔖 Ver guardados</button>
       </div>
+      ${activeTagFilter ? `<div class="active-filter-chip">Filtrando por <strong>${escapeHtml(activeTagFilter)}</strong> <button id="clearTagFilterBtn" type="button">✕ Quitar</button></div>` : ''}
       <div id="communityFeed"><p class="footer-text">Cargando publicaciones...</p></div>
     `;
   }
@@ -423,7 +495,7 @@
     const allTimeEl = document.getElementById('leaderboardAllTime');
     if (!weeklyEl || !allTimeEl) return;
     try {
-      const data = await callFunctionGET('community-leaderboard');
+      const data = await callFunctionGETPublic('community-leaderboard');
       weeklyEl.innerHTML = leaderboardListHTML(data.weekly.map((p) => ({ ...p, points: p.weeklyPoints })));
       allTimeEl.innerHTML = leaderboardListHTML(data.allTime);
     } catch (e) {
@@ -547,9 +619,129 @@
     return 'Buenas noches';
   }
 
+  function communityPulseHTML() {
+    return `
+      <div class="community-pulse-grid">
+        <div class="glass-card pulse-card">
+          <span class="pulse-label">🟢 Conectados ahora</span>
+          <span class="pulse-value" id="pulseOnlineCount">—</span>
+        </div>
+        <div class="glass-card pulse-card">
+          <span class="pulse-label">📝 Ideas publicadas</span>
+          <span class="pulse-value" id="pulsePostsCount">—</span>
+        </div>
+        <div class="glass-card pulse-card">
+          <span class="pulse-label">👥 Traders registrados</span>
+          <span class="pulse-value" id="pulseTradersCount">—</span>
+        </div>
+      </div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔥 Tendencias</h2></div>
+      <div id="pulseTrending" class="trending-bar"><p class="footer-text">Cargando tendencias...</p></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">⚡ Actividad reciente</h2></div>
+      <div id="pulseActivity"><p class="footer-text">Cargando actividad...</p></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🏆 Top analistas de la semana</h2></div>
+      <div id="pulseTopAnalysts"><p class="footer-text">Cargando ranking...</p></div>
+    `;
+  }
+
+  async function loadTrending(container) {
+    try {
+      const { data: posts } = await sb.from('community_posts').select('body,symbol').order('created_at', { ascending: false }).limit(60);
+      const tally = {};
+      (posts || []).forEach((p) => {
+        const tags = (p.body || '').match(/#[a-zA-Z0-9áéíóúñÁÉÍÓÚÑ]{2,20}/g) || [];
+        tags.forEach((t) => { const key = t.toUpperCase(); tally[key] = (tally[key] || 0) + 1; });
+        if (p.symbol) { const key = '#' + p.symbol.trim().toUpperCase().replace(/\s+/g, ''); tally[key] = (tally[key] || 0) + 1; }
+      });
+      const sorted = Object.entries(tally).sort((a, b) => b[1] - a[1]).slice(0, 8);
+      if (!sorted.length) { container.innerHTML = '<p class="footer-text">Todavía no hay suficientes publicaciones para mostrar tendencias.</p>'; return; }
+      container.innerHTML = sorted.map(([tag, count]) => `<button class="trend-chip" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)} <span>${count}</span></button>`).join('');
+      container.querySelectorAll('.trend-chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          activeTagFilter = btn.dataset.tag;
+          switchDashboardView('foro');
+        });
+      });
+    } catch (e) {
+      container.innerHTML = '<p class="footer-text">No se pudieron cargar las tendencias.</p>';
+    }
+  }
+
+  async function loadActivityFeed(container) {
+    try {
+      const [postsRes, followsRes, commentsRes] = await Promise.all([
+        sb.from('community_posts').select('id,profile_id,created_at').order('created_at', { ascending: false }).limit(5),
+        sb.from('follows').select('follower_id,following_id,created_at').order('created_at', { ascending: false }).limit(5),
+        sb.from('comments').select('profile_id,created_at').eq('target_type', 'post').order('created_at', { ascending: false }).limit(5)
+      ]);
+      const events = [];
+      (postsRes.data || []).forEach((p) => events.push({ type: 'post', profileId: p.profile_id, created_at: p.created_at }));
+      (followsRes.data || []).forEach((f) => events.push({ type: 'follow', profileId: f.follower_id, targetId: f.following_id, created_at: f.created_at }));
+      (commentsRes.data || []).forEach((c) => events.push({ type: 'comment', profileId: c.profile_id, created_at: c.created_at }));
+      events.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+      const top = events.slice(0, 8);
+      if (!top.length) { container.innerHTML = '<p class="footer-text">Todavía no hay actividad reciente. ¡Sé el primero en publicar!</p>'; return; }
+      const rows = await Promise.all(top.map(async (ev) => {
+        const author = await getProfileById(ev.profileId);
+        const name = author ? escapeHtml(author.username) : 'Alguien';
+        let text;
+        if (ev.type === 'post') text = `${name} publicó un análisis`;
+        else if (ev.type === 'comment') text = `${name} comentó una publicación`;
+        else {
+          const target = await getProfileById(ev.targetId);
+          text = `${name} empezó a seguir a ${target ? escapeHtml(target.username) : 'alguien'}`;
+        }
+        return `<div class="activity-row"><span class="activity-dot"></span><span>${text}</span><span class="activity-time">${timeAgo(ev.created_at)}</span></div>`;
+      }));
+      container.innerHTML = rows.join('');
+    } catch (e) {
+      container.innerHTML = '<p class="footer-text">No se pudo cargar la actividad reciente.</p>';
+    }
+  }
+
+  async function loadCommunityPulse() {
+    const onlineEl = document.getElementById('pulseOnlineCount');
+    const postsEl = document.getElementById('pulsePostsCount');
+    const tradersEl = document.getElementById('pulseTradersCount');
+    const trendingEl = document.getElementById('pulseTrending');
+    const activityEl = document.getElementById('pulseActivity');
+    const topEl = document.getElementById('pulseTopAnalysts');
+
+    if (onlineEl) onlineEl.textContent = String(presenceCount);
+
+    if (postsEl) {
+      const { count } = await sb.from('community_posts').select('id', { count: 'exact' }).limit(1);
+      postsEl.textContent = count || 0;
+    }
+    if (tradersEl) {
+      const { count } = await sb.from('profiles').select('id', { count: 'exact' }).limit(1);
+      tradersEl.textContent = count || 0;
+    }
+    if (trendingEl) await loadTrending(trendingEl);
+    if (activityEl) await loadActivityFeed(activityEl);
+    if (topEl) {
+      try {
+        const data = await callFunctionGETPublic('community-leaderboard');
+        const source = (data.weekly && data.weekly.length) ? data.weekly.map((p) => ({ ...p, points: p.weeklyPoints })) : data.allTime;
+        topEl.innerHTML = leaderboardListHTML((source || []).slice(0, 5));
+      } catch (e) {
+        topEl.innerHTML = '<p class="footer-text">Todavía no hay datos suficientes.</p>';
+      }
+    }
+  }
+
+  function guestResumenPanelHTML() {
+    return communityPulseHTML();
+  }
+
+  async function loadGuestResumen() {
+    await loadCommunityPulse();
+  }
+
   function resumenPanelHTML() {
     return `
-      <div class="community-form" id="resumenGreeting">
+      ${communityPulseHTML()}
+      <div class="community-form" id="resumenGreeting" style="margin-top:20px;">
         <p class="footer-text">Cargando resumen...</p>
       </div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔔 Notificaciones</h2></div>
@@ -604,6 +796,8 @@
     const watchlistEl = document.getElementById('resumenWatchlist');
     if (!greetingEl) return;
 
+    loadCommunityPulse();
+
     const streak = myProfile.streak_days || 0;
     greetingEl.innerHTML = `
       <h3 style="margin-bottom:4px;">${greetingWord()}, ${escapeHtml(myProfile.username)} 👋</h3>
@@ -638,8 +832,8 @@
     if (!el) return;
     try {
       const [{ count: followersCount }, { count: followingCount }] = await Promise.all([
-        sb.from('follows').select('*', { count: 'exact', head: true }).eq('following_id', myProfile.id),
-        sb.from('follows').select('*', { count: 'exact', head: true }).eq('follower_id', myProfile.id)
+        sb.from('follows').select('id', { count: 'exact' }).eq('following_id', myProfile.id).limit(1),
+        sb.from('follows').select('id', { count: 'exact' }).eq('follower_id', myProfile.id).limit(1)
       ]);
       el.textContent = `${followersCount || 0} seguidores · ${followingCount || 0} siguiendo`;
     } catch (e) {
@@ -764,7 +958,7 @@
     }
 
     lastLoadedPosts = posts;
-    const bookmarkedIds = await getMyBookmarks();
+    const bookmarkedIds = myProfile ? await getMyBookmarks() : new Set();
 
     const postIds = posts.map((p) => p.id);
     const { data: reactions } = await sb.from('post_reactions').select('post_id,emoji').in('post_id', postIds);
@@ -781,10 +975,19 @@
       } catch (e) { /* followingIds queda vacío si falla */ }
     }
 
-    const visiblePosts = showBookmarksOnly ? posts.filter((p) => bookmarkedIds.has(p.id)) : posts;
+    let visiblePosts = showBookmarksOnly ? posts.filter((p) => bookmarkedIds.has(p.id)) : posts;
+    if (activeTagFilter) {
+      const needle = activeTagFilter.replace('#', '').toUpperCase();
+      visiblePosts = visiblePosts.filter((p) =>
+        (p.body || '').toUpperCase().includes('#' + needle) ||
+        (p.symbol || '').toUpperCase().replace(/\s+/g, '') === needle
+      );
+    }
 
     if (!visiblePosts.length) {
-      feedEl.innerHTML = '<p class="footer-text">Todavía no guardaste ninguna publicación.</p>';
+      feedEl.innerHTML = showBookmarksOnly
+        ? '<p class="footer-text">Todavía no guardaste ninguna publicación.</p>'
+        : '<p class="footer-text">No hay publicaciones que coincidan con este filtro todavía.</p>';
       return;
     }
 
@@ -796,6 +999,7 @@
 
     feedEl.querySelectorAll('.follow-btn').forEach((btn) => {
       btn.addEventListener('click', async () => {
+        if (!requireAuthOrPrompt()) return;
         const targetId = btn.dataset.followId;
         const currentlyFollowing = btn.dataset.following === 'true';
         btn.disabled = true;
@@ -842,6 +1046,7 @@
 
     feedEl.querySelectorAll('.poll-option-btn').forEach((btn) => {
       btn.addEventListener('click', async () => {
+        if (!requireAuthOrPrompt()) return;
         const postId = btn.dataset.pollPost;
         const optionIndex = btn.dataset.pollOption;
         const box = btn.closest('.poll-box');
@@ -867,6 +1072,7 @@
 
     feedEl.querySelectorAll('.bookmark-btn').forEach((btn) => {
       btn.addEventListener('click', async () => {
+        if (!requireAuthOrPrompt()) return;
         const postId = btn.dataset.bookmarkId;
         btn.disabled = true;
         try {
@@ -900,6 +1106,7 @@
 
     feedEl.querySelectorAll('.community-vote-btn').forEach((btn) => {
       btn.addEventListener('click', async () => {
+        if (!requireAuthOrPrompt()) return;
         btn.disabled = true;
         try {
           const data = await callFunction('community-vote', { postId: btn.dataset.voteId });
@@ -913,6 +1120,7 @@
 
     feedEl.querySelectorAll('.reaction-btn').forEach((btn) => {
       btn.addEventListener('click', async () => {
+        if (!requireAuthOrPrompt()) return;
         const postId = btn.closest('.community-reactions').dataset.postId;
         const emoji = btn.dataset.emoji;
         btn.disabled = true;
@@ -1086,19 +1294,24 @@
     if (!mainView) return;
     document.querySelectorAll('.community-tab-btn').forEach((b) => b.classList.toggle('active', b.dataset.view === view));
     stopLiveUpdates();
-    if (view === 'chat') {
+    if (view === 'chat' && myProfile) {
       mainView.innerHTML = chatPanelHTML();
       wireChatTabs();
       loadChatRoom(currentRoom);
     } else if (view === 'ranking') {
       mainView.innerHTML = rankingPanelHTML();
       loadLeaderboard();
-    } else if (view === 'dna') {
+    } else if (view === 'dna' && myProfile) {
       mainView.innerHTML = tradingDnaPanelHTML();
       loadTradingDna();
     } else if (view === 'resumen') {
-      mainView.innerHTML = resumenPanelHTML();
-      loadResumen();
+      if (myProfile) {
+        mainView.innerHTML = resumenPanelHTML();
+        loadResumen();
+      } else {
+        mainView.innerHTML = guestResumenPanelHTML();
+        loadGuestResumen();
+      }
     } else {
       mainView.innerHTML = foroPanelHTML();
       wirePostForm();
@@ -1132,9 +1345,15 @@
       addPollCheckbox.addEventListener('change', () => { pollFields.hidden = !addPollCheckbox.checked; });
     }
 
+    const clearTagFilterBtn = document.getElementById('clearTagFilterBtn');
+    if (clearTagFilterBtn) {
+      clearTagFilterBtn.addEventListener('click', () => { activeTagFilter = null; switchDashboardView('foro'); });
+    }
+
     const bookmarksToggleBtn = document.getElementById('bookmarksToggleBtn');
     if (bookmarksToggleBtn) {
       bookmarksToggleBtn.addEventListener('click', () => {
+        if (!requireAuthOrPrompt()) return;
         showBookmarksOnly = !showBookmarksOnly;
         bookmarksToggleBtn.classList.toggle('active', showBookmarksOnly);
         bookmarksToggleBtn.textContent = showBookmarksOnly ? '📋 Ver todas' : '🔖 Ver guardados';
@@ -1145,6 +1364,7 @@
     const postSubmitBtn = document.getElementById('postSubmit');
     if (!postSubmitBtn) return;
     postSubmitBtn.addEventListener('click', async () => {
+      if (!requireAuthOrPrompt()) return;
       const btn = document.getElementById('postSubmit');
       const msgEl = document.getElementById('postMsg');
       const title = document.getElementById('postTitle').value.trim();
@@ -1469,9 +1689,13 @@
     const user = netlifyIdentity.currentUser();
     if (!user) {
       stopLiveUpdates();
-      root.innerHTML = loggedOutHTML();
-      const loginBtn = document.getElementById('communityLoginBtn');
-      if (loginBtn) loginBtn.addEventListener('click', (e) => { e.preventDefault(); netlifyIdentity.open('signup'); });
+      myProfile = null;
+      currentRoom = 'forex';
+      root.innerHTML = guestShellHTML();
+      document.getElementById('guestSignupBtn').addEventListener('click', () => netlifyIdentity.open('signup'));
+      document.getElementById('guestLoginBtn').addEventListener('click', () => netlifyIdentity.open('login'));
+      wireDashboardTabs();
+      switchDashboardView('resumen');
       return;
     }
 
@@ -1532,8 +1756,67 @@
     loadWeeklyChallenge();
   }
 
+  const heroSignupBtn = document.getElementById('heroSignupBtn');
+  if (heroSignupBtn) heroSignupBtn.addEventListener('click', (e) => { e.preventDefault(); netlifyIdentity.open('signup'); });
+
+  function communitySidebarHTML() {
+    return `
+      <div class="glass-card sidebar-card">
+        <h4>🟢 Conectados ahora</h4>
+        <span class="sidebar-online-value" id="sidebarOnlineCount">—</span>
+      </div>
+      <div class="glass-card sidebar-card">
+        <h4>🏆 Top analistas de la semana</h4>
+        <div id="sidebarTopAnalysts"><p class="footer-text">Cargando...</p></div>
+      </div>
+      <div class="glass-card sidebar-card">
+        <h4>📅 Próximos eventos</h4>
+        <div id="sidebarCalendar"></div>
+      </div>
+    `;
+  }
+
+  async function loadSidebar() {
+    const el = document.getElementById('communitySidebar');
+    if (!el) return;
+    el.innerHTML = communitySidebarHTML();
+
+    const onlineEl = document.getElementById('sidebarOnlineCount');
+    if (onlineEl) onlineEl.textContent = String(presenceCount);
+    document.addEventListener('ar4-presence-update', () => {
+      if (onlineEl) onlineEl.textContent = String(presenceCount);
+    });
+
+    const topEl = document.getElementById('sidebarTopAnalysts');
+    if (topEl) {
+      try {
+        const data = await callFunctionGETPublic('community-leaderboard');
+        const source = (data.weekly && data.weekly.length) ? data.weekly.map((p) => ({ ...p, points: p.weeklyPoints })) : data.allTime;
+        topEl.innerHTML = leaderboardListHTML((source || []).slice(0, 5));
+      } catch (e) {
+        topEl.innerHTML = '<p class="footer-text">Todavía no hay datos suficientes.</p>';
+      }
+    }
+
+    const calEl = document.getElementById('sidebarCalendar');
+    if (calEl) {
+      calEl.innerHTML = '<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>';
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-events.js';
+      script.async = true;
+      script.text = JSON.stringify({
+        colorTheme: 'dark', isTransparent: true, width: '100%', height: '300',
+        locale: 'es', importanceFilter: '1', countryFilter: 'us,mx,co,cl,pe,ar,br,eu'
+      });
+      calEl.querySelector('.tradingview-widget-container').appendChild(script);
+    }
+  }
+
   netlifyIdentity.on('init', render);
   netlifyIdentity.on('login', () => { myProfile = null; render(); });
   netlifyIdentity.on('logout', () => { myProfile = null; render(); });
   render();
+  initPresence();
+  loadSidebar();
 })();

@@ -90,11 +90,16 @@
   </div>
 </header>
 
-<section class="page-hero">
+<section class="page-hero community-hero">
   <div class="container">
     <div class="breadcrumb"><a href="index.html">Inicio</a> / Comunidad</div>
-    <h1>La <span class="gold">comunidad</span> de AR4 Mercados</h1>
-    <p>Publica tus propias ideas de trading, vota las de otros traders latinoamericanos, gana puntos canjeables por Premium, y chatea en tiempo real en las salas de Forex, Acciones e Índices, y Criptomonedas.</p>
+    <h1>La comunidad donde los traders <span class="gold">comparten oportunidades reales</span>, todos los días.</h1>
+    <p>Analiza mercados, publica tus ideas, sigue a otros traders, aprende con la comunidad y construye tu reputación.</p>
+    <div class="community-hero-actions">
+      <a href="#communityRoot" class="btn btn-outline">Explorar comunidad</a>
+      <a href="#communityRoot" class="btn btn-gold">Publicar análisis</a>
+      <a href="#" class="btn btn-crimson" id="heroSignupBtn">Crear cuenta</a>
+    </div>
   </div>
 </section>
 
@@ -112,8 +117,11 @@
 
 <section class="section" style="padding-top:32px;">
   <div class="container">
-    <div id="communityRoot">
-      <p class="footer-text">Cargando comunidad...</p>
+    <div class="community-layout">
+      <div id="communityRoot">
+        <p class="footer-text">Cargando comunidad...</p>
+      </div>
+      <aside class="community-sidebar" id="communitySidebar"></aside>
     </div>
   </div>
 </section>
@@ -151,7 +159,7 @@
 <script src="js/auth.js?v=2"></script>
 <script src="js/comments.js?v=4"></script>
 <script src="js/sentiment-pulse.js?v=2"></script>
-<script src="js/community.js?v=15"></script>
+<script src="js/community.js?v=16"></script>
 <script src="js/chatbot.js?v=5"></script>
 </body>
 </html>

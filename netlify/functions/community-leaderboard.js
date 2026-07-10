@@ -3,9 +3,6 @@ const { supabaseRequest } = require('./_supabase');
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'GET') return { statusCode: 405, body: 'Method Not Allowed' };
 
-  const user = context.clientContext && context.clientContext.user;
-  if (!user) return { statusCode: 401, body: JSON.stringify({ success: false, error: 'Debes iniciar sesión.' }) };
-
   try {
     const allTime = await supabaseRequest(
       'profiles?select=id,username,avatar_color,avatar_url,rank,points,streak_days&order=points.desc&limit=10',
