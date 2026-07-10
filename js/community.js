@@ -516,7 +516,7 @@
         </div>
       </div>
       <div class="community-form-msg" id="redeemMsg" style="margin-bottom:14px;"></div>
-      ${!isAdmin ? '<button class="btn btn-outline" id="bootstrapAdminBtn" style="font-size:0.72rem;padding:6px 10px;margin-bottom:14px;">🔑 Activar cuenta de administrador (solo dueño del sitio)</button><div class="community-form-msg" id="bootstrapAdminMsg" style="margin-bottom:14px;"></div>' : ''}
+      ${!window.AR4_PREMIUM ? '<button class="btn btn-outline" id="bootstrapAdminBtn" style="font-size:0.72rem;padding:6px 10px;margin-bottom:14px;">🔑 Activar cuenta de administrador + Premium (solo dueño del sitio)</button><div class="community-form-msg" id="bootstrapAdminMsg" style="margin-bottom:14px;"></div>' : ''}
 
       ${isAdmin ? adminPanelHTML() : ''}
 
