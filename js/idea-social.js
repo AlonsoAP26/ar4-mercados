@@ -89,6 +89,7 @@
         <div class="reaction-row">${REACTIONS.map(reactionChip).join('')}</div>
         <div class="idea-social-actions">
           <button class="btn btn-outline idea-bookmark-btn ${bookmarked ? 'active' : ''}" id="ideaBookmarkBtn">${bookmarked ? '★ Guardado' : '☆ Guardar'}</button>
+          <button class="btn btn-outline" id="ideaAskAriaBtn">🤖 Consultar con IA</button>
           <div class="share-row">${shareButtonsHTML()}</div>
         </div>
       </div>
@@ -142,6 +143,16 @@
           }
         } catch (e) { /* noop */ }
         bookmarkBtn.disabled = false;
+      });
+    }
+
+    const askAriaBtn = document.getElementById('ideaAskAriaBtn');
+    if (askAriaBtn) {
+      askAriaBtn.addEventListener('click', () => {
+        if (typeof window.AR4_askAriaAbout !== 'function') return;
+        const plainBody = (idea.body || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 1000);
+        const contextStr = `Análisis: "${idea.title}" (${idea.category}${idea.symbol ? ', ' + idea.symbol : ''}). Resumen: ${idea.excerpt || ''}. Contenido: ${plainBody}`;
+        window.AR4_askAriaAbout(`Ayúdame a entender este análisis: "${idea.title}"`, contextStr);
       });
     }
 

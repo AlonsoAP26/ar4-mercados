@@ -1171,6 +1171,7 @@
           <button class="comments-toggle-btn" data-comments-toggle="${post.id}">💬 Comentarios</button>
           <button class="comments-toggle-btn bookmark-btn" data-bookmark-id="${post.id}">${isBookmarked ? '🔖 Guardado' : '🔖 Guardar'}</button>
           <button class="comments-toggle-btn share-btn" data-share-id="${post.id}">🔗 Compartir</button>
+          <button class="comments-toggle-btn ask-aria-btn" data-ask-aria-title="${escapeHtml(post.title)}" data-ask-aria-body="${escapeHtml((post.body || '').slice(0, 1000))}" data-ask-aria-category="${escapeHtml(post.category || '')}">🤖 Consultar con IA</button>
         </div>
         <div class="comments-section" id="commentsFor-${post.id}" hidden></div>
       </article>
@@ -1329,6 +1330,15 @@
         } catch (e) {
           prompt('Copia este enlace:', url);
         }
+      });
+    });
+
+    feedEl.querySelectorAll('.ask-aria-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (typeof window.AR4_askAriaAbout !== 'function') return;
+        const title = btn.dataset.askAriaTitle || '';
+        const contextStr = `Publicación de la comunidad: "${title}" (${btn.dataset.askAriaCategory || ''}). Contenido: ${btn.dataset.askAriaBody || ''}`;
+        window.AR4_askAriaAbout(`Ayúdame a entender esta publicación: "${title}"`, contextStr);
       });
     });
 

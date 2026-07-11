@@ -20,8 +20,8 @@
       <div class="chat-header-identity">
         <img class="chat-header-avatar" src="${ARIA_AVATAR}" alt="Aria">
         <div>
-          <div class="chat-header-title">Aria · Mentora AR4</div>
-          <div class="chat-header-sub">Gestión de riesgo y emociones</div>
+          <div class="chat-header-title">Aria · AR4 AI</div>
+          <div class="chat-header-sub">Tu asistente financiero, 24/7</div>
         </div>
       </div>
       <div class="chat-header-actions">
@@ -55,6 +55,7 @@
   let history = [];
   let sending = false;
   let premiumCache = null;
+  let pendingContext = null;
   let voiceEnabled = localStorage.getItem('ar4ChatVoice') === '1';
 
   function updateVoiceToggleUI() {
@@ -187,10 +188,17 @@
     messagesEl.scrollTop = messagesEl.scrollHeight;
 
     try {
+      const headers = { 'Content-Type': 'application/json' };
+      if (typeof netlifyIdentity !== 'undefined' && netlifyIdentity.currentUser()) {
+        try { headers['Authorization'] = 'Bearer ' + (await netlifyIdentity.currentUser().jwt()); } catch (e) { /* sigue sin auth si falla */ }
+      }
+      const payload = { messages: history };
+      if (pendingContext) { payload.context = pendingContext; pendingContext = null; }
+
       const res = await fetch('/.netlify/functions/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: history })
+        headers,
+        body: JSON.stringify(payload)
       });
 
       thinking.remove();
@@ -217,4 +225,12 @@
   });
 
   addMessage('Hola 👋 Soy Aria, tu mentora en AR4 Mercados. Puedo ayudarte a pensar en gestión de riesgo, disciplina, o cómo manejar emociones después de una operación. ¿Qué tienes en mente?', 'bot');
+
+  window.AR4_askAriaAbout = function (question, contextStr) {
+    hideGreeting();
+    panel.classList.add('open');
+    pendingContext = contextStr || null;
+    inputEl.value = question || '';
+    inputEl.focus();
+  };
 })();
