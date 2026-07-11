@@ -173,6 +173,33 @@
   </div>
 </div>
 
+<!-- Por qué AR4 -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>No somos una academia más</h2>
+    </div>
+    <p style="color:var(--text-mid);max-width:680px;margin:-8px 0 28px;font-size:0.95rem;">La mayoría de sitios de trading en español mezclan contenido pago, señales sin respaldo y comunidades infladas con bots. AR4 está construido al revés:</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-num">🤖</div>
+        <h4>IA que nunca te dice qué comprar</h4>
+        <p>Aria y todo el análisis de IA del sitio están etiquetados como tales y siguen una sola regla sin excepciones: contexto y probabilidades, nunca una señal de compra o venta. Lo que ves es lo que hay, sin letra chica.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-num">👥</div>
+        <h4>Reputación que se gana, no se compra</h4>
+        <p>Los rangos y la insignia Verificado se ganan participando de verdad en la comunidad — analizando, comentando, ayudando a otros. No hay atajos ni cuentas pagadas para parecer activos.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-num">⚖️</div>
+        <h4>Brokers comparados sin sesgo oculto</h4>
+        <p>Cada review muestra pros y contras reales, regulación verificable y un Trust Score con su cálculo a la vista — no un ranking pagado disfrazado de comparativa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Brokers destacados -->
 <section class="section">
   <div class="container">
@@ -253,6 +280,45 @@
   </div>
 </section>
 
+<!-- Vitrina de progreso / gamificación -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Cada publicación, comentario y racha suma <span class="badge-live">TU PROGRESO</span></h2>
+      <a href="comunidad.html" class="see-all">Ver mi progreso →</a>
+    </div>
+    <p style="color:var(--text-mid);max-width:680px;margin:-8px 0 28px;font-size:0.95rem;">No es un foro donde publicas y desapareces. Cada análisis, comentario y racha diaria construye una reputación real dentro de AR4 — visible para toda la comunidad.</p>
+
+    <div class="rank-ladder">
+      <div class="rank-ladder-item"><span class="rank-badge rank-basico">Básico</span><p>Tu punto de partida al crear tu perfil.</p></div>
+      <div class="rank-ladder-arrow">→</div>
+      <div class="rank-ladder-item"><span class="rank-badge rank-vip">VIP</span><p>Participación constante en el Foro.</p></div>
+      <div class="rank-ladder-arrow">→</div>
+      <div class="rank-ladder-item"><span class="rank-badge rank-premium">Premium</span><p>Análisis de calidad y buena reputación.</p></div>
+      <div class="rank-ladder-arrow">→</div>
+      <div class="rank-ladder-item"><span class="rank-badge rank-elite">Élite</span><p>Los traders más activos y confiables.</p></div>
+    </div>
+
+    <div class="info-grid" style="margin-top:28px;">
+      <div class="info-card">
+        <div class="info-num">🔥</div>
+        <h4>Racha diaria</h4>
+        <p>Vuelve cada día a la comunidad y acumula tu racha — se rompe si faltas un día, así que hay una razón real para volver.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-num">🎯</div>
+        <h4>Misiones diarias</h4>
+        <p>Retos pequeños (comentar, reaccionar, publicar) que suman puntos canjeables por descuentos en tu suscripción Premium.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-num">🏆</div>
+        <h4>Ranking semanal y mensual</h4>
+        <p>Los analistas más destacados del mes ganan la insignia Verificado y aparecen en el carrusel de traders destacados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Copytrading + Fondeo -->
 <section class="section section-alt">
   <div class="container two-col">
@@ -292,23 +358,36 @@
       <a href="calendario.html" class="see-all">Ver completo →</a>
     </div>
     <div class="calendar-embed">
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-        {
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "width": "100%",
-          "height": "450",
-          "locale": "es",
-          "importanceFilter": "-1,0,1",
-          "countryFilter": "us,mx,br,ar,co,cl,pe,eu,gb"
-        }
-        </script>
-      </div>
+      <div class="tradingview-widget-container" id="homeCalendarWidget"></div>
     </div>
   </div>
 </section>
+<script>
+(function () {
+  var container = document.getElementById('homeCalendarWidget');
+  if (!container) return;
+  function build() {
+    container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-events.js';
+    script.async = true;
+    script.text = JSON.stringify({
+      colorTheme: 'dark', isTransparent: true, width: '100%', height: 450, locale: 'es',
+      importanceFilter: '-1,0,1', countryFilter: 'us,mx,br,ar,co,cl,pe,eu,gb'
+    });
+    container.appendChild(script);
+  }
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) { if (entry.isIntersecting) { build(); observer.disconnect(); } });
+    }, { rootMargin: '200px' });
+    observer.observe(container);
+  } else {
+    build();
+  }
+})();
+</script>
 
 <!-- Footer -->
 <footer class="site-footer">
