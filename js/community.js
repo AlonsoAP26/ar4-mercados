@@ -1153,11 +1153,12 @@
     const followBtnHTML = (myProfile && authorProfile.id !== myProfile.id)
       ? `<button class="follow-btn${isFollowing ? ' following' : ''}" data-follow-id="${authorProfile.id}" data-following="${isFollowing}">${isFollowing ? '✔ Siguiendo' : '+ Seguir'}</button>`
       : '';
+    const aiTag = post.is_ai_generated ? '<span class="ai-generated-badge">🤖 Generado por IA AR4</span>' : '';
     return `
-      <article class="community-post-card" data-post-id="${post.id}">
+      <article class="community-post-card${post.is_ai_generated ? ' ai-generated-post' : ''}" data-post-id="${post.id}">
         <div class="community-post-head">
           ${avatarHTML(authorProfile, 'trader-avatar')}
-          <div><strong>${escapeHtml(authorProfile.username)}</strong>${verifiedBadgeHTML(authorProfile)}${rankBadgeHTML(authorProfile.rank)}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
+          <div><strong>${escapeHtml(authorProfile.username)}</strong>${verifiedBadgeHTML(authorProfile)}${rankBadgeHTML(authorProfile.rank)}${aiTag}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
           ${followBtnHTML}
         </div>
         <h4>${escapeHtml(post.title)}</h4>

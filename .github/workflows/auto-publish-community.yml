@@ -1,0 +1,25 @@
+name: Publicar contenido de IA AR4 en el Foro de la Comunidad
+
+on:
+  schedule:
+    - cron: '25 1,6,11,16,21 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate-community-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar publicación con IA y guardarla en Supabase
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node scripts/generate-community-post.js
