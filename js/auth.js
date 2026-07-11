@@ -141,6 +141,16 @@
     banner.style.cssText = 'margin:16px auto;max-width:700px;';
     if (mpStatus === 'success') {
       banner.textContent = 'Tu pago se está confirmando con Mercado Pago. Esto puede tardar unos segundos — recarga la página si no ves el cambio reflejado.';
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18312316170/P8OpCIK2584cEIqK_5tE',
+          'value': 37.0,
+          'currency': 'PEN'
+        });
+      }
+      params.delete('mp_status');
+      const cleanUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+      window.history.replaceState({}, '', cleanUrl);
     } else if (mpStatus === 'pending') {
       banner.textContent = 'Tu pago está pendiente de confirmación en Mercado Pago.';
     } else {
