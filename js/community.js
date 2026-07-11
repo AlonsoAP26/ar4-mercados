@@ -661,6 +661,8 @@
           <span class="pulse-value" id="pulseTradersCount">—</span>
         </div>
       </div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">📰 Noticias y análisis IA</h2></div>
+      <div id="pulseNewsIdeas" class="pulse-news-row"><p class="footer-text">Cargando noticias y análisis...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">⭐ Traders destacados</h2></div>
       <div id="pulseFeaturedTraders" class="featured-traders-row"><p class="footer-text">Cargando traders destacados...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔥 Tendencias</h2></div>
@@ -670,6 +672,43 @@
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🏆 Top analistas de la semana</h2></div>
       <div id="pulseTopAnalysts"><p class="footer-text">Cargando ranking...</p></div>
     `;
+  }
+
+  function newsIdeaCardHTML(item) {
+    const href = item.kind === 'noticia' ? `noticia.html?slug=${encodeURIComponent(item.slug)}` : `idea.html?slug=${encodeURIComponent(item.slug)}`;
+    const tag = item.kind === 'noticia' ? '📰 Noticia' : '📈 Idea';
+    return `
+      <a class="pulse-news-card glass-card" href="${href}">
+        <span class="pulse-news-tag">${tag} · ${escapeHtml(item.category || '')}</span>
+        <strong>${escapeHtml(item.title)}</strong>
+        <span class="pulse-news-excerpt">${escapeHtml(item.excerpt || '')}</span>
+        <span class="pulse-news-meta">${formatFechaPulse(item.date)}</span>
+      </a>
+    `;
+  }
+
+  function formatFechaPulse(iso) {
+    if (!iso) return '';
+    const d = new Date(iso + 'T00:00:00');
+    return d.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
+  }
+
+  async function loadNewsIdeasPreview(container) {
+    try {
+      const [noticiasRes, ideasRes] = await Promise.all([
+        fetch('data/noticias.json').then((r) => r.json()).catch(() => []),
+        fetch('data/ideas.json').then((r) => r.json()).catch(() => [])
+      ]);
+      const merged = [
+        ...(noticiasRes || []).map((n) => ({ ...n, kind: 'noticia' })),
+        ...(ideasRes || []).map((i) => ({ ...i, kind: 'idea' }))
+      ].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 6);
+
+      if (!merged.length) { container.innerHTML = '<p class="footer-text">Todavía no hay contenido publicado.</p>'; return; }
+      container.innerHTML = merged.map(newsIdeaCardHTML).join('');
+    } catch (e) {
+      container.innerHTML = '<p class="footer-text">No se pudieron cargar las noticias y análisis.</p>';
+    }
   }
 
   async function loadTrending(container) {
@@ -735,8 +774,10 @@
     const activityEl = document.getElementById('pulseActivity');
     const topEl = document.getElementById('pulseTopAnalysts');
     const featuredEl = document.getElementById('pulseFeaturedTraders');
+    const newsEl = document.getElementById('pulseNewsIdeas');
 
     if (onlineEl) onlineEl.textContent = String(presenceCount);
+    if (newsEl) await loadNewsIdeasPreview(newsEl);
 
     if (postsEl) {
       const { count } = await sb.from('community_posts').select('id', { count: 'exact' }).limit(1);
