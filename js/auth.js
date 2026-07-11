@@ -153,6 +153,11 @@
   netlifyIdentity.on('init', refreshUI);
   netlifyIdentity.on('login', () => { refreshUI(); netlifyIdentity.close(); });
   netlifyIdentity.on('logout', refreshUI);
+  netlifyIdentity.on('signup', () => {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', { 'send_to': 'AW-18312316170/j8pzCJGY584cEIqK_5tE' });
+    }
+  });
 
   refreshUI();
 })();
