@@ -1940,6 +1940,76 @@ a { color: inherit; text-decoration: none; }
   .ai-panel { grid-template-columns: 1fr; }
 }
 
+/* Página de noticia: layout con sidebar inteligente */
+.noticia-layout { display: grid; grid-template-columns: 1fr 320px; gap: 32px; align-items: start; }
+.noticia-sidebar { position: sticky; top: 16px; display: flex; flex-direction: column; gap: 16px; }
+@media (max-width: 980px) {
+  .noticia-layout { grid-template-columns: 1fr; }
+  .noticia-sidebar { position: static; order: 5; }
+}
+.sidebar-block {
+  background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 16px;
+}
+.sidebar-block h3 { font-size: 0.86rem; margin-bottom: 10px; color: var(--text-hi); }
+.sidebar-mini-item {
+  display: flex; flex-direction: column; gap: 4px; padding: 8px 0;
+  border-bottom: 1px solid var(--card-border); color: var(--text-mid); font-size: 0.82rem; text-decoration: none;
+}
+.sidebar-mini-item:last-child { border-bottom: none; }
+.sidebar-mini-item:hover { color: var(--gold-bright); }
+.sidebar-cta-card {
+  display: block; background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 14px 16px; text-decoration: none; color: var(--text-mid);
+}
+.sidebar-cta-card strong { display: block; color: var(--text-hi); font-size: 0.88rem; margin-bottom: 2px; }
+.sidebar-cta-card span { font-size: 0.78rem; }
+.sidebar-cta-premium {
+  background: linear-gradient(160deg, rgba(212,175,55,0.1), rgba(212,175,55,0.02));
+  border-color: rgba(212,175,55,0.3);
+}
+.sidebar-cta-premium p { color: var(--text-mid); font-size: 0.82rem; margin-bottom: 12px; }
+
+.noticia-readtime { display: block; color: var(--text-low); font-size: 0.8rem; margin-bottom: 14px; }
+.noticia-readtime a { color: var(--gold-bright); }
+
+.ai-summary-card { margin-bottom: 18px; }
+.ai-summary-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 0.98rem; color: var(--text-hi); }
+.ai-summary-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.ai-summary-list li { color: var(--text-mid); font-size: 0.88rem; line-height: 1.5; }
+.ai-summary-list li strong { color: var(--text-hi); }
+
+.noticia-sentiment-row { display: flex; align-items: center; gap: 10px; margin: 10px 0; flex-wrap: wrap; }
+.noticia-sentiment-label { font-size: 0.78rem; color: var(--text-low); white-space: nowrap; }
+.noticia-sentiment-pct { font-size: 0.78rem; color: var(--text-mid); font-family: var(--mono); white-space: nowrap; }
+
+.noticia-timeline { display: flex; flex-direction: column; margin-bottom: 24px; }
+.noticia-timeline-item { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 12px 16px; }
+.noticia-timeline-when { display: block; font-size: 0.72rem; font-weight: 700; color: var(--gold-bright); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+.noticia-timeline-item p { color: var(--text-mid); font-size: 0.86rem; margin: 0; }
+.noticia-timeline-arrow { text-align: center; color: var(--text-low); font-size: 0.9rem; padding: 2px 0; }
+
+.ai-panel-noticia { grid-template-columns: 1fr; display: flex; flex-direction: column; gap: 14px; }
+.ai-scenarios { display: flex; flex-direction: column; gap: 8px; }
+.ai-scenario-row { display: grid; grid-template-columns: 90px 1fr 46px; align-items: center; gap: 10px; font-size: 0.8rem; color: var(--text-mid); }
+.ai-scenario-bar { height: 8px; border-radius: 8px; background: rgba(255,255,255,0.06); overflow: hidden; }
+.ai-scenario-bar div { height: 100%; }
+.ai-impact-row { display: grid; grid-template-columns: auto 1fr 40px; align-items: center; gap: 10px; }
+.ai-impact-bar { height: 8px; border-radius: 8px; background: rgba(255,255,255,0.06); overflow: hidden; }
+.ai-impact-bar div { height: 100%; background: linear-gradient(90deg, var(--gold), var(--crimson-bright)); }
+
+.noticia-faq { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+.noticia-faq-item { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 12px 16px; }
+.noticia-faq-item summary { cursor: pointer; font-size: 0.88rem; color: var(--text-hi); font-weight: 600; }
+.noticia-faq-item p { color: var(--text-mid); font-size: 0.84rem; margin-top: 8px; }
+
+.noticia-mid-related { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+.noticia-mid-related-item {
+  display: block; background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 10px 14px; color: var(--text-mid); font-size: 0.86rem; text-decoration: none;
+}
+.noticia-mid-related-item:hover { color: var(--gold-bright); border-color: var(--gold); }
+
 /* Comentarios: multimedia, likes, edición, orden */
 .comments-sort-bar { display: flex; gap: 8px; margin-bottom: 14px; }
 .sort-chip {
@@ -1968,6 +2038,22 @@ a { color: inherit; text-decoration: none; }
 }
 .comment-attach-btn:hover { border-color: var(--gold); color: var(--gold-bright); }
 .comment-attach-name { font-size: 0.74rem; color: var(--text-low); }
+
+.comment-tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.comment-tag-chip {
+  background: none; border: 1px solid var(--card-border); color: var(--text-low); font-size: 0.72rem;
+  padding: 4px 10px; border-radius: 14px; cursor: pointer;
+}
+.comment-tag-chip:hover { border-color: var(--gold); color: var(--gold-bright); }
+.comment-tag-chip.active { background: rgba(212,175,55,0.14); border-color: var(--gold); color: var(--gold-bright); }
+.comment-tag {
+  font-size: 0.68rem; padding: 2px 8px; border-radius: 10px; background: rgba(255,255,255,0.05);
+  color: var(--text-mid); border: 1px solid var(--card-border); white-space: nowrap;
+}
+.comment-tag-buen_analisis { color: var(--green); border-color: rgba(34,192,122,0.35); }
+.comment-tag-aporta_datos { color: var(--gold-bright); border-color: rgba(212,175,55,0.35); }
+.comment-tag-riesgo { color: var(--crimson-bright); border-color: rgba(225,58,75,0.35); }
+.comment-tag-destacado { color: var(--gold-bright); border-color: rgba(212,175,55,0.35); }
 
 /* ============================================
    comunidad.html — rediseño premium

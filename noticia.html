@@ -96,55 +96,69 @@
 
 <section class="section" style="padding-top:24px;">
   <div class="container">
+    <div class="noticia-layout">
+      <div class="noticia-main">
 
-    <div id="noticiaHero"></div>
-    <div id="noticiaMeta" style="margin-bottom:24px;"></div>
-    <div id="noticiaChart"></div>
+        <div id="noticiaHero"></div>
+        <div id="noticiaMeta" style="margin-bottom:14px;"></div>
+        <div id="noticiaReadBar"></div>
+        <div id="noticiaAiSummary"></div>
+        <div id="noticiaSocialBar" style="margin:16px 0;"></div>
+        <div id="noticiaChart"></div>
 
-    <div class="section-head" style="margin-top:8px;margin-bottom:14px;">
-      <h2 style="font-size:1.2rem;">Indicadores técnicos en tiempo real</h2>
-      <span class="badge-live">DATOS DE TRADINGVIEW</span>
-    </div>
-    <div class="idea-chart-wrap" style="margin-bottom:28px;">
-      <div class="tradingview-widget-container" id="noticiaTechnical"></div>
-      <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Resumen algorítmico de osciladores y medias móviles calculado por TradingView, no es una recomendación de AR4 Mercados. Cambia constantemente según el mercado.</p>
-    </div>
+        <div class="section-head" style="margin-top:8px;margin-bottom:14px;">
+          <h2 style="font-size:1.2rem;">Indicadores técnicos en tiempo real</h2>
+          <span class="badge-live">DATOS DE TRADINGVIEW</span>
+        </div>
+        <div class="idea-chart-wrap" style="margin-bottom:28px;">
+          <div class="tradingview-widget-container" id="noticiaTechnical"></div>
+          <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Resumen algorítmico de osciladores y medias móviles calculado por TradingView, no es una recomendación de AR4 Mercados. Cambia constantemente según el mercado.</p>
+        </div>
 
-    <article class="article-body" id="noticiaBody">
-      <p class="footer-text">Cargando noticia...</p>
-    </article>
+        <div id="noticiaMarketImpact"></div>
+        <div id="noticiaTimeline"></div>
 
-    <div id="noticiaConclusion"></div>
+        <article class="article-body" id="noticiaBody">
+          <p class="footer-text">Cargando noticia...</p>
+        </article>
 
-    <div class="source-box" id="noticiaSource"></div>
+        <div id="noticiaConclusion"></div>
+        <div id="noticiaMidRelated"></div>
+        <div id="noticiaAiPanel"></div>
+        <div id="noticiaFaq"></div>
 
-    <div class="section-head" style="margin-top:32px;">
-      <h2 style="font-size:1.1rem;">💬 Comentarios</h2>
-    </div>
-    <div id="commentsSection" class="comments-section" style="border-top:none;padding-top:0;"></div>
+        <div class="source-box" id="noticiaSource"></div>
 
-    <div class="upsell-banner">
-      <div class="upsell-banner-text">
-        <strong>¿Quieres más análisis como este?</strong>
-        <span>Suscríbete a AR4 Premium y recibe noticias e ideas de trading más profundas, actualizadas con IA en tiempo real.</span>
+        <div class="section-head" style="margin-top:32px;">
+          <h2 style="font-size:1.1rem;">💬 Comentarios</h2>
+        </div>
+        <div id="commentsSection" class="comments-section" style="border-top:none;padding-top:0;"></div>
+
+        <div class="upsell-banner">
+          <div class="upsell-banner-text">
+            <strong>¿Quieres más análisis como este?</strong>
+            <span>Suscríbete a AR4 Premium y recibe noticias e ideas de trading más profundas, actualizadas con IA en tiempo real.</span>
+          </div>
+          <button class="btn btn-gold js-open-upsell">Ver Premium</button>
+        </div>
+
+        <div class="promo-banner" style="margin-top:36px;">
+          <div class="promo-banner-text">
+            <h3>¿Quieres operar estas noticias en tiempo real?</h3>
+            <p>Consulta nuestra comparativa de brokers con ejecución rápida, ideal para operar en momentos de alta volatilidad.</p>
+          </div>
+          <a href="brokers.html" class="btn btn-crimson">Ver brokers recomendados</a>
+        </div>
+
+        <div class="section-head" style="margin-top:40px;">
+          <h2>Más noticias</h2>
+          <a href="noticias.html" class="see-all">Ver todas →</a>
+        </div>
+        <div class="card-grid two-up" id="relatedNoticiasGrid"></div>
+
       </div>
-      <button class="btn btn-gold js-open-upsell">Ver Premium</button>
+      <aside class="noticia-sidebar" id="noticiaSidebar"></aside>
     </div>
-
-    <div class="promo-banner" style="margin-top:36px;">
-      <div class="promo-banner-text">
-        <h3>¿Quieres operar estas noticias en tiempo real?</h3>
-        <p>Consulta nuestra comparativa de brokers con ejecución rápida, ideal para operar en momentos de alta volatilidad.</p>
-      </div>
-      <a href="brokers.html" class="btn btn-crimson">Ver brokers recomendados</a>
-    </div>
-
-    <div class="section-head" style="margin-top:40px;">
-      <h2>Más noticias</h2>
-      <a href="noticias.html" class="see-all">Ver todas →</a>
-    </div>
-    <div class="card-grid two-up" id="relatedNoticiasGrid"></div>
-
   </div>
 </section>
 
@@ -180,8 +194,9 @@
 <script src="js/main.js?v=2"></script>
 <script src="js/auth.js?v=2"></script>
 <script src="js/hero-graphics.js?v=4"></script>
-<script src="js/comments.js?v=4"></script>
-<script src="js/noticias.js?v=7"></script>
+<script src="js/comments.js?v=5"></script>
+<script src="js/noticia-social.js?v=1"></script>
+<script src="js/noticias.js?v=8"></script>
 <script src="js/chatbot.js?v=6"></script>
 <script src="js/upsell.js"></script>
 </body>

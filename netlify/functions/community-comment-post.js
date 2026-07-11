@@ -4,6 +4,7 @@ const { isFlagged } = require('./_moderation');
 const { awardPoints } = require('./_gamification');
 
 const ALLOWED_TARGET_TYPES = ['idea', 'noticia', 'post'];
+const ALLOWED_TAGS = ['buen_analisis', 'aporta_datos', 'riesgo', 'destacado'];
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const SLUG_RE = /^[a-z0-9-]{1,80}$/i;
 const COMMENT_REWARD = 3;
@@ -60,6 +61,7 @@ exports.handler = async (event, context) => {
     if (text.length < 2 && !imageBase64) return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El comentario es demasiado corto.' }) };
 
     const parentCommentId = body.parentCommentId && UUID_RE.test(body.parentCommentId) ? body.parentCommentId : null;
+    const tag = ALLOWED_TAGS.includes(body.tag) ? body.tag : null;
 
     const profileRows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id,points', { method: 'GET' });
     if (!profileRows.length) {
@@ -87,7 +89,7 @@ exports.handler = async (event, context) => {
 
     const created = await supabaseRequest('comments', {
       method: 'POST',
-      body: JSON.stringify({ target_type: targetType, target_id: targetId, profile_id: profile.id, body: text, parent_comment_id: parentCommentId, image_url: imageUrl })
+      body: JSON.stringify({ target_type: targetType, target_id: targetId, profile_id: profile.id, body: text, parent_comment_id: parentCommentId, image_url: imageUrl, tag })
     });
     const newComment = created[0];
 

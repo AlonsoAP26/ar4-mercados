@@ -4,6 +4,12 @@
 
   const RANK_LABELS = { basico: 'Básico', vip: 'VIP', premium: 'Premium', elite: 'Élite', administrador: 'Administrador' };
   const MAX_IMAGE_BYTES = 4 * 1024 * 1024;
+  const COMMENT_TAGS = {
+    buen_analisis: { emoji: '✅', label: 'Buen análisis' },
+    aporta_datos: { emoji: '📊', label: 'Aporta datos' },
+    riesgo: { emoji: '⚠️', label: 'Riesgo detectado' },
+    destacado: { emoji: '🔥', label: 'Destacado' }
+  };
 
   function escapeHtml(str) {
     const div = document.createElement('div');
@@ -75,12 +81,14 @@
       const likeCount = likeCounts[c.id] || 0;
       const imgHTML = c.image_url ? `<img class="comment-image" src="${escapeHtml(c.image_url)}" alt="Imagen adjunta" loading="lazy" onclick="window.open(this.src,'_blank')">` : '';
       const editedHTML = c.edited_at ? '<span class="comment-edited"> (editado)</span>' : '';
+      const tagInfo = c.tag ? COMMENT_TAGS[c.tag] : null;
+      const tagHTML = tagInfo ? `<span class="comment-tag comment-tag-${c.tag}">${tagInfo.emoji} ${tagInfo.label}</span>` : '';
 
       return `
         <div class="comment-row" style="margin-left:${Math.min(depth, 4) * 26}px;" data-comment-id="${c.id}">
           ${avatarHTML(author)}
           <div class="comment-body">
-            <div class="comment-head"><strong>${escapeHtml(author.username)}</strong>${verifiedBadgeHTML(author)}${rankBadgeHTML(author.rank)}<span class="comment-time">${timeAgo(c.created_at)}${editedHTML}</span></div>
+            <div class="comment-head"><strong>${escapeHtml(author.username)}</strong>${verifiedBadgeHTML(author)}${rankBadgeHTML(author.rank)}<span class="comment-time">${timeAgo(c.created_at)}${editedHTML}</span>${tagHTML}</div>
             <div class="comment-text" data-comment-text="${c.id}"><p>${linkifyMentions(c.body)}</p>${imgHTML}</div>
             <div class="comment-actions-row">
               <button class="comment-like-btn ${liked ? 'active' : ''}" data-like="${c.id}">❤️ <span class="like-count">${likeCount}</span></button>
@@ -124,7 +132,7 @@
       `;
     }
 
-    async function postComment(text, parentCommentId, msgEl, btn, imageFile) {
+    async function postComment(text, parentCommentId, msgEl, btn, imageFile, tag) {
       const user = netlifyIdentity.currentUser();
       btn.disabled = true;
       msgEl.textContent = '';
@@ -141,7 +149,7 @@
         const res = await fetch('/.netlify/functions/community-comment-post', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt },
-          body: JSON.stringify({ targetType, targetId, body: text, parentCommentId, imageBase64, imageType })
+          body: JSON.stringify({ targetType, targetId, body: text, parentCommentId, imageBase64, imageType, tag: tag || null })
         });
         const data = await res.json();
         if (!data.success) throw new Error(data.error || 'Error desconocido');
@@ -292,10 +300,15 @@
         || '<p class="footer-text">Todavía no hay comentarios. ¡Sé el primero en opinar!</p>';
 
       const user = typeof netlifyIdentity !== 'undefined' ? netlifyIdentity.currentUser() : null;
+      const tagChipsHTML = Object.entries(COMMENT_TAGS).map(([key, t]) =>
+        `<button type="button" class="comment-tag-chip" data-tag="${key}">${t.emoji} ${t.label}</button>`
+      ).join('');
+
       const formHTML = user
         ? `
           <div class="comment-form">
             <textarea id="commentInput_${containerId}" maxlength="600" placeholder="Escribe un comentario... (usa @usuario para mencionar)"></textarea>
+            <div class="comment-tag-row" id="commentTagRow_${containerId}">${tagChipsHTML}</div>
             <div class="comment-attach-row">
               <button type="button" class="comment-attach-btn" id="commentAttachBtn_${containerId}">📷 Adjuntar imagen</button>
               <input type="file" class="comment-image-input" id="commentImageInput_${containerId}" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
@@ -341,6 +354,7 @@
       });
 
       pendingImageFile = null;
+      let pendingTag = null;
       const attachBtn = document.getElementById('commentAttachBtn_' + containerId);
       const imageInput = document.getElementById('commentImageInput_' + containerId);
       if (attachBtn && imageInput) {
@@ -351,6 +365,18 @@
         });
       }
 
+      const tagRow = document.getElementById('commentTagRow_' + containerId);
+      if (tagRow) {
+        tagRow.querySelectorAll('.comment-tag-chip').forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const isActive = chip.classList.contains('active');
+            tagRow.querySelectorAll('.comment-tag-chip').forEach((c) => c.classList.remove('active'));
+            pendingTag = isActive ? null : chip.dataset.tag;
+            if (!isActive) chip.classList.add('active');
+          });
+        });
+      }
+
       const submitBtn = document.getElementById('commentSubmit_' + containerId);
       if (submitBtn) {
         submitBtn.addEventListener('click', () => {
@@ -358,7 +384,7 @@
           const msgEl = document.getElementById('commentMsg_' + containerId);
           const text = input.value.trim();
           if (!text && !pendingImageFile) return;
-          postComment(text, null, msgEl, submitBtn, pendingImageFile);
+          postComment(text, null, msgEl, submitBtn, pendingImageFile, pendingTag);
         });
       }
 

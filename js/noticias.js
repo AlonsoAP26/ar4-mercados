@@ -115,6 +115,235 @@ function renderNewsChart(container, symbol) {
   container.appendChild(script);
 }
 
+function plainText(html) {
+  return (html || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function renderReadBar(n) {
+  const el = document.getElementById('noticiaReadBar');
+  if (!el) return;
+  const words = plainText(n.body).split(' ').filter(Boolean).length;
+  const minutes = Math.max(1, Math.round(words / 200));
+  el.innerHTML = `<span class="noticia-readtime">⏱ ${minutes} min de lectura ${n.aiSummary ? '· <a href="#noticiaAiSummaryCard">Ver resumen de 30 segundos ↓</a>' : ''}</span>`;
+}
+
+function renderAiSummary(n) {
+  const el = document.getElementById('noticiaAiSummary');
+  if (!el || !n.aiSummary) { if (el) el.innerHTML = ''; return; }
+  const s = n.aiSummary;
+  const activosHTML = (s.activos || []).map(a => `<span class="instrument-badge">${a}</span>`).join(' ');
+  el.innerHTML = `
+    <div class="glass-card ai-summary-card" id="noticiaAiSummaryCard">
+      <div class="ai-summary-head">🤖 <strong>Resumen generado por IA</strong> <span class="badge-live">EN 30 SEGUNDOS</span></div>
+      <ul class="ai-summary-list">
+        <li><strong>Qué pasó:</strong> ${s.que}</li>
+        <li><strong>Por qué importa:</strong> ${s.porque}</li>
+        ${activosHTML ? `<li><strong>Qué activos afecta:</strong> ${activosHTML}</li>` : ''}
+        <li><strong>Qué podría ocurrir después:</strong> ${s.siguiente}</li>
+      </ul>
+      <p class="footer-text" style="font-size:0.74rem;margin-top:6px;">Resumen interpretativo generado por IA AR4 a partir de la noticia completa. No es asesoría financiera.</p>
+    </div>
+  `;
+}
+
+function lazyLoadWidget(container, buildFn) {
+  if (!('IntersectionObserver' in window)) { buildFn(); return; }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) { buildFn(); observer.disconnect(); }
+    });
+  }, { rootMargin: '200px' });
+  observer.observe(container);
+}
+
+function renderMarketImpact(n) {
+  const el = document.getElementById('noticiaMarketImpact');
+  if (!el || !n.relatedSymbols || !n.relatedSymbols.length) { if (el) el.innerHTML = ''; return; }
+  el.innerHTML = `
+    <div class="section-head" style="margin-top:8px;margin-bottom:14px;">
+      <h2 style="font-size:1.1rem;">🌎 Impacto en otros mercados</h2>
+      <span class="badge-live">COTIZACIONES EN VIVO</span>
+    </div>
+    <div class="tradingview-widget-container" id="noticiaImpactWidget" style="margin-bottom:28px;"></div>
+  `;
+  const widgetContainer = document.getElementById('noticiaImpactWidget');
+  lazyLoadWidget(widgetContainer, () => {
+    widgetContainer.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js';
+    script.async = true;
+    script.text = JSON.stringify({
+      width: '100%',
+      height: 260,
+      symbolsGroups: [{ name: 'Relacionados', symbols: n.relatedSymbols.map(s => ({ name: s, displayName: newsSymbolLabel(s) })) }],
+      colorTheme: 'dark',
+      isTransparent: true,
+      locale: 'es'
+    });
+    widgetContainer.appendChild(script);
+  });
+}
+
+function renderTimeline(n) {
+  const el = document.getElementById('noticiaTimeline');
+  if (!el || !n.timeline || !n.timeline.length) { if (el) el.innerHTML = ''; return; }
+  el.innerHTML = `
+    <div class="section-head" style="margin-top:8px;margin-bottom:14px;">
+      <h2 style="font-size:1.1rem;">🕒 Cómo se fue armando esta historia</h2>
+    </div>
+    <div class="noticia-timeline">
+      ${n.timeline.map(t => `
+        <div class="noticia-timeline-item">
+          <span class="noticia-timeline-when">${t.cuando}</span>
+          <p>${t.texto}</p>
+        </div>
+      `).join('<div class="noticia-timeline-arrow">↓</div>')}
+    </div>
+  `;
+}
+
+function renderAiPanel(n) {
+  const el = document.getElementById('noticiaAiPanel');
+  if (!el) return;
+  if (!n.aiScenarios && !n.aiDetects && !n.impactScore) { el.innerHTML = ''; return; }
+
+  const scenariosHTML = n.aiScenarios ? `
+    <div class="ai-scenarios">
+      <strong style="display:block;margin-bottom:8px;">Escenarios IA</strong>
+      <div class="ai-scenario-row"><span>🟢 Alcista</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.alcista}%;background:var(--green);"></div></div><span>${n.aiScenarios.alcista}%</span></div>
+      <div class="ai-scenario-row"><span>🟡 Lateral</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.lateral}%;background:#f0c75e;"></div></div><span>${n.aiScenarios.lateral}%</span></div>
+      <div class="ai-scenario-row"><span>🔴 Bajista</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.bajista}%;background:var(--crimson-bright);"></div></div><span>${n.aiScenarios.bajista}%</span></div>
+    </div>
+  ` : '';
+
+  const detectsHTML = n.aiDetects ? `
+    <div class="ai-panel-stats">
+      <div><span class="trade-card-label">Probabilidad de continuidad</span><span class="trade-card-value">${n.aiDetects.probabilidad}%</span></div>
+      <div><span class="trade-card-label">Riesgo</span><span class="trade-card-value">${n.aiDetects.riesgo}</span></div>
+    </div>
+    <p style="margin-top:8px;">${n.aiDetects.lectura} <a href="#noticiaChart">Ver niveles en el gráfico en vivo ↑</a></p>
+  ` : '';
+
+  const impactHTML = n.impactScore ? `
+    <div class="ai-impact-row">
+      <span class="trade-card-label">Impacto estimado por IA AR4</span>
+      <div class="ai-impact-bar"><div style="width:${n.impactScore * 10}%;"></div></div>
+      <span>${n.impactScore}/10</span>
+    </div>
+  ` : '';
+
+  el.innerHTML = `
+    <div class="section-head" style="margin-top:32px;margin-bottom:14px;">
+      <h2 style="font-size:1.1rem;">🤖 IA AR4 detecta</h2>
+      <span class="badge-live">ANÁLISIS AUTOMÁTICO</span>
+    </div>
+    <div class="glass-card ai-panel ai-panel-noticia">
+      ${detectsHTML}
+      ${scenariosHTML}
+      ${impactHTML}
+      <p class="footer-text" style="font-size:0.76rem;margin-top:10px;">Lectura probabilística generada por IA AR4 a partir del contexto de la noticia. Nunca es una señal de compra/venta ni una predicción garantizada — es un análisis educativo.</p>
+    </div>
+  `;
+}
+
+function renderFaq(n) {
+  const el = document.getElementById('noticiaFaq');
+  if (!el || !n.faq || !n.faq.length) { if (el) el.innerHTML = ''; return; }
+  el.innerHTML = `
+    <div class="section-head" style="margin-top:32px;margin-bottom:14px;">
+      <h2 style="font-size:1.1rem;">❓ Preguntas frecuentes</h2>
+    </div>
+    <div class="noticia-faq">
+      ${n.faq.map((f, i) => `
+        <details class="noticia-faq-item" ${i === 0 ? 'open' : ''}>
+          <summary>${f.q}</summary>
+          <p>${f.a}</p>
+        </details>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderMidRelated(n, noticias) {
+  const el = document.getElementById('noticiaMidRelated');
+  if (!el) return;
+  const related = noticias.filter(x => x.slug !== n.slug).sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3);
+  if (!related.length) { el.innerHTML = ''; return; }
+  el.innerHTML = `
+    <div class="section-head" style="margin-top:28px;margin-bottom:12px;">
+      <h2 style="font-size:1rem;">📰 También podría interesarte</h2>
+    </div>
+    <div class="noticia-mid-related">
+      ${related.map(r => `<a href="noticia.html?slug=${encodeURIComponent(r.slug)}" class="noticia-mid-related-item">${r.title}</a>`).join('')}
+    </div>
+  `;
+}
+
+async function renderSidebar(n, noticias) {
+  const el = document.getElementById('noticiaSidebar');
+  if (!el) return;
+
+  const ultimaHora = noticias.filter(x => x.slug !== n.slug).sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 4);
+  const ultimaHoraHTML = ultimaHora.map(x => `
+    <a href="noticia.html?slug=${encodeURIComponent(x.slug)}" class="sidebar-mini-item">
+      <span class="news-tag" style="font-size:0.66rem;">${x.category}</span>
+      <span>${x.title}</span>
+    </a>
+  `).join('');
+
+  let ideasHTML = '<p class="footer-text" style="font-size:0.78rem;">Sin ideas relacionadas todavía.</p>';
+  try {
+    const res = await fetch('data/ideas.json');
+    if (res.ok) {
+      const ideas = await res.json();
+      const related = n.symbol
+        ? ideas.filter(i => i.symbol === n.symbol)
+        : ideas.filter(i => i.category === n.category);
+      const picks = related.slice(0, 3);
+      if (picks.length) {
+        ideasHTML = picks.map(i => `<a href="idea.html?slug=${encodeURIComponent(i.slug)}" class="sidebar-mini-item"><span>${i.title}</span></a>`).join('');
+      }
+    }
+  } catch (e) { /* noop */ }
+
+  let communityHTML = '';
+  if (n.symbol && typeof supabase !== 'undefined' && window.AR4_supabase) {
+    try {
+      const label = newsSymbolLabel(n.symbol).split(' ')[0].split('(')[0].trim();
+      const { count } = await window.AR4_supabase
+        .from('community_posts')
+        .select('id', { count: 'exact', head: true })
+        .ilike('symbol', `%${label}%`);
+      if (count) {
+        communityHTML = `
+          <a href="comunidad.html" class="sidebar-cta-card">
+            <strong>👥 ${count} publicaci${count === 1 ? 'ón' : 'ones'}</strong>
+            <span>de la comunidad hablando de ${label}</span>
+          </a>
+        `;
+      }
+    } catch (e) { /* noop */ }
+  }
+
+  el.innerHTML = `
+    <div class="sidebar-block">
+      <h3>🔥 Última hora</h3>
+      ${ultimaHoraHTML || '<p class="footer-text" style="font-size:0.78rem;">No hay más noticias todavía.</p>'}
+    </div>
+    <div class="sidebar-block">
+      <h3>⭐ Ideas relacionadas</h3>
+      ${ideasHTML}
+    </div>
+    ${communityHTML}
+    <div class="sidebar-block sidebar-cta-premium">
+      <h3>🚀 AR4 AI Premium</h3>
+      <p>Consulta con Aria sobre esta noticia con contexto ilimitado y análisis más profundo.</p>
+      <a href="membresia.html" class="btn btn-gold btn-block">Ver Premium</a>
+    </div>
+  `;
+}
+
 async function initNoticiaDetail() {
   const body = document.getElementById('noticiaBody');
   if (!body) return;
@@ -195,6 +424,16 @@ async function initNoticiaDetail() {
   }
 
   body.innerHTML = n.body;
+
+  renderReadBar(n);
+  renderAiSummary(n);
+  renderMarketImpact(n);
+  renderTimeline(n);
+  renderAiPanel(n);
+  renderFaq(n);
+  renderMidRelated(n, noticias);
+  renderSidebar(n, noticias);
+  if (window.AR4_initNoticiaSocial) window.AR4_initNoticiaSocial(n);
 
   const conclusionEl = document.getElementById('noticiaConclusion');
   if (conclusionEl && n.bodyPremium) {
