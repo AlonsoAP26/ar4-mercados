@@ -8,16 +8,20 @@
   const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
   const BASE_ROOMS = [
     { id: 'forex', label: '💱 Forex' },
-    { id: 'commodities', label: '🛢️ Commodities' },
-    { id: 'acciones', label: '📈 Acciones e Índices' },
-    { id: 'cripto', label: '₿ Criptomonedas' }
+    { id: 'latam', label: '🌎 LatAm' },
+    { id: 'commodities', label: '🥇 Materias Primas' },
+    { id: 'acciones', label: '📈 Acciones' },
+    { id: 'indices', label: '💵 Índices' },
+    { id: 'cripto', label: '🪙 Criptomonedas' }
   ];
   const ELITE_ROOM = { id: 'elite', label: '★ Elite Traders' };
   const ROOM_META = {
     forex: { icon: '💱', name: 'Forex', desc: 'Charla general sobre pares de divisas' },
-    commodities: { icon: '🛢️', name: 'Commodities', desc: 'Oro, petróleo y materias primas' },
-    acciones: { icon: '📈', name: 'Acciones e Índices', desc: 'Índices bursátiles y acciones' },
-    cripto: { icon: '₿', name: 'Criptomonedas', desc: 'Bitcoin, Ethereum y el resto del mercado cripto' },
+    latam: { icon: '🌎', name: 'LatAm', desc: 'Divisas, tasas y mercados de Latinoamérica' },
+    commodities: { icon: '🥇', name: 'Materias Primas', desc: 'Oro, petróleo y materias primas' },
+    acciones: { icon: '📈', name: 'Acciones', desc: 'Acciones y resultados corporativos' },
+    indices: { icon: '💵', name: 'Índices', desc: 'Índices bursátiles globales' },
+    cripto: { icon: '🪙', name: 'Criptomonedas', desc: 'Bitcoin, Ethereum y el resto del mercado cripto' },
     elite: { icon: '★', name: 'Elite Traders', desc: 'Sala exclusiva para rango Élite y Administrador' }
   };
   const RANK_LABELS = { basico: 'Básico', vip: 'VIP', premium: 'Premium', elite: 'Élite', administrador: 'Administrador' };
