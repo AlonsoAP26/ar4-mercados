@@ -1053,6 +1053,41 @@
     });
   }
 
+  function openTechAnalysisModal(symbol, title, body, category) {
+    const overlay = document.createElement('div');
+    overlay.className = 'story-viewer-overlay';
+    overlay.innerHTML = `
+      <div class="story-viewer-card tech-modal-card glass-card">
+        <button class="story-viewer-close" type="button">✕</button>
+        <div class="tech-modal-head">
+          <span class="instrument-badge">${escapeHtml(symbol)}</span>
+          <h3>${escapeHtml(title)}</h3>
+        </div>
+        <div class="tech-modal-widget" id="techModalWidget"></div>
+        <p class="footer-text" style="font-size:0.76rem;margin-top:10px;">Indicadores calculados en vivo por TradingView (osciladores y medias móviles), no por AR4 Mercados. Es información de contexto, no una señal de compra/venta.</p>
+        <button class="btn btn-outline btn-block" id="techModalAskAria" style="margin-top:10px;">🤖 Pedirle a la IA que interprete esto</button>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+    overlay.querySelector('.story-viewer-close').addEventListener('click', () => overlay.remove());
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+
+    const widgetEl = document.getElementById('techModalWidget');
+    if (widgetEl && typeof renderTechnicalAnalysis === 'function') {
+      renderTechnicalAnalysis(widgetEl, symbol);
+    }
+
+    const askBtn = document.getElementById('techModalAskAria');
+    if (askBtn) {
+      askBtn.addEventListener('click', () => {
+        if (typeof window.AR4_askAriaAbout !== 'function') return;
+        const contextStr = `Publicación de la comunidad: "${title}" (${category}). Contenido: ${body}. Instrumento: ${symbol}.`;
+        window.AR4_askAriaAbout(`Ayúdame a interpretar los indicadores técnicos de ${symbol} en el contexto de esta publicación: "${title}"`, contextStr);
+        overlay.remove();
+      });
+    }
+  }
+
   async function loadStoriesBar(container) {
     try {
       const nowIso = new Date().toISOString();
@@ -1173,6 +1208,7 @@
           <button class="comments-toggle-btn bookmark-btn" data-bookmark-id="${post.id}">${isBookmarked ? '🔖 Guardado' : '🔖 Guardar'}</button>
           <button class="comments-toggle-btn share-btn" data-share-id="${post.id}">🔗 Compartir</button>
           <button class="comments-toggle-btn ask-aria-btn" data-ask-aria-title="${escapeHtml(post.title)}" data-ask-aria-body="${escapeHtml((post.body || '').slice(0, 1000))}" data-ask-aria-category="${escapeHtml(post.category || '')}">🤖 Consultar con IA</button>
+          ${resolvedSymbol ? `<button class="comments-toggle-btn tech-analysis-btn" data-tech-id="${post.id}" data-tech-symbol="${resolvedSymbol}" data-tech-title="${escapeHtml(post.title)}" data-tech-body="${escapeHtml((post.body || '').slice(0, 1000))}" data-tech-category="${escapeHtml(post.category || '')}">📊 Análisis técnico completo</button>` : ''}
         </div>
         <div class="comments-section" id="commentsFor-${post.id}" hidden></div>
       </article>
@@ -1340,6 +1376,12 @@
         const title = btn.dataset.askAriaTitle || '';
         const contextStr = `Publicación de la comunidad: "${title}" (${btn.dataset.askAriaCategory || ''}). Contenido: ${btn.dataset.askAriaBody || ''}`;
         window.AR4_askAriaAbout(`Ayúdame a entender esta publicación: "${title}"`, contextStr);
+      });
+    });
+
+    feedEl.querySelectorAll('.tech-analysis-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        openTechAnalysisModal(btn.dataset.techSymbol, btn.dataset.techTitle || '', btn.dataset.techBody || '', btn.dataset.techCategory || '');
       });
     });
 
