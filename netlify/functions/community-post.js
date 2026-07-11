@@ -4,7 +4,7 @@ const { isFlagged } = require('./_moderation');
 const { effectiveRank } = require('./_rank');
 const { incrementMissionCounter } = require('./_gamification');
 
-const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
+const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
 const ALLOWED_SENTIMENTS = ['alcista', 'bajista', 'neutral'];
 const ALLOWED_MEDIA_TYPES = {
   'image/png': { ext: 'png', kind: 'image' }, 'image/jpeg': { ext: 'jpg', kind: 'image' },

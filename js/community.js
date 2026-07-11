@@ -5,7 +5,7 @@
   const root = document.getElementById('communityRoot');
   if (!root) return;
 
-  const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
+  const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
   const BASE_ROOMS = [
     { id: 'forex', label: '💱 Forex' },
     { id: 'commodities', label: '🛢️ Commodities' },
@@ -128,6 +128,10 @@
   let shoppingAvatars = false;
   let presenceCount = 1;
   let activeTagFilter = null;
+  let activeCategoryFilter = null;
+  let dmPollTimer = null;
+  let dmListPollTimer = null;
+  let currentDmThreadId = null;
 
   function initPresence() {
     const presenceKey = (netlifyIdentity.currentUser() && netlifyIdentity.currentUser().id) || ('guest-' + Math.random().toString(36).slice(2));
@@ -287,12 +291,22 @@
         </div>
       </div>
       ${storiesBarHTML()}
-      <div class="community-tabs">
-        <button class="community-tab-btn active" data-view="resumen">🏠 Resumen</button>
-        <button class="community-tab-btn" data-view="foro">📋 Foro de ideas</button>
-        <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
+      <div class="community-dashboard-layout">
+        <nav class="community-tabs">
+          <button class="community-tab-btn active" data-view="resumen">🏠 Inicio</button>
+          <button class="community-tab-btn" data-view="foro" data-category="">📋 Foro (todos)</button>
+          <span class="community-tabs-label">Categorías</span>
+          <button class="community-tab-btn" data-view="foro" data-category="Forex">📈 Forex</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Criptomonedas">🪙 Criptomonedas</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Acciones">📊 Acciones</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Índices">💵 Índices</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Materias Primas">🥇 Materias Primas</button>
+          <button class="community-tab-btn" data-view="foro" data-category="LatAm">🌎 LatAm</button>
+          <span class="community-tabs-label">Social</span>
+          <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
+        </nav>
+        <div id="communityMainView"><p class="footer-text">Cargando...</p></div>
       </div>
-      <div id="communityMainView"><p class="footer-text">Cargando...</p></div>
     `;
   }
 
@@ -453,6 +467,7 @@
         <h2>Ideas de la comunidad</h2>
         <button class="filter-chip" id="bookmarksToggleBtn" data-filter="all">🔖 Ver guardados</button>
       </div>
+      ${activeCategoryFilter ? `<div class="active-filter-chip">Categoría <strong>${escapeHtml(activeCategoryFilter)}</strong> <button id="clearCategoryFilterBtn" type="button">✕ Quitar</button></div>` : ''}
       ${activeTagFilter ? `<div class="active-filter-chip">Filtrando por <strong>${escapeHtml(activeTagFilter)}</strong> <button id="clearTagFilterBtn" type="button">✕ Quitar</button></div>` : ''}
       <div id="communityFeed"><p class="footer-text">Cargando publicaciones...</p></div>
     `;
@@ -479,6 +494,168 @@
       </div>
     `;
   }
+
+  function mensajesPanelHTML() {
+    return `
+      <div class="discord-chat-shell">
+        <div class="discord-sidebar" id="dmThreadList">
+          <div class="discord-sidebar-title">Conversaciones</div>
+          <p class="footer-text" style="padding:0 10px;">Cargando...</p>
+        </div>
+        <div class="discord-main">
+          <div class="discord-header" id="dmHeader"><span style="color:var(--text-low);font-size:0.86rem;">Elige una conversación o escribe "Enviar mensaje" desde el perfil de alguien.</span></div>
+          <div class="discord-messages" id="dmMessages"></div>
+          <div class="discord-input-row" id="dmInputRow" hidden>
+            <button class="discord-attach-btn" id="dmAttachBtn" type="button" title="Adjuntar imagen">📎</button>
+            <input type="file" id="dmImageInput" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+            <input type="text" id="dmInput" maxlength="1000" placeholder="Escribe un mensaje...">
+            <button class="discord-send-btn" id="dmSendBtn">Enviar</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function dmThreadListItemHTML(t) {
+    const preview = t.lastMessage
+      ? (t.lastMessage.image_url && !t.lastMessage.body ? '📷 Imagen' : (t.lastMessage.body || ''))
+      : 'Nueva conversación';
+    return `
+      <button class="discord-room-btn dm-thread-item${t.threadId === currentDmThreadId ? ' active' : ''}" data-thread-id="${t.threadId}" data-other-id="${t.otherProfile.id}" data-other-username="${escapeHtml(t.otherProfile.username)}">
+        ${avatarHTML(t.otherProfile, 'trader-avatar')}
+        <span class="dm-thread-item-text">
+          <strong>${escapeHtml(t.otherProfile.username)}</strong>
+          <span class="dm-thread-preview">${escapeHtml(preview.slice(0, 40))}</span>
+        </span>
+        ${t.unreadCount ? `<span class="sidenav-badge">${t.unreadCount}</span>` : ''}
+      </button>
+    `;
+  }
+
+  async function loadMensajesList(autoOpenProfile) {
+    const listEl = document.getElementById('dmThreadList');
+    if (!listEl) return;
+    try {
+      const data = await callFunctionGET('dm-threads');
+      const items = data.threads.map(dmThreadListItemHTML).join('') || '<p class="footer-text" style="padding:0 10px;">Todavía no tienes conversaciones.</p>';
+      listEl.innerHTML = `<div class="discord-sidebar-title">Conversaciones</div>${items}`;
+      listEl.querySelectorAll('.dm-thread-item').forEach((btn) => {
+        btn.addEventListener('click', () => openDmThread(btn.dataset.threadId, { id: btn.dataset.otherId, username: btn.dataset.otherUsername }));
+      });
+
+      const totalUnread = data.threads.reduce((sum, t) => sum + t.unreadCount, 0);
+      const badge = document.getElementById('dmUnreadBadge');
+      if (badge) { badge.hidden = !totalUnread; badge.textContent = totalUnread; }
+
+      if (autoOpenProfile) {
+        const existing = data.threads.find((t) => t.otherProfile.id === autoOpenProfile.id);
+        openDmThread(existing ? existing.threadId : null, autoOpenProfile);
+      }
+    } catch (e) {
+      listEl.innerHTML = `<p class="footer-text" style="padding:0 10px;">${escapeHtml(e.message)}</p>`;
+    }
+
+    if (!dmListPollTimer) dmListPollTimer = setInterval(() => loadMensajesList(), 12000);
+  }
+
+  function dmBubbleHTML(msg, isMine, author) {
+    const imgHTML = msg.image_url ? `<img class="discord-msg-image" src="${escapeHtml(msg.image_url)}" alt="Imagen adjunta" loading="lazy" onclick="window.open(this.src,'_blank')">` : '';
+    const textHTML = msg.body ? `<p>${escapeHtml(msg.body)}</p>` : '';
+    return `
+      <div class="discord-msg${isMine ? ' dm-msg-mine' : ''}">
+        ${avatarHTML(author, 'discord-msg-avatar')}
+        <div class="discord-msg-body">
+          <div class="discord-msg-head"><strong>${escapeHtml(author.username)}</strong><span class="discord-msg-time">${timeAgo(msg.created_at)}${isMine && msg.read_at ? ' · Visto' : ''}</span></div>
+          ${textHTML}
+          ${imgHTML}
+        </div>
+      </div>
+    `;
+  }
+
+  async function openDmThread(threadId, otherProfile) {
+    currentDmThreadId = threadId || null;
+    if (dmPollTimer) { clearInterval(dmPollTimer); dmPollTimer = null; }
+
+    document.querySelectorAll('.dm-thread-item').forEach((b) => b.classList.toggle('active', b.dataset.threadId === threadId));
+
+    const headerEl = document.getElementById('dmHeader');
+    const msgsEl = document.getElementById('dmMessages');
+    const inputRow = document.getElementById('dmInputRow');
+    if (!headerEl || !msgsEl) return;
+
+    headerEl.innerHTML = `${avatarHTML(otherProfile, 'trader-avatar')}<div><strong>${escapeHtml(otherProfile.username)}</strong></div><button class="btn btn-outline" id="dmBlockBtn" style="margin-left:auto;font-size:0.72rem;padding:5px 10px;">🚫 Bloquear</button>`;
+    inputRow.hidden = false;
+
+    async function refresh() {
+      if (!threadId) {
+        msgsEl.innerHTML = '<p class="footer-text">Escribe tu primer mensaje para empezar la conversación.</p>';
+        return;
+      }
+      try {
+        const data = await callFunctionGET('dm-messages?threadId=' + encodeURIComponent(threadId));
+        const rows = data.messages.map((m) => dmBubbleHTML(m, m.sender_id === data.myProfileId, m.sender_id === data.myProfileId ? myProfile : data.otherProfile));
+        msgsEl.innerHTML = rows.join('') || '<p class="footer-text">Todavía no hay mensajes. ¡Escribe el primero!</p>';
+        msgsEl.scrollTop = msgsEl.scrollHeight;
+      } catch (e) {
+        msgsEl.innerHTML = `<p class="footer-text">${escapeHtml(e.message)}</p>`;
+      }
+    }
+    await refresh();
+    dmPollTimer = setInterval(refresh, 4000);
+
+    const blockBtn = document.getElementById('dmBlockBtn');
+    if (blockBtn) {
+      blockBtn.addEventListener('click', async () => {
+        if (!confirm(`¿Bloquear a ${otherProfile.username}? No podrán enviarse mensajes.`)) return;
+        try {
+          const data = await callFunction('dm-block', { targetProfileId: otherProfile.id });
+          blockBtn.textContent = data.blocked ? '✔ Bloqueado' : '🚫 Bloquear';
+        } catch (e) { alert(e.message); }
+      });
+    }
+
+    const sendBtn = document.getElementById('dmSendBtn');
+    const input = document.getElementById('dmInput');
+    const attachBtn = document.getElementById('dmAttachBtn');
+    const fileInput = document.getElementById('dmImageInput');
+    attachBtn.onclick = () => fileInput.click();
+    fileInput.onchange = () => { if (fileInput.files[0]) attachBtn.textContent = '🖼️'; };
+
+    async function send() {
+      const text = input.value.trim();
+      const file = fileInput.files[0];
+      if (!text && !file) return;
+      sendBtn.disabled = true;
+      try {
+        let imageBase64 = null;
+        let imageType = null;
+        if (file) {
+          if (file.size > 4 * 1024 * 1024) throw new Error('La imagen no puede pesar más de 4 MB.');
+          imageBase64 = await fileToBase64(file);
+          imageType = file.type;
+        }
+        const data = await callFunction('dm-send', { toProfileId: otherProfile.id, body: text, imageBase64, imageType });
+        input.value = '';
+        fileInput.value = '';
+        attachBtn.textContent = '📎';
+        if (!threadId) { threadId = data.threadId; currentDmThreadId = threadId; loadMensajesList(); }
+        await refresh();
+      } catch (e) {
+        alert(e.message);
+      } finally {
+        sendBtn.disabled = false;
+      }
+    }
+    sendBtn.onclick = send;
+    input.onkeydown = (e) => { if (e.key === 'Enter') send(); };
+  }
+
+  window.AR4_startDM = function (profileId, username) {
+    if (!requireAuthOrPrompt()) return;
+    switchDashboardView('mensajes');
+    setTimeout(() => loadMensajesList({ id: profileId, username: username || 'Usuario' }), 300);
+  };
 
   function rankingPanelHTML() {
     return `
@@ -627,14 +804,25 @@
 
       ${storiesBarHTML()}
 
-      <div class="community-tabs">
-        <button class="community-tab-btn active" data-view="resumen">🏠 Resumen</button>
-        <button class="community-tab-btn" data-view="foro">📋 Foro de ideas</button>
-        <button class="community-tab-btn" data-view="chat">💬 Chat en vivo</button>
-        <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
-        <button class="community-tab-btn" data-view="dna">🧬 Trading DNA</button>
+      <div class="community-dashboard-layout">
+        <nav class="community-tabs">
+          <button class="community-tab-btn active" data-view="resumen">🏠 Inicio</button>
+          <button class="community-tab-btn" data-view="foro" data-category="">📋 Foro (todos)</button>
+          <span class="community-tabs-label">Categorías</span>
+          <button class="community-tab-btn" data-view="foro" data-category="Forex">📈 Forex</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Criptomonedas">🪙 Criptomonedas</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Acciones">📊 Acciones</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Índices">💵 Índices</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Materias Primas">🥇 Materias Primas</button>
+          <button class="community-tab-btn" data-view="foro" data-category="LatAm">🌎 LatAm</button>
+          <span class="community-tabs-label">Social</span>
+          <button class="community-tab-btn" data-view="mensajes">✉️ Mensajes <span class="sidenav-badge" id="dmUnreadBadge" hidden>0</span></button>
+          <button class="community-tab-btn" data-view="chat">💬 Chat en vivo</button>
+          <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
+          <button class="community-tab-btn" data-view="dna">🧬 Trading DNA</button>
+        </nav>
+        <div id="communityMainView">${resumenPanelHTML()}</div>
       </div>
-      <div id="communityMainView">${resumenPanelHTML()}</div>
     `;
   }
 
@@ -920,6 +1108,9 @@
   }
 
   function wireFollowButtons(scopeEl) {
+    scopeEl.querySelectorAll('.dm-start-btn').forEach((btn) => {
+      btn.addEventListener('click', () => window.AR4_startDM(btn.dataset.dmId, btn.dataset.dmUsername));
+    });
     scopeEl.querySelectorAll('.follow-btn').forEach((btn) => {
       btn.addEventListener('click', async () => {
         if (!requireAuthOrPrompt()) return;
@@ -946,13 +1137,14 @@
     const followBtnHTML = !isSelf
       ? `<button class="follow-btn featured-follow-btn${isFollowing ? ' following' : ''}" data-follow-id="${p.id}" data-following="${isFollowing}">${isFollowing ? '✔ Siguiendo' : '+ Seguir'}</button>`
       : '';
+    const dmBtnHTML = !isSelf ? `<button class="dm-start-btn" data-dm-id="${p.id}" data-dm-username="${escapeHtml(p.username)}" title="Enviar mensaje">✉️</button>` : '';
     return `
       <div class="featured-trader-card glass-card">
         ${avatarHTML(p, 'trader-avatar')}
         <strong>${escapeHtml(p.username)}${verifiedBadgeHTML(p)}</strong>
         <div class="featured-trader-meta">${rankBadgeHTML(p.rank)}<span class="level-badge">Nv. ${levelFromPoints(p.points)}</span></div>
         ${p.streak_days ? `<span class="streak-chip">🔥 ${p.streak_days} ${p.streak_days === 1 ? 'día' : 'días'}</span>` : ''}
-        ${followBtnHTML}
+        <div style="display:flex;gap:6px;justify-content:center;">${followBtnHTML}${dmBtnHTML}</div>
       </div>
     `;
   }
@@ -1188,6 +1380,9 @@
     const followBtnHTML = (myProfile && authorProfile.id !== myProfile.id)
       ? `<button class="follow-btn${isFollowing ? ' following' : ''}" data-follow-id="${authorProfile.id}" data-following="${isFollowing}">${isFollowing ? '✔ Siguiendo' : '+ Seguir'}</button>`
       : '';
+    const dmBtnHTML = (myProfile && authorProfile.id !== myProfile.id && !post.is_ai_generated)
+      ? `<button class="dm-start-btn" data-dm-id="${authorProfile.id}" data-dm-username="${escapeHtml(authorProfile.username)}" title="Enviar mensaje">✉️</button>`
+      : '';
     const aiTag = post.is_ai_generated ? '<span class="ai-generated-badge">🤖 Generado por IA AR4</span>' : '';
     return `
       <article class="community-post-card${post.is_ai_generated ? ' ai-generated-post' : ''}" data-post-id="${post.id}">
@@ -1195,6 +1390,7 @@
           ${avatarHTML(authorProfile, 'trader-avatar')}
           <div><strong>${escapeHtml(authorProfile.username)}</strong>${verifiedBadgeHTML(authorProfile)}${rankBadgeHTML(authorProfile.rank)}${aiTag}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
           ${followBtnHTML}
+          ${dmBtnHTML}
         </div>
         <h4>${escapeHtml(post.title)}</h4>
         ${chartHTML}
@@ -1260,6 +1456,9 @@
     }
 
     let visiblePosts = showBookmarksOnly ? posts.filter((p) => bookmarkedIds.has(p.id)) : posts;
+    if (activeCategoryFilter) {
+      visiblePosts = visiblePosts.filter((p) => p.category === activeCategoryFilter);
+    }
     if (activeTagFilter) {
       const needle = activeTagFilter.replace('#', '').toUpperCase();
       visiblePosts = visiblePosts.filter((p) =>
@@ -1385,6 +1584,10 @@
       });
     });
 
+    feedEl.querySelectorAll('.dm-start-btn').forEach((btn) => {
+      btn.addEventListener('click', () => window.AR4_startDM(btn.dataset.dmId, btn.dataset.dmUsername));
+    });
+
     feedEl.querySelectorAll('.community-vote-btn').forEach((btn) => {
       btn.addEventListener('click', async () => {
         if (!requireAuthOrPrompt()) return;
@@ -1450,6 +1653,8 @@
   function stopLiveUpdates() {
     if (chatChannel) { sb.removeChannel(chatChannel); chatChannel = null; }
     if (elitePollTimer) { clearInterval(elitePollTimer); elitePollTimer = null; }
+    if (dmPollTimer) { clearInterval(dmPollTimer); dmPollTimer = null; }
+    if (dmListPollTimer) { clearInterval(dmListPollTimer); dmListPollTimer = null; }
   }
 
   async function loadEliteRoom(msgsEl) {
@@ -1570,12 +1775,19 @@
     input.addEventListener('keydown', (e) => { if (e.key === 'Enter') send(); });
   }
 
-  function switchDashboardView(view) {
+  function switchDashboardView(view, category) {
     const mainView = document.getElementById('communityMainView');
     if (!mainView) return;
-    document.querySelectorAll('.community-tab-btn').forEach((b) => b.classList.toggle('active', b.dataset.view === view));
+    if (category !== undefined) activeCategoryFilter = category || null;
+    document.querySelectorAll('.community-tab-btn').forEach((b) => {
+      const matches = b.dataset.view === view && (view !== 'foro' || (b.dataset.category || '') === (activeCategoryFilter || ''));
+      b.classList.toggle('active', matches);
+    });
     stopLiveUpdates();
-    if (view === 'chat' && myProfile) {
+    if (view === 'mensajes' && myProfile) {
+      mainView.innerHTML = mensajesPanelHTML();
+      loadMensajesList();
+    } else if (view === 'chat' && myProfile) {
       mainView.innerHTML = chatPanelHTML();
       wireChatTabs();
       loadChatRoom(currentRoom);
@@ -1602,7 +1814,7 @@
 
   function wireDashboardTabs() {
     document.querySelectorAll('.community-tab-btn').forEach((btn) => {
-      btn.addEventListener('click', () => switchDashboardView(btn.dataset.view));
+      btn.addEventListener('click', () => switchDashboardView(btn.dataset.view, btn.dataset.view === 'foro' ? (btn.dataset.category || '') : null));
     });
   }
 
@@ -1629,6 +1841,11 @@
     const clearTagFilterBtn = document.getElementById('clearTagFilterBtn');
     if (clearTagFilterBtn) {
       clearTagFilterBtn.addEventListener('click', () => { activeTagFilter = null; switchDashboardView('foro'); });
+    }
+
+    const clearCategoryFilterBtn = document.getElementById('clearCategoryFilterBtn');
+    if (clearCategoryFilterBtn) {
+      clearCategoryFilterBtn.addEventListener('click', () => switchDashboardView('foro', ''));
     }
 
     const bookmarksToggleBtn = document.getElementById('bookmarksToggleBtn');

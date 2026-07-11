@@ -1,4 +1,4 @@
-const CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
+const CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
 const BOT_NETLIFY_USER_ID = 'ar4-ai-system-bot';
 
 const POST_TYPES = [

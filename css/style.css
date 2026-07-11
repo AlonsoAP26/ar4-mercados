@@ -1038,27 +1038,57 @@ a { color: inherit; text-decoration: none; }
 .community-form-msg.error { color: var(--crimson-bright); }
 .community-form-msg.success { color: var(--green); }
 
+.community-dashboard-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px; align-items: start; margin: 24px 0; }
+@media (max-width: 900px) {
+  .community-dashboard-layout { grid-template-columns: 1fr; }
+}
 .community-tabs {
   display: flex;
-  gap: 10px;
-  margin: 24px 0 20px;
-  border-bottom: 1px solid var(--card-border);
-  padding-bottom: 0;
+  flex-direction: column;
+  gap: 2px;
+  position: sticky;
+  top: 16px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 10px;
+}
+@media (max-width: 900px) {
+  .community-tabs { position: static; flex-direction: row; flex-wrap: wrap; }
+  .community-tabs-label { display: none; }
+}
+.community-tabs-label {
+  font-family: var(--mono); font-size: 0.64rem; color: var(--text-low); text-transform: uppercase;
+  letter-spacing: 0.6px; padding: 10px 10px 4px;
 }
 .community-tab-btn {
   background: transparent;
   border: none;
-  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-radius: 6px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   color: var(--text-mid);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 600;
   font-family: inherit;
-  padding: 10px 6px 14px;
+  padding: 9px 10px;
   cursor: pointer;
-  transition: color 0.15s;
+  transition: color 0.15s, background 0.15s;
+  width: 100%;
 }
-.community-tab-btn:hover { color: var(--text-hi); }
-.community-tab-btn.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
+.community-tab-btn:hover { color: var(--text-hi); background: rgba(255,255,255,0.04); }
+.community-tab-btn.active { color: var(--gold-bright); border-left-color: var(--gold); background: rgba(212,175,55,0.08); }
+@media (max-width: 900px) {
+  .community-tab-btn { width: auto; border-left: none; border-bottom: 3px solid transparent; }
+  .community-tab-btn.active { border-bottom-color: var(--gold); }
+}
+.sidenav-badge {
+  margin-left: auto; background: var(--crimson-bright); color: #fff; font-size: 0.68rem; font-weight: 700;
+  padding: 1px 7px; border-radius: 10px; font-family: var(--mono);
+}
 
 .community-post-chart { margin: 12px 0 16px; border-radius: 10px; overflow: hidden; border: 1px solid var(--card-border); }
 
@@ -1174,6 +1204,22 @@ a { color: inherit; text-decoration: none; }
   padding: 0 18px; font-weight: 700; cursor: pointer; font-size: 0.86rem; flex-shrink: 0;
 }
 .discord-input-row button.discord-send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.dm-thread-item .trader-avatar { width: 30px; height: 30px; font-size: 0.7rem; flex-shrink: 0; }
+.dm-thread-item-text { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.dm-thread-item-text strong { font-size: 0.84rem; color: var(--text-hi); }
+.dm-thread-preview { font-size: 0.74rem; color: var(--text-low); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dm-msg-mine { flex-direction: row-reverse; }
+.dm-msg-mine .discord-msg-body { text-align: right; }
+.dm-msg-mine .discord-msg-head { flex-direction: row-reverse; }
+.dm-msg-mine p { background: rgba(212,175,55,0.12); border-radius: 12px; padding: 8px 12px; display: inline-block; text-align: left; }
+.dm-start-btn {
+  background: none; border: 1px solid var(--card-border); color: var(--text-mid);
+  border-radius: 50%; width: 30px; height: 30px; flex-shrink: 0; cursor: pointer; font-size: 0.88rem;
+  margin-left: 6px;
+}
+.dm-start-btn:hover { border-color: var(--gold); color: var(--gold-bright); }
+
 @media (max-width: 700px) {
   .discord-chat-shell { grid-template-columns: 1fr; height: auto; }
   .discord-sidebar { display: flex; overflow-x: auto; border-right: none; border-bottom: 1px solid var(--card-border); padding: 10px; gap: 6px; }
