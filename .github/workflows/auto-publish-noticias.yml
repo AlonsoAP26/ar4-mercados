@@ -2,7 +2,7 @@ name: Publicar noticia de mercado automáticamente
 
 on:
   schedule:
-    - cron: '10 0,5,10,15,20 * * *'
+    - cron: '30 21 * * *'
   workflow_dispatch:
 
 jobs:
