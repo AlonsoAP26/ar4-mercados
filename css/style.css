@@ -947,6 +947,15 @@ a { color: inherit; text-decoration: none; }
 .mission-widget { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 20px 22px; margin-bottom: 24px; }
 .mission-row { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-top: 1px dashed rgba(255,255,255,0.08); }
 .mission-row:first-of-type { border-top: none; }
+.notif-row-clickable { cursor: pointer; border-radius: 6px; margin: 0 -8px; padding: 10px 8px; }
+.notif-row-clickable:hover { background: rgba(255,255,255,0.04); }
+.mention-dropdown {
+  position: absolute; left: 0; right: 0; top: 100%; z-index: 20; margin-top: 2px;
+  background: var(--card); border: 1px solid var(--gold); border-radius: 8px; overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.mention-suggestion { padding: 8px 12px; font-size: 0.84rem; color: var(--text-hi); cursor: pointer; font-family: var(--mono); }
+.mention-suggestion:hover { background: rgba(212,175,55,0.12); }
 .mission-icon { font-size: 1.3rem; flex-shrink: 0; }
 .mission-info { flex: 1; min-width: 0; }
 .mission-info strong { display: block; font-size: 0.86rem; margin-bottom: 6px; }

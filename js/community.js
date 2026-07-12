@@ -142,6 +142,7 @@
   let activeCategoryFilter = null;
   let dmPollTimer = null;
   let dmListPollTimer = null;
+  let notifPollTimer = null;
   let currentDmThreadId = null;
   let catalogTab = 'comun';
   const CATALOG_PAGE_SIZE = 24;
@@ -309,7 +310,7 @@
       ${storiesBarHTML()}
       <div class="community-dashboard-layout">
         <nav class="community-tabs">
-          <button class="community-tab-btn active" data-view="resumen">🏠 Inicio</button>
+          <button class="community-tab-btn active" data-view="resumen">🏠 Inicio <span class="sidenav-badge" id="notifUnreadBadge" hidden>0</span></button>
           <button class="community-tab-btn" data-view="foro" data-category="">📋 Foro (todos)</button>
           <span class="community-tabs-label">Categorías</span>
           <button class="community-tab-btn" data-view="foro" data-category="Forex">📈 Forex</button>
@@ -518,7 +519,10 @@
         <label for="postTitle">Título</label>
         <input type="text" id="postTitle" maxlength="120">
         <label for="postBody">Tu análisis</label>
-        <textarea id="postBody" maxlength="2000"></textarea>
+        <div style="position:relative;">
+          <textarea id="postBody" maxlength="2000" placeholder="Escribe @ para mencionar a otro trader"></textarea>
+          <div id="postBodyMentionDropdown" class="mention-dropdown" hidden></div>
+        </div>
         <label>Tu sesgo (opcional) — alimenta el Pulso de Sentimiento de la comunidad</label>
         <div class="sentiment-picker" id="sentimentPicker">
           <button type="button" class="sentiment-option" data-sentiment="alcista">🟢 Alcista</button>
@@ -907,7 +911,7 @@
 
       <div class="community-dashboard-layout">
         <nav class="community-tabs">
-          <button class="community-tab-btn active" data-view="resumen">🏠 Inicio</button>
+          <button class="community-tab-btn active" data-view="resumen">🏠 Inicio <span class="sidenav-badge" id="notifUnreadBadge" hidden>0</span></button>
           <button class="community-tab-btn" data-view="foro" data-category="">📋 Foro (todos)</button>
           <span class="community-tabs-label">Categorías</span>
           <button class="community-tab-btn" data-view="foro" data-category="Forex">📈 Forex</button>
@@ -1104,7 +1108,7 @@
       <div class="community-form" id="resumenGreeting" style="margin-top:20px;">
         <p class="footer-text">Cargando resumen...</p>
       </div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔔 Notificaciones</h2></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔔 Notificaciones</h2><button class="filter-chip" id="notifMarkAllReadBtn">✓ Marcar todo como leído</button></div>
       <div id="resumenNotifications"><p class="footer-text">Cargando...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">📌 Tu Watchlist</h2></div>
       <div id="resumenWatchlist"><p class="footer-text">Cargando...</p></div>
@@ -1115,10 +1119,12 @@
     const actorName = n.actor ? escapeHtml(n.actor.username) : 'Alguien';
     let text;
     if (n.type === 'follow') text = `${actorName} empezó a seguirte`;
-    else if (n.type === 'mention') text = `${actorName} te mencionó en un comentario`;
+    else if (n.type === 'mention') text = `${actorName} te mencionó`;
     else text = `${actorName} respondió a tu comentario`;
+    const clickable = n.post_id || (n.type === 'follow' && n.actor);
+    const dataAttrs = n.post_id ? `data-notif-post="${n.post_id}"` : (n.type === 'follow' && n.actor ? `data-notif-profile="${escapeHtml(n.actor.username)}"` : '');
     return `
-      <div class="mission-row">
+      <div class="mission-row${clickable ? ' notif-row-clickable' : ''}" ${dataAttrs}>
         <span class="mission-icon">${n.read ? '·' : '🔔'}</span>
         <div class="mission-info">
           <strong style="font-weight:${n.read ? '400' : '700'};">${text}</strong>
@@ -1126,6 +1132,16 @@
         </div>
       </div>
     `;
+  }
+
+  async function loadNotifUnreadBadge() {
+    if (!myProfile) return;
+    try {
+      const data = await callFunctionGET('community-notifications');
+      const badge = document.getElementById('notifUnreadBadge');
+      if (badge) { badge.hidden = !data.unreadCount; badge.textContent = data.unreadCount; }
+    } catch (e) { /* badge queda como estaba si falla */ }
+    if (!notifPollTimer) notifPollTimer = setInterval(loadNotifUnreadBadge, 30000);
   }
 
   function mountResumenTicker(container, items) {
@@ -1171,9 +1187,30 @@
         notifEl.innerHTML = notifs.length
           ? notifs.slice(0, 8).map(notificationRowHTML).join('')
           : '<p class="footer-text">No tienes notificaciones nuevas.</p>';
+        notifEl.querySelectorAll('.notif-row-clickable').forEach((row) => {
+          row.addEventListener('click', () => {
+            if (row.dataset.notifPost) window.location.href = 'comunidad.html?post=' + row.dataset.notifPost;
+            else if (row.dataset.notifProfile) window.location.href = 'perfil.html?u=' + encodeURIComponent(row.dataset.notifProfile);
+          });
+        });
+        const badge = document.getElementById('notifUnreadBadge');
+        if (badge) { badge.hidden = true; badge.textContent = '0'; }
       } catch (e) {
         notifEl.innerHTML = '<p class="footer-text">No se pudieron cargar las notificaciones.</p>';
       }
+    }
+    const markAllReadBtn = document.getElementById('notifMarkAllReadBtn');
+    if (markAllReadBtn) {
+      markAllReadBtn.addEventListener('click', async () => {
+        markAllReadBtn.disabled = true;
+        try {
+          await callFunction('community-notifications', { action: 'markAllRead' });
+          notifEl.querySelectorAll('.mission-icon').forEach((el) => { el.textContent = '·'; });
+          notifEl.querySelectorAll('.mission-info strong').forEach((el) => { el.style.fontWeight = '400'; });
+          const badge = document.getElementById('notifUnreadBadge');
+          if (badge) { badge.hidden = true; badge.textContent = '0'; }
+        } catch (e) { /* se ignora */ } finally { markAllReadBtn.disabled = false; }
+      });
     }
 
     if (watchlistEl) {
@@ -1973,7 +2010,37 @@
     });
   }
 
+  function wireMentionAutocomplete(textareaEl, dropdownEl) {
+    if (!textareaEl || !dropdownEl) return;
+    let activeMatches = [];
+    async function checkMention() {
+      const cursor = textareaEl.selectionStart;
+      const uptoCursor = textareaEl.value.slice(0, cursor);
+      const match = uptoCursor.match(/@([a-zA-Z0-9_]{1,24})$/);
+      if (!match) { dropdownEl.hidden = true; return; }
+      const query = match[1];
+      const { data } = await sb.from('profiles').select('username,avatar_color').ilike('username', query + '%').limit(5);
+      activeMatches = data || [];
+      if (!activeMatches.length) { dropdownEl.hidden = true; return; }
+      dropdownEl.innerHTML = activeMatches.map((p) => `<div class="mention-suggestion" data-username="${escapeHtml(p.username)}">@${escapeHtml(p.username)}</div>`).join('');
+      dropdownEl.hidden = false;
+      dropdownEl.querySelectorAll('.mention-suggestion').forEach((row) => {
+        row.addEventListener('click', () => {
+          const username = row.dataset.username;
+          const before = textareaEl.value.slice(0, cursor).replace(/@([a-zA-Z0-9_]{1,24})$/, '@' + username + ' ');
+          const after = textareaEl.value.slice(cursor);
+          textareaEl.value = before + after;
+          textareaEl.focus();
+          dropdownEl.hidden = true;
+        });
+      });
+    }
+    textareaEl.addEventListener('input', checkMention);
+    textareaEl.addEventListener('blur', () => setTimeout(() => { dropdownEl.hidden = true; }, 150));
+  }
+
   function wirePostForm() {
+    wireMentionAutocomplete(document.getElementById('postBody'), document.getElementById('postBodyMentionDropdown'));
     let selectedSentiment = null;
     const sentimentPicker = document.getElementById('sentimentPicker');
     if (sentimentPicker) {
@@ -2608,6 +2675,7 @@
     wireDonateForm();
     wireAdminPanel();
     wireDashboardTabs();
+    loadNotifUnreadBadge();
     document.getElementById('communityEditProfileBtn').addEventListener('click', () => { editingProfile = true; render(); });
     document.getElementById('communityAvatarShopBtn').addEventListener('click', () => { shoppingAvatars = true; render(); });
     const bootstrapBtn = document.getElementById('bootstrapAdminBtn');

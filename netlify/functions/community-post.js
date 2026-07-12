@@ -7,6 +7,7 @@ const { incrementMissionCounter } = require('./_gamification');
 const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
 const ALLOWED_SENTIMENTS = ['alcista', 'bajista', 'neutral'];
 const ALLOWED_TIMEFRAMES = ['M15', 'M30', 'H1', 'H4', 'D1', 'W1'];
+const MENTION_RE = /@([a-z0-9_]{3,24})/gi;
 const ALLOWED_MEDIA_TYPES = {
   'image/png': { ext: 'png', kind: 'image' }, 'image/jpeg': { ext: 'jpg', kind: 'image' },
   'image/gif': { ext: 'gif', kind: 'image' }, 'image/webp': { ext: 'webp', kind: 'image' },
@@ -156,6 +157,23 @@ exports.handler = async (event, context) => {
     });
 
     await incrementMissionCounter(profile.id, 'posted');
+
+    try {
+      const mentionedUsernames = [...new Set([...text.matchAll(MENTION_RE)].map((m) => m[1].toLowerCase()))].slice(0, 5);
+      if (mentionedUsernames.length) {
+        const filter = mentionedUsernames.map((u) => 'username.ilike.' + encodeURIComponent(u)).join(',');
+        const mentioned = await supabaseRequest('profiles?or=(' + filter + ')&select=id', { method: 'GET' });
+        for (const m of mentioned) {
+          if (m.id === profile.id) continue;
+          await supabaseRequest('notifications', {
+            method: 'POST',
+            body: JSON.stringify({ profile_id: m.id, type: 'mention', actor_profile_id: profile.id, post_id: created[0].id })
+          });
+        }
+      }
+    } catch (e) {
+      // Las notificaciones son "best effort": nunca deben romper la publicación.
+    }
 
     return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, post: created[0] }) };
   } catch (e) {
