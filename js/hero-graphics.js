@@ -61,3 +61,46 @@ function finHeroHTML(type, trend, sizeClass) {
     </div>
   `;
 }
+
+const PSICO_PHOTOS = {
+  fomo: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop',
+  disciplina: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop',
+  riesgo: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop',
+  rutinas: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop',
+  perdidas: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop',
+  ansiedad: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop',
+  confianza: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop'
+};
+
+const PSICO_ICONS = {
+  fomo: `<svg viewBox="0 0 100 100"><path d="M56 12 L30 56 L48 56 L42 88 L74 42 L54 42 Z" fill="currentColor" opacity="0.9"/></svg>`,
+  disciplina: `<svg viewBox="0 0 100 100"><rect x="26" y="18" width="48" height="64" rx="6" fill="none" stroke="currentColor" stroke-width="5"/><path d="M36 42 L44 50 L62 30" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="36" y1="62" x2="64" y2="62" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><line x1="36" y1="72" x2="54" y2="72" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>`,
+  riesgo: `<svg viewBox="0 0 100 100"><path d="M50 14 L80 26 L80 50 C80 70 66 82 50 88 C34 82 20 70 20 50 L20 26 Z" fill="none" stroke="currentColor" stroke-width="5"/><path d="M36 50 L46 60 L66 38" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  rutinas: `<svg viewBox="0 0 100 100"><path d="M74 50 A24 24 0 1 0 60 72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M58 60 L60 72 L72 76" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  perdidas: `<svg viewBox="0 0 100 100"><polyline points="16,28 36,46 48,38 62,64 84,82" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M70,82 L84,82 L84,68" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  ansiedad: `<svg viewBox="0 0 100 100"><polyline points="10,52 28,52 36,30 46,74 56,18 66,84 74,52 90,52" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  confianza: `<svg viewBox="0 0 100 100"><polyline points="16,68 40,44 54,56 84,24" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M84,24 L84,40 M84,24 L68,24" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`
+};
+
+const PSICO_CAT_MAP = {
+  'FOMO': 'fomo',
+  'Disciplina': 'disciplina',
+  'Gestión de riesgo': 'riesgo',
+  'Rutinas': 'rutinas',
+  'Pérdidas': 'perdidas',
+  'Ansiedad': 'ansiedad',
+  'Confianza': 'confianza'
+};
+
+function psychHeroHTML(category, sizeClass) {
+  const key = PSICO_CAT_MAP[category] || 'disciplina';
+  const icon = PSICO_ICONS[key];
+  const photo = PSICO_PHOTOS[key];
+  return `
+    <div class="fin-hero cat-psico-${key} ${sizeClass}" style="background-image:url('${photo}')">
+      <div class="fin-hero-overlay"></div>
+      <div class="fin-hero-icon-chip icon-psico-${key}">${icon}</div>
+      <div class="fin-hero-trend trend-neutral">${category}</div>
+    </div>
+  `;
+}

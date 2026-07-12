@@ -1890,6 +1890,21 @@ a { color: inherit; text-decoration: none; }
 .fin-hero-icon-chip.icon-oil { color: #d99568 !important; border-color: rgba(217,149,104,0.4) !important; }
 .fin-hero-icon-chip.icon-crypto { color: #f7931a !important; border-color: rgba(247,147,26,0.4) !important; }
 
+.fin-hero.cat-psico-fomo .fin-hero-overlay { background: linear-gradient(190deg, rgba(44,10,14,0.2) 0%, rgba(18,5,7,0.6) 55%, rgba(10,4,5,0.94) 100%); }
+.fin-hero.cat-psico-disciplina .fin-hero-overlay { background: linear-gradient(190deg, rgba(36,29,10,0.2) 0%, rgba(10,8,3,0.6) 55%, rgba(6,5,2,0.94) 100%); }
+.fin-hero.cat-psico-riesgo .fin-hero-overlay { background: linear-gradient(190deg, rgba(16,25,44,0.2) 0%, rgba(7,11,20,0.6) 55%, rgba(4,7,13,0.94) 100%); }
+.fin-hero.cat-psico-rutinas .fin-hero-overlay { background: linear-gradient(190deg, rgba(14,36,24,0.2) 0%, rgba(6,15,10,0.6) 55%, rgba(4,10,7,0.94) 100%); }
+.fin-hero.cat-psico-perdidas .fin-hero-overlay { background: linear-gradient(190deg, rgba(42,22,10,0.2) 0%, rgba(16,9,4,0.6) 55%, rgba(10,5,3,0.94) 100%); }
+.fin-hero.cat-psico-ansiedad .fin-hero-overlay { background: linear-gradient(190deg, rgba(32,16,44,0.2) 0%, rgba(13,7,18,0.6) 55%, rgba(8,4,11,0.94) 100%); }
+.fin-hero.cat-psico-confianza .fin-hero-overlay { background: linear-gradient(190deg, rgba(10,36,32,0.2) 0%, rgba(4,15,13,0.6) 55%, rgba(3,10,9,0.94) 100%); }
+.fin-hero-icon-chip.icon-psico-fomo { color: #ff5468 !important; border-color: rgba(255,84,104,0.4) !important; }
+.fin-hero-icon-chip.icon-psico-disciplina { color: var(--gold-bright) !important; border-color: rgba(240,199,94,0.4) !important; }
+.fin-hero-icon-chip.icon-psico-riesgo { color: var(--blue-bright) !important; border-color: rgba(122,168,255,0.4) !important; }
+.fin-hero-icon-chip.icon-psico-rutinas { color: var(--green) !important; border-color: rgba(34,192,122,0.4) !important; }
+.fin-hero-icon-chip.icon-psico-perdidas { color: #ff8a5c !important; border-color: rgba(255,138,92,0.4) !important; }
+.fin-hero-icon-chip.icon-psico-ansiedad { color: #b98cf0 !important; border-color: rgba(185,140,240,0.4) !important; }
+.fin-hero-icon-chip.icon-psico-confianza { color: #4fd1c5 !important; border-color: rgba(79,209,197,0.4) !important; }
+
 .fin-hero-trend {
   position: relative;
   z-index: 1;

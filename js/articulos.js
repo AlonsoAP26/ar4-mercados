@@ -10,8 +10,10 @@ function formatFecha(iso) {
 }
 
 function articleCardHTML(a) {
+  const hero = typeof psychHeroHTML === 'function' ? psychHeroHTML(a.category, 'size-mini') : '';
   return `
     <article class="broker-card">
+      ${hero}
       <span class="news-tag">${a.category}</span>
       <h3 style="margin-top:10px;"><a href="articulo.html?slug=${encodeURIComponent(a.slug)}" style="color:inherit;">${a.title}</a></h3>
       <p style="color:var(--text-mid); font-size:0.88rem; margin-bottom:14px;">${a.excerpt}</p>
@@ -83,6 +85,9 @@ async function initArticleDetail() {
   if (descTag) descTag.setAttribute('content', articulo.excerpt);
   const breadcrumbTitle = document.getElementById('breadcrumbTitle');
   if (breadcrumbTitle) breadcrumbTitle.textContent = articulo.title;
+
+  const heroEl = document.getElementById('articleHeroGraphic');
+  if (heroEl && typeof psychHeroHTML === 'function') heroEl.innerHTML = psychHeroHTML(articulo.category, 'size-full');
 
   const metaEl = document.getElementById('articleMeta');
   if (metaEl) {
