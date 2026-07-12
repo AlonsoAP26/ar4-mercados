@@ -5,7 +5,7 @@
   const root = document.getElementById('communityRoot');
   if (!root) return;
 
-  const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
+  const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones', 'Oro', 'Educación', 'Off Topic'];
   const ALLOWED_TIMEFRAMES = ['M15', 'M30', 'H1', 'H4', 'D1', 'W1'];
   const IDEA_STATUS_META = {
     abierta: { label: 'Abierta', cls: 'idea-status-abierta' },
@@ -320,6 +320,9 @@
           <button class="community-tab-btn" data-view="foro" data-category="Índices">💵 Índices</button>
           <button class="community-tab-btn" data-view="foro" data-category="Materias Primas">🥇 Materias Primas</button>
           <button class="community-tab-btn" data-view="foro" data-category="LatAm">🌎 LatAm</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Oro">🥇 Oro</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Educación">🎓 Educación</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Off Topic">💬 Off Topic</button>
           <span class="community-tabs-label">Social</span>
           <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
         </nav>
@@ -923,6 +926,9 @@
           <button class="community-tab-btn" data-view="foro" data-category="Índices">💵 Índices</button>
           <button class="community-tab-btn" data-view="foro" data-category="Materias Primas">🥇 Materias Primas</button>
           <button class="community-tab-btn" data-view="foro" data-category="LatAm">🌎 LatAm</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Oro">🥇 Oro</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Educación">🎓 Educación</button>
+          <button class="community-tab-btn" data-view="foro" data-category="Off Topic">💬 Off Topic</button>
           <span class="community-tabs-label">Social</span>
           <button class="community-tab-btn" data-view="mensajes">✉️ Mensajes <span class="sidenav-badge" id="dmUnreadBadge" hidden>0</span></button>
           <button class="community-tab-btn" data-view="chat">💬 Chat en vivo</button>

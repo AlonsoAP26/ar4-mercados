@@ -8,6 +8,10 @@ const POST_TYPES = [
   { key: 'perspectiva', instruction: 'Escribe una PERSPECTIVA DE MERCADO breve: qué está mirando el mercado esta semana y qué escenarios son posibles (sin predecir con certeza).' },
   { key: 'educativo', instruction: 'Explica un CONCEPTO TÉCNICO O FUNDAMENTAL de trading/inversión de forma clara y breve, con un ejemplo aplicado a un activo real.' }
 ];
+const BRIEFING_DIARIO = {
+  key: 'briefing_diario',
+  instruction: 'Escribe el BRIEFING DIARIO DE MERCADO: un resumen breve de cómo van los mercados hoy (sesión asiática/europea si ya cerraron, qué se espera en la sesión americana), 2-3 activos con movimientos relevantes, y un dato macro del día si lo hay. Formato de resumen rápido tipo "así está el mercado hoy", no un análisis profundo de un solo activo.'
+};
 
 async function supabaseRequest(supabaseUrl, supabaseKey, path, options) {
   const res = await fetch(supabaseUrl + '/rest/v1/' + path, {
@@ -45,7 +49,9 @@ async function main() {
   const recentPosts = await supabaseRequest(supabaseUrl, supabaseSecret, 'community_posts?profile_id=eq.' + botProfileId + '&select=title&order=created_at.desc&limit=15');
   const existingTitles = recentPosts.map((p) => `- ${p.title}`).join('\n');
 
-  const postType = POST_TYPES[Math.floor(Math.random() * POST_TYPES.length)];
+  const utcHour = new Date().getUTCHours();
+  const isFirstDailyRun = utcHour === 14;
+  const postType = isFirstDailyRun ? BRIEFING_DIARIO : POST_TYPES[Math.floor(Math.random() * POST_TYPES.length)];
   const today = new Date().toISOString().slice(0, 10);
 
   const prompt = `Eres la cuenta "IA AR4" de AR4 Mercados, un sitio de trading en español para Latinoamérica. Hoy es ${today}. Vas a publicar en el Foro de la Comunidad (no en Noticias ni en Ideas de Trading oficiales, es un post más informal del foro).
