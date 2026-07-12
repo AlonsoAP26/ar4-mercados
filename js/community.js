@@ -136,6 +136,11 @@
   let dmPollTimer = null;
   let dmListPollTimer = null;
   let currentDmThreadId = null;
+  let catalogTab = 'comun';
+  const CATALOG_PAGE_SIZE = 24;
+  const catalogOffset = { comun: 0, raro: 0, legendario: 0 };
+  const catalogCache = { comun: [], raro: [], legendario: [] };
+  const catalogHasMore = { comun: true, raro: true, legendario: true };
 
   function initPresence() {
     const presenceKey = (netlifyIdentity.currentUser() && netlifyIdentity.currentUser().id) || ('guest-' + Math.random().toString(36).slice(2));
@@ -365,7 +370,57 @@
     `;
   }
 
-  function avatarShopHTML(ownedIds) {
+  async function fetchCatalogPage(rarity) {
+    const offset = catalogOffset[rarity];
+    const { data, error } = await sb.from('avatar_catalog')
+      .select('id,seq,name,rarity,svg_markup,price_points,price_soles')
+      .eq('rarity', rarity)
+      .order('seq', { ascending: true })
+      .range(offset, offset + CATALOG_PAGE_SIZE - 1);
+    if (error) throw error;
+    catalogCache[rarity] = catalogCache[rarity].concat(data);
+    catalogOffset[rarity] += data.length;
+    catalogHasMore[rarity] = data.length === CATALOG_PAGE_SIZE;
+    return data;
+  }
+
+  function avatarCollectionHTML(catalogOwnedIds) {
+    const rank = myEffectiveRank();
+    const isAdmin = rank === 'administrador';
+    const TAB_LABELS = { comun: '🥉 Común', raro: '🥈 Raro', legendario: '🥇 Legendario' };
+
+    function priceLabel(item) {
+      if (item.rarity === 'comun') return `🪙 ${item.price_points} pts`;
+      return `S/ ${Number(item.price_soles).toFixed(2)}`;
+    }
+
+    function cardHTML(item) {
+      const owned = isAdmin || catalogOwnedIds.includes(item.id);
+      return `
+        <div class="avatar-shop-card avatar-collection-card rarity-${item.rarity}">
+          <div class="avatar-collection-img">${item.svg_markup}</div>
+          <strong>${escapeHtml(item.name)}</strong>
+          <span class="avatar-price">${owned ? 'En tu colección' : priceLabel(item)}</span>
+          <button class="btn ${owned ? 'btn-outline' : 'btn-gold'} btn-block catalog-action-btn" data-catalog-id="${item.id}" data-owned="${owned}" data-method="${item.rarity === 'comun' ? 'points' : 'soles'}">
+            ${owned ? 'Equipar' : 'Comprar'}
+          </button>
+        </div>
+      `;
+    }
+
+    const items = catalogCache[catalogTab];
+    return `
+      <h4 style="font-size:0.9rem;margin:24px 0 10px;">🏆 Colección Exclusiva AR4 (500 piezas)</h4>
+      <p style="color:var(--text-mid);font-size:0.82rem;margin-bottom:14px;">Avatares coleccionables con distintos niveles de rareza. No son criptomonedas ni NFTs — son un accesorio cosmético de tu perfil en AR4 Mercados. Los comunes se compran con tus puntos de comunidad; los raros y legendarios con Mercado Pago.</p>
+      <div class="community-tabs" style="flex-direction:row;position:static;margin-bottom:14px;">
+        ${Object.keys(TAB_LABELS).map((r) => `<button class="community-tab-btn catalog-tab-btn${r === catalogTab ? ' active' : ''}" data-rarity="${r}">${TAB_LABELS[r]}</button>`).join('')}
+      </div>
+      <div class="avatar-shop-grid" id="catalogGrid">${items.map(cardHTML).join('') || '<p class="footer-text">Cargando...</p>'}</div>
+      ${catalogHasMore[catalogTab] ? '<button class="btn btn-outline" id="catalogLoadMoreBtn" style="margin-top:14px;">Cargar más</button>' : ''}
+    `;
+  }
+
+  function avatarShopHTML(ownedIds, catalogOwnedIds) {
     const rank = myEffectiveRank();
     const isAdmin = rank === 'administrador';
 
@@ -387,14 +442,30 @@
       `;
     }
 
+    const isCustomPhoto = !!(myProfile.avatar_url && myProfile.avatar_url.indexOf('/avatar-uploads/') !== -1);
+
     return `
       <div class="community-form">
         <h3 style="margin-bottom:4px;">Tienda de avatares</h3>
-        <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">Elige un avatar gratuito o desbloquea uno exclusivo. Los pagos se procesan de forma segura vía Mercado Pago.</p>
-        <h4 style="font-size:0.9rem;margin-bottom:10px;">Gratuitos</h4>
+        <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">Elige un avatar gratuito, desbloquea uno exclusivo, o sube tu propia foto. Los pagos se procesan de forma segura vía Mercado Pago.</p>
+
+        <h4 style="font-size:0.9rem;margin-bottom:10px;">📷 Tu propia foto</h4>
+        <div class="avatar-upload-row">
+          ${avatarHTML(myProfile, 'trader-avatar')}
+          <div>
+            <input type="file" id="avatarPhotoInput" accept="image/png,image/jpeg,image/webp" hidden>
+            <button class="btn btn-outline" id="avatarPhotoBtn" type="button">Subir foto (máx. 4 MB)</button>
+            ${isCustomPhoto ? '<button class="btn btn-outline" id="avatarPhotoRemoveBtn" type="button" style="margin-left:8px;">Quitar foto</button>' : ''}
+          </div>
+        </div>
+
+        <h4 style="font-size:0.9rem;margin:24px 0 10px;">Gratuitos</h4>
         <div class="avatar-shop-grid">${FREE_AVATARS.map((a) => cardHTML(a, false)).join('')}</div>
         <h4 style="font-size:0.9rem;margin:24px 0 10px;">Exclusivos${isAdmin ? ' <span style="color:var(--gold-bright);font-size:0.76rem;">(incluidos en tu rango de administrador)</span>' : ''}</h4>
         <div class="avatar-shop-grid">${PREMIUM_AVATARS.map((a) => cardHTML(a, true)).join('')}</div>
+
+        ${avatarCollectionHTML(catalogOwnedIds)}
+
         <button class="btn btn-outline" id="avatarShopBackBtn" style="margin-top:22px;">← Volver</button>
         <div class="community-form-msg" id="avatarShopMsg"></div>
       </div>
@@ -2191,6 +2262,109 @@
         }
       });
     });
+
+    const photoInput = document.getElementById('avatarPhotoInput');
+    const photoBtn = document.getElementById('avatarPhotoBtn');
+    const photoRemoveBtn = document.getElementById('avatarPhotoRemoveBtn');
+    if (photoBtn) photoBtn.addEventListener('click', () => photoInput.click());
+    if (photoInput) {
+      photoInput.addEventListener('change', async () => {
+        const file = photoInput.files[0];
+        if (!file) return;
+        const msgEl = document.getElementById('avatarShopMsg');
+        msgEl.textContent = '';
+        msgEl.className = 'community-form-msg';
+        if (file.size > 4 * 1024 * 1024) {
+          msgEl.textContent = 'La foto no puede pesar más de 4 MB.';
+          msgEl.className = 'community-form-msg error';
+          return;
+        }
+        photoBtn.disabled = true;
+        photoBtn.textContent = 'Subiendo...';
+        try {
+          const base64 = await new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result.split(',')[1]);
+            reader.onerror = reject;
+            reader.readAsDataURL(file);
+          });
+          const data = await callFunction('avatar-upload-photo', { imageBase64: base64, mimeType: file.type });
+          myProfile = data.profile;
+          if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile();
+          render();
+        } catch (e) {
+          msgEl.textContent = e.message;
+          msgEl.className = 'community-form-msg error';
+          photoBtn.disabled = false;
+          photoBtn.textContent = 'Subir foto (máx. 4 MB)';
+        }
+      });
+    }
+    if (photoRemoveBtn) {
+      photoRemoveBtn.addEventListener('click', async () => {
+        photoRemoveBtn.disabled = true;
+        try {
+          const data = await callFunction('avatar-upload-photo', { remove: true });
+          myProfile = data.profile;
+          if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile();
+          render();
+        } catch (e) {
+          photoRemoveBtn.disabled = false;
+        }
+      });
+    }
+
+    document.querySelectorAll('.catalog-tab-btn').forEach((btn) => {
+      btn.addEventListener('click', () => { catalogTab = btn.dataset.rarity; render(); });
+    });
+
+    const loadMoreBtn = document.getElementById('catalogLoadMoreBtn');
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', async () => {
+        loadMoreBtn.disabled = true;
+        loadMoreBtn.textContent = 'Cargando...';
+        try { await fetchCatalogPage(catalogTab); } catch (e) { /* se ignora, la sección se queda como estaba */ }
+        render();
+      });
+    }
+
+    document.querySelectorAll('.catalog-action-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const catalogId = btn.dataset.catalogId;
+        const owned = btn.dataset.owned === 'true';
+        const method = btn.dataset.method;
+        const msgEl = document.getElementById('avatarShopMsg');
+        msgEl.textContent = '';
+        msgEl.className = 'community-form-msg';
+        btn.disabled = true;
+
+        try {
+          if (owned) {
+            const data = await callFunction('avatar-catalog-equip', { catalogId });
+            myProfile = data.profile;
+            if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile();
+            render();
+            return;
+          }
+          if (method === 'points') {
+            await callFunction('avatar-catalog-buy-points', { catalogId });
+            const data = await callFunction('avatar-catalog-equip', { catalogId });
+            myProfile = data.profile;
+            if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile();
+            render();
+            return;
+          }
+          btn.textContent = 'Conectando con Mercado Pago...';
+          const prefData = await callFunction('avatar-catalog-checkout', { catalogId });
+          window.location.href = prefData.initPoint;
+        } catch (e) {
+          msgEl.textContent = e.message;
+          msgEl.className = 'community-form-msg error';
+          btn.disabled = false;
+          btn.textContent = owned ? 'Equipar' : 'Comprar';
+        }
+      });
+    });
   }
 
   function wireProfileForm() {
@@ -2266,11 +2440,19 @@
 
     if (shoppingAvatars) {
       let owned = [];
+      let catalogOwned = [];
       try {
         const data = await callFunctionGET('community-my-avatars');
         owned = data.owned || [];
       } catch (e) { /* owned queda vacío si falla */ }
-      root.innerHTML = avatarShopHTML(owned);
+      try {
+        const data = await callFunctionGET('avatar-catalog-my-collection');
+        catalogOwned = data.owned || [];
+      } catch (e) { /* catalogOwned queda vacío si falla */ }
+      if (!catalogCache[catalogTab].length) {
+        try { await fetchCatalogPage(catalogTab); } catch (e) { /* la sección de colección queda vacía si falla */ }
+      }
+      root.innerHTML = avatarShopHTML(owned, catalogOwned);
       wireAvatarShop();
       return;
     }

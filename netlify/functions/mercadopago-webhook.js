@@ -26,6 +26,37 @@ exports.handler = async (event, context) => {
       });
       const payment = await payRes.json();
       if (payRes.ok && payment.status === 'approved' && payment.external_reference) {
+        if (payment.external_reference.startsWith('catalog:')) {
+          const [, netlifyUserId, catalogId] = payment.external_reference.split(':');
+          const catalogRows = await supabaseRequest('avatar_catalog?id=eq.' + encodeURIComponent(catalogId) + '&select=id,price_soles', { method: 'GET' });
+          if (catalogRows.length) {
+            const profileRows = await supabaseRequest(
+              'profiles?netlify_user_id=eq.' + encodeURIComponent(netlifyUserId) + '&select=id',
+              { method: 'GET' }
+            );
+            if (profileRows.length) {
+              const profileId = profileRows[0].id;
+              const existing = await supabaseRequest(
+                'avatar_catalog_purchases?profile_id=eq.' + profileId + '&catalog_id=eq.' + encodeURIComponent(catalogId) + '&select=id',
+                { method: 'GET' }
+              );
+              if (!existing.length) {
+                await supabaseRequest('avatar_catalog_purchases', {
+                  method: 'POST',
+                  body: JSON.stringify({
+                    profile_id: profileId,
+                    catalog_id: catalogId,
+                    method: 'soles',
+                    amount_soles: catalogRows[0].price_soles,
+                    mercadopago_payment_id: String(id)
+                  })
+                });
+              }
+            }
+          }
+          return { statusCode: 200, body: 'ok' };
+        }
+
         const [netlifyUserId, avatarId] = payment.external_reference.split(':');
         const avatar = findAvatar(avatarId);
         if (avatar) {
