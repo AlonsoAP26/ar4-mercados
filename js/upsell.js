@@ -7,17 +7,17 @@ function injectUpsellModal() {
     <div class="upsell-modal">
       <button class="upsell-modal-close" id="upsellClose" aria-label="Cerrar">×</button>
       <span class="badge-live" style="background:rgba(212,175,55,0.15);color:var(--gold-bright);border-color:rgba(212,175,55,0.35);">★ AR4 PREMIUM</span>
-      <h3 style="margin-top:12px;">¿Quieres ver esto antes que nadie?</h3>
-      <p class="upsell-sub">Todo lo que acabas de leer se genera y actualiza con IA sobre datos de mercado en tiempo real. Con Premium, tienes acceso a la versión completa de ese análisis — sin límites y sin esperar.</p>
+      <h3 style="margin-top:12px;">El mercado no espera a nadie</h3>
+      <p class="upsell-sub">La diferencia entre una idea de trading y una decisión bien informada está en la profundidad del análisis. Con Premium tienes la versión completa, actualizada con IA en tiempo real — sin resúmenes y sin esperar a que se libere gratis.</p>
       <ul>
-        <li>Ideas de Trading avanzadas y exclusivas, con más profundidad que la versión gratuita</li>
-        <li>Noticias y análisis actualizados con IA, disponibles antes que en el plan gratuito</li>
+        <li>Ideas de Trading con profundidad completa, no la versión resumida</li>
+        <li>Noticias y análisis con IA en el momento que pasan, no después</li>
         <li>Chatbot de gestión de riesgo sin límite diario de mensajes</li>
-        <li>Acceso prioritario a nuevas herramientas apenas las lanzamos</li>
+        <li>Acceso prioritario a cada herramienta nueva que lancemos</li>
         <li>Cancela cuando quieras, sin permanencia</li>
       </ul>
-      <div class="upsell-price">S/ 37 <span>PEN / mes</span></div>
-      <a href="membresia.html" class="btn btn-gold btn-block">Ver planes Premium →</a>
+      <div class="upsell-price">S/ 37 <span>PEN / mes · menos de S/1.25 al día</span></div>
+      <a href="membresia.html" class="btn btn-gold btn-block">Desbloquear análisis completo →</a>
     </div>
   `;
   document.body.appendChild(overlay);
