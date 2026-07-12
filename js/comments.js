@@ -86,9 +86,9 @@
 
       return `
         <div class="comment-row" style="margin-left:${Math.min(depth, 4) * 26}px;" data-comment-id="${c.id}">
-          ${avatarHTML(author)}
+          <a href="perfil.html?u=${encodeURIComponent(author.username)}">${avatarHTML(author)}</a>
           <div class="comment-body">
-            <div class="comment-head"><strong>${escapeHtml(author.username)}</strong>${verifiedBadgeHTML(author)}${rankBadgeHTML(author.rank)}<span class="comment-time">${timeAgo(c.created_at)}${editedHTML}</span>${tagHTML}</div>
+            <div class="comment-head"><a href="perfil.html?u=${encodeURIComponent(author.username)}" class="perfil-link-name"><strong>${escapeHtml(author.username)}</strong></a>${verifiedBadgeHTML(author)}${rankBadgeHTML(author.rank)}<span class="comment-time">${timeAgo(c.created_at)}${editedHTML}</span>${tagHTML}</div>
             <div class="comment-text" data-comment-text="${c.id}"><p>${linkifyMentions(c.body)}</p>${imgHTML}</div>
             <div class="comment-actions-row">
               <button class="comment-like-btn ${liked ? 'active' : ''}" data-like="${c.id}">❤️ <span class="like-count">${likeCount}</span></button>

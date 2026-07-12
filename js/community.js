@@ -685,8 +685,8 @@
     return `<div class="leaderboard-list">${rows.map((p, i) => `
       <div class="leaderboard-row">
         <span class="leaderboard-rank">#${i + 1}</span>
-        ${avatarHTML(p, 'trader-avatar')}
-        <div class="leaderboard-name"><strong>${escapeHtml(p.username)}</strong>${verifiedBadgeHTML(p)}${rankBadgeHTML(p.rank)}</div>
+        <a href="perfil.html?u=${encodeURIComponent(p.username)}">${avatarHTML(p, 'trader-avatar')}</a>
+        <div class="leaderboard-name"><a href="perfil.html?u=${encodeURIComponent(p.username)}" class="perfil-link-name"><strong>${escapeHtml(p.username)}</strong></a>${verifiedBadgeHTML(p)}${rankBadgeHTML(p.rank)}</div>
         <span class="leaderboard-points">${p.points} pts</span>
       </div>
     `).join('')}</div>`;
@@ -1144,8 +1144,8 @@
     const dmBtnHTML = !isSelf ? `<button class="dm-start-btn" data-dm-id="${p.id}" data-dm-username="${escapeHtml(p.username)}" title="Enviar mensaje">✉️</button>` : '';
     return `
       <div class="featured-trader-card glass-card">
-        ${avatarHTML(p, 'trader-avatar')}
-        <strong>${escapeHtml(p.username)}${verifiedBadgeHTML(p)}</strong>
+        <a href="perfil.html?u=${encodeURIComponent(p.username)}">${avatarHTML(p, 'trader-avatar')}</a>
+        <a href="perfil.html?u=${encodeURIComponent(p.username)}" class="perfil-link-name"><strong>${escapeHtml(p.username)}${verifiedBadgeHTML(p)}</strong></a>
         <div class="featured-trader-meta">${rankBadgeHTML(p.rank)}<span class="level-badge">Nv. ${levelFromPoints(p.points)}</span></div>
         ${p.streak_days ? `<span class="streak-chip">🔥 ${p.streak_days} ${p.streak_days === 1 ? 'día' : 'días'}</span>` : ''}
         <div style="display:flex;gap:6px;justify-content:center;">${followBtnHTML}${dmBtnHTML}</div>
@@ -1391,8 +1391,8 @@
     return `
       <article class="community-post-card${post.is_ai_generated ? ' ai-generated-post' : ''}" data-post-id="${post.id}">
         <div class="community-post-head">
-          ${avatarHTML(authorProfile, 'trader-avatar')}
-          <div><strong>${escapeHtml(authorProfile.username)}</strong>${verifiedBadgeHTML(authorProfile)}${rankBadgeHTML(authorProfile.rank)}${aiTag}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
+          <a href="perfil.html?u=${encodeURIComponent(authorProfile.username)}" class="perfil-link-avatar">${avatarHTML(authorProfile, 'trader-avatar')}</a>
+          <div><a href="perfil.html?u=${encodeURIComponent(authorProfile.username)}" class="perfil-link-name"><strong>${escapeHtml(authorProfile.username)}</strong></a>${verifiedBadgeHTML(authorProfile)}${rankBadgeHTML(authorProfile.rank)}${aiTag}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
           ${followBtnHTML}
           ${dmBtnHTML}
         </div>
@@ -1644,9 +1644,9 @@
     const textHTML = msg.body ? `<p>${escapeHtml(msg.body)}</p>` : '';
     return `
       <div class="discord-msg">
-        ${avatarHTML(author, 'discord-msg-avatar')}
+        <a href="perfil.html?u=${encodeURIComponent(author.username)}">${avatarHTML(author, 'discord-msg-avatar')}</a>
         <div class="discord-msg-body">
-          <div class="discord-msg-head"><strong>${escapeHtml(author.username)}</strong>${rankBadgeHTML(author.rank)}<span class="discord-msg-time">${timeAgo(msg.created_at)}</span></div>
+          <div class="discord-msg-head"><a href="perfil.html?u=${encodeURIComponent(author.username)}" class="perfil-link-name"><strong>${escapeHtml(author.username)}</strong></a>${rankBadgeHTML(author.rank)}<span class="discord-msg-time">${timeAgo(msg.created_at)}</span></div>
           ${textHTML}
           ${imgHTML}
         </div>
@@ -2306,6 +2306,13 @@
     loadMissions();
     loadWeeklyChallenge();
     loadStoriesBar(document.getElementById('storiesBar'));
+
+    const dmUsername = new URLSearchParams(window.location.search).get('dm');
+    if (dmUsername) {
+      sb.from('profiles').select('id,username,avatar_color,avatar_url').ilike('username', dmUsername).single().then(({ data }) => {
+        if (data && data.id !== myProfile.id) window.AR4_startDM(data.id, data.username);
+      });
+    }
   }
 
   const heroSignupBtn = document.getElementById('heroSignupBtn');

@@ -1220,6 +1220,56 @@ a { color: inherit; text-decoration: none; }
 }
 .dm-start-btn:hover { border-color: var(--gold); color: var(--gold-bright); }
 
+.perfil-link-avatar, .perfil-link-name { text-decoration: none; color: inherit; }
+.perfil-link-name:hover strong { color: var(--gold-bright); }
+
+.perfil-header { display: flex; gap: 20px; padding: 26px; align-items: flex-start; flex-wrap: wrap; }
+.perfil-avatar {
+  width: 84px; height: 84px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+  font-family: var(--mono); font-weight: 800; font-size: 1.6rem; color: #0a0f1c;
+  border: 2px solid var(--gold);
+}
+.perfil-header-info { flex: 1; min-width: 240px; }
+.perfil-header-info h1 { font-size: 1.4rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.perfil-bio { color: var(--text-mid); font-size: 0.92rem; margin-bottom: 10px; }
+.perfil-meta-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+
+.perfil-actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0; }
+
+.perfil-stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 12px; margin: 20px 0; }
+.perfil-stat-card {
+  background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 16px; text-align: center;
+}
+.perfil-stat-card strong { display: block; font-family: var(--mono); font-size: 1.4rem; color: var(--gold-bright); }
+.perfil-stat-card span { font-size: 0.72rem; color: var(--text-low); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.perfil-affinity-card { margin: 20px 0; }
+.perfil-affinity-head { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.perfil-affinity-circle {
+  width: 74px; height: 74px; border-radius: 50%; flex-shrink: 0;
+  background: conic-gradient(var(--gold-bright) var(--aff-deg, 0deg), rgba(255,255,255,0.06) 0deg);
+  display: flex; align-items: center; justify-content: center;
+}
+.perfil-affinity-inner {
+  width: 58px; height: 58px; border-radius: 50%; background: var(--bg-1);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-weight: 800; font-size: 0.92rem; color: var(--gold-bright);
+}
+.perfil-affinity-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
+
+.perfil-post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.perfil-post-mini { display: flex; flex-direction: column; gap: 6px; padding: 16px; text-decoration: none; }
+.perfil-post-mini strong { color: var(--text-hi); font-size: 0.9rem; line-height: 1.35; }
+.perfil-comment-mini { padding: 14px 16px; margin-bottom: 10px; }
+.perfil-comment-mini p { color: var(--text-mid); font-size: 0.86rem; margin-bottom: 6px; }
+
+@media (max-width: 600px) {
+  .perfil-header { flex-direction: column; align-items: center; text-align: center; }
+  .perfil-meta-row, .perfil-actions { justify-content: center; }
+}
+
 @media (max-width: 700px) {
   .discord-chat-shell { grid-template-columns: 1fr; height: auto; }
   .discord-sidebar { display: flex; overflow-x: auto; border-right: none; border-bottom: 1px solid var(--card-border); padding: 10px; gap: 6px; }
