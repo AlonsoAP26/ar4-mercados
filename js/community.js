@@ -6,6 +6,13 @@
   if (!root) return;
 
   const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
+  const ALLOWED_TIMEFRAMES = ['M15', 'M30', 'H1', 'H4', 'D1', 'W1'];
+  const IDEA_STATUS_META = {
+    abierta: { label: 'Abierta', cls: 'idea-status-abierta' },
+    ganadora: { label: 'Ganadora ✓', cls: 'idea-status-ganadora' },
+    perdedora: { label: 'Perdedora ✕', cls: 'idea-status-perdedora' },
+    cancelada: { label: 'Cancelada', cls: 'idea-status-cancelada' }
+  };
   const BASE_ROOMS = [
     { id: 'forex', label: '💱 Forex' },
     { id: 'latam', label: '🌎 LatAm' },
@@ -531,6 +538,25 @@
           <input type="text" id="postPollOption1" maxlength="60" placeholder="Opción 2" style="margin-bottom:8px;">
           <input type="text" id="postPollOption2" maxlength="60" placeholder="Opción 3 (opcional)" style="margin-bottom:8px;">
           <input type="text" id="postPollOption3" maxlength="60" placeholder="Opción 4 (opcional)">
+        </div>
+        <label style="display:flex;align-items:center;gap:8px;margin-top:14px;font-weight:400;text-transform:none;font-family:inherit;cursor:pointer;">
+          <input type="checkbox" id="postIsIdea" style="width:16px;height:16px;"> 📊 Publicar como Idea de Trading estructurada (Entrada / SL / TP con seguimiento de resultado)
+        </label>
+        <div id="postIdeaFields" hidden style="margin-top:10px;">
+          <label>Dirección</label>
+          <div class="sentiment-picker" id="ideaDirectionPicker">
+            <button type="button" class="sentiment-option" data-direction="long">▲ Long</button>
+            <button type="button" class="sentiment-option" data-direction="short">▼ Short</button>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px;">
+            <div><label for="ideaEntry">Entrada</label><input type="number" step="any" id="ideaEntry"></div>
+            <div><label for="ideaSl">Stop Loss</label><input type="number" step="any" id="ideaSl"></div>
+            <div><label for="ideaTp">Take Profit</label><input type="number" step="any" id="ideaTp"></div>
+          </div>
+          <label for="ideaTimeframe" style="margin-top:12px;">Temporalidad</label>
+          <select id="ideaTimeframe">${ALLOWED_TIMEFRAMES.map(tf => `<option value="${tf}">${tf}</option>`).join('')}</select>
+          <div id="ideaRrPreview" style="margin-top:10px;color:var(--gold-bright);font-family:var(--mono);font-size:0.86rem;"></div>
+          <p style="color:var(--text-low);font-size:0.76rem;margin-top:6px;">Usa el campo Instrumento de arriba con un símbolo reconocido (ej. EUR/USD, ORO, BTC/USD) para que la idea muestre su gráfico.</p>
         </div>
         <button class="btn btn-gold" id="postSubmit" style="margin-top:14px;">Publicar (+10 pts)</button>
         <div class="community-form-msg" id="postMsg"></div>
@@ -1433,6 +1459,36 @@
     neutral: { icon: '⚪', label: 'Neutral' }
   };
 
+  function ideaStatsHTML(post) {
+    const status = IDEA_STATUS_META[post.idea_status] || IDEA_STATUS_META.abierta;
+    const dirLabel = post.idea_direction === 'short' ? '▼ Short' : '▲ Long';
+    const isMine = myProfile && post.profile_id === myProfile.id;
+    const actionsHTML = (isMine && post.idea_status === 'abierta')
+      ? `<div class="idea-status-actions" data-idea-post="${post.id}">
+          <span>Actualizar resultado:</span>
+          <button class="idea-status-btn win" data-idea-status="ganadora" data-idea-post="${post.id}">✅ Ganadora</button>
+          <button class="idea-status-btn loss" data-idea-status="perdedora" data-idea-post="${post.id}">❌ Perdedora</button>
+          <button class="idea-status-btn cancel" data-idea-status="cancelada" data-idea-post="${post.id}">✕ Cancelada</button>
+        </div>`
+      : '';
+    return `
+      <div class="idea-stats-card">
+        <div class="idea-stats-row">
+          <span class="idea-direction-badge idea-dir-${post.idea_direction}">${dirLabel}</span>
+          <span class="idea-status-badge ${status.cls}">${status.label}</span>
+          <span class="idea-tf-badge">${escapeHtml(post.idea_timeframe || '')}</span>
+        </div>
+        <div class="idea-stats-grid">
+          <div><span>Entrada</span><strong>${post.idea_entry}</strong></div>
+          <div><span>Stop Loss</span><strong>${post.idea_sl}</strong></div>
+          <div><span>Take Profit</span><strong>${post.idea_tp}</strong></div>
+          <div><span>R:R</span><strong>1:${post.idea_rr}</strong></div>
+        </div>
+        ${actionsHTML}
+      </div>
+    `;
+  }
+
   function postCardHTML(post, authorProfile, bookmarkedIds, followingIds) {
     const symbolTag = post.symbol ? `<span class="instrument-badge">${escapeHtml(post.symbol)}</span>` : '';
     const sentimentTag = post.sentiment && SENTIMENT_META[post.sentiment]
@@ -1459,8 +1515,9 @@
       ? `<button class="dm-start-btn" data-dm-id="${authorProfile.id}" data-dm-username="${escapeHtml(authorProfile.username)}" title="Enviar mensaje">✉️</button>`
       : '';
     const aiTag = post.is_ai_generated ? '<span class="ai-generated-badge">🤖 Generado por IA AR4</span>' : '';
+    const ideaHTML = post.is_structured_idea ? ideaStatsHTML(post) : '';
     return `
-      <article class="community-post-card${post.is_ai_generated ? ' ai-generated-post' : ''}" data-post-id="${post.id}">
+      <article class="community-post-card${post.is_ai_generated ? ' ai-generated-post' : ''}${post.is_structured_idea ? ' structured-idea-post' : ''}" data-post-id="${post.id}">
         <div class="community-post-head">
           <a href="perfil.html?u=${encodeURIComponent(authorProfile.username)}" class="perfil-link-avatar">${avatarHTML(authorProfile, 'trader-avatar')}</a>
           <div><a href="perfil.html?u=${encodeURIComponent(authorProfile.username)}" class="perfil-link-name"><strong>${escapeHtml(authorProfile.username)}</strong></a>${verifiedBadgeHTML(authorProfile)}${rankBadgeHTML(authorProfile.rank)}${aiTag}<br><span>${escapeHtml(post.category)}${symbolTag}${sentimentTag} · ${timeAgo(post.created_at)}</span></div>
@@ -1468,6 +1525,7 @@
           ${dmBtnHTML}
         </div>
         <h4>${escapeHtml(post.title)}</h4>
+        ${ideaHTML}
         ${chartHTML}
         ${mediaHTML}
         <p>${escapeHtml(post.body)}</p>
@@ -1606,6 +1664,28 @@
           }
           alert(e.message);
           box.querySelectorAll('.poll-option-btn').forEach((b) => (b.disabled = false));
+        }
+      });
+    });
+
+    feedEl.querySelectorAll('.idea-status-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const postId = btn.dataset.ideaPost;
+        const status = btn.dataset.ideaStatus;
+        const label = status === 'ganadora' ? 'Ganadora ✅' : status === 'perdedora' ? 'Perdedora ❌' : 'Cancelada ✕';
+        if (!confirm(`¿Marcar esta idea como ${label}? No se puede deshacer.`)) return;
+        const actionsEl = btn.closest('.idea-status-actions');
+        actionsEl.querySelectorAll('button').forEach((b) => (b.disabled = true));
+        try {
+          const data = await callFunction('community-post-set-status', { postId, status });
+          if (typeof data.points === 'number') { myProfile.points = data.points; if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile(); }
+          const post = lastLoadedPosts.find((p) => p.id === postId);
+          if (post) post.idea_status = status;
+          const card = btn.closest('.idea-stats-card');
+          card.outerHTML = ideaStatsHTML(post || { idea_status: status, idea_direction: null, idea_timeframe: '', idea_entry: '', idea_sl: '', idea_tp: '', idea_rr: '' });
+        } catch (e) {
+          alert(e.message);
+          actionsEl.querySelectorAll('button').forEach((b) => (b.disabled = false));
         }
       });
     });
@@ -1913,6 +1993,46 @@
       addPollCheckbox.addEventListener('change', () => { pollFields.hidden = !addPollCheckbox.checked; });
     }
 
+    let selectedIdeaDirection = null;
+    const isIdeaCheckbox = document.getElementById('postIsIdea');
+    const ideaFields = document.getElementById('postIdeaFields');
+    const ideaDirectionPicker = document.getElementById('ideaDirectionPicker');
+    const ideaEntryInput = document.getElementById('ideaEntry');
+    const ideaSlInput = document.getElementById('ideaSl');
+    const ideaTpInput = document.getElementById('ideaTp');
+    const ideaRrPreview = document.getElementById('ideaRrPreview');
+    if (isIdeaCheckbox && ideaFields) {
+      isIdeaCheckbox.addEventListener('change', () => { ideaFields.hidden = !isIdeaCheckbox.checked; });
+    }
+    if (ideaDirectionPicker) {
+      ideaDirectionPicker.querySelectorAll('.sentiment-option').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          ideaDirectionPicker.querySelectorAll('.sentiment-option').forEach((b) => b.classList.remove('selected'));
+          selectedIdeaDirection = btn.dataset.direction;
+          btn.classList.add('selected');
+          updateRrPreview();
+        });
+      });
+    }
+    function updateRrPreview() {
+      if (!ideaRrPreview) return;
+      const entry = Number(ideaEntryInput.value);
+      const sl = Number(ideaSlInput.value);
+      const tp = Number(ideaTpInput.value);
+      if (!entry || !sl || !tp || !selectedIdeaDirection) { ideaRrPreview.textContent = ''; return; }
+      const risk = Math.abs(entry - sl);
+      const reward = Math.abs(tp - entry);
+      if (!risk) { ideaRrPreview.textContent = ''; return; }
+      const validLong = selectedIdeaDirection === 'long' && sl < entry && tp > entry;
+      const validShort = selectedIdeaDirection === 'short' && sl > entry && tp < entry;
+      if (!validLong && !validShort) {
+        ideaRrPreview.textContent = '⚠️ Revisa los niveles: no son coherentes con la dirección elegida.';
+        return;
+      }
+      ideaRrPreview.textContent = 'Relación riesgo/beneficio: 1:' + (reward / risk).toFixed(2);
+    }
+    if (ideaEntryInput) [ideaEntryInput, ideaSlInput, ideaTpInput].forEach((el) => el.addEventListener('input', updateRrPreview));
+
     const clearTagFilterBtn = document.getElementById('clearTagFilterBtn');
     if (clearTagFilterBtn) {
       clearTagFilterBtn.addEventListener('click', () => { activeTagFilter = null; switchDashboardView('foro'); });
@@ -1971,6 +2091,23 @@
         }
       }
 
+      let ideaPayload = {};
+      if (isIdeaCheckbox && isIdeaCheckbox.checked) {
+        if (!symbol || !selectedIdeaDirection || !ideaEntryInput.value || !ideaSlInput.value || !ideaTpInput.value) {
+          msgEl.textContent = 'Completa instrumento, dirección, entrada, stop loss y take profit para la idea estructurada.';
+          msgEl.className = 'community-form-msg error';
+          return;
+        }
+        ideaPayload = {
+          isStructuredIdea: true,
+          ideaDirection: selectedIdeaDirection,
+          ideaEntry: Number(ideaEntryInput.value),
+          ideaSl: Number(ideaSlInput.value),
+          ideaTp: Number(ideaTpInput.value),
+          ideaTimeframe: document.getElementById('ideaTimeframe').value
+        };
+      }
+
       btn.disabled = true;
       msgEl.textContent = '';
       msgEl.className = 'community-form-msg';
@@ -1982,7 +2119,7 @@
           mediaBase64 = await fileToBase64(pendingPostMediaFile);
           mediaType = pendingPostMediaFile.type;
         }
-        await callFunction('community-post', { title, body, category, symbol, pollOptions, sentiment: selectedSentiment, mediaBase64, mediaType });
+        await callFunction('community-post', { title, body, category, symbol, pollOptions, sentiment: selectedSentiment, mediaBase64, mediaType, ...ideaPayload });
         document.getElementById('postTitle').value = '';
         document.getElementById('postBody').value = '';
         document.getElementById('postSymbol').value = '';
@@ -1998,6 +2135,14 @@
           addPollCheckbox.checked = false;
           pollFields.hidden = true;
           [0, 1, 2, 3].forEach((i) => { document.getElementById('postPollOption' + i).value = ''; });
+        }
+        if (isIdeaCheckbox) {
+          isIdeaCheckbox.checked = false;
+          ideaFields.hidden = true;
+          selectedIdeaDirection = null;
+          if (ideaDirectionPicker) ideaDirectionPicker.querySelectorAll('.sentiment-option').forEach((b) => b.classList.remove('selected'));
+          [ideaEntryInput, ideaSlInput, ideaTpInput].forEach((el) => { el.value = ''; });
+          if (ideaRrPreview) ideaRrPreview.textContent = '';
         }
         msgEl.textContent = '¡Publicado! Ganaste 10 puntos.';
         msgEl.className = 'community-form-msg success';

@@ -1099,6 +1099,29 @@ a { color: inherit; text-decoration: none; }
 .community-post-chart { margin: 12px 0 16px; border-radius: 10px; overflow: hidden; border: 1px solid var(--card-border); }
 
 .community-post-card { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 20px; margin-bottom: 14px; }
+.community-post-card.structured-idea-post { border-color: rgba(212,175,55,0.3); }
+.idea-stats-card { background: var(--bg-0); border: 1px solid var(--card-border); border-radius: 8px; padding: 12px 14px; margin: 10px 0; }
+.idea-stats-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.idea-direction-badge { font-family: var(--mono); font-size: 0.76rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+.idea-direction-badge.idea-dir-long { background: rgba(34,192,122,0.15); color: var(--green); border: 1px solid rgba(34,192,122,0.4); }
+.idea-direction-badge.idea-dir-short { background: rgba(255,84,104,0.15); color: var(--crimson-bright); border: 1px solid rgba(255,84,104,0.4); }
+.idea-status-badge { font-family: var(--mono); font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.4px; }
+.idea-status-badge.idea-status-abierta { background: rgba(122,168,255,0.15); color: var(--blue-bright); border: 1px solid rgba(122,168,255,0.4); }
+.idea-status-badge.idea-status-ganadora { background: rgba(34,192,122,0.15); color: var(--green); border: 1px solid rgba(34,192,122,0.4); }
+.idea-status-badge.idea-status-perdedora { background: rgba(255,84,104,0.15); color: var(--crimson-bright); border: 1px solid rgba(255,84,104,0.4); }
+.idea-status-badge.idea-status-cancelada { background: rgba(170,178,197,0.15); color: var(--text-mid); border: 1px solid rgba(170,178,197,0.35); }
+.idea-tf-badge { font-family: var(--mono); font-size: 0.72rem; color: var(--text-mid); padding: 3px 10px; border: 1px solid var(--card-border); border-radius: 20px; }
+.idea-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.idea-stats-grid div { text-align: center; }
+.idea-stats-grid span { display: block; font-size: 0.62rem; color: var(--text-low); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 3px; }
+.idea-stats-grid strong { font-family: var(--mono); font-size: 0.86rem; color: var(--text-hi); }
+.idea-status-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--card-border); }
+.idea-status-actions span { font-size: 0.74rem; color: var(--text-low); }
+.idea-status-btn { font-size: 0.74rem; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--card-border); background: transparent; color: var(--text-mid); cursor: pointer; }
+.idea-status-btn.win:hover { border-color: var(--green); color: var(--green); }
+.idea-status-btn.loss:hover { border-color: var(--crimson-bright); color: var(--crimson-bright); }
+.idea-status-btn.cancel:hover { border-color: var(--text-low); color: var(--text-hi); }
+@media (max-width: 480px) { .idea-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
 .community-post-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
 .community-post-head .trader-avatar { width: 34px; height: 34px; font-size: 0.78rem; }
 .community-post-head strong { font-size: 0.86rem; }

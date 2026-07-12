@@ -6,6 +6,7 @@ const { incrementMissionCounter } = require('./_gamification');
 
 const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
 const ALLOWED_SENTIMENTS = ['alcista', 'bajista', 'neutral'];
+const ALLOWED_TIMEFRAMES = ['M15', 'M30', 'H1', 'H4', 'D1', 'W1'];
 const ALLOWED_MEDIA_TYPES = {
   'image/png': { ext: 'png', kind: 'image' }, 'image/jpeg': { ext: 'jpg', kind: 'image' },
   'image/gif': { ext: 'gif', kind: 'image' }, 'image/webp': { ext: 'webp', kind: 'image' },
@@ -68,6 +69,29 @@ exports.handler = async (event, context) => {
       return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El título y el contenido son demasiado cortos.' }) };
     }
 
+    let isStructuredIdea = false;
+    let ideaDirection = null, ideaEntry = null, ideaSl = null, ideaTp = null, ideaRr = null, ideaTimeframe = null;
+    if (body.isStructuredIdea) {
+      ideaDirection = body.ideaDirection === 'short' ? 'short' : (body.ideaDirection === 'long' ? 'long' : null);
+      ideaEntry = Number(body.ideaEntry);
+      ideaSl = Number(body.ideaSl);
+      ideaTp = Number(body.ideaTp);
+      ideaTimeframe = ALLOWED_TIMEFRAMES.includes(body.ideaTimeframe) ? body.ideaTimeframe : null;
+
+      if (!symbol || !ideaDirection || !ideaTimeframe || !isFinite(ideaEntry) || !isFinite(ideaSl) || !isFinite(ideaTp) || ideaEntry <= 0 || ideaSl <= 0 || ideaTp <= 0) {
+        return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Completa activo, dirección, entrada, stop loss, take profit y temporalidad para una idea estructurada.' }) };
+      }
+      const validLong = ideaDirection === 'long' && ideaSl < ideaEntry && ideaTp > ideaEntry;
+      const validShort = ideaDirection === 'short' && ideaSl > ideaEntry && ideaTp < ideaEntry;
+      if (!validLong && !validShort) {
+        return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Los niveles no son coherentes con la dirección: en long el SL va debajo de la entrada y el TP arriba; en short al revés.' }) };
+      }
+      const risk = Math.abs(ideaEntry - ideaSl);
+      const reward = Math.abs(ideaTp - ideaEntry);
+      ideaRr = Math.round((reward / risk) * 100) / 100;
+      isStructuredIdea = true;
+    }
+
     const profileRows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id,points,rank', { method: 'GET' });
     if (!profileRows.length) {
       return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Primero crea tu perfil de comunidad.' }) };
@@ -111,7 +135,14 @@ exports.handler = async (event, context) => {
         poll_options: pollOptions,
         poll_votes_count: pollOptions ? pollOptions.map(() => 0) : null,
         media_url: mediaUrl,
-        media_type: mediaKind
+        media_type: mediaKind,
+        is_structured_idea: isStructuredIdea,
+        idea_direction: ideaDirection,
+        idea_entry: isStructuredIdea ? ideaEntry : null,
+        idea_sl: isStructuredIdea ? ideaSl : null,
+        idea_tp: isStructuredIdea ? ideaTp : null,
+        idea_rr: ideaRr,
+        idea_timeframe: ideaTimeframe
       })
     });
 
