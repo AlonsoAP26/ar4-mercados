@@ -980,8 +980,8 @@ a { color: inherit; text-decoration: none; }
   .academy-path-line { width: 2px; height: 16px; align-self: center; }
 }
 
-.leaderboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.leaderboard-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+.leaderboard-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; }
+.leaderboard-grid-3 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); }
 @media (max-width: 900px) {
   .leaderboard-grid-3 { grid-template-columns: 1fr; }
 }
@@ -1003,7 +1003,7 @@ a { color: inherit; text-decoration: none; }
   .leaderboard-grid { grid-template-columns: 1fr; }
 }
 
-.dna-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.dna-stat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .dna-stat-card {
   background: var(--card);
   border: 1px solid var(--card-border);
@@ -1017,7 +1017,7 @@ a { color: inherit; text-decoration: none; }
 .dna-stat-value { font-size: 1.3rem; color: var(--gold-bright); font-family: var(--mono); }
 .dna-stat-sub { font-size: 0.76rem; color: var(--text-mid); }
 @media (max-width: 700px) {
-  .dna-stat-grid { grid-template-columns: 1fr 1fr; }
+  .dna-stat-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 }
 
 .community-form { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 22px; margin-bottom: 28px; }
