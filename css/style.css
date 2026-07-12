@@ -984,7 +984,7 @@ a { color: inherit; text-decoration: none; }
 .leaderboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
 .leaderboard-grid-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
 @media (max-width: 900px) {
-  .leaderboard-grid-3 { grid-template-columns: 1fr; }
+  .leaderboard-grid-3 { grid-template-columns: minmax(0, 1fr); }
 }
 .leaderboard-list { display: flex; flex-direction: column; gap: 8px; }
 .leaderboard-row {
@@ -1006,7 +1006,7 @@ a { color: inherit; text-decoration: none; }
 .leaderboard-name strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
 .leaderboard-points { font-family: var(--mono); color: var(--gold-bright); font-size: 0.84rem; flex-shrink: 0; margin-left: auto; }
 @media (max-width: 700px) {
-  .leaderboard-grid { grid-template-columns: 1fr; }
+  .leaderboard-grid { grid-template-columns: minmax(0, 1fr); }
 }
 
 .dna-stat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
@@ -1046,7 +1046,7 @@ a { color: inherit; text-decoration: none; }
 
 .community-dashboard-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px; align-items: start; margin: 24px 0; }
 @media (max-width: 900px) {
-  .community-dashboard-layout { grid-template-columns: 1fr; }
+  .community-dashboard-layout { grid-template-columns: minmax(0, 1fr); }
 }
 .community-tabs {
   display: flex;
@@ -2192,7 +2192,7 @@ a { color: inherit; text-decoration: none; }
 .sidebar-card h4 { font-size: 0.88rem; margin-bottom: 12px; color: var(--text-hi); }
 .sidebar-online-value { font-family: var(--mono); font-size: 1.8rem; font-weight: 800; color: var(--green); }
 @media (max-width: 980px) {
-  .community-layout { grid-template-columns: 1fr; }
+  .community-layout { grid-template-columns: minmax(0, 1fr); }
   .community-sidebar { position: static; }
 }
 
