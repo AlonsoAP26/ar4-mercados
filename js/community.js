@@ -143,6 +143,7 @@
   let dmPollTimer = null;
   let dmListPollTimer = null;
   let notifPollTimer = null;
+  let feedSortMode = 'reciente';
   let currentDmThreadId = null;
   let catalogTab = 'comun';
   const CATALOG_PAGE_SIZE = 24;
@@ -569,9 +570,10 @@
       </div>
 
       <div class="section-head">
-        <h2>Ideas de la comunidad</h2>
+        <h2>${feedSortMode === 'paraTi' ? '✨ Para ti' : 'Ideas de la comunidad'}</h2>
         <button class="filter-chip" id="bookmarksToggleBtn" data-filter="all">🔖 Ver guardados</button>
       </div>
+      ${feedSortMode === 'paraTi' ? '<p style="color:var(--text-low);font-size:0.78rem;margin:-8px 0 14px;">Prioriza publicaciones recientes de traders que sigues y las que están generando más reacciones y votos útiles ahora mismo.</p>' : ''}
       ${activeCategoryFilter ? `<div class="active-filter-chip">Categoría <strong>${escapeHtml(activeCategoryFilter)}</strong> <button id="clearCategoryFilterBtn" type="button">✕ Quitar</button></div>` : ''}
       ${activeTagFilter ? `<div class="active-filter-chip">Filtrando por <strong>${escapeHtml(activeTagFilter)}</strong> <button id="clearTagFilterBtn" type="button">✕ Quitar</button></div>` : ''}
       <div id="communityFeed"><p class="footer-text">Cargando publicaciones...</p></div>
@@ -912,6 +914,7 @@
       <div class="community-dashboard-layout">
         <nav class="community-tabs">
           <button class="community-tab-btn active" data-view="resumen">🏠 Inicio <span class="sidenav-badge" id="notifUnreadBadge" hidden>0</span></button>
+          <button class="community-tab-btn" data-view="paraTi">✨ Para ti</button>
           <button class="community-tab-btn" data-view="foro" data-category="">📋 Foro (todos)</button>
           <span class="community-tabs-label">Categorías</span>
           <button class="community-tab-btn" data-view="foro" data-category="Forex">📈 Forex</button>
@@ -1644,6 +1647,18 @@
       return;
     }
 
+    if (feedSortMode === 'paraTi') {
+      const scorePost = (post) => {
+        const hoursAgo = (Date.now() - new Date(post.created_at).getTime()) / 3600000;
+        const recencyScore = Math.max(0, 48 - hoursAgo);
+        const followBoost = followingIds.has(post.profile_id) ? 40 : 0;
+        const reactionCount = reactionCache[post.id] ? Object.values(reactionCache[post.id]).reduce((a, b) => a + b, 0) : 0;
+        const engagementScore = (post.upvotes || 0) * 2 + reactionCount * 3;
+        return recencyScore + followBoost + engagementScore;
+      };
+      visiblePosts = [...visiblePosts].sort((a, b) => scorePost(b) - scorePost(a));
+    }
+
     const cards = await Promise.all(visiblePosts.map(async (p) => {
       const author = await getProfileById(p.profile_id) || { username: 'Usuario', avatar_color: '#8b93a7', rank: 'basico' };
       return postCardHTML(p, author, bookmarkedIds, followingIds);
@@ -1997,7 +2012,19 @@
         mainView.innerHTML = guestResumenPanelHTML();
         loadGuestResumen();
       }
+    } else if (view === 'paraTi' && myProfile) {
+      feedSortMode = 'paraTi';
+      mainView.innerHTML = foroPanelHTML();
+      wirePostForm();
+      loadFeed();
+    } else if (view === 'paraTi') {
+      showJoinPrompt();
+      feedSortMode = 'reciente';
+      mainView.innerHTML = foroPanelHTML();
+      wirePostForm();
+      loadFeed();
     } else {
+      feedSortMode = 'reciente';
       mainView.innerHTML = foroPanelHTML();
       wirePostForm();
       loadFeed();
