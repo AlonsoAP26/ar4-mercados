@@ -17,6 +17,7 @@
   --blue-bright: #7aa8ff;
   --radius: 10px;
   --mono: 'JetBrains Mono', monospace;
+  --heading: 'Plus Jakarta Sans', 'Roboto', -apple-system, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -24,10 +25,12 @@
 body {
   background: radial-gradient(circle at 20% 0%, #101c34 0%, var(--bg-0) 55%);
   color: var(--text-hi);
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Roboto', -apple-system, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--heading); }
 
 .container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
 .container-wide { max-width: 1440px; }
