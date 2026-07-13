@@ -8,18 +8,26 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-18312316170');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nosotros y Contacto — AR4 Mercados</title>
-<meta name="description" content="Conoce AR4 Mercados y ponte en contacto con nosotros.">
+<title>Sobre AR4 Mercados — Nuestra historia, misión y compromiso con Latinoamérica</title>
+<meta name="description" content="AR4 Mercados nació para el trader latinoamericano: educación real, análisis honestos y una comunidad para crecer, sin vendedores de humo ni promesas irreales.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AR4 Mercados">
+<meta property="og:title" content="Sobre AR4 Mercados — Hecho para el trader latinoamericano">
+<meta property="og:description" content="Educación real, análisis honestos y una comunidad para crecer. Sin vendedores de humo ni promesas irreales.">
+<meta property="og:url" content="https://ar4mercados.com/nosotros.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=1200&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/_supabase-client.js"></script>
 </head>
 <body>
 
@@ -59,66 +67,285 @@
   </div>
 </header>
 
-<section class="page-hero">
+<!-- 1. HERO EMOCIONAL -->
+<section class="nos-hero">
+  <div class="nos-hero-glow"></div>
+  <div class="container nos-hero-inner">
+    <span class="eyebrow reveal">Sobre AR4 Mercados</span>
+    <h1 class="nos-hero-title reveal">El trading ya es suficientemente difícil.<br><span class="gold">Encontrar información confiable no debería serlo.</span></h1>
+    <p class="nos-hero-sub reveal">AR4 Mercados nació para ayudar al trader latinoamericano a dejar de depender de vendedores de humo, señales falsas y promesas irreales. Aquí encuentras educación, herramientas, análisis y una comunidad construida para crecer contigo.</p>
+    <div class="nos-hero-actions reveal">
+      <a href="#historia" class="btn btn-gold">Conoce nuestra historia</a>
+      <a href="comunidad.html" class="btn btn-outline">Únete a la comunidad</a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. NUESTRA HISTORIA -->
+<section class="section" id="historia">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Inicio</a> / Nosotros</div>
-    <h1>Detrás de <span class="gold">AR4 Mercados</span></h1>
-    <p>Un sitio de educación financiera hecho para el trader latinoamericano — sin promesas irreales, con información real y herramientas para decidir mejor.</p>
+    <div class="section-head reveal"><span class="eyebrow small">Nuestra historia</span></div>
+    <div class="nos-story">
+      <div class="nos-story-text reveal">
+        <h2>Nacimos hartos de lo mismo de siempre</h2>
+        <p>Si empezaste a interesarte en los mercados desde Latinoamérica, probablemente ya lo viviste: buscas aprender y te encuentras con un muro de ruido. Vendedores de cursos que prometen "libertad financiera" en 30 días. Influencers posando frente a un Lamborghini alquilado. Grupos de señales "milagrosas" que solo publican las que ganan. Brokers recomendados no por ser buenos, sino por pagar la comisión más alta.</p>
+        <p>AR4 Mercados nace para cambiar exactamente eso. Creemos que el trader latinoamericano merece información seria, presentada con honestidad, sin adornos ni promesas que nadie puede cumplir.</p>
+        <p><strong>No somos un "vende cursos".</strong> Somos una plataforma financiera: reviews honestas de brokers, análisis de contexto (no señales mágicas), educación en psicología del trading, herramientas reales y una comunidad donde se aprende de verdad.</p>
+      </div>
+      <div class="nos-story-cards reveal">
+        <div class="nos-problem-card"><span class="nos-x">✕</span> Vendedores de cursos milagro</div>
+        <div class="nos-problem-card"><span class="nos-x">✕</span> Influencers con Lamborghinis alquilados</div>
+        <div class="nos-problem-card"><span class="nos-x">✕</span> Señales "infalibles" que solo muestran las que ganan</div>
+        <div class="nos-problem-card"><span class="nos-x">✕</span> Brokers promocionados solo por comisión</div>
+        <div class="nos-arrow-down">↓</div>
+        <div class="nos-solution-card"><span class="nos-check">✓</span> Una plataforma financiera seria, hecha para ti</div>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- 3. ¿POR QUÉ LATINOAMÉRICA? -->
+<section class="section section-alt nos-latam-why">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow small">¿Por qué Latinoamérica?</span></div>
+    <div class="nos-latam-grid">
+      <div class="nos-latam-text reveal">
+        <h2>Sabemos cómo es empezar desde aquí</h2>
+        <p>Muchos empiezan con cuentas pequeñas. Con internet limitado. Con pocos recursos. Con trabajos de tiempo completo. Con el miedo real de perder los ahorros que tanto costó juntar.</p>
+        <p>No diseñamos AR4 para el trader de Wall Street con una pantalla en cada pared. Lo diseñamos para el que estudia de madrugada después del trabajo, para el que arranca con lo justo, para el que necesita información clara y honesta más que nunca.</p>
+        <p class="nos-latam-highlight">No importa de dónde seas. Aquí todos empezamos desde el mismo lugar: <strong>aprendiendo.</strong></p>
+      </div>
+      <div class="nos-flags reveal" id="nosFlagsGrid">
+        <div class="nos-flag"><span>🇵🇪</span> Perú</div>
+        <div class="nos-flag"><span>🇲🇽</span> México</div>
+        <div class="nos-flag"><span>🇨🇴</span> Colombia</div>
+        <div class="nos-flag"><span>🇨🇱</span> Chile</div>
+        <div class="nos-flag"><span>🇦🇷</span> Argentina</div>
+        <div class="nos-flag"><span>🇪🇨</span> Ecuador</div>
+        <div class="nos-flag"><span>🇧🇴</span> Bolivia</div>
+        <div class="nos-flag"><span>🇺🇾</span> Uruguay</div>
+        <div class="nos-flag"><span>🇵🇾</span> Paraguay</div>
+        <div class="nos-flag"><span>🇻🇪</span> Venezuela</div>
+        <div class="nos-flag"><span>🇩🇴</span> Rep. Dominicana</div>
+        <div class="nos-flag nos-flag-all"><span>🌎</span> Y todo el mundo hispano</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. NUESTROS VALORES -->
 <section class="section">
-  <div class="container two-col">
-
-    <div class="promo-card">
-      <span class="eyebrow small">Nuestra misión</span>
-      <h3>Información clara, sin humo</h3>
-      <p>Nacimos para resolver un problema simple: la mayoría del contenido de trading en español o es demasiado técnico para principiantes, o promete ganancias que no existen. AR4 Mercados reúne reviews honestas de brokers, análisis de contexto de mercado (no señales mágicas), educación en psicología de trading, y datos en tiempo real — todo pensado para el trader de Latinoamérica.</p>
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow small">Nuestros valores</span><h2>Lo que nos guía en cada decisión</h2></div>
+    <div class="nos-values-grid">
+      <div class="nos-value-card reveal"><span class="nos-value-icon">📊</span><h4>Información real</h4><p>Datos verificables antes que opiniones infladas.</p></div>
+      <div class="nos-value-card reveal"><span class="nos-value-icon">🔍</span><h4>Transparencia</h4><p>Decimos cómo trabajamos, incluso cuando usamos IA.</p></div>
+      <div class="nos-value-card reveal"><span class="nos-value-icon">🎓</span><h4>Educación primero</h4><p>Enseñar a decidir vale más que dar una respuesta.</p></div>
+      <div class="nos-value-card reveal"><span class="nos-value-icon">🤝</span><h4>Comunidad</h4><p>Nadie aprende solo; crecemos entre todos.</p></div>
+      <div class="nos-value-card reveal"><span class="nos-value-icon">⚡</span><h4>Innovación</h4><p>Usamos tecnología para llegar más lejos, más rápido.</p></div>
+      <div class="nos-value-card reveal"><span class="nos-value-icon">🙏</span><h4>Humildad</h4><p>El mercado humilla a todos; lo respetamos.</p></div>
+      <div class="nos-value-card reveal"><span class="nos-value-icon">🛡️</span><h4>Responsabilidad</h4><p>Cuidar el capital del usuario está primero.</p></div>
+      <div class="nos-value-card reveal"><span class="nos-value-icon">🌱</span><h4>Aprendizaje continuo</h4><p>Nunca dejamos de estudiar los mercados.</p></div>
     </div>
-
-    <div class="promo-card">
-      <span class="eyebrow small">Cómo trabajamos</span>
-      <h3>Personas + IA, con revisión editorial</h3>
-      <p>Usamos inteligencia artificial para investigar, generar y mantener actualizado buena parte de nuestro contenido — de forma transparente, siempre indicándolo. Esto nos permite publicar más rápido sin sacrificar profundidad. Los brokers y cuentas de fondeo se evalúan con datos reales (regulación, Trustpilot, condiciones oficiales), no opiniones infladas.</p>
-    </div>
-
   </div>
 </section>
 
+<!-- 5. CÓMO TRABAJAMOS -->
 <section class="section section-alt">
   <div class="container">
-    <div class="section-head">
-      <h2>Contáctanos</h2>
+    <div class="section-head reveal"><span class="eyebrow small">Cómo trabajamos</span><h2>De la investigación a la publicación</h2></div>
+    <div class="nos-flow reveal">
+      <div class="nos-flow-step"><span class="nos-flow-num">1</span><div><strong>Investigamos</strong><p>Rastreamos fuentes oficiales, datos macro y condiciones reales.</p></div></div>
+      <div class="nos-flow-step"><span class="nos-flow-num">2</span><div><strong>Contrastamos fuentes</strong><p>Nada entra sin cruzar más de una referencia confiable.</p></div></div>
+      <div class="nos-flow-step"><span class="nos-flow-num">3</span><div><strong>Analizamos datos</strong><p>Convertimos números crudos en contexto entendible.</p></div></div>
+      <div class="nos-flow-step"><span class="nos-flow-num">4</span><div><strong>Utilizamos IA</strong><p>La IA acelera la investigación y redacción, siempre marcada como tal.</p></div></div>
+      <div class="nos-flow-step"><span class="nos-flow-num">5</span><div><strong>Revisión humana</strong><p>Ningún contenido se publica sin criterio humano detrás.</p></div></div>
+      <div class="nos-flow-step"><span class="nos-flow-num">6</span><div><strong>Publicación</strong><p>Llega a ti con la fuente y el contexto que necesitas.</p></div></div>
     </div>
+    <p class="nos-flow-note reveal">La inteligencia artificial nos ayuda a llegar más lejos y más rápido, pero <strong>nunca reemplaza el criterio humano.</strong> Es una herramienta, no un oráculo.</p>
+  </div>
+</section>
 
+<!-- 6 y 7. LO QUE NO / SÍ HACEMOS -->
+<section class="section">
+  <div class="container nos-dodont">
+    <div class="nos-dont reveal">
+      <h3><span>✕</span> Lo que NO hacemos</h3>
+      <ul>
+        <li>No vendemos señales.</li>
+        <li>No prometemos rentabilidades.</li>
+        <li>No manipulamos rankings.</li>
+        <li>No recomendamos brokers por dinero.</li>
+        <li>No inventamos noticias.</li>
+        <li>No mostramos vidas falsas.</li>
+      </ul>
+    </div>
+    <div class="nos-do reveal">
+      <h3><span>✓</span> Lo que SÍ hacemos</h3>
+      <ul>
+        <li>Comparativas honestas.</li>
+        <li>Reviews profundas.</li>
+        <li>Educación de verdad.</li>
+        <li>Psicología del trading.</li>
+        <li>Herramientas y calculadoras.</li>
+        <li>Noticias y análisis con contexto.</li>
+        <li>Una comunidad activa.</li>
+        <li>IA financiera transparente.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 8. NUESTRA VISIÓN -->
+<section class="section nos-vision">
+  <div class="nos-vision-glow"></div>
+  <div class="container reveal">
+    <span class="eyebrow small">Nuestra visión</span>
+    <h2 class="nos-vision-title">Convertirnos en la plataforma financiera de referencia para toda Latinoamérica.</h2>
+    <p class="nos-vision-sub">No por ser la más grande. Sino por ser <span class="gold">la más confiable.</span></p>
+  </div>
+</section>
+
+<!-- 9. AR4 EN NÚMEROS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow small">AR4 en números</span><h2>Datos reales, no inflados</h2></div>
+    <div class="nos-stats-grid" id="nosStatsGrid">
+      <div class="nos-stat reveal"><span class="nos-stat-num" data-counter="0" id="statContenido">0</span><span class="nos-stat-label">Artículos, análisis y noticias publicados</span></div>
+      <div class="nos-stat reveal"><span class="nos-stat-num" data-counter="13" id="statBrokers">0</span><span class="nos-stat-label">Brokers y prop firms evaluados</span></div>
+      <div class="nos-stat reveal"><span class="nos-stat-num" data-counter="0" id="statUsuarios">0</span><span class="nos-stat-label">Traders registrados en la comunidad</span></div>
+      <div class="nos-stat reveal"><span class="nos-stat-num" data-counter="0" id="statPosts">0</span><span class="nos-stat-label">Publicaciones e ideas compartidas</span></div>
+      <div class="nos-stat reveal"><span class="nos-stat-num" data-counter="6" id="statHerramientas">0</span><span class="nos-stat-label">Herramientas gratuitas para operar mejor</span></div>
+      <div class="nos-stat reveal"><span class="nos-stat-num" data-counter="11" data-suffix="+" id="statPaises">0</span><span class="nos-stat-label">Países de habla hispana bienvenidos</span></div>
+    </div>
+    <p class="nos-stats-note reveal">Estos contadores se alimentan de datos reales del sitio y de la comunidad. Crecen a medida que crecemos — sin números inventados.</p>
+  </div>
+</section>
+
+<!-- 10. ¿POR QUÉ CONFIAR EN AR4? -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow small">¿Por qué confiar en AR4?</span><h2>Razones concretas, no eslóganes</h2></div>
+    <div class="nos-trust-grid">
+      <div class="nos-trust-card reveal"><span class="nos-trust-icon">📈</span><h4>Información basada en datos</h4><p>Cada afirmación se apoya en fuentes verificables.</p></div>
+      <div class="nos-trust-card reveal"><span class="nos-trust-icon">🚫</span><h4>Sin promesas falsas</h4><p>Jamás te diremos que te haremos rico.</p></div>
+      <div class="nos-trust-card reveal"><span class="nos-trust-icon">🤖</span><h4>IA + revisión humana</h4><p>Velocidad de la IA, criterio de las personas.</p></div>
+      <div class="nos-trust-card reveal"><span class="nos-trust-icon">🔄</span><h4>Actualizaciones constantes</h4><p>El mercado cambia; nuestro contenido también.</p></div>
+      <div class="nos-trust-card reveal"><span class="nos-trust-icon">💬</span><h4>Comunidad activa</h4><p>Traders reales aprendiendo juntos, todos los días.</p></div>
+      <div class="nos-trust-card reveal"><span class="nos-trust-icon">✨</span><h4>Experiencia premium</h4><p>Una plataforma cuidada, rápida y clara.</p></div>
+      <div class="nos-trust-card reveal"><span class="nos-trust-icon">🌎</span><h4>Enfoque latinoamericano</h4><p>Pensada desde y para nuestra región.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. ROADMAP -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow small">Roadmap</span><h2>A dónde vamos</h2></div>
+    <div class="nos-roadmap">
+      <div class="nos-roadmap-col reveal">
+        <div class="nos-roadmap-year">2026 · Ya disponible</div>
+        <ul class="nos-roadmap-list nos-roadmap-done">
+          <li>Lanzamiento de la plataforma</li>
+          <li>Comunidad y membresía Premium</li>
+          <li>Reviews de brokers y prop firms</li>
+          <li>Noticias y análisis con IA</li>
+          <li>Ideas de trading</li>
+          <li>Calendario económico</li>
+          <li>Perfil de usuario y mensajes privados</li>
+          <li>Foros y chat por mercados</li>
+        </ul>
+      </div>
+      <div class="nos-roadmap-col reveal">
+        <div class="nos-roadmap-year">Lo que viene</div>
+        <ul class="nos-roadmap-list nos-roadmap-next">
+          <li>Aplicación móvil</li>
+          <li>Más herramientas de análisis</li>
+          <li>Más países y cobertura local</li>
+          <li>Más idiomas</li>
+          <li>Contenido en audio y video educativo</li>
+          <li>Nuevas funciones de la comunidad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. TESTIMONIOS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow small">La comunidad opina</span><h2>Experiencias reales de traders reales</h2></div>
+    <div class="nos-testimonials" id="nosTestimonials">
+      <p class="footer-text reveal" style="text-align:center;">Cargando experiencias de la comunidad...</p>
+    </div>
+  </div>
+</section>
+
+<!-- 13. MAPA DE LATINOAMÉRICA -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow small">Presencia regional</span><h2>Una comunidad que crece en todo el continente</h2></div>
+    <div class="nos-map-wrap reveal">
+      <div class="nos-map" id="nosMap"></div>
+      <div class="nos-map-tooltip" id="nosMapTooltip" hidden></div>
+    </div>
+    <p class="nos-map-note reveal">Pasa el cursor sobre cada punto para ver el país. Nuestra comunidad está presente y creciendo en toda Latinoamérica.</p>
+  </div>
+</section>
+
+<!-- 14. NUESTRO COMPROMISO / MANIFIESTO -->
+<section class="section nos-manifesto">
+  <div class="nos-manifesto-glow"></div>
+  <div class="container reveal">
+    <span class="eyebrow small">Nuestro compromiso</span>
+    <div class="nos-manifesto-lines">
+      <p>No creemos en el dinero fácil.</p>
+      <p>Creemos en <span class="gold">aprender.</span></p>
+      <p>Creemos en <span class="gold">gestionar riesgos.</span></p>
+      <p>Creemos en <span class="gold">proteger el capital.</span></p>
+      <p>Creemos que la disciplina vale más que una señal.</p>
+      <p class="nos-manifesto-final">Creemos que una comunidad fuerte puede cambiar la forma en que Latinoamérica aprende sobre los mercados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 15. CTA FINAL -->
+<section class="nos-cta">
+  <div class="nos-cta-glow"></div>
+  <div class="container reveal">
+    <h2 class="nos-cta-title">El siguiente paso en tu camino como trader comienza hoy.</h2>
+    <p class="nos-cta-sub">Miles de traders latinoamericanos ya están aprendiendo con información seria y herramientas diseñadas para tomar mejores decisiones.</p>
+    <div class="nos-cta-actions">
+      <a href="#" class="btn btn-gold" id="nosCtaSignup">Crear cuenta gratis</a>
+      <a href="membresia.html" class="btn btn-outline">Explorar AR4 Premium</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO (se mantiene) -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal"><h2>Contáctanos</h2></div>
     <div style="max-width:560px;">
       <p style="color:var(--text-mid);margin-bottom:20px;">¿Preguntas, sugerencias, o algo no funciona bien? Escríbenos y te respondemos lo antes posible.</p>
-
       <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
         <input type="hidden" name="form-name" value="contacto">
-        <p class="hidden" style="display:none;">
-          <label>No llenar si eres humano: <input name="bot-field"></label>
-        </p>
-
+        <p class="hidden" style="display:none;"><label>No llenar si eres humano: <input name="bot-field"></label></p>
         <div style="margin-bottom:16px;">
           <label style="display:block;font-size:0.85rem;color:var(--text-mid);margin-bottom:6px;">Nombre</label>
-          <input type="text" name="nombre" required style="width:100%;background:var(--card);border:1px solid var(--card-border);color:var(--text-hi);border-radius:8px;padding:11px 14px;font-family:'Inter',sans-serif;font-size:0.92rem;">
+          <input type="text" name="nombre" required style="width:100%;background:var(--card);border:1px solid var(--card-border);color:var(--text-hi);border-radius:8px;padding:11px 14px;font-family:inherit;font-size:0.92rem;">
         </div>
-
         <div style="margin-bottom:16px;">
           <label style="display:block;font-size:0.85rem;color:var(--text-mid);margin-bottom:6px;">Correo electrónico</label>
-          <input type="email" name="email" required style="width:100%;background:var(--card);border:1px solid var(--card-border);color:var(--text-hi);border-radius:8px;padding:11px 14px;font-family:'Inter',sans-serif;font-size:0.92rem;">
+          <input type="email" name="email" required style="width:100%;background:var(--card);border:1px solid var(--card-border);color:var(--text-hi);border-radius:8px;padding:11px 14px;font-family:inherit;font-size:0.92rem;">
         </div>
-
         <div style="margin-bottom:20px;">
           <label style="display:block;font-size:0.85rem;color:var(--text-mid);margin-bottom:6px;">Mensaje</label>
-          <textarea name="mensaje" required rows="5" style="width:100%;background:var(--card);border:1px solid var(--card-border);color:var(--text-hi);border-radius:8px;padding:11px 14px;font-family:'Inter',sans-serif;font-size:0.92rem;resize:vertical;"></textarea>
+          <textarea name="mensaje" required rows="5" style="width:100%;background:var(--card);border:1px solid var(--card-border);color:var(--text-hi);border-radius:8px;padding:11px 14px;font-family:inherit;font-size:0.92rem;resize:vertical;"></textarea>
         </div>
-
         <button type="submit" class="btn btn-gold">Enviar mensaje</button>
       </form>
     </div>
-
   </div>
 </section>
 
@@ -153,20 +380,19 @@
 
 <script src="js/main.js?v=2"></script>
 <script src="js/auth.js?v=2"></script>
+<script src="js/nosotros.js"></script>
 <script src="js/chatbot.js?v=6"></script>
 <script>
+  const nosCtaSignup = document.getElementById('nosCtaSignup');
+  if (nosCtaSignup) nosCtaSignup.addEventListener('click', function(e){ e.preventDefault(); if (typeof netlifyIdentity !== 'undefined') netlifyIdentity.open('signup'); });
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
       const data = new FormData(contactForm);
       fetch('/', { method: 'POST', body: new URLSearchParams(data) })
-        .then(() => {
-          contactForm.innerHTML = '<div class="promo-banner" style="border-color:rgba(34,192,122,0.35);"><div class="promo-banner-text"><h3>✅ ¡Mensaje enviado!</h3><p>Gracias por escribirnos, te responderemos pronto.</p></div></div>';
-        })
-        .catch(() => {
-          alert('No se pudo enviar el mensaje. Intenta de nuevo o escríbenos directo por correo.');
-        });
+        .then(() => { contactForm.innerHTML = '<div class="promo-banner" style="border-color:rgba(34,192,122,0.35);"><div class="promo-banner-text"><h3>✅ ¡Mensaje enviado!</h3><p>Gracias por escribirnos, te responderemos pronto.</p></div></div>'; })
+        .catch(() => { alert('No se pudo enviar el mensaje. Intenta de nuevo o escríbenos directo por correo.'); });
     });
   }
 </script>
