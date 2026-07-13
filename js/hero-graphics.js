@@ -1,3 +1,17 @@
+// Algunos símbolos CFD (FOREXCOM, CAPITALCOM) no tienen datos en el widget de
+// Análisis Técnico de TradingView, aunque sí en el gráfico. Los mapeamos a su
+// símbolo de índice equivalente, que sí devuelve el medidor de sentimiento.
+const TECH_ANALYSIS_SYMBOL_MAP = {
+  'FOREXCOM:SPXUSD': 'SP:SPX',
+  'FOREXCOM:NSXUSD': 'NASDAQ:NDX',
+  'CAPITALCOM:DXY': 'TVC:DXY',
+  'TVC:US10Y': 'TVC:US10Y'
+};
+
+function techAnalysisSymbol(symbol) {
+  return TECH_ANALYSIS_SYMBOL_MAP[symbol] || symbol;
+}
+
 function renderTechnicalAnalysis(container, symbol, interval) {
   container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
   const script = document.createElement('script');
@@ -9,7 +23,7 @@ function renderTechnicalAnalysis(container, symbol, interval) {
     width: '100%',
     isTransparent: true,
     height: 425,
-    symbol: symbol,
+    symbol: techAnalysisSymbol(symbol),
     showIntervalTabs: true,
     locale: 'es',
     colorTheme: 'dark'
