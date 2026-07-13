@@ -585,7 +585,7 @@
 
   function chatPanelHTML() {
     return `
-      <p style="color:var(--text-low);font-size:0.8rem;margin-bottom:14px;">Chat moderado automáticamente. Sé respetuoso, no promociones esquemas de rentabilidad garantizada ni compartas enlaces externos. Las imágenes no pasan por moderación automática — repórtanos cualquier abuso.</p>
+      <p style="color:var(--text-low);font-size:0.8rem;margin-bottom:14px;">Chat moderado automáticamente. Sé respetuoso, no promociones esquemas de rentabilidad garantizada ni compartas enlaces externos. Las imágenes no pasan por moderación automática — repórtanos cualquier abuso. Algunos perfiles habituales de las salas son personajes de la comunidad AR4 animados por IA.</p>
       <div class="discord-chat-shell">
         <div class="discord-sidebar">
           <div class="discord-sidebar-title">Salas</div>

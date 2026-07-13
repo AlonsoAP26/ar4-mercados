@@ -1,0 +1,25 @@
+name: Conversaciones de la comunidad en el chat en vivo
+
+on:
+  schedule:
+    - cron: '43 13,17,22 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate-persona-chat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar conversación entre personajes y guardarla en Supabase
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node scripts/generate-persona-chat.js
