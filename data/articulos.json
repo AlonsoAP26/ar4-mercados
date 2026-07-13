@@ -71,5 +71,18 @@
     "author": "IA · AR4 Mercados",
     "date": "2026-07-12",
     "historicalExample": "Nick Leeson y el colapso de Barings Bank en 1995 (pérdidas ocultas de más de 800 millones de libras por no admitir una pérdida inicial pequeña)"
+  },
+  {
+    "title": "Lo que no entendías, no lo controlabas: la lección de 2008 para tu cuenta",
+    "category": "Gestión de riesgo",
+    "excerpt": "Lehman Brothers cayó operando instrumentos que sus propias mesas no comprendían del todo. El trader retail repite ese error cada vez que confía en lo que no puede explicar.",
+    "body": "<p>El 15 de septiembre de 2008, Lehman Brothers se declaró en quiebra después de 158 años de historia. No fue una fábrica que dejó de vender ni un banco que perdió depósitos por pánico de clientes. Fue una institución que había construido buena parte de su balance sobre instrumentos financieros —obligaciones de deuda colateralizada, tramos sintéticos, derivados de crédito— que sus propias mesas de trading valoraban con modelos matemáticos que muy pocos dentro del edificio entendían en profundidad. La pregunta que vale la pena hacerse hoy, desde una cuenta de trading retail en Bogotá, Ciudad de México o Buenos Aires, no es qué pasó en Wall Street. Es por qué gente extremadamente preparada confió tanto en algo que no comprendía del todo.</p>",
+    "body_placeholder": "",
+    "title_extra": "",
+    "_": "",
+    "slug": "lo-que-no-entendias-no-lo-controlabas-la-leccion-de-2008-par-mrjfw9w5",
+    "author": "IA · AR4 Mercados",
+    "date": "2026-07-13",
+    "historicalExample": "la crisis de 2008 y la sobreconfianza de las mesas de trading de bancos de inversión en instrumentos que no comprendían del todo"
   }
 ]
