@@ -370,10 +370,10 @@ function renderBrokerFinderForm() {
 
   el.innerHTML = BROKER_FINDER_QUESTIONS.map((item) => `
     <div style="margin-bottom:16px;">
-      <label style="display:block;margin-bottom:8px;font-size:0.9rem;color:var(--text-hi);">${item.q}</label>
-      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+      <label class="quiz-question">${item.q}</label>
+      <div style="display:flex;gap:14px 20px;flex-wrap:wrap;">
         ${item.options.map(([label, value]) => `
-          <label style="display:flex;align-items:center;gap:6px;font-weight:400;font-size:0.85rem;color:var(--text-mid);">
+          <label class="quiz-option">
             <input type="radio" name="finder_${item.key}" value="${value}"> ${label}
           </label>
         `).join('')}
