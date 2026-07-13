@@ -47,10 +47,10 @@ function renderQuizForm() {
   if (!el) return;
   el.innerHTML = QUIZ_QUESTIONS.map((item, qi) => `
     <div style="margin-bottom:16px;">
-      <label style="display:block;margin-bottom:8px;font-size:0.9rem;color:var(--text-hi);">${qi + 1}. ${item.q}</label>
+      <label class="quiz-question">${qi + 1}. ${item.q}</label>
       <div style="display:flex;gap:14px;flex-wrap:wrap;">
         ${item.options.map(([label, val], oi) => `
-          <label style="display:flex;align-items:center;gap:6px;font-weight:400;font-size:0.85rem;color:var(--text-mid);cursor:pointer;">
+          <label class="quiz-option">
             <input type="radio" name="quiz_${qi}" value="${val}" ${oi === 0 ? 'checked' : ''}> ${label}
           </label>
         `).join('')}
@@ -215,10 +215,10 @@ function renderModuleQuiz(m) {
   const formEl = document.getElementById('moduloQuizForm');
   formEl.innerHTML = m.quiz.map((item, qi) => `
     <div style="margin-bottom:16px;">
-      <label style="display:block;margin-bottom:8px;font-size:0.9rem;color:var(--text-hi);">${qi + 1}. ${item.q}</label>
+      <label class="quiz-question">${qi + 1}. ${item.q}</label>
       <div style="display:flex;flex-direction:column;gap:8px;">
         ${item.options.map((opt, oi) => `
-          <label style="display:flex;align-items:center;gap:8px;font-weight:400;font-size:0.85rem;color:var(--text-mid);cursor:pointer;">
+          <label class="quiz-option">
             <input type="radio" name="moduloquiz_${qi}" value="${oi}"> ${opt}
           </label>
         `).join('')}

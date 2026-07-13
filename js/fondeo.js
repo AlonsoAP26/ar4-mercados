@@ -108,7 +108,7 @@ async function initFondeoDetail() {
       </div>
 
       <div class="section-head" style="margin-top:8px;"><h2>Reglas y datos clave de ${f.name}</h2></div>
-      <ul class="featured-facts" style="margin-bottom:28px;">
+      <ul class="featured-facts facts-clean" style="margin-bottom:28px;">
         <li><span>Año de fundación</span><strong>${f.founded}</strong></li>
         <li><span>Fases de evaluación</span><strong>${f.phases}</strong></li>
         <li><span>Pérdida diaria máxima</span><strong>${f.dailyLossLimit}</strong></li>

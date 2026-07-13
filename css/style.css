@@ -2461,3 +2461,33 @@ a { color: inherit; text-decoration: none; }
   .voice-widget { padding: 12px 14px; gap: 12px; }
   .voice-avatar { width: 52px; height: 52px; }
 }
+
+/* Quizzes de Educación: neutralizan los estilos de formulario de .community-form */
+.community-form input[type="radio"] { width: auto; }
+.community-form label.quiz-question {
+  display: block; font-family: inherit; text-transform: none; letter-spacing: 0;
+  font-size: 0.9rem; color: var(--text-hi); margin: 0 0 8px; font-weight: 600;
+}
+.community-form label.quiz-option {
+  display: flex; align-items: center; gap: 8px; font-family: inherit; text-transform: none;
+  letter-spacing: 0; font-weight: 400; font-size: 0.85rem; color: var(--text-mid); cursor: pointer; margin: 0;
+}
+.community-form label.quiz-option:hover { color: var(--text-hi); }
+
+/* Tabla limpia de reglas (detalle de Fondeo) */
+.featured-facts.facts-clean li {
+  display: grid; grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+  gap: 4px 24px; max-width: 640px; align-items: baseline;
+}
+.featured-facts.facts-clean strong { text-align: left; }
+
+/* Botón de acceso con Google */
+.auth-divider { display: flex; align-items: center; gap: 10px; margin: 14px 0; color: var(--text-low); font-size: 0.76rem; }
+.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--card-border); }
+.google-auth-btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
+  background: #fff; color: #1f1f1f; border: none; border-radius: 8px; padding: 11px 16px;
+  font-weight: 600; font-size: 0.9rem; cursor: pointer; font-family: inherit;
+}
+.google-auth-btn:hover { background: #f1f3f4; }
+.google-auth-btn svg { width: 18px; height: 18px; flex-shrink: 0; }

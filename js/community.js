@@ -284,6 +284,11 @@
         <button class="join-prompt-close" id="joinPromptClose" type="button">✕</button>
         <h3>Únete gratis a AR4 Mercados</h3>
         <p>Crea tu cuenta para participar en la comunidad, publicar tus análisis, seguir traders profesionales y acceder a herramientas exclusivas.</p>
+        <button class="google-auth-btn" id="joinPromptGoogle" type="button">
+          <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+          Continuar con Google
+        </button>
+        <div class="auth-divider"><span>o con tu correo</span></div>
         <div class="join-prompt-actions">
           <button class="btn btn-gold" id="joinPromptSignup" type="button">Crear cuenta</button>
           <button class="btn btn-outline" id="joinPromptLogin" type="button">Iniciar sesión</button>
@@ -292,6 +297,7 @@
     `;
     el.classList.add('visible');
     document.getElementById('joinPromptClose').addEventListener('click', () => el.classList.remove('visible'));
+    document.getElementById('joinPromptGoogle').addEventListener('click', () => { window.location.href = '/.netlify/identity/authorize?provider=google'; });
     document.getElementById('joinPromptSignup').addEventListener('click', () => { el.classList.remove('visible'); netlifyIdentity.open('signup'); });
     document.getElementById('joinPromptLogin').addEventListener('click', () => { el.classList.remove('visible'); netlifyIdentity.open('login'); });
   }
@@ -306,6 +312,10 @@
         <div class="community-guest-actions">
           <button class="btn btn-gold" id="guestSignupBtn" type="button">Crear cuenta</button>
           <button class="btn btn-outline" id="guestLoginBtn" type="button">Iniciar sesión</button>
+          <button class="google-auth-btn" id="guestGoogleBtn" type="button" style="width:auto;">
+            <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+            Continuar con Google
+          </button>
         </div>
       </div>
       ${storiesBarHTML()}
@@ -2676,6 +2686,8 @@
       root.innerHTML = guestShellHTML();
       document.getElementById('guestSignupBtn').addEventListener('click', () => netlifyIdentity.open('signup'));
       document.getElementById('guestLoginBtn').addEventListener('click', () => netlifyIdentity.open('login'));
+      const guestGoogleBtn = document.getElementById('guestGoogleBtn');
+      if (guestGoogleBtn) guestGoogleBtn.addEventListener('click', () => { window.location.href = '/.netlify/identity/authorize?provider=google'; });
       wireDashboardTabs();
       switchDashboardView('resumen');
       loadStoriesBar(document.getElementById('storiesBar'));
