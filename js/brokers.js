@@ -208,9 +208,11 @@ function brokerRankCardHTML(b) {
   const trustScore = computeTrustScore(b);
   return `
     <article class="broker-card broker-rank-card">
-      <div class="broker-rank">#${b.rank}</div>
-      <div class="trust-score-badge" title="AR4 Trust Score: puntuación transparente calculada a partir de regulación, reputación, antigüedad, calidad operativa y políticas al cliente">
-        <strong>${trustScore.total}</strong><span>Trust Score</span>
+      <div class="broker-card-top">
+        <div class="broker-rank">#${b.rank}</div>
+        <div class="trust-score-badge" title="AR4 Trust Score: puntuación transparente calculada a partir de regulación, reputación, antigüedad, calidad operativa y políticas al cliente">
+          <strong>${trustScore.total}</strong><span>Trust Score</span>
+        </div>
       </div>
       ${brokerLogoHTML(b, 'sm')}
       <div class="stars" style="margin:8px 0;">⭐ ${b.trustpilotRating}/5 <span>Trustpilot · ${b.trustpilotReviews} reseñas</span></div>
