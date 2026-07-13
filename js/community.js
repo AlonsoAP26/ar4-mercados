@@ -413,7 +413,7 @@
           <div class="avatar-collection-img">${item.svg_markup}</div>
           <strong>${escapeHtml(item.name)}</strong>
           <span class="avatar-price">${owned ? 'En tu colección' : priceLabel(item)}</span>
-          <button class="btn ${owned ? 'btn-outline' : 'btn-gold'} btn-block catalog-action-btn" data-catalog-id="${item.id}" data-owned="${owned}" data-method="${item.rarity === 'comun' ? 'points' : 'soles'}">
+          <button class="btn ${owned ? 'btn-outline' : 'btn-gold'} btn-block catalog-action-btn" data-catalog-id="${item.id}" data-owned="${owned}" data-method="${item.rarity === 'comun' ? 'points' : 'soles'}" data-price-points="${item.price_points || ''}">
             ${owned ? 'Equipar' : 'Comprar'}
           </button>
         </div>
@@ -2578,6 +2578,10 @@
         const catalogId = btn.dataset.catalogId;
         const owned = btn.dataset.owned === 'true';
         const method = btn.dataset.method;
+        if (!owned && method === 'points') {
+          const pts = btn.dataset.pricePoints || '';
+          if (!confirm(`Este avatar se canjea con ${pts} puntos de tu comunidad. ¿Confirmar la compra?`)) return;
+        }
         const msgEl = document.getElementById('avatarShopMsg');
         msgEl.textContent = '';
         msgEl.className = 'community-form-msg';
@@ -2608,6 +2612,15 @@
           btn.disabled = false;
           btn.textContent = owned ? 'Equipar' : 'Comprar';
         }
+      });
+    });
+
+    // Clic en cualquier parte de la tarjeta del avatar (imagen incluida) = misma acción que su botón.
+    document.querySelectorAll('.avatar-shop-card').forEach((card) => {
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('button')) return;
+        const actionBtn = card.querySelector('.catalog-action-btn, .avatar-action-btn');
+        if (actionBtn && !actionBtn.disabled) actionBtn.click();
       });
     });
   }
