@@ -30,7 +30,14 @@
     { proName: 'NASDAQ:MSFT', title: 'Microsoft' },
     { proName: 'FX_IDC:USDPEN', title: 'USD/PEN' },
     { proName: 'NASDAQ:META', title: 'Meta' },
-    { proName: 'FX_IDC:USDARS', title: 'USD/ARS' }
+    { proName: 'FX_IDC:USDARS', title: 'USD/ARS' },
+    { proName: 'NASDAQ:GOOGL', title: 'Google' },
+    { proName: 'BINANCE:BNBUSD', title: 'BNB/USD' },
+    { proName: 'FX:AUDUSD', title: 'AUD/USD' },
+    { proName: 'NASDAQ:AMD', title: 'AMD' },
+    { proName: 'FX:USDCAD', title: 'USD/CAD' },
+    { proName: 'COINBASE:DOGEUSD', title: 'DOGE/USD' },
+    { proName: 'NYSE:KO', title: 'Coca-Cola' }
   ];
 
   mount.innerHTML = '<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>';
@@ -42,7 +49,7 @@
     symbols: symbols,
     showSymbolLogo: true,
     isTransparent: true,
-    displayMode: 'adaptive',
+    displayMode: 'regular',
     colorTheme: 'dark',
     locale: 'es'
   });
