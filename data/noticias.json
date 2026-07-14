@@ -1,5 +1,227 @@
 [
   {
+    "slug": "oro-firme-cerca-maximos-ritmo-fed-julio-2026",
+    "title": "El oro se sostiene cerca de máximos mientras el mercado calibra el ritmo de la Fed",
+    "category": "Commodities",
+    "symbol": "OANDA:XAUUSD",
+    "author": "AR4 Mercados",
+    "date": "2026-07-14",
+    "excerpt": "El oro se mantiene firme en la zona de máximos recientes, apoyado por la expectativa de recortes de tasas y por su papel de refugio ante la incertidumbre.",
+    "sourceName": "Trading Economics",
+    "sourceUrl": "https://tradingeconomics.com/commodity/gold",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Un metal que no encuentra vendedores agresivos</h3><p>El oro arranca la semana sostenido cerca de sus máximos recientes. Más allá del nivel exacto, lo relevante es el comportamiento: cada intento de corrección ha sido comprado con relativa rapidez, una señal de que el mercado sigue viendo al metal como cobertura mientras persista la duda sobre el rumbo de las tasas de interés.</p><p>La lógica de fondo es sencilla. Cuando el mercado espera que un banco central baje tasas, el costo de oportunidad de mantener un activo que no paga interés como el oro disminuye, y eso tiende a favorecer su precio. A eso se suma la demanda de refugio cada vez que aparece ruido geopolítico o dudas sobre el crecimiento.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Qué vigilar</h3><p>Los datos de inflación y empleo de Estados Unidos siguen siendo el principal termómetro: si confirman una desaceleración, refuerzan el argumento de recortes y, con ello, el piso del oro. Un dólar más fuerte de lo esperado sería el principal freno.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Estructura y gestión de riesgo</h3><p>En marcos altos, mientras el precio respete su zona de soporte previa, el sesgo sigue siendo de continuación. Para el operador, la clave no es adivinar el techo sino definir dónde se invalida la idea: una pérdida clara del último soporte relevante cambiaría el escenario de corto plazo. El tamaño de posición debe calcularse a partir de esa distancia, no del entusiasmo del titular.</p><p>Este contenido es educativo y no constituye una recomendación de compra o venta.</p>",
+    "heroType": "gold",
+    "trend": "up",
+    "aiSummary": {
+      "que": "El oro se mantiene firme cerca de máximos recientes, sostenido por la expectativa de recortes de tasas y por la demanda de refugio.",
+      "porque": "Un entorno de tasas a la baja reduce el costo de oportunidad de mantener oro, y la incertidumbre geopolítica añade demanda defensiva.",
+      "siguiente": "Los próximos datos de inflación y empleo de EE.UU. definirán si el argumento de recortes se refuerza o se enfría.",
+      "activos": [
+        "XAU/USD",
+        "DXY",
+        "US10Y",
+        "Plata"
+      ]
+    },
+    "aiScenarios": {
+      "alcista": 50,
+      "bajista": 20,
+      "lateral": 30
+    },
+    "aiDetects": {
+      "lectura": "Mientras el oro sostenga su zona de soporte previa, el sesgo de continuación tiene más probabilidad que una reversión de fondo.",
+      "probabilidad": 58,
+      "riesgo": "Medio"
+    },
+    "timeline": [
+      {
+        "cuando": "Semana pasada",
+        "texto": "El oro rebota desde su soporte y recupera la zona de máximos recientes."
+      },
+      {
+        "cuando": "Ayer",
+        "texto": "El metal consolida sin vendedores agresivos pese a un dólar firme."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El oro abre la semana sostenido, a la espera de nuevos datos macro de EE.UU."
+      },
+      {
+        "cuando": "Próximos días",
+        "texto": "Datos de inflación y empleo pueden reforzar o enfriar la expectativa de recortes de tasas."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué la expectativa de tasas más bajas favorece al oro?",
+        "a": "El oro no paga intereses; cuando las tasas bajan, el costo de oportunidad de mantenerlo disminuye y se vuelve relativamente más atractivo frente a bonos o efectivo."
+      },
+      {
+        "q": "¿Qué relación tiene el dólar con el oro?",
+        "a": "Suelen moverse en sentido opuesto: un dólar más fuerte encarece el oro para el resto del mundo y suele frenarlo, mientras que un dólar débil lo favorece."
+      },
+      {
+        "q": "¿El oro sirve como refugio siempre?",
+        "a": "Históricamente tiende a comportarse como refugio en episodios de estrés, pero no es infalible: también puede caer en ventas de liquidez cuando los inversores necesitan efectivo."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "TVC:SILVER",
+      "CAPITALCOM:DXY",
+      "TVC:US10Y"
+    ]
+  },
+  {
+    "slug": "bitcoin-consolida-tras-rebote-aversion-riesgo-julio-2026",
+    "title": "Bitcoin consolida tras el rebote mientras baja la aversión al riesgo",
+    "category": "Criptomonedas",
+    "symbol": "BITSTAMP:BTCUSD",
+    "author": "AR4 Mercados",
+    "date": "2026-07-14",
+    "excerpt": "El mercado cripto respira tras el último rebote: Bitcoin consolida y el apetito por el riesgo mejora, aunque la volatilidad sigue siendo la regla.",
+    "sourceName": "CoinGecko",
+    "sourceUrl": "https://www.coingecko.com/en/coins/bitcoin",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Del miedo a la calma, sin euforia</h3><p>Bitcoin encara la semana en modo consolidación después del rebote reciente. El mensaje del mercado es de calma más que de euforia: la presión vendedora se ha aliviado a medida que mejora el apetito por el riesgo en los activos globales, pero tampoco se observa una entrada compradora que dispare el precio.</p><p>El cripto sigue comportándose, en el corto plazo, como un activo de riesgo: cuando las bolsas respiran y baja la aversión, tiende a acompañar; cuando aparece el miedo, suele exagerar las caídas. Por eso el contexto macro (tasas, dólar y clima de riesgo) importa tanto como los factores propios del sector.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que conviene vigilar</h3><p>Mientras Bitcoin mantenga la estructura de su último rango, el escenario base es de consolidación. Una ruptura con volumen hacia arriba abriría continuación; una pérdida del piso del rango devolvería el protagonismo a los vendedores.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Volatilidad y tamaño de posición</h3><p>El error más común en cripto no es elegir mal la dirección, sino sobredimensionar la posición para un activo que se mueve varios puntos porcentuales en horas. En rangos de consolidación como el actual, muchos operadores prefieren esperar la confirmación de ruptura antes de comprometer riesgo, en lugar de anticiparse dentro del rango. La gestión de riesgo (definir el punto de invalidación antes de entrar) pesa más que cualquier pronóstico.</p><p>Contenido educativo; no es una recomendación de inversión.</p>",
+    "heroType": "crypto",
+    "trend": "up",
+    "aiSummary": {
+      "que": "Bitcoin consolida tras su rebote reciente mientras mejora el apetito por el riesgo, sin señales de euforia compradora.",
+      "porque": "En el corto plazo el cripto sigue correlacionado con los activos de riesgo: acompaña cuando baja la aversión y exagera las caídas cuando aparece el miedo.",
+      "siguiente": "Una ruptura del rango con volumen definirá si hay continuación alcista o vuelta a la presión vendedora.",
+      "activos": [
+        "BTC/USD",
+        "ETH/USD",
+        "Nasdaq 100",
+        "DXY"
+      ]
+    },
+    "aiScenarios": {
+      "alcista": 40,
+      "bajista": 25,
+      "lateral": 35
+    },
+    "aiDetects": {
+      "lectura": "Mientras respete el piso de su rango actual, el sesgo de consolidación con ligero tono alcista es el más probable en el corto plazo.",
+      "probabilidad": 54,
+      "riesgo": "Alto"
+    },
+    "timeline": [
+      {
+        "cuando": "Semana pasada",
+        "texto": "Bitcoin rebota tras una fase de ventas y alivia la presión bajista."
+      },
+      {
+        "cuando": "Ayer",
+        "texto": "El precio consolida dentro de un rango mientras mejora el clima de riesgo global."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El mercado cripto abre la semana en calma, a la espera de un catalizador."
+      },
+      {
+        "cuando": "Próximos días",
+        "texto": "Una ruptura del rango con volumen marcará la siguiente dirección."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué Bitcoin se mueve con las bolsas?",
+        "a": "En el corto plazo el mercado lo trata como un activo de riesgo: cuando sube el apetito por el riesgo suele acompañar a las bolsas, y cuando aparece el miedo tiende a caer con más fuerza."
+      },
+      {
+        "q": "¿Qué significa que un activo consolida?",
+        "a": "Que se mueve dentro de un rango relativamente acotado, sin una dirección clara, mientras el mercado decide su próximo movimiento."
+      },
+      {
+        "q": "¿Por qué la volatilidad exige posiciones más pequeñas?",
+        "a": "Porque un activo que se mueve varios puntos porcentuales en horas puede alcanzar tu stop con facilidad; ajustar el tamaño evita que una sola operación dañe la cuenta."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "COINBASE:ETHUSD",
+      "FOREXCOM:NSXUSD",
+      "CAPITALCOM:DXY"
+    ]
+  },
+  {
+    "slug": "peso-mexicano-latam-dolar-firme-julio-2026",
+    "title": "El peso mexicano y las divisas de la región buscan piso frente a un dólar firme",
+    "category": "LatAm",
+    "symbol": "FX_IDC:USDMXN",
+    "author": "AR4 Mercados",
+    "date": "2026-07-14",
+    "excerpt": "Las divisas latinoamericanas ceden terreno ante un dólar firme; el peso mexicano y sus pares regionales buscan estabilizarse mientras el mercado espera datos clave de EE.UU.",
+    "sourceName": "Trading Economics",
+    "sourceUrl": "https://tradingeconomics.com/mexico/currency",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Un dólar firme marca el ritmo</h3><p>El peso mexicano y otras divisas de la región abren la semana a la defensiva frente a un dólar que se mantiene firme. Cuando el billete verde gana fuerza a nivel global, las monedas emergentes (incluidas las latinoamericanas) suelen ser de las primeras en sentir la presión, y esta vez no es la excepción.</p><p>Para el trader de la región, el mensaje es de prudencia: mientras el dólar mantenga el tono, los rebotes de las monedas locales tienden a ser oportunidades de venta más que de compra, salvo que aparezca un catalizador propio que cambie la historia.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Qué mirar esta semana</h3><p>Los datos de inflación y empleo de Estados Unidos son el principal catalizador: definen las expectativas sobre la Fed y, con ello, la fuerza del dólar frente al peso, el real, el peso colombiano y el sol.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo operar la correlación con el dólar</h3><p>Antes de operar cualquier par contra el dólar en la región, conviene mirar el índice dólar (DXY): si está claramente al alza, abrir largos en peso o real es remar contra la corriente. Muchos operadores esperan señales de agotamiento en el dólar (o un dato local relevante) antes de posicionarse a favor de la moneda regional. Definir el nivel de invalidación y ajustar el tamaño a la volatilidad de estos pares (que puede ser alta) es lo que separa una idea de un problema.</p><p>Contenido informativo; no constituye asesoría financiera.</p>",
+    "heroType": "latam",
+    "trend": "up",
+    "aiSummary": {
+      "que": "Las divisas latinoamericanas ceden ante un dólar firme; el peso mexicano y sus pares buscan estabilizarse.",
+      "porque": "Cuando el dólar se fortalece a nivel global, las monedas emergentes suelen ser de las primeras en sentir la presión.",
+      "siguiente": "Los datos de inflación y empleo de EE.UU. definirán la fuerza del dólar y, con ella, el rumbo de las divisas regionales.",
+      "activos": [
+        "USD/MXN",
+        "USD/BRL",
+        "USD/COP",
+        "DXY"
+      ]
+    },
+    "aiScenarios": {
+      "alcista": 45,
+      "bajista": 25,
+      "lateral": 30
+    },
+    "aiDetects": {
+      "lectura": "Mientras el dólar mantenga su firmeza, el sesgo para las divisas regionales sigue siendo defensivo y los rebotes tienden a agotarse.",
+      "probabilidad": 57,
+      "riesgo": "Medio"
+    },
+    "timeline": [
+      {
+        "cuando": "Semana pasada",
+        "texto": "El dólar recupera fuerza a nivel global y presiona a las monedas emergentes."
+      },
+      {
+        "cuando": "Ayer",
+        "texto": "El peso mexicano y sus pares regionales ceden terreno frente al dólar."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "Las divisas de la región abren a la defensiva, buscando estabilizarse."
+      },
+      {
+        "cuando": "Próximos días",
+        "texto": "Los datos macro de EE.UU. marcarán la siguiente dirección del dólar."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué un dólar fuerte presiona a las monedas de la región?",
+        "a": "Cuando el dólar se fortalece, los inversores tienden a mover capital hacia activos en dólares, lo que reduce la demanda de monedas emergentes y las debilita."
+      },
+      {
+        "q": "¿Qué es el índice dólar (DXY)?",
+        "a": "Es un índice que mide la fuerza del dólar frente a una canasta de divisas principales; sirve como termómetro rápido de si el dólar está fuerte o débil."
+      },
+      {
+        "q": "¿Conviene comprar la moneda local cuando el dólar sube?",
+        "a": "Suele ser remar contra la corriente. Muchos operadores esperan señales de agotamiento en el dólar antes de posicionarse a favor de la moneda regional."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "FX_IDC:USDBRL",
+      "FX_IDC:USDCOP",
+      "CAPITALCOM:DXY"
+    ]
+  },
+  {
     "slug": "eur-usd-minimos-anuales-tension-eeuu-iran",
     "title": "El euro se mantiene cerca de mínimos anuales frente al dólar",
     "category": "Forex",
@@ -16,24 +238,62 @@
     "aiSummary": {
       "que": "El EUR/USD cae a mínimos de un año cerca de 1.14, presionado por un repunte del petróleo Brent tras nuevos ataques entre EE.UU. e Irán.",
       "porque": "La eurozona depende de energía importada, así que un petróleo más caro se traduce rápido en más presión inflacionaria justo cuando el BCE ya luce más cauteloso que la Fed.",
-      "activos": ["EUR/USD", "Brent", "USD/MXN", "USD/COP"],
+      "activos": [
+        "EUR/USD",
+        "Brent",
+        "USD/MXN",
+        "USD/COP"
+      ],
       "siguiente": "El mercado vigila las próximas minutas de la Fed y la evolución del conflicto en Medio Oriente como los dos catalizadores más probables de la próxima semana."
     },
-    "aiScenarios": { "alcista": 20, "lateral": 35, "bajista": 45 },
-    "aiDetects": { "probabilidad": 62, "riesgo": "Medio", "lectura": "Mientras el Brent se mantenga elevado, el sesgo bajista para el euro tiene más probabilidad de continuar que de revertirse en el corto plazo." },
+    "aiScenarios": {
+      "alcista": 20,
+      "lateral": 35,
+      "bajista": 45
+    },
+    "aiDetects": {
+      "probabilidad": 62,
+      "riesgo": "Medio",
+      "lectura": "Mientras el Brent se mantenga elevado, el sesgo bajista para el euro tiene más probabilidad de continuar que de revertirse en el corto plazo."
+    },
     "timeline": [
-      { "cuando": "Hace 2 días", "texto": "Tensión en Medio Oriente escala tras nuevos ataques de EE.UU. contra Irán." },
-      { "cuando": "Ayer", "texto": "El petróleo Brent extiende su repunte y toca máximos de dos semanas." },
-      { "cuando": "Hoy", "texto": "El EUR/USD retrocede a su nivel más débil frente al dólar en un año." },
-      { "cuando": "Próxima semana", "texto": "El mercado espera las minutas de la Fed para calibrar el ritmo de recortes de tasas." }
+      {
+        "cuando": "Hace 2 días",
+        "texto": "Tensión en Medio Oriente escala tras nuevos ataques de EE.UU. contra Irán."
+      },
+      {
+        "cuando": "Ayer",
+        "texto": "El petróleo Brent extiende su repunte y toca máximos de dos semanas."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El EUR/USD retrocede a su nivel más débil frente al dólar en un año."
+      },
+      {
+        "cuando": "Próxima semana",
+        "texto": "El mercado espera las minutas de la Fed para calibrar el ritmo de recortes de tasas."
+      }
     ],
     "faq": [
-      { "q": "¿Por qué un petróleo más caro debilita al euro?", "a": "La eurozona importa gran parte de su energía, así que un crudo más caro eleva sus costos de importación y presiona la inflación regional, lo que complica al BCE." },
-      { "q": "¿Qué son las minutas de la Fed?", "a": "Es el resumen detallado de la última reunión de política monetaria de la Reserva Federal; su tono suele mover al dólar con fuerza." },
-      { "q": "¿Cómo afecta esto a divisas latinoamericanas?", "a": "Un dólar más fuerte frente al euro suele trasladarse también a divisas emergentes como el peso mexicano o el peso colombiano." }
+      {
+        "q": "¿Por qué un petróleo más caro debilita al euro?",
+        "a": "La eurozona importa gran parte de su energía, así que un crudo más caro eleva sus costos de importación y presiona la inflación regional, lo que complica al BCE."
+      },
+      {
+        "q": "¿Qué son las minutas de la Fed?",
+        "a": "Es el resumen detallado de la última reunión de política monetaria de la Reserva Federal; su tono suele mover al dólar con fuerza."
+      },
+      {
+        "q": "¿Cómo afecta esto a divisas latinoamericanas?",
+        "a": "Un dólar más fuerte frente al euro suele trasladarse también a divisas emergentes como el peso mexicano o el peso colombiano."
+      }
     ],
     "impactScore": 7,
-    "relatedSymbols": ["TVC:UKOIL", "CAPITALCOM:DXY", "FX_IDC:USDMXN"]
+    "relatedSymbols": [
+      "TVC:UKOIL",
+      "CAPITALCOM:DXY",
+      "FX_IDC:USDMXN"
+    ]
   },
   {
     "slug": "monedas-latam-carry-trade-dolar-debil",
@@ -383,24 +643,62 @@
     "aiSummary": {
       "que": "El índice dólar (DXY) se dispara al abrir la semana después de un reporte de empleo estadounidense más fuerte de lo esperado el viernes.",
       "porque": "Un mercado laboral robusto reduce la urgencia de la Fed por recortar tasas; tasas más altas por más tiempo hacen al dólar más atractivo y presionan a los activos de riesgo.",
-      "activos": ["DXY", "EUR/USD", "USD/MXN", "Bonos del Tesoro"],
+      "activos": [
+        "DXY",
+        "EUR/USD",
+        "USD/MXN",
+        "Bonos del Tesoro"
+      ],
       "siguiente": "El mercado vigila el próximo dato de inflación de EE.UU. y las intervenciones de miembros de la Fed esta semana."
     },
-    "aiScenarios": { "alcista": 50, "lateral": 35, "bajista": 15 },
-    "aiDetects": { "probabilidad": 64, "riesgo": "Medio", "lectura": "Mientras el mercado siga descartando recortes de tasas, el sesgo del dólar tiene más probabilidad de mantenerse firme que de revertirse en el corto plazo." },
+    "aiScenarios": {
+      "alcista": 50,
+      "lateral": 35,
+      "bajista": 15
+    },
+    "aiDetects": {
+      "probabilidad": 64,
+      "riesgo": "Medio",
+      "lectura": "Mientras el mercado siga descartando recortes de tasas, el sesgo del dólar tiene más probabilidad de mantenerse firme que de revertirse en el corto plazo."
+    },
     "timeline": [
-      { "cuando": "El viernes", "texto": "El reporte de empleo de EE.UU. supera las estimaciones y el desempleo sorprende a la baja." },
-      { "cuando": "Fin de semana", "texto": "El mercado recorta sus apuestas por recortes de tasas de la Fed en lo que queda del año." },
-      { "cuando": "Hoy", "texto": "El índice dólar salta y los activos de riesgo abren la semana en rojo." },
-      { "cuando": "Esta semana", "texto": "Se esperan datos de inflación y varias intervenciones de miembros de la Fed." }
+      {
+        "cuando": "El viernes",
+        "texto": "El reporte de empleo de EE.UU. supera las estimaciones y el desempleo sorprende a la baja."
+      },
+      {
+        "cuando": "Fin de semana",
+        "texto": "El mercado recorta sus apuestas por recortes de tasas de la Fed en lo que queda del año."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El índice dólar salta y los activos de riesgo abren la semana en rojo."
+      },
+      {
+        "cuando": "Esta semana",
+        "texto": "Se esperan datos de inflación y varias intervenciones de miembros de la Fed."
+      }
     ],
     "faq": [
-      { "q": "¿Qué es el índice dólar (DXY)?", "a": "Es una medida del valor del dólar estadounidense frente a una canasta de monedas fuertes como el euro, el yen y la libra. Sube cuando el dólar se fortalece de forma amplia." },
-      { "q": "¿Por qué un buen dato de empleo fortalece al dólar?", "a": "Un mercado laboral fuerte reduce la necesidad de la Fed de bajar tasas. Tasas más altas por más tiempo atraen capital hacia el dólar, elevando su valor." },
-      { "q": "¿Por qué esto afecta a las bolsas y las criptomonedas?", "a": "Tasas más altas encarecen el dinero y hacen menos atractivos los activos de riesgo frente a la renta fija, lo que suele traducirse en ventas en bolsas y cripto." }
+      {
+        "q": "¿Qué es el índice dólar (DXY)?",
+        "a": "Es una medida del valor del dólar estadounidense frente a una canasta de monedas fuertes como el euro, el yen y la libra. Sube cuando el dólar se fortalece de forma amplia."
+      },
+      {
+        "q": "¿Por qué un buen dato de empleo fortalece al dólar?",
+        "a": "Un mercado laboral fuerte reduce la necesidad de la Fed de bajar tasas. Tasas más altas por más tiempo atraen capital hacia el dólar, elevando su valor."
+      },
+      {
+        "q": "¿Por qué esto afecta a las bolsas y las criptomonedas?",
+        "a": "Tasas más altas encarecen el dinero y hacen menos atractivos los activos de riesgo frente a la renta fija, lo que suele traducirse en ventas en bolsas y cripto."
+      }
     ],
     "impactScore": 8,
-    "relatedSymbols": ["FX:EURUSD", "FX_IDC:USDMXN", "FOREXCOM:SPXUSD"]
+    "relatedSymbols": [
+      "FX:EURUSD",
+      "FX_IDC:USDMXN",
+      "FOREXCOM:SPXUSD"
+    ]
   },
   {
     "slug": "wall-street-abre-semana-rojo-tasas-empleo",
@@ -419,24 +717,62 @@
     "aiSummary": {
       "que": "El S&P 500 y el Nasdaq abren la semana con caídas amplias, presionados por el repunte de los rendimientos de los bonos tras el fuerte dato de empleo.",
       "porque": "Rendimientos más altos hacen menos atractivas las acciones frente a los bonos y reducen el valor presente de las ganancias futuras, golpeando especialmente a las tecnológicas.",
-      "activos": ["S&P 500", "Nasdaq 100", "Bono 10 años", "Tecnológicas"],
+      "activos": [
+        "S&P 500",
+        "Nasdaq 100",
+        "Bono 10 años",
+        "Tecnológicas"
+      ],
       "siguiente": "El mercado espera el dato de inflación de EE.UU. y el arranque de la temporada de resultados corporativos."
     },
-    "aiScenarios": { "alcista": 25, "lateral": 35, "bajista": 40 },
-    "aiDetects": { "probabilidad": 58, "riesgo": "Medio-Alto", "lectura": "Con valoraciones exigentes y tasas al alza, el sesgo de corto plazo se inclina a la baja mientras no llegue un dato de inflación que alivie la presión." },
+    "aiScenarios": {
+      "alcista": 25,
+      "lateral": 35,
+      "bajista": 40
+    },
+    "aiDetects": {
+      "probabilidad": 58,
+      "riesgo": "Medio-Alto",
+      "lectura": "Con valoraciones exigentes y tasas al alza, el sesgo de corto plazo se inclina a la baja mientras no llegue un dato de inflación que alivie la presión."
+    },
     "timeline": [
-      { "cuando": "El viernes", "texto": "El dato de empleo empuja al alza los rendimientos de los bonos del Tesoro." },
-      { "cuando": "Fin de semana", "texto": "El mercado reduce sus expectativas de recortes de tasas de la Fed." },
-      { "cuando": "Hoy", "texto": "Los futuros del S&P 500 y el Nasdaq apuntan a una apertura fuertemente bajista." },
-      { "cuando": "Esta semana", "texto": "Datos de inflación y primeros resultados corporativos definirán el tono." }
+      {
+        "cuando": "El viernes",
+        "texto": "El dato de empleo empuja al alza los rendimientos de los bonos del Tesoro."
+      },
+      {
+        "cuando": "Fin de semana",
+        "texto": "El mercado reduce sus expectativas de recortes de tasas de la Fed."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "Los futuros del S&P 500 y el Nasdaq apuntan a una apertura fuertemente bajista."
+      },
+      {
+        "cuando": "Esta semana",
+        "texto": "Datos de inflación y primeros resultados corporativos definirán el tono."
+      }
     ],
     "faq": [
-      { "q": "¿Por qué las acciones caen cuando suben las tasas?", "a": "Tasas más altas hacen que los bonos ofrezcan un rendimiento competitivo sin riesgo y reducen el valor presente de las ganancias futuras de las empresas, lo que presiona sus valoraciones." },
-      { "q": "¿Es esto el inicio de una caída mayor?", "a": "No necesariamente. Una corrección tras un cambio de expectativas de tasas puede ser un reajuste saludable; la diferencia con algo más profundo suele verse en las sesiones siguientes, no en el primer día." },
-      { "q": "¿Qué es la temporada de resultados?", "a": "Es el periodo en que las empresas publican sus ganancias trimestrales. Resultados sólidos pueden amortiguar el golpe de tasas más altas; resultados débiles pueden profundizar las caídas." }
+      {
+        "q": "¿Por qué las acciones caen cuando suben las tasas?",
+        "a": "Tasas más altas hacen que los bonos ofrezcan un rendimiento competitivo sin riesgo y reducen el valor presente de las ganancias futuras de las empresas, lo que presiona sus valoraciones."
+      },
+      {
+        "q": "¿Es esto el inicio de una caída mayor?",
+        "a": "No necesariamente. Una corrección tras un cambio de expectativas de tasas puede ser un reajuste saludable; la diferencia con algo más profundo suele verse en las sesiones siguientes, no en el primer día."
+      },
+      {
+        "q": "¿Qué es la temporada de resultados?",
+        "a": "Es el periodo en que las empresas publican sus ganancias trimestrales. Resultados sólidos pueden amortiguar el golpe de tasas más altas; resultados débiles pueden profundizar las caídas."
+      }
     ],
     "impactScore": 8,
-    "relatedSymbols": ["FOREXCOM:NSXUSD", "CAPITALCOM:DXY", "TVC:US10Y"]
+    "relatedSymbols": [
+      "FOREXCOM:NSXUSD",
+      "CAPITALCOM:DXY",
+      "TVC:US10Y"
+    ]
   },
   {
     "slug": "acciones-tecnologicas-lideran-caidas-apertura-semanal",
@@ -455,24 +791,62 @@
     "aiSummary": {
       "que": "Las grandes tecnológicas lideran las caídas al abrir la semana mientras el capital rota hacia sectores defensivos menos sensibles a las tasas.",
       "porque": "Las acciones de crecimiento se valoran por ganancias futuras que valen menos cuando las tasas suben; los defensivos, con flujos estables, resisten mejor ese cambio.",
-      "activos": ["Nasdaq 100", "Tecnológicas", "Consumo básico", "Salud"],
+      "activos": [
+        "Nasdaq 100",
+        "Tecnológicas",
+        "Consumo básico",
+        "Salud"
+      ],
       "siguiente": "La temporada de resultados corporativos que arranca esta semana definirá si las valoraciones se justifican."
     },
-    "aiScenarios": { "alcista": 25, "lateral": 35, "bajista": 40 },
-    "aiDetects": { "probabilidad": 57, "riesgo": "Medio-Alto", "lectura": "Con valoraciones exigentes y tasas al alza, las acciones de crecimiento enfrentan el sesgo de corto plazo más adverso hasta que lleguen los resultados." },
+    "aiScenarios": {
+      "alcista": 25,
+      "lateral": 35,
+      "bajista": 40
+    },
+    "aiDetects": {
+      "probabilidad": 57,
+      "riesgo": "Medio-Alto",
+      "lectura": "Con valoraciones exigentes y tasas al alza, las acciones de crecimiento enfrentan el sesgo de corto plazo más adverso hasta que lleguen los resultados."
+    },
     "timeline": [
-      { "cuando": "El viernes", "texto": "El dato de empleo eleva los rendimientos y cambia las expectativas de tasas." },
-      { "cuando": "Fin de semana", "texto": "El mercado anticipa presión sobre los sectores de mayor valoración." },
-      { "cuando": "Hoy", "texto": "Las tecnológicas encabezan las caídas y el capital rota hacia defensivos." },
-      { "cuando": "Esta semana", "texto": "Los primeros resultados corporativos pondrán a prueba las valoraciones del sector." }
+      {
+        "cuando": "El viernes",
+        "texto": "El dato de empleo eleva los rendimientos y cambia las expectativas de tasas."
+      },
+      {
+        "cuando": "Fin de semana",
+        "texto": "El mercado anticipa presión sobre los sectores de mayor valoración."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "Las tecnológicas encabezan las caídas y el capital rota hacia defensivos."
+      },
+      {
+        "cuando": "Esta semana",
+        "texto": "Los primeros resultados corporativos pondrán a prueba las valoraciones del sector."
+      }
     ],
     "faq": [
-      { "q": "¿Qué es la rotación sectorial?", "a": "Es el movimiento de capital de un tipo de sector a otro. En jornadas de aversión al riesgo, suele salir de sectores de crecimiento hacia sectores defensivos más estables." },
-      { "q": "¿Por qué las tecnológicas son tan sensibles a las tasas?", "a": "Se valoran por ganancias que se esperan a varios años. Cuando las tasas suben, esas ganancias futuras valen menos hoy, lo que reduce su valoración con más fuerza." },
-      { "q": "¿Una caída del sector significa que las empresas van mal?", "a": "No necesariamente. A menudo refleja el precio que el mercado pagaba por ellas más que la salud del negocio. La calidad de la empresa se ve en sus resultados, no en un día rojo." }
+      {
+        "q": "¿Qué es la rotación sectorial?",
+        "a": "Es el movimiento de capital de un tipo de sector a otro. En jornadas de aversión al riesgo, suele salir de sectores de crecimiento hacia sectores defensivos más estables."
+      },
+      {
+        "q": "¿Por qué las tecnológicas son tan sensibles a las tasas?",
+        "a": "Se valoran por ganancias que se esperan a varios años. Cuando las tasas suben, esas ganancias futuras valen menos hoy, lo que reduce su valoración con más fuerza."
+      },
+      {
+        "q": "¿Una caída del sector significa que las empresas van mal?",
+        "a": "No necesariamente. A menudo refleja el precio que el mercado pagaba por ellas más que la salud del negocio. La calidad de la empresa se ve en sus resultados, no en un día rojo."
+      }
     ],
     "impactScore": 7,
-    "relatedSymbols": ["FOREXCOM:SPXUSD", "CAPITALCOM:DXY", "TVC:US10Y"]
+    "relatedSymbols": [
+      "FOREXCOM:SPXUSD",
+      "CAPITALCOM:DXY",
+      "TVC:US10Y"
+    ]
   },
   {
     "slug": "bitcoin-cripto-corrigen-apertura-semana-riesgo",
@@ -491,24 +865,62 @@
     "aiSummary": {
       "que": "Bitcoin y el mercado cripto retroceden al abrir la semana, acompañando la aversión al riesgo global desatada por el fuerte dato de empleo.",
       "porque": "El mercado cripto mantiene una correlación recurrente con los activos de riesgo: cuando sube el dólar y las tasas, el capital reduce exposición a los activos más volátiles.",
-      "activos": ["BTC/USD", "ETH/USD", "Altcoins", "DXY"],
+      "activos": [
+        "BTC/USD",
+        "ETH/USD",
+        "Altcoins",
+        "DXY"
+      ],
       "siguiente": "El mercado observa la evolución del apetito de riesgo global y los flujos hacia los productos cotizados de Bitcoin."
     },
-    "aiScenarios": { "alcista": 30, "lateral": 30, "bajista": 40 },
-    "aiDetects": { "probabilidad": 55, "riesgo": "Alto", "lectura": "Con el dólar fuerte y aversión al riesgo, el sesgo de corto plazo es bajista mientras la estructura de mínimos crecientes no se confirme como soporte." },
+    "aiScenarios": {
+      "alcista": 30,
+      "lateral": 30,
+      "bajista": 40
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Alto",
+      "lectura": "Con el dólar fuerte y aversión al riesgo, el sesgo de corto plazo es bajista mientras la estructura de mínimos crecientes no se confirme como soporte."
+    },
     "timeline": [
-      { "cuando": "El viernes", "texto": "El dato de empleo fortalece al dólar y eleva las tasas, presionando a los activos de riesgo." },
-      { "cuando": "Fin de semana", "texto": "El mercado cripto anticipa presión por la aversión al riesgo global." },
-      { "cuando": "Hoy", "texto": "Bitcoin y las altcoins corrigen en sintonía con la caída de las bolsas." },
-      { "cuando": "Esta semana", "texto": "Los flujos institucionales y el dato de inflación marcarán la dirección." }
+      {
+        "cuando": "El viernes",
+        "texto": "El dato de empleo fortalece al dólar y eleva las tasas, presionando a los activos de riesgo."
+      },
+      {
+        "cuando": "Fin de semana",
+        "texto": "El mercado cripto anticipa presión por la aversión al riesgo global."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "Bitcoin y las altcoins corrigen en sintonía con la caída de las bolsas."
+      },
+      {
+        "cuando": "Esta semana",
+        "texto": "Los flujos institucionales y el dato de inflación marcarán la dirección."
+      }
     ],
     "faq": [
-      { "q": "¿Bitcoin no era un refugio descorrelacionado?", "a": "En la práctica, en el corto plazo Bitcoin ha mostrado una correlación recurrente con los índices tecnológicos: sube y baja con el apetito de riesgo global más de lo que su narrativa de refugio sugiere." },
-      { "q": "¿Qué son los flujos hacia productos cotizados de Bitcoin?", "a": "Son las entradas y salidas de capital de los instrumentos regulados que dan exposición a Bitcoin. Reflejan la demanda institucional y suelen ser más informativos que el precio de las últimas horas." },
-      { "q": "¿Una corrección cambia la tesis de largo plazo?", "a": "No necesariamente. Una corrección que respeta la estructura de la tendencia puede ser una pausa; lo que cambiaría la lectura de fondo es una ruptura de mínimos relevantes con volumen alto." }
+      {
+        "q": "¿Bitcoin no era un refugio descorrelacionado?",
+        "a": "En la práctica, en el corto plazo Bitcoin ha mostrado una correlación recurrente con los índices tecnológicos: sube y baja con el apetito de riesgo global más de lo que su narrativa de refugio sugiere."
+      },
+      {
+        "q": "¿Qué son los flujos hacia productos cotizados de Bitcoin?",
+        "a": "Son las entradas y salidas de capital de los instrumentos regulados que dan exposición a Bitcoin. Reflejan la demanda institucional y suelen ser más informativos que el precio de las últimas horas."
+      },
+      {
+        "q": "¿Una corrección cambia la tesis de largo plazo?",
+        "a": "No necesariamente. Una corrección que respeta la estructura de la tendencia puede ser una pausa; lo que cambiaría la lectura de fondo es una ruptura de mínimos relevantes con volumen alto."
+      }
     ],
     "impactScore": 6,
-    "relatedSymbols": ["COINBASE:ETHUSD", "CAPITALCOM:DXY", "FOREXCOM:NSXUSD"]
+    "relatedSymbols": [
+      "COINBASE:ETHUSD",
+      "CAPITALCOM:DXY",
+      "FOREXCOM:NSXUSD"
+    ]
   },
   {
     "slug": "oro-brilla-refugio-apertura-semana-rojo",
@@ -527,24 +939,62 @@
     "aiSummary": {
       "que": "El oro sube como refugio mientras las bolsas caen al abrir la semana, pero el dólar fuerte y el alza de rendimientos limitan su avance.",
       "porque": "El oro se beneficia de la aversión al riesgo, pero como no paga intereses y se cotiza en dólares, las tasas altas y un dólar fuerte actúan como techo.",
-      "activos": ["Oro (XAU/USD)", "Petróleo Brent", "DXY", "Bono 10 años"],
+      "activos": [
+        "Oro (XAU/USD)",
+        "Petróleo Brent",
+        "DXY",
+        "Bono 10 años"
+      ],
       "siguiente": "El mercado vigila si la demanda de refugio o la presión del dólar y las tasas domina, con el dato de inflación como árbitro."
     },
-    "aiScenarios": { "alcista": 40, "lateral": 40, "bajista": 20 },
-    "aiDetects": { "probabilidad": 56, "riesgo": "Medio", "lectura": "El oro tiene sesgo alcista por la demanda de refugio, pero necesita que la aversión al riesgo pese más que el dólar fuerte para romper al alza con claridad." },
+    "aiScenarios": {
+      "alcista": 40,
+      "lateral": 40,
+      "bajista": 20
+    },
+    "aiDetects": {
+      "probabilidad": 56,
+      "riesgo": "Medio",
+      "lectura": "El oro tiene sesgo alcista por la demanda de refugio, pero necesita que la aversión al riesgo pese más que el dólar fuerte para romper al alza con claridad."
+    },
     "timeline": [
-      { "cuando": "El viernes", "texto": "El dato de empleo fortalece al dólar y eleva los rendimientos, factores adversos para el oro." },
-      { "cuando": "Fin de semana", "texto": "La tensión en Medio Oriente mantiene sostenido al petróleo y la demanda de refugio." },
-      { "cuando": "Hoy", "texto": "El oro sube por su rol de refugio mientras las bolsas caen, con avance limitado por el dólar." },
-      { "cuando": "Esta semana", "texto": "El dato de inflación definirá si domina la demanda de refugio o la presión de las tasas." }
+      {
+        "cuando": "El viernes",
+        "texto": "El dato de empleo fortalece al dólar y eleva los rendimientos, factores adversos para el oro."
+      },
+      {
+        "cuando": "Fin de semana",
+        "texto": "La tensión en Medio Oriente mantiene sostenido al petróleo y la demanda de refugio."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El oro sube por su rol de refugio mientras las bolsas caen, con avance limitado por el dólar."
+      },
+      {
+        "cuando": "Esta semana",
+        "texto": "El dato de inflación definirá si domina la demanda de refugio o la presión de las tasas."
+      }
     ],
     "faq": [
-      { "q": "¿Por qué el oro sube cuando caen las bolsas?", "a": "El oro es un activo refugio histórico: en momentos de miedo y aversión al riesgo, el capital busca protegerse en él, lo que suele impulsar su precio." },
-      { "q": "¿Por qué el dólar fuerte le pone techo al oro?", "a": "El oro se cotiza en dólares y no paga intereses. Un dólar fuerte lo encarece para otras divisas, y tasas altas hacen más atractivos los bonos frente a un activo sin rendimiento." },
-      { "q": "¿Qué papel juega el petróleo en todo esto?", "a": "Un petróleo elevado alimenta el temor inflacionario, que a su vez sostiene al dólar y las tasas, presionando indirectamente al oro pese al clima de riesgo que debería favorecerlo." }
+      {
+        "q": "¿Por qué el oro sube cuando caen las bolsas?",
+        "a": "El oro es un activo refugio histórico: en momentos de miedo y aversión al riesgo, el capital busca protegerse en él, lo que suele impulsar su precio."
+      },
+      {
+        "q": "¿Por qué el dólar fuerte le pone techo al oro?",
+        "a": "El oro se cotiza en dólares y no paga intereses. Un dólar fuerte lo encarece para otras divisas, y tasas altas hacen más atractivos los bonos frente a un activo sin rendimiento."
+      },
+      {
+        "q": "¿Qué papel juega el petróleo en todo esto?",
+        "a": "Un petróleo elevado alimenta el temor inflacionario, que a su vez sostiene al dólar y las tasas, presionando indirectamente al oro pese al clima de riesgo que debería favorecerlo."
+      }
     ],
     "impactScore": 6,
-    "relatedSymbols": ["TVC:USOIL", "CAPITALCOM:DXY", "TVC:US10Y"]
+    "relatedSymbols": [
+      "TVC:USOIL",
+      "CAPITALCOM:DXY",
+      "TVC:US10Y"
+    ]
   },
   {
     "slug": "monedas-bolsas-latam-presion-apertura-semana-rojo",
@@ -563,23 +1013,61 @@
     "aiSummary": {
       "que": "El peso mexicano, el real y otras divisas latinoamericanas retroceden al abrir la semana, presionadas por el dólar fuerte y la aversión al riesgo global.",
       "porque": "El clima de aversión al riesgo golpea a los activos emergentes y el estrechamiento del diferencial de tasas resta atractivo al carry trade que sostenía a estas divisas.",
-      "activos": ["USD/MXN", "USD/BRL", "USD/CLP", "DXY"],
+      "activos": [
+        "USD/MXN",
+        "USD/BRL",
+        "USD/CLP",
+        "DXY"
+      ],
       "siguiente": "La región vigila la evolución del dólar y el dato de inflación estadounidense como principales catalizadores."
     },
-    "aiScenarios": { "alcista": 20, "lateral": 35, "bajista": 45 },
-    "aiDetects": { "probabilidad": 60, "riesgo": "Medio-Alto", "lectura": "Mientras el dólar se mantenga fuerte, el sesgo para las divisas de la región es de debilidad, con el carry trade como principal factor de amplificación." },
+    "aiScenarios": {
+      "alcista": 20,
+      "lateral": 35,
+      "bajista": 45
+    },
+    "aiDetects": {
+      "probabilidad": 60,
+      "riesgo": "Medio-Alto",
+      "lectura": "Mientras el dólar se mantenga fuerte, el sesgo para las divisas de la región es de debilidad, con el carry trade como principal factor de amplificación."
+    },
     "timeline": [
-      { "cuando": "El viernes", "texto": "El dato de empleo de EE.UU. fortalece al dólar y golpea el apetito por activos emergentes." },
-      { "cuando": "Fin de semana", "texto": "El mercado anticipa un desarme parcial del carry trade en divisas de la región." },
-      { "cuando": "Hoy", "texto": "El peso mexicano, el real y el peso chileno ceden terreno frente al dólar." },
-      { "cuando": "Esta semana", "texto": "El dato de inflación de EE.UU. y el tono de la Fed marcarán el rumbo regional." }
+      {
+        "cuando": "El viernes",
+        "texto": "El dato de empleo de EE.UU. fortalece al dólar y golpea el apetito por activos emergentes."
+      },
+      {
+        "cuando": "Fin de semana",
+        "texto": "El mercado anticipa un desarme parcial del carry trade en divisas de la región."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El peso mexicano, el real y el peso chileno ceden terreno frente al dólar."
+      },
+      {
+        "cuando": "Esta semana",
+        "texto": "El dato de inflación de EE.UU. y el tono de la Fed marcarán el rumbo regional."
+      }
     ],
     "faq": [
-      { "q": "¿Por qué caen las divisas latinoamericanas si sus economías van bien?", "a": "En jornadas de aversión al riesgo, el capital reduce exposición a todos los activos emergentes sin distinguir demasiado. Los buenos fundamentos importan para el mediano plazo, pero el humor global manda en el corto." },
-      { "q": "¿Qué es el carry trade y por qué es un arma de doble filo?", "a": "Es financiarse en una divisa de tasa baja para invertir en otra de tasa alta. Atrae capital en tiempos de calma, pero cuando el sentimiento cambia, ese capital sale rápido y amplifica las caídas." },
-      { "q": "¿Esto significa que el peso o el real están en problemas?", "a": "No necesariamente. La presión refleja sobre todo el humor global y el dólar fuerte, no un deterioro local. La fortaleza basada en carry es real pero sensible a los cambios de sentimiento." }
+      {
+        "q": "¿Por qué caen las divisas latinoamericanas si sus economías van bien?",
+        "a": "En jornadas de aversión al riesgo, el capital reduce exposición a todos los activos emergentes sin distinguir demasiado. Los buenos fundamentos importan para el mediano plazo, pero el humor global manda en el corto."
+      },
+      {
+        "q": "¿Qué es el carry trade y por qué es un arma de doble filo?",
+        "a": "Es financiarse en una divisa de tasa baja para invertir en otra de tasa alta. Atrae capital en tiempos de calma, pero cuando el sentimiento cambia, ese capital sale rápido y amplifica las caídas."
+      },
+      {
+        "q": "¿Esto significa que el peso o el real están en problemas?",
+        "a": "No necesariamente. La presión refleja sobre todo el humor global y el dólar fuerte, no un deterioro local. La fortaleza basada en carry es real pero sensible a los cambios de sentimiento."
+      }
     ],
     "impactScore": 7,
-    "relatedSymbols": ["FX_IDC:USDBRL", "FX_IDC:USDCLP", "CAPITALCOM:DXY"]
+    "relatedSymbols": [
+      "FX_IDC:USDBRL",
+      "FX_IDC:USDCLP",
+      "CAPITALCOM:DXY"
+    ]
   }
 ]

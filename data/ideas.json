@@ -1,5 +1,31 @@
 [
   {
+    "slug": "nasdaq-100-tendencia-intacta-media-movil-julio-2026",
+    "title": "Nasdaq 100: la tendencia sigue intacta mientras respete su media móvil",
+    "category": "Índices",
+    "symbol": "FOREXCOM:NSXUSD",
+    "author": "AR4 Mercados",
+    "date": "2026-07-14",
+    "excerpt": "El Nasdaq 100 mantiene su estructura alcista de fondo; la clave está en cómo reacciona en su media móvil de referencia y en la zona de soporte previa.",
+    "body": "<p>El Nasdaq 100 conserva una estructura alcista de fondo: mientras siga marcando mínimos crecientes y respete su media móvil de referencia en marcos diarios, el sesgo dominante sigue siendo de continuación. La tecnología ha liderado el movimiento, aunque con episodios de rotación hacia sectores más defensivos que conviene vigilar.</p><p>Para quien opera índices, la idea no es predecir el techo sino operar a favor de la estructura mientras se mantenga. El plan cambia si el precio pierde con claridad su soporte previo y la media que ha venido respetando: ahí la tendencia de corto plazo quedaría en duda.</p><p>Recuerda: esto es contexto de análisis, no una recomendación de compra o venta. El tamaño de tu posición debe salir de tu gestión de riesgo, no del entusiasmo del momento.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Niveles y escenario operativo</h3><p>Escenario de continuación: mientras el índice sostenga su soporte previo y la media móvil que respeta, cada retroceso hacia esa zona es una referencia de interés comprador, siempre con el stop por debajo del último mínimo relevante. Escenario de invalidación: un cierre diario por debajo de ese soporte, acompañado de volumen, abriría una corrección más profunda hacia el siguiente nivel. La relación riesgo/beneficio debe justificar la entrada antes de tomarla.</p>",
+    "heroType": "index",
+    "trend": "up"
+  },
+  {
+    "slug": "oro-estructurar-riesgo-continuacion-alcista-julio-2026",
+    "title": "Oro: cómo estructurar el riesgo si busca continuación alcista",
+    "category": "Materias Primas",
+    "symbol": "OANDA:XAUUSD",
+    "author": "AR4 Mercados",
+    "date": "2026-07-14",
+    "excerpt": "El oro mantiene su sesgo alcista de fondo; más que perseguir el precio, la clave está en definir dónde se invalida la idea y cuánto arriesgar.",
+    "body": "<p>El oro sostiene un sesgo alcista de fondo, apoyado por la expectativa de tasas más bajas y por su papel de refugio. En estos contextos, el error típico no es la dirección sino la ejecución: perseguir el precio en plena subida y terminar con el stop demasiado lejos o el tamaño demasiado grande.</p><p>Una forma más ordenada de plantearlo es esperar a que el precio regrese a una zona de soporte o a su media de referencia, y recién ahí evaluar la entrada, con el punto de invalidación claramente por debajo. Así el riesgo queda definido antes de entrar, y no se depende de que el metal no se detenga nunca.</p><p>Contenido educativo, no asesoría financiera: cada quien decide su gestión de riesgo.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Plan de gestión de riesgo</h3><p>Define primero cuánto estás dispuesto a perder por operación (idealmente 1-2% de la cuenta). Con la distancia entre tu entrada y tu stop, calcula el tamaño de posición: nunca al revés. Si el oro pierde con claridad la zona de soporte que sostiene la idea, el escenario alcista de corto plazo se invalida y conviene salir sin discutir con el mercado. Usa la Suite de gestión de riesgo de Herramientas para cuadrar lote, riesgo y R:B antes de operar.</p>",
+    "heroType": "gold",
+    "trend": "up"
+  },
+  {
     "slug": "eurusd-presion-bajista-minutas-fed",
     "title": "EUR/USD: presión bajista con la mira puesta en las minutas de la Fed",
     "category": "Forex",
