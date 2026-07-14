@@ -43,6 +43,32 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--card-border);
   padding: 6px 0;
 }
+/* Ticker propio (marquesina que siempre se desplaza) */
+.ar4-ticker { overflow: hidden; width: 100%; }
+.ar4-ticker-track {
+  display: inline-flex; align-items: center; white-space: nowrap;
+  will-change: transform;
+  animation: ar4-marquee 80s linear infinite;
+}
+.ar4-ticker:hover .ar4-ticker-track { animation-play-state: paused; }
+@keyframes ar4-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.ar4-tk-item {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  padding: 0 20px; border-right: 1px solid rgba(255,255,255,0.07);
+  font-size: 0.82rem; flex: 0 0 auto;
+}
+.ar4-tk-name { color: var(--text-hi); font-weight: 700; }
+.ar4-tk-price { font-family: var(--mono); color: var(--text-mid); }
+.ar4-tk-chg { font-family: var(--mono); font-size: 0.74rem; }
+.ar4-tk-up { color: var(--green); }
+.ar4-tk-down { color: var(--crimson-bright); }
+@media (max-width: 640px) {
+  .ar4-tk-item { padding: 0 14px; font-size: 0.78rem; }
+  .ar4-ticker-track { animation-duration: 55s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ar4-ticker-track { animation: none; }
+}
 
 /* Header */
 .site-header {
