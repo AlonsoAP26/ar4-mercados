@@ -2,8 +2,9 @@
 // Datos en vivo vía /.netlify/functions/economic-calendar (feed de ForexFactory/faireconomy).
 // Traduce TODOS los eventos y añade una explicación para que cualquiera pueda interpretarlos.
 (function () {
+  // rootEl = calendario completo (calendario.html). Puede no existir en otras páginas,
+  // donde el módulo se usa solo para incrustar mini-calendarios (.ar4-ecal-embed).
   const rootEl = document.getElementById('ar4Calendar');
-  if (!rootEl) return;
 
   const CURRENCY_LABEL = {
     USD: '🇺🇸 EE.UU.', EUR: '🇪🇺 Eurozona', GBP: '🇬🇧 R. Unido', JPY: '🇯🇵 Japón',
@@ -276,49 +277,54 @@
   let allEvents = [];
   let currentFilter = 'high'; // high | all
 
+  // Construye una fila. compact=true (incrustado): sin la explicación visible,
+  // que pasa a un tooltip; compact=false (calendario completo): con explicación.
+  function rowHTML(e, compact) {
+    const imp = IMPACT_LABEL[e.impact] || IMPACT_LABEL.Low;
+    const cur = CURRENCY_LABEL[e.country] || ('🌐 ' + e.country);
+    const esName = translateEvent(e.title);
+    const cat = classify(e.title);
+    const showOriginal = esName.replace(/\s*\([^)]*\)\s*$/, '').toLowerCase() !== e.title.toLowerCase();
+    return `
+      <div class="ecal-row ecal-imp-${imp.cls}${isToday(e.date) ? ' ecal-today' : ''}"${compact ? ` title="${escAttr(cat.why)}"` : ''}>
+        <div class="ecal-time">${fmtTime(e.date)}</div>
+        <div class="ecal-cur">${cur}</div>
+        <div class="ecal-impact"><span class="ecal-dot ecal-dot-${imp.cls}"></span>${imp.es}</div>
+        <div class="ecal-event">
+          <strong>${escapeHtml(esName)}</strong>
+          <span class="ecal-cat ecal-cat-${cat.key}">${cat.icon} ${cat.label}</span>
+          ${compact ? '' : `<span class="ecal-why">${escapeHtml(cat.why)}</span>`}
+          ${showOriginal ? `<span class="ecal-orig">${escapeHtml(e.title)}</span>` : ''}
+        </div>
+        <div class="ecal-vals">
+          <div><span>Previsión</span><strong>${e.forecast || '—'}</strong></div>
+          <div><span>Anterior</span><strong>${e.previous || '—'}</strong></div>
+          <div><span>Actual</span><strong class="${actualClass(e)}">${e.actual || '·'}</strong></div>
+        </div>
+      </div>`;
+  }
+
+  function groupAndBuild(events, compact) {
+    const byDay = {};
+    events.forEach((e) => { const k = dayKey(e.date); (byDay[k] = byDay[k] || []).push(e); });
+    let html = '';
+    Object.keys(byDay).forEach((day) => {
+      html += `<div class="ecal-day">${day.charAt(0).toUpperCase() + day.slice(1)}</div>`;
+      byDay[day].forEach((e) => { html += rowHTML(e, compact); });
+    });
+    return html;
+  }
+
   function render() {
+    if (!rootEl) return;
     const events = currentFilter === 'high'
       ? allEvents.filter((e) => e.impact === 'High' || e.impact === 'Medium')
       : allEvents;
-
     if (!events.length) {
       rootEl.innerHTML = '<p class="footer-text" style="padding:20px;text-align:center;">No hay eventos para mostrar con este filtro.</p>';
       return;
     }
-
-    const byDay = {};
-    events.forEach((e) => { const k = dayKey(e.date); (byDay[k] = byDay[k] || []).push(e); });
-
-    let html = '';
-    Object.keys(byDay).forEach((day) => {
-      html += `<div class="ecal-day">${day.charAt(0).toUpperCase() + day.slice(1)}</div>`;
-      byDay[day].forEach((e) => {
-        const imp = IMPACT_LABEL[e.impact] || IMPACT_LABEL.Low;
-        const cur = CURRENCY_LABEL[e.country] || ('🌐 ' + e.country);
-        const esName = translateEvent(e.title);
-        const cat = classify(e.title);
-        const showOriginal = esName.replace(/\s*\([^)]*\)\s*$/, '').toLowerCase() !== e.title.toLowerCase();
-        html += `
-          <div class="ecal-row ecal-imp-${imp.cls}${isToday(e.date) ? ' ecal-today' : ''}">
-            <div class="ecal-time">${fmtTime(e.date)}</div>
-            <div class="ecal-cur">${cur}</div>
-            <div class="ecal-impact"><span class="ecal-dot ecal-dot-${imp.cls}"></span>${imp.es}</div>
-            <div class="ecal-event">
-              <strong>${escapeHtml(esName)}</strong>
-              <span class="ecal-cat ecal-cat-${cat.key}">${cat.icon} ${cat.label}</span>
-              <span class="ecal-why">${escapeHtml(cat.why)}</span>
-              ${showOriginal ? `<span class="ecal-orig">${escapeHtml(e.title)}</span>` : ''}
-            </div>
-            <div class="ecal-vals">
-              <div><span>Previsión</span><strong>${e.forecast || '—'}</strong></div>
-              <div><span>Anterior</span><strong>${e.previous || '—'}</strong></div>
-              <div><span>Actual</span><strong class="${actualClass(e)}">${e.actual || '·'}</strong></div>
-            </div>
-          </div>`;
-      });
-    });
-
-    rootEl.innerHTML = html;
+    rootEl.innerHTML = groupAndBuild(events, false);
   }
 
   function actualClass(e) {
@@ -335,6 +341,23 @@
     return isNaN(n) ? null : n;
   }
   function escapeHtml(s) { const d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+  function escAttr(s) { return escapeHtml(s).replace(/"/g, '&quot;'); }
+
+  // ---- Feed compartido (una sola descarga por página) ----
+  let feedPromise = null;
+  function getFeed() {
+    if (!feedPromise) {
+      feedPromise = fetch('/.netlify/functions/economic-calendar')
+        .then((r) => r.json())
+        .then((data) => {
+          if (!data.success || !Array.isArray(data.events)) throw new Error('respuesta inválida');
+          return data.events
+            .filter((e) => e && e.date && e.title)
+            .sort((a, b) => new Date(a.date) - new Date(b.date) || impactWeight(b.impact) - impactWeight(a.impact));
+        });
+    }
+    return feedPromise;
+  }
 
   function wireFilters() {
     const bar = document.getElementById('ecalFilters');
@@ -348,21 +371,64 @@
     });
   }
 
-  async function load() {
+  function loadFull() {
+    if (!rootEl) return;
     rootEl.innerHTML = '<p class="footer-text" style="padding:20px;text-align:center;">Cargando calendario económico...</p>';
-    try {
-      const res = await fetch('/.netlify/functions/economic-calendar');
-      const data = await res.json();
-      if (!data.success || !Array.isArray(data.events)) throw new Error('respuesta inválida');
-      allEvents = data.events
-        .filter((e) => e && e.date && e.title)
-        .sort((a, b) => new Date(a.date) - new Date(b.date) || impactWeight(b.impact) - impactWeight(a.impact));
-      render();
-    } catch (e) {
-      rootEl.innerHTML = '<p class="footer-text" style="padding:20px;text-align:center;">No se pudo cargar el calendario en este momento. Recarga la página en unos segundos.</p>';
-    }
+    getFeed().then((events) => { allEvents = events; render(); })
+      .catch(() => { rootEl.innerHTML = '<p class="footer-text" style="padding:20px;text-align:center;">No se pudo cargar el calendario en este momento. Recarga la página en unos segundos.</p>'; });
   }
 
-  wireFilters();
-  load();
+  // ---- Mini-calendario incrustado (ideas, noticias, educación, etc.) ----
+  function renderEmbed(el, opts) {
+    if (!el) return;
+    opts = opts || {};
+    const currencies = (opts.currencies && opts.currencies.length) ? opts.currencies : null;
+    const limit = opts.limit || 6;
+    const impact = opts.impact || 'high';
+    const title = opts.title || '📅 Calendario económico relacionado';
+    el.classList.add('ecal-embed');
+    el.innerHTML =
+      `<div class="ecal-embed-head"><h3>${escapeHtml(title)}</h3><a href="calendario.html" class="ecal-embed-link">Ver calendario completo →</a></div>` +
+      `<div class="ecal-embed-body ecal-table"><p class="footer-text" style="padding:16px;text-align:center;">Cargando calendario...</p></div>`;
+    const body = el.querySelector('.ecal-embed-body');
+    getFeed().then((events) => {
+      let pool = events.filter((e) => (impact === 'all' ? true : (e.impact === 'High' || e.impact === 'Medium')));
+      if (currencies) pool = pool.filter((e) => currencies.indexOf(e.country) >= 0);
+      const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
+      const upcoming = pool.filter((e) => new Date(e.date).getTime() >= todayStart.getTime());
+      const chosen = (upcoming.length ? upcoming : pool).slice(0, limit);
+      if (!chosen.length) {
+        body.innerHTML = '<p class="footer-text" style="padding:16px;text-align:center;">No hay eventos económicos relevantes esta semana para este activo.</p>';
+        return;
+      }
+      body.innerHTML = groupAndBuild(chosen, true);
+    }).catch(() => {
+      body.innerHTML = '<p class="footer-text" style="padding:16px;text-align:center;">No se pudo cargar el calendario ahora. Recarga en unos segundos.</p>';
+    });
+  }
+
+  function initEmbeds(scope) {
+    (scope || document).querySelectorAll('.ar4-ecal-embed').forEach((el) => {
+      if (el.dataset.ecalReady) return;
+      el.dataset.ecalReady = '1';
+      const cur = (el.dataset.currencies || '').split(',').map((s) => s.trim().toUpperCase()).filter(Boolean);
+      renderEmbed(el, {
+        currencies: cur,
+        limit: parseInt(el.dataset.limit || '6', 10),
+        impact: el.dataset.impact || 'high',
+        title: el.dataset.title
+      });
+    });
+  }
+
+  function init() {
+    if (rootEl) { wireFilters(); loadFull(); }
+    initEmbeds(document);
+  }
+
+  // Expuesto para páginas que insertan el calendario dinámicamente (p. ej. idea.html).
+  window.AR4ECAL = { renderEmbed: renderEmbed, initEmbeds: initEmbeds, getFeed: getFeed, translateEvent: translateEvent, classify: classify };
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
 })();

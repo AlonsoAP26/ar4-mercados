@@ -2592,6 +2592,12 @@ a { color: inherit; text-decoration: none; }
 .ecal-vals .ecal-up { color: var(--green); }
 .ecal-vals .ecal-down { color: var(--crimson-bright); }
 .ecal-imp-high .ecal-event strong { color: #fff; }
+/* Mini-calendario incrustado en otras secciones */
+.ecal-embed { display: block; margin: 8px 0; }
+.ecal-embed-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.ecal-embed-head h3 { font-size: 1.1rem; margin: 0; }
+.ecal-embed-link { color: var(--gold-bright); font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+.ecal-embed-body .ecal-row:first-child { border-top: none; }
 @media (max-width: 760px) {
   .ecal-head-row { display: none; }
   .ecal-row { grid-template-columns: 54px 1fr; gap: 8px 10px; row-gap: 8px; }

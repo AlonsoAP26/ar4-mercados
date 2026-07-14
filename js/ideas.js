@@ -70,6 +70,17 @@ const SYMBOL_COUNTRIES = {
   'BINANCE:XRPUSDT': 'us', 'BINANCE:ADAUSDT': 'us'
 };
 
+// Divisas del feed económico que afectan a cada símbolo (para el calendario propio).
+const SYMBOL_CURRENCIES = {
+  'FX:EURUSD': ['USD', 'EUR'], 'FX:GBPUSD': ['USD', 'GBP'], 'FX:USDJPY': ['USD', 'JPY'],
+  'FX_IDC:USDMXN': ['USD'], 'FX_IDC:USDCOP': ['USD'], 'FX_IDC:USDCLP': ['USD'],
+  'FX_IDC:USDARS': ['USD'], 'FX_IDC:USDBRL': ['USD'], 'FX_IDC:USDPEN': ['USD'],
+  'OANDA:XAUUSD': ['USD'], 'TVC:USOIL': ['USD'], 'TVC:UKOIL': ['USD', 'GBP'],
+  'FOREXCOM:SPXUSD': ['USD'], 'FOREXCOM:NSXUSD': ['USD'],
+  'BITSTAMP:BTCUSD': ['USD'], 'COINBASE:ETHUSD': ['USD'], 'BINANCE:SOLUSDT': ['USD'],
+  'BINANCE:XRPUSDT': ['USD'], 'BINANCE:ADAUSDT': ['USD']
+};
+
 function renderTradeStatusCard(idea) {
   const wrap = document.getElementById('ideaStatusCard');
   if (!wrap) return;
@@ -169,26 +180,16 @@ function renderAIPanel(idea) {
 function renderRelatedCalendar(idea) {
   const wrap = document.getElementById('ideaRelatedCalendar');
   if (!wrap || !idea.symbol) return;
-  const countries = SYMBOL_COUNTRIES[idea.symbol] || 'us';
-
-  wrap.innerHTML = `
-    <div class="section-head" style="margin-top:32px;margin-bottom:14px;">
-      <h2 style="font-size:1.1rem;">📅 Calendario económico relacionado</h2>
-      <a href="calendario.html" class="see-all">Ver calendario completo →</a>
-    </div>
-    <div class="calendar-embed glass-card">
-      <div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>
-    </div>
-  `;
-  const script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-events.js';
-  script.async = true;
-  script.text = JSON.stringify({
-    colorTheme: 'dark', isTransparent: true, width: '100%', height: '400',
-    locale: 'es', importanceFilter: '0,1', countryFilter: countries
-  });
-  wrap.querySelector('.tradingview-widget-container').appendChild(script);
+  const currencies = SYMBOL_CURRENCIES[idea.symbol] || ['USD'];
+  wrap.innerHTML = '<div class="ar4-ecal-embed" style="margin-top:32px;"></div>';
+  const el = wrap.querySelector('.ar4-ecal-embed');
+  el.dataset.currencies = currencies.join(',');
+  el.dataset.limit = '6';
+  if (window.AR4ECAL && window.AR4ECAL.renderEmbed) {
+    window.AR4ECAL.renderEmbed(el, { currencies: currencies, limit: 6 });
+  } else if (window.AR4ECAL && window.AR4ECAL.initEmbeds) {
+    window.AR4ECAL.initEmbeds(wrap);
+  }
 }
 
 async function getPremiumStatus() {
