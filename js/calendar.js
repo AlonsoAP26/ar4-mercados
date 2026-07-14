@@ -184,18 +184,23 @@
   }
 
   // ---- Sufijo de periodo (mensual/anual/trimestral) ----
-  function periodSuffix(title) {
-    if (/\bytd\/y\b/i.test(title)) return ' (acumulado del año)';
-    if (/\b3m\/3m\b/i.test(title)) return ' (3 meses)';
-    if (/\bq\/y\b/i.test(title)) return ' (trimestral, interanual)';
-    if (/\bm\/m\b|\bmom\b/i.test(title)) return ' (mensual)';
-    if (/\by\/y\b|\byoy\b/i.test(title)) return ' (anual)';
-    if (/\bq\/q\b|\bqoq\b/i.test(title)) return ' (trimestral)';
+  function periodWord(title) {
+    if (/\bytd\/y\b/i.test(title)) return 'acumulado del año';
+    if (/\b3m\/3m\b/i.test(title)) return '3 meses';
+    if (/\bq\/y\b/i.test(title)) return 'trimestral, interanual';
+    if (/\bm\/m\b|\bmom\b/i.test(title)) return 'mensual';
+    if (/\by\/y\b|\byoy\b/i.test(title)) return 'anual';
+    if (/\bq\/q\b|\bqoq\b/i.test(title)) return 'trimestral';
     return '';
+  }
+  // Añade el periodo: entre paréntesis, o con " · " si el nombre ya termina en ")".
+  function withPeriod(name, word) {
+    if (!word) return name;
+    return /\)\s*$/.test(name) ? name + ' · ' + word : name + ' (' + word + ')';
   }
 
   function translateEvent(title) {
-    const suffix = periodSuffix(title);
+    const period = periodWord(title);
     // 0) Discursos de banqueros centrales con nombre → formato "Discurso de X, cargo"
     let sp;
     if ((sp = title.match(/^fomc member (.+?) speaks$/i))) return 'Discurso de ' + sp[1] + ', miembro de la Fed';
@@ -215,7 +220,7 @@
         for (const [pre, pais] of PREFIX_COUNTRY) {
           if (pre.test(title) && !name.includes(pais) && !/\(/.test(name)) { name += ' (' + pais + ')'; break; }
         }
-        return name + suffix;
+        return withPeriod(name, period);
       }
     }
     // 2) Sin match: traducción por piezas para no dejar nada en inglés
@@ -249,7 +254,7 @@
     for (const [re, es] of DICT) t = t.replace(re, es);
     // Limpiar sufijos de periodo del texto (se añaden formateados aparte)
     t = t.replace(/\b(m\/m|y\/y|q\/q|q\/y|ytd\/y|3m\/3m|mom|yoy|qoq)\b/gi, '').replace(/\s{2,}/g, ' ').trim();
-    return (t || title) + paisSuffix + suffix;
+    return withPeriod((t || title) + paisSuffix, period);
   }
 
   function impactWeight(imp) { return imp === 'High' ? 3 : imp === 'Medium' ? 2 : 1; }
