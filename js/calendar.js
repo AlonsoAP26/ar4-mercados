@@ -29,7 +29,10 @@
     [/retail sales/i, 'Ventas minoristas'],
     [/core retail sales/i, 'Ventas minoristas subyacentes'],
     [/\bgdp\b/i, 'PIB — Producto Interno Bruto'],
-    [/federal funds rate|interest rate decision|official cash rate|cash rate|main refinancing rate|bank rate/i, 'Decisión de tasa de interés'],
+    [/federal funds rate|interest rate decision|official cash rate|cash rate|main refinancing rate|bank rate|overnight rate|rate statement|deposit facility rate/i, 'Decisión de tasa de interés'],
+    [/monetary policy report|monetary policy statement/i, 'Informe de política monetaria'],
+    [/inflation expectations/i, 'Expectativas de inflación'],
+    [/philly fed|philadelphia fed/i, 'Índice manufacturero de la Fed de Filadelfia'],
     [/fomc statement/i, 'Comunicado del FOMC (Fed)'],
     [/fomc meeting minutes|monetary policy meeting minutes|mpc.*minutes/i, 'Minutas de política monetaria'],
     [/fomc press conference|press conference/i, 'Conferencia de prensa del banco central'],
@@ -60,6 +63,12 @@
     for (const [re, es] of EVENT_MAP) { if (re.test(title)) return es; }
     // Traducir sufijos comunes si no hay match completo.
     let t = title
+      .replace(/\bPrelim(inary)?\b/gi, 'Preliminar')
+      .replace(/\bFlash\b/gi, 'Preliminar')
+      .replace(/\bFinal\b/gi, 'Final')
+      .replace(/\bMonthly\b/gi, 'Mensual')
+      .replace(/\bManufacturing\b/gi, 'manufacturero')
+      .replace(/\bServices\b/gi, 'de servicios')
       .replace(/\bm\/m\b/gi, '(mensual)')
       .replace(/\by\/y\b/gi, '(anual)')
       .replace(/\bq\/q\b/gi, '(trimestral)')
