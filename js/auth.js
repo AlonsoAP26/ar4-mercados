@@ -155,6 +155,62 @@
   }
   window.AR4_showJoinBenefits = showJoinBenefits;
 
+  // ---- Bienvenida persuasiva al registrarse (destaca los agentes de IA) ----
+  function firstName(user) {
+    const meta = (user && user.user_metadata) || {};
+    let n = meta.full_name || meta.name || (user && user.email) || '';
+    n = String(n).split('@')[0].split(/[.\s_]/)[0];
+    return n ? n.charAt(0).toUpperCase() + n.slice(1) : '';
+  }
+
+  function showWelcome(user) {
+    if (document.getElementById('ar4Welcome')) return;
+    const name = firstName(user);
+    const overlay = document.createElement('div');
+    overlay.id = 'ar4Welcome';
+    overlay.className = 'join-benefits-overlay';
+    overlay.innerHTML = `
+      <div class="join-benefits-card ar4-welcome-card">
+        <button class="join-benefits-close" aria-label="Cerrar">✕</button>
+        <div class="ar4-welcome-emoji">🤖</div>
+        <span class="badge-live" style="background:rgba(46,204,113,0.15);color:var(--green);border-color:rgba(46,204,113,0.35);">✓ CUENTA CREADA</span>
+        <h3>${name ? '¡Bienvenido, ' + escapeText(name) + '! 🎉' : '¡Bienvenido a AR4 Mercados! 🎉'}</h3>
+        <p class="join-benefits-sub">Acabas de tomar una de las <strong>mejores decisiones para tu trading</strong>. Ahora eres parte de una de las primeras comunidades de Latinoamérica potenciada por <strong>agentes de inteligencia artificial</strong>.</p>
+        <ul class="join-benefits-list">
+          <li><span>🤖</span> <strong>Aria, tu agente de IA</strong>, te acompaña 24/7: gestión de riesgo, tamaño de posición y qué mirar antes de operar.</li>
+          <li><span>🧠</span> Noticias y análisis del mercado <strong>interpretados por IA</strong>, en español y sin jerga complicada.</li>
+          <li><span>🏆</span> Empiezas a <strong>ganar puntos desde hoy</strong>: sube de rango, desbloquea avatares y canjéalos por Premium gratis.</li>
+          <li><span>💬</span> Entra a las salas en vivo y aprende junto a traders reales de la región.</li>
+        </ul>
+        <button class="btn btn-gold btn-block" id="welcomeExplore">Empezar con Aria y la comunidad →</button>
+        <button class="join-benefits-login" id="welcomeLater">Explorar por mi cuenta</button>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+    function close() { overlay.remove(); }
+    overlay.querySelector('.join-benefits-close').addEventListener('click', close);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+    document.getElementById('welcomeLater').addEventListener('click', close);
+    document.getElementById('welcomeExplore').addEventListener('click', () => { close(); window.location.href = 'comunidad.html'; });
+  }
+  function escapeText(s) { const d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+  window.AR4_showWelcome = showWelcome;
+
+  // Muestra la bienvenida una sola vez por usuario, solo tras un registro nuevo.
+  function maybeWelcome(user) {
+    if (!user) return;
+    const key = 'ar4_welcomed_' + (user.id || user.email || 'x');
+    try {
+      if (localStorage.getItem(key)) return;
+      localStorage.setItem(key, '1');
+      localStorage.removeItem('ar4_pending_welcome');
+    } catch (e) {}
+    showWelcome(user);
+  }
+  function hasPendingWelcome() {
+    try { return !!localStorage.getItem('ar4_pending_welcome'); } catch (e) { return false; }
+  }
+
   if (authBtn) {
     authBtn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -225,13 +281,26 @@
     if (hero) hero.appendChild(banner);
   })();
 
-  netlifyIdentity.on('init', refreshUI);
-  netlifyIdentity.on('login', () => { refreshUI(); netlifyIdentity.close(); });
+  netlifyIdentity.on('init', (user) => {
+    refreshUI();
+    // Tras confirmar el email, el usuario vuelve ya logueado: mostramos la bienvenida
+    // pendiente marcada en el registro.
+    if (user && hasPendingWelcome()) maybeWelcome(user);
+  });
+  netlifyIdentity.on('login', () => {
+    refreshUI();
+    netlifyIdentity.close();
+    if (hasPendingWelcome()) maybeWelcome(currentUser());
+  });
   netlifyIdentity.on('logout', refreshUI);
-  netlifyIdentity.on('signup', () => {
+  netlifyIdentity.on('signup', (user) => {
     if (typeof gtag === 'function') {
       gtag('event', 'conversion', { 'send_to': 'AW-18312316170/j8pzCJGY584cEIqK_5tE' });
     }
+    try { localStorage.setItem('ar4_pending_welcome', '1'); } catch (e) {}
+    // Con confirmación por email desactivada el usuario queda logueado al instante;
+    // damos un pequeño margen para cerrar el widget y saludamos.
+    setTimeout(() => { netlifyIdentity.close(); maybeWelcome(user || currentUser()); }, 400);
   });
 
   refreshUI();
