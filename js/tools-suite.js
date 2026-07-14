@@ -455,9 +455,15 @@
   function onInstrumentChange(skipPrice) {
     renderSelected();
     renderNews();
-    if (!skipPrice) loadLivePrice();
-    // Ajustar step de los inputs de precio
     const ins = currentInstrument();
+    // Al cambiar de instrumento (no al reutilizar del historial), los precios del
+    // anterior ya no aplican: se limpian para no calcular con datos mezclados.
+    if (!skipPrice) {
+      state.entry = null; state.sl = null; state.tp = null;
+      ['rsEntry', 'rsSL', 'rsTP'].forEach((id) => { const el = document.getElementById(id); if (el) el.value = ''; });
+      loadLivePrice();
+    }
+    // Ajustar step de los inputs de precio
     ['rsEntry', 'rsSL', 'rsTP'].forEach((id) => { const el = document.getElementById(id); if (el) el.step = ins.pipSize; });
   }
 
