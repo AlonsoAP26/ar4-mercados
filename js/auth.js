@@ -90,14 +90,79 @@
     }
   }
 
+  // ---------- Menú desplegable del perfil (con cerrar sesión) ----------
+  function closeProfileMenu() {
+    const m = document.getElementById('navProfileMenu');
+    if (m) m.remove();
+    document.removeEventListener('click', onDocClickForMenu);
+  }
+  function onDocClickForMenu(e) {
+    if (!e.target.closest('#navProfileMenu') && e.target !== authBtn && !authBtn.contains(e.target)) closeProfileMenu();
+  }
+  async function openProfileMenu(user) {
+    if (document.getElementById('navProfileMenu')) { closeProfileMenu(); return; }
+    const profile = await fetchCommunityProfile(user);
+    const username = profile && profile.username ? profile.username : (user.email || '').split('@')[0];
+    const menu = document.createElement('div');
+    menu.id = 'navProfileMenu';
+    menu.className = 'nav-profile-menu';
+    menu.innerHTML = `
+      <div class="nav-profile-menu-head">${escapeHtmlLocal(username)}<span>${escapeHtmlLocal(user.email || '')}</span></div>
+      <a href="comunidad.html">🏠 Ir a la comunidad</a>
+      ${profile && profile.username ? `<a href="perfil.html?u=${encodeURIComponent(profile.username)}">👤 Ver mi perfil</a>` : ''}
+      <a href="membresia.html">★ Mi membresía</a>
+      <button type="button" id="navLogoutBtn">🚪 Cerrar sesión</button>
+    `;
+    const rect = authBtn.getBoundingClientRect();
+    menu.style.top = (rect.bottom + window.scrollY + 8) + 'px';
+    menu.style.right = Math.max(12, window.innerWidth - rect.right) + 'px';
+    document.body.appendChild(menu);
+    document.getElementById('navLogoutBtn').addEventListener('click', () => { closeProfileMenu(); netlifyIdentity.logout(); });
+    setTimeout(() => document.addEventListener('click', onDocClickForMenu), 0);
+  }
+
+  // ---------- Modal persuasivo antes de registrarse ----------
+  function showJoinBenefits() {
+    if (document.getElementById('ar4JoinBenefits')) return;
+    const overlay = document.createElement('div');
+    overlay.id = 'ar4JoinBenefits';
+    overlay.className = 'join-benefits-overlay';
+    overlay.innerHTML = `
+      <div class="join-benefits-card">
+        <button class="join-benefits-close" aria-label="Cerrar">✕</button>
+        <span class="badge-live" style="background:rgba(212,175,55,0.15);color:var(--gold-bright);border-color:rgba(212,175,55,0.35);">★ ÚNETE GRATIS</span>
+        <h3>Crea tu cuenta y desbloquea todo AR4</h3>
+        <p class="join-benefits-sub">Es gratis, sin tarjeta y en menos de un minuto. Al registrarte obtienes:</p>
+        <ul class="join-benefits-list">
+          <li><span>💬</span> Publicar en la comunidad y chatear en las salas de mercado en vivo</li>
+          <li><span>📊</span> Guardar tus análisis, ideas y brokers favoritos</li>
+          <li><span>🏆</span> Ganar puntos, subir de rango y desbloquear avatares exclusivos</li>
+          <li><span>🤖</span> Usar a Aria, tu asistente de IA para gestión de riesgo</li>
+          <li><span>🔔</span> Seguir a otros traders y recibir notificaciones</li>
+          <li><span>📚</span> Marcar tu progreso en los 12 módulos de educación</li>
+          <li><span>🎁</span> Acumular puntos canjeables por un mes de Premium gratis</li>
+        </ul>
+        <button class="btn btn-gold btn-block" id="joinBenefitsSignup">Crear mi cuenta gratis</button>
+        <button class="join-benefits-login" id="joinBenefitsLogin">Ya tengo cuenta — Iniciar sesión</button>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+    function close() { overlay.remove(); }
+    overlay.querySelector('.join-benefits-close').addEventListener('click', close);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+    document.getElementById('joinBenefitsSignup').addEventListener('click', () => { close(); netlifyIdentity.open('signup'); });
+    document.getElementById('joinBenefitsLogin').addEventListener('click', () => { close(); netlifyIdentity.open('login'); });
+  }
+  window.AR4_showJoinBenefits = showJoinBenefits;
+
   if (authBtn) {
     authBtn.addEventListener('click', (e) => {
       e.preventDefault();
       const user = currentUser();
       if (user) {
-        window.location.href = 'comunidad.html';
+        openProfileMenu(user);
       } else {
-        netlifyIdentity.open('login');
+        showJoinBenefits();
       }
     });
   }

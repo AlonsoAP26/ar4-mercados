@@ -2505,6 +2505,57 @@ a { color: inherit; text-decoration: none; }
 .google-auth-btn:hover { background: #f1f3f4; }
 .google-auth-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
+/* Menú desplegable del perfil (nav) */
+.nav-profile-menu {
+  position: absolute; z-index: 200; min-width: 220px;
+  background: var(--bg-1); border: 1px solid var(--gold); border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5); overflow: hidden; padding: 6px;
+}
+.nav-profile-menu-head { padding: 10px 12px 12px; border-bottom: 1px solid var(--card-border); margin-bottom: 6px; font-weight: 700; color: var(--text-hi); font-size: 0.9rem; }
+.nav-profile-menu-head span { display: block; font-weight: 400; color: var(--text-low); font-size: 0.74rem; margin-top: 2px; font-family: var(--mono); overflow: hidden; text-overflow: ellipsis; }
+.nav-profile-menu a, .nav-profile-menu button {
+  display: block; width: 100%; text-align: left; background: none; border: none;
+  color: var(--text-mid); font-size: 0.88rem; padding: 10px 12px; border-radius: 7px; cursor: pointer; font-family: inherit;
+}
+.nav-profile-menu a:hover, .nav-profile-menu button:hover { background: rgba(255,255,255,0.05); color: var(--text-hi); }
+.nav-profile-menu #navLogoutBtn { color: var(--crimson-bright); margin-top: 4px; border-top: 1px solid var(--card-border); border-radius: 0 0 7px 7px; }
+.nav-profile-menu #navLogoutBtn:hover { background: rgba(225,58,75,0.1); }
+
+/* Modal persuasivo de registro */
+.join-benefits-overlay {
+  position: fixed; inset: 0; z-index: 1000; background: rgba(5,7,13,0.72);
+  display: flex; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(4px);
+}
+.join-benefits-card {
+  position: relative; background: var(--bg-1); border: 1px solid rgba(212,175,55,0.35); border-radius: var(--radius);
+  max-width: 460px; width: 100%; padding: 30px 28px 26px; max-height: 92vh; overflow-y: auto;
+}
+.join-benefits-close { position: absolute; top: 14px; right: 16px; background: none; border: none; color: var(--text-mid); font-size: 1.1rem; cursor: pointer; }
+.join-benefits-card h3 { margin: 12px 0 6px; font-size: 1.3rem; }
+.join-benefits-sub { color: var(--text-mid); font-size: 0.9rem; margin-bottom: 18px; }
+.join-benefits-list { list-style: none; margin-bottom: 22px; }
+.join-benefits-list li { display: flex; align-items: flex-start; gap: 11px; font-size: 0.9rem; color: var(--text-hi); padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.06); }
+.join-benefits-list li:last-child { border-bottom: none; }
+.join-benefits-list li span { flex-shrink: 0; font-size: 1.1rem; }
+.join-benefits-login { display: block; width: 100%; background: none; border: none; color: var(--text-mid); font-size: 0.84rem; margin-top: 12px; cursor: pointer; font-family: inherit; }
+.join-benefits-login:hover { color: var(--gold-bright); }
+
+/* Calendario — leyenda de columnas y regla de oro */
+.cal-legend { display: grid; gap: 18px; margin-bottom: 8px; }
+.cal-legend-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.cal-legend-col { background: var(--card); border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; }
+.cal-legend-col.cal-legend-highlight { border-color: var(--gold); box-shadow: 0 0 0 1px rgba(212,175,55,0.25); }
+.cal-legend-tag { display: inline-block; font-family: var(--mono); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gold-bright); margin-bottom: 8px; }
+.cal-legend-col p { color: var(--text-mid); font-size: 0.86rem; line-height: 1.5; }
+.cal-rule { background: rgba(212,175,55,0.05); border: 1px solid rgba(212,175,55,0.22); border-radius: 10px; padding: 22px; }
+.cal-rule h4 { font-size: 1.05rem; margin-bottom: 10px; }
+.cal-rule > p { color: var(--text-mid); font-size: 0.9rem; margin-bottom: 12px; line-height: 1.6; }
+.cal-rule ul { list-style: none; margin-bottom: 12px; }
+.cal-rule li { padding: 7px 0 7px 22px; position: relative; color: var(--text-mid); font-size: 0.88rem; line-height: 1.5; }
+.cal-rule li::before { content: "→"; position: absolute; left: 0; color: var(--gold-bright); }
+.cal-rule-note { color: var(--text-low); font-size: 0.8rem; margin: 0; }
+@media (max-width: 640px) { .cal-legend-cols { grid-template-columns: 1fr; } }
+
 /* ============================================================
    SOBRE NOSOTROS — página premium
    ============================================================ */

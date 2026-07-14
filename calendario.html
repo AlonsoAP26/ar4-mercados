@@ -153,10 +153,48 @@
         <dd>La diferencia entre lo que un país exporta e importa. Relevante para economías como Chile o Perú, donde las exportaciones de materias primas pesan mucho en el tipo de cambio.</dd>
         <dt>Minutas (Minutes)</dt>
         <dd>El resumen detallado de la última reunión de política monetaria de un banco central, publicado semanas después de la decisión. Suele revelar matices que no aparecen en el comunicado oficial.</dd>
+        <dt>Core CPI (IPC subyacente)</dt>
+        <dd>El IPC pero <strong>sin</strong> alimentos ni energía, que son los precios más volátiles. La Fed lo vigila más que el IPC general porque refleja mejor la inflación de fondo.</dd>
+        <dt>PPI (Índice de Precios al Productor)</dt>
+        <dd>Mide cuánto suben los precios que pagan las empresas por producir, antes de llegar al consumidor. Suele ser un anticipo de hacia dónde irá la inflación.</dd>
+        <dt>Retail Sales (Ventas minoristas)</dt>
+        <dd>Cuánto gastan los consumidores en tiendas y comercios. Un dato fuerte indica una economía sólida; un dato débil, desaceleración.</dd>
+        <dt>ADP / Nonfarm Employment</dt>
+        <dd>Un reporte privado de empleo en EE.UU. que sale unos días antes del NFP oficial. Se usa como "adelanto" de cómo podría venir el dato de empleo grande.</dd>
+        <dt>Initial Jobless Claims (Solicitudes de subsidio por desempleo)</dt>
+        <dd>Cuántas personas pidieron subsidio de desempleo por primera vez esa semana. Es un dato semanal que mide la salud del mercado laboral casi en tiempo real.</dd>
+        <dt>NFIB Business Optimism (Optimismo de pequeñas empresas)</dt>
+        <dd>Una encuesta de confianza de las pequeñas empresas de EE.UU. Refleja si los negocios pequeños ven el futuro con optimismo o cautela.</dd>
+        <dt>Siglas que verás junto a los datos</dt>
+        <dd><strong>MM</strong> = variación mensual (mes contra mes). <strong>YY</strong> = variación anual (año contra año). <strong>SA</strong> = ajustado por estacionalidad (Seasonally Adjusted). <strong>NSA</strong> = sin ajuste estacional. <strong>Idx</strong> = índice (un número de referencia, no un porcentaje).</dd>
       </dl>
+      <p style="color:var(--text-low);font-size:0.82rem;margin-top:14px;padding:0 4px;">El calendario en vivo se muestra con datos de TradingView y algunos nombres de eventos aparecen en inglés. Usa este glosario para traducir lo que veas — con el tiempo reconocerás los más importantes de un vistazo.</p>
     </details>
 
     <div class="section-head">
+      <h2>¿Y cómo lo interpreto si soy principiante?</h2>
+    </div>
+    <p style="color:var(--text-mid);margin-bottom:18px;max-width:760px;">El calendario muestra números pero no te dice "compra" ni "vende" — y está bien que así sea. Aquí te explicamos, en simple, qué significan las columnas y cómo leer cada dato sin ser experto.</p>
+
+    <div class="cal-legend">
+      <div class="cal-legend-cols">
+        <div class="cal-legend-col"><span class="cal-legend-tag">Anterior</span><p>El dato de la vez pasada. Sirve de referencia para ver si la economía mejora o empeora.</p></div>
+        <div class="cal-legend-col cal-legend-highlight"><span class="cal-legend-tag">Previsión / Consenso</span><p>Lo que los analistas <strong>esperaban</strong> que saliera. Esta es "la predicción" que buscabas — el mercado ya la tiene descontada en el precio.</p></div>
+        <div class="cal-legend-col"><span class="cal-legend-tag">Actual</span><p>El dato <strong>real</strong> que se publicó. Aparece en el momento exacto del evento.</p></div>
+      </div>
+      <div class="cal-rule">
+        <h4>🔑 La regla de oro para leer un dato</h4>
+        <p>Lo que mueve el precio no es el número en sí, sino <strong>la sorpresa</strong>: qué tan diferente salió el dato real (Actual) de lo que se esperaba (Previsión).</p>
+        <ul>
+          <li><strong>Si el Actual sale MÁS ALTO que la Previsión</strong> en datos de inflación, empleo o crecimiento → suele <strong style="color:var(--green);">fortalecer</strong> a esa moneda (el mercado anticipa tasas más altas).</li>
+          <li><strong>Si el Actual sale MÁS BAJO que la Previsión</strong> → suele <strong style="color:var(--crimson-bright);">debilitar</strong> a esa moneda.</li>
+          <li><strong>Si sale igual a lo esperado</strong> → suele haber poco movimiento, aunque el número parezca grande: ya estaba en el precio.</li>
+        </ul>
+        <p class="cal-rule-note">⚠️ Es una regla general, no una ley. El contexto y otros datos también influyen. Nunca operes solo por una noticia sin gestión de riesgo.</p>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:36px;">
       <h2>Por qué estos datos mueven tanto el mercado</h2>
     </div>
     <p style="color:var(--text-mid);margin-bottom:16px;max-width:760px;">El precio de cualquier activo refleja lo que el mercado <em>ya espera</em> que ocurra. Cuando se publica un dato económico, lo que realmente mueve el precio no es el número en sí, sino la sorpresa: qué tan lejos estuvo el dato real ("Actual") de lo que el mercado tenía descontado ("Forecast"). Un IPC que sale exactamente como se esperaba suele generar poco movimiento, incluso si el número en términos absolutos parece alto — porque ese nivel ya estaba incorporado en el precio. En cambio, una sorpresa —a favor o en contra— puede mover un par de divisas varios cientos de pips en cuestión de minutos, a medida que el mercado reajusta sus expectativas sobre la próxima decisión del banco central correspondiente.</p>
@@ -224,7 +262,7 @@
 </footer>
 
 <script src="js/main.js?v=2"></script>
-<script src="js/auth.js?v=2"></script>
+<script src="js/auth.js?v=3"></script>
 <script src="js/chatbot.js?v=6"></script>
 </body>
 </html>
