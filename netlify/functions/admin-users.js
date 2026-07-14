@@ -2,6 +2,10 @@
 // Usa el token de administrador que Netlify Identity inyecta en el contexto de la
 // función (el mismo mecanismo que bootstrap-admin.js), así no hace falta ningún
 // token manual ni tabla extra: consulta la API de Identity directamente.
+// De paso, rellena los perfiles de comunidad que falten para que el contador
+// "Traders registrados" coincida con los registros reales.
+const { supabaseRequest } = require('./_supabase');
+const { ensureProfile } = require('./_profiles');
 
 exports.handler = async (event, context) => {
   const ownerEmail = (process.env.OWNER_EMAIL || '').toLowerCase().trim();
@@ -39,6 +43,18 @@ exports.handler = async (event, context) => {
       page++;
     }
 
+    // Backfill: crear perfiles de comunidad para los registrados que no lo tengan,
+    // para que "Traders registrados" (que cuenta perfiles) refleje los registros reales.
+    let profilesCreated = 0;
+    try {
+      const existing = await supabaseRequest('profiles?select=netlify_user_id', { method: 'GET' });
+      const have = new Set((existing || []).map((r) => r.netlify_user_id));
+      const missing = all.filter((u) => u.id && !have.has(u.id));
+      for (const u of missing) {
+        try { const r = await ensureProfile(u); if (r && r.created) profilesCreated++; } catch (e) {}
+      }
+    } catch (e) { /* si Supabase falla, seguimos mostrando la lista igual */ }
+
     const now = Date.now();
     const DAY = 86400000;
     const simplified = all.map((u) => {
@@ -56,6 +72,7 @@ exports.handler = async (event, context) => {
 
     return json(200, {
       success: true,
+      profilesCreated: profilesCreated,
       total: simplified.length,
       today: simplified.filter((u) => within(u, DAY)).length,
       week: simplified.filter((u) => within(u, 7 * DAY)).length,

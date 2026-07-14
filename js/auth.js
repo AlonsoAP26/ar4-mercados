@@ -211,6 +211,19 @@
     try { return !!localStorage.getItem('ar4_pending_welcome'); } catch (e) { return false; }
   }
 
+  // Crea el perfil de comunidad del usuario si aún no existe (así "Traders
+  // registrados" crece cuando un registrado entra). Seguro: la función usa la
+  // identidad del propio JWT. Se ejecuta una vez por sesión.
+  async function ensureMyProfile(user) {
+    if (!user) return;
+    try {
+      if (sessionStorage.getItem('ar4_profile_ensured')) return;
+      const jwt = await user.jwt();
+      await fetch('/.netlify/functions/ensure-my-profile', { method: 'POST', headers: { Authorization: 'Bearer ' + jwt } });
+      sessionStorage.setItem('ar4_profile_ensured', '1');
+    } catch (e) {}
+  }
+
   if (authBtn) {
     authBtn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -283,6 +296,7 @@
 
   netlifyIdentity.on('init', (user) => {
     refreshUI();
+    if (user) ensureMyProfile(user);
     // Tras confirmar el email, el usuario vuelve ya logueado: mostramos la bienvenida
     // pendiente marcada en el registro.
     if (user && hasPendingWelcome()) maybeWelcome(user);
@@ -290,7 +304,9 @@
   netlifyIdentity.on('login', () => {
     refreshUI();
     netlifyIdentity.close();
-    if (hasPendingWelcome()) maybeWelcome(currentUser());
+    const u = currentUser();
+    if (u) ensureMyProfile(u);
+    if (hasPendingWelcome()) maybeWelcome(u);
   });
   netlifyIdentity.on('logout', refreshUI);
   netlifyIdentity.on('signup', (user) => {

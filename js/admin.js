@@ -81,8 +81,9 @@
     }
 
     if (updatedEl) {
-      updatedEl.textContent = 'Actualizado ' + new Date().toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }) +
-        (grew ? ' · ¡Nuevo registro! 🎉' : '');
+      let extra = grew ? ' · ¡Nuevo registro! 🎉' : '';
+      if (data.profilesCreated > 0) extra += ' · ' + data.profilesCreated + ' perfil(es) sincronizado(s) con la comunidad';
+      updatedEl.textContent = 'Actualizado ' + new Date().toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }) + extra;
     }
   }
 
