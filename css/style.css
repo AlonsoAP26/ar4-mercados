@@ -2556,6 +2556,49 @@ a { color: inherit; text-decoration: none; }
 .cal-rule-note { color: var(--text-low); font-size: 0.8rem; margin: 0; }
 @media (max-width: 640px) { .cal-legend-cols { grid-template-columns: 1fr; } }
 
+/* Calendario propio en español */
+.ecal-filters { display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.ecal-head-row {
+  display: grid; grid-template-columns: 62px 110px 92px 1fr 260px; gap: 12px; align-items: center;
+  padding: 10px 16px; font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.5px;
+  color: var(--text-low); border-bottom: 1px solid var(--card-border);
+}
+.ecal-head-vals { text-align: right; }
+.ecal-table { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); overflow: hidden; }
+.ecal-day { background: rgba(212,175,55,0.06); color: var(--gold-bright); font-weight: 700; font-size: 0.85rem; padding: 10px 16px; border-top: 1px solid var(--card-border); }
+.ecal-day:first-child { border-top: none; }
+.ecal-row {
+  display: grid; grid-template-columns: 62px 110px 92px 1fr 260px; gap: 12px; align-items: center;
+  padding: 12px 16px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 0.86rem;
+}
+.ecal-row.ecal-today { background: rgba(122,168,255,0.05); }
+.ecal-time { font-family: var(--mono); color: var(--text-mid); font-size: 0.82rem; }
+.ecal-cur { color: var(--text-mid); font-size: 0.82rem; }
+.ecal-impact { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; color: var(--text-mid); }
+.ecal-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.ecal-dot-high { background: var(--crimson-bright); }
+.ecal-dot-medium { background: var(--gold-bright); }
+.ecal-dot-low { background: var(--text-low); }
+.ecal-event strong { display: block; color: var(--text-hi); font-weight: 600; font-size: 0.86rem; line-height: 1.3; }
+.ecal-event .ecal-orig { display: block; color: var(--text-low); font-size: 0.72rem; font-family: var(--mono); margin-top: 2px; }
+.ecal-vals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: right; }
+.ecal-vals div span { display: block; font-size: 0.6rem; color: var(--text-low); text-transform: uppercase; letter-spacing: 0.3px; }
+.ecal-vals div strong { font-family: var(--mono); font-size: 0.82rem; color: var(--text-hi); font-weight: 500; }
+.ecal-vals .ecal-up { color: var(--green); }
+.ecal-vals .ecal-down { color: var(--crimson-bright); }
+.ecal-imp-high .ecal-event strong { color: #fff; }
+@media (max-width: 760px) {
+  .ecal-head-row { display: none; }
+  .ecal-row { grid-template-columns: 54px 1fr; gap: 8px 10px; row-gap: 8px; }
+  .ecal-cur { grid-column: 2; font-size: 0.76rem; }
+  .ecal-impact { grid-column: 1; grid-row: 2; }
+  .ecal-event { grid-column: 2; grid-row: 2; }
+  .ecal-time { grid-column: 1; grid-row: 1; }
+  .ecal-vals { grid-column: 1 / -1; grid-row: 3; text-align: left; border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 8px; }
+  .ecal-vals div span { display: inline; }
+  .ecal-vals div strong { margin-left: 4px; }
+}
+
 /* ============================================================
    SOBRE NOSOTROS — página premium
    ============================================================ */
