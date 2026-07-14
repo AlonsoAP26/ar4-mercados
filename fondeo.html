@@ -30,27 +30,7 @@
 </head>
 <body>
 
-<div class="ticker-bar">
-  <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-    {
-      "symbols": [
-        {"proName": "FX_IDC:USDMXN", "title": "USD/MXN"},
-        {"proName": "FX_IDC:USDCOP", "title": "USD/COP"},
-        {"proName": "FX_IDC:USDBRL", "title": "USD/BRL"},
-        {"proName": "FX:EURUSD", "title": "EUR/USD"},
-        {"proName": "OANDA:XAUUSD", "title": "ORO"}
-      ],
-      "showSymbolLogo": true,
-      "isTransparent": true,
-      "displayMode": "compact",
-      "colorTheme": "dark",
-      "locale": "es"
-    }
-    </script>
-  </div>
-</div>
+<div class="ticker-bar" id="ar4Ticker"></div>
 
 <header class="site-header">
   <div class="header-top">
@@ -267,5 +247,6 @@
 <script src="js/auth.js?v=5"></script>
 <script src="js/fondeo.js?v=3"></script>
 <script src="js/chatbot.js?v=6"></script>
+<script src="js/ticker.js?v=1"></script>
 </body>
 </html>

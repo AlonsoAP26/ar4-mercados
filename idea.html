@@ -34,25 +34,7 @@
 
 <div id="ideaStickyPanel" class="idea-sticky-panel"></div>
 
-<div class="ticker-bar">
-  <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-    {
-      "symbols": [
-        {"proName": "FX_IDC:USDMXN", "title": "USD/MXN"},
-        {"proName": "FX:EURUSD", "title": "EUR/USD"},
-        {"proName": "OANDA:XAUUSD", "title": "ORO"}
-      ],
-      "showSymbolLogo": true,
-      "isTransparent": true,
-      "displayMode": "compact",
-      "colorTheme": "dark",
-      "locale": "es"
-    }
-    </script>
-  </div>
-</div>
+<div class="ticker-bar" id="ar4Ticker"></div>
 
 <header class="site-header">
   <div class="header-top">
@@ -201,5 +183,6 @@
 <script src="js/upsell.js"></script>
 <script src="js/voice-narration.js?v=2"></script>
 <script>if (window.AR4_initVoiceNarration) window.AR4_initVoiceNarration('ideaBody');</script>
+<script src="js/ticker.js?v=1"></script>
 </body>
 </html>
