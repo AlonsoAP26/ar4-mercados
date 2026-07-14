@@ -109,34 +109,10 @@
     </div>
 
     <div class="section-head" style="margin-top:8px;">
-      <h2>📐 Calculadora de tamaño de posición</h2>
+      <h2>🎯 Suite de gestión de riesgo</h2>
+      <p style="color:var(--text-mid);font-size:0.88rem;margin-top:4px;">Elige un instrumento y calcula tu operación en tiempo real: tamaño de lote, riesgo, R:B, valor del pip y compatibilidad con fondeo — todo se recalcula solo mientras ajustas.</p>
     </div>
-    <div class="community-form">
-      <label for="calcCapital">Capital total de tu cuenta (USD)</label>
-      <input type="number" id="calcCapital" placeholder="ej. 1000" min="0">
-      <label for="calcRiskPct">Riesgo por operación (%)</label>
-      <input type="number" id="calcRiskPct" placeholder="ej. 1" min="0" max="100" step="0.1">
-      <label for="calcEntry">Precio de entrada</label>
-      <input type="number" id="calcEntry" placeholder="ej. 1.1000" step="any">
-      <label for="calcStop">Precio de stop loss</label>
-      <input type="number" id="calcStop" placeholder="ej. 1.0950" step="any">
-      <button class="btn btn-gold" id="calcPositionBtn" style="margin-top:14px;">Calcular</button>
-      <div id="calcPositionResult"></div>
-    </div>
-
-    <div class="section-head" style="margin-top:36px;">
-      <h2>⚖️ Calculadora de riesgo/beneficio</h2>
-    </div>
-    <div class="community-form">
-      <label for="rrEntry">Precio de entrada</label>
-      <input type="number" id="rrEntry" placeholder="ej. 1.1000" step="any">
-      <label for="rrStop">Precio de stop loss</label>
-      <input type="number" id="rrStop" placeholder="ej. 1.0950" step="any">
-      <label for="rrTarget">Precio objetivo (take profit)</label>
-      <input type="number" id="rrTarget" placeholder="ej. 1.1100" step="any">
-      <button class="btn btn-gold" id="calcRRBtn" style="margin-top:14px;">Calcular</button>
-      <div id="calcRRResult"></div>
-    </div>
+    <div id="riskSuite"></div>
 
     <div class="section-head" style="margin-top:36px;">
       <h2>✅ Checklist antes de operar</h2>
@@ -198,6 +174,7 @@
 
 <script src="js/main.js?v=2"></script>
 <script src="js/auth.js?v=3"></script>
+<script src="js/tools-suite.js?v=1"></script>
 <script src="js/herramientas.js?v=3"></script>
 <script src="js/community-widget.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function () { if (window.AR4_mountCommunityWidget) window.AR4_mountCommunityWidget('communityWidgetMount'); });</script>
