@@ -2812,16 +2812,12 @@
 
     const calEl = document.getElementById('sidebarCalendar');
     if (calEl) {
-      calEl.innerHTML = '<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>';
-      const script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-events.js';
-      script.async = true;
-      script.text = JSON.stringify({
-        colorTheme: 'dark', isTransparent: true, width: '100%', height: '300',
-        locale: 'es', importanceFilter: '1', countryFilter: 'us,mx,co,cl,pe,ar,br,eu'
-      });
-      calEl.querySelector('.tradingview-widget-container').appendChild(script);
+      if (window.AR4ECAL && window.AR4ECAL.renderEmbed) {
+        calEl.innerHTML = '<div class="ar4-ecal-embed"></div>';
+        window.AR4ECAL.renderEmbed(calEl.querySelector('.ar4-ecal-embed'), { mini: true, head: false, limit: 6, impact: 'high' });
+      } else {
+        calEl.innerHTML = '<p class="footer-text"><a href="calendario.html">Ver calendario económico →</a></p>';
+      }
     }
   }
 

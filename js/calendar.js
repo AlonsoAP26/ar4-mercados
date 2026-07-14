@@ -378,17 +378,26 @@
       .catch(() => { rootEl.innerHTML = '<p class="footer-text" style="padding:20px;text-align:center;">No se pudo cargar el calendario en este momento. Recarga la página en unos segundos.</p>'; });
   }
 
-  // ---- Mini-calendario incrustado (ideas, noticias, educación, etc.) ----
+  // ---- Mini-calendario incrustado (ideas, noticias, educación, sidebar, etc.) ----
+  // opts: { currencies, limit, impact, title, mini:bool, head:bool }
+  // mini = layout compacto apilado para columnas estrechas (sidebar).
+  // head = mostrar cabecera con título + enlace (por defecto true; en mini, false).
   function renderEmbed(el, opts) {
     if (!el) return;
     opts = opts || {};
     const currencies = (opts.currencies && opts.currencies.length) ? opts.currencies : null;
     const limit = opts.limit || 6;
     const impact = opts.impact || 'high';
+    const mini = !!opts.mini;
+    const showHead = opts.head !== undefined ? !!opts.head : !mini;
     const title = opts.title || '📅 Calendario económico relacionado';
+    el.dataset.ecalReady = '1'; // evita que el auto-init lo vuelva a renderizar
     el.classList.add('ecal-embed');
-    el.innerHTML =
-      `<div class="ecal-embed-head"><h3>${escapeHtml(title)}</h3><a href="calendario.html" class="ecal-embed-link">Ver calendario completo →</a></div>` +
+    if (mini) el.classList.add('ecal-embed-mini');
+    const headHTML = showHead
+      ? `<div class="ecal-embed-head"><h3>${escapeHtml(title)}</h3><a href="calendario.html" class="ecal-embed-link">Ver calendario completo →</a></div>`
+      : '';
+    el.innerHTML = headHTML +
       `<div class="ecal-embed-body ecal-table"><p class="footer-text" style="padding:16px;text-align:center;">Cargando calendario...</p></div>`;
     const body = el.querySelector('.ecal-embed-body');
     getFeed().then((events) => {
@@ -398,10 +407,17 @@
       const upcoming = pool.filter((e) => new Date(e.date).getTime() >= todayStart.getTime());
       const chosen = (upcoming.length ? upcoming : pool).slice(0, limit);
       if (!chosen.length) {
-        body.innerHTML = '<p class="footer-text" style="padding:16px;text-align:center;">No hay eventos económicos relevantes esta semana para este activo.</p>';
+        body.innerHTML = '<p class="footer-text" style="padding:16px;text-align:center;">No hay eventos económicos relevantes esta semana.</p>';
         return;
       }
       body.innerHTML = groupAndBuild(chosen, true);
+      if (!showHead) {
+        const foot = document.createElement('a');
+        foot.href = 'calendario.html';
+        foot.className = 'ecal-embed-link ecal-embed-foot';
+        foot.textContent = 'Ver calendario completo →';
+        el.appendChild(foot);
+      }
     }).catch(() => {
       body.innerHTML = '<p class="footer-text" style="padding:16px;text-align:center;">No se pudo cargar el calendario ahora. Recarga en unos segundos.</p>';
     });

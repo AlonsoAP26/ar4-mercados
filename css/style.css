@@ -2598,6 +2598,21 @@ a { color: inherit; text-decoration: none; }
 .ecal-embed-head h3 { font-size: 1.1rem; margin: 0; }
 .ecal-embed-link { color: var(--gold-bright); font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
 .ecal-embed-body .ecal-row:first-child { border-top: none; }
+/* Variante compacta apilada (barra lateral estrecha) */
+.ecal-embed-mini .ecal-embed-body { font-size: 0.8rem; }
+.ecal-embed-mini .ecal-row { grid-template-columns: 46px 1fr; gap: 4px 8px; padding: 10px 12px; font-size: 0.8rem; }
+.ecal-embed-mini .ecal-time { grid-column: 1; grid-row: 1; font-size: 0.76rem; }
+.ecal-embed-mini .ecal-cur { grid-column: 2; grid-row: 1; font-size: 0.72rem; }
+.ecal-embed-mini .ecal-impact { grid-column: 1; grid-row: 2; font-size: 0.66rem; }
+.ecal-embed-mini .ecal-event { grid-column: 2; grid-row: 2; }
+.ecal-embed-mini .ecal-event strong { font-size: 0.8rem; }
+.ecal-embed-mini .ecal-cat { margin-top: 3px; font-size: 0.6rem; padding: 1px 6px; }
+.ecal-embed-mini .ecal-orig { display: none; }
+.ecal-embed-mini .ecal-vals { grid-column: 1 / -1; grid-row: 3; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; text-align: left; border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 4px; }
+.ecal-embed-mini .ecal-vals div span { display: inline; font-size: 0.56rem; }
+.ecal-embed-mini .ecal-vals div strong { font-size: 0.76rem; margin-left: 3px; }
+.ecal-embed-mini .ecal-day { font-size: 0.76rem; padding: 8px 12px; }
+.ecal-embed-foot { display: inline-block; margin-top: 12px; font-size: 0.8rem; }
 @media (max-width: 760px) {
   .ecal-head-row { display: none; }
   .ecal-row { grid-template-columns: 54px 1fr; gap: 8px 10px; row-gap: 8px; }
