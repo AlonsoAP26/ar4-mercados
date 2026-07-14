@@ -1,0 +1,76 @@
+// AR4 Mercados — Lista de usuarios registrados (solo para el dueño del sitio).
+// Usa el token de administrador que Netlify Identity inyecta en el contexto de la
+// función (el mismo mecanismo que bootstrap-admin.js), así no hace falta ningún
+// token manual ni tabla extra: consulta la API de Identity directamente.
+
+exports.handler = async (event, context) => {
+  const ownerEmail = (process.env.OWNER_EMAIL || '').toLowerCase().trim();
+  const user = context.clientContext && context.clientContext.user;
+
+  if (!user) {
+    return json(401, { success: false, error: 'Debes iniciar sesión.' });
+  }
+  if (!ownerEmail || (user.email || '').toLowerCase().trim() !== ownerEmail) {
+    return json(403, { success: false, error: 'Esta información solo está disponible para el dueño del sitio.' });
+  }
+
+  const identity = context.clientContext && context.clientContext.identity;
+  if (!identity || !identity.url || !identity.token) {
+    return json(500, { success: false, error: 'No se pudo acceder al contexto de Identity en esta función.' });
+  }
+
+  try {
+    const all = [];
+    let page = 1;
+    const perPage = 100;
+    // Paginamos hasta traer todos los usuarios (con un tope de seguridad).
+    while (page <= 50) {
+      const res = await fetch(identity.url + '/admin/users?per_page=' + perPage + '&page=' + page, {
+        headers: { Authorization: 'Bearer ' + identity.token }
+      });
+      if (!res.ok) {
+        const detail = await res.text().catch(() => '');
+        return json(502, { success: false, error: 'Netlify Identity rechazó la consulta (' + res.status + ').', detail });
+      }
+      const data = await res.json();
+      const users = (data && data.users) || [];
+      all.push.apply(all, users);
+      if (users.length < perPage) break;
+      page++;
+    }
+
+    const now = Date.now();
+    const DAY = 86400000;
+    const simplified = all.map((u) => {
+      const meta = u.user_metadata || {};
+      return {
+        email: u.email || '',
+        name: meta.full_name || meta.name || '',
+        created_at: u.created_at || null,
+        confirmed: !!(u.confirmed_at || u.email_confirmed_at),
+        last_login: u.last_signin_at || null
+      };
+    }).sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
+
+    const within = (u, ms) => u.created_at && (now - new Date(u.created_at).getTime()) < ms;
+
+    return json(200, {
+      success: true,
+      total: simplified.length,
+      today: simplified.filter((u) => within(u, DAY)).length,
+      week: simplified.filter((u) => within(u, 7 * DAY)).length,
+      confirmed: simplified.filter((u) => u.confirmed).length,
+      users: simplified
+    });
+  } catch (e) {
+    return json(500, { success: false, error: String((e && e.message) || e) });
+  }
+};
+
+function json(statusCode, body) {
+  return {
+    statusCode,
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  };
+}
