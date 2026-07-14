@@ -16,6 +16,78 @@ function brokerCtaUrl(b) {
   return b.affiliateUrl || b.officialUrl;
 }
 
+// Línea de reputación tolerante a brokers sin datos de Trustpilot verificados.
+function reputationLine(b) {
+  const r = parseFloat(b.trustpilotRating);
+  if (Number.isFinite(r)) {
+    return `⭐ ${b.trustpilotRating}/5 <span>Trustpilot · ${b.trustpilotReviews} reseñas${b.trustpilotLabel ? ' · "' + b.trustpilotLabel + '"' : ''}</span>`;
+  }
+  return `<span style="color:var(--text-mid);">Bróker nuevo · sin calificación pública verificada aún</span>`;
+}
+
+// Tabla de tipos de cuenta / spreads (referenciales).
+function accountTypesHTML(b) {
+  if (!b.accountTypes || !b.accountTypes.length) return '';
+  const rows = b.accountTypes.map((a) => `
+    <div class="acct-row">
+      <div class="acct-name">${a.name}</div>
+      <div class="acct-spread">${a.spread || '—'}</div>
+      <div class="acct-com">${a.comision || '—'}</div>
+      <div class="acct-para">${a.para || ''}</div>
+    </div>`).join('');
+  return `
+    <div class="section-head" style="margin-top:28px;"><h2>Tipos de cuenta y spreads de ${b.name}</h2></div>
+    <div class="acct-table">
+      <div class="acct-row acct-row-head"><div>Cuenta</div><div>Spread</div><div>Comisión</div><div>Ideal para</div></div>
+      ${rows}
+    </div>
+    <p style="color:var(--text-low);font-size:0.78rem;margin:10px 0 28px;">Spreads y comisiones referenciales: son valores típicos "desde" que varían según el instrumento, la volatilidad y las condiciones del mercado. Confirma siempre las cifras vigentes en el sitio oficial del bróker antes de operar.</p>`;
+}
+
+// Detalle para brokers aliados (patrocinados), con aviso de riesgo honesto.
+function partnerDetailHTML(b) {
+  const faqHTML = (b.faq || []).map((i) => `<details class="faq-item"><summary>${i.q}</summary><p>${i.a}</p></details>`).join('');
+  return `
+    <div class="idea-warning" style="margin-top:28px;border-color:rgba(225,58,75,0.45);">
+      <span class="icon">⚠️</span>
+      <div>
+        <strong>Importante: bróker offshore, sin regulación de primer nivel</strong>
+        <p>${b.name} está registrado en San Vicente y las Granadinas (offshore) y no cuenta con regulación de ASIC, FCA o CySEC. Sus reseñas públicas están divididas y algunos usuarios reportan demoras en los retiros. Es un aliado de AR4 con condiciones atractivas, pero opéralo con criterio: prueba retiros pequeños al inicio y no deposites más de lo que puedas permitirte arriesgar.</p>
+      </div>
+    </div>
+    <div class="section-head" style="margin-top:28px;"><h2>Datos clave de ${b.name}</h2></div>
+    <ul class="featured-facts" style="margin-bottom:28px;">
+      <li><span>Modelo</span><strong>${b.executionType}</strong></li>
+      <li><span>Regulación</span><strong>${b.regulation}</strong></li>
+      <li><span>Depósito mínimo</span><strong>${b.minDeposit}</strong></li>
+      <li><span>Apalancamiento</span><strong>${b.leverage}</strong></li>
+      <li><span>Plataforma</span><strong>${b.platforms}</strong></li>
+      <li><span>Retiros</span><strong>${b.withdrawalTime}</strong></li>
+    </ul>
+    ${accountTypesHTML(b)}
+    ${faqHTML ? `<div class="section-head"><h2>Preguntas frecuentes sobre ${b.name}</h2></div><div class="faq-list" style="margin-bottom:8px;">${faqHTML}</div>` : ''}
+  `;
+}
+
+function partnerCardHTML(b) {
+  return `
+    <article class="broker-card broker-partner-card" style="border-color:${b.brandColor}88;">
+      <div class="broker-card-top">
+        <div class="broker-rank broker-partner-badge">★ ${b.partnerLabel || 'Aliado destacado'}</div>
+        <span class="badge-premium" style="background:linear-gradient(135deg,var(--crimson-bright),var(--crimson));">Patrocinado</span>
+      </div>
+      ${brokerLogoHTML(b, 'sm')}
+      <div class="stars" style="margin:8px 0;">${reputationLine(b)}</div>
+      <p style="color:var(--text-mid); font-size:0.85rem; margin-bottom:14px;">${b.resumen}</p>
+      <ul class="broker-facts" style="margin-bottom:14px;">
+        <li>Depósito mínimo <strong>${b.minDeposit}</strong></li>
+        <li>Plataforma <strong>${b.platforms}</strong></li>
+      </ul>
+      <a href="broker.html?slug=${encodeURIComponent(b.slug)}" class="btn btn-outline btn-block" style="margin-top:12px;">Ver detalles →</a>
+    </article>
+  `;
+}
+
 const TIER1_REGULATORS = ['ASIC', 'FCA', 'CySEC', 'FINMA', 'BaFin', 'Banco Central de Irlanda', 'DFSA', 'FSA Japón'];
 const TIER2_REGULATORS = ['FSCA', 'ADGM'];
 
@@ -32,7 +104,8 @@ function regulationScore(regulationStr) {
 
 function computeTrustScore(b) {
   const regScore = regulationScore(b.regulation);
-  const trustpilotScore = (parseFloat(b.trustpilotRating) / 5) * 25;
+  const tpRating = parseFloat(b.trustpilotRating);
+  const trustpilotScore = Number.isFinite(tpRating) ? (tpRating / 5) * 25 : 0;
   const founded = parseInt(b.founded, 10);
   const trackRecordScore = Number.isFinite(founded) ? Math.min(15, 2026 - founded) : 0;
   const ratingValues = b.ratingBreakdown ? Object.values(b.ratingBreakdown) : [];
@@ -164,6 +237,8 @@ function brokerDeepDiveHTML(b) {
       <li><span>Cuenta demo</span><strong>${b.demoAccount}</strong></li>
     </ul>
 
+    ${accountTypesHTML(b)}
+
     ${ratingRows ? `
     <div class="section-head"><h2>Calificación de ${b.name} por categoría</h2></div>
     <p style="color:var(--text-low);font-size:0.8rem;margin-bottom:12px;">Calificación de 1 a 5 asignada por AR4 Mercados con base en reseñas públicas, condiciones publicadas por el bróker y comparación con el resto de esta lista. No sustituye tu propia investigación.</p>
@@ -215,7 +290,7 @@ function brokerRankCardHTML(b) {
         </div>
       </div>
       ${brokerLogoHTML(b, 'sm')}
-      <div class="stars" style="margin:8px 0;">⭐ ${b.trustpilotRating}/5 <span>Trustpilot · ${b.trustpilotReviews} reseñas</span></div>
+      <div class="stars" style="margin:8px 0;">${reputationLine(b)}</div>
       <p style="color:var(--text-mid); font-size:0.85rem; margin-bottom:14px;">${b.resumen}</p>
       <ul class="broker-facts" style="margin-bottom:14px;">
         <li>Depósito mínimo <strong>${b.minDeposit}</strong></li>
@@ -232,8 +307,9 @@ async function initBrokersListing() {
   if (!grid) return;
   try {
     const brokers = await loadBrokers();
-    brokers.sort((a, b) => a.rank - b.rank);
-    grid.innerHTML = brokers.map(brokerRankCardHTML).join('');
+    const partners = brokers.filter((b) => b.partner);
+    const ranked = brokers.filter((b) => !b.partner).sort((a, b) => a.rank - b.rank);
+    grid.innerHTML = partners.map(partnerCardHTML).join('') + ranked.map(brokerRankCardHTML).join('');
   } catch (e) {
     grid.innerHTML = '<p class="footer-text">No se pudieron cargar los brokers.</p>';
   }
@@ -274,11 +350,11 @@ async function initBrokerDetail() {
   if (heroEl) {
     heroEl.innerHTML = `
       <div class="featured-broker" style="border-color:${b.brandColor}55;">
-        <div class="featured-ribbon" style="background:linear-gradient(135deg, ${b.brandColor}, ${b.brandColor}cc); color:#0a0f1c;">#${b.rank} EN NUESTRO TOP 10 ${sponsoredBadge}</div>
+        <div class="featured-ribbon" style="background:linear-gradient(135deg, ${b.brandColor}, ${b.brandColor}cc); color:#0a0f1c;">${b.partner ? '★ ' + (b.partnerLabel || 'ALIADO DESTACADO').toUpperCase() : '#' + b.rank + ' EN NUESTRO TOP 10'} ${sponsoredBadge}</div>
         <div class="featured-grid">
           <div class="featured-main">
             ${brokerLogoHTML(b, 'lg')}
-            <div class="stars" style="margin:12px 0 8px;">⭐ ${b.trustpilotRating}/5 <span>Trustpilot · ${b.trustpilotReviews} reseñas · "${b.trustpilotLabel}"</span></div>
+            <div class="stars" style="margin:12px 0 8px;">${reputationLine(b)}</div>
             <p class="featured-desc">${b.descripcion}</p>
             <ul class="featured-facts">
               <li><span>Regulación</span><strong>${b.regulation}</strong></li>
@@ -308,7 +384,7 @@ async function initBrokerDetail() {
   }
 
   const deepDiveEl = document.getElementById('brokerDeepDive');
-  if (deepDiveEl) deepDiveEl.innerHTML = brokerDeepDiveHTML(b);
+  if (deepDiveEl) deepDiveEl.innerHTML = b.partner ? partnerDetailHTML(b) : brokerDeepDiveHTML(b);
 
   const bottomCta = document.getElementById('brokerBottomCta');
   if (bottomCta) {
@@ -325,7 +401,7 @@ async function initBrokerDetail() {
 
   const relatedGrid = document.getElementById('relatedBrokersGrid');
   if (relatedGrid) {
-    const related = brokers.filter(x => x.slug !== slug).sort((a, x) => a.rank - x.rank).slice(0, 3);
+    const related = brokers.filter(x => x.slug !== slug && !x.partner).sort((a, x) => a.rank - x.rank).slice(0, 3);
     relatedGrid.innerHTML = related.map(brokerRankCardHTML).join('');
   }
 }
@@ -403,6 +479,7 @@ function renderBrokerFinderForm() {
     try {
       const brokers = await loadBrokers();
       const scored = brokers
+        .filter((b) => !b.partner)
         .map((b) => ({ b, m: brokerFinderMatch(b, answers) }))
         .sort((a, x) => x.m.score - a.m.score)
         .slice(0, 3);

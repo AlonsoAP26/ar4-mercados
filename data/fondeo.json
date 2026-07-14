@@ -34,10 +34,22 @@
       "Reset de la pérdida diaria a medianoche CET, incómodo según zona horaria"
     ],
     "faq": [
-      { "q": "¿Cuánto cuesta la evaluación de FTMO?", "a": "Entre $155 y $1,080 USD dependiendo del tamaño de cuenta que elijas (desde $10,000 hasta $200,000). Cuentas más grandes cuestan más pero también permiten operar con más capital una vez fondeado." },
-      { "q": "¿Cuántas fases tiene el proceso de FTMO?", "a": "Dos: el Challenge (objetivo de 10% de ganancia) y la Verificación (objetivo de 5%). Solo después de aprobar ambas fases recibes una cuenta fondeada real." },
-      { "q": "¿Qué pasa si rompo la regla de pérdida diaria?", "a": "La evaluación se reprueba de inmediato, incluso si en general la cuenta está en ganancia. Es la regla que más traders rompen sin darse cuenta, especialmente en días de alta volatilidad." },
-      { "q": "¿FTMO acepta traders de Latinoamérica?", "a": "Sí, FTMO opera globalmente y acepta traders de la mayoría de países de Latinoamérica. La única restricción notable es que ya no acepta residentes de Estados Unidos." }
+      {
+        "q": "¿Cuánto cuesta la evaluación de FTMO?",
+        "a": "Entre $155 y $1,080 USD dependiendo del tamaño de cuenta que elijas (desde $10,000 hasta $200,000). Cuentas más grandes cuestan más pero también permiten operar con más capital una vez fondeado."
+      },
+      {
+        "q": "¿Cuántas fases tiene el proceso de FTMO?",
+        "a": "Dos: el Challenge (objetivo de 10% de ganancia) y la Verificación (objetivo de 5%). Solo después de aprobar ambas fases recibes una cuenta fondeada real."
+      },
+      {
+        "q": "¿Qué pasa si rompo la regla de pérdida diaria?",
+        "a": "La evaluación se reprueba de inmediato, incluso si en general la cuenta está en ganancia. Es la regla que más traders rompen sin darse cuenta, especialmente en días de alta volatilidad."
+      },
+      {
+        "q": "¿FTMO acepta traders de Latinoamérica?",
+        "a": "Sí, FTMO opera globalmente y acepta traders de la mayoría de países de Latinoamérica. La única restricción notable es que ya no acepta residentes de Estados Unidos."
+      }
     ],
     "officialUrl": "https://www.ftmo.com"
   },
@@ -76,10 +88,22 @@
       "Condiciones varían bastante según el tipo de cuenta elegido"
     ],
     "faq": [
-      { "q": "¿Qué pasa si no completo el challenge de FundedNext pero voy en ganancia?", "a": "FundedNext paga un 15% de la ganancia generada durante el challenge aunque no llegues a completarlo, algo poco común en la industria de cuentas de fondeo." },
-      { "q": "¿Cuál es el depósito mínimo para la evaluación?", "a": "La evaluación más económica parte de $129 USD para la cuenta de $6,000, y sube según el tamaño de cuenta elegido." },
-      { "q": "¿FundedNext tiene requisito de días mínimos de trading?", "a": "En la mayoría de sus cuentas no exige un número mínimo de días operando, lo que da más flexibilidad comparado con firmas que sí lo requieren." },
-      { "q": "¿Qué tan rápido paga FundedNext?", "a": "Según la mayoría de reseñas de usuarios, los retiros se procesan en menos de 24 horas una vez solicitados." }
+      {
+        "q": "¿Qué pasa si no completo el challenge de FundedNext pero voy en ganancia?",
+        "a": "FundedNext paga un 15% de la ganancia generada durante el challenge aunque no llegues a completarlo, algo poco común en la industria de cuentas de fondeo."
+      },
+      {
+        "q": "¿Cuál es el depósito mínimo para la evaluación?",
+        "a": "La evaluación más económica parte de $129 USD para la cuenta de $6,000, y sube según el tamaño de cuenta elegido."
+      },
+      {
+        "q": "¿FundedNext tiene requisito de días mínimos de trading?",
+        "a": "En la mayoría de sus cuentas no exige un número mínimo de días operando, lo que da más flexibilidad comparado con firmas que sí lo requieren."
+      },
+      {
+        "q": "¿Qué tan rápido paga FundedNext?",
+        "a": "Según la mayoría de reseñas de usuarios, los retiros se procesan en menos de 24 horas una vez solicitados."
+      }
     ],
     "officialUrl": "https://fundednext.com"
   },
@@ -118,11 +142,74 @@
       "Menor volumen de reseñas que FTMO o FundedNext"
     ],
     "faq": [
-      { "q": "¿Cómo funciona el escalado de cuenta en The5ers?", "a": "Cada vez que tu cuenta fondeada alcanza un 10% de ganancia, el tamaño de la cuenta y tu porcentaje de reparto de ganancias aumentan, hasta llegar a un techo de $4,000,000 USD gestionados y un split de hasta 100%." },
-      { "q": "¿The5ers exige un número mínimo de días operando?", "a": "No, es una de las pocas firmas del sector que no impone un requisito de días mínimos de trading, lo que da flexibilidad a quien no puede operar todos los días." },
-      { "q": "¿Qué es el programa Instant Funding de The5ers?", "a": "Es un programa que permite acceder a una cuenta fondeada sin pasar por una evaluación previa, a cambio de condiciones de riesgo más estrictas y un split inicial más bajo." },
-      { "q": "¿Cuál es el split inicial en The5ers?", "a": "Depende del programa elegido: los programas de evaluación tradicional suelen partir con un split más generoso, mientras que el programa Bootcamp/Instant Funding inicia más bajo (cercano a 50/50) y escala con el tiempo." }
+      {
+        "q": "¿Cómo funciona el escalado de cuenta en The5ers?",
+        "a": "Cada vez que tu cuenta fondeada alcanza un 10% de ganancia, el tamaño de la cuenta y tu porcentaje de reparto de ganancias aumentan, hasta llegar a un techo de $4,000,000 USD gestionados y un split de hasta 100%."
+      },
+      {
+        "q": "¿The5ers exige un número mínimo de días operando?",
+        "a": "No, es una de las pocas firmas del sector que no impone un requisito de días mínimos de trading, lo que da flexibilidad a quien no puede operar todos los días."
+      },
+      {
+        "q": "¿Qué es el programa Instant Funding de The5ers?",
+        "a": "Es un programa que permite acceder a una cuenta fondeada sin pasar por una evaluación previa, a cambio de condiciones de riesgo más estrictas y un split inicial más bajo."
+      },
+      {
+        "q": "¿Cuál es el split inicial en The5ers?",
+        "a": "Depende del programa elegido: los programas de evaluación tradicional suelen partir con un split más generoso, mientras que el programa Bootcamp/Instant Funding inicia más bajo (cercano a 50/50) y escala con el tiempo."
+      }
     ],
     "officialUrl": "https://the5ers.com"
+  },
+  {
+    "slug": "adn-broker",
+    "partner": true,
+    "partnerLabel": "Aliado destacado",
+    "name": "ADN Broker (ADNX10)",
+    "brandColor": "#12b3c7",
+    "resumen": "Modelo de cuenta fondeada con acceso inmediato (sin evaluacion), 100% de las ganancias para el trader y retiros en cripto. Aliado de AR4; broker joven y offshore.",
+    "descripcion": "ADNX10 es el producto de cuenta fondeada de ADN Broker: accedes a un tamano de cuenta de 00 a 00,000 USD pagando ~10% de su valor, sin fase de evaluacion previa, con un limite de perdida (drawdown) del 10% y quedandote con el 100% de las ganancias. Opera en MetaTrader 5, con depositos y retiros en criptomonedas. A diferencia de una mesa de fondeo clasica no hay reto de 1 o 2 fases: el acceso es inmediato, pero es un broker registrado en jurisdiccion offshore, con menos garantias regulatorias.",
+    "founded": null,
+    "tracRecordTraders": null,
+    "evaluationCost": "~10% del tamano de cuenta (ej. $50 por $500)",
+    "accountSizes": "$500 a $100,000 USD",
+    "profitSplit": "100% para el trader",
+    "phases": "Sin evaluacion (acceso inmediato)",
+    "dailyLossLimit": "No especificado",
+    "maxDrawdown": "10% del saldo inicial",
+    "minTradingDays": "0 (sin minimo)",
+    "payoutFrequency": "Mismo dia tras cerrar posiciones (cripto)",
+    "platforms": "MetaTrader 5",
+    "trustpilotRating": null,
+    "trustpilotReviews": null,
+    "trustpilotLabel": null,
+    "approvalRate": "N/D",
+    "avgPayoutTime": "24-72 h habiles (USDT TRC20)",
+    "pros": [
+      "Acceso inmediato al capital, sin reto de evaluacion",
+      "100% de las ganancias para el trader",
+      "Retiros el mismo dia tras cerrar posiciones (en cripto)",
+      "Permite scalping, noticias, robots y copytrading",
+      "Barrera de entrada baja (desde $500)"
+    ],
+    "cons": [
+      "NO regulado por un ente de primer nivel: registrado en San Vicente y las Granadinas (offshore)",
+      "Reseñas divididas en Trustpilot: algunos reportan demoras o problemas de retiro",
+      "Depositos y retiros solo en criptomonedas (USDT/BTC)",
+      "Sin soporte telefonico",
+      "Broker joven, con menor historial publico"
+    ],
+    "faq": [
+      {
+        "q": "Es una mesa de fondeo tradicional?",
+        "a": "No exactamente. En lugar de un reto de 1 o 2 fases, ADNX10 da acceso inmediato al capital tras pagar ~10% de su valor. No hay objetivo de profit, pero si un limite de perdida del 10%."
+      },
+      {
+        "q": "Que riesgos debo considerar?",
+        "a": "Al ser offshore y con reseñas divididas sobre retiros, el riesgo es operativo. Prueba retiros pequeños al inicio, guarda comprobantes y no comprometas mas de lo que puedas arriesgar."
+      }
+    ],
+    "officialUrl": "https://app.adnbroker.com/user-auth/register?referral_id=5167",
+    "affiliateUrl": "https://app.adnbroker.com/user-auth/register?referral_id=5167"
   }
 ]

@@ -39,15 +39,57 @@
     "depositTime": "Instantáneo con tarjeta o e-wallet · 1-2 días hábiles por transferencia",
     "withdrawalTime": "Menos de 24 horas según la mayoría de reseñas de usuarios",
     "inactivityFee": "No cobra comisión por inactividad",
-    "ratingBreakdown": { "instrumentos": 4.5, "comisiones": 4.7, "plataformas": 4.8, "investigacion": 4.2, "movil": 4.4, "educacion": 4.0 },
+    "ratingBreakdown": {
+      "instrumentos": 4.5,
+      "comisiones": 4.7,
+      "plataformas": 4.8,
+      "investigacion": 4.2,
+      "movil": 4.4,
+      "educacion": 4.0
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en Pepperstone?", "a": "Pepperstone no exige un depósito mínimo obligatorio, aunque en la práctica se recomienda empezar con al menos $200 USD para operar con un margen de maniobra razonable en la cuenta Razor." },
-      { "q": "¿Cuánto tarda un retiro en Pepperstone?", "a": "Según la mayoría de reseñas de usuarios, los retiros se procesan en menos de 24 horas hábiles, aunque el tiempo final también depende del método de pago (las e-wallets suelen ser más rápidas que las transferencias bancarias)." },
-      { "q": "¿Pepperstone es un broker ECN real?", "a": "Sí, en su cuenta Razor opera bajo un modelo de ejecución de mercado (Market Execution) con acceso a liquidez de múltiples proveedores, característico de un broker ECN/STP, sin mesa de dealing propia." },
-      { "q": "¿Puedo usar copytrading con Pepperstone?", "a": "Sí, es compatible con plataformas de copytrading de terceros como Myfxbook AutoTrade y DupliTrade, además de la funcionalidad de señales integrada en MetaTrader." },
-      { "q": "¿Necesito verificar mi identidad (KYC) antes de operar?", "a": "Sí, como todo bróker regulado, Pepperstone exige verificación de identidad y domicilio antes de permitir retiros, aunque suele ser posible operar en real con un depósito inicial mientras se completa la verificación en paralelo." },
-      { "q": "¿Pepperstone ofrece protección de saldo negativo?", "a": "Sí, para clientes bajo sus entidades reguladas por ASIC, FCA o CySEC, lo que significa que no puedes perder más dinero del que depositaste, incluso en movimientos extremos del mercado." },
-      { "q": "¿Puedo abrir una cuenta islámica (sin swap) en Pepperstone?", "a": "Sí, ofrece cuentas swap-free para clientes que por motivos religiosos no pueden pagar o recibir interés por mantener posiciones abiertas durante la noche." }
+      {
+        "q": "¿Cuál es el depósito mínimo en Pepperstone?",
+        "a": "Pepperstone no exige un depósito mínimo obligatorio, aunque en la práctica se recomienda empezar con al menos $200 USD para operar con un margen de maniobra razonable en la cuenta Razor."
+      },
+      {
+        "q": "¿Cuánto tarda un retiro en Pepperstone?",
+        "a": "Según la mayoría de reseñas de usuarios, los retiros se procesan en menos de 24 horas hábiles, aunque el tiempo final también depende del método de pago (las e-wallets suelen ser más rápidas que las transferencias bancarias)."
+      },
+      {
+        "q": "¿Pepperstone es un broker ECN real?",
+        "a": "Sí, en su cuenta Razor opera bajo un modelo de ejecución de mercado (Market Execution) con acceso a liquidez de múltiples proveedores, característico de un broker ECN/STP, sin mesa de dealing propia."
+      },
+      {
+        "q": "¿Puedo usar copytrading con Pepperstone?",
+        "a": "Sí, es compatible con plataformas de copytrading de terceros como Myfxbook AutoTrade y DupliTrade, además de la funcionalidad de señales integrada en MetaTrader."
+      },
+      {
+        "q": "¿Necesito verificar mi identidad (KYC) antes de operar?",
+        "a": "Sí, como todo bróker regulado, Pepperstone exige verificación de identidad y domicilio antes de permitir retiros, aunque suele ser posible operar en real con un depósito inicial mientras se completa la verificación en paralelo."
+      },
+      {
+        "q": "¿Pepperstone ofrece protección de saldo negativo?",
+        "a": "Sí, para clientes bajo sus entidades reguladas por ASIC, FCA o CySEC, lo que significa que no puedes perder más dinero del que depositaste, incluso en movimientos extremos del mercado."
+      },
+      {
+        "q": "¿Puedo abrir una cuenta islámica (sin swap) en Pepperstone?",
+        "a": "Sí, ofrece cuentas swap-free para clientes que por motivos religiosos no pueden pagar o recibir interés por mantener posiciones abiertas durante la noche."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Standard",
+        "spread": "desde 1.0 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general y principiantes"
+      },
+      {
+        "name": "Razor",
+        "spread": "desde 0.0 pips",
+        "comision": "~$3.50 por lado / lote",
+        "para": "Scalping, noticias y algoritmos"
+      }
     ]
   },
   {
@@ -87,15 +129,63 @@
     "depositTime": "Instantáneo con tarjeta, e-wallet o cripto · 1-3 días hábiles por transferencia",
     "withdrawalTime": "Procesado el mismo día hábil en la mayoría de los casos",
     "inactivityFee": "No cobra comisión por inactividad",
-    "ratingBreakdown": { "instrumentos": 4.6, "comisiones": 4.5, "plataformas": 4.9, "investigacion": 4.3, "movil": 4.5, "educacion": 4.1 },
+    "ratingBreakdown": {
+      "instrumentos": 4.6,
+      "comisiones": 4.5,
+      "plataformas": 4.9,
+      "investigacion": 4.3,
+      "movil": 4.5,
+      "educacion": 4.1
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en IC Markets?", "a": "El depósito mínimo recomendado es de $200 USD, sensiblemente más alto que brokers como FBS o XM, en línea con su posicionamiento hacia traders más activos." },
-      { "q": "¿IC Markets cobra comisión?", "a": "Sí, la cuenta Raw cobra una comisión fija por lote operado además del spread, que en esta cuenta puede llegar a 0.0 pips. Es un modelo típico de bróker ECN, donde el costo se separa entre spread y comisión." },
-      { "q": "¿Qué tan rápido son los retiros en IC Markets?", "a": "La mayoría de los usuarios reporta que los retiros se procesan el mismo día hábil, uno de los tiempos más rápidos entre los brokers de esta comparativa." },
-      { "q": "¿Sirve IC Markets para trading algorítmico?", "a": "Sí, es una de las opciones preferidas para estrategias automatizadas y de alta frecuencia gracias a su ejecución de baja latencia y servidores ubicados en centros de datos NY4 de Equinix." },
-      { "q": "¿IC Markets tiene aplicación móvil propia?", "a": "No cuenta con una app propia como algunos competidores; opera a través de las aplicaciones estándar de MT4, MT5 y cTrader, que sí están disponibles para iOS y Android." },
-      { "q": "¿Puedo retirar solo una parte de mi saldo?", "a": "Sí, los retiros parciales están permitidos sin restricciones adicionales más allá de mantener el margen necesario para las posiciones abiertas." },
-      { "q": "¿IC Markets ofrece cuenta islámica sin swap?", "a": "Sí, está disponible para las cuentas Raw y Standard bajo solicitud, dirigida a clientes que no pueden pagar o recibir intereses por motivos religiosos." }
+      {
+        "q": "¿Cuál es el depósito mínimo en IC Markets?",
+        "a": "El depósito mínimo recomendado es de $200 USD, sensiblemente más alto que brokers como FBS o XM, en línea con su posicionamiento hacia traders más activos."
+      },
+      {
+        "q": "¿IC Markets cobra comisión?",
+        "a": "Sí, la cuenta Raw cobra una comisión fija por lote operado además del spread, que en esta cuenta puede llegar a 0.0 pips. Es un modelo típico de bróker ECN, donde el costo se separa entre spread y comisión."
+      },
+      {
+        "q": "¿Qué tan rápido son los retiros en IC Markets?",
+        "a": "La mayoría de los usuarios reporta que los retiros se procesan el mismo día hábil, uno de los tiempos más rápidos entre los brokers de esta comparativa."
+      },
+      {
+        "q": "¿Sirve IC Markets para trading algorítmico?",
+        "a": "Sí, es una de las opciones preferidas para estrategias automatizadas y de alta frecuencia gracias a su ejecución de baja latencia y servidores ubicados en centros de datos NY4 de Equinix."
+      },
+      {
+        "q": "¿IC Markets tiene aplicación móvil propia?",
+        "a": "No cuenta con una app propia como algunos competidores; opera a través de las aplicaciones estándar de MT4, MT5 y cTrader, que sí están disponibles para iOS y Android."
+      },
+      {
+        "q": "¿Puedo retirar solo una parte de mi saldo?",
+        "a": "Sí, los retiros parciales están permitidos sin restricciones adicionales más allá de mantener el margen necesario para las posiciones abiertas."
+      },
+      {
+        "q": "¿IC Markets ofrece cuenta islámica sin swap?",
+        "a": "Sí, está disponible para las cuentas Raw y Standard bajo solicitud, dirigida a clientes que no pueden pagar o recibir intereses por motivos religiosos."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Standard",
+        "spread": "desde 0.8 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      },
+      {
+        "name": "Raw Spread (MT4/MT5)",
+        "spread": "desde 0.0 pips",
+        "comision": "~$3.50 por lado / lote",
+        "para": "Costos bajos y alto volumen"
+      },
+      {
+        "name": "Raw Spread (cTrader)",
+        "spread": "desde 0.0 pips",
+        "comision": "~$3.00 por lado / lote",
+        "para": "Scalping en cTrader"
+      }
     ]
   },
   {
@@ -135,15 +225,57 @@
     "depositTime": "Instantáneo con tarjeta o e-wallet · 2-5 días hábiles por transferencia",
     "withdrawalTime": "2-5 días hábiles en promedio",
     "inactivityFee": "Sí, tras 3 meses sin actividad en la cuenta",
-    "ratingBreakdown": { "instrumentos": 4.4, "comisiones": 4.0, "plataformas": 4.3, "investigacion": 4.5, "movil": 4.6, "educacion": 4.7 },
+    "ratingBreakdown": {
+      "instrumentos": 4.4,
+      "comisiones": 4.0,
+      "plataformas": 4.3,
+      "investigacion": 4.5,
+      "movil": 4.6,
+      "educacion": 4.7
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en AvaTrade?", "a": "El depósito mínimo es de $100 USD, más alto que brokers de entrada como FBS o HFM pero acorde a su perfil de broker más regulado y orientado a traders que valoran la solidez institucional." },
-      { "q": "¿AvaTrade cobra comisión por inactividad?", "a": "Sí, aplica un cargo por inactividad después de 3 meses sin operaciones en la cuenta. Es importante revisar los términos actualizados antes de abrir una cuenta si no se planea operar con frecuencia." },
-      { "q": "¿AvaTrade es un broker Market Maker?", "a": "Sí, AvaTrade opera bajo un modelo de creador de mercado (dealing desk), donde el bróker es la contraparte de las operaciones del cliente. Esto no implica necesariamente peor ejecución, pero es distinto al modelo ECN de otros brokers de esta lista." },
-      { "q": "¿AvaTrade tiene app móvil propia?", "a": "Sí, AvaTradeGO es su aplicación propia, calificada de forma consistente por encima de la plataforma móvil estándar de MetaTrader en cuanto a experiencia de usuario." },
-      { "q": "¿AvaTrade ofrece protección de saldo negativo?", "a": "Sí, para clientes minoristas bajo sus entidades reguladas, garantizando que nunca puedas deber más dinero del que depositaste en tu cuenta." },
-      { "q": "¿Cuánto tiempo toma verificar la cuenta en AvaTrade?", "a": "El proceso de verificación (KYC) suele completarse en 24-48 horas una vez enviados los documentos requeridos: identificación oficial y comprobante de domicilio." },
-      { "q": "¿AvaTrade permite operar opciones además de forex y CFDs?", "a": "Sí, a través de AvaOptions, su plataforma especializada en opciones sobre divisas, algo poco común entre los brokers de esta comparativa." }
+      {
+        "q": "¿Cuál es el depósito mínimo en AvaTrade?",
+        "a": "El depósito mínimo es de $100 USD, más alto que brokers de entrada como FBS o HFM pero acorde a su perfil de broker más regulado y orientado a traders que valoran la solidez institucional."
+      },
+      {
+        "q": "¿AvaTrade cobra comisión por inactividad?",
+        "a": "Sí, aplica un cargo por inactividad después de 3 meses sin operaciones en la cuenta. Es importante revisar los términos actualizados antes de abrir una cuenta si no se planea operar con frecuencia."
+      },
+      {
+        "q": "¿AvaTrade es un broker Market Maker?",
+        "a": "Sí, AvaTrade opera bajo un modelo de creador de mercado (dealing desk), donde el bróker es la contraparte de las operaciones del cliente. Esto no implica necesariamente peor ejecución, pero es distinto al modelo ECN de otros brokers de esta lista."
+      },
+      {
+        "q": "¿AvaTrade tiene app móvil propia?",
+        "a": "Sí, AvaTradeGO es su aplicación propia, calificada de forma consistente por encima de la plataforma móvil estándar de MetaTrader en cuanto a experiencia de usuario."
+      },
+      {
+        "q": "¿AvaTrade ofrece protección de saldo negativo?",
+        "a": "Sí, para clientes minoristas bajo sus entidades reguladas, garantizando que nunca puedas deber más dinero del que depositaste en tu cuenta."
+      },
+      {
+        "q": "¿Cuánto tiempo toma verificar la cuenta en AvaTrade?",
+        "a": "El proceso de verificación (KYC) suele completarse en 24-48 horas una vez enviados los documentos requeridos: identificación oficial y comprobante de domicilio."
+      },
+      {
+        "q": "¿AvaTrade permite operar opciones además de forex y CFDs?",
+        "a": "Sí, a través de AvaOptions, su plataforma especializada en opciones sobre divisas, algo poco común entre los brokers de esta comparativa."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Cuenta Estándar",
+        "spread": "desde 0.9 pip (incluido)",
+        "comision": "Sin comisión",
+        "para": "Principiantes; costos predecibles"
+      },
+      {
+        "name": "Profesional",
+        "spread": "desde 0.9 pip",
+        "comision": "Sin comisión",
+        "para": "Clientes que califican como profesionales"
+      }
     ]
   },
   {
@@ -182,15 +314,69 @@
     "depositTime": "Instantáneo en la mayoría de métodos",
     "withdrawalTime": "Instantáneo según la mayoría de reseñas de usuarios",
     "inactivityFee": "No cobra comisión por inactividad",
-    "ratingBreakdown": { "instrumentos": 4.3, "comisiones": 4.4, "plataformas": 4.2, "investigacion": 3.8, "movil": 4.3, "educacion": 3.9 },
+    "ratingBreakdown": {
+      "instrumentos": 4.3,
+      "comisiones": 4.4,
+      "plataformas": 4.2,
+      "investigacion": 3.8,
+      "movil": 4.3,
+      "educacion": 3.9
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en Exness?", "a": "Exness permite abrir una cuenta desde $10 USD, uno de los depósitos mínimos más bajos de esta comparativa, lo que lo hace accesible para quienes están empezando con poco capital." },
-      { "q": "¿Bajo qué entidad opera Exness para clientes de Latinoamérica?", "a": "La mayoría de los clientes retail de la región quedan registrados bajo la entidad de Exness en Seychelles o Sudáfrica, y no bajo las licencias CySEC o FCA del grupo, que aplican principalmente a clientes europeos." },
-      { "q": "¿Qué tan rápidos son los retiros en Exness?", "a": "Según la mayoría de las reseñas de usuarios, los retiros en Exness se procesan de forma prácticamente instantánea, siendo uno de los puntos más valorados del bróker." },
-      { "q": "¿Exness cobra comisión en la cuenta Standard?", "a": "No, la cuenta Standard no cobra comisión explícita; el costo va incluido en el spread, que parte desde 1.0 pips. La cuenta Raw Spread sí cobra comisión pero ofrece spreads más ajustados." },
-      { "q": "¿Por qué el apalancamiento de Exness es tan alto (hasta 1:2000)?", "a": "Exness aplica un sistema de apalancamiento dinámico que se ajusta automáticamente según el tamaño de la posición y el capital de la cuenta; el máximo de 1:2000 aplica principalmente a cuentas pequeñas bajo entidades offshore, no de forma uniforme para todos los clientes." },
-      { "q": "¿Exness ofrece cuenta islámica sin swap?", "a": "Sí, está disponible en la mayoría de sus tipos de cuenta bajo solicitud." },
-      { "q": "¿Necesito verificar mi cuenta antes de poder retirar en Exness?", "a": "Sí, la verificación de identidad es obligatoria antes de procesar cualquier retiro, siguiendo los estándares regulatorios estándar de la industria." }
+      {
+        "q": "¿Cuál es el depósito mínimo en Exness?",
+        "a": "Exness permite abrir una cuenta desde $10 USD, uno de los depósitos mínimos más bajos de esta comparativa, lo que lo hace accesible para quienes están empezando con poco capital."
+      },
+      {
+        "q": "¿Bajo qué entidad opera Exness para clientes de Latinoamérica?",
+        "a": "La mayoría de los clientes retail de la región quedan registrados bajo la entidad de Exness en Seychelles o Sudáfrica, y no bajo las licencias CySEC o FCA del grupo, que aplican principalmente a clientes europeos."
+      },
+      {
+        "q": "¿Qué tan rápidos son los retiros en Exness?",
+        "a": "Según la mayoría de las reseñas de usuarios, los retiros en Exness se procesan de forma prácticamente instantánea, siendo uno de los puntos más valorados del bróker."
+      },
+      {
+        "q": "¿Exness cobra comisión en la cuenta Standard?",
+        "a": "No, la cuenta Standard no cobra comisión explícita; el costo va incluido en el spread, que parte desde 1.0 pips. La cuenta Raw Spread sí cobra comisión pero ofrece spreads más ajustados."
+      },
+      {
+        "q": "¿Por qué el apalancamiento de Exness es tan alto (hasta 1:2000)?",
+        "a": "Exness aplica un sistema de apalancamiento dinámico que se ajusta automáticamente según el tamaño de la posición y el capital de la cuenta; el máximo de 1:2000 aplica principalmente a cuentas pequeñas bajo entidades offshore, no de forma uniforme para todos los clientes."
+      },
+      {
+        "q": "¿Exness ofrece cuenta islámica sin swap?",
+        "a": "Sí, está disponible en la mayoría de sus tipos de cuenta bajo solicitud."
+      },
+      {
+        "q": "¿Necesito verificar mi cuenta antes de poder retirar en Exness?",
+        "a": "Sí, la verificación de identidad es obligatoria antes de procesar cualquier retiro, siguiendo los estándares regulatorios estándar de la industria."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Standard",
+        "spread": "desde 0.3 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      },
+      {
+        "name": "Standard Cent",
+        "spread": "desde 0.3 pip",
+        "comision": "Sin comisión",
+        "para": "Cuentas pequeñas / práctica"
+      },
+      {
+        "name": "Raw Spread",
+        "spread": "desde 0.0 pips",
+        "comision": "hasta $3.50 por lado / lote",
+        "para": "Costos bajos"
+      },
+      {
+        "name": "Zero",
+        "spread": "0.0 pips en instrumentos top",
+        "comision": "desde $0.05 por lado",
+        "para": "Scalping en pares principales"
+      }
     ]
   },
   {
@@ -229,15 +415,69 @@
     "depositTime": "Instantáneo con tarjeta o e-wallet · 1-3 días hábiles por transferencia",
     "withdrawalTime": "Menos de 24 horas según la mayoría de reseñas",
     "inactivityFee": "Sí, tras 6 meses sin actividad en la cuenta",
-    "ratingBreakdown": { "instrumentos": 4.4, "comisiones": 4.5, "plataformas": 4.2, "investigacion": 4.0, "movil": 4.1, "educacion": 4.3 },
+    "ratingBreakdown": {
+      "instrumentos": 4.4,
+      "comisiones": 4.5,
+      "plataformas": 4.2,
+      "investigacion": 4.0,
+      "movil": 4.1,
+      "educacion": 4.3
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en HFM?", "a": "Depende del tipo de cuenta: la cuenta Cent permite empezar desde $5 USD, mientras que las cuentas Premium y Zero requieren montos algo mayores según las condiciones vigentes en el sitio oficial." },
-      { "q": "¿HFM tiene regulación de primer nivel?", "a": "Sí, cuenta con licencias FCA (Reino Unido) y CySEC (Chipre), ambas consideradas tier-1, combinadas con licencias adicionales en Sudáfrica, Kenia, Dubái y Seychelles según la entidad bajo la que se registre el cliente." },
-      { "q": "¿Qué diferencia hay entre las cuentas Zero, Premium y Pro de HFM?", "a": "La cuenta Zero ofrece spreads desde 0.0 pips con una comisión fija por lote (modelo ECN), mientras que Premium y Pro no cobran comisión explícita y el costo va incluido en un spread algo más amplio (modelo STP)." },
-      { "q": "¿HFM cobra comisión por inactividad?", "a": "Sí, aplica un cargo tras 6 meses sin actividad en la cuenta. Conviene revisar los términos actualizados si se planea dejar la cuenta inactiva por un periodo prolongado." },
-      { "q": "¿HFM tiene aplicación móvil propia?", "a": "Sí, además de las apps estándar de MT4 y MT5, HFM ofrece HFM App, su plataforma propia para gestionar depósitos, retiros y seguimiento de cuenta desde el celular." },
-      { "q": "¿HFM ofrece protección de saldo negativo?", "a": "Sí, para clientes bajo sus entidades reguladas, lo que evita que termines debiendo dinero al bróker tras un movimiento extremo del mercado." },
-      { "q": "¿Puedo tener varias cuentas de trading en HFM al mismo tiempo?", "a": "Sí, HFM permite abrir múltiples cuentas (Cent, Premium, Zero, entre otras) bajo el mismo perfil de cliente, útil para separar estrategias o niveles de riesgo." }
+      {
+        "q": "¿Cuál es el depósito mínimo en HFM?",
+        "a": "Depende del tipo de cuenta: la cuenta Cent permite empezar desde $5 USD, mientras que las cuentas Premium y Zero requieren montos algo mayores según las condiciones vigentes en el sitio oficial."
+      },
+      {
+        "q": "¿HFM tiene regulación de primer nivel?",
+        "a": "Sí, cuenta con licencias FCA (Reino Unido) y CySEC (Chipre), ambas consideradas tier-1, combinadas con licencias adicionales en Sudáfrica, Kenia, Dubái y Seychelles según la entidad bajo la que se registre el cliente."
+      },
+      {
+        "q": "¿Qué diferencia hay entre las cuentas Zero, Premium y Pro de HFM?",
+        "a": "La cuenta Zero ofrece spreads desde 0.0 pips con una comisión fija por lote (modelo ECN), mientras que Premium y Pro no cobran comisión explícita y el costo va incluido en un spread algo más amplio (modelo STP)."
+      },
+      {
+        "q": "¿HFM cobra comisión por inactividad?",
+        "a": "Sí, aplica un cargo tras 6 meses sin actividad en la cuenta. Conviene revisar los términos actualizados si se planea dejar la cuenta inactiva por un periodo prolongado."
+      },
+      {
+        "q": "¿HFM tiene aplicación móvil propia?",
+        "a": "Sí, además de las apps estándar de MT4 y MT5, HFM ofrece HFM App, su plataforma propia para gestionar depósitos, retiros y seguimiento de cuenta desde el celular."
+      },
+      {
+        "q": "¿HFM ofrece protección de saldo negativo?",
+        "a": "Sí, para clientes bajo sus entidades reguladas, lo que evita que termines debiendo dinero al bróker tras un movimiento extremo del mercado."
+      },
+      {
+        "q": "¿Puedo tener varias cuentas de trading en HFM al mismo tiempo?",
+        "a": "Sí, HFM permite abrir múltiples cuentas (Cent, Premium, Zero, entre otras) bajo el mismo perfil de cliente, útil para separar estrategias o niveles de riesgo."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Cent",
+        "spread": "desde 1.2 pip",
+        "comision": "Sin comisión",
+        "para": "Principiantes / cuentas pequeñas"
+      },
+      {
+        "name": "Zero",
+        "spread": "desde 0.0 pips",
+        "comision": "desde $3 por lado / lote",
+        "para": "Costos bajos"
+      },
+      {
+        "name": "Pro",
+        "spread": "desde 0.5 pip",
+        "comision": "Sin comisión",
+        "para": "Traders con volumen"
+      },
+      {
+        "name": "Premium",
+        "spread": "desde 1.0 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      }
     ]
   },
   {
@@ -276,15 +516,63 @@
     "depositTime": "Instantáneo en la mayoría de métodos",
     "withdrawalTime": "Menos de 24 horas según la mayoría de reseñas",
     "inactivityFee": "No cobra comisión por inactividad",
-    "ratingBreakdown": { "instrumentos": 4.0, "comisiones": 4.6, "plataformas": 4.3, "investigacion": 3.9, "movil": 4.2, "educacion": 4.0 },
+    "ratingBreakdown": {
+      "instrumentos": 4.0,
+      "comisiones": 4.6,
+      "plataformas": 4.3,
+      "investigacion": 3.9,
+      "movil": 4.2,
+      "educacion": 4.0
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en Octa?", "a": "El depósito mínimo es de $25 USD, un poco más alto que brokers como FBS o HFM pero aún accesible para traders que están empezando." },
-      { "q": "¿Octa cobra swap (interés por mantener posiciones abiertas)?", "a": "No, Octa opera con un modelo libre de swap en sus tres tipos de cuenta, lo que resulta atractivo para estrategias que mantienen posiciones abiertas por varios días." },
-      { "q": "¿Octa tiene regulación tier-1?", "a": "No. Su regulación principal es offshore, a través de la FSC de San Vicente y las Granadinas y otras licencias regionales, sin contar con una licencia de primer nivel como FCA o ASIC." },
-      { "q": "¿Qué es Octa Trader?", "a": "Es la plataforma propia del bróker, una alternativa a MT4/MT5 pensada para simplificar la experiencia de trading desde el navegador o el celular, sin necesidad de instalar software adicional." },
-      { "q": "¿Octa ofrece protección de saldo negativo?", "a": "Sí, ningún cliente puede terminar debiendo dinero al bróker, incluso en escenarios extremos de volatilidad." },
-      { "q": "¿Cuánto tarda la verificación de cuenta en Octa?", "a": "El proceso estándar toma entre 24 y 48 horas, aunque algunos usuarios han reportado demoras mayores en periodos de alta demanda, según reseñas recientes." },
-      { "q": "¿Octa tiene programa de bonos o cashback?", "a": "Sí, ofrece de forma periódica promociones de cashback y bonos de bienvenida, aunque las condiciones exactas cambian con frecuencia y conviene revisarlas directamente en el sitio oficial antes de asumir alguna." }
+      {
+        "q": "¿Cuál es el depósito mínimo en Octa?",
+        "a": "El depósito mínimo es de $25 USD, un poco más alto que brokers como FBS o HFM pero aún accesible para traders que están empezando."
+      },
+      {
+        "q": "¿Octa cobra swap (interés por mantener posiciones abiertas)?",
+        "a": "No, Octa opera con un modelo libre de swap en sus tres tipos de cuenta, lo que resulta atractivo para estrategias que mantienen posiciones abiertas por varios días."
+      },
+      {
+        "q": "¿Octa tiene regulación tier-1?",
+        "a": "No. Su regulación principal es offshore, a través de la FSC de San Vicente y las Granadinas y otras licencias regionales, sin contar con una licencia de primer nivel como FCA o ASIC."
+      },
+      {
+        "q": "¿Qué es Octa Trader?",
+        "a": "Es la plataforma propia del bróker, una alternativa a MT4/MT5 pensada para simplificar la experiencia de trading desde el navegador o el celular, sin necesidad de instalar software adicional."
+      },
+      {
+        "q": "¿Octa ofrece protección de saldo negativo?",
+        "a": "Sí, ningún cliente puede terminar debiendo dinero al bróker, incluso en escenarios extremos de volatilidad."
+      },
+      {
+        "q": "¿Cuánto tarda la verificación de cuenta en Octa?",
+        "a": "El proceso estándar toma entre 24 y 48 horas, aunque algunos usuarios han reportado demoras mayores en periodos de alta demanda, según reseñas recientes."
+      },
+      {
+        "q": "¿Octa tiene programa de bonos o cashback?",
+        "a": "Sí, ofrece de forma periódica promociones de cashback y bonos de bienvenida, aunque las condiciones exactas cambian con frecuencia y conviene revisarlas directamente en el sitio oficial antes de asumir alguna."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Cuenta MT4",
+        "spread": "desde 0.6 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      },
+      {
+        "name": "Cuenta MT5",
+        "spread": "desde 0.6 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      },
+      {
+        "name": "OctaTrader",
+        "spread": "desde 0.6 pip",
+        "comision": "Sin comisión",
+        "para": "Plataforma propia de Octa"
+      }
     ]
   },
   {
@@ -323,15 +611,63 @@
     "depositTime": "Instantáneo en la mayoría de métodos",
     "withdrawalTime": "Menos de 24 horas según la mayoría de reseñas",
     "inactivityFee": "No cobra comisión por inactividad",
-    "ratingBreakdown": { "instrumentos": 3.9, "comisiones": 4.4, "plataformas": 4.0, "investigacion": 3.6, "movil": 4.1, "educacion": 4.2 },
+    "ratingBreakdown": {
+      "instrumentos": 3.9,
+      "comisiones": 4.4,
+      "plataformas": 4.0,
+      "investigacion": 3.6,
+      "movil": 4.1,
+      "educacion": 4.2
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en FBS?", "a": "El depósito mínimo es de solo $5 USD, uno de los más bajos de esta comparativa, pensado para traders que quieren empezar a operar con muy poco capital." },
-      { "q": "¿Por qué el apalancamiento de FBS es tan alto?", "a": "FBS ofrece apalancamiento de hasta 1:3000 en algunas cuentas, disponible principalmente bajo su entidad offshore. Un apalancamiento tan alto amplifica tanto las ganancias como las pérdidas potenciales, por lo que requiere gestión de riesgo cuidadosa." },
-      { "q": "¿FBS cobra comisión por sus operaciones?", "a": "No, la cuenta estándar de FBS no cobra comisión explícita; el costo está incluido en el spread, que parte desde 0.7 pips." },
-      { "q": "¿Qué regulación tiene FBS para clientes de Latinoamérica?", "a": "La mayoría de los clientes retail de la región operan bajo la entidad regulada por la IFSC de Belice, una licencia offshore con menor nivel de supervisión que ASIC o CySEC." },
-      { "q": "¿FBS tiene aplicación móvil propia?", "a": "Sí, FBS Trader es su app propia, además de soporte completo para MT4 y MT5 en iOS y Android." },
-      { "q": "¿FBS ofrece cuenta islámica sin swap?", "a": "Sí, disponible bajo solicitud en la mayoría de sus tipos de cuenta." },
-      { "q": "¿Necesito depositar todo de una vez o puedo hacerlo en partes?", "a": "Puedes realizar múltiples depósitos pequeños sin problema; no existe un límite de número de depósitos, solo el mínimo de $5 USD por transacción según el método elegido." }
+      {
+        "q": "¿Cuál es el depósito mínimo en FBS?",
+        "a": "El depósito mínimo es de solo $5 USD, uno de los más bajos de esta comparativa, pensado para traders que quieren empezar a operar con muy poco capital."
+      },
+      {
+        "q": "¿Por qué el apalancamiento de FBS es tan alto?",
+        "a": "FBS ofrece apalancamiento de hasta 1:3000 en algunas cuentas, disponible principalmente bajo su entidad offshore. Un apalancamiento tan alto amplifica tanto las ganancias como las pérdidas potenciales, por lo que requiere gestión de riesgo cuidadosa."
+      },
+      {
+        "q": "¿FBS cobra comisión por sus operaciones?",
+        "a": "No, la cuenta estándar de FBS no cobra comisión explícita; el costo está incluido en el spread, que parte desde 0.7 pips."
+      },
+      {
+        "q": "¿Qué regulación tiene FBS para clientes de Latinoamérica?",
+        "a": "La mayoría de los clientes retail de la región operan bajo la entidad regulada por la IFSC de Belice, una licencia offshore con menor nivel de supervisión que ASIC o CySEC."
+      },
+      {
+        "q": "¿FBS tiene aplicación móvil propia?",
+        "a": "Sí, FBS Trader es su app propia, además de soporte completo para MT4 y MT5 en iOS y Android."
+      },
+      {
+        "q": "¿FBS ofrece cuenta islámica sin swap?",
+        "a": "Sí, disponible bajo solicitud en la mayoría de sus tipos de cuenta."
+      },
+      {
+        "q": "¿Necesito depositar todo de una vez o puedo hacerlo en partes?",
+        "a": "Puedes realizar múltiples depósitos pequeños sin problema; no existe un límite de número de depósitos, solo el mínimo de $5 USD por transacción según el método elegido."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Cent",
+        "spread": "desde 1.0 pip",
+        "comision": "Sin comisión",
+        "para": "Cuentas pequeñas / práctica"
+      },
+      {
+        "name": "Standard",
+        "spread": "desde 0.5 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      },
+      {
+        "name": "ECN",
+        "spread": "desde 0.0 pips",
+        "comision": "~$6 por lote (ida y vuelta)",
+        "para": "Costos bajos"
+      }
     ]
   },
   {
@@ -369,15 +705,63 @@
     "depositTime": "Instantáneo con tarjeta o e-wallet · 1-3 días hábiles por transferencia",
     "withdrawalTime": "1-3 días hábiles según el método, con demoras reportadas en periodos de alta demanda",
     "inactivityFee": "Sí, tras 90 días sin actividad en la cuenta",
-    "ratingBreakdown": { "instrumentos": 4.0, "comisiones": 4.1, "plataformas": 3.9, "investigacion": 4.3, "movil": 3.8, "educacion": 4.6 },
+    "ratingBreakdown": {
+      "instrumentos": 4.0,
+      "comisiones": 4.1,
+      "plataformas": 3.9,
+      "investigacion": 4.3,
+      "movil": 3.8,
+      "educacion": 4.6
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en XM?", "a": "El depósito mínimo es de $5 USD, similar a FBS, pensado para que cualquier trader pueda abrir una cuenta con muy poco capital inicial." },
-      { "q": "¿Por qué XM tiene reseñas tan polarizadas?", "a": "El 46% de sus reseñas en Trustpilot son de 5 estrellas, principalmente por su ejecución y programa educativo, pero un 31% son de 1 estrella, sobre todo por demoras en retiros y disputas relacionadas con bonos promocionales. Conviene leer ambos extremos antes de depositar montos grandes." },
-      { "q": "¿XM cobra comisión por inactividad?", "a": "Sí, aplica un cargo después de 90 días sin actividad en la cuenta, uno de los periodos más cortos de esta comparativa." },
-      { "q": "¿XM ofrece educación para principiantes?", "a": "Sí, es uno de sus puntos más fuertes: cuenta con webinars regulares, cursos estructurados y eventos presenciales en varios países de Latinoamérica, algo que no todos los brokers de esta lista ofrecen." },
-      { "q": "¿XM ofrece protección de saldo negativo?", "a": "Sí, para todos los clientes retail, evitando que termines debiendo dinero al bróker en un movimiento extremo del mercado." },
-      { "q": "¿Qué pasa con los bonos de XM si quiero retirar dinero?", "a": "Los bonos promocionales suelen tener condiciones de volumen mínimo operado antes de poder retirarlos junto con las ganancias asociadas — es precisamente el punto que genera más quejas en las reseñas negativas, así que conviene leer los términos con cuidado antes de aceptar un bono." },
-      { "q": "¿XM tiene aplicación móvil propia?", "a": "Sí, XM App complementa a las aplicaciones estándar de MT4 y MT5, con funciones adicionales de gestión de cuenta y acceso a contenido educativo." }
+      {
+        "q": "¿Cuál es el depósito mínimo en XM?",
+        "a": "El depósito mínimo es de $5 USD, similar a FBS, pensado para que cualquier trader pueda abrir una cuenta con muy poco capital inicial."
+      },
+      {
+        "q": "¿Por qué XM tiene reseñas tan polarizadas?",
+        "a": "El 46% de sus reseñas en Trustpilot son de 5 estrellas, principalmente por su ejecución y programa educativo, pero un 31% son de 1 estrella, sobre todo por demoras en retiros y disputas relacionadas con bonos promocionales. Conviene leer ambos extremos antes de depositar montos grandes."
+      },
+      {
+        "q": "¿XM cobra comisión por inactividad?",
+        "a": "Sí, aplica un cargo después de 90 días sin actividad en la cuenta, uno de los periodos más cortos de esta comparativa."
+      },
+      {
+        "q": "¿XM ofrece educación para principiantes?",
+        "a": "Sí, es uno de sus puntos más fuertes: cuenta con webinars regulares, cursos estructurados y eventos presenciales en varios países de Latinoamérica, algo que no todos los brokers de esta lista ofrecen."
+      },
+      {
+        "q": "¿XM ofrece protección de saldo negativo?",
+        "a": "Sí, para todos los clientes retail, evitando que termines debiendo dinero al bróker en un movimiento extremo del mercado."
+      },
+      {
+        "q": "¿Qué pasa con los bonos de XM si quiero retirar dinero?",
+        "a": "Los bonos promocionales suelen tener condiciones de volumen mínimo operado antes de poder retirarlos junto con las ganancias asociadas — es precisamente el punto que genera más quejas en las reseñas negativas, así que conviene leer los términos con cuidado antes de aceptar un bono."
+      },
+      {
+        "q": "¿XM tiene aplicación móvil propia?",
+        "a": "Sí, XM App complementa a las aplicaciones estándar de MT4 y MT5, con funciones adicionales de gestión de cuenta y acceso a contenido educativo."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Micro",
+        "spread": "desde 1.0 pip",
+        "comision": "Sin comisión",
+        "para": "Cuentas pequeñas"
+      },
+      {
+        "name": "Standard",
+        "spread": "desde 1.0 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      },
+      {
+        "name": "XM Ultra Low",
+        "spread": "desde 0.6 pip",
+        "comision": "Sin comisión",
+        "para": "Menor costo sin comisión"
+      }
     ]
   },
   {
@@ -415,15 +799,69 @@
     "depositTime": "Instantáneo en la mayoría de métodos",
     "withdrawalTime": "1-3 días hábiles, con quejas puntuales de demoras mayores",
     "inactivityFee": "Sí, tras 180 días sin actividad en la cuenta",
-    "ratingBreakdown": { "instrumentos": 3.7, "comisiones": 4.2, "plataformas": 3.3, "investigacion": 3.0, "movil": 3.4, "educacion": 3.2 },
+    "ratingBreakdown": {
+      "instrumentos": 3.7,
+      "comisiones": 4.2,
+      "plataformas": 3.3,
+      "investigacion": 3.0,
+      "movil": 3.4,
+      "educacion": 3.2
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en RoboForex?", "a": "El depósito mínimo es de $10 USD, accesible, aunque conviene revisar con cuidado las reseñas de usuarios antes de depositar montos considerables dado el rating más bajo de esta comparativa." },
-      { "q": "¿Por qué el rating de RoboForex en Trustpilot es tan bajo?", "a": "Con 2.6/5, es el más bajo de esta lista. Las quejas más recurrentes mencionan estabilidad de la plataforma en momentos de alta volatilidad, demoras en retiros y diferencias entre el spread anunciado y el ejecutado." },
-      { "q": "¿RoboForex tiene regulación tier-1?", "a": "No. Su regulación principal proviene de la FSC de Belice, considerada una licencia offshore de menor nivel de supervisión frente a reguladores como la FCA, ASIC o CySEC." },
-      { "q": "¿Qué diferencia hay entre las cuentas Prime, ECN y Pro?", "a": "Prime y ECN ofrecen spreads desde 0.0 pips bajo un modelo de ejecución de mercado con comisión aparte, mientras que la cuenta Pro opera sin comisión explícita pero con spreads más amplios, desde 1.3 pips." },
-      { "q": "¿RoboForex ofrece protección de saldo negativo?", "a": "Sí, según su política oficial, aunque conviene verificar las condiciones vigentes dado que la regulación offshore ofrece menos garantías de cumplimiento que un regulador tier-1." },
-      { "q": "¿RoboForex tiene aplicación móvil propia?", "a": "Opera principalmente a través de las apps estándar de MT4 y MT5; no cuenta con una aplicación propia diferenciada como otros brokers de esta lista." },
-      { "q": "¿Cuánto tarda la verificación de cuenta en RoboForex?", "a": "El proceso estándar toma entre 1 y 3 días hábiles, aunque varios usuarios reportan demoras adicionales en periodos de alta demanda, consistente con el resto de quejas sobre tiempos de respuesta." }
+      {
+        "q": "¿Cuál es el depósito mínimo en RoboForex?",
+        "a": "El depósito mínimo es de $10 USD, accesible, aunque conviene revisar con cuidado las reseñas de usuarios antes de depositar montos considerables dado el rating más bajo de esta comparativa."
+      },
+      {
+        "q": "¿Por qué el rating de RoboForex en Trustpilot es tan bajo?",
+        "a": "Con 2.6/5, es el más bajo de esta lista. Las quejas más recurrentes mencionan estabilidad de la plataforma en momentos de alta volatilidad, demoras en retiros y diferencias entre el spread anunciado y el ejecutado."
+      },
+      {
+        "q": "¿RoboForex tiene regulación tier-1?",
+        "a": "No. Su regulación principal proviene de la FSC de Belice, considerada una licencia offshore de menor nivel de supervisión frente a reguladores como la FCA, ASIC o CySEC."
+      },
+      {
+        "q": "¿Qué diferencia hay entre las cuentas Prime, ECN y Pro?",
+        "a": "Prime y ECN ofrecen spreads desde 0.0 pips bajo un modelo de ejecución de mercado con comisión aparte, mientras que la cuenta Pro opera sin comisión explícita pero con spreads más amplios, desde 1.3 pips."
+      },
+      {
+        "q": "¿RoboForex ofrece protección de saldo negativo?",
+        "a": "Sí, según su política oficial, aunque conviene verificar las condiciones vigentes dado que la regulación offshore ofrece menos garantías de cumplimiento que un regulador tier-1."
+      },
+      {
+        "q": "¿RoboForex tiene aplicación móvil propia?",
+        "a": "Opera principalmente a través de las apps estándar de MT4 y MT5; no cuenta con una aplicación propia diferenciada como otros brokers de esta lista."
+      },
+      {
+        "q": "¿Cuánto tarda la verificación de cuenta en RoboForex?",
+        "a": "El proceso estándar toma entre 1 y 3 días hábiles, aunque varios usuarios reportan demoras adicionales en periodos de alta demanda, consistente con el resto de quejas sobre tiempos de respuesta."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "ProCent",
+        "spread": "desde 1.3 pip",
+        "comision": "Sin comisión",
+        "para": "Cuentas pequeñas / práctica"
+      },
+      {
+        "name": "Pro",
+        "spread": "desde 1.3 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      },
+      {
+        "name": "ECN",
+        "spread": "desde 0.0 pips",
+        "comision": "desde $2 por lado / lote",
+        "para": "Costos bajos"
+      },
+      {
+        "name": "Prime",
+        "spread": "desde 0.0 pips",
+        "comision": "desde $2.5 por lado",
+        "para": "Ejecución premium"
+      }
     ]
   },
   {
@@ -462,15 +900,292 @@
     "depositTime": "Instantáneo con tarjeta o e-wallet · 1-3 días hábiles por transferencia",
     "withdrawalTime": "1-3 días hábiles, con quejas puntuales de demoras mayores",
     "inactivityFee": "Sí, tras 6 meses sin actividad en la cuenta",
-    "ratingBreakdown": { "instrumentos": 3.8, "comisiones": 4.0, "plataformas": 3.5, "investigacion": 3.4, "movil": 3.6, "educacion": 3.9 },
+    "ratingBreakdown": {
+      "instrumentos": 3.8,
+      "comisiones": 4.0,
+      "plataformas": 3.5,
+      "investigacion": 3.4,
+      "movil": 3.6,
+      "educacion": 3.9
+    },
     "faq": [
-      { "q": "¿Cuál es el depósito mínimo en FXTM?", "a": "Varía según el tipo de cuenta, con opciones desde $10 USD, aunque las condiciones exactas (spread, comisión) cambian de forma notable entre cuentas Standard, Pro y Cent." },
-      { "q": "¿Por qué el rating de FXTM en Trustpilot es tan bajo pese a tener licencia FCA?", "a": "Contar con una licencia tier-1 no garantiza automáticamente una buena experiencia de usuario. Las quejas más frecuentes en FXTM se refieren a tiempos de respuesta del soporte y demoras en el procesamiento de retiros, no a la validez de su regulación." },
-      { "q": "¿FXTM es un broker ECN?", "a": "Su cuenta Pro opera bajo un modelo de ejecución de mercado tipo ECN con comisión aparte, mientras que la cuenta Standard funciona bajo un modelo STP con el costo incluido en el spread." },
-      { "q": "¿Cuántos clientes tiene FXTM a nivel global?", "a": "FXTM reporta más de un millón de clientes registrados en más de 150 países, lo que refleja una trayectoria y escala considerables dentro de la industria." },
-      { "q": "¿FXTM ofrece protección de saldo negativo?", "a": "Sí, para clientes bajo sus entidades reguladas, garantizando que no puedas perder más dinero del que depositaste." },
-      { "q": "¿FXTM tiene aplicación móvil propia?", "a": "Sí, FXTM App complementa a MT4 y MT5, con funciones de gestión de cuenta, depósitos y retiros desde el celular." },
-      { "q": "¿FXTM ofrece cuenta islámica sin swap?", "a": "Sí, disponible bajo solicitud en la mayoría de sus tipos de cuenta, para clientes que no pueden pagar o recibir interés por motivos religiosos." }
+      {
+        "q": "¿Cuál es el depósito mínimo en FXTM?",
+        "a": "Varía según el tipo de cuenta, con opciones desde $10 USD, aunque las condiciones exactas (spread, comisión) cambian de forma notable entre cuentas Standard, Pro y Cent."
+      },
+      {
+        "q": "¿Por qué el rating de FXTM en Trustpilot es tan bajo pese a tener licencia FCA?",
+        "a": "Contar con una licencia tier-1 no garantiza automáticamente una buena experiencia de usuario. Las quejas más frecuentes en FXTM se refieren a tiempos de respuesta del soporte y demoras en el procesamiento de retiros, no a la validez de su regulación."
+      },
+      {
+        "q": "¿FXTM es un broker ECN?",
+        "a": "Su cuenta Pro opera bajo un modelo de ejecución de mercado tipo ECN con comisión aparte, mientras que la cuenta Standard funciona bajo un modelo STP con el costo incluido en el spread."
+      },
+      {
+        "q": "¿Cuántos clientes tiene FXTM a nivel global?",
+        "a": "FXTM reporta más de un millón de clientes registrados en más de 150 países, lo que refleja una trayectoria y escala considerables dentro de la industria."
+      },
+      {
+        "q": "¿FXTM ofrece protección de saldo negativo?",
+        "a": "Sí, para clientes bajo sus entidades reguladas, garantizando que no puedas perder más dinero del que depositaste."
+      },
+      {
+        "q": "¿FXTM tiene aplicación móvil propia?",
+        "a": "Sí, FXTM App complementa a MT4 y MT5, con funciones de gestión de cuenta, depósitos y retiros desde el celular."
+      },
+      {
+        "q": "¿FXTM ofrece cuenta islámica sin swap?",
+        "a": "Sí, disponible bajo solicitud en la mayoría de sus tipos de cuenta, para clientes que no pueden pagar o recibir interés por motivos religiosos."
+      }
+    ],
+    "accountTypes": [
+      {
+        "name": "Standard",
+        "spread": "desde 1.5 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general"
+      },
+      {
+        "name": "Cent",
+        "spread": "desde 1.5 pip",
+        "comision": "Sin comisión",
+        "para": "Cuentas pequeñas"
+      },
+      {
+        "name": "ECN",
+        "spread": "desde 0.0 pips",
+        "comision": "desde $2 por lado / lote",
+        "para": "Costos bajos"
+      }
+    ]
+  },
+  {
+    "slug": "vantage",
+    "rank": 11,
+    "name": "Vantage",
+    "featured": false,
+    "brandColor": "#0aa5e8",
+    "regulation": "ASIC · FCA · CIMA",
+    "minDeposit": "Desde $50 USD",
+    "spreadsFrom": "Desde 0.0 pips + comisión (cuenta Raw ECN)",
+    "platforms": "MT4 · MT5 · TradingView · ProTrader",
+    "trustpilotRating": "4.5",
+    "trustpilotReviews": "10,000+",
+    "trustpilotLabel": "Excelente",
+    "resumen": "Broker australiano con más de una década en el mercado, spreads ECN competitivos y una app propia sólida; buena opción de nivel intermedio.",
+    "descripcion": "Vantage (antes Vantage FX) opera desde 2009 y combina regulación en Australia (ASIC) y otras jurisdicciones con ejecución ECN, apalancamiento alto y depósito mínimo accesible. Ofrece MT4, MT5, TradingView y su propia ProTrader, con una gama amplia de instrumentos entre forex, índices, materias primas y acciones.",
+    "pros": [
+      "Regulado por ASIC (Australia), un regulador de primer nivel",
+      "Spreads Raw desde 0.0 pips con comisión competitiva",
+      "Depósito mínimo bajo (desde $50)",
+      "Integración con TradingView y app propia ProTrader",
+      "Buena reputación en Trustpilot (miles de reseñas)"
+    ],
+    "cons": [
+      "No cotiza en bolsa ni es banco",
+      "Parte de la entidad opera bajo jurisdicciones offshore según el país del cliente",
+      "La calidad del soporte puede variar según la región"
+    ],
+    "officialUrl": "https://www.vantagemarkets.com/",
+    "affiliateUrl": "",
+    "founded": "2009",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "ECN / STP (Market Execution)",
+    "leverage": "Hasta 1:500 (según jurisdicción)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta, transferencia bancaria, Skrill, Neteller, criptomonedas",
+    "depositTime": "Instantáneo con tarjeta/e-wallet · 1-3 días por transferencia",
+    "withdrawalTime": "1-3 días hábiles según método",
+    "inactivityFee": "Puede aplicar tras varios meses de inactividad",
+    "ratingBreakdown": {
+      "instrumentos": 4.3,
+      "comisiones": 4.5,
+      "plataformas": 4.5,
+      "investigacion": 4.0,
+      "movil": 4.4,
+      "educacion": 3.9
+    },
+    "accountTypes": [
+      {
+        "name": "Standard STP",
+        "spread": "desde 1.0 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general y principiantes"
+      },
+      {
+        "name": "Raw ECN",
+        "spread": "desde 0.0 pips",
+        "comision": "~$3.00 por lado / lote",
+        "para": "Costos bajos y scalping"
+      },
+      {
+        "name": "Pro ECN",
+        "spread": "desde 0.0 pips",
+        "comision": "~$1.50 por lado / lote",
+        "para": "Alto volumen"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Vantage está regulado?",
+        "a": "Sí, Vantage opera bajo la regulación de ASIC en Australia, entre otras. Verifica siempre bajo qué entidad y jurisdicción abres tu cuenta según tu país."
+      },
+      {
+        "q": "¿Cuál es el depósito mínimo en Vantage?",
+        "a": "Puedes empezar desde $50 USD, uno de los mínimos más accesibles entre los brokers regulados de esta lista."
+      }
+    ]
+  },
+  {
+    "slug": "tickmill",
+    "rank": 12,
+    "name": "Tickmill",
+    "featured": false,
+    "brandColor": "#e8532b",
+    "regulation": "FCA · CySEC · FSA Seychelles",
+    "minDeposit": "Desde $100 USD",
+    "spreadsFrom": "Desde 0.0 pips + comisión (cuenta Raw/Pro)",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "4.0",
+    "trustpilotReviews": "900+",
+    "trustpilotLabel": "Muy bueno",
+    "resumen": "Broker regulado por la FCA británica con comisiones bajas y buena ejecución; enfoque simple y directo, ideal para quien opera forex y metales con costos ajustados.",
+    "descripcion": "Tickmill opera desde 2014 y está regulado por la FCA (Reino Unido) y CySEC (Chipre), además de una entidad offshore para otras regiones. Se especializa en forex, metales, índices y bonos con un modelo de comisiones bajas y ejecución rápida en MT4 y MT5, orientado a traders que valoran el costo por operación.",
+    "pros": [
+      "Regulado por la FCA (Reino Unido) y CySEC (Chipre)",
+      "Comisiones bajas en la cuenta Pro/Raw",
+      "Ejecución rápida y estable en MT4/MT5",
+      "Depósito mínimo accesible ($100)"
+    ],
+    "cons": [
+      "Gama de instrumentos más limitada que otros brokers (menos acciones/cripto)",
+      "Menos reseñas en Trustpilot que los líderes de la lista",
+      "Parte de la operación se ofrece bajo una entidad offshore según el país"
+    ],
+    "officialUrl": "https://www.tickmill.com/",
+    "affiliateUrl": "",
+    "founded": "2014",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "ECN / STP (Market Execution)",
+    "leverage": "Hasta 1:500 (según jurisdicción)",
+    "demoAccount": "Sí, ilimitada y sin costo",
+    "depositMethods": "Tarjeta, transferencia bancaria, Skrill, Neteller",
+    "depositTime": "Instantáneo con tarjeta/e-wallet · 1-3 días por transferencia",
+    "withdrawalTime": "1-3 días hábiles según método",
+    "inactivityFee": "No cobra comisión por inactividad",
+    "ratingBreakdown": {
+      "instrumentos": 3.8,
+      "comisiones": 4.6,
+      "plataformas": 4.2,
+      "investigacion": 3.9,
+      "movil": 4.0,
+      "educacion": 3.8
+    },
+    "accountTypes": [
+      {
+        "name": "Classic",
+        "spread": "desde 1.6 pip",
+        "comision": "Sin comisión",
+        "para": "Uso general sin comisión"
+      },
+      {
+        "name": "Pro",
+        "spread": "desde 0.0 pips",
+        "comision": "~$3.00 por lado / lote",
+        "para": "Costos bajos y scalping"
+      },
+      {
+        "name": "VIP",
+        "spread": "desde 0.0 pips",
+        "comision": "~$1.00 por lado / lote",
+        "para": "Alto volumen (saldo elevado)"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Tickmill está regulado por la FCA?",
+        "a": "Sí. Tickmill UK está regulado por la Financial Conduct Authority del Reino Unido, uno de los reguladores más estrictos. Otras regiones pueden operar bajo CySEC o una entidad offshore."
+      }
+    ]
+  },
+  {
+    "slug": "adn-broker",
+    "partner": true,
+    "partnerLabel": "Aliado destacado",
+    "name": "ADN Broker",
+    "featured": false,
+    "brandColor": "#12b3c7",
+    "regulation": "Registrado en San Vicente y las Granadinas (offshore, sin regulación de primer nivel)",
+    "minDeposit": "Desde $500 USD (en USDT/BTC)",
+    "spreadsFrom": "Spreads de mercado en MT5 (variables según instrumento)",
+    "platforms": "MetaTrader 5 (MT5)",
+    "trustpilotRating": null,
+    "trustpilotReviews": null,
+    "trustpilotLabel": null,
+    "resumen": "Broker aliado de AR4 con su modelo ADNX10 de cuenta fondeada: acceso inmediato a capital multiplicado, 100% de las ganancias para el trader y retiros en cripto. Broker joven y offshore: úsalo con cabeza.",
+    "descripcion": "ADN Broker ofrece su producto ADNX10, una cuenta fondeada/multiplicada que va desde $500 hasta $100,000 USD de tamaño, con acceso inmediato (sin fase de evaluación), 100% de las ganancias para el trader y un límite de pérdida (drawdown) del 10%. Opera en MetaTrader 5, con depósitos y retiros en criptomonedas (USDT/BTC). Es un broker joven y registrado en jurisdicción offshore, por lo que ofrece condiciones atractivas pero con menos garantías regulatorias que los brokers de primer nivel de esta lista.",
+    "pros": [
+      "Acceso inmediato a capital fondeado (sin fase de evaluación previa)",
+      "100% de las ganancias para el trader",
+      "Retiros el mismo día tras cerrar posiciones (en cripto)",
+      "Permite scalping, noticias, robots y copytrading",
+      "Soporte personalizado 24/5",
+      "Barrera de entrada baja frente a mesas de fondeo tradicionales"
+    ],
+    "cons": [
+      "NO está regulado por un ente de primer nivel: registrado en San Vicente y las Granadinas (offshore)",
+      "Reseñas divididas en Trustpilot: algunos usuarios reportan demoras o problemas de retiro",
+      "Solo acepta depósitos y retiros en criptomonedas (USDT/BTC)",
+      "No ofrece soporte telefónico",
+      "Broker joven, con menor historial público que los líderes regulados"
+    ],
+    "officialUrl": "https://adnbroker-latam.com/adnx10/",
+    "affiliateUrl": "https://app.adnbroker.com/user-auth/register?referral_id=5167",
+    "founded": null,
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "Cuenta fondeada / multiplicada (modelo ADNX10)",
+    "leverage": "1:100",
+    "demoAccount": "Consultar en la plataforma",
+    "depositMethods": "Criptomonedas: USDT y BTC",
+    "depositTime": "Según confirmación de red cripto",
+    "withdrawalTime": "Mismo día tras cerrar posiciones · 24-72 h hábiles (USDT TRC20)",
+    "inactivityFee": "Consultar condiciones",
+    "accountTypes": [
+      {
+        "name": "ADNX10 $500",
+        "spread": "Mercado (MT5)",
+        "comision": "Costo ~10% ($50)",
+        "para": "Empezar con capital fondeado pequeño"
+      },
+      {
+        "name": "ADNX10 $5,000",
+        "spread": "Mercado (MT5)",
+        "comision": "Costo ~10% ($500)",
+        "para": "Nivel intermedio"
+      },
+      {
+        "name": "ADNX10 $100,000",
+        "spread": "Mercado (MT5)",
+        "comision": "Costo ~10% ($10,000)",
+        "para": "Máximo capital fondeado"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿ADN Broker está regulado?",
+        "a": "No por un regulador de primer nivel. Está registrado en San Vicente y las Granadinas, una jurisdicción offshore. Esto implica menos garantías que un broker regulado por ASIC, FCA o CySEC: opera con capital que puedas permitirte arriesgar y prueba primero montos pequeños."
+      },
+      {
+        "q": "¿Cómo funciona el modelo ADNX10?",
+        "a": "Es una cuenta fondeada/multiplicada: accedes a un tamaño de cuenta (de $500 a $100,000) pagando aproximadamente un 10% de su valor, sin fase de evaluación, con un límite de pérdida del 10% y quedándote con el 100% de las ganancias. Los movimientos de dinero son en criptomonedas."
+      },
+      {
+        "q": "¿Qué riesgos debo tener en cuenta?",
+        "a": "Al ser offshore y con reseñas divididas sobre sus retiros, el principal riesgo es operativo: prueba retiros pequeños al inicio, guarda comprobantes y no deposites más de lo que estés dispuesto a arriesgar."
+      }
     ]
   }
 ]

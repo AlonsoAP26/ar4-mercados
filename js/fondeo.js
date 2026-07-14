@@ -4,12 +4,37 @@ async function loadFondeo() {
   return res.json();
 }
 
+function fondeoReputation(f) {
+  const r = parseFloat(f.trustpilotRating);
+  if (Number.isFinite(r)) return `⭐ ${f.trustpilotRating}/5 <span>Trustpilot · ${f.trustpilotReviews} reseñas${f.trustpilotLabel ? ' · "' + f.trustpilotLabel + '"' : ''}</span>`;
+  return `<span style="color:var(--text-mid);">Bróker nuevo · sin calificación pública verificada aún</span>`;
+}
+
+function fondeoPartnerCardHTML(f) {
+  return `
+    <article class="broker-card broker-partner-card" style="border-color:${f.brandColor}88;">
+      <div class="broker-card-top">
+        <div class="broker-rank broker-partner-badge">★ ${f.partnerLabel || 'Aliado destacado'}</div>
+        <span class="badge-premium" style="background:linear-gradient(135deg,var(--crimson-bright),var(--crimson));">Patrocinado</span>
+      </div>
+      <h3>${f.name}</h3>
+      <div class="stars">${fondeoReputation(f)}</div>
+      <p style="color:var(--text-mid); font-size:0.85rem; margin-bottom:14px;">${f.resumen}</p>
+      <ul class="broker-facts" style="margin-bottom:14px;">
+        <li>Tamaños de cuenta <strong>${f.accountSizes}</strong></li>
+        <li>Split de ganancia <strong>${f.profitSplit}</strong></li>
+      </ul>
+      <a href="fondeo-detail.html?slug=${encodeURIComponent(f.slug)}" class="btn btn-outline btn-block">Ver detalles →</a>
+    </article>
+  `;
+}
+
 function fondeoRankCardHTML(f) {
   return `
     <article class="broker-card">
       <div class="broker-rank">#${f.rank}</div>
       <h3>${f.name}</h3>
-      <div class="stars">⭐ ${f.trustpilotRating}/5 <span>Trustpilot · ${f.trustpilotReviews} reseñas</span></div>
+      <div class="stars">${fondeoReputation(f)}</div>
       <p style="color:var(--text-mid); font-size:0.85rem; margin-bottom:14px;">${f.resumen}</p>
       <ul class="broker-facts" style="margin-bottom:14px;">
         <li>Costo evaluación <strong>${f.evaluationCost}</strong></li>
@@ -25,8 +50,9 @@ async function initFondeoListing() {
   if (!grid) return;
   try {
     const firmas = await loadFondeo();
-    firmas.sort((a, b) => a.rank - b.rank);
-    grid.innerHTML = firmas.map(fondeoRankCardHTML).join('');
+    const partners = firmas.filter((f) => f.partner);
+    const ranked = firmas.filter((f) => !f.partner).sort((a, b) => a.rank - b.rank);
+    grid.innerHTML = partners.map(fondeoPartnerCardHTML).join('') + ranked.map(fondeoRankCardHTML).join('');
   } catch (e) {
     grid.innerHTML = '<p class="footer-text">No se pudieron cargar las cuentas de fondeo.</p>';
   }
@@ -63,11 +89,11 @@ async function initFondeoDetail() {
   if (heroEl) {
     heroEl.innerHTML = `
       <div class="featured-broker" style="border-color:${f.brandColor}55;">
-        <div class="featured-ribbon" style="background:linear-gradient(135deg, ${f.brandColor}, ${f.brandColor}cc); color:#0a0f1c;">#${f.rank} EN NUESTRO RANKING</div>
+        <div class="featured-ribbon" style="background:linear-gradient(135deg, ${f.brandColor}, ${f.brandColor}cc); color:#0a0f1c;">${f.partner ? '★ ' + (f.partnerLabel || 'ALIADO DESTACADO').toUpperCase() : '#' + f.rank + ' EN NUESTRO RANKING'}</div>
         <div class="featured-grid">
           <div class="featured-main">
             <div class="broker-logo" style="color:${f.brandColor};font-size:2.1rem;">${f.name}</div>
-            <div class="stars" style="margin:12px 0 8px;">⭐ ${f.trustpilotRating}/5 <span>Trustpilot · ${f.trustpilotReviews} reseñas · "${f.trustpilotLabel}"</span></div>
+            <div class="stars" style="margin:12px 0 8px;">${fondeoReputation(f)}</div>
             <p class="featured-desc">${f.descripcion}</p>
             <ul class="featured-facts">
               <li><span>Costo evaluación</span><strong>${f.evaluationCost}</strong></li>
@@ -99,13 +125,21 @@ async function initFondeoDetail() {
   const deepDiveEl = document.getElementById('fondeoDeepDive');
   if (deepDiveEl) {
     deepDiveEl.innerHTML = `
+      ${f.partner ? `
+      <div class="idea-warning" style="margin-top:28px;border-color:rgba(225,58,75,0.45);">
+        <span class="icon">⚠️</span>
+        <div>
+          <strong>Importante: bróker offshore, sin regulación de primer nivel</strong>
+          <p>${f.name} está registrado en San Vicente y las Granadinas (offshore) y no cuenta con regulación de ASIC, FCA o CySEC. Sus reseñas públicas están divididas y algunos usuarios reportan demoras en los retiros. Es un aliado de AR4 con condiciones atractivas, pero opéralo con criterio: prueba retiros pequeños al inicio y no comprometas más de lo que puedas permitirte arriesgar.</p>
+        </div>
+      </div>` : `
       <div class="idea-warning" style="margin-top:28px;">
         <span class="icon">⚠️</span>
         <div>
           <strong>Aviso de riesgo</strong>
           <p>Las cuentas de fondeo (prop firms) no son una inversión ni una garantía de ingresos. La gran mayoría de los traders no aprueba la evaluación, y el costo del challenge se pierde si no se completa. Opera solo con dinero que puedas permitirte destinar a intentar la evaluación.</p>
         </div>
-      </div>
+      </div>`}
 
       <div class="section-head" style="margin-top:8px;"><h2>Reglas y datos clave de ${f.name}</h2></div>
       <ul class="featured-facts facts-clean" style="margin-bottom:28px;">
@@ -129,7 +163,7 @@ async function initFondeoDetail() {
 
   const relatedGrid = document.getElementById('relatedFondeoGrid');
   if (relatedGrid) {
-    const related = firmas.filter(x => x.slug !== slug).sort((a, x) => a.rank - x.rank);
+    const related = firmas.filter(x => x.slug !== slug && !x.partner).sort((a, x) => a.rank - x.rank);
     relatedGrid.innerHTML = related.map(fondeoRankCardHTML).join('');
   }
 }
@@ -150,7 +184,7 @@ function renderFondeoCompareTable(firmas, filter) {
   const wrap = document.getElementById('fondeoCompareTable');
   if (!wrap) return;
 
-  const filtered = firmas.filter((f) => fondeoMatchesPhaseFilter(f, filter));
+  const filtered = firmas.filter((f) => !f.partner && fondeoMatchesPhaseFilter(f, filter));
   if (!filtered.length) {
     wrap.innerHTML = '<p class="footer-text">Ninguna firma coincide con ese filtro.</p>';
     return;
