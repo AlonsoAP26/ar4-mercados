@@ -228,6 +228,8 @@ async function buildDossier(tvSymbol) {
   return {
     symbol: tvSymbol,
     nombre: TV_NAMES[tvSymbol] || tvSymbol,
+    // Lo guarda el panel de indicadores del sitio para refrescar el precio en vivo.
+    yahooSymbol: ysym,
     fuente: 'Yahoo Finance (' + ysym + ')',
     fechaUltimaVela: new Date(last.time * 1000).toISOString().slice(0, 10),
     precio: fmt(price),

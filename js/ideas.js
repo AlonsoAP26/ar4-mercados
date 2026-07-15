@@ -306,7 +306,19 @@ function initIdeaChart(idea) {
   renderTVMiniChart(chartContainer, idea.symbol);
 
   const techContainer = document.getElementById('ideaTechnical');
-  if (techContainer) renderTechnicalAnalysis(techContainer, idea.symbol);
+  // Panel propio con los indicadores reales que el generador guardo en el
+  // analisis: no depende de ningun widget externo y no puede quedarse sin
+  // datos. El widget de TradingView queda de respaldo para los analisis
+  // antiguos, que no traen marketData.
+  const pintaIndicadores = (sym) => {
+    if (!techContainer) return;
+    if (idea.marketData && window.AR4_renderIndicators && sym === idea.symbol) {
+      window.AR4_renderIndicators(techContainer, idea.marketData);
+    } else {
+      renderTechnicalAnalysis(techContainer, sym);
+    }
+  };
+  pintaIndicadores(idea.symbol);
 
   if (idea.symbol2) {
     wrap.querySelectorAll('.idea-chart-tabs button').forEach(btn => {
@@ -314,7 +326,7 @@ function initIdeaChart(idea) {
         wrap.querySelectorAll('.idea-chart-tabs button').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         renderTVMiniChart(chartContainer, btn.dataset.symbol);
-        if (techContainer) renderTechnicalAnalysis(techContainer, btn.dataset.symbol);
+        pintaIndicadores(btn.dataset.symbol);
       });
     });
   }

@@ -17,7 +17,7 @@
 <meta name="description" id="pageDesc" content="Análisis de mercado — AR4 Mercados">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=11">
+<link rel="stylesheet" href="css/style.css?v=12">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
 <script src="js/_supabase-client.js"></script>
@@ -97,12 +97,12 @@
     <div id="ideaChart"></div>
 
     <div class="section-head" style="margin-top:8px;margin-bottom:14px;">
-      <h2 style="font-size:1.2rem;">Indicadores técnicos en tiempo real</h2>
-      <span class="badge-live">DATOS DE TRADINGVIEW</span>
+      <h2 style="font-size:1.2rem;">Indicadores técnicos</h2>
+      <span class="badge-live">DATOS REALES VERIFICABLES</span>
     </div>
-    <div class="idea-chart-wrap" style="margin-bottom:28px;">
-      <div class="tradingview-widget-container" id="ideaTechnical"></div>
-      <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Resumen algorítmico de osciladores y medias móviles calculado por TradingView, no es una recomendación de AR4 Mercados. Cambia constantemente según el mercado.</p>
+    <div style="margin-bottom:28px;">
+      <div id="ideaTechnical"></div>
+      <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Indicadores calculados por AR4 Mercados sobre el histórico de precios de Yahoo Finance, con las mismas cifras que usa el análisis de arriba. No son una recomendación: describen lo que el precio ha hecho, no lo que hará.</p>
     </div>
 
     <article class="article-body" id="ideaBody">
@@ -178,7 +178,8 @@
 <script src="js/comments.js?v=6"></script>
 <script src="js/idea-social.js?v=1"></script>
 <script src="js/calendar.js?v=5"></script>
-<script src="js/ideas.js?v=8"></script>
+<script src="js/indicators-panel.js?v=1"></script>
+<script src="js/ideas.js?v=9"></script>
 <script src="js/chatbot.js?v=6"></script>
 <script src="js/upsell.js"></script>
 <script src="js/voice-narration.js?v=2"></script>
