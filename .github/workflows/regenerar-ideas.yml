@@ -1,0 +1,77 @@
+name: Regenerar ideas con datos reales (manual)
+
+# Repuebla data/ideas.json con analisis generados por el pipeline nuevo: cada
+# uno trae precio, RSI, medias, soportes y resistencias REALES de Yahoo, y
+# guarda su marketData para poder auditarlo. Se ejecuta a mano cuando hace
+# falta; el contenido del dia a dia lo publica auto-publish-diario.yml.
+#
+# Un solo commit al final = un solo deploy, cueste 1 idea o 10.
+
+on:
+  workflow_dispatch:
+    inputs:
+      cantidad:
+        description: 'Cuantos analisis generar (cada uno usa un instrumento distinto)'
+        required: true
+        default: '8'
+
+concurrency:
+  group: regenerar-ideas
+  cancel-in-progress: false
+
+jobs:
+  regenerar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar analisis con datos reales
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CANTIDAD: ${{ github.event.inputs.cantidad }}
+        run: |
+          ok=0
+          fallos=0
+          for i in $(seq 1 "$CANTIDAD"); do
+            echo "──────── Analisis $i de $CANTIDAD ────────"
+            if node scripts/generate-idea.js; then
+              ok=$((ok + 1))
+            else
+              fallos=$((fallos + 1))
+              echo "::warning::El analisis $i fallo; se continua con el resto."
+            fi
+            sleep 2
+          done
+          echo "Generados: $ok | Fallidos: $fallos"
+          if [ "$ok" -eq 0 ]; then
+            echo "::error::No se genero ningun analisis."
+            exit 1
+          fi
+
+      - name: Commit y push unico
+        if: always()
+        run: |
+          git config user.name "AR4 Mercados Bot"
+          git config user.email "bot@ar4mercados.local"
+          git add data/ideas.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios que publicar."
+            exit 0
+          fi
+          git commit -m "Regenerar analisis de Ideas con datos de mercado reales"
+          for intento in 1 2 3; do
+            if git pull --rebase --autostash origin master && git push; then
+              exit 0
+            fi
+            echo "Push fallido, reintento $intento..."
+            sleep 5
+          done
+          exit 1
