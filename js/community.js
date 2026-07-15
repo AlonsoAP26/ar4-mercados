@@ -82,6 +82,38 @@
     youtube: { icon: '▶️', placeholder: 'canal de YouTube', urlBase: 'https://youtube.com/@' }
   };
 
+  // Íconos SVG (line icons) para el menú lateral — look profesional en vez de emojis.
+  function svgIcon(inner) {
+    return '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' + inner + '</svg>';
+  }
+  const ICON = {
+    home: svgIcon('<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h5v-6h4v6h5V9.5"/>'),
+    spark: svgIcon('<path d="M12 3l1.9 4.9L19 9.8l-4.6 2.9L13 18l-1-5.3L7 9.8l5.1-.9z"/><path d="M19 15l.6 1.6L21 17.2l-1.4.6L19 19l-.6-1.2-1.4-.6 1.4-.6z"/>'),
+    list: svgIcon('<path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="0.9"/><circle cx="3.5" cy="12" r="0.9"/><circle cx="3.5" cy="18" r="0.9"/>'),
+    forex: svgIcon('<path d="M4 8h13l-3-3"/><path d="M20 16H7l3 3"/>'),
+    cripto: svgIcon('<circle cx="12" cy="12" r="9"/><path d="M9.5 8h4a2 2 0 0 1 0 4h-4zM9.5 12h4.3a2 2 0 0 1 0 4H9.5zM9.5 7v10M11 6v1.5M11 16.5V18"/>'),
+    acciones: svgIcon('<path d="M3 21h18"/><path d="M6 21v-8M11 21V7M16 21v-5"/>'),
+    indices: svgIcon('<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>'),
+    commodities: svgIcon('<path d="M12 3s6 6.3 6 10.5a6 6 0 0 1-12 0C6 9.3 12 3 12 3z"/>'),
+    latam: svgIcon('<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/>'),
+    oro: svgIcon('<circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.7L17 21l-1.5-7.5"/>'),
+    educacion: svgIcon('<path d="M22 9 12 4 2 9l10 5 10-5z"/><path d="M6 11.5V16c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-4.5"/>'),
+    offtopic: svgIcon('<path d="M20 12a8 8 0 0 1-11.5 7.1L4 20l1-4.4A8 8 0 1 1 20 12z"/>'),
+    mail: svgIcon('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 5.5L20 7"/>'),
+    chat: svgIcon('<path d="M21 14a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>'),
+    ranking: svgIcon('<path d="M8 21h8M12 17v4"/><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 5H4v1a3 3 0 0 0 3 3M17 5h3v1a3 3 0 0 0-3 3"/>'),
+    dna: svgIcon('<path d="M5 4c0 6 14 8 14 16M19 4c0 6-14 8-14 16"/><path d="M7 7h10M7.5 17h9M9 10.5h6M9 13.5h6"/>')
+  };
+  function navCategoriesHTML() {
+    return [
+      ['Forex', 'forex'], ['Criptomonedas', 'cripto'], ['Acciones', 'acciones'],
+      ['Índices', 'indices'], ['Materias Primas', 'commodities'], ['LatAm', 'latam'],
+      ['Oro', 'oro'], ['Educación', 'educacion'], ['Off Topic', 'offtopic']
+    ].map(function (c) {
+      return '<button class="community-tab-btn" data-view="foro" data-category="' + c[0] + '"><span class="ctab-ic">' + ICON[c[1]] + '</span>' + c[0] + '</button>';
+    }).join('');
+  }
+
   function resolvePostSymbol(raw) {
     if (!raw) return null;
     const trimmed = String(raw).trim().toUpperCase();
@@ -321,20 +353,12 @@
       ${storiesBarHTML()}
       <div class="community-dashboard-layout">
         <nav class="community-tabs">
-          <button class="community-tab-btn active" data-view="resumen">🏠 Inicio <span class="sidenav-badge" id="notifUnreadBadge" hidden>0</span></button>
-          <button class="community-tab-btn" data-view="foro" data-category="">📋 Foro (todos)</button>
+          <button class="community-tab-btn active" data-view="resumen"><span class="ctab-ic">${ICON.home}</span>Inicio <span class="sidenav-badge" id="notifUnreadBadge" hidden>0</span></button>
+          <button class="community-tab-btn" data-view="foro" data-category=""><span class="ctab-ic">${ICON.list}</span>Foro (todos)</button>
           <span class="community-tabs-label">Categorías</span>
-          <button class="community-tab-btn" data-view="foro" data-category="Forex">📈 Forex</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Criptomonedas">🪙 Criptomonedas</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Acciones">📊 Acciones</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Índices">💵 Índices</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Materias Primas">🥇 Materias Primas</button>
-          <button class="community-tab-btn" data-view="foro" data-category="LatAm">🌎 LatAm</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Oro">🥇 Oro</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Educación">🎓 Educación</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Off Topic">💬 Off Topic</button>
+          ${navCategoriesHTML()}
           <span class="community-tabs-label">Social</span>
-          <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
+          <button class="community-tab-btn" data-view="ranking"><span class="ctab-ic">${ICON.ranking}</span>Ranking</button>
         </nav>
         <div id="communityMainView"><p class="footer-text">Cargando...</p></div>
       </div>
@@ -926,24 +950,16 @@
 
       <div class="community-dashboard-layout">
         <nav class="community-tabs">
-          <button class="community-tab-btn active" data-view="resumen">🏠 Inicio <span class="sidenav-badge" id="notifUnreadBadge" hidden>0</span></button>
-          <button class="community-tab-btn" data-view="paraTi">✨ Para ti</button>
-          <button class="community-tab-btn" data-view="foro" data-category="">📋 Foro (todos)</button>
+          <button class="community-tab-btn active" data-view="resumen"><span class="ctab-ic">${ICON.home}</span>Inicio <span class="sidenav-badge" id="notifUnreadBadge" hidden>0</span></button>
+          <button class="community-tab-btn" data-view="paraTi"><span class="ctab-ic">${ICON.spark}</span>Para ti</button>
+          <button class="community-tab-btn" data-view="foro" data-category=""><span class="ctab-ic">${ICON.list}</span>Foro (todos)</button>
           <span class="community-tabs-label">Categorías</span>
-          <button class="community-tab-btn" data-view="foro" data-category="Forex">📈 Forex</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Criptomonedas">🪙 Criptomonedas</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Acciones">📊 Acciones</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Índices">💵 Índices</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Materias Primas">🥇 Materias Primas</button>
-          <button class="community-tab-btn" data-view="foro" data-category="LatAm">🌎 LatAm</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Oro">🥇 Oro</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Educación">🎓 Educación</button>
-          <button class="community-tab-btn" data-view="foro" data-category="Off Topic">💬 Off Topic</button>
+          ${navCategoriesHTML()}
           <span class="community-tabs-label">Social</span>
-          <button class="community-tab-btn" data-view="mensajes">✉️ Mensajes <span class="sidenav-badge" id="dmUnreadBadge" hidden>0</span></button>
-          <button class="community-tab-btn" data-view="chat">💬 Chat en vivo</button>
-          <button class="community-tab-btn" data-view="ranking">🏆 Ranking</button>
-          <button class="community-tab-btn" data-view="dna">🧬 Trading DNA</button>
+          <button class="community-tab-btn" data-view="mensajes"><span class="ctab-ic">${ICON.mail}</span>Mensajes <span class="sidenav-badge" id="dmUnreadBadge" hidden>0</span></button>
+          <button class="community-tab-btn" data-view="chat"><span class="ctab-ic">${ICON.chat}</span>Chat en vivo</button>
+          <button class="community-tab-btn" data-view="ranking"><span class="ctab-ic">${ICON.ranking}</span>Ranking</button>
+          <button class="community-tab-btn" data-view="dna"><span class="ctab-ic">${ICON.dna}</span>Trading DNA</button>
         </nav>
         <div id="communityMainView">${resumenPanelHTML()}</div>
       </div>
