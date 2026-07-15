@@ -121,30 +121,43 @@
     return POST_SYMBOL_MAP[trimmed.replace(/\s+/g, '')] || null;
   }
 
-  // Lista completa de instrumentos para el desplegable del compositor. l=etiqueta, s=valor del campo, c=categoría.
+  // Lista completa de instrumentos. l=etiqueta, s=valor del campo (TradingView), c=categoría, y=símbolo Yahoo (velas).
   const POST_INSTRUMENTS = [
-    { l: 'EUR/USD', s: 'EUR/USD', c: 'Forex' }, { l: 'GBP/USD', s: 'GBP/USD', c: 'Forex' },
-    { l: 'USD/JPY', s: 'USD/JPY', c: 'Forex' }, { l: 'USD/CHF', s: 'FX:USDCHF', c: 'Forex' },
-    { l: 'USD/CAD', s: 'FX:USDCAD', c: 'Forex' }, { l: 'AUD/USD', s: 'FX:AUDUSD', c: 'Forex' },
-    { l: 'NZD/USD', s: 'FX:NZDUSD', c: 'Forex' }, { l: 'EUR/JPY', s: 'FX:EURJPY', c: 'Forex' },
-    { l: 'USD/MXN', s: 'USD/MXN', c: 'LatAm' }, { l: 'USD/BRL', s: 'USD/BRL', c: 'LatAm' },
-    { l: 'USD/COP', s: 'USD/COP', c: 'LatAm' }, { l: 'USD/CLP', s: 'USD/CLP', c: 'LatAm' },
-    { l: 'USD/PEN', s: 'USD/PEN', c: 'LatAm' }, { l: 'USD/ARS', s: 'USD/ARS', c: 'LatAm' },
-    { l: '🥇 Oro (XAU/USD)', s: 'ORO', c: 'Oro' }, { l: '🥈 Plata (XAG/USD)', s: 'PLATA', c: 'Materias Primas' },
-    { l: '🛢️ Petróleo WTI', s: 'PETROLEO', c: 'Materias Primas' }, { l: '🛢️ Petróleo Brent', s: 'UKOIL', c: 'Materias Primas' },
-    { l: 'NASDAQ 100', s: 'NASDAQ', c: 'Índices' }, { l: 'S&P 500', s: 'SP500', c: 'Índices' },
-    { l: 'Dow Jones', s: 'TVC:DJI', c: 'Índices' }, { l: 'DAX 40 (Alemania)', s: 'TVC:DAX', c: 'Índices' },
-    { l: 'FTSE 100 (R. Unido)', s: 'TVC:UKX', c: 'Índices' },
-    { l: '₿ Bitcoin (BTC/USD)', s: 'BTC/USD', c: 'Criptomonedas' }, { l: 'Ξ Ethereum (ETH/USD)', s: 'ETH/USD', c: 'Criptomonedas' },
-    { l: 'Solana (SOL)', s: 'COINBASE:SOLUSD', c: 'Criptomonedas' }, { l: 'XRP', s: 'BITSTAMP:XRPUSD', c: 'Criptomonedas' },
-    { l: 'Dogecoin (DOGE)', s: 'COINBASE:DOGEUSD', c: 'Criptomonedas' }, { l: 'BNB', s: 'BINANCE:BNBUSD', c: 'Criptomonedas' },
-    { l: 'Cardano (ADA)', s: 'COINBASE:ADAUSD', c: 'Criptomonedas' },
-    { l: '🍎 Apple', s: 'NASDAQ:AAPL', c: 'Acciones' }, { l: '🚗 Tesla', s: 'NASDAQ:TSLA', c: 'Acciones' },
-    { l: 'NVIDIA', s: 'NASDAQ:NVDA', c: 'Acciones' }, { l: 'Amazon', s: 'NASDAQ:AMZN', c: 'Acciones' },
-    { l: 'Microsoft', s: 'NASDAQ:MSFT', c: 'Acciones' }, { l: 'Meta', s: 'NASDAQ:META', c: 'Acciones' },
-    { l: 'Google', s: 'NASDAQ:GOOGL', c: 'Acciones' }, { l: 'AMD', s: 'NASDAQ:AMD', c: 'Acciones' },
-    { l: 'Netflix', s: 'NASDAQ:NFLX', c: 'Acciones' }, { l: 'Coca-Cola', s: 'NYSE:KO', c: 'Acciones' }
+    { l: 'EUR/USD', s: 'EUR/USD', c: 'Forex', y: 'EURUSD=X' }, { l: 'GBP/USD', s: 'GBP/USD', c: 'Forex', y: 'GBPUSD=X' },
+    { l: 'USD/JPY', s: 'USD/JPY', c: 'Forex', y: 'USDJPY=X' }, { l: 'USD/CHF', s: 'FX:USDCHF', c: 'Forex', y: 'USDCHF=X' },
+    { l: 'USD/CAD', s: 'FX:USDCAD', c: 'Forex', y: 'USDCAD=X' }, { l: 'AUD/USD', s: 'FX:AUDUSD', c: 'Forex', y: 'AUDUSD=X' },
+    { l: 'NZD/USD', s: 'FX:NZDUSD', c: 'Forex', y: 'NZDUSD=X' }, { l: 'EUR/JPY', s: 'FX:EURJPY', c: 'Forex', y: 'EURJPY=X' },
+    { l: 'USD/MXN', s: 'USD/MXN', c: 'LatAm', y: 'USDMXN=X' }, { l: 'USD/BRL', s: 'USD/BRL', c: 'LatAm', y: 'USDBRL=X' },
+    { l: 'USD/COP', s: 'USD/COP', c: 'LatAm', y: 'USDCOP=X' }, { l: 'USD/CLP', s: 'USD/CLP', c: 'LatAm', y: 'USDCLP=X' },
+    { l: 'USD/PEN', s: 'USD/PEN', c: 'LatAm', y: 'USDPEN=X' }, { l: 'USD/ARS', s: 'USD/ARS', c: 'LatAm', y: 'USDARS=X' },
+    { l: '🥇 Oro (XAU/USD)', s: 'ORO', c: 'Oro', y: 'GC=F' }, { l: '🥈 Plata (XAG/USD)', s: 'PLATA', c: 'Materias Primas', y: 'SI=F' },
+    { l: '🛢️ Petróleo WTI', s: 'PETROLEO', c: 'Materias Primas', y: 'CL=F' }, { l: '🛢️ Petróleo Brent', s: 'UKOIL', c: 'Materias Primas', y: 'BZ=F' },
+    { l: 'NASDAQ 100', s: 'NASDAQ', c: 'Índices', y: '^NDX' }, { l: 'S&P 500', s: 'SP500', c: 'Índices', y: '^GSPC' },
+    { l: 'Dow Jones', s: 'TVC:DJI', c: 'Índices', y: '^DJI' }, { l: 'DAX 40 (Alemania)', s: 'TVC:DAX', c: 'Índices', y: '^GDAXI' },
+    { l: 'FTSE 100 (R. Unido)', s: 'TVC:UKX', c: 'Índices', y: '^FTSE' },
+    { l: '₿ Bitcoin (BTC/USD)', s: 'BTC/USD', c: 'Criptomonedas', y: 'BTC-USD' }, { l: 'Ξ Ethereum (ETH/USD)', s: 'ETH/USD', c: 'Criptomonedas', y: 'ETH-USD' },
+    { l: 'Solana (SOL)', s: 'COINBASE:SOLUSD', c: 'Criptomonedas', y: 'SOL-USD' }, { l: 'XRP', s: 'BITSTAMP:XRPUSD', c: 'Criptomonedas', y: 'XRP-USD' },
+    { l: 'Dogecoin (DOGE)', s: 'COINBASE:DOGEUSD', c: 'Criptomonedas', y: 'DOGE-USD' }, { l: 'BNB', s: 'BINANCE:BNBUSD', c: 'Criptomonedas', y: 'BNB-USD' },
+    { l: 'Cardano (ADA)', s: 'COINBASE:ADAUSD', c: 'Criptomonedas', y: 'ADA-USD' },
+    { l: '🍎 Apple', s: 'NASDAQ:AAPL', c: 'Acciones', y: 'AAPL' }, { l: '🚗 Tesla', s: 'NASDAQ:TSLA', c: 'Acciones', y: 'TSLA' },
+    { l: 'NVIDIA', s: 'NASDAQ:NVDA', c: 'Acciones', y: 'NVDA' }, { l: 'Amazon', s: 'NASDAQ:AMZN', c: 'Acciones', y: 'AMZN' },
+    { l: 'Microsoft', s: 'NASDAQ:MSFT', c: 'Acciones', y: 'MSFT' }, { l: 'Meta', s: 'NASDAQ:META', c: 'Acciones', y: 'META' },
+    { l: 'Google', s: 'NASDAQ:GOOGL', c: 'Acciones', y: 'GOOGL' }, { l: 'AMD', s: 'NASDAQ:AMD', c: 'Acciones', y: 'AMD' },
+    { l: 'Netflix', s: 'NASDAQ:NFLX', c: 'Acciones', y: 'NFLX' }, { l: 'Coca-Cola', s: 'NYSE:KO', c: 'Acciones', y: 'KO' }
   ];
+  // Deduce el símbolo Yahoo desde lo que haya en el campo (para las velas del gráfico propio).
+  function resolveYahooSymbol(raw) {
+    const t = String(raw || '').trim();
+    if (!t) return null;
+    const up = t.toUpperCase();
+    const found = POST_INSTRUMENTS.find((i) => i.s.toUpperCase() === up || i.l.toUpperCase() === up);
+    if (found) return found.y;
+    const m = up.match(/^([A-Z]{3})\/?([A-Z]{3})$/); // par forex tipo EUR/USD o EURUSD
+    if (m) return m[1] + m[2] + '=X';
+    const ex = up.match(/^[A-Z0-9_]+:([A-Z0-9]+)$/); // EXCHANGE:TICKER -> ticker (acción)
+    if (ex) return ex[1];
+    return null;
+  }
 
   function mountPostChart(container, symbol) {
     container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
@@ -596,8 +609,8 @@
           <button type="button" class="sentiment-option" data-sentiment="neutral">⚪ Neutral</button>
         </div>
         <div class="chart-studio-wrap" style="margin-top:16px;">
-          <label>📈 Gráfico para dibujar tu análisis</label>
-          <p class="footer-text" style="margin:6px 0 10px;">Elige el activo en el campo <strong>Instrumento</strong> (se despliega la lista completa) o en los botones de abajo: el <strong>gráfico y la categoría se ajustan solos</strong>. También puedes cambiar el símbolo dentro del gráfico. Dibuja tu análisis, <strong style="color:var(--gold-bright);">toma una captura</strong> (⊞ Win+Shift+S · ⌘ Cmd+Shift+4 · o el ícono de cámara del gráfico) y súbela con "Adjuntar imagen".</p>
+          <label>📈 Gráfico</label>
+          <p class="footer-text" style="margin:6px 0 10px;">Elige el activo en <strong>Instrumento</strong> o en los botones: el <strong>gráfico y la categoría se ajustan solos</strong>. Toca <strong style="color:var(--gold-bright);">"📸 Adjuntar este gráfico"</strong> para subirlo automático — o dibuja con herramientas avanzadas en TradingView y sube tu captura.</p>
           <div class="chart-chips" id="postChartChips">
             <button type="button" class="chart-chip" data-sym="EUR/USD" data-cat="Forex">EUR/USD</button>
             <button type="button" class="chart-chip" data-sym="USD/MXN" data-cat="LatAm">USD/MXN</button>
@@ -610,7 +623,16 @@
             <button type="button" class="chart-chip" data-sym="NASDAQ:AAPL" data-cat="Acciones">🍎 Apple</button>
             <button type="button" class="chart-chip" data-sym="NASDAQ:TSLA" data-cat="Acciones">🚗 Tesla</button>
           </div>
-          <div class="chart-studio" id="postChartStudioMount"></div>
+          <div class="ar4chart" id="postLwChart"></div>
+          <div class="chart-actions">
+            <button type="button" class="btn btn-gold" id="postChartAttach">📸 Adjuntar este gráfico</button>
+            <button type="button" class="btn btn-outline" id="postTvToggle">✏️ Dibujar con TradingView</button>
+            <span class="chart-attach-note" id="postChartAttachNote"></span>
+          </div>
+          <div id="postChartStudio" hidden style="margin-top:12px;">
+            <p class="footer-text" style="margin:0 0 8px;">Dibuja tu análisis (Fibonacci, indicadores…) y toma una captura (⊞ Win+Shift+S · ⌘ Cmd+Shift+4 · o el ícono de cámara) para subirla con "Adjuntar imagen".</p>
+            <div class="chart-studio" id="postChartStudioMount"></div>
+          </div>
         </div>
         <div class="comment-attach-row" style="margin-top:12px;">
           <button type="button" class="comment-attach-btn" id="postAttachBtn">📎 Adjuntar imagen, video o PDF</button>
@@ -2164,13 +2186,14 @@
       addPollCheckbox.addEventListener('change', () => { pollFields.hidden = !addPollCheckbox.checked; });
     }
 
-    // Gráfico interactivo (TradingView) siempre visible + sincronía instrumento ↔ categoría.
-    const chartMount = document.getElementById('postChartStudioMount');
+    // ===== Gráficos del compositor: propio (Lightweight, con captura) + TradingView (dibujo) =====
     const postSymbolInput = document.getElementById('postSymbol');
     const postCategorySelect = document.getElementById('postCategory');
-    let chartLoadedSymbol = null;
+    const symDropdown = document.getElementById('postSymbolDropdown');
+    const lwMount = document.getElementById('postLwChart');
+    const tvMount = document.getElementById('postChartStudioMount');
+    const tvStudio = document.getElementById('postChartStudio');
 
-    // Deduce la categoría a partir de lo que se escribe en Instrumento.
     function inferCategoryFromSymbol(raw) {
       const t = (raw || '').toUpperCase().replace(/\s+/g, '');
       if (!t) return null;
@@ -2188,35 +2211,61 @@
       const cat = inferCategoryFromSymbol(postSymbolInput.value);
       if (cat && CATEGORY_LABELS.indexOf(cat) >= 0) postCategorySelect.value = cat;
     }
-    function buildChartStudio() {
-      if (!chartMount) return;
-      const sym = resolvePostSymbol(postSymbolInput.value) || 'FX:EURUSD';
-      if (chartLoadedSymbol === sym && chartMount.querySelector('iframe')) return;
-      chartLoadedSymbol = sym;
-      chartMount.innerHTML = '<div class="tradingview-widget-container" style="height:100%;width:100%;"><div class="tradingview-widget-container__widget" style="height:100%;width:100%;"></div></div>';
-      const s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
-      s.text = JSON.stringify({
-        autosize: true, symbol: sym, interval: '60', timezone: 'America/Lima',
-        theme: 'dark', style: '1', locale: 'es',
-        hide_side_toolbar: false, allow_symbol_change: true, save_image: true,
-        studies: ['STD;EMA'], support_host: 'https://www.tradingview.com'
-      });
-      chartMount.querySelector('.tradingview-widget-container').appendChild(s);
+
+    // --- Gráfico propio (Lightweight Charts) con captura automática ---
+    let lwChart = null, lwSeries = null, lwLoadedYahoo = null;
+    function lwResize() { if (lwChart && lwMount) lwChart.applyOptions({ width: lwMount.clientWidth }); }
+    async function buildLwChart() {
+      if (!lwMount || typeof LightweightCharts === 'undefined') return;
+      const ysym = resolveYahooSymbol(postSymbolInput.value) || 'EURUSD=X';
+      if (lwLoadedYahoo === ysym && lwChart) return;
+      lwLoadedYahoo = ysym;
+      if (!lwChart) {
+        lwChart = LightweightCharts.createChart(lwMount, {
+          height: 340,
+          layout: { background: { color: '#0b1220' }, textColor: '#c9d2e3', fontFamily: 'inherit' },
+          grid: { vertLines: { color: 'rgba(255,255,255,0.05)' }, horzLines: { color: 'rgba(255,255,255,0.05)' } },
+          rightPriceScale: { borderColor: 'rgba(255,255,255,0.1)' },
+          timeScale: { borderColor: 'rgba(255,255,255,0.1)', timeVisible: false },
+          crosshair: { mode: 0 }
+        });
+        lwSeries = lwChart.addCandlestickSeries({ upColor: '#2ecc71', downColor: '#e13a4b', borderVisible: false, wickUpColor: '#2ecc71', wickDownColor: '#e13a4b' });
+        window.addEventListener('resize', lwResize);
+      }
+      try {
+        const r = await fetch('/.netlify/functions/market-candles?symbol=' + encodeURIComponent(ysym) + '&interval=1d&range=1y');
+        const d = await r.json();
+        if (d && d.success && d.candles && d.candles.length) {
+          lwSeries.setData(d.candles);
+          lwChart.timeScale().fitContent();
+        }
+      } catch (e) {}
+      lwResize();
     }
-    // Aplica un instrumento elegido (desde el desplegable o un botón): campo + categoría + gráfico.
+
+    // --- Gráfico TradingView (solo al abrir para dibujar) ---
+    let tvLoadedSymbol = null;
+    function buildTvChart() {
+      if (!tvMount) return;
+      const sym = resolvePostSymbol(postSymbolInput.value) || 'FX:EURUSD';
+      if (tvLoadedSymbol === sym && tvMount.querySelector('iframe')) return;
+      tvLoadedSymbol = sym;
+      tvMount.innerHTML = '<div class="tradingview-widget-container" style="height:100%;width:100%;"><div class="tradingview-widget-container__widget" style="height:100%;width:100%;"></div></div>';
+      const s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+      s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+      s.text = JSON.stringify({ autosize: true, symbol: sym, interval: '60', timezone: 'America/Lima', theme: 'dark', style: '1', locale: 'es', hide_side_toolbar: false, allow_symbol_change: true, save_image: true, studies: ['STD;EMA'], support_host: 'https://www.tradingview.com' });
+      tvMount.querySelector('.tradingview-widget-container').appendChild(s);
+    }
+
     function applyInstrument(sym, cat) {
       if (!postSymbolInput) return;
       postSymbolInput.value = sym;
       if (cat && postCategorySelect && CATEGORY_LABELS.indexOf(cat) >= 0) postCategorySelect.value = cat;
       else syncCategoryFromSymbol();
-      buildChartStudio();
+      buildLwChart();
+      if (tvStudio && !tvStudio.hidden) buildTvChart();
     }
 
-    // Desplegable buscable con todos los instrumentos.
-    const symDropdown = document.getElementById('postSymbolDropdown');
     function renderSymbolDropdown(query) {
       if (!symDropdown) return;
       const q = (query || '').trim().toLowerCase();
@@ -2229,19 +2278,14 @@
       ).join('');
       symDropdown.hidden = false;
       symDropdown.querySelectorAll('.post-symbol-item').forEach((it) => {
-        it.addEventListener('mousedown', (e) => {
-          e.preventDefault();
-          applyInstrument(it.dataset.sym, it.dataset.cat);
-          symDropdown.hidden = true;
-        });
+        it.addEventListener('mousedown', (e) => { e.preventDefault(); applyInstrument(it.dataset.sym, it.dataset.cat); symDropdown.hidden = true; });
       });
     }
 
-    if (chartMount) {
-      buildChartStudio(); // el gráfico aparece de inmediato
-      // Botones rápidos de activo.
+    if (lwMount && postSymbolInput) {
+      buildLwChart(); // el gráfico propio aparece de inmediato
       const chipsWrap = document.getElementById('postChartChips');
-      if (chipsWrap && postSymbolInput) {
+      if (chipsWrap) {
         chipsWrap.querySelectorAll('.chart-chip').forEach((chip) => {
           chip.addEventListener('click', () => {
             chipsWrap.querySelectorAll('.chart-chip').forEach((c) => c.classList.remove('active'));
@@ -2250,16 +2294,43 @@
           });
         });
       }
-      if (postSymbolInput) {
-        let chartDebounce = null;
-        postSymbolInput.addEventListener('focus', () => renderSymbolDropdown(postSymbolInput.value));
-        postSymbolInput.addEventListener('input', () => {
-          renderSymbolDropdown(postSymbolInput.value);
-          clearTimeout(chartDebounce);
-          chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildChartStudio(); }, 700);
+      let chartDebounce = null;
+      postSymbolInput.addEventListener('focus', () => renderSymbolDropdown(postSymbolInput.value));
+      postSymbolInput.addEventListener('input', () => {
+        renderSymbolDropdown(postSymbolInput.value);
+        clearTimeout(chartDebounce);
+        chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildLwChart(); if (tvStudio && !tvStudio.hidden) buildTvChart(); }, 700);
+      });
+      postSymbolInput.addEventListener('change', () => { syncCategoryFromSymbol(); buildLwChart(); if (tvStudio && !tvStudio.hidden) buildTvChart(); });
+      postSymbolInput.addEventListener('blur', () => { setTimeout(() => { if (symDropdown) symDropdown.hidden = true; }, 150); });
+
+      // Abrir/cerrar el gráfico de TradingView para dibujar.
+      const tvToggle = document.getElementById('postTvToggle');
+      if (tvToggle && tvStudio) {
+        tvToggle.addEventListener('click', () => {
+          const willShow = tvStudio.hidden;
+          tvStudio.hidden = !willShow;
+          tvToggle.textContent = willShow ? '✏️ Ocultar TradingView' : '✏️ Dibujar con TradingView';
+          if (willShow) buildTvChart();
         });
-        postSymbolInput.addEventListener('change', () => { syncCategoryFromSymbol(); buildChartStudio(); });
-        postSymbolInput.addEventListener('blur', () => { setTimeout(() => { if (symDropdown) symDropdown.hidden = true; }, 150); });
+      }
+
+      // Captura automática del gráfico propio → lo adjunta a la publicación.
+      const attachBtn = document.getElementById('postChartAttach');
+      const attachNote = document.getElementById('postChartAttachNote');
+      if (attachBtn) {
+        attachBtn.addEventListener('click', () => {
+          if (!lwChart || typeof lwChart.takeScreenshot !== 'function') { if (attachNote) attachNote.textContent = 'El gráfico aún se está cargando…'; return; }
+          try {
+            const canvas = lwChart.takeScreenshot();
+            canvas.toBlob((blob) => {
+              if (!blob) { if (attachNote) attachNote.textContent = 'No se pudo capturar.'; return; }
+              pendingPostMediaFile = new File([blob], 'grafico-ar4.png', { type: 'image/png' });
+              const nm = document.getElementById('postMediaName'); if (nm) nm.textContent = 'grafico-ar4.png (gráfico)';
+              if (attachNote) attachNote.textContent = '✓ Gráfico adjuntado a tu publicación';
+            }, 'image/png');
+          } catch (e) { if (attachNote) attachNote.textContent = 'No se pudo capturar el gráfico.'; }
+        });
       }
     }
 
