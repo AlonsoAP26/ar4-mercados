@@ -4,7 +4,7 @@ const { isFlagged } = require('./_moderation');
 const { effectiveRank } = require('./_rank');
 const { incrementMissionCounter } = require('./_gamification');
 
-const ALLOWED_CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones', 'Oro', 'Educación', 'Off Topic'];
+const ALLOWED_CATEGORIES = ['Forex', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones', 'Educación', 'Off Topic'];
 const ALLOWED_SENTIMENTS = ['alcista', 'bajista', 'neutral'];
 const ALLOWED_TIMEFRAMES = ['M15', 'M30', 'H1', 'H4', 'D1', 'W1'];
 const MENTION_RE = /@([a-z0-9_]{3,24})/gi;

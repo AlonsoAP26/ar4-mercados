@@ -5,7 +5,7 @@
   const root = document.getElementById('communityRoot');
   if (!root) return;
 
-  const CATEGORY_LABELS = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones', 'Oro', 'Educación', 'Off Topic'];
+  const CATEGORY_LABELS = ['Forex', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones', 'Educación', 'Off Topic'];
   const ALLOWED_TIMEFRAMES = ['M15', 'M30', 'H1', 'H4', 'D1', 'W1'];
   const IDEA_STATUS_META = {
     abierta: { label: 'Abierta', cls: 'idea-status-abierta' },
@@ -107,8 +107,8 @@
   function navCategoriesHTML() {
     return [
       ['Forex', 'forex'], ['Criptomonedas', 'cripto'], ['Acciones', 'acciones'],
-      ['Índices', 'indices'], ['Materias Primas', 'commodities'], ['LatAm', 'latam'],
-      ['Oro', 'oro'], ['Educación', 'educacion'], ['Off Topic', 'offtopic']
+      ['Índices', 'indices'], ['Materias Primas', 'commodities'],
+      ['Educación', 'educacion'], ['Off Topic', 'offtopic']
     ].map(function (c) {
       return '<button class="community-tab-btn" data-view="foro" data-category="' + c[0] + '"><span class="ctab-ic">' + ICON[c[1]] + '</span>' + c[0] + '</button>';
     }).join('');
@@ -127,19 +127,19 @@
     { l: 'USD/JPY', s: 'USD/JPY', c: 'Forex', y: 'USDJPY=X' }, { l: 'USD/CHF', s: 'FX:USDCHF', c: 'Forex', y: 'USDCHF=X' },
     { l: 'USD/CAD', s: 'FX:USDCAD', c: 'Forex', y: 'USDCAD=X' }, { l: 'AUD/USD', s: 'FX:AUDUSD', c: 'Forex', y: 'AUDUSD=X' },
     { l: 'NZD/USD', s: 'FX:NZDUSD', c: 'Forex', y: 'NZDUSD=X' }, { l: 'EUR/JPY', s: 'FX:EURJPY', c: 'Forex', y: 'EURJPY=X' },
-    { l: 'USD/MXN', s: 'USD/MXN', c: 'LatAm', y: 'USDMXN=X' }, { l: 'USD/BRL', s: 'USD/BRL', c: 'LatAm', y: 'USDBRL=X' },
-    { l: 'USD/COP', s: 'USD/COP', c: 'LatAm', y: 'USDCOP=X' }, { l: 'USD/CLP', s: 'USD/CLP', c: 'LatAm', y: 'USDCLP=X' },
-    { l: 'USD/PEN', s: 'USD/PEN', c: 'LatAm', y: 'USDPEN=X' }, { l: 'USD/ARS', s: 'USD/ARS', c: 'LatAm', y: 'USDARS=X' },
-    { l: '🥇 Oro (XAU/USD)', s: 'ORO', c: 'Oro', y: 'GC=F' }, { l: '🥈 Plata (XAG/USD)', s: 'PLATA', c: 'Materias Primas', y: 'SI=F' },
-    { l: '🛢️ Petróleo WTI', s: 'PETROLEO', c: 'Materias Primas', y: 'CL=F' }, { l: '🛢️ Petróleo Brent', s: 'UKOIL', c: 'Materias Primas', y: 'BZ=F' },
+    { l: 'USD/MXN', s: 'USD/MXN', c: 'Forex', y: 'USDMXN=X' }, { l: 'USD/BRL', s: 'USD/BRL', c: 'Forex', y: 'USDBRL=X' },
+    { l: 'USD/COP', s: 'USD/COP', c: 'Forex', y: 'USDCOP=X' }, { l: 'USD/CLP', s: 'USD/CLP', c: 'Forex', y: 'USDCLP=X' },
+    { l: 'USD/PEN', s: 'USD/PEN', c: 'Forex', y: 'USDPEN=X' }, { l: 'USD/ARS', s: 'USD/ARS', c: 'Forex', y: 'USDARS=X' },
+    { l: 'Oro (XAU/USD)', s: 'ORO', c: 'Materias Primas', y: 'GC=F' }, { l: 'Plata (XAG/USD)', s: 'PLATA', c: 'Materias Primas', y: 'SI=F' },
+    { l: 'Petróleo WTI', s: 'PETROLEO', c: 'Materias Primas', y: 'CL=F' }, { l: 'Petróleo Brent', s: 'UKOIL', c: 'Materias Primas', y: 'BZ=F' },
     { l: 'NASDAQ 100', s: 'NASDAQ', c: 'Índices', y: '^NDX' }, { l: 'S&P 500', s: 'SP500', c: 'Índices', y: '^GSPC' },
     { l: 'Dow Jones', s: 'TVC:DJI', c: 'Índices', y: '^DJI' }, { l: 'DAX 40 (Alemania)', s: 'TVC:DAX', c: 'Índices', y: '^GDAXI' },
     { l: 'FTSE 100 (R. Unido)', s: 'TVC:UKX', c: 'Índices', y: '^FTSE' },
-    { l: '₿ Bitcoin (BTC/USD)', s: 'BTC/USD', c: 'Criptomonedas', y: 'BTC-USD' }, { l: 'Ξ Ethereum (ETH/USD)', s: 'ETH/USD', c: 'Criptomonedas', y: 'ETH-USD' },
+    { l: 'Bitcoin (BTC/USD)', s: 'BTC/USD', c: 'Criptomonedas', y: 'BTC-USD' }, { l: 'Ethereum (ETH/USD)', s: 'ETH/USD', c: 'Criptomonedas', y: 'ETH-USD' },
     { l: 'Solana (SOL)', s: 'COINBASE:SOLUSD', c: 'Criptomonedas', y: 'SOL-USD' }, { l: 'XRP', s: 'BITSTAMP:XRPUSD', c: 'Criptomonedas', y: 'XRP-USD' },
     { l: 'Dogecoin (DOGE)', s: 'COINBASE:DOGEUSD', c: 'Criptomonedas', y: 'DOGE-USD' }, { l: 'BNB', s: 'BINANCE:BNBUSD', c: 'Criptomonedas', y: 'BNB-USD' },
     { l: 'Cardano (ADA)', s: 'COINBASE:ADAUSD', c: 'Criptomonedas', y: 'ADA-USD' },
-    { l: '🍎 Apple', s: 'NASDAQ:AAPL', c: 'Acciones', y: 'AAPL' }, { l: '🚗 Tesla', s: 'NASDAQ:TSLA', c: 'Acciones', y: 'TSLA' },
+    { l: 'Apple', s: 'NASDAQ:AAPL', c: 'Acciones', y: 'AAPL' }, { l: 'Tesla', s: 'NASDAQ:TSLA', c: 'Acciones', y: 'TSLA' },
     { l: 'NVIDIA', s: 'NASDAQ:NVDA', c: 'Acciones', y: 'NVDA' }, { l: 'Amazon', s: 'NASDAQ:AMZN', c: 'Acciones', y: 'AMZN' },
     { l: 'Microsoft', s: 'NASDAQ:MSFT', c: 'Acciones', y: 'MSFT' }, { l: 'Meta', s: 'NASDAQ:META', c: 'Acciones', y: 'META' },
     { l: 'Google', s: 'NASDAQ:GOOGL', c: 'Acciones', y: 'GOOGL' }, { l: 'AMD', s: 'NASDAQ:AMD', c: 'Acciones', y: 'AMD' },
@@ -613,20 +613,20 @@
           <p class="footer-text" style="margin:6px 0 10px;">Elige el activo en <strong>Instrumento</strong> o en los botones: el <strong>gráfico y la categoría se ajustan solos</strong>. Toca <strong style="color:var(--gold-bright);">"📸 Adjuntar este gráfico"</strong> para subirlo automático — o dibuja con herramientas avanzadas en TradingView y sube tu captura.</p>
           <div class="chart-chips" id="postChartChips">
             <button type="button" class="chart-chip" data-sym="EUR/USD" data-cat="Forex">EUR/USD</button>
-            <button type="button" class="chart-chip" data-sym="USD/MXN" data-cat="LatAm">USD/MXN</button>
-            <button type="button" class="chart-chip" data-sym="ORO" data-cat="Oro">🥇 Oro</button>
-            <button type="button" class="chart-chip" data-sym="PETROLEO" data-cat="Materias Primas">🛢️ Petróleo</button>
-            <button type="button" class="chart-chip" data-sym="BTC/USD" data-cat="Criptomonedas">₿ BTC/USD</button>
-            <button type="button" class="chart-chip" data-sym="ETH/USD" data-cat="Criptomonedas">Ξ ETH/USD</button>
+            <button type="button" class="chart-chip" data-sym="USD/MXN" data-cat="Forex">USD/MXN</button>
+            <button type="button" class="chart-chip" data-sym="ORO" data-cat="Materias Primas">Oro</button>
+            <button type="button" class="chart-chip" data-sym="PETROLEO" data-cat="Materias Primas">Petróleo</button>
+            <button type="button" class="chart-chip" data-sym="BTC/USD" data-cat="Criptomonedas">BTC/USD</button>
+            <button type="button" class="chart-chip" data-sym="ETH/USD" data-cat="Criptomonedas">ETH/USD</button>
             <button type="button" class="chart-chip" data-sym="NASDAQ" data-cat="Índices">NASDAQ 100</button>
             <button type="button" class="chart-chip" data-sym="SP500" data-cat="Índices">S&P 500</button>
-            <button type="button" class="chart-chip" data-sym="NASDAQ:AAPL" data-cat="Acciones">🍎 Apple</button>
-            <button type="button" class="chart-chip" data-sym="NASDAQ:TSLA" data-cat="Acciones">🚗 Tesla</button>
+            <button type="button" class="chart-chip" data-sym="NASDAQ:AAPL" data-cat="Acciones">Apple</button>
+            <button type="button" class="chart-chip" data-sym="NASDAQ:TSLA" data-cat="Acciones">Tesla</button>
           </div>
           <div class="ar4chart" id="postLwChart"></div>
           <div class="chart-actions">
             <button type="button" class="btn btn-gold" id="postChartAttach">📸 Adjuntar este gráfico</button>
-            <button type="button" class="btn btn-outline" id="postTvToggle">✏️ Dibujar con TradingView</button>
+            <button type="button" class="btn-tv-draw" id="postTvToggle">✏️ ¿Quieres dibujar tu análisis? Ábrelo en TradingView →</button>
             <span class="chart-attach-note" id="postChartAttachNote"></span>
           </div>
           <div id="postChartStudio" hidden style="margin-top:12px;">
@@ -2198,12 +2198,10 @@
       const t = (raw || '').toUpperCase().replace(/\s+/g, '');
       if (!t) return null;
       if (/BTC|ETH|SOL|XRP|DOGE|BNB|ADA|LTC|CRIPTO|USDT|BITCOIN|ETHEREUM/.test(t)) return 'Criptomonedas';
-      if (/XAU|\bORO\b|GOLD/.test(t)) return 'Oro';
-      if (/XAG|PLATA|SILVER|OIL|PETRO|WTI|BRENT|\bGAS\b|COBRE|COPPER|USOIL|UKOIL/.test(t)) return 'Materias Primas';
+      if (/XAU|\bORO\b|GOLD|XAG|PLATA|SILVER|OIL|PETRO|WTI|BRENT|\bGAS\b|COBRE|COPPER|USOIL|UKOIL/.test(t)) return 'Materias Primas';
       if (/AAPL|TSLA|NVDA|AMZN|MSFT|META|GOOG|NYSE:|NASDAQ:[A-Z]|APPLE|TESLA|NVIDIA|AMAZON|MICROSOFT|ACCION/.test(t)) return 'Acciones';
       if (/NAS100|NASDAQ|NDX|US100|SPX|SP500|S&P|US500|US30|DOW|DJI|DAX|GER40|FTSE|UK100|IBEX|NIKKEI|INDIC/.test(t)) return 'Índices';
-      if (/MXN|BRL|COP|CLP|PEN|ARS|LATAM/.test(t)) return 'LatAm';
-      if (/USD|EUR|GBP|JPY|CHF|CAD|AUD|NZD|FOREX|DIVISA/.test(t)) return 'Forex';
+      if (/USD|EUR|GBP|JPY|CHF|CAD|AUD|NZD|MXN|BRL|COP|CLP|PEN|ARS|FOREX|DIVISA/.test(t)) return 'Forex';
       return null;
     }
     function syncCategoryFromSymbol() {
@@ -2310,7 +2308,7 @@
         tvToggle.addEventListener('click', () => {
           const willShow = tvStudio.hidden;
           tvStudio.hidden = !willShow;
-          tvToggle.textContent = willShow ? '✏️ Ocultar TradingView' : '✏️ Dibujar con TradingView';
+          tvToggle.textContent = willShow ? '✕ Ocultar el gráfico de TradingView' : '✏️ ¿Quieres dibujar tu análisis? Ábrelo en TradingView →';
           if (willShow) buildTvChart();
         });
       }

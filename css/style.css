@@ -1157,9 +1157,17 @@ a { color: inherit; text-decoration: none; }
 .ar4chart { height: 340px; margin-top: 8px; border: 1px solid var(--card-border); border-radius: 10px; overflow: hidden; background: #0b1220; position: relative; }
 .chart-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; }
 .chart-attach-note { font-size: 0.82rem; color: var(--green); }
+/* Botón llamativo para abrir el gráfico de TradingView (dibujo) */
+.btn-tv-draw {
+  border: 1px solid var(--gold); background: rgba(212,175,55,0.10); color: var(--gold-bright);
+  font-family: inherit; font-size: 0.86rem; font-weight: 700; padding: 10px 16px; border-radius: 8px;
+  cursor: pointer; transition: background 0.15s, transform 0.15s; animation: tvGlow 2.4s ease-in-out infinite;
+}
+.btn-tv-draw:hover { background: rgba(212,175,55,0.2); transform: translateY(-1px); }
+@keyframes tvGlow { 0%,100% { box-shadow: 0 0 0 0 rgba(212,175,55,0.0); } 50% { box-shadow: 0 0 0 4px rgba(212,175,55,0.14); } }
 @media (max-width: 640px) {
   .ar4chart { height: 300px; }
-  .chart-actions .btn { flex: 1 1 auto; }
+  .chart-actions .btn, .btn-tv-draw { flex: 1 1 auto; text-align: center; }
 }
 @media (max-width: 900px) {
   .community-tab-btn { width: auto; border-left: none; border-bottom: 3px solid transparent; }
