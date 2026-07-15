@@ -76,30 +76,42 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     },
     body: JSON.stringify({
       model: 'claude-sonnet-5',
-      max_tokens: 3500,
+      // Explicitos a proposito: Sonnet 5 piensa por defecto y esos tokens salen
+      // del mismo max_tokens que la respuesta. Con el limite anterior el JSON
+      // salia cortado y JSON.parse fallaba. max_tokens es solo un tope: se
+      // factura lo que se genera de verdad, asi que dar aire no cuesta nada.
+      max_tokens: 16000,
+      thinking: { type: 'adaptive' },
       messages: [{ role: 'user', content: prompt }]
     })
   });
 
   if (!res.ok) {
     const errText = await res.text();
-    console.error('Error de la API de Anthropic:', errText);
+    console.error('Error de la API de Anthropic (HTTP ' + res.status + '):', errText);
     process.exit(1);
   }
 
   const data = await res.json();
-  const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
-  if (!textBlock) {
-    console.error('Respuesta inesperada de la API:', JSON.stringify(data));
+  if (data.stop_reason === 'max_tokens') {
+    console.error('Respuesta cortada por max_tokens. Uso:', JSON.stringify(data.usage));
     process.exit(1);
   }
-  const rawText = textBlock.text.trim();
+  const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
+  if (!textBlock) {
+    console.error('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason, JSON.stringify(data.usage));
+    process.exit(1);
+  }
+  let rawText = textBlock.text.trim();
+  const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+  if (fence) rawText = fence[1].trim();
 
   let nueva;
   try {
     nueva = JSON.parse(rawText);
   } catch (e) {
-    console.error('La IA no devolvió un JSON válido:', rawText);
+    console.error('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
+    console.error(rawText.slice(0, 1500));
     process.exit(1);
   }
 
