@@ -405,5 +405,56 @@
       ],
       "patronUltimaVela": "vela bajista sin patron destacable"
     }
+  },
+  {
+    "title": "USD/MXN se comprime contra la media de 50 a un paso de su mínimo anual",
+    "excerpt": "El dólar cotiza en 17,39, pegado a su media móvil de 50 en 17,37, con un rango de sesión de apenas seis centavos y a solo 1,9% del mínimo de 52 semanas.",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Compresión extrema entre 17,37 y 17,43: el rango más estrecho del mes</h3><p>La última sesión diaria cerró en 17,39, con una caída de 0,7% frente al cierre previo de 17,52. El rango real de la jornada quedó comprimido entre un mínimo de 17,37 y un máximo de 17,43, apenas seis centavos de amplitud. Esa estrechez es coherente con el ATR(14) (rango medio diario de las últimas 14 sesiones) de 0,13, uno de los valores más bajos del periodo reciente, señal de que el mercado opera con poca dispersión direccional en el corto plazo. El precio quedó prácticamente apoyado sobre la media móvil de 50 sesiones, ubicada en 17,37, que está funcionando como piso inmediato de la sesión.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El año pesa más que el mes: seis meses de caída frente a un repunte reciente</h3><p>En la última semana el par retrocede 0,8%, mientras que en el último mes acumula un avance de apenas 1%. En el horizonte de un año, sin embargo, la variación es de -6,2%, reflejo de que el dólar ha perdido terreno frente al peso mexicano de forma sostenida durante ese periodo. El precio actual está a solo 1,9% de distancia del mínimo de 52 semanas (17,07) y a 8,4% del máximo del mismo periodo (18,98), lo que lo ubica en la franja baja de su rango anual. La estructura de medias móviles -la de 50 sesiones (17,37) situada por debajo de la de 200 (17,73)- describe un sesgo de fondo bajista para el dólar frente al peso, mientras que el precio se mantiene por encima de la primera pero por debajo de la segunda, una posición intermedia dentro de esa tendencia.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Mapa de niveles y lectura de indicadores</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong style=\"color:var(--green);\">Soportes:</strong> 17,36 · 17,24 · 17,14</li><li><strong style=\"color:var(--crimson-bright);\">Resistencias:</strong> 17,43 · 17,64 · 17,94</li><li>RSI(14) (indicador de fuerza relativa que mide sobrecompra o sobreventa): 46,5, en zona neutral, sin presión en ninguna dirección.</li><li>Medias móviles: el precio cotiza por encima de la media de 50 (17,37) y por debajo de la media de 200 (17,73), con la de 50 situada bajo la de 200, estructura de fondo bajista.</li><li>Última vela diaria: cuerpo bajista, sin patrón de reversión destacable.</li></ul><p>La combinación de un rango de sesión muy estrecho, un RSI neutral y un precio apoyado justo sobre su media de 50 describe una fase de indecisión de corto plazo dentro de una tendencia de fondo que, medida en el último año, sigue siendo bajista para el dólar.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Lectura de flujo institucional: bloques de órdenes y liquidez en el rango 17,07-18,98</h3><p>Desde una óptica de Smart Money Concepts, la zona entre la resistencia de 17,43 y la de 17,64 podría concentrar un Order Block bajista (la última vela opuesta antes de un movimiento fuerte, donde suelen quedar órdenes institucionales pendientes), ya que fue el área desde donde el precio giró a la baja en su desplazamiento hacia los niveles actuales. Entre 17,64 y 17,94 podría existir un Fair Value Gap (un vacío de precio dejado por un movimiento impulsivo, que el mercado tiende a revisitar) aún sin rellenar del todo, lo que convertiría a esa franja en una zona de atracción técnica si el precio logra recuperarla. En términos de liquidez (agrupaciones de órdenes stop sobre máximos o bajo mínimos recientes), el mínimo de 52 semanas en 17,07 es candidato natural a concentrar stops de posiciones cortas, mientras que el máximo anual en 18,98 concentra liquidez del lado largo. La posición actual del precio -por encima de la media de 50 pero por debajo de la de 200- describe una estructura en transición: perder el soporte de 17,36 confirmaría un Break of Structure (ruptura de estructura) hacia el tramo bajista de fondo, mientras que una recuperación sostenida sobre 17,43 abriría espacio para un Change of Character (cambio de carácter) de corto plazo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario alcista: qué necesitaría confirmarse</h3><p>Un escenario de recuperación del dólar requeriría que el precio se sostenga por encima de la resistencia inmediata de 17,43 y logre superar con cierres consecutivos la zona de 17,64. La invalidación de esta lectura llegaría con una pérdida del soporte de 17,36, que coincide con la media móvil de 50. Un objetivo razonable, apoyado en las resistencias reales del gráfico, se ubicaría en la franja de 17,64 y, en una extensión mayor, en 17,94.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario bajista: qué necesitaría confirmarse</h3><p>La continuidad de la tendencia de fondo bajista requeriría una ruptura clara del soporte de 17,36, que además coincide con la media de 50 sesiones. Esa pérdida abriría paso hacia el siguiente soporte en 17,24 y, de extenderse, hacia 17,14, muy cerca del mínimo de 52 semanas en 17,07. La invalidación de este escenario se daría con una recuperación por encima de 17,43.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>",
+    "trend": "neutral",
+    "symbol": "FX_IDC:USDMXN",
+    "category": "LatAm",
+    "slug": "usdmxn-se-comprime-contra-la-media-de-50-a-un-paso-de-su-min-mrm7wj3s",
+    "author": "AR4 Mercados",
+    "date": "2026-07-15",
+    "marketData": {
+      "symbol": "FX_IDC:USDMXN",
+      "nombre": "USD/MXN (peso mexicano)",
+      "fuente": "Yahoo Finance (USDMXN=X)",
+      "fechaUltimaVela": "2026-07-15",
+      "precio": 17.39,
+      "cierreAnterior": 17.52,
+      "variacionDiaPct": -0.7,
+      "variacionSemanaPct": -0.8,
+      "variacionMesPct": 1,
+      "variacionAnioPct": -6.2,
+      "rangoDiaReal": {
+        "minimo": 17.37,
+        "maximo": 17.43
+      },
+      "rsi14": 46.5,
+      "lecturaRsi": "neutral",
+      "media50": 17.37,
+      "media200": 17.73,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 0.13,
+      "maximo52sem": 18.98,
+      "minimo52sem": 17.07,
+      "distanciaAMaximo52semPct": -8.4,
+      "distanciaAMinimo52semPct": 1.9,
+      "soportes": [
+        17.36,
+        17.24,
+        17.14
+      ],
+      "resistencias": [
+        17.43,
+        17.64,
+        17.94
+      ],
+      "patronUltimaVela": "vela bajista sin patron destacable"
+    }
   }
 ]
