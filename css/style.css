@@ -2383,12 +2383,26 @@ a { color: inherit; text-decoration: none; }
 .active-filter-chip button:hover { color: var(--crimson-bright); border-color: var(--crimson-bright); }
 
 .activity-row {
-  display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--card-border);
-  font-size: 0.86rem; color: var(--text-mid);
+  display: flex; align-items: center; gap: 11px; padding: 9px 10px; margin: 0 -10px;
+  border-bottom: 1px solid var(--card-border); border-radius: 8px;
+  font-size: 0.86rem; color: var(--text-mid); text-decoration: none; transition: background 0.15s;
 }
+a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi); }
 .activity-row:last-child { border-bottom: none; }
-.activity-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+.activity-avatar { width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0; font-size: 0.66rem; display: flex; align-items: center; justify-content: center; }
+.activity-text { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .activity-time { margin-left: auto; color: var(--text-low); font-size: 0.74rem; font-family: var(--mono); flex-shrink: 0; }
+.activity-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+/* Avatar generado (imagen ilustrada + respaldo de iniciales) */
+.avatar-generated { position: relative; overflow: hidden; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,0.14), 0 4px 12px rgba(0,0,0,0.25); }
+.avatar-generated img { width: 100%; height: 100%; object-fit: cover; }
+.avatar-fallback { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; color: #fff !important; font-weight: 800; letter-spacing: 0.3px; text-shadow: 0 1px 2px rgba(0,0,0,0.28); }
+/* Barra de scroll horizontal moderna (filas deslizables) */
+.featured-traders-row, .stories-bar, .chart-chips { scrollbar-width: thin; scrollbar-color: rgba(212,175,55,0.4) transparent; }
+.featured-traders-row::-webkit-scrollbar, .stories-bar::-webkit-scrollbar { height: 7px; }
+.featured-traders-row::-webkit-scrollbar-track, .stories-bar::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); border-radius: 10px; }
+.featured-traders-row::-webkit-scrollbar-thumb, .stories-bar::-webkit-scrollbar-thumb { background: linear-gradient(90deg, var(--gold), #b8860b); border-radius: 10px; }
+.featured-traders-row::-webkit-scrollbar-thumb:hover, .stories-bar::-webkit-scrollbar-thumb:hover { background: var(--gold-bright); }
 
 .verified-badge {
   display: inline-flex; align-items: center; justify-content: center;

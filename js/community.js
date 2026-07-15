@@ -271,12 +271,22 @@
     const g = AVATAR_GRADIENTS[avatarHash(username) % AVATAR_GRADIENTS.length];
     return 'linear-gradient(135deg,' + g[0] + ',' + g[1] + ')';
   }
+  function generatedAvatarUrl(username) {
+    // Avatar ilustrado, determinista por usuario (mismo usuario = mismo avatar).
+    return 'https://api.dicebear.com/9.x/notionists/svg?seed=' + encodeURIComponent(username || 'trader') + '&scale=130&radius=50';
+  }
   function avatarHTML(profile, sizeClass) {
     if (profile.avatar_url) {
       const color = profile.avatar_color || '#8b93a7';
       return `<div class="${sizeClass}" style="background:${color};"><img src="${escapeHtml(profile.avatar_url)}" alt="" style="width:100%;height:100%;object-fit:cover;"></div>`;
     }
-    return `<div class="${sizeClass} avatar-initials" style="background:${avatarGradient(profile.username)};">${avatarInitials(profile.username)}</div>`;
+    const grad = avatarGradient(profile.username);
+    const initials = avatarInitials(profile.username);
+    // Avatar generado (imagen); si falla, se muestran las iniciales sobre el degradado.
+    return `<div class="${sizeClass} avatar-generated" style="background:${grad};">` +
+      `<img src="${generatedAvatarUrl(profile.username)}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">` +
+      `<span class="avatar-fallback" style="background:${grad};">${initials}</span>` +
+      `</div>`;
   }
 
   function rankBadgeHTML(rank) {
@@ -1170,7 +1180,8 @@
           const target = await getProfileById(ev.targetId);
           text = `${name} empezó a seguir a ${target ? escapeHtml(target.username) : 'alguien'}`;
         }
-        return `<div class="activity-row"><span class="activity-dot"></span><span>${text}</span><span class="activity-time">${timeAgo(ev.created_at)}</span></div>`;
+        const href = author ? `perfil.html?u=${encodeURIComponent(author.username)}` : '#';
+        return `<a class="activity-row" href="${href}">${avatarHTML(author || { username: '?' }, 'activity-avatar')}<span class="activity-text">${text}</span><span class="activity-time">${timeAgo(ev.created_at)}</span></a>`;
       }));
       container.innerHTML = rows.join('');
     } catch (e) {
