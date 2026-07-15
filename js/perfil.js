@@ -34,13 +34,26 @@
     return new Date(iso).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' });
   }
   function levelFromPoints(points) { return Math.floor((points || 0) / 100) + 1; }
+  const AVATAR_GRADIENTS = [
+    ['#5b7cfa', '#2f4bd6'], ['#12b3c7', '#0b7f8f'], ['#8e5bf2', '#5b2fa8'],
+    ['#f0a921', '#c46a10'], ['#e13a4b', '#a11824'], ['#1a9fd0', '#0d6d92'],
+    ['#2ecc71', '#189a52'], ['#e84393', '#a3246a'], ['#d4af37', '#a07d14'],
+    ['#ff7a59', '#d24d2f'], ['#5c6b7a', '#333d47'], ['#00b894', '#00806a']
+  ];
+  function avatarHash(s) { let h = 0; s = String(s || 'x'); for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; }
+  function avatarGradient(u) { const g = AVATAR_GRADIENTS[avatarHash(u) % AVATAR_GRADIENTS.length]; return 'linear-gradient(135deg,' + g[0] + ',' + g[1] + ')'; }
+  function generatedAvatarUrl(u) { return 'https://api.dicebear.com/9.x/notionists/svg?seed=' + encodeURIComponent(u || 'trader') + '&scale=130&radius=50'; }
   function avatarHTML(profile, sizeClass) {
-    const color = profile.avatar_color || '#8b93a7';
     if (profile.avatar_url) {
+      const color = profile.avatar_color || '#8b93a7';
       return `<div class="${sizeClass}" style="background:${color};"><img src="${escapeHtml(profile.avatar_url)}" alt="" style="width:100%;height:100%;object-fit:cover;"></div>`;
     }
+    const grad = avatarGradient(profile.username);
     const initial = (profile.username || '?').charAt(0).toUpperCase();
-    return `<div class="${sizeClass}" style="background:${color};">${escapeHtml(initial)}</div>`;
+    return `<div class="${sizeClass} avatar-generated" style="background:${grad};">` +
+      `<img src="${generatedAvatarUrl(profile.username)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">` +
+      `<span class="avatar-fallback" style="background:${grad};">${escapeHtml(initial)}</span>` +
+      `</div>`;
   }
   function rankBadgeHTML(rank) {
     if (!rank || !RANK_LABELS[rank]) return '';

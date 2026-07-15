@@ -136,11 +136,14 @@
     const full = Math.max(0, Math.min(5, Math.round(n || 5)));
     return '★'.repeat(full) + '☆'.repeat(5 - full);
   }
+  function nosGrad(u) { const P = [['#5b7cfa', '#2f4bd6'], ['#12b3c7', '#0b7f8f'], ['#8e5bf2', '#5b2fa8'], ['#f0a921', '#c46a10'], ['#e13a4b', '#a11824'], ['#1a9fd0', '#0d6d92'], ['#2ecc71', '#189a52'], ['#e84393', '#a3246a'], ['#d4af37', '#a07d14'], ['#ff7a59', '#d24d2f'], ['#5c6b7a', '#333d47'], ['#00b894', '#00806a']]; let h = 0; u = String(u || 'x'); for (let i = 0; i < u.length; i++) h = (h * 31 + u.charCodeAt(i)) >>> 0; const g = P[h % P.length]; return 'linear-gradient(135deg,' + g[0] + ',' + g[1] + ')'; }
+  function nosGen(u) { return 'https://api.dicebear.com/9.x/notionists/svg?seed=' + encodeURIComponent(u || 'trader') + '&scale=130&radius=50'; }
   function testimonialCardHTML(t) {
     const initial = (t.name || 'A').trim().charAt(0).toUpperCase();
+    const grad = nosGrad(t.name);
     const avatar = t.avatar_url
       ? `<img src="${t.avatar_url}" alt="" class="nos-test-avatar-img">`
-      : `<span class="nos-test-avatar" style="background:${t.avatar_color || '#d4af37'};">${initial}</span>`;
+      : `<span class="nos-test-avatar avatar-generated" style="background:${grad};"><img src="${nosGen(t.name)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span class="avatar-fallback" style="background:${grad};">${initial}</span></span>`;
     return `
       <div class="nos-test-card reveal reveal-in">
         <div class="nos-test-stars">${starsHTML(t.rating)}</div>

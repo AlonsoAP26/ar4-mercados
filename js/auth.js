@@ -17,6 +17,11 @@
     return div.innerHTML;
   }
 
+  const AV_GRADS = [['#5b7cfa', '#2f4bd6'], ['#12b3c7', '#0b7f8f'], ['#8e5bf2', '#5b2fa8'], ['#f0a921', '#c46a10'], ['#e13a4b', '#a11824'], ['#1a9fd0', '#0d6d92'], ['#2ecc71', '#189a52'], ['#e84393', '#a3246a'], ['#d4af37', '#a07d14'], ['#ff7a59', '#d24d2f'], ['#5c6b7a', '#333d47'], ['#00b894', '#00806a']];
+  function avHash(s) { let h = 0; s = String(s || 'x'); for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; }
+  function avGrad(u) { const g = AV_GRADS[avHash(u) % AV_GRADS.length]; return 'linear-gradient(135deg,' + g[0] + ',' + g[1] + ')'; }
+  function avGen(u) { return 'https://api.dicebear.com/9.x/notionists/svg?seed=' + encodeURIComponent(u || 'trader') + '&scale=130&radius=50'; }
+
   let cachedProfile = null;
   async function fetchCommunityProfile(user) {
     if (cachedProfile !== null) return cachedProfile;
@@ -58,9 +63,10 @@
       } else {
         const profile = await fetchCommunityProfile(user);
         if (profile) {
+          const navGrad = avGrad(profile.username);
           const avatarHTML = profile.avatar_url
             ? `<img class="nav-avatar" src="${escapeHtmlLocal(profile.avatar_url)}" alt="">`
-            : `<span class="nav-avatar nav-avatar-color" style="background:${escapeHtmlLocal(profile.avatar_color || '#d4af37')};">${escapeHtmlLocal((profile.username || '?').charAt(0).toUpperCase())}</span>`;
+            : `<span class="nav-avatar avatar-generated" style="background:${navGrad};"><img src="${avGen(profile.username)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span class="avatar-fallback" style="background:${navGrad};">${escapeHtmlLocal((profile.username || '?').charAt(0).toUpperCase())}</span></span>`;
           authBtn.innerHTML = avatarHTML + `<span>${escapeHtmlLocal(profile.username)}</span>`;
           authBtn.classList.add('has-avatar');
         } else {
