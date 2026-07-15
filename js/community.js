@@ -2149,9 +2149,9 @@
       if (/BTC|ETH|SOL|XRP|DOGE|BNB|ADA|LTC|CRIPTO|USDT|BITCOIN|ETHEREUM/.test(t)) return 'Criptomonedas';
       if (/XAU|\bORO\b|GOLD/.test(t)) return 'Oro';
       if (/XAG|PLATA|SILVER|OIL|PETRO|WTI|BRENT|\bGAS\b|COBRE|COPPER|USOIL|UKOIL/.test(t)) return 'Materias Primas';
-      if (/NAS100|NASDAQ|NDX|US100|SPX|SP500|S&P|US500|US30|DOW|DJI|DAX|GER40|FTSE|UK100|IBEX|NIKKEI|NDX|INDIC/.test(t)) return 'Índices';
-      if (/MXN|BRL|COP|CLP|PEN|ARS|LATAM/.test(t)) return 'LatAm';
       if (/AAPL|TSLA|NVDA|AMZN|MSFT|META|GOOG|NYSE:|NASDAQ:[A-Z]|APPLE|TESLA|NVIDIA|AMAZON|MICROSOFT|ACCION/.test(t)) return 'Acciones';
+      if (/NAS100|NASDAQ|NDX|US100|SPX|SP500|S&P|US500|US30|DOW|DJI|DAX|GER40|FTSE|UK100|IBEX|NIKKEI|INDIC/.test(t)) return 'Índices';
+      if (/MXN|BRL|COP|CLP|PEN|ARS|LATAM/.test(t)) return 'LatAm';
       if (/USD|EUR|GBP|JPY|CHF|CAD|AUD|NZD|FOREX|DIVISA/.test(t)) return 'Forex';
       return null;
     }
