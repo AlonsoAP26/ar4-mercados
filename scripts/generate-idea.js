@@ -144,14 +144,21 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     console.error('Respuesta cortada por max_tokens. Uso:', JSON.stringify(data.usage));
     process.exit(1);
   }
-  const textBlock = Array.isArray(data.content) ? data.content.find((b) => b.type === 'text') : null;
-  if (!textBlock) {
+  // El JSON es el ultimo bloque de texto (delante van los bloques de
+  // pensamiento, y el modelo podria escribir algo antes del objeto).
+  const textBlocks = Array.isArray(data.content) ? data.content.filter((b) => b.type === 'text' && b.text) : [];
+  if (!textBlocks.length) {
     console.error('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason, JSON.stringify(data.usage));
     process.exit(1);
   }
-  let rawText = textBlock.text.trim();
+  let rawText = textBlocks[textBlocks.length - 1].text.trim();
   const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
   if (fence) rawText = fence[1].trim();
+  if (!rawText.startsWith('{')) {
+    const a = rawText.indexOf('{');
+    const b = rawText.lastIndexOf('}');
+    if (a !== -1 && b > a) rawText = rawText.slice(a, b + 1);
+  }
 
   let nueva;
   try {

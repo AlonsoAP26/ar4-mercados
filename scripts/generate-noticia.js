@@ -50,13 +50,25 @@ function slugify(title) {
     .slice(0, 60);
 }
 
+// Normaliza para comparar: la misma URL puede volver con/sin barra final, con
+// www o en otro caso. Sin esto descartariamos fuentes legitimas por una barra.
+// Una URL inventada sigue sin coincidir con ninguna real, que es lo que importa.
+function normUrl(u) {
+  try {
+    const x = new URL(String(u));
+    return (x.hostname.replace(/^www\./, '') + x.pathname.replace(/\/+$/, '') + x.search).toLowerCase();
+  } catch (e) {
+    return String(u).toLowerCase().replace(/\/+$/, '');
+  }
+}
+
 // Todas las URLs que la busqueda web devolvio de verdad. Sirven para comprobar
 // que el modelo no se invente una fuente.
 function collectSearchUrls(allContent) {
   const urls = new Set();
   for (const b of allContent) {
     if (b && b.type === 'web_search_tool_result' && Array.isArray(b.content)) {
-      for (const r of b.content) if (r && r.url) urls.add(String(r.url));
+      for (const r of b.content) if (r && r.url) urls.add(normUrl(r.url));
     }
   }
   return urls;
@@ -222,14 +234,23 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   const searchUrls = collectSearchUrls(allContent);
   console.log('Resultados de búsqueda web reales recibidos: ' + searchUrls.size);
 
-  const textBlock = (data.content || []).find((b) => b.type === 'text');
-  if (!textBlock) {
+  // OJO: con busqueda web el modelo suele escribir texto ANTES de buscar
+  // ("voy a consultar..."), asi que la respuesta trae varios bloques de texto.
+  // El JSON es siempre el ULTIMO; coger el primero rompia el JSON.parse.
+  const textBlocks = (data.content || []).filter((b) => b.type === 'text' && b.text);
+  if (!textBlocks.length) {
     console.error('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason, JSON.stringify(data.usage));
     process.exit(1);
   }
-  let rawText = textBlock.text.trim();
+  let rawText = textBlocks[textBlocks.length - 1].text.trim();
   const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
   if (fence) rawText = fence[1].trim();
+  // Ultimo recurso: si aun asi no empieza por '{', rescata el objeto JSON.
+  if (!rawText.startsWith('{')) {
+    const a = rawText.indexOf('{');
+    const b = rawText.lastIndexOf('}');
+    if (a !== -1 && b > a) rawText = rawText.slice(a, b + 1);
+  }
 
   let nueva;
   try {
@@ -248,8 +269,8 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   // VERIFICACION DE FUENTES: solo sobreviven las URLs que la busqueda devolvio
   // de verdad. Asi una fuente inventada no llega a publicarse.
   const citadas = Array.isArray(nueva.sources) ? nueva.sources : [];
-  const verificadas = citadas.filter((s) => s && s.url && searchUrls.has(String(s.url)));
-  const inventadas = citadas.filter((s) => s && s.url && !searchUrls.has(String(s.url)));
+  const verificadas = citadas.filter((s) => s && s.url && searchUrls.has(normUrl(s.url)));
+  const inventadas = citadas.filter((s) => s && s.url && !searchUrls.has(normUrl(s.url)));
   if (inventadas.length) {
     console.warn('Se descartan ' + inventadas.length + ' fuente(s) que no salieron de la búsqueda:');
     inventadas.forEach((s) => console.warn('  - ' + s.url));
