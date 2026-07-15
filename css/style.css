@@ -1132,6 +1132,10 @@ a { color: inherit; text-decoration: none; }
 .ctab-ic svg { display: block; }
 .community-tab-btn:hover .ctab-ic { color: var(--text-hi); }
 .community-tab-btn.active .ctab-ic { color: var(--gold-bright); }
+/* Estudio de gráfico interactivo en el compositor */
+.chart-studio { height: 68vh; min-height: 420px; max-height: 640px; margin-top: 6px; border: 1px solid var(--card-border); border-radius: 10px; overflow: hidden; }
+.chart-studio .tradingview-widget-container, .chart-studio .tradingview-widget-container__widget, .chart-studio iframe { height: 100% !important; width: 100% !important; }
+@media (max-width: 640px) { .chart-studio { height: 60vh; min-height: 340px; } }
 @media (max-width: 900px) {
   .community-tab-btn { width: auto; border-left: none; border-bottom: 3px solid transparent; }
   .community-tab-btn.active { border-bottom-color: var(--gold); }

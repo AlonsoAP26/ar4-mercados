@@ -567,6 +567,13 @@
           <button type="button" class="sentiment-option" data-sentiment="bajista">🔴 Bajista</button>
           <button type="button" class="sentiment-option" data-sentiment="neutral">⚪ Neutral</button>
         </div>
+        <div class="chart-studio-wrap" style="margin-top:16px;">
+          <button type="button" class="btn btn-outline btn-block" id="postChartToggle">📈 Abrir gráfico para dibujar mi análisis</button>
+          <div id="postChartStudio" hidden>
+            <p class="footer-text" style="margin:12px 0;">Dibuja tu análisis en el gráfico (líneas de tendencia, soportes, Fibonacci, indicadores…). Al terminar, <strong style="color:var(--gold-bright);">toma una captura</strong> y súbela abajo con "Adjuntar imagen".<br>📸 Windows: <strong>⊞ Win + Shift + S</strong> &nbsp;·&nbsp; Mac: <strong>⌘ Cmd + Shift + 4</strong> &nbsp;·&nbsp; o el ícono de cámara del gráfico.</p>
+            <div class="chart-studio" id="postChartStudioMount"></div>
+          </div>
+        </div>
         <div class="comment-attach-row" style="margin-top:12px;">
           <button type="button" class="comment-attach-btn" id="postAttachBtn">📎 Adjuntar imagen, video o PDF</button>
           <input type="file" id="postMediaInput" accept="image/png,image/jpeg,image/gif,image/webp,video/mp4,video/webm,application/pdf" hidden>
@@ -2117,6 +2124,40 @@
     const pollFields = document.getElementById('postPollFields');
     if (addPollCheckbox && pollFields) {
       addPollCheckbox.addEventListener('change', () => { pollFields.hidden = !addPollCheckbox.checked; });
+    }
+
+    // Estudio de gráfico interactivo (TradingView) para dibujar el análisis y capturarlo.
+    const chartToggle = document.getElementById('postChartToggle');
+    const chartStudio = document.getElementById('postChartStudio');
+    const chartMount = document.getElementById('postChartStudioMount');
+    let chartLoadedSymbol = null;
+    function buildChartStudio() {
+      if (!chartMount) return;
+      const sym = resolvePostSymbol(document.getElementById('postSymbol').value) || 'FX:EURUSD';
+      if (chartLoadedSymbol === sym && chartMount.querySelector('iframe')) return;
+      chartLoadedSymbol = sym;
+      chartMount.innerHTML = '<div class="tradingview-widget-container" style="height:100%;width:100%;"><div class="tradingview-widget-container__widget" style="height:100%;width:100%;"></div></div>';
+      const s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+      s.text = JSON.stringify({
+        autosize: true, symbol: sym, interval: '60', timezone: 'America/Lima',
+        theme: 'dark', style: '1', locale: 'es',
+        hide_side_toolbar: false, allow_symbol_change: true, save_image: true,
+        studies: ['STD;EMA'], support_host: 'https://www.tradingview.com'
+      });
+      chartMount.querySelector('.tradingview-widget-container').appendChild(s);
+    }
+    if (chartToggle && chartStudio) {
+      chartToggle.addEventListener('click', () => {
+        const willShow = chartStudio.hidden;
+        chartStudio.hidden = !willShow;
+        chartToggle.textContent = willShow ? '📈 Ocultar gráfico' : '📈 Abrir gráfico para dibujar mi análisis';
+        if (willShow) buildChartStudio();
+      });
+      const symInput = document.getElementById('postSymbol');
+      if (symInput) symInput.addEventListener('change', () => { if (!chartStudio.hidden) buildChartStudio(); });
     }
 
     let selectedIdeaDirection = null;
