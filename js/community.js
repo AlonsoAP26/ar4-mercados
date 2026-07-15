@@ -284,7 +284,7 @@
     const initials = avatarInitials(profile.username);
     // Avatar generado (imagen); si falla, se muestran las iniciales sobre el degradado.
     return `<div class="${sizeClass} avatar-generated" style="background:${grad};">` +
-      `<img src="${generatedAvatarUrl(profile.username)}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">` +
+      `<img src="${generatedAvatarUrl(profile.username)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">` +
       `<span class="avatar-fallback" style="background:${grad};">${initials}</span>` +
       `</div>`;
   }
