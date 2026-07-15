@@ -456,5 +456,57 @@
       ],
       "patronUltimaVela": "vela bajista sin patron destacable"
     }
+  },
+  {
+    "title": "USD/CLP se estanca en 925 tras el rally mensual del 4,5%, con RSI neutral en 57",
+    "excerpt": "El peso chileno frena su avance mensual y el dólar queda atrapado entre 921,03 y 928,75, con las medias móviles todavía en estructura alcista.",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Una sesión plana corta el envión mensual del dólar contra el peso</h3><p>El USD/CLP cerró la última jornada en 925,31, prácticamente sin cambios frente al cierre anterior de 925,05 (variación del día de 0%). El rango real de la sesión fue nulo, con mínimo y máximo coincidiendo en 925,31, lo que refleja una jornada de muy baja actividad direccional. No se identifica un patrón de vela concreto en este cierre. Esta pausa llega después de un avance mensual del 4,5%, que contrasta con una semana en retroceso del 1% y con una variación anual todavía negativa del 2,6%.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Estructura de medias alcista, pero el precio pierde tracción</h3><p>El precio se mantiene por encima de la media móvil de 50 sesiones (907,22) y de la media de 200 (906,54), con la media de 50 situada por encima de la de 200, configuración técnica que suele leerse como estructura de fondo alcista. Sin embargo, el estancamiento de la última sesión y la caída semanal del 1% muestran que el impulso reciente pierde fuerza justo cuando el precio se acerca a la zona de resistencia más próxima, en 928,75.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Lejos de ambos extremos del rango anual</h3><p>El nivel actual se ubica a un 5,8% del máximo de 52 semanas (982,25) y a un 8,6% del mínimo del mismo período (851,76). Esta posición intermedia, junto con un RSI (índice de fuerza relativa, que mide la velocidad y magnitud de los movimientos recientes en una escala de 0 a 100) de 57, en zona neutral, describe un mercado que ya no está en tendencia extrema y que necesita un catalizador claro para definir su próximo tramo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Niveles e indicadores clave</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong style=\"color:var(--green);\">Soportes:</strong> 921,03 · 916,24 · 909,57</li><li><strong style=\"color:var(--crimson-bright);\">Resistencias:</strong> 928,75 · 934,03 · 940,23</li><li>RSI(14): 57, en zona neutral, sin señal de sobrecompra ni sobreventa.</li><li>Precio por encima de la media de 50 (907,22) y de la media de 200 (906,54), con estructura de medias alcista.</li><li>ATR(14) (rango medio diario de las últimas 14 sesiones): 10,09, referencia de la volatilidad típica reciente.</li><li>Patrón de la última vela: no identificado, sesión sin rango de variación.</li></ul><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Lectura de flujo institucional</h3><p>Desde una óptica de Smart Money Concepts, el avance mensual del 4,5% que llevó al precio desde niveles cercanos a la media de 200 (906,54) hasta la zona actual de 925,31 probablemente dejó un Fair Value Gap (FVG, un vacío de precio generado por un movimiento impulsivo, que el mercado tiende a revisitar) en el tramo comprendido entre el soporte de 916,24 y el nivel de 921,03. Esa franja concentra hoy el interés de vigilancia, ya que una eventual corrección hacia allí actuaría como test del impulso alcista sin romper la estructura de fondo. La zona donde convergen las medias móviles de 50 y 200 (906,54–907,22) funciona como un potencial Order Block (la última vela contraria antes de un movimiento fuerte, donde suele concentrarse órdenes institucionales pendientes) de origen del rally mensual. En los extremos del rango anual se identifican las zonas de liquidez más relevantes: bajo el mínimo de 52 semanas (851,76) y sobre el máximo de 982,25, donde es previsible una acumulación de stops de mercado. Mientras el precio se mueva dentro del rango 921,03–928,75 sin una ruptura clara, no hay evidencia de un Break of Structure (BOS, ruptura de un máximo o mínimo relevante que confirma continuidad de tendencia) ni de un Change of Character (CHoCH, cambio de carácter que anticipa un giro de tendencia).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario alcista: continuidad del rally mensual</h3><p>Un cierre sostenido por encima de la resistencia de 928,75 abriría paso a un tramo hacia 934,03 y, en extensión, hacia 940,23. Este escenario se apoyaría en la estructura de medias todavía alcista (media de 50 por encima de la de 200) y quedaría invalidado si el precio perfora el soporte de 921,03, lo que devolvería la lectura a un rango sin dirección clara.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario bajista: pérdida del soporte inmediato</h3><p>Una ruptura confirmada del soporte de 921,03 habilitaría un descenso hacia 916,24 y, de extenderse la presión vendedora, hacia 909,57, en las cercanías de la media móvil de 50 (907,22). Este escenario quedaría invalidado si el precio recupera y sostiene niveles por encima de 928,75, lo que devolvería el control al sesgo alcista de fondo.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>",
+    "trend": "neutral",
+    "symbol": "FX_IDC:USDCLP",
+    "category": "LatAm",
+    "slug": "usdclp-se-estanca-en-925-tras-el-rally-mensual-del-45-con-rs-mrmnlvh5",
+    "author": "AR4 Mercados",
+    "date": "2026-07-15",
+    "marketData": {
+      "symbol": "FX_IDC:USDCLP",
+      "nombre": "USD/CLP (peso chileno)",
+      "yahooSymbol": "USDCLP=X",
+      "fuente": "Yahoo Finance (USDCLP=X)",
+      "fechaUltimaVela": "2026-07-15",
+      "precio": 925.31,
+      "cierreAnterior": 925.05,
+      "variacionDiaPct": 0,
+      "variacionSemanaPct": -1,
+      "variacionMesPct": 4.5,
+      "variacionAnioPct": -2.6,
+      "rangoDiaReal": {
+        "minimo": 925.31,
+        "maximo": 925.31
+      },
+      "rsi14": 57,
+      "lecturaRsi": "neutral",
+      "media50": 907.22,
+      "media200": 906.54,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 10.09,
+      "maximo52sem": 982.25,
+      "minimo52sem": 851.76,
+      "distanciaAMaximo52semPct": -5.8,
+      "distanciaAMinimo52semPct": 8.6,
+      "soportes": [
+        921.03,
+        916.24,
+        909.57
+      ],
+      "resistencias": [
+        928.75,
+        934.03,
+        940.23
+      ],
+      "patronUltimaVela": null
+    }
   }
 ]
