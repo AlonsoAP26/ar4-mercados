@@ -610,7 +610,7 @@
         </div>
         <div class="chart-studio-wrap" style="margin-top:16px;">
           <label>📈 Gráfico</label>
-          <p class="footer-text" style="margin:6px 0 10px;">Elige el activo en <strong>Instrumento</strong> o en los botones: el <strong>gráfico y la categoría se ajustan solos</strong>. Toca <strong style="color:var(--gold-bright);">"📸 Adjuntar este gráfico"</strong> para subirlo automático — o dibuja con herramientas avanzadas en TradingView y sube tu captura.</p>
+          <p class="footer-text" style="margin:6px 0 10px;">Elige el activo en <strong>Instrumento</strong> o en los botones: el <strong>gráfico y la categoría se ajustan solos</strong>.</p>
           <div class="chart-chips" id="postChartChips">
             <button type="button" class="chart-chip" data-sym="EUR/USD" data-cat="Forex">EUR/USD</button>
             <button type="button" class="chart-chip" data-sym="USD/MXN" data-cat="Forex">USD/MXN</button>
@@ -623,15 +623,20 @@
             <button type="button" class="chart-chip" data-sym="NASDAQ:AAPL" data-cat="Acciones">Apple</button>
             <button type="button" class="chart-chip" data-sym="NASDAQ:TSLA" data-cat="Acciones">Tesla</button>
           </div>
-          <div class="ar4chart" id="postLwChart"></div>
-          <div class="chart-actions">
-            <button type="button" class="btn btn-gold" id="postChartAttach">📸 Adjuntar este gráfico</button>
-            <button type="button" class="btn-tv-draw" id="postTvToggle">✏️ ¿Quieres dibujar tu análisis? Ábrelo en TradingView →</button>
-            <span class="chart-attach-note" id="postChartAttachNote"></span>
+          <div class="chart-switch" id="postChartSwitch">
+            <button type="button" class="chart-switch-btn active" data-chart="lw">📊 Gráfico de velas</button>
+            <button type="button" class="chart-switch-btn" data-chart="tv">✏️ TradingView (dibujar)</button>
           </div>
-          <div id="postChartStudio" hidden style="margin-top:12px;">
-            <p class="footer-text" style="margin:0 0 8px;">Dibuja tu análisis (Fibonacci, indicadores…) y toma una captura (⊞ Win+Shift+S · ⌘ Cmd+Shift+4 · o el ícono de cámara) para subirla con "Adjuntar imagen".</p>
+          <div id="postLwWrap">
+            <div class="ar4chart" id="postLwChart"></div>
+            <div class="chart-actions">
+              <button type="button" class="btn btn-gold" id="postChartAttach">📸 Adjuntar este gráfico</button>
+              <span class="chart-attach-note" id="postChartAttachNote"></span>
+            </div>
+          </div>
+          <div id="postTvWrap" hidden>
             <div class="chart-studio" id="postChartStudioMount"></div>
+            <p class="footer-text" style="margin:8px 0 0;">Dibuja tu análisis (Fibonacci, indicadores…) y toma una captura (⊞ Win+Shift+S · ⌘ Cmd+Shift+4 · o el ícono de cámara del gráfico) para subirla con "Adjuntar imagen".</p>
           </div>
         </div>
         <div class="comment-attach-row" style="margin-top:12px;">
@@ -2192,7 +2197,8 @@
     const symDropdown = document.getElementById('postSymbolDropdown');
     const lwMount = document.getElementById('postLwChart');
     const tvMount = document.getElementById('postChartStudioMount');
-    const tvStudio = document.getElementById('postChartStudio');
+    const lwWrap = document.getElementById('postLwWrap');
+    const tvWrap = document.getElementById('postTvWrap');
 
     function inferCategoryFromSymbol(raw) {
       const t = (raw || '').toUpperCase().replace(/\s+/g, '');
@@ -2261,7 +2267,7 @@
       if (cat && postCategorySelect && CATEGORY_LABELS.indexOf(cat) >= 0) postCategorySelect.value = cat;
       else syncCategoryFromSymbol();
       buildLwChart();
-      if (tvStudio && !tvStudio.hidden) buildTvChart();
+      if (tvWrap && !tvWrap.hidden) buildTvChart();
     }
 
     function renderSymbolDropdown(query) {
@@ -2297,19 +2303,24 @@
       postSymbolInput.addEventListener('input', () => {
         renderSymbolDropdown(postSymbolInput.value);
         clearTimeout(chartDebounce);
-        chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildLwChart(); if (tvStudio && !tvStudio.hidden) buildTvChart(); }, 700);
+        chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildLwChart(); if (tvWrap && !tvWrap.hidden) buildTvChart(); }, 700);
       });
-      postSymbolInput.addEventListener('change', () => { syncCategoryFromSymbol(); buildLwChart(); if (tvStudio && !tvStudio.hidden) buildTvChart(); });
+      postSymbolInput.addEventListener('change', () => { syncCategoryFromSymbol(); buildLwChart(); if (tvWrap && !tvWrap.hidden) buildTvChart(); });
       postSymbolInput.addEventListener('blur', () => { setTimeout(() => { if (symDropdown) symDropdown.hidden = true; }, 150); });
 
-      // Abrir/cerrar el gráfico de TradingView para dibujar.
-      const tvToggle = document.getElementById('postTvToggle');
-      if (tvToggle && tvStudio) {
-        tvToggle.addEventListener('click', () => {
-          const willShow = tvStudio.hidden;
-          tvStudio.hidden = !willShow;
-          tvToggle.textContent = willShow ? '✕ Ocultar el gráfico de TradingView' : '✏️ ¿Quieres dibujar tu análisis? Ábrelo en TradingView →';
-          if (willShow) buildTvChart();
+      // Selector de gráfico (velas ↔ TradingView): muestra solo uno a la vez.
+      const chartSwitch = document.getElementById('postChartSwitch');
+      if (chartSwitch && lwWrap && tvWrap) {
+        chartSwitch.querySelectorAll('.chart-switch-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const which = btn.dataset.chart;
+            chartSwitch.querySelectorAll('.chart-switch-btn').forEach((b) => b.classList.toggle('active', b === btn));
+            if (which === 'tv') {
+              lwWrap.hidden = true; tvWrap.hidden = false; buildTvChart();
+            } else {
+              tvWrap.hidden = true; lwWrap.hidden = false; lwResize();
+            }
+          });
         });
       }
 
