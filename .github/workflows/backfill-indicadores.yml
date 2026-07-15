@@ -1,0 +1,53 @@
+name: Rellenar indicadores en contenido antiguo (manual)
+
+# Trae el dossier real de mercado (RSI, medias, soportes, resistencias) para las
+# noticias e ideas publicadas antes del pipeline de datos reales, de modo que el
+# panel de indicadores funcione tambien en ellas en vez de caer al widget de
+# TradingView, que se queda sin datos en los simbolos CFD.
+#
+# No necesita ANTHROPIC_API_KEY: solo consulta precios, no escribe texto.
+# Un solo commit al final = un solo deploy.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: backfill-indicadores
+  cancel-in-progress: false
+
+jobs:
+  rellenar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rellenar marketData
+        run: node scripts/backfill-marketdata.js
+
+      - name: Commit y push unico
+        if: always()
+        run: |
+          git config user.name "AR4 Mercados Bot"
+          git config user.email "bot@ar4mercados.local"
+          git add data/noticias.json data/ideas.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios: no habia nada que rellenar."
+            exit 0
+          fi
+          git commit -m "Rellenar indicadores reales en el contenido publicado"
+          for intento in 1 2 3; do
+            if git pull --rebase --autostash origin master && git push; then
+              exit 0
+            fi
+            echo "Push fallido, reintento $intento..."
+            sleep 5
+          done
+          exit 1

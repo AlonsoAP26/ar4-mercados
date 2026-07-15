@@ -411,7 +411,18 @@ async function initNoticiaDetail() {
       renderNewsChart(chartContainer, n.symbol);
 
       const techContainer = document.getElementById('noticiaTechnical');
-      if (techContainer) renderTechnicalAnalysis(techContainer, n.symbol);
+      // Panel propio con los indicadores reales que viajan dentro de la noticia:
+      // no depende de ningun widget externo y no puede quedarse sin datos. El
+      // widget de TradingView solo queda de respaldo para piezas sin marketData.
+      const pintaIndicadores = (sym) => {
+        if (!techContainer) return;
+        if (n.marketData && window.AR4_renderIndicators && sym === n.symbol) {
+          window.AR4_renderIndicators(techContainer, n.marketData);
+        } else {
+          renderTechnicalAnalysis(techContainer, sym);
+        }
+      };
+      pintaIndicadores(n.symbol);
 
       if (n.symbol2) {
         chartWrap.querySelectorAll('.idea-chart-tabs button').forEach(btn => {
@@ -419,7 +430,7 @@ async function initNoticiaDetail() {
             chartWrap.querySelectorAll('.idea-chart-tabs button').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             renderNewsChart(chartContainer, btn.dataset.symbol);
-            if (techContainer) renderTechnicalAnalysis(techContainer, btn.dataset.symbol);
+            pintaIndicadores(btn.dataset.symbol);
           });
         });
       }

@@ -354,8 +354,25 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   nueva.sourceName = nueva.sources[0].name;
   nueva.sourceUrl = nueva.sources[0].url;
 
-  // Panel real usado al redactar: permite auditar cualquier cifra del texto.
-  nueva.marketData = dossiers;
+  // Panel completo usado al redactar: permite auditar cualquier cifra del texto.
+  nueva.marketPanel = dossiers;
+
+  // Dossier del instrumento principal, con la MISMA forma que en las ideas, para
+  // que el panel de indicadores del sitio sea identico en noticias y analisis.
+  // El modelo elige el symbol despues de escribir, asi que se trae aqui.
+  if (nueva.symbol) {
+    const yaTraido = dossiers.find((d) => d.symbol === nueva.symbol);
+    if (yaTraido) {
+      nueva.marketData = yaTraido;
+    } else {
+      try {
+        nueva.marketData = await buildDossier(nueva.symbol);
+      } catch (e) {
+        console.warn('Sin datos del instrumento principal ' + nueva.symbol + ': ' + e.message);
+        nueva.marketData = null;
+      }
+    }
+  }
 
   noticias.push(nueva);
   fs.writeFileSync(DATA_PATH, JSON.stringify(noticias, null, 2) + '\n');
