@@ -259,12 +259,24 @@
     return escapeHtml((username || '?').slice(0, 2).toUpperCase());
   }
 
+  // Degradado determinista por usuario para el avatar por defecto (look profesional).
+  const AVATAR_GRADIENTS = [
+    ['#5b7cfa', '#2f4bd6'], ['#12b3c7', '#0b7f8f'], ['#8e5bf2', '#5b2fa8'],
+    ['#f0a921', '#c46a10'], ['#e13a4b', '#a11824'], ['#1a9fd0', '#0d6d92'],
+    ['#2ecc71', '#189a52'], ['#e84393', '#a3246a'], ['#d4af37', '#a07d14'],
+    ['#ff7a59', '#d24d2f'], ['#5c6b7a', '#333d47'], ['#00b894', '#00806a']
+  ];
+  function avatarHash(s) { let h = 0; s = String(s || 'x'); for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; }
+  function avatarGradient(username) {
+    const g = AVATAR_GRADIENTS[avatarHash(username) % AVATAR_GRADIENTS.length];
+    return 'linear-gradient(135deg,' + g[0] + ',' + g[1] + ')';
+  }
   function avatarHTML(profile, sizeClass) {
-    const color = profile.avatar_color || '#8b93a7';
     if (profile.avatar_url) {
+      const color = profile.avatar_color || '#8b93a7';
       return `<div class="${sizeClass}" style="background:${color};"><img src="${escapeHtml(profile.avatar_url)}" alt="" style="width:100%;height:100%;object-fit:cover;"></div>`;
     }
-    return `<div class="${sizeClass}" style="background:${color};">${avatarInitials(profile.username)}</div>`;
+    return `<div class="${sizeClass} avatar-initials" style="background:${avatarGradient(profile.username)};">${avatarInitials(profile.username)}</div>`;
   }
 
   function rankBadgeHTML(rank) {
