@@ -569,7 +569,19 @@
         </div>
         <div class="chart-studio-wrap" style="margin-top:16px;">
           <label>📈 Gráfico para dibujar tu análisis</label>
-          <p class="footer-text" style="margin:6px 0 10px;">Dibuja aquí tu análisis (líneas de tendencia, soportes, Fibonacci, indicadores…). Cuando termines, <strong style="color:var(--gold-bright);">toma una captura</strong> y súbela abajo con "Adjuntar imagen".<br>📸 Windows: <strong>⊞ Win + Shift + S</strong> &nbsp;·&nbsp; Mac: <strong>⌘ Cmd + Shift + 4</strong> &nbsp;·&nbsp; o el ícono de cámara del gráfico. El gráfico se ajusta solo al instrumento que escribas arriba.</p>
+          <p class="footer-text" style="margin:6px 0 10px;">Elige el activo abajo (o escríbelo en "Instrumento"): el <strong>gráfico y la categoría se ajustan solos</strong>. Dibuja tu análisis, <strong style="color:var(--gold-bright);">toma una captura</strong> (⊞ Win+Shift+S · ⌘ Cmd+Shift+4 · o el ícono de cámara del gráfico) y súbela con "Adjuntar imagen".</p>
+          <div class="chart-chips" id="postChartChips">
+            <button type="button" class="chart-chip" data-sym="EUR/USD" data-cat="Forex">EUR/USD</button>
+            <button type="button" class="chart-chip" data-sym="USD/MXN" data-cat="LatAm">USD/MXN</button>
+            <button type="button" class="chart-chip" data-sym="ORO" data-cat="Oro">🥇 Oro</button>
+            <button type="button" class="chart-chip" data-sym="PETROLEO" data-cat="Materias Primas">🛢️ Petróleo</button>
+            <button type="button" class="chart-chip" data-sym="BTC/USD" data-cat="Criptomonedas">₿ BTC/USD</button>
+            <button type="button" class="chart-chip" data-sym="ETH/USD" data-cat="Criptomonedas">Ξ ETH/USD</button>
+            <button type="button" class="chart-chip" data-sym="NASDAQ" data-cat="Índices">NASDAQ 100</button>
+            <button type="button" class="chart-chip" data-sym="SP500" data-cat="Índices">S&P 500</button>
+            <button type="button" class="chart-chip" data-sym="NASDAQ:AAPL" data-cat="Acciones">🍎 Apple</button>
+            <button type="button" class="chart-chip" data-sym="NASDAQ:TSLA" data-cat="Acciones">🚗 Tesla</button>
+          </div>
           <div class="chart-studio" id="postChartStudioMount"></div>
         </div>
         <div class="comment-attach-row" style="margin-top:12px;">
@@ -2124,12 +2136,33 @@
       addPollCheckbox.addEventListener('change', () => { pollFields.hidden = !addPollCheckbox.checked; });
     }
 
-    // Gráfico interactivo (TradingView) siempre visible: se dibuja el análisis y se captura.
+    // Gráfico interactivo (TradingView) siempre visible + sincronía instrumento ↔ categoría.
     const chartMount = document.getElementById('postChartStudioMount');
+    const postSymbolInput = document.getElementById('postSymbol');
+    const postCategorySelect = document.getElementById('postCategory');
     let chartLoadedSymbol = null;
+
+    // Deduce la categoría a partir de lo que se escribe en Instrumento.
+    function inferCategoryFromSymbol(raw) {
+      const t = (raw || '').toUpperCase().replace(/\s+/g, '');
+      if (!t) return null;
+      if (/BTC|ETH|SOL|XRP|DOGE|BNB|ADA|LTC|CRIPTO|USDT|BITCOIN|ETHEREUM/.test(t)) return 'Criptomonedas';
+      if (/XAU|\bORO\b|GOLD/.test(t)) return 'Oro';
+      if (/XAG|PLATA|SILVER|OIL|PETRO|WTI|BRENT|\bGAS\b|COBRE|COPPER|USOIL|UKOIL/.test(t)) return 'Materias Primas';
+      if (/NAS100|NASDAQ|NDX|US100|SPX|SP500|S&P|US500|US30|DOW|DJI|DAX|GER40|FTSE|UK100|IBEX|NIKKEI|NDX|INDIC/.test(t)) return 'Índices';
+      if (/MXN|BRL|COP|CLP|PEN|ARS|LATAM/.test(t)) return 'LatAm';
+      if (/AAPL|TSLA|NVDA|AMZN|MSFT|META|GOOG|NYSE:|NASDAQ:[A-Z]|APPLE|TESLA|NVIDIA|AMAZON|MICROSOFT|ACCION/.test(t)) return 'Acciones';
+      if (/USD|EUR|GBP|JPY|CHF|CAD|AUD|NZD|FOREX|DIVISA/.test(t)) return 'Forex';
+      return null;
+    }
+    function syncCategoryFromSymbol() {
+      if (!postSymbolInput || !postCategorySelect) return;
+      const cat = inferCategoryFromSymbol(postSymbolInput.value);
+      if (cat && CATEGORY_LABELS.indexOf(cat) >= 0) postCategorySelect.value = cat;
+    }
     function buildChartStudio() {
       if (!chartMount) return;
-      const sym = resolvePostSymbol(document.getElementById('postSymbol').value) || 'FX:EURUSD';
+      const sym = resolvePostSymbol(postSymbolInput.value) || 'FX:EURUSD';
       if (chartLoadedSymbol === sym && chartMount.querySelector('iframe')) return;
       chartLoadedSymbol = sym;
       chartMount.innerHTML = '<div class="tradingview-widget-container" style="height:100%;width:100%;"><div class="tradingview-widget-container__widget" style="height:100%;width:100%;"></div></div>';
@@ -2140,19 +2173,31 @@
       s.text = JSON.stringify({
         autosize: true, symbol: sym, interval: '60', timezone: 'America/Lima',
         theme: 'dark', style: '1', locale: 'es',
-        hide_side_toolbar: false, allow_symbol_change: true, save_image: true,
+        hide_side_toolbar: false, allow_symbol_change: false, save_image: true,
         studies: ['STD;EMA'], support_host: 'https://www.tradingview.com'
       });
       chartMount.querySelector('.tradingview-widget-container').appendChild(s);
     }
     if (chartMount) {
       buildChartStudio(); // el gráfico aparece de inmediato
-      const symInput = document.getElementById('postSymbol');
-      if (symInput) {
+      // Botones rápidos de activo: rellenan Instrumento, ajustan categoría y recargan el gráfico.
+      const chipsWrap = document.getElementById('postChartChips');
+      if (chipsWrap && postSymbolInput) {
+        chipsWrap.querySelectorAll('.chart-chip').forEach((chip) => {
+          chip.addEventListener('click', () => {
+            postSymbolInput.value = chip.dataset.sym;
+            if (chip.dataset.cat && postCategorySelect) postCategorySelect.value = chip.dataset.cat;
+            chipsWrap.querySelectorAll('.chart-chip').forEach((c) => c.classList.remove('active'));
+            chip.classList.add('active');
+            buildChartStudio();
+          });
+        });
+      }
+      if (postSymbolInput) {
         let chartDebounce = null;
-        const refresh = () => { clearTimeout(chartDebounce); chartDebounce = setTimeout(buildChartStudio, 700); };
-        symInput.addEventListener('change', buildChartStudio);
-        symInput.addEventListener('input', refresh);
+        const refresh = () => { clearTimeout(chartDebounce); chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildChartStudio(); }, 700); };
+        postSymbolInput.addEventListener('change', () => { syncCategoryFromSymbol(); buildChartStudio(); });
+        postSymbolInput.addEventListener('input', refresh);
       }
     }
 
