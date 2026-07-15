@@ -1,15 +1,30 @@
 const fs = require('fs');
 const path = require('path');
+const { buildDossier, dossierToPrompt } = require('./_market-data');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'ideas.json');
-const CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas'];
-const ALLOWED_SYMBOLS = [
-  'FX:EURUSD', 'FX:GBPUSD', 'FX:USDJPY',
-  'FX_IDC:USDMXN', 'FX_IDC:USDCOP', 'FX_IDC:USDCLP', 'FX_IDC:USDARS', 'FX_IDC:USDBRL', 'FX_IDC:USDPEN',
-  'OANDA:XAUUSD', 'TVC:USOIL', 'TVC:UKOIL',
-  'FOREXCOM:SPXUSD', 'FOREXCOM:NSXUSD',
-  'BITSTAMP:BTCUSD', 'COINBASE:ETHUSD'
-];
+
+// El instrumento lo elige el script (no el modelo), porque necesitamos traer
+// sus datos reales ANTES de escribir. La categoria se deriva del instrumento.
+const SYMBOL_CATEGORY = {
+  'FX:EURUSD': 'Forex',
+  'FX:GBPUSD': 'Forex',
+  'FX:USDJPY': 'Forex',
+  'FX_IDC:USDMXN': 'LatAm',
+  'FX_IDC:USDCOP': 'LatAm',
+  'FX_IDC:USDCLP': 'LatAm',
+  'FX_IDC:USDARS': 'LatAm',
+  'FX_IDC:USDBRL': 'LatAm',
+  'FX_IDC:USDPEN': 'LatAm',
+  'OANDA:XAUUSD': 'Materias Primas',
+  'TVC:USOIL': 'Materias Primas',
+  'TVC:UKOIL': 'Materias Primas',
+  'FOREXCOM:SPXUSD': 'Índices',
+  'FOREXCOM:NSXUSD': 'Índices',
+  'BITSTAMP:BTCUSD': 'Criptomonedas',
+  'COINBASE:ETHUSD': 'Criptomonedas'
+};
+const ALLOWED_SYMBOLS = Object.keys(SYMBOL_CATEGORY);
 
 function slugify(title) {
   return title
@@ -21,6 +36,14 @@ function slugify(title) {
     .slice(0, 60);
 }
 
+// Rota instrumentos: evita repetir los de los ultimos 6 analisis.
+function pickSymbol(ideas) {
+  const recientes = new Set(ideas.slice(-6).map((i) => i.symbol).filter(Boolean));
+  const frescos = ALLOWED_SYMBOLS.filter((s) => !recientes.has(s));
+  const pool = frescos.length ? frescos : ALLOWED_SYMBOLS;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
@@ -29,42 +52,66 @@ async function main() {
   }
 
   const ideas = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
-  const existingTitles = ideas.map(a => `- ${a.title}`).join('\n');
+  const existingTitles = ideas.slice(-25).map((a) => `- ${a.title}`).join('\n');
 
-  const prompt = `Genera UN análisis de mercado nuevo y original para un sitio de trading dirigido a Latinoamérica, en español. Puede ser sobre forex (pares mayores o USD/MXN, USD/COP, USD/CLP, USD/BRL, USD/PEN, USD/ARS), materias primas (oro, petróleo) o índices bursátiles.
+  const symbol = pickSymbol(ideas);
+  const category = SYMBOL_CATEGORY[symbol];
 
-Elige una categoría de esta lista: ${CATEGORIES.join(', ')}.
+  // Datos reales ANTES de escribir. Si la fuente falla, no publicamos: es
+  // preferible saltarse un dia a publicar cifras inventadas.
+  let d;
+  try {
+    d = await buildDossier(symbol);
+  } catch (e) {
+    console.error('No se pudieron obtener datos reales de ' + symbol + ':', e.message);
+    console.error('No se publica nada: preferimos no publicar antes que inventar cifras.');
+    process.exit(1);
+  }
+  const datos = dossierToPrompt(d);
 
-No repitas ninguno de estos temas ya publicados:
-${existingTitles}
+  const prompt = `Genera UN análisis de mercado nuevo y original para AR4 Mercados, un sitio de trading en español dirigido a Latinoamérica.
 
-Elige también el instrumento principal del que trata el análisis, usando EXACTAMENTE uno de estos códigos: ${ALLOWED_SYMBOLS.join(', ')}.
+El análisis es sobre: ${d.nombre} (código ${symbol}), categoría "${category}".
 
-REGLAS ESTRICTAS DE CONTENIDO (muy importantes):
-- Este es un análisis de CONTEXTO, no una señal de trading. NUNCA digas "compra", "vende", "entra en", ni des niveles específicos de entrada/stop loss/take profit como instrucción.
-- Describe qué está moviendo el activo (catalizadores, datos económicos, contexto), qué niveles técnicos son relevantes de VIGILAR (no de operar), y qué podría cambiar el escenario.
-- Escribe en LENGUAJE BÁSICO Y CLARO pero TÉCNICO: evita jerga innecesaria, pero cuando uses un término técnico (soporte, resistencia, catalizador, carry trade, etc.) explica el concepto brevemente la primera vez que lo uses, en una frase corta entre paréntesis o aposición.
-- REGISTRO SERIO Y PROFESIONAL, tipo desk de research institucional (Bloomberg, Reuters, informe de un banco), NO una charla informal entre colegas. Frases declarativas y precisas. NUNCA uses ganchos retóricos como "Aquí es donde se pone interesante", "eso sí", "ojo con", preguntas retóricas, ni la fórmula de falso contraste "el problema no está en X sino en Y". Evita también las muletillas típicas de IA ("es importante destacar que", "cabe mencionar que", "en resumen").
-- ESTRUCTURA VARIABLE, NO REPETIR SIEMPRE EL MISMO ESQUEMA: no uses en todos los análisis el mismo arco narrativo fijo (causa → niveles a vigilar → comodín de cierre). Varía cuántas secciones usas (2 a 5), el orden en que presentas la información (a veces empieza con el nivel técnico, a veces con el dato macro, a veces comparando dos activos) y el tipo de cierre. Cada análisis debe sentirse estructurado de forma distinta a los anteriores, no como una plantilla rellenada con datos nuevos.
-- SUBTÍTULOS ÚNICOS Y ESPECÍFICOS AL TEMA: nunca uses subtítulos genéricos como "Contexto", "Qué está moviendo el par", "Niveles a vigilar" o "Qué podría cambiar el escenario". Inventa subtítulos concretos y descriptivos del contenido real de esa sección, en tono de titular de análisis financiero (no de blog casual).
-- SECCIÓN OBLIGATORIA DE NIVELES TÉCNICOS E INDICADORES, al estilo de un desk de research (ej. DailyForex): incluye SIEMPRE una sección con 3 soportes y 3 resistencias numéricos concretos (formato "<strong style=\\"color:var(--green);\\">Soportes:</strong> X · Y · Z" y "<strong style=\\"color:var(--crimson-bright);\\">Resistencias:</strong> X · Y · Z"), una lectura de RSI diario con el número aproximado y su interpretación (sobrecompra/sobreventa/neutral), una referencia a medias móviles (ej. si cotiza por encima/debajo de la media de 50 o 200 periodos), y una observación breve sobre el patrón de la última vela o velas recientes (ej. vela envolvente, doji, martillo, rango estrecho/inside bar, mecha de rechazo). Usa niveles ilustrativos coherentes con el precio mencionado en el análisis, no inventes cifras absurdas.
+${datos}
+
+═══════════════════════════════════════════════
+REGLA NÚMERO UNO, INNEGOCIABLE — DATOS
+═══════════════════════════════════════════════
+TODA cifra que escribas debe salir del bloque "DATOS REALES DE MERCADO" de arriba. Son datos verificados de mercado y los soportes/resistencias son pivotes reales del gráfico.
+
+- PROHIBIDO inventar o estimar cualquier número: precios, niveles, RSI, medias, porcentajes, rangos. Si un dato no está arriba, NO lo menciones.
+- PROHIBIDO afirmar noticias, datos macroeconómicos publicados, decisiones de bancos centrales, declaraciones o eventos concretos: no tienes acceso a noticias verificadas y afirmarlos sería inventar. Puedes hablar de lo que el PRECIO muestra y, si mencionas un factor de contexto, hazlo en términos condicionales y genéricos ("si el mercado empieza a descontar…", "un cambio en el tono de la política monetaria podría…"), nunca como hecho ocurrido.
+- Este análisis es TÉCNICO y de contexto de precio. Ese es su valor: es 100% verificable contra el gráfico.
+- Puedes redondear al escribir en prosa, pero sin cambiar el número (1.1435 puede ser "1,1435" o "la zona de 1,14").
+- Usa coma decimal (formato español): 1,1435 / 4.067,9.
+
+REGLAS DE CONTENIDO (mantén este estándar):
+- Este es un análisis de CONTEXTO, no una señal de trading. NUNCA digas "compra", "vende", "entra en", ni des niveles de entrada/stop loss/take profit como instrucción.
+- Describe qué muestra la estructura del precio, qué niveles reales son relevantes de VIGILAR (no de operar), y qué invalidaría la lectura actual.
+- LENGUAJE BÁSICO Y CLARO pero TÉCNICO: cuando uses un término (soporte, RSI, media móvil, ATR) explícalo brevemente la primera vez, en una frase corta entre paréntesis o aposición.
+- REGISTRO SERIO Y PROFESIONAL, tipo desk de research institucional (Bloomberg, Reuters, informe de banco), NO charla informal. Frases declarativas y precisas. NUNCA uses ganchos retóricos ("Aquí es donde se pone interesante", "eso sí", "ojo con"), preguntas retóricas, ni el falso contraste "el problema no está en X sino en Y". Evita muletillas de IA ("es importante destacar que", "cabe mencionar que", "en resumen").
+- ESTRUCTURA VARIABLE: no uses siempre el mismo arco. Varía cuántas secciones usas (2 a 5), el orden (a veces abre con el nivel técnico, a veces con la estructura de medias, a veces comparando el momento actual con el rango de 52 semanas) y el tipo de cierre. Cada análisis debe sentirse distinto a los anteriores.
+- SUBTÍTULOS ÚNICOS Y ESPECÍFICOS: nunca genéricos como "Contexto" o "Niveles a vigilar". Inventa subtítulos concretos que describan el contenido real de esa sección, en tono de titular de análisis financiero.
+- SECCIÓN OBLIGATORIA DE NIVELES E INDICADORES, estilo desk de research: incluye SIEMPRE una sección con los soportes y resistencias REALES del bloque de datos (formato "<strong style=\\"color:var(--green);\\">Soportes:</strong> X · Y · Z" y "<strong style=\\"color:var(--crimson-bright);\\">Resistencias:</strong> X · Y · Z", con los números tal cual aparecen arriba), la lectura del RSI real con su número y su interpretación, la posición real del precio respecto a las medias de 50 y 200, y el patrón real de la última vela. Si el bloque dice que no hay pivote claro por encima o por debajo, DILO ASÍ (por ejemplo, que el precio cotiza en zona de máximos sin resistencia previa de referencia) en vez de inventar un nivel.
 - Termina el "body" siempre con este disclaimer exacto como último párrafo: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>"
 
-Además del "body", genera un "bodyPremium" (análisis exclusivo para suscriptores Premium, más profundo, con estos elementos EN TEXTO — no se dibuja nada sobre ningún gráfico, es lectura escrita):
-- Una sección de LECTURA DE FLUJO INSTITUCIONAL usando terminología de Smart Money Concepts / ICT explicada en texto: menciona zonas de Order Blocks (bloques de órdenes: la última vela opuesta antes de un movimiento fuerte, donde suele haber órdenes institucionales pendientes), Fair Value Gaps o FVG (vacíos de precio dejados por movimientos impulsivos, que el precio tiende a "rellenar" después), zonas de liquidez (agrupaciones de stops por encima de máximos recientes o por debajo de mínimos recientes), y si aplica, un Break of Structure (BOS, ruptura de estructura a favor de la tendencia) o Change of Character (CHoCH, señal temprana de posible reversión). Usa niveles numéricos ilustrativos coherentes con el precio del análisis, igual que en el body.
-- Una sección con ESCENARIO ALCISTA: qué tendría que confirmarse para que el sesgo alcista se mantenga, el nivel de invalidación (dónde el escenario dejaría de tener sentido) y un objetivo razonable.
-- Una sección con ESCENARIO BAJISTA: mismo formato que el alcista pero en la dirección opuesta.
+No repitas el enfoque de estos análisis ya publicados:
+${existingTitles}
+
+Además del "body", genera un "bodyPremium" (análisis exclusivo Premium, más profundo, EN TEXTO — no se dibuja nada sobre ningún gráfico):
+- Una sección de LECTURA DE FLUJO INSTITUCIONAL con terminología Smart Money Concepts / ICT explicada en texto: Order Blocks (la última vela opuesta antes de un movimiento fuerte, donde suele haber órdenes institucionales pendientes), Fair Value Gaps o FVG (vacíos de precio dejados por movimientos impulsivos, que el precio tiende a rellenar), zonas de liquidez (agrupaciones de stops sobre máximos o bajo mínimos recientes), y si aplica un Break of Structure (BOS) o Change of Character (CHoCH). ANCLA esta lectura en los niveles REALES del bloque de datos (soportes, resistencias, máximo/mínimo de 52 semanas, rango de la última sesión). No inventes niveles nuevos.
+- Una sección con ESCENARIO ALCISTA: qué tendría que confirmarse, el nivel real de invalidación y un objetivo razonable apoyado en las resistencias reales.
+- Una sección con ESCENARIO BAJISTA: mismo formato, dirección opuesta, apoyado en los soportes reales.
 - Termina el "bodyPremium" con este disclaimer exacto: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>"
 
 Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), con esta forma exacta:
 {
-  "title": "string, máximo 90 caracteres",
-  "category": "una de las categorías listadas",
-  "symbol": "uno de los códigos de instrumento listados arriba, EXACTO",
+  "title": "string, máximo 90 caracteres, específico y anclado en lo que muestran los datos reales",
   "excerpt": "string de 1-2 frases, máximo 200 caracteres",
-  "body": "string HTML con 3-4 secciones <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo único y específico, NO genérico]</h3>, párrafos <p>, listas <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> para niveles a vigilar cuando aplique, terminando con el disclaimer indicado arriba.",
-  "bodyPremium": "string HTML con la sección de flujo institucional (Order Blocks/FVG/liquidez/BOS-CHoCH) y las secciones de escenario alcista y bajista descritas arriba, cada una con su <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo específico]</h3>, terminando con el disclaimer de bodyPremium indicado arriba.",
-  "trend": "'up' si el sesgo del análisis es alcista, 'down' si es bajista, 'neutral' si está en rango o a la espera de un catalizador"
+  "body": "string HTML con 3-4 secciones <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo único y específico]</h3>, párrafos <p>, listas <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> cuando aplique, terminando con el disclaimer indicado",
+  "bodyPremium": "string HTML con la sección de flujo institucional y los escenarios alcista y bajista, cada uno con su <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\">[subtítulo específico]</h3>, terminando con el disclaimer de bodyPremium",
+  "trend": "'up' si la lectura es alcista, 'down' si es bajista, 'neutral' si está en rango o a la espera de un catalizador"
 }`;
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -79,7 +126,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
       // Explicitos a proposito: Sonnet 5 piensa por defecto y esos tokens salen
       // del mismo max_tokens que la respuesta. Con el limite anterior el JSON
       // salia cortado y JSON.parse fallaba. max_tokens es solo un tope: se
-      // factura lo que se genera de verdad, asi que dar aire no cuesta nada.
+      // factura lo generado, asi que dar aire no cuesta nada.
       max_tokens: 16000,
       thinking: { type: 'adaptive' },
       messages: [{ role: 'user', content: prompt }]
@@ -97,7 +144,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     console.error('Respuesta cortada por max_tokens. Uso:', JSON.stringify(data.usage));
     process.exit(1);
   }
-  const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
+  const textBlock = Array.isArray(data.content) ? data.content.find((b) => b.type === 'text') : null;
   if (!textBlock) {
     console.error('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason, JSON.stringify(data.usage));
     process.exit(1);
@@ -115,30 +162,31 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     process.exit(1);
   }
 
-  if (!ALLOWED_SYMBOLS.includes(nueva.symbol)) {
-    console.warn('Symbol no reconocido, se omite el gráfico:', nueva.symbol);
-    delete nueva.symbol;
+  if (!nueva.title || !nueva.body) {
+    console.error('Faltan campos obligatorios (title/body) en la respuesta.');
+    process.exit(1);
   }
 
-  const CATEGORY_HERO = { 'Forex': 'forex', 'LatAm': 'latam', 'Índices': 'index', 'Criptomonedas': 'crypto' };
-  if (nueva.category === 'Materias Primas') {
-    nueva.heroType = (nueva.symbol || '').includes('OIL') ? 'oil' : 'gold';
-  } else {
-    nueva.heroType = CATEGORY_HERO[nueva.category] || 'index';
-  }
+  // El script manda en estos campos, no el modelo.
+  nueva.symbol = symbol;
+  nueva.category = category;
   if (!['up', 'down', 'neutral'].includes(nueva.trend)) nueva.trend = 'neutral';
-
   nueva.slug = slugify(nueva.title) + '-' + Date.now().toString(36);
-  nueva.author = 'IA · AR4 Mercados';
+  nueva.author = 'AR4 Mercados';
   nueva.date = new Date().toISOString().slice(0, 10);
+
+  // Guardamos el dossier: es la prueba de que las cifras del texto son reales
+  // y de que se puede auditar cualquier analisis contra los datos que lo generaron.
+  nueva.marketData = d;
 
   ideas.push(nueva);
   fs.writeFileSync(DATA_PATH, JSON.stringify(ideas, null, 2) + '\n');
 
-  console.log('Análisis generado:', nueva.title);
+  console.log('Idea generada sobre ' + d.nombre + ' (precio real ' + d.precio + ', RSI ' + d.rsi14 + '):');
+  console.log('  ' + nueva.title);
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error(err);
   process.exit(1);
 });

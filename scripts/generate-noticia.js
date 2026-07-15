@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { buildDossier, dossierToPrompt, TV_NAMES } = require('./_market-data');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'noticias.json');
 
@@ -13,21 +14,29 @@ const ALLOWED_SYMBOLS = [
   'NYSE:JPM', 'NYSE:VALE', 'NYSE:PBR', 'NYSE:MELI'
 ];
 
+// Cada tipo de noticia trae su propia consulta de busqueda y su panel de
+// instrumentos reales, para que el redactor tenga hechos y cifras verificables.
 const STORY_TYPES = [
   {
     key: 'cierre_sesion',
     category: 'Índices',
-    instruction: 'Redacta un RESUMEN DE CIERRE DE SESIÓN de mercado: cómo terminó la jornada en los principales índices/activos (Wall Street, algún índice o activo relevante para Latinoamérica), qué sectores o instrumentos lideraron y cuáles quedaron rezagados, y el contexto detrás del movimiento del día. Estilo "market wrap" de un desk de research.'
+    panel: ['FOREXCOM:SPXUSD', 'FOREXCOM:NSXUSD', 'BMFBOVESPA:IBOV', 'CAPITALCOM:DXY'],
+    busqueda: 'cierre de Wall Street hoy S&P 500 Nasdaq resumen sesión mercados',
+    instruction: 'Redacta un RESUMEN DE CIERRE DE SESIÓN: cómo terminó la jornada en los principales índices, qué la explicó y qué implica para Latinoamérica. Estilo "market wrap" de un desk de research.'
   },
   {
     key: 'resultados_empresa',
     category: 'Empresas',
-    instruction: 'Redacta una noticia sobre RESULTADOS TRIMESTRALES (earnings) de una empresa cotizada grande (tecnológica estadounidense, banco, o una ADR relevante para Latinoamérica como Vale, Petrobras o MercadoLibre). Incluye cifras concretas plausibles: ingresos, utilidad por acción (EPS), comparación contra expectativas del consenso, y la reacción de la acción en el mercado. Explica qué implica para el sector o para inversionistas de la región.'
+    panel: ['NASDAQ:AAPL', 'NASDAQ:MSFT', 'NASDAQ:NVDA', 'NYSE:VALE', 'NYSE:PBR', 'NYSE:MELI'],
+    busqueda: 'resultados trimestrales earnings report empresa cotizada esta semana ingresos EPS',
+    instruction: 'Redacta una noticia sobre RESULTADOS TRIMESTRALES (earnings) recién publicados de una empresa cotizada grande. Usa las cifras REALES que encuentres en la búsqueda (ingresos, EPS, comparación con el consenso) y explica qué implica para el sector o para inversionistas de la región.'
   },
   {
     key: 'dato_macro',
     category: 'Forex',
-    instruction: 'Redacta una noticia sobre un DATO MACROECONÓMICO recién publicado (inflación/IPC, nómina no agrícola, decisión de tasas de un banco central, PIB, PMI, desempleo) de EE.UU., la eurozona, o algún país de Latinoamérica. Incluye la cifra publicada, la cifra esperada por el consenso, y cómo reaccionaron los mercados (divisas, tasas, bolsas) inmediatamente después.'
+    panel: ['FX:EURUSD', 'CAPITALCOM:DXY', 'OANDA:XAUUSD', 'FX_IDC:USDMXN', 'FX_IDC:USDBRL'],
+    busqueda: 'dato macroeconómico publicado hoy inflación IPC empleo tasas banco central mercados reacción',
+    instruction: 'Redacta una noticia sobre un DATO MACROECONÓMICO recién publicado (inflación, empleo, tasas, PIB, PMI). Usa la cifra REAL publicada y la esperada por el consenso según la búsqueda, y describe la reacción del mercado.'
   }
 ];
 
@@ -41,65 +50,23 @@ function slugify(title) {
     .slice(0, 60);
 }
 
-async function main() {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.error('Falta la variable de entorno ANTHROPIC_API_KEY');
-    process.exit(1);
+// Todas las URLs que la busqueda web devolvio de verdad. Sirven para comprobar
+// que el modelo no se invente una fuente.
+function collectSearchUrls(allContent) {
+  const urls = new Set();
+  for (const b of allContent) {
+    if (b && b.type === 'web_search_tool_result' && Array.isArray(b.content)) {
+      for (const r of b.content) if (r && r.url) urls.add(String(r.url));
+    }
   }
+  return urls;
+}
 
-  const noticias = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
-  const existingTitles = noticias.slice(-25).map(n => `- ${n.title}`).join('\n');
-  const storyType = STORY_TYPES[Math.floor(Math.random() * STORY_TYPES.length)];
-  const today = new Date().toISOString().slice(0, 10);
+function hostOf(u) {
+  try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return null; }
+}
 
-  const prompt = `Eres periodista de mercados de AR4 Mercados, un sitio de trading en español para Latinoamérica. Hoy es ${today}. Genera UNA noticia nueva y original de mercado.
-
-TIPO DE NOTICIA A GENERAR: ${storyType.instruction}
-
-No repitas ninguno de estos temas ya publicados recientemente:
-${existingTitles}
-
-Elige el instrumento principal usando EXACTAMENTE uno de estos códigos: ${ALLOWED_SYMBOLS.join(', ')}.
-
-REGLAS ESTRICTAS DE CONTENIDO:
-- REGISTRO SERIO Y PROFESIONAL, tipo agencia de noticias financiera (Reuters, Bloomberg), NO informal. Frases declarativas, cifras concretas y plausibles (no inventes cifras absurdas o fuera de rango realista para el activo/empresa).
-- Usa datos NUMÉRICOS concretos: precios, porcentajes, cifras de resultados, tasas, fechas. Eso es lo que le da valor periodístico a la pieza.
-- Evita muletillas de IA ("es importante destacar que", "cabe mencionar que", "en resumen") y ganchos retóricos ("aquí es donde se pone interesante", "ojo con").
-- Cada noticia debe sentirse distinta en estructura a las anteriores: varía el orden (a veces abre con la cifra, a veces con la reacción del mercado, a veces con el contexto previo) y cuántas secciones usas (3-4).
-- SUBTÍTULOS ESPECÍFICOS AL TEMA, nunca genéricos como "Contexto" o "Qué pasó".
-- Debes generar DOS bloques de contenido:
-  1. "body": la noticia principal, visible para todos los lectores, con 3-4 secciones <h3>/<p>.
-  2. "bodyPremium": contenido adicional exclusivo para suscriptores Premium, con 2 secciones: una con MÁS DATOS MACRO/FINANCIEROS de respaldo (cifras históricas comparables, contexto de trimestres o meses anteriores), y una final titulada exactamente "Conclusión y análisis final" con la lectura more profunda de hacia dónde podría ir esto y qué vigilar.
-- Termina el "bodyPremium" (no el "body") con este disclaimer exacto como último párrafo: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-
-Además de la noticia, genera estos bloques adicionales de análisis IA (todos claramente etiquetados como generados por IA en el sitio, así que pueden ser interpretativos, pero SIN inventar niveles de precio específicos ni estadísticas históricas verificables con años y porcentajes concretos — eso sería presentar datos falsos como reales):
-
-- "aiSummary": un resumen ultra rápido de la noticia (qué pasó, por qué importa, qué activos toca, qué vigilar después). NO repitas el titular textualmente.
-- "aiScenarios": tres probabilidades (alcista/lateral/bajista) que SUMEN EXACTAMENTE 100, reflejando tu lectura del sesgo de la noticia. Es una estimación cualitativa de IA, no un cálculo estadístico real.
-- "aiDetects": una lectura corta de "qué está mirando la IA" en este movimiento: probabilidad de continuidad del sesgo actual (0-100), nivel de riesgo (Bajo/Medio/Alto), y una frase de lectura. NUNCA incluyas cifras de precio o niveles técnicos exactos aquí (para eso ya existe el gráfico en vivo de TradingView en la página); mantente en el terreno narrativo/probabilístico.
-- "timeline": 3 a 4 hitos que construyen el contexto de ESTA noticia dentro de su propia narrativa (ej. "Hace 2 días", "Ayer", "Hoy", "Próxima semana"), coherentes con el cuerpo de la noticia. Esto es parte del relato editorial de la pieza, no una base de datos histórica externa verificada.
-- "faq": 3 a 4 preguntas frecuentes breves y sus respuestas, educativas, relacionadas con el tema de la noticia (ej. "¿Qué es la Fed?", "¿Por qué sube el oro?").
-- "impactScore": un número del 1 al 10 que refleje tu estimación editorial de qué tan relevante es esta noticia para los mercados (10 = máxima relevancia).
-- "relatedSymbols": entre 2 y 5 códigos de instrumento (EXACTOS, de la lista de códigos permitidos arriba, sin repetir el símbolo principal) que se ven afectados o correlacionados con esta noticia — se usarán para mostrar cotizaciones EN VIVO reales de TradingView, así que elige solo instrumentos genuinamente relacionados.
-
-Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), con esta forma exacta:
-{
-  "title": "string, máximo 100 caracteres",
-  "excerpt": "string de 1-2 frases, máximo 200 caracteres",
-  "symbol": "uno de los códigos de instrumento listados arriba, EXACTO",
-  "body": "string HTML con 3-4 secciones <h3 style=\\"margin:20px 0 10px;font-size:1.15rem;\\">[subtítulo específico]</h3><p>...</p>, cifras concretas",
-  "bodyPremium": "string HTML con 2 secciones, la última titulada exactamente 'Conclusión y análisis final', terminando con el disclaimer indicado",
-  "trend": "'up' si el sesgo es alcista para el activo, 'down' si es bajista, 'neutral' si es mixto o sin dirección clara",
-  "aiSummary": { "que": "string", "porque": "string", "activos": ["string", "..."], "siguiente": "string" },
-  "aiScenarios": { "alcista": number, "lateral": number, "bajista": number },
-  "aiDetects": { "probabilidad": number, "riesgo": "Bajo|Medio|Alto", "lectura": "string" },
-  "timeline": [{ "cuando": "string", "texto": "string" }],
-  "faq": [{ "q": "string", "a": "string" }],
-  "impactScore": number,
-  "relatedSymbols": ["string", "..."]
-}`;
-
+async function callApi(apiKey, messages) {
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
@@ -109,28 +76,153 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     },
     body: JSON.stringify({
       model: 'claude-sonnet-5',
-      // Explicitos a proposito: Sonnet 5 piensa por defecto y esos tokens salen
-      // del mismo max_tokens que la respuesta. Con el limite anterior el JSON
-      // salia cortado y JSON.parse fallaba. max_tokens es solo un tope: se
-      // factura lo que se genera de verdad, asi que dar aire no cuesta nada.
       max_tokens: 16000,
       thinking: { type: 'adaptive' },
-      messages: [{ role: 'user', content: prompt }]
+      // Busqueda web del lado del servidor: el modelo lee noticias reales y
+      // devuelve las URLs de donde salieron. Sin esto escribiria de memoria.
+      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 6 }],
+      messages
     })
   });
-
   if (!res.ok) {
     const errText = await res.text();
-    console.error('Error de la API de Anthropic (HTTP ' + res.status + '):', errText);
+    throw new Error('API de Anthropic (HTTP ' + res.status + '): ' + errText);
+  }
+  return res.json();
+}
+
+async function main() {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) {
+    console.error('Falta la variable de entorno ANTHROPIC_API_KEY');
     process.exit(1);
   }
 
-  const data = await res.json();
+  const noticias = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
+  const existingTitles = noticias.slice(-25).map((n) => `- ${n.title}`).join('\n');
+  const storyType = STORY_TYPES[Math.floor(Math.random() * STORY_TYPES.length)];
+  const today = new Date().toISOString().slice(0, 10);
+
+  // Panel de datos reales de los instrumentos que toca este tipo de noticia.
+  const dossiers = [];
+  for (const sym of storyType.panel) {
+    try {
+      dossiers.push(await buildDossier(sym));
+    } catch (e) {
+      console.warn('Sin datos para ' + sym + ': ' + e.message);
+    }
+  }
+  if (!dossiers.length) {
+    console.error('No se pudo obtener ningún dato real de mercado. No se publica nada.');
+    process.exit(1);
+  }
+  const panel = dossiers.map((d) =>
+    '- ' + d.nombre + ' (' + d.symbol + '): precio ' + d.precio +
+    ', variación del día ' + d.variacionDiaPct + '%' +
+    ', semana ' + d.variacionSemanaPct + '%' +
+    ', mes ' + d.variacionMesPct + '%' +
+    ', RSI(14) ' + d.rsi14 + ' (' + d.lecturaRsi + ')' +
+    ', precio ' + d.posicionVsMedia200 + ' de la media de 200' +
+    ', máximo 52sem ' + d.maximo52sem + ' / mínimo 52sem ' + d.minimo52sem
+  ).join('\n');
+
+  const prompt = `Eres periodista de mercados de AR4 Mercados, un sitio de trading en español para Latinoamérica. Hoy es ${today}.
+
+TAREA: ${storyType.instruction}
+
+PASO 1 — INVESTIGA. Usa la herramienta de búsqueda web (varias veces si hace falta) para averiguar qué pasó DE VERDAD hoy o en las últimas 24-48 horas. Sugerencia de punto de partida: "${storyType.busqueda}". Busca la cifra concreta, la fuente y el contexto. No escribas nada hasta tener hechos reales localizados.
+
+PASO 2 — ESCRIBE usando solo lo que verificaste.
+
+═══════════════════════════════════════════════
+DATOS DE MERCADO REALES (medidos, no estimados)
+═══════════════════════════════════════════════
+Cotizaciones y variaciones reales calculadas desde el histórico de precios (Yahoo Finance), al ${today}:
+${panel}
+
+Puedes citar estas cifras con total confianza: son reales y verificables.
+
+═══════════════════════════════════════════════
+REGLA NÚMERO UNO, INNEGOCIABLE — NADA INVENTADO
+═══════════════════════════════════════════════
+Esta pieza va firmada como noticia de mercado y la leerán traders reales que pueden tomar decisiones con ella.
+
+- Cada cifra debe venir de (a) el panel de datos reales de arriba, o (b) un resultado concreto de tu búsqueda web. NO HAY TERCERA OPCIÓN.
+- PROHIBIDO inventar o "estimar de forma plausible" cifras de resultados, datos macro, precios o niveles. Una cifra inventada que parece razonable es peor que ninguna cifra: es información falsa firmada por una mesa de research.
+- Si la búsqueda no te da un dato concreto, NO lo inventes: escribe la noticia con lo que sí verificaste, o enfoca la pieza en lo que sí puedes sostener con el panel de datos reales.
+- "sources" debe contener SOLO URLs que aparezcan literalmente en tus resultados de búsqueda. Si citas una URL que no salió de la búsqueda, la pieza se descarta automáticamente. No inventes URLs ni las reconstruyas de memoria.
+- Usa coma decimal (formato español): 1,1435 / 4.067,9.
+
+REGLAS DE ESTILO (mantén este estándar):
+- REGISTRO SERIO Y PROFESIONAL, tipo agencia financiera (Reuters, Bloomberg). Frases declarativas.
+- Evita muletillas de IA ("es importante destacar que", "cabe mencionar que", "en resumen") y ganchos retóricos ("aquí es donde se pone interesante", "ojo con").
+- Cada noticia debe sentirse distinta en estructura a las anteriores: varía el orden (a veces abre con la cifra, a veces con la reacción del mercado, a veces con el contexto) y cuántas secciones usas (3-4).
+- SUBTÍTULOS ESPECÍFICOS AL TEMA, nunca genéricos como "Contexto" o "Qué pasó".
+- Dos bloques de contenido:
+  1. "body": la noticia principal, visible para todos, 3-4 secciones <h3>/<p>, con las cifras reales.
+  2. "bodyPremium": contenido exclusivo Premium, 2 secciones: una con más datos de respaldo (usa el panel real y lo que hayas verificado en la búsqueda) y una final titulada exactamente "Conclusión y análisis final" con la lectura de hacia dónde podría ir esto y qué vigilar.
+- Termina el "bodyPremium" (no el "body") con este disclaimer exacto como último párrafo: "<p style=\\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
+
+No repitas estos temas ya publicados:
+${existingTitles}
+
+El instrumento principal ("symbol") debe ser EXACTAMENTE uno de estos códigos: ${ALLOWED_SYMBOLS.join(', ')}.
+
+Bloques de análisis IA (se muestran etiquetados como generados por IA, pueden ser interpretativos, pero SIN inventar cifras):
+- "aiSummary": resumen ultra rápido (qué pasó, por qué importa, qué activos toca, qué vigilar). NO repitas el titular textualmente.
+- "aiScenarios": tres probabilidades (alcista/lateral/bajista) que SUMEN EXACTAMENTE 100. Es una lectura cualitativa de IA, no un cálculo estadístico.
+- "aiDetects": probabilidad de continuidad del sesgo (0-100), riesgo (Bajo/Medio/Alto) y una frase de lectura. Sin niveles de precio exactos aquí (para eso está el gráfico en vivo en la página).
+- "timeline": 3-4 hitos reales y verificados que construyen el contexto de ESTA noticia ("Hace 2 días", "Ayer", "Hoy", "Próxima semana"). Si no verificaste un hito, no lo pongas.
+- "faq": 3-4 preguntas frecuentes breves y educativas relacionadas con el tema (ej. "¿Qué es la Fed?", "¿Por qué sube el oro?").
+- "impactScore": número del 1 al 10 con tu estimación editorial de relevancia para los mercados.
+- "relatedSymbols": 2-5 códigos EXACTOS de la lista permitida (sin repetir el principal) genuinamente relacionados; se usan para mostrar cotizaciones en vivo reales.
+
+Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), con esta forma exacta:
+{
+  "title": "string, máximo 100 caracteres",
+  "excerpt": "string de 1-2 frases, máximo 200 caracteres",
+  "symbol": "uno de los códigos permitidos, EXACTO",
+  "body": "string HTML con 3-4 secciones <h3 style=\\"margin:20px 0 10px;font-size:1.15rem;\\">[subtítulo específico]</h3><p>...</p>, con cifras reales",
+  "bodyPremium": "string HTML con 2 secciones, la última titulada exactamente 'Conclusión y análisis final', terminando con el disclaimer indicado",
+  "trend": "'up' | 'down' | 'neutral'",
+  "sources": [{ "name": "nombre del medio", "url": "URL exacta salida de tu búsqueda web" }],
+  "aiSummary": { "que": "string", "porque": "string", "activos": ["string"], "siguiente": "string" },
+  "aiScenarios": { "alcista": number, "lateral": number, "bajista": number },
+  "aiDetects": { "probabilidad": number, "riesgo": "Bajo|Medio|Alto", "lectura": "string" },
+  "timeline": [{ "cuando": "string", "texto": "string" }],
+  "faq": [{ "q": "string", "a": "string" }],
+  "impactScore": number,
+  "relatedSymbols": ["string"]
+}`;
+
+  // La busqueda web puede pausar el turno si agota sus iteraciones; se reanuda
+  // reenviando la conversacion tal cual.
+  const messages = [{ role: 'user', content: prompt }];
+  const allContent = [];
+  let data = null;
+  for (let intento = 0; intento < 4; intento++) {
+    data = await callApi(apiKey, messages);
+    allContent.push(...(data.content || []));
+    if (data.stop_reason === 'pause_turn') {
+      messages.push({ role: 'assistant', content: data.content });
+      continue;
+    }
+    break;
+  }
+
   if (data.stop_reason === 'max_tokens') {
     console.error('Respuesta cortada por max_tokens. Uso:', JSON.stringify(data.usage));
     process.exit(1);
   }
-  const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
+  if (data.stop_reason === 'refusal') {
+    console.error('El modelo rechazó la petición.', JSON.stringify(data.stop_details || {}));
+    process.exit(1);
+  }
+
+  const searchUrls = collectSearchUrls(allContent);
+  console.log('Resultados de búsqueda web reales recibidos: ' + searchUrls.size);
+
+  const textBlock = (data.content || []).find((b) => b.type === 'text');
   if (!textBlock) {
     console.error('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason, JSON.stringify(data.usage));
     process.exit(1);
@@ -148,12 +240,32 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     process.exit(1);
   }
 
+  if (!nueva.title || !nueva.body) {
+    console.error('Faltan campos obligatorios (title/body).');
+    process.exit(1);
+  }
+
+  // VERIFICACION DE FUENTES: solo sobreviven las URLs que la busqueda devolvio
+  // de verdad. Asi una fuente inventada no llega a publicarse.
+  const citadas = Array.isArray(nueva.sources) ? nueva.sources : [];
+  const verificadas = citadas.filter((s) => s && s.url && searchUrls.has(String(s.url)));
+  const inventadas = citadas.filter((s) => s && s.url && !searchUrls.has(String(s.url)));
+  if (inventadas.length) {
+    console.warn('Se descartan ' + inventadas.length + ' fuente(s) que no salieron de la búsqueda:');
+    inventadas.forEach((s) => console.warn('  - ' + s.url));
+  }
+  if (!verificadas.length) {
+    console.error('Ninguna fuente citada pudo verificarse contra los resultados de búsqueda.');
+    console.error('No se publica: una noticia sin fuente verificable no debe salir firmada como research.');
+    process.exit(1);
+  }
+
   if (!ALLOWED_SYMBOLS.includes(nueva.symbol)) {
     console.warn('Symbol no reconocido, se omite el gráfico:', nueva.symbol);
     delete nueva.symbol;
   }
 
-  const CATEGORY_HERO = { 'Forex': 'forex', 'Índices': 'index', 'Empresas': 'index' };
+  const CATEGORY_HERO = { Forex: 'forex', 'Índices': 'index', Empresas: 'index' };
   nueva.category = storyType.category;
   nueva.heroType = CATEGORY_HERO[nueva.category] || 'index';
   if (!['up', 'down', 'neutral'].includes(nueva.trend)) nueva.trend = 'neutral';
@@ -198,33 +310,40 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   }
 
   nueva.timeline = Array.isArray(nueva.timeline)
-    ? nueva.timeline.slice(0, 4).filter(t => t && t.cuando && t.texto).map(t => ({ cuando: String(t.cuando).slice(0, 40), texto: String(t.texto).slice(0, 200) }))
+    ? nueva.timeline.slice(0, 4).filter((t) => t && t.cuando && t.texto).map((t) => ({ cuando: String(t.cuando).slice(0, 40), texto: String(t.texto).slice(0, 200) }))
     : [];
 
   nueva.faq = Array.isArray(nueva.faq)
-    ? nueva.faq.slice(0, 4).filter(f => f && f.q && f.a).map(f => ({ q: String(f.q).slice(0, 150), a: String(f.a).slice(0, 400) }))
+    ? nueva.faq.slice(0, 4).filter((f) => f && f.q && f.a).map((f) => ({ q: String(f.q).slice(0, 150), a: String(f.a).slice(0, 400) }))
     : [];
 
-  let impactScore = Number(nueva.impactScore);
+  const impactScore = Number(nueva.impactScore);
   nueva.impactScore = Number.isFinite(impactScore) ? Math.max(1, Math.min(10, Math.round(impactScore))) : null;
 
   nueva.relatedSymbols = Array.isArray(nueva.relatedSymbols)
-    ? [...new Set(nueva.relatedSymbols.filter(s => ALLOWED_SYMBOLS.includes(s) && s !== nueva.symbol))].slice(0, 5)
+    ? [...new Set(nueva.relatedSymbols.filter((s) => ALLOWED_SYMBOLS.includes(s) && s !== nueva.symbol))].slice(0, 5)
     : [];
 
   nueva.slug = slugify(nueva.title) + '-' + Date.now().toString(36);
   nueva.author = 'AR4 Mercados';
   nueva.date = today;
-  nueva.sourceName = 'AR4 Mercados — Mesa de Research';
-  nueva.sourceUrl = 'https://ar4mercados.com/noticias.html';
+
+  // La fuente ahora es real y verificada, no un enlace a nosotros mismos.
+  nueva.sources = verificadas.slice(0, 4).map((s) => ({ name: String(s.name || hostOf(s.url) || 'Fuente'), url: String(s.url) }));
+  nueva.sourceName = nueva.sources[0].name;
+  nueva.sourceUrl = nueva.sources[0].url;
+
+  // Panel real usado al redactar: permite auditar cualquier cifra del texto.
+  nueva.marketData = dossiers;
 
   noticias.push(nueva);
   fs.writeFileSync(DATA_PATH, JSON.stringify(noticias, null, 2) + '\n');
 
-  console.log('Noticia generada (' + storyType.key + '):', nueva.title);
+  console.log('Noticia generada (' + storyType.key + '): ' + nueva.title);
+  console.log('  Fuentes verificadas: ' + nueva.sources.map((s) => s.name + ' <' + s.url + '>').join(' | '));
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error(err);
   process.exit(1);
 });

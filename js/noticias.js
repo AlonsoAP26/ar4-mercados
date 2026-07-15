@@ -461,7 +461,18 @@ async function initNoticiaDetail() {
 
   const sourceBox = document.getElementById('noticiaSource');
   if (sourceBox) {
-    sourceBox.innerHTML = `📎 Fuente original de los datos: <a href="${n.sourceUrl}" target="_blank" rel="noopener">${n.sourceName}</a>. Resumen y análisis redactados por AR4 Mercados.`;
+    // Las noticias nuevas traen varias fuentes verificadas (el generador
+    // comprueba que cada URL salga de verdad de la busqueda web antes de
+    // publicar). Las antiguas solo tienen sourceUrl/sourceName.
+    if (Array.isArray(n.sources) && n.sources.length) {
+      const enlaces = n.sources
+        .map((s) => `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`)
+        .join(' · ');
+      sourceBox.innerHTML = `📎 Fuentes originales de los datos: ${enlaces}. Resumen y análisis redactados por AR4 Mercados.` +
+        (n.marketData ? ` Cotizaciones y variaciones medidas sobre datos de mercado de Yahoo Finance.` : '');
+    } else if (n.sourceUrl) {
+      sourceBox.innerHTML = `📎 Fuente original de los datos: <a href="${n.sourceUrl}" target="_blank" rel="noopener">${n.sourceName}</a>. Resumen y análisis redactados por AR4 Mercados.`;
+    }
   }
 
   if (window.AR4_initComments) window.AR4_initComments('commentsSection', 'noticia', n.slug);
