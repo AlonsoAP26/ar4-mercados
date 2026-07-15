@@ -1,8 +1,8 @@
 name: Publicar análisis de Ideas de Trading automáticamente
 
+# El cron diario vive ahora en auto-publish-diario.yml (un solo deploy para los
+# tres contenidos). Este workflow queda solo para ejecucion manual.
 on:
-  schedule:
-    - cron: '0 13 * * *'
   workflow_dispatch:
 
 jobs:

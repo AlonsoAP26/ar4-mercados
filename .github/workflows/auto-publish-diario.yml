@@ -1,0 +1,92 @@
+name: Publicar contenido diario (noticia + idea + psicotrading)
+
+# Un solo commit diario con los tres contenidos = un solo deploy en Netlify.
+# Antes eran 3 workflows con 3 pushes = 3 deploys (~45 creditos/dia).
+# Ahora: 1 push = 1 deploy (~15 creditos/dia).
+# La hora es la de Noticias (21:30 UTC = 16:30 Lima), media hora despues
+# del cierre de EE.UU., porque la noticia necesita los datos del cierre.
+
+on:
+  schedule:
+    - cron: '30 21 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: publicar-contenido-diario
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Cada generador es independiente: continue-on-error evita que el fallo
+      # de uno impida que los otros dos se publiquen.
+      - name: Generar noticia de mercado
+        id: noticia
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-noticia.js
+
+      - name: Generar analisis de Ideas de Trading
+        id: idea
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-idea.js
+
+      - name: Generar articulo de Psicotrading
+        id: articulo
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-article.js
+
+      # UN solo commit + UN solo push = UN solo deploy.
+      - name: Commit y push unico
+        id: publicar
+        if: always()
+        run: |
+          git config user.name "AR4 Mercados Bot"
+          git config user.email "bot@ar4mercados.local"
+          git add data/noticias.json data/ideas.json data/articulos.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios que publicar."
+            echo "publicado=no" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Contenido diario: noticia de mercado, idea de trading y articulo de Psicotrading"
+          for intento in 1 2 3; do
+            if git pull --rebase --autostash origin master && git push; then
+              echo "publicado=si" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push fallido, reintento $intento..."
+            sleep 5
+          done
+          echo "No se pudo publicar tras 3 intentos."
+          exit 1
+
+      - name: Resumen
+        if: always()
+        run: |
+          echo "Noticia:      ${{ steps.noticia.outcome }}"
+          echo "Idea:         ${{ steps.idea.outcome }}"
+          echo "Psicotrading: ${{ steps.articulo.outcome }}"
+          echo "Publicado:    ${{ steps.publicar.outputs.publicado }}"
+          if [ "${{ steps.noticia.outcome }}" != "success" ] \
+          && [ "${{ steps.idea.outcome }}" != "success" ] \
+          && [ "${{ steps.articulo.outcome }}" != "success" ]; then
+            echo "::error::Los tres generadores fallaron."
+            exit 1
+          fi
