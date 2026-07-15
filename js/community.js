@@ -568,11 +568,9 @@
           <button type="button" class="sentiment-option" data-sentiment="neutral">⚪ Neutral</button>
         </div>
         <div class="chart-studio-wrap" style="margin-top:16px;">
-          <button type="button" class="btn btn-outline btn-block" id="postChartToggle">📈 Abrir gráfico para dibujar mi análisis</button>
-          <div id="postChartStudio" hidden>
-            <p class="footer-text" style="margin:12px 0;">Dibuja tu análisis en el gráfico (líneas de tendencia, soportes, Fibonacci, indicadores…). Al terminar, <strong style="color:var(--gold-bright);">toma una captura</strong> y súbela abajo con "Adjuntar imagen".<br>📸 Windows: <strong>⊞ Win + Shift + S</strong> &nbsp;·&nbsp; Mac: <strong>⌘ Cmd + Shift + 4</strong> &nbsp;·&nbsp; o el ícono de cámara del gráfico.</p>
-            <div class="chart-studio" id="postChartStudioMount"></div>
-          </div>
+          <label>📈 Gráfico para dibujar tu análisis</label>
+          <p class="footer-text" style="margin:6px 0 10px;">Dibuja aquí tu análisis (líneas de tendencia, soportes, Fibonacci, indicadores…). Cuando termines, <strong style="color:var(--gold-bright);">toma una captura</strong> y súbela abajo con "Adjuntar imagen".<br>📸 Windows: <strong>⊞ Win + Shift + S</strong> &nbsp;·&nbsp; Mac: <strong>⌘ Cmd + Shift + 4</strong> &nbsp;·&nbsp; o el ícono de cámara del gráfico. El gráfico se ajusta solo al instrumento que escribas arriba.</p>
+          <div class="chart-studio" id="postChartStudioMount"></div>
         </div>
         <div class="comment-attach-row" style="margin-top:12px;">
           <button type="button" class="comment-attach-btn" id="postAttachBtn">📎 Adjuntar imagen, video o PDF</button>
@@ -2126,9 +2124,7 @@
       addPollCheckbox.addEventListener('change', () => { pollFields.hidden = !addPollCheckbox.checked; });
     }
 
-    // Estudio de gráfico interactivo (TradingView) para dibujar el análisis y capturarlo.
-    const chartToggle = document.getElementById('postChartToggle');
-    const chartStudio = document.getElementById('postChartStudio');
+    // Gráfico interactivo (TradingView) siempre visible: se dibuja el análisis y se captura.
     const chartMount = document.getElementById('postChartStudioMount');
     let chartLoadedSymbol = null;
     function buildChartStudio() {
@@ -2149,15 +2145,15 @@
       });
       chartMount.querySelector('.tradingview-widget-container').appendChild(s);
     }
-    if (chartToggle && chartStudio) {
-      chartToggle.addEventListener('click', () => {
-        const willShow = chartStudio.hidden;
-        chartStudio.hidden = !willShow;
-        chartToggle.textContent = willShow ? '📈 Ocultar gráfico' : '📈 Abrir gráfico para dibujar mi análisis';
-        if (willShow) buildChartStudio();
-      });
+    if (chartMount) {
+      buildChartStudio(); // el gráfico aparece de inmediato
       const symInput = document.getElementById('postSymbol');
-      if (symInput) symInput.addEventListener('change', () => { if (!chartStudio.hidden) buildChartStudio(); });
+      if (symInput) {
+        let chartDebounce = null;
+        const refresh = () => { clearTimeout(chartDebounce); chartDebounce = setTimeout(buildChartStudio, 700); };
+        symInput.addEventListener('change', buildChartStudio);
+        symInput.addEventListener('input', refresh);
+      }
     }
 
     let selectedIdeaDirection = null;
