@@ -121,6 +121,31 @@
     return POST_SYMBOL_MAP[trimmed.replace(/\s+/g, '')] || null;
   }
 
+  // Lista completa de instrumentos para el desplegable del compositor. l=etiqueta, s=valor del campo, c=categoría.
+  const POST_INSTRUMENTS = [
+    { l: 'EUR/USD', s: 'EUR/USD', c: 'Forex' }, { l: 'GBP/USD', s: 'GBP/USD', c: 'Forex' },
+    { l: 'USD/JPY', s: 'USD/JPY', c: 'Forex' }, { l: 'USD/CHF', s: 'FX:USDCHF', c: 'Forex' },
+    { l: 'USD/CAD', s: 'FX:USDCAD', c: 'Forex' }, { l: 'AUD/USD', s: 'FX:AUDUSD', c: 'Forex' },
+    { l: 'NZD/USD', s: 'FX:NZDUSD', c: 'Forex' }, { l: 'EUR/JPY', s: 'FX:EURJPY', c: 'Forex' },
+    { l: 'USD/MXN', s: 'USD/MXN', c: 'LatAm' }, { l: 'USD/BRL', s: 'USD/BRL', c: 'LatAm' },
+    { l: 'USD/COP', s: 'USD/COP', c: 'LatAm' }, { l: 'USD/CLP', s: 'USD/CLP', c: 'LatAm' },
+    { l: 'USD/PEN', s: 'USD/PEN', c: 'LatAm' }, { l: 'USD/ARS', s: 'USD/ARS', c: 'LatAm' },
+    { l: '🥇 Oro (XAU/USD)', s: 'ORO', c: 'Oro' }, { l: '🥈 Plata (XAG/USD)', s: 'PLATA', c: 'Materias Primas' },
+    { l: '🛢️ Petróleo WTI', s: 'PETROLEO', c: 'Materias Primas' }, { l: '🛢️ Petróleo Brent', s: 'UKOIL', c: 'Materias Primas' },
+    { l: 'NASDAQ 100', s: 'NASDAQ', c: 'Índices' }, { l: 'S&P 500', s: 'SP500', c: 'Índices' },
+    { l: 'Dow Jones', s: 'TVC:DJI', c: 'Índices' }, { l: 'DAX 40 (Alemania)', s: 'TVC:DAX', c: 'Índices' },
+    { l: 'FTSE 100 (R. Unido)', s: 'TVC:UKX', c: 'Índices' },
+    { l: '₿ Bitcoin (BTC/USD)', s: 'BTC/USD', c: 'Criptomonedas' }, { l: 'Ξ Ethereum (ETH/USD)', s: 'ETH/USD', c: 'Criptomonedas' },
+    { l: 'Solana (SOL)', s: 'COINBASE:SOLUSD', c: 'Criptomonedas' }, { l: 'XRP', s: 'BITSTAMP:XRPUSD', c: 'Criptomonedas' },
+    { l: 'Dogecoin (DOGE)', s: 'COINBASE:DOGEUSD', c: 'Criptomonedas' }, { l: 'BNB', s: 'BINANCE:BNBUSD', c: 'Criptomonedas' },
+    { l: 'Cardano (ADA)', s: 'COINBASE:ADAUSD', c: 'Criptomonedas' },
+    { l: '🍎 Apple', s: 'NASDAQ:AAPL', c: 'Acciones' }, { l: '🚗 Tesla', s: 'NASDAQ:TSLA', c: 'Acciones' },
+    { l: 'NVIDIA', s: 'NASDAQ:NVDA', c: 'Acciones' }, { l: 'Amazon', s: 'NASDAQ:AMZN', c: 'Acciones' },
+    { l: 'Microsoft', s: 'NASDAQ:MSFT', c: 'Acciones' }, { l: 'Meta', s: 'NASDAQ:META', c: 'Acciones' },
+    { l: 'Google', s: 'NASDAQ:GOOGL', c: 'Acciones' }, { l: 'AMD', s: 'NASDAQ:AMD', c: 'Acciones' },
+    { l: 'Netflix', s: 'NASDAQ:NFLX', c: 'Acciones' }, { l: 'Coca-Cola', s: 'NYSE:KO', c: 'Acciones' }
+  ];
+
   function mountPostChart(container, symbol) {
     container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
     const script = document.createElement('script');
@@ -552,8 +577,11 @@
         <h3 style="margin-bottom:14px;">¿Qué oportunidad estás viendo hoy?</h3>
         <label for="postCategory">Categoría</label>
         <select id="postCategory">${CATEGORY_LABELS.map(c => `<option value="${c}">${c}</option>`).join('')}</select>
-        <label for="postSymbol">Instrumento (opcional, ej. EUR/USD, ORO, BTC/USD)</label>
-        <input type="text" id="postSymbol" maxlength="40">
+        <label for="postSymbol">Instrumento (elige de la lista o escríbelo)</label>
+        <div class="post-symbol-wrap">
+          <input type="text" id="postSymbol" maxlength="40" autocomplete="off" placeholder="Busca: EUR/USD, oro, BTC, Nasdaq, Apple…">
+          <div class="post-symbol-dropdown" id="postSymbolDropdown" hidden></div>
+        </div>
         <label for="postTitle">Título</label>
         <input type="text" id="postTitle" maxlength="120">
         <label for="postBody">Tu análisis</label>
@@ -569,7 +597,7 @@
         </div>
         <div class="chart-studio-wrap" style="margin-top:16px;">
           <label>📈 Gráfico para dibujar tu análisis</label>
-          <p class="footer-text" style="margin:6px 0 10px;">Elige el activo abajo (o escríbelo en "Instrumento"): el <strong>gráfico y la categoría se ajustan solos</strong>. Dibuja tu análisis, <strong style="color:var(--gold-bright);">toma una captura</strong> (⊞ Win+Shift+S · ⌘ Cmd+Shift+4 · o el ícono de cámara del gráfico) y súbela con "Adjuntar imagen".</p>
+          <p class="footer-text" style="margin:6px 0 10px;">Elige el activo en el campo <strong>Instrumento</strong> (se despliega la lista completa) o en los botones de abajo: el <strong>gráfico y la categoría se ajustan solos</strong>. También puedes cambiar el símbolo dentro del gráfico. Dibuja tu análisis, <strong style="color:var(--gold-bright);">toma una captura</strong> (⊞ Win+Shift+S · ⌘ Cmd+Shift+4 · o el ícono de cámara del gráfico) y súbela con "Adjuntar imagen".</p>
           <div class="chart-chips" id="postChartChips">
             <button type="button" class="chart-chip" data-sym="EUR/USD" data-cat="Forex">EUR/USD</button>
             <button type="button" class="chart-chip" data-sym="USD/MXN" data-cat="LatAm">USD/MXN</button>
@@ -2173,31 +2201,65 @@
       s.text = JSON.stringify({
         autosize: true, symbol: sym, interval: '60', timezone: 'America/Lima',
         theme: 'dark', style: '1', locale: 'es',
-        hide_side_toolbar: false, allow_symbol_change: false, save_image: true,
+        hide_side_toolbar: false, allow_symbol_change: true, save_image: true,
         studies: ['STD;EMA'], support_host: 'https://www.tradingview.com'
       });
       chartMount.querySelector('.tradingview-widget-container').appendChild(s);
     }
+    // Aplica un instrumento elegido (desde el desplegable o un botón): campo + categoría + gráfico.
+    function applyInstrument(sym, cat) {
+      if (!postSymbolInput) return;
+      postSymbolInput.value = sym;
+      if (cat && postCategorySelect && CATEGORY_LABELS.indexOf(cat) >= 0) postCategorySelect.value = cat;
+      else syncCategoryFromSymbol();
+      buildChartStudio();
+    }
+
+    // Desplegable buscable con todos los instrumentos.
+    const symDropdown = document.getElementById('postSymbolDropdown');
+    function renderSymbolDropdown(query) {
+      if (!symDropdown) return;
+      const q = (query || '').trim().toLowerCase();
+      let list = POST_INSTRUMENTS;
+      if (q) list = POST_INSTRUMENTS.filter((i) => i.l.toLowerCase().includes(q) || i.s.toLowerCase().includes(q) || i.c.toLowerCase().includes(q));
+      list = list.slice(0, 30);
+      if (!list.length) { symDropdown.hidden = true; return; }
+      symDropdown.innerHTML = list.map((i) =>
+        '<div class="post-symbol-item" data-sym="' + i.s + '" data-cat="' + i.c + '"><span>' + i.l + '</span><span class="post-symbol-cat">' + i.c + '</span></div>'
+      ).join('');
+      symDropdown.hidden = false;
+      symDropdown.querySelectorAll('.post-symbol-item').forEach((it) => {
+        it.addEventListener('mousedown', (e) => {
+          e.preventDefault();
+          applyInstrument(it.dataset.sym, it.dataset.cat);
+          symDropdown.hidden = true;
+        });
+      });
+    }
+
     if (chartMount) {
       buildChartStudio(); // el gráfico aparece de inmediato
-      // Botones rápidos de activo: rellenan Instrumento, ajustan categoría y recargan el gráfico.
+      // Botones rápidos de activo.
       const chipsWrap = document.getElementById('postChartChips');
       if (chipsWrap && postSymbolInput) {
         chipsWrap.querySelectorAll('.chart-chip').forEach((chip) => {
           chip.addEventListener('click', () => {
-            postSymbolInput.value = chip.dataset.sym;
-            if (chip.dataset.cat && postCategorySelect) postCategorySelect.value = chip.dataset.cat;
             chipsWrap.querySelectorAll('.chart-chip').forEach((c) => c.classList.remove('active'));
             chip.classList.add('active');
-            buildChartStudio();
+            applyInstrument(chip.dataset.sym, chip.dataset.cat);
           });
         });
       }
       if (postSymbolInput) {
         let chartDebounce = null;
-        const refresh = () => { clearTimeout(chartDebounce); chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildChartStudio(); }, 700); };
+        postSymbolInput.addEventListener('focus', () => renderSymbolDropdown(postSymbolInput.value));
+        postSymbolInput.addEventListener('input', () => {
+          renderSymbolDropdown(postSymbolInput.value);
+          clearTimeout(chartDebounce);
+          chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildChartStudio(); }, 700);
+        });
         postSymbolInput.addEventListener('change', () => { syncCategoryFromSymbol(); buildChartStudio(); });
-        postSymbolInput.addEventListener('input', refresh);
+        postSymbolInput.addEventListener('blur', () => { setTimeout(() => { if (symDropdown) symDropdown.hidden = true; }, 150); });
       }
     }
 
