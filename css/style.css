@@ -2600,15 +2600,60 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 
 /* Quizzes de Educación: neutralizan los estilos de formulario de .community-form */
 .community-form input[type="radio"] { width: auto; }
-.community-form label.quiz-question {
-  display: block; font-family: inherit; text-transform: none; letter-spacing: 0;
-  font-size: 0.9rem; color: var(--text-hi); margin: 0 0 8px; font-weight: 600;
+/* ── Quiz de ubicacion de Educacion — refinado ──────────────────────────── */
+.quiz-card {
+  position: relative; background: linear-gradient(160deg, rgba(212,175,55,0.06), var(--card-bg, #101728) 55%);
+  border: 1px solid var(--card-border); border-radius: 18px; padding: 26px 24px; overflow: hidden;
 }
-.community-form label.quiz-option {
-  display: flex; align-items: center; gap: 8px; font-family: inherit; text-transform: none;
-  letter-spacing: 0; font-weight: 400; font-size: 0.85rem; color: var(--text-mid); cursor: pointer; margin: 0;
+.quiz-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--gold, #d4af37), transparent 70%);
 }
-.community-form label.quiz-option:hover { color: var(--text-hi); }
+.quiz-card-head { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 20px; }
+.quiz-card-ic {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 46px; height: 46px; border-radius: 13px; color: var(--gold-bright, #f0c75e);
+  background: linear-gradient(150deg, rgba(212,175,55,0.18), rgba(212,175,55,0.04));
+  border: 1px solid rgba(212,175,55,0.3);
+}
+.quiz-card-ic svg { width: 24px; height: 24px; }
+.quiz-card-head h3 { margin: 0 0 3px; font-size: 1.15rem; }
+.quiz-card-sub { margin: 0; color: var(--text-mid); font-size: 0.84rem; line-height: 1.55; }
+
+.quiz-q { padding: 14px 0; border-top: 1px solid var(--card-border); }
+.quiz-q:first-of-type { border-top: none; padding-top: 0; }
+.quiz-question {
+  display: flex; align-items: flex-start; gap: 9px; margin: 0 0 12px;
+  font-size: 0.92rem; color: var(--text-hi); font-weight: 600; line-height: 1.4;
+}
+.quiz-qnum {
+  flex-shrink: 0; width: 22px; height: 22px; border-radius: 7px;
+  background: rgba(212,175,55,0.14); color: var(--gold-bright, #f0c75e);
+  font-size: 0.78rem; font-weight: 800; display: inline-flex; align-items: center; justify-content: center;
+}
+.quiz-options { display: flex; gap: 10px; flex-wrap: wrap; }
+.quiz-option {
+  display: inline-flex; align-items: center; gap: 8px; cursor: pointer; margin: 0;
+  padding: 9px 14px; border-radius: 10px; font-size: 0.85rem; color: var(--text-mid);
+  background: rgba(255,255,255,0.02); border: 1px solid var(--card-border);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+.quiz-option input { position: absolute; opacity: 0; pointer-events: none; }
+.quiz-option-dot {
+  width: 15px; height: 15px; border-radius: 50%; flex-shrink: 0;
+  border: 2px solid var(--text-low); transition: border-color 0.15s, box-shadow 0.15s;
+}
+.quiz-option:hover { color: var(--text-hi); border-color: rgba(212,175,55,0.4); }
+.quiz-option.selected {
+  color: var(--text-hi); border-color: var(--gold, #d4af37);
+  background: rgba(212,175,55,0.1); font-weight: 600;
+}
+.quiz-option.selected .quiz-option-dot {
+  border-color: var(--gold-bright, #f0c75e);
+  box-shadow: inset 0 0 0 3px var(--gold-bright, #f0c75e);
+}
+.quiz-submit { margin-top: 20px; }
+@media (max-width: 520px) { .quiz-option { flex: 1 1 100%; } }
 
 /* Tabla limpia de reglas (detalle de Fondeo) */
 .featured-facts.facts-clean li {

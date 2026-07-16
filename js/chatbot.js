@@ -1,7 +1,9 @@
 (function () {
-  // Avatar propio, serio y autocontenido (monograma dorado): sustituye al
-  // dibujo caricaturesco de DiceBear, que no encajaba con el tono profesional.
-  const ARIA_AVATAR = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+  // Avatar ilustrado de Aria: retrato profesional (DiceBear notionists) sobre un
+  // fondo con degradado dorado y anillo. Es una imagen detallada, no un simple
+  // monograma. Si la red falla, el monograma dorado queda de respaldo.
+  const ARIA_AVATAR = 'https://api.dicebear.com/9.x/notionists/svg?seed=AriaMentoraAR4&scale=135&radius=50&backgroundColor=b8860b,d4af37&backgroundType=gradientLinear';
+  const ARIA_AVATAR_FALLBACK = 'data:image/svg+xml;utf8,' + encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">' +
     '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
     '<stop offset="0%" stop-color="#fbe9b0"/><stop offset="50%" stop-color="#f0c75e"/><stop offset="100%" stop-color="#b8860b"/>' +
@@ -32,7 +34,7 @@
     <div class="chat-header">
       <div class="chat-header-identity">
         <span class="chat-header-avatar-wrap">
-          <img class="chat-header-avatar" src="${ARIA_AVATAR}" alt="Aria">
+          <img class="chat-header-avatar" src="${ARIA_AVATAR}" alt="Aria" onerror="this.onerror=null;this.src='${ARIA_AVATAR_FALLBACK}';">
           <span class="chat-status-dot" title="En línea"></span>
         </span>
         <div>

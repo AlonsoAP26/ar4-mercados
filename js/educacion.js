@@ -46,17 +46,28 @@ function renderQuizForm() {
   const el = document.getElementById('quizForm');
   if (!el) return;
   el.innerHTML = QUIZ_QUESTIONS.map((item, qi) => `
-    <div style="margin-bottom:16px;">
-      <label class="quiz-question">${qi + 1}. ${item.q}</label>
-      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+    <div class="quiz-q">
+      <p class="quiz-question"><span class="quiz-qnum">${qi + 1}</span>${item.q}</p>
+      <div class="quiz-options">
         ${item.options.map(([label, val], oi) => `
-          <label class="quiz-option">
-            <input type="radio" name="quiz_${qi}" value="${val}" ${oi === 0 ? 'checked' : ''}> ${label}
+          <label class="quiz-option${oi === 0 ? ' selected' : ''}">
+            <input type="radio" name="quiz_${qi}" value="${val}" ${oi === 0 ? 'checked' : ''}>
+            <span class="quiz-option-dot"></span>
+            <span class="quiz-option-label">${label}</span>
           </label>
         `).join('')}
       </div>
     </div>
   `).join('');
+
+  // Resalta la opcion elegida (las tarjetas se ven como seleccionables).
+  el.querySelectorAll('input[type="radio"]').forEach((input) => {
+    input.addEventListener('change', () => {
+      el.querySelectorAll(`input[name="${input.name}"]`).forEach((r) => {
+        r.closest('.quiz-option').classList.toggle('selected', r.checked);
+      });
+    });
+  });
 }
 
 function wireQuiz(modules) {
