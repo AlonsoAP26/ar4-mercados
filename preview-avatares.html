@@ -1,3 +1,20 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Vista previa: 20 avatares AR4</title>
+<style>
+body{background:#0a0f1c;color:#e8edf5;margin:0;padding:28px 16px;font-family:'Segoe UI',system-ui,sans-serif;}
+h1{text-align:center;font-size:1.4rem;margin:0 0 6px;}
+p.sub{text-align:center;color:#8b93a7;font-size:.9rem;margin:0 0 26px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px;max-width:900px;margin:0 auto;}
+.cell{background:#101728;border:1px solid #202a3d;border-radius:14px;padding:16px 12px;text-align:center;}
+.cell svg{width:118px;height:118px;}
+.cell .n{font-size:.82rem;font-weight:600;margin-top:8px;}
+.cell .r{font-size:.64rem;text-transform:uppercase;letter-spacing:1px;margin-top:3px;}
+.comun{color:#c7cede;}.raro{color:#8ee7d6;}.legendario{color:#f0c75e;}
+</style></head><body>
+<h1>Colección AR4 · 20 emblemas</h1>
+<p class="sub">Vista previa. Aún no están activos en la tienda hasta que ejecutes el reseed.</p>
+<div class="grid" id="g"></div>
+<script>var module={exports:{}};
 // Generador determinístico de la Colección de Avatares AR4.
 // Rediseño: 20 EMBLEMAS con simbología de trading (toro, oso, vela, diamante,
 // corona, cohete, rayo, diana, etc.), no personajes mascota. Cada emblema es un
@@ -165,3 +182,9 @@ function generateAll() {
 
 const AR4AvatarGen = { generateAvatar, generateAll, TOTAL, tierForSeq };
 if (typeof module !== 'undefined' && module.exports) module.exports = AR4AvatarGen;
+
+var all=AR4AvatarGen.generateAll();
+document.getElementById('g').innerHTML=all.map(function(a){
+  return '<div class="cell">'+a.svg+'<div class="n">'+a.name+'</div><div class="r '+a.rarity+'">'+a.rarity+'</div></div>';
+}).join('');
+</script></body></html>
