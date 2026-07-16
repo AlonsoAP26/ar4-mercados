@@ -71,7 +71,46 @@
       "TVC:SILVER",
       "CAPITALCOM:DXY",
       "TVC:US10Y"
-    ]
+    ],
+    "marketData": {
+      "symbol": "OANDA:XAUUSD",
+      "nombre": "Oro (XAU/USD, futuro COMEX)",
+      "yahooSymbol": "GC=F",
+      "fuente": "Yahoo Finance (GC=F)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 4002.9,
+      "cierreAnterior": 4044.0,
+      "variacionDiaPct": -1.0,
+      "variacionSemanaPct": -3.1,
+      "variacionMesPct": -7.5,
+      "variacionAnioPct": 20.2,
+      "rangoDiaReal": {
+        "minimo": 3977.1,
+        "maximo": 4071.9
+      },
+      "rsi14": 38.7,
+      "lecturaRsi": "neutral",
+      "media50": 4329.16,
+      "media200": 4472.58,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 86.78,
+      "maximo52sem": 5586.2,
+      "minimo52sem": 3263.9,
+      "distanciaAMaximo52semPct": -28.3,
+      "distanciaAMinimo52semPct": 22.6,
+      "soportes": [
+        3962.9,
+        3913.7
+      ],
+      "resistencias": [
+        4034.5,
+        4199.7,
+        4228.7
+      ],
+      "patronUltimaVela": "vela bajista sin patron destacable"
+    }
   },
   {
     "slug": "bitcoin-consolida-tras-rebote-aversion-riesgo-julio-2026",
@@ -145,7 +184,47 @@
       "COINBASE:ETHUSD",
       "FOREXCOM:NSXUSD",
       "CAPITALCOM:DXY"
-    ]
+    ],
+    "marketData": {
+      "symbol": "BITSTAMP:BTCUSD",
+      "nombre": "Bitcoin (BTC/USD)",
+      "yahooSymbol": "BTC-USD",
+      "fuente": "Yahoo Finance (BTC-USD)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 64664.89,
+      "cierreAnterior": 64712.38,
+      "variacionDiaPct": -0.1,
+      "variacionSemanaPct": 1.4,
+      "variacionMesPct": 8.3,
+      "variacionAnioPct": -36.2,
+      "rangoDiaReal": {
+        "minimo": 63848.66,
+        "maximo": 64893.33
+      },
+      "rsi14": 55.0,
+      "lecturaRsi": "neutral",
+      "media50": 63919.02,
+      "media200": 73397.46,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 1886.45,
+      "maximo52sem": 107428.26,
+      "minimo52sem": 57747.77,
+      "distanciaAMaximo52semPct": -39.8,
+      "distanciaAMinimo52semPct": 12.0,
+      "soportes": [
+        63062.22,
+        62553.19,
+        62201.14
+      ],
+      "resistencias": [
+        65544.0,
+        67248.13,
+        68657.7
+      ],
+      "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+    }
   },
   {
     "slug": "peso-mexicano-latam-dolar-firme-julio-2026",
@@ -219,7 +298,47 @@
       "FX_IDC:USDBRL",
       "FX_IDC:USDCOP",
       "CAPITALCOM:DXY"
-    ]
+    ],
+    "marketData": {
+      "symbol": "FX_IDC:USDMXN",
+      "nombre": "USD/MXN (peso mexicano)",
+      "yahooSymbol": "USDMXN=X",
+      "fuente": "Yahoo Finance (USDMXN=X)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 17.43,
+      "cierreAnterior": 17.42,
+      "variacionDiaPct": 0.1,
+      "variacionSemanaPct": -0.8,
+      "variacionMesPct": 1.3,
+      "variacionAnioPct": -6.0,
+      "rangoDiaReal": {
+        "minimo": 17.36,
+        "maximo": 17.46
+      },
+      "rsi14": 48.8,
+      "lecturaRsi": "neutral",
+      "media50": 17.37,
+      "media200": 17.72,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 0.1281,
+      "maximo52sem": 18.98,
+      "minimo52sem": 17.07,
+      "distanciaAMaximo52semPct": -8.2,
+      "distanciaAMinimo52semPct": 2.1,
+      "soportes": [
+        17.36,
+        17.24,
+        17.14
+      ],
+      "resistencias": [
+        17.43,
+        17.64,
+        17.94
+      ],
+      "patronUltimaVela": "envolvente alcista (el cuerpo cubre por completo el de la vela bajista previa)"
+    }
   },
   {
     "slug": "eur-usd-minimos-anuales-tension-eeuu-iran",
@@ -293,7 +412,46 @@
       "TVC:UKOIL",
       "CAPITALCOM:DXY",
       "FX_IDC:USDMXN"
-    ]
+    ],
+    "marketData": {
+      "symbol": "FX:EURUSD",
+      "nombre": "EUR/USD",
+      "yahooSymbol": "EURUSD=X",
+      "fuente": "Yahoo Finance (EURUSD=X)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 1.1447,
+      "cierreAnterior": 1.1425,
+      "variacionDiaPct": 0.2,
+      "variacionSemanaPct": 0.2,
+      "variacionMesPct": -1.4,
+      "variacionAnioPct": -2.6,
+      "rangoDiaReal": {
+        "minimo": 1.1447,
+        "maximo": 1.148
+      },
+      "rsi14": 48.2,
+      "lecturaRsi": "neutral",
+      "media50": 1.1542,
+      "media200": 1.1641,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 0.0062,
+      "maximo52sem": 1.2024,
+      "minimo52sem": 1.1325,
+      "distanciaAMaximo52semPct": -4.8,
+      "distanciaAMinimo52semPct": 1.1,
+      "soportes": [
+        1.143,
+        1.1325
+      ],
+      "resistencias": [
+        1.1467,
+        1.1677,
+        1.1828
+      ],
+      "patronUltimaVela": "vela bajista sin patron destacable"
+    }
   },
   {
     "slug": "monedas-latam-carry-trade-dolar-debil",
@@ -309,7 +467,47 @@
     "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Tres divisas, un mismo impulso</h3><p>Un dólar global más débil dejó al real brasileño, al peso chileno y al peso mexicano cerca de los niveles más fuertes de su rango del último año. El real se ubica cerca de 5.16 por dólar, el peso chileno cerca de 927.6, y el peso mexicano cerca de 17.40, los tres instalados en la zona alta de su banda de cotización reciente.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El mecanismo detrás de la fortaleza compartida</h3><p>Detrás de este movimiento está el carry trade: la estrategia de financiarse en una divisa de tasas bajas para invertir en otra de tasas altas. Con la Selic de Brasil en 14.25%, uno de los niveles más altos entre las economías grandes del mundo, el diferencial frente a las tasas de Estados Unidos continúa siendo amplio, incluso con el mercado recortando sus propias expectativas de bajadas de tasas estadounidenses este año.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El balance para quien opera estos pares</h3><p>Para quien opera USD/BRL o USD/MXN de forma directa, esta fortaleza refleja un equilibrio entre el atractivo de las tasas altas locales y el riesgo de que el sentimiento global cambie con rapidez. El mismo diferencial que hoy atrae capital en tiempos de calma puede provocar salidas abruptas ante un evento de aversión al riesgo.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Riesgo principal</h3><p>El factor de riesgo más relevante para esta narrativa regional es un cambio repentino en el apetito de riesgo global, ya sea por una escalada en la tensión en Medio Oriente o por minutas de la Fed con un tono más restrictivo de lo esperado. Cualquiera de los dos escenarios tiende a fortalecer al dólar de forma amplia, con las divisas emergentes entre las primeras en absorber el impacto. Los datos duros detrás de este diferencial de tasas, y qué tan sostenible es realmente, se detallan en el análisis completo a continuación.</p>",
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Los números detrás del carry trade</h3><p>La Selic brasileña se ubica en 14.25%, la tasa de referencia de Banxico en México ronda el 9.50%, y la tasa de la Fed en Estados Unidos está en el rango de 4.00%-4.25%. Ese diferencial —de casi 10 puntos porcentuales entre Brasil y EE.UU., y de más de 5 puntos entre México y EE.UU.— es lo que sostiene gran parte del atractivo de estas divisas para capital internacional que busca rendimiento. El PIB de Brasil creció 2.1% interanual en el último trimestre reportado, mientras que México registró un crecimiento más modesto de 1.4%, ambos por encima de la contracción que muchos analistas anticipaban hace un año.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Qué tan frágil es este equilibrio</h3><p>El riesgo estructural del carry trade no es teórico: en episodios previos de aversión al riesgo global, divisas con dinámicas similares perdieron entre 15% y 25% de su valor en cuestión de semanas, a medida que el capital especulativo salía en estampida. Hoy el posicionamiento especulativo neto en el real y el peso mexicano se encuentra en niveles elevados según los reportes de posicionamiento de futuros, lo que en el pasado ha precedido correcciones cuando el sentimiento global cambia de forma abrupta.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La fortaleza actual del real, el peso chileno y el peso mexicano descansa sobre una base real —diferenciales de tasas genuinos, crecimiento económico positivo— pero también sobre un apetito de riesgo global que históricamente ha sido el factor más volátil de la ecuación. La pregunta que vale la pena hacerse no es si esta fortaleza es merecida, sino cuánto capital especulativo de corto plazo está montado sobre la misma narrativa al mismo tiempo, porque eso determina qué tan violenta podría ser la salida si el consenso cambia. Para quienes operan estos pares, la recomendación más sensata no es predecir cuándo se revertirá el ciclo, sino dimensionar el riesgo asumiendo que, tarde o temprano, se revertirá.</p>",
     "heroType": "latam",
-    "trend": "up"
+    "trend": "up",
+    "marketData": {
+      "symbol": "FX_IDC:USDBRL",
+      "nombre": "USD/BRL (real brasileno)",
+      "yahooSymbol": "USDBRL=X",
+      "fuente": "Yahoo Finance (USDBRL=X)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 5.1032,
+      "cierreAnterior": 5.0879,
+      "variacionDiaPct": 0.3,
+      "variacionSemanaPct": -1.2,
+      "variacionMesPct": 0.0,
+      "variacionAnioPct": -7.6,
+      "rangoDiaReal": {
+        "minimo": 5.0705,
+        "maximo": 5.1042
+      },
+      "rsi14": 45.4,
+      "lecturaRsi": "neutral",
+      "media50": 5.0967,
+      "media200": 5.2304,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 0.0669,
+      "maximo52sem": 5.6259,
+      "minimo52sem": 4.8812,
+      "distanciaAMaximo52semPct": -9.3,
+      "distanciaAMinimo52semPct": 4.5,
+      "soportes": [
+        5.0402,
+        4.9946,
+        4.9439
+      ],
+      "resistencias": [
+        5.1035,
+        5.2461,
+        5.3108
+      ],
+      "patronUltimaVela": "vela alcista de cuerpo amplio"
+    }
   },
   {
     "slug": "petroleo-brent-maximos-dos-semanas",
@@ -324,7 +522,47 @@
     "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Qué es la prima de riesgo geopolítico</h3><p>El precio del petróleo puede subir simplemente porque aumenta la probabilidad percibida de una disrupción del suministro, sin que esa disrupción llegue a materializarse. A este componente se le llama prima de riesgo geopolítico, y es exactamente lo que explica el movimiento de esta semana: el Brent subió hasta su nivel más alto en dos semanas después de que Estados Unidos lanzara nuevos ataques contra Irán.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Por qué Medio Oriente mueve tanto al mercado energético</h3><p>La región concentra una parte muy relevante de la producción y las rutas marítimas de petróleo a nivel mundial, lo que explica la volatilidad recurrente del mercado energético cada vez que surge tensión militar ahí, incluso cuando la disrupción real de suministro termina siendo limitada.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Impacto en las economías de la región</h3><p>Varias economías latinoamericanas son sensibles al precio del petróleo, ya sea como exportadoras —Colombia o México, con participación estatal relevante en el sector— o como importadoras netas que ven presionada su factura energética y, con ella, su inflación doméstica. Un petróleo más caro también empuja al alza las expectativas de inflación global, con implicaciones para el ritmo de recortes de tasas de los bancos centrales de la región.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Qué vigilar</h3><p>Cualquier señal de escalada o desescalada diplomática puede mover el precio del crudo con rapidez en cualquier dirección. El mercado ya ha comenzado a ajustar al alza la probabilidad implícita de una subida de tasas en septiembre en algunos bancos centrales, en parte como respuesta a este repunte energético. Cuánto de este movimiento responde a fundamentos reales de oferta y cuánto es pura prima de riesgo es la pregunta que desarrollamos en la sección de análisis completo.</p>",
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La geografía que explica la volatilidad</h3><p>Cerca del 30% del petróleo que se transporta por vía marítima a nivel mundial pasa por el Estrecho de Ormuz, la vía de acceso al Golfo Pérsico. Esa concentración geográfica es la razón estructural por la que cualquier tensión militar en la región, incluso sin una interrupción real del flujo, dispara la prima de riesgo del petróleo casi de inmediato. En la crisis actual, la producción de la OPEP+ se mantiene relativamente estable en torno a los niveles acordados, lo que sugiere que el repunte de precios responde más al temor que a un desequilibrio real de oferta y demanda.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El impacto en cifras para la región</h3><p>Cada 10 dólares de incremento sostenido en el precio del petróleo se traduce, según estimaciones de organismos multilaterales, en aproximadamente 0.3-0.5 puntos porcentuales adicionales de inflación para economías importadoras netas como Chile o Perú, con un rezago de dos a cuatro meses. Para México y Colombia, ambos con participación estatal relevante en la producción petrolera, el efecto es mixto: mayores ingresos fiscales por exportación, pero también mayor presión inflacionaria doméstica en combustibles.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El mercado petrolero está, en esencia, apostando a que la tensión actual no escale hasta el punto de una disrupción física del suministro, de ahí que el repunte, aunque notable, no haya sido explosivo. El escenario que de verdad movería el precio de forma dramática sería un cierre efectivo o una amenaza creíble sobre el Estrecho de Ormuz, algo que no ha ocurrido en ningún episodio reciente pese a la retórica. Mientras ese riesgo de cola permanezca bajo pero no nulo, es razonable esperar que el petróleo mantenga una prima de riesgo elevada sin necesariamente disparar hacia niveles extremos, con la volatilidad concentrada en los días donde aparecen titulares nuevos sobre el conflicto.</p>",
     "heroType": "oil",
-    "trend": "up"
+    "trend": "up",
+    "marketData": {
+      "symbol": "TVC:UKOIL",
+      "nombre": "Petroleo Brent",
+      "yahooSymbol": "BZ=F",
+      "fuente": "Yahoo Finance (BZ=F)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 85.34,
+      "cierreAnterior": 84.95,
+      "variacionDiaPct": 0.5,
+      "variacionSemanaPct": 11.8,
+      "variacionMesPct": 2.6,
+      "variacionAnioPct": 24.2,
+      "rangoDiaReal": {
+        "minimo": 83.83,
+        "maximo": 86.26
+      },
+      "rsi14": 56.6,
+      "lecturaRsi": "neutral",
+      "media50": 89.89,
+      "media200": 79.23,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 4.0052,
+      "maximo52sem": 126.1,
+      "minimo52sem": 58.72,
+      "distanciaAMaximo52semPct": -32.3,
+      "distanciaAMinimo52semPct": 45.3,
+      "soportes": [
+        81.16,
+        70.14,
+        69.32
+      ],
+      "resistencias": [
+        99.0,
+        112.69,
+        119.3
+      ],
+      "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+    }
   },
   {
     "slug": "ibovespa-cae-merval-sube-segunda-sesion",
@@ -339,7 +577,47 @@
     "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Resultados divergentes en una misma sesión</h3><p>El Ibovespa, el principal índice bursátil de Brasil, retrocedió 0.25% hasta 172,021 puntos y encadenó su segunda jornada consecutiva a la baja. El mercado argentino, medido por el Merval, tuvo un comportamiento opuesto: una sesión positiva que lo despegó claramente del resto de la región.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El peso del petróleo en el índice brasileño</h3><p>Los mercados bursátiles latinoamericanos muestran, desde hace un año, una correlación relevante con el apetito de riesgo global y con el precio de las materias primas, un factor especialmente importante para Brasil dado el peso del sector de commodities dentro de su índice. Un repunte del petróleo como el de esta semana genera un efecto mixto: favorece a las acciones de energía dentro del índice, pero al mismo tiempo eleva la incertidumbre sobre inflación y tasas, lo que termina pesando sobre el sentimiento general del mercado.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Por qué la correlación regional no siempre se cumple</h3><p>El comportamiento divergente entre Brasil y Argentina esta semana ilustra un punto que conviene tener presente: aunque los mercados de la región suelen moverse en una misma dirección amplia, correlacionados con el sentimiento global, factores locales como la política monetaria de cada país pueden generar diferencias marcadas de un mercado a otro en cuestión de días.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Próximo catalizador</h3><p>Con el petróleo nuevamente al alza por la tensión geopolítica, el mercado asigna una probabilidad cercana al 58% a una subida de tasas en septiembre en algunos bancos centrales relevantes, un factor que podría seguir pesando sobre el ánimo inversor regional, particularmente en los sectores más sensibles a las tasas de interés. Los números concretos detrás de cada índice, y por qué tratar a la región como un bloque homogéneo es un error, se explican en el análisis completo.</p>",
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Los números detrás de cada índice</h3><p>El Ibovespa acumula una ganancia de 18% en lo que va del año, impulsado en gran medida por el sector de materias primas y financiero, mientras que el Merval argentino registra un avance considerablemente mayor, superior al 40% medido en dólares, reflejo tanto de un proceso de estabilización macroeconómica local como de un punto de partida muy castigado en años anteriores. La inflación interanual de Argentina, aunque todavía elevada, ha descendido de forma sostenida desde los picos de hace dos años, un factor que sostiene el optimismo sobre los activos argentinos entre inversores especializados en mercados emergentes.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El riesgo de concentración sectorial</h3><p>Una parte relevante del rally del Ibovespa depende de un número reducido de empresas de materias primas y bancos, lo que significa que un cambio en el ciclo de commodities globales —por ejemplo, una desaceleración china que reduzca la demanda de mineral de hierro— tendría un impacto desproporcionado sobre el índice en su conjunto, más allá del desempeño de la economía brasileña en general.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La divergencia entre Brasil y Argentina esta semana no es un evento aislado sino la manifestación de dos historias de inversión distintas que conviven en la misma región: una recuperación cíclica apalancada en materias primas en el caso brasileño, y una historia de estabilización macro de más largo plazo en el caso argentino. Para un inversor que sigue índices latinoamericanos, la lección práctica es que tratar a Latinoamérica como un bloque homogéneo lleva a decisiones equivocadas: los drivers de cada mercado pueden ser casi opuestos en un mismo periodo, y el reciente desempeño del Merval frente al Ibovespa es la prueba más clara de ese punto en lo que va del año.</p>",
     "heroType": "index",
-    "trend": "down"
+    "trend": "down",
+    "marketData": {
+      "symbol": "BMFBOVESPA:IBOV",
+      "nombre": "Ibovespa (Brasil)",
+      "yahooSymbol": "^BVSP",
+      "fuente": "Yahoo Finance (^BVSP)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 174552.27,
+      "cierreAnterior": 176011.0,
+      "variacionDiaPct": -0.8,
+      "variacionSemanaPct": 1.0,
+      "variacionMesPct": 3.6,
+      "variacionAnioPct": 29.0,
+      "rangoDiaReal": {
+        "minimo": 173871.39,
+        "maximo": 176011.31
+      },
+      "rsi14": 52.2,
+      "lecturaRsi": "neutral",
+      "media50": 173885.11,
+      "media200": 170453.03,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 2398.94,
+      "maximo52sem": 199355.0,
+      "minimo52sem": 131550.0,
+      "distanciaAMaximo52semPct": -12.4,
+      "distanciaAMinimo52semPct": 32.7,
+      "soportes": [
+        173544.0,
+        169819.0,
+        167864.5
+      ],
+      "resistencias": [
+        178350.5,
+        186057.5,
+        187334.0
+      ],
+      "patronUltimaVela": "vela bajista sin patron destacable"
+    }
   },
   {
     "slug": "chile-peru-prueba-desinflacion-andina",
@@ -355,7 +633,47 @@
     "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Dos eventos, una misma pregunta regional</h3><p>El IPC de Chile y la decisión de tasas del banco central de Perú concentran la atención en la región andina esta semana. En Chile, el mercado contempla un escenario que hace poco parecía improbable: una lectura mensual negativa del IPC, señal de que la desinflación avanza más rápido de lo previsto originalmente.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El proceso de desinflación chileno en contexto</h3><p>Chile y Perú han sido, durante buena parte de los últimos años, dos de las economías con procesos de desinflación más consistentes de la región, tras los picos inflacionarios que golpearon a gran parte de Latinoamérica en el periodo pospandemia. Ambos bancos centrales optaron por un enfoque relativamente gradual de ajuste. Una lectura negativa del IPC mensual en Chile marcaría, de confirmarse, un hito dentro de ese proceso de normalización.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que está en juego en Perú</h3><p>La decisión de tasas del banco central peruano no solo afecta directamente al sol —también sirve de referencia para el resto de bancos centrales de la región sobre qué tan rápido se puede avanzar en un ciclo de recortes sin arriesgar la estabilidad de precios.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El factor externo</h3><p>Más allá de los datos locales, ambas divisas permanecen expuestas al apetito de riesgo global y al precio de las materias primas relevantes para cada economía: el cobre para Chile, el contexto energético regional para Perú. En más de una ocasión, ese componente externo termina pesando tanto o más que cualquier dato macroeconómico doméstico. Los números exactos de este proceso de desinflación, y qué tan replicable es en el resto de la región, se examinan en el análisis completo.</p>",
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Los números detrás de la desinflación andina</h3><p>La inflación interanual de Chile se ubica en 3.2%, apenas por encima de la meta de 3% del Banco Central, tras haber llegado a superar el 14% en el pico del ciclo inflacionario post-pandemia. Perú, por su parte, mantiene una de las inflaciones más bajas de la región en 2.1% interanual, dentro de su rango meta de 1%-3%. Ambos países comparten una característica poco común en Latinoamérica: bancos centrales con independencia operativa consolidada y una historia de cumplimiento de metas de inflación que ha anclado las expectativas del mercado de forma efectiva.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que revela la curva de expectativas</h3><p>El mercado de swaps de inflación en Chile ya descuenta al menos dos recortes adicionales de tasas para lo que resta del año, llevando la tasa de referencia desde su nivel actual de 5.25% hacia una zona cercana a 4.50%. En Perú, el mercado está más dividido: parte de los analistas espera que el banco central mantenga una pausa prolongada dado que la inflación ya se encuentra dentro del rango meta, mientras otra parte anticipa un recorte adicional si los datos de actividad económica continúan mostrando debilidad.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>Chile y Perú representan, dentro de Latinoamérica, el caso más cercano a una normalización de manual del ciclo inflacionario: subida agresiva de tasas, anclaje de expectativas, y ahora un descenso gradual y ordenado de la inflación hacia la meta. Eso no significa ausencia de riesgo —el precio del cobre y el contexto político doméstico siguen siendo variables capaces de descarrilar el proceso— pero sí ofrece un contraste útil frente a economías de la región con procesos de desinflación más erráticos. Para quien opera USD/CLP o USD/PEN, el mensaje de fondo es que ambas divisas dependen cada vez menos de sorpresas de política monetaria doméstica, y cada vez más de factores externos: el apetito de riesgo global y el precio de las materias primas que cada país exporta.</p>",
     "heroType": "latam",
-    "trend": "neutral"
+    "trend": "neutral",
+    "marketData": {
+      "symbol": "FX_IDC:USDCLP",
+      "nombre": "USD/CLP (peso chileno)",
+      "yahooSymbol": "USDCLP=X",
+      "fuente": "Yahoo Finance (USDCLP=X)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 927.2,
+      "cierreAnterior": 925.05,
+      "variacionDiaPct": 0.2,
+      "variacionSemanaPct": -0.8,
+      "variacionMesPct": 4.7,
+      "variacionAnioPct": -2.4,
+      "rangoDiaReal": {
+        "minimo": 924.93,
+        "maximo": 927.65
+      },
+      "rsi14": 58.4,
+      "lecturaRsi": "neutral",
+      "media50": 907.26,
+      "media200": 906.55,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 10.27,
+      "maximo52sem": 982.25,
+      "minimo52sem": 851.76,
+      "distanciaAMaximo52semPct": -5.6,
+      "distanciaAMinimo52semPct": 8.9,
+      "soportes": [
+        921.03,
+        916.24,
+        909.57
+      ],
+      "resistencias": [
+        928.75,
+        934.03,
+        940.23
+      ],
+      "patronUltimaVela": "vela alcista sin patron destacable"
+    }
   },
   {
     "slug": "mercado-espera-minutas-fed-volatilidad",
@@ -370,7 +688,45 @@
     "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Posiciones cautelosas antes de un evento clave</h3><p>Los operadores de forex a nivel global mantienen posiciones relativamente cautelosas mientras esperan la publicación de las próximas minutas de la Reserva Federal de Estados Unidos, el resumen detallado de la última reunión de política monetaria.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Por qué las minutas suelen mover más que el comunicado</h3><p>Durante el último año, las minutas de la Fed se han convertido en uno de los eventos de mayor impacto recurrente en el mercado de divisas, superando en ocasiones a la reacción del propio comunicado de decisión de tasas. Las minutas revelan matices de la discusión interna —divisiones de opinión, preocupaciones específicas sobre inflación o empleo— que rara vez aparecen en el comunicado oficial, mucho más breve y estandarizado.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El canal de transmisión hacia la región</h3><p>El dólar estadounidense es la contraparte de prácticamente todos los pares relevantes para Latinoamérica: USD/MXN, USD/COP, USD/BRL, USD/CLP, USD/PEN, USD/ARS. Un tono más restrictivo (a favor de mantener tasas altas por más tiempo) tiende a fortalecer al dólar de forma amplia y presionar a la baja a las divisas emergentes; un tono más laxo suele tener el efecto contrario.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El detalle que puede mover el mercado</h3><p>Con el petróleo presionando al alza las expectativas de inflación por la tensión en Medio Oriente, el mercado prestará especial atención a si los funcionarios de la Fed mencionan explícitamente ese riesgo como un factor que podría retrasar los recortes de tasas planeados para lo que resta del año. Los datos de empleo e inflación que hay detrás de esta división dentro del comité se detallan en el análisis completo.</p>",
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que dicen los datos previos a las minutas</h3><p>La última decisión de la Fed mantuvo la tasa de referencia sin cambios en el rango de 4.00%-4.25%, con el dot plot (el gráfico de proyecciones individuales de tasas de cada miembro del comité) mostrando una mediana de dos recortes adicionales para lo que resta del año. Sin embargo, la dispersión entre los miembros es notablemente amplia: mientras algunos proyectan hasta tres recortes, otros no ven ninguno adicional en 2026, reflejo de un comité genuinamente dividido sobre el balance entre el riesgo de inflación persistente y el de un enfriamiento excesivo del mercado laboral.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El indicador que más pesa ahora mismo</h3><p>El último reporte de empleo mostró la creación de 142,000 nuevos puestos de trabajo no agrícolas, por debajo de la expectativa del mercado de 165,000, mientras la tasa de desempleo se mantuvo estable en 4.2%. Esta combinación —crecimiento del empleo desacelerando pero sin señales de deterioro abrupto— es precisamente el tipo de dato ambiguo que hace que las minutas, con su detalle sobre el razonamiento interno del comité, importen más de lo habitual esta vez.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El mercado de divisas global está, en el fondo, tratando de resolver una ecuación con demasiadas incógnitas al mismo tiempo: una Fed dividida, un mercado laboral que se desacelera sin colapsar, y un shock de oferta petrolera que complica cualquier lectura limpia de la inflación subyacente. Las minutas no van a resolver esa incertidumbre de forma definitiva, pero sí pueden inclinar la balanza en el margen: un solo párrafo mencionando preocupación explícita por el petróleo como riesgo inflacionario sería suficiente para que el mercado revise a la baja sus expectativas de recortes, con el consecuente fortalecimiento amplio del dólar frente a las divisas emergentes de la región.</p>",
     "heroType": "bank",
-    "trend": "neutral"
+    "trend": "neutral",
+    "marketData": {
+      "symbol": "CAPITALCOM:DXY",
+      "nombre": "Indice dolar (DXY)",
+      "yahooSymbol": "DX-Y.NYB",
+      "fuente": "Yahoo Finance (DX-Y.NYB)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 100.64,
+      "cierreAnterior": 100.5,
+      "variacionDiaPct": 0.1,
+      "variacionSemanaPct": -0.3,
+      "variacionMesPct": 1.0,
+      "variacionAnioPct": 2.0,
+      "rangoDiaReal": {
+        "minimo": 100.44,
+        "maximo": 100.68
+      },
+      "rsi14": 50.3,
+      "lecturaRsi": "neutral",
+      "media50": 99.89,
+      "media200": 99.0,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 0.4706,
+      "maximo52sem": 101.8,
+      "minimo52sem": 95.55,
+      "distanciaAMaximo52semPct": -1.1,
+      "distanciaAMinimo52semPct": 5.3,
+      "soportes": [
+        100.56,
+        99.34,
+        98.79
+      ],
+      "resistencias": [
+        101.63
+      ],
+      "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+    }
   },
   {
     "slug": "bitcoin-etf-spot-volumen-record-activos-gestionados",
@@ -385,7 +741,47 @@
     "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Un cambio estructural en quién compra Bitcoin</h3><p>Los ETF spot de Bitcoin listados en Estados Unidos acumulan un monto récord de activos bajo gestión desde su lanzamiento, según datos recopilados por varios proveedores de análisis on-chain. El dato confirma una tendencia que se viene consolidando desde hace más de un año: buena parte de la demanda marginal de Bitcoin ya no proviene de compradores minoristas operando directamente en exchanges cripto, sino de fondos, aseguradoras y gestoras patrimoniales que acceden al activo a través de un vehículo regulado y listado en bolsa.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Por qué este canal se volvió tan relevante</h3><p>Un ETF spot de Bitcoin funciona como cualquier otro fondo cotizado: replica el precio del activo subyacente y se compra o vende como una acción, sin que el inversor tenga que gestionar una billetera cripto ni preocuparse por la custodia de las claves privadas. Esa simplicidad operativa —sumada al hecho de tratarse de un producto regulado, apto para carteras institucionales con mandatos estrictos— explica por qué este mecanismo ha canalizado más flujos de los que muchos analistas anticipaban al momento de su aprobación.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El efecto sobre la oferta disponible</h3><p>Cada vez que estos fondos registran entradas netas, sus administradores deben adquirir Bitcoin real para respaldar las nuevas participaciones emitidas, retirando esas monedas de la oferta líquida en circulación. Sostenido en el tiempo, este mecanismo actúa como una presión de demanda estructural distinta a los ciclos especulativos de minoristas que caracterizaron a Bitcoin en sus primeros años.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Qué implica para el resto del mercado cripto</h3><p>El volumen creciente de estos ETF también funciona como un indicador que otros participantes del mercado —incluidos traders minoristas en Latinoamérica— siguen de cerca para calibrar el apetito institucional por el activo. Una desaceleración marcada en los flujos, o una serie de salidas netas sostenidas, suele interpretarse como una señal de cautela institucional que puede anticipar periodos de mayor volatilidad en el precio. Las cifras exactas de esta transformación del mercado, y quién está comprando realmente, se detallan en el análisis completo.</p>",
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Los números que dimensionan el fenómeno</h3><p>Los ETF spot de Bitcoin listados en Estados Unidos acumulan activos bajo gestión que representan ya más del 6% del suministro circulante total de Bitcoin, un umbral que ningún analista anticipaba alcanzar tan rápido al momento del lanzamiento de estos productos. Los flujos netos diarios promedio de las últimas semanas superan los 200 millones de dólares, con jornadas puntuales que han superado los 500 millones, cifras que superan ampliamente el volumen que manejaba el mercado institucional de Bitcoin antes de la aprobación de estos vehículos.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Quién está comprando realmente</h3><p>Los reportes 13F (las declaraciones trimestrales obligatorias de posiciones para gestores institucionales en Estados Unidos) muestran una base de compradores cada vez más diversa: fondos de pensiones estatales, aseguradoras, y un número creciente de asesores financieros independientes que asignan un porcentaje pequeño pero creciente de las carteras de sus clientes al activo, algo impensable hace apenas tres años.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>Lo que está ocurriendo con los ETF spot de Bitcoin no es simplemente más demanda, es un cambio estructural en el tipo de comprador marginal del activo, de especuladores minoristas de corto plazo a asignadores institucionales con horizontes de inversión medidos en años, no en días. Ese cambio tiene implicancias directas sobre la volatilidad esperada del activo a mediano plazo: en teoría, una base de tenedores más paciente debería traducirse en menos ventas de pánico durante correcciones, aunque esta tesis todavía no ha sido probada en un ciclo bajista completo bajo este nuevo régimen de demanda institucional. Los próximos meses, especialmente si el mercado enfrenta una corrección significativa, serán la primera prueba real de si el argumento se sostiene.</p>",
     "heroType": "crypto",
-    "trend": "up"
+    "trend": "up",
+    "marketData": {
+      "symbol": "BITSTAMP:BTCUSD",
+      "nombre": "Bitcoin (BTC/USD)",
+      "yahooSymbol": "BTC-USD",
+      "fuente": "Yahoo Finance (BTC-USD)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 64664.89,
+      "cierreAnterior": 64712.38,
+      "variacionDiaPct": -0.1,
+      "variacionSemanaPct": 1.4,
+      "variacionMesPct": 8.3,
+      "variacionAnioPct": -36.2,
+      "rangoDiaReal": {
+        "minimo": 63848.66,
+        "maximo": 64893.33
+      },
+      "rsi14": 55.0,
+      "lecturaRsi": "neutral",
+      "media50": 63919.02,
+      "media200": 73397.46,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 1886.45,
+      "maximo52sem": 107428.26,
+      "minimo52sem": 57747.77,
+      "distanciaAMaximo52semPct": -39.8,
+      "distanciaAMinimo52semPct": 12.0,
+      "soportes": [
+        63062.22,
+        62553.19,
+        62201.14
+      ],
+      "resistencias": [
+        65544.0,
+        67248.13,
+        68657.7
+      ],
+      "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+    }
   },
   {
     "slug": "ethereum-capas-2-actividad-maximo-historico",
@@ -400,7 +796,47 @@
     "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Más actividad en la red, sin que el precio lo refleje todavía</h3><p>Las redes de capa 2 construidas sobre Ethereum —soluciones que procesan transacciones fuera de la cadena principal para luego liquidarlas en ella, reduciendo costos y tiempos de confirmación— alcanzaron un volumen de transacciones históricamente alto durante las últimas semanas. El dato contrasta con el comportamiento del precio de ETH, que se mantiene en fase de consolidación frente al dólar y sigue perdiendo terreno frente a Bitcoin en términos relativos.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Qué son exactamente estas capas 2</h3><p>Redes como las que operan sobre Ethereum permiten ejecutar aplicaciones descentralizadas, intercambios de tokens y otros contratos inteligentes a una fracción del costo de hacerlo directamente en la red principal, mientras siguen dependiendo de Ethereum como capa de seguridad y liquidación final. En la práctica, cuanta más actividad ocurre en estas redes, más relevante se vuelve el rol de Ethereum como infraestructura base del ecosistema, incluso si esa actividad no siempre genera una demanda directa y proporcional del token ETH.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La brecha entre uso y precio que divide a los analistas</h3><p>Esta desconexión entre crecimiento de uso y comportamiento del precio es uno de los debates más activos entre analistas del sector. Una parte del mercado sostiene que el valor generado en las capas 2 eventualmente debería reflejarse en el precio de ETH a través de mecanismos como la quema de comisiones en la red principal; otra parte argumenta que buena parte de ese valor queda capturado por las propias capas 2 y sus tokens, sin traspasarse de forma directa a Ethereum.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Por qué esto importa más allá del ecosistema cripto</h3><p>El crecimiento sostenido de estas redes también es relevante para inversores que siguen el sector desde una óptica más tradicional, ya que refuerza la tesis de Ethereum como infraestructura financiera de largo plazo, independientemente de la volatilidad de corto plazo en el precio del token. Los números concretos detrás de este crecimiento, y el debate técnico sobre dónde queda capturado el valor, se explican en el análisis completo.</p>",
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Los números detrás del crecimiento de las capas 2</h3><p>El volumen de transacciones diarias procesadas en las principales redes de capa 2 construidas sobre Ethereum supera ya varias veces al volumen procesado en la red principal (mainnet), con comisiones promedio hasta 95% más bajas. El valor total bloqueado (TVL, por sus siglas en inglés) en estas redes ha crecido de forma sostenida, superando los niveles previos al último gran ciclo bajista del mercado cripto, una señal de actividad real más allá de la especulación pura.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El debate sobre dónde queda capturado el valor</h3><p>La pregunta central que divide a los analistas es técnica pero con implicancias muy prácticas: cuando una transacción ocurre en una red de capa 2, ¿cuánto de esa actividad económica termina beneficiando al token ETH, y cuánto queda capturado por el token nativo de la propia capa 2? El mecanismo de quema de comisiones en la red principal de Ethereum, donde una parte de las comisiones pagadas se elimina permanentemente de circulación reduciendo la oferta, es el argumento más citado por quienes creen que el crecimiento de las capas 2 sí beneficia a ETH en el largo plazo, aunque de forma indirecta y con rezago.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La desconexión actual entre el crecimiento del uso de Ethereum como infraestructura y el comportamiento de su precio es, para muchos analistas, una de las situaciones más interesantes del mercado cripto en este momento, no porque sea inusual ver una divergencia entre fundamentales y precio de corto plazo, sino porque la magnitud de la divergencia es particularmente amplia. Históricamente, este tipo de brechas tienden a cerrarse eventualmente, aunque el mecanismo y el momento son notoriamente difíciles de anticipar. La pregunta que vale la pena monitorear no es cuándo subirá ETH, sino si el mecanismo de captura de valor hacia la red principal se fortalece o se debilita a medida que el ecosistema de capas 2 sigue madurando.</p>",
     "heroType": "crypto",
-    "trend": "neutral"
+    "trend": "neutral",
+    "marketData": {
+      "symbol": "COINBASE:ETHUSD",
+      "nombre": "Ethereum (ETH/USD)",
+      "yahooSymbol": "ETH-USD",
+      "fuente": "Yahoo Finance (ETH-USD)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 1887.19,
+      "cierreAnterior": 1916.94,
+      "variacionDiaPct": -1.6,
+      "variacionSemanaPct": 5.5,
+      "variacionMesPct": 20.6,
+      "variacionAnioPct": -43.0,
+      "rangoDiaReal": {
+        "minimo": 1869.16,
+        "maximo": 1926.41
+      },
+      "rsi14": 62.5,
+      "lecturaRsi": "neutral",
+      "media50": 1744.4,
+      "media200": 2200.26,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 74.61,
+      "maximo52sem": 3656.15,
+      "minimo52sem": 1506.51,
+      "distanciaAMaximo52semPct": -48.4,
+      "distanciaAMinimo52semPct": 25.3,
+      "soportes": [
+        1837.3,
+        1804.11,
+        1748.63
+      ],
+      "resistencias": [
+        2105.07,
+        2145.51,
+        2165.67
+      ],
+      "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+    }
   },
   {
     "slug": "adopcion-cripto-america-latina-argentina-el-salvador",
@@ -415,7 +851,47 @@
     "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Dos países, dos razones distintas para el mismo fenómeno</h3><p>Un nuevo índice global de adopción de criptomonedas vuelve a ubicar a Argentina y El Salvador entre los países con mayor penetración cripto de América Latina, aunque por motivos bastante distintos entre sí. En Argentina, el impulso sigue viniendo en gran medida del uso de stablecoins —criptomonedas cuyo valor está anclado a una moneda fuerte, típicamente el dólar— como herramienta para proteger ahorros frente a la inflación local y a las restricciones cambiarias históricas del país.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El caso salvadoreño: adopción impulsada desde el Estado</h3><p>El Salvador, en cambio, llegó a este punto por una vía distinta: la adopción de Bitcoin como moneda de curso legal en 2021 generó una infraestructura de pagos cripto poco común en la región, con comercios habituados a aceptar la moneda y una base de usuarios que, si bien no siempre opera con fines de inversión, mantiene un nivel de familiaridad con billeteras digitales superior al de sus vecinos.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que tienen en común pese a sus diferencias</h3><p>El patrón que emerge de ambos casos es consistente con lo observado en otras economías emergentes con alta inflación o controles cambiarios: la adopción cripto en la región tiende a crecer más rápido en contextos de inestabilidad monetaria que en entornos de estabilidad macroeconómica, donde el uso de criptomonedas suele estar más orientado a la especulación que a la protección del ahorro.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Qué significa esto para el resto de la región</h3><p>Para el resto de países de América Latina, estos datos funcionan como un indicador adelantado: economías con presión cambiaria o inflacionaria elevada suelen mostrar un crecimiento más rápido en el uso de stablecoins y otras criptomonedas como sustituto parcial de ahorro en moneda local, un patrón que varios analistas esperan que se replique en otros mercados de la región si persisten condiciones macroeconómicas similares. Los datos exactos detrás del índice, y qué revela realmente el caso salvadoreño más allá de los titulares, se examinan en el análisis completo.</p>",
     "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Los números detrás del índice de adopción</h3><p>Según los datos del índice, Argentina y El Salvador figuran entre los 20 países con mayor adopción cripto medida en volumen de transacciones ajustado por poder adquisitivo, un ajuste metodológico importante porque evita que economías grandes dominen el ranking solo por su tamaño absoluto. Argentina registra una de las tasas de inflación más altas del mundo entre economías no hiperinflacionarias, con una devaluación acumulada de su moneda que ha llevado a una proporción creciente de ahorradores minoristas a mantener parte de su patrimonio en stablecoins como cobertura, según encuestas de firmas locales de análisis cripto.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que los datos de El Salvador realmente muestran</h3><p>A varios años de la adopción de Bitcoin como moneda de curso legal, los datos de uso real son más matizados de lo que sugieren los titulares: la mayoría de las transacciones cotidianas en el país continúan realizándose en dólares estadounidenses (la moneda de facto desde 2001), y el uso de Bitcoin para pagos diarios sigue siendo minoritario. Donde el efecto ha sido más claro es en la reducción de costos de remesas internacionales, un canal donde Bitcoin y otras soluciones cripto han demostrado ventajas de costo medibles frente a los operadores tradicionales de envío de dinero.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El patrón que emerge al analizar los datos con detenimiento es más matizado que la narrativa simple de que los países con problemas monetarios adoptan cripto masivamente. Lo que realmente se observa es una adopción segmentada por caso de uso específico: cobertura de ahorro en Argentina, reducción de costos de remesas en El Salvador y otros países centroamericanos, y una demanda mucho más especulativa y ligada al ciclo de precios en el resto de la región. Entender esta segmentación importa porque cada caso de uso tiene una sensibilidad distinta a factores como el precio de Bitcoin, la regulación local, y la disponibilidad de alternativas dolarizadas tradicionales, lo que significa que el crecimiento de la adopción cripto en la región probablemente seguirá siendo desigual entre países, en lugar de un fenómeno regional uniforme.</p>",
     "heroType": "crypto",
-    "trend": "up"
+    "trend": "up",
+    "marketData": {
+      "symbol": "BITSTAMP:BTCUSD",
+      "nombre": "Bitcoin (BTC/USD)",
+      "yahooSymbol": "BTC-USD",
+      "fuente": "Yahoo Finance (BTC-USD)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 64664.89,
+      "cierreAnterior": 64712.38,
+      "variacionDiaPct": -0.1,
+      "variacionSemanaPct": 1.4,
+      "variacionMesPct": 8.3,
+      "variacionAnioPct": -36.2,
+      "rangoDiaReal": {
+        "minimo": 63848.66,
+        "maximo": 64893.33
+      },
+      "rsi14": 55.0,
+      "lecturaRsi": "neutral",
+      "media50": 63919.02,
+      "media200": 73397.46,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 1886.45,
+      "maximo52sem": 107428.26,
+      "minimo52sem": 57747.77,
+      "distanciaAMaximo52semPct": -39.8,
+      "distanciaAMinimo52semPct": 12.0,
+      "soportes": [
+        63062.22,
+        62553.19,
+        62201.14
+      ],
+      "resistencias": [
+        65544.0,
+        67248.13,
+        68657.7
+      ],
+      "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+    }
   },
   {
     "title": "S&P 500 suma 0,4% y Nasdaq avanza de la mano de Apple pese a tensión con Irán",
