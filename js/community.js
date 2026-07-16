@@ -2952,7 +2952,8 @@
       const guestGoogleBtn = document.getElementById('guestGoogleBtn');
       if (guestGoogleBtn) guestGoogleBtn.addEventListener('click', () => { window.location.href = '/.netlify/identity/authorize?provider=google'; });
       wireDashboardTabs();
-      switchDashboardView('resumen');
+      // Enlace directo a una publicacion tambien funciona para invitados.
+      switchDashboardView(new URLSearchParams(window.location.search).get('post') ? 'foro' : 'resumen', '');
       loadStoriesBar(document.getElementById('storiesBar'));
       return;
     }
@@ -3017,11 +3018,21 @@
         }
       });
     }
-    loadResumen();
     loadFollowCounts();
     loadMissions();
     loadWeeklyChallenge();
     loadStoriesBar(document.getElementById('storiesBar'));
+
+    // Enlace directo a una publicacion (desde un perfil, una notificacion o un
+    // enlace compartido): hay que abrir el Foro, porque el scroll-al-post vive
+    // en loadFeed(), que solo corre en esa vista. Sin esto, ?post= caia en la
+    // vista Inicio y la publicacion nunca se abria.
+    const sharedPostId = new URLSearchParams(window.location.search).get('post');
+    if (sharedPostId) {
+      switchDashboardView('foro', '');
+    } else {
+      loadResumen();
+    }
 
     const dmUsername = new URLSearchParams(window.location.search).get('dm');
     if (dmUsername) {
