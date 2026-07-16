@@ -2600,6 +2600,98 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 
 /* Quizzes de Educación: neutralizan los estilos de formulario de .community-form */
 .community-form input[type="radio"] { width: auto; }
+/* ── Tareas interactivas de los modulos ─────────────────────────────────── */
+.mt-wrap { margin: 32px 0; }
+.mt-head { display: flex; gap: 13px; align-items: flex-start; margin-bottom: 16px; }
+.mt-head-ic {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 44px; height: 44px; border-radius: 12px; color: var(--gold-bright, #f0c75e);
+  background: linear-gradient(150deg, rgba(212,175,55,0.18), rgba(212,175,55,0.04));
+  border: 1px solid rgba(212,175,55,0.3);
+}
+.mt-head-ic svg { width: 23px; height: 23px; }
+.mt-head h3 { margin: 0 0 3px; font-size: 1.12rem; }
+.mt-head p { margin: 0; color: var(--text-mid); font-size: 0.84rem; line-height: 1.55; }
+.mt-tasks { display: flex; flex-direction: column; gap: 16px; }
+.mt-task {
+  background: var(--card-bg, #101728); border: 1px solid var(--card-border);
+  border-radius: 14px; padding: 18px;
+}
+.mt-prompt { font-size: 0.92rem; line-height: 1.6; color: var(--text-hi); margin-bottom: 14px; }
+.mt-prompt strong { color: var(--gold-bright, #f0c75e); font-weight: 700; }
+.mt-badge {
+  display: inline-block; margin-right: 8px; padding: 2px 9px; border-radius: 20px;
+  background: rgba(212,175,55,0.14); color: var(--gold-bright, #f0c75e);
+  font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; vertical-align: middle;
+}
+.mt-chart-wrap { position: relative; margin-bottom: 14px; }
+.mt-chart {
+  width: 100%; height: 190px; display: block;
+  background: rgba(255,255,255,0.02); border: 1px solid var(--card-border); border-radius: 10px;
+}
+.mt-chart.clickable-zone { cursor: crosshair; }
+.mt-zone-hint {
+  position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+  font-size: 0.72rem; color: var(--text-low); background: rgba(0,0,0,0.35);
+  padding: 3px 10px; border-radius: 20px; pointer-events: none;
+}
+.mt-hit { fill: transparent; }
+.mt-wick { stroke: var(--text-low); stroke-width: 0.7; }
+.mt-body { }
+.mt-candle.up .mt-body { fill: var(--green, #2ecc71); }
+.mt-candle.up .mt-wick { stroke: var(--green, #2ecc71); }
+.mt-candle.down .mt-body { fill: var(--crimson-bright, #e13a4b); }
+.mt-candle.down .mt-wick { stroke: var(--crimson-bright, #e13a4b); }
+.mt-candle.clickable { cursor: pointer; }
+.mt-candle.clickable:hover .mt-body,
+.mt-candle.clickable:focus .mt-body { stroke: var(--gold-bright, #f0c75e); stroke-width: 1; outline: none; }
+.mt-candle.clickable:hover .mt-hit { fill: rgba(212,175,55,0.06); }
+.mt-candle.picked .mt-body { stroke: #fff; stroke-width: 1.2; }
+.mt-candle.is-correct .mt-body { stroke: var(--gold-bright, #f0c75e); stroke-width: 1.4; }
+.mt-candle.is-correct .mt-hit { fill: rgba(212,175,55,0.14); }
+.mt-band { fill: rgba(212,175,55,0.08); stroke: rgba(212,175,55,0.35); stroke-width: 0.4; stroke-dasharray: 2 2; opacity: 0; }
+.mt-band.reveal { opacity: 1; }
+.mt-options { display: flex; gap: 10px; flex-wrap: wrap; }
+.mt-opt {
+  flex: 1 1 auto; min-width: 110px; padding: 10px 14px; border-radius: 10px;
+  background: rgba(255,255,255,0.03); border: 1px solid var(--card-border);
+  color: var(--text-hi); font-size: 0.88rem; font-weight: 600; cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.mt-opt:hover:not(:disabled) { border-color: rgba(212,175,55,0.5); background: rgba(212,175,55,0.08); }
+.mt-opt:disabled { cursor: default; }
+.mt-opt.correct { border-color: var(--green, #2ecc71); background: rgba(46,204,113,0.14); color: var(--green, #2ecc71); }
+.mt-opt.wrong { border-color: var(--crimson-bright, #e13a4b); background: rgba(225,58,75,0.12); color: var(--crimson-bright, #e13a4b); }
+.mt-feedback { margin-top: 14px; padding: 11px 14px; border-radius: 10px; font-size: 0.85rem; line-height: 1.55; }
+.mt-feedback.ok { background: rgba(46,204,113,0.1); border: 1px solid rgba(46,204,113,0.35); color: var(--green, #2ecc71); }
+.mt-feedback.no { background: rgba(225,58,75,0.1); border: 1px solid rgba(225,58,75,0.35); color: var(--crimson-bright, #e13a4b); }
+/* RSI */
+.mt-rsi { margin-bottom: 14px; }
+.mt-rsi-bar {
+  position: relative; height: 16px; border-radius: 20px; overflow: visible;
+  background: linear-gradient(90deg, #2ecc71 0%, #2ecc71 30%, #5c6b7a 30%, #5c6b7a 70%, #e13a4b 70%, #e13a4b 100%);
+  opacity: 0.85;
+}
+.mt-rsi-marker { position: absolute; top: -6px; transform: translateX(-50%); }
+.mt-rsi-marker b {
+  display: inline-block; background: #fff; color: #111; font-size: 0.72rem; font-weight: 800;
+  padding: 2px 7px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.mt-rsi-marker::after { content: ''; position: absolute; left: 50%; top: 100%; transform: translateX(-50%); border: 4px solid transparent; border-top-color: #fff; }
+.mt-rsi-scale { display: flex; justify-content: space-between; margin-top: 8px; font-size: 0.66rem; color: var(--text-low); font-family: var(--mono); }
+/* calc */
+.mt-calc { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.mt-calc-input {
+  width: 130px; background: var(--card); border: 1px solid var(--card-border); color: var(--text-hi);
+  border-radius: 8px; padding: 9px 12px; font-size: 0.9rem; font-family: var(--mono);
+}
+.mt-calc-input:focus { outline: none; border-color: var(--gold); }
+.mt-calc-unit { color: var(--text-low); font-family: var(--mono); }
+.mt-calc-btn { padding: 9px 16px; }
+.mt-hint-btn { background: none; border: none; color: var(--gold-bright, #f0c75e); font-size: 0.78rem; cursor: pointer; padding: 0; }
+.mt-hint { margin-top: 6px; color: var(--text-mid); font-size: 0.8rem; }
+@media (max-width: 520px) { .mt-chart { height: 160px; } .mt-opt { flex: 1 1 100%; } }
+
 /* ── Quiz de ubicacion de Educacion — refinado ──────────────────────────── */
 .quiz-card {
   position: relative; background: linear-gradient(160deg, rgba(212,175,55,0.06), var(--card-bg, #101728) 55%);

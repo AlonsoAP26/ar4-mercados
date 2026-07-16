@@ -313,6 +313,11 @@ async function initModuloDetail() {
   }
 
   body.innerHTML = m.body;
+
+  // Tareas interactivas sobre graficos reales (motor propio en module-tasks.js).
+  const tasksEl = document.getElementById('moduloTasks');
+  if (tasksEl && window.AR4_renderModuleTasks) window.AR4_renderModuleTasks(tasksEl, m.slug);
+
   renderModuleQuiz(m);
 
   wireCompleteButton(m);
