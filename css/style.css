@@ -1340,27 +1340,49 @@ a { color: inherit; text-decoration: none; }
 .perfil-link-avatar, .perfil-link-name { text-decoration: none; color: inherit; }
 .perfil-link-name:hover strong { color: var(--gold-bright); }
 
-.perfil-header { display: flex; gap: 20px; padding: 26px; align-items: flex-start; flex-wrap: wrap; }
-.perfil-avatar {
-  width: 84px; height: 84px; border-radius: 50%; flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center; overflow: hidden;
-  font-family: var(--mono); font-weight: 800; font-size: 1.6rem; color: #0a0f1c;
-  border: 2px solid var(--gold);
+.perfil-header {
+  position: relative; display: flex; gap: 22px; padding: 26px; align-items: flex-start;
+  flex-wrap: wrap; overflow: hidden;
 }
-.perfil-header-info { flex: 1; min-width: 240px; }
-.perfil-header-info h1 { font-size: 1.4rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
-.perfil-bio { color: var(--text-mid); font-size: 0.92rem; margin-bottom: 10px; }
+/* banda de acento superior tipo portada */
+.perfil-header::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 72px;
+  background: linear-gradient(120deg, rgba(212,175,55,0.16), rgba(212,175,55,0.03) 55%, transparent);
+  border-bottom: 1px solid rgba(212,175,55,0.14); pointer-events: none;
+}
+.perfil-header > * { position: relative; z-index: 1; }
+.perfil-avatar {
+  width: 96px; height: 96px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+  font-family: var(--mono); font-weight: 800; font-size: 1.7rem; color: #0a0f1c;
+  border: 3px solid var(--bg-1);
+  box-shadow: 0 0 0 2px var(--gold), 0 8px 24px rgba(0,0,0,0.4);
+}
+.perfil-header-info { flex: 1; min-width: 240px; padding-top: 4px; }
+.perfil-header-info h1 { font-size: 1.5rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 9px; }
+.perfil-bio { color: var(--text-mid); font-size: 0.92rem; margin-bottom: 12px; line-height: 1.55; }
 .perfil-meta-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
 
-.perfil-actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0; }
+.perfil-actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0; }
+.perfil-actions .btn { transition: transform 0.14s, box-shadow 0.14s; }
+.perfil-actions .btn:hover { transform: translateY(-2px); }
 
 .perfil-stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 12px; margin: 20px 0; }
 .perfil-stat-card {
-  background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
-  padding: 16px; text-align: center;
+  position: relative; background: var(--card); border: 1px solid var(--card-border); border-radius: 14px;
+  padding: 18px 14px; text-align: center; overflow: hidden;
+  transition: transform 0.16s, border-color 0.16s, box-shadow 0.16s;
 }
-.perfil-stat-card strong { display: block; font-family: var(--mono); font-size: 1.4rem; color: var(--gold-bright); }
-.perfil-stat-card span { font-size: 0.72rem; color: var(--text-low); text-transform: uppercase; letter-spacing: 0.04em; }
+.perfil-stat-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent 75%); opacity: 0; transition: opacity 0.16s;
+}
+.perfil-stat-card:hover {
+  transform: translateY(-3px); border-color: rgba(212,175,55,0.4); box-shadow: 0 12px 26px rgba(0,0,0,0.3);
+}
+.perfil-stat-card:hover::before { opacity: 1; }
+.perfil-stat-card strong { display: block; font-family: var(--mono); font-size: 1.5rem; color: var(--gold-bright); letter-spacing: -0.5px; }
+.perfil-stat-card span { font-size: 0.7rem; color: var(--text-low); text-transform: uppercase; letter-spacing: 0.05em; }
 
 .perfil-affinity-card { margin: 20px 0; }
 .perfil-affinity-head { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
@@ -1377,10 +1399,33 @@ a { color: inherit; text-decoration: none; }
 .perfil-affinity-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
 
 .perfil-post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
-.perfil-post-mini { display: flex; flex-direction: column; gap: 6px; padding: 16px; text-decoration: none; }
+.perfil-post-mini {
+  display: flex; flex-direction: column; gap: 6px; padding: 16px; text-decoration: none;
+  border-radius: 14px; border: 1px solid var(--card-border);
+  transition: transform 0.16s, border-color 0.16s, box-shadow 0.16s;
+}
+.perfil-post-mini:hover {
+  transform: translateY(-3px); border-color: rgba(212,175,55,0.4); box-shadow: 0 12px 28px rgba(0,0,0,0.32);
+}
 .perfil-post-mini strong { color: var(--text-hi); font-size: 0.9rem; line-height: 1.35; }
-.perfil-comment-mini { padding: 14px 16px; margin-bottom: 10px; }
+.perfil-comment-mini {
+  padding: 14px 16px; margin-bottom: 10px; border-radius: 12px; border: 1px solid var(--card-border);
+  transition: border-color 0.16s;
+}
+.perfil-comment-mini:hover { border-color: rgba(212,175,55,0.3); }
 .perfil-comment-mini p { color: var(--text-mid); font-size: 0.86rem; margin-bottom: 6px; }
+
+/* Pestañas del perfil (Publicaciones / Comentarios) refinadas */
+#perfilRoot .community-tabs {
+  gap: 6px; border-bottom: 1px solid var(--card-border); padding-bottom: 0; margin-bottom: 18px;
+}
+#perfilRoot .community-tab-btn {
+  border: none; background: none; border-radius: 0; padding: 10px 16px;
+  color: var(--text-low); font-weight: 600; font-size: 0.88rem; cursor: pointer;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.15s, border-color 0.15s;
+}
+#perfilRoot .community-tab-btn:hover { color: var(--text-hi); }
+#perfilRoot .community-tab-btn.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
 
 @media (max-width: 600px) {
   .perfil-header { flex-direction: column; align-items: center; text-align: center; }
