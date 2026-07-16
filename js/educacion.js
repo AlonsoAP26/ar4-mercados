@@ -93,10 +93,14 @@ function wireQuiz(modules) {
   });
 }
 
+// Iconos SVG serios (mismo estilo de linea que el menu), en vez de emojis.
+const IC_SEED = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-1-7-4-7-9 4 1 7 4 7 9z"/><path d="M12 21c4-1 7-4 7-9-4 1-7 4-7 9z"/><path d="M12 21V10"/></svg>';
+const IC_TREND = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>';
+const IC_TARGET = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>';
 const ACADEMY_STAGES = [
-  { level: 'basico', icon: '🌱', title: 'Primeros pasos' },
-  { level: 'intermedio', icon: '📈', title: 'Bases del trading' },
-  { level: 'avanzado', icon: '🧠', title: 'Análisis y gestión avanzada' }
+  { level: 'basico', icon: IC_SEED, title: 'Primeros pasos' },
+  { level: 'intermedio', icon: IC_TREND, title: 'Bases del trading' },
+  { level: 'avanzado', icon: IC_TARGET, title: 'Análisis y gestión avanzada' }
 ];
 
 function renderAcademyPath(modules, completedSet) {
@@ -110,7 +114,7 @@ function renderAcademyPath(modules, completedSet) {
     const isComplete = stageModules.length > 0 && doneCount === stageModules.length;
     return `
       <div class="academy-stage${isComplete ? ' complete' : ''}" data-filter="${stage.level}">
-        <div class="academy-stage-icon">${isComplete ? '✅' : stage.icon}</div>
+        <div class="academy-stage-icon">${isComplete ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="color:var(--green)"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>' : stage.icon}</div>
         <div class="academy-stage-info">
           <strong>${stage.title}</strong>
           <span>${doneCount}/${stageModules.length} módulos completados</span>
@@ -297,8 +301,8 @@ async function initModuloDetail() {
   if (toggleEl && m.bodySimple) {
     toggleEl.innerHTML = `
       <div class="filter-bar" style="margin-bottom:18px;">
-        <button class="filter-chip" data-version="simple">🌱 Explicación sencilla</button>
-        <button class="filter-chip active" data-version="pro">🎓 Explicación profesional</button>
+        <button class="filter-chip" data-version="simple">${IC_SEED} Explicación sencilla</button>
+        <button class="filter-chip active" data-version="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1 2 2.5 5 2.5s5-1.5 5-2.5v-5"/><path d="M21 8v5"/></svg> Explicación profesional</button>
       </div>
     `;
     toggleEl.querySelectorAll('.filter-chip').forEach((chip) => {

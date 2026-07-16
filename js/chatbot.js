@@ -1,8 +1,8 @@
 (function () {
-  // Avatar ilustrado de Aria: retrato profesional (DiceBear notionists) sobre un
-  // fondo con degradado dorado y anillo. Es una imagen detallada, no un simple
-  // monograma. Si la red falla, el monograma dorado queda de respaldo.
-  const ARIA_AVATAR = 'https://api.dicebear.com/9.x/notionists/svg?seed=AriaMentoraAR4&scale=135&radius=50&backgroundColor=b8860b,d4af37&backgroundType=gradientLinear';
+  // Avatar de Aria: robot moderno (DiceBear bottts) sobre degradado dorado —
+  // encaja con el tono de IA del sitio. Si la red falla, el monograma dorado
+  // autocontenido queda de respaldo.
+  const ARIA_AVATAR = 'https://api.dicebear.com/9.x/bottts/svg?seed=AriaBotAR4&radius=18&backgroundColor=b8860b,d4af37&backgroundType=gradientLinear';
   const ARIA_AVATAR_FALLBACK = 'data:image/svg+xml;utf8,' + encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">' +
     '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +

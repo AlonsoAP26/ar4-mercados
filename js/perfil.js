@@ -224,12 +224,17 @@
     const joinDate = targetProfile.created_at ? new Date(targetProfile.created_at).toLocaleDateString('es-ES', { month: 'long', year: 'numeric' }) : '';
     const streak = targetProfile.streak_days || 0;
 
+    const IC_MAIL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>';
+    const IC_LINK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>';
+    const IC_FLAG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4M4 4h13l-2 4 2 4H4"/></svg>';
+    const IC_CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg>';
+    const IC_PLUS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
     const actionButtons = isSelf ? '' : `
       <div class="perfil-actions">
-        ${myProfile ? `<button class="btn ${amFollowing ? 'btn-outline' : 'btn-gold'}" id="perfilFollowBtn" data-following="${amFollowing}">${amFollowing ? '✔ Siguiendo' : '+ Seguir'}</button>` : '<a href="comunidad.html" class="btn btn-gold">Inicia sesión para seguir</a>'}
-        <button class="btn btn-outline" id="perfilDmBtn">✉️ Enviar mensaje</button>
-        <button class="btn btn-outline" id="perfilCopyBtn">🔗 Copiar enlace</button>
-        ${myProfile ? '<button class="btn btn-outline" id="perfilReportBtn">🚩 Reportar</button>' : ''}
+        ${myProfile ? `<button class="btn ${amFollowing ? 'btn-outline' : 'btn-gold'} btn-ic" id="perfilFollowBtn" data-following="${amFollowing}">${amFollowing ? IC_CHECK + ' Siguiendo' : IC_PLUS + ' Seguir'}</button>` : '<a href="comunidad.html" class="btn btn-gold">Inicia sesión para seguir</a>'}
+        <button class="btn btn-outline btn-ic" id="perfilDmBtn">${IC_MAIL} Enviar mensaje</button>
+        <button class="btn btn-outline btn-ic" id="perfilCopyBtn">${IC_LINK} Copiar enlace</button>
+        ${myProfile ? `<button class="btn btn-outline btn-ic" id="perfilReportBtn">${IC_FLAG} Reportar</button>` : ''}
       </div>
     `;
 
@@ -241,7 +246,7 @@
           <p class="perfil-bio">${escapeHtml(targetProfile.bio) || 'Sin biografía todavía.'}</p>
           <div class="perfil-meta-row">
             ${targetProfile.trading_style ? `<span class="instrument-badge">${escapeHtml(targetProfile.trading_style)}</span>` : ''}
-            ${joinDate ? `<span class="footer-text">📅 Miembro desde ${joinDate}</span>` : ''}
+            ${joinDate ? `<span class="footer-text perfil-join"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Miembro desde ${joinDate}</span>` : ''}
           </div>
           ${badgesRowHTML(targetProfile.badges)}
           ${socialLinksRowHTML(targetProfile.social_links)}
@@ -261,8 +266,8 @@
       <div id="perfilAffinity"></div>
 
       <div class="community-tabs" style="flex-direction:row;position:static;margin-top:24px;">
-        <button class="community-tab-btn active" data-tab="posts">📋 Publicaciones</button>
-        <button class="community-tab-btn" data-tab="comments">💬 Comentarios</button>
+        <button class="community-tab-btn active" data-tab="posts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><circle cx="3.5" cy="6" r="1"/><circle cx="3.5" cy="12" r="1"/><circle cx="3.5" cy="18" r="1"/></svg> Publicaciones</button>
+        <button class="community-tab-btn" data-tab="comments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg> Comentarios</button>
       </div>
       <div id="perfilTabContent"><p class="footer-text">Cargando...</p></div>
     `;

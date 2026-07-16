@@ -251,7 +251,9 @@ a { color: inherit; text-decoration: none; }
 .hero-stats div {
   font-size: 0.82rem;
   color: var(--text-mid);
+  display: flex; align-items: center; gap: 7px;
 }
+.hero-stats div svg { width: 17px; height: 17px; color: var(--gold-bright, #f0c75e); flex-shrink: 0; }
 .hero-stats strong { color: var(--gold-bright); font-family: var(--mono); }
 
 .hero-widget {
@@ -1019,7 +1021,8 @@ a { color: inherit; text-decoration: none; }
 }
 .academy-stage:hover { border-color: var(--gold); }
 .academy-stage.complete { border-color: var(--green); }
-.academy-stage-icon { font-size: 1.6rem; flex-shrink: 0; }
+.academy-stage-icon { font-size: 1.6rem; flex-shrink: 0; color: var(--gold-bright, #f0c75e); display: inline-flex; }
+.academy-stage-icon svg { width: 26px; height: 26px; }
 .academy-stage-info { flex: 1; min-width: 0; }
 .academy-stage-info strong { display: block; font-size: 0.92rem; margin-bottom: 4px; }
 .academy-stage-info span { display: block; color: var(--text-mid); font-size: 0.78rem; margin-bottom: 6px; }
@@ -1426,6 +1429,15 @@ a { color: inherit; text-decoration: none; }
 }
 #perfilRoot .community-tab-btn:hover { color: var(--text-hi); }
 #perfilRoot .community-tab-btn.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
+#perfilRoot .community-tab-btn { display: inline-flex; align-items: center; gap: 7px; }
+#perfilRoot .community-tab-btn svg { width: 15px; height: 15px; }
+.btn-ic { display: inline-flex; align-items: center; gap: 7px; }
+.btn-ic svg { width: 15px; height: 15px; flex-shrink: 0; }
+.perfil-join { display: inline-flex; align-items: center; gap: 5px; }
+.perfil-join svg { width: 13px; height: 13px; }
+.h2-ic { display: inline-flex; align-items: center; gap: 9px; }
+.h2-ic svg { width: 20px; height: 20px; color: var(--gold-bright, #f0c75e); flex-shrink: 0; }
+.filter-chip svg { width: 14px; height: 14px; vertical-align: -2px; margin-right: 4px; }
 
 @media (max-width: 600px) {
   .perfil-header { flex-direction: column; align-items: center; text-align: center; }
