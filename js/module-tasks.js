@@ -235,6 +235,114 @@
     no: 'EUR/USD enfrenta dos monedas (euro y dólar): es forex, el mercado de divisas.'
   }];
 
+  // ── Tareas de los módulos nuevos ────────────────────────────────────────
+  TASKS['pips-lotes-y-valor'] = [{
+    type: 'calcInput',
+    prompt: 'EUR/USD pasa de <strong>1,1000</strong> a <strong>1,1035</strong>. ¿Cuántos pips se movió? (el pip es el cuarto decimal)',
+    answer: 35, tolerance: 0.5, unit: 'pips',
+    hint: 'Resta y cuenta el cuarto decimal: 1,1035 − 1,1000',
+    ok: 'Exacto: 35 pips. El cuarto decimal es la unidad de medida habitual en forex.',
+    no: 'De 1,1000 a 1,1035 hay 35 milésimas del cuarto decimal = 35 pips.'
+  }, {
+    type: 'calcInput',
+    prompt: 'Tu stop está a <strong>25 pips</strong> y quieres arriesgar <strong>$50</strong>. ¿Cuánto puedes arriesgar por pip? (dólares por pip)',
+    answer: 2, tolerance: 0.1, unit: '$',
+    hint: 'Riesgo total ÷ distancia del stop = 50 ÷ 25',
+    ok: 'Correcto: $2 por pip. El tamaño de la posición sale del riesgo y del stop, nunca al revés.',
+    no: '$50 ÷ 25 pips = $2 por pip. Primero fijas el riesgo, luego el tamaño.'
+  }];
+
+  TASKS['apalancamiento-y-margen'] = [{
+    type: 'calcInput',
+    prompt: 'Con apalancamiento <strong>1:100</strong> y <strong>$200</strong> de margen, ¿cuánto valor de mercado puedes controlar?',
+    answer: 20000, tolerance: 1, unit: '$',
+    hint: '200 × 100',
+    ok: 'Correcto: $20.000. Ese es el poder del apalancamiento — y también su peligro: un 1% en contra sobre $20.000 son $200, toda tu garantía.',
+    no: '1:100 significa multiplicar tu margen por 100: 200 × 100 = $20.000.'
+  }];
+
+  TASKS['medias-moviles-a-fondo'] = [{
+    type: 'chooseButtons',
+    prompt: 'La línea suave es la media móvil de 50. El precio cotiza claramente <strong>por encima</strong> de ella y la media apunta al alza. ¿Qué sesgo sugiere?',
+    candles: [bull(6, 1.4, 0.3, 0.3), bull(7, 1.2, 0.3, 0.3), bear(8, 0.7, 0.3, 0.3), bull(7.6, 1.5, 0.3, 0.3), bull(9, 1.2, 0.3, 0.3)],
+    options: ['Alcista', 'Bajista', 'Imposible saber'],
+    answer: 0,
+    ok: 'Correcto. Precio sobre una media ascendente = sesgo alcista, y la media suele actuar como soporte dinámico.',
+    no: 'Precio por encima de una media que sube es un sesgo alcista clásico.'
+  }];
+
+  TASKS['rsi-y-divergencias'] = [{
+    type: 'readRsi',
+    prompt: 'El precio acaba de hacer un nuevo máximo, pero el RSI marca <strong>62</strong> cuando en el máximo anterior marcaba 78. El precio sube y el RSI baja: ¿qué nombre recibe eso?',
+    value: 62,
+    options: ['Divergencia bajista', 'Sobreventa', 'Golden cross'],
+    answer: 0,
+    ok: 'Correcto. Precio con máximo más alto pero RSI con máximo más bajo = divergencia bajista: el impulso se debilita aunque el precio suba.',
+    no: 'Precio arriba, RSI abajo: eso es una divergencia bajista, señal de que el impulso pierde fuerza.'
+  }, {
+    type: 'readRsi',
+    prompt: 'Ahora el RSI marca <strong>28</strong>. Según la lectura básica, ¿en qué zona está?',
+    value: 28,
+    options: ['Sobreventa', 'Neutral', 'Sobrecompra'],
+    answer: 0,
+    ok: 'Correcto: 28 está por debajo de 30, en sobreventa. Ojo, no es señal de compra automática.',
+    no: '28 está por debajo de 30: zona de sobreventa.'
+  }];
+
+  TASKS['fibonacci-retrocesos'] = [{
+    type: 'calcInput',
+    prompt: 'Un impulso sube de <strong>100</strong> a <strong>200</strong>. ¿A qué precio está el retroceso del <strong>50%</strong> (el nivel de Fibonacci más vigilado del medio)?',
+    answer: 150, tolerance: 1, unit: '',
+    hint: 'El 50% del recorrido 100→200 está justo en el medio.',
+    ok: 'Correcto: 150. El 50% marca la mitad del impulso; si el precio retrocede ahí y reacciona, muchos lo miran como zona de posible continuación.',
+    no: 'La mitad de un movimiento de 100 a 200 es 150: ese es el retroceso del 50%.'
+  }];
+
+  TASKS['ratio-riesgo-beneficio'] = [{
+    type: 'calcInput',
+    prompt: 'Haces 10 operaciones arriesgando <strong>$50</strong> para ganar <strong>$150</strong> (ratio 1:3). Aciertas solo 4 y fallas 6. ¿Cuál es tu resultado neto en dólares?',
+    answer: 300, tolerance: 1, unit: '$',
+    hint: '(4 × 150) − (6 × 50)',
+    ok: 'Exacto: +$300. Fallaste MÁS de las que acertaste y aun así ganaste, gracias al ratio. Eso es lo que casi nadie entiende al empezar.',
+    no: 'Ganancias 4 × $150 = $600. Pérdidas 6 × $50 = $300. Neto: 600 − 300 = +$300.'
+  }];
+
+  TASKS['multiples-temporalidades'] = [{
+    type: 'chooseButtons',
+    prompt: 'En el gráfico <strong>diario</strong> la tendencia es claramente bajista. Bajas al de 5 minutos buscando una entrada. ¿En qué dirección tiene más sentido buscar operaciones?',
+    options: ['Compras (a favor del diario alcista)', 'Ventas (a favor del diario bajista)', 'Da igual la temporalidad alta'],
+    answer: 1,
+    ok: 'Correcto. Se opera a favor de la temporalidad alta. Si el diario es bajista, buscas ventas y usas el 5m solo para afinar la entrada.',
+    no: 'La temporalidad alta manda: si el diario es bajista, buscas ventas. Comprar sería remar contra la corriente.'
+  }];
+
+  TASKS['sesiones-de-mercado-horarios'] = [{
+    type: 'chooseButtons',
+    prompt: 'Buscas los movimientos más limpios y con más liquidez del día. ¿En qué franja es más probable encontrarlos?',
+    options: ['Madrugada (sesión asiática tranquila)', 'Solapamiento Londres–Nueva York', 'Domingo por la noche'],
+    answer: 1,
+    ok: 'Correcto. El solapamiento Londres–NY concentra la mayor liquidez: movimientos más limpios y spreads más ajustados.',
+    no: 'La máxima liquidez está en el solapamiento Londres–Nueva York, no en las horas muertas.'
+  }];
+
+  TASKS['correlaciones-y-diversificacion'] = [{
+    type: 'chooseButtons',
+    prompt: 'Abres a la vez compras en EUR/USD, GBP/USD y AUD/USD pensando que "diversificas". En realidad, ¿qué estás haciendo?',
+    options: ['Repartiendo el riesgo en tres apuestas distintas', 'Repitiendo la misma apuesta contra el dólar tres veces', 'Eliminando el riesgo'],
+    answer: 1,
+    ok: 'Correcto. Los tres pares dependen del dólar: si el dólar se fortalece pierdes en los tres. Es el mismo riesgo triplicado, no diversificación.',
+    no: 'Esos tres pares se mueven parecido frente al dólar: es la misma apuesta tres veces, no diversificar.'
+  }];
+
+  TASKS['el-spread-y-los-costos'] = [{
+    type: 'chooseButtons',
+    prompt: 'Abres una operación y, sin que el precio se mueva, ya apareces ligeramente en negativo. ¿Por qué?',
+    options: ['El broker se equivocó', 'Por el spread: compraste al ask y venderías al bid', 'Porque perdiste'],
+    answer: 1,
+    ok: 'Correcto. El spread es la diferencia entre comprar y vender: el precio debe moverse a tu favor al menos esa diferencia para empezar a ganar.',
+    no: 'Es normal: es el spread. Entras al precio de compra (ask) pero saldrías al de venta (bid), y esa diferencia juega en tu contra al inicio.'
+  }];
+
   // ── Render de una tarea ──────────────────────────────────────────────────
   function renderTask(task, idx) {
     let inner = '';
