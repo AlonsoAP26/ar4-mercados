@@ -378,6 +378,9 @@ async function initIdeaDetail() {
   renderTradeStatusCard(idea);
   body.innerHTML = idea.body;
 
+  // Rectángulo patrocinado (FxPro) intercalado en el análisis. Único banner de esta página.
+  if (typeof window.AR4_injectSponsor === 'function') window.AR4_injectSponsor('ideaBody');
+
   const conclusionEl = document.getElementById('ideaConclusion');
   if (conclusionEl && idea.bodyPremium) {
     if (isPremiumUser) {

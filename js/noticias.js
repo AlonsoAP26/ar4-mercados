@@ -329,6 +329,8 @@ async function renderSidebar(n, noticias) {
     } catch (e) { /* noop */ }
   }
 
+  const sponsorHTML = (typeof window.AR4_sponsorSky === 'function') ? window.AR4_sponsorSky() : '';
+
   el.innerHTML = `
     <div class="sidebar-block">
       <h3>🔥 Última hora</h3>
@@ -339,12 +341,16 @@ async function renderSidebar(n, noticias) {
       ${ideasHTML}
     </div>
     ${communityHTML}
+    ${sponsorHTML}
     <div class="sidebar-block sidebar-cta-premium">
       <h3>🚀 AR4 AI Premium</h3>
       <p>Consulta con Aria sobre esta noticia con contexto ilimitado y análisis más profundo.</p>
       <a href="membresia.html" class="btn btn-gold btn-block">Ver Premium</a>
     </div>
   `;
+
+  // Rectángulo (FxPro) intercalado en el cuerpo, visible solo en móvil (en escritorio manda el skyscraper de la barra).
+  if (typeof window.AR4_injectSponsor === 'function') window.AR4_injectSponsor('noticiaBody', { mobileOnly: true });
 }
 
 async function initNoticiaDetail() {

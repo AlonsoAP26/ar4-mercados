@@ -3406,3 +3406,21 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   .ind-live-price { font-size: 1.25rem; }
   .ind-levels-t { min-width: 100%; }
 }
+
+/* ===== Bloques patrocinados (afiliados) — discretos y responsive ===== */
+.sponsor-slot { text-align: center; margin: 24px auto; max-width: 100%; }
+.sponsor-tag {
+  display: block; font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--text-low); margin-bottom: 7px; opacity: 0.7;
+}
+.sponsor-link { display: inline-block; line-height: 0; border-radius: 10px; overflow: hidden; }
+.sponsor-slot img { max-width: 100%; height: auto; border-radius: 10px; display: block; }
+.sponsor-sky-slot { margin-top: 4px; }
+/* Rectángulo intercalado en artículo: por defecto visible en todos los tamaños (páginas sin barra lateral). */
+.sponsor-rect-slot { margin: 28px auto; }
+/* En noticia el rectángulo va marcado como mobile-only: en escritorio manda el skyscraper de la barra. */
+.sponsor-mobile-only { display: none; }
+@media (max-width: 900px) {
+  .sponsor-sky-slot { display: none; }
+  .sponsor-mobile-only { display: block; }
+}

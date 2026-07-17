@@ -1,5 +1,82 @@
 [
   {
+    "slug": "fxpro",
+    "partner": true,
+    "partnerLabel": "Broker patrocinador",
+    "name": "FxPro",
+    "featured": false,
+    "brandColor": "#e2001a",
+    "regulation": "Regulado por FCA (Reino Unido), CySEC (Chipre), FSCA (Sudáfrica), SCB (Bahamas) y FSC — regulación de primer nivel en varias jurisdicciones",
+    "minDeposit": "Desde $100 USD",
+    "spreadsFrom": "Desde 0.0 pips en cuentas Raw/cTrader (con comisión); desde ~1.2 pips en MT4/MT5 sin comisión",
+    "platforms": "MetaTrader 4, MetaTrader 5, cTrader y la plataforma propia FxPro",
+    "trustpilotRating": null,
+    "trustpilotReviews": null,
+    "trustpilotLabel": null,
+    "officialUrl": "https://www.fxpro.com/es",
+    "affiliateUrl": "https://direct.fxpro.group/es/partner/JB5PvniA",
+    "founded": "2006",
+    "publiclyTraded": false,
+    "isBank": false,
+    "executionType": "Sin mesa de dinero (No Dealing Desk), ejecución de órdenes rápida",
+    "leverage": "Hasta 1:500 (según entidad reguladora y tipo de cliente)",
+    "demoAccount": true,
+    "depositMethods": "Tarjeta, transferencia bancaria y monederos electrónicos",
+    "depositTime": "Inmediato en la mayoría de métodos",
+    "withdrawalTime": "Normalmente 1 día hábil",
+    "inactivityFee": "Comisión por inactividad tras un periodo sin operar (consultar condiciones vigentes)",
+    "resumen": "Broker internacional con más de 15 años de trayectoria y regulación de primer nivel (FCA, CySEC y más). Más de 2000 instrumentos CFD y varias plataformas. Es patrocinador de AR4: seguimos mostrando sus ventajas y desventajas reales.",
+    "descripcion": "FxPro es un bróker fundado en 2006 y regulado por autoridades de primer nivel como la FCA británica y la CySEC chipriota, además de FSCA, SCB y otras. Ofrece más de 2000 CFDs sobre forex, acciones, índices, materias primas y criptomonedas, con ejecución sin mesa de dinero y cuatro plataformas (MT4, MT5, cTrader y la propia). Sus cuentas van desde la MT4/MT5 estándar sin comisión hasta las cuentas Raw/cTrader con spreads desde 0.0 pips más comisión. Es patrocinador de AR4 Mercados; aun así, mantenemos la transparencia: operar CFDs con apalancamiento es de alto riesgo y la mayoría de las cuentas minoristas pierde dinero.",
+    "pros": [
+      "Regulación de primer nivel en varias jurisdicciones (FCA, CySEC, FSCA, SCB)",
+      "Más de 15 años de trayectoria (desde 2006)",
+      "Cuatro plataformas: MT4, MT5, cTrader y plataforma propia",
+      "Más de 2000 instrumentos CFD (forex, acciones, índices, materias primas, cripto)",
+      "Ejecución sin mesa de dinero y depósito mínimo bajo (desde $100)",
+      "Cuenta demo gratuita para practicar sin riesgo"
+    ],
+    "cons": [
+      "Opera con CFDs y apalancamiento: producto de alto riesgo (según el propio bróker, un 83,39% de las cuentas minoristas pierde dinero)",
+      "Los spreads de la cuenta estándar MT4/MT5 no son de los más ajustados del mercado; para spreads bajos hay que usar cuentas con comisión",
+      "Aplica comisión por inactividad si dejas de operar un tiempo",
+      "No cotiza en bolsa"
+    ],
+    "accountTypes": [
+      {
+        "name": "MT4 / MT5 (Estándar)",
+        "spread": "desde ~1.2 pips",
+        "comision": "Sin comisión",
+        "para": "Uso general y quienes prefieren spread todo incluido"
+      },
+      {
+        "name": "cTrader",
+        "spread": "desde 0.0 pips",
+        "comision": "Comisión por lote",
+        "para": "Scalping y trading de spreads ajustados"
+      },
+      {
+        "name": "Raw+ (MT4/MT5)",
+        "spread": "desde ~0.0-0.3 pips",
+        "comision": "Comisión por lote",
+        "para": "Traders activos que buscan spreads bajos con MetaTrader"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿FxPro está regulado?",
+        "a": "Sí. FxPro está regulado por la FCA del Reino Unido, la CySEC de Chipre, la FSCA de Sudáfrica y la SCB de Bahamas, entre otras. Es regulación de primer nivel."
+      },
+      {
+        "q": "¿Cuánto necesito para empezar?",
+        "a": "El depósito mínimo es de aproximadamente $100 USD, y hay cuenta demo gratuita para practicar antes."
+      },
+      {
+        "q": "¿Es seguro operar con FxPro?",
+        "a": "FxPro cumple con regulación de primer nivel, lo que aporta garantías. Aun así, operar CFDs con apalancamiento conlleva alto riesgo de pérdida: opera solo con dinero que puedas permitirte perder."
+      }
+    ]
+  },
+  {
     "slug": "pepperstone",
     "rank": 1,
     "name": "Pepperstone",

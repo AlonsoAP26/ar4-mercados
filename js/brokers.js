@@ -47,12 +47,23 @@ function accountTypesHTML(b) {
 // Detalle para brokers aliados (patrocinados), con aviso de riesgo honesto.
 function partnerDetailHTML(b) {
   const faqHTML = (b.faq || []).map((i) => `<details class="faq-item"><summary>${i.q}</summary><p>${i.a}</p></details>`).join('');
+  const reg = (b.regulation || '').toLowerCase();
+  const esOffshore = reg.includes('offshore') || reg.includes('san vicente') || reg.includes('sin regulaci');
+  const aviso = esOffshore
+    ? {
+        titulo: 'Importante: bróker offshore, sin regulación de primer nivel',
+        texto: `${b.name} está registrado en jurisdicción offshore y no cuenta con regulación de ASIC, FCA o CySEC. Sus reseñas públicas están divididas y algunos usuarios reportan demoras en los retiros. Es un aliado de AR4 con condiciones atractivas, pero opéralo con criterio: prueba retiros pequeños al inicio y no deposites más de lo que puedas permitirte arriesgar.`
+      }
+    : {
+        titulo: 'Importante: operar CFDs con apalancamiento es de alto riesgo',
+        texto: `${b.name} es un bróker patrocinador de AR4 con regulación de primer nivel, pero operar CFDs con apalancamiento conlleva un alto riesgo de perder dinero rápidamente. Según los propios datos del sector, la mayoría de las cuentas minoristas termina en pérdidas. Opera solo con dinero que puedas permitirte perder y usa la cuenta demo antes de arriesgar capital real.`
+      };
   return `
     <div class="idea-warning" style="margin-top:28px;border-color:rgba(225,58,75,0.45);">
       <span class="icon">⚠️</span>
       <div>
-        <strong>Importante: bróker offshore, sin regulación de primer nivel</strong>
-        <p>${b.name} está registrado en San Vicente y las Granadinas (offshore) y no cuenta con regulación de ASIC, FCA o CySEC. Sus reseñas públicas están divididas y algunos usuarios reportan demoras en los retiros. Es un aliado de AR4 con condiciones atractivas, pero opéralo con criterio: prueba retiros pequeños al inicio y no deposites más de lo que puedas permitirte arriesgar.</p>
+        <strong>${aviso.titulo}</strong>
+        <p>${aviso.texto}</p>
       </div>
     </div>
     <div class="section-head" style="margin-top:28px;"><h2>Datos clave de ${b.name}</h2></div>
