@@ -171,6 +171,71 @@
     render();
   }
 
+  /* ══════════════ MÓDULO SUELTO: recuperación de drawdown ══════════════
+     Para Herramientas, que ya tiene su propia suite de gestión de riesgo con
+     instrumentos, lotes y pips (mejor que la calculadora genérica de arriba).
+     Aquí solo aportamos lo que esa suite no cubre: qué cuesta recuperarse. */
+  function initDdLab() {
+    const el = $('riskLabDd');
+    if (!el) return;
+
+    const recoveryPct = (ddPct) => {
+      const dd = ddPct / 100;
+      return dd >= 1 ? Infinity : ((1 / (1 - dd)) - 1) * 100;
+    };
+    const lossesToDrawdown = (riskPct, ddPct) => {
+      const r = riskPct / 100, dd = ddPct / 100;
+      if (r <= 0 || r >= 1 || dd >= 1) return null;
+      return Math.ceil(Math.log(1 - dd) / Math.log(1 - r));
+    };
+    const DRAWDOWNS = [5, 10, 20, 30, 50, 70];
+
+    el.innerHTML = `
+      <div class="rl-dd" style="border-top:none;padding-top:0;">
+        <p style="color:var(--text-mid);font-size:0.88rem;margin-bottom:14px;max-width:75ch;">
+          Tu suite de arriba te dice cuánto arriesgar en la próxima operación. Esto te dice el precio de equivocarte:
+          perder no es simétrico. Si caes un 50%, no necesitas ganar un 50% para volver — necesitas ganar un <b>100%</b>.
+        </p>
+        <label class="rl-label" for="rdRisk" style="max-width:340px;">Riesgo por operación: <b id="rdRiskVal">1%</b></label>
+        <input class="rl-range" type="range" id="rdRisk" value="1" min="0.25" max="10" step="0.25" style="max-width:340px;">
+        <div class="rl-range-hint" style="max-width:340px;margin-bottom:16px;"><span>Conservador</span><span>Agresivo</span></div>
+        <div class="rl-dd-table" id="rdTable"></div>
+        <p class="rl-dd-note" id="rdNote"></p>
+      </div>
+      <div class="rl-cta rl-cta-pro">
+        <div>
+          <strong>¿Y después de cientos de operaciones?</strong>
+          <span>Esta tabla es matemática de una caída. El <b>Simulador de Supervivencia</b> repite tu vida de trading miles de
+          veces y te dice si tu método aguanta: probabilidad de ruina, drawdown esperado, rachas y curvas de capital.</span>
+        </div>
+        <a href="membresia.html" class="btn btn-gold">Ver el simulador</a>
+      </div>
+    `;
+
+    const riskEl = $('rdRisk');
+    function render() {
+      const riskPct = parseFloat(riskEl.value);
+      $('rdRiskVal').textContent = clean(riskPct, 2) + '%';
+      const rows = DRAWDOWNS.map((dd) => {
+        const need = recoveryPct(dd), n = lossesToDrawdown(riskPct, dd), hot = need >= 100;
+        return `<div class="rl-dd-row${hot ? ' rl-dd-hot' : ''}">
+            <span class="rl-dd-loss">-${dd}%</span>
+            <div class="rl-dd-bar"><div class="rl-dd-fill" style="width:${Math.min(100, need)}%"></div></div>
+            <span class="rl-dd-need">+${num(need, need >= 100 ? 0 : 1)}%</span>
+            <span class="rl-dd-streak">${n ? n + ' pérdidas seguidas' : '—'}</span>
+          </div>`;
+      }).join('');
+      $('rdTable').innerHTML =
+        '<div class="rl-dd-row rl-dd-head"><span>Si caes</span><span></span><span>Para volver</span><span>A tu riesgo actual</span></div>' + rows;
+      const n20 = lossesToDrawdown(riskPct, 20);
+      $('rdNote').innerHTML = n20
+        ? `Con un riesgo del <b>${clean(riskPct, 2)}%</b> por operación, te bastan <b>${n20} pérdidas seguidas</b> para caer un 20% — y una mala racha así le pasa a cualquiera.`
+        : '';
+    }
+    riskEl.addEventListener('input', render);
+    render();
+  }
+
   /* ══════════════ NIVEL PREMIUM — Simulador Monte Carlo ══════════════ */
   function initProLab() {
     const el = $('riskLabPro');
@@ -442,5 +507,6 @@
   }
 
   initFreeLab();
+  initDdLab();
   initProLab();
 })();
