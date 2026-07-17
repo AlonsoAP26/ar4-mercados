@@ -102,8 +102,20 @@
     mail: svgIcon('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 5.5L20 7"/>'),
     chat: svgIcon('<path d="M21 14a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>'),
     ranking: svgIcon('<path d="M8 21h8M12 17v4"/><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 5H4v1a3 3 0 0 0 3 3M17 5h3v1a3 3 0 0 0-3 3"/>'),
-    dna: svgIcon('<path d="M5 4c0 6 14 8 14 16M19 4c0 6-14 8-14 16"/><path d="M7 7h10M7.5 17h9M9 10.5h6M9 13.5h6"/>')
+    dna: svgIcon('<path d="M5 4c0 6 14 8 14 16M19 4c0 6-14 8-14 16"/><path d="M7 7h10M7.5 17h9M9 10.5h6M9 13.5h6"/>'),
+    trophy: svgIcon('<path d="M8 21h8M12 17v4"/><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 5H4v1a3 3 0 0 0 3 3M17 5h3v1a3 3 0 0 0-3 3"/>'),
+    star: svgIcon('<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.2l1-5.8L3.5 9.2l5.9-.9z"/>'),
+    fire: svgIcon('<path d="M12 3c3 4 4.5 6.5 4.5 9a4.5 4.5 0 0 1-9 0c0-1.4.6-2.8 1.6-4C9.4 9.6 10 11 11 11c1 0 1.2-1.6.5-3.2C11 6.4 11.5 4.7 12 3z"/>'),
+    bolt: svgIcon('<path d="M13 3 5 13h5l-1 8 8-11h-5z"/>'),
+    target: svgIcon('<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/>'),
+    bookmark: svgIcon('<path d="M6 3h12v18l-6-4-6 4z"/>'),
+    calendar: svgIcon('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/>'),
+    radar: svgIcon('<path d="M20 12a8 8 0 1 1-4-6.9"/><path d="M12 12l6-4"/><circle cx="12" cy="12" r="1.5"/>')
   };
+  // Header de panel con icono SVG (mismo estilo del menu): sustituye a los emojis.
+  function panelH(iconKey, label, size) {
+    return '<span class="sec-ic">' + ICON[iconKey] + '</span>' + label;
+  }
   function navCategoriesHTML() {
     return [
       ['Forex', 'forex'], ['Criptomonedas', 'cripto'], ['Acciones', 'acciones'],
@@ -701,8 +713,8 @@
       </div>
 
       <div class="section-head">
-        <h2>${feedSortMode === 'paraTi' ? '✨ Para ti' : 'Ideas de la comunidad'}</h2>
-        <button class="filter-chip" id="bookmarksToggleBtn" data-filter="all">🔖 Ver guardados</button>
+        <h2>${feedSortMode === 'paraTi' ? ('<span class="sec-ic">' + ICON.spark + '</span> Para ti') : 'Ideas de la comunidad'}</h2>
+        <button class="filter-chip" id="bookmarksToggleBtn" data-filter="all"><span class="sec-ic">${ICON.bookmark}</span> Ver guardados</button>
       </div>
       ${feedSortMode === 'paraTi' ? '<p style="color:var(--text-low);font-size:0.78rem;margin:-8px 0 14px;">Prioriza publicaciones recientes de traders que sigues y las que están generando más reacciones y votos útiles ahora mismo.</p>' : ''}
       ${activeCategoryFilter ? `<div class="active-filter-chip">Categoría <strong>${escapeHtml(activeCategoryFilter)}</strong> <button id="clearCategoryFilterBtn" type="button">✕ Quitar</button></div>` : ''}
@@ -1085,13 +1097,13 @@
       </div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">📰 Noticias y análisis IA</h2></div>
       <div id="pulseNewsIdeas" class="pulse-news-row"><p class="footer-text">Cargando noticias y análisis...</p></div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">⭐ Traders destacados</h2></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.star} Traders destacados</h2></div>
       <div id="pulseFeaturedTraders" class="featured-traders-row"><p class="footer-text">Cargando traders destacados...</p></div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔥 Tendencias</h2></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.fire} Tendencias</h2></div>
       <div id="pulseTrending" class="trending-bar"><p class="footer-text">Cargando tendencias...</p></div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">⚡ Actividad reciente</h2></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.bolt} Actividad reciente</h2></div>
       <div id="pulseActivity"><p class="footer-text">Cargando actividad...</p></div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🏆 Top analistas de la semana</h2></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.trophy} Top analistas de la semana</h2></div>
       <div id="pulseTopAnalysts"><p class="footer-text">Cargando ranking...</p></div>
     `;
   }
@@ -2422,7 +2434,7 @@
         if (!requireAuthOrPrompt()) return;
         showBookmarksOnly = !showBookmarksOnly;
         bookmarksToggleBtn.classList.toggle('active', showBookmarksOnly);
-        bookmarksToggleBtn.textContent = showBookmarksOnly ? '📋 Ver todas' : '🔖 Ver guardados';
+        bookmarksToggleBtn.textContent = showBookmarksOnly ? 'Ver todas' : 'Ver guardados';
         loadFeed();
       });
     }
@@ -2609,7 +2621,7 @@
     try {
       const data = await callFunctionGET('community-missions');
       widget.innerHTML = `
-        <div class="section-head" style="margin-bottom:10px;"><h2 style="font-size:1rem;">🎯 Misiones de hoy</h2></div>
+        <div class="section-head" style="margin-bottom:10px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.target} Misiones de hoy</h2></div>
         ${Object.keys(data.missions).map((key) => missionRowHTML(key, data.missions[key])).join('')}
       `;
       widget.querySelectorAll('.mission-claim-btn').forEach((btn) => {
@@ -3052,11 +3064,11 @@
         <span class="sidebar-online-value" id="sidebarOnlineCount">—</span>
       </div>
       <div class="glass-card sidebar-card">
-        <h4>🏆 Top analistas de la semana</h4>
+        <h4 class="sec-h">${ICON.trophy} Top analistas de la semana</h4>
         <div id="sidebarTopAnalysts"><p class="footer-text">Cargando...</p></div>
       </div>
       <div class="glass-card sidebar-card">
-        <h4>📅 Próximos eventos</h4>
+        <h4 class="sec-h">${ICON.calendar} Próximos eventos</h4>
         <div id="sidebarCalendar"></div>
       </div>
     `;
