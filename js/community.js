@@ -2952,7 +2952,18 @@
     });
   }
 
+  let deepLinkApplied = false;
+  function applyDeepLinkParams() {
+    if (deepLinkApplied) return;
+    deepLinkApplied = true;
+    const p = new URLSearchParams(window.location.search);
+    // Enlaces desde "Ver mi perfil": abrir directamente la edicion o los avatares.
+    if (p.get('edit') === '1') editingProfile = true;
+    else if (p.get('avatares') === '1' || p.get('avatars') === '1') shoppingAvatars = true;
+  }
+
   async function render() {
+    applyDeepLinkParams();
     const user = netlifyIdentity.currentUser();
     if (!user) {
       stopLiveUpdates();

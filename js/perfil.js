@@ -229,7 +229,17 @@
     const IC_FLAG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4M4 4h13l-2 4 2 4H4"/></svg>';
     const IC_CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg>';
     const IC_PLUS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
-    const actionButtons = isSelf ? '' : `
+    const IC_EDIT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>';
+    const IC_AV = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="4"/><path d="M5.5 20a7 7 0 0 1 13 0"/></svg>';
+    const IC_GIFT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="12" rx="1"/><path d="M4 13h16M12 9v12"/><path d="M12 9C11 5 8 5 8 7s3 2 4 2c1 0 4 0 4-2s-3-2-4 2z"/></svg>';
+    const actionButtons = isSelf ? `
+      <div class="perfil-actions">
+        <a href="comunidad.html?edit=1" class="btn btn-gold btn-ic">${IC_EDIT} Editar perfil</a>
+        <a href="comunidad.html?avatares=1" class="btn btn-outline btn-ic">${IC_AV} Cambiar avatar</a>
+        <a href="comunidad.html" class="btn btn-outline btn-ic">${IC_GIFT} Canjear puntos</a>
+        <button class="btn btn-outline btn-ic" id="perfilCopyBtn">${IC_LINK} Copiar enlace</button>
+      </div>
+    ` : `
       <div class="perfil-actions">
         ${myProfile ? `<button class="btn ${amFollowing ? 'btn-outline' : 'btn-gold'} btn-ic" id="perfilFollowBtn" data-following="${amFollowing}">${amFollowing ? IC_CHECK + ' Siguiendo' : IC_PLUS + ' Seguir'}</button>` : '<a href="comunidad.html" class="btn btn-gold">Inicia sesión para seguir</a>'}
         <button class="btn btn-outline btn-ic" id="perfilDmBtn">${IC_MAIL} Enviar mensaje</button>
@@ -317,8 +327,9 @@
       copyBtn.addEventListener('click', async () => {
         try {
           await navigator.clipboard.writeText(window.location.href);
-          copyBtn.textContent = '✅ Copiado';
-          setTimeout(() => { copyBtn.textContent = '🔗 Copiar enlace'; }, 1500);
+          const orig = copyBtn.innerHTML;
+          copyBtn.textContent = 'Enlace copiado';
+          setTimeout(() => { copyBtn.innerHTML = orig; }, 1500);
         } catch (e) { prompt('Copia este enlace:', window.location.href); }
       });
     }
