@@ -17,7 +17,7 @@
 <meta name="description" content="Calculadora de tamaño de posición, calculadora de riesgo/beneficio, checklist antes de operar y diario de trading personal, gratis y en un solo lugar.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=26">
+<link rel="stylesheet" href="css/style.css?v=27">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
 <script src="js/_supabase-client.js"></script>
@@ -103,16 +103,22 @@
     <div id="riskLabDd" class="risk-lab"></div>
 
     <div class="section-head" style="margin-top:36px;">
-      <h2>✅ Checklist antes de operar</h2>
+      <h2 class="h2-ic gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l4.5 3.5L12 4l4.5 6.5L21 7l-1.8 11H4.8L3 7z"/></svg> Simulador de Supervivencia</h2>
+      <span class="rl-tier-badge rl-tier-pro">★ AVANZADO</span>
     </div>
-    <div class="community-form">
+    <div id="riskLabPro" class="risk-lab risk-lab-pro"></div>
+
+    <div class="section-head rl-section-head" style="margin-top:40px;">
+      <h2 class="h2-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Checklist antes de operar</h2>
+    </div>
+    <div class="tool-card">
       <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:14px;">Se guarda automáticamente en este navegador. Repásalo antes de cada operación.</p>
       <div id="checklistContainer"></div>
       <button class="btn btn-outline" id="checklistResetBtn" style="margin-top:14px;">Reiniciar checklist</button>
     </div>
 
-    <div class="section-head" style="margin-top:36px;">
-      <h2>📓 Diario de trading</h2>
+    <div class="section-head rl-section-head" style="margin-top:40px;">
+      <h2 class="h2-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h13a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4z"/><path d="M4 4v18M9 8h6M9 12h6"/></svg> Diario de trading</h2>
     </div>
     <div id="journalSection"><p class="footer-text">Cargando...</p></div>
 
@@ -163,8 +169,8 @@
 <script src="js/main.js?v=2"></script>
 <script src="js/auth.js?v=7"></script>
 <script src="js/tools-suite.js?v=2"></script>
-<script src="js/risk-lab.js?v=4"></script>
-<script src="js/herramientas.js?v=3"></script>
+<script src="js/risk-lab.js?v=5"></script>
+<script src="js/herramientas.js?v=4"></script>
 <script src="js/community-widget.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function () { if (window.AR4_mountCommunityWidget) window.AR4_mountCommunityWidget('communityWidgetMount'); });</script>
 <script src="js/aria-avatar.js?v=1"></script>

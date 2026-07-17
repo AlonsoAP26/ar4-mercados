@@ -86,18 +86,32 @@
 
     function render() {
       const state = loadState();
-      container.innerHTML = CHECKLIST_ITEMS.map((item, i) => `
-        <label style="display:flex;align-items:center;gap:10px;padding:10px 0;border-top:${i === 0 ? 'none' : '1px dashed rgba(255,255,255,0.08)'};cursor:pointer;font-weight:400;">
-          <input type="checkbox" data-idx="${i}" ${state[i] ? 'checked' : ''} style="width:18px;height:18px;flex-shrink:0;">
-          <span style="font-size:0.9rem;color:var(--text-mid);">${item}</span>
-        </label>
-      `).join('');
+      const done = CHECKLIST_ITEMS.filter((_, i) => state[i]).length;
+      const total = CHECKLIST_ITEMS.length;
+      const pct = Math.round((done / total) * 100);
+      const ready = done === total;
+
+      container.innerHTML = `
+        <div class="chk-progress${ready ? ' chk-ready' : ''}">
+          <div class="chk-progress-bar"><div class="chk-progress-fill" style="width:${pct}%"></div></div>
+          <span class="chk-progress-label">${ready ? '✓ Todo listo — puedes operar con la cabeza tranquila' : done + ' de ' + total + ' verificados'}</span>
+        </div>
+        <div class="chk-list">
+        ${CHECKLIST_ITEMS.map((item, i) => `
+          <label class="chk-item${state[i] ? ' chk-on' : ''}">
+            <input type="checkbox" data-idx="${i}" ${state[i] ? 'checked' : ''}>
+            <span class="chk-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <span class="chk-text">${item}</span>
+          </label>
+        `).join('')}
+        </div>`;
 
       container.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
         cb.addEventListener('change', () => {
           const s = loadState();
           s[cb.dataset.idx] = cb.checked;
           saveState(s);
+          render();
         });
       });
     }

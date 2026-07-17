@@ -309,7 +309,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
               <strong>Parámetros bloqueados</strong>
               <span>En Premium ajustas tu % de aciertos, tu R:R, cuántas operaciones y hasta ${PRO_SIMS_MAX.toLocaleString('es-PE')} simulaciones.</span>
-              <a href="#subscribeBtn" class="btn btn-gold">Desbloquear</a>
+              <a href="membresia.html#subscribeBtn" class="btn btn-gold">Desbloquear</a>
             </div>
           </div>
 
@@ -348,7 +348,7 @@
             <strong>Las curvas de capital son Premium</strong>
             <span>Aquí se ve, camino por camino, cuántas versiones de tu cuenta sobreviven y cuántas se hunden.</span>
           </div>
-          <a href="#subscribeBtn" class="btn btn-gold">Ver Premium</a>
+          <a href="membresia.html#subscribeBtn" class="btn btn-gold">Ver Premium</a>
         </div>
       </div>
 
@@ -364,7 +364,7 @@
           hasta ${PRO_SIMS_MAX.toLocaleString('es-PE')} simulaciones, las curvas de capital, la probabilidad de ruina y el Kelly —
           y Aria te explica qué hacer con esos números.</span>
         </div>
-        <a href="#subscribeBtn" class="btn btn-gold">Actualizar a Premium</a>
+        <a href="membresia.html#subscribeBtn" class="btn btn-gold">Actualizar a Premium</a>
       </div>
     `;
 

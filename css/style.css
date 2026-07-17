@@ -3916,3 +3916,64 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   .rl-stats-3 { grid-template-columns: 1fr; }
   .rl-curves, .rl-curves-lock { height: 170px; }
 }
+
+/* Fix: el atributo [hidden] no oculta elementos con display:flex/grid propio.
+   Los candados y el CTA del laboratorio usan display:flex, asi que sin esto un
+   usuario Premium seguiria viendo los bloqueos. */
+.rl-lock-overlay[hidden],
+.rl-curves-lock[hidden],
+.rl-cta[hidden],
+.rl-pro-banner[hidden] { display: none !important; }
+
+/* ===== Herramientas — refinamiento (tarjetas, checklist dorado, diario) ===== */
+.rl-section-head h2.h2-ic svg { color: var(--gold-bright); }
+.tool-card {
+  border: 1px solid var(--card-border); border-radius: var(--radius); padding: 22px;
+  background:
+    radial-gradient(90% 70% at 8% 0%, rgba(240,199,94,0.05), transparent 60%),
+    linear-gradient(180deg, rgba(17,26,46,0.5), rgba(10,15,28,0.35));
+}
+
+/* Checklist con casillas doradas y progreso */
+.chk-progress {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;
+  padding-bottom: 14px; border-bottom: 1px dashed rgba(255,255,255,0.08);
+}
+.chk-progress-bar { flex: 1; min-width: 140px; height: 8px; background: rgba(255,255,255,0.07); border-radius: 5px; overflow: hidden; }
+.chk-progress-fill { height: 100%; border-radius: 5px; background: linear-gradient(90deg, var(--gold), var(--gold-bright)); transition: width .3s ease; box-shadow: 0 0 10px rgba(240,199,94,0.35); }
+.chk-progress-label { font-size: 0.8rem; color: var(--text-mid); font-weight: 600; white-space: nowrap; }
+.chk-ready .chk-progress-fill { background: linear-gradient(90deg, #1f9e5a, #2ecc71); box-shadow: 0 0 12px rgba(46,204,113,0.45); }
+.chk-ready .chk-progress-label { color: #7fe0a8; }
+
+.chk-list { display: flex; flex-direction: column; gap: 4px; }
+.chk-item {
+  display: flex; align-items: center; gap: 12px; padding: 12px 12px; cursor: pointer;
+  border-radius: 11px; border: 1px solid transparent; transition: background .15s, border-color .15s;
+}
+.chk-item:hover { background: rgba(255,255,255,0.03); }
+.chk-item input { position: absolute; opacity: 0; pointer-events: none; }
+.chk-box {
+  flex-shrink: 0; width: 24px; height: 24px; border-radius: 7px;
+  border: 2px solid rgba(255,255,255,0.18); display: inline-flex; align-items: center; justify-content: center;
+  color: #16130a; transition: background .15s, border-color .15s, transform .12s;
+}
+.chk-box svg { width: 14px; height: 14px; opacity: 0; transform: scale(0.6); transition: opacity .15s, transform .15s; }
+.chk-text { font-size: 0.9rem; color: var(--text-mid); line-height: 1.45; transition: color .15s; }
+.chk-item.chk-on {
+  background: linear-gradient(90deg, rgba(212,175,55,0.1), transparent);
+  border-color: rgba(212,175,55,0.22);
+}
+.chk-item.chk-on .chk-box {
+  background: linear-gradient(135deg, #fbe9b0, #d4af37); border-color: transparent;
+  box-shadow: 0 3px 10px rgba(240,199,94,0.35);
+}
+.chk-item.chk-on .chk-box svg { opacity: 1; transform: scale(1); }
+.chk-item.chk-on .chk-text { color: var(--text-hi); }
+
+/* Diario de trading: entradas más refinadas */
+#journalSection .community-post-card {
+  border-color: var(--card-border);
+  background: linear-gradient(180deg, rgba(17,26,46,0.45), rgba(10,15,28,0.3));
+  transition: border-color .15s, transform .12s;
+}
+#journalSection .community-post-card:hover { border-color: rgba(212,175,55,0.28); transform: translateY(-1px); }
