@@ -35,31 +35,13 @@
   }
 
   function ariaAvatarSVG() {
-    return `
-      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-          <linearGradient id="ariaGold" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#fbe9b0"/><stop offset="50%" stop-color="#d4af6a"/><stop offset="100%" stop-color="#b8860b"/>
-          </linearGradient>
-        </defs>
-        <circle cx="60" cy="64" r="40" fill="url(#ariaGold)" stroke="#1a1408" stroke-width="4"/>
-        <path d="M22 58 Q22 18 60 18 Q98 18 98 58" fill="none" stroke="#1a1408" stroke-width="7" stroke-linecap="round"/>
-        <rect x="14" y="50" width="15" height="26" rx="7" fill="#111a2e" stroke="#1a1408" stroke-width="3.5"/>
-        <rect x="91" y="50" width="15" height="26" rx="7" fill="#111a2e" stroke="#1a1408" stroke-width="3.5"/>
-        <g class="aria-eyes">
-          <circle cx="46" cy="60" r="10" fill="#fff" stroke="#1a1408" stroke-width="3"/>
-          <circle cx="74" cy="60" r="10" fill="#fff" stroke="#1a1408" stroke-width="3"/>
-          <circle cx="48" cy="61" r="4" fill="#1a1408"/>
-          <circle cx="76" cy="61" r="4" fill="#1a1408"/>
-        </g>
-        <g class="aria-lids">
-          <line x1="36" y1="60" x2="56" y2="60" stroke="#1a1408" stroke-width="4" stroke-linecap="round"/>
-          <line x1="64" y1="60" x2="84" y2="60" stroke="#1a1408" stroke-width="4" stroke-linecap="round"/>
-        </g>
-        <ellipse class="aria-mouth" cx="60" cy="84" rx="9" ry="7" fill="#1a1408"/>
-        <path class="aria-smile" d="M50 84 Q60 92 70 84" stroke="#1a1408" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-      </svg>
-    `;
+    if (typeof window.AR4_ariaAvatarMarkup === 'function') {
+      return window.AR4_ariaAvatarMarkup({ inline: true, pulse: true });
+    }
+    // Respaldo mínimo si el módulo del avatar no cargó.
+    return '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="aria-av" aria-hidden="true">' +
+      '<circle cx="50" cy="50" r="49" fill="#0b1222"/><circle cx="50" cy="50" r="46.5" fill="none" stroke="#eaca74" stroke-width="1.5"/>' +
+      '<path d="M50 34 L61 61 H55.2 L53.3 56.2 H46.7 L44.8 61 H39 Z M48.2 51.4 H51.8 L50 46.8 Z" fill="#f0c75e"/></svg>';
   }
 
   function widgetHTML() {

@@ -259,6 +259,11 @@ function renderTVMiniChart(container, symbol) {
 }
 
 function renderPremiumChart(container, symbol) {
+  // Gráfico institucional compartido (estudios avanzados + explicación del flujo de órdenes).
+  if (typeof window.AR4_renderPremiumChart === 'function') {
+    window.AR4_renderPremiumChart(container, symbol);
+    return;
+  }
   container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
   const script = document.createElement('script');
   script.type = 'text/javascript';

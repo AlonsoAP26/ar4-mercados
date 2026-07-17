@@ -1951,6 +1951,76 @@ a { color: inherit; text-decoration: none; }
 .chat-input-row button:hover:not(:disabled) { transform: scale(1.06); }
 .chat-greeting strong { color: var(--gold-bright); display: block; margin-bottom: 3px; }
 
+/* ── Chatbot Aria — acabado premium (moderno, refinado, "caro") ─────────── */
+.chat-panel {
+  width: 384px; height: 520px;
+  border-radius: 20px;
+  border: 1px solid rgba(212,175,55,0.22);
+  background:
+    radial-gradient(120% 80% at 50% -10%, rgba(240,199,94,0.06), transparent 60%),
+    linear-gradient(180deg, #0e1526 0%, #0a0f1c 100%);
+  box-shadow: 0 30px 80px -12px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.03) inset;
+  backdrop-filter: blur(10px);
+}
+.chat-header {
+  position: relative;
+  padding: 15px 16px 14px;
+  background: linear-gradient(120deg, #14101f 0%, #1c1220 55%, #14101f 100%);
+  border-bottom: 1px solid rgba(212,175,55,0.14);
+}
+.chat-header::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212,175,55,0.5), transparent);
+}
+.chat-header-avatar {
+  width: 40px; height: 40px; border-radius: 12px; padding: 1px;
+  background: linear-gradient(135deg, rgba(240,199,94,0.55), rgba(184,134,11,0.25));
+  box-shadow: 0 4px 14px rgba(240,199,94,0.18);
+}
+.chat-header-sub { letter-spacing: 0.3px; }
+.chat-messages {
+  padding: 16px 14px;
+  background:
+    radial-gradient(90% 60% at 100% 0%, rgba(240,199,94,0.04), transparent 55%),
+    transparent;
+  scrollbar-width: thin; scrollbar-color: rgba(212,175,55,0.35) transparent;
+}
+.chat-messages::-webkit-scrollbar { width: 6px; }
+.chat-messages::-webkit-scrollbar-thumb { background: rgba(212,175,55,0.3); border-radius: 3px; }
+.chat-msg {
+  max-width: 86%; padding: 10px 13px; border-radius: 15px; font-size: 0.855rem; line-height: 1.55;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+}
+.chat-msg.bot {
+  background: linear-gradient(180deg, rgba(28,38,58,0.92), rgba(20,28,44,0.92));
+  border: 1px solid rgba(255,255,255,0.06);
+  border-bottom-left-radius: 5px;
+}
+.chat-msg.user {
+  background: linear-gradient(135deg, #f6d67a, #d4af37);
+  box-shadow: 0 4px 14px rgba(212,175,55,0.28);
+  border-bottom-right-radius: 5px;
+}
+.chat-input-row {
+  padding: 12px 12px 14px;
+  border-top: 1px solid rgba(212,175,55,0.12);
+  background: linear-gradient(180deg, transparent, rgba(240,199,94,0.03));
+}
+.chat-input-row input {
+  border-radius: 22px; padding: 11px 16px; background: rgba(10,15,28,0.85);
+  border: 1px solid rgba(255,255,255,0.08); transition: border-color 0.15s, box-shadow 0.15s;
+}
+.chat-input-row input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212,175,55,0.14);
+}
+.chat-input-row button { width: 44px; height: 44px; border-radius: 50%; box-shadow: 0 6px 16px rgba(212,175,55,0.3); }
+.chat-quicklinks a { border-radius: 22px; }
+.chat-launcher { box-shadow: 0 10px 30px -6px rgba(212,175,55,0.4); }
+@media (max-width: 480px) {
+  .chat-panel { width: calc(100vw - 24px); height: 72vh; right: 12px; border-radius: 18px; }
+}
+
 /* Ideas de Trading: aviso prominente */
 .idea-warning {
   display: flex;
@@ -2619,15 +2689,31 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   backdrop-filter: blur(6px);
 }
 .voice-widget.voice-active { border-color: rgba(212,175,55,0.45); }
-.voice-avatar { width: 62px; height: 62px; flex-shrink: 0; }
+.voice-avatar { width: 62px; height: 62px; flex-shrink: 0; filter: drop-shadow(0 4px 14px rgba(240,199,94,0.18)); }
 .voice-avatar svg { width: 100%; height: 100%; display: block; }
-.aria-mouth { transform-origin: 60px 84px; transform: scaleY(0.12); transition: transform 90ms ease-out; }
-.voice-widget.voice-active .aria-smile { opacity: 0; }
-.voice-widget:not(.voice-active) .aria-mouth { opacity: 0; }
-.aria-lids { opacity: 0; }
-.voice-widget.aria-blinking .aria-lids { opacity: 1; }
-.voice-widget.aria-blinking .aria-eyes { opacity: 0; }
-.voice-widget.voice-paused .aria-mouth { transform: scaleY(0.12) !important; }
+/* Avatar canónico de Aria: núcleo y anillos de pulso (animan al hablar) */
+.aria-av .aria-core { transform-origin: 50px 50px; transition: filter 200ms ease; }
+.aria-av .aria-pulse { opacity: 0; transform-origin: 50px 50px; }
+.voice-widget.voice-active .aria-av .aria-core {
+  filter: drop-shadow(0 0 3px rgba(240,199,94,0.8));
+  animation: ariaCoreGlow 1.6s ease-in-out infinite;
+}
+.voice-widget.voice-active .aria-av .aria-pulse-1 { animation: ariaPulse 1.8s ease-out infinite; }
+.voice-widget.voice-active .aria-av .aria-pulse-2 { animation: ariaPulse 1.8s ease-out infinite 0.9s; }
+.voice-widget.voice-paused .aria-av .aria-core,
+.voice-widget.voice-paused .aria-av .aria-pulse { animation-play-state: paused; }
+@keyframes ariaCoreGlow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+@keyframes ariaPulse {
+  0% { opacity: 0.5; transform: scale(0.72); }
+  100% { opacity: 0; transform: scale(1.18); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .voice-widget.voice-active .aria-av .aria-core,
+  .voice-widget.voice-active .aria-av .aria-pulse { animation: none; }
+}
 .voice-main { flex: 1; min-width: 0; }
 .voice-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
 .voice-head strong { color: var(--gold-bright); font-size: 0.92rem; }
@@ -3423,4 +3509,41 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 @media (max-width: 900px) {
   .sponsor-sky-slot { display: none; }
   .sponsor-mobile-only { display: block; }
+}
+
+/* ===== Alineación de tarjetas de broker (CTA anclado abajo) ===== */
+.broker-card { display: flex; flex-direction: column; }
+.broker-card-cta { margin-top: auto; }
+.broker-partner-card .broker-facts,
+.broker-rank-card .broker-facts { margin-bottom: 16px; }
+
+/* ===== Gráfico Premium institucional (order flow / volumen) ===== */
+.pfx-wrap { margin-bottom: 26px; }
+.pfx-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--gold-bright); background: rgba(212,175,55,0.08);
+  border: 1px solid rgba(212,175,55,0.28); border-radius: 20px; padding: 6px 14px; margin-bottom: 12px;
+}
+.pfx-dot { width: 8px; height: 8px; border-radius: 50%; background: #2ecc71; box-shadow: 0 0 0 0 rgba(46,204,113,0.6); animation: chat-status-pulse 2.2s ease-out infinite; }
+.pfx-chart { border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); min-height: 480px; }
+.pfx-legend {
+  margin-top: 16px; border: 1px solid rgba(212,175,55,0.22); border-radius: 14px;
+  background: linear-gradient(180deg, rgba(240,199,94,0.05), rgba(17,26,46,0.35));
+  padding: 18px 18px 14px;
+}
+.pfx-legend-head { display: flex; align-items: center; gap: 9px; margin-bottom: 14px; color: var(--gold-bright); font-weight: 700; font-size: 0.98rem; }
+.pfx-legend-head svg { width: 20px; height: 20px; flex-shrink: 0; }
+.pfx-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 22px; }
+.pfx-item { display: flex; gap: 11px; align-items: flex-start; }
+.pfx-ic {
+  flex-shrink: 0; width: 34px; height: 34px; border-radius: 9px; display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.28); color: var(--gold-bright);
+}
+.pfx-ic svg { width: 18px; height: 18px; }
+.pfx-item strong { display: block; color: var(--text-hi); font-size: 0.9rem; margin-bottom: 3px; }
+.pfx-item p { color: var(--text-mid); font-size: 0.82rem; line-height: 1.5; }
+.pfx-note { margin-top: 14px; padding-top: 12px; border-top: 1px dashed rgba(255,255,255,0.08); color: var(--text-low); font-size: 0.78rem; line-height: 1.5; }
+@media (max-width: 720px) {
+  .pfx-grid { grid-template-columns: 1fr; }
 }

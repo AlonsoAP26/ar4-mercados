@@ -1,17 +1,12 @@
 (function () {
-  // Avatar de Aria: robot moderno (DiceBear bottts) sobre degradado dorado —
-  // encaja con el tono de IA del sitio. Si la red falla, el monograma dorado
-  // autocontenido queda de respaldo.
-  const ARIA_AVATAR = 'https://api.dicebear.com/9.x/bottts/svg?seed=AriaBotAR4&radius=18&backgroundColor=b8860b,d4af37&backgroundType=gradientLinear';
-  const ARIA_AVATAR_FALLBACK = 'data:image/svg+xml;utf8,' + encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">' +
-    '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
-    '<stop offset="0%" stop-color="#fbe9b0"/><stop offset="50%" stop-color="#f0c75e"/><stop offset="100%" stop-color="#b8860b"/>' +
-    '</linearGradient></defs>' +
-    '<rect width="48" height="48" rx="14" fill="#0f1625"/>' +
-    '<rect x="1" y="1" width="46" height="46" rx="13" fill="none" stroke="url(#g)" stroke-width="1.5" opacity="0.7"/>' +
-    '<path d="M24 12 L33 34 H28.6 L26.9 29.4 H21.1 L19.4 34 H15 Z M22.4 25.6 H25.6 L24 21 Z" fill="url(#g)"/>' +
-    '</svg>');
+  // Avatar de Aria: emblema futurista canónico, autocontenido y siempre idéntico
+  // (definido en js/aria-avatar.js). Respaldo mínimo por si ese módulo no cargó.
+  const ARIA_AVATAR = (typeof window.AR4_ARIA_AVATAR_URI === 'string')
+    ? window.AR4_ARIA_AVATAR_URI
+    : 'data:image/svg+xml;utf8,' + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width="48" height="48" rx="14" fill="#0f1625"/>' +
+      '<path d="M24 12 L33 34 H28.6 L26.9 29.4 H21.1 L19.4 34 H15 Z" fill="#f0c75e"/></svg>');
+  const ARIA_AVATAR_FALLBACK = ARIA_AVATAR;
 
   // Icono de chat en linea (SVG) para el lanzador: mas serio que el emoji.
   const CHAT_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg>';
@@ -25,7 +20,7 @@
   greeting.className = 'chat-greeting';
   greeting.innerHTML = `
     <button class="chat-greeting-close" aria-label="Cerrar">✕</button>
-    <strong>¿Dudas antes de operar?</strong> Soy Aria. Te ayudo con gestión de riesgo, disciplina y a elegir broker.
+    <strong>¿Dudas antes de operar?</strong> Soy Aria, la IA de AR4. Consúltame sobre gestión de riesgo, disciplina o qué broker elegir.
   `;
 
   const panel = document.createElement('div');
@@ -250,7 +245,7 @@
     if (e.key === 'Enter') sendMessage();
   });
 
-  addMessage('Hola, soy Aria, tu asistente en AR4 Mercados. 👋\n\nPuedo ayudarte con:\n• Gestión de riesgo y tamaño de posición\n• Disciplina y cómo manejar las emociones al operar\n• Entender una noticia o un análisis del sitio\n• Elegir broker según lo que necesitas\n\nUna sola regla, sin excepciones: te doy contexto y criterios, nunca una señal de compra o venta. ¿Por dónde empezamos?', 'bot');
+  addMessage('Soy Aria, la asistente de inteligencia artificial de AR4 Mercados. Estoy aquí para ayudarte a operar con más criterio y menos impulso.\n\nPuedo apoyarte en:\n• Gestión de riesgo y cálculo del tamaño de posición\n• Disciplina y control emocional durante la operativa\n• Interpretar una noticia o un análisis del sitio\n• Elegir el broker adecuado según tu perfil\n\nTrabajo con un principio innegociable: te ofrezco contexto, datos y criterios, nunca una señal de compra o venta. La decisión, y su riesgo, siempre son tuyos.\n\n¿En qué te gustaría que empecemos?', 'bot');
 
   window.AR4_askAriaAbout = function (question, contextStr) {
     hideGreeting();

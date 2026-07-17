@@ -94,7 +94,7 @@ function partnerCardHTML(b) {
         <li>Depósito mínimo <strong>${b.minDeposit}</strong></li>
         <li>Plataforma <strong>${b.platforms}</strong></li>
       </ul>
-      <a href="broker.html?slug=${encodeURIComponent(b.slug)}" class="btn btn-outline btn-block" style="margin-top:12px;">Ver detalles →</a>
+      <a href="broker.html?slug=${encodeURIComponent(b.slug)}" class="btn btn-outline btn-block broker-card-cta">Ver detalles →</a>
     </article>
   `;
 }
@@ -308,7 +308,7 @@ function brokerRankCardHTML(b) {
         <li>Spreads <strong>${b.spreadsFrom}</strong></li>
       </ul>
       ${sponsoredTag}
-      <a href="broker.html?slug=${encodeURIComponent(b.slug)}" class="btn btn-outline btn-block" style="margin-top:12px;">Ver review completa →</a>
+      <a href="broker.html?slug=${encodeURIComponent(b.slug)}" class="btn btn-outline btn-block broker-card-cta">Ver review completa →</a>
     </article>
   `;
 }

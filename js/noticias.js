@@ -459,7 +459,15 @@ async function initNoticiaDetail() {
   if (conclusionEl && n.bodyPremium) {
     const isPremiumUser = await getPremiumStatus();
     if (isPremiumUser) {
-      conclusionEl.innerHTML = `<article class="article-body">${n.bodyPremium}</article>`;
+      const chartBlock = n.symbol
+        ? `<div class="section-head" style="margin-top:8px;"><h2 style="font-size:1.2rem;">Lectura institucional: volumen y flujo de órdenes</h2><span class="badge-premium">★ Premium</span></div>
+           <div class="idea-chart-wrap" style="margin-bottom:24px;" id="noticiaPremiumChart"></div>`
+        : '';
+      conclusionEl.innerHTML = `${chartBlock}<article class="article-body">${n.bodyPremium}</article>`;
+      const pchart = document.getElementById('noticiaPremiumChart');
+      if (pchart && n.symbol && typeof window.AR4_renderPremiumChart === 'function') {
+        window.AR4_renderPremiumChart(pchart, n.symbol);
+      }
     } else {
       conclusionEl.innerHTML = `
         <div class="premium-lock" style="border-radius:var(--radius);min-height:220px;">
