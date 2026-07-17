@@ -229,11 +229,11 @@
           <input class="rl-range" type="range" id="rpRisk" value="1" min="0.25" max="10" step="0.25">
 
           <div class="rl-lockwrap" id="rlLockWrap">
-            <label class="rl-label" for="rpWin">% de aciertos: <b id="rpWinVal">45%</b></label>
-            <input class="rl-range" type="range" id="rpWin" value="45" min="10" max="90" step="1">
+            <label class="rl-label" for="rpWin">% de aciertos: <b id="rpWinVal">40%</b></label>
+            <input class="rl-range" type="range" id="rpWin" value="40" min="10" max="90" step="1">
 
-            <label class="rl-label" for="rpRR">Ratio R:R (ganas × lo que arriesgas): <b id="rpRRVal">2.0</b></label>
-            <input class="rl-range" type="range" id="rpRR" value="2" min="0.25" max="6" step="0.25">
+            <label class="rl-label" for="rpRR">Ratio R:R (ganas × lo que arriesgas): <b id="rpRRVal">1.5</b></label>
+            <input class="rl-range" type="range" id="rpRR" value="1.5" min="0.25" max="6" step="0.25">
 
             <label class="rl-label" for="rpTrades">Operaciones a simular: <b id="rpTradesVal">200</b></label>
             <input class="rl-range" type="range" id="rpTrades" value="200" min="20" max="1000" step="10">
@@ -385,7 +385,11 @@
       }
 
       let cls, txt;
-      if (expectancyR <= 0) {
+      if (Math.abs(expectancyR) < 0.005) {
+        // El filo de la navaja: sin ventaja, y en el mundo real las comisiones lo vuelven negativo.
+        cls = 'rl-verdict-mid';
+        txt = `Con un ${clean(winRate, 0)}% de aciertos y un R:R de ${num(rr, 2)} tu expectativa es <b>0.00 R</b>: exactamente el filo de la navaja. Ni ganas ni pierdes por matemática — pero en el mundo real están el spread, las comisiones y los deslizamientos, así que un método así <b>pierde dinero despacio</b>. Aquí se ve la verdad incómoda del trading: la ventaja hay que ganársela, no se asume.`;
+      } else if (expectancyR < 0) {
         cls = 'rl-verdict-bad';
         txt = `Con un ${clean(winRate, 0)}% de aciertos y un R:R de ${num(rr, 2)}, tu expectativa es <b>${num(expectancyR, 3)} R por operación</b>: el método pierde dinero por matemática, no por mala suerte. Ningún tamaño de posición arregla eso — hay que subir el % de aciertos o el R:R.`;
       } else if ((ruined / sims) > 0.15) {
@@ -424,7 +428,7 @@
         $('rlCurvesLock').hidden = false;
         $('rlProTier').textContent = '★ PREMIUM · versión limitada';
         banner.hidden = false;
-        banner.innerHTML = 'Estás viendo la <b>versión limitada</b>: ' + FREE_SIMS + ' simulaciones con supuestos fijos (45% de aciertos, R:R 2.0, 200 operaciones). Solo puedes mover tu capital y tu riesgo.';
+        banner.innerHTML = 'Estás viendo la <b>versión limitada</b>: ' + FREE_SIMS + ' simulaciones con supuestos fijos (40% de aciertos, R:R 1.5, 200 operaciones). Solo puedes mover tu capital y tu riesgo. En <b>Premium</b> pones tus propios números.';
         ['rpRuin', 'rpStreak', 'rpKelly'].forEach((i) => { $(i).textContent = '★ Premium'; $(i).className = 'rl-locked-val'; });
       }
       run();
