@@ -560,5 +560,55 @@
       ],
       "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
     }
+  },
+  {
+    "title": "USD/COP a un paso de su mínimo anual con el RSI en sobreventa técnica",
+    "excerpt": "El par cotiza a solo 1,3% de su mínimo de 52 semanas mientras el RSI marca 28, en zona de sobreventa, dentro de una estructura bajista de fondo.",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">A un tramo mínimo del piso anual</h3><p>El USD/COP cotiza en 3.257,47, apenas un 1,3% por encima de su mínimo de 52 semanas (3.216,92) y a una distancia considerable de su máximo anual (4.196,02), del que se aleja un 22,4%. La caída del último año acumula un -22%, y solo en el último mes el retroceso es del 5,4%, aunque en la última semana la variación es prácticamente plana (-0,2%). Esto describe un mercado que ha perdido fuerza direccional en el corto plazo tras un movimiento bajista pronunciado y sostenido.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Sobreventa técnica sin confirmación de giro</h3><p>El RSI de 14 periodos (un oscilador que mide la velocidad y magnitud de los movimientos de precio en una escala de 0 a 100) se ubica en 28, dentro de la zona de sobreventa (habitualmente por debajo de 30). Esta lectura indica que la presión vendedora ha sido intensa y que, en términos estadísticos, el movimiento bajista está extendido. Sin embargo, la sobreventa por sí sola no anticipa un rebote: describe agotamiento potencial, no una señal de cambio de tendencia confirmada. La vela más reciente cerró con carácter alcista, subiendo 0,6% respecto al cierre anterior, pero sin un patrón técnico destacable que valide un giro estructural.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Medias móviles alineadas en contra del precio</h3><p>El precio cotiza por debajo tanto de la media móvil de 50 periodos (3.515,32) como de la de 200 (3.672,44), y la media de 50 se ubica por debajo de la de 200, configurando una estructura de medias bajista. Esta disposición confirma que la tendencia de mediano y largo plazo sigue orientada a la baja, y que el nivel actual se sitúa en la parte inferior de ese rango de medias, coherente con la lectura de sobreventa del RSI.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Niveles clave y lectura de indicadores</h3><p><strong style=\"color:var(--green);\">Soportes:</strong> 3.247,4<br><strong style=\"color:var(--crimson-bright);\">Resistencias:</strong> 3.478,96 · 3.504,26 · 3.706,63</p><p>El único soporte de referencia cercano (3.247,4) está a escasa distancia del precio actual, mientras que la resistencia más próxima (3.478,96) queda considerablemente más alejada, lo que deja un rango asimétrico entre el nivel de defensa inmediato y la primera zona de oferta relevante. El ATR de 14 periodos (rango medio diario de volatilidad) es de 50,46 puntos, una referencia útil para dimensionar la magnitud típica de los movimientos diarios en este par.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Lectura de flujo institucional en la zona de mínimos</h3><p>Desde una óptica de Smart Money Concepts, el precio operando a solo 1,3% del mínimo de 52 semanas (3.216,92) sugiere que ese nivel concentra una zona de liquidez relevante: probablemente existan stops de vendedores agrupados justo por debajo de ese mínimo, lo que puede atraer al precio hacia esa zona antes de cualquier reacción, en una dinámica de barrido de liquidez (liquidity sweep) previa a un posible cambio de carácter (Change of Character o CHoCH). El soporte de 3.247,4 actúa como referencia intermedia: su pérdida limpia, combinada con una vela de rango amplio, sería la primera señal de que el mercado busca directamente esa liquidez bajo el mínimo anual. Por el lado de la oferta, el rango entre el precio actual y la resistencia de 3.478,96 es amplio y sin pivotes intermedios visibles en los datos, lo que podría interpretarse como una zona de vacío de precio (Fair Value Gap) potencial si el rebote reciente se acelera con velas de cuerpo grande: ese tipo de movimiento impulsivo suele dejar huecos que el precio tiende a revisar más adelante. La vela alcista de la última sesión, sin ser un patrón destacado, podría funcionar como el inicio de un posible order block (la última vela contraria antes de un impulso) si el movimiento al alza gana continuidad en las próximas sesiones; de lo contrario, se diluye como ruido dentro de la tendencia bajista de fondo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario alcista: qué confirmaría un respiro técnico</h3><p>Un escenario de rebote técnico ganaría validez si el precio logra sostenerse por encima del soporte de 3.247,4 y encadena cierres diarios por encima de ese nivel, revirtiendo la sobreventa del RSI (28) hacia zonas neutrales. La invalidación de esta lectura llegaría con una ruptura clara y sostenida por debajo de 3.247,4, que abriría la puerta a un test directo del mínimo de 52 semanas en 3.216,92. Un objetivo razonable, en caso de confirmarse el rebote, sería la resistencia de 3.478,96, primera zona de oferta significativa por encima del precio actual, aunque superarla exigiría revertir también la estructura bajista de medias móviles.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario bajista: continuidad de la tendencia dominante</h3><p>El escenario bajista mantiene la validez mientras el precio siga operando por debajo de las medias de 50 (3.515,32) y 200 (3.672,44), con la estructura de medias confirmando presión vendedora de fondo. La confirmación de este escenario llegaría con una pérdida del soporte de 3.247,4, lo que habilitaría un movimiento hacia el mínimo de 52 semanas en 3.216,92 como primer objetivo técnico, y potencialmente hacia niveles inferiores no marcados aún por pivotes en el gráfico. La invalidación de este escenario se daría con una recuperación sostenida por encima de 3.478,96, que rompería la secuencia de máximos y mínimos descendentes vigente.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>",
+    "trend": "down",
+    "symbol": "FX_IDC:USDCOP",
+    "category": "LatAm",
+    "slug": "usdcop-a-un-paso-de-su-minimo-anual-con-el-rsi-en-sobreventa-mrphyw5l",
+    "author": "AR4 Mercados",
+    "date": "2026-07-17",
+    "marketData": {
+      "symbol": "FX_IDC:USDCOP",
+      "nombre": "USD/COP (peso colombiano)",
+      "yahooSymbol": "USDCOP=X",
+      "fuente": "Yahoo Finance (USDCOP=X)",
+      "fechaUltimaVela": "2026-07-17",
+      "precio": 3257.47,
+      "cierreAnterior": 3239,
+      "variacionDiaPct": 0.6,
+      "variacionSemanaPct": -0.2,
+      "variacionMesPct": -5.4,
+      "variacionAnioPct": -22,
+      "rangoDiaReal": {
+        "minimo": 3223.78,
+        "maximo": 3278.91
+      },
+      "rsi14": 28,
+      "lecturaRsi": "sobreventa",
+      "media50": 3515.32,
+      "media200": 3672.44,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 50.46,
+      "maximo52sem": 4196.02,
+      "minimo52sem": 3216.92,
+      "distanciaAMaximo52semPct": -22.4,
+      "distanciaAMinimo52semPct": 1.3,
+      "soportes": [
+        3247.4
+      ],
+      "resistencias": [
+        3478.96,
+        3504.26,
+        3706.63
+      ],
+      "patronUltimaVela": "vela alcista sin patron destacable"
+    }
   }
 ]
