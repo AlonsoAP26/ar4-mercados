@@ -79,8 +79,8 @@
       "fuente": "Yahoo Finance (GC=F)",
       "fechaUltimaVela": "2026-07-16",
       "precio": 4002.9,
-      "cierreAnterior": 4044.0,
-      "variacionDiaPct": -1.0,
+      "cierreAnterior": 4044,
+      "variacionDiaPct": -1,
       "variacionSemanaPct": -3.1,
       "variacionMesPct": -7.5,
       "variacionAnioPct": 20.2,
@@ -201,7 +201,7 @@
         "minimo": 63848.66,
         "maximo": 64893.33
       },
-      "rsi14": 55.0,
+      "rsi14": 55,
       "lecturaRsi": "neutral",
       "media50": 63919.02,
       "media200": 73397.46,
@@ -212,14 +212,14 @@
       "maximo52sem": 107428.26,
       "minimo52sem": 57747.77,
       "distanciaAMaximo52semPct": -39.8,
-      "distanciaAMinimo52semPct": 12.0,
+      "distanciaAMinimo52semPct": 12,
       "soportes": [
         63062.22,
         62553.19,
         62201.14
       ],
       "resistencias": [
-        65544.0,
+        65544,
         67248.13,
         68657.7
       ],
@@ -310,7 +310,7 @@
       "variacionDiaPct": 0.1,
       "variacionSemanaPct": -0.8,
       "variacionMesPct": 1.3,
-      "variacionAnioPct": -6.0,
+      "variacionAnioPct": -6,
       "rangoDiaReal": {
         "minimo": 17.36,
         "maximo": 17.46
@@ -478,7 +478,7 @@
       "cierreAnterior": 5.0879,
       "variacionDiaPct": 0.3,
       "variacionSemanaPct": -1.2,
-      "variacionMesPct": 0.0,
+      "variacionMesPct": 0,
       "variacionAnioPct": -7.6,
       "rangoDiaReal": {
         "minimo": 5.0705,
@@ -557,7 +557,7 @@
         69.32
       ],
       "resistencias": [
-        99.0,
+        99,
         112.69,
         119.3
       ],
@@ -585,11 +585,11 @@
       "fuente": "Yahoo Finance (^BVSP)",
       "fechaUltimaVela": "2026-07-16",
       "precio": 174552.27,
-      "cierreAnterior": 176011.0,
+      "cierreAnterior": 176011,
       "variacionDiaPct": -0.8,
-      "variacionSemanaPct": 1.0,
+      "variacionSemanaPct": 1,
       "variacionMesPct": 3.6,
-      "variacionAnioPct": 29.0,
+      "variacionAnioPct": 29,
       "rangoDiaReal": {
         "minimo": 173871.39,
         "maximo": 176011.31
@@ -602,19 +602,19 @@
       "posicionVsMedia200": "por encima",
       "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
       "atr14": 2398.94,
-      "maximo52sem": 199355.0,
-      "minimo52sem": 131550.0,
+      "maximo52sem": 199355,
+      "minimo52sem": 131550,
       "distanciaAMaximo52semPct": -12.4,
       "distanciaAMinimo52semPct": 32.7,
       "soportes": [
-        173544.0,
-        169819.0,
+        173544,
+        169819,
         167864.5
       ],
       "resistencias": [
         178350.5,
         186057.5,
-        187334.0
+        187334
       ],
       "patronUltimaVela": "vela bajista sin patron destacable"
     }
@@ -699,8 +699,8 @@
       "cierreAnterior": 100.5,
       "variacionDiaPct": 0.1,
       "variacionSemanaPct": -0.3,
-      "variacionMesPct": 1.0,
-      "variacionAnioPct": 2.0,
+      "variacionMesPct": 1,
+      "variacionAnioPct": 2,
       "rangoDiaReal": {
         "minimo": 100.44,
         "maximo": 100.68
@@ -708,7 +708,7 @@
       "rsi14": 50.3,
       "lecturaRsi": "neutral",
       "media50": 99.89,
-      "media200": 99.0,
+      "media200": 99,
       "posicionVsMedia50": "por encima",
       "posicionVsMedia200": "por encima",
       "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
@@ -758,7 +758,7 @@
         "minimo": 63848.66,
         "maximo": 64893.33
       },
-      "rsi14": 55.0,
+      "rsi14": 55,
       "lecturaRsi": "neutral",
       "media50": 63919.02,
       "media200": 73397.46,
@@ -769,14 +769,14 @@
       "maximo52sem": 107428.26,
       "minimo52sem": 57747.77,
       "distanciaAMaximo52semPct": -39.8,
-      "distanciaAMinimo52semPct": 12.0,
+      "distanciaAMinimo52semPct": 12,
       "soportes": [
         63062.22,
         62553.19,
         62201.14
       ],
       "resistencias": [
-        65544.0,
+        65544,
         67248.13,
         68657.7
       ],
@@ -808,7 +808,7 @@
       "variacionDiaPct": -1.6,
       "variacionSemanaPct": 5.5,
       "variacionMesPct": 20.6,
-      "variacionAnioPct": -43.0,
+      "variacionAnioPct": -43,
       "rangoDiaReal": {
         "minimo": 1869.16,
         "maximo": 1926.41
@@ -868,7 +868,7 @@
         "minimo": 63848.66,
         "maximo": 64893.33
       },
-      "rsi14": 55.0,
+      "rsi14": 55,
       "lecturaRsi": "neutral",
       "media50": 63919.02,
       "media200": 73397.46,
@@ -879,14 +879,14 @@
       "maximo52sem": 107428.26,
       "minimo52sem": 57747.77,
       "distanciaAMaximo52semPct": -39.8,
-      "distanciaAMinimo52semPct": 12.0,
+      "distanciaAMinimo52semPct": 12,
       "soportes": [
         63062.22,
         62553.19,
         62201.14
       ],
       "resistencias": [
-        65544.0,
+        65544,
         67248.13,
         68657.7
       ],
@@ -1187,6 +1187,374 @@
         7620.9
       ],
       "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+    }
+  },
+  {
+    "title": "JPMorgan reporta ganancia récord de USD 21.200 millones y pulveriza el consenso",
+    "excerpt": "El banco más grande de EE.UU. ganó USD 7,70 por acción en el segundo trimestre, muy por encima del consenso, con un impulso clave del trading y una ganancia por acciones de Visa.",
+    "symbol": "NYSE:JPM",
+    "trend": "up",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Ganancia trimestral récord y un consenso pulverizado</h3><p>JPMorgan Chase reportó el martes 14 de julio una ganancia neta de 21.200 millones de dólares en el segundo trimestre de 2026, un 41% más que un año atrás, la mayor utilidad trimestral en la historia del banco. La ganancia por acción llegó a 7,70 dólares, muy por encima del consenso de analistas que rondaba los 5,55 dólares, un excedente de 2,15 dólares o 38,7% según el comparativo de mercado recogido por Investing.com. Los ingresos subieron 28% interanual hasta 57.300 millones de dólares, superando ampliamente las proyecciones de Wall Street, que se ubicaban cerca de 50.610 millones.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Trading, comisiones y una ganancia extraordinaria por Visa</h3><p>El resultado estuvo impulsado por un salto en los ingresos de la división de mercados, que aprovechó un trimestre de alta actividad bursátil, y por una ganancia de 4.600 millones de dólares vinculada a las acciones que el banco mantiene de Visa. Excluyendo partidas significativas, la utilidad por acción fue de 6,14 dólares, también por encima del pronóstico de 5,74 dólares que manejaba el mercado, según Alphastreet. La rentabilidad sobre el capital tangible ordinario se ubicó en 23%, un nivel que la propia entidad describió como señal de alta rentabilidad operativa.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Una reacción de mercado con matices</h3><p>Pese al fuerte beat, la acción no tuvo un festejo unánime: Yahoo Finance reportó una caída de 2,09% en el premarket tras la publicación, un movimiento que contrasta con la lectura de otros medios que destacaron subas posteriores en la sesión. Esa divergencia sugiere que buena parte de las expectativas ya estaba incorporada en el precio tras semanas de expectativa por la temporada de resultados bancarios.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El resto de la banca también sorprende</h3><p>El mismo día, Goldman Sachs y Citigroup también informaron aumentos de beneficios en el segundo trimestre, confirmando que el repunte no fue exclusivo de JPMorgan sino un patrón sectorial ligado a la mayor actividad de trading y banca de inversión en Wall Street durante el trimestre.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Más números detrás del resultado</h3><p>Antes del reporte, el consenso de mercado para JPMorgan proyectaba un rango de EPS de entre 5,50 y 5,59 dólares y un objetivo de ingreso neto por intereses (NII) de 103.000 millones de dólares para todo el año 2026, según estimaciones recogidas por TradingKey previo a la publicación. El resultado final, con EPS reportado de 7,70 dólares, quedó muy por encima incluso del extremo superior de esas proyecciones, marcando uno de los beats más amplios de la banca estadounidense en lo que va del año. Para el resto de la temporada de resultados de julio-agosto, el mercado también seguirá de cerca a las grandes tecnológicas: Apple cotiza a 333,26 dólares con una suba mensual de 12,4% y RSI de 71,4 en zona de sobrecompra, mientras Microsoft se ubica en 401,10 dólares por debajo de su media de 200 ruedas, un contraste que muestra cómo la rotación sectorial dentro del propio S&P 500 sigue siendo desigual.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El resultado de JPMorgan funciona como termómetro del ciclo de crédito y de la actividad de trading en Wall Street, dos variables que la región mira de cerca porque condicionan el apetito de capital hacia activos emergentes. Un banco que gana más por mayor actividad de mercados —no solo por tasas— sugiere que el capital sigue rotando hacia posiciones de riesgo, algo que también se refleja en el desempeño reciente de Apple y MercadoLibre (1.857,42 dólares, +12,8% mensual), ambas con impulso alcista pese a niveles técnicos ya exigidos. Lo que hay que vigilar en las próximas semanas es si el resto de bancos regionales y las tecnológicas confirman ese mismo patrón de sorpresas positivas, o si, como insinuó la reacción mixta de la acción de JPMorgan tras el reporte, el mercado empieza a exigir guidance más ambicioso para seguir premiando a estos nombres. Para inversionistas latinoamericanos con exposición a ETFs financieros de EE.UU. o a bancos locales que replican el ciclo de Wall Street, la lectura es de fondo positivo pero con menor margen de sorpresa hacia adelante.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "Investing.com",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-jpmorgan-chase-tops-q2-2026-forecasts-as-stock-rises-93CH-4791119"
+      },
+      {
+        "name": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-crushes-q2-estimates-record-123820712.html"
+      },
+      {
+        "name": "France24",
+        "url": "https://www.france24.com/es/minuto-a-minuto/20260714-jpmorgan-chase-goldman-sachs-y-citigroup-aumentan-beneficios-en-segundo-trimestre"
+      },
+      {
+        "name": "La Nación",
+        "url": "https://www.lanacion.com.ar/estados-unidos/jpmorgan-chase-y-goldman-sachs-aumentan-beneficios-en-el-segundo-trimestre-de-2026-nid14072026/"
+      }
+    ],
+    "aiSummary": {
+      "que": "JPMorgan reportó ganancia neta récord de USD 21.200 millones y EPS de USD 7,70 en el segundo trimestre, superando ampliamente el consenso de analistas.",
+      "porque": "El beat estuvo impulsado por la división de mercados y una ganancia extraordinaria por acciones de Visa, y confirma un patrón de sorpresas positivas en toda la banca estadounidense (Goldman Sachs, Citigroup).",
+      "activos": [
+        "NYSE:JPM",
+        "NASDAQ:AAPL",
+        "NASDAQ:MSFT"
+      ],
+      "siguiente": "Vigilar si el resto de bancos y tecnológicas sostienen el ritmo de sorpresas positivas o si el mercado empieza a exigir guidance más ambicioso."
+    },
+    "aiScenarios": {
+      "alcista": 45,
+      "lateral": 35,
+      "bajista": 20
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Medio",
+      "lectura": "El beat es contundente pero la reacción mixta del precio sugiere que gran parte ya estaba descontada; el foco pasa a la sostenibilidad del ritmo de trading."
+    },
+    "timeline": [
+      {
+        "cuando": "Hace 2 días",
+        "texto": "JPMorgan reportó resultados del segundo trimestre de 2026 con ganancia neta récord de USD 21.200 millones y EPS de USD 7,70."
+      },
+      {
+        "cuando": "Hace 2 días",
+        "texto": "Goldman Sachs y Citigroup también informaron aumentos de beneficios el mismo día, confirmando un patrón sectorial."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El mercado sigue procesando la reacción mixta a los reportes, con lecturas divergentes entre medios sobre el movimiento de la acción tras la publicación."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué significa que JPMorgan haya batido el consenso de EPS?",
+        "a": "Que la ganancia por acción reportada superó ampliamente lo que en promedio esperaban los analistas de Wall Street, en este caso por un margen inusualmente amplio."
+      },
+      {
+        "q": "¿Por qué importan los resultados de un banco para el resto del mercado?",
+        "a": "Los grandes bancos suelen ser los primeros en reportar cada temporada y sus cifras de trading, crédito y comisiones anticipan el tono general de los resultados corporativos."
+      },
+      {
+        "q": "¿Qué es la rentabilidad sobre el capital tangible (ROE tangible)?",
+        "a": "Es una medida de cuán eficiente es un banco para generar ganancias con el capital que efectivamente le pertenece a sus accionistas, descontando activos intangibles."
+      },
+      {
+        "q": "¿Cómo afecta esto a inversionistas de Latinoamérica?",
+        "a": "Un ciclo de resultados bancarios sólido en EE.UU. suele asociarse a mayor apetito de riesgo global, lo que puede favorecer flujos hacia activos y monedas emergentes, aunque no garantiza que se sostenga."
+      }
+    ],
+    "impactScore": 7,
+    "relatedSymbols": [
+      "NASDAQ:AAPL",
+      "NASDAQ:MSFT",
+      "NYSE:MELI",
+      "NASDAQ:NVDA"
+    ],
+    "category": "Empresas",
+    "heroType": "index",
+    "slug": "jpmorgan-reporta-ganancia-record-de-usd-21200-millones-y-pul-mro31bcg",
+    "author": "AR4 Mercados",
+    "date": "2026-07-16",
+    "sourceName": "Investing.com",
+    "sourceUrl": "https://www.investing.com/news/transcripts/earnings-call-transcript-jpmorgan-chase-tops-q2-2026-forecasts-as-stock-rises-93CH-4791119",
+    "marketPanel": [
+      {
+        "symbol": "NASDAQ:AAPL",
+        "nombre": "Apple (AAPL)",
+        "yahooSymbol": "AAPL",
+        "fuente": "Yahoo Finance (AAPL)",
+        "fechaUltimaVela": "2026-07-16",
+        "precio": 333.26,
+        "cierreAnterior": 327.5,
+        "variacionDiaPct": 1.8,
+        "variacionSemanaPct": 5.4,
+        "variacionMesPct": 12.4,
+        "variacionAnioPct": 59.4,
+        "rangoDiaReal": {
+          "minimo": 326.79,
+          "maximo": 334.68
+        },
+        "rsi14": 71.4,
+        "lecturaRsi": "sobrecompra",
+        "media50": 301.66,
+        "media200": 273.82,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 8.296,
+        "maximo52sem": 334.68,
+        "minimo52sem": 201.5,
+        "distanciaAMaximo52semPct": -0.4,
+        "distanciaAMinimo52semPct": 65.4,
+        "soportes": [
+          305.02,
+          287.38,
+          273.75
+        ],
+        "resistencias": [],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "NASDAQ:MSFT",
+        "nombre": "Microsoft (MSFT)",
+        "yahooSymbol": "MSFT",
+        "fuente": "Yahoo Finance (MSFT)",
+        "fechaUltimaVela": "2026-07-16",
+        "precio": 401.1,
+        "cierreAnterior": 395.63,
+        "variacionDiaPct": 1.4,
+        "variacionSemanaPct": 4.4,
+        "variacionMesPct": 0.3,
+        "variacionAnioPct": -20.7,
+        "rangoDiaReal": {
+          "minimo": 392.05,
+          "maximo": 405.99
+        },
+        "rsi14": 56.2,
+        "lecturaRsi": "neutral",
+        "media50": 401.86,
+        "media200": 439.95,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 12.13,
+        "maximo52sem": 555.45,
+        "minimo52sem": 349.2,
+        "distanciaAMaximo52semPct": -27.8,
+        "distanciaAMinimo52semPct": 14.9,
+        "soportes": [
+          400.88,
+          398.01,
+          394.53
+        ],
+        "resistencias": [
+          407.49,
+          413.05,
+          423.68
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "NASDAQ:NVDA",
+        "nombre": "NVIDIA (NVDA)",
+        "yahooSymbol": "NVDA",
+        "fuente": "Yahoo Finance (NVDA)",
+        "fechaUltimaVela": "2026-07-16",
+        "precio": 207.4,
+        "cierreAnterior": 212.5,
+        "variacionDiaPct": -2.4,
+        "variacionSemanaPct": 2.3,
+        "variacionMesPct": -2.4,
+        "variacionAnioPct": 21.5,
+        "rangoDiaReal": {
+          "minimo": 205.85,
+          "maximo": 211.08
+        },
+        "rsi14": 52.1,
+        "lecturaRsi": "neutral",
+        "media50": 209.79,
+        "media200": 192.29,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 7.33,
+        "maximo52sem": 236.54,
+        "minimo52sem": 164.07,
+        "distanciaAMaximo52semPct": -12.3,
+        "distanciaAMinimo52semPct": 26.4,
+        "soportes": [
+          199.34,
+          197.22,
+          194.74
+        ],
+        "resistencias": [
+          212.71,
+          213.99,
+          216.83
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "NYSE:VALE",
+        "nombre": "Vale (VALE)",
+        "yahooSymbol": "VALE",
+        "fuente": "Yahoo Finance (VALE)",
+        "fechaUltimaVela": "2026-07-16",
+        "precio": 14.22,
+        "cierreAnterior": 14.67,
+        "variacionDiaPct": -3.1,
+        "variacionSemanaPct": 0,
+        "variacionMesPct": -11.1,
+        "variacionAnioPct": 46.7,
+        "rangoDiaReal": {
+          "minimo": 14.15,
+          "maximo": 14.4
+        },
+        "rsi14": 38.7,
+        "lecturaRsi": "neutral",
+        "media50": 15.64,
+        "media200": 14.61,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4131,
+        "maximo52sem": 17.94,
+        "minimo52sem": 9.36,
+        "distanciaAMaximo52semPct": -20.7,
+        "distanciaAMinimo52semPct": 51.9,
+        "soportes": [
+          14,
+          13.94,
+          12.87
+        ],
+        "resistencias": [
+          14.38,
+          15.3,
+          16.36
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "NYSE:PBR",
+        "nombre": "Petrobras (PBR)",
+        "yahooSymbol": "PBR",
+        "fuente": "Yahoo Finance (PBR)",
+        "fechaUltimaVela": "2026-07-16",
+        "precio": 17.47,
+        "cierreAnterior": 17.86,
+        "variacionDiaPct": -2.2,
+        "variacionSemanaPct": 2.6,
+        "variacionMesPct": 0.7,
+        "variacionAnioPct": 39.8,
+        "rangoDiaReal": {
+          "minimo": 17.43,
+          "maximo": 17.9
+        },
+        "rsi14": 50.6,
+        "lecturaRsi": "neutral",
+        "media50": 18.28,
+        "media200": 15.91,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4385,
+        "maximo52sem": 22.24,
+        "minimo52sem": 11.43,
+        "distanciaAMaximo52semPct": -21.4,
+        "distanciaAMinimo52semPct": 52.8,
+        "soportes": [
+          16.46,
+          16.22,
+          15.86
+        ],
+        "resistencias": [
+          18.51,
+          19.2,
+          20.28
+        ],
+        "patronUltimaVela": "vela bajista de cuerpo amplio"
+      },
+      {
+        "symbol": "NYSE:MELI",
+        "nombre": "MercadoLibre (MELI)",
+        "yahooSymbol": "MELI",
+        "fuente": "Yahoo Finance (MELI)",
+        "fechaUltimaVela": "2026-07-16",
+        "precio": 1857.42,
+        "cierreAnterior": 1843.19,
+        "variacionDiaPct": 0.8,
+        "variacionSemanaPct": 2.7,
+        "variacionMesPct": 12.8,
+        "variacionAnioPct": -22.3,
+        "rangoDiaReal": {
+          "minimo": 1840,
+          "maximo": 1883.36
+        },
+        "rsi14": 66.1,
+        "lecturaRsi": "neutral",
+        "media50": 1687.6,
+        "media200": 1914.28,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 59.24,
+        "maximo52sem": 2548.5,
+        "minimo52sem": 1495,
+        "distanciaAMaximo52semPct": -27.1,
+        "distanciaAMinimo52semPct": 24.2,
+        "soportes": [
+          1738,
+          1657.22,
+          1631.18
+        ],
+        "resistencias": [
+          1890,
+          1903,
+          2014.46
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      }
+    ],
+    "marketData": {
+      "symbol": "NYSE:JPM",
+      "nombre": "JPMorgan (JPM)",
+      "yahooSymbol": "JPM",
+      "fuente": "Yahoo Finance (JPM)",
+      "fechaUltimaVela": "2026-07-16",
+      "precio": 343.15,
+      "cierreAnterior": 346.91,
+      "variacionDiaPct": -1.1,
+      "variacionSemanaPct": 2.3,
+      "variacionMesPct": 7.4,
+      "variacionAnioPct": 19.8,
+      "rangoDiaReal": {
+        "minimo": 341.11,
+        "maximo": 349.32
+      },
+      "rsi14": 62.8,
+      "lecturaRsi": "neutral",
+      "media50": 317.58,
+      "media200": 309.64,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 7.7554,
+      "maximo52sem": 351.24,
+      "minimo52sem": 279.1,
+      "distanciaAMaximo52semPct": -2.3,
+      "distanciaAMinimo52semPct": 22.9,
+      "soportes": [
+        330.13,
+        325.01,
+        320.74
+      ],
+      "resistencias": [
+        343.45
+      ],
+      "patronUltimaVela": "envolvente bajista (el cuerpo cubre por completo el de la vela alcista previa)"
     }
   }
 ]
