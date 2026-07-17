@@ -282,6 +282,21 @@
         y saber si tu método <b>sobrevive</b>.
       </p>
 
+      <details class="rl-help">
+        <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> ¿Cómo se usa? Ábrelo si es tu primera vez</summary>
+        <div class="rl-help-body">
+          <p><b>Qué hace:</b> repite tu forma de operar cientos de veces "lanzando los dados", para ver no lo que pasa una vez, sino lo que le pasa a tu cuenta a la larga. Los números salen de <b>tus</b> supuestos, no del mercado.</p>
+          <ol>
+            <li><b>% de aciertos</b> — de cada 100 operaciones, cuántas ganas. Sé honesto: míralo en tu diario o en tu backtest.</li>
+            <li><b>Ratio R:R</b> — cuánto ganas cuando aciertas frente a lo que arriesgas. R:R 2 significa que ganas el doble de lo que arriesgas.</li>
+            <li><b>Riesgo por operación</b> — qué porcentaje de la cuenta pones en juego cada vez.</li>
+            <li>Pulsa <b>Ejecutar simulación</b> y lee el panel "Qué le pasa a tu cuenta".</li>
+          </ol>
+          <p><b>Cómo leer el resultado:</b> si la <b>Expectativa por operación</b> es positiva, tu método tiene ventaja; si es 0 o negativa, pierde por matemática (ningún tamaño de posición lo arregla). La <b>Prob. de perder la mitad</b> te dice cuántas de esas "vidas" se hunden.</p>
+          <p><b>Las curvas de capital</b> de abajo son 45 versiones de tu cuenta: cada línea es una vida distinta con los mismos supuestos. <span style="color:#2ecc71;">Verdes</span> = terminan arriba, <span style="color:#e13a4b;">rojas</span> = terminan abajo. Cuantas más rojas veas, más frágil es el plan.</p>
+        </div>
+      </details>
+
       <div class="rl-pro-banner" id="rlProBanner" hidden></div>
 
       <div class="rl-grid">
@@ -506,7 +521,202 @@
     detectPremium();
   }
 
+  /* ══════════════ PLUS PREMIUM — Probador de Estrategias / EAs ══════════════
+     Pegas los resultados de tu bot, EA de MetaTrader o backtest (la ganancia/
+     pérdida de cada operación) y calcula las métricas REALES de ESE historial:
+     profit factor, expectativa, drawdown, rachas y curva de capital.
+     No ejecuta el EA — analiza los resultados que tú le das. Es honesto y es la
+     contraparte del simulador: aquí son datos reales, no supuestos. */
+  function initEaTester() {
+    const el = $('eaTester');
+    if (!el) return;
+    let isPro = false;
+
+    const SAMPLE = '120\n-50\n85\n-50\n-50\n210\n-50\n95\n-50\n140\n-50\n-50\n180\n70\n-50\n-50\n-50\n260\n90\n-50';
+
+    // Extrae todos los números (con signo y decimales) de un texto pegado.
+    function parseTrades(text) {
+      const m = (text || '').match(/-?\d+(?:[.,]\d+)?/g);
+      if (!m) return [];
+      return m.map((s) => parseFloat(s.replace(',', '.'))).filter((n) => Number.isFinite(n));
+    }
+
+    el.innerHTML = `
+      <div class="section-head" style="margin-bottom:14px;">
+        <h2 class="h2-ic gold" style="font-size:1.3rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4zM4 12h16v8H4z"/><path d="M8 16h4"/></svg>
+          Probador de Estrategias y EAs
+        </h2>
+        <span class="rl-tier-badge rl-tier-pro" id="eaTier">★ PLUS PREMIUM</span>
+      </div>
+      <p style="color:var(--text-mid);font-size:0.9rem;margin-bottom:14px;max-width:80ch;">
+        El simulador de arriba usa <b>supuestos</b>. Esto usa <b>datos reales</b>: pega los resultados de tu robot de MetaTrader,
+        tu EA, tu bot o tu backtest — la ganancia o pérdida de cada operación — y te dice si esa estrategia de verdad tiene ventaja,
+        con las mismas métricas que mira un fondo.
+      </p>
+
+      <details class="rl-help">
+        <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> ¿Cómo se usa?</summary>
+        <div class="rl-help-body">
+          <ol>
+            <li>En MetaTrader abre el <b>Probador de estrategias</b>, corre tu EA y ve a la pestaña de resultados/operaciones.</li>
+            <li>Copia la columna de <b>beneficio</b> de cada operación (los números con + y −). También sirve un backtest de TradingView o tu propio diario.</li>
+            <li>Pégalos abajo, uno por línea o separados por comas. Da igual el formato: el probador saca los números solo.</li>
+            <li>Pulsa <b>Analizar historial</b>.</li>
+          </ol>
+          <p><b>La métrica clave es el Profit Factor:</b> cuánto ganas por cada $1 que pierdes. Por encima de <b>1.5</b> es una estrategia sólida; en <b>1.0</b> estás empatando; por debajo, pierde dinero.</p>
+        </div>
+      </details>
+
+      <div class="ea-pro-banner" id="eaBanner" hidden></div>
+
+      <div class="rl-grid">
+        <div class="rl-panel rl-panel-pro">
+          <h3 class="rl-h">Resultados de tus operaciones</h3>
+          <label class="rl-label" for="eaCapital">Capital inicial (USD)</label>
+          <input class="rl-input" type="number" id="eaCapital" value="1000" min="1" step="100">
+          <div class="ea-lockwrap" id="eaLockWrap">
+            <label class="rl-label" for="eaInput" style="margin-top:12px;">Ganancia/pérdida de cada operación</label>
+            <textarea class="rl-input ea-textarea" id="eaInput" rows="7" placeholder="Pega aquí, ej:&#10;120&#10;-50&#10;85&#10;-50&#10;210">${SAMPLE}</textarea>
+            <div class="ea-lock-overlay" id="eaLockOverlay" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <strong>Probador exclusivo Premium</strong>
+              <span>Analiza tu propio EA, bot o backtest con métricas de nivel profesional. Abajo tienes un ejemplo ya calculado.</span>
+              <a href="membresia.html#subscribeBtn" class="btn btn-gold">Desbloquear</a>
+            </div>
+          </div>
+          <button class="btn btn-gold btn-block" id="eaRun" style="margin-top:14px;">Analizar historial</button>
+          <div class="rl-msg" id="eaMsg"></div>
+        </div>
+
+        <div class="rl-panel rl-panel-out rl-panel-pro-out">
+          <h3 class="rl-h">Veredicto de la estrategia</h3>
+          <div class="rl-out-main">
+            <span class="rl-out-label">Profit Factor</span>
+            <strong id="eaPF">—</strong>
+            <span class="rl-out-sub" id="eaPFsub">—</span>
+          </div>
+          <div class="rl-stats rl-stats-3">
+            <div class="rl-stat"><span>Operaciones</span><strong id="eaN">—</strong></div>
+            <div class="rl-stat"><span>% de aciertos</span><strong id="eaWR">—</strong></div>
+            <div class="rl-stat"><span>Resultado neto</span><strong id="eaNet">—</strong></div>
+            <div class="rl-stat"><span>Expectativa / operación</span><strong id="eaExp">—</strong></div>
+            <div class="rl-stat"><span>Drawdown máximo</span><strong id="eaDD" class="rl-neg">—</strong></div>
+            <div class="rl-stat"><span>Racha perdedora máx.</span><strong id="eaStreak">—</strong></div>
+          </div>
+          <div class="rl-verdict" id="eaVerdict">Pega tus resultados y pulsa "Analizar historial".</div>
+        </div>
+      </div>
+
+      <div class="rl-curves-wrap">
+        <div class="rl-curves-head"><h3 class="rl-h" style="margin:0;">Curva de capital real</h3><span id="eaCurveNote">—</span></div>
+        <div class="rl-curves" id="eaCurve"></div>
+      </div>
+
+      <p class="rl-disclaimer"><b>Resultados pasados no garantizan resultados futuros.</b> Este probador mide lo que ya ocurrió en el historial que pegas; que una estrategia haya funcionado no significa que vaya a repetirse. No es una señal ni una recomendación.</p>
+
+      <div class="rl-cta rl-cta-pro" id="eaCta">
+        <div>
+          <strong>Analiza cualquier EA, bot o estrategia antes de arriesgar dinero real</strong>
+          <span>Exclusivo Premium: profit factor, expectativa, drawdown y curva de capital de tu propio historial. Y Aria te ayuda a interpretarlo.</span>
+        </div>
+        <a href="membresia.html#subscribeBtn" class="btn btn-gold">Actualizar a Premium</a>
+      </div>
+    `;
+
+    const capEl = $('eaCapital'), inputEl = $('eaInput');
+
+    function drawCurve(equity, capital) {
+      const W = 720, H = 220, PAD = 6;
+      let max = Math.max.apply(null, equity), min = Math.min.apply(null, equity);
+      if (max === min) max = min + 1;
+      const n = equity.length - 1;
+      const x = (i) => PAD + (i / Math.max(1, n)) * (W - PAD * 2);
+      const y = (v) => H - PAD - ((v - min) / (max - min)) * (H - PAD * 2);
+      const up = equity[equity.length - 1] >= capital;
+      const d = equity.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+      const area = d + ' L' + x(n).toFixed(1) + ' ' + y(min).toFixed(1) + ' L' + x(0).toFixed(1) + ' ' + y(min).toFixed(1) + ' Z';
+      const col = up ? '46,204,113' : '225,58,75';
+      $('eaCurve').innerHTML =
+        `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Curva de capital del historial">` +
+        `<path d="${area}" fill="rgba(${col},0.12)"/>` +
+        `<line x1="${PAD}" y1="${y(capital).toFixed(1)}" x2="${W - PAD}" y2="${y(capital).toFixed(1)}" stroke="rgba(240,199,94,0.7)" stroke-width="1.2" stroke-dasharray="5 4"/>` +
+        `<path d="${d}" fill="none" stroke="rgb(${col})" stroke-width="1.8"/></svg>`;
+    }
+
+    function analyze() {
+      const capital = parseFloat(capEl.value);
+      const trades = parseTrades(inputEl.value);
+      const msg = $('eaMsg');
+      if (!Number.isFinite(capital) || capital <= 0) { msg.textContent = 'Introduce un capital inicial válido.'; msg.className = 'rl-msg rl-msg-error'; return; }
+      if (trades.length < 2) { msg.textContent = 'Pega al menos 2 resultados de operaciones (números con + y −).'; msg.className = 'rl-msg rl-msg-error'; return; }
+      msg.textContent = ''; msg.className = 'rl-msg';
+
+      let gp = 0, gl = 0, wins = 0, streak = 0, maxStreak = 0;
+      let eq = capital, peak = capital, maxDD = 0;
+      const curve = [eq];
+      trades.forEach((t) => {
+        if (t >= 0) { gp += t; wins++; streak = 0; } else { gl += -t; streak++; if (streak > maxStreak) maxStreak = streak; }
+        eq += t; curve.push(eq);
+        if (eq > peak) peak = eq;
+        const dd = ((peak - eq) / peak) * 100; if (dd > maxDD) maxDD = dd;
+      });
+      const n = trades.length;
+      const net = eq - capital;
+      const pf = gl > 0 ? gp / gl : Infinity;
+      const wr = (wins / n) * 100;
+      const exp = net / n;
+
+      $('eaPF').textContent = gl > 0 ? num(pf, 2) : '∞';
+      $('eaPF').className = pf >= 1 ? 'rl-pos' : 'rl-neg';
+      $('eaPFsub').textContent = gl > 0 ? `Ganas ${money(pf)} por cada $1 que pierdes` : 'No hubo operaciones perdedoras en este historial';
+      $('eaN').textContent = n;
+      $('eaWR').textContent = num(wr, 1) + '%';
+      $('eaNet').textContent = (net >= 0 ? '+' : '') + money(net);
+      $('eaNet').className = net >= 0 ? 'rl-pos' : 'rl-neg';
+      $('eaExp').textContent = (exp >= 0 ? '+' : '') + money(exp);
+      $('eaExp').className = exp >= 0 ? 'rl-pos' : 'rl-neg';
+      $('eaDD').textContent = '-' + num(maxDD, 1) + '%';
+      $('eaStreak').textContent = maxStreak + ' seguidas';
+
+      let cls, txt;
+      if (pf < 1) { cls = 'rl-verdict-bad'; txt = `Profit factor <b>${num(pf, 2)}</b>: por cada dólar que gana, pierde más. Esta estrategia, tal cual, <b>destruye capital</b>. Antes de ponerle dinero real hay que arreglar el método (mejores entradas o mejor R:R), no el tamaño de posición.`; }
+      else if (pf < 1.5) { cls = 'rl-verdict-mid'; txt = `Profit factor <b>${num(pf, 2)}</b>: gana algo más de lo que pierde, pero el margen es fino. Con spread y comisiones reales puede quedar en nada. Ojo con la racha perdedora de <b>${maxStreak}</b> seguidas: ¿la aguantarías sin apagar el bot?`; }
+      else { cls = 'rl-verdict-good'; txt = `Profit factor <b>${num(pf, 2)}</b>: sólido — gana bastante más de lo que pierde. El drawdown máximo fue de <b>-${num(maxDD, 1)}%</b>: ese es el bache que tu EA tuvo que atravesar. Recuerda que este es el pasado; vigílalo en real antes de subir el tamaño.`; }
+      $('eaVerdict').className = 'rl-verdict ' + cls;
+      $('eaVerdict').innerHTML = txt;
+
+      drawCurve(curve, capital);
+      $('eaCurveNote').textContent = `${n} operaciones · de ${money(Math.min.apply(null, curve))} a ${money(Math.max.apply(null, curve))}`;
+    }
+
+    async function detect() {
+      try { if (typeof window.AR4_checkPremium === 'function') isPro = await window.AR4_checkPremium(); } catch (e) { isPro = false; }
+      el.classList.toggle('rl-pro-on', isPro);
+      const banner = $('eaBanner');
+      if (isPro) {
+        $('eaTier').textContent = '★ PREMIUM ACTIVO';
+        banner.hidden = false; banner.className = 'ea-pro-banner ea-pro-banner-on';
+        banner.innerHTML = 'Probador desbloqueado: pega los resultados de tu EA, bot o backtest y analízalos.';
+        $('eaCta').hidden = true;
+      } else {
+        inputEl.readOnly = true;
+        $('eaLockOverlay').hidden = false;
+        $('eaTier').textContent = '★ PREMIUM · ejemplo';
+        banner.hidden = false; banner.className = 'ea-pro-banner';
+        banner.innerHTML = 'Estás viendo un <b>ejemplo ya calculado</b>. Con Premium pegas tu propio historial y lo analizas.';
+      }
+      analyze();
+    }
+
+    capEl.addEventListener('change', analyze);
+    $('eaRun').addEventListener('click', analyze);
+    inputEl.addEventListener('input', function () { if (isPro) analyze(); });
+    detect();
+  }
+
   initFreeLab();
   initDdLab();
   initProLab();
+  initEaTester();
 })();

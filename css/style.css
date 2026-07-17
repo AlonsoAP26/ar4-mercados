@@ -3977,3 +3977,50 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   transition: border-color .15s, transform .12s;
 }
 #journalSection .community-post-card:hover { border-color: rgba(212,175,55,0.28); transform: translateY(-1px); }
+
+/* ===== Bloques "¿Cómo se usa?" ===== */
+.rl-help {
+  border: 1px solid rgba(212,175,55,0.28); border-radius: 12px; margin-bottom: 18px;
+  background: rgba(212,175,55,0.05); overflow: hidden;
+}
+.rl-help > summary {
+  list-style: none; cursor: pointer; padding: 12px 15px; display: flex; align-items: center; gap: 9px;
+  font-size: 0.86rem; font-weight: 700; color: var(--gold-bright); user-select: none;
+}
+.rl-help > summary::-webkit-details-marker { display: none; }
+.rl-help > summary svg { width: 17px; height: 17px; flex-shrink: 0; }
+.rl-help > summary::after { content: "▾"; margin-left: auto; transition: transform .2s; opacity: 0.7; }
+.rl-help[open] > summary::after { transform: rotate(180deg); }
+.rl-help > summary:hover { background: rgba(212,175,55,0.08); }
+.rl-help-body { padding: 2px 16px 16px; font-size: 0.85rem; line-height: 1.6; color: var(--text-mid); }
+.rl-help-body b { color: var(--text-hi); }
+.rl-help-body p { margin-bottom: 9px; }
+.rl-help-body ol { margin: 4px 0 9px; padding-left: 20px; }
+.rl-help-body li { margin-bottom: 6px; }
+.rl-help-body li::marker { color: var(--gold-bright); font-weight: 700; }
+
+/* Precio "en vivo" en la suite */
+.rs-price-live {
+  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.06em; color: #2ecc71;
+  margin-left: 8px; text-transform: uppercase;
+}
+
+/* ===== Probador de Estrategias / EAs ===== */
+.ea-pro-banner {
+  font-size: 0.8rem; line-height: 1.5; color: var(--text-mid); margin-bottom: 16px;
+  border: 1px dashed rgba(212,175,55,0.35); border-radius: 10px; padding: 10px 13px; background: rgba(212,175,55,0.06);
+}
+.ea-pro-banner b { color: var(--gold-bright); }
+.ea-pro-banner-on { border-style: solid; border-color: rgba(46,204,113,0.4); background: rgba(31,158,90,0.1); color: #7fe0a8; }
+.ea-textarea { font-family: var(--mono); resize: vertical; min-height: 120px; line-height: 1.5; }
+.ea-lockwrap { position: relative; }
+.ea-lock-overlay {
+  position: absolute; inset: 22px -6px -6px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 16px;
+  border-radius: 12px; border: 1px solid rgba(212,175,55,0.35);
+  background: linear-gradient(180deg, rgba(12,10,6,0.86), rgba(10,15,28,0.94)); backdrop-filter: blur(3px); color: var(--gold-bright);
+}
+.ea-lock-overlay svg { width: 22px; height: 22px; }
+.ea-lock-overlay strong { font-size: 0.9rem; }
+.ea-lock-overlay span { font-size: 0.76rem; color: var(--text-mid); max-width: 34ch; line-height: 1.45; }
+.ea-lock-overlay .btn { margin-top: 6px; padding: 7px 16px; font-size: 0.78rem; }

@@ -426,8 +426,16 @@
       priceState = d;
       const chg = d.changePct;
       row.innerHTML = `
-        <div class="rs-price-main"><span class="rs-price-val">${fmt(d.price, ins.decimals)}</span><span class="rs-price-chg ${chg >= 0 ? 'up' : 'down'}">${chg != null ? (chg >= 0 ? '▲ ' : '▼ ') + Math.abs(chg).toFixed(2) + '%' : ''}</span></div>
-        <div class="rs-price-meta">Precio de referencia · ${new Date().toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit' })} · el bid/ask real depende de tu broker</div>`;
+        <div class="rs-price-main"><span class="rs-price-val">${fmt(d.price, ins.decimals)}</span><span class="rs-price-chg ${chg >= 0 ? 'up' : 'down'}">${chg != null ? (chg >= 0 ? '▲ ' : '▼ ') + Math.abs(chg).toFixed(2) + '%' : ''}</span><span class="rs-price-live">● en vivo</span></div>
+        <div class="rs-price-meta">Detectado automáticamente · ${new Date().toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit' })} · el precio de entrada se rellena solo; puedes editarlo. El bid/ask real depende de tu broker.</div>`;
+      // Auto-rellena la entrada con el precio de mercado detectado (queda editable).
+      const entryEl = document.getElementById('rsEntry');
+      if (entryEl && !entryEl.value && d && d.price != null) {
+        const p = Number(d.price.toFixed(ins.decimals));
+        entryEl.value = p;
+        state.entry = p;
+        update();
+      }
     } catch (e) {
       priceState = null;
       if (row) row.innerHTML = `<span class="rs-muted">No pudimos cargar el precio de ${ins.id} ahora. Puedes escribir el precio de entrada manualmente.</span>`;
