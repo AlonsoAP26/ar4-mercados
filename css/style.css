@@ -3584,3 +3584,14 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   .chc-actions { width: 100%; }
   .reward-goal { text-align: left; }
 }
+
+/* Gráfico Premium: refinamiento de la lectura escrita por AR4 */
+.pfx-legend-head { align-items: flex-start; }
+.pfx-legend-head > div { display: flex; flex-direction: column; gap: 2px; }
+.pfx-legend-head small { color: var(--text-low); font-size: 0.76rem; font-weight: 500; letter-spacing: 0; }
+.pfx-body { min-width: 0; }
+.pfx-q {
+  display: block; font-style: normal; color: var(--gold-bright);
+  font-size: 0.78rem; font-weight: 600; margin-bottom: 5px;
+}
+.pfx-item p { font-size: 0.81rem; line-height: 1.55; }

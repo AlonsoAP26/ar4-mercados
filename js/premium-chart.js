@@ -1,50 +1,80 @@
 /* AR4 Mercados — Gráfico Premium institucional (compartido).
    Un solo punto de verdad para el gráfico avanzado que se usa en Ideas, Noticias
-   y cualquier análisis futuro: carga estudios de nivel profesional (VWAP, perfil
-   de volumen de rango visible, flujo de dinero, acumulación/distribución) y añade
-   un panel que EXPLICA en simple cómo leer el flujo de órdenes y el volumen.
+   y cualquier análisis futuro.
+
+   Criterio: NADA de indicadores básicos (medias simples/exponenciales, RSI suelto).
+   Solo sistemas avanzados de lectura institucional: Ichimoku, perfil de volumen
+   por rango visible, VWAP, flujo de dinero, acumulación/distribución y fuerza de
+   tendencia (DMI/ADX). El panel de información de TradingView va desactivado:
+   la lectura la escribimos nosotros, en español y en nuestro formato.
    Uso: window.AR4_renderPremiumChart(containerEl, tvSymbol) */
 (function () {
-  // IDs clásicos del embed de TradingView (si alguno no existe, el widget lo ignora sin romper).
+  // Estudios avanzados (IDs del embed de TradingView). Sin medias básicas.
   var ADV_STUDIES = [
-    'MASimple@tv-basicstudies',      // Media 200
-    'MAExp@tv-basicstudies',         // Media exponencial 50
+    'IchimokuCloud@tv-basicstudies', // Sistema Ichimoku completo (nube, Tenkan/Kijun, Chikou)
+    'VbPVisible@tv-volumebyprice',   // Perfil de volumen por rango visible (POC / área de valor)
     'VWAP@tv-basicstudies',          // Precio medio ponderado por volumen (referencia institucional)
-    'Volume@tv-basicstudies',        // Volumen
-    'VbPVisible@tv-volumebyprice',   // Perfil de volumen (rango visible) — dónde se negoció de verdad
     'MoneyFlow@tv-basicstudies',     // Índice de flujo de dinero (presión compradora/vendedora)
-    'ACCD@tv-basicstudies'           // Acumulación / Distribución (manos fuertes)
+    'ACCD@tv-basicstudies',          // Acumulación / Distribución (huella de manos fuertes)
+    'DM@tv-basicstudies'             // Movimiento direccional DMI/ADX (fuerza de la tendencia)
   ];
 
+  // Lectura escrita por AR4: qué es, cómo se lee y qué buscar. Formato propio.
   var LEGEND = [
-    ['Perfil de Volumen (VbP)', 'M3 12h7l2-5 3 9 2-4h4',
-      'La barra horizontal muestra a qué PRECIOS se negoció más volumen. El pico (POC) es el nivel donde más contratos cambiaron de manos: suele funcionar como imán del precio y como zona que las instituciones defienden.'],
-    ['VWAP institucional', 'M3 18c4 0 4-12 8-12s4 12 8 12',
-      'Precio medio ponderado por volumen de la sesión. Es la referencia que usan fondos y algoritmos: por encima del VWAP domina la compra, por debajo domina la venta.'],
-    ['Flujo de dinero (MFI)', 'M12 3v18M7 8l5-5 5 5',
-      'Combina precio y volumen para medir la presión compradora frente a la vendedora. Alto = entra dinero con fuerza; bajo = está saliendo. Es la forma de leer el "order flow" sin mirar orden por orden.'],
-    ['Acumulación / Distribución', 'M4 19h16M7 16V9M12 16V5M17 16v-4',
-      'Revela si las manos fuertes están ACUMULANDO (comprando en silencio) o DISTRIBUYENDO (soltando posición) aunque el precio todavía no se mueva. Suele anticipar el giro.'],
-    ['Medias 50 / 200', 'M3 15c5 0 6-8 10-8s4 5 8 4',
-      'La pendiente y el cruce de las medias marcan la tendencia de fondo; el volumen confirma si el movimiento tiene respaldo real o es una trampa de liquidez.']
+    {
+      t: 'Nube de Ichimoku',
+      d: 'M3 14c4-6 8 2 12-3s4-1 6-2',
+      q: 'Sistema completo, no una media.',
+      p: 'La nube proyecta soporte y resistencia hacia el futuro. Si el precio va POR ENCIMA de la nube el régimen es alcista; por debajo, bajista; dentro, sin dirección (zona de trampa). Cuanto más gruesa es la nube, más difícil es atravesarla. El cruce de las líneas Tenkan y Kijun avisa del cambio de momentum antes que el precio.'
+    },
+    {
+      t: 'Perfil de Volumen (rango visible)',
+      d: 'M3 12h6l2-5 3 9 2-4h5',
+      q: 'Dónde se negoció de verdad.',
+      p: 'Las barras horizontales miden CUÁNTO volumen se cruzó en cada precio, no en cada momento. El pico más largo es el POC (punto de control): el precio justo donde más contratos cambiaron de manos, y actúa como imán. Las zonas delgadas son huecos de liquidez: el precio suele atravesarlas rápido.'
+    },
+    {
+      t: 'VWAP institucional',
+      d: 'M3 18c4 0 4-12 8-12s4 12 8 12',
+      q: 'La referencia de los fondos.',
+      p: 'Precio medio ponderado por volumen. Los algoritmos y las mesas institucionales lo usan para juzgar si están ejecutando caro o barato. Por encima del VWAP, el comprador domina y las caídas suelen buscarlo como soporte; por debajo, manda el vendedor y los rebotes suelen frenar ahí.'
+    },
+    {
+      t: 'Flujo de dinero (MFI)',
+      d: 'M12 3v18M7 8l5-5 5 5',
+      q: 'Order flow sin ver cada orden.',
+      p: 'Pondera cada movimiento por su volumen: mide si el dinero ENTRA o SALE, no solo si el precio sube. Es la forma práctica de leer el flujo de órdenes en un gráfico. La señal más valiosa es la divergencia: precio marcando máximos mientras el flujo cae significa que la subida se está quedando sin dinero detrás.'
+    },
+    {
+      t: 'Acumulación / Distribución',
+      d: 'M4 19h16M7 16V9M12 16V5M17 16v-4',
+      q: 'La huella de las manos fuertes.',
+      p: 'Revela si alguien está construyendo posición en silencio (acumulación) o repartiéndola al mercado (distribución) mientras el precio parece plano. Cuando esta línea sube y el precio no, suele haber compra institucional absorbiendo oferta: el movimiento aún no se ve, pero se está preparando.'
+    },
+    {
+      t: 'DMI / ADX — fuerza de tendencia',
+      d: 'M3 17l5-5 3 3 7-8M14 4h4v4',
+      q: 'Mide la fuerza, no la dirección.',
+      p: 'El ADX no dice si sube o baja: dice si el movimiento tiene convicción. Por debajo de 20 el mercado está en rango y las rupturas suelen fallar; por encima de 25 hay tendencia real y vale seguirla. Las líneas +DI y −DI muestran qué lado (comprador o vendedor) tiene el control.'
+    }
   ];
 
   function legendHTML() {
     var cards = LEGEND.map(function (i) {
       return '' +
         '<div class="pfx-item">' +
-          '<span class="pfx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="' + i[1] + '"/></svg></span>' +
-          '<div><strong>' + i[0] + '</strong><p>' + i[2] + '</p></div>' +
+          '<span class="pfx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="' + i.d + '"/></svg></span>' +
+          '<div class="pfx-body"><strong>' + i.t + '</strong><em class="pfx-q">' + i.q + '</em><p>' + i.p + '</p></div>' +
         '</div>';
     }).join('');
     return '' +
       '<div class="pfx-legend">' +
         '<div class="pfx-legend-head">' +
           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 2"/></svg>' +
-          '<span>Cómo leer este gráfico institucional</span>' +
+          '<div><span>Cómo leer este gráfico</span><small>Lectura de AR4 Mercados — seis sistemas avanzados, explicados en simple</small></div>' +
         '</div>' +
         '<div class="pfx-grid">' + cards + '</div>' +
-        '<p class="pfx-note">Estos indicadores describen el flujo de volumen y la huella de las manos fuertes. No son una señal de compra o venta: te dan el contexto para decidir con criterio.</p>' +
+        '<p class="pfx-note">Estos seis sistemas describen el flujo de volumen y la huella de las manos fuertes: son la lectura que un trader profesional hace antes de arriesgar capital. Ninguno es una señal de compra o venta — te dan el contexto para decidir tú, con criterio.</p>' +
       '</div>';
   }
 
@@ -57,14 +87,16 @@
     s.text = JSON.stringify({
       symbol: symbol,
       width: '100%',
-      height: 520,
+      height: 560,
       interval: '60',
       locale: 'es',
       timezone: 'America/Lima',
       theme: 'dark',
       style: '1',
       withdateranges: true,
-      details: true,
+      details: false,   // sin el panel de perfil/datos de TradingView: la lectura la escribimos nosotros
+      hotlist: false,
+      calendar: false,
       hide_side_toolbar: false,
       allow_symbol_change: false,
       studies: ADV_STUDIES,

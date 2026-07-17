@@ -619,6 +619,14 @@
           <button class="btn btn-crimson" id="adminSetVerifiedBtn">Aplicar</button>
         </div>
         <div class="community-form-msg" id="adminVerifyMsg"></div>
+        <p style="color:var(--text-mid);font-size:0.86rem;margin-top:14px;">Dona puntos a cualquier usuario. Como administrador se otorgan sin descontarse de tu saldo.</p>
+        <div class="community-form-row">
+          <input type="text" id="adminPointsUsername" placeholder="Nombre de usuario">
+          <input type="number" id="adminPointsAmount" placeholder="Puntos" min="1" max="5000">
+          <select id="adminPointsAction"><option value="give">Donar puntos</option><option value="remove">Quitar puntos</option></select>
+          <button class="btn btn-crimson" id="adminGivePointsBtn">Aplicar</button>
+        </div>
+        <div class="community-form-msg" id="adminPointsMsg"></div>
       </div>
     `;
   }
@@ -2767,6 +2775,35 @@
           msgEl.className = 'community-form-msg error';
         } finally {
           verifyBtn.disabled = false;
+        }
+      });
+    }
+
+    // 3ª opción: donar/otorgar puntos a un usuario (no descuenta del administrador).
+    const pointsBtn = document.getElementById('adminGivePointsBtn');
+    if (pointsBtn) {
+      pointsBtn.addEventListener('click', async () => {
+        const msgEl = document.getElementById('adminPointsMsg');
+        const username = document.getElementById('adminPointsUsername').value.trim();
+        const amount = parseInt(document.getElementById('adminPointsAmount').value, 10);
+        const action = document.getElementById('adminPointsAction').value;
+        msgEl.textContent = '';
+        msgEl.className = 'community-form-msg';
+        pointsBtn.disabled = true;
+        try {
+          const data = await callFunction('community-admin-give-points', { username, amount, action });
+          msgEl.textContent = action === 'remove'
+            ? `Listo: le retiraste ${Math.abs(data.delta)} pts a ${data.username}. Ahora tiene ${data.points} pts.`
+            : `Listo: le donaste ${data.delta} pts a ${data.username}. Ahora tiene ${data.points} pts.`;
+          msgEl.className = 'community-form-msg success';
+          document.getElementById('adminPointsUsername').value = '';
+          document.getElementById('adminPointsAmount').value = '';
+          delete profileCache[username];
+        } catch (e) {
+          msgEl.textContent = e.message;
+          msgEl.className = 'community-form-msg error';
+        } finally {
+          pointsBtn.disabled = false;
         }
       });
     }
