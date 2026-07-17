@@ -485,6 +485,17 @@
         ${isEdit ? '<button class="btn btn-outline" id="cpCancel" style="margin-top:14px;margin-left:8px;">Cancelar</button>' : ''}
         <div class="community-form-msg" id="cpMsg"></div>
       </div>
+      ${isEdit ? `
+      <div class="community-form edit-donate">
+        <h3 style="margin-bottom:4px;">🎁 Donar puntos a otro usuario</h3>
+        <p style="color:var(--text-mid);font-size:0.86rem;">Regala parte de tus puntos a cualquier miembro de la comunidad. Tienes <strong>${myProfile.points} pts</strong> disponibles.</p>
+        <div class="community-donate-form" style="margin-top:8px;">
+          <input type="text" id="donateUsername" placeholder="Usuario destinatario" maxlength="24">
+          <input type="number" id="donateAmount" placeholder="Puntos (5-500)" min="5" max="500">
+          <button class="btn btn-gold" id="donateSubmitBtn" type="button">Enviar</button>
+        </div>
+        <div class="community-form-msg" id="donateMsg"></div>
+      </div>` : ''}
     `;
   }
 
@@ -1018,6 +1029,24 @@
     return `<div class="social-links-row-display">${keys.map((k) => `<a href="${SOCIAL_META[k].urlBase}${encodeURIComponent(links[k])}" target="_blank" rel="noopener" title="${k}">${SOCIAL_META[k].icon}</a>`).join('')}</div>`;
   }
 
+  // Barra de progreso refinada hacia la recompensa (500 pts = 1 mes Premium gratis).
+  // Reemplaza al número de puntos suelto: motiva y se siente premium.
+  function rewardProgressHTML(points) {
+    const goal = 500;
+    const pts = Math.max(0, points || 0);
+    const pct = Math.min(100, Math.round((pts / goal) * 100));
+    const reached = pts >= goal;
+    const remaining = Math.max(0, goal - pts);
+    return `
+      <div class="reward-head">
+        <span class="reward-pts">${pts}<small>pts</small></span>
+        <span class="reward-goal">${reached
+          ? '¡Ya puedes canjear 1 mes de Premium gratis! 🎉'
+          : `Te faltan <strong>${remaining} pts</strong> para 1 mes de Premium gratis`}</span>
+      </div>
+      <div class="reward-track"><div class="reward-track-fill${reached ? ' full' : ''}" style="width:${pct}%;"></div></div>`;
+  }
+
   function dashboardShellHTML() {
     const rank = myEffectiveRank();
     const isAdmin = rank === 'administrador';
@@ -1025,24 +1054,25 @@
     const streak = myProfile.streak_days || 0;
     const streakChip = streak > 0 ? `<span class="streak-chip">🔥 ${streak} ${streak === 1 ? 'día' : 'días'}</span>` : '';
     return `
-      <div class="community-header-card">
-        <div class="community-user-chip">
-          ${avatarHTML(myProfile, 'trader-avatar')}
-          <div><h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span> ${streakChip}</h4><span style="color:var(--text-mid);font-size:0.8rem;">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span>${badgesRowHTML(myProfile.badges)}${socialLinksRowHTML(myProfile.social_links)}</div>
+      <div class="community-header-card community-hero-compact">
+        <div class="chc-identity">
+          <div class="community-user-chip">
+            ${avatarHTML(myProfile, 'trader-avatar')}
+            <div class="chc-info">
+              <h4>${escapeHtml(myProfile.username)} ${rankBadgeHTML(rank)} <span class="level-badge">Nv. ${levelFromPoints(myProfile.points)}</span> ${streakChip}</h4>
+              <span class="chc-bio">${escapeHtml(myProfile.bio) || 'Miembro de la comunidad AR4'} ${styleTag}</span>
+              ${badgesRowHTML(myProfile.badges)}${socialLinksRowHTML(myProfile.social_links)}
+              <div class="chc-follow" id="communityFollowCounts"></div>
+            </div>
+          </div>
+          <div class="chc-actions">
+            <a href="perfil.html" class="chc-link chc-link-strong">Ver mi perfil →</a>
+            <button class="chc-link" id="communityEditProfileBtn">Editar</button>
+            <button class="chc-link" id="communityAvatarShopBtn">Cambiar avatar</button>
+            <button class="chc-link" id="communityRedeemBtn">Canjear puntos</button>
+          </div>
         </div>
-        <div class="community-points" id="communityPointsDisplay">${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span></div>
-        <div style="color:var(--text-mid);font-size:0.8rem;margin-bottom:10px;" id="communityFollowCounts"></div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <button class="btn btn-outline" id="communityAvatarShopBtn">Cambiar avatar</button>
-          <button class="btn btn-outline" id="communityEditProfileBtn">Editar perfil</button>
-          <button class="btn btn-outline" id="communityRedeemBtn">Canjear puntos</button>
-          <button class="btn btn-outline" id="communityDonateBtn">🎁 Donar puntos</button>
-        </div>
-        <div class="community-donate-form" id="communityDonateForm" hidden>
-          <input type="text" id="donateUsername" placeholder="Usuario destinatario" maxlength="24">
-          <input type="number" id="donateAmount" placeholder="Puntos (5-500)" min="5" max="500">
-          <button class="btn btn-gold" id="donateSubmitBtn">Enviar</button>
-        </div>
+        <div class="chc-reward" id="communityPointsDisplay">${rewardProgressHTML(myProfile.points)}</div>
       </div>
       <div class="community-form-msg" id="redeemMsg" style="margin-bottom:14px;"></div>
       ${!window.AR4_PREMIUM ? '<button class="btn btn-outline" id="bootstrapAdminBtn" style="font-size:0.72rem;padding:6px 10px;margin-bottom:14px;">🔑 Activar cuenta de administrador + Premium (solo dueño del sitio)</button><div class="community-form-msg" id="bootstrapAdminMsg" style="margin-bottom:14px;"></div>' : ''}
@@ -2532,7 +2562,7 @@
         msgEl.textContent = '¡Publicado! Ganaste 10 puntos.';
         msgEl.className = 'community-form-msg success';
         myProfile.points += 10;
-        document.getElementById('communityPointsDisplay').innerHTML = `${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span>`;
+        document.getElementById('communityPointsDisplay').innerHTML = rewardProgressHTML(myProfile.points);
         loadFeed();
       } catch (e) {
         msgEl.textContent = e.message;
@@ -2551,7 +2581,7 @@
       try {
         const data = await callFunction('community-redeem-points', {});
         myProfile.points = data.remainingPoints;
-        document.getElementById('communityPointsDisplay').innerHTML = `${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span>`;
+        document.getElementById('communityPointsDisplay').innerHTML = rewardProgressHTML(myProfile.points);
         msgEl.textContent = '¡Listo! Activamos tu mes de Premium gratis.';
         msgEl.className = 'community-form-msg success';
       } catch (e) {
@@ -2561,30 +2591,29 @@
     });
   }
 
+  // Donación de puntos, ahora dentro del panel de "Editar perfil" (para todos los usuarios).
   function wireDonateForm() {
-    const toggleBtn = document.getElementById('communityDonateBtn');
-    const form = document.getElementById('communityDonateForm');
     const submitBtn = document.getElementById('donateSubmitBtn');
-    toggleBtn.addEventListener('click', () => { form.hidden = !form.hidden; });
+    if (!submitBtn) return;
     submitBtn.addEventListener('click', async () => {
-      const msgEl = document.getElementById('redeemMsg');
+      const msgEl = document.getElementById('donateMsg');
       const toUsername = document.getElementById('donateUsername').value.trim();
       const amount = parseInt(document.getElementById('donateAmount').value, 10);
-      msgEl.textContent = '';
-      msgEl.className = 'community-form-msg';
+      if (msgEl) { msgEl.textContent = ''; msgEl.className = 'community-form-msg'; }
       submitBtn.disabled = true;
       try {
         const data = await callFunction('community-donate-points', { toUsername, amount });
         myProfile.points = data.points;
-        document.getElementById('communityPointsDisplay').innerHTML = `${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span>`;
-        msgEl.textContent = `¡Listo! Le donaste ${amount} puntos a ${data.recipientUsername}.`;
-        msgEl.className = 'community-form-msg success';
+        const pd = document.getElementById('communityPointsDisplay');
+        if (pd) pd.innerHTML = rewardProgressHTML(myProfile.points);
+        if (msgEl) {
+          msgEl.textContent = `¡Listo! Le donaste ${amount} puntos a ${data.recipientUsername}. Te quedan ${data.points} pts.`;
+          msgEl.className = 'community-form-msg success';
+        }
         document.getElementById('donateUsername').value = '';
         document.getElementById('donateAmount').value = '';
-        form.hidden = true;
       } catch (e) {
-        msgEl.textContent = e.message;
-        msgEl.className = 'community-form-msg error';
+        if (msgEl) { msgEl.textContent = e.message; msgEl.className = 'community-form-msg error'; }
       } finally {
         submitBtn.disabled = false;
       }
@@ -2631,7 +2660,7 @@
             const res = await callFunction('community-claim-mission', { missionKey: btn.dataset.mission });
             myProfile.points = res.points;
             const pointsEl = document.getElementById('communityPointsDisplay');
-            if (pointsEl) pointsEl.innerHTML = `${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span>`;
+            if (pointsEl) pointsEl.innerHTML = rewardProgressHTML(myProfile.points);
             loadMissions();
           } catch (e) {
             alert(e.message);
@@ -2682,7 +2711,7 @@
             const res = await callFunction('community-weekly-challenge', { action: 'claim' });
             myProfile.points += res.reward;
             const pointsEl = document.getElementById('communityPointsDisplay');
-            if (pointsEl) pointsEl.innerHTML = `${myProfile.points} pts<span>500 pts = 1 mes Premium gratis</span>`;
+            if (pointsEl) pointsEl.innerHTML = rewardProgressHTML(myProfile.points);
             loadWeeklyChallenge();
           } catch (e) {
             alert(e.message);
@@ -2992,6 +3021,7 @@
     if (editingProfile) {
       root.innerHTML = profileSetupHTML(true);
       wireProfileForm();
+      wireDonateForm();
       return;
     }
 
@@ -3017,7 +3047,6 @@
     currentRoom = 'forex';
     root.innerHTML = dashboardShellHTML();
     wireRedeemButton();
-    wireDonateForm();
     wireAdminPanel();
     wireDashboardTabs();
     loadNotifUnreadBadge();

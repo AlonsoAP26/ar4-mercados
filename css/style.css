@@ -3547,3 +3547,40 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 @media (max-width: 720px) {
   .pfx-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Comunidad: perfil compacto + progreso hacia recompensa ===== */
+.community-hero-compact { display: flex; flex-direction: column; gap: 16px; }
+.chc-identity { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+.chc-info { min-width: 0; }
+.chc-info h4 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+.chc-bio { display: block; color: var(--text-mid); font-size: 0.84rem; line-height: 1.45; }
+.chc-follow { color: var(--text-low); font-size: 0.76rem; margin-top: 6px; }
+.chc-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; flex-shrink: 0; }
+.chc-link {
+  background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); color: var(--text-mid);
+  font-size: 0.78rem; font-weight: 600; padding: 6px 12px; border-radius: 20px; cursor: pointer;
+  text-decoration: none; transition: border-color .15s, color .15s, background .15s; white-space: nowrap;
+}
+.chc-link:hover { border-color: var(--gold); color: var(--gold-bright); background: rgba(212,175,55,0.08); }
+.chc-link-strong { border-color: rgba(212,175,55,0.45); color: var(--gold-bright); background: rgba(212,175,55,0.08); }
+
+/* Barra de progreso hacia la recompensa (refinada) */
+.chc-reward {
+  border: 1px solid rgba(212,175,55,0.22); border-radius: 14px; padding: 14px 16px;
+  background: linear-gradient(180deg, rgba(240,199,94,0.06), rgba(17,26,46,0.35));
+}
+.reward-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
+.reward-pts { font-family: var(--mono); font-size: 1.7rem; font-weight: 700; color: var(--gold-bright); line-height: 1; }
+.reward-pts small { font-size: 0.72rem; color: var(--text-low); margin-left: 4px; font-weight: 500; }
+.reward-goal { color: var(--text-mid); font-size: 0.82rem; text-align: right; }
+.reward-goal strong { color: var(--gold-bright); }
+.reward-track { height: 9px; background: rgba(255,255,255,0.07); border-radius: 6px; overflow: hidden; }
+.reward-track-fill { height: 100%; border-radius: 6px; background: linear-gradient(90deg, var(--gold), var(--gold-bright)); transition: width .5s ease; box-shadow: 0 0 10px rgba(240,199,94,0.35); }
+.reward-track-fill.full { background: linear-gradient(90deg, #1f9e5a, #2ecc71); box-shadow: 0 0 10px rgba(46,204,113,0.4); }
+
+/* Donar puntos dentro de Editar perfil */
+.edit-donate { margin-top: 16px; }
+@media (max-width: 620px) {
+  .chc-actions { width: 100%; }
+  .reward-goal { text-align: left; }
+}
