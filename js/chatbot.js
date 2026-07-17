@@ -203,8 +203,9 @@
     sendBtn.disabled = true;
 
     const thinking = document.createElement('div');
-    thinking.className = 'chat-msg bot';
-    thinking.textContent = 'Escribiendo...';
+    thinking.className = 'chat-msg bot' + (premium ? ' chat-msg-thinking' : '');
+    // En Premium el modelo razona antes de responder: el texto refleja esa espera.
+    thinking.textContent = premium ? 'Analizando tu consulta a fondo…' : 'Escribiendo...';
     messagesEl.appendChild(thinking);
     messagesEl.scrollTop = messagesEl.scrollHeight;
 
@@ -230,6 +231,7 @@
       addMessage(data.reply, 'bot');
       history.push({ role: 'assistant', content: data.reply });
       if (!premium) registerMessageUsed();
+      else saveHistory();
       if (voiceEnabled) speakText(data.reply);
     } catch (e) {
       thinking.remove();
@@ -246,6 +248,90 @@
   });
 
   addMessage('Soy Aria, la asistente de inteligencia artificial de AR4 Mercados. Estoy aquí para ayudarte a operar con más criterio y menos impulso.\n\nPuedo apoyarte en:\n• Gestión de riesgo y cálculo del tamaño de posición\n• Disciplina y control emocional durante la operativa\n• Interpretar una noticia o un análisis del sitio\n• Elegir el broker adecuado según tu perfil\n\nTrabajo con un principio innegociable: te ofrezco contexto, datos y criterios, nunca una señal de compra o venta. La decisión, y su riesgo, siempre son tuyos.\n\n¿En qué te gustaría que empecemos?', 'bot');
+
+  /* ── Modo Premium ──────────────────────────────────────────────────────────
+     Para los usuarios Premium el chat cambia de verdad, no solo de color:
+     - Modelo más capaz y respuestas más profundas (se decide en el backend).
+     - Sin límite diario de mensajes.
+     - Accesos rápidos a las capacidades exclusivas (tamaño de posición, revisión
+       de estrategia, plan de estudio...).
+     - La conversación se guarda y sigue ahí al volver a la página.
+     Para el usuario gratuito, el diseño se queda exactamente como está. */
+
+  const HISTORY_KEY = 'ar4ChatHistoryPremium';
+  const HISTORY_MAX = 40;
+
+  function saveHistory() {
+    try {
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(-HISTORY_MAX)));
+    } catch (e) { /* si el almacenamiento falla, el chat sigue funcionando */ }
+  }
+
+  function restoreHistory() {
+    let saved;
+    try {
+      saved = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+    } catch (e) { return; }
+    if (!Array.isArray(saved) || !saved.length) return;
+    messagesEl.innerHTML = '';
+    saved.forEach((m) => {
+      if (m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string') {
+        addMessage(m.content, m.role === 'user' ? 'user' : 'bot');
+        history.push({ role: m.role, content: m.content });
+      }
+    });
+    const note = document.createElement('div');
+    note.className = 'chat-restored-note';
+    note.textContent = 'Retomamos tu conversación anterior';
+    messagesEl.insertBefore(note, messagesEl.firstChild);
+  }
+
+  // Cada atajo corresponde a una capacidad real que el backend habilita en Premium.
+  const PREMIUM_PROMPTS = [
+    { label: 'Tamaño de posición', text: 'Ayúdame a calcular mi tamaño de posición. Mi capital es de $____, quiero arriesgar el 1% por operación y mi stop loss está a ____ de distancia de la entrada.' },
+    { label: 'Revisar mi estrategia', text: 'Quiero que revises mi estrategia y detectes errores recurrentes en mi proceso. Te la describo: ' },
+    { label: 'Interpretar un análisis', text: 'Ayúdame a interpretar este análisis y qué significan realmente sus indicadores: ' },
+    { label: 'Plan de estudio', text: 'Créame un plan de estudio ordenado para avanzar en trading. Mi nivel actual es: ' },
+    { label: 'Planificar mi sesión', text: 'Ayúdame a planificar mi sesión de trading de hoy: qué vigilar, qué evitar y qué reglas de riesgo fijarme.' }
+  ];
+
+  const ICON_CROWN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l4.5 3.5L12 4l4.5 6.5L21 7l-1.8 11H4.8L3 7z"/></svg>';
+
+  async function applyPremiumMode() {
+    let premium = false;
+    try { premium = await isPremiumUser(); } catch (e) { premium = false; }
+    if (!premium) return;
+
+    panel.classList.add('chat-premium');
+    launcher.classList.add('chat-launcher-premium');
+
+    const titleEl = panel.querySelector('.chat-header-title');
+    if (titleEl && !titleEl.querySelector('.chat-premium-badge')) {
+      titleEl.insertAdjacentHTML('beforeend', `<span class="chat-premium-badge">${ICON_CROWN}Premium</span>`);
+    }
+    const subEl = panel.querySelector('.chat-header-sub');
+    if (subEl) subEl.textContent = 'Modo Premium · mensajes ilimitados';
+
+    const quick = panel.querySelector('.chat-quicklinks');
+    if (quick && !panel.querySelector('.chat-premium-prompts')) {
+      const wrap = document.createElement('div');
+      wrap.className = 'chat-premium-prompts';
+      wrap.innerHTML =
+        '<span class="chat-premium-prompts-label">Exclusivo Premium</span>' +
+        PREMIUM_PROMPTS.map((p, i) => `<button type="button" class="chat-prompt-chip" data-i="${i}">${p.label}</button>`).join('');
+      quick.insertAdjacentElement('afterend', wrap);
+      wrap.querySelectorAll('.chat-prompt-chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          inputEl.value = PREMIUM_PROMPTS[parseInt(btn.dataset.i, 10)].text;
+          inputEl.focus();
+        });
+      });
+    }
+
+    restoreHistory();
+  }
+
+  applyPremiumMode();
 
   window.AR4_askAriaAbout = function (question, contextStr) {
     hideGreeting();

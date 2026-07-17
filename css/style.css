@@ -3595,3 +3595,100 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   font-size: 0.78rem; font-weight: 600; margin-bottom: 5px;
 }
 .pfx-item p { font-size: 0.81rem; line-height: 1.55; }
+
+/* ===== Chat de Aria — MODO PREMIUM (dorado, exclusivo) ===================
+   Solo se aplica a suscriptores Premium (clase .chat-premium). El diseño del
+   chat gratuito queda intacto. */
+.chat-premium {
+  border-color: rgba(212,175,55,0.55);
+  background:
+    radial-gradient(120% 80% at 50% -10%, rgba(240,199,94,0.14), transparent 62%),
+    linear-gradient(180deg, #14110b 0%, #0b0e18 55%, #0a0f1c 100%);
+  box-shadow:
+    0 0 0 1px rgba(240,199,94,0.18) inset,
+    0 30px 90px -12px rgba(0,0,0,0.75),
+    0 0 40px -8px rgba(212,175,55,0.28);
+}
+.chat-premium .chat-header {
+  background: linear-gradient(120deg, #2a1e08 0%, #3d2c0c 50%, #2a1e08 100%);
+  border-bottom-color: rgba(240,199,94,0.35);
+}
+.chat-premium .chat-header::after {
+  background: linear-gradient(90deg, transparent, rgba(240,199,94,0.9), transparent);
+}
+.chat-premium .chat-header-avatar {
+  background: linear-gradient(135deg, #fbe9b0, #d4af37);
+  box-shadow: 0 4px 18px rgba(240,199,94,0.45);
+}
+.chat-premium .chat-header-sub { color: rgba(240,199,94,0.85); }
+
+/* Distintivo Premium en la cabecera */
+.chat-premium-badge {
+  display: inline-flex; align-items: center; gap: 4px; margin-left: 8px;
+  font-size: 0.6rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #2a1e08; background: linear-gradient(135deg, #fbe9b0, #e0b93f);
+  border-radius: 20px; padding: 3px 9px; vertical-align: middle;
+  box-shadow: 0 2px 8px rgba(240,199,94,0.4);
+}
+.chat-premium-badge svg { width: 11px; height: 11px; }
+
+/* Atajos exclusivos */
+.chat-premium-prompts {
+  display: flex; flex-wrap: wrap; gap: 7px; align-items: center;
+  padding: 10px 14px; border-bottom: 1px solid rgba(240,199,94,0.16);
+  background: linear-gradient(180deg, rgba(240,199,94,0.07), transparent);
+}
+.chat-premium-prompts-label {
+  width: 100%; font-size: 0.58rem; font-weight: 800; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold-bright); opacity: 0.85; margin-bottom: 1px;
+}
+.chat-prompt-chip {
+  font-size: 0.71rem; font-weight: 600; color: var(--gold-bright);
+  background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.42);
+  border-radius: 20px; padding: 5px 11px; cursor: pointer; white-space: nowrap;
+  transition: background .15s, transform .12s, box-shadow .15s;
+}
+.chat-prompt-chip:hover {
+  background: rgba(212,175,55,0.22); transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(212,175,55,0.28);
+}
+
+/* Burbujas y entrada en dorado */
+.chat-premium .chat-msg.bot {
+  background: linear-gradient(180deg, rgba(42,34,16,0.92), rgba(22,20,14,0.92));
+  border-color: rgba(240,199,94,0.2);
+}
+.chat-premium .chat-input-row {
+  border-top-color: rgba(240,199,94,0.22);
+  background: linear-gradient(180deg, transparent, rgba(240,199,94,0.06));
+}
+.chat-premium .chat-input-row input:focus {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 0 3px rgba(212,175,55,0.22);
+}
+.chat-premium .chat-messages::-webkit-scrollbar-thumb { background: rgba(240,199,94,0.45); }
+
+/* "Analizando…" mientras el modelo razona */
+.chat-msg-thinking {
+  background: linear-gradient(90deg, rgba(42,34,16,0.9), rgba(70,56,20,0.9), rgba(42,34,16,0.9));
+  background-size: 200% 100%; animation: chatThinkShimmer 1.6s ease-in-out infinite;
+  color: var(--gold-bright); font-style: italic;
+}
+@keyframes chatThinkShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Aviso de conversación recuperada */
+.chat-restored-note {
+  align-self: center; font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-low); border: 1px dashed rgba(240,199,94,0.3);
+  border-radius: 20px; padding: 3px 12px; margin-bottom: 4px;
+}
+
+/* Lanzador dorado */
+.chat-launcher-premium { box-shadow: 0 10px 34px -4px rgba(212,175,55,0.65); }
+
+@media (prefers-reduced-motion: reduce) {
+  .chat-msg-thinking { animation: none; }
+}

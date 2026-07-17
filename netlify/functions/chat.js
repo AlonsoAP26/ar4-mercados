@@ -61,11 +61,18 @@ exports.handler = async (event, context) => {
     };
   }
 
+  const user = context && context.clientContext && context.clientContext.user;
+  const isPremium = !!(user && user.app_metadata && user.app_metadata.premium);
+
+  // El Premium no es solo un prompt más largo: usa un modelo más capaz, respuestas
+  // más extensas y recuerda el doble de conversación. Así el usuario nota la diferencia.
+  const HISTORY_TURNS = isPremium ? 20 : 10;
+
   let messages;
   let postContext;
   try {
     const body = JSON.parse(event.body || '{}');
-    messages = Array.isArray(body.messages) ? body.messages.slice(-10) : [];
+    messages = Array.isArray(body.messages) ? body.messages.slice(-HISTORY_TURNS) : [];
     postContext = typeof body.context === 'string' ? body.context.slice(0, 1500) : null;
   } catch (e) {
     return { statusCode: 400, body: JSON.stringify({ error: 'JSON inválido' }) };
@@ -75,11 +82,22 @@ exports.handler = async (event, context) => {
     return { statusCode: 400, body: JSON.stringify({ error: 'Falta el mensaje' }) };
   }
 
-  const user = context && context.clientContext && context.clientContext.user;
-  const isPremium = !!(user && user.app_metadata && user.app_metadata.premium);
   let systemPrompt = SYSTEM_PROMPT_BASE + (isPremium ? SYSTEM_PROMPT_PREMIUM_ADDENDUM : '');
   if (postContext) {
     systemPrompt += `\n\nCONTEXTO DE LA PUBLICACIÓN QUE EL USUARIO ESTÁ CONSULTANDO (úsalo para responder sobre esto específicamente si es relevante a su primer mensaje, no lo repitas completo):\n${postContext}`;
+  }
+
+  // Premium: modelo más capaz + razonamiento adaptativo (cálculos de riesgo,
+  // revisión de estrategia) y respuestas más largas. Gratuito: rápido y económico.
+  const payload = {
+    model: isPremium ? 'claude-opus-4-8' : 'claude-haiku-4-5',
+    max_tokens: isPremium ? 4000 : 500,
+    system: systemPrompt,
+    messages: messages.map(m => ({ role: m.role, content: m.content }))
+  };
+  if (isPremium) {
+    // En Opus 4.8 el razonamiento adaptativo debe pedirse explícitamente.
+    payload.thinking = { type: 'adaptive' };
   }
 
   try {
@@ -90,12 +108,7 @@ exports.handler = async (event, context) => {
         'x-api-key': apiKey,
         'anthropic-version': '2023-06-01'
       },
-      body: JSON.stringify({
-        model: 'claude-haiku-4-5',
-        max_tokens: 500,
-        system: systemPrompt,
-        messages: messages.map(m => ({ role: m.role, content: m.content }))
-      })
+      body: JSON.stringify(payload)
     });
 
     if (!res.ok) {
@@ -104,13 +117,28 @@ exports.handler = async (event, context) => {
     }
 
     const data = await res.json();
+
+    if (data.stop_reason === 'refusal') {
+      return {
+        statusCode: 200,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          reply: 'No puedo ayudarte con esa consulta en particular. ¿Te sirve si lo enfocamos desde la gestión de riesgo o la parte educativa?',
+          premium: isPremium
+        })
+      };
+    }
+
+    // Con razonamiento adaptativo la respuesta trae bloques "thinking" antes del texto.
     const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
-    const reply = textBlock ? textBlock.text : 'No pude generar una respuesta, intenta de nuevo.';
+    const reply = textBlock && textBlock.text
+      ? textBlock.text
+      : 'No pude generar una respuesta, intenta de nuevo.';
 
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ reply })
+      body: JSON.stringify({ reply, premium: isPremium })
     };
   } catch (e) {
     return { statusCode: 500, body: JSON.stringify({ error: 'Error interno', detail: String(e) }) };
