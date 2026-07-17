@@ -112,12 +112,23 @@
     const menu = document.createElement('div');
     menu.id = 'navProfileMenu';
     menu.className = 'nav-profile-menu';
+    const navGrad2 = avGrad(username);
+    const headAvatar = profile && profile.avatar_url
+      ? `<img class="nav-pm-avatar" src="${escapeHtmlLocal(profile.avatar_url)}" alt="">`
+      : `<span class="nav-pm-avatar avatar-generated" style="background:${navGrad2};"><img src="${avGen(username)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span class="avatar-fallback" style="background:${navGrad2};">${escapeHtmlLocal(String(username).charAt(0).toUpperCase())}</span></span>`;
+    const icCommunity = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M16 3.5a3 3 0 0 1 0 5.8"/><path d="M18 14a6 6 0 0 1 3 5"/></svg>';
+    const icProfile = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>';
+    const icMember = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.2l1-5.8L3.5 9.2l5.9-.9z"/></svg>';
+    const icLogout = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4"/><path d="M10 17l-5-5 5-5M15 12H5"/></svg>';
     menu.innerHTML = `
-      <div class="nav-profile-menu-head">${escapeHtmlLocal(username)}<span>${escapeHtmlLocal(user.email || '')}</span></div>
-      <a href="comunidad.html">🏠 Ir a la comunidad</a>
-      ${profile && profile.username ? `<a href="perfil.html?u=${encodeURIComponent(profile.username)}">👤 Ver mi perfil</a>` : ''}
-      <a href="membresia.html">★ Mi membresía</a>
-      <button type="button" id="navLogoutBtn">🚪 Cerrar sesión</button>
+      <div class="nav-profile-menu-head">
+        ${headAvatar}
+        <div class="nav-pm-id"><strong>${escapeHtmlLocal(username)}</strong><span>${escapeHtmlLocal(user.email || '')}</span></div>
+      </div>
+      <a href="comunidad.html">${icCommunity}<span>Ir a la comunidad</span></a>
+      ${profile && profile.username ? `<a href="perfil.html?u=${encodeURIComponent(profile.username)}">${icProfile}<span>Ver mi perfil</span></a>` : ''}
+      <a href="membresia.html">${icMember}<span>Mi membresía</span></a>
+      <button type="button" id="navLogoutBtn" class="nav-pm-logout">${icLogout}<span>Cerrar sesión</span></button>
     `;
     const rect = authBtn.getBoundingClientRect();
     menu.style.top = (rect.bottom + window.scrollY + 8) + 'px';

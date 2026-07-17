@@ -2835,19 +2835,35 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 
 /* Menú desplegable del perfil (nav) */
 .nav-profile-menu {
-  position: absolute; z-index: 200; min-width: 220px;
-  background: var(--bg-1); border: 1px solid var(--gold); border-radius: 10px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5); overflow: hidden; padding: 6px;
+  position: absolute; z-index: 200; min-width: 248px;
+  background: var(--bg-1); border: 1px solid var(--card-border); border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.55); overflow: hidden; padding: 7px;
+  animation: nav-pm-in 0.16s ease;
 }
-.nav-profile-menu-head { padding: 10px 12px 12px; border-bottom: 1px solid var(--card-border); margin-bottom: 6px; font-weight: 700; color: var(--text-hi); font-size: 0.9rem; }
-.nav-profile-menu-head span { display: block; font-weight: 400; color: var(--text-low); font-size: 0.74rem; margin-top: 2px; font-family: var(--mono); overflow: hidden; text-overflow: ellipsis; }
+@keyframes nav-pm-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+.nav-profile-menu-head {
+  display: flex; align-items: center; gap: 11px; padding: 12px 12px 14px;
+  margin: -7px -7px 7px; border-bottom: 1px solid var(--card-border);
+  background: linear-gradient(120deg, rgba(212,175,55,0.12), transparent 70%);
+}
+.nav-pm-avatar {
+  width: 42px; height: 42px; border-radius: 50%; flex-shrink: 0; overflow: hidden;
+  box-shadow: 0 0 0 2px var(--gold); display: inline-flex; align-items: center; justify-content: center;
+}
+.nav-pm-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.nav-pm-id { min-width: 0; }
+.nav-pm-id strong { display: block; color: var(--text-hi); font-size: 0.92rem; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nav-pm-id span { display: block; color: var(--text-low); font-size: 0.72rem; margin-top: 1px; font-family: var(--mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .nav-profile-menu a, .nav-profile-menu button {
-  display: block; width: 100%; text-align: left; background: none; border: none;
-  color: var(--text-mid); font-size: 0.88rem; padding: 10px 12px; border-radius: 7px; cursor: pointer; font-family: inherit;
+  display: flex; align-items: center; gap: 11px; width: 100%; text-align: left; background: none; border: none;
+  color: var(--text-mid); font-size: 0.88rem; font-weight: 500; padding: 10px 12px; border-radius: 9px;
+  cursor: pointer; font-family: inherit; transition: background 0.14s, color 0.14s;
 }
-.nav-profile-menu a:hover, .nav-profile-menu button:hover { background: rgba(255,255,255,0.05); color: var(--text-hi); }
-.nav-profile-menu #navLogoutBtn { color: var(--crimson-bright); margin-top: 4px; border-top: 1px solid var(--card-border); border-radius: 0 0 7px 7px; }
-.nav-profile-menu #navLogoutBtn:hover { background: rgba(225,58,75,0.1); }
+.nav-profile-menu a svg, .nav-profile-menu button svg { width: 17px; height: 17px; flex-shrink: 0; color: var(--gold-bright, #f0c75e); }
+.nav-profile-menu a:hover, .nav-profile-menu button:hover { background: rgba(212,175,55,0.1); color: var(--text-hi); }
+.nav-profile-menu .nav-pm-logout { color: var(--crimson-bright); margin-top: 5px; border-top: 1px solid var(--card-border); border-radius: 0; padding-top: 12px; }
+.nav-profile-menu .nav-pm-logout svg { color: var(--crimson-bright); }
+.nav-profile-menu .nav-pm-logout:hover { background: rgba(225,58,75,0.1); color: var(--crimson-bright); }
 
 /* Modal persuasivo de registro */
 .join-benefits-overlay {
