@@ -47,11 +47,39 @@
   const CURRENCIES = ['USD', 'EUR', 'PEN', 'MXN', 'CLP', 'COP', 'ARS', 'BRL'];
   const CURRENCY_YAHOO = { EUR: 'EURUSD=X', PEN: 'USDPEN=X', MXN: 'USDMXN=X', CLP: 'USDCLP=X', COP: 'USDCOP=X', ARS: 'USDARS=X', BRL: 'USDBRL=X' };
 
+  // Iconos SVG monocromáticos (trazo dorado por CSS). Sustituyen a los emojis
+  // para dar una estética seria y profesional coherente en toda la suite.
+  const SVG = {
+    bolt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>',
+    sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    wave: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/></svg>',
+    shield: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>',
+    up: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>',
+    down: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>',
+    target: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>',
+    play: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4l14 8-14 8z" fill="currentColor" stroke="none"/></svg>',
+    stop: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>',
+    clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+    cal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>',
+    ban: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg>',
+    warn: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 9v5M12 17h.01"/></svg>',
+    help: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.7-2.5 2-2.5 3.5M12 17h.01"/></svg>'
+  };
+  // Glifo por categoría de instrumento (reemplaza banderas/emojis).
+  const CAT_SVG = {
+    Forex: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg>',
+    'Materias primas': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 5-3 2-3-2z"/><path d="M5 10l7 4 7-4M5 15l7 4 7-4"/></svg>',
+    'Índices': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M9 20V6M14 20v-8M19 20V4"/></svg>',
+    Cripto: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8h4.5a2.5 2.5 0 0 1 0 5H9zM9 13h5a2.5 2.5 0 0 1 0 5H9zM9 6v12M11 5v2M11 17v2"/></svg>',
+    Acciones: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6l7-3v18M11 21V9l7 3v9M3 21h18M8 8v0M8 12v0M8 16v0"/></svg>'
+  };
+  function insGlyph(ins) { return `<span class="rs-glyph">${CAT_SVG[ins.cat] || CAT_SVG.Forex}</span>`; }
+
   const TEMPLATES = {
-    scalping: { label: '⚡ Scalping', risk: 0.5, slPips: 10, rr: 1.5 },
-    day: { label: '📅 Day Trading', risk: 1, slPips: 30, rr: 2 },
-    swing: { label: '📈 Swing', risk: 2, slPips: 120, rr: 3 },
-    prop: { label: '🏦 Prop Firm', risk: 0.5, slPips: 40, rr: 2 }
+    scalping: { icon: SVG.bolt, label: 'Scalping', desc: 'Operaciones muy cortas · stop ajustado', risk: 0.5, slPips: 10, rr: 1.5 },
+    day: { icon: SVG.sun, label: 'Day Trading', desc: 'Abrir y cerrar en el día', risk: 1, slPips: 30, rr: 2 },
+    swing: { icon: SVG.wave, label: 'Swing', desc: 'Operaciones de días a semanas', risk: 2, slPips: 120, rr: 3 },
+    prop: { icon: SVG.shield, label: 'Prop Firm', desc: 'Riesgo bajo para pasar el reto', risk: 0.5, slPips: 40, rr: 2 }
   };
 
   const PROP_FIRMS = {
@@ -177,10 +205,20 @@
     return `
       <div class="rs-dashboard" id="rsDashboard"></div>
 
+      <div class="rs-howto">
+        <div class="rs-howto-head">${SVG.help}<strong>¿Cómo se usa esta suite?</strong></div>
+        <ol class="rs-howto-steps">
+          <li><b>1.</b> Busca tu mercado (EUR, oro, BTC, Nasdaq, Apple…). El precio se detecta solo.</li>
+          <li><b>2.</b> Escribe tu <b>capital</b> y el <b>% que arriesgas</b> por operación (ideal 1–2%).</li>
+          <li><b>3.</b> Elige dirección y coloca <b>entrada, stop y objetivo</b> (o usa una plantilla).</li>
+          <li><b>4.</b> La suite calcula tu <b>tamaño de posición</b> exacto para no pasarte de riesgo.</li>
+        </ol>
+      </div>
+
       <div class="rs-grid">
         <div class="rs-left">
           <div class="rs-panel">
-            <label class="rs-lbl">Selecciona el mercado</label>
+            <label class="rs-lbl">1 · Selecciona el mercado</label>
             <div class="rs-search-wrap">
               <input type="text" id="rsSearch" class="rs-search" placeholder="Escribe: EUR, oro, BTC, Nasdaq, Apple..." autocomplete="off">
               <div class="rs-suggestions" id="rsSuggestions" hidden></div>
@@ -194,8 +232,10 @@
 
           <div class="rs-panel">
             <div class="rs-templates">
-              <span class="rs-lbl" style="margin:0;">Plantillas rápidas</span>
-              ${Object.keys(TEMPLATES).map((k) => `<button class="rs-tpl" data-tpl="${k}">${TEMPLATES[k].label}</button>`).join('')}
+              <span class="rs-lbl" style="margin:0;">2 · Plantillas rápidas <span class="rs-lbl-hint">— rellenan riesgo, stop y objetivo por ti</span></span>
+              <div class="rs-tpl-grid">
+                ${Object.keys(TEMPLATES).map((k) => `<button class="rs-tpl" data-tpl="${k}"><span class="rs-tpl-ic">${TEMPLATES[k].icon}</span><span class="rs-tpl-txt"><strong>${TEMPLATES[k].label}</strong><em>${TEMPLATES[k].desc}</em></span></button>`).join('')}
+              </div>
             </div>
 
             <div class="rs-fields">
@@ -213,8 +253,8 @@
               <div class="rs-field">
                 <label>Dirección</label>
                 <div class="rs-dir">
-                  <button data-dir="long" class="${state.direction === 'long' ? 'active' : ''}">▲ Compra</button>
-                  <button data-dir="short" class="${state.direction === 'short' ? 'active' : ''}">▼ Venta</button>
+                  <button data-dir="long" class="${state.direction === 'long' ? 'active' : ''}"><span class="rs-dir-ic">${SVG.up}</span> Compra</button>
+                  <button data-dir="short" class="${state.direction === 'short' ? 'active' : ''}"><span class="rs-dir-ic">${SVG.down}</span> Venta</button>
                 </div>
               </div>
               <div class="rs-field rs-field-2">
@@ -276,7 +316,7 @@
     const el = document.getElementById('rsSelected');
     if (!el) return;
     el.innerHTML = `
-      <div class="rs-ins-head"><span class="rs-ins-icon">${ins.icon}</span><div><strong>${ins.id}</strong><span>${esc(ins.name)}</span></div><span class="rs-cat-badge">${ins.cat}</span></div>
+      <div class="rs-ins-head"><span class="rs-ins-icon">${insGlyph(ins)}</span><div><strong>${ins.id}</strong><span>${esc(ins.name)}</span></div><span class="rs-cat-badge">${ins.cat}</span></div>
       <div class="rs-specs">
         <div><span>Decimales</span><strong>${ins.decimals}</strong></div>
         <div><span>Tamaño de pip</span><strong>${ins.pipSize}</strong></div>
@@ -337,9 +377,9 @@
       <div class="rs-bar">
         ${tp != null ? `<div class="rs-bar-zone rs-zone-profit" style="top:${Math.min(tpPos, entryPos)}%;height:${Math.abs(entryPos - tpPos)}%;"></div>` : ''}
         <div class="rs-bar-zone rs-zone-loss" style="top:${Math.min(entryPos, slPos)}%;height:${Math.abs(slPos - entryPos)}%;"></div>
-        ${tp != null ? `<div class="rs-bar-line rs-line-tp" style="top:${tpPos}%;"><span>🎯 TP ${fmt(tp, r.ins.decimals)} ${r.profit != null ? '(+' + fmt(r.profit, 0) + ')' : ''}</span></div>` : ''}
-        <div class="rs-bar-line rs-line-entry" style="top:${entryPos}%;"><span>▶ Entrada ${fmt(entry, r.ins.decimals)}</span></div>
-        <div class="rs-bar-line rs-line-sl" style="top:${slPos}%;"><span>🛑 SL ${fmt(sl, r.ins.decimals)} (-${fmt(r.riskAmount, 0)})</span></div>
+        ${tp != null ? `<div class="rs-bar-line rs-line-tp" style="top:${tpPos}%;"><span class="rs-bar-ic">${SVG.target}</span><span>TP ${fmt(tp, r.ins.decimals)} ${r.profit != null ? '(+' + fmt(r.profit, 0) + ')' : ''}</span></div>` : ''}
+        <div class="rs-bar-line rs-line-entry" style="top:${entryPos}%;"><span class="rs-bar-ic">${SVG.play}</span><span>Entrada ${fmt(entry, r.ins.decimals)}</span></div>
+        <div class="rs-bar-line rs-line-sl" style="top:${slPos}%;"><span class="rs-bar-ic">${SVG.stop}</span><span>SL ${fmt(sl, r.ins.decimals)} (-${fmt(r.riskAmount, 0)})</span></div>
       </div>`;
   }
 
@@ -347,7 +387,7 @@
     const el = document.getElementById('rsAlerts');
     if (!el) return;
     const alerts = buildAlerts(r);
-    el.innerHTML = alerts.map((a) => `<div class="rs-alert rs-alert-${a.t}"><span>${a.t === 'danger' ? '🚫' : '⚠️'}</span>${esc(a.m)}</div>`).join('');
+    el.innerHTML = alerts.map((a) => `<div class="rs-alert rs-alert-${a.t}"><span class="rs-alert-ic">${a.t === 'danger' ? SVG.ban : SVG.warn}</span>${esc(a.m)}</div>`).join('');
   }
 
   function renderHistory() {
@@ -356,11 +396,11 @@
     const hist = loadHistory();
     if (!hist.length) { el.innerHTML = ''; return; }
     el.innerHTML = `
-      <div class="section-head" style="margin-top:8px;"><h2 style="font-size:1.05rem;">🕘 Tus últimos cálculos</h2><button class="filter-chip" id="rsHistClear">Borrar historial</button></div>
+      <div class="section-head" style="margin-top:8px;"><h2 style="font-size:1.05rem;display:flex;align-items:center;gap:8px;"><span class="rs-h-ic">${SVG.clock}</span> Tus últimos cálculos</h2><button class="filter-chip" id="rsHistClear">Borrar historial</button></div>
       <div class="rs-hist-grid">
         ${hist.map((h, i) => `
           <div class="rs-hist-card" data-hist="${i}">
-            <div class="rs-hist-head"><strong>${esc(h.instrumentId)}</strong><span>${esc(h.dir === 'long' ? '▲' : '▼')} ${h.rr ? '1:' + h.rr.toFixed(1) : ''}</span></div>
+            <div class="rs-hist-head"><strong>${esc(h.instrumentId)}</strong><span class="rs-hist-dir ${h.dir === 'long' ? 'up' : 'down'}">${h.dir === 'long' ? '&#9650;' : '&#9660;'} ${h.rr ? '1:' + h.rr.toFixed(1) : ''}</span></div>
             <div class="rs-hist-body">Entrada ${esc(h.entry)} · SL ${esc(h.sl)}${h.tp ? ' · TP ' + esc(h.tp) : ''}</div>
             <div class="rs-hist-foot">${esc(h.date)} · <button class="rs-hist-reuse" data-hist="${i}">Reutilizar</button></div>
           </div>`).join('')}
@@ -408,7 +448,7 @@
         .slice(0, 4);
       if (!upcoming.length) { el.hidden = true; return; }
       el.hidden = false;
-      el.innerHTML = `<div class="rs-news-title">📅 Próximas noticias que afectan a ${ins.id}</div>` + upcoming.map((e) => {
+      el.innerHTML = `<div class="rs-news-title"><span class="rs-h-ic">${SVG.cal}</span> Próximas noticias que afectan a ${ins.id}</div>` + upcoming.map((e) => {
         const dt = new Date(e.date);
         return `<div class="rs-news-row"><span class="rs-news-cur">${esc(e.country)}</span><span class="rs-news-name">${esc(e.title)}</span><span class="rs-news-time">${dt.toLocaleDateString('es', { weekday: 'short' })} ${dt.toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit' })}</span><span class="rs-news-imp rs-imp-${e.impact === 'High' ? 'high' : 'med'}">${e.impact === 'High' ? 'Alto' : 'Medio'}</span></div>`;
       }).join('') + `<a href="calendario.html" class="rs-news-more">Ver calendario completo →</a>`;
@@ -426,7 +466,7 @@
       priceState = d;
       const chg = d.changePct;
       row.innerHTML = `
-        <div class="rs-price-main"><span class="rs-price-val">${fmt(d.price, ins.decimals)}</span><span class="rs-price-chg ${chg >= 0 ? 'up' : 'down'}">${chg != null ? (chg >= 0 ? '▲ ' : '▼ ') + Math.abs(chg).toFixed(2) + '%' : ''}</span><span class="rs-price-live">● en vivo</span></div>
+        <div class="rs-price-main"><span class="rs-price-val">${fmt(d.price, ins.decimals)}</span><span class="rs-price-chg ${chg >= 0 ? 'up' : 'down'}">${chg != null ? (chg >= 0 ? '&#9650; ' : '&#9660; ') + Math.abs(chg).toFixed(2) + '%' : ''}</span><span class="rs-price-live">&#9679; en vivo</span></div>
         <div class="rs-price-meta">Detectado automáticamente · ${new Date().toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit' })} · el precio de entrada se rellena solo; puedes editarlo. El bid/ask real depende de tu broker.</div>`;
       // Auto-rellena la entrada con el precio de mercado detectado (queda editable).
       const entryEl = document.getElementById('rsEntry');
@@ -499,7 +539,7 @@
       if (query) list = INSTRUMENTS.filter((i) => i.id.toLowerCase().includes(query) || i.name.toLowerCase().includes(query) || i.cat.toLowerCase().includes(query));
       list = list.slice(0, 8);
       if (!list.length) { sugg.hidden = true; return; }
-      sugg.innerHTML = list.map((i) => `<div class="rs-sugg" data-id="${i.id}"><span class="rs-sugg-icon">${i.icon}</span><div><strong>${i.id}</strong><span>${esc(i.name)}</span></div><span class="rs-cat-badge">${i.cat}</span></div>`).join('');
+      sugg.innerHTML = list.map((i) => `<div class="rs-sugg" data-id="${i.id}"><span class="rs-sugg-icon">${insGlyph(i)}</span><div><strong>${i.id}</strong><span>${esc(i.name)}</span></div><span class="rs-cat-badge">${i.cat}</span></div>`).join('');
       sugg.hidden = false;
       sugg.querySelectorAll('.rs-sugg').forEach((row) => row.addEventListener('mousedown', (e) => {
         e.preventDefault();

@@ -4211,3 +4211,107 @@ textarea.jrn-in { min-height: 84px; resize: vertical; line-height: 1.5; }
 .jrn-pts { font-size: 0.72rem; font-weight: 800; background: rgba(22,19,10,0.28); border-radius: 20px; padding: 2px 9px; }
 
 @media (max-width: 620px) { .jrn-grid { grid-template-columns: 1fr; } .jrn-chip { min-width: 0; } }
+
+/* ===== Scrollbar dorado refinado — todo el sitio ===== */
+* { scrollbar-width: thin; scrollbar-color: rgba(212,175,55,0.45) rgba(255,255,255,0.03); }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: rgba(255,255,255,0.03); border-radius: 10px; }
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--gold-bright), var(--gold) 55%, #b8860b);
+  border-radius: 10px; border: 2px solid rgba(10,15,28,0.6); background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #fbe9b0, var(--gold-bright)); background-clip: padding-box; }
+*::-webkit-scrollbar-corner { background: transparent; }
+
+/* ===== Educación — quiz del módulo refinado (dorado) ===== */
+.edu-quiz-card {
+  margin-top: 28px; border: 1px solid rgba(212,175,55,0.22); border-radius: var(--radius); padding: 22px;
+  background:
+    radial-gradient(90% 60% at 6% 0%, rgba(240,199,94,0.06), transparent 55%),
+    linear-gradient(180deg, rgba(17,26,46,0.5), rgba(10,15,28,0.35));
+}
+.edu-quiz-h { display: flex; align-items: center; gap: 9px; font-size: 1.05rem; color: var(--text-hi); margin-bottom: 4px; }
+.edu-quiz-h svg { width: 20px; height: 20px; color: var(--gold-bright); flex-shrink: 0; }
+.edu-quiz-sub { color: var(--text-mid); font-size: 0.84rem; margin-bottom: 18px; line-height: 1.5; }
+.edu-quiz-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+.quiz-options-col { flex-direction: column; }
+.quiz-options-col .quiz-option { flex: 1 1 100%; }
+/* Realce verde/rojo al corregir */
+.quiz-option.quiz-correct {
+  border-color: rgba(46,204,113,0.5); background: rgba(31,158,90,0.12); color: #7fe0a8;
+}
+.quiz-option.quiz-correct .quiz-option-dot { border-color: #2ecc71; background: #2ecc71; }
+.quiz-option.quiz-wrong {
+  border-color: rgba(225,58,75,0.5); background: rgba(225,58,75,0.1); color: #ff8a97;
+}
+.quiz-option.quiz-wrong .quiz-option-dot { border-color: #e13a4b; background: #e13a4b; }
+
+/* Diario: hint de precio detectado */
+.jrn-price-hint { font-size: 0.78rem; color: var(--text-mid); margin: 6px 0 2px; }
+.jrn-price-ok { color: #7fe0a8; }
+.jrn-price-ok b { color: var(--gold-bright); font-family: var(--mono); }
+
+/* ===== Suite de riesgo — iconos SVG serios + guía de uso ===== */
+.rs-glyph, .rs-tpl-ic, .rs-dir-ic, .rs-bar-ic, .rs-alert-ic, .rs-h-ic, .rs-howto-head svg { display:inline-flex; align-items:center; justify-content:center; }
+.rs-glyph svg { width:22px; height:22px; color: var(--gold-bright); }
+.rs-ins-icon .rs-glyph svg { width:26px; height:26px; }
+.rs-sugg-icon .rs-glyph svg { width:20px; height:20px; }
+.rs-h-ic svg { width:18px; height:18px; color: var(--gold-bright); }
+.rs-dir-ic svg { width:15px; height:15px; }
+.rs-bar-ic svg { width:14px; height:14px; }
+.rs-alert-ic svg { width:18px; height:18px; flex:0 0 auto; }
+
+/* Guía "¿Cómo se usa?" */
+.rs-howto { background: linear-gradient(180deg, rgba(212,175,55,0.09), rgba(212,175,55,0.03)); border:1px solid rgba(212,175,55,0.28); border-radius:14px; padding:16px 18px; margin-bottom:18px; }
+.rs-howto-head { display:flex; align-items:center; gap:9px; margin-bottom:10px; color: var(--gold-bright); font-family: var(--font-head, inherit); font-size:1rem; }
+.rs-howto-head svg { width:20px; height:20px; }
+.rs-howto-steps { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:8px 22px; }
+.rs-howto-steps li { font-size:0.86rem; color: var(--text-mid); line-height:1.45; }
+.rs-howto-steps b { color: var(--gold-bright); font-family: var(--mono); margin-right:2px; }
+.rs-howto-steps b + *, .rs-howto-steps li b:last-of-type { color: var(--text-high); }
+
+/* Plantillas rápidas como tarjetas con icono + descripción */
+.rs-lbl-hint { font-weight:400; color: var(--text-low); font-size:0.78rem; }
+.rs-tpl-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+.rs-tpl { display:flex; align-items:center; gap:11px; text-align:left; padding:11px 13px; background: rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.09); border-radius:12px; cursor:pointer; transition: all .18s ease; }
+.rs-tpl:hover { border-color: rgba(212,175,55,0.5); background: rgba(212,175,55,0.07); transform: translateY(-1px); }
+.rs-tpl-ic { flex:0 0 auto; width:38px; height:38px; border-radius:10px; background: rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.3); }
+.rs-tpl-ic svg { width:20px; height:20px; color: var(--gold-bright); }
+.rs-tpl-txt { display:flex; flex-direction:column; gap:2px; min-width:0; }
+.rs-tpl-txt strong { color: var(--text-high); font-size:0.92rem; }
+.rs-tpl-txt em { color: var(--text-low); font-size:0.74rem; font-style:normal; line-height:1.3; }
+.rs-tpl-flash { border-color: var(--gold-bright) !important; box-shadow:0 0 0 3px rgba(212,175,55,0.22); }
+
+/* Dirección e historial: flechas coloreadas */
+.rs-hist-dir.up { color:#7fe0a8; } .rs-hist-dir.down { color:#ff8a8a; }
+.rs-bar-line span:not(.rs-bar-ic) { display:inline-flex; align-items:center; }
+.rs-bar-line { display:flex; align-items:center; gap:5px; }
+
+@media (max-width: 640px) {
+  .rs-howto-steps { grid-template-columns:1fr; }
+  .rs-tpl-grid { grid-template-columns:1fr; }
+}
+
+/* ===== Watchlist refinada + precios en vivo ===== */
+.wl-form .wl-quick { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 12px; }
+.wl-quick-chip { padding:6px 13px; font-size:0.8rem; border-radius:999px; border:1px solid rgba(212,175,55,0.35); background:rgba(212,175,55,0.07); color:var(--gold-bright); cursor:pointer; transition:all .16s ease; }
+.wl-quick-chip:hover { background:rgba(212,175,55,0.18); border-color:var(--gold-bright); transform:translateY(-1px); }
+.wl-add-row { display:flex; gap:8px; flex-wrap:wrap; }
+.wl-add-row #wSymbol { flex:2 1 200px; }
+.wl-add-row #wLabel { flex:1 1 130px; }
+.wl-add-row .btn { flex:0 0 auto; }
+.wl-list-head { display:flex; justify-content:space-between; padding:0 14px 8px; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-low); border-bottom:1px solid rgba(255,255,255,0.06); margin-bottom:10px; }
+.wl-row { display:flex; align-items:center; gap:12px; padding:12px 14px; margin-bottom:9px; background:linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015)); border:1px solid rgba(255,255,255,0.08); border-radius:12px; transition:border-color .16s ease; }
+.wl-row:hover { border-color:rgba(212,175,55,0.32); }
+.wl-row-main { display:flex; flex-direction:column; gap:2px; min-width:0; flex:1 1 auto; }
+.wl-label { color:var(--text-high); font-size:0.95rem; }
+.wl-symbol { color:var(--text-low); font-size:0.73rem; font-family:var(--mono); }
+.wl-row-price { display:flex; flex-direction:column; align-items:flex-end; gap:2px; text-align:right; flex:0 0 auto; min-width:96px; }
+.wl-price { font-family:var(--mono); font-size:1rem; color:var(--gold-bright); font-weight:600; }
+.wl-chg { font-size:0.76rem; font-family:var(--mono); }
+.wl-chg.up { color:#7fe0a8; } .wl-chg.down { color:#ff8a8a; }
+.wl-noprice, .wl-price-load { color:var(--text-low); font-family:var(--mono); font-size:0.85rem; }
+.wl-remove { flex:0 0 auto; display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:9px; border:1px solid rgba(255,255,255,0.1); background:transparent; color:var(--text-low); cursor:pointer; transition:all .16s ease; }
+.wl-remove:hover { border-color:#ff8a8a; color:#ff8a8a; background:rgba(255,80,80,0.08); }
+.wl-remove svg { width:15px; height:15px; }
+.wl-remove:disabled { opacity:0.4; cursor:default; }

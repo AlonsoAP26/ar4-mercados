@@ -212,52 +212,91 @@ function wireCompleteButton(m) {
   });
 }
 
+function shuffleArr(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+const IC_QUIZ = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>';
+
 function renderModuleQuiz(m) {
   const section = document.getElementById('moduloQuizSection');
   if (!section) return;
   if (!m.quiz || !m.quiz.length) { section.innerHTML = ''; return; }
 
-  section.innerHTML = `
-    <div class="community-form" style="margin-top:28px;">
-      <h3 style="margin-bottom:4px;">🧩 Pon a prueba lo que aprendiste</h3>
-      <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">${m.quiz.length} preguntas rápidas, solo para reforzar — no afecta tu progreso si te equivocas.</p>
-      <div id="moduloQuizForm"></div>
-      <button class="btn btn-gold" id="moduloQuizSubmitBtn" style="margin-top:14px;">Revisar respuestas</button>
-      <div id="moduloQuizResult"></div>
-    </div>
-  `;
+  // Baraja opciones (y el orden de preguntas) para que no salgan siempre igual.
+  // Guardamos cuál opción es la correcta tras barajar, con data-correct.
+  const questions = m.quiz.map((item) => ({
+    q: item.q,
+    options: shuffleArr(item.options.map((text, i) => ({ text, ok: i === item.correct })))
+  }));
+  const order = shuffleArr(questions.map((_, i) => i));
 
-  const formEl = document.getElementById('moduloQuizForm');
-  formEl.innerHTML = m.quiz.map((item, qi) => `
-    <div style="margin-bottom:16px;">
-      <label class="quiz-question">${qi + 1}. ${item.q}</label>
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        ${item.options.map((opt, oi) => `
-          <label class="quiz-option">
-            <input type="radio" name="moduloquiz_${qi}" value="${oi}"> ${opt}
-          </label>
-        `).join('')}
-      </div>
-    </div>
-  `).join('');
+  function build() {
+    const qs = order.map((qIdx, disp) => {
+      const item = questions[qIdx];
+      return `
+        <div class="quiz-q" data-q="${qIdx}">
+          <p class="quiz-question"><span class="quiz-qnum">${disp + 1}</span>${item.q}</p>
+          <div class="quiz-options quiz-options-col">
+            ${item.options.map((opt, oi) => `
+              <label class="quiz-option">
+                <input type="radio" name="mq_${qIdx}" value="${oi}" data-ok="${opt.ok ? 1 : 0}">
+                <span class="quiz-option-dot"></span>
+                <span class="quiz-option-label">${opt.text}</span>
+              </label>`).join('')}
+          </div>
+        </div>`;
+    }).join('');
+    section.innerHTML = `
+      <div class="edu-quiz-card">
+        <h3 class="edu-quiz-h">${IC_QUIZ} Pon a prueba lo que aprendiste</h3>
+        <p class="edu-quiz-sub">${questions.length} preguntas para reforzar — las opciones salen en distinto orden cada vez. No afecta tu progreso.</p>
+        <div id="moduloQuizForm">${qs}</div>
+        <div class="edu-quiz-actions">
+          <button class="btn btn-gold" id="moduloQuizSubmitBtn">Revisar respuestas</button>
+          <button class="btn btn-outline" id="moduloQuizRetry" hidden>Volver a intentar</button>
+        </div>
+        <div id="moduloQuizResult"></div>
+      </div>`;
+    wire();
+  }
 
-  document.getElementById('moduloQuizSubmitBtn').addEventListener('click', () => {
-    let correctCount = 0;
-    m.quiz.forEach((item, qi) => {
-      const checked = document.querySelector(`input[name="moduloquiz_${qi}"]:checked`);
-      if (checked && parseInt(checked.value, 10) === item.correct) correctCount++;
-      formEl.querySelectorAll(`input[name="moduloquiz_${qi}"]`).forEach((input) => {
-        const label = input.closest('label');
-        const val = parseInt(input.value, 10);
-        label.style.color = '';
-        if (val === item.correct) label.style.color = 'var(--green)';
-        else if (input.checked) label.style.color = 'var(--crimson-bright)';
+  function wire() {
+    const formEl = document.getElementById('moduloQuizForm');
+    formEl.querySelectorAll('input[type=radio]').forEach((input) => {
+      input.addEventListener('change', () => {
+        formEl.querySelectorAll(`input[name="${input.name}"]`).forEach((r) => r.closest('.quiz-option').classList.toggle('selected', r.checked));
       });
     });
-    const resultEl = document.getElementById('moduloQuizResult');
-    const pct = Math.round((correctCount / m.quiz.length) * 100);
-    resultEl.innerHTML = `<div class="community-form-msg ${pct === 100 ? 'success' : ''}" style="margin-top:14px;">Acertaste ${correctCount}/${m.quiz.length}. ${pct === 100 ? '¡Perfecto!' : 'Revisa en verde la respuesta correcta.'}</div>`;
-  });
+    document.getElementById('moduloQuizSubmitBtn').addEventListener('click', () => {
+      let correct = 0, answered = 0;
+      order.forEach((qIdx) => {
+        const checked = formEl.querySelector(`input[name="mq_${qIdx}"]:checked`);
+        if (checked) answered++;
+        formEl.querySelectorAll(`input[name="mq_${qIdx}"]`).forEach((input) => {
+          const opt = input.closest('.quiz-option');
+          opt.classList.remove('quiz-correct', 'quiz-wrong');
+          if (input.dataset.ok === '1') opt.classList.add('quiz-correct');
+          else if (input.checked) opt.classList.add('quiz-wrong');
+        });
+        if (checked && checked.dataset.ok === '1') correct++;
+      });
+      const resultEl = document.getElementById('moduloQuizResult');
+      if (answered < order.length) {
+        resultEl.innerHTML = `<div class="community-form-msg" style="margin-top:14px;">Responde todas las preguntas para ver tu resultado.</div>`;
+        return;
+      }
+      const pct = Math.round((correct / order.length) * 100);
+      resultEl.innerHTML = `<div class="community-form-msg ${pct === 100 ? 'success' : ''}" style="margin-top:14px;">Acertaste <strong>${correct}/${order.length}</strong>. ${pct === 100 ? '¡Perfecto! Lo tienes claro.' : 'La respuesta correcta está marcada en verde.'}</div>`;
+      document.getElementById('moduloQuizSubmitBtn').setAttribute('hidden', '');
+      document.getElementById('moduloQuizRetry').removeAttribute('hidden');
+    });
+    document.getElementById('moduloQuizRetry').addEventListener('click', () => renderModuleQuiz(m));
+  }
+
+  build();
 }
 
 async function initModuloDetail() {
