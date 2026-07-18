@@ -4095,3 +4095,15 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   .cp-controls { flex-direction: column; align-items: stretch; }
   .cp-field, .cp-field-sm { flex: 1 1 auto; }
 }
+
+/* Bloques de órdenes (Copilot) */
+.cp-ob-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 4px; }
+.cp-ob { border-radius: 10px; padding: 11px 13px; border: 1px solid var(--card-border); }
+.cp-ob span { display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-low); margin-bottom: 4px; }
+.cp-ob strong { display: block; font-family: var(--mono); font-size: 0.98rem; color: var(--text-hi); }
+.cp-ob em { display: block; font-style: normal; font-size: 0.72rem; color: var(--text-low); margin-top: 4px; line-height: 1.4; }
+.cp-ob-bull { border-color: rgba(46,204,113,0.32); background: rgba(31,158,90,0.08); }
+.cp-ob-bull strong { color: #7fe0a8; }
+.cp-ob-bear { border-color: rgba(225,58,75,0.32); background: rgba(225,58,75,0.08); }
+.cp-ob-bear strong { color: #ff8a97; }
+@media (max-width: 620px) { .cp-ob-grid { grid-template-columns: 1fr; } }

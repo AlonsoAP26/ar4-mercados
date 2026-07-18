@@ -27,12 +27,13 @@ exports.handler = async (event) => {
     const rows = [];
     const n = (q.close || []).length;
     for (let i = 0; i < n; i++) {
-      const c = q.close[i], h = q.high[i], l = q.low[i], o = q.open[i];
+      const c = q.close[i], h = q.high[i], l = q.low[i], o = q.open[i], v = q.volume ? q.volume[i] : null;
       if (c == null || h == null || l == null) continue;
-      rows.push({ o: o == null ? c : o, h, l, c });
+      rows.push({ o: o == null ? c : o, h, l, c, v: (v == null ? 0 : v) });
     }
     if (rows.length < 30) return json(422, { success: false, error: 'Historial insuficiente para el análisis.' });
 
+    const round = (v) => (v == null ? null : Number(v.toFixed(6)));
     const closes = rows.map((x) => x.c);
     const price = typeof meta.regularMarketPrice === 'number' ? meta.regularMarketPrice : closes[closes.length - 1];
     const prevClose = closes.length >= 2 ? closes[closes.length - 2] : null; // penúltima vela (no chartPreviousClose)
@@ -102,11 +103,62 @@ exports.handler = async (event) => {
     }
     const slope50 = (sma50 && sma50_prev) ? (sma50 > sma50_prev ? 'subiendo' : 'bajando') : null;
 
+    // ── Volumen ──────────────────────────────────────────────────────────
+    // (Forex e índices spot suelen NO traer volumen en Yahoo: se marca sin datos.)
+    const vols = rows.map((x) => x.v);
+    const hasVol = vols.filter((v) => v > 0).length >= 20;
+    let volume = { hasData: false };
+    if (hasVol) {
+      const last20 = vols.slice(-20);
+      const avg20 = last20.reduce((a, b) => a + b, 0) / last20.length;
+      const cur = vols[vols.length - 1];
+      volume = {
+        hasData: true,
+        current: Math.round(cur),
+        avg20: Math.round(avg20),
+        relPct: avg20 > 0 ? Number(((cur / avg20) * 100).toFixed(0)) : null
+      };
+    }
+
+    // ── Presión de volumen (aproximación de flujo, NO order flow real) ─────
+    // Reparte el volumen de las últimas 20 velas entre alcistas (cierre≥apertura)
+    // y bajistas. Es un proxy de acumulación/distribución, no datos de tick/DOM.
+    let flow = { hasData: false };
+    if (hasVol) {
+      let up = 0, dn = 0;
+      rows.slice(-20).forEach((r) => { if (r.c >= r.o) up += r.v; else dn += r.v; });
+      const tot = up + dn;
+      if (tot > 0) {
+        const buyPct = (up / tot) * 100;
+        flow = {
+          hasData: true,
+          buyPct: Number(buyPct.toFixed(0)),
+          bias: buyPct >= 58 ? 'compradora' : buyPct <= 42 ? 'vendedora' : 'equilibrada'
+        };
+      }
+    }
+
+    // ── Bloques de órdenes (Order Blocks) ──────────────────────────────────
+    // La última vela contraria justo antes de un movimiento fuerte (> 1.2 ATR en
+    // 3 velas). Es un patrón definido sobre velas reales, no una predicción: marca
+    // la ZONA de precio donde se originó el impulso, que suele actuar como imán.
+    let ob = { bull: null, bear: null };
+    if (atr) {
+      for (let i = rows.length - 4; i >= Math.max(2, rows.length - 45); i--) {
+        const c = rows[i], after = rows[i + 3];
+        if (!ob.bull && c.c < c.o && (after.c - c.c) > atr * 1.2 && c.l < price) {
+          ob.bull = { low: round(c.l), high: round(c.h) };
+        }
+        if (!ob.bear && c.c > c.o && (c.c - after.c) > atr * 1.2 && c.h > price) {
+          ob.bear = { low: round(c.l), high: round(c.h) };
+        }
+        if (ob.bull && ob.bear) break;
+      }
+    }
+
     // Lectura de momentum (descriptiva)
     let rsiRead = 'neutral';
     if (rsi != null) rsiRead = rsi >= 70 ? 'sobrecompra' : rsi <= 30 ? 'sobreventa' : 'neutral';
-
-    const round = (v) => (v == null ? null : Number(v.toFixed(6)));
 
     return json(200, {
       success: true,
@@ -130,7 +182,10 @@ exports.handler = async (event) => {
       supports: supports.map(round),
       resistances: resistances.map(round),
       trend,
-      trendWhy
+      trendWhy,
+      volume,
+      flow,
+      orderBlocks: ob
     }, { 'Cache-Control': 'public, max-age=300' });
   } catch (e) {
     return json(500, { success: false, error: String(e.message || e) });

@@ -43,8 +43,8 @@
     </div>
     <p style="color:var(--text-mid);font-size:0.92rem;margin-bottom:14px;max-width:82ch;">
       Tu copiloto para preparar el día. Elige un mercado y en segundos tienes su radiografía con <b>datos reales</b>:
-      tendencia, momentum, niveles clave, volatilidad y la estructura de riesgo. No te dice qué comprar — te da el
-      contexto que un profesional revisa antes de decidir.
+      tendencia, momentum, niveles clave, <b>volumen</b>, <b>presión de flujo</b>, <b>bloques de órdenes</b>, volatilidad y la
+      estructura de riesgo. No te dice qué comprar — te da el contexto que un profesional revisa antes de decidir.
     </p>
 
     <details class="rl-help">
@@ -177,7 +177,30 @@
           <div class="cp-badge cp-flat">${fmt(d.atr14, current.dec)} ${d.atrPct != null ? '· ' + fmt(d.atrPct, 1) + '%/día' : ''}</div>
           <p>Se mueve unos <b>${fmt(d.atr14, current.dec)}</b> por sesión. Tu stop debería respetar esta distancia para no salir por ruido normal.</p>
         </div>
+        ${d.volume && d.volume.hasData ? `
+        <div class="cp-card">
+          <div class="cp-card-h">📊 Volumen</div>
+          <div class="cp-badge ${d.volume.relPct >= 130 ? 'cp-up' : d.volume.relPct <= 70 ? 'cp-down' : 'cp-flat'}">${d.volume.relPct}% del promedio</div>
+          <p>Hoy se negocia el <b>${d.volume.relPct}%</b> del volumen medio de 20 sesiones. ${d.volume.relPct >= 130 ? 'Volumen alto: hay convicción detrás del movimiento.' : d.volume.relPct <= 70 ? 'Volumen flojo: los movimientos con poco volumen suelen no sostenerse.' : 'Volumen dentro de lo normal.'}</p>
+        </div>` : ''}
+        ${d.flow && d.flow.hasData ? `
+        <div class="cp-card">
+          <div class="cp-card-h">🔀 Presión de volumen</div>
+          <div class="cp-badge ${d.flow.bias === 'compradora' ? 'cp-up' : d.flow.bias === 'vendedora' ? 'cp-down' : 'cp-flat'}">${d.flow.buyPct}% comprador · ${d.flow.bias}</div>
+          <p>En las últimas 20 sesiones, el <b>${d.flow.buyPct}%</b> del volumen entró en velas alcistas.</p>
+          <p class="cp-muted">Aproximación de acumulación/distribución con velas diarias — no es order flow de tick/DOM.</p>
+        </div>` : ''}
       </div>
+
+      ${(d.orderBlocks && (d.orderBlocks.bull || d.orderBlocks.bear)) ? `
+      <div class="cp-card cp-card-wide">
+        <div class="cp-card-h">🧱 Bloques de órdenes (Order Blocks)</div>
+        <div class="cp-ob-grid">
+          ${d.orderBlocks.bull ? `<div class="cp-ob cp-ob-bull"><span>Bloque alcista · soporte</span><strong>${fmt(d.orderBlocks.bull.low, current.dec)} – ${fmt(d.orderBlocks.bull.high, current.dec)}</strong><em>zona donde arrancó el último impulso de compra</em></div>` : ''}
+          ${d.orderBlocks.bear ? `<div class="cp-ob cp-ob-bear"><span>Bloque bajista · resistencia</span><strong>${fmt(d.orderBlocks.bear.low, current.dec)} – ${fmt(d.orderBlocks.bear.high, current.dec)}</strong><em>zona donde arrancó el último impulso de venta</em></div>` : ''}
+        </div>
+        <p class="cp-muted">La última vela contraria antes de un movimiento fuerte (&gt;1.2× ATR). Suele actuar como imán y como soporte/resistencia. Es un patrón sobre velas reales, no una predicción.</p>
+      </div>` : ''}
 
       <div class="cp-card cp-card-wide">
         <div class="cp-card-h">🎯 Estructura de riesgo (no es una señal)</div>
@@ -198,7 +221,12 @@
     const askBtn = $('cpAskAria');
     if (askBtn) askBtn.addEventListener('click', () => {
       if (typeof window.AR4_askAriaAbout !== 'function') return;
-      const ctx = `El usuario prepara una posible operación en ${current.label}. Datos reales de hoy (Yahoo, velas diarias): precio ${d.price}, variación ${d.changePct}%, tendencia ${d.trend} (${d.trendWhy}), RSI14 ${d.rsi14} (${d.rsiRead}), ATR14 ${d.atr14} (${d.atrPct}%/día), media50 ${d.sma50}, media200 ${d.sma200}, soportes ${JSON.stringify(d.supports)}, resistencias ${JSON.stringify(d.resistances)}, máximo 52s ${d.hi52}, mínimo 52s ${d.lo52}. Interpreta este contexto de forma educativa: tendencia, momentum, qué vigilar en esos niveles, gestión de riesgo con estas cifras y errores comunes. NO des una señal de compra/venta ni predigas el precio: ayuda a decidir con criterio.`;
+      const volTxt = d.volume && d.volume.hasData ? `volumen relativo ${d.volume.relPct}% del promedio` : 'sin datos de volumen';
+      const flowTxt = d.flow && d.flow.hasData ? `presión de volumen ${d.flow.buyPct}% compradora (${d.flow.bias})` : 'sin datos de flujo';
+      const obTxt = d.orderBlocks && (d.orderBlocks.bull || d.orderBlocks.bear)
+        ? `bloques de órdenes: ${d.orderBlocks.bull ? 'alcista en ' + JSON.stringify(d.orderBlocks.bull) : ''} ${d.orderBlocks.bear ? 'bajista en ' + JSON.stringify(d.orderBlocks.bear) : ''}`
+        : 'sin bloques de órdenes claros';
+      const ctx = `El usuario prepara una posible operación en ${current.label}. Datos reales de hoy (Yahoo, velas diarias): precio ${d.price}, variación ${d.changePct}%, tendencia ${d.trend} (${d.trendWhy}), RSI14 ${d.rsi14} (${d.rsiRead}), ATR14 ${d.atr14} (${d.atrPct}%/día), media50 ${d.sma50}, media200 ${d.sma200}, soportes ${JSON.stringify(d.supports)}, resistencias ${JSON.stringify(d.resistances)}, máximo 52s ${d.hi52}, mínimo 52s ${d.lo52}, ${volTxt}, ${flowTxt}, ${obTxt}. Interpreta este contexto de forma educativa: tendencia, momentum, volumen y flujo, qué vigilar en esos niveles y bloques de órdenes, gestión de riesgo con estas cifras y errores comunes. NO des una señal de compra/venta ni predigas el precio: ayuda a decidir con criterio.`;
       window.AR4_askAriaAbout(`Interprétame el contexto de ${current.label} para hoy con estos datos.`, ctx);
     });
   }
@@ -227,7 +255,10 @@
       trendWhy: 'El precio está por encima de la media de 50 y esta por encima de la de 200.',
       slope50: 'subiendo', rsi14: 63.4, rsiRead: 'neutral', atr14: 210.0, atrPct: 1.03,
       sma50: 20010, sma200: 18900, hi52: 20700, lo52: 16100, distHi52pct: 1.2, distLo52pct: 27,
-      supports: [20180, 19850, 19420], resistances: [20700, 21050]
+      supports: [20180, 19850, 19420], resistances: [20700, 21050],
+      volume: { hasData: true, current: 0, avg20: 0, relPct: 118 },
+      flow: { hasData: true, buyPct: 61, bias: 'compradora' },
+      orderBlocks: { bull: { low: 20120, high: 20250 }, bear: { low: 20680, high: 20740 } }
     };
     current = INSTR[0];
     renderDossier(d, 5000, 1);

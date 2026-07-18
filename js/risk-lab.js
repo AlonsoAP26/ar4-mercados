@@ -124,9 +124,9 @@
       const notional = units * entry;
       const leverage = notional / capital;
 
-      $('rlUnits').textContent = num(units, units < 10 ? 4 : 2) + ' u.';
-      $('rlNotional').textContent = 'Valor de la posición: ' + money(notional) +
-        (leverage > 1.05 ? ' · equivale a ' + num(leverage, 1) + '× tu capital' : '');
+      $('rlUnits').textContent = num(units, units < 10 ? 4 : 2) + ' unidades';
+      $('rlNotional').textContent = 'Cantidad del activo (acciones/contratos, no dólares) · valor total: ' + money(notional) +
+        (leverage > 1.05 ? ' · ' + num(leverage, 1) + '× tu capital' : '');
       $('rlRiskMoney').textContent = '-' + money(riskMoney);
       $('rlDist').textContent = num(dist, dist < 1 ? 4 : 2) + ' (' + num((dist / entry) * 100, 2) + '%)';
 
@@ -718,5 +718,4 @@
   initFreeLab();
   initDdLab();
   initProLab();
-  initEaTester();
 })();
