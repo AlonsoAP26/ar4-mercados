@@ -4024,3 +4024,69 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 .ea-lock-overlay strong { font-size: 0.9rem; }
 .ea-lock-overlay span { font-size: 0.76rem; color: var(--text-mid); max-width: 34ch; line-height: 1.45; }
 .ea-lock-overlay .btn { margin-top: 6px; padding: 7px 16px; font-size: 0.78rem; }
+
+/* ===== AR4 AI Market Copilot ===== */
+.cp-banner {
+  font-size: 0.8rem; line-height: 1.5; color: var(--text-mid); margin-bottom: 16px;
+  border: 1px dashed rgba(212,175,55,0.35); border-radius: 10px; padding: 10px 13px; background: rgba(212,175,55,0.06);
+}
+.cp-banner b { color: var(--gold-bright); }
+.cp-banner-on { border-style: solid; border-color: rgba(46,204,113,0.4); background: rgba(31,158,90,0.1); color: #7fe0a8; }
+.cp-controls { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 16px; }
+.cp-field { flex: 1; min-width: 180px; }
+.cp-field-sm { flex: 0 0 130px; min-width: 110px; }
+.cp-run { flex: 0 0 auto; height: 42px; }
+.cp-lockwrap { position: relative; }
+.cp-lock {
+  position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 7px; text-align: center; padding: 20px; border-radius: 14px; border: 1px solid rgba(212,175,55,0.35);
+  background: linear-gradient(180deg, rgba(12,10,6,0.82), rgba(10,15,28,0.92)); backdrop-filter: blur(4px); color: var(--gold-bright);
+}
+.cp-lock svg { width: 24px; height: 24px; }
+.cp-lock strong { font-size: 0.98rem; }
+.cp-lock span { font-size: 0.8rem; color: var(--text-mid); max-width: 42ch; line-height: 1.5; }
+.cp-lock .btn { margin-top: 6px; }
+
+.cp-out { border: 1px solid rgba(212,175,55,0.22); border-radius: 14px; padding: 18px; background: linear-gradient(180deg, rgba(240,199,94,0.05), rgba(10,15,28,0.4)); }
+.cp-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px dashed rgba(255,255,255,0.08); }
+.cp-symbol { display: block; font-weight: 800; font-size: 1.05rem; color: var(--text-hi); }
+.cp-price { font-family: var(--mono); font-size: 1.4rem; color: var(--gold-bright); }
+.cp-price span { font-size: 0.85rem; }
+.cp-source { font-size: 0.72rem; color: var(--text-low); font-family: var(--mono); text-align: right; max-width: 30ch; }
+.cp-up { color: #2ecc71 !important; } .cp-down { color: #e13a4b !important; } .cp-flat { color: var(--text-mid) !important; }
+
+.cp-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.cp-card { border: 1px solid var(--card-border); border-radius: 12px; padding: 14px; background: rgba(10,15,28,0.4); }
+.cp-card-wide { margin-bottom: 12px; }
+.cp-card-h { font-size: 0.82rem; font-weight: 700; color: var(--text-hi); margin-bottom: 9px; }
+.cp-card p { font-size: 0.82rem; line-height: 1.55; color: var(--text-mid); }
+.cp-card p b, .cp-card p strong { color: var(--text-hi); }
+.cp-badge { display: inline-block; font-family: var(--mono); font-size: 0.82rem; font-weight: 700; padding: 4px 11px; border-radius: 20px; margin-bottom: 8px; background: rgba(255,255,255,0.05); border: 1px solid var(--card-border); }
+.cp-badge.cp-up { color: #2ecc71 !important; border-color: rgba(46,204,113,0.35); background: rgba(31,158,90,0.1); }
+.cp-badge.cp-down { color: #e13a4b !important; border-color: rgba(225,58,75,0.35); background: rgba(225,58,75,0.1); }
+.cp-badge.cp-flat { color: var(--gold-bright) !important; border-color: rgba(212,175,55,0.3); background: rgba(212,175,55,0.08); }
+
+.cp-levels { display: flex; flex-direction: column; gap: 6px; margin-bottom: 6px; }
+.cp-lv-lbl { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-low); margin-right: 6px; }
+.cp-lv { display: inline-block; font-family: var(--mono); font-size: 0.8rem; padding: 2px 8px; border-radius: 6px; margin-right: 5px; }
+.cp-lv-r { color: #ff8a97; background: rgba(225,58,75,0.12); }
+.cp-lv-s { color: #7fe0a8; background: rgba(31,158,90,0.12); }
+.cp-lv-price { font-family: var(--mono); font-size: 0.9rem; color: var(--gold-bright); font-weight: 700; padding: 2px 0; }
+.cp-muted { font-size: 0.74rem !important; color: var(--text-low) !important; margin-top: 6px; }
+
+.cp-risk-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 4px; }
+.cp-rk { background: rgba(255,255,255,0.03); border-radius: 9px; padding: 10px; }
+.cp-rk span { display: block; font-size: 0.68rem; color: var(--text-low); margin-bottom: 3px; }
+.cp-rk strong { display: block; font-family: var(--mono); font-size: 1rem; color: var(--text-hi); }
+.cp-rk em { display: block; font-style: normal; font-size: 0.68rem; color: var(--text-low); margin-top: 3px; line-height: 1.35; }
+.cp-mistakes { list-style: none; margin: 0; padding: 0; }
+.cp-mistakes li { font-size: 0.82rem; color: var(--text-mid); line-height: 1.5; padding: 6px 0 6px 20px; position: relative; border-top: 1px dashed rgba(255,255,255,0.06); }
+.cp-mistakes li:first-child { border-top: none; }
+.cp-mistakes li::before { content: "▸"; position: absolute; left: 4px; color: var(--gold-bright); }
+.cp-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+
+@media (max-width: 720px) {
+  .cp-cards, .cp-risk-grid { grid-template-columns: 1fr; }
+  .cp-controls { flex-direction: column; align-items: stretch; }
+  .cp-field, .cp-field-sm { flex: 1 1 auto; }
+}
