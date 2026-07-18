@@ -155,18 +155,60 @@ a { color: inherit; text-decoration: none; }
 .main-nav a:hover { background: rgba(255,255,255,0.05); color: var(--gold-bright); }
 .main-nav a.nav-active { color: var(--gold-bright); background: rgba(212,175,55,0.08); }
 
-.header-actions { display: flex; align-items: center; gap: 14px; }
-.header-actions a.nav-premium { color: var(--gold-bright); font-weight: 700; font-size: 0.86rem; }
+.header-actions { display: flex; align-items: center; gap: 12px; }
+/* ★ Premium — pastilla dorada refinada */
+.header-actions a.nav-premium {
+  display: inline-flex; align-items: center; gap: 5px;
+  color: var(--gold-bright); font-weight: 700; font-size: 0.8rem;
+  padding: 6px 13px; border-radius: 20px;
+  background: rgba(212,175,55,0.09); border: 1px solid rgba(212,175,55,0.32);
+  transition: background .15s, border-color .15s, box-shadow .15s;
+}
+.header-actions a.nav-premium:hover {
+  background: rgba(212,175,55,0.18); border-color: rgba(212,175,55,0.6);
+  box-shadow: 0 4px 14px rgba(212,175,55,0.22);
+}
 .header-actions a#authBtn {
   border: 1px solid var(--card-border);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.82rem;
   color: var(--text-mid);
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
 }
 .header-actions a#authBtn:hover { border-color: var(--gold); }
-.header-actions a#authBtn.has-avatar { display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px 5px 6px; }
+
+/* CTA deslogueado: Regístrate · Inicia sesión */
+.header-actions a#authBtn.nav-auth-cta {
+  display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px 6px 12px;
+  background: linear-gradient(135deg, rgba(240,199,94,0.14), rgba(212,175,55,0.06));
+  border-color: rgba(212,175,55,0.4);
+}
+.header-actions a#authBtn.nav-auth-cta:hover {
+  border-color: var(--gold-bright);
+  box-shadow: 0 4px 16px rgba(212,175,55,0.28);
+}
+.nav-auth-ic { width: 16px; height: 16px; color: var(--gold-bright); flex-shrink: 0; }
+.nav-auth-main { color: var(--gold-bright); font-weight: 700; }
+.nav-auth-sep { color: var(--text-low); opacity: 0.6; }
+.nav-auth-alt { color: var(--text-mid); }
+
+/* Chip de perfil logueado */
+.header-actions a#authBtn.has-avatar {
+  display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px 4px 5px;
+  background: rgba(255,255,255,0.03);
+}
+.header-actions a#authBtn.has-avatar:hover {
+  border-color: rgba(212,175,55,0.5); background: rgba(212,175,55,0.06);
+}
+.header-actions a#authBtn.has-avatar span:not(.avatar-fallback) { font-weight: 600; color: var(--text-hi); }
+.nav-pm-caret { width: 14px; height: 14px; color: var(--text-low); flex-shrink: 0; }
+.nav-avatar { border: 1px solid rgba(255,255,255,0.12); }
+
+@media (max-width: 560px) {
+  .nav-auth-sep, .nav-auth-alt { display: none; }
+  .header-actions a.nav-premium span { display: none; }
+}
 .nav-avatar { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .nav-avatar-color { display: inline-flex; align-items: center; justify-content: center; font-family: var(--mono); font-weight: 800; font-size: 0.7rem; color: #0a0f1c; }
 

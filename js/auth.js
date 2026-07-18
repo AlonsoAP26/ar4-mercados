@@ -58,19 +58,25 @@
 
     if (authBtn) {
       if (!user) {
-        authBtn.textContent = 'Iniciar sesión';
+        authBtn.innerHTML =
+          '<svg class="nav-auth-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>' +
+          '<span class="nav-auth-main">Regístrate</span>' +
+          '<span class="nav-auth-sep" aria-hidden="true">·</span>' +
+          '<span class="nav-auth-alt">Inicia sesión</span>';
+        authBtn.classList.add('nav-auth-cta');
         authBtn.classList.remove('has-avatar');
       } else {
+        authBtn.classList.remove('nav-auth-cta');
         const profile = await fetchCommunityProfile(user);
         if (profile) {
           const navGrad = avGrad(profile.username);
           const avatarHTML = profile.avatar_url
             ? `<img class="nav-avatar" src="${escapeHtmlLocal(profile.avatar_url)}" alt="">`
             : `<span class="nav-avatar avatar-generated" style="background:${navGrad};"><img src="${avGen(profile.username)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span class="avatar-fallback" style="background:${navGrad};">${escapeHtmlLocal((profile.username || '?').charAt(0).toUpperCase())}</span></span>`;
-          authBtn.innerHTML = avatarHTML + `<span>${escapeHtmlLocal(profile.username)}</span>`;
+          authBtn.innerHTML = avatarHTML + `<span>${escapeHtmlLocal(profile.username)}</span><svg class="nav-pm-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>`;
           authBtn.classList.add('has-avatar');
         } else {
-          authBtn.textContent = '👤 ' + (user.email || '').split('@')[0];
+          authBtn.innerHTML = '<svg class="nav-auth-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>' + escapeHtmlLocal((user.email || '').split('@')[0]) + '</span>';
           authBtn.classList.remove('has-avatar');
         }
       }
