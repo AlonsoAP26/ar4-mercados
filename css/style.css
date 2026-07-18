@@ -3923,7 +3923,12 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 .rl-lock-overlay[hidden],
 .rl-curves-lock[hidden],
 .rl-cta[hidden],
-.rl-pro-banner[hidden] { display: none !important; }
+.rl-pro-banner[hidden],
+.ea-lock-overlay[hidden],
+.ea-pro-banner[hidden],
+.cp-lock[hidden],
+.cp-banner[hidden],
+[hidden] { display: none !important; }
 
 /* ===== Herramientas — refinamiento (tarjetas, checklist dorado, diario) ===== */
 .rl-section-head h2.h2-ic svg { color: var(--gold-bright); }
