@@ -158,39 +158,56 @@
     }
 
     section.innerHTML = `
-      <div class="community-form">
-        <h3 style="margin-bottom:14px;">Nueva operación</h3>
-        <label for="jSymbol">Instrumento</label>
-        <input type="text" id="jSymbol" maxlength="40" placeholder="ej. EUR/USD">
-        <label for="jDirection">Dirección</label>
-        <select id="jDirection">
-          <option value="long">Long (compra)</option>
-          <option value="short">Short (venta)</option>
-        </select>
-        <label for="jEntry">Precio de entrada (opcional)</label>
-        <input type="number" id="jEntry" step="any">
-        <label for="jExit">Precio de salida (opcional)</label>
-        <input type="number" id="jExit" step="any">
-        <label for="jStop">Stop loss (opcional)</label>
-        <input type="number" id="jStop" step="any">
-        <label for="jTarget">Take profit (opcional)</label>
-        <input type="number" id="jTarget" step="any">
-        <label for="jResult">Resultado</label>
-        <select id="jResult">
-          <option value="abierta">Abierta</option>
-          <option value="ganadora">Ganadora</option>
-          <option value="perdedora">Perdedora</option>
-        </select>
-        <label for="jEmotion">Estado emocional (opcional)</label>
-        <input type="text" id="jEmotion" maxlength="40" placeholder="ej. tranquilo, ansioso, con FOMO...">
-        <label for="jNotes">Notas (opcional)</label>
-        <textarea id="jNotes" maxlength="1000"></textarea>
-        <button class="btn btn-gold" id="jSubmitBtn" style="margin-top:14px;">Guardar entrada (+2 pts)</button>
+      <div class="community-form jrn-card">
+        <h3 class="jrn-h">✍️ Nueva operación</h3>
+
+        <label class="jrn-lbl" for="jSymbol">Instrumento</label>
+        <input class="jrn-in" type="text" id="jSymbol" maxlength="40" placeholder="ej. EUR/USD, Oro, BTC, Nasdaq…">
+
+        <label class="jrn-lbl">Dirección</label>
+        <input type="hidden" id="jDirection" value="long">
+        <div class="jrn-chips" data-target="jDirection">
+          <button type="button" class="jrn-chip jrn-chip-long active" data-val="long">▲ Long (compra)</button>
+          <button type="button" class="jrn-chip jrn-chip-short" data-val="short">▼ Short (venta)</button>
+        </div>
+
+        <div class="jrn-grid">
+          <div><label class="jrn-lbl" for="jEntry">Entrada</label><input class="jrn-in" type="number" id="jEntry" step="any" placeholder="opcional"></div>
+          <div><label class="jrn-lbl" for="jExit">Salida</label><input class="jrn-in" type="number" id="jExit" step="any" placeholder="opcional"></div>
+          <div><label class="jrn-lbl" for="jStop">Stop loss</label><input class="jrn-in" type="number" id="jStop" step="any" placeholder="opcional"></div>
+          <div><label class="jrn-lbl" for="jTarget">Take profit</label><input class="jrn-in" type="number" id="jTarget" step="any" placeholder="opcional"></div>
+        </div>
+
+        <label class="jrn-lbl">Resultado</label>
+        <input type="hidden" id="jResult" value="abierta">
+        <div class="jrn-chips" data-target="jResult">
+          <button type="button" class="jrn-chip jrn-chip-open active" data-val="abierta">🔵 Abierta</button>
+          <button type="button" class="jrn-chip jrn-chip-win" data-val="ganadora">✅ Ganadora</button>
+          <button type="button" class="jrn-chip jrn-chip-loss" data-val="perdedora">❌ Perdedora</button>
+        </div>
+
+        <label class="jrn-lbl" for="jEmotion">Estado emocional <span class="jrn-opt">(opcional)</span></label>
+        <input class="jrn-in" type="text" id="jEmotion" maxlength="40" placeholder="ej. tranquilo, ansioso, con FOMO…">
+        <label class="jrn-lbl" for="jNotes">Notas <span class="jrn-opt">(opcional)</span></label>
+        <textarea class="jrn-in" id="jNotes" maxlength="1000" placeholder="¿Respetaste tu plan? ¿Qué aprendiste?"></textarea>
+
+        <button class="btn btn-gold jrn-submit" id="jSubmitBtn">Guardar entrada <span class="jrn-pts">+2 pts</span></button>
         <div class="community-form-msg" id="jMsg"></div>
       </div>
-      <div class="section-head" style="margin-top:28px;"><h2 style="font-size:1.05rem;">Tus últimas operaciones</h2></div>
+      <div class="section-head" style="margin-top:28px;"><h2 class="h2-ic" style="font-size:1.05rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg> Tus últimas operaciones</h2></div>
       <div id="journalList"><p class="footer-text">Cargando...</p></div>
     `;
+
+    // Chips (dirección / resultado) que fijan un input oculto — el guardado lee esos IDs.
+    section.querySelectorAll('.jrn-chips').forEach((group) => {
+      const hidden = document.getElementById(group.dataset.target);
+      group.querySelectorAll('.jrn-chip').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          hidden.value = chip.dataset.val;
+          group.querySelectorAll('.jrn-chip').forEach((c) => c.classList.toggle('active', c === chip));
+        });
+      });
+    });
 
     async function loadEntries() {
       const listEl = document.getElementById('journalList');

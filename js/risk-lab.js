@@ -48,6 +48,10 @@
       <div class="rl-grid">
         <div class="rl-panel">
           <h3 class="rl-h">Tu operación</h3>
+          <div class="rl-dir" id="rlDir">
+            <button type="button" class="rl-dir-btn rl-dir-long active" data-dir="long">▲ Compra (Long)</button>
+            <button type="button" class="rl-dir-btn rl-dir-short" data-dir="short">▼ Venta (Short)</button>
+          </div>
           <label class="rl-label" for="rlCapital">Capital de la cuenta (USD)</label>
           <input class="rl-input" type="number" id="rlCapital" value="5000" min="1" step="100">
           <label class="rl-label" for="rlRisk">Riesgo por operación: <b id="rlRiskVal">1%</b></label>
@@ -55,7 +59,7 @@
           <div class="rl-range-hint"><span>Conservador</span><span>Agresivo</span></div>
           <div class="rl-row">
             <div>
-              <label class="rl-label" for="rlEntry">Precio de entrada</label>
+              <label class="rl-label" for="rlEntry">Entrada</label>
               <input class="rl-input" type="number" id="rlEntry" value="100" min="0" step="any">
             </div>
             <div>
@@ -63,7 +67,7 @@
               <input class="rl-input" type="number" id="rlStop" value="97" min="0" step="any">
             </div>
             <div>
-              <label class="rl-label" for="rlTarget">Objetivo (opcional)</label>
+              <label class="rl-label" for="rlTarget">Objetivo</label>
               <input class="rl-input" type="number" id="rlTarget" value="109" min="0" step="any">
             </div>
           </div>
@@ -77,11 +81,12 @@
             <strong id="rlUnits">—</strong>
             <span class="rl-out-sub" id="rlNotional">—</span>
           </div>
+          <div class="rl-bar" id="rlBar"></div>
           <div class="rl-stats">
             <div class="rl-stat"><span>Arriesgas</span><strong id="rlRiskMoney" class="rl-neg">—</strong></div>
             <div class="rl-stat"><span>Puedes ganar</span><strong id="rlWinMoney" class="rl-pos">—</strong></div>
             <div class="rl-stat"><span>Ratio R:R</span><strong id="rlRR">—</strong></div>
-            <div class="rl-stat"><span>Distancia al stop</span><strong id="rlDist">—</strong></div>
+            <div class="rl-stat"><span>Aciertos para no perder</span><strong id="rlBE">—</strong></div>
           </div>
           <div class="rl-verdict" id="rlVerdict"></div>
         </div>
@@ -100,6 +105,32 @@
 
     const capitalEl = $('rlCapital'), riskEl = $('rlRisk'), entryEl = $('rlEntry'),
           stopEl = $('rlStop'), targetEl = $('rlTarget');
+    let dir = 'long';
+
+    // Diagrama visual: [stop]—riesgo—[entrada]—beneficio—[objetivo], proporcional.
+    function drawBar(entry, stop, target, hasTarget) {
+      const bar = $('rlBar');
+      const risk = Math.abs(entry - stop);
+      const reward = hasTarget ? Math.abs(target - entry) : risk; // sin objetivo, dibuja simétrico tenue
+      const total = risk + reward || 1;
+      const entryPct = (risk / total) * 100;
+      const low = dir === 'long' ? 'Stop' : 'Objetivo';
+      const high = dir === 'long' ? 'Objetivo' : 'Stop';
+      const lowVal = dir === 'long' ? stop : (hasTarget ? target : null);
+      const highVal = dir === 'long' ? (hasTarget ? target : null) : stop;
+      const dec = Math.abs(entry) < 10 ? 4 : 2;
+      const fmtP = (v) => (v == null ? '—' : num(v, dec));
+      bar.innerHTML = `
+        <div class="rl-bar-track">
+          <div class="rl-bar-risk" style="width:${entryPct}%"></div>
+          <div class="rl-bar-reward" style="width:${100 - entryPct}%${hasTarget ? '' : ';opacity:.35'}"></div>
+          <span class="rl-bar-marker rl-bar-entry" style="left:${entryPct}%"><b>${fmtP(entry)}</b><i>Entrada</i></span>
+        </div>
+        <div class="rl-bar-ends">
+          <span class="rl-bar-end rl-neg">${low} · ${fmtP(lowVal)}</span>
+          <span class="rl-bar-end rl-pos">${high} · ${fmtP(highVal)}${!hasTarget ? ' (falta)' : ''}</span>
+        </div>`;
+    }
 
     function render() {
       const capital = parseFloat(capitalEl.value), riskPct = parseFloat(riskEl.value);
@@ -113,11 +144,19 @@
       if (!valid) {
         msg.textContent = dist === 0 ? 'El stop no puede ser igual a la entrada: sin distancia no hay riesgo que medir.' : 'Completa capital, entrada y stop con números válidos.';
         msg.className = 'rl-msg rl-msg-error';
-        ['rlUnits', 'rlNotional', 'rlRiskMoney', 'rlWinMoney', 'rlRR', 'rlDist'].forEach((i) => { $(i).textContent = '—'; });
-        $('rlVerdict').innerHTML = '';
+        ['rlUnits', 'rlNotional', 'rlRiskMoney', 'rlWinMoney', 'rlRR', 'rlBE'].forEach((i) => { $(i).textContent = '—'; });
+        $('rlBar').innerHTML = ''; $('rlVerdict').innerHTML = '';
         return;
       }
-      msg.textContent = ''; msg.className = 'rl-msg';
+
+      // Coherencia de la dirección: en Long el stop va debajo; en Short, encima.
+      const dirOk = dir === 'long' ? stop < entry : stop > entry;
+      if (!dirOk) {
+        msg.textContent = dir === 'long'
+          ? 'En una compra (Long) el stop va POR DEBAJO de la entrada. Revisa tus precios.'
+          : 'En una venta (Short) el stop va POR ENCIMA de la entrada. Revisa tus precios.';
+        msg.className = 'rl-msg rl-msg-warn';
+      } else { msg.textContent = ''; msg.className = 'rl-msg'; }
 
       const riskMoney = capital * (riskPct / 100);
       const units = riskMoney / dist;
@@ -128,15 +167,19 @@
       $('rlNotional').textContent = 'Cantidad del activo (acciones/contratos, no dólares) · valor total: ' + money(notional) +
         (leverage > 1.05 ? ' · ' + num(leverage, 1) + '× tu capital' : '');
       $('rlRiskMoney').textContent = '-' + money(riskMoney);
-      $('rlDist').textContent = num(dist, dist < 1 ? 4 : 2) + ' (' + num((dist / entry) * 100, 2) + '%)';
 
-      const hasTarget = Number.isFinite(target) && target > 0 && Math.abs(target - entry) > 0;
-      if (hasTarget) {
+      // Objetivo válido: coherente con la dirección
+      const tgtOk = Number.isFinite(target) && target > 0 &&
+        (dir === 'long' ? target > entry : target < entry);
+      drawBar(entry, stop, target, tgtOk);
+
+      if (tgtOk) {
         const winMoney = Math.abs(target - entry) * units;
         const rr = winMoney / riskMoney;
         $('rlWinMoney').textContent = '+' + money(winMoney);
         $('rlRR').textContent = '1 : ' + num(rr, 2);
         const breakeven = (1 / (1 + rr)) * 100;
+        $('rlBE').textContent = '> ' + num(breakeven, 0) + '%';
         let cls = 'rl-verdict-bad', txt;
         if (rr >= 2) { cls = 'rl-verdict-good'; txt = 'Relación sólida. Con este R:R te basta con acertar más del <b>' + num(breakeven, 0) + '%</b> de las veces para no perder dinero.'; }
         else if (rr >= 1) { cls = 'rl-verdict-mid'; txt = 'Relación ajustada. Necesitas acertar más del <b>' + num(breakeven, 0) + '%</b> de las veces solo para quedar en cero.'; }
@@ -144,9 +187,9 @@
         $('rlVerdict').className = 'rl-verdict ' + cls;
         $('rlVerdict').innerHTML = txt;
       } else {
-        $('rlWinMoney').textContent = '—'; $('rlRR').textContent = '—';
+        $('rlWinMoney').textContent = '—'; $('rlRR').textContent = '—'; $('rlBE').textContent = '—';
         $('rlVerdict').className = 'rl-verdict';
-        $('rlVerdict').innerHTML = 'Añade un objetivo para ver tu relación riesgo/beneficio y qué porcentaje de aciertos necesitarías.';
+        $('rlVerdict').innerHTML = 'Añade un objetivo ' + (dir === 'long' ? 'por encima' : 'por debajo') + ' de la entrada para ver tu relación riesgo/beneficio.';
       }
 
       const rows = DRAWDOWNS.map((dd) => {
@@ -168,6 +211,13 @@
     }
 
     [capitalEl, riskEl, entryEl, stopEl, targetEl].forEach((i) => i.addEventListener('input', render));
+    $('rlDir').querySelectorAll('.rl-dir-btn').forEach((b) => {
+      b.addEventListener('click', () => {
+        dir = b.dataset.dir;
+        $('rlDir').querySelectorAll('.rl-dir-btn').forEach((x) => x.classList.toggle('active', x === b));
+        render();
+      });
+    });
     render();
   }
 

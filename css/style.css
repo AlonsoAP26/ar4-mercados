@@ -4107,3 +4107,65 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 .cp-ob-bear { border-color: rgba(225,58,75,0.32); background: rgba(225,58,75,0.08); }
 .cp-ob-bear strong { color: #ff8a97; }
 @media (max-width: 620px) { .cp-ob-grid { grid-template-columns: 1fr; } }
+
+/* Laboratorio de Riesgo — dirección + diagrama visual R:R */
+.rl-dir { display: flex; gap: 8px; margin-bottom: 12px; }
+.rl-dir-btn {
+  flex: 1; padding: 9px 10px; border-radius: 9px; cursor: pointer; font-size: 0.82rem; font-weight: 700;
+  background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); color: var(--text-mid);
+  transition: all .15s;
+}
+.rl-dir-long.active { background: rgba(31,158,90,0.16); border-color: rgba(46,204,113,0.5); color: #7fe0a8; }
+.rl-dir-short.active { background: rgba(225,58,75,0.14); border-color: rgba(225,58,75,0.5); color: #ff8a97; }
+.rl-msg-warn { color: #f0c75e; }
+
+.rl-bar { margin: 4px 0 16px; }
+.rl-bar-track {
+  position: relative; height: 12px; border-radius: 7px; overflow: visible; display: flex;
+  margin: 26px 0 8px; background: rgba(255,255,255,0.05);
+}
+.rl-bar-risk { background: linear-gradient(90deg, rgba(225,58,75,0.35), rgba(225,58,75,0.6)); border-radius: 7px 0 0 7px; }
+.rl-bar-reward { background: linear-gradient(90deg, rgba(31,158,90,0.55), rgba(46,204,113,0.4)); border-radius: 0 7px 7px 0; }
+.rl-bar-marker { position: absolute; top: -24px; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+.rl-bar-marker b { display: block; font-family: var(--mono); font-size: 0.74rem; color: var(--gold-bright); font-weight: 700; }
+.rl-bar-marker i { font-style: normal; font-size: 0.6rem; color: var(--text-low); text-transform: uppercase; letter-spacing: 0.06em; }
+.rl-bar-entry::after { content: ""; position: absolute; left: 50%; top: 20px; width: 2px; height: 12px; background: var(--gold-bright); transform: translateX(-50%); border-radius: 2px; }
+.rl-bar-ends { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 0.74rem; }
+.rl-bar-end { font-weight: 600; }
+
+/* ===== Diario de trading — refinado y elegante ===== */
+.jrn-card {
+  border: 1px solid rgba(212,175,55,0.22); border-radius: var(--radius); padding: 22px;
+  background:
+    radial-gradient(90% 60% at 6% 0%, rgba(240,199,94,0.06), transparent 55%),
+    linear-gradient(180deg, rgba(17,26,46,0.55), rgba(10,15,28,0.4));
+}
+.jrn-h { font-size: 1.05rem; color: var(--text-hi); margin-bottom: 16px; }
+.jrn-lbl { display: block; font-size: 0.74rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-low); margin: 14px 0 6px; }
+.jrn-opt { text-transform: none; letter-spacing: 0; color: var(--text-low); opacity: 0.7; }
+.jrn-in {
+  width: 100%; background: rgba(10,15,28,0.85); border: 1px solid var(--card-border); color: var(--text-hi);
+  border-radius: 10px; padding: 11px 13px; font-size: 0.9rem; font-family: 'Inter', sans-serif; transition: border-color .15s, box-shadow .15s;
+}
+textarea.jrn-in { min-height: 84px; resize: vertical; line-height: 1.5; }
+.jrn-in:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,175,55,0.14); }
+.jrn-in::placeholder { color: var(--text-low); }
+
+.jrn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; margin-top: 2px; }
+.jrn-grid .jrn-lbl { margin-top: 8px; }
+
+.jrn-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.jrn-chip {
+  flex: 1; min-width: 96px; padding: 10px 12px; border-radius: 10px; cursor: pointer; font-size: 0.82rem; font-weight: 700;
+  background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); color: var(--text-mid); transition: all .15s;
+}
+.jrn-chip:hover { border-color: rgba(212,175,55,0.4); }
+.jrn-chip-long.active { background: rgba(31,158,90,0.16); border-color: rgba(46,204,113,0.5); color: #7fe0a8; }
+.jrn-chip-short.active, .jrn-chip-loss.active { background: rgba(225,58,75,0.14); border-color: rgba(225,58,75,0.5); color: #ff8a97; }
+.jrn-chip-open.active { background: rgba(60,130,246,0.14); border-color: rgba(90,160,255,0.5); color: #9cc4ff; }
+.jrn-chip-win.active { background: rgba(31,158,90,0.16); border-color: rgba(46,204,113,0.5); color: #7fe0a8; }
+
+.jrn-submit { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; }
+.jrn-pts { font-size: 0.72rem; font-weight: 800; background: rgba(22,19,10,0.28); border-radius: 20px; padding: 2px 9px; }
+
+@media (max-width: 620px) { .jrn-grid { grid-template-columns: 1fr; } .jrn-chip { min-width: 0; } }
