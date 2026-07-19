@@ -76,15 +76,38 @@ function finHeroHTML(type, trend, sizeClass) {
   `;
 }
 
-const PSICO_PHOTOS = {
-  fomo: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  disciplina: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  riesgo: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  rutinas: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  perdidas: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  ansiedad: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  confianza: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop'
+// Portadas editoriales propias por categoría: cada una con su tinte y motivo,
+// generadas como SVG (sin fotos externas repetidas). Estilo sobrio tipo revista.
+const PSICO_COVER_STYLE = {
+  fomo:       { tint: '#c97b2d', motif: 'M40 170 L90 90 L120 130 L180 40 M200 170 L250 100 L280 140 L340 60 M360 170 L410 110 L440 150 L500 80' },
+  disciplina: { tint: '#d4af37', motif: 'M60 60 H240 M60 100 H200 M60 140 H220 M300 40 V160 M340 40 V160 M380 40 V160 M420 40 V160 M460 40 V160' },
+  riesgo:     { tint: '#2e9e8f', motif: 'M100 160 C100 80 160 40 260 40 C360 40 420 80 420 160 M160 160 C160 110 200 80 260 80 C320 80 360 110 360 160' },
+  rutinas:    { tint: '#4a6fb5', motif: 'M120 100 A60 60 0 1 1 119 100 M260 100 A100 100 0 1 1 259 100 M60 100 H460' },
+  perdidas:   { tint: '#a84448', motif: 'M40 60 L140 110 L200 90 L300 150 L380 130 L480 180 M40 90 L480 90' },
+  ansiedad:   { tint: '#7a5ba6', motif: 'M20 100 L80 100 L110 40 L150 160 L190 20 L230 180 L270 100 L330 100 L360 60 L400 140 L440 100 L500 100' },
+  confianza:  { tint: '#3f9e63', motif: 'M40 170 L160 120 L240 140 L360 70 L470 30 M430 30 L470 30 L470 70' }
 };
+function psicoCoverDataURI(key) {
+  const s = PSICO_COVER_STYLE[key] || PSICO_COVER_STYLE.disciplina;
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 200'>
+    <defs>
+      <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+        <stop offset='0' stop-color='#101728'/><stop offset='0.55' stop-color='#0b1020'/><stop offset='1' stop-color='#0a0f1c'/>
+      </linearGradient>
+      <radialGradient id='glow' cx='0.8' cy='0.15' r='0.9'>
+        <stop offset='0' stop-color='${s.tint}' stop-opacity='0.28'/><stop offset='0.6' stop-color='${s.tint}' stop-opacity='0.06'/><stop offset='1' stop-color='${s.tint}' stop-opacity='0'/>
+      </radialGradient>
+    </defs>
+    <rect width='520' height='200' fill='url(#bg)'/>
+    <rect width='520' height='200' fill='url(#glow)'/>
+    <g stroke='${s.tint}' stroke-opacity='0.10' stroke-width='1'>
+      <path d='M0 50 H520 M0 100 H520 M0 150 H520 M130 0 V200 M260 0 V200 M390 0 V200'/>
+    </g>
+    <path d='${s.motif}' fill='none' stroke='${s.tint}' stroke-opacity='0.55' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/>
+    <path d='M0 199 H520' stroke='${s.tint}' stroke-opacity='0.7' stroke-width='2'/>
+  </svg>`;
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg.replace(/\s+/g, ' '));
+}
 
 const PSICO_ICONS = {
   fomo: `<svg viewBox="0 0 100 100"><path d="M56 12 L30 56 L48 56 L42 88 L74 42 L54 42 Z" fill="currentColor" opacity="0.9"/></svg>`,
@@ -109,10 +132,9 @@ const PSICO_CAT_MAP = {
 function psychHeroHTML(category, sizeClass) {
   const key = PSICO_CAT_MAP[category] || 'disciplina';
   const icon = PSICO_ICONS[key];
-  const photo = PSICO_PHOTOS[key];
+  const photo = psicoCoverDataURI(key);
   return `
-    <div class="fin-hero cat-psico-${key} ${sizeClass}" style="background-image:url('${photo}')">
-      <div class="fin-hero-overlay"></div>
+    <div class="fin-hero cat-psico-${key} ${sizeClass}" style="background-image:url(&quot;${photo}&quot;)">
       <div class="fin-hero-icon-chip icon-psico-${key}">${icon}</div>
       <div class="fin-hero-trend trend-neutral">${category}</div>
     </div>

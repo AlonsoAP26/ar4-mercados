@@ -1117,19 +1117,53 @@
     return 'Buenas noches';
   }
 
+  // "Cómo funciona": guía de 4 pasos para que cualquier persona entienda la
+  // comunidad como una red social. Se puede cerrar; recuerda el cierre.
+  function onboardingHTML() {
+    try { if (localStorage.getItem('ar4OnboardDismissed') === '1') return ''; } catch (e) {}
+    const loggedIn = typeof netlifyIdentity !== 'undefined' && !!netlifyIdentity.currentUser();
+    const steps = [
+      { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg>', t: 'Crea tu perfil', d: 'Elige tu nombre de trader y un avatar de la colección.' },
+      { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>', t: 'Publica tu primera idea', d: 'Un análisis, una duda o una encuesta en el Foro.' },
+      { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 19c0-3 2.5-5 6-5s6 2 6 5"/><path d="M16 5.5a2.8 2.8 0 0 1 0 5.2M20.5 19c0-2.3-1.2-4-3-4.8"/></svg>', t: 'Sigue a otros traders', d: 'Tu feed "Para ti" se arma con quienes sigues.' },
+      { ic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/></svg>', t: 'Suma puntos y rango', d: 'Misiones diarias, racha y ranking: canjea por avatares y descuentos.' }
+    ];
+    return `
+      <div class="onboard-card" id="onboardCard">
+        <div class="onboard-head">
+          <h3>Así funciona la comunidad</h3>
+          <button class="onboard-close" id="onboardDismiss" aria-label="Cerrar guía" title="Cerrar">✕</button>
+        </div>
+        <div class="onboard-steps">
+          ${steps.map((s, i) => `<div class="onboard-step"><span class="onboard-step-num">${i + 1}</span><span class="onboard-step-ic">${s.ic}</span><div><strong>${s.t}</strong><span>${s.d}</span></div></div>`).join('')}
+        </div>
+        ${loggedIn ? '' : '<div class="onboard-cta"><button class="btn btn-gold" id="onboardJoinBtn">Crear mi cuenta gratis</button><span>Menos de un minuto · sin tarjeta</span></div>'}
+      </div>`;
+  }
+
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('#onboardDismiss')) {
+      try { localStorage.setItem('ar4OnboardDismissed', '1'); } catch (err) {}
+      const card = document.getElementById('onboardCard');
+      if (card) card.remove();
+    }
+    if (e.target.closest('#onboardJoinBtn') && typeof netlifyIdentity !== 'undefined') netlifyIdentity.open('signup');
+  });
+
   function communityPulseHTML() {
     return `
+      ${onboardingHTML()}
       <div class="community-pulse-grid">
         <div class="glass-card pulse-card">
-          <span class="pulse-label">🟢 Conectados ahora</span>
+          <span class="pulse-label"><span class="pulse-dot"></span> Conectados ahora</span>
           <span class="pulse-value" id="pulseOnlineCount">—</span>
         </div>
         <div class="glass-card pulse-card">
-          <span class="pulse-label">📝 Ideas publicadas</span>
+          <span class="pulse-label">Ideas publicadas</span>
           <span class="pulse-value" id="pulsePostsCount">—</span>
         </div>
         <div class="glass-card pulse-card">
-          <span class="pulse-label">👥 Traders registrados</span>
+          <span class="pulse-label">Traders registrados</span>
           <span class="pulse-value" id="pulseTradersCount">—</span>
         </div>
       </div>
@@ -1148,7 +1182,7 @@
 
   function newsIdeaCardHTML(item) {
     const href = item.kind === 'noticia' ? `noticia.html?slug=${encodeURIComponent(item.slug)}` : `idea.html?slug=${encodeURIComponent(item.slug)}`;
-    const tag = item.kind === 'noticia' ? '📰 Noticia' : '📈 Idea';
+    const tag = item.kind === 'noticia' ? 'Noticia' : 'Idea';
     return `
       <a class="pulse-news-card glass-card" href="${href}">
         <span class="pulse-news-tag">${tag} · ${escapeHtml(item.category || '')}</span>

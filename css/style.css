@@ -4339,3 +4339,101 @@ textarea.jrn-in { min-height: 84px; resize: vertical; line-height: 1.5; }
 .jrn-res.open { color:var(--gold-bright); background:rgba(212,175,55,0.1); border-color:rgba(212,175,55,0.3); }
 .instrument-badge.dir-long { color:#7fe0a8; }
 .instrument-badge.dir-short { color:#ff8a8a; }
+
+/* ===== Ruta institucional (Educación Premium) ===== */
+.inst-track { margin-top: 48px; padding: 28px; border-radius: 18px; border: 1px solid rgba(212,175,55,0.35); background: linear-gradient(165deg, rgba(212,175,55,0.10), rgba(212,175,55,0.02) 45%, rgba(10,15,28,0)); }
+.inst-track-eyebrow { display:inline-block; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold-bright); border:1px solid rgba(212,175,55,0.4); padding:4px 12px; border-radius:999px; margin-bottom:12px; background:rgba(212,175,55,0.08); }
+.inst-track-head { display:flex; gap:26px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; margin-bottom:22px; }
+.inst-track-head h2 { font-size:1.5rem; margin-bottom:10px; }
+.inst-track-head p { color:var(--text-mid); font-size:0.92rem; max-width:640px; }
+.inst-track-progress { display:flex; align-items:center; gap:12px; margin-top:12px; }
+.inst-track-cta { display:flex; flex-direction:column; gap:8px; align-items:flex-start; min-width:220px; }
+.inst-track-cta span { font-size:0.76rem; color:var(--text-low); }
+.inst-card { position:relative; padding:20px; border-radius:14px; background:linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015)); border:1px solid rgba(212,175,55,0.22); transition:all .18s ease; display:flex; flex-direction:column; gap:10px; }
+.inst-card:hover { border-color:rgba(212,175,55,0.55); transform:translateY(-2px); box-shadow:0 10px 30px rgba(0,0,0,0.3); }
+.inst-card h3 { font-size:1.02rem; line-height:1.35; margin:0; }
+.inst-card h3 a { color:var(--text-high); }
+.inst-card h3 a:hover { color:var(--gold-bright); }
+.inst-card p { color:var(--text-mid); font-size:0.85rem; margin:0; flex:1; }
+.inst-card-top { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.inst-num { font-family:var(--mono); font-size:1.15rem; font-weight:700; color:var(--gold-bright); opacity:0.85; }
+.inst-tag { display:inline-flex; align-items:center; gap:6px; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold-bright); border:1px solid rgba(212,175,55,0.35); padding:3px 10px; border-radius:999px; }
+.inst-tag svg { width:12px; height:12px; }
+.inst-tag-lock { color:var(--text-mid); border-color:rgba(255,255,255,0.18); }
+.inst-tag-done { color:#7fe0a8; border-color:rgba(46,204,113,0.4); background:rgba(46,204,113,0.08); }
+.inst-card.inst-done { border-color:rgba(46,204,113,0.3); }
+.inst-card-foot { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:4px; }
+
+/* Gate del módulo institucional (no Premium) */
+.inst-gate { margin-top:22px; padding:30px; border-radius:16px; text-align:center; border:1px solid rgba(212,175,55,0.4); background:linear-gradient(180deg, rgba(212,175,55,0.10), rgba(212,175,55,0.02)); }
+.inst-gate-ic { display:inline-flex; width:54px; height:54px; align-items:center; justify-content:center; border-radius:14px; background:rgba(212,175,55,0.14); border:1px solid rgba(212,175,55,0.4); margin-bottom:14px; }
+.inst-gate-ic svg { width:26px; height:26px; color:var(--gold-bright); }
+.inst-gate h3 { font-size:1.2rem; margin-bottom:10px; }
+.inst-gate p { color:var(--text-mid); max-width:560px; margin:0 auto 14px; font-size:0.92rem; }
+.inst-gate-list { list-style:none; padding:0; margin:0 auto 20px; max-width:520px; text-align:left; }
+.inst-gate-list li { position:relative; padding:6px 0 6px 26px; color:var(--text-mid); font-size:0.88rem; }
+.inst-gate-list li::before { content:''; position:absolute; left:0; top:10px; width:14px; height:14px; border-radius:50%; border:1.5px solid var(--gold-bright); background:radial-gradient(circle at center, rgba(212,175,55,0.5) 0%, transparent 60%); }
+
+/* ===== Diploma ===== */
+.diploma { background:#0d1322; border-radius:6px; padding:14px; box-shadow:0 24px 60px rgba(0,0,0,0.5); }
+.diploma-inner { border:2px solid #d4af37; outline:1px solid rgba(212,175,55,0.45); outline-offset:6px; border-radius:3px; padding:46px 40px 30px; text-align:center; background: radial-gradient(ellipse at 50% 0%, rgba(212,175,55,0.07), transparent 55%), linear-gradient(180deg, #0e1526, #0a0f1c); }
+.diploma-brand { display:flex; flex-direction:column; align-items:center; gap:4px; margin-bottom:22px; }
+.diploma-brand-sub { font-family:var(--mono); font-size:0.62rem; letter-spacing:0.4em; color:var(--text-low); }
+.diploma-title { font-family:'Cormorant Garamond', Georgia, serif; font-size:2.3rem; font-weight:600; color:var(--gold-bright); letter-spacing:0.06em; margin-bottom:18px; }
+.diploma-grant { font-size:0.82rem; color:var(--text-low); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:10px; }
+.diploma-name { font-family:'Cormorant Garamond', Georgia, serif; font-size:2.1rem; font-style:italic; color:var(--text-high); margin:6px 0 4px; }
+.diploma-line { width:280px; max-width:70%; height:1px; margin:0 auto 18px; background:linear-gradient(90deg, transparent, rgba(212,175,55,0.8), transparent); }
+.diploma-module { font-family:var(--font-head, 'Plus Jakarta Sans'), sans-serif; font-size:1.28rem; font-weight:700; color:var(--text-high); max-width:620px; margin:6px auto 6px; line-height:1.35; }
+.diploma-track { font-size:0.8rem; color:var(--gold-bright); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:26px; }
+.diploma-foot { display:flex; align-items:center; justify-content:space-between; gap:16px; max-width:640px; margin:0 auto 16px; }
+.diploma-foot-col { display:flex; flex-direction:column; gap:4px; min-width:150px; }
+.diploma-foot-val { font-family:var(--mono); font-size:0.86rem; color:var(--text-high); border-bottom:1px solid rgba(212,175,55,0.5); padding-bottom:6px; }
+.diploma-foot-lbl { font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-low); }
+.diploma-legal { font-size:0.66rem; color:var(--text-low); max-width:640px; margin:0 auto; line-height:1.5; }
+.diploma-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+
+/* Modal de nombre para el diploma */
+.diploma-modal-overlay { position:fixed; inset:0; z-index:4000; background:rgba(5,8,16,0.8); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; padding:20px; }
+.diploma-modal { background:#0e1526; border:1px solid rgba(212,175,55,0.4); border-radius:16px; padding:26px; max-width:440px; width:100%; }
+.diploma-modal h3 { margin-bottom:8px; font-size:1.1rem; }
+.diploma-modal p { color:var(--text-mid); font-size:0.86rem; margin-bottom:14px; }
+.diploma-modal input { width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,0.14); background:rgba(255,255,255,0.04); color:var(--text-high); font-size:0.95rem; }
+.diploma-modal-actions { display:flex; gap:10px; margin-top:16px; }
+.diploma-btn { display:inline-flex; align-items:center; gap:8px; margin-left:10px; }
+.diploma-btn svg { width:17px; height:17px; }
+
+/* Impresión del diploma */
+@media print {
+  .no-print, .site-header, .site-footer, .ticker-bar, #chatbotWidget, .chat-greeting { display:none !important; }
+  body { background:#0a0f1c !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .section { padding:0 !important; }
+  .container { max-width:100% !important; padding:0 !important; }
+  .diploma { box-shadow:none; page-break-inside:avoid; }
+}
+@media (max-width: 640px) {
+  .diploma-inner { padding:30px 16px 22px; }
+  .diploma-title { font-size:1.7rem; }
+  .diploma-name { font-size:1.5rem; }
+  .diploma-foot { flex-direction:column; }
+  .inst-track { padding:18px; }
+}
+
+/* ===== Comunidad: guía "así funciona" + refinamientos ===== */
+.onboard-card { margin-bottom:18px; padding:20px 22px; border-radius:16px; border:1px solid rgba(212,175,55,0.3); background:linear-gradient(160deg, rgba(212,175,55,0.08), rgba(255,255,255,0.02) 60%); }
+.onboard-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.onboard-head h3 { font-size:1.02rem; }
+.onboard-close { background:none; border:1px solid rgba(255,255,255,0.14); color:var(--text-low); width:28px; height:28px; border-radius:8px; cursor:pointer; font-size:0.8rem; transition:all .15s ease; }
+.onboard-close:hover { color:#ff8a8a; border-color:#ff8a8a; }
+.onboard-steps { display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; }
+.onboard-step { display:flex; gap:10px; align-items:flex-start; position:relative; padding:12px; border-radius:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); }
+.onboard-step-num { position:absolute; top:-8px; left:-6px; width:20px; height:20px; display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:0.68rem; font-weight:700; color:#0a0f1c; background:linear-gradient(160deg, var(--gold-bright), var(--gold)); border-radius:50%; }
+.onboard-step-ic { flex:0 0 auto; display:inline-flex; width:34px; height:34px; align-items:center; justify-content:center; border-radius:9px; background:rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.3); }
+.onboard-step-ic svg { width:17px; height:17px; color:var(--gold-bright); }
+.onboard-step strong { display:block; font-size:0.84rem; margin-bottom:2px; color:var(--text-high); }
+.onboard-step span:not(.onboard-step-ic):not(.onboard-step-num) { font-size:0.74rem; color:var(--text-mid); line-height:1.4; }
+.onboard-cta { display:flex; align-items:center; gap:14px; margin-top:16px; flex-wrap:wrap; }
+.onboard-cta span { font-size:0.76rem; color:var(--text-low); }
+.pulse-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#2ecc71; box-shadow:0 0 8px rgba(46,204,113,0.8); animation:pulseDot 2s infinite; vertical-align:middle; margin-right:2px; }
+@keyframes pulseDot { 0%,100% { opacity:1; } 50% { opacity:0.45; } }
+@media (max-width: 860px) { .onboard-steps { grid-template-columns:1fr 1fr; } }
+@media (max-width: 480px) { .onboard-steps { grid-template-columns:1fr; } }
