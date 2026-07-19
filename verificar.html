@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ca9e5a14c2a14f1886b00149be75dd59"}'></script><!-- End Cloudflare Web Analytics -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificar un diploma — AR4 Mercados</title>
+<meta name="description" content="Comprueba la autenticidad de un diploma emitido por AR4 Mercados con su ID de certificado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=52">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AR4 Mercados">
+<meta property="og:title" content="Verificar un diploma — AR4 Mercados">
+<meta property="og:description" content="Comprueba la autenticidad de un diploma emitido por AR4 Mercados con su ID de certificado.">
+<meta property="og:url" content="https://ar4mercados.com/verificar.html">
+<meta property="og:image" content="https://ar4mercados.com/og-image.jpg">
+<meta property="og:image:secure_url" content="https://ar4mercados.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ar4mercados.com/og-image.jpg">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 150 40" width="120" height="32">
+        <defs><linearGradient id="lgGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fbe9b0"/><stop offset="45%" stop-color="#f0c75e"/><stop offset="100%" stop-color="#b8860b"/></linearGradient></defs>
+        <text x="0" y="29" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="28" letter-spacing="-0.5" fill="url(#lgGrad)">AR4</text>
+        <path d="M79 21 L91 10 L101 17 L117 3" fill="none" stroke="url(#lgGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="117" cy="3" r="2.3" fill="url(#lgGrad)"/>
+        <path d="M0 35 L75 35" stroke="url(#lgGrad)" stroke-width="1.3" opacity="0.5"/>
+      </svg>
+      <span class="logo-text">MERCADOS</span>
+    </a>
+  </div>
+</header>
+
+<section class="section" style="padding-top:36px;">
+  <div class="container" style="max-width:720px;">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / <a href="educacion.html">Educación</a> / Verificación de diplomas</div>
+
+    <h1 style="margin:16px 0 8px;">Verificación de <span class="gold">diplomas</span></h1>
+    <p style="color:var(--text-mid);max-width:560px;">Cada diploma de AR4 Mercados se emite con un ID único registrado en nuestros servidores. Introduce el ID del certificado (impreso en el diploma) para comprobar su autenticidad: a nombre de quién se emitió, qué programa acredita, en qué fecha y con qué calificación.</p>
+
+    <div class="verif-box">
+      <label for="certInput" style="font-size:0.85rem;color:var(--text-mid);">ID del certificado</label>
+      <div class="verif-row">
+        <input type="text" id="certInput" maxlength="16" placeholder="AR4-BAS-XXXXXXXX" autocomplete="off" spellcheck="false">
+        <button class="btn btn-gold" id="certBtn">Verificar</button>
+      </div>
+      <div id="certResult"></div>
+    </div>
+
+    <p class="footer-text" style="margin-top:18px;">Los diplomas de AR4 Mercados son certificados educativos de carácter formativo. Acreditan la finalización y aprobación de un programa de estudio en esta plataforma; no constituyen una titulación oficial ni acreditación profesional.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-text">© <span id="year"></span> AR4 Mercados. Contenido educativo; no constituye asesoría financiera.</p>
+  </div>
+</footer>
+
+<script src="js/main.js?v=5"></script>
+<script>
+(function () {
+  const input = document.getElementById('certInput');
+  const btn = document.getElementById('certBtn');
+  const out = document.getElementById('certResult');
+  const CURSO_LBL = {
+    basico: 'Programa de Formación Integral en Trading (30 módulos)',
+    institucional: 'Programa Avanzado de Operativa Institucional (50 módulos)'
+  };
+  function esc(s) { const d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+
+  async function verify() {
+    const cert = input.value.trim().toUpperCase();
+    if (!cert) return;
+    out.innerHTML = '<p class="footer-text" style="margin-top:12px;">Consultando el registro...</p>';
+    btn.disabled = true;
+    try {
+      const res = await fetch('/.netlify/functions/diploma-verify?cert=' + encodeURIComponent(cert));
+      const d = await res.json();
+      if (!d.success) throw new Error(d.error || 'Error');
+      if (d.valido) {
+        out.innerHTML = `
+          <div class="verif-ok">
+            <div class="verif-ok-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg> Diploma válido</div>
+            <div class="verif-grid">
+              <div><span>Emitido a</span><strong>${esc(d.nombre)}</strong></div>
+              <div><span>Programa</span><strong>${esc(CURSO_LBL[d.curso] || d.curso)}</strong></div>
+              <div><span>Fecha de emisión</span><strong>${new Date(d.fecha).toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' })}</strong></div>
+              <div><span>Calificación final</span><strong>${esc(d.nota)} / 100</strong></div>
+              <div><span>Certificado</span><strong>${esc(cert)}</strong></div>
+            </div>
+          </div>`;
+      } else {
+        out.innerHTML = `<div class="verif-bad"><strong>✕ No válido.</strong> ${esc(d.motivo || 'No existe ningún diploma emitido con ese ID.')} Revisa que el código esté bien escrito.</div>`;
+      }
+    } catch (e) {
+      out.innerHTML = '<div class="verif-bad">No se pudo consultar el registro en este momento. Intenta de nuevo en unos minutos.</div>';
+    }
+    btn.disabled = false;
+  }
+
+  btn.addEventListener('click', verify);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') verify(); });
+  const pre = new URLSearchParams(window.location.search).get('cert');
+  if (pre) { input.value = pre.toUpperCase(); verify(); }
+})();
+</script>
+</body>
+</html>

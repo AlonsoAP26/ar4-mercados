@@ -1,65 +1,103 @@
-// AR4 Mercados — Emisión del diploma de módulo.
-// El diploma solo se emite si el módulo figura como completado en el perfil del
-// usuario (verificación real contra el servidor). El nombre nunca viaja en la URL:
-// se guarda localmente en el dispositivo del alumno.
+// AR4 Mercados — Emisión del diploma por PROGRAMA (no por módulo).
+// El servidor valida: todos los módulos completados + promedio de notas
+// aprobatorio + nombre real confirmado en la cuenta. El diploma queda
+// registrado con un ID verificable públicamente en verificar.html.
 (function () {
   const stateEl = document.getElementById('diplomaState');
   const wrap = document.getElementById('diplomaWrap');
   if (!stateEl || !wrap) return;
 
-  const TRACK_LABEL = {
-    basico: 'Camino de aprendizaje · Nivel Básico',
-    intermedio: 'Camino de aprendizaje · Nivel Intermedio',
-    avanzado: 'Camino de aprendizaje · Nivel Avanzado',
-    institucional: 'Ruta Institucional · AR4 Premium'
+  const CURSO_INFO = {
+    basico: {
+      titulo: 'Programa de Formación Integral en Trading',
+      track: 'Programa completo · 30 módulos · Educación AR4',
+      diplomaTitle: 'Diploma de Formación Integral'
+    },
+    institucional: {
+      titulo: 'Programa Avanzado de Operativa Institucional',
+      track: 'Programa completo · 50 módulos · Ruta Institucional AR4 Premium',
+      diplomaTitle: 'Diploma Institucional'
+    }
   };
 
   function msg(html) { stateEl.innerHTML = `<div class="community-form-msg">${html}</div>`; }
 
-  // ID corto y determinista (usuario + módulo): permite re-generar siempre el mismo.
-  function certId(userId, slug) {
-    const s = userId + '::' + slug;
-    let h1 = 0x811c9dc5, h2 = 0x1000193;
-    for (let i = 0; i < s.length; i++) {
-      h1 = Math.imul(h1 ^ s.charCodeAt(i), 16777619) >>> 0;
-      h2 = (Math.imul(h2, 31) + s.charCodeAt(i)) >>> 0;
-    }
-    return ('AR4-' + h1.toString(16).toUpperCase().padStart(8, '0') + '-' + (h2 % 10000).toString().padStart(4, '0'));
-  }
-
-  function askName(cb) {
+  function askConfirmName(sugerido, onDone) {
     const overlay = document.createElement('div');
     overlay.className = 'diploma-modal-overlay';
     overlay.innerHTML = `
       <div class="diploma-modal">
-        <h3>Tu nombre para el diploma</h3>
-        <p>Escribe tu <strong>nombre y apellidos reales</strong>, tal como quieres que aparezcan impresos. Solo se guarda en tu dispositivo.</p>
+        <h3>Confirma tu nombre real</h3>
+        <p>Escribe tu <strong>nombre y apellidos reales</strong>, tal como figuran en tu documento de identidad. Este nombre quedará impreso en tu diploma y aparecerá en la <strong>verificación pública</strong> del certificado. <strong>No podrás cambiarlo después</strong> — así evitamos diplomas con nombres falsos.</p>
         <input type="text" id="dpNameInput" maxlength="60" placeholder="Ej. María Fernanda Rodríguez Torres" autocomplete="name">
+        <p class="footer-text" id="dpNameErr" style="color:#ff8a8a;min-height:1em;margin:6px 0 0;"></p>
         <div class="diploma-modal-actions">
-          <button class="btn btn-gold" id="dpNameOk">Continuar</button>
+          <button class="btn btn-gold" id="dpNameOk">Confirmar mi nombre</button>
           <a class="btn btn-outline" href="educacion.html">Cancelar</a>
         </div>
       </div>`;
     document.body.appendChild(overlay);
     const input = overlay.querySelector('#dpNameInput');
-    try { input.value = localStorage.getItem('ar4DiplomaName') || ''; } catch (e) {}
+    const errEl = overlay.querySelector('#dpNameErr');
+    if (sugerido) input.value = sugerido;
     input.focus();
-    overlay.querySelector('#dpNameOk').addEventListener('click', () => {
+    overlay.querySelector('#dpNameOk').addEventListener('click', async () => {
       const name = input.value.trim();
-      if (name.length < 5 || !name.includes(' ')) {
-        input.style.borderColor = '#ff8a8a';
-        input.placeholder = 'Escribe nombre y apellido completos';
+      if (name.length < 7 || !name.includes(' ') || /\d/.test(name)) {
+        errEl.textContent = 'Escribe nombre y apellidos completos, solo letras.';
         return;
       }
-      try { localStorage.setItem('ar4DiplomaName', name); } catch (e) {}
-      overlay.remove();
-      cb(name);
+      errEl.textContent = '';
+      try {
+        const jwt = await netlifyIdentity.currentUser().jwt();
+        const res = await fetch('/.netlify/functions/diploma-status', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + jwt },
+          body: JSON.stringify({ action: 'set-name', name })
+        });
+        const data = await res.json();
+        if (!data.success) { errEl.textContent = data.error || 'No se pudo guardar.'; return; }
+        overlay.remove();
+        onDone(data.nombre);
+      } catch (e) { errEl.textContent = 'Error de conexión. Intenta de nuevo.'; }
+    });
+  }
+
+  function render(curso, dip) {
+    const info = CURSO_INFO[curso];
+    document.getElementById('dpName').textContent = dip.nombre;
+    document.getElementById('dpModule').textContent = info.titulo;
+    document.getElementById('dpTrack').textContent = info.track;
+    const notaEl = document.getElementById('dpNota');
+    if (notaEl) notaEl.textContent = 'Calificación final: ' + dip.nota + ' / 100';
+    document.getElementById('dpDate').textContent = new Date(dip.fecha).toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' });
+    document.getElementById('dpId').textContent = dip.cert;
+    const verEl = document.getElementById('dpVerify');
+    if (verEl) verEl.textContent = 'ar4mercados.com/verificar.html?cert=' + dip.cert;
+    document.title = info.diplomaTitle + ' — AR4 Mercados';
+    const titleEl = document.querySelector('.diploma-title');
+    if (titleEl) titleEl.textContent = info.diplomaTitle;
+    if (curso === 'institucional') document.getElementById('diplomaCard').classList.add('diploma-inst');
+    stateEl.innerHTML = '';
+    wrap.hidden = false;
+    const shareBtn = document.getElementById('dpShareBtn');
+    if (shareBtn) shareBtn.addEventListener('click', async () => {
+      const url = 'https://ar4mercados.com/verificar.html?cert=' + dip.cert;
+      try { await navigator.clipboard.writeText(url); shareBtn.textContent = '✔ Enlace copiado'; setTimeout(() => { shareBtn.textContent = 'Copiar enlace de verificación'; }, 1800); }
+      catch (e) { prompt('Copia el enlace de verificación:', url); }
     });
   }
 
   async function init() {
-    const slug = new URLSearchParams(window.location.search).get('slug');
-    if (!slug) { msg('Falta el módulo. Vuelve a <a href="educacion.html">Educación</a> y genera tu diploma desde un módulo completado.'); return; }
+    const params = new URLSearchParams(window.location.search);
+    const legacySlug = params.get('slug');
+    let curso = params.get('curso');
+
+    if (legacySlug && !curso) {
+      msg('Los diplomas ahora se otorgan al <strong>completar y aprobar el programa completo</strong> (30 módulos gratuitos, o los 50 de la ruta institucional), no por módulo suelto — así tienen validez real y verificación pública. Revisa tu avance en la <a href="educacion.html#diplomaRuta">Ruta del Diploma</a>.');
+      return;
+    }
+    if (curso !== 'institucional') curso = 'basico';
 
     if (typeof netlifyIdentity === 'undefined' || !netlifyIdentity.currentUser()) {
       msg('Inicia sesión para emitir tu diploma. <a href="educacion.html">Volver a Educación</a>');
@@ -67,58 +105,61 @@
       return;
     }
     const user = netlifyIdentity.currentUser();
+    msg('Verificando tu programa: módulos completados y promedio de notas...');
 
-    msg('Verificando tu módulo completado...');
-
-    // Cargar catálogos y perfil en paralelo.
-    let modules = [], premium = [], completed = [];
+    let status;
     try {
-      const [r1, r2] = await Promise.all([
-        fetch('data/educacion.json'),
-        fetch('data/educacion-premium.json')
-      ]);
-      modules = r1.ok ? await r1.json() : [];
-      premium = r2.ok ? await r2.json() : [];
       const jwt = await user.jwt();
-      const pres = await fetch('/.netlify/functions/community-profile', { headers: { 'Authorization': 'Bearer ' + jwt } });
-      const pdata = await pres.json();
-      if (pdata.success && pdata.profile) completed = pdata.profile.completed_modules || [];
+      const res = await fetch('/.netlify/functions/diploma-status', { headers: { Authorization: 'Bearer ' + jwt } });
+      status = await res.json();
+      if (!status.success) throw new Error(status.error || 'Error');
     } catch (e) {
       msg('No pudimos verificar tu progreso. Revisa tu conexión e intenta de nuevo.');
       return;
     }
 
-    const m = modules.find((x) => x.slug === slug) || premium.find((x) => x.slug === slug);
-    if (!m) { msg('Módulo no encontrado. <a href="educacion.html">Volver a Educación</a>'); return; }
+    // ¿Ya emitido? Se re-muestra siempre igual.
+    if (status.diplomas && status.diplomas[curso]) { render(curso, status.diplomas[curso]); return; }
 
-    if (!completed.includes(slug)) {
-      msg(`Aún no has completado <strong>${m.title}</strong>. Termina el módulo y márcalo como completado para emitir tu diploma. <a href="modulo.html?slug=${encodeURIComponent(slug)}">Ir al módulo →</a>`);
+    if (!status.elegible[curso]) {
+      const p = status.progreso, n = status.notas;
+      const falta = [];
+      if (curso === 'basico') {
+        if (p.freeDone < p.freeTotal) falta.push(`completar los 30 módulos (llevas ${p.freeDone}/${p.freeTotal})`);
+        if (n.registradasFree < p.freeTotal) falta.push(`registrar la nota del cuestionario en los 30 módulos (llevas ${n.registradasFree}/${p.freeTotal})`);
+        if (n.promedioBasico != null && n.promedioBasico < status.aprobadoMin) falta.push(`subir tu promedio a ${status.aprobadoMin}/100 (tienes ${n.promedioBasico})`);
+      } else {
+        if (p.freeDone < p.freeTotal || p.premDone < p.premTotal) falta.push(`completar los 50 módulos (llevas ${p.freeDone + p.premDone}/50)`);
+        if (n.registradasAll < 50) falta.push(`registrar la nota en los 50 cuestionarios (llevas ${n.registradasAll}/50)`);
+        if (n.promedioInstitucional != null && n.promedioInstitucional < status.aprobadoMin) falta.push(`subir tu promedio a ${status.aprobadoMin}/100 (tienes ${n.promedioInstitucional})`);
+      }
+      msg(`Aún no puedes emitir este diploma. Te falta: <strong>${falta.join('; ')}</strong>. <a href="educacion.html#diplomaRuta">Ver mi Ruta del Diploma →</a>`);
       return;
     }
 
-    function render(name) {
-      document.getElementById('dpName').textContent = name;
-      document.getElementById('dpModule').textContent = m.title;
-      document.getElementById('dpTrack').textContent = TRACK_LABEL[m.level] || 'Educación AR4';
-      document.getElementById('dpDate').textContent = new Date().toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' });
-      document.getElementById('dpId').textContent = certId(user.id || user.email || 'ar4', slug);
-      document.title = 'Diploma: ' + m.title + ' — AR4 Mercados';
-      // Los módulos de la ruta institucional emiten el diploma dorado.
-      if (m.level === 'institucional') {
-        document.getElementById('diplomaCard').classList.add('diploma-inst');
-        const titleEl = document.querySelector('.diploma-title');
-        if (titleEl) titleEl.textContent = 'Diploma Institucional';
-      }
-      stateEl.innerHTML = '';
-      wrap.hidden = false;
+    async function claim() {
+      msg('Emitiendo tu diploma...');
+      try {
+        const jwt = await user.jwt();
+        const res = await fetch('/.netlify/functions/diploma-status', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + jwt },
+          body: JSON.stringify({ action: 'claim', curso })
+        });
+        const data = await res.json();
+        if (!data.success) {
+          if (data.needName) { askConfirmName(status.nombreSugerido, claim); return; }
+          throw new Error(data.error || 'Error');
+        }
+        render(curso, data.diploma);
+      } catch (e) { msg('No se pudo emitir el diploma: ' + (e.message || e)); }
     }
 
-    let name = '';
-    try { name = localStorage.getItem('ar4DiplomaName') || ''; } catch (e) {}
-    if (name) render(name); else askName(render);
+    if (!status.nombre) askConfirmName(status.nombreSugerido, claim);
+    else claim();
 
-    document.getElementById('dpPrintBtn').addEventListener('click', () => window.print());
-    document.getElementById('dpRenameBtn').addEventListener('click', () => askName(render));
+    const printBtn = document.getElementById('dpPrintBtn');
+    if (printBtn) printBtn.addEventListener('click', () => window.print());
   }
 
   if (typeof netlifyIdentity !== 'undefined') {

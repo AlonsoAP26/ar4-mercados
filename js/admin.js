@@ -113,46 +113,60 @@
     const user = netlifyIdentity.currentUser();
     if (!user) return;
     try {
-      const [catalog, jwt] = await Promise.all([loadModuleCatalog(), user.jwt()]);
+      const jwt = await user.jwt();
       const res = await fetch('/.netlify/functions/admin-diplomas', { headers: { Authorization: 'Bearer ' + jwt } });
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || ('Error ' + res.status));
-      const withDiplomas = data.profiles.filter((p) => p.modules.length);
-      const totalDiplomas = data.profiles.reduce((s, p) => s + p.modules.length, 0);
-      if (!withDiplomas.length) {
-        diplomasEl.innerHTML = '<p class="footer-text">Todavía nadie ha completado módulos. Cuando lo hagan, sus diplomas aparecerán aquí.</p>';
+      const activos = data.profiles.filter((p) => p.modules.length || (p.diplomas && Object.keys(p.diplomas).length));
+      const CURSO_LBL = { basico: 'Formación Integral (30 módulos)', institucional: 'Institucional (50 módulos)' };
+      if (!activos.length) {
+        diplomasEl.innerHTML = '<p class="footer-text">Todavía nadie ha avanzado en los programas. Aquí verás el progreso, las notas, el nombre verificado y los diplomas emitidos de cada usuario.</p>';
         return;
       }
-      diplomasEl.innerHTML = `
-        <p class="footer-text" style="margin-bottom:12px;"><strong style="color:var(--gold-bright);">${totalDiplomas}</strong> diploma(s) emitidos entre <strong>${withDiplomas.length}</strong> usuario(s).</p>
-        ${withDiplomas.map((p) => `
+      diplomasEl.innerHTML = activos.map((p) => {
+        const dips = Object.keys(p.diplomas || {});
+        const prog = p.progreso ? `${p.progreso.freeDone}/30 gratis · ${p.progreso.premDone}/20 premium` : `${p.modules.length} módulos`;
+        return `
           <div class="admin-dip-card">
             <div class="admin-dip-head">
               <strong>@${esc(p.username)}</strong>
-              <span class="news-meta">${p.modules.length} diploma(s) · ${p.points} pts · rango ${esc(p.rank || 'básico')}</span>
+              <span class="news-meta">${p.nombre ? 'Nombre verificado: ' + esc(p.nombre) : 'Sin nombre verificado aún'} · ${prog} · promedio ${p.promedioBasico != null ? p.promedioBasico + '/100' : '—'} · ${p.points} pts</span>
             </div>
-            <div class="admin-dip-chips">
-              ${p.modules.map((slug) => {
-                const m = catalog[slug];
-                const inst = m && m.level === 'institucional';
-                return `<span class="admin-dip-chip${inst ? ' admin-dip-inst' : ''}" title="${esc(m ? m.title : slug)}">
-                  ${esc(m ? (m.order + '. ' + m.title) : slug)}${inst ? ' · INSTITUCIONAL' : ''}
-                  <button class="admin-dip-revoke" data-profile="${p.id}" data-slug="${esc(slug)}" title="Revocar este diploma">✕</button>
-                </span>`;
-              }).join('')}
-            </div>
-          </div>`).join('')}
-      `;
+            ${dips.length ? `<div class="admin-dip-chips">${dips.map((c) => `
+              <span class="admin-dip-chip${c === 'institucional' ? ' admin-dip-inst' : ''}">
+                DIPLOMA ${esc(CURSO_LBL[c] || c)} · ${esc((p.diplomas[c] || {}).cert || '')} · nota ${esc(String((p.diplomas[c] || {}).nota != null ? (p.diplomas[c] || {}).nota : '—'))}
+                <button class="admin-dip-revoke" data-userid="${esc(p.userId || '')}" data-curso="${esc(c)}" title="Revocar este diploma">✕</button>
+              </span>`).join('')}</div>` : '<p class="footer-text" style="margin:6px 0 0;">Sin diplomas de programa todavía (se emiten al aprobar el programa completo).</p>'}
+            ${p.nombre && p.userId ? `<button class="filter-chip admin-name-reset" data-userid="${esc(p.userId)}" style="margin-top:8px;">Permitir corregir nombre</button>` : ''}
+          </div>`;
+      }).join('');
       diplomasEl.querySelectorAll('.admin-dip-revoke').forEach((btn) => {
         btn.addEventListener('click', async () => {
-          if (!confirm('¿Revocar este diploma? El usuario perderá el módulo como completado (los puntos ya otorgados no se descuentan).')) return;
+          if (!confirm('¿Revocar este diploma emitido? El usuario tendrá que reclamarlo de nuevo (solo podrá si sigue cumpliendo los requisitos).')) return;
           btn.disabled = true;
           try {
             const jwt2 = await netlifyIdentity.currentUser().jwt();
             const r = await fetch('/.netlify/functions/admin-diplomas', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + jwt2 },
-              body: JSON.stringify({ action: 'revoke', profileId: btn.dataset.profile, slug: btn.dataset.slug })
+              body: JSON.stringify({ action: 'revoke-diploma', userId: btn.dataset.userid, curso: btn.dataset.curso })
+            });
+            const d = await r.json();
+            if (!d.success) throw new Error(d.error || 'Error');
+            loadDiplomas();
+          } catch (e) { alert(String(e.message || e)); btn.disabled = false; }
+        });
+      });
+      diplomasEl.querySelectorAll('.admin-name-reset').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          if (!confirm('¿Borrar el nombre verificado de este usuario para que pueda escribirlo de nuevo? Úsalo solo si el nombre es falso o tiene un error real.')) return;
+          btn.disabled = true;
+          try {
+            const jwt2 = await netlifyIdentity.currentUser().jwt();
+            const r = await fetch('/.netlify/functions/admin-diplomas', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + jwt2 },
+              body: JSON.stringify({ action: 'reset-name', userId: btn.dataset.userid })
             });
             const d = await r.json();
             if (!d.success) throw new Error(d.error || 'Error');

@@ -1,67 +1,18 @@
 const { supabaseRequest } = require('./_supabase');
 const { awardPoints } = require('./_gamification');
+const {
+  MODULE_POINTS, PREMIUM_MODULE_POINTS, APROBADO_MIN,
+  getIdentity, identityGetUser, identityUpdateAppMeta
+} = require('./_diplomas');
 
-// Espejo de data/educacion.json (slug -> puntos), para no confiar en el valor que mande el cliente.
-const MODULE_POINTS = {
-  // Básico (1-10)
-  'que-es-el-trading': 10,
-  'tipos-de-mercados-y-activos': 10,
-  'como-funciona-un-broker': 10,
-  'el-spread-y-los-costos': 10,
-  'apalancamiento-y-margen': 10,
-  'pips-lotes-y-valor': 10,
-  'plataformas-y-tipos-de-orden': 10,
-  'velas-japonesas': 10,
-  'patrones-de-velas-basicos': 10,
-  'demo-antes-que-real': 10,
-  // Intermedio (11-20)
-  'soporte-y-resistencia': 15,
-  'tendencias-y-estructura-de-mercado': 15,
-  'lineas-de-tendencia-y-canales': 15,
-  'medias-moviles-a-fondo': 15,
-  'rsi-y-divergencias': 15,
-  'macd-y-momentum': 15,
-  'indicadores-basicos': 15,
-  'figuras-geometricas-chartismo': 15,
-  'fibonacci-retrocesos': 15,
-  'gestion-de-riesgo-tamano-posicion': 15,
-  // Avanzado (21-30)
-  'ratio-riesgo-beneficio': 20,
-  'multiples-temporalidades': 20,
-  'volumen-y-order-flow': 20,
-  'smart-money-concepts-intro': 20,
-  'price-action-sin-indicadores': 20,
-  'correlaciones-y-diversificacion': 20,
-  'sesiones-de-mercado-horarios': 20,
-  'plan-de-trading-y-bitacora': 20,
-  'psicologia-del-trading-introduccion': 20,
-  'backtesting-y-mejora-continua': 20
-};
-
-// Espejo de data/educacion-premium.json — ruta institucional, requiere Premium activo.
-const PREMIUM_MODULE_POINTS = {
-  'mesa-institucional-como-opera': 30,
-  'microestructura-libro-de-ordenes': 30,
-  'liquidez-institucional-stop-hunts': 30,
-  'order-blocks-validacion': 30,
-  'fair-value-gaps-ineficiencias': 30,
-  'estructura-avanzada-bos-choch': 30,
-  'volume-profile-poc-va': 30,
-  'market-profile-subastas': 30,
-  'vwap-institucional': 30,
-  'order-flow-delta-lectura': 30,
-  'informe-cot-posicionamiento': 30,
-  'sesiones-killzones-liquidez': 30,
-  'intermercado-dxy-bonos': 30,
-  'macro-tasas-flujos': 30,
-  'riesgo-institucional-var-correlacion': 30,
-  'ejecucion-profesional-twap-vwap': 30,
-  'dark-pools-bloques': 30,
-  'opciones-gamma-dealers': 30,
-  'backtesting-walk-forward': 30,
-  'proceso-desk-playbook-metricas': 30
-};
-
+// Completar módulos y registrar notas de cuestionario.
+// POST { slug, correct, total, scoreOnly }
+//  - Con scoreOnly: solo registra la nota (0-100) en app_metadata.quiz_scores.
+//  - Sin scoreOnly: marca el módulo como completado (+ puntos). Requiere haber
+//    rendido el cuestionario antes (nota registrada) — el diploma del programa
+//    se calcula con esas notas, así que no hay completado sin evaluación.
+// Regla de nota: se conserva la primera nota aprobatoria (>= APROBADO_MIN);
+// mientras la nota sea menor, cada nuevo intento la reemplaza (recuperación).
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };
 
@@ -73,14 +24,44 @@ exports.handler = async (event, context) => {
     const slug = (body.slug || '').trim();
     let reward = MODULE_POINTS[slug];
     if (!reward && PREMIUM_MODULE_POINTS[slug]) {
-      // Módulo de la ruta institucional: exige Premium activo en el servidor,
-      // para que el diploma y los puntos solo se otorguen a quien tiene acceso real.
+      // Módulo de la ruta institucional: exige Premium activo en el servidor.
       const am = user.app_metadata || {};
       const isPremium = !!(am.premium && (!am.premium_until || new Date(am.premium_until).getTime() > Date.now()));
       if (!isPremium) return { statusCode: 403, body: JSON.stringify({ success: false, error: 'Este módulo pertenece a la ruta institucional Premium.' }) };
       reward = PREMIUM_MODULE_POINTS[slug];
     }
     if (!reward) return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Módulo inválido.' }) };
+
+    // --- Nota del cuestionario (si viene en la petición) ---
+    const identity = getIdentity(context);
+    let scores = {};
+    if (identity) {
+      try {
+        const fresh = await identityGetUser(identity, user.sub);
+        scores = (fresh.app_metadata && fresh.app_metadata.quiz_scores) || {};
+      } catch (e) { scores = (user.app_metadata && user.app_metadata.quiz_scores) || {}; }
+    }
+    const correct = Number(body.correct), total = Number(body.total);
+    if (Number.isFinite(correct) && Number.isFinite(total) && total >= 3 && total <= 15 && correct >= 0 && correct <= total) {
+      const pct = Math.round((correct / total) * 100);
+      const prev = scores[slug];
+      if (identity && (typeof prev !== 'number' || prev < APROBADO_MIN)) {
+        scores = { ...scores, [slug]: pct };
+        await identityUpdateAppMeta(identity, user.sub, { quiz_scores: scores });
+      }
+    }
+    const nota = typeof scores[slug] === 'number' ? scores[slug] : null;
+
+    if (body.scoreOnly) {
+      return {
+        statusCode: 200, headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ success: true, nota, aprobada: nota != null && nota >= APROBADO_MIN })
+      };
+    }
+
+    if (nota == null) {
+      return { statusCode: 400, body: JSON.stringify({ success: false, error: 'Primero rinde el cuestionario del módulo: tu nota cuenta para el diploma del programa.' }) };
+    }
 
     const profileRows = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id,points,completed_modules', { method: 'GET' });
     if (!profileRows.length) {
@@ -90,7 +71,7 @@ exports.handler = async (event, context) => {
     const completed = profile.completed_modules || [];
 
     if (completed.includes(slug)) {
-      return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, alreadyCompleted: true, points: profile.points }) };
+      return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, alreadyCompleted: true, points: profile.points, nota }) };
     }
 
     const newTotal = await awardPoints(profile.id, profile.points, reward, 'module_completed_' + slug);
@@ -103,7 +84,7 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ success: true, alreadyCompleted: false, reward, points: newTotal, completedModules: updatedModules })
+      body: JSON.stringify({ success: true, alreadyCompleted: false, reward, points: newTotal, completedModules: updatedModules, nota })
     };
   } catch (e) {
     return { statusCode: 500, body: JSON.stringify({ success: false, error: String(e.message || e) }) };

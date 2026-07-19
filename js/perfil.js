@@ -293,9 +293,8 @@
     });
     loadTab('posts', targetProfile);
 
-    // Vitrina pública de diplomas: los módulos completados como logros visibles.
-    // La lista se obtiene vía función de servidor (la clave pública no puede leer
-    // esa columna). Solo el dueño del perfil puede abrir el certificado.
+    // Vitrina pública de diplomas: los diplomas de PROGRAMA emitidos (con
+    // verificación pública) + el avance de módulos como progreso visible.
     (async () => {
       const el = document.getElementById('perfilDiplomas');
       if (!el) return;
@@ -306,40 +305,41 @@
           fetch('/.netlify/functions/community-public-diplomas?username=' + encodeURIComponent(targetProfile.username)).then((r) => r.json()).catch(() => ({}))
         ]);
         const slugs = (dipRes && dipRes.slugs) || [];
-        if (!slugs.length) {
-          // En el perfil propio la vitrina siempre es visible, con invitación clara
-          // para quien recién empieza y no sabe que existen los diplomas.
+        const diplomas = (dipRes && dipRes.diplomas) || [];
+        const freeSet = new Set((freeMods || []).map((mm) => mm.slug));
+        const premSet = new Set((premMods || []).map((mm) => mm.slug));
+        const freeDone = slugs.filter((sl) => freeSet.has(sl)).length;
+        const premDone = slugs.filter((sl) => premSet.has(sl)).length;
+        const CURSO_LBL = { basico: 'Diploma de Formación Integral en Trading', institucional: 'Diploma Institucional (50 módulos)' };
+        const seal = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg>';
+
+        if (!diplomas.length && !slugs.length) {
+          // Perfil propio sin avance: invitación clara al nuevo modelo.
           if (isSelf) {
             el.innerHTML = `
               <div class="section-head" style="margin-top:24px;"><h2 style="font-size:1rem;">Vitrina de diplomas</h2></div>
               <div class="diploma-empty">
-                <span class="diploma-mini-seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg></span>
+                <span class="diploma-mini-seal">${seal}</span>
                 <div>
                   <strong>Tu vitrina está esperando su primer diploma</strong>
-                  <p>Completa cualquier módulo de Educación (los 30 básicos son gratis), presiona "Marcar como completado" al final y tu diploma con tu nombre aparecerá aquí para que todos lo vean.</p>
+                  <p>Completa los <strong>30 módulos gratuitos</strong> de Educación aprobando sus cuestionarios (promedio mínimo 75/100) y obtén el Diploma de Formación Integral: con tu nombre real, nota final y verificación pública. No se regala por módulo — por eso vale.</p>
                   <a href="educacion.html" class="btn btn-gold" style="margin-top:8px;">Empezar mi primer módulo</a>
                 </div>
               </div>`;
           }
           return;
         }
-        const catalog = {};
-        [...(freeMods || []), ...(premMods || [])].forEach((mod) => { catalog[mod.slug] = mod; });
-        const earned = slugs.filter((s) => catalog[s]);
-        if (!earned.length) return;
-        const seal = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg>';
-        const lvl = { basico: 'Básico', intermedio: 'Intermedio', avanzado: 'Avanzado', institucional: 'Institucional' };
+
         el.innerHTML = `
-          <div class="section-head" style="margin-top:24px;"><h2 style="font-size:1rem;">Vitrina de diplomas</h2><span class="news-meta">${earned.length} obtenido${earned.length === 1 ? '' : 's'}</span></div>
-          <div class="diploma-vitrina">
-            ${earned.map((s) => {
-              const mod = catalog[s];
-              const inner = `<span class="diploma-mini-seal">${seal}</span><span class="diploma-mini-body"><strong>${escapeHtml(mod.title)}</strong><span>${lvl[mod.level] || 'Educación'}${isSelf ? ' · Ver diploma →' : ''}</span></span>`;
-              return isSelf
-                ? `<a class="diploma-mini${mod.level === 'institucional' ? ' diploma-mini-inst' : ''}" href="diploma.html?slug=${encodeURIComponent(s)}">${inner}</a>`
-                : `<div class="diploma-mini${mod.level === 'institucional' ? ' diploma-mini-inst' : ''}">${inner}</div>`;
-            }).join('')}
-          </div>`;
+          <div class="section-head" style="margin-top:24px;"><h2 style="font-size:1rem;">Vitrina de diplomas</h2>${diplomas.length ? `<span class="news-meta">${diplomas.length} diploma${diplomas.length === 1 ? '' : 's'} verificado${diplomas.length === 1 ? '' : 's'}</span>` : ''}</div>
+          ${diplomas.length ? `<div class="diploma-vitrina">
+            ${diplomas.map((d) => `
+              <a class="diploma-mini${d.curso === 'institucional' ? ' diploma-mini-inst' : ''}" href="verificar.html?cert=${encodeURIComponent(d.cert)}">
+                <span class="diploma-mini-seal">${seal}</span>
+                <span class="diploma-mini-body"><strong>${CURSO_LBL[d.curso] || escapeHtml(d.curso)}</strong><span>Emitido ${new Date(d.fecha).toLocaleDateString('es', { month: 'short', year: 'numeric' })} · Verificado · Ver certificado →</span></span>
+              </a>`).join('')}
+          </div>` : ''}
+          <p class="footer-text" style="margin-top:10px;">Avance: ${freeDone}/30 módulos del programa integral${premDone ? ` · ${premDone}/20 de la ruta institucional` : ''}${isSelf ? ' · <a href="educacion.html#diplomaRuta">ver mi Ruta del Diploma</a>' : ''}</p>`;
       } catch (e) { /* la vitrina es opcional; el perfil sigue funcionando */ }
     })();
 

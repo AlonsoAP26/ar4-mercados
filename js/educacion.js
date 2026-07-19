@@ -24,128 +24,24 @@ async function loadPremiumModules() {
   } catch (e) { return []; }
 }
 
-// ===== Diplomas =====
-// Al completar cualquier módulo (gratis o Premium) el alumno puede emitir su
-// diploma. Pide una sola vez el nombre real (se guarda localmente, nunca en la URL).
-function getDiplomaName() {
-  try { return localStorage.getItem('ar4DiplomaName') || ''; } catch (e) { return ''; }
-}
-function askDiplomaName(cb) {
-  const existing = getDiplomaName();
-  if (existing) { cb(existing); return; }
-  const overlay = document.createElement('div');
-  overlay.className = 'diploma-modal-overlay';
-  overlay.innerHTML = `
-    <div class="diploma-modal">
-      <h3>Tu nombre para el diploma</h3>
-      <p>Escribe tu <strong>nombre y apellidos reales</strong>, tal como quieres que aparezcan impresos en el diploma. Solo se guarda en tu dispositivo.</p>
-      <input type="text" id="diplomaNameInput" maxlength="60" placeholder="Ej. María Fernanda Rodríguez Torres" autocomplete="name">
-      <div class="diploma-modal-actions">
-        <button class="btn btn-gold" id="diplomaNameOk">Generar mi diploma</button>
-        <button class="btn btn-outline" id="diplomaNameCancel">Cancelar</button>
-      </div>
-    </div>`;
-  document.body.appendChild(overlay);
-  const input = overlay.querySelector('#diplomaNameInput');
-  input.focus();
-  overlay.querySelector('#diplomaNameCancel').addEventListener('click', () => overlay.remove());
-  overlay.querySelector('#diplomaNameOk').addEventListener('click', () => {
-    const name = input.value.trim();
-    if (name.length < 5 || !name.includes(' ')) {
-      input.style.borderColor = '#ff8a8a';
-      input.placeholder = 'Escribe nombre y apellido completos';
-      return;
-    }
-    try { localStorage.setItem('ar4DiplomaName', name); } catch (e) {}
-    overlay.remove();
-    cb(name);
-  });
-}
-function openDiploma(slug) {
-  askDiplomaName(() => { window.location.href = 'diploma.html?slug=' + encodeURIComponent(slug); });
-}
+// ===== Diplomas por programa =====
+// El diploma ya no se emite por módulo suelto: se otorga al completar TODO el
+// programa (30 módulos gratuitos, o los 50 con la ruta institucional) con un
+// promedio de notas aprobatorio. Las notas de los cuestionarios se registran
+// en el servidor y el nombre impreso es el nombre real verificado de la cuenta.
+const APROBADO_MIN = 75;
+let quizResultActual = null; // {correct,total} del cuestionario recién rendido
 
-async function getMyCompletedModules() {
-  if (typeof netlifyIdentity === 'undefined') return new Set();
+async function fetchDiplomaStatus() {
+  if (typeof netlifyIdentity === 'undefined') return null;
   const user = netlifyIdentity.currentUser();
-  if (!user) return new Set();
+  if (!user) return null;
   try {
     const jwt = await user.jwt();
-    const res = await fetch('/.netlify/functions/community-profile', { headers: { 'Authorization': 'Bearer ' + jwt } });
+    const res = await fetch('/.netlify/functions/diploma-status', { headers: { Authorization: 'Bearer ' + jwt } });
     const data = await res.json();
-    if (data.success && data.profile) return new Set(data.profile.completed_modules || []);
-  } catch (e) { /* sesión sin perfil de comunidad todavía, o error de red */ }
-  return new Set();
-}
-
-function moduleCardHTML(m, completedSet) {
-  const isDone = completedSet && completedSet.has(m.slug);
-  return `
-    <article class="broker-card" data-level="${m.level}">
-      <span class="badge-impact ${LEVEL_BADGE_CLASS[m.level]}">${LEVEL_LABELS[m.level]}</span>
-      ${isDone ? '<span class="badge-live" style="margin-left:6px;">COMPLETADO</span>' : ''}
-      <h3 style="margin-top:10px;"><a href="modulo.html?slug=${encodeURIComponent(m.slug)}" style="color:inherit;">${m.order}. ${m.title}</a></h3>
-      <p style="color:var(--text-mid); font-size:0.88rem; margin-bottom:14px;">${m.excerpt}</p>
-      <span class="news-meta">+${m.points} pts al completar</span>
-      <a href="modulo.html?slug=${encodeURIComponent(m.slug)}" class="btn btn-outline btn-block" style="margin-top:16px;">${isDone ? 'Repasar módulo' : 'Empezar módulo'}</a>
-    </article>
-  `;
-}
-
-const IC_LOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
-
-// Portada contextual del módulo: arte SVG propio (velas, libro de órdenes, perfil
-// de volumen...) elegido según el tema, con el tinte del nivel. Sin fotos externas.
-const COVER_MOTIFS = [
-  'M40 150 L110 90 L170 120 L250 50 L330 85 L410 30 L480 60',                                     // linea de tendencia
-  'M60 140 v-60 h14 v60 z M100 150 v-90 h14 v90 z M140 130 v-50 h14 v50 z M180 155 v-100 h14 v100 z M220 120 v-40 h14 v40 z M260 145 v-80 h14 v80 z M300 110 v-30 h14 v30 z M340 150 v-95 h14 v95 z M380 125 v-45 h14 v45 z M420 148 v-75 h14 v75 z', // velas/barras
-  'M60 60 h120 M60 85 h90 M60 110 h150 M60 135 h70 M340 60 h120 M370 85 h90 M310 110 h150 M390 135 h70', // libro de ordenes
-  'M70 160 h60 v-18 h-60 z M70 138 h95 v-18 h-95 z M70 116 h150 v-18 h-150 z M70 94 h110 v-18 h-110 z M70 72 h75 v-18 h-75 z', // perfil de volumen
-  'M60 130 C140 40 220 40 260 100 C300 160 380 160 460 70',                                        // curva/flujo
-  'M100 60 L180 60 L180 120 L100 120 Z M240 90 L460 90 M240 60 L400 60 M240 120 L430 120',        // bloque + niveles
-  'M260 40 a60 60 0 1 1 -1 0 M260 70 a30 30 0 1 1 -1 0',                                          // diana/objetivo
-  'M80 140 Q130 60 180 140 T280 140 T380 140 T480 140'                                            // ondas de sesion
-];
-const LEVEL_TINT = { basico: '#8fb0d9', intermedio: '#c9a94a', avanzado: '#d4af37', institucional: '#f0c75e' };
-function slugHash(s) { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; }
-function moduleCoverHTML(m) {
-  const tint = LEVEL_TINT[m.level] || '#d4af37';
-  const motif = COVER_MOTIFS[slugHash(m.slug) % COVER_MOTIFS.length];
-  const inst = m.level === 'institucional';
-  return `
-    <div class="mod-cover${inst ? ' mod-cover-inst' : ''}">
-      <svg viewBox="0 0 520 200" preserveAspectRatio="xMidYMid slice">
-        <defs>
-          <radialGradient id="mcGlow" cx="0.85" cy="0.1" r="1"><stop offset="0" stop-color="${tint}" stop-opacity="0.30"/><stop offset="0.7" stop-color="${tint}" stop-opacity="0"/></radialGradient>
-        </defs>
-        <rect width="520" height="200" fill="#0c1322"/>
-        <rect width="520" height="200" fill="url(#mcGlow)"/>
-        <g stroke="${tint}" stroke-opacity="0.09"><path d="M0 50H520M0 100H520M0 150H520M130 0V200M260 0V200M390 0V200"/></g>
-        <path d="${motif}" fill="none" stroke="${tint}" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="488" y="182" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="64" font-weight="700" fill="${tint}" fill-opacity="0.16">${String(m.order).padStart(2, '0')}</text>
-        <text x="32" y="180" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="3" fill="${tint}" fill-opacity="0.8">${inst ? 'RUTA INSTITUCIONAL · AR4 PREMIUM' : 'ACADEMIA AR4 · ' + (LEVEL_LABELS[m.level] || '').toUpperCase()}</text>
-        <path d="M0 198 H520" stroke="${tint}" stroke-opacity="0.8" stroke-width="2.5"/>
-      </svg>
-    </div>`;
-}
-const IC_DIPLOMA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg>';
-
-function premiumModuleCardHTML(m, completedSet, hasPremium) {
-  const isDone = completedSet && completedSet.has(m.slug);
-  return `
-    <article class="inst-card${isDone ? ' inst-done' : ''}">
-      <div class="inst-card-top">
-        <span class="inst-num">${String(m.order).padStart(2, '0')}</span>
-        ${isDone ? '<span class="inst-tag inst-tag-done">Completado · Diploma disponible</span>' : (hasPremium ? '<span class="inst-tag">Ruta institucional</span>' : `<span class="inst-tag inst-tag-lock">${IC_LOCK} Premium</span>`)}
-      </div>
-      <h3><a href="modulo.html?slug=${encodeURIComponent(m.slug)}">${m.title}</a></h3>
-      <p>${m.excerpt}</p>
-      <div class="inst-card-foot">
-        <span class="news-meta">+${m.points} pts · diploma al completar</span>
-        <a href="modulo.html?slug=${encodeURIComponent(m.slug)}" class="btn ${hasPremium || isDone ? 'btn-gold' : 'btn-outline'}" style="padding:8px 16px;font-size:0.82rem;">${isDone ? 'Repasar' : (hasPremium ? 'Empezar' : 'Ver módulo')}</a>
-      </div>
-    </article>
-  `;
+    return data.success ? data : null;
+  } catch (e) { return null; }
 }
 
 function renderQuizForm() {
@@ -241,6 +137,62 @@ function renderAcademyPath(modules, completedSet) {
   });
 }
 
+
+// Tarjeta "Ruta del Diploma": progreso hacia los dos diplomas de programa.
+async function renderDiplomaRuta() {
+  const anchor = document.getElementById('academyPath');
+  if (!anchor || document.getElementById('diplomaRuta')) return;
+  const el = document.createElement('div');
+  el.id = 'diplomaRuta';
+  anchor.insertAdjacentElement('afterend', el);
+
+  const logged = (typeof netlifyIdentity !== 'undefined') && netlifyIdentity.currentUser();
+  if (!logged) {
+    el.innerHTML = `
+      <div class="dr-wrap">
+        <div class="dr-head">${IC_DIPLOMA} <h2>Ruta del Diploma</h2></div>
+        <p class="dr-sub">Completa los <strong>30 módulos gratuitos</strong> aprobando sus cuestionarios (promedio mínimo ${APROBADO_MIN}/100) y obtén el <strong>Diploma de Formación Integral en Trading</strong>: con tu nombre real, calificación final y <a href="verificar.html">verificación pública</a>. Con la ruta institucional Premium (50 módulos en total) llega el <strong>Diploma Institucional</strong>.</p>
+        <button class="btn btn-gold" onclick="typeof netlifyIdentity !== 'undefined' && netlifyIdentity.open('signup')">Crear mi cuenta gratis para empezar</button>
+      </div>`;
+    return;
+  }
+  const st = await fetchDiplomaStatus();
+  if (!st) return;
+  const p = st.progreso, n = st.notas;
+  const emitidos = st.diplomas || {};
+
+  function card(curso, titulo, done, total, notas, promedio, elegible, emitido) {
+    const pct = Math.round((done / total) * 100);
+    let estado, cta;
+    if (emitido) { estado = '<span class="dr-tag dr-ok">Emitido ✔</span>'; cta = `<a class="btn btn-gold" href="diploma.html?curso=${curso}">Ver mi diploma</a>`; }
+    else if (elegible) { estado = '<span class="dr-tag dr-ok">¡Aprobado! Listo para emitir</span>'; cta = `<a class="btn btn-gold" href="diploma.html?curso=${curso}">Reclamar mi diploma</a>`; }
+    else { estado = '<span class="dr-tag">En curso</span>'; cta = ''; }
+    return `
+      <div class="dr-card${curso === 'institucional' ? ' dr-inst' : ''}">
+        <div class="dr-card-head"><strong>${titulo}</strong>${estado}</div>
+        <div class="mission-progress-bar"><div class="mission-progress-fill" style="width:${pct}%;"></div></div>
+        <div class="dr-stats">
+          <span>${done}/${total} módulos</span>
+          <span>${notas}/${total} notas registradas</span>
+          <span>Promedio: ${promedio != null ? promedio + '/100' : '—'} · mín. ${st.aprobadoMin}</span>
+        </div>
+        ${cta ? `<div style="margin-top:10px;">${cta}</div>` : ''}
+      </div>`;
+  }
+
+  el.innerHTML = `
+    <div class="dr-wrap">
+      <div class="dr-head">${IC_DIPLOMA} <h2>Ruta del Diploma</h2><span class="news-meta">un diploma por programa completo — con nota final y verificación pública</span></div>
+      <div class="dr-grid">
+        ${card('basico', 'Diploma de Formación Integral en Trading', p.freeDone, p.freeTotal, n.registradasFree, n.promedioBasico, st.elegible.basico, !!emitidos.basico)}
+        ${card('institucional', 'Diploma Institucional (Premium)', p.freeDone + p.premDone, p.freeTotal + p.premTotal, n.registradasAll, n.promedioInstitucional, st.elegible.institucional, !!emitidos.institucional)}
+      </div>
+      ${st.nombre
+        ? `<p class="footer-text" style="margin-top:10px;">Nombre verificado para tus diplomas: <strong style="color:var(--gold-bright);">${st.nombre}</strong></p>`
+        : '<p class="footer-text" style="margin-top:10px;">Al reclamar tu primer diploma confirmarás una única vez tu <strong>nombre real</strong> (es el que aparece en la verificación pública del certificado).</p>'}
+    </div>`;
+}
+
 async function initEducacionListing() {
   const grid = document.getElementById('modulesGrid');
   const filterBar = document.getElementById('levelFilterBar');
@@ -260,6 +212,7 @@ async function initEducacionListing() {
 
   const completed = await getMyCompletedModules();
   renderAcademyPath(modules, completed);
+  renderDiplomaRuta();
 
   function render(filter) {
     const filtered = filter === 'all' ? modules : modules.filter((m) => m.level === filter);
@@ -278,7 +231,7 @@ async function initEducacionListing() {
     const doneCount = premMods.filter((m) => completed.has(m.slug)).length;
     const progressEl = document.getElementById('instTrackProgress');
     if (progressEl && hasPremium) {
-      progressEl.innerHTML = `<div class="mission-progress-bar" style="max-width:340px;"><div class="mission-progress-fill" style="width:${premMods.length ? Math.round((doneCount / premMods.length) * 100) : 0}%;"></div></div><span style="font-size:0.8rem;color:var(--text-mid);">${doneCount}/${premMods.length} módulos · ${doneCount === premMods.length && premMods.length ? '¡Ruta completa!' : 'cada uno con diploma'}</span>`;
+      progressEl.innerHTML = `<div class="mission-progress-bar" style="max-width:340px;"><div class="mission-progress-fill" style="width:${premMods.length ? Math.round((doneCount / premMods.length) * 100) : 0}%;"></div></div><span style="font-size:0.8rem;color:var(--text-mid);">${doneCount}/${premMods.length} módulos · ${doneCount === premMods.length && premMods.length ? '¡Ruta completa!' : 'rumbo al Diploma Institucional'}</span>`;
     }
     instGrid.innerHTML = premMods.map((m) => premiumModuleCardHTML(m, completed, hasPremium)).join('');
     const cta = document.getElementById('instTrackCta');
@@ -294,7 +247,7 @@ async function initEducacionListing() {
   });
 }
 
-function wireCompleteButton(m, alreadyDone) {
+function wireCompleteButton(m, alreadyDone, notaPrev) {
   const banner = document.getElementById('moduloCompleteBanner');
   const btn = document.getElementById('moduloCompleteBtn');
   const textEl = document.getElementById('moduloCompleteText');
@@ -304,51 +257,63 @@ function wireCompleteButton(m, alreadyDone) {
   banner.style.display = 'flex';
   const user = netlifyIdentity.currentUser();
 
-  // Botón de diploma: aparece cuando el módulo está (o queda) completado.
-  function showDiplomaBtn() {
-    if (document.getElementById('moduloDiplomaBtn')) return;
-    const dbtn = document.createElement('button');
-    dbtn.id = 'moduloDiplomaBtn';
-    dbtn.className = 'btn btn-gold diploma-btn';
-    dbtn.innerHTML = IC_DIPLOMA + ' Obtener mi diploma';
-    dbtn.addEventListener('click', () => openDiploma(m.slug));
-    btn.insertAdjacentElement('afterend', dbtn);
+  function addRutaLink() {
+    if (document.getElementById('moduloRutaLink')) return;
+    const a = document.createElement('a');
+    a.id = 'moduloRutaLink';
+    a.className = 'btn btn-outline diploma-btn';
+    a.href = 'educacion.html#diplomaRuta';
+    a.innerHTML = IC_DIPLOMA + ' Ver mi Ruta del Diploma';
+    btn.insertAdjacentElement('afterend', a);
   }
 
   if (!user) {
-    textEl.textContent = 'Inicia sesión para sumar puntos y obtener tu diploma';
+    textEl.textContent = 'Inicia sesión para registrar tu nota y tu avance hacia el diploma';
     btn.textContent = 'Iniciar sesión';
     btn.addEventListener('click', () => netlifyIdentity.open('login'));
     return;
   }
 
   if (alreadyDone) {
-    textEl.textContent = 'Módulo completado. Tu diploma te espera.';
+    textEl.textContent = notaPrev != null
+      ? `Módulo completado · nota registrada: ${notaPrev}/100.`
+      : 'Módulo completado. Rinde el cuestionario para registrar tu nota: sin ella no cuenta para el diploma del programa.';
     btn.textContent = '✔ Completado';
     btn.disabled = true;
-    showDiplomaBtn();
+    addRutaLink();
     return;
   }
 
+  // Sin nota registrada no hay completado: el diploma se calcula con las notas.
+  const hasQuiz = m.quiz && m.quiz.length;
+  if (hasQuiz && notaPrev == null) {
+    btn.disabled = true;
+    btn.dataset.waitQuiz = '1';
+    textEl.textContent = 'Primero rinde el cuestionario del módulo (más abajo): tu nota cuenta para el diploma del programa.';
+  }
+
   btn.addEventListener('click', async () => {
+    if (btn.dataset.waitQuiz) return;
     btn.disabled = true;
     try {
       const jwt = await user.jwt();
+      const payload = { slug: m.slug };
+      if (quizResultActual) { payload.correct = quizResultActual.correct; payload.total = quizResultActual.total; }
       const res = await fetch('/.netlify/functions/community-complete-module', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt },
-        body: JSON.stringify({ slug: m.slug })
+        body: JSON.stringify(payload)
       });
       const data = await res.json();
       if (!data.success) throw new Error(data.error || 'Error desconocido');
       if (data.alreadyCompleted) {
-        textEl.textContent = 'Ya completaste este módulo anteriormente. Tu diploma te espera.';
+        textEl.textContent = 'Ya completaste este módulo anteriormente.';
       } else {
-        textEl.textContent = `¡Listo! Ganaste ${data.reward} puntos. Genera tu diploma con tu nombre.`;
+        textEl.textContent = `¡Listo! Ganaste ${data.reward} puntos${typeof data.nota === 'number' ? ` · nota ${data.nota}/100` : ''}. Un módulo más rumbo a tu diploma.`;
         if (window.AR4_refreshNavProfile) window.AR4_refreshNavProfile();
       }
       btn.textContent = '✔ Completado';
-      showDiplomaBtn();
+      addRutaLink();
     } catch (e) {
       alert(e.message);
       btn.disabled = false;
@@ -396,7 +361,7 @@ function renderModuleQuiz(m) {
     section.innerHTML = `
       <div class="edu-quiz-card">
         <h3 class="edu-quiz-h">${IC_QUIZ} Pon a prueba lo que aprendiste</h3>
-        <p class="edu-quiz-sub">${questions.length} preguntas para reforzar — las opciones salen en distinto orden cada vez. No afecta tu progreso.</p>
+        <p class="edu-quiz-sub">${questions.length} preguntas — salen en distinto orden cada vez. Tu resultado se registra como <strong>nota</strong> para el diploma del programa (promedio mínimo ${APROBADO_MIN}/100 para aprobar).</p>
         <div id="moduloQuizForm">${qs}</div>
         <div class="edu-quiz-actions">
           <button class="btn btn-gold" id="moduloQuizSubmitBtn">Revisar respuestas</button>
@@ -436,6 +401,35 @@ function renderModuleQuiz(m) {
       resultEl.innerHTML = `<div class="community-form-msg ${pct === 100 ? 'success' : ''}" style="margin-top:14px;">Acertaste <strong>${correct}/${order.length}</strong>. ${pct === 100 ? '¡Perfecto! Lo tienes claro.' : 'La respuesta correcta está marcada en verde.'}</div>`;
       document.getElementById('moduloQuizSubmitBtn').setAttribute('hidden', '');
       document.getElementById('moduloQuizRetry').removeAttribute('hidden');
+      // Registra la nota en el servidor: cuenta para el diploma del programa.
+      // Regla del servidor: la primera nota aprobatoria se conserva; mientras
+      // sea menor a la mínima, cada nuevo intento la reemplaza (recuperación).
+      quizResultActual = { correct, total: order.length };
+      const u = (typeof netlifyIdentity !== 'undefined') ? netlifyIdentity.currentUser() : null;
+      if (u) {
+        u.jwt().then((jwt) => fetch('/.netlify/functions/community-complete-module', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + jwt },
+          body: JSON.stringify({ slug: m.slug, correct, total: order.length, scoreOnly: true })
+        })).then((r) => r.json()).then((d) => {
+          if (!d || !d.success || typeof d.nota !== 'number') return;
+          const extra = document.createElement('div');
+          extra.className = 'community-form-msg' + (d.aprobada ? ' success' : '');
+          extra.style.marginTop = '8px';
+          extra.textContent = d.aprobada
+            ? `Nota registrada para tu diploma: ${d.nota}/100 (aprobatoria — los reintentos ya no la bajan).`
+            : `Nota registrada: ${d.nota}/100. Repasa el módulo y vuelve a rendir el cuestionario para mejorarla.`;
+          resultEl.appendChild(extra);
+          const cbtn = document.getElementById('moduloCompleteBtn');
+          const ctext = document.getElementById('moduloCompleteText');
+          if (cbtn && cbtn.dataset.waitQuiz) {
+            cbtn.disabled = false; cbtn.dataset.waitQuiz = '';
+            if (ctext) ctext.textContent = 'Cuestionario rendido. Marca el módulo como completado para registrar tu avance.';
+          }
+        }).catch(() => {});
+      } else {
+        resultEl.insertAdjacentHTML('beforeend', '<div class="community-form-msg" style="margin-top:8px;">Inicia sesión para que tu nota quede registrada y cuente para el diploma.</div>');
+      }
     });
     document.getElementById('moduloQuizRetry').addEventListener('click', () => renderModuleQuiz(m));
   }
@@ -488,7 +482,7 @@ async function initModuloDetail() {
         <div class="inst-gate">
           <div class="inst-gate-ic">${IC_LOCK}</div>
           <h3>Este módulo es parte de la ruta institucional</h3>
-          <p>20 módulos sobre cómo operan las mesas profesionales: microestructura, liquidez, order flow, volume profile, COT, macro, gamma y proceso de desk. Cada módulo completado otorga <strong>diploma con tu nombre</strong> y 30 puntos de comunidad.</p>
+          <p>20 módulos sobre cómo operan las mesas profesionales: microestructura, liquidez, order flow, volume profile, COT, macro, gamma y proceso de desk. Al completar los 20 módulos con nota aprobatoria obtienes el <strong>Diploma Institucional verificable</strong>, además de 30 puntos de comunidad por módulo.</p>
           <ul class="inst-gate-list">
             <li>Contenido escrito con criterio profesional, sin promesas de rentabilidad</li>
             <li>Diagramas propios y ejercicios de comprensión en cada módulo</li>
@@ -514,7 +508,7 @@ async function initModuloDetail() {
     metaEl.innerHTML = `
       <span class="badge-impact ${LEVEL_BADGE_CLASS[m.level]}">${LEVEL_LABELS[m.level]}</span>
       <h1 style="margin:14px 0 10px;">${m.order}. ${m.title}</h1>
-      <span class="news-meta">Módulo ${m.order} de ${modules.length} · +${m.points} pts y diploma al completar</span>
+      <span class="news-meta">Módulo ${m.order} de ${modules.length} · +${m.points} pts · tu nota cuenta para el diploma del programa</span>
     `;
     metaEl.insertAdjacentHTML('beforebegin', moduleCoverHTML(m));
   }
@@ -557,13 +551,15 @@ async function initModuloDetail() {
   renderModuleQuiz(m);
 
   const completed = await getMyCompletedModules();
-  wireCompleteButton(m, completed.has(m.slug));
+  const dstatus = await fetchDiplomaStatus();
+  const notaPrev = dstatus && dstatus.scores && typeof dstatus.scores[m.slug] === 'number' ? dstatus.scores[m.slug] : null;
+  wireCompleteButton(m, completed.has(m.slug), notaPrev);
 
   const nextGrid = document.getElementById('nextModuleGrid');
   if (nextGrid) {
     const next = modules.filter((x) => x.order > m.order).sort((a, b) => a.order - b.order).slice(0, 2);
     nextGrid.innerHTML = next.map((x) => isInstitutional ? premiumModuleCardHTML(x, completed, true) : moduleCardHTML(x, completed)).join('') || (isInstitutional
-      ? '<p class="footer-text">¡Completaste el último módulo de la ruta institucional! Revisa tus diplomas desde cada módulo completado.</p>'
+      ? '<p class="footer-text">¡Completaste el último módulo de la ruta institucional! Si tu promedio es aprobatorio, reclama tu <a href="educacion.html#diplomaRuta">Diploma Institucional</a>.</p>'
       : '<p class="footer-text">¡Llegaste al último módulo! Continúa con la <a href="educacion.html#instTrack">ruta institucional Premium</a>.</p>');
   }
 
