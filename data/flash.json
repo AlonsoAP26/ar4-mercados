@@ -1,7 +1,81 @@
 {
- "lastId": 33438,
- "actualizado": "2026-07-19T19:07:08.595Z",
+ "lastId": 33441,
+ "actualizado": "2026-07-19T22:08:22.380Z",
  "items": [
+  {
+   "id": 33441,
+   "fecha": "2026-07-19T22:03:40+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33441",
+   "original": "U.S. 10-YEAR TREASURY FUTURES DOWN 6 TICKS, 30-YEAR FUTURES SLIP 10 TICKS AS OIL PRICES RISE",
+   "titulo": "Bonos del Tesoro de EE.UU. caen mientras el petróleo presiona los rendimientos al alza",
+   "resumen": "Los futuros del bono a 10 años bajan 6 ticks y los del bono a 30 años ceden 10 ticks, en un movimiento vinculado a una suba en los precios del petróleo. El titular no especifica el motivo detrás del repunte del crudo ni el nivel de rendimiento resultante. Este tipo de dinámica suele reflejar temores de presión inflacionaria, ya que el petróleo es un insumo clave en las expectativas de precios y puede condicionar la política de tasas de la Fed.",
+   "analisis": {
+    "porque": "El repunte del petróleo junto con la caída de bonos sugiere que el mercado está incorporando mayor riesgo inflacionario, lo cual puede influir en las expectativas sobre la trayectoria de tasas de la Fed y en el costo de financiamiento a largo plazo.",
+    "queOcurrio": "Los futuros del Treasury a 10 años cayeron 6 ticks y los de 30 años cayeron 10 ticks, coincidiendo con una suba en los precios del petróleo, según el titular.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "Petróleo",
+    "DXY",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "treasury",
+    "bonos-eeuu",
+    "rendimientos",
+    "petroleo",
+    "inflacion",
+    "tasas-fed"
+   ],
+   "tgText": "📉 Bonos del Tesoro de EE.UU. caen (10Y -6 ticks, 30Y -10 ticks) mientras sube el petróleo. Posible señal de presión inflacionaria que el mercado vigila de cara a la Fed.",
+   "xText": "Treasuries en baja: 10Y -6 ticks, 30Y -10 ticks, en línea con suba del petróleo. Rendimientos al alza, atención a lectura inflacionaria y postura de la Fed. #Bonos #Petróleo #Fed",
+   "discordText": "**📉 Bonos del Tesoro EE.UU. bajan por suba del petróleo**\n• 10Y: -6 ticks\n• 30Y: -10 ticks\n• Rendimientos al alza\n• Vínculo con expectativas inflacionarias y política de la Fed",
+   "pushText": "Bonos del Tesoro caen mientras sube el petróleo",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "El mercado de bonos (Treasuries) suele reaccionar de inmediato ante variaciones en el precio del petróleo por su vínculo directo con expectativas inflacionarias.",
+    "despues": "El dólar (DXY), el oro y las acciones sensibles a tasas (growth/tech) suelen ajustar posiciones según la magnitud del movimiento en rendimientos.",
+    "escenarios": "Los traders suelen vigilar si la suba del petróleo es sostenida o puntual, y si los rendimientos de largo plazo (10Y, 30Y) continúan subiendo, lo cual podría reforzar expectativas de una Fed más cautelosa con recortes de tasas.",
+    "riesgos": "El titular no detalla la causa del repunte petrolero ni el nivel actual de rendimientos, por lo que el impacto real dependerá de si se trata de un movimiento técnico menor o el inicio de una tendencia más amplia."
+   },
+   "macro": {
+    "dolar": "Podría fortalecerse levemente si los rendimientos más altos atraen flujos hacia el dólar por diferencial de tasas.",
+    "oro": "Presión bajista relativa si los rendimientos reales suben, encareciendo el costo de oportunidad de mantener oro.",
+    "nasdaq": "Sensible a alzas en rendimientos de largo plazo, que afectan la valuación de activos de crecimiento.",
+    "dow": "Impacto menor comparado con Nasdaq, aunque también sensible al costo de financiamiento.",
+    "sp500": "Podría mostrar cautela si el mercado interpreta la suba de rendimientos como riesgo para múltiplos de valuación.",
+    "bitcoin": "Sin relación directa mencionada en el titular; su reacción dependerá del apetito de riesgo general.",
+    "ethereum": "Mismo caso que Bitcoin, sin vínculo directo señalado.",
+    "bonos": "Los futuros de 10 y 30 años cayeron, lo que implica que los rendimientos subieron ante la suba del petróleo.",
+    "petroleo": "En alza según el titular, factor que presiona a la baja los precios de los bonos."
+   },
+   "updates": []
+  },
   {
    "id": 33437,
    "fecha": "2026-07-19T14:58:29+00:00",
