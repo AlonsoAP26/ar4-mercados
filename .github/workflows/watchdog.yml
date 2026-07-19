@@ -1,0 +1,100 @@
+name: Vigia automatico (auto-repara y avisa solo si no pudo)
+
+# Corre cada mañana despues de los generadores nocturnos. Verifica que el
+# contenido del dia anterior exista y que el sitio responda; si un generador
+# fallo, LO RELANZA SOLO y re-verifica. Solo envia email (fallo del job) si
+# la auto-reparacion tampoco funciono — cero ruido, cero intervencion manual.
+
+on:
+  schedule:
+    - cron: '0 11 * * *'   # 11:00 UTC = 6:00 am Lima, todos los dias
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write   # necesario para relanzar workflows caidos
+
+jobs:
+  vigia:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Salud del sitio (paginas y funciones clave)
+        run: |
+          fallos=0
+          for url in \
+            "https://ar4mercados.com/" \
+            "https://ar4mercados.com/educacion.html" \
+            "https://ar4mercados.com/comunidad.html" \
+            "https://ar4mercados.com/.netlify/functions/market-price?symbol=EURUSD%3DX" \
+            "https://ar4mercados.com/.netlify/functions/symbol-search?q=sap"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "$url")
+            echo "$code  $url"
+            if [ "$code" != "200" ]; then fallos=$((fallos+1)); fi
+          done
+          if [ "$fallos" -gt 0 ]; then
+            echo "::error::$fallos URL(s) clave no responden 200. Revisar Netlify."
+            exit 1
+          fi
+
+      - name: Frescura del contenido diario (con auto-relanzamiento)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # El cron publica dom-vie a las 21:30 UTC. Cada mañana exigimos que
+          # exista contenido de AYER, salvo que ayer fuera sabado (sin sesion).
+          ayer=$(date -u -d "yesterday" +%Y-%m-%d)
+          dia_ayer=$(date -u -d "yesterday" +%u)   # 1=lunes ... 6=sabado 7=domingo
+          if [ "$dia_ayer" = "6" ]; then
+            echo "Ayer fue sabado: no se esperaba publicacion. OK."
+            exit 0
+          fi
+          frescura() {
+            node -e "
+              const d=require('./data/$1');
+              const max=d.map(x=>x.date||'').sort().pop()||'';
+              console.log(max);
+            "
+          }
+          revisar() {
+            ok=1
+            for f in noticias.json ideas.json articulos.json; do
+              ult=$(frescura "$f")
+              echo "data/$f -> ultima fecha: $ult (se exige >= $ayer)"
+              if [ "$ult" \< "$ayer" ]; then ok=0; fi
+            done
+            echo $ok
+          }
+          resultado=$(revisar | tail -1)
+          if [ "$resultado" = "1" ]; then
+            echo "Contenido al dia. OK."
+            exit 0
+          fi
+          echo "Contenido atrasado: relanzando el generador diario..."
+          gh workflow run auto-publish-diario.yml --ref master
+          echo "Esperando 8 minutos a que genere y publique..."
+          sleep 480
+          git fetch origin master --quiet
+          git checkout origin/master -- data/ 2>/dev/null || true
+          resultado2=$(revisar | tail -1)
+          if [ "$resultado2" = "1" ]; then
+            echo "Auto-reparacion exitosa: el contenido ya esta al dia."
+            exit 0
+          fi
+          echo "::error::El contenido sigue atrasado tras el relanzamiento automatico. Requiere revision (Actions -> Publicar contenido diario -> logs)."
+          exit 1
+
+      - name: Generadores secundarios caidos (relanzar si el ultimo run fallo)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for wf in auto-persona-chat.yml auto-publish-community.yml; do
+            estado=$(gh run list --workflow "$wf" --limit 1 --json conclusion --jq '.[0].conclusion // "none"')
+            echo "$wf -> ultimo run: $estado"
+            if [ "$estado" = "failure" ]; then
+              echo "Relanzando $wf..."
+              gh workflow run "$wf" --ref master
+            fi
+          done
