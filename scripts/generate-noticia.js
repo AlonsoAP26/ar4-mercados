@@ -79,28 +79,38 @@ function hostOf(u) {
 }
 
 async function callApi(apiKey, messages) {
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01'
-    },
-    body: JSON.stringify({
-      model: 'claude-sonnet-5',
-      max_tokens: 16000,
-      thinking: { type: 'adaptive' },
-      // Busqueda web del lado del servidor: el modelo lee noticias reales y
-      // devuelve las URLs de donde salieron. Sin esto escribiria de memoria.
-      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 6 }],
-      messages
-    })
-  });
-  if (!res.ok) {
+  // Reintentos con espera ante errores transitorios (429/5xx/sobrecarga):
+  // el cron corre en hora pico de la API y un fallo puntual no debe tumbar la noticia.
+  let lastErr = null;
+  for (let intento = 1; intento <= 4; intento++) {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01'
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-5',
+        max_tokens: 16000,
+        thinking: { type: 'adaptive' },
+        // Busqueda web del lado del servidor: el modelo lee noticias reales y
+        // devuelve las URLs de donde salieron. Sin esto escribiria de memoria.
+        tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 6 }],
+        messages
+      })
+    });
+    if (res.ok) return res.json();
     const errText = await res.text();
-    throw new Error('API de Anthropic (HTTP ' + res.status + '): ' + errText);
+    lastErr = 'API de Anthropic (HTTP ' + res.status + '): ' + errText.slice(0, 400);
+    console.warn('Intento ' + intento + ' fallido: ' + lastErr);
+    if (res.status === 429 || res.status >= 500) {
+      await new Promise((r) => setTimeout(r, intento * 20000));
+      continue;
+    }
+    break; // errores 4xx no transitorios: no insistir
   }
-  return res.json();
+  throw new Error(lastErr);
 }
 
 async function main() {
@@ -212,7 +222,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   const messages = [{ role: 'user', content: prompt }];
   const allContent = [];
   let data = null;
-  for (let intento = 0; intento < 4; intento++) {
+  for (let intento = 0; intento < 8; intento++) {
     data = await callApi(apiKey, messages);
     allContent.push(...(data.content || []));
     if (data.stop_reason === 'pause_turn') {
@@ -222,6 +232,10 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     break;
   }
 
+  if (data.stop_reason === 'pause_turn') {
+    console.error('La búsqueda web no terminó tras 8 rondas de reanudación. Uso:', JSON.stringify(data.usage));
+    process.exit(1);
+  }
   if (data.stop_reason === 'max_tokens') {
     console.error('Respuesta cortada por max_tokens. Uso:', JSON.stringify(data.usage));
     process.exit(1);
@@ -252,13 +266,28 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     if (a !== -1 && b > a) rawText = rawText.slice(a, b + 1);
   }
 
-  let nueva;
+  let nueva = null;
   try {
     nueva = JSON.parse(rawText);
   } catch (e) {
-    console.error('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
-    console.error(rawText.slice(0, 1500));
-    process.exit(1);
+    // Rescate: con búsqueda web el JSON a veces queda en un bloque anterior
+    // (el modelo añade texto de cierre después). Probar todos, del último al primero.
+    const allTexts = allContent.filter((b) => b.type === 'text' && b.text).map((b) => b.text);
+    for (let i = allTexts.length - 1; i >= 0 && !nueva; i--) {
+      let t = allTexts[i].trim();
+      const f = t.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+      if (f) t = f[1].trim();
+      const a = t.indexOf('{');
+      const b2 = t.lastIndexOf('}');
+      if (a === -1 || b2 <= a) continue;
+      try { nueva = JSON.parse(t.slice(a, b2 + 1)); } catch (e2) { /* siguiente bloque */ }
+    }
+    if (!nueva) {
+      console.error('La IA no devolvió un JSON válido en ningún bloque. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
+      console.error(rawText.slice(0, 1500));
+      process.exit(1);
+    }
+    console.warn('JSON rescatado de un bloque anterior de la respuesta.');
   }
 
   if (!nueva.title || !nueva.body) {
