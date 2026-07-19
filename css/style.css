@@ -4701,3 +4701,6 @@ body.has-buy-bar { padding-bottom: 74px; }
   .btn { min-height: 44px; }
   .hero-actions .btn { width: 100%; text-align: center; }
 }
+
+/* Titulares "bien cuadrados": las líneas se reparten equilibradas, sin palabras huérfanas */
+.hero-text h1, .page-hero h1 { text-wrap: balance; }
