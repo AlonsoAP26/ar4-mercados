@@ -822,65 +822,116 @@
   function initPropPlanner() {
     const mount = $('propPlanner');
     if (!mount) return;
+    // Dos modos: reto de fondeo (reglas de la empresa) o capital propio (tu meta).
+    let mode = 'prop';
     mount.innerHTML = `
       <div class="rs-howto" style="margin-bottom:16px;">
         <div class="rs-howto-head"><svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.7-2.5 2-2.5 3.5M12 17h.01'/></svg><strong>¿Cómo se usa?</strong></div>
         <ol class="rs-howto-steps">
-          <li><b>1.</b> Escribe las reglas de tu reto (objetivo, límite diario, riesgo por operación).</li>
-          <li><b>2.</b> Añade tu relación R:R media y tu % de aciertos realista.</li>
-          <li><b>3.</b> El planificador calcula cuántas operaciones necesitas y qué margen de error tienes.</li>
-          <li><b>4.</b> Si el plan exige perfección, el reto está mal planteado: ajústalo antes de pagar.</li>
+          <li><b>1.</b> Elige tu modo: reto de una empresa de fondeo o tu propia cuenta.</li>
+          <li><b>2.</b> Escribe tus reglas o tu meta, tu R:R medio y tu % de aciertos realista.</li>
+          <li><b>3.</b> El plan te dice cuántas operaciones necesitas, tu margen de error y la racha perdedora que deberías esperar.</li>
+          <li><b>4.</b> Si el plan exige perfección, está mal planteado: ajústalo antes de arriesgar dinero.</li>
         </ol>
       </div>
-      <div class="rl-grid">
+      <div class="pp-mode" id="ppMode">
+        <button type="button" class="pp-mode-btn active" data-mode="prop"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z'/></svg> Reto de fondeo</button>
+        <button type="button" class="pp-mode-btn" data-mode="own"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><circle cx='12' cy='8' r='3.5'/><path d='M5 20c0-3.5 3-6 7-6s7 2.5 7 6'/></svg> Capital propio</button>
+      </div>
+      <div class="rl-grid" id="ppFields"></div>
+      <button class="btn btn-gold" id="ppRun" style="margin-top:14px;">Calcular mi plan</button>
+      <div id="ppOut" style="margin-top:16px;"></div>`;
+
+    function fieldsHTML() {
+      if (mode === 'prop') return `
         <div class="rl-field"><label>Tamaño de la cuenta (USD)</label><input type="number" id="ppAccount" value="10000" step="any"></div>
         <div class="rl-field"><label>Objetivo de ganancia (%)</label><input type="number" id="ppTarget" value="8" step="0.5"></div>
         <div class="rl-field"><label>Límite de pérdida diaria (%)</label><input type="number" id="ppDaily" value="5" step="0.5"></div>
         <div class="rl-field"><label>Límite de pérdida total (%)</label><input type="number" id="ppMax" value="10" step="0.5"></div>
         <div class="rl-field"><label>Riesgo por operación (%)</label><input type="number" id="ppRisk" value="0.5" step="0.1"></div>
         <div class="rl-field"><label>R:R medio de tu sistema</label><input type="number" id="ppRR" value="2" step="0.1"></div>
+        <div class="rl-field"><label>% de aciertos realista</label><input type="number" id="ppWin" value="45" step="1"></div>`;
+      return `
+        <div class="rl-field"><label>Tu capital (USD)</label><input type="number" id="ppAccount" value="2000" step="any"></div>
+        <div class="rl-field"><label>Meta de crecimiento (%)</label><input type="number" id="ppTarget" value="10" step="0.5"></div>
+        <div class="rl-field"><label>Riesgo por operación (%)</label><input type="number" id="ppRisk" value="1" step="0.1"></div>
+        <div class="rl-field"><label>R:R medio de tu sistema</label><input type="number" id="ppRR" value="2" step="0.1"></div>
         <div class="rl-field"><label>% de aciertos realista</label><input type="number" id="ppWin" value="45" step="1"></div>
-      </div>
-      <button class="btn btn-gold" id="ppRun" style="margin-top:14px;">Calcular mi plan</button>
-      <div id="ppOut" style="margin-top:16px;"></div>`;
+        <div class="rl-field"><label>Operaciones por semana</label><input type="number" id="ppOps" value="10" step="1"></div>`;
+    }
 
     function run() {
       const acc = parseFloat($('ppAccount').value) || 0;
       const target = parseFloat($('ppTarget').value) || 0;
-      const daily = parseFloat($('ppDaily').value) || 0;
-      const maxdd = parseFloat($('ppMax').value) || 0;
       const risk = parseFloat($('ppRisk').value) || 0;
       const rr = parseFloat($('ppRR').value) || 0;
       const win = (parseFloat($('ppWin').value) || 0) / 100;
       const out = $('ppOut');
       if (!acc || !target || !risk || !rr) { out.innerHTML = '<div class="community-form-msg error">Completa los campos con valores válidos.</div>'; return; }
 
-      const targetR = target / risk;                       // R netos que exige el reto
-      const expectancyR = win * rr - (1 - win);            // R esperado por operación
-      const lossesToDaily = Math.floor(daily / risk);      // pérdidas seguidas que rompen el límite diario
-      const lossesToMax = Math.floor(maxdd / risk);        // pérdidas netas que rompen el reto
+      const q = 1 - win;
+      const targetR = target / risk;
+      const expectancyR = win * rr - q;
       const tradesNeeded = expectancyR > 0 ? Math.ceil(targetR / expectancyR) : null;
-      const rows = [
-        ['Necesitas ganar', clean(targetR, 1) + ' R netos', 'objetivo ÷ riesgo por operación'],
-        ['Esperanza de tu sistema', (expectancyR >= 0 ? '+' : '') + num(expectancyR, 2) + ' R por operación', '(' + Math.round(win * 100) + '% × ' + rr + ') − ' + Math.round((1 - win) * 100) + '%'],
-        ['Operaciones estimadas', tradesNeeded ? '~' + tradesNeeded : '—', tradesNeeded ? 'para llegar al objetivo si se cumple tu estadística' : 'tu esperanza es negativa: no llegas nunca'],
-        ['Colchón diario', lossesToDaily + ' pérdidas seguidas', 'antes de romper el límite del día'],
-        ['Colchón total', lossesToMax + ' R de margen', 'antes de perder el reto']
-      ];
+      // Racha perdedora esperada en N operaciones: log(N) / log(1/q) — estadística clásica.
+      const streak = (tradesNeeded && q > 0 && q < 1) ? Math.max(1, Math.round(Math.log(tradesNeeded) / Math.log(1 / q))) : null;
+
+      const rows = [];
       let verdict, cls;
-      if (expectancyR <= 0) { verdict = 'Con esa estadística el reto es matemáticamente imposible: la esperanza es negativa. Sube tu R:R o tu tasa de acierto antes de pagar un reto.'; cls = 'error'; }
-      else if (lossesToDaily < 3) { verdict = 'Peligro: con ese riesgo por operación, ' + lossesToDaily + ' pérdidas seguidas (algo estadísticamente normal) rompen tu límite diario. Baja el riesgo por operación.'; cls = 'error'; }
-      else if (tradesNeeded > 200) { verdict = 'El plan es viable pero lento (~' + tradesNeeded + ' operaciones). Considera un objetivo por fases o revisa si el reto tiene límite de tiempo.'; cls = ''; }
-      else { verdict = 'Plan razonable: objetivo alcanzable en ~' + tradesNeeded + ' operaciones con ' + lossesToDaily + ' pérdidas de colchón diario. Recuerda: la estadística solo se cumple si ejecutas SIEMPRE igual.'; cls = 'success'; }
+
+      if (mode === 'prop') {
+        const daily = parseFloat($('ppDaily').value) || 0;
+        const maxdd = parseFloat($('ppMax').value) || 0;
+        const lossesToDaily = Math.floor(daily / risk);
+        const lossesToMax = Math.floor(maxdd / risk);
+        rows.push(
+          ['Necesitas ganar', clean(targetR, 1) + ' R netos', 'objetivo ÷ riesgo por operación'],
+          ['Esperanza de tu sistema', (expectancyR >= 0 ? '+' : '') + num(expectancyR, 2) + ' R por operación', '(' + Math.round(win * 100) + '% × ' + rr + ') − ' + Math.round(q * 100) + '%'],
+          ['Operaciones estimadas', tradesNeeded ? '~' + tradesNeeded : '—', tradesNeeded ? 'si se cumple tu estadística' : 'esperanza negativa: no llegas nunca'],
+          ['Racha perdedora esperada', streak ? streak + ' seguidas' : '—', 'lo estadísticamente normal en ese camino'],
+          ['Colchón diario', lossesToDaily + ' pérdidas seguidas', 'antes de romper el límite del día'],
+          ['Colchón total', lossesToMax + ' R de margen', 'antes de perder el reto']
+        );
+        if (expectancyR <= 0) { verdict = 'Con esa estadística el reto es matemáticamente imposible: la esperanza es negativa. Sube tu R:R o tu tasa de acierto antes de pagar un reto.'; cls = 'error'; }
+        else if (streak && streak >= lossesToDaily) { verdict = 'Alerta clave: tu racha perdedora esperada (' + streak + ') alcanza o supera tu colchón diario (' + lossesToDaily + '). Una mala tarde estadísticamente NORMAL te saca del reto. Baja el riesgo por operación.'; cls = 'error'; }
+        else if (lossesToDaily < 3) { verdict = 'Peligro: con ese riesgo por operación, ' + lossesToDaily + ' pérdidas seguidas rompen tu límite diario. Baja el riesgo.'; cls = 'error'; }
+        else if (tradesNeeded > 200) { verdict = 'Viable pero lento (~' + tradesNeeded + ' operaciones). Revisa si el reto tiene límite de tiempo.'; cls = ''; }
+        else { verdict = 'Plan razonable: ~' + tradesNeeded + ' operaciones, racha perdedora esperada de ' + streak + ' frente a un colchón diario de ' + lossesToDaily + '. La estadística solo se cumple si ejecutas SIEMPRE igual.'; cls = 'success'; }
+      } else {
+        const ops = Math.max(1, parseFloat($('ppOps').value) || 1);
+        const weeks = tradesNeeded ? Math.ceil(tradesNeeded / ops) : null;
+        const typicalDD = streak ? streak * risk : null; // aproximación simple y transparente
+        rows.push(
+          ['Necesitas ganar', clean(targetR, 1) + ' R netos', 'meta ÷ riesgo por operación'],
+          ['Esperanza de tu sistema', (expectancyR >= 0 ? '+' : '') + num(expectancyR, 2) + ' R por operación', '(' + Math.round(win * 100) + '% × ' + rr + ') − ' + Math.round(q * 100) + '%'],
+          ['Operaciones estimadas', tradesNeeded ? '~' + tradesNeeded : '—', tradesNeeded ? 'si se cumple tu estadística' : 'esperanza negativa: no llegas nunca'],
+          ['Tiempo estimado', weeks ? (weeks < 5 ? '~' + weeks + ' semana' + (weeks === 1 ? '' : 's') : '~' + Math.round(weeks / 4.3) + ' meses') : '—', 'a ' + ops + ' operaciones/semana'],
+          ['Racha perdedora esperada', streak ? streak + ' seguidas' : '—', 'prepárate mentalmente para esto'],
+          ['Retroceso típico en el camino', typicalDD ? '≈ −' + clean(typicalDD, 1) + '%' : '—', 'racha esperada × tu riesgo (aproximación)']
+        );
+        if (expectancyR <= 0) { verdict = 'Con esa estadística tu cuenta pierde por matemática, no por mala suerte. Antes de la meta, trabaja el sistema: sube el R:R o el % de aciertos.'; cls = 'error'; }
+        else if (typicalDD && typicalDD > 15) { verdict = 'Tu meta es alcanzable, pero por el camino deberías esperar retrocesos de ≈' + clean(typicalDD, 1) + '%. Si ese número te haría abandonar, baja el riesgo por operación: llegar más lento es mejor que no llegar.'; cls = ''; }
+        else if (target > 20) { verdict = 'Meta ambiciosa (' + clean(target, 0) + '% con ' + clean(risk, 1) + '% de riesgo). Es matemáticamente posible en ~' + tradesNeeded + ' operaciones, pero metas mensuales altas sostenidas no son lo normal ni siquiera entre profesionales. Considera una meta por fases.'; cls = ''; }
+        else { verdict = 'Plan sólido: ~' + tradesNeeded + ' operaciones para tu meta, con una racha perdedora esperada de ' + streak + ' y retrocesos normales de ≈' + clean(typicalDD, 1) + '%. Conocer estos números ANTES es lo que evita abandonar en medio del plan.'; cls = 'success'; }
+      }
+
       out.innerHTML = `
         <div class="rl-results">${rows.map((r) => `<div class="rl-card"><span>${r[0]}</span><strong>${r[1]}</strong><em>${r[2]}</em></div>`).join('')}</div>
         <div class="community-form-msg ${cls}" style="margin-top:12px;">${verdict}</div>
-        <p style="color:var(--text-low);font-size:0.76rem;margin-top:8px;">Cálculo determinista sobre tus propios supuestos; no predice resultados ni garantiza pasar ningún reto. Las reglas exactas varían según la empresa de fondeo.</p>`;
+        <p style="color:var(--text-low);font-size:0.76rem;margin-top:8px;">Cálculo determinista sobre tus propios supuestos; no predice resultados ni garantiza rentabilidad alguna.${mode === 'prop' ? ' Las reglas exactas varían según la empresa de fondeo.' : ''}</p>`;
     }
-    $('ppRun').addEventListener('click', run);
-    run();
-  }
 
+    function renderFields() { $('ppFields').innerHTML = fieldsHTML(); run(); }
+    document.getElementById('ppMode').querySelectorAll('.pp-mode-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        mode = btn.dataset.mode;
+        document.querySelectorAll('.pp-mode-btn').forEach((b) => b.classList.toggle('active', b === btn));
+        renderFields();
+      });
+    });
+    $('ppRun').addEventListener('click', run);
+    renderFields();
+  }
   // ============================================================
   // Stop inteligente por volatilidad (Premium): ATR real del instrumento
   // vía nuestra función de datos (Yahoo). Estructura, no señal.
