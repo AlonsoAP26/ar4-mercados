@@ -1322,6 +1322,8 @@
       <div class="community-form" id="resumenGreeting" style="margin-top:20px;">
         <p class="footer-text">Cargando resumen...</p>
       </div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">Mis diplomas</h2><a href="educacion.html" class="see-all">Ir a Educación →</a></div>
+      <div id="resumenDiplomas"><p class="footer-text">Cargando...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">Notificaciones</h2><button class="filter-chip" id="notifMarkAllReadBtn">✓ Marcar todo como leído</button></div>
       <div id="resumenNotifications"><p class="footer-text">Cargando...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">Tu Watchlist</h2></div>
@@ -1380,11 +1382,51 @@
     container.appendChild(script);
   }
 
+  // Vitrina de diplomas: los módulos completados (gratis e institucionales)
+  // como tarjetas doradas que enlazan al certificado imprimible.
+  const DIPLOMA_SEAL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg>';
+  const DIPLOMA_LEVEL_LABEL = { basico: 'Básico', intermedio: 'Intermedio', avanzado: 'Avanzado', institucional: 'Institucional' };
+  async function loadDiplomaVitrina(container) {
+    if (!container) return;
+    try {
+      const [freeMods, premMods] = await Promise.all([
+        fetch('data/educacion.json').then((r) => r.json()).catch(() => []),
+        fetch('data/educacion-premium.json').then((r) => r.json()).catch(() => [])
+      ]);
+      const catalog = {};
+      [...(freeMods || []), ...(premMods || [])].forEach((m) => { catalog[m.slug] = m; });
+      const completedSlugs = (myProfile.completed_modules || []).filter((s) => catalog[s]);
+      if (!completedSlugs.length) {
+        container.innerHTML = '<p class="footer-text">Todavía no tienes diplomas. Completa tu primer módulo en <a href="educacion.html">Educación</a> — todos otorgan diploma con tu nombre.</p>';
+        return;
+      }
+      const total = (freeMods || []).length + (premMods || []).length;
+      container.innerHTML = `
+        <div class="diploma-vitrina">
+          ${completedSlugs.map((s) => {
+            const m = catalog[s];
+            return `
+              <a class="diploma-mini${m.level === 'institucional' ? ' diploma-mini-inst' : ''}" href="diploma.html?slug=${encodeURIComponent(s)}" title="Ver diploma: ${escapeHtml(m.title)}">
+                <span class="diploma-mini-seal">${DIPLOMA_SEAL}</span>
+                <span class="diploma-mini-body">
+                  <strong>${escapeHtml(m.title)}</strong>
+                  <span>${DIPLOMA_LEVEL_LABEL[m.level] || 'Educación'} · Ver diploma →</span>
+                </span>
+              </a>`;
+          }).join('')}
+        </div>
+        <p class="footer-text" style="margin-top:8px;">${completedSlugs.length} de ${total} módulos completados.</p>`;
+    } catch (e) {
+      container.innerHTML = '<p class="footer-text">No se pudieron cargar tus diplomas.</p>';
+    }
+  }
+
   async function loadResumen() {
     const greetingEl = document.getElementById('resumenGreeting');
     const notifEl = document.getElementById('resumenNotifications');
     const watchlistEl = document.getElementById('resumenWatchlist');
     if (!greetingEl) return;
+    loadDiplomaVitrina(document.getElementById('resumenDiplomas'));
 
     loadCommunityPulse();
 

@@ -4437,3 +4437,27 @@ textarea.jrn-in { min-height: 84px; resize: vertical; line-height: 1.5; }
 @keyframes pulseDot { 0%,100% { opacity:1; } 50% { opacity:0.45; } }
 @media (max-width: 860px) { .onboard-steps { grid-template-columns:1fr 1fr; } }
 @media (max-width: 480px) { .onboard-steps { grid-template-columns:1fr; } }
+
+/* ===== FAQ refinado (membresía) ===== */
+.faq-refined { display:flex; flex-direction:column; gap:10px; }
+.faq-refined .faq-item { border:1px solid rgba(255,255,255,0.09); border-radius:14px; background:linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015)); padding:0 18px; transition:border-color .18s ease, background .18s ease; }
+.faq-refined .faq-item:hover { border-color:rgba(212,175,55,0.4); }
+.faq-refined .faq-item[open] { border-color:rgba(212,175,55,0.55); background:linear-gradient(180deg, rgba(212,175,55,0.06), rgba(255,255,255,0.02)); }
+.faq-refined .faq-item summary { display:flex; align-items:center; gap:14px; padding:16px 0; font-size:0.92rem; font-weight:600; color:var(--text-high); cursor:pointer; list-style:none; }
+.faq-refined .faq-item summary::after { content:"+"; margin-left:auto; width:26px; height:26px; display:flex; align-items:center; justify-content:center; border:1px solid rgba(212,175,55,0.4); border-radius:8px; color:var(--gold-bright); font-size:1rem; transition:transform .2s ease, background .2s ease; }
+.faq-refined .faq-item[open] summary::after { content:"−"; background:rgba(212,175,55,0.14); }
+.faq-num { flex:0 0 auto; font-family:var(--mono); font-size:0.72rem; font-weight:700; color:var(--gold-bright); opacity:0.8; border:1px solid rgba(212,175,55,0.3); border-radius:7px; padding:3px 7px; background:rgba(212,175,55,0.06); }
+.faq-refined .faq-item p { padding:0 0 18px 46px; color:var(--text-mid); font-size:0.87rem; line-height:1.6; }
+.faq-refined .faq-item p a { color:var(--gold-bright); }
+@media (max-width:560px){ .faq-refined .faq-item p { padding-left:0; } }
+
+/* ===== Vitrina de diplomas ===== */
+.diploma-vitrina { display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:10px; }
+.diploma-mini { display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:12px; border:1px solid rgba(212,175,55,0.3); background:linear-gradient(160deg, rgba(212,175,55,0.08), rgba(255,255,255,0.02)); color:inherit; transition:all .18s ease; }
+a.diploma-mini:hover { border-color:var(--gold-bright); transform:translateY(-1px); box-shadow:0 8px 22px rgba(0,0,0,0.3); }
+.diploma-mini-seal { flex:0 0 auto; display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; background:radial-gradient(circle at 35% 30%, rgba(251,233,176,0.25), rgba(212,175,55,0.12)); border:1.5px solid rgba(212,175,55,0.55); }
+.diploma-mini-seal svg { width:20px; height:20px; color:var(--gold-bright); }
+.diploma-mini-body { display:flex; flex-direction:column; gap:2px; min-width:0; }
+.diploma-mini-body strong { font-size:0.82rem; color:var(--text-high); line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.diploma-mini-body span { font-size:0.7rem; color:var(--gold-bright); letter-spacing:0.04em; }
+.diploma-mini-inst { border-color:rgba(212,175,55,0.55); background:linear-gradient(160deg, rgba(212,175,55,0.14), rgba(212,175,55,0.03)); }

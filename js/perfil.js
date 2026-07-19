@@ -198,7 +198,7 @@
     if (!username) { root.innerHTML = '<p class="footer-text">Falta indicar qué perfil mostrar. <a href="comunidad.html">Ir a Comunidad</a>.</p>'; return; }
 
     const { data: targetProfile } = await sb.from('profiles')
-      .select('id,username,avatar_color,avatar_url,rank,verified,bio,trading_style,social_links,badges,streak_days,points,created_at')
+      .select('id,username,avatar_color,avatar_url,rank,verified,bio,trading_style,social_links,badges,streak_days,points,created_at,completed_modules')
       .ilike('username', username).single();
     if (!targetProfile) { root.innerHTML = `<p class="footer-text">No encontramos a "${escapeHtml(username)}". <a href="comunidad.html">Ir a Comunidad</a>.</p>`; return; }
 
@@ -271,7 +271,10 @@
         ${statCardHTML('Seguidores', followersRes.count || 0)}
         ${statCardHTML('Siguiendo', followingRes.count || 0)}
         ${statCardHTML('Puntos', targetProfile.points || 0)}
+        ${statCardHTML('Diplomas', (targetProfile.completed_modules || []).length)}
       </div>
+
+      <div id="perfilDiplomas"></div>
 
       <div id="perfilAffinity"></div>
 
@@ -290,6 +293,37 @@
       });
     });
     loadTab('posts', targetProfile);
+
+    // Vitrina pública de diplomas: los módulos completados como logros visibles.
+    // Solo el dueño del perfil puede abrir el certificado (el nombre vive en su dispositivo).
+    (async () => {
+      const el = document.getElementById('perfilDiplomas');
+      const slugs = targetProfile.completed_modules || [];
+      if (!el || !slugs.length) return;
+      try {
+        const [freeMods, premMods] = await Promise.all([
+          fetch('data/educacion.json').then((r) => r.json()).catch(() => []),
+          fetch('data/educacion-premium.json').then((r) => r.json()).catch(() => [])
+        ]);
+        const catalog = {};
+        [...(freeMods || []), ...(premMods || [])].forEach((mod) => { catalog[mod.slug] = mod; });
+        const earned = slugs.filter((s) => catalog[s]);
+        if (!earned.length) return;
+        const seal = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg>';
+        const lvl = { basico: 'Básico', intermedio: 'Intermedio', avanzado: 'Avanzado', institucional: 'Institucional' };
+        el.innerHTML = `
+          <div class="section-head" style="margin-top:24px;"><h2 style="font-size:1rem;">Vitrina de diplomas</h2><span class="news-meta">${earned.length} obtenido${earned.length === 1 ? '' : 's'}</span></div>
+          <div class="diploma-vitrina">
+            ${earned.map((s) => {
+              const mod = catalog[s];
+              const inner = `<span class="diploma-mini-seal">${seal}</span><span class="diploma-mini-body"><strong>${escapeHtml(mod.title)}</strong><span>${lvl[mod.level] || 'Educación'}${isSelf ? ' · Ver diploma →' : ''}</span></span>`;
+              return isSelf
+                ? `<a class="diploma-mini${mod.level === 'institucional' ? ' diploma-mini-inst' : ''}" href="diploma.html?slug=${encodeURIComponent(s)}">${inner}</a>`
+                : `<div class="diploma-mini${mod.level === 'institucional' ? ' diploma-mini-inst' : ''}">${inner}</div>`;
+            }).join('')}
+          </div>`;
+      } catch (e) { /* la vitrina es opcional; el perfil sigue funcionando */ }
+    })();
 
     if (myProfile && !isSelf) {
       const affinityEl = document.getElementById('perfilAffinity');
