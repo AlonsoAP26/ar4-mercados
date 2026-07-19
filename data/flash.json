@@ -1,5 +1,243 @@
 {
- "lastId": 33433,
- "actualizado": null,
- "items": []
+ "lastId": 33438,
+ "actualizado": "2026-07-19T19:07:08.595Z",
+ "items": [
+  {
+   "id": 33437,
+   "fecha": "2026-07-19T14:58:29+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33437",
+   "original": "WALL STREET WEEK AHEAD: $GOOGL, $INTC IN FOCUS U.S. earnings season accelerates next week, with $GOOGL and $INTC among the most closely watched reports as investors look for signals on AI spending, corporate profitability, and the broader market outlook. Markets ended the week on a softer note, with the S&P 500 posting a weekly decline after a sharp pullback in semiconductor stocks. Even so, the i",
+   "titulo": "Wall Street mira a Google e Intel en una semana clave de resultados y con la Fed en el horizonte",
+   "resumen": "La próxima semana más de 80 empresas del S&P 500 presentarán resultados, con foco en Alphabet ($GOOGL, miércoles) e Intel ($INTC), además de Texas Instruments, Tesla, American Express, RTX y Philip Morris. El mercado busca señales sobre el gasto en IA tras la debilidad reciente del sector semiconductor, que cayó más de 20% desde su máximo de junio. El consenso de LSEG IBES proyecta un crecimiento interanual de ganancias del 26% para el S&P 500 en el segundo trimestre. El S&P 500 cerró la semana con caída, aunque se mantiene un 9% arriba en el año y 2% debajo de su máximo histórico.",
+   "analisis": {
+    "porque": "Los resultados de las grandes tecnológicas y semiconductoras definirán si el repunte impulsado por la IA tiene continuidad, en un contexto de tensión geopolítica en Medio Oriente y expectativa por la reunión de la Fed a fin de mes.",
+    "queOcurrio": "Un resumen de mercado detalla la agenda de resultados corporativos de la próxima semana, con énfasis en Alphabet, Intel y Texas Instruments, y el contexto macro y geopolítico que rodea a los inversores.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Acciones tecnológicas",
+    "GOOGL",
+    "INTC",
+    "TXN",
+    "TSLA"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings",
+    "Google",
+    "Intel",
+    "IA",
+    "semiconductores",
+    "Fed"
+   ],
+   "tgText": "📊 Semana clave de resultados: $GOOGL, $INTC, $TXN, $TSLA reportan. El mercado busca señales sobre el gasto en IA tras la caída de semiconductores.",
+   "xText": "Wall Street Week Ahead: $GOOGL e $INTC en el centro de atención. Más de 80 empresas del S&P 500 reportan, con la IA y la Fed como ejes clave. #Earnings #IA",
+   "discordText": "**📊 Semana clave de resultados corporativos**\n- $GOOGL reporta el miércoles, foco en gasto de IA\n- $INTC, $TXN, $TSLA, $AXP, $RTX, $PM también reportan\n- Consenso: +26% YoY en ganancias del S&P 500\n- Sector semiconductores en bear market (-20% desde junio)",
+   "pushText": "Semana clave: resultados de Google e Intel",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Las acciones individuales de las empresas que reportan (GOOGL, INTC, TXN) suelen moverse primero tras la publicación de resultados y guías.",
+    "despues": "El índice Nasdaq y el S&P 500 en conjunto, especialmente el sector semiconductor, pueden verse arrastrados por el tono de las guías sobre gasto en IA.",
+    "escenarios": "Los inversores siguen de cerca los comentarios sobre inversión en infraestructura de IA, márgenes y la reacción del mercado a resultados de Samsung y TSMC como referencia previa.",
+    "riesgos": "Las expectativas ya están muy elevadas en el sector tecnológico y semiconductor, lo que incrementa el riesgo de reacciones negativas incluso ante resultados sólidos."
+   },
+   "macro": {
+    "dolar": "sin sesgo directo mencionado en el titular",
+    "oro": "sin mención directa",
+    "nasdaq": "en foco por resultados de tecnológicas y semiconductores",
+    "dow": "sin mención directa",
+    "sp500": "cierre semanal con caída, +9% en el año, 2% bajo máximo histórico",
+    "bitcoin": "sin mención en el titular",
+    "ethereum": "sin mención en el titular",
+    "bonos": "sin mención directa, aunque la Fed de fin de julio es un factor a vigilar",
+    "petroleo": "riesgo geopolítico en Medio Oriente mencionado como factor de atención"
+   },
+   "updates": []
+  },
+  {
+   "id": 33436,
+   "fecha": "2026-07-19T12:31:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33436",
+   "original": "IRAN’S ARAGHCHI SAYS SOME NUCLEAR DISPUTES MAY BE ‘UNRESOLVABLE’",
+   "titulo": "Canciller iraní Araghchi: algunas disputas nucleares podrían ser 'irresolubles'",
+   "resumen": "El canciller iraní Abbas Araghchi declaró que ciertos puntos de disputa en el programa nuclear de su país podrían no tener solución. La afirmación se produce en un contexto de negociaciones estancadas y escalada regional, y se suma a la retórica sobre el bloqueo de Ormuz y las sanciones occidentales. El titular no detalla a qué disputas específicas se refiere ni el estado actual de las negociaciones.",
+   "analisis": {
+    "porque": "Reduce las expectativas de un acuerdo nuclear a corto plazo, lo que mantiene elevada la prima de riesgo geopolítico sobre el petróleo y los activos refugio.",
+    "queOcurrio": "Araghchi, canciller de Irán, afirmó públicamente que algunas diferencias en el expediente nuclear podrían ser irresolubles.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "nuclear",
+    "Araghchi",
+    "negociaciones"
+   ],
+   "tgText": "Irán: el canciller Araghchi dice que algunas disputas nucleares 'pueden ser irresolubles'. Baja la expectativa de acuerdo a corto plazo.",
+   "xText": "Araghchi (canciller iraní): algunas disputas nucleares podrían ser 'irresolubles'. Se enfría la expectativa de acuerdo. #Irán #Nuclear",
+   "discordText": "**Irán: disputas nucleares 'irresolubles' según Araghchi**\n- Declaración oficial del canciller iraní\n- Reduce probabilidad de acuerdo próximo\n- Contexto: escalada regional y Ormuz",
+   "pushText": "Irán: disputas nucleares podrían no resolverse",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "El petróleo suele ser sensible a señales que reducen las probabilidades de un acuerdo nuclear, dado el riesgo de sanciones prolongadas.",
+    "despues": "Oro y dólar como refugio, y posibles ajustes en acciones vinculadas a energía y defensa.",
+    "escenarios": "Los mercados vigilan si Estados Unidos, la UE o el OIEA responden formalmente, y si continúan o se reanudan las conversaciones diplomáticas.",
+    "riesgos": "Declaración de tono político que puede no reflejar el estado real de las negociaciones; riesgo de sobreinterpretación mediática."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33435,
+   "fecha": "2026-07-19T12:27:45+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33435",
+   "original": "*HORMUZ STRAIT TO REMAIN BLOCKED WHILE US MALICE PERSISTS: FARS",
+   "titulo": "Medio estatal iraní advierte que el Estrecho de Ormuz seguirá bloqueado",
+   "resumen": "La agencia iraní FARS afirmó que el Estrecho de Ormuz permanecerá bloqueado mientras persista lo que describe como 'malicia' de Estados Unidos. Se trata de una declaración de un medio estatal iraní, no verificada de forma independiente por fuentes occidentales. Ormuz es un punto crítico para el transporte marítimo de petróleo y gas, y cualquier interrupción prolongada representaría un riesgo directo para el suministro energético global.",
+   "analisis": {
+    "porque": "Ormuz canaliza cerca de una quinta parte del petróleo mundial; una obstrucción sostenida, aunque sea retórica, puede disparar la prima de riesgo en los precios de la energía.",
+    "queOcurrio": "FARS, agencia estatal iraní, publicó que el estrecho seguirá cerrado mientras continúe la 'malicia' estadounidense, sin detallar medidas concretas ni confirmación oficial de un bloqueo físico.",
+    "estado": "rumor",
+    "fuenteOriginal": "FARS"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Acciones energéticas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Ormuz",
+    "Irán",
+    "petróleo",
+    "FARS",
+    "bloqueo naval"
+   ],
+   "tgText": "⚠️ FARS (medio estatal iraní): el Estrecho de Ormuz seguirá bloqueado mientras persista la 'malicia' de EE.UU. Sin verificación independiente. Riesgo alto para el petróleo.",
+   "xText": "🚨 FARS (Irán): Ormuz seguirá bloqueado mientras continúe la 'malicia' de EE.UU. Declaración de medio estatal, no verificada. Vigilar crudo y refugio. #Ormuz #Petróleo",
+   "discordText": "**⚠️ FARS: Ormuz seguirá bloqueado**\n- Fuente: medio estatal iraní (no verificado)\n- Contexto: tensión con EE.UU.\n- Riesgo directo sobre suministro de petróleo",
+   "pushText": "Irán (FARS): Ormuz seguirá bloqueado",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "El petróleo (Brent/WTI) suele reaccionar de inmediato ante cualquier señal de riesgo sobre Ormuz por su peso en el flujo global de crudo.",
+    "despues": "Activos refugio como oro y dólar, además de acciones del sector energético y transporte marítimo, pueden mostrar movimientos secundarios.",
+    "escenarios": "Los traders siguen si hay confirmación de bloqueo físico por parte de fuentes occidentales (Reuters, Bloomberg, gobiernos) o si permanece como declaración retórica.",
+    "riesgos": "La fuente es un medio estatal iraní sin corroboración independiente; existe riesgo de propaganda o exageración deliberada del conflicto."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33434,
+   "fecha": "2026-07-19T12:03:26+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33434",
+   "original": "TRUMP: REPUBLICANS SHOULD ADD IRAN TO RUSSIAN SANCTIONS BILL",
+   "titulo": "Trump pide a republicanos incluir a Irán en el proyecto de sanciones contra Rusia",
+   "resumen": "Donald Trump declaró que los legisladores republicanos deberían sumar a Irán al proyecto de ley de sanciones dirigido actualmente contra Rusia. La propuesta, de concretarse, ampliaría el marco sancionatorio en pleno contexto de tensión con Teherán por el programa nuclear y el bloqueo del Estrecho de Ormuz. El titular no especifica plazos ni el texto exacto de la iniciativa legislativa.",
+   "analisis": {
+    "porque": "Una ampliación de sanciones a Irán dentro de un paquete ya orientado a Rusia endurecería el frente geopolítico en un momento de máxima sensibilidad energética por Ormuz, con potencial impacto en el suministro global de crudo.",
+    "queOcurrio": "Trump manifestó públicamente que los republicanos deberían añadir a Irán al proyecto de sanciones contra Rusia que se discute en el Congreso.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "Oro",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "sanciones",
+    "Irán",
+    "Rusia",
+    "Congreso"
+   ],
+   "tgText": "🇺🇸 Trump pide sumar a Irán al proyecto de sanciones contra Rusia. Sube el riesgo geopolítico en medio de la crisis en Ormuz.",
+   "xText": "Trump: los republicanos deberían añadir a Irán al proyecto de sanciones contra Rusia. Escalada geopolítica en curso con foco en Ormuz y crudo. #Irán #Sanciones",
+   "discordText": "**Trump pide agregar a Irán al proyecto de sanciones contra Rusia**\n- Declaración directa de Trump\n- Contexto: crisis en Ormuz y tensión nuclear con Irán\n- Posible impacto en petróleo y activos refugio",
+   "pushText": "Trump propone sancionar a Irán junto con Rusia",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "El petróleo suele ser el primer activo en reaccionar ante señales de mayor presión sancionatoria sobre Irán, dado su rol en la oferta global.",
+    "despues": "El oro y el dólar podrían moverse como refugio si la propuesta avanza; los bonos del Tesoro también pueden verse afectados por el apetito de riesgo.",
+    "escenarios": "Los traders vigilan si la propuesta se traduce en un proyecto de ley formal, y la respuesta de Irán ante una posible ampliación de sanciones.",
+    "riesgos": "Se trata de una declaración política sin confirmación de que el Congreso la adopte; el impacto de mercado dependerá del avance legislativo real."
+   },
+   "macro": null,
+   "updates": []
+  }
+ ]
 }
