@@ -198,7 +198,7 @@
     if (!username) { root.innerHTML = '<p class="footer-text">Falta indicar qué perfil mostrar. <a href="comunidad.html">Ir a Comunidad</a>.</p>'; return; }
 
     const { data: targetProfile } = await sb.from('profiles')
-      .select('id,username,avatar_color,avatar_url,rank,verified,bio,trading_style,social_links,badges,streak_days,points,created_at,completed_modules')
+      .select('id,username,avatar_color,avatar_url,rank,verified,bio,trading_style,social_links,badges,streak_days,points,created_at')
       .ilike('username', username).single();
     if (!targetProfile) { root.innerHTML = `<p class="footer-text">No encontramos a "${escapeHtml(username)}". <a href="comunidad.html">Ir a Comunidad</a>.</p>`; return; }
 
@@ -271,7 +271,6 @@
         ${statCardHTML('Seguidores', followersRes.count || 0)}
         ${statCardHTML('Siguiendo', followingRes.count || 0)}
         ${statCardHTML('Puntos', targetProfile.points || 0)}
-        ${statCardHTML('Diplomas', (targetProfile.completed_modules || []).length)}
       </div>
 
       <div id="perfilDiplomas"></div>
@@ -295,16 +294,19 @@
     loadTab('posts', targetProfile);
 
     // Vitrina pública de diplomas: los módulos completados como logros visibles.
-    // Solo el dueño del perfil puede abrir el certificado (el nombre vive en su dispositivo).
+    // La lista se obtiene vía función de servidor (la clave pública no puede leer
+    // esa columna). Solo el dueño del perfil puede abrir el certificado.
     (async () => {
       const el = document.getElementById('perfilDiplomas');
-      const slugs = targetProfile.completed_modules || [];
-      if (!el || !slugs.length) return;
+      if (!el) return;
       try {
-        const [freeMods, premMods] = await Promise.all([
+        const [freeMods, premMods, dipRes] = await Promise.all([
           fetch('data/educacion.json').then((r) => r.json()).catch(() => []),
-          fetch('data/educacion-premium.json').then((r) => r.json()).catch(() => [])
+          fetch('data/educacion-premium.json').then((r) => r.json()).catch(() => []),
+          fetch('/.netlify/functions/community-public-diplomas?username=' + encodeURIComponent(targetProfile.username)).then((r) => r.json()).catch(() => ({}))
         ]);
+        const slugs = (dipRes && dipRes.slugs) || [];
+        if (!slugs.length) return;
         const catalog = {};
         [...(freeMods || []), ...(premMods || [])].forEach((mod) => { catalog[mod.slug] = mod; });
         const earned = slugs.filter((s) => catalog[s]);
