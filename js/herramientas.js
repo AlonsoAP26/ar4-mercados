@@ -127,7 +127,7 @@
   }
 
   function journalEntryRowHTML(entry) {
-    const resultLabel = { ganadora: '✅ Ganadora', perdedora: '❌ Perdedora', abierta: '🔵 Abierta' }[entry.result] || entry.result;
+    const resultLabel = { ganadora: '<span class="jrn-res win">Ganadora</span>', perdedora: '<span class="jrn-res loss">Perdedora</span>', abierta: '<span class="jrn-res open">Abierta</span>' }[entry.result] || entry.result;
     const priceParts = [];
     if (entry.entry_price != null) priceParts.push('Entrada: ' + entry.entry_price);
     if (entry.exit_price != null) priceParts.push('Salida: ' + entry.exit_price);
@@ -136,7 +136,7 @@
     return `
       <div class="community-post-card" style="margin-bottom:12px;">
         <div class="community-post-head" style="justify-content:space-between;">
-          <div><strong>${entry.symbol}</strong> <span class="instrument-badge">${entry.direction === 'long' ? '📈 Long' : '📉 Short'}</span></div>
+          <div><strong>${entry.symbol}</strong> <span class="instrument-badge ${entry.direction === 'long' ? 'dir-long' : 'dir-short'}">${entry.direction === 'long' ? '&#9650; Long' : '&#9660; Short'}</span></div>
           <span class="news-meta">${resultLabel}</span>
         </div>
         ${priceParts.length ? `<p style="color:var(--text-mid);font-size:0.82rem;">${priceParts.join(' · ')}</p>` : ''}
@@ -159,7 +159,7 @@
 
     section.innerHTML = `
       <div class="community-form jrn-card">
-        <h3 class="jrn-h">✍️ Nueva operación</h3>
+        <h3 class="jrn-h">Nueva operación</h3>
 
         <label class="jrn-lbl" for="jSymbol">Instrumento <span class="jrn-opt">— el precio se detecta solo</span></label>
         <input class="jrn-in" type="text" id="jSymbol" maxlength="40" placeholder="ej. EUR/USD, Oro, BTC, Nasdaq…">
@@ -467,7 +467,7 @@
       return;
     }
 
-    if (titleEl) titleEl.textContent = '📌 Mi Watchlist';
+    if (titleEl) titleEl.textContent = 'Mi Watchlist';
     if (typeof netlifyIdentity === 'undefined') return;
     const user = netlifyIdentity.currentUser();
 
@@ -582,7 +582,7 @@
         try {
           await navigator.clipboard.writeText(url);
           const original = shareBtn.textContent;
-          shareBtn.textContent = '✔ Enlace copiado';
+          shareBtn.textContent = 'Enlace copiado';
           setTimeout(() => { shareBtn.textContent = original; }, 2000);
         } catch (e) {
           prompt('Copia este enlace:', url);

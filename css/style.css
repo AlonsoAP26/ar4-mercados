@@ -806,7 +806,23 @@ a { color: inherit; text-decoration: none; }
   color: var(--gold);
   font-weight: 700;
   font-size: 1.1rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+/* Icono SVG serio dentro del badge dorado (reemplaza los emojis) */
+.info-card .info-num:has(svg) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(160deg, rgba(212,175,55,0.16), rgba(212,175,55,0.05));
+  border: 1px solid rgba(212,175,55,0.32);
+}
+.info-card .info-num svg {
+  width: 24px;
+  height: 24px;
+  color: var(--gold-bright);
 }
 .info-card h4 { font-size: 1rem; margin-bottom: 8px; }
 .info-card p { font-size: 0.86rem; color: var(--text-mid); }
@@ -4315,3 +4331,11 @@ textarea.jrn-in { min-height: 84px; resize: vertical; line-height: 1.5; }
 .wl-remove:hover { border-color:#ff8a8a; color:#ff8a8a; background:rgba(255,80,80,0.08); }
 .wl-remove svg { width:15px; height:15px; }
 .wl-remove:disabled { opacity:0.4; cursor:default; }
+
+/* Diario: badges de resultado y dirección serios (sin emojis) */
+.jrn-res { display:inline-block; padding:2px 10px; border-radius:999px; font-size:0.74rem; font-weight:600; border:1px solid transparent; }
+.jrn-res.win { color:#7fe0a8; background:rgba(46,204,113,0.12); border-color:rgba(46,204,113,0.3); }
+.jrn-res.loss { color:#ff8a8a; background:rgba(255,80,80,0.1); border-color:rgba(255,120,120,0.28); }
+.jrn-res.open { color:var(--gold-bright); background:rgba(212,175,55,0.1); border-color:rgba(212,175,55,0.3); }
+.instrument-badge.dir-long { color:#7fe0a8; }
+.instrument-badge.dir-short { color:#ff8a8a; }

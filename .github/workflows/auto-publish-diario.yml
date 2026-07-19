@@ -5,10 +5,16 @@ name: Publicar contenido diario (noticia + idea + psicotrading)
 # Ahora: 1 push = 1 deploy (~15 creditos/dia).
 # La hora es la de Noticias (21:30 UTC = 16:30 Lima), media hora despues
 # del cierre de EE.UU., porque la noticia necesita los datos del cierre.
+#
+# La jornada de trading va del domingo por la tarde (apertura del Forex) al
+# viernes por la noche (cierre de Wall Street). El sabado el mercado esta
+# cerrado y no hay sesion nueva que resumir, por eso NO se publica ese dia.
+# cron '30 21 * * 0-5' = domingo(0) a viernes(5), 21:30 UTC. Todo automatico,
+# sin intervencion manual.
 
 on:
   schedule:
-    - cron: '30 21 * * *'
+    - cron: '30 21 * * 0-5'
   workflow_dispatch:
 
 concurrency:

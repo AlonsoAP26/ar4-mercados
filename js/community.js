@@ -487,7 +487,7 @@
       </div>
       ${isEdit ? `
       <div class="community-form edit-donate">
-        <h3 style="margin-bottom:4px;">🎁 Donar puntos a otro usuario</h3>
+        <h3 style="margin-bottom:4px;">Donar puntos a otro usuario</h3>
         <p style="color:var(--text-mid);font-size:0.86rem;">Regala parte de tus puntos a cualquier miembro de la comunidad. Tienes <strong>${myProfile.points} pts</strong> disponibles.</p>
         <div class="community-donate-form" style="margin-top:8px;">
           <input type="text" id="donateUsername" placeholder="Usuario destinatario" maxlength="24">
@@ -539,7 +539,7 @@
 
     const items = catalogCache[catalogTab];
     return `
-      <h4 style="font-size:0.9rem;margin:24px 0 10px;">🏆 Colección Exclusiva AR4 (500 piezas)</h4>
+      <h4 style="font-size:0.9rem;margin:24px 0 10px;">Colección Exclusiva AR4 (500 piezas)</h4>
       <p style="color:var(--text-mid);font-size:0.82rem;margin-bottom:14px;">Avatares coleccionables con distintos niveles de rareza. No son criptomonedas ni NFTs — son un accesorio cosmético de tu perfil en AR4 Mercados. Los comunes se compran con tus puntos de comunidad; los raros y legendarios con Mercado Pago.</p>
       <div class="community-tabs" style="flex-direction:row;position:static;margin-bottom:14px;">
         ${Object.keys(TAB_LABELS).map((r) => `<button class="community-tab-btn catalog-tab-btn${r === catalogTab ? ' active' : ''}" data-rarity="${r}">${TAB_LABELS[r]}</button>`).join('')}
@@ -578,7 +578,7 @@
         <h3 style="margin-bottom:4px;">Tienda de avatares</h3>
         <p style="color:var(--text-mid);font-size:0.86rem;margin-bottom:18px;">Elige un avatar gratuito, desbloquea uno exclusivo, o sube tu propia foto. Los pagos se procesan de forma segura vía Mercado Pago.</p>
 
-        <h4 style="font-size:0.9rem;margin-bottom:10px;">📷 Tu propia foto</h4>
+        <h4 style="font-size:0.9rem;margin-bottom:10px;">Tu propia foto</h4>
         <div class="avatar-upload-row">
           ${avatarHTML(myProfile, 'trader-avatar')}
           <div>
@@ -930,15 +930,15 @@
     return `
       <div class="leaderboard-grid leaderboard-grid-3">
         <div>
-          <div class="section-head"><h2 style="font-size:1.05rem;">🔥 Ranking semanal</h2></div>
+          <div class="section-head"><h2 style="font-size:1.05rem;">Ranking semanal</h2></div>
           <div id="leaderboardWeekly"><p class="footer-text">Cargando ranking...</p></div>
         </div>
         <div>
-          <div class="section-head"><h2 style="font-size:1.05rem;">📅 Ranking mensual</h2></div>
+          <div class="section-head"><h2 style="font-size:1.05rem;">Ranking mensual</h2></div>
           <div id="leaderboardMonthly"><p class="footer-text">Cargando ranking...</p></div>
         </div>
         <div>
-          <div class="section-head"><h2 style="font-size:1.05rem;">🏆 Ranking histórico</h2></div>
+          <div class="section-head"><h2 style="font-size:1.05rem;">Ranking histórico</h2></div>
           <div id="leaderboardAllTime"><p class="footer-text">Cargando ranking...</p></div>
         </div>
       </div>
@@ -1133,7 +1133,7 @@
           <span class="pulse-value" id="pulseTradersCount">—</span>
         </div>
       </div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">📰 Noticias y análisis IA</h2></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">Noticias y análisis IA</h2></div>
       <div id="pulseNewsIdeas" class="pulse-news-row"><p class="footer-text">Cargando noticias y análisis...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.star} Traders destacados</h2></div>
       <div id="pulseFeaturedTraders" class="featured-traders-row"><p class="footer-text">Cargando traders destacados...</p></div>
@@ -1288,9 +1288,9 @@
       <div class="community-form" id="resumenGreeting" style="margin-top:20px;">
         <p class="footer-text">Cargando resumen...</p>
       </div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">🔔 Notificaciones</h2><button class="filter-chip" id="notifMarkAllReadBtn">✓ Marcar todo como leído</button></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">Notificaciones</h2><button class="filter-chip" id="notifMarkAllReadBtn">✓ Marcar todo como leído</button></div>
       <div id="resumenNotifications"><p class="footer-text">Cargando...</p></div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">📌 Tu Watchlist</h2></div>
+      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">Tu Watchlist</h2></div>
       <div id="resumenWatchlist"><p class="footer-text">Cargando...</p></div>
     `;
   }
@@ -1945,7 +1945,7 @@
         try {
           await navigator.clipboard.writeText(url);
           const original = btn.textContent;
-          btn.textContent = '✔ Enlace copiado';
+          btn.textContent = 'Enlace copiado';
           setTimeout(() => { btn.textContent = original; }, 2000);
         } catch (e) {
           prompt('Copia este enlace:', url);
@@ -2409,7 +2409,7 @@
               if (!blob) { if (attachNote) attachNote.textContent = 'No se pudo capturar.'; return; }
               pendingPostMediaFile = new File([blob], 'grafico-ar4.png', { type: 'image/png' });
               const nm = document.getElementById('postMediaName'); if (nm) nm.textContent = 'grafico-ar4.png (gráfico)';
-              if (attachNote) attachNote.textContent = '✓ Gráfico adjuntado a tu publicación';
+              if (attachNote) attachNote.textContent = 'Gráfico adjuntado a tu publicación';
             }, 'image/png');
           } catch (e) { if (attachNote) attachNote.textContent = 'No se pudo capturar el gráfico.'; }
         });
@@ -2449,7 +2449,7 @@
       const validLong = selectedIdeaDirection === 'long' && sl < entry && tp > entry;
       const validShort = selectedIdeaDirection === 'short' && sl > entry && tp < entry;
       if (!validLong && !validShort) {
-        ideaRrPreview.textContent = '⚠️ Revisa los niveles: no son coherentes con la dirección elegida.';
+        ideaRrPreview.textContent = 'Revisa los niveles: no son coherentes con la dirección elegida.';
         return;
       }
       ideaRrPreview.textContent = 'Relación riesgo/beneficio: 1:' + (reward / risk).toFixed(2);
@@ -2693,7 +2693,7 @@
       actionHTML = `<span class="mission-progress-text">${data.progress}/${data.target}</span>`;
     }
     return `
-      <div class="section-head" style="margin-bottom:10px;"><h2 style="font-size:1rem;">🏆 Reto semanal</h2></div>
+      <div class="section-head" style="margin-bottom:10px;"><h2 style="font-size:1rem;">Reto semanal</h2></div>
       <div class="mission-row">
         <span class="mission-icon">⚡</span>
         <div class="mission-info">
@@ -3137,7 +3137,7 @@
   function communitySidebarHTML() {
     return `
       <div class="glass-card sidebar-card">
-        <h4>🟢 Conectados ahora</h4>
+        <h4>Conectados ahora</h4>
         <span class="sidebar-online-value" id="sidebarOnlineCount">—</span>
       </div>
       <div class="glass-card sidebar-card">
