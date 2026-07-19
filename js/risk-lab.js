@@ -417,6 +417,14 @@
         </div>
       </div>
 
+      <div class="rl-hist-wrap" id="rpHistWrap" hidden>
+        <div class="rl-hist-head">
+          <h3 class="rl-h" style="margin:0;">Distribución de finales: ¿dónde acaba tu cuenta?</h3>
+          <span id="rpHistNote">—</span>
+        </div>
+        <div class="rl-hist" id="rpHist"></div>
+      </div>
+
       <p class="rl-disclaimer">
         <b>Esto no predice el mercado.</b> Proyecta la matemática de los supuestos que tú introduces: si tu % de aciertos real
         es distinto al que pones aquí, el resultado será distinto. No es una señal, ni una promesa de rentabilidad.
@@ -455,12 +463,52 @@
       const paths = curves.map((c) => {
         const up = c[c.length - 1] >= capital;
         const d = c.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
-        return `<path d="${d}" fill="none" stroke="${up ? 'rgba(46,204,113,0.5)' : 'rgba(225,58,75,0.5)'}" stroke-width="1"/>`;
+        return `<path d="${d}" fill="none" stroke="${up ? 'rgba(46,204,113,0.35)' : 'rgba(225,58,75,0.35)'}" stroke-width="1"/>`;
       }).join('');
-      const base = `<line x1="${PAD}" y1="${y(capital).toFixed(1)}" x2="${W - PAD}" y2="${y(capital).toFixed(1)}" stroke="rgba(240,199,94,0.8)" stroke-width="1.4" stroke-dasharray="5 4"/>`;
+      // Banda P10–P90 + mediana por paso: el "camino esperado" de tu cuenta.
+      const steps = curves[0].length;
+      const bandTop = [], bandBot = [], medPath = [];
+      for (let i = 0; i < steps; i++) {
+        const col = curves.map((c) => c[i]).sort((a, b) => a - b);
+        bandBot.push(col[Math.floor(col.length * 0.10)]);
+        bandTop.push(col[Math.min(col.length - 1, Math.floor(col.length * 0.90))]);
+        medPath.push(col[Math.floor(col.length * 0.50)]);
+      }
+      const bandD = bandTop.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ') +
+        bandBot.slice().reverse().map((v, idx) => ' L' + x(steps - 1 - idx).toFixed(1) + ' ' + y(v).toFixed(1)).join('') + ' Z';
+      const medD = medPath.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+      const band = `<path d="${bandD}" fill="rgba(212,175,55,0.10)" stroke="none"/>` +
+        `<path d="${medD}" fill="none" stroke="rgba(240,199,94,0.95)" stroke-width="2"/>`;
+      const base = `<line x1="${PAD}" y1="${y(capital).toFixed(1)}" x2="${W - PAD}" y2="${y(capital).toFixed(1)}" stroke="rgba(240,199,94,0.55)" stroke-width="1.2" stroke-dasharray="5 4"/>`;
       $('rpCurves').innerHTML =
-        `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Curvas de capital simuladas">${paths}${base}</svg>` +
-        `<span class="rl-curves-legend"><i class="rl-lg-gold"></i>Capital inicial <i class="rl-lg-up"></i>Termina arriba <i class="rl-lg-dn"></i>Termina abajo</span>`;
+        `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Curvas de capital simuladas">${paths}${band}${base}</svg>` +
+        `<span class="rl-curves-legend"><i class="rl-lg-gold"></i>Mediana y banda 10–90% <i class="rl-lg-up"></i>Termina arriba <i class="rl-lg-dn"></i>Termina abajo</span>`;
+    }
+
+    // Histograma de capitales finales: dónde cae cada "vida" simulada.
+    function drawHist(finals, capital, median) {
+      const W = 720, H = 150, PADX = 6, PADB = 22;
+      const lo = Math.min.apply(null, finals), hi = Math.max.apply(null, finals);
+      const span = (hi - lo) || 1;
+      const BINS = 28;
+      const counts = new Array(BINS).fill(0);
+      finals.forEach((v) => { counts[Math.min(BINS - 1, Math.floor(((v - lo) / span) * BINS))]++; });
+      const maxC = Math.max.apply(null, counts) || 1;
+      const bw = (W - PADX * 2) / BINS;
+      const bars = counts.map((c, i) => {
+        const h = (c / maxC) * (H - PADB - 8);
+        const bx = PADX + i * bw;
+        const binMid = lo + ((i + 0.5) / BINS) * span;
+        const up = binMid >= capital;
+        return `<rect x="${(bx + 1).toFixed(1)}" y="${(H - PADB - h).toFixed(1)}" width="${(bw - 2).toFixed(1)}" height="${h.toFixed(1)}" rx="2" fill="${up ? 'rgba(212,175,55,0.75)' : 'rgba(225,58,75,0.55)'}"/>`;
+      }).join('');
+      const xOf = (v) => PADX + ((v - lo) / span) * (W - PADX * 2);
+      const markers =
+        `<line x1="${xOf(capital).toFixed(1)}" y1="4" x2="${xOf(capital).toFixed(1)}" y2="${H - PADB}" stroke="rgba(200,210,230,0.8)" stroke-width="1.4" stroke-dasharray="4 3"/>` +
+        `<text x="${xOf(capital).toFixed(1)}" y="${H - 8}" text-anchor="middle" font-size="10" font-family="JetBrains Mono, monospace" fill="rgba(200,210,230,0.85)">inicio</text>` +
+        `<line x1="${xOf(median).toFixed(1)}" y1="4" x2="${xOf(median).toFixed(1)}" y2="${H - PADB}" stroke="rgba(240,199,94,0.95)" stroke-width="2"/>` +
+        `<text x="${xOf(median).toFixed(1)}" y="${H - 8}" text-anchor="middle" font-size="10" font-family="JetBrains Mono, monospace" fill="#f0c75e">mediana</text>`;
+      $('rpHist').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Distribución de capitales finales">${bars}${markers}</svg>`;
     }
 
     function run() {
@@ -480,7 +528,7 @@
       }
       msg.textContent = ''; msg.className = 'rl-msg';
 
-      const KEEP = isPro ? 45 : 0;
+      const KEEP = isPro ? 60 : 0;
       const finals = [], dds = [], streaks = [], curves = [];
       let ruined = 0, profitable = 0;
       for (let s = 0; s < sims; s++) {
@@ -534,7 +582,10 @@
 
       if (isPro && curves.length) {
         drawCurves(curves, capital);
-        $('rpCurvesNote').textContent = `${curves.length} caminos de ${sims.toLocaleString('es-PE')} simulados · ${trades} operaciones cada uno`;
+        $('rpCurvesNote').textContent = `${curves.length} caminos de ${sims.toLocaleString('es-PE')} simulados · ${trades} operaciones cada uno · banda dorada = zona donde cae el 80% de los caminos`;
+        drawHist(finals, capital, median);
+        $('rpHistWrap').hidden = false;
+        $('rpHistNote').textContent = `${sims.toLocaleString('es-PE')} finales · dorado = acaba en ganancia, rojo = en pérdida`;
       }
     }
 

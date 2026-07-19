@@ -11,21 +11,82 @@
   const el = document.getElementById('marketCopilot');
   if (!el) return;
 
+  // Catálogo completo del mercado, agrupado. Todos con datos reales de Yahoo.
   const INSTR = [
-    { id: 'NAS100', label: 'Nasdaq 100', y: '^NDX', dec: 1 },
-    { id: 'US30', label: 'Dow Jones 30', y: '^DJI', dec: 1 },
-    { id: 'SP500', label: 'S&P 500', y: '^GSPC', dec: 1 },
-    { id: 'XAUUSD', label: 'Oro', y: 'GC=F', dec: 2 },
-    { id: 'USOIL', label: 'Petróleo WTI', y: 'CL=F', dec: 2 },
-    { id: 'EURUSD', label: 'EUR/USD', y: 'EURUSD=X', dec: 5 },
-    { id: 'GBPUSD', label: 'GBP/USD', y: 'GBPUSD=X', dec: 5 },
-    { id: 'USDJPY', label: 'USD/JPY', y: 'USDJPY=X', dec: 3 },
-    { id: 'BTCUSD', label: 'Bitcoin', y: 'BTC-USD', dec: 2 },
-    { id: 'ETHUSD', label: 'Ethereum', y: 'ETH-USD', dec: 2 },
-    { id: 'AAPL', label: 'Apple', y: 'AAPL', dec: 2 },
-    { id: 'NVDA', label: 'NVIDIA', y: 'NVDA', dec: 2 },
-    { id: 'TSLA', label: 'Tesla', y: 'TSLA', dec: 2 }
+    // Índices
+    { g: 'Índices', id: 'NAS100', label: 'Nasdaq 100', y: '^NDX', dec: 1 },
+    { g: 'Índices', id: 'SP500', label: 'S&P 500', y: '^GSPC', dec: 1 },
+    { g: 'Índices', id: 'US30', label: 'Dow Jones 30', y: '^DJI', dec: 1 },
+    { g: 'Índices', id: 'RUT2000', label: 'Russell 2000', y: '^RUT', dec: 1 },
+    { g: 'Índices', id: 'GER40', label: 'DAX 40 (Alemania)', y: '^GDAXI', dec: 1 },
+    { g: 'Índices', id: 'UK100', label: 'FTSE 100 (R. Unido)', y: '^FTSE', dec: 1 },
+    { g: 'Índices', id: 'JPN225', label: 'Nikkei 225 (Japón)', y: '^N225', dec: 0 },
+    { g: 'Índices', id: 'HK50', label: 'Hang Seng (Hong Kong)', y: '^HSI', dec: 0 },
+    { g: 'Índices', id: 'BVSP', label: 'Bovespa (Brasil)', y: '^BVSP', dec: 0 },
+    { g: 'Índices', id: 'DXY', label: 'Índice Dólar (DXY)', y: 'DX-Y.NYB', dec: 2 },
+    // Forex mayores
+    { g: 'Forex mayores', id: 'EURUSD', label: 'EUR/USD', y: 'EURUSD=X', dec: 5 },
+    { g: 'Forex mayores', id: 'GBPUSD', label: 'GBP/USD', y: 'GBPUSD=X', dec: 5 },
+    { g: 'Forex mayores', id: 'USDJPY', label: 'USD/JPY', y: 'USDJPY=X', dec: 3 },
+    { g: 'Forex mayores', id: 'USDCHF', label: 'USD/CHF', y: 'USDCHF=X', dec: 5 },
+    { g: 'Forex mayores', id: 'USDCAD', label: 'USD/CAD', y: 'USDCAD=X', dec: 5 },
+    { g: 'Forex mayores', id: 'AUDUSD', label: 'AUD/USD', y: 'AUDUSD=X', dec: 5 },
+    { g: 'Forex mayores', id: 'NZDUSD', label: 'NZD/USD', y: 'NZDUSD=X', dec: 5 },
+    // Cruces
+    { g: 'Forex cruces', id: 'EURGBP', label: 'EUR/GBP', y: 'EURGBP=X', dec: 5 },
+    { g: 'Forex cruces', id: 'EURJPY', label: 'EUR/JPY', y: 'EURJPY=X', dec: 3 },
+    { g: 'Forex cruces', id: 'GBPJPY', label: 'GBP/JPY', y: 'GBPJPY=X', dec: 3 },
+    { g: 'Forex cruces', id: 'AUDJPY', label: 'AUD/JPY', y: 'AUDJPY=X', dec: 3 },
+    { g: 'Forex cruces', id: 'EURAUD', label: 'EUR/AUD', y: 'EURAUD=X', dec: 5 },
+    // LatAm
+    { g: 'Forex LatAm', id: 'USDMXN', label: 'USD/MXN (México)', y: 'USDMXN=X', dec: 4 },
+    { g: 'Forex LatAm', id: 'USDBRL', label: 'USD/BRL (Brasil)', y: 'USDBRL=X', dec: 4 },
+    { g: 'Forex LatAm', id: 'USDCLP', label: 'USD/CLP (Chile)', y: 'USDCLP=X', dec: 2 },
+    { g: 'Forex LatAm', id: 'USDCOP', label: 'USD/COP (Colombia)', y: 'USDCOP=X', dec: 2 },
+    { g: 'Forex LatAm', id: 'USDPEN', label: 'USD/PEN (Perú)', y: 'USDPEN=X', dec: 4 },
+    { g: 'Forex LatAm', id: 'USDARS', label: 'USD/ARS (Argentina)', y: 'USDARS=X', dec: 2 },
+    // Metales y energía
+    { g: 'Metales y energía', id: 'XAUUSD', label: 'Oro', y: 'GC=F', dec: 2 },
+    { g: 'Metales y energía', id: 'XAGUSD', label: 'Plata', y: 'SI=F', dec: 3 },
+    { g: 'Metales y energía', id: 'XPTUSD', label: 'Platino', y: 'PL=F', dec: 2 },
+    { g: 'Metales y energía', id: 'COBRE', label: 'Cobre', y: 'HG=F', dec: 3 },
+    { g: 'Metales y energía', id: 'USOIL', label: 'Petróleo WTI', y: 'CL=F', dec: 2 },
+    { g: 'Metales y energía', id: 'UKOIL', label: 'Petróleo Brent', y: 'BZ=F', dec: 2 },
+    { g: 'Metales y energía', id: 'NATGAS', label: 'Gas natural', y: 'NG=F', dec: 3 },
+    // Criptomonedas
+    { g: 'Criptomonedas', id: 'BTCUSD', label: 'Bitcoin', y: 'BTC-USD', dec: 2 },
+    { g: 'Criptomonedas', id: 'ETHUSD', label: 'Ethereum', y: 'ETH-USD', dec: 2 },
+    { g: 'Criptomonedas', id: 'SOLUSD', label: 'Solana', y: 'SOL-USD', dec: 2 },
+    { g: 'Criptomonedas', id: 'XRPUSD', label: 'XRP', y: 'XRP-USD', dec: 4 },
+    { g: 'Criptomonedas', id: 'BNBUSD', label: 'BNB', y: 'BNB-USD', dec: 2 },
+    { g: 'Criptomonedas', id: 'ADAUSD', label: 'Cardano', y: 'ADA-USD', dec: 4 },
+    { g: 'Criptomonedas', id: 'DOGEUSD', label: 'Dogecoin', y: 'DOGE-USD', dec: 5 },
+    // Acciones
+    { g: 'Acciones', id: 'AAPL', label: 'Apple', y: 'AAPL', dec: 2 },
+    { g: 'Acciones', id: 'MSFT', label: 'Microsoft', y: 'MSFT', dec: 2 },
+    { g: 'Acciones', id: 'NVDA', label: 'NVIDIA', y: 'NVDA', dec: 2 },
+    { g: 'Acciones', id: 'TSLA', label: 'Tesla', y: 'TSLA', dec: 2 },
+    { g: 'Acciones', id: 'AMZN', label: 'Amazon', y: 'AMZN', dec: 2 },
+    { g: 'Acciones', id: 'META', label: 'Meta', y: 'META', dec: 2 },
+    { g: 'Acciones', id: 'GOOGL', label: 'Alphabet (Google)', y: 'GOOGL', dec: 2 },
+    { g: 'Acciones', id: 'NFLX', label: 'Netflix', y: 'NFLX', dec: 2 },
+    { g: 'Acciones', id: 'AMD', label: 'AMD', y: 'AMD', dec: 2 },
+    { g: 'Acciones', id: 'JPM', label: 'JPMorgan', y: 'JPM', dec: 2 },
+    { g: 'Acciones', id: 'DIS', label: 'Disney', y: 'DIS', dec: 2 },
+    { g: 'Acciones', id: 'MELI', label: 'MercadoLibre', y: 'MELI', dec: 2 },
+    { g: 'Acciones', id: 'KO', label: 'Coca-Cola', y: 'KO', dec: 2 },
+    { g: 'Acciones', id: 'BABA', label: 'Alibaba', y: 'BABA', dec: 2 }
   ];
+  // Opciones agrupadas para el selector
+  function instrOptionsHTML() {
+    const groups = [];
+    INSTR.forEach((i) => { if (!groups.includes(i.g)) groups.push(i.g); });
+    return groups.map((g) =>
+      `<optgroup label="${g}">` +
+      INSTR.filter((i) => i.g === g).map((i) => `<option value="${i.id}">${i.label}</option>`).join('') +
+      `</optgroup>`
+    ).join('');
+  }
   let isPro = false;
   let current = INSTR[0];
 
@@ -65,7 +126,7 @@
     <div class="cp-controls">
       <div class="cp-field">
         <label class="rl-label" for="cpSymbol">Quiero operar…</label>
-        <select class="rl-input" id="cpSymbol">${INSTR.map((i) => `<option value="${i.id}">${i.label}</option>`).join('')}</select>
+        <select class="rl-input" id="cpSymbol">${instrOptionsHTML()}</select>
       </div>
       <div class="cp-field cp-field-sm">
         <label class="rl-label" for="cpCapital">Mi capital (USD)</label>

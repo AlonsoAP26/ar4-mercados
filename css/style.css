@@ -4550,3 +4550,27 @@ input[type="number"] { -moz-appearance: textfield; appearance: textfield; }
 .legal-doc p { color:var(--text-mid); font-size:0.94rem; }
 .legal-doc a { color:var(--gold-bright); }
 .legal-note { color:var(--text-low) !important; font-size:0.78rem !important; margin-top:30px; padding-top:16px; border-top:1px dashed rgba(255,255,255,0.12); }
+
+/* ===== Campos y tarjetas de resultados de herramientas (planificador, ATR) ===== */
+.risk-lab .rl-grid:has(.rl-field) { display:grid; grid-template-columns:repeat(auto-fit, minmax(215px, 1fr)); gap:14px; }
+.rl-field { display:flex; flex-direction:column; gap:6px; }
+.rl-field label { font-size:0.78rem; color:var(--text-mid); letter-spacing:0.02em; }
+.rl-field input, .rl-field select { padding:11px 13px; border-radius:10px; border:1px solid rgba(255,255,255,0.14); background:rgba(10,15,28,0.6); color:var(--text-high); font-size:0.95rem; font-family:inherit; width:100%; }
+.rl-field input:focus, .rl-field select:focus { outline:none; border-color:rgba(212,175,55,0.6); box-shadow:0 0 0 3px rgba(212,175,55,0.12); }
+.rl-results { display:grid; grid-template-columns:repeat(auto-fit, minmax(175px, 1fr)); gap:10px; }
+.rl-card { padding:14px 16px; border-radius:12px; border:1px solid rgba(212,175,55,0.25); background:linear-gradient(180deg, rgba(212,175,55,0.07), rgba(255,255,255,0.02)); display:flex; flex-direction:column; gap:4px; transition:border-color .16s ease; }
+.rl-card:hover { border-color:rgba(212,175,55,0.5); }
+.rl-card > span { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-low); }
+.rl-card > strong { font-family:var(--mono); font-size:1.08rem; color:var(--gold-bright); }
+.rl-card > em { font-style:normal; font-size:0.74rem; color:var(--text-mid); line-height:1.35; }
+
+/* ===== Simulador Premium: banda de percentiles + histograma ===== */
+.rl-hist-wrap { margin-top:16px; padding:16px 18px; border-radius:14px; border:1px solid rgba(212,175,55,0.25); background:rgba(255,255,255,0.02); }
+.rl-hist-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:10px; flex-wrap:wrap; }
+.rl-hist-head span { font-size:0.76rem; color:var(--text-low); }
+.rl-hist { width:100%; }
+.rl-hist svg { display:block; width:100%; height:auto; }
+
+/* ===== Vista previa de diplomas en admin ===== */
+.diploma-demo { zoom:0.68; margin-bottom:10px; }
+@media (max-width:700px){ .diploma-demo { zoom:0.45; } }
