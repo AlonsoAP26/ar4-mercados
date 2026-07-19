@@ -127,6 +127,8 @@
       <div class="cp-field">
         <label class="rl-label" for="cpSymbol">Quiero operar…</label>
         <select class="rl-input" id="cpSymbol">${instrOptionsHTML()}</select>
+        <label class="rl-label" for="cpSearch" style="margin-top:10px;">…o busca cualquier símbolo del mundo</label>
+        <input class="rl-input" type="text" id="cpSearch" placeholder="Ferrari, SAP, USD/PEN, Nikkei…" autocomplete="off">
       </div>
       <div class="cp-field cp-field-sm">
         <label class="rl-label" for="cpCapital">Mi capital (USD)</label>
@@ -336,7 +338,7 @@
       $('cpCta').hidden = true;
       analyze();
     } else {
-      ['cpSymbol', 'cpCapital', 'cpRisk', 'cpRun'].forEach((id) => { const e = $(id); if (e) e.disabled = true; });
+      ['cpSymbol', 'cpSearch', 'cpCapital', 'cpRisk', 'cpRun'].forEach((id) => { const e = $(id); if (e) e.disabled = true; });
       $('cpLock').hidden = false;
       $('cpTier').textContent = '★ PREMIUM · ejemplo';
       banner.hidden = false; banner.className = 'cp-banner';
@@ -350,5 +352,25 @@
     analyze();
   });
   $('cpRun').addEventListener('click', analyze);
+  if (window.AR4_attachSymbolSearch) {
+    window.AR4_attachSymbolSearch($('cpSearch'), {
+      onPick: (item) => {
+        const id = item.symbol.toUpperCase();
+        let ins = INSTR.find((i) => i.id === id);
+        if (!ins) {
+          ins = { g: 'Global', id: id, label: item.name + ' (' + item.symbol + ')', y: item.symbol, dec: item.type === 'CURRENCY' ? 5 : 2 };
+          INSTR.push(ins);
+          const sel = $('cpSymbol');
+          let og = sel.querySelector('optgroup[label="Global"]');
+          if (!og) { og = document.createElement('optgroup'); og.label = 'Global'; sel.appendChild(og); }
+          const opt = document.createElement('option'); opt.value = id; opt.textContent = ins.label; og.appendChild(opt);
+        }
+        $('cpSymbol').value = id;
+        current = ins;
+        $('cpSearch').value = '';
+        analyze();
+      }
+    });
+  }
   detect();
 })();

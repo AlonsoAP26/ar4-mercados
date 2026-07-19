@@ -905,7 +905,7 @@
           </ol>
         </div>
         <div class="rl-grid">
-          <div class="rl-field"><label>Instrumento</label><select id="atrSym">${ATR_SYMBOLS.map((s) => `<option value="${s[0]}">${s[1]}</option>`).join('')}</select></div>
+          <div class="rl-field"><label>Instrumento — busca cualquiera del mundo</label><input type="text" id="atrSym" value="EUR/USD" placeholder="EUR/USD, oro, Ferrari, SAP, Nikkei…" autocomplete="off"></div>
           <div class="rl-field"><label>Capital (USD)</label><input type="number" id="atrCap" value="1000" step="any"></div>
           <div class="rl-field"><label>Riesgo por operación (%)</label><input type="number" id="atrRisk" value="1" step="0.1"></div>
         </div>
@@ -921,9 +921,19 @@
         </div>
       </div>`;
 
+    let atrSel = { y: 'EURUSD=X', label: 'EUR/USD' };
+    function resolveAtr(typed) {
+      const t = (typed || '').trim();
+      const local = ATR_SYMBOLS.find((s) => s[1].toLowerCase() === t.toLowerCase() || s[0].toUpperCase() === t.toUpperCase());
+      if (local) return { y: local[0], label: local[1] };
+      if (atrSel && (t === atrSel.y || t === atrSel.label)) return atrSel;
+      if (t) return { y: t, label: t }; // símbolo Yahoo directo
+      return atrSel;
+    }
     async function run() {
       const out = $('atrOut');
-      const sym = $('atrSym').value;
+      const sel = resolveAtr($('atrSym').value);
+      const sym = sel.y;
       const cap = parseFloat($('atrCap').value) || 0;
       const riskPct = parseFloat($('atrRisk').value) || 0;
       if (!cap || !riskPct) { out.innerHTML = '<div class="community-form-msg error">Completa capital y riesgo.</div>'; return; }
@@ -945,7 +955,7 @@
               return `<div class="rl-card"><span>Stop ${k}× ATR</span><strong>${num(dist, dec)}</strong><em>≈ ${num(units, 2)} unidades para arriesgar ${money(riskUSD)}</em></div>`;
             }).join('')}
           </div>
-          <div class="community-form-msg" style="margin-top:12px;">Un stop por debajo de 1× ATR queda dentro del ruido diario normal de ${$('atrSym').selectedOptions[0].text}: es probable que salte sin que tu tesis esté equivocada. 1.5× es el punto medio clásico; 2× da más aire a cambio de menos tamaño.</div>
+          <div class="community-form-msg" style="margin-top:12px;">Un stop por debajo de 1× ATR queda dentro del ruido diario normal de ${sel.label}: es probable que salte sin que tu tesis esté equivocada. 1.5× es el punto medio clásico; 2× da más aire a cambio de menos tamaño.</div>
           <p style="color:var(--text-low);font-size:0.76rem;margin-top:8px;">ATR calculado sobre datos históricos reales (Yahoo Finance). Describe volatilidad, no dirección: no constituye una señal de compra o venta.</p>`;
       } catch (e) {
         out.innerHTML = '<div class="community-form-msg error">' + (e.message || 'No se pudieron cargar los datos.') + '</div>';
@@ -960,6 +970,11 @@
         return;
       }
       $('atrRun').addEventListener('click', run);
+      if (window.AR4_attachSymbolSearch) {
+        window.AR4_attachSymbolSearch($('atrSym'), {
+          onPick: (item) => { atrSel = { y: item.symbol, label: item.name }; $('atrSym').value = item.symbol; run(); }
+        });
+      }
       run();
     })();
   }

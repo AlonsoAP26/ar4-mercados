@@ -130,7 +130,16 @@
     if (!raw) return null;
     const trimmed = String(raw).trim().toUpperCase();
     if (/^[A-Z0-9_]+:[A-Z0-9]+$/.test(trimmed)) return trimmed;
-    return POST_SYMBOL_MAP[trimmed.replace(/\s+/g, '')] || null;
+    const mapped = POST_SYMBOL_MAP[trimmed.replace(/\s+/g, '')];
+    if (mapped) return mapped;
+    // Símbolos del buscador global (formato Yahoo) -> equivalente TradingView
+    const IDX_TV = { '^GSPC': 'SP:SPX', '^NDX': 'NDX', '^DJI': 'DJI', '^RUT': 'RUT', '^GDAXI': 'XETR:DAX', '^FTSE': 'UKX', '^N225': 'NI225', '^HSI': 'HSI', '^BVSP': 'IBOV', 'DX-Y.NYB': 'CAPITALCOM:DXY' };
+    if (IDX_TV[trimmed]) return IDX_TV[trimmed];
+    if (/=X$/.test(trimmed)) return trimmed.replace('=X', '');
+    if (/-USD$/.test(trimmed)) return trimmed.replace('-USD', 'USD');
+    if (/=F$/.test(trimmed)) return trimmed.replace('=F', '1!');
+    if (/^[A-Z0-9.]{1,8}$/.test(trimmed)) return trimmed; // ticker plano: TradingView lo resuelve
+    return null;
   }
 
   // Lista completa de instrumentos. l=etiqueta, s=valor del campo (TradingView), c=categoría, y=símbolo Yahoo (velas).
@@ -676,18 +685,7 @@
             <button type="button" class="chart-chip" data-sym="NASDAQ:AAPL" data-cat="Acciones">Apple</button>
             <button type="button" class="chart-chip" data-sym="NASDAQ:TSLA" data-cat="Acciones">Tesla</button>
           </div>
-          <div class="chart-switch" id="postChartSwitch">
-            <button type="button" class="chart-switch-btn active" data-chart="lw"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 20V10M9 20V6M14 20v-8M19 20V4'/></svg> Gráfico de velas</button>
-            <button type="button" class="chart-switch-btn" data-chart="tv"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z'/></svg> TradingView (dibujar)</button>
-          </div>
-          <div id="postLwWrap">
-            <div class="ar4chart" id="postLwChart"></div>
-            <div class="chart-actions">
-              <button type="button" class="btn btn-gold" id="postChartAttach"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z'/><circle cx='12' cy='13' r='3.5'/></svg> Adjuntar este gráfico</button>
-              <span class="chart-attach-note" id="postChartAttachNote"></span>
-            </div>
-          </div>
-          <div id="postTvWrap" hidden>
+          <div id="postTvWrap">
             <div class="chart-studio" id="postChartStudioMount"></div>
             <p class="footer-text" style="margin:8px 0 0;">Dibuja tu análisis (Fibonacci, indicadores…) y toma una captura (⊞ Win+Shift+S · ⌘ Cmd+Shift+4 · o el ícono de cámara del gráfico) para subirla con "Adjuntar imagen".</p>
           </div>
@@ -2415,28 +2413,49 @@
       postSymbolInput.value = sym;
       if (cat && postCategorySelect && CATEGORY_LABELS.indexOf(cat) >= 0) postCategorySelect.value = cat;
       else syncCategoryFromSymbol();
-      buildLwChart();
-      if (tvWrap && !tvWrap.hidden) buildTvChart();
+      buildTvChart();
     }
 
+    let postRemote = [];
+    let postRemoteTimer = null;
+    const QT_CAT = { CURRENCY: 'Forex', CRYPTOCURRENCY: 'Criptomonedas', EQUITY: 'Acciones', ETF: 'Acciones', INDEX: 'Índices', FUTURE: 'Materias Primas' };
     function renderSymbolDropdown(query) {
       if (!symDropdown) return;
       const q = (query || '').trim().toLowerCase();
       let list = POST_INSTRUMENTS;
       if (q) list = POST_INSTRUMENTS.filter((i) => i.l.toLowerCase().includes(q) || i.s.toLowerCase().includes(q) || i.c.toLowerCase().includes(q));
-      list = list.slice(0, 30);
-      if (!list.length) { symDropdown.hidden = true; return; }
-      symDropdown.innerHTML = list.map((i) =>
+      list = list.slice(0, 12);
+      if (!list.length && !postRemote.length) { symDropdown.hidden = true; return; }
+      const localHTML = list.map((i) =>
         '<div class="post-symbol-item" data-sym="' + i.s + '" data-cat="' + i.c + '"><span>' + i.l + '</span><span class="post-symbol-cat">' + i.c + '</span></div>'
       ).join('');
+      const remoteHTML = postRemote.length
+        ? '<div class="rs-sugg-divider">Mercado global — miles de símbolos</div>' + postRemote.map((r) =>
+            '<div class="post-symbol-item" data-sym="' + r.symbol + '" data-cat="' + (QT_CAT[r.type] || '') + '"><span><b style="font-family:var(--mono);color:var(--gold-bright);">' + r.symbol + '</b> ' + (r.name || '').replace(/</g, '&lt;') + '</span><span class="post-symbol-cat">' + r.typeLabel + '</span></div>'
+          ).join('')
+        : '';
+      symDropdown.innerHTML = localHTML + remoteHTML;
       symDropdown.hidden = false;
       symDropdown.querySelectorAll('.post-symbol-item').forEach((it) => {
-        it.addEventListener('mousedown', (e) => { e.preventDefault(); applyInstrument(it.dataset.sym, it.dataset.cat); symDropdown.hidden = true; });
+        it.addEventListener('mousedown', (e) => { e.preventDefault(); applyInstrument(it.dataset.sym, it.dataset.cat); symDropdown.hidden = true; postRemote = []; });
       });
     }
+    function fetchRemoteSymbols(q) {
+      if (postRemoteTimer) clearTimeout(postRemoteTimer);
+      if (!q || q.length < 2) { postRemote = []; return; }
+      postRemoteTimer = setTimeout(async () => {
+        try {
+          const res = await fetch('/.netlify/functions/symbol-search?q=' + encodeURIComponent(q));
+          const data = await res.json();
+          if (postSymbolInput.value.trim() !== q) return;
+          postRemote = ((data && data.results) || []).slice(0, 6);
+          renderSymbolDropdown(q);
+        } catch (e) { /* solo lista local */ }
+      }, 300);
+    }
 
-    if (lwMount && postSymbolInput) {
-      buildLwChart(); // el gráfico propio aparece de inmediato
+    if (postSymbolInput) {
+      buildTvChart(); // el gráfico TradingView aparece de inmediato, sincronizado con el instrumento
       const chipsWrap = document.getElementById('postChartChips');
       if (chipsWrap) {
         chipsWrap.querySelectorAll('.chart-chip').forEach((chip) => {
@@ -2451,45 +2470,13 @@
       postSymbolInput.addEventListener('focus', () => renderSymbolDropdown(postSymbolInput.value));
       postSymbolInput.addEventListener('input', () => {
         renderSymbolDropdown(postSymbolInput.value);
+        fetchRemoteSymbols(postSymbolInput.value.trim());
         clearTimeout(chartDebounce);
-        chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildLwChart(); if (tvWrap && !tvWrap.hidden) buildTvChart(); }, 700);
+        chartDebounce = setTimeout(() => { syncCategoryFromSymbol(); buildTvChart(); }, 700);
       });
-      postSymbolInput.addEventListener('change', () => { syncCategoryFromSymbol(); buildLwChart(); if (tvWrap && !tvWrap.hidden) buildTvChart(); });
+      postSymbolInput.addEventListener('change', () => { syncCategoryFromSymbol(); buildTvChart(); });
       postSymbolInput.addEventListener('blur', () => { setTimeout(() => { if (symDropdown) symDropdown.hidden = true; }, 150); });
 
-      // Selector de gráfico (velas ↔ TradingView): muestra solo uno a la vez.
-      const chartSwitch = document.getElementById('postChartSwitch');
-      if (chartSwitch && lwWrap && tvWrap) {
-        chartSwitch.querySelectorAll('.chart-switch-btn').forEach((btn) => {
-          btn.addEventListener('click', () => {
-            const which = btn.dataset.chart;
-            chartSwitch.querySelectorAll('.chart-switch-btn').forEach((b) => b.classList.toggle('active', b === btn));
-            if (which === 'tv') {
-              lwWrap.hidden = true; tvWrap.hidden = false; buildTvChart();
-            } else {
-              tvWrap.hidden = true; lwWrap.hidden = false; lwResize();
-            }
-          });
-        });
-      }
-
-      // Captura automática del gráfico propio → lo adjunta a la publicación.
-      const attachBtn = document.getElementById('postChartAttach');
-      const attachNote = document.getElementById('postChartAttachNote');
-      if (attachBtn) {
-        attachBtn.addEventListener('click', () => {
-          if (!lwChart || typeof lwChart.takeScreenshot !== 'function') { if (attachNote) attachNote.textContent = 'El gráfico aún se está cargando…'; return; }
-          try {
-            const canvas = lwChart.takeScreenshot();
-            canvas.toBlob((blob) => {
-              if (!blob) { if (attachNote) attachNote.textContent = 'No se pudo capturar.'; return; }
-              pendingPostMediaFile = new File([blob], 'grafico-ar4.png', { type: 'image/png' });
-              const nm = document.getElementById('postMediaName'); if (nm) nm.textContent = 'grafico-ar4.png (gráfico)';
-              if (attachNote) attachNote.textContent = 'Gráfico adjuntado a tu publicación';
-            }, 'image/png');
-          } catch (e) { if (attachNote) attachNote.textContent = 'No se pudo capturar el gráfico.'; }
-        });
-      }
     }
 
     let selectedIdeaDirection = null;
