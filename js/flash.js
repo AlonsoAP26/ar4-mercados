@@ -4,6 +4,8 @@
 // compacta en Noticias (#flashStrip). Auto-refresca cada 60 s.
 (function () {
   const feed = document.getElementById('flashFeed');
+  const FEED_LIMIT = feed && feed.dataset.limit ? parseInt(feed.dataset.limit, 10) : 0;
+  let showAll = false;
   const strip = document.getElementById('flashStrip');
   if (!feed && !strip) return;
 
@@ -95,9 +97,14 @@
     let list = items;
     if (currentFilter !== 'todas') list = list.filter((it) => it.categoria === currentFilter);
     if (onlyHigh) list = list.filter((it) => it.impacto === 'alto' || it.breaking);
-    feed.innerHTML = list.length
+    const total = list.length;
+    if (FEED_LIMIT && !showAll) list = list.slice(0, FEED_LIMIT);
+    feed.innerHTML = (list.length
       ? list.map(cardHTML).join('')
-      : '<p class="footer-text">Sin titulares en este filtro todavía. El agente publica en cuanto detecta noticias relevantes (revisa cada 20 minutos en horario de mercado).</p>';
+      : '<p class="footer-text">Sin titulares en este filtro todavía. El agente publica en cuanto detecta noticias relevantes (revisa cada 20 minutos en horario de mercado).</p>')
+      + (FEED_LIMIT && !showAll && total > FEED_LIMIT ? '<button class="btn btn-outline btn-block fl-vermas">Ver los ' + total + ' flashes →</button>' : '');
+    const vermas = feed.querySelector('.fl-vermas');
+    if (vermas) vermas.addEventListener('click', () => { showAll = true; render(cache); });
     feed.querySelectorAll('.fl-copy').forEach((btn) => {
       btn.addEventListener('click', async () => {
         try { await navigator.clipboard.writeText(btn.dataset.x); btn.textContent = '✔ Copiado'; setTimeout(() => { btn.textContent = 'Copiar para X'; }, 1600); }

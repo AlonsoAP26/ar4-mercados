@@ -140,7 +140,7 @@ async function postTelegram(item) {
   if (!token || !chat) return;
   const emoji = item.impacto === 'alto' ? '🔴' : item.impacto === 'medio' ? '🟡' : '🟢';
   const pre = item.breaking ? '🚨 BREAKING · ' : '';
-  const text = pre + emoji + ' ' + item.tgText + '\n\n📊 ar4mercados.com/flash.html';
+  const text = pre + emoji + ' ' + item.tgText + '\n\n📊 ar4mercados.com/noticias.html#flash';
   try {
     await fetch('https://api.telegram.org/bot' + token + '/sendMessage', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -156,7 +156,7 @@ async function postDiscord(item) {
   try {
     await fetch(hook, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content: pre + item.discordText + '\n<https://ar4mercados.com/flash.html>' })
+      body: JSON.stringify({ content: pre + item.discordText + '\n<https://ar4mercados.com/noticias.html#flash>' })
     });
   } catch (e) { console.warn('Discord fallo (no fatal):', e.message); }
 }

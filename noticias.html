@@ -17,7 +17,7 @@
 <meta name="description" content="Resúmenes propios de las noticias más relevantes de forex, acciones, commodities y economía latinoamericana, con enlace a la fuente original.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=50">
+<link rel="stylesheet" href="css/style.css?v=51">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
@@ -56,7 +56,6 @@
     </button>
     <nav class="main-nav" id="mainNav">
       <a href="comunidad.html" class="nav-gold">Comunidad</a>
-      <a href="flash.html">Flash</a>
       <a href="noticias.html">Noticias</a>
       <a href="ideas.html">Ideas</a>
       <a href="educacion.html" class="nav-gold">Educación</a>
@@ -86,7 +85,28 @@
 <section class="section" style="padding-top:32px;">
   <div class="container">
 
-    <div id="flashStrip" class="fl-strip"></div>
+    <div id="flash" class="flash-embed">
+      <div class="section-head" style="margin-bottom:6px;">
+        <h2 class="h2-ic gold"><span class="sdot sdot-r"></span> Flash del mercado</h2>
+        <span class="footer-text" id="flashStatus">Cargando…</span>
+      </div>
+      <p style="color:var(--text-mid);font-size:0.88rem;max-width:760px;margin-bottom:14px;">Titulares de Bloomberg, Reuters y fuentes institucionales — vía Walter Bloomberg (@DeItaone) — analizados al instante por nuestro agente de IA: qué pasó, si está confirmado o es rumor, qué activos toca y con qué sesgo. <em>Análisis editorial de IA, no asesoría ni señales.</em></p>
+      <div class="filter-bar" id="flashFilters">
+        <button class="filter-chip active" data-cat="todas">Todas</button>
+        <button class="filter-chip" data-cat="FED">FED</button>
+        <button class="filter-chip" data-cat="Inflación">Inflación</button>
+        <button class="filter-chip" data-cat="Geopolítica">Geopolítica</button>
+        <button class="filter-chip" data-cat="Empresas">Empresas</button>
+        <button class="filter-chip" data-cat="Criptomonedas">Cripto</button>
+        <button class="filter-chip" data-cat="Materias Primas">Materias Primas</button>
+        <button class="filter-chip" data-cat="Datos Económicos">Datos</button>
+        <button class="filter-chip fl-high-chip" data-high>🔴 Solo alto impacto</button>
+      </div>
+      <div id="flashFeed" data-limit="6" style="margin-top:14px;">
+        <p class="footer-text">Cargando flash del mercado…</p>
+      </div>
+    </div>
+
 
 
     <div class="filter-bar" id="noticiasFilterBar">
@@ -150,7 +170,7 @@
 <script src="js/calendar.js?v=6"></script>
 <script src="js/aria-avatar.js?v=1"></script>
 <script src="js/chatbot.js?v=11"></script>
-<script src="js/flash.js?v=1"></script>
+<script src="js/flash.js?v=2"></script>
 <script src="js/ticker.js?v=3"></script>
 </body>
 </html>
