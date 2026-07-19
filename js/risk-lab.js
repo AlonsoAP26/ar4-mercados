@@ -430,15 +430,6 @@
         es distinto al que pones aquí, el resultado será distinto. No es una señal, ni una promesa de rentabilidad.
       </p>
 
-      <div class="rl-cta rl-cta-pro" id="rlProCta">
-        <div>
-          <strong>¿Quieres más capacidad y más profundidad?</strong>
-          <span>El plan gratis ejecuta ${FREE_SIMS} simulaciones con parámetros fijos. <b>Premium</b> desbloquea tus propios supuestos,
-          hasta ${PRO_SIMS_MAX.toLocaleString('es-PE')} simulaciones, las curvas de capital, la probabilidad de ruina y el Kelly —
-          y Aria te explica qué hacer con esos números.</span>
-        </div>
-        <a href="membresia.html#subscribeBtn" class="btn btn-gold">Actualizar a Premium</a>
-      </div>
     `;
 
     const capEl = $('rpCapital'), riskEl = $('rpRisk'), winEl = $('rpWin'),
@@ -590,28 +581,16 @@
     }
 
     async function detectPremium() {
-      try {
-        if (typeof window.AR4_checkPremium === 'function') isPro = await window.AR4_checkPremium();
-      } catch (e) { isPro = false; }
-
-      el.classList.toggle('rl-pro-on', isPro);
+      // El simulador es gratis y completo para todos: la potencia estadística
+      // enseña; el plus experto de Premium vive en otras herramientas.
+      isPro = true;
+      el.classList.add('rl-pro-on');
       const banner = $('rlProBanner');
-      if (isPro) {
-        $('rlProTier').textContent = '★ PREMIUM ACTIVO';
-        banner.hidden = false;
-        banner.className = 'rl-pro-banner rl-pro-banner-on';
-        banner.innerHTML = 'Simulación completa desbloqueada: tus propios supuestos, hasta ' + PRO_SIMS_MAX.toLocaleString('es-PE') + ' simulaciones y curvas de capital.';
-        $('rlProCta').hidden = true;
-      } else {
-        // Gratis: puede probarlo, pero con potencia y parámetros limitados.
-        [winEl, rrEl, tradesEl, simsEl].forEach((i) => { i.disabled = true; });
-        $('rlLockOverlay').hidden = false;
-        $('rlCurvesLock').hidden = false;
-        $('rlProTier').textContent = '★ PREMIUM · versión limitada';
-        banner.hidden = false;
-        banner.innerHTML = 'Estás viendo la <b>versión limitada</b>: ' + FREE_SIMS + ' simulaciones con supuestos fijos (40% de aciertos, R:R 1.5, 200 operaciones). Solo puedes mover tu capital y tu riesgo. En <b>Premium</b> pones tus propios números.';
-        ['rpRuin', 'rpStreak', 'rpKelly'].forEach((i) => { $(i).textContent = '★ Premium'; $(i).className = 'rl-locked-val'; });
-      }
+      if (banner) banner.hidden = true;
+      const tier = $('rlProTier');
+      if (tier) tier.textContent = 'AVANZADO · GRATIS';
+      const cta = $('rlProCta');
+      if (cta) cta.hidden = true;
       run();
     }
 
@@ -1030,9 +1009,161 @@
     })();
   }
 
+
+  // ============================================================
+  // Matriz de correlaciones en vivo (Premium · nivel mesa).
+  // Datos reales: cierres diarios de Yahoo por instrumento; correlación de
+  // Pearson sobre los retornos de la ventana elegida. Describe co-movimiento
+  // histórico reciente — no predice, y las correlaciones cambian de régimen.
+  // ============================================================
+  function initCorrelationLab() {
+    const mount = $('correlationLab');
+    if (!mount) return;
+    const DEFAULT_BASKET = [
+      { sym: 'DX-Y.NYB', label: 'DXY' },
+      { sym: 'EURUSD=X', label: 'EUR/USD' },
+      { sym: 'GC=F', label: 'Oro' },
+      { sym: '^GSPC', label: 'S&P 500' },
+      { sym: 'BTC-USD', label: 'Bitcoin' },
+      { sym: 'CL=F', label: 'WTI' }
+    ];
+    let windowDays = 90;
+    mount.innerHTML = `
+      <div class="rl-lock-wrap">
+        <div class="rs-howto" style="margin-bottom:16px;">
+          <div class="rs-howto-head"><svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.7-2.5 2-2.5 3.5M12 17h.01'/></svg><strong>¿Cómo se usa?</strong></div>
+          <ol class="rs-howto-steps">
+            <li><b>1.</b> Elige hasta 6 instrumentos (cualquiera del mundo, con el buscador) y la ventana de días.</li>
+            <li><b>2.</b> Calculamos la correlación real de sus retornos diarios (datos de Yahoo Finance).</li>
+            <li><b>3.</b> Verde fuerte = se mueven juntos; rojo fuerte = se mueven al revés; cerca de 0 = independientes.</li>
+            <li><b>4.</b> El uso de mesa: si tus posiciones están en celdas verdes fuertes, no estás diversificado — es UNA apuesta repetida.</li>
+          </ol>
+        </div>
+        <div class="corr-slots" id="corrSlots">
+          ${DEFAULT_BASKET.map((b, i) => `<div class="rl-field"><label>Instrumento ${i + 1}</label><input type="text" class="corr-sym" data-i="${i}" value="${b.sym}" data-label="${b.label}" autocomplete="off"></div>`).join('')}
+        </div>
+        <div class="corr-controls">
+          <div class="pp-mode" style="margin:0;">
+            <button type="button" class="pp-mode-btn corr-win" data-d="30">30 días</button>
+            <button type="button" class="pp-mode-btn corr-win active" data-d="90">90 días</button>
+            <button type="button" class="pp-mode-btn corr-win" data-d="180">180 días</button>
+          </div>
+          <button class="btn btn-gold" id="corrRun">Calcular con datos reales</button>
+        </div>
+        <div id="corrOut" style="margin-top:16px;"></div>
+        <div class="rl-lock-overlay" id="corrLock" hidden>
+          <div class="rl-lock-card">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <h3>Herramienta Premium · nivel mesa</h3>
+            <p>La matriz que usan los profesionales para no repetir la misma apuesta sin saberlo: correlaciones reales entre tus mercados, con la ventana que elijas.</p>
+            <a href="membresia.html" class="btn btn-gold">Ver AR4 Premium</a>
+          </div>
+        </div>
+      </div>`;
+
+    function labelOf(inp) {
+      const v = (inp.value || '').trim();
+      return (inp.dataset.label && (v === inp.dataset.sym || v === inp.dataset.label || v === inp.defaultValue)) ? inp.dataset.label : (inp.dataset.label && v === inp.dataset.pick ? inp.dataset.label : v);
+    }
+
+    async function fetchCloses(sym) {
+      const range = windowDays <= 30 ? '3mo' : (windowDays <= 90 ? '6mo' : '1y');
+      const r = await fetch('/.netlify/functions/market-candles?symbol=' + encodeURIComponent(sym) + '&interval=1d&range=' + range);
+      const d = await r.json();
+      if (!d.success || !d.candles || d.candles.length < 20) throw new Error('Sin datos para ' + sym);
+      const map = {};
+      d.candles.forEach((c) => { if (c.close != null) map[Math.floor(c.time / 86400)] = c.close; });
+      return map;
+    }
+    function pearson(a, b) {
+      const n = a.length;
+      let sa = 0, sb = 0;
+      for (let i = 0; i < n; i++) { sa += a[i]; sb += b[i]; }
+      const ma = sa / n, mb = sb / n;
+      let num = 0, da = 0, db = 0;
+      for (let i = 0; i < n; i++) { const xa = a[i] - ma, xb = b[i] - mb; num += xa * xb; da += xa * xa; db += xb * xb; }
+      const den = Math.sqrt(da * db);
+      return den ? num / den : 0;
+    }
+
+    async function run() {
+      const out = $('corrOut');
+      const inputs = [...mount.querySelectorAll('.corr-sym')];
+      const syms = inputs.map((i) => i.value.trim()).filter(Boolean);
+      const labels = inputs.filter((i) => i.value.trim()).map((i) => i.dataset.pick === i.value.trim() && i.dataset.label ? i.dataset.label : (i.dataset.label && i.value.trim() === i.getAttribute('value') ? i.dataset.label : i.value.trim()));
+      if (syms.length < 2) { out.innerHTML = '<div class="community-form-msg error">Necesitas al menos 2 instrumentos.</div>'; return; }
+      out.innerHTML = '<p class="footer-text">Descargando cierres reales de ' + syms.length + ' instrumentos…</p>';
+      try {
+        const maps = await Promise.all(syms.map(fetchCloses));
+        // días comunes a todos
+        let days = Object.keys(maps[0]);
+        for (let i = 1; i < maps.length; i++) days = days.filter((d) => maps[i][d] != null);
+        days = days.map(Number).sort((a, b) => a - b).slice(-(windowDays + 1));
+        if (days.length < 15) throw new Error('Muy pocos días comunes entre estos instrumentos para la ventana elegida.');
+        // retornos diarios alineados
+        const rets = maps.map((m) => {
+          const r = [];
+          for (let i = 1; i < days.length; i++) r.push(Math.log(m[days[i]] / m[days[i - 1]]));
+          return r;
+        });
+        const n = syms.length;
+        const M = [];
+        for (let i = 0; i < n; i++) { M[i] = []; for (let j = 0; j < n; j++) M[i][j] = i === j ? 1 : pearson(rets[i], rets[j]); }
+        // pares extremos (sin diagonal)
+        let hi = { v: -2 }, lo = { v: 2 };
+        for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
+          if (M[i][j] > hi.v) hi = { v: M[i][j], a: labels[i], b: labels[j] };
+          if (M[i][j] < lo.v) lo = { v: M[i][j], a: labels[i], b: labels[j] };
+        }
+        const cell = (v) => {
+          if (v === 1) return '<td class="corr-diag">—</td>';
+          const g = v > 0;
+          const alpha = Math.min(0.85, Math.abs(v) * 0.85);
+          const bg = g ? 'rgba(46,204,113,' + alpha * 0.45 + ')' : 'rgba(225,58,75,' + alpha * 0.45 + ')';
+          return '<td style="background:' + bg + ';">' + v.toFixed(2) + '</td>';
+        };
+        out.innerHTML = `
+          <div class="corr-table-wrap"><table class="corr-table">
+            <tr><th></th>${labels.map((l) => '<th>' + l + '</th>').join('')}</tr>
+            ${M.map((row, i) => '<tr><th>' + labels[i] + '</th>' + row.map(cell).join('') + '</tr>').join('')}
+          </table></div>
+          <div class="rl-results" style="margin-top:12px;">
+            <div class="rl-card"><span>Más correlacionados</span><strong>${hi.a} + ${hi.b}</strong><em>${hi.v.toFixed(2)} — en la práctica son la misma apuesta</em></div>
+            <div class="rl-card"><span>Más inversos</span><strong>${lo.a} vs ${lo.b}</strong><em>${lo.v.toFixed(2)} — tienden a moverse al revés</em></div>
+            <div class="rl-card"><span>Ventana analizada</span><strong>${days.length - 1} días</strong><em>retornos diarios reales comunes a todos</em></div>
+          </div>
+          <p style="color:var(--text-low);font-size:0.76rem;margin-top:10px;">Correlación de Pearson sobre retornos diarios (Yahoo Finance). Es una foto histórica de la ventana elegida: los regímenes cambian y en crisis las correlaciones tienden a subir de golpe. No constituye una recomendación.</p>`;
+      } catch (e) {
+        out.innerHTML = '<div class="community-form-msg error">' + (e.message || 'No se pudieron cargar los datos.') + '</div>';
+      }
+    }
+
+    mount.querySelectorAll('.corr-win').forEach((b) => b.addEventListener('click', () => {
+      windowDays = parseInt(b.dataset.d, 10);
+      mount.querySelectorAll('.corr-win').forEach((x) => x.classList.toggle('active', x === b));
+    }));
+
+    (async () => {
+      const isProUser = window.AR4_checkPremium ? await window.AR4_checkPremium() : false;
+      if (!isProUser) {
+        $('corrLock').hidden = false;
+        mount.querySelectorAll('input,button').forEach((el2) => { if (!el2.closest('.rl-lock-overlay')) el2.disabled = true; });
+        return;
+      }
+      if (window.AR4_attachSymbolSearch) {
+        mount.querySelectorAll('.corr-sym').forEach((inp) => {
+          window.AR4_attachSymbolSearch(inp, { onPick: (item) => { inp.value = item.symbol; inp.dataset.pick = item.symbol; inp.dataset.label = item.name.split(' ')[0]; } });
+        });
+      }
+      $('corrRun').addEventListener('click', run);
+      run();
+    })();
+  }
+
   initFreeLab();
   initDdLab();
   initProLab();
   initPropPlanner();
   initAtrStop();
+  initCorrelationLab();
 })();

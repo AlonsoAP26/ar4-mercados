@@ -4627,3 +4627,12 @@ body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; 
 .risk-strip svg { flex: 0 0 auto; width: 18px; height: 18px; color: var(--gold-bright); margin-top: 2px; }
 .risk-strip p { margin: 0; font-size: 0.74rem; color: var(--text-low); line-height: 1.6; max-width: 110ch; }
 .risk-strip strong { color: var(--text-mid); }
+
+/* ===== Matriz de correlaciones ===== */
+.corr-slots { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px; margin-bottom:14px; }
+.corr-controls { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.corr-table-wrap { overflow-x:auto; border-radius:12px; border:1px solid rgba(212,175,55,0.3); }
+.corr-table { width:100%; border-collapse:collapse; font-family:var(--mono); font-size:0.82rem; min-width:520px; }
+.corr-table th { padding:9px 10px; background:rgba(212,175,55,0.10); color:var(--gold-bright); font-weight:700; text-align:center; border:1px solid rgba(255,255,255,0.06); font-size:0.76rem; }
+.corr-table td { padding:9px 10px; text-align:center; color:#f2f5fb; border:1px solid rgba(255,255,255,0.06); }
+.corr-table .corr-diag { color:var(--text-low); background:rgba(255,255,255,0.03); }
