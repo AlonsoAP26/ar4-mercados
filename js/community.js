@@ -1380,40 +1380,40 @@
     container.appendChild(script);
   }
 
-  // Vitrina de diplomas: los módulos completados (gratis e institucionales)
-  // como tarjetas doradas que enlazan al certificado imprimible.
+  // Vitrina de diplomas: avance hacia los diplomas de PROGRAMA (el diploma se
+  // otorga al completar y aprobar el programa entero, con verificación pública).
   const DIPLOMA_SEAL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg>';
-  const DIPLOMA_LEVEL_LABEL = { basico: 'Básico', intermedio: 'Intermedio', avanzado: 'Avanzado', institucional: 'Institucional' };
   async function loadDiplomaVitrina(container) {
     if (!container) return;
     try {
-      const [freeMods, premMods] = await Promise.all([
+      const [freeMods, premMods, dipRes] = await Promise.all([
         fetch('data/educacion.json').then((r) => r.json()).catch(() => []),
-        fetch('data/educacion-premium.json').then((r) => r.json()).catch(() => [])
+        fetch('data/educacion-premium.json').then((r) => r.json()).catch(() => []),
+        fetch('/.netlify/functions/community-public-diplomas?username=' + encodeURIComponent(myProfile.username)).then((r) => r.json()).catch(() => ({}))
       ]);
-      const catalog = {};
-      [...(freeMods || []), ...(premMods || [])].forEach((m) => { catalog[m.slug] = m; });
-      const completedSlugs = (myProfile.completed_modules || []).filter((s) => catalog[s]);
-      if (!completedSlugs.length) {
-        container.innerHTML = '<p class="footer-text">Todavía no tienes diplomas. Completa tu primer módulo en <a href="educacion.html">Educación</a> — todos otorgan diploma con tu nombre.</p>';
+      const freeSet = new Set((freeMods || []).map((m) => m.slug));
+      const premSet = new Set((premMods || []).map((m) => m.slug));
+      const completedSlugs = myProfile.completed_modules || [];
+      const freeDone = completedSlugs.filter((s) => freeSet.has(s)).length;
+      const premDone = completedSlugs.filter((s) => premSet.has(s)).length;
+      const diplomas = (dipRes && dipRes.diplomas) || [];
+      const CURSO_LBL = { basico: 'Diploma de Formación Integral en Trading', institucional: 'Diploma Institucional (50 módulos)' };
+      if (!diplomas.length && !completedSlugs.length) {
+        container.innerHTML = '<p class="footer-text">Todavía no tienes avance. Completa los 30 módulos gratuitos de <a href="educacion.html">Educación</a> aprobando sus cuestionarios y obtén el Diploma de Formación Integral con verificación pública.</p>';
         return;
       }
-      const total = (freeMods || []).length + (premMods || []).length;
       container.innerHTML = `
-        <div class="diploma-vitrina">
-          ${completedSlugs.map((s) => {
-            const m = catalog[s];
-            return `
-              <a class="diploma-mini${m.level === 'institucional' ? ' diploma-mini-inst' : ''}" href="diploma.html?slug=${encodeURIComponent(s)}" title="Ver diploma: ${escapeHtml(m.title)}">
-                <span class="diploma-mini-seal">${DIPLOMA_SEAL}</span>
-                <span class="diploma-mini-body">
-                  <strong>${escapeHtml(m.title)}</strong>
-                  <span>${DIPLOMA_LEVEL_LABEL[m.level] || 'Educación'} · Ver diploma →</span>
-                </span>
-              </a>`;
-          }).join('')}
-        </div>
-        <p class="footer-text" style="margin-top:8px;">${completedSlugs.length} de ${total} módulos completados.</p>`;
+        ${diplomas.length ? `<div class="diploma-vitrina">
+          ${diplomas.map((d) => `
+            <a class="diploma-mini${d.curso === 'institucional' ? ' diploma-mini-inst' : ''}" href="verificar.html?cert=${encodeURIComponent(d.cert)}" title="Ver certificado verificado">
+              <span class="diploma-mini-seal">${DIPLOMA_SEAL}</span>
+              <span class="diploma-mini-body">
+                <strong>${CURSO_LBL[d.curso] || escapeHtml(d.curso)}</strong>
+                <span>Verificado · Ver certificado →</span>
+              </span>
+            </a>`).join('')}
+        </div>` : ''}
+        <p class="footer-text" style="margin-top:8px;">Avance: ${freeDone}/30 módulos del programa integral${premDone ? ` · ${premDone}/20 institucional` : ''} · <a href="educacion.html#diplomaRuta">ver mi Ruta del Diploma</a></p>`;
     } catch (e) {
       container.innerHTML = '<p class="footer-text">No se pudieron cargar tus diplomas.</p>';
     }
