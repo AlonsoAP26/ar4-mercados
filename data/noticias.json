@@ -1932,5 +1932,334 @@
       ],
       "patronUltimaVela": "vela alcista sin patron destacable"
     }
+  },
+  {
+    "title": "La inflación de junio en Argentina perforó el 2% tras nueve meses: 1,9%",
+    "excerpt": "El IPC de junio se ubicó en 1,9% (33,5% interanual), por debajo de la mediana del REM. El dólar oficial ya había subido 5,3% en el mes previo.",
+    "symbol": "FX_IDC:USDARS",
+    "trend": "up",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El IPC de junio perforó el umbral del 2% que resistía desde hacía nueve meses</h3><p>El Instituto Nacional de Estadística y Censos (Indec) difundió el índice de precios al consumidor de junio, que marcó una suba mensual de 1,9%. <cite index=\"2-1\">Según el Indec, durante el sexto mes del 2026 los precios aumentaron un 1,9%, con una variación interanual del 33,5%</cite>. El resultado llegó después de que, según medios locales, <cite index=\"1-21\">la incógnita fuera si la inflación lograría finalmente bajar del 2% mensual, un nivel que no perforaba desde hacía nueve meses</cite>. El dato de mayo había sido 2,1% y marzo había marcado el pico del año en 3,4%.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Por debajo de la mediana del mercado, en línea con los pronosticadores más precisos</h3><p>La cifra oficial sorprendió levemente a la baja frente al consenso amplio. <cite index=\"3-1\">Las consultoras y entidades financieras que participan del Relevamiento de Expectativas de Mercado (REM) del Banco Central estimaron que la inflación de junio sería del 2%</cite>, aunque <cite index=\"3-3\">entre el grupo de analistas con mejor desempeño histórico en sus pronósticos, conocido como el Top 10, la estimación fue incluso menor: 1,9%</cite>, coincidiendo exactamente con el número final. La brecha entre el consenso amplio y el resultado real reabre la discusión sobre si el proceso de desinflación gana tracción de forma más firme que lo que anticipaba la mayoría del REM.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El tipo de cambio oficial ya se había adelantado en junio</h3><p>El mercado cambiario había mostrado señales previas al dato. <cite index=\"1-13\">El dólar oficial subió 5,3% en junio, su mayor avance mensual en casi un año, y quedó por encima de la inflación esperada para el período</cite>. Esa dinámica alimenta la lectura de que el tipo de cambio se movió con cierta anticipación al proceso de desaceleración de precios, un factor que el equipo económico deberá monitorear de cara a la segunda mitad del año.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dólar global se mantiene firme frente al resto de la región</h3><p>Mientras el mercado argentino digiere el dato, el panorama cambiario internacional se mantiene relativamente estable. El índice dólar (DXY) cotiza en 100,82, con una suba de 0,1% en el día aunque retrocede 0,5% en la semana. El euro (EUR/USD) opera en 1,1431, prácticamente sin cambios en la jornada (-0,1%). En la región, el real brasileño (USD/BRL) se ubica en 5,1108, con una baja de 0,1% diaria, y el peso mexicano (USD/MXN) cotiza en 17,55, con una suba de 0,8% en el día. El contraste ilustra que la dinámica del peso argentino responde principalmente a factores domésticos —la trayectoria de la inflación y del dólar oficial— más que a un movimiento generalizado de las monedas emergentes.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que proyecta el REM para lo que resta del año</h3><p>El Relevamiento de Expectativas de Mercado ya delineó un sendero para los próximos meses. <cite index=\"1-3,1-4\">Para julio, el mercado espera que la inflación se mantenga en el 2%, pero a partir de agosto comenzaría a perforar ese nivel: el REM proyecta un 1,8% para agosto y septiembre, seguido por dos meses en el 1,7%, en octubre y noviembre</cite>. <cite index=\"1-7,1-9\">Para diciembre, los analistas esperan que el índice repunte a 1,8%, posiblemente por el impacto estacional de las fiestas; con estas estimaciones, el REM calcula una inflación del 30% para todo 2026</cite>. En el frente cambiario, <cite index=\"3-7\">la mediana de las estimaciones ubicó al dólar oficial en $1.482 durante julio y en $1.673 para diciembre, aunque el grupo Top 10 prevé un cierre de año algo más bajo, en $1.621</cite>. En actividad, <cite index=\"3-8\">los participantes proyectaron que el Producto Interno Bruto crecerá 0,6% en el segundo trimestre y 0,9% tanto en el tercero como en el cuarto, con una expansión promedio del 3% para todo 2026</cite>, mientras que <cite index=\"3-9\">la tasa de desocupación fue estimada en 7,7% para el segundo trimestre y en 7,5% hacia el cierre del año</cite>.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El quiebre del 2% mensual, aunque modesto, cambia el tono de la discusión sobre el ritmo de desinflación en Argentina de cara al segundo semestre. El punto a vigilar es si el dato de julio —que el REM todavía ubica en 2%— confirma o retrasa la trayectoria descendente hacia el 1,7%-1,8% que anticipan los analistas para el cuarto trimestre. La otra variable clave es el propio tipo de cambio oficial: si su avance mensual continúa por encima de la inflación, como ocurrió en junio, el proceso de desinflación podría convivir con una recomposición del tipo de cambio real, algo que las autoridades económicas seguirán de cerca antes de discutir cualquier ajuste en la política de tasas. La brecha entre la proyección mediana del REM y la de los pronosticadores Top 10 —que acertaron con mayor precisión el dato de junio— también merece atención: si ese patrón se repite en los próximos meses, el mercado podría empezar a converger más rápido hacia los escenarios más optimistas de desinflación.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "Perfil",
+        "url": "https://www.perfil.com/noticias/economia/el-indec-publica-hoy-la-inflacion-de-junio-y-el-gobierno-espera-que-quiebre-el-2-que-puede-pasar-con-las-tasas-el-dolar-y-el-credito-a40.phtml"
+      },
+      {
+        "name": "La Nación",
+        "url": "https://www.lanacion.com.ar/economia/inflacion-de-junio-cual-fue-el-ipc-acumulado-y-que-proyectan-las-consultoras-para-este-ano-nid14072026/"
+      },
+      {
+        "name": "BAE Negocios",
+        "url": "https://www.baenegocios.com/economia/de-cuanto-fue-la-inflacion-de-junio-2026-segun-los-especialistas-que-consulta-el-bcra/"
+      }
+    ],
+    "aiSummary": {
+      "que": "El IPC de Argentina de junio marcó 1,9% mensual y 33,5% interanual, perforando el piso del 2% que se mantenía desde hacía nueve meses y ubicándose por debajo de la mediana del REM.",
+      "porque": "Es la primera confirmación oficial de que la desinflación gana algo de tracción, justo cuando el dólar oficial venía de subir 5,3% en junio, su mayor salto mensual en casi un año.",
+      "activos": [
+        "USD/ARS",
+        "USD/MXN",
+        "USD/BRL",
+        "DXY"
+      ],
+      "siguiente": "El dato de julio, que el REM todavía proyecta en 2%, y la trayectoria del dólar oficial hacia los $1.482-$1.673 estimados para julio y diciembre."
+    },
+    "aiScenarios": {
+      "alcista": 55,
+      "lateral": 30,
+      "bajista": 15
+    },
+    "aiDetects": {
+      "probabilidad": 60,
+      "riesgo": "Medio",
+      "lectura": "El sesgo de depreciación gradual del peso oficial se mantiene mientras la inflación cede más lento que el ritmo cambiario reciente."
+    },
+    "timeline": [
+      {
+        "cuando": "Marzo 2026",
+        "texto": "La inflación mensual argentina tocó su pico del año en 3,4%."
+      },
+      {
+        "cuando": "Mayo 2026",
+        "texto": "El IPC se ubicó en 2,1%, todavía por encima del umbral del 2%."
+      },
+      {
+        "cuando": "Hace 5 días (14 de julio)",
+        "texto": "El Indec difundió el IPC de junio: 1,9% mensual y 33,5% interanual, primer quiebre del 2% en nueve meses."
+      },
+      {
+        "cuando": "Próximas semanas",
+        "texto": "El REM proyecta 2% para julio y una nueva baja hacia 1,8% en agosto-septiembre, con el dólar oficial estimado en $1.482 para julio."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es el REM?",
+        "a": "Es el Relevamiento de Expectativas de Mercado que elabora el Banco Central de la República Argentina (BCRA) encuestando mensualmente a decenas de consultoras y entidades financieras sobre inflación, dólar, PIB y otras variables."
+      },
+      {
+        "q": "¿Por qué importa que la inflación mensual baje del 2%?",
+        "a": "Porque marca el primer quiebre de ese umbral en nueve meses y es una referencia que el Gobierno usa como señal de consolidación del proceso de desinflación."
+      },
+      {
+        "q": "¿Cómo se relaciona el dato de inflación con el dólar oficial?",
+        "a": "El tipo de cambio oficial venía subiendo por encima de la inflación esperada, lo que implica una recomposición del tipo de cambio real que el mercado sigue de cerca."
+      },
+      {
+        "q": "¿Qué diferencia hay entre el IPC mensual y el interanual?",
+        "a": "El mensual mide la variación de precios respecto al mes anterior (1,9% en junio), mientras que el interanual compara contra el mismo mes del año previo (33,5%)."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "CAPITALCOM:DXY",
+      "FX_IDC:USDMXN",
+      "FX_IDC:USDBRL",
+      "OANDA:XAUUSD"
+    ],
+    "category": "Forex",
+    "heroType": "forex",
+    "slug": "la-inflacion-de-junio-en-argentina-perforo-el-2-tras-nueve-m-mrsdkb6l",
+    "author": "AR4 Mercados",
+    "date": "2026-07-19",
+    "sourceName": "Perfil",
+    "sourceUrl": "https://www.perfil.com/noticias/economia/el-indec-publica-hoy-la-inflacion-de-junio-y-el-gobierno-espera-que-quiebre-el-2-que-puede-pasar-con-las-tasas-el-dolar-y-el-credito-a40.phtml",
+    "marketPanel": [
+      {
+        "symbol": "FX:EURUSD",
+        "nombre": "EUR/USD",
+        "yahooSymbol": "EURUSD=X",
+        "fuente": "Yahoo Finance (EURUSD=X)",
+        "fechaUltimaVela": "2026-07-19",
+        "precio": 1.1431,
+        "cierreAnterior": 1.1445,
+        "variacionDiaPct": -0.1,
+        "variacionSemanaPct": 0.2,
+        "variacionMesPct": -0.2,
+        "variacionAnioPct": -1.4,
+        "rangoDiaReal": {
+          "minimo": 1.1419,
+          "maximo": 1.1436
+        },
+        "rsi14": 46.2,
+        "lecturaRsi": "neutral",
+        "media50": 1.153,
+        "media200": 1.164,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0058,
+        "maximo52sem": 1.2024,
+        "minimo52sem": 1.1325,
+        "distanciaAMaximo52semPct": -4.9,
+        "distanciaAMinimo52semPct": 0.9,
+        "soportes": [
+          1.1397,
+          1.1325
+        ],
+        "resistencias": [
+          1.1467,
+          1.1677,
+          1.1828
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-07-19",
+        "precio": 100.82,
+        "cierreAnterior": 100.75,
+        "variacionDiaPct": 0.1,
+        "variacionSemanaPct": -0.5,
+        "variacionMesPct": 0.7,
+        "variacionAnioPct": 2.1,
+        "rangoDiaReal": {
+          "minimo": 100.81,
+          "maximo": 100.86
+        },
+        "rsi14": 53.1,
+        "lecturaRsi": "neutral",
+        "media50": 99.99,
+        "media200": 99.03,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4368,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -1,
+        "distanciaAMinimo52semPct": 5.5,
+        "soportes": [
+          100.45,
+          99.34,
+          98.79
+        ],
+        "resistencias": [
+          101.63
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "OANDA:XAUUSD",
+        "nombre": "Oro (XAU/USD, futuro COMEX)",
+        "yahooSymbol": "GC=F",
+        "fuente": "Yahoo Finance (GC=F)",
+        "fechaUltimaVela": "2026-07-19",
+        "precio": 4002.1,
+        "cierreAnterior": 4012.7,
+        "variacionDiaPct": -0.3,
+        "variacionSemanaPct": 0.1,
+        "variacionMesPct": -8.2,
+        "variacionAnioPct": 19.8,
+        "rangoDiaReal": {
+          "minimo": 3998.3,
+          "maximo": 4011.2
+        },
+        "rsi14": 39.5,
+        "lecturaRsi": "neutral",
+        "media50": 4304.36,
+        "media200": 4474.25,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 77.93,
+        "maximo52sem": 5586.2,
+        "minimo52sem": 3263.9,
+        "distanciaAMaximo52semPct": -28.4,
+        "distanciaAMinimo52semPct": 22.6,
+        "soportes": [
+          3962.9
+        ],
+        "resistencias": [
+          4199.7,
+          4228.7,
+          4258.9
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "FX_IDC:USDMXN",
+        "nombre": "USD/MXN (peso mexicano)",
+        "yahooSymbol": "USDMXN=X",
+        "fuente": "Yahoo Finance (USDMXN=X)",
+        "fechaUltimaVela": "2026-07-19",
+        "precio": 17.55,
+        "cierreAnterior": 17.41,
+        "variacionDiaPct": 0.8,
+        "variacionSemanaPct": 0.3,
+        "variacionMesPct": 1.1,
+        "variacionAnioPct": -6.4,
+        "rangoDiaReal": {
+          "minimo": 17.49,
+          "maximo": 17.56
+        },
+        "rsi14": 56,
+        "lecturaRsi": "neutral",
+        "media50": 17.38,
+        "media200": 17.71,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.1326,
+        "maximo52sem": 18.98,
+        "minimo52sem": 17.07,
+        "distanciaAMaximo52semPct": -7.5,
+        "distanciaAMinimo52semPct": 2.8,
+        "soportes": [
+          17.45,
+          17.36,
+          17.24
+        ],
+        "resistencias": [
+          17.64,
+          17.94,
+          18.06
+        ],
+        "patronUltimaVela": "vela alcista de cuerpo amplio"
+      },
+      {
+        "symbol": "FX_IDC:USDBRL",
+        "nombre": "USD/BRL (real brasileno)",
+        "yahooSymbol": "USDBRL=X",
+        "fuente": "Yahoo Finance (USDBRL=X)",
+        "fechaUltimaVela": "2026-07-19",
+        "precio": 5.1108,
+        "cierreAnterior": 5.1136,
+        "variacionDiaPct": -0.1,
+        "variacionSemanaPct": 0.1,
+        "variacionMesPct": -1.4,
+        "variacionAnioPct": -8.5,
+        "rangoDiaReal": {
+          "minimo": 5.1092,
+          "maximo": 5.1108
+        },
+        "rsi14": 46.7,
+        "lecturaRsi": "neutral",
+        "media50": 5.1038,
+        "media200": 5.228,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0647,
+        "maximo52sem": 5.6259,
+        "minimo52sem": 4.8812,
+        "distanciaAMaximo52semPct": -9.2,
+        "distanciaAMinimo52semPct": 4.7,
+        "soportes": [
+          5.0651,
+          5.0402,
+          4.9946
+        ],
+        "resistencias": [
+          5.2461,
+          5.3108,
+          5.3391
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      }
+    ],
+    "marketData": {
+      "symbol": "FX_IDC:USDARS",
+      "nombre": "USD/ARS (peso argentino)",
+      "yahooSymbol": "USDARS=X",
+      "fuente": "Yahoo Finance (USDARS=X)",
+      "fechaUltimaVela": "2026-07-19",
+      "precio": 1478,
+      "cierreAnterior": 1475.5,
+      "variacionDiaPct": 0.2,
+      "variacionSemanaPct": -0.9,
+      "variacionMesPct": 1.9,
+      "variacionAnioPct": 14.2,
+      "rangoDiaReal": {
+        "minimo": 1478,
+        "maximo": 1478
+      },
+      "rsi14": 56.8,
+      "lecturaRsi": "neutral",
+      "media50": 1443.79,
+      "media200": 1425.5,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 11.94,
+      "maximo52sem": 1494.94,
+      "minimo52sem": 1288.67,
+      "distanciaAMaximo52semPct": -1.1,
+      "distanciaAMinimo52semPct": 14.7,
+      "soportes": [
+        1457.1,
+        1448.11,
+        1428.26
+      ],
+      "resistencias": [
+        1484.54,
+        1494.94
+      ],
+      "patronUltimaVela": null
+    }
   }
 ]
