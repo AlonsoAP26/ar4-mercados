@@ -1,0 +1,57 @@
+name: Flash del mercado (titulares DeItaone analizados por IA)
+
+# Tiempo casi real con costos controlados:
+# - cada 20 min en horario nucleo de mercados (lun-vie 11:00-22:59 UTC)
+# - cada hora el resto del dia y fines de semana (geopolitica no duerme)
+# Solo llama a la IA si hay titulares NUEVOS (el script sale antes si no).
+
+on:
+  schedule:
+    - cron: '*/20 11-22 * * 1-5'
+    - cron: '7 0-10,23 * * 1-5'
+    - cron: '17 * * * 0,6'
+  workflow_dispatch:
+
+concurrency:
+  group: flash-news
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  flash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar flash
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TG_FLASH_TOKEN: ${{ secrets.TG_FLASH_TOKEN }}
+          TG_FLASH_CHAT: ${{ secrets.TG_FLASH_CHAT }}
+          DISCORD_FLASH_WEBHOOK: ${{ secrets.DISCORD_FLASH_WEBHOOK }}
+        run: node scripts/generate-flash.js
+
+      - name: Publicar
+        run: |
+          git config user.name "AR4 Flash Bot"
+          git config user.email "bot@ar4mercados.local"
+          git add data/flash.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git commit -m "Flash del mercado: titulares analizados"
+          for intento in 1 2 3; do
+            if git pull --rebase --autostash origin master && git push; then exit 0; fi
+            echo "Reintento $intento..."
+            sleep 5
+          done
+          exit 1

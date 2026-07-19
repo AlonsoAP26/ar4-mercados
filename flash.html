@@ -8,24 +8,23 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'AW-18312316170');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="pageTitle">Perfil de trader — AR4 Mercados</title>
-<meta name="description" id="pageDesc" content="Perfil de trader en la comunidad AR4 Mercados.">
+<title>Flash del Mercado — Titulares institucionales analizados por IA | AR4 Mercados</title>
+<meta name="description" content="Titulares de Bloomberg, Reuters y fuentes institucionales (vía @DeItaone) analizados por agentes de IA en tiempo casi real: impacto, activos afectados y sesgo, en español para traders de Latinoamérica.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css?v=50">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-<script src="js/_supabase-client.js"></script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta property="og:type" content="profile">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="AR4 Mercados">
-<meta property="og:title" content="Perfil de trader — AR4 Mercados">
-<meta property="og:description" content="Perfil de trader en la comunidad AR4 Mercados.">
-<meta property="og:url" content="https://ar4mercados.com/perfil.html">
+<meta property="og:title" content="Flash del Mercado — Titulares institucionales analizados por IA">
+<meta property="og:description" content="Bloomberg, Reuters y fuentes institucionales analizadas por agentes de IA en tiempo casi real, en español.">
+<meta property="og:url" content="https://ar4mercados.com/flash.html">
 <meta property="og:image" content="https://ar4mercados.com/og-image.jpg">
 <meta property="og:image:secure_url" content="https://ar4mercados.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -57,7 +56,7 @@
     </button>
     <nav class="main-nav" id="mainNav">
       <a href="comunidad.html" class="nav-gold">Comunidad</a>
-      <a href="flash.html">Flash</a>
+      <a href="flash.html" class="nav-gold">Flash</a>
       <a href="noticias.html">Noticias</a>
       <a href="ideas.html">Ideas</a>
       <a href="educacion.html" class="nav-gold">Educación</a>
@@ -75,15 +74,45 @@
   </div>
 </header>
 
-<section class="page-hero" style="padding-bottom:0;">
+<section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Inicio</a> / <a href="comunidad.html">Comunidad</a> / <span id="breadcrumbTitle">Perfil</span></div>
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Flash del Mercado</div>
+    <span class="badge-live"><span class="sdot sdot-r"></span> TIEMPO CASI REAL · AGENTE DE IA</span>
+    <h1 style="margin-top:14px;">Flash del <span class="gold">Mercado</span></h1>
+    <p>Titulares de Bloomberg, Reuters, CNBC y fuentes institucionales — vía Walter Bloomberg (@DeItaone) — analizados automáticamente por nuestro agente de IA: qué pasó, si está confirmado o es rumor, qué activos toca y con qué sesgo. En español, para traders de Latinoamérica.</p>
+    <p class="footer-text" id="flashStatus" style="margin-top:10px;">Cargando…</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:24px;">
+<section class="section" style="padding-top:28px;">
   <div class="container">
-    <div id="perfilRoot"><p class="footer-text">Cargando perfil...</p></div>
+
+    <div class="idea-warning">
+      <span class="icon">⚠</span>
+      <div>
+        <strong>Análisis generado por IA — no es asesoría financiera</strong>
+        <p>Los sesgos e impactos son lectura editorial automática del mecanismo típico de mercado, no señales ni recomendaciones. Diferenciamos siempre lo confirmado de los rumores; verifica el titular original antes de decidir nada con dinero real.</p>
+      </div>
+    </div>
+
+    <div class="filter-bar" id="flashFilters" style="margin-top:8px;">
+      <button class="filter-chip active" data-cat="todas">Todas</button>
+      <button class="filter-chip" data-cat="FED">FED</button>
+      <button class="filter-chip" data-cat="Inflación">Inflación</button>
+      <button class="filter-chip" data-cat="Geopolítica">Geopolítica</button>
+      <button class="filter-chip" data-cat="Empresas">Empresas</button>
+      <button class="filter-chip" data-cat="Criptomonedas">Cripto</button>
+      <button class="filter-chip" data-cat="Materias Primas">Materias Primas</button>
+      <button class="filter-chip" data-cat="Datos Económicos">Datos</button>
+      <button class="filter-chip fl-high-chip" data-high>🔴 Solo alto impacto</button>
+    </div>
+
+    <div id="flashFeed" style="margin-top:18px;">
+      <p class="footer-text">Cargando flash del mercado…</p>
+    </div>
+
+    <p class="footer-text" style="margin-top:26px;">Fuente de titulares: Walter Bloomberg (@DeItaone) a través de su canal público de Telegram — agregador reconocido de titulares de Bloomberg Terminal, Reuters, FT y CNBC. AR4 Mercados no está afiliado a estas fuentes; el análisis en español es generado por IA con revisión de reglas editoriales (sin cifras inventadas, rumor siempre etiquetado). El agente revisa titulares nuevos cada 20 minutos en horario de mercado y cada hora fuera de él.</p>
+
   </div>
 </section>
 
@@ -95,6 +124,7 @@
     </div>
     <div>
       <h5>Explorar</h5>
+      <a href="flash.html">Flash del Mercado</a>
       <a href="brokers.html">Brokers</a>
       <a href="copytrading.html">Copytrading</a>
       <a href="fondeo.html">Fondeo</a>
@@ -103,7 +133,6 @@
       <a href="noticias.html">Noticias</a>
       <a href="educacion.html">Educación</a>
       <a href="herramientas.html">Herramientas</a>
-      <a href="calendario.html">Calendario</a>
       <a href="comunidad.html">Comunidad</a>
     </div>
     <div>
@@ -111,15 +140,14 @@
       <a href="terminos.html">Términos de Servicio</a>
       <a href="privacidad.html">Política de Privacidad</a>
       <a href="nosotros.html">Nosotros / Contacto</a>
-      <p class="footer-text">© <span id="year"></span> AR4 Mercados. Las publicaciones de la comunidad son opiniones de otros usuarios, no de AR4 Mercados, y no constituyen asesoría financiera regulada.</p>
+      <p class="footer-text">© <span id="year"></span> AR4 Mercados. Este contenido es informativo, no constituye asesoría financiera.</p>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js?v=5"></script>
 <script src="js/auth.js?v=11"></script>
-<script src="js/comments.js?v=6"></script>
-<script src="js/perfil.js?v=8"></script>
+<script src="js/flash.js?v=1"></script>
 <script src="js/aria-avatar.js?v=1"></script>
 <script src="js/chatbot.js?v=11"></script>
 <script src="js/ticker.js?v=3"></script>
