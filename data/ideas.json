@@ -714,5 +714,57 @@
       ],
       "patronUltimaVela": "vela bajista sin patron destacable"
     }
+  },
+  {
+    "title": "GBP/USD sostiene 1,3452 por encima de sus medias, pero la estructura de fondo sigue marcada por el cruce bajista",
+    "excerpt": "La libra cotiza sobre sus medias de 50 y 200 sesiones, aunque la alineación entre ambas continúa siendo bajista. La resistencia de 1,3578 concentra la atención inmediata.",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Un año de rango que empieza a estrecharse</h3><p>GBP/USD cotiza en 1,3452, con una variación anual de apenas 0,7%. El par se ubica a -2,9% de su máximo de 52 semanas (1,3847) y a 3,4% de su mínimo del mismo período (1,3012). Esa distancia relativamente simétrica respecto a ambos extremos anuales describe un mercado que, pese al avance mensual de 1,9%, no ha logrado todavía redefinir una tendencia direccional clara en el horizonte de un año.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El precio sobre sus medias no borra la fotografía de fondo</h3><p>El precio se mantiene por encima tanto de la media móvil de 50 sesiones (1,3381, un promedio de corto plazo) como de la de 200 sesiones (1,3397, la referencia de largo plazo). Sin embargo, la media de 50 continúa por debajo de la de 200, una alineación técnicamente calificada como estructura bajista. Esta combinación —precio recuperado, medias todavía desalineadas— suele interpretarse como una fase de transición: el impulso reciente ha llevado la cotización por encima de ambos promedios, pero el ordenamiento de fondo aún no ha girado a favor del alza.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Niveles e indicadores clave</h3><p><strong style=\"color:var(--green);\">Soportes:</strong> 1,345 · 1,3381 · 1,3167<br><strong style=\"color:var(--crimson-bright);\">Resistencias:</strong> 1,3578 · 1,3655 · 1,3713</p><p>El RSI de 14 sesiones (índice de fuerza relativa, mide si el activo está sobrecomprado o sobrevendido en una escala de 0 a 100) marca 56,6, en zona neutral, sin señal de agotamiento en ninguna dirección. El ATR de 14 sesiones (rango medio diario de movimiento) se ubica en 0,0085, lo que da una referencia de la volatilidad esperada por jornada. La última vela diaria no dejó un patrón identificable, reflejo de una sesión de rango comprimido.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué vigilar desde aquí</h3><p>La resistencia de 1,3578 es el primer nivel que el mercado deberá superar para debilitar la lectura bajista de las medias. Por debajo, el soporte de 1,3381 coincide casi exactamente con la media de 50, reforzando su relevancia como zona de decisión técnica en las próximas sesiones.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Lectura de flujo institucional</h3><p>Desde una perspectiva de Smart Money Concepts, la zona de 1,3381-1,3397 —coincidente con las medias de 50 y 200— funciona como un posible order block (la última vela opuesta antes de un movimiento impulsivo, donde suelen quedar órdenes institucionales pendientes) que sostuvo el rebote reciente del par. Entre ese nivel y la resistencia de 1,3578 podría existir un Fair Value Gap (un vacío de precio dejado por un movimiento rápido, que el mercado tiende a revisitar antes de continuar) que explicaría el interés en retestear la zona intermedia antes de definir dirección. Por encima de 1,3578, y en especial hacia 1,3655 y 1,3713, se concentra liquidez de compradores en corto (stops de posiciones vendedoras acumuladas sobre máximos recientes). Por debajo de 1,3167 y hasta el mínimo anual de 1,3012, se acumula liquidez de vendedores en corto (stops bajo mínimos). Un cierre sostenido por encima de 1,3578 configuraría un Break of Structure (ruptura de estructura, BOS) que técnicamente reforzaría el escenario alcista de corto plazo; en cambio, un rechazo desde esa zona y pérdida de 1,3381 abriría paso a un Change of Character (CHoCH) que devolvería el protagonismo a la estructura bajista de fondo marcada por las medias.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario alcista: qué necesitaría confirmarse</h3><p>Un cierre diario por encima de la resistencia de 1,3578 sería la primera confirmación de que el impulso reciente gana tracción sobre la estructura bajista de medias. La invalidación de esta lectura se ubicaría en una pérdida del soporte de 1,345, que devolvería el precio a la zona de disputa con la media de 50. De confirmarse el avance, las referencias de resistencia en 1,3655 y 1,3713 funcionan como objetivos razonables dentro del rango de las últimas 52 semanas.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario bajista: qué necesitaría confirmarse</h3><p>Un rechazo en la zona de 1,3578, con pérdida posterior del soporte de 1,3381 —coincidente con la media de 50—, reforzaría la estructura bajista de fondo que ya describe la alineación de medias móviles. La invalidación de este escenario se ubicaría en un cierre firme por encima de 1,3578. De concretarse la ruptura bajista, el soporte de 1,3167 es la primera referencia, con el mínimo de 52 semanas en 1,3012 como zona de liquidez más amplia hacia donde podría extenderse el movimiento.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>",
+    "trend": "neutral",
+    "symbol": "FX:GBPUSD",
+    "category": "Forex",
+    "slug": "gbpusd-sostiene-13452-por-encima-de-sus-medias-pero-la-estru-mrs5kg9o",
+    "author": "AR4 Mercados",
+    "date": "2026-07-19",
+    "marketData": {
+      "symbol": "FX:GBPUSD",
+      "nombre": "GBP/USD",
+      "yahooSymbol": "GBPUSD=X",
+      "fuente": "Yahoo Finance (GBPUSD=X)",
+      "fechaUltimaVela": "2026-07-19",
+      "precio": 1.3452,
+      "cierreAnterior": 1.3479,
+      "variacionDiaPct": -0.2,
+      "variacionSemanaPct": 0.5,
+      "variacionMesPct": 1.9,
+      "variacionAnioPct": 0.7,
+      "rangoDiaReal": {
+        "minimo": 1.3452,
+        "maximo": 1.3452
+      },
+      "rsi14": 56.6,
+      "lecturaRsi": "neutral",
+      "media50": 1.3381,
+      "media200": 1.3397,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 0.0085,
+      "maximo52sem": 1.3847,
+      "minimo52sem": 1.3012,
+      "distanciaAMaximo52semPct": -2.9,
+      "distanciaAMinimo52semPct": 3.4,
+      "soportes": [
+        1.345,
+        1.3381,
+        1.3167
+      ],
+      "resistencias": [
+        1.3578,
+        1.3655,
+        1.3713
+      ],
+      "patronUltimaVela": null
+    }
   }
 ]
