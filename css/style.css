@@ -4476,3 +4476,49 @@ a.diploma-mini:hover { border-color:var(--gold-bright); transform:translateY(-1p
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 input[type="number"] { -moz-appearance: textfield; appearance: textfield; }
+
+/* ===== Portada contextual del módulo ===== */
+.mod-cover { border-radius:14px; overflow:hidden; margin-bottom:22px; border:1px solid rgba(255,255,255,0.1); }
+.mod-cover svg { display:block; width:100%; height:auto; }
+.mod-cover-inst { border:1px solid rgba(212,175,55,0.5); box-shadow:0 0 0 1px rgba(212,175,55,0.15), 0 14px 40px rgba(0,0,0,0.35); }
+
+/* Caso real dentro del módulo institucional */
+.inst-case { margin:26px 0; padding:20px 22px; border-radius:14px; border:1px solid rgba(212,175,55,0.4); background:linear-gradient(160deg, rgba(212,175,55,0.10), rgba(212,175,55,0.02)); }
+.inst-case-head { display:flex; align-items:center; gap:9px; color:var(--gold-bright); margin-bottom:10px; font-size:0.98rem; }
+.inst-case p { color:var(--text-mid); font-size:0.9rem; line-height:1.65; margin:0; }
+
+/* ===== Diploma dorado (ruta institucional) ===== */
+.diploma-inst .diploma-inner { border-width:3px; outline:2px solid rgba(212,175,55,0.6); outline-offset:8px; background: radial-gradient(ellipse at 50% 0%, rgba(212,175,55,0.14), transparent 55%), radial-gradient(ellipse at 50% 100%, rgba(212,175,55,0.08), transparent 50%), linear-gradient(180deg, #101828, #0a0f1c); position:relative; }
+.diploma-inst .diploma-inner::before, .diploma-inst .diploma-inner::after { content:''; position:absolute; width:46px; height:46px; border:2px solid rgba(212,175,55,0.75); pointer-events:none; }
+.diploma-inst .diploma-inner::before { top:10px; left:10px; border-right:none; border-bottom:none; border-top-left-radius:6px; }
+.diploma-inst .diploma-inner::after { bottom:10px; right:10px; border-left:none; border-top:none; border-bottom-right-radius:6px; }
+.diploma-inst .diploma-title { font-size:2.5rem; background:linear-gradient(120deg, #fbe9b0, #f0c75e 45%, #b8860b); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.diploma-inst .diploma-track { color:#fbe9b0; }
+.diploma-inst .diploma-foot-val { border-bottom-color:rgba(212,175,55,0.85); }
+
+/* ===== Mi suscripción ===== */
+.sub-info { margin-top:10px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.sub-line { font-size:0.84rem; color:var(--text-mid); }
+.sub-line strong { color:var(--gold-bright); }
+.sub-cancel-link { background:none; border:none; color:var(--text-low); font-size:0.78rem; text-decoration:underline; cursor:pointer; padding:0; }
+.sub-cancel-link:hover { color:var(--text-mid); }
+.sub-lose-list { list-style:none; margin:0 0 14px; padding:0; }
+.sub-lose-list li { position:relative; padding:5px 0 5px 24px; color:var(--text-mid); font-size:0.86rem; }
+.sub-lose-list li::before { content:'★'; position:absolute; left:2px; color:var(--gold-bright); font-size:0.8rem; }
+
+/* ===== Admin: diplomas ===== */
+.admin-dip-card { border:1px solid rgba(255,255,255,0.09); border-radius:12px; padding:14px 16px; margin-bottom:12px; background:rgba(255,255,255,0.02); }
+.admin-dip-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:10px; flex-wrap:wrap; }
+.admin-dip-chips { display:flex; flex-wrap:wrap; gap:8px; }
+.admin-dip-chip { display:inline-flex; align-items:center; gap:8px; font-size:0.74rem; color:var(--text-mid); border:1px solid rgba(255,255,255,0.12); border-radius:999px; padding:4px 6px 4px 12px; background:rgba(255,255,255,0.03); }
+.admin-dip-inst { color:var(--gold-bright); border-color:rgba(212,175,55,0.45); background:rgba(212,175,55,0.07); }
+.admin-dip-revoke { width:20px; height:20px; border-radius:50%; border:1px solid rgba(255,255,255,0.15); background:transparent; color:var(--text-low); font-size:0.66rem; cursor:pointer; line-height:1; }
+.admin-dip-revoke:hover { color:#ff8a8a; border-color:#ff8a8a; }
+
+/* ===== FAQ v3: acabado profesional ===== */
+.faq-refined .faq-item { position:relative; overflow:hidden; }
+.faq-refined .faq-item::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:linear-gradient(180deg, var(--gold-bright), rgba(212,175,55,0.1)); opacity:0; transition:opacity .2s ease; }
+.faq-refined .faq-item[open]::before { opacity:1; }
+.faq-refined .faq-item[open] .faq-num { background:linear-gradient(160deg, var(--gold-bright), var(--gold)); color:#0a0f1c; border-color:transparent; }
+.faq-refined .faq-item p { animation: faqIn .25s ease; }
+@keyframes faqIn { from { opacity:0; transform:translateY(-4px); } to { opacity:1; transform:none; } }

@@ -103,6 +103,12 @@
       document.getElementById('dpDate').textContent = new Date().toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' });
       document.getElementById('dpId').textContent = certId(user.id || user.email || 'ar4', slug);
       document.title = 'Diploma: ' + m.title + ' — AR4 Mercados';
+      // Los módulos de la ruta institucional emiten el diploma dorado.
+      if (m.level === 'institucional') {
+        document.getElementById('diplomaCard').classList.add('diploma-inst');
+        const titleEl = document.querySelector('.diploma-title');
+        if (titleEl) titleEl.textContent = 'Diploma Institucional';
+      }
       stateEl.innerHTML = '';
       wrap.hidden = false;
     }

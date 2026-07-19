@@ -93,6 +93,41 @@ function moduleCardHTML(m, completedSet) {
 }
 
 const IC_LOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+
+// Portada contextual del módulo: arte SVG propio (velas, libro de órdenes, perfil
+// de volumen...) elegido según el tema, con el tinte del nivel. Sin fotos externas.
+const COVER_MOTIFS = [
+  'M40 150 L110 90 L170 120 L250 50 L330 85 L410 30 L480 60',                                     // linea de tendencia
+  'M60 140 v-60 h14 v60 z M100 150 v-90 h14 v90 z M140 130 v-50 h14 v50 z M180 155 v-100 h14 v100 z M220 120 v-40 h14 v40 z M260 145 v-80 h14 v80 z M300 110 v-30 h14 v30 z M340 150 v-95 h14 v95 z M380 125 v-45 h14 v45 z M420 148 v-75 h14 v75 z', // velas/barras
+  'M60 60 h120 M60 85 h90 M60 110 h150 M60 135 h70 M340 60 h120 M370 85 h90 M310 110 h150 M390 135 h70', // libro de ordenes
+  'M70 160 h60 v-18 h-60 z M70 138 h95 v-18 h-95 z M70 116 h150 v-18 h-150 z M70 94 h110 v-18 h-110 z M70 72 h75 v-18 h-75 z', // perfil de volumen
+  'M60 130 C140 40 220 40 260 100 C300 160 380 160 460 70',                                        // curva/flujo
+  'M100 60 L180 60 L180 120 L100 120 Z M240 90 L460 90 M240 60 L400 60 M240 120 L430 120',        // bloque + niveles
+  'M260 40 a60 60 0 1 1 -1 0 M260 70 a30 30 0 1 1 -1 0',                                          // diana/objetivo
+  'M80 140 Q130 60 180 140 T280 140 T380 140 T480 140'                                            // ondas de sesion
+];
+const LEVEL_TINT = { basico: '#8fb0d9', intermedio: '#c9a94a', avanzado: '#d4af37', institucional: '#f0c75e' };
+function slugHash(s) { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; }
+function moduleCoverHTML(m) {
+  const tint = LEVEL_TINT[m.level] || '#d4af37';
+  const motif = COVER_MOTIFS[slugHash(m.slug) % COVER_MOTIFS.length];
+  const inst = m.level === 'institucional';
+  return `
+    <div class="mod-cover${inst ? ' mod-cover-inst' : ''}">
+      <svg viewBox="0 0 520 200" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="mcGlow" cx="0.85" cy="0.1" r="1"><stop offset="0" stop-color="${tint}" stop-opacity="0.30"/><stop offset="0.7" stop-color="${tint}" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="520" height="200" fill="#0c1322"/>
+        <rect width="520" height="200" fill="url(#mcGlow)"/>
+        <g stroke="${tint}" stroke-opacity="0.09"><path d="M0 50H520M0 100H520M0 150H520M130 0V200M260 0V200M390 0V200"/></g>
+        <path d="${motif}" fill="none" stroke="${tint}" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="488" y="182" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="64" font-weight="700" fill="${tint}" fill-opacity="0.16">${String(m.order).padStart(2, '0')}</text>
+        <text x="32" y="180" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="3" fill="${tint}" fill-opacity="0.8">${inst ? 'RUTA INSTITUCIONAL · AR4 PREMIUM' : 'ACADEMIA AR4 · ' + (LEVEL_LABELS[m.level] || '').toUpperCase()}</text>
+        <path d="M0 198 H520" stroke="${tint}" stroke-opacity="0.8" stroke-width="2.5"/>
+      </svg>
+    </div>`;
+}
 const IC_DIPLOMA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg>';
 
 function premiumModuleCardHTML(m, completedSet, hasPremium) {
@@ -441,10 +476,13 @@ async function initModuloDetail() {
       const bt = document.getElementById('breadcrumbTitle');
       if (bt) bt.textContent = m.title;
       const metaEl2 = document.getElementById('moduloMeta');
-      if (metaEl2) metaEl2.innerHTML = `
+      if (metaEl2) {
+        metaEl2.innerHTML = `
         <span class="badge-impact high">Ruta institucional · Premium</span>
         <h1 style="margin:14px 0 10px;">${m.order}. ${m.title}</h1>
         <span class="news-meta">Módulo ${m.order} de ${premModules.length} de la ruta institucional</span>`;
+        metaEl2.insertAdjacentHTML('beforebegin', moduleCoverHTML(m));
+      }
       body.innerHTML = `
         <p style="font-size:1.02rem;color:var(--text-mid);">${m.excerpt}</p>
         <div class="inst-gate">
@@ -476,8 +514,9 @@ async function initModuloDetail() {
     metaEl.innerHTML = `
       <span class="badge-impact ${LEVEL_BADGE_CLASS[m.level]}">${LEVEL_LABELS[m.level]}</span>
       <h1 style="margin:14px 0 10px;">${m.order}. ${m.title}</h1>
-      <span class="news-meta">Módulo ${m.order} de ${modules.length} · +${m.points} pts al completar</span>
+      <span class="news-meta">Módulo ${m.order} de ${modules.length} · +${m.points} pts y diploma al completar</span>
     `;
+    metaEl.insertAdjacentHTML('beforebegin', moduleCoverHTML(m));
   }
 
   const toggleEl = document.getElementById('moduloExplainToggle');

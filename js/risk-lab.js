@@ -765,7 +765,157 @@
     detect();
   }
 
+  // ============================================================
+  // Planificador de reto de fondeo (gratis): matemática honesta del reto.
+  // ============================================================
+  function initPropPlanner() {
+    const mount = $('propPlanner');
+    if (!mount) return;
+    mount.innerHTML = `
+      <div class="rs-howto" style="margin-bottom:16px;">
+        <div class="rs-howto-head"><svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.7-2.5 2-2.5 3.5M12 17h.01'/></svg><strong>¿Cómo se usa?</strong></div>
+        <ol class="rs-howto-steps">
+          <li><b>1.</b> Escribe las reglas de tu reto (objetivo, límite diario, riesgo por operación).</li>
+          <li><b>2.</b> Añade tu relación R:R media y tu % de aciertos realista.</li>
+          <li><b>3.</b> El planificador calcula cuántas operaciones necesitas y qué margen de error tienes.</li>
+          <li><b>4.</b> Si el plan exige perfección, el reto está mal planteado: ajústalo antes de pagar.</li>
+        </ol>
+      </div>
+      <div class="rl-grid">
+        <div class="rl-field"><label>Tamaño de la cuenta (USD)</label><input type="number" id="ppAccount" value="10000" step="any"></div>
+        <div class="rl-field"><label>Objetivo de ganancia (%)</label><input type="number" id="ppTarget" value="8" step="0.5"></div>
+        <div class="rl-field"><label>Límite de pérdida diaria (%)</label><input type="number" id="ppDaily" value="5" step="0.5"></div>
+        <div class="rl-field"><label>Límite de pérdida total (%)</label><input type="number" id="ppMax" value="10" step="0.5"></div>
+        <div class="rl-field"><label>Riesgo por operación (%)</label><input type="number" id="ppRisk" value="0.5" step="0.1"></div>
+        <div class="rl-field"><label>R:R medio de tu sistema</label><input type="number" id="ppRR" value="2" step="0.1"></div>
+        <div class="rl-field"><label>% de aciertos realista</label><input type="number" id="ppWin" value="45" step="1"></div>
+      </div>
+      <button class="btn btn-gold" id="ppRun" style="margin-top:14px;">Calcular mi plan</button>
+      <div id="ppOut" style="margin-top:16px;"></div>`;
+
+    function run() {
+      const acc = parseFloat($('ppAccount').value) || 0;
+      const target = parseFloat($('ppTarget').value) || 0;
+      const daily = parseFloat($('ppDaily').value) || 0;
+      const maxdd = parseFloat($('ppMax').value) || 0;
+      const risk = parseFloat($('ppRisk').value) || 0;
+      const rr = parseFloat($('ppRR').value) || 0;
+      const win = (parseFloat($('ppWin').value) || 0) / 100;
+      const out = $('ppOut');
+      if (!acc || !target || !risk || !rr) { out.innerHTML = '<div class="community-form-msg error">Completa los campos con valores válidos.</div>'; return; }
+
+      const targetR = target / risk;                       // R netos que exige el reto
+      const expectancyR = win * rr - (1 - win);            // R esperado por operación
+      const lossesToDaily = Math.floor(daily / risk);      // pérdidas seguidas que rompen el límite diario
+      const lossesToMax = Math.floor(maxdd / risk);        // pérdidas netas que rompen el reto
+      const tradesNeeded = expectancyR > 0 ? Math.ceil(targetR / expectancyR) : null;
+      const rows = [
+        ['Necesitas ganar', clean(targetR, 1) + ' R netos', 'objetivo ÷ riesgo por operación'],
+        ['Esperanza de tu sistema', (expectancyR >= 0 ? '+' : '') + num(expectancyR, 2) + ' R por operación', '(' + Math.round(win * 100) + '% × ' + rr + ') − ' + Math.round((1 - win) * 100) + '%'],
+        ['Operaciones estimadas', tradesNeeded ? '~' + tradesNeeded : '—', tradesNeeded ? 'para llegar al objetivo si se cumple tu estadística' : 'tu esperanza es negativa: no llegas nunca'],
+        ['Colchón diario', lossesToDaily + ' pérdidas seguidas', 'antes de romper el límite del día'],
+        ['Colchón total', lossesToMax + ' R de margen', 'antes de perder el reto']
+      ];
+      let verdict, cls;
+      if (expectancyR <= 0) { verdict = 'Con esa estadística el reto es matemáticamente imposible: la esperanza es negativa. Sube tu R:R o tu tasa de acierto antes de pagar un reto.'; cls = 'error'; }
+      else if (lossesToDaily < 3) { verdict = 'Peligro: con ese riesgo por operación, ' + lossesToDaily + ' pérdidas seguidas (algo estadísticamente normal) rompen tu límite diario. Baja el riesgo por operación.'; cls = 'error'; }
+      else if (tradesNeeded > 200) { verdict = 'El plan es viable pero lento (~' + tradesNeeded + ' operaciones). Considera un objetivo por fases o revisa si el reto tiene límite de tiempo.'; cls = ''; }
+      else { verdict = 'Plan razonable: objetivo alcanzable en ~' + tradesNeeded + ' operaciones con ' + lossesToDaily + ' pérdidas de colchón diario. Recuerda: la estadística solo se cumple si ejecutas SIEMPRE igual.'; cls = 'success'; }
+      out.innerHTML = `
+        <div class="rl-results">${rows.map((r) => `<div class="rl-card"><span>${r[0]}</span><strong>${r[1]}</strong><em>${r[2]}</em></div>`).join('')}</div>
+        <div class="community-form-msg ${cls}" style="margin-top:12px;">${verdict}</div>
+        <p style="color:var(--text-low);font-size:0.76rem;margin-top:8px;">Cálculo determinista sobre tus propios supuestos; no predice resultados ni garantiza pasar ningún reto. Las reglas exactas varían según la empresa de fondeo.</p>`;
+    }
+    $('ppRun').addEventListener('click', run);
+    run();
+  }
+
+  // ============================================================
+  // Stop inteligente por volatilidad (Premium): ATR real del instrumento
+  // vía nuestra función de datos (Yahoo). Estructura, no señal.
+  // ============================================================
+  function initAtrStop() {
+    const mount = $('atrStopTool');
+    if (!mount) return;
+    const ATR_SYMBOLS = [
+      ['EURUSD=X', 'EUR/USD'], ['GBPUSD=X', 'GBP/USD'], ['USDJPY=X', 'USD/JPY'], ['GC=F', 'Oro'], ['SI=F', 'Plata'], ['CL=F', 'Petróleo WTI'],
+      ['^NDX', 'Nasdaq 100'], ['^GSPC', 'S&P 500'], ['^DJI', 'Dow Jones'], ['BTC-USD', 'Bitcoin'], ['ETH-USD', 'Ethereum'],
+      ['AAPL', 'Apple'], ['TSLA', 'Tesla'], ['NVDA', 'NVIDIA']
+    ];
+    mount.innerHTML = `
+      <div class="rl-lock-wrap">
+        <div class="rs-howto" style="margin-bottom:16px;">
+          <div class="rs-howto-head"><svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.7-2.5 2-2.5 3.5M12 17h.01'/></svg><strong>¿Cómo se usa?</strong></div>
+          <ol class="rs-howto-steps">
+            <li><b>1.</b> Elige el instrumento: traemos su precio y su ATR(14) diario reales.</li>
+            <li><b>2.</b> El ATR mide cuánto se mueve "normalmente" al día: un stop menor a eso es ruido.</li>
+            <li><b>3.</b> Te mostramos stops de 1×, 1.5× y 2× ATR con el tamaño de posición para tu riesgo.</li>
+            <li><b>4.</b> Es estructura de volatilidad, no una señal: la dirección la decides tú.</li>
+          </ol>
+        </div>
+        <div class="rl-grid">
+          <div class="rl-field"><label>Instrumento</label><select id="atrSym">${ATR_SYMBOLS.map((s) => `<option value="${s[0]}">${s[1]}</option>`).join('')}</select></div>
+          <div class="rl-field"><label>Capital (USD)</label><input type="number" id="atrCap" value="1000" step="any"></div>
+          <div class="rl-field"><label>Riesgo por operación (%)</label><input type="number" id="atrRisk" value="1" step="0.1"></div>
+        </div>
+        <button class="btn btn-gold" id="atrRun" style="margin-top:14px;">Calcular con datos reales</button>
+        <div id="atrOut" style="margin-top:16px;"></div>
+        <div class="rl-lock-overlay" id="atrLock" hidden>
+          <div class="rl-lock-card">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <h3>Herramienta Premium</h3>
+            <p>Usa el ATR real de cada instrumento para dimensionar stops que respetan la volatilidad — la técnica que el nivel institucional enseña en el módulo de riesgo.</p>
+            <a href="membresia.html" class="btn btn-gold">Ver AR4 Premium</a>
+          </div>
+        </div>
+      </div>`;
+
+    async function run() {
+      const out = $('atrOut');
+      const sym = $('atrSym').value;
+      const cap = parseFloat($('atrCap').value) || 0;
+      const riskPct = parseFloat($('atrRisk').value) || 0;
+      if (!cap || !riskPct) { out.innerHTML = '<div class="community-form-msg error">Completa capital y riesgo.</div>'; return; }
+      out.innerHTML = '<p class="footer-text">Consultando datos reales del mercado...</p>';
+      try {
+        const res = await fetch('/.netlify/functions/market-dossier?symbol=' + encodeURIComponent(sym));
+        const d = await res.json();
+        if (!d.success || !d.atr14 || !d.price) throw new Error(d.error || 'Sin datos para este instrumento ahora.');
+        const riskUSD = cap * (riskPct / 100);
+        const dec = Math.abs(d.price) < 10 ? 5 : 2;
+        const mult = [1, 1.5, 2];
+        out.innerHTML = `
+          <div class="rl-results">
+            <div class="rl-card"><span>Precio actual</span><strong>${num(d.price, dec)}</strong><em>dato real de mercado</em></div>
+            <div class="rl-card"><span>ATR(14) diario</span><strong>${num(d.atr14, dec)}</strong><em>movimiento diario típico</em></div>
+            ${mult.map((k) => {
+              const dist = d.atr14 * k;
+              const units = riskUSD / dist;
+              return `<div class="rl-card"><span>Stop ${k}× ATR</span><strong>${num(dist, dec)}</strong><em>≈ ${num(units, 2)} unidades para arriesgar ${money(riskUSD)}</em></div>`;
+            }).join('')}
+          </div>
+          <div class="community-form-msg" style="margin-top:12px;">Un stop por debajo de 1× ATR queda dentro del ruido diario normal de ${$('atrSym').selectedOptions[0].text}: es probable que salte sin que tu tesis esté equivocada. 1.5× es el punto medio clásico; 2× da más aire a cambio de menos tamaño.</div>
+          <p style="color:var(--text-low);font-size:0.76rem;margin-top:8px;">ATR calculado sobre datos históricos reales (Yahoo Finance). Describe volatilidad, no dirección: no constituye una señal de compra o venta.</p>`;
+      } catch (e) {
+        out.innerHTML = '<div class="community-form-msg error">' + (e.message || 'No se pudieron cargar los datos.') + '</div>';
+      }
+    }
+
+    (async () => {
+      const isPro = window.AR4_checkPremium ? await window.AR4_checkPremium() : false;
+      if (!isPro) {
+        $('atrLock').hidden = false;
+        ['atrSym', 'atrCap', 'atrRisk', 'atrRun'].forEach((id) => { const el = $(id); if (el) el.disabled = true; });
+        return;
+      }
+      $('atrRun').addEventListener('click', run);
+      run();
+    })();
+  }
+
   initFreeLab();
   initDdLab();
   initProLab();
+  initPropPlanner();
+  initAtrStop();
 })();

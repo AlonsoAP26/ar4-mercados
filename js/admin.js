@@ -92,10 +92,85 @@
     timer = setInterval(() => { if (!document.hidden) load(); }, 25000);
   }
 
+  // ===== Panel de diplomas (ver por usuario y revocar si fue un error) =====
+  const diplomasEl = document.getElementById('adminDiplomas');
+  const diplomasRefreshBtn = document.getElementById('adminDiplomasRefresh');
+  let moduleCatalog = null;
+
+  async function loadModuleCatalog() {
+    if (moduleCatalog) return moduleCatalog;
+    const [a, b] = await Promise.all([
+      fetch('data/educacion.json').then((r) => r.json()).catch(() => []),
+      fetch('data/educacion-premium.json').then((r) => r.json()).catch(() => [])
+    ]);
+    moduleCatalog = {};
+    [...(a || []), ...(b || [])].forEach((m) => { moduleCatalog[m.slug] = m; });
+    return moduleCatalog;
+  }
+
+  async function loadDiplomas() {
+    if (!diplomasEl) return;
+    const user = netlifyIdentity.currentUser();
+    if (!user) return;
+    try {
+      const [catalog, jwt] = await Promise.all([loadModuleCatalog(), user.jwt()]);
+      const res = await fetch('/.netlify/functions/admin-diplomas', { headers: { Authorization: 'Bearer ' + jwt } });
+      const data = await res.json();
+      if (!res.ok || !data.success) throw new Error(data.error || ('Error ' + res.status));
+      const withDiplomas = data.profiles.filter((p) => p.modules.length);
+      const totalDiplomas = data.profiles.reduce((s, p) => s + p.modules.length, 0);
+      if (!withDiplomas.length) {
+        diplomasEl.innerHTML = '<p class="footer-text">Todavía nadie ha completado módulos. Cuando lo hagan, sus diplomas aparecerán aquí.</p>';
+        return;
+      }
+      diplomasEl.innerHTML = `
+        <p class="footer-text" style="margin-bottom:12px;"><strong style="color:var(--gold-bright);">${totalDiplomas}</strong> diploma(s) emitidos entre <strong>${withDiplomas.length}</strong> usuario(s).</p>
+        ${withDiplomas.map((p) => `
+          <div class="admin-dip-card">
+            <div class="admin-dip-head">
+              <strong>@${esc(p.username)}</strong>
+              <span class="news-meta">${p.modules.length} diploma(s) · ${p.points} pts · rango ${esc(p.rank || 'básico')}</span>
+            </div>
+            <div class="admin-dip-chips">
+              ${p.modules.map((slug) => {
+                const m = catalog[slug];
+                const inst = m && m.level === 'institucional';
+                return `<span class="admin-dip-chip${inst ? ' admin-dip-inst' : ''}" title="${esc(m ? m.title : slug)}">
+                  ${esc(m ? (m.order + '. ' + m.title) : slug)}${inst ? ' · INSTITUCIONAL' : ''}
+                  <button class="admin-dip-revoke" data-profile="${p.id}" data-slug="${esc(slug)}" title="Revocar este diploma">✕</button>
+                </span>`;
+              }).join('')}
+            </div>
+          </div>`).join('')}
+      `;
+      diplomasEl.querySelectorAll('.admin-dip-revoke').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          if (!confirm('¿Revocar este diploma? El usuario perderá el módulo como completado (los puntos ya otorgados no se descuentan).')) return;
+          btn.disabled = true;
+          try {
+            const jwt2 = await netlifyIdentity.currentUser().jwt();
+            const r = await fetch('/.netlify/functions/admin-diplomas', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + jwt2 },
+              body: JSON.stringify({ action: 'revoke', profileId: btn.dataset.profile, slug: btn.dataset.slug })
+            });
+            const d = await r.json();
+            if (!d.success) throw new Error(d.error || 'Error');
+            loadDiplomas();
+          } catch (e) { alert(String(e.message || e)); btn.disabled = false; }
+        });
+      });
+    } catch (e) {
+      diplomasEl.innerHTML = '<p class="footer-text">No se pudieron cargar los diplomas: ' + esc(String(e.message || e)) + '</p>';
+    }
+  }
+
+  if (diplomasRefreshBtn) diplomasRefreshBtn.addEventListener('click', loadDiplomas);
+
   if (loginBtn) loginBtn.addEventListener('click', () => netlifyIdentity.open('login'));
   if (refreshBtn) refreshBtn.addEventListener('click', load);
 
-  netlifyIdentity.on('init', () => { load(); startAutoRefresh(); });
-  netlifyIdentity.on('login', () => { netlifyIdentity.close(); load(); });
+  netlifyIdentity.on('init', () => { load(); startAutoRefresh(); loadDiplomas(); });
+  netlifyIdentity.on('login', () => { netlifyIdentity.close(); load(); loadDiplomas(); });
   netlifyIdentity.on('logout', () => { lastTotal = null; load(); });
 })();

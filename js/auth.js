@@ -91,15 +91,84 @@
         const premium = await isPremiumUser(user);
         window.AR4_PREMIUM = premium;
         statusEl.innerHTML = premium
-          ? `<div class="promo-banner" style="margin-bottom:28px;border-color:rgba(34,192,122,0.35);"><div class="promo-banner-text"><h3>✔ Ya eres miembro Premium</h3><p>Sesión: ${user.email}</p></div><button class="btn btn-outline" id="logoutBtn">Cerrar sesión</button></div>`
+          ? `<div class="promo-banner" style="margin-bottom:28px;border-color:rgba(34,192,122,0.35);"><div class="promo-banner-text"><h3>✔ Ya eres miembro Premium</h3><p>Sesión: ${user.email}</p><div id="subInfo" class="sub-info"></div></div><button class="btn btn-outline" id="logoutBtn">Cerrar sesión</button></div>`
           : `<div class="promo-banner" style="margin-bottom:28px;"><div class="promo-banner-text"><h3>Estás en el plan Gratis</h3><p>Sesión: ${user.email} — suscríbete para desbloquear el contenido Premium.</p></div><button class="btn btn-outline" id="logoutBtn">Cerrar sesión</button></div>`;
         const logoutBtn = document.getElementById('logoutBtn');
         if (logoutBtn) logoutBtn.addEventListener('click', () => netlifyIdentity.logout());
+        if (premium) loadSubscriptionInfo(user);
       }
     } else if (user) {
       window.AR4_PREMIUM = await isPremiumUser(user);
       document.dispatchEvent(new CustomEvent('ar4-access-ready'));
     }
+  }
+
+  // ---------- Mi suscripción: renovación y cancelación (honesta, sin trampas) ----------
+  async function loadSubscriptionInfo(user) {
+    const box = document.getElementById('subInfo');
+    if (!box) return;
+    try {
+      const jwt = await user.jwt();
+      const res = await fetch('/.netlify/functions/subscription-manage', { headers: { 'Authorization': 'Bearer ' + jwt } });
+      const d = await res.json();
+      if (!d.success || !d.premium) return;
+      if (!d.managed) {
+        box.innerHTML = '<span class="sub-line">Suscripción gestionada por el administrador del sitio.</span>';
+        return;
+      }
+      const next = d.nextPaymentDate ? new Date(d.nextPaymentDate).toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' }) : null;
+      box.innerHTML = `
+        <span class="sub-line">${next ? `Próxima renovación: <strong>${next}</strong>` : 'Suscripción activa'}${d.amount ? ` · ${d.amount} ${d.currency || ''}/mes` : ''}</span>
+        <button class="sub-cancel-link" id="subCancelBtn">Cancelar renovación</button>`;
+      document.getElementById('subCancelBtn').addEventListener('click', () => openCancelModal(user, next));
+    } catch (e) { /* la tarjeta de estado sigue funcionando sin este detalle */ }
+  }
+
+  function openCancelModal(user, nextDate) {
+    const overlay = document.createElement('div');
+    overlay.className = 'diploma-modal-overlay';
+    overlay.innerHTML = `
+      <div class="diploma-modal" style="max-width:500px;">
+        <h3>Antes de cancelar, esto es lo que dejarías atrás</h3>
+        <ul class="sub-lose-list">
+          <li>Aria con el modelo más potente y sin límite de mensajes</li>
+          <li>El AI Market Copilot con volúmenes, bloques de órdenes y flujo</li>
+          <li>La ruta institucional: 20 módulos con diploma dorado</li>
+          <li>Risk Lab avanzado con simulador de Montecarlo</li>
+          <li>Ideas con análisis institucional y publicaciones sin espera</li>
+        </ul>
+        <p style="color:var(--text-mid);font-size:0.84rem;">Si confirmas: no se te vuelve a cobrar nunca y <strong>el acceso Premium se retira de inmediato</strong>. Puedes volver a suscribirte cuando quieras.</p>
+        <div class="diploma-modal-actions">
+          <button class="btn btn-gold" id="subKeepBtn">Seguir con Premium</button>
+          <button class="btn btn-outline" id="subConfirmCancelBtn">Cancelar definitivamente</button>
+        </div>
+        <div id="subCancelMsg" class="community-form-msg" style="margin-top:10px;"></div>
+      </div>`;
+    document.body.appendChild(overlay);
+    overlay.querySelector('#subKeepBtn').addEventListener('click', () => overlay.remove());
+    overlay.querySelector('#subConfirmCancelBtn').addEventListener('click', async () => {
+      const btn = overlay.querySelector('#subConfirmCancelBtn');
+      const msg = overlay.querySelector('#subCancelMsg');
+      btn.disabled = true;
+      msg.textContent = 'Cancelando tu suscripción...';
+      try {
+        const jwt = await user.jwt();
+        const res = await fetch('/.netlify/functions/subscription-manage', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt },
+          body: JSON.stringify({ action: 'cancel' })
+        });
+        const d = await res.json();
+        if (!d.success) throw new Error(d.error || 'No se pudo cancelar.');
+        msg.className = 'community-form-msg success';
+        msg.textContent = 'Suscripción cancelada. No se harán más cobros. Gracias por haber sido parte de Premium.';
+        setTimeout(() => window.location.reload(), 2500);
+      } catch (e) {
+        msg.className = 'community-form-msg error';
+        msg.textContent = String(e.message || e);
+        btn.disabled = false;
+      }
+    });
   }
 
   // ---------- Menú desplegable del perfil (con cerrar sesión) ----------
