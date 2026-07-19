@@ -107,13 +107,23 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   ]
 }`;
 
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-    body: JSON.stringify({ model: 'claude-sonnet-5', max_tokens: 1200, messages: [{ role: 'user', content: prompt }] })
-  });
-  if (!res.ok) {
-    console.error('Error de la API de Anthropic:', await res.text());
+  // Reintentos ante errores transitorios (429/5xx): un fallo puntual de la API
+  // en hora pico no debe tumbar la conversación del día.
+  let res = null;
+  for (let intento = 1; intento <= 4; intento++) {
+    res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
+      body: JSON.stringify({ model: 'claude-sonnet-5', max_tokens: 1200, messages: [{ role: 'user', content: prompt }] })
+    });
+    if (res.ok) break;
+    const errText = await res.text();
+    console.warn('Intento ' + intento + ' fallido (HTTP ' + res.status + '): ' + errText.slice(0, 300));
+    if ((res.status === 429 || res.status >= 500) && intento < 4) {
+      await new Promise((r) => setTimeout(r, intento * 20000));
+      continue;
+    }
+    console.error('Error de la API de Anthropic tras ' + intento + ' intento(s).');
     process.exit(1);
   }
 
