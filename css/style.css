@@ -4461,3 +4461,18 @@ a.diploma-mini:hover { border-color:var(--gold-bright); transform:translateY(-1p
 .diploma-mini-body strong { font-size:0.82rem; color:var(--text-high); line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
 .diploma-mini-body span { font-size:0.7rem; color:var(--gold-bright); letter-spacing:0.04em; }
 .diploma-mini-inst { border-color:rgba(212,175,55,0.55); background:linear-gradient(160deg, rgba(212,175,55,0.14), rgba(212,175,55,0.03)); }
+
+/* ===== Puntos de estado serios (reemplazo de emojis de color) ===== */
+.sdot { display:inline-block; width:9px; height:9px; border-radius:50%; vertical-align:middle; margin-right:2px; box-shadow:0 0 6px currentColor; }
+.sdot-g { background:#2ecc71; color:rgba(46,204,113,0.55); }
+.sdot-r { background:#e05252; color:rgba(224,82,82,0.55); }
+.sdot-y { background:#f0c75e; color:rgba(240,199,94,0.5); }
+.sdot-o { background:#f08c3a; color:rgba(240,140,58,0.5); }
+.sdot-b { background:#4a8ff0; color:rgba(74,143,240,0.5); }
+.sdot-n { background:#9aa3b5; color:rgba(154,163,181,0.4); }
+.sdot-k { background:#5c6270; color:rgba(92,98,112,0.4); }
+
+/* Inputs numéricos: sin flechitas nativas (spinner) — aspecto limpio y serio */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; appearance: textfield; }

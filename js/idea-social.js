@@ -89,7 +89,7 @@
         <div class="reaction-row">${REACTIONS.map(reactionChip).join('')}</div>
         <div class="idea-social-actions">
           <button class="btn btn-outline idea-bookmark-btn ${bookmarked ? 'active' : ''}" id="ideaBookmarkBtn">${bookmarked ? '★ Guardado' : '☆ Guardar'}</button>
-          <button class="btn btn-outline" id="ideaAskAriaBtn">🤖 Consultar con IA</button>
+          <button class="btn btn-outline" id="ideaAskAriaBtn"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg> Consultar con IA</button>
           <div class="share-row">${shareButtonsHTML()}</div>
         </div>
       </div>
@@ -161,7 +161,7 @@
       copyBtn.addEventListener('click', async () => {
         try {
           await navigator.clipboard.writeText(url);
-          copyBtn.textContent = '✅';
+          copyBtn.textContent = '✔';
           setTimeout(() => { copyBtn.textContent = '🔗'; }, 1500);
         } catch (e) { /* noop */ }
       });

@@ -14,21 +14,21 @@
     cancelada: { label: 'Cancelada', cls: 'idea-status-cancelada' }
   };
   const BASE_ROOMS = [
-    { id: 'forex', label: '💱 Forex' },
-    { id: 'latam', label: '🌎 LatAm' },
-    { id: 'commodities', label: '🥇 Materias Primas' },
-    { id: 'acciones', label: '📈 Acciones' },
-    { id: 'indices', label: '💵 Índices' },
-    { id: 'cripto', label: '🪙 Criptomonedas' }
+    { id: 'forex', label: 'Forex' },
+    { id: 'latam', label: 'LatAm' },
+    { id: 'commodities', label: 'Materias Primas' },
+    { id: 'acciones', label: 'Acciones' },
+    { id: 'indices', label: 'Índices' },
+    { id: 'cripto', label: 'Criptomonedas' }
   ];
   const ELITE_ROOM = { id: 'elite', label: '★ Elite Traders' };
   const ROOM_META = {
-    forex: { icon: '💱', name: 'Forex', desc: 'Charla general sobre pares de divisas' },
-    latam: { icon: '🌎', name: 'LatAm', desc: 'Divisas, tasas y mercados de Latinoamérica' },
-    commodities: { icon: '🥇', name: 'Materias Primas', desc: 'Oro, petróleo y materias primas' },
-    acciones: { icon: '📈', name: 'Acciones', desc: 'Acciones y resultados corporativos' },
-    indices: { icon: '💵', name: 'Índices', desc: 'Índices bursátiles globales' },
-    cripto: { icon: '🪙', name: 'Criptomonedas', desc: 'Bitcoin, Ethereum y el resto del mercado cripto' },
+    forex: { icon: '', name: 'Forex', desc: 'Charla general sobre pares de divisas' },
+    latam: { icon: '', name: 'LatAm', desc: 'Divisas, tasas y mercados de Latinoamérica' },
+    commodities: { icon: '', name: 'Materias Primas', desc: 'Oro, petróleo y materias primas' },
+    acciones: { icon: '', name: 'Acciones', desc: 'Acciones y resultados corporativos' },
+    indices: { icon: '', name: 'Índices', desc: 'Índices bursátiles globales' },
+    cripto: { icon: '', name: 'Criptomonedas', desc: 'Bitcoin, Ethereum y el resto del mercado cripto' },
     elite: { icon: '★', name: 'Elite Traders', desc: 'Sala exclusiva para rango Élite y Administrador' }
   };
   const RANK_LABELS = { basico: 'Básico', vip: 'VIP', premium: 'Premium', elite: 'Élite', administrador: 'Administrador' };
@@ -37,7 +37,7 @@
   const TRADING_STYLES = ['Day trader', 'Swing trader', 'Scalper', 'Macro / posicional', 'HODLer', 'Recién empezando'];
   const REACTIONS = [
     { emoji: '📚', label: 'Educativo' },
-    { emoji: '📈', label: 'Buen análisis' },
+    { emoji: '', label: 'Buen análisis' },
     { emoji: '💡', label: 'Buena explicación' },
     { emoji: '🎯', label: 'Bien argumentado' }
   ];
@@ -62,24 +62,24 @@
     'DXY': 'CAPITALCOM:DXY'
   };
   const BADGE_META = {
-    first_post: { icon: '📝', name: 'Primera publicación' },
-    century: { icon: '💯', name: '100 puntos' },
-    high_roller: { icon: '💰', name: '1000 puntos' },
-    streak_7: { icon: '🔥', name: '7 días de racha' },
-    streak_30: { icon: '🌟', name: '30 días de racha' },
-    philanthropist: { icon: '🎁', name: 'Donó puntos' },
+    first_post: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z'/></svg>", name: 'Primera publicación' },
+    century: { icon: "<span style='font-family:var(--mono);font-weight:700;font-size:0.72rem;'>100</span>", name: '100 puntos' },
+    high_roller: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><circle cx='9' cy='9' r='6'/><path d='M15.5 6.5a6 6 0 1 1-9 9'/></svg>", name: '1000 puntos' },
+    streak_7: { icon: "<svg viewBox='0 0 24 24' width='14' height='14' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3c1 3 4 4.5 4 8.5A4 4 0 0 1 8 12c0-1.5.5-2.5 1-3.5.8 1 2 1.2 2 2.2C11 9 12 7 12 3z'/><path d='M12 21a5 5 0 0 0 5-5c0-2-1-3.5-2-5'/></svg>", name: '7 días de racha' },
+    streak_30: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z'/></svg>", name: '30 días de racha' },
+    philanthropist: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='4' y='9' width='16' height='12' rx='1'/><path d='M4 13h16M12 9v12'/><path d='M12 9C11 5 8 5 8 7s3 2 4 2c1 0 4 0 4-2s-3-2-4 2z'/></svg>", name: 'Donó puntos' },
     elite_member: { icon: '★', name: 'Rango Élite' }
   };
   const MISSION_META = {
-    post: { icon: '📝', label: 'Publica 1 idea en el Foro' },
-    votes: { icon: '👍', label: 'Vota 3 publicaciones' },
-    chat: { icon: '💬', label: 'Manda 5 mensajes en el chat' }
+    post: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z'/></svg>", label: 'Publica 1 idea en el Foro' },
+    votes: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M7 11v9M7 11l4-7a2 2 0 0 1 2 2v4h5.5a2 2 0 0 1 2 2.3l-1 5.7a2 2 0 0 1-2 1.7H7'/></svg>", label: 'Vota 3 publicaciones' },
+    chat: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z'/></svg>", label: 'Manda 5 mensajes en el chat' }
   };
   const SOCIAL_META = {
     twitter: { icon: '𝕏', placeholder: 'usuario de X/Twitter', urlBase: 'https://x.com/' },
-    instagram: { icon: '📷', placeholder: 'usuario de Instagram', urlBase: 'https://instagram.com/' },
-    tiktok: { icon: '🎵', placeholder: 'usuario de TikTok', urlBase: 'https://tiktok.com/@' },
-    youtube: { icon: '▶️', placeholder: 'canal de YouTube', urlBase: 'https://youtube.com/@' }
+    instagram: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z'/><circle cx='12' cy='13' r='3.5'/></svg>", placeholder: 'usuario de Instagram', urlBase: 'https://instagram.com/' },
+    tiktok: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M9 18V5l11-2v13'/><circle cx='6.5' cy='18' r='2.5'/><circle cx='17.5' cy='16' r='2.5'/></svg>", placeholder: 'usuario de TikTok', urlBase: 'https://tiktok.com/@' },
+    youtube: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M6 4l14 8-14 8z'/></svg>", placeholder: 'canal de YouTube', urlBase: 'https://youtube.com/@' }
   };
 
   // Íconos SVG (line icons) para el menú lateral — look profesional en vez de emojis.
@@ -516,10 +516,10 @@
   function avatarCollectionHTML(catalogOwnedIds) {
     const rank = myEffectiveRank();
     const isAdmin = rank === 'administrador';
-    const TAB_LABELS = { comun: '🥉 Común', raro: '🥈 Raro', legendario: '🥇 Legendario' };
+    const TAB_LABELS = { comun: 'Común', raro: 'Raro', legendario: 'Legendario' };
 
     function priceLabel(item) {
-      if (item.rarity === 'comun') return `🪙 ${item.price_points} pts`;
+      if (item.rarity === 'comun') return `${item.price_points} pts`;
       return `S/ ${Number(item.price_soles).toFixed(2)}`;
     }
 
@@ -657,12 +657,12 @@
         </div>
         <label>Tu sesgo (opcional) — alimenta el Pulso de Sentimiento de la comunidad</label>
         <div class="sentiment-picker" id="sentimentPicker">
-          <button type="button" class="sentiment-option" data-sentiment="alcista">🟢 Alcista</button>
-          <button type="button" class="sentiment-option" data-sentiment="bajista">🔴 Bajista</button>
-          <button type="button" class="sentiment-option" data-sentiment="neutral">⚪ Neutral</button>
+          <button type="button" class="sentiment-option" data-sentiment="alcista"><span class='sdot sdot-g'></span> Alcista</button>
+          <button type="button" class="sentiment-option" data-sentiment="bajista"><span class='sdot sdot-r'></span> Bajista</button>
+          <button type="button" class="sentiment-option" data-sentiment="neutral"><span class='sdot sdot-n'></span> Neutral</button>
         </div>
         <div class="chart-studio-wrap" style="margin-top:16px;">
-          <label>📈 Gráfico</label>
+          <label>Gráfico</label>
           <p class="footer-text" style="margin:6px 0 10px;">Elige el activo en <strong>Instrumento</strong> o en los botones: el <strong>gráfico y la categoría se ajustan solos</strong>.</p>
           <div class="chart-chips" id="postChartChips">
             <button type="button" class="chart-chip" data-sym="EUR/USD" data-cat="Forex">EUR/USD</button>
@@ -677,13 +677,13 @@
             <button type="button" class="chart-chip" data-sym="NASDAQ:TSLA" data-cat="Acciones">Tesla</button>
           </div>
           <div class="chart-switch" id="postChartSwitch">
-            <button type="button" class="chart-switch-btn active" data-chart="lw">📊 Gráfico de velas</button>
-            <button type="button" class="chart-switch-btn" data-chart="tv">✏️ TradingView (dibujar)</button>
+            <button type="button" class="chart-switch-btn active" data-chart="lw"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 20V10M9 20V6M14 20v-8M19 20V4'/></svg> Gráfico de velas</button>
+            <button type="button" class="chart-switch-btn" data-chart="tv"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z'/></svg> TradingView (dibujar)</button>
           </div>
           <div id="postLwWrap">
             <div class="ar4chart" id="postLwChart"></div>
             <div class="chart-actions">
-              <button type="button" class="btn btn-gold" id="postChartAttach">📸 Adjuntar este gráfico</button>
+              <button type="button" class="btn btn-gold" id="postChartAttach"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z'/><circle cx='12' cy='13' r='3.5'/></svg> Adjuntar este gráfico</button>
               <span class="chart-attach-note" id="postChartAttachNote"></span>
             </div>
           </div>
@@ -693,7 +693,7 @@
           </div>
         </div>
         <div class="comment-attach-row" style="margin-top:12px;">
-          <button type="button" class="comment-attach-btn" id="postAttachBtn">📎 Adjuntar imagen, video o PDF</button>
+          <button type="button" class="comment-attach-btn" id="postAttachBtn"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg> Adjuntar imagen, video o PDF</button>
           <input type="file" id="postMediaInput" accept="image/png,image/jpeg,image/gif,image/webp,video/mp4,video/webm,application/pdf" hidden>
           <span class="comment-attach-name" id="postMediaName"></span>
         </div>
@@ -707,7 +707,7 @@
           <input type="text" id="postPollOption3" maxlength="60" placeholder="Opción 4 (opcional)">
         </div>
         <label style="display:flex;align-items:center;gap:8px;margin-top:14px;font-weight:400;text-transform:none;font-family:inherit;cursor:pointer;">
-          <input type="checkbox" id="postIsIdea" style="width:16px;height:16px;"> 📊 Publicar como Idea de Trading estructurada (Entrada / SL / TP con seguimiento de resultado)
+          <input type="checkbox" id="postIsIdea" style="width:16px;height:16px;"> Publicar como Idea de Trading estructurada (Entrada / SL / TP con seguimiento de resultado)
         </label>
         <div id="postIdeaFields" hidden style="margin-top:10px;">
           <label>Dirección</label>
@@ -754,7 +754,7 @@
           <div class="discord-header" id="communityChatHeader"></div>
           <div class="discord-messages" id="communityChatMessages"><p class="footer-text">Cargando chat...</p></div>
           <div class="discord-input-row">
-            <button class="discord-attach-btn" id="communityChatAttachBtn" type="button" title="Adjuntar imagen">📎</button>
+            <button class="discord-attach-btn" id="communityChatAttachBtn" type="button" title="Adjuntar imagen"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg></button>
             <input type="file" id="communityChatImageInput" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
             <input type="text" id="communityChatInput" maxlength="500" placeholder="Escribe un mensaje...">
             <button class="discord-send-btn" id="communityChatSendBtn">Enviar</button>
@@ -775,7 +775,7 @@
           <div class="discord-header" id="dmHeader"><span style="color:var(--text-low);font-size:0.86rem;">Elige una conversación o escribe "Enviar mensaje" desde el perfil de alguien.</span></div>
           <div class="discord-messages" id="dmMessages"></div>
           <div class="discord-input-row" id="dmInputRow" hidden>
-            <button class="discord-attach-btn" id="dmAttachBtn" type="button" title="Adjuntar imagen">📎</button>
+            <button class="discord-attach-btn" id="dmAttachBtn" type="button" title="Adjuntar imagen"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg></button>
             <input type="file" id="dmImageInput" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
             <input type="text" id="dmInput" maxlength="1000" placeholder="Escribe un mensaje...">
             <button class="discord-send-btn" id="dmSendBtn">Enviar</button>
@@ -787,7 +787,7 @@
 
   function dmThreadListItemHTML(t) {
     const preview = t.lastMessage
-      ? (t.lastMessage.image_url && !t.lastMessage.body ? '📷 Imagen' : (t.lastMessage.body || ''))
+      ? (t.lastMessage.image_url && !t.lastMessage.body ? "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z'/><circle cx='12' cy='13' r='3.5'/></svg> Imagen" : (t.lastMessage.body || ''))
       : 'Nueva conversación';
     return `
       <button class="discord-room-btn dm-thread-item${t.threadId === currentDmThreadId ? ' active' : ''}" data-thread-id="${t.threadId}" data-other-id="${t.otherProfile.id}" data-other-username="${escapeHtml(t.otherProfile.username)}">
@@ -853,7 +853,7 @@
     const inputRow = document.getElementById('dmInputRow');
     if (!headerEl || !msgsEl) return;
 
-    headerEl.innerHTML = `${avatarHTML(otherProfile, 'trader-avatar')}<div><strong>${escapeHtml(otherProfile.username)}</strong></div><button class="btn btn-outline" id="dmBlockBtn" style="margin-left:auto;font-size:0.72rem;padding:5px 10px;">🚫 Bloquear</button>`;
+    headerEl.innerHTML = `${avatarHTML(otherProfile, 'trader-avatar')}<div><strong>${escapeHtml(otherProfile.username)}</strong></div><button class="btn btn-outline" id="dmBlockBtn" style="margin-left:auto;font-size:0.72rem;padding:5px 10px;"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><circle cx='12' cy='12' r='9'/><path d='M5.6 5.6l12.8 12.8'/></svg> Bloquear</button>`;
     inputRow.hidden = false;
 
     async function refresh() {
@@ -879,7 +879,7 @@
         if (!confirm(`¿Bloquear a ${otherProfile.username}? No podrán enviarse mensajes.`)) return;
         try {
           const data = await callFunction('dm-block', { targetProfileId: otherProfile.id });
-          blockBtn.textContent = data.blocked ? '✔ Bloqueado' : '🚫 Bloquear';
+          blockBtn.textContent = data.blocked ? '✔ Bloqueado' : "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><circle cx='12' cy='12' r='9'/><path d='M5.6 5.6l12.8 12.8'/></svg> Bloquear";
         } catch (e) { alert(e.message); }
       });
     }
@@ -889,7 +889,7 @@
     const attachBtn = document.getElementById('dmAttachBtn');
     const fileInput = document.getElementById('dmImageInput');
     attachBtn.onclick = () => fileInput.click();
-    fileInput.onchange = () => { if (fileInput.files[0]) attachBtn.textContent = '🖼️'; };
+    fileInput.onchange = () => { if (fileInput.files[0]) attachBtn.textContent = "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='3' y='4' width='18' height='16' rx='2'/><circle cx='9' cy='10' r='1.6'/><path d='M4 19l6-6 4 4 3-3 3 3'/></svg>"; };
 
     async function send() {
       const text = input.value.trim();
@@ -907,7 +907,7 @@
         const data = await callFunction('dm-send', { toProfileId: otherProfile.id, body: text, imageBase64, imageType });
         input.value = '';
         fileInput.value = '';
-        attachBtn.textContent = '📎';
+        attachBtn.textContent = "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg>";
         if (!threadId) { threadId = data.threadId; currentDmThreadId = threadId; loadMensajesList(); }
         await refresh();
       } catch (e) {
@@ -1009,10 +1009,10 @@
       const cards = [
         dnaStatCardHTML('Operaciones registradas', data.totalTrades, `${data.closedTrades} cerradas · ${data.openTrades} abiertas`),
         data.winRate !== null ? dnaStatCardHTML('Win rate', data.winRate + '%', `sobre ${data.closedTrades} cerradas`) : null,
-        dnaStatCardHTML('Sesgo direccional', `${data.longPct}% 📈 / ${data.shortPct}% 📉`, 'long vs. short'),
+        dnaStatCardHTML('Sesgo direccional', `<span style='color:#7fe0a8'>▲ ${data.longPct}%</span> / <span style='color:#ff8a8a'>▼ ${data.shortPct}%</span>`, 'long vs. short'),
         data.favoriteSymbol ? dnaStatCardHTML('Instrumento favorito', data.favoriteSymbol.symbol, `${data.favoriteSymbol.count} operaciones`) : null,
         data.avgRR !== null ? dnaStatCardHTML('R:R promedio realizado', '1:' + data.avgRR, `sobre ${data.rrSampleSize} operaciones con datos completos`) : null,
-        data.currentStreak ? dnaStatCardHTML('Racha actual', data.currentStreak.count + ' ' + (data.currentStreak.type === 'ganadora' ? '✅' : '❌'), data.currentStreak.type) : null,
+        data.currentStreak ? dnaStatCardHTML('Racha actual', data.currentStreak.count + ' ' + (data.currentStreak.type === 'ganadora' ? '✔' : '✕'), data.currentStreak.type) : null,
         data.topEmotion ? dnaStatCardHTML('Estado emocional frecuente', data.topEmotion.emotion, `${data.topEmotion.count} veces`) : null
       ].filter(Boolean).join('');
 
@@ -1049,7 +1049,7 @@
       <div class="reward-head">
         <span class="reward-pts">${pts}<small>pts</small></span>
         <span class="reward-goal">${reached
-          ? '¡Ya puedes canjear 1 mes de Premium gratis! 🎉'
+          ? '¡Ya puedes canjear 1 mes de Premium gratis!'
           : `Te faltan <strong>${remaining} pts</strong> para 1 mes de Premium gratis`}</span>
       </div>
       <div class="reward-track"><div class="reward-track-fill${reached ? ' full' : ''}" style="width:${pct}%;"></div></div>`;
@@ -1060,7 +1060,7 @@
     const isAdmin = rank === 'administrador';
     const styleTag = myProfile.trading_style ? `<span class="instrument-badge">${escapeHtml(myProfile.trading_style)}</span>` : '';
     const streak = myProfile.streak_days || 0;
-    const streakChip = streak > 0 ? `<span class="streak-chip">🔥 ${streak} ${streak === 1 ? 'día' : 'días'}</span>` : '';
+    const streakChip = streak > 0 ? `<span class="streak-chip"><svg viewBox='0 0 24 24' width='14' height='14' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3c1 3 4 4.5 4 8.5A4 4 0 0 1 8 12c0-1.5.5-2.5 1-3.5.8 1 2 1.2 2 2.2C11 9 12 7 12 3z'/><path d='M12 21a5 5 0 0 0 5-5c0-2-1-3.5-2-5'/></svg> ${streak} ${streak === 1 ? 'día' : 'días'}</span>` : '';
     return `
       <div class="community-header-card community-hero-compact">
         <div class="chc-identity">
@@ -1083,7 +1083,7 @@
         <div class="chc-reward" id="communityPointsDisplay">${rewardProgressHTML(myProfile.points)}</div>
       </div>
       <div class="community-form-msg" id="redeemMsg" style="margin-bottom:14px;"></div>
-      ${!window.AR4_PREMIUM ? '<button class="btn btn-outline" id="bootstrapAdminBtn" style="font-size:0.72rem;padding:6px 10px;margin-bottom:14px;">🔑 Activar cuenta de administrador + Premium (solo dueño del sitio)</button><div class="community-form-msg" id="bootstrapAdminMsg" style="margin-bottom:14px;"></div>' : ''}
+      ${!window.AR4_PREMIUM ? '<button class="btn btn-outline" id="bootstrapAdminBtn" style="font-size:0.72rem;padding:6px 10px;margin-bottom:14px;">Activar cuenta de administrador + Premium (solo dueño del sitio)</button><div class="community-form-msg" id="bootstrapAdminMsg" style="margin-bottom:14px;"></div>' : ''}
 
       ${isAdmin ? adminPanelHTML() : ''}
 
@@ -1341,7 +1341,7 @@
     const dataAttrs = n.post_id ? `data-notif-post="${n.post_id}"` : (n.type === 'follow' && n.actor ? `data-notif-profile="${escapeHtml(n.actor.username)}"` : '');
     return `
       <div class="mission-row${clickable ? ' notif-row-clickable' : ''}" ${dataAttrs}>
-        <span class="mission-icon">${n.read ? '·' : '🔔'}</span>
+        <span class="mission-icon">${n.read ? '·' : "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M18 9a6 6 0 0 0-12 0c0 6-2 7-2 7h16s-2-1-2-7'/><path d='M10 20a2 2 0 0 0 4 0'/></svg>"}</span>
         <div class="mission-info">
           <strong style="font-weight:${n.read ? '400' : '700'};">${text}</strong>
           <span style="color:var(--text-low);font-size:0.76rem;">${timeAgo(n.created_at)}</span>
@@ -1432,8 +1432,8 @@
 
     const streak = myProfile.streak_days || 0;
     greetingEl.innerHTML = `
-      <h3 style="margin-bottom:4px;">${greetingWord()}, ${escapeHtml(myProfile.username)} 👋</h3>
-      <p style="color:var(--text-mid);font-size:0.86rem;">Nivel ${levelFromPoints(myProfile.points)} · ${myProfile.points} pts${streak > 0 ? ` · 🔥 ${streak} ${streak === 1 ? 'día' : 'días'} de racha` : ''}</p>
+      <h3 style="margin-bottom:4px;">${greetingWord()}, ${escapeHtml(myProfile.username)}</h3>
+      <p style="color:var(--text-mid);font-size:0.86rem;">Nivel ${levelFromPoints(myProfile.points)} · ${myProfile.points} pts${streak > 0 ? ` · <svg viewBox='0 0 24 24' width='14' height='14' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3c1 3 4 4.5 4 8.5A4 4 0 0 1 8 12c0-1.5.5-2.5 1-3.5.8 1 2 1.2 2 2.2C11 9 12 7 12 3z'/><path d='M12 21a5 5 0 0 0 5-5c0-2-1-3.5-2-5'/></svg> ${streak} ${streak === 1 ? 'día' : 'días'} de racha` : ''}</p>
     `;
 
     if (notifEl) {
@@ -1531,13 +1531,13 @@
     const followBtnHTML = !isSelf
       ? `<button class="follow-btn featured-follow-btn${isFollowing ? ' following' : ''}" data-follow-id="${p.id}" data-following="${isFollowing}">${isFollowing ? '✔ Siguiendo' : '+ Seguir'}</button>`
       : '';
-    const dmBtnHTML = !isSelf ? `<button class="dm-start-btn" data-dm-id="${p.id}" data-dm-username="${escapeHtml(p.username)}" title="Enviar mensaje">✉️</button>` : '';
+    const dmBtnHTML = !isSelf ? `<button class="dm-start-btn" data-dm-id="${p.id}" data-dm-username="${escapeHtml(p.username)}" title="Enviar mensaje"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='3' y='5' width='18' height='14' rx='2'/><path d='M3 7l9 6 9-6'/></svg></button>` : '';
     return `
       <div class="featured-trader-card glass-card">
         <a href="perfil.html?u=${encodeURIComponent(p.username)}">${avatarHTML(p, 'trader-avatar')}</a>
         <a href="perfil.html?u=${encodeURIComponent(p.username)}" class="perfil-link-name"><strong>${escapeHtml(p.username)}${verifiedBadgeHTML(p)}</strong></a>
         <div class="featured-trader-meta">${rankBadgeHTML(p.rank)}<span class="level-badge">Nv. ${levelFromPoints(p.points)}</span></div>
-        ${p.streak_days ? `<span class="streak-chip">🔥 ${p.streak_days} ${p.streak_days === 1 ? 'día' : 'días'}</span>` : ''}
+        ${p.streak_days ? `<span class="streak-chip"><svg viewBox='0 0 24 24' width='14' height='14' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3c1 3 4 4.5 4 8.5A4 4 0 0 1 8 12c0-1.5.5-2.5 1-3.5.8 1 2 1.2 2 2.2C11 9 12 7 12 3z'/><path d='M12 21a5 5 0 0 0 5-5c0-2-1-3.5-2-5'/></svg> ${p.streak_days} ${p.streak_days === 1 ? 'día' : 'días'}</span>` : ''}
         <div style="display:flex;gap:6px;justify-content:center;">${followBtnHTML}${dmBtnHTML}</div>
       </div>
     `;
@@ -1651,7 +1651,7 @@
         </div>
         <div class="tech-modal-widget" id="techModalWidget"></div>
         <p class="footer-text" style="font-size:0.76rem;margin-top:10px;">Indicadores calculados en vivo por TradingView (osciladores y medias móviles), no por AR4 Mercados. Es información de contexto, no una señal de compra/venta.</p>
-        <button class="btn btn-outline btn-block" id="techModalAskAria" style="margin-top:10px;">🤖 Pedirle a la IA que interprete esto</button>
+        <button class="btn btn-outline btn-block" id="techModalAskAria" style="margin-top:10px;"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg> Pedirle a la IA que interprete esto</button>
       </div>
     `;
     document.body.appendChild(overlay);
@@ -1747,9 +1747,9 @@
   }
 
   const SENTIMENT_META = {
-    alcista: { icon: '🟢', label: 'Alcista' },
-    bajista: { icon: '🔴', label: 'Bajista' },
-    neutral: { icon: '⚪', label: 'Neutral' }
+    alcista: { icon: "<span class='sdot sdot-g'></span>", label: 'Alcista' },
+    bajista: { icon: "<span class='sdot sdot-r'></span>", label: 'Bajista' },
+    neutral: { icon: "<span class='sdot sdot-n'></span>", label: 'Neutral' }
   };
 
   function ideaStatsHTML(post) {
@@ -1759,8 +1759,8 @@
     const actionsHTML = (isMine && post.idea_status === 'abierta')
       ? `<div class="idea-status-actions" data-idea-post="${post.id}">
           <span>Actualizar resultado:</span>
-          <button class="idea-status-btn win" data-idea-status="ganadora" data-idea-post="${post.id}">✅ Ganadora</button>
-          <button class="idea-status-btn loss" data-idea-status="perdedora" data-idea-post="${post.id}">❌ Perdedora</button>
+          <button class="idea-status-btn win" data-idea-status="ganadora" data-idea-post="${post.id}">✔ Ganadora</button>
+          <button class="idea-status-btn loss" data-idea-status="perdedora" data-idea-post="${post.id}">✕ Perdedora</button>
           <button class="idea-status-btn cancel" data-idea-status="cancelada" data-idea-post="${post.id}">✕ Cancelada</button>
         </div>`
       : '';
@@ -1797,7 +1797,7 @@
     } else if (post.media_url && post.media_type === 'video') {
       mediaHTML = `<video class="community-post-media-video" src="${escapeHtml(post.media_url)}" controls preload="metadata"></video>`;
     } else if (post.media_url && post.media_type === 'pdf') {
-      mediaHTML = `<a class="community-post-media-pdf" href="${escapeHtml(post.media_url)}" target="_blank" rel="noopener">📄 Ver documento PDF adjunto</a>`;
+      mediaHTML = `<a class="community-post-media-pdf" href="${escapeHtml(post.media_url)}" target="_blank" rel="noopener"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z'/><path d='M14 3v5h5M9 13h6M9 17h6'/></svg> Ver documento PDF adjunto</a>`;
     }
     const isBookmarked = bookmarkedIds && bookmarkedIds.has(post.id);
     const isFollowing = followingIds && followingIds.has(authorProfile.id);
@@ -1805,9 +1805,9 @@
       ? `<button class="follow-btn${isFollowing ? ' following' : ''}" data-follow-id="${authorProfile.id}" data-following="${isFollowing}">${isFollowing ? '✔ Siguiendo' : '+ Seguir'}</button>`
       : '';
     const dmBtnHTML = (myProfile && authorProfile.id !== myProfile.id && !post.is_ai_generated)
-      ? `<button class="dm-start-btn" data-dm-id="${authorProfile.id}" data-dm-username="${escapeHtml(authorProfile.username)}" title="Enviar mensaje">✉️</button>`
+      ? `<button class="dm-start-btn" data-dm-id="${authorProfile.id}" data-dm-username="${escapeHtml(authorProfile.username)}" title="Enviar mensaje"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='3' y='5' width='18' height='14' rx='2'/><path d='M3 7l9 6 9-6'/></svg></button>`
       : '';
-    const aiTag = post.is_ai_generated ? '<span class="ai-generated-badge">🤖 Generado por IA AR4</span>' : '';
+    const aiTag = post.is_ai_generated ? `<span class="ai-generated-badge"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg> Generado por IA AR4</span>` : '';
     const ideaHTML = post.is_structured_idea ? ideaStatsHTML(post) : '';
     return `
       <article class="community-post-card${post.is_ai_generated ? ' ai-generated-post' : ''}${post.is_structured_idea ? ' structured-idea-post' : ''}" data-post-id="${post.id}">
@@ -1827,10 +1827,10 @@
           <button class="community-vote-btn" data-vote-id="${post.id}">▲ ${post.upvotes} útil</button>
           ${reactionsRowHTML(post.id)}
           <button class="comments-toggle-btn" data-comments-toggle="${post.id}">💬 Comentarios</button>
-          <button class="comments-toggle-btn bookmark-btn" data-bookmark-id="${post.id}">${isBookmarked ? '🔖 Guardado' : '🔖 Guardar'}</button>
-          <button class="comments-toggle-btn share-btn" data-share-id="${post.id}">🔗 Compartir</button>
-          <button class="comments-toggle-btn ask-aria-btn" data-ask-aria-title="${escapeHtml(post.title)}" data-ask-aria-body="${escapeHtml((post.body || '').slice(0, 1000))}" data-ask-aria-category="${escapeHtml(post.category || '')}">🤖 Consultar con IA</button>
-          ${resolvedSymbol ? `<button class="comments-toggle-btn tech-analysis-btn" data-tech-id="${post.id}" data-tech-symbol="${resolvedSymbol}" data-tech-title="${escapeHtml(post.title)}" data-tech-body="${escapeHtml((post.body || '').slice(0, 1000))}" data-tech-category="${escapeHtml(post.category || '')}">📊 Análisis técnico completo</button>` : ''}
+          <button class="comments-toggle-btn bookmark-btn" data-bookmark-id="${post.id}">${isBookmarked ? "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M6 4h12v17l-6-4-6 4z'/></svg> Guardado" : "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M6 4h12v17l-6-4-6 4z'/></svg> Guardar"}</button>
+          <button class="comments-toggle-btn share-btn" data-share-id="${post.id}"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1'/><path d='M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1'/></svg> Compartir</button>
+          <button class="comments-toggle-btn ask-aria-btn" data-ask-aria-title="${escapeHtml(post.title)}" data-ask-aria-body="${escapeHtml((post.body || '').slice(0, 1000))}" data-ask-aria-category="${escapeHtml(post.category || '')}"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg> Consultar con IA</button>
+          ${resolvedSymbol ? `<button class="comments-toggle-btn tech-analysis-btn" data-tech-id="${post.id}" data-tech-symbol="${resolvedSymbol}" data-tech-title="${escapeHtml(post.title)}" data-tech-body="${escapeHtml((post.body || '').slice(0, 1000))}" data-tech-category="${escapeHtml(post.category || '')}"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 20V10M9 20V6M14 20v-8M19 20V4'/></svg> Análisis técnico completo</button>` : ''}
         </div>
         <div class="comments-section" id="commentsFor-${post.id}" hidden></div>
       </article>
@@ -1977,7 +1977,7 @@
       btn.addEventListener('click', async () => {
         const postId = btn.dataset.ideaPost;
         const status = btn.dataset.ideaStatus;
-        const label = status === 'ganadora' ? 'Ganadora ✅' : status === 'perdedora' ? 'Perdedora ❌' : 'Cancelada ✕';
+        const label = status === 'ganadora' ? 'Ganadora ✔' : status === 'perdedora' ? 'Perdedora ✕' : 'Cancelada ✕';
         if (!confirm(`¿Marcar esta idea como ${label}? No se puede deshacer.`)) return;
         const actionsEl = btn.closest('.idea-status-actions');
         actionsEl.querySelectorAll('button').forEach((b) => (b.disabled = true));
@@ -2002,7 +2002,7 @@
         btn.disabled = true;
         try {
           const data = await callFunction('community-bookmark', { postId });
-          btn.textContent = data.bookmarked ? '🔖 Guardado' : '🔖 Guardar';
+          btn.textContent = data.bookmarked ? "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M6 4h12v17l-6-4-6 4z'/></svg> Guardado" : "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M6 4h12v17l-6-4-6 4z'/></svg> Guardar";
           if (showBookmarksOnly && !data.bookmarked) {
             btn.closest('.community-post-card').remove();
           }
@@ -2202,7 +2202,7 @@
     }
     attachBtn.addEventListener('click', () => { if (canAttach) fileInput.click(); });
     fileInput.addEventListener('change', () => {
-      if (fileInput.files[0]) attachBtn.textContent = '🖼️';
+      if (fileInput.files[0]) attachBtn.textContent = "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='3' y='4' width='18' height='16' rx='2'/><circle cx='9' cy='10' r='1.6'/><path d='M4 19l6-6 4 4 3-3 3 3'/></svg>";
     });
 
     async function send() {
@@ -2222,7 +2222,7 @@
         await callFunction('community-chat-send', { roomId: currentRoom, body: text, imageBase64, imageType });
         input.value = '';
         fileInput.value = '';
-        attachBtn.textContent = '📎';
+        attachBtn.textContent = "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg>";
         if (currentRoom === 'elite') await loadEliteRoom(document.getElementById('communityChatMessages'));
       } catch (e) {
         alert(e.message);
@@ -2771,7 +2771,7 @@
     return `
       <div class="section-head" style="margin-bottom:10px;"><h2 style="font-size:1rem;">Reto semanal</h2></div>
       <div class="mission-row">
-        <span class="mission-icon">⚡</span>
+        <span class="mission-icon"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M13 2 3 14h7l-1 8 10-12h-7l1-8z'/></svg></span>
         <div class="mission-info">
           <strong>${data.label}</strong>
           <div class="mission-progress-bar"><div class="mission-progress-fill" style="width:${pct}%;"></div></div>

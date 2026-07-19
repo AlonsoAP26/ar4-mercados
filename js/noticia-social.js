@@ -86,7 +86,7 @@
             <div class="sentiment-pulse-segment sentiment-seg-alcista" style="width:${pctUp}%;" title="Alcista ${pctUp}%"></div>
             <div class="sentiment-pulse-segment sentiment-seg-bajista" style="width:${pctDown}%;" title="Bajista ${pctDown}%"></div>
           </div>
-          <span class="noticia-sentiment-pct">🟢 ${pctUp}% · 🔴 ${pctDown}%</span>
+          <span class="noticia-sentiment-pct">▲ ${pctUp}% · ▼ ${pctDown}%</span>
         </div>
       `;
     }
@@ -108,8 +108,8 @@
         ${sentimentBarHTML()}
         <div class="idea-social-actions">
           <button class="btn btn-outline idea-bookmark-btn ${bookmarked ? 'active' : ''}" id="noticiaBookmarkBtn">${bookmarked ? '★ Guardado' : '☆ Guardar'}</button>
-          <button class="btn btn-outline" id="noticiaAskAriaBtn">🤖 Consultar con IA</button>
-          <button class="btn btn-outline" id="noticiaAudioBtn">🎧 Escuchar noticia</button>
+          <button class="btn btn-outline" id="noticiaAskAriaBtn"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg> Consultar con IA</button>
+          <button class="btn btn-outline" id="noticiaAudioBtn">Escuchar noticia</button>
           <div class="share-row">${shareButtonsHTML()}</div>
         </div>
       </div>
@@ -183,14 +183,14 @@
       audioBtn.addEventListener('click', () => {
         if (window.speechSynthesis.speaking) {
           window.speechSynthesis.cancel();
-          audioBtn.textContent = '🎧 Escuchar noticia';
+          audioBtn.textContent = 'Escuchar noticia';
           return;
         }
         const plainBody = (noticia.body || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
         const utterance = new SpeechSynthesisUtterance(`${noticia.title}. ${noticia.excerpt || ''}. ${plainBody}`);
         utterance.lang = 'es-ES';
         utterance.rate = 1;
-        utterance.onend = () => { audioBtn.textContent = '🎧 Escuchar noticia'; };
+        utterance.onend = () => { audioBtn.textContent = 'Escuchar noticia'; };
         audioBtn.textContent = '⏸️ Detener audio';
         window.speechSynthesis.speak(utterance);
       });
@@ -203,7 +203,7 @@
       copyBtn.addEventListener('click', async () => {
         try {
           await navigator.clipboard.writeText(url);
-          copyBtn.textContent = '✅';
+          copyBtn.textContent = '✔';
           setTimeout(() => { copyBtn.textContent = '🔗'; }, 1500);
         } catch (e) { /* noop */ }
       });

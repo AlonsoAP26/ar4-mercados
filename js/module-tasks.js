@@ -361,7 +361,7 @@
       inner += '<div class="mt-calc"><input type="number" class="mt-calc-input" inputmode="decimal" placeholder="Tu respuesta">' +
         '<span class="mt-calc-unit">' + esc(task.unit || '') + '</span>' +
         '<button class="btn btn-outline mt-calc-btn" type="button">Comprobar</button></div>' +
-        (task.hint ? '<button type="button" class="mt-hint-btn">💡 Ver pista</button><div class="mt-hint" hidden>' + esc(task.hint) + '</div>' : '');
+        (task.hint ? '<button type="button" class="mt-hint-btn">Ver pista</button><div class="mt-hint" hidden>' + esc(task.hint) + '</div>' : '');
     }
     let btns = '';
     if (task.type === 'chooseButtons' || task.type === 'readRsi') {

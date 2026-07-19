@@ -50,13 +50,13 @@ function ideaCardHTML(a) {
 }
 
 const STATUS_META = {
-  activo:      { emoji: '🟢', label: 'Activo',           stage: 1 },
-  esperando:   { emoji: '🟡', label: 'A la espera del catalizador', stage: 0 },
-  parcial:     { emoji: '🟠', label: 'Escenario parcialmente confirmado', stage: 2 },
-  breakeven:   { emoji: '🔵', label: 'Punto de equilibrio', stage: 3 },
-  objetivo:    { emoji: '🏆', label: 'Objetivo de referencia alcanzado', stage: 4 },
-  invalidado:  { emoji: '🔴', label: 'Escenario invalidado', stage: -1 },
-  finalizado:  { emoji: '⚫', label: 'Análisis cerrado', stage: 5 }
+  activo:      { emoji: "<span class='sdot sdot-g'></span>", label: 'Activo',           stage: 1 },
+  esperando:   { emoji: "<span class='sdot sdot-y'></span>", label: 'A la espera del catalizador', stage: 0 },
+  parcial:     { emoji: "<span class='sdot sdot-o'></span>", label: 'Escenario parcialmente confirmado', stage: 2 },
+  breakeven:   { emoji: "<span class='sdot sdot-b'></span>", label: 'Punto de equilibrio', stage: 3 },
+  objetivo:    { emoji: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M7 4h10v4a5 5 0 0 1-10 0z'/><path d='M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3M9 14h6M8 20h8M10 14l-.5 6M14 14l.5 6'/></svg>", label: 'Objetivo de referencia alcanzado', stage: 4 },
+  invalidado:  { emoji: "<span class='sdot sdot-r'></span>", label: 'Escenario invalidado', stage: -1 },
+  finalizado:  { emoji: "<span class='sdot sdot-k'></span>", label: 'Análisis cerrado', stage: 5 }
 };
 const STAGE_LABELS = ['Publicado', 'Escenario activo', 'Confirmación parcial', 'Punto de equilibrio', 'Objetivo alcanzado', 'Cerrado'];
 
@@ -115,7 +115,7 @@ function renderTradeStatusCard(idea) {
         <div><span class="trade-card-label">Tipo de contenido</span><span class="trade-card-value">Análisis de contexto</span></div>
       </div>
       ${stepperHTML}
-      <p class="trade-card-note">⚠️ Esta tarjeta resume el estado del análisis, no una orden de compra/venta. Los niveles de soporte, resistencia e invalidación están descritos en el texto del análisis.</p>
+      <p class="trade-card-note">⚠ Esta tarjeta resume el estado del análisis, no una orden de compra/venta. Los niveles de soporte, resistencia e invalidación están descritos en el texto del análisis.</p>
     </div>
   `;
 }
@@ -151,7 +151,7 @@ function renderAIPanel(idea) {
 
   wrap.innerHTML = `
     <div class="section-head" style="margin-top:32px;margin-bottom:14px;">
-      <h2 style="font-size:1.1rem;">🤖 Análisis IA AR4</h2>
+      <h2 style="font-size:1.1rem;"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg> Análisis IA AR4</h2>
       <span class="badge-live">RESUMEN AUTOMÁTICO</span>
     </div>
     <div class="glass-card ai-panel">
@@ -409,7 +409,7 @@ async function initIdeaDetail() {
             <article class="article-body">${idea.bodyPremium}</article>
           </div>
           <div class="premium-lock-overlay">
-            <span class="lock-icon">🔒</span>
+            <span class="lock-icon"><svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='5' y='11' width='14' height='9' rx='2'/><path d='M8 11V8a4 4 0 0 1 8 0v3'/></svg></span>
             <p><strong>Análisis Premium</strong><br>Gráfico con volumen y volume profile, más la lectura de flujo institucional, exclusivos para miembros Premium.</p>
             <a href="membresia.html" class="btn btn-gold">Ver membresía Premium</a>
           </div>

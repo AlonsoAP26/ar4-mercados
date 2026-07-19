@@ -42,7 +42,7 @@
 
       el.innerHTML = `
         <div class="sidebar-block community-widget-card">
-          <h3>👥 Comunidad AR4 en vivo</h3>
+          <h3>Comunidad AR4 en vivo</h3>
           <div class="community-widget-stats">
             <div><strong>${postsCount}</strong><span>Ideas publicadas</span></div>
             <div><strong>${tradersCount}</strong><span>Traders registrados</span></div>

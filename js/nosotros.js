@@ -158,7 +158,7 @@
     if (!testEl) return;
     testEl.innerHTML = `
       <div class="nos-test-empty reveal reveal-in">
-        <span class="nos-test-empty-icon">💬</span>
+        <span class="nos-test-empty-icon"></span>
         <h4>Aún no publicamos testimonios</h4>
         <p>Preferimos no inventar reseñas. A medida que la comunidad crezca, aquí aparecerán experiencias reales de traders que usan AR4. Si ya nos usas, <a href="nosotros.html#contactForm">cuéntanos tu experiencia</a>.</p>
       </div>`;

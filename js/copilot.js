@@ -154,17 +154,17 @@
 
       <div class="cp-cards">
         <div class="cp-card">
-          <div class="cp-card-h">📈 Tendencia principal</div>
+          <div class="cp-card-h">Tendencia principal</div>
           <div class="cp-badge ${tv.cls}">${tv.txt}</div>
           <p>${d.trendWhy}${d.slope50 ? ' La media de 50 va <b>' + d.slope50 + '</b>.' : ''}</p>
         </div>
         <div class="cp-card">
-          <div class="cp-card-h">⚡ Momentum (RSI 14)</div>
+          <div class="cp-card-h">Momentum (RSI 14)</div>
           <div class="cp-badge ${d.rsiRead === 'sobrecompra' ? 'cp-down' : d.rsiRead === 'sobreventa' ? 'cp-up' : 'cp-flat'}">${fmt(d.rsi14, 0)} · ${d.rsiRead}</div>
           <p>${d.rsiRead === 'neutral' ? 'Ni sobrecomprado ni sobrevendido: sin extremos de momentum.' : 'Lectura de ' + d.rsiRead + ': el impulso está en un extremo, ojo con las entradas tardías.'}</p>
         </div>
         <div class="cp-card">
-          <div class="cp-card-h">🏛️ Niveles clave</div>
+          <div class="cp-card-h">Niveles clave</div>
           <div class="cp-levels">
             <div><span class="cp-lv-lbl">Resistencias</span>${(d.resistances && d.resistances.length ? d.resistances : ['—']).map((v) => '<span class="cp-lv cp-lv-r">' + (v === '—' ? '—' : fmt(v, current.dec)) + '</span>').join('')}</div>
             <div class="cp-lv-price">Precio: ${fmt(d.price, current.dec)}</div>
@@ -173,19 +173,19 @@
           <p class="cp-muted">Pivotes reales de las últimas ~90 sesiones.</p>
         </div>
         <div class="cp-card">
-          <div class="cp-card-h">🌊 Volatilidad (ATR 14)</div>
+          <div class="cp-card-h">Volatilidad (ATR 14)</div>
           <div class="cp-badge cp-flat">${fmt(d.atr14, current.dec)} ${d.atrPct != null ? '· ' + fmt(d.atrPct, 1) + '%/día' : ''}</div>
           <p>Se mueve unos <b>${fmt(d.atr14, current.dec)}</b> por sesión. Tu stop debería respetar esta distancia para no salir por ruido normal.</p>
         </div>
         ${d.volume && d.volume.hasData ? `
         <div class="cp-card">
-          <div class="cp-card-h">📊 Volumen</div>
+          <div class="cp-card-h">Volumen</div>
           <div class="cp-badge ${d.volume.relPct >= 130 ? 'cp-up' : d.volume.relPct <= 70 ? 'cp-down' : 'cp-flat'}">${d.volume.relPct}% del promedio</div>
           <p>Hoy se negocia el <b>${d.volume.relPct}%</b> del volumen medio de 20 sesiones. ${d.volume.relPct >= 130 ? 'Volumen alto: hay convicción detrás del movimiento.' : d.volume.relPct <= 70 ? 'Volumen flojo: los movimientos con poco volumen suelen no sostenerse.' : 'Volumen dentro de lo normal.'}</p>
         </div>` : ''}
         ${d.flow && d.flow.hasData ? `
         <div class="cp-card">
-          <div class="cp-card-h">🔀 Presión de volumen</div>
+          <div class="cp-card-h">Presión de volumen</div>
           <div class="cp-badge ${d.flow.bias === 'compradora' ? 'cp-up' : d.flow.bias === 'vendedora' ? 'cp-down' : 'cp-flat'}">${d.flow.buyPct}% comprador · ${d.flow.bias}</div>
           <p>En las últimas 20 sesiones, el <b>${d.flow.buyPct}%</b> del volumen entró en velas alcistas.</p>
           <p class="cp-muted">Aproximación de acumulación/distribución con velas diarias — no es order flow de tick/DOM.</p>
@@ -194,7 +194,7 @@
 
       ${(d.orderBlocks && (d.orderBlocks.bull || d.orderBlocks.bear)) ? `
       <div class="cp-card cp-card-wide">
-        <div class="cp-card-h">🧱 Bloques de órdenes (Order Blocks)</div>
+        <div class="cp-card-h">Bloques de órdenes (Order Blocks)</div>
         <div class="cp-ob-grid">
           ${d.orderBlocks.bull ? `<div class="cp-ob cp-ob-bull"><span>Bloque alcista · soporte</span><strong>${fmt(d.orderBlocks.bull.low, current.dec)} – ${fmt(d.orderBlocks.bull.high, current.dec)}</strong><em>zona donde arrancó el último impulso de compra</em></div>` : ''}
           ${d.orderBlocks.bear ? `<div class="cp-ob cp-ob-bear"><span>Bloque bajista · resistencia</span><strong>${fmt(d.orderBlocks.bear.low, current.dec)} – ${fmt(d.orderBlocks.bear.high, current.dec)}</strong><em>zona donde arrancó el último impulso de venta</em></div>` : ''}
@@ -203,7 +203,7 @@
       </div>` : ''}
 
       <div class="cp-card cp-card-wide">
-        <div class="cp-card-h">🎯 Estructura de riesgo (no es una señal)</div>
+        <div class="cp-card-h">Estructura de riesgo (no es una señal)</div>
         ${riskBlock}
       </div>
 
@@ -213,7 +213,7 @@
       </div>
 
       <div class="cp-actions">
-        <a class="btn btn-outline" href="noticias.html">📰 Ver noticias del mercado</a>
+        <a class="btn btn-outline" href="noticias.html">Ver noticias del mercado</a>
         <button class="btn btn-gold" id="cpAskAria">Pídele la lectura completa a Aria →</button>
       </div>
     `;

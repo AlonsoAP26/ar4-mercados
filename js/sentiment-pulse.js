@@ -41,9 +41,9 @@
         <div class="sentiment-pulse-segment sentiment-seg-bajista" style="width:${pctBajista}%;" title="Bajista ${pctBajista}%"></div>
       </div>
       <div class="sentiment-pulse-legend">
-        <span>🟢 Alcista ${pctAlcista}%</span>
-        <span>⚪ Neutral ${pctNeutral}%</span>
-        <span>🔴 Bajista ${pctBajista}%</span>
+        <span><span class='sdot sdot-g'></span> Alcista ${pctAlcista}%</span>
+        <span><span class='sdot sdot-n'></span> Neutral ${pctNeutral}%</span>
+        <span><span class='sdot sdot-r'></span> Bajista ${pctBajista}%</span>
       </div>
       <p style="color:var(--text-low);font-size:0.74rem;margin-top:10px;">Dato propio de la comunidad AR4, calculado a partir del sesgo que cada usuario elige al publicar — no es un indicador de mercado externo ni una señal de trading, es solo informativo.</p>
     `;

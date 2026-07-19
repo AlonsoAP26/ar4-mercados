@@ -182,9 +182,9 @@
         <label class="jrn-lbl">Resultado</label>
         <input type="hidden" id="jResult" value="abierta">
         <div class="jrn-chips" data-target="jResult">
-          <button type="button" class="jrn-chip jrn-chip-open active" data-val="abierta">🔵 Abierta</button>
-          <button type="button" class="jrn-chip jrn-chip-win" data-val="ganadora">✅ Ganadora</button>
-          <button type="button" class="jrn-chip jrn-chip-loss" data-val="perdedora">❌ Perdedora</button>
+          <button type="button" class="jrn-chip jrn-chip-open active" data-val="abierta">● Abierta</button>
+          <button type="button" class="jrn-chip jrn-chip-win" data-val="ganadora">✔ Ganadora</button>
+          <button type="button" class="jrn-chip jrn-chip-loss" data-val="perdedora">✕ Perdedora</button>
         </div>
 
         <label class="jrn-lbl" for="jEmotion">Estado emocional <span class="jrn-opt">(opcional)</span></label>
@@ -451,7 +451,7 @@
         return;
       }
       const username = profileRes.data && profileRes.data[0] ? profileRes.data[0].username : null;
-      if (titleEl) titleEl.textContent = username ? `📌 Watchlist de @${username}` : '📌 Watchlist compartida';
+      if (titleEl) titleEl.textContent = username ? `Watchlist de @${username}` : 'Watchlist compartida';
       if (!itemsRes.data.length) {
         section.innerHTML = '<p class="footer-text">Esta watchlist está vacía por ahora.</p><a href="herramientas.html" class="btn btn-outline" style="margin-top:14px;">Ver mi propia Watchlist</a>';
         return;

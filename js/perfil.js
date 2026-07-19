@@ -4,19 +4,19 @@
 
   const RANK_LABELS = { basico: 'Básico', vip: 'VIP', premium: 'Premium', elite: 'Élite', administrador: 'Administrador' };
   const BADGE_META = {
-    first_post: { icon: '📝', name: 'Primera publicación' },
-    century: { icon: '💯', name: '100 puntos' },
-    high_roller: { icon: '💰', name: '1000 puntos' },
-    streak_7: { icon: '🔥', name: '7 días de racha' },
-    streak_30: { icon: '🌟', name: '30 días de racha' },
-    philanthropist: { icon: '🎁', name: 'Donó puntos' },
+    first_post: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z'/></svg>", name: 'Primera publicación' },
+    century: { icon: "<span style='font-family:var(--mono);font-weight:700;font-size:0.72rem;'>100</span>", name: '100 puntos' },
+    high_roller: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><circle cx='9' cy='9' r='6'/><path d='M15.5 6.5a6 6 0 1 1-9 9'/></svg>", name: '1000 puntos' },
+    streak_7: { icon: "<svg viewBox='0 0 24 24' width='14' height='14' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3c1 3 4 4.5 4 8.5A4 4 0 0 1 8 12c0-1.5.5-2.5 1-3.5.8 1 2 1.2 2 2.2C11 9 12 7 12 3z'/><path d='M12 21a5 5 0 0 0 5-5c0-2-1-3.5-2-5'/></svg>", name: '7 días de racha' },
+    streak_30: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z'/></svg>", name: '30 días de racha' },
+    philanthropist: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='4' y='9' width='16' height='12' rx='1'/><path d='M4 13h16M12 9v12'/><path d='M12 9C11 5 8 5 8 7s3 2 4 2c1 0 4 0 4-2s-3-2-4 2z'/></svg>", name: 'Donó puntos' },
     elite_member: { icon: '★', name: 'Rango Élite' }
   };
   const SOCIAL_META = {
     twitter: { icon: '𝕏', urlBase: 'https://x.com/' },
-    instagram: { icon: '📷', urlBase: 'https://instagram.com/' },
-    tiktok: { icon: '🎵', urlBase: 'https://tiktok.com/@' },
-    youtube: { icon: '▶️', urlBase: 'https://youtube.com/@' }
+    instagram: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z'/><circle cx='12' cy='13' r='3.5'/></svg>", urlBase: 'https://instagram.com/' },
+    tiktok: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M9 18V5l11-2v13'/><circle cx='6.5' cy='18' r='2.5'/><circle cx='17.5' cy='16' r='2.5'/></svg>", urlBase: 'https://tiktok.com/@' },
+    youtube: { icon: "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M6 4l14 8-14 8z'/></svg>", urlBase: 'https://youtube.com/@' }
   };
 
   function escapeHtml(str) {
@@ -108,7 +108,7 @@
   }
 
   function affinityHTML(score, tags) {
-    const color = score >= 70 ? '🟢' : score >= 40 ? '🟡' : '🔴';
+    const color = score >= 70 ? "<span class='sdot sdot-g'></span>" : score >= 40 ? "<span class='sdot sdot-y'></span>" : "<span class='sdot sdot-r'></span>";
     return `
       <div class="glass-card perfil-affinity-card">
         <div class="perfil-affinity-head">
@@ -252,7 +252,7 @@
       <div class="perfil-header glass-card">
         ${avatarHTML(targetProfile, 'perfil-avatar')}
         <div class="perfil-header-info">
-          <h1>${escapeHtml(targetProfile.username)}${verifiedBadgeHTML(targetProfile)} ${rankBadgeHTML(targetProfile.rank)}<span class="level-badge">Nv. ${levelFromPoints(targetProfile.points)}</span>${streak ? `<span class="streak-chip">🔥 ${streak} ${streak === 1 ? 'día' : 'días'}</span>` : ''}</h1>
+          <h1>${escapeHtml(targetProfile.username)}${verifiedBadgeHTML(targetProfile)} ${rankBadgeHTML(targetProfile.rank)}<span class="level-badge">Nv. ${levelFromPoints(targetProfile.points)}</span>${streak ? `<span class="streak-chip"><svg viewBox='0 0 24 24' width='14' height='14' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M12 3c1 3 4 4.5 4 8.5A4 4 0 0 1 8 12c0-1.5.5-2.5 1-3.5.8 1 2 1.2 2 2.2C11 9 12 7 12 3z'/><path d='M12 21a5 5 0 0 0 5-5c0-2-1-3.5-2-5'/></svg> ${streak} ${streak === 1 ? 'día' : 'días'}</span>` : ''}</h1>
           <p class="perfil-bio">${escapeHtml(targetProfile.bio) || 'Sin biografía todavía.'}</p>
           <div class="perfil-meta-row">
             ${targetProfile.trading_style ? `<span class="instrument-badge">${escapeHtml(targetProfile.trading_style)}</span>` : ''}

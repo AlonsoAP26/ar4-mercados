@@ -162,22 +162,22 @@
 
   // ---- Clasificación por tipo para explicar cualquier evento a quien no sabe ----
   const CATEGORIES = [
-    { key: 'tasas', re: /rate decision|rate statement|interest rate|cash rate|refinancing rate|bank rate|overnight rate|deposit facility|policy rate|funds rate/i, icon: '🏦', label: 'Tasas de interés', why: 'Decisión de tasas del banco central. Tasas más altas suelen fortalecer la moneda y presionar a bolsas, oro y cripto; tasas más bajas hacen lo contrario.' },
-    { key: 'banco', re: /speaks|testifies|testimony|press conference|minutes|monetary policy|fomc|mpc|beige book|projections|hearing|deliberations|discussions/i, icon: '🎤', label: 'Banco central', why: 'Discurso, actas o informe de un banquero central. El mercado busca pistas sobre las próximas tasas: un tono "duro" (a favor de subirlas) suele fortalecer la moneda.' },
-    { key: 'inflacion', re: /cpi|ppi|pce|hicp|inflation|price index|import prices|producer prices|wpi|fpi|deflator/i, icon: '📈', label: 'Inflación', why: 'Mide cuánto suben los precios. Si sale por encima de lo previsto, aumentan las chances de subir tasas → suele fortalecer la moneda y pesar sobre bolsas y oro.' },
-    { key: 'empleo', re: /employment|payroll|nfp|unemployment|jobless|claims|earnings|labou?r|wage|claimant|participation/i, icon: '👷', label: 'Empleo', why: 'Mide la salud del mercado laboral. Más empleo o menos desempleo de lo previsto = economía fuerte → suele fortalecer la moneda.' },
-    { key: 'crecimiento', re: /\bgdp\b|growth/i, icon: '🌐', label: 'Crecimiento (PIB)', why: 'Mide cuánto crece la economía. Un dato mejor al previsto suele apoyar a la moneda y a las bolsas de ese país.' },
-    { key: 'consumo', re: /retail sales|personal spending|consumer spending|redbook|brc/i, icon: '🛒', label: 'Consumo', why: 'Mide cuánto gastan los consumidores, el principal motor de la economía. Ventas mayores a lo previsto suelen apoyar a la moneda.' },
-    { key: 'industria', re: /industrial production|manufacturing|factory|capacity|machinery|durable goods|fixed asset|inventories|tertiary|index of services|construction output|leading index/i, icon: '🏭', label: 'Actividad e industria', why: 'Mide la producción y la actividad de las empresas. Mejor de lo previsto = economía más fuerte → suele apoyar a la moneda.' },
-    { key: 'sentimiento', re: /pmi|ism|confidence|sentiment|optimism|climate|zew|sentix|tankan|nfib|nab|nzier|westpac|ifo|business index|business survey/i, icon: '🧭', label: 'Sentimiento / encuestas', why: 'Encuesta sobre el optimismo de empresas o consumidores respecto a la economía. Más optimismo de lo previsto suele apoyar a la moneda.' },
-    { key: 'vivienda', re: /housing|building permits|home sales|home prices|house price|construction spending|nahb|mortgage/i, icon: '🏠', label: 'Vivienda', why: 'Mide el mercado inmobiliario, un termómetro del crédito y del consumo de las familias.' },
-    { key: 'comercio', re: /trade balance|current account|foreign securities|tic |visitor arrivals|treasury currency/i, icon: '🚢', label: 'Comercio exterior', why: 'Mide el saldo entre lo que el país exporta e importa (o los flujos de capital). Un superávit mayor de lo previsto suele apoyar a la moneda.' },
-    { key: 'energia', re: /crude oil|natural gas|gasoline|\bapi\b|oil inventories/i, icon: '🛢️', label: 'Energía', why: 'Mide los inventarios de energía. Más inventarios de lo previsto suele bajar el precio del petróleo o del gas (y viceversa).' },
-    { key: 'deuda', re: /bond auction|note auction|bill auction|bund|gilt/i, icon: '📜', label: 'Subasta de deuda', why: 'Subasta de bonos del gobierno. El interés que exige el mercado para prestarle al país refleja la confianza en su deuda.' },
-    { key: 'dinero', re: /money supply|new loans|credit|budget balance/i, icon: '💵', label: 'Dinero y crédito', why: 'Mide cuánto dinero, crédito o deuda pública circula en la economía.' },
-    { key: 'feriado', re: /bank holiday|holiday/i, icon: '🏖️', label: 'Feriado', why: 'Feriado bancario: hay menos liquidez y volumen, así que esa divisa puede moverse de forma más errática o quedar plana.' }
+    { key: 'tasas', re: /rate decision|rate statement|interest rate|cash rate|refinancing rate|bank rate|overnight rate|deposit facility|policy rate|funds rate/i, icon: 'BC', label: 'Tasas de interés', why: 'Decisión de tasas del banco central. Tasas más altas suelen fortalecer la moneda y presionar a bolsas, oro y cripto; tasas más bajas hacen lo contrario.' },
+    { key: 'banco', re: /speaks|testifies|testimony|press conference|minutes|monetary policy|fomc|mpc|beige book|projections|hearing|deliberations|discussions/i, icon: 'BC', label: 'Banco central', why: 'Discurso, actas o informe de un banquero central. El mercado busca pistas sobre las próximas tasas: un tono "duro" (a favor de subirlas) suele fortalecer la moneda.' },
+    { key: 'inflacion', re: /cpi|ppi|pce|hicp|inflation|price index|import prices|producer prices|wpi|fpi|deflator/i, icon: 'INF', label: 'Inflación', why: 'Mide cuánto suben los precios. Si sale por encima de lo previsto, aumentan las chances de subir tasas → suele fortalecer la moneda y pesar sobre bolsas y oro.' },
+    { key: 'empleo', re: /employment|payroll|nfp|unemployment|jobless|claims|earnings|labou?r|wage|claimant|participation/i, icon: 'EMP', label: 'Empleo', why: 'Mide la salud del mercado laboral. Más empleo o menos desempleo de lo previsto = economía fuerte → suele fortalecer la moneda.' },
+    { key: 'crecimiento', re: /\bgdp\b|growth/i, icon: 'PIB', label: 'Crecimiento (PIB)', why: 'Mide cuánto crece la economía. Un dato mejor al previsto suele apoyar a la moneda y a las bolsas de ese país.' },
+    { key: 'consumo', re: /retail sales|personal spending|consumer spending|redbook|brc/i, icon: 'CON', label: 'Consumo', why: 'Mide cuánto gastan los consumidores, el principal motor de la economía. Ventas mayores a lo previsto suelen apoyar a la moneda.' },
+    { key: 'industria', re: /industrial production|manufacturing|factory|capacity|machinery|durable goods|fixed asset|inventories|tertiary|index of services|construction output|leading index/i, icon: 'IND', label: 'Actividad e industria', why: 'Mide la producción y la actividad de las empresas. Mejor de lo previsto = economía más fuerte → suele apoyar a la moneda.' },
+    { key: 'sentimiento', re: /pmi|ism|confidence|sentiment|optimism|climate|zew|sentix|tankan|nfib|nab|nzier|westpac|ifo|business index|business survey/i, icon: 'PMI', label: 'Sentimiento / encuestas', why: 'Encuesta sobre el optimismo de empresas o consumidores respecto a la economía. Más optimismo de lo previsto suele apoyar a la moneda.' },
+    { key: 'vivienda', re: /housing|building permits|home sales|home prices|house price|construction spending|nahb|mortgage/i, icon: 'VIV', label: 'Vivienda', why: 'Mide el mercado inmobiliario, un termómetro del crédito y del consumo de las familias.' },
+    { key: 'comercio', re: /trade balance|current account|foreign securities|tic |visitor arrivals|treasury currency/i, icon: 'COM', label: 'Comercio exterior', why: 'Mide el saldo entre lo que el país exporta e importa (o los flujos de capital). Un superávit mayor de lo previsto suele apoyar a la moneda.' },
+    { key: 'energia', re: /crude oil|natural gas|gasoline|\bapi\b|oil inventories/i, icon: 'OIL', label: 'Energía', why: 'Mide los inventarios de energía. Más inventarios de lo previsto suele bajar el precio del petróleo o del gas (y viceversa).' },
+    { key: 'deuda', re: /bond auction|note auction|bill auction|bund|gilt/i, icon: 'BON', label: 'Subasta de deuda', why: 'Subasta de bonos del gobierno. El interés que exige el mercado para prestarle al país refleja la confianza en su deuda.' },
+    { key: 'dinero', re: /money supply|new loans|credit|budget balance/i, icon: 'FX', label: 'Dinero y crédito', why: 'Mide cuánto dinero, crédito o deuda pública circula en la economía.' },
+    { key: 'feriado', re: /bank holiday|holiday/i, icon: 'FER', label: 'Feriado', why: 'Feriado bancario: hay menos liquidez y volumen, así que esa divisa puede moverse de forma más errática o quedar plana.' }
   ];
-  const CAT_DEFAULT = { key: 'otros', icon: '📅', label: 'Indicador económico', why: 'Compara el dato "Actual" con la "Previsión": mejor de lo esperado suele apoyar a la moneda; peor de lo esperado suele debilitarla.' };
+  const CAT_DEFAULT = { key: 'otros', icon: '', label: 'Indicador económico', why: 'Compara el dato "Actual" con la "Previsión": mejor de lo esperado suele apoyar a la moneda; peor de lo esperado suele debilitarla.' };
 
   function classify(title) {
     for (const c of CATEGORIES) { if (c.re.test(title)) return c; }
@@ -390,7 +390,7 @@
     const impact = opts.impact || 'high';
     const mini = !!opts.mini;
     const showHead = opts.head !== undefined ? !!opts.head : !mini;
-    const title = opts.title || '📅 Calendario económico relacionado';
+    const title = opts.title || 'Calendario económico relacionado';
     el.dataset.ecalReady = '1'; // evita que el auto-init lo vuelva a renderizar
     el.classList.add('ecal-embed');
     if (mini) el.classList.add('ecal-embed-mini');

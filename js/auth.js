@@ -91,7 +91,7 @@
         const premium = await isPremiumUser(user);
         window.AR4_PREMIUM = premium;
         statusEl.innerHTML = premium
-          ? `<div class="promo-banner" style="margin-bottom:28px;border-color:rgba(34,192,122,0.35);"><div class="promo-banner-text"><h3>✅ Ya eres miembro Premium</h3><p>Sesión: ${user.email}</p></div><button class="btn btn-outline" id="logoutBtn">Cerrar sesión</button></div>`
+          ? `<div class="promo-banner" style="margin-bottom:28px;border-color:rgba(34,192,122,0.35);"><div class="promo-banner-text"><h3>✔ Ya eres miembro Premium</h3><p>Sesión: ${user.email}</p></div><button class="btn btn-outline" id="logoutBtn">Cerrar sesión</button></div>`
           : `<div class="promo-banner" style="margin-bottom:28px;"><div class="promo-banner-text"><h3>Estás en el plan Gratis</h3><p>Sesión: ${user.email} — suscríbete para desbloquear el contenido Premium.</p></div><button class="btn btn-outline" id="logoutBtn">Cerrar sesión</button></div>`;
         const logoutBtn = document.getElementById('logoutBtn');
         if (logoutBtn) logoutBtn.addEventListener('click', () => netlifyIdentity.logout());
@@ -157,13 +157,13 @@
         <h3>Crea tu cuenta y desbloquea todo AR4</h3>
         <p class="join-benefits-sub">Es gratis, sin tarjeta y en menos de un minuto. Al registrarte obtienes:</p>
         <ul class="join-benefits-list">
-          <li><span>💬</span> Publicar en la comunidad y chatear en las salas de mercado en vivo</li>
-          <li><span>📊</span> Guardar tus análisis, ideas y brokers favoritos</li>
-          <li><span>🏆</span> Ganar puntos, subir de rango y desbloquear avatares exclusivos</li>
-          <li><span>🤖</span> Usar a Aria, tu asistente de IA para gestión de riesgo</li>
-          <li><span>🔔</span> Seguir a otros traders y recibir notificaciones</li>
-          <li><span>📚</span> Marcar tu progreso en los 12 módulos de educación</li>
-          <li><span>🎁</span> Acumular puntos canjeables por un mes de Premium gratis</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z'/></svg></span> Publicar en la comunidad y chatear en las salas de mercado en vivo</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 20V10M9 20V6M14 20v-8M19 20V4'/></svg></span> Guardar tus análisis, ideas y brokers favoritos</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M7 4h10v4a5 5 0 0 1-10 0z'/><path d='M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3M9 14h6M8 20h8M10 14l-.5 6M14 14l.5 6'/></svg></span> Ganar puntos, subir de rango y desbloquear avatares exclusivos</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg></span> Usar a Aria, tu asistente de IA para gestión de riesgo</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M18 9a6 6 0 0 0-12 0c0 6-2 7-2 7h16s-2-1-2-7'/><path d='M10 20a2 2 0 0 0 4 0'/></svg></span> Seguir a otros traders y recibir notificaciones</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5z'/></svg></span> Marcar tu progreso en los 30 módulos de educación con diploma</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='4' y='9' width='16' height='12' rx='1'/><path d='M4 13h16M12 9v12'/><path d='M12 9C11 5 8 5 8 7s3 2 4 2c1 0 4 0 4-2s-3-2-4 2z'/></svg></span> Acumular puntos canjeables por un mes de Premium gratis</li>
         </ul>
         <button class="btn btn-gold btn-block" id="joinBenefitsSignup">Crear mi cuenta gratis</button>
         <button class="join-benefits-login" id="joinBenefitsLogin">Ya tengo cuenta — Iniciar sesión</button>
@@ -195,15 +195,15 @@
     overlay.innerHTML = `
       <div class="join-benefits-card ar4-welcome-card">
         <button class="join-benefits-close" aria-label="Cerrar">✕</button>
-        <div class="ar4-welcome-emoji">🤖</div>
+        <div class="ar4-welcome-emoji"><svg viewBox='0 0 24 24' width='40' height='40' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg></div>
         <span class="badge-live" style="background:rgba(46,204,113,0.15);color:var(--green);border-color:rgba(46,204,113,0.35);">✓ CUENTA CREADA</span>
-        <h3>${name ? '¡Bienvenido, ' + escapeText(name) + '! 🎉' : '¡Bienvenido a AR4 Mercados! 🎉'}</h3>
+        <h3>${name ? '¡Bienvenido, ' + escapeText(name) + '!' : '¡Bienvenido a AR4 Mercados!'}</h3>
         <p class="join-benefits-sub">Acabas de tomar una de las <strong>mejores decisiones para tu trading</strong>. Ahora eres parte de una de las primeras comunidades de Latinoamérica potenciada por <strong>agentes de inteligencia artificial</strong>.</p>
         <ul class="join-benefits-list">
-          <li><span>🤖</span> <strong>Aria, tu agente de IA</strong>, te acompaña 24/7: gestión de riesgo, tamaño de posición y qué mirar antes de operar.</li>
-          <li><span>🧠</span> Noticias y análisis del mercado <strong>interpretados por IA</strong>, en español y sin jerga complicada.</li>
-          <li><span>🏆</span> Empiezas a <strong>ganar puntos desde hoy</strong>: sube de rango, desbloquea avatares y canjéalos por Premium gratis.</li>
-          <li><span>💬</span> Entra a las salas en vivo y aprende junto a traders reales de la región.</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg></span> <strong>Aria, tu agente de IA</strong>, te acompaña 24/7: gestión de riesgo, tamaño de posición y qué mirar antes de operar.</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M9.5 12h.01M14.5 12h.01M9.5 15.5h5'/></svg></span> Noticias y análisis del mercado <strong>interpretados por IA</strong>, en español y sin jerga complicada.</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M7 4h10v4a5 5 0 0 1-10 0z'/><path d='M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3M9 14h6M8 20h8M10 14l-.5 6M14 14l.5 6'/></svg></span> Empiezas a <strong>ganar puntos desde hoy</strong>: sube de rango, desbloquea avatares y canjéalos por Premium gratis.</li>
+          <li><span><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z'/></svg></span> Entra a las salas en vivo y aprende junto a traders reales de la región.</li>
         </ul>
         <button class="btn btn-gold btn-block" id="welcomeExplore">Empezar con Aria y la comunidad →</button>
         <button class="join-benefits-login" id="welcomeLater">Explorar por mi cuenta</button>

@@ -20,7 +20,7 @@ function brokerCtaUrl(b) {
 function reputationLine(b) {
   const r = parseFloat(b.trustpilotRating);
   if (Number.isFinite(r)) {
-    return `⭐ ${b.trustpilotRating}/5 <span>Trustpilot · ${b.trustpilotReviews} reseñas${b.trustpilotLabel ? ' · "' + b.trustpilotLabel + '"' : ''}</span>`;
+    return `★ ${b.trustpilotRating}/5 <span>Trustpilot · ${b.trustpilotReviews} reseñas${b.trustpilotLabel ? ' · "' + b.trustpilotLabel + '"' : ''}</span>`;
   }
   return `<span style="color:var(--text-mid);">Bróker nuevo · sin calificación pública verificada aún</span>`;
 }

@@ -6,7 +6,7 @@ async function loadFondeo() {
 
 function fondeoReputation(f) {
   const r = parseFloat(f.trustpilotRating);
-  if (Number.isFinite(r)) return `⭐ ${f.trustpilotRating}/5 <span>Trustpilot · ${f.trustpilotReviews} reseñas${f.trustpilotLabel ? ' · "' + f.trustpilotLabel + '"' : ''}</span>`;
+  if (Number.isFinite(r)) return `★ ${f.trustpilotRating}/5 <span>Trustpilot · ${f.trustpilotReviews} reseñas${f.trustpilotLabel ? ' · "' + f.trustpilotLabel + '"' : ''}</span>`;
   return `<span style="color:var(--text-mid);">Bróker nuevo · sin calificación pública verificada aún</span>`;
 }
 

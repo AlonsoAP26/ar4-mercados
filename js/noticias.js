@@ -137,7 +137,7 @@ function renderAiSummary(n) {
   const activosHTML = (s.activos || []).map(a => `<span class="instrument-badge">${a}</span>`).join(' ');
   el.innerHTML = `
     <div class="glass-card ai-summary-card" id="noticiaAiSummaryCard">
-      <div class="ai-summary-head">🤖 <strong>Resumen generado por IA</strong> <span class="badge-live">EN 30 SEGUNDOS</span></div>
+      <div class="ai-summary-head"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg> <strong>Resumen generado por IA</strong> <span class="badge-live">EN 30 SEGUNDOS</span></div>
       <ul class="ai-summary-list">
         <li><strong>Qué pasó:</strong> ${s.que}</li>
         <li><strong>Por qué importa:</strong> ${s.porque}</li>
@@ -164,7 +164,7 @@ function renderMarketImpact(n) {
   if (!el || !n.relatedSymbols || !n.relatedSymbols.length) { if (el) el.innerHTML = ''; return; }
   el.innerHTML = `
     <div class="section-head" style="margin-top:8px;margin-bottom:14px;">
-      <h2 style="font-size:1.1rem;">🌎 Impacto en otros mercados</h2>
+      <h2 style="font-size:1.1rem;">Impacto en otros mercados</h2>
       <span class="badge-live">COTIZACIONES EN VIVO</span>
     </div>
     <div class="tradingview-widget-container" id="noticiaImpactWidget" style="margin-bottom:28px;"></div>
@@ -193,7 +193,7 @@ function renderTimeline(n) {
   if (!el || !n.timeline || !n.timeline.length) { if (el) el.innerHTML = ''; return; }
   el.innerHTML = `
     <div class="section-head" style="margin-top:8px;margin-bottom:14px;">
-      <h2 style="font-size:1.1rem;">🕒 Cómo se fue armando esta historia</h2>
+      <h2 style="font-size:1.1rem;">Cómo se fue armando esta historia</h2>
     </div>
     <div class="noticia-timeline">
       ${n.timeline.map(t => `
@@ -214,9 +214,9 @@ function renderAiPanel(n) {
   const scenariosHTML = n.aiScenarios ? `
     <div class="ai-scenarios">
       <strong style="display:block;margin-bottom:8px;">Escenarios IA</strong>
-      <div class="ai-scenario-row"><span>🟢 Alcista</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.alcista}%;background:var(--green);"></div></div><span>${n.aiScenarios.alcista}%</span></div>
-      <div class="ai-scenario-row"><span>🟡 Lateral</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.lateral}%;background:#f0c75e;"></div></div><span>${n.aiScenarios.lateral}%</span></div>
-      <div class="ai-scenario-row"><span>🔴 Bajista</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.bajista}%;background:var(--crimson-bright);"></div></div><span>${n.aiScenarios.bajista}%</span></div>
+      <div class="ai-scenario-row"><span><span class='sdot sdot-g'></span> Alcista</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.alcista}%;background:var(--green);"></div></div><span>${n.aiScenarios.alcista}%</span></div>
+      <div class="ai-scenario-row"><span><span class='sdot sdot-y'></span> Lateral</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.lateral}%;background:#f0c75e;"></div></div><span>${n.aiScenarios.lateral}%</span></div>
+      <div class="ai-scenario-row"><span><span class='sdot sdot-r'></span> Bajista</span><div class="ai-scenario-bar"><div style="width:${n.aiScenarios.bajista}%;background:var(--crimson-bright);"></div></div><span>${n.aiScenarios.bajista}%</span></div>
     </div>
   ` : '';
 
@@ -238,7 +238,7 @@ function renderAiPanel(n) {
 
   el.innerHTML = `
     <div class="section-head" style="margin-top:32px;margin-bottom:14px;">
-      <h2 style="font-size:1.1rem;">🤖 IA AR4 detecta</h2>
+      <h2 style="font-size:1.1rem;"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='6' y='7' width='12' height='11' rx='2.5'/><path d='M12 7V4M9 3.5h6M9.5 12h.01M14.5 12h.01M9.5 15.5h5M3 11v3M21 11v3'/></svg> IA AR4 detecta</h2>
       <span class="badge-live">ANÁLISIS AUTOMÁTICO</span>
     </div>
     <div class="glass-card ai-panel ai-panel-noticia">
@@ -255,7 +255,7 @@ function renderFaq(n) {
   if (!el || !n.faq || !n.faq.length) { if (el) el.innerHTML = ''; return; }
   el.innerHTML = `
     <div class="section-head" style="margin-top:32px;margin-bottom:14px;">
-      <h2 style="font-size:1.1rem;">❓ Preguntas frecuentes</h2>
+      <h2 style="font-size:1.1rem;">Preguntas frecuentes</h2>
     </div>
     <div class="noticia-faq">
       ${n.faq.map((f, i) => `
@@ -275,7 +275,7 @@ function renderMidRelated(n, noticias) {
   if (!related.length) { el.innerHTML = ''; return; }
   el.innerHTML = `
     <div class="section-head" style="margin-top:28px;margin-bottom:12px;">
-      <h2 style="font-size:1rem;">📰 También podría interesarte</h2>
+      <h2 style="font-size:1rem;">También podría interesarte</h2>
     </div>
     <div class="noticia-mid-related">
       ${related.map(r => `<a href="noticia.html?slug=${encodeURIComponent(r.slug)}" class="noticia-mid-related-item">${r.title}</a>`).join('')}
@@ -321,7 +321,7 @@ async function renderSidebar(n, noticias) {
       if (count) {
         communityHTML = `
           <a href="comunidad.html" class="sidebar-cta-card">
-            <strong>👥 ${count} publicaci${count === 1 ? 'ón' : 'ones'}</strong>
+            <strong>${count} publicaci${count === 1 ? 'ón' : 'ones'}</strong>
             <span>de la comunidad hablando de ${label}</span>
           </a>
         `;
@@ -333,17 +333,17 @@ async function renderSidebar(n, noticias) {
 
   el.innerHTML = `
     <div class="sidebar-block">
-      <h3>🔥 Última hora</h3>
+      <h3>Última hora</h3>
       ${ultimaHoraHTML || '<p class="footer-text" style="font-size:0.78rem;">No hay más noticias todavía.</p>'}
     </div>
     <div class="sidebar-block">
-      <h3>⭐ Ideas relacionadas</h3>
+      <h3>★ Ideas relacionadas</h3>
       ${ideasHTML}
     </div>
     ${communityHTML}
     ${sponsorHTML}
     <div class="sidebar-block sidebar-cta-premium">
-      <h3>🚀 AR4 AI Premium</h3>
+      <h3>AR4 AI Premium</h3>
       <p>Consulta con Aria sobre esta noticia con contexto ilimitado y análisis más profundo.</p>
       <a href="membresia.html" class="btn btn-gold btn-block">Ver Premium</a>
     </div>
@@ -475,7 +475,7 @@ async function initNoticiaDetail() {
             <article class="article-body">${n.bodyPremium}</article>
           </div>
           <div class="premium-lock-overlay">
-            <span class="lock-icon">🔒</span>
+            <span class="lock-icon"><svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><rect x='5' y='11' width='14' height='9' rx='2'/><path d='M8 11V8a4 4 0 0 1 8 0v3'/></svg></span>
             <p><strong>Conclusión y análisis final</strong><br>Los datos macro completos y la lectura final de este movimiento son exclusivos para miembros Premium.</p>
             <a href="membresia.html" class="btn btn-gold">Ver membresía Premium</a>
           </div>
@@ -493,10 +493,10 @@ async function initNoticiaDetail() {
       const enlaces = n.sources
         .map((s) => `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`)
         .join(' · ');
-      sourceBox.innerHTML = `📎 Fuentes originales de los datos: ${enlaces}. Resumen y análisis redactados por AR4 Mercados.` +
+      sourceBox.innerHTML = `<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg> Fuentes originales de los datos: ${enlaces}. Resumen y análisis redactados por AR4 Mercados.` +
         (n.marketData ? ` Cotizaciones y variaciones medidas sobre datos de mercado de Yahoo Finance.` : '');
     } else if (n.sourceUrl) {
-      sourceBox.innerHTML = `📎 Fuente original de los datos: <a href="${n.sourceUrl}" target="_blank" rel="noopener">${n.sourceName}</a>. Resumen y análisis redactados por AR4 Mercados.`;
+      sourceBox.innerHTML = `<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg> Fuente original de los datos: <a href="${n.sourceUrl}" target="_blank" rel="noopener">${n.sourceName}</a>. Resumen y análisis redactados por AR4 Mercados.`;
     }
   }
 
