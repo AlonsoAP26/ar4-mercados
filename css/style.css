@@ -4522,3 +4522,31 @@ input[type="number"] { -moz-appearance: textfield; appearance: textfield; }
 .faq-refined .faq-item[open] .faq-num { background:linear-gradient(160deg, var(--gold-bright), var(--gold)); color:#0a0f1c; border-color:transparent; }
 .faq-refined .faq-item p { animation: faqIn .25s ease; }
 @keyframes faqIn { from { opacity:0; transform:translateY(-4px); } to { opacity:1; transform:none; } }
+
+/* ===== Tarjetas de brokers/fondeo: encaje parejo y dorado en recomendados ===== */
+.card-grid .broker-card { display:flex; flex-direction:column; }
+.card-grid .broker-card .broker-card-cta { margin-top:auto; }
+.tag-sponsored { display:inline-block; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-low); border:1px solid rgba(255,255,255,0.18); border-radius:999px; padding:3px 10px; margin-bottom:10px; align-self:flex-start; }
+.broker-partner-card { position:relative; }
+.broker-partner-card .broker-partner-badge { background:rgba(212,175,55,0.1); border:1px solid rgba(212,175,55,0.4); color:var(--gold-bright); border-radius:999px; padding:4px 12px; font-size:0.7rem; letter-spacing:0.08em; }
+.broker-top-pick { border-color:rgba(212,175,55,0.65) !important; background:linear-gradient(170deg, rgba(212,175,55,0.09), rgba(255,255,255,0.02) 55%); box-shadow:0 0 0 1px rgba(212,175,55,0.2), 0 14px 36px rgba(0,0,0,0.3); }
+.broker-top-pick .broker-rank { color:var(--gold-bright); }
+.broker-top-pick .broker-card-cta { background:linear-gradient(135deg, var(--gold-bright), var(--gold)); color:#0a0f1c; border-color:transparent; font-weight:700; }
+.broker-top-pick .broker-card-cta:hover { filter:brightness(1.08); }
+
+/* Vitrina vacía (perfil propio): invitación al primer diploma */
+.diploma-empty { display:flex; gap:16px; align-items:flex-start; padding:20px; border-radius:14px; border:1px dashed rgba(212,175,55,0.4); background:rgba(212,175,55,0.04); }
+.diploma-empty strong { display:block; color:var(--text-high); margin-bottom:6px; }
+.diploma-empty p { color:var(--text-mid); font-size:0.86rem; margin:0 0 4px; }
+
+/* ===== Documentos legales refinados ===== */
+.legal-doc { line-height:1.7; }
+.legal-summary { padding:20px 22px; border-radius:14px; border:1px solid rgba(212,175,55,0.35); background:linear-gradient(160deg, rgba(212,175,55,0.08), rgba(255,255,255,0.02)); margin-bottom:30px; }
+.legal-summary h3 { font-size:1rem; color:var(--gold-bright); margin-bottom:8px; }
+.legal-summary p { color:var(--text-mid); font-size:0.9rem; margin:0; }
+.legal-h { margin:30px 0 10px; font-size:1.12rem; padding-bottom:8px; border-bottom:1px solid rgba(212,175,55,0.22); }
+.legal-doc ul { color:var(--text-mid); padding-left:20px; margin-bottom:16px; }
+.legal-doc ul li { margin-bottom:8px; font-size:0.92rem; }
+.legal-doc p { color:var(--text-mid); font-size:0.94rem; }
+.legal-doc a { color:var(--gold-bright); }
+.legal-note { color:var(--text-low) !important; font-size:0.78rem !important; margin-top:30px; padding-top:16px; border-top:1px dashed rgba(255,255,255,0.12); }

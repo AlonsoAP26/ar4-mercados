@@ -75,7 +75,8 @@ exports.handler = async (event, context) => {
     if (!reward && PREMIUM_MODULE_POINTS[slug]) {
       // Módulo de la ruta institucional: exige Premium activo en el servidor,
       // para que el diploma y los puntos solo se otorguen a quien tiene acceso real.
-      const isPremium = !!(user.app_metadata && user.app_metadata.premium);
+      const am = user.app_metadata || {};
+      const isPremium = !!(am.premium && (!am.premium_until || new Date(am.premium_until).getTime() > Date.now()));
       if (!isPremium) return { statusCode: 403, body: JSON.stringify({ success: false, error: 'Este módulo pertenece a la ruta institucional Premium.' }) };
       reward = PREMIUM_MODULE_POINTS[slug];
     }

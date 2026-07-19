@@ -41,7 +41,11 @@
     try {
       await user.jwt(true); // fuerza refresco del token para traer el app_metadata más reciente
     } catch (e) { /* si falla el refresco, usamos lo que ya tenemos */ }
-    return !!(user.app_metadata && user.app_metadata.premium);
+    const meta = user.app_metadata || {};
+    if (!meta.premium) return false;
+    // Suscripción cancelada: el acceso dura hasta el fin del periodo ya pagado.
+    if (meta.premium_until && new Date(meta.premium_until).getTime() < Date.now()) return false;
+    return true;
   }
 
   window.AR4_checkPremium = async function () {
@@ -116,6 +120,11 @@
         box.innerHTML = '<span class="sub-line">Suscripción gestionada por el administrador del sitio.</span>';
         return;
       }
+      if (d.status === 'cancelled') {
+        const until = d.accessUntil ? new Date(d.accessUntil).toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' }) : null;
+        box.innerHTML = `<span class="sub-line">Renovación cancelada — no habrá más cobros.${until ? ` Tu acceso Premium continúa hasta el <strong>${until}</strong>.` : ''}</span>`;
+        return;
+      }
       const next = d.nextPaymentDate ? new Date(d.nextPaymentDate).toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' }) : null;
       box.innerHTML = `
         <span class="sub-line">${next ? `Próxima renovación: <strong>${next}</strong>` : 'Suscripción activa'}${d.amount ? ` · ${d.amount} ${d.currency || ''}/mes` : ''}</span>
@@ -137,7 +146,7 @@
           <li>Risk Lab avanzado con simulador de Montecarlo</li>
           <li>Ideas con análisis institucional y publicaciones sin espera</li>
         </ul>
-        <p style="color:var(--text-mid);font-size:0.84rem;">Si confirmas: no se te vuelve a cobrar nunca y <strong>el acceso Premium se retira de inmediato</strong>. Puedes volver a suscribirte cuando quieras.</p>
+        <p style="color:var(--text-mid);font-size:0.84rem;">Si confirmas: <strong>no se te vuelve a cobrar</strong> y mantienes tu acceso Premium hasta el final del periodo que ya pagaste${nextDate ? ` (${nextDate})` : ''}. Puedes volver a suscribirte cuando quieras.</p>
         <div class="diploma-modal-actions">
           <button class="btn btn-gold" id="subKeepBtn">Seguir con Premium</button>
           <button class="btn btn-outline" id="subConfirmCancelBtn">Cancelar definitivamente</button>

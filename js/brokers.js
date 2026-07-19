@@ -85,7 +85,7 @@ function partnerCardHTML(b) {
     <article class="broker-card broker-partner-card" style="border-color:${b.brandColor}88;">
       <div class="broker-card-top">
         <div class="broker-rank broker-partner-badge">★ ${b.partnerLabel || 'Aliado destacado'}</div>
-        <span class="badge-premium" style="background:linear-gradient(135deg,var(--crimson-bright),var(--crimson));">Patrocinado</span>
+        <span class="tag-sponsored">Patrocinado</span>
       </div>
       ${brokerLogoHTML(b, 'sm')}
       <div class="stars" style="margin:8px 0;">${reputationLine(b)}</div>
@@ -290,12 +290,12 @@ function brokerDeepDiveHTML(b) {
 
 function brokerRankCardHTML(b) {
   const ctaLabel = b.affiliateUrl ? 'Abrir cuenta' : 'Ver review completa';
-  const sponsoredTag = b.affiliateUrl ? '<span class="badge-premium" style="background:linear-gradient(135deg,var(--crimson-bright),var(--crimson));">Patrocinado</span>' : '';
+  const sponsoredTag = b.affiliateUrl ? '<span class="tag-sponsored">Patrocinado</span>' : '';
   const trustScore = computeTrustScore(b);
   return `
-    <article class="broker-card broker-rank-card">
+    <article class="broker-card broker-rank-card${b.rank === 1 ? ' broker-top-pick' : ''}">
       <div class="broker-card-top">
-        <div class="broker-rank">#${b.rank}</div>
+        <div class="broker-rank">#${b.rank}${b.rank === 1 ? ' · RECOMENDADO' : ''}</div>
         <div class="trust-score-badge" title="AR4 Trust Score: puntuación transparente calculada a partir de regulación, reputación, antigüedad, calidad operativa y políticas al cliente">
           <strong>${trustScore.total}</strong><span>Trust Score</span>
         </div>
@@ -355,7 +355,7 @@ async function initBrokerDetail() {
 
   const ctaUrl = brokerCtaUrl(b);
   const ctaLabel = b.affiliateUrl ? 'Abrir cuenta en ' + b.name + ' →' : 'Ir al sitio oficial de ' + b.name + ' →';
-  const sponsoredBadge = b.affiliateUrl ? '<span class="badge-premium" style="background:linear-gradient(135deg,var(--crimson-bright),var(--crimson));">Enlace de afiliado</span>' : '';
+  const sponsoredBadge = b.affiliateUrl ? '<span class="tag-sponsored">Enlace de afiliado</span>' : '';
 
   const heroEl = document.getElementById('brokerHero');
   if (heroEl) {

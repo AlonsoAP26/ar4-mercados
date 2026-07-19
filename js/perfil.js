@@ -306,7 +306,23 @@
           fetch('/.netlify/functions/community-public-diplomas?username=' + encodeURIComponent(targetProfile.username)).then((r) => r.json()).catch(() => ({}))
         ]);
         const slugs = (dipRes && dipRes.slugs) || [];
-        if (!slugs.length) return;
+        if (!slugs.length) {
+          // En el perfil propio la vitrina siempre es visible, con invitación clara
+          // para quien recién empieza y no sabe que existen los diplomas.
+          if (isSelf) {
+            el.innerHTML = `
+              <div class="section-head" style="margin-top:24px;"><h2 style="font-size:1rem;">Vitrina de diplomas</h2></div>
+              <div class="diploma-empty">
+                <span class="diploma-mini-seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 6.5l1 1.9 2.1.3-1.5 1.5.3 2.1-1.9-1-1.9 1 .3-2.1L8.9 8.7l2.1-.3z"/><path d="M8.5 14.5 7 21l5-2.5L17 21l-1.5-6.5"/></svg></span>
+                <div>
+                  <strong>Tu vitrina está esperando su primer diploma</strong>
+                  <p>Completa cualquier módulo de Educación (los 30 básicos son gratis), presiona "Marcar como completado" al final y tu diploma con tu nombre aparecerá aquí para que todos lo vean.</p>
+                  <a href="educacion.html" class="btn btn-gold" style="margin-top:8px;">Empezar mi primer módulo</a>
+                </div>
+              </div>`;
+          }
+          return;
+        }
         const catalog = {};
         [...(freeMods || []), ...(premMods || [])].forEach((mod) => { catalog[mod.slug] = mod; });
         const earned = slugs.filter((s) => catalog[s]);

@@ -62,7 +62,8 @@ exports.handler = async (event, context) => {
   }
 
   const user = context && context.clientContext && context.clientContext.user;
-  const isPremium = !!(user && user.app_metadata && user.app_metadata.premium);
+  const meta = user && user.app_metadata;
+  const isPremium = !!(meta && meta.premium && (!meta.premium_until || new Date(meta.premium_until).getTime() > Date.now()));
 
   // El Premium no es solo un prompt más largo: usa un modelo más capaz, respuestas
   // más extensas y recuerda el doble de conversación. Así el usuario nota la diferencia.

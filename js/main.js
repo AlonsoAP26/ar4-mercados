@@ -47,3 +47,15 @@ if (filterBar && newsList) {
     });
   });
 }
+
+// Feedback visual global: los radios dentro de .quiz-option son invisibles por CSS,
+// así que sin esto el clic "no hace nada" a la vista. Marca la tarjeta elegida
+// en cualquier cuestionario del sitio (brokers, educación, futuros formularios).
+document.addEventListener('change', (e) => {
+  const input = e.target;
+  if (!input || !input.matches || !input.matches('.quiz-option input[type="radio"]')) return;
+  document.querySelectorAll('input[name="' + (window.CSS && CSS.escape ? CSS.escape(input.name) : input.name) + '"]').forEach((r) => {
+    const opt = r.closest('.quiz-option');
+    if (opt) opt.classList.toggle('selected', r.checked);
+  });
+});

@@ -15,7 +15,7 @@ function fondeoPartnerCardHTML(f) {
     <article class="broker-card broker-partner-card" style="border-color:${f.brandColor}88;">
       <div class="broker-card-top">
         <div class="broker-rank broker-partner-badge">★ ${f.partnerLabel || 'Aliado destacado'}</div>
-        <span class="badge-premium" style="background:linear-gradient(135deg,var(--crimson-bright),var(--crimson));">Patrocinado</span>
+        <span class="tag-sponsored">Patrocinado</span>
       </div>
       <h3>${f.name}</h3>
       <div class="stars">${fondeoReputation(f)}</div>
@@ -32,7 +32,7 @@ function fondeoPartnerCardHTML(f) {
 function fondeoRankCardHTML(f) {
   return `
     <article class="broker-card">
-      <div class="broker-rank">#${f.rank}</div>
+      <div class="broker-rank">#${f.rank}${f.rank === 1 ? ' · RECOMENDADA' : ''}</div>
       <h3>${f.name}</h3>
       <div class="stars">${fondeoReputation(f)}</div>
       <p style="color:var(--text-mid); font-size:0.85rem; margin-bottom:14px;">${f.resumen}</p>
