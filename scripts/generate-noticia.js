@@ -4,6 +4,15 @@ const { buildDossier, dossierToPrompt, TV_NAMES } = require('./_market-data');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'noticias.json');
 
+// El paso corre con continue-on-error, asi que el log del fallo queda oculto
+// tras un check verde. Una anotacion ::error:: si es visible (incluso sin
+// iniciar sesion en GitHub), y es la unica forma de diagnosticar en remoto.
+function fail(msg) {
+  console.error(msg);
+  console.log('::error title=Generador de noticias::' + String(msg).replace(/\r?\n/g, ' | ').slice(0, 600));
+  process.exit(1);
+}
+
 const ALLOWED_SYMBOLS = [
   'FX:EURUSD', 'FX:GBPUSD', 'FX:USDJPY',
   'FX_IDC:USDMXN', 'FX_IDC:USDCOP', 'FX_IDC:USDCLP', 'FX_IDC:USDARS', 'FX_IDC:USDBRL', 'FX_IDC:USDPEN',
@@ -66,12 +75,22 @@ function normUrl(u) {
 // que el modelo no se invente una fuente.
 function collectSearchUrls(allContent) {
   const urls = new Set();
+  const searchErrors = [];
+  let searchBlocks = 0;
   for (const b of allContent) {
-    if (b && b.type === 'web_search_tool_result' && Array.isArray(b.content)) {
-      for (const r of b.content) if (r && r.url) urls.add(normUrl(r.url));
+    if (b && b.type === 'web_search_tool_result') {
+      searchBlocks++;
+      if (Array.isArray(b.content)) {
+        for (const r of b.content) if (r && r.url) urls.add(normUrl(r.url));
+      } else if (b.content && b.content.error_code) {
+        // OJO: un error de busqueda web NO lanza excepcion — llega como HTTP 200
+        // con content = objeto {error_code} en vez de lista. Sin esto, el fallo
+        // se disfraza de "ninguna fuente verificable" sin explicar la causa.
+        searchErrors.push(b.content.error_code);
+      }
     }
   }
-  return urls;
+  return { urls, searchErrors, searchBlocks };
 }
 
 function hostOf(u) {
@@ -116,8 +135,7 @@ async function callApi(apiKey, messages) {
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
-    console.error('Falta la variable de entorno ANTHROPIC_API_KEY');
-    process.exit(1);
+    fail('Falta la variable de entorno ANTHROPIC_API_KEY');
   }
 
   const noticias = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
@@ -135,8 +153,7 @@ async function main() {
     }
   }
   if (!dossiers.length) {
-    console.error('No se pudo obtener ningún dato real de mercado. No se publica nada.');
-    process.exit(1);
+    fail('No se pudo obtener ningún dato real de mercado. No se publica nada.');
   }
   const panel = dossiers.map((d) =>
     '- ' + d.nombre + ' (' + d.symbol + '): precio ' + d.precio +
@@ -233,28 +250,30 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   }
 
   if (data.stop_reason === 'pause_turn') {
-    console.error('La búsqueda web no terminó tras 8 rondas de reanudación. Uso:', JSON.stringify(data.usage));
-    process.exit(1);
+    fail('La búsqueda web no terminó tras 8 rondas de reanudación. Uso: ' + JSON.stringify(data.usage));
   }
   if (data.stop_reason === 'max_tokens') {
-    console.error('Respuesta cortada por max_tokens. Uso:', JSON.stringify(data.usage));
-    process.exit(1);
+    fail('Respuesta cortada por max_tokens. Uso: ' + JSON.stringify(data.usage));
   }
   if (data.stop_reason === 'refusal') {
-    console.error('El modelo rechazó la petición.', JSON.stringify(data.stop_details || {}));
-    process.exit(1);
+    fail('El modelo rechazó la petición. ' + JSON.stringify(data.stop_details || {}));
   }
 
-  const searchUrls = collectSearchUrls(allContent);
-  console.log('Resultados de búsqueda web reales recibidos: ' + searchUrls.size);
+  const { urls: searchUrls, searchErrors, searchBlocks } = collectSearchUrls(allContent);
+  console.log('Bloques de búsqueda web: ' + searchBlocks + ', URLs reales recibidas: ' + searchUrls.size);
+  if (searchErrors.length) {
+    console.warn('Errores de búsqueda web: ' + searchErrors.join(', '));
+  }
+  if (!searchBlocks) {
+    console.warn('El modelo no ejecutó ninguna búsqueda web (stop_reason=' + data.stop_reason + ').');
+  }
 
   // OJO: con busqueda web el modelo suele escribir texto ANTES de buscar
   // ("voy a consultar..."), asi que la respuesta trae varios bloques de texto.
   // El JSON es siempre el ULTIMO; coger el primero rompia el JSON.parse.
   const textBlocks = (data.content || []).filter((b) => b.type === 'text' && b.text);
   if (!textBlocks.length) {
-    console.error('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason, JSON.stringify(data.usage));
-    process.exit(1);
+    fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
   }
   let rawText = textBlocks[textBlocks.length - 1].text.trim();
   const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
@@ -283,16 +302,14 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
       try { nueva = JSON.parse(t.slice(a, b2 + 1)); } catch (e2) { /* siguiente bloque */ }
     }
     if (!nueva) {
-      console.error('La IA no devolvió un JSON válido en ningún bloque. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
       console.error(rawText.slice(0, 1500));
-      process.exit(1);
+      fail('La IA no devolvió un JSON válido en ningún bloque. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
     }
     console.warn('JSON rescatado de un bloque anterior de la respuesta.');
   }
 
   if (!nueva.title || !nueva.body) {
-    console.error('Faltan campos obligatorios (title/body).');
-    process.exit(1);
+    fail('Faltan campos obligatorios (title/body).');
   }
 
   // VERIFICACION DE FUENTES: solo sobreviven las URLs que la busqueda devolvio
@@ -305,9 +322,11 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     inventadas.forEach((s) => console.warn('  - ' + s.url));
   }
   if (!verificadas.length) {
-    console.error('Ninguna fuente citada pudo verificarse contra los resultados de búsqueda.');
     console.error('No se publica: una noticia sin fuente verificable no debe salir firmada como research.');
-    process.exit(1);
+    fail('Ninguna fuente citada pudo verificarse. Citadas: ' + citadas.length +
+      ', URLs de búsqueda: ' + searchUrls.size +
+      ', bloques de búsqueda: ' + searchBlocks +
+      (searchErrors.length ? ', errores de búsqueda: ' + searchErrors.join(',') : ''));
   }
 
   if (!ALLOWED_SYMBOLS.includes(nueva.symbol)) {
@@ -412,5 +431,5 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
 
 main().catch((err) => {
   console.error(err);
-  process.exit(1);
+  fail(err && err.message ? err.message : String(err));
 });

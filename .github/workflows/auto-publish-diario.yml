@@ -90,9 +90,20 @@ jobs:
           echo "Idea:         ${{ steps.idea.outcome }}"
           echo "Psicotrading: ${{ steps.articulo.outcome }}"
           echo "Publicado:    ${{ steps.publicar.outputs.publicado }}"
-          if [ "${{ steps.noticia.outcome }}" != "success" ] \
-          && [ "${{ steps.idea.outcome }}" != "success" ] \
-          && [ "${{ steps.articulo.outcome }}" != "success" ]; then
-            echo "::error::Los tres generadores fallaron."
-            exit 1
+          # Un fallo parcial debe verse en rojo: un check verde con la noticia
+          # sin publicar es exactamente lo que oculto el fallo del 17-19/jul.
+          # Lo ya generado se publica igual (el commit corre antes de este paso).
+          fallo=0
+          if [ "${{ steps.noticia.outcome }}" != "success" ]; then
+            echo "::error::El generador de NOTICIAS falló (ver anotación del paso para el motivo)."
+            fallo=1
           fi
+          if [ "${{ steps.idea.outcome }}" != "success" ]; then
+            echo "::error::El generador de IDEAS falló."
+            fallo=1
+          fi
+          if [ "${{ steps.articulo.outcome }}" != "success" ]; then
+            echo "::error::El generador de PSICOTRADING falló."
+            fallo=1
+          fi
+          exit $fallo
