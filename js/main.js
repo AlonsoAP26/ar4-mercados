@@ -121,3 +121,31 @@ document.addEventListener('change', (e) => {
     }).observe(document.body, { childList: true, subtree: true });
   }
 })();
+
+
+// ============================================================
+// Modo aplicativo (móvil): barra de navegación inferior fija.
+// Mismo diseño de la marca; solo aparece en pantallas pequeñas (CSS).
+// ============================================================
+(function () {
+  if (document.querySelector('.app-bar')) return;
+  var path = (location.pathname.split('/').pop() || 'index.html');
+  var items = [
+    { href: 'index.html', label: 'Inicio', match: ['index.html', ''], ic: '<path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/>' },
+    { href: 'comunidad.html', label: 'Comunidad', match: ['comunidad.html', 'perfil.html'], ic: '<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.5a3 3 0 0 1 0 5.6M21 20c0-2.5-1.3-4.6-3.3-5.6"/>' },
+    { href: 'educacion.html', label: 'Educación', match: ['educacion.html', 'modulo.html', 'diploma.html'], ic: '<path d="M2 9l10-4 10 4-10 4z"/><path d="M6 11v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/>' },
+    { href: 'herramientas.html', label: 'Herramientas', match: ['herramientas.html'], ic: '<path d="M14.7 6.3a4.5 4.5 0 0 0-6.4 6.4L3 18v3h3l5.3-5.3a4.5 4.5 0 0 0 6.4-6.4L14 13l-3-3z"/>' },
+    { href: 'membresia.html', label: 'Premium', match: ['membresia.html'], ic: '<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/>' }
+  ];
+  var bar = document.createElement('nav');
+  bar.className = 'app-bar';
+  bar.setAttribute('aria-label', 'Navegación principal');
+  bar.innerHTML = items.map(function (it) {
+    var active = it.match.indexOf(path) !== -1;
+    return '<a href="' + it.href + '" class="app-bar-item' + (active ? ' active' : '') + '">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + it.ic + '</svg>' +
+      '<span>' + it.label + '</span></a>';
+  }).join('');
+  document.body.appendChild(bar);
+  document.body.classList.add('has-app-bar');
+})();

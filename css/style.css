@@ -4664,3 +4664,40 @@ body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; 
 .guide-step p { margin:0; color:var(--text-mid); font-size:0.86rem; line-height:1.6; }
 .guide-step a { color:var(--gold-bright); }
 @media (max-width:760px){ .guide-grid { grid-template-columns:1fr; } }
+
+/* ===== FIX: el candado Premium se ancla a su herramienta (no flota) ===== */
+.rl-lock-wrap { position: relative; display: block; }
+
+/* ===== Botón XL y pulso de compra ===== */
+.btn-xl { padding: 15px 30px; font-size: 1.02rem; font-weight: 700; }
+.pulse-gold { animation: pulseGold 0.8s ease 3; }
+@keyframes pulseGold { 0%,100% { box-shadow: 0 0 0 0 rgba(212,175,55,0.7); } 50% { box-shadow: 0 0 0 14px rgba(212,175,55,0); } }
+
+/* ===== Barra fija de compra (membresía, no-Premium) ===== */
+.buy-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 950; background: rgba(8,12,22,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-top: 1px solid rgba(212,175,55,0.4); }
+.buy-bar-inner { max-width: 1140px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.buy-bar-text strong { display: block; color: var(--gold-bright); font-size: 0.95rem; }
+.buy-bar-text span { color: var(--text-mid); font-size: 0.78rem; }
+body.has-buy-bar { padding-bottom: 74px; }
+
+/* ===== Modo aplicativo móvil: barra inferior de navegación ===== */
+.app-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 940; display: none; background: rgba(8,12,22,0.96); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-top: 1px solid rgba(212,175,55,0.25); padding-bottom: env(safe-area-inset-bottom, 0); }
+.app-bar-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 9px 4px 8px; color: var(--text-low); font-size: 0.62rem; letter-spacing: 0.02em; }
+.app-bar-item svg { width: 21px; height: 21px; }
+.app-bar-item.active { color: var(--gold-bright); }
+.app-bar-item.active svg { filter: drop-shadow(0 0 6px rgba(212,175,55,0.5)); }
+
+@media (max-width: 768px) {
+  .app-bar { display: flex; }
+  body.has-app-bar { padding-bottom: calc(62px + env(safe-area-inset-bottom, 0)); }
+  /* El chat y "subir" se elevan sobre la barra de app */
+  .chat-launcher { bottom: calc(74px + env(safe-area-inset-bottom, 0)) !important; }
+  .chat-greeting { bottom: calc(136px + env(safe-area-inset-bottom, 0)) !important; }
+  .to-top { bottom: calc(138px + env(safe-area-inset-bottom, 0)); }
+  /* La barra de compra en membresía se apila sobre la app-bar */
+  .buy-bar { bottom: calc(62px + env(safe-area-inset-bottom, 0)); }
+  body.has-buy-bar.has-app-bar { padding-bottom: calc(134px + env(safe-area-inset-bottom, 0)); }
+  /* Toques de app: tarjetas y botones más cómodos al dedo */
+  .btn { min-height: 44px; }
+  .hero-actions .btn { width: 100%; text-align: center; }
+}
