@@ -1,874 +1,874 @@
 [
-  {
-    "slug": "que-es-el-trading",
-    "order": 1,
-    "level": "basico",
-    "title": "¿Qué es el trading? Conceptos fundamentales",
-    "excerpt": "Antes de abrir una sola operación, entiende qué estás haciendo realmente cuando compras o vendes un activo financiero.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "¿Cuáles son los tres pilares de cualquier operación según este módulo?",
-        "options": [
-          "Dirección, tamaño y gestión",
-          "Indicadores, velas y volumen",
-          "Noticias, sentimiento y liquidez"
-        ],
-        "correct": 0
-      },
-      {
-        "q": "Según el módulo, ¿qué determina más la supervivencia a largo plazo de un trader?",
-        "options": [
-          "Acertar la dirección del precio",
-          "La gestión del riesgo",
-          "Usar muchos indicadores"
-        ],
-        "correct": 1
-      }
+ {
+  "slug": "que-es-el-trading",
+  "order": 1,
+  "level": "basico",
+  "title": "¿Qué es el trading? Conceptos fundamentales",
+  "excerpt": "Antes de abrir una sola operación, entiende qué estás haciendo realmente cuando compras o vendes un activo financiero.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "¿Cuáles son los tres pilares de cualquier operación según este módulo?",
+    "options": [
+     "Dirección, tamaño y gestión",
+     "Indicadores, velas y volumen",
+     "Noticias, sentimiento y liquidez"
     ],
-    "bodySimple": "<p>Imagina que un amigo te dice: \"compra dólares hoy que están baratos, y véndelos la próxima semana cuando probablemente suban un poco\". Eso, en esencia, es trading: comprar algo (una moneda, una acción, un poco de Bitcoin) esperando que su precio cambie a tu favor, y vender en el momento correcto.</p><p>No es magia ni un secreto — es simplemente: 1) elegir qué vas a comprar o vender, 2) decidir cuánto dinero vas a arriesgar (nunca todo lo que tienes), y 3) tener claro antes de entrar en qué momento vas a salir, tanto si te va bien como si te va mal.</p><p>La parte que casi nadie te cuenta al principio: vas a perder dinero en algunas de tus operaciones, y eso es normal — como cuando un vendedor de un mercado a veces compra mercadería que no se vende tan rápido como esperaba. Lo importante no es acertar siempre, sino no arriesgar más de lo que puedes permitirte perder en cada intento.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
-    "body": "<p>Trading es el acto de comprar y vender activos financieros —divisas, acciones, criptomonedas, materias primas, índices— con el objetivo de obtener una ganancia a partir del cambio de precio entre el momento en que compras y el momento en que vendes (o viceversa, si vendes primero y compras después, lo que se llama \"ir corto\").</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La diferencia entre invertir y operar (trading)</h3><p>Invertir generalmente implica plazos largos (meses o años) y una tesis basada en fundamentos: por qué una empresa, país o activo debería valer más con el tiempo. El trading, en cambio, se enfoca en plazos más cortos (de minutos a semanas) y se apoya mucho más en el análisis del precio y el contexto de mercado en el momento presente. Ninguno es \"superior\" al otro — son herramientas distintas para objetivos distintos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Los tres pilares de cualquier operación</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Dirección:</strong> ¿crees que el precio va a subir (largo/compra) o bajar (corto/venta)?</li><li><strong>Tamaño:</strong> ¿cuánto capital vas a arriesgar en esta idea específica?</li><li><strong>Gestión:</strong> ¿dónde sales si te equivocas (stop loss) y dónde sales si aciertas (take profit)?</li></ul><p>La mayoría de los traders principiantes se obsesionan con el primer punto (acertar la dirección) e ignoran casi por completo el segundo y el tercero. Con el tiempo, la mayoría de los traders que sobreviven a largo plazo dirán lo contrario: la gestión del riesgo pesa más que la precisión al predecir la dirección.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué necesitas para empezar (de verdad)</h3><ol style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Una cuenta demo o de práctica antes de arriesgar dinero real.</li><li>Entender al menos un mercado a fondo antes de saltar a otro.</li><li>Un plan escrito, aunque sea simple, de cuándo entras y cuándo sales.</li><li>Aceptar que vas a perder dinero en algunas operaciones — es parte normal del proceso, no una señal de que \"algo está mal\".</li></ol><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "tipos-de-mercados-y-activos",
-    "order": 2,
-    "level": "basico",
-    "title": "Tipos de mercados y activos: forex, acciones, cripto, materias primas e índices",
-    "excerpt": "Cada mercado tiene su propia personalidad: horarios, volatilidad y factores que lo mueven. Conocerlos te ayuda a elegir dónde operar.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "¿Qué mercado opera las 24 horas, los 7 días de la semana?",
-        "options": [
-          "Acciones",
-          "Criptomonedas",
-          "Índices bursátiles"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "¿Qué suele mover fuerte el precio del petróleo, según el módulo?",
-        "options": [
-          "Resultados trimestrales de empresas",
-          "Decisiones de la OPEP+ y tensiones geopolíticas",
-          "Cruces de medias móviles"
-        ],
-        "correct": 1
-      }
+    "correct": 0
+   },
+   {
+    "q": "Según el módulo, ¿qué determina más la supervivencia a largo plazo de un trader?",
+    "options": [
+     "Acertar la dirección del precio",
+     "La gestión del riesgo",
+     "Usar muchos indicadores"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Forex (divisas)</h3><p>El mercado de divisas mueve pares como EUR/USD o USD/MXN — siempre comparas una moneda contra otra. Es el mercado más grande del mundo por volumen, opera casi 24 horas de lunes a viernes, y se mueve por diferenciales de tasas de interés, datos macroeconómicos y política monetaria de los bancos centrales.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Acciones</h3><p>Comprar una acción es comprar una porción pequeña de una empresa. Se mueven por resultados trimestrales, expectativas de crecimiento, tasas de interés (que afectan cuánto vale el dinero futuro hoy) y el sentimiento general del mercado. Operan solo en el horario de la bolsa correspondiente (ej. NYSE, Nasdaq).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Criptomonedas</h3><p>Bitcoin, Ethereum y el resto del mercado cripto operan las 24 horas, los 7 días de la semana, sin descanso. Suelen tener mayor volatilidad que forex o acciones, y se mueven tanto por narrativas propias del sector (adopción, regulación, flujos de ETFs) como por el apetito de riesgo general del mercado financiero.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Materias primas (commodities)</h3><p>Oro, petróleo, plata, gas natural. El oro suele comportarse como refugio de valor en momentos de incertidumbre; el petróleo reacciona fuerte a decisiones de la OPEP+ y tensiones geopolíticas en zonas productoras.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Índices bursátiles</h3><p>El S&P 500, el Nasdaq 100 o el IPSA no son un solo activo, sino una canasta de muchas empresas. Operarlos es apostar por el desempeño general de una economía o sector, en vez de una empresa individual.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">¿Cuál elegir para empezar?</h3><p>No hay una respuesta universal, pero una guía práctica: si prefieres horarios flexibles y estás en Latinoamérica, forex suele ser el punto de entrada más común por su liquidez y disponibilidad de brokers regulados. Sea cual sea tu elección, es mejor conocer un mercado a fondo que conocer cinco de forma superficial.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "como-funciona-un-broker",
-    "order": 3,
-    "level": "basico",
-    "title": "Cómo funciona un broker y cómo elegir uno",
-    "excerpt": "El broker es tu puerta al mercado. Entender cómo gana dinero te ayuda a elegir bien y a evitar sorpresas.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "¿Cuál es el papel principal de un broker?",
-        "options": [
-          "Predecir el precio por ti",
-          "Conectarte con el mercado y ejecutar tus órdenes",
-          "Garantizar que ganes"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Un broker que cobra \"por spread\"...",
-        "options": [
-          "Te cobra la diferencia entre precio de compra y venta",
-          "Nunca cobra nada",
-          "Solo cobra si pierdes"
-        ],
-        "correct": 0
-      }
+    "correct": 1
+   }
+  ],
+  "bodySimple": "<p>Imagina que un amigo te dice: \"compra dólares hoy que están baratos, y véndelos la próxima semana cuando probablemente suban un poco\". Eso, en esencia, es trading: comprar algo (una moneda, una acción, un poco de Bitcoin) esperando que su precio cambie a tu favor, y vender en el momento correcto.</p><p>No es magia ni un secreto — es simplemente: 1) elegir qué vas a comprar o vender, 2) decidir cuánto dinero vas a arriesgar (nunca todo lo que tienes), y 3) tener claro antes de entrar en qué momento vas a salir, tanto si te va bien como si te va mal.</p><p>La parte que casi nadie te cuenta al principio: vas a perder dinero en algunas de tus operaciones, y eso es normal — como cuando un vendedor de un mercado a veces compra mercadería que no se vende tan rápido como esperaba. Lo importante no es acertar siempre, sino no arriesgar más de lo que puedes permitirte perder en cada intento.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>Cada día, billones de dólares cambian de manos en los mercados: el café que tomaste, la gasolina de tu auto y hasta tu teléfono tienen un precio que alguien negoció. El trading es participar en ese juego global con las mismas pantallas que un profesional en Londres o Nueva York — desde tu casa. Este módulo te enseña las reglas básicas de ese juego, sin humo y sin promesas.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><path d='M40 190 L140 150 L220 170 L320 90 L420 120 L520 50' fill='none' stroke='#f0c75e' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><circle cx='140' cy='150' r='7' fill='#2ecc71'/><text x='140' y='132' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#2ecc71'>COMPRAS aquí</text><circle cx='320' cy='90' r='7' fill='#e05252'/><text x='320' y='72' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#e05252'>VENDES aquí</text><path d='M150 205 L310 205' stroke='rgba(212,175,55,0.35)' stroke-width='2' marker-end='none'/><text x='230' y='225' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#f0c75e'>tu ganancia = la diferencia</text><text x='60' y='30' text-anchor='start' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>Precio del activo</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Explicar con tus palabras qué es comprar y vender un activo (y ganar en ambas direcciones)</li><li>Diferenciar trading de inversión de largo plazo y de las apuestas</li><li>Reconocer la única fuente real de ganancia: comprar más barato de lo que vendes</li></ul></div><p>Trading es el acto de comprar y vender activos financieros —divisas, acciones, criptomonedas, materias primas, índices— con el objetivo de obtener una ganancia a partir del cambio de precio entre el momento en que compras y el momento en que vendes (o viceversa, si vendes primero y compras después, lo que se llama \"ir corto\").</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La diferencia entre invertir y operar (trading)</h3><p>Invertir generalmente implica plazos largos (meses o años) y una tesis basada en fundamentos: por qué una empresa, país o activo debería valer más con el tiempo. El trading, en cambio, se enfoca en plazos más cortos (de minutos a semanas) y se apoya mucho más en el análisis del precio y el contexto de mercado en el momento presente. Ninguno es \"superior\" al otro — son herramientas distintas para objetivos distintos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Los tres pilares de cualquier operación</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Dirección:</strong> ¿crees que el precio va a subir (largo/compra) o bajar (corto/venta)?</li><li><strong>Tamaño:</strong> ¿cuánto capital vas a arriesgar en esta idea específica?</li><li><strong>Gestión:</strong> ¿dónde sales si te equivocas (stop loss) y dónde sales si aciertas (take profit)?</li></ul><p>La mayoría de los traders principiantes se obsesionan con el primer punto (acertar la dirección) e ignoran casi por completo el segundo y el tercero. Con el tiempo, la mayoría de los traders que sobreviven a largo plazo dirán lo contrario: la gestión del riesgo pesa más que la precisión al predecir la dirección.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué necesitas para empezar (de verdad)</h3><ol style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Una cuenta demo o de práctica antes de arriesgar dinero real.</li><li>Entender al menos un mercado a fondo antes de saltar a otro.</li><li>Un plan escrito, aunque sea simple, de cuándo entras y cuándo sales.</li><li>Aceptar que vas a perder dinero en algunas operaciones — es parte normal del proceso, no una señal de que \"algo está mal\".</li></ol><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Abre la sección <a href='noticias.html'>Noticias</a> y lee un análisis de hoy. No intentes entenderlo todo: solo identifica QUÉ activo se menciona y si el contexto es de subida o de bajada. Ese pequeño hábito diario es como se empieza.</p></div>"
+ },
+ {
+  "slug": "tipos-de-mercados-y-activos",
+  "order": 2,
+  "level": "basico",
+  "title": "Tipos de mercados y activos: forex, acciones, cripto, materias primas e índices",
+  "excerpt": "Cada mercado tiene su propia personalidad: horarios, volatilidad y factores que lo mueven. Conocerlos te ayuda a elegir dónde operar.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "¿Qué mercado opera las 24 horas, los 7 días de la semana?",
+    "options": [
+     "Acciones",
+     "Criptomonedas",
+     "Índices bursátiles"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué hace un broker</h3><p>Un <strong>broker</strong> es el intermediario que te conecta con el mercado: tú das la orden de comprar o vender y él la ejecuta. Sin broker, un particular no puede operar en forex, acciones o cripto.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo gana dinero (y por qué te importa)</h3><p>Hay dos modelos principales, y saber cuál usas evita malentendidos:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Por spread:</strong> te cobra la diferencia entre el precio de compra y de venta. Cuanto más ajustado el spread, más barato operar.</li><li><strong>Por comisión:</strong> spread casi nulo pero cobra una comisión fija por operación. Suele convenir a quien opera mucho volumen.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">En qué fijarte al elegir</h3><p>Prioriza la <strong>regulación</strong> (que una autoridad seria lo supervise), la <strong>rapidez de ejecución</strong>, y que los <strong>costos totales</strong> (spread + comisión + swap) sean transparentes. Un bono llamativo no compensa un broker no regulado.</p><p>En AR4 comparamos brokers con su regulación verificable y un Trust Score con el cálculo a la vista — justamente para no depender de la publicidad de cada uno.</p>"
-  },
-  {
-    "slug": "el-spread-y-los-costos",
-    "order": 4,
-    "level": "basico",
-    "title": "El spread, el swap y los costos que comen tus ganancias",
-    "excerpt": "Operar nunca es gratis. Conocer cada costo te dice cuánto tiene que moverse el precio solo para empatar.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "¿Qué es el spread?",
-        "options": [
-          "El interés por dejar una posición abierta de noche",
-          "La diferencia entre el precio de compra y el de venta",
-          "La comisión del banco"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "El swap se aplica cuando...",
-        "options": [
-          "Abres y cierras en el mismo minuto",
-          "Mantienes la posición abierta de un día para otro",
-          "Nunca"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   },
+   {
+    "q": "¿Qué suele mover fuerte el precio del petróleo, según el módulo?",
+    "options": [
+     "Resultados trimestrales de empresas",
+     "Decisiones de la OPEP+ y tensiones geopolíticas",
+     "Cruces de medias móviles"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El spread: tu primer costo</h3><p>El <strong>spread</strong> es la diferencia entre el precio al que puedes comprar (ask) y al que puedes vender (bid). Apenas abres una operación ya estás ligeramente en negativo por esa diferencia: el precio tiene que moverse a tu favor al menos el spread para empezar a ganar.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El swap: el costo de dejar la posición abierta</h3><p>Si mantienes una operación de un día para otro, el broker aplica un <strong>swap</strong> (interés overnight) que puede ser positivo o negativo según el par y la dirección. En operaciones de varios días, el swap suma o resta de verdad.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Comisiones y deslizamiento</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Comisión:</strong> algunos brokers cobran una tarifa fija por operación además (o en vez) del spread.</li><li><strong>Deslizamiento (slippage):</strong> en momentos de alta volatilidad tu orden puede ejecutarse a un precio algo distinto al que viste.</li></ul><p>La regla práctica: suma todos los costos y pregúntate cuánto tiene que moverse el precio solo para cubrirlos. En estrategias de muchas operaciones pequeñas, los costos deciden si el sistema es rentable o no.</p>"
-  },
-  {
-    "slug": "apalancamiento-y-margen",
-    "order": 5,
-    "level": "basico",
-    "title": "Apalancamiento y margen: el arma de doble filo",
-    "excerpt": "El apalancamiento multiplica tus ganancias… y tus pérdidas. Entenderlo es lo que separa durar de reventar la cuenta.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "Con apalancamiento 1:100 y $100 de margen, controlas...",
-        "options": [
-          "$100",
-          "$1.000",
-          "$10.000"
-        ],
-        "correct": 2
-      },
-      {
-        "q": "Un margin call ocurre cuando...",
-        "options": [
-          "Ganas mucho",
-          "Tu margen disponible cae demasiado y el broker cierra posiciones",
-          "Cierras en ganancias"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>¿Dólar, Bitcoin, acciones de Apple o el oro? Todos suben y bajan cada día, pero cada mercado tiene su propia personalidad: horarios, velocidad y riesgo distintos. Elegir tu mercado es como elegir el deporte que vas a entrenar — y hacerlo bien desde el inicio te ahorra meses de confusión.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='60' width='96' height='120' rx='12' fill='rgba(212,175,55,0.06)' stroke='rgba(212,175,55,0.35)'/><rect x='128' y='60' width='96' height='120' rx='12' fill='rgba(212,175,55,0.06)' stroke='rgba(212,175,55,0.35)'/><rect x='236' y='60' width='96' height='120' rx='12' fill='rgba(212,175,55,0.06)' stroke='rgba(212,175,55,0.35)'/><rect x='344' y='60' width='96' height='120' rx='12' fill='rgba(212,175,55,0.06)' stroke='rgba(212,175,55,0.35)'/><rect x='452' y='60' width='96' height='120' rx='12' fill='rgba(212,175,55,0.06)' stroke='rgba(212,175,55,0.35)'/><text x='68' y='105' text-anchor='middle' font-size='13' font-family='JetBrains Mono, monospace' fill='#f0c75e'>FOREX</text><text x='68' y='130' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>divisas</text><text x='68' y='150' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>EUR/USD</text><text x='176' y='105' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#f0c75e'>ACCIONES</text><text x='176' y='130' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>empresas</text><text x='176' y='150' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Apple</text><text x='284' y='105' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#f0c75e'>ÍNDICES</text><text x='284' y='130' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>canastas</text><text x='284' y='150' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>S&amp;P 500</text><text x='392' y='105' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#f0c75e'>MATERIAS</text><text x='392' y='130' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>físicos</text><text x='392' y='150' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Oro</text><text x='500' y='105' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#f0c75e'>CRIPTO</text><text x='500' y='130' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>24/7</text><text x='500' y='150' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Bitcoin</text><text x='280' y='35' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Los 5 grandes mercados — todos se operan igual: comprar y vender</text><text x='280' y='215' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>Elige UNO para aprender; los demás te esperan</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Distinguir los 5 grandes mercados y qué se negocia en cada uno</li><li>Saber cuál abre 24 horas, cuál es más tranquilo y cuál más salvaje</li><li>Elegir con criterio el mercado con el que empezarás a practicar</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Forex (divisas)</h3><p>El mercado de divisas mueve pares como EUR/USD o USD/MXN — siempre comparas una moneda contra otra. Es el mercado más grande del mundo por volumen, opera casi 24 horas de lunes a viernes, y se mueve por diferenciales de tasas de interés, datos macroeconómicos y política monetaria de los bancos centrales.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Acciones</h3><p>Comprar una acción es comprar una porción pequeña de una empresa. Se mueven por resultados trimestrales, expectativas de crecimiento, tasas de interés (que afectan cuánto vale el dinero futuro hoy) y el sentimiento general del mercado. Operan solo en el horario de la bolsa correspondiente (ej. NYSE, Nasdaq).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Criptomonedas</h3><p>Bitcoin, Ethereum y el resto del mercado cripto operan las 24 horas, los 7 días de la semana, sin descanso. Suelen tener mayor volatilidad que forex o acciones, y se mueven tanto por narrativas propias del sector (adopción, regulación, flujos de ETFs) como por el apetito de riesgo general del mercado financiero.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Materias primas (commodities)</h3><p>Oro, petróleo, plata, gas natural. El oro suele comportarse como refugio de valor en momentos de incertidumbre; el petróleo reacciona fuerte a decisiones de la OPEP+ y tensiones geopolíticas en zonas productoras.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Índices bursátiles</h3><p>El S&P 500, el Nasdaq 100 o el IPSA no son un solo activo, sino una canasta de muchas empresas. Operarlos es apostar por el desempeño general de una economía o sector, en vez de una empresa individual.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">¿Cuál elegir para empezar?</h3><p>No hay una respuesta universal, pero una guía práctica: si prefieres horarios flexibles y estás en Latinoamérica, forex suele ser el punto de entrada más común por su liquidez y disponibilidad de brokers regulados. Sea cual sea tu elección, es mejor conocer un mercado a fondo que conocer cinco de forma superficial.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Entra a <a href='herramientas.html'>Herramientas</a>, abre la Suite de riesgo y busca 3 activos distintos (una divisa, una acción, una cripto). Mira cómo cambian el precio y el rango diario típico de cada uno: acabas de comparar sus personalidades.</p></div>"
+ },
+ {
+  "slug": "como-funciona-un-broker",
+  "order": 3,
+  "level": "basico",
+  "title": "Cómo funciona un broker y cómo elegir uno",
+  "excerpt": "El broker es tu puerta al mercado. Entender cómo gana dinero te ayuda a elegir bien y a evitar sorpresas.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "¿Cuál es el papel principal de un broker?",
+    "options": [
+     "Predecir el precio por ti",
+     "Conectarte con el mercado y ejecutar tus órdenes",
+     "Garantizar que ganes"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es el apalancamiento</h3><p>El <strong>apalancamiento</strong> te permite controlar una posición grande con poco dinero propio. Con apalancamiento 1:100, con $100 controlas $10.000 en mercado. Suena genial — y ahí está la trampa.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El margen</h3><p>El <strong>margen</strong> es la parte de tu dinero que el broker retiene como garantía mientras la posición está abierta. Si el mercado se mueve en tu contra y tu margen disponible cae demasiado, llega el temido <strong>margin call</strong>: el broker cierra tus posiciones para no quedar en descubierto.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué es un arma de doble filo</h3><p>El apalancamiento multiplica el resultado sobre tu capital real. Una subida del 1% en el activo, con 1:100, es un 100% sobre tu margen… pero una caída del 1% también. Por eso los principiantes que usan mucho apalancamiento suelen durar poco.</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>No confundas \"puedo usar 1:500\" con \"debo usar 1:500\".</li><li>El apalancamiento no cambia cuánto arriesgas: eso lo decides tú con el tamaño de posición y el stop.</li><li>Menos apalancamiento efectivo = más margen para aguantar el ruido normal del mercado.</li></ul>"
-  },
-  {
-    "slug": "pips-lotes-y-valor",
-    "order": 6,
-    "level": "basico",
-    "title": "Pips, lotes y el valor real de cada movimiento",
-    "excerpt": "Antes de operar necesitas saber cuánto vale cada movimiento. Aquí se aclara pip, lote y valor por pip sin fórmulas raras.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "Si EUR/USD pasa de 1,2000 a 1,2025, ¿cuántos pips se movió?",
-        "options": [
-          "2,5 pips",
-          "25 pips",
-          "250 pips"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "El valor por pip depende sobre todo de...",
-        "options": [
-          "El color de la vela",
-          "El tamaño del lote",
-          "La hora del día"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   },
+   {
+    "q": "Un broker que cobra \"por spread\"...",
+    "options": [
+     "Te cobra la diferencia entre precio de compra y venta",
+     "Nunca cobra nada",
+     "Solo cobra si pierdes"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es un pip</h3><p>Un <strong>pip</strong> es la unidad mínima de movimiento habitual de un par de divisas: normalmente el cuarto decimal (0,0001). Si EUR/USD pasa de 1,1000 a 1,1010, se movió 10 pips. En pares con yen (como USD/JPY) el pip es el segundo decimal.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es un lote</h3><p>El <strong>lote</strong> mide el tamaño de tu operación:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Lote estándar:</strong> 100.000 unidades de la divisa base.</li><li><strong>Mini lote:</strong> 10.000 unidades (0,1 lotes).</li><li><strong>Micro lote:</strong> 1.000 unidades (0,01 lotes) — el más usado para empezar.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El valor por pip: lo que de verdad importa</h3><p>El <strong>valor por pip</strong> te dice cuánto dinero ganas o pierdes por cada pip que se mueve el precio, y depende del tamaño del lote. Como referencia, en la mayoría de pares con el dólar como cotizada, 1 pip vale aprox. $10 en un lote estándar, $1 en mini y $0,10 en micro.</p><p>Con esto puedes hacer el cálculo clave: si tu stop está a 20 pips y quieres arriesgar $20, necesitas un valor de $1 por pip → un mini lote. El tamaño sale del riesgo, nunca al revés.</p>"
-  },
-  {
-    "slug": "plataformas-y-tipos-de-orden",
-    "order": 7,
-    "level": "basico",
-    "title": "Tipos de orden: market, limit y stop",
-    "excerpt": "No todas las órdenes entran igual. Elegir bien entre market, limit y stop cambia el precio al que operas.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "Una orden \"market\" se caracteriza por...",
-        "options": [
-          "Ejecutarse de inmediato al mejor precio disponible",
-          "Esperar a un precio mejor",
-          "No ejecutarse nunca"
-        ],
-        "correct": 0
-      },
-      {
-        "q": "El stop loss sirve para...",
-        "options": [
-          "Aumentar el apalancamiento",
-          "Limitar la pérdida si el precio va en tu contra",
-          "Garantizar ganancias"
-        ],
-        "correct": 1
-      }
+    "correct": 0
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>Entre tú y el mercado siempre hay un intermediario: el broker. Es tu puerta de entrada, tu custodio y — si eliges mal — tu peor pesadilla. Entender qué hace exactamente con tu dinero y tus órdenes es la diferencia entre operar tranquilo y aprender la lección más cara con tus ahorros.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='80' width='130' height='80' rx='12' fill='rgba(212,175,55,0.08)' stroke='rgba(212,175,55,0.35)'/><text x='95' y='112' text-anchor='middle' font-size='16' font-family='JetBrains Mono, monospace' fill='#f0c75e'>TÚ</text><text x='95' y='138' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>tu orden</text><rect x='215' y='80' width='130' height='80' rx='12' fill='rgba(212,175,55,0.08)' stroke='rgba(212,175,55,0.35)'/><text x='280' y='112' text-anchor='middle' font-size='14' font-family='JetBrains Mono, monospace' fill='#f0c75e'>BROKER</text><text x='280' y='138' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>intermediario</text><rect x='400' y='80' width='130' height='80' rx='12' fill='rgba(212,175,55,0.08)' stroke='rgba(212,175,55,0.35)'/><text x='465' y='112' text-anchor='middle' font-size='13' font-family='JetBrains Mono, monospace' fill='#f0c75e'>MERCADO</text><text x='465' y='138' text-anchor='middle' font-size='9' font-family='JetBrains Mono, monospace' fill='#8b93a7'>compradores y</text><text x='465' y='150' text-anchor='middle' font-size='9' font-family='JetBrains Mono, monospace' fill='#8b93a7'>vendedores del mundo</text><path d='M160 105 L215 105' stroke='#f0c75e' stroke-width='2.5'/><path d='M207 100 L215 105 L207 110' fill='none' stroke='#f0c75e' stroke-width='2.5'/><path d='M345 105 L400 105' stroke='#f0c75e' stroke-width='2.5'/><path d='M392 100 L400 105 L392 110' fill='none' stroke='#f0c75e' stroke-width='2.5'/><path d='M400 135 L345 135' stroke='#c9d2e8' stroke-width='2'/><path d='M353 130 L345 135 L353 140' fill='none' stroke='#c9d2e8' stroke-width='2'/><path d='M215 135 L160 135' stroke='#c9d2e8' stroke-width='2'/><path d='M168 130 L160 135 L168 140' fill='none' stroke='#c9d2e8' stroke-width='2'/><text x='280' y='40' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>El broker es tu puerta de entrada: envía tus órdenes y te devuelve precios</text><text x='280' y='205' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>Cobra por el servicio vía spread y/o comisión — por eso importa elegir bien</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Explicar el viaje de tu orden desde el clic hasta el mercado</li><li>Saber de qué vive un broker (spread y comisiones) y por qué eso te importa</li><li>Reconocer qué protege a tu dinero: regulación y fondos segregados</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué hace un broker</h3><p>Un <strong>broker</strong> es el intermediario que te conecta con el mercado: tú das la orden de comprar o vender y él la ejecuta. Sin broker, un particular no puede operar en forex, acciones o cripto.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo gana dinero (y por qué te importa)</h3><p>Hay dos modelos principales, y saber cuál usas evita malentendidos:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Por spread:</strong> te cobra la diferencia entre el precio de compra y de venta. Cuanto más ajustado el spread, más barato operar.</li><li><strong>Por comisión:</strong> spread casi nulo pero cobra una comisión fija por operación. Suele convenir a quien opera mucho volumen.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">En qué fijarte al elegir</h3><p>Prioriza la <strong>regulación</strong> (que una autoridad seria lo supervise), la <strong>rapidez de ejecución</strong>, y que los <strong>costos totales</strong> (spread + comisión + swap) sean transparentes. Un bono llamativo no compensa un broker no regulado.</p><p>En AR4 comparamos brokers con su regulación verificable y un Trust Score con el cálculo a la vista — justamente para no depender de la publicidad de cada uno.</p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Ve a nuestra sección de <a href='brokers.html'>Brokers</a>, elige uno del ranking y busca su regulación en la reseña. Luego entra a la web oficial del regulador y comprueba el registro tú mismo: acabas de hacer tu primera auditoría.</p></div>"
+ },
+ {
+  "slug": "el-spread-y-los-costos",
+  "order": 4,
+  "level": "basico",
+  "title": "El spread, el swap y los costos que comen tus ganancias",
+  "excerpt": "Operar nunca es gratis. Conocer cada costo te dice cuánto tiene que moverse el precio solo para empatar.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "¿Qué es el spread?",
+    "options": [
+     "El interés por dejar una posición abierta de noche",
+     "La diferencia entre el precio de compra y el de venta",
+     "La comisión del banco"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Orden a mercado (market)</h3><p>Una <strong>orden market</strong> se ejecuta de inmediato al mejor precio disponible. Es rápida, pero en mercados volátiles puedes sufrir algo de deslizamiento (entrar un poco peor de lo que viste).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Orden límite (limit)</h3><p>Una <strong>orden limit</strong> le dice al broker: \"ejecuta solo si el precio llega a este nivel o mejor\". Sirve para comprar más barato o vender más caro que el precio actual, esperando con paciencia. Riesgo: si el precio no llega, no entras.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Orden stop</h3><p>Una <strong>orden stop</strong> se activa cuando el precio cruza un nivel. Sus dos usos clave:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Stop loss:</strong> cierra tu posición si el precio va en tu contra, limitando la pérdida. Innegociable en trading serio.</li><li><strong>Take profit:</strong> cierra tu posición cuando alcanza tu objetivo de ganancia, sin que la codicia te haga esperar de más.</li></ul><p>Definir stop loss y take profit ANTES de entrar es lo que convierte una corazonada en un plan con riesgo controlado.</p>"
-  },
-  {
-    "slug": "velas-japonesas",
-    "order": 8,
-    "level": "basico",
-    "title": "Cómo leer un gráfico de velas japonesas",
-    "excerpt": "Cada vela cuenta una historia de cuatro precios. Aprende a leerla antes de intentar reconocer patrones.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "¿Qué cuatro precios resume una vela japonesa?",
-        "options": [
-          "Apertura, cierre, máximo y mínimo",
-          "Volumen, RSI, MACD y precio",
-          "Soporte, resistencia, tendencia y rango"
-        ],
-        "correct": 0
-      },
-      {
-        "q": "Un cuerpo pequeño con mechas largas generalmente indica...",
-        "options": [
-          "Dominio claro de los compradores",
-          "Indecisión en el mercado",
-          "Una ruptura confirmada"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   },
+   {
+    "q": "El swap se aplica cuando...",
+    "options": [
+     "Abres y cierras en el mismo minuto",
+     "Mantienes la posición abierta de un día para otro",
+     "Nunca"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Los cuatro precios de una vela</h3><p>Cada vela japonesa representa un período de tiempo fijo (1 minuto, 1 hora, 1 día, etc.) y resume cuatro datos: precio de <strong>apertura</strong>, precio de <strong>cierre</strong>, precio <strong>máximo</strong> y precio <strong>mínimo</strong> alcanzados en ese período.</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Cuerpo:</strong> el rectángulo entre el precio de apertura y el de cierre. Si el cierre quedó por encima de la apertura, la vela suele pintarse verde (alcista). Si quedó por debajo, roja (bajista).</li><li><strong>Mechas (o sombras):</strong> las líneas finas arriba y abajo del cuerpo, que muestran hasta dónde llegó el precio máximo y mínimo antes de \"retroceder\" hacia el cierre.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué te dice el tamaño de la vela</h3><p>Un cuerpo grande indica que compradores o vendedores dominaron con claridad ese período. Un cuerpo pequeño con mechas largas indica indecisión: el precio se movió mucho, pero terminó cerca de donde abrió — un posible signo de agotamiento de la tendencia previa.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Marcos temporales (timeframes)</h3><p>La misma acción de precio se ve distinta según el marco temporal que elijas. Una vela diaria resume 24 horas de actividad; una vela de 5 minutos resume apenas ese lapso. Los traders de plazos más largos (swing, posición) suelen mirar velas de 4 horas, diarias o semanales. Los traders de plazos cortos (day trading, scalping) suelen operar en velas de 1 a 15 minutos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué esto importa antes de ver patrones</h3><p>Reconocer patrones de velas (que verás en el siguiente módulo) sin entender qué representa cada componente es memorizar formas sin entender el mensaje detrás. Antes de buscar un \"martillo\" o una \"envolvente\", practica simplemente describiendo en voz alta qué pasó en una vela: quién dominó, con qué fuerza, y si hubo indecisión.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "patrones-de-velas-basicos",
-    "order": 9,
-    "level": "basico",
-    "title": "Patrones de velas básicos: doji, martillo, envolvente y estrella fugaz",
-    "excerpt": "Cuatro patrones que aparecen constantemente en cualquier gráfico y qué es razonable (y no razonable) esperar de ellos.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "¿Qué diferencia a un martillo de un hombre colgado?",
-        "options": [
-          "El tamaño de la mecha superior",
-          "El contexto: si aparece tras una caída o tras una subida",
-          "El color de la vela"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Según el módulo, ¿cuándo tiene más peso un patrón de velas?",
-        "options": [
-          "Cuando aparece solo, sin ningún otro contexto",
-          "Cuando coincide con un nivel relevante como soporte o resistencia",
-          "Cuando aparece en un marco temporal de 1 minuto"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>¿Sabías que pierdes dinero en el mismo segundo en que abres cualquier operación? No es una estafa: es el spread, el costo silencioso del trading. Los principiantes lo ignoran; los profesionales construyen toda su operativa a su alrededor. Después de este módulo, tú también lo verás en todas partes.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><rect x='80' y='60' width='180' height='60' rx='10' fill='rgba(224,82,82,0.12)' stroke='#e05252'/><text x='170' y='85' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#e05252'>VENDER (bid)</text><text x='170' y='108' text-anchor='middle' font-size='15' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>1.08500</text><rect x='300' y='60' width='180' height='60' rx='10' fill='rgba(46,204,113,0.12)' stroke='#2ecc71'/><text x='390' y='85' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#2ecc71'>COMPRAR (ask)</text><text x='390' y='108' text-anchor='middle' font-size='15' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>1.08512</text><path d='M260 90 L300 90' stroke='#f0c75e' stroke-width='3'/><text x='280' y='145' text-anchor='middle' font-size='13' font-family='JetBrains Mono, monospace' fill='#f0c75e'>SPREAD = 1.2 pips</text><text x='280' y='172' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Al abrir cualquier operación ya \"pagaste\" esa brecha:</text><text x='280' y='192' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>por eso el precio debe moverse a tu favor solo para empatar</text><text x='280' y='220' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>Spread bajo = menos costo por operación. Así se comparan brokers.</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Leer los dos precios (compra/venta) que siempre te muestra el broker</li><li>Calcular cuánto te cuesta realmente cada operación antes de abrirla</li><li>Comparar brokers y cuentas por su costo total, no por el marketing</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El spread: tu primer costo</h3><p>El <strong>spread</strong> es la diferencia entre el precio al que puedes comprar (ask) y al que puedes vender (bid). Apenas abres una operación ya estás ligeramente en negativo por esa diferencia: el precio tiene que moverse a tu favor al menos el spread para empezar a ganar.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El swap: el costo de dejar la posición abierta</h3><p>Si mantienes una operación de un día para otro, el broker aplica un <strong>swap</strong> (interés overnight) que puede ser positivo o negativo según el par y la dirección. En operaciones de varios días, el swap suma o resta de verdad.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Comisiones y deslizamiento</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Comisión:</strong> algunos brokers cobran una tarifa fija por operación además (o en vez) del spread.</li><li><strong>Deslizamiento (slippage):</strong> en momentos de alta volatilidad tu orden puede ejecutarse a un precio algo distinto al que viste.</li></ul><p>La regla práctica: suma todos los costos y pregúntate cuánto tiene que moverse el precio solo para cubrirlos. En estrategias de muchas operaciones pequeñas, los costos deciden si el sistema es rentable o no.</p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Abre la cuenta demo de cualquier broker (o mira el gráfico de nuestra <a href='comunidad.html'>Comunidad</a>) y localiza el precio de compra y el de venta de EUR/USD. Réstalos. Ese numerito es el peaje que pagarás miles de veces en tu carrera: mejor conocerlo hoy.</p></div>"
+ },
+ {
+  "slug": "apalancamiento-y-margen",
+  "order": 5,
+  "level": "basico",
+  "title": "Apalancamiento y margen: el arma de doble filo",
+  "excerpt": "El apalancamiento multiplica tus ganancias… y tus pérdidas. Entenderlo es lo que separa durar de reventar la cuenta.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "Con apalancamiento 1:100 y $100 de margen, controlas...",
+    "options": [
+     "$100",
+     "$1.000",
+     "$10.000"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Doji: la vela de la indecisión</h3><p>Un doji tiene apertura y cierre prácticamente idénticos, con mechas a ambos lados. Representa un empate entre compradores y vendedores. Por sí solo no es una señal de compra o venta — su relevancia depende de dónde aparece (después de una tendencia larga tiene más peso que en medio de un rango sin dirección).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Martillo y hombre colgado</h3><p>Ambos tienen un cuerpo pequeño en la parte superior y una mecha inferior larga (al menos el doble del cuerpo). La diferencia es el contexto: si aparece después de una caída, se llama <strong>martillo</strong> y sugiere que los compradores rechazaron precios más bajos. Si aparece después de una subida, se llama <strong>hombre colgado</strong> y sugiere presión vendedora entrando.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Envolvente alcista y bajista</h3><p>Se forma con dos velas: la segunda \"envuelve\" completamente el cuerpo de la primera, en la dirección opuesta. Una envolvente alcista (vela roja pequeña seguida de una verde grande que la cubre) después de una caída sugiere que los compradores tomaron el control de forma decisiva. Es uno de los patrones de reversión más citados porque muestra un cambio de fuerza claro entre dos períodos consecutivos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Estrella fugaz (shooting star)</h3><p>Lo opuesto al martillo: cuerpo pequeño en la parte inferior, mecha superior larga. Aparece después de una subida y sugiere que el precio intentó subir más, fue rechazado con fuerza, y cerró cerca de su apertura — presión vendedora apareciendo cerca de máximos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La regla más importante de todas</h3><p>Ningún patrón de una o dos velas funciona de forma aislada con una tasa de acierto garantizada. Su valor aumenta cuando coincide con un nivel relevante (soporte, resistencia, media móvil clave) y con el contexto general de la tendencia. Un martillo en medio de la nada tiene mucho menos peso que un martillo justo en un soporte que el precio ya respetó antes.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "demo-antes-que-real",
-    "order": 10,
-    "level": "basico",
-    "title": "Cuenta demo: practica antes de arriesgar dinero real",
-    "excerpt": "La demo es tu simulador de vuelo. Bien usada acelera tu aprendizaje; mal usada te da falsa confianza.",
-    "points": 10,
-    "quiz": [
-      {
-        "q": "La principal ventaja de una cuenta demo es...",
-        "options": [
-          "Que siempre ganas",
-          "Practicar y validar una estrategia sin arriesgar dinero real",
-          "Que da apalancamiento infinito"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "¿Qué NO reproduce bien una demo?",
-        "options": [
-          "Los precios del mercado",
-          "La emoción de arriesgar dinero real",
-          "Los tipos de orden"
-        ],
-        "correct": 1
-      }
+    "correct": 2
+   },
+   {
+    "q": "Un margin call ocurre cuando...",
+    "options": [
+     "Ganas mucho",
+     "Tu margen disponible cae demasiado y el broker cierra posiciones",
+     "Cierras en ganancias"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es una cuenta demo</h3><p>Una <strong>cuenta demo</strong> replica el mercado real con dinero ficticio. Te permite probar la plataforma, practicar a poner órdenes y validar una estrategia sin arriesgar un centavo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo sacarle provecho</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Trátala en serio: opera con el mismo tamaño relativo y las mismas reglas que usarías con dinero real.</li><li>Lleva bitácora desde el primer día — anota por qué entras y sales.</li><li>Busca consistencia, no un golpe de suerte: un mes rentable siguiendo tu plan vale más que doblar la cuenta por azar.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El límite de la demo</h3><p>La demo no reproduce lo más difícil del trading: la <strong>emoción</strong>. En demo cierras una pérdida sin que te tiemble el pulso; con dinero real, el miedo y la codicia aparecen. Por eso el salto a real conviene hacerlo con montos pequeños, para aprender a gestionar esas emociones sin arriesgar demasiado.</p>"
-  },
-  {
-    "slug": "soporte-y-resistencia",
-    "order": 11,
-    "level": "intermedio",
-    "title": "Soporte y resistencia: los niveles que todo el mercado vigila",
-    "excerpt": "Son el concepto técnico más usado en trading y, a la vez, el más malentendido. Aprende a trazarlos con criterio.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "¿Qué es el 'cambio de polaridad' mencionado en el módulo?",
-        "options": [
-          "Cuando una resistencia rota se convierte en soporte (o viceversa)",
-          "Cuando el RSI cruza el nivel 50",
-          "Cuando cambia el color de las velas"
-        ],
-        "correct": 0
-      },
-      {
-        "q": "¿Cuál es el error más común de los principiantes con soporte/resistencia, según el módulo?",
-        "options": [
-          "Trazar muy pocos niveles",
-          "Asumir que un nivel va a aguantar para siempre",
-          "Usar marcos temporales muy altos"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>Es la herramienta más famosa y más peligrosa del trading: con $100 puedes mover $3.000. Los anuncios te muestran el lado bonito; las estadísticas de cuentas quebradas muestran el otro. Aquí aprendes a usar la palanca como un profesional: sabiendo exactamente cuánto amplifica cada movimiento — en ambas direcciones.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='90' width='110' height='70' rx='10' fill='rgba(212,175,55,0.10)' stroke='#f0c75e'/><text x='115' y='118' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#f0c75e'>TU DINERO</text><text x='115' y='142' text-anchor='middle' font-size='16' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>$100</text><text x='215' y='130' text-anchor='middle' font-size='26' font-family='JetBrains Mono, monospace' fill='#f0c75e'>×30</text><rect x='280' y='60' width='220' height='130' rx='12' fill='rgba(212,175,55,0.05)' stroke='rgba(212,175,55,0.35)'/><text x='390' y='95' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#f0c75e'>POSICIÓN QUE MUEVES</text><text x='390' y='125' text-anchor='middle' font-size='22' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>$3.000</text><text x='390' y='158' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>apalancamiento 1:30</text><text x='280' y='30' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>La palanca multiplica lo bueno Y lo malo por igual</text><path d='M90 215 L270 215' stroke='#2ecc71' stroke-width='3'/><text x='180' y='233' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#2ecc71'>+1% del mercado = +$30 (30% tuyo)</text><path d='M300 215 L480 215' stroke='#e05252' stroke-width='3'/><text x='390' y='233' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#e05252'>−1% del mercado = −$30 (−30% tuyo)</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Calcular cuánto dinero mueves realmente con tu apalancamiento</li><li>Entender el margen: cuánto te 'congela' el broker por cada posición</li><li>Saber por qué el apalancamiento no cambia el mercado, solo TU exposición</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es el apalancamiento</h3><p>El <strong>apalancamiento</strong> te permite controlar una posición grande con poco dinero propio. Con apalancamiento 1:100, con $100 controlas $10.000 en mercado. Suena genial — y ahí está la trampa.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El margen</h3><p>El <strong>margen</strong> es la parte de tu dinero que el broker retiene como garantía mientras la posición está abierta. Si el mercado se mueve en tu contra y tu margen disponible cae demasiado, llega el temido <strong>margin call</strong>: el broker cierra tus posiciones para no quedar en descubierto.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué es un arma de doble filo</h3><p>El apalancamiento multiplica el resultado sobre tu capital real. Una subida del 1% en el activo, con 1:100, es un 100% sobre tu margen… pero una caída del 1% también. Por eso los principiantes que usan mucho apalancamiento suelen durar poco.</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>No confundas \"puedo usar 1:500\" con \"debo usar 1:500\".</li><li>El apalancamiento no cambia cuánto arriesgas: eso lo decides tú con el tamaño de posición y el stop.</li><li>Menos apalancamiento efectivo = más margen para aguantar el ruido normal del mercado.</li></ul><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Usa la Suite de riesgo en <a href='herramientas.html'>Herramientas</a> con el modo profesional activado: pon $100 de capital y mira el campo 'margen requerido' al cambiar el apalancamiento. Verás la palanca funcionando con números reales, sin arriesgar nada.</p></div>"
+ },
+ {
+  "slug": "pips-lotes-y-valor",
+  "order": 6,
+  "level": "basico",
+  "title": "Pips, lotes y el valor real de cada movimiento",
+  "excerpt": "Antes de operar necesitas saber cuánto vale cada movimiento. Aquí se aclara pip, lote y valor por pip sin fórmulas raras.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "Si EUR/USD pasa de 1,2000 a 1,2025, ¿cuántos pips se movió?",
+    "options": [
+     "2,5 pips",
+     "25 pips",
+     "250 pips"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué son, en términos simples</h3><p>Un <strong>soporte</strong> es una zona de precio donde, históricamente, la presión compradora ha sido suficiente para detener o revertir una caída. Una <strong>resistencia</strong> es una zona donde la presión vendedora ha detenido o revertido una subida. No son líneas mágicas ni exactas al pip — son zonas de interés donde el mercado ha reaccionado antes.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué funcionan (la psicología detrás)</h3><p>Los niveles de soporte/resistencia funcionan porque son visibles para miles de participantes al mismo tiempo, generando órdenes de compra/venta concentradas en zonas similares. Además, un nivel que rompió una resistencia y luego el precio vuelve a probarlo desde arriba, suele convertirse en soporte (y viceversa) — esto se llama <strong>cambio de polaridad</strong>.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo trazarlos sin exagerar</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Busca zonas donde el precio reaccionó <strong>más de una vez</strong>, no solo una.</li><li>Prioriza los marcos temporales más altos (diario, 4H) sobre los muy cortos — un nivel diario suele ser más relevante que uno de 5 minutos.</li><li>Piensa en zonas, no en líneas de un solo precio exacto — deja margen de un pequeño rango.</li><li>Menos es más: un gráfico con 15 líneas dibujadas no es más útil, es ruido.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El error más común de los principiantes</h3><p>Asumir que un soporte o resistencia va a \"aguantar\" para siempre. Ningún nivel es infalible: cuando el precio rompe una zona con fuerza y volumen (no solo la toca de pasada), el nivel puede dejar de ser relevante. Operar \"porque está en soporte\" sin considerar el contexto más amplio (tendencia, catalizador de fondo, volumen) es una de las causas más comunes de pérdidas en traders principiantes.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "tendencias-y-estructura-de-mercado",
-    "order": 12,
-    "level": "intermedio",
-    "title": "Tendencias y estructura de mercado",
-    "excerpt": "Máximos y mínimos crecientes o decrecientes: la forma más objetiva de saber si estás a favor o en contra de la corriente.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "¿Cómo se define objetivamente una tendencia alcista según el módulo?",
-        "options": [
-          "Por la pendiente de una sola línea",
-          "Por máximos y mínimos cada vez más altos",
-          "Por el color predominante de las velas"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "¿Cuándo se considera 'rota' la estructura alcista?",
-        "options": [
-          "Cuando aparece un mínimo más bajo que el anterior",
-          "Cuando el precio toca la media móvil de 200",
-          "Cuando el RSI supera 70"
-        ],
-        "correct": 0
-      }
+    "correct": 1
+   },
+   {
+    "q": "El valor por pip depende sobre todo de...",
+    "options": [
+     "El color de la vela",
+     "El tamaño del lote",
+     "La hora del día"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Las tres fases del mercado</h3><p>Todo mercado se mueve, en cualquier momento, en una de tres fases: <strong>tendencia alcista</strong> (máximos y mínimos cada vez más altos), <strong>tendencia bajista</strong> (máximos y mínimos cada vez más bajos), o <strong>rango</strong> (precio oscilando entre un soporte y una resistencia sin dirección clara). Identificar en cuál de las tres estás situado cambia por completo qué estrategias tienen sentido.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo identificar estructura, no solo \"la línea\"</h3><p>Trazar una línea de tendencia es útil, pero la forma más objetiva de leer estructura es mirando la secuencia de máximos y mínimos. Mientras el precio siga formando mínimos más altos que el anterior, la estructura alcista se mantiene intacta — incluso si hay retrocesos temporales. La estructura se \"rompe\" cuando aparece un mínimo más bajo que el anterior en una tendencia alcista (o un máximo más alto en una bajista).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Canales</h3><p>Un canal es una tendencia \"contenida\" entre dos líneas paralelas: una que conecta los máximos y otra que conecta los mínimos. Operar dentro de un canal (comprar cerca del límite inferior, vender cerca del superior) es una estrategia común, pero requiere vigilar constantemente si el canal sigue vigente o si el precio está a punto de romperlo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué \"operar a favor de la tendencia\" es un cliché útil</h3><p>Es más fácil sostenerse en una operación cuando el contexto general te acompaña que cuando operas contra la corriente esperando una reversión perfecta. Esto no significa que operar en contra de la tendencia sea siempre incorrecto, pero sí exige mayor precisión y una razón de peso — no solo \"parece que ya subió mucho\".</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "lineas-de-tendencia-y-canales",
-    "order": 13,
-    "level": "intermedio",
-    "title": "Líneas de tendencia y canales",
-    "excerpt": "Una línea bien trazada convierte el caos del gráfico en una dirección clara. Aquí aprendes a dibujarlas sin autoengañarte.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "¿Cuántos toques confirman una línea de tendencia?",
-        "options": [
-          "Uno basta",
-          "Dos para trazarla y un tercero para confirmarla",
-          "Diez como mínimo"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Un canal se forma con...",
-        "options": [
-          "Una sola línea",
-          "Una línea de tendencia y una paralela al otro lado",
-          "Tres medias móviles"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>'El EUR/USD subió 30 pips' — y tú sin saber si eso es mucho, poco o cuánto vale en dinero. Pips y lotes son el idioma nativo del trading: hasta que no lo hablas, todo lo demás suena a ruido. La buena noticia: se aprende en 15 minutos y no se olvida nunca.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><text x='180' y='90' text-anchor='middle' font-size='20' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>EUR/USD =</text><text x='300' y='90' text-anchor='middle' font-size='26' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>1.08</text><rect x='325' y='62' width='42' height='38' rx='6' fill='rgba(212,175,55,0.18)' stroke='#f0c75e'/><text x='346' y='90' text-anchor='middle' font-size='26' font-family='JetBrains Mono, monospace' fill='#f0c75e'>5</text><text x='385' y='90' text-anchor='middle' font-size='26' font-family='JetBrains Mono, monospace' fill='#8b93a7'>3</text><path d='M346 105 L346 130' stroke='#f0c75e' stroke-width='2'/><text x='346' y='150' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#f0c75e'>este dígito es EL PIP</text><text x='280' y='180' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Si pasa de 1.0853 a 1.0863, subió 10 pips</text><text x='280' y='212' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#f0c75e'>Lote estándar: 1 pip ≈ $10 · Mini: $1 · Micro: $0.10</text><text x='280' y='233' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>Por eso el tamaño del lote decide cuánto ganas o pierdes por pip</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Identificar el pip en cualquier par de divisas de un vistazo</li><li>Convertir pips a dólares según el tamaño de tu lote</li><li>Dimensionar posiciones sabiendo exactamente cuánto vale cada movimiento</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es un pip</h3><p>Un <strong>pip</strong> es la unidad mínima de movimiento habitual de un par de divisas: normalmente el cuarto decimal (0,0001). Si EUR/USD pasa de 1,1000 a 1,1010, se movió 10 pips. En pares con yen (como USD/JPY) el pip es el segundo decimal.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es un lote</h3><p>El <strong>lote</strong> mide el tamaño de tu operación:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Lote estándar:</strong> 100.000 unidades de la divisa base.</li><li><strong>Mini lote:</strong> 10.000 unidades (0,1 lotes).</li><li><strong>Micro lote:</strong> 1.000 unidades (0,01 lotes) — el más usado para empezar.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El valor por pip: lo que de verdad importa</h3><p>El <strong>valor por pip</strong> te dice cuánto dinero ganas o pierdes por cada pip que se mueve el precio, y depende del tamaño del lote. Como referencia, en la mayoría de pares con el dólar como cotizada, 1 pip vale aprox. $10 en un lote estándar, $1 en mini y $0,10 en micro.</p><p>Con esto puedes hacer el cálculo clave: si tu stop está a 20 pips y quieres arriesgar $20, necesitas un valor de $1 por pip → un mini lote. El tamaño sale del riesgo, nunca al revés.</p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Reto rápido: en la Suite de <a href='herramientas.html'>Herramientas</a>, configura una operación en EUR/USD con lote micro, mini y estándar. Observa cómo el mismo stop de 20 pips pasa de $2 a $20 a $200. Ese es todo el secreto de los lotes.</p></div>"
+ },
+ {
+  "slug": "plataformas-y-tipos-de-orden",
+  "order": 7,
+  "level": "basico",
+  "title": "Tipos de orden: market, limit y stop",
+  "excerpt": "No todas las órdenes entran igual. Elegir bien entre market, limit y stop cambia el precio al que operas.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "Una orden \"market\" se caracteriza por...",
+    "options": [
+     "Ejecutarse de inmediato al mejor precio disponible",
+     "Esperar a un precio mejor",
+     "No ejecutarse nunca"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo se traza una línea de tendencia</h3><p>En una <strong>tendencia alcista</strong>, unes los mínimos crecientes con una línea por debajo del precio: mientras el precio la respete, la tendencia sigue viva. En una <strong>tendencia bajista</strong>, unes los máximos decrecientes por encima del precio.</p><p>Regla honesta: necesitas al menos <strong>dos puntos</strong> para trazarla y un <strong>tercer toque</strong> para confirmarla. Si tienes que forzar la línea o ignorar mechas para que \"encaje\", esa línea no es válida — te la estás inventando.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Canales</h3><p>Un <strong>canal</strong> es una línea de tendencia con una paralela al otro lado del precio. El precio tiende a rebotar entre ambas. Sirve para ubicar zonas donde el movimiento podría frenar, no para adivinar el futuro.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Roturas</h3><p>Cuando el precio rompe una línea de tendencia con decisión (idealmente con volumen), puede avisar de un cambio de dirección. Pero cuidado con las <strong>roturas falsas</strong>: el precio asoma la cabeza y vuelve. Por eso muchos esperan un cierre claro fuera de la línea, no solo un toque.</p>"
-  },
-  {
-    "slug": "medias-moviles-a-fondo",
-    "order": 14,
-    "level": "intermedio",
-    "title": "Medias móviles a fondo: SMA, EMA y cruces",
-    "excerpt": "La media móvil suaviza el ruido y te muestra la dirección de fondo. Aquí, cuándo usar SMA vs EMA y qué dicen los cruces.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "¿Qué media reacciona más rápido a los precios recientes?",
-        "options": [
-          "La SMA",
-          "La EMA",
-          "Ninguna reacciona"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Un \"golden cross\" es cuando...",
-        "options": [
-          "La media rápida cruza por encima de la lenta (sesgo alcista)",
-          "El precio toca cero",
-          "El RSI llega a 100"
-        ],
-        "correct": 0
-      }
+    "correct": 0
+   },
+   {
+    "q": "El stop loss sirve para...",
+    "options": [
+     "Aumentar el apalancamiento",
+     "Limitar la pérdida si el precio va en tu contra",
+     "Garantizar ganancias"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué hace una media móvil</h3><p>Una <strong>media móvil</strong> promedia el precio de las últimas N velas y dibuja una línea suave. Filtra el ruido del día a día y te deja ver la dirección de fondo. Las más usadas: 50 y 200 períodos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">SMA vs EMA</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>SMA (simple):</strong> promedio directo. Más estable, reacciona más lento.</li><li><strong>EMA (exponencial):</strong> da más peso a los precios recientes. Reacciona más rápido, pero da más señales falsas.</li></ul><p>El precio por encima de la media sugiere sesgo alcista; por debajo, bajista. La media también actúa muchas veces como soporte o resistencia dinámica.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cruces de medias</h3><p>Cuando una media rápida (50) cruza por encima de una lenta (200), se llama <strong>golden cross</strong> (sesgo alcista). El cruce inverso es el <strong>death cross</strong> (sesgo bajista). Son señales de tendencia, no de precisión: llegan tarde por definición, así que sirven para confirmar contexto, no para cronometrar la entrada exacta.</p>"
-  },
-  {
-    "slug": "rsi-y-divergencias",
-    "order": 15,
-    "level": "intermedio",
-    "title": "RSI y divergencias: medir la fuerza del movimiento",
-    "excerpt": "El RSI no dice \"compra\" ni \"vende\": mide si un movimiento se está agotando. Y las divergencias son su señal más útil.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "Un RSI de 76 indica...",
-        "options": [
-          "Sobreventa",
-          "Sobrecompra (subió mucho y rápido)",
-          "Que hay que vender obligatoriamente"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Una divergencia bajista es cuando...",
-        "options": [
-          "Precio y RSI suben juntos",
-          "El precio hace máximo más alto pero el RSI hace máximo más bajo",
-          "El RSI llega a 50"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>Tu análisis puede ser perfecto y aun así perder dinero por apretar el botón equivocado. Mercado, límite, stop... no son tecnicismos: son las tres formas de decirle al broker CUÁNDO y A QUÉ PRECIO quieres entrar. Dominarlas es la diferencia entre ejecutar tu plan y ejecutar tu cuenta.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><path d='M120 60 L440 60' stroke='rgba(255,255,255,0.08)'/><path d='M120 90 L440 90' stroke='rgba(255,255,255,0.08)'/><path d='M120 120 L440 120' stroke='rgba(255,255,255,0.08)'/><path d='M120 150 L440 150' stroke='rgba(255,255,255,0.08)'/><path d='M120 180 L440 180' stroke='rgba(255,255,255,0.08)'/><path d='M120 210 L440 210' stroke='rgba(255,255,255,0.08)'/><text x='90' y='65' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>1.0880</text><text x='90' y='95' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>1.0870</text><text x='90' y='125' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>1.0860</text><text x='90' y='155' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>1.0850</text><text x='90' y='185' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>1.0840</text><rect x='120' y='112' width='320' height='26' rx='6' fill='rgba(212,175,55,0.15)' stroke='#f0c75e'/><text x='280' y='129' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#f0c75e'>PRECIO ACTUAL 1.0860 — orden a MERCADO entra AQUÍ ya</text><rect x='120' y='172' width='320' height='24' rx='6' fill='rgba(46,204,113,0.12)' stroke='#2ecc71'/><text x='280' y='188' text-anchor='middle' font-size='10.5' font-family='JetBrains Mono, monospace' fill='#2ecc71'>LÍMITE de compra 1.0840: espera a que BAJE hasta aquí</text><rect x='120' y='52' width='320' height='24' rx='6' fill='rgba(224,82,82,0.12)' stroke='#e05252'/><text x='280' y='68' text-anchor='middle' font-size='10.5' font-family='JetBrains Mono, monospace' fill='#e05252'>STOP de compra 1.0880: entra solo si ROMPE hacia arriba</text><text x='280' y='227' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Tres formas de entrar: ya / más barato / confirmando fuerza</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Usar órdenes a mercado, límite y stop sabiendo cuál conviene en cada caso</li><li>Dejar órdenes programadas que trabajan mientras duermes</li><li>Colocar SIEMPRE tu stop loss y take profit desde el primer día</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Orden a mercado (market)</h3><p>Una <strong>orden market</strong> se ejecuta de inmediato al mejor precio disponible. Es rápida, pero en mercados volátiles puedes sufrir algo de deslizamiento (entrar un poco peor de lo que viste).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Orden límite (limit)</h3><p>Una <strong>orden limit</strong> le dice al broker: \"ejecuta solo si el precio llega a este nivel o mejor\". Sirve para comprar más barato o vender más caro que el precio actual, esperando con paciencia. Riesgo: si el precio no llega, no entras.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Orden stop</h3><p>Una <strong>orden stop</strong> se activa cuando el precio cruza un nivel. Sus dos usos clave:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Stop loss:</strong> cierra tu posición si el precio va en tu contra, limitando la pérdida. Innegociable en trading serio.</li><li><strong>Take profit:</strong> cierra tu posición cuando alcanza tu objetivo de ganancia, sin que la codicia te haga esperar de más.</li></ul><p>Definir stop loss y take profit ANTES de entrar es lo que convierte una corazonada en un plan con riesgo controlado.</p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>En una cuenta demo (o en el gráfico de la Comunidad), practica esto hoy: coloca una orden límite de compra por DEBAJO del precio actual y una orden stop por ENCIMA. Verlas activarse solas te enseña más que diez videos.</p></div>"
+ },
+ {
+  "slug": "velas-japonesas",
+  "order": 8,
+  "level": "basico",
+  "title": "Cómo leer un gráfico de velas japonesas",
+  "excerpt": "Cada vela cuenta una historia de cuatro precios. Aprende a leerla antes de intentar reconocer patrones.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "¿Qué cuatro precios resume una vela japonesa?",
+    "options": [
+     "Apertura, cierre, máximo y mínimo",
+     "Volumen, RSI, MACD y precio",
+     "Soporte, resistencia, tendencia y rango"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué mide el RSI</h3><p>El <strong>RSI</strong> (Índice de Fuerza Relativa) oscila entre 0 y 100 y mide la velocidad y magnitud de los movimientos recientes. Lectura básica: por encima de 70 = <strong>sobrecompra</strong> (subió mucho y rápido); por debajo de 30 = <strong>sobreventa</strong>.</p><p>Error típico del principiante: creer que sobrecompra significa \"vender ya\". En una tendencia fuerte, el RSI puede quedarse sobrecomprado mucho tiempo mientras el precio sigue subiendo. El RSI es contexto, no un gatillo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Divergencias: la señal que sí vale</h3><p>Una <strong>divergencia</strong> ocurre cuando el precio y el RSI van en direcciones opuestas:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Divergencia bajista:</strong> el precio hace un máximo más alto, pero el RSI hace un máximo más bajo. El impulso se está debilitando aunque el precio suba.</li><li><strong>Divergencia alcista:</strong> el precio hace un mínimo más bajo, pero el RSI hace un mínimo más alto. La caída pierde fuerza.</li></ul><p>Las divergencias avisan de posible agotamiento, pero no son infalibles: úsalas junto a soporte/resistencia y estructura, nunca solas.</p>"
-  },
-  {
-    "slug": "macd-y-momentum",
-    "order": 16,
-    "level": "intermedio",
-    "title": "MACD y momentum",
-    "excerpt": "El MACD combina medias para mostrar cuándo el impulso cambia de marcha. Aquí, cómo leerlo sin abrumarte.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "El MACD mide sobre todo...",
-        "options": [
-          "El volumen exacto",
-          "El momentum: la fuerza y dirección del impulso",
-          "El spread"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "El histograma del MACD, cuando se encoge, indica...",
-        "options": [
-          "Que el impulso se está frenando",
-          "Que el precio llegó a cero",
-          "Que subió el apalancamiento"
-        ],
-        "correct": 0
-      }
+    "correct": 0
+   },
+   {
+    "q": "Un cuerpo pequeño con mechas largas generalmente indica...",
+    "options": [
+     "Dominio claro de los compradores",
+     "Indecisión en el mercado",
+     "Una ruptura confirmada"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es el MACD</h3><p>El <strong>MACD</strong> (Convergencia/Divergencia de Medias Móviles) resta dos medias exponenciales (normalmente 12 y 26) para medir el <strong>momentum</strong>: la fuerza y dirección del impulso. Se acompaña de una línea de señal (media de 9) y un histograma.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Las tres piezas</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Línea MACD:</strong> la diferencia entre las dos medias. Por encima de cero = impulso alcista; por debajo = bajista.</li><li><strong>Línea de señal:</strong> suaviza la línea MACD. Los cruces entre ambas son la señal clásica.</li><li><strong>Histograma:</strong> la distancia entre MACD y señal. Cuando crece, el impulso se acelera; cuando se encoge, se frena.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo usarlo sin sobreinterpretar</h3><p>Un cruce del MACD por encima de la señal sugiere impulso alcista; por debajo, bajista. Igual que el RSI, el MACD también forma <strong>divergencias</strong> con el precio que avisan de agotamiento. No es un oráculo: funciona mejor confirmando lo que ya ves en la estructura del precio, no en solitario.</p>"
-  },
-  {
-    "slug": "indicadores-basicos",
-    "order": 17,
-    "level": "intermedio",
-    "title": "Indicadores básicos: medias móviles, RSI y MACD",
-    "excerpt": "Tres de los indicadores más usados en el mundo, qué miden realmente y sus límites.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "Según el módulo, valores de RSI por encima de 70 tradicionalmente se consideran...",
-        "options": [
-          "Sobrecompra",
-          "Sobreventa",
-          "Señal de compra automática"
-        ],
-        "correct": 0
-      },
-      {
-        "q": "¿Cuál es la limitación principal que señala el módulo sobre los indicadores técnicos?",
-        "options": [
-          "Solo funcionan en forex",
-          "Se calculan a partir del precio pasado, no predicen el futuro por sí mismos",
-          "Requieren pago para usarse"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>Cada vela de un gráfico es una batalla de compradores contra vendedores contada en 4 números. Los traders japoneses del siglo XVIII inventaron esta forma de ver el mercado y hoy la usa todo el planeta: cuando aprendas a leerlas, los gráficos dejarán de ser ruido y empezarán a contarte historias.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><path d='M170 40 L170 200' stroke='#2ecc71' stroke-width='3'/><rect x='140' y='80' width='60' height='85' rx='4' fill='rgba(46,204,113,0.85)'/><text x='115' y='50' text-anchor='end' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>máximo</text><path d='M120 46 L166 46' stroke='#8b93a7' stroke-dasharray='3 3'/><text x='115' y='170' text-anchor='end' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>apertura</text><path d='M120 165 L138 165' stroke='#8b93a7' stroke-dasharray='3 3'/><text x='115' y='85' text-anchor='end' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>cierre</text><path d='M120 82 L138 82' stroke='#8b93a7' stroke-dasharray='3 3'/><text x='115' y='200' text-anchor='end' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>mínimo</text><path d='M120 197 L166 197' stroke='#8b93a7' stroke-dasharray='3 3'/><text x='170' y='226' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#2ecc71'>ALCISTA: cerró ARRIBA</text><path d='M390 40 L390 200' stroke='#e05252' stroke-width='3'/><rect x='360' y='80' width='60' height='85' rx='4' fill='rgba(224,82,82,0.85)'/><text x='445' y='85' text-anchor='start' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>apertura</text><text x='445' y='170' text-anchor='start' font-size='10' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>cierre</text><text x='390' y='226' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#e05252'>BAJISTA: cerró ABAJO</text><text x='280' y='25' text-anchor='middle' font-size='11.5' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Una vela = la historia completa de un periodo (1 min, 1 hora, 1 día...)</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Leer apertura, cierre, máximo y mínimo en cualquier vela al instante</li><li>Distinguir presión compradora de vendedora por el cuerpo y las mechas</li><li>Cambiar de temporalidad entendiendo que cada vela resume a las menores</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Los cuatro precios de una vela</h3><p>Cada vela japonesa representa un período de tiempo fijo (1 minuto, 1 hora, 1 día, etc.) y resume cuatro datos: precio de <strong>apertura</strong>, precio de <strong>cierre</strong>, precio <strong>máximo</strong> y precio <strong>mínimo</strong> alcanzados en ese período.</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Cuerpo:</strong> el rectángulo entre el precio de apertura y el de cierre. Si el cierre quedó por encima de la apertura, la vela suele pintarse verde (alcista). Si quedó por debajo, roja (bajista).</li><li><strong>Mechas (o sombras):</strong> las líneas finas arriba y abajo del cuerpo, que muestran hasta dónde llegó el precio máximo y mínimo antes de \"retroceder\" hacia el cierre.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué te dice el tamaño de la vela</h3><p>Un cuerpo grande indica que compradores o vendedores dominaron con claridad ese período. Un cuerpo pequeño con mechas largas indica indecisión: el precio se movió mucho, pero terminó cerca de donde abrió — un posible signo de agotamiento de la tendencia previa.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Marcos temporales (timeframes)</h3><p>La misma acción de precio se ve distinta según el marco temporal que elijas. Una vela diaria resume 24 horas de actividad; una vela de 5 minutos resume apenas ese lapso. Los traders de plazos más largos (swing, posición) suelen mirar velas de 4 horas, diarias o semanales. Los traders de plazos cortos (day trading, scalping) suelen operar en velas de 1 a 15 minutos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué esto importa antes de ver patrones</h3><p>Reconocer patrones de velas (que verás en el siguiente módulo) sin entender qué representa cada componente es memorizar formas sin entender el mensaje detrás. Antes de buscar un \"martillo\" o una \"envolvente\", practica simplemente describiendo en voz alta qué pasó en una vela: quién dominó, con qué fuerza, y si hubo indecisión.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Abre el gráfico de la <a href='comunidad.html'>Comunidad</a>, elige cualquier activo y encuentra: la vela más grande del día (¿quién ganó esa batalla?) y una vela con mecha larga (¿dónde hubo rechazo?). Acabas de hacer tu primera lectura real.</p></div>"
+ },
+ {
+  "slug": "patrones-de-velas-basicos",
+  "order": 9,
+  "level": "basico",
+  "title": "Patrones de velas básicos: doji, martillo, envolvente y estrella fugaz",
+  "excerpt": "Cuatro patrones que aparecen constantemente en cualquier gráfico y qué es razonable (y no razonable) esperar de ellos.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "¿Qué diferencia a un martillo de un hombre colgado?",
+    "options": [
+     "El tamaño de la mecha superior",
+     "El contexto: si aparece tras una caída o tras una subida",
+     "El color de la vela"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Medias móviles (Moving Averages)</h3><p>Una media móvil suaviza el precio promediando los últimos N períodos (por ejemplo, 50 o 200 velas), ayudando a visualizar la tendencia de fondo sin el ruido de cada vela individual. Cuando el precio cotiza por encima de una media de 200 periodos en marcos altos, muchos participantes lo interpretan como contexto alcista de largo plazo (y viceversa). El cruce entre una media rápida (ej. 20) y una lenta (ej. 50 o 200) se usa a veces como señal de cambio de tendencia, aunque suele llegar con retraso respecto al movimiento real.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">RSI (Índice de Fuerza Relativa)</h3><p>El RSI mide la velocidad y magnitud de los movimientos recientes de precio, en una escala de 0 a 100. Tradicionalmente, valores por encima de 70 se consideran \"sobrecompra\" (el activo subió mucho y rápido, posible agotamiento) y por debajo de 30 \"sobreventa\". Es importante entender que en tendencias fuertes el RSI puede mantenerse en zona de sobrecompra o sobreventa durante mucho tiempo sin que el precio revierta — no es una señal automática de \"vender ya\".</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">MACD (Convergencia/Divergencia de Medias Móviles)</h3><p>El MACD combina dos medias móviles exponenciales para mostrar tanto la dirección como el momentum de la tendencia. Se usa comúnmente para detectar cruces (señal de cambio de momentum) y divergencias: cuando el precio hace un nuevo máximo pero el MACD no lo confirma, puede indicar que el impulso alcista se está debilitando por dentro, aunque el precio todavía no lo refleje.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El límite de todos los indicadores</h3><p>Todo indicador técnico se calcula a partir del precio pasado — ninguno predice el futuro por sí mismo, son herramientas de contexto. Usar 5 indicadores a la vez no da más certeza, generalmente da más ruido y señales contradictorias. La mayoría de los traders experimentados terminan usando 1 o 2 indicadores que entienden a fondo, en vez de acumular indicadores sin comprender qué mide cada uno.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "figuras-geometricas-chartismo",
-    "order": 18,
-    "level": "intermedio",
-    "title": "Figuras geométricas: triángulos, banderas, hombro-cabeza-hombro y dobles techos/suelos",
-    "excerpt": "El chartismo clásico: patrones visuales que se repiten en cualquier mercado y marco temporal.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "¿Qué tipo de patrón son las banderas (flags) según el módulo?",
-        "options": [
-          "Patrones de reversión",
-          "Patrones de continuación",
-          "Indicadores de volumen"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "¿Qué aumenta la fiabilidad de una figura chartista según el módulo?",
-        "options": [
-          "Que se confirme con volumen creciente en la ruptura",
-          "Que aparezca en un marco temporal de 1 minuto",
-          "Que tenga muchos colores"
-        ],
-        "correct": 0
-      }
+    "correct": 1
+   },
+   {
+    "q": "Según el módulo, ¿cuándo tiene más peso un patrón de velas?",
+    "options": [
+     "Cuando aparece solo, sin ningún otro contexto",
+     "Cuando coincide con un nivel relevante como soporte o resistencia",
+     "Cuando aparece en un marco temporal de 1 minuto"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Triángulos (simétrico, ascendente, descendente)</h3><p>Se forman cuando el rango de precio se va comprimiendo, dibujando dos líneas que convergen. Un triángulo ascendente (resistencia horizontal, soporte ascendente) suele interpretarse como acumulación con sesgo alcista; uno descendente, lo opuesto. Un triángulo simétrico no tiene sesgo definido por sí solo — señala que la volatilidad se está comprimiendo antes de un movimiento más amplio, en cualquier dirección.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Banderas y banderines (flags/pennants)</h3><p>Aparecen después de un movimiento fuerte y direccional (el \"mástil\"), seguido de una pausa/consolidación breve en forma de canal inclinado en contra de la tendencia previa. Se consideran patrones de continuación: la lectura clásica es que, tras la pausa, el precio retoma la dirección del movimiento inicial.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Hombro-Cabeza-Hombro</h3><p>Uno de los patrones de reversión más conocidos: tres máximos consecutivos donde el del medio (\"cabeza\") es más alto que los dos de los lados (\"hombros\"), con una línea de cuello (neckline) conectando los mínimos entre ellos. Su versión invertida (hombro-cabeza-hombro invertido) es la contraparte alcista, apareciendo después de tendencias bajistas.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Doble techo y doble suelo</h3><p>El precio prueba un mismo nivel de resistencia (o soporte) dos veces sin lograr romperlo con fuerza, formando una \"M\" (doble techo, bajista) o una \"W\" (doble suelo, alcista). Cuanto más tiempo pase entre las dos pruebas del nivel y más claro sea el rechazo cada vez, más participantes suelen darle relevancia al patrón.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo evitar el error más común</h3><p>El chartismo es, en parte, subjetivo: dos traders pueden trazar el mismo gráfico de forma distinta. La figura por sí sola rara vez es suficiente — su fiabilidad aumenta cuando se confirma con volumen creciente en la ruptura y coincide con niveles de soporte/resistencia relevantes de fondo, no cuando se busca la figura \"a la fuerza\" en cualquier gráfico.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "fibonacci-retrocesos",
-    "order": 19,
-    "level": "intermedio",
-    "title": "Retrocesos de Fibonacci",
-    "excerpt": "Tras un movimiento, el precio suele retroceder parte del camino antes de continuar. Fibonacci marca hasta dónde suele hacerlo.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "¿Cuál es el rango de retroceso más vigilado?",
-        "options": [
-          "0% a 10%",
-          "38,2% a 61,8%",
-          "90% a 100%"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Fibonacci gana fuerza cuando...",
-        "options": [
-          "Se usa solo, sin nada más",
-          "Un nivel coincide con un soporte/resistencia real (confluencia)",
-          "El mercado está cerrado"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>Hay formas de velas que se repiten desde hace 300 años porque la psicología humana no cambia: el miedo y la codicia dibujan las mismas huellas una y otra vez. Los patrones no son magia ni garantía — son señales de alerta temprana que te dicen 'aquí puede estar pasando algo'. Aprende las tres más confiables.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><path d='M100 70 L100 190' stroke='#2ecc71' stroke-width='2.5'/><rect x='82' y='70' width='36' height='34' rx='3' fill='rgba(46,204,113,0.85)'/><text x='100' y='215' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#f0c75e'>MARTILLO</text><text x='100' y='232' text-anchor='middle' font-size='9.5' font-family='JetBrains Mono, monospace' fill='#8b93a7'>rechazo abajo</text><path d='M255 90 L255 165' stroke='#e05252' stroke-width='2.5'/><rect x='240' y='95' width='30' height='55' rx='3' fill='rgba(224,82,82,0.85)'/><path d='M305 60 L305 190' stroke='#2ecc71' stroke-width='2.5'/><rect x='285' y='65' width='40' height='110' rx='3' fill='rgba(46,204,113,0.85)'/><text x='283' y='215' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#f0c75e'>ENVOLVENTE</text><text x='283' y='232' text-anchor='middle' font-size='9.5' font-family='JetBrains Mono, monospace' fill='#8b93a7'>la verde \"se traga\" a la roja</text><path d='M460 60 L460 195' stroke='#c9d2e8' stroke-width='2.5'/><rect x='435' y='122' width='50' height='6' rx='2' fill='#c9d2e8'/><text x='460' y='215' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#f0c75e'>DOJI</text><text x='460' y='232' text-anchor='middle' font-size='9.5' font-family='JetBrains Mono, monospace' fill='#8b93a7'>empate: indecisión</text><text x='280' y='30' text-anchor='middle' font-size='11.5' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>Tres huellas que verás cientos de veces — contexto manda, no la vela sola</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Reconocer martillo, envolvente y doji en un gráfico real</li><li>Entender QUÉ cuenta cada patrón sobre compradores y vendedores</li><li>Usarlos como alerta con contexto, nunca como señal automática</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Doji: la vela de la indecisión</h3><p>Un doji tiene apertura y cierre prácticamente idénticos, con mechas a ambos lados. Representa un empate entre compradores y vendedores. Por sí solo no es una señal de compra o venta — su relevancia depende de dónde aparece (después de una tendencia larga tiene más peso que en medio de un rango sin dirección).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Martillo y hombre colgado</h3><p>Ambos tienen un cuerpo pequeño en la parte superior y una mecha inferior larga (al menos el doble del cuerpo). La diferencia es el contexto: si aparece después de una caída, se llama <strong>martillo</strong> y sugiere que los compradores rechazaron precios más bajos. Si aparece después de una subida, se llama <strong>hombre colgado</strong> y sugiere presión vendedora entrando.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Envolvente alcista y bajista</h3><p>Se forma con dos velas: la segunda \"envuelve\" completamente el cuerpo de la primera, en la dirección opuesta. Una envolvente alcista (vela roja pequeña seguida de una verde grande que la cubre) después de una caída sugiere que los compradores tomaron el control de forma decisiva. Es uno de los patrones de reversión más citados porque muestra un cambio de fuerza claro entre dos períodos consecutivos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Estrella fugaz (shooting star)</h3><p>Lo opuesto al martillo: cuerpo pequeño en la parte inferior, mecha superior larga. Aparece después de una subida y sugiere que el precio intentó subir más, fue rechazado con fuerza, y cerró cerca de su apertura — presión vendedora apareciendo cerca de máximos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La regla más importante de todas</h3><p>Ningún patrón de una o dos velas funciona de forma aislada con una tasa de acierto garantizada. Su valor aumenta cuando coincide con un nivel relevante (soporte, resistencia, media móvil clave) y con el contexto general de la tendencia. Un martillo en medio de la nada tiene mucho menos peso que un martillo justo en un soporte que el precio ya respetó antes.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Caza de patrones: abre un gráfico diario de cualquier activo y recorre los últimos 3 meses buscando UN martillo y UNA envolvente. Marca qué pasó después de cada uno — verás por qué el contexto importa más que el patrón.</p></div>"
+ },
+ {
+  "slug": "demo-antes-que-real",
+  "order": 10,
+  "level": "basico",
+  "title": "Cuenta demo: practica antes de arriesgar dinero real",
+  "excerpt": "La demo es tu simulador de vuelo. Bien usada acelera tu aprendizaje; mal usada te da falsa confianza.",
+  "points": 10,
+  "quiz": [
+   {
+    "q": "La principal ventaja de una cuenta demo es...",
+    "options": [
+     "Que siempre ganas",
+     "Practicar y validar una estrategia sin arriesgar dinero real",
+     "Que da apalancamiento infinito"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La idea</h3><p>Después de un impulso, el precio rara vez sigue en línea recta: <strong>retrocede</strong> una parte antes de continuar (o girar). Los <strong>retrocesos de Fibonacci</strong> marcan niveles donde ese retroceso suele frenar: 23,6%, 38,2%, <strong>50%</strong>, 61,8% y 78,6%.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo se usa</h3><p>Trazas la herramienta desde el inicio hasta el final de un movimiento claro, y aparecen líneas horizontales en esos porcentajes. Los niveles del <strong>38,2% al 61,8%</strong> son los más vigilados: si el precio retrocede hasta ahí y reacciona, muchos lo interpretan como zona de posible continuación.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La verdad honesta sobre Fibonacci</h3><p>Fibonacci no es magia ni predice el futuro. Funciona en buena parte porque <strong>mucha gente lo mira</strong>, así que se vuelve una profecía autocumplida en esas zonas. Gana valor cuando un nivel de Fibonacci <strong>coincide</strong> con un soporte/resistencia real o una media móvil — esa confluencia es lo que le da fuerza, no el número por sí solo.</p>"
-  },
-  {
-    "slug": "gestion-de-riesgo-tamano-posicion",
-    "order": 20,
-    "level": "intermedio",
-    "title": "Gestión de riesgo y tamaño de posición",
-    "excerpt": "La habilidad que separa a quienes sobreviven en los mercados de quienes queman su cuenta en meses.",
-    "points": 15,
-    "quiz": [
-      {
-        "q": "¿Qué porcentaje de riesgo por operación se menciona como práctica común en el módulo?",
-        "options": [
-          "Entre 0.5% y 2% del capital",
-          "Entre 10% y 20% del capital",
-          "El 50% del capital"
-        ],
-        "correct": 0
-      },
-      {
-        "q": "Con una relación riesgo/beneficio de 1:2, ¿qué implica el módulo?",
-        "options": [
-          "Necesitas acertar el 90% de tus operaciones",
-          "No necesitas acertar la mayoría de tus operaciones para ser rentable",
-          "El stop loss no es necesario"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   },
+   {
+    "q": "¿Qué NO reproduce bien una demo?",
+    "options": [
+     "Los precios del mercado",
+     "La emoción de arriesgar dinero real",
+     "Los tipos de orden"
     ],
-    "bodySimple": "<p>Imagina que vas a un casino (esto es solo para explicar la idea, no una invitación a apostar). Si llevas $100 y apuestas los $100 en una sola jugada, una mala racha te deja sin nada. Pero si decides apostar solo $2 en cada jugada, puedes perder 20 veces seguidas y todavía te queda dinero para seguir jugando — y para aprender de tus errores.</p><p>Eso es exactamente gestión de riesgo en trading: en vez de arriesgar todo tu capital en una operación, arriesgas solo una porción pequeña y constante (por ejemplo, 1% de tu capital total) en cada operación individual.</p><p>Para saber cuánto comprar o vender (el \"tamaño de tu posición\"), hay una pregunta simple detrás de la fórmula: ¿cuánto dinero estoy dispuesto a perder en esta operación si me equivoco, y qué tan lejos está mi punto de salida (stop loss) de mi punto de entrada? Cuanto más lejos esté tu stop loss, menos unidades del activo deberías comprar, para que la pérdida en dinero siga siendo la misma pequeña porción de siempre.</p><p>El error más común de quien empieza: subir el tamaño de la siguiente operación para \"recuperar\" rápido una pérdida anterior. Es como, después de perder en una apuesta pequeña, doblar la apuesta siguiente con rabia — casi siempre termina peor, no mejor.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La regla del riesgo fijo por operación</h3><p>Una práctica ampliamente usada es arriesgar un porcentaje pequeño y constante del capital total en cada operación individual — comúnmente entre 0.5% y 2%. Esto significa que, incluso ante una racha de operaciones perdedoras seguidas (que ocurrirá, tarde o temprano, a cualquier trader), el capital restante sigue siendo suficiente para seguir operando y recuperarse.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo calcular el tamaño de posición</h3><p>El tamaño de tu posición no debería decidirse por \"cuánto quiero ganar\", sino por la distancia entre tu punto de entrada y tu stop loss, combinada con cuánto capital estás dispuesto a arriesgar. La fórmula conceptual es: <em>tamaño de posición = (capital total × % de riesgo) ÷ distancia al stop loss</em>. Así, un stop loss más amplio implica automáticamente un tamaño de posición menor para mantener el mismo riesgo en dinero.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Relación riesgo/beneficio</h3><p>Antes de entrar, es útil comparar cuánto arriesgas contra cuánto esperas ganar si el escenario se cumple. Una relación de 1:2 significa que, por cada unidad que arriesgas, buscas ganar el doble. Con una relación así, ni siquiera necesitas acertar la mayoría de tus operaciones para ser rentable en el tiempo — necesitas que tus ganadoras, en promedio, superen a tus perdedoras.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Errores comunes de gestión de riesgo</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Mover el stop loss \"para darle más espacio\" a una operación que va en contra.</li><li>Aumentar el tamaño de la siguiente operación para \"recuperar\" una pérdida reciente (revenge trading).</li><li>No definir el stop loss antes de entrar, decidiéndolo sobre la marcha según las emociones del momento.</li><li>Arriesgar un porcentaje distinto en cada operación sin un criterio consistente.</li></ul><p>La gestión de riesgo no es la parte más emocionante del trading, pero es, con diferencia, la que más determina si sigues operando dentro de un año.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "ratio-riesgo-beneficio",
-    "order": 21,
-    "level": "avanzado",
-    "title": "Ratio riesgo/beneficio: por qué puedes ganar fallando la mitad",
-    "excerpt": "El secreto no es acertar siempre, es que tus ganancias sean mayores que tus pérdidas. Aquí está la matemática que lo demuestra.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "Si arriesgas $50 para ganar $150, tu ratio R:B es...",
-        "options": [
-          "1:1",
-          "1:3",
-          "3:1"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Con un ratio 1:3, para ser rentable necesitas acertar...",
-        "options": [
-          "El 100% de las veces",
-          "Menos de la mitad puede bastar",
-          "Exactamente el 90%"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<div class='edu-hook'><h3>¿Por qué te importa esto?</h3><p>La pregunta no es si vas a cometer errores de principiante — es si te costarán $0 o tus ahorros. La cuenta demo existe para responder eso. Los que la saltan alimentan las estadísticas de pérdidas; los que la usan bien llegan al dinero real con el manual de sus propios errores ya escrito.</p></div><div class='edu-diagram'><svg viewBox='0 0 560 240' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='85' width='140' height='75' rx='12' fill='rgba(212,175,55,0.08)' stroke='rgba(212,175,55,0.35)'/><text x='100' y='113' text-anchor='middle' font-size='14' font-family='JetBrains Mono, monospace' fill='#f0c75e'>DEMO</text><text x='100' y='137' text-anchor='middle' font-size='10' font-family='JetBrains Mono, monospace' fill='#8b93a7'>dinero ficticio</text><rect x='210' y='85' width='140' height='75' rx='12' fill='rgba(212,175,55,0.08)' stroke='rgba(212,175,55,0.35)'/><text x='280' y='108' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#f0c75e'>MÉTRICAS</text><text x='280' y='128' text-anchor='middle' font-size='9.5' font-family='JetBrains Mono, monospace' fill='#8b93a7'>50+ operaciones</text><text x='280' y='143' text-anchor='middle' font-size='9.5' font-family='JetBrains Mono, monospace' fill='#8b93a7'>registradas en tu diario</text><rect x='390' y='85' width='140' height='75' rx='12' fill='rgba(46,204,113,0.08)' stroke='#2ecc71'/><text x='460' y='108' text-anchor='middle' font-size='14' font-family='JetBrains Mono, monospace' fill='#2ecc71'>REAL</text><text x='460' y='128' text-anchor='middle' font-size='9.5' font-family='JetBrains Mono, monospace' fill='#8b93a7'>importe mínimo</text><text x='460' y='143' text-anchor='middle' font-size='9.5' font-family='JetBrains Mono, monospace' fill='#8b93a7'>que aceptas perder</text><path d='M170 122 L210 122' stroke='#f0c75e' stroke-width='2.5'/><path d='M202 117 L210 122 L202 127' fill='none' stroke='#f0c75e' stroke-width='2.5'/><path d='M350 122 L390 122' stroke='#f0c75e' stroke-width='2.5'/><path d='M382 117 L390 122 L382 127' fill='none' stroke='#f0c75e' stroke-width='2.5'/><text x='280' y='45' text-anchor='middle' font-size='12' font-family='JetBrains Mono, monospace' fill='#c9d2e8'>El único camino sin atajos que funciona</text><text x='280' y='205' text-anchor='middle' font-size='11' font-family='JetBrains Mono, monospace' fill='#8b93a7'>Saltarse la demo no te hace valiente: te hace donante del mercado</text></svg></div><div class='edu-goals'><h3>Al terminar este módulo podrás…</h3><ul><li>Configurar una demo idéntica al dinero real que usarás después</li><li>Definir las métricas que te dirán cuándo estás listo (y cuándo no)</li><li>Dar el salto a real con tamaño mínimo y expectativas honestas</li></ul></div><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es una cuenta demo</h3><p>Una <strong>cuenta demo</strong> replica el mercado real con dinero ficticio. Te permite probar la plataforma, practicar a poner órdenes y validar una estrategia sin arriesgar un centavo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo sacarle provecho</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Trátala en serio: opera con el mismo tamaño relativo y las mismas reglas que usarías con dinero real.</li><li>Lleva bitácora desde el primer día — anota por qué entras y sales.</li><li>Busca consistencia, no un golpe de suerte: un mes rentable siguiendo tu plan vale más que doblar la cuenta por azar.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El límite de la demo</h3><p>La demo no reproduce lo más difícil del trading: la <strong>emoción</strong>. En demo cierras una pérdida sin que te tiemble el pulso; con dinero real, el miedo y la codicia aparecen. Por eso el salto a real conviene hacerlo con montos pequeños, para aprender a gestionar esas emociones sin arriesgar demasiado.</p><div class='edu-apply'><h3>Llévalo a la práctica hoy (gratis)</h3><p>Tu tarea es el módulo entero: abre una demo hoy, opera pequeño como si fuera real y registra cada operación en el <a href='herramientas.html'>Diario de trading</a>. Cincuenta operaciones registradas después, sabrás — con datos, no con fe — si estás listo.</p></div>"
+ },
+ {
+  "slug": "soporte-y-resistencia",
+  "order": 11,
+  "level": "intermedio",
+  "title": "Soporte y resistencia: los niveles que todo el mercado vigila",
+  "excerpt": "Son el concepto técnico más usado en trading y, a la vez, el más malentendido. Aprende a trazarlos con criterio.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "¿Qué es el 'cambio de polaridad' mencionado en el módulo?",
+    "options": [
+     "Cuando una resistencia rota se convierte en soporte (o viceversa)",
+     "Cuando el RSI cruza el nivel 50",
+     "Cuando cambia el color de las velas"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es el ratio R:B</h3><p>El <strong>ratio riesgo/beneficio</strong> compara cuánto arriesgas con cuánto esperas ganar en una operación. Si arriesgas $50 (a tu stop) para ganar $150 (a tu objetivo), tu ratio es <strong>1:3</strong>.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La matemática que libera</h3><p>Con un ratio 1:3, puedes <strong>fallar más operaciones de las que aciertas</strong> y aun así ganar dinero. Ejemplo con 10 operaciones arriesgando $50 para ganar $150:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Aciertas solo 4 y fallas 6: ganas 4 × $150 = $600, pierdes 6 × $50 = $300. Resultado neto: <strong>+$300</strong>.</li><li>Es decir: 40% de aciertos y aun así rentable, gracias al ratio.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La consecuencia práctica</h3><p>Esto cambia el enfoque: en vez de obsesionarte con \"acertar\", te enfocas en tomar solo operaciones donde el beneficio potencial sea claramente mayor que el riesgo. Un buen trader puede perder la mayoría de sus operaciones y seguir siendo rentable — porque cuando gana, gana más de lo que pierde cuando falla.</p>"
-  },
-  {
-    "slug": "multiples-temporalidades",
-    "order": 22,
-    "level": "avanzado",
-    "title": "Análisis en múltiples temporalidades",
-    "excerpt": "La misma vela dice cosas distintas en 5 minutos y en diario. Combinar temporalidades te da contexto y precisión a la vez.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "La temporalidad alta (diario/4h) sirve sobre todo para...",
-        "options": [
-          "Afinar la entrada exacta",
-          "Definir la tendencia y las zonas clave",
-          "Nada útil"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "La regla clave del multi-temporalidad es...",
-        "options": [
-          "Operar contra la temporalidad alta",
-          "Operar a favor de la temporalidad alta y afinar en la baja",
-          "Ignorar el diario"
-        ],
-        "correct": 1
-      }
+    "correct": 0
+   },
+   {
+    "q": "¿Cuál es el error más común de los principiantes con soporte/resistencia, según el módulo?",
+    "options": [
+     "Trazar muy pocos niveles",
+     "Asumir que un nivel va a aguantar para siempre",
+     "Usar marcos temporales muy altos"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El problema de mirar una sola temporalidad</h3><p>Un gráfico de 5 minutos te da entradas precisas pero te pierde el bosque; uno diario te da el contexto pero entradas imprecisas. La solución es <strong>combinar temporalidades</strong>.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El enfoque de arriba hacia abajo</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Temporalidad alta</strong> (diario/4h): define la tendencia y las zonas clave. Aquí decides el sesgo — a favor de qué dirección buscas operar.</li><li><strong>Temporalidad media</strong> (1h): busca la estructura y el escenario dentro de ese sesgo.</li><li><strong>Temporalidad baja</strong> (15m/5m): afina la entrada exacta cuando el precio llega a tu zona.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La regla que evita errores</h3><p>Opera <strong>a favor</strong> de la temporalidad alta, no en su contra. Buscar compras en 5 minutos cuando el diario está claramente bajista es remar contra la corriente. La temporalidad alta manda; la baja solo afina el momento de entrar.</p>"
-  },
-  {
-    "slug": "volumen-y-order-flow",
-    "order": 23,
-    "level": "avanzado",
-    "title": "Volumen y una introducción a order flow",
-    "excerpt": "Ir un paso más allá del precio: qué está pasando \"por debajo\" de cada vela.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "¿Qué es el Point of Control (POC)?",
-        "options": [
-          "El nivel de precio con más volumen negociado en un período",
-          "El promedio del RSI",
-          "Un tipo de vela japonesa"
-        ],
-        "correct": 0
-      },
-      {
-        "q": "Una ruptura de un nivel con volumen débil suele ser más propensa a...",
-        "options": [
-          "Sostenerse con fuerza",
-          "Ser una falsa ruptura (fakeout)",
-          "Aumentar el POC"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué son, en términos simples</h3><p>Un <strong>soporte</strong> es una zona de precio donde, históricamente, la presión compradora ha sido suficiente para detener o revertir una caída. Una <strong>resistencia</strong> es una zona donde la presión vendedora ha detenido o revertido una subida. No son líneas mágicas ni exactas al pip — son zonas de interés donde el mercado ha reaccionado antes.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué funcionan (la psicología detrás)</h3><p>Los niveles de soporte/resistencia funcionan porque son visibles para miles de participantes al mismo tiempo, generando órdenes de compra/venta concentradas en zonas similares. Además, un nivel que rompió una resistencia y luego el precio vuelve a probarlo desde arriba, suele convertirse en soporte (y viceversa) — esto se llama <strong>cambio de polaridad</strong>.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo trazarlos sin exagerar</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Busca zonas donde el precio reaccionó <strong>más de una vez</strong>, no solo una.</li><li>Prioriza los marcos temporales más altos (diario, 4H) sobre los muy cortos — un nivel diario suele ser más relevante que uno de 5 minutos.</li><li>Piensa en zonas, no en líneas de un solo precio exacto — deja margen de un pequeño rango.</li><li>Menos es más: un gráfico con 15 líneas dibujadas no es más útil, es ruido.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El error más común de los principiantes</h3><p>Asumir que un soporte o resistencia va a \"aguantar\" para siempre. Ningún nivel es infalible: cuando el precio rompe una zona con fuerza y volumen (no solo la toca de pasada), el nivel puede dejar de ser relevante. Operar \"porque está en soporte\" sin considerar el contexto más amplio (tendencia, catalizador de fondo, volumen) es una de las causas más comunes de pérdidas en traders principiantes.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
+ },
+ {
+  "slug": "tendencias-y-estructura-de-mercado",
+  "order": 12,
+  "level": "intermedio",
+  "title": "Tendencias y estructura de mercado",
+  "excerpt": "Máximos y mínimos crecientes o decrecientes: la forma más objetiva de saber si estás a favor o en contra de la corriente.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "¿Cómo se define objetivamente una tendencia alcista según el módulo?",
+    "options": [
+     "Por la pendiente de una sola línea",
+     "Por máximos y mínimos cada vez más altos",
+     "Por el color predominante de las velas"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué el volumen importa</h3><p>El volumen mide cuántas operaciones (o cuánto tamaño) se ejecutaron en un período determinado. Un movimiento de precio acompañado de volumen alto tiene, en general, más \"peso\" y convicción detrás que el mismo movimiento con volumen bajo — este último puede ser simplemente ruido de baja participación.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Volumen en rupturas</h3><p>Una de las aplicaciones más comunes: cuando el precio rompe un nivel de soporte/resistencia o una figura chartista con volumen significativamente por encima del promedio, se interpreta como una ruptura con más probabilidad de sostenerse. Una ruptura con volumen débil es más propensa a ser una \"falsa ruptura\" (fakeout), donde el precio regresa rápidamente dentro del rango anterior.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Perfil de volumen (Volume Profile) y Point of Control</h3><p>A diferencia del volumen tradicional (que se muestra por tiempo, en el eje horizontal), el perfil de volumen lo distribuye por nivel de precio, en el eje vertical. El <strong>Point of Control (POC)</strong> es el nivel de precio donde se concentró más volumen negociado en un período — suele actuar como un imán de precio y una zona de interés relevante para muchos participantes institucionales.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">¿Qué es el order flow?</h3><p>Order flow es el estudio de las órdenes de compra y venta que realmente se están ejecutando en tiempo real —a qué precio, en qué tamaño y con qué agresividad—, en vez de mirar solo el resultado final resumido en una vela. Herramientas como el Depth of Market (DOM), el footprint chart o el análisis de flujo institucional buscan responder: ¿quién está comprando o vendiendo agresivamente ahora mismo, con órdenes a mercado?</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Una nota de honestidad sobre este tema</h3><p>El order flow institucional completo (datos de posicionamiento de grandes fondos, flujo real de órdenes de bloques) generalmente requiere terminales profesionales de pago que van mucho más allá de lo que ofrecen los gráficos gratuitos. Lo que puedes hacer con herramientas accesibles es aproximarte al concepto usando volumen, perfil de volumen y datos públicos como el reporte COT (Commitment of Traders) — útiles, pero no idénticos al acceso institucional completo.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "smart-money-concepts-intro",
-    "order": 24,
-    "level": "avanzado",
-    "title": "Smart Money Concepts (SMC): una introducción honesta",
-    "excerpt": "Order blocks, FVG, liquidez… el vocabulario de moda explicado sin humo, y con la advertencia que casi nadie te da.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "Un Order Block es...",
-        "options": [
-          "Un indicador que se compra",
-          "La última vela opuesta antes de un movimiento fuerte, vigilada como zona",
-          "Una orden a mercado"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "La actitud correcta ante SMC es...",
-        "options": [
-          "Confiar ciegamente, reemplaza la gestión de riesgo",
-          "Usarlo como una lente más, sin abandonar stop ni tamaño de posición",
-          "Ignorar la estructura"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   },
+   {
+    "q": "¿Cuándo se considera 'rota' la estructura alcista?",
+    "options": [
+     "Cuando aparece un mínimo más bajo que el anterior",
+     "Cuando el precio toca la media móvil de 200",
+     "Cuando el RSI supera 70"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">De qué va SMC</h3><p><strong>Smart Money Concepts</strong> es un enfoque que intenta leer el rastro del dinero institucional en el gráfico. Su vocabulario suena complejo, pero las ideas base son concretas:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Order Block:</strong> la última vela opuesta antes de un movimiento fuerte, donde se supone que quedaron órdenes institucionales. Se vigila como zona de reacción.</li><li><strong>Fair Value Gap (FVG):</strong> un hueco de precio que dejó un movimiento impulsivo, que el precio tiende a \"rellenar\" después.</li><li><strong>Liquidez:</strong> las agrupaciones de stops por encima de máximos o por debajo de mínimos recientes, que el precio a veces va a \"barrer\" antes de girar.</li><li><strong>BOS / CHoCH:</strong> ruptura de estructura a favor de la tendencia (BOS) o señal temprana de posible giro (CHoCH).</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La advertencia honesta</h3><p>SMC es una <strong>forma de interpretar</strong> el precio, no una bola de cristal. Se puede sobreajustar hasta \"ver\" un order block donde convenga. No sustituye la gestión de riesgo: sigues necesitando stop, tamaño de posición y un plan. Úsalo como una lente más, no como una religión.</p>"
-  },
-  {
-    "slug": "price-action-sin-indicadores",
-    "order": 25,
-    "level": "avanzado",
-    "title": "Price action: leer el precio sin indicadores",
-    "excerpt": "Antes de los indicadores está el precio. Aprender a leerlo directo te hace menos dependiente de líneas de colores.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "El price action se basa en...",
-        "options": [
-          "Cuantos más indicadores mejor",
-          "Leer directamente velas, estructura y niveles",
-          "Solo el RSI"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Si un indicador y el precio se contradicen...",
-        "options": [
-          "Gana el indicador siempre",
-          "Gana el precio",
-          "Se cierra la plataforma"
-        ],
-        "correct": 1
-      }
+    "correct": 0
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Las tres fases del mercado</h3><p>Todo mercado se mueve, en cualquier momento, en una de tres fases: <strong>tendencia alcista</strong> (máximos y mínimos cada vez más altos), <strong>tendencia bajista</strong> (máximos y mínimos cada vez más bajos), o <strong>rango</strong> (precio oscilando entre un soporte y una resistencia sin dirección clara). Identificar en cuál de las tres estás situado cambia por completo qué estrategias tienen sentido.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo identificar estructura, no solo \"la línea\"</h3><p>Trazar una línea de tendencia es útil, pero la forma más objetiva de leer estructura es mirando la secuencia de máximos y mínimos. Mientras el precio siga formando mínimos más altos que el anterior, la estructura alcista se mantiene intacta — incluso si hay retrocesos temporales. La estructura se \"rompe\" cuando aparece un mínimo más bajo que el anterior en una tendencia alcista (o un máximo más alto en una bajista).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Canales</h3><p>Un canal es una tendencia \"contenida\" entre dos líneas paralelas: una que conecta los máximos y otra que conecta los mínimos. Operar dentro de un canal (comprar cerca del límite inferior, vender cerca del superior) es una estrategia común, pero requiere vigilar constantemente si el canal sigue vigente o si el precio está a punto de romperlo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué \"operar a favor de la tendencia\" es un cliché útil</h3><p>Es más fácil sostenerse en una operación cuando el contexto general te acompaña que cuando operas contra la corriente esperando una reversión perfecta. Esto no significa que operar en contra de la tendencia sea siempre incorrecto, pero sí exige mayor precisión y una razón de peso — no solo \"parece que ya subió mucho\".</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
+ },
+ {
+  "slug": "lineas-de-tendencia-y-canales",
+  "order": 13,
+  "level": "intermedio",
+  "title": "Líneas de tendencia y canales",
+  "excerpt": "Una línea bien trazada convierte el caos del gráfico en una dirección clara. Aquí aprendes a dibujarlas sin autoengañarte.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "¿Cuántos toques confirman una línea de tendencia?",
+    "options": [
+     "Uno basta",
+     "Dos para trazarla y un tercero para confirmarla",
+     "Diez como mínimo"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es price action</h3><p>El <strong>price action</strong> es leer directamente lo que hace el precio —velas, estructura, niveles— sin depender de indicadores. La lógica: los indicadores derivan del precio, así que si sabes leer el precio, vas a la fuente.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Los pilares</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Estructura:</strong> ¿hace máximos y mínimos crecientes (alcista), decrecientes (bajista) o laterales?</li><li><strong>Niveles clave:</strong> soportes, resistencias y zonas donde el precio ya reaccionó antes.</li><li><strong>Comportamiento en el nivel:</strong> cómo llega el precio a una zona (con impulso o dudando) y cómo reacciona (rechazo con mecha, ruptura limpia, etc.).</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué vale la pena</h3><p>Un gráfico lleno de 6 indicadores suele generar señales contradictorias y parálisis. Leer price action te da una imagen más limpia y adaptable a cualquier mercado. No significa despreciar los indicadores — significa que el precio manda y el indicador solo confirma. Si el indicador dice una cosa y el precio otra, gana el precio.</p>"
-  },
-  {
-    "slug": "correlaciones-y-diversificacion",
-    "order": 26,
-    "level": "avanzado",
-    "title": "Correlaciones: cuando \"diversificar\" es una ilusión",
-    "excerpt": "Abrir tres operaciones parecidas no es diversificar: es triplicar el mismo riesgo sin darte cuenta.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "Comprar EUR/USD, GBP/USD y AUD/USD a la vez significa...",
-        "options": [
-          "Diversificar bien",
-          "Repetir la misma apuesta contra el dólar varias veces",
-          "Eliminar todo el riesgo"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "EUR/USD y GBP/USD suelen tener correlación...",
-        "options": [
-          "Positiva (se mueven juntos)",
-          "Nula",
-          "Siempre inversa"
-        ],
-        "correct": 0
-      }
+    "correct": 1
+   },
+   {
+    "q": "Un canal se forma con...",
+    "options": [
+     "Una sola línea",
+     "Una línea de tendencia y una paralela al otro lado",
+     "Tres medias móviles"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es la correlación</h3><p>Dos activos están <strong>correlacionados</strong> cuando tienden a moverse juntos. EUR/USD y GBP/USD suelen subir y bajar a la vez (correlación positiva); el dólar (DXY) y el oro a menudo se mueven en sentido opuesto (correlación negativa).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El error costoso</h3><p>Muchos creen que abrir varias operaciones \"diversifica\" el riesgo. Pero si compras EUR/USD, GBP/USD y AUD/USD al mismo tiempo, en el fondo estás haciendo <strong>la misma apuesta contra el dólar tres veces</strong>. Si el dólar se fortalece, pierdes en las tres a la vez: has triplicado el riesgo, no repartido.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo usarlo a tu favor</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Antes de abrir varias posiciones, pregúntate si en realidad son la misma apuesta disfrazada.</li><li>La correlación negativa puede servir de cobertura parcial, pero cambia con el tiempo: no es fija.</li><li>Diversificar de verdad es exponerte a riesgos distintos, no al mismo riesgo con otro nombre.</li></ul>"
-  },
-  {
-    "slug": "sesiones-de-mercado-horarios",
-    "order": 27,
-    "level": "avanzado",
-    "title": "Sesiones de mercado: cuándo se mueve de verdad el precio",
-    "excerpt": "El mercado no se mueve igual a toda hora. Saber qué sesión está activa te dice cuándo hay volatilidad y cuándo es trampa.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "¿Qué sesión suele ser la más líquida y marcar la dirección del día?",
-        "options": [
-          "Asia",
-          "Londres",
-          "Ninguna"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "El mejor momento de liquidez suele ser...",
-        "options": [
-          "La madrugada en América",
-          "El solapamiento Londres–Nueva York",
-          "El domingo"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo se traza una línea de tendencia</h3><p>En una <strong>tendencia alcista</strong>, unes los mínimos crecientes con una línea por debajo del precio: mientras el precio la respete, la tendencia sigue viva. En una <strong>tendencia bajista</strong>, unes los máximos decrecientes por encima del precio.</p><p>Regla honesta: necesitas al menos <strong>dos puntos</strong> para trazarla y un <strong>tercer toque</strong> para confirmarla. Si tienes que forzar la línea o ignorar mechas para que \"encaje\", esa línea no es válida — te la estás inventando.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Canales</h3><p>Un <strong>canal</strong> es una línea de tendencia con una paralela al otro lado del precio. El precio tiende a rebotar entre ambas. Sirve para ubicar zonas donde el movimiento podría frenar, no para adivinar el futuro.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Roturas</h3><p>Cuando el precio rompe una línea de tendencia con decisión (idealmente con volumen), puede avisar de un cambio de dirección. Pero cuidado con las <strong>roturas falsas</strong>: el precio asoma la cabeza y vuelve. Por eso muchos esperan un cierre claro fuera de la línea, no solo un toque.</p>"
+ },
+ {
+  "slug": "medias-moviles-a-fondo",
+  "order": 14,
+  "level": "intermedio",
+  "title": "Medias móviles a fondo: SMA, EMA y cruces",
+  "excerpt": "La media móvil suaviza el ruido y te muestra la dirección de fondo. Aquí, cuándo usar SMA vs EMA y qué dicen los cruces.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "¿Qué media reacciona más rápido a los precios recientes?",
+    "options": [
+     "La SMA",
+     "La EMA",
+     "Ninguna reacciona"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El mercado tiene horarios</h3><p>El forex opera 24 horas, pero no con la misma intensidad. Se divide en tres grandes <strong>sesiones</strong>: Asia (Tokio), Europa (Londres) y América (Nueva York). Cada una tiene su carácter.</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Londres:</strong> la sesión más líquida y volátil; suele marcar la dirección del día.</li><li><strong>Nueva York:</strong> alta actividad, sobre todo en el solapamiento con Londres y cuando salen los datos macro de EE.UU.</li><li><strong>Asia:</strong> más tranquila y de rangos; menos movimientos bruscos (salvo en pares con yen o AUD).</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El momento estrella y la trampa</h3><p>El <strong>solapamiento Londres–Nueva York</strong> (media mañana en América) concentra la mayor liquidez y los movimientos más limpios. En cambio, operar en horas muertas (madrugada, fin de sesión de NY) suele traer rangos estrechos, spreads más amplios y roturas falsas.</p><p>Para Latinoamérica, ubica tu horario local respecto a esas sesiones: saber si estás operando en plena Londres o en la calma asiática cambia por completo qué esperar del precio.</p>"
-  },
-  {
-    "slug": "plan-de-trading-y-bitacora",
-    "order": 28,
-    "level": "avanzado",
-    "title": "Cómo construir un plan de trading y una bitácora de operaciones",
-    "excerpt": "El documento que separa a quien opera con proceso de quien opera por impulso.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "¿Qué debe incluir un plan de trading según el módulo?",
-        "options": [
-          "Solo el mercado a operar",
-          "Mercado, criterios de entrada/salida, gestión de riesgo y reglas de comportamiento",
-          "Únicamente el capital disponible"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "¿Para qué sirve una bitácora de trading según el módulo?",
-        "options": [
-          "Para presumir las operaciones ganadoras",
-          "Para registrar cada operación y evitar una imagen distorsionada del propio desempeño",
-          "Para reemplazar el análisis técnico"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   },
+   {
+    "q": "Un \"golden cross\" es cuando...",
+    "options": [
+     "La media rápida cruza por encima de la lenta (sesgo alcista)",
+     "El precio toca cero",
+     "El RSI llega a 100"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué debe incluir un plan de trading</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Mercado(s) y horario:</strong> qué vas a operar y en qué franja horaria, evitando saltar de mercado en mercado sin criterio.</li><li><strong>Criterios de entrada:</strong> las condiciones específicas (técnicas y/o de contexto) que deben cumplirse antes de considerar una operación.</li><li><strong>Gestión de riesgo:</strong> el porcentaje de capital que arriesgas por operación y cómo calculas el tamaño de posición.</li><li><strong>Criterios de salida:</strong> tanto para cuando te equivocas (stop loss) como para cuando aciertas (take profit o gestión de la ganancia).</li><li><strong>Reglas de comportamiento:</strong> por ejemplo, un límite de pérdidas diarias tras el cual dejas de operar por ese día.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué llevar una bitácora (diario de trading)</h3><p>Una bitácora registra cada operación: fecha, activo, dirección, tamaño, entrada, salida, resultado, y —quizás lo más importante— el estado emocional y el razonamiento detrás de la decisión. Sin este registro, es fácil recordar solo las operaciones ganadoras y desarrollar una imagen distorsionada del propio desempeño.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué revisar periódicamente</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>¿Qué porcentaje de tus operaciones perdedoras rompieron tu propio plan (entrada sin setup válido, sin stop loss definido, tamaño fuera de tu regla de riesgo)?</li><li>¿Hay un horario, día de la semana o tipo de activo donde tu desempeño es consistentemente mejor o peor?</li><li>¿Tu relación riesgo/beneficio promedio real coincide con la que planeas en teoría?</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El plan no es una camisa de fuerza, es un punto de referencia</h3><p>Un plan de trading no elimina la necesidad de criterio ni convierte el trading en un proceso 100% mecánico. Su función es darte un punto de referencia objetivo para evaluar tus decisiones después, en vez de racionalizar cada entrada según cómo te sentiste en el momento. AR4 Mercados integra un sistema de <strong>Trading DNA</strong> que analiza automáticamente patrones en tu actividad dentro de la comunidad para ayudarte a identificar estos hábitos con más claridad.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
-  },
-  {
-    "slug": "psicologia-del-trading-introduccion",
-    "order": 29,
-    "level": "avanzado",
-    "title": "Psicología del trading: la variable que casi nadie estudia a tiempo",
-    "excerpt": "El análisis técnico se aprende en semanas. Gestionar tus propias emociones frente al dinero real toma mucho más.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "Según el módulo, ¿qué suele explicar que un trader con buen conocimiento técnico pierda dinero con capital real?",
-        "options": [
-          "Falta de indicadores",
-          "La reacción emocional ante el dinero real en juego",
-          "Usar un marco temporal equivocado"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "¿Qué patrón describe aumentar el riesgo después de una pérdida para 'recuperarla' de inmediato?",
-        "options": [
-          "FOMO",
-          "Revenge trading",
-          "Aversión a cerrar pérdidas"
-        ],
-        "correct": 1
-      }
+    "correct": 0
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué hace una media móvil</h3><p>Una <strong>media móvil</strong> promedia el precio de las últimas N velas y dibuja una línea suave. Filtra el ruido del día a día y te deja ver la dirección de fondo. Las más usadas: 50 y 200 períodos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">SMA vs EMA</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>SMA (simple):</strong> promedio directo. Más estable, reacciona más lento.</li><li><strong>EMA (exponencial):</strong> da más peso a los precios recientes. Reacciona más rápido, pero da más señales falsas.</li></ul><p>El precio por encima de la media sugiere sesgo alcista; por debajo, bajista. La media también actúa muchas veces como soporte o resistencia dinámica.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cruces de medias</h3><p>Cuando una media rápida (50) cruza por encima de una lenta (200), se llama <strong>golden cross</strong> (sesgo alcista). El cruce inverso es el <strong>death cross</strong> (sesgo bajista). Son señales de tendencia, no de precisión: llegan tarde por definición, así que sirven para confirmar contexto, no para cronometrar la entrada exacta.</p>"
+ },
+ {
+  "slug": "rsi-y-divergencias",
+  "order": 15,
+  "level": "intermedio",
+  "title": "RSI y divergencias: medir la fuerza del movimiento",
+  "excerpt": "El RSI no dice \"compra\" ni \"vende\": mide si un movimiento se está agotando. Y las divergencias son su señal más útil.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "Un RSI de 76 indica...",
+    "options": [
+     "Sobreventa",
+     "Sobrecompra (subió mucho y rápido)",
+     "Que hay que vender obligatoriamente"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué el conocimiento técnico no es suficiente</h3><p>Es común encontrar traders que, en una cuenta demo o explicando una operación después de que ya salió bien, demuestran un entendimiento técnico sólido — y aun así pierden dinero de forma consistente con capital real. La diferencia casi nunca es el conocimiento técnico: es la reacción emocional ante el dinero real en juego, que altera decisiones que en teoría ya estaban definidas de antemano.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Los patrones emocionales más comunes</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>FOMO:</strong> entrar tarde a un movimiento por miedo a quedarse fuera, sin que cumpla tus criterios.</li><li><strong>Revenge trading:</strong> aumentar el riesgo después de una pérdida, buscando \"recuperarla\" de inmediato en vez de seguir el plan.</li><li><strong>Aversión a cerrar pérdidas:</strong> mantener una operación perdedora más tiempo del planeado, esperando que \"se dé vuelta\", mientras se cierra una ganadora demasiado pronto por miedo a perder la ganancia ya obtenida.</li><li><strong>Exceso de confianza tras una racha ganadora:</strong> aumentar el tamaño de posición o abandonar el plan después de varias operaciones exitosas seguidas.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Un punto de partida práctico</h3><p>La psicología del trading no se soluciona memorizando frases motivacionales. Se trabaja con lo mismo que el análisis técnico: registro, repetición y ajuste. Llevar una bitácora que incluya tu estado emocional en cada operación (visto en el módulo anterior) es, en la práctica, uno de los ejercicios más efectivos y accesibles para empezar a identificar tus propios patrones.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Sigue profundizando</h3><p>Esta es apenas una introducción. AR4 Mercados tiene una sección completa dedicada a <strong>Psicotrading</strong>, con artículos específicos sobre FOMO, revenge trading, gestión del miedo y la disciplina — y un asistente de IA disponible en todo el sitio para conversar sobre gestión emocional cuando lo necesites.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión. En caso de malestar emocional significativo, busca siempre ayuda de un profesional de salud mental.</em></p>"
-  },
-  {
-    "slug": "backtesting-y-mejora-continua",
-    "order": 30,
-    "level": "avanzado",
-    "title": "Backtesting y mejora continua",
-    "excerpt": "Una estrategia sin probar es solo una opinión. El backtesting y la revisión de tu bitácora la convierten en un método.",
-    "points": 20,
-    "quiz": [
-      {
-        "q": "El backtesting consiste en...",
-        "options": [
-          "Adivinar el futuro",
-          "Probar tu estrategia sobre datos históricos con reglas definidas",
-          "Copiar señales"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Para no engañarte al hacer backtesting debes...",
-        "options": [
-          "Elegir solo los 5 casos que salieron bien",
-          "Definir las reglas antes y probar sobre una muestra amplia",
-          "Cambiar las reglas sobre la marcha"
-        ],
-        "correct": 1
-      }
+    "correct": 1
+   },
+   {
+    "q": "Una divergencia bajista es cuando...",
+    "options": [
+     "Precio y RSI suben juntos",
+     "El precio hace máximo más alto pero el RSI hace máximo más bajo",
+     "El RSI llega a 50"
     ],
-    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es el backtesting</h3><p>El <strong>backtesting</strong> es probar tu estrategia sobre datos históricos: recorres el gráfico del pasado aplicando tus reglas y anotas qué habría pasado. Sirve para saber si tu idea tiene fundamento antes de arriesgar dinero real.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo hacerlo sin engañarte</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Define tus reglas por escrito ANTES de probar, para no \"ajustarlas\" a lo que ya sabes que pasó.</li><li>Prueba sobre una muestra amplia (muchas operaciones, distintos meses), no sobre 5 casos elegidos.</li><li>Anota todo: aciertos, fallos, ratio R:B, rachas de pérdidas. Una racha de 6 pérdidas seguidas es normal — necesitas saberlo para aguantarla en real.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La mejora continua</h3><p>El backtesting es solo el inicio. En real, tu <strong>bitácora</strong> es el segundo motor de mejora: revisar tus operaciones cada semana revela patrones —\"pierdo cuando opero fuera de mi horario\", \"mis mejores trades siguen la tendencia alta\"— que ningún curso te va a decir. El trader que mejora es el que estudia sus propios datos, no el que salta de estrategia en estrategia.</p>"
-  }
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué mide el RSI</h3><p>El <strong>RSI</strong> (Índice de Fuerza Relativa) oscila entre 0 y 100 y mide la velocidad y magnitud de los movimientos recientes. Lectura básica: por encima de 70 = <strong>sobrecompra</strong> (subió mucho y rápido); por debajo de 30 = <strong>sobreventa</strong>.</p><p>Error típico del principiante: creer que sobrecompra significa \"vender ya\". En una tendencia fuerte, el RSI puede quedarse sobrecomprado mucho tiempo mientras el precio sigue subiendo. El RSI es contexto, no un gatillo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Divergencias: la señal que sí vale</h3><p>Una <strong>divergencia</strong> ocurre cuando el precio y el RSI van en direcciones opuestas:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Divergencia bajista:</strong> el precio hace un máximo más alto, pero el RSI hace un máximo más bajo. El impulso se está debilitando aunque el precio suba.</li><li><strong>Divergencia alcista:</strong> el precio hace un mínimo más bajo, pero el RSI hace un mínimo más alto. La caída pierde fuerza.</li></ul><p>Las divergencias avisan de posible agotamiento, pero no son infalibles: úsalas junto a soporte/resistencia y estructura, nunca solas.</p>"
+ },
+ {
+  "slug": "macd-y-momentum",
+  "order": 16,
+  "level": "intermedio",
+  "title": "MACD y momentum",
+  "excerpt": "El MACD combina medias para mostrar cuándo el impulso cambia de marcha. Aquí, cómo leerlo sin abrumarte.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "El MACD mide sobre todo...",
+    "options": [
+     "El volumen exacto",
+     "El momentum: la fuerza y dirección del impulso",
+     "El spread"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "El histograma del MACD, cuando se encoge, indica...",
+    "options": [
+     "Que el impulso se está frenando",
+     "Que el precio llegó a cero",
+     "Que subió el apalancamiento"
+    ],
+    "correct": 0
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es el MACD</h3><p>El <strong>MACD</strong> (Convergencia/Divergencia de Medias Móviles) resta dos medias exponenciales (normalmente 12 y 26) para medir el <strong>momentum</strong>: la fuerza y dirección del impulso. Se acompaña de una línea de señal (media de 9) y un histograma.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Las tres piezas</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Línea MACD:</strong> la diferencia entre las dos medias. Por encima de cero = impulso alcista; por debajo = bajista.</li><li><strong>Línea de señal:</strong> suaviza la línea MACD. Los cruces entre ambas son la señal clásica.</li><li><strong>Histograma:</strong> la distancia entre MACD y señal. Cuando crece, el impulso se acelera; cuando se encoge, se frena.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo usarlo sin sobreinterpretar</h3><p>Un cruce del MACD por encima de la señal sugiere impulso alcista; por debajo, bajista. Igual que el RSI, el MACD también forma <strong>divergencias</strong> con el precio que avisan de agotamiento. No es un oráculo: funciona mejor confirmando lo que ya ves en la estructura del precio, no en solitario.</p>"
+ },
+ {
+  "slug": "indicadores-basicos",
+  "order": 17,
+  "level": "intermedio",
+  "title": "Indicadores básicos: medias móviles, RSI y MACD",
+  "excerpt": "Tres de los indicadores más usados en el mundo, qué miden realmente y sus límites.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "Según el módulo, valores de RSI por encima de 70 tradicionalmente se consideran...",
+    "options": [
+     "Sobrecompra",
+     "Sobreventa",
+     "Señal de compra automática"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "¿Cuál es la limitación principal que señala el módulo sobre los indicadores técnicos?",
+    "options": [
+     "Solo funcionan en forex",
+     "Se calculan a partir del precio pasado, no predicen el futuro por sí mismos",
+     "Requieren pago para usarse"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Medias móviles (Moving Averages)</h3><p>Una media móvil suaviza el precio promediando los últimos N períodos (por ejemplo, 50 o 200 velas), ayudando a visualizar la tendencia de fondo sin el ruido de cada vela individual. Cuando el precio cotiza por encima de una media de 200 periodos en marcos altos, muchos participantes lo interpretan como contexto alcista de largo plazo (y viceversa). El cruce entre una media rápida (ej. 20) y una lenta (ej. 50 o 200) se usa a veces como señal de cambio de tendencia, aunque suele llegar con retraso respecto al movimiento real.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">RSI (Índice de Fuerza Relativa)</h3><p>El RSI mide la velocidad y magnitud de los movimientos recientes de precio, en una escala de 0 a 100. Tradicionalmente, valores por encima de 70 se consideran \"sobrecompra\" (el activo subió mucho y rápido, posible agotamiento) y por debajo de 30 \"sobreventa\". Es importante entender que en tendencias fuertes el RSI puede mantenerse en zona de sobrecompra o sobreventa durante mucho tiempo sin que el precio revierta — no es una señal automática de \"vender ya\".</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">MACD (Convergencia/Divergencia de Medias Móviles)</h3><p>El MACD combina dos medias móviles exponenciales para mostrar tanto la dirección como el momentum de la tendencia. Se usa comúnmente para detectar cruces (señal de cambio de momentum) y divergencias: cuando el precio hace un nuevo máximo pero el MACD no lo confirma, puede indicar que el impulso alcista se está debilitando por dentro, aunque el precio todavía no lo refleje.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El límite de todos los indicadores</h3><p>Todo indicador técnico se calcula a partir del precio pasado — ninguno predice el futuro por sí mismo, son herramientas de contexto. Usar 5 indicadores a la vez no da más certeza, generalmente da más ruido y señales contradictorias. La mayoría de los traders experimentados terminan usando 1 o 2 indicadores que entienden a fondo, en vez de acumular indicadores sin comprender qué mide cada uno.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
+ },
+ {
+  "slug": "figuras-geometricas-chartismo",
+  "order": 18,
+  "level": "intermedio",
+  "title": "Figuras geométricas: triángulos, banderas, hombro-cabeza-hombro y dobles techos/suelos",
+  "excerpt": "El chartismo clásico: patrones visuales que se repiten en cualquier mercado y marco temporal.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "¿Qué tipo de patrón son las banderas (flags) según el módulo?",
+    "options": [
+     "Patrones de reversión",
+     "Patrones de continuación",
+     "Indicadores de volumen"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "¿Qué aumenta la fiabilidad de una figura chartista según el módulo?",
+    "options": [
+     "Que se confirme con volumen creciente en la ruptura",
+     "Que aparezca en un marco temporal de 1 minuto",
+     "Que tenga muchos colores"
+    ],
+    "correct": 0
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Triángulos (simétrico, ascendente, descendente)</h3><p>Se forman cuando el rango de precio se va comprimiendo, dibujando dos líneas que convergen. Un triángulo ascendente (resistencia horizontal, soporte ascendente) suele interpretarse como acumulación con sesgo alcista; uno descendente, lo opuesto. Un triángulo simétrico no tiene sesgo definido por sí solo — señala que la volatilidad se está comprimiendo antes de un movimiento más amplio, en cualquier dirección.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Banderas y banderines (flags/pennants)</h3><p>Aparecen después de un movimiento fuerte y direccional (el \"mástil\"), seguido de una pausa/consolidación breve en forma de canal inclinado en contra de la tendencia previa. Se consideran patrones de continuación: la lectura clásica es que, tras la pausa, el precio retoma la dirección del movimiento inicial.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Hombro-Cabeza-Hombro</h3><p>Uno de los patrones de reversión más conocidos: tres máximos consecutivos donde el del medio (\"cabeza\") es más alto que los dos de los lados (\"hombros\"), con una línea de cuello (neckline) conectando los mínimos entre ellos. Su versión invertida (hombro-cabeza-hombro invertido) es la contraparte alcista, apareciendo después de tendencias bajistas.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Doble techo y doble suelo</h3><p>El precio prueba un mismo nivel de resistencia (o soporte) dos veces sin lograr romperlo con fuerza, formando una \"M\" (doble techo, bajista) o una \"W\" (doble suelo, alcista). Cuanto más tiempo pase entre las dos pruebas del nivel y más claro sea el rechazo cada vez, más participantes suelen darle relevancia al patrón.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo evitar el error más común</h3><p>El chartismo es, en parte, subjetivo: dos traders pueden trazar el mismo gráfico de forma distinta. La figura por sí sola rara vez es suficiente — su fiabilidad aumenta cuando se confirma con volumen creciente en la ruptura y coincide con niveles de soporte/resistencia relevantes de fondo, no cuando se busca la figura \"a la fuerza\" en cualquier gráfico.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
+ },
+ {
+  "slug": "fibonacci-retrocesos",
+  "order": 19,
+  "level": "intermedio",
+  "title": "Retrocesos de Fibonacci",
+  "excerpt": "Tras un movimiento, el precio suele retroceder parte del camino antes de continuar. Fibonacci marca hasta dónde suele hacerlo.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "¿Cuál es el rango de retroceso más vigilado?",
+    "options": [
+     "0% a 10%",
+     "38,2% a 61,8%",
+     "90% a 100%"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Fibonacci gana fuerza cuando...",
+    "options": [
+     "Se usa solo, sin nada más",
+     "Un nivel coincide con un soporte/resistencia real (confluencia)",
+     "El mercado está cerrado"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La idea</h3><p>Después de un impulso, el precio rara vez sigue en línea recta: <strong>retrocede</strong> una parte antes de continuar (o girar). Los <strong>retrocesos de Fibonacci</strong> marcan niveles donde ese retroceso suele frenar: 23,6%, 38,2%, <strong>50%</strong>, 61,8% y 78,6%.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo se usa</h3><p>Trazas la herramienta desde el inicio hasta el final de un movimiento claro, y aparecen líneas horizontales en esos porcentajes. Los niveles del <strong>38,2% al 61,8%</strong> son los más vigilados: si el precio retrocede hasta ahí y reacciona, muchos lo interpretan como zona de posible continuación.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La verdad honesta sobre Fibonacci</h3><p>Fibonacci no es magia ni predice el futuro. Funciona en buena parte porque <strong>mucha gente lo mira</strong>, así que se vuelve una profecía autocumplida en esas zonas. Gana valor cuando un nivel de Fibonacci <strong>coincide</strong> con un soporte/resistencia real o una media móvil — esa confluencia es lo que le da fuerza, no el número por sí solo.</p>"
+ },
+ {
+  "slug": "gestion-de-riesgo-tamano-posicion",
+  "order": 20,
+  "level": "intermedio",
+  "title": "Gestión de riesgo y tamaño de posición",
+  "excerpt": "La habilidad que separa a quienes sobreviven en los mercados de quienes queman su cuenta en meses.",
+  "points": 15,
+  "quiz": [
+   {
+    "q": "¿Qué porcentaje de riesgo por operación se menciona como práctica común en el módulo?",
+    "options": [
+     "Entre 0.5% y 2% del capital",
+     "Entre 10% y 20% del capital",
+     "El 50% del capital"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Con una relación riesgo/beneficio de 1:2, ¿qué implica el módulo?",
+    "options": [
+     "Necesitas acertar el 90% de tus operaciones",
+     "No necesitas acertar la mayoría de tus operaciones para ser rentable",
+     "El stop loss no es necesario"
+    ],
+    "correct": 1
+   }
+  ],
+  "bodySimple": "<p>Imagina que vas a un casino (esto es solo para explicar la idea, no una invitación a apostar). Si llevas $100 y apuestas los $100 en una sola jugada, una mala racha te deja sin nada. Pero si decides apostar solo $2 en cada jugada, puedes perder 20 veces seguidas y todavía te queda dinero para seguir jugando — y para aprender de tus errores.</p><p>Eso es exactamente gestión de riesgo en trading: en vez de arriesgar todo tu capital en una operación, arriesgas solo una porción pequeña y constante (por ejemplo, 1% de tu capital total) en cada operación individual.</p><p>Para saber cuánto comprar o vender (el \"tamaño de tu posición\"), hay una pregunta simple detrás de la fórmula: ¿cuánto dinero estoy dispuesto a perder en esta operación si me equivoco, y qué tan lejos está mi punto de salida (stop loss) de mi punto de entrada? Cuanto más lejos esté tu stop loss, menos unidades del activo deberías comprar, para que la pérdida en dinero siga siendo la misma pequeña porción de siempre.</p><p>El error más común de quien empieza: subir el tamaño de la siguiente operación para \"recuperar\" rápido una pérdida anterior. Es como, después de perder en una apuesta pequeña, doblar la apuesta siguiente con rabia — casi siempre termina peor, no mejor.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La regla del riesgo fijo por operación</h3><p>Una práctica ampliamente usada es arriesgar un porcentaje pequeño y constante del capital total en cada operación individual — comúnmente entre 0.5% y 2%. Esto significa que, incluso ante una racha de operaciones perdedoras seguidas (que ocurrirá, tarde o temprano, a cualquier trader), el capital restante sigue siendo suficiente para seguir operando y recuperarse.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo calcular el tamaño de posición</h3><p>El tamaño de tu posición no debería decidirse por \"cuánto quiero ganar\", sino por la distancia entre tu punto de entrada y tu stop loss, combinada con cuánto capital estás dispuesto a arriesgar. La fórmula conceptual es: <em>tamaño de posición = (capital total × % de riesgo) ÷ distancia al stop loss</em>. Así, un stop loss más amplio implica automáticamente un tamaño de posición menor para mantener el mismo riesgo en dinero.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Relación riesgo/beneficio</h3><p>Antes de entrar, es útil comparar cuánto arriesgas contra cuánto esperas ganar si el escenario se cumple. Una relación de 1:2 significa que, por cada unidad que arriesgas, buscas ganar el doble. Con una relación así, ni siquiera necesitas acertar la mayoría de tus operaciones para ser rentable en el tiempo — necesitas que tus ganadoras, en promedio, superen a tus perdedoras.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Errores comunes de gestión de riesgo</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Mover el stop loss \"para darle más espacio\" a una operación que va en contra.</li><li>Aumentar el tamaño de la siguiente operación para \"recuperar\" una pérdida reciente (revenge trading).</li><li>No definir el stop loss antes de entrar, decidiéndolo sobre la marcha según las emociones del momento.</li><li>Arriesgar un porcentaje distinto en cada operación sin un criterio consistente.</li></ul><p>La gestión de riesgo no es la parte más emocionante del trading, pero es, con diferencia, la que más determina si sigues operando dentro de un año.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
+ },
+ {
+  "slug": "ratio-riesgo-beneficio",
+  "order": 21,
+  "level": "avanzado",
+  "title": "Ratio riesgo/beneficio: por qué puedes ganar fallando la mitad",
+  "excerpt": "El secreto no es acertar siempre, es que tus ganancias sean mayores que tus pérdidas. Aquí está la matemática que lo demuestra.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "Si arriesgas $50 para ganar $150, tu ratio R:B es...",
+    "options": [
+     "1:1",
+     "1:3",
+     "3:1"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Con un ratio 1:3, para ser rentable necesitas acertar...",
+    "options": [
+     "El 100% de las veces",
+     "Menos de la mitad puede bastar",
+     "Exactamente el 90%"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es el ratio R:B</h3><p>El <strong>ratio riesgo/beneficio</strong> compara cuánto arriesgas con cuánto esperas ganar en una operación. Si arriesgas $50 (a tu stop) para ganar $150 (a tu objetivo), tu ratio es <strong>1:3</strong>.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La matemática que libera</h3><p>Con un ratio 1:3, puedes <strong>fallar más operaciones de las que aciertas</strong> y aun así ganar dinero. Ejemplo con 10 operaciones arriesgando $50 para ganar $150:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Aciertas solo 4 y fallas 6: ganas 4 × $150 = $600, pierdes 6 × $50 = $300. Resultado neto: <strong>+$300</strong>.</li><li>Es decir: 40% de aciertos y aun así rentable, gracias al ratio.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La consecuencia práctica</h3><p>Esto cambia el enfoque: en vez de obsesionarte con \"acertar\", te enfocas en tomar solo operaciones donde el beneficio potencial sea claramente mayor que el riesgo. Un buen trader puede perder la mayoría de sus operaciones y seguir siendo rentable — porque cuando gana, gana más de lo que pierde cuando falla.</p>"
+ },
+ {
+  "slug": "multiples-temporalidades",
+  "order": 22,
+  "level": "avanzado",
+  "title": "Análisis en múltiples temporalidades",
+  "excerpt": "La misma vela dice cosas distintas en 5 minutos y en diario. Combinar temporalidades te da contexto y precisión a la vez.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "La temporalidad alta (diario/4h) sirve sobre todo para...",
+    "options": [
+     "Afinar la entrada exacta",
+     "Definir la tendencia y las zonas clave",
+     "Nada útil"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "La regla clave del multi-temporalidad es...",
+    "options": [
+     "Operar contra la temporalidad alta",
+     "Operar a favor de la temporalidad alta y afinar en la baja",
+     "Ignorar el diario"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El problema de mirar una sola temporalidad</h3><p>Un gráfico de 5 minutos te da entradas precisas pero te pierde el bosque; uno diario te da el contexto pero entradas imprecisas. La solución es <strong>combinar temporalidades</strong>.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El enfoque de arriba hacia abajo</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Temporalidad alta</strong> (diario/4h): define la tendencia y las zonas clave. Aquí decides el sesgo — a favor de qué dirección buscas operar.</li><li><strong>Temporalidad media</strong> (1h): busca la estructura y el escenario dentro de ese sesgo.</li><li><strong>Temporalidad baja</strong> (15m/5m): afina la entrada exacta cuando el precio llega a tu zona.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La regla que evita errores</h3><p>Opera <strong>a favor</strong> de la temporalidad alta, no en su contra. Buscar compras en 5 minutos cuando el diario está claramente bajista es remar contra la corriente. La temporalidad alta manda; la baja solo afina el momento de entrar.</p>"
+ },
+ {
+  "slug": "volumen-y-order-flow",
+  "order": 23,
+  "level": "avanzado",
+  "title": "Volumen y una introducción a order flow",
+  "excerpt": "Ir un paso más allá del precio: qué está pasando \"por debajo\" de cada vela.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "¿Qué es el Point of Control (POC)?",
+    "options": [
+     "El nivel de precio con más volumen negociado en un período",
+     "El promedio del RSI",
+     "Un tipo de vela japonesa"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Una ruptura de un nivel con volumen débil suele ser más propensa a...",
+    "options": [
+     "Sostenerse con fuerza",
+     "Ser una falsa ruptura (fakeout)",
+     "Aumentar el POC"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué el volumen importa</h3><p>El volumen mide cuántas operaciones (o cuánto tamaño) se ejecutaron en un período determinado. Un movimiento de precio acompañado de volumen alto tiene, en general, más \"peso\" y convicción detrás que el mismo movimiento con volumen bajo — este último puede ser simplemente ruido de baja participación.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Volumen en rupturas</h3><p>Una de las aplicaciones más comunes: cuando el precio rompe un nivel de soporte/resistencia o una figura chartista con volumen significativamente por encima del promedio, se interpreta como una ruptura con más probabilidad de sostenerse. Una ruptura con volumen débil es más propensa a ser una \"falsa ruptura\" (fakeout), donde el precio regresa rápidamente dentro del rango anterior.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Perfil de volumen (Volume Profile) y Point of Control</h3><p>A diferencia del volumen tradicional (que se muestra por tiempo, en el eje horizontal), el perfil de volumen lo distribuye por nivel de precio, en el eje vertical. El <strong>Point of Control (POC)</strong> es el nivel de precio donde se concentró más volumen negociado en un período — suele actuar como un imán de precio y una zona de interés relevante para muchos participantes institucionales.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">¿Qué es el order flow?</h3><p>Order flow es el estudio de las órdenes de compra y venta que realmente se están ejecutando en tiempo real —a qué precio, en qué tamaño y con qué agresividad—, en vez de mirar solo el resultado final resumido en una vela. Herramientas como el Depth of Market (DOM), el footprint chart o el análisis de flujo institucional buscan responder: ¿quién está comprando o vendiendo agresivamente ahora mismo, con órdenes a mercado?</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Una nota de honestidad sobre este tema</h3><p>El order flow institucional completo (datos de posicionamiento de grandes fondos, flujo real de órdenes de bloques) generalmente requiere terminales profesionales de pago que van mucho más allá de lo que ofrecen los gráficos gratuitos. Lo que puedes hacer con herramientas accesibles es aproximarte al concepto usando volumen, perfil de volumen y datos públicos como el reporte COT (Commitment of Traders) — útiles, pero no idénticos al acceso institucional completo.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
+ },
+ {
+  "slug": "smart-money-concepts-intro",
+  "order": 24,
+  "level": "avanzado",
+  "title": "Smart Money Concepts (SMC): una introducción honesta",
+  "excerpt": "Order blocks, FVG, liquidez… el vocabulario de moda explicado sin humo, y con la advertencia que casi nadie te da.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "Un Order Block es...",
+    "options": [
+     "Un indicador que se compra",
+     "La última vela opuesta antes de un movimiento fuerte, vigilada como zona",
+     "Una orden a mercado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "La actitud correcta ante SMC es...",
+    "options": [
+     "Confiar ciegamente, reemplaza la gestión de riesgo",
+     "Usarlo como una lente más, sin abandonar stop ni tamaño de posición",
+     "Ignorar la estructura"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">De qué va SMC</h3><p><strong>Smart Money Concepts</strong> es un enfoque que intenta leer el rastro del dinero institucional en el gráfico. Su vocabulario suena complejo, pero las ideas base son concretas:</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Order Block:</strong> la última vela opuesta antes de un movimiento fuerte, donde se supone que quedaron órdenes institucionales. Se vigila como zona de reacción.</li><li><strong>Fair Value Gap (FVG):</strong> un hueco de precio que dejó un movimiento impulsivo, que el precio tiende a \"rellenar\" después.</li><li><strong>Liquidez:</strong> las agrupaciones de stops por encima de máximos o por debajo de mínimos recientes, que el precio a veces va a \"barrer\" antes de girar.</li><li><strong>BOS / CHoCH:</strong> ruptura de estructura a favor de la tendencia (BOS) o señal temprana de posible giro (CHoCH).</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La advertencia honesta</h3><p>SMC es una <strong>forma de interpretar</strong> el precio, no una bola de cristal. Se puede sobreajustar hasta \"ver\" un order block donde convenga. No sustituye la gestión de riesgo: sigues necesitando stop, tamaño de posición y un plan. Úsalo como una lente más, no como una religión.</p>"
+ },
+ {
+  "slug": "price-action-sin-indicadores",
+  "order": 25,
+  "level": "avanzado",
+  "title": "Price action: leer el precio sin indicadores",
+  "excerpt": "Antes de los indicadores está el precio. Aprender a leerlo directo te hace menos dependiente de líneas de colores.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "El price action se basa en...",
+    "options": [
+     "Cuantos más indicadores mejor",
+     "Leer directamente velas, estructura y niveles",
+     "Solo el RSI"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Si un indicador y el precio se contradicen...",
+    "options": [
+     "Gana el indicador siempre",
+     "Gana el precio",
+     "Se cierra la plataforma"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es price action</h3><p>El <strong>price action</strong> es leer directamente lo que hace el precio —velas, estructura, niveles— sin depender de indicadores. La lógica: los indicadores derivan del precio, así que si sabes leer el precio, vas a la fuente.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Los pilares</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Estructura:</strong> ¿hace máximos y mínimos crecientes (alcista), decrecientes (bajista) o laterales?</li><li><strong>Niveles clave:</strong> soportes, resistencias y zonas donde el precio ya reaccionó antes.</li><li><strong>Comportamiento en el nivel:</strong> cómo llega el precio a una zona (con impulso o dudando) y cómo reacciona (rechazo con mecha, ruptura limpia, etc.).</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué vale la pena</h3><p>Un gráfico lleno de 6 indicadores suele generar señales contradictorias y parálisis. Leer price action te da una imagen más limpia y adaptable a cualquier mercado. No significa despreciar los indicadores — significa que el precio manda y el indicador solo confirma. Si el indicador dice una cosa y el precio otra, gana el precio.</p>"
+ },
+ {
+  "slug": "correlaciones-y-diversificacion",
+  "order": 26,
+  "level": "avanzado",
+  "title": "Correlaciones: cuando \"diversificar\" es una ilusión",
+  "excerpt": "Abrir tres operaciones parecidas no es diversificar: es triplicar el mismo riesgo sin darte cuenta.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "Comprar EUR/USD, GBP/USD y AUD/USD a la vez significa...",
+    "options": [
+     "Diversificar bien",
+     "Repetir la misma apuesta contra el dólar varias veces",
+     "Eliminar todo el riesgo"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "EUR/USD y GBP/USD suelen tener correlación...",
+    "options": [
+     "Positiva (se mueven juntos)",
+     "Nula",
+     "Siempre inversa"
+    ],
+    "correct": 0
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es la correlación</h3><p>Dos activos están <strong>correlacionados</strong> cuando tienden a moverse juntos. EUR/USD y GBP/USD suelen subir y bajar a la vez (correlación positiva); el dólar (DXY) y el oro a menudo se mueven en sentido opuesto (correlación negativa).</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El error costoso</h3><p>Muchos creen que abrir varias operaciones \"diversifica\" el riesgo. Pero si compras EUR/USD, GBP/USD y AUD/USD al mismo tiempo, en el fondo estás haciendo <strong>la misma apuesta contra el dólar tres veces</strong>. Si el dólar se fortalece, pierdes en las tres a la vez: has triplicado el riesgo, no repartido.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo usarlo a tu favor</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Antes de abrir varias posiciones, pregúntate si en realidad son la misma apuesta disfrazada.</li><li>La correlación negativa puede servir de cobertura parcial, pero cambia con el tiempo: no es fija.</li><li>Diversificar de verdad es exponerte a riesgos distintos, no al mismo riesgo con otro nombre.</li></ul>"
+ },
+ {
+  "slug": "sesiones-de-mercado-horarios",
+  "order": 27,
+  "level": "avanzado",
+  "title": "Sesiones de mercado: cuándo se mueve de verdad el precio",
+  "excerpt": "El mercado no se mueve igual a toda hora. Saber qué sesión está activa te dice cuándo hay volatilidad y cuándo es trampa.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "¿Qué sesión suele ser la más líquida y marcar la dirección del día?",
+    "options": [
+     "Asia",
+     "Londres",
+     "Ninguna"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "El mejor momento de liquidez suele ser...",
+    "options": [
+     "La madrugada en América",
+     "El solapamiento Londres–Nueva York",
+     "El domingo"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El mercado tiene horarios</h3><p>El forex opera 24 horas, pero no con la misma intensidad. Se divide en tres grandes <strong>sesiones</strong>: Asia (Tokio), Europa (Londres) y América (Nueva York). Cada una tiene su carácter.</p><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Londres:</strong> la sesión más líquida y volátil; suele marcar la dirección del día.</li><li><strong>Nueva York:</strong> alta actividad, sobre todo en el solapamiento con Londres y cuando salen los datos macro de EE.UU.</li><li><strong>Asia:</strong> más tranquila y de rangos; menos movimientos bruscos (salvo en pares con yen o AUD).</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El momento estrella y la trampa</h3><p>El <strong>solapamiento Londres–Nueva York</strong> (media mañana en América) concentra la mayor liquidez y los movimientos más limpios. En cambio, operar en horas muertas (madrugada, fin de sesión de NY) suele traer rangos estrechos, spreads más amplios y roturas falsas.</p><p>Para Latinoamérica, ubica tu horario local respecto a esas sesiones: saber si estás operando en plena Londres o en la calma asiática cambia por completo qué esperar del precio.</p>"
+ },
+ {
+  "slug": "plan-de-trading-y-bitacora",
+  "order": 28,
+  "level": "avanzado",
+  "title": "Cómo construir un plan de trading y una bitácora de operaciones",
+  "excerpt": "El documento que separa a quien opera con proceso de quien opera por impulso.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "¿Qué debe incluir un plan de trading según el módulo?",
+    "options": [
+     "Solo el mercado a operar",
+     "Mercado, criterios de entrada/salida, gestión de riesgo y reglas de comportamiento",
+     "Únicamente el capital disponible"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "¿Para qué sirve una bitácora de trading según el módulo?",
+    "options": [
+     "Para presumir las operaciones ganadoras",
+     "Para registrar cada operación y evitar una imagen distorsionada del propio desempeño",
+     "Para reemplazar el análisis técnico"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué debe incluir un plan de trading</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>Mercado(s) y horario:</strong> qué vas a operar y en qué franja horaria, evitando saltar de mercado en mercado sin criterio.</li><li><strong>Criterios de entrada:</strong> las condiciones específicas (técnicas y/o de contexto) que deben cumplirse antes de considerar una operación.</li><li><strong>Gestión de riesgo:</strong> el porcentaje de capital que arriesgas por operación y cómo calculas el tamaño de posición.</li><li><strong>Criterios de salida:</strong> tanto para cuando te equivocas (stop loss) como para cuando aciertas (take profit o gestión de la ganancia).</li><li><strong>Reglas de comportamiento:</strong> por ejemplo, un límite de pérdidas diarias tras el cual dejas de operar por ese día.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué llevar una bitácora (diario de trading)</h3><p>Una bitácora registra cada operación: fecha, activo, dirección, tamaño, entrada, salida, resultado, y —quizás lo más importante— el estado emocional y el razonamiento detrás de la decisión. Sin este registro, es fácil recordar solo las operaciones ganadoras y desarrollar una imagen distorsionada del propio desempeño.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué revisar periódicamente</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>¿Qué porcentaje de tus operaciones perdedoras rompieron tu propio plan (entrada sin setup válido, sin stop loss definido, tamaño fuera de tu regla de riesgo)?</li><li>¿Hay un horario, día de la semana o tipo de activo donde tu desempeño es consistentemente mejor o peor?</li><li>¿Tu relación riesgo/beneficio promedio real coincide con la que planeas en teoría?</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">El plan no es una camisa de fuerza, es un punto de referencia</h3><p>Un plan de trading no elimina la necesidad de criterio ni convierte el trading en un proceso 100% mecánico. Su función es darte un punto de referencia objetivo para evaluar tus decisiones después, en vez de racionalizar cada entrada según cómo te sentiste en el momento. AR4 Mercados integra un sistema de <strong>Trading DNA</strong> que analiza automáticamente patrones en tu actividad dentro de la comunidad para ayudarte a identificar estos hábitos con más claridad.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión.</em></p>"
+ },
+ {
+  "slug": "psicologia-del-trading-introduccion",
+  "order": 29,
+  "level": "avanzado",
+  "title": "Psicología del trading: la variable que casi nadie estudia a tiempo",
+  "excerpt": "El análisis técnico se aprende en semanas. Gestionar tus propias emociones frente al dinero real toma mucho más.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "Según el módulo, ¿qué suele explicar que un trader con buen conocimiento técnico pierda dinero con capital real?",
+    "options": [
+     "Falta de indicadores",
+     "La reacción emocional ante el dinero real en juego",
+     "Usar un marco temporal equivocado"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "¿Qué patrón describe aumentar el riesgo después de una pérdida para 'recuperarla' de inmediato?",
+    "options": [
+     "FOMO",
+     "Revenge trading",
+     "Aversión a cerrar pérdidas"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Por qué el conocimiento técnico no es suficiente</h3><p>Es común encontrar traders que, en una cuenta demo o explicando una operación después de que ya salió bien, demuestran un entendimiento técnico sólido — y aun así pierden dinero de forma consistente con capital real. La diferencia casi nunca es el conocimiento técnico: es la reacción emocional ante el dinero real en juego, que altera decisiones que en teoría ya estaban definidas de antemano.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Los patrones emocionales más comunes</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li><strong>FOMO:</strong> entrar tarde a un movimiento por miedo a quedarse fuera, sin que cumpla tus criterios.</li><li><strong>Revenge trading:</strong> aumentar el riesgo después de una pérdida, buscando \"recuperarla\" de inmediato en vez de seguir el plan.</li><li><strong>Aversión a cerrar pérdidas:</strong> mantener una operación perdedora más tiempo del planeado, esperando que \"se dé vuelta\", mientras se cierra una ganadora demasiado pronto por miedo a perder la ganancia ya obtenida.</li><li><strong>Exceso de confianza tras una racha ganadora:</strong> aumentar el tamaño de posición o abandonar el plan después de varias operaciones exitosas seguidas.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Un punto de partida práctico</h3><p>La psicología del trading no se soluciona memorizando frases motivacionales. Se trabaja con lo mismo que el análisis técnico: registro, repetición y ajuste. Llevar una bitácora que incluya tu estado emocional en cada operación (visto en el módulo anterior) es, en la práctica, uno de los ejercicios más efectivos y accesibles para empezar a identificar tus propios patrones.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Sigue profundizando</h3><p>Esta es apenas una introducción. AR4 Mercados tiene una sección completa dedicada a <strong>Psicotrading</strong>, con artículos específicos sobre FOMO, revenge trading, gestión del miedo y la disciplina — y un asistente de IA disponible en todo el sitio para conversar sobre gestión emocional cuando lo necesites.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es educativo y no constituye asesoría financiera ni una recomendación de inversión. En caso de malestar emocional significativo, busca siempre ayuda de un profesional de salud mental.</em></p>"
+ },
+ {
+  "slug": "backtesting-y-mejora-continua",
+  "order": 30,
+  "level": "avanzado",
+  "title": "Backtesting y mejora continua",
+  "excerpt": "Una estrategia sin probar es solo una opinión. El backtesting y la revisión de tu bitácora la convierten en un método.",
+  "points": 20,
+  "quiz": [
+   {
+    "q": "El backtesting consiste en...",
+    "options": [
+     "Adivinar el futuro",
+     "Probar tu estrategia sobre datos históricos con reglas definidas",
+     "Copiar señales"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Para no engañarte al hacer backtesting debes...",
+    "options": [
+     "Elegir solo los 5 casos que salieron bien",
+     "Definir las reglas antes y probar sobre una muestra amplia",
+     "Cambiar las reglas sobre la marcha"
+    ],
+    "correct": 1
+   }
+  ],
+  "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Qué es el backtesting</h3><p>El <strong>backtesting</strong> es probar tu estrategia sobre datos históricos: recorres el gráfico del pasado aplicando tus reglas y anotas qué habría pasado. Sirve para saber si tu idea tiene fundamento antes de arriesgar dinero real.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Cómo hacerlo sin engañarte</h3><ul style=\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\"><li>Define tus reglas por escrito ANTES de probar, para no \"ajustarlas\" a lo que ya sabes que pasó.</li><li>Prueba sobre una muestra amplia (muchas operaciones, distintos meses), no sobre 5 casos elegidos.</li><li>Anota todo: aciertos, fallos, ratio R:B, rachas de pérdidas. Una racha de 6 pérdidas seguidas es normal — necesitas saberlo para aguantarla en real.</li></ul><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">La mejora continua</h3><p>El backtesting es solo el inicio. En real, tu <strong>bitácora</strong> es el segundo motor de mejora: revisar tus operaciones cada semana revela patrones —\"pierdo cuando opero fuera de mi horario\", \"mis mejores trades siguen la tendencia alta\"— que ningún curso te va a decir. El trader que mejora es el que estudia sus propios datos, no el que salta de estrategia en estrategia.</p>"
+ }
 ]

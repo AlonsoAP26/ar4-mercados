@@ -540,6 +540,16 @@ async function initModuloDetail() {
 
   body.innerHTML = m.body;
 
+  // Objetivo claro al inicio (para módulos sin bloque de gancho propio):
+  // el lector sabe en una frase qué se lleva antes de invertir su tiempo.
+  if (m.body.indexOf('edu-hook') === -1) {
+    body.insertAdjacentHTML('afterbegin', `
+      <div class="edu-objective">
+        <span class="edu-objective-lbl">Objetivo del módulo</span>
+        <p>${m.excerpt}</p>
+      </div>`);
+  }
+
   // Tareas interactivas sobre graficos reales (motor propio en module-tasks.js).
   const tasksEl = document.getElementById('moduloTasks');
   if (tasksEl && window.AR4_renderModuleTasks) window.AR4_renderModuleTasks(tasksEl, m.slug);

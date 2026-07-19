@@ -153,6 +153,23 @@ async function initFondeoDetail() {
         <li><span>Tiempo de pago promedio</span><strong>${f.avgPayoutTime}</strong></li>
       </ul>
 
+      <div class="section-head" style="margin-top:36px;"><h2>¿Nuevo en fondeo? Así funciona un reto, sin humo</h2></div>
+      <div class="guide-grid">
+        <div class="guide-step"><span class="guide-num">1</span><div><strong>Pagas una cuota, no un depósito</strong><p>Compras un examen: la empresa te presta una cuenta de práctica con reglas. La cuota no se invierte — es el precio del intento.</p></div></div>
+        <div class="guide-step"><span class="guide-num">2</span><div><strong>Debes ganar un objetivo sin romper los límites</strong><p>Típicamente ganar 8-10% sin perder más de ~5% en un día ni ~10% en total. Romper un límite un solo día termina el reto, aunque vayas ganando.</p></div></div>
+        <div class="guide-step"><span class="guide-num">3</span><div><strong>Si pasas, operas capital de la empresa</strong><p>Te llevas un porcentaje de las ganancias (70-90% habitual). Sigues sujeto a las mismas reglas de riesgo: la disciplina no termina con el examen.</p></div></div>
+        <div class="guide-step"><span class="guide-num">4</span><div><strong>Haz números ANTES de pagar</strong><p>La mayoría falla por matemática, no por análisis: riesgo por operación demasiado alto para los límites. Usa gratis nuestro <a href="herramientas.html">Planificador de reto</a> — te dice si tu plan es viable o imposible antes de gastar un dólar.</p></div></div>
+      </div>
+      <details class="rl-help" style="margin-top:14px;">
+        <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 9v5M12 17h.01"/></svg> Los 4 errores que hacen perder retos (y cómo evitarlos)</summary>
+        <div class="rl-help-body"><ul>
+          <li><b>Arriesgar 2-3% por operación con límite diario de 5%</b>: dos pérdidas normales y estás fuera. Con 0.5% aguantas diez.</li>
+          <li><b>Intentar pasar el reto en 3 días</b>: la prisa obliga a sobre-apalancar. Los que pasan suelen tardar semanas operando pequeño.</li>
+          <li><b>Operar noticias de alto impacto</b> sin necesidad: los picos de volatilidad rompen límites diarios en minutos (algunas empresas además lo prohíben).</li>
+          <li><b>"Recuperar" tras un mal día</b>: doblar el riesgo tras perder es la forma más rápida de romper el límite total. Cierra la plataforma y vuelve mañana.</li>
+        </ul></div>
+      </details>
+
       ${f.faq && f.faq.length ? `
       <div class="section-head"><h2>Preguntas frecuentes sobre ${f.name}</h2></div>
       <div class="faq-list" style="margin-bottom:8px;">

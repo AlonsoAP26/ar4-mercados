@@ -1,3 +1,40 @@
+
+// Guía para principiantes en cada reseña: pasos reales, señales de alerta y
+// mini-glosario. Todo evergreen y honesto — aplica a cualquier broker.
+function brokerBeginnerGuideHTML(b) {
+  return `
+    <div class="section-head" style="margin-top:36px;"><h2>Si es tu primera cuenta: guía rápida</h2></div>
+    <div class="guide-grid">
+      <div class="guide-step"><span class="guide-num">1</span><div><strong>Empieza en demo</strong><p>Abre primero la cuenta demo gratuita de ${b.name} y opera 2–4 semanas con dinero ficticio. Si no eres rentable en demo, con dinero real solo perderías más rápido.</p></div></div>
+      <div class="guide-step"><span class="guide-num">2</span><div><strong>Verifica la regulación tú mismo</strong><p>${b.name} declara: ${b.regulation || 'ver reseña'}. No nos creas a nosotros: busca el nombre del broker en el registro público del regulador (FCA, CySEC, ASIC tienen buscadores gratuitos en su web oficial).</p></div></div>
+      <div class="guide-step"><span class="guide-num">3</span><div><strong>Deposita solo el mínimo</strong><p>Para empezar basta ${b.minDeposit || 'el mínimo'}. Nunca deposites dinero que necesites para vivir: el trading se aprende con importes que puedas permitirte perder por completo.</p></div></div>
+      <div class="guide-step"><span class="guide-num">4</span><div><strong>Haz un retiro de prueba</strong><p>Antes de operar en serio, retira una pequeña parte. Un broker serio procesa retiros sin excusas. Si el retiro se complica, ya sabes todo lo que necesitas saber.</p></div></div>
+    </div>
+
+    <details class="rl-help" style="margin-top:16px;">
+      <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 9v5M12 17h.01"/></svg> Señales de alerta en CUALQUIER broker (léelo aunque tengas prisa)</summary>
+      <div class="rl-help-body"><ul>
+        <li><b>Te prometen rentabilidad</b> ("gana 10% mensual seguro"): los brokers regulados tienen prohibido prometer ganancias. Quien promete, miente.</li>
+        <li><b>Un "asesor" te llama para que deposites más</b>: los brokers serios no presionan por teléfono. Cuelga.</li>
+        <li><b>Bonos que bloquean tu retiro</b> ("deposita y te regalamos 100%"): el bono suele atarte a operar un volumen imposible antes de poder retirar.</li>
+        <li><b>Solo puedes depositar en cripto y no aparece en ningún regulador</b>: máximo riesgo. Si algo sale mal, no hay a quién reclamar.</li>
+        <li><b>Te piden operar por ti o pedirte tus claves</b>: nadie legítimo necesita tu contraseña.</li>
+      </ul></div>
+    </details>
+
+    <details class="rl-help" style="margin-top:10px;">
+      <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5z"/></svg> Mini-glosario para leer esta reseña sin perderte</summary>
+      <div class="rl-help-body"><ul>
+        <li><b>Spread</b>: la diferencia entre el precio de compra y el de venta. Es lo que pagas al broker en cada operación aunque diga "sin comisión".</li>
+        <li><b>Comisión</b>: cobro fijo por operación en cuentas tipo "raw/razor" (spread casi cero + comisión). Suele salir más barato para quien opera mucho.</li>
+        <li><b>Apalancamiento</b>: operar con más dinero del que depositaste (1:30 = con $100 mueves $3.000). Multiplica ganancias Y pérdidas por igual.</li>
+        <li><b>Swap</b>: pequeño cobro (o abono) por dejar una operación abierta de un día para otro.</li>
+        <li><b>Slippage</b>: cuando tu orden se ejecuta a un precio ligeramente distinto al que pediste, típico en noticias.</li>
+        <li><b>Ejecución ECN/STP</b>: tu orden va al mercado real; <b>Market Maker</b>: el broker toma la otra parte. Ninguno es malo por definición — importa la regulación.</li>
+      </ul></div>
+    </details>
+  `;
+}
 async function loadBrokers() {
   const res = await fetch('data/brokers.json');
   if (!res.ok) throw new Error('No se pudieron cargar los brokers');
@@ -281,6 +318,8 @@ function brokerDeepDiveHTML(b) {
     </details>
 
     ${faqHTML ? `
+    ${brokerBeginnerGuideHTML(b)}
+
     <div class="section-head"><h2>Preguntas frecuentes sobre ${b.name}</h2></div>
     <div class="faq-list" style="margin-bottom:8px;">
       ${faqHTML}
