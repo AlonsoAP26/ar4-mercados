@@ -1,9 +1,17 @@
 const { getIdentity, identityListUsers } = require('./_diplomas');
 
 // Verificación PÚBLICA de diplomas: cualquiera con el ID del certificado puede
-// comprobar que el diploma es real, a nombre de quién se emitió, cuándo y con
-// qué nota. Esto es lo que le da validez al diploma frente a terceros.
+// comprobar que el diploma es real, cuándo se emitió y con qué nota.
+// PRIVACIDAD: el nombre del titular se devuelve PARCIALMENTE OCULTO (iniciales)
+// — el nombre completo solo figura impreso en el diploma y en la cuenta del
+// titular; nunca se expone completo en un endpoint público.
 // GET ?cert=AR4-BAS-XXXXXXXX
+function maskName(nombre) {
+  return String(nombre || '')
+    .split(/\s+/)
+    .map((w) => (w ? w.charAt(0).toUpperCase() + '•'.repeat(Math.min(Math.max(w.length - 1, 2), 8)) : ''))
+    .join(' ');
+}
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'GET') return { statusCode: 405, body: 'Method Not Allowed' };
   const cert = ((event.queryStringParameters && event.queryStringParameters.cert) || '').trim().toUpperCase();
@@ -25,7 +33,7 @@ exports.handler = async (event, context) => {
             headers: { 'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=300' },
             body: JSON.stringify({
               success: true, valido: true, curso,
-              nombre: d.nombre, fecha: d.fecha, nota: d.nota
+              nombre: maskName(d.nombre), fecha: d.fecha, nota: d.nota
             })
           };
         }

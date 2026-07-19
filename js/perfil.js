@@ -298,6 +298,17 @@
     (async () => {
       const el = document.getElementById('perfilDiplomas');
       if (!el) return;
+      // Nombre real verificado: SOLO visible para el dueño del perfil.
+      async function appendNombreVerificado() {
+        if (!isSelf || typeof netlifyIdentity === 'undefined' || !netlifyIdentity.currentUser()) return;
+        try {
+          const jwt = await netlifyIdentity.currentUser().jwt();
+          const st = await fetch('/.netlify/functions/diploma-status', { headers: { Authorization: 'Bearer ' + jwt } }).then((r) => r.json());
+          if (st && st.success) {
+            el.insertAdjacentHTML('beforeend', `<p class="footer-text" style="margin-top:6px;">Identidad para diplomas (solo visible para ti): ${st.nombre ? `<strong style="color:var(--gold-bright);">${escapeHtml(st.nombre)}</strong>` : 'aún sin confirmar; se pedirá al reclamar tu primer diploma'}.</p>`);
+          }
+        } catch (e) { /* linea opcional */ }
+      }
       try {
         const [freeMods, premMods, dipRes] = await Promise.all([
           fetch('data/educacion.json').then((r) => r.json()).catch(() => []),
@@ -326,6 +337,7 @@
                   <a href="educacion.html" class="btn btn-gold" style="margin-top:8px;">Empezar mi primer módulo</a>
                 </div>
               </div>`;
+            appendNombreVerificado();
           }
           return;
         }
@@ -340,6 +352,7 @@
               </a>`).join('')}
           </div>` : ''}
           <p class="footer-text" style="margin-top:10px;">Avance: ${freeDone}/30 módulos del programa integral${premDone ? ` · ${premDone}/20 de la ruta institucional` : ''}${isSelf ? ' · <a href="educacion.html#diplomaRuta">ver mi Ruta del Diploma</a>' : ''}</p>`;
+        appendNombreVerificado();
       } catch (e) { /* la vitrina es opcional; el perfil sigue funcionando */ }
     })();
 

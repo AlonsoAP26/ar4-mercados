@@ -272,7 +272,7 @@ async function renderDiplomaRuta() {
       </div>
       ${st.nombre
         ? `<p class="footer-text" style="margin-top:10px;">Nombre verificado para tus diplomas: <strong style="color:var(--gold-bright);">${st.nombre}</strong></p>`
-        : '<p class="footer-text" style="margin-top:10px;">Al reclamar tu primer diploma confirmarás una única vez tu <strong>nombre real</strong> (es el que aparece en la verificación pública del certificado).</p>'}
+        : '<p class="footer-text" style="margin-top:10px;">Al reclamar tu primer diploma confirmarás una única vez tu <strong>nombre real</strong>. No es público: solo tú lo ves, y en la verificación del certificado aparece parcialmente oculto.</p>'}
     </div>`;
 }
 

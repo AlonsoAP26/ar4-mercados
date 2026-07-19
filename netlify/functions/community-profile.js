@@ -99,15 +99,30 @@ exports.handler = async (event, context) => {
         return { statusCode: 400, body: JSON.stringify({ success: false, error: 'El nombre de usuario debe tener 3-24 caracteres: letras, números o guion bajo.' }) };
       }
 
+      // Unicidad del nombre de usuario (sin distinguir mayúsculas): nadie puede
+      // tomar un username que otro perfil ya usa, ni al crear ni al editar.
+      const taken = await supabaseRequest('profiles?username=ilike.' + encodeURIComponent(username) + '&netlify_user_id=neq.' + encodeURIComponent(user.sub) + '&select=id&limit=1', { method: 'GET' });
+      if (taken.length > 0) {
+        return { statusCode: 409, body: JSON.stringify({ success: false, error: 'Ese nombre de usuario ya está en uso. Elige otro.' }) };
+      }
+
       const existing = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub) + '&select=id', { method: 'GET' });
 
       if (existing.length > 0) {
         const patch = { username, bio, trading_style: tradingStyle, phone, social_links: socialLinks };
         if (requestedColor) patch.avatar_color = requestedColor;
-        const updated = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub), {
-          method: 'PATCH',
-          body: JSON.stringify(patch)
-        });
+        let updated;
+        try {
+          updated = await supabaseRequest('profiles?netlify_user_id=eq.' + encodeURIComponent(user.sub), {
+            method: 'PATCH',
+            body: JSON.stringify(patch)
+          });
+        } catch (e) {
+          if (e.statusCode === 409) {
+            return { statusCode: 409, body: JSON.stringify({ success: false, error: 'Ese nombre de usuario ya está en uso. Elige otro.' }) };
+          }
+          throw e;
+        }
         return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, profile: withEffectiveRank(updated[0], user) }) };
       }
 

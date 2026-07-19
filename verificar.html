@@ -45,7 +45,8 @@
     <div class="breadcrumb"><a href="index.html">Inicio</a> / <a href="educacion.html">Educación</a> / Verificación de diplomas</div>
 
     <h1 style="margin:16px 0 8px;">Verificación de <span class="gold">diplomas</span></h1>
-    <p style="color:var(--text-mid);max-width:560px;">Cada diploma de AR4 Mercados se emite con un ID único registrado en nuestros servidores. Introduce el ID del certificado (impreso en el diploma) para comprobar su autenticidad: a nombre de quién se emitió, qué programa acredita, en qué fecha y con qué calificación.</p>
+    <p style="color:var(--text-mid);max-width:560px;">Cada diploma de AR4 Mercados se emite con un ID único registrado en nuestros servidores. Introduce el ID del certificado (impreso en el diploma) para comprobar su autenticidad: qué programa acredita, en qué fecha y con qué calificación.</p>
+    <p class="footer-text" style="max-width:560px;">Por privacidad, el nombre del titular se muestra <strong>parcialmente oculto</strong> (iniciales): compáralo con el nombre completo impreso en el diploma que te presentaron.</p>
 
     <div class="verif-box">
       <label for="certInput" style="font-size:0.85rem;color:var(--text-mid);">ID del certificado</label>
@@ -92,7 +93,7 @@
           <div class="verif-ok">
             <div class="verif-ok-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg> Diploma válido</div>
             <div class="verif-grid">
-              <div><span>Emitido a</span><strong>${esc(d.nombre)}</strong></div>
+              <div><span>Emitido a (nombre parcialmente oculto)</span><strong>${esc(d.nombre)}</strong></div>
               <div><span>Programa</span><strong>${esc(CURSO_LBL[d.curso] || d.curso)}</strong></div>
               <div><span>Fecha de emisión</span><strong>${new Date(d.fecha).toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' })}</strong></div>
               <div><span>Calificación final</span><strong>${esc(d.nota)} / 100</strong></div>

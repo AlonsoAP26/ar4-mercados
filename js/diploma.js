@@ -28,7 +28,7 @@
     overlay.innerHTML = `
       <div class="diploma-modal">
         <h3>Confirma tu nombre real</h3>
-        <p>Escribe tu <strong>nombre y apellidos reales</strong>, tal como figuran en tu documento de identidad. Este nombre quedará impreso en tu diploma y aparecerá en la <strong>verificación pública</strong> del certificado. <strong>No podrás cambiarlo después</strong> — así evitamos diplomas con nombres falsos.</p>
+        <p>Escribe tu <strong>nombre y apellidos reales</strong>, tal como figuran en tu documento de identidad. Quedará impreso en tu diploma y <strong>no podrás cambiarlo después</strong> — así evitamos diplomas con nombres falsos. Tu nombre completo <strong>no es público</strong>: los demás usuarios solo ven tu nombre de usuario, y en la verificación pública del certificado aparece parcialmente oculto (solo iniciales).</p>
         <input type="text" id="dpNameInput" maxlength="60" placeholder="Ej. María Fernanda Rodríguez Torres" autocomplete="name">
         <p class="footer-text" id="dpNameErr" style="color:#ff8a8a;min-height:1em;margin:6px 0 0;"></p>
         <div class="diploma-modal-actions">
