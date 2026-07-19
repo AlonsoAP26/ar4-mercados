@@ -82,7 +82,7 @@ function partnerDetailHTML(b) {
 
 function partnerCardHTML(b) {
   return `
-    <article class="broker-card broker-partner-card" style="border-color:${b.brandColor}88;">
+    <article class="broker-card broker-partner-card">
       <div class="broker-card-top">
         <div class="broker-rank broker-partner-badge">★ ${b.partnerLabel || 'Aliado destacado'}</div>
         <span class="tag-sponsored">Patrocinado</span>

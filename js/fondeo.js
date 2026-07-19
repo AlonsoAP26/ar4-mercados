@@ -12,7 +12,7 @@ function fondeoReputation(f) {
 
 function fondeoPartnerCardHTML(f) {
   return `
-    <article class="broker-card broker-partner-card" style="border-color:${f.brandColor}88;">
+    <article class="broker-card broker-partner-card">
       <div class="broker-card-top">
         <div class="broker-rank broker-partner-badge">★ ${f.partnerLabel || 'Aliado destacado'}</div>
         <span class="tag-sponsored">Patrocinado</span>

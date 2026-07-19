@@ -231,7 +231,9 @@
       if (!raw) return null;
       const t = String(raw).trim().toUpperCase().replace(/\s+/g, '');
       if (JOURNAL_YAHOO[t]) return JOURNAL_YAHOO[t];
-      if (/^[A-Z]{1,5}$/.test(t)) return t; // ticker de acción directo
+      // Símbolo Yahoo directo elegido en el buscador universal (=X, =F, ^, -USD)
+      if (/[=^]/.test(t) || /-USD$/.test(t)) return raw.trim();
+      if (/^[A-Z0-9.]{1,8}$/.test(t)) return t; // ticker de acción directo
       return null;
     }
     const jSymbolEl = document.getElementById('jSymbol');
@@ -258,6 +260,13 @@
     }
     jSymbolEl.addEventListener('blur', autoPrice);
     jSymbolEl.addEventListener('change', autoPrice);
+    // Buscador universal también en el diario: elige entre miles de instrumentos
+    // y el precio de mercado se rellena solo.
+    if (window.AR4_attachSymbolSearch) {
+      window.AR4_attachSymbolSearch(jSymbolEl, {
+        onPick: (item) => { jSymbolEl.value = item.symbol; autoPrice(); }
+      });
+    }
 
     async function loadEntries() {
       const listEl = document.getElementById('journalList');
@@ -360,9 +369,13 @@
   };
   function watchlistYahoo(tvSymbol) {
     if (WATCHLIST_YAHOO[tvSymbol]) return WATCHLIST_YAHOO[tvSymbol];
+    // Símbolos Yahoo guardados directamente por el buscador universal (=X, =F, ^, -USD)
+    if (/[=^]/.test(tvSymbol || '') || /-USD$/.test(tvSymbol || '')) return tvSymbol;
     // Acciones tipo NASDAQ:AAPL -> AAPL
     const m = /^[A-Z]+:([A-Z.]{1,6})$/.exec(tvSymbol || '');
     if (m && !/USD$|JPY$/.test(m[1])) return m[1];
+    // Ticker de acción plano (AAPL, MELI, SAP.DE)
+    if (/^[A-Z0-9.]{1,8}$/.test(tvSymbol || '')) return tvSymbol;
     return null;
   }
   function symKey(s) { return String(s).replace(/[^A-Z0-9]/gi, ''); }
@@ -396,7 +409,10 @@
 
   function mountWatchlistTicker(container, items) {
     if (!container) return;
-    if (!items || !items.length) { container.innerHTML = ''; return; }
+    // El widget de TradingView no entiende símbolos Yahoo (=X, ^GSPC, BTC-USD):
+    // se filtran para no romper la cinta; sus precios salen en la lista propia.
+    items = (items || []).filter((it) => !/[=^]/.test(it.symbol) && !/-USD$/.test(it.symbol));
+    if (!items.length) { container.innerHTML = ''; return; }
     container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
     const script = document.createElement('script');
     script.type = 'text/javascript';
@@ -503,6 +519,19 @@
       });
     });
 
+    // Buscador universal: sugiere entre miles de símbolos reales al escribir.
+    let wLastPick = null;
+    if (window.AR4_attachSymbolSearch) {
+      window.AR4_attachSymbolSearch(document.getElementById('wSymbol'), {
+        onPick: (item) => {
+          wLastPick = item;
+          document.getElementById('wSymbol').value = item.symbol;
+          const labelEl = document.getElementById('wLabel');
+          if (labelEl && !labelEl.value) labelEl.value = item.name.slice(0, 40);
+        }
+      });
+    }
+
     async function loadItems() {
       const listEl = document.getElementById('watchlistItemsList');
       const tickerEl = document.getElementById('watchlistTickerContainer');
@@ -544,11 +573,16 @@
       const msgEl = document.getElementById('wMsg');
       const rawSymbol = document.getElementById('wSymbol').value.trim();
       const rawLabel = document.getElementById('wLabel').value.trim();
-      const resolved = resolveWatchlistSymbol(rawSymbol);
+      let resolved = resolveWatchlistSymbol(rawSymbol);
+      // Elegido desde el buscador universal: se guarda el símbolo Yahoo tal cual
+      // (acciones como ticker plano; divisas/cripto/índices con su formato Yahoo).
+      if (!resolved && wLastPick && wLastPick.symbol.toUpperCase() === rawSymbol.toUpperCase()) {
+        resolved = wLastPick.symbol;
+      }
       msgEl.textContent = '';
       msgEl.className = 'community-form-msg';
       if (!resolved) {
-        msgEl.textContent = 'No reconocemos ese instrumento. Prueba con EUR/USD, ORO, BTC, DXY, SP500... o el formato EXCHANGE:TICKER de TradingView.';
+        msgEl.textContent = 'Escribe al menos 2 letras y elige una sugerencia del buscador (acciones, divisas, cripto, índices…), o usa un acceso rápido.';
         msgEl.className = 'community-form-msg error';
         return;
       }

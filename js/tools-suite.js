@@ -323,11 +323,11 @@
         <div><span>Valor del tick</span><strong>$${fmt(ins.pipSize * ins.valuePerPointPerLot, 2)}/${UNIT_LABEL[ins.cat].slice(0, -1)}</strong></div>
         <div><span>Contrato</span><strong>${fmt(ins.contractSize, 0)}</strong></div>
         <div><span>Apalancamiento típico</span><strong>1:${ins.leverage}</strong></div>
-        <div><span>Spread típico</span><strong>${ins.spread} pips</strong></div>
+        <div><span>Spread típico</span><strong>${ins.spread === '—' ? '—' : ins.spread + ' pips'}</strong></div>
         <div><span>Horario</span><strong>${ins.hours}</strong></div>
         <div><span>Rango diario típico</span><strong>~${ins.avgRangePips} pips</strong></div>
       </div>
-      <p class="rs-specs-note">Valores de referencia estándar del mercado. El spread, apalancamiento y comisiones reales dependen de tu broker.</p>
+      <p class="rs-specs-note">${ins.dynamic ? 'Instrumento del buscador global: especificaciones genéricas de su categoría (el precio sí es real). Verifica el tamaño de contrato exacto con tu broker. ' : ''}Valores de referencia estándar del mercado. El spread, apalancamiento y comisiones reales dependen de tu broker.</p>
     `;
   }
 
@@ -530,25 +530,72 @@
   }
 
   function wire() {
-    // Buscador
+    // Buscador: primero los instrumentos con especificaciones completas; si no
+    // hay match local, sugiere entre miles de símbolos reales (buscador global)
+    // creando el instrumento sobre la marcha con especificaciones genéricas.
     const search = document.getElementById('rsSearch');
     const sugg = document.getElementById('rsSuggestions');
-    function showSuggestions(q) {
-      const query = q.trim().toLowerCase();
-      let list = INSTRUMENTS;
-      if (query) list = INSTRUMENTS.filter((i) => i.id.toLowerCase().includes(query) || i.name.toLowerCase().includes(query) || i.cat.toLowerCase().includes(query));
-      list = list.slice(0, 8);
-      if (!list.length) { sugg.hidden = true; return; }
-      sugg.innerHTML = list.map((i) => `<div class="rs-sugg" data-id="${i.id}"><span class="rs-sugg-icon">${insGlyph(i)}</span><div><strong>${i.id}</strong><span>${esc(i.name)}</span></div><span class="rs-cat-badge">${i.cat}</span></div>`).join('');
+    let remoteResults = [];
+    let remoteTimer = null;
+
+    function dynFromQuote(r) {
+      const sym = r.symbol.toUpperCase();
+      const existing = INSTRUMENTS.find((i) => i.id === sym || i.yahoo === r.symbol);
+      if (existing) return existing;
+      let base;
+      if (r.type === 'CRYPTOCURRENCY') base = { cat: 'Cripto', decimals: 2, pipSize: 1, valuePerPointPerLot: 1, contractSize: 1, leverage: 2, spread: '—', avgRangePips: 500, hours: '24/7' };
+      else if (r.type === 'CURRENCY') base = { cat: 'Forex', decimals: 5, pipSize: 0.0001, valuePerPointPerLot: 100000, contractSize: 100000, leverage: 30, spread: '—', avgRangePips: 100, hours: '24/5' };
+      else base = { cat: 'Acciones', decimals: 2, pipSize: 0.01, valuePerPointPerLot: 1, contractSize: 1, leverage: 5, spread: '—', avgRangePips: 300, hours: 'Bolsa' };
+      const ins = Object.assign({ id: sym, name: r.name, yahoo: r.symbol, quote: 'USD', dynamic: true }, base);
+      INSTRUMENTS.push(ins);
+      return ins;
+    }
+
+    function renderSuggestions(local, remote) {
+      if (!local.length && !remote.length) { sugg.hidden = true; return; }
+      const localHTML = local.map((i) => `<div class="rs-sugg" data-id="${i.id}"><span class="rs-sugg-icon">${insGlyph(i)}</span><div><strong>${i.id}</strong><span>${esc(i.name)}</span></div><span class="rs-cat-badge">${i.cat}</span></div>`).join('');
+      const remoteHTML = remote.length
+        ? `<div class="rs-sugg-divider">Mercado global — miles de símbolos</div>` +
+          remote.map((r, idx) => `<div class="rs-sugg rs-sugg-remote" data-remote="${idx}"><span class="rs-sugg-icon"><span class="rs-glyph"><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='7'/><path d='M21 21l-4.3-4.3'/></svg></span></span><div><strong>${esc(r.symbol)}</strong><span>${esc(r.name)}</span></div><span class="rs-cat-badge">${esc(r.typeLabel)}</span></div>`).join('')
+        : '';
+      sugg.innerHTML = localHTML + remoteHTML;
       sugg.hidden = false;
       sugg.querySelectorAll('.rs-sugg').forEach((row) => row.addEventListener('mousedown', (e) => {
         e.preventDefault();
-        state.instrumentId = row.dataset.id;
+        if (row.dataset.remote != null) {
+          const ins = dynFromQuote(remoteResults[parseInt(row.dataset.remote, 10)]);
+          state.instrumentId = ins.id;
+        } else {
+          state.instrumentId = row.dataset.id;
+        }
         search.value = '';
         sugg.hidden = true;
+        remoteResults = [];
         onInstrumentChange();
         update();
       }));
+    }
+
+    function showSuggestions(q) {
+      const query = q.trim().toLowerCase();
+      let list = INSTRUMENTS.filter((i) => !i.dynamic);
+      if (query) list = list.filter((i) => i.id.toLowerCase().includes(query) || i.name.toLowerCase().includes(query) || i.cat.toLowerCase().includes(query));
+      list = list.slice(0, 6);
+      renderSuggestions(list, remoteResults);
+
+      // Búsqueda global con retardo, solo si hay texto suficiente
+      if (remoteTimer) clearTimeout(remoteTimer);
+      if (query.length < 2) { remoteResults = []; return; }
+      remoteTimer = setTimeout(async () => {
+        try {
+          const res = await fetch('/.netlify/functions/symbol-search?q=' + encodeURIComponent(query));
+          const data = await res.json();
+          if (search.value.trim().toLowerCase() !== query) return;
+          const okTypes = { EQUITY: 1, ETF: 1, CRYPTOCURRENCY: 1, CURRENCY: 1 };
+          remoteResults = ((data && data.results) || []).filter((r) => okTypes[r.type] && !list.find((i) => i.yahoo === r.symbol)).slice(0, 5);
+          if (!sugg.hidden || remoteResults.length) renderSuggestions(list, remoteResults);
+        } catch (e) { /* solo locales */ }
+      }, 300);
     }
     search.addEventListener('input', () => showSuggestions(search.value));
     search.addEventListener('focus', () => showSuggestions(search.value));
