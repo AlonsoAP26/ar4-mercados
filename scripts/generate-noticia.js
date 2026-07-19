@@ -200,6 +200,14 @@ async function main() {
   }
 
   const noticias = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
+  // Candado anti-duplicados: si ya hay contenido de hoy (re-corrida manual o
+  // relanzamiento del watchdog), no se genera otro. Salida 0 = corrida verde.
+  const hoyGuard = new Date().toISOString().slice(0, 10);
+  if (noticias.some((x) => String(x.date || x.fecha || '').slice(0, 10) === hoyGuard)) {
+    console.log('Ya hay contenido publicado hoy (' + hoyGuard + '); nada que generar.');
+    process.exit(0);
+  }
+
   const existingTitles = noticias.slice(-25).map((n) => `- ${n.title}`).join('\n');
   const storyType = STORY_TYPES[Math.floor(Math.random() * STORY_TYPES.length)];
   const today = new Date().toISOString().slice(0, 10);

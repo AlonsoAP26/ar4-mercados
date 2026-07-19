@@ -33,6 +33,14 @@ async function main() {
   }
 
   const articulos = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
+  // Candado anti-duplicados: si ya hay contenido de hoy (re-corrida manual o
+  // relanzamiento del watchdog), no se genera otro. Salida 0 = corrida verde.
+  const hoyGuard = new Date().toISOString().slice(0, 10);
+  if (articulos.some((x) => String(x.date || x.fecha || '').slice(0, 10) === hoyGuard)) {
+    console.log('Ya hay contenido publicado hoy (' + hoyGuard + '); nada que generar.');
+    process.exit(0);
+  }
+
   const existingTitles = articulos.map(a => `- ${a.title}`).join('\n');
 
   const recentExamples = new Set(articulos.slice(-5).map(a => a.historicalExample).filter(Boolean));
@@ -64,7 +72,10 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   "body": "string HTML con 7-9 párrafos <p> en total (incluyendo el desarrollo del caso histórico dentro del cuerpo, no aparte), 2-3 <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\"> como subtítulos específicos del tema (no genéricos), y una lista <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> con 2-4 puntos prácticos y accionables cerca del final. Contenido práctico, honesto, sin promesas de ganancias garantizadas."
 }`;
 
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
+  let res = null, lastErr = null;
+  // Hasta 4 intentos con espera creciente: un 429/5xx transitorio no tumba la corrida.
+  for (let intento = 1; intento <= 4; intento++) {
+  res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -82,10 +93,14 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
       messages: [{ role: 'user', content: prompt }]
     })
   });
-
-  if (!res.ok) {
-    const errText = await res.text();
-    console.error('Error de la API de Anthropic (HTTP ' + res.status + '):', errText);
+  if (res.ok) break;
+  lastErr = 'HTTP ' + res.status + ': ' + (await res.text()).slice(0, 300);
+  console.warn('Intento ' + intento + ' fallido: ' + lastErr);
+  if ((res.status === 429 || res.status >= 500) && intento < 4) { await new Promise((r) => setTimeout(r, intento * 20000)); continue; }
+  break;
+  }
+  if (!res || !res.ok) {
+    console.error('Error de la API de Anthropic tras reintentos:', lastErr);
     process.exit(1);
   }
 
