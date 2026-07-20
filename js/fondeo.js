@@ -6,7 +6,7 @@ async function loadFondeo() {
 
 function fondeoReputation(f) {
   const r = parseFloat(f.trustpilotRating);
-  if (Number.isFinite(r)) return `★ ${f.trustpilotRating}/5 <span>Trustpilot · ${f.trustpilotReviews} reseñas${f.trustpilotLabel ? ' · "' + f.trustpilotLabel + '"' : ''}</span>`;
+  if (Number.isFinite(r)) return `★ ${f.trustpilotRating}/5 <span>${f.ratingSource || 'Trustpilot'} · ${f.trustpilotReviews} reseñas${f.trustpilotLabel ? ' · "' + f.trustpilotLabel + '"' : ''}</span>`;
   return `<span style="color:var(--text-mid);">Bróker nuevo · sin calificación pública verificada aún</span>`;
 }
 
@@ -217,7 +217,7 @@ function renderFondeoCompareTable(firmas, filter) {
     ['Días mínimos de trading', filtered.map((f) => f.minTradingDays)],
     ['Frecuencia de pago', filtered.map((f) => f.payoutFrequency)],
     ['Plataformas', filtered.map((f) => f.platforms)],
-    ['Trustpilot', filtered.map((f) => f.trustpilotRating + '/5 (' + f.trustpilotReviews + ')')]
+    ['Reputación', filtered.map((f) => f.trustpilotRating + '/5 (' + f.trustpilotReviews + ')')]
   ];
 
   wrap.innerHTML = `

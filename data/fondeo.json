@@ -162,6 +162,694 @@
     "officialUrl": "https://the5ers.com"
   },
   {
+    "slug": "tradeify",
+    "rank": 4,
+    "name": "Tradeify",
+    "brandColor": "#22c55e",
+    "resumen": "La firma de futuros #1 en pagos: $26.31 millones pagados a traders solo en junio de 2026 según Propfirmmatch.",
+    "descripcion": "Tradeify es una prop firm estadounidense especializada exclusivamente en futuros (índices, energía, metales vía CME). Fundada en junio de 2024 por Brett Simberkoff, en dos años se convirtió en la número 1 del ranking de pagos de Propfirmmatch: $26.31 millones pagados a traders solo en junio de 2026. Ofrece evaluación de 1 fase (Growth, Select) y cuentas de fondeo directo (Lightning), con reglas de consistencia que premian la regularidad sobre el golpe de suerte.",
+    "founded": "2024",
+    "tracRecordTraders": "Operando desde 2024 · Estados Unidos",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "$25,000 – $150,000 (límite de contratos según tamaño)",
+    "profitSplit": "90% para el trader",
+    "phases": "1 fase (Growth/Select) o fondeo directo (Lightning)",
+    "dailyLossLimit": "Según programa (usa drawdown dinámico EOD; no uses el límite como stop)",
+    "maxDrawdown": "Trailing drawdown según programa — se congela al asegurar ganancias",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Cada 5 días ganadores (mín. $100 de ganancia/día en cuenta de $25K)",
+    "platforms": "NinjaTrader · Tradovate · TradingView · Quantower · Sierra Chart · Rithmic · WealthCharts",
+    "trustpilotRating": "4.7",
+    "trustpilotReviews": "169",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "#1 en pagos del sector: $26.31M pagados solo en junio 2026 (Propfirmmatch)",
+      "Evaluación de 1 sola fase y opción de fondeo directo sin evaluación",
+      "Enorme variedad de plataformas profesionales de futuros",
+      "Sin restricciones para operar noticias ni escalar posiciones"
+    ],
+    "cons": [
+      "Solo futuros: no sirve si operas forex o cripto spot",
+      "Reglas de consistencia (20%-40% según programa) que penalizan un solo día muy grande",
+      "Hedging totalmente prohibido y no puedes mezclar micros con minis a la vez",
+      "Firma joven (2024), aunque con historial de pagos ya muy sólido"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué mercados se operan en Tradeify?",
+        "a": "Exclusivamente futuros (índices como NQ y ES, energía, metales). Si tu operativa es forex o cripto, mira FundingPips, Goat Funded Trader o Crypto Fund Trader en esta misma lista."
+      },
+      {
+        "q": "¿Qué es la regla de consistencia?",
+        "a": "Tu mejor día no puede superar cierto porcentaje del total de tu ganancia (35% en Growth, 20-30% en Lightning, 40% en Select). Busca demostrar que ganas con método, no con un solo golpe de suerte."
+      },
+      {
+        "q": "¿Cada cuánto paga Tradeify?",
+        "a": "Puedes solicitar retiro tras acumular 5 días ganadores (con un mínimo de ganancia diaria según el tamaño). El split es 90/10 a favor del trader. En junio de 2026 pagó $26.31 millones según Propfirmmatch."
+      }
+    ]
+  },
+  {
+    "slug": "fundingpips",
+    "rank": 5,
+    "name": "FundingPips",
+    "brandColor": "#3b82f6",
+    "resumen": "Uno de los gigantes del fondeo CFD: $9.68 millones pagados en junio de 2026, con evaluaciones desde $5,000 hasta $100,000.",
+    "descripcion": "FundingPips es una prop firm de CFD con sede en Emiratos Árabes Unidos, fundada en noviembre de 2022 por Khaled Ayesh. Opera forex, metales, índices, energía y cripto con liquidez de BlackBull Markets. Es la segunda firma que más pagó en junio de 2026 según Propfirmmatch ($9.68 millones). Ofrece fondeo instantáneo y evaluaciones de 1 y 2 pasos con precios históricamente entre los más bajos del sector.",
+    "founded": "2022",
+    "tracRecordTraders": "Operando desde 2022 · Emiratos Árabes Unidos",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "$5,000 – $100,000",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "Instantáneo, 1 paso o 2 pasos (objetivos 8% y 5%)",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "10% del balance inicial (total)",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa; ciclos cortos en cuentas fondeadas",
+    "platforms": "MT5 · cTrader · Match Trader",
+    "trustpilotRating": "4.3",
+    "trustpilotReviews": "1,137",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "$9.68M pagados a traders en junio 2026 (2° del ranking de Propfirmmatch)",
+      "Precios de evaluación históricamente entre los más competitivos",
+      "Tres rutas: instantáneo, 1 paso y 2 pasos",
+      "Muchísimos métodos de pago, incluidos locales de LatAm"
+    ],
+    "cons": [
+      "4.3/5 con más de 90 reseñas de 1 estrella: revisa las quejas recientes antes de comprar",
+      "Volumen de usuarios enorme: el soporte puede tardar en horas pico",
+      "Comisión de $5-$7 por lote según tipo de cuenta",
+      "Las condiciones cambian con frecuencia — lee las reglas vigentes antes de cada compra"
+    ],
+    "faq": [
+      {
+        "q": "¿Cuál es el objetivo del challenge de FundingPips?",
+        "a": "En la evaluación de 2 pasos: 8% de ganancia en la fase 1 y 5% en la fase 2, con un drawdown total máximo del 10%. También hay ruta de 1 paso y cuentas instantáneas sin evaluación."
+      },
+      {
+        "q": "¿FundingPips es confiable pagando?",
+        "a": "Según Propfirmmatch pagó $9.68 millones a traders solo en junio de 2026, el segundo mayor volumen del sector. Como con toda prop firm, respeta las reglas al pie de la letra: la mayoría de quejas vienen de violaciones de reglas."
+      }
+    ]
+  },
+  {
+    "slug": "goat-funded-trader",
+    "rank": 6,
+    "name": "Goat Funded Trader",
+    "brandColor": "#f59e0b",
+    "resumen": "Prop firm CFD de Hong Kong con cuentas hasta $200,000, split de hasta 100% con add-on y brazo de futuros propio.",
+    "descripcion": "Goat Funded Trader (GFT) opera desde junio de 2023 con sede en Hong Kong, bajo la dirección de Edoardo Dalla Torre. Cubre forex, materias primas, índices, acciones y cripto en cinco plataformas, con cuentas de $8,000 a $200,000 y split base de 80% ampliable a 100% con add-on. En junio de 2026 pagó $1.21 millones a traders de CFD y otros $360,475 por su brazo de futuros (Goat Funded Futures), según Propfirmmatch.",
+    "founded": "2023",
+    "tracRecordTraders": "Operando desde 2023 · Hong Kong",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "$8,000 – $200,000",
+    "profitSplit": "80% (hasta 100% con add-on)",
+    "phases": "Instantáneo, 1 paso o 2 pasos",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · cTrader · Match Trader · TradeLocker · Volumetrica FX",
+    "trustpilotRating": "4.2",
+    "trustpilotReviews": "1,025",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "$1.21M pagados en junio 2026 + $360K más de su brazo de futuros (Propfirmmatch)",
+      "Split ampliable hasta el 100% con add-on",
+      "Cinco plataformas y catálogo amplio de mercados CFD",
+      "También tiene rama de futuros (Goat Funded Futures) si prefieres CME"
+    ],
+    "cons": [
+      "Primera violación de ciertas reglas reduce tu split al 50%; la segunda cierra la cuenta",
+      "Apalancamiento menor (1:30) en la ruta de 1 paso",
+      "100 reseñas de 1 estrella entre 1,025: lee las quejas antes de decidir",
+      "Regulación de Hong Kong: menos protección que una firma de EE.UU. o Europa"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué pasa si rompo una regla en GFT?",
+        "a": "Su política escalonada reduce el profit split al 50% en la primera violación grave y cierra la cuenta en la segunda. Lee sus reglas completas antes de operar: son estrictos aplicándolas."
+      },
+      {
+        "q": "¿Goat Funded Trader tiene futuros?",
+        "a": "Sí, con la marca Goat Funded Futures, que pagó $360,475 a traders en junio de 2026 según Propfirmmatch. Es una rama separada con reglas propias de futuros."
+      }
+    ]
+  },
+  {
+    "slug": "fintokei",
+    "rank": 7,
+    "name": "Fintokei",
+    "brandColor": "#8b5cf6",
+    "resumen": "Prop firm europea (República Checa) con respaldo del broker Purple Trading y enfoque educativo: paga y forma a la vez.",
+    "descripcion": "Fintokei nació en abril de 2023 en la República Checa, fundada por David Varga y respaldada por el broker Purple Trading (Seychelles). Su propuesta es distinta: se posiciona como empresa de evaluación y educación que conecta a sus mejores traders con gestión de portafolios regulada. Ofrece evaluaciones de 1, 2 y 3 pasos sobre forex, metales, índices, energía y cripto. En junio de 2026 pagó $804,839 a traders según Propfirmmatch.",
+    "founded": "2023",
+    "tracRecordTraders": "Operando desde 2023 · República Checa",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "Varios tamaños — verifica en su web",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "1, 2 o 3 pasos según el plan",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT4 · MT5 · cTrader · TradingView",
+    "trustpilotRating": "4.4",
+    "trustpilotReviews": "pocas aún",
+    "trustpilotLabel": "",
+    "ratingSource": "Trustpilot (marca)",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Respaldo de un broker europeo real (Purple Trading) — estructura más seria que el promedio",
+      "$804,839 pagados a traders en junio 2026 (Propfirmmatch)",
+      "Enfoque educativo: los mejores traders acceden a gestión regulada",
+      "Cuatro plataformas incluyendo TradingView"
+    ],
+    "cons": [
+      "Menos conocida en Latinoamérica: comunidad hispana pequeña",
+      "La ruta de 3 pasos alarga el camino hasta el fondeo",
+      "Sitio y soporte pensados primero para Europa y Asia"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué hace diferente a Fintokei?",
+        "a": "Su vínculo con el broker regulado Purple Trading y su modelo educativo: no solo te evalúa, busca desarrollarte y conectar a los consistentes con gestión de capital regulada. En junio de 2026 pagó $804,839 según Propfirmmatch."
+      },
+      {
+        "q": "¿Qué plataformas ofrece?",
+        "a": "MT4, MT5, cTrader y TradingView, sobre forex, metales, índices, energía y cripto en CFD."
+      }
+    ]
+  },
+  {
+    "slug": "hola-prime",
+    "rank": 8,
+    "name": "Hola Prime",
+    "brandColor": "#ef4444",
+    "resumen": "Firma CFD de rápido crecimiento con 6 plataformas para elegir y $723,291 pagados a traders en junio de 2026.",
+    "descripcion": "Hola Prime opera desde agosto de 2024 con sede en Hong Kong, dirigida por Somesh Kapuria. En poco más de un año escaló al top 10 de pagos de Propfirmmatch: $723,291 pagados en junio de 2026. Su punto fuerte es la flexibilidad: seis plataformas (MT4, MT5, cTrader, DXTrade, Match Trader y TradeLocker) y tres rutas de fondeo (instantáneo, 1 paso y 2 pasos) sobre forex, metales, índices y cripto.",
+    "founded": "2024",
+    "tracRecordTraders": "Operando desde 2024 · Hong Kong",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "Varios tamaños — verifica en su web",
+    "profitSplit": "80% según programa base",
+    "phases": "Instantáneo, 1 paso o 2 pasos",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT4 · MT5 · cTrader · DXTrade · Match Trader · TradeLocker",
+    "trustpilotRating": "4.1",
+    "trustpilotReviews": "67",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "$723,291 pagados en junio 2026 según Propfirmmatch",
+      "Seis plataformas — la mayor variedad de esta lista junto a Tradeify",
+      "Tres rutas de fondeo para distintos perfiles"
+    ],
+    "cons": [
+      "Muy joven (agosto 2024): historial corto",
+      "Violaciones de reglas reducen el split al 30% y pueden cerrar la cuenta",
+      "Pocas reseñas todavía (67 en Propfirmmatch) para juzgar su servicio"
+    ],
+    "faq": [
+      {
+        "q": "¿Es seguro operar con una firma tan nueva?",
+        "a": "Tiene poco historial (2024), pero ya figura en el top 10 de pagos de Propfirmmatch con $723,291 en junio de 2026. Recomendación AR4: empieza con el plan más barato y solicita un retiro pronto para probar su proceso de pago."
+      },
+      {
+        "q": "¿Qué plataformas tiene Hola Prime?",
+        "a": "MT4, MT5, cTrader, DXTrade, Match Trader y TradeLocker — eliges al comprar tu evaluación."
+      }
+    ]
+  },
+  {
+    "slug": "top-one-trader",
+    "rank": 9,
+    "name": "Top One Trader",
+    "brandColor": "#0ea5e9",
+    "resumen": "Firma estadounidense con splits de hasta 100% y un brazo de futuros que pagó $674,920 en junio de 2026.",
+    "descripcion": "Top One Trader opera desde septiembre de 2023 en Estados Unidos, fundada por Matt Morris. Su rama de CFD (forex, metales, índices, cripto) ofrece splits de 80% a 100% según programa, y su rama de futuros (Top One Futures) fue la que más pagó del grupo en junio de 2026: $674,920, frente a $116,443 de la rama CFD, según Propfirmmatch.",
+    "founded": "2023",
+    "tracRecordTraders": "Operando desde 2023 · Estados Unidos",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "Varios tamaños — verifica en su web",
+    "profitSplit": "80%-100% según programa (90% con add-on)",
+    "phases": "Instantáneo, 1 paso o 2 pasos",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · Match Trader · TradeLocker",
+    "trustpilotRating": "4.4",
+    "trustpilotReviews": "171",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Split de hasta 100% en ciertos programas",
+      "Sede en EE.UU. y Trustpilot 4.5",
+      "Brazo de futuros (Top One Futures) muy activo: $674,920 pagados en junio 2026"
+    ],
+    "cons": [
+      "La rama CFD pagó bastante menos ($116,443 en junio) que su rama de futuros",
+      "Firma aún joven (2023)",
+      "Menos plataformas que otras de la lista"
+    ],
+    "faq": [
+      {
+        "q": "¿Top One es de CFD o de futuros?",
+        "a": "Ambos: Top One Trader (CFD con MT5, Match Trader y TradeLocker) y Top One Futures (futuros CME). En junio de 2026 pagaron $116,443 y $674,920 respectivamente según Propfirmmatch."
+      },
+      {
+        "q": "¿Cuál es el split de Top One Trader?",
+        "a": "Depende del programa: desde 80% (ampliable a 90% con add-on) hasta 100% en programas específicos. Verifica el vigente en su web antes de comprar."
+      }
+    ]
+  },
+  {
+    "slug": "e8-markets",
+    "rank": 10,
+    "name": "E8 Markets",
+    "brandColor": "#a855f7",
+    "resumen": "Veterana del fondeo CFD (2021) con la mejor calificación de reseñas de esta lista: 4.8/5 en Propfirmmatch.",
+    "descripcion": "E8 Markets (antes E8 Funding) opera desde noviembre de 2021 en Estados Unidos bajo la dirección de Dylan Elchami. Es una de las firmas con más trayectoria del sector y la mejor calificada de esta lista (4.8/5 con 476 reseñas en Propfirmmatch). Ofrece evaluaciones de 1, 2 y 3 pasos con cuentas de $25,000 a $250,000 sobre forex, materias primas, índices y cripto, además de una rama de futuros (E8 Futures). En junio de 2026 pagó $420,433 en CFD y $323,129 en futuros.",
+    "founded": "2021",
+    "tracRecordTraders": "Operando desde 2021 · Estados Unidos",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "$25,000 – $250,000",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "1, 2 o 3 pasos (2 pasos: 8% fase 1)",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · cTrader · Match Trader · TradeLocker",
+    "trustpilotRating": "4.8",
+    "trustpilotReviews": "476",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Mejor calificación de la lista: 4.8/5 con 476 reseñas (Propfirmmatch)",
+      "Cinco años operando — veteranía real en un sector de firmas efímeras",
+      "Cuentas grandes: hasta $250,000",
+      "Rama de futuros (E8 Futures) que pagó $323,129 en junio 2026"
+    ],
+    "cons": [
+      "Apalancamiento moderado (1:50 en majors y cripto)",
+      "Sus programas cambian de nombre y condiciones con cierta frecuencia",
+      "Ya no está entre los 5 primeros por volumen de pagos"
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué destaca E8 Markets?",
+        "a": "Trayectoria (desde 2021) y satisfacción: 4.8/5 con 476 reseñas en Propfirmmatch, la mejor de esta lista. En junio de 2026 pagó $420,433 en CFD más $323,129 vía E8 Futures."
+      },
+      {
+        "q": "¿Qué tamaños de cuenta ofrece?",
+        "a": "De $25,000 a $250,000 según el programa, con rutas de 1, 2 y 3 pasos."
+      }
+    ]
+  },
+  {
+    "slug": "brightfunded",
+    "rank": 11,
+    "name": "BrightFunded",
+    "brandColor": "#14b8a6",
+    "resumen": "Firma de Dubái con fuerte apuesta cripto: datafeed real de Binance, Bybit, Coinbase y Kraken además del CFD clásico.",
+    "descripcion": "BrightFunded opera desde septiembre de 2023 en Emiratos Árabes Unidos, fundada por Jelle Dijkstra. Su diferencial es el trading de criptomonedas con datos reales de Binance, Bybit, Coinbase y Kraken, junto al catálogo CFD clásico (forex, metales, índices). Evaluación de 2 pasos (10% y 5%, drawdown total 10%) con cuentas de $10,000 a $200,000. En junio de 2026 pagó $391,674 a traders según Propfirmmatch.",
+    "founded": "2023",
+    "tracRecordTraders": "Operando desde 2023 · Emiratos Árabes Unidos",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "$10,000 – $200,000",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "2 pasos: 10% fase 1 + 5% fase 2",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "10% del balance inicial (total)",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · cTrader · Plataforma propia (DXTrade)",
+    "trustpilotRating": "4.5",
+    "trustpilotReviews": "111",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Cripto con datafeed real de 4 exchanges grandes — raro en el fondeo",
+      "$391,674 pagados en junio 2026 (Propfirmmatch)",
+      "Objetivos estándar del sector (10%/5%) sin trampas raras"
+    ],
+    "cons": [
+      "Solo ruta de 2 pasos: no hay fondeo instantáneo",
+      "Firma de 2023: historial medio",
+      "La plataforma propia es DXTrade con marca: pruébala en demo antes"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué tiene de especial BrightFunded para cripto?",
+        "a": "Usa precios reales de Binance, Bybit, Coinbase y Kraken para sus instrumentos cripto, en lugar del típico CFD sintético. Si tu operativa es cripto, es de las pocas opciones así en el fondeo."
+      },
+      {
+        "q": "¿Cómo es su evaluación?",
+        "a": "Dos pasos: 10% de objetivo en fase 1 y 5% en fase 2, con drawdown total máximo del 10%, en cuentas de $10,000 a $200,000."
+      }
+    ]
+  },
+  {
+    "slug": "instant-funding",
+    "rank": 12,
+    "name": "Instant Funding",
+    "brandColor": "#f97316",
+    "resumen": "Pionera británica del fondeo instantáneo, con cuentas desde $1,250 — pero revisa sus reseñas recientes antes de comprar.",
+    "descripcion": "Instant Funding opera desde junio de 2022 en Reino Unido con liquidez de ThinkMarkets. Como su nombre indica, fue de las primeras en ofrecer cuentas fondeadas sin evaluación, además de rutas de 1 y 2 pasos, con cuentas desde $1,250 hasta $200,000 — el ticket de entrada más bajo de esta lista. Pagó $318,805 a traders en junio de 2026 según Propfirmmatch. Ojo: su calificación comunitaria (3.9/5, con 53 reseñas de 1 estrella entre 355) es la más baja de esta lista.",
+    "founded": "2022",
+    "tracRecordTraders": "Operando desde 2022 · Reino Unido",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "$1,250 – $200,000",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "Instantáneo, 1 paso (10%) o 2 pasos (8% + 5%)",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "10% del balance inicial (total)",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · cTrader · Match Trader",
+    "trustpilotRating": "3.9",
+    "trustpilotReviews": "355",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Entrada más barata de la lista: cuentas desde $1,250",
+      "Fondeo instantáneo real desde 2022 — de las pioneras",
+      "Liquidez de ThinkMarkets (broker regulado conocido)"
+    ],
+    "cons": [
+      "La calificación más baja de esta lista: 3.9/5 con un 15% de reseñas de 1 estrella",
+      "Volumen de pagos menor que firmas comparables",
+      "Recomendación AR4: lee sus quejas recientes en Propfirmmatch antes de comprar"
+    ],
+    "faq": [
+      {
+        "q": "¿Vale la pena Instant Funding?",
+        "a": "Su ticket de entrada de $1,250 es el más accesible de la lista y pagó $318,805 en junio de 2026. Pero su calificación (3.9/5) es la más baja de esta selección: lee las reseñas recientes y empieza pequeño si decides probarla."
+      },
+      {
+        "q": "¿Qué es el fondeo instantáneo?",
+        "a": "Pagas por una cuenta ya fondeada, sin pasar evaluación. A cambio, el costo inicial es mayor y las condiciones de retiro suelen ser más estrictas al principio."
+      }
+    ]
+  },
+  {
+    "slug": "finotive-funding",
+    "rank": 13,
+    "name": "Finotive Funding",
+    "brandColor": "#84cc16",
+    "resumen": "Cinco años en el mercado (2021) y broker propio: una de las estructuras más completas del fondeo CFD.",
+    "descripcion": "Finotive Funding opera desde abril de 2021 — de las más antiguas del sector — con sede en Emiratos Árabes Unidos y dirección de Oliver Newland. Tiene broker propio (Finotive Markets LLC) y ofrece fondeo instantáneo y evaluaciones de 1 y 2 pasos sobre forex, metales, índices, energía, cripto y acciones. En junio de 2026 pagó $307,029 a traders según Propfirmmatch.",
+    "founded": "2021",
+    "tracRecordTraders": "Operando desde 2021 · Emiratos Árabes Unidos",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "Varios tamaños — verifica en su web",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "Instantáneo, 1 paso o 2 pasos",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · Match Trader",
+    "trustpilotRating": "4.2",
+    "trustpilotReviews": "159",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Cinco años operando — supervivencia que pocas firmas logran",
+      "Broker propio: ejecución integrada en su ecosistema",
+      "Incluye acciones además del catálogo CFD típico",
+      "Método de pago propio (Finotive Pay) además de los clásicos"
+    ],
+    "cons": [
+      "Solo dos plataformas (MT5 y Match Trader)",
+      "Su broker propio implica que ellos controlan la ejecución: lee cómo gestionan conflictos de interés",
+      "Volumen de pagos medio ($307,029 en junio)"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es Finotive Pro?",
+        "a": "Una extensión de su modelo para traders consistentes, con condiciones mejoradas. Consulta los requisitos vigentes en su web."
+      },
+      {
+        "q": "¿Desde cuándo opera Finotive?",
+        "a": "Desde abril de 2021 — junto a E8 Markets, es de las firmas más veteranas de esta lista. En junio de 2026 pagó $307,029 según Propfirmmatch."
+      }
+    ]
+  },
+  {
+    "slug": "blueberry-funded",
+    "rank": 14,
+    "name": "Blueberry Funded",
+    "brandColor": "#6366f1",
+    "resumen": "El brazo de fondeo del broker australiano Blueberry Markets: respaldo real detrás de la marca.",
+    "descripcion": "Blueberry Funded nació en agosto de 2024 como la prop firm del broker Blueberry Markets (fundadores Dean Hyde y Marcus Fetherston), con entidad en Vanuatu. Su ventaja está en el respaldo: detrás hay un broker establecido con años de operación real. Ofrece rutas de 1 paso, 2 pasos e instantánea en MT5 y TradeLocker, con métodos de pago locales para varios países. En junio de 2026 pagó $217,505 a traders según Propfirmmatch, con 4.2/5 en 626 reseñas.",
+    "founded": "2024",
+    "tracRecordTraders": "Operando desde 2024 · Vanuatu (grupo Blueberry Markets, Australia)",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "Varios tamaños — verifica en su web",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "Instantáneo, 1 paso o 2 pasos",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · TradeLocker",
+    "trustpilotRating": "4.2",
+    "trustpilotReviews": "626",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Respaldo de un broker real (Blueberry Markets) — no es una marca de la nada",
+      "626 reseñas con 4.2/5: base de usuarios amplia para su edad",
+      "Métodos de pago locales en varios países"
+    ],
+    "cons": [
+      "Entidad registrada en Vanuatu: regulación ligera",
+      "Solo dos plataformas",
+      "Lanzada en 2024: aún construyendo historial de pagos"
+    ],
+    "faq": [
+      {
+        "q": "¿Quién está detrás de Blueberry Funded?",
+        "a": "El broker australiano Blueberry Markets, con años de operación real. Eso da una capa de respaldo que muchas prop firms no tienen, aunque la entidad de fondeo está registrada en Vanuatu."
+      },
+      {
+        "q": "¿Cuánto pagó en junio de 2026?",
+        "a": "$217,505 a traders, según el ranking de pagos de Propfirmmatch."
+      }
+    ]
+  },
+  {
+    "slug": "hantec-trader",
+    "rank": 15,
+    "name": "Hantec Trader",
+    "brandColor": "#eab308",
+    "resumen": "La prop firm del grupo Hantec (30+ años en mercados) con métodos de pago locales para Latinoamérica.",
+    "descripcion": "Hantec Trader es el brazo de fondeo de Hantec Markets, un grupo financiero con más de tres décadas de historia, operando la prop firm desde diciembre de 2023 desde Mauricio. Ofrece rutas de 1 paso, 2 pasos e instantánea en MT4 y MT5 sobre forex, metales, índices, energía y cripto. Destaca para LatAm: acepta Boleto (Brasil), CoDi (México) y Khipu (Chile) entre sus métodos de pago. En junio de 2026 pagó $200,260 a traders según Propfirmmatch.",
+    "founded": "2023",
+    "tracRecordTraders": "Operando desde 2023 · Mauricio (grupo Hantec, 30+ años)",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "Varios tamaños — verifica en su web",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "Instantáneo, 1 paso o 2 pasos",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT4 · MT5",
+    "trustpilotRating": "4.1",
+    "trustpilotReviews": "44",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Grupo con 30+ años en mercados financieros detrás de la marca",
+      "Métodos de pago locales de LatAm: Boleto, CoDi, Khipu",
+      "Trustpilot 4.3 de la marca"
+    ],
+    "cons": [
+      "Pocas reseñas de la prop firm específicamente (44)",
+      "Solo MetaTrader: sin cTrader ni TradingView",
+      "La entidad de la prop está en Mauricio, no bajo las licencias principales del grupo"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué relación tiene con Hantec Markets?",
+        "a": "Es su brazo de fondeo. El grupo Hantec tiene más de 30 años en mercados; la prop firm como tal opera desde diciembre de 2023 y pagó $200,260 en junio de 2026 según Propfirmmatch."
+      },
+      {
+        "q": "¿Puedo pagar desde Latinoamérica?",
+        "a": "Sí — es de las pocas con métodos locales: Boleto en Brasil, CoDi en México y Khipu en Chile, además de tarjeta y cripto."
+      }
+    ]
+  },
+  {
+    "slug": "crypto-fund-trader",
+    "rank": 16,
+    "name": "Crypto Fund Trader",
+    "brandColor": "#f43f5e",
+    "resumen": "La especialista cripto de esta lista: más de 100 criptomonedas vía MT5 y ejecución conectada a Bybit, desde Suiza.",
+    "descripcion": "Crypto Fund Trader (CFT) opera desde noviembre de 2022 con sede en Suiza, dirigida por Alan Sanchez. Como su nombre indica, es la más cripto de la lista: más de 100 criptomonedas en MT5, 46 en su plataforma propia (Match Trader) y ejecución conectada a Bybit, además de forex, índices, materias primas y acciones (500+ instrumentos en total). Cuentas de $5,000 a $200,000 con rutas instantánea, de 1 y 2 pasos y apalancamiento 1:100. Pagó $176,727 en junio de 2026 según Propfirmmatch.",
+    "founded": "2022",
+    "tracRecordTraders": "Operando desde 2022 · Suiza",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "$5,000 – $200,000",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "Instantáneo, 1 paso o 2 pasos",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · Plataforma CFT (Match Trader) · Bybit",
+    "trustpilotRating": "4.1",
+    "trustpilotReviews": "106",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "La mayor oferta cripto del fondeo: 100+ monedas y conexión a Bybit",
+      "Sede en Suiza y casi 4 años operando",
+      "500+ instrumentos en total, incluidas acciones"
+    ],
+    "cons": [
+      "Volumen de pagos menor ($176,727 en junio)",
+      "Si no operas cripto, otras firmas de la lista ofrecen más por lo mismo",
+      "Apalancamiento 1:100 puede ser peligroso en cripto: gestiona el riesgo"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué criptos puedo operar en CFT?",
+        "a": "Más de 100 en MT5 y 46 en su plataforma propia, con ejecución conectada a Bybit — mucho más que el típico BTC/ETH de otras firmas."
+      },
+      {
+        "q": "¿Solo tiene cripto?",
+        "a": "No: también forex, índices, materias primas y acciones — más de 500 instrumentos. Pero su especialidad y diferencial es cripto."
+      }
+    ]
+  },
+  {
+    "slug": "fundedelite",
+    "rank": 17,
+    "name": "FundedElite",
+    "brandColor": "#64748b",
+    "resumen": "Firma italiana con \"Free Retry\": si fallas tu primer challenge, te dan otro gratis para intentarlo de nuevo.",
+    "descripcion": "FundedElite opera desde noviembre de 2023 en Italia, fundada por Christian Habibi. Su propuesta más llamativa es el Free Retry Model: si quemas tu primera evaluación, recibes una cuenta de reemplazo gratis. Además incluye un panel de estadísticas y journaling en cada cuenta (registro de operaciones y emociones — muy alineado con nuestro enfoque de psicotrading). Rutas instantánea, de 1 y 2 pasos en Match Trader y MT5. Pagó $110,178 en junio de 2026 según Propfirmmatch.",
+    "founded": "2023",
+    "tracRecordTraders": "Operando desde 2023 · Italia",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "Varios tamaños — verifica en su web",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "Instantáneo, 1 paso o 2 pasos",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "MT5 · Match Trader",
+    "trustpilotRating": "4.3",
+    "trustpilotReviews": "172",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Free Retry: segunda oportunidad gratis si fallas el primer challenge",
+      "Dashboard de journaling y emociones incluido — pura psicología aplicada",
+      "Sede en Italia (Unión Europea)"
+    ],
+    "cons": [
+      "Violaciones de reglas recortan el split (a 50% o hasta 30% según el caso)",
+      "Volumen de pagos chico ($110,178 en junio)",
+      "Solo dos plataformas"
+    ],
+    "faq": [
+      {
+        "q": "¿Cómo funciona el Free Retry?",
+        "a": "Si violas las reglas de tu primera evaluación, FundedElite te da una cuenta de reemplazo sin costo para volver a intentarlo. Es la única de esta lista con esa política."
+      },
+      {
+        "q": "¿Qué es el dashboard de journaling?",
+        "a": "Cada cuenta incluye un panel para registrar operaciones, métricas y hasta emociones — la misma disciplina que enseñamos en Psicotrading, integrada en la plataforma."
+      }
+    ]
+  },
+  {
+    "slug": "funded-futures-family",
+    "rank": 18,
+    "name": "Funded Futures Family",
+    "brandColor": "#06b6d4",
+    "resumen": "La boutique de futuros de esta lista: joven, de Estados Unidos, con evaluación de 1 paso y fondeo instantáneo.",
+    "descripcion": "Funded Futures Family opera desde octubre de 2024 en Estados Unidos, fundada por Manuel Meraz. Es una firma boutique especializada en futuros CME con dos rutas simples: evaluación de 1 paso o fondeo instantáneo, sobre Tradovate, NinjaTrader, WealthCharts y TradingView. Pagó $87,367 a traders en junio de 2026 según Propfirmmatch — el volumen más chico de esta lista, coherente con su tamaño y juventud.",
+    "founded": "2024",
+    "tracRecordTraders": "Operando desde 2024 · Estados Unidos",
+    "evaluationCost": "Según tamaño de cuenta y promociones — verifica el precio vigente en su web",
+    "accountSizes": "Varios tamaños — verifica en su web",
+    "profitSplit": "Según programa — verifica el vigente en su web",
+    "phases": "1 paso o fondeo instantáneo",
+    "dailyLossLimit": "Según programa",
+    "maxDrawdown": "Según programa",
+    "minTradingDays": "Según programa — revísalo en sus reglas",
+    "payoutFrequency": "Según programa",
+    "platforms": "Tradovate · NinjaTrader · WealthCharts · TradingView",
+    "trustpilotRating": "4.1",
+    "trustpilotReviews": "39",
+    "trustpilotLabel": "",
+    "ratingSource": "Propfirmmatch",
+    "approvalRate": "No publicada de forma verificable",
+    "avgPayoutTime": "Según su política vigente",
+    "pros": [
+      "Futuros con las plataformas que los futures traders realmente usan",
+      "Rutas simples: 1 paso o instantáneo, sin laberintos de fases",
+      "Trustpilot 4.6 de arranque"
+    ],
+    "cons": [
+      "La más chica de la lista: $87,367 pagados en junio",
+      "Lanzada en octubre 2024: historial muy corto",
+      "Solo futuros y solo tarjeta como método de pago"
+    ],
+    "faq": [
+      {
+        "q": "¿Para quién es Funded Futures Family?",
+        "a": "Para futures traders que quieren una firma simple (1 paso o instantáneo) con Tradovate/NinjaTrader. Si buscas historial largo y pagos masivos, Tradeify es la referencia en futuros de esta lista."
+      },
+      {
+        "q": "¿Cuánto pagó en junio de 2026?",
+        "a": "$87,367 según Propfirmmatch — chico comparado con Tradeify ($26.31M), pero real y verificable."
+      }
+    ]
+  },
+  {
     "slug": "adn-broker",
     "partner": true,
     "partnerLabel": "Aliado destacado",
