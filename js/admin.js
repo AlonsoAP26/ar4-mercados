@@ -117,15 +117,29 @@
       const res = await fetch('/.netlify/functions/admin-diplomas', { headers: { Authorization: 'Bearer ' + jwt } });
       const data = await res.json();
       if (!res.ok || !data.success) throw new Error(data.error || ('Error ' + res.status));
-      const activos = data.profiles.filter((p) => p.modules.length || (p.diplomas && Object.keys(p.diplomas).length));
       const CURSO_LBL = { basico: 'Formación Integral (30 módulos)', institucional: 'Institucional (50 módulos)' };
-      if (!activos.length) {
-        diplomasEl.innerHTML = '<p class="footer-text">Todavía nadie ha avanzado en los programas. Aquí verás el progreso, las notas, el nombre verificado y los diplomas emitidos de cada usuario.</p>';
+      const perfiles = data.profiles.slice();
+      if (!perfiles.length) {
+        diplomasEl.innerHTML = '<p class="footer-text">Aún no hay perfiles de comunidad registrados. Aquí verás el progreso, las notas, el nombre verificado y los diplomas emitidos de cada usuario.</p>';
         return;
       }
-      diplomasEl.innerHTML = activos.map((p) => {
+      // Orden: primero quienes más avanzaron en el temario NUEVO, luego el resto.
+      const avanceDe = (p) => p.progreso ? (p.progreso.freeDone + p.progreso.premDone) : 0;
+      perfiles.sort((a, b) => avanceDe(b) - avanceDe(a) || (b.points || 0) - (a.points || 0));
+      const totalDiplomas = perfiles.reduce((s, p) => s + Object.keys(p.diplomas || {}).length, 0);
+      const enCurso = perfiles.filter((p) => avanceDe(p) > 0).length;
+      diplomasEl.innerHTML = `
+        <p class="footer-text" style="margin-bottom:12px;">
+          <strong style="color:var(--gold-bright);">${perfiles.length}</strong> usuario(s) registrados ·
+          <strong style="color:var(--gold-bright);">${enCurso}</strong> avanzando en el temario nuevo ·
+          <strong style="color:var(--gold-bright);">${totalDiplomas}</strong> diploma(s) de programa emitidos
+        </p>` + perfiles.map((p) => {
         const dips = Object.keys(p.diplomas || {});
-        const prog = p.progreso ? `${p.progreso.freeDone}/30 gratis · ${p.progreso.premDone}/20 premium` : `${p.modules.length} módulos`;
+        const nuevos = avanceDe(p);
+        const antiguos = Math.max(0, (p.modules || []).length - nuevos);
+        const prog = p.progreso
+          ? `${p.progreso.freeDone}/30 gratis · ${p.progreso.premDone}/20 premium${antiguos ? ` · ${antiguos} del temario anterior (ya no cuentan)` : ''}`
+          : `${(p.modules || []).length} módulos`;
         return `
           <div class="admin-dip-card">
             <div class="admin-dip-head">
@@ -136,7 +150,7 @@
               <span class="admin-dip-chip${c === 'institucional' ? ' admin-dip-inst' : ''}">
                 DIPLOMA ${esc(CURSO_LBL[c] || c)} · ${esc((p.diplomas[c] || {}).cert || '')} · nota ${esc(String((p.diplomas[c] || {}).nota != null ? (p.diplomas[c] || {}).nota : '—'))}
                 <button class="admin-dip-revoke" data-userid="${esc(p.userId || '')}" data-curso="${esc(c)}" title="Revocar este diploma">✕</button>
-              </span>`).join('')}</div>` : '<p class="footer-text" style="margin:6px 0 0;">Sin diplomas de programa todavía (se emiten al aprobar el programa completo).</p>'}
+              </span>`).join('')}</div>` : '<p class="footer-text" style="margin:6px 0 0;">Sin diplomas de programa todavía (se emiten al completar y aprobar el programa entero).</p>'}
             ${p.nombre && p.userId ? `<button class="filter-chip admin-name-reset" data-userid="${esc(p.userId)}" style="margin-top:8px;">Permitir corregir nombre</button>` : ''}
           </div>`;
       }).join('');
