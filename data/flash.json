@@ -1,7 +1,347 @@
 {
- "lastId": 33442,
- "actualizado": "2026-07-19T23:08:51.813Z",
+ "lastId": 33462,
+ "actualizado": "2026-07-20T17:30:36.773Z",
  "items": [
+  {
+   "id": 33450,
+   "fecha": "2026-07-20T10:33:31+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33450",
+   "original": "STARMER STEPS DOWN Keir Starmer officially resigned as U.K. prime minister, declaring that “my work is done.” In his farewell speech, he said he had rebuilt the Labour Party after its 2019 defeat, led it to a landslide election victory in 2024, and leaves Britain “stronger and fairer” than when he took over.",
+   "titulo": "Keir Starmer renuncia como primer ministro del Reino Unido",
+   "resumen": "Keir Starmer confirmó oficialmente su renuncia como primer ministro británico, afirmando que 'mi trabajo está hecho'. En su discurso de despedida, destacó haber reconstruido el Partido Laborista tras la derrota de 2019, haberlo llevado a una victoria electoral arrolladora en 2024, y aseguró dejar al Reino Unido 'más fuerte y más justo' que cuando asumió el cargo. El titular no especifica quién asumirá el cargo ni el proceso de sucesión dentro del Partido Laborista.",
+   "analisis": {
+    "porque": "Un cambio de liderazgo en el Reino Unido introduce incertidumbre política que los mercados de la libra esterlina y activos británicos suelen vigilar de cerca, especialmente respecto a la continuidad de políticas fiscales y económicas.",
+    "queOcurrio": "Keir Starmer anunció su renuncia oficial como primer ministro del Reino Unido en un discurso de despedida.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "GBP",
+    "FTSE 100",
+    "EURUSD",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "GBP",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "FTSE 100",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Starmer",
+    "Reino Unido",
+    "renuncia",
+    "Partido Laborista",
+    "política británica"
+   ],
+   "tgText": "🇬🇧 Keir Starmer renuncia como primer ministro del Reino Unido: 'mi trabajo está hecho'. Incertidumbre sobre sucesión en el Partido Laborista.",
+   "xText": "🇬🇧 Keir Starmer confirma su renuncia como PM del Reino Unido, citando su legado tras la victoria laborista de 2024. Mercados atentos a la sucesión y su impacto en la libra. #ReinoUnido #Starmer",
+   "discordText": "**🇬🇧 Starmer renuncia como PM del Reino Unido**\n- 'Mi trabajo está hecho', declaró\n- Destaca victoria laborista de 2024\n- Sucesión aún sin confirmar\n- Vigilar: GBP, FTSE 100",
+   "pushText": "Keir Starmer renuncia como primer ministro británico",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "La libra esterlina (GBP) suele ser el primer activo en reaccionar ante cambios de liderazgo político en el Reino Unido.",
+    "despues": "El FTSE 100 y los bonos gilt podrían moverse según las expectativas sobre el sucesor y la continuidad de las políticas fiscales.",
+    "escenarios": "Los traders vigilan quién sucede a Starmer dentro del Partido Laborista y si hay señales de continuidad o cambio en la política económica.",
+    "riesgos": "El titular no especifica el proceso de sucesión ni el motivo exacto de la renuncia, lo que genera incertidumbre sobre el impacto real."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33449,
+   "fecha": "2026-07-20T10:30:06+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33449",
+   "original": "U.S. EYES TOUGHER CURBS ON CHINESE AI The Trump administration is reportedly considering stricter rules on Chinese AI models after the launch of Moonshot AI’s Kimi K3. Options include requiring U.S. hosting providers to guarantee the security of Chinese models and accept liability for breaches, alongside potential procurement bans and export blacklist measures, as Washington responds to China’s ra",
+   "titulo": "EE.UU. evalúa endurecer restricciones a modelos de IA chinos tras el lanzamiento de Kimi K3",
+   "resumen": "La administración Trump estudia normas más estrictas para modelos de inteligencia artificial de origen chino, luego del lanzamiento de Kimi K3 por Moonshot AI. Entre las opciones consideradas figuran exigir a proveedores de hosting en EE.UU. que garanticen la seguridad de los modelos chinos y asuman responsabilidad legal por brechas, además de posibles prohibiciones de compras públicas y ampliación de listas negras de exportación. El reporte no especifica plazos ni si estas medidas serán finalmente adoptadas.",
+   "analisis": {
+    "porque": "Un endurecimiento regulatorio sobre la IA china intensificaría la rivalidad tecnológica entre EE.UU. y China, con posibles efectos en proveedores de infraestructura cloud, semiconductores y compañías de IA expuestas a ambos mercados.",
+    "queOcurrio": "Según reportes, la administración Trump considera nuevas restricciones sobre modelos de IA chinos, incluyendo responsabilidad legal para hosts estadounidenses y posibles bloqueos de exportación.",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Acciones tecnológicas",
+    "Semiconductores"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "IA china",
+    "Moonshot AI",
+    "Kimi K3",
+    "restricciones tecnológicas",
+    "EE.UU.-China"
+   ],
+   "tgText": "🤖 EE.UU. evalúa reglas más duras para IA china tras el lanzamiento de Kimi K3 de Moonshot AI. Podría incluir responsabilidad legal para hosts y bloqueos de exportación.",
+   "xText": "🤖 La administración Trump estudia restricciones más estrictas a modelos de IA chinos tras Kimi K3 (Moonshot AI): responsabilidad legal para hosts, bloqueos de compras públicas y exportación. #IA #EEUUChina",
+   "discordText": "**🤖 EE.UU. vs IA china**\n- Se evalúan reglas más duras tras Kimi K3\n- Responsabilidad legal a hosts de EE.UU.\n- Posibles bloqueos de compras públicas/exportación\n- Aún sin confirmación oficial",
+   "pushText": "EE.UU. evalúa restricciones a la IA china tras Kimi K3",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones tecnológicas chinas y proveedores de cloud/hosting suelen reaccionar primero ante anuncios regulatorios de este tipo.",
+    "despues": "Podría extenderse a semiconductores y compañías de IA con exposición cruzada EE.UU.-China.",
+    "escenarios": "Los traders vigilan si la propuesta se formaliza en regulación concreta y la respuesta de China ante posibles restricciones.",
+    "riesgos": "El titular refleja una consideración interna, no una medida confirmada; el alcance final podría diferir sustancialmente."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33460,
+   "fecha": "2026-07-20T16:51:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33460",
+   "original": "TRUMP: EVERY TIME IRAN KILLS AN AMERICAN SOLDIER THEY WILL PAY FOR THAT KILLING MANY TIMES OVER",
+   "titulo": "Trump advierte a Irán: pagará 'muchas veces' por cada soldado de EE.UU. asesinado",
+   "resumen": "El presidente Donald Trump declaró que, cada vez que Irán mate a un soldado estadounidense, 'pagará por ello muchas veces', en medio de la escalada de tensiones militares en la región. La advertencia se produce el mismo día en que Irán reportó ataques a bases en el Golfo y a una planta industrial en su propio territorio, y tras un reporte del New York Times que revela que EE.UU. habría ocultado decenas de heridos militares durante el conflicto.",
+   "analisis": {
+    "porque": "Las declaraciones directas de Trump elevan la retórica de confrontación y sugieren posibles represalias militares, factor que los mercados de energía y refugio suelen vigilar de cerca ante el riesgo de una escalada bélica sostenida.",
+    "queOcurrio": "Trump declaró públicamente que Irán pagará 'muchas veces' por cada soldado estadounidense asesinado.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "escalada",
+    "retórica militar",
+    "Golfo Pérsico"
+   ],
+   "tgText": "🗣️ Trump: 'Cada vez que Irán mate a un soldado de EE.UU., pagará muchas veces por ello'. Retórica se endurece en medio de la escalada militar en el Golfo.",
+   "xText": "🗣️ Trump advierte a Irán: pagará 'muchas veces' por cada soldado estadounidense asesinado. Tensión militar en máximos tras reportes de ataques en el Golfo. #Trump #Irán",
+   "discordText": "**🗣️ Trump endurece advertencia a Irán**\n- 'Pagarán muchas veces' por cada soldado muerto\n- Contexto: escalada de ataques reportados en el Golfo\n- Retórica belicista eleva el riesgo geopolítico",
+   "pushText": "Trump advierte a Irán con represalias por soldados muertos",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "El petróleo y el oro suelen reaccionar primero ante retórica belicista de altos funcionarios estadounidenses.",
+    "despues": "El dólar y los bonos podrían seguir con movimientos de aversión al riesgo.",
+    "escenarios": "Los traders vigilan si la retórica se traduce en acciones militares concretas o solo permanece como declaración política.",
+    "riesgos": "Existe riesgo de que la declaración sea retórica sin acción militar inmediata, lo que podría moderar la reacción del mercado."
+   },
+   "macro": {
+    "dolar": "posible fortalecimiento leve",
+    "oro": "presión alcista leve",
+    "nasdaq": "presión bajista leve",
+    "dow": "presión bajista leve",
+    "sp500": "presión bajista leve",
+    "bitcoin": "posible caída leve",
+    "ethereum": "posible caída leve",
+    "bonos": "rendimientos con sesgo alcista leve",
+    "petroleo": "sesgo alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 33459,
+   "fecha": "2026-07-20T16:28:00+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33459",
+   "original": "IRAN'S PRESS TV SAYS AN INDUSTRIAL FACILITY IN CENTRAL IRAN'S KHOMEIN CITY WAS ATTACKED BY U.S.",
+   "titulo": "Medio estatal iraní denuncia ataque de EE.UU. a planta industrial en Khomein",
+   "resumen": "Press TV, medio estatal iraní, afirmó que una instalación industrial en la ciudad de Khomein, en el centro de Irán, fue atacada por fuerzas estadounidenses. El reporte no ha sido confirmado por Washington ni por fuentes independientes. De confirmarse, representaría una escalada significativa del conflicto hacia el interior del territorio iraní, más allá de los enfrentamientos regionales en el Golfo Pérsico reportados el mismo día.",
+   "analisis": {
+    "porque": "Un ataque directo dentro de territorio iraní, y no solo en bases regionales, marcaría un salto cualitativo en la intensidad del conflicto, con implicaciones directas para el riesgo de suministro petrolero y la estabilidad regional.",
+    "queOcurrio": "Press TV informó que una planta industrial en Khomein fue atacada por EE.UU.",
+    "estado": "rumor",
+    "fuenteOriginal": "Press TV"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Bitcoin"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Khomein",
+    "Press TV",
+    "ataque EE.UU.",
+    "escalada"
+   ],
+   "tgText": "🚨 Press TV (Irán) denuncia ataque de EE.UU. a planta industrial en Khomein. Sin confirmación de Washington. Escalada dentro de territorio iraní.",
+   "xText": "🚨 Medio estatal iraní Press TV afirma que EE.UU. atacó una instalación industrial en Khomein, centro de Irán. Sin confirmación independiente. #Irán #EEUU",
+   "discordText": "**🚨 Irán denuncia ataque de EE.UU. en su territorio**\n- Press TV: planta industrial en Khomein atacada\n- Sin confirmación de EE.UU.\n- Posible salto cualitativo en el conflicto",
+   "pushText": "Irán denuncia ataque de EE.UU. a planta en Khomein",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "El petróleo suele reaccionar de forma inmediata ante reportes de ataques dentro de territorio iraní, dada su relevancia para la producción y exportación energética.",
+    "despues": "Oro, dólar y bonos del Tesoro podrían seguir con movimientos de refugio.",
+    "escenarios": "Los traders vigilan una confirmación oficial de EE.UU. y la respuesta de Irán, así como posibles efectos sobre infraestructura energética iraní.",
+    "riesgos": "El reporte proviene exclusivamente de un medio estatal iraní, con historial de propaganda; existe riesgo alto de imprecisión o exageración."
+   },
+   "macro": {
+    "dolar": "posible fortalecimiento por refugio",
+    "oro": "presión alcista",
+    "nasdaq": "presión bajista posible",
+    "dow": "presión bajista posible",
+    "sp500": "presión bajista posible",
+    "bitcoin": "posible caída",
+    "ethereum": "posible caída",
+    "bonos": "rendimientos con sesgo alcista por riesgo geopolítico",
+    "petroleo": "sesgo alcista marcado"
+   },
+   "updates": []
+  },
+  {
+   "id": 33454,
+   "fecha": "2026-07-20T13:16:12+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33454",
+   "original": "IRAN'S REVOLUTIONARY GUARDS SAY THEY TARGETED AL-SAKHIR AIR BASE AND BIN SALMAN PORT IN BAHRAIN, ARIFJAN BASE IN KUWAIT",
+   "titulo": "Guardia Revolucionaria de Irán afirma haber atacado bases en Baréin y Kuwait",
+   "resumen": "La Guardia Revolucionaria de Irán (IRGC) declaró haber atacado la base aérea Al-Sakhir y el puerto Bin Salman en Baréin, además de la base Arifjan en Kuwait, instalaciones vinculadas a la presencia militar estadounidense en la región. El anuncio proviene exclusivamente del cuerpo militar iraní y no ha sido confirmado de forma independiente por Baréin, Kuwait o Washington. La escalada se produce en un contexto de conflicto abierto entre Irán y fuerzas occidentales en el Golfo Pérsico, con crecientes reportes de enfrentamientos directos en instalaciones que albergan tropas estadounidenses.",
+   "analisis": {
+    "porque": "Un ataque directo a instalaciones militares en Baréin y Kuwait, países aliados de EE.UU. con bases estadounidenses, eleva el riesgo de una escalada regional que podría afectar el flujo de petróleo por el Golfo Pérsico y el Estrecho de Ormuz.",
+    "queOcurrio": "El Cuerpo de la Guardia Revolucionaria Islámica de Irán declaró haber atacado la base aérea Al-Sakhir y el puerto Bin Salman en Baréin, así como la base Arifjan en Kuwait, según su propio comunicado.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "Guardia Revolucionaria de Irán (comunicado oficial)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "Bitcoin"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Baréin",
+    "Kuwait",
+    "IRGC",
+    "Golfo Pérsico",
+    "petróleo",
+    "geopolítica"
+   ],
+   "tgText": "🚨 Irán afirma haber atacado bases en Baréin y Kuwait usadas por EE.UU. Escalada militar en el Golfo pone en alerta a mercados de petróleo y refugio.",
+   "xText": "🚨 La Guardia Revolucionaria de Irán dice haber atacado bases en Baréin (Al-Sakhir, puerto Bin Salman) y Kuwait (Arifjan). Sin confirmación independiente. Escalada en el Golfo Pérsico. #Irán #Petróleo",
+   "discordText": "**🚨 Irán ataca bases en Baréin y Kuwait**\n- IRGC afirma haber golpeado Al-Sakhir, puerto Bin Salman y base Arifjan\n- Sin confirmación independiente\n- Riesgo de escalada en el Golfo Pérsico\n- Vigilar: petróleo, oro, DXY",
+   "pushText": "Irán dice haber atacado bases de EE.UU. en Baréin y Kuwait",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "El petróleo (Brent/WTI) suele ser el primer activo en reaccionar ante riesgos de interrupción en el Golfo Pérsico, seguido del oro como refugio.",
+    "despues": "El dólar (DXY) y los bonos del Tesoro podrían moverse según el apetito por riesgo; activos de riesgo como acciones y criptomonedas tienden a retroceder.",
+    "escenarios": "Los traders vigilan si se confirma daño real a instalaciones, un posible cierre parcial del Estrecho de Ormuz, y la respuesta de EE.UU. o aliados del Golfo.",
+    "riesgos": "El titular proviene de una fuente militar iraní sin confirmación independiente; existe riesgo de exageración propagandística o desinformación."
+   },
+   "macro": {
+    "dolar": "posible fortalecimiento por demanda de refugio",
+    "oro": "presión alcista por aversión al riesgo",
+    "nasdaq": "posible presión bajista por aumento de aversión al riesgo",
+    "dow": "posible presión bajista similar",
+    "sp500": "posible presión bajista similar",
+    "bitcoin": "posible caída por salida de activos de riesgo",
+    "ethereum": "posible caída similar a Bitcoin",
+    "bonos": "rendimientos podrían subir por prima de riesgo e inflación energética",
+    "petroleo": "sesgo alcista claro por riesgo de suministro en el Golfo"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-20T13:32:15+00:00",
+     "id": 33455,
+     "texto": "La agencia estatal de noticias de Kuwait (KUNA) confirmó el sonido de sirenas de alerta en el país, poco después de que la Guardia Revolucionaria de Irán afirmara haber atacado la base Arifjan, usada por fuerzas estadounidenses. La confirmación de las sirenas añade evidencia circunstancial a la escalada reportada, aunque no constituye verificación independiente del ataque en sí. La situación mantiene en vilo a los mercados de energía y refugio ante el riesgo de una respuesta militar más amplia en el Golfo Pérsico.",
+     "tgUrl": "https://t.me/walterbloomberg/33455"
+    }
+   ],
+   "actualizado": "2026-07-20T13:32:15+00:00"
+  },
   {
    "id": 33441,
    "fecha": "2026-07-19T22:03:40+00:00",
