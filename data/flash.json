@@ -1,77 +1,54 @@
 {
- "lastId": 33462,
- "actualizado": "2026-07-20T17:30:36.773Z",
+ "lastId": 33466,
+ "actualizado": "2026-07-20T21:20:56.650Z",
  "items": [
   {
-   "id": 33460,
-   "fecha": "2026-07-20T16:51:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33460",
-   "original": "TRUMP: EVERY TIME IRAN KILLS AN AMERICAN SOLDIER THEY WILL PAY FOR THAT KILLING MANY TIMES OVER",
-   "titulo": "Trump advierte a Irán: pagará 'muchas veces' por cada soldado de EE.UU. asesinado",
-   "resumen": "El presidente Donald Trump declaró que, cada vez que Irán mate a un soldado estadounidense, 'pagará por ello muchas veces', en medio de la escalada de tensiones militares en la región. La advertencia se produce el mismo día en que Irán reportó ataques a bases en el Golfo y a una planta industrial en su propio territorio, y tras un reporte del New York Times que revela que EE.UU. habría ocultado decenas de heridos militares durante el conflicto.",
+   "id": 33466,
+   "fecha": "2026-07-20T21:00:55+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33466",
+   "original": "KASH PATEL IS PLANNING A TRIP TO RUSSIA",
+   "titulo": "El director del FBI, Kash Patel, planea un viaje a Rusia en medio de tensiones geopolíticas",
+   "resumen": "Según el titular, Kash Patel, director del FBI, estaría planeando un viaje a Rusia. No se especifican fecha, motivo oficial de la visita ni agenda prevista. La noticia se produce en un contexto de tensión geopolítica elevada, con Washington enfocado simultáneamente en la escalada con Irán y en discusiones sobre sanciones adicionales a Rusia planteadas previamente por Trump.",
    "analisis": {
-    "porque": "Las declaraciones directas de Trump elevan la retórica de confrontación y sugieren posibles represalias militares, factor que los mercados de energía y refugio suelen vigilar de cerca ante el riesgo de una escalada bélica sostenida.",
-    "queOcurrio": "Trump declaró públicamente que Irán pagará 'muchas veces' por cada soldado estadounidense asesinado.",
-    "estado": "confirmado",
+    "porque": "Un viaje de un alto funcionario de seguridad estadounidense a Rusia en medio de tensiones múltiples (Irán, sanciones a Rusia) puede señalar movimientos diplomáticos o de inteligencia con implicancias en la política exterior de EE.UU., aunque el impacto directo en mercados es limitado hasta conocerse más detalles.",
+    "queOcurrio": "Se reportó que Kash Patel, director del FBI, planea viajar a Rusia.",
+    "estado": "no-verificable",
     "fuenteOriginal": "no indicada"
    },
-   "impacto": "alto",
-   "breaking": true,
+   "impacto": "bajo",
+   "breaking": false,
    "activos": [
-    "Petróleo",
-    "Oro",
     "DXY",
-    "Bonos"
+    "Bonos",
+    "Petróleo"
    ],
    "sesgos": [
     {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
      "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
+     "sesgo": "neutral"
     }
    ],
-   "volatilidad": "alta",
+   "volatilidad": "baja",
    "categoria": "Geopolítica",
    "keywords": [
-    "Trump",
-    "Irán",
-    "escalada",
-    "retórica militar",
-    "Golfo Pérsico"
+    "Kash Patel",
+    "FBI",
+    "Rusia",
+    "diplomacia",
+    "sanciones"
    ],
-   "tgText": "🗣️ Trump: 'Cada vez que Irán mate a un soldado de EE.UU., pagará muchas veces por ello'. Retórica se endurece en medio de la escalada militar en el Golfo.",
-   "xText": "🗣️ Trump advierte a Irán: pagará 'muchas veces' por cada soldado estadounidense asesinado. Tensión militar en máximos tras reportes de ataques en el Golfo. #Trump #Irán",
-   "discordText": "**🗣️ Trump endurece advertencia a Irán**\n- 'Pagarán muchas veces' por cada soldado muerto\n- Contexto: escalada de ataques reportados en el Golfo\n- Retórica belicista eleva el riesgo geopolítico",
-   "pushText": "Trump advierte a Irán con represalias por soldados muertos",
-   "importancia": 7,
+   "tgText": "📌 Kash Patel, director del FBI, planea un viaje a Rusia. Sin detalles sobre fecha o motivo. Contexto: tensiones con Irán y sanciones a Rusia en debate.",
+   "xText": "📌 El director del FBI, Kash Patel, planea un viaje a Rusia, según reportes. Sin fecha ni agenda confirmada. Ocurre en medio de tensiones con Irán y debate por sanciones a Moscú.",
+   "discordText": "**📌 Kash Patel planea viaje a Rusia**\n- Sin fecha ni motivo especificado\n- Contexto: tensión con Irán + sanciones a Rusia en debate\n- Estado: no-verificable",
+   "pushText": "Kash Patel planea viajar a Rusia",
+   "importancia": 5,
    "reaccion": {
-    "primero": "El petróleo y el oro suelen reaccionar primero ante retórica belicista de altos funcionarios estadounidenses.",
-    "despues": "El dólar y los bonos podrían seguir con movimientos de aversión al riesgo.",
-    "escenarios": "Los traders vigilan si la retórica se traduce en acciones militares concretas o solo permanece como declaración política.",
-    "riesgos": "Existe riesgo de que la declaración sea retórica sin acción militar inmediata, lo que podría moderar la reacción del mercado."
+    "primero": "Impacto directo limitado en mercados; podría afectar marginalmente el sentimiento sobre relaciones EE.UU.-Rusia.",
+    "despues": "Posible atención sobre el rublo, sanciones y activos vinculados a energía rusa si se conocen más detalles.",
+    "escenarios": "Los traders vigilan si el viaje se confirma oficialmente y si está vinculado a negociaciones sobre sanciones o al conflicto en Ucrania.",
+    "riesgos": "El titular no indica fuente ni contexto oficial, por lo que la información permanece sin verificar."
    },
-   "macro": {
-    "dolar": "posible fortalecimiento leve",
-    "oro": "presión alcista leve",
-    "nasdaq": "presión bajista leve",
-    "dow": "presión bajista leve",
-    "sp500": "presión bajista leve",
-    "bitcoin": "posible caída leve",
-    "ethereum": "posible caída leve",
-    "bonos": "rendimientos con sesgo alcista leve",
-    "petroleo": "sesgo alcista"
-   },
+   "macro": null,
    "updates": []
   },
   {
@@ -145,7 +122,148 @@
     "bonos": "rendimientos con sesgo alcista por riesgo geopolítico",
     "petroleo": "sesgo alcista marcado"
    },
+   "updates": [
+    {
+     "fecha": "2026-07-20T20:18:11+00:00",
+     "id": 33465,
+     "texto": "El mando militar estadounidense confirmó oficialmente que lanzó ataques contra Irán el día lunes, corroborando lo que previamente había denunciado un medio estatal iraní respecto a un ataque en la planta industrial de Khomein. Esta confirmación institucional eleva el nivel de certeza sobre la escalada militar directa entre ambos países. El titular no detalla objetivos específicos, número de ataques ni daños causados.",
+     "tgUrl": "https://t.me/walterbloomberg/33465"
+    }
+   ],
+   "actualizado": "2026-07-20T20:18:11+00:00"
+  },
+  {
+   "id": 33464,
+   "fecha": "2026-07-20T19:52:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33464",
+   "original": "IRAN'S FARS SAYS EXPLOSIONS HEARD NEAR SIRIK, REASON UNKNOWN",
+   "titulo": "Medio estatal iraní reporta explosiones cerca de Sirik sin causa confirmada",
+   "resumen": "La agencia iraní FARS informó que se escucharon explosiones cerca de la localidad de Sirik, sin precisar el origen ni la magnitud del hecho. El titular no aporta detalles sobre daños, víctimas o si el episodio está vinculado a la escalada militar en curso entre EE.UU. e Irán en la región del Estrecho de Ormuz. No existe confirmación independiente de fuentes occidentales al momento de esta publicación.",
+   "analisis": {
+    "porque": "Cualquier reporte de explosiones en territorio iraní, aun sin confirmar, alimenta la percepción de escalada militar activa y puede generar reacciones inmediatas en petróleo y activos refugio ante la incertidumbre.",
+    "queOcurrio": "FARS reportó explosiones cerca de Sirik, Irán, sin identificar la causa.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "FARS"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Sirik",
+    "explosiones",
+    "FARS",
+    "Estrecho de Ormuz"
+   ],
+   "tgText": "⚠️ FARS (Irán): explosiones escuchadas cerca de Sirik, causa desconocida. Sin confirmación independiente aún.",
+   "xText": "⚠️ Medio estatal iraní FARS reporta explosiones cerca de Sirik, sin causa confirmada. Contexto: escalada militar EE.UU.-Irán en el Estrecho de Ormuz.",
+   "discordText": "**⚠️ Explosiones cerca de Sirik, Irán**\n- Fuente: FARS (medio estatal)\n- Causa: no especificada\n- Estado: no-verificable",
+   "pushText": "Irán reporta explosiones cerca de Sirik",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo, por la ubicación estratégica cercana al Estrecho de Ormuz.",
+    "despues": "Oro y dólar como refugio; posible impacto en aseguradoras de transporte marítimo.",
+    "escenarios": "Confirmación o desmentido por fuentes militares occidentales, identificación de blanco atacado y si afecta infraestructura energética o de transporte.",
+    "riesgos": "Fuente estatal iraní sin verificación independiente; la causa de las explosiones es explícitamente desconocida según el propio titular."
+   },
+   "macro": null,
    "updates": []
+  },
+  {
+   "id": 33460,
+   "fecha": "2026-07-20T16:51:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33460",
+   "original": "TRUMP: EVERY TIME IRAN KILLS AN AMERICAN SOLDIER THEY WILL PAY FOR THAT KILLING MANY TIMES OVER",
+   "titulo": "Trump advierte a Irán: pagará 'muchas veces' por cada soldado de EE.UU. asesinado",
+   "resumen": "El presidente Donald Trump declaró que, cada vez que Irán mate a un soldado estadounidense, 'pagará por ello muchas veces', en medio de la escalada de tensiones militares en la región. La advertencia se produce el mismo día en que Irán reportó ataques a bases en el Golfo y a una planta industrial en su propio territorio, y tras un reporte del New York Times que revela que EE.UU. habría ocultado decenas de heridos militares durante el conflicto.",
+   "analisis": {
+    "porque": "Las declaraciones directas de Trump elevan la retórica de confrontación y sugieren posibles represalias militares, factor que los mercados de energía y refugio suelen vigilar de cerca ante el riesgo de una escalada bélica sostenida.",
+    "queOcurrio": "Trump declaró públicamente que Irán pagará 'muchas veces' por cada soldado estadounidense asesinado.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "escalada",
+    "retórica militar",
+    "Golfo Pérsico"
+   ],
+   "tgText": "🗣️ Trump: 'Cada vez que Irán mate a un soldado de EE.UU., pagará muchas veces por ello'. Retórica se endurece en medio de la escalada militar en el Golfo.",
+   "xText": "🗣️ Trump advierte a Irán: pagará 'muchas veces' por cada soldado estadounidense asesinado. Tensión militar en máximos tras reportes de ataques en el Golfo. #Trump #Irán",
+   "discordText": "**🗣️ Trump endurece advertencia a Irán**\n- 'Pagarán muchas veces' por cada soldado muerto\n- Contexto: escalada de ataques reportados en el Golfo\n- Retórica belicista eleva el riesgo geopolítico",
+   "pushText": "Trump advierte a Irán con represalias por soldados muertos",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "El petróleo y el oro suelen reaccionar primero ante retórica belicista de altos funcionarios estadounidenses.",
+    "despues": "El dólar y los bonos podrían seguir con movimientos de aversión al riesgo.",
+    "escenarios": "Los traders vigilan si la retórica se traduce en acciones militares concretas o solo permanece como declaración política.",
+    "riesgos": "Existe riesgo de que la declaración sea retórica sin acción militar inmediata, lo que podría moderar la reacción del mercado."
+   },
+   "macro": {
+    "dolar": "posible fortalecimiento leve",
+    "oro": "presión alcista leve",
+    "nasdaq": "presión bajista leve",
+    "dow": "presión bajista leve",
+    "sp500": "presión bajista leve",
+    "bitcoin": "posible caída leve",
+    "ethereum": "posible caída leve",
+    "bonos": "rendimientos con sesgo alcista leve",
+    "petroleo": "sesgo alcista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-20T19:34:00+00:00",
+     "id": 33463,
+     "texto": "Según Axios, un alto funcionario estadounidense afirmó que Trump está enfocado en hacer que Irán 'pague' por presuntamente violar un entendimiento previo y por los ataques en el Estrecho de Ormuz. El funcionario señaló que los ataques militares de EE.UU. continuarán hasta que el propio Trump decida detenerlos, sin fijar condiciones ni plazos concretos. El titular no especifica qué tipo de acciones adicionales se contemplan ni si existe coordinación con aliados regionales.",
+     "tgUrl": "https://t.me/walterbloomberg/33463"
+    }
+   ],
+   "actualizado": "2026-07-20T19:34:00+00:00"
   },
   {
    "id": 33454,
