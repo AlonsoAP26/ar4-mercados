@@ -1,5 +1,6 @@
 async function loadFondeo() {
-  const res = await fetch('data/fondeo.json');
+  // Rompe-caché: sin esto, el CDN puede servir una versión vieja del ranking.
+  const res = await fetch('data/fondeo.json?cb=' + Math.floor(Date.now() / 600000));
   if (!res.ok) throw new Error('No se pudieron cargar las cuentas de fondeo');
   return res.json();
 }
