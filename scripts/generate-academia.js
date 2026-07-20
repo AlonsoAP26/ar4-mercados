@@ -32,7 +32,9 @@ async function callApi(apiKey, prompt) {
       headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
       body: JSON.stringify({
         model: 'claude-sonnet-5',
-        max_tokens: 16000,
+        // 24000: el pensamiento del modelo comparte este tope con la respuesta;
+        // con 16000 las clases mas largas salian cortadas y fallaban la validacion.
+        max_tokens: 24000,
         thinking: { type: 'adaptive' },
         messages: [{ role: 'user', content: prompt }]
       })
