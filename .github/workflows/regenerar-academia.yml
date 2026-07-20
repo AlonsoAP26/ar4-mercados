@@ -1,0 +1,95 @@
+name: Regenerar academia (reemplazo total de los 50 modulos)
+
+# Genera las 50 clases nuevas (30 gratuitas + 20 Premium) con IA siguiendo el
+# plan de estudios de scripts/academia-plan.json, en archivos *-v2.json.
+# Cuando las 50 estan completas hace el CAMBIO TOTAL en un solo commit:
+# catalogos vivos + mapa de puntos del servidor. Reanudable: cada corrida
+# continua donde quedo la anterior. Cuando la academia nueva ya esta en vivo,
+# el script termina al instante sin gastar nada (el cron diario queda inocuo).
+on:
+  schedule:
+    - cron: '15 4 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: regenerar-academia
+  cancel-in-progress: false
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Tandas de 12 modulos con guardado y push tras cada tanda: si algo se
+      # corta, no se pierde el progreso ya generado.
+      - name: Generar tanda 1
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }
+        run: node scripts/generate-academia.js
+
+      - name: Guardar progreso 1
+        run: |
+          git config user.name "AR4 Mercados Bot"
+          git config user.email "bot@ar4mercados.local"
+          git add data/ netlify/functions/_module-points.js
+          git diff --staged --quiet || { git commit -m "Academia nueva: progreso de generacion (tanda 1)"; git pull --rebase --autostash origin master; git push; }
+
+      - name: Generar tanda 2
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }
+        run: node scripts/generate-academia.js
+
+      - name: Guardar progreso 2
+        run: |
+          git add data/ netlify/functions/_module-points.js
+          git diff --staged --quiet || { git commit -m "Academia nueva: progreso de generacion (tanda 2)"; git pull --rebase --autostash origin master; git push; }
+
+      - name: Generar tanda 3
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }
+        run: node scripts/generate-academia.js
+
+      - name: Guardar progreso 3
+        run: |
+          git add data/ netlify/functions/_module-points.js
+          git diff --staged --quiet || { git commit -m "Academia nueva: progreso de generacion (tanda 3)"; git pull --rebase --autostash origin master; git push; }
+
+      - name: Generar tanda 4
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }
+        run: node scripts/generate-academia.js
+
+      - name: Guardar progreso 4
+        run: |
+          git add data/ netlify/functions/_module-points.js
+          git diff --staged --quiet || { git commit -m "Academia nueva: progreso de generacion (tanda 4)"; git pull --rebase --autostash origin master; git push; }
+
+      - name: Generar tanda 5 (y cambio final si las 50 estan listas)
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }
+        run: node scripts/generate-academia.js
+
+      - name: Guardar progreso final
+        run: |
+          git add data/ netlify/functions/_module-points.js
+          git diff --staged --quiet || { git commit -m "Academia nueva: reemplazo total de los 50 modulos en vivo"; git pull --rebase --autostash origin master; git push; }
+
+      - name: Resumen
+        if: always()
+        run: |
+          node -e "
+          const fs=require('fs');
+          const plan=require('./scripts/academia-plan.json');
+          const ld=(p)=>{try{return JSON.parse(fs.readFileSync(p,'utf8'))}catch(e){return null}};
+          const v2f=ld('data/educacion-v2.json'), v2p=ld('data/educacion-premium-v2.json');
+          const live=ld('data/educacion.json');
+          if(!v2f && !v2p && live && live[0] && live[0].slug===plan.free[0].slug){ console.log('ACADEMIA NUEVA EN VIVO: 50/50 modulos publicados.'); process.exit(0); }
+          const f=(v2f||[]).length, p=(v2p||[]).length;
+          console.log('Progreso: gratuitos '+f+'/30 · premium '+p+'/20');
+          if(f+p < 50){ console.log('::warning::Generacion incompleta ('+(f+p)+'/50): la proxima corrida (cron diario o Run workflow) continuara automaticamente.'); }
+          "
