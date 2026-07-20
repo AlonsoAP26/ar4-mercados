@@ -1,7 +1,101 @@
 {
- "lastId": 33468,
- "actualizado": "2026-07-20T22:33:58.995Z",
+ "lastId": 33469,
+ "actualizado": "2026-07-20T23:14:46.657Z",
  "items": [
+  {
+   "id": 33454,
+   "fecha": "2026-07-20T13:16:12+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33454",
+   "original": "IRAN'S REVOLUTIONARY GUARDS SAY THEY TARGETED AL-SAKHIR AIR BASE AND BIN SALMAN PORT IN BAHRAIN, ARIFJAN BASE IN KUWAIT",
+   "titulo": "Guardia Revolucionaria de Irán afirma haber atacado bases en Baréin y Kuwait",
+   "resumen": "La Guardia Revolucionaria de Irán (IRGC) declaró haber atacado la base aérea Al-Sakhir y el puerto Bin Salman en Baréin, además de la base Arifjan en Kuwait, instalaciones vinculadas a la presencia militar estadounidense en la región. El anuncio proviene exclusivamente del cuerpo militar iraní y no ha sido confirmado de forma independiente por Baréin, Kuwait o Washington. La escalada se produce en un contexto de conflicto abierto entre Irán y fuerzas occidentales en el Golfo Pérsico, con crecientes reportes de enfrentamientos directos en instalaciones que albergan tropas estadounidenses.",
+   "analisis": {
+    "porque": "Un ataque directo a instalaciones militares en Baréin y Kuwait, países aliados de EE.UU. con bases estadounidenses, eleva el riesgo de una escalada regional que podría afectar el flujo de petróleo por el Golfo Pérsico y el Estrecho de Ormuz.",
+    "queOcurrio": "El Cuerpo de la Guardia Revolucionaria Islámica de Irán declaró haber atacado la base aérea Al-Sakhir y el puerto Bin Salman en Baréin, así como la base Arifjan en Kuwait, según su propio comunicado.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "Guardia Revolucionaria de Irán (comunicado oficial)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "Bitcoin"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Baréin",
+    "Kuwait",
+    "IRGC",
+    "Golfo Pérsico",
+    "petróleo",
+    "geopolítica"
+   ],
+   "tgText": "🚨 Irán afirma haber atacado bases en Baréin y Kuwait usadas por EE.UU. Escalada militar en el Golfo pone en alerta a mercados de petróleo y refugio.",
+   "xText": "🚨 La Guardia Revolucionaria de Irán dice haber atacado bases en Baréin (Al-Sakhir, puerto Bin Salman) y Kuwait (Arifjan). Sin confirmación independiente. Escalada en el Golfo Pérsico. #Irán #Petróleo",
+   "discordText": "**🚨 Irán ataca bases en Baréin y Kuwait**\n- IRGC afirma haber golpeado Al-Sakhir, puerto Bin Salman y base Arifjan\n- Sin confirmación independiente\n- Riesgo de escalada en el Golfo Pérsico\n- Vigilar: petróleo, oro, DXY",
+   "pushText": "Irán dice haber atacado bases de EE.UU. en Baréin y Kuwait",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "El petróleo (Brent/WTI) suele ser el primer activo en reaccionar ante riesgos de interrupción en el Golfo Pérsico, seguido del oro como refugio.",
+    "despues": "El dólar (DXY) y los bonos del Tesoro podrían moverse según el apetito por riesgo; activos de riesgo como acciones y criptomonedas tienden a retroceder.",
+    "escenarios": "Los traders vigilan si se confirma daño real a instalaciones, un posible cierre parcial del Estrecho de Ormuz, y la respuesta de EE.UU. o aliados del Golfo.",
+    "riesgos": "El titular proviene de una fuente militar iraní sin confirmación independiente; existe riesgo de exageración propagandística o desinformación."
+   },
+   "macro": {
+    "dolar": "posible fortalecimiento por demanda de refugio",
+    "oro": "presión alcista por aversión al riesgo",
+    "nasdaq": "posible presión bajista por aumento de aversión al riesgo",
+    "dow": "posible presión bajista similar",
+    "sp500": "posible presión bajista similar",
+    "bitcoin": "posible caída por salida de activos de riesgo",
+    "ethereum": "posible caída similar a Bitcoin",
+    "bonos": "rendimientos podrían subir por prima de riesgo e inflación energética",
+    "petroleo": "sesgo alcista claro por riesgo de suministro en el Golfo"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-20T22:40:28+00:00",
+     "id": 33469,
+     "texto": "El ejército iraní —no la Guardia Revolucionaria, que ya había reclamado ataques previos— afirma haber alcanzado con misiles superficie-superficie sistemas de misiles estadounidenses en la base de Arifjan, Kuwait. La información proviene de la televisión estatal iraní y no ha sido confirmada por fuentes occidentales, el Pentágono ni el gobierno kuwaití. Se suma a los reportes previos de ataques a bases en Baréin y Kuwait reivindicados por la Guardia Revolucionaria, indicando que múltiples ramas de las fuerzas armadas iraníes estarían participando en la ofensiva. El mercado sigue de cerca la escalada militar en el Golfo Pérsico, con foco en el riesgo de interrupción del flujo de petróleo por el Estrecho de Ormuz.",
+     "tgUrl": "https://t.me/walterbloomberg/33469"
+    },
+    {
+     "fecha": "2026-07-20T13:32:15+00:00",
+     "id": 33455,
+     "texto": "La agencia estatal de noticias de Kuwait (KUNA) confirmó el sonido de sirenas de alerta en el país, poco después de que la Guardia Revolucionaria de Irán afirmara haber atacado la base Arifjan, usada por fuerzas estadounidenses. La confirmación de las sirenas añade evidencia circunstancial a la escalada reportada, aunque no constituye verificación independiente del ataque en sí. La situación mantiene en vilo a los mercados de energía y refugio ante el riesgo de una respuesta militar más amplia en el Golfo Pérsico.",
+     "tgUrl": "https://t.me/walterbloomberg/33455"
+    }
+   ],
+   "actualizado": "2026-07-20T22:40:28+00:00"
+  },
   {
    "id": 33450,
    "fecha": "2026-07-20T10:33:31+00:00",
@@ -395,94 +489,6 @@
     }
    ],
    "actualizado": "2026-07-20T19:34:00+00:00"
-  },
-  {
-   "id": 33454,
-   "fecha": "2026-07-20T13:16:12+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33454",
-   "original": "IRAN'S REVOLUTIONARY GUARDS SAY THEY TARGETED AL-SAKHIR AIR BASE AND BIN SALMAN PORT IN BAHRAIN, ARIFJAN BASE IN KUWAIT",
-   "titulo": "Guardia Revolucionaria de Irán afirma haber atacado bases en Baréin y Kuwait",
-   "resumen": "La Guardia Revolucionaria de Irán (IRGC) declaró haber atacado la base aérea Al-Sakhir y el puerto Bin Salman en Baréin, además de la base Arifjan en Kuwait, instalaciones vinculadas a la presencia militar estadounidense en la región. El anuncio proviene exclusivamente del cuerpo militar iraní y no ha sido confirmado de forma independiente por Baréin, Kuwait o Washington. La escalada se produce en un contexto de conflicto abierto entre Irán y fuerzas occidentales en el Golfo Pérsico, con crecientes reportes de enfrentamientos directos en instalaciones que albergan tropas estadounidenses.",
-   "analisis": {
-    "porque": "Un ataque directo a instalaciones militares en Baréin y Kuwait, países aliados de EE.UU. con bases estadounidenses, eleva el riesgo de una escalada regional que podría afectar el flujo de petróleo por el Golfo Pérsico y el Estrecho de Ormuz.",
-    "queOcurrio": "El Cuerpo de la Guardia Revolucionaria Islámica de Irán declaró haber atacado la base aérea Al-Sakhir y el puerto Bin Salman en Baréin, así como la base Arifjan en Kuwait, según su propio comunicado.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "Guardia Revolucionaria de Irán (comunicado oficial)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos",
-    "Rendimientos USA",
-    "Bitcoin"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Baréin",
-    "Kuwait",
-    "IRGC",
-    "Golfo Pérsico",
-    "petróleo",
-    "geopolítica"
-   ],
-   "tgText": "🚨 Irán afirma haber atacado bases en Baréin y Kuwait usadas por EE.UU. Escalada militar en el Golfo pone en alerta a mercados de petróleo y refugio.",
-   "xText": "🚨 La Guardia Revolucionaria de Irán dice haber atacado bases en Baréin (Al-Sakhir, puerto Bin Salman) y Kuwait (Arifjan). Sin confirmación independiente. Escalada en el Golfo Pérsico. #Irán #Petróleo",
-   "discordText": "**🚨 Irán ataca bases en Baréin y Kuwait**\n- IRGC afirma haber golpeado Al-Sakhir, puerto Bin Salman y base Arifjan\n- Sin confirmación independiente\n- Riesgo de escalada en el Golfo Pérsico\n- Vigilar: petróleo, oro, DXY",
-   "pushText": "Irán dice haber atacado bases de EE.UU. en Baréin y Kuwait",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "El petróleo (Brent/WTI) suele ser el primer activo en reaccionar ante riesgos de interrupción en el Golfo Pérsico, seguido del oro como refugio.",
-    "despues": "El dólar (DXY) y los bonos del Tesoro podrían moverse según el apetito por riesgo; activos de riesgo como acciones y criptomonedas tienden a retroceder.",
-    "escenarios": "Los traders vigilan si se confirma daño real a instalaciones, un posible cierre parcial del Estrecho de Ormuz, y la respuesta de EE.UU. o aliados del Golfo.",
-    "riesgos": "El titular proviene de una fuente militar iraní sin confirmación independiente; existe riesgo de exageración propagandística o desinformación."
-   },
-   "macro": {
-    "dolar": "posible fortalecimiento por demanda de refugio",
-    "oro": "presión alcista por aversión al riesgo",
-    "nasdaq": "posible presión bajista por aumento de aversión al riesgo",
-    "dow": "posible presión bajista similar",
-    "sp500": "posible presión bajista similar",
-    "bitcoin": "posible caída por salida de activos de riesgo",
-    "ethereum": "posible caída similar a Bitcoin",
-    "bonos": "rendimientos podrían subir por prima de riesgo e inflación energética",
-    "petroleo": "sesgo alcista claro por riesgo de suministro en el Golfo"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-20T13:32:15+00:00",
-     "id": 33455,
-     "texto": "La agencia estatal de noticias de Kuwait (KUNA) confirmó el sonido de sirenas de alerta en el país, poco después de que la Guardia Revolucionaria de Irán afirmara haber atacado la base Arifjan, usada por fuerzas estadounidenses. La confirmación de las sirenas añade evidencia circunstancial a la escalada reportada, aunque no constituye verificación independiente del ataque en sí. La situación mantiene en vilo a los mercados de energía y refugio ante el riesgo de una respuesta militar más amplia en el Golfo Pérsico.",
-     "tgUrl": "https://t.me/walterbloomberg/33455"
-    }
-   ],
-   "actualizado": "2026-07-20T13:32:15+00:00"
   },
   {
    "id": 33449,
