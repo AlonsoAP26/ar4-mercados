@@ -101,7 +101,7 @@
     if (FEED_LIMIT && !showAll) list = list.slice(0, FEED_LIMIT);
     feed.innerHTML = (list.length
       ? list.map(cardHTML).join('')
-      : '<p class="footer-text">Sin titulares en este filtro todavía. El agente publica en cuanto detecta noticias relevantes (revisa cada 20 minutos en horario de mercado).</p>')
+      : '<p class="footer-text">Sin titulares en este filtro todavía. El agente vigila el mercado cada 10 minutos en las aperturas de Londres y Nueva York, y publica en cuanto detecta noticias relevantes.</p>')
       + (FEED_LIMIT && !showAll && total > FEED_LIMIT ? '<button class="btn btn-outline btn-block fl-vermas">Ver los ' + total + ' flashes →</button>' : '');
     const vermas = feed.querySelector('.fl-vermas');
     if (vermas) vermas.addEventListener('click', () => { showAll = true; render(cache); });
@@ -119,6 +119,9 @@
       const res = await fetch('data/flash.json?cb=' + Date.now());
       const data = await res.json();
       cache = data.items || [];
+      // Orden cronológico garantizado también en el navegador (por si el
+      // archivo viene de una corrida antigua sin ordenar).
+      cache.sort((a, b) => new Date(b.actualizado || b.fecha) - new Date(a.actualizado || a.fecha));
       render(cache);
       const st = document.getElementById('flashStatus');
       if (st) st.textContent = 'Última revisión del agente: ' + (data.actualizado ? timeAgo(data.actualizado) : '—') + ' · se actualiza solo';

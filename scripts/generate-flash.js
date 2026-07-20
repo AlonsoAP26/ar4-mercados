@@ -212,6 +212,9 @@ async function main() {
   }
 
   store.lastId = posts[posts.length - 1].id; // no re-analizar lo ya visto, publique o no
+  // Orden cronológico estricto (lo más reciente primero): cuando una corrida
+  // procesa varios titulares acumulados, sin esto quedaban desordenados.
+  store.items.sort((a, b) => new Date(b.actualizado || b.fecha) - new Date(a.actualizado || a.fecha));
   store.items = store.items.slice(0, MAX_ITEMS_STORED);
   store.actualizado = new Date().toISOString();
   fs.writeFileSync(DATA_PATH, JSON.stringify(store, null, 1));

@@ -3,113 +3,6 @@
  "actualizado": "2026-07-20T17:30:36.773Z",
  "items": [
   {
-   "id": 33450,
-   "fecha": "2026-07-20T10:33:31+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33450",
-   "original": "STARMER STEPS DOWN Keir Starmer officially resigned as U.K. prime minister, declaring that “my work is done.” In his farewell speech, he said he had rebuilt the Labour Party after its 2019 defeat, led it to a landslide election victory in 2024, and leaves Britain “stronger and fairer” than when he took over.",
-   "titulo": "Keir Starmer renuncia como primer ministro del Reino Unido",
-   "resumen": "Keir Starmer confirmó oficialmente su renuncia como primer ministro británico, afirmando que 'mi trabajo está hecho'. En su discurso de despedida, destacó haber reconstruido el Partido Laborista tras la derrota de 2019, haberlo llevado a una victoria electoral arrolladora en 2024, y aseguró dejar al Reino Unido 'más fuerte y más justo' que cuando asumió el cargo. El titular no especifica quién asumirá el cargo ni el proceso de sucesión dentro del Partido Laborista.",
-   "analisis": {
-    "porque": "Un cambio de liderazgo en el Reino Unido introduce incertidumbre política que los mercados de la libra esterlina y activos británicos suelen vigilar de cerca, especialmente respecto a la continuidad de políticas fiscales y económicas.",
-    "queOcurrio": "Keir Starmer anunció su renuncia oficial como primer ministro del Reino Unido en un discurso de despedida.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "GBP",
-    "FTSE 100",
-    "EURUSD",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "GBP",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "FTSE 100",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Starmer",
-    "Reino Unido",
-    "renuncia",
-    "Partido Laborista",
-    "política británica"
-   ],
-   "tgText": "🇬🇧 Keir Starmer renuncia como primer ministro del Reino Unido: 'mi trabajo está hecho'. Incertidumbre sobre sucesión en el Partido Laborista.",
-   "xText": "🇬🇧 Keir Starmer confirma su renuncia como PM del Reino Unido, citando su legado tras la victoria laborista de 2024. Mercados atentos a la sucesión y su impacto en la libra. #ReinoUnido #Starmer",
-   "discordText": "**🇬🇧 Starmer renuncia como PM del Reino Unido**\n- 'Mi trabajo está hecho', declaró\n- Destaca victoria laborista de 2024\n- Sucesión aún sin confirmar\n- Vigilar: GBP, FTSE 100",
-   "pushText": "Keir Starmer renuncia como primer ministro británico",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "La libra esterlina (GBP) suele ser el primer activo en reaccionar ante cambios de liderazgo político en el Reino Unido.",
-    "despues": "El FTSE 100 y los bonos gilt podrían moverse según las expectativas sobre el sucesor y la continuidad de las políticas fiscales.",
-    "escenarios": "Los traders vigilan quién sucede a Starmer dentro del Partido Laborista y si hay señales de continuidad o cambio en la política económica.",
-    "riesgos": "El titular no especifica el proceso de sucesión ni el motivo exacto de la renuncia, lo que genera incertidumbre sobre el impacto real."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33449,
-   "fecha": "2026-07-20T10:30:06+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33449",
-   "original": "U.S. EYES TOUGHER CURBS ON CHINESE AI The Trump administration is reportedly considering stricter rules on Chinese AI models after the launch of Moonshot AI’s Kimi K3. Options include requiring U.S. hosting providers to guarantee the security of Chinese models and accept liability for breaches, alongside potential procurement bans and export blacklist measures, as Washington responds to China’s ra",
-   "titulo": "EE.UU. evalúa endurecer restricciones a modelos de IA chinos tras el lanzamiento de Kimi K3",
-   "resumen": "La administración Trump estudia normas más estrictas para modelos de inteligencia artificial de origen chino, luego del lanzamiento de Kimi K3 por Moonshot AI. Entre las opciones consideradas figuran exigir a proveedores de hosting en EE.UU. que garanticen la seguridad de los modelos chinos y asuman responsabilidad legal por brechas, además de posibles prohibiciones de compras públicas y ampliación de listas negras de exportación. El reporte no especifica plazos ni si estas medidas serán finalmente adoptadas.",
-   "analisis": {
-    "porque": "Un endurecimiento regulatorio sobre la IA china intensificaría la rivalidad tecnológica entre EE.UU. y China, con posibles efectos en proveedores de infraestructura cloud, semiconductores y compañías de IA expuestas a ambos mercados.",
-    "queOcurrio": "Según reportes, la administración Trump considera nuevas restricciones sobre modelos de IA chinos, incluyendo responsabilidad legal para hosts estadounidenses y posibles bloqueos de exportación.",
-    "estado": "rumor",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Acciones tecnológicas",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "IA china",
-    "Moonshot AI",
-    "Kimi K3",
-    "restricciones tecnológicas",
-    "EE.UU.-China"
-   ],
-   "tgText": "🤖 EE.UU. evalúa reglas más duras para IA china tras el lanzamiento de Kimi K3 de Moonshot AI. Podría incluir responsabilidad legal para hosts y bloqueos de exportación.",
-   "xText": "🤖 La administración Trump estudia restricciones más estrictas a modelos de IA chinos tras Kimi K3 (Moonshot AI): responsabilidad legal para hosts, bloqueos de compras públicas y exportación. #IA #EEUUChina",
-   "discordText": "**🤖 EE.UU. vs IA china**\n- Se evalúan reglas más duras tras Kimi K3\n- Responsabilidad legal a hosts de EE.UU.\n- Posibles bloqueos de compras públicas/exportación\n- Aún sin confirmación oficial",
-   "pushText": "EE.UU. evalúa restricciones a la IA china tras Kimi K3",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones tecnológicas chinas y proveedores de cloud/hosting suelen reaccionar primero ante anuncios regulatorios de este tipo.",
-    "despues": "Podría extenderse a semiconductores y compañías de IA con exposición cruzada EE.UU.-China.",
-    "escenarios": "Los traders vigilan si la propuesta se formaliza en regulación concreta y la respuesta de China ante posibles restricciones.",
-    "riesgos": "El titular refleja una consideración interna, no una medida confirmada; el alcance final podría diferir sustancialmente."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
    "id": 33460,
    "fecha": "2026-07-20T16:51:33+00:00",
    "tgUrl": "https://t.me/walterbloomberg/33460",
@@ -341,6 +234,113 @@
     }
    ],
    "actualizado": "2026-07-20T13:32:15+00:00"
+  },
+  {
+   "id": 33450,
+   "fecha": "2026-07-20T10:33:31+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33450",
+   "original": "STARMER STEPS DOWN Keir Starmer officially resigned as U.K. prime minister, declaring that “my work is done.” In his farewell speech, he said he had rebuilt the Labour Party after its 2019 defeat, led it to a landslide election victory in 2024, and leaves Britain “stronger and fairer” than when he took over.",
+   "titulo": "Keir Starmer renuncia como primer ministro del Reino Unido",
+   "resumen": "Keir Starmer confirmó oficialmente su renuncia como primer ministro británico, afirmando que 'mi trabajo está hecho'. En su discurso de despedida, destacó haber reconstruido el Partido Laborista tras la derrota de 2019, haberlo llevado a una victoria electoral arrolladora en 2024, y aseguró dejar al Reino Unido 'más fuerte y más justo' que cuando asumió el cargo. El titular no especifica quién asumirá el cargo ni el proceso de sucesión dentro del Partido Laborista.",
+   "analisis": {
+    "porque": "Un cambio de liderazgo en el Reino Unido introduce incertidumbre política que los mercados de la libra esterlina y activos británicos suelen vigilar de cerca, especialmente respecto a la continuidad de políticas fiscales y económicas.",
+    "queOcurrio": "Keir Starmer anunció su renuncia oficial como primer ministro del Reino Unido en un discurso de despedida.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "GBP",
+    "FTSE 100",
+    "EURUSD",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "GBP",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "FTSE 100",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Starmer",
+    "Reino Unido",
+    "renuncia",
+    "Partido Laborista",
+    "política británica"
+   ],
+   "tgText": "🇬🇧 Keir Starmer renuncia como primer ministro del Reino Unido: 'mi trabajo está hecho'. Incertidumbre sobre sucesión en el Partido Laborista.",
+   "xText": "🇬🇧 Keir Starmer confirma su renuncia como PM del Reino Unido, citando su legado tras la victoria laborista de 2024. Mercados atentos a la sucesión y su impacto en la libra. #ReinoUnido #Starmer",
+   "discordText": "**🇬🇧 Starmer renuncia como PM del Reino Unido**\n- 'Mi trabajo está hecho', declaró\n- Destaca victoria laborista de 2024\n- Sucesión aún sin confirmar\n- Vigilar: GBP, FTSE 100",
+   "pushText": "Keir Starmer renuncia como primer ministro británico",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "La libra esterlina (GBP) suele ser el primer activo en reaccionar ante cambios de liderazgo político en el Reino Unido.",
+    "despues": "El FTSE 100 y los bonos gilt podrían moverse según las expectativas sobre el sucesor y la continuidad de las políticas fiscales.",
+    "escenarios": "Los traders vigilan quién sucede a Starmer dentro del Partido Laborista y si hay señales de continuidad o cambio en la política económica.",
+    "riesgos": "El titular no especifica el proceso de sucesión ni el motivo exacto de la renuncia, lo que genera incertidumbre sobre el impacto real."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33449,
+   "fecha": "2026-07-20T10:30:06+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33449",
+   "original": "U.S. EYES TOUGHER CURBS ON CHINESE AI The Trump administration is reportedly considering stricter rules on Chinese AI models after the launch of Moonshot AI’s Kimi K3. Options include requiring U.S. hosting providers to guarantee the security of Chinese models and accept liability for breaches, alongside potential procurement bans and export blacklist measures, as Washington responds to China’s ra",
+   "titulo": "EE.UU. evalúa endurecer restricciones a modelos de IA chinos tras el lanzamiento de Kimi K3",
+   "resumen": "La administración Trump estudia normas más estrictas para modelos de inteligencia artificial de origen chino, luego del lanzamiento de Kimi K3 por Moonshot AI. Entre las opciones consideradas figuran exigir a proveedores de hosting en EE.UU. que garanticen la seguridad de los modelos chinos y asuman responsabilidad legal por brechas, además de posibles prohibiciones de compras públicas y ampliación de listas negras de exportación. El reporte no especifica plazos ni si estas medidas serán finalmente adoptadas.",
+   "analisis": {
+    "porque": "Un endurecimiento regulatorio sobre la IA china intensificaría la rivalidad tecnológica entre EE.UU. y China, con posibles efectos en proveedores de infraestructura cloud, semiconductores y compañías de IA expuestas a ambos mercados.",
+    "queOcurrio": "Según reportes, la administración Trump considera nuevas restricciones sobre modelos de IA chinos, incluyendo responsabilidad legal para hosts estadounidenses y posibles bloqueos de exportación.",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Acciones tecnológicas",
+    "Semiconductores"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "IA china",
+    "Moonshot AI",
+    "Kimi K3",
+    "restricciones tecnológicas",
+    "EE.UU.-China"
+   ],
+   "tgText": "🤖 EE.UU. evalúa reglas más duras para IA china tras el lanzamiento de Kimi K3 de Moonshot AI. Podría incluir responsabilidad legal para hosts y bloqueos de exportación.",
+   "xText": "🤖 La administración Trump estudia restricciones más estrictas a modelos de IA chinos tras Kimi K3 (Moonshot AI): responsabilidad legal para hosts, bloqueos de compras públicas y exportación. #IA #EEUUChina",
+   "discordText": "**🤖 EE.UU. vs IA china**\n- Se evalúan reglas más duras tras Kimi K3\n- Responsabilidad legal a hosts de EE.UU.\n- Posibles bloqueos de compras públicas/exportación\n- Aún sin confirmación oficial",
+   "pushText": "EE.UU. evalúa restricciones a la IA china tras Kimi K3",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones tecnológicas chinas y proveedores de cloud/hosting suelen reaccionar primero ante anuncios regulatorios de este tipo.",
+    "despues": "Podría extenderse a semiconductores y compañías de IA con exposición cruzada EE.UU.-China.",
+    "escenarios": "Los traders vigilan si la propuesta se formaliza en regulación concreta y la respuesta de China ante posibles restricciones.",
+    "riesgos": "El titular refleja una consideración interna, no una medida confirmada; el alcance final podría diferir sustancialmente."
+   },
+   "macro": null,
+   "updates": []
   },
   {
    "id": 33441,
