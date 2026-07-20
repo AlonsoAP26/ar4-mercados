@@ -2,7 +2,7 @@ exports.handler = async (event, context) => {
   if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };
 
   const accessToken = process.env.MERCADOPAGO_ACCESS_TOKEN;
-  const priceSoles = Number(process.env.MERCADOPAGO_PREMIUM_PRICE_PEN || '37');
+  const priceSoles = Number(process.env.MERCADOPAGO_PREMIUM_PRICE_PEN || '45');
   if (!accessToken) {
     return { statusCode: 500, body: JSON.stringify({ success: false, error: 'Mercado Pago no está configurado todavía (falta MERCADOPAGO_ACCESS_TOKEN).' }) };
   }

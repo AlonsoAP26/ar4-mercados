@@ -379,7 +379,7 @@
       if (typeof gtag === 'function') {
         gtag('event', 'conversion', {
           'send_to': 'AW-18312316170/P8OpCIK2584cEIqK_5tE',
-          'value': 37.0,
+          'value': 45.0,
           'currency': 'PEN'
         });
       }

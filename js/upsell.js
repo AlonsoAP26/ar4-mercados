@@ -16,7 +16,7 @@ function injectUpsellModal() {
         <li>Acceso prioritario a cada herramienta nueva que lancemos</li>
         <li>Cancela cuando quieras, sin permanencia</li>
       </ul>
-      <div class="upsell-price">S/ 37 <span>PEN / mes · menos de S/1.25 al día</span></div>
+      <div class="upsell-price">S/ 45 <span>PEN / mes · S/ 1.50 al día</span></div>
       <a href="membresia.html" class="btn btn-gold btn-block">Desbloquear análisis completo →</a>
     </div>
   `;
