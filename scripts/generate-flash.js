@@ -60,7 +60,9 @@ async function fetchChannelPosts() {
 async function callApi(apiKey, prompt) {
   return apiCall(apiKey, {
     model: 'claude-sonnet-5',
-    max_tokens: 9000,
+    // 24000: el pensamiento de Sonnet 5 sale de este mismo tope; con 9000 los
+    // lunes de muchos titulares la respuesta llegaba cortada (stop max_tokens).
+    max_tokens: 24000,
     messages: [{ role: 'user', content: prompt }]
   });
 }
