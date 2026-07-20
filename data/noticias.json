@@ -1885,5 +1885,334 @@
       ],
       "patronUltimaVela": null
     }
+  },
+  {
+    "title": "Los pedidos de desempleo en EE.UU. caen a 208.000 y baten el pronóstico, el dólar se afirma",
+    "excerpt": "El Departamento de Trabajo reportó 208.000 solicitudes semanales de subsidio, por debajo de las 217.000 esperadas por el consenso, y reforzó la firmeza del dólar.",
+    "symbol": "CAPITALCOM:DXY",
+    "trend": "up",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dato: menos despidos de los previstos</h3><p>El Departamento de Trabajo de Estados Unidos informó que las solicitudes iniciales de subsidio por desempleo bajaron a 208.000 en la semana finalizada el 11 de julio, una caída de 8.000 respecto de la lectura previa. El resultado quedó por debajo de las 217.000 solicitudes que proyectaba el consenso de analistas relevado por Bloomberg y por Reuters, ambos con la misma cifra de referencia.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Un mercado laboral que sigue sin ceder</h3><p>El reporte confirma una tendencia que ya se había insinuado la semana anterior, cuando las solicitudes se habían mantenido prácticamente estables, señal de que los despidos siguen contenidos en la mayor economía del mundo. Para la Reserva Federal, un mercado laboral que no muestra grietas resta urgencia a un recorte de tasas en el corto plazo, un mensaje que los operadores de bonos y divisas tomaron nota inmediatamente tras la publicación del jueves.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dólar firme, el oro bajo presión</h3><p>El índice dólar (DXY) cotiza hoy en 101 puntos, con un avance de 0,2% en la jornada y de 0,9% en el último mes, y se mantiene por encima de su media móvil de 200 ruedas, con un RSI de 14 en 55,9, en zona neutral pero con sesgo comprador. El oro, en cambio, opera en 4.008,3 dólares la onza, con una caída acumulada de 8% en el mes y un RSI de 39,9, reflejo de que el metal pierde atractivo cuando el mercado recorta apuestas a una Fed más agresiva en materia de recortes.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El euro y las monedas emergentes, a la defensiva</h3><p>El euro cotiza en 1,1416 dólares, con una baja de 0,1% en el día y de 0,4% en el mes, por debajo de su media de 200 ruedas. En América Latina, el real brasileño (USD/BRL) se ubica en 5,0912 y el peso mexicano (USD/MXN) en 17,42, ambos con caídas diarias de 0,7%, un movimiento que contrasta con la firmeza generalizada del dólar frente a las divisas desarrolladas y sugiere que el flujo hacia activos emergentes de alto rendimiento sigue activo pese al dato laboral.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Más señales detrás del número</h3><p>La serie de solicitudes semanales viene de una lectura previa de 216.000, por lo que la caída a 208.000 marca el nivel más bajo en varias semanas y refuerza la lectura de un mercado laboral resiliente. En el panel de divisas y metales, el gráfico de mediano plazo confirma la misma historia: el DXY acumula una suba de 0,9% en el mes mientras retrocede apenas 0,3% en la semana, y el oro, aunque estable en la rueda (-0,1%) y con una leve suba semanal de 0,3%, sigue muy lejos de su máximo de 52 semanas de 5.586,2 dólares, tras el derrumbe mensual de 8%. El euro, por su parte, opera a mitad de camino entre su mínimo anual de 1,1325 y su máximo de 1,2024, sin una dirección definida, con un RSI de 44,2 que no marca sobrecompra ni sobreventa.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El dato de empleo de esta semana añade un argumento más a favor de una Fed paciente: mientras las solicitudes de desempleo se mantengan por debajo de los 220.000-230.000 que suelen asociarse a un enfriamiento más marcado del mercado laboral, el banco central estadounidense tiene margen para no apurar recortes adicionales de tasas. Eso favorece, en el margen, al dólar frente al euro y presiona a metales como el oro, que dependen en parte de expectativas de tasas reales más bajas. Lo que conviene vigilar en los próximos días es el próximo informe semanal de solicitudes de desempleo (se publica todos los jueves) y cualquier revisión al alza de la cifra actual, además de la reacción del euro si perfora su piso de 1,1325 o el oro si pierde el soporte psicológico de los 4.000 dólares, dado que ambos activos ya cotizan por debajo de sus medias de 200 ruedas.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-16/us-jobless-claims-decline-to-208-000-below-economist-forecasts"
+      },
+      {
+        "name": "Trading Economics",
+        "url": "https://tradingeconomics.com/united-states/jobless-claims"
+      },
+      {
+        "name": "U.S. News",
+        "url": "https://money.usnews.com/investing/news/articles/2026-07-16/us-weekly-jobless-claims-fall-labor-market-remains-stable"
+      }
+    ],
+    "aiSummary": {
+      "que": "Las solicitudes semanales de subsidio por desempleo en EE.UU. bajaron a 208.000, por debajo de las 217.000 que esperaba el consenso, señal de un mercado laboral firme.",
+      "porque": "Un dato mejor al esperado le quita presión a la Fed para acelerar recortes de tasas, lo que favorece al dólar y presiona a activos sensibles a tasas reales como el oro.",
+      "activos": [
+        "Índice dólar (DXY)",
+        "Oro",
+        "Euro/dólar",
+        "Peso mexicano",
+        "Real brasileño"
+      ],
+      "siguiente": "El próximo informe semanal de solicitudes de desempleo, el jueves, y la reacción del euro y el oro frente a sus niveles técnicos clave."
+    },
+    "aiScenarios": {
+      "alcista": 45,
+      "lateral": 35,
+      "bajista": 20
+    },
+    "aiDetects": {
+      "probabilidad": 58,
+      "riesgo": "Medio",
+      "lectura": "El sesgo de firmeza del dólar podría sostenerse mientras el mercado laboral estadounidense no muestre señales claras de deterioro."
+    },
+    "timeline": [
+      {
+        "cuando": "9 de julio",
+        "texto": "Las solicitudes de desempleo se habían mantenido prácticamente estables, con los despidos aún contenidos, según reportó Bloomberg."
+      },
+      {
+        "cuando": "16 de julio",
+        "texto": "El Departamento de Trabajo publicó la caída de las solicitudes a 208.000, por debajo de las 217.000 previstas por el consenso."
+      },
+      {
+        "cuando": "Hoy, 20 de julio",
+        "texto": "El mercado sigue digiriendo el dato: el DXY opera en 101 puntos y el oro cotiza en 4.008,3 dólares, ambos reflejando menores apuestas a recortes inminentes de la Fed."
+      },
+      {
+        "cuando": "Próximo jueves",
+        "texto": "Se publica el nuevo informe semanal de solicitudes de desempleo, indicador clave que el mercado seguirá de cerca."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué son las solicitudes de subsidio por desempleo?",
+        "a": "Es un indicador semanal que mide cuántas personas presentaron por primera vez una solicitud de seguro de desempleo en EE.UU.; una cifra baja suele indicar que los despidos son escasos."
+      },
+      {
+        "q": "¿Por qué el mercado reacciona a este dato si es solo semanal?",
+        "a": "Porque ofrece una lectura de alta frecuencia sobre la salud del mercado laboral, algo que la Reserva Federal observa de cerca para decidir el rumbo de las tasas de interés."
+      },
+      {
+        "q": "¿Por qué un dato laboral fuerte perjudica al oro?",
+        "a": "El oro no paga interés, por lo que suele perder atractivo cuando el mercado reduce sus expectativas de recortes de tasas, ya que sube el costo de oportunidad de sostenerlo."
+      },
+      {
+        "q": "¿Qué relación tiene esto con el dólar frente al peso mexicano o el real?",
+        "a": "Un dólar más firme por expectativas de tasas más altas por más tiempo suele presionar a las monedas emergentes, aunque el flujo de capitales puede compensar ese efecto en el corto plazo."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "FX:EURUSD",
+      "OANDA:XAUUSD",
+      "FX_IDC:USDMXN",
+      "FX_IDC:USDBRL"
+    ],
+    "category": "Forex",
+    "heroType": "forex",
+    "slug": "los-pedidos-de-desempleo-en-eeuu-caen-a-208000-y-baten-el-pr-mrtt1h6p",
+    "author": "AR4 Mercados",
+    "date": "2026-07-20",
+    "sourceName": "Bloomberg",
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-07-16/us-jobless-claims-decline-to-208-000-below-economist-forecasts",
+    "marketPanel": [
+      {
+        "symbol": "FX:EURUSD",
+        "nombre": "EUR/USD",
+        "yahooSymbol": "EURUSD=X",
+        "fuente": "Yahoo Finance (EURUSD=X)",
+        "fechaUltimaVela": "2026-07-20",
+        "precio": 1.1416,
+        "cierreAnterior": 1.1428,
+        "variacionDiaPct": -0.1,
+        "variacionSemanaPct": 0.3,
+        "variacionMesPct": -0.4,
+        "variacionAnioPct": -1.2,
+        "rangoDiaReal": {
+          "minimo": 1.1413,
+          "maximo": 1.1417
+        },
+        "rsi14": 44.2,
+        "lecturaRsi": "neutral",
+        "media50": 1.1523,
+        "media200": 1.1639,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0056,
+        "maximo52sem": 1.2024,
+        "minimo52sem": 1.1325,
+        "distanciaAMaximo52semPct": -5.1,
+        "distanciaAMinimo52semPct": 0.8,
+        "soportes": [
+          1.1397,
+          1.1325
+        ],
+        "resistencias": [
+          1.1473,
+          1.1677,
+          1.1828
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-07-20",
+        "precio": 101,
+        "cierreAnterior": 100.75,
+        "variacionDiaPct": 0.2,
+        "variacionSemanaPct": -0.3,
+        "variacionMesPct": 0.9,
+        "variacionAnioPct": 2.3,
+        "rangoDiaReal": {
+          "minimo": 100.65,
+          "maximo": 101.03
+        },
+        "rsi14": 55.9,
+        "lecturaRsi": "neutral",
+        "media50": 99.99,
+        "media200": 99.03,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4561,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -0.8,
+        "distanciaAMinimo52semPct": 5.7,
+        "soportes": [
+          100.45,
+          99.34,
+          98.79
+        ],
+        "resistencias": [
+          101.63
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "OANDA:XAUUSD",
+        "nombre": "Oro (XAU/USD, futuro COMEX)",
+        "yahooSymbol": "GC=F",
+        "fuente": "Yahoo Finance (GC=F)",
+        "fechaUltimaVela": "2026-07-20",
+        "precio": 4008.3,
+        "cierreAnterior": 4012.7,
+        "variacionDiaPct": -0.1,
+        "variacionSemanaPct": 0.3,
+        "variacionMesPct": -8,
+        "variacionAnioPct": 20,
+        "rangoDiaReal": {
+          "minimo": 4008.3,
+          "maximo": 4014.7
+        },
+        "rsi14": 39.9,
+        "lecturaRsi": "neutral",
+        "media50": 4304.48,
+        "media200": 4474.29,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 77.36,
+        "maximo52sem": 5586.2,
+        "minimo52sem": 3263.9,
+        "distanciaAMaximo52semPct": -28.2,
+        "distanciaAMinimo52semPct": 22.8,
+        "soportes": [
+          3962.9
+        ],
+        "resistencias": [
+          4199.7,
+          4228.7,
+          4258.9
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "FX_IDC:USDMXN",
+        "nombre": "USD/MXN (peso mexicano)",
+        "yahooSymbol": "USDMXN=X",
+        "fuente": "Yahoo Finance (USDMXN=X)",
+        "fechaUltimaVela": "2026-07-20",
+        "precio": 17.42,
+        "cierreAnterior": 17.54,
+        "variacionDiaPct": -0.7,
+        "variacionSemanaPct": -0.6,
+        "variacionMesPct": 0.4,
+        "variacionAnioPct": -7.1,
+        "rangoDiaReal": {
+          "minimo": 17.41,
+          "maximo": 17.43
+        },
+        "rsi14": 48.5,
+        "lecturaRsi": "neutral",
+        "media50": 17.38,
+        "media200": 17.71,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.1316,
+        "maximo52sem": 18.98,
+        "minimo52sem": 17.07,
+        "distanciaAMaximo52semPct": -8.2,
+        "distanciaAMinimo52semPct": 2,
+        "soportes": [
+          17.37,
+          17.24,
+          17.14
+        ],
+        "resistencias": [
+          17.43,
+          17.64,
+          17.94
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "FX_IDC:USDBRL",
+        "nombre": "USD/BRL (real brasileno)",
+        "yahooSymbol": "USDBRL=X",
+        "fuente": "Yahoo Finance (USDBRL=X)",
+        "fechaUltimaVela": "2026-07-20",
+        "precio": 5.0912,
+        "cierreAnterior": 5.127,
+        "variacionDiaPct": -0.7,
+        "variacionSemanaPct": -1.1,
+        "variacionMesPct": -1.2,
+        "variacionAnioPct": -8.6,
+        "rangoDiaReal": {
+          "minimo": 5.0912,
+          "maximo": 5.0912
+        },
+        "rsi14": 44.3,
+        "lecturaRsi": "neutral",
+        "media50": 5.1078,
+        "media200": 5.2266,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0656,
+        "maximo52sem": 5.6259,
+        "minimo52sem": 4.8812,
+        "distanciaAMaximo52semPct": -9.5,
+        "distanciaAMinimo52semPct": 4.3,
+        "soportes": [
+          5.0651,
+          5.0402,
+          4.9946
+        ],
+        "resistencias": [
+          5.1035,
+          5.2461,
+          5.3108
+        ],
+        "patronUltimaVela": null
+      }
+    ],
+    "marketData": {
+      "symbol": "CAPITALCOM:DXY",
+      "nombre": "Indice dolar (DXY)",
+      "yahooSymbol": "DX-Y.NYB",
+      "fuente": "Yahoo Finance (DX-Y.NYB)",
+      "fechaUltimaVela": "2026-07-20",
+      "precio": 101,
+      "cierreAnterior": 100.75,
+      "variacionDiaPct": 0.2,
+      "variacionSemanaPct": -0.3,
+      "variacionMesPct": 0.9,
+      "variacionAnioPct": 2.3,
+      "rangoDiaReal": {
+        "minimo": 100.65,
+        "maximo": 101.03
+      },
+      "rsi14": 55.9,
+      "lecturaRsi": "neutral",
+      "media50": 99.99,
+      "media200": 99.03,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 0.4561,
+      "maximo52sem": 101.8,
+      "minimo52sem": 95.55,
+      "distanciaAMaximo52semPct": -0.8,
+      "distanciaAMinimo52semPct": 5.7,
+      "soportes": [
+        100.45,
+        99.34,
+        98.79
+      ],
+      "resistencias": [
+        101.63
+      ],
+      "patronUltimaVela": "vela alcista sin patron destacable"
+    }
   }
 ]
