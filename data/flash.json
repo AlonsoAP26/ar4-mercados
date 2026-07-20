@@ -1,7 +1,138 @@
 {
- "lastId": 33466,
- "actualizado": "2026-07-20T21:20:56.650Z",
+ "lastId": 33468,
+ "actualizado": "2026-07-20T22:33:58.995Z",
  "items": [
+  {
+   "id": 33450,
+   "fecha": "2026-07-20T10:33:31+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33450",
+   "original": "STARMER STEPS DOWN Keir Starmer officially resigned as U.K. prime minister, declaring that “my work is done.” In his farewell speech, he said he had rebuilt the Labour Party after its 2019 defeat, led it to a landslide election victory in 2024, and leaves Britain “stronger and fairer” than when he took over.",
+   "titulo": "Keir Starmer renuncia como primer ministro del Reino Unido",
+   "resumen": "Keir Starmer confirmó oficialmente su renuncia como primer ministro británico, afirmando que 'mi trabajo está hecho'. En su discurso de despedida, destacó haber reconstruido el Partido Laborista tras la derrota de 2019, haberlo llevado a una victoria electoral arrolladora en 2024, y aseguró dejar al Reino Unido 'más fuerte y más justo' que cuando asumió el cargo. El titular no especifica quién asumirá el cargo ni el proceso de sucesión dentro del Partido Laborista.",
+   "analisis": {
+    "porque": "Un cambio de liderazgo en el Reino Unido introduce incertidumbre política que los mercados de la libra esterlina y activos británicos suelen vigilar de cerca, especialmente respecto a la continuidad de políticas fiscales y económicas.",
+    "queOcurrio": "Keir Starmer anunció su renuncia oficial como primer ministro del Reino Unido en un discurso de despedida.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "GBP",
+    "FTSE 100",
+    "EURUSD",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "GBP",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "FTSE 100",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Starmer",
+    "Reino Unido",
+    "renuncia",
+    "Partido Laborista",
+    "política británica"
+   ],
+   "tgText": "🇬🇧 Keir Starmer renuncia como primer ministro del Reino Unido: 'mi trabajo está hecho'. Incertidumbre sobre sucesión en el Partido Laborista.",
+   "xText": "🇬🇧 Keir Starmer confirma su renuncia como PM del Reino Unido, citando su legado tras la victoria laborista de 2024. Mercados atentos a la sucesión y su impacto en la libra. #ReinoUnido #Starmer",
+   "discordText": "**🇬🇧 Starmer renuncia como PM del Reino Unido**\n- 'Mi trabajo está hecho', declaró\n- Destaca victoria laborista de 2024\n- Sucesión aún sin confirmar\n- Vigilar: GBP, FTSE 100",
+   "pushText": "Keir Starmer renuncia como primer ministro británico",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "La libra esterlina (GBP) suele ser el primer activo en reaccionar ante cambios de liderazgo político en el Reino Unido.",
+    "despues": "El FTSE 100 y los bonos gilt podrían moverse según las expectativas sobre el sucesor y la continuidad de las políticas fiscales.",
+    "escenarios": "Los traders vigilan quién sucede a Starmer dentro del Partido Laborista y si hay señales de continuidad o cambio en la política económica.",
+    "riesgos": "El titular no especifica el proceso de sucesión ni el motivo exacto de la renuncia, lo que genera incertidumbre sobre el impacto real."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-20T22:27:48+00:00",
+     "id": 33468,
+     "texto": "Tras la renuncia de Keir Starmer, el presidente Donald Trump confirmó una llamada 'muy buena' con el nuevo primer ministro del Reino Unido, Andy Burnham. Según Trump, dialogaron sobre comercio bilateral, petróleo del Mar del Norte, la alianza militar EE.UU.-Reino Unido y los esfuerzos para despejar el Estrecho de Ormuz. Trump adelantó que ambos líderes se reunirán próximamente y ofreció respaldo estadounidense al nuevo gobierno británico. El titular no detalla acuerdos concretos ni cronograma de la reunión.",
+     "tgUrl": "https://t.me/walterbloomberg/33468"
+    }
+   ],
+   "actualizado": "2026-07-20T22:27:48+00:00"
+  },
+  {
+   "id": 33467,
+   "fecha": "2026-07-20T21:43:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33467",
+   "original": "IRAN'S SEMI-OFFICIAL MEHR NEWS AGENCY SAYS EXPLOSIONS HEARD IN CENTRAL IRAN'S ISFAHAN",
+   "titulo": "Reportan explosiones en Isfahán, centro nuclear clave de Irán",
+   "resumen": "La agencia semioficial iraní Mehr News informó explosiones en Isfahán, ciudad central de Irán que alberga instalaciones nucleares sensibles. El titular no especifica origen, magnitud ni si hay víctimas o daños confirmados. El hecho se suma a reportes previos de explosiones en Khomein y Sirik, en un contexto de escalada del conflicto regional que ya incluye advertencias sobre el bloqueo del Estrecho de Ormuz y ataques atribuidos a la Guardia Revolucionaria contra bases en Baréin y Kuwait. No hay confirmación independiente de fuentes occidentales ni israelíes sobre el origen del incidente.",
+   "analisis": {
+    "porque": "Isfahán es un centro nuclear estratégico iraní; cualquier ataque allí eleva el riesgo de escalada militar directa y de represalias que podrían afectar el flujo de petróleo por el Golfo Pérsico.",
+    "queOcurrio": "Medio semioficial iraní reportó explosiones en la ciudad de Isfahán, sin precisar causa, autor ni daños.",
+    "estado": "rumor",
+    "fuenteOriginal": "Mehr News Agency"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "Bitcoin"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Emergencia",
+   "keywords": [
+    "iran",
+    "isfahan",
+    "explosiones",
+    "conflicto-medio-oriente",
+    "petroleo",
+    "geopolitica"
+   ],
+   "tgText": "🚨 Medio semioficial iraní reporta explosiones en Isfahán, ciudad con instalaciones nucleares clave. Sin confirmación independiente. Escalada regional continúa.",
+   "xText": "🚨IRÁN: Mehr News reporta explosiones en Isfahán, centro nuclear estratégico. Sin confirmación de causa. Escalada del conflicto en Medio Oriente se profundiza. #Irán #Petróleo",
+   "discordText": "**🚨 Explosiones en Isfahán, Irán**\n- Reportado por medio semioficial Mehr News\n- Sin confirmación de causa ni daños\n- Isfahán aloja instalaciones nucleares clave\n- Se suma a reportes previos en Khomein y Sirik",
+   "pushText": "Explosiones reportadas en Isfahán, Irán",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo (Brent/WTI) suele ser el activo de reacción más inmediata ante escaladas en Irán, dado el riesgo sobre el Estrecho de Ormuz.",
+    "despues": "Oro, dólar (DXY) y bonos del Tesoro como refugio; acciones de sectores sensibles a energía y defensa.",
+    "escenarios": "Los operadores vigilan si Israel o EE.UU. confirman autoría del ataque, la respuesta iraní y cualquier señal de cierre efectivo del Estrecho de Ormuz.",
+    "riesgos": "El origen no está confirmado y proviene de un medio estatal iraní; existe riesgo de desinformación o exageración con fines internos."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 33466,
    "fecha": "2026-07-20T21:00:55+00:00",
@@ -352,60 +483,6 @@
     }
    ],
    "actualizado": "2026-07-20T13:32:15+00:00"
-  },
-  {
-   "id": 33450,
-   "fecha": "2026-07-20T10:33:31+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33450",
-   "original": "STARMER STEPS DOWN Keir Starmer officially resigned as U.K. prime minister, declaring that “my work is done.” In his farewell speech, he said he had rebuilt the Labour Party after its 2019 defeat, led it to a landslide election victory in 2024, and leaves Britain “stronger and fairer” than when he took over.",
-   "titulo": "Keir Starmer renuncia como primer ministro del Reino Unido",
-   "resumen": "Keir Starmer confirmó oficialmente su renuncia como primer ministro británico, afirmando que 'mi trabajo está hecho'. En su discurso de despedida, destacó haber reconstruido el Partido Laborista tras la derrota de 2019, haberlo llevado a una victoria electoral arrolladora en 2024, y aseguró dejar al Reino Unido 'más fuerte y más justo' que cuando asumió el cargo. El titular no especifica quién asumirá el cargo ni el proceso de sucesión dentro del Partido Laborista.",
-   "analisis": {
-    "porque": "Un cambio de liderazgo en el Reino Unido introduce incertidumbre política que los mercados de la libra esterlina y activos británicos suelen vigilar de cerca, especialmente respecto a la continuidad de políticas fiscales y económicas.",
-    "queOcurrio": "Keir Starmer anunció su renuncia oficial como primer ministro del Reino Unido en un discurso de despedida.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "GBP",
-    "FTSE 100",
-    "EURUSD",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "GBP",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "FTSE 100",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Starmer",
-    "Reino Unido",
-    "renuncia",
-    "Partido Laborista",
-    "política británica"
-   ],
-   "tgText": "🇬🇧 Keir Starmer renuncia como primer ministro del Reino Unido: 'mi trabajo está hecho'. Incertidumbre sobre sucesión en el Partido Laborista.",
-   "xText": "🇬🇧 Keir Starmer confirma su renuncia como PM del Reino Unido, citando su legado tras la victoria laborista de 2024. Mercados atentos a la sucesión y su impacto en la libra. #ReinoUnido #Starmer",
-   "discordText": "**🇬🇧 Starmer renuncia como PM del Reino Unido**\n- 'Mi trabajo está hecho', declaró\n- Destaca victoria laborista de 2024\n- Sucesión aún sin confirmar\n- Vigilar: GBP, FTSE 100",
-   "pushText": "Keir Starmer renuncia como primer ministro británico",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "La libra esterlina (GBP) suele ser el primer activo en reaccionar ante cambios de liderazgo político en el Reino Unido.",
-    "despues": "El FTSE 100 y los bonos gilt podrían moverse según las expectativas sobre el sucesor y la continuidad de las políticas fiscales.",
-    "escenarios": "Los traders vigilan quién sucede a Starmer dentro del Partido Laborista y si hay señales de continuidad o cambio en la política económica.",
-    "riesgos": "El titular no especifica el proceso de sucesión ni el motivo exacto de la renuncia, lo que genera incertidumbre sobre el impacto real."
-   },
-   "macro": null,
-   "updates": []
   },
   {
    "id": 33449,
