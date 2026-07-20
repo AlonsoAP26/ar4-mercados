@@ -59,12 +59,18 @@ exports.handler = async (event, context) => {
     const DAY = 86400000;
     const simplified = all.map((u) => {
       const meta = u.user_metadata || {};
+      const am = u.app_metadata || {};
+      const premiumActivo = !!(am.premium && (!am.premium_until || new Date(am.premium_until).getTime() > now));
       return {
+        id: u.id,
         email: u.email || '',
         name: meta.full_name || meta.name || '',
         created_at: u.created_at || null,
         confirmed: !!(u.confirmed_at || u.email_confirmed_at),
-        last_login: u.last_signin_at || null
+        last_login: u.last_signin_at || null,
+        premium: premiumActivo,
+        premium_until: am.premium_until || null,
+        premium_source: am.premium_source || null
       };
     }).sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
 

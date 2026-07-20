@@ -17,7 +17,7 @@
 <meta name="description" content="Accede a Ideas de Trading avanzadas, chatbot ilimitado y contenido premium de AR4 Mercados.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=53">
+<link rel="stylesheet" href="css/style.css?v=54">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
@@ -162,6 +162,37 @@
         <button class="btn btn-gold btn-block" id="subscribeBtn">Suscribirme ahora</button>
       </article>
 
+    </div>
+
+    <div class="yape-pay" id="pagoYape">
+      <div class="yape-head">
+        <div>
+          <h3>¿Prefieres pagar con <span class="gold">Yape</span>?</h3>
+          <p>Para quienes no usan tarjeta: paga manualmente con tu app y te activamos Premium en la misma cuenta con la que te registraste.</p>
+        </div>
+        <span class="rl-tier-badge">PAGO MANUAL · PERÚ</span>
+      </div>
+      <div class="yape-grid">
+        <div class="yape-qr-frame" id="yapeQrFrame">
+          <span class="yape-corner yc-tl"></span><span class="yape-corner yc-tr"></span><span class="yape-corner yc-bl"></span><span class="yape-corner yc-br"></span>
+          <img src="img/yape-qr.jpg" alt="QR de Yape de AR4 Mercados" onerror="this.style.display='none';document.getElementById('yapeQrFrame').classList.add('yape-noqr');">
+          <div class="yape-num-fallback">
+            <span>Yapea al número</span>
+            <strong>902 624 613</strong>
+            <span>AR4 Mercados</span>
+          </div>
+          <span class="yape-amount">S/ 37.00 · 1 mes Premium</span>
+        </div>
+        <div class="yape-steps">
+          <ol>
+            <li>Abre tu app de <strong>Yape</strong> y escanea el QR (o yapea directo al <strong>902 624 613</strong>)</li>
+            <li>Envía <strong>S/ 37.00</strong> — tu mes completo de Premium</li>
+            <li>Toca el botón de abajo: te lleva a nuestro <strong>WhatsApp oficial</strong> para confirmar con tu captura y tu correo</li>
+          </ol>
+          <a class="btn btn-gold btn-block" href="/wa" target="_blank" rel="noopener" id="yapeOkBtn">✔ Envío exitoso — confirmar por WhatsApp</a>
+          <p class="yape-note">La activación es <strong>manual y personal</strong>: normalmente toma <strong>unos minutos</strong> (máximo unas horas si estamos fuera de línea). Apenas verifiquemos tu Yape, tu cuenta pasa a Premium y te confirmamos por WhatsApp. Tu acceso corre completo desde la activación — no pierdes ni un día.</p>
+        </div>
+      </div>
     </div>
 
     <p class="footer-text" style="margin-top:20px;margin-bottom:36px;">Precio de lanzamiento, sujeto a ajuste. La sección de Señales Premium está en preparación y no incluye asesoría financiera personalizada — es contenido educativo bajo revisión legal antes de su publicación. Suscribirte a Premium sube automáticamente tu rango en la Comunidad, sin necesidad de acumular puntos.</p>

@@ -69,7 +69,7 @@
       const DAY = 86400000;
       listEl.innerHTML = `
         <div class="admin-row admin-row-head">
-          <span>Usuario</span><span>Correo</span><span>Registrado</span><span>Estado</span>
+          <span>Usuario</span><span>Correo</span><span>Registrado</span><span>Estado</span><span>Premium</span>
         </div>` +
         data.users.map((u) => `
           <div class="admin-row${isRecent(u.created_at, DAY) ? ' admin-row-new' : ''}">
@@ -77,7 +77,32 @@
             <span class="admin-email">${esc(u.email)}</span>
             <span class="admin-date">${fmtDate(u.created_at)}</span>
             <span>${u.confirmed ? '<span class="admin-ok">✓ Confirmado</span>' : '<span class="admin-pending">Pendiente</span>'}</span>
+            <span class="admin-prem">${u.premium
+              ? `<span class="admin-ok">★ hasta ${u.premium_until ? fmtDate(u.premium_until).split(' · ')[0] : '∞'}</span> <button class="filter-chip admin-prem-btn" data-uid="${esc(u.id)}" data-act="quitar">Quitar</button>`
+              : `<button class="filter-chip admin-prem-btn" data-uid="${esc(u.id)}" data-act="activar" title="Para pagos verificados por Yape/WhatsApp">Activar 31d</button>`}</span>
           </div>`).join('');
+      // Activación manual de Premium (pagos por Yape verificados por WhatsApp).
+      listEl.querySelectorAll('.admin-prem-btn').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const activar = btn.dataset.act === 'activar';
+          const msg = activar
+            ? '¿Activar Premium por 31 días a este usuario? Hazlo solo si ya verificaste su pago por Yape en tu WhatsApp.'
+            : '¿Quitar el Premium de este usuario?';
+          if (!confirm(msg)) return;
+          btn.disabled = true;
+          try {
+            const jwt2 = await netlifyIdentity.currentUser().jwt();
+            const r = await fetch('/.netlify/functions/admin-set-premium', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + jwt2 },
+              body: JSON.stringify({ userId: btn.dataset.uid, action: btn.dataset.act, dias: 31 })
+            });
+            const d = await r.json();
+            if (!d.success) throw new Error(d.error || 'Error');
+            load();
+          } catch (e) { alert(String(e.message || e)); btn.disabled = false; }
+        });
+      });
     }
 
     if (updatedEl) {

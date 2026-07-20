@@ -4828,3 +4828,30 @@ td > .dk-chip:first-child { margin-left: 0; }
 .dk-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px 18px; font-size: 0.8rem; color: var(--text-hi); }
 .dk-detail-grid span { display: block; font-size: 0.66rem; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-bright); margin-bottom: 2px; }
 @media (max-width: 720px) { .dk-controls { grid-template-columns: 1fr; } }
+
+
+/* ===== Pago manual con Yape (marco dorado AR4) ===== */
+.yape-pay { border: 1px solid rgba(212,175,55,0.4); border-radius: 16px; padding: 22px 24px; margin-top: 26px; background: linear-gradient(165deg, rgba(212,175,55,0.06), rgba(255,255,255,0.012)); }
+.yape-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
+.yape-head h3 { font-size: 1.15rem; margin-bottom: 4px; }
+.yape-head p { color: var(--text-mid); font-size: 0.86rem; max-width: 56ch; }
+.yape-grid { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; }
+.yape-qr-frame { position: relative; background: #ffffff; border: 1px solid rgba(212,175,55,0.55); border-radius: 14px; padding: 16px 16px 44px; box-shadow: 0 14px 38px rgba(212,175,55,0.12); }
+.yape-qr-frame img { display: block; width: 100%; border-radius: 8px; }
+.yape-corner { position: absolute; width: 22px; height: 22px; border: 2.5px solid var(--gold-bright); }
+.yc-tl { top: -2px; left: -2px; border-right: none; border-bottom: none; border-radius: 12px 0 0 0; }
+.yc-tr { top: -2px; right: -2px; border-left: none; border-bottom: none; border-radius: 0 12px 0 0; }
+.yc-bl { bottom: -2px; left: -2px; border-right: none; border-top: none; border-radius: 0 0 0 12px; }
+.yc-br { bottom: -2px; right: -2px; border-left: none; border-top: none; border-radius: 0 0 12px 0; }
+.yape-amount { position: absolute; left: 50%; transform: translateX(-50%); bottom: 12px; white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; letter-spacing: 1px; color: #6b21a8; font-weight: 700; }
+.yape-num-fallback { display: none; text-align: center; padding: 34px 10px; color: #4a2b7a; }
+.yape-num-fallback span { display: block; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; }
+.yape-num-fallback strong { display: block; font-family: 'JetBrains Mono', monospace; font-size: 1.9rem; letter-spacing: 3px; margin: 8px 0; color: #6b21a8; }
+.yape-noqr .yape-num-fallback { display: block; }
+.yape-steps ol { margin: 0 0 16px 18px; color: var(--text-hi); font-size: 0.92rem; display: grid; gap: 10px; }
+.yape-note { color: var(--text-mid); font-size: 0.82rem; margin-top: 12px; line-height: 1.55; }
+@media (max-width: 680px) { .yape-grid { grid-template-columns: 1fr; } .yape-qr-frame { max-width: 320px; margin: 0 auto; } }
+/* Panel admin: columna Premium */
+.admin-row { grid-template-columns: 1.1fr 1.5fr 1fr 0.85fr 1.15fr !important; }
+.admin-prem { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.admin-prem .filter-chip { font-size: 0.7rem; padding: 4px 10px; cursor: pointer; }
