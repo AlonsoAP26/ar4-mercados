@@ -1,0 +1,47 @@
+name: Vigilante de disponibilidad (cada 15 min)
+
+# Revisa que el sitio y las funciones respondan. Si algo no responde, espera
+# 45 segundos y reintenta (los microcortes de Netlify se curan solos); solo si
+# SIGUE caido, el job falla en rojo y GitHub envia el correo de aviso al dueño
+# del repo. Cero ruido: un parpadeo momentaneo no genera alarma.
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: uptime
+  cancel-in-progress: true
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sitio y funciones responden
+        run: |
+          revisar() {
+            fallos=""
+            for url in \
+              "https://ar4mercados.com/" \
+              "https://ar4mercados.com/.netlify/functions/market-price?symbol=EURUSD%3DX"; do
+              code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "$url" || echo "000")
+              echo "$code  $url"
+              if [ "$code" != "200" ]; then fallos="$fallos $url(HTTP:$code)"; fi
+            done
+            echo "$fallos"
+          }
+          resultado=$(revisar | tail -1)
+          if [ -z "$(echo $resultado | tr -d ' ')" ]; then
+            echo "Sitio en linea. OK."
+            exit 0
+          fi
+          echo "Fallo detectado:$resultado — reintento en 45s por si es un microcorte..."
+          sleep 45
+          resultado2=$(revisar | tail -1)
+          if [ -z "$(echo $resultado2 | tr -d ' ')" ]; then
+            echo "Se recupero solo tras el reintento. OK."
+            exit 0
+          fi
+          echo "::error::EL SITIO SIGUE CAIDO tras 2 verificaciones:$resultado2 — revisar Netlify (app.netlify.com): estado del ultimo deploy y estado del servicio."
+          exit 1
