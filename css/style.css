@@ -42,6 +42,10 @@ a { color: inherit; text-decoration: none; }
   background: #04070f;
   border-bottom: 1px solid var(--card-border);
   padding: 6px 0;
+  /* Altura fija: la cinta se llena por JS y sin esto empujaba la pagina (CLS) */
+  height: 37px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 /* Ticker propio (marquesina que siempre se desplaza) */
 .ar4-ticker { overflow: hidden; width: 100%; }
@@ -4869,3 +4873,13 @@ td > .dk-chip:first-child { margin-left: 0; }
 .yape-poster-scan { display: block; margin-top: 4px; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-mid); }
 .yape-noqr .yape-num-fallback { display: block; color: #333; }
 @media (max-width: 680px) { .yape-poster { max-width: 340px; margin: 0 auto; } }
+
+
+/* ===== Anti-CLS: reservar espacio de lo que se llena por JS ===== */
+#modulesGrid, #instTrackGrid, #noticiasGrid { min-height: 420px; }
+#flashFeed { min-height: 300px; }
+#diplomaRuta { min-height: 150px; }
+#ideasGrid, #articulosGrid { min-height: 420px; }
+@media (max-width: 680px) {
+  #modulesGrid, #instTrackGrid, #noticiasGrid, #ideasGrid, #articulosGrid { min-height: 520px; }
+}
