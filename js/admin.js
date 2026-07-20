@@ -110,7 +110,21 @@
       if (data.profilesCreated > 0) extra += ' · ' + data.profilesCreated + ' perfil(es) sincronizado(s) con la comunidad';
       updatedEl.textContent = 'Actualizado ' + new Date().toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }) + extra;
     }
+    applyUserFilter();
   }
+
+  // Buscador: para encontrar al instante al usuario que pagó por Yape
+  // (pega el correo que llegó por WhatsApp y activa su Premium).
+  function applyUserFilter() {
+    const box = document.getElementById('adminSearch');
+    if (!box || !listEl) return;
+    const q = box.value.trim().toLowerCase();
+    listEl.querySelectorAll('.admin-row:not(.admin-row-head)').forEach((row) => {
+      row.style.display = !q || row.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+  }
+  const searchBox = document.getElementById('adminSearch');
+  if (searchBox) searchBox.addEventListener('input', applyUserFilter);
 
   function startAutoRefresh() {
     if (timer) clearInterval(timer);
