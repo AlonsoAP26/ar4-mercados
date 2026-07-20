@@ -17,7 +17,7 @@
 <meta name="description" content="Accede a Ideas de Trading avanzadas, chatbot ilimitado y contenido premium de AR4 Mercados.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=54">
+<link rel="stylesheet" href="css/style.css?v=55">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
@@ -173,14 +173,38 @@
         <span class="rl-tier-badge">PAGO MANUAL · PERÚ</span>
       </div>
       <div class="yape-grid">
-        <div class="yape-qr-frame" id="yapeQrFrame">
-          <span class="yape-corner yc-tl"></span><span class="yape-corner yc-tr"></span><span class="yape-corner yc-bl"></span><span class="yape-corner yc-br"></span>
-          <img src="img/yape-qr.jpg" alt="QR de Yape de AR4 Mercados" onerror="this.style.display='none';document.getElementById('yapeQrFrame').classList.add('yape-noqr');">
-          <div class="yape-num-fallback">
-            <span>QR temporalmente no disponible</span>
-            <strong style="font-size:1rem;letter-spacing:0;">Escríbenos por WhatsApp con el botón de abajo y te lo enviamos al instante</strong>
+        <div class="yape-poster" id="yapeQrFrame">
+          <svg class="yape-poster-bg" viewBox="0 0 400 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="ypGlow" cx="0.5" cy="0.1" r="0.95"><stop offset="0" stop-color="#d4af37" stop-opacity="0.30"/><stop offset="0.65" stop-color="#d4af37" stop-opacity="0"/></radialGradient>
+              <linearGradient id="ypLine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8860b"/><stop offset="0.5" stop-color="#f0c75e"/><stop offset="1" stop-color="#b8860b"/></linearGradient>
+            </defs>
+            <rect width="400" height="560" fill="#0b1220"/>
+            <rect width="400" height="560" fill="url(#ypGlow)"/>
+            <g stroke="#d4af37" stroke-opacity="0.07"><path d="M0 112H400M0 224H400M0 336H400M0 448H400M100 0V560M200 0V560M300 0V560"/></g>
+            <path d="M18 522 L88 472 L148 497 L228 432 L298 457 L384 382" fill="none" stroke="#d4af37" stroke-opacity="0.35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0 2 H400" stroke="url(#ypLine)" stroke-width="3"/>
+            <path d="M0 558 H400" stroke="url(#ypLine)" stroke-width="3"/>
+          </svg>
+          <div class="yape-poster-brand">
+            <svg viewBox="0 0 150 40" width="96" height="26" aria-hidden="true">
+              <defs><linearGradient id="ypLogo" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fbe9b0"/><stop offset="45%" stop-color="#f0c75e"/><stop offset="100%" stop-color="#b8860b"/></linearGradient></defs>
+              <text x="0" y="29" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="28" letter-spacing="-0.5" fill="url(#ypLogo)">AR4</text>
+              <path d="M79 21 L91 10 L101 17 L117 3" fill="none" stroke="url(#ypLogo)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="117" cy="3" r="2.3" fill="url(#ypLogo)"/>
+            </svg>
+            <span>MERCADOS · PREMIUM</span>
           </div>
-          <span class="yape-amount">S/ 45.00 · 1 mes Premium</span>
+          <div class="yape-qr-holder">
+            <span class="yape-corner yc-tl"></span><span class="yape-corner yc-tr"></span><span class="yape-corner yc-bl"></span><span class="yape-corner yc-br"></span>
+            <img src="img/yape-qr-card.jpg" alt="QR de Yape de AR4 Mercados" onerror="this.style.display='none';document.getElementById('yapeQrFrame').classList.add('yape-noqr');">
+            <div class="yape-num-fallback">
+              <span>QR temporalmente no disponible</span>
+              <strong style="font-size:0.95rem;letter-spacing:0;">Escríbenos por WhatsApp con el botón de abajo y te lo enviamos al instante</strong>
+            </div>
+          </div>
+          <div class="yape-poster-amount">S/ 45.00 · 1 MES PREMIUM</div>
+          <span class="yape-poster-scan">Escanea y paga con tu app de Yape</span>
         </div>
         <div class="yape-steps">
           <ol>

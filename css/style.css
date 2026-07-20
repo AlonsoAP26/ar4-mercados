@@ -4855,3 +4855,17 @@ td > .dk-chip:first-child { margin-left: 0; }
 .admin-row { grid-template-columns: 1.1fr 1.5fr 1fr 0.85fr 1.15fr !important; }
 .admin-prem { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .admin-prem .filter-chip { font-size: 0.7rem; padding: 4px 10px; cursor: pointer; }
+
+
+/* ===== Poster AR4 para el QR de Yape ===== */
+.yape-poster { position: relative; border-radius: 18px; overflow: hidden; border: 1px solid rgba(212,175,55,0.55); box-shadow: 0 0 0 1px rgba(212,175,55,0.15), 0 18px 48px rgba(212,175,55,0.14); padding: 20px 18px 18px; text-align: center; }
+.yape-poster-bg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+.yape-poster > *:not(.yape-poster-bg) { position: relative; z-index: 1; }
+.yape-poster-brand { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 14px; }
+.yape-poster-brand span { font-family: 'JetBrains Mono', monospace; font-size: 0.62rem; letter-spacing: 3px; color: var(--gold-bright); opacity: 0.9; }
+.yape-qr-holder { position: relative; background: #ffffff; border-radius: 12px; padding: 12px; max-width: 250px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.45); }
+.yape-qr-holder img { display: block; width: 100%; border-radius: 6px; }
+.yape-poster-amount { margin-top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 0.92rem; letter-spacing: 2px; font-weight: 700; color: var(--gold-bright); }
+.yape-poster-scan { display: block; margin-top: 4px; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-mid); }
+.yape-noqr .yape-num-fallback { display: block; color: #333; }
+@media (max-width: 680px) { .yape-poster { max-width: 340px; margin: 0 auto; } }
