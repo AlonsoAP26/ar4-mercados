@@ -1,7 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
+const { callApi, makeFail } = require('./_anthropic');
+
 const DATA_PATH = path.join(__dirname, '..', 'data', 'articulos.json');
+const fail = makeFail('Generador de psicotrading');
 const CATEGORIES = ['FOMO', 'Disciplina', 'Gestión de riesgo', 'Rutinas', 'Pérdidas', 'Ansiedad', 'Confianza'];
 const HISTORICAL_EXAMPLES = [
   'Jesse Livermore (varias fortunas ganadas y perdidas por completo entre 1907 y 1934, documentado en su propio libro "Reminiscences of a Stock Operator")',
@@ -28,8 +31,7 @@ function slugify(title) {
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
-    console.error('Falta la variable de entorno ANTHROPIC_API_KEY');
-    process.exit(1);
+    fail('Falta la variable de entorno ANTHROPIC_API_KEY');
   }
 
   const articulos = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
@@ -72,47 +74,22 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   "body": "string HTML con 7-9 párrafos <p> en total (incluyendo el desarrollo del caso histórico dentro del cuerpo, no aparte), 2-3 <h3 style=\\"margin:20px 0 10px;font-size:1.1rem;\\"> como subtítulos específicos del tema (no genéricos), y una lista <ul style=\\"color:var(--text-mid);padding-left:20px;margin-bottom:16px;\\"><li> con 2-4 puntos prácticos y accionables cerca del final. Contenido práctico, honesto, sin promesas de ganancias garantizadas."
 }`;
 
-  let res = null, lastErr = null;
-  // Hasta 4 intentos con espera creciente: un 429/5xx transitorio no tumba la corrida.
-  for (let intento = 1; intento <= 4; intento++) {
-  res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01'
-    },
-    body: JSON.stringify({
-      model: 'claude-sonnet-5',
-      // Explicitos a proposito: Sonnet 5 piensa por defecto y esos tokens salen
-      // del mismo max_tokens que la respuesta. Con el limite anterior el JSON
-      // salia cortado y JSON.parse fallaba. max_tokens es solo un tope: se
-      // factura lo que se genera de verdad, asi que dar aire no cuesta nada.
-      max_tokens: 16000,
-      thinking: { type: 'adaptive' },
-      messages: [{ role: 'user', content: prompt }]
-    })
+  // callApi hace streaming (evita el timeout de 300s del fetch de Node con
+  // pensamiento largo — el "fetch failed" del 19/jul a las 22:26) y reintenta
+  // 429/5xx/cortes de red. max_tokens generoso a proposito: Sonnet 5 piensa
+  // por defecto y esos tokens salen del mismo tope que la respuesta.
+  const data = await callApi(apiKey, {
+    model: 'claude-sonnet-5',
+    max_tokens: 16000,
+    thinking: { type: 'adaptive' },
+    messages: [{ role: 'user', content: prompt }]
   });
-  if (res.ok) break;
-  lastErr = 'HTTP ' + res.status + ': ' + (await res.text()).slice(0, 300);
-  console.warn('Intento ' + intento + ' fallido: ' + lastErr);
-  if ((res.status === 429 || res.status >= 500) && intento < 4) { await new Promise((r) => setTimeout(r, intento * 20000)); continue; }
-  break;
-  }
-  if (!res || !res.ok) {
-    console.error('Error de la API de Anthropic tras reintentos:', lastErr);
-    process.exit(1);
-  }
-
-  const data = await res.json();
   if (data.stop_reason === 'max_tokens') {
-    console.error('Respuesta cortada por max_tokens. Uso:', JSON.stringify(data.usage));
-    process.exit(1);
+    fail('Respuesta cortada por max_tokens. Uso: ' + JSON.stringify(data.usage));
   }
   const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
   if (!textBlock) {
-    console.error('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason, JSON.stringify(data.usage));
-    process.exit(1);
+    fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
   }
   let rawText = textBlock.text.trim();
   const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
@@ -122,9 +99,8 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   try {
     nuevo = JSON.parse(rawText);
   } catch (e) {
-    console.error('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
     console.error(rawText.slice(0, 1500));
-    process.exit(1);
+    fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
   }
 
   nuevo.slug = slugify(nuevo.title) + '-' + Date.now().toString(36);
@@ -140,5 +116,5 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
 
 main().catch(err => {
   console.error(err);
-  process.exit(1);
+  fail(err && err.message ? err.message : String(err));
 });

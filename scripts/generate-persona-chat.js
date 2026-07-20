@@ -4,7 +4,10 @@
 // Reglas duras: nunca señales de compra/venta, nunca promesas de rentabilidad,
 // nunca precios exactos "actuales" que no podemos verificar.
 
+const { callApi, makeFail } = require('./_anthropic');
+
 const SKIP_PROBABILITY = 0.35;
+const fail = makeFail('Generador del chat en vivo');
 
 const PERSONAS = [
   { id: 'a0000000-0000-4000-8000-000000000001', username: 'ElNorteno_FX', voice: 'Trader de USD/MXN desde Monterrey, ~4 años de experiencia, swing trading, tono calmado y directo, da consejos de proceso sin presumir.' },
@@ -67,8 +70,7 @@ async function main() {
   const supabaseUrl = process.env.SUPABASE_KEY;
   const supabaseSecret = process.env.SUPABASE_SECRET_KEY;
   if (!apiKey || !supabaseUrl || !supabaseSecret) {
-    console.error('Faltan variables de entorno: ANTHROPIC_API_KEY, SUPABASE_KEY o SUPABASE_SECRET_KEY');
-    process.exit(1);
+    fail('Faltan variables de entorno: ANTHROPIC_API_KEY, SUPABASE_KEY o SUPABASE_SECRET_KEY');
   }
 
   if (Math.random() < SKIP_PROBABILITY) {
@@ -107,36 +109,22 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   ]
 }`;
 
-  // Reintentos ante errores transitorios (429/5xx): un fallo puntual de la API
-  // en hora pico no debe tumbar la conversación del día.
-  let res = null;
-  for (let intento = 1; intento <= 4; intento++) {
-    res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-sonnet-5', max_tokens: 1200, messages: [{ role: 'user', content: prompt }] })
-    });
-    if (res.ok) break;
-    const errText = await res.text();
-    console.warn('Intento ' + intento + ' fallido (HTTP ' + res.status + '): ' + errText.slice(0, 300));
-    if ((res.status === 429 || res.status >= 500) && intento < 4) {
-      await new Promise((r) => setTimeout(r, intento * 20000));
-      continue;
-    }
-    console.error('Error de la API de Anthropic tras ' + intento + ' intento(s).');
-    process.exit(1);
-  }
-
-  const data = await res.json();
+  // callApi hace streaming (evita el timeout de 300s del fetch de Node) y
+  // reintenta 429/5xx/cortes de red.
+  const data = await callApi(apiKey, {
+    model: 'claude-sonnet-5',
+    max_tokens: 1200,
+    messages: [{ role: 'user', content: prompt }]
+  });
   const textBlock = Array.isArray(data.content) ? data.content.find((b) => b.type === 'text') : null;
-  if (!textBlock) { console.error('Respuesta inesperada de la API:', JSON.stringify(data)); process.exit(1); }
+  if (!textBlock) { fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage)); }
 
   let convo;
   try {
     convo = JSON.parse(textBlock.text.trim());
   } catch (e) {
-    console.error('La IA no devolvió un JSON válido:', textBlock.text);
-    process.exit(1);
+    console.error(textBlock.text.slice(0, 1200));
+    fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason);
   }
 
   const byUsername = Object.fromEntries(PERSONAS.map((p) => [p.username, p.id]));
@@ -146,8 +134,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     .map((m) => ({ profile_id: byUsername[m.username], body: String(m.body).trim().slice(0, 160) }));
 
   if (messages.length < 3) {
-    console.error('La conversación generada quedó demasiado corta, no se inserta nada.');
-    process.exit(1);
+    fail('La conversación generada quedó demasiado corta, no se inserta nada.');
   }
 
   // Los mensajes se fechan hacia atrás desde ahora, con 2-5 minutos entre cada uno,
@@ -167,5 +154,5 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
 
 main().catch((err) => {
   console.error(err);
-  process.exit(1);
+  fail(err && err.message ? err.message : String(err));
 });

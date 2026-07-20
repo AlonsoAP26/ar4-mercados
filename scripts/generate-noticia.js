@@ -2,16 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const { buildDossier, dossierToPrompt, TV_NAMES } = require('./_market-data');
 
-const DATA_PATH = path.join(__dirname, '..', 'data', 'noticias.json');
+const { callApi, makeFail } = require('./_anthropic');
 
-// El paso corre con continue-on-error, asi que el log del fallo queda oculto
-// tras un check verde. Una anotacion ::error:: si es visible (incluso sin
-// iniciar sesion en GitHub), y es la unica forma de diagnosticar en remoto.
-function fail(msg) {
-  console.error(msg);
-  console.log('::error title=Generador de noticias::' + String(msg).replace(/\r?\n/g, ' | ').slice(0, 600));
-  process.exit(1);
-}
+const DATA_PATH = path.join(__dirname, '..', 'data', 'noticias.json');
+const fail = makeFail('Generador de noticias');
 
 const ALLOWED_SYMBOLS = [
   'FX:EURUSD', 'FX:GBPUSD', 'FX:USDJPY',
@@ -95,102 +89,6 @@ function collectSearchUrls(allContent) {
 
 function hostOf(u) {
   try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return null; }
-}
-
-// Reconstruye el mensaje completo desde el flujo SSE de la API. CAUSA RAIZ del
-// "fetch failed" que tumbo la noticia del 17 al 19/jul: sin streaming, una
-// peticion con busqueda web tarda mas de 5 minutos en devolver el primer byte
-// y el fetch de Node la aborta a los 300s. Con stream:true los datos fluyen
-// cada pocos segundos y el tope de inactividad nunca se alcanza.
-async function readSse(res) {
-  const decoder = new TextDecoder();
-  let buf = '';
-  const content = [];
-  const partialJson = {};
-  let stopReason = null;
-  let stopDetails = null;
-  let usage = null;
-
-  const handle = (ev) => {
-    if (ev.type === 'error') {
-      throw new Error('Error en el stream de la API: ' + JSON.stringify(ev.error || {}).slice(0, 300));
-    } else if (ev.type === 'content_block_start') {
-      content[ev.index] = ev.content_block;
-      partialJson[ev.index] = '';
-    } else if (ev.type === 'content_block_delta') {
-      const b = content[ev.index];
-      const d = ev.delta || {};
-      if (d.type === 'text_delta') b.text = (b.text || '') + d.text;
-      else if (d.type === 'thinking_delta') b.thinking = (b.thinking || '') + d.thinking;
-      else if (d.type === 'signature_delta') b.signature = (b.signature || '') + d.signature;
-      else if (d.type === 'input_json_delta') partialJson[ev.index] += d.partial_json;
-      else if (d.type === 'citations_delta') { b.citations = b.citations || []; b.citations.push(d.citation); }
-    } else if (ev.type === 'content_block_stop') {
-      const b = content[ev.index];
-      // El input de los tool_use llega como JSON parcial; se arma al cerrar el bloque.
-      if (b && (b.type === 'tool_use' || b.type === 'server_tool_use')) {
-        b.input = partialJson[ev.index] ? JSON.parse(partialJson[ev.index]) : (b.input || {});
-      }
-    } else if (ev.type === 'message_delta') {
-      if (ev.delta && ev.delta.stop_reason) stopReason = ev.delta.stop_reason;
-      if (ev.delta && ev.delta.stop_details) stopDetails = ev.delta.stop_details;
-      if (ev.usage) usage = ev.usage;
-    }
-  };
-
-  for await (const chunk of res.body) {
-    buf += decoder.decode(chunk, { stream: true });
-    let idx;
-    while ((idx = buf.indexOf('\n\n')) !== -1) {
-      const raw = buf.slice(0, idx);
-      buf = buf.slice(idx + 2);
-      for (const line of raw.split('\n')) {
-        if (line.startsWith('data: ')) handle(JSON.parse(line.slice(6)));
-      }
-    }
-  }
-  return { content: content.filter(Boolean), stop_reason: stopReason, stop_details: stopDetails, usage };
-}
-
-async function callApi(apiKey, messages) {
-  // Reintentos con espera ante errores transitorios (429/5xx/cortes de red):
-  // el cron corre en hora pico de la API y un fallo puntual no debe tumbar la noticia.
-  let lastErr = null;
-  for (let intento = 1; intento <= 4; intento++) {
-    try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': apiKey,
-          'anthropic-version': '2023-06-01'
-        },
-        body: JSON.stringify({
-          model: 'claude-sonnet-5',
-          max_tokens: 16000,
-          thinking: { type: 'adaptive' },
-          stream: true,
-          // Busqueda web del lado del servidor: el modelo lee noticias reales y
-          // devuelve las URLs de donde salieron. Sin esto escribiria de memoria.
-          tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 6 }],
-          messages
-        })
-      });
-      if (res.ok) return await readSse(res);
-      const errText = await res.text();
-      lastErr = 'API de Anthropic (HTTP ' + res.status + '): ' + errText.slice(0, 400);
-      console.warn('Intento ' + intento + ' fallido: ' + lastErr);
-      if (res.status !== 429 && res.status < 500) {
-        break; // errores 4xx no transitorios: no insistir
-      }
-    } catch (e) {
-      // "fetch failed" y cortes a mitad de stream son transitorios: reintentar.
-      lastErr = 'Red/stream: ' + (e && e.message ? e.message : String(e));
-      console.warn('Intento ' + intento + ' fallido: ' + lastErr);
-    }
-    if (intento < 4) await new Promise((r) => setTimeout(r, intento * 20000));
-  }
-  throw new Error(lastErr);
 }
 
 async function main() {
@@ -309,7 +207,15 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   const allContent = [];
   let data = null;
   for (let intento = 0; intento < 8; intento++) {
-    data = await callApi(apiKey, messages);
+    data = await callApi(apiKey, {
+      model: 'claude-sonnet-5',
+      max_tokens: 16000,
+      thinking: { type: 'adaptive' },
+      // Busqueda web del lado del servidor: el modelo lee noticias reales y
+      // devuelve las URLs de donde salieron. Sin esto escribiria de memoria.
+      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 6 }],
+      messages
+    });
     allContent.push(...(data.content || []));
     if (data.stop_reason === 'pause_turn') {
       messages.push({ role: 'assistant', content: data.content });

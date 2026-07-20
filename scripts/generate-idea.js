@@ -1,8 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const { buildDossier, dossierToPrompt } = require('./_market-data');
+const { callApi, makeFail } = require('./_anthropic');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'ideas.json');
+const fail = makeFail('Generador de ideas');
 
 // El instrumento lo elige el script (no el modelo), porque necesitamos traer
 // sus datos reales ANTES de escribir. La categoria se deriva del instrumento.
@@ -47,8 +49,7 @@ function pickSymbol(ideas) {
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
-    console.error('Falta la variable de entorno ANTHROPIC_API_KEY');
-    process.exit(1);
+    fail('Falta la variable de entorno ANTHROPIC_API_KEY');
   }
 
   const ideas = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
@@ -71,9 +72,8 @@ async function main() {
   try {
     d = await buildDossier(symbol);
   } catch (e) {
-    console.error('No se pudieron obtener datos reales de ' + symbol + ':', e.message);
     console.error('No se publica nada: preferimos no publicar antes que inventar cifras.');
-    process.exit(1);
+    fail('No se pudieron obtener datos reales de ' + symbol + ': ' + e.message);
   }
   const datos = dossierToPrompt(d);
 
@@ -122,49 +122,24 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   "trend": "'up' si la lectura es alcista, 'down' si es bajista, 'neutral' si está en rango o a la espera de un catalizador"
 }`;
 
-  let res = null, lastErr = null;
-  // Hasta 4 intentos con espera creciente: un 429/5xx transitorio no tumba la corrida.
-  for (let intento = 1; intento <= 4; intento++) {
-  res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01'
-    },
-    body: JSON.stringify({
-      model: 'claude-sonnet-5',
-      // Explicitos a proposito: Sonnet 5 piensa por defecto y esos tokens salen
-      // del mismo max_tokens que la respuesta. Con el limite anterior el JSON
-      // salia cortado y JSON.parse fallaba. max_tokens es solo un tope: se
-      // factura lo generado, asi que dar aire no cuesta nada.
-      max_tokens: 16000,
-      thinking: { type: 'adaptive' },
-      messages: [{ role: 'user', content: prompt }]
-    })
+  // callApi hace streaming (evita el timeout de 300s del fetch de Node con
+  // pensamiento largo) y reintenta 429/5xx/cortes de red. max_tokens generoso
+  // a proposito: Sonnet 5 piensa por defecto y esos tokens salen del mismo
+  // tope que la respuesta; con el limite anterior el JSON salia cortado.
+  const data = await callApi(apiKey, {
+    model: 'claude-sonnet-5',
+    max_tokens: 16000,
+    thinking: { type: 'adaptive' },
+    messages: [{ role: 'user', content: prompt }]
   });
-  if (res.ok) break;
-  lastErr = 'HTTP ' + res.status + ': ' + (await res.text()).slice(0, 300);
-  console.warn('Intento ' + intento + ' fallido: ' + lastErr);
-  if ((res.status === 429 || res.status >= 500) && intento < 4) { await new Promise((r) => setTimeout(r, intento * 20000)); continue; }
-  break;
-  }
-  if (!res || !res.ok) {
-    console.error('Error de la API de Anthropic tras reintentos:', lastErr);
-    process.exit(1);
-  }
-
-  const data = await res.json();
   if (data.stop_reason === 'max_tokens') {
-    console.error('Respuesta cortada por max_tokens. Uso:', JSON.stringify(data.usage));
-    process.exit(1);
+    fail('Respuesta cortada por max_tokens. Uso: ' + JSON.stringify(data.usage));
   }
   // El JSON es el ultimo bloque de texto (delante van los bloques de
   // pensamiento, y el modelo podria escribir algo antes del objeto).
   const textBlocks = Array.isArray(data.content) ? data.content.filter((b) => b.type === 'text' && b.text) : [];
   if (!textBlocks.length) {
-    console.error('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason, JSON.stringify(data.usage));
-    process.exit(1);
+    fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
   }
   let rawText = textBlocks[textBlocks.length - 1].text.trim();
   const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
@@ -179,14 +154,12 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   try {
     nueva = JSON.parse(rawText);
   } catch (e) {
-    console.error('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
     console.error(rawText.slice(0, 1500));
-    process.exit(1);
+    fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
   }
 
   if (!nueva.title || !nueva.body) {
-    console.error('Faltan campos obligatorios (title/body) en la respuesta.');
-    process.exit(1);
+    fail('Faltan campos obligatorios (title/body) en la respuesta.');
   }
 
   // El script manda en estos campos, no el modelo.
@@ -210,5 +183,5 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
 
 main().catch((err) => {
   console.error(err);
-  process.exit(1);
+  fail(err && err.message ? err.message : String(err));
 });

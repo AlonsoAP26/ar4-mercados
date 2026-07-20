@@ -16,8 +16,10 @@
 //   DISCORD_FLASH_WEBHOOK           -> publica en tu Discord
 const fs = require('fs');
 const path = require('path');
+const { callApi: apiCall, makeFail } = require('./_anthropic');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'flash.json');
+const fail = makeFail('Agente Flash');
 const CHANNEL = 'walterbloomberg';
 const MAX_NEW_PER_RUN = 6;      // techo de noticias nuevas por corrida (control de costos y de ruido)
 const MAX_ITEMS_STORED = 120;   // historico visible en la web
@@ -53,26 +55,14 @@ async function fetchChannelPosts() {
   return posts;
 }
 
+// callApi hace streaming (evita el timeout de 300s del fetch de Node) y
+// reintenta 429/5xx/cortes de red — todo en el modulo compartido _anthropic.js.
 async function callApi(apiKey, prompt) {
-  let lastErr = null;
-  for (let intento = 1; intento <= 4; intento++) {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({
-        model: 'claude-sonnet-5',
-        max_tokens: 9000,
-        messages: [{ role: 'user', content: prompt }]
-      })
-    });
-    if (res.ok) return res.json();
-    const errText = await res.text();
-    lastErr = 'API (HTTP ' + res.status + '): ' + errText.slice(0, 300);
-    console.warn('Intento ' + intento + ': ' + lastErr);
-    if (res.status === 429 || res.status >= 500) { await new Promise((r) => setTimeout(r, intento * 15000)); continue; }
-    break;
-  }
-  throw new Error(lastErr);
+  return apiCall(apiKey, {
+    model: 'claude-sonnet-5',
+    max_tokens: 9000,
+    messages: [{ role: 'user', content: prompt }]
+  });
 }
 
 function buildPrompt(nuevos, recientes) {
@@ -163,13 +153,13 @@ async function postDiscord(item) {
 
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) { console.error('Falta ANTHROPIC_API_KEY'); process.exit(1); }
+  if (!apiKey) { fail('Falta ANTHROPIC_API_KEY'); }
 
   let store = { lastId: 0, items: [] };
   try { store = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8')); } catch (e) { /* primer arranque */ }
 
   const posts = await fetchChannelPosts();
-  if (!posts.length) { console.error('El canal no devolvió posts.'); process.exit(1); }
+  if (!posts.length) { fail('El canal de Telegram no devolvió posts.'); }
   const nuevos = posts.filter((p) => p.id > (store.lastId || 0));
   console.log('Posts nuevos desde id ' + store.lastId + ': ' + nuevos.length);
   if (!nuevos.length) { console.log('Sin titulares nuevos. Fin.'); return; }
@@ -177,13 +167,13 @@ async function main() {
   const recientes = store.items.slice(0, 20).map((it) => ({ id: it.id, titulo: it.titulo }));
   const data = await callApi(apiKey, buildPrompt(nuevos.slice(-18), recientes));
   const blocks = (data.content || []).filter((b) => b.type === 'text' && b.text);
-  if (!blocks.length) { console.error('Respuesta sin texto'); process.exit(1); }
+  if (!blocks.length) { fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason); }
   let raw = blocks[blocks.length - 1].text.trim();
   const fence = raw.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
   if (fence) raw = fence[1].trim();
   if (!raw.startsWith('{')) { const a = raw.indexOf('{'); const b = raw.lastIndexOf('}'); if (a !== -1 && b > a) raw = raw.slice(a, b + 1); }
   let out;
-  try { out = JSON.parse(raw); } catch (e) { console.error('JSON inválido de la IA:'); console.error(raw.slice(0, 1200)); process.exit(1); }
+  try { out = JSON.parse(raw); } catch (e) { console.error(raw.slice(0, 1200)); fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason); }
 
   const byId = {}; nuevos.forEach((p) => { byId[p.id] = p; });
   let publicadas = 0, actualizadas = 0;
@@ -228,4 +218,4 @@ async function main() {
   for (const item of paraRedes) { await postTelegram(item); await postDiscord(item); }
 }
 
-main().catch((err) => { console.error(err); process.exit(1); });
+main().catch((err) => { console.error(err); fail(err && err.message ? err.message : String(err)); });

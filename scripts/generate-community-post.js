@@ -1,5 +1,8 @@
+const { callApi, makeFail } = require('./_anthropic');
+
 const CATEGORIES = ['Forex', 'LatAm', 'Materias Primas', 'Índices', 'Criptomonedas', 'Acciones'];
 const BOT_NETLIFY_USER_ID = 'ar4-ai-system-bot';
+const fail = makeFail('Generador del foro');
 
 const POST_TYPES = [
   { key: 'idea_trading', instruction: 'Escribe una IDEA DE TRADING breve: contexto de un activo, qué lo está moviendo, y niveles técnicos a vigilar (soporte/resistencia). Nunca des una señal de compra/venta.' },
@@ -35,14 +38,12 @@ async function main() {
   const supabaseUrl = process.env.SUPABASE_KEY;
   const supabaseSecret = process.env.SUPABASE_SECRET_KEY;
   if (!apiKey || !supabaseUrl || !supabaseSecret) {
-    console.error('Faltan variables de entorno: ANTHROPIC_API_KEY, SUPABASE_KEY o SUPABASE_SECRET_KEY');
-    process.exit(1);
+    fail('Faltan variables de entorno: ANTHROPIC_API_KEY, SUPABASE_KEY o SUPABASE_SECRET_KEY');
   }
 
   const botRows = await supabaseRequest(supabaseUrl, supabaseSecret, 'profiles?netlify_user_id=eq.' + BOT_NETLIFY_USER_ID + '&select=id');
   if (!botRows.length) {
-    console.error('No existe el perfil bot "IA AR4". Corre supabase/migration_ai_bot_posts.sql primero.');
-    process.exit(1);
+    fail('No existe el perfil bot "IA AR4". Corre supabase/migration_ai_bot_posts.sql primero.');
   }
   const botProfileId = botRows[0].id;
 
@@ -77,40 +78,22 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   "sentiment": "'alcista', 'bajista' o 'neutral' si aplica, o null"
 }`;
 
-  // Hasta 4 intentos con espera creciente: un error transitorio de la API
-  // (429/5xx) no debe tumbar la publicación del día.
-  let res = null, lastErr = null;
-  for (let intento = 1; intento <= 4; intento++) {
-    res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-sonnet-5', max_tokens: 1000, messages: [{ role: 'user', content: prompt }] })
-    });
-    if (res.ok) break;
-    lastErr = 'HTTP ' + res.status + ': ' + (await res.text()).slice(0, 300);
-    console.warn('Intento ' + intento + ' fallido — ' + lastErr);
-    if (res.status === 429 || res.status >= 500) {
-      await new Promise((r) => setTimeout(r, intento * 20000));
-      continue;
-    }
-    break;
-  }
-
-  if (!res || !res.ok) {
-    console.error('Error de la API de Anthropic tras reintentos:', lastErr);
-    process.exit(1);
-  }
-
-  const data = await res.json();
+  // callApi hace streaming (evita el timeout de 300s del fetch de Node) y
+  // reintenta 429/5xx/cortes de red — un fallo transitorio no tumba el post.
+  const data = await callApi(apiKey, {
+    model: 'claude-sonnet-5',
+    max_tokens: 1000,
+    messages: [{ role: 'user', content: prompt }]
+  });
   const textBlock = Array.isArray(data.content) ? data.content.find((b) => b.type === 'text') : null;
-  if (!textBlock) { console.error('Respuesta inesperada de la API:', JSON.stringify(data)); process.exit(1); }
+  if (!textBlock) { fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage)); }
 
   let nuevo;
   try {
     nuevo = JSON.parse(textBlock.text.trim());
   } catch (e) {
-    console.error('La IA no devolvió un JSON válido:', textBlock.text);
-    process.exit(1);
+    console.error(textBlock.text.slice(0, 1200));
+    fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason);
   }
 
   if (!CATEGORIES.includes(nuevo.category)) nuevo.category = 'Forex';
@@ -134,5 +117,5 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
 
 main().catch((err) => {
   console.error(err);
-  process.exit(1);
+  fail(err && err.message ? err.message : String(err));
 });
