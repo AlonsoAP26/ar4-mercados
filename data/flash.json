@@ -1,6 +1,6 @@
 {
- "lastId": 33469,
- "actualizado": "2026-07-20T23:14:46.657Z",
+ "lastId": 33470,
+ "actualizado": "2026-07-21T09:27:57.232Z",
  "items": [
   {
    "id": 33454,
@@ -82,6 +82,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-21T08:47:28+00:00",
+     "id": 33470,
+     "texto": "La Guardia Revolucionaria de Irán (IRGC) afirmó haber golpeado infraestructura de un centro de datos de Amazon en Baréin, como represalia por un ataque estadounidense al proyecto nuclear de Darkhovin. También aseguró haber atacado una base militar de EE.UU. en Jordania, alegando la destrucción de un sistema de radar de defensa antimisiles y un caza F-15. El titular no aporta evidencia independiente ni confirmación de fuentes occidentales sobre estos ataques, que se suman a los reclamos previos de operaciones en Baréin y Kuwait reportados horas antes.",
+     "tgUrl": "https://t.me/walterbloomberg/33470"
+    },
+    {
      "fecha": "2026-07-20T22:40:28+00:00",
      "id": 33469,
      "texto": "El ejército iraní —no la Guardia Revolucionaria, que ya había reclamado ataques previos— afirma haber alcanzado con misiles superficie-superficie sistemas de misiles estadounidenses en la base de Arifjan, Kuwait. La información proviene de la televisión estatal iraní y no ha sido confirmada por fuentes occidentales, el Pentágono ni el gobierno kuwaití. Se suma a los reportes previos de ataques a bases en Baréin y Kuwait reivindicados por la Guardia Revolucionaria, indicando que múltiples ramas de las fuerzas armadas iraníes estarían participando en la ofensiva. El mercado sigue de cerca la escalada militar en el Golfo Pérsico, con foco en el riesgo de interrupción del flujo de petróleo por el Estrecho de Ormuz.",
@@ -94,7 +100,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33455"
     }
    ],
-   "actualizado": "2026-07-20T22:40:28+00:00"
+   "actualizado": "2026-07-21T08:47:28+00:00"
   },
   {
    "id": 33450,
