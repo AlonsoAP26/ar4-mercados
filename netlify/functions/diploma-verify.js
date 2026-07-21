@@ -15,9 +15,27 @@ function maskName(nombre) {
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'GET') return { statusCode: 405, body: 'Method Not Allowed' };
   const cert = ((event.queryStringParameters && event.queryStringParameters.cert) || '').trim().toUpperCase();
+
+  // Certificados de DEMOSTRACIÓN (los del panel admin): validan con datos
+  // claramente marcados como ejemplo, para poder enseñar el flujo completo.
+  // Van ANTES del chequeo de formato porque "EJEMPLO" no es hexadecimal.
+  const DEMOS = {
+    'AR4-BAS-EJEMPLO1': { curso: 'basico', nombre: 'M••••• F•••••••• (ejemplo de demostración)', nota: 88 },
+    'AR4-INS-EJEMPLO2': { curso: 'institucional', nombre: 'M••••• F•••••••• (ejemplo de demostración)', nota: 91 }
+  };
+  if (DEMOS[cert]) {
+    const d = DEMOS[cert];
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=300' },
+      body: JSON.stringify({ success: true, valido: true, curso: d.curso, nombre: d.nombre, fecha: new Date().toISOString(), nota: d.nota })
+    };
+  }
+
   if (!/^AR4-(BAS|INS)-[0-9A-F]{8}$/.test(cert)) {
     return { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ success: true, valido: false, motivo: 'Formato de certificado inválido.' }) };
   }
+
   const identity = getIdentity(context);
   if (!identity) return { statusCode: 503, body: JSON.stringify({ success: false, error: 'Verificación no disponible en este momento.' }) };
 
