@@ -7,7 +7,7 @@
 <title>Panel de registros — AR4 Mercados</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=56">
+<link rel="stylesheet" href="css/style.css?v=57">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
@@ -113,7 +113,7 @@
               <div class="diploma-foot">
                 <div class="diploma-foot-col"><span class="diploma-foot-val">19 de julio de 2026</span><span class="diploma-foot-lbl">Fecha de emisión</span></div>
                 <div class="diploma-seal"><svg viewBox="0 0 96 96" width="86" height="86"><defs><linearGradient id="sealDemo1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fbe9b0"/><stop offset="50%" stop-color="#d4af37"/><stop offset="100%" stop-color="#8a6508"/></linearGradient></defs><circle cx="48" cy="48" r="44" fill="none" stroke="url(#sealDemo1)" stroke-width="2.5"/><circle cx="48" cy="48" r="36" fill="none" stroke="url(#sealDemo1)" stroke-width="1" stroke-dasharray="3 3"/><path d="M28 56 L40 42 L48 50 L66 30" fill="none" stroke="url(#sealDemo1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="66" cy="30" r="3" fill="#d4af37"/><text x="48" y="74" text-anchor="middle" font-size="8.5" letter-spacing="2" fill="#b8860b" font-family="monospace">AR4</text></svg></div>
-                <div class="diploma-foot-col"><span class="diploma-foot-val">AR4-BAS-EJEMPLO1</span><span class="diploma-foot-lbl">ID del certificado</span></div>
+                <div class="diploma-foot-col diploma-qr-col"><span class="diploma-qr-box" id="dpDemoQr1"></span><span class="diploma-foot-val diploma-qr-id">AR4-BAS-EJEMPLO1</span><span class="diploma-foot-lbl">Escanea para verificar</span></div>
               </div>
               <p class="diploma-legal">Certificado educativo emitido por ar4mercados.com al completar el programa y aprobar sus evaluaciones. Autenticidad verificable en ar4mercados.com/verificar.html. Documento de carácter formativo: no constituye una titulación oficial.</p>
             </div>
@@ -136,7 +136,7 @@
               <div class="diploma-foot">
                 <div class="diploma-foot-col"><span class="diploma-foot-val">19 de julio de 2026</span><span class="diploma-foot-lbl">Fecha de emisión</span></div>
                 <div class="diploma-seal"><svg viewBox="0 0 96 96" width="86" height="86"><defs><linearGradient id="sealDemo2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fbe9b0"/><stop offset="50%" stop-color="#d4af37"/><stop offset="100%" stop-color="#8a6508"/></linearGradient></defs><circle cx="48" cy="48" r="44" fill="none" stroke="url(#sealDemo2)" stroke-width="2.5"/><circle cx="48" cy="48" r="36" fill="none" stroke="url(#sealDemo2)" stroke-width="1" stroke-dasharray="3 3"/><path d="M28 56 L40 42 L48 50 L66 30" fill="none" stroke="url(#sealDemo2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="66" cy="30" r="3" fill="#d4af37"/><text x="48" y="74" text-anchor="middle" font-size="8.5" letter-spacing="2" fill="#b8860b" font-family="monospace">AR4</text></svg></div>
-                <div class="diploma-foot-col"><span class="diploma-foot-val">AR4-INS-EJEMPLO2</span><span class="diploma-foot-lbl">ID del certificado</span></div>
+                <div class="diploma-foot-col diploma-qr-col"><span class="diploma-qr-box" id="dpDemoQr2"></span><span class="diploma-foot-val diploma-qr-id">AR4-INS-EJEMPLO2</span><span class="diploma-foot-lbl">Escanea para verificar</span></div>
               </div>
               <p class="diploma-legal">Certificado educativo emitido por ar4mercados.com al completar el programa y aprobar sus evaluaciones. Autenticidad verificable en ar4mercados.com/verificar.html. Documento de carácter formativo: no constituye una titulación oficial.</p>
             </div>
@@ -174,5 +174,17 @@
 <script src="js/main.js?v=5"></script>
 <script src="js/auth.js?v=12"></script>
 <script src="js/admin.js?v=10"></script>
+<script src="js/vendor-qrcode.js"></script>
+<script>
+(function () {
+  function gen(id, texto) {
+    var el = document.getElementById(id);
+    if (!el || !window.qrcode) return;
+    try { var q = qrcode(0, 'M'); q.addData(texto); q.make(); el.innerHTML = q.createSvgTag({ cellSize: 2, margin: 0, scalable: true }); } catch (e) {}
+  }
+  gen('dpDemoQr1', 'https://ar4mercados.com/verificar.html?cert=AR4-BAS-EJEMPLO1');
+  gen('dpDemoQr2', 'https://ar4mercados.com/verificar.html?cert=AR4-INS-EJEMPLO2');
+})();
+</script>
 </body>
 </html>

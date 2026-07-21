@@ -72,6 +72,16 @@
     if (notaEl) notaEl.textContent = 'Calificación final: ' + dip.nota + ' / 100';
     document.getElementById('dpDate').textContent = new Date(dip.fecha).toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' });
     document.getElementById('dpId').textContent = dip.cert;
+    // QR de validación: apunta a la verificación pública del certificado.
+    const qrBox = document.getElementById('dpQr');
+    if (qrBox && window.qrcode) {
+      try {
+        const qr = window.qrcode(0, 'M');
+        qr.addData('https://ar4mercados.com/verificar.html?cert=' + dip.cert);
+        qr.make();
+        qrBox.innerHTML = qr.createSvgTag({ cellSize: 2, margin: 0, scalable: true });
+      } catch (e) { /* el ID impreso sigue permitiendo la verificación manual */ }
+    }
     const verEl = document.getElementById('dpVerify');
     if (verEl) verEl.textContent = 'ar4mercados.com/verificar.html?cert=' + dip.cert;
     document.title = info.diplomaTitle + ' — AR4 Mercados';

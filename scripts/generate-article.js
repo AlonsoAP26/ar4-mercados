@@ -78,29 +78,43 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   // pensamiento largo — el "fetch failed" del 19/jul a las 22:26) y reintenta
   // 429/5xx/cortes de red. max_tokens generoso a proposito: Sonnet 5 piensa
   // por defecto y esos tokens salen del mismo tope que la respuesta.
-  const data = await callApi(apiKey, {
-    model: 'claude-sonnet-5',
-    max_tokens: 16000,
-    thinking: { type: 'adaptive' },
-    messages: [{ role: 'user', content: prompt }]
-  });
-  if (data.stop_reason === 'max_tokens') {
-    fail('Respuesta cortada por max_tokens. Uso: ' + JSON.stringify(data.usage));
-  }
-  const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
-  if (!textBlock) {
-    fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
-  }
-  let rawText = textBlock.text.trim();
-  const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
-  if (fence) rawText = fence[1].trim();
-
-  let nuevo;
-  try {
-    nuevo = JSON.parse(rawText);
-  } catch (e) {
-    console.error(rawText.slice(0, 1500));
-    fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
+  // Si la IA devuelve un JSON malformado (paso el 19/jul a las 22:37: escribio
+  // un campo extra "body_final" y rompio el formato), se reintenta la llamada
+  // completa una vez antes de rendirse.
+  let nuevo = null;
+  for (let intento = 1; intento <= 2 && !nuevo; intento++) {
+    const data = await callApi(apiKey, {
+      model: 'claude-sonnet-5',
+      max_tokens: 16000,
+      thinking: { type: 'adaptive' },
+      messages: [{ role: 'user', content: prompt }]
+    });
+    const detalle = 'stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage);
+    if (data.stop_reason === 'max_tokens') {
+      if (intento === 2) fail('Respuesta cortada por max_tokens. ' + detalle);
+      console.warn('Intento ' + intento + ': respuesta cortada por max_tokens. Reintentando...');
+      continue;
+    }
+    const textBlock = Array.isArray(data.content) ? data.content.find(b => b.type === 'text') : null;
+    if (!textBlock) {
+      if (intento === 2) fail('Respuesta sin bloque de texto. ' + detalle);
+      console.warn('Intento ' + intento + ': respuesta sin bloque de texto. Reintentando...');
+      continue;
+    }
+    let rawText = textBlock.text.trim();
+    const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+    if (fence) rawText = fence[1].trim();
+    if (!rawText.startsWith('{')) {
+      const a = rawText.indexOf('{'); const b = rawText.lastIndexOf('}');
+      if (a !== -1 && b > a) rawText = rawText.slice(a, b + 1);
+    }
+    try {
+      nuevo = JSON.parse(rawText);
+    } catch (e) {
+      console.error(rawText.slice(0, 1500));
+      if (intento === 2) fail('La IA no devolvió un JSON válido. ' + detalle);
+      console.warn('Intento ' + intento + ': JSON inválido. Reintentando...');
+    }
   }
 
   nuevo.slug = slugify(nuevo.title) + '-' + Date.now().toString(36);

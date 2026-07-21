@@ -4883,3 +4883,11 @@ td > .dk-chip:first-child { margin-left: 0; }
 @media (max-width: 680px) {
   #modulesGrid, #instTrackGrid, #noticiasGrid, #ideasGrid, #articulosGrid { min-height: 520px; }
 }
+
+
+/* ===== QR de validacion en el diploma ===== */
+.diploma-qr-col { text-align: center; }
+.diploma-qr-box { display: block; width: 74px; height: 74px; padding: 6px; margin: 0 auto 6px; background: #ffffff; border: 1px solid rgba(212,175,55,0.55); border-radius: 8px; box-sizing: content-box; }
+.diploma-qr-box svg { width: 74px; height: 74px; display: block; }
+.diploma-qr-id { font-size: 0.68rem !important; letter-spacing: 1px; }
+@media print { .diploma-qr-box { border-color: #b8860b; } }
