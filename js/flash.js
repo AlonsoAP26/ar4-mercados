@@ -26,6 +26,9 @@
     return new Date(iso).toLocaleDateString('es', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
   }
 
+  // Icono SVG monocromo (regla de la casa: sin emojis en la UI).
+  const BRK_ICON = '<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px;margin-right:3px;"><path d="M13 2 4.5 13.5H11L9.5 22 19 9.5h-6.5L13 2z"/></svg>';
+
   function sesgoChip(s) {
     const cls = s.sesgo === 'alcista' ? 'fl-up' : s.sesgo === 'bajista' ? 'fl-dn' : 'fl-nt';
     const arrow = s.sesgo === 'alcista' ? '&#9650;' : s.sesgo === 'bajista' ? '&#9660;' : '&#9679;';
@@ -38,7 +41,7 @@
     return `
     <article class="fl-card${it.breaking ? ' fl-breaking' : ''}" data-cat="${esc(it.categoria)}" data-imp="${esc(it.impacto)}">
       <div class="fl-head">
-        ${it.breaking ? '<span class="fl-brk">🚨 BREAKING</span>' : ''}
+        ${it.breaking ? '<span class="fl-brk">' + BRK_ICON + 'BREAKING</span>' : ''}
         <span class="fl-cat">${esc(it.categoria)}</span>
         <span class="fl-imp"><span class="sdot ${dot}"></span> impacto ${esc(it.impacto)}</span>
         <span class="fl-time">${timeAgo(it.actualizado || it.fecha)}</span>
@@ -88,7 +91,7 @@
         <div class="fl-strip-head"><span class="fl-strip-live"><span class="sdot sdot-r"></span> FLASH DEL MERCADO</span><a href="flash.html" class="see-all">Ver todo →</a></div>
         <div class="fl-strip-row">${top.map((it) => `
           <a href="flash.html" class="fl-strip-item">
-            ${it.breaking ? '<span class="fl-brk">🚨</span>' : `<span class="sdot ${IMP_DOT[it.impacto] || 'sdot-n'}"></span>`}
+            ${it.breaking ? '<span class="fl-brk">' + BRK_ICON + '</span>' : `<span class="sdot ${IMP_DOT[it.impacto] || 'sdot-n'}"></span>`}
             <span class="fl-strip-title">${esc(it.titulo)}</span>
             <span class="fl-strip-time">${timeAgo(it.actualizado || it.fecha)}</span>
           </a>`).join('')}</div>` : '';
@@ -107,7 +110,7 @@
     if (vermas) vermas.addEventListener('click', () => { showAll = true; render(cache); });
     feed.querySelectorAll('.fl-copy').forEach((btn) => {
       btn.addEventListener('click', async () => {
-        try { await navigator.clipboard.writeText(btn.dataset.x); btn.textContent = '✔ Copiado'; setTimeout(() => { btn.textContent = 'Copiar para X'; }, 1600); }
+        try { await navigator.clipboard.writeText(btn.dataset.x); btn.textContent = 'Copiado'; setTimeout(() => { btn.textContent = 'Copiar para X'; }, 1600); }
         catch (e) { prompt('Copia el texto:', btn.dataset.x); }
       });
     });
