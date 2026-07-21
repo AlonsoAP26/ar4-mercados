@@ -1,7 +1,78 @@
 {
- "lastId": 33503,
- "actualizado": "2026-07-21T20:05:05.372Z",
+ "lastId": 33504,
+ "actualizado": "2026-07-21T21:32:44.175Z",
  "items": [
+  {
+   "id": 33504,
+   "fecha": "2026-07-21T21:27:28+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33504",
+   "original": "IRAN'S TOP JOINT MILITARY COMMAND SAYS IF U.S. ATTACKS IRAN'S NUCLEAR SITES, IT WILL BE AN 'EXPANSION OF WAR' IN THE REGION - IRANIAN STATE TV",
+   "titulo": "Irán advierte que un ataque de EE.UU. a sitios nucleares sería 'expansión de la guerra' en la región",
+   "resumen": "El Comando Conjunto Militar de Irán, principal órgano de coordinación de sus fuerzas armadas, declaró a través de la televisión estatal que un ataque estadounidense contra instalaciones nucleares iraníes constituiría una 'expansión de la guerra' en Medio Oriente. La advertencia se produce en medio de una escalada militar activa entre EE.UU. e Irán, con amenazas explícitas de Trump de atacar próximamente y reportes de explosiones en instalaciones iraníes como Isfahán y Khomein. El titular no especifica medidas concretas de represalia ni un cronograma.",
+   "analisis": {
+    "porque": "Una declaración directa del alto mando militar iraní eleva el riesgo de un conflicto regional de mayor escala justo cuando Trump ha amenazado con atacar 'muy pronto y con mucha fuerza'. El lenguaje de 'expansión de guerra' sugiere que Irán contempla una respuesta militar ampliada, lo que incrementa la prima de riesgo geopolítico en energía y activos refugio.",
+    "queOcurrio": "El Comando Conjunto Militar de Irán advirtió, según la televisión estatal iraní, que un ataque de EE.UU. a sitios nucleares iraníes sería considerado una expansión del conflicto en la región.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "Televisión estatal iraní"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "S&P500",
+    "Bitcoin"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "estados-unidos",
+    "guerra",
+    "escalada-militar",
+    "petróleo",
+    "medio-oriente",
+    "nuclear"
+   ],
+   "tgText": "🚨 Comando Militar de Irán: un ataque de EE.UU. a sitios nucleares sería 'expansión de guerra' en la región. Escalada activa según TV estatal iraní.",
+   "xText": "🚨 IRÁN: El alto mando militar advierte que un ataque de EE.UU. a instalaciones nucleares sería 'expansión de la guerra' regional. Vía TV estatal iraní. Tensión geopolítica en máximos. #Irán #Petróleo",
+   "discordText": "**🚨 IRÁN ADVIERTE ESCALADA**\n- Comando Conjunto Militar de Irán: ataque de EE.UU. a sitios nucleares sería 'expansión de guerra'\n- Fuente: TV estatal iraní (no verificable)\n- Contexto: Trump amenaza con atacar 'muy pronto'\n- **Impacto:** alto | volatilidad muy alta",
+   "pushText": "Irán advierte 'expansión de guerra' si EE.UU. ataca sus sitios nucleares",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "El petróleo (WTI/Brent) suele reaccionar primero ante advertencias de escalada regional que amenazan el suministro o rutas de tránsito en Medio Oriente.",
+    "despues": "Oro, DXY y bonos del Tesoro como activos refugio; posteriormente índices accionarios (S&P 500, Nasdaq) podrían mostrar presión bajista si la retórica se traduce en acción militar concreta.",
+    "escenarios": "Los operadores suelen vigilar confirmaciones de ataques efectivos, cierres de rutas marítimas clave (Estrecho de Ormuz), y declaraciones oficiales de EE.UU. que confirmen o desmientan la inminencia de una operación militar.",
+    "riesgos": "La fuente es televisión estatal iraní, no verificada de forma independiente; existe riesgo de retórica sin correlato militar inmediato, así como de sobrerreacción del mercado ante titulares no confirmados por fuentes occidentales."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 33503,
    "fecha": "2026-07-21T19:36:51+00:00",
