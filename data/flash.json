@@ -1,7 +1,564 @@
 {
- "lastId": 33469,
- "actualizado": "2026-07-20T23:14:46.657Z",
+ "lastId": 33503,
+ "actualizado": "2026-07-21T20:05:05.372Z",
  "items": [
+  {
+   "id": 33503,
+   "fecha": "2026-07-21T19:36:51+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33503",
+   "original": "U.S. SENATOR COLLINS SAYS SOME MILITARY SERVICES FACE NEAR-TERM SOLVENCY CHALLENGES",
+   "titulo": "Senadora Collins advierte sobre riesgos de solvencia a corto plazo en algunas ramas militares de EE.UU.",
+   "resumen": "La senadora estadounidense Susan Collins señaló que algunos servicios militares de EE.UU. enfrentan desafíos de solvencia en el corto plazo. El titular no especifica qué ramas militares están afectadas ni el monto o la naturaleza exacta del problema presupuestario. La declaración surge en un contexto de alta tensión geopolítica con operaciones militares activas en Medio Oriente, lo que podría intensificar la presión fiscal sobre el gasto de defensa de EE.UU.",
+   "analisis": {
+    "porque": "Las advertencias sobre solvencia militar en medio de una escalada activa con Irán pueden anticipar debates sobre gasto de defensa adicional, techo de deuda o asignaciones presupuestarias de emergencia, con implicancias para el mercado de bonos del Tesoro y el sector de defensa.",
+    "queOcurrio": "La senadora Collins declaró que algunas ramas de las fuerzas armadas de EE.UU. enfrentan desafíos de solvencia a corto plazo, sin detallar cuáles ni las cifras involucradas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "Acciones defensa"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "defensa",
+    "presupuesto-militar",
+    "collins",
+    "solvencia-fiscal",
+    "estados-unidos"
+   ],
+   "tgText": "⚠️ La senadora Collins advierte sobre riesgos de solvencia a corto plazo en algunas ramas militares de EE.UU. en medio de escalada con Irán.",
+   "xText": "⚠️ Senadora Collins: algunas ramas militares de EE.UU. enfrentan desafíos de solvencia a corto plazo. Contexto de tensión fiscal en medio de operaciones activas en Medio Oriente.",
+   "discordText": "**⚠️ Alerta fiscal-militar**\n- Senadora Collins advierte sobre solvencia a corto plazo en algunas ramas militares de EE.UU.\n- No se especifican montos ni ramas afectadas\n- Contexto: escalada militar activa en Medio Oriente",
+   "pushText": "Collins alerta sobre solvencia militar de EE.UU.",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Los rendimientos del Tesoro estadounidense podrían mostrar sensibilidad ante expectativas de mayor emisión de deuda para financiar gasto militar adicional.",
+    "despues": "El dólar y las acciones del sector de defensa podrían reflejar expectativas sobre futuras asignaciones presupuestarias.",
+    "escenarios": "Los operadores suelen vigilar declaraciones adicionales del Pentágono o del Congreso sobre el estado real de los fondos militares y posibles solicitudes de presupuesto suplementario.",
+    "riesgos": "El titular carece de detalles específicos sobre qué ramas militares están afectadas y la magnitud del problema, lo que limita la capacidad de evaluar el impacto real."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33502,
+   "fecha": "2026-07-21T19:08:45+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33502",
+   "original": "NEW UK PM BURNHAM APPROVES USE OF UK BASES FOR SOME US STRIKES ON IRAN",
+   "titulo": "Nuevo premier británico Burnham autoriza uso de bases del Reino Unido para ataques de EE.UU. a Irán",
+   "resumen": "El titular indica que Burnham, quien asumió como primer ministro del Reino Unido tras la renuncia de Starmer, aprobó el uso de bases militares británicas para que EE.UU. realice algunos ataques contra Irán. La noticia no especifica qué bases ni el alcance operativo de la autorización. Se trata de una escalada en el respaldo británico a la campaña militar estadounidense en Medio Oriente, en momentos de máxima tensión con Teherán tras reportes de explosiones en instalaciones nucleares iraníes y amenazas cruzadas entre Washington y Teherán.",
+   "analisis": {
+    "porque": "El involucramiento directo del Reino Unido en la infraestructura militar de EE.UU. contra Irán amplía el riesgo geopolítico a una coalición occidental más amplia, lo que puede intensificar la prima de riesgo en petróleo y activos refugio, además de generar reacciones en la libra esterlina por la exposición política y económica del Reino Unido al conflicto.",
+    "queOcurrio": "Según el titular, el nuevo primer ministro británico Burnham aprobó el uso de bases del Reino Unido para algunos ataques estadounidenses contra Irán.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "GBPUSD",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "GBPUSD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "reino-unido",
+    "burnham",
+    "bases-militares",
+    "escalada-militar",
+    "medio-oriente"
+   ],
+   "tgText": "🚨 El nuevo PM británico Burnham autoriza uso de bases del Reino Unido para ataques de EE.UU. a Irán. Escalada geopolítica en curso.",
+   "xText": "🚨 URGENTE: Nuevo PM del Reino Unido, Burnham, aprueba uso de bases británicas para ataques de EE.UU. contra Irán. Escalada militar en Medio Oriente. #Irán #UK",
+   "discordText": "**🚨 ESCALADA GEOPOLÍTICA**\n- Nuevo PM del Reino Unido (Burnham) aprueba bases británicas para ataques de EE.UU. a Irán\n- Amplía coalición militar occidental en el conflicto\n- Vigilar: petróleo, oro, GBP",
+   "pushText": "UK aprueba bases para ataques de EE.UU. a Irán",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "El petróleo suele ser el primero en reaccionar ante señales de expansión del conflicto militar en la región, dado el riesgo a suministro y rutas de transporte.",
+    "despues": "El oro y los bonos del Tesoro como refugio, además de la libra esterlina por la exposición política directa del Reino Unido al conflicto.",
+    "escenarios": "Los operadores suelen vigilar declaraciones oficiales adicionales sobre el alcance de la autorización, posibles represalias iraníes contra intereses británicos, y la respuesta de la OTAN o aliados regionales.",
+    "riesgos": "El titular no detalla el alcance operativo real de la autorización ni si ya se ejecutaron ataques desde bases británicas; falta confirmación de fuentes oficiales adicionales."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33501,
+   "fecha": "2026-07-21T16:06:09+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33501",
+   "original": "U.S. STRIKE THREAT RAISES HORMUZ RISKS Kalshi prediction markets suggest traders expect disruptions in the Strait of Hormuz to persist well into 2027, with only a 31% chance of shipping returning to normal before December 2026. President Donald Trump said the U.S. will target the Pickaxe Mountain area near Iran’s Natanz nuclear facility “pretty soon.” The deeply fortified site is linked to Iran’s ",
+   "titulo": "Trump amenaza con atacar 'Pickaxe Mountain', cerca de la planta nuclear de Natanz",
+   "resumen": "Trump afirmó que Estados Unidos apuntará 'pronto' contra la zona de Pickaxe Mountain, vinculada al sitio nuclear fortificado de Natanz en Irán. Mercados de predicción de Kalshi asignan solo 31% de probabilidad de que el tráfico marítimo en el Estrecho de Ormuz vuelva a la normalidad antes de diciembre de 2026, sugiriendo que los operadores esperan disrupciones prolongadas hasta 2027. La amenaza eleva el riesgo de una nueva fase de escalada militar directa contra infraestructura nuclear iraní, con implicancias para los mercados energéticos globales.",
+   "analisis": {
+    "porque": "Un ataque a instalaciones nucleares fortificadas de Irán representaría una escalada mayor con riesgo de respuesta directa iraní sobre Ormuz, ruta por la que transita cerca de una quinta parte del petróleo mundial.",
+    "queOcurrio": "Trump declaró que EE.UU. atacará 'pronto' el área de Pickaxe Mountain, cercana a Natanz; datos de Kalshi muestran baja probabilidad (31%) de normalización del tráfico en Ormuz antes de fin de 2026.",
+    "estado": "confirmado (declaración de Trump); los datos de Kalshi son mercados de predicción, no cifras oficiales",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "Bitcoin"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "natanz",
+    "pickaxe-mountain",
+    "hormuz",
+    "trump",
+    "nuclear",
+    "escalada"
+   ],
+   "tgText": "⚠️ Trump: EE.UU. atacará 'pronto' Pickaxe Mountain, cerca de Natanz. Kalshi da solo 31% de chance de normalidad en Ormuz antes de dic-2026. Riesgo de escalada nuclear mayor.",
+   "xText": "⚠️Trump amenaza atacar Pickaxe Mountain, zona ligada a Natanz (Irán). Kalshi: solo 31% de probabilidad de normalidad en Hormuz antes de dic-2026. Escalada nuclear en riesgo. #Iran #Hormuz",
+   "discordText": "**⚠️ Trump amenaza instalación nuclear iraní**\n- Objetivo: 'Pickaxe Mountain', cerca de Natanz\n- Ataque descrito como inminente ('pronto')\n- Kalshi: 31% prob. de normalidad en Ormuz antes de dic-2026\n- Riesgo de disrupción prolongada hasta 2027",
+   "pushText": "Trump amenaza atacar zona nuclear cerca de Natanz",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo y oro suelen ser los primeros en moverse ante amenazas concretas a infraestructura nuclear y rutas de Ormuz.",
+    "despues": "Rendimientos de bonos, dólar refugio y activos de riesgo (acciones, cripto) suelen ajustarse con algo de rezago según la escalada real.",
+    "escenarios": "Los traders vigilan si se concreta un ataque efectivo, la respuesta iraní sobre Ormuz, y si mercados de predicción como Kalshi ajustan sus probabilidades de disrupción prolongada.",
+    "riesgos": "Los datos de Kalshi reflejan expectativas de apostadores, no garantías; el titular no confirma fecha ni alcance exacto del ataque anunciado."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33498,
+   "fecha": "2026-07-21T15:40:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33498",
+   "original": "*TRUMP ON IRAN: WILL BE HITTING SOON, VERY HEAVILY",
+   "titulo": "Trump advierte que atacará a Irán 'muy pronto y con mucha fuerza'",
+   "resumen": "Trump intensificó su retórica contra Irán, afirmando que Estados Unidos 'atacará pronto, muy fuertemente', y agregó que Teherán 'no ha visto nada todavía' pese a que Washington 'ha sido amable' hasta ahora. También calificó al liderazgo iraní de 'gente muy malvada'. Las declaraciones se dan en medio de una escalada activa que incluye ataques renovados, bloqueo de puertos iraníes y amenazas hutíes en el Mar Rojo, elevando el riesgo de una confrontación militar de mayor escala en las próximas horas o días.",
+   "analisis": {
+    "porque": "Una amenaza explícita de ataque inminente y de mayor intensidad eleva el riesgo geopolítico inmediato, con impacto directo en energía, refugio y activos de riesgo.",
+    "queOcurrio": "Trump declaró que EE.UU. golpeará a Irán 'pronto y muy fuerte', reiterando que Irán 'no ha visto nada todavía' y calificando a sus líderes de 'muy malvados'.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "DXY",
+    "Bitcoin",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "trump",
+    "irán",
+    "escalada-militar",
+    "ataque-inminente",
+    "geopolitica"
+   ],
+   "tgText": "🚨 Trump: 'Atacaremos a Irán pronto y muy fuerte'. Dice que Teherán 'no ha visto nada todavía' pese a que EE.UU. 'ha sido amable'. Escalada militar en aumento.",
+   "xText": "🚨Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'. 'Irán no ha visto nada todavía'. Retórica de escalada militar se intensifica. #Iran #Trump",
+   "discordText": "**🚨 Trump escala retórica contra Irán**\n- 'Atacaremos pronto, muy fuerte'\n- 'Irán no ha visto nada todavía'\n- Calificó al liderazgo iraní de 'muy malvado'\n- Contexto: bloqueo de puertos y ataques activos",
+   "pushText": "Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo y oro reaccionan primero ante amenazas de ataque inminente por el riesgo de disrupción de suministro y demanda de refugio.",
+    "despues": "Bonos del Tesoro, dólar y criptomonedas suelen ajustarse después según el apetito de riesgo global.",
+    "escenarios": "Los traders vigilan confirmación de un ataque real, respuesta iraní, y si la escalada afecta el tránsito por Ormuz de forma efectiva.",
+    "riesgos": "Riesgo de retórica sin acción militar concreta; el titular no especifica objetivos, cronograma exacto ni magnitud real del ataque anunciado."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33492,
+   "fecha": "2026-07-21T15:35:23+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33492",
+   "original": "TRUMP: CANADA TARIFFS NOT IN RESPONSE TO WILDFIRES",
+   "titulo": "Trump aclara que los aranceles a Canadá no responden a los incendios forestales",
+   "resumen": "Trump desmintió que los aranceles impuestos a Canadá estén relacionados con los incendios forestales, sin ofrecer una justificación alternativa explícita en el titular. La declaración surge en medio de tensiones comerciales bilaterales y podría estar vinculada a la próxima expiración de la tregua arancelaria del 10% que la administración estadounidense evalúa endurecer antes de su vencimiento, según reportes previos.",
+   "analisis": {
+    "porque": "Aclaraciones sobre la motivación real de los aranceles a Canadá son relevantes para el par USD/CAD y sectores expuestos al comercio bilateral, como energía y manufactura.",
+    "queOcurrio": "Trump negó que los aranceles a Canadá tengan relación con los incendios forestales, sin explicar la causa alternativa en el titular disponible.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "USDCAD",
+    "Acciones canadienses"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDCAD",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "canada",
+    "aranceles",
+    "trump",
+    "comercio",
+    "tarifas"
+   ],
+   "tgText": "🇨🇦 Trump: los aranceles a Canadá 'no responden a los incendios forestales'. Persisten tensiones comerciales bilaterales sin motivo explícito aclarado.",
+   "xText": "🇨🇦Trump aclara que los aranceles a Canadá no están vinculados a los incendios forestales. Tensión comercial bilateral continúa sin causa explícita confirmada. #Trump #Canada",
+   "discordText": "**🇨🇦 Aranceles a Canadá: Trump aclara motivo**\n- No están relacionados con incendios forestales\n- Causa alternativa no especificada en el titular\n- Contexto: posible fin de tregua arancelaria del 10%",
+   "pushText": "Trump: aranceles a Canadá no son por incendios forestales",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "El par USD/CAD suele ser el primero en reflejar cambios en la narrativa arancelaria bilateral.",
+    "despues": "Acciones de sectores canadienses expuestos a EE.UU. (energía, manufactura) podrían ajustarse después.",
+    "escenarios": "Los traders vigilan la próxima expiración de la tregua arancelaria del 10% y posibles anuncios formales sobre nuevas tarifas.",
+    "riesgos": "El titular no especifica la razón real de los aranceles ni su magnitud, lo que limita el análisis concreto de impacto."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33491,
+   "fecha": "2026-07-21T15:32:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33491",
+   "original": "OIL HITS FIVE-WEEK HIGH ON MIDDLE EAST ESCALATION Oil prices rose about 2% to a five-week high as renewed U.S.-Iran attacks and Houthi threats to blockade Saudi shipping fueled concerns over global energy supplies. Brent crude climbed above $91 a barrel, while tankers carrying Saudi oil reversed course in the Red Sea amid rising security risks.",
+   "titulo": "El petróleo toca máximo de cinco semanas por escalada militar en Medio Oriente",
+   "resumen": "El crudo subió cerca de 2% hasta un máximo de cinco semanas luego de que se reanudaran ataques entre EE.UU. e Irán y los hutíes amenazaran con bloquear el transporte marítimo saudita. El Brent superó los 91 dólares por barril, mientras que buques cisterna que transportaban petróleo saudita revirtieron su curso en el Mar Rojo por el aumento del riesgo de seguridad. El movimiento refleja la preocupación creciente del mercado energético por una posible disrupción prolongada en rutas clave de suministro global, en un contexto de escalada bélica que involucra directamente al Estrecho de Ormuz.",
+   "analisis": {
+    "porque": "Una escalada sostenida en el Golfo Pérsico y el Mar Rojo amenaza directamente las rutas de exportación de crudo más importantes del mundo, con potencial impacto en inflación global y costos energéticos.",
+    "queOcurrio": "El Brent subió por encima de 91 dólares por barril (+2%) tras ataques renovados EE.UU.-Irán y amenazas hutíes de bloquear buques vinculados a puertos sauditas; varios tanqueros revirtieron rumbo en el Mar Rojo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "Acciones energéticas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "petroleo",
+    "brent",
+    "irán",
+    "hormuz",
+    "medio-oriente",
+    "houthis",
+    "energia"
+   ],
+   "tgText": "🛢️ El Brent supera los US$91 (+2%) en máximo de 5 semanas por escalada Irán-EE.UU. y amenazas hutíes a buques sauditas. Tanqueros revierten rumbo en el Mar Rojo.",
+   "xText": "🛢️Petróleo en máximo de 5 semanas: Brent >US$91 (+2%) por escalada militar Irán-EE.UU. y amenazas hutíes de bloqueo a buques saudíes. Tanqueros revierten curso en Mar Rojo. #Oil #Iran",
+   "discordText": "**🛢️ Petróleo sube a máximo de 5 semanas**\n- Brent +2%, supera US$91/barril\n- Ataques EE.UU.-Irán se reanudan\n- Hutíes amenazan bloqueo a buques sauditas\n- Tanqueros revierten rumbo en Mar Rojo",
+   "pushText": "Petróleo toca máximo de 5 semanas por escalada en Medio Oriente",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "El petróleo (Brent/WTI) suele ser el primer activo en reaccionar ante riesgos de suministro en rutas clave como Ormuz o el Mar Rojo.",
+    "despues": "Rendimientos de bonos, dólar como refugio, oro, y acciones de sectores sensibles a energía (aerolíneas, transporte) suelen seguir con rezago.",
+    "escenarios": "Los traders vigilan si la escalada afecta flujos reales por Ormuz (20% del crudo mundial) versus retórica sin bloqueo efectivo, y la respuesta de la OPEP+ ante presión de precios.",
+    "riesgos": "Riesgo de sobrerreacción si la escalada se diluye diplomáticamente; el titular no especifica volumen real de tráfico afectado ni duración del desvío de tanqueros."
+   },
+   "macro": {
+    "dolar": "Posible fortalecimiento como refugio si la escalada se profundiza",
+    "oro": "Sesgo alcista por demanda de refugio",
+    "nasdaq": "Presión bajista por mayores costos energéticos",
+    "dow": "Sensible a sectores industriales y transporte",
+    "sp500": "Presión moderada, dependiente de sector energía vs consumo",
+    "bitcoin": "Reacción indirecta, dependiente de apetito de riesgo general",
+    "ethereum": "Sin relación directa",
+    "bonos": "Rendimientos al alza por expectativas inflacionarias",
+    "petroleo": "Brent >US$91, +2%, máximo de 5 semanas"
+   },
+   "updates": []
+  },
+  {
+   "id": 33488,
+   "fecha": "2026-07-21T15:31:37+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33488",
+   "original": "Trump: The blockade on Iranian ports continues",
+   "titulo": "Trump confirma que el bloqueo a puertos iraníes continúa",
+   "resumen": "Trump reafirmó que el bloqueo estadounidense sobre puertos de Irán sigue vigente, en medio de la escalada militar activa entre ambos países. La declaración se suma a un contexto de ataques renovados, amenazas hutíes de bloqueo naval a buques sauditas y presión sobre las rutas energéticas del Golfo Pérsico. El titular no detalla el alcance geográfico exacto del bloqueo ni su duración prevista, pero refuerza la percepción de una estrategia de presión económica y militar sostenida contra Teherán.",
+   "analisis": {
+    "porque": "El bloqueo naval sobre puertos iraníes afecta directamente la capacidad de exportación de crudo de Irán y su economía, con efectos indirectos sobre la oferta global de energía.",
+    "queOcurrio": "Trump confirmó que el bloqueo a puertos iraníes impuesto por EE.UU. continúa vigente, sin dar detalles adicionales sobre su alcance o cronograma.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "bloqueo",
+    "puertos",
+    "sanciones",
+    "trump"
+   ],
+   "tgText": "🛳️ Trump confirma que el bloqueo de EE.UU. a puertos iraníes continúa, en medio de la escalada militar activa con Teherán.",
+   "xText": "🛳️Trump: el bloqueo a puertos iraníes continúa. Presión económica y militar sostenida en medio de la escalada con Teherán. #Iran",
+   "discordText": "**🛳️ Bloqueo a puertos iraníes continúa**\n- Confirmado por Trump\n- Parte de presión económica/militar sostenida\n- Sin detalles de alcance o duración",
+   "pushText": "Trump: el bloqueo a puertos de Irán sigue vigente",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "El petróleo puede reaccionar de forma moderada ante la confirmación de restricciones sostenidas a exportaciones iraníes.",
+    "despues": "El dólar y bonos podrían verse afectados marginalmente según el desarrollo de la escalada general.",
+    "escenarios": "Los traders vigilan si el bloqueo se traduce en menor oferta efectiva de crudo iraní en mercados globales.",
+    "riesgos": "El titular no precisa el alcance geográfico ni la efectividad real del bloqueo declarado."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33485,
+   "fecha": "2026-07-21T15:23:44+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33485",
+   "original": "TRUMP: IRAN WANTS TO DESPERATELY MEET",
+   "titulo": "Trump: 'Irán quiere reunirse desesperadamente', pero EE.UU. 'no tiene interés'",
+   "resumen": "Trump afirmó que Irán 'quiere reunirse desesperadamente' con Estados Unidos, pero remarcó que Washington 'no tiene interés' en dicho encuentro. La declaración contrasta con la escalada militar en curso y sugiere que, pese a los canales diplomáticos abiertos, la administración estadounidense no ve condiciones para negociar en este momento. El mensaje añade incertidumbre sobre la posibilidad de una desescalada diplomática a corto plazo entre ambos países.",
+   "analisis": {
+    "porque": "La postura de rechazo a negociar, en medio de una escalada militar activa, reduce las expectativas de una desescalada rápida, factor clave para el apetito de riesgo y precios de energía.",
+    "queOcurrio": "Trump declaró que Irán desea reunirse con urgencia, pero que EE.UU. no tiene interés en ese encuentro.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "diplomacia",
+    "trump",
+    "negociacion",
+    "tensión"
+   ],
+   "tgText": "🗣️ Trump: 'Irán quiere reunirse desesperadamente', pero EE.UU. 'no tiene interés'. Se reducen expectativas de desescalada diplomática inmediata.",
+   "xText": "🗣️Trump: Irán 'quiere reunirse desesperadamente', pero EE.UU. 'no tiene interés'. Baja probabilidad de desescalada diplomática a corto plazo. #Iran #Trump",
+   "discordText": "**🗣️ Trump rechaza reunión con Irán**\n- 'Irán quiere reunirse desesperadamente'\n- 'No tenemos interés', dice Trump\n- Reduce expectativas de desescalada diplomática",
+   "pushText": "Trump rechaza reunión pese a interés de Irán en negociar",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo y oro pueden reaccionar levemente al alza ante la reducción de expectativas de una salida diplomática inmediata.",
+    "despues": "Dólar y bonos podrían ajustarse según evolucione la narrativa de escalada versus diálogo.",
+    "escenarios": "Los traders vigilan señales de apertura de canales diplomáticos formales o, por el contrario, nuevos anuncios de ataques.",
+    "riesgos": "Declaración retórica sujeta a cambios rápidos; no hay confirmación oficial de una solicitud formal de reunión por parte de Irán."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33476,
+   "fecha": "2026-07-21T12:06:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33476",
+   "original": "*BESSENT: FROZE $130M CRYPTO WALLET TIED TO IRAN'S IRGC",
+   "titulo": "Bessent confirma congelamiento de billetera cripto de US$130 millones vinculada al IRGC iraní",
+   "resumen": "El secretario del Tesoro de EE.UU., Scott Bessent, confirmó el congelamiento de una billetera de criptomonedas por US$130 millones asociada al Cuerpo de la Guardia Revolucionaria Islámica (IRGC) de Irán. La medida se enmarca en el contexto de sanciones financieras contra Teherán en medio de la escalada de tensiones militares en Medio Oriente. El titular no especifica en qué exchange o red se ubicaba la billetera, ni el mecanismo técnico usado para el bloqueo, ni si hay actores adicionales sancionados.",
+   "analisis": {
+    "porque": "Refuerza la capacidad de EE.UU. para rastrear y bloquear activos digitales usados por entidades sancionadas, lo que añade presión regulatoria sobre el uso de cripto para evasión de sanciones y puede influir en el apetito de riesgo hacia el sector en medio del conflicto con Irán.",
+    "queOcurrio": "El secretario del Tesoro Bessent declaró que se congeló una billetera cripto de US$130 millones vinculada al IRGC iraní.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bitcoin",
+    "Criptomonedas",
+    "DXY",
+    "Petróleo"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Criptomonedas",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "sanciones",
+    "irgc",
+    "iran",
+    "criptomonedas",
+    "tesoro-eeuu",
+    "bessent"
+   ],
+   "tgText": "🔒 Bessent confirma congelamiento de billetera cripto de US$130M vinculada al IRGC iraní, en medio de la escalada de sanciones contra Teherán.",
+   "xText": "Bessent (Tesoro EE.UU.): se congeló una billetera cripto de US$130M vinculada al IRGC de Irán. Sanciones financieras se intensifican en medio del conflicto con Teherán. #Crypto #Iran",
+   "discordText": "**🔒 Sanciones cripto contra Irán**\n- Bessent confirma congelamiento de billetera por US$130M vinculada al IRGC\n- Se enmarca en la presión de sanciones sobre Teherán\n- Sin detalles técnicos del exchange o red involucrada",
+   "pushText": "Tesoro EE.UU. congela billetera cripto de US$130M vinculada a Irán",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "El sector cripto suele reaccionar primero ante noticias de enforcement regulatorio, especialmente exchanges y stablecoins vinculados a flujos sancionados.",
+    "despues": "El dólar y activos de refugio podrían reflejar el contexto geopolítico más amplio con Irán; el petróleo sigue siendo el activo más sensible al conflicto regional en curso.",
+    "escenarios": "Los traders suelen vigilar si se anuncian sanciones adicionales, congelamientos de exchanges específicos o respuestas de Irán que puedan escalar el conflicto financiero-militar.",
+    "riesgos": "El titular no detalla el mecanismo del congelamiento ni verifica de forma independiente el monto exacto; el contexto de conflicto activo con Irán aumenta la probabilidad de titulares adicionales y volatilidad asociada."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 33454,
    "fecha": "2026-07-20T13:16:12+00:00",
@@ -82,6 +639,24 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-21T10:57:37+00:00",
+     "id": 33475,
+     "texto": "El Ministerio kuwaití confirmó que varias plantas de energía eléctrica y desalinización de agua fueron atacadas el lunes en el marco de la ofensiva iraní reportada previamente contra bases en Baréin y Kuwait. El titular no detalla el alcance de los daños ni si hubo interrupciones de servicio, pero confirma oficialmente el impacto sobre infraestructura crítica del país.",
+     "tgUrl": "https://t.me/walterbloomberg/33475"
+    },
+    {
+     "fecha": "2026-07-21T09:30:18+00:00",
+     "id": 33471,
+     "texto": "El Ministerio del Interior de Baréin confirmó la activación de sirenas de alerta en el país, sin especificar la causa exacta ni si corresponde a un ataque en curso. El hecho se suma a la escalada regional reportada tras los ataques atribuidos a la Guardia Revolucionaria de Irán contra bases en Baréin y Kuwait, ampliando el frente de tensión en el Golfo Pérsico.",
+     "tgUrl": "https://t.me/walterbloomberg/33471"
+    },
+    {
+     "fecha": "2026-07-21T08:47:28+00:00",
+     "id": 33470,
+     "texto": "La Guardia Revolucionaria de Irán (IRGC) afirmó haber golpeado infraestructura de un centro de datos de Amazon en Baréin, como represalia por un ataque estadounidense al proyecto nuclear de Darkhovin. También aseguró haber atacado una base militar de EE.UU. en Jordania, alegando la destrucción de un sistema de radar de defensa antimisiles y un caza F-15. El titular no aporta evidencia independiente ni confirmación de fuentes occidentales sobre estos ataques, que se suman a los reclamos previos de operaciones en Baréin y Kuwait reportados horas antes.",
+     "tgUrl": "https://t.me/walterbloomberg/33470"
+    },
+    {
      "fecha": "2026-07-20T22:40:28+00:00",
      "id": 33469,
      "texto": "El ejército iraní —no la Guardia Revolucionaria, que ya había reclamado ataques previos— afirma haber alcanzado con misiles superficie-superficie sistemas de misiles estadounidenses en la base de Arifjan, Kuwait. La información proviene de la televisión estatal iraní y no ha sido confirmada por fuentes occidentales, el Pentágono ni el gobierno kuwaití. Se suma a los reportes previos de ataques a bases en Baréin y Kuwait reivindicados por la Guardia Revolucionaria, indicando que múltiples ramas de las fuerzas armadas iraníes estarían participando en la ofensiva. El mercado sigue de cerca la escalada militar en el Golfo Pérsico, con foco en el riesgo de interrupción del flujo de petróleo por el Estrecho de Ormuz.",
@@ -94,7 +669,191 @@
      "tgUrl": "https://t.me/walterbloomberg/33455"
     }
    ],
-   "actualizado": "2026-07-20T22:40:28+00:00"
+   "actualizado": "2026-07-21T10:57:37+00:00"
+  },
+  {
+   "id": 33474,
+   "fecha": "2026-07-21T10:52:09+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33474",
+   "original": "VESSELS MAKING VOYAGES TO AND FROM SAUDI PORTS MAY BE “SUBJECT TO TARGETING IN ANY LOCATION” BY HOUTHI FORCES – EMAIL SENT TO COMPANIES",
+   "titulo": "Houthi advierten posibles ataques a buques vinculados a puertos sauditas",
+   "resumen": "Un correo electrónico enviado a compañías navieras advierte que embarcaciones con viajes hacia o desde puertos de Arabia Saudita podrían ser blanco de ataques de fuerzas Houthi 'en cualquier ubicación'. El titular no identifica al remitente del mensaje ni confirma su autenticidad oficial, aunque se enmarca en la escalada de riesgo en rutas marítimas del Mar Rojo y Golfo Pérsico vinculada al conflicto regional con Irán.",
+   "analisis": {
+    "porque": "Amenazas a rutas marítimas clave para el petróleo y comercio global elevan primas de riesgo en fletes y crudo, con impacto directo en cadenas de suministro energético.",
+    "queOcurrio": "Circuló un correo dirigido a navieras advirtiendo sobre posibles ataques Houthi a buques vinculados con puertos sauditas.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "Houthi",
+    "Arabia Saudita",
+    "Mar Rojo",
+    "petroleo",
+    "riesgo maritimo"
+   ],
+   "tgText": "⚠️ Advierten posible ataque Houthi a buques vinculados a puertos sauditas 'en cualquier ubicación', según correo a navieras. Sin confirmación oficial.",
+   "xText": "⚠️ Correo a navieras advierte: buques con destino/origen puertos sauditas podrían ser blanco de ataques Houthi 'en cualquier lugar'. Fuente no confirmada oficialmente. #MarRojo #Petroleo #Houthi",
+   "discordText": "**⚠️ Amenaza a rutas marítimas**\n- Email a navieras advierte ataques Houthi a buques vinculados a puertos sauditas\n- Advertencia: riesgo 'en cualquier ubicación'\n- Remitente y autenticidad no confirmados",
+   "pushText": "Houthi amenazan buques vinculados a puertos sauditas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "El petróleo suele reaccionar primero ante amenazas a rutas marítimas clave del Golfo y Mar Rojo.",
+    "despues": "Costos de fletes marítimos, seguros de carga y divisas de países exportadores de crudo podrían ajustarse.",
+    "escenarios": "Traders vigilan si navieras alteran rutas, suben primas de seguro o si se confirman ataques reales.",
+    "riesgos": "El mensaje proviene de un correo sin remitente identificado; no hay confirmación oficial de las fuerzas Houthi ni de gobiernos involucrados."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33473,
+   "fecha": "2026-07-21T10:18:34+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33473",
+   "original": "TRUMP PREPARES NEW ROUND OF TARIFFS President Donald Trump is reportedly preparing a new round of tariffs on dozens of countries ahead of the expiration of the current 10% global tariff this week. According to the Financial Times, the administration is considering keeping the 10% rate for many countries while pursuing legal avenues to impose higher duties on others.",
+   "titulo": "Trump prepararía nueva ronda de aranceles antes de expirar la tregua del 10%",
+   "resumen": "Según Financial Times, la administración Trump evalúa mantener el arancel global del 10% para muchos países mientras explora vías legales para imponer tasas más altas a otros, antes del vencimiento de la tregua arancelaria actual esta semana. El titular no confirma decisión final ni lista de países afectados; se trata de información atribuida a FT sobre planes en evaluación.",
+   "analisis": {
+    "porque": "Una nueva ronda de aranceles afectaría cadenas de suministro globales, inflación importada y expectativas de la Fed, con impacto directo en dólar, bonos y renta variable.",
+    "queOcurrio": "FT reportó que la Casa Blanca considera mantener el arancel del 10% para algunos países y buscar vías legales para subir tasas a otros, antes de que expire la tregua vigente.",
+    "estado": "rumor",
+    "fuenteOriginal": "Financial Times"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "Rendimientos USA",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "aranceles",
+    "Trump",
+    "comercio",
+    "tarifas",
+    "FT"
+   ],
+   "tgText": "📈 FT: Trump evaluaría nueva ronda de aranceles antes de expirar la tregua del 10% global. Plan aún en evaluación, sin confirmación oficial.",
+   "xText": "Según FT, Trump prepararía nuevos aranceles para decenas de países antes de expirar la tregua del 10%. Administración evalúa vías legales para tasas más altas. #Aranceles #Trump #Comercio",
+   "discordText": "**📈 Nuevos aranceles en evaluación**\n- FT: Trump consideraría mantener 10% para varios países\n- Buscaría vías legales para tasas más altas a otros\n- Tregua actual expira esta semana\n- Sin confirmación oficial de la Casa Blanca",
+   "pushText": "Trump evaluaría nuevos aranceles, según FT",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "El dólar y los rendimientos del Tesoro suelen reaccionar primero ante expectativas de mayores aranceles, por su efecto potencial en inflación.",
+    "despues": "Índices bursátiles, especialmente sectores expuestos a comercio exterior, y monedas emergentes podrían seguir con ajustes.",
+    "escenarios": "Traders vigilan confirmación oficial de la Casa Blanca, lista de países afectados y posibles represalias comerciales.",
+    "riesgos": "Información basada en fuentes de FT, no confirmada por la administración; el plan final podría diferir sustancialmente."
+   },
+   "macro": {
+    "dolar": "Podría fortalecerse ante expectativa de mayores aranceles y presión inflacionaria",
+    "oro": "Posible refugio ante incertidumbre comercial",
+    "nasdaq": "Presión bajista por exposición de tecnológicas a cadenas de suministro globales",
+    "dow": "Sensible a sectores industriales con exposición a comercio internacional",
+    "sp500": "Volatilidad esperada ante incertidumbre arancelaria",
+    "bitcoin": "Reacción indirecta, ligada a apetito de riesgo general",
+    "ethereum": "Reacción indirecta, ligada a apetito de riesgo general",
+    "bonos": "Rendimientos podrían subir ante expectativas de inflación importada",
+    "petroleo": "Impacto indirecto vía comercio global y demanda"
+   },
+   "updates": []
+  },
+  {
+   "id": 33472,
+   "fecha": "2026-07-21T10:10:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33472",
+   "original": "*IRAN OFFICIAL BEGAN MEETING WITH MEDIATORS IN PAKISTAN TUES: AP",
+   "titulo": "Funcionario iraní inicia reunión con mediadores en Pakistán",
+   "resumen": "Un funcionario iraní comenzó el martes una reunión con mediadores en Pakistán, según reportó AP. El titular no especifica identidad del funcionario, agenda ni resultados esperados. El encuentro ocurre en paralelo a la escalada militar entre Irán y países del Golfo, lo que sugiere un canal diplomático activo pese a la tensión bélica.",
+   "analisis": {
+    "porque": "La existencia de canales diplomáticos en paralelo a la escalada militar puede moderar el riesgo geopolítico si deriva en desescalada, factor clave para el precio del petróleo y activos de riesgo.",
+    "queOcurrio": "Un funcionario iraní inició una reunión con mediadores en Pakistán el martes, según AP.",
+    "estado": "confirmado",
+    "fuenteOriginal": "AP"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Iran",
+    "Pakistan",
+    "mediacion",
+    "diplomacia",
+    "Golfo"
+   ],
+   "tgText": "🕊️ Funcionario iraní se reúne con mediadores en Pakistán, según AP, en medio de la escalada regional con el Golfo.",
+   "xText": "Funcionario iraní inicia reunión con mediadores en Pakistán (AP), en paralelo a la escalada militar con países del Golfo. #Iran #Pakistan",
+   "discordText": "**🕊️ Diplomacia en paralelo a la escalada**\n- Funcionario iraní reunido con mediadores en Pakistán (AP)\n- Sin detalles de agenda o resultados\n- Contexto: tensión militar Irán-Golfo en curso",
+   "pushText": "Irán inicia diálogo con mediadores en Pakistán",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Petróleo podría reaccionar levemente a la baja si el mercado interpreta el encuentro como señal de desescalada.",
+    "despues": "Activos de riesgo y divisas emergentes podrían seguir con cautela hasta conocer resultados concretos.",
+    "escenarios": "Traders vigilan declaraciones posteriores a la reunión y si hay señales de tregua o acuerdo parcial.",
+    "riesgos": "El titular no detalla contenido ni resultado de la reunión; podría no tener impacto real en la escalada militar."
+   },
+   "macro": null,
+   "updates": []
   },
   {
    "id": 33450,
