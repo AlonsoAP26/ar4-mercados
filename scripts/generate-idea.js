@@ -127,9 +127,8 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   // a proposito: Sonnet 5 piensa por defecto y esos tokens salen del mismo
   // tope que la respuesta; con el limite anterior el JSON salia cortado.
   const data = await callApi(apiKey, {
-    model: 'claude-sonnet-5',
+    model: 'claude-haiku-4-5-20251001',
     max_tokens: 16000,
-    thinking: { type: 'adaptive' },
     messages: [{ role: 'user', content: prompt }]
   });
   if (data.stop_reason === 'max_tokens') {

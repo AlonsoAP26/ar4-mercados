@@ -81,7 +81,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   // callApi hace streaming (evita el timeout de 300s del fetch de Node) y
   // reintenta 429/5xx/cortes de red — un fallo transitorio no tumba el post.
   const data = await callApi(apiKey, {
-    model: 'claude-sonnet-5',
+    model: 'claude-haiku-4-5-20251001',
     max_tokens: 1000,
     messages: [{ role: 'user', content: prompt }]
   });

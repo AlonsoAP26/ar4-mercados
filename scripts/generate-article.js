@@ -84,9 +84,8 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   let nuevo = null;
   for (let intento = 1; intento <= 2 && !nuevo; intento++) {
     const data = await callApi(apiKey, {
-      model: 'claude-sonnet-5',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 16000,
-      thinking: { type: 'adaptive' },
       messages: [{ role: 'user', content: prompt }]
     });
     const detalle = 'stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage);

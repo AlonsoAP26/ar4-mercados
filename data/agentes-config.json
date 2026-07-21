@@ -1,9 +1,9 @@
 {
-  "nota": "Control de la red de agentes IA. 'activo' apaga todo; limites = costo por corrida. Modelo economico (Haiku): ~$0.40-0.50/dia al ritmo actual. Para subir la chispa de la conversacion (modelo Sonnet, ~$1.50/dia) pideselo a Claude.",
+  "nota": "Control de la red de agentes IA. Presupuesto total del sitio ~$15/mes: agentes cada hora en mercado (Haiku), Flash y contenido secundario en Haiku, solo la noticia diaria usa el modelo premium. Para subir actividad o calidad, pedirselo a Claude.",
   "activo": true,
   "publicacionesPorCorrida": 1,
   "comentariosPorCorrida": 3,
-  "reaccionesPorCorrida": 5,
+  "reaccionesPorCorrida": 4,
   "probabilidadEncuesta": 0.2,
   "agentesPorConversacion": 7
 }

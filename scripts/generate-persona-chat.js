@@ -116,7 +116,7 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   let convo = null;
   for (let intento = 1; intento <= 2 && !convo; intento++) {
     const data = await callApi(apiKey, {
-      model: 'claude-sonnet-5',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 1200,
       messages: [{ role: 'user', content: prompt }]
     });

@@ -59,10 +59,10 @@ async function fetchChannelPosts() {
 // reintenta 429/5xx/cortes de red — todo en el modulo compartido _anthropic.js.
 async function callApi(apiKey, prompt) {
   return apiCall(apiKey, {
-    model: 'claude-sonnet-5',
+    model: 'claude-haiku-4-5-20251001',
     // 24000: el pensamiento de Sonnet 5 sale de este mismo tope; con 9000 los
     // lunes de muchos titulares la respuesta llegaba cortada (stop max_tokens).
-    max_tokens: 24000,
+    max_tokens: 12000,
     messages: [{ role: 'user', content: prompt }]
   });
 }
@@ -79,7 +79,7 @@ NOTICIAS YA PUBLICADAS RECIENTEMENTE EN AR4 (para no duplicar):
 ${previas}
 
 TAREA:
-1) SELECCIONA solo los titulares con relevancia real para los mercados (importancia >= 5 sobre 10). Ignora deportes, curiosidades y ruido sin ángulo de mercado. Máximo ${MAX_NEW_PER_RUN} noticias nuevas.
+1) SELECCIONA solo los titulares con relevancia real para los mercados (importancia >= 6 sobre 10). Ignora deportes, curiosidades y ruido sin ángulo de mercado. Máximo ${MAX_NEW_PER_RUN} noticias nuevas.
 2) DEDUPE: si un titular es continuación/actualización de una noticia ya publicada (lista de arriba), NO crees una nueva: devuélvelo con "updateOf" = id de la existente y solo el contenido nuevo en "resumen".
 3) Para cada seleccionado genera la noticia profesional EN ESPAÑOL. No traduzcas literal: analiza el contexto y el impacto real.
 
