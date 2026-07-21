@@ -87,28 +87,31 @@ async function main() {
     } catch (e) { console.warn('No se pudo sembrar ' + a.username + ': ' + e.message); }
   }
 
-  // ---- Avatares premium: viste a los agentes sin avatar con piezas del
-  // catalogo raras y legendarias (mismo mecanismo que el equipar oficial).
+  // ---- Avatares premium UNICOS: cada agente recibe una combinacion propia
+  // de glifo + fondo del lenguaje visual del catalogo (20 glifos x 20 fondos),
+  // con aro dorado legendario para los agentes estrella (peso 3) y aro raro
+  // para el resto. Deterministico por posicion en el roster: siempre el mismo.
   try {
+    const { generateCustom } = require('../netlify/functions/_avatar-catalog-gen.js');
     const idsFiltro = 'id=in.(' + ROSTER.map((a) => '"' + a.id + '"').join(',') + ')';
     const sinAvatar = await supabase(supabaseUrl, supabaseSecret, 'profiles?select=id&avatar_url=is.null&' + idsFiltro);
-    if (sinAvatar.length) {
-      const catalogo = await supabase(supabaseUrl, supabaseSecret,
-        'avatar_catalog?select=id,svg_markup&rarity=in.("raro","legendario")&limit=300');
-      const piezas = shuffle(catalogo);
-      let vestidos = 0;
-      for (const perfil of sinAvatar) {
-        const pieza = piezas[vestidos % piezas.length];
-        if (!pieza || !pieza.svg_markup) break;
-        const dataUri = 'data:image/svg+xml;base64,' + Buffer.from(pieza.svg_markup, 'utf8').toString('base64');
-        await supabase(supabaseUrl, supabaseSecret, 'profiles?id=eq.' + perfil.id, {
-          method: 'PATCH',
-          body: JSON.stringify({ avatar_url: dataUri })
-        });
-        vestidos++;
-      }
-      if (vestidos) console.log('Avatares premium asignados: ' + vestidos);
+    const faltan = new Set(sinAvatar.map((p) => p.id));
+    let vestidos = 0;
+    for (let idx = 0; idx < ROSTER.length; idx++) {
+      const a = ROSTER[idx];
+      if (!faltan.has(a.id)) continue;
+      const glyphIdx = idx % 20;
+      const bgIdx = (idx * 3 + Math.floor(idx / 20)) % 20;
+      const rareza = (a.peso >= 3) ? 'legendario' : 'raro';
+      const svg = generateCustom(glyphIdx, bgIdx, rareza);
+      const dataUri = 'data:image/svg+xml;base64,' + Buffer.from(svg, 'utf8').toString('base64');
+      await supabase(supabaseUrl, supabaseSecret, 'profiles?id=eq.' + a.id, {
+        method: 'PATCH',
+        body: JSON.stringify({ avatar_url: dataUri })
+      });
+      vestidos++;
     }
+    if (vestidos) console.log('Avatares premium unicos asignados: ' + vestidos);
   } catch (e) { console.warn('Vestidor de avatares: ' + e.message); }
 
   // ---- Contexto real: posts recientes, precios y titulares ----

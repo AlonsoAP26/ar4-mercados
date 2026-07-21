@@ -163,5 +163,43 @@ function generateAll() {
   return out;
 }
 
-const AR4AvatarGen = { generateAvatar, generateAll, TOTAL, tierForSeq };
+// Composición a medida (mezcla libre de glifo + fondo + rareza): la usa la red
+// de agentes IA para que cada agente tenga un avatar ÚNICO con el mismo
+// lenguaje visual del catálogo, sin tocar la tienda (400 combos posibles).
+function generateCustom(glyphIdx, bgIdx, rarity) {
+  const gi = ((glyphIdx % GLYPHS.length) + GLYPHS.length) % GLYPHS.length;
+  const bi = ((bgIdx % BG.length) + BG.length) % BG.length;
+  const bg = BG[bi];
+
+  let ring, ringW, glyphColor, glow, sparkles = '';
+  if (rarity === 'comun') {
+    ring = '#c7cede'; ringW = 4; glyphColor = '#e8edf5'; glow = false;
+  } else if (rarity === 'raro') {
+    ring = '#8ee7d6'; ringW = 5; glyphColor = '#bff3e8'; glow = true;
+  } else {
+    ring = 'url(#goldRing)'; ringW = 6; glyphColor = GOLD_LIGHT; glow = true;
+    for (let k = 0; k < 10; k++) {
+      const ang = (Math.PI * 2 * k) / 10 + (gi * 0.21);
+      const r = 90 + (k % 3);
+      const x = 100 + r * Math.cos(ang), y = 100 + r * Math.sin(ang);
+      sparkles += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(1.1 + (k % 3) * 0.5).toFixed(1)}" fill="${GOLD_LIGHT}" opacity="0.75"/>`;
+    }
+  }
+  const glyph = GLYPHS[gi](glyphColor);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs>
+<radialGradient id="bg" cx="34%" cy="28%" r="90%"><stop offset="0%" stop-color="${bg[0]}"/><stop offset="100%" stop-color="${bg[1]}"/></radialGradient>
+${rarity === 'legendario' ? `<linearGradient id="goldRing" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${GOLD_LIGHT}"/><stop offset="45%" stop-color="${GOLD_ACCENT}"/><stop offset="100%" stop-color="${GOLD_DEEP}"/></linearGradient>` : ''}
+${glow ? `<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>` : ''}
+</defs>
+<circle cx="100" cy="100" r="96" fill="url(#bg)"/>
+<circle cx="100" cy="100" r="80" fill="none" stroke="${glyphColor}" stroke-width="1" opacity="0.14"/>
+<g ${glow ? 'filter="url(#glow)"' : ''}>${glyph}</g>
+${sparkles}
+<circle cx="100" cy="100" r="96" fill="none" stroke="${ring}" stroke-width="${ringW}"/>
+</svg>`;
+  return svg;
+}
+
+const AR4AvatarGen = { generateAvatar, generateAll, generateCustom, TOTAL, tierForSeq };
 if (typeof module !== 'undefined' && module.exports) module.exports = AR4AvatarGen;
