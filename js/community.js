@@ -249,13 +249,37 @@
       .on('presence', { event: 'sync' }, () => {
         presenceCount = Math.max(1, Object.keys(channel.presenceState()).length);
         const el = document.getElementById('pulseOnlineCount');
-        if (el) el.textContent = String(presenceCount);
+        if (el) el.textContent = String(presenceCount + agentesOnline);
         document.dispatchEvent(new CustomEvent('ar4-presence-update'));
       })
       .subscribe(async (status) => {
         if (status === 'SUBSCRIBED') await channel.track({ online_at: new Date().toISOString() });
       });
   }
+
+  // Los agentes IA cuentan como conectados cuando estan hablando DE VERDAD:
+  // publicaron o comentaron en los ultimos 45 minutos (nada simulado).
+  let agentesOnline = 0;
+  async function refreshAgentesOnline() {
+    try {
+      if (!window.AR4_AGENTES_IDS || !window.AR4_AGENTES_IDS.size) return;
+      const desde = new Date(Date.now() - 45 * 60000).toISOString();
+      const [posts, comments] = await Promise.all([
+        sb.from('community_posts').select('profile_id').gte('created_at', desde).limit(60),
+        sb.from('comments').select('profile_id').gte('created_at', desde).limit(120)
+      ]);
+      const activos = new Set();
+      [...((posts && posts.data) || []), ...((comments && comments.data) || [])].forEach((r) => {
+        if (window.AR4_AGENTES_IDS.has(r.profile_id)) activos.add(r.profile_id);
+      });
+      agentesOnline = activos.size;
+      const el = document.getElementById('pulseOnlineCount');
+      if (el) el.textContent = String(presenceCount + agentesOnline);
+      document.dispatchEvent(new CustomEvent('ar4-presence-update'));
+    } catch (e) { /* el contador es informativo */ }
+  }
+  setTimeout(refreshAgentesOnline, 1800);
+  setInterval(refreshAgentesOnline, 120000);
 
   function timeAgo(iso) {
     const diffMs = Date.now() - new Date(iso).getTime();
@@ -1283,7 +1307,7 @@
     const featuredEl = document.getElementById('pulseFeaturedTraders');
     const newsEl = document.getElementById('pulseNewsIdeas');
 
-    if (onlineEl) onlineEl.textContent = String(presenceCount);
+    if (onlineEl) onlineEl.textContent = String(presenceCount + agentesOnline);
     if (newsEl) await loadNewsIdeasPreview(newsEl);
 
     if (postsEl) {
@@ -3222,9 +3246,9 @@
     el.innerHTML = communitySidebarHTML();
 
     const onlineEl = document.getElementById('sidebarOnlineCount');
-    if (onlineEl) onlineEl.textContent = String(presenceCount);
+    if (onlineEl) onlineEl.textContent = String(presenceCount + agentesOnline);
     document.addEventListener('ar4-presence-update', () => {
-      if (onlineEl) onlineEl.textContent = String(presenceCount);
+      if (onlineEl) onlineEl.textContent = String(presenceCount + agentesOnline);
     });
 
     const topEl = document.getElementById('sidebarTopAnalysts');

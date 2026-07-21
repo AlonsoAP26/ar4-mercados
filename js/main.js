@@ -156,8 +156,12 @@ document.addEventListener('change', (e) => {
 // que Comunidad/Perfil marquen sus publicaciones con la insignia "Agente IA".
 (function () {
   window.AR4_AGENTES = new Set();
+  window.AR4_AGENTES_IDS = new Set();
   fetch('data/agentes.json').then(function (r) { return r.json(); }).then(function (d) {
-    (d.agentes || []).forEach(function (a) { window.AR4_AGENTES.add(a.username); });
+    (d.agentes || []).forEach(function (a) {
+      window.AR4_AGENTES.add(a.username);
+      if (a.id) window.AR4_AGENTES_IDS.add(a.id);
+    });
   }).catch(function () {});
   window.AR4_isAgente = function (username) { return window.AR4_AGENTES.has(username); };
   window.AR4_agentBadgeHTML = function (username) {
