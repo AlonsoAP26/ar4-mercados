@@ -1,7 +1,66 @@
 {
- "lastId": 33475,
- "actualizado": "2026-07-21T11:17:52.307Z",
+ "lastId": 33476,
+ "actualizado": "2026-07-21T13:02:26.652Z",
  "items": [
+  {
+   "id": 33476,
+   "fecha": "2026-07-21T12:06:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33476",
+   "original": "*BESSENT: FROZE $130M CRYPTO WALLET TIED TO IRAN'S IRGC",
+   "titulo": "Bessent confirma congelamiento de billetera cripto de US$130 millones vinculada al IRGC iraní",
+   "resumen": "El secretario del Tesoro de EE.UU., Scott Bessent, confirmó el congelamiento de una billetera de criptomonedas por US$130 millones asociada al Cuerpo de la Guardia Revolucionaria Islámica (IRGC) de Irán. La medida se enmarca en el contexto de sanciones financieras contra Teherán en medio de la escalada de tensiones militares en Medio Oriente. El titular no especifica en qué exchange o red se ubicaba la billetera, ni el mecanismo técnico usado para el bloqueo, ni si hay actores adicionales sancionados.",
+   "analisis": {
+    "porque": "Refuerza la capacidad de EE.UU. para rastrear y bloquear activos digitales usados por entidades sancionadas, lo que añade presión regulatoria sobre el uso de cripto para evasión de sanciones y puede influir en el apetito de riesgo hacia el sector en medio del conflicto con Irán.",
+    "queOcurrio": "El secretario del Tesoro Bessent declaró que se congeló una billetera cripto de US$130 millones vinculada al IRGC iraní.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bitcoin",
+    "Criptomonedas",
+    "DXY",
+    "Petróleo"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Criptomonedas",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "sanciones",
+    "irgc",
+    "iran",
+    "criptomonedas",
+    "tesoro-eeuu",
+    "bessent"
+   ],
+   "tgText": "🔒 Bessent confirma congelamiento de billetera cripto de US$130M vinculada al IRGC iraní, en medio de la escalada de sanciones contra Teherán.",
+   "xText": "Bessent (Tesoro EE.UU.): se congeló una billetera cripto de US$130M vinculada al IRGC de Irán. Sanciones financieras se intensifican en medio del conflicto con Teherán. #Crypto #Iran",
+   "discordText": "**🔒 Sanciones cripto contra Irán**\n- Bessent confirma congelamiento de billetera por US$130M vinculada al IRGC\n- Se enmarca en la presión de sanciones sobre Teherán\n- Sin detalles técnicos del exchange o red involucrada",
+   "pushText": "Tesoro EE.UU. congela billetera cripto de US$130M vinculada a Irán",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "El sector cripto suele reaccionar primero ante noticias de enforcement regulatorio, especialmente exchanges y stablecoins vinculados a flujos sancionados.",
+    "despues": "El dólar y activos de refugio podrían reflejar el contexto geopolítico más amplio con Irán; el petróleo sigue siendo el activo más sensible al conflicto regional en curso.",
+    "escenarios": "Los traders suelen vigilar si se anuncian sanciones adicionales, congelamientos de exchanges específicos o respuestas de Irán que puedan escalar el conflicto financiero-militar.",
+    "riesgos": "El titular no detalla el mecanismo del congelamiento ni verifica de forma independiente el monto exacto; el contexto de conflicto activo con Irán aumenta la probabilidad de titulares adicionales y volatilidad asociada."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 33454,
    "fecha": "2026-07-20T13:16:12+00:00",
