@@ -94,8 +94,10 @@ async function main() {
   try {
     const { generateCustom } = require('../netlify/functions/_avatar-catalog-gen.js');
     const idsFiltro = 'id=in.(' + ROSTER.map((a) => '"' + a.id + '"').join(',') + ')';
-    const sinAvatar = await supabase(supabaseUrl, supabaseSecret, 'profiles?select=id&avatar_url=is.null&' + idsFiltro);
-    const faltan = new Set(sinAvatar.map((p) => p.id));
+    // Se viste a quien no tiene avatar Y a quien tenga uno antiguo (no-premium):
+    // asi los 11 veteranos migran de sus munequitos a los avatares unicos.
+    const perfilesAg = await supabase(supabaseUrl, supabaseSecret, 'profiles?select=id,avatar_url&' + idsFiltro);
+    const faltan = new Set(perfilesAg.filter((p) => !p.avatar_url || p.avatar_url.indexOf('data:image/svg+xml') !== 0).map((p) => p.id));
     let vestidos = 0;
     for (let idx = 0; idx < ROSTER.length; idx++) {
       const a = ROSTER[idx];
