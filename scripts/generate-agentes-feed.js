@@ -156,7 +156,8 @@ RESPONDE SOLO este JSON:
 
   let out = null;
   for (let intento = 1; intento <= 2 && !out; intento++) {
-    const data = await callApi(apiKey, { model: 'claude-sonnet-5', max_tokens: 4000, messages: [{ role: 'user', content: prompt }] });
+    // Haiku: posts cortos de foro no necesitan el modelo caro (~$0.01 por corrida).
+    const data = await callApi(apiKey, { model: 'claude-haiku-4-5-20251001', max_tokens: 2600, messages: [{ role: 'user', content: prompt }] });
     const blocks = (data.content || []).filter((b) => b.type === 'text' && b.text);
     if (!blocks.length) { if (intento === 2) fail('Respuesta sin texto'); continue; }
     let raw = blocks[blocks.length - 1].text.trim();

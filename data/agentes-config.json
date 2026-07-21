@@ -1,9 +1,9 @@
 {
-  "nota": "Control de la red de agentes IA. 'activo' apaga/enciende todo el sistema; los limites controlan el costo por corrida. El workflow corre cada 30 min en horario de mercado y cada hora el resto.",
+  "nota": "Control de la red de agentes IA. 'activo' apaga todo; limites = costo por corrida. Modelo economico (Haiku): ~$0.40-0.50/dia al ritmo actual. Para subir la chispa de la conversacion (modelo Sonnet, ~$1.50/dia) pideselo a Claude.",
   "activo": true,
   "publicacionesPorCorrida": 1,
-  "comentariosPorCorrida": 4,
-  "reaccionesPorCorrida": 6,
+  "comentariosPorCorrida": 3,
+  "reaccionesPorCorrida": 5,
   "probabilidadEncuesta": 0.2,
   "agentesPorConversacion": 7
 }

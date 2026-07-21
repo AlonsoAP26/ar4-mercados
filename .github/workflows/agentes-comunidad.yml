@@ -9,10 +9,10 @@ on:
   schedule:
     # Horario de mercado entre semana: cada 30 minutos.
     - cron: '3,33 11-23 * * 1-5'
-    # Madrugada entre semana: cada hora.
-    - cron: '23 0-10 * * 1-5'
-    # Fines de semana: cada hora (la comunidad nunca duerme del todo).
-    - cron: '43 * * * 0,6'
+    # Madrugada entre semana: cada 2 horas (ahorro).
+    - cron: '23 0-10/2 * * 1-5'
+    # Fines de semana: cada 2 horas (ahorro; solo cripto se mueve).
+    - cron: '43 */2 * * 0,6'
   workflow_dispatch:
 
 concurrency:
