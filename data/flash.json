@@ -1,6 +1,6 @@
 {
- "lastId": 33470,
- "actualizado": "2026-07-21T09:27:57.232Z",
+ "lastId": 33475,
+ "actualizado": "2026-07-21T11:17:52.307Z",
  "items": [
   {
    "id": 33454,
@@ -82,6 +82,18 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-21T10:57:37+00:00",
+     "id": 33475,
+     "texto": "El Ministerio kuwaití confirmó que varias plantas de energía eléctrica y desalinización de agua fueron atacadas el lunes en el marco de la ofensiva iraní reportada previamente contra bases en Baréin y Kuwait. El titular no detalla el alcance de los daños ni si hubo interrupciones de servicio, pero confirma oficialmente el impacto sobre infraestructura crítica del país.",
+     "tgUrl": "https://t.me/walterbloomberg/33475"
+    },
+    {
+     "fecha": "2026-07-21T09:30:18+00:00",
+     "id": 33471,
+     "texto": "El Ministerio del Interior de Baréin confirmó la activación de sirenas de alerta en el país, sin especificar la causa exacta ni si corresponde a un ataque en curso. El hecho se suma a la escalada regional reportada tras los ataques atribuidos a la Guardia Revolucionaria de Irán contra bases en Baréin y Kuwait, ampliando el frente de tensión en el Golfo Pérsico.",
+     "tgUrl": "https://t.me/walterbloomberg/33471"
+    },
+    {
      "fecha": "2026-07-21T08:47:28+00:00",
      "id": 33470,
      "texto": "La Guardia Revolucionaria de Irán (IRGC) afirmó haber golpeado infraestructura de un centro de datos de Amazon en Baréin, como represalia por un ataque estadounidense al proyecto nuclear de Darkhovin. También aseguró haber atacado una base militar de EE.UU. en Jordania, alegando la destrucción de un sistema de radar de defensa antimisiles y un caza F-15. El titular no aporta evidencia independiente ni confirmación de fuentes occidentales sobre estos ataques, que se suman a los reclamos previos de operaciones en Baréin y Kuwait reportados horas antes.",
@@ -100,7 +112,191 @@
      "tgUrl": "https://t.me/walterbloomberg/33455"
     }
    ],
-   "actualizado": "2026-07-21T08:47:28+00:00"
+   "actualizado": "2026-07-21T10:57:37+00:00"
+  },
+  {
+   "id": 33474,
+   "fecha": "2026-07-21T10:52:09+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33474",
+   "original": "VESSELS MAKING VOYAGES TO AND FROM SAUDI PORTS MAY BE “SUBJECT TO TARGETING IN ANY LOCATION” BY HOUTHI FORCES – EMAIL SENT TO COMPANIES",
+   "titulo": "Houthi advierten posibles ataques a buques vinculados a puertos sauditas",
+   "resumen": "Un correo electrónico enviado a compañías navieras advierte que embarcaciones con viajes hacia o desde puertos de Arabia Saudita podrían ser blanco de ataques de fuerzas Houthi 'en cualquier ubicación'. El titular no identifica al remitente del mensaje ni confirma su autenticidad oficial, aunque se enmarca en la escalada de riesgo en rutas marítimas del Mar Rojo y Golfo Pérsico vinculada al conflicto regional con Irán.",
+   "analisis": {
+    "porque": "Amenazas a rutas marítimas clave para el petróleo y comercio global elevan primas de riesgo en fletes y crudo, con impacto directo en cadenas de suministro energético.",
+    "queOcurrio": "Circuló un correo dirigido a navieras advirtiendo sobre posibles ataques Houthi a buques vinculados con puertos sauditas.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "Houthi",
+    "Arabia Saudita",
+    "Mar Rojo",
+    "petroleo",
+    "riesgo maritimo"
+   ],
+   "tgText": "⚠️ Advierten posible ataque Houthi a buques vinculados a puertos sauditas 'en cualquier ubicación', según correo a navieras. Sin confirmación oficial.",
+   "xText": "⚠️ Correo a navieras advierte: buques con destino/origen puertos sauditas podrían ser blanco de ataques Houthi 'en cualquier lugar'. Fuente no confirmada oficialmente. #MarRojo #Petroleo #Houthi",
+   "discordText": "**⚠️ Amenaza a rutas marítimas**\n- Email a navieras advierte ataques Houthi a buques vinculados a puertos sauditas\n- Advertencia: riesgo 'en cualquier ubicación'\n- Remitente y autenticidad no confirmados",
+   "pushText": "Houthi amenazan buques vinculados a puertos sauditas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "El petróleo suele reaccionar primero ante amenazas a rutas marítimas clave del Golfo y Mar Rojo.",
+    "despues": "Costos de fletes marítimos, seguros de carga y divisas de países exportadores de crudo podrían ajustarse.",
+    "escenarios": "Traders vigilan si navieras alteran rutas, suben primas de seguro o si se confirman ataques reales.",
+    "riesgos": "El mensaje proviene de un correo sin remitente identificado; no hay confirmación oficial de las fuerzas Houthi ni de gobiernos involucrados."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33473,
+   "fecha": "2026-07-21T10:18:34+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33473",
+   "original": "TRUMP PREPARES NEW ROUND OF TARIFFS President Donald Trump is reportedly preparing a new round of tariffs on dozens of countries ahead of the expiration of the current 10% global tariff this week. According to the Financial Times, the administration is considering keeping the 10% rate for many countries while pursuing legal avenues to impose higher duties on others.",
+   "titulo": "Trump prepararía nueva ronda de aranceles antes de expirar la tregua del 10%",
+   "resumen": "Según Financial Times, la administración Trump evalúa mantener el arancel global del 10% para muchos países mientras explora vías legales para imponer tasas más altas a otros, antes del vencimiento de la tregua arancelaria actual esta semana. El titular no confirma decisión final ni lista de países afectados; se trata de información atribuida a FT sobre planes en evaluación.",
+   "analisis": {
+    "porque": "Una nueva ronda de aranceles afectaría cadenas de suministro globales, inflación importada y expectativas de la Fed, con impacto directo en dólar, bonos y renta variable.",
+    "queOcurrio": "FT reportó que la Casa Blanca considera mantener el arancel del 10% para algunos países y buscar vías legales para subir tasas a otros, antes de que expire la tregua vigente.",
+    "estado": "rumor",
+    "fuenteOriginal": "Financial Times"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "Rendimientos USA",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "aranceles",
+    "Trump",
+    "comercio",
+    "tarifas",
+    "FT"
+   ],
+   "tgText": "📈 FT: Trump evaluaría nueva ronda de aranceles antes de expirar la tregua del 10% global. Plan aún en evaluación, sin confirmación oficial.",
+   "xText": "Según FT, Trump prepararía nuevos aranceles para decenas de países antes de expirar la tregua del 10%. Administración evalúa vías legales para tasas más altas. #Aranceles #Trump #Comercio",
+   "discordText": "**📈 Nuevos aranceles en evaluación**\n- FT: Trump consideraría mantener 10% para varios países\n- Buscaría vías legales para tasas más altas a otros\n- Tregua actual expira esta semana\n- Sin confirmación oficial de la Casa Blanca",
+   "pushText": "Trump evaluaría nuevos aranceles, según FT",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "El dólar y los rendimientos del Tesoro suelen reaccionar primero ante expectativas de mayores aranceles, por su efecto potencial en inflación.",
+    "despues": "Índices bursátiles, especialmente sectores expuestos a comercio exterior, y monedas emergentes podrían seguir con ajustes.",
+    "escenarios": "Traders vigilan confirmación oficial de la Casa Blanca, lista de países afectados y posibles represalias comerciales.",
+    "riesgos": "Información basada en fuentes de FT, no confirmada por la administración; el plan final podría diferir sustancialmente."
+   },
+   "macro": {
+    "dolar": "Podría fortalecerse ante expectativa de mayores aranceles y presión inflacionaria",
+    "oro": "Posible refugio ante incertidumbre comercial",
+    "nasdaq": "Presión bajista por exposición de tecnológicas a cadenas de suministro globales",
+    "dow": "Sensible a sectores industriales con exposición a comercio internacional",
+    "sp500": "Volatilidad esperada ante incertidumbre arancelaria",
+    "bitcoin": "Reacción indirecta, ligada a apetito de riesgo general",
+    "ethereum": "Reacción indirecta, ligada a apetito de riesgo general",
+    "bonos": "Rendimientos podrían subir ante expectativas de inflación importada",
+    "petroleo": "Impacto indirecto vía comercio global y demanda"
+   },
+   "updates": []
+  },
+  {
+   "id": 33472,
+   "fecha": "2026-07-21T10:10:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33472",
+   "original": "*IRAN OFFICIAL BEGAN MEETING WITH MEDIATORS IN PAKISTAN TUES: AP",
+   "titulo": "Funcionario iraní inicia reunión con mediadores en Pakistán",
+   "resumen": "Un funcionario iraní comenzó el martes una reunión con mediadores en Pakistán, según reportó AP. El titular no especifica identidad del funcionario, agenda ni resultados esperados. El encuentro ocurre en paralelo a la escalada militar entre Irán y países del Golfo, lo que sugiere un canal diplomático activo pese a la tensión bélica.",
+   "analisis": {
+    "porque": "La existencia de canales diplomáticos en paralelo a la escalada militar puede moderar el riesgo geopolítico si deriva en desescalada, factor clave para el precio del petróleo y activos de riesgo.",
+    "queOcurrio": "Un funcionario iraní inició una reunión con mediadores en Pakistán el martes, según AP.",
+    "estado": "confirmado",
+    "fuenteOriginal": "AP"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Iran",
+    "Pakistan",
+    "mediacion",
+    "diplomacia",
+    "Golfo"
+   ],
+   "tgText": "🕊️ Funcionario iraní se reúne con mediadores en Pakistán, según AP, en medio de la escalada regional con el Golfo.",
+   "xText": "Funcionario iraní inicia reunión con mediadores en Pakistán (AP), en paralelo a la escalada militar con países del Golfo. #Iran #Pakistan",
+   "discordText": "**🕊️ Diplomacia en paralelo a la escalada**\n- Funcionario iraní reunido con mediadores en Pakistán (AP)\n- Sin detalles de agenda o resultados\n- Contexto: tensión militar Irán-Golfo en curso",
+   "pushText": "Irán inicia diálogo con mediadores en Pakistán",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Petróleo podría reaccionar levemente a la baja si el mercado interpreta el encuentro como señal de desescalada.",
+    "despues": "Activos de riesgo y divisas emergentes podrían seguir con cautela hasta conocer resultados concretos.",
+    "escenarios": "Traders vigilan declaraciones posteriores a la reunión y si hay señales de tregua o acuerdo parcial.",
+    "riesgos": "El titular no detalla contenido ni resultado de la reunión; podría no tener impacto real en la escalada militar."
+   },
+   "macro": null,
+   "updates": []
   },
   {
    "id": 33450,
