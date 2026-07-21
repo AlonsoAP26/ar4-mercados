@@ -111,20 +111,25 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
 
   // callApi hace streaming (evita el timeout de 300s del fetch de Node) y
   // reintenta 429/5xx/cortes de red.
-  const data = await callApi(apiKey, {
-    model: 'claude-sonnet-5',
-    max_tokens: 1200,
-    messages: [{ role: 'user', content: prompt }]
-  });
-  const textBlock = Array.isArray(data.content) ? data.content.find((b) => b.type === 'text') : null;
-  if (!textBlock) { fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage)); }
-
-  let convo;
-  try {
-    convo = JSON.parse(textBlock.text.trim());
-  } catch (e) {
-    console.error(textBlock.text.slice(0, 1200));
-    fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason);
+  // Hasta 2 pasadas: si el modelo emite un JSON inválido (o lo envuelve en
+  // ```json```), se limpia y de fallar se pide de nuevo antes de rendirse.
+  let convo = null;
+  for (let intento = 1; intento <= 2 && !convo; intento++) {
+    const data = await callApi(apiKey, {
+      model: 'claude-sonnet-5',
+      max_tokens: 1200,
+      messages: [{ role: 'user', content: prompt }]
+    });
+    const textBlock = Array.isArray(data.content) ? data.content.find((b) => b.type === 'text') : null;
+    if (!textBlock) { if (intento === 2) fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage)); continue; }
+    let raw = textBlock.text.trim();
+    const fence = raw.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+    if (fence) raw = fence[1].trim();
+    if (!raw.startsWith('{')) { const a = raw.indexOf('{'); const b = raw.lastIndexOf('}'); if (a !== -1 && b > a) raw = raw.slice(a, b + 1); }
+    try { convo = JSON.parse(raw); } catch (e) {
+      console.error('Intento ' + intento + ': JSON inválido. ' + raw.slice(0, 600));
+      if (intento === 2) fail('La IA no devolvió un JSON válido tras 2 intentos. stop_reason=' + data.stop_reason);
+    }
   }
 
   const byUsername = Object.fromEntries(PERSONAS.map((p) => [p.username, p.id]));

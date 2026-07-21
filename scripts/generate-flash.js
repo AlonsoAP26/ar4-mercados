@@ -167,15 +167,22 @@ async function main() {
   if (!nuevos.length) { console.log('Sin titulares nuevos. Fin.'); return; }
 
   const recientes = store.items.slice(0, 20).map((it) => ({ id: it.id, titulo: it.titulo }));
-  const data = await callApi(apiKey, buildPrompt(nuevos.slice(-18), recientes));
-  const blocks = (data.content || []).filter((b) => b.type === 'text' && b.text);
-  if (!blocks.length) { fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason); }
-  let raw = blocks[blocks.length - 1].text.trim();
-  const fence = raw.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
-  if (fence) raw = fence[1].trim();
-  if (!raw.startsWith('{')) { const a = raw.indexOf('{'); const b = raw.lastIndexOf('}'); if (a !== -1 && b > a) raw = raw.slice(a, b + 1); }
-  let out;
-  try { out = JSON.parse(raw); } catch (e) { console.error(raw.slice(0, 1200)); fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason); }
+  // Hasta 2 pasadas completas: a veces el modelo emite un JSON inválido por
+  // puro azar (fallos del 20-jul con stop_reason=end_turn) y reintentar basta.
+  let out = null;
+  for (let intento = 1; intento <= 2 && !out; intento++) {
+    const data = await callApi(apiKey, buildPrompt(nuevos.slice(-18), recientes));
+    const blocks = (data.content || []).filter((b) => b.type === 'text' && b.text);
+    if (!blocks.length) { if (intento === 2) fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason); continue; }
+    let raw = blocks[blocks.length - 1].text.trim();
+    const fence = raw.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+    if (fence) raw = fence[1].trim();
+    if (!raw.startsWith('{')) { const a = raw.indexOf('{'); const b = raw.lastIndexOf('}'); if (a !== -1 && b > a) raw = raw.slice(a, b + 1); }
+    try { out = JSON.parse(raw); } catch (e) {
+      console.error('Intento ' + intento + ': JSON inválido. ' + raw.slice(0, 600));
+      if (intento === 2) fail('La IA no devolvió un JSON válido tras 2 intentos. stop_reason=' + data.stop_reason);
+    }
+  }
 
   const byId = {}; nuevos.forEach((p) => { byId[p.id] = p; });
   let publicadas = 0, actualizadas = 0;
