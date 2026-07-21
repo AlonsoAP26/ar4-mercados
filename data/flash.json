@@ -1,7 +1,127 @@
 {
- "lastId": 33501,
- "actualizado": "2026-07-21T16:40:51.566Z",
+ "lastId": 33503,
+ "actualizado": "2026-07-21T20:05:05.372Z",
  "items": [
+  {
+   "id": 33503,
+   "fecha": "2026-07-21T19:36:51+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33503",
+   "original": "U.S. SENATOR COLLINS SAYS SOME MILITARY SERVICES FACE NEAR-TERM SOLVENCY CHALLENGES",
+   "titulo": "Senadora Collins advierte sobre riesgos de solvencia a corto plazo en algunas ramas militares de EE.UU.",
+   "resumen": "La senadora estadounidense Susan Collins señaló que algunos servicios militares de EE.UU. enfrentan desafíos de solvencia en el corto plazo. El titular no especifica qué ramas militares están afectadas ni el monto o la naturaleza exacta del problema presupuestario. La declaración surge en un contexto de alta tensión geopolítica con operaciones militares activas en Medio Oriente, lo que podría intensificar la presión fiscal sobre el gasto de defensa de EE.UU.",
+   "analisis": {
+    "porque": "Las advertencias sobre solvencia militar en medio de una escalada activa con Irán pueden anticipar debates sobre gasto de defensa adicional, techo de deuda o asignaciones presupuestarias de emergencia, con implicancias para el mercado de bonos del Tesoro y el sector de defensa.",
+    "queOcurrio": "La senadora Collins declaró que algunas ramas de las fuerzas armadas de EE.UU. enfrentan desafíos de solvencia a corto plazo, sin detallar cuáles ni las cifras involucradas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "Acciones defensa"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "defensa",
+    "presupuesto-militar",
+    "collins",
+    "solvencia-fiscal",
+    "estados-unidos"
+   ],
+   "tgText": "⚠️ La senadora Collins advierte sobre riesgos de solvencia a corto plazo en algunas ramas militares de EE.UU. en medio de escalada con Irán.",
+   "xText": "⚠️ Senadora Collins: algunas ramas militares de EE.UU. enfrentan desafíos de solvencia a corto plazo. Contexto de tensión fiscal en medio de operaciones activas en Medio Oriente.",
+   "discordText": "**⚠️ Alerta fiscal-militar**\n- Senadora Collins advierte sobre solvencia a corto plazo en algunas ramas militares de EE.UU.\n- No se especifican montos ni ramas afectadas\n- Contexto: escalada militar activa en Medio Oriente",
+   "pushText": "Collins alerta sobre solvencia militar de EE.UU.",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Los rendimientos del Tesoro estadounidense podrían mostrar sensibilidad ante expectativas de mayor emisión de deuda para financiar gasto militar adicional.",
+    "despues": "El dólar y las acciones del sector de defensa podrían reflejar expectativas sobre futuras asignaciones presupuestarias.",
+    "escenarios": "Los operadores suelen vigilar declaraciones adicionales del Pentágono o del Congreso sobre el estado real de los fondos militares y posibles solicitudes de presupuesto suplementario.",
+    "riesgos": "El titular carece de detalles específicos sobre qué ramas militares están afectadas y la magnitud del problema, lo que limita la capacidad de evaluar el impacto real."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33502,
+   "fecha": "2026-07-21T19:08:45+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33502",
+   "original": "NEW UK PM BURNHAM APPROVES USE OF UK BASES FOR SOME US STRIKES ON IRAN",
+   "titulo": "Nuevo premier británico Burnham autoriza uso de bases del Reino Unido para ataques de EE.UU. a Irán",
+   "resumen": "El titular indica que Burnham, quien asumió como primer ministro del Reino Unido tras la renuncia de Starmer, aprobó el uso de bases militares británicas para que EE.UU. realice algunos ataques contra Irán. La noticia no especifica qué bases ni el alcance operativo de la autorización. Se trata de una escalada en el respaldo británico a la campaña militar estadounidense en Medio Oriente, en momentos de máxima tensión con Teherán tras reportes de explosiones en instalaciones nucleares iraníes y amenazas cruzadas entre Washington y Teherán.",
+   "analisis": {
+    "porque": "El involucramiento directo del Reino Unido en la infraestructura militar de EE.UU. contra Irán amplía el riesgo geopolítico a una coalición occidental más amplia, lo que puede intensificar la prima de riesgo en petróleo y activos refugio, además de generar reacciones en la libra esterlina por la exposición política y económica del Reino Unido al conflicto.",
+    "queOcurrio": "Según el titular, el nuevo primer ministro británico Burnham aprobó el uso de bases del Reino Unido para algunos ataques estadounidenses contra Irán.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "GBPUSD",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "GBPUSD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "reino-unido",
+    "burnham",
+    "bases-militares",
+    "escalada-militar",
+    "medio-oriente"
+   ],
+   "tgText": "🚨 El nuevo PM británico Burnham autoriza uso de bases del Reino Unido para ataques de EE.UU. a Irán. Escalada geopolítica en curso.",
+   "xText": "🚨 URGENTE: Nuevo PM del Reino Unido, Burnham, aprueba uso de bases británicas para ataques de EE.UU. contra Irán. Escalada militar en Medio Oriente. #Irán #UK",
+   "discordText": "**🚨 ESCALADA GEOPOLÍTICA**\n- Nuevo PM del Reino Unido (Burnham) aprueba bases británicas para ataques de EE.UU. a Irán\n- Amplía coalición militar occidental en el conflicto\n- Vigilar: petróleo, oro, GBP",
+   "pushText": "UK aprueba bases para ataques de EE.UU. a Irán",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "El petróleo suele ser el primero en reaccionar ante señales de expansión del conflicto militar en la región, dado el riesgo a suministro y rutas de transporte.",
+    "despues": "El oro y los bonos del Tesoro como refugio, además de la libra esterlina por la exposición política directa del Reino Unido al conflicto.",
+    "escenarios": "Los operadores suelen vigilar declaraciones oficiales adicionales sobre el alcance de la autorización, posibles represalias iraníes contra intereses británicos, y la respuesta de la OTAN o aliados regionales.",
+    "riesgos": "El titular no detalla el alcance operativo real de la autorización ni si ya se ejecutaron ataques desde bases británicas; falta confirmación de fuentes oficiales adicionales."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 33501,
    "fecha": "2026-07-21T16:06:09+00:00",
