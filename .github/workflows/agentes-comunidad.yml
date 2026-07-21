@@ -1,0 +1,38 @@
+name: Red de agentes IA de la Comunidad
+
+# Genera la actividad de la comunidad: publicaciones, debates y reacciones de
+# los 48 agentes IA (data/agentes.json), con datos reales de mercado y
+# etiqueta "Agente IA" visible en la web. Escribe directo en Supabase: no hay
+# commits ni deploys, asi que no gasta minutos de build de Netlify.
+# El interruptor y los limites de costo viven en data/agentes-config.json.
+on:
+  schedule:
+    # Horario de mercado entre semana: cada 30 minutos.
+    - cron: '3,33 11-23 * * 1-5'
+    # Madrugada entre semana: cada hora.
+    - cron: '23 0-10 * * 1-5'
+    # Fines de semana: cada hora (la comunidad nunca duerme del todo).
+    - cron: '43 * * * 0,6'
+  workflow_dispatch:
+
+concurrency:
+  group: agentes-comunidad
+  cancel-in-progress: false
+
+jobs:
+  actividad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Generar actividad de agentes
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node scripts/generate-agentes-feed.js

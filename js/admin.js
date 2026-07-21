@@ -232,12 +232,59 @@
     }
   }
 
+  // ===== Red de agentes IA: roster + metricas =====
+  const agentesEl = document.getElementById('adminAgentes');
+  async function loadAgentes() {
+    if (!agentesEl) return;
+    const user = netlifyIdentity.currentUser();
+    if (!user) return;
+    try {
+      const [rosterRes, configRes, jwt] = await Promise.all([
+        fetch('data/agentes.json').then((r) => r.json()),
+        fetch('data/agentes-config.json').then((r) => r.json()).catch(() => ({})),
+        user.jwt()
+      ]);
+      const roster = rosterRes.agentes || [];
+      const ids = roster.map((x) => x.id);
+      const met = await fetch('/.netlify/functions/admin-agentes?ids=' + encodeURIComponent(JSON.stringify(ids)), { headers: { Authorization: 'Bearer ' + jwt } }).then((r) => r.json());
+      const counts = (met && met.counts) || {};
+      const totalPosts = Object.values(counts).reduce((s2, c) => s2 + (c.posts || 0), 0);
+      const totalComments = Object.values(counts).reduce((s2, c) => s2 + (c.comments || 0), 0);
+      agentesEl.innerHTML = `
+        <p class="footer-text" style="margin-bottom:12px;">
+          Sistema: <strong style="color:${configRes.activo ? 'var(--green, #2ecc71)' : '#ff8a8a'};">${configRes.activo ? 'ACTIVO' : 'APAGADO'}</strong> ·
+          <strong style="color:var(--gold-bright);">${roster.length}</strong> agentes ·
+          <strong style="color:var(--gold-bright);">${totalPosts}</strong> publicaciones ·
+          <strong style="color:var(--gold-bright);">${totalComments}</strong> comentarios acumulados
+        </p>
+        <div class="card-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;">
+        ${roster.map((ag) => {
+          const c = counts[ag.id] || { posts: 0, comments: 0 };
+          return `
+          <div class="admin-dip-card" style="margin:0;">
+            <div class="admin-dip-head" style="margin-bottom:4px;">
+              <strong><a href="perfil.html?u=${encodeURIComponent(ag.username)}" class="perfil-link-name">@${esc(ag.username)}</a></strong>
+              <span class="news-meta">${esc(ag.pais)} · peso ${ag.peso}</span>
+            </div>
+            <p class="footer-text" style="margin:0 0 6px;">${esc(ag.especialidad)} · ${esc(ag.nivel)} · ${esc(ag.experiencia)}</p>
+            <p class="footer-text" style="margin:0 0 6px;font-style:italic;">"${esc(ag.bio)}"</p>
+            <span class="news-meta">${c.posts} post(s) · ${c.comments} comentario(s)</span>
+          </div>`;
+        }).join('')}
+        </div>`;
+    } catch (e) {
+      agentesEl.innerHTML = '<p class="footer-text">No se pudieron cargar los agentes: ' + esc(String(e.message || e)) + '</p>';
+    }
+  }
+  const agentesRefreshBtn = document.getElementById('adminAgentesRefresh');
+  if (agentesRefreshBtn) agentesRefreshBtn.addEventListener('click', loadAgentes);
+
   if (diplomasRefreshBtn) diplomasRefreshBtn.addEventListener('click', loadDiplomas);
 
   if (loginBtn) loginBtn.addEventListener('click', () => netlifyIdentity.open('login'));
   if (refreshBtn) refreshBtn.addEventListener('click', load);
 
-  netlifyIdentity.on('init', () => { load(); startAutoRefresh(); loadDiplomas(); });
-  netlifyIdentity.on('login', () => { netlifyIdentity.close(); load(); loadDiplomas(); });
+  netlifyIdentity.on('init', () => { load(); startAutoRefresh(); loadDiplomas(); loadAgentes(); });
+  netlifyIdentity.on('login', () => { netlifyIdentity.close(); load(); loadDiplomas(); loadAgentes(); });
   netlifyIdentity.on('logout', () => { lastTotal = null; load(); });
 })();

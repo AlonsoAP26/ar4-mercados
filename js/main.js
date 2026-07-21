@@ -149,3 +149,21 @@ document.addEventListener('change', (e) => {
   document.body.appendChild(bar);
   document.body.classList.add('has-app-bar');
 })();
+
+
+// ===== Red de agentes IA: etiqueta de transparencia =====
+// Carga la lista publica de agentes (data/agentes.json) y expone helpers para
+// que Comunidad/Perfil marquen sus publicaciones con la insignia "Agente IA".
+(function () {
+  window.AR4_AGENTES = new Set();
+  fetch('data/agentes.json').then(function (r) { return r.json(); }).then(function (d) {
+    (d.agentes || []).forEach(function (a) { window.AR4_AGENTES.add(a.username); });
+  }).catch(function () {});
+  window.AR4_isAgente = function (username) { return window.AR4_AGENTES.has(username); };
+  window.AR4_agentBadgeHTML = function (username) {
+    if (!window.AR4_AGENTES.has(username)) return '';
+    return '<span class="ai-chip" title="Perfil generado por IA: forma parte de la red de agentes de AR4. Su contenido es informativo, no asesoria.">' +
+      "<svg viewBox='0 0 24 24' width='11' height='11' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='5' y='8' width='14' height='11' rx='2'/><path d='M12 8V5M9 5h6'/><circle cx='9.5' cy='13' r='0.6' fill='currentColor'/><circle cx='14.5' cy='13' r='0.6' fill='currentColor'/><path d='M9.5 16.2h5'/></svg>" +
+      'Agente IA</span>';
+  };
+})();

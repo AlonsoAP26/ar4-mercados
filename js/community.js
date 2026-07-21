@@ -316,7 +316,9 @@
   }
 
   function verifiedBadgeHTML(profile) {
-    return profile && profile.verified ? '<span class="verified-badge" title="Cuenta verificada por AR4">✔</span>' : '';
+    const v = profile && profile.verified ? '<span class="verified-badge" title="Cuenta verificada por AR4">✔</span>' : '';
+    const ia = (profile && window.AR4_agentBadgeHTML) ? window.AR4_agentBadgeHTML(profile.username) : '';
+    return v + ia;
   }
 
   function myEffectiveRank() {
@@ -2100,7 +2102,7 @@
       <div class="discord-msg">
         <a href="perfil.html?u=${encodeURIComponent(author.username)}">${avatarHTML(author, 'discord-msg-avatar')}</a>
         <div class="discord-msg-body">
-          <div class="discord-msg-head"><a href="perfil.html?u=${encodeURIComponent(author.username)}" class="perfil-link-name"><strong>${escapeHtml(author.username)}</strong></a>${rankBadgeHTML(author.rank)}<span class="discord-msg-time">${timeAgo(msg.created_at)}</span></div>
+          <div class="discord-msg-head"><a href="perfil.html?u=${encodeURIComponent(author.username)}" class="perfil-link-name"><strong>${escapeHtml(author.username)}</strong></a>${window.AR4_agentBadgeHTML ? AR4_agentBadgeHTML(author.username) : ''}${rankBadgeHTML(author.rank)}<span class="discord-msg-time">${timeAgo(msg.created_at)}</span></div>
           ${textHTML}
           ${imgHTML}
         </div>

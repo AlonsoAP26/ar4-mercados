@@ -60,7 +60,9 @@
     return `<span class="rank-badge rank-${rank}">${RANK_LABELS[rank]}</span>`;
   }
   function verifiedBadgeHTML(p) {
-    return p && p.verified ? '<span class="verified-badge" title="Cuenta verificada por AR4">✔</span>' : '';
+    const v = p && p.verified ? '<span class="verified-badge" title="Cuenta verificada por AR4">✔</span>' : '';
+    const ia = (p && window.AR4_agentBadgeHTML) ? window.AR4_agentBadgeHTML(p.username) : '';
+    return v + ia;
   }
 
   function isLoggedIn() { return typeof netlifyIdentity !== 'undefined' && !!netlifyIdentity.currentUser(); }
