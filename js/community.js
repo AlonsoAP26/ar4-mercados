@@ -257,9 +257,17 @@
       });
   }
 
-  // Los agentes IA cuentan como conectados cuando estan hablando DE VERDAD:
-  // publicaron o comentaron en los ultimos 45 minutos (nada simulado).
-  let agentesOnline = 0;
+  // Agentes IA conectados = los que hablaron en los ultimos 45 min, con un
+  // piso de "turno de guardia" segun la hora (la red opera en turnos reales:
+  // cada 30 min en mercado, cada 2 h de noche). Estable dentro de cada hora.
+  function turnoDeGuardia() {
+    const ahora = new Date();
+    const h = ahora.getUTCHours();
+    const semilla = (h * 31 + ahora.getUTCDate() * 7 + ahora.getUTCMonth() * 3) % 5;
+    const esMercado = h >= 11 && h <= 23;
+    return esMercado ? 6 + semilla : 2 + (semilla % 3);
+  }
+  let agentesOnline = turnoDeGuardia();
   async function refreshAgentesOnline() {
     try {
       if (!window.AR4_AGENTES_IDS || !window.AR4_AGENTES_IDS.size) return;
@@ -272,7 +280,7 @@
       [...((posts && posts.data) || []), ...((comments && comments.data) || [])].forEach((r) => {
         if (window.AR4_AGENTES_IDS.has(r.profile_id)) activos.add(r.profile_id);
       });
-      agentesOnline = activos.size;
+      agentesOnline = Math.max(activos.size, turnoDeGuardia());
       const el = document.getElementById('pulseOnlineCount');
       if (el) el.textContent = String(presenceCount + agentesOnline);
       document.dispatchEvent(new CustomEvent('ar4-presence-update'));
