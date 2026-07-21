@@ -1,7 +1,71 @@
 {
- "lastId": 33504,
- "actualizado": "2026-07-21T21:32:44.175Z",
+ "lastId": 33505,
+ "actualizado": "2026-07-21T22:33:14.430Z",
  "items": [
+  {
+   "id": 33505,
+   "fecha": "2026-07-21T22:05:20+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33505",
+   "original": "WHITE HOUSE TO REDIRECT BILLIONS IN RESEARCH FUNDS TOWARD AI, AWAY FROM COLLEGES- WSJ",
+   "titulo": "Casa Blanca redirige miles de millones en fondos de investigación hacia IA, lejos de universidades",
+   "resumen": "La administración estadounidense planea reasignar fondos federales de investigación desde instituciones académicas hacia iniciativas de inteligencia artificial, según reporta el Wall Street Journal. El titular no especifica montos exactos, cronograma de implementación ni detalles sobre qué programas universitarios serían afectados directamente.",
+   "analisis": {
+    "porque": "Afecta expectativas de inversión en tecnología (sector AI, semiconductores, cloud), presupuesto educativo-científico USA, y competitividad global en IA. Impacta también acciones de universidades privadas y empresas de investigación.",
+    "queOcurrio": "Casa Blanca comunicaría intención de redirigir recursos presupuestarios federales de investigación hacia proyectos de IA, reduciendo fondos disponibles para universidades.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Wall Street Journal (reproducido por Bloomberg)"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "S&P 500",
+    "Semiconductores (NVDA, TSMC, AMD)",
+    "Educación (CHGG, APUS)"
+   ],
+   "sesgos": [
+    {
+     "activo": "Acciones tech/IA (NVDA, MSFT, GOOGL)",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Acciones educación superior",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "política-fiscal-usa",
+    "inteligencia-artificial",
+    "presupuesto-investigación",
+    "universidades",
+    "fondos-federales"
+   ],
+   "tgText": "🇺🇸 Casa Blanca reasignaría fondos de investigación universitaria hacia IA. Impacto potencial en acciones tech (positivo) y educación (negativo). WSJ reporta redirección de miles de millones.",
+   "xText": "📊 Casa Blanca redirige miles de millones en fondos de investigación hacia IA, lejos de universidades. Movimiento que favorece sector tech; riesgos para acciones educativas. Vía WSJ.",
+   "discordText": "**Casa Blanca Redirige Fondos de Investigación hacia IA**\n\n• Administración estadounidense planea reasignar fondos federales\n• Destino: iniciativas de IA\n• Origen: instituciones académicas/universidades\n• Fuente: Wall Street Journal\n• Impacto esperado: alcista para tech, bajista para educación",
+   "pushText": "Casa Blanca redirige fondos de investigación hacia IA | Impacto tech/educación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones NASDAQ y semiconductores (NVDA, TSMC) suelen avanzar por aumento de gasto federal en IA. Tech megacaps como MSFT y GOOGL que lideran inversión en IA reaccionan alcistas.",
+    "despues": "Acciones de educación superior (CHGG, APUS) tienden a retroceder. Bonos de universidades privadas podrían debilitarse. El S&P 500 podría tener sesgo mixto según ponderación sectorial.",
+    "escenarios": "Traders monitean: (1) anuncio oficial de montos reasignados; (2) cronograma de implementación; (3) reacción del sector académico; (4) si la medida impulsa competitividad USA vs China en IA; (5) si genera inversión privada compensatoria en universidades.",
+    "riesgos": "Titular de WSJ sin cifras verificables. No hay confirmación oficial de Casa Blanca. Riesgo de que sea filtración o propuesta en fase preliminar, no política ejecutada. Impacto real depende de magnitud real de redirección."
+   },
+   "macro": {
+    "dolar": "Neutral a alcista leve si se percibe como fortalecimiento competitivo USA en IA",
+    "oro": "Neutral",
+    "nasdaq": "Alcista",
+    "dow": "Neutral a mixto",
+    "sp500": "Neutral a mixto",
+    "bitcoin": "Neutral",
+    "ethereum": "Neutral",
+    "bonos": "Bajista leve (universidades privadas pueden emitir más deuda)",
+    "petroleo": "Neutral"
+   },
+   "updates": []
+  },
   {
    "id": 33504,
    "fecha": "2026-07-21T21:27:28+00:00",
