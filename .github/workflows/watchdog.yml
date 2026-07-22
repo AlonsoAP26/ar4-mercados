@@ -1,13 +1,20 @@
 name: Vigia automatico (auto-repara y avisa solo si no pudo)
 
-# Corre cada mañana despues de los generadores nocturnos. Verifica que el
-# contenido del dia anterior exista y que el sitio responda; si un generador
-# fallo, LO RELANZA SOLO y re-verifica. Solo envia email (fallo del job) si
-# la auto-reparacion tampoco funciono — cero ruido, cero intervencion manual.
+# Corre dos veces al dia: a las 22:45 UTC (75 min despues de la publicacion
+# diaria de las 21:30, la ventana donde suele fallar un generador) y a las
+# 11:00 UTC como red de seguridad de la mañana. Verifica que el contenido
+# esperado exista y que el sitio responda; si un generador fallo, LO RELANZA
+# SOLO y re-verifica. Solo envia email (fallo del job) si la auto-reparacion
+# tampoco funciono — cero ruido, cero intervencion manual.
+#
+# La reparacion vespertina es la valiosa: repara EL MISMO DIA, asi la noticia
+# sale con la fecha correcta y cubre el cierre de esa jornada. La matinal solo
+# atrapa lo que la vespertina no pudo (con fecha del dia siguiente).
 
 on:
   schedule:
-    - cron: '0 11 * * *'   # 11:00 UTC = 6:00 am Lima, todos los dias
+    - cron: '45 22 * * 0-5'   # 22:45 UTC = 5:45 pm Lima, tras la publicacion (dom-vie)
+    - cron: '0 11 * * *'      # 11:00 UTC = 6:00 am Lima, red de seguridad diaria
   workflow_dispatch:
 
 permissions:
@@ -43,12 +50,20 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # El cron publica dom-vie a las 21:30 UTC. Cada mañana exigimos que
-          # exista contenido de AYER, salvo que ayer fuera sabado (sin sesion).
-          ayer=$(date -u -d "yesterday" +%Y-%m-%d)
-          dia_ayer=$(date -u -d "yesterday" +%u)   # 1=lunes ... 6=sabado 7=domingo
-          if [ "$dia_ayer" = "6" ]; then
-            echo "Ayer fue sabado: no se esperaba publicacion. OK."
+          # El cron publica dom-vie a las 21:30 UTC. La corrida vespertina
+          # (>= 22:00 UTC) exige contenido de HOY, porque la publicacion del
+          # dia ya debio salir; la matinal exige contenido de AYER. En ambos
+          # casos, si ese dia fue sabado no habia sesion y no se exige nada.
+          hora=$(date -u +%H)
+          if [ "$hora" -ge 22 ]; then
+            objetivo=$(date -u +%Y-%m-%d)
+            dia_objetivo=$(date -u +%u)   # 1=lunes ... 6=sabado 7=domingo
+          else
+            objetivo=$(date -u -d "yesterday" +%Y-%m-%d)
+            dia_objetivo=$(date -u -d "yesterday" +%u)
+          fi
+          if [ "$dia_objetivo" = "6" ]; then
+            echo "El dia exigido ($objetivo) fue sabado: no se esperaba publicacion. OK."
             exit 0
           fi
           frescura() {
@@ -62,8 +77,8 @@ jobs:
             ok=1
             for f in noticias.json ideas.json articulos.json; do
               ult=$(frescura "$f")
-              echo "data/$f -> ultima fecha: $ult (se exige >= $ayer)"
-              if [ "$ult" \< "$ayer" ]; then ok=0; fi
+              echo "data/$f -> ultima fecha: $ult (se exige >= $objetivo)"
+              if [ "$ult" \< "$objetivo" ]; then ok=0; fi
             done
             echo $ok
           }
