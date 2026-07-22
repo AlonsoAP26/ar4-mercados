@@ -1,6 +1,6 @@
 {
- "lastId": 33523,
- "actualizado": "2026-07-22T21:19:06.252Z",
+ "lastId": 33524,
+ "actualizado": "2026-07-22T22:38:21.006Z",
  "items": [
   {
    "id": 33523,
@@ -80,7 +80,15 @@
     "bonos": "Bajista a corto plazo (venta técnica)",
     "petroleo": "Alcista (riesgo de oferta Oriente Medio)"
    },
-   "updates": []
+   "updates": [
+    {
+     "fecha": "2026-07-22T21:35:21+00:00",
+     "id": 33524,
+     "texto": "Agencia semi-oficial FARS de Irán reporta dos explosiones en las inmediaciones de Bushehr. El titular no especifica origen, naturaleza ni confirmación de daños. Continúa escalada militar en la región tras ataques estadounidenses previos anunciados contra objetivos en Juzestán.",
+     "tgUrl": "https://t.me/walterbloomberg/33524"
+    }
+   ],
+   "actualizado": "2026-07-22T21:35:21+00:00"
   },
   {
    "id": 33522,
