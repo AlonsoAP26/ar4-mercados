@@ -1,7 +1,170 @@
 {
- "lastId": 33507,
- "actualizado": "2026-07-22T00:09:49.214Z",
+ "lastId": 33509,
+ "actualizado": "2026-07-22T11:16:51.003Z",
  "items": [
+  {
+   "id": 33509,
+   "fecha": "2026-07-22T08:01:12+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33509",
+   "original": "U.S. S&P 500 E-MINI FUTURES DOWN 0.4%, NASDAQ 100 FUTURES DOWN 0.9%, DOW FUTURES DOWN 0.3%",
+   "titulo": "Futuros de Wall Street abren a la baja por escalada geopolítica",
+   "resumen": "Los futuros del S&P 500 cotizan con caída de 0,4%, Nasdaq 100 retrocede 0,9% y Dow Jones baja 0,3% en apertura. La caída refleja el impacto inmediato de la escalada de tensiones entre EE.UU. e Irán y señales de aversión al riesgo en mercados globales.",
+   "analisis": {
+    "porque": "Movimiento de renta variable estadounidense que anticipa apertura de mercado spot. Caídas generalizadas sugieren repricing de riesgo geopolítico y posible flight-to-safety.",
+    "queOcurrio": "Tres principales índices estadounidenses en futuros abren con pérdidas en contexto de tensiones Irán-EE.UU.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Walter Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P500",
+    "NASDAQ100",
+    "DowJones",
+    "VIX",
+    "Oro",
+    "Bonos",
+    "Petróleo",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ100",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DowJones",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "futuros",
+    "wall-street",
+    "irán",
+    "eeuu",
+    "caída",
+    "renta-variable"
+   ],
+   "tgText": "📉 Futuros US bajan a apertura: S&P500 -0,4%, Nasdaq -0,9%, Dow -0,3%. Tensiones Irán-EEUU generan aversión al riesgo en mercados globales.",
+   "xText": "📊 Futuros de Wall Street abren en rojo. S&P500 -0,4%, Nasdaq -0,9%, Dow -0,3%. Escalada geopolítica con Irán presiona activos de riesgo.",
+   "discordText": "**Futuros US abren a la baja**\n• S&P500: -0,4%\n• NASDAQ100: -0,9%\n• Dow Jones: -0,3%\n\nTensiones Irán-EEUU disparan aversión al riesgo.",
+   "pushText": "Wall Street baja a apertura por tensiones con Irán",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "VIX y futuros del Nasdaq (mayor sensibilidad a riesgo sistémico). Nasdaq-100 cae más que S&P por concentración en tech de alto crecimiento.",
+    "despues": "Oro y bonos (flight-to-safety); dólar (busca de resguardo); petróleo (oferta/demanda geopolítica); criptos (activos de riesgo).",
+    "escenarios": "Traders monitorean si caída continúa en apertura spot (-0,5% a -1,5% sería escalada), rebalance de portafolios defensivos, posibles paradas de stop-loss, y si el miedo se contagia a mercados emergentes.",
+    "riesgos": "Titular es en tiempo real (08:01 UTC); posible reversión parcial en apertura si baja demanda de cobertura. Depende del flujo institucional real."
+   },
+   "macro": {
+    "dolar": "alcista (busca de resguardo típica)",
+    "oro": "alcista (resguardo tradicional)",
+    "nasdaq": "bajista (tech sensible a tasa/riesgo)",
+    "dow": "bajista (pero menos que Nasdaq)",
+    "sp500": "bajista (repricing de riesgo)",
+    "bitcoin": "bajista (activo de riesgo, no resguardo)",
+    "ethereum": null,
+    "bonos": "alcista (busca de rendimiento seguro)",
+    "petroleo": "mixto (geopolítica iraní vs demanda débil en US)"
+   },
+   "updates": []
+  },
+  {
+   "id": 33501,
+   "fecha": "2026-07-21T16:06:09+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33501",
+   "original": "U.S. STRIKE THREAT RAISES HORMUZ RISKS Kalshi prediction markets suggest traders expect disruptions in the Strait of Hormuz to persist well into 2027, with only a 31% chance of shipping returning to normal before December 2026. President Donald Trump said the U.S. will target the Pickaxe Mountain area near Iran’s Natanz nuclear facility “pretty soon.” The deeply fortified site is linked to Iran’s ",
+   "titulo": "Trump amenaza con atacar 'Pickaxe Mountain', cerca de la planta nuclear de Natanz",
+   "resumen": "Trump afirmó que Estados Unidos apuntará 'pronto' contra la zona de Pickaxe Mountain, vinculada al sitio nuclear fortificado de Natanz en Irán. Mercados de predicción de Kalshi asignan solo 31% de probabilidad de que el tráfico marítimo en el Estrecho de Ormuz vuelva a la normalidad antes de diciembre de 2026, sugiriendo que los operadores esperan disrupciones prolongadas hasta 2027. La amenaza eleva el riesgo de una nueva fase de escalada militar directa contra infraestructura nuclear iraní, con implicancias para los mercados energéticos globales.",
+   "analisis": {
+    "porque": "Un ataque a instalaciones nucleares fortificadas de Irán representaría una escalada mayor con riesgo de respuesta directa iraní sobre Ormuz, ruta por la que transita cerca de una quinta parte del petróleo mundial.",
+    "queOcurrio": "Trump declaró que EE.UU. atacará 'pronto' el área de Pickaxe Mountain, cercana a Natanz; datos de Kalshi muestran baja probabilidad (31%) de normalización del tráfico en Ormuz antes de fin de 2026.",
+    "estado": "confirmado (declaración de Trump); los datos de Kalshi son mercados de predicción, no cifras oficiales",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "Bitcoin"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "natanz",
+    "pickaxe-mountain",
+    "hormuz",
+    "trump",
+    "nuclear",
+    "escalada"
+   ],
+   "tgText": "⚠️ Trump: EE.UU. atacará 'pronto' Pickaxe Mountain, cerca de Natanz. Kalshi da solo 31% de chance de normalidad en Ormuz antes de dic-2026. Riesgo de escalada nuclear mayor.",
+   "xText": "⚠️Trump amenaza atacar Pickaxe Mountain, zona ligada a Natanz (Irán). Kalshi: solo 31% de probabilidad de normalidad en Hormuz antes de dic-2026. Escalada nuclear en riesgo. #Iran #Hormuz",
+   "discordText": "**⚠️ Trump amenaza instalación nuclear iraní**\n- Objetivo: 'Pickaxe Mountain', cerca de Natanz\n- Ataque descrito como inminente ('pronto')\n- Kalshi: 31% prob. de normalidad en Ormuz antes de dic-2026\n- Riesgo de disrupción prolongada hasta 2027",
+   "pushText": "Trump amenaza atacar zona nuclear cerca de Natanz",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo y oro suelen ser los primeros en moverse ante amenazas concretas a infraestructura nuclear y rutas de Ormuz.",
+    "despues": "Rendimientos de bonos, dólar refugio y activos de riesgo (acciones, cripto) suelen ajustarse con algo de rezago según la escalada real.",
+    "escenarios": "Los traders vigilan si se concreta un ataque efectivo, la respuesta iraní sobre Ormuz, y si mercados de predicción como Kalshi ajustan sus probabilidades de disrupción prolongada.",
+    "riesgos": "Los datos de Kalshi reflejan expectativas de apostadores, no garantías; el titular no confirma fecha ni alcance exacto del ataque anunciado."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-22T08:00:43+00:00",
+     "id": 33508,
+     "texto": "Medios estatales iraníes advierten que el país utilizará todos sus recursos si fuerzas estadounidenses entran en territorio iraní. Escala el tono de amenazas tras planes confirmados de ataques de EE.UU. a instalaciones nucleares iraníes.",
+     "tgUrl": "https://t.me/walterbloomberg/33508"
+    }
+   ],
+   "actualizado": "2026-07-22T08:00:43+00:00"
+  },
   {
    "id": 33507,
    "fecha": "2026-07-21T23:24:22+00:00",
@@ -325,76 +488,6 @@
     "despues": "El oro y los bonos del Tesoro como refugio, además de la libra esterlina por la exposición política directa del Reino Unido al conflicto.",
     "escenarios": "Los operadores suelen vigilar declaraciones oficiales adicionales sobre el alcance de la autorización, posibles represalias iraníes contra intereses británicos, y la respuesta de la OTAN o aliados regionales.",
     "riesgos": "El titular no detalla el alcance operativo real de la autorización ni si ya se ejecutaron ataques desde bases británicas; falta confirmación de fuentes oficiales adicionales."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33501,
-   "fecha": "2026-07-21T16:06:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33501",
-   "original": "U.S. STRIKE THREAT RAISES HORMUZ RISKS Kalshi prediction markets suggest traders expect disruptions in the Strait of Hormuz to persist well into 2027, with only a 31% chance of shipping returning to normal before December 2026. President Donald Trump said the U.S. will target the Pickaxe Mountain area near Iran’s Natanz nuclear facility “pretty soon.” The deeply fortified site is linked to Iran’s ",
-   "titulo": "Trump amenaza con atacar 'Pickaxe Mountain', cerca de la planta nuclear de Natanz",
-   "resumen": "Trump afirmó que Estados Unidos apuntará 'pronto' contra la zona de Pickaxe Mountain, vinculada al sitio nuclear fortificado de Natanz en Irán. Mercados de predicción de Kalshi asignan solo 31% de probabilidad de que el tráfico marítimo en el Estrecho de Ormuz vuelva a la normalidad antes de diciembre de 2026, sugiriendo que los operadores esperan disrupciones prolongadas hasta 2027. La amenaza eleva el riesgo de una nueva fase de escalada militar directa contra infraestructura nuclear iraní, con implicancias para los mercados energéticos globales.",
-   "analisis": {
-    "porque": "Un ataque a instalaciones nucleares fortificadas de Irán representaría una escalada mayor con riesgo de respuesta directa iraní sobre Ormuz, ruta por la que transita cerca de una quinta parte del petróleo mundial.",
-    "queOcurrio": "Trump declaró que EE.UU. atacará 'pronto' el área de Pickaxe Mountain, cercana a Natanz; datos de Kalshi muestran baja probabilidad (31%) de normalización del tráfico en Ormuz antes de fin de 2026.",
-    "estado": "confirmado (declaración de Trump); los datos de Kalshi son mercados de predicción, no cifras oficiales",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "Bitcoin"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "irán",
-    "natanz",
-    "pickaxe-mountain",
-    "hormuz",
-    "trump",
-    "nuclear",
-    "escalada"
-   ],
-   "tgText": "⚠️ Trump: EE.UU. atacará 'pronto' Pickaxe Mountain, cerca de Natanz. Kalshi da solo 31% de chance de normalidad en Ormuz antes de dic-2026. Riesgo de escalada nuclear mayor.",
-   "xText": "⚠️Trump amenaza atacar Pickaxe Mountain, zona ligada a Natanz (Irán). Kalshi: solo 31% de probabilidad de normalidad en Hormuz antes de dic-2026. Escalada nuclear en riesgo. #Iran #Hormuz",
-   "discordText": "**⚠️ Trump amenaza instalación nuclear iraní**\n- Objetivo: 'Pickaxe Mountain', cerca de Natanz\n- Ataque descrito como inminente ('pronto')\n- Kalshi: 31% prob. de normalidad en Ormuz antes de dic-2026\n- Riesgo de disrupción prolongada hasta 2027",
-   "pushText": "Trump amenaza atacar zona nuclear cerca de Natanz",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo y oro suelen ser los primeros en moverse ante amenazas concretas a infraestructura nuclear y rutas de Ormuz.",
-    "despues": "Rendimientos de bonos, dólar refugio y activos de riesgo (acciones, cripto) suelen ajustarse con algo de rezago según la escalada real.",
-    "escenarios": "Los traders vigilan si se concreta un ataque efectivo, la respuesta iraní sobre Ormuz, y si mercados de predicción como Kalshi ajustan sus probabilidades de disrupción prolongada.",
-    "riesgos": "Los datos de Kalshi reflejan expectativas de apostadores, no garantías; el titular no confirma fecha ni alcance exacto del ataque anunciado."
    },
    "macro": null,
    "updates": []
