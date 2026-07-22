@@ -1,7 +1,73 @@
 {
- "lastId": 33515,
- "actualizado": "2026-07-22T16:41:01.206Z",
+ "lastId": 33516,
+ "actualizado": "2026-07-22T18:19:15.397Z",
  "items": [
+  {
+   "id": 33516,
+   "fecha": "2026-07-22T16:54:07+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33516",
+   "original": "SENATE CRYPTO BILL HEADS FOR SHOWDOWN Senate Republicans released updated text of the Clarity Act ahead of a possible vote next week. The draft adds White House-backed crypto ethics rules, but no Democrats have endorsed them. GOP leaders are pushing ahead, while bipartisan support remains uncertain as disputes over enforcement and conflicts of interest persist.",
+   "titulo": "Proyecto de ley cripto republicano avanza hacia votación sin apoyo demócrata",
+   "resumen": "El Senado de EE.UU. publicó el texto actualizado de la Clarity Act con reglas de ética cripto respaldadas por la Casa Blanca. Los líderes republicanos impulsan una votación posible la próxima semana, pero el apoyo bipartidista sigue incierto. Persisten disputas sobre aplicación normativa y conflictos de interés que podrían bloquear su aprobación.",
+   "analisis": {
+    "porque": "La regulación cripto es un catalizador crítico para Bitcoin, Ethereum y mercados digitales. Una Clarity Act aprobada aclararía el marco legal en EE.UU. acelerando adopción institucional; su rechazo generaría volatilidad y posible corrección. La falta de apoyo demócrata reduce probabilidades de sanción.",
+    "queOcurrio": "Republicanos circularon versión revisada del proyecto que incorpora estándares de ética respaldados por Casa Blanca, pero ningún demócrata lo respalda aún. Se espera votación en el Senado próxima semana con resultado incierto.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bitcoin",
+    "Ethereum",
+    "Criptomonedas",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Ethereum",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Criptomonedas",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "clarity-act",
+    "regulacion-cripto",
+    "senado-usa",
+    "bitcoin",
+    "ethereum",
+    "politica-cripto"
+   ],
+   "tgText": "📋 REGULACIÓN CRIPTO | Senado republicano avanza con Clarity Act pero sin apoyo demócrata. Votación posible la próxima semana. Marco legal incierto presiona volatilidad en Bitcoin y Ethereum.",
+   "xText": "🔗 Republicanos empujan Clarity Act en el Senado con reglas de ética respaldadas por Casa Blanca, pero demócratas aún no respaldan. Votación podría ocurrir próxima semana. Resultado incierto para Bitcoin/Ethereum.",
+   "discordText": "**CLARITY ACT EN VOTACIÓN**\n• GOP circuló texto actualizado con reglas de ética cripto\n• Casa Blanca respalda, pero cero apoyo demócrata\n• Votación posible próxima semana\n• Impacto: volatilidad en BTC/ETH por incertidumbre regulatoria",
+   "pushText": "Senado vota Clarity Act cripto sin apoyo demócrata",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bitcoin y Ethereum reaccionan primero: aprobación = rallye alcista (menor incertidumbre regulatoria); rechazo = corrección por riesgo político.",
+    "despues": "Altcoins siguen movimiento BTC/ETH. NASDAQ y S&P500 podrían reaccionar si se interpreta como riesgo político más amplio.",
+    "escenarios": "Traders vigilarán: (1) Si hay cambios en texto que atraigan demócratas; (2) Timing de votación; (3) Señales de Casa Blanca sobre presión en senadores republicanos; (4) Reacciones de exchanges y criptocapitalistas.",
+    "riesgos": "El titular no especifica qué disputas técnicas persisten. Riesgo de votación fallida última hora si coalición se fractura. Impacto potencial limitado si votación se pospone indefinidamente."
+   },
+   "macro": {
+    "bitcoin": "sesgo alcista moderado por expectativa de marco legal; riesgo a la baja si votación fracasa",
+    "ethereum": "similar a Bitcoin",
+    "nasdaq": "efecto marginal; sensible si votación fracasa y genera narrativa de caos político",
+    "dolar": "neutral a corto plazo",
+    "bonos": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": 33515,
    "fecha": "2026-07-22T16:31:46+00:00",
