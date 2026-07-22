@@ -1,7 +1,79 @@
 {
- "lastId": 33505,
- "actualizado": "2026-07-21T22:33:14.430Z",
+ "lastId": 33507,
+ "actualizado": "2026-07-22T00:09:49.214Z",
  "items": [
+  {
+   "id": 33507,
+   "fecha": "2026-07-21T23:24:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33507",
+   "original": "TRUMP ESCALATES GENERIC DRUG TARIFFS Trump announced that generic drug imports will face a 0% tariff from 1 August 2026 for two years, rising to 100% for one year and 200% thereafter. The measure aims to reshore generic pharmaceutical manufacturing to the U.S., while existing policies on patented and branded drugs remain unchanged.",
+   "titulo": "Trump anuncia aranceles escalonados a medicamentos genéricos a partir de agosto 2026",
+   "resumen": "La administración Trump implementará aranceles progresivos sobre importaciones de medicamentos genéricos: 0% durante dos años desde el 1 de agosto 2026, seguido de 100% por un año y 200% en adelante. El objetivo declarado es relocalizar la manufactura farmacéutica genérica en EE.UU., mientras mantiene políticas vigentes sobre medicamentos de marca y patentados.",
+   "analisis": {
+    "porque": "Afecta directamente costos de salud, márgenes de laboratorios farmacéuticos (Teva, Sandoz, Mylan), precios al consumidor y posibles represalias comerciales. Impacta inflación de medicamentos y competitividad del sector farmacéutico global.",
+    "queOcurrio": "Trump anunció implementación de aranceles escalonados sobre medicamentos genéricos importados con el objetivo de repatriar manufactura farmacéutica a EE.UU.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ Pharma",
+    "S&P500",
+    "DXY",
+    "TEVA",
+    "SANDZ",
+    "JNJ",
+    "PFE",
+    "IQV"
+   ],
+   "sesgos": [
+    {
+     "activo": "Farmacéuticas genéricas globales",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Farmacéuticas USA manufactureras",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Aranceles|Empresas|Geopolítica Comercial",
+   "keywords": [
+    "aranceles-farmacéuticos",
+    "medicamentos-genéricos",
+    "trump-política-comercial",
+    "inflación-medicinas",
+    "reshoring-manufactura"
+   ],
+   "tgText": "🏭 Trump escala aranceles farmacéuticos: 0% (2 años), 100% (1 año), 200% después. Objetivo: relocalizar manufactura genérica en EE.UU. desde agosto 2026. Impacto directo en costos de salud y márgenes globales.",
+   "xText": "📌 Trump anuncia aranceles escalonados a medicamentos genéricos (0%→100%→200%) a partir de agosto 2026. Busca relocalizar manufactura en EE.UU. Presión en costos de salud global y márgenes farmacéuticos.",
+   "discordText": "**Trump intensifica aranceles a medicamentos genéricos**\n• Aranceles: 0% (ago 2026-ago 2028) → 100% (1 año) → 200% (indefinido)\n• Objetivo: relocalizar manufactura farmacéutica en EE.UU.\n• Impacto: precios medicinas, márgenes industria global, inflación salud",
+   "pushText": "Trump anuncia aranceles escalonados a medicamentos genéricos desde agosto 2026",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Farmacéuticas genéricas globales (TEVA, SANDZ) caerían por compresión de márgenes; farmacéuticas USA manufactureras podrían subir anticipando protección.",
+    "despues": "Índices amplios (S&P500, NASDAQ) ajustarían si se traslada a inflación de costos sanitarios; DXY podría subir si se interpreta como presión arancelaria dura; bonos ajustarían si hay presión inflacionaria.",
+    "escenarios": "Traders vigilarían: (1) si otros países responden con represalias; (2) traslación de costos a consumidores finales y impacto inflacionario; (3) cronograma real vs anunciado; (4) reacciones de farmacéuticas en earnings.",
+    "riesgos": "Riesgo de no-implementación o cambios en cronograma; posibles represalias comerciales de aliados; estimaciones de impacto inflacionario aún inciertas; titular no especifica si aplicará a medicinas más críticas."
+   },
+   "macro": {
+    "dolar": "Presión alcista por medidas proteccionistas adicionales",
+    "oro": "Neutral, sin impacto directo",
+    "nasdaq": "Presión bajista en farmacéuticas genéricas globales, alcista en USA",
+    "dow": "Mixto según composición",
+    "sp500": "Impacto negativo si se traslada a inflación salud",
+    "bitcoin": "Sin impacto directo",
+    "ethereum": "Sin impacto directo",
+    "bonos": "Vigilancia de presión inflacionaria en sector salud",
+    "petroleo": "Sin impacto directo"
+   },
+   "updates": []
+  },
   {
    "id": 33505,
    "fecha": "2026-07-21T22:05:20+00:00",
