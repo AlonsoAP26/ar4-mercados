@@ -1,7 +1,148 @@
 {
- "lastId": 33511,
- "actualizado": "2026-07-22T13:07:23.831Z",
+ "lastId": 33514,
+ "actualizado": "2026-07-22T15:05:24.753Z",
  "items": [
+  {
+   "id": 33498,
+   "fecha": "2026-07-21T15:40:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33498",
+   "original": "*TRUMP ON IRAN: WILL BE HITTING SOON, VERY HEAVILY",
+   "titulo": "Trump advierte que atacará a Irán 'muy pronto y con mucha fuerza'",
+   "resumen": "Trump intensificó su retórica contra Irán, afirmando que Estados Unidos 'atacará pronto, muy fuertemente', y agregó que Teherán 'no ha visto nada todavía' pese a que Washington 'ha sido amable' hasta ahora. También calificó al liderazgo iraní de 'gente muy malvada'. Las declaraciones se dan en medio de una escalada activa que incluye ataques renovados, bloqueo de puertos iraníes y amenazas hutíes en el Mar Rojo, elevando el riesgo de una confrontación militar de mayor escala en las próximas horas o días.",
+   "analisis": {
+    "porque": "Una amenaza explícita de ataque inminente y de mayor intensidad eleva el riesgo geopolítico inmediato, con impacto directo en energía, refugio y activos de riesgo.",
+    "queOcurrio": "Trump declaró que EE.UU. golpeará a Irán 'pronto y muy fuerte', reiterando que Irán 'no ha visto nada todavía' y calificando a sus líderes de 'muy malvados'.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "DXY",
+    "Bitcoin",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "trump",
+    "irán",
+    "escalada-militar",
+    "ataque-inminente",
+    "geopolitica"
+   ],
+   "tgText": "🚨 Trump: 'Atacaremos a Irán pronto y muy fuerte'. Dice que Teherán 'no ha visto nada todavía' pese a que EE.UU. 'ha sido amable'. Escalada militar en aumento.",
+   "xText": "🚨Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'. 'Irán no ha visto nada todavía'. Retórica de escalada militar se intensifica. #Iran #Trump",
+   "discordText": "**🚨 Trump escala retórica contra Irán**\n- 'Atacaremos pronto, muy fuerte'\n- 'Irán no ha visto nada todavía'\n- Calificó al liderazgo iraní de 'muy malvado'\n- Contexto: bloqueo de puertos y ataques activos",
+   "pushText": "Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo y oro reaccionan primero ante amenazas de ataque inminente por el riesgo de disrupción de suministro y demanda de refugio.",
+    "despues": "Bonos del Tesoro, dólar y criptomonedas suelen ajustarse después según el apetito de riesgo global.",
+    "escenarios": "Los traders vigilan confirmación de un ataque real, respuesta iraní, y si la escalada afecta el tránsito por Ormuz de forma efectiva.",
+    "riesgos": "Riesgo de retórica sin acción militar concreta; el titular no especifica objetivos, cronograma exacto ni magnitud real del ataque anunciado."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-22T14:01:54+00:00",
+     "id": 33514,
+     "texto": "Trump reiteró que Irán pagará un precio significativo, continuando línea de amenazas escalonadas. Declaración breve sin especificar mecanismo, timing o alcance de represalias.",
+     "tgUrl": "https://t.me/walterbloomberg/33514"
+    },
+    {
+     "fecha": "2026-07-22T13:11:43+00:00",
+     "id": 33512,
+     "texto": "Trump advirtió que cualquier ataque iraní a buques en el Estrecho de Ormuz desencadenaría strikes estadounidenses contra infraestructura iraní, incluyendo puentes y plantas de energía cercanas a Teherán. Marca una escalada retórica significativa en tensiones alrededor de una de las rutas de envío más estratégicas del mundo.",
+     "tgUrl": "https://t.me/walterbloomberg/33512"
+    }
+   ],
+   "actualizado": "2026-07-22T14:01:54+00:00"
+  },
+  {
+   "id": 33513,
+   "fecha": "2026-07-22T14:01:00+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33513",
+   "original": "Trump: Americans are not against the war in Iran",
+   "titulo": "Trump afirma que estadounidenses no se oponen a guerra contra Irán",
+   "resumen": "Trump declaró que la población estadounidense no está en contra de una guerra con Irán, en contraposición a narrativas previas sobre rechazo doméstico a intervenciones militares. Titular no especifica contexto de encuestas o fuentes de respaldo.",
+   "analisis": {
+    "porque": "Reinterpretación política de apoyo doméstico a acción militar sugiere mayor disposición a escalar; afecta cálculo de riesgo de conflicto abierto.",
+    "queOcurrio": "Trump afirmó que los estadounidenses no se oponen a guerra con Irán; no se especifica fuente de esta afirmación (encuesta, datos de redes, interpretación política).",
+    "estado": "rumor",
+    "fuenteOriginal": "Bloomberg (reproducción de declaración)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Petróleo",
+    "Defensa (XLI)",
+    "Oro",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Defensa",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "guerra",
+    "apoyo doméstico",
+    "retórica"
+   ],
+   "tgText": "Trump afirma que estadounidenses no rechazan guerra con Irán. Señal de disposición a escalar conflicto. Vigilar reacciones de defensa y energía.",
+   "xText": "Trump declara que ciudadanos estadounidenses no se oponen a guerra con Irán, sugiriendo mayor disposición política a escalada militar.",
+   "discordText": "**Trump sobre Irán:** Estadounidenses no se oponen a guerra\n• Reinterpreta apoyo doméstico a acción militar\n• Sugiere apertura a escalada\n• Defensa y petróleo vigilan",
+   "pushText": "Trump: estadounidenses no rechazan guerra con Irán",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Acciones de defensa (Lockheed, Raytheon) y petróleo suben por menor restricción política percibida.",
+    "despues": "Bonos soberanos, dólar y oro ajustan según recalculación de probabilidad de conflicto.",
+    "escenarios": "Traders notan (1) si esto cierra espacio para diplomacia; (2) alineación interna del gobierno; (3) comparación con encuestas reales de opinión pública.",
+    "riesgos": "Afirmación sin fuente verificable (rumor político). Mercados pueden sobrerreaccionar a retórica vs. intención real. Encuestas públicas pueden contradecir esta percepción."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 33510,
    "fecha": "2026-07-22T12:34:59+00:00",
@@ -560,74 +701,6 @@
     "despues": "El oro y los bonos del Tesoro como refugio, además de la libra esterlina por la exposición política directa del Reino Unido al conflicto.",
     "escenarios": "Los operadores suelen vigilar declaraciones oficiales adicionales sobre el alcance de la autorización, posibles represalias iraníes contra intereses británicos, y la respuesta de la OTAN o aliados regionales.",
     "riesgos": "El titular no detalla el alcance operativo real de la autorización ni si ya se ejecutaron ataques desde bases británicas; falta confirmación de fuentes oficiales adicionales."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33498,
-   "fecha": "2026-07-21T15:40:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33498",
-   "original": "*TRUMP ON IRAN: WILL BE HITTING SOON, VERY HEAVILY",
-   "titulo": "Trump advierte que atacará a Irán 'muy pronto y con mucha fuerza'",
-   "resumen": "Trump intensificó su retórica contra Irán, afirmando que Estados Unidos 'atacará pronto, muy fuertemente', y agregó que Teherán 'no ha visto nada todavía' pese a que Washington 'ha sido amable' hasta ahora. También calificó al liderazgo iraní de 'gente muy malvada'. Las declaraciones se dan en medio de una escalada activa que incluye ataques renovados, bloqueo de puertos iraníes y amenazas hutíes en el Mar Rojo, elevando el riesgo de una confrontación militar de mayor escala en las próximas horas o días.",
-   "analisis": {
-    "porque": "Una amenaza explícita de ataque inminente y de mayor intensidad eleva el riesgo geopolítico inmediato, con impacto directo en energía, refugio y activos de riesgo.",
-    "queOcurrio": "Trump declaró que EE.UU. golpeará a Irán 'pronto y muy fuerte', reiterando que Irán 'no ha visto nada todavía' y calificando a sus líderes de 'muy malvados'.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "DXY",
-    "Bitcoin",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "trump",
-    "irán",
-    "escalada-militar",
-    "ataque-inminente",
-    "geopolitica"
-   ],
-   "tgText": "🚨 Trump: 'Atacaremos a Irán pronto y muy fuerte'. Dice que Teherán 'no ha visto nada todavía' pese a que EE.UU. 'ha sido amable'. Escalada militar en aumento.",
-   "xText": "🚨Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'. 'Irán no ha visto nada todavía'. Retórica de escalada militar se intensifica. #Iran #Trump",
-   "discordText": "**🚨 Trump escala retórica contra Irán**\n- 'Atacaremos pronto, muy fuerte'\n- 'Irán no ha visto nada todavía'\n- Calificó al liderazgo iraní de 'muy malvado'\n- Contexto: bloqueo de puertos y ataques activos",
-   "pushText": "Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo y oro reaccionan primero ante amenazas de ataque inminente por el riesgo de disrupción de suministro y demanda de refugio.",
-    "despues": "Bonos del Tesoro, dólar y criptomonedas suelen ajustarse después según el apetito de riesgo global.",
-    "escenarios": "Los traders vigilan confirmación de un ataque real, respuesta iraní, y si la escalada afecta el tránsito por Ormuz de forma efectiva.",
-    "riesgos": "Riesgo de retórica sin acción militar concreta; el titular no especifica objetivos, cronograma exacto ni magnitud real del ataque anunciado."
    },
    "macro": null,
    "updates": []
