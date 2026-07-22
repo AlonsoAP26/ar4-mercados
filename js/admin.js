@@ -232,6 +232,37 @@
     }
   }
 
+  // ===== Reel del dia: guion listo para HeyGen + caption para Facebook =====
+  async function loadReel() {
+    const el = document.getElementById('adminReel');
+    if (!el) return;
+    try {
+      const g = await fetch('data/guion-reel.json?cb=' + Date.now()).then((r) => r.json());
+      const bloque = (etiqueta, texto, idb) => `
+        <div class="admin-dip-card" style="margin-bottom:10px;">
+          <div class="admin-dip-head" style="margin-bottom:6px;"><strong>${etiqueta}</strong>
+            <button class="filter-chip reel-copy" data-copy="${idb}">Copiar</button></div>
+          <p class="footer-text" id="${idb}" style="margin:0;white-space:pre-wrap;">${esc(texto)}</p>
+        </div>`;
+      el.innerHTML = `
+        <p class="footer-text" style="margin-bottom:10px;">Guion del <strong style="color:var(--gold-bright);">${esc(g.fecha)}</strong> · Gancho: <em>${esc(g.gancho)}</em></p>
+        ${bloque('1) Guion para HeyGen (pegar y generar)', g.guion, 'reelGuion')}
+        ${bloque('2) Título del post', g.titulo, 'reelTitulo')}
+        ${bloque('3) Descripción del Reel', g.caption, 'reelCaption')}
+        ${bloque('4) Primer comentario (fijarlo)', g.comentario, 'reelComentario')}`;
+      el.querySelectorAll('.reel-copy').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const texto = (document.getElementById(btn.dataset.copy) || {}).textContent || '';
+          try { await navigator.clipboard.writeText(texto); btn.textContent = '✔ Copiado'; setTimeout(() => { btn.textContent = 'Copiar'; }, 1500); }
+          catch (e) { prompt('Copia el texto:', texto); }
+        });
+      });
+    } catch (e) {
+      el.innerHTML = '<p class="footer-text">Aún no hay guion generado. Aparece cada mañana a las 8:00.</p>';
+    }
+  }
+  loadReel();
+
   // ===== Red de agentes IA: roster + metricas =====
   const agentesEl = document.getElementById('adminAgentes');
   async function loadAgentes() {

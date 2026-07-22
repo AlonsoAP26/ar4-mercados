@@ -1,0 +1,43 @@
+name: Guion diario del Reel de Facebook
+
+# Cada manana (8:00 am Lima = 13:00 UTC) deja listo en data/guion-reel.json el
+# paquete del Reel del dia: guion para HeyGen + titulo + caption + comentario.
+# El dueno lo copia desde la seccion "Reel del dia" de admin.html.
+on:
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: guion-reel
+  cancel-in-progress: false
+
+jobs:
+  guion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Generar guion del dia
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-guion-reel.js
+      - name: Publicar
+        run: |
+          git config user.name "AR4 Mercados Bot"
+          git config user.email "bot@ar4mercados.local"
+          git add data/guion-reel.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Guion del Reel del dia"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin master && git push && exit 0
+            sleep 5
+          done
+          exit 1
