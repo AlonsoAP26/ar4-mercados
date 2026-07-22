@@ -2214,5 +2214,375 @@
       ],
       "patronUltimaVela": "vela alcista sin patron destacable"
     }
+  },
+  {
+    "title": "GM y Netflix abren la temporada de resultados con lecturas opuestas en Wall Street",
+    "excerpt": "General Motors superó el consenso con EPS de US$3,57 mientras Netflix cumplió en ganancias pero decepcionó en ingresos y cayó en el after-hours.",
+    "symbol": "NASDAQ:AAPL",
+    "trend": "up",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">General Motors sorprende con un salto en utilidades</h3><p>General Motors reportó ganancias de US$3,57 por acción sobre ingresos de US$48.030 millones, superando ampliamente el consenso de Wall Street de US$3,20 por acción, según recogió TheStreet. El resultado, difundido ayer, impulsó a la acción casi 5% en la rueda, en una de las sorpresas positivas más marcadas de la temporada de balances del segundo trimestre.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Netflix cumple en ganancias pero decepciona en ingresos</h3><p>Netflix reportó una ganancia por acción de US$0,80, por encima del consenso de US$0,79, pero por debajo del \"whisper number\" de US$0,84 que manejaba parte del mercado, de acuerdo con Shacknews. Los ingresos llegaron a US$12.560 millones, levemente por debajo de los US$12.580 millones esperados por los analistas. Según el propio comunicado de la compañía ante la SEC, el ingreso trimestral creció 13% interanual (12% a tipo de cambio constante), impulsado por el crecimiento de suscriptores, ajustes de precios y la publicidad. Pese al aparente cumplimiento, la acción cayó con fuerza en las operaciones fuera de horario.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Bancos e industriales refuerzan el buen tono de la temporada</h3><p>Bank of America había reportado días atrás una ganancia de US$1,21 por acción frente a los US$1,13 esperados, con ingresos de US$31.700 millones contra un consenso de US$30.720 millones, según CNBC. En la misma línea, 3M vio saltar sus acciones más de 7% luego de que sus resultados del segundo trimestre superaran las proyecciones del mercado, reforzando la idea de una temporada de balances más sólida de lo previsto en el tramo bancario e industrial.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La vara sube para Big Tech</h3><p>El contraste entre GM y Netflix deja una lectura clara para los inversores: el mercado ya no premia con solo \"cumplir\" el consenso, exige superarlo con margen. Esa vara alta llega justo cuando Apple cotiza en US$327,74, con una suba de 10% en el mes y apenas por debajo de su máximo de 52 semanas de US$334,99, y Microsoft opera en US$397,75, todavía por debajo de su media móvil de 200 ruedas. Ambas tecnológicas encaran sus propios reportes trimestrales con el precedente de Netflix como advertencia: superar el consenso ya no alcanza si no viene acompañado de una guía de crecimiento convincente.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Cifras clave de la temporada, empresa por empresa</h3><p>General Motors: EPS US$3,57 vs. consenso US$3,20; ingresos US$48.030 millones (fuente: TheStreet). Netflix: EPS US$0,80 vs. consenso US$0,79; ingresos US$12.560 millones vs. US$12.580 millones esperados; crecimiento de ingresos de 13% interanual (fuentes: 24/7 Wall St., Shacknews, comunicado 8-K ante la SEC). Bank of America: EPS US$1,21 vs. US$1,13 esperado; ingresos US$31.700 millones vs. US$30.720 millones esperados (fuente: CNBC). En el panel de mercado, Apple cotiza en US$327,74 (RSI de 14 en 64,5, zona neutral, por encima de su media de 200 ruedas) tras subir 10% en el mes, mientras Microsoft se ubica en US$397,75 (RSI de 14 en 53,4, por debajo de su media de 200 ruedas) con una ganancia mensual de 4,8%.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La disparidad entre el salto de GM y el castigo a Netflix pese a un resultado formalmente en línea confirma que el mercado está operando con expectativas exigentes: no basta con superar el consenso publicado si se incumple la lectura más optimista del \"whisper number\" o si la guía hacia adelante no convence. Para los inversores de la región, esto es relevante de cara a los próximos reportes de Apple y Microsoft, ambas con acciones que ya acumulan subas de doble dígito o cercanas a máximos de 52 semanas, lo que deja poco margen de error: una cifra en línea podría no ser suficiente para sostener las valuaciones actuales. Lo que conviene monitorear en las próximas semanas es la reacción de las acciones tecnológicas a sus propios reportes, los comentarios sobre gasto en infraestructura de inteligencia artificial y si los bancos e industriales que ya reportaron (Bank of America, 3M, GM) logran sostener el impulso o si se trata de un repunte acotado a sectores específicos. Un mercado que castiga con dureza cualquier desvío, como ocurrió con Netflix, es una señal de que la tolerancia al riesgo es menor de lo que sugieren los índices en máximos.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "TheStreet",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-21-2026"
+      },
+      {
+        "name": "24/7 Wall St.",
+        "url": "https://247wallst.com/companies/nflx/earnings/"
+      },
+      {
+        "name": "Shacknews",
+        "url": "https://www.shacknews.com/article/150049/netflix-nflx-q2-2026-earnings-results"
+      },
+      {
+        "name": "Investing.com",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-netflix-posts-slight-q2-2026-beat-shares-sink-after-hours-93CH-4797109"
+      }
+    ],
+    "aiSummary": {
+      "que": "General Motors superó ampliamente el consenso de ganancias e ingresos, mientras Netflix cumplió con el EPS pero decepcionó en ingresos y cayó en el after-hours, en el arranque de la temporada de balances del segundo trimestre.",
+      "porque": "El contraste entre ambos reportes muestra que el mercado exige superar el consenso con margen amplio, algo que sube la vara justo antes de que Apple y Microsoft, que cotizan cerca de máximos recientes, presenten sus propios resultados.",
+      "activos": [
+        "AAPL",
+        "MSFT",
+        "acciones de consumo discrecional y tecnología"
+      ],
+      "siguiente": "La reacción de Apple y Microsoft a sus propios reportes trimestrales y los comentarios sobre gasto en inteligencia artificial."
+    },
+    "aiScenarios": {
+      "alcista": 45,
+      "lateral": 35,
+      "bajista": 20
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Medio",
+      "lectura": "El mercado castiga con dureza cualquier desvío frente a la expectativa más optimista, incluso cuando el resultado formal supera el consenso publicado."
+    },
+    "timeline": [
+      {
+        "cuando": "Hace 9 días",
+        "texto": "Bank of America reportó EPS de US$1,21 frente a US$1,13 esperado, con ingresos de US$31.700 millones."
+      },
+      {
+        "cuando": "Hace 5 días",
+        "texto": "Netflix publicó EPS de US$0,80 vs. US$0,79 de consenso, pero ingresos de US$12.560 millones por debajo de los US$12.580 millones esperados."
+      },
+      {
+        "cuando": "Ayer",
+        "texto": "General Motors reportó EPS de US$3,57 sobre ingresos de US$48.030 millones, superando el consenso de US$3,20 y subiendo casi 5% en bolsa; 3M saltó más de 7% tras su propio reporte."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "Apple cotiza en US$327,74, cerca de su máximo de 52 semanas, a la espera de su propio reporte trimestral."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es el EPS?",
+        "a": "Es la ganancia por acción (Earnings Per Share), la utilidad neta de la empresa dividida por el número de acciones en circulación, y es la cifra clave que compara el mercado contra el consenso de analistas."
+      },
+      {
+        "q": "¿Por qué una acción puede caer aunque supere el consenso?",
+        "a": "Porque además del consenso publicado, el mercado suele operar con expectativas informales más altas (\"whisper numbers\") o presta atención a la guía futura; si estos no se cumplen, la acción puede caer pese a un resultado formalmente positivo."
+      },
+      {
+        "q": "¿Qué es el consenso de analistas?",
+        "a": "Es el promedio de las estimaciones de ganancias e ingresos que publican los analistas que cubren una acción antes de que la empresa reporte sus resultados."
+      },
+      {
+        "q": "¿Por qué importan estos resultados para inversores latinoamericanos?",
+        "a": "Porque el tono de la temporada de balances en EE.UU. influye en el apetito por riesgo global, afectando tanto a tecnológicas como Apple y Microsoft como a acciones y ETF con exposición a Wall Street que operan los inversores de la región."
+      }
+    ],
+    "impactScore": 7,
+    "relatedSymbols": [
+      "NASDAQ:MSFT",
+      "NASDAQ:NVDA",
+      "FOREXCOM:NSXUSD",
+      "NYSE:MELI"
+    ],
+    "category": "Empresas",
+    "heroType": "index",
+    "slug": "gm-y-netflix-abren-la-temporada-de-resultados-con-lecturas-o-mrvg2yn9",
+    "author": "AR4 Mercados",
+    "date": "2026-07-22",
+    "sourceName": "TheStreet",
+    "sourceUrl": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-21-2026",
+    "marketPanel": [
+      {
+        "symbol": "NASDAQ:AAPL",
+        "nombre": "Apple (AAPL)",
+        "yahooSymbol": "AAPL",
+        "fuente": "Yahoo Finance (AAPL)",
+        "fechaUltimaVela": "2026-07-21",
+        "precio": 327.74,
+        "cierreAnterior": 326.59,
+        "variacionDiaPct": 0.4,
+        "variacionSemanaPct": 4.1,
+        "variacionMesPct": 10,
+        "variacionAnioPct": 55.2,
+        "rangoDiaReal": {
+          "minimo": 322.22,
+          "maximo": 329.6
+        },
+        "rsi14": 64.5,
+        "lecturaRsi": "neutral",
+        "media50": 304.24,
+        "media200": 274.94,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 8.2056,
+        "maximo52sem": 334.99,
+        "minimo52sem": 201.5,
+        "distanciaAMaximo52semPct": -2.2,
+        "distanciaAMinimo52semPct": 62.7,
+        "soportes": [
+          305.02,
+          287.38,
+          273.75
+        ],
+        "resistencias": [],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "NASDAQ:MSFT",
+        "nombre": "Microsoft (MSFT)",
+        "yahooSymbol": "MSFT",
+        "fuente": "Yahoo Finance (MSFT)",
+        "fechaUltimaVela": "2026-07-21",
+        "precio": 397.75,
+        "cierreAnterior": 402.29,
+        "variacionDiaPct": -1.1,
+        "variacionSemanaPct": 3.3,
+        "variacionMesPct": 4.8,
+        "variacionAnioPct": -22,
+        "rangoDiaReal": {
+          "minimo": 396.32,
+          "maximo": 401.47
+        },
+        "rsi14": 53.4,
+        "lecturaRsi": "neutral",
+        "media50": 400.82,
+        "media200": 438.16,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 11.76,
+        "maximo52sem": 555.45,
+        "minimo52sem": 349.2,
+        "distanciaAMaximo52semPct": -28.4,
+        "distanciaAMinimo52semPct": 13.9,
+        "soportes": [
+          394.53,
+          392.32,
+          381.71
+        ],
+        "resistencias": [
+          406.74,
+          413.05,
+          423.68
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "NASDAQ:NVDA",
+        "nombre": "NVIDIA (NVDA)",
+        "yahooSymbol": "NVDA",
+        "fuente": "Yahoo Finance (NVDA)",
+        "fechaUltimaVela": "2026-07-21",
+        "precio": 207.29,
+        "cierreAnterior": 203.28,
+        "variacionDiaPct": 2,
+        "variacionSemanaPct": -2.1,
+        "variacionMesPct": -1.6,
+        "variacionAnioPct": 20.2,
+        "rangoDiaReal": {
+          "minimo": 204.01,
+          "maximo": 208.65
+        },
+        "rsi14": 52.2,
+        "lecturaRsi": "neutral",
+        "media50": 209.74,
+        "media200": 192.58,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 7.1953,
+        "maximo52sem": 236.54,
+        "minimo52sem": 164.07,
+        "distanciaAMaximo52semPct": -12.4,
+        "distanciaAMinimo52semPct": 26.3,
+        "soportes": [
+          199.34,
+          197.22,
+          194.74
+        ],
+        "resistencias": [
+          212.71,
+          213.9,
+          216.83
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      },
+      {
+        "symbol": "NYSE:VALE",
+        "nombre": "Vale (VALE)",
+        "yahooSymbol": "VALE",
+        "fuente": "Yahoo Finance (VALE)",
+        "fechaUltimaVela": "2026-07-21",
+        "precio": 14.25,
+        "cierreAnterior": 14.1,
+        "variacionDiaPct": 1.1,
+        "variacionSemanaPct": -2.3,
+        "variacionMesPct": -7.6,
+        "variacionAnioPct": 45.9,
+        "rangoDiaReal": {
+          "minimo": 14.05,
+          "maximo": 14.35
+        },
+        "rsi14": 40.3,
+        "lecturaRsi": "neutral",
+        "media50": 15.52,
+        "media200": 14.66,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.3858,
+        "maximo52sem": 17.94,
+        "minimo52sem": 9.36,
+        "distanciaAMaximo52semPct": -20.6,
+        "distanciaAMinimo52semPct": 52.2,
+        "soportes": [
+          14,
+          13.94,
+          12.87
+        ],
+        "resistencias": [
+          14.38,
+          14.74,
+          15.3
+        ],
+        "patronUltimaVela": "martillo (mecha inferior larga: rechazo de precios bajos)"
+      },
+      {
+        "symbol": "NYSE:PBR",
+        "nombre": "Petrobras (PBR)",
+        "yahooSymbol": "PBR",
+        "fuente": "Yahoo Finance (PBR)",
+        "fechaUltimaVela": "2026-07-21",
+        "precio": 18.54,
+        "cierreAnterior": 18.19,
+        "variacionDiaPct": 1.9,
+        "variacionSemanaPct": 3.5,
+        "variacionMesPct": 10.7,
+        "variacionAnioPct": 54.4,
+        "rangoDiaReal": {
+          "minimo": 18.19,
+          "maximo": 18.55
+        },
+        "rsi14": 63.1,
+        "lecturaRsi": "neutral",
+        "media50": 18.11,
+        "media200": 15.99,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4443,
+        "maximo52sem": 22.24,
+        "minimo52sem": 11.43,
+        "distanciaAMaximo52semPct": -16.6,
+        "distanciaAMinimo52semPct": 62.2,
+        "soportes": [
+          18.53,
+          17.63,
+          17.44
+        ],
+        "resistencias": [
+          19.2,
+          20.28,
+          20.71
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "NYSE:MELI",
+        "nombre": "MercadoLibre (MELI)",
+        "yahooSymbol": "MELI",
+        "fuente": "Yahoo Finance (MELI)",
+        "fechaUltimaVela": "2026-07-21",
+        "precio": 1822.65,
+        "cierreAnterior": 1832.42,
+        "variacionDiaPct": -0.5,
+        "variacionSemanaPct": -2.7,
+        "variacionMesPct": 11.5,
+        "variacionAnioPct": -24.5,
+        "rangoDiaReal": {
+          "minimo": 1798,
+          "maximo": 1840
+        },
+        "rsi14": 58.8,
+        "lecturaRsi": "neutral",
+        "media50": 1686.41,
+        "media200": 1906.55,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 58.51,
+        "maximo52sem": 2548.5,
+        "minimo52sem": 1495,
+        "distanciaAMaximo52semPct": -28.5,
+        "distanciaAMinimo52semPct": 21.9,
+        "soportes": [
+          1738,
+          1657.22,
+          1631.18
+        ],
+        "resistencias": [
+          1843.91,
+          1890,
+          1904.24
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      }
+    ],
+    "marketData": {
+      "symbol": "NASDAQ:AAPL",
+      "nombre": "Apple (AAPL)",
+      "yahooSymbol": "AAPL",
+      "fuente": "Yahoo Finance (AAPL)",
+      "fechaUltimaVela": "2026-07-21",
+      "precio": 327.74,
+      "cierreAnterior": 326.59,
+      "variacionDiaPct": 0.4,
+      "variacionSemanaPct": 4.1,
+      "variacionMesPct": 10,
+      "variacionAnioPct": 55.2,
+      "rangoDiaReal": {
+        "minimo": 322.22,
+        "maximo": 329.6
+      },
+      "rsi14": 64.5,
+      "lecturaRsi": "neutral",
+      "media50": 304.24,
+      "media200": 274.94,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 8.2056,
+      "maximo52sem": 334.99,
+      "minimo52sem": 201.5,
+      "distanciaAMaximo52semPct": -2.2,
+      "distanciaAMinimo52semPct": 62.7,
+      "soportes": [
+        305.02,
+        287.38,
+        273.75
+      ],
+      "resistencias": [],
+      "patronUltimaVela": "vela alcista sin patron destacable"
+    }
   }
 ]
