@@ -1,7 +1,366 @@
 {
- "lastId": 33516,
- "actualizado": "2026-07-22T18:19:15.397Z",
+ "lastId": 33522,
+ "actualizado": "2026-07-22T19:55:47.749Z",
  "items": [
+  {
+   "id": 33522,
+   "fecha": "2026-07-22T19:47:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33522",
+   "original": "Trump: We're winning in Iran",
+   "titulo": "Trump afirma: 'Estamos ganando en Irán'",
+   "resumen": "El presidente Trump declara que EE.UU. está ganando en Irán sin proporcionar detalles sobre métricas específicas, operaciones o evaluación de situación. Afirmación sin contexto cuantificable. Puede interpretarse como señal política de confianza o justificación de acciones militares previas.",
+   "analisis": {
+    "porque": "Señal política que intenta descartar percepción de escalada descontrolada; podría moderar volatilidad si se interpreta como control de situación, o generar escepticismo si mercados disienten del análisis",
+    "queOcurrio": "Trump afirma que EE.UU. está ganando en Irán; sin datos, métricas u operaciones específicas citadas",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (cita directa)"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Petróleo",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral a alcista (confianza en control)"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "retórica política",
+    "confianza"
+   ],
+   "tgText": "Trump: 'Estamos ganando en Irán'. Declaración retórica sin detalles; intenta proyectar control. Impacto esperado mínimo; mercados siguen vigilando acciones concretas, no comunicados.",
+   "xText": "Trump: 'Estamos ganando en Irán'. Declaración política sin métricas. Mercados han reaccionado ya a escalada militar; unlikely cambio significativo por retórica.",
+   "discordText": "**Retórica política: Trump en Irán**\n• 'Estamos ganando en Irán'\n• Sin detalles operacionales\n• Objetivo: proyectar control/confianza\n• Impacto mercado: bajo (ya precificada escalada)",
+   "pushText": "Trump: 'Estamos ganando en Irán'",
+   "importancia": 3,
+   "reaccion": {
+    "primero": "Mínimo; mercados ya ajustaron por escalada previa. Equities podrían consolidar si se ve como cierre de ciclo de amenazas",
+    "despues": "Sin reacción secundaria esperada",
+    "escenarios": "Traders ignoran retórica; esperan: (1) Acciones militares confirmadas; (2) Daño a infraestructura iraní; (3) Respuesta iraní contraofensiva; (4) Negociaciones reales",
+    "riesgos": "Declaración vaga reduce credibilidad; puede generar escepticismo si contradichas por hechos; sin peso en precio de activos"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33521,
+   "fecha": "2026-07-22T19:47:13+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33521",
+   "original": "Trump: We don't need the Hormuz Strait",
+   "titulo": "Trump declara: 'No necesitamos el Estrecho de Hormuz'",
+   "resumen": "El presidente Trump afirma públicamente que EE.UU. no requiere del Estrecho de Hormuz. Declaración sin detalles adicionales respecto a energía, dependencia de importaciones o estrategia. Contexto: escalada iraní en últimas horas. Posible comunicación para minimizar impacto de amenazas iraníes o señalar autosuficiencia energética estadounidense.",
+   "analisis": {
+    "porque": "Señal retórica que podría interpretarse como reducción de vulnerabilidad energética estadounidense o como descuento de amenazas iraníes; impacta percepción de riesgo geopolítico y precios de energía",
+    "queOcurrio": "Trump declara públicamente que EE.UU. no necesita Hormuz; no especifica contexto económico, producción o importaciones",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (cita directa de Trump)"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "S&P500",
+    "Energías renovables",
+    "Shale Oil"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral a bajista (retórica de desacoplamiento)"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral a alcista (reducción de riesgo percibido)"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Hormuz",
+    "energía",
+    "autosuficiencia",
+    "retórica"
+   ],
+   "tgText": "📌 Trump: 'No necesitamos el Estrecho de Hormuz'. Declaración retórica que señalaría autosuficiencia energética estadounidense. Podría contrarrestar pánico por amenazas iraníes; monitorear impacto en petróleo y mercados.",
+   "xText": "Trump: 'No necesitamos el Estrecho de Hormuz'. Señal retórica de desacoplamiento energético versus amenaza iraní. Impacto limitado si mercados perciben como política vs. realidad de suministros.",
+   "discordText": "**Declaración Trump: Autosuficiencia energética**\n• Trump: 'No necesitamos Hormuz'\n• Contexto: respuesta a amenazas iraníes de minado\n• Intención: minimizar vulnerabilidad/riesgo percibido\n• Efecto esperado: moderado (petróleo podría consolidar ganancias)",
+   "pushText": "Trump: 'No necesitamos el Estrecho de Hormuz'",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Petróleo podría consolidar ganancias (menos pánico) o caer levemente si se interpreta como reducción de riesgo; DXY estable",
+    "despues": "Equities podrían recuperar si mercados descartan escalada inmediata; bonos estables",
+    "escenarios": "Traders evaluarán: (1) Autosuficiencia real vs. retórica (datos: EE.UU. importa ~6-8 MM bbl/día); (2) Si Trump prepara acciones militares que protegerían Hormuz de todas formas; (3) Timing: ¿es señal de negociación o desafío?",
+    "riesgos": "Declaración vaga sin datos económicos; mercados pueden ignorarla si ven datos de importación energética; contradicción con realidad si amenaza iraní se concreta"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33520,
+   "fecha": "2026-07-22T18:39:52+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33520",
+   "original": "IRAN'S REVOLUTIONARY GUARDS' SPOKESPERSON WARNS SHIPPING COMPANIES THAT THE STRAIT OF HORMUZ SOUTHERN ROUTE IS MINED - POST ON X",
+   "titulo": "Guardia Revolucionaria anuncia minado de ruta sur del Estrecho de Hormuz",
+   "resumen": "Vocero de la Guardia Revolucionaria Islámica de Irán advierte públicamente que la ruta sur del Estrecho de Hormuz está minada. Comunicado difundido en redes sociales. El Estrecho representa 30% del petróleo mundial; cierre o daño parcial dispararía precios globales de energía e impactaría cadenas de suministro asiáticas.",
+   "analisis": {
+    "porque": "Amenaza física a infraestructura de transporte crítica de energía global. Elevaría radicalmente primas de riesgo de seguros marítimos, costos de energía y estrés en cadenas de suministro",
+    "queOcurrio": "Guardia Revolucionaria Islámica publica advertencia de minado en ruta sur de Hormuz; medio: publicación en X (redes sociales)",
+    "estado": "no-verificable",
+    "fuenteOriginal": "Guardia Revolucionaria Islámica (comunicado oficial difundido en X)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Gas Natural",
+    "Shippings (Containerships, Tankers)",
+    "DXY",
+    "EURUSD",
+    "Bonos",
+    "S&P500",
+    "India",
+    "China"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Gas Natural",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Estrecho de Hormuz",
+    "minado",
+    "energía",
+    "Irán",
+    "infraestructura crítica"
+   ],
+   "tgText": "⚠️ CRÍTICO: Guardia Revolucionaria Islámica advierte que ruta sur de Hormuz está minada. Controla 30% petróleo mundial. Expectativa: salto inmediato en WTI/Brent, primas de seguros marítimos y volatilidad global.",
+   "xText": "🚨 Irán anuncia minado de ruta sur del Estrecho de Hormuz (30% suministro global de petróleo). Amenaza seria a transporte marítimo crítico. Esperar spike en energía, dólar y volatilidad.",
+   "discordText": "**ALERTA INFRAESTRUCTURA CRÍTICA**\n• Guardia Revolucionaria Islámica anuncia minado de Hormuz (ruta sur)\n• Representa 30% del suministro mundial de petróleo\n• Amenaza a navegación y seguros marítimos\n• Reacción inmediata: petróleo +3-7%, DXY sube, equities ceden",
+   "pushText": "Irán advierte minado en Estrecho de Hormuz; 30% petróleo global en riesgo",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI/Brent) salta +3-7% por riesgo de cierre/daño; primas de seguros marítimos suben inmediatamente",
+    "despues": "DXY sube (safe haven); Gas natural sube; índices asiáticos (Shanghai, Bombay) caen; bonos USA ceden rendimientos; 'risk-off' en globales",
+    "escenarios": "Traders vigilarán: (1) Confirmación si minas están realmente desplegadas; (2) Navíos intentan usar ruta o la evitan; (3) Respuesta militar de EE.UU./aliados; (4) Nivel de disruption en tráfico; (5) Duración de la amenaza (temporal vs. sostenida)",
+    "riesgos": "Comunicado estatal pero no confirmado por terceros independientes; posible exageración retórica; sin embargo, mercados precian riesgo real aunque sea parcial"
+   },
+   "macro": {
+    "dolar": "alcista (+200-300 pips en DXY esperados)",
+    "oro": "alcista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bitcoin": "mixto",
+    "ethereum": "mixto",
+    "bonos": "bajistas (rendimientos suben por riesgo)",
+    "petroleo": "alcista muy fuerte (+4-8% esperado)"
+   },
+   "updates": []
+  },
+  {
+   "id": 33519,
+   "fecha": "2026-07-22T18:39:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33519",
+   "original": "U.S. INVESTIGATING WHETHER RUSSIA ASSISTED IRANIAN DRONE ATTACKS ON CIA SITES IN GULF: SOURCES",
+   "titulo": "EE.UU. investiga si Rusia asistió ataques de drones iraníes contra bases de la CIA",
+   "resumen": "Fuentes estadounidenses indican que el Gobierno investiga si Rusia proporcionó asistencia a Irán para coordinación de ataques de drones contra sitios de la CIA en el Golfo Pérsico. La investigación examina posible colaboración entre Moscú y Teherán en operaciones militares recientes, lo que ampliaría la escalada geopolítica más allá del eje EE.UU.-Irán.",
+   "analisis": {
+    "porque": "Evidencia de coordinación Rusia-Irán elevaría significativamente el riesgo sistémico global, afectando primas de riesgo geopolítico, precios de energía y mercados emergentes",
+    "queOcurrio": "Fuentes del Gobierno estadounidense revelan investigación sobre posible asistencia rusa a operaciones de drones iraníes contra objetivos de inteligencia estadounidense en el Golfo",
+    "estado": "rumor",
+    "fuenteOriginal": "Fuentes estadounidenses (no nombradas)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "S&P500",
+    "NASDAQ",
+    "Oro",
+    "Bonos",
+    "Rublo",
+    "Mercados Emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Rusia",
+    "Irán",
+    "CIA",
+    "drones",
+    "escalada geopolítica",
+    "Golfo Pérsico"
+   ],
+   "tgText": "🚨 EE.UU. investiga posible asistencia rusa a ataques de drones iraníes contra bases de la CIA en el Golfo. Escalada geopolítica a nivel Rusia-Irán elevaría volatilidad en petróleo y mercados.",
+   "xText": "⚠️ Fuentes: EE.UU. investiga si Rusia asistió ataques de drones iraníes contra sitios de la CIA. Coordinación Moscú-Teherán ampliaría significativamente riesgo sistémico global. Vigilar petróleo y DXY.",
+   "discordText": "**Escalada geopolítica crítica**\n• EE.UU. investiga asistencia rusa a operaciones de drones iraníes\n• Objetivo: bases de la CIA en Golfo Pérsico\n• Implicación: coordinación Rusia-Irán elevaría riesgos sistémicos\n• Impacto esperado: petróleo, dólar, bonos USA",
+   "pushText": "Investigación: Rusia habría asistido ataques de drones de Irán contra CIA",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI/Brent) sube por cierre potencial de Hormuz y suministros; DXY sube por flight-to-safety",
+    "despues": "Oro como refugio; bonos USA (rendimientos caen); mercados emergentes ceden; Rublo bajo presión; acciones de energía volátiles",
+    "escenarios": "Traders vigilarán: (1) Confirmación oficial vs. descarte de coordinación Rusia-Irán; (2) Respuesta militar estadounidense inmediata; (3) Cierre del Estrecho de Hormuz (30% del petróleo mundial); (4) Declaraciones de Kremlin sobre negación/justificación",
+    "riesgos": "Titular basado en 'fuentes anónimas' sin confirmación oficial; escalada rápida si se verifica; posible sobrereacción inicial seguida de consolidación"
+   },
+   "macro": {
+    "dolar": "alcista (flight-to-safety, primas de riesgo)",
+    "oro": "alcista (refugio)",
+    "nasdaq": "bajista (riesgo sistémico)",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bitcoin": "mixto (hedge vs. riesgo sistémico)",
+    "ethereum": "mixto",
+    "bonos": "alcistas (rendimientos caen)",
+    "petroleo": "alcista muy fuerte (+3-5% inicial esperado)"
+   },
+   "updates": []
+  },
+  {
+   "id": 33498,
+   "fecha": "2026-07-21T15:40:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33498",
+   "original": "*TRUMP ON IRAN: WILL BE HITTING SOON, VERY HEAVILY",
+   "titulo": "Trump advierte que atacará a Irán 'muy pronto y con mucha fuerza'",
+   "resumen": "Trump intensificó su retórica contra Irán, afirmando que Estados Unidos 'atacará pronto, muy fuertemente', y agregó que Teherán 'no ha visto nada todavía' pese a que Washington 'ha sido amable' hasta ahora. También calificó al liderazgo iraní de 'gente muy malvada'. Las declaraciones se dan en medio de una escalada activa que incluye ataques renovados, bloqueo de puertos iraníes y amenazas hutíes en el Mar Rojo, elevando el riesgo de una confrontación militar de mayor escala en las próximas horas o días.",
+   "analisis": {
+    "porque": "Una amenaza explícita de ataque inminente y de mayor intensidad eleva el riesgo geopolítico inmediato, con impacto directo en energía, refugio y activos de riesgo.",
+    "queOcurrio": "Trump declaró que EE.UU. golpeará a Irán 'pronto y muy fuerte', reiterando que Irán 'no ha visto nada todavía' y calificando a sus líderes de 'muy malvados'.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "DXY",
+    "Bitcoin",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "trump",
+    "irán",
+    "escalada-militar",
+    "ataque-inminente",
+    "geopolitica"
+   ],
+   "tgText": "🚨 Trump: 'Atacaremos a Irán pronto y muy fuerte'. Dice que Teherán 'no ha visto nada todavía' pese a que EE.UU. 'ha sido amable'. Escalada militar en aumento.",
+   "xText": "🚨Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'. 'Irán no ha visto nada todavía'. Retórica de escalada militar se intensifica. #Iran #Trump",
+   "discordText": "**🚨 Trump escala retórica contra Irán**\n- 'Atacaremos pronto, muy fuerte'\n- 'Irán no ha visto nada todavía'\n- Calificó al liderazgo iraní de 'muy malvado'\n- Contexto: bloqueo de puertos y ataques activos",
+   "pushText": "Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo y oro reaccionan primero ante amenazas de ataque inminente por el riesgo de disrupción de suministro y demanda de refugio.",
+    "despues": "Bonos del Tesoro, dólar y criptomonedas suelen ajustarse después según el apetito de riesgo global.",
+    "escenarios": "Los traders vigilan confirmación de un ataque real, respuesta iraní, y si la escalada afecta el tránsito por Ormuz de forma efectiva.",
+    "riesgos": "Riesgo de retórica sin acción militar concreta; el titular no especifica objetivos, cronograma exacto ni magnitud real del ataque anunciado."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-22T18:39:04+00:00",
+     "id": 33518,
+     "texto": "Canciller iraní Araghchi amplía amenaza: quienes contribuyan o asistan en agresión contra Irán serán considerados objetivos legítimos de represalia. Escalada del lenguaje que incluye aliados y facilitadores estadounidenses. Mantiene amenaza difusa sin especificar atacantes o métodos.",
+     "tgUrl": "https://t.me/walterbloomberg/33518"
+    },
+    {
+     "fecha": "2026-07-22T18:38:43+00:00",
+     "id": 33517,
+     "texto": "El canciller iraní Araghchi reitera que cualquier ataque contra Irán recibirá respuesta militar poderosa y decisiva. Continuación de advertencias previas. Sin especificar escala, objetivos o cronograma. Mantiene narrativa de disuasión iraní ante amenazas estadounidenses.",
+     "tgUrl": "https://t.me/walterbloomberg/33517"
+    },
+    {
+     "fecha": "2026-07-22T14:01:54+00:00",
+     "id": 33514,
+     "texto": "Trump reiteró que Irán pagará un precio significativo, continuando línea de amenazas escalonadas. Declaración breve sin especificar mecanismo, timing o alcance de represalias.",
+     "tgUrl": "https://t.me/walterbloomberg/33514"
+    },
+    {
+     "fecha": "2026-07-22T13:11:43+00:00",
+     "id": 33512,
+     "texto": "Trump advirtió que cualquier ataque iraní a buques en el Estrecho de Ormuz desencadenaría strikes estadounidenses contra infraestructura iraní, incluyendo puentes y plantas de energía cercanas a Teherán. Marca una escalada retórica significativa en tensiones alrededor de una de las rutas de envío más estratégicas del mundo.",
+     "tgUrl": "https://t.me/walterbloomberg/33512"
+    }
+   ],
+   "actualizado": "2026-07-22T18:39:04+00:00"
+  },
   {
    "id": 33516,
    "fecha": "2026-07-22T16:54:07+00:00",
@@ -144,88 +503,6 @@
     "petroleo": "alcista (riesgo de interrupción)"
    },
    "updates": []
-  },
-  {
-   "id": 33498,
-   "fecha": "2026-07-21T15:40:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33498",
-   "original": "*TRUMP ON IRAN: WILL BE HITTING SOON, VERY HEAVILY",
-   "titulo": "Trump advierte que atacará a Irán 'muy pronto y con mucha fuerza'",
-   "resumen": "Trump intensificó su retórica contra Irán, afirmando que Estados Unidos 'atacará pronto, muy fuertemente', y agregó que Teherán 'no ha visto nada todavía' pese a que Washington 'ha sido amable' hasta ahora. También calificó al liderazgo iraní de 'gente muy malvada'. Las declaraciones se dan en medio de una escalada activa que incluye ataques renovados, bloqueo de puertos iraníes y amenazas hutíes en el Mar Rojo, elevando el riesgo de una confrontación militar de mayor escala en las próximas horas o días.",
-   "analisis": {
-    "porque": "Una amenaza explícita de ataque inminente y de mayor intensidad eleva el riesgo geopolítico inmediato, con impacto directo en energía, refugio y activos de riesgo.",
-    "queOcurrio": "Trump declaró que EE.UU. golpeará a Irán 'pronto y muy fuerte', reiterando que Irán 'no ha visto nada todavía' y calificando a sus líderes de 'muy malvados'.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "DXY",
-    "Bitcoin",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "trump",
-    "irán",
-    "escalada-militar",
-    "ataque-inminente",
-    "geopolitica"
-   ],
-   "tgText": "🚨 Trump: 'Atacaremos a Irán pronto y muy fuerte'. Dice que Teherán 'no ha visto nada todavía' pese a que EE.UU. 'ha sido amable'. Escalada militar en aumento.",
-   "xText": "🚨Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'. 'Irán no ha visto nada todavía'. Retórica de escalada militar se intensifica. #Iran #Trump",
-   "discordText": "**🚨 Trump escala retórica contra Irán**\n- 'Atacaremos pronto, muy fuerte'\n- 'Irán no ha visto nada todavía'\n- Calificó al liderazgo iraní de 'muy malvado'\n- Contexto: bloqueo de puertos y ataques activos",
-   "pushText": "Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo y oro reaccionan primero ante amenazas de ataque inminente por el riesgo de disrupción de suministro y demanda de refugio.",
-    "despues": "Bonos del Tesoro, dólar y criptomonedas suelen ajustarse después según el apetito de riesgo global.",
-    "escenarios": "Los traders vigilan confirmación de un ataque real, respuesta iraní, y si la escalada afecta el tránsito por Ormuz de forma efectiva.",
-    "riesgos": "Riesgo de retórica sin acción militar concreta; el titular no especifica objetivos, cronograma exacto ni magnitud real del ataque anunciado."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-07-22T14:01:54+00:00",
-     "id": 33514,
-     "texto": "Trump reiteró que Irán pagará un precio significativo, continuando línea de amenazas escalonadas. Declaración breve sin especificar mecanismo, timing o alcance de represalias.",
-     "tgUrl": "https://t.me/walterbloomberg/33514"
-    },
-    {
-     "fecha": "2026-07-22T13:11:43+00:00",
-     "id": 33512,
-     "texto": "Trump advirtió que cualquier ataque iraní a buques en el Estrecho de Ormuz desencadenaría strikes estadounidenses contra infraestructura iraní, incluyendo puentes y plantas de energía cercanas a Teherán. Marca una escalada retórica significativa en tensiones alrededor de una de las rutas de envío más estratégicas del mundo.",
-     "tgUrl": "https://t.me/walterbloomberg/33512"
-    }
-   ],
-   "actualizado": "2026-07-22T14:01:54+00:00"
   },
   {
    "id": 33513,
