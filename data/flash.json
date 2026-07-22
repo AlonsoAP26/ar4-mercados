@@ -1,7 +1,87 @@
 {
- "lastId": 33522,
- "actualizado": "2026-07-22T19:55:47.749Z",
+ "lastId": 33523,
+ "actualizado": "2026-07-22T21:19:06.252Z",
  "items": [
+  {
+   "id": 33523,
+   "fecha": "2026-07-22T21:10:37+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33523",
+   "original": "IRAN'S SEMI-OFFICIAL MEHR CITES KHUZESTAN PROVINCE OFFICIAL AS SAYING LOCATION NEAR AHWAZ TARGETED IN U.S. MISSILE ATTACK",
+   "titulo": "EE.UU. realiza ataque con misiles contra objetivos en provincia iraní de Juzestán",
+   "resumen": "Según funcionario provincial citado por la agencia semi-oficial MEHR de Irán, ubicaciones cercanas a Ahwaz (capital de Juzestán) fueron blanco de ataques con misiles estadounidenses. El titular no especifica hora exacta del incidente, número de misiles o daños confirmados. Representa escalada directa en confrontación militar entre Washington y Teherán tras semanas de amenazas mutuas.",
+   "analisis": {
+    "porque": "Marca transición de amenazas a operaciones militares activas. Afecta prima de riesgo geopolítico, precios energéticos y apetito por activos de riesgo.",
+    "queOcurrio": "Ataque con misiles estadounidenses contra objetivos en Juzestán, provincia petrolera iraní estratégica.",
+    "estado": "rumor",
+    "fuenteOriginal": "MEHR (agencia semi-oficial iraní), reproducida por Walter Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "Oro",
+    "S&P500",
+    "NASDAQ",
+    "VIX",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Iran",
+    "ataque-misiles",
+    "USA",
+    "Oriente-Medio",
+    "escalada-militar",
+    "Juzestan"
+   ],
+   "tgText": "⚠️ BREAKING: EE.UU. ataca con misiles objetivos en Juzestán (Irán). Marca escalada a operaciones directas. Petróleo y Oro suben; S&P500 cede. Fuente: MEHR.",
+   "xText": "🚨 Escalada crítica: EE.UU. realiza ataque con misiles contra provincia iraní de Juzestán. Petróleo/Oro al alza; equities bajo presión. Geopolítica en máxima tensión.",
+   "discordText": "**⚠️ ATAQUE MILITAR DIRECTO - BREAKING**\n\n• **Qué**: EE.UU. lanzó misiles contra Juzestán (Irán)\n• **Dónde**: Cercano a Ahwaz\n• **Fuente**: MEHR (agencia semi-oficial iraní)\n• **Estado**: Rumor - sin confirmación oficial USA\n• **Impacto**: Prima de riesgo geopolítico se dispara",
+   "pushText": "EE.UU. ataca Irán con misiles. Petróleo sube; bolsas ceden.",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI/Brent) y Oro suben por choque de oferta y demanda de refugio seguro.",
+    "despues": "USD se fortalece (safe-haven); bonos USA ceden (venta de renta fija); equities globales presionadas; VIX volatilidad implícita sube.",
+    "escenarios": "Traders vigilarán: (1) respuesta militar iraní inmediata, (2) bloqueo del Estrecho de Hormuz, (3) reacción de aliados (Arabia Saudita, Emiratos, Israel), (4) si EE.UU. confirma oficialmente el ataque.",
+    "riesgos": "CRÍTICO: Información proviene de fuente iraní semi-oficial sin confirmación USA. Posible amplificación por MEHR. Si es falsa, puede generar reversión violenta en activos cuando se desminta."
+   },
+   "macro": {
+    "dolar": "Alcista (safe-haven)",
+    "oro": "Alcista (refugio)",
+    "nasdaq": "Bajista (riesgo geopolítico)",
+    "dow": "Bajista",
+    "sp500": "Bajista",
+    "bitcoin": "Volátil (correlación con riesgo)",
+    "ethereum": "Volátil",
+    "bonos": "Bajista a corto plazo (venta técnica)",
+    "petroleo": "Alcista (riesgo de oferta Oriente Medio)"
+   },
+   "updates": []
+  },
   {
    "id": 33522,
    "fecha": "2026-07-22T19:47:33+00:00",
