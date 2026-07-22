@@ -1,7 +1,84 @@
 {
- "lastId": 33514,
- "actualizado": "2026-07-22T15:05:24.753Z",
+ "lastId": 33515,
+ "actualizado": "2026-07-22T16:41:01.206Z",
  "items": [
+  {
+   "id": 33515,
+   "fecha": "2026-07-22T16:31:46+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33515",
+   "original": "IRAN THREATENS ENERGY SITES IF US HITS POWER PLANTS: TASNIM",
+   "titulo": "Irán amenaza con atacar infraestructura energética si EE.UU. golpea plantas de energía",
+   "resumen": "Irán advierte represalias contra sitios de energía estadounidenses en caso de que Washington ataque instalaciones energéticas iraníes. La amenaza se produce en el contexto de creciente escalada militar entre ambos países, tras advertencias previas de Trump sobre ataques inminentes a Irán. El titular no especifica plazos ni si se refiere a infraestructura civil o militar.",
+   "analisis": {
+    "porque": "Escalada geopolítica directa con potencial de interrumpir suministros energéticos globales, afectando precios de petróleo, tasas de riesgo y volatilidad en mercados de renta variable.",
+    "queOcurrio": "Agencia Tasnim (cercana a autoridades iraníes) reporta amenaza explícita de represalias contra infraestructura energética estadounidense si hay ataques previos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Tasnim (agencia oficial iraní)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "S&P500",
+    "NASDAQ",
+    "Oro",
+    "Bonos",
+    "Rendimientos USA",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "escalada militar",
+    "represalias",
+    "infraestructura energética",
+    "Trump",
+    "Medio Oriente"
+   ],
+   "tgText": "🔴 Irán amenaza represalias contra infraestructura energética estadounidense si hay ataques previos a plantas iraníes. Escalada directa eleva riesgo de interrupciones globales de suministro. Petróleo en máximos.",
+   "xText": "🔴 IRAN AMENAZA REPRESALIAS: Irán advierte atacar infraestructura energética de EE.UU. si Washington golpea instalaciones de energía. Escalada directa en riesgo geopolítico. Petróleo alcista, acciones bajo presión.",
+   "discordText": "**Irán amenaza represalias energéticas contra EE.UU.**\n• Tasnim reporta advertencia de ataques a infraestructura si hay ataques previos\n• Escalada directa entre Washington y Teherán\n• **Mercados**: Petróleo sube, acciones caen, volatilidad extrema",
+   "pushText": "Irán amenaza represalias contra infraestructura energética estadounidense",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI/Brent) sube inmediatamente por riesgo de interrupción de suministro en Golfo Pérsico; DXY sube por busca de seguridad en dólar.",
+    "despues": "Índices de renta variable (S&P500, NASDAQ) caen por aversión al riesgo; bonos de largo plazo bajan (rendimientos suben) por demanda de seguridad; oro sube por cobertura.",
+    "escenarios": "Traders vigilan: (1) confirmación de ataques inminentes, (2) respuesta militar israelí/estadounidense, (3) cierre de Estrecho de Ormuz, (4) retirada de plataformas petroleras, (5) negociaciones diplomáticas de último minuto.",
+    "riesgos": "Tasnim es fuente estatal iraní; mensajes de represalia pueden ser tácticos/disuasorios sin intención de ejecución. Riesgo de sobrerreacción de mercados. Escalada podría ser contenida por mediadores internacionales."
+   },
+   "macro": {
+    "dolar": "alcista (busca de seguridad)",
+    "oro": "alcista (cobertura de riesgo)",
+    "nasdaq": "bajista (aversión al riesgo)",
+    "dow": "bajista (aversión al riesgo)",
+    "sp500": "bajista (aversión al riesgo)",
+    "bitcoin": "neutral a bajista (correlación con renta variable en estrés)",
+    "ethereum": "neutral a bajista",
+    "bonos": "alcistas (baja de rendimientos por demanda)",
+    "petroleo": "alcista (riesgo de interrupción)"
+   },
+   "updates": []
+  },
   {
    "id": 33498,
    "fecha": "2026-07-21T15:40:25+00:00",
