@@ -30,6 +30,13 @@ jobs:
       - name: Checkout repositorio
         uses: actions/checkout@v4
 
+      # Un relanzamiento ("Re-run") usa la foto del repo del run original, que
+      # puede ser vieja: los generadores no verian lo ya publicado, duplicarian
+      # contenido y el push moriria en conflicto (paso el 21/jul). Traer el
+      # master mas reciente antes de generar elimina ese caso.
+      - name: Actualizar al master mas reciente
+        run: git pull --rebase origin master
+
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
@@ -77,6 +84,9 @@ jobs:
               echo "publicado=si" >> "$GITHUB_OUTPUT"
               exit 0
             fi
+            # Si el pull dejo un rebase a medias (conflicto), abortarlo:
+            # sin esto los reintentos mueren con "unmerged files" sin pullear.
+            git rebase --abort 2>/dev/null || true
             echo "Push fallido, reintento $intento..."
             sleep 5
           done
