@@ -88,9 +88,22 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   const textBlock = Array.isArray(data.content) ? data.content.find((b) => b.type === 'text') : null;
   if (!textBlock) { fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage)); }
 
+  // Haiku a veces envuelve el JSON en ```json ... ``` o añade texto antes/después
+  // pese a las instrucciones. Limpiamos las comillas de markdown y nos quedamos
+  // con lo que va del primer { al último } antes de parsear.
+  function limpiarJson(txt) {
+    let t = txt.trim();
+    const fence = t.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
+    if (fence) t = fence[1].trim();
+    const ini = t.indexOf('{');
+    const fin = t.lastIndexOf('}');
+    if (ini !== -1 && fin !== -1 && fin > ini) t = t.slice(ini, fin + 1);
+    return t;
+  }
+
   let nuevo;
   try {
-    nuevo = JSON.parse(textBlock.text.trim());
+    nuevo = JSON.parse(limpiarJson(textBlock.text));
   } catch (e) {
     console.error(textBlock.text.slice(0, 1200));
     fail('La IA no devolvió un JSON válido. stop_reason=' + data.stop_reason);
