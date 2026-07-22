@@ -6,3 +6,17 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
+
+# El service worker y el manifiesto nunca deben quedarse cacheados: si se
+# guardan, el navegador seguiria usando una version vieja de la app instalada.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Service-Worker-Allowed = "/"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json; charset=utf-8"
+    Cache-Control = "public, max-age=0, must-revalidate"

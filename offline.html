@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sin conexión — AR4 Mercados</title>
+<meta name="theme-color" content="#080b14">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<!-- Página de respaldo del service worker: se muestra si el usuario abre la app
+     sin señal y la página pedida no estaba guardada. Estilos en línea a
+     propósito, para que se vea bien aunque el CSS del sitio no esté en caché. -->
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: #080b14; color: #e8e6e1;
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 32px 24px; line-height: 1.65;
+  }
+  .marca {
+    font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: 2rem;
+    letter-spacing: -0.5px; color: #f0c75e; margin: 0 0 4px;
+  }
+  .sub { font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; color: #6f6a5e; margin: 0 0 40px; }
+  h1 { font-size: 1.35rem; font-weight: 700; margin: 0 0 12px; color: #fff; }
+  p { max-width: 380px; margin: 0 0 28px; color: #a9a49a; font-size: 0.95rem; }
+  a.btn {
+    display: inline-block; padding: 13px 30px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(240,199,94,0.5); color: #f0c75e; font-weight: 500; font-size: 0.95rem;
+  }
+  .nota { margin-top: 36px; font-size: 0.8rem; color: #55514a; }
+</style>
+</head>
+<body>
+  <p class="marca">AR4</p>
+  <p class="sub">Mercados</p>
+  <h1>Estás sin conexión</h1>
+  <p>No pudimos alcanzar el servidor. Revisa tus datos o tu wifi y vuelve a intentarlo; lo que ya habías abierto sigue disponible.</p>
+  <a class="btn" href="/" onclick="location.reload(); return false;">Reintentar</a>
+  <p class="nota">AR4 Mercados · ar4mercados.com</p>
+</body>
+</html>
