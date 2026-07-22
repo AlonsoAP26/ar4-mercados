@@ -1,7 +1,79 @@
 {
- "lastId": 33509,
- "actualizado": "2026-07-22T11:16:51.003Z",
+ "lastId": 33511,
+ "actualizado": "2026-07-22T13:07:23.831Z",
  "items": [
+  {
+   "id": 33510,
+   "fecha": "2026-07-22T12:34:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33510",
+   "original": "*AMD TO INVEST $5 BILLION IN ANTHROPIC AS PART OF CHIP DEAL, COMPANIES SAY -- WSJ",
+   "titulo": "AMD invertirá US$5.000 millones en Anthropic en acuerdo de chips",
+   "resumen": "AMD anunció una inversión de US$5.000 millones en Anthropic como parte de un acuerdo estratégico de suministro de semiconductores. Simultáneamente, Anthropic se comprometió a comprar hasta 2 gigavatios de chips de última generación de AMD. El titular no especifica términos de valoración ni cronograma de desembolso.",
+   "analisis": {
+    "porque": "Señala consolidación en la cadena de valor de IA, con potencial impacto en competencia contra NVIDIA y en márgenes de AMD. Moviliza capital significativo hacia infraestructura de IA.",
+    "queOcurrio": "AMD invierte US$5.000 millones en Anthropic; Anthropic adquirirá chips AMD de última generación por hasta 2 GW de capacidad.",
+    "estado": "confirmado",
+    "fuenteOriginal": "WSJ"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "AMD",
+    "NVDA",
+    "Semiconductores",
+    "Índice Tecnología"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NVDA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "AMD",
+    "Anthropic",
+    "IA",
+    "semiconductores",
+    "inversión estratégica",
+    "chips"
+   ],
+   "tgText": "🔴 AMD invierte US$5.000M en Anthropic y recibirá pedidos de 2 GW de chips. Movimiento estratégico en infraestructura de IA que desafía dominancia de NVIDIA.",
+   "xText": "AMD inyecta US$5B en Anthropic y asegura compra de 2 GW de chips de última generación. Acuerdo que fortalece la competencia en infraestructura de IA frente a NVIDIA.",
+   "discordText": "**AMD-Anthropic: Acuerdo de US$5.000M**\n• AMD invierte US$5.000M en Anthropic\n• Anthropic compra hasta 2 GW de chips AMD\n• Juego estratégico en competencia vs NVIDIA\n• Refuerza posición de AMD en IA",
+   "pushText": "AMD invierte US$5.000M en Anthropic; gran movimiento en IA",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "AMD (reacción directa) y NVDA (competencia percibida). Los traders vigilan si este acuerdo reduce dependencia de NVIDIA en IA.",
+    "despues": "Índices de tecnología (NASDAQ, QQQ), acciones de proveedores de chips, y potencialmente acciones de clientes de IA que buscan diversificar proveedores.",
+    "escenarios": "Traders vigilarán: (1) si el acuerdo cierra la brecha tecnológica AMD-NVIDIA en IA, (2) si genera una alternativa creíble a NVIDIA en GPUs para IA, (3) impacto en márgenes y volúmenes de AMD, (4) reacción de NVIDIA en próximas ganancias.",
+    "riesgos": "El titular no especifica términos de valoración de Anthropic ni cronograma; podría ser parcialmente rumor si WSJ no cita comunicado oficial. Riesgo regulatorio en inversiones tecnológicas estratégicas."
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "amd": "alcista",
+    "nvda": "bajista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-22T12:35:14+00:00",
+     "id": 33511,
+     "texto": "Precisión del acuerdo: Anthropic se compromete a comprar hasta 2 gigavatios de capacidad de chips AMD de última generación. Complementa inversión de AMD anunciada en el mismo comunicado.",
+     "tgUrl": "https://t.me/walterbloomberg/33511"
+    }
+   ],
+   "actualizado": "2026-07-22T12:35:14+00:00"
+  },
   {
    "id": 33509,
    "fecha": "2026-07-22T08:01:12+00:00",
