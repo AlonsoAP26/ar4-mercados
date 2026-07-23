@@ -44,6 +44,10 @@ jobs:
           TG_FLASH_TOKEN: ${{ secrets.TG_FLASH_TOKEN }}
           TG_FLASH_CHAT: ${{ secrets.TG_FLASH_CHAT }}
           DISCORD_FLASH_WEBHOOK: ${{ secrets.DISCORD_FLASH_WEBHOOK }}
+          # Notificaciones push al celular (solo titulares de importancia >= 8).
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: node scripts/generate-flash.js
 
       - name: Publicar

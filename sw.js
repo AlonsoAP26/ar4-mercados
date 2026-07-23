@@ -106,3 +106,62 @@ self.addEventListener('fetch', (evento) => {
     evento.respondWith(cacheYRefresco(peticion));
   }
 });
+
+// ---------------------------------------------------------------------------
+// Notificaciones push
+// ---------------------------------------------------------------------------
+// El servidor manda el aviso SIN contenido. Aquí se consulta el flash en vivo
+// y se arma la notificación con el titular más reciente, así nunca llega un
+// aviso con una noticia ya vieja.
+const DESTINO_FLASH = '/noticias.html#flash';
+
+async function armarNotificacion() {
+  let titulo = 'AR4 Mercados';
+  let cuerpo = 'Hay un titular importante moviendo el mercado.';
+  let etiqueta = 'ar4-flash';
+
+  try {
+    const res = await fetch('/.netlify/functions/flash-live', { cache: 'no-store' });
+    const datos = await res.json();
+    const ultimo = (datos.items || [])[0];
+    if (ultimo) {
+      titulo = ultimo.breaking ? 'Última hora · AR4' : 'Flash del mercado · AR4';
+      cuerpo = ultimo.pushText || ultimo.titulo || cuerpo;
+      // Con la misma etiqueta, un segundo aviso del mismo titular reemplaza al
+      // anterior en vez de apilarse.
+      etiqueta = 'ar4-flash-' + ultimo.id;
+    }
+  } catch (e) { /* sin datos: se muestra el aviso genérico */ }
+
+  return self.registration.showNotification(titulo, {
+    body: cuerpo,
+    icon: '/icons/icon-192.png',
+    badge: '/icons/icon-192.png',
+    tag: etiqueta,
+    renotify: false,
+    data: { url: DESTINO_FLASH }
+  });
+}
+
+self.addEventListener('push', (evento) => {
+  // waitUntil es obligatorio: si no se muestra una notificación, el navegador
+  // enseña por su cuenta un aviso genérico de "el sitio se actualizó".
+  evento.waitUntil(armarNotificacion());
+});
+
+self.addEventListener('notificationclick', (evento) => {
+  evento.notification.close();
+  const destino = (evento.notification.data && evento.notification.data.url) || DESTINO_FLASH;
+  evento.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((ventanas) => {
+      // Si la app ya está abierta, se reutiliza esa ventana en vez de abrir otra.
+      for (const v of ventanas) {
+        if (v.url.indexOf(self.location.origin) === 0 && 'focus' in v) {
+          v.navigate(destino).catch(() => {});
+          return v.focus();
+        }
+      }
+      return self.clients.openWindow(destino);
+    })
+  );
+});

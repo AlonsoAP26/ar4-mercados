@@ -153,6 +153,24 @@ async function postDiscord(item) {
   } catch (e) { console.warn('Discord fallo (no fatal):', e.message); }
 }
 
+// Notificación al celular de quien la aceptó. Solo para lo realmente gordo:
+// si avisamos de todo, la gente desactiva las notificaciones y se pierde lo
+// importante. Se manda UN aviso por corrida, no uno por titular.
+const IMPORTANCIA_PARA_PUSH = 8;
+
+async function avisarPorPush(items) {
+  if (!process.env.VAPID_PRIVATE_KEY) return; // push no configurado todavía
+  const gordas = items.filter((it) => (it.importancia || 0) >= IMPORTANCIA_PARA_PUSH);
+  if (!gordas.length) return;
+  try {
+    const { avisarATodos } = require('./_webpush');
+    const r = await avisarATodos();
+    console.log('Push: ' + r.ok + '/' + r.total + ' enviadas, ' + r.muertas + ' suscripciones muertas borradas, ' + r.errores + ' errores.');
+  } catch (e) {
+    console.warn('Push falló (no fatal):', e.message);
+  }
+}
+
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) { fail('Falta ANTHROPIC_API_KEY'); }
@@ -228,6 +246,7 @@ async function main() {
   console.log('Flash: ' + publicadas + ' nueva(s), ' + actualizadas + ' actualizada(s). lastId=' + store.lastId);
 
   for (const item of paraRedes) { await postTelegram(item); await postDiscord(item); }
+  await avisarPorPush(paraRedes);
 }
 
 main().catch((err) => { console.error(err); fail(err && err.message ? err.message : String(err)); });
