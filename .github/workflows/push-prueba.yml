@@ -1,0 +1,30 @@
+name: Probar notificacion push
+
+# Boton manual para comprobar que las notificaciones llegan al celular.
+# Actions -> "Probar notificacion push" -> Run workflow.
+# Manda a todos los suscritos el titular mas reciente del Flash, igual que un
+# envio real. No modifica nada del sitio.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: push-prueba
+  cancel-in-progress: false
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Enviar aviso de prueba
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node scripts/push-prueba.js
