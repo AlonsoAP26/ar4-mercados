@@ -1,7 +1,174 @@
 {
- "lastId": 33525,
- "actualizado": "2026-07-23T14:26:48.197Z",
+ "lastId": 33527,
+ "actualizado": "2026-07-23T16:07:45.857Z",
  "items": [
+  {
+   "id": 33527,
+   "fecha": "2026-07-23T15:49:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33527",
+   "original": "EXPLOSION HEARD IN IRAN'S QESHM ISLAND -STATE BROADCASTER IRIB",
+   "titulo": "Reportan explosión en isla de Qeshm, Irán",
+   "resumen": "La radiodifusora estatal iraní IRIB reportó una explosión escuchada en la isla de Qeshm (estratégica en el Golfo Pérsico). No se especifica causa, alcance, bajas u objetivo. La isla alberga instalaciones militares y navales de Irán. El titular carece de confirmación de fuentes independientes.",
+   "analisis": {
+    "porque": "Potencial incidente militar real en zona crítica para energía global; confirmación de escalada física más allá de retórica.",
+    "queOcurrio": "IRIB reportó explosión en Qeshm; sin detalles de causa u origen.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "IRIB (radiodifusora estatal iraní)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "NASDAQ",
+    "S&P500",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Qeshm",
+    "explosión",
+    "Golfo Pérsico",
+    "militar",
+    "no-verificado"
+   ],
+   "tgText": "IRIB: explosión en isla de Qeshm (Golfo Pérsico). Sin confirmación independiente. Potencial escalada física; petróleo y oro presionados al alza. Esperar claridad.",
+   "xText": "⚠️ IRIB reporta explosión en Qeshm (Irán). Zona crítica del Golfo Pérsico. Sin confirmar origen. Impacto esperado en petróleo y volatilidad global.",
+   "discordText": "**Explosión reportada en Qeshm, Irán**\n• Fuente: IRIB (estatal iraní)\n• Sin confirmación independiente\n• Zona militarmente sensible en Golfo Pérsico\n• Vigilar: petróleo alcista, riesgo sistémico",
+   "pushText": "IRIB: explosión en isla iraní de Qeshm",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo crudo salta por temor a disrupciones en Golfo Pérsico; spreads de riesgo se amplían.",
+    "despues": "Oro y USD se fortalecen; renta variable cae; volatilidad implícita (VIX) sube.",
+    "escenarios": "Traders vigilarán: (1) si se confirma ataque externo vs. accidente; (2) respuesta iraní oficial; (3) daños a infraestructura energética o militar; (4) próximos movimientos de EE.UU.; (5) cierre del Estrecho de Hormuz.",
+    "riesgos": "Fuente es estatal iraní sin verificación independiente. Posible exageración, falsa alarma o desinformación. Requiere confirmación de agencias de inteligencia o Bloomberg/Reuters antes de certeza."
+   },
+   "macro": {
+    "dolar": "alcista por demanda de seguridad",
+    "oro": "alcista por aversión al riesgo",
+    "nasdaq": "bajista por escalada",
+    "petroleo": "alcista por temor a disrupciones",
+    "bonos": "rendimientos caen por demanda segura"
+   },
+   "updates": []
+  },
+  {
+   "id": 33498,
+   "fecha": "2026-07-21T15:40:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33498",
+   "original": "*TRUMP ON IRAN: WILL BE HITTING SOON, VERY HEAVILY",
+   "titulo": "Trump advierte que atacará a Irán 'muy pronto y con mucha fuerza'",
+   "resumen": "Trump intensificó su retórica contra Irán, afirmando que Estados Unidos 'atacará pronto, muy fuertemente', y agregó que Teherán 'no ha visto nada todavía' pese a que Washington 'ha sido amable' hasta ahora. También calificó al liderazgo iraní de 'gente muy malvada'. Las declaraciones se dan en medio de una escalada activa que incluye ataques renovados, bloqueo de puertos iraníes y amenazas hutíes en el Mar Rojo, elevando el riesgo de una confrontación militar de mayor escala en las próximas horas o días.",
+   "analisis": {
+    "porque": "Una amenaza explícita de ataque inminente y de mayor intensidad eleva el riesgo geopolítico inmediato, con impacto directo en energía, refugio y activos de riesgo.",
+    "queOcurrio": "Trump declaró que EE.UU. golpeará a Irán 'pronto y muy fuerte', reiterando que Irán 'no ha visto nada todavía' y calificando a sus líderes de 'muy malvados'.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "DXY",
+    "Bitcoin",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "trump",
+    "irán",
+    "escalada-militar",
+    "ataque-inminente",
+    "geopolitica"
+   ],
+   "tgText": "🚨 Trump: 'Atacaremos a Irán pronto y muy fuerte'. Dice que Teherán 'no ha visto nada todavía' pese a que EE.UU. 'ha sido amable'. Escalada militar en aumento.",
+   "xText": "🚨Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'. 'Irán no ha visto nada todavía'. Retórica de escalada militar se intensifica. #Iran #Trump",
+   "discordText": "**🚨 Trump escala retórica contra Irán**\n- 'Atacaremos pronto, muy fuerte'\n- 'Irán no ha visto nada todavía'\n- Calificó al liderazgo iraní de 'muy malvado'\n- Contexto: bloqueo de puertos y ataques activos",
+   "pushText": "Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo y oro reaccionan primero ante amenazas de ataque inminente por el riesgo de disrupción de suministro y demanda de refugio.",
+    "despues": "Bonos del Tesoro, dólar y criptomonedas suelen ajustarse después según el apetito de riesgo global.",
+    "escenarios": "Los traders vigilan confirmación de un ataque real, respuesta iraní, y si la escalada afecta el tránsito por Ormuz de forma efectiva.",
+    "riesgos": "Riesgo de retórica sin acción militar concreta; el titular no especifica objetivos, cronograma exacto ni magnitud real del ataque anunciado."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-23T15:31:39+00:00",
+     "id": 33526,
+     "texto": "Trump afirmó el jueves que está considerando seriamente reanudar operaciones de combate a gran escala contra Irán. La declaración marca una escalada en la retórica sobre el conflicto regional, tras semanas de tensión militar creciente y ataques previos. El titular no especifica cronograma ni condiciones exactas para tal acción.",
+     "tgUrl": "https://t.me/walterbloomberg/33526"
+    },
+    {
+     "fecha": "2026-07-22T18:39:04+00:00",
+     "id": 33518,
+     "texto": "Canciller iraní Araghchi amplía amenaza: quienes contribuyan o asistan en agresión contra Irán serán considerados objetivos legítimos de represalia. Escalada del lenguaje que incluye aliados y facilitadores estadounidenses. Mantiene amenaza difusa sin especificar atacantes o métodos.",
+     "tgUrl": "https://t.me/walterbloomberg/33518"
+    },
+    {
+     "fecha": "2026-07-22T18:38:43+00:00",
+     "id": 33517,
+     "texto": "El canciller iraní Araghchi reitera que cualquier ataque contra Irán recibirá respuesta militar poderosa y decisiva. Continuación de advertencias previas. Sin especificar escala, objetivos o cronograma. Mantiene narrativa de disuasión iraní ante amenazas estadounidenses.",
+     "tgUrl": "https://t.me/walterbloomberg/33517"
+    },
+    {
+     "fecha": "2026-07-22T14:01:54+00:00",
+     "id": 33514,
+     "texto": "Trump reiteró que Irán pagará un precio significativo, continuando línea de amenazas escalonadas. Declaración breve sin especificar mecanismo, timing o alcance de represalias.",
+     "tgUrl": "https://t.me/walterbloomberg/33514"
+    },
+    {
+     "fecha": "2026-07-22T13:11:43+00:00",
+     "id": 33512,
+     "texto": "Trump advirtió que cualquier ataque iraní a buques en el Estrecho de Ormuz desencadenaría strikes estadounidenses contra infraestructura iraní, incluyendo puentes y plantas de energía cercanas a Teherán. Marca una escalada retórica significativa en tensiones alrededor de una de las rutas de envío más estratégicas del mundo.",
+     "tgUrl": "https://t.me/walterbloomberg/33512"
+    }
+   ],
+   "actualizado": "2026-07-23T15:31:39+00:00"
+  },
   {
    "id": 33525,
    "fecha": "2026-07-23T13:01:31+00:00",
@@ -414,100 +581,6 @@
     "petroleo": "alcista muy fuerte (+3-5% inicial esperado)"
    },
    "updates": []
-  },
-  {
-   "id": 33498,
-   "fecha": "2026-07-21T15:40:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33498",
-   "original": "*TRUMP ON IRAN: WILL BE HITTING SOON, VERY HEAVILY",
-   "titulo": "Trump advierte que atacará a Irán 'muy pronto y con mucha fuerza'",
-   "resumen": "Trump intensificó su retórica contra Irán, afirmando que Estados Unidos 'atacará pronto, muy fuertemente', y agregó que Teherán 'no ha visto nada todavía' pese a que Washington 'ha sido amable' hasta ahora. También calificó al liderazgo iraní de 'gente muy malvada'. Las declaraciones se dan en medio de una escalada activa que incluye ataques renovados, bloqueo de puertos iraníes y amenazas hutíes en el Mar Rojo, elevando el riesgo de una confrontación militar de mayor escala en las próximas horas o días.",
-   "analisis": {
-    "porque": "Una amenaza explícita de ataque inminente y de mayor intensidad eleva el riesgo geopolítico inmediato, con impacto directo en energía, refugio y activos de riesgo.",
-    "queOcurrio": "Trump declaró que EE.UU. golpeará a Irán 'pronto y muy fuerte', reiterando que Irán 'no ha visto nada todavía' y calificando a sus líderes de 'muy malvados'.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "DXY",
-    "Bitcoin",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "trump",
-    "irán",
-    "escalada-militar",
-    "ataque-inminente",
-    "geopolitica"
-   ],
-   "tgText": "🚨 Trump: 'Atacaremos a Irán pronto y muy fuerte'. Dice que Teherán 'no ha visto nada todavía' pese a que EE.UU. 'ha sido amable'. Escalada militar en aumento.",
-   "xText": "🚨Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'. 'Irán no ha visto nada todavía'. Retórica de escalada militar se intensifica. #Iran #Trump",
-   "discordText": "**🚨 Trump escala retórica contra Irán**\n- 'Atacaremos pronto, muy fuerte'\n- 'Irán no ha visto nada todavía'\n- Calificó al liderazgo iraní de 'muy malvado'\n- Contexto: bloqueo de puertos y ataques activos",
-   "pushText": "Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo y oro reaccionan primero ante amenazas de ataque inminente por el riesgo de disrupción de suministro y demanda de refugio.",
-    "despues": "Bonos del Tesoro, dólar y criptomonedas suelen ajustarse después según el apetito de riesgo global.",
-    "escenarios": "Los traders vigilan confirmación de un ataque real, respuesta iraní, y si la escalada afecta el tránsito por Ormuz de forma efectiva.",
-    "riesgos": "Riesgo de retórica sin acción militar concreta; el titular no especifica objetivos, cronograma exacto ni magnitud real del ataque anunciado."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-07-22T18:39:04+00:00",
-     "id": 33518,
-     "texto": "Canciller iraní Araghchi amplía amenaza: quienes contribuyan o asistan en agresión contra Irán serán considerados objetivos legítimos de represalia. Escalada del lenguaje que incluye aliados y facilitadores estadounidenses. Mantiene amenaza difusa sin especificar atacantes o métodos.",
-     "tgUrl": "https://t.me/walterbloomberg/33518"
-    },
-    {
-     "fecha": "2026-07-22T18:38:43+00:00",
-     "id": 33517,
-     "texto": "El canciller iraní Araghchi reitera que cualquier ataque contra Irán recibirá respuesta militar poderosa y decisiva. Continuación de advertencias previas. Sin especificar escala, objetivos o cronograma. Mantiene narrativa de disuasión iraní ante amenazas estadounidenses.",
-     "tgUrl": "https://t.me/walterbloomberg/33517"
-    },
-    {
-     "fecha": "2026-07-22T14:01:54+00:00",
-     "id": 33514,
-     "texto": "Trump reiteró que Irán pagará un precio significativo, continuando línea de amenazas escalonadas. Declaración breve sin especificar mecanismo, timing o alcance de represalias.",
-     "tgUrl": "https://t.me/walterbloomberg/33514"
-    },
-    {
-     "fecha": "2026-07-22T13:11:43+00:00",
-     "id": 33512,
-     "texto": "Trump advirtió que cualquier ataque iraní a buques en el Estrecho de Ormuz desencadenaría strikes estadounidenses contra infraestructura iraní, incluyendo puentes y plantas de energía cercanas a Teherán. Marca una escalada retórica significativa en tensiones alrededor de una de las rutas de envío más estratégicas del mundo.",
-     "tgUrl": "https://t.me/walterbloomberg/33512"
-    }
-   ],
-   "actualizado": "2026-07-22T18:39:04+00:00"
   },
   {
    "id": 33516,
