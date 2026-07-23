@@ -1,7 +1,67 @@
 {
- "lastId": 33524,
- "actualizado": "2026-07-22T22:38:21.006Z",
+ "lastId": 33525,
+ "actualizado": "2026-07-23T14:26:48.197Z",
  "items": [
+  {
+   "id": 33525,
+   "fecha": "2026-07-23T13:01:31+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33525",
+   "original": "*FORD WILL USE APPLE SOFTWARE IN NEW SELF-DRIVING SYSTEM: NYT",
+   "titulo": "Ford integrará software de Apple en nuevo sistema de conducción autónoma",
+   "resumen": "Ford utilizará tecnología de software de Apple en su próxima generación de sistemas de conducción autónoma, según reporta The New York Times. La alianza representa un avance estratégico en la carrera automotriz por tecnología de conducción autónoma, combinando la experiencia de Ford en manufactura con las capacidades de software de la compañía tecnológica.",
+   "analisis": {
+    "porque": "Señala reconfiguración competitiva en sector automotriz y tecnológico; impacta valoraciones de Ford, Apple y proveedores de sistemas autónomos. Indica que Apple acelera monetización de tecnología automotriz tras años de especulación.",
+    "queOcurrio": "Ford anunció alianza con Apple para integrar software de conducción autónoma en vehículos nuevos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "New York Times (citado por Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "F",
+    "AAPL",
+    "NASDAQ",
+    "Sector Automotriz",
+    "Sector Tecnológico"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAPL",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "F",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "ford",
+    "apple",
+    "conducción-autónoma",
+    "tecnología-automotriz",
+    "alianza-estratégica",
+    "IA"
+   ],
+   "tgText": "🚗 Ford utilizará software de Apple en nuevo sistema de conducción autónoma. Alianza estratégica que posiciona a Apple en el mercado automotriz tras años de desarrollo. Impacta valuaciones de ambas compañías.",
+   "xText": "ALERTA: Ford + Apple en conducción autónoma. La gigante tech monetiza tecnología automotriz; Ford refuerza su oferta autónoma. Movimiento estratégico clave en la carrera EV/conducción. $F $AAPL",
+   "discordText": "**Ford + Apple: Alianza en Conducción Autónoma**\n• Ford integrará software de Apple en nueva generación de sistemas autónomos\n• Combina experiencia automotriz de Ford con capacidades de software de Apple\n• Impacta: $F, $AAPL, sector tecnológico",
+   "pushText": "Ford usará software de Apple en conducción autónoma",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "AAPL: reacción alcista probable; valida apuesta de Apple en movilidad autónoma tras años sin anuncios públicos significativos.",
+    "despues": "F: impulso en valuación por acceso a tecnología premium; índices NASDAQ (peso Apple); proveedores de componentes autónomos (negativo relativo).",
+    "escenarios": "Traders vigilarán: (1) si esto acelera timeline de Apple para lanzar vehículo propio; (2) impacto en márgenes de Ford (software licenciado vs. propio); (3) respuestas competitivas de Tesla, Waymo, otras alianzas automotrices.",
+    "riesgos": "El titular no especifica términos financieros, exclusividad, timeline o magnitud del acuerdo. Riesgo de interpretación excesiva sobre compromisos reales de Apple en el sector automotriz."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 33523,
    "fecha": "2026-07-22T21:10:37+00:00",
