@@ -1,7 +1,87 @@
 {
- "lastId": 33527,
- "actualizado": "2026-07-23T16:07:45.857Z",
+ "lastId": 33528,
+ "actualizado": "2026-07-23T21:18:18.463Z",
  "items": [
+  {
+   "id": 33528,
+   "fecha": "2026-07-23T21:01:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33528",
+   "original": "US SETS NEW 10%-12.5% TARIFFS AS GLOBAL 10% PENALTY EXPIRES",
+   "titulo": "EE.UU. implementa aranceles de 10%-12,5% tras expiración de penalización global",
+   "resumen": "Estados Unidos ha establecido nuevos aranceles escalonados entre 10% y 12,5% una vez vencida la penalización arancelaria global del 10%. La medida afecta el comercio internacional y amplía la estrategia proteccionista iniciada en julio de 2026. El titular no especifica sectores, cronograma de implementación completo ni países específicamente afectados.",
+   "analisis": {
+    "porque": "Los aranceles estadounidenses impactan directamente el comercio global, los términos de intercambio, la inflación importada y la competitividad de empresas multinacionales. Afecta expectativas de márgenes corporativos y presiones inflacionarias en economías dependientes de exportaciones a EE.UU.",
+    "queOcurrio": "Confirmado que EE.UU. ha establecido nuevos aranceles diferenciados (10%-12,5%) tras la caducidad de una penalización arancelaria global del 10%. Se desconocen detalles de cobertura sectorial y calendario de aplicación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "DXY",
+    "NASDAQ",
+    "S&P500",
+    "EURUSD",
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "Rendimientos USA",
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "Indices Latam"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Comercio Internacional",
+   "keywords": [
+    "aranceles",
+    "EE.UU.",
+    "comercio",
+    "proteccionismo",
+    "inflación importada"
+   ],
+   "tgText": "🇺🇸 EE.UU. activa aranceles de 10%-12,5% tras caducar penalización global. Impacto en márgenes corporativos, inflación y divisas. Dólar subirá presionado. #Mercados",
+   "xText": "🚨 EE.UU. implementa aranceles de 10%-12,5% tras expiración de penalización global del 10%. Presión alcista en DXY, riesgo bajista para NASDAQ y sectores exportadores. Vigilar inflación.",
+   "discordText": "**Aranceles EE.UU.: 10%-12,5% tras caducidad de penalización global**\n\n• Nuevos aranceles diferenciados implementados\n• Afecta competitividad multinacional y márgenes\n• Presiones inflacionarias en importadores\n• Sesgo alcista: DXY, oro | Sesgo bajista: NASDAQ, petróleo",
+   "pushText": "EE.UU. activa aranceles 10%-12,5%. Alto impacto en comercio y mercados.",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "DXY (índice dólar) subirá por reflejo de proteccionismo estadounidense y expectativa de menor crecimiento global; simultáneamente NASDAQ bajo presión por caída de exportadores tech.",
+    "despues": "Pares EURUSD, GBPUSD caerían vs USD fortalecido; materias primas (petróleo, cobre) bajo presión por temor a demanda débil; bonos a 10Y podrían repreciarse según inflación importada vs deflación por menor crecimiento.",
+    "escenarios": "Traders monitorean: (1) Represalias comerciales que escalen la guerra arancelaria, (2) Impacto en earnings de multinacionales (importadores netos), (3) Si aranceles impulsan inflación importada o si temor a recesión domina, (4) Comportamiento de commodities como indicador de demanda global.",
+    "riesgos": "El titular no especifica cobertura sectorial ni cronograma completo; riesgo de sorpresas en implementación. Posible que anuncio completo aún no se haya revelado. Reacción puede amplificarse si se percibe como inicio de nueva escalada arancelaria."
+   },
+   "macro": {
+    "dolar": "Alcista a corto plazo",
+    "oro": "Alcista (resguardo de incertidumbre)",
+    "nasdaq": "Bajista (presión en exportadores tech)",
+    "dow": "Mixto (defensivos favorecidos)",
+    "sp500": "Bajista moderado (sesgo defensivo)",
+    "bitcoin": "Volátil (cobertura vs inflación vs riesgo de recesión)",
+    "ethereum": "Presión similar a NASDAQ",
+    "bonos": "Volátiles (equilibrio inflación vs crecimiento)",
+    "petroleo": "Bajista (temor a demanda débil)"
+   },
+   "updates": []
+  },
   {
    "id": 33527,
    "fecha": "2026-07-23T15:49:05+00:00",
