@@ -1,6 +1,11 @@
 [build]
   functions = "netlify/functions"
   publish = "."
+  # El flash del mercado se sirve en vivo desde netlify/functions/flash-live.js
+  # (lee directo de GitHub), asi que un commit que SOLO toca data/flash.json
+  # no necesita reconstruir el sitio entero. Esto permite que el bot publique
+  # cada pocos minutos sin gastar minutos de build de Netlify.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!data/flash.json'"
 
 [[headers]]
   for = "/*"

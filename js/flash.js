@@ -119,7 +119,7 @@
   let cache = [];
   async function load() {
     try {
-      const res = await fetch('data/flash.json?cb=' + Date.now());
+      const res = await fetch('/.netlify/functions/flash-live');
       const data = await res.json();
       cache = data.items || [];
       // Orden cronológico garantizado también en el navegador (por si el
@@ -150,5 +150,5 @@
   }
 
   load();
-  setInterval(load, 60000);
+  setInterval(load, 20000);
 })();

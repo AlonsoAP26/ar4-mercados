@@ -142,7 +142,7 @@ async function main() {
     const d = await fetchJson('https://ar4mercados.com/.netlify/functions/market-dossier?symbol=' + encodeURIComponent(s));
     if (d && d.success) dossiers.push({ symbol: s, precio: d.price, cambioPct: d.changePct, tendencia: d.trend, rsi: d.rsi14, soportes: d.supports, resistencias: d.resistances });
   }
-  const flash = await fetchJson('https://ar4mercados.com/data/flash.json');
+  const flash = await fetchJson('https://ar4mercados.com/.netlify/functions/flash-live');
   const titulares = ((flash && flash.items) || []).slice(0, 4).map((it) => it.titulo);
 
   const grupo = pickAgents(CONFIG.agentesPorConversacion || 7);

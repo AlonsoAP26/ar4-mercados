@@ -1,21 +1,22 @@
 name: Flash del mercado (titulares DeItaone analizados por IA)
 
 # Tiempo casi real con costos controlados:
-# - cada 20 min en horario nucleo de mercados (lun-vie 11:00-22:59 UTC)
-# - cada hora el resto del dia y fines de semana (geopolitica no duerme)
+# - cada 5 min en horario nucleo de mercados (lun-vie 07:00-22:59 UTC)
+# - cada 15 min el resto del dia y fines de semana (geopolitica no duerme)
 # Solo llama a la IA si hay titulares NUEVOS (el script sale antes si no).
+# El flash se sirve en vivo (netlify/functions/flash-live.js), asi que estos
+# commits no disparan un rebuild de Netlify (ver netlify.toml [build].ignore):
+# apretar el cron no gasta minutos de build, solo minutos de Actions (gratis
+# e ilimitados en repos publicos).
 
 on:
   schedule:
-    # Prioridad: APERTURAS de mercado (horario de verano, UTC).
-    # Londres abre ~07:00 UTC y Nueva York ~13:30 UTC: cada 10 minutos.
-    - cron: '*/10 7-8,13-14 * * 1-5'
-    # Resto de la sesion (Asia tarde, media sesion, cierre USA): cada 30 min.
-    - cron: '5,35 9-12,15-21 * * 1-5'
-    # Noche y madrugada entre semana: cada hora (ultima hora sigue cubierta).
-    - cron: '12 0-6,22,23 * * 1-5'
-    # Fines de semana (solo cripto se mueve): cada hora.
-    - cron: '17 * * * 0,6'
+    # Horario nucleo de mercados (Londres 07:00 UTC -> cierre NY ~22:00 UTC).
+    - cron: '*/5 7-22 * * 1-5'
+    # Noche y madrugada entre semana (la ultima hora sigue cubierta).
+    - cron: '*/15 23,0-6 * * 1-5'
+    # Fines de semana (solo cripto se mueve).
+    - cron: '*/15 * * * 0,6'
   workflow_dispatch:
 
 concurrency:
