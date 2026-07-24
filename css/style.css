@@ -1806,13 +1806,19 @@ a { color: inherit; text-decoration: none; }
 .chat-greeting.show { display: block; }
 .chat-greeting-close {
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 2px;
+  right: 2px;
   background: none;
   border: none;
   color: var(--text-low);
   font-size: 0.9rem;
   cursor: pointer;
+  /* Área táctil cómoda en el celular (antes medía 28px de alto) */
+  min-width: 38px;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 4px;
 }
 @keyframes greeting-pop {
@@ -2578,7 +2584,13 @@ a { color: inherit; text-decoration: none; }
 }
 .community-guest-banner h3 { margin-bottom: 4px; }
 .community-guest-banner p { color: var(--text-mid); font-size: 0.88rem; }
-.community-guest-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.community-guest-actions { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
+/* En el celular los botones del banner de invitado se salían de la pantalla
+   (la fila medía ~512px): en columna, a lo ancho, cada uno bien tocable. */
+@media (max-width: 640px) {
+  .community-guest-actions { width: 100%; flex-direction: column; }
+  .community-guest-actions .btn { width: 100%; justify-content: center; text-align: center; }
+}
 
 .join-prompt-overlay {
   position: fixed; inset: 0; background: rgba(4,6,12,0.7); backdrop-filter: blur(4px);
@@ -4686,7 +4698,7 @@ body.has-buy-bar { padding-bottom: 74px; }
 
 /* ===== Modo aplicativo móvil: barra inferior de navegación ===== */
 .app-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 940; display: none; background: rgba(8,12,22,0.96); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-top: 1px solid rgba(212,175,55,0.25); padding-bottom: env(safe-area-inset-bottom, 0); }
-.app-bar-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 9px 4px 8px; color: var(--text-low); font-size: 0.62rem; letter-spacing: 0.02em; }
+.app-bar-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 9px 4px 8px; color: var(--text-low); font-size: 0.7rem; letter-spacing: 0.02em; }
 .app-bar-item svg { width: 21px; height: 21px; }
 .app-bar-item.active { color: var(--gold-bright); }
 .app-bar-item.active svg { filter: drop-shadow(0 0 6px rgba(212,175,55,0.5)); }

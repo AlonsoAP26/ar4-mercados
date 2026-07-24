@@ -55,7 +55,8 @@
     '.ar4-pwa-x{position:absolute;top:10px;right:12px;background:none;border:none;color:#6d7690;cursor:pointer;font-size:1.1rem;line-height:1;padding:4px}',
     '.ar4-pwa-pasos{margin:10px 0 0;padding-left:18px;color:#aab2c5;font-size:.82rem;line-height:1.8}',
     '.ar4-pwa-pasos b{color:#f0c75e;font-weight:600}',
-    '@media(max-width:480px){.ar4-pwa{left:10px;right:10px;bottom:10px;padding:14px 16px}}'
+    '@media(max-width:480px){.ar4-pwa{left:10px;right:10px;padding:14px 16px}}',
+    '@media(max-width:768px){.ar4-pwa{bottom:calc(74px + env(safe-area-inset-bottom, 0px))}}'
   ].join('');
 
   var ICONO = '<svg class="ar4-pwa-ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18.5h2"/></svg>';
