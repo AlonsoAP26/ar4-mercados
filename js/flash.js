@@ -29,6 +29,31 @@
   // Icono SVG monocromo (regla de la casa: sin emojis en la UI).
   const BRK_ICON = '<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px;margin-right:3px;"><path d="M13 2 4.5 13.5H11L9.5 22 19 9.5h-6.5L13 2z"/></svg>';
 
+  // Los titulares pueden traer varias categorías separadas por "|"
+  // (p. ej. "Aranceles|Empresas|Geopolítica"). El filtro compara contra cada
+  // una; antes usaba igualdad exacta y esos titulares no salían en ningún filtro.
+  function enCategoria(it, cat) {
+    return String(it.categoria || '').split('|').map((s) => s.trim()).indexOf(cat) !== -1;
+  }
+
+  // Un filtro que deja la lista vacía es un callejón sin salida: los chips sin
+  // contenido se ocultan (menos "Todas" y "Solo alto impacto").
+  function actualizarChips(items) {
+    const barra = document.getElementById('flashFilters');
+    if (!barra) return;
+    barra.querySelectorAll('.filter-chip[data-cat]').forEach((chip) => {
+      const cat = chip.dataset.cat;
+      if (cat === 'todas') return;
+      const hay = items.some((it) => enCategoria(it, cat));
+      chip.hidden = !hay;
+      // Si el filtro activo se quedó sin contenido, volver a "Todas".
+      if (!hay && currentFilter === cat) {
+        currentFilter = 'todas';
+        barra.querySelectorAll('.filter-chip[data-cat]').forEach((c) => c.classList.toggle('active', c.dataset.cat === 'todas'));
+      }
+    });
+  }
+
   function sesgoChip(s) {
     const cls = s.sesgo === 'alcista' ? 'fl-up' : s.sesgo === 'bajista' ? 'fl-dn' : 'fl-nt';
     const arrow = s.sesgo === 'alcista' ? '&#9650;' : s.sesgo === 'bajista' ? '&#9660;' : '&#9679;';
@@ -98,9 +123,9 @@
     if (strip) {
       const top = items.slice(0, 4);
       strip.innerHTML = top.length ? `
-        <div class="fl-strip-head"><span class="fl-strip-live"><span class="sdot sdot-r"></span> FLASH DEL MERCADO</span><a href="flash.html" class="see-all">Ver todo →</a></div>
+        <div class="fl-strip-head"><span class="fl-strip-live"><span class="sdot sdot-r"></span> FLASH DEL MERCADO</span><a href="noticias.html#flash" class="see-all">Ver todo →</a></div>
         <div class="fl-strip-row">${top.map((it) => `
-          <a href="flash.html" class="fl-strip-item">
+          <a href="noticias.html#flash" class="fl-strip-item">
             ${it.breaking ? '<span class="fl-brk">' + BRK_ICON + '</span>' : `<span class="sdot ${IMP_DOT[it.impacto] || 'sdot-n'}"></span>`}
             <span class="fl-strip-title">${esc(it.titulo)}</span>
             <span class="fl-strip-time" data-t="${esc(it.actualizado || it.fecha)}">${timeAgo(it.actualizado || it.fecha)}</span>
@@ -108,7 +133,7 @@
     }
     if (!feed) return;
     let list = items;
-    if (currentFilter !== 'todas') list = list.filter((it) => it.categoria === currentFilter);
+    if (currentFilter !== 'todas') list = list.filter((it) => enCategoria(it, currentFilter));
     if (onlyHigh) list = list.filter((it) => it.impacto === 'alto' || it.breaking);
     const total = list.length;
     if (FEED_LIMIT && !showAll) list = list.slice(0, FEED_LIMIT);
@@ -151,6 +176,7 @@
       const nueva = cache.map((it) => it.id + ':' + ((it.updates || []).length) + ':' + (it.actualizado || '')).join('|');
       if (nueva !== firma) {
         firma = nueva;
+        actualizarChips(cache);
         render(cache, { preservar: true });
       } else {
         refreshTimes();
