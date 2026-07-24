@@ -17,7 +17,7 @@
 <meta name="description" content="Únete a la comunidad latina de traders: comparte tus ideas y análisis, apóyate en agentes de inteligencia artificial y accede a reseñas honestas de brokers, cuentas de fondeo, noticias y calendario económico. Gratis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=59">
+<link rel="stylesheet" href="css/style.css?v=60">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
 <script src="js/_supabase-client.js"></script>
@@ -161,16 +161,17 @@
 </div>
 
 <!-- Flash del mercado en vivo (el gancho: mercado moviendose AHORA) -->
-<section class="section">
+<section class="section home-flash">
   <div class="container">
     <div class="section-head">
-      <h2>El mercado se está moviendo ahora</h2>
+      <h2>El mercado se está moviendo ahora <span class="badge-live">EN VIVO</span></h2>
       <a href="noticias.html#flash" class="see-all">Ver todos los flashes →</a>
     </div>
     <p style="color:var(--text-mid);max-width:700px;margin:-8px 0 22px;font-size:0.95rem;">Titulares institucionales analizados por nuestros agentes de IA al instante, las 24 horas. Esto es lo último:</p>
     <div id="flashStrip"></div>
-    <div class="hero-actions" style="margin-top:18px;">
+    <div class="hero-actions" style="margin-top:20px;">
       <a href="comunidad.html" class="btn btn-gold">Comentar el mercado en la comunidad →</a>
+      <a href="noticias.html#flash" class="btn btn-outline">Ver el análisis completo</a>
     </div>
   </div>
 </section>
