@@ -1,7 +1,66 @@
 {
- "lastId": 33529,
- "actualizado": "2026-07-24T02:07:45.043Z",
+ "lastId": 33530,
+ "actualizado": "2026-07-24T14:28:16.527Z",
  "items": [
+  {
+   "id": 33530,
+   "fecha": "2026-07-24T14:14:47+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33530",
+   "original": "NETANYAHU TO TRAVEL TO WASHINGTON MONDAY AT INVITATION OF TRUMP: AXIOS NETANYAHU TO MEET TRUMP AT WHITE HOUSE ON TUESDAY: AXIOS NETANYAHU TO ATTEND FUNERAL CEREMONY FOR SENATOR LINDSEY GRAHAM: AXIOS",
+   "titulo": "Netanyahu viaja a Washington para reunión con Trump; asistirá a funeral de senador Graham",
+   "resumen": "El primer ministro israelí Benjamin Netanyahu viajará a Washington el lunes a invitación de Trump, según Axios. Se reunirá con Trump en la Casa Blanca el martes y asistirá a la ceremonia fúnebre del senador republicano Lindsey Graham. El viaje ocurre en medio de tensiones geopolíticas en Oriente Medio.",
+   "analisis": {
+    "porque": "Confirmación de encuentro de alto nivel entre líderes durante período de escalada en Irán. Mercados vigilan señales sobre política exterior estadounidense hacia Medio Oriente, que impacta precios de petróleo y energía global.",
+    "queOcurrio": "Netanyahu confirmó viaje a EE.UU. para reunión bilateral con Trump en Casa Blanca. Participará también en funeral de Graham, senador influyente en política exterior.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Axios"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "S&P500",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Netanyahu",
+    "Trump",
+    "Casa Blanca",
+    "Oriente Medio",
+    "política exterior"
+   ],
+   "tgText": "Netanyahu viajará a Washington el lunes para reunirse con Trump en Casa Blanca el martes. El primer ministro asistirá también al funeral del senador Lindsey Graham. Reunión bilateral en contexto de tensiones en Irán.",
+   "xText": "Netanyahu se reúne con Trump en Casa Blanca el martes. Viaje confirmado por Axios en contexto de escalada geopolítica en Oriente Medio. También asistirá a funeral del senador Graham.",
+   "discordText": "**Netanyahu → Washington**\n• Viaje confirmado a invitación de Trump\n• Reunión bilateral en Casa Blanca (martes)\n• Asistirá funeral de senador Graham\n• Contexto: tensiones Irán-EE.UU.",
+   "pushText": "Netanyahu viaja a Washington para reunirse con Trump; asistirá funeral de Graham",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Oro (activo refugio ante incertidumbre geopolítica) y petróleo crudo (suministros Medio Oriente); posibles ganancias si mercado interpreta como desescalada potencial.",
+    "despues": "Bonos del Tesoro y DXY si hay señales sobre política exterior futura; equities si se percibe menor riesgo regional.",
+    "escenarios": "Traders monitorean si declaraciones conjuntas en reunión indican postura más dura o pragmática hacia Irán; volatilidad en energía según interpretación de próximos pasos geopolíticos.",
+    "riesgos": "Titular es confirmación de viaje; riesgo real es en contenido de reunión que aún no ocurre. Mercados pueden reaccionar a expectativas preconstruidas sobre resultados."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 33529,
    "fecha": "2026-07-23T23:59:59+00:00",
