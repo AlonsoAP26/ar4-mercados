@@ -39,12 +39,12 @@
     const dot = IMP_DOT[it.impacto] || 'sdot-n';
     const upd = (it.updates || []).length;
     return `
-    <article class="fl-card${it.breaking ? ' fl-breaking' : ''}" data-cat="${esc(it.categoria)}" data-imp="${esc(it.impacto)}">
+    <article class="fl-card${it.breaking ? ' fl-breaking' : ''}" data-id="${esc(it.id)}" data-cat="${esc(it.categoria)}" data-imp="${esc(it.impacto)}">
       <div class="fl-head">
         ${it.breaking ? '<span class="fl-brk">' + BRK_ICON + 'BREAKING</span>' : ''}
         <span class="fl-cat">${esc(it.categoria)}</span>
         <span class="fl-imp"><span class="sdot ${dot}"></span> impacto ${esc(it.impacto)}</span>
-        <span class="fl-time">${timeAgo(it.actualizado || it.fecha)}</span>
+        <span class="fl-time" data-t="${esc(it.actualizado || it.fecha)}">${timeAgo(it.actualizado || it.fecha)}</span>
       </div>
       <h3 class="fl-title">${esc(it.titulo)}</h3>
       ${upd ? `<div class="fl-update-tag">Nueva información disponible · ${upd} actualización${upd > 1 ? 'es' : ''}</div>` : ''}
@@ -84,7 +84,17 @@
     </article>`;
   }
 
-  function render(items) {
+  // Actualiza los "hace X min" sin redibujar nada más.
+  function refreshTimes() {
+    document.querySelectorAll('#flashFeed [data-t], #flashStrip [data-t]').forEach((el) => {
+      el.textContent = timeAgo(el.dataset.t);
+    });
+  }
+
+  function render(items, opts) {
+    // preservar = redibujo automático (no iniciado por el usuario): lo que
+    // tenía abierto debe seguir abierto, sin saltos.
+    const preservar = opts && opts.preservar;
     if (strip) {
       const top = items.slice(0, 4);
       strip.innerHTML = top.length ? `
@@ -93,7 +103,7 @@
           <a href="flash.html" class="fl-strip-item">
             ${it.breaking ? '<span class="fl-brk">' + BRK_ICON + '</span>' : `<span class="sdot ${IMP_DOT[it.impacto] || 'sdot-n'}"></span>`}
             <span class="fl-strip-title">${esc(it.titulo)}</span>
-            <span class="fl-strip-time">${timeAgo(it.actualizado || it.fecha)}</span>
+            <span class="fl-strip-time" data-t="${esc(it.actualizado || it.fecha)}">${timeAgo(it.actualizado || it.fecha)}</span>
           </a>`).join('')}</div>` : '';
     }
     if (!feed) return;
@@ -102,12 +112,21 @@
     if (onlyHigh) list = list.filter((it) => it.impacto === 'alto' || it.breaking);
     const total = list.length;
     if (FEED_LIMIT && !showAll) list = list.slice(0, FEED_LIMIT);
+    // Antes de redibujar, apuntar qué análisis tenía abiertos el lector.
+    const abiertos = preservar
+      ? Array.from(feed.querySelectorAll('.fl-card')).filter((c) => { const d = c.querySelector('details'); return d && d.open; }).map((c) => c.dataset.id)
+      : [];
     feed.innerHTML = (list.length
       ? list.map(cardHTML).join('')
       : '<p class="footer-text">Sin titulares en este filtro todavía. El agente vigila el mercado cada 10 minutos en las aperturas de Londres y Nueva York, y publica en cuanto detecta noticias relevantes.</p>')
       + (FEED_LIMIT && !showAll && total > FEED_LIMIT ? '<button class="btn btn-outline btn-block fl-vermas">Ver los ' + total + ' flashes →</button>' : '');
+    // Restaurar los análisis que estaban abiertos (identificados por su id).
+    abiertos.forEach((id) => {
+      const card = feed.querySelector('.fl-card[data-id="' + String(id).replace(/"/g, '') + '"] details');
+      if (card) card.open = true;
+    });
     const vermas = feed.querySelector('.fl-vermas');
-    if (vermas) vermas.addEventListener('click', () => { showAll = true; render(cache); });
+    if (vermas) vermas.addEventListener('click', () => { showAll = true; render(cache, { preservar: true }); });
     feed.querySelectorAll('.fl-copy').forEach((btn) => {
       btn.addEventListener('click', async () => {
         try { await navigator.clipboard.writeText(btn.dataset.x); btn.textContent = 'Copiado'; setTimeout(() => { btn.textContent = 'Copiar para X'; }, 1600); }
@@ -117,6 +136,7 @@
   }
 
   let cache = [];
+  let firma = '';
   async function load() {
     try {
       const res = await fetch('/.netlify/functions/flash-live');
@@ -125,7 +145,16 @@
       // Orden cronológico garantizado también en el navegador (por si el
       // archivo viene de una corrida antigua sin ordenar).
       cache.sort((a, b) => new Date(b.actualizado || b.fecha) - new Date(a.actualizado || a.fecha));
-      render(cache);
+      // Huella del contenido: si nada cambió desde el último refresco, NO se
+      // redibuja (redibujar cerraba el análisis que el lector tenía abierto y
+      // le movía la página). Solo se actualizan los "hace X min".
+      const nueva = cache.map((it) => it.id + ':' + ((it.updates || []).length) + ':' + (it.actualizado || '')).join('|');
+      if (nueva !== firma) {
+        firma = nueva;
+        render(cache, { preservar: true });
+      } else {
+        refreshTimes();
+      }
       const st = document.getElementById('flashStatus');
       if (st) st.textContent = 'Última revisión del agente: ' + (data.actualizado ? timeAgo(data.actualizado) : '—') + ' · se actualiza solo';
     } catch (e) {

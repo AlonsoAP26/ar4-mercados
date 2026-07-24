@@ -884,6 +884,10 @@
     const msgsEl = document.getElementById('dmMessages');
     const inputRow = document.getElementById('dmInputRow');
     if (!headerEl || !msgsEl) return;
+    // El contenedor se reutiliza entre conversaciones: borrar la huella del
+    // hilo anterior para que el nuevo siempre se pinte desde cero.
+    delete msgsEl.dataset.huella;
+    delete msgsEl.dataset.huellaPrevia;
 
     headerEl.innerHTML = `${avatarHTML(otherProfile, 'trader-avatar')}<div><strong>${escapeHtml(otherProfile.username)}</strong></div><button class="btn btn-outline" id="dmBlockBtn" style="margin-left:auto;font-size:0.72rem;padding:5px 10px;"><svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><circle cx='12' cy='12' r='9'/><path d='M5.6 5.6l12.8 12.8'/></svg> Bloquear</button>`;
     inputRow.hidden = false;
@@ -895,9 +899,18 @@
       }
       try {
         const data = await callFunctionGET('dm-messages?threadId=' + encodeURIComponent(threadId));
+        // Si no hay nada nuevo (ni mensajes ni cambios de "Visto"), no se toca
+        // el DOM: redibujar cada 4 s parpadeaba las imágenes y arrastraba al
+        // lector al fondo aunque estuviera leyendo mensajes antiguos.
+        const huella = data.messages.map((m) => m.id + ':' + (m.read_at ? 1 : 0)).join('|');
+        if (msgsEl.dataset.huella === huella) return;
+        msgsEl.dataset.huella = huella;
+        // Solo se auto-baja si el lector ya estaba al fondo (o al abrir el hilo).
+        const estabaAbajo = !msgsEl.dataset.huellaPrevia || (msgsEl.scrollHeight - msgsEl.scrollTop - msgsEl.clientHeight < 60);
+        msgsEl.dataset.huellaPrevia = '1';
         const rows = data.messages.map((m) => dmBubbleHTML(m, m.sender_id === data.myProfileId, m.sender_id === data.myProfileId ? myProfile : data.otherProfile));
         msgsEl.innerHTML = rows.join('') || '<p class="footer-text">Todavía no hay mensajes. ¡Escribe el primero!</p>';
-        msgsEl.scrollTop = msgsEl.scrollHeight;
+        if (estabaAbajo) msgsEl.scrollTop = msgsEl.scrollHeight;
       } catch (e) {
         msgsEl.innerHTML = `<p class="footer-text">${escapeHtml(e.message)}</p>`;
       }
@@ -942,6 +955,9 @@
         attachBtn.textContent = "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg>";
         if (!threadId) { threadId = data.threadId; currentDmThreadId = threadId; loadMensajesList(); }
         await refresh();
+        // Al enviar, siempre bajar a ver el propio mensaje (aunque se estuviera
+        // leyendo arriba).
+        msgsEl.scrollTop = msgsEl.scrollHeight;
       } catch (e) {
         alert(e.message);
       } finally {
@@ -2152,12 +2168,19 @@
   async function loadEliteRoom(msgsEl) {
     try {
       const data = await callFunctionGET('community-chat-elite-messages');
+      // Sin mensajes nuevos = sin redibujo: el poll de 6 s robaba el scroll al
+      // que estaba leyendo mensajes anteriores (mismo arreglo que en los DM).
+      const huella = data.messages.map((m) => m.id).join('|');
+      if (msgsEl.dataset.huella === huella) return;
+      const primeraCarga = !msgsEl.dataset.huella;
+      msgsEl.dataset.huella = huella;
+      const estabaAbajo = primeraCarga || (msgsEl.scrollHeight - msgsEl.scrollTop - msgsEl.clientHeight < 60);
       const rows = data.messages.map((m) => {
         const author = data.profiles[m.profile_id] || { username: 'Usuario', rank: 'elite' };
         return chatMsgHTML(m, author);
       });
       msgsEl.innerHTML = rows.join('') || '<p class="footer-text">Todavía no hay mensajes en Elite Traders. ¡Empieza la conversación!</p>';
-      msgsEl.scrollTop = msgsEl.scrollHeight;
+      if (estabaAbajo) msgsEl.scrollTop = msgsEl.scrollHeight;
     } catch (e) {
       msgsEl.innerHTML = `<p class="footer-text">${escapeHtml(e.message)}</p>`;
     }
@@ -2168,6 +2191,9 @@
     const msgsEl = document.getElementById('communityChatMessages');
     if (!msgsEl) return;
     msgsEl.innerHTML = '<p class="footer-text">Cargando chat...</p>';
+    // Mismo contenedor para todas las salas: sin esto, volver a Elite con la
+    // huella vieja intacta dejaría el "Cargando chat..." para siempre.
+    delete msgsEl.dataset.huella;
 
     document.querySelectorAll('.discord-room-btn').forEach((b) => {
       b.classList.toggle('active', b.dataset.room === roomId);
@@ -2255,7 +2281,12 @@
         input.value = '';
         fileInput.value = '';
         attachBtn.textContent = "<svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-3px'><path d='M21 12.5l-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l9-9a3.7 3.7 0 0 1 5.2 5.2l-9 9a1.85 1.85 0 0 1-2.6-2.6l8.3-8.3'/></svg>";
-        if (currentRoom === 'elite') await loadEliteRoom(document.getElementById('communityChatMessages'));
+        if (currentRoom === 'elite') {
+          const eliteMsgs = document.getElementById('communityChatMessages');
+          await loadEliteRoom(eliteMsgs);
+          // Tras enviar, bajar siempre a ver el propio mensaje.
+          if (eliteMsgs) eliteMsgs.scrollTop = eliteMsgs.scrollHeight;
+        }
       } catch (e) {
         alert(e.message);
       } finally {

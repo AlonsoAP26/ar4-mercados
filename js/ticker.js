@@ -62,12 +62,37 @@
     mount.innerHTML = '<div class="ar4-ticker"><div class="ar4-ticker-track">' + strip + strip + '</div></div>';
   }
 
+  // Refresco de precios SIN reconstruir la cinta: reconstruirla reiniciaba la
+  // animación y la marquesina pegaba un salto al inicio cada minuto. Se
+  // actualizan precio y variación dentro de los elementos ya existentes
+  // (la pista tiene los items duplicados: índice módulo ITEMS.length).
+  function update(quotes) {
+    var track = mount.querySelector('.ar4-ticker-track');
+    if (!track) { render(quotes); return; }
+    var map = {};
+    (quotes || []).forEach(function (q) { map[q.symbol] = q; });
+    var nodes = track.querySelectorAll('.ar4-tk-item');
+    for (var i = 0; i < nodes.length; i++) {
+      var it = ITEMS[i % ITEMS.length];
+      var q = map[it.y];
+      if (!q) continue;
+      var priceEl = nodes[i].querySelector('.ar4-tk-price');
+      var chgEl = nodes[i].querySelector('.ar4-tk-chg');
+      if (priceEl) priceEl.textContent = q.price != null ? fmt(q.price, it.dec) : '—';
+      if (chgEl) {
+        var chg = q.changePct != null ? q.changePct : null;
+        chgEl.className = 'ar4-tk-chg ' + (chg == null ? '' : (chg >= 0 ? 'ar4-tk-up' : 'ar4-tk-down'));
+        chgEl.textContent = chg == null ? '' : (chg >= 0 ? '▲ ' : '▼ ') + Math.abs(chg).toFixed(2) + '%';
+      }
+    }
+  }
+
   function load() {
     var symbols = ITEMS.map(function (it) { return it.y; }).join(',');
     fetch('/.netlify/functions/market-prices?symbols=' + encodeURIComponent(symbols))
       .then(function (r) { return r.json(); })
-      .then(function (data) { if (data && data.success) render(data.quotes); else render([]); })
-      .catch(function () { render([]); });
+      .then(function (data) { update(data && data.success ? data.quotes : []); })
+      .catch(function () { update([]); });
   }
 
   // Primer render inmediato (sin precios) para que la cinta ya se vea moviéndose,

@@ -420,7 +420,16 @@
 
     function renderTable() {
       const tb = $('dkBody');
-      if (tb) tb.innerHTML = watch.map(rowHTML).join('');
+      if (tb) {
+        // Conservar los detalles que el trader tenía expandidos: el escaneo
+        // automático (cada 60 s) reconstruye la tabla y sin esto se cerraban.
+        const abiertos = Array.from(tb.querySelectorAll('tr[data-detail]:not([hidden])')).map((tr) => tr.dataset.detail);
+        tb.innerHTML = watch.map(rowHTML).join('');
+        abiertos.forEach((sym) => {
+          const det = tb.querySelector(`tr[data-detail="${sym.replace(/"/g, '\\"')}"]`);
+          if (det) det.hidden = false;
+        });
+      }
       const st = $('dkStamp');
       if (st) st.textContent = 'Último escaneo: ' + new Date().toLocaleTimeString('es-PE', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
       const ch = $('dkChips');
