@@ -2958,5 +2958,380 @@
       ],
       "patronUltimaVela": "vela bajista sin patron destacable"
     }
+  },
+  {
+    "title": "Apple roza máximos históricos a la espera del reporte del 30 de julio",
+    "excerpt": "AAPL sube 3,5% y se acerca a su récord de 52 semanas, impulsada por el recuerdo de un 2T fiscal con ingresos y EPS de máximos históricos.",
+    "symbol": "NASDAQ:AAPL",
+    "trend": "up",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La acción se acerca a su techo de 52 semanas</h3><p>Las acciones de Apple (NASDAQ:AAPL) cerraron la sesión con un avance de 3,5% hasta 333,02 dólares, apenas por debajo de su máximo de 52 semanas de 334,99 dólares. En el mes acumula una suba de 13,6% y el RSI(14) se ubica en 65,2, en zona neutral pero ya cerca de niveles de sobrecompra técnica. El papel cotiza por encima de su media móvil de 200 sesiones, un signo de tendencia de fondo alcista de cara a la próxima presentación de resultados.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El antecedente: un segundo trimestre de récords</h3><p>El impulso actual se apoya en el reporte del segundo trimestre fiscal 2026 (trimestre cerrado el 28 de marzo), cuando Apple anunció ingresos de 111.200 millones de dólares, un alza de 17% interanual, muy por encima del consenso que rondaba los 108.900 millones de dólares. La ganancia por acción diluida llegó a 2,01 dólares frente a 1,94 dólares esperados por el mercado. Según Investing.com, el resultado implicó una sorpresa de 4,15% en EPS y de 2,09% en ingresos respecto de las estimaciones de los analistas.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Servicios, el motor de la rentabilidad</h3><p>Dentro de ese reporte, la división de Servicios —App Store, iCloud, Apple Music y publicidad— generó 30.976 millones de dólares, un incremento de 16,3% y un nuevo récord trimestral, con un margen bruto cercano al 77%. Ese negocio de alta rentabilidad es el que sostiene el argumento alcista de los analistas de cara al cierre del año fiscal, incluso con un ciclo de iPhone que ya mostró demanda robusta con la línea iPhone 17.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La cita que mira Wall Street: 30 de julio</h3><p>Apple tiene previsto reportar su tercer trimestre fiscal 2026 el 30 de julio. El consenso proyecta una ganancia por acción de 1,88 dólares, un salto de 19,8% frente a los 1,57 dólares del mismo trimestre del año anterior, con ingresos estimados en torno a 108.850 millones de dólares. Para los inversores latinoamericanos que siguen a Apple como ancla del Nasdaq, el nivel de expectativas ya elevado deja poco margen de error: un resultado en línea o débil frente a semejante optimismo previo podría gatillar toma de ganancias tras el rally de julio.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Datos duros detrás del optimismo</h3><p>El primer trimestre fiscal 2026 (diciembre), reportado en enero, ya había marcado récords: ingresos de 143.800 millones de dólares (+16% interanual) y EPS de 2,84 dólares (+19% interanual), según el propio comunicado de Apple. Con ese antecedente y el beat del segundo trimestre, el EPS de los últimos doce meses (TTM) se ubica en 8,25 dólares, de acuerdo con datos de Investing.com. En el panel técnico, AAPL se mantiene por encima de su media de 200 ruedas, con el mínimo de 52 semanas en 201,50 dólares muy alejado del precio actual, lo que confirma la magnitud de la recuperación del papel en lo que va del año.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El mercado ya está descontando un tercer trimestre fuerte antes de que se publique: la suba de 13,6% mensual y la cercanía al máximo histórico de 334,99 dólares muestran que buena parte de las buenas noticias ya está en el precio. Eso eleva el riesgo de una reacción negativa de corto plazo si el reporte del 30 de julio no supera con claridad el consenso de EPS de 1,88 dólares y de ingresos de 108.850 millones de dólares. Lo que conviene monitorear en los próximos días son las revisiones de estimaciones de los analistas previas al reporte, el comportamiento de Servicios —que fue el gran diferencial en el trimestre anterior— y la guía que entregue la compañía para el trimestre de las fiestas. Para carteras regionales expuestas al Nasdaq a través de MSFT, NVDA o instrumentos indexados, el reporte de Apple funciona como termómetro de si el rally de la gran tecnología en 2026 tiene sustento en resultados o empieza a depender solo de expectativas.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "SEC.gov (Apple 8-K)",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000011/a8-kex991q2202603282026.htm"
+      },
+      {
+        "name": "IG International",
+        "url": "https://www.ig.com/en/news-and-trade-ideas/apple-q3-2026-earnings-preview-260722"
+      },
+      {
+        "name": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/apples-quarterly-earnings-preview-know-123659826.html"
+      },
+      {
+        "name": "Bitget News",
+        "url": "https://www.bitget.com/es/news/detail/12560605393272"
+      }
+    ],
+    "aiSummary": {
+      "que": "AAPL sube 3,5% en la sesión y se acerca a su máximo histórico de 334,99 dólares, a una semana de reportar su tercer trimestre fiscal 2026.",
+      "porque": "El mercado descuenta que Apple repita el patrón de su 2T fiscal (ingresos y EPS récord, muy por encima del consenso) impulsado por Servicios y el iPhone 17.",
+      "activos": [
+        "NASDAQ:AAPL",
+        "FOREXCOM:NSXUSD",
+        "NASDAQ:MSFT",
+        "NASDAQ:NVDA"
+      ],
+      "siguiente": "El reporte del 30 de julio, con el consenso en 1,88 dólares de EPS y 108.850 millones de dólares de ingresos."
+    },
+    "aiScenarios": {
+      "alcista": 45,
+      "lateral": 30,
+      "bajista": 25
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Medio",
+      "lectura": "El precio ya incorpora expectativas altas antes del reporte, lo que reduce el margen de error de la compañía y eleva el riesgo de toma de ganancias post-resultado."
+    },
+    "timeline": [
+      {
+        "cuando": "Enero 2026",
+        "texto": "Apple reportó su 1T fiscal 2026 con ingresos récord de 143.800 millones de dólares (+16% interanual) y EPS de 2,84 dólares (+19%)."
+      },
+      {
+        "cuando": "Reporte del 2T fiscal 2026",
+        "texto": "Apple anunció ingresos de 111.200 millones de dólares (+17%) y EPS de 2,01 dólares, superando el consenso de 1,94 dólares, con Servicios en récord de 30.976 millones."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "AAPL sube 3,5% hasta 333,02 dólares, cerca de su máximo de 52 semanas de 334,99 dólares, con RSI(14) en 65,2."
+      },
+      {
+        "cuando": "30 de julio de 2026",
+        "texto": "Apple reportará su 3T fiscal 2026; el consenso espera EPS de 1,88 dólares e ingresos de 108.850 millones de dólares."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es el EPS y por qué importa tanto en un reporte trimestral?",
+        "a": "El EPS (ganancia por acción) mide la utilidad neta dividida por las acciones en circulación; es el número que el mercado compara directamente contra el consenso de analistas para definir si un resultado es una sorpresa positiva o negativa."
+      },
+      {
+        "q": "¿Por qué una acción puede caer aunque la empresa gane más que el año anterior?",
+        "a": "Porque el precio ya suele reflejar expectativas de crecimiento. Si el resultado supera al año anterior pero no al consenso, o si la guía futura decepciona, la acción puede corregir de todos modos."
+      },
+      {
+        "q": "¿Qué es el RSI y qué indica un valor de 65,2?",
+        "a": "El RSI (14) es un oscilador de momentum entre 0 y 100; niveles por encima de 70 suelen asociarse a sobrecompra. Un valor de 65,2 indica impulso alcista fuerte pero todavía sin señal de sobrecompra extrema."
+      },
+      {
+        "q": "¿Cómo impacta un reporte de Apple en otras acciones tecnológicas de la región?",
+        "a": "Apple es una de las mayores ponderaciones del Nasdaq, por lo que sus resultados suelen mover índices y ETFs tecnológicos que muchos inversores latinoamericanos usan para exposición a la bolsa de EE.UU."
+      }
+    ],
+    "impactScore": 8,
+    "relatedSymbols": [
+      "FOREXCOM:NSXUSD",
+      "NASDAQ:MSFT",
+      "NASDAQ:NVDA",
+      "NASDAQ:GOOGL"
+    ],
+    "category": "Empresas",
+    "heroType": "index",
+    "slug": "apple-roza-maximos-historicos-a-la-espera-del-reporte-del-30-mrzlep3k",
+    "author": "AR4 Mercados",
+    "date": "2026-07-24",
+    "sourceName": "SEC.gov (Apple 8-K)",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000011/a8-kex991q2202603282026.htm",
+    "marketPanel": [
+      {
+        "symbol": "NASDAQ:AAPL",
+        "nombre": "Apple (AAPL)",
+        "yahooSymbol": "AAPL",
+        "fuente": "Yahoo Finance (AAPL)",
+        "fechaUltimaVela": "2026-07-24",
+        "precio": 333.02,
+        "cierreAnterior": 321.66,
+        "variacionDiaPct": 3.5,
+        "variacionSemanaPct": -0.2,
+        "variacionMesPct": 13.6,
+        "variacionAnioPct": 55.5,
+        "rangoDiaReal": {
+          "minimo": 321.62,
+          "maximo": 334.37
+        },
+        "rsi14": 65.2,
+        "lecturaRsi": "neutral",
+        "media50": 306.23,
+        "media200": 275.98,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 8.2629,
+        "maximo52sem": 334.99,
+        "minimo52sem": 201.5,
+        "distanciaAMaximo52semPct": -0.6,
+        "distanciaAMinimo52semPct": 65.3,
+        "soportes": [
+          305.02,
+          287.38,
+          273.75
+        ],
+        "resistencias": [
+          334.99
+        ],
+        "patronUltimaVela": "vela alcista de cuerpo amplio"
+      },
+      {
+        "symbol": "NASDAQ:MSFT",
+        "nombre": "Microsoft (MSFT)",
+        "yahooSymbol": "MSFT",
+        "fuente": "Yahoo Finance (MSFT)",
+        "fechaUltimaVela": "2026-07-24",
+        "precio": 381.7,
+        "cierreAnterior": 381.58,
+        "variacionDiaPct": 0,
+        "variacionSemanaPct": -3.1,
+        "variacionMesPct": 4.4,
+        "variacionAnioPct": -24.5,
+        "rangoDiaReal": {
+          "minimo": 380.65,
+          "maximo": 389.03
+        },
+        "rsi14": 44.7,
+        "lecturaRsi": "neutral",
+        "media50": 399.18,
+        "media200": 436.12,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 11.83,
+        "maximo52sem": 555.45,
+        "minimo52sem": 349.2,
+        "distanciaAMaximo52semPct": -31.3,
+        "distanciaAMinimo52semPct": 9.3,
+        "soportes": [
+          373.35,
+          356.28,
+          349.2
+        ],
+        "resistencias": [
+          385,
+          395.57,
+          406.74
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "NASDAQ:NVDA",
+        "nombre": "NVIDIA (NVDA)",
+        "yahooSymbol": "NVDA",
+        "fuente": "Yahoo Finance (NVDA)",
+        "fechaUltimaVela": "2026-07-24",
+        "precio": 206.84,
+        "cierreAnterior": 208.76,
+        "variacionDiaPct": -0.9,
+        "variacionSemanaPct": 2,
+        "variacionMesPct": 3.9,
+        "variacionAnioPct": 21.1,
+        "rangoDiaReal": {
+          "minimo": 204.81,
+          "maximo": 211.91
+        },
+        "rsi14": 51.1,
+        "lecturaRsi": "neutral",
+        "media50": 209.18,
+        "media200": 192.91,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 7.2541,
+        "maximo52sem": 236.54,
+        "minimo52sem": 164.07,
+        "distanciaAMaximo52semPct": -12.6,
+        "distanciaAMinimo52semPct": 26.1,
+        "soportes": [
+          199.34,
+          197.6,
+          194.74
+        ],
+        "resistencias": [
+          212.71,
+          213.9,
+          216.83
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "NYSE:VALE",
+        "nombre": "Vale (VALE)",
+        "yahooSymbol": "VALE",
+        "fuente": "Yahoo Finance (VALE)",
+        "fechaUltimaVela": "2026-07-24",
+        "precio": 14.79,
+        "cierreAnterior": 14.83,
+        "variacionDiaPct": -0.3,
+        "variacionSemanaPct": 4.2,
+        "variacionMesPct": -0.3,
+        "variacionAnioPct": 42.2,
+        "rangoDiaReal": {
+          "minimo": 14.72,
+          "maximo": 14.9
+        },
+        "rsi14": 49.3,
+        "lecturaRsi": "neutral",
+        "media50": 15.39,
+        "media200": 14.71,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.3845,
+        "maximo52sem": 17.94,
+        "minimo52sem": 9.36,
+        "distanciaAMaximo52semPct": -17.6,
+        "distanciaAMinimo52semPct": 58,
+        "soportes": [
+          14.78,
+          14.63,
+          14.01
+        ],
+        "resistencias": [
+          15.3,
+          16.36,
+          16.76
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "NYSE:PBR",
+        "nombre": "Petrobras (PBR)",
+        "yahooSymbol": "PBR",
+        "fuente": "Yahoo Finance (PBR)",
+        "fechaUltimaVela": "2026-07-24",
+        "precio": 18.77,
+        "cierreAnterior": 19,
+        "variacionDiaPct": -1.2,
+        "variacionSemanaPct": 4.5,
+        "variacionMesPct": 14.1,
+        "variacionAnioPct": 48.4,
+        "rangoDiaReal": {
+          "minimo": 18.71,
+          "maximo": 19.14
+        },
+        "rsi14": 63.2,
+        "lecturaRsi": "neutral",
+        "media50": 18.02,
+        "media200": 16.09,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4501,
+        "maximo52sem": 22.24,
+        "minimo52sem": 11.43,
+        "distanciaAMaximo52semPct": -15.6,
+        "distanciaAMinimo52semPct": 64.2,
+        "soportes": [
+          18.53,
+          17.63,
+          17.44
+        ],
+        "resistencias": [
+          19.2,
+          20.28,
+          20.71
+        ],
+        "patronUltimaVela": "estrella fugaz (mecha superior larga: rechazo de precios altos)"
+      },
+      {
+        "symbol": "NYSE:MELI",
+        "nombre": "MercadoLibre (MELI)",
+        "yahooSymbol": "MELI",
+        "fuente": "Yahoo Finance (MELI)",
+        "fechaUltimaVela": "2026-07-24",
+        "precio": 1801.44,
+        "cierreAnterior": 1798.7,
+        "variacionDiaPct": 0.2,
+        "variacionSemanaPct": -0.7,
+        "variacionMesPct": 8.5,
+        "variacionAnioPct": -24.8,
+        "rangoDiaReal": {
+          "minimo": 1797.28,
+          "maximo": 1839.78
+        },
+        "rsi14": 55.1,
+        "lecturaRsi": "neutral",
+        "media50": 1699.02,
+        "media200": 1900.68,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 55.09,
+        "maximo52sem": 2548.5,
+        "minimo52sem": 1495,
+        "distanciaAMaximo52semPct": -29.3,
+        "distanciaAMinimo52semPct": 20.5,
+        "soportes": [
+          1738,
+          1657.22,
+          1631.18
+        ],
+        "resistencias": [
+          1810.62,
+          1843.91,
+          1890
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      }
+    ],
+    "marketData": {
+      "symbol": "NASDAQ:AAPL",
+      "nombre": "Apple (AAPL)",
+      "yahooSymbol": "AAPL",
+      "fuente": "Yahoo Finance (AAPL)",
+      "fechaUltimaVela": "2026-07-24",
+      "precio": 333.02,
+      "cierreAnterior": 321.66,
+      "variacionDiaPct": 3.5,
+      "variacionSemanaPct": -0.2,
+      "variacionMesPct": 13.6,
+      "variacionAnioPct": 55.5,
+      "rangoDiaReal": {
+        "minimo": 321.62,
+        "maximo": 334.37
+      },
+      "rsi14": 65.2,
+      "lecturaRsi": "neutral",
+      "media50": 306.23,
+      "media200": 275.98,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 8.2629,
+      "maximo52sem": 334.99,
+      "minimo52sem": 201.5,
+      "distanciaAMaximo52semPct": -0.6,
+      "distanciaAMinimo52semPct": 65.3,
+      "soportes": [
+        305.02,
+        287.38,
+        273.75
+      ],
+      "resistencias": [
+        334.99
+      ],
+      "patronUltimaVela": "vela alcista de cuerpo amplio"
+    }
   }
 ]
