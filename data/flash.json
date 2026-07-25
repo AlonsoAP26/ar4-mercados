@@ -1,7 +1,142 @@
 {
- "lastId": 33531,
- "actualizado": "2026-07-25T17:01:58.316Z",
+ "lastId": 33533,
+ "actualizado": "2026-07-25T18:08:48.410Z",
  "items": [
+  {
+   "id": "33533",
+   "fecha": "2026-07-25T18:05:57+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33533",
+   "via": "DeItaone",
+   "original": "DEEPSEEK PAUSES FUNDRAISING Chinese AI startup DeepSeek has reportedly paused its second fundraising round, informing prospective investors that no investment agreements will be signed for now, according to Bloomberg. The company may restart the process later. Reuters previously reported DeepSeek was also exploring a potential IPO on Shanghai’s STAR Market.",
+   "titulo": "DeepSeek pausa segunda ronda de financiación; IPO en Shanghai sigue en exploración",
+   "resumen": "Startup china DeepSeek pausó su segunda ronda de financiación, informando a inversores potenciales que no firmará acuerdos de inversión por ahora, según Bloomberg. El proceso podría reiniciarse posteriormente. Reuters reportó previamente que DeepSeek también explora potencial IPO en mercado STAR de Shanghai. Señal de incertidumbre regulatoria o valoración.",
+   "analisis": {
+    "porque": "Evidencia de presión regulatoria/geopolítica sobre startups chinas de IA o ajustes de valoración. Afecta narrativa de competencia IA (vs OpenAI/Anthropic occidentales). Impacta valuaciones de Nvidia, semiconductores y fondos focused en China tech.",
+    "queOcurrio": "DeepSeek pausó fundraising round 2. Informó a posibles inversores que no habrá acuerdos por ahora. Anteriormente exploraba IPO en STAR Market de Shanghai.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Sector Tecnología",
+    "Semiconductores",
+    "China ADRs",
+    "Nvidia"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "China Tech ADRs",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "DeepSeek",
+    "IA",
+    "China",
+    "fundraising",
+    "IPO",
+    "Shanghai",
+    "regulación"
+   ],
+   "tgText": "DeepSeek (startup IA china) pausa ronda 2 de financiación. IPO en Shanghai aún en exploración. Señal de incertidumbre regulatoria o presión de valuaciones en ecosistema IA chino.",
+   "xText": "DeepSeek pausa fundraising pero mantiene exploración de IPO en Shanghai. Movimiento sugiere presión regulatoria o ajustes en valuaciones de IA chinas vs competencia global.",
+   "discordText": "**EMPRESAS - IA/TECNOLOGÍA**\n• DeepSeek pausa segunda ronda de financiación\n• IPO en Shanghai (STAR Market) aún bajo exploración\n• Sin acuerdos de inversión firmados por ahora\n• Posible reinicio posterior\n• Fuente: Bloomberg",
+   "pushText": "DeepSeek pausa fundraising; IPO Shanghai sigue en evaluación",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "China ADRs (especialmente tech) pueden caer levemente por señal de incertidumbre regulatoria. Semiconductor stocks se mantienen neutrales (no es supply shock).",
+    "despues": "Fondos de IA global pueden ajustar exposición a competidores chinos. Valuaciones de OpenAI/Anthropic occidentales podrían beneficiarse relativamente.",
+    "escenarios": "Traders vigilarán: (1) anuncio oficial de DeepSeek sobre reinicio de fundraising, (2) comentarios reguladores chinos sobre startups IA, (3) progreso hacia IPO Shanghai, (4) impacto en competitive landscape IA.",
+    "riesgos": "Titular no especifica razón exacta de pausa (regulatoria vs valuación). DeepSeek es privada, falta transparencia. Posible reversión rápida si condiciones cambian."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33532",
+   "fecha": "2026-07-25T17:33:24+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33532",
+   "via": "DeItaone",
+   "original": "TRUMP HALTS PLANNED IRAN STRIKES Trump reportedly ordered the U.S. military not to carry out planned strikes on Iran on Friday, despite having previously approved attack plans, according to Axios. The decision came hours after Oman-mediated talks resumed over reopening the Strait of Hormuz, with reports suggesting negotiations have made progress.",
+   "titulo": "Trump detiene ataques planeados contra Irán; negociaciones sobre Estrecho de Hormuz avanzan",
+   "resumen": "Trump ordenó al ejército estadounidense cancelar ataques planeados contra Irán el viernes, según Axios. La decisión llega horas después de que se reanudaron negociaciones mediadas por Omán para reapertura del Estrecho de Hormuz, con reportes sugiriendo progreso en las conversaciones. Eliminados riesgos de escalada inmediata.",
+   "analisis": {
+    "porque": "Reduce volatilidad geopolítica en una de las rutas comerciales más críticas globales. Afecta directamente precios de petróleo, seguros de envío y percepciones de riesgo de mercado. Señala posible apertura diplomática tras meses de tensión.",
+    "queOcurrio": "Tras haber aprobado previamente planes de ataque, Trump ordenó su cancelación. Coincide con avances en negociaciones sobre reapertura del Estrecho de Hormuz mediadas por Omán.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Axios"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Energía",
+    "Mercados Emergentes",
+    "EUR/USD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Trump",
+    "Estrecho de Hormuz",
+    "petróleo",
+    "negociaciones",
+    "geopolítica"
+   ],
+   "tgText": "🚨 TRUMP CANCELA ATAQUES A IRÁN: Ejército ordenado detener operaciones planeadas. Negociaciones sobre Hormuz avanzan con mediación de Omán. Petróleo y oro caen por alivio geopolítico.",
+   "xText": "ACTUALIZACIÓN: Trump cancela ataques a Irán tras avances en negociaciones sobre Hormuz. Reducción de riesgo geopolítico impulsa caída de petróleo y oro. Mercados respiran.",
+   "discordText": "**GEOPOLÍTICA - ACTUALIZACIÓN**\n• Trump cancela ataques planeados a Irán\n• Negociaciones sobre Hormuz muestran progreso\n• Alivio en mercados de riesgo: petróleo y oro caen\n• Fuente: Axios",
+   "pushText": "Trump cancela ataques a Irán; negociaciones avanzan",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent cae por reducción inmediata de riesgo de suministro. Oro disminuye al retirarse demanda de refugio seguro.",
+    "despues": "Rendimientos de Tesoros bajan (menor prima de riesgo). Dólar débil. Mercados emergentes (especialmente Latinoamérica) podrían apreciarse al mejorar ambiente de riesgo.",
+    "escenarios": "Traders vigilarán: (1) continuidad de negociaciones Omán-USA-Irán, (2) si se reactivan ataques o escalada, (3) comunicados de Irán rechazando términos, (4) impacto en flujos de petróleo.",
+    "riesgos": "Este es UPDATE de noticia previa. Riesgo: Trump cambia de decisión, Irán rechaza negociaciones, nueva escalada con mínimo aviso. Fuente Axios (no oficial militar)."
+   },
+   "macro": {
+    "dolar": "bajista a corto plazo por alivio geopolítico",
+    "oro": "bajista por salida de refugio seguro",
+    "petroleo": "bajista por reducción de prima de riesgo",
+    "bonos": "alcista (rendimientos bajan)",
+    "sp500": "alcista (menos incertidumbre)"
+   },
+   "updates": []
+  },
   {
    "id": "33531",
    "fecha": "2026-07-25T16:55:25+00:00",
