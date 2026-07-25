@@ -2665,6 +2665,25 @@ a { color: inherit; text-decoration: none; }
 }
 a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi); }
 .activity-row:last-child { border-bottom: none; }
+/* Refinado del pulso de Comunidad: la actividad vive en una tarjeta dorada
+   (mismo lenguaje que el Flash de la portada) y los chips de tendencias son
+   píldoras cómodas al dedo con su contador destacado. */
+.activity-card {
+  border: 1px solid rgba(212,175,55,0.24);
+  border-radius: 14px;
+  background: linear-gradient(165deg, rgba(212,175,55,0.05), rgba(17,26,46,0.5));
+  padding: 6px 10px;
+}
+.activity-card .activity-row { border-radius: 8px; transition: background 0.15s ease, transform 0.15s ease; }
+.activity-card a.activity-row:hover { transform: translateX(3px); }
+.trend-chip { min-height: 40px; border-radius: 999px; }
+.trend-chip span {
+  background: rgba(212,175,55,0.12);
+  color: var(--gold-bright);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+}
 .activity-avatar { width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0; font-size: 0.66rem; display: flex; align-items: center; justify-content: center; }
 .activity-text { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .activity-time { margin-left: auto; color: var(--text-low); font-size: 0.74rem; font-family: var(--mono); flex-shrink: 0; }
@@ -4449,6 +4468,7 @@ textarea.jrn-in { min-height: 84px; resize: vertical; line-height: 1.5; }
 /* Impresión del diploma */
 @media print {
   .no-print, .site-header, .site-footer, .ticker-bar, #chatbotWidget, .chat-greeting { display:none !important; }
+  body::before, body::after { display:none !important; }
   body { background:#0a0f1c !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
   .section { padding:0 !important; }
   .container { max-width:100% !important; padding:0 !important; }
@@ -4838,11 +4858,11 @@ body.has-buy-bar { padding-bottom: 74px; }
   .sug-chip { min-height:44px; flex-grow:1; text-align:center; }
 }
 
-/* ===== Atmósfera dorada de la portada (velas + resplandores en toda la página) ===== */
+/* ===== Atmósfera dorada de TODO el sitio (velas + resplandores) ===== */
 /* body sin fondo propio en html: su degradado pasa al lienzo y estos
    pseudo-elementos con z-index -1 quedan ENTRE el fondo y el contenido.
    Todo decorativo: sin datos reales, cero peso de red, clics intactos. */
-.home-atmo::before {
+body::before {
   content:''; position:fixed; inset:0; z-index:-1; pointer-events:none;
   background:
     radial-gradient(ellipse 640px 420px at 18% 8%, rgba(212,175,55,0.075), transparent 60%),
@@ -4851,7 +4871,7 @@ body.has-buy-bar { padding-bottom: 74px; }
     radial-gradient(ellipse 560px 400px at 90% 96%, rgba(212,175,55,0.065), transparent 62%);
   animation: atmoRespira 16s ease-in-out infinite;
 }
-.home-atmo::after {
+body::after {
   content:''; position:fixed; left:0; right:0; bottom:0; height:150px; z-index:-1; pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 150'%3E%3Cg stroke='%23d4af37' fill='%23d4af37'%3E%3Cpolyline points='20,100 55,88 90,82 125,64 160,74 195,50 230,66 265,40 300,58 335,30 370,48 405,24' fill='none' stroke-width='1.5' opacity='.22'/%3E%3Cline x1='20' y1='100' x2='20' y2='146' stroke-width='2' opacity='.16'/%3E%3Crect x='14' y='112' width='12' height='26' rx='2' opacity='.2'/%3E%3Cline x1='55' y1='88' x2='55' y2='140' stroke-width='2' opacity='.2'/%3E%3Crect x='49' y='100' width='12' height='30' rx='2' opacity='.26'/%3E%3Cline x1='90' y1='82' x2='90' y2='132' stroke-width='2' opacity='.14'/%3E%3Crect x='84' y='104' width='12' height='4' rx='1.5' opacity='.18'/%3E%3Cline x1='125' y1='64' x2='125' y2='126' stroke-width='2' opacity='.24'/%3E%3Crect x='119' y='78' width='12' height='36' rx='2' opacity='.3'/%3E%3Cline x1='160' y1='74' x2='160' y2='130' stroke-width='2' opacity='.18'/%3E%3Crect x='154' y='88' width='12' height='28' rx='2' opacity='.22'/%3E%3Cline x1='195' y1='50' x2='195' y2='118' stroke-width='2' opacity='.26'/%3E%3Crect x='189' y='62' width='12' height='40' rx='2' opacity='.32'/%3E%3Cline x1='230' y1='66' x2='230' y2='124' stroke-width='2' opacity='.2'/%3E%3Crect x='224' y='80' width='12' height='28' rx='2' opacity='.24'/%3E%3Cline x1='265' y1='40' x2='265' y2='112' stroke-width='2' opacity='.28'/%3E%3Crect x='259' y='54' width='12' height='42' rx='2' opacity='.34'/%3E%3Cline x1='300' y1='58' x2='300' y2='120' stroke-width='2' opacity='.22'/%3E%3Crect x='294' y='72' width='12' height='30' rx='2' opacity='.26'/%3E%3Cline x1='335' y1='30' x2='335' y2='104' stroke-width='2' opacity='.3'/%3E%3Crect x='329' y='44' width='12' height='44' rx='2' opacity='.36'/%3E%3Cline x1='370' y1='48' x2='370' y2='114' stroke-width='2' opacity='.24'/%3E%3Crect x='364' y='62' width='12' height='32' rx='2' opacity='.28'/%3E%3Cline x1='405' y1='24' x2='405' y2='96' stroke-width='2' opacity='.32'/%3E%3Crect x='399' y='36' width='12' height='46' rx='2' opacity='.38'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat:repeat-x; background-size:420px 150px; background-position:bottom left;
@@ -4878,10 +4898,10 @@ body.has-buy-bar { padding-bottom: 74px; }
   .anim-scroll .section, .anim-scroll .risk-strip { opacity: 1; transform: none; transition: none; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .home-atmo::before { animation: none; }
+  body::before { animation: none; }
 }
 @media (max-width: 640px) {
-  .home-atmo::after { height:110px; background-size:320px 110px; opacity:0.26; }
+  body::after { height:110px; background-size:320px 110px; opacity:0.26; }
 }
 
 /* ===== Flash en la portada (variante refinada; Noticias mantiene la suya) ===== */

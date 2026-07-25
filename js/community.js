@@ -1222,9 +1222,7 @@
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.fire} Tendencias</h2></div>
       <div id="pulseTrending" class="trending-bar"><p class="footer-text">Cargando tendencias...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.bolt} Actividad reciente</h2></div>
-      <div id="pulseActivity"><p class="footer-text">Cargando actividad...</p></div>
-      <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;" class="sec-h">${ICON.trophy} Top analistas de la semana</h2></div>
-      <div id="pulseTopAnalysts"><p class="footer-text">Cargando ranking...</p></div>
+      <div id="pulseActivity" class="activity-card"><p class="footer-text">Cargando actividad...</p></div>
     `;
   }
 
@@ -1327,7 +1325,8 @@
     const tradersEl = document.getElementById('pulseTradersCount');
     const trendingEl = document.getElementById('pulseTrending');
     const activityEl = document.getElementById('pulseActivity');
-    const topEl = document.getElementById('pulseTopAnalysts');
+    // El "Top analistas" salió de este panel: el ranking ya vive en la barra
+    // lateral y estaba repetido dos veces en la misma pantalla.
     const featuredEl = document.getElementById('pulseFeaturedTraders');
     const newsEl = document.getElementById('pulseNewsIdeas');
 
@@ -1345,15 +1344,6 @@
     if (featuredEl) await loadFeaturedTraders(featuredEl);
     if (trendingEl) await loadTrending(trendingEl);
     if (activityEl) await loadActivityFeed(activityEl);
-    if (topEl) {
-      try {
-        const data = await callFunctionGETPublic('community-leaderboard');
-        const source = (data.weekly && data.weekly.length) ? data.weekly.map((p) => ({ ...p, points: p.weeklyPoints })) : data.allTime;
-        topEl.innerHTML = leaderboardListHTML((source || []).slice(0, 5));
-      } catch (e) {
-        topEl.innerHTML = '<p class="footer-text">Todavía no hay datos suficientes.</p>';
-      }
-    }
   }
 
   function guestResumenPanelHTML() {
