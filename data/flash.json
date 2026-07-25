@@ -1,7 +1,207 @@
 {
  "lastId": 33530,
- "actualizado": "2026-07-25T10:02:14.968Z",
+ "actualizado": "2026-07-25T11:35:48.527Z",
  "items": [
+  {
+   "id": "955428267",
+   "fecha": "2026-07-25T10:22:58.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/saudi-military-strikes-iran-backed-houthi-targets-yemen.html",
+   "via": "CNBC",
+   "original": "Saudi military strikes Houthi targets in Yemen after the Iran-backed militia attacked Red Sea shipping",
+   "titulo": "Arabia Saudita intensifica ataques a objetivos Houthi tras nuevo asalto al Mar Rojo",
+   "resumen": "Fuerzas militares sauditas bombardearon blancos Houthí en Yemen en respuesta a ataque de la milicia respaldada por Irán a buques mercantes en el Mar Rojo. La noticia confirma escalada en ciclo de represalias en Estrecho de Hormuz/Mar Rojo, zona crítica para 12% del comercio global y 21% del petróleo mundial.",
+   "analisis": {
+    "porque": "Reanudación de ataques en corredor de envíos crítico impacta seguros marítimos, costos logísticos, primas de riesgo geopolítico y precios de petróleo. Cada escalada eleva probabilidad de interrupción de suministro energético.",
+    "queOcurrio": "Militares sauditas bombardearon objetivos Houthí en Yemen luego de que la milicia atacara nuevamente barcos mercantes en Mar Rojo. Continúa ciclo de represalias iniciado meses atrás.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "Oro",
+    "DXY",
+    "Bonos USA",
+    "Seguros Marítimos",
+    "Fletes"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Houthis",
+    "Arabia Saudita",
+    "Mar Rojo",
+    "Irán",
+    "petróleo",
+    "envíos marítimos",
+    "riesgo geopolítico"
+   ],
+   "tgText": "⚠️ Arabia Saudita intensifica bombardeos a Houthis tras nuevo ataque al Mar Rojo. Escalada geopolítica reaviva riesgo de interrupción energética y presión en fletes/seguros.",
+   "xText": "Arabia Saudita bombardea objetivos Houthí tras nuevo asalto a buques en Mar Rojo. Escalada geopolítica aviva riesgo de interrupción energética en corredor crítico para 12% comercio global.",
+   "discordText": "**Geopolítica | Energía**\n• Arabia Saudita ataca objetivos Houthí en Yemen\n• Respuesta a asalto a mercantes en Mar Rojo\n• Escalada en ciclo de represalias\n• Impacto en seguros, fletes y precios energéticos",
+   "pushText": "Arabia Saudita intensifica ataques a Houthis; riesgo en Mar Rojo y energía",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo WTI y Brent: reacción inmediata alcista por prima de riesgo geopolítico; oro y VIX también suben (flight-to-safety).",
+    "despues": "DXY (demanda de havens seguros), bonos USA (yields bajan si mercado ve presión en crecimiento), índices de energía (XLE), acciones de transporte marítimo.",
+    "escenarios": "Traders vigilarán: (1) si ataques Houthis escalan a infraestructura saudita o tanqueros; (2) postura de USA/Iran; (3) cierre del Estrecho de Hormuz (riesgo <5% pero impacto catastrófico); (4) costos de seguros marítimos (ya elevados); (5) respuesta de mercados chinos (importador neto).",
+    "riesgos": "Titular no especifica magnitud de ataques ni daños; escenario de cierre total del Estrecho es bajo pero impacto sería devastador; geopolítica es impredecible (war risk no-cuantificable)."
+   },
+   "macro": {
+    "petroleo": "alcista",
+    "oro": "alcista",
+    "dolar": "alcista",
+    "bonos": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "981928825",
+   "fecha": "2026-07-25T10:10:01.000Z",
+   "tgUrl": "https://www.cnbc.com/select/tariffs-gas-prices-are-straining-budgets/",
+   "via": "CNBC",
+   "original": "Tariffs and gas prices are intensifying the affordability crunch. These 3 products can help",
+   "titulo": "Aranceles y gasolina agravan crisis de asequibilidad; soluciones en 3 categorías de productos",
+   "resumen": "CNBC reporta sobre el impacto acumulativo de aranceles y precios de combustible en el poder adquisitivo del consumidor estadounidense. El titular señala que existen productos alternativos que podrían aliviar presión en presupuestos domésticos, aunque no especifica cuáles son las 3 categorías ni magnitudes de impacto de aranceles.",
+   "analisis": {
+    "porque": "Refleja transmisión de shocks de política comercial (aranceles) e inflación energética a gasto de consumidor; impacta proyecciones de consumo, inflación PCE y ciclo de consumo que alimenta 70% del PIB estadounidense.",
+    "queOcurrio": "Análisis de CNBC sobre erosión de asequibilidad por aranceles vigentes y volatilidad de gasolina; propone soluciones de consumo en 3 categorías de productos (específicas no detalladas en titular).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "Russell 2000",
+    "DXY",
+    "Petróleo",
+    "Consumo Discreto",
+    "Consumo Básico"
+   ],
+   "sesgos": [
+    {
+     "activo": "Consumo Discreto",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutro"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Inflación",
+   "keywords": [
+    "aranceles",
+    "gasolina",
+    "asequibilidad",
+    "inflación",
+    "consumidor",
+    "política comercial"
+   ],
+   "tgText": "📊 Aranceles + gasolina cara erosionan poder de compra en USA. CNBC destaca productos sustitutos en 3 categorías que podrían aliviar presión en presupuestos del consumidor.",
+   "xText": "Inflación energética + aranceles intensifican crisis de asequibilidad en USA. CNBC identifica soluciones de consumo en 3 categorías de productos para aliviar presión en presupuestos.",
+   "discordText": "**Asequibilidad | Inflación USA**\n• Aranceles + gasolina presionan presupuestos domésticos\n• Impacto acumulativo en poder adquisitivo\n• Análisis de productos sustitutos en 3 categorías\n• Relevancia para outlook de consumo Q3-Q4 2026",
+   "pushText": "Aranceles y gasolina erosionan asequibilidad en USA; CNBC propone soluciones de consumo",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Índices de consumo discreto (XLY) y Russell 2000: sensibles a reducción de gasto discrecional en estratos medios-bajos.",
+    "despues": "S&P 500 (composición de retailers), ETFs de consumo, mercado de bonos (presión si consumo se debilita = Fed tiene margen para bajar tasas).",
+    "escenarios": "Traders vigilarán: (1) datos de ventas minoristas próximas semanas; (2) si aranceles escalan más (Trump policy risk); (3) precio WTI/gasolina; (4) impacto en guidance de retailers y CPGs.",
+    "riesgos": "Titular carece de especificidad en 3 categorías y magnitudes; es análisis editorial sin datos numéricos; riesgo de que substituciones sean limitadas si inflación es generalizada."
+   },
+   "macro": {
+    "sp500": "bajista",
+    "dolar": "alcista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "904654446",
+   "fecha": "2026-07-25T08:49:00.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html",
+   "via": "CNBC",
+   "original": "Nvidia locks down memory supply from SK Hynix as part of $500 billion AI deal",
+   "titulo": "Nvidia asegura suministro de memoria de SK Hynix en acuerdo de IA por $500.000M",
+   "resumen": "Nvidia ha cerrado un acuerdo de suministro a largo plazo con SK Hynix para asegurar memoria de alta gama como parte de una operación valorada en $500 mil millones enfocada en infraestructura de IA. El titular no especifica términos exactos ni duración del contrato, pero subraya el posicionamiento estratégico de Nvidia en la cadena de suministro de semiconductores para datos centers.",
+   "analisis": {
+    "porque": "Asegura continuidad en la cadena de suministro crítica para el principal fabricante de GPUs; impacta directamente en márgenes, capacidad de entrega y posición competitiva de Nvidia ante presión de demanda de IA.",
+    "queOcurrio": "Nvidia anunció acuerdo de suministro preferente con SK Hynix (proveedor surcoreano de memoria) como parte de estrategia de $500 mil millones en infraestructura de IA.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "NVDA",
+    "SK Hynix ADR",
+    "Semiconductores",
+    "Índice Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Nvidia",
+    "SK Hynix",
+    "semiconductores",
+    "suministro",
+    "IA",
+    "GPUs"
+   ],
+   "tgText": "📱 Nvidia asegura suministro crítico de memoria SK Hynix en acuerdo de $500B de IA. Movimiento estratégico para consolidar cadena de suministro y márgenes en datos centers.",
+   "xText": "NVIDIA asegura suministro de memoria SK Hynix en megaacuerdo de $500B para infraestructura IA. Movimiento estratégico clave para consolidad cadena de suministro en era de data centers.",
+   "discordText": "**NVIDIA | Semiconductores**\n• Acuerdo de suministro a largo plazo con SK Hynix\n• Operación valorada en $500 mil millones\n• Enfoque en infraestructura de IA y data centers\n• Asegura continuidad crítica en cadena de suministro",
+   "pushText": "Nvidia asegura suministro estratégico de SK Hynix en acuerdo de $500B de IA",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "NVDA (precio directo) y NASDAQ (composición Tech): reacción inmediata positiva por certeza de suministro y confirmación de demanda de IA sostenida.",
+    "despues": "AMD (competidor en GPUs), Broadcom (distribuidor), índices de semiconductores (SOX), bonos corporativos de Nvidia (menor riesgo de interrupción).",
+    "escenarios": "Traders vigilarán: (1) si afecta guidance de márgenes de Nvidia; (2) implicaciones para competidores de suministro; (3) confirmación de ciclo de capex en IA más prolongado; (4) geopolítica Corea del Sur-USA.",
+    "riesgos": "Falta transparencia en términos de precios/volúmenes; potencial impacto arancelario futuro si escalala tensión USA-Asia; acuerdo podría ser anuncio de relaciones públicas sin cambios operacionales sustanciales."
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "dolar": "neutral",
+    "bonos": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": 938770543,
    "fecha": "2026-07-25T05:29:38.000Z",
@@ -3709,6 +3909,10 @@
   "https://www.cnbc.com/2026/07/24/odds-that-the-straits-traffic-returns-to-normal-drop-on-kalshi.html",
   "https://www.cnbc.com/2026/07/24/treasury-yields-bonds-us-debt.html",
   "https://www.cnbc.com/2026/07/25/finland-sand-battery-renewable-energy-storage.html",
-  "https://www.cnbc.com/2026/07/25/trump-mixes-jokes-with-barbs-at-white-house-correspondents-dinner.html"
+  "https://www.cnbc.com/2026/07/25/trump-mixes-jokes-with-barbs-at-white-house-correspondents-dinner.html",
+  "https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html",
+  "https://www.cnbc.com/select/tariffs-gas-prices-are-straining-budgets/",
+  "https://www.cnbc.com/2026/07/25/saudi-military-strikes-iran-backed-houthi-targets-yemen.html",
+  "https://www.cnbc.com/2026/07/24/lebron-james-76ers-philadelphia-24th-nba-season.html"
  ]
 }
