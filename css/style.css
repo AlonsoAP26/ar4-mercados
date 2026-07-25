@@ -2699,6 +2699,8 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   border:1px solid rgba(212,175,55,0.5); border-radius:18px; padding:32px 26px 24px;
   box-shadow:0 30px 80px rgba(0,0,0,0.7), 0 0 70px rgba(212,175,55,0.16);
   transform:translateY(16px) scale(0.97); transition:transform 0.3s ease;
+  /* Seguro para pantallas bajas (celulares chicos, apaisado): nunca se corta */
+  max-height:92vh; overflow-y:auto;
 }
 .sorteo-overlay.visible .sorteo-card { transform:none; }
 .sorteo-x {
@@ -4948,6 +4950,11 @@ body::after {
 }
 @media (max-width: 640px) {
   body::after { height:110px; background-size:320px 110px; opacity:0.26; }
+}
+/* En el celular y en la app instalada, la barra de navegación inferior tapaba
+   las velas: se elevan justo por encima de ella. */
+@media (max-width: 768px) {
+  body.has-app-bar::after { bottom: calc(56px + env(safe-area-inset-bottom, 0px)); }
 }
 
 /* ===== Flash en la portada (variante refinada; Noticias mantiene la suya) ===== */
