@@ -1,7 +1,72 @@
 {
- "lastId": 33535,
- "actualizado": "2026-07-25T19:35:55.202Z",
+ "lastId": 33537,
+ "actualizado": "2026-07-25T21:37:58.319Z",
  "items": [
+  {
+   "id": "33536",
+   "fecha": "2026-07-25T20:50:38+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33536",
+   "via": "DeItaone",
+   "original": "CHRISTOPHER STREET DAY IN BERLIN CALLED OFF AFTER CAR CRASHED INTO CROWD AT BERLIN TIERGARTEN, SAYS BILD NEWSPAPER",
+   "titulo": "Incidente en Berlín: automóvil impacta multitud durante marcha; evento cancelado",
+   "resumen": "Un automóvil se estrelló contra una multitud durante el Christopher Street Day en Berlín-Tiergarten, según reporta el diario Bild. El evento fue cancelado como consecuencia. La policía de Berlín confirmó varios heridos en el incidente, aunque no especifica cifras ni causas del atropellamiento.",
+   "analisis": {
+    "porque": "Incidentes de seguridad pública en capitales europeas afectan sentimiento de riesgo geopolítico y estabilidad, con potencial impacto en bonos alemanes y spreads de deuda eurozona si se confirma intencionalidad.",
+    "queOcurrio": "Un vehículo colisionó con asistentes a desfile del Christopher Street Day en Berlín. El evento fue cancelado tras el suceso.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bild, Policía de Berlín vía X"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "EURUSD",
+    "Bonos alemanes",
+    "DAX",
+    "STOXX 600"
+   ],
+   "sesgos": [
+    {
+     "activo": "EURUSD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos alemanes",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Emergencia",
+   "keywords": [
+    "berlín",
+    "seguridad",
+    "alemania",
+    "europa",
+    "incidente"
+   ],
+   "tgText": "🚨 Automóvil impacta multitud en marcha de Berlín; evento cancelado. Policía confirma heridos. Causa pendiente de esclarecer. Vigilar reacción de DAX y spreads de deuda alemana.",
+   "xText": "BREAKING: Vehículo se estrella contra multitud en Christopher Street Day de Berlín. Evento cancelado, varios heridos reportados. Policía investiga. Vigilar sentimiento de riesgo en Europa.",
+   "discordText": "**INCIDENTE EN BERLÍN**\n• Automóvil impacta asistentes a marcha en Tiergarten\n• Evento cancelado\n• Policía confirma heridos\n• Impacto potencial en DAX y bonos alemanes",
+   "pushText": "Automóvil impacta multitud en Berlín; evento cancelado",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos alemanes (Bund) tendrán demanda defensiva si se interpreta como riesgo sistémico; EUR/USD bajo presión por aversión al riesgo en zona eurozona.",
+    "despues": "DAX y otros índices europeos sufrirán ventas técnicas; posible fortalecimiento del franco suizo y busca de activos seguros.",
+    "escenarios": "Traders vigilarán: (1) si el incidente tiene móvil terrorista/intencional vs accidental, (2) cobertura de seguros y responsabilidad civil en empresas alemanas, (3) reacción política y medidas de seguridad que podrían afectar apertura de mercados.",
+    "riesgos": "Titular basado en reportajes iniciales (Bild); cifra de heridos y causa aún no verificadas. Posible escalada narrativa si se confirma intencionalidad."
+   },
+   "macro": {
+    "dolar": "fortalecimiento por flight-to-safety",
+    "oro": "alcista (demanda defensiva)",
+    "nasdaq": "neutral a bajista (contagio emocional limitado)",
+    "dow": "neutral a bajista",
+    "sp500": "neutral",
+    "bitcoin": "volátil, depende contexto geopolítico mayor",
+    "ethereum": "neutral",
+    "bonos": "alcistas (Bunds especialmente)",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": "33535",
    "fecha": "2026-07-25T18:44:35+00:00",
