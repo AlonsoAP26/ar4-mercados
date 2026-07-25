@@ -1,7 +1,73 @@
 {
  "lastId": 33530,
- "actualizado": "2026-07-25T05:47:20.884Z",
+ "actualizado": "2026-07-25T08:10:31.410Z",
  "items": [
+  {
+   "id": 938770543,
+   "fecha": "2026-07-25T05:29:38.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/finland-sand-battery-renewable-energy-storage.html",
+   "via": "CNBC",
+   "original": "Finland’s radical answer to renewable energy’s biggest headache: The world’s largest sand battery",
+   "titulo": "Finlandia desarrolla la batería de arena más grande del mundo para energías renovables",
+   "resumen": "Finlandia presenta una solución innovadora a uno de los principales desafíos de la energía renovable: el almacenamiento de energía térmica mediante baterías de arena. El sistema, descrito como el más grande del mundo, busca resolver la intermitencia de fuentes renovables. El titular no especifica capacidad, inversión ni cronograma de implementación comercial.",
+   "analisis": {
+    "porque": "Afecta el sector de energías limpias y tecnologías de almacenamiento, relevante para inversores en transición energética, utilities y fondos ESG. Podría impactar en competencia de tecnologías de almacenamiento alternativas (baterías de ión-litio, hidrógeno).",
+    "queOcurrio": "Finlandia desarrolla una batería de arena de gran escala como respuesta a limitaciones de almacenamiento en sistemas de energía renovable.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Índices Energéticos",
+    "Acciones Renovables",
+    "Utilities Europeas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Sector Energías Limpias",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Baterías de Litio",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "energía-renovable",
+    "almacenamiento-energía",
+    "batería-arena",
+    "transición-energética",
+    "Finlandia",
+    "innovación"
+   ],
+   "tgText": "🔋 Finlandia desarrolla la batería de arena más grande del mundo como solución de almacenamiento para energías renovables, abordando uno de los principales desafíos técnicos del sector.",
+   "xText": "🔋 Finlandia desarrolla batería de arena de escala mundial para resolver almacenamiento en energías renovables. Innovación que puede redefinir competencia en tecnologías de almacenamiento.",
+   "discordText": "**Finlandia: Batería de Arena Gigante**\n• Primera de su escala mundial\n• Soluciona intermitencia de renovables\n• Impacto en tecnologías de almacenamiento alternativas\n• Relevante para sector ESG y transición energética",
+   "pushText": "Finlandia lanza batería de arena más grande del mundo para energías renovables",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de empresas de energías renovables y startups de almacenamiento (ICLN, TAN, Clean Energy ETFs) por redefinición de viabilidad tecnológica.",
+    "despues": "Fabricantes de baterías de litio y empresas de hidrógeno podrían reaccionar si la tecnología demuestra escala comercial competitiva.",
+    "escenarios": "Traders monitorean: (1) Capacidad técnica real vs. marketing, (2) Costos de implementación vs. alternativas, (3) Plazos para viabilidad comercial, (4) Impacto en demanda de litio y cobalto.",
+    "riesgos": "El titular carece de detalles técnicos, económicos y de viabilidad. Podría ser iniciativa piloto sin impacto comercial inmediato. Riesgo de sobrehype en sector renovable."
+   },
+   "macro": {
+    "dolar": "neutral",
+    "oro": "neutral",
+    "nasdaq": "levemente alcista (sector limpio)",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "neutral",
+    "petroleo": "neutro a bajista (largo plazo)"
+   },
+   "updates": []
+  },
   {
    "id": "913627514",
    "fecha": "2026-07-25T02:17:11.000Z",
@@ -3641,6 +3707,7 @@
   "https://www.cnbc.com/2026/07/24/1-hyperscaler-megacap-down-3-to-go-alphabet-raises-the-stakes-on-ai-spending.html",
   "https://www.cnbc.com/2026/07/24/cyclospora-cdc-says-outbreak-is-in-nine-states.html",
   "https://www.cnbc.com/2026/07/24/odds-that-the-straits-traffic-returns-to-normal-drop-on-kalshi.html",
-  "https://www.cnbc.com/2026/07/24/treasury-yields-bonds-us-debt.html"
+  "https://www.cnbc.com/2026/07/24/treasury-yields-bonds-us-debt.html",
+  "https://www.cnbc.com/2026/07/25/finland-sand-battery-renewable-energy-storage.html"
  ]
 }
