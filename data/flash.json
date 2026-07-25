@@ -1,7 +1,360 @@
 {
  "lastId": 33530,
- "actualizado": "2026-07-25T11:35:48.527Z",
+ "actualizado": "2026-07-25T14:39:21.488Z",
  "items": [
+  {
+   "id": 957596397,
+   "fecha": "2026-07-25T14:03:03.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
+   "via": "CNBC",
+   "original": "From Silicon Valley to DC, the tech world is suddenly obsessed with one concept in AI: Distillation",
+   "titulo": "Tech obsesionado con 'distilación' de IA: de Silicon Valley a Washington, un concepto domina",
+   "resumen": "Concepto de 'distilación' en IA emerge como obsesión en industria tecnológica y círculos políticos. La distilación permite comprimir modelos grandes de IA en versiones más pequeñas y eficientes. Movimiento estratégico para reducir costos de computación y democratizar acceso a IA.",
+   "analisis": {
+    "porque": "Distilación de IA reduce costos operativos de modelos; afecta competencia en edge computing, dispositivos móviles y presupuestos de CAPEX de gigantes tech.",
+    "queOcurrio": "Industria tech y autoridades de USA se enfocan en 'distilación' como estrategia clave de IA más eficiente y accesible.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NVIDIA",
+    "TSMC",
+    "Semiconductores",
+    "Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVIDIA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Tech",
+     "sesgo": "neutral-alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "distilacion-ia",
+    "nvidia",
+    "semiconductores",
+    "eficiencia",
+    "edge-computing"
+   ],
+   "tgText": "Distilación de IA: Tech obsesionada con comprimir modelos para eficiencia. De Silicon Valley a DC, un concepto domina. Impacto en costos computacionales.",
+   "xText": "🤖 Distilación IA obsesiona Tech: modelos comprimidos = costos bajos. Silicon Valley + Washington unidos en estrategia.",
+   "discordText": "**Distilación de IA: concepto dominante**\n• Compresión de modelos grandes en versiones eficientes\n• Impacto en CAPEX de semiconductores\n• Interés político y empresarial coinciden",
+   "pushText": "Tech obsesionada con 'distilación' de IA para eficiencia y costos",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NVIDIA y semiconductores ajustan expectativas de demanda de GPU; márgenes en duda.",
+    "despues": "Edge computing y dispositivos móviles cobran relevancia; competencia en chips especializados.",
+    "escenarios": "Traders vigilarán: (1) CAPEX guidance de Nvidia/AMD; (2) competencia de distilación vs. large models; (3) márgenes de procesadores.",
+    "riesgos": "Distilación podría reducir demanda de GPUs costosas; narrativa de Nvidia se tambalea; presión en valuaciones de semiconductores."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 930454285,
+   "fecha": "2026-07-25T13:48:05.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/blackstone-brookfield-and-kkr-sign-16-billion-oil-deal-with-kuwait.html",
+   "via": "CNBC",
+   "original": "Blackstone, Brookfield and KKR sign $16 billion deal with Kuwait for oil pipeline network",
+   "titulo": "Blackstone, Brookfield y KKR sellan acuerdo de $16 mil millones con Kuwait para red de oleoductos",
+   "resumen": "Tres gigantes de capital privado (Blackstone, Brookfield y KKR) anuncian inversión de $16 mil millones en consorcio con Kuwait para infraestructura de oleoductos. Operación marca movimiento estratégico en energía y activos de infraestructura de largo plazo, con implicaciones para flujos de PE en petróleo y gas.",
+   "analisis": {
+    "porque": "Acuerdo PE de $16B en infraestructura energética señala confianza en demanda de hidrocarburos; impacta valuaciones de gigantes PE y compite por capital en sector.",
+    "queOcurrio": "Blackstone, Brookfield y KKR se asocian con Kuwait en inversión de $16 mil millones para red de oleoductos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Blackstone (BX)",
+    "KKR",
+    "Brookfield",
+    "Petróleo",
+    "Energía"
+   ],
+   "sesgos": [
+    {
+     "activo": "Blackstone",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "KKR",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Brookfield",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "blackstone",
+    "kkr",
+    "brookfield",
+    "kuwait",
+    "oleoductos",
+    "infraestructura",
+    "capital-privado"
+   ],
+   "tgText": "Blackstone, KKR y Brookfield pactan $16B con Kuwait para red de oleoductos. Mega-acuerdo PE en infraestructura energética. Señal de confianza en demanda de hidrocarburo.",
+   "xText": "🔌 $16B: Blackstone, KKR, Brookfield + Kuwait en oleoductos. Gigantes PE apuestan por infraestructura energética a largo plazo.",
+   "discordText": "**$16 mil millones en infraestructura energética**\n• Blackstone, KKR, Brookfield se unen\n• Inversión en red de oleoductos con Kuwait\n• Señal alcista para demanda de petróleo y gas",
+   "pushText": "$16B: Blackstone, KKR, Brookfield pactan mega-acuerdo de oleoductos con Kuwait",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Blackstone (BX) y KKR reaccionan alcistas; acciones de capital privado y gestoras suben.",
+    "despues": "Energía y petróleo reboten; índices amplios si se interpreta como confianza en demanda; bonos de corporativos energéticos.",
+    "escenarios": "Traders monitorean: (1) rotación capital hacia PE; (2) implicaciones geopolíticas Kuwait-Oriente Próximo; (3) flujos de energía verde vs. fósiles.",
+    "riesgos": "Acuerdo mega-PE puede señalar preocupación por drop en demanda futura; ambigüedad sobre timing de retorno; riesgos geopolíticos en Golfo Pérsico."
+   },
+   "macro": {
+    "dolar": null,
+    "oro": null,
+    "nasdaq": "neutral",
+    "dow": "alcista",
+    "sp500": "neutral-alcista",
+    "bitcoin": null,
+    "ethereum": null,
+    "bonos": null,
+    "petroleo": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 944363486,
+   "fecha": "2026-07-25T13:30:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/crypto-diversified-investment-portfolio.html",
+   "via": "CNBC",
+   "original": "Does crypto make your portfolio less risky? Only if you do it right, experts say",
+   "titulo": "¿Criptomonedas reducen riesgo de portafolio? Solo si se hace bien, advierten expertos",
+   "resumen": "Análisis de expertos evalúa rol de criptoactivos en diversificación de carteras. Conclusión: beneficios de reducción de riesgo solo se materializan con estrategia correcta de asignación y gestión. El titular no detalla qué constituye la estrategia 'correcta'.",
+   "analisis": {
+    "porque": "Perspectiva experta sobre criptos en portafolios afecta decisiones de asignación institucional y retail; relevancia para gestores y traders.",
+    "queOcurrio": "Expertos analizan relación entre criptomonedas y diversificación; advierten que beneficios dependen de ejecución correcta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Bitcoin",
+    "Ethereum",
+    "Criptomonedas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Ethereum",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "criptomonedas",
+    "bitcoin",
+    "portafolio",
+    "diversificacion",
+    "riesgo"
+   ],
+   "tgText": "Expertos: criptos reducen riesgo de portafolio solo con estrategia correcta. Advertencia sobre asignación inadecuada. Bitcoin y Ethereum sensibles a estructura.",
+   "xText": "🪙 ¿Criptos = portafolio menos riesgoso? Solo si se hace bien, dicen expertos. Diversificación correcta es clave.",
+   "discordText": "**Criptomonedas y diversificación de portafolio**\n• Beneficios de reducción de riesgo dependen de estrategia\n• Advertencia de expertos sobre asignación\n• Bitcoin/Ethereum sensibles a estructura correcta",
+   "pushText": "Criptos reducen riesgo de portafolio solo con estrategia correcta",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Bitcoin y Ethereum reaccionan a percepciones de demanda institucional; volúmenes de futuros.",
+    "despues": "Fondos indexados cripto; altcoins; índices amplios si se interpreta como integración cripto en asignación.",
+    "escenarios": "Traders vigilarán: (1) flujos institucionales hacia criptos; (2) correlaciones BTC/SPX; (3) volatilidad implícita en opciones cripto.",
+    "riesgos": "Análisis de 'estrategia correcta' es vago; riesgo de sobrevaloración cripto en contexto de tasas altas; volatilidad extrema cripto invalida beneficios de diversificación."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 955484134,
+   "fecha": "2026-07-25T12:49:58.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/amazon-other-stocks-with-momentum-heading-into-earnings.html",
+   "via": "CNBC",
+   "original": "These stocks have momentum on their side heading into earnings, including Amazon",
+   "titulo": "Acciones con momentum encabezan carrera hacia earnings; Amazon en la mira",
+   "resumen": "Análisis de mercado identifica un conjunto de acciones que exhiben momentum técnico favorable de cara a la temporada de resultados corporativos, con Amazon como actor principal. El movimiento sugiere posicionamiento de traders anticipando reacciones post-earnings.",
+   "analisis": {
+    "porque": "Momentum previa a earnings cataliza flujos especulativos; Amazon afecta índices amplios y comanda sector tecnológico.",
+    "queOcurrio": "Identificación de acciones con momentum técnico positivo encabezando carrera hacia temporada de earnings.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Amazon"
+   ],
+   "sesgos": [
+    {
+     "activo": "Amazon",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "momentum",
+    "earnings",
+    "amazon",
+    "técnico"
+   ],
+   "tgText": "Acciones con momentum fuerte encabezan la carrera hacia earnings. Amazon lidera. Analistas ven oportunidad en movimientos técnicos previos a resultados.",
+   "xText": "Momentum alcista domina antes de earnings. Amazon protagonista. Traders posicionados para volatilidad post-resultados.",
+   "discordText": "**Momentum técnico fuerte pre-earnings**\n• Amazon lidera movimiento\n• Flujos especulativos anticipan reacciones\n• Volúmenes elevados esperados en temporada de resultados",
+   "pushText": "Acciones con momentum dominan antes de earnings; Amazon encabeza",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Amazon y tech NASDAQ reaccionan a momentum técnico; volúmenes de opciones amplificadores.",
+    "despues": "S&P500 amplío; sector de consumo si Amazon lidera; índices de volatilidad (VIX) comprimidos.",
+    "escenarios": "Traders monitorean rotaciones de flujos; niveles técnicos de soporte/resistencia; gamma exposure en opciones de Amazon.",
+    "riesgos": "Momentum puede revertirse bruscamente; earnings decepcionantes desinflan posiciones; correcciones técnicas frecuentes en pre-earnings."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 988736880,
+   "fecha": "2026-07-25T12:47:39.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/stocks-to-buy-before-its-too-late.html",
+   "via": "CNBC",
+   "original": "Morgan Stanley says buy these stocks ahead of their earnings, before it&apos;s too late",
+   "titulo": "Morgan Stanley recomienda compra de acciones antes de earnings; Amazon lidera momentum",
+   "resumen": "Morgan Stanley identifica un grupo de acciones con momentum favorable de cara a la temporada de resultados, incluyendo Amazon. El análisis sugiere oportunidades de compra antes de que los mercados reaccionen completamente a los earnings. El titular no especifica qué otras acciones están en el radar.",
+   "analisis": {
+    "porque": "Recomendaciones de grandes casas de bolsa pueden catalizar movimientos de capital institucional previos a earnings; Amazon es megacap con impacto en índices amplios.",
+    "queOcurrio": "Morgan Stanley publica análisis recomendando compra de acciones con momentum hacia temporada de earnings.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Amazon"
+   ],
+   "sesgos": [
+    {
+     "activo": "Amazon",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings",
+    "morgan-stanley",
+    "amazon",
+    "recomendacion-compra"
+   ],
+   "tgText": "Morgan Stanley recomienda compra de acciones con momentum antes de earnings. Amazon lidera la lista. Analistas ven oportunidades previas a resultados corporativos.",
+   "xText": "Morgan Stanley: compren estas acciones antes de earnings. Amazon en el radar. Momentum alcista en megacaps antes de temporada de resultados.",
+   "discordText": "**Morgan Stanley recomienda acciones con momentum**\n• Análisis previo a temporada de earnings\n• Amazon lidera la recomendación\n• Oportunidad de compra antes de reacciones de mercado",
+   "pushText": "Morgan Stanley: compren acciones con momentum antes de earnings",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Amazon (AMZN) y sector tecnología NASDAQ reaccionan a recomendación de compra de casa de bolsa de primer nivel.",
+    "despues": "S&P500 amplió y otros megacaps en cartera de Morgan Stanley; sector de consumo discrecional si Amazon liderase movilización de flujos.",
+    "escenarios": "Traders vigilarán entrada institucional pre-earnings; volúmenes en opciones de Amazon; cobertura de otros analistas replicando recomendación.",
+    "riesgos": "Recomendación es prospectiva; earnings podrían ser decepcionantes; competencia de recomendaciones cruzadas de otras casas."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 909178076,
+   "fecha": "2026-07-25T12:00:02.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/ups-fedex-dhl-healthare-logistics-glp.html",
+   "via": "CNBC",
+   "original": "Logistics giants are racing to keep up with healthcare boom as GLP-1s highlight need for cold storage",
+   "titulo": "Gigantes logística aceleran capacidad de almacenamiento refrigerado por boom de drogas GLP-1",
+   "resumen": "Empresas logísticas invierten en infraestructura de cadena de frío para respaldar demanda explosiva de medicamentos GLP-1 (semaglutida, tirzepatida). El boom de medicinas para pérdida de peso crea cuello de botella en almacenamiento y distribución refrigerada, forzando inversiones de capital en infraestructura.",
+   "analisis": {
+    "porque": "Inversión logística masiva en frío señala confianza en demanda sostenida GLP-1; afecta márgenes de operadores logísticos y compitencia por infraestructura.",
+    "queOcurrio": "Gigantes logísticos invierten en capacidad de almacenamiento refrigerado para soportar demanda de medicinas GLP-1.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Logística",
+    "Salud",
+    "FedEx",
+    "UPS",
+    "XPO",
+    "Pharma"
+   ],
+   "sesgos": [
+    {
+     "activo": "Operadores logísticos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Sector pharma GLP-1",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "glp-1",
+    "logistica",
+    "cadena-frio",
+    "semaglutida",
+    "tirzepatida",
+    "infraestructura"
+   ],
+   "tgText": "Logística acelera almacenes refrigerados para GLP-1. Boom de drogas de pérdida de peso fuerza inversión de capital. Oportunidad para operadores.",
+   "xText": "📦❄️ Boom GLP-1: gigantes logísticos invierten en cadena de frío. Demanda de medicinas para pérdida de peso dispara capex.",
+   "discordText": "**Logística invierte en almacenamiento refrigerado**\n• Demanda explosiva de GLP-1 (semaglutida, tirzepatida)\n• Cuello de botella en cadena de frío\n• Oportunidad de capex para operadores",
+   "pushText": "Logística acelera inversión en frío por boom de drogas GLP-1",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Operadores logísticos (FedEx, UPS, XPO) reaccionan alcistas; márgenes esperados mejorar.",
+    "despues": "Pharma GLP-1 (Novo Nordisk, Eli Lilly) reboten; índices amplios si capex logístico señala demanda resiliente.",
+    "escenarios": "Traders vigilarán: (1) CAPEX guidance de logística; (2) márgenes de distribución pharma; (3) competencia por almacenamiento refrigerado.",
+    "riesgos": "Boom GLP-1 puede desacelerarse; sobreinversión en frío; competencia destructiva de precios; regulación de medicinas GLP-1."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "955428267",
    "fecha": "2026-07-25T10:22:58.000Z",
@@ -3913,6 +4266,16 @@
   "https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html",
   "https://www.cnbc.com/select/tariffs-gas-prices-are-straining-budgets/",
   "https://www.cnbc.com/2026/07/25/saudi-military-strikes-iran-backed-houthi-targets-yemen.html",
-  "https://www.cnbc.com/2026/07/24/lebron-james-76ers-philadelphia-24th-nba-season.html"
+  "https://www.cnbc.com/2026/07/24/lebron-james-76ers-philadelphia-24th-nba-season.html",
+  "https://www.cnbc.com/2026/07/25/ups-fedex-dhl-healthare-logistics-glp.html",
+  "https://www.cnbc.com/2026/07/25/buffett-favors-an-estate-tax-but-like-virtually-all-billionaires-he-wont-be-paying-it.html",
+  "https://www.cnbc.com/2026/07/25/the-odyssey-imax-70mm-screenings.html",
+  "https://www.cnbc.com/2026/07/25/stocks-to-buy-before-its-too-late.html",
+  "https://www.cnbc.com/2026/07/25/amazon-other-stocks-with-momentum-heading-into-earnings.html",
+  "https://www.cnbc.com/2026/07/25/maine-democrats-are-meeting-to-pick-a-new-senate-nominee.html",
+  "https://www.cnbc.com/2026/07/25/crypto-diversified-investment-portfolio.html",
+  "https://www.cnbc.com/2026/07/25/blackstone-brookfield-and-kkr-sign-16-billion-oil-deal-with-kuwait.html",
+  "https://www.cnbc.com/2026/07/25/how-this-70-year-old-honey-bee-farmer-is-keeping-his-family-farm-alive.html",
+  "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html"
  ]
 }
