@@ -93,7 +93,10 @@ async function fetchRssRespaldo(vistos) {
         if (vistos.has(url)) continue;
         const texto = decodeEntities(t[1].replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
         if (texto.length < 12) continue;
-        candidatos.push({ id: 'r' + hashUrl(url), fecha: fecha.toISOString(), texto, url, via: 'CNBC' });
+        // Id numérico en un rango reservado (>900M, lejos de los ~33 mil de
+        // Telegram): la IA copia números sin alterarlos; con ids tipo "r123"
+        // los devolvía cambiados y todo se descartaba en silencio.
+        candidatos.push({ id: 900000000 + (hashUrl(url) % 100000000), fecha: fecha.toISOString(), texto, url, via: 'CNBC' });
       }
     } catch (e) { console.warn('Feed de respaldo falló (no fatal):', e.message); }
   }
@@ -143,7 +146,7 @@ REGLAS INNEGOCIABLES (marca editorial de AR4):
 
 Responde EXCLUSIVAMENTE un JSON válido (sin markdown) con esta forma:
 {"items":[{
-  "id": <id numérico del titular>,
+  "id": <el id EXACTO del titular tal como aparece entre corchetes, copiado sin alterar ni un dígito>,
   "updateOf": <id de noticia existente si es actualización, o null>,
   "titulo": "titular periodístico atractivo y honesto, máx 110 caracteres",
   "resumen": "máx 120 palabras",
@@ -269,13 +272,13 @@ async function main() {
     }
   }
 
-  // Claves como texto: los ids del respaldo RSS no son numéricos ("r123...").
   const byId = {}; nuevos.forEach((p) => { byId[String(p.id)] = p; });
-  let publicadas = 0, actualizadas = 0;
+  let publicadas = 0, actualizadas = 0, descartadasPorId = 0;
+  console.log('La IA devolvió ' + ((out.items || []).length) + ' item(s).');
   const paraRedes = [];
   for (const item of (out.items || []).slice(0, MAX_NEW_PER_RUN)) {
     const src = byId[String(item.id)];
-    if (!src) continue;
+    if (!src) { descartadasPorId++; console.warn('Item con id desconocido (la IA lo alteró): ' + JSON.stringify(item.id) + ' — ' + String(item.titulo || '').slice(0, 60)); continue; }
     const urlOrigen = src.url || ('https://t.me/' + CHANNEL + '/' + item.id);
     if (item.updateOf) {
       const existente = store.items.find((x) => x.id === item.updateOf);
@@ -319,6 +322,9 @@ async function main() {
   store.actualizado = new Date().toISOString();
   fs.writeFileSync(DATA_PATH, JSON.stringify(store, null, 1));
   console.log('Flash: ' + publicadas + ' nueva(s), ' + actualizadas + ' actualizada(s). lastId=' + store.lastId);
+  if (descartadasPorId > 0) {
+    console.log('::warning title=Agente Flash::' + descartadasPorId + ' item(s) descartados porque la IA altero el id.');
+  }
 
   for (const item of paraRedes) { await postTelegram(item); await postDiscord(item); }
   await avisarPorPush(paraRedes);
