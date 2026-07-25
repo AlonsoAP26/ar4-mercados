@@ -2687,16 +2687,17 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 /* ===== Sorteo del 25 de octubre: modal de entrada ===== */
 .sorteo-overlay {
   position:fixed; inset:0; z-index:9600;
-  background:rgba(4,6,12,0.72); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px);
+  background:rgba(3,5,10,0.85); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
   display:flex; align-items:center; justify-content:center; padding:20px;
   opacity:0; transition:opacity 0.3s ease;
 }
 .sorteo-overlay.visible { opacity:1; }
 .sorteo-card {
   position:relative; max-width:430px; width:100%; text-align:center;
-  background:linear-gradient(165deg, rgba(212,175,55,0.13), rgba(17,26,46,0.97));
+  /* Tinte dorado sobre base OPACA: antes la pagina se transparentaba detras */
+  background:linear-gradient(165deg, rgba(212,175,55,0.12), rgba(212,175,55,0) 55%), #0d1424;
   border:1px solid rgba(212,175,55,0.5); border-radius:18px; padding:32px 26px 24px;
-  box-shadow:0 30px 80px rgba(0,0,0,0.6), 0 0 70px rgba(212,175,55,0.16);
+  box-shadow:0 30px 80px rgba(0,0,0,0.7), 0 0 70px rgba(212,175,55,0.16);
   transform:translateY(16px) scale(0.97); transition:transform 0.3s ease;
 }
 .sorteo-overlay.visible .sorteo-card { transform:none; }
