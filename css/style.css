@@ -310,6 +310,19 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
+/* Hero centrado de la portada: sin el recuadro de cotizaciones (el ticker de
+   arriba ya da los precios en vivo), el mensaje ocupa el escenario completo. */
+.hero-centrado { padding: 76px 0 56px; text-align: center; }
+.hero-centrado .hero-text { max-width: 800px; margin: 0 auto; }
+.hero-centrado .hero-text h1 { font-size: clamp(2.1rem, 4.6vw, 3.25rem); }
+.hero-centrado .hero-text p { max-width: 640px; margin-left: auto; margin-right: auto; }
+.hero-centrado .hero-actions { justify-content: center; }
+.hero-centrado .hero-actions .btn { min-width: 220px; }
+@media (max-width: 640px) {
+  .hero-centrado { padding: 48px 0 36px; }
+  .hero-centrado .hero-actions .btn { min-width: 0; flex: 1 1 100%; }
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
