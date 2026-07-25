@@ -312,7 +312,14 @@ a { color: inherit; text-decoration: none; }
 
 /* Hero centrado de la portada: sin el recuadro de cotizaciones (el ticker de
    arriba ya da los precios en vivo), el mensaje ocupa el escenario completo. */
-.hero-centrado { padding: 76px 0 56px; text-align: center; }
+.hero-centrado { padding: 76px 0 56px; text-align: center; position: relative; overflow: hidden; }
+.hero-centrado::before {
+  content:''; position:absolute; top:-180px; left:50%; transform:translateX(-50%);
+  width:720px; height:480px;
+  background:radial-gradient(ellipse, rgba(212,175,55,0.14) 0%, rgba(212,175,55,0) 62%);
+  pointer-events:none;
+}
+.hero-centrado .container { position:relative; z-index:1; }
 .hero-centrado .hero-text { max-width: 800px; margin: 0 auto; }
 .hero-centrado .hero-text h1 { font-size: clamp(2.1rem, 4.6vw, 3.25rem); }
 .hero-centrado .hero-text p { max-width: 640px; margin-left: auto; margin-right: auto; }
@@ -4824,8 +4831,43 @@ body.has-buy-bar { padding-bottom: 74px; }
 }
 
 /* ===== Flash en la portada (variante refinada; Noticias mantiene la suya) ===== */
+/* Ambientacion de marca: velas japonesas doradas decorativas (SVG propio,
+   sin datos reales — es arte, no un grafico) + resplandor dorado sutil.
+   Cero peso de red: todo es CSS y un data-URI. */
+.home-flash { position:relative; overflow:hidden; }
+.home-flash::before {
+  content:''; position:absolute; top:-120px; right:-80px; width:520px; height:520px;
+  background:radial-gradient(circle, rgba(212,175,55,0.13) 0%, rgba(212,175,55,0) 65%);
+  pointer-events:none;
+}
+.home-flash::after {
+  content:''; position:absolute; left:0; right:0; bottom:-6px; height:110px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 110'%3E%3Cg stroke='%23d4af37' fill='%23d4af37'%3E%3Cline x1='20' y1='18' x2='20' y2='100' stroke-width='2' opacity='.25'/%3E%3Crect x='14' y='34' width='12' height='38' rx='2' opacity='.3'/%3E%3Cline x1='60' y1='30' x2='60' y2='104' stroke-width='2' opacity='.2'/%3E%3Crect x='54' y='48' width='12' height='30' rx='2' opacity='.24'/%3E%3Cline x1='100' y1='8' x2='100' y2='96' stroke-width='2' opacity='.3'/%3E%3Crect x='94' y='22' width='12' height='48' rx='2' opacity='.36'/%3E%3Cline x1='140' y1='36' x2='140' y2='102' stroke-width='2' opacity='.18'/%3E%3Crect x='134' y='52' width='12' height='26' rx='2' opacity='.22'/%3E%3Cline x1='180' y1='22' x2='180' y2='98' stroke-width='2' opacity='.26'/%3E%3Crect x='174' y='38' width='12' height='36' rx='2' opacity='.3'/%3E%3Cline x1='220' y1='40' x2='220' y2='106' stroke-width='2' opacity='.16'/%3E%3Crect x='214' y='56' width='12' height='24' rx='2' opacity='.2'/%3E%3Cline x1='260' y1='14' x2='260' y2='92' stroke-width='2' opacity='.28'/%3E%3Crect x='254' y='28' width='12' height='42' rx='2' opacity='.34'/%3E%3Cline x1='300' y1='32' x2='300' y2='100' stroke-width='2' opacity='.2'/%3E%3Crect x='294' y='48' width='12' height='28' rx='2' opacity='.24'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:repeat-x; background-size:320px 110px; background-position:bottom left;
+  opacity:0.5;
+  -webkit-mask-image:linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  mask-image:linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  pointer-events:none;
+}
+.home-flash .container { position:relative; z-index:1; }
 /* El encabezado interno del strip duplica el titulo de la seccion: fuera. */
 .home-flash .fl-strip-head { display:none; }
+
+/* El primer titular del strip es el protagonista: más grande, con acento
+   dorado — distinto al Flash completo de Noticias, que es analítico. Todo
+   este bloque es una puerta hacia noticias.html#flash. */
+.home-flash .fl-strip-item:first-child {
+  padding:18px 16px;
+  background:linear-gradient(90deg, rgba(212,175,55,0.09), rgba(212,175,55,0.02));
+  border-left:3px solid var(--gold);
+  border-radius:0 10px 10px 0;
+}
+.home-flash .fl-strip-item:first-child .fl-strip-title {
+  font-size:1.08rem; font-weight:700; color:var(--text-hi);
+}
+@media (max-width: 640px) {
+  .home-flash .fl-strip-item:first-child .fl-strip-title { font-size:0.99rem; }
+}
 .home-flash #flashStrip {
   border:1px solid rgba(212,175,55,0.28);
   border-radius:16px;
