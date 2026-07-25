@@ -171,3 +171,44 @@ document.addEventListener('change', (e) => {
       'Agente IA</span>';
   };
 })();
+
+// ===== Scroll animado de la portada (estilo XM) =====
+// Cada seccion entra con un deslizamiento suave al hacer scroll. Solo en la
+// portada (body.home-atmo). Tres redes de seguridad para que la pagina JAMAS
+// quede invisible: (1) sin IntersectionObserver no se activa nada, (2) lo que
+// ya esta en pantalla al cargar se muestra al instante sin esperar al
+// observador, y (3) si en 1.5s el observador no dio señales de vida (hay
+// entornos donde no dispara), se muestra todo de golpe.
+(function () {
+  if (!document.body.classList.contains('home-atmo')) return;
+  if (!('IntersectionObserver' in window)) return;
+  var objetivos = Array.prototype.slice.call(document.querySelectorAll('.section, .risk-strip'));
+  if (!objetivos.length) return;
+  document.body.classList.add('anim-scroll');
+  var ioVivo = false;
+
+  function mostrar(el) { el.classList.add('vis'); }
+
+  // Red 2: lo visible al cargar aparece de inmediato.
+  var altoVentana = window.innerHeight || 800;
+  objetivos.forEach(function (s) {
+    var r = s.getBoundingClientRect();
+    if (r.top < altoVentana - 40 && r.bottom > 0) mostrar(s);
+  });
+
+  var io = new IntersectionObserver(function (entradas) {
+    ioVivo = true;
+    entradas.forEach(function (e) {
+      if (e.isIntersecting) { mostrar(e.target); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  objetivos.forEach(function (s) { io.observe(s); });
+
+  // Red 3: si el observador nunca dispara, todo visible y sin animacion.
+  setTimeout(function () {
+    if (!ioVivo) {
+      objetivos.forEach(mostrar);
+      io.disconnect();
+    }
+  }, 1500);
+})();
