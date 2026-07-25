@@ -1,67 +1,80 @@
 {
- "lastId": 33533,
- "actualizado": "2026-07-25T18:08:48.410Z",
+ "lastId": 33535,
+ "actualizado": "2026-07-25T19:35:55.202Z",
  "items": [
   {
-   "id": "33533",
-   "fecha": "2026-07-25T18:05:57+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33533",
+   "id": "33535",
+   "fecha": "2026-07-25T18:44:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33535",
    "via": "DeItaone",
-   "original": "DEEPSEEK PAUSES FUNDRAISING Chinese AI startup DeepSeek has reportedly paused its second fundraising round, informing prospective investors that no investment agreements will be signed for now, according to Bloomberg. The company may restart the process later. Reuters previously reported DeepSeek was also exploring a potential IPO on Shanghai’s STAR Market.",
-   "titulo": "DeepSeek pausa segunda ronda de financiación; IPO en Shanghai sigue en exploración",
-   "resumen": "Startup china DeepSeek pausó su segunda ronda de financiación, informando a inversores potenciales que no firmará acuerdos de inversión por ahora, según Bloomberg. El proceso podría reiniciarse posteriormente. Reuters reportó previamente que DeepSeek también explora potencial IPO en mercado STAR de Shanghai. Señal de incertidumbre regulatoria o valoración.",
+   "original": "IRAN CLAIMS MAJOR U.S. AIRCRAFT LOSSES Iran’s IRGC claimed it destroyed 11 U.S. fighter jets and helicopters at regional military bases over the past 15 days. Tehran also said additional aircraft, including an F-15, P-8, C-17 and refuelling planes, were destroyed, and claimed U.S. fatalities exceeded 200. These claims have not been independently verified.",
+   "titulo": "Irán alega destrucción de 11 aviones estadounidenses; cifras no verificadas",
+   "resumen": "La Guardia Revolucionaria Islámica (IRGC) de Irán afirmó haber destruido 11 cazas y helicópteros estadounidenses en bases militares regionales durante los últimos 15 días, además de reclamar pérdidas de aviones F-15, P-8, C-17 y aeronaves de reabastecimiento, con supuestas bajas estadounidenses superiores a 200. No hay verificación independiente de estas alegaciones.",
    "analisis": {
-    "porque": "Evidencia de presión regulatoria/geopolítica sobre startups chinas de IA o ajustes de valoración. Afecta narrativa de competencia IA (vs OpenAI/Anthropic occidentales). Impacta valuaciones de Nvidia, semiconductores y fondos focused en China tech.",
-    "queOcurrio": "DeepSeek pausó fundraising round 2. Informó a posibles inversores que no habrá acuerdos por ahora. Anteriormente exploraba IPO en STAR Market de Shanghai.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
+    "porque": "Alimenta narrativa de escalada geopolítica que impacta precios de energía, divisas de riesgo y volatilidad en índices. Contrastan con reportes recientes de negociaciones USA-Irán en curso.",
+    "queOcurrio": "Irán publicó reclamaciones sobre destrucción de equipo militar estadounidense sin evidencia verificable.",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada"
    },
    "impacto": "medio",
    "breaking": false,
    "activos": [
-    "NASDAQ",
-    "Sector Tecnología",
-    "Semiconductores",
-    "China ADRs",
-    "Nvidia"
+    "Petróleo",
+    "DXY",
+    "S&P500",
+    "VIX",
+    "Oro"
    ],
    "sesgos": [
     {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
+     "activo": "Petróleo",
+     "sesgo": "alcista"
     },
     {
-     "activo": "Semiconductores",
-     "sesgo": "neutral"
+     "activo": "Oro",
+     "sesgo": "alcista"
     },
     {
-     "activo": "China Tech ADRs",
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
      "sesgo": "bajista"
     }
    ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
    "keywords": [
-    "DeepSeek",
-    "IA",
-    "China",
-    "fundraising",
-    "IPO",
-    "Shanghai",
-    "regulación"
+    "Irán",
+    "USA",
+    "Oriente Medio",
+    "Militar",
+    "Escalada",
+    "No-verificable"
    ],
-   "tgText": "DeepSeek (startup IA china) pausa ronda 2 de financiación. IPO en Shanghai aún en exploración. Señal de incertidumbre regulatoria o presión de valuaciones en ecosistema IA chino.",
-   "xText": "DeepSeek pausa fundraising pero mantiene exploración de IPO en Shanghai. Movimiento sugiere presión regulatoria o ajustes en valuaciones de IA chinas vs competencia global.",
-   "discordText": "**EMPRESAS - IA/TECNOLOGÍA**\n• DeepSeek pausa segunda ronda de financiación\n• IPO en Shanghai (STAR Market) aún bajo exploración\n• Sin acuerdos de inversión firmados por ahora\n• Posible reinicio posterior\n• Fuente: Bloomberg",
-   "pushText": "DeepSeek pausa fundraising; IPO Shanghai sigue en evaluación",
-   "importancia": 5,
+   "tgText": "⚠️ Irán reclama destrucción de 11 aviones USA en 15 días. Sin verificación independiente. Presiona petróleo al alza y tensa mercados globales. Contrasta con avances en negociaciones.",
+   "xText": "🇮🇷 IRGC alega destrucción de 11 cazas/helicópteros USA en bases regionales + bajas >200. Cifras no verificadas. Escalada teórica vs negociaciones recientes en curso.",
+   "discordText": "**Irán reclama pérdidas militares USA**\n• 11 aviones destruidos (15 días)\n• F-15, P-8, C-17 incluidos\n• Bajas >200 según IRGC\n• ⚠️ Sin verificación independiente\n• Presiona petróleo y volatilidad",
+   "pushText": "Irán alega destrucción de 11 aviones USA; sin verificación",
+   "importancia": 6,
    "reaccion": {
-    "primero": "China ADRs (especialmente tech) pueden caer levemente por señal de incertidumbre regulatoria. Semiconductor stocks se mantienen neutrales (no es supply shock).",
-    "despues": "Fondos de IA global pueden ajustar exposición a competidores chinos. Valuaciones de OpenAI/Anthropic occidentales podrían beneficiarse relativamente.",
-    "escenarios": "Traders vigilarán: (1) anuncio oficial de DeepSeek sobre reinicio de fundraising, (2) comentarios reguladores chinos sobre startups IA, (3) progreso hacia IPO Shanghai, (4) impacto en competitive landscape IA.",
-    "riesgos": "Titular no especifica razón exacta de pausa (regulatoria vs valuación). DeepSeek es privada, falta transparencia. Posible reversión rápida si condiciones cambian."
+    "primero": "Petróleo crudo (WTI/Brent) reacciona al alza por riesgo de interrupciones en Golfo; genera «flight-to-safety» en bonos USA.",
+    "despues": "DXY sube por demanda defensiva; oro sube; S&P500 presionado por riesgo geopolítico. Índices defensivos (utilities, consumo básico) rebalancean.",
+    "escenarios": "Traders monitorean: (1) escalada confirmada vs desinformación (2) respuesta militar USA (3) impacto en producción/envíos de crudo (4) reacción de mercados de energía europeos.",
+    "riesgos": "Riesgo alto de falsa alarma: Irán históricamente exagera. Depende de verificación de fuentes USA/aliados. Si se confirma, petróleo podría romper resistencias."
    },
-   "macro": null,
+   "macro": {
+    "dolar": "Alcista (flight-to-safety)",
+    "oro": "Alcista (cobertura geopolítica)",
+    "nasdaq": "Bajista (riesgo sistémico)",
+    "dow": "Bajista (riesgo sistémico)",
+    "sp500": "Bajista (riesgo sistémico)",
+    "bitcoin": "Volátil (correlación con riesgo)",
+    "ethereum": "Volátil (correlación con riesgo)",
+    "bonos": "Alcistas (flight-to-safety)",
+    "petroleo": "Alcista (escalada geopolítica)"
+   },
    "updates": []
   },
   {
@@ -135,6 +148,76 @@
     "bonos": "alcista (rendimientos bajan)",
     "sp500": "alcista (menos incertidumbre)"
    },
+   "updates": [
+    {
+     "fecha": "2026-07-25T18:21:27+00:00",
+     "id": "33534",
+     "texto": "Presidente ucraniano Volodimir Zelenskiy afirma que vigilancia satelital rusa facilita y coordina ataques de Irán en Oriente Medio, implicando cooperación directa Moscú-Teherán en operaciones conjuntas más allá del teatro ucraniano.",
+     "tgUrl": "https://t.me/walterbloomberg/33534"
+    }
+   ],
+   "actualizado": "2026-07-25T18:21:27+00:00"
+  },
+  {
+   "id": "33533",
+   "fecha": "2026-07-25T18:05:57+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33533",
+   "via": "DeItaone",
+   "original": "DEEPSEEK PAUSES FUNDRAISING Chinese AI startup DeepSeek has reportedly paused its second fundraising round, informing prospective investors that no investment agreements will be signed for now, according to Bloomberg. The company may restart the process later. Reuters previously reported DeepSeek was also exploring a potential IPO on Shanghai’s STAR Market.",
+   "titulo": "DeepSeek pausa segunda ronda de financiación; IPO en Shanghai sigue en exploración",
+   "resumen": "Startup china DeepSeek pausó su segunda ronda de financiación, informando a inversores potenciales que no firmará acuerdos de inversión por ahora, según Bloomberg. El proceso podría reiniciarse posteriormente. Reuters reportó previamente que DeepSeek también explora potencial IPO en mercado STAR de Shanghai. Señal de incertidumbre regulatoria o valoración.",
+   "analisis": {
+    "porque": "Evidencia de presión regulatoria/geopolítica sobre startups chinas de IA o ajustes de valoración. Afecta narrativa de competencia IA (vs OpenAI/Anthropic occidentales). Impacta valuaciones de Nvidia, semiconductores y fondos focused en China tech.",
+    "queOcurrio": "DeepSeek pausó fundraising round 2. Informó a posibles inversores que no habrá acuerdos por ahora. Anteriormente exploraba IPO en STAR Market de Shanghai.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Sector Tecnología",
+    "Semiconductores",
+    "China ADRs",
+    "Nvidia"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "China Tech ADRs",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "DeepSeek",
+    "IA",
+    "China",
+    "fundraising",
+    "IPO",
+    "Shanghai",
+    "regulación"
+   ],
+   "tgText": "DeepSeek (startup IA china) pausa ronda 2 de financiación. IPO en Shanghai aún en exploración. Señal de incertidumbre regulatoria o presión de valuaciones en ecosistema IA chino.",
+   "xText": "DeepSeek pausa fundraising pero mantiene exploración de IPO en Shanghai. Movimiento sugiere presión regulatoria o ajustes en valuaciones de IA chinas vs competencia global.",
+   "discordText": "**EMPRESAS - IA/TECNOLOGÍA**\n• DeepSeek pausa segunda ronda de financiación\n• IPO en Shanghai (STAR Market) aún bajo exploración\n• Sin acuerdos de inversión firmados por ahora\n• Posible reinicio posterior\n• Fuente: Bloomberg",
+   "pushText": "DeepSeek pausa fundraising; IPO Shanghai sigue en evaluación",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "China ADRs (especialmente tech) pueden caer levemente por señal de incertidumbre regulatoria. Semiconductor stocks se mantienen neutrales (no es supply shock).",
+    "despues": "Fondos de IA global pueden ajustar exposición a competidores chinos. Valuaciones de OpenAI/Anthropic occidentales podrían beneficiarse relativamente.",
+    "escenarios": "Traders vigilarán: (1) anuncio oficial de DeepSeek sobre reinicio de fundraising, (2) comentarios reguladores chinos sobre startups IA, (3) progreso hacia IPO Shanghai, (4) impacto en competitive landscape IA.",
+    "riesgos": "Titular no especifica razón exacta de pausa (regulatoria vs valuación). DeepSeek es privada, falta transparencia. Posible reversión rápida si condiciones cambian."
+   },
+   "macro": null,
    "updates": []
   },
   {
