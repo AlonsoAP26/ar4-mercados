@@ -16,7 +16,7 @@
 <meta name="description" content="AR4 Mercados nació para el trader latinoamericano: educación real, análisis honestos y una comunidad para crecer, sin vendedores de humo ni promesas irreales.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=60">
+<link rel="stylesheet" href="css/style.css?v=61">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AR4 Mercados">
@@ -334,12 +334,57 @@
   </div>
 </section>
 
+<!-- TU VOZ: ¿qué deberíamos implementar? -->
+<section class="section" id="sugerencias">
+  <div class="container">
+    <div class="sug-card reveal">
+      <div class="sug-intro">
+        <span class="eyebrow small">Tu voz construye AR4</span>
+        <h2>¿Qué deberíamos implementar?</h2>
+        <p>Esta plataforma se construye con la comunidad, no a sus espaldas. Cuéntanos qué te falta, qué mejorarías o qué idea tienes — <strong>lo leemos todo, y lo que más se pide, se construye.</strong></p>
+        <ul class="sug-promesas">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg> Toma menos de un minuto</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg> No necesitas cuenta ni correo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg> Las más pedidas entran al roadmap</li>
+        </ul>
+      </div>
+      <form class="sug-form" name="sugerencias" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="sugForm">
+        <input type="hidden" name="form-name" value="sugerencias">
+        <input type="hidden" name="area" id="sugArea" value="General">
+        <p style="display:none;"><label>No llenar si eres humano: <input name="bot-field"></label></p>
+        <label class="sug-label">¿Sobre qué área es tu idea?</label>
+        <div class="sug-chips" id="sugChips" role="radiogroup" aria-label="Área de la sugerencia">
+          <button type="button" class="sug-chip active" data-area="General">General</button>
+          <button type="button" class="sug-chip" data-area="Comunidad">Comunidad</button>
+          <button type="button" class="sug-chip" data-area="Educación">Educación</button>
+          <button type="button" class="sug-chip" data-area="Noticias y Flash">Noticias y Flash</button>
+          <button type="button" class="sug-chip" data-area="Herramientas">Herramientas</button>
+          <button type="button" class="sug-chip" data-area="Premium">Premium</button>
+          <button type="button" class="sug-chip" data-area="App móvil">App móvil</button>
+        </div>
+        <label class="sug-label" for="sugMensaje">Tu idea o mejora</label>
+        <textarea id="sugMensaje" name="mensaje" required rows="4" maxlength="1000" placeholder="Ejemplo: me gustaría poder seguir el precio del oro desde la portada..."></textarea>
+        <label class="sug-label" for="sugCorreo">Tu correo <span class="sug-opcional">(opcional — solo para avisarte cuando esté listo)</span></label>
+        <input type="email" id="sugCorreo" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email">
+        <button type="submit" class="btn btn-gold btn-block" id="sugEnviar">Enviar mi sugerencia →</button>
+        <p class="sug-nota">Sin spam y sin compartir tu correo con nadie. Solo lo usamos para contarte si tu idea se implementa.</p>
+      </form>
+      <div class="sug-gracias" id="sugGracias" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+        <h3>¡Recibida! Gracias por construir AR4 con nosotros.</h3>
+        <p>Leemos cada sugerencia. Las más pedidas entran al roadmap — y si dejaste tu correo, te avisaremos cuando la tuya esté lista.</p>
+        <button type="button" class="btn btn-outline" id="sugOtra">Enviar otra idea</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACTO (se mantiene) -->
 <section class="section section-alt">
   <div class="container">
     <div class="section-head reveal"><h2>Contáctanos</h2></div>
     <div style="max-width:560px;">
-      <p style="color:var(--text-mid);margin-bottom:20px;">¿Preguntas, sugerencias, o algo no funciona bien? Escríbenos y te respondemos lo antes posible.</p>
+      <p style="color:var(--text-mid);margin-bottom:20px;">¿Preguntas o algo no funciona bien? Escríbenos y te respondemos lo antes posible. (¿Ideas para mejorar AR4? Usa el formulario de arriba.)</p>
       <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
         <input type="hidden" name="form-name" value="contacto">
         <p class="hidden" style="display:none;"><label>No llenar si eres humano: <input name="bot-field"></label></p>
@@ -392,7 +437,7 @@
 
 <script src="js/main.js?v=7"></script>
 <script src="js/auth.js?v=12"></script>
-<script src="js/nosotros.js?v=3"></script>
+<script src="js/nosotros.js?v=4"></script>
 <script src="js/aria-avatar.js?v=1"></script>
 <script src="js/chatbot.js?v=11"></script>
 <script>

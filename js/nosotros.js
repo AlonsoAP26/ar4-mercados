@@ -178,4 +178,50 @@
   } else if (testEl) {
     renderTestimonialsEmpty();
   }
+
+  // ===== "¿Qué deberíamos implementar?" — sugerencias de la comunidad =====
+  // Mismo mecanismo que el formulario de contacto (Netlify Forms), pero
+  // enviado sin recargar la página para una experiencia más cuidada.
+  const sugForm = document.getElementById('sugForm');
+  if (sugForm) {
+    const chips = document.getElementById('sugChips');
+    const areaInput = document.getElementById('sugArea');
+    chips.addEventListener('click', (e) => {
+      const chip = e.target.closest('.sug-chip');
+      if (!chip) return;
+      areaInput.value = chip.dataset.area;
+      chips.querySelectorAll('.sug-chip').forEach((c) => c.classList.toggle('active', c === chip));
+    });
+
+    sugForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const boton = document.getElementById('sugEnviar');
+      boton.disabled = true;
+      boton.textContent = 'Enviando...';
+      try {
+        const datos = new URLSearchParams(new FormData(sugForm));
+        const res = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: datos.toString() });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        sugForm.hidden = true;
+        document.getElementById('sugGracias').hidden = false;
+      } catch (err) {
+        // Si el envío AJAX falla (sin conexión, etc.), el envío clásico de
+        // Netlify sigue funcionando como respaldo.
+        alert('No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.');
+      } finally {
+        boton.disabled = false;
+        boton.textContent = 'Enviar mi sugerencia →';
+      }
+    });
+
+    const otra = document.getElementById('sugOtra');
+    if (otra) {
+      otra.addEventListener('click', () => {
+        document.getElementById('sugGracias').hidden = true;
+        sugForm.hidden = false;
+        document.getElementById('sugMensaje').value = '';
+        document.getElementById('sugMensaje').focus();
+      });
+    }
+  }
 })();
