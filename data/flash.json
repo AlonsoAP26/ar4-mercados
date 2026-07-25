@@ -1,6 +1,6 @@
 {
  "lastId": 33530,
- "actualizado": "2026-07-24T14:28:16.527Z",
+ "actualizado": "2026-07-25T03:22:48.538Z",
  "items": [
   {
    "id": 33530,
@@ -2913,5 +2913,17 @@
    "macro": null,
    "updates": []
   }
+ ],
+ "rssVistos": [
+  "https://www.cnbc.com/2026/07/24/bond-market-anxiety-ai-capex-spending.html",
+  "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html",
+  "https://www.cnbc.com/2026/07/24/trump-doj-subpoenas-new-york-times-google.html",
+  "https://www.cnbc.com/2026/07/24/treasury-yields-fed-mortgage-rates.html",
+  "https://www.cnbc.com/2026/07/24/paramount-wbd-merger-delay.html",
+  "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html",
+  "https://www.cnbc.com/2026/07/24/tesla-tsla-spacex-spcx-stock-starship-test-flight-musk-bad-week.html",
+  "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html",
+  "https://www.cnbc.com/2026/07/24/trump-tariffs-lawsuit-301-ieepa.html",
+  "https://www.cnbc.com/2026/07/24/spacex-launches-massive-starship-rocket-in-first-test-flight-since-ipo.html"
  ]
 }
