@@ -313,3 +313,71 @@
     }, 3000);
   });
 })();
+
+// ===== Sorteo del 25 de octubre: promo de entrada =====
+// Modal llamativo para visitantes SIN cuenta: registrarse = entrar al sorteo
+// de 1 mes de Premium + 1 cuenta de fondeo. Con X para cerrarlo (no vuelve a
+// aparecer en 24 h) y se apaga solo despues de la fecha del sorteo.
+(function () {
+  var CLAVE = 'ar4_sorteo_visto';
+  var CLAVE_VECES = 'ar4_sorteo_veces';
+  var MAX_VECES = 5; // insistir con medida: 5 visitas y no más
+  var FIN = new Date('2026-10-26T00:00:00-05:00').getTime();
+  if (Date.now() > FIN) return;
+  try {
+    if (parseInt(localStorage.getItem(CLAVE_VECES) || '0', 10) >= MAX_VECES) return;
+    var visto = parseInt(localStorage.getItem(CLAVE) || '0', 10);
+    if (visto && (Date.now() - visto) < 86400000) return;
+  } catch (e) {}
+
+  function logueado() {
+    try { return !!(window.netlifyIdentity && window.netlifyIdentity.currentUser()); } catch (e) { return false; }
+  }
+
+  function abrirRegistro() {
+    try { if (window.netlifyIdentity) { window.netlifyIdentity.open('signup'); return; } } catch (e) {}
+    window.location.href = 'comunidad.html';
+  }
+
+  function mostrarSorteo() {
+    if (logueado()) return;
+    if (document.querySelector('.sorteo-overlay')) return;
+    var ov = document.createElement('div');
+    ov.className = 'sorteo-overlay';
+    ov.setAttribute('role', 'dialog');
+    ov.setAttribute('aria-modal', 'true');
+    ov.setAttribute('aria-label', 'Sorteo AR4 Mercados');
+    ov.innerHTML =
+      '<div class="sorteo-card">' +
+        '<button class="sorteo-x" aria-label="Cerrar">&times;</button>' +
+        '<span class="sorteo-ribbon">SORTEO &middot; 25 DE OCTUBRE</span>' +
+        '<h3>Reg&iacute;strate gratis y entra al sorteo</h3>' +
+        '<p class="sorteo-sub">Crear tu cuenta toma menos de un minuto y ya est&aacute;s participando.</p>' +
+        '<div class="sorteo-premios">' +
+          '<div class="sorteo-premio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/></svg>1 mes de AR4 Premium gratis</div>' +
+          '<div class="sorteo-premio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 3 3 7-8"/><path d="M14 4h4v4"/></svg>1 cuenta de fondeo</div>' +
+        '</div>' +
+        '<p class="sorteo-aplica">APLICA PARA TODOS LOS REGISTRADOS</p>' +
+        '<button class="btn btn-gold btn-block" id="sorteoCta">Crear mi cuenta gratis &rarr;</button>' +
+        '<p class="sorteo-nota">Sorteo entre todos los usuarios registrados de AR4 Mercados. El ganador se anunciar&aacute; el 25 de octubre de 2026 en la Comunidad.</p>' +
+      '</div>';
+    document.body.appendChild(ov);
+    requestAnimationFrame(function () { ov.classList.add('visible'); });
+    // Contar la aparición al mostrarse (no al cerrarse): recargar no la resetea.
+    try {
+      localStorage.setItem(CLAVE_VECES, String(parseInt(localStorage.getItem(CLAVE_VECES) || '0', 10) + 1));
+      localStorage.setItem(CLAVE, String(Date.now()));
+    } catch (e) {}
+
+    function cerrarSorteo() {
+      try { localStorage.setItem(CLAVE, String(Date.now())); } catch (e) {}
+      ov.classList.remove('visible');
+      setTimeout(function () { if (ov.parentNode) ov.parentNode.removeChild(ov); }, 320);
+    }
+    ov.querySelector('.sorteo-x').addEventListener('click', cerrarSorteo);
+    ov.addEventListener('click', function (e) { if (e.target === ov) cerrarSorteo(); });
+    document.getElementById('sorteoCta').addEventListener('click', function () { cerrarSorteo(); abrirRegistro(); });
+  }
+
+  window.addEventListener('load', function () { setTimeout(mostrarSorteo, 2500); });
+})();

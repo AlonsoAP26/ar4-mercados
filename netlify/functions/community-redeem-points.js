@@ -1,6 +1,6 @@
 const { supabaseRequest } = require('./_supabase');
 
-const REDEEM_COST = 500;
+const REDEEM_COST = 1000;
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };

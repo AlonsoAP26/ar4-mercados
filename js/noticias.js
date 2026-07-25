@@ -49,7 +49,7 @@ function tiempoRelativo(iso) {
 function newsCardHTML(n) {
   return `
     <article class="broker-card" data-category="${n.category}">
-      ${finHeroHTML(n.heroType, n.trend, 'size-mini')}
+      ${finHeroHTML(n.heroType, n.trend, 'size-mini', n.slug)}
       <span class="news-tag">${n.category}</span>
       <h3 style="margin-top:10px;"><a href="noticia.html?slug=${encodeURIComponent(n.slug)}" style="color:inherit;">${n.title}</a></h3>
       <p style="color:var(--text-mid); font-size:0.88rem; margin-bottom:14px;">${n.excerpt}</p>
@@ -382,7 +382,7 @@ async function initNoticiaDetail() {
 
   const heroEl = document.getElementById('noticiaHero');
   if (heroEl) {
-    heroEl.innerHTML = finHeroHTML(n.heroType, n.trend, 'size-full');
+    heroEl.innerHTML = finHeroHTML(n.heroType, n.trend, 'size-full', n.slug);
   }
 
   const metaEl = document.getElementById('noticiaMeta');

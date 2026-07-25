@@ -1085,10 +1085,10 @@
     return `<div class="social-links-row-display">${keys.map((k) => `<a href="${SOCIAL_META[k].urlBase}${encodeURIComponent(links[k])}" target="_blank" rel="noopener" title="${k}">${SOCIAL_META[k].icon}</a>`).join('')}</div>`;
   }
 
-  // Barra de progreso refinada hacia la recompensa (500 pts = 1 mes Premium gratis).
+  // Barra de progreso refinada hacia la recompensa (1000 pts = 1 mes Premium gratis).
   // Reemplaza al número de puntos suelto: motiva y se siente premium.
   function rewardProgressHTML(points) {
-    const goal = 500;
+    const goal = 1000;
     const pts = Math.max(0, points || 0);
     const pct = Math.min(100, Math.round((pts / goal) * 100));
     const reached = pts >= goal;
@@ -3258,9 +3258,10 @@
         <h4>Conectados ahora</h4>
         <span class="sidebar-online-value" id="sidebarOnlineCount">—</span>
       </div>
-      <div class="glass-card sidebar-card">
+      <div class="glass-card sidebar-card sidebar-card-link" id="sidebarTopCard" role="button" tabindex="0" title="Ver el ranking completo">
         <h4 class="sec-h">${ICON.trophy} Top analistas de la semana</h4>
         <div id="sidebarTopAnalysts"><p class="footer-text">Cargando...</p></div>
+        <span class="sidebar-card-cta">Ver ranking completo →</span>
       </div>
       <div class="glass-card sidebar-card">
         <h4 class="sec-h">${ICON.calendar} Próximos eventos</h4>
@@ -3279,6 +3280,17 @@
     document.addEventListener('ar4-presence-update', () => {
       if (onlineEl) onlineEl.textContent = String(presenceCount + agentesOnline);
     });
+
+    // La tarjeta del top lateral lleva a la pestaña Ranking completa.
+    const topCard = document.getElementById('sidebarTopCard');
+    if (topCard) {
+      const irAlRanking = () => {
+        const boton = document.querySelector('.community-tab-btn[data-view="ranking"]');
+        if (boton) { boton.click(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+      };
+      topCard.addEventListener('click', irAlRanking);
+      topCard.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); irAlRanking(); } });
+    }
 
     const topEl = document.getElementById('sidebarTopAnalysts');
     if (topEl) {

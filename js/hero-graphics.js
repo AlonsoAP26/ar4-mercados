@@ -31,15 +31,29 @@ function renderTechnicalAnalysis(container, symbol, interval) {
   container.appendChild(script);
 }
 
+// Varias fotos por tema (todas verificadas en vivo antes de agregarse): cada
+// artículo elige una según su slug, así dos noticias vecinas de la misma
+// categoría no repiten imagen y cada artículo conserva SIEMPRE la suya.
+function fotoUnsplash(id) {
+  return 'https://images.unsplash.com/' + id + '?fm=jpg&q=75&w=900&auto=format&fit=crop';
+}
 const FIN_PHOTOS = {
-  gold: 'https://images.unsplash.com/photo-1762463176319-8416bf1e6a8e?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  oil: 'https://images.unsplash.com/photo-1648555394313-494797ad48fc?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  forex: 'https://images.unsplash.com/photo-1515606378517-3451a4fa2e12?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  bank: 'https://images.unsplash.com/photo-1633059050703-0f1b50828402?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  latam: 'https://images.unsplash.com/photo-1683684931126-50e9afd0e63f?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  index: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?fm=jpg&q=75&w=900&auto=format&fit=crop',
-  crypto: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?fm=jpg&q=75&w=900&auto=format&fit=crop'
+  gold: ['photo-1762463176319-8416bf1e6a8e', 'photo-1610375461246-83df859d849d', 'photo-1624365169364-0640dd10e180'].map(fotoUnsplash),
+  oil: ['photo-1648555394313-494797ad48fc', 'photo-1516199423456-1f1e91b06f25', 'photo-1588011930968-eadac80e6a5a'].map(fotoUnsplash),
+  forex: ['photo-1515606378517-3451a4fa2e12', 'photo-1526304640581-d334cdbbf45e', 'photo-1636115734305-aac2f83cd8d4'].map(fotoUnsplash),
+  bank: ['photo-1633059050703-0f1b50828402', 'photo-1501167786227-4cba60f6d58f', 'photo-1541354329998-f4d9a9f9297f'].map(fotoUnsplash),
+  latam: ['photo-1683684931126-50e9afd0e63f', 'photo-1568632234157-ce7aecd03d0d', 'photo-1535479086554-4f8020786206'].map(fotoUnsplash),
+  index: ['photo-1767424412548-1a1ac7f4b9bc', 'photo-1611974789855-9c2a0a7236a3', 'photo-1590283603385-17ffb3a7f29f', 'photo-1563986768711-b3bde3dc821e', 'photo-1645226880663-81561dcab0ae'].map(fotoUnsplash),
+  crypto: ['photo-1518546305927-5a555bb7020d', 'photo-1623227413711-25ee4388dae3', 'photo-1640161704729-cbe966a08476'].map(fotoUnsplash)
 };
+
+// Hash estable del slug: el mismo artículo siempre muestra la misma foto.
+function fotoSemilla(texto) {
+  let h = 5381;
+  const s = String(texto || '');
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
+  return h;
+}
 
 const FIN_ICONS = {
   gold: `<svg viewBox="0 0 100 100"><path d="M22 42 L42 30 L84 30 L64 42 Z" fill="currentColor" opacity="0.55"/><path d="M22 42 L64 42 L64 74 L22 74 Z" fill="currentColor" opacity="0.85"/><path d="M64 42 L84 30 L84 62 L64 74 Z" fill="currentColor" opacity="0.65"/></svg>`,
@@ -62,9 +76,10 @@ function catClassFromType(type) {
   return map[type] || 'cat-forex';
 }
 
-function finHeroHTML(type, trend, sizeClass) {
+function finHeroHTML(type, trend, sizeClass, seed) {
   const icon = FIN_ICONS[type] || FIN_ICONS.index;
-  const photo = FIN_PHOTOS[type] || FIN_PHOTOS.index;
+  const pool = FIN_PHOTOS[type] || FIN_PHOTOS.index;
+  const photo = pool[seed ? (fotoSemilla(seed) % pool.length) : 0];
   const t = TREND_LABELS[trend] || TREND_LABELS.neutral;
   const catCls = catClassFromType(type);
   return `
