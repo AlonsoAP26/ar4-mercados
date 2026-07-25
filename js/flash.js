@@ -103,7 +103,7 @@
             <a class="btn btn-outline" href="${esc(it.tgUrl)}" target="_blank" rel="noopener">Ver titular original</a>
             <button class="btn btn-outline fl-copy" data-x="${esc(it.xText || '')}">Copiar para X</button>
           </div>
-          <p class="fl-original">Titular recibido: “${esc(it.original)}” — Walter Bloomberg (@DeItaone), vía su canal público de Telegram.</p>
+          <p class="fl-original">Titular recibido: “${esc(it.original)}” — ${it.via && it.via !== 'DeItaone' ? esc(it.via) + ', vía su feed RSS público' : 'Walter Bloomberg (@DeItaone), vía su canal público de Telegram'}.</p>
         </div>
       </details>
     </article>`;

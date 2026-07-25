@@ -55,6 +55,54 @@ async function fetchChannelPosts() {
   return posts;
 }
 
+// ---------------------------------------------------------------------------
+// Fuente de respaldo: feeds RSS públicos de CNBC.
+// Solo entra cuando @DeItaone lleva horas sin publicar (fines de semana,
+// suspensiones), para que la web nunca se quede mostrando titulares viejos.
+// ---------------------------------------------------------------------------
+const RSS_RESPALDO = [
+  'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258',
+  'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114'
+];
+const RSS_VENTANA_HORAS = 14;   // solo titulares de las últimas horas
+const RSS_MAX = 10;             // techo de candidatos por corrida
+
+function hashUrl(u) {
+  let h = 5381;
+  for (let i = 0; i < u.length; i++) h = ((h << 5) + h + u.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+async function fetchRssRespaldo(vistos) {
+  const candidatos = [];
+  for (const feed of RSS_RESPALDO) {
+    try {
+      const res = await fetch(feed, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' } });
+      if (!res.ok) continue;
+      const xml = await res.text();
+      const items = xml.split('<item>').slice(1);
+      for (const bloque of items) {
+        const t = bloque.match(/<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/);
+        const l = bloque.match(/<link>([^<]+)<\/link>/);
+        const d = bloque.match(/<pubDate>([^<]+)<\/pubDate>/);
+        if (!t || !l || !d) continue;
+        const url = l[1].trim();
+        const fecha = new Date(d[1]);
+        if (!Number.isFinite(fecha.getTime())) continue;
+        if (Date.now() - fecha.getTime() > RSS_VENTANA_HORAS * 3600000) continue;
+        if (vistos.has(url)) continue;
+        const texto = decodeEntities(t[1].replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
+        if (texto.length < 12) continue;
+        candidatos.push({ id: 'r' + hashUrl(url), fecha: fecha.toISOString(), texto, url, via: 'CNBC' });
+      }
+    } catch (e) { console.warn('Feed de respaldo falló (no fatal):', e.message); }
+  }
+  // dedupe por url entre los dos feeds y quedarse con lo más reciente
+  const porUrl = {};
+  candidatos.forEach((c) => { porUrl[c.url] = c; });
+  return Object.values(porUrl).sort((a, b) => new Date(a.fecha) - new Date(b.fecha)).slice(-RSS_MAX);
+}
+
 // callApi hace streaming (evita el timeout de 300s del fetch de Node) y
 // reintenta 429/5xx/cortes de red — todo en el modulo compartido _anthropic.js.
 async function callApi(apiKey, prompt) {
@@ -67,10 +115,13 @@ async function callApi(apiKey, prompt) {
   });
 }
 
-function buildPrompt(nuevos, recientes) {
+function buildPrompt(nuevos, recientes, respaldo) {
   const lista = nuevos.map((p) => `[${p.id}] (${p.fecha}) ${p.texto}`).join('\n');
   const previas = recientes.map((it) => `[${it.id}] ${it.titulo}`).join('\n') || '(ninguna)';
-  return `Eres el agente de inteligencia financiera en tiempo real de AR4 Mercados (sitio de trading en español para Latinoamérica). Analizas titulares institucionales republicados por Walter Bloomberg (@DeItaone) — agregador reconocido de Bloomberg, Reuters, FT, CNBC y fuentes oficiales.
+  const fuente = respaldo
+    ? 'Analizas titulares de los feeds RSS públicos de CNBC (fuente periodística reconocida). En "fuenteOriginal" indica CNBC.'
+    : 'Analizas titulares institucionales republicados por Walter Bloomberg (@DeItaone) — agregador reconocido de Bloomberg, Reuters, FT, CNBC y fuentes oficiales.';
+  return `Eres el agente de inteligencia financiera en tiempo real de AR4 Mercados (sitio de trading en español para Latinoamérica). ${fuente}
 
 TITULARES NUEVOS (id, hora UTC, texto tal como llegó):
 ${lista}
@@ -180,16 +231,32 @@ async function main() {
 
   const posts = await fetchChannelPosts();
   if (!posts.length) { fail('El canal de Telegram no devolvió posts.'); }
-  const nuevos = posts.filter((p) => p.id > (store.lastId || 0));
+  let nuevos = posts.filter((p) => p.id > (store.lastId || 0));
+  let respaldo = false;
   console.log('Posts nuevos desde id ' + store.lastId + ': ' + nuevos.length);
-  if (!nuevos.length) { console.log('Sin titulares nuevos. Fin.'); return; }
+  if (!nuevos.length) {
+    // Fuente principal callada. Si lleva horas así, entra el respaldo RSS para
+    // que la web no se quede mostrando titulares viejos.
+    const ultimo = store.items[0] ? new Date(store.items[0].actualizado || store.items[0].fecha).getTime() : 0;
+    const horasQuieto = (Date.now() - ultimo) / 3600000;
+    if (horasQuieto >= 3) {
+      const vistos = new Set(store.rssVistos || []);
+      const rss = await fetchRssRespaldo(vistos);
+      if (rss.length) {
+        nuevos = rss;
+        respaldo = true;
+        console.log('DeItaone quieto ' + horasQuieto.toFixed(1) + ' h: respaldo RSS con ' + rss.length + ' candidatos.');
+      }
+    }
+    if (!nuevos.length) { console.log('Sin titulares nuevos. Fin.'); return; }
+  }
 
   const recientes = store.items.slice(0, 20).map((it) => ({ id: it.id, titulo: it.titulo }));
   // Hasta 2 pasadas completas: a veces el modelo emite un JSON inválido por
   // puro azar (fallos del 20-jul con stop_reason=end_turn) y reintentar basta.
   let out = null;
   for (let intento = 1; intento <= 2 && !out; intento++) {
-    const data = await callApi(apiKey, buildPrompt(nuevos.slice(-18), recientes));
+    const data = await callApi(apiKey, buildPrompt(nuevos.slice(-18), recientes, respaldo));
     const blocks = (data.content || []).filter((b) => b.type === 'text' && b.text);
     if (!blocks.length) { if (intento === 2) fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason); continue; }
     let raw = blocks[blocks.length - 1].text.trim();
@@ -202,17 +269,19 @@ async function main() {
     }
   }
 
-  const byId = {}; nuevos.forEach((p) => { byId[p.id] = p; });
+  // Claves como texto: los ids del respaldo RSS no son numéricos ("r123...").
+  const byId = {}; nuevos.forEach((p) => { byId[String(p.id)] = p; });
   let publicadas = 0, actualizadas = 0;
   const paraRedes = [];
   for (const item of (out.items || []).slice(0, MAX_NEW_PER_RUN)) {
-    const src = byId[item.id];
+    const src = byId[String(item.id)];
     if (!src) continue;
+    const urlOrigen = src.url || ('https://t.me/' + CHANNEL + '/' + item.id);
     if (item.updateOf) {
       const existente = store.items.find((x) => x.id === item.updateOf);
       if (existente) {
         existente.updates = existente.updates || [];
-        existente.updates.unshift({ fecha: src.fecha, id: item.id, texto: item.resumen, tgUrl: 'https://t.me/' + CHANNEL + '/' + item.id });
+        existente.updates.unshift({ fecha: src.fecha, id: item.id, texto: item.resumen, tgUrl: urlOrigen });
         existente.actualizado = src.fecha;
         actualizadas++;
         continue;
@@ -221,7 +290,8 @@ async function main() {
     const nuevo = {
       id: item.id,
       fecha: src.fecha,
-      tgUrl: 'https://t.me/' + CHANNEL + '/' + item.id,
+      tgUrl: urlOrigen,
+      via: src.via || 'DeItaone',
       original: src.texto.slice(0, 400),
       titulo: item.titulo, resumen: item.resumen, analisis: item.analisis,
       impacto: item.impacto, breaking: !!item.breaking, activos: item.activos || [],
@@ -237,6 +307,11 @@ async function main() {
   }
 
   store.lastId = posts[posts.length - 1].id; // no re-analizar lo ya visto, publique o no
+  if (respaldo) {
+    // Recordar los enlaces RSS ya analizados (publicados o no) para no
+    // volver a mandarlos a la IA en la siguiente corrida.
+    store.rssVistos = (store.rssVistos || []).concat(nuevos.map((p) => p.url)).slice(-300);
+  }
   // Orden cronológico estricto (lo más reciente primero): cuando una corrida
   // procesa varios titulares acumulados, sin esto quedaban desordenados.
   store.items.sort((a, b) => new Date(b.actualizado || b.fecha) - new Date(a.actualizado || a.fecha));
