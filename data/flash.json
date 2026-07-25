@@ -1,7 +1,382 @@
 {
  "lastId": 33530,
- "actualizado": "2026-07-25T03:22:48.538Z",
+ "actualizado": "2026-07-25T03:33:27.056Z",
  "items": [
+  {
+   "id": "913627514",
+   "fecha": "2026-07-25T02:17:11.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/24/spacex-launches-massive-starship-rocket-in-first-test-flight-since-ipo.html",
+   "via": "CNBC",
+   "original": "SpaceX launches massive Starship rocket in first test flight since IPO",
+   "titulo": "SpaceX lanza masivo Starship en primer test flight post-IPO",
+   "resumen": "SpaceX realiza el lanzamiento de su cohete Starship en la primera prueba de vuelo tras salida a bolsa. El evento representa hito operacional clave para la compañía y su posición en mercados de defensa, telecomunicaciones y transporte espacial.",
+   "analisis": {
+    "porque": "Éxito/fracaso de Starship afecta valuación de SpaceX, confianza en Musk como emprendedor, y contratos con gobierno/sector privado (defensa, satélites, carga útil). IPO reciente amplifica volatilidad por repricing.",
+    "queOcurrio": "SpaceX ejecuta lanzamiento de prueba de Starship en periodo post-IPO (sin resultado de vuelo detallado en titular).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "SpaceX (privada/IPO)",
+    "Aerospace & Defense ETFs",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "SpaceX",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "Starship",
+    "IPO",
+    "lanzamiento",
+    "cohete",
+    "defensa"
+   ],
+   "tgText": "🚀 SpaceX lanza Starship en primer test post-IPO. Hito operacional clave. Éxito/fracaso afecta valuación y confianza en Musk. #SpaceX",
+   "xText": "🚀 SpaceX ejecuta test flight de Starship post-IPO. Hito crítico para valuación. #SpaceX #Starship",
+   "discordText": "**SpaceX Lanza Starship**\n• Primer test post-IPO\n• Hito operacional clave\n• Afecta valuación y contratos\n• Mercado observa resultado",
+   "pushText": "SpaceX lanza Starship en primer test post-IPO",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "SpaceX shares (si negociables) reaccionan a éxito/fracaso; Aerospace & Defense ETFs siguen; confianza en Musk",
+    "despues": "Acciones de Musk (TSLA) pueden beneficiarse de sentimiento positivo; sector defensa si contrato se afianza",
+    "escenarios": "Traders vigilarán: (1) resultado técnico del lanzamiento; (2) daño/pérdidas; (3) implicaciones para contratos (DoD, NASA); (4) repercusión en TSLA por sentimiento Musk",
+    "riesgos": "Titular no detalla resultado; fallo en lanzamiento podría ser bajista para SpaceX; éxito podría dar 'bump' emocional sin impacto fundamental"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "901451174",
+   "fecha": "2026-07-24T22:43:56.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html",
+   "via": "CNBC",
+   "original": "Moody&apos;s says &apos;unprecedented&apos; AI spending threatens credit quality of Amazon, Meta, Alphabet and others",
+   "titulo": "Moody's advierte: gasto 'sin precedentes' en IA amenaza rating de Amazon, Meta y Alphabet",
+   "resumen": "La agencia calificadora Moody's emite alerta sobre riesgo de crédito de gigantes tecnológicos por su gasto acelerado e 'sin precedentes' en infraestructura de IA. Advierte que inversiones masivas podrían deteriorar métricas de apalancamiento y calidad crediticia.",
+   "analisis": {
+    "porque": "Rating downgrade o revisión a negativo de megacap tech triggerearía repricing inmediato en deuda corporativa, CDS y equities. Es aviso oficial de agencia calificadora, no especulación.",
+    "queOcurrio": "Moody's señala que el nivel de capex en IA de Amazon, Meta, Alphabet y otros es 'sin precedentes' y crea riesgo para perfil crediticio.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "AMZN",
+    "META",
+    "GOOGL",
+    "Credit spreads",
+    "Bonos corporativos",
+    "CDX",
+    "NASDAQ",
+    "CDS"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "META",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "GOOGL",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Credit spreads",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Moody's",
+    "rating",
+    "IA",
+    "capex",
+    "crédito",
+    "Amazon",
+    "Meta",
+    "Alphabet"
+   ],
+   "tgText": "🚨 Moody's alerta: capex 'sin precedentes' en IA de Amazon, Meta, Alphabet amenaza ratings. Riesgo para spreads de deuda y equities. Mercado reacciona.",
+   "xText": "🔴 CRÍTICO: Moody's advierte sobre riesgo crediticio de Amazon, Meta, Alphabet por gasto masivo en IA. Posible revisión de ratings. #CreditRisk",
+   "discordText": "**Alerta Moody's: Riesgo Crediticio IA**\n• Amazon, Meta, Alphabet en mira\n• Capex 'sin precedentes' en IA\n• Deterioro de apalancamiento esperado\n• Riesgo de downgrade",
+   "pushText": "Moody's alerta: capex en IA amenaza ratings de Amazon, Meta, Alphabet",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "CDS de AMZN, META, GOOGL se amplían; bonos corporativos se venden (yields suben); acciones caen por repricing de deuda",
+    "despues": "CDX HY y IG se amplían; USD fuerte por flight-to-quality; sector tech bajo presión sistémica",
+    "escenarios": "Traders monitean: (1) si Moody's coloca en revisión a negativo; (2) spreads OAS; (3) liquidez de bonos corporativos; (4) si S&P o Fitch siguen; (5) refinanciamiento en 2H26",
+    "riesgos": "Moody's es oficial e influyente, pero gasto en IA puede ser positivo a largo plazo si genera ROI; mercado podría ignorar si earnings sorprenden"
+   },
+   "macro": {
+    "nasdaq": "Presión bajista por repricing de deuda",
+    "bonos": "Spreads corporativos se amplían (yields suben)",
+    "dolar": "Sesgo alcista por flight-to-quality"
+   },
+   "updates": []
+  },
+  {
+   "id": "950260752",
+   "fecha": "2026-07-24T21:57:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/24/tesla-tsla-spacex-spcx-stock-starship-test-flight-musk-bad-week.html",
+   "via": "CNBC",
+   "original": "Musk&apos;s bad week: Tesla suffers worst slump since 2022, SpaceX drops ahead of Starship test flight",
+   "titulo": "Tesla sufre peor semana desde 2022; SpaceX presiona antes de lanzamiento de Starship",
+   "resumen": "Acciones de Tesla registran su peor desempeño semanal desde 2022, mientras SpaceX enfrenta presión de mercado previa a prueba de vuelo de Starship. Movimientos reflejan inquietud sobre rentabilidad de Tesla y riesgos operacionales en misiones espaciales.",
+   "analisis": {
+    "porque": "Tesla es componente clave de índices tech (NASDAQ, S&P 500) y cartera de Musk; caída amplificada por exposición a fondos pasivos. SpaceX/X subyacen al portafolio de Musk; presión puede afectar su capacity de inversión.",
+    "queOcurrio": "Tesla sufre caída semanal severa (sin % específico); SpaceX nota presión pre-lanzamiento de Starship (que el titular ubica post-IPO, pero nota reportaje de 2026).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "TSLA",
+    "NASDAQ",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "TSLA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Tesla",
+    "TSLA",
+    "SpaceX",
+    "Musk",
+    "Starship",
+    "mercados"
+   ],
+   "tgText": "📉 TSLA: peor semana desde 2022. SpaceX bajo presión pre-lanzamiento Starship. Portafolio Musk debilitado. Impacto en NASDAQ y tech.",
+   "xText": "🔴 Tesla cae (peor semana desde 2022); SpaceX presionada antes de Starship. Portafolio Musk debilitado. #TSLA #SpaceX",
+   "discordText": "**Tesla & SpaceX en Presión**\n• TSLA: peor semana desde 2022\n• SpaceX: tensión pre-lanzamiento Starship\n• Portafolio Musk bajo estrés\n• Impacto en índices tech",
+   "pushText": "TSLA: peor semana desde 2022; SpaceX presionada antes de Starship",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "TSLA cae (ya en movimiento); arrastre a QQQ, SPY por ponderación; ETFs de tech ajustan",
+    "despues": "Activos ligados a Musk (X, cripto en su esfera) pueden sufrir; inversores Musk-exposed se cubren",
+    "escenarios": "Traders monitorean: (1) si caída es corrección técnica o repricing fundamental; (2) resultados de Starship; (3) próximos earnings de TSLA; (4) liquidez de posiciones",
+    "riesgos": "Titular sin % ni contexto de por qué cae Tesla; si Starship tiene éxito, presión en SpaceX puede revertirse"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "979039293",
+   "fecha": "2026-07-24T21:09:24.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/24/treasury-yields-fed-mortgage-rates.html",
+   "via": "CNBC",
+   "original": "Why bond investors are pushing up some of your interest rates",
+   "titulo": "Inversores de bonos presionan tasas de interés al alza en múltiples segmentos",
+   "resumen": "Inversores de renta fija están activamente presionando rendimientos al alza en bonos de múltiples vencimientos y emisores. El movimiento refleja repricing de expectativas de tasas y posiciones alcistas de largo plazo en bonos.",
+   "analisis": {
+    "porque": "Presión de rendimientos afecta costo de financiamiento para corporaciones y gobiernos. Presiona valuaciones de activos sensibles a tasa (equities, REITs) y modifican carry trades.",
+    "queOcurrio": "Inversores en bonos están vendiendo o reduciendo exposición, empujando rendimientos al alza en segmentos variados (sólo Treasury, corporativos, etc. no especificado).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "S&P 500",
+    "NASDAQ",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Equities",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "bonos",
+    "rendimientos",
+    "tasas",
+    "renta-fija",
+    "mercado"
+   ],
+   "tgText": "📈 Bonos: inversores presionan rendimientos al alza en múltiples segmentos. Repricing de expectativas de tasas. Impacto en equities y financiamiento corporativo.",
+   "xText": "📊 Presión alcista en bonos: rendimientos suben por ventas de renta fija. Mercados reprecian expectativas de tasas. #Bonds #Yields",
+   "discordText": "**Rendimientos en Alza**\n• Inversores venden bonos activamente\n• Presión alcista en múltiples segmentos\n• Repricing de tasas esperadas\n• Impacto en costo de financiamiento",
+   "pushText": "Bonos: inversores presionan rendimientos al alza en múltiples segmentos",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Treasury yields (2Y, 10Y) suben; corporativos siguen; spreads OAS se comprimen o amplían según riesgo crediticio",
+    "despues": "Equities caen (costo de capital sube); USD fuerte; carry trades se desapalancan",
+    "escenarios": "Traders vigilarán: (1) si movimiento es temporal (technical) o refleja repricing fundamental; (2) volumen de flujos; (3) posición de hedge funds; (4) próximos datos de inflación",
+    "riesgos": "Titular sin detalles de qué segmentos específicos; movimiento podría revertirse si datos económicos se suavizan"
+   },
+   "macro": {
+    "bonos": "Presión alcista en rendimientos",
+    "sp500": "Sesgo bajista por repricing de costo de capital",
+    "dolar": "Sesgo alcista por yields más altos"
+   },
+   "updates": []
+  },
+  {
+   "id": "948750899",
+   "fecha": "2026-07-24T20:17:40.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html",
+   "via": "CNBC",
+   "original": "Megacap earnings and Fed meeting could test a market on edge next week. Here’s what’s ahead",
+   "titulo": "Ganancia megacap y reunión de Fed podrían sacudir mercado tenso la próxima semana",
+   "resumen": "La próxima semana traerá reportes de earnings de megacap y la reunión de la Reserva Federal, dos catalizadores clave para un mercado que opera con elevada sensibilidad. El titular no especifica números ni expectativas concretas, pero subraya el ambiente de tensión en valuaciones.",
+   "analisis": {
+    "porque": "Earnings y decisiones de política monetaria son los principales motores de valuación. En mercados 'al borde' (como señala el titular), cualquier sorpresa puede desencadenar ajustes rápidos.",
+    "queOcurrio": "Se anuncia que resultados trimestrales de grandes caps y comunicado de la Fed convergen en una semana, creando riesgo de volatilidad bifurcada.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "earnings",
+    "Fed",
+    "megacap",
+    "volatilidad",
+    "mercado"
+   ],
+   "tgText": "📊 Próxima semana crítica: earnings megacap + reunión Fed. Mercado 'al borde' según CNBC. Máxima volatilidad esperada. Traders en alerta. #Markets",
+   "xText": "⚠️ Semana decisiva: earnings megacap + Fed convergen. Mercado en tensión extrema. Volatilidad muy alta esperada. #FOMC #Earnings",
+   "discordText": "**Semana Crítica de Mercados**\n• Reportes de earnings megacap\n• Reunión de la Reserva Federal\n• Mercado operando en modo tenso\n• Riesgo de volatilidad bifurcada",
+   "pushText": "Fed + Earnings megacap convergen: máxima volatilidad la próxima semana",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Índices amplios (S&P 500, NASDAQ) reaccionan a tono de Fed y surpresas de earnings; bonos por implicaciones de tasa terminal",
+    "despues": "Activos defensivos (oro, swaps de tasas); USD según ciclo esperado; acciones individuales según beat/miss",
+    "escenarios": "Traders vigilarán: (1) si Fed mantiene o sorprende en pausa; (2) si earnings reflejan slowdown o momentum; (3) forward guidance; (4) compresión de spreads",
+    "riesgos": "Confluencia de dos eventos de alto impacto amplifica riesgo de 'flash' moves; titular es prospectivo, no cuantificado"
+   },
+   "macro": {
+    "sp500": "Volatilidad muy alta esperada",
+    "nasdaq": "Volatilidad muy alta esperada",
+    "bonos": "Repricing según Fed",
+    "dolar": "Sesgo alcista si Fed mantiene tono hawkish"
+   },
+   "updates": []
+  },
+  {
+   "id": "961780697",
+   "fecha": "2026-07-24T20:07:36.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/24/bond-market-anxiety-ai-capex-spending.html",
+   "via": "CNBC",
+   "original": "Bond market anxiety is growing over AI capex budgets",
+   "titulo": "Ansiedad en mercado de bonos por presupuestos de capex en IA",
+   "resumen": "Inversores en bonos expresan preocupación por los masivos gastos de capital que empresas tecnológicas están destinando a infraestructura de inteligencia artificial. Esta inquietud refleja temores sobre sostenibilidad de tales inversiones y su impacto en márgenes corporativos, presionando los rendimientos de bonos.",
+   "analisis": {
+    "porque": "El gasto acelerado en IA capex podría comprometer la rentabilidad futura y afectar la capacidad de pago de deuda, generando presión alcista en rendimientos de bonos y ajuste en valuaciones tecnológicas.",
+    "queOcurrio": "Inversores de renta fija manifiestan ansias sobre la magnitud de inversiones en IA que realizan compañías megacap, cuestionando si los retornos justifican el desembolso.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "NASDAQ",
+    "Tech stocks",
+    "TLT",
+    "IEF"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Tech stocks",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "IA",
+    "capex",
+    "bonos",
+    "rendimientos",
+    "tecnología",
+    "deuda"
+   ],
+   "tgText": "📉 Bonos: inversores alertan sobre gastos masivos de IA en megacaps. Presión alcista en rendimientos por preocupaciones sobre rentabilidad futura y servicio de deuda.",
+   "xText": "🔴 Tensión en mercado de bonos: los enormes capex en IA de empresas tech amenazan márgenes y capacidad de pago. Rendimientos bajo presión alcista. #Markets #IA",
+   "discordText": "**Ansiedad en Bonos por IA Capex**\n• Inversores cuestionan sostenibilidad de gastos de capital en IA\n• Riesgo para márgenes corporativos y servicio de deuda\n• Rendimientos bajo presión alcista",
+   "pushText": "Bonos: inversores alertan sobre gastos de IA en megacaps",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "TLT y bonos de largo plazo (presión alcista en rendimientos) por repricing de expectativas de tasa terminal más alta",
+    "despues": "Acciones tech como NVDA, META, GOOGL sufren por compresión de márgenes; USD fuerte por yields más altos",
+    "escenarios": "Traders monitorean: (1) si compañías ajustan guías de capex; (2) spread corporativo; (3) inflación de servicios por inversión; (4) respuesta de Fed a presión de bonos",
+    "riesgos": "El titular señala 'ansiedad' (sentimiento) sin citar datos duros; si capex genera rendimientos, el mercado puede revisar posición"
+   },
+   "macro": {
+    "bonos": "Presión alcista en rendimientos de largo plazo (10Y US Treasury)",
+    "nasdaq": "Sesgo bajista por repricing de valuaciones tech",
+    "dolar": "Sesgo alcista por yields más competitivos"
+   },
+   "updates": []
+  },
   {
    "id": 33530,
    "fecha": "2026-07-24T14:14:47+00:00",
@@ -2914,5 +3289,16 @@
    "updates": []
   }
  ],
- "rssVistos": []
+ "rssVistos": [
+  "https://www.cnbc.com/2026/07/24/bond-market-anxiety-ai-capex-spending.html",
+  "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html",
+  "https://www.cnbc.com/2026/07/24/trump-doj-subpoenas-new-york-times-google.html",
+  "https://www.cnbc.com/2026/07/24/treasury-yields-fed-mortgage-rates.html",
+  "https://www.cnbc.com/2026/07/24/paramount-wbd-merger-delay.html",
+  "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html",
+  "https://www.cnbc.com/2026/07/24/tesla-tsla-spacex-spcx-stock-starship-test-flight-musk-bad-week.html",
+  "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html",
+  "https://www.cnbc.com/2026/07/24/trump-tariffs-lawsuit-301-ieepa.html",
+  "https://www.cnbc.com/2026/07/24/spacex-launches-massive-starship-rocket-in-first-test-flight-since-ipo.html"
+ ]
 }
