@@ -1,7 +1,83 @@
 {
- "lastId": 33530,
- "actualizado": "2026-07-25T14:39:21.488Z",
+ "lastId": 33531,
+ "actualizado": "2026-07-25T17:01:58.316Z",
  "items": [
+  {
+   "id": "33531",
+   "fecha": "2026-07-25T16:55:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33531",
+   "via": "DeItaone",
+   "original": "IRANIAN OIL MINISTRY SAYS IT SOLD $11.5 BLN OF OIL DURING WAR AND $6.5 BLN DURING CEASEFIRE PERIOD IRANIAN OIL MINISTRY SAYS IT HAS REALIZED MORE THAN 60% OF ANNUAL OIL REVENUE FORECAST IN BUDGET DESPITE WAR AND SANCTIONS",
+   "titulo": "Irán vende $18 mil millones en petróleo pese a guerra y sanciones; cumple 60% de ingresos",
+   "resumen": "El Ministerio de Petróleo de Irán reporta ventas por $11.500 millones durante conflicto y $6.500 millones en período de alto el fuego, alcanzando más del 60% de la previsión anual de ingresos petroleros del presupuesto. El dato refleja resilencia de exportaciones iraníes a pesar de sanciones internacionales y tensiones geopolíticas.",
+   "analisis": {
+    "porque": "Impacta directamente precio del petróleo (oferta global), riesgo geopolítico Oriente Medio, dinámicas de sanciones EEUU-Irán, y expectativas de presión alcista en energía. Señal de capacidad de evasión de restricciones comerciales.",
+    "queOcurrio": "Irán confirmó ventas de petróleo por $18 mil millones combinados (guerra + alto el fuego), equivalente a 60%+ de ingresos anuales proyectados. Cifras oficiales del Ministerio de Petróleo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Iranian Oil Ministry (via Walter Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "DXY",
+    "EURUSD",
+    "Oro",
+    "Bonos",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "petróleo",
+    "sanciones",
+    "Oriente Medio",
+    "exportaciones",
+    "guerra"
+   ],
+   "tgText": "🛢️ Irán reporta $18B en ventas de petróleo pese a sanciones y conflicto, alcanzando 60%+ de ingresos anuales presupuestados. Presión bajista en precios energéticos.",
+   "xText": "🛢️ Ministerio Petróleo Irán: $18B vendidos durante guerra + alto el fuego = 60%+ ingresos anuales pese sanciones. Riesgo geopolítico + presión en energía.",
+   "discordText": "**Irán vende $18B en petróleo en conflicto**\n• $11.5B durante guerra\n• $6.5B en período de alto el fuego\n• Cumple 60%+ ingresos anuales presupuestados\n• Señal de evasión de sanciones",
+   "pushText": "Irán reporta $18B en ventas de petróleo pese sanciones; impacto en precios energéticos",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "WTI/Brent caen por aumento de oferta iraní; traders ajustan posiciones en energía y curva de futuros.",
+    "despues": "DXY sube (petróleo débil favorece dólar); oro puede subir (refugio geopolítico); bonos podrían ceder presión alcista si inflación energética baja.",
+    "escenarios": "Traders monitoresan: (1) si cifras iraníes indican mayor capacidad de evasión = presión estructural en precios; (2) señales de escalada/desescalada Irán-EEUU; (3) respuesta de OPEC+ a mayor oferta iraní; (4) impacto en negociaciones nucleares USA-Irán.",
+    "riesgos": "Cifras provienen de ministerio iraní (potencial sesgo/opacidad); no independientemente verificadas. Riesgo de reescalada geopolítica podría invertir sesgo bajista de petróleo rápidamente."
+   },
+   "macro": {
+    "petroleo": "bajista (oferta adicional iraní)",
+    "dolar": "alcista (debilitamiento energético)",
+    "oro": "alcista (geopolítica)",
+    "bonos": "bajista (presión de yields si baja inflación energética)",
+    "nasdaq": "neutral a alcista (energía más barata beneficia tech)",
+    "sp500": "neutral",
+    "dow": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": 957596397,
    "fecha": "2026-07-25T14:03:03.000Z",
