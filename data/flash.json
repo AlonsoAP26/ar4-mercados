@@ -1,6 +1,6 @@
 {
- "lastId": 33539,
- "actualizado": "2026-07-26T12:39:26.585Z",
+ "lastId": 33542,
+ "actualizado": "2026-07-26T14:16:58.787Z",
  "items": [
   {
    "id": "33532",
@@ -75,6 +75,24 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-26T13:16:14+00:00",
+     "id": "33542",
+     "texto": "Una fuente senior iraní expresó a Reuters que prevalece el escepticismo sobre la durabilidad de la pausa estadounidense, indicando que hay «más dudas que optimismo» en Teherán. Sugiere desconfianza sobre las intenciones finales de Washington y su compromiso real con negociaciones.",
+     "tgUrl": "https://t.me/walterbloomberg/33542"
+    },
+    {
+     "fecha": "2026-07-26T13:14:34+00:00",
+     "id": "33541",
+     "texto": "Una fuente senior iraní confirmó a Reuters que Irán seguirá sin lanzar ataques mientras Estados Unidos mantenga la pausa actual en operaciones militares. Condiciona la escalada a movimientos estadounidenses, vinculando directamente la contención mutua a negociaciones.",
+     "tgUrl": "https://t.me/walterbloomberg/33541"
+    },
+    {
+     "fecha": "2026-07-26T13:10:03+00:00",
+     "id": "33540",
+     "texto": "El embajador estadounidense ante la ONU Mike Waltz confirmó que la administración Trump está permitiendo que las negociaciones con Irán avancen. El comentario refleja la pausa en ataques anunciada previamente y sugiere disposición a diálogo diplomático, aunque sin comprometerse a un acuerdo definitivo.",
+     "tgUrl": "https://t.me/walterbloomberg/33540"
+    },
+    {
      "fecha": "2026-07-26T12:23:57+00:00",
      "id": "33539",
      "texto": "Agencia Tasnim reporta explosión de petrolero tras impacto con mina naval en Estrecho de Hormuz. Suceso ocurre días después de que Trump detuviera ataques planeados contra Irán. Incidente refuerza riesgos geopolíticos en ruta crítica de 21% del comercio mundial de crudo. El titular no especifica bajas, daños estructurales ni si la mina fue colocada deliberadamente.",
@@ -87,7 +105,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33534"
     }
    ],
-   "actualizado": "2026-07-26T12:23:57+00:00"
+   "actualizado": "2026-07-26T13:16:14+00:00"
   },
   {
    "id": "33535",
