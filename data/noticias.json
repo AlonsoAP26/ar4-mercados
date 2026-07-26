@@ -3333,5 +3333,324 @@
       ],
       "patronUltimaVela": "vela alcista de cuerpo amplio"
     }
+  },
+  {
+    "title": "El PMI compuesto de la eurozona sorprende al alza en julio y empuja al euro",
+    "excerpt": "El indicador preliminar trepó a 51,9 puntos, por encima del consenso de 50,3, y marcó la primera expansión en cuatro meses. El euro reaccionó con una suba diaria de 0,2% frente al dólar.",
+    "symbol": "FX:EURUSD",
+    "trend": "up",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El indicador adelantado perfora el umbral de 50 con holgura</h3><p>El PMI compuesto preliminar de la eurozona, elaborado por S&P Global, <cite index=\"1-1\">rose to 51.9 in July 2026 from 50.0 in June, well above market expectations of 50.3, a preliminary estimate showed</cite>. El resultado deja atrás tres meses de estancamiento y confirma que la actividad privada del bloque volvió a crecer con más fuerza de la que anticipaba el consenso de analistas. <cite index=\"1-1\">La lectura señaló la primera expansión en la actividad de negocios en cuatro meses, apoyada por una renovada expansión en los servicios</cite>, el sector que había venido arrastrando al indicador compuesto durante buena parte del segundo trimestre.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El euro responde con una suba moderada frente al dólar</h3><p>El par EUR/USD cotiza en 1,1395, con un avance de 0,2% en la jornada tras conocerse el dato, aunque acumula una baja de 0,3% en la semana y una ganancia de 0,3% en el mes. El Índice Dólar (DXY) se mueve en sentido inverso: retrocede 0,2% en el día hasta 101,29, aunque en la semana suma 0,3% y en el mes cede apenas 0,1%. El RSI de 14 períodos del euro se ubica en 42,8, en zona neutral, y el precio todavía opera por debajo de su media móvil de 200 ruedas, un nivel que actúa como resistencia técnica de mediano plazo. El rango de las últimas 52 semanas va de un máximo de 1,2024 a un mínimo de 1,1325, lo que ubica al par en la zona media-baja de ese recorrido.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Presiones de costos que no descarrilan la lectura</h3><p>El reporte también aportó una señal para el frente inflacionario: <cite index=\"1-1\">los costos de insumos y de producción subieron con fuerza, aunque a un ritmo más lento que en meses previos</cite>. Ese matiz es relevante para el Banco Central Europeo, que monitorea de cerca la trayectoria de precios en el sector servicios antes de definir el ritmo de sus próximas decisiones de política monetaria. El repunte de la actividad, combinado con una desaceleración en la presión de costos, alimenta la lectura de un escenario de crecimiento sin recalentamiento inmediato.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Divergencia con el frente laboral estadounidense</h3><p>El dato europeo llega en simultáneo con señales de fortaleza en el mercado laboral de Estados Unidos: <cite index=\"2-1\">los pedidos iniciales de subsidio por desempleo cayeron a 187.000 en la semana finalizada el 18 de julio, una baja de 22.000 respecto de la semana previa, revisada a 209.000</cite>, el nivel más bajo del año. La combinación de un mercado laboral estadounidense que no da señales de deterioro con un repunte inesperado de la actividad europea alimenta el argumento de que ambos bloques podrían sostener políticas monetarias restrictivas por más tiempo del que el mercado descontaba hace unas semanas. En el panel de referencia, el oro (XAU/USD) opera en 4.090,8 dólares, con una suba de 0,6% en el día y 2% en la semana, mientras su RSI de 47,7 se mantiene en zona neutral y el precio sigue por debajo de su media de 200 ruedas, reflejo de un mercado que todavía no define una dirección clara ante este cruce de señales macro.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El repunte del PMI compuesto europeo por encima del consenso reduce, al menos por ahora, el argumento de una desaceleración marcada en el bloque, y le da al euro un respiro puntual frente al dólar sin alterar la tendencia de fondo: el par EUR/USD continúa por debajo de su media móvil de 200 ruedas y con un RSI neutral en 42,8, lo que sugiere una recuperación acotada más que un cambio de tendencia. Los operadores deberían seguir de cerca la revisión final del PMI de julio, que suele publicarse con el detalle de los subíndices de manufactura y servicios, y cualquier comunicación del Banco Central Europeo que reaccione a la moderación en el ritmo de aumento de costos. En el frente cambiario, el comportamiento del DXY —que hoy cede 0,2% pero acumula ganancias semanales de 0,3%— será clave para determinar si el euro logra consolidar el nivel de 1,14 o si el impulso de esta lectura se diluye rápido frente a un dólar que conserva firmeza estructural.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "Trading Economics - Euro Area Composite PMI",
+        "url": "https://tradingeconomics.com/euro-area/composite-pmi"
+      },
+      {
+        "name": "Quartz - US initial jobless claims",
+        "url": "https://qz.com/us-initial-jobless-claims-187000-lowest-2026-072326"
+      }
+    ],
+    "aiSummary": {
+      "que": "El PMI compuesto preliminar de la eurozona subió a 51,9 en julio, superando el consenso de 50,3 y marcando la primera expansión en cuatro meses.",
+      "porque": "El dato reduce el temor a una desaceleración marcada en el bloque europeo y le da soporte puntual al euro frente al dólar, en un contexto de RSI neutral y precio bajo la media de 200 ruedas.",
+      "activos": [
+        "EUR/USD",
+        "DXY",
+        "Oro"
+      ],
+      "siguiente": "La atención pasa a la revisión final del PMI de julio y a cualquier señal del Banco Central Europeo sobre el ritmo de aumento de costos en servicios."
+    },
+    "aiScenarios": {
+      "alcista": 30,
+      "lateral": 45,
+      "bajista": 25
+    },
+    "aiDetects": {
+      "probabilidad": 48,
+      "riesgo": "Medio",
+      "lectura": "El rebote del euro luce acotado: el precio sigue debajo de su media de 200 ruedas y el RSI neutral no confirma un cambio de tendencia de fondo."
+    },
+    "timeline": [
+      {
+        "cuando": "Hace un mes",
+        "texto": "El PMI compuesto de la eurozona de junio se había ubicado en 50,0 puntos, al límite entre expansión y contracción."
+      },
+      {
+        "cuando": "Hace 2 días",
+        "texto": "S&P Global publicó la lectura preliminar de julio en 51,9, muy por encima del consenso de 50,3, con la primera expansión de la actividad en cuatro meses."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El euro cotiza en 1,1395 frente al dólar, con una suba diaria de 0,2% tras digerir el dato, mientras el DXY retrocede 0,2% a 101,29."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué mide el PMI compuesto?",
+        "a": "Es un índice que resume la actividad de los sectores manufacturero y de servicios a partir de encuestas a gerentes de compras. Un valor por encima de 50 indica expansión y por debajo, contracción."
+      },
+      {
+        "q": "¿Por qué importa que el dato supere al consenso?",
+        "a": "Cuando una cifra real supera la expectativa del mercado, suele generar movimientos más marcados en el precio de los activos, porque obliga a los operadores a ajustar posiciones tomadas con una expectativa distinta."
+      },
+      {
+        "q": "¿Por qué un PMI más fuerte puede fortalecer al euro?",
+        "a": "Una actividad económica más sólida en la eurozona alimenta expectativas de que el Banco Central Europeo mantenga tasas más altas por más tiempo, lo que suele atraer flujos hacia la moneda."
+      },
+      {
+        "q": "¿Qué indica el RSI en el análisis de una divisa?",
+        "a": "El RSI (índice de fuerza relativa) mide si un activo está sobrecomprado o sobrevendido en el corto plazo. Valores cercanos a 50, como el actual del euro, reflejan ausencia de una tendencia dominante."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "CAPITALCOM:DXY",
+      "OANDA:XAUUSD",
+      "FX_IDC:USDMXN",
+      "FX_IDC:USDBRL"
+    ],
+    "category": "Forex",
+    "heroType": "forex",
+    "slug": "el-pmi-compuesto-de-la-eurozona-sorprende-al-alza-en-julio-y-ms2dmt0z",
+    "author": "AR4 Mercados",
+    "date": "2026-07-26",
+    "sourceName": "Trading Economics - Euro Area Composite PMI",
+    "sourceUrl": "https://tradingeconomics.com/euro-area/composite-pmi",
+    "marketPanel": [
+      {
+        "symbol": "FX:EURUSD",
+        "nombre": "EUR/USD",
+        "yahooSymbol": "EURUSD=X",
+        "fuente": "Yahoo Finance (EURUSD=X)",
+        "fechaUltimaVela": "2026-07-26",
+        "precio": 1.1395,
+        "cierreAnterior": 1.1377,
+        "variacionDiaPct": 0.2,
+        "variacionSemanaPct": -0.3,
+        "variacionMesPct": 0.3,
+        "variacionAnioPct": -1.6,
+        "rangoDiaReal": {
+          "minimo": 1.1393,
+          "maximo": 1.1406
+        },
+        "rsi14": 42.8,
+        "lecturaRsi": "neutral",
+        "media50": 1.15,
+        "media200": 1.1635,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0053,
+        "maximo52sem": 1.2024,
+        "minimo52sem": 1.1325,
+        "distanciaAMaximo52semPct": -5.2,
+        "distanciaAMinimo52semPct": 0.6,
+        "soportes": [
+          1.1325
+        ],
+        "resistencias": [
+          1.1473,
+          1.1675,
+          1.1828
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-07-26",
+        "precio": 101.29,
+        "cierreAnterior": 101.47,
+        "variacionDiaPct": -0.2,
+        "variacionSemanaPct": 0.3,
+        "variacionMesPct": -0.1,
+        "variacionAnioPct": 4,
+        "rangoDiaReal": {
+          "minimo": 101.23,
+          "maximo": 101.32
+        },
+        "rsi14": 58.3,
+        "lecturaRsi": "neutral",
+        "media50": 100.31,
+        "media200": 99.11,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4164,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -0.5,
+        "distanciaAMinimo52semPct": 6,
+        "soportes": [
+          100.45,
+          99.34,
+          98.79
+        ],
+        "resistencias": [
+          101.63
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "OANDA:XAUUSD",
+        "nombre": "Oro (XAU/USD, futuro COMEX)",
+        "yahooSymbol": "GC=F",
+        "fuente": "Yahoo Finance (GC=F)",
+        "fechaUltimaVela": "2026-07-26",
+        "precio": 4090.8,
+        "cierreAnterior": 4067.6,
+        "variacionDiaPct": 0.6,
+        "variacionSemanaPct": 2,
+        "variacionMesPct": 1.5,
+        "variacionAnioPct": 21.4,
+        "rangoDiaReal": {
+          "minimo": 4086.9,
+          "maximo": 4100.1
+        },
+        "rsi14": 47.7,
+        "lecturaRsi": "neutral",
+        "media50": 4242.7,
+        "media200": 4478.84,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 72.23,
+        "maximo52sem": 5586.2,
+        "minimo52sem": 3263.9,
+        "distanciaAMaximo52semPct": -26.8,
+        "distanciaAMinimo52semPct": 25.3,
+        "soportes": [
+          4028.5,
+          3963.55
+        ],
+        "resistencias": [
+          4152.1,
+          4199.7,
+          4228.7
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "FX_IDC:USDMXN",
+        "nombre": "USD/MXN (peso mexicano)",
+        "yahooSymbol": "USDMXN=X",
+        "fuente": "Yahoo Finance (USDMXN=X)",
+        "fechaUltimaVela": "2026-07-26",
+        "precio": 17.44,
+        "cierreAnterior": 17.51,
+        "variacionDiaPct": -0.4,
+        "variacionSemanaPct": -0.6,
+        "variacionMesPct": -0.4,
+        "variacionAnioPct": -7.6,
+        "rangoDiaReal": {
+          "minimo": 17.42,
+          "maximo": 17.49
+        },
+        "rsi14": 49.7,
+        "lecturaRsi": "neutral",
+        "media50": 17.4,
+        "media200": 17.69,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.129,
+        "maximo52sem": 18.86,
+        "minimo52sem": 17.07,
+        "distanciaAMaximo52semPct": -7.6,
+        "distanciaAMinimo52semPct": 2.2,
+        "soportes": [
+          17.36,
+          17.24,
+          17.14
+        ],
+        "resistencias": [
+          17.64,
+          17.94,
+          18.06
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "FX_IDC:USDBRL",
+        "nombre": "USD/BRL (real brasileno)",
+        "yahooSymbol": "USDBRL=X",
+        "fuente": "Yahoo Finance (USDBRL=X)",
+        "fechaUltimaVela": "2026-07-26",
+        "precio": 5.0751,
+        "cierreAnterior": 5.0969,
+        "variacionDiaPct": -0.4,
+        "variacionSemanaPct": -1,
+        "variacionMesPct": -2.3,
+        "variacionAnioPct": -7.7,
+        "rangoDiaReal": {
+          "minimo": 5.0751,
+          "maximo": 5.087
+        },
+        "rsi14": 43.5,
+        "lecturaRsi": "neutral",
+        "media50": 5.1145,
+        "media200": 5.2187,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0616,
+        "maximo52sem": 5.6168,
+        "minimo52sem": 4.8812,
+        "distanciaAMaximo52semPct": -9.6,
+        "distanciaAMinimo52semPct": 4,
+        "soportes": [
+          5.0651,
+          5.0402,
+          4.9946
+        ],
+        "resistencias": [
+          5.1035,
+          5.1669,
+          5.2461
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      }
+    ],
+    "marketData": {
+      "symbol": "FX:EURUSD",
+      "nombre": "EUR/USD",
+      "yahooSymbol": "EURUSD=X",
+      "fuente": "Yahoo Finance (EURUSD=X)",
+      "fechaUltimaVela": "2026-07-26",
+      "precio": 1.1395,
+      "cierreAnterior": 1.1377,
+      "variacionDiaPct": 0.2,
+      "variacionSemanaPct": -0.3,
+      "variacionMesPct": 0.3,
+      "variacionAnioPct": -1.6,
+      "rangoDiaReal": {
+        "minimo": 1.1393,
+        "maximo": 1.1406
+      },
+      "rsi14": 42.8,
+      "lecturaRsi": "neutral",
+      "media50": 1.15,
+      "media200": 1.1635,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 0.0053,
+      "maximo52sem": 1.2024,
+      "minimo52sem": 1.1325,
+      "distanciaAMaximo52semPct": -5.2,
+      "distanciaAMinimo52semPct": 0.6,
+      "soportes": [
+        1.1325
+      ],
+      "resistencias": [
+        1.1473,
+        1.1675,
+        1.1828
+      ],
+      "patronUltimaVela": "vela bajista sin patron destacable"
+    }
   }
 ]
