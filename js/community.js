@@ -3371,6 +3371,10 @@
         <h4>Conectados ahora</h4>
         <span class="sidebar-online-value" id="sidebarOnlineCount">—</span>
       </div>
+      <a class="glass-card sidebar-card sidebar-card-link" href="https://chat.whatsapp.com/CfJhmmvdDRt4hbu9C2PS07" target="_blank" rel="noopener" style="display:block;text-decoration:none;border-color:rgba(34,192,122,0.35);">
+        <h4 class="sec-h" style="color:var(--green);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg> Comunidad de WhatsApp</h4>
+        <p class="footer-text" style="margin:6px 0 0;">El brief del mercado cada mañana + avisos de la comunidad. Únete gratis →</p>
+      </a>
       <div class="glass-card sidebar-card sidebar-card-link" id="sidebarTopCard" role="button" tabindex="0" title="Ver el ranking completo">
         <h4 class="sec-h">${ICON.trophy} Top analistas de la semana</h4>
         <div id="sidebarTopAnalysts"><p class="footer-text">Cargando...</p></div>

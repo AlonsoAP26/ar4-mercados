@@ -160,10 +160,27 @@
     columna.appendChild(a);
   }
 
+  // Comunidad de WhatsApp: enlace permanente en el pie de todas las páginas.
+  var WHATSAPP_COMUNIDAD = 'https://chat.whatsapp.com/CfJhmmvdDRt4hbu9C2PS07';
+  function enlaceWhatsappEnPie() {
+    var columna = document.querySelector('.site-footer .footer-grid > div');
+    if (!columna || columna.querySelector('[data-wa-comunidad]')) return;
+    var a = document.createElement('a');
+    a.href = WHATSAPP_COMUNIDAD;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.setAttribute('data-wa-comunidad', '');
+    a.style.cssText = 'display:inline-flex;align-items:center;gap:7px;margin-top:10px;color:#22c07a;font-size:.85rem';
+    a.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg>Comunidad de WhatsApp';
+    columna.appendChild(a);
+  }
+
   if (!yaInstalada()) {
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', enlaceEnPie);
     else enlaceEnPie();
   }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', enlaceWhatsappEnPie);
+  else enlaceWhatsappEnPie();
 
   // Cualquier botón con data-pwa-install dispara la instalación.
   document.addEventListener('click', function (e) {
