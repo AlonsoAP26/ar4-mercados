@@ -1,7 +1,77 @@
 {
  "lastId": 33537,
- "actualizado": "2026-07-25T21:37:58.319Z",
+ "actualizado": "2026-07-26T01:17:53.230Z",
  "items": [
+  {
+   "id": "978536191",
+   "fecha": "2026-07-25T21:11:49.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/samsung-electronics-wins-200-billion-broadcom-ai-chip-partnership.html",
+   "via": "CNBC",
+   "original": "Samsung Electronics wins $200 billion Broadcom AI chip partnership, boosting foundry push",
+   "titulo": "Samsung gana alianza de IA con Broadcom por USD 200 mil millones en chips",
+   "resumen": "Samsung Electronics asegura asociación estratégica con Broadcom valorada en USD 200 mil millones, reforzando su posición en foundry de chips de IA. Confirmado: anuncio de alianza. El titular no especifica duración del contrato, volúmenes específicos ni calendarios de entrega.",
+   "analisis": {
+    "porque": "Señal de consolidación de capacidad de foundry global para chips de IA; impacta competencia TSMC/Samsung y demanda de equipamiento (ASML, Applied Materials)",
+    "queOcurrio": "Samsung y Broadcom formalizan alianza estratégica de USD 200 mil millones para fabricación de chips de IA",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "Semiconductores",
+    "Samsung",
+    "Broadcom",
+    "TSMC",
+    "ASML",
+    "Applied Materials"
+   ],
+   "sesgos": [
+    {
+     "activo": "Samsung",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Broadcom",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "TSMC",
+     "sesgo": "neutral-competencia"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "samsung",
+    "broadcom",
+    "chips-ia",
+    "alianza-estrategica",
+    "foundry",
+    "semiconductores"
+   ],
+   "tgText": "🔧 Samsung y Broadcom sellan alianza de USD 200MM para chips de IA. Refuerza posición de Samsung en foundry. Impacto en TSMC y cadena de supply de semiconductores. Broadcom y equipo (ASML) podrían beneficiarse.",
+   "xText": "🔧 Samsung gana contrato de USD 200MM con Broadcom para chips IA. Alianza estratégica refuerza competencia TSMC en foundry. Broadcom, ASML y Applied Materials en el radar.",
+   "discordText": "**Samsung-Broadcom: Alianza IA USD 200MM**\n• Samsung refuerza posición foundry\n• Competitive threat para TSMC\n• Positivo para equipamiento (ASML, Applied Materials)\n• Catalizador para sector semiconductores",
+   "pushText": "Samsung-Broadcom: Alianza de USD 200MM para chips de IA",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Broadcom sube por contrato de larga duración; Samsung por validación de estrategia foundry; semiconductores como índice suben",
+    "despues": "TSMC presionado por competencia; ASML y Applied Materials alcistas por implicancias de capex en foundry; equipamiento de manufactura sube",
+    "escenarios": "Traders monitorizan: (1) duración real del contrato vs valor reportado, (2) capacidad de Samsung para entregar volúmenes comparables a TSMC, (3) impacto en precios de chips IA, (4) competencia geopolítica USA-Taiwan",
+    "riesgos": "USD 200MM es valuación agregada posible en 5-10 años; no implica ingresos anuales; éxito depende de capacidad técnica de Samsung; TSMC sigue dominando"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "dolar": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": "33536",
    "fecha": "2026-07-25T20:50:38+00:00",
@@ -63,6 +133,123 @@
     "bitcoin": "volátil, depende contexto geopolítico mayor",
     "ethereum": "neutral",
     "bonos": "alcistas (Bunds especialmente)",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "914399192",
+   "fecha": "2026-07-25T20:19:21.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/us-appeals-court-rules-trump-cannot-implement-mail-in-voting-order.html",
+   "via": "CNBC",
+   "original": "U.S. appeals court rules Trump cannot implement mail-in voting order",
+   "titulo": "Corte de apelaciones de EE.UU. rechaza orden de Trump sobre votación por correo",
+   "resumen": "Tribunal de apelaciones estadounidense bloquea ejecución de orden ejecutiva de Trump sobre voto por correo. Confirmado: decisión judicial. Refleja continuidad de disputas legales sobre votación. Impacto limitado en mercados salvo si genera incertidumbre política prolongada.",
+   "analisis": {
+    "porque": "Incertidumbre política puede impactar confianza de inversores y volatilidad de activos cyclical; afecta narrative de gobernanza pero impacto directo en mercados es marginal",
+    "queOcurrio": "Corte de apelaciones federal rechaza implementación de orden ejecutiva presidencial sobre procesos de votación por correo",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "Bonos USA",
+    "Acciones Cyclical"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista-refugio"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "trump",
+    "orden-ejecutiva",
+    "voto-correo",
+    "corte-apelaciones",
+    "incertidumbre-politica"
+   ],
+   "tgText": "⚖️ Corte de apelaciones rechaza orden Trump sobre votación por correo. Decisión limita poder ejecutivo en reformas electorales. Impacto directo en mercados limitado; sigue incertidumbre política.",
+   "xText": "⚖️ Corte de apelaciones bloquea orden Trump sobre voto por correo. Revés judicial para administración. Mercados monitorean riesgos políticos; impacto limitado a corto plazo.",
+   "discordText": "**Corte rechaza orden Trump sobre voto por correo**\n• Fallo de apelaciones limita orden ejecutiva\n• Continúa disputa sobre reformas electorales\n• Impacto limitado en mercados de bonos y acciones",
+   "pushText": "Corte de apelaciones rechaza orden Trump sobre votación",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "Bonos USA (seguridad política) podrían reaccionar levemente al alza; DXY neutral; acciones cyclical sin movimiento directo",
+    "despues": "Monitoreo de próximas disputas ejecutivas; riesgo de volatilidad si escala a temas económicos",
+    "escenarios": "Traders monitorizan: (1) si Trump apela o acepta fallo, (2) correlación con próximas medidas ejecutivas (aranceles, regulación), (3) sentimiento riesgo-país EEUU",
+    "riesgos": "Riesgo bajo a mercados; riesgo político moderado si escala conflicto institucional"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "919455092",
+   "fecha": "2026-07-25T19:56:55.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/here-are-4-forces-that-drove-a-tough-week-for-stocks.html",
+   "via": "CNBC",
+   "original": "Here are 4 forces that drove a tough week for stocks",
+   "titulo": "Cuatro fuerzas explican la semana difícil de los mercados accionarios",
+   "resumen": "CNBC analiza los factores detrás de la volatilidad semanal en bolsas estadounidenses. El titular no especifica cuáles son esas cuatro fuerzas ni magnitudes de caídas. Requiere lectura del análisis completo para determinar si se trata de preocupaciones macro (tasas, inflación, ganancias) o específicas de sectores.",
+   "analisis": {
+    "porque": "Identifica patrones de presión simultánea en múltiples segmentos de mercado, relevante para ajuste de portafolios y análisis de riesgo sistémico",
+    "queOcurrio": "Semana negativa en bolsas con múltiples catalizadores simultáneos, según análisis de CNBC",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "DOW",
+    "Bonos",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "volatilidad-mercados",
+    "semana-negativa",
+    "presion-bolsas",
+    "analisis-mercados"
+   ],
+   "tgText": "📉 Semana difícil en bolsas: CNBC identifica cuatro fuerzas clave detrás de la volatilidad. S&P 500, Nasdaq y bonos bajo presión. Análisis de catalizadores múltiples simultáneos.",
+   "xText": "📉 Semana negativa en mercados: CNBC analiza las 4 fuerzas detrás de la volatilidad en bolsas. S&P500, Nasdaq presionados. Requiere monitoreo de catalizadores macro.",
+   "discordText": "**Volatilidad en bolsas**\n• Semana difícil para S&P500 y Nasdaq\n• CNBC identifica 4 fuerzas clave\n• Análisis de presión simultánea en mercados",
+   "pushText": "Semana volátil en bolsas: CNBC analiza cuatro fuerzas clave",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "S&P500 y Nasdaq reaccionan por reconocimiento de presión multi-factor; bonos por revisión de expectativas de tasas",
+    "despues": "Sector defensivo vs cíclico según naturaleza de las fuerzas identificadas; USD según implicancias de tasas",
+    "escenarios": "Traders monitorean si fuerzas son transitorias o señalan revisión de ciclo; volatilidad implícita (VIX) como indicador de pánico",
+    "riesgos": "El titular no especifica magnitud ni fuentes de presión; podría ser sobrerreacción editorial a movimiento técnico menor"
+   },
+   "macro": {
+    "dolar": "neutral",
+    "oro": "alcista-refugio",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bonos": "alcista-refugio",
     "petroleo": "neutral"
    },
    "updates": []
@@ -654,6 +841,73 @@
     "riesgos": "Recomendación es prospectiva; earnings podrían ser decepcionantes; competencia de recomendaciones cruzadas de otras casas."
    },
    "macro": null,
+   "updates": []
+  },
+  {
+   "id": "907692743",
+   "fecha": "2026-07-25T12:00:02.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/25/trump-ai-data-center-backlash.html",
+   "via": "CNBC",
+   "original": "Analysis: A powerful new coalition of AI skeptics is coalescing right in Trump&apos;s blind spot",
+   "titulo": "Una poderosa coalición de escépticos de IA se forma en punto ciego de Trump",
+   "resumen": "CNBC reporta coalición creciente de críticos de IA que opera sin visibilidad en círculos de Trump. Análisis editorial sobre dinámicas políticas de regulación de IA. El titular no especifica quiénes conforman la coalición ni qué regulaciones proponen.",
+   "analisis": {
+    "porque": "Indicador de cambio en narrativa política sobre IA; podría preceder cambios regulatorios que afecten a Nvidia, Tesla, Meta y Microsoft",
+    "queOcurrio": "Análisis de formación de coalición política opuesta a expansión sin regulación de IA; señala punto ciego en poder ejecutivo",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Nvidia",
+    "Tesla",
+    "Meta",
+    "Microsoft",
+    "Alphabet"
+   ],
+   "sesgos": [
+    {
+     "activo": "Nvidia",
+     "sesgo": "bajista-riesgo"
+    },
+    {
+     "activo": "Tesla",
+     "sesgo": "bajista-riesgo"
+    },
+    {
+     "activo": "Meta",
+     "sesgo": "bajista-riesgo"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral-espera"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "ia-regulacion",
+    "coalicion-escepticos",
+    "trump",
+    "politica-tecnologia"
+   ],
+   "tgText": "🤖 Coalición de escépticos de IA se forma fuera del radar Trump. Análisis CNBC sobre dinámicas políticas de regulación IA. Riesgo regulatorio para Nvidia, Tesla, Meta. Monitorear próximas iniciativas.",
+   "xText": "🤖 CNBC: Coalición de críticos de IA crece sin visibilidad en Trump. Señal de riesgo regulatorio para megacap tech. Nvidia, Tesla, Meta en zona de atención política.",
+   "discordText": "**Escépticos de IA forman coalición política**\n• Análisis CNBC sobre dinámicas de regulación\n• Riesgo: Cambio en postura Trump sobre IA\n• Activos en riesgo: Nvidia, Tesla, Meta, Microsoft\n• Monitorear próximas iniciativas",
+   "pushText": "Coalición de escépticos de IA crece; riesgo regulatorio para megacap",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Stocks de IA (Nvidia, Tesla, Meta) presionados por riesgo regulatorio; NASDAQ reacciona si se interpreta como cambio de regime",
+    "despues": "Bonos podrían beneficiarse de narrative de regulación; USD fortalecido si implica restricción de capex tech",
+    "escenarios": "Traders monitorizan: (1) magnitud real de coalición vs análisis especulativo, (2) qué regulaciones específicas se proponen, (3) efectos en capex de IA de 2027 onwards, (4) si coalición tiene acceso a poder legislativo",
+    "riesgos": "Alto riesgo de que sea análisis especulativo sin base; coalición podría no tener poder legislativo; narrativa anti-IA podría ser cíclica"
+   },
+   "macro": {
+    "nasdaq": "neutral-espera",
+    "dolar": "alcista-restriccion"
+   },
    "updates": []
   },
   {
@@ -4635,6 +4889,10 @@
   "https://www.cnbc.com/2026/07/25/crypto-diversified-investment-portfolio.html",
   "https://www.cnbc.com/2026/07/25/blackstone-brookfield-and-kkr-sign-16-billion-oil-deal-with-kuwait.html",
   "https://www.cnbc.com/2026/07/25/how-this-70-year-old-honey-bee-farmer-is-keeping-his-family-farm-alive.html",
-  "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html"
+  "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
+  "https://www.cnbc.com/2026/07/25/trump-ai-data-center-backlash.html",
+  "https://www.cnbc.com/2026/07/25/here-are-4-forces-that-drove-a-tough-week-for-stocks.html",
+  "https://www.cnbc.com/2026/07/25/us-appeals-court-rules-trump-cannot-implement-mail-in-voting-order.html",
+  "https://www.cnbc.com/2026/07/25/samsung-electronics-wins-200-billion-broadcom-ai-chip-partnership.html"
  ]
 }
