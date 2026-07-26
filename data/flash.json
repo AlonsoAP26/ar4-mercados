@@ -1,6 +1,6 @@
 {
- "lastId": 33545,
- "actualizado": "2026-07-26T17:45:14.470Z",
+ "lastId": 33546,
+ "actualizado": "2026-07-26T20:11:15.785Z",
  "items": [
   {
    "id": "33532",
@@ -75,6 +75,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-26T19:03:50+00:00",
+     "id": "33546",
+     "texto": "El portavoz del Ministerio de Relaciones Exteriores de Irán, Baghaei, confirmó que persisten los intercambios de mensajes entre Irán y Estados Unidos, así como la actividad de mediadores internacionales. Esta declaración llega tras la pausa de ataques estadounidenses y avances en negociaciones sobre el Estrecho de Hormuz.",
+     "tgUrl": "https://t.me/walterbloomberg/33546"
+    },
+    {
      "fecha": "2026-07-26T17:43:22+00:00",
      "id": "33545",
      "texto": "El canciller iraní declaró que un ataque ucraniano a un buque comercial iraní en el Mar Caspio «no quedará sin respuesta» tras reportarse una explosión que dejó un marinero muerto y otro herido. Las conversaciones incluyeron a la jefa de política exterior de la UE y el canciller ruso. Escala la retórica mientras se negocian cuestiones en el Estrecho de Hormuz.",
@@ -123,7 +129,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33534"
     }
    ],
-   "actualizado": "2026-07-26T17:43:22+00:00"
+   "actualizado": "2026-07-26T19:03:50+00:00"
   },
   {
    "id": "33535",
