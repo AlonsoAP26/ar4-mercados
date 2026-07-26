@@ -1,7 +1,94 @@
 {
- "lastId": 33538,
- "actualizado": "2026-07-26T09:47:16.554Z",
+ "lastId": 33539,
+ "actualizado": "2026-07-26T12:39:26.585Z",
  "items": [
+  {
+   "id": "33532",
+   "fecha": "2026-07-25T17:33:24+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33532",
+   "via": "DeItaone",
+   "original": "TRUMP HALTS PLANNED IRAN STRIKES Trump reportedly ordered the U.S. military not to carry out planned strikes on Iran on Friday, despite having previously approved attack plans, according to Axios. The decision came hours after Oman-mediated talks resumed over reopening the Strait of Hormuz, with reports suggesting negotiations have made progress.",
+   "titulo": "Trump detiene ataques planeados contra Irán; negociaciones sobre Estrecho de Hormuz avanzan",
+   "resumen": "Trump ordenó al ejército estadounidense cancelar ataques planeados contra Irán el viernes, según Axios. La decisión llega horas después de que se reanudaron negociaciones mediadas por Omán para reapertura del Estrecho de Hormuz, con reportes sugiriendo progreso en las conversaciones. Eliminados riesgos de escalada inmediata.",
+   "analisis": {
+    "porque": "Reduce volatilidad geopolítica en una de las rutas comerciales más críticas globales. Afecta directamente precios de petróleo, seguros de envío y percepciones de riesgo de mercado. Señala posible apertura diplomática tras meses de tensión.",
+    "queOcurrio": "Tras haber aprobado previamente planes de ataque, Trump ordenó su cancelación. Coincide con avances en negociaciones sobre reapertura del Estrecho de Hormuz mediadas por Omán.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Axios"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Energía",
+    "Mercados Emergentes",
+    "EUR/USD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Trump",
+    "Estrecho de Hormuz",
+    "petróleo",
+    "negociaciones",
+    "geopolítica"
+   ],
+   "tgText": "🚨 TRUMP CANCELA ATAQUES A IRÁN: Ejército ordenado detener operaciones planeadas. Negociaciones sobre Hormuz avanzan con mediación de Omán. Petróleo y oro caen por alivio geopolítico.",
+   "xText": "ACTUALIZACIÓN: Trump cancela ataques a Irán tras avances en negociaciones sobre Hormuz. Reducción de riesgo geopolítico impulsa caída de petróleo y oro. Mercados respiran.",
+   "discordText": "**GEOPOLÍTICA - ACTUALIZACIÓN**\n• Trump cancela ataques planeados a Irán\n• Negociaciones sobre Hormuz muestran progreso\n• Alivio en mercados de riesgo: petróleo y oro caen\n• Fuente: Axios",
+   "pushText": "Trump cancela ataques a Irán; negociaciones avanzan",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent cae por reducción inmediata de riesgo de suministro. Oro disminuye al retirarse demanda de refugio seguro.",
+    "despues": "Rendimientos de Tesoros bajan (menor prima de riesgo). Dólar débil. Mercados emergentes (especialmente Latinoamérica) podrían apreciarse al mejorar ambiente de riesgo.",
+    "escenarios": "Traders vigilarán: (1) continuidad de negociaciones Omán-USA-Irán, (2) si se reactivan ataques o escalada, (3) comunicados de Irán rechazando términos, (4) impacto en flujos de petróleo.",
+    "riesgos": "Este es UPDATE de noticia previa. Riesgo: Trump cambia de decisión, Irán rechaza negociaciones, nueva escalada con mínimo aviso. Fuente Axios (no oficial militar)."
+   },
+   "macro": {
+    "dolar": "bajista a corto plazo por alivio geopolítico",
+    "oro": "bajista por salida de refugio seguro",
+    "petroleo": "bajista por reducción de prima de riesgo",
+    "bonos": "alcista (rendimientos bajan)",
+    "sp500": "alcista (menos incertidumbre)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-26T12:23:57+00:00",
+     "id": "33539",
+     "texto": "Agencia Tasnim reporta explosión de petrolero tras impacto con mina naval en Estrecho de Hormuz. Suceso ocurre días después de que Trump detuviera ataques planeados contra Irán. Incidente refuerza riesgos geopolíticos en ruta crítica de 21% del comercio mundial de crudo. El titular no especifica bajas, daños estructurales ni si la mina fue colocada deliberadamente.",
+     "tgUrl": "https://t.me/walterbloomberg/33539"
+    },
+    {
+     "fecha": "2026-07-25T18:21:27+00:00",
+     "id": "33534",
+     "texto": "Presidente ucraniano Volodimir Zelenskiy afirma que vigilancia satelital rusa facilita y coordina ataques de Irán en Oriente Medio, implicando cooperación directa Moscú-Teherán en operaciones conjuntas más allá del teatro ucraniano.",
+     "tgUrl": "https://t.me/walterbloomberg/33534"
+    }
+   ],
+   "actualizado": "2026-07-26T12:23:57+00:00"
+  },
   {
    "id": "33535",
    "fecha": "2026-07-25T18:44:35+00:00",
@@ -403,87 +490,6 @@
     "petroleo": "neutral"
    },
    "updates": []
-  },
-  {
-   "id": "33532",
-   "fecha": "2026-07-25T17:33:24+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33532",
-   "via": "DeItaone",
-   "original": "TRUMP HALTS PLANNED IRAN STRIKES Trump reportedly ordered the U.S. military not to carry out planned strikes on Iran on Friday, despite having previously approved attack plans, according to Axios. The decision came hours after Oman-mediated talks resumed over reopening the Strait of Hormuz, with reports suggesting negotiations have made progress.",
-   "titulo": "Trump detiene ataques planeados contra Irán; negociaciones sobre Estrecho de Hormuz avanzan",
-   "resumen": "Trump ordenó al ejército estadounidense cancelar ataques planeados contra Irán el viernes, según Axios. La decisión llega horas después de que se reanudaron negociaciones mediadas por Omán para reapertura del Estrecho de Hormuz, con reportes sugiriendo progreso en las conversaciones. Eliminados riesgos de escalada inmediata.",
-   "analisis": {
-    "porque": "Reduce volatilidad geopolítica en una de las rutas comerciales más críticas globales. Afecta directamente precios de petróleo, seguros de envío y percepciones de riesgo de mercado. Señala posible apertura diplomática tras meses de tensión.",
-    "queOcurrio": "Tras haber aprobado previamente planes de ataque, Trump ordenó su cancelación. Coincide con avances en negociaciones sobre reapertura del Estrecho de Hormuz mediadas por Omán.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Axios"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos",
-    "Energía",
-    "Mercados Emergentes",
-    "EUR/USD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Trump",
-    "Estrecho de Hormuz",
-    "petróleo",
-    "negociaciones",
-    "geopolítica"
-   ],
-   "tgText": "🚨 TRUMP CANCELA ATAQUES A IRÁN: Ejército ordenado detener operaciones planeadas. Negociaciones sobre Hormuz avanzan con mediación de Omán. Petróleo y oro caen por alivio geopolítico.",
-   "xText": "ACTUALIZACIÓN: Trump cancela ataques a Irán tras avances en negociaciones sobre Hormuz. Reducción de riesgo geopolítico impulsa caída de petróleo y oro. Mercados respiran.",
-   "discordText": "**GEOPOLÍTICA - ACTUALIZACIÓN**\n• Trump cancela ataques planeados a Irán\n• Negociaciones sobre Hormuz muestran progreso\n• Alivio en mercados de riesgo: petróleo y oro caen\n• Fuente: Axios",
-   "pushText": "Trump cancela ataques a Irán; negociaciones avanzan",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent cae por reducción inmediata de riesgo de suministro. Oro disminuye al retirarse demanda de refugio seguro.",
-    "despues": "Rendimientos de Tesoros bajan (menor prima de riesgo). Dólar débil. Mercados emergentes (especialmente Latinoamérica) podrían apreciarse al mejorar ambiente de riesgo.",
-    "escenarios": "Traders vigilarán: (1) continuidad de negociaciones Omán-USA-Irán, (2) si se reactivan ataques o escalada, (3) comunicados de Irán rechazando términos, (4) impacto en flujos de petróleo.",
-    "riesgos": "Este es UPDATE de noticia previa. Riesgo: Trump cambia de decisión, Irán rechaza negociaciones, nueva escalada con mínimo aviso. Fuente Axios (no oficial militar)."
-   },
-   "macro": {
-    "dolar": "bajista a corto plazo por alivio geopolítico",
-    "oro": "bajista por salida de refugio seguro",
-    "petroleo": "bajista por reducción de prima de riesgo",
-    "bonos": "alcista (rendimientos bajan)",
-    "sp500": "alcista (menos incertidumbre)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-25T18:21:27+00:00",
-     "id": "33534",
-     "texto": "Presidente ucraniano Volodimir Zelenskiy afirma que vigilancia satelital rusa facilita y coordina ataques de Irán en Oriente Medio, implicando cooperación directa Moscú-Teherán en operaciones conjuntas más allá del teatro ucraniano.",
-     "tgUrl": "https://t.me/walterbloomberg/33534"
-    }
-   ],
-   "actualizado": "2026-07-25T18:21:27+00:00"
   },
   {
    "id": "33533",
