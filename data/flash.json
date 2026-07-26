@@ -1,6 +1,6 @@
 {
- "lastId": 33542,
- "actualizado": "2026-07-26T14:16:58.787Z",
+ "lastId": 33544,
+ "actualizado": "2026-07-26T15:40:07.904Z",
  "items": [
   {
    "id": "33532",
@@ -75,6 +75,18 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-26T15:25:35+00:00",
+     "id": "33544",
+     "texto": "CBS News reporta que funcionarios omaníes viajaron a Teherán el viernes para negociaciones, factor que explica la pausa en bombardeos estadounidenses ordenada por Trump. Omán actúa como intermediario clave en esfuerzos de desescalada, aunque el titular no proporciona detalles de lo discutido o próximos pasos.",
+     "tgUrl": "https://t.me/walterbloomberg/33544"
+    },
+    {
+     "fecha": "2026-07-26T14:58:16+00:00",
+     "id": "33543",
+     "texto": "Funcionario iraní confirma a Reuters que Teherán mantendrá operaciones suspendidas mientras EE.UU. pause bombardeos. Tras 13 noches consecutivas de ataques, Washington lleva 2 días sin acciones militares. Irán también frenó represalias, pero mantiene postura de \"ataque por ataque\". Asesores de Trump citaron preocupaciones por reservas de defensa aérea. Omaníes viajan a Teherán para negociaciones. Tensión regional persiste con Houthis expandiendo ataques a infraestructura petrolera saudita.",
+     "tgUrl": "https://t.me/walterbloomberg/33543"
+    },
+    {
      "fecha": "2026-07-26T13:16:14+00:00",
      "id": "33542",
      "texto": "Una fuente senior iraní expresó a Reuters que prevalece el escepticismo sobre la durabilidad de la pausa estadounidense, indicando que hay «más dudas que optimismo» en Teherán. Sugiere desconfianza sobre las intenciones finales de Washington y su compromiso real con negociaciones.",
@@ -105,7 +117,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33534"
     }
    ],
-   "actualizado": "2026-07-26T13:16:14+00:00"
+   "actualizado": "2026-07-26T15:25:35+00:00"
   },
   {
    "id": "33535",
