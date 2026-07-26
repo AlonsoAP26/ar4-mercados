@@ -1510,7 +1510,7 @@
       el.innerHTML = `
         <div class="glass-card onb-card sorteo-ref-card">
           <h4 class="sec-h">Sorteo del 25 de octubre · tienes <span class="sorteo-boletos">${d.boletos} boleto${d.boletos === 1 ? '' : 's'}</span></h4>
-          <p class="footer-text" style="margin:6px 0 10px;">Premio: 1 mes de Premium + 1 cuenta de fondeo. Cada amigo que se registre con tu enlace te suma <strong>1 boleto extra</strong>${d.referidos.length ? ` — ya trajiste a ${d.referidos.length}` : ''}.</p>
+          <p class="footer-text" style="margin:6px 0 10px;">Premio: 1 mes de Premium + 1 cuenta de fondeo. Cada amigo que se registre con tu enlace y publique su primer análisis te suma <strong>1 boleto extra</strong> (máx. 20)${d.referidos.length ? ` — ya trajiste a ${d.referidos.length}` : ''}.</p>
           <div class="sorteo-ref-row">
             <input type="text" class="rl-input" id="refLinkInput" readonly value="${escapeHtml(d.enlace)}">
             <button class="filter-chip" id="refCopyBtn">Copiar</button>

@@ -42,7 +42,17 @@ exports.handler = async (event, context) => {
         return respuesta(400, { success: false, error: 'Ya reclamaste tu bono de bienvenida.' });
       }
 
-      const nuevoTotal = await awardPoints(yo.id, yo.points, RECOMPENSA, 'onboarding_bienvenida');
+      let nuevoTotal;
+      try {
+        nuevoTotal = await awardPoints(yo.id, yo.points, RECOMPENSA, 'onboarding_bienvenida');
+      } catch (e) {
+        // Si el pago falla tras marcar, se desmarca: el usuario puede volver a
+        // intentar y sus +50 no se pierden en el limbo.
+        try {
+          await supabaseRequest('profiles?id=eq.' + yo.id, { method: 'PATCH', body: JSON.stringify({ onboarding_claimed_at: null }) });
+        } catch (e2) { /* peor caso: lo resuelve el admin dando los puntos a mano */ }
+        return respuesta(500, { success: false, error: 'No se pudo acreditar el bono. Inténtalo de nuevo.' });
+      }
       return respuesta(200, { success: true, puntos: nuevoTotal, recompensa: RECOMPENSA });
     }
 

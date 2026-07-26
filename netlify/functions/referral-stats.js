@@ -2,6 +2,7 @@
 // GET normal (con sesión): tus boletos, tu enlace y cuántos amigos trajiste.
 // GET ?all=1 (solo el dueño): tabla completa usuario -> boletos, para el
 // día del sorteo (25 de octubre).
+// Los referidos se cuentan por ID del padrino (inmune a cambios de username).
 const { supabaseRequest } = require('./_supabase');
 
 const JSON_HEAD = { 'Content-Type': 'application/json' };
@@ -24,16 +25,15 @@ exports.handler = async (event, context) => {
       if (!ownerEmail || (user.email || '').toLowerCase().trim() !== ownerEmail) {
         return respuesta(403, { success: false, error: 'Solo el dueño del sitio puede ver la tabla completa.' });
       }
-      // Todos los perfiles + conteo de referidos por padrino.
-      const perfiles = await supabaseRequest('profiles?select=username,referred_by_username&limit=5000', { method: 'GET' });
+      const perfiles = await supabaseRequest('profiles?select=id,username,referred_by_profile_id&limit=5000', { method: 'GET' });
       const referidosPor = {};
       perfiles.forEach((p) => {
-        if (p.referred_by_username) referidosPor[p.referred_by_username] = (referidosPor[p.referred_by_username] || 0) + 1;
+        if (p.referred_by_profile_id) referidosPor[p.referred_by_profile_id] = (referidosPor[p.referred_by_profile_id] || 0) + 1;
       });
       const tabla = perfiles.map((p) => ({
         username: p.username,
-        referidos: referidosPor[p.username] || 0,
-        boletos: 1 + (referidosPor[p.username] || 0)
+        referidos: referidosPor[p.id] || 0,
+        boletos: 1 + (referidosPor[p.id] || 0)
       })).sort((a, b) => b.boletos - a.boletos);
       const totalBoletos = tabla.reduce((s, r) => s + r.boletos, 0);
       return respuesta(200, { success: true, tabla, totalBoletos, participantes: tabla.length });
@@ -43,7 +43,7 @@ exports.handler = async (event, context) => {
     if (!mios.length) return respuesta(400, { success: false, error: 'Primero crea tu perfil de comunidad.' });
     const yo = mios[0];
 
-    const referidos = await supabaseRequest('profiles?referred_by_username=eq.' + encodeURIComponent(yo.username) + '&select=username,created_at&order=created_at.desc&limit=200', { method: 'GET' });
+    const referidos = await supabaseRequest('profiles?referred_by_profile_id=eq.' + yo.id + '&select=username,created_at&order=created_at.desc&limit=200', { method: 'GET' });
 
     return respuesta(200, {
       success: true,

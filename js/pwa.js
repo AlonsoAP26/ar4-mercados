@@ -409,7 +409,7 @@
       }).then(function (r) { return r.json(); }).then(function (d) {
         // Éxito o rechazo definitivo (código inexistente, auto-invitación,
         // cuenta antigua): en ambos casos dejamos de reintentar.
-        if (d && (d.success || /no existe|ti mismo|recién creadas/.test(d.error || ''))) {
+        if (d && (d.success || /no existe|ti mismo|recién creadas|máximo/.test(d.error || ''))) {
           localStorage.setItem('ar4_ref_ok', '1');
         }
       }).catch(function () {});
