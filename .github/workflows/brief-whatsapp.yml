@@ -1,0 +1,43 @@
+name: Brief diario de WhatsApp
+
+# Cada manana (6:45 am Lima = 11:45 UTC) deja listo en data/brief-whatsapp.json
+# el mensaje del dia para la Comunidad de WhatsApp. El dueno lo copia desde la
+# seccion "Brief de WhatsApp" de admin.html y lo pega en su Comunidad.
+on:
+  schedule:
+    - cron: '45 11 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: brief-whatsapp
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Generar brief del dia
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-brief-whatsapp.js
+      - name: Publicar
+        run: |
+          git config user.name "AR4 Mercados Bot"
+          git config user.email "bot@ar4mercados.local"
+          git add data/brief-whatsapp.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Brief de WhatsApp del dia"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin master && git push && exit 0
+            sleep 5
+          done
+          exit 1

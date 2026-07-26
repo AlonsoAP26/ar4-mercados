@@ -127,6 +127,8 @@
   window.addEventListener('appinstalled', function () {
     eventoInstalar = null;
     marcarDescartado();
+    // Para el checklist de bienvenida de la Comunidad.
+    try { localStorage.setItem('ar4_app_instalada', '1'); } catch (e) {}
   });
 
   // ---- iPhone: Safari no da diálogo, hay que explicar los dos toques ----
@@ -359,7 +361,7 @@
         '</div>' +
         '<p class="sorteo-aplica">APLICA PARA TODOS LOS REGISTRADOS</p>' +
         '<button class="btn btn-gold btn-block" id="sorteoCta">Crear mi cuenta gratis &rarr;</button>' +
-        '<p class="sorteo-nota">Sorteo entre todos los usuarios registrados de AR4 Mercados. El ganador se anunciar&aacute; el 25 de octubre de 2026 en la Comunidad.</p>' +
+        '<p class="sorteo-nota">Sorteo entre todos los usuarios registrados de AR4 Mercados. El ganador se anunciar&aacute; el 25 de octubre de 2026 en la Comunidad. Y despu&eacute;s de registrarte: cada amigo que invites con tu enlace suma <strong>1 boleto extra</strong>.</p>' +
       '</div>';
     document.body.appendChild(ov);
     requestAnimationFrame(function () { ov.classList.add('visible'); });
@@ -380,4 +382,43 @@
   }
 
   window.addEventListener('load', function () { setTimeout(mostrarSorteo, 2500); });
+})();
+
+// ===== Referidos: captura del ?ref y reclamo tras iniciar sesión =====
+// El visitante llega con ar4mercados.com/?ref=USUARIO. Guardamos el código y,
+// cuando ya tiene cuenta y perfil, se lo asignamos a su padrino (1 boleto
+// extra del sorteo). Reintenta en cada visita hasta lograrlo.
+(function () {
+  try {
+    var ref = new URLSearchParams(window.location.search).get('ref');
+    if (ref && /^[a-zA-Z0-9_.-]{2,40}$/.test(ref)) localStorage.setItem('ar4_ref', ref);
+  } catch (e) {}
+
+  function intentarReclamo() {
+    try {
+      var ref = localStorage.getItem('ar4_ref');
+      if (!ref || localStorage.getItem('ar4_ref_ok')) return;
+      var u = window.netlifyIdentity && window.netlifyIdentity.currentUser();
+      if (!u) return;
+      u.jwt().then(function (token) {
+        return fetch('/.netlify/functions/referral-claim', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + token },
+          body: JSON.stringify({ ref: ref })
+        });
+      }).then(function (r) { return r.json(); }).then(function (d) {
+        // Éxito o rechazo definitivo (código inexistente, auto-invitación,
+        // cuenta antigua): en ambos casos dejamos de reintentar.
+        if (d && (d.success || /no existe|ti mismo|recién creadas/.test(d.error || ''))) {
+          localStorage.setItem('ar4_ref_ok', '1');
+        }
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('login', function () { setTimeout(intentarReclamo, 3000); });
+    window.netlifyIdentity.on('init', function (u) { if (u) setTimeout(intentarReclamo, 3000); });
+  }
+  window.addEventListener('load', function () { setTimeout(intentarReclamo, 5000); });
 })();

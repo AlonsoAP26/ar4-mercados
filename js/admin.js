@@ -248,8 +248,10 @@
         <p class="footer-text" style="margin-bottom:10px;">Guion del <strong style="color:var(--gold-bright);">${esc(g.fecha)}</strong> · Gancho: <em>${esc(g.gancho)}</em></p>
         ${bloque('1) Guion para HeyGen (pegar y generar)', g.guion, 'reelGuion')}
         ${bloque('2) Título del post', g.titulo, 'reelTitulo')}
-        ${bloque('3) Descripción del Reel', g.caption, 'reelCaption')}
-        ${bloque('4) Primer comentario (fijarlo)', g.comentario, 'reelComentario')}`;
+        ${bloque('3) Descripción para Facebook', g.caption, 'reelCaption')}
+        ${bloque('4) Primer comentario (fijarlo)', g.comentario, 'reelComentario')}
+        ${g.captionTikTok ? bloque('5) Caption para TikTok (mismo video)', g.captionTikTok, 'reelTikTok') : ''}
+        ${g.captionInstagram ? bloque('6) Caption para Instagram Reels (mismo video)', g.captionInstagram, 'reelInstagram') : ''}`;
       el.querySelectorAll('.reel-copy').forEach((btn) => {
         btn.addEventListener('click', async () => {
           const texto = (document.getElementById(btn.dataset.copy) || {}).textContent || '';
@@ -262,6 +264,57 @@
     }
   }
   loadReel();
+
+  // ===== Brief diario de WhatsApp: copiar y pegar en la Comunidad =====
+  async function loadBrief() {
+    const el = document.getElementById('adminBrief');
+    if (!el) return;
+    try {
+      const b = await fetch('data/brief-whatsapp.json?cb=' + Date.now()).then((r) => r.json());
+      el.innerHTML = `
+        <div class="admin-dip-card" style="margin-bottom:10px;">
+          <div class="admin-dip-head" style="margin-bottom:6px;"><strong>Brief del ${esc(b.fecha)}</strong>
+            <button class="filter-chip" id="briefCopyBtn">Copiar</button></div>
+          <p class="footer-text" id="briefTexto" style="margin:0;white-space:pre-wrap;">${esc(b.mensaje)}</p>
+        </div>`;
+      const btn = document.getElementById('briefCopyBtn');
+      btn.addEventListener('click', async () => {
+        const texto = document.getElementById('briefTexto').textContent || '';
+        try { await navigator.clipboard.writeText(texto); btn.textContent = '✔ Copiado'; setTimeout(() => { btn.textContent = 'Copiar'; }, 1500); }
+        catch (e) { prompt('Copia el texto:', texto); }
+      });
+    } catch (e) {
+      el.innerHTML = '<p class="footer-text">Aún no hay brief generado. Aparece cada mañana a las 6:45.</p>';
+    }
+  }
+  loadBrief();
+
+  // ===== Boletos del sorteo (solo el dueño) =====
+  const boletosBtn = document.getElementById('adminBoletosBtn');
+  if (boletosBtn) {
+    boletosBtn.addEventListener('click', async () => {
+      const cont = document.getElementById('adminBoletos');
+      boletosBtn.disabled = true;
+      boletosBtn.textContent = 'Cargando...';
+      try {
+        const jwt = await netlifyIdentity.currentUser().jwt();
+        const res = await fetch('/.netlify/functions/referral-stats?all=1', { headers: { Authorization: 'Bearer ' + jwt } });
+        const d = await res.json();
+        if (!d.success) throw new Error(d.error || 'Error');
+        cont.innerHTML = `
+          <p class="footer-text" style="margin:12px 0 8px;"><strong>${d.participantes}</strong> participante(s) · <strong>${d.totalBoletos}</strong> boleto(s) en total</p>
+          <div class="admin-table">
+            <div class="admin-row admin-row-head"><span>Usuario</span><span>Referidos</span><span>Boletos</span></div>
+            ${d.tabla.slice(0, 200).map((r) => `<div class="admin-row"><span>${esc(r.username)}</span><span>${r.referidos}</span><span style="color:var(--gold-bright);font-family:var(--mono);">${r.boletos}</span></div>`).join('')}
+          </div>`;
+      } catch (e) {
+        cont.innerHTML = '<p class="footer-text">' + esc(String(e.message || e)) + '</p>';
+      } finally {
+        boletosBtn.disabled = false;
+        boletosBtn.textContent = 'Ver boletos por participante';
+      }
+    });
+  }
 
   // ===== Red de agentes IA: roster + metricas =====
   const agentesEl = document.getElementById('adminAgentes');

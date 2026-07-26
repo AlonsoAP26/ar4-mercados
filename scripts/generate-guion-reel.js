@@ -40,8 +40,10 @@ GENERA el paquete del Reel de hoy:
 2. "titulo": título del post, máx 70 caracteres.
 3. "caption": descripción del post con 2-3 líneas + bullets de valor con emojis sobrios + "Video generado con IA 🤖" + 8-10 hashtags (#trading #traderslatinos #forex #bitcoin #inversiones #tradingenespañol y afines al tema del día).
 4. "gancho": la primera frase sola (para que el dueño evalúe rápido).
+5. "captionTikTok": versión corta del caption para TikTok (máx 130 caracteres + 4-5 hashtags: #trading #traderslatinos #fyp #parati y uno del tema).
+6. "captionInstagram": versión para Instagram Reels (2 líneas + 5-6 hashtags, sin la palabra "gratis" repetida).
 
-Responde SOLO este JSON: {"gancho":"...","titulo":"...","guion":"...","caption":"..."}`;
+Responde SOLO este JSON: {"gancho":"...","titulo":"...","guion":"...","caption":"...","captionTikTok":"...","captionInstagram":"..."}`;
 
   let out = null;
   for (let intento = 1; intento <= 2 && !out; intento++) {
@@ -62,6 +64,8 @@ Responde SOLO este JSON: {"gancho":"...","titulo":"...","guion":"...","caption":
     titulo: out.titulo,
     guion: out.guion,
     caption: out.caption,
+    captionTikTok: out.captionTikTok || '',
+    captionInstagram: out.captionInstagram || '',
     comentario: '🔗 Crea tu cuenta gratis aquí (menos de 1 minuto): https://ar4mercados.com'
   };
   fs.writeFileSync(OUT, JSON.stringify(paquete, null, 2) + '\n');

@@ -1360,6 +1360,9 @@
       <div class="community-form" id="resumenGreeting" style="margin-top:20px;">
         <p class="footer-text">Cargando resumen...</p>
       </div>
+      <div id="resumenOnboarding"></div>
+      <div id="resumenSorteo"></div>
+      <div id="resumenPremios"></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">Mis diplomas</h2><a href="educacion.html" class="see-all">Ir a Educación →</a></div>
       <div id="resumenDiplomas"><p class="footer-text">Cargando...</p></div>
       <div class="section-head" style="margin-top:20px;"><h2 style="font-size:1rem;">Notificaciones</h2><button class="filter-chip" id="notifMarkAllReadBtn">✓ Marcar todo como leído</button></div>
@@ -1459,6 +1462,113 @@
     }
   }
 
+  // Checklist de bienvenida: 4 primeros pasos + bono de +50 pts al publicar.
+  async function loadOnboardingCard() {
+    const el = document.getElementById('resumenOnboarding');
+    if (!el) return;
+    try {
+      const d = await callFunctionGET('community-onboarding');
+      if (d.reclamado) { el.innerHTML = ''; return; }
+      const notifOk = ('Notification' in window) && Notification.permission === 'granted';
+      const appOk = window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('ar4_app_instalada') === '1';
+      const paso = (ok, texto) => `<li class="onb-item${ok ? ' onb-ok' : ''}"><span class="onb-check">${ok ? '✓' : '○'}</span>${texto}</li>`;
+      el.innerHTML = `
+        <div class="glass-card onb-card">
+          <h4 class="sec-h">Tus primeros pasos <span class="onb-premio">+${d.recompensa} pts</span></h4>
+          <ul class="onb-lista">
+            ${paso(true, 'Crear tu perfil de comunidad')}
+            ${paso(d.publico, 'Publicar tu primer análisis en el Foro')}
+            ${paso(notifOk, 'Activar los avisos del mercado')}
+            ${paso(appOk, 'Instalar la app en tu celular')}
+          </ul>
+          <button class="btn ${d.publico ? 'btn-gold' : 'btn-outline'} btn-block" id="onbClaimBtn" ${d.publico ? '' : 'disabled'}>
+            ${d.publico ? 'Reclamar mis +' + d.recompensa + ' pts →' : 'Publica tu primer análisis para reclamar'}
+          </button>
+        </div>`;
+      const btn = document.getElementById('onbClaimBtn');
+      if (btn && d.publico) {
+        btn.addEventListener('click', async () => {
+          btn.disabled = true;
+          try {
+            const r = await callFunction('community-onboarding', {});
+            myProfile.points = r.puntos;
+            el.innerHTML = '';
+            loadResumen();
+          } catch (e) { alert(e.message); btn.disabled = false; }
+        });
+      }
+    } catch (e) { el.innerHTML = ''; }
+  }
+
+  // Boletos del sorteo por referidos (visible hasta el 25 de octubre).
+  async function loadSorteoCard() {
+    const el = document.getElementById('resumenSorteo');
+    if (!el) return;
+    if (Date.now() > new Date('2026-10-26T00:00:00-05:00').getTime()) { el.innerHTML = ''; return; }
+    try {
+      const d = await callFunctionGET('referral-stats');
+      el.innerHTML = `
+        <div class="glass-card onb-card sorteo-ref-card">
+          <h4 class="sec-h">Sorteo del 25 de octubre · tienes <span class="sorteo-boletos">${d.boletos} boleto${d.boletos === 1 ? '' : 's'}</span></h4>
+          <p class="footer-text" style="margin:6px 0 10px;">Premio: 1 mes de Premium + 1 cuenta de fondeo. Cada amigo que se registre con tu enlace te suma <strong>1 boleto extra</strong>${d.referidos.length ? ` — ya trajiste a ${d.referidos.length}` : ''}.</p>
+          <div class="sorteo-ref-row">
+            <input type="text" class="rl-input" id="refLinkInput" readonly value="${escapeHtml(d.enlace)}">
+            <button class="filter-chip" id="refCopyBtn">Copiar</button>
+            <a class="filter-chip" id="refWaBtn" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent('Únete a AR4 Mercados (comunidad de traders con IA) y entra al sorteo de 1 mes Premium + 1 cuenta de fondeo: ' + d.enlace)}">WhatsApp</a>
+          </div>
+        </div>`;
+      const btn = document.getElementById('refCopyBtn');
+      btn.addEventListener('click', async () => {
+        try { await navigator.clipboard.writeText(d.enlace); btn.textContent = '✔ Copiado'; setTimeout(() => { btn.textContent = 'Copiar'; }, 1500); }
+        catch (e) { document.getElementById('refLinkInput').select(); document.execCommand('copy'); }
+      });
+    } catch (e) { el.innerHTML = ''; }
+  }
+
+  // Premios canjeables por puntos: metas exigentes (meses de participación
+  // real), cupos limitados y a la vista. El canje se pide por WhatsApp y el
+  // administrador verifica los puntos antes de entregar.
+  const PREMIOS_CATALOGO = [
+    { nombre: 'Premio de $100 USD', pts: 7500, nota: 'Vía Yape o transferencia · 1 disponible por mes', icono: '<path d="M12 2v20M17 6.5c-1-1.4-2.8-2-5-2-2.6 0-4.5 1.3-4.5 3.4 0 4.6 9.8 2.4 9.8 7 0 2.2-2 3.6-5 3.6-2.4 0-4.3-.8-5.3-2.3"/>' },
+    { nombre: 'Cuenta de fondeo real', pts: 15000, premium: true, nota: 'Solo miembros Premium activos · 1 por trimestre', icono: '<path d="M3 17l5-5 3 3 7-8"/><path d="M14 4h4v4"/>' },
+    { nombre: 'Capital de trading de $1,000 USD', pts: 40000, nota: 'El premio mayor · 1 por semestre', icono: '<path d="M6 4h12v3a6 6 0 0 1-12 0z"/><path d="M6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 1-3 3M12 13v3M8.5 20h7M9.5 20l.5-4M14.5 20l-.5-4"/>' }
+  ];
+
+  async function loadPremiosCard() {
+    const el = document.getElementById('resumenPremios');
+    if (!el) return;
+    const pts = myProfile.points || 0;
+    const esPremium = myProfile.rank === 'premium' || myProfile.rank === 'elite' || myProfile.rank === 'administrador';
+    const filas = PREMIOS_CATALOGO.map((p) => {
+      const pct = Math.min(100, Math.round((pts / p.pts) * 100));
+      const alcanzado = pts >= p.pts && (!p.premium || esPremium);
+      const bloqueadoPremium = pts >= p.pts && p.premium && !esPremium;
+      const waTexto = encodeURIComponent('Hola AR4 👋 Quiero canjear mi premio: ' + p.nombre + ' (' + p.pts + ' pts). Mi usuario es: ' + myProfile.username);
+      return `
+        <div class="premio-item${alcanzado ? ' premio-listo' : ''}">
+          <span class="premio-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${p.icono}</svg></span>
+          <div class="premio-info">
+            <strong>${p.nombre}${p.premium ? ' <span class="premio-tag-premium">PREMIUM</span>' : ''}</strong>
+            <span class="premio-nota">${p.nota}</span>
+            <div class="premio-barra"><div class="premio-barra-fill" style="width:${pct}%;"></div></div>
+            <span class="premio-progreso">${pts.toLocaleString('es')} / ${p.pts.toLocaleString('es')} pts (${pct}%)</span>
+          </div>
+          ${alcanzado
+            ? `<a class="btn btn-gold premio-btn" target="_blank" rel="noopener" href="https://wa.me/51902624613?text=${waTexto}">Canjear →</a>`
+            : bloqueadoPremium
+              ? '<a class="btn btn-outline premio-btn" href="membresia.html">Requiere Premium</a>'
+              : ''}
+        </div>`;
+    }).join('');
+    el.innerHTML = `
+      <div class="glass-card onb-card">
+        <h4 class="sec-h">${ICON.trophy} Premios por puntos</h4>
+        <p class="footer-text" style="margin:6px 0 12px;">Tu participación real vale: publica, comenta, mantén tu racha y canjea. Cupos limitados por periodo — el que llega primero, cobra primero.</p>
+        ${filas}
+        <p class="footer-text" style="margin-top:10px;font-size:0.72rem;">El canje se solicita por WhatsApp y se verifica el puntaje antes de entregar. Los puntos canjeados se descuentan. Sin letra chica: si llegas, se paga.</p>
+      </div>`;
+  }
+
   async function loadResumen() {
     const greetingEl = document.getElementById('resumenGreeting');
     const notifEl = document.getElementById('resumenNotifications');
@@ -1467,6 +1577,9 @@
     loadDiplomaVitrina(document.getElementById('resumenDiplomas'));
 
     loadCommunityPulse();
+    loadOnboardingCard();
+    loadSorteoCard();
+    loadPremiosCard();
 
     const streak = myProfile.streak_days || 0;
     greetingEl.innerHTML = `

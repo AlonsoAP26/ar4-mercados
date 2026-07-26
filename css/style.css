@@ -2728,6 +2728,92 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
 .sorteo-nota { font-size:0.73rem; color:var(--text-low); margin-top:12px; line-height:1.55; }
 @media (max-width: 480px) { .sorteo-card { padding:28px 18px 20px; } }
 
+/* ===== Checklist de bienvenida y boletos del sorteo (Comunidad) ===== */
+.onb-card { margin-top: 16px; padding: 18px 20px; }
+.onb-premio {
+  font-family: var(--mono); font-size: 0.72rem; font-weight: 700;
+  background: rgba(34,192,122,0.14); color: var(--green);
+  padding: 3px 10px; border-radius: 999px; margin-left: 8px; vertical-align: 2px;
+}
+.onb-lista { list-style: none; margin: 12px 0 16px; display: flex; flex-direction: column; gap: 9px; }
+.onb-item { display: flex; align-items: center; gap: 10px; color: var(--text-mid); font-size: 0.9rem; }
+.onb-item.onb-ok { color: var(--text-hi); }
+.onb-check {
+  width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem; border: 1px solid var(--card-border); color: var(--text-low);
+}
+.onb-ok .onb-check { background: rgba(34,192,122,0.15); border-color: rgba(34,192,122,0.5); color: var(--green); font-weight: 700; }
+.sorteo-ref-card { border-color: rgba(212,175,55,0.4); }
+/* Banda de premios en la portada */
+.premios-band {
+  margin-top: 32px; padding: 30px 28px;
+  border: 1px solid rgba(212,175,55,0.32); border-radius: 18px;
+  background: linear-gradient(165deg, rgba(212,175,55,0.08), rgba(17,26,46,0.6));
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+.premios-band-head { text-align: center; max-width: 640px; margin: 0 auto 22px; }
+.premios-band-head h3 { font-size: 1.35rem; line-height: 1.35; margin-bottom: 10px; }
+.premios-band-head p { color: var(--text-mid); font-size: 0.92rem; line-height: 1.65; }
+.premios-band-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.premios-band-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;
+  background: var(--card); border: 1px solid var(--card-border); border-radius: 14px;
+  padding: 22px 16px;
+  transition: transform 0.16s ease, border-color 0.16s ease;
+}
+.premios-band-card:hover { transform: translateY(-3px); border-color: rgba(212,175,55,0.5); }
+.premios-band-mayor { border-color: rgba(212,175,55,0.55); background: linear-gradient(165deg, rgba(212,175,55,0.1), var(--card)); }
+.premios-band-ic {
+  width: 46px; height: 46px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.3); color: var(--gold-bright);
+}
+.premios-band-ic svg { width: 22px; height: 22px; }
+.premios-band-card strong { font-size: 0.96rem; color: var(--text-hi); }
+.premios-band-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--gold-bright); }
+@media (max-width: 860px) {
+  .premios-band { padding: 24px 18px; }
+  .premios-band-grid { grid-template-columns: 1fr; }
+}
+
+/* Catálogo de premios por puntos */
+.premio-item {
+  display: flex; align-items: center; gap: 14px;
+  padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.premio-item:last-of-type { border-bottom: none; }
+.premio-ic {
+  width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(212,175,55,0.08); border: 1px solid rgba(212,175,55,0.25); color: var(--gold-bright);
+}
+.premio-ic svg { width: 20px; height: 20px; }
+.premio-listo .premio-ic { background: rgba(34,192,122,0.12); border-color: rgba(34,192,122,0.45); color: var(--green); }
+.premio-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.premio-info strong { font-size: 0.92rem; color: var(--text-hi); }
+.premio-tag-premium {
+  font-family: var(--mono); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em;
+  background: rgba(212,175,55,0.14); color: var(--gold-bright);
+  padding: 2px 7px; border-radius: 999px; vertical-align: 2px;
+}
+.premio-nota { font-size: 0.74rem; color: var(--text-low); }
+.premio-barra { height: 5px; background: rgba(255,255,255,0.07); border-radius: 999px; overflow: hidden; margin-top: 4px; }
+.premio-barra-fill { height: 100%; background: linear-gradient(90deg, #b8860b, #f0c75e); border-radius: 999px; transition: width 0.4s ease; }
+.premio-progreso { font-family: var(--mono); font-size: 0.7rem; color: var(--text-mid); }
+.premio-btn { flex-shrink: 0; font-size: 0.8rem; padding: 9px 14px; }
+@media (max-width: 640px) {
+  .premio-item { flex-wrap: wrap; }
+  .premio-btn { flex-basis: 100%; text-align: center; }
+}
+.sorteo-boletos { color: var(--gold-bright); font-family: var(--mono); }
+.sorteo-ref-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.sorteo-ref-row .rl-input { flex: 1; min-width: 180px; font-size: 0.8rem; }
+@media (max-width: 640px) {
+  .sorteo-ref-row .rl-input { flex-basis: 100%; }
+  .sorteo-ref-row .filter-chip { flex: 1; text-align: center; min-height: 42px; }
+}
+
 /* Tarjeta lateral clickeable (Top analistas -> pestaña Ranking) */
 .sidebar-card-link { cursor: pointer; transition: border-color 0.15s ease, transform 0.15s ease; }
 .sidebar-card-link:hover { border-color: rgba(212,175,55,0.55); transform: translateY(-2px); }
