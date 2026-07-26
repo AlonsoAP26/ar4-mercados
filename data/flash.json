@@ -1,7 +1,108 @@
 {
  "lastId": 33546,
- "actualizado": "2026-07-26T20:11:15.785Z",
+ "actualizado": "2026-07-26T22:16:13.049Z",
  "items": [
+  {
+   "id": "968273537",
+   "fecha": "2026-07-26T22:04:38.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/stock-market-today-live-updates.html",
+   "via": "CNBC",
+   "original": "Nasdaq futures rally ahead of big week of earnings, Fed meeting: Live updates",
+   "titulo": "Futuros Nasdaq avanzan en semana clave: reunión de Fed y temporada de earnings",
+   "resumen": "Los futuros del Nasdaq registran alzas mientras mercados se preparan para una semana de elevada importancia: decisión de política monetaria de la Reserva Federal y cierre de temporada de reportes de ganancias corporativas. El titular indica sentimiento alcista previo a estos eventos críticos.",
+   "analisis": {
+    "porque": "Decisión de Fed y resultados corporativos son catalizadores clave que definen dirección de mercados accionarios; futuros al alza sugieren posicionamiento optimista previo a anuncios.",
+    "queOcurrio": "Futuros Nasdaq avanzan días antes de reunión de Fed y publicación masiva de earnings empresariales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Bonos",
+    "USD",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "fed",
+    "reunion-politica-monetaria",
+    "earnings",
+    "nasdaq",
+    "mercados",
+    "volatilidad"
+   ],
+   "tgText": "🚀 BREAKING: Futuros Nasdaq avanzan en semana decisiva. Reunión de Fed y temporada de earnings corporativas definen volatilidad. Traders posicionados al alza.",
+   "xText": "🚀 Futuros Nasdaq en alza en semana de Fed + earnings masivos. Mercados apuestan por continuidad alcista. Volatilidad extrema esperada.",
+   "discordText": "**Semana crítica en mercados: Nasdaq futuros al alza**\n• Reunión de Reserva Federal en agenda\n• Cierre de temporada de earnings\n• Sentimiento alcista previo a catalizadores",
+   "pushText": "Nasdaq futuros avanzan: semana de Fed y earnings por delante",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Futuros Nasdaq y S&P500 reaccionan directamente; volatilidad del índice VIX comprimida antes del anuncio, expansión esperada después",
+    "despues": "Bonos y dólar responden a decisión de tasas de Fed; materias primas volátiles si decisión implica cambio de ciclo monetario",
+    "escenarios": "Traders vigilarán: (1) Dot plot de proyecciones de tasa terminal, (2) Tono de conferencia de Chair, (3) Resultados de Tech mega-cap (Amazon, Nvidia, etc.), (4) Guidance forward de S&P500",
+    "riesgos": "Sorpresa hawkish de Fed revierte posicionamiento alcista; earnings débiles pueden contradecir rally; volatilidad extrema en ambas direcciones es probable"
+   },
+   "macro": {
+    "nasdaq": "Potencial continuidad alcista si Fed señala pausa o cortes de tasas",
+    "sp500": "Directamente expuesto a decisión de Fed y earnings sorpresas",
+    "bonos": "Presión al alza en rendimientos si Fed mantiene tasas altas",
+    "dolar": "Presión alcista si Fed agresiva; bajista si señala flexibilización",
+    "vix": "Compresión pre-Fed, expansión post-anuncio esperada"
+   },
+   "updates": []
+  },
+  {
+   "id": "953271695",
+   "fecha": "2026-07-26T20:50:54.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/here-are-the-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+   "via": "CNBC",
+   "original": "Here are the 3 big things we&apos;re watching in the stock market in the week ahead",
+   "titulo": "Tres grandes factores a vigilar en mercados accionarios en la semana próxima",
+   "resumen": "Preview de CNBC señala tres factores críticos que moverán mercados accionarios en semana venidera. El titular no especifica cuáles son los tres en el encabezado; probable cobertura de Fed, earnings corporativas y datos económicos, típicos en semanas de volatilidad.",
+   "analisis": {
+    "porque": "Identificación de catalizadores semanales es crítica para traders; artículo resume factores que generarán volatilidad y oportunidades de posicionamiento.",
+    "queOcurrio": "CNBC publica vista previa de semana con advertencia de tres factores clave a vigilar en acciones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [],
+   "volatilidad": "media",
+   "categoria": "Breaking News",
+   "keywords": [
+    "mercados-accionarios",
+    "preview-semanal",
+    "volatilidad",
+    "catalizadores"
+   ],
+   "tgText": "📋 CNBC Preview: tres factores críticos en agenda para mercados accionarios semana próxima. Volatilidad esperada.",
+   "xText": "📋 Semana próxima: CNBC destaca tres factores críticos para mercados accionarios. Volatilidad en radar.",
+   "discordText": "**Preview semanal: mercados accionarios**\n• Tres factores clave a vigilar (detalles en cobertura completa)\n• Probable volatilidad en semana",
+   "pushText": "Tres factores clave para mercados accionarios en semana próxima",
+   "importancia": 5,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33532",
    "fecha": "2026-07-25T17:33:24+00:00",
@@ -130,6 +231,236 @@
     }
    ],
    "actualizado": "2026-07-26T19:03:50+00:00"
+  },
+  {
+   "id": "934469403",
+   "fecha": "2026-07-26T17:15:58.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/shein-reveals-key-financials-ahead-of-hong-kong-ipo.html",
+   "via": "CNBC",
+   "original": "Shein flags tariff hits after posting quarterly loss ahead of Hong Kong IPO",
+   "titulo": "Shein advierte sobre impacto de aranceles tras pérdida trimestral antes de IPO Hong Kong",
+   "resumen": "Plataforma de e-commerce Shein registró pérdida en trimestre reciente y advierte que aranceles comerciales impactarán negativamente sus márgenes. Noticia llega días antes de su IPO planificado en Hong Kong, generando dudas sobre valuación y proyecciones de rentabilidad.",
+   "analisis": {
+    "porque": "Shein es exponente de tensiones arancelarias globales (EE.UU.-China) en retail online; adviso de margen erosionado días antes de IPO sugiere sinceramiento forzado y riesgo de pricing de oferta pública.",
+    "queOcurrio": "Shein reporta pérdida trimestral y advierte sobre impacto de aranceles en márgenes operacionales previo a IPO en Hong Kong.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Hang Seng",
+    "Retail",
+    "CNY",
+    "Comercio"
+   ],
+   "sesgos": [
+    {
+     "activo": "Retail Online",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "shein",
+    "ipo",
+    "hong-kong",
+    "aranceles",
+    "retail",
+    "e-commerce",
+    "margenes"
+   ],
+   "tgText": "📉 Shein alerta sobre aranceles antes de IPO Hong Kong. Pérdida trimestral y presión de márgenes generan dudas sobre valuación de oferta pública.",
+   "xText": "📉 Shein: pérdida trimestral + advertencia arancelaría antes de IPO en Hong Kong. Riesgo de pricing agresivo en oferta por presión de márgenes.",
+   "discordText": "**Shein: resultados débiles y alerta arancelaría pre-IPO**\n• Pérdida trimestral reportada\n• Advertencia sobre impacto de aranceles en márgenes\n• IPO Hong Kong en calendario; valuación en riesgo",
+   "pushText": "Shein advierte sobre aranceles previo a IPO Hong Kong",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Hang Seng cae si IPO es repricing a la baja; pares de retail global (Amazon, Alibaba) pueden caer por contagio de concern arancelaría",
+    "despues": "Yuan presiona si tensiones arancelarias EE.UU-China se intensifican; commodities sensibles a demanda China afectados",
+    "escenarios": "Traders vigilan: (1) Reducción de precio de IPO respecto a valorizaciones pre-anuncio, (2) Cancelación total de oferta si rechazo de inversionistas, (3) Impacto cascada en other offshore tech IPOs de Hong Kong",
+    "riesgos": "Shein podría mantener IPO de todos modos con descuento; aranceles aún no implementados formalmente; mercado Hong Kong tiene appetite limitado para tech presionada"
+   },
+   "macro": {
+    "hang_seng": "Presión por IPO debilitada y tensiones arancelarias",
+    "retail": "Erosión de márgenes sector retail por guerra comercial",
+    "cny": "Presión bajista si China-EE.UU arranceles se expanden"
+   },
+   "updates": []
+  },
+  {
+   "id": "983731290",
+   "fecha": "2026-07-26T14:44:29.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/gen-x-investors-dotcom-bubble-retirement-portfolio.html",
+   "via": "CNBC",
+   "original": "For Gen X investors, dotcom bubble haunts stock market portfolios closing in on retirement",
+   "titulo": "Gen X: la burbuja de las puntocom vuelve a acechar carteras de jubilación",
+   "resumen": "Análisis señala que generación X, que enfrentó la burbuja dot-com en años 2000, ahora se acerca a jubilación con portafolios que repiten patrones de concentración en tecnología. El titular advierte sobre riesgos de replicar ciclos pasados de volatilidad extrema cercana a retiro.",
+   "analisis": {
+    "porque": "Identifica riesgo sistémico en asignación de portafolios de demografía masiva (Gen X) próxima a jubilación; ciclos históricos de valoración extrema en tech sugieren corrección venidera.",
+    "queOcurrio": "Análisis de CNBC contrasta vulnerabilidad actual de Gen X en carteras tech-heavy con trauma históricamente documentado del 2000-2002.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Tecnología"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tecnología",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "gen-x",
+    "burbuja-tech",
+    "jubilacion",
+    "riesgo-portafolio",
+    "valuacion",
+    "nasdaq"
+   ],
+   "tgText": "⚠️ Gen X y riesgo de burbuja tech: generación próxima a jubilación replica patrones de concentración de 2000. Carteras de retiro bajo presión de valuación extrema.",
+   "xText": "⚠️ Gen X acecha la historia: análisis advierte sobre concentración en tech cercana a jubilación, similar a escenario pre-burbuja 2000. Riesgo de valoración alto.",
+   "discordText": "**Riesgo sistémico Gen X: carteras tech en jubilación**\n• Generación próxima a retiro, concentrada en tecnología\n• Paralelo con trauma de burbuja dot-com 2000-2002\n• Riesgo de volatilidad extrema en fase crítica",
+   "pushText": "Gen X: riesgo de burbuja tech en carteras de jubilación",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Sector tecnológico vulnerable a profit-taking institucional de Gen X que comienza rotación defensiva; NASDAQ cae si se confirma desapalancamiento de magnitud",
+    "despues": "Bonos suben si asignación se rota a renta fija; dólar neutral si rotación es doméstica; volatilidad extrema si corrección de tech es abrupta",
+    "escenarios": "Traders monitoreán: (1) Flujos de fondos mutuales desde tech a conservador, (2) Volumen anómalo en opciones puts sobre QQQ/XLK, (3) Valuaciones forward P/E de mega-cap tech, (4) Correlación Gen X con rebalanceo de 401k",
+    "riesgos": "Análisis es especulativo sobre timing; burbuja tech podría persistir si tasas caen; título mezcla preocupación histórica sin datar nueva evidencia"
+   },
+   "macro": {
+    "nasdaq": "Presión bajista por desapalancamiento generacional esperado",
+    "sp500": "Rotación sectorial esperada hacia defensivas",
+    "bonos": "Potencial demanda alcista de Gen X defensiva"
+   },
+   "updates": []
+  },
+  {
+   "id": "942715835",
+   "fecha": "2026-07-26T14:06:53.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/how-can-ai-wealth-be-shared-with-all-americans.html",
+   "via": "CNBC",
+   "original": "How AI wealth could be distributed to all Americans",
+   "titulo": "¿Cómo distribuir la riqueza de IA a todos los estadounidenses?",
+   "resumen": "Artículo de análisis examina propuestas de cómo el boom de riqueza generado por IA podría redistribuirse a población estadounidense más amplia. Discute mecanismos de políticas públicas y reforma fiscal para capturar valor de IA. Contexto: debate en Washington sobre impuestos a ganancias de IA.",
+   "analisis": {
+    "porque": "Reforma fiscal sobre IA y distribución de riqueza tecnológica es debate macro de mercados: podría impactar márgenes de tech, costo de capital, y política de Fed sobre inflación de activos.",
+    "queOcurrio": "Análisis sobre mecanismos de redistribución de valor de IA a población general; propuestas de reforma fiscal en debate.",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Tecnología"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tecnología",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "ia-inteligencia-artificial",
+    "redistribucion-riqueza",
+    "reforma-fiscal",
+    "politica-monetaria",
+    "tech-regulacion"
+   ],
+   "tgText": "💡 Debate en marcha: cómo redistribuir riqueza de IA a estadounidenses. Reforma fiscal podría impactar márgenes de tech y política de Fed.",
+   "xText": "💡 EE.UU debate: mecanismos de redistribución de riqueza de IA. Reforma fiscal potencial sobre ganancias tecnológicas en agenda.",
+   "discordText": "**Debate: redistribución de riqueza de IA**\n• Propuestas de reforma fiscal en análisis\n• Mecanismos de captura de valor de IA\n• Impacto potencial en márgenes de tech",
+   "pushText": "Debate sobre redistribución de riqueza generada por IA en EE.UU",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Acciones de mega-cap tech (Nvidia, Microsoft, Google) presionan bajista si reforma fiscal a IA avanza; NASDAQ cae por concern de captura de ganancias",
+    "despues": "Bonos suben si reforma incluye redistribución vía impuestos; dólar neutral; commodities sin efecto directo",
+    "escenarios": "Traders vigilarán: (1) Propuestas específicas de imposición a IA en Congress, (2) Reacción de administración a debate, (3) Consenso político sobre timing e implementación",
+    "riesgos": "Análisis es especulativo; reforma fiscal es proceso lento; inversores tech pueden descontar totalmente o ignorar hasta que sea inminente"
+   },
+   "macro": {
+    "nasdaq": "Potencial presión bajista por reforma fiscal especulativa",
+    "sp500": "Sesgo neutral a bajista si reforma toma momentum"
+   },
+   "updates": []
+  },
+  {
+   "id": "974181596",
+   "fecha": "2026-07-26T13:30:02.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/opportunity-zone-investors-face-deferred-capital-gains-tax-bill.html",
+   "via": "CNBC",
+   "original": "Some high-earning investors will soon owe taxes on years of deferred capital gains",
+   "titulo": "Inversores de alto patrimonio enfrentan nuevos impuestos sobre ganancias de capital diferidas",
+   "resumen": "El titular refiere a cambios tributarios que afectarán a inversores de altos ingresos respecto a ganancias de capital que han sido diferidas en años anteriores. La medida impactaría la planificación fiscal de patrimonios relevantes en EE.UU. El titular no especifica fechas exactas de implementación ni montos específicos en juego.",
+   "analisis": {
+    "porque": "Afecta directamente estrategias de inversión y repatriación de capitales en mercados estadounidenses; genera recalcidad de portafolios entre inversores institucionales y de alto patrimonio.",
+    "queOcurrio": "Anuncio de cambios tributarios que gravan ganancias de capital históricamente diferidas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "USD"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "impuestos",
+    "ganancias-capital",
+    "inversores-patrimoniales",
+    "reformas-tributarias",
+    "EE.UU"
+   ],
+   "tgText": "📊 Cambios tributarios en EE.UU: inversores de alto patrimonio enfrentarán nuevos impuestos sobre ganancias de capital diferidas. Impacto en repatriación de capitales e inversión.",
+   "xText": "📊 Reforma tributaria en EE.UU: nuevos impuestos para inversores de alto patrimonio sobre ganancias de capital diferidas. Replanificación de portafolios en curso.",
+   "discordText": "**Reforma tributaria en inversores patrimoniales**\n• Nuevos impuestos sobre ganancias de capital diferidas\n• Afecta estrategias de inversión en EE.UU\n• Impacto en repatriación de capitales",
+   "pushText": "Nuevos impuestos tributarios a ganancias de capital diferidas en EE.UU",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de sectores de alto crecimiento (NASDAQ) pueden caer por venta preventiva de patrimonios",
+    "despues": "Bonos del tesoro podrían subir si se anticipa menor demanda de activos riesgosos; dólar tendería al alza por rotación defensiva",
+    "escenarios": "Traders vigilarán anuncios específicos de tasas y cronogramas de implementación; movimientos en sectores tech y financiero donde concentran ganancias diferidas",
+    "riesgos": "El titular carece de detalles sobre montos, tasas y fechas; reformas tributarias pueden dilatarse o modificarse en trámite legislativo"
+   },
+   "macro": {
+    "dolar": "Potencial al alza por repatriación defensiva",
+    "nasdaq": "Presión a corto plazo por ajuste de portafolios",
+    "sp500": "Sesgo bajista en anticipación",
+    "bonos": "Potencial alcista por rotación defensiva",
+    "oro": "Posible demanda defensiva"
+   },
+   "updates": []
   },
   {
    "id": "33535",
@@ -5017,6 +5348,16 @@
   "https://www.cnbc.com/2026/07/25/here-are-4-forces-that-drove-a-tough-week-for-stocks.html",
   "https://www.cnbc.com/2026/07/25/us-appeals-court-rules-trump-cannot-implement-mail-in-voting-order.html",
   "https://www.cnbc.com/2026/07/25/samsung-electronics-wins-200-billion-broadcom-ai-chip-partnership.html",
-  "https://www.cnbc.com/2026/07/26/cocoa-prices-chocolate-lindt-barry-callebaut-nestle.html"
+  "https://www.cnbc.com/2026/07/26/cocoa-prices-chocolate-lindt-barry-callebaut-nestle.html",
+  "https://www.cnbc.com/2026/07/26/new-uk-prime-minister-burnham-says-he-would-be-prepared-to-call-out-trump.html",
+  "https://www.cnbc.com/2026/07/26/opportunity-zone-investors-face-deferred-capital-gains-tax-bill.html",
+  "https://www.cnbc.com/2026/07/26/how-different-generations-are-rewriting-the-american-dream-today.html",
+  "https://www.cnbc.com/2026/07/26/how-can-ai-wealth-be-shared-with-all-americans.html",
+  "https://www.cnbc.com/2026/07/26/gen-x-investors-dotcom-bubble-retirement-portfolio.html",
+  "https://www.cnbc.com/2026/07/26/ukraine-strikes-iranian-vessels-tehran-accuses-kyiv-of-hostile-act.html",
+  "https://www.cnbc.com/2026/07/26/shein-reveals-key-financials-ahead-of-hong-kong-ipo.html",
+  "https://www.cnbc.com/2026/07/26/vehicle-mows-down-crowd-at-berlin-pride-festival-killing-one.html",
+  "https://www.cnbc.com/2026/07/26/here-are-the-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+  "https://www.cnbc.com/2026/07/26/stock-market-today-live-updates.html"
  ]
 }
