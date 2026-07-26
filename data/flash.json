@@ -1,6 +1,6 @@
 {
- "lastId": 33544,
- "actualizado": "2026-07-26T15:40:07.904Z",
+ "lastId": 33545,
+ "actualizado": "2026-07-26T17:45:14.470Z",
  "items": [
   {
    "id": "33532",
@@ -75,6 +75,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-26T17:43:22+00:00",
+     "id": "33545",
+     "texto": "El canciller iraní declaró que un ataque ucraniano a un buque comercial iraní en el Mar Caspio «no quedará sin respuesta» tras reportarse una explosión que dejó un marinero muerto y otro herido. Las conversaciones incluyeron a la jefa de política exterior de la UE y el canciller ruso. Escala la retórica mientras se negocian cuestiones en el Estrecho de Hormuz.",
+     "tgUrl": "https://t.me/walterbloomberg/33545"
+    },
+    {
      "fecha": "2026-07-26T15:25:35+00:00",
      "id": "33544",
      "texto": "CBS News reporta que funcionarios omaníes viajaron a Teherán el viernes para negociaciones, factor que explica la pausa en bombardeos estadounidenses ordenada por Trump. Omán actúa como intermediario clave en esfuerzos de desescalada, aunque el titular no proporciona detalles de lo discutido o próximos pasos.",
@@ -117,7 +123,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33534"
     }
    ],
-   "actualizado": "2026-07-26T15:25:35+00:00"
+   "actualizado": "2026-07-26T17:43:22+00:00"
   },
   {
    "id": "33535",
