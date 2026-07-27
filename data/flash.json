@@ -1,7 +1,380 @@
 {
  "lastId": 33625,
- "actualizado": "2026-07-27T20:40:54.497Z",
+ "actualizado": "2026-07-27T22:45:48.091Z",
  "items": [
+  {
+   "id": "920113870",
+   "fecha": "2026-07-27T22:20:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/jim-cramer-warns-ai-circular-financing-echoes-dot-com-bubble.html",
+   "via": "CNBC",
+   "original": "Jim Cramer warns AI&apos;s circular financing frenzy echoes the dot-com bubble",
+   "titulo": "Jim Cramer advierte: financiamiento circular de IA replica burbuja de puntocom",
+   "resumen": "El analista Jim Cramer emitió una advertencia sobre las dinámicas de financiamiento en el sector de IA, comparándolas con los patrones que precedieron al colapso de la burbuja tecnológica de 2000. Señala ciclos de inversión circular y valuaciones desacopladas de fundamentos.",
+   "analisis": {
+    "porque": "Opinión influyente en retail y traders; reaviva debate sobre sostenibilidad de valuaciones tech. Puede catalizar revisión de posiciones en semiconductores y IA.",
+    "queOcurrio": "Cramer advirtió que el financiamiento frenético en IA replica patrones especulativos del dot-com, incluyendo lógica circular de inversiones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Semiconductores",
+    "Nvidia",
+    "Mega-cap Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Jim-Cramer",
+    "burbuja-IA",
+    "dot-com",
+    "financiamiento-circular",
+    "valuaciones"
+   ],
+   "tgText": "📺 Cramer: IA replica burbuja puntocom. Financiamiento circular y valuaciones fuera de fundamentos. Alerta sobre riesgos sistémicos en sector.",
+   "xText": "📺 Jim Cramer advierte que dinámicas de financiamiento en IA replican patrones de burbuja dot-com 2000. Reaviva debate sobre valuaciones.",
+   "discordText": "**Cramer: Burbuja IA vs Dot-Com**\n• Comparación de patrones de financiamiento circular\n• Valuaciones desacopladas de fundamentos\n• Alerta sobre sostenibilidad del ciclo\n• Monitorear volatilidad en tech",
+   "pushText": "Cramer: financiamiento de IA replica burbuja dot-com",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Semiconductores y mega-cap tech bajo presión; especialmente Nvidia por mayor exposición a IA.",
+    "despues": "Potencial rotación hacia defensivos; bonos pueden beneficiarse si presión se intensifica.",
+    "escenarios": "Traders monitorean: (1) si otros analistas amplan la advertencia, (2) salidas retail de tech, (3) revisiones bajistas de analistas de Wall Street, (4) correlaciones con VIX.",
+    "riesgos": "Opinion editorial, no dato empírico; Cramer tiene historial mixto de llamadas. No es confirmación de burbuja, solo advertencia especulativa."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33620",
+   "fecha": "2026-07-27T18:49:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33620",
+   "via": "DeItaone",
+   "original": "$NVDA - NVIDIA CREDIT RISK JUMPS The cost of insuring Nvidia's debt surged to a record after reports the company is discussing more than $750 billion in AI infrastructure financing tied to OpenAI. Investors are growing concerned about Nvidia's expanding financial commitments, with analysts warning complex financing structures could increase credit risks.",
+   "titulo": "Costo de aseguro de deuda de Nvidia salta a máximo histórico; acuerdo OpenAI genera dudas",
+   "resumen": "El costo de cobertura de riesgo crediticio de Nvidia alcanzó máximos históricos tras reportes de negociaciones de financiamiento de infraestructura IA por más de $750 mil millones vinculado a OpenAI. Inversores expresan preocupación por compromisos financieros ampliados y complejidad de estructuras de financiamiento, elevando riesgos de crédito percibidos.",
+   "analisis": {
+    "porque": "Señal de mercado de crédito sobre endeudamiento corporativo; CDS widening indica erosión de confianza en perfil financiero de Nvidia; afecta costo de capital futuro y valuación de deuda.",
+    "queOcurrio": "Spread de CDS de Nvidia alcanzó nivel máximo histórico tras anuncios de Nvidia discutiendo financiamiento por $750B+ para infraestructura IA relacionada con OpenAI.",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada (reportes de mercado)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NVDA",
+    "Semiconductores",
+    "Bonos corporativos",
+    "Deuda Nvidia",
+    "NASDAQ",
+    "CDS Nvidia"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos corporativos de tech",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas|Breaking News",
+   "keywords": [
+    "nvidia-cds",
+    "riesgo-crediticio",
+    "deuda-historico",
+    "openai-financiamiento",
+    "apalancamiento-nvidia"
+   ],
+   "tgText": "⚠️ CDS Nvidia en máximo histórico. Mercado de crédito señala alarma: financiamiento de $750B+ para IA genera dudas sobre apalancamiento. Costo de capital corporativo en riesgo.",
+   "xText": "🚨 CDS Nvidia alcanza máximo histórico. Mercado de crédito advierte: negociación de financiamiento $750B+ para infraestructura IA eleva riesgos. Preocupaciones sobre estructura y endeudamiento.",
+   "discordText": "**⚠️ NVIDIA en alerta de crédito**\n• CDS en máximo histórico\n• Negociaciones de financiamiento $750B+ OpenAI\n• Mercado señala riesgos de apalancamiento y estructuras complejas\n• Presión en deuda corporativa de tech",
+   "pushText": "CDS Nvidia en máximo histórico por financiamiento de $750B; crédito en alerta",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Bonos de Nvidia (IG spread) se amplían inmediatamente; CDS sigue widening; NVDA equity bajo presión si mercado teme dilución de accionistas o covenant breaches.",
+    "despues": "Semiconductores conexos (AMD, ASML, TSMC) pueden sufrir contagio por re-rating de sector; spreads corporativos de tech se amplían; tasas de financiamiento de grandes caps en presión.",
+    "escenarios": "Traders vigilan: (1) comunicados oficiales de Nvidia sobre términos del acuerdo; (2) rating agencies (Moody's, S&P) vs. mercado de CDS; (3) capacidad de servicio de deuda vs. flujos de caja IA; (4) si $750B es financiamiento externo o canje de equity.",
+    "riesgos": "Titular es RUMOR (reportes sin confirmación oficial); CDS puede revertir si Nvidia aclara términos; riesgo de que estructura sea equity financing vs. deuda, inversando la narrativa; contagio sistémico si se interpreta como señal de sobreendeudamiento de mega-cap tech."
+   },
+   "macro": {
+    "dolar": "Neutral",
+    "oro": "Neutral a levemente alcista si aversión a riesgo sube",
+    "nasdaq": "Bajista por repricing de tech megacap",
+    "dow": "Neutral",
+    "sp500": "Bajista si Nvidia repricing es contagioso",
+    "bitcoin": "Neutral a bajista si flight-to-safety domina",
+    "ethereum": "Bajista por correlación con riesgo de crédito tech",
+    "bonos": "Alcista (yields bajan) si aversión a riesgo domina corporativos",
+    "petroleo": "Neutral"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-27T21:29:40.000Z",
+     "id": "931574249",
+     "texto": "Actualización: fuentes reportan que Nvidia y OpenAI discuten un mecanismo de respaldo financiero de hasta $250 mil millones destinado a financiar planes de infraestructura de inteligencia artificial. Esto amplía la escala de lo previamente reportado sobre el acuerdo entre ambas compañías.",
+     "tgUrl": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html"
+    }
+   ],
+   "actualizado": "2026-07-27T21:29:40.000Z"
+  },
+  {
+   "id": "33591",
+   "fecha": "2026-07-27T13:56:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33591",
+   "via": "DeItaone",
+   "original": "$SPCX - SPACEX SHARES HIT ALL-TIME LOW, LAST DOWN 3.9% AT $110.6",
+   "titulo": "SpaceX cae a mínimo histórico, baja 3,9% a $110,60",
+   "resumen": "Las acciones de SpaceX ($SPCX) alcanzaron un mínimo histórico, cayendo 3,9% hasta $110,60 en la sesión de hoy. El titular no especifica la causa inmediata de la venta, aunque se alinea con presión general en tech y creciente competencia en sector aeroespacial. La caída se suma a debilidad más amplia del NASDAQ durante la jornada.",
+   "analisis": {
+    "porque": "SpaceX es pilar de narrativa tech y manufactura USA avanzada. Mínimos históricos señalan cambio de sentimiento en space economy o valuación. Afecta capitales de riesgo en tech y percepción de crecimiento futuro.",
+    "queOcurrio": "SpaceX cotiza privadamente en secundarios (no es IPO pública). Caída a mínimos históricos en rondas privadas o trading OTC señala realización masiva o cambio en expectativas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (datos de trading secundario)"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "SpaceX",
+    "Tech Private Equity",
+    "NASDAQ",
+    "Space Economy"
+   ],
+   "sesgos": [
+    {
+     "activo": "SpaceX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "tech",
+    "private-equity",
+    "space-economy",
+    "valuación"
+   ],
+   "tgText": "📉 SpaceX toca mínimo histórico: -3,9% a $110,60. Señal de realización en private equity tech. Presión en narrativa de space economy.",
+   "xText": "SpaceX cae a mínimo histórico: -3,9% a $110,60. Refleja presión generalizada en private equity tech y revaluación de space economy.",
+   "discordText": "**SpaceX en Mínimo Histórico**\n• Precio: $110,60 (-3,9%)\n• Mercado: Secundario/OTC\n• Señal: Realización en private equity tech\n• Contexto: NASDAQ débil, tech presionado",
+   "pushText": "SpaceX toca mínimo histórico a $110,60",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Private equity tech sufre realización generalizada. Fondos de VC revisan portfolios. Confianza en valuaciones space economy se debilita.",
+    "despues": "NASDAQ continúa bajo presión. Startups tech sienten presión de financiación. Sentimiento risk-off en inversión temprana.",
+    "escenarios": "Traders vigilan: (1) ¿hay ventas de accionistas clave? (2) ¿presión de margin calls? (3) ¿revisión de roadmap operacional? (4) ¿impacto en IPO futura?",
+    "riesgos": "SpaceX no es cotizada públicamente. Precios son de mercados secundarios de baja liquidez. Volatilidad puede ser artefacto de bajo volumen. No debe interpretarse como desempeño operacional."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-27T21:26:03.000Z",
+     "id": "984407945",
+     "texto": "Actualización: SpaceX ha experimentado pérdidas de capitalización de mercado equivalentes al valor total de una empresa Tesla. La caída refleja presiones sobre el sector espacial comercial y dinámicas de valuación de startups de alto riesgo.",
+     "tgUrl": "https://www.cnbc.com/2026/07/27/spacex-has-now-lost-the-equivalent-of-a-full-tesla-in-market-capitalization.html"
+    }
+   ],
+   "actualizado": "2026-07-27T21:26:03.000Z"
+  },
+  {
+   "id": "989599366",
+   "fecha": "2026-07-27T21:12:26.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/apple-most-valuable-company-nvidia.html",
+   "via": "CNBC",
+   "original": "Apple ends day as world&apos;s most valuable company, passing Nvidia",
+   "titulo": "Apple supera a Nvidia y se corona como empresa más valiosa del mundo",
+   "resumen": "Apple cerró la sesión como la empresa más valiosa globalmente, superando a Nvidia. El cambio refleja volatilidad en mega-cap tech y rotaciones de capital entre líderes del sector de inteligencia artificial y tecnología.",
+   "analisis": {
+    "porque": "Indicador de dinámicas de flujo de capital en tech; rotación desde semiconductores/IA hacia consumo. Afecta percepciones de riesgo sectorial y rebalanceos de portfolios.",
+    "queOcurrio": "Apple eclipsó a Nvidia en capitalización bursátil, posicionándose como la compañía más valiosa.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Apple",
+    "Nvidia",
+    "NASDAQ",
+    "S&P 500",
+    "Tech mega-cap"
+   ],
+   "sesgos": [
+    {
+     "activo": "Apple",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nvidia",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Apple",
+    "Nvidia",
+    "mega-cap",
+    "capitalización-bursátil",
+    "rotación-tech"
+   ],
+   "tgText": "📈 Apple supera a Nvidia como empresa más valiosa del mundo. Señal de rotación de capital desde IA/semiconductores hacia consumo.",
+   "xText": "📈 Apple se posiciona como empresa más valiosa globalmente, superando a Nvidia. Refleja dinámicas de rotación en mega-cap tech.",
+   "discordText": "**Apple Supera a Nvidia**\n• Apple ahora es la empresa más valiosa\n• Rotación desde semiconductores/IA\n• Dinámicas de rebalanceo en mega-cap\n• Monitorear continuidad del movimiento",
+   "pushText": "Apple supera a Nvidia; rotación en mega-cap tech",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Semiconductores bajo presión; Apple sube por flight-to-quality y diversificación de riesgo.",
+    "despues": "Potencial impacto en indices ponderados por capitalización; rebalanceos de fondos índice.",
+    "escenarios": "Traders monitoran: (1) si rotación es temporal o estructural, (2) fundamentales de ambas compañías, (3) flujos de hedge funds, (4) posicionamiento en opciones.",
+    "riesgos": "Es un snapshot de un día; volatilidad normal en mega-cap; no implica debilidad fundamental de Nvidia."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "916473851",
+   "fecha": "2026-07-27T20:52:29.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/from-oil-to-shock-heres-what-kalshi-traders-expect-warsh-to-say.html",
+   "via": "CNBC",
+   "original": "From &apos;oil&apos; to &apos;shock&apos;, here&apos;s what Kalshi traders expect Fed Chairman Kevin Warsh will say this week",
+   "titulo": "Operadores de Kalshi predicen temas clave para discurso de Kevin Warsh",
+   "resumen": "Según apuestas en plataforma Kalshi, operadores esperan que el presidente de la Reserva Federal Kevin Warsh aborde temas como 'petróleo', 'shock' y otros términos vinculados a política monetaria y riesgos macroeconómicos durante presentaciones esta semana.",
+   "analisis": {
+    "porque": "Indica expectativas de mercado sobre mensajería de autoridad monetaria clave; puede adelantar volatilidad en renta fija, divisas y commodities según agenda percibida de la Fed.",
+    "queOcurrio": "Operadores de Kalshi (plataforma de apuestas de predicción regulada) apuestan sobre terminología que Warsh utilizará en sus intervenciones.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Dólar",
+    "Petróleo",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "FED",
+   "keywords": [
+    "Kevin-Warsh",
+    "Fed",
+    "política-monetaria",
+    "expectativas-mercado",
+    "Kalshi"
+   ],
+   "tgText": "🏦 Kalshi: operadores apuestan sobre términos en discurso de Warsh. Monitorear señales sobre política monetaria y riesgos macroeconómicos.",
+   "xText": "🏦 Apuestas en Kalshi sugieren que Kevin Warsh enfatizará 'petróleo' y 'shock' en discursos esta semana. Monitorear signaling de la Fed.",
+   "discordText": "**Warsh: Expectativas de Mercado**\n• Kalshi: operadores apuestan sobre terminología\n• Énfasis esperado en petróleo y choques\n• Monitorear signaling de Fed\n• Impacto bajo en mercados",
+   "pushText": "Kalshi anticipa énfasis en petróleo/choques en discurso de Warsh",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Bonos y dólar podrían reaccionar si el tono sugiere mayor preocupación sobre inflación o choques.",
+    "despues": "Acciones defensivas si el mensaje es hawkish; commodities si hay énfasis inflacionario.",
+    "escenarios": "Traders monitoran: (1) lenguaje exacto sobre política monetaria, (2) señales sobre inflación/desempleo, (3) velocidad esperada de cambios de tasas.",
+    "riesgos": "Apuestas en Kalshi son especulativas; no tienen poder predictivo comprobado. La noticia es meta-análisis de rumor, no confirmación de hechos."
+   },
+   "macro": {
+    "bonos": "Potencial volatilidad según tono esperado",
+    "dolar": "Sensible a signals de tasas"
+   },
+   "updates": []
+  },
+  {
+   "id": "998094364",
+   "fecha": "2026-07-27T20:51:08.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/trump-says-us-has-sold-more-than-13-billion-of-venezuela-oil-.html",
+   "via": "CNBC",
+   "original": "Trump says U.S. has sold more than $13 billion of Venezuela oil since Maduro&apos;s capture",
+   "titulo": "Trump anuncia venta de más de $13 mil millones en petróleo venezolano",
+   "resumen": "El presidente Trump informó que Estados Unidos ha vendido más de $13 mil millones en crudo venezolano desde la captura de Maduro. La noticia refleja cambios geopolíticos en la región y potencial aumento en suministros de petróleo. El titular no especifica el período exacto ni el precio de realización de estas ventas.",
+   "analisis": {
+    "porque": "Afecta directamente la oferta global de petróleo, expectativas de precios, y la postura comercial de EE.UU. hacia Latinoamérica. Impacta activos energéticos y percepciones de riesgo geopolítico.",
+    "queOcurrio": "Trump declaró que EE.UU. ha vendido petróleo venezolano por valor superior a $13 mil millones desde eventos recientes vinculados a Maduro.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "XLE",
+    "Dólar",
+    "Mercados Latinoamericanos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Mercados Latinoamericanos",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "petróleo-venezolano",
+    "Trump",
+    "suministro-energético",
+    "comercio-bilateral",
+    "WTI"
+   ],
+   "tgText": "🛢️ Trump confirma venta de $13B+ en petróleo venezolano. Presión bajista esperada en WTI; mercados monitorean impacto en suministro global y dinámicas geopolíticas.",
+   "xText": "🛢️ Trump anuncia venta de $13B+ en crudo venezolano desde captura de Maduro. Potencial presión bajista en WTI; vigila suministro global y geopolítica regional.",
+   "discordText": "**Petróleo Venezolano: $13B+ en Ventas**\n• Trump confirma venta de crudo por $13 mil millones\n• Cambios en dinámicas geopolíticas regionales\n• Expectativa: presión bajista en WTI\n• Monitorear suministro global",
+   "pushText": "Trump vende $13B+ en petróleo venezolano; presión esperada en WTI",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "WTI y Brent caerían por expectativa de mayor oferta global; correlación inversa con riesgo geopolítico disminuido.",
+    "despues": "Dólar se fortalecería por mayor capacidad de EE.UU. para monetizar recursos; mercados energéticos globales se rebalancearían.",
+    "escenarios": "Traders vigilarán: (1) volumen real de exportaciones y cronograma, (2) respuesta de productores OPEC+, (3) sustentabilidad del suministro, (4) impacto en márgenes de refinerías.",
+    "riesgos": "Dato citado sin especificar período; no se confirma si incluye pronósticos futuros o solo ventas ejecutadas. Potencial exageración política."
+   },
+   "macro": {
+    "petroleo": "Presión bajista por aumento de oferta esperada"
+   },
+   "updates": []
+  },
   {
    "id": "33600",
    "fecha": "2026-07-27T15:08:14+00:00",
@@ -196,77 +569,6 @@
     }
    ],
    "actualizado": "2026-07-27T18:57:07+00:00"
-  },
-  {
-   "id": "33620",
-   "fecha": "2026-07-27T18:49:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33620",
-   "via": "DeItaone",
-   "original": "$NVDA - NVIDIA CREDIT RISK JUMPS The cost of insuring Nvidia's debt surged to a record after reports the company is discussing more than $750 billion in AI infrastructure financing tied to OpenAI. Investors are growing concerned about Nvidia's expanding financial commitments, with analysts warning complex financing structures could increase credit risks.",
-   "titulo": "Costo de aseguro de deuda de Nvidia salta a máximo histórico; acuerdo OpenAI genera dudas",
-   "resumen": "El costo de cobertura de riesgo crediticio de Nvidia alcanzó máximos históricos tras reportes de negociaciones de financiamiento de infraestructura IA por más de $750 mil millones vinculado a OpenAI. Inversores expresan preocupación por compromisos financieros ampliados y complejidad de estructuras de financiamiento, elevando riesgos de crédito percibidos.",
-   "analisis": {
-    "porque": "Señal de mercado de crédito sobre endeudamiento corporativo; CDS widening indica erosión de confianza en perfil financiero de Nvidia; afecta costo de capital futuro y valuación de deuda.",
-    "queOcurrio": "Spread de CDS de Nvidia alcanzó nivel máximo histórico tras anuncios de Nvidia discutiendo financiamiento por $750B+ para infraestructura IA relacionada con OpenAI.",
-    "estado": "rumor",
-    "fuenteOriginal": "no indicada (reportes de mercado)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NVDA",
-    "Semiconductores",
-    "Bonos corporativos",
-    "Deuda Nvidia",
-    "NASDAQ",
-    "CDS Nvidia"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVDA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos corporativos de tech",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas|Breaking News",
-   "keywords": [
-    "nvidia-cds",
-    "riesgo-crediticio",
-    "deuda-historico",
-    "openai-financiamiento",
-    "apalancamiento-nvidia"
-   ],
-   "tgText": "⚠️ CDS Nvidia en máximo histórico. Mercado de crédito señala alarma: financiamiento de $750B+ para IA genera dudas sobre apalancamiento. Costo de capital corporativo en riesgo.",
-   "xText": "🚨 CDS Nvidia alcanza máximo histórico. Mercado de crédito advierte: negociación de financiamiento $750B+ para infraestructura IA eleva riesgos. Preocupaciones sobre estructura y endeudamiento.",
-   "discordText": "**⚠️ NVIDIA en alerta de crédito**\n• CDS en máximo histórico\n• Negociaciones de financiamiento $750B+ OpenAI\n• Mercado señala riesgos de apalancamiento y estructuras complejas\n• Presión en deuda corporativa de tech",
-   "pushText": "CDS Nvidia en máximo histórico por financiamiento de $750B; crédito en alerta",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Bonos de Nvidia (IG spread) se amplían inmediatamente; CDS sigue widening; NVDA equity bajo presión si mercado teme dilución de accionistas o covenant breaches.",
-    "despues": "Semiconductores conexos (AMD, ASML, TSMC) pueden sufrir contagio por re-rating de sector; spreads corporativos de tech se amplían; tasas de financiamiento de grandes caps en presión.",
-    "escenarios": "Traders vigilan: (1) comunicados oficiales de Nvidia sobre términos del acuerdo; (2) rating agencies (Moody's, S&P) vs. mercado de CDS; (3) capacidad de servicio de deuda vs. flujos de caja IA; (4) si $750B es financiamiento externo o canje de equity.",
-    "riesgos": "Titular es RUMOR (reportes sin confirmación oficial); CDS puede revertir si Nvidia aclara términos; riesgo de que estructura sea equity financing vs. deuda, inversando la narrativa; contagio sistémico si se interpreta como señal de sobreendeudamiento de mega-cap tech."
-   },
-   "macro": {
-    "dolar": "Neutral",
-    "oro": "Neutral a levemente alcista si aversión a riesgo sube",
-    "nasdaq": "Bajista por repricing de tech megacap",
-    "dow": "Neutral",
-    "sp500": "Bajista si Nvidia repricing es contagioso",
-    "bitcoin": "Neutral a bajista si flight-to-safety domina",
-    "ethereum": "Bajista por correlación con riesgo de crédito tech",
-    "bonos": "Alcista (yields bajan) si aversión a riesgo domina corporativos",
-    "petroleo": "Neutral"
-   },
-   "updates": []
   },
   {
    "id": "33619",
@@ -849,61 +1151,6 @@
     "sp500": "Bajista -0,1%",
     "bonos": "Alcistas (yields bajan)"
    },
-   "updates": []
-  },
-  {
-   "id": "33591",
-   "fecha": "2026-07-27T13:56:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33591",
-   "via": "DeItaone",
-   "original": "$SPCX - SPACEX SHARES HIT ALL-TIME LOW, LAST DOWN 3.9% AT $110.6",
-   "titulo": "SpaceX cae a mínimo histórico, baja 3,9% a $110,60",
-   "resumen": "Las acciones de SpaceX ($SPCX) alcanzaron un mínimo histórico, cayendo 3,9% hasta $110,60 en la sesión de hoy. El titular no especifica la causa inmediata de la venta, aunque se alinea con presión general en tech y creciente competencia en sector aeroespacial. La caída se suma a debilidad más amplia del NASDAQ durante la jornada.",
-   "analisis": {
-    "porque": "SpaceX es pilar de narrativa tech y manufactura USA avanzada. Mínimos históricos señalan cambio de sentimiento en space economy o valuación. Afecta capitales de riesgo en tech y percepción de crecimiento futuro.",
-    "queOcurrio": "SpaceX cotiza privadamente en secundarios (no es IPO pública). Caída a mínimos históricos en rondas privadas o trading OTC señala realización masiva o cambio en expectativas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (datos de trading secundario)"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "SpaceX",
-    "Tech Private Equity",
-    "NASDAQ",
-    "Space Economy"
-   ],
-   "sesgos": [
-    {
-     "activo": "SpaceX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX",
-    "tech",
-    "private-equity",
-    "space-economy",
-    "valuación"
-   ],
-   "tgText": "📉 SpaceX toca mínimo histórico: -3,9% a $110,60. Señal de realización en private equity tech. Presión en narrativa de space economy.",
-   "xText": "SpaceX cae a mínimo histórico: -3,9% a $110,60. Refleja presión generalizada en private equity tech y revaluación de space economy.",
-   "discordText": "**SpaceX en Mínimo Histórico**\n• Precio: $110,60 (-3,9%)\n• Mercado: Secundario/OTC\n• Señal: Realización en private equity tech\n• Contexto: NASDAQ débil, tech presionado",
-   "pushText": "SpaceX toca mínimo histórico a $110,60",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Private equity tech sufre realización generalizada. Fondos de VC revisan portfolios. Confianza en valuaciones space economy se debilita.",
-    "despues": "NASDAQ continúa bajo presión. Startups tech sienten presión de financiación. Sentimiento risk-off en inversión temprana.",
-    "escenarios": "Traders vigilan: (1) ¿hay ventas de accionistas clave? (2) ¿presión de margin calls? (3) ¿revisión de roadmap operacional? (4) ¿impacto en IPO futura?",
-    "riesgos": "SpaceX no es cotizada públicamente. Precios son de mercados secundarios de baja liquidez. Volatilidad puede ser artefacto de bajo volumen. No debe interpretarse como desempeño operacional."
-   },
-   "macro": null,
    "updates": []
   },
   {
@@ -7539,243 +7786,6 @@
     "petroleo": "En alza según el titular, factor que presiona a la baja los precios de los bonos."
    },
    "updates": []
-  },
-  {
-   "id": 33437,
-   "fecha": "2026-07-19T14:58:29+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33437",
-   "original": "WALL STREET WEEK AHEAD: $GOOGL, $INTC IN FOCUS U.S. earnings season accelerates next week, with $GOOGL and $INTC among the most closely watched reports as investors look for signals on AI spending, corporate profitability, and the broader market outlook. Markets ended the week on a softer note, with the S&P 500 posting a weekly decline after a sharp pullback in semiconductor stocks. Even so, the i",
-   "titulo": "Wall Street mira a Google e Intel en una semana clave de resultados y con la Fed en el horizonte",
-   "resumen": "La próxima semana más de 80 empresas del S&P 500 presentarán resultados, con foco en Alphabet ($GOOGL, miércoles) e Intel ($INTC), además de Texas Instruments, Tesla, American Express, RTX y Philip Morris. El mercado busca señales sobre el gasto en IA tras la debilidad reciente del sector semiconductor, que cayó más de 20% desde su máximo de junio. El consenso de LSEG IBES proyecta un crecimiento interanual de ganancias del 26% para el S&P 500 en el segundo trimestre. El S&P 500 cerró la semana con caída, aunque se mantiene un 9% arriba en el año y 2% debajo de su máximo histórico.",
-   "analisis": {
-    "porque": "Los resultados de las grandes tecnológicas y semiconductoras definirán si el repunte impulsado por la IA tiene continuidad, en un contexto de tensión geopolítica en Medio Oriente y expectativa por la reunión de la Fed a fin de mes.",
-    "queOcurrio": "Un resumen de mercado detalla la agenda de resultados corporativos de la próxima semana, con énfasis en Alphabet, Intel y Texas Instruments, y el contexto macro y geopolítico que rodea a los inversores.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Acciones tecnológicas",
-    "GOOGL",
-    "INTC",
-    "TXN",
-    "TSLA"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "earnings",
-    "Google",
-    "Intel",
-    "IA",
-    "semiconductores",
-    "Fed"
-   ],
-   "tgText": "📊 Semana clave de resultados: $GOOGL, $INTC, $TXN, $TSLA reportan. El mercado busca señales sobre el gasto en IA tras la caída de semiconductores.",
-   "xText": "Wall Street Week Ahead: $GOOGL e $INTC en el centro de atención. Más de 80 empresas del S&P 500 reportan, con la IA y la Fed como ejes clave. #Earnings #IA",
-   "discordText": "**📊 Semana clave de resultados corporativos**\n- $GOOGL reporta el miércoles, foco en gasto de IA\n- $INTC, $TXN, $TSLA, $AXP, $RTX, $PM también reportan\n- Consenso: +26% YoY en ganancias del S&P 500\n- Sector semiconductores en bear market (-20% desde junio)",
-   "pushText": "Semana clave: resultados de Google e Intel",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Las acciones individuales de las empresas que reportan (GOOGL, INTC, TXN) suelen moverse primero tras la publicación de resultados y guías.",
-    "despues": "El índice Nasdaq y el S&P 500 en conjunto, especialmente el sector semiconductor, pueden verse arrastrados por el tono de las guías sobre gasto en IA.",
-    "escenarios": "Los inversores siguen de cerca los comentarios sobre inversión en infraestructura de IA, márgenes y la reacción del mercado a resultados de Samsung y TSMC como referencia previa.",
-    "riesgos": "Las expectativas ya están muy elevadas en el sector tecnológico y semiconductor, lo que incrementa el riesgo de reacciones negativas incluso ante resultados sólidos."
-   },
-   "macro": {
-    "dolar": "sin sesgo directo mencionado en el titular",
-    "oro": "sin mención directa",
-    "nasdaq": "en foco por resultados de tecnológicas y semiconductores",
-    "dow": "sin mención directa",
-    "sp500": "cierre semanal con caída, +9% en el año, 2% bajo máximo histórico",
-    "bitcoin": "sin mención en el titular",
-    "ethereum": "sin mención en el titular",
-    "bonos": "sin mención directa, aunque la Fed de fin de julio es un factor a vigilar",
-    "petroleo": "riesgo geopolítico en Medio Oriente mencionado como factor de atención"
-   },
-   "updates": []
-  },
-  {
-   "id": 33436,
-   "fecha": "2026-07-19T12:31:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33436",
-   "original": "IRAN’S ARAGHCHI SAYS SOME NUCLEAR DISPUTES MAY BE ‘UNRESOLVABLE’",
-   "titulo": "Canciller iraní Araghchi: algunas disputas nucleares podrían ser 'irresolubles'",
-   "resumen": "El canciller iraní Abbas Araghchi declaró que ciertos puntos de disputa en el programa nuclear de su país podrían no tener solución. La afirmación se produce en un contexto de negociaciones estancadas y escalada regional, y se suma a la retórica sobre el bloqueo de Ormuz y las sanciones occidentales. El titular no detalla a qué disputas específicas se refiere ni el estado actual de las negociaciones.",
-   "analisis": {
-    "porque": "Reduce las expectativas de un acuerdo nuclear a corto plazo, lo que mantiene elevada la prima de riesgo geopolítico sobre el petróleo y los activos refugio.",
-    "queOcurrio": "Araghchi, canciller de Irán, afirmó públicamente que algunas diferencias en el expediente nuclear podrían ser irresolubles.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "nuclear",
-    "Araghchi",
-    "negociaciones"
-   ],
-   "tgText": "Irán: el canciller Araghchi dice que algunas disputas nucleares 'pueden ser irresolubles'. Baja la expectativa de acuerdo a corto plazo.",
-   "xText": "Araghchi (canciller iraní): algunas disputas nucleares podrían ser 'irresolubles'. Se enfría la expectativa de acuerdo. #Irán #Nuclear",
-   "discordText": "**Irán: disputas nucleares 'irresolubles' según Araghchi**\n- Declaración oficial del canciller iraní\n- Reduce probabilidad de acuerdo próximo\n- Contexto: escalada regional y Ormuz",
-   "pushText": "Irán: disputas nucleares podrían no resolverse",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "El petróleo suele ser sensible a señales que reducen las probabilidades de un acuerdo nuclear, dado el riesgo de sanciones prolongadas.",
-    "despues": "Oro y dólar como refugio, y posibles ajustes en acciones vinculadas a energía y defensa.",
-    "escenarios": "Los mercados vigilan si Estados Unidos, la UE o el OIEA responden formalmente, y si continúan o se reanudan las conversaciones diplomáticas.",
-    "riesgos": "Declaración de tono político que puede no reflejar el estado real de las negociaciones; riesgo de sobreinterpretación mediática."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33435,
-   "fecha": "2026-07-19T12:27:45+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33435",
-   "original": "*HORMUZ STRAIT TO REMAIN BLOCKED WHILE US MALICE PERSISTS: FARS",
-   "titulo": "Medio estatal iraní advierte que el Estrecho de Ormuz seguirá bloqueado",
-   "resumen": "La agencia iraní FARS afirmó que el Estrecho de Ormuz permanecerá bloqueado mientras persista lo que describe como 'malicia' de Estados Unidos. Se trata de una declaración de un medio estatal iraní, no verificada de forma independiente por fuentes occidentales. Ormuz es un punto crítico para el transporte marítimo de petróleo y gas, y cualquier interrupción prolongada representaría un riesgo directo para el suministro energético global.",
-   "analisis": {
-    "porque": "Ormuz canaliza cerca de una quinta parte del petróleo mundial; una obstrucción sostenida, aunque sea retórica, puede disparar la prima de riesgo en los precios de la energía.",
-    "queOcurrio": "FARS, agencia estatal iraní, publicó que el estrecho seguirá cerrado mientras continúe la 'malicia' estadounidense, sin detallar medidas concretas ni confirmación oficial de un bloqueo físico.",
-    "estado": "rumor",
-    "fuenteOriginal": "FARS"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos",
-    "Acciones energéticas"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Ormuz",
-    "Irán",
-    "petróleo",
-    "FARS",
-    "bloqueo naval"
-   ],
-   "tgText": "⚠️ FARS (medio estatal iraní): el Estrecho de Ormuz seguirá bloqueado mientras persista la 'malicia' de EE.UU. Sin verificación independiente. Riesgo alto para el petróleo.",
-   "xText": "🚨 FARS (Irán): Ormuz seguirá bloqueado mientras continúe la 'malicia' de EE.UU. Declaración de medio estatal, no verificada. Vigilar crudo y refugio. #Ormuz #Petróleo",
-   "discordText": "**⚠️ FARS: Ormuz seguirá bloqueado**\n- Fuente: medio estatal iraní (no verificado)\n- Contexto: tensión con EE.UU.\n- Riesgo directo sobre suministro de petróleo",
-   "pushText": "Irán (FARS): Ormuz seguirá bloqueado",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "El petróleo (Brent/WTI) suele reaccionar de inmediato ante cualquier señal de riesgo sobre Ormuz por su peso en el flujo global de crudo.",
-    "despues": "Activos refugio como oro y dólar, además de acciones del sector energético y transporte marítimo, pueden mostrar movimientos secundarios.",
-    "escenarios": "Los traders siguen si hay confirmación de bloqueo físico por parte de fuentes occidentales (Reuters, Bloomberg, gobiernos) o si permanece como declaración retórica.",
-    "riesgos": "La fuente es un medio estatal iraní sin corroboración independiente; existe riesgo de propaganda o exageración deliberada del conflicto."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33434,
-   "fecha": "2026-07-19T12:03:26+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33434",
-   "original": "TRUMP: REPUBLICANS SHOULD ADD IRAN TO RUSSIAN SANCTIONS BILL",
-   "titulo": "Trump pide a republicanos incluir a Irán en el proyecto de sanciones contra Rusia",
-   "resumen": "Donald Trump declaró que los legisladores republicanos deberían sumar a Irán al proyecto de ley de sanciones dirigido actualmente contra Rusia. La propuesta, de concretarse, ampliaría el marco sancionatorio en pleno contexto de tensión con Teherán por el programa nuclear y el bloqueo del Estrecho de Ormuz. El titular no especifica plazos ni el texto exacto de la iniciativa legislativa.",
-   "analisis": {
-    "porque": "Una ampliación de sanciones a Irán dentro de un paquete ya orientado a Rusia endurecería el frente geopolítico en un momento de máxima sensibilidad energética por Ormuz, con potencial impacto en el suministro global de crudo.",
-    "queOcurrio": "Trump manifestó públicamente que los republicanos deberían añadir a Irán al proyecto de sanciones contra Rusia que se discute en el Congreso.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "Oro",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "sanciones",
-    "Irán",
-    "Rusia",
-    "Congreso"
-   ],
-   "tgText": "🇺🇸 Trump pide sumar a Irán al proyecto de sanciones contra Rusia. Sube el riesgo geopolítico en medio de la crisis en Ormuz.",
-   "xText": "Trump: los republicanos deberían añadir a Irán al proyecto de sanciones contra Rusia. Escalada geopolítica en curso con foco en Ormuz y crudo. #Irán #Sanciones",
-   "discordText": "**Trump pide agregar a Irán al proyecto de sanciones contra Rusia**\n- Declaración directa de Trump\n- Contexto: crisis en Ormuz y tensión nuclear con Irán\n- Posible impacto en petróleo y activos refugio",
-   "pushText": "Trump propone sancionar a Irán junto con Rusia",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "El petróleo suele ser el primer activo en reaccionar ante señales de mayor presión sancionatoria sobre Irán, dado su rol en la oferta global.",
-    "despues": "El oro y el dólar podrían moverse como refugio si la propuesta avanza; los bonos del Tesoro también pueden verse afectados por el apetito de riesgo.",
-    "escenarios": "Los traders vigilan si la propuesta se traduce en un proyecto de ley formal, y la respuesta de Irán ante una posible ampliación de sanciones.",
-    "riesgos": "Se trata de una declaración política sin confirmación de que el Congreso la adopte; el impacto de mercado dependerá del avance legislativo real."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7843,6 +7853,16 @@
   "https://www.cnbc.com/2026/07/27/cxmt-china-market-debut-chipmaker-ipo.html",
   "https://www.cnbc.com/2026/07/27/seattle-shooting-leaves-two-dead-five-injured.html",
   "https://www.cnbc.com/2026/07/27/goldman-sachs-asian-currencies-ai-boom-.html",
-  "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html"
+  "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html",
+  "https://www.cnbc.com/select/smart-ways-to-chip-away-at-student-loan-balance/",
+  "https://www.cnbc.com/2026/07/27/trump-says-us-has-sold-more-than-13-billion-of-venezuela-oil-.html",
+  "https://www.cnbc.com/2026/07/27/from-oil-to-shock-heres-what-kalshi-traders-expect-warsh-to-say.html",
+  "https://www.cnbc.com/2026/07/27/stocks-making-the-biggest-moves-after-hours-cdns-rmbs-well.html",
+  "https://www.cnbc.com/2026/07/27/apple-most-valuable-company-nvidia.html",
+  "https://www.cnbc.com/2026/07/27/spacex-has-now-lost-the-equivalent-of-a-full-tesla-in-market-capitalization.html",
+  "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html",
+  "https://www.cnbc.com/2026/07/27/altman-trump-china-open-weight-ai.html",
+  "https://www.cnbc.com/2026/07/27/jim-cramer-warns-ai-circular-financing-echoes-dot-com-bubble.html",
+  "https://www.cnbc.com/2026/07/27/trump-supreme-court-mail-in-voting-restrictions.html"
  ]
 }
