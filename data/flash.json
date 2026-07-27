@@ -1,7 +1,321 @@
 {
- "lastId": 33600,
- "actualizado": "2026-07-27T16:01:38.741Z",
+ "lastId": 33614,
+ "actualizado": "2026-07-27T17:50:26.147Z",
  "items": [
+  {
+   "id": "33614",
+   "fecha": "2026-07-27T16:46:01+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33614",
+   "via": "DeItaone",
+   "original": "MORGAN STANLEY RAISES ISM FORECAST Morgan Stanley lifted its July ISM Manufacturing PMI forecast to 53.8 from 53.3, citing stronger Texas factory activity, rising production, and solid new orders. The bank said longer delivery times and higher inventories point to stronger demand rather than supply chain disruptions, while price pressures eased despite higher energy costs.",
+   "titulo": "Morgan Stanley eleva PMI manufacturero de julio a 53,8; demanda más fuerte",
+   "resumen": "Morgan Stanley elevó su pronóstico del PMI Manufacturero de julio a 53,8 desde 53,3, citando actividad fabril más sólida en Texas, aumento de producción y órdenes firmes. El banco interpreta tiempos de entrega más largos e inventarios mayores como señal de demanda sólida, no disrupciones de cadena de suministro. Presiones de precio se moderaron a pesar de costos energéticos mayores.",
+   "analisis": {
+    "porque": "Datos de PMI manufacturero son leading indicator de actividad económica y salud empresarial. Revisión al alza y narrativa de demanda fuerte (no supply shock) es alcista para renta variable. Moderación de precios reduce temores inflacionarios.",
+    "queOcurrio": "Morgan Stanley revisó al alza su expectativa del PMI manufacturero de EE.UU. para julio, argumentando que indicadores muestran demanda resiliente en lugar de presiones de oferta. Presiones de precios menos intensas que en meses previos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Dólar",
+    "Bonos",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "pmi-manufactura",
+    "demanda",
+    "economia-usa",
+    "morgan-stanley",
+    "july-data"
+   ],
+   "tgText": "📊 Morgan Stanley eleva PMI Manufacturero julio a 53,8. Demanda sólida en Texas, producción y órdenes firmes. Presiones de precio se moderan.",
+   "xText": "Morgan Stanley sube pronóstico PMI manufactura julio a 53,8 (vs 53,3). Demanda fuerte, no disrupciones de supply chain. Presiones de precio moderadas a pesar de energía cara.",
+   "discordText": "**MORGAN STANLEY - PMI MANUFACTURA**\n• Eleva pronóstico a 53,8 (vs 53,3)\n• Demanda fuerte (Texas, producción, órdenes)\n• Sin disrupciones supply chain\n• Presiones de precio moderadas\n→ Economía más resiliente; alcista para equities",
+   "pushText": "Morgan Stanley sube PMI: economía muestra demanda fuerte",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Índices de equities (S&P500, NASDAQ) responden positivamente a datos de demanda sólida. Dólar podría fortalecerse (economía fuerte).",
+    "despues": "Bonos caen si mercado reprecifica crecimiento. Oro baja (dólar fuerte, riesgo-off menor).",
+    "escenarios": "Traders vigilan: (1) Si datos reales de PMI el 1 de agosto coinciden con revisión de Morgan Stanley, confirmación alcista. (2) Si resulta higher, mayor confianza en economía. (3) Si resulta lower, Goldman y otros advertidores sobre macro risks tendrían razón.",
+    "riesgos": "Riesgo de que Morgan Stanley sea demasiado optimista. Riesgo de que datos reales decepcionen. Riesgo de que interpretación de inventarios altos sea incorrecta (exceso, no demanda)."
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "dolar": "alcista moderado",
+    "bonos": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33613",
+   "fecha": "2026-07-27T16:45:30+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33613",
+   "via": "DeItaone",
+   "original": "MACQUARIE SEES CHINA TAPPING OIL STOCKPILES Macquarie said China's state-owned refiners could begin accessing commercial oil reserves from Q3 2026, supporting refining margins and benefiting Sinopec. The firm also expects China to expand its tanker fleet to strengthen energy security, which could cap VLCC freight rates over time while boosting demand for new tanker construction.",
+   "titulo": "Macquarie: China podría acceder a reservas estratégicas de petróleo en Q3 2026",
+   "resumen": "Macquarie señala que las refinerías estatales chinas podrían comenzar a acceder a reservas comerciales de petróleo desde el tercer trimestre de 2026, apoyando márgenes de refinación y beneficiando a Sinopec. El banco también proyecta expansión de la flota de buques-tanque chinos para fortalecer seguridad energética, lo que podría limitar tasas de fletes VLCC a largo plazo pero impulsaría demanda de nuevos buques.",
+   "analisis": {
+    "porque": "Acceso a reservas estratégicas chinas afecta dinámica de oferta global y márgenes de refinerías asiáticas. Impacta precios de petróleo (potencial oferta adicional). Expansión de flota de tanques es constructivo para astilleros pero bajista para tasas de fletes.",
+    "queOcurrio": "Macquarie publicó análisis indicando que China planificaría liberar reservas estratégicas para refinerías comerciales en Q3 2026, con objetivo de fortalecer seguridad energética y expandir capacidad logística marítima.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Sinopec",
+    "Fletes marítimos",
+    "Astilleros chinos",
+    "Yuan"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Sinopec",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Fletes VLCC",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "china-oil-reserves",
+    "sinopec",
+    "flete-vlcc",
+    "energia-seguridad",
+    "astilleros"
+   ],
+   "tgText": "🛢️ Macquarie: China podría liberar reservas petroleras en Q3 2026 para refinerías. Beneficia a Sinopec, pero presiona fletes VLCC a largo plazo.",
+   "xText": "Macquarie: refinerías chinas accederían a reservas estratégicas en Q3 2026. Beneficia márgenes Sinopec; expansión de flota de tanques presiona fletes VLCC pero impulsa astilleros.",
+   "discordText": "**CHINA - ESTRATEGIA ENERGETICA**\n• Liberaría reservas en Q3 2026\n• Beneficia a Sinopec y márgenes\n• Expande flota de tanques\n• Presiona fletes VLCC\n→ Petróleo vulnerable; astilleros alcistas",
+   "pushText": "China planea liberar reservas petroleras; Sinopec beneficiado",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI baja si mercado precifica oferta adicional china. Sinopec (0938.HK, 601988.SS) sube por márgenes de refinación mejorados.",
+    "despues": "Astilleros chinos (CSSC, China State Shipbuilding) suben por demanda de nuevos tanques. Tasas de fletes VLCC (índices como Baltic) caen.",
+    "escenarios": "Traders vigilan: (1) Confirmación oficial del cronograma de China. (2) Si reservas se liberan antes, petróleo cae. (3) Impacto en relación Brent/WTI si China favorece proveedores de Oriente Medio. (4) Magnitud de reservas (el titular no especifica volumen).",
+    "riesgos": "Riesgo de que análisis de Macquarie sea especulativo; sin confirmación oficial. Riesgo de que geopolítica (Oriente Medio) interfiera. Riesgo de que demanda china de energía se contraiga, negando el efecto de offset."
+   },
+   "macro": {
+    "petroleo": "bajista (Q3 2026)",
+    "sinopec": "alcista",
+    "fletes": "bajista largo plazo",
+    "yuan": "alcista (energía segura)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33612",
+   "fecha": "2026-07-27T16:45:04+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33612",
+   "via": "DeItaone",
+   "original": "GOLDMAN WARNS MACRO RISKS RISING Goldman Sachs said rising oil volatility is shifting investor focus from company earnings to broader macro risks, including inflation and higher interest rates. The bank expects the Fed to hold rates this week but said markets are pricing a more hawkish outlook. Goldman also raised its U.S. and European default forecasts while remaining underweight credit.",
+   "titulo": "Goldman Sachs alerta: volatilidad del petróleo pivota riesgo hacia macro",
+   "resumen": "Goldman Sachs advierte que la volatilidad creciente del petróleo está desviando la atención de inversores desde earnings corporativos hacia riesgos macroeconómicos más amplios, incluyendo inflación y tasas de interés. El banco espera que la Fed mantenga tasas esta semana, pero señala que mercados están precificando un outlook más hawkish. También elevó previsiones de default.",
+   "analisis": {
+    "porque": "Cambio de foco de earnings a macroeconomía indica giro del sentimiento de mercado. Goldman señala riesgos de inflación y tasas más altas, lo que afecta valuaciones. Elevación de forecasts de default es bajista para credit.",
+    "queOcurrio": "Goldman Sachs publicó análisis indicando que volatilidad energética está generando rotación de capital desde valoraciones de compañías hacia macro hedging. Mantiene postura underweight en crédito.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "Crédito",
+    "Volatilidad"
+   ],
+   "sesgos": [
+    {
+     "activo": "Crédito",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Acciones cyclicas",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Inflación",
+   "keywords": [
+    "goldman-sachs",
+    "volatilidad-petroleo",
+    "riesgo-macro",
+    "default",
+    "inflacion"
+   ],
+   "tgText": "⚠️ Goldman Sachs: volatilidad del petróleo pivota riesgo desde earnings a macroeconomía. Eleva forecasts de default, mantiene underweight en crédito.",
+   "xText": "Goldman: volatilidad petrolera desplaza foco de earnings a riesgos macro (inflación, tasas). Eleva previsiones de default, underweight en crédito. Fed mantiene tasas esta semana según banco.",
+   "discordText": "**GOLDMAN SACHS ALERTA**\n• Volatilidad petrolera pivota a riesgo macro\n• Enfoque desviado de earnings → inflación/tasas\n• Elevó forecasts de default\n• Underweight credit\n→ Presión en bonos y crédito",
+   "pushText": "Goldman alerta: volatilidad petrolera gira riesgos hacia macro",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Mercados de crédito (spreads se abren), bonos de alto yield caen, índices de volatilidad suben. EUR/USD sensible a inflación.",
+    "despues": "Rotación en equities hacia defensivas (servicios, utilidades). Petróleo sensible a datos de demanda.",
+    "escenarios": "Traders vigilan: (1) Si Fed mantiene pero señaliza futuro hawkish, widening de spreads. (2) Si inflación resurge, commodities suben más. (3) Si crédito corporativo se deteriora, flight-to-quality en treasuries.",
+    "riesgos": "Riesgo de que análisis de Goldman sea interpretado como \"recession warning\", generando pánico en equities. Riesgo de que volatilidad petrolera sea transitoria y análisis pierda relevancia."
+   },
+   "macro": {
+    "petroleo": "volátil",
+    "bonos": "spreads se abren (yields suben)",
+    "nasdaq": "bajista (sensible a tasas y crédito)",
+    "sp500": "presión"
+   },
+   "updates": []
+  },
+  {
+   "id": "33611",
+   "fecha": "2026-07-27T16:44:24+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33611",
+   "via": "DeItaone",
+   "original": "$F - FORD JOINS ARMY TRUCK BID Ford is competing for the U.S. Army's next tactical truck contract, marking its biggest military bid in decades. The company will develop three prototype vehicles based on its F-Series Super Duty pickups, joining General Motors as the Pentagon seeks to modernize military vehicles amid rising global security demands.",
+   "titulo": "Ford compite por contrato de camión táctico del Ejército estadounidense",
+   "resumen": "Ford se suma a la competencia por el próximo contrato de camión táctico del Ejército estadounidense, su mayor licitación militar en décadas. La compañía desarrollará tres prototipos basados en sus pickups F-Series Super Duty, compitiendo contra General Motors. El contrato responde a la modernización de vehículos militares ante crecientes demandas de seguridad global.",
+   "analisis": {
+    "porque": "Contrato militar de largo plazo genera flujo de caja predecible y margen robusto. Oportunidad de diversificación para Ford más allá de mercado civil. Si gana, impacta positivo en guidance de flujo libre y valuación.",
+    "queOcurrio": "Ford anunció su participación formal en la licitación del Ejército para vehículos tácticos, desarrollando tres prototipos. General Motors también compite. Plazo y monto del contrato no especificados en titular.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "F",
+    "GM"
+   ],
+   "sesgos": [
+    {
+     "activo": "F",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "GM",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "ford",
+    "military-contract",
+    "ejercito-usa",
+    "f-series",
+    "gm"
+   ],
+   "tgText": "📈 Ford compite por contrato de camión táctico del Ejército. Desarrollará 3 prototipos basados en F-Series Super Duty, su mayor licitación militar en décadas.",
+   "xText": "Ford entra en competencia por contrato militar de camión táctico del Ejército. Desarrollará prototipos basados en F-Series Super Duty, compitiendo contra GM.",
+   "discordText": "**FORD - OPORTUNIDAD MILITAR**\n• Licitación por camión táctico del Ejército\n• 3 prototipos F-Series Super Duty\n• Mayor bid militar en décadas\n• Compite contra GM\n→ Potencial flujo predecible a largo plazo",
+   "pushText": "Ford compite por contrato militar de camiones",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de Ford (F) podrían tener sesgo alcista si mercado precifica probabilidad de ganancias. General Motors monitorea.",
+    "despues": "Proveedores de componentes automotrices podrían beneficiarse si Ford gana.",
+    "escenarios": "Traders vigilan: (1) Anuncios sobre selección de ganador (típicamente toma meses a años). (2) Si Ford gana, update positivo en guías de cash flow. (3) Comparación de márgenes de contrato militar vs. civil.",
+    "riesgos": "Riesgo de que General Motors gane, afectando F negativamente. Riesgo de que proceso se extienda más de lo esperado o requisitos técnicos no sean alcanzables."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33610",
+   "fecha": "2026-07-27T16:43:20+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33610",
+   "via": "DeItaone",
+   "original": "TRUMP PUSHES FOR LOWER FED RATES President Trump said the Federal Reserve should cut interest rates and argued the U.S. should have the world's lowest borrowing costs. He added that Fed board members are \"political\" and said Fed Governor Kevin Warsh would have to work with the board.",
+   "titulo": "Trump presiona por recortes de tasas; critica a la Fed como «política»",
+   "resumen": "El presidente Trump argumentó que Estados Unidos debería tener las tasas de interés más bajas del mundo y criticó a los miembros de la Junta de la Reserva Federal por ser \"políticos\". Señaló que el gobernador de la Fed Kevin Warsh tendría que trabajar con la junta. El comentario refleja tensión persistente entre Trump y la política monetaria de la Fed.",
+   "analisis": {
+    "porque": "Las presiones presidenciales sobre la Fed afectan expectativas de política monetaria, volatilidad de bonos y el dólar. Si la Fed cede a presiones políticas, erosiona credibilidad y puede elevar prima de riesgo inflacionario.",
+    "queOcurrio": "Trump declaró públicamente que la Fed debería implementar recortes de tasas significativos, argumentando que EE.UU. debe tener el costo de financiamiento más bajo globalmente.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "trump-fed",
+    "politica-monetaria",
+    "recorte-tasas",
+    "presion-presidencial"
+   ],
+   "tgText": "🔴 Trump presiona a la Fed por recortes de tasas; critica a miembros como \"políticos\". Argumenta que EE.UU. debería tener tasas más bajas del mundo.",
+   "xText": "Trump critica a la Fed por ser \"política\" y presiona para recortes de tasas. Argumenta que EE.UU. debe tener el costo de financiamiento más bajo globalmente. Impacto en bonos y dólar.",
+   "discordText": "**TRUMP vs FED**\n• Presiona por recortes de tasas\n• Critica junta como \"política\"\n• Menciona trabajo de Warsh con la junta\n→ Volatilidad en bonos, dólar bajo presión",
+   "pushText": "Trump presiona a la Fed: exige tasas más bajas",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Bonos USA (yields caen) y DXY (debilita) por expectativa de tasas menores; también USDIDX y futuros de tasas.",
+    "despues": "Acciones (S&P500, NASDAQ alcistas por tasas más bajas), commodities alcistas (oro, petróleo) por debilitamiento de moneda.",
+    "escenarios": "Traders vigilan si comentarios de Trump generan expectativa de cortes antes de la reunión de la Fed esta semana. Si Fed mantiene línea dura, choque de expectativas. Si hay señales de flexibilización, rally de renta variable.",
+    "riesgos": "Riesgo de que la Fed reafirme independencia y contradiga presiones; si ignora a Trump, credibilidad reforzada pero mercado baja. Riesgo de escalada retórica si Trump interpreta decisiones de Fed como \"políticas\"."
+   },
+   "macro": {
+    "dolar": "bajista corto plazo",
+    "bonos": "alcistas (yields bajan)",
+    "nasdaq": "alcista (tasas menores)",
+    "sp500": "alcista",
+    "oro": "alcista (dólar débil)"
+   },
+   "updates": []
+  },
   {
    "id": "33600",
    "fecha": "2026-07-27T15:08:14+00:00",
