@@ -1,7 +1,129 @@
 {
- "lastId": 33621,
- "actualizado": "2026-07-27T19:04:48.999Z",
+ "lastId": 33625,
+ "actualizado": "2026-07-27T20:40:54.497Z",
  "items": [
+  {
+   "id": "33600",
+   "fecha": "2026-07-27T15:08:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33600",
+   "via": "DeItaone",
+   "original": "TRUMP WARNS OF MILITARY ACTION President Trump said the window for negotiations is limited, warning that if talks fail, the U.S. will resume a “very powerful” military operation.",
+   "titulo": "Trump advierte sobre ventana limitada de negociaciones con Irán; amenaza operación militar",
+   "resumen": "El presidente Trump declaró que la ventana para negociaciones es limitada, advirtiendo que si las conversaciones fallan, EE.UU. reanudará una operación militar \"muy poderosa\". La amenaza coincide con tensiones en el Estrecho de Hormuz (33586) donde no hay progreso en uso de corredor sureño respaldado por EE.UU. El titular no especifica cronología ni detalles de negociaciones.",
+   "analisis": {
+    "porque": "Geopolítica Irán-Hormuz impacta directamente precios de petróleo (commodity crítico), gas (TTF), seguros de transporte marino, y expectativas de inflación. Amenaza militar reduce probabilidad de pacto, elevando riesgo de crisis de oferta energética.",
+    "queOcurrio": "Trump emitió advertencia sobre negociaciones Irán, implicando corta ventana de tiempo y posible escalada militar si fallan. No se especifica qué se negocia ni con quién (Irán directamente, mediadores, etc.).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC/Reuters (cita directa Trump)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "TTF (Gas)",
+    "USD",
+    "Bonos",
+    "Seguros Marinos",
+    "Geopolítica"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista (riesgo oferta)"
+    },
+    {
+     "activo": "TTF",
+     "sesgo": "alcista (riesgo oferta)"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista (risk-off)"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "Hormuz",
+    "negociaciones",
+    "militar",
+    "petróleo",
+    "energía"
+   ],
+   "tgText": "⚠️ TRUMP AMENAZA OPERACIÓN MILITAR: Advierte ventana limitada de negociaciones con Irán. Si fallan, EE.UU. reanudará operación \"muy poderosa\". Riesgo alcista en petróleo y gas.",
+   "xText": "⚠️ TRUMP: Ventana de negociaciones con Irán es limitada. Amenaza operación militar si fallan conversaciones. Riesgo de crisis de oferta energética en Hormuz.",
+   "discordText": "**⚠️ AMENAZA MILITAR TRUMP**\n• Declaración: Ventana de negociaciones limitada\n• Advertencia: Reanudará operación militar \"muy poderosa\"\n• Contexto: Irán rechaza corredor Hormuz sureño\n→ Implicación: Riesgo de escalada Irán-USA, crisis de oferta energética",
+   "pushText": "⚠️ Trump amenaza operación militar si negociaciones Irán fallan",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo bruto reacciona al alza (riesgo de cierre de Hormuz). WTI y Brent suben 2-5% en horas siguientes. Mercados de futuros reprician riesgo geopolítico.",
+    "despues": "TTF gas sube (correlación directa a Medio Oriente). CRB Energy Index alcista. Dólar sube (demanda de seguridad). Bonos suben en rendimiento (inflación esperada). Seguros de transporte marino suben. Índices accionarios presionados.",
+    "escenarios": "Traders vigilan: (1) ¿Trump fija fecha límite para negociaciones? (2) ¿hay movimientos militares USA/aliados? (3) ¿Irán escala retóricamente? (4) ¿barcos responden cambiando rutas o asegurándose? (5) ¿hay mediadores (Omán, Qatar)?",
+    "riesgos": "Retórica Trump puede ser herramienta de negociación (bluff) o intención real. Mercado no puede diferenciar. Riesgo de sobreacción si mercado percibe 70%+ probabilidad de escalada. Reversión posible si paquete de pacto emerge."
+   },
+   "macro": {
+    "petroleo": "Alcista +2-5% potencial",
+    "ttf": "Alcista +5-10% potencial",
+    "usd": "Alcista por risk-off",
+    "sp500": "Bajista por shock de oferta"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-27T19:32:50+00:00",
+     "id": "33625",
+     "texto": "Trump declara que se están llevando a cabo negociaciones muy amistosas con Irán, contradictorio con el tono amenazante de hace horas. Señal de potencial desescalada en tensión geopolítica.",
+     "tgUrl": "https://t.me/walterbloomberg/33625"
+    },
+    {
+     "fecha": "2026-07-27T19:28:59+00:00",
+     "id": "33624",
+     "texto": "El comando militar conjunto iraní reitera que no dejará sin respuesta ninguna amenaza militar de EE.UU., según Mehr News Agency. Declaración refuerza postura defensiva ante presiones de administración Trump.",
+     "tgUrl": "https://t.me/walterbloomberg/33624"
+    },
+    {
+     "fecha": "2026-07-27T19:25:46+00:00",
+     "id": "33623",
+     "texto": "El alto mando conjunto militar iraní califica como «escalada de conflicto regional» cualquier intento de bloqueo marítimo ilegal por parte de EE.UU. Continúa endurecimiento de retórica tras advertencia anterior de Trump sobre ventana limitada de negociaciones y amenaza de operación militar.",
+     "tgUrl": "https://t.me/walterbloomberg/33623"
+    }
+   ],
+   "actualizado": "2026-07-27T19:32:50+00:00"
+  },
+  {
+   "id": "33622",
+   "fecha": "2026-07-27T19:12:34+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33622",
+   "via": "DeItaone",
+   "original": "*TRUMP: LET'S GET RID OF DAYLIGHT SAVINGS TIME",
+   "titulo": "Trump propone eliminar el horario de verano en EE.UU.",
+   "resumen": "Trump declara que hay que «deshacerse» del horario de verano. El titular no especifica contexto de la propuesta ni impacto legislativo. Esto es declaración política, no política económica estructural.",
+   "analisis": {
+    "porque": "Impacto de mercado nulo: cambios en horario de verano es asunto administrativo sin efecto en ciclos económicos, tasas o valuaciones. Ruido político.",
+    "queOcurrio": "Trump expresa opinión sobre horario de verano estadounidense.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (cita directa Trump)"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [],
+   "sesgos": [],
+   "volatilidad": "baja",
+   "categoria": "Breaking News",
+   "keywords": [
+    "Trump",
+    "horario verano",
+    "política"
+   ],
+   "tgText": null,
+   "xText": null,
+   "discordText": null,
+   "pushText": null,
+   "importancia": 1,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33613",
    "fecha": "2026-07-27T16:45:30+00:00",
@@ -662,74 +784,6 @@
     "nasdaq": "alcista (tasas menores)",
     "sp500": "alcista",
     "oro": "alcista (dólar débil)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33600",
-   "fecha": "2026-07-27T15:08:14+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33600",
-   "via": "DeItaone",
-   "original": "TRUMP WARNS OF MILITARY ACTION President Trump said the window for negotiations is limited, warning that if talks fail, the U.S. will resume a “very powerful” military operation.",
-   "titulo": "Trump advierte sobre ventana limitada de negociaciones con Irán; amenaza operación militar",
-   "resumen": "El presidente Trump declaró que la ventana para negociaciones es limitada, advirtiendo que si las conversaciones fallan, EE.UU. reanudará una operación militar \"muy poderosa\". La amenaza coincide con tensiones en el Estrecho de Hormuz (33586) donde no hay progreso en uso de corredor sureño respaldado por EE.UU. El titular no especifica cronología ni detalles de negociaciones.",
-   "analisis": {
-    "porque": "Geopolítica Irán-Hormuz impacta directamente precios de petróleo (commodity crítico), gas (TTF), seguros de transporte marino, y expectativas de inflación. Amenaza militar reduce probabilidad de pacto, elevando riesgo de crisis de oferta energética.",
-    "queOcurrio": "Trump emitió advertencia sobre negociaciones Irán, implicando corta ventana de tiempo y posible escalada militar si fallan. No se especifica qué se negocia ni con quién (Irán directamente, mediadores, etc.).",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC/Reuters (cita directa Trump)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "TTF (Gas)",
-    "USD",
-    "Bonos",
-    "Seguros Marinos",
-    "Geopolítica"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista (riesgo oferta)"
-    },
-    {
-     "activo": "TTF",
-     "sesgo": "alcista (riesgo oferta)"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "alcista (risk-off)"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "Hormuz",
-    "negociaciones",
-    "militar",
-    "petróleo",
-    "energía"
-   ],
-   "tgText": "⚠️ TRUMP AMENAZA OPERACIÓN MILITAR: Advierte ventana limitada de negociaciones con Irán. Si fallan, EE.UU. reanudará operación \"muy poderosa\". Riesgo alcista en petróleo y gas.",
-   "xText": "⚠️ TRUMP: Ventana de negociaciones con Irán es limitada. Amenaza operación militar si fallan conversaciones. Riesgo de crisis de oferta energética en Hormuz.",
-   "discordText": "**⚠️ AMENAZA MILITAR TRUMP**\n• Declaración: Ventana de negociaciones limitada\n• Advertencia: Reanudará operación militar \"muy poderosa\"\n• Contexto: Irán rechaza corredor Hormuz sureño\n→ Implicación: Riesgo de escalada Irán-USA, crisis de oferta energética",
-   "pushText": "⚠️ Trump amenaza operación militar si negociaciones Irán fallan",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo bruto reacciona al alza (riesgo de cierre de Hormuz). WTI y Brent suben 2-5% en horas siguientes. Mercados de futuros reprician riesgo geopolítico.",
-    "despues": "TTF gas sube (correlación directa a Medio Oriente). CRB Energy Index alcista. Dólar sube (demanda de seguridad). Bonos suben en rendimiento (inflación esperada). Seguros de transporte marino suben. Índices accionarios presionados.",
-    "escenarios": "Traders vigilan: (1) ¿Trump fija fecha límite para negociaciones? (2) ¿hay movimientos militares USA/aliados? (3) ¿Irán escala retóricamente? (4) ¿barcos responden cambiando rutas o asegurándose? (5) ¿hay mediadores (Omán, Qatar)?",
-    "riesgos": "Retórica Trump puede ser herramienta de negociación (bluff) o intención real. Mercado no puede diferenciar. Riesgo de sobreacción si mercado percibe 70%+ probabilidad de escalada. Reversión posible si paquete de pacto emerge."
-   },
-   "macro": {
-    "petroleo": "Alcista +2-5% potencial",
-    "ttf": "Alcista +5-10% potencial",
-    "usd": "Alcista por risk-off",
-    "sp500": "Bajista por shock de oferta"
    },
    "updates": []
   },
