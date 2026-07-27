@@ -1,7 +1,82 @@
 {
- "lastId": 33559,
- "actualizado": "2026-07-27T10:08:54.901Z",
+ "lastId": 33560,
+ "actualizado": "2026-07-27T10:39:24.190Z",
  "items": [
+  {
+   "id": "33560",
+   "fecha": "2026-07-27T10:38:40+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33560",
+   "via": "DeItaone",
+   "original": "CHINA PUSHES BACK ON U.S. TARIFFS China has rejected U.S. tariffs tied to forced labor allegations, calling on Washington to remove the measures. Beijing said it remains open to trade talks based on mutual respect and equality, but warned it will closely monitor U.S. actions and reserve the right to respond if necessary.",
+   "titulo": "China rechaza aranceles estadounidenses por trabajo forzado; advierte respuesta si continúan",
+   "resumen": "Beijing rechazó formalmente los aranceles estadounidenses vinculados a acusaciones de trabajo forzado, instando a Washington a retirar las medidas. China señaló disposición para negociaciones comerciales basadas en respeto mutuo e igualdad, pero advirtió que monitoreará acciones estadounidenses y se reserva el derecho a responder si es necesario. Escalada en tensiones comerciales bilateral.",
+   "analisis": {
+    "porque": "Impacto directo en dinámicas de comercio bilateral y expectativas arancelarias globales. Afecta valuaciones de empresas con exposición a cadenas de suministro China-EE.UU., volatilidad del dólar y apetito por riesgo en mercados emergentes.",
+    "queOcurrio": "China emitió rechazo oficial a aranceles estadounidenses alegando acusaciones de trabajo forzado, mantuvo puerta abierta a negociaciones pero advirtió sobre posibles represalias comerciales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "DXY",
+    "CNY",
+    "S&P500",
+    "NASDAQ",
+    "Petróleo",
+    "Oro",
+    "Cobre"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "CNY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Cobre",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "aranceles",
+    "China",
+    "EE.UU.",
+    "comercio",
+    "trabajo forzado",
+    "represalias",
+    "tensión bilateral"
+   ],
+   "tgText": "🚨 China rechaza aranceles de EE.UU. por trabajo forzado y se reserva derecho de respuesta. Tensiones comerciales se intensifican; riesgo en mercados globales. DXY vulnerable, renta variable bajo presión.",
+   "xText": "🔴 BREAKING: China rechaza aranceles estadounidenses, advierte represalias comerciales. Tensiones en máximos; mercados esperan medidas de represalia. DXY débil, acciones en rojo. #Aranceles #Mercados",
+   "discordText": "**ESCALADA COMERCIAL CHINA-EE.UU.**\n• Beijing rechazó aranceles por acusaciones de trabajo forzado\n• Advierte respuesta si EE.UU. continúa\n• Abierto a negociaciones bajo \"respeto mutuo\"\n• Volatilidad esperada en dólar, tech y materias primas",
+   "pushText": "China rechaza aranceles y advierte represalias comerciales",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Dólar (DXY) suele caer por reducción de apetito por refugio en USD; Yuan presionado por incertidumbre comercial. Tech cap-ponderado (NASDAQ) vulnerable por exposición China.",
+    "despues": "Bonos del Tesoro (caída de rendimientos por riesgo de recesión). Materias primas cíclicas (cobre, petróleo) por desaceleración esperada. Acciones financieras y energéticas según sentimiento de riesgo.",
+    "escenarios": "Traders monitorean: (1) si EE.UU. confirma represalias inmediatas; (2) alcance de medidas chinas (sectores tecnológicos, agrícolas, automotrices); (3) calendario de negociaciones. Precedente: aranceles Trump 2018-19 causaron volatilidad de 2-3% en índices en 48h.",
+    "riesgos": "El titular proviene de comunicado chino oficial; no hay confirmación bilateral independiente de avances en negociaciones. Riesgo de escalada si ambas partes interpretan de forma incompatible las condiciones de diálogo."
+   },
+   "macro": {
+    "dolar": "bajista por salida de refugio",
+    "oro": "alcista por incertidumbre geopolítica",
+    "nasdaq": "bajista por exposición a China",
+    "sp500": "bajista por riesgo sistémico",
+    "bonos": "alcista por flight-to-safety",
+    "petroleo": "bajista por temores de desaceleración"
+   },
+   "updates": []
+  },
   {
    "id": "33556",
    "fecha": "2026-07-27T09:11:42+00:00",
