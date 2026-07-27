@@ -3652,5 +3652,324 @@
       ],
       "patronUltimaVela": "vela bajista sin patron destacable"
     }
+  },
+  {
+    "title": "El peso mexicano opera sin sobresaltos previo a una semana cargada de datos clave",
+    "excerpt": "USD/MXN cotiza en 17,45 mientras el mercado espera la balanza comercial de junio, la decisión de la Fed y el primer dato del PIB 2T de México.",
+    "symbol": "FX_IDC:USDMXN",
+    "trend": "neutral",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El peso mexicano arranca la semana casi sin cambios</h3><p>El tipo de cambio USD/MXN cotiza este lunes en 17,45 pesos por dólar, con una variación marginal de 0,1% en la sesión. En la semana acumula una suba de apenas 0,2%, mientras que en el mes retrocede 0,3%, lo que deja al peso dentro de un rango relativamente acotado frente al billete verde. El RSI de 14 sesiones se ubica en 50,4, en territorio neutral, y el par opera por debajo de su media móvil de 200 sesiones, entre un máximo de 52 semanas de 18,86 y un mínimo de 17,07.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">INEGI publica hoy la balanza comercial mientras el mercado mira al miércoles</h3><p>El calendario económico de México ubica para este lunes 27 de julio la publicación de la balanza comercial de mercancías correspondiente a junio de 2026, según el consolidado semanal difundido por el portal México ¿cómo vamos?. El dato llega en la antesala de una semana decisiva para los mercados locales: el miércoles 29 de julio se conocerá la decisión de política monetaria de la Reserva Federal, junto con la actualización del ITAEE del primer trimestre de 2026, mientras que el jueves 30 se difundirá la estimación oportuna del PIB del segundo trimestre. Los operadores de renta variable y de tipo de cambio en México suelen ajustar posiciones antes de estas publicaciones, dado que combinan el frente externo (Fed) con el interno (actividad económica).</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dólar global se mantiene firme y el euro pierde terreno</h3><p>El índice dólar (DXY) se mantiene estable en 101,51 puntos, sin variación en la sesión pero con un avance semanal de 0,5%, y opera por encima de su media móvil de 200 sesiones. En paralelo, el euro cede terreno frente al dólar: el EUR/USD cotiza en 1,1373, con una baja de 0,2% en el día y de 0,4% en la semana, con un RSI de 39,9 que refleja un sesgo bajista moderado dentro de la zona neutral. El par se ubica por debajo de su media de 200 sesiones, lejos de su máximo de 52 semanas de 1,2024 y cerca de su mínimo anual de 1,1325.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El oro extiende su recuperación mensual</h3><p>El oro (XAU/USD) cotiza en 4.073,8 dólares por onza, con un avance de 0,2% en la sesión, 1,6% en la semana y 1,1% en el mes, aunque su RSI de 46,4 todavía se mantiene en zona neutral y el metal opera por debajo de su media móvil de 200 sesiones. El repunte reciente coincide con la cautela generalizada de los inversores antes de la decisión de la Fed del miércoles, en un contexto donde el dólar global se sostiene firme pero sin avances contundentes.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lecturas técnicas: RSI, medias móviles y rangos de 52 semanas</h3><p>El panel técnico de las principales referencias muestra un mercado en compás de espera. El USD/BRL (real brasileño) cotiza en 5,116, con un salto de 0,7% en el día pese a una caída de 1,1% en el mes, un RSI de 49,5 en zona neutral y el par por debajo de su media de 200 sesiones, dentro de un rango de 52 semanas entre 4,8812 y 5,6168. El USD/MXN, por su parte, se mueve en un canal más angosto: entre 17,07 y 18,86 en el último año, con el precio actual de 17,45 apenas por encima del piso anual. El DXY conserva un RSI de 63,1, el más elevado del panel, lo que sugiere que el dólar global acumula cierto impulso comprador de corto plazo sin llegar a zona de sobrecompra técnica. En contraste, el euro (RSI 39,9) y el oro (RSI 46,4) muestran lecturas más tibias, coherentes con un mercado que prefiere no tomar posiciones agresivas antes de la reunión de la Fed.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La agenda de esta semana concentra tres eventos que pueden mover al peso mexicano y al dólar global de forma más marcada que la sesión de hoy: la balanza comercial de junio conocida este lunes, la decisión de tasas de la Reserva Federal el miércoles 29 de julio junto con la actualización del ITAEE, y la estimación oportuna del PIB del segundo trimestre el jueves 30. Con el USD/MXN todavía por debajo de su media de 200 sesiones y un RSI neutral en 50,4, el par no muestra una tendencia definida hacia ningún lado antes de estos catalizadores. Si la Fed sorprende con un tono más restrictivo de lo esperado, el DXY —ya apoyado en un RSI de 63,1— podría reforzar su firmeza y presionar al peso hacia la zona alta de su rango reciente. Un tono más moderado, en cambio, favorecería una consolidación del peso cerca de los niveles actuales, en línea con el comportamiento acotado que viene mostrando en las últimas semanas. Vale seguir de cerca la reacción del euro, que opera en la parte baja de su rango anual, y la del oro, que acumula ganancias mensuales pese a un dólar que no cede terreno de forma contundente.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "México ¿cómo vamos?",
+        "url": "https://mexicocomovamos.mx/"
+      }
+    ],
+    "aiSummary": {
+      "que": "El peso mexicano cotiza casi sin cambios en 17,45 por dólar mientras el mercado espera la balanza comercial de junio, la decisión de la Fed del miércoles y el primer dato del PIB del segundo trimestre el jueves.",
+      "porque": "La combinación de un dato de actividad interna, la reunión de tasas más relevante del mes y la primera lectura del crecimiento trimestral puede definir el rumbo del tipo de cambio y del dólar global en el corto plazo.",
+      "activos": [
+        "USD/MXN",
+        "DXY",
+        "EUR/USD",
+        "Oro",
+        "USD/BRL"
+      ],
+      "siguiente": "La decisión de tasas de la Reserva Federal del miércoles 29 de julio y la estimación oportuna del PIB mexicano del jueves 30."
+    },
+    "aiScenarios": {
+      "alcista": 30,
+      "lateral": 45,
+      "bajista": 25
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Medio",
+      "lectura": "El sesgo lateral domina mientras el mercado espera definiciones de la Fed; el RSI neutral en la mayoría de los activos del panel confirma la falta de una tendencia dominante de corto plazo."
+    },
+    "timeline": [
+      {
+        "cuando": "Hoy",
+        "texto": "INEGI difunde la balanza comercial de mercancías de junio de 2026, según el calendario semanal de México ¿cómo vamos?."
+      },
+      {
+        "cuando": "Miércoles 29 de julio",
+        "texto": "La Reserva Federal anuncia su decisión de política monetaria; también se actualiza el ITAEE del primer trimestre de 2026."
+      },
+      {
+        "cuando": "Jueves 30 de julio",
+        "texto": "Se conoce la estimación oportuna del PIB del segundo trimestre de 2026 en México."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué mide la balanza comercial?",
+        "a": "Es la diferencia entre exportaciones e importaciones de un país en un período determinado; un superávit indica que se exportó más de lo que se importó."
+      },
+      {
+        "q": "¿Por qué importa la decisión de la Fed para el peso mexicano?",
+        "a": "Las tasas de la Fed influyen en el diferencial de tasas con México y en el apetito global por activos emergentes, lo que afecta directamente al tipo de cambio USD/MXN."
+      },
+      {
+        "q": "¿Qué es el ITAEE?",
+        "a": "El Indicador Trimestral de la Actividad Económica Estatal mide el comportamiento económico de cada estado de México antes de que se publique el PIB nacional."
+      },
+      {
+        "q": "¿Qué significa que el RSI esté en zona neutral?",
+        "a": "Un RSI entre 30 y 70 indica que un activo no está ni sobrecomprado ni sobrevendido, es decir, sin una presión direccional extrema de corto plazo."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "CAPITALCOM:DXY",
+      "FX:EURUSD",
+      "OANDA:XAUUSD",
+      "FX_IDC:USDBRL"
+    ],
+    "category": "Forex",
+    "heroType": "forex",
+    "slug": "el-peso-mexicano-opera-sin-sobresaltos-previo-a-una-semana-c-ms3tc8w8",
+    "author": "AR4 Mercados",
+    "date": "2026-07-27",
+    "sourceName": "México ¿cómo vamos?",
+    "sourceUrl": "https://mexicocomovamos.mx/",
+    "marketPanel": [
+      {
+        "symbol": "FX:EURUSD",
+        "nombre": "EUR/USD",
+        "yahooSymbol": "EURUSD=X",
+        "fuente": "Yahoo Finance (EURUSD=X)",
+        "fechaUltimaVela": "2026-07-27",
+        "precio": 1.1373,
+        "cierreAnterior": 1.1395,
+        "variacionDiaPct": -0.2,
+        "variacionSemanaPct": -0.4,
+        "variacionMesPct": -0.1,
+        "variacionAnioPct": -1.8,
+        "rangoDiaReal": {
+          "minimo": 1.1373,
+          "maximo": 1.1379
+        },
+        "rsi14": 39.9,
+        "lecturaRsi": "neutral",
+        "media50": 1.1494,
+        "media200": 1.1633,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0052,
+        "maximo52sem": 1.2024,
+        "minimo52sem": 1.1325,
+        "distanciaAMaximo52semPct": -5.4,
+        "distanciaAMinimo52semPct": 0.4,
+        "soportes": [
+          1.1362
+        ],
+        "resistencias": [
+          1.1473,
+          1.1675,
+          1.1828
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-07-27",
+        "precio": 101.51,
+        "cierreAnterior": 101.47,
+        "variacionDiaPct": 0,
+        "variacionSemanaPct": 0.5,
+        "variacionMesPct": 0.1,
+        "variacionAnioPct": 4.2,
+        "rangoDiaReal": {
+          "minimo": 101.12,
+          "maximo": 101.54
+        },
+        "rsi14": 63.1,
+        "lecturaRsi": "neutral",
+        "media50": 100.31,
+        "media200": 99.11,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4298,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -0.3,
+        "distanciaAMinimo52semPct": 6.2,
+        "soportes": [
+          100.45,
+          99.34,
+          98.79
+        ],
+        "resistencias": [
+          101.63
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "OANDA:XAUUSD",
+        "nombre": "Oro (XAU/USD, futuro COMEX)",
+        "yahooSymbol": "GC=F",
+        "fuente": "Yahoo Finance (GC=F)",
+        "fechaUltimaVela": "2026-07-27",
+        "precio": 4073.8,
+        "cierreAnterior": 4067.6,
+        "variacionDiaPct": 0.2,
+        "variacionSemanaPct": 1.6,
+        "variacionMesPct": 1.1,
+        "variacionAnioPct": 20.8,
+        "rangoDiaReal": {
+          "minimo": 4073.8,
+          "maximo": 4085.7
+        },
+        "rsi14": 46.4,
+        "lecturaRsi": "neutral",
+        "media50": 4242.36,
+        "media200": 4478.76,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 71.2,
+        "maximo52sem": 5586.2,
+        "minimo52sem": 3263.9,
+        "distanciaAMaximo52semPct": -27.1,
+        "distanciaAMinimo52semPct": 24.8,
+        "soportes": [
+          4028.5,
+          3963.55
+        ],
+        "resistencias": [
+          4152.1,
+          4199.7,
+          4228.7
+        ],
+        "patronUltimaVela": "vela bajista de cuerpo amplio"
+      },
+      {
+        "symbol": "FX_IDC:USDMXN",
+        "nombre": "USD/MXN (peso mexicano)",
+        "yahooSymbol": "USDMXN=X",
+        "fuente": "Yahoo Finance (USDMXN=X)",
+        "fechaUltimaVela": "2026-07-27",
+        "precio": 17.45,
+        "cierreAnterior": 17.44,
+        "variacionDiaPct": 0.1,
+        "variacionSemanaPct": 0.2,
+        "variacionMesPct": -0.3,
+        "variacionAnioPct": -6.9,
+        "rangoDiaReal": {
+          "minimo": 17.41,
+          "maximo": 17.46
+        },
+        "rsi14": 50.4,
+        "lecturaRsi": "neutral",
+        "media50": 17.4,
+        "media200": 17.68,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.1239,
+        "maximo52sem": 18.86,
+        "minimo52sem": 17.07,
+        "distanciaAMaximo52semPct": -7.5,
+        "distanciaAMinimo52semPct": 2.2,
+        "soportes": [
+          17.45,
+          17.36,
+          17.24
+        ],
+        "resistencias": [
+          17.64,
+          17.94,
+          18.06
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "FX_IDC:USDBRL",
+        "nombre": "USD/BRL (real brasileno)",
+        "yahooSymbol": "USDBRL=X",
+        "fuente": "Yahoo Finance (USDBRL=X)",
+        "fechaUltimaVela": "2026-07-27",
+        "precio": 5.116,
+        "cierreAnterior": 5.0825,
+        "variacionDiaPct": 0.7,
+        "variacionSemanaPct": 0.2,
+        "variacionMesPct": -1.1,
+        "variacionAnioPct": -7,
+        "rangoDiaReal": {
+          "minimo": 5.111,
+          "maximo": 5.116
+        },
+        "rsi14": 49.5,
+        "lecturaRsi": "neutral",
+        "media50": 5.1169,
+        "media200": 5.2171,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0615,
+        "maximo52sem": 5.6168,
+        "minimo52sem": 4.8812,
+        "distanciaAMaximo52semPct": -8.9,
+        "distanciaAMinimo52semPct": 4.8,
+        "soportes": [
+          5.0553,
+          4.9946,
+          4.9439
+        ],
+        "resistencias": [
+          5.1306,
+          5.1669,
+          5.2461
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      }
+    ],
+    "marketData": {
+      "symbol": "FX_IDC:USDMXN",
+      "nombre": "USD/MXN (peso mexicano)",
+      "yahooSymbol": "USDMXN=X",
+      "fuente": "Yahoo Finance (USDMXN=X)",
+      "fechaUltimaVela": "2026-07-27",
+      "precio": 17.45,
+      "cierreAnterior": 17.44,
+      "variacionDiaPct": 0.1,
+      "variacionSemanaPct": 0.2,
+      "variacionMesPct": -0.3,
+      "variacionAnioPct": -6.9,
+      "rangoDiaReal": {
+        "minimo": 17.41,
+        "maximo": 17.46
+      },
+      "rsi14": 50.4,
+      "lecturaRsi": "neutral",
+      "media50": 17.4,
+      "media200": 17.68,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 0.1239,
+      "maximo52sem": 18.86,
+      "minimo52sem": 17.07,
+      "distanciaAMaximo52semPct": -7.5,
+      "distanciaAMinimo52semPct": 2.2,
+      "soportes": [
+        17.45,
+        17.36,
+        17.24
+      ],
+      "resistencias": [
+        17.64,
+        17.94,
+        18.06
+      ],
+      "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+    }
   }
 ]
