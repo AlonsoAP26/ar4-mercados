@@ -1,7 +1,390 @@
 {
- "lastId": 33582,
- "actualizado": "2026-07-27T13:30:26.307Z",
+ "lastId": 33600,
+ "actualizado": "2026-07-27T16:01:38.741Z",
  "items": [
+  {
+   "id": "33600",
+   "fecha": "2026-07-27T15:08:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33600",
+   "via": "DeItaone",
+   "original": "TRUMP WARNS OF MILITARY ACTION President Trump said the window for negotiations is limited, warning that if talks fail, the U.S. will resume a “very powerful” military operation.",
+   "titulo": "Trump advierte sobre ventana limitada de negociaciones con Irán; amenaza operación militar",
+   "resumen": "El presidente Trump declaró que la ventana para negociaciones es limitada, advirtiendo que si las conversaciones fallan, EE.UU. reanudará una operación militar \"muy poderosa\". La amenaza coincide con tensiones en el Estrecho de Hormuz (33586) donde no hay progreso en uso de corredor sureño respaldado por EE.UU. El titular no especifica cronología ni detalles de negociaciones.",
+   "analisis": {
+    "porque": "Geopolítica Irán-Hormuz impacta directamente precios de petróleo (commodity crítico), gas (TTF), seguros de transporte marino, y expectativas de inflación. Amenaza militar reduce probabilidad de pacto, elevando riesgo de crisis de oferta energética.",
+    "queOcurrio": "Trump emitió advertencia sobre negociaciones Irán, implicando corta ventana de tiempo y posible escalada militar si fallan. No se especifica qué se negocia ni con quién (Irán directamente, mediadores, etc.).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC/Reuters (cita directa Trump)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "TTF (Gas)",
+    "USD",
+    "Bonos",
+    "Seguros Marinos",
+    "Geopolítica"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista (riesgo oferta)"
+    },
+    {
+     "activo": "TTF",
+     "sesgo": "alcista (riesgo oferta)"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista (risk-off)"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "Hormuz",
+    "negociaciones",
+    "militar",
+    "petróleo",
+    "energía"
+   ],
+   "tgText": "⚠️ TRUMP AMENAZA OPERACIÓN MILITAR: Advierte ventana limitada de negociaciones con Irán. Si fallan, EE.UU. reanudará operación \"muy poderosa\". Riesgo alcista en petróleo y gas.",
+   "xText": "⚠️ TRUMP: Ventana de negociaciones con Irán es limitada. Amenaza operación militar si fallan conversaciones. Riesgo de crisis de oferta energética en Hormuz.",
+   "discordText": "**⚠️ AMENAZA MILITAR TRUMP**\n• Declaración: Ventana de negociaciones limitada\n• Advertencia: Reanudará operación militar \"muy poderosa\"\n• Contexto: Irán rechaza corredor Hormuz sureño\n→ Implicación: Riesgo de escalada Irán-USA, crisis de oferta energética",
+   "pushText": "⚠️ Trump amenaza operación militar si negociaciones Irán fallan",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo bruto reacciona al alza (riesgo de cierre de Hormuz). WTI y Brent suben 2-5% en horas siguientes. Mercados de futuros reprician riesgo geopolítico.",
+    "despues": "TTF gas sube (correlación directa a Medio Oriente). CRB Energy Index alcista. Dólar sube (demanda de seguridad). Bonos suben en rendimiento (inflación esperada). Seguros de transporte marino suben. Índices accionarios presionados.",
+    "escenarios": "Traders vigilan: (1) ¿Trump fija fecha límite para negociaciones? (2) ¿hay movimientos militares USA/aliados? (3) ¿Irán escala retóricamente? (4) ¿barcos responden cambiando rutas o asegurándose? (5) ¿hay mediadores (Omán, Qatar)?",
+    "riesgos": "Retórica Trump puede ser herramienta de negociación (bluff) o intención real. Mercado no puede diferenciar. Riesgo de sobreacción si mercado percibe 70%+ probabilidad de escalada. Reversión posible si paquete de pacto emerge."
+   },
+   "macro": {
+    "petroleo": "Alcista +2-5% potencial",
+    "ttf": "Alcista +5-10% potencial",
+    "usd": "Alcista por risk-off",
+    "sp500": "Bajista por shock de oferta"
+   },
+   "updates": []
+  },
+  {
+   "id": "33593",
+   "fecha": "2026-07-27T14:38:18+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33593",
+   "via": "DeItaone",
+   "original": "NASDAQ AND S&P 500 ERASE GAINS; NASDAQ DOWN 0.5%, S&P 500 DOWN 0.1%",
+   "titulo": "NASDAQ y S&P 500 borran ganancias; NASDAQ cae 0,5%, S&P 500 cae 0,1%",
+   "resumen": "El rally matutino en Wall Street se revirtió. NASDAQ pasó de ganancias a caída de 0,5%, mientras que S&P 500 invirtió su avance (+1,08% previo) a pérdida de 0,1%. La reversión coincide con caída adicional de ASML (-8% por crisis de litografía DUV china) y presión continua en tech. El Dow Jones resistió mejor, manteniendo ganancias menores.",
+   "analisis": {
+    "porque": "Inversión de ganancias refleja shock de revaluación en semiconductores tras noticia china. Demuestra fragilidad del rally: basado en aerolíneas y defensivos, no en tech (nervio del NASDAQ). Señal de debilidad estructural en mercado de renta variable.",
+    "queOcurrio": "Índices que subieron 1%+ por la mañana se invirtieron hacia mediodía tras cascada de ventas en semicon por noticia DUV china (33587). NASDAQ más vulnerable por peso de tech.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "S&P 500",
+    "Dow Jones",
+    "Tech",
+    "Semiconductores"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dow Jones",
+     "sesgo": "alcista (defensivo)"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Breaking News",
+   "keywords": [
+    "mercado-accionario",
+    "tech",
+    "reversión",
+    "semicon",
+    "volatilidad"
+   ],
+   "tgText": "🔴 GIRO RADICAL: NASDAQ -0,5%, S&P 500 -0,1% tras borrar ganancias matutinas. Semicon desploma por noticia china. Rally defensivo se colapsa. Dow resiste.",
+   "xText": "GIRO EN WALL STREET: NASDAQ invierte -0,5%, S&P 500 -0,1%. Ganancias de la mañana borradas por venta de semicon tras noticia China. Dow aguanta mejor.",
+   "discordText": "**REVERSIÓN EN WALL STREET**\n• NASDAQ: -0,5% (inversión de ganancias)\n• S&P 500: -0,1% (de +1,08% a rojo)\n• Dow: Resiste con ganancias menores\n→ Catalizador: Crisis ASML/semicon por DUV china",
+   "pushText": "NASDAQ -0,5%, S&P 500 invierte pérdidas. Venta semicon domina.",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "NASDAQ (alto peso semicon) presionado primero. Tech liders (NVDA, QCOM) venden en cascada. VIX sube (volatilidad implícita).",
+    "despues": "S&P 500 sigue al alza pero con margen menor (energía, industria resisten). Bonos suben (flight-to-safety). Dólar gana. Futuros bajan.",
+    "escenarios": "Traders vigilan: (1) ¿se estabiliza ASML? (2) ¿NVIDIA cae >2%? (3) ¿cierre rojo en NASDAQ? (4) ¿spreads en credit se disparan? (5) ¿Fed da señal de alivio?",
+    "riesgos": "Reversión indica fragilidad del rally. Si semicon sigue cayendo, NASDAQ podría cerrar -1%+ y spillover a Asia/Europa mañana. Riesgo de cascada de stop-losses."
+   },
+   "macro": {
+    "nasdaq": "Bajista -0,5%",
+    "sp500": "Bajista -0,1%",
+    "bonos": "Alcistas (yields bajan)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33591",
+   "fecha": "2026-07-27T13:56:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33591",
+   "via": "DeItaone",
+   "original": "$SPCX - SPACEX SHARES HIT ALL-TIME LOW, LAST DOWN 3.9% AT $110.6",
+   "titulo": "SpaceX cae a mínimo histórico, baja 3,9% a $110,60",
+   "resumen": "Las acciones de SpaceX ($SPCX) alcanzaron un mínimo histórico, cayendo 3,9% hasta $110,60 en la sesión de hoy. El titular no especifica la causa inmediata de la venta, aunque se alinea con presión general en tech y creciente competencia en sector aeroespacial. La caída se suma a debilidad más amplia del NASDAQ durante la jornada.",
+   "analisis": {
+    "porque": "SpaceX es pilar de narrativa tech y manufactura USA avanzada. Mínimos históricos señalan cambio de sentimiento en space economy o valuación. Afecta capitales de riesgo en tech y percepción de crecimiento futuro.",
+    "queOcurrio": "SpaceX cotiza privadamente en secundarios (no es IPO pública). Caída a mínimos históricos en rondas privadas o trading OTC señala realización masiva o cambio en expectativas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (datos de trading secundario)"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "SpaceX",
+    "Tech Private Equity",
+    "NASDAQ",
+    "Space Economy"
+   ],
+   "sesgos": [
+    {
+     "activo": "SpaceX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "tech",
+    "private-equity",
+    "space-economy",
+    "valuación"
+   ],
+   "tgText": "📉 SpaceX toca mínimo histórico: -3,9% a $110,60. Señal de realización en private equity tech. Presión en narrativa de space economy.",
+   "xText": "SpaceX cae a mínimo histórico: -3,9% a $110,60. Refleja presión generalizada en private equity tech y revaluación de space economy.",
+   "discordText": "**SpaceX en Mínimo Histórico**\n• Precio: $110,60 (-3,9%)\n• Mercado: Secundario/OTC\n• Señal: Realización en private equity tech\n• Contexto: NASDAQ débil, tech presionado",
+   "pushText": "SpaceX toca mínimo histórico a $110,60",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Private equity tech sufre realización generalizada. Fondos de VC revisan portfolios. Confianza en valuaciones space economy se debilita.",
+    "despues": "NASDAQ continúa bajo presión. Startups tech sienten presión de financiación. Sentimiento risk-off en inversión temprana.",
+    "escenarios": "Traders vigilan: (1) ¿hay ventas de accionistas clave? (2) ¿presión de margin calls? (3) ¿revisión de roadmap operacional? (4) ¿impacto en IPO futura?",
+    "riesgos": "SpaceX no es cotizada públicamente. Precios son de mercados secundarios de baja liquidez. Volatilidad puede ser artefacto de bajo volumen. No debe interpretarse como desempeño operacional."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33588",
+   "fecha": "2026-07-27T13:35:21+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33588",
+   "via": "DeItaone",
+   "original": "GOLDMAN SEES GAS PRICE RISKS Goldman Sachs maintained its Q3 2026 TTF gas forecast at €60/MWh but said risks remain skewed to the upside. If U.S.-Iran talks succeed, prices could fall below €50/MWh. However, if Middle East energy exports recover only gradually through 2027, December 2026 TTF prices could exceed €100/MWh.",
+   "titulo": "Goldman Sachs advierte de riesgos alcistas en gas europeo hasta €100/MWh",
+   "resumen": "Goldman Sachs mantuvo su forecast para TTF (gas natural holandés) en Q3 2026 a €60/MWh pero alertó que riesgos están sesgados al alza. Si negociaciones USA-Irán tienen éxito, precios podrían caer bajo €50/MWh. Sin embargo, si exportaciones energéticas de Medio Oriente se recuperan lentamente hasta 2027, precios de TTF en diciembre 2026 podrían superar €100/MWh.",
+   "analisis": {
+    "porque": "Gas europeo es insumo crítico para industria y energía. Presión inflacionaria directa en Eurozona si TTF >€85. Afecta BCE, CRB, Stoxx 600 y utilidades. Geopolitíca Irán-USA determina escenarios.",
+    "queOcurrio": "Goldman sacó análisis de escenarios para TTF con rango €50-€100 según resolución de conflicto Irán-Hormuz. Mantiene base case €60 pero asimetría de riesgos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Goldman Sachs Research"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "TTF (Gas Europeo)",
+    "Energía Europea",
+    "Stoxx 600",
+    "Bonos Bunds",
+    "EUR",
+    "Utilidades Europa"
+   ],
+   "sesgos": [
+    {
+     "activo": "TTF",
+     "sesgo": "bajista a corto plazo, alcista si escalada geopolítica"
+    },
+    {
+     "activo": "Stoxx 600",
+     "sesgo": "neutral a bajista si gas sube"
+    },
+    {
+     "activo": "EUR",
+     "sesgo": "neutral a bajista si inflación sube"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "gas-natural",
+    "TTF",
+    "Europa",
+    "Irán",
+    "negociaciones",
+    "inflación"
+   ],
+   "tgText": "⚡ Goldman Sachs: TTF en riesgo alcista. Base case €60/MWh pero podría superar €100 si recuperación Medio Oriente es lenta. Escenario bajista €50 si éxito negociaciones Irán-USA.",
+   "xText": "Goldman Sachs ve TTF (gas europeo) con riesgos alcistas. Base case €60/MWh. Upside a €100+ si crisis Hormuz persiste. Downside €50 si pacto Irán-USA avanza.",
+   "discordText": "**Gas Europeo: Análisis Goldman Sachs**\n• Base case Q3: €60/MWh\n• Escenario bajista: <€50 (pacto Irán-USA)\n• Escenario alcista: >€100 (crisis persistente)\n→ Riesgos sesgados al alza hasta 2027",
+   "pushText": "Goldman Sachs ve gas europeo en riesgo alcista, potencial a €100/MWh",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "TTF futures reaccionan directamente. Si mercado ve escalada Irán probable, TTF sube. Utilidades europeas presionadas (márgenes comprimidos). CRB Energy sube.",
+    "despues": "EURIBOR sube por expectativas de presión inflacionaria. Bonos Bunds caen (yields suben). EUR débil. Stoxx 600 presionado. Valuaciones de utilities se revisan.",
+    "escenarios": "Traders vigilan: (1) ¿progreso negociaciones Irán-USA esta semana? (2) ¿Trump escala o pausa? (3) ¿inventarios de gas europeos suficientes? (4) ¿alternativas LNG disponibles? (5) ¿BCE ajusta proyecciones de inflación?",
+    "riesgos": "Análisis es prospectivo y dependiente de resolución geopolítica. Si Irán-USA pactan, el escenario >€100 colapsa. Mercado podría girar rápidamente."
+   },
+   "macro": {
+    "petroleo": "Alcista si escalada geopolítica",
+    "eur": "Bajista si gas sube (inflación)",
+    "bunds": "Bajista en yields si inflación sube"
+   },
+   "updates": []
+  },
+  {
+   "id": "33587",
+   "fecha": "2026-07-27T13:33:32+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33587",
+   "via": "DeItaone",
+   "original": "CHIP STOCKS DROP ON CHINA DUV REPORT ASML and U.S. chip equipment stocks fell after a report said a state-backed Chinese firm has begun mass-producing domestic DUV lithography machines. Investors fear the breakthrough could reduce China's reliance on ASML and other Western suppliers, weakening future sales and undermining the long-term impact of U.S. export restrictions.",
+   "titulo": "Semiconductores caen por avance chino en litografía DUV",
+   "resumen": "ASML y proveedores de equipos para chips estadounidenses cayeron tras reporte de que firma china respaldada por el Estado inició producción en masa de máquinas de litografía DUV domésticas. Los inversores temen que el avance reduzca dependencia china de ASML y otros proveedores occidentales, debilitando futuras ventas y el impacto de restricciones estadounidenses de exportación. ASML se desplomó hasta 8% durante la sesión.",
+   "analisis": {
+    "porque": "Quiebra narrativa central de inversión en semicon occidental: supremacía tecnológica. China acortando brecha en tecnología crítica es riesgo estratégico para valuaciones de ASML, que depende >50% de ventas a China. Afecta política comercial USA-China y expectativas de sanciones futuras.",
+    "queOcurrio": "Reporte de Bloomberg/Reuters sobre empresa china (no nombrada en titular) que logró producción en masa de DUV doméstico, sorteando restricciones de exportación occidental. Mercado interpretó como validación de tecnología alternativa.",
+    "estado": "rumor",
+    "fuenteOriginal": "Bloomberg/Reuters (reporte sin confirmación oficial de empresa china)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "ASML",
+    "Semiconductores USA",
+    "Proveedores de equipos chip",
+    "BESI",
+    "NASDAQ",
+    "Comercio USA-China"
+   ],
+   "sesgos": [
+    {
+     "activo": "ASML",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "ASML",
+    "semiconductores",
+    "China",
+    "DUV",
+    "litografía",
+    "tecnología-crítica",
+    "sanciones-USA",
+    "guerra-comercial"
+   ],
+   "tgText": "⚠️ ASML desploma 8% tras reporte de éxito chino en litografía DUV. Riesgo de independencia tecnológica china quiebra valuación occidental de semicon. Implicaciones geopolíticas graves.",
+   "xText": "ASML cae 8% (suspensión por volatilidad). China logró producción en masa de DUV doméstica. Amenaza a narrativa de supremacía tech occidental. Fuerte venta en semicon USA.",
+   "discordText": "**⚠️ CRISIS EN SEMICONDUCTORES**\n• ASML: -8% (suspensión de trading)\n• BESI: -7,4%\n• Causa: Reporte de éxito chino en DUV\n• Riesgo: China reduce dependencia ASML\n→ Impacto: Restricciones USA inefectivas, revaluación chips occidentales",
+   "pushText": "⚠️ ASML cae 8%, trading suspendido. China domina litografía DUV.",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "ASML colapsa (cotiza Amsterdam) → derivada a proveedores secundarios (BESI, CAMM, NXPI). Efecto cascada en semicon USA (NVIDIA, QUALCOMM, INTEL).",
+    "despues": "NASDAQ sufre presión de realización. Bonos suben (flight-to-safety). Dólar sube (riesgo geopolítico). Acciones tech defensivas ganan. Sector manufactura global revisa forward guidance.",
+    "escenarios": "Traders vigilan: (1) ¿se confirma identidad/escala de producción china? (2) ¿Trump escala sanciones? (3) ¿ASML reduce guidance 2026-27? (4) ¿hay represalia comercial china? (5) ¿contagio a índices como STOXX 600?",
+    "riesgos": "Titular es RUMOR sin confirmación oficial. Empresa china no nombrada. Reporte podría ser inflado. Reversión posible si datos se desmienten. Pero mercado no lo descarta: sesgo real hacia venta."
+   },
+   "macro": {
+    "nasdaq": "Bajista -0,5% a -1% potencial",
+    "dolar": "Alcista por risk-off"
+   },
+   "updates": []
+  },
+  {
+   "id": "33585",
+   "fecha": "2026-07-27T13:31:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33585",
+   "via": "DeItaone",
+   "original": "AIRLINES JUMP AS OIL PLUNGES U.S. airline stocks rallied after crude oil prices fell more than 7%, boosting expectations for lower fuel costs. JetBlue surged 6.5%, while United and Alaska Air gained 4% each, American Airlines rose 3.7%, Delta added 3.5%, and Southwest climbed 2.4%. The S&P Composite 1500 Passenger Airlines Index advanced 3.5%.",
+   "titulo": "Aerolíneas repuntan 3.5% con caída del petróleo superior a 7%",
+   "resumen": "Las acciones del sector aeronáutico estadounidense registraron ganancias significativas tras la caída de los precios del crudo por encima del 7%. JetBlue lideró con avance de 6,5%, seguido por United y Alaska Air con 4% cada una. El índice S&P Composite 1500 de aerolíneas comerciales avanzó 3,5%. La caída del petróleo reduce expectativas de costos de combustible más elevados.",
+   "analisis": {
+    "porque": "Petróleo más barato mejora márgenes de las aerolíneas directamente. Es un catalizador de corto plazo para el sector y señala presiones sobre commodity que pueden impactar inflación y expectativas de política monetaria.",
+    "queOcurrio": "El crudo cayó más de 7% generando rally defensivo en aerolíneas, con ganancias concentradas en las de mayor consumo de combustible.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Aerolíneas USA",
+    "S&P 500",
+    "Energía"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Aerolíneas",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "aerolíneas",
+    "petróleo",
+    "crudo",
+    "costos-combustible",
+    "sector-transporte"
+   ],
+   "tgText": "🛫 Aerolíneas suben 3,5% con caída de petróleo >7%. JetBlue +6,5%, United +4%, Alaska Air +4%. Presión bajista en crudo por geopolítica y demanda débil.",
+   "xText": "Aerolíneas disparan con crudo en caída >7%. JetBlue +6,5%, United/Alaska +4% cada una. S&P Composite Airlines índice +3,5%. Margen de combustible mejora significativamente.",
+   "discordText": "**Sector Aerolíneas en Rally**\n• JetBlue: +6,5%\n• United & Alaska Air: +4% c/u\n• American: +3,7%\n• S&P Composite Airlines: +3,5%\n→ Catalizador: Petróleo -7% reduce costo de combustible",
+   "pushText": "Aerolíneas suben 3,5% tras caída de petróleo >7%",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Sector aerolíneas (Transporte) sube inmediatamente por mejora de márgenes de combustible. Efecto directo en P&L trimestral.",
+    "despues": "S&P 500 presionado al alza (efecto composición). Energy stocks presionados a la baja. Índices defensivos ganan tracción.",
+    "escenarios": "Traders vigilan si la caída de crudo persiste (implicaría shock de oferta geopolítico vs. debilidad de demanda). Impacto en CRB, expectativas de inflación y posición Fed.",
+    "riesgos": "Caída de petróleo podría revertirse rápidamente si tensiones Irán-Hormuz se intensifican (ver titulares 33586, 33600). Ganancia podría ser temporal."
+   },
+   "macro": {
+    "petroleo": "Bajista -7%, impacta precios finales",
+    "sp500": "Alcista leve por composición y margen de ganancias",
+    "nasdaq": "Neutral a alcista leve"
+   },
+   "updates": []
+  },
   {
    "id": "33581",
    "fecha": "2026-07-27T13:20:01+00:00",
