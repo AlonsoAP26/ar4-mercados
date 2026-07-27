@@ -1,7 +1,377 @@
 {
- "lastId": 33560,
- "actualizado": "2026-07-27T10:39:24.190Z",
+ "lastId": 33582,
+ "actualizado": "2026-07-27T13:30:26.307Z",
  "items": [
+  {
+   "id": "33581",
+   "fecha": "2026-07-27T13:20:01+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33581",
+   "via": "DeItaone",
+   "original": "BITCOIN RISES AS TENSIONS EASE Bitcoin gained 0.5% as risk sentiment improved after President Trump delayed a major escalation against Iran, raising hopes for renewed diplomacy. Investors are also watching progress on the U.S. Clarity Act, while Strategy reported no new Bitcoin purchases last week.",
+   "titulo": "Bitcoin sube 0.5% tras alivio de tensiones geopolíticas con Irán y avances en Clarity Act",
+   "resumen": "Bitcoin ganó 0.5% tras mejora en sentimiento de riesgo por pausa de Trump en ataques a Irán, esperanza en diplomacia renovada. Inversores monitorizan progreso en U.S. Clarity Act. Strategy reportó sin compras netas de Bitcoin la semana pasada.",
+   "analisis": {
+    "porque": "Vincula Bitcoin a sentimiento de riesgo global y narrativa regulatoria positiva (Clarity Act); movimiento modesto pero señaliza monitoreo institucional de factores macropolíticos.",
+    "queOcurrio": "Bitcoin subió 0.5% en contexto de alivio geopolítico (pausa Irán-Trump) y expectativas de regulación favorable de criptomonedas en EE.UU.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (movimientos mercado + análisis)"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Bitcoin",
+    "Criptomonedas",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Riesgo-on",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "bitcoin-rally",
+    "geopolítica-cripto",
+    "clarity-act",
+    "riesgo-sentimiento",
+    "regulación-usa"
+   ],
+   "tgText": "₿ Bitcoin sube 0.5% tras alivio geopolítico Irán-Trump y avances en Clarity Act. Strategy sin compras netas BTC semana pasada. Sentimiento mixto.",
+   "xText": "₿ BTC +0.5% tras pausa Trump-Irán y esperanza en Clarity Act. Sin embargo, Strategy reportó sin compras netas BTC. Sentimiento cautamente positivo. #Bitcoin #Cripto",
+   "discordText": "**Bitcoin: Ganancia modesta por alivio geopolítico**\n• Movimiento: +0.5%\n• Drivers: Pausa Irán-Trump, Clarity Act progress\n• Dato: Strategy sin compras netas BTC semana pasada\n• Sentimiento: Cautamente alcista en riesgo-on",
+   "pushText": "Bitcoin sube 0.5% tras alivio de tensiones Irán; monitorean Clarity Act",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "Bitcoin reacciona a sentimiento de riesgo global; caída de VIX / alivio geopolítico favorece alza",
+    "despues": "Criptomonedas altcoins podrían subir si Bitcoin crea momentum; equities riesgo-on podrían beneficiarse paralelamente",
+    "escenarios": "Traders vigilarán: (1) si Clarity Act avanza en Senado (markup esperado próximas semanas); (2) si geopolítica se estabiliza o escalada resurge; (3) datos macroeconómicos que afecten sentiment riesgo",
+    "riesgos": "Riesgo de que avance en Clarity Act sea modesto o dilatado; riesgo de nueva escalada geopolítica revierte alivio; riesgo de que Strategy u otros grandes inversores aún sin compras (señal de cautela)"
+   },
+   "macro": {
+    "bitcoin": "alcista moderado por riesgo-on",
+    "dxy": "presión bajista si riesgo-on continúa",
+    "bonos": "neutral a alcista si alivio geopolítico persiste"
+   },
+   "updates": []
+  },
+  {
+   "id": "33574",
+   "fecha": "2026-07-27T13:01:53+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33574",
+   "via": "DeItaone",
+   "original": "$NVDA - *NVIDIA MAKES INVESTMENT IN SAFE SUPERINTELLIGENCE; NO TERMS",
+   "titulo": "Nvidia invierte en Safe Superintelligence; términos no divulgados",
+   "resumen": "Nvidia realizó inversión en Safe Superintelligence (SSI), firma enfocada en IA segura. El titular no especifica montos, términos ni participación accionaria. Movimiento refuerza posición de Nvidia en ecosistema IA.",
+   "analisis": {
+    "porque": "Señal de inversión estratégica en investigación de IA avanzada; posiciona a Nvidia como jugador en seguridad de IA, área de crecimiento crítica. Sin términos públicos, impacto limitado pero simbólico.",
+    "queOcurrio": "Nvidia anunció inversión en Safe Superintelligence, startup de IA segura, sin detallar montos ni términos del acuerdo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (comunicado Nvidia)"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "NVDA",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "nvidia-inversión",
+    "safe-ai",
+    "superintelligencia",
+    "ia-segura",
+    "ecosistema-chips"
+   ],
+   "tgText": "💡 Nvidia invierte en Safe Superintelligence (SSI), firma de IA segura. Términos no divulgados, pero refuerza posición Nvidia en ecosistema IA.",
+   "xText": "🤖 Nvidia invierte en Safe Superintelligence. Términos sin divulgar, pero refuerza estrategia en IA segura y ecosistema de chips para modelo avanzados. #NVDA #IA",
+   "discordText": "**Nvidia: Inversión en Safe Superintelligence**\n• Destinatario: Safe Superintelligence (SSI)\n• Montos: No divulgados\n• Estrategia: Posiciona Nvidia en IA segura\n• Impacto: Simbólico, refuerza ecosistema",
+   "pushText": "Nvidia invierte en Safe Superintelligence; términos confidenciales",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "NVDA podría subir modestamente por señal estratégica positiva en IA segura",
+    "despues": "NASDAQ podría reflejar sentimiento positivo sobre competencia IA responsable",
+    "escenarios": "Traders vigilarán: (1) si Nvidia anuncia montos o participación accionaria futura; (2) si SSI desarrolla breakthroughs en IA segura que afecten demanda de chips NVIDIA",
+    "riesgos": "Riesgo de que inversión sea menor y impacto estratégico limitado; riesgo regulatorio si IA segura implica restricciones a exportación de chips"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33571",
+   "fecha": "2026-07-27T12:56:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33571",
+   "via": "DeItaone",
+   "original": "$AMZN - AMAZON LEO HAS PROPOSED NEW CONSTELLATION OF UP TO 5,105 SATELLITES TO CONNECT COMPATIBLE MOBILE DEVICES DIRECTLY FROM SPACE",
+   "titulo": "Amazon Leo propone constelación de 5.105 satélites para conectividad móvil directa",
+   "resumen": "Amazon anunció propuesta de constelación satelital de hasta 5.105 satélites (Leo) para conectar dispositivos móviles compatibles directamente desde el espacio. Asociación con operadores de redes móviles comenzaría despliegue en 2028.",
+   "analisis": {
+    "porque": "Evento corporativo mayor de infraestructura espacial; afecta valuación de Amazon, competencia con SpaceX/Starlink, y perspectivas de conectividad global. Capex significativo en años próximos.",
+    "queOcurrio": "Amazon Leo reveló planes formales para constelación de satélites de banda ancha, con despliegue iniciando en 2028 en colaboración con operadores móviles globales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (comunicado Amazon)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "AMZN",
+    "NASDAQ",
+    "S&P500",
+    "Competencia Telecom"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Operadores telecom",
+     "sesgo": "mixto"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "amazon-leo",
+    "satélites-internet",
+    "conectividad-espacial",
+    "infraestructura-capex",
+    "competencia-starlink"
+   ],
+   "tgText": "🛰️ Amazon Leo propone 5.105 satélites para conectividad móvil directa. Despliegue inicia 2028 con socios operadores móviles. Rivalizará con SpaceX/Starlink.",
+   "xText": "🚀 BREAKING: Amazon Leo anuncia constelación de 5.105 satélites, despliegue 2028. Competencia directa con SpaceX/Starlink. Impacto en capex & conectividad global. #AMZN #Tech",
+   "discordText": "**Amazon Leo: Anuncio de constelación satelital**\n• Propuesta: 5.105 satélites\n• Objetivo: Conectividad móvil directa desde órbita\n• Socios: Operadores de redes móviles globales\n• Despliegue: Inicia 2028\n• Impacto: Competencia con SpaceX/Starlink, Capex importante",
+   "pushText": "Amazon Leo anuncia constelación de 5.105 satélites; despliegue en 2028",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "AMZN sube por visión de crecimiento en infraestructura; SPCX/competencia espacial podría caer si percibe presión",
+    "despues": "NASDAQ sube por sector tech innovador; operadores telecom (TMUS, VZ, CMCSA) podrían caer o subir según percepción de amenaza/oportunidad",
+    "escenarios": "Traders vigilarán: (1) capacidad de Amazon de financiar proyecto sin impactar margen EBITDA; (2) respuesta de SpaceX/Starlink; (3) aprobaciones regulatorias FCC; (4) anuncios de socios telecom confirmando participación",
+    "riesgos": "Riesgo de capital intensity afecte márgenes Amazon; riesgo regulatorio si FCC rechaza o condiciona; riesgo de escalada de competencia espacial elevando costos"
+   },
+   "macro": {
+    "nasdaq": "alcista por innovación infraestructura",
+    "sp500": "alcista por diversificación Amazon",
+    "dolar": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33570",
+   "fecha": "2026-07-27T12:50:32+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33570",
+   "via": "DeItaone",
+   "original": "$TSLA - *DEUTSCHE BANK CUTS TESLA PRICE TARGET TO $420 *DEUTSCHE BANK MAINTAINS BUY RATING ON TESLA *ANALYST EDISON YU LOWERS TESLA TARGET FROM $465",
+   "titulo": "Deutsche Bank reduce target de Tesla a $420; mantiene rating Compra a pesar de mayor presión",
+   "resumen": "Deutsche Bank bajó target de precio de Tesla de $465 a $420 (analista Edison Yu), reducción de ~9.7%, pero mantiene calificación Compra. El movimiento refleja mayor conservadurismo en valuación pero confianza fundamental en compañía.",
+   "analisis": {
+    "porque": "Afecta directamente valuación de TSLA; señal mixta que reduce targets alcistas pero no cambia sentimiento positivo institucional. Releva presiones en múltiplos tecnológicos post-earnings.",
+    "queOcurrio": "Analista senior de Deutsche Bank redujo target de $465 a $420 para Tesla, pero no bajó recomendación de Compra, sugiriendo margen de seguridad incluso con target más bajo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (comunicado Deutsche Bank)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "TSLA",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "TSLA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "tesla-valuation",
+    "target-cut",
+    "deutsche-bank",
+    "ev-stocks",
+    "semiconductor-pressure"
+   ],
+   "tgText": "📉 Deutsche Bank baja target de Tesla de $465 a $420 (Edison Yu), caída de ~10%. Mantiene rating Compra, señal mixta en valuaciones tech.",
+   "xText": "📊 DB reduce target TSLA de $465→$420 (-9.7%) pero mantiene Compra. Refleja presión en múltiplos tech, pero confianza fundamental persiste. #Tesla #Mercados",
+   "discordText": "**Tesla: Deutsche Bank reduce target a $420**\n• Target anterior: $465 → Nuevo: $420 (-9.7%)\n• Rating: Mantiene Compra\n• Señal: Presión en valuaciones tech, pero fundamentales OK\n• Analista: Edison Yu (DB)",
+   "pushText": "Deutsche Bank reduce target Tesla de $465 a $420; mantiene Compra",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "TSLA podría caer en sesión si mercado percibe como downgrade suave; correlación con NASDAQ si revisión refleja presión en tech valuations",
+    "despues": "Posible rebalancing de posiciones grandes en TSLA; impacto secundario en índices si provoca venta en tech mega-cap",
+    "escenarios": "Traders vigilarán: (1) si otros analistas siguen con reducciones similares; (2) reacción de TSLA a earnings próximos; (3) if target change reflects margin/delivery concerns",
+    "riesgos": "Riesgo de que sea inicio de cascada de downgrades en EV stocks; riesgo contrario si TSLA supera expectations y target se revisa nuevamente al alza"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33567",
+   "fecha": "2026-07-27T12:23:01+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33567",
+   "via": "DeItaone",
+   "original": "US SETS 20% TARIFF CAP ON CHINA China says the US agreed during trade talks to cap replacement tariffs on Chinese goods at 20%. Current tariffs stand at 12.5%, leaving room for further increases. Beijing warned it will respond to any new US measures, while urging Washington to remove unilateral tariffs and continue negotiations. Meanwhile, a separate US probe into China's manufacturing sector coul",
+   "titulo": "EE.UU. fija techo de aranceles a China en 20%; negociaciones avanzan con advertencias",
+   "resumen": "China confirmó que EE.UU. acordó limitar aranceles de reemplazo en bienes chinos a 20%, versus los actuales 12,5%. Beijing advirtió que responderá a nuevas medidas unilaterales y urge la eliminación de aranceles existentes. Paralelamente, una investigación estadounidense sobre manufactura china podría generar derechos adicionales.",
+   "analisis": {
+    "porque": "Impacta directamente en negociaciones comerciales bilaterales, volatilidad del dólar, y expectativas de empresas multinacionales con exposición a China. Define techo máximo en escalada arancelaria.",
+    "queOcurrio": "Según reportes de China, durante conversaciones comerciales se estableció cap de 20% en aranceles de reemplazo, dejando espacio para futuros incrementos desde el 12,5% actual.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (vía comunicado chino)"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "CNY",
+    "S&P500",
+    "NASDAQ",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "CNY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Comercio Internacional",
+   "keywords": [
+    "aranceles-china",
+    "trump-negociaciones",
+    "comercio-bilateral",
+    "dólar",
+    "renminbi"
+   ],
+   "tgText": "🔴 EE.UU. y China acuerdan techo arancelario de 20% en negociaciones comerciales. Límite deixa espacio para incrementos desde 12,5% actual. Beijing advierte respuesta si medidas continúan.",
+   "xText": "📊 EE.UU. acepta cap de 20% en aranceles a China (vs 12,5% hoy) en negociaciones. Deja margen para nuevas subidas. Beijing reserva derecho a responder. #Comercio #Mercados",
+   "discordText": "**Aranceles China: Techo de 20% acordado**\n• EE.UU. acepta limitar aranceles de reemplazo en 20%\n• Actuales en 12,5%, deja espacio para incrementos\n• China advierte respuesta a nuevas medidas\n• Sigue investigación sobre manufactura china",
+   "pushText": "EE.UU. fija techo de 20% en aranceles a China; negociaciones avanzan",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "DXY cae por menor escalada arancelaria esperada; CNY sube por claridad en techo máximo",
+    "despues": "S&P500 y NASDAQ podrían repuntar (reducción de incertidumbre); yields de bonos USA podrían ceder ante menor riesgo geopolítico",
+    "escenarios": "Traders vigilarán: (1) si EE.UU. activa investigación sobre manufactura china cercano; (2) respuesta de Beijing a nuevas medidas; (3) si el techo se mantiene o se incrementa tras próximas negociaciones",
+    "riesgos": "China podría no cumplir si percibe que EE.UU. viola acuerdo; investigación separada podría romper consenso; escalada política antes de 2026"
+   },
+   "macro": {
+    "dolar": "presión bajista por menor escalada esperada",
+    "nasdaq": "alcista por reducción de incertidumbre",
+    "sp500": "alcista por estabilidad comercial",
+    "petroleo": "neutral a bajista si menos tensión geopolítica",
+    "bonos": "yields ceden si baja riesgo sistémico"
+   },
+   "updates": []
+  },
+  {
+   "id": "33553",
+   "fecha": "2026-07-27T08:43:32+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33553",
+   "via": "DeItaone",
+   "original": "BRENT CRUDE FUTURES DOWN OVER 7% TO $89.58/BBL, LOWEST SINCE JULY 21",
+   "titulo": "Petróleo Brent cae 7% a $89,58/barril, nivel más bajo desde 21 de julio",
+   "resumen": "Futuros de Brent crude descienden más de 7% hasta $89,58 por barril, tocando mínimo de 6 días. La caída refleja presiones sobre demanda y posibles cambios en perspectiva geopolítica, alejándose de tensiones anteriores en Oriente Medio.",
+   "analisis": {
+    "porque": "Petróleo impulsa inflación global, rentabilidades de bonos, valoración de equity risk y monedas de economías exportadoras. Caída de 7% es movimiento material que afecta energía, inflación y política monetaria de bancos centrales.",
+    "queOcurrio": "Precio de Brent retrocede fuertemente hasta niveles de hace 6 días, perdiendo ganancias previas sostenidas por tensiones geopolíticas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "Oro",
+    "Energía",
+    "Monedas EM",
+    "Bonos",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Inflación",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Energía",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Monedas EM",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "brent-crude",
+    "petróleo-caída",
+    "inflación-alivio",
+    "geopolítica",
+    "energía"
+   ],
+   "tgText": "📉 Brent crude cae 7% a $89,58/bbl, mínimo desde 21 julio. Alivio en presiones inflacionarias. Petróleo retrocede de tensiones geopolíticas previas.",
+   "xText": "📉 Brent -7% a $89,58/bbl (mín 6 días). Alivio en petróleo y presiones inflacionarias globales.",
+   "discordText": "**Petróleo Brent Cae**\n• Precio: $89,58/bbl (-7%)\n• Mínimo desde 21 julio\n• Implicación: Alivio inflacionario global\n• Energía pierde momentum geopolítico",
+   "pushText": "Brent desploma 7% a $89,58, mínimo de 6 días",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Acciones de energía (XLE, XLE componentes) caen inmediatamente. Dólar (DXY) puede debilitarse si alivio inflacionario reduce tasas implícitas USA.",
+    "despues": "Bonos sube (yields bajan) si mercado reprecia expectativa de tasas bajas. Monedas de emergentes (AUD, CAD, BRL) ganan vs USD. Acciones de consumo pueden mejorar por costos energéticos menores.",
+    "escenarios": "Traders vigilan: (1) si caída persiste o rebote hacia $95; (2) interpretación de OPEC+ (producción, quotas); (3) si alivio energético reduce presión inflacionaria global; (4) impacto en tasas de Fed/BCE expectativas.",
+    "riesgos": "Caída podría revertirse si tensiones geopolíticas escalan nuevamente (Irán, Medio Oriente). Rumor de acuerdo de tregua podría no ser duradero."
+   },
+   "macro": {
+    "petroleo": "bajista, -7% a $89,58",
+    "dolar": "potencialmente neutral-bajista",
+    "oro": "podría bajar por alivio de riesgos",
+    "bonos": "alcista (yields bajan)",
+    "sp500": "mixto: energía baja, consumo sube"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-27T12:16:28+00:00",
+     "id": "33565",
+     "texto": "Actualización: tras caída de 5% en petróleo por pausa de Trump en ataques a Irán, analistas advierten que la baja es prematura. Bloqueos en Estrecho de Hormuz, ataques Houthi en Mar Rojo, e impactos de ataques ucranianos a infraestructura petrolera rusa mantienen riesgos estructurales de suministro.",
+     "tgUrl": "https://t.me/walterbloomberg/33565"
+    }
+   ],
+   "actualizado": "2026-07-27T12:16:28+00:00"
+  },
   {
    "id": "33560",
    "fecha": "2026-07-27T10:38:40+00:00",
@@ -134,78 +504,6 @@
     "riesgos": "Alianza es principalmente cabildeo político. Riesgo: reguladores ignoren, o China doble apuestas en IA abierta propia. Anuncio podría ser opacidad de competencia comercial bajo guisa de seguridad."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33553",
-   "fecha": "2026-07-27T08:43:32+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33553",
-   "via": "DeItaone",
-   "original": "BRENT CRUDE FUTURES DOWN OVER 7% TO $89.58/BBL, LOWEST SINCE JULY 21",
-   "titulo": "Petróleo Brent cae 7% a $89,58/barril, nivel más bajo desde 21 de julio",
-   "resumen": "Futuros de Brent crude descienden más de 7% hasta $89,58 por barril, tocando mínimo de 6 días. La caída refleja presiones sobre demanda y posibles cambios en perspectiva geopolítica, alejándose de tensiones anteriores en Oriente Medio.",
-   "analisis": {
-    "porque": "Petróleo impulsa inflación global, rentabilidades de bonos, valoración de equity risk y monedas de economías exportadoras. Caída de 7% es movimiento material que afecta energía, inflación y política monetaria de bancos centrales.",
-    "queOcurrio": "Precio de Brent retrocede fuertemente hasta niveles de hace 6 días, perdiendo ganancias previas sostenidas por tensiones geopolíticas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "Oro",
-    "Energía",
-    "Monedas EM",
-    "Bonos",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Inflación",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Energía",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Monedas EM",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "brent-crude",
-    "petróleo-caída",
-    "inflación-alivio",
-    "geopolítica",
-    "energía"
-   ],
-   "tgText": "📉 Brent crude cae 7% a $89,58/bbl, mínimo desde 21 julio. Alivio en presiones inflacionarias. Petróleo retrocede de tensiones geopolíticas previas.",
-   "xText": "📉 Brent -7% a $89,58/bbl (mín 6 días). Alivio en petróleo y presiones inflacionarias globales.",
-   "discordText": "**Petróleo Brent Cae**\n• Precio: $89,58/bbl (-7%)\n• Mínimo desde 21 julio\n• Implicación: Alivio inflacionario global\n• Energía pierde momentum geopolítico",
-   "pushText": "Brent desploma 7% a $89,58, mínimo de 6 días",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Acciones de energía (XLE, XLE componentes) caen inmediatamente. Dólar (DXY) puede debilitarse si alivio inflacionario reduce tasas implícitas USA.",
-    "despues": "Bonos sube (yields bajan) si mercado reprecia expectativa de tasas bajas. Monedas de emergentes (AUD, CAD, BRL) ganan vs USD. Acciones de consumo pueden mejorar por costos energéticos menores.",
-    "escenarios": "Traders vigilan: (1) si caída persiste o rebote hacia $95; (2) interpretación de OPEC+ (producción, quotas); (3) si alivio energético reduce presión inflacionaria global; (4) impacto en tasas de Fed/BCE expectativas.",
-    "riesgos": "Caída podría revertirse si tensiones geopolíticas escalan nuevamente (Irán, Medio Oriente). Rumor de acuerdo de tregua podría no ser duradero."
-   },
-   "macro": {
-    "petroleo": "bajista, -7% a $89,58",
-    "dolar": "potencialmente neutral-bajista",
-    "oro": "podría bajar por alivio de riesgos",
-    "bonos": "alcista (yields bajan)",
-    "sp500": "mixto: energía baja, consumo sube"
-   },
    "updates": []
   },
   {
