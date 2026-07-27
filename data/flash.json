@@ -1,7 +1,324 @@
 {
  "lastId": 33546,
- "actualizado": "2026-07-27T01:13:48.023Z",
+ "actualizado": "2026-07-27T06:04:37.690Z",
  "items": [
+  {
+   "id": "906427901",
+   "fecha": "2026-07-27T05:04:43.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html",
+   "via": "CNBC",
+   "original": "Why Trump&apos;s new tariff blitz is very different this time round",
+   "titulo": "Por qué la nueva ofensiva arancelaria de Trump es muy diferente esta vez",
+   "resumen": "Análisis de CNBC sobre diferencias estructurales en nueva propuesta arancelaria de Trump respecto a gestiones anteriores. El titular no especifica cuáles son esas diferencias, magnitudes de aranceles, ni sectores objetivo. Sugiere cambio de enfoque o estrategia versus ciclos previos de tensiones comerciales.",
+   "analisis": {
+    "porque": "Política arancelaria afecta directamente precios, márgenes empresariales, inflación y flujos comerciales globales. Impacto material en acciones, divisas y commodities. Relevancia geopolítica y macroeconómica alta.",
+    "queOcurrio": "CNBC analiza nueva iniciativa arancelaria de Trump, destacando que presenta diferencias significativas respecto a ciclos previos de su administración.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Russell2000",
+    "Dólar",
+    "Sectores Exportadores",
+    "Retail",
+    "Manufactura",
+    "Oro",
+    "Bonos Tesoro"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "aranceles",
+    "política-comercial",
+    "geopolítica",
+    "impuestos"
+   ],
+   "tgText": "📊 Análisis CNBC: nueva ofensiva arancelaria de Trump presenta diferencias estructurales vs ciclos previos. Potencial impacto material en márgenes empresariales e inflación.",
+   "xText": "📊 Trump: nueva estrategia arancelaria difiere de ciclos anteriores, según análisis de CNBC. Mayor impacto en márgenes y precios potencial.",
+   "discordText": "**Aranceles Trump: Análisis de Diferencias**\n• Nueva ofensiva comercial vs gestiones previas\n• Diferencias estructurales no especificadas\n• Potencial impacto en márgenes e inflación",
+   "pushText": "Trump: nueva ofensiva arancelaria con diferencias estructurales",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "S&P 500 y NASDAQ reaccionan a riesgo arancelario. Dólar tiende a fortalecerse por incertidumbre. Oro sube como activo refugio.",
+    "despues": "Sectores específicos según objetivo de aranceles (manufacturas, retail, semiconductores, automotriz). Empresas con cadenas globales presionadas.",
+    "escenarios": "Traders monitorean detalles de propuesta arancelaria cuando se formalicen. Evaluación de impacto inflacionario. Análisis de represalias comerciales. Riesgo de escalada geopolítica.",
+    "riesgos": "Título no especifica magnitudes ni sectores objetivo. Análisis opinativo de medio. Riesgo: especulación sobre intención política sin fundamentos confirmados."
+   },
+   "macro": {
+    "sp500": "bajista",
+    "nasdaq": "bajista",
+    "dolar": "alcista",
+    "oro": "alcista",
+    "bonos": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "908728183",
+   "fecha": "2026-07-27T04:18:35.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/goldman-sachs-asian-currencies-ai-boom-.html",
+   "via": "CNBC",
+   "original": "Goldman Sachs lists Asian currencies riding the AI boom",
+   "titulo": "Goldman Sachs destaca monedas asiáticas que capitalizan el auge de la IA",
+   "resumen": "Goldman Sachs publica análisis sobre monedas asiáticas que se benefician del boom de inteligencia artificial. El titular no especifica cuáles son esas monedas, ni qué mecanismo las favorece. Aparentemente vincula aumento de demanda de semiconductores/energía en Asia con fortaleza de divisas regionales.",
+   "analisis": {
+    "porque": "Señala rotación de capital hacia activos asiáticos ligados a cadena de valor de IA (semiconductores, energía, data centers). Afecta valuaciones de divisas, acciones tech asiáticas y commodities.",
+    "queOcurrio": "Goldman Sachs publicó reporte identificando monedas asiáticas como beneficiarias del auge de IA global, sin detallar cuáles específicamente.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Divisas Asiáticas",
+    "CNY",
+    "JPY",
+    "SGD",
+    "IDR",
+    "KRW",
+    "Acciones Tech Asia",
+    "Semiconductores"
+   ],
+   "sesgos": [
+    {
+     "activo": "Divisas Asiáticas",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Acciones Tech Asia",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Goldman-Sachs",
+    "monedas-asiáticas",
+    "IA",
+    "inteligencia-artificial",
+    "sentimiento"
+   ],
+   "tgText": "💡 Goldman Sachs: monedas asiáticas se benefician del auge de IA. Análisis destaca fortaleza de divisas regionales por demanda de chips y infraestructura.",
+   "xText": "💡 Goldman Sachs identifica monedas asiáticas ganando con boom de IA. Divisas regionales se fortalecen por cadena de suministro de semiconductores.",
+   "discordText": "**Goldman Sachs: Monedas Asiáticas y IA**\n• Análisis destaca beneficiarios de auge de inteligencia artificial\n• Enfoque en divisas asiáticas\n• Vinculación: demanda de chips y energía",
+   "pushText": "Goldman Sachs: monedas asiáticas ganan con IA",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Divisas asiáticas (CNY, SGD, KRW) tienden a fortalecerse por entrada de capitales en acciones tech. Moeda nikkei y dólar singapurense sensibles.",
+    "despues": "Acciones de semiconductores asiáticos, productores de energía, operadores de data centers. Petróleo y cobre por demanda incremental.",
+    "escenarios": "Traders monitorean rotación de fondos hacia Asia. Evalúan si impulso de IA es sostenible o burbuja. Vigilancia de flujos de capital y valuaciones regionales.",
+    "riesgos": "Reporte de banco de inversión es bias hacia activos asiáticos. Título no especifica qué monedas ni fundamentos. Riesgo: sobrevaloración y corrección."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "nasdaq": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "987033363",
+   "fecha": "2026-07-27T03:29:54.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/cxmt-china-market-debut-chipmaker-ipo.html",
+   "via": "CNBC",
+   "original": "China memory chipmaker CXMT skyrockets 500% in blockbuster Shanghai debut",
+   "titulo": "Fabricante de memoria CXMT se dispara 500% en debut espectacular en Shanghái",
+   "resumen": "La empresa china de chips de memoria CXMT sube 500% en su primer día de cotización en la bolsa de Shanghái. Este es un movimiento extraordinario típico de debuts IPO especulativos en mercados chinos. El titular no especifica valuación, capitalización o contexto de demanda de chips a nivel global.",
+   "analisis": {
+    "porque": "Refleja especulación inversora en sector semiconductores chino e inversión estratégica estatal. Señal de apetito por riesgo en mercados chinos y confianza en cadena de suministro doméstica de semiconductores.",
+    "queOcurrio": "CXMT debutó en bolsa de Shanghái con rally de 500%, movimiento extremo que sugiere fuerte demanda especulativa de inversores.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Mercado Chino",
+    "Semiconductores",
+    "CXMT",
+    "Índice Shanghai",
+    "Acciones Tecnología China"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores Chinos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Acciones Tecnología China",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "CXMT",
+    "IPO",
+    "Shanghái",
+    "semiconductores",
+    "memoria-chip",
+    "rally"
+   ],
+   "tgText": "🚀 CXMT sube 500% en debut en bolsa de Shanghái. Espectacular rally en fabricante de chips de memoria. Refleja apetito especulativo en sector semiconductores chino.",
+   "xText": "🚀 Fabricante chino de chips CXMT sube 500% en debut en Shanghái. Rally espectacular refleja fuerte demanda especulativa en sector de semiconductores.",
+   "discordText": "**IPO Explosiva: CXMT +500%**\n• Debut espectacular en bolsa de Shanghái\n• Fabricante de chips de memoria\n• Rally refleja especulación en semiconductores chinos",
+   "pushText": "CXMT explota +500% en debut en Shanghái",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Acciones de semiconductores chinas y sector tech en Shanghái reaccionan positivamente. CXMT establece nuevos máximos.",
+    "despues": "Valuaciones del sector tecnológico chino en bolsas globales; competidores internacionales de chips pueden enfrentar presión.",
+    "escenarios": "Traders monitorean si movimiento es burbuja especulativa o señal legítima de demanda de semiconductores. Vigilancia de bloqueos occidentales a tecnología china y capacidades reales de CXMT.",
+    "riesgos": "Rally de 500% es claramente especulativo; corrección severa es probable. Titulo no verifica ingresos, utilidades o fundamentos. Riesgo regulatorio geopolítico significativo."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "954917769",
+   "fecha": "2026-07-27T03:29:11.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/indonesia-central-bank-governor-perry-warjiyo-steps-down.html",
+   "via": "CNBC",
+   "original": "Indonesia central bank governor Perry Warjiyo steps down in surprise move",
+   "titulo": "Gobernador del banco central de Indonesia renuncia sorpresivamente",
+   "resumen": "Perry Warjiyo, gobernador del banco central de Indonesia (Bank Indonesia), renuncia de forma inesperada. El titular no proporciona razones de la renuncia, contexto político, ni planes de sucesión. La salida sorpresiva de autoridad monetaria central puede generar incertidumbre sobre continuidad de política.",
+   "analisis": {
+    "porque": "Cambio en liderazgo de banco central genera incertidumbre sobre dirección de política monetaria. Afecta credibilidad institucional, valuación de activos indonesios y divisas emergentes. Potencial volatilidad en mercados locales.",
+    "queOcurrio": "Perry Warjiyo, gobernador del Bank Indonesia, presentó su renuncia de forma sorpresiva sin contexto claro en el titular.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "IDR",
+    "Bolsa Indonesia",
+    "Bonos Indonesia",
+    "Mercados Emergentes",
+    "ASEAN"
+   ],
+   "sesgos": [
+    {
+     "activo": "IDR",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos Indonesia",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "Indonesia",
+    "banco-central",
+    "Perry-Warjiyo",
+    "renuncia",
+    "política-monetaria"
+   ],
+   "tgText": "🇮🇩 Gobernador del Banco de Indonesia Perry Warjiyo renuncia sorpresivamente. Genera incertidumbre sobre continuidad de política monetaria y credibilidad institucional.",
+   "xText": "🇮🇩 Perry Warjiyo renuncia como gobernador de Bank Indonesia en movimiento sorpresivo. Potencial volatilidad en activos indonesios.",
+   "discordText": "**Indonesia: Renuncia Sorpresiva en BC**\n• Perry Warjiyo deja gobernatura del Bank Indonesia\n• Contexto de renuncia no especificado\n• Incertidumbre sobre política monetaria futura",
+   "pushText": "Indonesia: gobernador del BC renuncia sorpresivamente",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Rupia indonesa (IDR) tiende a debilitarse por incertidumbre institucional. Bonos soberanos pueden enfrentar presión de ventas.",
+    "despues": "Acciones en bolsa de Yakarta. Otros mercados emergentes pueden experimentar efecto contagio si renuncia refleja crisis política.",
+    "escenarios": "Traders monitorean anuncio oficial de sucesor. Evaluación de continuidad de política antiinflacionaria. Análisis de estabilidad política indonesia. Riesgo de deterioro en credibilidad monetaria.",
+    "riesgos": "Título no explica motivos de renuncia; podría haber contexto político no revelado. Especulación sobre crisis institucional es probable."
+   },
+   "macro": {
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "983015583",
+   "fecha": "2026-07-27T02:02:04.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/china-industrial-profit-growth-exports-oil-drops.html",
+   "via": "CNBC",
+   "original": "China industrial profit growth slows again in June as retreating oil prices sap earnings lift",
+   "titulo": "Crecimiento de ganancias industriales de China se desacelera en junio por caída de precios del petróleo",
+   "resumen": "Las ganancias industriales de China ralentizan su crecimiento en junio conforme los precios del petróleo retroceden, erosionando los márgenes de beneficio empresarial. El titular no especifica cifras exactas ni comparaciones interanuales. Este dato refleja presiones deflacionarias y debilidad en la demanda global de energía que afecta directamente a productores chinos.",
+   "analisis": {
+    "porque": "China es motor económico global; ralentización de ganancias industriales señala desaceleración económica y presiona activos de riesgo. Afecta cotización de empresas exportadoras y demanda de materias primas.",
+    "queOcurrio": "Las ganancias industriales chinas muestran desaceleración en junio debido a caída de precios del crudo, lo que reduce ingresos de sectores energéticos y dependientes.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "China HDR",
+    "Petróleo",
+    "Cobre",
+    "Dólar Australiano",
+    "Índices Asiáticos",
+    "Empresas chinas exportadoras"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Acciones Chinas",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dólar Australiano",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "China",
+    "ganancias-industriales",
+    "petróleo",
+    "desaceleración",
+    "márgenes"
+   ],
+   "tgText": "📊 China: desaceleración de ganancias industriales en junio. Caída de precios del petróleo erosiona márgenes de beneficio empresarial. Señal de debilidad económica global.",
+   "xText": "📊 Ganancias industriales de China se desaceleran en junio por caída del petróleo. Mayor evidencia de presiones deflacionarias y debilidad en demanda global.",
+   "discordText": "**China: Ganancias Industriales Ralentizan**\n• Junio muestra desaceleración en crecimiento de beneficios\n• Caída de precios del petróleo principal factor\n• Impacta márgenes de empresas exportadoras",
+   "pushText": "China: ganancias industriales desaceleran en junio",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI/Brent) reacciona directamente; caída presiona ingresos de sector energético chino",
+    "despues": "Acciones de empresas chinas exportadoras, índices asiáticos, divisas vinculadas a China (AUD, NZD)",
+    "escenarios": "Traders monitorean si desaceleración china se profundiza. Vigilancia de próximos datos de manufactura PMI. Evaluación de impacto en demanda de commodities.",
+    "riesgos": "Titular no proporciona cifras exactas; podría tratarse de ciclo normal de ganancias. Impacto limitado si se interpreta como corrección técnica."
+   },
+   "macro": {
+    "petroleo": "bajista",
+    "nasdaq": "neutro",
+    "sp500": "neutro",
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
   {
    "id": 999290167,
    "fecha": "2026-07-27T00:34:22.000Z",
@@ -5689,6 +6006,12 @@
   "https://www.cnbc.com/select/when-should-you-start-collecting-social-security/",
   "https://www.cnbc.com/2026/07/26/jim-cramer-heres-the-tech-stock-to-buy-in-a-market-losing-patience-with-tech.html",
   "https://www.cnbc.com/2026/07/27/oil-price-wti-brent-slide-as-iran-reportedly-may-halt-attacks.html",
-  "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html"
+  "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
+  "https://www.cnbc.com/2026/07/27/china-industrial-profit-growth-exports-oil-drops.html",
+  "https://www.cnbc.com/2026/07/27/indonesia-central-bank-governor-perry-warjiyo-steps-down.html",
+  "https://www.cnbc.com/2026/07/27/cxmt-china-market-debut-chipmaker-ipo.html",
+  "https://www.cnbc.com/2026/07/27/seattle-shooting-leaves-two-dead-five-injured.html",
+  "https://www.cnbc.com/2026/07/27/goldman-sachs-asian-currencies-ai-boom-.html",
+  "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html"
  ]
 }
