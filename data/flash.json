@@ -1,7 +1,182 @@
 {
  "lastId": 33546,
- "actualizado": "2026-07-26T22:16:13.049Z",
+ "actualizado": "2026-07-27T01:13:48.023Z",
  "items": [
+  {
+   "id": 999290167,
+   "fecha": "2026-07-27T00:34:22.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
+   "via": "CNBC",
+   "original": "Singapore tightens monetary policy as rising oil prices rekindle inflation risk",
+   "titulo": "Singapur tightens monetary policy as rising oil prices rekindle inflation risk",
+   "resumen": "Banco Central de Singapur endurece política monetaria para frenar inflación derivada de precios de petróleo al alza. No se especifican cambios de tasas, timing, ni impacto esperado en SGD o activos asiáticos. Conexión con caída de petróleo reportada en título 905321019 genera contradicción (petróleo cae vs sube).",
+   "analisis": {
+    "porque": "Acción de bancos centrales asiáticos afecta flujos de carry trade, valuación de monedas, demanda de activos de riesgo. Singapur es hub financiero. Señal de inflación global.",
+    "queOcurrio": "MAS (Monetary Authority of Singapore) endurece stance monetario ante riesgo inflacionario de petróleo caro.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Oro",
+    "Petróleo",
+    "SGD",
+    "Emergentes",
+    "Bonos",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "SGD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Emergentes",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "singapur-mas",
+    "politica-monetaria",
+    "inflacion",
+    "petroleo",
+    "carry-trade"
+   ],
+   "tgText": "MAS endurece política monetaria ante riesgo inflacionario por petróleo caro. Impacto en carry trade y valuación de emergentes.",
+   "xText": "Singapur aprieta monetaria: inflación por petróleo caro en alerta. MAS se prepara ante riesgos de precios de energía. Impacto carry trade. #AsiaFX",
+   "discordText": "**Singapur endurece política monetaria**\n• Banco Central (MAS) aprieta stance\n• Razón: riesgo inflacionario de petróleo\n• Impacto: SGD alcista, emergentes bajistas\n• Presión en carry trade",
+   "pushText": "Singapur aprieta política monetaria por inflación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "SGD se aprecia (carry trade menos atractivo), flujos salen de emergentes asiáticos.",
+    "despues": "Oro presiona (política tightening), petróleo presiona más (demanda asia menor), bonos asiáticos se reprician con tasas más altas esperadas.",
+    "escenarios": "Traders vigilan: (1) magnitud de tightening (cuántos bps), (2) si otros bancos centrales asiáticos siguen (PBOC, BoT), (3) reacción de carry traders que financiaban en SGD.",
+    "riesgos": "Contradicción potencial: si petróleo cae (como reporta 905321019), urgencia inflacionaria se reduce. Credibilidad de acción MAS depende de datos de inflación posteriores."
+   },
+   "macro": {
+    "sgd": "Alcista",
+    "oro": "Bajista",
+    "petroleo": "Presión adicional a baja",
+    "emergentes": "Bajistas"
+   },
+   "updates": []
+  },
+  {
+   "id": 905321019,
+   "fecha": "2026-07-26T23:58:00.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/oil-price-wti-brent-slide-as-iran-reportedly-may-halt-attacks.html",
+   "via": "CNBC",
+   "original": "Oil slides 5% as Iran reportedly signals halt to attacks if U.S. pause holds",
+   "titulo": "Petróleo cae 5% tras señales de Irán de pausar ataques si EE.UU. mantiene tregua",
+   "resumen": "El crudo se desplomó 5% después de que Irán señalara disposición a detener ataques si Estados Unidos mantiene la pausa en operaciones militares. La noticia representa una desescalada en tensiones geopolíticas que ha presionado los precios energéticos. El titular no especifica el nivel de precios actuales ni diferencia entre tipos de crudo.",
+   "analisis": {
+    "porque": "El petróleo es activo macro crítico; caídas de 5% afectan inflación, márgenes corporativos y curvas de rendimiento. Desescalada geopolítica reduce prima de riesgo en energía.",
+    "queOcurrio": "Irán reportadamente señaló disponibilidad para pausar ataques bajo condición de que EE.UU. mantenga tregua. Esto sigue a tensiones previas documentadas en feed.",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "S&P500",
+    "Oro",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "petróleo",
+    "tensiones-geopolíticas",
+    "desescalada",
+    "energía"
+   ],
+   "tgText": "📉 Petróleo cae 5% tras señales de Irán de pausar ataques si tregua de EE.UU. se mantiene. Desescalada geopolítica reduce prima de riesgo en crudo.",
+   "xText": "Petróleo desplomado 5% tras señales de desescalada Irán-EE.UU. Irán reporta disposición a pausar ataques si se mantiene tregua. Impacto en inflación y márgenes corporativos. #Energía #Mercados",
+   "discordText": "**Petróleo cae 5% por señales de tregua Irán-EE.UU.**\n• Irán señala disponibilidad de pausar ataques\n• Condición: mantención de pausa estadounidense\n• Desescalada reduce prima de riesgo en energía\n• Impacto directo en inflación esperada",
+   "pushText": "Petróleo -5% por desescalada Irán-EE.UU.",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo cae primero por reducción de riesgo geopolítico; traders de energía ajustan posiciones cortas.",
+    "despues": "Oro cede (sesgo risk-on), dólar se debilita (menos demanda de refugio), S&P500 sube (menos inflación esperada, márgenes mejorados).",
+    "escenarios": "Traders vigilan: (1) confirmación oficial de tregua Irán-EE.UU., (2) si caída de crudo presiona inflación esperada para Fed, (3) reacciones de petrolers (Exxon, Chevron, etc.).",
+    "riesgos": "Estado 'rumor': escalada repentina podría revertir rápidamente. Volatilidad extrema en futuros de crudo. Comunicación oficial Irán suele ser no-verificable."
+   },
+   "macro": {
+    "petroleo": "Bajista 5% inmediato",
+    "oro": "Bajista por risk-on",
+    "dolar": "Bajista (menos demanda refugio)",
+    "sp500": "Alcista (inflación menor, márgenes)",
+    "bonos": "Alcista (rendimientos caen con inflación esperada menor)",
+    "nasdaq": "Alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 904417170,
+   "fecha": "2026-07-26T23:39:46.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/jim-cramer-heres-the-tech-stock-to-buy-in-a-market-losing-patience-with-tech.html",
+   "via": "CNBC",
+   "original": "Here&apos;s the tech stock to buy in a market losing patience with tech",
+   "titulo": "Qué acción tech comprar cuando el mercado pierde paciencia con sector",
+   "resumen": "Editorial de CNBC identifica qué acción tech sería defensiva en escenario de rotación del mercado fuera de tech. No especifica cuál es, ni justificación de selección. Timing coincide con presión reciente en NASDAQ post-earnings.",
+   "analisis": {
+    "porque": "Señal de que mercado evalúa reversión de posiciones mega-cap tech. Editorial tactical refleja sentimiento de traders. Sin embargo, acción específica no está identificada.",
+    "queOcurrio": "CNBC sugiere existe tech stock defensiva ante pérdida de paciencia del mercado con sector.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "tech-rotacion",
+    "paciencia-mercado",
+    "defensivo",
+    "nasdaq"
+   ],
+   "tgText": "CNBC sugiere acción tech defensiva en escenario de rotación del mercado. (Acción específica no identificada en titular).",
+   "xText": "Mercado pierde paciencia con tech: ¿cuál es la acción defensiva? CNBC identifica play. Detalle en enlace.",
+   "discordText": "**Tech en scrutinio del mercado**\n• CNBC identifica acción defensiva\n• Escenario: rotación fuera de mega-cap\n• (Ticker no en titular)",
+   "pushText": "CNBC apunta a tech defensiva vs rotación",
+   "importancia": 5,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "968273537",
    "fecha": "2026-07-26T22:04:38.000Z",
@@ -460,6 +635,154 @@
     "bonos": "Potencial alcista por rotación defensiva",
     "oro": "Posible demanda defensiva"
    },
+   "updates": []
+  },
+  {
+   "id": 903504830,
+   "fecha": "2026-07-26T11:46:51.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/what-more-expensive-corporate-debt-could-mean-for-the-ai-buildout.html",
+   "via": "CNBC",
+   "original": "What more expensive corporate debt could mean for the AI buildout",
+   "titulo": "Deuda corporativa más cara podría frenar inversión en IA, advierten analistas",
+   "resumen": "Analistas señalan que el encarecimiento de la deuda corporativa crearía fricción en el financiamiento de proyectos de IA capital-intensivos. El titular no especifica tasas, spreads actuales ni qué empresas de tech podrían verse afectadas con mayor severidad. Contexto: en 2026 el buildout de IA sigue siendo motor de valuaciones tech.",
+   "analisis": {
+    "porque": "Deuda corporativa más cara afecta directamente la ecuación de NPV de capex en IA. Si costo de financiamiento sube, proyectos con retornos marginales se invalidan. Impacta valuaciones tech (especialmente data centers, semiconductores).",
+    "queOcurrio": "Analistas previenen que deuda corporativa más cara podría ralentizar inversión en buildout de IA. No se cita comunicado de Fed, bancos centrales ni cambio oficial de tasas.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Bonos",
+    "Rendimientos USA",
+    "Semiconductor stocks"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos corporativos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Data center plays",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "deuda-corporativa",
+    "tasas-interes",
+    "ia-capex",
+    "financiamiento",
+    "tech"
+   ],
+   "tgText": "💡 Analistas advierten: deuda corporativa cara frenaría inversión en IA. Proyectos capital-intensivos con retornos marginales podrían invalidarse si tasas suben.",
+   "xText": "Alerta: encarecimiento de deuda corporativa presionaría inversión en IA. Fricción en financiamiento de data centers y chips impactaría valuaciones tech. #NASDAQ #IA",
+   "discordText": "**Deuda corporativa cara amenaza buildout de IA**\n• Analistas alertan sobre fricción en financiamiento\n• Proyectos capital-intensivos en riesgo\n• Impacto en NASDAQ y valuaciones tech\n• Retornos marginales se tornan inviables con tasas altas",
+   "pushText": "Deuda cara frenaría inversión en IA, advierte Wall Street",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "NASDAQ cede (menos capex esperado en tech), spreads de bonos corporativos se cotizan más anchos.",
+    "despues": "Semiconductor stocks presionan (menos demanda de chips de IA), data center plays (AWS, Azure, data center REITs) retroceden.",
+    "escenarios": "Traders vigilan: (1) próximas decisiones de Fed (si mantiene tasas altas), (2) spreads de bonos corporativos tipo tech/infraestructura, (3) earnings de Nvidia, AMD, Cloud players con guidance capex.",
+    "riesgos": "Análisis prospectivo sin datos duros. Si tasas bajan o spreads se cierren, sesgo se invierte. Dependencia de políticas monetarias futuras."
+   },
+   "macro": {
+    "nasdaq": "Bajista potencial",
+    "bonos": "Bajistas (spreads anchos)",
+    "rendimientos": "Impacto si suben"
+   },
+   "updates": []
+  },
+  {
+   "id": 923498551,
+   "fecha": "2026-07-26T11:37:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/luxury-retailers-turn-to-outlets-for-growth-analysts-say-these-stocks-can-benefit.html",
+   "via": "CNBC",
+   "original": "Luxury retailers turn to outlets for growth. Analysts say these stocks can benefit",
+   "titulo": "Retailers de lujo apuestan por outlets; analistas ven oportunidad en estas acciones",
+   "resumen": "Retailers de lujo abren o expanden outlets como estrategia de crecimiento. Analistas identifican oportunidades de mercado. El titular no especifica qué compañías, ubicaciones, o timing de expansion. Contexto: sector lujo enfrenta presión de demanda en 2026.",
+   "analisis": {
+    "porque": "Outlet strategy de lujo = monetizar exceso de stock, capturar segmento middle-market, diversificar canales. Afecta márgenes y flujo de caja retail. Tema sectorial relevante en earnings season.",
+    "queOcurrio": "Retailers de lujo pivotan hacia outlets como motor de crecimiento. Analistas ven plays positivos en sector.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Consumer Discretionary"
+   ],
+   "sesgos": [
+    {
+     "activo": "Retail Lujo",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "retail-lujo",
+    "outlets",
+    "estrategia-crecimiento",
+    "márgenes"
+   ],
+   "tgText": "Retailers lujo apuestan por outlets como motor de crecimiento. Analistas ven plays positivos en sector de discretionary.",
+   "xText": "Lujo en outlets: retailers abren nuevo canal. Analistas optimistas con acciones del sector para capturar demanda middle-market. #Retail #Discretionary",
+   "discordText": "**Retailers lujo abren estrategia de outlets**\n• Nuevo canal de distribución\n• Objetivo: monetizar stock, capturar middle-market\n• Analistas ven oportunidades\n• Impacto en márgenes y flujos",
+   "pushText": "Retailers lujo expanden outlets; Wall Street optimista",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Consumer Discretionary sector se cotiza alcista si mercado interpreta como innovación defensiva.",
+    "despues": "Acciones retail específicas se beneficiarían si guía capex/inversiones es positiva.",
+    "escenarios": "Traders vigilan: (1) earnings de retailers lujo con detalle de outlet performance, (2) márgenes brutos si estrategia presiona precios, (3) reacción de mercado a 'trading down' de consumidores.",
+    "riesgos": "Outlet strategy puede señalar debilidad de demanda en full-price. Presión de márgenes si mix de ventas se desplaza a descuento."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 923745369,
+   "fecha": "2026-07-26T11:33:11.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/26/top-analysts-back-these-3-stocks-for-their-long-term-growth-potential.html",
+   "via": "CNBC",
+   "original": "Top Wall Street analysts back these 3 stocks for their long-term growth potential",
+   "titulo": "Top analistas de Wall Street respaldan 3 acciones por potencial de crecimiento a largo plazo",
+   "resumen": "Analistas de Wall Street seleccionan tres acciones para posiciones de largo plazo. El titular no especifica qué compañías son, sectores, ni criterios de selección. Información incompleta imposibilita análisis de mercado específico.",
+   "analisis": {
+    "porque": "Respaldos de analistas top-tier pueden atraer flujos institucionales sostenidos. Sin embargo, titular carece de detalles para impacto de mercado.",
+    "queOcurrio": "Analistas de Wall Street respaldan 3 acciones no identificadas para crecimiento a largo plazo.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "S&P500"
+   ],
+   "sesgos": [],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "analistas-wall-street",
+    "selección-acciones",
+    "crecimiento-largo-plazo"
+   ],
+   "tgText": "Analistas top de Wall Street respaldan 3 acciones para crecimiento a largo plazo. (Acciones no especificadas en titular).",
+   "xText": "Wall Street: 3 acciones seleccionadas para potencial de crecimiento a largo plazo. Detalles en CNBC.",
+   "discordText": "**Analistas Wall Street avalan 3 acciones**\n• Selección para largo plazo\n• Potencial de crecimiento\n• (Detalles no en titular)",
+   "pushText": "Analistas recomiendan 3 acciones para largo plazo",
+   "importancia": 4,
+   "reaccion": null,
+   "macro": null,
    "updates": []
   },
   {
@@ -5358,6 +5681,14 @@
   "https://www.cnbc.com/2026/07/26/shein-reveals-key-financials-ahead-of-hong-kong-ipo.html",
   "https://www.cnbc.com/2026/07/26/vehicle-mows-down-crowd-at-berlin-pride-festival-killing-one.html",
   "https://www.cnbc.com/2026/07/26/here-are-the-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
-  "https://www.cnbc.com/2026/07/26/stock-market-today-live-updates.html"
+  "https://www.cnbc.com/2026/07/26/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/07/26/top-analysts-back-these-3-stocks-for-their-long-term-growth-potential.html",
+  "https://www.cnbc.com/2026/07/26/luxury-retailers-turn-to-outlets-for-growth-analysts-say-these-stocks-can-benefit.html",
+  "https://www.cnbc.com/2026/07/26/what-more-expensive-corporate-debt-could-mean-for-the-ai-buildout.html",
+  "https://www.cnbc.com/2026/07/26/election-midterms-dccc-chair-delbene-democrats.html",
+  "https://www.cnbc.com/select/when-should-you-start-collecting-social-security/",
+  "https://www.cnbc.com/2026/07/26/jim-cramer-heres-the-tech-stock-to-buy-in-a-market-losing-patience-with-tech.html",
+  "https://www.cnbc.com/2026/07/27/oil-price-wti-brent-slide-as-iran-reportedly-may-halt-attacks.html",
+  "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html"
  ]
 }
