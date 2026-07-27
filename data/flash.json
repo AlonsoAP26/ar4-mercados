@@ -1,72 +1,7 @@
 {
- "lastId": 33614,
- "actualizado": "2026-07-27T17:50:26.147Z",
+ "lastId": 33621,
+ "actualizado": "2026-07-27T19:04:48.999Z",
  "items": [
-  {
-   "id": "33614",
-   "fecha": "2026-07-27T16:46:01+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33614",
-   "via": "DeItaone",
-   "original": "MORGAN STANLEY RAISES ISM FORECAST Morgan Stanley lifted its July ISM Manufacturing PMI forecast to 53.8 from 53.3, citing stronger Texas factory activity, rising production, and solid new orders. The bank said longer delivery times and higher inventories point to stronger demand rather than supply chain disruptions, while price pressures eased despite higher energy costs.",
-   "titulo": "Morgan Stanley eleva PMI manufacturero de julio a 53,8; demanda más fuerte",
-   "resumen": "Morgan Stanley elevó su pronóstico del PMI Manufacturero de julio a 53,8 desde 53,3, citando actividad fabril más sólida en Texas, aumento de producción y órdenes firmes. El banco interpreta tiempos de entrega más largos e inventarios mayores como señal de demanda sólida, no disrupciones de cadena de suministro. Presiones de precio se moderaron a pesar de costos energéticos mayores.",
-   "analisis": {
-    "porque": "Datos de PMI manufacturero son leading indicator de actividad económica y salud empresarial. Revisión al alza y narrativa de demanda fuerte (no supply shock) es alcista para renta variable. Moderación de precios reduce temores inflacionarios.",
-    "queOcurrio": "Morgan Stanley revisó al alza su expectativa del PMI manufacturero de EE.UU. para julio, argumentando que indicadores muestran demanda resiliente en lugar de presiones de oferta. Presiones de precios menos intensas que en meses previos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Dólar",
-    "Bonos",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "pmi-manufactura",
-    "demanda",
-    "economia-usa",
-    "morgan-stanley",
-    "july-data"
-   ],
-   "tgText": "📊 Morgan Stanley eleva PMI Manufacturero julio a 53,8. Demanda sólida en Texas, producción y órdenes firmes. Presiones de precio se moderan.",
-   "xText": "Morgan Stanley sube pronóstico PMI manufactura julio a 53,8 (vs 53,3). Demanda fuerte, no disrupciones de supply chain. Presiones de precio moderadas a pesar de energía cara.",
-   "discordText": "**MORGAN STANLEY - PMI MANUFACTURA**\n• Eleva pronóstico a 53,8 (vs 53,3)\n• Demanda fuerte (Texas, producción, órdenes)\n• Sin disrupciones supply chain\n• Presiones de precio moderadas\n→ Economía más resiliente; alcista para equities",
-   "pushText": "Morgan Stanley sube PMI: economía muestra demanda fuerte",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Índices de equities (S&P500, NASDAQ) responden positivamente a datos de demanda sólida. Dólar podría fortalecerse (economía fuerte).",
-    "despues": "Bonos caen si mercado reprecifica crecimiento. Oro baja (dólar fuerte, riesgo-off menor).",
-    "escenarios": "Traders vigilan: (1) Si datos reales de PMI el 1 de agosto coinciden con revisión de Morgan Stanley, confirmación alcista. (2) Si resulta higher, mayor confianza en economía. (3) Si resulta lower, Goldman y otros advertidores sobre macro risks tendrían razón.",
-    "riesgos": "Riesgo de que Morgan Stanley sea demasiado optimista. Riesgo de que datos reales decepcionen. Riesgo de que interpretación de inventarios altos sea incorrecta (exceso, no demanda)."
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "sp500": "alcista",
-    "dolar": "alcista moderado",
-    "bonos": "bajista"
-   },
-   "updates": []
-  },
   {
    "id": "33613",
    "fecha": "2026-07-27T16:45:30+00:00",
@@ -129,6 +64,420 @@
     "sinopec": "alcista",
     "fletes": "bajista largo plazo",
     "yuan": "alcista (energía segura)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-27T18:57:07+00:00",
+     "id": "33621",
+     "texto": "Actualización: Macquarie pronostica que mercado petrolero girará hacia superávit antes de diciembre si tensiones EE.UU.-Irán se desescalan antes de elecciones de mitad de período. Restauración de flujos de Oriente Medio en semanas crearía sobrecapacidad significativa tras disrupciones relacionadas con guerra.",
+     "tgUrl": "https://t.me/walterbloomberg/33621"
+    }
+   ],
+   "actualizado": "2026-07-27T18:57:07+00:00"
+  },
+  {
+   "id": "33620",
+   "fecha": "2026-07-27T18:49:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33620",
+   "via": "DeItaone",
+   "original": "$NVDA - NVIDIA CREDIT RISK JUMPS The cost of insuring Nvidia's debt surged to a record after reports the company is discussing more than $750 billion in AI infrastructure financing tied to OpenAI. Investors are growing concerned about Nvidia's expanding financial commitments, with analysts warning complex financing structures could increase credit risks.",
+   "titulo": "Costo de aseguro de deuda de Nvidia salta a máximo histórico; acuerdo OpenAI genera dudas",
+   "resumen": "El costo de cobertura de riesgo crediticio de Nvidia alcanzó máximos históricos tras reportes de negociaciones de financiamiento de infraestructura IA por más de $750 mil millones vinculado a OpenAI. Inversores expresan preocupación por compromisos financieros ampliados y complejidad de estructuras de financiamiento, elevando riesgos de crédito percibidos.",
+   "analisis": {
+    "porque": "Señal de mercado de crédito sobre endeudamiento corporativo; CDS widening indica erosión de confianza en perfil financiero de Nvidia; afecta costo de capital futuro y valuación de deuda.",
+    "queOcurrio": "Spread de CDS de Nvidia alcanzó nivel máximo histórico tras anuncios de Nvidia discutiendo financiamiento por $750B+ para infraestructura IA relacionada con OpenAI.",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada (reportes de mercado)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NVDA",
+    "Semiconductores",
+    "Bonos corporativos",
+    "Deuda Nvidia",
+    "NASDAQ",
+    "CDS Nvidia"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos corporativos de tech",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas|Breaking News",
+   "keywords": [
+    "nvidia-cds",
+    "riesgo-crediticio",
+    "deuda-historico",
+    "openai-financiamiento",
+    "apalancamiento-nvidia"
+   ],
+   "tgText": "⚠️ CDS Nvidia en máximo histórico. Mercado de crédito señala alarma: financiamiento de $750B+ para IA genera dudas sobre apalancamiento. Costo de capital corporativo en riesgo.",
+   "xText": "🚨 CDS Nvidia alcanza máximo histórico. Mercado de crédito advierte: negociación de financiamiento $750B+ para infraestructura IA eleva riesgos. Preocupaciones sobre estructura y endeudamiento.",
+   "discordText": "**⚠️ NVIDIA en alerta de crédito**\n• CDS en máximo histórico\n• Negociaciones de financiamiento $750B+ OpenAI\n• Mercado señala riesgos de apalancamiento y estructuras complejas\n• Presión en deuda corporativa de tech",
+   "pushText": "CDS Nvidia en máximo histórico por financiamiento de $750B; crédito en alerta",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Bonos de Nvidia (IG spread) se amplían inmediatamente; CDS sigue widening; NVDA equity bajo presión si mercado teme dilución de accionistas o covenant breaches.",
+    "despues": "Semiconductores conexos (AMD, ASML, TSMC) pueden sufrir contagio por re-rating de sector; spreads corporativos de tech se amplían; tasas de financiamiento de grandes caps en presión.",
+    "escenarios": "Traders vigilan: (1) comunicados oficiales de Nvidia sobre términos del acuerdo; (2) rating agencies (Moody's, S&P) vs. mercado de CDS; (3) capacidad de servicio de deuda vs. flujos de caja IA; (4) si $750B es financiamiento externo o canje de equity.",
+    "riesgos": "Titular es RUMOR (reportes sin confirmación oficial); CDS puede revertir si Nvidia aclara términos; riesgo de que estructura sea equity financing vs. deuda, inversando la narrativa; contagio sistémico si se interpreta como señal de sobreendeudamiento de mega-cap tech."
+   },
+   "macro": {
+    "dolar": "Neutral",
+    "oro": "Neutral a levemente alcista si aversión a riesgo sube",
+    "nasdaq": "Bajista por repricing de tech megacap",
+    "dow": "Neutral",
+    "sp500": "Bajista si Nvidia repricing es contagioso",
+    "bitcoin": "Neutral a bajista si flight-to-safety domina",
+    "ethereum": "Bajista por correlación con riesgo de crédito tech",
+    "bonos": "Alcista (yields bajan) si aversión a riesgo domina corporativos",
+    "petroleo": "Neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33619",
+   "fecha": "2026-07-27T18:47:36+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33619",
+   "via": "DeItaone",
+   "original": "JPMORGAN TURNS BULLISH ON STOCKS JPMorgan said its tactical positioning monitor is flashing a buy signal, pointing to further upside for the S&P 500. The bank expects lower bond yields, a weaker dollar, steady Fed policy, and strong earnings to support equities, while warning that semiconductor positioning and U.S.-Iran tensions remain key risks.",
+   "titulo": "JPMorgan ve espacio alcista para S&P 500; monitor táctico genera señal de compra",
+   "resumen": "JPMorgan reporta que su monitor de posicionamiento táctico emitió señal de compra para acciones, proyectando potencial de revaluación del S&P 500. Banco anticipa rendimientos de bonos más bajos, dólar débil, política de Fed estable y ganancias sólidas como catalizadores alcistas, aunque advierte sobre riesgo de posicionamiento en semiconductores y tensiones EE.UU.-Irán.",
+   "analisis": {
+    "porque": "Señal institucional sobre rotación táctica de carteras; potencial flujos hacia equities desde renta fija; refleja cambio de composición de exposición en mercado institucional.",
+    "queOcurrio": "JPMorgan señala compra táctica basada en convergencia de factores: yields bajistas, USD debilitado, Fed estable, earnings visibles. Reconoce riesgos en semis y geopolítica.",
+    "estado": "confirmado",
+    "fuenteOriginal": "JPMorgan Research / Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "USD",
+    "DXY",
+    "Semiconductores",
+    "Acciones"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas|Datos Económicos",
+   "keywords": [
+    "jpmorgan",
+    "posicionamiento-táctico",
+    "señal-compra",
+    "sp500",
+    "rendimientos-bajos"
+   ],
+   "tgText": "📈 JPMorgan emite señal de compra táctica en S&P 500. Anticipa yields bajos, USD débil, Fed estable y ganancias sólidas. Riesgos: semis y tensiones Irán.",
+   "xText": "JPMorgan monitor táctico emite señal de compra en S&P 500. Banco anticipa yields bajos, USD débil, Fed estable y earnings sólidos. Alerta: riesgos en semiconductores e Irán.",
+   "discordText": "**JPMorgan: Señal de COMPRA en S&P 500**\n• Monitor táctico emite buy signal\n• Catalizadores: yields bajos, USD débil, Fed stable\n• Earnings esperados sólidos\n• ⚠️ Riesgos: positioning en semis, tensiones EE.UU.-Irán",
+   "pushText": "JPMorgan emite señal de compra táctica en S&P 500; anticipa gains por yields bajos y USD débil",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Índices grandes (SPX, NDX) suben sobre noticia; flujo de buy signals de otras mesas crea momentum alcista; rotación desde bonos hacia equities.",
+    "despues": "Small caps y sectores cíclicos pueden revaluarse; dólar se debilita confirmando tesis de JPM; semiconductores monitoreados por riesgos de posicionamiento excesivo.",
+    "escenarios": "Traders vigilan: (1) si otros bancos (Goldman, Morgan Stanley, BofA) replican señal o contradicen; (2) earnings del lado: alcista si sorpresas positivas, bajista si misses; (3) Fed meeting esta semana → guidance es catalizador; (4) niveles de resistencia técnica en SPX para confirmar break-out.",
+    "riesgos": "Señal táctica es SHORT-TERM, no strategic; reversión rápida si Fed gira hawkish o earnings decepcionan; posicionamiento alcista extremo puede generar trampa de cortos; geopolítica Irán es variable exógena impredecible."
+   },
+   "macro": {
+    "dolar": "Presión bajista esperada",
+    "oro": "Neutral a bajista si risk-on domina",
+    "nasdaq": "Alcista potencial",
+    "dow": "Alcista potencial",
+    "sp500": "Alcista (señal de compra de JPM)",
+    "bitcoin": "Alcista por ambiente risk-on",
+    "ethereum": "Alcista por ambiente risk-on",
+    "bonos": "Rendimientos podrían bajar si flujo a equities es masivo",
+    "petroleo": "Neutral a bajista por desescalada Irán ya factorizada"
+   },
+   "updates": []
+  },
+  {
+   "id": "33617",
+   "fecha": "2026-07-27T18:31:46+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33617",
+   "via": "DeItaone",
+   "original": "BOFA BACKS ASML AFTER SELLOFF BofA Securities reiterated its Buy rating and price target on ASML, calling the recent selloff an overreaction. The bank estimates a Chinese shift to domestic DUV tools would cut next year's sales by only about €1.4 billion (2.4%). It said ASML's EUV leadership remains unmatched and views current valuation as an attractive buying opportunity.",
+   "titulo": "BofA respalda ASML tras liquidación; ve posicionamiento defensivo como oportunidad",
+   "resumen": "BofA Securities reiteró calificación de Compra en ASML, interpretando liquidación reciente como sobrerreacción. Banco estima que migración china a herramientas DUV domésticas reduciría ventas 2027 en solo €1,4 mil millones (2,4%). BofA destaca que liderazgo incontestable de ASML en EUV y valúa actual como oportunidad de compra atractiva.",
+   "analisis": {
+    "porque": "Validación institucional reduce riesgo de caída adicional en ASML; cálculo de impacto China (2,4% de ventas) es dato clave para mercado; afecta rotación entre europeos y defensivas.",
+    "queOcurrio": "BofA reitera posición alcista en ASML tras corrección, cuantificando riesgo de competencia china en DUV como limitado (<3% de ingresos).",
+    "estado": "confirmado",
+    "fuenteOriginal": "BofA Securities / Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "ASML",
+    "Semiconductores",
+    "Europa",
+    "Bonos europeos"
+   ],
+   "sesgos": [
+    {
+     "activo": "ASML",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "China tech",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "asml",
+    "bofa-compra",
+    "duv-china",
+    "semiconductores",
+    "litografia"
+   ],
+   "tgText": "📊 BofA mantiene Compra en ASML; liquidación vista como sobrerreacción. Riesgo China en DUV limitado a 2,4% de ventas. Liderazgo EUV de ASML incontestable.",
+   "xText": "BofA reitera Compra en ASML. Banco estima riesgo China DUV en solo 2,4% de ventas 2027. Liderazgo EUV de ASML intacto; valúa actual como oportunidad compra.",
+   "discordText": "**ASML: BofA mantiene COMPRA**\n• Liquidación reciente = sobrerreacción\n• Riesgo China DUV: solo €1,4B (2,4% ventas)\n• Liderazgo EUV de ASML sin rival\n• Valúa actual = oportunidad atractiva",
+   "pushText": "BofA apoya ASML tras caída; riesgo China limitado al 2,4% de ventas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "ASML equity responde alcista a validación de BofA; spread europeo vs. USA narrowea si flight-to-safety revierte.",
+    "despues": "Semis equipamiento (LRCX, KLAC, Applied Materials) podrían recibir beneficio de contagio; índice semiconductor europeo sube si ASML marca tendencia.",
+    "escenarios": "Traders vigilan: (1) confirmación de otros bancos (Goldman, Morgan Stanley); (2) reportes de progreso chino en DUV alternativo (SMIC, CXMT); (3) órdenes de equipamiento para 2027; (4) si ASML guidance 2027 refleja descuento de China.",
+    "riesgos": "BofA cálculo de 2,4% es modelo, no dato real; China podría acelerar desarrollo DUV más rápido de lo esperado; riesgo geopolítico de restricciones occidentales escalando en semis es externo."
+   },
+   "macro": {
+    "dolar": "Neutral",
+    "oro": "Neutral",
+    "nasdaq": "Levemente alcista si ASML sube contagia semis",
+    "dow": "Neutral",
+    "sp500": "Levemente alcista",
+    "bitcoin": "Neutral",
+    "ethereum": "Neutral",
+    "bonos": "Neutral",
+    "petroleo": "Neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33616",
+   "fecha": "2026-07-27T18:31:02+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33616",
+   "via": "DeItaone",
+   "original": "U.S. CRUDE OIL FUTURES SETTLE AT $82.61/BBL, DOWN $6.70, 7.50 PCT",
+   "titulo": "Petróleo WTI cae 7,5% a $82,61/barril; caída más pronunciada por desescalada Irán",
+   "resumen": "Los futuros de petróleo crudo estadounidense cerraron con pérdida de $6,70 por barril (7,5%), alcanzando $82,61. La caída refleja alivio de tensiones geopolíticas tras señales de posible negociación EE.UU.-Irán. Analistas advierten que un acuerdo podría restaurar flujos de Oriente Medio en semanas, generando sobrecapacidad global antes de fin de año.",
+   "analisis": {
+    "porque": "Movimiento estructural en precios de energía; pivota riesgo macro hacia escenarios de exceso de oferta si desescalada se concreta. Afecta portafolios energéticos, inflación subyacente y rendimientos de emergentes.",
+    "queOcurrio": "Cierre de futuros WTI con caída de 7,5% diaria, impulsada por expectativas de resolución de tensiones Irán-EE.UU. antes de elecciones de mitad de período.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CME Group / Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "USD",
+    "DXY",
+    "Aerolíneas",
+    "Bonos",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Energía",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Aerolíneas y transporte",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas|Geopolítica",
+   "keywords": [
+    "petróleo-cae",
+    "wti-82",
+    "irán-eeuu",
+    "desescalada",
+    "sobrecapacidad-energía"
+   ],
+   "tgText": "🛢️ WTI desploma 7,5% a $82,61/barril. Alivio geopolítico Irán-EE.UU. anticipa sobrecapacidad global si negociaciones avanzan. Energía y aerolíneas en foco.",
+   "xText": "🛢️ Petróleo WTI cae 7,5% a $82,61 tras señales de desescalada Irán-EE.UU. Mercado anticipa exceso de oferta si tensiones se resuelven antes de midterms. Energía bajo presión.",
+   "discordText": "**Petróleo WTI -7,5%** → $82,61/barril\n• Desescalada Irán-EE.UU. reduce prima geopolítica\n• Macquarie: restauración de flujos ME en semanas → sobrecapacidad Q4 2026\n• Presión bajista en energía, beneficio en aerolíneas y transporte",
+   "pushText": "WTI -7,5% a $82,61; desescalada Irán anticipa sobrecapacidad energética",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Futuros energéticos y acciones de petróleo integradas (Exxon, Chevron, YPF) → presión bajista inmediata; dólar debilitado por menor prima de riesgo.",
+    "despues": "Transportistas y aerolíneas (DAL, AAL, latam) suben por menores costos; bonos de mercados emergentes y carry trades se recuperan; spreads de CDS de petroleros se amplían.",
+    "escenarios": "Traders vigilan: (1) confirmación oficial de negociaciones Irán; (2) flujo de noticias sobre restricciones de OPEC+; (3) inventarios semanales de EIA; (4) reacción del dólar si baja es aversión a riesgo o alivio real.",
+    "riesgos": "Escalada súbita si Irán rechaza términos o EE.UU. se retrae; conflicto Rusia-Ucrania podría invertir flujo de oferta; volatilidad especulativa típica de fin de semana con baja liquidez."
+   },
+   "macro": {
+    "dolar": "Presión bajista por menor prima geopolítica",
+    "oro": "Beneficio marginal si aversión a riesgo disminuye",
+    "nasdaq": "Neutral a levemente alcista; alivio en tasas esperadas",
+    "dow": "Alcista por beneficio de energías renovables vs. fósiles",
+    "sp500": "Neutral a alcista si deflación energética no compensa caída de ganancias petroleras",
+    "bitcoin": "Neutral; mercados de riesgo muestran recuperación por desescalada",
+    "ethereum": "Neutral",
+    "bonos": "Rendimientos pueden bajar si mercado anticipa menor inflación",
+    "petroleo": "Bajista estructural; sobrecapacidad esperada si acuerdo progresa"
+   },
+   "updates": []
+  },
+  {
+   "id": "33615",
+   "fecha": "2026-07-27T18:28:27+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33615",
+   "via": "DeItaone",
+   "original": "TRADERS DRIVE STRONG DEMAND IN FIRST WEEKEND OF CME GROUP'S 24/7 GOLD FUTURES",
+   "titulo": "Demanda sólida en primer fin de semana de futuros de oro 24/7 del CME Group",
+   "resumen": "Traders muestran demanda robusta en el primer fin de semana de operación de futuros de oro 24/7 lanzados por CME Group. El escalamiento de horarios extiende acceso a mercado de metales preciosos a operadores globales, potenciando liquidez fuera de horarios tradicionales.",
+   "analisis": {
+    "porque": "Cambio operacional en mercado de oro; potencial de mayor liquidez y participación global reduce spread bid-ask; afecta dinámica de precios en períodos de baja liquidez (fines de semana, madrugadas).",
+    "queOcurrio": "CME lanzó producto de futuros de oro con operación 24/7 y registró demanda fuerte del mercado en primer fin de semana.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CME Group / Bloomberg"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Oro",
+    "GC (Gold Futures)",
+    "Metales preciosos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Oro",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "cme-oro",
+    "futuros-24-7",
+    "oro-liquidez",
+    "metales-preciosos"
+   ],
+   "tgText": "🏆 CME lanza oro 24/7; demanda fuerte en primer fin de semana. Mayor liquidez fuera de horarios tradicionales para traders globales.",
+   "xText": "CME Group lanza futuros de oro 24/7. Mercado responde con demanda sólida en primer fin de semana, mejorando acceso para traders globales.",
+   "discordText": "**CME: Oro 24/7 operacional**\n• Lanzamiento exitoso de futuros 24/7\n• Demanda robusta en primer fin de semana\n• Mayor liquidez para operadores globales\n• Potencial mejora en spreads out-of-hours",
+   "pushText": "CME lanza futuros de oro 24/7 con demanda fuerte; mayor liquidez para traders",
+   "importancia": 4,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33614",
+   "fecha": "2026-07-27T16:46:01+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33614",
+   "via": "DeItaone",
+   "original": "MORGAN STANLEY RAISES ISM FORECAST Morgan Stanley lifted its July ISM Manufacturing PMI forecast to 53.8 from 53.3, citing stronger Texas factory activity, rising production, and solid new orders. The bank said longer delivery times and higher inventories point to stronger demand rather than supply chain disruptions, while price pressures eased despite higher energy costs.",
+   "titulo": "Morgan Stanley eleva PMI manufacturero de julio a 53,8; demanda más fuerte",
+   "resumen": "Morgan Stanley elevó su pronóstico del PMI Manufacturero de julio a 53,8 desde 53,3, citando actividad fabril más sólida en Texas, aumento de producción y órdenes firmes. El banco interpreta tiempos de entrega más largos e inventarios mayores como señal de demanda sólida, no disrupciones de cadena de suministro. Presiones de precio se moderaron a pesar de costos energéticos mayores.",
+   "analisis": {
+    "porque": "Datos de PMI manufacturero son leading indicator de actividad económica y salud empresarial. Revisión al alza y narrativa de demanda fuerte (no supply shock) es alcista para renta variable. Moderación de precios reduce temores inflacionarios.",
+    "queOcurrio": "Morgan Stanley revisó al alza su expectativa del PMI manufacturero de EE.UU. para julio, argumentando que indicadores muestran demanda resiliente en lugar de presiones de oferta. Presiones de precios menos intensas que en meses previos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Dólar",
+    "Bonos",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "pmi-manufactura",
+    "demanda",
+    "economia-usa",
+    "morgan-stanley",
+    "july-data"
+   ],
+   "tgText": "📊 Morgan Stanley eleva PMI Manufacturero julio a 53,8. Demanda sólida en Texas, producción y órdenes firmes. Presiones de precio se moderan.",
+   "xText": "Morgan Stanley sube pronóstico PMI manufactura julio a 53,8 (vs 53,3). Demanda fuerte, no disrupciones de supply chain. Presiones de precio moderadas a pesar de energía cara.",
+   "discordText": "**MORGAN STANLEY - PMI MANUFACTURA**\n• Eleva pronóstico a 53,8 (vs 53,3)\n• Demanda fuerte (Texas, producción, órdenes)\n• Sin disrupciones supply chain\n• Presiones de precio moderadas\n→ Economía más resiliente; alcista para equities",
+   "pushText": "Morgan Stanley sube PMI: economía muestra demanda fuerte",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Índices de equities (S&P500, NASDAQ) responden positivamente a datos de demanda sólida. Dólar podría fortalecerse (economía fuerte).",
+    "despues": "Bonos caen si mercado reprecifica crecimiento. Oro baja (dólar fuerte, riesgo-off menor).",
+    "escenarios": "Traders vigilan: (1) Si datos reales de PMI el 1 de agosto coinciden con revisión de Morgan Stanley, confirmación alcista. (2) Si resulta higher, mayor confianza en economía. (3) Si resulta lower, Goldman y otros advertidores sobre macro risks tendrían razón.",
+    "riesgos": "Riesgo de que Morgan Stanley sea demasiado optimista. Riesgo de que datos reales decepcionen. Riesgo de que interpretación de inventarios altos sea incorrecta (exceso, no demanda)."
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "dolar": "alcista moderado",
+    "bonos": "bajista"
    },
    "updates": []
   },
