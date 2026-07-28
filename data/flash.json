@@ -1,7 +1,85 @@
 {
- "lastId": 33673,
- "actualizado": "2026-07-28T17:08:18.751Z",
+ "lastId": 33674,
+ "actualizado": "2026-07-28T18:42:48.972Z",
  "items": [
+  {
+   "id": "33674",
+   "fecha": "2026-07-28T18:31:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33674",
+   "via": "DeItaone",
+   "original": "TRUMP ADMINISTRATION PLANS ON TUESDAY TO ROLL OUT BANS ON FOREIGN IMPORTS OF NEW MODELS OF ROBOTS AND INVERTERS, TARGETING CHINA — U.S. OFFICIALS",
+   "titulo": "Trump planea prohibiciones a importaciones de robots e inversores solares chinos",
+   "resumen": "La administración Trump anunciará el martes restricciones a importaciones extranjeras de nuevos modelos de robots e inversores (equipos solares), enfocándose en China. El titular no especifica mecanismo de restricción (aranceles, cuotas u prohibición directa) ni sectores secundarios afectados. Fuente: U.S. Officials citados por agregador institucional.",
+   "analisis": {
+    "porque": "Impacta cadenas de suministro de manufactura, energía renovable y tecnología. Afecta directamente a proveedores chinos, fabricantes de equipos solares estadounidenses y costos de automatización industrial. Genera incertidumbre sobre represalias comerciales.",
+    "queOcurrio": "Anuncio oficial previsto para martes de restricciones a importaciones de robots e inversores solares de origen extranjero, con enfoque en China.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (vía U.S. Officials)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "DXY",
+    "CNY",
+    "S&P500",
+    "Nasdaq",
+    "Solares (ICLN)",
+    "Manufactura",
+    "Tecnología"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "CNY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Fabricantes solares USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Importadores de equipos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "aranceles",
+    "China",
+    "robots",
+    "energía solar",
+    "restricciones comerciales",
+    "inversores solares"
+   ],
+   "tgText": "🚨 Trump anuncia restricciones a importaciones de robots e inversores solares chinos para el martes. Impacto en costos de manufactura y energía renovable. Genera presión en cadenas de suministro.",
+   "xText": "Trump planea prohibir importaciones de robots e inversores solares chinos desde el martes. Presión sobre cadenas globales de manufactura y energía renovable. #geopolítica",
+   "discordText": "**TRUMP: RESTRICCIONES COMERCIALES A ROBOTS Y ENERGÍA SOLAR CHINA**\n\n• Anuncio previsto: martes\n• Afecta: importaciones de robots e inversores solares\n• Objetivo: China\n• Impacto: cadenas de suministro, manufactura, renovables\n• Estado: confirmado por U.S. Officials",
+   "pushText": "Trump anuncia restricciones a robots e inversores solares chinos",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "DXY (fortaleza dólar por nacionalismo comercial) y CNY (debilidad por represalias esperadas). Sector solar y manufactura en NYSE/Nasdaq bajo presión inmediata.",
+    "despues": "Índices amplios (S&P 500, Nasdaq) si escala a sectores más amplios. Futuros de materias primas (aluminio, silicio, acero) por costos de insumos. Bonos si hay inflación de costos.",
+    "escenarios": "Traders vigilarán: (1) alcance de restricciones (¿solo arancel o prohibición?), (2) represalias chinas a bienes/servicios USA, (3) impacto en transición energética y costos solares, (4) precedente para futuras restricciones sectores tech.",
+    "riesgos": "No especifica magnitud ni mecanismo exacto de restricción. Posible escalada arancelaria con represalias. Incertidumbre regulatoria paraliza inversión. Riesgo de que sea anuncio político sin efectos inmediatos."
+   },
+   "macro": {
+    "dolar": "Alcista por nacionalismo y proteccionismo (tasas de refugio)",
+    "oro": "Neutral a alcista por riesgo geopolítico",
+    "nasdaq": "Bajista: expone tecnología y manufactura de chips",
+    "dow": "Mixto: industrial protegida vs. financiero con riesgos",
+    "sp500": "Bajista por incertidumbre arancelaria",
+    "bitcoin": "Neutral a alcista por cobertura de riesgo macro",
+    "ethereum": "Neutral",
+    "bonos": "Alcistas si enfría crecimiento; bajistas si hay inflación de costos",
+    "petroleo": "Neutral (no mencionado en restricciones)"
+   },
+   "updates": []
+  },
   {
    "id": "33665",
    "fecha": "2026-07-28T14:20:03+00:00",
@@ -7461,73 +7539,6 @@
     "ethereum": "Presión similar a NASDAQ",
     "bonos": "Volátiles (equilibrio inflación vs crecimiento)",
     "petroleo": "Bajista (temor a demanda débil)"
-   },
-   "updates": []
-  },
-  {
-   "id": 33527,
-   "fecha": "2026-07-23T15:49:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33527",
-   "original": "EXPLOSION HEARD IN IRAN'S QESHM ISLAND -STATE BROADCASTER IRIB",
-   "titulo": "Reportan explosión en isla de Qeshm, Irán",
-   "resumen": "La radiodifusora estatal iraní IRIB reportó una explosión escuchada en la isla de Qeshm (estratégica en el Golfo Pérsico). No se especifica causa, alcance, bajas u objetivo. La isla alberga instalaciones militares y navales de Irán. El titular carece de confirmación de fuentes independientes.",
-   "analisis": {
-    "porque": "Potencial incidente militar real en zona crítica para energía global; confirmación de escalada física más allá de retórica.",
-    "queOcurrio": "IRIB reportó explosión en Qeshm; sin detalles de causa u origen.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "IRIB (radiodifusora estatal iraní)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "NASDAQ",
-    "S&P500",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Qeshm",
-    "explosión",
-    "Golfo Pérsico",
-    "militar",
-    "no-verificado"
-   ],
-   "tgText": "IRIB: explosión en isla de Qeshm (Golfo Pérsico). Sin confirmación independiente. Potencial escalada física; petróleo y oro presionados al alza. Esperar claridad.",
-   "xText": "⚠️ IRIB reporta explosión en Qeshm (Irán). Zona crítica del Golfo Pérsico. Sin confirmar origen. Impacto esperado en petróleo y volatilidad global.",
-   "discordText": "**Explosión reportada en Qeshm, Irán**\n• Fuente: IRIB (estatal iraní)\n• Sin confirmación independiente\n• Zona militarmente sensible en Golfo Pérsico\n• Vigilar: petróleo alcista, riesgo sistémico",
-   "pushText": "IRIB: explosión en isla iraní de Qeshm",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo crudo salta por temor a disrupciones en Golfo Pérsico; spreads de riesgo se amplían.",
-    "despues": "Oro y USD se fortalecen; renta variable cae; volatilidad implícita (VIX) sube.",
-    "escenarios": "Traders vigilarán: (1) si se confirma ataque externo vs. accidente; (2) respuesta iraní oficial; (3) daños a infraestructura energética o militar; (4) próximos movimientos de EE.UU.; (5) cierre del Estrecho de Hormuz.",
-    "riesgos": "Fuente es estatal iraní sin verificación independiente. Posible exageración, falsa alarma o desinformación. Requiere confirmación de agencias de inteligencia o Bloomberg/Reuters antes de certeza."
-   },
-   "macro": {
-    "dolar": "alcista por demanda de seguridad",
-    "oro": "alcista por aversión al riesgo",
-    "nasdaq": "bajista por escalada",
-    "petroleo": "alcista por temor a disrupciones",
-    "bonos": "rendimientos caen por demanda segura"
    },
    "updates": []
   }
