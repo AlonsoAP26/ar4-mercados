@@ -1,7 +1,75 @@
 {
- "lastId": 33672,
- "actualizado": "2026-07-28T15:39:50.922Z",
+ "lastId": 33673,
+ "actualizado": "2026-07-28T17:08:18.751Z",
  "items": [
+  {
+   "id": "33665",
+   "fecha": "2026-07-28T14:20:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33665",
+   "via": "DeItaone",
+   "original": "U.S., IRAN REMAIN FAR APART DESPITE CEASEFIRE The U.S. and Iran continue to send conflicting signals despite the ceasefire. Trump said Iran requested talks, but Tehran denied seeking negotiations and said no U.S. talks are underway. Iran is instead holding discussions with Oman on the Strait of Hormuz, though officials say the talks are unrelated to the U.S. and remain focused on Iran's security a",
+   "titulo": "Negociaciones EE.UU.-Irán vagas: Trump y Teherán dan señales contradictorias",
+   "resumen": "A pesar del cese de hostilidades, EE.UU. e Irán envían señales conflictivas. Trump afirma que Irán solicitó conversaciones, pero Teherán niega buscar negociaciones bilaterales y asegura que no hay diálogos con EE.UU. en curso. Irán conversa con Omán sobre Estrecho de Ormuz, aunque funcionarios afirman que diálogos son independientes y enfocados en seguridad soberana.",
+   "analisis": {
+    "porque": "Estrecho de Ormuz es paso crítico para 20% del comercio petrolero global; ambigüedad sobre negociaciones genera incertidumbre sobre escalada/desescalada; impacta precios de petróleo y primas de riesgo geopolítico",
+    "queOcurrio": "Trump dijo que Irán pidió negociaciones; Teherán lo negó públicamente. Irán habla con Omán sobre Estrecho de Ormuz pero oficialmente dice que no está relacionado con EE.UU.",
+    "estado": "rumor",
+    "fuenteOriginal": "Trump statement / Reuters / FARS"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "USD",
+    "Bonos",
+    "Renta variable global"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran-eeuu-negociaciones",
+    "estrecho-ormuz",
+    "cese-hostilidades",
+    "geopolítica-petróleo",
+    "trump-teherán"
+   ],
+   "tgText": "⚠️ Señales contradictorias EE.UU.-Irán: Trump dice que Irán pidió hablar; Teherán lo niega. Conversaciones con Omán sobre Ormuz pero se niega vínculo con EE.UU. Ambigüedad mantiene prima de riesgo.",
+   "xText": "⚠️ EE.UU.-IRÁN: Trump asegura que Irán pidió negociaciones; Teherán lo rechaza. Conversaciones con Omán en Ormuz son «independientes». Señales contradictorias mantienen incertidumbre.",
+   "discordText": "**AMBIGÜEDAD EE.UU.-IRÁN PERSISTE**\n• Trump: «Irán pidió negociaciones»\n• Teherán: «No buscamos hablar con EE.UU.»\n• Irán conversa con Omán sobre Estrecho de Ormuz\n• Oficial Iran: diálogos «independientes y sobre soberanía»\n• Implicancia: Incertidumbre sobre trayectoria de desescalada\n• Impacto en petróleo: riesgo geopolítico sin claridad",
+   "pushText": "EE.UU.-Irán: señales contradictorias mantienen incertidumbre geopolítica.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo WTI y Brent reaccionan a cambios en percepción de riesgo; si hay dudas, se mantiene prima alcista; si se aclara desescalada, caída",
+    "despues": "USD por flight-to-safety; bonos USA por demanda de seguridad; mercados de renta variable (especialmente energía y financiero) siguen mov. de petróleo",
+    "escenarios": "Traders monitorean: ¿Irán está negociando indirectamente a través de Omán? ¿Es solo maniobra diplomática? ¿Riesgo de escalada persiste?; volatilidad del petróleo probablemente continúe hasta claridad",
+    "riesgos": "Narrativa contradictoria: no es claro quién dice la verdad; 'fuente de la Casa Blanca' no es verificación oficial; comunicados de FARS (agencia estatal iran) pueden ser propaganda"
+   },
+   "macro": {
+    "petroleo": "neutral-bajista (desescalada reduce prima, pero ambigüedad mantiene incertidumbre)",
+    "dolar": "alcista (flight-to-safety por geopolítica)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-28T16:45:10+00:00",
+     "id": "33673",
+     "texto": "Irán reporta a través de IRIB (radio estatal) que no ha buscado negociaciones con Estados Unidos en los últimos 16-17 días. Esto actualiza el panorama de incertidumbre diplomática entre ambas potencias, relevante para volatilidad geopolítica y mercados de energía sensibles a escaladas regionales.",
+     "tgUrl": "https://t.me/walterbloomberg/33673"
+    }
+   ],
+   "actualizado": "2026-07-28T16:45:10+00:00"
+  },
   {
    "id": "33670",
    "fecha": "2026-07-28T14:45:47+00:00",
@@ -240,66 +308,6 @@
     "dow": "neutral",
     "bonos": "alcista (demanda de seguridad)",
     "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33665",
-   "fecha": "2026-07-28T14:20:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33665",
-   "via": "DeItaone",
-   "original": "U.S., IRAN REMAIN FAR APART DESPITE CEASEFIRE The U.S. and Iran continue to send conflicting signals despite the ceasefire. Trump said Iran requested talks, but Tehran denied seeking negotiations and said no U.S. talks are underway. Iran is instead holding discussions with Oman on the Strait of Hormuz, though officials say the talks are unrelated to the U.S. and remain focused on Iran's security a",
-   "titulo": "Negociaciones EE.UU.-Irán vagas: Trump y Teherán dan señales contradictorias",
-   "resumen": "A pesar del cese de hostilidades, EE.UU. e Irán envían señales conflictivas. Trump afirma que Irán solicitó conversaciones, pero Teherán niega buscar negociaciones bilaterales y asegura que no hay diálogos con EE.UU. en curso. Irán conversa con Omán sobre Estrecho de Ormuz, aunque funcionarios afirman que diálogos son independientes y enfocados en seguridad soberana.",
-   "analisis": {
-    "porque": "Estrecho de Ormuz es paso crítico para 20% del comercio petrolero global; ambigüedad sobre negociaciones genera incertidumbre sobre escalada/desescalada; impacta precios de petróleo y primas de riesgo geopolítico",
-    "queOcurrio": "Trump dijo que Irán pidió negociaciones; Teherán lo negó públicamente. Irán habla con Omán sobre Estrecho de Ormuz pero oficialmente dice que no está relacionado con EE.UU.",
-    "estado": "rumor",
-    "fuenteOriginal": "Trump statement / Reuters / FARS"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "USD",
-    "Bonos",
-    "Renta variable global"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "iran-eeuu-negociaciones",
-    "estrecho-ormuz",
-    "cese-hostilidades",
-    "geopolítica-petróleo",
-    "trump-teherán"
-   ],
-   "tgText": "⚠️ Señales contradictorias EE.UU.-Irán: Trump dice que Irán pidió hablar; Teherán lo niega. Conversaciones con Omán sobre Ormuz pero se niega vínculo con EE.UU. Ambigüedad mantiene prima de riesgo.",
-   "xText": "⚠️ EE.UU.-IRÁN: Trump asegura que Irán pidió negociaciones; Teherán lo rechaza. Conversaciones con Omán en Ormuz son «independientes». Señales contradictorias mantienen incertidumbre.",
-   "discordText": "**AMBIGÜEDAD EE.UU.-IRÁN PERSISTE**\n• Trump: «Irán pidió negociaciones»\n• Teherán: «No buscamos hablar con EE.UU.»\n• Irán conversa con Omán sobre Estrecho de Ormuz\n• Oficial Iran: diálogos «independientes y sobre soberanía»\n• Implicancia: Incertidumbre sobre trayectoria de desescalada\n• Impacto en petróleo: riesgo geopolítico sin claridad",
-   "pushText": "EE.UU.-Irán: señales contradictorias mantienen incertidumbre geopolítica.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo WTI y Brent reaccionan a cambios en percepción de riesgo; si hay dudas, se mantiene prima alcista; si se aclara desescalada, caída",
-    "despues": "USD por flight-to-safety; bonos USA por demanda de seguridad; mercados de renta variable (especialmente energía y financiero) siguen mov. de petróleo",
-    "escenarios": "Traders monitorean: ¿Irán está negociando indirectamente a través de Omán? ¿Es solo maniobra diplomática? ¿Riesgo de escalada persiste?; volatilidad del petróleo probablemente continúe hasta claridad",
-    "riesgos": "Narrativa contradictoria: no es claro quién dice la verdad; 'fuente de la Casa Blanca' no es verificación oficial; comunicados de FARS (agencia estatal iran) pueden ser propaganda"
-   },
-   "macro": {
-    "petroleo": "neutral-bajista (desescalada reduce prima, pero ambigüedad mantiene incertidumbre)",
-    "dolar": "alcista (flight-to-safety por geopolítica)"
    },
    "updates": []
   },
