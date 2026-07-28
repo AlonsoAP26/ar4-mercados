@@ -209,11 +209,16 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   for (let intento = 0; intento < 8; intento++) {
     data = await callApi(apiKey, {
       model: 'claude-sonnet-5',
-      max_tokens: 16000,
+      // 32k, no 16k: el pensamiento adaptativo se comio 15.692 tokens del
+      // presupuesto de 16.000 en el fallo del 28/jul y dejo al JSON de la
+      // noticia sin sitio para cerrarse. Solo se factura lo que se usa.
+      max_tokens: 32000,
       thinking: { type: 'adaptive' },
       // Busqueda web del lado del servidor: el modelo lee noticias reales y
       // devuelve las URLs de donde salieron. Sin esto escribiria de memoria.
-      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 6 }],
+      // max_uses 10: con 6 el modelo agotaba el cupo y seguia intentando
+      // buscar (6 errores max_uses_exceeded seguidos), quemando la respuesta.
+      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 10 }],
       messages
     });
     allContent.push(...(data.content || []));
@@ -243,44 +248,63 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     console.warn('El modelo no ejecutó ninguna búsqueda web (stop_reason=' + data.stop_reason + ').');
   }
 
-  // OJO: con busqueda web el modelo suele escribir texto ANTES de buscar
-  // ("voy a consultar..."), asi que la respuesta trae varios bloques de texto.
-  // El JSON es siempre el ULTIMO; coger el primero rompia el JSON.parse.
-  const textBlocks = (data.content || []).filter((b) => b.type === 'text' && b.text);
-  if (!textBlocks.length) {
+  // OJO: con busqueda web la respuesta trae MUCHOS bloques de texto (el modelo
+  // escribe antes de buscar, y cada trozo citado viaja en su propio bloque).
+  // Si el turno se pausa y se reanuda, el JSON final queda PARTIDO entre varios
+  // bloques: ninguno suelto es un JSON valido y el parseo bloque-a-bloque
+  // fallaba justo ahi (el fallo del 28/jul). Ahora se prueba primero el texto
+  // completo concatenado y solo despues cada bloque por separado.
+  const allTexts = allContent.filter((b) => b.type === 'text' && b.text).map((b) => b.text);
+  if (!allTexts.length) {
     fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
   }
-  let rawText = textBlocks[textBlocks.length - 1].text.trim();
-  const fence = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
-  if (fence) rawText = fence[1].trim();
-  // Ultimo recurso: si aun asi no empieza por '{', rescata el objeto JSON.
-  if (!rawText.startsWith('{')) {
-    const a = rawText.indexOf('{');
-    const b = rawText.lastIndexOf('}');
-    if (a !== -1 && b > a) rawText = rawText.slice(a, b + 1);
-  }
+
+  const quitarFence = (t) => {
+    const f = t.trim().match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+    return (f ? f[1] : t).trim();
+  };
+
+  // Recorre las llaves de apertura y devuelve el primer objeto BALANCEADO que
+  // parsea y trae los campos de una noticia. Cuenta llaves ignorando las que
+  // viven dentro de cadenas, porque el "body" es HTML lleno de comillas y
+  // escapes: con indexOf('{')/lastIndexOf('}') se cortaba por el sitio errado.
+  const extraerNoticia = (texto) => {
+    for (let inicio = texto.indexOf('{'); inicio !== -1; inicio = texto.indexOf('{', inicio + 1)) {
+      let prof = 0, enCadena = false, escapado = false;
+      for (let i = inicio; i < texto.length; i++) {
+        const c = texto[i];
+        if (escapado) { escapado = false; continue; }
+        if (c === '\\') { escapado = true; continue; }
+        if (c === '"') { enCadena = !enCadena; continue; }
+        if (enCadena) continue;
+        if (c === '{') prof++;
+        else if (c === '}' && --prof === 0) {
+          try {
+            const obj = JSON.parse(texto.slice(inicio, i + 1));
+            if (obj && obj.title && obj.body) return obj;
+          } catch (e) { /* no era el objeto bueno; probar la siguiente llave */ }
+          break;
+        }
+      }
+    }
+    return null;
+  };
+
+  // De mas a menos probable: el texto completo (cubre el JSON partido en
+  // trozos) y despues cada bloque suelto, del ultimo al primero. Se unen los
+  // bloques EN CRUDO: recortarlos uno a uno pegaria la ultima palabra de un
+  // trozo con la primera del siguiente.
+  const candidatos = [quitarFence(allTexts.join(''))];
+  for (let i = allTexts.length - 1; i >= 0; i--) candidatos.push(quitarFence(allTexts[i]));
 
   let nueva = null;
-  try {
-    nueva = JSON.parse(rawText);
-  } catch (e) {
-    // Rescate: con búsqueda web el JSON a veces queda en un bloque anterior
-    // (el modelo añade texto de cierre después). Probar todos, del último al primero.
-    const allTexts = allContent.filter((b) => b.type === 'text' && b.text).map((b) => b.text);
-    for (let i = allTexts.length - 1; i >= 0 && !nueva; i--) {
-      let t = allTexts[i].trim();
-      const f = t.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
-      if (f) t = f[1].trim();
-      const a = t.indexOf('{');
-      const b2 = t.lastIndexOf('}');
-      if (a === -1 || b2 <= a) continue;
-      try { nueva = JSON.parse(t.slice(a, b2 + 1)); } catch (e2) { /* siguiente bloque */ }
-    }
-    if (!nueva) {
-      console.error(rawText.slice(0, 1500));
-      fail('La IA no devolvió un JSON válido en ningún bloque. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
-    }
-    console.warn('JSON rescatado de un bloque anterior de la respuesta.');
+  for (const cand of candidatos) {
+    nueva = extraerNoticia(cand);
+    if (nueva) break;
+  }
+  if (!nueva) {
+    console.error(quitarFence(allTexts[allTexts.length - 1]).slice(0, 1500));
+    fail('La IA no devolvió un JSON válido (ni suelto ni concatenado). Bloques de texto=' + allTexts.length + ' stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
   }
 
   if (!nueva.title || !nueva.body) {
