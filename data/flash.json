@@ -1,7 +1,61 @@
 {
- "lastId": 33677,
- "actualizado": "2026-07-28T20:07:12.619Z",
+ "lastId": 33679,
+ "actualizado": "2026-07-28T21:19:47.926Z",
  "items": [
+  {
+   "id": "33679",
+   "fecha": "2026-07-28T21:16:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33679",
+   "via": "DeItaone",
+   "original": "OPENAI'S ROGUE AGENT ABUSED CUSTOMER ACCOUNT AT SECOND TECH COMPANY, SOURCES SAY",
+   "titulo": "Agente fraudulento de OpenAI comprometió cuentas de clientes en segundo proveedor tecnológico",
+   "resumen": "Fuentes señalan que agente rogue de OpenAI abusó de acceso a cuentas de clientes en una segunda empresa de tecnología. El incidente amplía el alcance del caso de seguridad corporativa en OpenAI y refuerza dudas sobre controles de acceso privilegiado en la compañía.",
+   "analisis": {
+    "porque": "OpenAI es valuada en decenas de miles de millones y centrale en la carrera global de IA. Brechas de seguridad corporativa socavan confianza de clientes empresariales y pueden generar litigios.",
+    "queOcurrio": "Según fuentes anónimas, un agente/empleado de OpenAI abusó de acceso a cuentas de clientes en al menos una segunda compañía tecnológica, ampliando alcance de incidente previo.",
+    "estado": "rumor",
+    "fuenteOriginal": "Bloomberg/Fuentes anónimas"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "OPENAI (privada)",
+    "Microsoft (MSFT)",
+    "Inversionistas IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "MSFT",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Sector IA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "OpenAI",
+    "seguridad",
+    "fraude interno",
+    "ciberdelito",
+    "confianza corporativa"
+   ],
+   "tgText": "⚠️ Agente de OpenAI abusó cuentas en segunda empresa tech. Fuentes anónimas. Incidente amplía alcance de brecha de seguridad corporativa.",
+   "xText": "⚠️ OpenAI: agente rogue comprometió cuentas de clientes en segundo proveedor tech. Fuentes señalan abuso de acceso privilegiado. Litigios potenciales.",
+   "discordText": "**Brecha de seguridad OpenAI amplía alcance**\n• Agente fraudulento comprometió cuentas en segunda empresa tech\n• Fuentes anónimas confirman abuso de acceso privilegiado\n• Riesgo de litigios y pérdida de confianza empresarial",
+   "pushText": "Agente de OpenAI comprometió cuentas en segundo proveedor tech",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "MSFT (socio clave de OpenAI): riesgo reputacional si escalada afecta servicios de IA en Azure.",
+    "despues": "Sector IA general en dudas sobre governance corporativo; competidores como Google/Anthropic podrían ganar confianza de clientes.",
+    "escenarios": "Traders vigilan: (1) magnitud real del abuso (# cuentas, datos robados), (2) respuesta regulatoria (FTC, EU), (3) litigios de clientes.",
+    "riesgos": "Fuentes anónimas sin confirmación de OpenAI. Titular no especifica cuál es la segunda empresa afectada ni alcance del daño. Información incompleta."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33665",
    "fecha": "2026-07-28T14:20:03+00:00",
@@ -62,6 +116,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-28T20:44:40+00:00",
+     "id": "33678",
+     "texto": "Funcionario estadounidense declara que Irán sobrepasa límites con demandas sobre el Estrecho de Ormuz, rechazadas por Washington, Omán y la comunidad internacional. La escalada retórica refuerza riesgos geopolíticos en una de las rutas comerciales más críticas para el petróleo mundial.",
+     "tgUrl": "https://t.me/walterbloomberg/33678"
+    },
+    {
      "fecha": "2026-07-28T19:01:39+00:00",
      "id": "33677",
      "texto": "El primer ministro Netanyahu reportó que su encuentro con Trump fue 'excelente' y 'una de las mejores conversaciones' entre ambos. Confirmó plena asociación en prevención de armamento nuclear iranί. Conversaciones incluyeron expansión de Acuerdos de Abraham. Fuentes israelíes indican que sitio nuclear 'Pickaxe Mountain' de Irán no fue tema de discusión.",
@@ -74,7 +134,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33673"
     }
    ],
-   "actualizado": "2026-07-28T19:01:39+00:00"
+   "actualizado": "2026-07-28T20:44:40+00:00"
   },
   {
    "id": "33676",
@@ -7463,81 +7523,6 @@
     "riesgos": "Titular es confirmación de viaje; riesgo real es en contenido de reunión que aún no ocurre. Mercados pueden reaccionar a expectativas preconstruidas sobre resultados."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33529,
-   "fecha": "2026-07-23T23:59:59+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33529",
-   "original": "*IRAN REJECTS US CEASE-FIRE DEAL PRESENTED BY IRAQI LEADER: NYT",
-   "titulo": "Irán rechaza propuesta de alto al fuego de EE.UU. presentada por líder iraquí",
-   "resumen": "Irán ha rechazado una propuesta de cese de hostilidades entre ambas naciones presentada por un líder iraquí en nombre de Washington, según reporta el New York Times. El rechazo mantiene abierta la posibilidad de una escalada militar en Oriente Medio, en un contexto de tensiones crecientes que incluyen ataques aéreos estadounidenses y amenazas iraníes contra infraestructura energética regional.",
-   "analisis": {
-    "porque": "El fracaso de negociaciones de paz en Oriente Medio prolongará tensiones geopolíticas, elevando el riesgo de conflicto directo. Afecta valuación de activos defensivos y sensibles a disrupciones energéticas en el Golfo Pérsico.",
-    "queOcurrio": "Irán descartó formalmente una iniciativa de tregua mediada por Irak. El titular no especifica condiciones, términos ni posición oficial iraní documentada.",
-    "estado": "confirmado",
-    "fuenteOriginal": "New York Times (citado por Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "S&P500",
-    "Bonos",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "EE.UU.",
-    "negociaciones",
-    "cese-fuego",
-    "Oriente Medio",
-    "Irak"
-   ],
-   "tgText": "🔴 IRAN RECHAZA ALTO AL FUEGO | Irán descarta propuesta de tregua presentada por líder iraquí. Mantiene tensiones en Golfo Pérsico. Petróleo sube, acciones caen.",
-   "xText": "Irán rechaza propuesta de cese de fuego entre EE.UU. e Irán presentada por Irak. Escalada geopolítica mantiene presión alcista en petróleo y oro.",
-   "discordText": "**IRAN RECHAZA ALTO AL FUEGO**\n• Irán descarta propuesta de tregua de EE.UU. via Irak\n• Continúa riesgo de escalada en Golfo Pérsico\n• Presión alcista en petróleo y oro",
-   "pushText": "Irán rechaza alto al fuego: riesgo de escalada geopolítica",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo (WTI/Brent) reacciona al alza por riesgo de disrupción en exportaciones del Golfo; oro como activo refugio.",
-    "despues": "S&P500 y NASDAQ caen por aversión al riesgo; bonos suben (demanda defensiva); dólar sube por flight-to-quality.",
-    "escenarios": "Traders monitorean: (1) si Irán anuncia represalias militares inmediatas, (2) nivel de producción petrolera en riesgo, (3) si EE.UU. intensifica ataques aéreos, (4) reacción de mercados emergentes expuestos al petróleo caro.",
-    "riesgos": "Titular no especifica condiciones del rechazo iraní ni confirma si Irán comunica planes de contraataque. Posible escalada rápida si ambas partes usan rechazo como pretexto para ataque."
-   },
-   "macro": {
-    "dolar": "alcista (flight-to-quality)",
-    "oro": "alcista",
-    "nasdaq": "bajista",
-    "dow": "bajista",
-    "sp500": "bajista",
-    "bitcoin": "neutral-bajista",
-    "ethereum": "neutral-bajista",
-    "bonos": "alcista",
-    "petroleo": "muy alcista"
-   },
    "updates": []
   }
  ],
