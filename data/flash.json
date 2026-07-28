@@ -1,7 +1,263 @@
 {
  "lastId": 33625,
- "actualizado": "2026-07-27T22:45:48.091Z",
+ "actualizado": "2026-07-28T02:37:32.422Z",
  "items": [
+  {
+   "id": 974924578,
+   "fecha": "2026-07-28T02:26:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/stock-market-today-live-updates.html",
+   "via": "CNBC",
+   "original": "U.S. stock futures slip, South Korea&apos;s Kospi plunges over 8%: Live updates",
+   "titulo": "Futuros USA caen mientras KOSPI colapsa 8%: contagio regional en renta variable",
+   "resumen": "Futuros de acciones estadounidenses caen mientras el índice KOSPI de Corea del Sur se desploma más de 8%, señalando propagación de estrés desde Asia hacia mercados globales. Temores sobre ciclo económico y demanda de semiconductores.",
+   "analisis": {
+    "porque": "Venta coordinada en múltiples geografías amplifica riesgo sistémico; correlación entre mercados asiáticos y occidentales indica reversión mayor de sentimiento riesgo-on",
+    "queOcurrio": "Futuros US en baja; KOSPI cae 8%+ en sesión en tiempo real, reflejando venta regional acelerada",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "KOSPI",
+    "Futuros USA",
+    "Acciones Tecnológicas",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "KOSPI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Breaking News",
+   "keywords": [
+    "kospi",
+    "futuros-usa",
+    "venta-masiva",
+    "contagio-asia",
+    "risk-off",
+    "semiconductor"
+   ],
+   "tgText": "🔴 BREAKING: KOSPI se desmorona 8%+. Futuros USA caen. Venta masiva en Asia contagia mercados globales. Riesgo sistémico en aumento.",
+   "xText": "🚨 KOSPI cae 8%+, futuros USA bajan. Estrés regional de Asia se propaga a Occidente. Liquidaciones coordinadas en renta variable. Risk-off acelerado. #Markets",
+   "discordText": "**⚠️ BREAKING: Caída coordinada en Asia-USA**\n• KOSPI: -8%+\n• Futuros USA: bajistas\n• Venta masiva propaga contagio regional\n• Risk-off dominante",
+   "pushText": "KOSPI -8%, futuros USA caen: riesgo sistémico regional",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Índices asiaticos (KOSPI, Nikkei, Shanghai) y futuros S&P500, NASDAQ—reacción inmediata de stop-loss y deunwinding",
+    "despues": "Bonos (busca de seguridad), dólar (flight-to-safety), oro; volatilidad implícita (VIX); carry trades liquidándose",
+    "escenarios": "Traders buscan soporte técnico clave en KOSPI (200 DMA), resistencia en futuros; vigilancia en volumen de venta y cascada de liquidaciones; riesgo de circuit breaker",
+    "riesgos": "Momento de máxima volatilidad; riesgo de pánico y oversold excesivo; contagio potencial a mercados de renta fija y fx"
+   },
+   "macro": {
+    "dolar": "alcista (flight-to-safety)",
+    "oro": "alcista (demanda de refugio)",
+    "nasdaq": "bajista (presión sectorial tech)",
+    "dow": "bajista (contagio regional)",
+    "sp500": "bajista (futuros caen)",
+    "bitcoin": "neutral-bajista (correlación riesgo)",
+    "ethereum": "neutral-bajista (correlación riesgo)",
+    "bonos": "alcista (demanda refugio)",
+    "petroleo": "bajista (preocupaciones demanda)"
+   },
+   "updates": []
+  },
+  {
+   "id": 932356747,
+   "fecha": "2026-07-28T01:48:30.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/sk-hynix-plunges-semiconductor-selloff-deepens-samsung-softbank.html",
+   "via": "CNBC",
+   "original": "Shares of SK Hynix plunge 10% in Seoul as semiconductor selloff deepens",
+   "titulo": "SK Hynix cae 10% en Seúl mientras venta de semiconductores se profundiza",
+   "resumen": "Acciones de SK Hynix desplomaron 10% en la bolsa de Seúl, ampliando la caída del sector de semiconductores. La venta refleja preocupaciones sobre demanda global y márgenes en memoria DRAM/NAND.",
+   "analisis": {
+    "porque": "Indicador de estrés en cadena de suministro global de chips; presión sobre valuaciones de fabricantes asiáticos y exposición de fondos occidentales",
+    "queOcurrio": "SK Hynix registró caída de 10% en sesión de Seúl mientras continúa liquidación sectorial de semiconductores",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "SK Hynix",
+    "KOSPI",
+    "Semiconductores",
+    "NASDAQ",
+    "ASML",
+    "Taiwan Semiconductor"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "KOSPI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Acciones Tecnológicas",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "sk-hynix",
+    "semiconductores",
+    "dram",
+    "venta-masiva",
+    "asia",
+    "kospi"
+   ],
+   "tgText": "⚠️ SK Hynix se desmorona 10% en Seúl. Venta de semiconductores se profundiza. Temores sobre demanda global y márgenes golpean supply chain de chips.",
+   "xText": "SK Hynix cae 10% en Seúl; caída de semiconductores se agrava. Presión sobre DRAM/NAND y cadena global de suministro. Riesgo sistémico en tech exposure. #KOSPI",
+   "discordText": "**SK Hynix: -10% en Seúl**\n• Venta sectorial de semiconductores acelerada\n• Presión sobre márgenes DRAM/NAND\n• Contagio potencial a mercados occidentales",
+   "pushText": "SK Hynix -10%: venta de semiconductores se intensifica",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "KOSPI, SK Hynix y pares asiáticos—liquidación acelerada; contagio a futuros occidentales",
+    "despues": "NASDAQ, S&P 500 (exposición a semiconductores); fondos emergentes; carry trades deshaciendo posiciones",
+    "escenarios": "Traders monitorean resistencia KOSPI, correlación con futuros US, sobreventa técnica en semiconductores y reversal potencial; vigilancia en ASML y rivales occidentales",
+    "riesgos": "Caída abrupta puede generar liquidaciones forzadas; efecto dominó en mercados de renta variable de Asia y Occidente si continúa"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 979054363,
+   "fecha": "2026-07-28T01:34:28.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/nasdaq-kospi-wall-street-korea-markets-skhynox-samsung.html",
+   "via": "CNBC",
+   "original": "U.S. and Korean tech stocks are now tightly linked — and that could be a worry for investors",
+   "titulo": "Acciones tech de EE.UU. y Corea del Sur ahora vinculadas: riesgo contagio para inversores",
+   "resumen": "Análisis de CNBC documenta acoplamiento creciente entre mercados tecnológicos estadounidenses y surcoreanos, multiplicando riesgo de contagio cruzado. Volatilidad en semiconductores de Corea traspasa fronteras hacia NASDAQ.",
+   "analisis": {
+    "porque": "Mayor correlación reduce diversificación; caídas en Asia pueden gatillar ventas automáticas en portafolios occidentales; feedback loop de liquidaciones",
+    "queOcurrio": "CNBC reporta que stocks tech de EE.UU. y Corea del Sur ahora exhiben sincronización inusualmente alta en movimientos",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "KOSPI",
+    "Semiconductores",
+    "Acciones Tech",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "KOSPI",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "nasdaq",
+    "kospi",
+    "correlacion",
+    "semiconductores",
+    "riesgo-sistémico",
+    "tech"
+   ],
+   "tgText": "📊 Tech de USA y Corea del Sur ahora acopladas. Mayor correlación = menos diversificación. Riesgo contagio bidireccional en semiconductores amplificado.",
+   "xText": "Tech USA-Corea: acoplamiento creciente. Menor diversificación, mayor contagio. NASDAQ y KOSPI sincronizan movimientos. Riesgo sistémico en cartera tech global.",
+   "discordText": "**USA-Corea Tech: Acoplamiento crítico**\n• Correlación entre NASDAQ y KOSPI en máximos\n• Menor diversificación geográfica\n• Riesgo contagio multiplicado",
+   "pushText": "Tech USA-Corea acopladas: riesgo contagio amplificado",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Fondos multirregionales de tech—rebalancing forced; pares KOSPI-NASDAQ",
+    "despues": "Índices amplios (S&P500, KOSPI); volatilidad implícita; correlaciones sector",
+    "escenarios": "Traders buscan puntos de divergencia y arbitraje regional; monitorean rotación de sectores y geografías",
+    "riesgos": "Mayor correlación reduce valor de diversificación; caída sostenida en un lado propaga al otro automáticamente"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 981510389,
+   "fecha": "2026-07-27T23:36:49.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/tuesdays-big-stock-stories-whats-likely-to-move-the-market.html",
+   "via": "CNBC",
+   "original": "Tuesday&apos;s big stock stories: What’s likely to move the market in the next trading session",
+   "titulo": "Grandes resultados y reunión de Fed: qué vigilan operadores esta semana en Wall Street",
+   "resumen": "Resumen de CNBC sobre catalizadores clave para la próxima semana: earnings de megacaps y decisión de política monetaria de la Reserva Federal. Expectativas sobre forward guidance y reacciones del mercado.",
+   "analisis": {
+    "porque": "Confluencia de data corporativa y decisión de tasas de interés determinan dirección de mercado; volumen y volatilidad elevados esperados",
+    "queOcurrio": "CNBC destaca que semana incluye reportes de ganancias importantes y reunión de la Fed",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos USA",
+    "DXY",
+    "Acciones Megacap"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "fed",
+    "earnings",
+    "politica-monetaria",
+    "fomc",
+    "wall-street",
+    "catalizadores"
+   ],
+   "tgText": "📅 Semana decisiva: Grandes earnings + reunión Fed. Operadores vigilantes ante posible forward guidance. Volatilidad en máximos esperados.",
+   "xText": "Semana clave en Wall Street: Earnings megacaps + decisión Fed. Catalizadores para dirección de mercados. Volatilidad elevada esperada. #Fed #Earnings",
+   "discordText": "**Semana decisiva en mercados**\n• Grandes reportes de ganancias\n• Reunión y decisión de la Fed\n• Forward guidance esperado\n• Volatilidad en máximos",
+   "pushText": "Earnings + Fed: semana crítica para mercados",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Acciones megacap previo a earnings; tasas después de decisión Fed",
+    "despues": "Índices amplios (S&P500, NASDAQ); dólar; commodities",
+    "escenarios": "Traders monitorean surprises de ganancias, margins corporativos, y proyecciones de tasas; vigilancia en forward guidance para próximas decisiones",
+    "riesgos": "Earnings decepcionantes o hawkish Fed podrían gatillar venta coordinada; titular es genérico, no proporciona números"
+   },
+   "macro": {
+    "dolar": "neutral (depende Fed)",
+    "sp500": "neutral (depende earnings)",
+    "nasdaq": "neutral (depende earnings tech)"
+   },
+   "updates": []
+  },
   {
    "id": "920113870",
    "fecha": "2026-07-27T22:20:01.000Z",
@@ -376,6 +632,65 @@
    "updates": []
   },
   {
+   "id": 974801677,
+   "fecha": "2026-07-27T19:46:20.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/nvidias-potential-250b-backstop-for-openai-is-another-strike-against-the-ai-trade.html",
+   "via": "CNBC",
+   "original": "Nvidia&apos;s potential $250B backstop for OpenAI is another strike against the AI trade",
+   "titulo": "Respaldo de Nvidia a OpenAI genera nuevas dudas sobre el valuación del sector IA",
+   "resumen": "Nvidia estaría considerando un respaldo de $250 mil millones para OpenAI, generando cuestionamientos sobre la sostenibilidad del financiamiento en el sector de IA. El analista señala que esta maniobra replica patrones de burbuja financiera.",
+   "analisis": {
+    "porque": "Amplifica las dudas sobre la viabilidad económica real del ecosistema IA y potencial sobrevaloración de tecnológicas",
+    "queOcurrio": "CNBC reporta que Nvidia considera un respaldo financiero masivo para OpenAI, lo que reaviva el debate sobre financiamiento circular en IA",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Nvidia",
+    "NASDAQ",
+    "S&P500",
+    "Acciones Tecnológicas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Nvidia",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Acciones IA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "nvidia",
+    "openai",
+    "financiamiento-ia",
+    "burbuja-tecnologica",
+    "valuacion"
+   ],
+   "tgText": "🔴 Nvidia considera respaldo de $250B a OpenAI; reaviva dudas sobre financiamiento circular y sobrevaloración del sector IA. Mercados cuestionan sostenibilidad.",
+   "xText": "Nvidia contempla $250B para OpenAI—nuevo riesgo de burbuja IA. El financiamiento circular y valuaciones astronómicas generan alerta en mercados sobre sector tecnológico. #NASDAQ #IA",
+   "discordText": "**Nvidia considera $250B para OpenAI**\n• Reaviva debate sobre financiamiento circular en IA\n• Cuestiona viabilidad de sector\n• Patrón de burbuja financiera detectado",
+   "pushText": "Nvidia y OpenAI: dudas de burbuja IA amplificadas",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Nvidia y mega-cap tecnológicas—temor a sobrevaloración y corrección",
+    "despues": "Índices tech (NASDAQ, S&P 500); fondos indexados expondrían liquidaciones",
+    "escenarios": "Traders monitorean ratio CAPE, liquidez en opciones de tech y posicionamiento largo abarrotado; buscan señales de reversal de narrativa IA",
+    "riesgos": "Información es de fuente no oficial; podría ser especulación. Confirmación oficial cambiaría narrativa radicalmente"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
    "id": "33600",
    "fecha": "2026-07-27T15:08:14+00:00",
    "tgUrl": "https://t.me/walterbloomberg/33600",
@@ -462,6 +777,70 @@
     }
    ],
    "actualizado": "2026-07-27T19:32:50+00:00"
+  },
+  {
+   "id": 979072277,
+   "fecha": "2026-07-27T19:26:55.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/yields-are-surging-on-these-inflation-protected-bonds-how-to-use-them.html",
+   "via": "CNBC",
+   "original": "Yields are surging on these inflation-protected bonds. How they may fit into your portfolio",
+   "titulo": "Rendimientos de bonos inflacionados repuntan: implicación para portafolios en entorno inflacionario",
+   "resumen": "CNBC reporta que rendimientos en bonos protegidos contra inflación (TIPS) están en ascenso, ofreciendo retornos más atractivos. Análisis explora cómo integrar estas posiciones en carteras frente a persistencia de presiones de precios.",
+   "analisis": {
+    "porque": "TIPS más rendidores podrían forzar rotación desde acciones hacia renta fija real; cambio en relación riesgo-rendimiento de portafolios mixtos",
+    "queOcurrio": "Rendimientos en TIPS suben, mejorando propuesta de valor vs. activos riesgosos",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "TIPS",
+    "Acciones",
+    "Oro",
+    "USD"
+   ],
+   "sesgos": [
+    {
+     "activo": "TIPS",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Acciones",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Inflación",
+   "keywords": [
+    "tips",
+    "bonos-inflacion",
+    "rendimientos",
+    "portafolio",
+    "rotacion-activos"
+   ],
+   "tgText": "📈 Rendimientos de TIPS repuntan. Bonos inflacionados ofrecen retorno atractivo. Presión para rotar desde renta variable hacia protección de precios.",
+   "xText": "TIPS repuntan en rendimiento. Bonos protegidos contra inflación más atractivos. Potencial rotación desde acciones hacia renta fija real. #Bonds #Inflation",
+   "discordText": "**TIPS: Rendimientos en alza**\n• Bonos inflacionados más atractivos\n• Rota relación riesgo-rendimiento\n• Presión para diversificación defensiva",
+   "pushText": "TIPS repuntan: rotación potencial hacia bonos",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "TIPS y bonos largo plazo—flujos defensivos; correlación negativa con acciones",
+    "despues": "Índices accionarios (si hay rotación); dólar (tasa real); oro (inflación)",
+    "escenarios": "Gestores de portafolio monitorean curva TIPS, spread real vs. nominal, y posicionamiento en renta fija para rebalancear",
+    "riesgos": "Cambio de política monetaria podría revertir movimiento; titular no proporciona números específicos de rendimiento"
+   },
+   "macro": {
+    "dolar": "alcista (tasas reales positivas)",
+    "oro": "neutral-alcista (inflación)",
+    "bonos": "alcista (TIPS atractivos)"
+   },
+   "updates": []
   },
   {
    "id": "33622",
@@ -7396,396 +7775,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 33466,
-   "fecha": "2026-07-20T21:00:55+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33466",
-   "original": "KASH PATEL IS PLANNING A TRIP TO RUSSIA",
-   "titulo": "El director del FBI, Kash Patel, planea un viaje a Rusia en medio de tensiones geopolíticas",
-   "resumen": "Según el titular, Kash Patel, director del FBI, estaría planeando un viaje a Rusia. No se especifican fecha, motivo oficial de la visita ni agenda prevista. La noticia se produce en un contexto de tensión geopolítica elevada, con Washington enfocado simultáneamente en la escalada con Irán y en discusiones sobre sanciones adicionales a Rusia planteadas previamente por Trump.",
-   "analisis": {
-    "porque": "Un viaje de un alto funcionario de seguridad estadounidense a Rusia en medio de tensiones múltiples (Irán, sanciones a Rusia) puede señalar movimientos diplomáticos o de inteligencia con implicancias en la política exterior de EE.UU., aunque el impacto directo en mercados es limitado hasta conocerse más detalles.",
-    "queOcurrio": "Se reportó que Kash Patel, director del FBI, planea viajar a Rusia.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "Bonos",
-    "Petróleo"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Kash Patel",
-    "FBI",
-    "Rusia",
-    "diplomacia",
-    "sanciones"
-   ],
-   "tgText": "📌 Kash Patel, director del FBI, planea un viaje a Rusia. Sin detalles sobre fecha o motivo. Contexto: tensiones con Irán y sanciones a Rusia en debate.",
-   "xText": "📌 El director del FBI, Kash Patel, planea un viaje a Rusia, según reportes. Sin fecha ni agenda confirmada. Ocurre en medio de tensiones con Irán y debate por sanciones a Moscú.",
-   "discordText": "**📌 Kash Patel planea viaje a Rusia**\n- Sin fecha ni motivo especificado\n- Contexto: tensión con Irán + sanciones a Rusia en debate\n- Estado: no-verificable",
-   "pushText": "Kash Patel planea viajar a Rusia",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Impacto directo limitado en mercados; podría afectar marginalmente el sentimiento sobre relaciones EE.UU.-Rusia.",
-    "despues": "Posible atención sobre el rublo, sanciones y activos vinculados a energía rusa si se conocen más detalles.",
-    "escenarios": "Los traders vigilan si el viaje se confirma oficialmente y si está vinculado a negociaciones sobre sanciones o al conflicto en Ucrania.",
-    "riesgos": "El titular no indica fuente ni contexto oficial, por lo que la información permanece sin verificar."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33459,
-   "fecha": "2026-07-20T16:28:00+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33459",
-   "original": "IRAN'S PRESS TV SAYS AN INDUSTRIAL FACILITY IN CENTRAL IRAN'S KHOMEIN CITY WAS ATTACKED BY U.S.",
-   "titulo": "Medio estatal iraní denuncia ataque de EE.UU. a planta industrial en Khomein",
-   "resumen": "Press TV, medio estatal iraní, afirmó que una instalación industrial en la ciudad de Khomein, en el centro de Irán, fue atacada por fuerzas estadounidenses. El reporte no ha sido confirmado por Washington ni por fuentes independientes. De confirmarse, representaría una escalada significativa del conflicto hacia el interior del territorio iraní, más allá de los enfrentamientos regionales en el Golfo Pérsico reportados el mismo día.",
-   "analisis": {
-    "porque": "Un ataque directo dentro de territorio iraní, y no solo en bases regionales, marcaría un salto cualitativo en la intensidad del conflicto, con implicaciones directas para el riesgo de suministro petrolero y la estabilidad regional.",
-    "queOcurrio": "Press TV informó que una planta industrial en Khomein fue atacada por EE.UU.",
-    "estado": "rumor",
-    "fuenteOriginal": "Press TV"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos",
-    "Bitcoin"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Khomein",
-    "Press TV",
-    "ataque EE.UU.",
-    "escalada"
-   ],
-   "tgText": "🚨 Press TV (Irán) denuncia ataque de EE.UU. a planta industrial en Khomein. Sin confirmación de Washington. Escalada dentro de territorio iraní.",
-   "xText": "🚨 Medio estatal iraní Press TV afirma que EE.UU. atacó una instalación industrial en Khomein, centro de Irán. Sin confirmación independiente. #Irán #EEUU",
-   "discordText": "**🚨 Irán denuncia ataque de EE.UU. en su territorio**\n- Press TV: planta industrial en Khomein atacada\n- Sin confirmación de EE.UU.\n- Posible salto cualitativo en el conflicto",
-   "pushText": "Irán denuncia ataque de EE.UU. a planta en Khomein",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "El petróleo suele reaccionar de forma inmediata ante reportes de ataques dentro de territorio iraní, dada su relevancia para la producción y exportación energética.",
-    "despues": "Oro, dólar y bonos del Tesoro podrían seguir con movimientos de refugio.",
-    "escenarios": "Los traders vigilan una confirmación oficial de EE.UU. y la respuesta de Irán, así como posibles efectos sobre infraestructura energética iraní.",
-    "riesgos": "El reporte proviene exclusivamente de un medio estatal iraní, con historial de propaganda; existe riesgo alto de imprecisión o exageración."
-   },
-   "macro": {
-    "dolar": "posible fortalecimiento por refugio",
-    "oro": "presión alcista",
-    "nasdaq": "presión bajista posible",
-    "dow": "presión bajista posible",
-    "sp500": "presión bajista posible",
-    "bitcoin": "posible caída",
-    "ethereum": "posible caída",
-    "bonos": "rendimientos con sesgo alcista por riesgo geopolítico",
-    "petroleo": "sesgo alcista marcado"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-20T20:18:11+00:00",
-     "id": 33465,
-     "texto": "El mando militar estadounidense confirmó oficialmente que lanzó ataques contra Irán el día lunes, corroborando lo que previamente había denunciado un medio estatal iraní respecto a un ataque en la planta industrial de Khomein. Esta confirmación institucional eleva el nivel de certeza sobre la escalada militar directa entre ambos países. El titular no detalla objetivos específicos, número de ataques ni daños causados.",
-     "tgUrl": "https://t.me/walterbloomberg/33465"
-    }
-   ],
-   "actualizado": "2026-07-20T20:18:11+00:00"
-  },
-  {
-   "id": 33464,
-   "fecha": "2026-07-20T19:52:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33464",
-   "original": "IRAN'S FARS SAYS EXPLOSIONS HEARD NEAR SIRIK, REASON UNKNOWN",
-   "titulo": "Medio estatal iraní reporta explosiones cerca de Sirik sin causa confirmada",
-   "resumen": "La agencia iraní FARS informó que se escucharon explosiones cerca de la localidad de Sirik, sin precisar el origen ni la magnitud del hecho. El titular no aporta detalles sobre daños, víctimas o si el episodio está vinculado a la escalada militar en curso entre EE.UU. e Irán en la región del Estrecho de Ormuz. No existe confirmación independiente de fuentes occidentales al momento de esta publicación.",
-   "analisis": {
-    "porque": "Cualquier reporte de explosiones en territorio iraní, aun sin confirmar, alimenta la percepción de escalada militar activa y puede generar reacciones inmediatas en petróleo y activos refugio ante la incertidumbre.",
-    "queOcurrio": "FARS reportó explosiones cerca de Sirik, Irán, sin identificar la causa.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "FARS"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Sirik",
-    "explosiones",
-    "FARS",
-    "Estrecho de Ormuz"
-   ],
-   "tgText": "⚠️ FARS (Irán): explosiones escuchadas cerca de Sirik, causa desconocida. Sin confirmación independiente aún.",
-   "xText": "⚠️ Medio estatal iraní FARS reporta explosiones cerca de Sirik, sin causa confirmada. Contexto: escalada militar EE.UU.-Irán en el Estrecho de Ormuz.",
-   "discordText": "**⚠️ Explosiones cerca de Sirik, Irán**\n- Fuente: FARS (medio estatal)\n- Causa: no especificada\n- Estado: no-verificable",
-   "pushText": "Irán reporta explosiones cerca de Sirik",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo, por la ubicación estratégica cercana al Estrecho de Ormuz.",
-    "despues": "Oro y dólar como refugio; posible impacto en aseguradoras de transporte marítimo.",
-    "escenarios": "Confirmación o desmentido por fuentes militares occidentales, identificación de blanco atacado y si afecta infraestructura energética o de transporte.",
-    "riesgos": "Fuente estatal iraní sin verificación independiente; la causa de las explosiones es explícitamente desconocida según el propio titular."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33460,
-   "fecha": "2026-07-20T16:51:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33460",
-   "original": "TRUMP: EVERY TIME IRAN KILLS AN AMERICAN SOLDIER THEY WILL PAY FOR THAT KILLING MANY TIMES OVER",
-   "titulo": "Trump advierte a Irán: pagará 'muchas veces' por cada soldado de EE.UU. asesinado",
-   "resumen": "El presidente Donald Trump declaró que, cada vez que Irán mate a un soldado estadounidense, 'pagará por ello muchas veces', en medio de la escalada de tensiones militares en la región. La advertencia se produce el mismo día en que Irán reportó ataques a bases en el Golfo y a una planta industrial en su propio territorio, y tras un reporte del New York Times que revela que EE.UU. habría ocultado decenas de heridos militares durante el conflicto.",
-   "analisis": {
-    "porque": "Las declaraciones directas de Trump elevan la retórica de confrontación y sugieren posibles represalias militares, factor que los mercados de energía y refugio suelen vigilar de cerca ante el riesgo de una escalada bélica sostenida.",
-    "queOcurrio": "Trump declaró públicamente que Irán pagará 'muchas veces' por cada soldado estadounidense asesinado.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "escalada",
-    "retórica militar",
-    "Golfo Pérsico"
-   ],
-   "tgText": "🗣️ Trump: 'Cada vez que Irán mate a un soldado de EE.UU., pagará muchas veces por ello'. Retórica se endurece en medio de la escalada militar en el Golfo.",
-   "xText": "🗣️ Trump advierte a Irán: pagará 'muchas veces' por cada soldado estadounidense asesinado. Tensión militar en máximos tras reportes de ataques en el Golfo. #Trump #Irán",
-   "discordText": "**🗣️ Trump endurece advertencia a Irán**\n- 'Pagarán muchas veces' por cada soldado muerto\n- Contexto: escalada de ataques reportados en el Golfo\n- Retórica belicista eleva el riesgo geopolítico",
-   "pushText": "Trump advierte a Irán con represalias por soldados muertos",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "El petróleo y el oro suelen reaccionar primero ante retórica belicista de altos funcionarios estadounidenses.",
-    "despues": "El dólar y los bonos podrían seguir con movimientos de aversión al riesgo.",
-    "escenarios": "Los traders vigilan si la retórica se traduce en acciones militares concretas o solo permanece como declaración política.",
-    "riesgos": "Existe riesgo de que la declaración sea retórica sin acción militar inmediata, lo que podría moderar la reacción del mercado."
-   },
-   "macro": {
-    "dolar": "posible fortalecimiento leve",
-    "oro": "presión alcista leve",
-    "nasdaq": "presión bajista leve",
-    "dow": "presión bajista leve",
-    "sp500": "presión bajista leve",
-    "bitcoin": "posible caída leve",
-    "ethereum": "posible caída leve",
-    "bonos": "rendimientos con sesgo alcista leve",
-    "petroleo": "sesgo alcista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-20T19:34:00+00:00",
-     "id": 33463,
-     "texto": "Según Axios, un alto funcionario estadounidense afirmó que Trump está enfocado en hacer que Irán 'pague' por presuntamente violar un entendimiento previo y por los ataques en el Estrecho de Ormuz. El funcionario señaló que los ataques militares de EE.UU. continuarán hasta que el propio Trump decida detenerlos, sin fijar condiciones ni plazos concretos. El titular no especifica qué tipo de acciones adicionales se contemplan ni si existe coordinación con aliados regionales.",
-     "tgUrl": "https://t.me/walterbloomberg/33463"
-    }
-   ],
-   "actualizado": "2026-07-20T19:34:00+00:00"
-  },
-  {
-   "id": 33449,
-   "fecha": "2026-07-20T10:30:06+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33449",
-   "original": "U.S. EYES TOUGHER CURBS ON CHINESE AI The Trump administration is reportedly considering stricter rules on Chinese AI models after the launch of Moonshot AI’s Kimi K3. Options include requiring U.S. hosting providers to guarantee the security of Chinese models and accept liability for breaches, alongside potential procurement bans and export blacklist measures, as Washington responds to China’s ra",
-   "titulo": "EE.UU. evalúa endurecer restricciones a modelos de IA chinos tras el lanzamiento de Kimi K3",
-   "resumen": "La administración Trump estudia normas más estrictas para modelos de inteligencia artificial de origen chino, luego del lanzamiento de Kimi K3 por Moonshot AI. Entre las opciones consideradas figuran exigir a proveedores de hosting en EE.UU. que garanticen la seguridad de los modelos chinos y asuman responsabilidad legal por brechas, además de posibles prohibiciones de compras públicas y ampliación de listas negras de exportación. El reporte no especifica plazos ni si estas medidas serán finalmente adoptadas.",
-   "analisis": {
-    "porque": "Un endurecimiento regulatorio sobre la IA china intensificaría la rivalidad tecnológica entre EE.UU. y China, con posibles efectos en proveedores de infraestructura cloud, semiconductores y compañías de IA expuestas a ambos mercados.",
-    "queOcurrio": "Según reportes, la administración Trump considera nuevas restricciones sobre modelos de IA chinos, incluyendo responsabilidad legal para hosts estadounidenses y posibles bloqueos de exportación.",
-    "estado": "rumor",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Acciones tecnológicas",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "IA china",
-    "Moonshot AI",
-    "Kimi K3",
-    "restricciones tecnológicas",
-    "EE.UU.-China"
-   ],
-   "tgText": "🤖 EE.UU. evalúa reglas más duras para IA china tras el lanzamiento de Kimi K3 de Moonshot AI. Podría incluir responsabilidad legal para hosts y bloqueos de exportación.",
-   "xText": "🤖 La administración Trump estudia restricciones más estrictas a modelos de IA chinos tras Kimi K3 (Moonshot AI): responsabilidad legal para hosts, bloqueos de compras públicas y exportación. #IA #EEUUChina",
-   "discordText": "**🤖 EE.UU. vs IA china**\n- Se evalúan reglas más duras tras Kimi K3\n- Responsabilidad legal a hosts de EE.UU.\n- Posibles bloqueos de compras públicas/exportación\n- Aún sin confirmación oficial",
-   "pushText": "EE.UU. evalúa restricciones a la IA china tras Kimi K3",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones tecnológicas chinas y proveedores de cloud/hosting suelen reaccionar primero ante anuncios regulatorios de este tipo.",
-    "despues": "Podría extenderse a semiconductores y compañías de IA con exposición cruzada EE.UU.-China.",
-    "escenarios": "Los traders vigilan si la propuesta se formaliza en regulación concreta y la respuesta de China ante posibles restricciones.",
-    "riesgos": "El titular refleja una consideración interna, no una medida confirmada; el alcance final podría diferir sustancialmente."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33441,
-   "fecha": "2026-07-19T22:03:40+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33441",
-   "original": "U.S. 10-YEAR TREASURY FUTURES DOWN 6 TICKS, 30-YEAR FUTURES SLIP 10 TICKS AS OIL PRICES RISE",
-   "titulo": "Bonos del Tesoro de EE.UU. caen mientras el petróleo presiona los rendimientos al alza",
-   "resumen": "Los futuros del bono a 10 años bajan 6 ticks y los del bono a 30 años ceden 10 ticks, en un movimiento vinculado a una suba en los precios del petróleo. El titular no especifica el motivo detrás del repunte del crudo ni el nivel de rendimiento resultante. Este tipo de dinámica suele reflejar temores de presión inflacionaria, ya que el petróleo es un insumo clave en las expectativas de precios y puede condicionar la política de tasas de la Fed.",
-   "analisis": {
-    "porque": "El repunte del petróleo junto con la caída de bonos sugiere que el mercado está incorporando mayor riesgo inflacionario, lo cual puede influir en las expectativas sobre la trayectoria de tasas de la Fed y en el costo de financiamiento a largo plazo.",
-    "queOcurrio": "Los futuros del Treasury a 10 años cayeron 6 ticks y los de 30 años cayeron 10 ticks, coincidiendo con una suba en los precios del petróleo, según el titular.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "Petróleo",
-    "DXY",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "treasury",
-    "bonos-eeuu",
-    "rendimientos",
-    "petroleo",
-    "inflacion",
-    "tasas-fed"
-   ],
-   "tgText": "📉 Bonos del Tesoro de EE.UU. caen (10Y -6 ticks, 30Y -10 ticks) mientras sube el petróleo. Posible señal de presión inflacionaria que el mercado vigila de cara a la Fed.",
-   "xText": "Treasuries en baja: 10Y -6 ticks, 30Y -10 ticks, en línea con suba del petróleo. Rendimientos al alza, atención a lectura inflacionaria y postura de la Fed. #Bonos #Petróleo #Fed",
-   "discordText": "**📉 Bonos del Tesoro EE.UU. bajan por suba del petróleo**\n• 10Y: -6 ticks\n• 30Y: -10 ticks\n• Rendimientos al alza\n• Vínculo con expectativas inflacionarias y política de la Fed",
-   "pushText": "Bonos del Tesoro caen mientras sube el petróleo",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "El mercado de bonos (Treasuries) suele reaccionar de inmediato ante variaciones en el precio del petróleo por su vínculo directo con expectativas inflacionarias.",
-    "despues": "El dólar (DXY), el oro y las acciones sensibles a tasas (growth/tech) suelen ajustar posiciones según la magnitud del movimiento en rendimientos.",
-    "escenarios": "Los traders suelen vigilar si la suba del petróleo es sostenida o puntual, y si los rendimientos de largo plazo (10Y, 30Y) continúan subiendo, lo cual podría reforzar expectativas de una Fed más cautelosa con recortes de tasas.",
-    "riesgos": "El titular no detalla la causa del repunte petrolero ni el nivel actual de rendimientos, por lo que el impacto real dependerá de si se trata de un movimiento técnico menor o el inicio de una tendencia más amplia."
-   },
-   "macro": {
-    "dolar": "Podría fortalecerse levemente si los rendimientos más altos atraen flujos hacia el dólar por diferencial de tasas.",
-    "oro": "Presión bajista relativa si los rendimientos reales suben, encareciendo el costo de oportunidad de mantener oro.",
-    "nasdaq": "Sensible a alzas en rendimientos de largo plazo, que afectan la valuación de activos de crecimiento.",
-    "dow": "Impacto menor comparado con Nasdaq, aunque también sensible al costo de financiamiento.",
-    "sp500": "Podría mostrar cautela si el mercado interpreta la suba de rendimientos como riesgo para múltiplos de valuación.",
-    "bitcoin": "Sin relación directa mencionada en el titular; su reacción dependerá del apetito de riesgo general.",
-    "ethereum": "Mismo caso que Bitcoin, sin vínculo directo señalado.",
-    "bonos": "Los futuros de 10 y 30 años cayeron, lo que implica que los rendimientos subieron ante la suba del petróleo.",
-    "petroleo": "En alza según el titular, factor que presiona a la baja los precios de los bonos."
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7863,6 +7852,16 @@
   "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html",
   "https://www.cnbc.com/2026/07/27/altman-trump-china-open-weight-ai.html",
   "https://www.cnbc.com/2026/07/27/jim-cramer-warns-ai-circular-financing-echoes-dot-com-bubble.html",
-  "https://www.cnbc.com/2026/07/27/trump-supreme-court-mail-in-voting-restrictions.html"
+  "https://www.cnbc.com/2026/07/27/trump-supreme-court-mail-in-voting-restrictions.html",
+  "https://www.cnbc.com/2026/07/27/yields-are-surging-on-these-inflation-protected-bonds-how-to-use-them.html",
+  "https://www.cnbc.com/2026/07/27/nvidias-potential-250b-backstop-for-openai-is-another-strike-against-the-ai-trade.html",
+  "https://www.cnbc.com/2026/07/27/cyclospora-outbreak-food-industry-consolidation.html",
+  "https://www.cnbc.com/2026/07/27/big-earnings-and-a-fed-meetings-what-nyse-insider-jay-woods-is-watching-this-week.html",
+  "https://www.cnbc.com/2026/07/27/cnbcs-the-china-connection-newsletter-a-us-china-debate-thats-becoming-bigger-than-tariffs.html",
+  "https://www.cnbc.com/2026/07/27/tuesdays-big-stock-stories-whats-likely-to-move-the-market.html",
+  "https://www.cnbc.com/2026/07/27/anthropic-ceo-dario-amodei-isnt-advocating-open-weight-model-ban.html",
+  "https://www.cnbc.com/2026/07/28/nasdaq-kospi-wall-street-korea-markets-skhynox-samsung.html",
+  "https://www.cnbc.com/2026/07/28/sk-hynix-plunges-semiconductor-selloff-deepens-samsung-softbank.html",
+  "https://www.cnbc.com/2026/07/27/stock-market-today-live-updates.html"
  ]
 }
