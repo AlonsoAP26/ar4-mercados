@@ -212,3 +212,17 @@ document.addEventListener('change', (e) => {
     }
   }, 1500);
 })();
+
+// ===== Toque háptico en la app instalada =====
+// Vibración sutil (8 ms) al tocar la barra inferior o un botón principal:
+// el detalle que hace sentir "app de verdad". Solo en la app (standalone)
+// y solo donde el sistema lo soporta (Android; iPhone lo ignora sin error).
+(function () {
+  if (!window.matchMedia('(display-mode: standalone)').matches) return;
+  if (!('vibrate' in navigator)) return;
+  document.addEventListener('click', function (e) {
+    if (e.target.closest && e.target.closest('.app-bar-item, .btn, .community-tab-btn')) {
+      try { navigator.vibrate(8); } catch (err) {}
+    }
+  }, { passive: true });
+})();

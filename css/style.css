@@ -22,6 +22,45 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ===== Sensación de app nativa (misma estética, mejor física) ===== */
+/* Transición suave entre páginas (View Transitions): la navegación deja de
+   "parpadear" como web y fluye como app. Navegadores sin soporte: ignoran. */
+@view-transition { navigation: auto; }
+::view-transition-old(root) { animation: appPagOut 0.16s ease both; }
+::view-transition-new(root) { animation: appPagIn 0.22s ease both; }
+@keyframes appPagOut { to { opacity: 0; } }
+@keyframes appPagIn { from { opacity: 0; transform: translateY(8px); } }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
+
+/* Sin destello azul de toque ni retraso de doble tap: respuesta inmediata. */
+* { -webkit-tap-highlight-color: transparent; }
+a, button, .btn, .filter-chip { touch-action: manipulation; }
+
+/* Feedback táctil: lo que tocas responde hundiéndose apenas, como nativo. */
+.btn:active, .filter-chip:active, .app-bar-item:active,
+.fl-strip-item:active, .trio-card:active, .sug-chip:active,
+.premio-btn:active, .community-tab-btn:active { transform: scale(0.97); }
+
+/* Solo dentro de la app instalada: sin rebote de scroll (el fondo blanco del
+   navegador jamás asoma) y el chrome propio no es seleccionable como texto. */
+@media (display-mode: standalone) {
+  html, body { overscroll-behavior-y: none; }
+  .site-header, .app-bar, .ticker-bar { -webkit-user-select: none; user-select: none; }
+}
+
+/* Scrollbars discretos acordes a la marca (escritorio). */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(212,175,55,0.28);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(212,175,55,0.45); background-clip: content-box; border: 3px solid transparent; }
+
 body {
   background: radial-gradient(circle at 20% 0%, #101c34 0%, var(--bg-0) 55%);
   color: var(--text-hi);
