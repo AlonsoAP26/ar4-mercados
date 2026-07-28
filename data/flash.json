@@ -1,7 +1,362 @@
 {
- "lastId": 33663,
- "actualizado": "2026-07-28T13:18:55.876Z",
+ "lastId": 33672,
+ "actualizado": "2026-07-28T15:39:50.922Z",
  "items": [
+  {
+   "id": "33670",
+   "fecha": "2026-07-28T14:45:47+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33670",
+   "via": "DeItaone",
+   "original": "MUSK'S FORTUNE PLUNGES, STILL TOPS $700B Elon Musk has lost roughly $650 billion in wealth since SpaceX's June peak as Tesla and SpaceX shares continue to slide. Despite the sharp decline, Musk remains worth more than $700 billion—around 45 times the fortune of China's CXMT billionaire Zhu Yiming. Investors remain focused on whether AI-driven growth can justify lofty valuations.",
+   "titulo": "Fortuna de Musk se desploma USD 650K millones; sigue arriba de USD 700K millones",
+   "resumen": "Elon Musk ha perdido aproximadamente USD 650.000 millones en riqueza desde el pico de SpaceX en junio, mientras que acciones de Tesla y SpaceX continúan cayendo. A pesar de la caída severa, Musk sigue siendo acreedor de más de USD 700 mil millones, aproximadamente 45 veces la fortuna del multimillonario chino Zhu Yiming. Mercados continúan evaluando si el crecimiento impulsado por IA puede justificar valuaciones elevadas.",
+   "analisis": {
+    "porque": "Cambio en fortuna de individuos mega-ricos refleja sentimiento de mercado sobre sus empresas; Musk es figura pública que afecta percepción de Tesla/SpaceX; caída de USD 650B señala volatilidad severa en activos de riesgo",
+    "queOcurrio": "Fortuna de Musk bajó USD 650K millones desde junio, aunque permanece sobre USD 700K millones",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "TSLA",
+    "SPCX",
+    "Renta variable especulativa"
+   ],
+   "sesgos": [
+    {
+     "activo": "TSLA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "SPCX",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "musk-fortuna-caída",
+    "tesla-spacex-presión",
+    "multimillonarios-volatilidad"
+   ],
+   "tgText": "💰 Fortuna de Musk cae USD 650K millones desde junio. Sigue en USD 700K millones (45x riqueza de billonario chino Zhu Yiming). Tesla y SpaceX bajo presión.",
+   "xText": "💰 Elon Musk: -USD 650K millones desde junio. Permanece con USD 700K millones de fortuna. Caída refleja presión en TSLA y SPCX por dudas sobre IA.",
+   "discordText": "**FORTUNA DE MUSK EN CAÍDA**\n• Pérdida de USD 650 mil millones desde junio\n• Nivel actual: USD 700+ mil millones\n• Comparativa: 45x la riqueza del multimillonario chino Zhu Yiming\n• Drivers: TSLA y SPCX bajo presión por dudas IA\n• Contexto: Volatilidad extrema en activos de riesgo",
+   "pushText": "Fortuna de Musk cae USD 650K millones. Sigue en USD 700K millones.",
+   "importancia": 3,
+   "reaccion": {
+    "primero": "TSLA y SPCX reaccionan directamente (son activos principales de Musk); efecto psicológico en inversores de confianza en CEO",
+    "despues": "Otros activos especulativos pueden seguir si hay contagio de sentimiento",
+    "escenarios": "Traders monitorean si Musk venderá acciones para diversificar (riesgo de oferta); si permanecerá como accionista control; nivel de USD 700K billones es psicológicamente importante",
+    "riesgos": "Titular es dato anecdótico sin movimiento de mercado inmediato; fortuna depende de valuación de TSLA/SPCX que a su vez dependen de mercado"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33669",
+   "fecha": "2026-07-28T14:24:26+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33669",
+   "via": "DeItaone",
+   "original": "$AAPL - APPLE TOPS $5 TRILLION VALUATION Apple briefly reached a $5 trillion market capitalization in Tuesday trading, becoming only the second company after Nvidia to hit the milestone. The move reflects shifting investor confidence as Wall Street reassesses the AI race. Nvidia, which previously peaked near $5.7 trillion, has pulled back amid concerns over slowing AI spending.",
+   "titulo": "Apple alcanza USD 5 billones en capitalización; Nvidia pierde liderazgo en carrera de IA",
+   "resumen": "Apple brevemente alcanzó capitalización de USD 5 billones el martes, convirtiéndose en segundo emisor tras Nvidia en lograr hito. Movimiento refleja reasignación de confianza inversora en carrera de IA. Nvidia, que previamente operó cerca de USD 5,7 billones, retrocede ante preocupaciones por desaceleración en gasto de IA.",
+   "analisis": {
+    "porque": "Cambio de liderazgo de mercado indica rotación de capitales; señal de mercado sobre quién será ganador en ciclo de IA; psicología inversora de máximos históricos afecta sentimiento general",
+    "queOcurrio": "Apple alcanzó brevemente USD 5 billones de capitalización, segundo solo a Nvidia. Nvidia retrocede de máximo de USD 5,7 billones por dudas sobre gasto futuro en IA",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "AAPL",
+    "NVDA",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAPL",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NVDA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech mega-cap",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "apple-5billones",
+    "nvidia-dudas-ia",
+    "liderazgo-mercado",
+    "rotación-capital",
+    "valuación-tech"
+   ],
+   "tgText": "🍎 Apple alcanza USD 5 billones en capitalización (segundo hito tras Nvidia). Nvidia cae de USD 5,7T ante dudas sobre gasto en IA. Rotación en mercado de mega-cap.",
+   "xText": "🍎 AAPL brevemente en USD 5T, segundo solo a NVDA. Nvidia se retira desde USD 5,7T por preocupaciones en gasto IA. Rotación de capital en mega-cap tech.",
+   "discordText": "**APPLE ALCANZA USD 5 BILLONES**\n• Capitalización de USD 5 billones (segundo hito en mercado)\n• Refleja rotación de confianza: fuera de NVDA, hacia AAPL\n• Nvidia retrocede de USD 5,7T (pico anterior)\n• Señal: Mercado cuestiona durabilidad de gasto IA de Big Tech\n• Impacto: Rotación sectorial, no crash generalizado (es reposicionamiento)",
+   "pushText": "Apple alcanza USD 5T. Rotación desde Nvidia por dudas sobre IA.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "AAPL sube por reasignación de capitales y FOMO; NVDA cae por profit-taking y realización de dudas sobre ROI; fondos reequilibran tenencias",
+    "despues": "Otros mega-cap tech (MSFT, AMZN, GOOGL) por efecto sectorial; índices como NASDAQ y S&P 500 siguen movimiento neto",
+    "escenarios": "Traders monitorean si AAPL mantiene nivel de USD 5T (soporte psicológico); si NVDA fija piso o continúa cayendo; rotación puede ser cambio de tema (de 'boom IA' a 'valoración de Apple'); earnings próximos determinarán si rotación es justificada",
+    "riesgos": "Titular no especifica si AAPL alcanzó USD 5T por fortaleza propia o solo por oferta corta de NVDA; brevedad del nivel de AAPL sugiere que fue toque intraday, no soporte duradero"
+   },
+   "macro": {
+    "nasdaq": "neutral",
+    "sp500": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33668",
+   "fecha": "2026-07-28T14:23:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33668",
+   "via": "DeItaone",
+   "original": "SPOT SILVER FALLS NEARLY 3% TO $56.73/OZ",
+   "titulo": "Plata cae 3% a USD 56,73/oz; presión en metales ante caída de tasas esperada",
+   "resumen": "Plata operó a baja el martes, cayendo casi 3% a USD 56,73 por onza. Movimiento refleja presión general en metales preciosos por expectativas de cortes de tasas de la Reserva Federal y debilidad relativa de demanda de activos de riesgo en contexto de liquidación tecnológica.",
+   "analisis": {
+    "porque": "Plata es activo sensible a tasas reales; caída de tasas reduce costo de oportunidad de mantener metales no-yield bearing; demanda industrial (electrónica, solar) vulnerable a recesión",
+    "queOcurrio": "Plata retrocedió casi 3% a USD 56,73/oz",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Plata",
+    "Oro",
+    "Metales preciosos",
+    "USD",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Plata",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "plata-caída",
+    "metales-preciosos",
+    "tasas-baja",
+    "usd-fortaleza"
+   ],
+   "tgText": "📉 Plata cae 3% a USD 56,73/oz. Presión por expectativa de cortes de tasas Fed y liquidación en tech. Metales preciosos bajo presión.",
+   "xText": "📉 Plata -3% a USD 56,73/oz. Caída de tasas esperada y liquidación tech presionan metales preciosos. Demanda industrial débil.",
+   "discordText": "**PLATA BAJO PRESIÓN**\n• Caída de 3% a USD 56,73/oz\n• Factores: expectativa de cortes de tasas Fed, debilidad en tech/renta variable\n• Metales preciosos: presión general por caída de tasas reales\n• Demanda industrial: débil por incertidumbre económica",
+   "pushText": "Plata -3% a USD 56,73/oz. Presión por tasas bajas y liquidación tech.",
+   "importancia": 3,
+   "reaccion": {
+    "primero": "Plata cae por caída de tasas reales; oro puede tener respuesta mixta (safe-haven vs tasas bajas)",
+    "despues": "Otros metales industriales (cobre) pueden reaccionar si debilidad es por recesión; demanda solar/tech se afecta",
+    "escenarios": "Traders monitorean nivel USD 56 como soporte; correlación con tasas reales (10Y TIPS); si Fed corta agresivamente, plata puede caer más; si hay rally en equities, plata sube",
+    "riesgos": "Titular no ofrece contexto; caída de 3% es moderada; falta información sobre volumen y si es tendencia o rebote"
+   },
+   "macro": {
+    "bonos": "alcista (demanda por caída de tasas)",
+    "dolar": "mixto"
+   },
+   "updates": []
+  },
+  {
+   "id": "33667",
+   "fecha": "2026-07-28T14:23:06+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33667",
+   "via": "DeItaone",
+   "original": "NASDAQ NEARS CORRECTION AS AI FEARS GROW The Nasdaq 100 fell 1.6% Tuesday, putting the index on the verge of a market correction after a 10% drop from its June peak. Investors are increasingly worried that massive AI spending by Big Tech may not deliver strong returns. Focus now shifts to earnings from Microsoft, Meta and Amazon, which could determine whether the tech selloff deepens or stabilizes",
+   "titulo": "Nasdaq en riesgo de corrección al caer 10% desde junio; dudas sobre rentabilidad de IA",
+   "resumen": "El Nasdaq 100 retrocedió 1,6% en martes, aproximándose a corrección técnica tras caída de 10% desde su pico de junio. Inversores cuestionan si el gasto masivo en IA de las megacap tecnológicas generará retornos suficientes. Mercados atentos a reportes de Microsoft, Meta y Amazon que determinarán si la venta continúa o se estabiliza.",
+   "analisis": {
+    "porque": "Movimiento de índices tecnológicos determina volatilidad sistémica y reorienta flujos de capital global; dudas sobre valuaciones de IA son factor clave para ciclo de tasas",
+    "queOcurrio": "Nasdaq 100 cayó 1,6%, acumulando 10% de pérdida desde máximo de junio, activando temores sobre retorno de inversión en inteligencia artificial",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "QQQ",
+    "MSFT",
+    "META",
+    "AMZN",
+    "NVDA",
+    "Nasdaq 100"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Acciones tecnológicas",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NVDA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "nasdaq-corrección",
+    "IA-dudas",
+    "big-tech",
+    "valuaciones",
+    "liquidación-tecnológica"
+   ],
+   "tgText": "📉 Nasdaq 100 cae 1,6% y aproxima corrección del 10% desde junio. Inversores cuestionan rentabilidad de inversión masiva en IA. Atención a earnings de Microsoft, Meta y Amazon.",
+   "xText": "📉 NASDAQ 100 -1,6% hoy, 10% bajo máximo de junio. Dudas sobre retorno de gasto en IA presionan megacap tech. Reportes de MSFT, META, AMZN serán decisivos.",
+   "discordText": "**NASDAQ EN RIESGO DE CORRECCIÓN**\n• Índice Nasdaq 100 cae 1,6%, acumula 10% de pérdida desde junio\n• Crecientes dudas sobre rentabilidad de inversión masiva en IA\n• Próximos días: earnings de Microsoft, Meta, Amazon serán críticos\n• Riesgo: profundización de venta técnica si no hay sorpresas positivas",
+   "pushText": "Nasdaq 100 -1,6%, riesgo de corrección. Dudas sobre IA pesan en tech.",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "NASDAQ y QQQ reaccionan inmediatamente por ser índices sintéticos; luego NVDA, MSFT, META, AMZN por ser componentes de mayor peso",
+    "despues": "S&P 500 y DOW por efecto contagio; luego futuros de tasas (si venta lleva a espectativa de corte de tasas Fed); posible fortalecimiento del dólar por flight-to-safety",
+    "escenarios": "Traders monitorean nivel técnico de corrección formal (-10%); volumen en venta; si earnings sorprenden al alza podría haber rebote; si confirman preocupaciones sobre ROI en IA, venta continúa",
+    "riesgos": "Titular no detalla si caída fue por profit-taking técnico o cambio fundamental en tesis de IA; falta confirmar si Meta, MSFT, AMZN realmente decepcionarán"
+   },
+   "macro": {
+    "nasdaq": "bajista",
+    "sp500": "bajista",
+    "dow": "neutral",
+    "bonos": "alcista (demanda de seguridad)",
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33665",
+   "fecha": "2026-07-28T14:20:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33665",
+   "via": "DeItaone",
+   "original": "U.S., IRAN REMAIN FAR APART DESPITE CEASEFIRE The U.S. and Iran continue to send conflicting signals despite the ceasefire. Trump said Iran requested talks, but Tehran denied seeking negotiations and said no U.S. talks are underway. Iran is instead holding discussions with Oman on the Strait of Hormuz, though officials say the talks are unrelated to the U.S. and remain focused on Iran's security a",
+   "titulo": "Negociaciones EE.UU.-Irán vagas: Trump y Teherán dan señales contradictorias",
+   "resumen": "A pesar del cese de hostilidades, EE.UU. e Irán envían señales conflictivas. Trump afirma que Irán solicitó conversaciones, pero Teherán niega buscar negociaciones bilaterales y asegura que no hay diálogos con EE.UU. en curso. Irán conversa con Omán sobre Estrecho de Ormuz, aunque funcionarios afirman que diálogos son independientes y enfocados en seguridad soberana.",
+   "analisis": {
+    "porque": "Estrecho de Ormuz es paso crítico para 20% del comercio petrolero global; ambigüedad sobre negociaciones genera incertidumbre sobre escalada/desescalada; impacta precios de petróleo y primas de riesgo geopolítico",
+    "queOcurrio": "Trump dijo que Irán pidió negociaciones; Teherán lo negó públicamente. Irán habla con Omán sobre Estrecho de Ormuz pero oficialmente dice que no está relacionado con EE.UU.",
+    "estado": "rumor",
+    "fuenteOriginal": "Trump statement / Reuters / FARS"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "USD",
+    "Bonos",
+    "Renta variable global"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran-eeuu-negociaciones",
+    "estrecho-ormuz",
+    "cese-hostilidades",
+    "geopolítica-petróleo",
+    "trump-teherán"
+   ],
+   "tgText": "⚠️ Señales contradictorias EE.UU.-Irán: Trump dice que Irán pidió hablar; Teherán lo niega. Conversaciones con Omán sobre Ormuz pero se niega vínculo con EE.UU. Ambigüedad mantiene prima de riesgo.",
+   "xText": "⚠️ EE.UU.-IRÁN: Trump asegura que Irán pidió negociaciones; Teherán lo rechaza. Conversaciones con Omán en Ormuz son «independientes». Señales contradictorias mantienen incertidumbre.",
+   "discordText": "**AMBIGÜEDAD EE.UU.-IRÁN PERSISTE**\n• Trump: «Irán pidió negociaciones»\n• Teherán: «No buscamos hablar con EE.UU.»\n• Irán conversa con Omán sobre Estrecho de Ormuz\n• Oficial Iran: diálogos «independientes y sobre soberanía»\n• Implicancia: Incertidumbre sobre trayectoria de desescalada\n• Impacto en petróleo: riesgo geopolítico sin claridad",
+   "pushText": "EE.UU.-Irán: señales contradictorias mantienen incertidumbre geopolítica.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo WTI y Brent reaccionan a cambios en percepción de riesgo; si hay dudas, se mantiene prima alcista; si se aclara desescalada, caída",
+    "despues": "USD por flight-to-safety; bonos USA por demanda de seguridad; mercados de renta variable (especialmente energía y financiero) siguen mov. de petróleo",
+    "escenarios": "Traders monitorean: ¿Irán está negociando indirectamente a través de Omán? ¿Es solo maniobra diplomática? ¿Riesgo de escalada persiste?; volatilidad del petróleo probablemente continúe hasta claridad",
+    "riesgos": "Narrativa contradictoria: no es claro quién dice la verdad; 'fuente de la Casa Blanca' no es verificación oficial; comunicados de FARS (agencia estatal iran) pueden ser propaganda"
+   },
+   "macro": {
+    "petroleo": "neutral-bajista (desescalada reduce prima, pero ambigüedad mantiene incertidumbre)",
+    "dolar": "alcista (flight-to-safety por geopolítica)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33664",
+   "fecha": "2026-07-28T14:17:41+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33664",
+   "via": "DeItaone",
+   "original": "$SPCX - SPACEX SLUMPS NEARLY 50% FROM JUNE PEAK SpaceX fell another 5.5%, leaving the stock 47% below its June 16 high and wiping out more than $1.2 trillion in market value. The decline has been driven by AI valuation concerns, geopolitical uncertainty, and heavy short selling. Investors are also watching a major August 6 lock-up expiry, which will significantly increase the number of tradable sh",
+   "titulo": "SpaceX se desploma 47% desde junio; lock-up de agosto amplificará presiones",
+   "resumen": "SpaceX cayó 5,5% adicional el martes, acumulando pérdida de 47% desde máximo del 16 de junio, borrando más de 1,2 billones de dólares en capitalización. Declive impulsado por dudas de valuación en IA, incertidumbre geopolítica y ventas en corto. Vencimiento de lock-up el 6 de agosto aumentará oferta de acciones disponibles para negociar.",
+   "analisis": {
+    "porque": "Indicador de cambio de sentimiento en activos de riesgo; SpaceX es proxy de especulación en tech/space-economy; lock-up es catalizador técnico definido que puede profundizar venta",
+    "queOcurrio": "SpaceX cayó 5,5% hoy, llegando a 47% de caída desde 16 de junio, perdiendo USD 1,2 billones en valor de mercado por dudas sobre IA, geopolítica y short-selling",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "SPCX",
+    "Acciones tecnológicas",
+    "Renta variable especulativa"
+   ],
+   "sesgos": [
+    {
+     "activo": "SPCX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech especulativo",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "spacex-caída",
+    "lock-up-agosto",
+    "cortos",
+    "tech-valuación",
+    "especulación"
+   ],
+   "tgText": "🚀 SpaceX cae 47% desde junio (USD 1,2T perdidos). Hoy otro -5,5%. Lock-up del 6 agosto aumentará oferta y presión vendedora. Duda sobre IA y geopolítica pesan.",
+   "xText": "🚀 SPCX -47% desde junio, hoy -5,5%. Lock-up del 6 de agosto será catalizador: más oferta de acciones presionará aún más. IA, geopolítica, cortos en acción.",
+   "discordText": "**SPACEX EN CAÍDA LIBRE**\n• Acumula -47% desde 16 de junio (perdida USD 1,2 billones)\n• Hoy cae -5,5% adicional\n• Catalizador próximo: **Lock-up vence 6 de agosto** (más oferta disponible)\n• Factores: dudas IA, geopolítica, heavily shorted\n• Riesgo: lock-up amplificará presión vendedora",
+   "pushText": "SpaceX -47% desde junio. Lock-up del 6 de agosto acelerará venta.",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "SPCX reacciona directamente por ser accionista principal Musk; luego Tesla si están correlacionados; posible contagio a índices tech si SpaceX sale de cartera de fondos",
+    "despues": "Otros activos de riesgo especulativo (crypto, small-caps, especulativos); posible fortalecimiento de bonos por flight-to-safety",
+    "escenarios": "Traders monitorean volumen en lock-up (si muchos accionistas venden simultaneously, caída podría acelerarse); nivel de soporte técnico en 47%; si cortos se cubren, posible rebote volátil",
+    "riesgos": "Titular atribuye caída a 'dudas de IA' sin especificar qué; lock-up es catalizador certero pero timing exacto de venta es incierto; correlación con Tesla no garantizada"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33651",
    "fecha": "2026-07-28T11:02:24+00:00",
@@ -7165,442 +7520,6 @@
     "nasdaq": "bajista por escalada",
     "petroleo": "alcista por temor a disrupciones",
     "bonos": "rendimientos caen por demanda segura"
-   },
-   "updates": []
-  },
-  {
-   "id": 33498,
-   "fecha": "2026-07-21T15:40:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33498",
-   "original": "*TRUMP ON IRAN: WILL BE HITTING SOON, VERY HEAVILY",
-   "titulo": "Trump advierte que atacará a Irán 'muy pronto y con mucha fuerza'",
-   "resumen": "Trump intensificó su retórica contra Irán, afirmando que Estados Unidos 'atacará pronto, muy fuertemente', y agregó que Teherán 'no ha visto nada todavía' pese a que Washington 'ha sido amable' hasta ahora. También calificó al liderazgo iraní de 'gente muy malvada'. Las declaraciones se dan en medio de una escalada activa que incluye ataques renovados, bloqueo de puertos iraníes y amenazas hutíes en el Mar Rojo, elevando el riesgo de una confrontación militar de mayor escala en las próximas horas o días.",
-   "analisis": {
-    "porque": "Una amenaza explícita de ataque inminente y de mayor intensidad eleva el riesgo geopolítico inmediato, con impacto directo en energía, refugio y activos de riesgo.",
-    "queOcurrio": "Trump declaró que EE.UU. golpeará a Irán 'pronto y muy fuerte', reiterando que Irán 'no ha visto nada todavía' y calificando a sus líderes de 'muy malvados'.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "DXY",
-    "Bitcoin",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "trump",
-    "irán",
-    "escalada-militar",
-    "ataque-inminente",
-    "geopolitica"
-   ],
-   "tgText": "🚨 Trump: 'Atacaremos a Irán pronto y muy fuerte'. Dice que Teherán 'no ha visto nada todavía' pese a que EE.UU. 'ha sido amable'. Escalada militar en aumento.",
-   "xText": "🚨Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'. 'Irán no ha visto nada todavía'. Retórica de escalada militar se intensifica. #Iran #Trump",
-   "discordText": "**🚨 Trump escala retórica contra Irán**\n- 'Atacaremos pronto, muy fuerte'\n- 'Irán no ha visto nada todavía'\n- Calificó al liderazgo iraní de 'muy malvado'\n- Contexto: bloqueo de puertos y ataques activos",
-   "pushText": "Trump: EE.UU. atacará a Irán 'pronto y muy fuerte'",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo y oro reaccionan primero ante amenazas de ataque inminente por el riesgo de disrupción de suministro y demanda de refugio.",
-    "despues": "Bonos del Tesoro, dólar y criptomonedas suelen ajustarse después según el apetito de riesgo global.",
-    "escenarios": "Los traders vigilan confirmación de un ataque real, respuesta iraní, y si la escalada afecta el tránsito por Ormuz de forma efectiva.",
-    "riesgos": "Riesgo de retórica sin acción militar concreta; el titular no especifica objetivos, cronograma exacto ni magnitud real del ataque anunciado."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-07-23T15:31:39+00:00",
-     "id": 33526,
-     "texto": "Trump afirmó el jueves que está considerando seriamente reanudar operaciones de combate a gran escala contra Irán. La declaración marca una escalada en la retórica sobre el conflicto regional, tras semanas de tensión militar creciente y ataques previos. El titular no especifica cronograma ni condiciones exactas para tal acción.",
-     "tgUrl": "https://t.me/walterbloomberg/33526"
-    },
-    {
-     "fecha": "2026-07-22T18:39:04+00:00",
-     "id": 33518,
-     "texto": "Canciller iraní Araghchi amplía amenaza: quienes contribuyan o asistan en agresión contra Irán serán considerados objetivos legítimos de represalia. Escalada del lenguaje que incluye aliados y facilitadores estadounidenses. Mantiene amenaza difusa sin especificar atacantes o métodos.",
-     "tgUrl": "https://t.me/walterbloomberg/33518"
-    },
-    {
-     "fecha": "2026-07-22T18:38:43+00:00",
-     "id": 33517,
-     "texto": "El canciller iraní Araghchi reitera que cualquier ataque contra Irán recibirá respuesta militar poderosa y decisiva. Continuación de advertencias previas. Sin especificar escala, objetivos o cronograma. Mantiene narrativa de disuasión iraní ante amenazas estadounidenses.",
-     "tgUrl": "https://t.me/walterbloomberg/33517"
-    },
-    {
-     "fecha": "2026-07-22T14:01:54+00:00",
-     "id": 33514,
-     "texto": "Trump reiteró que Irán pagará un precio significativo, continuando línea de amenazas escalonadas. Declaración breve sin especificar mecanismo, timing o alcance de represalias.",
-     "tgUrl": "https://t.me/walterbloomberg/33514"
-    },
-    {
-     "fecha": "2026-07-22T13:11:43+00:00",
-     "id": 33512,
-     "texto": "Trump advirtió que cualquier ataque iraní a buques en el Estrecho de Ormuz desencadenaría strikes estadounidenses contra infraestructura iraní, incluyendo puentes y plantas de energía cercanas a Teherán. Marca una escalada retórica significativa en tensiones alrededor de una de las rutas de envío más estratégicas del mundo.",
-     "tgUrl": "https://t.me/walterbloomberg/33512"
-    }
-   ],
-   "actualizado": "2026-07-23T15:31:39+00:00"
-  },
-  {
-   "id": 33525,
-   "fecha": "2026-07-23T13:01:31+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33525",
-   "original": "*FORD WILL USE APPLE SOFTWARE IN NEW SELF-DRIVING SYSTEM: NYT",
-   "titulo": "Ford integrará software de Apple en nuevo sistema de conducción autónoma",
-   "resumen": "Ford utilizará tecnología de software de Apple en su próxima generación de sistemas de conducción autónoma, según reporta The New York Times. La alianza representa un avance estratégico en la carrera automotriz por tecnología de conducción autónoma, combinando la experiencia de Ford en manufactura con las capacidades de software de la compañía tecnológica.",
-   "analisis": {
-    "porque": "Señala reconfiguración competitiva en sector automotriz y tecnológico; impacta valoraciones de Ford, Apple y proveedores de sistemas autónomos. Indica que Apple acelera monetización de tecnología automotriz tras años de especulación.",
-    "queOcurrio": "Ford anunció alianza con Apple para integrar software de conducción autónoma en vehículos nuevos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "New York Times (citado por Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "F",
-    "AAPL",
-    "NASDAQ",
-    "Sector Automotriz",
-    "Sector Tecnológico"
-   ],
-   "sesgos": [
-    {
-     "activo": "AAPL",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "F",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "ford",
-    "apple",
-    "conducción-autónoma",
-    "tecnología-automotriz",
-    "alianza-estratégica",
-    "IA"
-   ],
-   "tgText": "🚗 Ford utilizará software de Apple en nuevo sistema de conducción autónoma. Alianza estratégica que posiciona a Apple en el mercado automotriz tras años de desarrollo. Impacta valuaciones de ambas compañías.",
-   "xText": "ALERTA: Ford + Apple en conducción autónoma. La gigante tech monetiza tecnología automotriz; Ford refuerza su oferta autónoma. Movimiento estratégico clave en la carrera EV/conducción. $F $AAPL",
-   "discordText": "**Ford + Apple: Alianza en Conducción Autónoma**\n• Ford integrará software de Apple en nueva generación de sistemas autónomos\n• Combina experiencia automotriz de Ford con capacidades de software de Apple\n• Impacta: $F, $AAPL, sector tecnológico",
-   "pushText": "Ford usará software de Apple en conducción autónoma",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "AAPL: reacción alcista probable; valida apuesta de Apple en movilidad autónoma tras años sin anuncios públicos significativos.",
-    "despues": "F: impulso en valuación por acceso a tecnología premium; índices NASDAQ (peso Apple); proveedores de componentes autónomos (negativo relativo).",
-    "escenarios": "Traders vigilarán: (1) si esto acelera timeline de Apple para lanzar vehículo propio; (2) impacto en márgenes de Ford (software licenciado vs. propio); (3) respuestas competitivas de Tesla, Waymo, otras alianzas automotrices.",
-    "riesgos": "El titular no especifica términos financieros, exclusividad, timeline o magnitud del acuerdo. Riesgo de interpretación excesiva sobre compromisos reales de Apple en el sector automotriz."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33523,
-   "fecha": "2026-07-22T21:10:37+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33523",
-   "original": "IRAN'S SEMI-OFFICIAL MEHR CITES KHUZESTAN PROVINCE OFFICIAL AS SAYING LOCATION NEAR AHWAZ TARGETED IN U.S. MISSILE ATTACK",
-   "titulo": "EE.UU. realiza ataque con misiles contra objetivos en provincia iraní de Juzestán",
-   "resumen": "Según funcionario provincial citado por la agencia semi-oficial MEHR de Irán, ubicaciones cercanas a Ahwaz (capital de Juzestán) fueron blanco de ataques con misiles estadounidenses. El titular no especifica hora exacta del incidente, número de misiles o daños confirmados. Representa escalada directa en confrontación militar entre Washington y Teherán tras semanas de amenazas mutuas.",
-   "analisis": {
-    "porque": "Marca transición de amenazas a operaciones militares activas. Afecta prima de riesgo geopolítico, precios energéticos y apetito por activos de riesgo.",
-    "queOcurrio": "Ataque con misiles estadounidenses contra objetivos en Juzestán, provincia petrolera iraní estratégica.",
-    "estado": "rumor",
-    "fuenteOriginal": "MEHR (agencia semi-oficial iraní), reproducida por Walter Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "Oro",
-    "S&P500",
-    "NASDAQ",
-    "VIX",
-    "Bonos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Iran",
-    "ataque-misiles",
-    "USA",
-    "Oriente-Medio",
-    "escalada-militar",
-    "Juzestan"
-   ],
-   "tgText": "⚠️ BREAKING: EE.UU. ataca con misiles objetivos en Juzestán (Irán). Marca escalada a operaciones directas. Petróleo y Oro suben; S&P500 cede. Fuente: MEHR.",
-   "xText": "🚨 Escalada crítica: EE.UU. realiza ataque con misiles contra provincia iraní de Juzestán. Petróleo/Oro al alza; equities bajo presión. Geopolítica en máxima tensión.",
-   "discordText": "**⚠️ ATAQUE MILITAR DIRECTO - BREAKING**\n\n• **Qué**: EE.UU. lanzó misiles contra Juzestán (Irán)\n• **Dónde**: Cercano a Ahwaz\n• **Fuente**: MEHR (agencia semi-oficial iraní)\n• **Estado**: Rumor - sin confirmación oficial USA\n• **Impacto**: Prima de riesgo geopolítico se dispara",
-   "pushText": "EE.UU. ataca Irán con misiles. Petróleo sube; bolsas ceden.",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent) y Oro suben por choque de oferta y demanda de refugio seguro.",
-    "despues": "USD se fortalece (safe-haven); bonos USA ceden (venta de renta fija); equities globales presionadas; VIX volatilidad implícita sube.",
-    "escenarios": "Traders vigilarán: (1) respuesta militar iraní inmediata, (2) bloqueo del Estrecho de Hormuz, (3) reacción de aliados (Arabia Saudita, Emiratos, Israel), (4) si EE.UU. confirma oficialmente el ataque.",
-    "riesgos": "CRÍTICO: Información proviene de fuente iraní semi-oficial sin confirmación USA. Posible amplificación por MEHR. Si es falsa, puede generar reversión violenta en activos cuando se desminta."
-   },
-   "macro": {
-    "dolar": "Alcista (safe-haven)",
-    "oro": "Alcista (refugio)",
-    "nasdaq": "Bajista (riesgo geopolítico)",
-    "dow": "Bajista",
-    "sp500": "Bajista",
-    "bitcoin": "Volátil (correlación con riesgo)",
-    "ethereum": "Volátil",
-    "bonos": "Bajista a corto plazo (venta técnica)",
-    "petroleo": "Alcista (riesgo de oferta Oriente Medio)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-22T21:35:21+00:00",
-     "id": 33524,
-     "texto": "Agencia semi-oficial FARS de Irán reporta dos explosiones en las inmediaciones de Bushehr. El titular no especifica origen, naturaleza ni confirmación de daños. Continúa escalada militar en la región tras ataques estadounidenses previos anunciados contra objetivos en Juzestán.",
-     "tgUrl": "https://t.me/walterbloomberg/33524"
-    }
-   ],
-   "actualizado": "2026-07-22T21:35:21+00:00"
-  },
-  {
-   "id": 33522,
-   "fecha": "2026-07-22T19:47:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33522",
-   "original": "Trump: We're winning in Iran",
-   "titulo": "Trump afirma: 'Estamos ganando en Irán'",
-   "resumen": "El presidente Trump declara que EE.UU. está ganando en Irán sin proporcionar detalles sobre métricas específicas, operaciones o evaluación de situación. Afirmación sin contexto cuantificable. Puede interpretarse como señal política de confianza o justificación de acciones militares previas.",
-   "analisis": {
-    "porque": "Señal política que intenta descartar percepción de escalada descontrolada; podría moderar volatilidad si se interpreta como control de situación, o generar escepticismo si mercados disienten del análisis",
-    "queOcurrio": "Trump afirma que EE.UU. está ganando en Irán; sin datos, métricas u operaciones específicas citadas",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (cita directa)"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "Petróleo",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral a alcista (confianza en control)"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "retórica política",
-    "confianza"
-   ],
-   "tgText": "Trump: 'Estamos ganando en Irán'. Declaración retórica sin detalles; intenta proyectar control. Impacto esperado mínimo; mercados siguen vigilando acciones concretas, no comunicados.",
-   "xText": "Trump: 'Estamos ganando en Irán'. Declaración política sin métricas. Mercados han reaccionado ya a escalada militar; unlikely cambio significativo por retórica.",
-   "discordText": "**Retórica política: Trump en Irán**\n• 'Estamos ganando en Irán'\n• Sin detalles operacionales\n• Objetivo: proyectar control/confianza\n• Impacto mercado: bajo (ya precificada escalada)",
-   "pushText": "Trump: 'Estamos ganando en Irán'",
-   "importancia": 3,
-   "reaccion": {
-    "primero": "Mínimo; mercados ya ajustaron por escalada previa. Equities podrían consolidar si se ve como cierre de ciclo de amenazas",
-    "despues": "Sin reacción secundaria esperada",
-    "escenarios": "Traders ignoran retórica; esperan: (1) Acciones militares confirmadas; (2) Daño a infraestructura iraní; (3) Respuesta iraní contraofensiva; (4) Negociaciones reales",
-    "riesgos": "Declaración vaga reduce credibilidad; puede generar escepticismo si contradichas por hechos; sin peso en precio de activos"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33521,
-   "fecha": "2026-07-22T19:47:13+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33521",
-   "original": "Trump: We don't need the Hormuz Strait",
-   "titulo": "Trump declara: 'No necesitamos el Estrecho de Hormuz'",
-   "resumen": "El presidente Trump afirma públicamente que EE.UU. no requiere del Estrecho de Hormuz. Declaración sin detalles adicionales respecto a energía, dependencia de importaciones o estrategia. Contexto: escalada iraní en últimas horas. Posible comunicación para minimizar impacto de amenazas iraníes o señalar autosuficiencia energética estadounidense.",
-   "analisis": {
-    "porque": "Señal retórica que podría interpretarse como reducción de vulnerabilidad energética estadounidense o como descuento de amenazas iraníes; impacta percepción de riesgo geopolítico y precios de energía",
-    "queOcurrio": "Trump declara públicamente que EE.UU. no necesita Hormuz; no especifica contexto económico, producción o importaciones",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (cita directa de Trump)"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "S&P500",
-    "Energías renovables",
-    "Shale Oil"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "neutral a bajista (retórica de desacoplamiento)"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral a alcista (reducción de riesgo percibido)"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Hormuz",
-    "energía",
-    "autosuficiencia",
-    "retórica"
-   ],
-   "tgText": "📌 Trump: 'No necesitamos el Estrecho de Hormuz'. Declaración retórica que señalaría autosuficiencia energética estadounidense. Podría contrarrestar pánico por amenazas iraníes; monitorear impacto en petróleo y mercados.",
-   "xText": "Trump: 'No necesitamos el Estrecho de Hormuz'. Señal retórica de desacoplamiento energético versus amenaza iraní. Impacto limitado si mercados perciben como política vs. realidad de suministros.",
-   "discordText": "**Declaración Trump: Autosuficiencia energética**\n• Trump: 'No necesitamos Hormuz'\n• Contexto: respuesta a amenazas iraníes de minado\n• Intención: minimizar vulnerabilidad/riesgo percibido\n• Efecto esperado: moderado (petróleo podría consolidar ganancias)",
-   "pushText": "Trump: 'No necesitamos el Estrecho de Hormuz'",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Petróleo podría consolidar ganancias (menos pánico) o caer levemente si se interpreta como reducción de riesgo; DXY estable",
-    "despues": "Equities podrían recuperar si mercados descartan escalada inmediata; bonos estables",
-    "escenarios": "Traders evaluarán: (1) Autosuficiencia real vs. retórica (datos: EE.UU. importa ~6-8 MM bbl/día); (2) Si Trump prepara acciones militares que protegerían Hormuz de todas formas; (3) Timing: ¿es señal de negociación o desafío?",
-    "riesgos": "Declaración vaga sin datos económicos; mercados pueden ignorarla si ven datos de importación energética; contradicción con realidad si amenaza iraní se concreta"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33520,
-   "fecha": "2026-07-22T18:39:52+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33520",
-   "original": "IRAN'S REVOLUTIONARY GUARDS' SPOKESPERSON WARNS SHIPPING COMPANIES THAT THE STRAIT OF HORMUZ SOUTHERN ROUTE IS MINED - POST ON X",
-   "titulo": "Guardia Revolucionaria anuncia minado de ruta sur del Estrecho de Hormuz",
-   "resumen": "Vocero de la Guardia Revolucionaria Islámica de Irán advierte públicamente que la ruta sur del Estrecho de Hormuz está minada. Comunicado difundido en redes sociales. El Estrecho representa 30% del petróleo mundial; cierre o daño parcial dispararía precios globales de energía e impactaría cadenas de suministro asiáticas.",
-   "analisis": {
-    "porque": "Amenaza física a infraestructura de transporte crítica de energía global. Elevaría radicalmente primas de riesgo de seguros marítimos, costos de energía y estrés en cadenas de suministro",
-    "queOcurrio": "Guardia Revolucionaria Islámica publica advertencia de minado en ruta sur de Hormuz; medio: publicación en X (redes sociales)",
-    "estado": "no-verificable",
-    "fuenteOriginal": "Guardia Revolucionaria Islámica (comunicado oficial difundido en X)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Gas Natural",
-    "Shippings (Containerships, Tankers)",
-    "DXY",
-    "EURUSD",
-    "Bonos",
-    "S&P500",
-    "India",
-    "China"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Gas Natural",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Estrecho de Hormuz",
-    "minado",
-    "energía",
-    "Irán",
-    "infraestructura crítica"
-   ],
-   "tgText": "⚠️ CRÍTICO: Guardia Revolucionaria Islámica advierte que ruta sur de Hormuz está minada. Controla 30% petróleo mundial. Expectativa: salto inmediato en WTI/Brent, primas de seguros marítimos y volatilidad global.",
-   "xText": "🚨 Irán anuncia minado de ruta sur del Estrecho de Hormuz (30% suministro global de petróleo). Amenaza seria a transporte marítimo crítico. Esperar spike en energía, dólar y volatilidad.",
-   "discordText": "**ALERTA INFRAESTRUCTURA CRÍTICA**\n• Guardia Revolucionaria Islámica anuncia minado de Hormuz (ruta sur)\n• Representa 30% del suministro mundial de petróleo\n• Amenaza a navegación y seguros marítimos\n• Reacción inmediata: petróleo +3-7%, DXY sube, equities ceden",
-   "pushText": "Irán advierte minado en Estrecho de Hormuz; 30% petróleo global en riesgo",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent) salta +3-7% por riesgo de cierre/daño; primas de seguros marítimos suben inmediatamente",
-    "despues": "DXY sube (safe haven); Gas natural sube; índices asiáticos (Shanghai, Bombay) caen; bonos USA ceden rendimientos; 'risk-off' en globales",
-    "escenarios": "Traders vigilarán: (1) Confirmación si minas están realmente desplegadas; (2) Navíos intentan usar ruta o la evitan; (3) Respuesta militar de EE.UU./aliados; (4) Nivel de disruption en tráfico; (5) Duración de la amenaza (temporal vs. sostenida)",
-    "riesgos": "Comunicado estatal pero no confirmado por terceros independientes; posible exageración retórica; sin embargo, mercados precian riesgo real aunque sea parcial"
-   },
-   "macro": {
-    "dolar": "alcista (+200-300 pips en DXY esperados)",
-    "oro": "alcista",
-    "nasdaq": "bajista",
-    "dow": "bajista",
-    "sp500": "bajista",
-    "bitcoin": "mixto",
-    "ethereum": "mixto",
-    "bonos": "bajistas (rendimientos suben por riesgo)",
-    "petroleo": "alcista muy fuerte (+4-8% esperado)"
    },
    "updates": []
   }
