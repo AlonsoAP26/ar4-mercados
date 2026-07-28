@@ -1,7 +1,125 @@
 {
  "lastId": 33625,
- "actualizado": "2026-07-28T02:37:32.422Z",
+ "actualizado": "2026-07-28T05:34:27.030Z",
  "items": [
+  {
+   "id": 906059417,
+   "fecha": "2026-07-28T05:06:22.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html",
+   "via": "CNBC",
+   "original": "Oil extends losses as a pause in U.S.-Iran hostilities raises de-escalation hopes",
+   "titulo": "Petróleo extiende caídas tras desescalada en hostilidades EE.UU.-Irán",
+   "resumen": "Los precios del petróleo continúan bajo presión tras signos de desescalada en las tensiones entre Estados Unidos e Irán, elevando expectativas de resolución diplomática. El movimiento refuerza la tendencia bajista registrada en sesiones previas y alimenta esperanza de estabilidad geopolítica en el Golfo Pérsico.",
+   "analisis": {
+    "porque": "Prime riesgo geopolítico para oferta de energía global; desescalada reduce prima de riesgo en barril y presiona precios.",
+    "queOcurrio": "Mercado de petróleo asimila mejora en ambiente diplomático entre EE.UU. e Irán, extendiendo liquidación de posiciones especulativas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo WTI",
+    "Brent",
+    "Energía",
+    "Dólar",
+    "Inflación"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Inflación",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Energía",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "petróleo",
+    "Irán",
+    "EE.UU.",
+    "geopolítica",
+    "energía",
+    "desescalada"
+   ],
+   "tgText": "⛽ Petróleo extiende caídas por desescalada Irán-EE.UU. Presión en WTI y Brent mantiene expectativa alcista en mercados de renta variable.",
+   "xText": "Petróleo sigue bajista tras signos de desescalada en hostilidades EE.UU.-Irán. Presión sobre prima de riesgo geopolítico beneficia renta variable y bonos.",
+   "discordText": "**Petróleo | Desescalada Geopolítica**\n• Hostilidades EE.UU.-Irán muestran signos de baja\n• WTI y Brent extiendan caídas\n• Esperanza diplomática reduce prima de riesgo\n→ Positivo para equities y inflación",
+   "pushText": "Petróleo baja por desescalada Irán-EE.UU.; presión en WTI",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "WTI y Brent por liquidación de posiciones de cobertura geopolítica; después inflación y bonos",
+    "despues": "Energy stocks internacionales; spreads de crédito por baja de presión inflacionaria; carry trades (JPY) si baja de tasas se consolida",
+    "escenarios": "Traders vigilan: (1) Confirmación oficial de negociaciones EE.UU.-Irán; (2) Comportamiento de reservas estratégicas (SPR); (3) Producción OPEC+ y cumplimiento de cuotas; (4) Impacto en componente de energía de inflación subyacente",
+    "riesgos": "Riesgo de reversión rápida si escala nuevamente conflicto; riesgo de titulación: \"pausa\" no implica acuerdo permanente; factores de demanda global (recesión) pueden también presionar precios"
+   },
+   "macro": {
+    "petroleo": "Bajista en corto plazo por desescalada; riesgo de reversión en escalada"
+   },
+   "updates": []
+  },
+  {
+   "id": 915629764,
+   "fecha": "2026-07-28T03:55:40.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/indonesian-stocks-enter-bull-market.html",
+   "via": "CNBC",
+   "original": "Indonesian stocks stage massive turnaround, hitting bull market status after clocking a five-year low just last month",
+   "titulo": "Bolsa indonesa repunta dramáticamente hacia territorio alcista tras mínimo de 5 años",
+   "resumen": "Las acciones indonesas experimentan giro espectacular, alcanzando estatus de mercado alcista (bull market) apenas un mes después de tocar mínimos de cinco años. El movimiento refleja recuperación de confianza en mercados emergentes asiáticos. El titular no especifica catalizadores puntuales ni fundamentos de la recuperación.",
+   "analisis": {
+    "porque": "Sentimiento en mercados emergentes impacta flujos de capital global; reversión en Indonesia señala volatilidad extrema y potencial de contagio en Asia.",
+    "queOcurrio": "Índice bursátil indonesio pasó de mínimo de largo plazo a terreno alcista (ganancia >= 20% desde mínimo) en período de un mes.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "IDX (Indonesia)",
+    "Mercados Emergentes",
+    "Asia",
+    "Dólar"
+   ],
+   "sesgos": [
+    {
+     "activo": "Indonesia",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Mercados Emergentes",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Emergencia",
+   "keywords": [
+    "Indonesia",
+    "mercados-emergentes",
+    "Asia",
+    "bull-market",
+    "volatilidad"
+   ],
+   "tgText": "🇮🇩 Indonesia entra en bull market tras rebotar de mínimo de 5 años en solo un mes. Señal de volatilidad extrema en mercados emergentes asiáticos.",
+   "xText": "Indonesia pasa de mínimo de 5 años a bull market en 1 mes. Giro dramático en confianza de inversores en mercados emergentes de Asia. IDX en vigilancia.",
+   "discordText": "**Indonesia | Reversión Dramática**\n• Índice bursátil toca mínimo de 5 años\n• Semanas después: alcanza estatus bull market\n• Refleja volatilidad extrema en EM asiáticos\n→ Cambio de sentimiento hacia renta variable emergente",
+   "pushText": "Indonesia entra en bull market tras rebotar de mínimo de 5 años",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "IDX directamente; después mercados emergentes regionalmente (Tailandia, Malasia, Filipinas) si contagio positivo",
+    "despues": "Fondos EM globales; carry trades en monedas asiáticas (IDR); bonos soberanos indonesios",
+    "escenarios": "Traders vigilan: (1) Sostenibilidad del rebote (es V-shaped recovery o dead cat bounce); (2) Flujos de fondos EM internacionales; (3) Fundamentos de Indonesia (inflación, déficit fiscal, deuda externa); (4) Contagio a otros EM asiáticos o divergencia",
+    "riesgos": "Riesgo altísimo de reversión: movimiento de mínimo a bull market en un mes sugiere volatilidad extrema y potencial de vuelco; riesgo de falta de catalizadores en titular; riesgo macroeconómico global (recesión EE.UU., tasas)"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 974924578,
    "fecha": "2026-07-28T02:26:44.000Z",
@@ -843,6 +961,67 @@
    "updates": []
   },
   {
+   "id": 976597071,
+   "fecha": "2026-07-27T19:14:30.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/crypto-stocks-rally-thanks-to-rotation-from-ai-infrastructure-bitcoin-miners-lag.html",
+   "via": "CNBC",
+   "original": "Crypto stocks rally thanks to rotation from AI infrastructure; bitcoin miners lag",
+   "titulo": "Acciones de criptomonedas suben por rotación desde infraestructura de IA; mineros rezagados",
+   "resumen": "Las acciones vinculadas a criptomonedas experimentan rally impulsado por rotación de inversores desde valores de infraestructura de IA. Sin embargo, empresas mineras de bitcoin quedan rezagadas en el movimiento. El titular no especifica el volumen de rotación ni qué activos de IA son abandonados.",
+   "analisis": {
+    "porque": "Señala cambio de apetito por riesgo entre sectores especulativos; reposicionamiento de carteras en mercados altamente correlacionados con liquidez de fondos.",
+    "queOcurrio": "Mercado de crypto-stocks experimenta repunte selectivo (no miners) atribuido a entrada de capital desde vendedores de IA infrastructure stocks.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Criptomonedas",
+    "Bitcoin",
+    "Ethereum",
+    "NASDAQ",
+    "Mineros cripto (MARA, RIOT, HUT, CLSK)"
+   ],
+   "sesgos": [
+    {
+     "activo": "Criptomonedas",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Mineros cripto",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Infraestructura IA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "crypto",
+    "Bitcoin",
+    "mineros",
+    "IA",
+    "rotación",
+    "NASDAQ"
+   ],
+   "tgText": "⛏️ Acciones cripto suben por rotación desde IA, pero mineros quedan rezagados. Señal de cambio de apetito especulativo entre fondos.",
+   "xText": "Rally en crypto-stocks por rotación desde infraestructura de IA. Mineros de Bitcoin no acompañan. MARA, RIOT rezagados vs. otros nombres cripto.",
+   "discordText": "**Criptomonedas | Rotación desde IA**\n• Acciones cripto experimentan repunte\n• Impulsado por salida desde IA infrastructure\n• Mineros (MARA, RIOT) quedan rezagados\n→ Cambio de apetito en especulativos",
+   "pushText": "Crypto-stocks suben por rotación desde IA; mineros rezagados",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bitcoin y altcoin-exposed stocks (COIN, MSTR); después mineros (MARA, RIOT) si persiste rotación",
+    "despues": "Nvidia y semiconductor plays si retirada de IA infrastructure es significativa; NASDAQ por presión en mega-cap tech",
+    "escenarios": "Traders vigilan: (1) Volumen de venta en IA infrastructure (Nvidia, ASML, SMCI); (2) Fortaleza de Bitcoin spot ETF inflows; (3) Si mineros siguen rezagados o se recuperan; (4) Correlación cripto-equities en entorno de posible baja de tasas",
+    "riesgos": "Riesgo de volatilidad extrema en ambos sectores; rotación puede ser temporal o retracement en trade de IA; titular no cuantifica magnitud del flujo"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
    "id": "33622",
    "fecha": "2026-07-27T19:12:34+00:00",
    "tgUrl": "https://t.me/walterbloomberg/33622",
@@ -1216,6 +1395,166 @@
    "pushText": "CME lanza futuros de oro 24/7 con demanda fuerte; mayor liquidez para traders",
    "importancia": 4,
    "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 929131088,
+   "fecha": "2026-07-27T18:15:18.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/trump-warsh-interest-rates.html",
+   "via": "CNBC",
+   "original": "Trump backs &apos;fantastic&apos; Warsh while calling for lower rates and citing &apos;bad intentions&apos; of other Fed officials",
+   "titulo": "Trump respalda a Warsh para la Fed y critica intenciones de otros funcionarios",
+   "resumen": "El expresidente Trump manifestó apoyo a Marcus Warsh como candidato para la Reserva Federal, calificándolo de \"fantástico\". Simultáneamente, reivindicó su postura de tasas más bajas y cuestionó las \"malas intenciones\" de otros funcionarios de la Fed. El titular no especifica si estas declaraciones fueron realizadas en un acto público o comunicado.",
+   "analisis": {
+    "porque": "Las preferencias presidenciales sobre composición de la Fed impactan expectativas de política monetaria, volatilidad de tipos y posicionamiento en renta fija.",
+    "queOcurrio": "Trump expresó respaldo explícito a Warsh e insistió en su agenda de reducción de tasas, criticando otras posiciones dentro del banco central.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "Dólar",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "tasas",
+    "Trump",
+    "Warsh",
+    "política-monetaria"
+   ],
+   "tgText": "🏦 Trump respalda a Warsh para la Fed y critica intenciones de otros funcionarios. Reitera demanda por tasas más bajas. Impacto en bonos y dólar.",
+   "xText": "Trump respalda a Warsh para la Fed y exige tasas más bajas, criticando otros funcionarios. Expectativas de política monetaria en juego. $DXY en vigilancia.",
+   "discordText": "**Fed | Trump y Warsh**\n• Apoyo explícito a Marcus Warsh como candidato\n• Crítica a \"malas intenciones\" en otros funcionarios\n• Reafirma demanda de reducción de tasas\n→ Impacto en yields y DXY",
+   "pushText": "Trump respalda a Warsh para la Fed; reitera demanda por tasas más bajas",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Bonos y rendimientos USA (yield curve) por expectativa de ciclo de tasas más acomodaticio",
+    "despues": "Dólar (DXY) por diferencial de tasas; acciones de financieras por rentabilidad de margen",
+    "escenarios": "Traders monitorean: (1) Si Trump logra influir en próximas decisiones de la Fed; (2) Confirmación de Warsh y comisión del Senado; (3) Divergencia entre retórica presidencial y comunicaciones oficiales de la Fed",
+    "riesgos": "Riesgo institucional: presión política sobre autonomía de la Fed; riesgo de titulación: no especifica si son declaraciones públicas formales o comentarios informales"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 961359101,
+   "fecha": "2026-07-27T17:25:45.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/netflix-woes-setting-up-for-a-hollywood-ending-says-trader-mike-khouw.html",
+   "via": "CNBC",
+   "original": "Netflix woes setting up for a Hollywood ending, says trader Mike Khouw",
+   "titulo": "Netflix enfrenta crecientes dificultades; analista predice \"final cinematográfico\"",
+   "resumen": "El operador Mike Khouw advierte sobre problemas operacionales en Netflix, sugiriendo que la plataforma se encamina hacia un \"final cinematográfico\" (implicación de crisis o giro radical). El titular no especifica los problemas concretos ni el horizonte temporal de la predicción.",
+   "analisis": {
+    "porque": "Netflix es una acción de peso en NASDAQ con capitalización de mercado significativa; análisis de traders influyentes generan reposicionamiento en tech.",
+    "queOcurrio": "Un operador conocido (Mike Khouw) expresó perspectiva negativa sobre Netflix, utilizando lenguaje figurado sobre desenlace.",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Netflix (NFLX)",
+    "Comunicaciones"
+   ],
+   "sesgos": [
+    {
+     "activo": "Netflix (NFLX)",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Netflix",
+    "NFLX",
+    "streaming",
+    "tech",
+    "operadores"
+   ],
+   "tgText": "📺 Trader Mike Khouw advierte sobre Netflix: predice \"final cinematográfico\" para la plataforma. Señales técnicas o fundamentales no detalladas en titular.",
+   "xText": "Mike Khouw predice \"final cinematográfico\" para Netflix. Alerta sobre problemas operacionales en NFLX. Traders vigilan reajuste en posiciones tech.",
+   "discordText": "**Netflix (NFLX) | Alerta Operador**\n• Mike Khouw advierte perspectiva negativa\n• Predice \"desenlace cinematográfico\"\n• Problemas no especificados en titular\n→ NFLX bajo presión",
+   "pushText": "Netflix en alerta: trader predice \"final cinematográfico\" para la plataforma",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NFLX por análisis de trader; posible venta de fondos que siguen comentarios de influenciadores en medios",
+    "despues": "Otros stocks de comunicación/streaming (DIS, PARA); NASDAQ por rotación sector tech",
+    "escenarios": "Traders monitorean: (1) Confirmación de problemas específicos (churn, ingresos, competencia); (2) Reporte de earnings próximo; (3) Posiciones cortas y cobertura; (4) Reacción de gestores pasivos en índices",
+    "riesgos": "Riesgo alto de falta de contexto: titular no especifica qué problemas (slowing growth, competition, regulación, etc.); riesgo de amplificación mediática de comentario casual de operador"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 919967507,
+   "fecha": "2026-07-27T17:14:58.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/27/jetblue-new-fare-options-basic-economy-first-class.html",
+   "via": "CNBC",
+   "original": "JetBlue overhauls fare options, from basic first to flexible economy. Here&apos;s what to know",
+   "titulo": "JetBlue reestructura opciones de tarifas: desde básico hasta economía flexible",
+   "resumen": "JetBlue Airways anunció rediseño integral de su estructura de tarifas, eliminando distinción entre \"básica\" y otros niveles, e introduciendo nueva opción de \"economía flexible\". La aerolínea busca mejorar monetización de clientes. El titular no especifica impacto esperado en márgenes ni si otros carriers seguirán.",
+   "analisis": {
+    "porque": "Movimiento de pricing power en sector viajes; señala estrategia de margen en contexto de presión de costos e inflación laboral aeroportuaria.",
+    "queOcurrio": "JetBlue presentó nuevo modelo de tarifas simplificado con opciones más granulares para capturar mayor valor por pasajero.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "JetBlue (JBLU)",
+    "Aviación",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "JetBlue (JBLU)",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "JetBlue",
+    "JBLU",
+    "tarifas",
+    "aviación",
+    "precio"
+   ],
+   "tgText": "✈️ JetBlue reestructura tarifas para mejorar monetización. Nueva opción de \"economía flexible\" y simplificación de niveles. Impacto en márgenes por confirmar.",
+   "xText": "JetBlue rediseña estructura de tarifas con nueva opción de economía flexible. Estrategia de pricing power en sector aeroportuario. JBLU.",
+   "discordText": "**JetBlue (JBLU) | Reestructura Tarifas**\n• Eliminación de distinción entre niveles básicos\n• Nueva opción \"economía flexible\"\n• Objetivo: mejorar monetización por pasajero\n→ Potencial alcista en márgenes",
+   "pushText": "JetBlue reestructura tarifas para mejorar margen",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "JBLU por mejora esperada en ASM (available seat miles) yield",
+    "despues": "Otros carriers (DAL, UAL, AAL, SWA) si sigue en industria;  sector viajes/turismo",
+    "escenarios": "Traders vigilan: (1) Adopción de clientes en nuevas opciones; (2) Competencia de otros carriers en pricing; (3) Efecto en demanda (elasticidad de precio); (4) Impacto en costos operacionales y costos laborales aéreos",
+    "riesgos": "Riesgo de resistencia de clientes a nuevos modelos; riesgo de saturación competitiva (carriers copian); riesgo macroeconómico: demanda de viajes es procíclica y vulnerable a recesión"
+   },
    "macro": null,
    "updates": []
   },
@@ -7348,433 +7687,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 33454,
-   "fecha": "2026-07-20T13:16:12+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33454",
-   "original": "IRAN'S REVOLUTIONARY GUARDS SAY THEY TARGETED AL-SAKHIR AIR BASE AND BIN SALMAN PORT IN BAHRAIN, ARIFJAN BASE IN KUWAIT",
-   "titulo": "Guardia Revolucionaria de Irán afirma haber atacado bases en Baréin y Kuwait",
-   "resumen": "La Guardia Revolucionaria de Irán (IRGC) declaró haber atacado la base aérea Al-Sakhir y el puerto Bin Salman en Baréin, además de la base Arifjan en Kuwait, instalaciones vinculadas a la presencia militar estadounidense en la región. El anuncio proviene exclusivamente del cuerpo militar iraní y no ha sido confirmado de forma independiente por Baréin, Kuwait o Washington. La escalada se produce en un contexto de conflicto abierto entre Irán y fuerzas occidentales en el Golfo Pérsico, con crecientes reportes de enfrentamientos directos en instalaciones que albergan tropas estadounidenses.",
-   "analisis": {
-    "porque": "Un ataque directo a instalaciones militares en Baréin y Kuwait, países aliados de EE.UU. con bases estadounidenses, eleva el riesgo de una escalada regional que podría afectar el flujo de petróleo por el Golfo Pérsico y el Estrecho de Ormuz.",
-    "queOcurrio": "El Cuerpo de la Guardia Revolucionaria Islámica de Irán declaró haber atacado la base aérea Al-Sakhir y el puerto Bin Salman en Baréin, así como la base Arifjan en Kuwait, según su propio comunicado.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "Guardia Revolucionaria de Irán (comunicado oficial)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos",
-    "Rendimientos USA",
-    "Bitcoin"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Baréin",
-    "Kuwait",
-    "IRGC",
-    "Golfo Pérsico",
-    "petróleo",
-    "geopolítica"
-   ],
-   "tgText": "🚨 Irán afirma haber atacado bases en Baréin y Kuwait usadas por EE.UU. Escalada militar en el Golfo pone en alerta a mercados de petróleo y refugio.",
-   "xText": "🚨 La Guardia Revolucionaria de Irán dice haber atacado bases en Baréin (Al-Sakhir, puerto Bin Salman) y Kuwait (Arifjan). Sin confirmación independiente. Escalada en el Golfo Pérsico. #Irán #Petróleo",
-   "discordText": "**🚨 Irán ataca bases en Baréin y Kuwait**\n- IRGC afirma haber golpeado Al-Sakhir, puerto Bin Salman y base Arifjan\n- Sin confirmación independiente\n- Riesgo de escalada en el Golfo Pérsico\n- Vigilar: petróleo, oro, DXY",
-   "pushText": "Irán dice haber atacado bases de EE.UU. en Baréin y Kuwait",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "El petróleo (Brent/WTI) suele ser el primer activo en reaccionar ante riesgos de interrupción en el Golfo Pérsico, seguido del oro como refugio.",
-    "despues": "El dólar (DXY) y los bonos del Tesoro podrían moverse según el apetito por riesgo; activos de riesgo como acciones y criptomonedas tienden a retroceder.",
-    "escenarios": "Los traders vigilan si se confirma daño real a instalaciones, un posible cierre parcial del Estrecho de Ormuz, y la respuesta de EE.UU. o aliados del Golfo.",
-    "riesgos": "El titular proviene de una fuente militar iraní sin confirmación independiente; existe riesgo de exageración propagandística o desinformación."
-   },
-   "macro": {
-    "dolar": "posible fortalecimiento por demanda de refugio",
-    "oro": "presión alcista por aversión al riesgo",
-    "nasdaq": "posible presión bajista por aumento de aversión al riesgo",
-    "dow": "posible presión bajista similar",
-    "sp500": "posible presión bajista similar",
-    "bitcoin": "posible caída por salida de activos de riesgo",
-    "ethereum": "posible caída similar a Bitcoin",
-    "bonos": "rendimientos podrían subir por prima de riesgo e inflación energética",
-    "petroleo": "sesgo alcista claro por riesgo de suministro en el Golfo"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-21T10:57:37+00:00",
-     "id": 33475,
-     "texto": "El Ministerio kuwaití confirmó que varias plantas de energía eléctrica y desalinización de agua fueron atacadas el lunes en el marco de la ofensiva iraní reportada previamente contra bases en Baréin y Kuwait. El titular no detalla el alcance de los daños ni si hubo interrupciones de servicio, pero confirma oficialmente el impacto sobre infraestructura crítica del país.",
-     "tgUrl": "https://t.me/walterbloomberg/33475"
-    },
-    {
-     "fecha": "2026-07-21T09:30:18+00:00",
-     "id": 33471,
-     "texto": "El Ministerio del Interior de Baréin confirmó la activación de sirenas de alerta en el país, sin especificar la causa exacta ni si corresponde a un ataque en curso. El hecho se suma a la escalada regional reportada tras los ataques atribuidos a la Guardia Revolucionaria de Irán contra bases en Baréin y Kuwait, ampliando el frente de tensión en el Golfo Pérsico.",
-     "tgUrl": "https://t.me/walterbloomberg/33471"
-    },
-    {
-     "fecha": "2026-07-21T08:47:28+00:00",
-     "id": 33470,
-     "texto": "La Guardia Revolucionaria de Irán (IRGC) afirmó haber golpeado infraestructura de un centro de datos de Amazon en Baréin, como represalia por un ataque estadounidense al proyecto nuclear de Darkhovin. También aseguró haber atacado una base militar de EE.UU. en Jordania, alegando la destrucción de un sistema de radar de defensa antimisiles y un caza F-15. El titular no aporta evidencia independiente ni confirmación de fuentes occidentales sobre estos ataques, que se suman a los reclamos previos de operaciones en Baréin y Kuwait reportados horas antes.",
-     "tgUrl": "https://t.me/walterbloomberg/33470"
-    },
-    {
-     "fecha": "2026-07-20T22:40:28+00:00",
-     "id": 33469,
-     "texto": "El ejército iraní —no la Guardia Revolucionaria, que ya había reclamado ataques previos— afirma haber alcanzado con misiles superficie-superficie sistemas de misiles estadounidenses en la base de Arifjan, Kuwait. La información proviene de la televisión estatal iraní y no ha sido confirmada por fuentes occidentales, el Pentágono ni el gobierno kuwaití. Se suma a los reportes previos de ataques a bases en Baréin y Kuwait reivindicados por la Guardia Revolucionaria, indicando que múltiples ramas de las fuerzas armadas iraníes estarían participando en la ofensiva. El mercado sigue de cerca la escalada militar en el Golfo Pérsico, con foco en el riesgo de interrupción del flujo de petróleo por el Estrecho de Ormuz.",
-     "tgUrl": "https://t.me/walterbloomberg/33469"
-    },
-    {
-     "fecha": "2026-07-20T13:32:15+00:00",
-     "id": 33455,
-     "texto": "La agencia estatal de noticias de Kuwait (KUNA) confirmó el sonido de sirenas de alerta en el país, poco después de que la Guardia Revolucionaria de Irán afirmara haber atacado la base Arifjan, usada por fuerzas estadounidenses. La confirmación de las sirenas añade evidencia circunstancial a la escalada reportada, aunque no constituye verificación independiente del ataque en sí. La situación mantiene en vilo a los mercados de energía y refugio ante el riesgo de una respuesta militar más amplia en el Golfo Pérsico.",
-     "tgUrl": "https://t.me/walterbloomberg/33455"
-    }
-   ],
-   "actualizado": "2026-07-21T10:57:37+00:00"
-  },
-  {
-   "id": 33474,
-   "fecha": "2026-07-21T10:52:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33474",
-   "original": "VESSELS MAKING VOYAGES TO AND FROM SAUDI PORTS MAY BE “SUBJECT TO TARGETING IN ANY LOCATION” BY HOUTHI FORCES – EMAIL SENT TO COMPANIES",
-   "titulo": "Houthi advierten posibles ataques a buques vinculados a puertos sauditas",
-   "resumen": "Un correo electrónico enviado a compañías navieras advierte que embarcaciones con viajes hacia o desde puertos de Arabia Saudita podrían ser blanco de ataques de fuerzas Houthi 'en cualquier ubicación'. El titular no identifica al remitente del mensaje ni confirma su autenticidad oficial, aunque se enmarca en la escalada de riesgo en rutas marítimas del Mar Rojo y Golfo Pérsico vinculada al conflicto regional con Irán.",
-   "analisis": {
-    "porque": "Amenazas a rutas marítimas clave para el petróleo y comercio global elevan primas de riesgo en fletes y crudo, con impacto directo en cadenas de suministro energético.",
-    "queOcurrio": "Circuló un correo dirigido a navieras advirtiendo sobre posibles ataques Houthi a buques vinculados con puertos sauditas.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "Houthi",
-    "Arabia Saudita",
-    "Mar Rojo",
-    "petroleo",
-    "riesgo maritimo"
-   ],
-   "tgText": "⚠️ Advierten posible ataque Houthi a buques vinculados a puertos sauditas 'en cualquier ubicación', según correo a navieras. Sin confirmación oficial.",
-   "xText": "⚠️ Correo a navieras advierte: buques con destino/origen puertos sauditas podrían ser blanco de ataques Houthi 'en cualquier lugar'. Fuente no confirmada oficialmente. #MarRojo #Petroleo #Houthi",
-   "discordText": "**⚠️ Amenaza a rutas marítimas**\n- Email a navieras advierte ataques Houthi a buques vinculados a puertos sauditas\n- Advertencia: riesgo 'en cualquier ubicación'\n- Remitente y autenticidad no confirmados",
-   "pushText": "Houthi amenazan buques vinculados a puertos sauditas",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "El petróleo suele reaccionar primero ante amenazas a rutas marítimas clave del Golfo y Mar Rojo.",
-    "despues": "Costos de fletes marítimos, seguros de carga y divisas de países exportadores de crudo podrían ajustarse.",
-    "escenarios": "Traders vigilan si navieras alteran rutas, suben primas de seguro o si se confirman ataques reales.",
-    "riesgos": "El mensaje proviene de un correo sin remitente identificado; no hay confirmación oficial de las fuerzas Houthi ni de gobiernos involucrados."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33473,
-   "fecha": "2026-07-21T10:18:34+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33473",
-   "original": "TRUMP PREPARES NEW ROUND OF TARIFFS President Donald Trump is reportedly preparing a new round of tariffs on dozens of countries ahead of the expiration of the current 10% global tariff this week. According to the Financial Times, the administration is considering keeping the 10% rate for many countries while pursuing legal avenues to impose higher duties on others.",
-   "titulo": "Trump prepararía nueva ronda de aranceles antes de expirar la tregua del 10%",
-   "resumen": "Según Financial Times, la administración Trump evalúa mantener el arancel global del 10% para muchos países mientras explora vías legales para imponer tasas más altas a otros, antes del vencimiento de la tregua arancelaria actual esta semana. El titular no confirma decisión final ni lista de países afectados; se trata de información atribuida a FT sobre planes en evaluación.",
-   "analisis": {
-    "porque": "Una nueva ronda de aranceles afectaría cadenas de suministro globales, inflación importada y expectativas de la Fed, con impacto directo en dólar, bonos y renta variable.",
-    "queOcurrio": "FT reportó que la Casa Blanca considera mantener el arancel del 10% para algunos países y buscar vías legales para subir tasas a otros, antes de que expire la tregua vigente.",
-    "estado": "rumor",
-    "fuenteOriginal": "Financial Times"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "S&P500",
-    "NASDAQ",
-    "Bonos",
-    "Rendimientos USA",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "aranceles",
-    "Trump",
-    "comercio",
-    "tarifas",
-    "FT"
-   ],
-   "tgText": "📈 FT: Trump evaluaría nueva ronda de aranceles antes de expirar la tregua del 10% global. Plan aún en evaluación, sin confirmación oficial.",
-   "xText": "Según FT, Trump prepararía nuevos aranceles para decenas de países antes de expirar la tregua del 10%. Administración evalúa vías legales para tasas más altas. #Aranceles #Trump #Comercio",
-   "discordText": "**📈 Nuevos aranceles en evaluación**\n- FT: Trump consideraría mantener 10% para varios países\n- Buscaría vías legales para tasas más altas a otros\n- Tregua actual expira esta semana\n- Sin confirmación oficial de la Casa Blanca",
-   "pushText": "Trump evaluaría nuevos aranceles, según FT",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "El dólar y los rendimientos del Tesoro suelen reaccionar primero ante expectativas de mayores aranceles, por su efecto potencial en inflación.",
-    "despues": "Índices bursátiles, especialmente sectores expuestos a comercio exterior, y monedas emergentes podrían seguir con ajustes.",
-    "escenarios": "Traders vigilan confirmación oficial de la Casa Blanca, lista de países afectados y posibles represalias comerciales.",
-    "riesgos": "Información basada en fuentes de FT, no confirmada por la administración; el plan final podría diferir sustancialmente."
-   },
-   "macro": {
-    "dolar": "Podría fortalecerse ante expectativa de mayores aranceles y presión inflacionaria",
-    "oro": "Posible refugio ante incertidumbre comercial",
-    "nasdaq": "Presión bajista por exposición de tecnológicas a cadenas de suministro globales",
-    "dow": "Sensible a sectores industriales con exposición a comercio internacional",
-    "sp500": "Volatilidad esperada ante incertidumbre arancelaria",
-    "bitcoin": "Reacción indirecta, ligada a apetito de riesgo general",
-    "ethereum": "Reacción indirecta, ligada a apetito de riesgo general",
-    "bonos": "Rendimientos podrían subir ante expectativas de inflación importada",
-    "petroleo": "Impacto indirecto vía comercio global y demanda"
-   },
-   "updates": []
-  },
-  {
-   "id": 33472,
-   "fecha": "2026-07-21T10:10:59+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33472",
-   "original": "*IRAN OFFICIAL BEGAN MEETING WITH MEDIATORS IN PAKISTAN TUES: AP",
-   "titulo": "Funcionario iraní inicia reunión con mediadores en Pakistán",
-   "resumen": "Un funcionario iraní comenzó el martes una reunión con mediadores en Pakistán, según reportó AP. El titular no especifica identidad del funcionario, agenda ni resultados esperados. El encuentro ocurre en paralelo a la escalada militar entre Irán y países del Golfo, lo que sugiere un canal diplomático activo pese a la tensión bélica.",
-   "analisis": {
-    "porque": "La existencia de canales diplomáticos en paralelo a la escalada militar puede moderar el riesgo geopolítico si deriva en desescalada, factor clave para el precio del petróleo y activos de riesgo.",
-    "queOcurrio": "Un funcionario iraní inició una reunión con mediadores en Pakistán el martes, según AP.",
-    "estado": "confirmado",
-    "fuenteOriginal": "AP"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Iran",
-    "Pakistan",
-    "mediacion",
-    "diplomacia",
-    "Golfo"
-   ],
-   "tgText": "🕊️ Funcionario iraní se reúne con mediadores en Pakistán, según AP, en medio de la escalada regional con el Golfo.",
-   "xText": "Funcionario iraní inicia reunión con mediadores en Pakistán (AP), en paralelo a la escalada militar con países del Golfo. #Iran #Pakistan",
-   "discordText": "**🕊️ Diplomacia en paralelo a la escalada**\n- Funcionario iraní reunido con mediadores en Pakistán (AP)\n- Sin detalles de agenda o resultados\n- Contexto: tensión militar Irán-Golfo en curso",
-   "pushText": "Irán inicia diálogo con mediadores en Pakistán",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Petróleo podría reaccionar levemente a la baja si el mercado interpreta el encuentro como señal de desescalada.",
-    "despues": "Activos de riesgo y divisas emergentes podrían seguir con cautela hasta conocer resultados concretos.",
-    "escenarios": "Traders vigilan declaraciones posteriores a la reunión y si hay señales de tregua o acuerdo parcial.",
-    "riesgos": "El titular no detalla contenido ni resultado de la reunión; podría no tener impacto real en la escalada militar."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33450,
-   "fecha": "2026-07-20T10:33:31+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33450",
-   "original": "STARMER STEPS DOWN Keir Starmer officially resigned as U.K. prime minister, declaring that “my work is done.” In his farewell speech, he said he had rebuilt the Labour Party after its 2019 defeat, led it to a landslide election victory in 2024, and leaves Britain “stronger and fairer” than when he took over.",
-   "titulo": "Keir Starmer renuncia como primer ministro del Reino Unido",
-   "resumen": "Keir Starmer confirmó oficialmente su renuncia como primer ministro británico, afirmando que 'mi trabajo está hecho'. En su discurso de despedida, destacó haber reconstruido el Partido Laborista tras la derrota de 2019, haberlo llevado a una victoria electoral arrolladora en 2024, y aseguró dejar al Reino Unido 'más fuerte y más justo' que cuando asumió el cargo. El titular no especifica quién asumirá el cargo ni el proceso de sucesión dentro del Partido Laborista.",
-   "analisis": {
-    "porque": "Un cambio de liderazgo en el Reino Unido introduce incertidumbre política que los mercados de la libra esterlina y activos británicos suelen vigilar de cerca, especialmente respecto a la continuidad de políticas fiscales y económicas.",
-    "queOcurrio": "Keir Starmer anunció su renuncia oficial como primer ministro del Reino Unido en un discurso de despedida.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "GBP",
-    "FTSE 100",
-    "EURUSD",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "GBP",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "FTSE 100",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Starmer",
-    "Reino Unido",
-    "renuncia",
-    "Partido Laborista",
-    "política británica"
-   ],
-   "tgText": "🇬🇧 Keir Starmer renuncia como primer ministro del Reino Unido: 'mi trabajo está hecho'. Incertidumbre sobre sucesión en el Partido Laborista.",
-   "xText": "🇬🇧 Keir Starmer confirma su renuncia como PM del Reino Unido, citando su legado tras la victoria laborista de 2024. Mercados atentos a la sucesión y su impacto en la libra. #ReinoUnido #Starmer",
-   "discordText": "**🇬🇧 Starmer renuncia como PM del Reino Unido**\n- 'Mi trabajo está hecho', declaró\n- Destaca victoria laborista de 2024\n- Sucesión aún sin confirmar\n- Vigilar: GBP, FTSE 100",
-   "pushText": "Keir Starmer renuncia como primer ministro británico",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "La libra esterlina (GBP) suele ser el primer activo en reaccionar ante cambios de liderazgo político en el Reino Unido.",
-    "despues": "El FTSE 100 y los bonos gilt podrían moverse según las expectativas sobre el sucesor y la continuidad de las políticas fiscales.",
-    "escenarios": "Los traders vigilan quién sucede a Starmer dentro del Partido Laborista y si hay señales de continuidad o cambio en la política económica.",
-    "riesgos": "El titular no especifica el proceso de sucesión ni el motivo exacto de la renuncia, lo que genera incertidumbre sobre el impacto real."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-07-20T22:27:48+00:00",
-     "id": 33468,
-     "texto": "Tras la renuncia de Keir Starmer, el presidente Donald Trump confirmó una llamada 'muy buena' con el nuevo primer ministro del Reino Unido, Andy Burnham. Según Trump, dialogaron sobre comercio bilateral, petróleo del Mar del Norte, la alianza militar EE.UU.-Reino Unido y los esfuerzos para despejar el Estrecho de Ormuz. Trump adelantó que ambos líderes se reunirán próximamente y ofreció respaldo estadounidense al nuevo gobierno británico. El titular no detalla acuerdos concretos ni cronograma de la reunión.",
-     "tgUrl": "https://t.me/walterbloomberg/33468"
-    }
-   ],
-   "actualizado": "2026-07-20T22:27:48+00:00"
-  },
-  {
-   "id": 33467,
-   "fecha": "2026-07-20T21:43:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33467",
-   "original": "IRAN'S SEMI-OFFICIAL MEHR NEWS AGENCY SAYS EXPLOSIONS HEARD IN CENTRAL IRAN'S ISFAHAN",
-   "titulo": "Reportan explosiones en Isfahán, centro nuclear clave de Irán",
-   "resumen": "La agencia semioficial iraní Mehr News informó explosiones en Isfahán, ciudad central de Irán que alberga instalaciones nucleares sensibles. El titular no especifica origen, magnitud ni si hay víctimas o daños confirmados. El hecho se suma a reportes previos de explosiones en Khomein y Sirik, en un contexto de escalada del conflicto regional que ya incluye advertencias sobre el bloqueo del Estrecho de Ormuz y ataques atribuidos a la Guardia Revolucionaria contra bases en Baréin y Kuwait. No hay confirmación independiente de fuentes occidentales ni israelíes sobre el origen del incidente.",
-   "analisis": {
-    "porque": "Isfahán es un centro nuclear estratégico iraní; cualquier ataque allí eleva el riesgo de escalada militar directa y de represalias que podrían afectar el flujo de petróleo por el Golfo Pérsico.",
-    "queOcurrio": "Medio semioficial iraní reportó explosiones en la ciudad de Isfahán, sin precisar causa, autor ni daños.",
-    "estado": "rumor",
-    "fuenteOriginal": "Mehr News Agency"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos",
-    "Rendimientos USA",
-    "Bitcoin"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Emergencia",
-   "keywords": [
-    "iran",
-    "isfahan",
-    "explosiones",
-    "conflicto-medio-oriente",
-    "petroleo",
-    "geopolitica"
-   ],
-   "tgText": "🚨 Medio semioficial iraní reporta explosiones en Isfahán, ciudad con instalaciones nucleares clave. Sin confirmación independiente. Escalada regional continúa.",
-   "xText": "🚨IRÁN: Mehr News reporta explosiones en Isfahán, centro nuclear estratégico. Sin confirmación de causa. Escalada del conflicto en Medio Oriente se profundiza. #Irán #Petróleo",
-   "discordText": "**🚨 Explosiones en Isfahán, Irán**\n- Reportado por medio semioficial Mehr News\n- Sin confirmación de causa ni daños\n- Isfahán aloja instalaciones nucleares clave\n- Se suma a reportes previos en Khomein y Sirik",
-   "pushText": "Explosiones reportadas en Isfahán, Irán",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo (Brent/WTI) suele ser el activo de reacción más inmediata ante escaladas en Irán, dado el riesgo sobre el Estrecho de Ormuz.",
-    "despues": "Oro, dólar (DXY) y bonos del Tesoro como refugio; acciones de sectores sensibles a energía y defensa.",
-    "escenarios": "Los operadores vigilan si Israel o EE.UU. confirman autoría del ataque, la respuesta iraní y cualquier señal de cierre efectivo del Estrecho de Ormuz.",
-    "riesgos": "El origen no está confirmado y proviene de un medio estatal iraní; existe riesgo de desinformación o exageración con fines internos."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7862,6 +7774,14 @@
   "https://www.cnbc.com/2026/07/27/anthropic-ceo-dario-amodei-isnt-advocating-open-weight-model-ban.html",
   "https://www.cnbc.com/2026/07/28/nasdaq-kospi-wall-street-korea-markets-skhynox-samsung.html",
   "https://www.cnbc.com/2026/07/28/sk-hynix-plunges-semiconductor-selloff-deepens-samsung-softbank.html",
-  "https://www.cnbc.com/2026/07/27/stock-market-today-live-updates.html"
+  "https://www.cnbc.com/2026/07/27/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/07/27/mcconnell-fall-hospital-senate-recovery.html",
+  "https://www.cnbc.com/2026/07/27/jetblue-new-fare-options-basic-economy-first-class.html",
+  "https://www.cnbc.com/2026/07/27/netflix-woes-setting-up-for-a-hollywood-ending-says-trader-mike-khouw.html",
+  "https://www.cnbc.com/2026/07/27/trump-warsh-interest-rates.html",
+  "https://www.cnbc.com/2026/07/27/crypto-stocks-rally-thanks-to-rotation-from-ai-infrastructure-bitcoin-miners-lag.html",
+  "https://www.cnbc.com/2026/07/27/india-cjp-modi-protest-genz-jobs.html",
+  "https://www.cnbc.com/2026/07/28/indonesian-stocks-enter-bull-market.html",
+  "https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html"
  ]
 }
