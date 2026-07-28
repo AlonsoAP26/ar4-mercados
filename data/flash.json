@@ -1,7 +1,108 @@
 {
- "lastId": 33679,
- "actualizado": "2026-07-28T21:19:47.926Z",
+ "lastId": 33682,
+ "actualizado": "2026-07-28T22:29:13.722Z",
  "items": [
+  {
+   "id": "33680",
+   "fecha": "2026-07-28T22:13:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33680",
+   "via": "DeItaone",
+   "original": "IRAN LAUNCHED BALLISTIC MISSILES TOWARDS A U.S. BASE IN JORDAN -AXIOS",
+   "titulo": "Irán lanza misiles balísticos contra base militar estadounidense en Jordania",
+   "resumen": "Irán lanzó múltiples misiles balísticos contra una base militar de EE.UU. ubicada en Jordania, según reportó Axios citando fuentes estadounidenses. El Pentágono confirmó que todos los proyectiles fueron interceptados exitosamente sin reportar bajas iniciales. El incidente marca una escalada directa en las tensiones entre Irán y EE.UU. después de semanas de señales contradictorias en negociaciones.",
+   "analisis": {
+    "porque": "Escalada geopolítica directa genera volatilidad en petróleo, divisas de riesgo y activos defensivos. Los mercados reprecia el riesgo de conflicto regional ampliado",
+    "queOcurrio": "Irán ejecutó ataque de misiles balísticos contra instalación militar estadounidense; EE.UU. reporta intercepciones exitosas",
+    "estado": "confirmado",
+    "fuenteOriginal": "Axios / U.S. Military"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Oro",
+    "DXY",
+    "EURUSD",
+    "NASDAQ",
+    "S&P500",
+    "VIX",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "misiles",
+    "EE.UU.",
+    "Jordania",
+    "conflicto",
+    "Medio Oriente",
+    "escalada militar"
+   ],
+   "tgText": "🚨 BREAKING: Irán lanza misiles balísticos contra base de EE.UU. en Jordania. Pentágono reporta intercepciones exitosas. Petróleo y oro suben ante escalada geopolítica. Vigilar volatilidad en mercados de riesgo.",
+   "xText": "🚨 Irán atacó base militar de EE.UU. en Jordania con misiles balísticos. Pentágono confirma intercepciones. Escalada directa dispara petróleo, oro y volatilidad. Mercados en alerta máxima.",
+   "discordText": "**BREAKING - Escalada Irán-EE.UU.**\n• Irán lanzó misiles balísticos contra base en Jordania\n• Pentágono reporta todas las intercepciones exitosas\n• Petróleo y oro en alza; volatilidad máxima\n• Monitorear riesgos de ampliación del conflicto",
+   "pushText": "Irán ataca base de EE.UU. con misiles; todos interceptados. Escalada geopolítica dispara petróleo.",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo WTI y Brent: riesgos de cierre del Estrecho de Ormuz reprician al alza instantáneamente",
+    "despues": "Oro como activo refugio; USD se fortalece por flight-to-safety; acciones de defensa suben; bonos caen (tasas suben por presión inflacionaria del petróleo)",
+    "escenarios": "Traders monitorean: (1) si Irán anuncia represalias adicionales; (2) respuesta militar de EE.UU. o Israel; (3) cierre de Ormuz; (4) reacción de OPEC+ sobre producción; (5) contagio a mercados emergentes de Medio Oriente",
+    "riesgos": "Escalada descontrolada hacia conflicto regional mayor; espiral de represalias; daño a infraestructura energética global; disrupciones en supply chain"
+   },
+   "macro": {
+    "dolar": "alcista por flight-to-safety",
+    "oro": "alcista por demanda refugio",
+    "nasdaq": "bajista por aversión a riesgo",
+    "dow": "bajista con peso en defensa",
+    "sp500": "bajista",
+    "bitcoin": "volátil, puede actuar como refugio heterodoxo",
+    "ethereum": "correlacionado con riesgo",
+    "bonos": "caen (yields suben) por presión inflacionaria del petróleo",
+    "petroleo": "alcista muy fuerte, riesgo de $85-90 por barril"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-28T22:28:51+00:00",
+     "id": "33682",
+     "texto": "Confirmación del Pentágono: Todos los misiles iraníes fueron interceptados exitosamente. Declaración oficial sin reporte de bajas estadounidenses iniciales.",
+     "tgUrl": "https://t.me/walterbloomberg/33682"
+    },
+    {
+     "fecha": "2026-07-28T22:28:16+00:00",
+     "id": "33681",
+     "texto": "Confirmación oficial del Pentágono: Fuerzas de la Guardia Revolucionaria Islámica lanzaron múltiples misiles balísticos desde Irán a las 17:45 ET. Timestamp: 28 de julio 2026, 22:28 UTC.",
+     "tgUrl": "https://t.me/walterbloomberg/33681"
+    }
+   ],
+   "actualizado": "2026-07-28T22:28:51+00:00"
+  },
   {
    "id": "33679",
    "fecha": "2026-07-28T21:16:05+00:00",
@@ -7464,65 +7565,6 @@
     "dolar": "debilidad relativa",
     "oro": "presión bajista por menos demanda defensiva"
    },
-   "updates": []
-  },
-  {
-   "id": 33530,
-   "fecha": "2026-07-24T14:14:47+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33530",
-   "original": "NETANYAHU TO TRAVEL TO WASHINGTON MONDAY AT INVITATION OF TRUMP: AXIOS NETANYAHU TO MEET TRUMP AT WHITE HOUSE ON TUESDAY: AXIOS NETANYAHU TO ATTEND FUNERAL CEREMONY FOR SENATOR LINDSEY GRAHAM: AXIOS",
-   "titulo": "Netanyahu viaja a Washington para reunión con Trump; asistirá a funeral de senador Graham",
-   "resumen": "El primer ministro israelí Benjamin Netanyahu viajará a Washington el lunes a invitación de Trump, según Axios. Se reunirá con Trump en la Casa Blanca el martes y asistirá a la ceremonia fúnebre del senador republicano Lindsey Graham. El viaje ocurre en medio de tensiones geopolíticas en Oriente Medio.",
-   "analisis": {
-    "porque": "Confirmación de encuentro de alto nivel entre líderes durante período de escalada en Irán. Mercados vigilan señales sobre política exterior estadounidense hacia Medio Oriente, que impacta precios de petróleo y energía global.",
-    "queOcurrio": "Netanyahu confirmó viaje a EE.UU. para reunión bilateral con Trump en Casa Blanca. Participará también en funeral de Graham, senador influyente en política exterior.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Axios"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "S&P500",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Netanyahu",
-    "Trump",
-    "Casa Blanca",
-    "Oriente Medio",
-    "política exterior"
-   ],
-   "tgText": "Netanyahu viajará a Washington el lunes para reunirse con Trump en Casa Blanca el martes. El primer ministro asistirá también al funeral del senador Lindsey Graham. Reunión bilateral en contexto de tensiones en Irán.",
-   "xText": "Netanyahu se reúne con Trump en Casa Blanca el martes. Viaje confirmado por Axios en contexto de escalada geopolítica en Oriente Medio. También asistirá a funeral del senador Graham.",
-   "discordText": "**Netanyahu → Washington**\n• Viaje confirmado a invitación de Trump\n• Reunión bilateral en Casa Blanca (martes)\n• Asistirá funeral de senador Graham\n• Contexto: tensiones Irán-EE.UU.",
-   "pushText": "Netanyahu viaja a Washington para reunirse con Trump; asistirá funeral de Graham",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Oro (activo refugio ante incertidumbre geopolítica) y petróleo crudo (suministros Medio Oriente); posibles ganancias si mercado interpreta como desescalada potencial.",
-    "despues": "Bonos del Tesoro y DXY si hay señales sobre política exterior futura; equities si se percibe menor riesgo regional.",
-    "escenarios": "Traders monitorean si declaraciones conjuntas en reunión indican postura más dura o pragmática hacia Irán; volatilidad en energía según interpretación de próximos pasos geopolíticos.",
-    "riesgos": "Titular es confirmación de viaje; riesgo real es en contenido de reunión que aún no ocurre. Mercados pueden reaccionar a expectativas preconstruidas sobre resultados."
-   },
-   "macro": null,
    "updates": []
   }
  ],
