@@ -1,7 +1,321 @@
 {
- "lastId": 33625,
- "actualizado": "2026-07-28T05:34:27.030Z",
+ "lastId": 33633,
+ "actualizado": "2026-07-28T08:06:26.162Z",
  "items": [
+  {
+   "id": "33632",
+   "fecha": "2026-07-28T07:57:27+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33632",
+   "via": "DeItaone",
+   "original": "U.S. CRUDE FUTURES DOWN 2.5% TO $80.54/BBL, LOWEST SINCE JULY 20",
+   "titulo": "Petróleo cae a mínimo de 8 días: WTI en $80,54/barril",
+   "resumen": "Futuros de crudo estadounidense caen 2,5% a $80,54 por barril, nivel más bajo desde el 20 de julio. La caída continúa la tendencia de debilidad post-desescalada en tensiones EE.UU.-Irán, reflejando normalización de premios geopolíticos y debilitamiento de demanda.",
+   "analisis": {
+    "porque": "Petróleo es barométro de riesgo geopolítico y demanda. Caída significa mercado precifica fin de escalada y revisa demanda a la baja.",
+    "queOcurrio": "WTI cae 2,5% en la sesión, rompiendo soporte de 8 días y alcanzando nivel más bajo desde el 20 de julio.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg Energy (via Walter Bloomberg)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "DXY",
+    "Energéticas",
+    "XLE"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Energéticas",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "petroleo",
+    "wti",
+    "desescalada-iran",
+    "precio-energia"
+   ],
+   "tgText": "📉 Petróleo WTI a $80,54/bbl (-2,5%), mínimo desde 20 de julio. Desescalada Iran-EEUU y debilidad de demanda pesan. Energéticas bajo presión.",
+   "xText": "WTI cae 2,5% a $80,54/bbl, mínimo de 8 días. Desescalada geopolítica y dudas de demanda siguen pesando en precio del crudo.",
+   "discordText": "**CRUDO EN BAJA**\n• WTI: $80,54/bbl (-2,5%)\n• Mínimo desde 20 julio\n• Factores: desescalada Iran + debilidad demanda",
+   "pushText": "Petróleo WTI baja a $80,54/bbl (mínimo de 8 días)",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones energéticas (XLE, Exxon, Chevron) reaccionan directamente; luego USD (fortalecimiento por menor presión inflacionaria).",
+    "despues": "Bonos (yields bajan leve); inflación esperada cede; divisas emergentes alivio (menos presión inflacionaria importada).",
+    "escenarios": "Traders vigilan si $80 es soporte o se quiebra hacia $78-77. Monitorean data de inventarios US (EIA miércoles). Diferencian caída por demanda vs sobreoferta.",
+    "riesgos": "Titular no incluye volumen ni contexto de inventarios. Riesgo que caída sea sobre-extendida si hay noticia alcista (OPEC+, disrupción suministro)."
+   },
+   "macro": {
+    "petroleo": "Bajista; -2,5% a $80,54",
+    "dolar": "Neutral a alcista (menor presión inflacionaria)",
+    "bonos": "Levemente alcista (inflation-lower play)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33630",
+   "fecha": "2026-07-28T07:43:34+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33630",
+   "via": "DeItaone",
+   "original": "IRAN'S GOVERNMENT SPOKESPERSON SAYS IRAN LOST AROUND 230 MLN CUBIC METERS OF ITS GAS PRODUCTION CAPACITY BECAUSE OF WAR WITH U.S.",
+   "titulo": "Irán reporta pérdida de 230 millones m³ en capacidad de gas por conflicto con EEUU",
+   "resumen": "Un portavoz del gobierno de Irán declara que el país perdió alrededor de 230 millones de metros cúbicos de capacidad de producción de gas natural como resultado del conflicto con Estados Unidos. No se especifican detalles sobre infraestructura dañada, plazos de recuperación o mecanismo de pérdida.",
+   "analisis": {
+    "porque": "Irán es productor significativo de gas; pérdidas de capacidad pueden afectar suministros globales y precios de energía, especialmente si afecta exportaciones de GNL.",
+    "queOcurrio": "Portavoz oficial de Irán reporta pérdida de 230 MMm³ de capacidad gasífera por 'guerra con EEUU'. Titular no detalla si es daño físico, sanciones o ambos.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "Portavoz Gobierno Irán (vía medios estatales presumiblemente, no confirmado independientemente)"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Gas Natural",
+    "GNL",
+    "Energéticas",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Gas Natural",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran",
+    "gas-natural",
+    "sanciones-eeuu",
+    "suministro-energia",
+    "conflicto"
+   ],
+   "tgText": "⚠️ Irán reporta pérdida 230M m³ capacidad gas por conflicto EEUU. Reclamo no verificado independientemente. Impacto en suministros globales GNL aún incierto.",
+   "xText": "Portavoz Irán: pérdida 230M m³ capacidad gas por conflicto EEUU. Reclamo oficial; sin verificación independiente ni detalles de mecanismo de pérdida.",
+   "discordText": "**IRÁN: PÉRDIDA CAPACIDAD GAS**\n• Reportado: 230M m³ producción\n• Atribuido: conflicto con EEUU\n• Estado: No verificado independientemente\n• Impacto GNL: incierto",
+   "pushText": "Irán reporta pérdida 230M m³ gas; reclamo sin verificación independiente",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "Gas natural europeo (TTF) monitorea; petróleo neutral (Irán ya bajo sanciones). Poco movimiento esperado si es reclamo retórico.",
+    "despues": "Si se confirma disrupción real de GNL: precios energía europeos suben; luego divisas emergentes (presión inflacionaria).",
+    "escenarios": "Traders diferencian: (a) 'noise geopolítico' → no reprecia; (b) disrupción confirmada de infraestructura → riesgo de suministro. Clave es si cifra es verosímil (Irán produce ~280 MMm³/día).",
+    "riesgos": "Portavoz oficial sin verificación independiente; número redondo (230M) sugiere cifra política. No se especifica si es pérdida permanente o temporal, ni mecanismo. Riesgo alto de exageración propagandística."
+   },
+   "macro": {
+    "gas": "Neutral a bajista (presión si real)",
+    "petroleo": "Neutral (Irán ya bajo sanciones)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33629",
+   "fecha": "2026-07-28T07:35:17+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33629",
+   "via": "DeItaone",
+   "original": "FED DISSENTS COULD SIGNAL SEPTEMBER HIKE Investors are watching this week's Fed vote for clues on interest rates. A 10-2 split is expected, with two officials backing a 25bp rate hike. If more than three members dissent, it could signal growing support for a September hike. Still, T. Rowe Price expects the Fed to keep rates unchanged over the next 12 months.",
+   "titulo": "Mercados atentos a disidencias en Fed: posible señal de suba de tasas en septiembre",
+   "resumen": "Inversores escrutarán votación de la Fed esta semana buscando señales sobre tasas de interés. Se espera un voto 10-2 con dos funcionarios respaldando suba de 25 puntos básicos. Si más de tres miembros disienten, podría indicar creciente apoyo para suba en septiembre. T. Rowe Price prevé tasas sin cambios en próximos 12 meses.",
+   "analisis": {
+    "porque": "Las disidencias en votaciones Fed son señal de posibles cambios de rumbo futuro. Mercado reprecia tasas e inciertidumbre según composición de votos.",
+    "queOcurrio": "Se espera reunión Fed esta semana; voto esperado 10-2 pero mercado monitorea si disidencias superan 3 miembros (señal de cambio de tono).",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (via Walter Bloomberg, referencia T. Rowe Price)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos USA",
+    "Rendimientos USA",
+    "DXY",
+    "S&P 500",
+    "FX"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "fed",
+    "tasas-interes",
+    "politica-monetaria",
+    "disidencias",
+    "septiembre"
+   ],
+   "tgText": "🏦 Fed en foco: voto esperado 10-2 esta semana. Si >3 disidencias favor de suba, señalaría apoyo para septiembre. T. Rowe Price: sin cambios en 12m.",
+   "xText": "Fed esta semana: esperan voto 10-2, pero >3 disidencias podrían indicar creciente apoyo para suba en septiembre. T. Rowe Price espera estancamiento 12m.",
+   "discordText": "**FED EN OBSERVACIÓN**\n• Voto esperado: 10-2 (sin cambios)\n• Señal: si >3 disidencias → apoyo para septiembre\n• Consenso T. Rowe: sin cambios próximos 12m",
+   "pushText": "Fed esta semana: mercados vigilan disidencias como señal de tasas en septiembre",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Yields US 2Y y 10Y reaccionan; luego mercado de futuros de tasas (Fed Funds Futures) reprecia probabilidad de suba.",
+    "despues": "USD (fortalecimiento si hay señales de más subas); acciones tech (sensibles a tasas); bonos corporativos.",
+    "escenarios": "Traders monitorean: (a) si voto es unánime, señal de 'dovish pause'; (b) si >3 disidencias, crecimiento de 'hawks'. Clave: qué dicen funcionarios en conferencia. T. Rowe Price es contrapeso dovish.",
+    "riesgos": "Titular no especifica qué funcionarios disienten ni en qué sentido. 'Más de 3 disidencias' es umbral editorial, no confirmado. Riesgo over-reading de una disidencia rutinaria."
+   },
+   "macro": {
+    "bonos": "Neutral; yields vigilados",
+    "dolar": "Neutral a alcista si se confirma tono hawkish",
+    "sp500": "Neutral; sensibilidad a tasas"
+   },
+   "updates": []
+  },
+  {
+   "id": "33628",
+   "fecha": "2026-07-28T07:34:30+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33628",
+   "via": "DeItaone",
+   "original": "TECH STOCKS HIT AS CHIP SELLOFF DEEPENS US tech stocks look set to fall as a global chip selloff accelerates, driven by concerns over AI spending and rising competition from China. Nasdaq 100 futures dropped 1%, while semiconductor stocks tumbled across Asia, with South Korea's Kospi down 11%. Despite the pullback, some strategists see the selloff as a healthy correction within a longer-term AI gr",
+   "titulo": "Venta de semiconductores se profundiza: Nasdaq 100 cae 1% en futuros",
+   "resumen": "Las acciones tecnológicas estadounidenses caen conforme el selloff global en chips se acelera, impulsado por preocupaciones sobre gasto en IA y competencia creciente desde China. Futuros del Nasdaq 100 bajaron 1%, mientras semiconductores se desploман en Asia con el Kospi de Corea del Sur cayendo 11%. Algunos estrategas ven la corrección como saludable dentro de la tendencia alcista de IA a largo plazo.",
+   "analisis": {
+    "porque": "El deterioro sincronizado en semiconductores afecta directamente valuaciones tech y liquidez en índices de mayor volatilidad. Señala rotación de riesgo fuera de narrativa IA.",
+    "queOcurrio": "Futuros tech caen en sesión previa a apertura estadounidense; contagio confirmado en Asia con caídas bilaterales en índices y acciones semiconductoras.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (via Walter Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "Nasdaq 100",
+    "Semiconductores",
+    "S&P 500",
+    "Kospi",
+    "SK Hynix",
+    "ASML",
+    "Intel"
+   ],
+   "sesgos": [
+    {
+     "activo": "Nasdaq 100",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "semiconductores",
+    "nasdaq",
+    "selloff-tech",
+    "ai-correction",
+    "korea"
+   ],
+   "tgText": "🔴 NASDAQ 100 cae 1% en futuros. Venta de chips acelerándose globalmente por dudas en gasto IA y competencia china. Kospi -11%. Algunos ven corrección como saludable.",
+   "xText": "Semiconductor selloff se profundiza: Nasdaq 100 -1% en futuros, Kospi -11%. Preocupación por gasto IA y competencia china. Estrategas ven corrección como normal en tendencia alcista.",
+   "discordText": "**NASDAQ BAJO PRESIÓN**\n• Futuros Nasdaq 100: -1%\n• Kospi (Corea): -11%\n• Driver: Dudas gasto IA + competencia China\n• Analistas: corrección saludable dentro rally",
+   "pushText": "Nasdaq 100 -1%: venta global en semiconductores se profundiza",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Semiconductores grandes (SK Hynix, ASML, Intel) reactúan primero por exposición directa; luego índices tech por peso en cartera.",
+    "despues": "S&P 500 general, bonos (flight-to-safety), dólar (riesgo-off); posible rotación a defensivos.",
+    "escenarios": "Traders vigilan si venta se contiene en -1,5% o acelera; soporte clave en 18.500 Nasdaq 100. Diferenciación entre 'corrección sana' vs 'quiebre de narrativa IA'.",
+    "riesgos": "Contagio psicológico a otras techs sin relación directa. Riesgo que corrección sea señal de debilidad en demanda corporativa IA (capex). El titular no especifica magnitud de selloff en otras geografías."
+   },
+   "macro": {
+    "nasdaq": "Futuros -1%, presión",
+    "sp500": "Neutral a bajista; futuros -0,25%",
+    "dolar": "Neutral a alcista (risk-off)",
+    "bonos": "Neutral a alcista (flight-to-safety leve)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33626",
+   "fecha": "2026-07-28T07:30:00+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33626",
+   "via": "DeItaone",
+   "original": "JAPAN EARTHQUAKE HAS PRELIMINARY MAGNITUDE OF 7.1 - NIED TSUNAMI WARNING ISSUED AFTER JAPAN EARTHQUAKE - NHK",
+   "titulo": "Sismo de magnitud 7,1 en Japón genera alerta de tsunami",
+   "resumen": "Japón fue golpeado por un terremoto de magnitud preliminar 7,1, según el Instituto Nacional de Investigación en Ciencias de la Tierra (NIED). Se emitió alerta de tsunami de 1 metro. El titular no especifica zona epicentral ni daños reportados hasta el momento.",
+   "analisis": {
+    "porque": "Terremotos de magnitud 7+ pueden disrumpir suministros de semiconductores, manufactura electrónica y energía. Japón es hub crítico de suministros globales (chips, baterías, óptica).",
+    "queOcurrio": "Terremoto magnitud 7,1 en Japón con alerta de tsunami de 1 metro emitida; no se detallan zona ni daños.",
+    "estado": "confirmado",
+    "fuenteOriginal": "NHK (broadcaster oficial Japón) via NIED"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Semiconductores",
+    "TSMC",
+    "Sony",
+    "Panasonic",
+    "Yen",
+    "Nikkei",
+    "Índices Asia"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Yen",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Emergencia",
+   "keywords": [
+    "terremoto-japon",
+    "tsunami",
+    "magnitud-7-1",
+    "disrupcion-supply-chain",
+    "semiconductor"
+   ],
+   "tgText": "🚨 Terremoto M7,1 en Japón con alerta tsunami (1m). Riesgo de disrupción en semiconductores, electrónica y energía. Sin detalles de daños aún. Mercados vigilando.",
+   "xText": "Japón: terremoto M7,1 genera alerta de tsunami de 1m. Riesgo de disrupción supply chain semiconductores. Detalles de daños aún sin confirmar.",
+   "discordText": "🚨 **TERREMOTO JAPÓN**\n• Magnitud: 7,1 (preliminar)\n• Alerta tsunami: 1 metro\n• Fuente: NIED/NHK\n• Riesgo: disrupción chips/electrónica/energía",
+   "pushText": "Alerta: terremoto M7,1 en Japón; tsunami de 1m; monitorear disrupción supply chain",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Yen sube por 'safe-haven' y riesgo géopolitico; Nikkei cae. Semiconductores (TSMC, Sony) bajan por riesgo supply.",
+    "despues": "Índices Tech globales si se confirma daño crítico; bonos (risk-off); crude baja (menor actividad económica); seguros (re-insurers).",
+    "escenarios": "Traders esperan: (a) daño mínimo a infraestructura crítica → bounce rápido; (b) plantas semiconductoras disrumpidas → re-pricing de supply-chain risk. Monitorean reports de daño estructural en fábricas.",
+    "riesgos": "Magnitud 'preliminar' puede cambiar. Tsunami de 1m es bajo para Japón; riesgo real depende de ubicación epicentro (no especificada). Información temprana sin detalles de daños."
+   },
+   "macro": {
+    "yen": "Alcista (safe-haven)",
+    "nikkei": "Bajista si daño se confirma",
+    "semiconductores": "Bajista (supply risk)",
+    "bonos": "Neutral a alcista (risk-off leve)"
+   },
+   "updates": []
+  },
   {
    "id": 906059417,
    "fecha": "2026-07-28T05:06:22.000Z",
@@ -7385,305 +7699,6 @@
     "despues": "El oro y los bonos del Tesoro como refugio, además de la libra esterlina por la exposición política directa del Reino Unido al conflicto.",
     "escenarios": "Los operadores suelen vigilar declaraciones oficiales adicionales sobre el alcance de la autorización, posibles represalias iraníes contra intereses británicos, y la respuesta de la OTAN o aliados regionales.",
     "riesgos": "El titular no detalla el alcance operativo real de la autorización ni si ya se ejecutaron ataques desde bases británicas; falta confirmación de fuentes oficiales adicionales."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33492,
-   "fecha": "2026-07-21T15:35:23+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33492",
-   "original": "TRUMP: CANADA TARIFFS NOT IN RESPONSE TO WILDFIRES",
-   "titulo": "Trump aclara que los aranceles a Canadá no responden a los incendios forestales",
-   "resumen": "Trump desmintió que los aranceles impuestos a Canadá estén relacionados con los incendios forestales, sin ofrecer una justificación alternativa explícita en el titular. La declaración surge en medio de tensiones comerciales bilaterales y podría estar vinculada a la próxima expiración de la tregua arancelaria del 10% que la administración estadounidense evalúa endurecer antes de su vencimiento, según reportes previos.",
-   "analisis": {
-    "porque": "Aclaraciones sobre la motivación real de los aranceles a Canadá son relevantes para el par USD/CAD y sectores expuestos al comercio bilateral, como energía y manufactura.",
-    "queOcurrio": "Trump negó que los aranceles a Canadá tengan relación con los incendios forestales, sin explicar la causa alternativa en el titular disponible.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "USDCAD",
-    "Acciones canadienses"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDCAD",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "canada",
-    "aranceles",
-    "trump",
-    "comercio",
-    "tarifas"
-   ],
-   "tgText": "🇨🇦 Trump: los aranceles a Canadá 'no responden a los incendios forestales'. Persisten tensiones comerciales bilaterales sin motivo explícito aclarado.",
-   "xText": "🇨🇦Trump aclara que los aranceles a Canadá no están vinculados a los incendios forestales. Tensión comercial bilateral continúa sin causa explícita confirmada. #Trump #Canada",
-   "discordText": "**🇨🇦 Aranceles a Canadá: Trump aclara motivo**\n- No están relacionados con incendios forestales\n- Causa alternativa no especificada en el titular\n- Contexto: posible fin de tregua arancelaria del 10%",
-   "pushText": "Trump: aranceles a Canadá no son por incendios forestales",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "El par USD/CAD suele ser el primero en reflejar cambios en la narrativa arancelaria bilateral.",
-    "despues": "Acciones de sectores canadienses expuestos a EE.UU. (energía, manufactura) podrían ajustarse después.",
-    "escenarios": "Los traders vigilan la próxima expiración de la tregua arancelaria del 10% y posibles anuncios formales sobre nuevas tarifas.",
-    "riesgos": "El titular no especifica la razón real de los aranceles ni su magnitud, lo que limita el análisis concreto de impacto."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33491,
-   "fecha": "2026-07-21T15:32:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33491",
-   "original": "OIL HITS FIVE-WEEK HIGH ON MIDDLE EAST ESCALATION Oil prices rose about 2% to a five-week high as renewed U.S.-Iran attacks and Houthi threats to blockade Saudi shipping fueled concerns over global energy supplies. Brent crude climbed above $91 a barrel, while tankers carrying Saudi oil reversed course in the Red Sea amid rising security risks.",
-   "titulo": "El petróleo toca máximo de cinco semanas por escalada militar en Medio Oriente",
-   "resumen": "El crudo subió cerca de 2% hasta un máximo de cinco semanas luego de que se reanudaran ataques entre EE.UU. e Irán y los hutíes amenazaran con bloquear el transporte marítimo saudita. El Brent superó los 91 dólares por barril, mientras que buques cisterna que transportaban petróleo saudita revirtieron su curso en el Mar Rojo por el aumento del riesgo de seguridad. El movimiento refleja la preocupación creciente del mercado energético por una posible disrupción prolongada en rutas clave de suministro global, en un contexto de escalada bélica que involucra directamente al Estrecho de Ormuz.",
-   "analisis": {
-    "porque": "Una escalada sostenida en el Golfo Pérsico y el Mar Rojo amenaza directamente las rutas de exportación de crudo más importantes del mundo, con potencial impacto en inflación global y costos energéticos.",
-    "queOcurrio": "El Brent subió por encima de 91 dólares por barril (+2%) tras ataques renovados EE.UU.-Irán y amenazas hutíes de bloquear buques vinculados a puertos sauditas; varios tanqueros revirtieron rumbo en el Mar Rojo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "Acciones energéticas"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "petroleo",
-    "brent",
-    "irán",
-    "hormuz",
-    "medio-oriente",
-    "houthis",
-    "energia"
-   ],
-   "tgText": "🛢️ El Brent supera los US$91 (+2%) en máximo de 5 semanas por escalada Irán-EE.UU. y amenazas hutíes a buques sauditas. Tanqueros revierten rumbo en el Mar Rojo.",
-   "xText": "🛢️Petróleo en máximo de 5 semanas: Brent >US$91 (+2%) por escalada militar Irán-EE.UU. y amenazas hutíes de bloqueo a buques saudíes. Tanqueros revierten curso en Mar Rojo. #Oil #Iran",
-   "discordText": "**🛢️ Petróleo sube a máximo de 5 semanas**\n- Brent +2%, supera US$91/barril\n- Ataques EE.UU.-Irán se reanudan\n- Hutíes amenazan bloqueo a buques sauditas\n- Tanqueros revierten rumbo en Mar Rojo",
-   "pushText": "Petróleo toca máximo de 5 semanas por escalada en Medio Oriente",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "El petróleo (Brent/WTI) suele ser el primer activo en reaccionar ante riesgos de suministro en rutas clave como Ormuz o el Mar Rojo.",
-    "despues": "Rendimientos de bonos, dólar como refugio, oro, y acciones de sectores sensibles a energía (aerolíneas, transporte) suelen seguir con rezago.",
-    "escenarios": "Los traders vigilan si la escalada afecta flujos reales por Ormuz (20% del crudo mundial) versus retórica sin bloqueo efectivo, y la respuesta de la OPEP+ ante presión de precios.",
-    "riesgos": "Riesgo de sobrerreacción si la escalada se diluye diplomáticamente; el titular no especifica volumen real de tráfico afectado ni duración del desvío de tanqueros."
-   },
-   "macro": {
-    "dolar": "Posible fortalecimiento como refugio si la escalada se profundiza",
-    "oro": "Sesgo alcista por demanda de refugio",
-    "nasdaq": "Presión bajista por mayores costos energéticos",
-    "dow": "Sensible a sectores industriales y transporte",
-    "sp500": "Presión moderada, dependiente de sector energía vs consumo",
-    "bitcoin": "Reacción indirecta, dependiente de apetito de riesgo general",
-    "ethereum": "Sin relación directa",
-    "bonos": "Rendimientos al alza por expectativas inflacionarias",
-    "petroleo": "Brent >US$91, +2%, máximo de 5 semanas"
-   },
-   "updates": []
-  },
-  {
-   "id": 33488,
-   "fecha": "2026-07-21T15:31:37+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33488",
-   "original": "Trump: The blockade on Iranian ports continues",
-   "titulo": "Trump confirma que el bloqueo a puertos iraníes continúa",
-   "resumen": "Trump reafirmó que el bloqueo estadounidense sobre puertos de Irán sigue vigente, en medio de la escalada militar activa entre ambos países. La declaración se suma a un contexto de ataques renovados, amenazas hutíes de bloqueo naval a buques sauditas y presión sobre las rutas energéticas del Golfo Pérsico. El titular no detalla el alcance geográfico exacto del bloqueo ni su duración prevista, pero refuerza la percepción de una estrategia de presión económica y militar sostenida contra Teherán.",
-   "analisis": {
-    "porque": "El bloqueo naval sobre puertos iraníes afecta directamente la capacidad de exportación de crudo de Irán y su economía, con efectos indirectos sobre la oferta global de energía.",
-    "queOcurrio": "Trump confirmó que el bloqueo a puertos iraníes impuesto por EE.UU. continúa vigente, sin dar detalles adicionales sobre su alcance o cronograma.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "irán",
-    "bloqueo",
-    "puertos",
-    "sanciones",
-    "trump"
-   ],
-   "tgText": "🛳️ Trump confirma que el bloqueo de EE.UU. a puertos iraníes continúa, en medio de la escalada militar activa con Teherán.",
-   "xText": "🛳️Trump: el bloqueo a puertos iraníes continúa. Presión económica y militar sostenida en medio de la escalada con Teherán. #Iran",
-   "discordText": "**🛳️ Bloqueo a puertos iraníes continúa**\n- Confirmado por Trump\n- Parte de presión económica/militar sostenida\n- Sin detalles de alcance o duración",
-   "pushText": "Trump: el bloqueo a puertos de Irán sigue vigente",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "El petróleo puede reaccionar de forma moderada ante la confirmación de restricciones sostenidas a exportaciones iraníes.",
-    "despues": "El dólar y bonos podrían verse afectados marginalmente según el desarrollo de la escalada general.",
-    "escenarios": "Los traders vigilan si el bloqueo se traduce en menor oferta efectiva de crudo iraní en mercados globales.",
-    "riesgos": "El titular no precisa el alcance geográfico ni la efectividad real del bloqueo declarado."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33485,
-   "fecha": "2026-07-21T15:23:44+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33485",
-   "original": "TRUMP: IRAN WANTS TO DESPERATELY MEET",
-   "titulo": "Trump: 'Irán quiere reunirse desesperadamente', pero EE.UU. 'no tiene interés'",
-   "resumen": "Trump afirmó que Irán 'quiere reunirse desesperadamente' con Estados Unidos, pero remarcó que Washington 'no tiene interés' en dicho encuentro. La declaración contrasta con la escalada militar en curso y sugiere que, pese a los canales diplomáticos abiertos, la administración estadounidense no ve condiciones para negociar en este momento. El mensaje añade incertidumbre sobre la posibilidad de una desescalada diplomática a corto plazo entre ambos países.",
-   "analisis": {
-    "porque": "La postura de rechazo a negociar, en medio de una escalada militar activa, reduce las expectativas de una desescalada rápida, factor clave para el apetito de riesgo y precios de energía.",
-    "queOcurrio": "Trump declaró que Irán desea reunirse con urgencia, pero que EE.UU. no tiene interés en ese encuentro.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "irán",
-    "diplomacia",
-    "trump",
-    "negociacion",
-    "tensión"
-   ],
-   "tgText": "🗣️ Trump: 'Irán quiere reunirse desesperadamente', pero EE.UU. 'no tiene interés'. Se reducen expectativas de desescalada diplomática inmediata.",
-   "xText": "🗣️Trump: Irán 'quiere reunirse desesperadamente', pero EE.UU. 'no tiene interés'. Baja probabilidad de desescalada diplomática a corto plazo. #Iran #Trump",
-   "discordText": "**🗣️ Trump rechaza reunión con Irán**\n- 'Irán quiere reunirse desesperadamente'\n- 'No tenemos interés', dice Trump\n- Reduce expectativas de desescalada diplomática",
-   "pushText": "Trump rechaza reunión pese a interés de Irán en negociar",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo y oro pueden reaccionar levemente al alza ante la reducción de expectativas de una salida diplomática inmediata.",
-    "despues": "Dólar y bonos podrían ajustarse según evolucione la narrativa de escalada versus diálogo.",
-    "escenarios": "Los traders vigilan señales de apertura de canales diplomáticos formales o, por el contrario, nuevos anuncios de ataques.",
-    "riesgos": "Declaración retórica sujeta a cambios rápidos; no hay confirmación oficial de una solicitud formal de reunión por parte de Irán."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33476,
-   "fecha": "2026-07-21T12:06:15+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33476",
-   "original": "*BESSENT: FROZE $130M CRYPTO WALLET TIED TO IRAN'S IRGC",
-   "titulo": "Bessent confirma congelamiento de billetera cripto de US$130 millones vinculada al IRGC iraní",
-   "resumen": "El secretario del Tesoro de EE.UU., Scott Bessent, confirmó el congelamiento de una billetera de criptomonedas por US$130 millones asociada al Cuerpo de la Guardia Revolucionaria Islámica (IRGC) de Irán. La medida se enmarca en el contexto de sanciones financieras contra Teherán en medio de la escalada de tensiones militares en Medio Oriente. El titular no especifica en qué exchange o red se ubicaba la billetera, ni el mecanismo técnico usado para el bloqueo, ni si hay actores adicionales sancionados.",
-   "analisis": {
-    "porque": "Refuerza la capacidad de EE.UU. para rastrear y bloquear activos digitales usados por entidades sancionadas, lo que añade presión regulatoria sobre el uso de cripto para evasión de sanciones y puede influir en el apetito de riesgo hacia el sector en medio del conflicto con Irán.",
-    "queOcurrio": "El secretario del Tesoro Bessent declaró que se congeló una billetera cripto de US$130 millones vinculada al IRGC iraní.",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bitcoin",
-    "Criptomonedas",
-    "DXY",
-    "Petróleo"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bitcoin",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Criptomonedas",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "sanciones",
-    "irgc",
-    "iran",
-    "criptomonedas",
-    "tesoro-eeuu",
-    "bessent"
-   ],
-   "tgText": "🔒 Bessent confirma congelamiento de billetera cripto de US$130M vinculada al IRGC iraní, en medio de la escalada de sanciones contra Teherán.",
-   "xText": "Bessent (Tesoro EE.UU.): se congeló una billetera cripto de US$130M vinculada al IRGC de Irán. Sanciones financieras se intensifican en medio del conflicto con Teherán. #Crypto #Iran",
-   "discordText": "**🔒 Sanciones cripto contra Irán**\n- Bessent confirma congelamiento de billetera por US$130M vinculada al IRGC\n- Se enmarca en la presión de sanciones sobre Teherán\n- Sin detalles técnicos del exchange o red involucrada",
-   "pushText": "Tesoro EE.UU. congela billetera cripto de US$130M vinculada a Irán",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "El sector cripto suele reaccionar primero ante noticias de enforcement regulatorio, especialmente exchanges y stablecoins vinculados a flujos sancionados.",
-    "despues": "El dólar y activos de refugio podrían reflejar el contexto geopolítico más amplio con Irán; el petróleo sigue siendo el activo más sensible al conflicto regional en curso.",
-    "escenarios": "Los traders suelen vigilar si se anuncian sanciones adicionales, congelamientos de exchanges específicos o respuestas de Irán que puedan escalar el conflicto financiero-militar.",
-    "riesgos": "El titular no detalla el mecanismo del congelamiento ni verifica de forma independiente el monto exacto; el contexto de conflicto activo con Irán aumenta la probabilidad de titulares adicionales y volatilidad asociada."
    },
    "macro": null,
    "updates": []
