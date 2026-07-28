@@ -1,7 +1,145 @@
 {
- "lastId": 33674,
- "actualizado": "2026-07-28T18:42:48.972Z",
+ "lastId": 33677,
+ "actualizado": "2026-07-28T20:07:12.619Z",
  "items": [
+  {
+   "id": "33665",
+   "fecha": "2026-07-28T14:20:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33665",
+   "via": "DeItaone",
+   "original": "U.S., IRAN REMAIN FAR APART DESPITE CEASEFIRE The U.S. and Iran continue to send conflicting signals despite the ceasefire. Trump said Iran requested talks, but Tehran denied seeking negotiations and said no U.S. talks are underway. Iran is instead holding discussions with Oman on the Strait of Hormuz, though officials say the talks are unrelated to the U.S. and remain focused on Iran's security a",
+   "titulo": "Negociaciones EE.UU.-Irán vagas: Trump y Teherán dan señales contradictorias",
+   "resumen": "A pesar del cese de hostilidades, EE.UU. e Irán envían señales conflictivas. Trump afirma que Irán solicitó conversaciones, pero Teherán niega buscar negociaciones bilaterales y asegura que no hay diálogos con EE.UU. en curso. Irán conversa con Omán sobre Estrecho de Ormuz, aunque funcionarios afirman que diálogos son independientes y enfocados en seguridad soberana.",
+   "analisis": {
+    "porque": "Estrecho de Ormuz es paso crítico para 20% del comercio petrolero global; ambigüedad sobre negociaciones genera incertidumbre sobre escalada/desescalada; impacta precios de petróleo y primas de riesgo geopolítico",
+    "queOcurrio": "Trump dijo que Irán pidió negociaciones; Teherán lo negó públicamente. Irán habla con Omán sobre Estrecho de Ormuz pero oficialmente dice que no está relacionado con EE.UU.",
+    "estado": "rumor",
+    "fuenteOriginal": "Trump statement / Reuters / FARS"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "USD",
+    "Bonos",
+    "Renta variable global"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran-eeuu-negociaciones",
+    "estrecho-ormuz",
+    "cese-hostilidades",
+    "geopolítica-petróleo",
+    "trump-teherán"
+   ],
+   "tgText": "⚠️ Señales contradictorias EE.UU.-Irán: Trump dice que Irán pidió hablar; Teherán lo niega. Conversaciones con Omán sobre Ormuz pero se niega vínculo con EE.UU. Ambigüedad mantiene prima de riesgo.",
+   "xText": "⚠️ EE.UU.-IRÁN: Trump asegura que Irán pidió negociaciones; Teherán lo rechaza. Conversaciones con Omán en Ormuz son «independientes». Señales contradictorias mantienen incertidumbre.",
+   "discordText": "**AMBIGÜEDAD EE.UU.-IRÁN PERSISTE**\n• Trump: «Irán pidió negociaciones»\n• Teherán: «No buscamos hablar con EE.UU.»\n• Irán conversa con Omán sobre Estrecho de Ormuz\n• Oficial Iran: diálogos «independientes y sobre soberanía»\n• Implicancia: Incertidumbre sobre trayectoria de desescalada\n• Impacto en petróleo: riesgo geopolítico sin claridad",
+   "pushText": "EE.UU.-Irán: señales contradictorias mantienen incertidumbre geopolítica.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo WTI y Brent reaccionan a cambios en percepción de riesgo; si hay dudas, se mantiene prima alcista; si se aclara desescalada, caída",
+    "despues": "USD por flight-to-safety; bonos USA por demanda de seguridad; mercados de renta variable (especialmente energía y financiero) siguen mov. de petróleo",
+    "escenarios": "Traders monitorean: ¿Irán está negociando indirectamente a través de Omán? ¿Es solo maniobra diplomática? ¿Riesgo de escalada persiste?; volatilidad del petróleo probablemente continúe hasta claridad",
+    "riesgos": "Narrativa contradictoria: no es claro quién dice la verdad; 'fuente de la Casa Blanca' no es verificación oficial; comunicados de FARS (agencia estatal iran) pueden ser propaganda"
+   },
+   "macro": {
+    "petroleo": "neutral-bajista (desescalada reduce prima, pero ambigüedad mantiene incertidumbre)",
+    "dolar": "alcista (flight-to-safety por geopolítica)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-28T19:01:39+00:00",
+     "id": "33677",
+     "texto": "El primer ministro Netanyahu reportó que su encuentro con Trump fue 'excelente' y 'una de las mejores conversaciones' entre ambos. Confirmó plena asociación en prevención de armamento nuclear iranί. Conversaciones incluyeron expansión de Acuerdos de Abraham. Fuentes israelíes indican que sitio nuclear 'Pickaxe Mountain' de Irán no fue tema de discusión.",
+     "tgUrl": "https://t.me/walterbloomberg/33677"
+    },
+    {
+     "fecha": "2026-07-28T16:45:10+00:00",
+     "id": "33673",
+     "texto": "Irán reporta a través de IRIB (radio estatal) que no ha buscado negociaciones con Estados Unidos en los últimos 16-17 días. Esto actualiza el panorama de incertidumbre diplomática entre ambas potencias, relevante para volatilidad geopolítica y mercados de energía sensibles a escaladas regionales.",
+     "tgUrl": "https://t.me/walterbloomberg/33673"
+    }
+   ],
+   "actualizado": "2026-07-28T19:01:39+00:00"
+  },
+  {
+   "id": "33676",
+   "fecha": "2026-07-28T19:00:10+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33676",
+   "via": "DeItaone",
+   "original": "IRANIAN FOREIGN MINISTER SAYS HE WAS ASSURED BY UKRAINIAN COUNTERPART THAT ATTACK ON IRANIAN SHIP WAS 'UNINTENTIONAL AND UKRAINE SEEKS NO ESCALATION' IRANIAN FM ARAQCHI: IRAN DOES NOT SEEK ESCALATION EITHER, BUT MADE CLEAR ANY ATTACK ON OUR CITIZENS OR INTERESTS IS UNACCEPTABLE; THERE MUST BE RESTITUTION FOR LOSSES",
+   "titulo": "Irán y Ucrania buscan desescalada tras incidente en barco: restablecimiento de compensación",
+   "resumen": "El ministro de Relaciones Exteriores iraní Araqchi reportó que su homólogo ucraniano le aseguró que el ataque a un buque iranί fue 'no intencional' y que Ucrania no busca escalada. Irán reiteró que no persigue escalada pero exige restitución de pérdidas y rechaza futuros ataques a ciudadanos e intereses iraníes.",
+   "analisis": {
+    "porque": "Reduce riesgo de conflicto regional abierto entre Irán-Ucrania que podría desestabilizar petróleo y mercados de riesgo global. Señal de contención diplomática en teatro de guerra Rusia-Ucrania.",
+    "queOcurrio": "Diálogo entre cancilleres de Irán y Ucrania. Irán recibió 'aseguramiento' de que ataque a barco fue accidental. Ambos países evitaron escenario de represalia directa, aunque Irán condiciona paz a indemnización.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (reproduciendo comunicado oficial iranί)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo Brent",
+    "Petróleo WTI",
+    "Irán (riesgo país)",
+    "USD",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Mercados de riesgo",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran-ucrania",
+    "conflicto-regional",
+    "petroleo",
+    "desescalada",
+    "oriente-medio"
+   ],
+   "tgText": "⚖️ Irán y Ucrania buscan calmar tensiones: canciller ucraniano aseguró que ataque fue accidental. Irán exige compensación pero renuncia a represalia. Presión bajista en petróleo.",
+   "xText": "🛢️ Irán-Ucrania evitan escalada: Teherán acepta explicación de 'accidente' del ataque a barco. Exige compensación pero frena represalias. Alivio geopolítico para crudo. #energy",
+   "discordText": "**Desescalada Irán-Ucrania**\n• Canciller ucraniano aseguró ataque a buque fue 'no intencional'\n• Irán renuncia a represalias inmediatas\n• Condición: restitución de pérdidas + respeto a ciudadanos/intereses\n• Impacto: bajista para petróleo y prima de riesgo geopolítico",
+   "pushText": "Irán y Ucrania desescalan tensión tras incidente en barco. Petróleo bajo presión.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: caída inmediata por alivio de riesgo de bloqueo del Estrecho de Ormuz o represalia que interrumpa exportaciones. Oro también retrocede por menor demanda de refugio.",
+    "despues": "Spread de riesgo soberano iranί se estrecha. Mercados de riesgo (EM, acciones globales) pueden subir por menor tensión geopolítica. USD débil (menor demanda de seguro).",
+    "escenarios": "Traders vigilarán: (1) si Irán efectivamente renuncia a represalias directas, (2) negociación de monto de compensación, (3) reacción de Rusia a esta desescalada, (4) spillover a negociaciones Israel-Palestina.",
+    "riesgos": "Comunicado es unilateral (lado iranί). No hay confirmación de Ucrania publicada en este titular. Riesgo de que desescalada sea temporal o retórica."
+   },
+   "macro": {
+    "petroleo": "bajista por alivio geopolítico",
+    "oro": "bajista por menor refugio",
+    "dolar": "potencial debilitamiento"
+   },
+   "updates": []
+  },
   {
    "id": "33674",
    "fecha": "2026-07-28T18:31:33+00:00",
@@ -78,75 +216,15 @@
     "bonos": "Alcistas si enfría crecimiento; bajistas si hay inflación de costos",
     "petroleo": "Neutral (no mencionado en restricciones)"
    },
-   "updates": []
-  },
-  {
-   "id": "33665",
-   "fecha": "2026-07-28T14:20:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33665",
-   "via": "DeItaone",
-   "original": "U.S., IRAN REMAIN FAR APART DESPITE CEASEFIRE The U.S. and Iran continue to send conflicting signals despite the ceasefire. Trump said Iran requested talks, but Tehran denied seeking negotiations and said no U.S. talks are underway. Iran is instead holding discussions with Oman on the Strait of Hormuz, though officials say the talks are unrelated to the U.S. and remain focused on Iran's security a",
-   "titulo": "Negociaciones EE.UU.-Irán vagas: Trump y Teherán dan señales contradictorias",
-   "resumen": "A pesar del cese de hostilidades, EE.UU. e Irán envían señales conflictivas. Trump afirma que Irán solicitó conversaciones, pero Teherán niega buscar negociaciones bilaterales y asegura que no hay diálogos con EE.UU. en curso. Irán conversa con Omán sobre Estrecho de Ormuz, aunque funcionarios afirman que diálogos son independientes y enfocados en seguridad soberana.",
-   "analisis": {
-    "porque": "Estrecho de Ormuz es paso crítico para 20% del comercio petrolero global; ambigüedad sobre negociaciones genera incertidumbre sobre escalada/desescalada; impacta precios de petróleo y primas de riesgo geopolítico",
-    "queOcurrio": "Trump dijo que Irán pidió negociaciones; Teherán lo negó públicamente. Irán habla con Omán sobre Estrecho de Ormuz pero oficialmente dice que no está relacionado con EE.UU.",
-    "estado": "rumor",
-    "fuenteOriginal": "Trump statement / Reuters / FARS"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "USD",
-    "Bonos",
-    "Renta variable global"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "iran-eeuu-negociaciones",
-    "estrecho-ormuz",
-    "cese-hostilidades",
-    "geopolítica-petróleo",
-    "trump-teherán"
-   ],
-   "tgText": "⚠️ Señales contradictorias EE.UU.-Irán: Trump dice que Irán pidió hablar; Teherán lo niega. Conversaciones con Omán sobre Ormuz pero se niega vínculo con EE.UU. Ambigüedad mantiene prima de riesgo.",
-   "xText": "⚠️ EE.UU.-IRÁN: Trump asegura que Irán pidió negociaciones; Teherán lo rechaza. Conversaciones con Omán en Ormuz son «independientes». Señales contradictorias mantienen incertidumbre.",
-   "discordText": "**AMBIGÜEDAD EE.UU.-IRÁN PERSISTE**\n• Trump: «Irán pidió negociaciones»\n• Teherán: «No buscamos hablar con EE.UU.»\n• Irán conversa con Omán sobre Estrecho de Ormuz\n• Oficial Iran: diálogos «independientes y sobre soberanía»\n• Implicancia: Incertidumbre sobre trayectoria de desescalada\n• Impacto en petróleo: riesgo geopolítico sin claridad",
-   "pushText": "EE.UU.-Irán: señales contradictorias mantienen incertidumbre geopolítica.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo WTI y Brent reaccionan a cambios en percepción de riesgo; si hay dudas, se mantiene prima alcista; si se aclara desescalada, caída",
-    "despues": "USD por flight-to-safety; bonos USA por demanda de seguridad; mercados de renta variable (especialmente energía y financiero) siguen mov. de petróleo",
-    "escenarios": "Traders monitorean: ¿Irán está negociando indirectamente a través de Omán? ¿Es solo maniobra diplomática? ¿Riesgo de escalada persiste?; volatilidad del petróleo probablemente continúe hasta claridad",
-    "riesgos": "Narrativa contradictoria: no es claro quién dice la verdad; 'fuente de la Casa Blanca' no es verificación oficial; comunicados de FARS (agencia estatal iran) pueden ser propaganda"
-   },
-   "macro": {
-    "petroleo": "neutral-bajista (desescalada reduce prima, pero ambigüedad mantiene incertidumbre)",
-    "dolar": "alcista (flight-to-safety por geopolítica)"
-   },
    "updates": [
     {
-     "fecha": "2026-07-28T16:45:10+00:00",
-     "id": "33673",
-     "texto": "Irán reporta a través de IRIB (radio estatal) que no ha buscado negociaciones con Estados Unidos en los últimos 16-17 días. Esto actualiza el panorama de incertidumbre diplomática entre ambas potencias, relevante para volatilidad geopolítica y mercados de energía sensibles a escaladas regionales.",
-     "tgUrl": "https://t.me/walterbloomberg/33673"
+     "fecha": "2026-07-28T18:59:40+00:00",
+     "id": "33675",
+     "texto": "La administración Trump expandirá su orden de restricción a importaciones chinas incluyendo robots humanoides, robots cuadrúpedos e inversores de potencia conectados. Justifica la medida en riesgos de ciberseguridad y seguridad nacional de la cadena de suministro de IA estadounidense, buscando redirigir manufactura hacia EE.UU. ante demanda creciente de infraestructura de IA.",
+     "tgUrl": "https://t.me/walterbloomberg/33675"
     }
    ],
-   "actualizado": "2026-07-28T16:45:10+00:00"
+   "actualizado": "2026-07-28T18:59:40+00:00"
   },
   {
    "id": "33670",
@@ -7459,86 +7537,6 @@
     "ethereum": "neutral-bajista",
     "bonos": "alcista",
     "petroleo": "muy alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": 33528,
-   "fecha": "2026-07-23T21:01:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33528",
-   "original": "US SETS NEW 10%-12.5% TARIFFS AS GLOBAL 10% PENALTY EXPIRES",
-   "titulo": "EE.UU. implementa aranceles de 10%-12,5% tras expiración de penalización global",
-   "resumen": "Estados Unidos ha establecido nuevos aranceles escalonados entre 10% y 12,5% una vez vencida la penalización arancelaria global del 10%. La medida afecta el comercio internacional y amplía la estrategia proteccionista iniciada en julio de 2026. El titular no especifica sectores, cronograma de implementación completo ni países específicamente afectados.",
-   "analisis": {
-    "porque": "Los aranceles estadounidenses impactan directamente el comercio global, los términos de intercambio, la inflación importada y la competitividad de empresas multinacionales. Afecta expectativas de márgenes corporativos y presiones inflacionarias en economías dependientes de exportaciones a EE.UU.",
-    "queOcurrio": "Confirmado que EE.UU. ha establecido nuevos aranceles diferenciados (10%-12,5%) tras la caducidad de una penalización arancelaria global del 10%. Se desconocen detalles de cobertura sectorial y calendario de aplicación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "DXY",
-    "NASDAQ",
-    "S&P500",
-    "EURUSD",
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "Rendimientos USA",
-    "AAPL",
-    "MSFT",
-    "GOOGL",
-    "Indices Latam"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Comercio Internacional",
-   "keywords": [
-    "aranceles",
-    "EE.UU.",
-    "comercio",
-    "proteccionismo",
-    "inflación importada"
-   ],
-   "tgText": "🇺🇸 EE.UU. activa aranceles de 10%-12,5% tras caducar penalización global. Impacto en márgenes corporativos, inflación y divisas. Dólar subirá presionado. #Mercados",
-   "xText": "🚨 EE.UU. implementa aranceles de 10%-12,5% tras expiración de penalización global del 10%. Presión alcista en DXY, riesgo bajista para NASDAQ y sectores exportadores. Vigilar inflación.",
-   "discordText": "**Aranceles EE.UU.: 10%-12,5% tras caducidad de penalización global**\n\n• Nuevos aranceles diferenciados implementados\n• Afecta competitividad multinacional y márgenes\n• Presiones inflacionarias en importadores\n• Sesgo alcista: DXY, oro | Sesgo bajista: NASDAQ, petróleo",
-   "pushText": "EE.UU. activa aranceles 10%-12,5%. Alto impacto en comercio y mercados.",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "DXY (índice dólar) subirá por reflejo de proteccionismo estadounidense y expectativa de menor crecimiento global; simultáneamente NASDAQ bajo presión por caída de exportadores tech.",
-    "despues": "Pares EURUSD, GBPUSD caerían vs USD fortalecido; materias primas (petróleo, cobre) bajo presión por temor a demanda débil; bonos a 10Y podrían repreciarse según inflación importada vs deflación por menor crecimiento.",
-    "escenarios": "Traders monitorean: (1) Represalias comerciales que escalen la guerra arancelaria, (2) Impacto en earnings de multinacionales (importadores netos), (3) Si aranceles impulsan inflación importada o si temor a recesión domina, (4) Comportamiento de commodities como indicador de demanda global.",
-    "riesgos": "El titular no especifica cobertura sectorial ni cronograma completo; riesgo de sorpresas en implementación. Posible que anuncio completo aún no se haya revelado. Reacción puede amplificarse si se percibe como inicio de nueva escalada arancelaria."
-   },
-   "macro": {
-    "dolar": "Alcista a corto plazo",
-    "oro": "Alcista (resguardo de incertidumbre)",
-    "nasdaq": "Bajista (presión en exportadores tech)",
-    "dow": "Mixto (defensivos favorecidos)",
-    "sp500": "Bajista moderado (sesgo defensivo)",
-    "bitcoin": "Volátil (cobertura vs inflación vs riesgo de recesión)",
-    "ethereum": "Presión similar a NASDAQ",
-    "bonos": "Volátiles (equilibrio inflación vs crecimiento)",
-    "petroleo": "Bajista (temor a demanda débil)"
    },
    "updates": []
   }
