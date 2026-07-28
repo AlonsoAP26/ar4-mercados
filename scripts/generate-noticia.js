@@ -209,11 +209,18 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
   for (let intento = 0; intento < 8; intento++) {
     data = await callApi(apiKey, {
       model: 'claude-sonnet-5',
-      // 32k, no 16k: el pensamiento adaptativo se comio 15.692 tokens del
-      // presupuesto de 16.000 en el fallo del 28/jul y dejo al JSON de la
-      // noticia sin sitio para cerrarse. Solo se factura lo que se usa.
+      // max_tokens es el tope de PENSAMIENTO + RESPUESTA juntos, y el
+      // pensamiento adaptativo se sirve primero. El 28/jul se comio 15.692 de
+      // 16.000 y la noticia quedo sin sitio; al subir el tope a 32.000 el
+      // pensamiento crecio hasta 32.570 y volvio a cortarse (max_tokens).
+      // Subir el tope solo no arregla nada: hay que limitar la profundidad.
       max_tokens: 32000,
       thinking: { type: 'adaptive' },
+      // El lever real. En claude-sonnet-5 ya no existe budget_tokens (da 400);
+      // la profundidad se controla con effort, que por defecto es "high" — y
+      // ese default era el que se comia el presupuesto entero. Con "medium"
+      // el pensamiento se acota y deja sitio de sobra para el JSON.
+      output_config: { effort: 'medium' },
       // Busqueda web del lado del servidor: el modelo lee noticias reales y
       // devuelve las URLs de donde salieron. Sin esto escribiria de memoria.
       // max_uses 10: con 6 el modelo agotaba el cupo y seguia intentando
