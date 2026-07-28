@@ -1,68 +1,7 @@
 {
- "lastId": 33653,
- "actualizado": "2026-07-28T11:38:21.106Z",
+ "lastId": 33663,
+ "actualizado": "2026-07-28T13:18:55.876Z",
  "items": [
-  {
-   "id": "33652",
-   "fecha": "2026-07-28T11:31:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33652",
-   "via": "DeItaone",
-   "original": "$BA - BOEING MISSES EPS, REVENUE BEATS AS FCF TURNS POSITIVE Results *Adj. EPS: -$0.76 vs. -$0.30 est. ❌ *Revenue: $24.56B vs. $24.25B est. ✅ *Free Cash Flow: $631M *Backlog: $715B Operations *737 production transitioning to 47 aircraft/month. *777X: First delivery still expected in 2027. *737-7/10: Certification expected in 2026, first deliveries in 2027. Notable *Q2 included a $280M loss on the ",
-   "titulo": "Boeing pierde en EPS pero supera ingresos; flujo de caja vira positivo a $631M",
-   "resumen": "Boeing reportó EPS ajustado de -$0,76 (vs. -$0,30 esperado, miss), pero ingresos de $24,56B superaron proyección de $24,25B. El flujo de caja libre fue positivo en $631M. La producción de 737 transita a 47 aviones/mes; 777X se espera entregar en 2027. Q2 incluyó pérdida de $280M en programa del Air Force One.",
-   "analisis": {
-    "porque": "Miss en EPS más profundo de lo esperado refleja presiones de costos y provisiones; FCF positivo es señal de estabilización operacional; vista a largo plazo depende de normalización de 737 y 777X; relevante para inversores en defensa/aeroespacial",
-    "queOcurrio": "Boeing reportó EPS ajustado -$0,76 (worse than expected miss -$0,30); ingresos $24,56B (beat); FCF $631M positivo; 737 en ramp a 47 unidades/mes",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "BA",
-    "Defensa/Aeroespacial",
-    "S&P500",
-    "Bonos Corporativos"
-   ],
-   "sesgos": [
-    {
-     "activo": "BA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Defensa/Aeroespacial",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Boeing",
-    "earnings",
-    "Q2",
-    "737",
-    "777X",
-    "Air Force One",
-    "flujo caja",
-    "pérdida"
-   ],
-   "tgText": "Boeing: EPS -$0,76 vs -$0,30 est (miss peor). Ingresos beat $24,56B. FCF positivo $631M. 737 ramp a 47/mes; 777X en 2027. Pérdida AF1 de $280M presiona.",
-   "xText": "📊 BA: Q2 EPS -$0,76 (miss), ingresos $24,56B (beat). FCF +$631M positivo. 737→47/mes, 777X 2027. Pérdida AF1 $280M. Recuperación lenta pero con aire.",
-   "discordText": "**Boeing: miss en EPS pero flujo de caja vira positivo**\n• EPS: -$0,76 vs -$0,30 est ❌ (miss peor)\n• Ingresos: $24,56B vs $24,25B ✅\n• FCF: +$631M (positivo)\n• 737: ramp a 47/mes\n• Nota: Pérdida AF1 de $280M\n→ Recuperación lenta, no sin frenos",
-   "pushText": "Boeing: EPS miss -$0,76 pero FCF positivo; 737 sigue ramp",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "BA en apertura; miss más profundo podría generar volatilidad en defensa/aeroespacial",
-    "despues": "S&P500 (peso modesto), bonos corporativos de BA (yield bajo presión si credit spread sube), contratistas de defensa (RTX, LMT, NOC, GD)",
-    "escenarios": "Traders vigilan: (1) Si FCF positivo marca inflexión duradera o es transitorio; (2) timeline realista de ramp de 737 a 50+/mes; (3) si 777X delivery en 2027 es alcanzable o pospuesto; (4) exposición de BA a restricciones comerciales chinas; (5) cobertura de costos en programas de defensa (AF One, KC-46)",
-    "riesgos": "EPS negativo continúa; provisiones podrían ampliarse si nuevos problemas emergen en cadena de suministro; 777X retrasos históricos"
-   },
-   "macro": {
-    "sp500": "neutral a bajista leve",
-    "bonos": "neutral"
-   },
-   "updates": []
-  },
   {
    "id": "33651",
    "fecha": "2026-07-28T11:02:24+00:00",
@@ -126,6 +65,368 @@
     "nasdaq": "alcista",
     "bonos": "neutral",
     "bitcoin": "neutral (fintech, no cripto-específico)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-28T12:21:08+00:00",
+     "id": "33663",
+     "texto": "El CEO de PayPal respondió a reportes de interés de adquisición afirmando que \"no comentamos sobre especulación de mercado\". Este comentario llega después del anuncio reciente de PayPal de superar expectativas de earnings y elevar guidance de año fiscal, además de activar programa de recompra por $6B.",
+     "tgUrl": "https://t.me/walterbloomberg/33663"
+    }
+   ],
+   "actualizado": "2026-07-28T12:21:08+00:00"
+  },
+  {
+   "id": "33662",
+   "fecha": "2026-07-28T12:20:52+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33662",
+   "via": "DeItaone",
+   "original": "U.S. PRIVATE HIRING SLOWS FOR FIFTH STRAIGHT WEEK ADP data showed U.S. private employers added an average of 15,000 jobs per week in the four weeks ending July 11, marking a fifth consecutive weekly slowdown. Hiring has fallen from 35,750 in early May to 15,000, signaling continued cooling in the labor market ahead of upcoming employment reports.",
+   "titulo": "Contratación privada en EE.UU. se desacelera por quinta semana consecutiva; ADP toca 15k promedio",
+   "resumen": "Datos de ADP muestran que empleadores privados en EE.UU. agregaron un promedio de 15.000 empleos por semana en las cuatro semanas hasta el 11 de julio. Representa quinta semana consecutiva de caída, con contrataciones cayendo desde 35.750 en principios de mayo. Señal de enfriamiento laboral antes de reportes de empleo próximos.",
+   "analisis": {
+    "porque": "Crítico para narrativa de Reserva Federal: si el mercado laboral se enfría más rápido de lo esperado, reduce presión inflacionaria pero aumenta riesgo de recesión. Afecta expectativas de tasas y valuaciones de renta variable.",
+    "queOcurrio": "ADP reportó contratación privada promedio de 15k jobs/semana (4 semanas hasta 11 julio), quinta caída consecutiva desde 35,75k en mayo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "DXY",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empleo",
+   "keywords": [
+    "ADP",
+    "empleo",
+    "mercado laboral",
+    "contratación",
+    "enfriamiento"
+   ],
+   "tgText": "💼 ADP: contratación privada en mínimo de 15k promedio semanal; quinta caída consecutiva desde 35,75k en mayo. Enfriamiento laboral preocupante.",
+   "xText": "ADP: contratación privada USA promedio 15k/semana (caída 5ª semana). Cayó 57% desde mayo. Mercado laboral enfría rápido; presión sobre Fed para pausar.",
+   "discordText": "**EMPLEO - Contratación Privada se Desmorona**\n• ADP: 15k jobs/semana promedio (4 sem. hasta 11 jul)\n• Quinta semana de caídas consecutivas\n• Bajó de 35,75k en mayo (caída 57%)\n• Señal de enfriamiento acelerado\n• Impacto: reduce presión inflacionaria, aumenta riesgo recesión",
+   "pushText": "ADP: contratación privada en mínimo; 5ª semana de caídas consecutivas",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Bonos USA deberían fortalecerse (yields al alza) interpretándose como señal de debilitamiento laboral que pospone alza de tasas. DXY podría caer si el mercado anticipa reducción de tasas en más adelante.",
+    "despues": "Acciones defensivas (utilidades, consumo de bienes) podrían superar a cíclicas. Tecnología podría subir si bonos caen en yields.",
+    "escenarios": "Traders vigilan: (1) próximo Non-Farm Payroll (NFP) oficial en primer viernes de agosto para confirmar; (2) narrativa de Fed sobre sostenibilidad laboral; (3) si caída continúa, aumenta probabilidad de rate cuts antes de fin de 2026.",
+    "riesgos": "ADP históricamente tiene divergencias con NFP oficial. Si NFP sorprende al alza, mercado descartará este dato."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "alcista",
+    "nasdaq": "neutral",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "alcista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33661",
+   "fecha": "2026-07-28T12:18:43+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33661",
+   "via": "DeItaone",
+   "original": "BOFA: JULY FED RATE HIKE WOULD BE UNPRECEDENTED BofA expects the Fed to hold rates in July, despite markets pricing a small chance of a hike. The bank says a July increase would be unprecedented, noting the Fed has never hiked since 1994 with less than 60% odds priced in. BofA sees higher oil prices as the main inflation risk and remains bullish on the U.S. dollar.",
+   "titulo": "BofA descarta suba de tasas en julio; advierte sobre riesgos de petróleo para inflación",
+   "resumen": "Bank of America espera que la Fed mantenga tasas en julio, a pesar del pequeño pricing de alza de mercados. BofA señala que una suba en julio sería \"sin precedentes\" dado que la Fed nunca ha alzado desde 1994 con probabilidades menores al 60%. El banco identifica precios de petróleo elevados como principal riesgo inflacionario y mantiene postura alcista en el dólar.",
+   "analisis": {
+    "porque": "Altamente relevante para bonos, divisas y expectativas de política monetaria. Redimensiona el \"ruido\" de mercados sobre suba de julio y refuerza narrativa de pausa. Comenta sobre dólar y materias primas.",
+    "queOcurrio": "BofA emitió view: Fed pausará en julio; advierte sobre petróleo como factor inflacionario; mantiene bullish en USD.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Rendimientos USA",
+    "DXY",
+    "Petróleo",
+    "Bonos",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "tasas de interés",
+    "julio",
+    "BofA",
+    "petróleo",
+    "dólar"
+   ],
+   "tgText": "📊 BofA descarta alza de tasas en julio (precedentes lo respaldan). Riesgo inflacionario = petróleo. Bullish en USD. Releva debate de mercados.",
+   "xText": "BofA: Fed pausará en julio (sin precedentes alza desde 1994 con <60% odds). Petróleo = riesgo inflacionario clave. Bullish USD. Redimensiona narrativa.",
+   "discordText": "**FED - Pausa en Julio Confirmada por BofA**\n• Fed esperada mantener tasas en julio\n• Suba sería \"sin precedentes\" por odds <60%\n• Riesgo inflacionario = petróleo elevado\n• BofA: bullish en dólar\n• Refuerza expectativa de pausa",
+   "pushText": "BofA descarta alza de Fed en julio; petróleo es riesgo inflacionario",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Bonos USA y USD deberían fortalecerse si el mercado asimila descuento de alza de julio. DXY podría presionarse al alza.",
+    "despues": "Equities podrían reaccionar al alza si se interpreta como entorno rates-friendly. Petróleo podría presionarse a baja si mercado cree que Fed no se verá forzada a ser más agresiva.",
+    "escenarios": "Traders monitorean: (1) próximos datos de PCE/inflación (si sorprenden al alza, BofA podría cambiar tesis); (2) precio del petróleo en próximas 2 semanas; (3) próximo FOMC 31-julio-2026.",
+    "riesgos": "Si petróleo sube bruscamente o inflación sorprende al alza, BofA estaría equivocado. Narrativa depende de datos inminentes."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "neutral",
+    "nasdaq": "neutral a alcista",
+    "dow": "neutral a alcista",
+    "sp500": "neutral a alcista",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "alcista",
+    "petroleo": "bajista (según BofA)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33660",
+   "fecha": "2026-07-28T12:17:55+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33660",
+   "via": "DeItaone",
+   "original": "$KLAR - APPLE LAUNCHES KLARNA DEVICE LEASING PROGRAM IN U.S. Apple launched Apple Upgrade, a new U.S. leasing program with Klarna covering iPhone, Apple Watch, Mac, and iPad. Customers can upgrade, buy, or return devices at lease-end, while Apple Card users earn 3% Daily Cash. Apple is discontinuing its iPhone Upgrade Program and iPhone Payments in the U.S. as the new leasing option replaces them.",
+   "titulo": "Klarna se asegura como socio oficial de leasing de dispositivos Apple en EE.UU.",
+   "resumen": "Klarna fue seleccionada como partner exclusivo para el nuevo programa \"Apple Upgrade\" en Estados Unidos. El acuerdo cubre arrendamientos de iPhone, Apple Watch, Mac e iPad. Clientes con Apple Card ganan 3% en Daily Cash. Klarna reemplaza programas previos de financiamiento de Apple.",
+   "analisis": {
+    "porque": "Altamente positivo para Klarna: acceso exclusivo a base masiva de usuarios Apple (200M+ iPhones en EE.UU.), validación empresarial de su modelo de BNPL a escala, y visibilidad en conversión de compra.",
+    "queOcurrio": "Klarna fue designado como socio exclusivo para programa de leasing de Apple Upgrade en EE.UU.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "KLAR",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "KLAR",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Klarna",
+    "Apple",
+    "BNPL",
+    "leasing",
+    "financiamiento"
+   ],
+   "tgText": "📲 Klarna asegurado como partner exclusivo de Apple Upgrade en EE.UU. Acceso a base masiva de usuarios Apple. Validación empresarial de BNPL.",
+   "xText": "Klarna es partner exclusivo de Apple Upgrade: acceso a base masiva de iPhone users en EE.UU. para leasing de dispositivos. Catalizador clave para BNPL.",
+   "discordText": "**KLAR - Partnership Estratégico con Apple**\n• Klarna = socio exclusivo de Apple Upgrade (leasing)\n• Alcance a 200M+ usuarios de iPhone en EE.UU.\n• Refuerza posición de Klarna en BNPL a escala\n• Validación empresarial; potencial upside en volume",
+   "pushText": "Klarna se asegura como partner exclusivo de leasing Apple en EE.UU.",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "KLAR debería reaccionar al alza: validación de modelo de BNPL a escala, acceso a base de usuarios ultra-masiva, y control de experiencia financiera en punto de venta.",
+    "despues": "Competidores de BNPL (AFRM, UPST) podrían caer en comparación. Acciones de bancos tradiciones (depósitos de Apple Card transfers) podrían presionarse levemente.",
+    "escenarios": "Traders monitorean: (1) volumen de conversión a leasing vs. compura outright; (2) tasa de default en cartera de Klarna; (3) rentabilidad del acuerdo para Klarna (márgenes); (4) señal de competencia con Square/Block.",
+    "riesgos": "Acuerdo podría incluir subsidy de tasas que presione márgenes de Klarna. Riesgo de concentración de crédito en single customer (Apple). Si defaults suben, impacto reputacional."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33658",
+   "fecha": "2026-07-28T12:16:08+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33658",
+   "via": "DeItaone",
+   "original": "$AAPL - APPLE REVAMPS DEVICE FINANCING WITH NEW LEASING PROGRAM Apple launched its new Apple Upgrade leasing program in the U.S. through Klarna, offering iPhones from $17.99/month and Apple Watches from $11.99/month. The program includes 12–24 month leases for iPhone/Watch and 24–36 months for Mac/iPad. Apple is also discontinuing its iPhone Upgrade Program and iPhone Payments in the U.S.",
+   "titulo": "Apple relanza financiamiento de dispositivos con programa de leasing vía Klarna",
+   "resumen": "Apple lanzó su nuevo programa \"Apple Upgrade\" en EE.UU., ofreciendo arrendamientos de 12–36 meses para iPhone, Apple Watch, Mac e iPad vía Klarna. Los iPhones comienzan desde $17,99/mes, Apple Watches desde $11,99/mes. Apple descontinuó sus programas de upgrade e pagos previos de iPhone.",
+   "analisis": {
+    "porque": "Cambio estratégico en monetización de hardware: pasar de compra a modelo de suscripción/leasing genera ingresos recurrentes y vincula más a clientes. Positivo para márgenes recurrentes pero podría presionar ventas unitarias de iPhone en corto plazo.",
+    "queOcurrio": "Apple anunció nuevo programa de leasing de dispositivos en asociación con Klarna, discontinuando opciones previas de financiamiento.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "AAPL",
+    "NASDAQ",
+    "KLAR"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAPL",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "KLAR",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Apple",
+    "leasing",
+    "Klarna",
+    "iPhone",
+    "modelo de suscripción"
+   ],
+   "tgText": "📱 Apple relanza financiamiento: nuevos arrendamientos vía Klarna desde $17,99/mes (iPhone). Descontinúa Upgrade Program. Shift a modelo recurrente.",
+   "xText": "Apple lanza programa Apple Upgrade con Klarna: arrendamientos de iPhone desde $17,99/mes. Discontinúa iPhone Upgrade Program. Estrategia de ingresos recurrentes.",
+   "discordText": "**AAPL - Nuevo Programa de Leasing**\n• Lanzamiento de \"Apple Upgrade\" vía Klarna en EE.UU.\n• iPhone: $17,99–$45,99/mes (12–24 meses)\n• Descontinúa Upgrade Program anterior\n• Beneficio para KLAR; potencial presión en ventas unitarias de AAPL",
+   "pushText": "Apple lanza leasing de dispositivos vía Klarna; descontinúa Upgrade Program",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "AAPL podría experimentar volatilidad: mercado valora ingresos recurrentes pero teme erosión de demanda unitaria de iPhone en corto plazo. KLAR debería reaccionar al alza.",
+    "despues": "Competidores de fintech de consumo (SQ, PYPL) podrían considerarse si ven presión en su base de usuarios. Acciones de retail electrónico podrían caer levemente si se interpreta como reducción de compras de reemplazo.",
+    "escenarios": "Traders monitorean: (1) impacto en ASP (average selling price) reportado en próximos earnings; (2) adopción del programa vs. expectativas; (3) implicancia para márgenes de servicios de Apple.",
+    "riesgos": "Modelo de leasing históricamente tiene mayores tasas de default; Klarna enfrenta presiones de rentabilidad. Cambio podría fragmentar cliente base."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33654",
+   "fecha": "2026-07-28T11:38:00+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33654",
+   "via": "DeItaone",
+   "original": "$TSLA - TESLA TO BUY POWER FROM KKR-BACKED ARIZONA SOLAR, BATTERY PLANT",
+   "titulo": "Tesla firma acuerdo de energía solar con planta de baterías respaldada por KKR",
+   "resumen": "Tesla acordó comprar energía de una instalación solar y batería en Arizona respaldada por el fondo KKR. El acuerdo refleja la estrategia de Tesla de asegurar suministros de energía renovable para sus operaciones de manufactura. El titular no especifica términos financieros ni duración del contrato.",
+   "analisis": {
+    "porque": "Relevante para inversores de Tesla por su implicancia en costos operativos, estrategia de sustentabilidad y seguridad energética de la gigafactoría de Arizona.",
+    "queOcurrio": "Tesla acordó comprar poder de una planta solar y de baterías respaldada por KKR en Arizona.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "TSLA",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "TSLA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Tesla",
+    "energía renovable",
+    "Arizona",
+    "KKR",
+    "costos operativos"
+   ],
+   "tgText": "🔋 Tesla asegura suministro de energía solar en Arizona mediante acuerdo con planta respaldada por KKR. Estrategia de sustentabilidad en manufactura.",
+   "xText": "Tesla firma acuerdo de energía renovable en Arizona con planta respaldada por KKR. Movimiento estratégico para asegurar costos de energía en gigafactoría.",
+   "discordText": "**TSLA - Acuerdo Energético en Arizona**\n• Tesla compra energía solar de planta respaldada por KKR\n• Refuerza estrategia de energías renovables\n• Implicancia en costos operativos de manufactura",
+   "pushText": "Tesla asegura energía solar en Arizona vía KKR",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "TSLA podría reaccionar al alza en corto plazo ante estrategia de reducción de costos energéticos.",
+    "despues": "Acciones de energías renovables y proveedores de baterías podrían seguir si se interpreta como mayor demanda.",
+    "escenarios": "Traders monitorean: (1) implicancia en márgenes operativos; (2) síntoma de presión de costos en Arizona; (3) validación de estrategia de integración vertical energética.",
+    "riesgos": "El título no detalla si los términos son comercialmente favorables; contrato podría estar disponible públicamente solo tras 8-K."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33652",
+   "fecha": "2026-07-28T11:31:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33652",
+   "via": "DeItaone",
+   "original": "$BA - BOEING MISSES EPS, REVENUE BEATS AS FCF TURNS POSITIVE Results *Adj. EPS: -$0.76 vs. -$0.30 est. ❌ *Revenue: $24.56B vs. $24.25B est. ✅ *Free Cash Flow: $631M *Backlog: $715B Operations *737 production transitioning to 47 aircraft/month. *777X: First delivery still expected in 2027. *737-7/10: Certification expected in 2026, first deliveries in 2027. Notable *Q2 included a $280M loss on the ",
+   "titulo": "Boeing pierde en EPS pero supera ingresos; flujo de caja vira positivo a $631M",
+   "resumen": "Boeing reportó EPS ajustado de -$0,76 (vs. -$0,30 esperado, miss), pero ingresos de $24,56B superaron proyección de $24,25B. El flujo de caja libre fue positivo en $631M. La producción de 737 transita a 47 aviones/mes; 777X se espera entregar en 2027. Q2 incluyó pérdida de $280M en programa del Air Force One.",
+   "analisis": {
+    "porque": "Miss en EPS más profundo de lo esperado refleja presiones de costos y provisiones; FCF positivo es señal de estabilización operacional; vista a largo plazo depende de normalización de 737 y 777X; relevante para inversores en defensa/aeroespacial",
+    "queOcurrio": "Boeing reportó EPS ajustado -$0,76 (worse than expected miss -$0,30); ingresos $24,56B (beat); FCF $631M positivo; 737 en ramp a 47 unidades/mes",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "BA",
+    "Defensa/Aeroespacial",
+    "S&P500",
+    "Bonos Corporativos"
+   ],
+   "sesgos": [
+    {
+     "activo": "BA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Defensa/Aeroespacial",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Boeing",
+    "earnings",
+    "Q2",
+    "737",
+    "777X",
+    "Air Force One",
+    "flujo caja",
+    "pérdida"
+   ],
+   "tgText": "Boeing: EPS -$0,76 vs -$0,30 est (miss peor). Ingresos beat $24,56B. FCF positivo $631M. 737 ramp a 47/mes; 777X en 2027. Pérdida AF1 de $280M presiona.",
+   "xText": "📊 BA: Q2 EPS -$0,76 (miss), ingresos $24,56B (beat). FCF +$631M positivo. 737→47/mes, 777X 2027. Pérdida AF1 $280M. Recuperación lenta pero con aire.",
+   "discordText": "**Boeing: miss en EPS pero flujo de caja vira positivo**\n• EPS: -$0,76 vs -$0,30 est ❌ (miss peor)\n• Ingresos: $24,56B vs $24,25B ✅\n• FCF: +$631M (positivo)\n• 737: ramp a 47/mes\n• Nota: Pérdida AF1 de $280M\n→ Recuperación lenta, no sin frenos",
+   "pushText": "Boeing: EPS miss -$0,76 pero FCF positivo; 737 sigue ramp",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "BA en apertura; miss más profundo podría generar volatilidad en defensa/aeroespacial",
+    "despues": "S&P500 (peso modesto), bonos corporativos de BA (yield bajo presión si credit spread sube), contratistas de defensa (RTX, LMT, NOC, GD)",
+    "escenarios": "Traders vigilan: (1) Si FCF positivo marca inflexión duradera o es transitorio; (2) timeline realista de ramp de 737 a 50+/mes; (3) si 777X delivery en 2027 es alcanzable o pospuesto; (4) exposición de BA a restricciones comerciales chinas; (5) cobertura de costos en programas de defensa (AF One, KC-46)",
+    "riesgos": "EPS negativo continúa; provisiones podrían ampliarse si nuevos problemas emergen en cadena de suministro; 777X retrasos históricos"
+   },
+   "macro": {
+    "sp500": "neutral a bajista leve",
+    "bonos": "neutral"
    },
    "updates": []
   },
@@ -7302,357 +7603,6 @@
     "petroleo": "alcista muy fuerte (+4-8% esperado)"
    },
    "updates": []
-  },
-  {
-   "id": 33519,
-   "fecha": "2026-07-22T18:39:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33519",
-   "original": "U.S. INVESTIGATING WHETHER RUSSIA ASSISTED IRANIAN DRONE ATTACKS ON CIA SITES IN GULF: SOURCES",
-   "titulo": "EE.UU. investiga si Rusia asistió ataques de drones iraníes contra bases de la CIA",
-   "resumen": "Fuentes estadounidenses indican que el Gobierno investiga si Rusia proporcionó asistencia a Irán para coordinación de ataques de drones contra sitios de la CIA en el Golfo Pérsico. La investigación examina posible colaboración entre Moscú y Teherán en operaciones militares recientes, lo que ampliaría la escalada geopolítica más allá del eje EE.UU.-Irán.",
-   "analisis": {
-    "porque": "Evidencia de coordinación Rusia-Irán elevaría significativamente el riesgo sistémico global, afectando primas de riesgo geopolítico, precios de energía y mercados emergentes",
-    "queOcurrio": "Fuentes del Gobierno estadounidense revelan investigación sobre posible asistencia rusa a operaciones de drones iraníes contra objetivos de inteligencia estadounidense en el Golfo",
-    "estado": "rumor",
-    "fuenteOriginal": "Fuentes estadounidenses (no nombradas)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "S&P500",
-    "NASDAQ",
-    "Oro",
-    "Bonos",
-    "Rublo",
-    "Mercados Emergentes"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Rusia",
-    "Irán",
-    "CIA",
-    "drones",
-    "escalada geopolítica",
-    "Golfo Pérsico"
-   ],
-   "tgText": "🚨 EE.UU. investiga posible asistencia rusa a ataques de drones iraníes contra bases de la CIA en el Golfo. Escalada geopolítica a nivel Rusia-Irán elevaría volatilidad en petróleo y mercados.",
-   "xText": "⚠️ Fuentes: EE.UU. investiga si Rusia asistió ataques de drones iraníes contra sitios de la CIA. Coordinación Moscú-Teherán ampliaría significativamente riesgo sistémico global. Vigilar petróleo y DXY.",
-   "discordText": "**Escalada geopolítica crítica**\n• EE.UU. investiga asistencia rusa a operaciones de drones iraníes\n• Objetivo: bases de la CIA en Golfo Pérsico\n• Implicación: coordinación Rusia-Irán elevaría riesgos sistémicos\n• Impacto esperado: petróleo, dólar, bonos USA",
-   "pushText": "Investigación: Rusia habría asistido ataques de drones de Irán contra CIA",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent) sube por cierre potencial de Hormuz y suministros; DXY sube por flight-to-safety",
-    "despues": "Oro como refugio; bonos USA (rendimientos caen); mercados emergentes ceden; Rublo bajo presión; acciones de energía volátiles",
-    "escenarios": "Traders vigilarán: (1) Confirmación oficial vs. descarte de coordinación Rusia-Irán; (2) Respuesta militar estadounidense inmediata; (3) Cierre del Estrecho de Hormuz (30% del petróleo mundial); (4) Declaraciones de Kremlin sobre negación/justificación",
-    "riesgos": "Titular basado en 'fuentes anónimas' sin confirmación oficial; escalada rápida si se verifica; posible sobrereacción inicial seguida de consolidación"
-   },
-   "macro": {
-    "dolar": "alcista (flight-to-safety, primas de riesgo)",
-    "oro": "alcista (refugio)",
-    "nasdaq": "bajista (riesgo sistémico)",
-    "dow": "bajista",
-    "sp500": "bajista",
-    "bitcoin": "mixto (hedge vs. riesgo sistémico)",
-    "ethereum": "mixto",
-    "bonos": "alcistas (rendimientos caen)",
-    "petroleo": "alcista muy fuerte (+3-5% inicial esperado)"
-   },
-   "updates": []
-  },
-  {
-   "id": 33516,
-   "fecha": "2026-07-22T16:54:07+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33516",
-   "original": "SENATE CRYPTO BILL HEADS FOR SHOWDOWN Senate Republicans released updated text of the Clarity Act ahead of a possible vote next week. The draft adds White House-backed crypto ethics rules, but no Democrats have endorsed them. GOP leaders are pushing ahead, while bipartisan support remains uncertain as disputes over enforcement and conflicts of interest persist.",
-   "titulo": "Proyecto de ley cripto republicano avanza hacia votación sin apoyo demócrata",
-   "resumen": "El Senado de EE.UU. publicó el texto actualizado de la Clarity Act con reglas de ética cripto respaldadas por la Casa Blanca. Los líderes republicanos impulsan una votación posible la próxima semana, pero el apoyo bipartidista sigue incierto. Persisten disputas sobre aplicación normativa y conflictos de interés que podrían bloquear su aprobación.",
-   "analisis": {
-    "porque": "La regulación cripto es un catalizador crítico para Bitcoin, Ethereum y mercados digitales. Una Clarity Act aprobada aclararía el marco legal en EE.UU. acelerando adopción institucional; su rechazo generaría volatilidad y posible corrección. La falta de apoyo demócrata reduce probabilidades de sanción.",
-    "queOcurrio": "Republicanos circularon versión revisada del proyecto que incorpora estándares de ética respaldados por Casa Blanca, pero ningún demócrata lo respalda aún. Se espera votación en el Senado próxima semana con resultado incierto.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bitcoin",
-    "Ethereum",
-    "Criptomonedas",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bitcoin",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Ethereum",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Criptomonedas",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "clarity-act",
-    "regulacion-cripto",
-    "senado-usa",
-    "bitcoin",
-    "ethereum",
-    "politica-cripto"
-   ],
-   "tgText": "📋 REGULACIÓN CRIPTO | Senado republicano avanza con Clarity Act pero sin apoyo demócrata. Votación posible la próxima semana. Marco legal incierto presiona volatilidad en Bitcoin y Ethereum.",
-   "xText": "🔗 Republicanos empujan Clarity Act en el Senado con reglas de ética respaldadas por Casa Blanca, pero demócratas aún no respaldan. Votación podría ocurrir próxima semana. Resultado incierto para Bitcoin/Ethereum.",
-   "discordText": "**CLARITY ACT EN VOTACIÓN**\n• GOP circuló texto actualizado con reglas de ética cripto\n• Casa Blanca respalda, pero cero apoyo demócrata\n• Votación posible próxima semana\n• Impacto: volatilidad en BTC/ETH por incertidumbre regulatoria",
-   "pushText": "Senado vota Clarity Act cripto sin apoyo demócrata",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bitcoin y Ethereum reaccionan primero: aprobación = rallye alcista (menor incertidumbre regulatoria); rechazo = corrección por riesgo político.",
-    "despues": "Altcoins siguen movimiento BTC/ETH. NASDAQ y S&P500 podrían reaccionar si se interpreta como riesgo político más amplio.",
-    "escenarios": "Traders vigilarán: (1) Si hay cambios en texto que atraigan demócratas; (2) Timing de votación; (3) Señales de Casa Blanca sobre presión en senadores republicanos; (4) Reacciones de exchanges y criptocapitalistas.",
-    "riesgos": "El titular no especifica qué disputas técnicas persisten. Riesgo de votación fallida última hora si coalición se fractura. Impacto potencial limitado si votación se pospone indefinidamente."
-   },
-   "macro": {
-    "bitcoin": "sesgo alcista moderado por expectativa de marco legal; riesgo a la baja si votación fracasa",
-    "ethereum": "similar a Bitcoin",
-    "nasdaq": "efecto marginal; sensible si votación fracasa y genera narrativa de caos político",
-    "dolar": "neutral a corto plazo",
-    "bonos": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": 33515,
-   "fecha": "2026-07-22T16:31:46+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33515",
-   "original": "IRAN THREATENS ENERGY SITES IF US HITS POWER PLANTS: TASNIM",
-   "titulo": "Irán amenaza con atacar infraestructura energética si EE.UU. golpea plantas de energía",
-   "resumen": "Irán advierte represalias contra sitios de energía estadounidenses en caso de que Washington ataque instalaciones energéticas iraníes. La amenaza se produce en el contexto de creciente escalada militar entre ambos países, tras advertencias previas de Trump sobre ataques inminentes a Irán. El titular no especifica plazos ni si se refiere a infraestructura civil o militar.",
-   "analisis": {
-    "porque": "Escalada geopolítica directa con potencial de interrumpir suministros energéticos globales, afectando precios de petróleo, tasas de riesgo y volatilidad en mercados de renta variable.",
-    "queOcurrio": "Agencia Tasnim (cercana a autoridades iraníes) reporta amenaza explícita de represalias contra infraestructura energética estadounidense si hay ataques previos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Tasnim (agencia oficial iraní)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "S&P500",
-    "NASDAQ",
-    "Oro",
-    "Bonos",
-    "Rendimientos USA",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "escalada militar",
-    "represalias",
-    "infraestructura energética",
-    "Trump",
-    "Medio Oriente"
-   ],
-   "tgText": "🔴 Irán amenaza represalias contra infraestructura energética estadounidense si hay ataques previos a plantas iraníes. Escalada directa eleva riesgo de interrupciones globales de suministro. Petróleo en máximos.",
-   "xText": "🔴 IRAN AMENAZA REPRESALIAS: Irán advierte atacar infraestructura energética de EE.UU. si Washington golpea instalaciones de energía. Escalada directa en riesgo geopolítico. Petróleo alcista, acciones bajo presión.",
-   "discordText": "**Irán amenaza represalias energéticas contra EE.UU.**\n• Tasnim reporta advertencia de ataques a infraestructura si hay ataques previos\n• Escalada directa entre Washington y Teherán\n• **Mercados**: Petróleo sube, acciones caen, volatilidad extrema",
-   "pushText": "Irán amenaza represalias contra infraestructura energética estadounidense",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent) sube inmediatamente por riesgo de interrupción de suministro en Golfo Pérsico; DXY sube por busca de seguridad en dólar.",
-    "despues": "Índices de renta variable (S&P500, NASDAQ) caen por aversión al riesgo; bonos de largo plazo bajan (rendimientos suben) por demanda de seguridad; oro sube por cobertura.",
-    "escenarios": "Traders vigilan: (1) confirmación de ataques inminentes, (2) respuesta militar israelí/estadounidense, (3) cierre de Estrecho de Ormuz, (4) retirada de plataformas petroleras, (5) negociaciones diplomáticas de último minuto.",
-    "riesgos": "Tasnim es fuente estatal iraní; mensajes de represalia pueden ser tácticos/disuasorios sin intención de ejecución. Riesgo de sobrerreacción de mercados. Escalada podría ser contenida por mediadores internacionales."
-   },
-   "macro": {
-    "dolar": "alcista (busca de seguridad)",
-    "oro": "alcista (cobertura de riesgo)",
-    "nasdaq": "bajista (aversión al riesgo)",
-    "dow": "bajista (aversión al riesgo)",
-    "sp500": "bajista (aversión al riesgo)",
-    "bitcoin": "neutral a bajista (correlación con renta variable en estrés)",
-    "ethereum": "neutral a bajista",
-    "bonos": "alcistas (baja de rendimientos por demanda)",
-    "petroleo": "alcista (riesgo de interrupción)"
-   },
-   "updates": []
-  },
-  {
-   "id": 33513,
-   "fecha": "2026-07-22T14:01:00+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33513",
-   "original": "Trump: Americans are not against the war in Iran",
-   "titulo": "Trump afirma que estadounidenses no se oponen a guerra contra Irán",
-   "resumen": "Trump declaró que la población estadounidense no está en contra de una guerra con Irán, en contraposición a narrativas previas sobre rechazo doméstico a intervenciones militares. Titular no especifica contexto de encuestas o fuentes de respaldo.",
-   "analisis": {
-    "porque": "Reinterpretación política de apoyo doméstico a acción militar sugiere mayor disposición a escalar; afecta cálculo de riesgo de conflicto abierto.",
-    "queOcurrio": "Trump afirmó que los estadounidenses no se oponen a guerra con Irán; no se especifica fuente de esta afirmación (encuesta, datos de redes, interpretación política).",
-    "estado": "rumor",
-    "fuenteOriginal": "Bloomberg (reproducción de declaración)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "Petróleo",
-    "Defensa (XLI)",
-    "Oro",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Defensa",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "guerra",
-    "apoyo doméstico",
-    "retórica"
-   ],
-   "tgText": "Trump afirma que estadounidenses no rechazan guerra con Irán. Señal de disposición a escalar conflicto. Vigilar reacciones de defensa y energía.",
-   "xText": "Trump declara que ciudadanos estadounidenses no se oponen a guerra con Irán, sugiriendo mayor disposición política a escalada militar.",
-   "discordText": "**Trump sobre Irán:** Estadounidenses no se oponen a guerra\n• Reinterpreta apoyo doméstico a acción militar\n• Sugiere apertura a escalada\n• Defensa y petróleo vigilan",
-   "pushText": "Trump: estadounidenses no rechazan guerra con Irán",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Acciones de defensa (Lockheed, Raytheon) y petróleo suben por menor restricción política percibida.",
-    "despues": "Bonos soberanos, dólar y oro ajustan según recalculación de probabilidad de conflicto.",
-    "escenarios": "Traders notan (1) si esto cierra espacio para diplomacia; (2) alineación interna del gobierno; (3) comparación con encuestas reales de opinión pública.",
-    "riesgos": "Afirmación sin fuente verificable (rumor político). Mercados pueden sobrerreaccionar a retórica vs. intención real. Encuestas públicas pueden contradecir esta percepción."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33510,
-   "fecha": "2026-07-22T12:34:59+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33510",
-   "original": "*AMD TO INVEST $5 BILLION IN ANTHROPIC AS PART OF CHIP DEAL, COMPANIES SAY -- WSJ",
-   "titulo": "AMD invertirá US$5.000 millones en Anthropic en acuerdo de chips",
-   "resumen": "AMD anunció una inversión de US$5.000 millones en Anthropic como parte de un acuerdo estratégico de suministro de semiconductores. Simultáneamente, Anthropic se comprometió a comprar hasta 2 gigavatios de chips de última generación de AMD. El titular no especifica términos de valoración ni cronograma de desembolso.",
-   "analisis": {
-    "porque": "Señala consolidación en la cadena de valor de IA, con potencial impacto en competencia contra NVIDIA y en márgenes de AMD. Moviliza capital significativo hacia infraestructura de IA.",
-    "queOcurrio": "AMD invierte US$5.000 millones en Anthropic; Anthropic adquirirá chips AMD de última generación por hasta 2 GW de capacidad.",
-    "estado": "confirmado",
-    "fuenteOriginal": "WSJ"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "AMD",
-    "NVDA",
-    "Semiconductores",
-    "Índice Tecnología"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMD",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NVDA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "AMD",
-    "Anthropic",
-    "IA",
-    "semiconductores",
-    "inversión estratégica",
-    "chips"
-   ],
-   "tgText": "🔴 AMD invierte US$5.000M en Anthropic y recibirá pedidos de 2 GW de chips. Movimiento estratégico en infraestructura de IA que desafía dominancia de NVIDIA.",
-   "xText": "AMD inyecta US$5B en Anthropic y asegura compra de 2 GW de chips de última generación. Acuerdo que fortalece la competencia en infraestructura de IA frente a NVIDIA.",
-   "discordText": "**AMD-Anthropic: Acuerdo de US$5.000M**\n• AMD invierte US$5.000M en Anthropic\n• Anthropic compra hasta 2 GW de chips AMD\n• Juego estratégico en competencia vs NVIDIA\n• Refuerza posición de AMD en IA",
-   "pushText": "AMD invierte US$5.000M en Anthropic; gran movimiento en IA",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "AMD (reacción directa) y NVDA (competencia percibida). Los traders vigilan si este acuerdo reduce dependencia de NVIDIA en IA.",
-    "despues": "Índices de tecnología (NASDAQ, QQQ), acciones de proveedores de chips, y potencialmente acciones de clientes de IA que buscan diversificar proveedores.",
-    "escenarios": "Traders vigilarán: (1) si el acuerdo cierra la brecha tecnológica AMD-NVIDIA en IA, (2) si genera una alternativa creíble a NVIDIA en GPUs para IA, (3) impacto en márgenes y volúmenes de AMD, (4) reacción de NVIDIA en próximas ganancias.",
-    "riesgos": "El titular no especifica términos de valoración de Anthropic ni cronograma; podría ser parcialmente rumor si WSJ no cita comunicado oficial. Riesgo regulatorio en inversiones tecnológicas estratégicas."
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "amd": "alcista",
-    "nvda": "bajista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-22T12:35:14+00:00",
-     "id": 33511,
-     "texto": "Precisión del acuerdo: Anthropic se compromete a comprar hasta 2 gigavatios de capacidad de chips AMD de última generación. Complementa inversión de AMD anunciada en el mismo comunicado.",
-     "tgUrl": "https://t.me/walterbloomberg/33511"
-    }
-   ],
-   "actualizado": "2026-07-22T12:35:14+00:00"
   }
  ],
  "rssVistos": [
