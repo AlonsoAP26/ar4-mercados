@@ -3971,5 +3971,336 @@
       ],
       "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
     }
+  },
+  {
+    "title": "Confianza del consumidor en EE.UU. cae a 90,8 y defrauda al consenso previo al FOMC",
+    "excerpt": "El índice del Conference Board bajó a 90,8 en julio, por debajo del 92,3 esperado, y encendió señales de alerta sobre el consumo en la antesala de la decisión de la Fed.",
+    "symbol": "CAPITALCOM:DXY",
+    "trend": "down",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dato golpea las expectativas del mercado</h3><p>El Índice de Confianza del Consumidor de The Conference Board <cite index=\"4-1\">se redujo a 90,8 en julio desde 92,2 en junio y quedó por debajo del consenso de 92,3</cite> que relevaban los analistas antes de la publicación. La lectura reforzó el deterioro del sentimiento de los hogares, ya que <cite index=\"2-1\">el índice retrocedió a 90,8 puntos, por debajo de lo esperado por los analistas</cite>. El economista consultado había anticipado un repunte y no una caída: <cite index=\"6-2\">los economistas habían previsto que el índice subiera a 92,3 desde el 91,2 originalmente reportado el mes anterior</cite>.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Situación actual en su punto más débil desde 2021</h3><p>El desglose muestra el mayor deterioro en la percepción presente. <cite index=\"5-1\">El subíndice de Situación Actual cayó a 114,9 desde 118,5 previo, una baja de 3,6 puntos, mientras que el de Expectativas quedó sin cambios en 74,7, todavía por debajo del umbral de 80 que históricamente se asocia con riesgo de recesión</cite>. En la misma línea, <cite index=\"2-2\">la percepción sobre las condiciones actuales cayó a su nivel más bajo desde 2021</cite>, en momentos en que las familias estadounidenses reportan mayor preocupación por el costo de vida.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dólar cede terreno tras el dato</h3><p>La moneda estadounidense mostró una reacción moderada tras la publicación. El Índice Dólar (DXY) cotiza en 101,39, con una baja diaria de 0,1%, aunque conserva un avance semanal de 0,4% y opera por encima de su media móvil de 200 sesiones, con un RSI(14) de 60,6 en zona neutral. El euro, por su parte, avanza 0,2% en el día hasta 1,1388 frente al dólar, aunque acumula una caída de 0,1% en la semana y de 0,3% en el mes, con un RSI(14) de 43 y precio por debajo de su media de 200. La lectura débil del consumo <cite index=\"7-3\">alimentó dudas sobre la salud de la economía estadounidense y presionó al dólar, a la vez que empujó a la baja los rendimientos de los bonos del Tesoro</cite>.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Un dato clave a horas de la decisión de la Fed</h3><p>La publicación llega en la antesala inmediata de la reunión de política monetaria de la Reserva Federal, programada para el 28 y 29 de julio, un período en el que la Fed atraviesa su ventana de silencio previa al anuncio. Días atrás, el mercado laboral había mostrado señales de estabilidad: las solicitudes semanales de subsidio por desempleo bajaron a 187.000, el nivel más bajo desde 1969, lo que había sido leído como una muestra de que <cite index=\"9-1\">el mercado laboral se mantiene estable y que la Reserva Federal llega a su reunión con más margen para concentrarse en la inflación que en un deterioro del empleo</cite>. El dato de confianza de hoy, sin embargo, introduce una nota discordante justo antes de que el FOMC difunda su decisión.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Expectativas de inflación y contexto de revisiones</h3><p>The Conference Board no publicó una cifra numérica puntual para las expectativas de inflación a 12 meses en este reporte, aunque señaló una moderación frente al mes anterior. El dato de junio, además, fue revisado al alza: <cite index=\"3-1\">el índice de confianza del consumidor cayó 1,4 puntos hasta 90,8 en julio, marcando el tercer mes consecutivo en que los consumidores se mostraron menos optimistas sobre las condiciones actuales</cite>, un patrón que ya lleva tres lecturas seguidas de deterioro en el componente de situación presente. En el panel de mercado, el oro (XAU/USD) cotiza en 4.017,6 dólares, con una baja diaria de 1,4% y semanal de 1,3%, mientras el peso mexicano se mantiene estable en 17,43 por dólar y el real brasileño opera en 5,1262, con un alza diaria de 0,9%, reflejo de que el ajuste post-dato se concentró más en el eje dólar-euro que en las monedas emergentes.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La combinación de una confianza del consumidor por debajo de lo esperado y una reunión de la Fed en curso deja a los mercados en una posición de espera activa. El componente de Expectativas, estancado en 74,7 y por debajo del umbral de 80 vinculado a riesgo de recesión, es la variable a vigilar en los próximos meses: si se deteriora junto con el gasto real de los hogares, el mercado podría empezar a descontar una postura más flexible de la Fed hacia fin de año. Por ahora, la reacción en el DXY (-0,1% diario) y en el EUR/USD (+0,2%) fue contenida, sin ruptura de rangos técnicos, lo que sugiere que los operadores prefieren esperar la comunicación oficial del FOMC antes de tomar posiciones direccionales. La atención de las próximas jornadas estará en el comunicado de la Fed, en los datos de empleo de agosto y en si la brecha entre la percepción de expectativas y la situación actual se amplía o se cierra.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "Yahoo Finanzas",
+        "url": "https://es-us.finanzas.yahoo.com/noticias/confianza-consumidor-ee-uu-cae-153105017.html"
+      },
+      {
+        "name": "Perfil (Bloomberg)",
+        "url": "https://www.perfil.com/noticias/bloomberg/bc-la-confianza-del-consumidor-en-eeuu-cae-por-inflacion-y-mercado-laboral.phtml"
+      },
+      {
+        "name": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/economy/articles/u-consumer-confidence-index-falls-141504782.html"
+      },
+      {
+        "name": "Seeking Alpha",
+        "url": "https://seekingalpha.com/news/4619380-consumer-confidence-ticks-down-in-july-weaker-than-consensus"
+      }
+    ],
+    "aiSummary": {
+      "que": "La confianza del consumidor de EE.UU. cayó a 90,8 en julio, por debajo del 92,3 que esperaba el consenso, con el componente de situación actual en su nivel más débil desde 2021.",
+      "porque": "El dato llega justo cuando el FOMC celebra su reunión del 28 y 29 de julio, y una señal de debilidad en el consumo puede inclinar la lectura sobre el próximo movimiento de tasas.",
+      "activos": [
+        "DXY",
+        "EUR/USD",
+        "Bonos del Tesoro de EE.UU.",
+        "USD/BRL"
+      ],
+      "siguiente": "El comunicado del FOMC de esta semana y los próximos datos de empleo e inflación de agosto, que confirmarán si el deterioro del consumo se traslada al gasto real."
+    },
+    "aiScenarios": {
+      "alcista": 20,
+      "lateral": 50,
+      "bajista": 30
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Medio",
+      "lectura": "El sesgo de cautela sobre el dólar podría sostenerse mientras el mercado digiere la decisión de la Fed, aunque la reacción inicial fue moderada y sin rupturas técnicas claras."
+    },
+    "timeline": [
+      {
+        "cuando": "Hace 5 días",
+        "texto": "Las solicitudes semanales de subsidio por desempleo en EE.UU. bajaron a 187.000, el mínimo desde 1969, reforzando la idea de un mercado laboral estable."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "The Conference Board publicó que la Confianza del Consumidor cayó a 90,8 en julio, por debajo del consenso de 92,3, con el componente de situación actual en su nivel más bajo desde 2021."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El FOMC inicia su reunión de política monetaria, que se extiende hasta el 29 de julio, dentro del período de silencio previo a la decisión."
+      },
+      {
+        "cuando": "Próximos días",
+        "texto": "Se espera el comunicado oficial de la Fed y nuevos datos de empleo que permitirán calibrar si el deterioro del consumo se traslada a la actividad real."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué mide el índice de Confianza del Consumidor del Conference Board?",
+        "a": "Encuesta mensual que evalúa cómo perciben los hogares estadounidenses las condiciones actuales de negocios y empleo, y sus expectativas a futuro sobre ingresos y actividad económica."
+      },
+      {
+        "q": "¿Por qué importa que las Expectativas estén por debajo de 80?",
+        "a": "Históricamente, lecturas del subíndice de Expectativas por debajo de 80 puntos se han asociado con un mayor riesgo de recesión en los próximos meses."
+      },
+      {
+        "q": "¿Qué es el FOMC y por qué se lo sigue esta semana?",
+        "a": "Es el comité de política monetaria de la Reserva Federal que decide la tasa de interés de referencia en EE.UU.; su reunión de julio concluye con un anuncio que el mercado observa de cerca."
+      },
+      {
+        "q": "¿Cómo afecta un dato de consumo débil al dólar?",
+        "a": "Una señal de menor confianza del consumidor puede alimentar dudas sobre el ritmo de la economía, lo que suele presionar al dólar y a los rendimientos de los bonos a la baja."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "FX:EURUSD",
+      "OANDA:XAUUSD",
+      "FX_IDC:USDBRL",
+      "FX_IDC:USDMXN"
+    ],
+    "category": "Forex",
+    "heroType": "forex",
+    "slug": "confianza-del-consumidor-en-eeuu-cae-a-908-y-defrauda-al-con-ms5b53us",
+    "author": "AR4 Mercados",
+    "date": "2026-07-28",
+    "sourceName": "Yahoo Finanzas",
+    "sourceUrl": "https://es-us.finanzas.yahoo.com/noticias/confianza-consumidor-ee-uu-cae-153105017.html",
+    "marketPanel": [
+      {
+        "symbol": "FX:EURUSD",
+        "nombre": "EUR/USD",
+        "yahooSymbol": "EURUSD=X",
+        "fuente": "Yahoo Finance (EURUSD=X)",
+        "fechaUltimaVela": "2026-07-28",
+        "precio": 1.1388,
+        "cierreAnterior": 1.1369,
+        "variacionDiaPct": 0.2,
+        "variacionSemanaPct": -0.1,
+        "variacionMesPct": -0.3,
+        "variacionAnioPct": -2.4,
+        "rangoDiaReal": {
+          "minimo": 1.1386,
+          "maximo": 1.1395
+        },
+        "rsi14": 43,
+        "lecturaRsi": "neutral",
+        "media50": 1.149,
+        "media200": 1.1632,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0052,
+        "maximo52sem": 1.2024,
+        "minimo52sem": 1.1325,
+        "distanciaAMaximo52semPct": -5.3,
+        "distanciaAMinimo52semPct": 0.6,
+        "soportes": [
+          1.1325
+        ],
+        "resistencias": [
+          1.1473,
+          1.1675,
+          1.1828
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-07-28",
+        "precio": 101.39,
+        "cierreAnterior": 101.47,
+        "variacionDiaPct": -0.1,
+        "variacionSemanaPct": 0.4,
+        "variacionMesPct": 0,
+        "variacionAnioPct": 4.1,
+        "rangoDiaReal": {
+          "minimo": 101.26,
+          "maximo": 101.64
+        },
+        "rsi14": 60.6,
+        "lecturaRsi": "neutral",
+        "media50": 100.31,
+        "media200": 99.11,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4267,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -0.4,
+        "distanciaAMinimo52semPct": 6.1,
+        "soportes": [
+          100.45,
+          99.34,
+          98.79
+        ],
+        "resistencias": [
+          101.63
+        ],
+        "patronUltimaVela": "envolvente bajista (el cuerpo cubre por completo el de la vela alcista previa)"
+      },
+      {
+        "symbol": "OANDA:XAUUSD",
+        "nombre": "Oro (XAU/USD, futuro COMEX)",
+        "yahooSymbol": "GC=F",
+        "fuente": "Yahoo Finance (GC=F)",
+        "fechaUltimaVela": "2026-07-28",
+        "precio": 4017.6,
+        "cierreAnterior": 4074.5,
+        "variacionDiaPct": -1.4,
+        "variacionSemanaPct": -1.3,
+        "variacionMesPct": -1.5,
+        "variacionAnioPct": 20.5,
+        "rangoDiaReal": {
+          "minimo": 4013.2,
+          "maximo": 4034
+        },
+        "rsi14": 42.7,
+        "lecturaRsi": "neutral",
+        "media50": 4229.16,
+        "media200": 4478.63,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 71.97,
+        "maximo52sem": 5586.2,
+        "minimo52sem": 3263.9,
+        "distanciaAMaximo52semPct": -28.1,
+        "distanciaAMinimo52semPct": 23.1,
+        "soportes": [
+          3963.55
+        ],
+        "resistencias": [
+          4152.1,
+          4199.7,
+          4228.7
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "FX_IDC:USDMXN",
+        "nombre": "USD/MXN (peso mexicano)",
+        "yahooSymbol": "USDMXN=X",
+        "fuente": "Yahoo Finance (USDMXN=X)",
+        "fechaUltimaVela": "2026-07-28",
+        "precio": 17.43,
+        "cierreAnterior": 17.44,
+        "variacionDiaPct": 0,
+        "variacionSemanaPct": 0.2,
+        "variacionMesPct": -0.2,
+        "variacionAnioPct": -6.3,
+        "rangoDiaReal": {
+          "minimo": 17.41,
+          "maximo": 17.45
+        },
+        "rsi14": 49.4,
+        "lecturaRsi": "neutral",
+        "media50": 17.4,
+        "media200": 17.68,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.1196,
+        "maximo52sem": 18.86,
+        "minimo52sem": 17.07,
+        "distanciaAMaximo52semPct": -7.6,
+        "distanciaAMinimo52semPct": 2.1,
+        "soportes": [
+          17.36,
+          17.24,
+          17.14
+        ],
+        "resistencias": [
+          17.64,
+          17.94,
+          18.06
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "FX_IDC:USDBRL",
+        "nombre": "USD/BRL (real brasileno)",
+        "yahooSymbol": "USDBRL=X",
+        "fuente": "Yahoo Finance (USDBRL=X)",
+        "fechaUltimaVela": "2026-07-27",
+        "precio": 5.1262,
+        "cierreAnterior": 5.0825,
+        "variacionDiaPct": 0.9,
+        "variacionSemanaPct": 0.4,
+        "variacionMesPct": -0.9,
+        "variacionAnioPct": -6.8,
+        "rangoDiaReal": {
+          "minimo": 5.105,
+          "maximo": 5.1581
+        },
+        "rsi14": 50.5,
+        "lecturaRsi": "neutral",
+        "media50": 5.117,
+        "media200": 5.2172,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0645,
+        "maximo52sem": 5.6168,
+        "minimo52sem": 4.8812,
+        "distanciaAMaximo52semPct": -8.7,
+        "distanciaAMinimo52semPct": 5,
+        "soportes": [
+          5.1171,
+          5.0553,
+          4.9946
+        ],
+        "resistencias": [
+          5.1669,
+          5.2461,
+          5.3108
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      }
+    ],
+    "marketData": {
+      "symbol": "CAPITALCOM:DXY",
+      "nombre": "Indice dolar (DXY)",
+      "yahooSymbol": "DX-Y.NYB",
+      "fuente": "Yahoo Finance (DX-Y.NYB)",
+      "fechaUltimaVela": "2026-07-28",
+      "precio": 101.39,
+      "cierreAnterior": 101.47,
+      "variacionDiaPct": -0.1,
+      "variacionSemanaPct": 0.4,
+      "variacionMesPct": 0,
+      "variacionAnioPct": 4.1,
+      "rangoDiaReal": {
+        "minimo": 101.26,
+        "maximo": 101.64
+      },
+      "rsi14": 60.6,
+      "lecturaRsi": "neutral",
+      "media50": 100.31,
+      "media200": 99.11,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 0.4267,
+      "maximo52sem": 101.8,
+      "minimo52sem": 95.55,
+      "distanciaAMaximo52semPct": -0.4,
+      "distanciaAMinimo52semPct": 6.1,
+      "soportes": [
+        100.45,
+        99.34,
+        98.79
+      ],
+      "resistencias": [
+        101.63
+      ],
+      "patronUltimaVela": "envolvente bajista (el cuerpo cubre por completo el de la vela alcista previa)"
+    }
   }
 ]
