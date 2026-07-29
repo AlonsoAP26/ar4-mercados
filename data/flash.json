@@ -1,7 +1,32 @@
 {
- "lastId": 33721,
- "actualizado": "2026-07-29T18:01:02.871Z",
+ "lastId": 33723,
+ "actualizado": "2026-07-29T19:37:16.040Z",
  "items": [
+  {
+   "id": "33723",
+   "fecha": "2026-07-29T18:01:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33723",
+   "via": "DeItaone",
+   "original": "FED HOLDS RATES, HAWKISH SPLIT EMERGES The Federal Reserve left its benchmark rate unchanged at 3.50%–3.75%, saying inflation remains above its 2% target while the economy continues to expand at a solid pace. The decision passed 9–3, with Hammack, Kashkari and Logan dissenting in favor of a 25-basis-point rate hike. The Fed also highlighted strong productivity, resilient job growth and ongoing amp",
+   "titulo": null,
+   "resumen": "Información duplicada de decisión Fed con énfasis adicional en productividad fuerte y reservas bancarias amplias como contexto de estabilidad para mantener postura restrictiva.",
+   "analisis": null,
+   "impacto": null,
+   "breaking": false,
+   "activos": [],
+   "sesgos": [],
+   "volatilidad": null,
+   "categoria": null,
+   "keywords": [],
+   "tgText": null,
+   "xText": null,
+   "discordText": null,
+   "pushText": null,
+   "importancia": null,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33687",
    "fecha": "2026-07-29T08:00:57+00:00",
@@ -82,6 +107,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-29T18:00:50+00:00",
+     "id": "33722",
+     "texto": "La Reserva Federal dejó las tasas sin cambios en 3,50%–3,75% con una votación 9–3. Los gobernadores Hammack, Kashkari y Logan disintieron a favor de una alza de 25 puntos básicos. El comunicado señala inflación aún por encima del 2% objetivo y economía en expansión sólida, pero la disidencia interna creciente sobre política monetaria más restrictiva marca un quiebre significativo.",
+     "tgUrl": "https://t.me/walterbloomberg/33722"
+    },
+    {
      "fecha": "2026-07-29T18:00:17+00:00",
      "id": "33721",
      "texto": "La Reserva Federal confirmó la decisión de mantener las tasas de interés sin cambios en su rango objetivo. Esta actualización cierra el ciclo de decisiones de política monetaria tras semanas de incertidumbre sobre el timing de futuras reducciones. El titular no especifica detalles adicionales sobre forward guidance o proyecciones para septiembre.",
@@ -94,7 +125,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33690"
     }
    ],
-   "actualizado": "2026-07-29T18:00:17+00:00"
+   "actualizado": "2026-07-29T18:00:50+00:00"
   },
   {
    "id": "33720",
@@ -7451,89 +7482,6 @@
    "reaccion": null,
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33535",
-   "fecha": "2026-07-25T18:44:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33535",
-   "via": "DeItaone",
-   "original": "IRAN CLAIMS MAJOR U.S. AIRCRAFT LOSSES Iran’s IRGC claimed it destroyed 11 U.S. fighter jets and helicopters at regional military bases over the past 15 days. Tehran also said additional aircraft, including an F-15, P-8, C-17 and refuelling planes, were destroyed, and claimed U.S. fatalities exceeded 200. These claims have not been independently verified.",
-   "titulo": "Irán alega destrucción de 11 aviones estadounidenses; cifras no verificadas",
-   "resumen": "La Guardia Revolucionaria Islámica (IRGC) de Irán afirmó haber destruido 11 cazas y helicópteros estadounidenses en bases militares regionales durante los últimos 15 días, además de reclamar pérdidas de aviones F-15, P-8, C-17 y aeronaves de reabastecimiento, con supuestas bajas estadounidenses superiores a 200. No hay verificación independiente de estas alegaciones.",
-   "analisis": {
-    "porque": "Alimenta narrativa de escalada geopolítica que impacta precios de energía, divisas de riesgo y volatilidad en índices. Contrastan con reportes recientes de negociaciones USA-Irán en curso.",
-    "queOcurrio": "Irán publicó reclamaciones sobre destrucción de equipo militar estadounidense sin evidencia verificable.",
-    "estado": "rumor",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "S&P500",
-    "VIX",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "USA",
-    "Oriente Medio",
-    "Militar",
-    "Escalada",
-    "No-verificable"
-   ],
-   "tgText": "⚠️ Irán reclama destrucción de 11 aviones USA en 15 días. Sin verificación independiente. Presiona petróleo al alza y tensa mercados globales. Contrasta con avances en negociaciones.",
-   "xText": "🇮🇷 IRGC alega destrucción de 11 cazas/helicópteros USA en bases regionales + bajas >200. Cifras no verificadas. Escalada teórica vs negociaciones recientes en curso.",
-   "discordText": "**Irán reclama pérdidas militares USA**\n• 11 aviones destruidos (15 días)\n• F-15, P-8, C-17 incluidos\n• Bajas >200 según IRGC\n• ⚠️ Sin verificación independiente\n• Presiona petróleo y volatilidad",
-   "pushText": "Irán alega destrucción de 11 aviones USA; sin verificación",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent) reacciona al alza por riesgo de interrupciones en Golfo; genera «flight-to-safety» en bonos USA.",
-    "despues": "DXY sube por demanda defensiva; oro sube; S&P500 presionado por riesgo geopolítico. Índices defensivos (utilities, consumo básico) rebalancean.",
-    "escenarios": "Traders monitorean: (1) escalada confirmada vs desinformación (2) respuesta militar USA (3) impacto en producción/envíos de crudo (4) reacción de mercados de energía europeos.",
-    "riesgos": "Riesgo alto de falsa alarma: Irán históricamente exagera. Depende de verificación de fuentes USA/aliados. Si se confirma, petróleo podría romper resistencias."
-   },
-   "macro": {
-    "dolar": "Alcista (flight-to-safety)",
-    "oro": "Alcista (cobertura geopolítica)",
-    "nasdaq": "Bajista (riesgo sistémico)",
-    "dow": "Bajista (riesgo sistémico)",
-    "sp500": "Bajista (riesgo sistémico)",
-    "bitcoin": "Volátil (correlación con riesgo)",
-    "ethereum": "Volátil (correlación con riesgo)",
-    "bonos": "Alcistas (flight-to-safety)",
-    "petroleo": "Alcista (escalada geopolítica)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-26T09:06:23+00:00",
-     "id": "33538",
-     "texto": "Irán confirmó suspensión de represalias tras detención de ataques estadounidenses por segunda noche consecutiva. Portavoz militar iraní advirtió que nuevos ataques estadounidenses ampliarían el conflicto, señalando que combates ya se extienden al Estrecho de Bab el-Mandeb. El titular no especifica duración ni condiciones de la pausa.",
-     "tgUrl": "https://t.me/walterbloomberg/33538"
-    }
-   ],
-   "actualizado": "2026-07-26T09:06:23+00:00"
   }
  ],
  "rssVistos": [
