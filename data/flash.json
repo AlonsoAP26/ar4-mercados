@@ -1,7 +1,348 @@
 {
- "lastId": 33698,
- "actualizado": "2026-07-29T11:48:49.370Z",
+ "lastId": 33714,
+ "actualizado": "2026-07-29T13:28:21.357Z",
  "items": [
+  {
+   "id": "33709",
+   "fecha": "2026-07-29T12:35:21+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33709",
+   "via": "DeItaone",
+   "original": "$UAL - TRUMP, UNITED AIRLINES CEO KIRBY TO UNVEIL $22 BILLION PLAN TO EXPAND, IMPROVE WASHINGTON DULLES AIRPORT - SOURCES",
+   "titulo": "Trump y CEO de United Airlines anuncian plan de USD 22.000M para expandir Dulles",
+   "resumen": "Trump y Scott Kirby, CEO de United Airlines, anunciarán planes de expansión de USD 22.000 millones en el aeropuerto Dulles de Washington. No se especifican detalles de inversión, cronograma o estructura de financiamiento. Iniciativa privada-pública enfocada en mejorar infraestructura aeroportuaria de una de las principales compuertas de la capital estadounidense.",
+   "analisis": {
+    "porque": "Inversión en infraestructura aeroportuaria genera demanda de materials (construcción), empleo, y mejora outlook de United Airlines. Afecta valuación de UAL y sectores de construcción/servicios.",
+    "queOcurrio": "Anuncio de asociación entre Trump y United Airlines para invertir USD 22.000M en modernización y expansión del aeropuerto Dulles de Washington.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "UAL",
+    "Sector Aéreo",
+    "Construcción",
+    "Infraestructura"
+   ],
+   "sesgos": [
+    {
+     "activo": "UAL",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Sector Aéreo",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "United Airlines",
+    "Dulles",
+    "inversión",
+    "infraestructura",
+    "Trump",
+    "USD 22B"
+   ],
+   "tgText": "Trump y CEO de United Airlines anuncian USD 22.000M para expandir Dulles. Beneficia a UAL y cadena de suministro de construcción.",
+   "xText": "Alianza Trump-United Airlines: USD 22.000M para modernizar Dulles airport. Impulsa UAL y demanda de infraestructura.",
+   "discordText": "**United Airlines - Inversión Dulles**\n• Anuncio de USD 22.000M con Trump\n• Expansión y modernización de Dulles\n• Apoyo a demanda de construcción e infraestructura\n→ Positivo para UAL, sector aéreo",
+   "pushText": "Trump y United Airlines: USD 22.000M para expandir Dulles airport",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "UAL sube 1-2% en apertura si se confirma impacto positivo en flujos de pasajeros y capacidad.",
+    "despues": "Sectores de construcción, ingeniería civil y acero podrían beneficiarse de demanda de materiales; salarios de empleo de construcción mejoran, presionando narrativa de inflación salarial.",
+    "escenarios": "Traders monitorean: (1) detalles de financiamiento (privado vs subsidios federales), (2) si proyecto mejora margen operativo de United, (3) competencia (American, Delta) y si anuncian expansiones similares.",
+    "riesgos": "Proyecto podría no cristalizarse o retrasos típicos de obra pública; si requiere subsidios federales, genera debate fiscal; competencia de otras aerolineas podría diluir beneficio competitivo."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33705",
+   "fecha": "2026-07-29T12:24:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33705",
+   "via": "DeItaone",
+   "original": "*SOUTH KOREA FINANCE MINISTRY TO STABILIZE STOCK MARKET *SOUTH KOREA FINANCE MINISTRY TO RESTRICT LEVERAGED ETF TRADING",
+   "titulo": "Corea del Sur implementa restricciones a ETFs apalancados tras volatilidad de mercado",
+   "resumen": "El Ministerio de Finanzas de Corea del Sur anunció medidas para estabilizar el mercado de valores, incluyendo restricciones a trading de ETFs apalancados y sistemas de monitoreo 24 horas. Se establecerá límite de exposición retail a estos instrumentos. Respuesta regulatoria a volatilidad e inestabilidad de última semana en bolsa surcoreana.",
+   "analisis": {
+    "porque": "Regulación de apalancamiento retail reduce riesgo sistémico local pero señala presión en volatilidad de mercados asiáticos. Afecta estrategias de carry trades y posicionamiento en mercados emergentes.",
+    "queOcurrio": "Regulador surcoreano implementó techo de exposición retail a ETFs apalancados y reforzó vigilancia de mercado 24/7.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "KOSPI",
+    "Mercados Asiáticos",
+    "ETFs",
+    "Volatilidad Emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "KOSPI",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Volatilidad",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Emergencia",
+   "keywords": [
+    "Corea del Sur",
+    "ETFs apalancados",
+    "regulación",
+    "volatilidad",
+    "KOSPI",
+    "riesgo sistémico"
+   ],
+   "tgText": "SK implementa tope a ETFs apalancados y monitoreo 24/7. Medida defensiva ante volatilidad retail; afecta estrategias de apalancamiento en emergentes.",
+   "xText": "Corea del Sur limita ETFs apalancados retail y activa vigilancia 24/7. Regulador frena leverage tras volatilidad de mercado.",
+   "discordText": "**Corea del Sur - Regulación de Apalancamiento**\n• Restricción a exposición retail en ETFs apalancados\n• Monitoreo 24 horas del mercado de valores\n• Medida de estabilización post-volatilidad\n→ Reduce riesgo sistémico local",
+   "pushText": "SK limita ETFs apalancados; monitoreo 24/7 para estabilidad de mercado",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "KOSPI puede estabilizarse ya que se reduce presión de liquidaciones en cascada; volatilidad intradiaria disminuye.",
+    "despues": "Mercados emergentes globales notan reducción de presión de apalancamiento retail; yuan chino y otras monedas EM podrían beneficiarse de menor venta forzada.",
+    "escenarios": "Traders monitorean: (1) si otras bolsas asiáticas adoptan medidas similares (Japón, Taiwan), (2) si esta regulación es temporal o permanente, (3) si impacta flujos de carry trades que financian posiciones en EM.",
+    "riesgos": "Restricción podría reducir liquidez de ETFs apalancados, elevando spreads bid-ask; si medida es temporal, alivio podría ser fugaz y volatilidad retornar."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33704",
+   "fecha": "2026-07-29T12:20:45+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33704",
+   "via": "DeItaone",
+   "original": "S&P 500, NASDAQ FUTURES TURN NEGATIVE AFTER TRUMP'S COMMENTS ON IRAN",
+   "titulo": "Futuros S&P 500 y Nasdaq caen tras comentarios hawkish de Trump sobre Irán",
+   "resumen": "Inmediatamente después de que Trump confirmara represalias militares contra Irán, los futuros del S&P 500 y Nasdaq giraron al territorio negativo. La volatilidad se intensificó por coincidencia con expectativas de decisión Fed (pausa vs alza). Movimiento refleja arbitraje entre riesgo geopolítico e incertidumbre de política monetaria.",
+   "analisis": {
+    "porque": "Combinación de escalada geopolítica (Irán) + incertidumbre Fed amplifica aversión al riesgo. Mercados reprician activos de renta variable a la baja; buscan safe-haven (bonos, dólar, oro).",
+    "queOcurrio": "Tras comentarios de Trump sobre represalias contra Irán, futuros de equities estadounidenses pasaron de neutral/ligeramente positivo a negativo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "Nasdaq",
+    "Futuros S&P",
+    "Futuros Nasdaq",
+    "Petróleo",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Breaking News",
+   "keywords": [
+    "S&P 500",
+    "Nasdaq",
+    "futuros",
+    "Irán",
+    "volatilidad",
+    "geopolítica"
+   ],
+   "tgText": "Futuros S&P 500/Nasdaq giran negativos tras Trump confirmar represalias contra Irán. Volatilidad extrema; trasfondo Fed antes del anuncio.",
+   "xText": "S&P 500 y Nasdaq futures caen tras Trump confirmar ataques a Irán. Combinación de riesgo geopolítico + incertidumbre Fed.",
+   "discordText": "**Futuros Equities - Giro Negativo**\n• S&P 500 y Nasdaq futures ↓\n• Trigger: represalias Trump vs Irán\n• Contexto: Fed decision inminente\n→ Aversión a riesgo, safe-haven",
+   "pushText": "Futuros S&P/Nasdaq caen tras represalias Iran; volatilidad extrema pre-Fed",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Futuros ceden 0,5-1,5%; VIX salta 2-4 puntos; petróleo gira alcista (+2-3%).",
+    "despues": "Bonos del Tesoro suben (yields bajan 10-15 pb); dólar se fortalece; oro sube; spreads de credit se amplían; sectores defensivos buscan rotación.",
+    "escenarios": "Traders monitorean: (1) profundidad de la caída si escalada Irán continúa, (2) si Fed reacciona dovish por riesgo geopolítico, (3) si Nasdaq especialmente presionado por tech exposure a energía/petróleo.",
+    "riesgos": "Escalada no controlada Irán + sorpresa de alza Fed = crash -2% a -3% en equities; volatilidad sostenida presiona stop-loss de hedge funds."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "alcista",
+    "sp500": "bajista -0,5% a -1,5%",
+    "nasdaq": "bajista -0,5% a -2%",
+    "bonos": "alcista (yields bajan)",
+    "petroleo": "alcista +2% a +3%"
+   },
+   "updates": []
+  },
+  {
+   "id": "33689",
+   "fecha": "2026-07-29T08:17:08+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33689",
+   "via": "DeItaone",
+   "original": "MIDDLE EAST CONFLICT ESCALATES Fighting between Iran and the US intensified overnight as Iran launched ballistic missiles at US forces, while the US and Saudi Arabia responded with strikes on Iran-backed militias in Iraq, ending a brief diplomatic pause. Saudi Arabia said it intercepted drones targeting its oil facilities for a second consecutive day. The US said all Iranian missiles aimed at its ",
+   "titulo": "Escalada en Oriente Medio: Irán lanza misiles, petróleo salta 4% y Hormuz se cierra",
+   "resumen": "Los enfrentamientos entre Irán y EE.UU. se intensificaron con lanzamiento de misiles balísticos iraníes y contraataques estadounidenses en Irak. El conflicto se expande a Arabia Saudí y Yemen con ataques hutíes. El petróleo Brent alcanzó USD 87/barril (+4%), el Estrecho de Hormuz permanece efectivamente cerrado y el transporte marítimo sufre disrupciones severas. Las perspectivas de negociación diplomática EE.UU.-Irán se desvanecen.",
+   "analisis": {
+    "porque": "Conflicto geopolítico activo que interrumpe oferta energética global, eleva prima de riesgo en crudo y genera incertidumbre sobre inflación y recesión. Afecta directamente decisiones de política monetaria y volatilidad de mercados.",
+    "queOcurrio": "Reanudación de hostilidades tras breve pausa diplomática. Irán lanzó misiles balísticos contra posiciones estadounidenses; EE.UU. y Arabia Saudí respondieron contra milicias respaldadas por Irán en Irak. Houthis atacaron instalaciones petrolíferas saudíes por segundo día consecutivo. Cierre efectivo del Estrecho de Hormuz.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (vía Walter Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Brent Crude",
+    "S&P 500",
+    "NASDAQ",
+    "Dólar (DXY)",
+    "Bonos USA",
+    "Oro",
+    "Energía",
+    "Transporte marítimo"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "misiles-balísticos",
+    "petróleo",
+    "hormuz",
+    "conflicto-oriente-medio",
+    "brent-crude",
+    "suministro-energético",
+    "volatilidad-mercados"
+   ],
+   "tgText": "🔥 ESCALADA CRÍTICA: Irán lanza misiles balísticos contra EE.UU.; petróleo +4% a USD 87/barril. Hormuz cerrado, ataques hutíes en expansión. Riesgo geopolítico al máximo.",
+   "xText": "⚠️ Escalada Irán-EE.UU.: misiles balísticos, petróleo +4% a USD 87/barril, Hormuz cerrado. Conflicto se expande a Arabia Saudí y Yemen. Alto riesgo de inflación.",
+   "discordText": "**GEOPOLÍTICA - BREAKING**\n• Irán lanza misiles contra bases estadounidenses\n• EE.UU./Arabia Saudí contraatacan en Irak\n• Petróleo Brent: USD 87/barril (+4%)\n• Estrecho de Hormuz efectivamente cerrado\n• Ataques hutíes contra instalaciones saudíes",
+   "pushText": "ALERTA: Escalada Irán-EE.UU., petróleo +4%, Hormuz cerrado",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo (Brent/WTI): reacción inmediata por interrupción de suministro y cierre del Estrecho de Hormuz. Traders de energía y fondos de cobertura rebalancean posiciones.",
+    "despues": "Bonos USA (yield sube por inflación esperada), Dólar (flight-to-safety), Oro (hedge geopolítico), S&P 500 (riesgo de recesión por choque de costos energéticos).",
+    "escenarios": "Traders vigilan: (1) Extensión del conflicto a actores regionales; (2) duración del cierre de Hormuz; (3) impacto en inflación de febrero-2026; (4) respuesta de bancos centrales a presión inflacionaria; (5) posibilidad de escalada naval en Mar Rojo.",
+    "riesgos": "Escalada descontrolada podría duplicar precios de crudo. Riesgo de cierre prolongado de Hormuz (20-30% del tráfico petrolero mundial). Impacto asimétrico en economías importadoras de petróleo. Posible error de cálculo militar."
+   },
+   "macro": {
+    "petroleo": "alcista muy fuerte (+4% a USD 87/barril)",
+    "dolar": "alcista por flight-to-safety",
+    "oro": "alcista por cobertura geopolítica",
+    "bonos": "alcista (yields suben por inflación esperada)",
+    "nasdaq": "bajista por presión inflacionaria",
+    "sp500": "bajista por choque de costos",
+    "bitcoin": "neutral a alcista (cobertura alternativa)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-29T12:17:18+00:00",
+     "id": "33702",
+     "texto": "Trump confirmó en entrevista Fox que EE.UU. llevará a cabo strikes contra Irán en respuesta a ataques balísticos contra objetivos estadounidenses en Jordania. Añadió que ataques nocturnos a milicias respaldadas por Irán en Irak fueron coordinados con Bagdad y advirtió de futuras acciones contra proxies iraníes. Esto escala la tensión geopolítica más allá de repercusión anunciada el 29/07.",
+     "tgUrl": "https://t.me/walterbloomberg/33702"
+    }
+   ],
+   "actualizado": "2026-07-29T12:17:18+00:00"
+  },
+  {
+   "id": "33699",
+   "fecha": "2026-07-29T12:01:50+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33699",
+   "via": "DeItaone",
+   "original": "FED PLAYBOOK: JPM'S S&P 500 SCENARIOS JPMorgan expects the Fed to hold rates, with a hawkish hold as its base case (50%), leaving the S&P 500 roughly flat to down 0.5%. A dovish hold (28%) is seen as the most bullish outcome, lifting the index up to 1%. A 25bp hike (20%) could send the S&P 500 down 1.5%-2%, with the Nasdaq likely underperforming.",
+   "titulo": "JPMorgan proyecta S&P 500 plano o caída 0,5% si Fed mantiene tasas hawkish",
+   "resumen": "JPMorgan establece escenarios post-decisión Fed: caso base es pausa hawkish (50% probabilidad) con S&P 500 plano a -0,5%. Pausa dovish (28%) alcista hasta +1%, mientras que alza de 25pb (20%) presionaría índice -1,5% a -2%, golpeando especialmente a Nasdaq. Análisis de mercado previo a anuncio de la institución.",
+   "analisis": {
+    "porque": "El escenario Fed determina directamente movimientos de renta variable y tasas. JPMorgan es referencia institucional que mueve expectativas en mercados de futuros y opciones.",
+    "queOcurrio": "JPMorgan publicó matriz de escenarios con probabilidades ponderadas para decisión inminente de la Fed, diferenciando postura hawkish, dovish e hipótesis de sorpresa alcista.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "Nasdaq",
+    "Rendimientos USA",
+    "Futuros S&P",
+    "Futuros Nasdaq"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "tasas",
+    "S&P 500",
+    "Nasdaq",
+    "JPMorgan",
+    "escenarios"
+   ],
+   "tgText": "JPMorgan: caso base Fed hawkish deja S&P plano a -0,5%. Pausa dovish hasta +1%, alza 25pb presiona -1,5% a -2%, golpeando tech.",
+   "xText": "JPMorgan mapea decisión Fed: pausa hawkish (50%) deja S&P plano/-0,5%; dovish (+1%); alza 25pb (-1,5%/-2%, Nasdaq débil).",
+   "discordText": "**JPMorgan - Escenarios Post-Fed**\n• Pausa hawkish (50%): S&P plano/-0,5%\n• Pausa dovish (28%): hasta +1%\n• Alza 25pb (20%): -1,5%/-2%, Nasdaq pressiona",
+   "pushText": "JPMorgan: Fed hawkish mantendría S&P plano; alza sorpresa golpearía -1,5%",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Futuros S&P y Nasdaq reaccionan inmediatamente; curva de rendimientos invierte según narrativa hawkish.",
+    "despues": "Dólar se fortalece (si fed hawkish); gold vende; volatilidad VIX sube si mercado precia sorpresa de alza.",
+    "escenarios": "Traders monitorean: (1) si Fed comunica pausa duradera o temporal, (2) señales de Powel sobre septiembre, (3) si dato de empleo débil mañana cambia probabilidades.",
+    "riesgos": "Sorpresa de alza (20%) movería mercados -1,5% a -2%; expectativas de dovish débiles vs realidad hawkish generaría whipsaw."
+   },
+   "macro": {
+    "dolar": "alcista si hawkish",
+    "oro": "bajista si hawkish",
+    "nasdaq": "bajista -1,5% a -2%",
+    "dow": "bajista -0,5% a -1%",
+    "sp500": "bajista -0,5% a -2%",
+    "bonos": "alcista (baja de rendimientos)",
+    "petroleo": "neutral a bajista"
+   },
+   "updates": []
+  },
   {
    "id": "33698",
    "fecha": "2026-07-29T11:45:05+00:00",
@@ -365,89 +706,6 @@
     }
    ],
    "actualizado": "2026-07-29T08:22:17+00:00"
-  },
-  {
-   "id": "33689",
-   "fecha": "2026-07-29T08:17:08+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33689",
-   "via": "DeItaone",
-   "original": "MIDDLE EAST CONFLICT ESCALATES Fighting between Iran and the US intensified overnight as Iran launched ballistic missiles at US forces, while the US and Saudi Arabia responded with strikes on Iran-backed militias in Iraq, ending a brief diplomatic pause. Saudi Arabia said it intercepted drones targeting its oil facilities for a second consecutive day. The US said all Iranian missiles aimed at its ",
-   "titulo": "Escalada en Oriente Medio: Irán lanza misiles, petróleo salta 4% y Hormuz se cierra",
-   "resumen": "Los enfrentamientos entre Irán y EE.UU. se intensificaron con lanzamiento de misiles balísticos iraníes y contraataques estadounidenses en Irak. El conflicto se expande a Arabia Saudí y Yemen con ataques hutíes. El petróleo Brent alcanzó USD 87/barril (+4%), el Estrecho de Hormuz permanece efectivamente cerrado y el transporte marítimo sufre disrupciones severas. Las perspectivas de negociación diplomática EE.UU.-Irán se desvanecen.",
-   "analisis": {
-    "porque": "Conflicto geopolítico activo que interrumpe oferta energética global, eleva prima de riesgo en crudo y genera incertidumbre sobre inflación y recesión. Afecta directamente decisiones de política monetaria y volatilidad de mercados.",
-    "queOcurrio": "Reanudación de hostilidades tras breve pausa diplomática. Irán lanzó misiles balísticos contra posiciones estadounidenses; EE.UU. y Arabia Saudí respondieron contra milicias respaldadas por Irán en Irak. Houthis atacaron instalaciones petrolíferas saudíes por segundo día consecutivo. Cierre efectivo del Estrecho de Hormuz.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (vía Walter Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Brent Crude",
-    "S&P 500",
-    "NASDAQ",
-    "Dólar (DXY)",
-    "Bonos USA",
-    "Oro",
-    "Energía",
-    "Transporte marítimo"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "irán",
-    "misiles-balísticos",
-    "petróleo",
-    "hormuz",
-    "conflicto-oriente-medio",
-    "brent-crude",
-    "suministro-energético",
-    "volatilidad-mercados"
-   ],
-   "tgText": "🔥 ESCALADA CRÍTICA: Irán lanza misiles balísticos contra EE.UU.; petróleo +4% a USD 87/barril. Hormuz cerrado, ataques hutíes en expansión. Riesgo geopolítico al máximo.",
-   "xText": "⚠️ Escalada Irán-EE.UU.: misiles balísticos, petróleo +4% a USD 87/barril, Hormuz cerrado. Conflicto se expande a Arabia Saudí y Yemen. Alto riesgo de inflación.",
-   "discordText": "**GEOPOLÍTICA - BREAKING**\n• Irán lanza misiles contra bases estadounidenses\n• EE.UU./Arabia Saudí contraatacan en Irak\n• Petróleo Brent: USD 87/barril (+4%)\n• Estrecho de Hormuz efectivamente cerrado\n• Ataques hutíes contra instalaciones saudíes",
-   "pushText": "ALERTA: Escalada Irán-EE.UU., petróleo +4%, Hormuz cerrado",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo (Brent/WTI): reacción inmediata por interrupción de suministro y cierre del Estrecho de Hormuz. Traders de energía y fondos de cobertura rebalancean posiciones.",
-    "despues": "Bonos USA (yield sube por inflación esperada), Dólar (flight-to-safety), Oro (hedge geopolítico), S&P 500 (riesgo de recesión por choque de costos energéticos).",
-    "escenarios": "Traders vigilan: (1) Extensión del conflicto a actores regionales; (2) duración del cierre de Hormuz; (3) impacto en inflación de febrero-2026; (4) respuesta de bancos centrales a presión inflacionaria; (5) posibilidad de escalada naval en Mar Rojo.",
-    "riesgos": "Escalada descontrolada podría duplicar precios de crudo. Riesgo de cierre prolongado de Hormuz (20-30% del tráfico petrolero mundial). Impacto asimétrico en economías importadoras de petróleo. Posible error de cálculo militar."
-   },
-   "macro": {
-    "petroleo": "alcista muy fuerte (+4% a USD 87/barril)",
-    "dolar": "alcista por flight-to-safety",
-    "oro": "alcista por cobertura geopolítica",
-    "bonos": "alcista (yields suben por inflación esperada)",
-    "nasdaq": "bajista por presión inflacionaria",
-    "sp500": "bajista por choque de costos",
-    "bitcoin": "neutral a alcista (cobertura alternativa)"
-   },
-   "updates": []
   },
   {
    "id": "33688",
@@ -7265,266 +7523,6 @@
     "despues": "Monitoreo de próximas disputas ejecutivas; riesgo de volatilidad si escala a temas económicos",
     "escenarios": "Traders monitorizan: (1) si Trump apela o acepta fallo, (2) correlación con próximas medidas ejecutivas (aranceles, regulación), (3) sentimiento riesgo-país EEUU",
     "riesgos": "Riesgo bajo a mercados; riesgo político moderado si escala conflicto institucional"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "919455092",
-   "fecha": "2026-07-25T19:56:55.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/here-are-4-forces-that-drove-a-tough-week-for-stocks.html",
-   "via": "CNBC",
-   "original": "Here are 4 forces that drove a tough week for stocks",
-   "titulo": "Cuatro fuerzas explican la semana difícil de los mercados accionarios",
-   "resumen": "CNBC analiza los factores detrás de la volatilidad semanal en bolsas estadounidenses. El titular no especifica cuáles son esas cuatro fuerzas ni magnitudes de caídas. Requiere lectura del análisis completo para determinar si se trata de preocupaciones macro (tasas, inflación, ganancias) o específicas de sectores.",
-   "analisis": {
-    "porque": "Identifica patrones de presión simultánea en múltiples segmentos de mercado, relevante para ajuste de portafolios y análisis de riesgo sistémico",
-    "queOcurrio": "Semana negativa en bolsas con múltiples catalizadores simultáneos, según análisis de CNBC",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "DOW",
-    "Bonos",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "volatilidad-mercados",
-    "semana-negativa",
-    "presion-bolsas",
-    "analisis-mercados"
-   ],
-   "tgText": "📉 Semana difícil en bolsas: CNBC identifica cuatro fuerzas clave detrás de la volatilidad. S&P 500, Nasdaq y bonos bajo presión. Análisis de catalizadores múltiples simultáneos.",
-   "xText": "📉 Semana negativa en mercados: CNBC analiza las 4 fuerzas detrás de la volatilidad en bolsas. S&P500, Nasdaq presionados. Requiere monitoreo de catalizadores macro.",
-   "discordText": "**Volatilidad en bolsas**\n• Semana difícil para S&P500 y Nasdaq\n• CNBC identifica 4 fuerzas clave\n• Análisis de presión simultánea en mercados",
-   "pushText": "Semana volátil en bolsas: CNBC analiza cuatro fuerzas clave",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "S&P500 y Nasdaq reaccionan por reconocimiento de presión multi-factor; bonos por revisión de expectativas de tasas",
-    "despues": "Sector defensivo vs cíclico según naturaleza de las fuerzas identificadas; USD según implicancias de tasas",
-    "escenarios": "Traders monitorean si fuerzas son transitorias o señalan revisión de ciclo; volatilidad implícita (VIX) como indicador de pánico",
-    "riesgos": "El titular no especifica magnitud ni fuentes de presión; podría ser sobrerreacción editorial a movimiento técnico menor"
-   },
-   "macro": {
-    "dolar": "neutral",
-    "oro": "alcista-refugio",
-    "nasdaq": "bajista",
-    "dow": "bajista",
-    "sp500": "bajista",
-    "bonos": "alcista-refugio",
-    "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33533",
-   "fecha": "2026-07-25T18:05:57+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33533",
-   "via": "DeItaone",
-   "original": "DEEPSEEK PAUSES FUNDRAISING Chinese AI startup DeepSeek has reportedly paused its second fundraising round, informing prospective investors that no investment agreements will be signed for now, according to Bloomberg. The company may restart the process later. Reuters previously reported DeepSeek was also exploring a potential IPO on Shanghai’s STAR Market.",
-   "titulo": "DeepSeek pausa segunda ronda de financiación; IPO en Shanghai sigue en exploración",
-   "resumen": "Startup china DeepSeek pausó su segunda ronda de financiación, informando a inversores potenciales que no firmará acuerdos de inversión por ahora, según Bloomberg. El proceso podría reiniciarse posteriormente. Reuters reportó previamente que DeepSeek también explora potencial IPO en mercado STAR de Shanghai. Señal de incertidumbre regulatoria o valoración.",
-   "analisis": {
-    "porque": "Evidencia de presión regulatoria/geopolítica sobre startups chinas de IA o ajustes de valoración. Afecta narrativa de competencia IA (vs OpenAI/Anthropic occidentales). Impacta valuaciones de Nvidia, semiconductores y fondos focused en China tech.",
-    "queOcurrio": "DeepSeek pausó fundraising round 2. Informó a posibles inversores que no habrá acuerdos por ahora. Anteriormente exploraba IPO en STAR Market de Shanghai.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Sector Tecnología",
-    "Semiconductores",
-    "China ADRs",
-    "Nvidia"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "China Tech ADRs",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "DeepSeek",
-    "IA",
-    "China",
-    "fundraising",
-    "IPO",
-    "Shanghai",
-    "regulación"
-   ],
-   "tgText": "DeepSeek (startup IA china) pausa ronda 2 de financiación. IPO en Shanghai aún en exploración. Señal de incertidumbre regulatoria o presión de valuaciones en ecosistema IA chino.",
-   "xText": "DeepSeek pausa fundraising pero mantiene exploración de IPO en Shanghai. Movimiento sugiere presión regulatoria o ajustes en valuaciones de IA chinas vs competencia global.",
-   "discordText": "**EMPRESAS - IA/TECNOLOGÍA**\n• DeepSeek pausa segunda ronda de financiación\n• IPO en Shanghai (STAR Market) aún bajo exploración\n• Sin acuerdos de inversión firmados por ahora\n• Posible reinicio posterior\n• Fuente: Bloomberg",
-   "pushText": "DeepSeek pausa fundraising; IPO Shanghai sigue en evaluación",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "China ADRs (especialmente tech) pueden caer levemente por señal de incertidumbre regulatoria. Semiconductor stocks se mantienen neutrales (no es supply shock).",
-    "despues": "Fondos de IA global pueden ajustar exposición a competidores chinos. Valuaciones de OpenAI/Anthropic occidentales podrían beneficiarse relativamente.",
-    "escenarios": "Traders vigilarán: (1) anuncio oficial de DeepSeek sobre reinicio de fundraising, (2) comentarios reguladores chinos sobre startups IA, (3) progreso hacia IPO Shanghai, (4) impacto en competitive landscape IA.",
-    "riesgos": "Titular no especifica razón exacta de pausa (regulatoria vs valuación). DeepSeek es privada, falta transparencia. Posible reversión rápida si condiciones cambian."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33531",
-   "fecha": "2026-07-25T16:55:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33531",
-   "via": "DeItaone",
-   "original": "IRANIAN OIL MINISTRY SAYS IT SOLD $11.5 BLN OF OIL DURING WAR AND $6.5 BLN DURING CEASEFIRE PERIOD IRANIAN OIL MINISTRY SAYS IT HAS REALIZED MORE THAN 60% OF ANNUAL OIL REVENUE FORECAST IN BUDGET DESPITE WAR AND SANCTIONS",
-   "titulo": "Irán vende $18 mil millones en petróleo pese a guerra y sanciones; cumple 60% de ingresos",
-   "resumen": "El Ministerio de Petróleo de Irán reporta ventas por $11.500 millones durante conflicto y $6.500 millones en período de alto el fuego, alcanzando más del 60% de la previsión anual de ingresos petroleros del presupuesto. El dato refleja resilencia de exportaciones iraníes a pesar de sanciones internacionales y tensiones geopolíticas.",
-   "analisis": {
-    "porque": "Impacta directamente precio del petróleo (oferta global), riesgo geopolítico Oriente Medio, dinámicas de sanciones EEUU-Irán, y expectativas de presión alcista en energía. Señal de capacidad de evasión de restricciones comerciales.",
-    "queOcurrio": "Irán confirmó ventas de petróleo por $18 mil millones combinados (guerra + alto el fuego), equivalente a 60%+ de ingresos anuales proyectados. Cifras oficiales del Ministerio de Petróleo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Iranian Oil Ministry (via Walter Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "WTI",
-    "Brent",
-    "DXY",
-    "EURUSD",
-    "Oro",
-    "Bonos",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "petróleo",
-    "sanciones",
-    "Oriente Medio",
-    "exportaciones",
-    "guerra"
-   ],
-   "tgText": "🛢️ Irán reporta $18B en ventas de petróleo pese a sanciones y conflicto, alcanzando 60%+ de ingresos anuales presupuestados. Presión bajista en precios energéticos.",
-   "xText": "🛢️ Ministerio Petróleo Irán: $18B vendidos durante guerra + alto el fuego = 60%+ ingresos anuales pese sanciones. Riesgo geopolítico + presión en energía.",
-   "discordText": "**Irán vende $18B en petróleo en conflicto**\n• $11.5B durante guerra\n• $6.5B en período de alto el fuego\n• Cumple 60%+ ingresos anuales presupuestados\n• Señal de evasión de sanciones",
-   "pushText": "Irán reporta $18B en ventas de petróleo pese sanciones; impacto en precios energéticos",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "WTI/Brent caen por aumento de oferta iraní; traders ajustan posiciones en energía y curva de futuros.",
-    "despues": "DXY sube (petróleo débil favorece dólar); oro puede subir (refugio geopolítico); bonos podrían ceder presión alcista si inflación energética baja.",
-    "escenarios": "Traders monitoresan: (1) si cifras iraníes indican mayor capacidad de evasión = presión estructural en precios; (2) señales de escalada/desescalada Irán-EEUU; (3) respuesta de OPEC+ a mayor oferta iraní; (4) impacto en negociaciones nucleares USA-Irán.",
-    "riesgos": "Cifras provienen de ministerio iraní (potencial sesgo/opacidad); no independientemente verificadas. Riesgo de reescalada geopolítica podría invertir sesgo bajista de petróleo rápidamente."
-   },
-   "macro": {
-    "petroleo": "bajista (oferta adicional iraní)",
-    "dolar": "alcista (debilitamiento energético)",
-    "oro": "alcista (geopolítica)",
-    "bonos": "bajista (presión de yields si baja inflación energética)",
-    "nasdaq": "neutral a alcista (energía más barata beneficia tech)",
-    "sp500": "neutral",
-    "dow": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": 957596397,
-   "fecha": "2026-07-25T14:03:03.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
-   "via": "CNBC",
-   "original": "From Silicon Valley to DC, the tech world is suddenly obsessed with one concept in AI: Distillation",
-   "titulo": "Tech obsesionado con 'distilación' de IA: de Silicon Valley a Washington, un concepto domina",
-   "resumen": "Concepto de 'distilación' en IA emerge como obsesión en industria tecnológica y círculos políticos. La distilación permite comprimir modelos grandes de IA en versiones más pequeñas y eficientes. Movimiento estratégico para reducir costos de computación y democratizar acceso a IA.",
-   "analisis": {
-    "porque": "Distilación de IA reduce costos operativos de modelos; afecta competencia en edge computing, dispositivos móviles y presupuestos de CAPEX de gigantes tech.",
-    "queOcurrio": "Industria tech y autoridades de USA se enfocan en 'distilación' como estrategia clave de IA más eficiente y accesible.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NVIDIA",
-    "TSMC",
-    "Semiconductores",
-    "Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVIDIA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Tech",
-     "sesgo": "neutral-alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "distilacion-ia",
-    "nvidia",
-    "semiconductores",
-    "eficiencia",
-    "edge-computing"
-   ],
-   "tgText": "Distilación de IA: Tech obsesionada con comprimir modelos para eficiencia. De Silicon Valley a DC, un concepto domina. Impacto en costos computacionales.",
-   "xText": "🤖 Distilación IA obsesiona Tech: modelos comprimidos = costos bajos. Silicon Valley + Washington unidos en estrategia.",
-   "discordText": "**Distilación de IA: concepto dominante**\n• Compresión de modelos grandes en versiones eficientes\n• Impacto en CAPEX de semiconductores\n• Interés político y empresarial coinciden",
-   "pushText": "Tech obsesionada con 'distilación' de IA para eficiencia y costos",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NVIDIA y semiconductores ajustan expectativas de demanda de GPU; márgenes en duda.",
-    "despues": "Edge computing y dispositivos móviles cobran relevancia; competencia en chips especializados.",
-    "escenarios": "Traders vigilarán: (1) CAPEX guidance de Nvidia/AMD; (2) competencia de distilación vs. large models; (3) márgenes de procesadores.",
-    "riesgos": "Distilación podría reducir demanda de GPUs costosas; narrativa de Nvidia se tambalea; presión en valuaciones de semiconductores."
    },
    "macro": null,
    "updates": []
