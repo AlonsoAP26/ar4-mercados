@@ -1,7 +1,160 @@
 {
- "lastId": 33719,
- "actualizado": "2026-07-29T16:52:49.704Z",
+ "lastId": 33721,
+ "actualizado": "2026-07-29T18:01:02.871Z",
  "items": [
+  {
+   "id": "33687",
+   "fecha": "2026-07-29T08:00:57+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33687",
+   "via": "DeItaone",
+   "original": "FED DECISION: WHAT TO WATCH The Fed is expected to keep rates at 3.5%-3.75%, but markets still see a roughly one-in-three chance of a surprise hike. The focus is on Chair Kevin Warsh's message as higher oil prices fuel inflation concerns despite softer June CPI. Morgan Stanley expects no hikes this year, while BofA believes Warsh could begin raising rates as soon as September.",
+   "titulo": "Fed mantiene tasas en 3,5%-3,75% pero Warsh genera incertidumbre sobre septiembre",
+   "resumen": "La Reserva Federal confirmó mantención de tasas de referencia en rango 3,5%-3,75%. Chair Kevin Warsh generó volatilidad al no descartar alzas futuras pese a inflación moderada. Mercados estiman probabilidad uno-en-tres de sorpresa alcista. Morgan Stanley proyecta cero alzas en 2026; BofA sugiere posibles subidas desde septiembre ante presión inflacionaria del petróleo.",
+   "analisis": {
+    "porque": "La decisión de la Fed afecta directamente valuaciones de activos riesgosos, tasas de rendimiento y expectativas inflacionarias. La ambigüedad de Warsh genera incertidumbre sobre trayectoria futura de política monetaria, impactando estrategias de treasuries, acciones y divisas.",
+    "queOcurrio": "Fed mantuvo tasas sin cambios pero el lenguaje del Chair Kevin Warsh no eliminó posibilidad de alzas futuras, contrario a expectativas de mercado de continuidad de pausa. Divergencia entre proyecciones de Morgan Stanley (sin alzas 2026) y BofA (posibles alzas sept) refleja incertidumbre sobre inflación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "Oro",
+    "Petróleo"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "fed-decision",
+    "tasas-interes",
+    "kevin-warsh",
+    "politica-monetaria",
+    "inflacion"
+   ],
+   "tgText": "🚨 Fed mantiene tasas pero Warsh no descarta alzas futuras. Probabilidad uno-en-tres de sorpresa alcista. Divergencia: Morgan Stanley vs BofA en proyecciones de septiembre. Volatilidad extrema en treasuries y renta variable.",
+   "xText": "Fed pausa tasas en 3,5%-3,75% pero Chair Warsh genera incertidumbre. 33% de probabilidad de alza sorpresa. Morgan Stanley: sin alzas 2026. BofA: posibles subidas en septiembre. Mercados en máxima volatilidad.",
+   "discordText": "**Fed Decision Impact**\n• Tasas: 3,5%-3,75% (sin cambios)\n• Chair Warsh abre puerta a futuras alzas\n• Prob. alza sorpresa: ~33%\n• Debate: septiembre decisivo\n• Volatilidad: EXTREMA",
+   "pushText": "Fed pausa pero Warsh mantiene incertidumbre sobre septiembre",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Bonos y Treasuries de largo plazo reaccionan primero al cambio de expectativas de tasas. Baja en precios de bonos (suba de yields) si mercado interpreta como hawkish.",
+    "despues": "S&P500 y NASDAQ sufren presión por valuaciones más altas de tasas. Dólar fortalecido (DXY al alza). Materias primas como oro se benefician por debilidad esperada de activos riesgosos.",
+    "escenarios": "Traders vigilarán: (1) dots plot de proyecciones de septiembre en próxima rueda de prensa; (2) lecturas CPI julio para confirmar presión inflacionaria; (3) si petróleo sostiene alzas inflacionarias; (4) comunicaciones de Warsh en próximas semanas sobre trayectoria.",
+    "riesgos": "Titular interpreta 'mensaje' de Warsh que no es oficial. Si Fed en comunicado posterior aclara posición más dovish, sesgo bajista en DXY se revierten. Riesgo de falsa señal sobre intenciones futuras."
+   },
+   "macro": {
+    "dolar": "Alcista por expectativa de tasas más altas",
+    "oro": "Bajista por fortaleza de dólar",
+    "nasdaq": "Bajista por tasa de descuento más alta",
+    "dow": "Bajista por incertidumbre de tasas",
+    "sp500": "Bajista moderado",
+    "bitcoin": "Bajista si dólar sube sostenidamente",
+    "ethereum": null,
+    "bonos": "Bajista (yields suben)",
+    "petroleo": "Neutral (Fed no controla oferta)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-29T18:00:17+00:00",
+     "id": "33721",
+     "texto": "La Reserva Federal confirmó la decisión de mantener las tasas de interés sin cambios en su rango objetivo. Esta actualización cierra el ciclo de decisiones de política monetaria tras semanas de incertidumbre sobre el timing de futuras reducciones. El titular no especifica detalles adicionales sobre forward guidance o proyecciones para septiembre.",
+     "tgUrl": "https://t.me/walterbloomberg/33721"
+    },
+    {
+     "fecha": "2026-07-29T08:22:17+00:00",
+     "id": "33690",
+     "texto": "Mercados de predicción (Kalshi) cotizan 77% de probabilidad de que la Fed mantenga tasas hoy; 23% de alza sorpresa de 25 puntos base. Citadel Securities anticipa que el presidente Kevin Warsh subirá tasas para reforzar credibilidad antiinflacionaria y señalar el fin de la era de forward guidance. División clara entre trader y operadores institucionales sobre intención de Warsh.",
+     "tgUrl": "https://t.me/walterbloomberg/33690"
+    }
+   ],
+   "actualizado": "2026-07-29T18:00:17+00:00"
+  },
+  {
+   "id": "33720",
+   "fecha": "2026-07-29T17:54:08+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33720",
+   "via": "DeItaone",
+   "original": "CANADA IS WORKING TO HAVE A MORE STABLE TRADING RELATIONSHIP WITH THE U.S., INCLUDING IN CRITICAL SECTORS - PRIME MINISTER CARNEY WE'RE STARTING FROM A STRONG POSITION IN TALKS WITH THE U.S, SAYS CARNEY",
+   "titulo": "Canadá negocia relación comercial más estable con EE.UU. bajo mandato Carney",
+   "resumen": "El Primer Ministro Mark Carney de Canadá señaló avances en negociaciones comerciales con Estados Unidos, enfatizando sectores críticos. Carney indicó partir de una posición fuerte en conversaciones bilaterales. El titular no especifica qué sectores críticos se contemplan ni detalles de concesiones/demandas mutuas.",
+   "analisis": {
+    "porque": "Tensiones comerciales Canada-EE.UU. afectan valuaciones de empresas con exposición bilateral y precios de materias primas. Señales de negociación constructiva reducen riesgos de aranceles disruptivos.",
+    "queOcurrio": "Primer Ministro canadiense emitió comunicado sobre negociaciones comerciales en curso con EE.UU., proyectando posición negociadora favorable.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "CAD",
+    "S&P500",
+    "Energía (petróleo/gas natural)",
+    "Materias primas"
+   ],
+   "sesgos": [
+    {
+     "activo": "CAD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "canada-eeuu",
+    "negociaciones-comerciales",
+    "carney",
+    "sectores-criticos",
+    "aranceles"
+   ],
+   "tgText": "PM Carney: Canadá avanza en negociaciones comerciales con EE.UU. desde posición fuerte. Sectores críticos en agenda bilateral.",
+   "xText": "Carney: Canadá negocia relación comercial más estable con EE.UU. desde posición fuerte. Sectores críticos en foco.",
+   "discordText": "**Canadá: Negociaciones comerciales con EE.UU.**\n• PM Carney señala avances\n• Énfasis en sectores críticos\n• Posición negociadora fuerte",
+   "pushText": "Carney: negociaciones comerciales Canada-EE.UU. avanzan desde posición fuerte",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "CAD (dólar canadiense). Reducción de riesgo geopolítico suele fortalecer monedas emergentes aliadas.",
+    "despues": "Energía (petróleo/gas natural canadiense) y acciones de sectores expuestos a comercio bilateral (telecomunicaciones, recursos naturales).",
+    "escenarios": "Traders vigilan: (1) si negociaciones resultan en acuerdo sin aranceles punitivos, (2) sectores específicos que puedan quedar excluidos, (3) timeline de acuerdos.",
+    "riesgos": "Declaración optimista pero sin detalles verificables de avances. Riesgo de negociaciones colapsadas o demandas sorpresa que generen volatilidad retroactiva."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33704",
    "fecha": "2026-07-29T12:20:45+00:00",
@@ -817,94 +970,6 @@
     "petroleo": "Neutral presión bajista por descuentos; geopolitica contrapesa"
    },
    "updates": []
-  },
-  {
-   "id": "33687",
-   "fecha": "2026-07-29T08:00:57+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33687",
-   "via": "DeItaone",
-   "original": "FED DECISION: WHAT TO WATCH The Fed is expected to keep rates at 3.5%-3.75%, but markets still see a roughly one-in-three chance of a surprise hike. The focus is on Chair Kevin Warsh's message as higher oil prices fuel inflation concerns despite softer June CPI. Morgan Stanley expects no hikes this year, while BofA believes Warsh could begin raising rates as soon as September.",
-   "titulo": "Fed mantiene tasas en 3,5%-3,75% pero Warsh genera incertidumbre sobre septiembre",
-   "resumen": "La Reserva Federal confirmó mantención de tasas de referencia en rango 3,5%-3,75%. Chair Kevin Warsh generó volatilidad al no descartar alzas futuras pese a inflación moderada. Mercados estiman probabilidad uno-en-tres de sorpresa alcista. Morgan Stanley proyecta cero alzas en 2026; BofA sugiere posibles subidas desde septiembre ante presión inflacionaria del petróleo.",
-   "analisis": {
-    "porque": "La decisión de la Fed afecta directamente valuaciones de activos riesgosos, tasas de rendimiento y expectativas inflacionarias. La ambigüedad de Warsh genera incertidumbre sobre trayectoria futura de política monetaria, impactando estrategias de treasuries, acciones y divisas.",
-    "queOcurrio": "Fed mantuvo tasas sin cambios pero el lenguaje del Chair Kevin Warsh no eliminó posibilidad de alzas futuras, contrario a expectativas de mercado de continuidad de pausa. Divergencia entre proyecciones de Morgan Stanley (sin alzas 2026) y BofA (posibles alzas sept) refleja incertidumbre sobre inflación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "DXY",
-    "Bonos",
-    "Rendimientos USA",
-    "Oro",
-    "Petróleo"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "fed-decision",
-    "tasas-interes",
-    "kevin-warsh",
-    "politica-monetaria",
-    "inflacion"
-   ],
-   "tgText": "🚨 Fed mantiene tasas pero Warsh no descarta alzas futuras. Probabilidad uno-en-tres de sorpresa alcista. Divergencia: Morgan Stanley vs BofA en proyecciones de septiembre. Volatilidad extrema en treasuries y renta variable.",
-   "xText": "Fed pausa tasas en 3,5%-3,75% pero Chair Warsh genera incertidumbre. 33% de probabilidad de alza sorpresa. Morgan Stanley: sin alzas 2026. BofA: posibles subidas en septiembre. Mercados en máxima volatilidad.",
-   "discordText": "**Fed Decision Impact**\n• Tasas: 3,5%-3,75% (sin cambios)\n• Chair Warsh abre puerta a futuras alzas\n• Prob. alza sorpresa: ~33%\n• Debate: septiembre decisivo\n• Volatilidad: EXTREMA",
-   "pushText": "Fed pausa pero Warsh mantiene incertidumbre sobre septiembre",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Bonos y Treasuries de largo plazo reaccionan primero al cambio de expectativas de tasas. Baja en precios de bonos (suba de yields) si mercado interpreta como hawkish.",
-    "despues": "S&P500 y NASDAQ sufren presión por valuaciones más altas de tasas. Dólar fortalecido (DXY al alza). Materias primas como oro se benefician por debilidad esperada de activos riesgosos.",
-    "escenarios": "Traders vigilarán: (1) dots plot de proyecciones de septiembre en próxima rueda de prensa; (2) lecturas CPI julio para confirmar presión inflacionaria; (3) si petróleo sostiene alzas inflacionarias; (4) comunicaciones de Warsh en próximas semanas sobre trayectoria.",
-    "riesgos": "Titular interpreta 'mensaje' de Warsh que no es oficial. Si Fed en comunicado posterior aclara posición más dovish, sesgo bajista en DXY se revierten. Riesgo de falsa señal sobre intenciones futuras."
-   },
-   "macro": {
-    "dolar": "Alcista por expectativa de tasas más altas",
-    "oro": "Bajista por fortaleza de dólar",
-    "nasdaq": "Bajista por tasa de descuento más alta",
-    "dow": "Bajista por incertidumbre de tasas",
-    "sp500": "Bajista moderado",
-    "bitcoin": "Bajista si dólar sube sostenidamente",
-    "ethereum": null,
-    "bonos": "Bajista (yields suben)",
-    "petroleo": "Neutral (Fed no controla oferta)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-29T08:22:17+00:00",
-     "id": "33690",
-     "texto": "Mercados de predicción (Kalshi) cotizan 77% de probabilidad de que la Fed mantenga tasas hoy; 23% de alza sorpresa de 25 puntos base. Citadel Securities anticipa que el presidente Kevin Warsh subirá tasas para reforzar credibilidad antiinflacionaria y señalar el fin de la era de forward guidance. División clara entre trader y operadores institucionales sobre intención de Warsh.",
-     "tgUrl": "https://t.me/walterbloomberg/33690"
-    }
-   ],
-   "actualizado": "2026-07-29T08:22:17+00:00"
   },
   {
    "id": "33688",
@@ -7469,73 +7534,6 @@
     }
    ],
    "actualizado": "2026-07-26T09:06:23+00:00"
-  },
-  {
-   "id": "919970332",
-   "fecha": "2026-07-26T05:00:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/cocoa-prices-chocolate-lindt-barry-callebaut-nestle.html",
-   "via": "CNBC",
-   "original": "Cocoa prices are easing. So why is chocolate still so expensive?",
-   "titulo": "Precios de cacao ceden, pero el chocolate sigue caro: ¿dónde está el alivio?",
-   "resumen": "A pesar de la desaceleración en los precios del cacao en los mercados de futuros, los consumidores aún enfrentan chocolates y productos derivados con precios elevados. El titular sugiere un desfase entre la caída de materias primas y los precios al consumidor final, indicando márgenes de distribución o presiones inflacionarias persistentes en la cadena de suministro.",
-   "analisis": {
-    "porque": "Refleja dinámicas de inflación de precios al consumidor y márgenes de ganancia en cadenas de suministro; relevante para CPI y presiones inflacionarias residuales en sectores de consumo discrecional.",
-    "queOcurrio": "El cacao, que fue uno de los commodities más caros en 2024-2025, está bajando de precio, pero los fabricantes de chocolate no han trasladado completamente ese alivio a los consumidores finales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Materias Primas",
-    "Cacao",
-    "Inflación CPI",
-    "Consumo Discrecional",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Cacao",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Inflación CPI",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "cacao",
-    "chocolate",
-    "inflación",
-    "precios-consumidor",
-    "cadena-suministro",
-    "márgenes"
-   ],
-   "tgText": "📊 Cacao cede pero chocolate sigue caro. Precios de la materia prima bajan pero no llegan al consumidor. Señal de márgenes altos o fricciones en la cadena de suministro.",
-   "xText": "🍫 Paradoja: precios de cacao caen, pero el chocolate sigue costoso. Alivio de commodities no llega al consumidor. Margen de distribuidores bajo escrutinio. #Inflación",
-   "discordText": "**Cacao en caída, chocolate estancado**\n• Precios del cacao descienden en futuros\n• Pero productos finales mantienen precios elevados\n• Síntoma de márgenes de ganancia elevados o ineficiencias en la cadena\n• Relevancia: presiones inflacionarias residuales",
-   "pushText": "Cacao baja pero chocolate sigue caro: revisando márgenes de distribución",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Futuros de cacao (NYBOT) reaccionan directamente; luego productores de chocolate cotizados (por márgenes).",
-    "despues": "Índices de consumo discrecional si el fenómeno sugiere pérdida de demanda por precios altos.",
-    "escenarios": "Traders monitorean: (1) si baja de cacao finalmente presiona márgenes de fabricantes; (2) si consumidores reducen demanda de chocolate premium; (3) si es indicador de 'sticky prices' que complica desinflación.",
-    "riesgos": "El titular no especifica magnitud de caída de cacao ni cuánto ha subido el chocolate. Puede ser fenómeno regional o temporal, no indicador macroeconómico universal."
-   },
-   "macro": {
-    "dolar": null,
-    "oro": null,
-    "nasdaq": null,
-    "dow": null,
-    "sp500": "neutral — presiones en márgenes de empresas de consumo",
-    "bitcoin": null,
-    "ethereum": null,
-    "bonos": null,
-    "petroleo": null
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
