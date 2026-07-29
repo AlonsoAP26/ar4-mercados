@@ -1,7 +1,283 @@
 {
- "lastId": 33690,
- "actualizado": "2026-07-29T09:35:27.611Z",
+ "lastId": 33698,
+ "actualizado": "2026-07-29T11:48:49.370Z",
  "items": [
+  {
+   "id": "33698",
+   "fecha": "2026-07-29T11:45:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33698",
+   "via": "DeItaone",
+   "original": "ZUCKERBERG PUSHES FOR FASTER AI Mark Zuckerberg urged the U.S. to accelerate AI development, arguing the technology's benefits outweigh its risks and warning against regulations that could slow innovation. The Meta CEO also opposed restricting open-source AI models, saying the focus should be on boosting U.S. competitiveness rather than limiting access. His comments come as Meta ramps up AI spendi",
+   "titulo": "Zuckerberg impulsa desregulación de IA; se opone a restricciones en modelos open-source",
+   "resumen": "Mark Zuckerberg instó al gobierno estadounidense a acelerar desarrollo de IA, argumentando que beneficios superan riesgos y adviriendo contra regulaciones que frenen innovación. El CEO de Meta se opuso a restricciones en modelos de IA abiertos, enfatizando que el enfoque debe estar en competitividad estadounidense. Sus comentarios precedieron resultados de Meta.",
+   "analisis": {
+    "porque": "Señala posicionamiento político de megacap tech sobre marco regulatorio de IA; impacta percepción de riesgo legislativo en sector; relevante para valuaciones de Meta y competencia en capex IA.",
+    "queOcurrio": "CEO de Meta abogó por desregulación relativa de desarrollo de IA y mantuvo postura pro open-source, alineándose con presión interna de Meta hacia mayor gasto en infraestructura IA.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "META",
+    "Nasdaq",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "META",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Meta",
+    "Zuckerberg",
+    "IA",
+    "regulación",
+    "open-source",
+    "capex",
+    "competitividad"
+   ],
+   "tgText": "💬 Zuckerberg pide desregulación de IA y se opone a restricciones en modelos open-source. Enfatiza competitividad EE.UU. sobre capex. Meta acelera gasto en IA previo a earnings.",
+   "xText": "💬 Zuckerberg impulsa desregulación de IA y rechaza restricciones a open-source. Enfoque en competitividad EE.UU.; Meta acelera capex IA previo a resultados.",
+   "discordText": "**Meta: Zuckerberg Defiende Desregulación IA**\n• Pide aceleración de desarrollo sin restricciones\n• Rechaza límites a modelos open-source\n• Énfasis en competitividad estadounidense",
+   "pushText": "Zuckerberg pide desregulación de IA; se opone a restricciones open-source",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "META: posible sesgo alcista si mercado valida reducción de riesgo regulatorio; NASDAQ por sector tech",
+    "despues": "Acciones de chipmakers y proveedores de infraestructura IA (NVDA, AMD); debate sobre marco regulatorio en equities de tech",
+    "escenarios": "Traders validan posición de Meta en debate regulatorio; observan si postura influye en política; monitorean competencia capex con otras megacaps (AMZN, MSFT, GOOG)",
+    "riesgos": "Postura es marketing político de Meta; cambios reales en regulación son inciertos; impacto en valuaciones depende de percepciones no hechos"
+   },
+   "macro": {
+    "nasdaq": "Neutral-alcista por reducción de riesgo regulatorio percibida"
+   },
+   "updates": []
+  },
+  {
+   "id": "33680",
+   "fecha": "2026-07-28T22:13:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33680",
+   "via": "DeItaone",
+   "original": "IRAN LAUNCHED BALLISTIC MISSILES TOWARDS A U.S. BASE IN JORDAN -AXIOS",
+   "titulo": "Irán lanza misiles balísticos contra base militar estadounidense en Jordania",
+   "resumen": "Irán lanzó múltiples misiles balísticos contra una base militar de EE.UU. ubicada en Jordania, según reportó Axios citando fuentes estadounidenses. El Pentágono confirmó que todos los proyectiles fueron interceptados exitosamente sin reportar bajas iniciales. El incidente marca una escalada directa en las tensiones entre Irán y EE.UU. después de semanas de señales contradictorias en negociaciones.",
+   "analisis": {
+    "porque": "Escalada geopolítica directa genera volatilidad en petróleo, divisas de riesgo y activos defensivos. Los mercados reprecia el riesgo de conflicto regional ampliado",
+    "queOcurrio": "Irán ejecutó ataque de misiles balísticos contra instalación militar estadounidense; EE.UU. reporta intercepciones exitosas",
+    "estado": "confirmado",
+    "fuenteOriginal": "Axios / U.S. Military"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Oro",
+    "DXY",
+    "EURUSD",
+    "NASDAQ",
+    "S&P500",
+    "VIX",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "misiles",
+    "EE.UU.",
+    "Jordania",
+    "conflicto",
+    "Medio Oriente",
+    "escalada militar"
+   ],
+   "tgText": "🚨 BREAKING: Irán lanza misiles balísticos contra base de EE.UU. en Jordania. Pentágono reporta intercepciones exitosas. Petróleo y oro suben ante escalada geopolítica. Vigilar volatilidad en mercados de riesgo.",
+   "xText": "🚨 Irán atacó base militar de EE.UU. en Jordania con misiles balísticos. Pentágono confirma intercepciones. Escalada directa dispara petróleo, oro y volatilidad. Mercados en alerta máxima.",
+   "discordText": "**BREAKING - Escalada Irán-EE.UU.**\n• Irán lanzó misiles balísticos contra base en Jordania\n• Pentágono reporta todas las intercepciones exitosas\n• Petróleo y oro en alza; volatilidad máxima\n• Monitorear riesgos de ampliación del conflicto",
+   "pushText": "Irán ataca base de EE.UU. con misiles; todos interceptados. Escalada geopolítica dispara petróleo.",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo WTI y Brent: riesgos de cierre del Estrecho de Ormuz reprician al alza instantáneamente",
+    "despues": "Oro como activo refugio; USD se fortalece por flight-to-safety; acciones de defensa suben; bonos caen (tasas suben por presión inflacionaria del petróleo)",
+    "escenarios": "Traders monitorean: (1) si Irán anuncia represalias adicionales; (2) respuesta militar de EE.UU. o Israel; (3) cierre de Ormuz; (4) reacción de OPEC+ sobre producción; (5) contagio a mercados emergentes de Medio Oriente",
+    "riesgos": "Escalada descontrolada hacia conflicto regional mayor; espiral de represalias; daño a infraestructura energética global; disrupciones en supply chain"
+   },
+   "macro": {
+    "dolar": "alcista por flight-to-safety",
+    "oro": "alcista por demanda refugio",
+    "nasdaq": "bajista por aversión a riesgo",
+    "dow": "bajista con peso en defensa",
+    "sp500": "bajista",
+    "bitcoin": "volátil, puede actuar como refugio heterodoxo",
+    "ethereum": "correlacionado con riesgo",
+    "bonos": "caen (yields suben) por presión inflacionaria del petróleo",
+    "petroleo": "alcista muy fuerte, riesgo de $85-90 por barril"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-29T11:38:37+00:00",
+     "id": "33696",
+     "texto": "Irán rechazó afirmaciones del presidente Trump sobre supuestas negociaciones en las últimas dos semanas. Un funcionario iraní senior insistió en que Teherán no cederá el control del Estrecho de Ormuz, calificándolo como central para objetivos de guerra. Los comentarios precedieron nuevos ataques de misiles balísticos contra bases estadounidenses en Jordania.",
+     "tgUrl": "https://t.me/walterbloomberg/33696"
+    },
+    {
+     "fecha": "2026-07-28T22:28:51+00:00",
+     "id": "33682",
+     "texto": "Confirmación del Pentágono: Todos los misiles iraníes fueron interceptados exitosamente. Declaración oficial sin reporte de bajas estadounidenses iniciales.",
+     "tgUrl": "https://t.me/walterbloomberg/33682"
+    },
+    {
+     "fecha": "2026-07-28T22:28:16+00:00",
+     "id": "33681",
+     "texto": "Confirmación oficial del Pentágono: Fuerzas de la Guardia Revolucionaria Islámica lanzaron múltiples misiles balísticos desde Irán a las 17:45 ET. Timestamp: 28 de julio 2026, 22:28 UTC.",
+     "tgUrl": "https://t.me/walterbloomberg/33681"
+    }
+   ],
+   "actualizado": "2026-07-29T11:38:37+00:00"
+  },
+  {
+   "id": "33695",
+   "fecha": "2026-07-29T11:36:47+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33695",
+   "via": "DeItaone",
+   "original": "ECOMMERCE MOMENTUM BUILDS Bernstein raised its U.S. eCommerce forecasts after estimating Q2 sales growth of 11%, up from 5-6% in recent quarters. The firm expects strong results from Etsy, eBay and Wayfair, while Amazon's earnings will hinge more on AWS, where investors are looking for 30%+ cloud growth. Bernstein also expects AI-driven capex to rise further in 2027.",
+   "titulo": "Bernstein eleva previsiones de e-commerce tras crecimiento Q2 del 11%; AWS en foco",
+   "resumen": "Bernstein subió proyecciones de e-commerce estadounidense tras estimar crecimiento de ventas Q2 del 11%, versus 5-6% en trimestres previos. Anticipa resultados sólidos en Etsy, eBay y Wayfair; ganancias de Amazon dependerán de AWS con expectativa de crecimiento cloud >30%. Espera aumento de capex impulsado por IA en 2027.",
+   "analisis": {
+    "porque": "Revisa al alza perspectivas de demanda de consumo digital; enfatiza dependencia de resultados cloud para megacap tech; proyecta continuidad de gastos en infraestructura IA.",
+    "queOcurrio": "Casa de análisis Bernstein elevó forecasts de e-commerce tras validar aceleración en Q2 a tasa superior a lo previsto; ajusta mirada hacia AWS como driver de retorno en Amazon.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Nasdaq",
+    "S&P 500",
+    "AMZN",
+    "ETSY",
+    "EBAY",
+    "W"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "e-commerce",
+    "Bernstein",
+    "Amazon",
+    "AWS",
+    "crecimiento digital",
+    "capex IA"
+   ],
+   "tgText": "📈 Bernstein sube previsiones de e-commerce (Q2: +11%). Etsy, eBay, Wayfair en foco; AWS será clave para Amazon (>30% esperado). Capex de IA acelerará en 2027.",
+   "xText": "📈 Bernstein eleva forecasts de e-commerce tras crecimiento Q2 del 11%. AWS será decisivo en retorno de Amazon; capex IA crecerá en 2027.",
+   "discordText": "**E-commerce Acelera Según Bernstein**\n• Crecimiento Q2 del 11% (vs 5-6% previo)\n• Etsy, eBay, Wayfair con perspectiva positiva\n• AWS y capex IA como motores 2027",
+   "pushText": "Bernstein sube previsiones de e-commerce; AWS clave para Amazon en 2027",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "AMZN, NASDAQ: impacto positivo en valuaciones de tech/e-commerce por confirmación de demanda digital elevada",
+    "despues": "ETSY, EBAY, W: reacciones positivas propias; índices de consumo digital",
+    "escenarios": "Traders validan fortaleza de demanda; observan si capex IA de 2027 presiona márgenes; monitorean confirmación en earnings próximos",
+    "riesgos": "Estimaciones de Bernstein pueden no coincidir con guías oficiales de compañías; proyecciones de capex IA especulativas"
+   },
+   "macro": {
+    "nasdaq": "Sesgo alcista por demanda digital confirmada"
+   },
+   "updates": []
+  },
+  {
+   "id": "33691",
+   "fecha": "2026-07-29T10:12:24+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33691",
+   "via": "DeItaone",
+   "original": "ARAMCO REROUTES OIL TO ASIA Saudi Aramco is considering a new pricing system for crude shipped from Egypt's Sidi Kerir to Asia as Houthi attacks disrupt Red Sea routes. Asian refiners are seeking discounts to offset higher shipping costs and longer transit times around Africa. The move highlights growing pressure on global oil flows as security risks in the Middle East continue to disrupt key expo",
+   "titulo": "Aramco redirige crudo a Asia ante ataques hutíes; nuevos precios presionan flujos globales",
+   "resumen": "Saudi Aramco evalúa un nuevo sistema de precios para crudo exportado desde Sidi Kerir (Egipto) hacia Asia, ante disrupciones por ataques hutíes en el Mar Rojo. Refinadores asiáticos demandan descuentos para compensar costos de envío elevados y rutas más largas alrededor de África. El movimiento refleja presión creciente sobre flujos petroleros globales.",
+   "analisis": {
+    "porque": "Impacta estructura de precios del petróleo, márgenes de refinerías y equilibrio de oferta regional. Señala persistencia de riesgos geopolíticos en suministro global.",
+    "queOcurrio": "Aramco estudia reconfiguración de precios para crudo redirigido desde Suez hacia Asia vía ruta africana, con descuentos solicitados por refinadores para absorber costos de transporte incrementados.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "Acciones energía global"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral-bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "Aramco",
+    "petróleo",
+    "Mar Rojo",
+    "hutíes",
+    "precios crudo",
+    "Asia",
+    "geopolítica"
+   ],
+   "tgText": "🛢️ Aramco negocia nuevos precios de crudo hacia Asia ante disrupciones en Mar Rojo. Refinadores piden descuentos por costos elevados de ruta africana. Presión en flujos petroleros globales.",
+   "xText": "🛢️ Saudi Aramco rediseña precios de crudo hacia Asia. Ataques hutíes fuerzan rutas alternativas; refinadores demandan descuentos por costos de envío más altos vía África.",
+   "discordText": "**Aramco Redirige Crudo**\n• Nuevo sistema de precios para exportaciones a Asia\n• Refinadores solicitan descuentos por ruta africana\n• Ataques hutíes presionan flujos globales",
+   "pushText": "Aramco evalúa reprecios de crudo a Asia por disrupciones en Mar Rojo",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: reacción a cambios de precios de exportación y expectativas de demanda asiática",
+    "despues": "Acciones de energía: integrados y refinadores; compañías de transporte marítimo",
+    "escenarios": "Traders monitorean si descuentos señalan menor demanda regional o si reflejan solo costos de transporte; validez de nueva estructura de precios",
+    "riesgos": "Titular no especifica plazos ni magnitud de descuentos; información de fuentes anónimas posible"
+   },
+   "macro": {
+    "petroleo": "Neutral presión bajista por descuentos; geopolitica contrapesa"
+   },
+   "updates": []
+  },
   {
    "id": "33687",
    "fecha": "2026-07-29T08:00:57+00:00",
@@ -908,107 +1184,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33680",
-   "fecha": "2026-07-28T22:13:59+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33680",
-   "via": "DeItaone",
-   "original": "IRAN LAUNCHED BALLISTIC MISSILES TOWARDS A U.S. BASE IN JORDAN -AXIOS",
-   "titulo": "Irán lanza misiles balísticos contra base militar estadounidense en Jordania",
-   "resumen": "Irán lanzó múltiples misiles balísticos contra una base militar de EE.UU. ubicada en Jordania, según reportó Axios citando fuentes estadounidenses. El Pentágono confirmó que todos los proyectiles fueron interceptados exitosamente sin reportar bajas iniciales. El incidente marca una escalada directa en las tensiones entre Irán y EE.UU. después de semanas de señales contradictorias en negociaciones.",
-   "analisis": {
-    "porque": "Escalada geopolítica directa genera volatilidad en petróleo, divisas de riesgo y activos defensivos. Los mercados reprecia el riesgo de conflicto regional ampliado",
-    "queOcurrio": "Irán ejecutó ataque de misiles balísticos contra instalación militar estadounidense; EE.UU. reporta intercepciones exitosas",
-    "estado": "confirmado",
-    "fuenteOriginal": "Axios / U.S. Military"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Oro",
-    "DXY",
-    "EURUSD",
-    "NASDAQ",
-    "S&P500",
-    "VIX",
-    "Bonos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "misiles",
-    "EE.UU.",
-    "Jordania",
-    "conflicto",
-    "Medio Oriente",
-    "escalada militar"
-   ],
-   "tgText": "🚨 BREAKING: Irán lanza misiles balísticos contra base de EE.UU. en Jordania. Pentágono reporta intercepciones exitosas. Petróleo y oro suben ante escalada geopolítica. Vigilar volatilidad en mercados de riesgo.",
-   "xText": "🚨 Irán atacó base militar de EE.UU. en Jordania con misiles balísticos. Pentágono confirma intercepciones. Escalada directa dispara petróleo, oro y volatilidad. Mercados en alerta máxima.",
-   "discordText": "**BREAKING - Escalada Irán-EE.UU.**\n• Irán lanzó misiles balísticos contra base en Jordania\n• Pentágono reporta todas las intercepciones exitosas\n• Petróleo y oro en alza; volatilidad máxima\n• Monitorear riesgos de ampliación del conflicto",
-   "pushText": "Irán ataca base de EE.UU. con misiles; todos interceptados. Escalada geopolítica dispara petróleo.",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo WTI y Brent: riesgos de cierre del Estrecho de Ormuz reprician al alza instantáneamente",
-    "despues": "Oro como activo refugio; USD se fortalece por flight-to-safety; acciones de defensa suben; bonos caen (tasas suben por presión inflacionaria del petróleo)",
-    "escenarios": "Traders monitorean: (1) si Irán anuncia represalias adicionales; (2) respuesta militar de EE.UU. o Israel; (3) cierre de Ormuz; (4) reacción de OPEC+ sobre producción; (5) contagio a mercados emergentes de Medio Oriente",
-    "riesgos": "Escalada descontrolada hacia conflicto regional mayor; espiral de represalias; daño a infraestructura energética global; disrupciones en supply chain"
-   },
-   "macro": {
-    "dolar": "alcista por flight-to-safety",
-    "oro": "alcista por demanda refugio",
-    "nasdaq": "bajista por aversión a riesgo",
-    "dow": "bajista con peso en defensa",
-    "sp500": "bajista",
-    "bitcoin": "volátil, puede actuar como refugio heterodoxo",
-    "ethereum": "correlacionado con riesgo",
-    "bonos": "caen (yields suben) por presión inflacionaria del petróleo",
-    "petroleo": "alcista muy fuerte, riesgo de $85-90 por barril"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-28T22:28:51+00:00",
-     "id": "33682",
-     "texto": "Confirmación del Pentágono: Todos los misiles iraníes fueron interceptados exitosamente. Declaración oficial sin reporte de bajas estadounidenses iniciales.",
-     "tgUrl": "https://t.me/walterbloomberg/33682"
-    },
-    {
-     "fecha": "2026-07-28T22:28:16+00:00",
-     "id": "33681",
-     "texto": "Confirmación oficial del Pentágono: Fuerzas de la Guardia Revolucionaria Islámica lanzaron múltiples misiles balísticos desde Irán a las 17:45 ET. Timestamp: 28 de julio 2026, 22:28 UTC.",
-     "tgUrl": "https://t.me/walterbloomberg/33681"
-    }
-   ],
-   "actualizado": "2026-07-28T22:28:51+00:00"
   },
   {
    "id": "33679",
@@ -7350,189 +7525,6 @@
     "despues": "Edge computing y dispositivos móviles cobran relevancia; competencia en chips especializados.",
     "escenarios": "Traders vigilarán: (1) CAPEX guidance de Nvidia/AMD; (2) competencia de distilación vs. large models; (3) márgenes de procesadores.",
     "riesgos": "Distilación podría reducir demanda de GPUs costosas; narrativa de Nvidia se tambalea; presión en valuaciones de semiconductores."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 930454285,
-   "fecha": "2026-07-25T13:48:05.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/blackstone-brookfield-and-kkr-sign-16-billion-oil-deal-with-kuwait.html",
-   "via": "CNBC",
-   "original": "Blackstone, Brookfield and KKR sign $16 billion deal with Kuwait for oil pipeline network",
-   "titulo": "Blackstone, Brookfield y KKR sellan acuerdo de $16 mil millones con Kuwait para red de oleoductos",
-   "resumen": "Tres gigantes de capital privado (Blackstone, Brookfield y KKR) anuncian inversión de $16 mil millones en consorcio con Kuwait para infraestructura de oleoductos. Operación marca movimiento estratégico en energía y activos de infraestructura de largo plazo, con implicaciones para flujos de PE en petróleo y gas.",
-   "analisis": {
-    "porque": "Acuerdo PE de $16B en infraestructura energética señala confianza en demanda de hidrocarburos; impacta valuaciones de gigantes PE y compite por capital en sector.",
-    "queOcurrio": "Blackstone, Brookfield y KKR se asocian con Kuwait en inversión de $16 mil millones para red de oleoductos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Blackstone (BX)",
-    "KKR",
-    "Brookfield",
-    "Petróleo",
-    "Energía"
-   ],
-   "sesgos": [
-    {
-     "activo": "Blackstone",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "KKR",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Brookfield",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "blackstone",
-    "kkr",
-    "brookfield",
-    "kuwait",
-    "oleoductos",
-    "infraestructura",
-    "capital-privado"
-   ],
-   "tgText": "Blackstone, KKR y Brookfield pactan $16B con Kuwait para red de oleoductos. Mega-acuerdo PE en infraestructura energética. Señal de confianza en demanda de hidrocarburo.",
-   "xText": "🔌 $16B: Blackstone, KKR, Brookfield + Kuwait en oleoductos. Gigantes PE apuestan por infraestructura energética a largo plazo.",
-   "discordText": "**$16 mil millones en infraestructura energética**\n• Blackstone, KKR, Brookfield se unen\n• Inversión en red de oleoductos con Kuwait\n• Señal alcista para demanda de petróleo y gas",
-   "pushText": "$16B: Blackstone, KKR, Brookfield pactan mega-acuerdo de oleoductos con Kuwait",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Blackstone (BX) y KKR reaccionan alcistas; acciones de capital privado y gestoras suben.",
-    "despues": "Energía y petróleo reboten; índices amplios si se interpreta como confianza en demanda; bonos de corporativos energéticos.",
-    "escenarios": "Traders monitorean: (1) rotación capital hacia PE; (2) implicaciones geopolíticas Kuwait-Oriente Próximo; (3) flujos de energía verde vs. fósiles.",
-    "riesgos": "Acuerdo mega-PE puede señalar preocupación por drop en demanda futura; ambigüedad sobre timing de retorno; riesgos geopolíticos en Golfo Pérsico."
-   },
-   "macro": {
-    "dolar": null,
-    "oro": null,
-    "nasdaq": "neutral",
-    "dow": "alcista",
-    "sp500": "neutral-alcista",
-    "bitcoin": null,
-    "ethereum": null,
-    "bonos": null,
-    "petroleo": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": 944363486,
-   "fecha": "2026-07-25T13:30:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/crypto-diversified-investment-portfolio.html",
-   "via": "CNBC",
-   "original": "Does crypto make your portfolio less risky? Only if you do it right, experts say",
-   "titulo": "¿Criptomonedas reducen riesgo de portafolio? Solo si se hace bien, advierten expertos",
-   "resumen": "Análisis de expertos evalúa rol de criptoactivos en diversificación de carteras. Conclusión: beneficios de reducción de riesgo solo se materializan con estrategia correcta de asignación y gestión. El titular no detalla qué constituye la estrategia 'correcta'.",
-   "analisis": {
-    "porque": "Perspectiva experta sobre criptos en portafolios afecta decisiones de asignación institucional y retail; relevancia para gestores y traders.",
-    "queOcurrio": "Expertos analizan relación entre criptomonedas y diversificación; advierten que beneficios dependen de ejecución correcta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Bitcoin",
-    "Ethereum",
-    "Criptomonedas"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bitcoin",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Ethereum",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "criptomonedas",
-    "bitcoin",
-    "portafolio",
-    "diversificacion",
-    "riesgo"
-   ],
-   "tgText": "Expertos: criptos reducen riesgo de portafolio solo con estrategia correcta. Advertencia sobre asignación inadecuada. Bitcoin y Ethereum sensibles a estructura.",
-   "xText": "🪙 ¿Criptos = portafolio menos riesgoso? Solo si se hace bien, dicen expertos. Diversificación correcta es clave.",
-   "discordText": "**Criptomonedas y diversificación de portafolio**\n• Beneficios de reducción de riesgo dependen de estrategia\n• Advertencia de expertos sobre asignación\n• Bitcoin/Ethereum sensibles a estructura correcta",
-   "pushText": "Criptos reducen riesgo de portafolio solo con estrategia correcta",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Bitcoin y Ethereum reaccionan a percepciones de demanda institucional; volúmenes de futuros.",
-    "despues": "Fondos indexados cripto; altcoins; índices amplios si se interpreta como integración cripto en asignación.",
-    "escenarios": "Traders vigilarán: (1) flujos institucionales hacia criptos; (2) correlaciones BTC/SPX; (3) volatilidad implícita en opciones cripto.",
-    "riesgos": "Análisis de 'estrategia correcta' es vago; riesgo de sobrevaloración cripto en contexto de tasas altas; volatilidad extrema cripto invalida beneficios de diversificación."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 955484134,
-   "fecha": "2026-07-25T12:49:58.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/amazon-other-stocks-with-momentum-heading-into-earnings.html",
-   "via": "CNBC",
-   "original": "These stocks have momentum on their side heading into earnings, including Amazon",
-   "titulo": "Acciones con momentum encabezan carrera hacia earnings; Amazon en la mira",
-   "resumen": "Análisis de mercado identifica un conjunto de acciones que exhiben momentum técnico favorable de cara a la temporada de resultados corporativos, con Amazon como actor principal. El movimiento sugiere posicionamiento de traders anticipando reacciones post-earnings.",
-   "analisis": {
-    "porque": "Momentum previa a earnings cataliza flujos especulativos; Amazon afecta índices amplios y comanda sector tecnológico.",
-    "queOcurrio": "Identificación de acciones con momentum técnico positivo encabezando carrera hacia temporada de earnings.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Amazon"
-   ],
-   "sesgos": [
-    {
-     "activo": "Amazon",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "momentum",
-    "earnings",
-    "amazon",
-    "técnico"
-   ],
-   "tgText": "Acciones con momentum fuerte encabezan la carrera hacia earnings. Amazon lidera. Analistas ven oportunidad en movimientos técnicos previos a resultados.",
-   "xText": "Momentum alcista domina antes de earnings. Amazon protagonista. Traders posicionados para volatilidad post-resultados.",
-   "discordText": "**Momentum técnico fuerte pre-earnings**\n• Amazon lidera movimiento\n• Flujos especulativos anticipan reacciones\n• Volúmenes elevados esperados en temporada de resultados",
-   "pushText": "Acciones con momentum dominan antes de earnings; Amazon encabeza",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Amazon y tech NASDAQ reaccionan a momentum técnico; volúmenes de opciones amplificadores.",
-    "despues": "S&P500 amplío; sector de consumo si Amazon lidera; índices de volatilidad (VIX) comprimidos.",
-    "escenarios": "Traders monitorean rotaciones de flujos; niveles técnicos de soporte/resistencia; gamma exposure en opciones de Amazon.",
-    "riesgos": "Momentum puede revertirse bruscamente; earnings decepcionantes desinflan posiciones; correcciones técnicas frecuentes en pre-earnings."
    },
    "macro": null,
    "updates": []
