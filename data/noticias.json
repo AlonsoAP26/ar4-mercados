@@ -4626,5 +4626,304 @@
       ],
       "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
     }
+  },
+  {
+    "title": "Wall Street cae y el Nasdaq entra en corrección tras la Fed y el desplome de chips",
+    "excerpt": "El S&P 500 perdió 1,5% y el Nasdaq 100 cedió 2,1% en una sesión marcada por la Fed, el rally de bonos largos y el derrumbe de semiconductores.",
+    "symbol": "FOREXCOM:NSXUSD",
+    "trend": "down",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La sesión en cifras</h3><p>El S&P 500 (FOREXCOM:SPXUSD) cerró en 7.316,15 puntos, con una caída de 1,5% en la jornada que se sumó a un retroceso de 2,4% en la semana y 1,7% en el mes. El Nasdaq 100 (FOREXCOM:NSXUSD) fue el más castigado: cedió 2,1% en el día hasta 27.192,31 puntos, acumula una baja de 6,2% en la semana y de 8,7% en el mes. El índice avanzó por encima de su media de 200 sesiones, pero el RSI de 14 días quedó en 32,1, cerca de zona de sobreventa técnica. El S&P 500 cerró la rueda con una baja de 1,52% en 7.316,15 unidades, según CNBC, mientras el Nasdaq Composite retrocedió 1,74% hasta 24.442,94 puntos, quedando más de 10% por debajo de su máximo histórico.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La Fed sostiene la tasa entre tres disidencias</h3><p>El detonante de la parte final de la rueda fue la decisión de política monetaria. La Reserva Federal, presidida por Kevin Warsh, mantuvo la tasa sin cambios pero con tres votos disidentes dentro del comité, lo que CNN Business describió como una reunión que terminó en un giro adicional a la baja para las acciones estadounidenses tras las palabras del propio Warsh en conferencia de prensa. El mercado de bonos reaccionó con escepticismo a los mensajes del banco central sobre el control de la inflación, según reportó CNBC, lo que llevó a los rendimientos largos a extender su ascenso.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Semiconductores, el epicentro del derrumbe</h3><p>La brecha entre el S&P 500 y el Nasdaq no es casual: el índice tecnológico lleva varias sesiones arrastrado por un desplome en el sector de semiconductores, que Bloomberg atribuyó a señales de avance de China en fabricación de chips avanzados, sumadas a dudas crecientes sobre la sostenibilidad del gasto de capital en inteligencia artificial de las grandes tecnológicas. El propio Nasdaq 100 entró en territorio de corrección técnica, extendiendo su caída desde el récord a cerca de 11%, de acuerdo con Bloomberg. Empresas como Intel, Dell y AMD figuraron entre las más golpeadas en las últimas ruedas.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lectura para Latinoamérica</h3><p>El Ibovespa (BMFBOVESPA:IBOV) siguió el tono negativo global y cerró en 173.885,34 puntos, con una baja de 1,5% en el día, aunque conserva una ganancia de 1,1% en el mes. El índice dólar (DXY) cedió 0,6% a 100,8 puntos, una señal de que la aversión al riesgo no se tradujo en una búsqueda generalizada de dólares, un dato a monitorear por las mesas de cambio de la región en las próximas ruedas.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Datos técnicos y de renta fija que completan el panorama</h3><p>El RSI de 14 días del S&P 500 se ubica en 38, en terreno neutral pero acercándose a zona de sobreventa, mientras el índice se mantiene por encima de su media de 200 ruedas, entre un máximo de 52 semanas de 7.620,9 y un mínimo de 6.212,69. El Nasdaq 100 muestra un RSI de 32,1, más comprimido, con un rango de 52 semanas entre 22.673,88 y 30.762,2 puntos, lo que deja al índice a una distancia considerable de sus extremos anuales pese a la corrección técnica reciente. En renta fija, los rendimientos de los bonos del Tesoro a 30 años alcanzaron su nivel más alto desde 2007, según Bloomberg, un movimiento que presiona a las tecnológicas de mayor duración de flujos de caja y que explica en parte por qué el Nasdaq sufre más que el resto de los índices. El Ibovespa, con un RSI de 48,9, se mantiene en zona neutral y por encima de su media de 200 sesiones, entre un piso de 131.550 y un techo de 199.355 puntos en el último año.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La combinación de una Fed dividida, con tres disidencias en la votación de tasas, y un mercado de bonos que no termina de convencerse del control de la inflación, deja a Wall Street sin un ancla clara de corto plazo. El foco de las próximas ruedas estará en si el rally de rendimientos largos se estabiliza o sigue presionando a las tecnológicas de mayor peso en el Nasdaq, que ya opera en corrección técnica. Para la región, el retroceso del DXY en medio de la turbulencia global es la variable a seguir de cerca: si el dólar no logra fortalecerse pese a la aversión al riesgo, las monedas latinoamericanas podrían amortiguar parte del golpe que normalmente transmiten las caídas de Wall Street. El Ibovespa, que todavía conserva ganancia mensual, será un termómetro temprano de si el capital extranjero mantiene el apetito por activos brasileños en este contexto.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html"
+      },
+      {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-28/stock-market-today-dow-s-p-live-updates"
+      },
+      {
+        "name": "The Washington Post",
+        "url": "https://www.washingtonpost.com/business/2026/07/29/wall-street-stocks-dow-nasdaq/7aafba20-8b8b-11f1-8912-d71e69d679d7_story.html"
+      },
+      {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html"
+      }
+    ],
+    "aiSummary": {
+      "que": "Wall Street cerró en baja generalizada: el S&P 500 perdió 1,5% y el Nasdaq 100 cayó 2,1%, entrando en corrección técnica.",
+      "porque": "La Fed mantuvo tasas sin cambios pero con tres disidencias, el mercado de bonos largos elevó sus rendimientos y un desplome en semiconductores por dudas sobre el gasto en IA y avances chinos en chips profundizó la caída tecnológica.",
+      "activos": [
+        "S&P 500",
+        "Nasdaq 100",
+        "Ibovespa",
+        "Dólar (DXY)",
+        "Semiconductores"
+      ],
+      "siguiente": "La atención pasa a si los rendimientos largos del Tesoro siguen subiendo y si el sector de chips estabiliza su racha negativa en las próximas ruedas."
+    },
+    "aiScenarios": {
+      "alcista": 20,
+      "lateral": 35,
+      "bajista": 45
+    },
+    "aiDetects": {
+      "probabilidad": 62,
+      "riesgo": "Alto",
+      "lectura": "La presión sobre semiconductores y el ruido en tasas largas mantienen el sesgo bajista de corto plazo en la tecnología, con el Nasdaq más expuesto que el resto de los índices."
+    },
+    "timeline": [
+      {
+        "cuando": "Hace 2 días",
+        "texto": "El Nasdaq 100 se acercó a zona de corrección arrastrado por el desplome de semiconductores tras señales de avance de China en fabricación de chips."
+      },
+      {
+        "cuando": "Ayer",
+        "texto": "El Philadelphia Semiconductor Index extendió su racha negativa por cuarta sesión consecutiva, con Bolsas asiáticas como la de Corea del Sur también bajo fuerte presión."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "La Fed mantuvo la tasa de referencia sin cambios con tres disidencias; el S&P 500 cerró en 7.316,15 (-1,5%) y el Nasdaq 100 en 27.192,31 (-2,1%), entrando en corrección técnica."
+      },
+      {
+        "cuando": "Próximos días",
+        "texto": "El mercado seguirá de cerca la evolución de los rendimientos del Tesoro a 30 años, que tocaron su nivel más alto desde 2007."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué significa que un índice entre en 'corrección técnica'?",
+        "a": "Se considera corrección técnica cuando un índice cae al menos 10% desde su máximo histórico o reciente, un umbral que analistas usan para medir el deterioro de una tendencia."
+      },
+      {
+        "q": "¿Por qué disienten los miembros de la Fed en una decisión de tasas?",
+        "a": "Cada integrante del comité de política monetaria vota según su propia lectura de inflación y empleo; las disidencias reflejan diferencias genuinas sobre el ritmo adecuado de la política monetaria."
+      },
+      {
+        "q": "¿Por qué afecta a Latinoamérica una caída de Wall Street?",
+        "a": "Los mercados de la región suelen moverse en conjunto con el apetito de riesgo global; una caída en EE.UU. puede presionar a índices como el Ibovespa y a las monedas locales, aunque no siempre en la misma magnitud."
+      },
+      {
+        "q": "¿Qué relación hay entre los rendimientos de bonos largos y las tecnológicas?",
+        "a": "Las acciones tecnológicas suelen valuarse por flujos de caja futuros; cuando suben los rendimientos de largo plazo, ese valor presente se reduce y presiona más a estas acciones que a sectores tradicionales."
+      }
+    ],
+    "impactScore": 8,
+    "relatedSymbols": [
+      "FOREXCOM:SPXUSD",
+      "BMFBOVESPA:IBOV",
+      "CAPITALCOM:DXY",
+      "NASDAQ:AAPL",
+      "NASDAQ:NVDA"
+    ],
+    "category": "Índices",
+    "heroType": "index",
+    "slug": "wall-street-cae-y-el-nasdaq-entra-en-correccion-tras-la-fed--ms6ntlix",
+    "author": "AR4 Mercados",
+    "date": "2026-07-29",
+    "sourceName": "CNBC",
+    "sourceUrl": "https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html",
+    "marketPanel": [
+      {
+        "symbol": "FOREXCOM:SPXUSD",
+        "nombre": "S&P 500",
+        "yahooSymbol": "^GSPC",
+        "fuente": "Yahoo Finance (^GSPC)",
+        "fechaUltimaVela": "2026-07-29",
+        "precio": 7316.15,
+        "cierreAnterior": 7428.78,
+        "variacionDiaPct": -1.5,
+        "variacionSemanaPct": -2.4,
+        "variacionMesPct": -1.7,
+        "variacionAnioPct": 14.5,
+        "rangoDiaReal": {
+          "minimo": 7313.92,
+          "maximo": 7450.84
+        },
+        "rsi14": 38,
+        "lecturaRsi": "neutral",
+        "media50": 7468.1,
+        "media200": 7015.51,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 84.18,
+        "maximo52sem": 7620.9,
+        "minimo52sem": 6212.69,
+        "distanciaAMaximo52semPct": -4,
+        "distanciaAMinimo52semPct": 17.8,
+        "soportes": [
+          7294.18,
+          7237.85,
+          7107.86
+        ],
+        "resistencias": [
+          7536.42,
+          7579.71,
+          7620.9
+        ],
+        "patronUltimaVela": "vela bajista de cuerpo amplio"
+      },
+      {
+        "symbol": "FOREXCOM:NSXUSD",
+        "nombre": "Nasdaq 100",
+        "yahooSymbol": "^NDX",
+        "fuente": "Yahoo Finance (^NDX)",
+        "fechaUltimaVela": "2026-07-29",
+        "precio": 27192.31,
+        "cierreAnterior": 27763.13,
+        "variacionDiaPct": -2.1,
+        "variacionSemanaPct": -6.2,
+        "variacionMesPct": -8.7,
+        "variacionAnioPct": 16.4,
+        "rangoDiaReal": {
+          "minimo": 27176.03,
+          "maximo": 27954.91
+        },
+        "rsi14": 32.1,
+        "lecturaRsi": "neutral",
+        "media50": 29418.32,
+        "media200": 26471.69,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 599.93,
+        "maximo52sem": 30762.2,
+        "minimo52sem": 22673.88,
+        "distanciaAMaximo52semPct": -11.6,
+        "distanciaAMinimo52semPct": 19.9,
+        "soportes": [
+          25086.36,
+          24954.18,
+          24632.92
+        ],
+        "resistencias": [
+          29678.89,
+          29856.94,
+          30328.79
+        ],
+        "patronUltimaVela": "vela bajista de cuerpo amplio"
+      },
+      {
+        "symbol": "BMFBOVESPA:IBOV",
+        "nombre": "Ibovespa (Brasil)",
+        "yahooSymbol": "^BVSP",
+        "fuente": "Yahoo Finance (^BVSP)",
+        "fechaUltimaVela": "2026-07-29",
+        "precio": 173885.34,
+        "cierreAnterior": 176565,
+        "variacionDiaPct": -1.5,
+        "variacionSemanaPct": -2.1,
+        "variacionMesPct": 1.1,
+        "variacionAnioPct": 30.2,
+        "rangoDiaReal": {
+          "minimo": 173885.34,
+          "maximo": 176563.84
+        },
+        "rsi14": 48.9,
+        "lecturaRsi": "neutral",
+        "media50": 173089.17,
+        "media200": 171812.15,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 2355.71,
+        "maximo52sem": 199355,
+        "minimo52sem": 131550,
+        "distanciaAMaximo52semPct": -12.8,
+        "distanciaAMinimo52semPct": 32.2,
+        "soportes": [
+          173544,
+          172219,
+          169819
+        ],
+        "resistencias": [
+          174380,
+          178350.5,
+          186057.5
+        ],
+        "patronUltimaVela": "vela bajista de cuerpo amplio"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-07-29",
+        "precio": 100.8,
+        "cierreAnterior": 101.38,
+        "variacionDiaPct": -0.6,
+        "variacionSemanaPct": -0.3,
+        "variacionMesPct": -0.3,
+        "variacionAnioPct": 2.2,
+        "rangoDiaReal": {
+          "minimo": 100.76,
+          "maximo": 101.5
+        },
+        "rsi14": 48.1,
+        "lecturaRsi": "neutral",
+        "media50": 100.39,
+        "media200": 99.13,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4478,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -1,
+        "distanciaAMinimo52semPct": 5.5,
+        "soportes": [
+          100.45,
+          99.34,
+          98.79
+        ],
+        "resistencias": [
+          101.63
+        ],
+        "patronUltimaVela": "vela bajista de cuerpo amplio"
+      }
+    ],
+    "marketData": {
+      "symbol": "FOREXCOM:NSXUSD",
+      "nombre": "Nasdaq 100",
+      "yahooSymbol": "^NDX",
+      "fuente": "Yahoo Finance (^NDX)",
+      "fechaUltimaVela": "2026-07-29",
+      "precio": 27192.31,
+      "cierreAnterior": 27763.13,
+      "variacionDiaPct": -2.1,
+      "variacionSemanaPct": -6.2,
+      "variacionMesPct": -8.7,
+      "variacionAnioPct": 16.4,
+      "rangoDiaReal": {
+        "minimo": 27176.03,
+        "maximo": 27954.91
+      },
+      "rsi14": 32.1,
+      "lecturaRsi": "neutral",
+      "media50": 29418.32,
+      "media200": 26471.69,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 599.93,
+      "maximo52sem": 30762.2,
+      "minimo52sem": 22673.88,
+      "distanciaAMaximo52semPct": -11.6,
+      "distanciaAMinimo52semPct": 19.9,
+      "soportes": [
+        25086.36,
+        24954.18,
+        24632.92
+      ],
+      "resistencias": [
+        29678.89,
+        29856.94,
+        30328.79
+      ],
+      "patronUltimaVela": "vela bajista de cuerpo amplio"
+    }
   }
 ]
