@@ -100,4 +100,70 @@ async function callApi(apiKey, body) {
   throw new Error(lastErr);
 }
 
-module.exports = { callApi, makeFail };
+// Quita la valla ```json ... ``` si envuelve TODO el texto.
+function quitarFence(t) {
+  const f = String(t).trim().match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+  return (f ? f[1] : String(t)).trim();
+}
+
+// Extrae el objeto JSON de la respuesta del modelo.
+//
+// Dos trampas que costaron el fallo del 28/jul en noticias:
+//  1. Con busqueda web la respuesta llega troceada en MUCHOS bloques de texto,
+//     y si el turno se pausa y se reanuda el JSON queda PARTIDO entre bloques:
+//     ningun trozo suelto es un JSON valido. Por eso se prueba primero el
+//     texto completo concatenado (en crudo: recortar cada trozo pegaria la
+//     ultima palabra de uno con la primera del siguiente).
+//  2. El cuerpo es HTML lleno de comillas escapadas y llaves, asi que
+//     indexOf('{')/lastIndexOf('}') corta por el sitio errado. Aqui se cuentan
+//     las llaves ignorando las que viven dentro de cadenas.
+//
+// `requeridos` son los campos que debe traer el objeto bueno; sirven para no
+// confundirse con un objeto senuelo que aparezca antes en el texto.
+// Devuelve el objeto, o null si la respuesta venia de verdad cortada.
+function extraerJson(allContent, requeridos) {
+  const campos = Array.isArray(requeridos) && requeridos.length ? requeridos : ['title'];
+  const textos = (allContent || []).filter((b) => b && b.type === 'text' && b.text).map((b) => b.text);
+  if (!textos.length) return null;
+
+  const buscarEn = (texto) => {
+    for (let inicio = texto.indexOf('{'); inicio !== -1; inicio = texto.indexOf('{', inicio + 1)) {
+      let prof = 0, enCadena = false, escapado = false;
+      for (let i = inicio; i < texto.length; i++) {
+        const c = texto[i];
+        if (escapado) { escapado = false; continue; }
+        if (c === '\\') { escapado = true; continue; }
+        if (c === '"') { enCadena = !enCadena; continue; }
+        if (enCadena) continue;
+        if (c === '{') prof++;
+        else if (c === '}' && --prof === 0) {
+          try {
+            const obj = JSON.parse(texto.slice(inicio, i + 1));
+            if (obj && campos.every((k) => obj[k])) return obj;
+          } catch (e) { /* no era el objeto bueno; probar la siguiente llave */ }
+          break;
+        }
+      }
+    }
+    return null;
+  };
+
+  // De mas a menos probable: el texto completo (cubre el JSON partido en
+  // trozos) y despues cada bloque suelto, del ultimo al primero.
+  const candidatos = [quitarFence(textos.join(''))];
+  for (let i = textos.length - 1; i >= 0; i--) candidatos.push(quitarFence(textos[i]));
+  for (const cand of candidatos) {
+    const obj = buscarEn(cand);
+    if (obj) return obj;
+  }
+  return null;
+}
+
+// Ultimo bloque de texto, recortado: sirve para volcarlo al log cuando la
+// extraccion falla y hay que ver que devolvio el modelo.
+function ultimoTexto(allContent) {
+  const textos = (allContent || []).filter((b) => b && b.type === 'text' && b.text).map((b) => b.text);
+  return textos.length ? quitarFence(textos[textos.length - 1]) : '';
+}
+
+module.exports = { callApi, makeFail, extraerJson, ultimoTexto };

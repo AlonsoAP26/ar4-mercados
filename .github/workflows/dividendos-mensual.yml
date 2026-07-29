@@ -1,0 +1,74 @@
+name: Calendario mensual de dividendos
+
+# Una pieza al mes: el calendario de dividendos del mes SIGUIENTE.
+#
+# Por que el dia 26: se publica antes de que empiece el mes que cubre, para
+# que las fechas ex-dividendo que lista sigan por delante del lector. Un
+# recuento del mes ya pasado se lee; un calendario del mes que viene se usa.
+# Todos los meses tienen dia 26, asi que la fecha nunca se salta.
+#
+# Por que 13:00 UTC (8:00 am Lima): lejos de la publicacion diaria (21:30 UTC)
+# y del vigia automatico (22:45 UTC), para que dos workflows no se peleen por
+# el mismo data/noticias.json. Aun asi el push reintenta con rebase, igual que
+# el diario, por si acaso.
+#
+# A diferencia del contenido diario, este NO se salta ningun dia: los
+# dividendos se declaran y se pagan tambien en meses tranquilos.
+
+on:
+  schedule:
+    - cron: '0 13 26 * *'
+  workflow_dispatch:
+
+concurrency:
+  group: calendario-dividendos
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      # Igual que en el diario: traer el master mas reciente antes de generar,
+      # para que el candado anti-duplicados vea lo que ya esta publicado.
+      - name: Actualizar al master mas reciente
+        run: git pull --rebase origin master
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar calendario de dividendos
+        id: dividendos
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-dividendos.js
+
+      - name: Commit y push
+        if: always() && steps.dividendos.outcome == 'success'
+        run: |
+          git config user.name "AR4 Mercados Bot"
+          git config user.email "bot@ar4mercados.local"
+          git add data/noticias.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios que publicar (el calendario del mes ya existía)."
+            exit 0
+          fi
+          git commit -m "Calendario mensual de dividendos"
+          for intento in 1 2 3; do
+            if git pull --rebase --autostash origin master && git push; then
+              exit 0
+            fi
+            # Si el pull dejo un rebase a medias (conflicto), abortarlo: sin
+            # esto los reintentos mueren con "unmerged files" sin pullear.
+            git rebase --abort 2>/dev/null || true
+            echo "Push fallido, reintento $intento..."
+            sleep 5
+          done
+          echo "No se pudo publicar tras 3 intentos."
+          exit 1

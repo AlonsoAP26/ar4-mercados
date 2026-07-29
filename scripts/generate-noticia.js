@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { buildDossier, dossierToPrompt, TV_NAMES } = require('./_market-data');
 
-const { callApi, makeFail } = require('./_anthropic');
+const { callApi, makeFail, extraerJson, ultimoTexto } = require('./_anthropic');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'noticias.json');
 const fail = makeFail('Generador de noticias');
@@ -100,8 +100,11 @@ async function main() {
   const noticias = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
   // Candado anti-duplicados: si ya hay contenido de hoy (re-corrida manual o
   // relanzamiento del watchdog), no se genera otro. Salida 0 = corrida verde.
+  // OJO: el calendario mensual de dividendos vive en ESTE mismo feed pero es
+  // otra pieza. Sin excluirlo, el dia 1 de cada mes su publicacion haria que
+  // el generador diario se saltara la noticia del dia.
   const hoyGuard = new Date().toISOString().slice(0, 10);
-  if (noticias.some((x) => String(x.date || x.fecha || '').slice(0, 10) === hoyGuard)) {
+  if (noticias.some((x) => x.category !== 'Dividendos' && String(x.date || x.fecha || '').slice(0, 10) === hoyGuard)) {
     console.log('Ya hay contenido publicado hoy (' + hoyGuard + '); nada que generar.');
     process.exit(0);
   }
@@ -255,67 +258,14 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
     console.warn('El modelo no ejecutó ninguna búsqueda web (stop_reason=' + data.stop_reason + ').');
   }
 
-  // OJO: con busqueda web la respuesta trae MUCHOS bloques de texto (el modelo
-  // escribe antes de buscar, y cada trozo citado viaja en su propio bloque).
-  // Si el turno se pausa y se reanuda, el JSON final queda PARTIDO entre varios
-  // bloques: ninguno suelto es un JSON valido y el parseo bloque-a-bloque
-  // fallaba justo ahi (el fallo del 28/jul). Ahora se prueba primero el texto
-  // completo concatenado y solo despues cada bloque por separado.
-  const allTexts = allContent.filter((b) => b.type === 'text' && b.text).map((b) => b.text);
-  if (!allTexts.length) {
-    fail('Respuesta sin bloque de texto. stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
-  }
-
-  const quitarFence = (t) => {
-    const f = t.trim().match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
-    return (f ? f[1] : t).trim();
-  };
-
-  // Recorre las llaves de apertura y devuelve el primer objeto BALANCEADO que
-  // parsea y trae los campos de una noticia. Cuenta llaves ignorando las que
-  // viven dentro de cadenas, porque el "body" es HTML lleno de comillas y
-  // escapes: con indexOf('{')/lastIndexOf('}') se cortaba por el sitio errado.
-  const extraerNoticia = (texto) => {
-    for (let inicio = texto.indexOf('{'); inicio !== -1; inicio = texto.indexOf('{', inicio + 1)) {
-      let prof = 0, enCadena = false, escapado = false;
-      for (let i = inicio; i < texto.length; i++) {
-        const c = texto[i];
-        if (escapado) { escapado = false; continue; }
-        if (c === '\\') { escapado = true; continue; }
-        if (c === '"') { enCadena = !enCadena; continue; }
-        if (enCadena) continue;
-        if (c === '{') prof++;
-        else if (c === '}' && --prof === 0) {
-          try {
-            const obj = JSON.parse(texto.slice(inicio, i + 1));
-            if (obj && obj.title && obj.body) return obj;
-          } catch (e) { /* no era el objeto bueno; probar la siguiente llave */ }
-          break;
-        }
-      }
-    }
-    return null;
-  };
-
-  // De mas a menos probable: el texto completo (cubre el JSON partido en
-  // trozos) y despues cada bloque suelto, del ultimo al primero. Se unen los
-  // bloques EN CRUDO: recortarlos uno a uno pegaria la ultima palabra de un
-  // trozo con la primera del siguiente.
-  const candidatos = [quitarFence(allTexts.join(''))];
-  for (let i = allTexts.length - 1; i >= 0; i--) candidatos.push(quitarFence(allTexts[i]));
-
-  let nueva = null;
-  for (const cand of candidatos) {
-    nueva = extraerNoticia(cand);
-    if (nueva) break;
-  }
+  // La extraccion del JSON vive en _anthropic.js porque los dos generadores
+  // que usan busqueda web (noticias y dividendos) tropiezan con lo mismo: el
+  // JSON puede llegar partido entre bloques y el cuerpo HTML trae llaves y
+  // comillas escapadas que rompen un recorte ingenuo. Ver el fallo del 28/jul.
+  const nueva = extraerJson(allContent, ['title', 'body']);
   if (!nueva) {
-    console.error(quitarFence(allTexts[allTexts.length - 1]).slice(0, 1500));
-    fail('La IA no devolvió un JSON válido (ni suelto ni concatenado). Bloques de texto=' + allTexts.length + ' stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
-  }
-
-  if (!nueva.title || !nueva.body) {
-    fail('Faltan campos obligatorios (title/body).');
+    console.error(ultimoTexto(allContent).slice(0, 1500));
+    fail('La IA no devolvió un JSON válido (ni suelto ni concatenado). stop_reason=' + data.stop_reason + ' uso=' + JSON.stringify(data.usage));
   }
 
   // VERIFICACION DE FUENTES: solo sobreviven las URLs que la busqueda devolvio
