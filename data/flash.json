@@ -1,7 +1,136 @@
 {
  "lastId": 33682,
- "actualizado": "2026-07-29T02:03:39.608Z",
+ "actualizado": "2026-07-29T05:31:58.475Z",
  "items": [
+  {
+   "id": 981575619,
+   "fecha": "2026-07-29T05:20:15.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html",
+   "via": "CNBC",
+   "original": "S&P 500 futures edge lower as oil climbs; South Korea stocks fall 8% amid chip rout: Live updates",
+   "titulo": "Futuros S&P 500 debiles; petróleo sube mientras acciones SK caen 8% en ruta de chips",
+   "resumen": "Futuros S&P 500 retroceden. Petróleo sube en contexto de geopolítica. Acciones de Corea del Sur caen 8% por presión en sector semiconductores. Datos en vivo desde Asia; titular no especifica catalizador de caída de chips.",
+   "analisis": {
+    "porque": "Trifecta de riesgos: debilidad en índices USA, presión en semiconductores (sector clave IA/capex), suba de petróleo (inflación). Crítico para asset allocation global.",
+    "queOcurrio": "Futuros S&P 500 debiles. Petróleo sube. SK stocks caen 8% por chip rout.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "Petróleo",
+    "KOSPI",
+    "Semiconductores",
+    "Nasdaq-100"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "KOSPI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "sp500-futures-weak",
+    "oil-rally",
+    "korea-stocks-8pct",
+    "chip-rout",
+    "geopolitica"
+   ],
+   "tgText": "🔴 Futuros S&P 500 débiles; petróleo sube. SK stocks caen 8% por crisis chips. Confluencia de riesgos: demanda débil + inflación.",
+   "xText": "S&P 500 futures débiles con petróleo en alza. Acciones SK caen 8% en caída de semiconductores. Riesgo inflacionario + debilidad en demanda.",
+   "discordText": "**Futuros débiles, petróleo en alza**\n• S&P 500 futures retroceden\n• Petróleo sube por geopolítica\n• SK stocks -8% por chip rout\n• ⚠️ Confluencia de riesgos",
+   "pushText": "S&P 500 futures débiles; petróleo sube; SK -8% en caída de chips",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "S&P 500 abre en rojo. Petróleo sube presionando DXY y esperanza de inflación (contrario a bono alcista). Semiconductores (NVIDIA, AMD) bajo presión.",
+    "despues": "Si petróleo rompe resistencias, CRB index amplía, alimentando dudas inflacionarias (presión en bonos, fortaleza USD). SK weakness contagia a supply chains.",
+    "escenarios": "Traders vigilan: (1) si caída de chips es coyuntural o refleja capex downcycle; (2) nivel de precios de petróleo vs. umbral inflacionario; (3) spillover de SK a Taiwan (TSMC exposure).",
+    "riesgos": "Titular es 'live updates'; datos podrían cambiar antes de apertura USA. Caída de SK podría ser profit-taking post-rally, no structural. Petróleo afectado por geopolítica conocida (Irán, etc.)."
+   },
+   "macro": {
+    "dolar": "Presión alcista por flight-to-safety + petróleo sube inflación esperada",
+    "oro": "Podría subir si risk-off intensifica; compite con DXY fortaleza",
+    "nasdaq": "Bajo presión por chips rout (QCOM, NVDA, AMD) y continuidad venta tech",
+    "dow": "Defensivo; podría resistir si sectores cíclicos sufren",
+    "sp500": "Rojo en futuros; riesgos: chips, petróleo, debilidad demanda",
+    "bitcoin": "Caída si riesgo-off; podría buscar soporte si petróleo sube (asset inflation esperada)",
+    "ethereum": "Correlacionado a tech/semiconductores; presión",
+    "bonos": "Presión alcista (yields suben) si petróleo + inflación; pero safe-haven (yields bajan) si riesgo equity intensifica",
+    "petroleo": "En alza; monitores ISM, inventarios OPEC, geopolítica"
+   },
+   "updates": []
+  },
+  {
+   "id": 959685845,
+   "fecha": "2026-07-29T04:12:30.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html",
+   "via": "CNBC",
+   "original": "Asian technology stocks extend sell-off with SoftBank down 10% as AI plays take a hit",
+   "titulo": "Acciones tech asiáticas extienden venta; SoftBank cae 10% mientras AI plays sufren golpe",
+   "resumen": "Acciones tecnológicas en Asia amplían caídas. SoftBank desciende 10%, líder en contagio de venta de AI-related stocks. Movimiento refleja propagación global de escepticismo sobre rentabilidad de inversión en IA.",
+   "analisis": {
+    "porque": "Señala que venta de tech no es fenómeno aislado USA; Asia sigue con debilidad. SoftBank es barómetro importante (portfolio VC/tech). Riesgo de propagación a índices globales.",
+    "queOcurrio": "Tech stocks asiáticos extienden venta. SoftBank cae 10%. AI plays sufren presión global.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Nikkei",
+    "Hang Seng",
+    "Tech Asia",
+    "SoftBank",
+    "Nasdaq-100"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tech Asia",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "SoftBank",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "asia-tech-selloff",
+    "softbank-10pct",
+    "ai-trade-weakness",
+    "global-contagion"
+   ],
+   "tgText": "Tech Asia en venta; SoftBank cae 10%. Contagio global de escepticismo AI. Riesgo para índices asiáticos y Nasdaq.",
+   "xText": "Acciones tech asiáticas extienden venta. SoftBank baja 10% liderando caída de AI plays. Contagio global de debilidad.",
+   "discordText": "**Asia tech bajo presión**\n• SoftBank cae 10%\n• Contagio en AI plays\n• Propagación global de escepticismo\n• Riesgo para Nikkei/Hang Seng",
+   "pushText": "Tech Asia en caída; SoftBank -10% lidera venta de AI plays",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Nikkei, Hang Seng reaccionan primero. SoftBank es indicador de salud del ecosistema venture-backed tech asiático.",
+    "despues": "Nasdaq-100 podría extender caídas si Asia confirma venta es estructural. Dólar USA se fortalece (flight-to-safety).",
+    "escenarios": "Traders vigilan: (1) si venta en Asia es spillover de Google/MSFT o factor local; (2) posiciones de SoftBank Vision Fund en mega-cap USA; (3) si emerge pain en carry trades JPY.",
+    "riesgos": "Venta podría ser cierre de posiciones pre-fin de mes. SoftBank es exposición asimétrica; su caída no necesariamente presiona Nikkei proporcionalmente."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 903463089,
    "fecha": "2026-07-29T01:17:13.000Z",
@@ -607,6 +736,220 @@
     }
    ],
    "actualizado": "2026-07-28T20:44:40+00:00"
+  },
+  {
+   "id": 968507002,
+   "fecha": "2026-07-28T20:02:50.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/apple-touches-5-trillion-market-cap-for-first-time-.html",
+   "via": "CNBC",
+   "original": "Apple touches $5 trillion market cap for first time",
+   "titulo": "Apple alcanza USD 5 billones en capitalización de mercado por primera vez",
+   "resumen": "Apple toca USD 5 billones en market cap por primera vez en su historia. Hito refleja dominio en ecosistema y demanda de dispositivos premium. No hay contexto sobre qué catalizadores impulsan el evento.",
+   "analisis": {
+    "porque": "Hito simbólico pero relevante: Apple es ahora más grande que PIB de la mayoría de países. Refleja concentración de valor en mega-cap y apetito inversor por 'winners' en IA/servicios.",
+    "queOcurrio": "Apple market cap toca USD 5 billones por primera vez.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "AAPL",
+    "S&P 500",
+    "Nasdaq-100"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAPL",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "apple-5trillion",
+    "market-cap",
+    "mega-cap",
+    "aapl"
+   ],
+   "tgText": "Apple alcanza USD 5T en market cap. Hito histórico refleja concentración de valor en mega-cap tech. Señal de apetito por 'winners'.",
+   "xText": "Apple toca USD 5 billones en capitalización de mercado por primera vez. Refleja dominio ecosistema y demanda premium.",
+   "discordText": "**Apple: USD 5T market cap**\n• Primer hito histórico\n• Mayor que PIB de casi todos los países\n• Refleja concentración en mega-cap",
+   "pushText": "Apple alcanza USD 5T en market cap",
+   "importancia": 4,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 955343449,
+   "fecha": "2026-07-28T20:01:40.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/microsoft-short-interest-hits-decade-high-ahead-of-q2-earnings.html",
+   "via": "CNBC",
+   "original": "Microsoft short interest hits decade high ahead of Q2 earnings as AI spending raises new questions",
+   "titulo": "Short interest en Microsoft toca máximo de década antes de Q2; dudas sobre gasto en IA",
+   "resumen": "Short interest en Microsoft alcanza máximo en 10 años previo a earnings Q2. Los vendedores en corto apuestan a debilidad; dudas sobre gastos en IA y rentabilidad emergen. El titular no especifica nivel exacto ni ratios de shorts respecto al float.",
+   "analisis": {
+    "porque": "Indica posicionamiento de mercado bajista extremo en Microsoft. Riesgo de squeeze alcista o confirmación de dudas fundamentales en earnings. Crítico para volatilidad alrededor de anuncio.",
+    "queOcurrio": "Short interest en MSFT alcanza máximo de 10 años antes de Q2 earnings. Mercado duda sobre rentabilidad de IA spending.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "MSFT",
+    "Nasdaq-100",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "MSFT",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "microsoft-shorts",
+    "q2-earnings",
+    "ai-spending",
+    "squeeze-risk",
+    "short-interest"
+   ],
+   "tgText": "⚠️ Shorts en MSFT tocan máximo de 10 años pre-Q2. Riesgo de squeeze alcista si earnings sorprende. IA spending en duda.",
+   "xText": "Short interest en MSFT alcanza máximo de década previo Q2. Posicionamiento bajista extremo con dudas sobre rentabilidad de IA spending.",
+   "discordText": "**Microsoft: máximo histórico de shorts**\n• Short interest toca máximo de 10 años\n• Antes de Q2 earnings\n• Dudas sobre ROI IA spending\n• ⚠️ Riesgo de squeeze alcista",
+   "pushText": "MSFT shorts en máximo de década; riesgo de squeeze ante Q2 earnings",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "MSFT reacciona primero. Si beat Q2, riesgo de short squeeze masivo (covers forzados). Si miss, confirms bajista setup.",
+    "despues": "Nasdaq-100 amplifica movimiento si squeeze ocurre (vol spike). Bonos sensibles si earnings anima/desinflama inflación de capex tech.",
+    "escenarios": "Traders vigilan: (1) fecha exacta de Q2 earnings y guidance IA; (2) nivel de short utilization y borrow rates; (3) si earnings sorprende al alza (squeeze catalyst) o a la baja (confirmación bearish).",
+    "riesgos": "Titular no cuantifica shorts; podría ser posicionamiento normal post-bid. Earnings es evento conocido; mercado ya precifica cierta incertidumbre. Squeeze no garantizado si earnings es simplemente mixto."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 993589338,
+   "fecha": "2026-07-28T19:45:10.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/hyperscalers-face-higher-capex-scrutiny-after-alphabet-report-panned.html",
+   "via": "CNBC",
+   "original": "Amazon, Meta and Microsoft face skeptical investors this week after Google report sparked sell-off",
+   "titulo": "Amazon, Meta y Microsoft enfrentan escepticismo tras reporte de Google desata venta masiva",
+   "resumen": "Reporte de Google genera venta masiva en mega-cap tecnológico. Amazon, Meta y Microsoft enfrenta escepticismo de inversores esta semana. El titular no especifica contenido del reporte de Google ni magnitud de la venta.",
+   "analisis": {
+    "porque": "Señala debilitamiento de confianza en narrativa de AI spending de gigantes tech. Riesgo directo a valuaciones de mega-cap y múltiplos del índice.",
+    "queOcurrio": "Reporte de Google genera venta en tech. Inversores muestran escepticismo hacia Amazon, Meta, Microsoft antes de reportes.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Nasdaq-100",
+    "S&P 500",
+    "GOOG",
+    "AMZN",
+    "META",
+    "MSFT"
+   ],
+   "sesgos": [
+    {
+     "activo": "Nasdaq-100",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Mega-cap Tech",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "google-report",
+    "mega-cap-tech",
+    "ai-spending",
+    "venta-masiva",
+    "amazon-meta-microsoft"
+   ],
+   "tgText": "🔴 Reporte de Google dispara venta en tech. Amazon, Meta, Microsoft bajo fuego inversor. Riesgo para Nasdaq-100 y S&P.",
+   "xText": "Reporte de Google genera venta masiva en tech. Amazon, Meta, Microsoft enfrentan escepticismo. Presión en Nasdaq-100 ante dudas sobre AI spending.",
+   "discordText": "**Venta masiva en tech tras reporte Google**\n• Amazon, Meta, Microsoft bajo presión\n• Escepticismo inversor sobre AI spending\n• Riesgo para Nasdaq-100 y S&P 500",
+   "pushText": "Google report desata venta en mega-cap tech; AMZN, META, MSFT bajo presión",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Nasdaq-100 y GAFAM lideran caídas. MSFT, AMZN, META reacciona primero por preocupaciones sobre ROI de inversión IA.",
+    "despues": "S&P 500 amplía pérdidas si el sello baja cruza 4.200. Bonos USA se fortalecen por flight-to-safety. VIX se expande.",
+    "escenarios": "Traders vigilan: (1) contenido del reporte de Google (margen, capex, ROI IA); (2) confirmación en earnings próximos de AMZN, META, MSFT; (3) si venta es técnica (chartista) o fundamental.",
+    "riesgos": "Titular sin especificar qué reporte de Google dispara venta. Podría ser sesgo seleccionador de CNBC. Venta podría ser corrección tras rally previo."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 949481380,
+   "fecha": "2026-07-28T19:15:15.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/the-dow-jumps-as-the-ai-trade-wobbles-plus-a-portfolio-name-goes-on-the-ma-hunt.html",
+   "via": "CNBC",
+   "original": "The Dow jumps as the AI trade wobbles. Plus, a portfolio name goes on the M&A hunt",
+   "titulo": "Dow sube mientras el rally de IA se tambalea; cartera entra en búsqueda de adquisiciones",
+   "resumen": "El índice Dow Jones registra ganancias mientras la euforia por inteligencia artificial muestra signos de debilitamiento. Simultáneamente, una cartera de inversión activa búsqueda de objetivos de M&A. El titular no especifica qué activos tecnológicos están bajo presión ni detalles del proceso de adquisición.",
+   "analisis": {
+    "porque": "Señala rotación de flujos desde mega-cap tecnológico hacia defensivos (Dow) y posible consolidación sectorial. Crítico para estrategias de asignación activa.",
+    "queOcurrio": "El Dow sube mientras AI trade pierde momentum. Una cartera inicia búsqueda de M&A.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Dow Jones",
+    "Nasdaq",
+    "Tecnología",
+    "Acciones de alto crecimiento"
+   ],
+   "sesgos": [
+    {
+     "activo": "Dow Jones",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech Mega-Cap",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "dow-jones",
+    "ai-trade",
+    "rotacion-sectorial",
+    "m&a",
+    "nasdaq"
+   ],
+   "tgText": "Dow sube mientras presión en IA. Cartera busca M&A. Señal de rotación desde tech mega-cap hacia defensivos.",
+   "xText": "Dow gana terreno conforme euforia en IA se debilita. Cartera activada en búsqueda de M&A. Rotación defensiva en marcha.",
+   "discordText": "**Dow en alza, IA bajo presión**\n• Rotación desde mega-cap tech hacia Dow\n• Cartera de inversión en búsqueda de M&A\n• Señal de consolidación sectorial",
+   "pushText": "Dow sube mientras cae presión en IA; rotación defensiva en marcha",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Dow Jones y sectores defensivos lideran; presión continúa en Nasdaq-100 por salidas de mega-cap tech.",
+    "despues": "Bancos regionales y utilidades podrían extender ganancias. Small-caps atraen flujos si rotación persiste.",
+    "escenarios": "Traders vigilan: (1) si rotación es coyuntural o refleja dudas sobre rentabilidad de IA; (2) si M&A impulsa M&A-arb; (3) nivel de soporte en Nasdaq.",
+    "riesgos": "Titular sin detalles de magnitud de rotación. Podría ser movimiento intradía normal. Acceso a la cartera específica no indicado."
+   },
+   "macro": null,
+   "updates": []
   },
   {
    "id": "33676",
@@ -7164,381 +7507,6 @@
     "bonos": "neutral"
    },
    "updates": []
-  },
-  {
-   "id": 938770543,
-   "fecha": "2026-07-25T05:29:38.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/finland-sand-battery-renewable-energy-storage.html",
-   "via": "CNBC",
-   "original": "Finland’s radical answer to renewable energy’s biggest headache: The world’s largest sand battery",
-   "titulo": "Finlandia desarrolla la batería de arena más grande del mundo para energías renovables",
-   "resumen": "Finlandia presenta una solución innovadora a uno de los principales desafíos de la energía renovable: el almacenamiento de energía térmica mediante baterías de arena. El sistema, descrito como el más grande del mundo, busca resolver la intermitencia de fuentes renovables. El titular no especifica capacidad, inversión ni cronograma de implementación comercial.",
-   "analisis": {
-    "porque": "Afecta el sector de energías limpias y tecnologías de almacenamiento, relevante para inversores en transición energética, utilities y fondos ESG. Podría impactar en competencia de tecnologías de almacenamiento alternativas (baterías de ión-litio, hidrógeno).",
-    "queOcurrio": "Finlandia desarrolla una batería de arena de gran escala como respuesta a limitaciones de almacenamiento en sistemas de energía renovable.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Índices Energéticos",
-    "Acciones Renovables",
-    "Utilities Europeas"
-   ],
-   "sesgos": [
-    {
-     "activo": "Sector Energías Limpias",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Baterías de Litio",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "energía-renovable",
-    "almacenamiento-energía",
-    "batería-arena",
-    "transición-energética",
-    "Finlandia",
-    "innovación"
-   ],
-   "tgText": "🔋 Finlandia desarrolla la batería de arena más grande del mundo como solución de almacenamiento para energías renovables, abordando uno de los principales desafíos técnicos del sector.",
-   "xText": "🔋 Finlandia desarrolla batería de arena de escala mundial para resolver almacenamiento en energías renovables. Innovación que puede redefinir competencia en tecnologías de almacenamiento.",
-   "discordText": "**Finlandia: Batería de Arena Gigante**\n• Primera de su escala mundial\n• Soluciona intermitencia de renovables\n• Impacto en tecnologías de almacenamiento alternativas\n• Relevante para sector ESG y transición energética",
-   "pushText": "Finlandia lanza batería de arena más grande del mundo para energías renovables",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de empresas de energías renovables y startups de almacenamiento (ICLN, TAN, Clean Energy ETFs) por redefinición de viabilidad tecnológica.",
-    "despues": "Fabricantes de baterías de litio y empresas de hidrógeno podrían reaccionar si la tecnología demuestra escala comercial competitiva.",
-    "escenarios": "Traders monitorean: (1) Capacidad técnica real vs. marketing, (2) Costos de implementación vs. alternativas, (3) Plazos para viabilidad comercial, (4) Impacto en demanda de litio y cobalto.",
-    "riesgos": "El titular carece de detalles técnicos, económicos y de viabilidad. Podría ser iniciativa piloto sin impacto comercial inmediato. Riesgo de sobrehype en sector renovable."
-   },
-   "macro": {
-    "dolar": "neutral",
-    "oro": "neutral",
-    "nasdaq": "levemente alcista (sector limpio)",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "neutral",
-    "petroleo": "neutro a bajista (largo plazo)"
-   },
-   "updates": []
-  },
-  {
-   "id": "913627514",
-   "fecha": "2026-07-25T02:17:11.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/spacex-launches-massive-starship-rocket-in-first-test-flight-since-ipo.html",
-   "via": "CNBC",
-   "original": "SpaceX launches massive Starship rocket in first test flight since IPO",
-   "titulo": "SpaceX lanza masivo Starship en primer test flight post-IPO",
-   "resumen": "SpaceX realiza el lanzamiento de su cohete Starship en la primera prueba de vuelo tras salida a bolsa. El evento representa hito operacional clave para la compañía y su posición en mercados de defensa, telecomunicaciones y transporte espacial.",
-   "analisis": {
-    "porque": "Éxito/fracaso de Starship afecta valuación de SpaceX, confianza en Musk como emprendedor, y contratos con gobierno/sector privado (defensa, satélites, carga útil). IPO reciente amplifica volatilidad por repricing.",
-    "queOcurrio": "SpaceX ejecuta lanzamiento de prueba de Starship en periodo post-IPO (sin resultado de vuelo detallado en titular).",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "SpaceX (privada/IPO)",
-    "Aerospace & Defense ETFs",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "SpaceX",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX",
-    "Starship",
-    "IPO",
-    "lanzamiento",
-    "cohete",
-    "defensa"
-   ],
-   "tgText": "🚀 SpaceX lanza Starship en primer test post-IPO. Hito operacional clave. Éxito/fracaso afecta valuación y confianza en Musk. #SpaceX",
-   "xText": "🚀 SpaceX ejecuta test flight de Starship post-IPO. Hito crítico para valuación. #SpaceX #Starship",
-   "discordText": "**SpaceX Lanza Starship**\n• Primer test post-IPO\n• Hito operacional clave\n• Afecta valuación y contratos\n• Mercado observa resultado",
-   "pushText": "SpaceX lanza Starship en primer test post-IPO",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "SpaceX shares (si negociables) reaccionan a éxito/fracaso; Aerospace & Defense ETFs siguen; confianza en Musk",
-    "despues": "Acciones de Musk (TSLA) pueden beneficiarse de sentimiento positivo; sector defensa si contrato se afianza",
-    "escenarios": "Traders vigilarán: (1) resultado técnico del lanzamiento; (2) daño/pérdidas; (3) implicaciones para contratos (DoD, NASA); (4) repercusión en TSLA por sentimiento Musk",
-    "riesgos": "Titular no detalla resultado; fallo en lanzamiento podría ser bajista para SpaceX; éxito podría dar 'bump' emocional sin impacto fundamental"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "901451174",
-   "fecha": "2026-07-24T22:43:56.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html",
-   "via": "CNBC",
-   "original": "Moody&apos;s says &apos;unprecedented&apos; AI spending threatens credit quality of Amazon, Meta, Alphabet and others",
-   "titulo": "Moody's advierte: gasto 'sin precedentes' en IA amenaza rating de Amazon, Meta y Alphabet",
-   "resumen": "La agencia calificadora Moody's emite alerta sobre riesgo de crédito de gigantes tecnológicos por su gasto acelerado e 'sin precedentes' en infraestructura de IA. Advierte que inversiones masivas podrían deteriorar métricas de apalancamiento y calidad crediticia.",
-   "analisis": {
-    "porque": "Rating downgrade o revisión a negativo de megacap tech triggerearía repricing inmediato en deuda corporativa, CDS y equities. Es aviso oficial de agencia calificadora, no especulación.",
-    "queOcurrio": "Moody's señala que el nivel de capex en IA de Amazon, Meta, Alphabet y otros es 'sin precedentes' y crea riesgo para perfil crediticio.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AMZN",
-    "META",
-    "GOOGL",
-    "Credit spreads",
-    "Bonos corporativos",
-    "CDX",
-    "NASDAQ",
-    "CDS"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMZN",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "META",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "GOOGL",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Credit spreads",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Moody's",
-    "rating",
-    "IA",
-    "capex",
-    "crédito",
-    "Amazon",
-    "Meta",
-    "Alphabet"
-   ],
-   "tgText": "🚨 Moody's alerta: capex 'sin precedentes' en IA de Amazon, Meta, Alphabet amenaza ratings. Riesgo para spreads de deuda y equities. Mercado reacciona.",
-   "xText": "🔴 CRÍTICO: Moody's advierte sobre riesgo crediticio de Amazon, Meta, Alphabet por gasto masivo en IA. Posible revisión de ratings. #CreditRisk",
-   "discordText": "**Alerta Moody's: Riesgo Crediticio IA**\n• Amazon, Meta, Alphabet en mira\n• Capex 'sin precedentes' en IA\n• Deterioro de apalancamiento esperado\n• Riesgo de downgrade",
-   "pushText": "Moody's alerta: capex en IA amenaza ratings de Amazon, Meta, Alphabet",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "CDS de AMZN, META, GOOGL se amplían; bonos corporativos se venden (yields suben); acciones caen por repricing de deuda",
-    "despues": "CDX HY y IG se amplían; USD fuerte por flight-to-quality; sector tech bajo presión sistémica",
-    "escenarios": "Traders monitean: (1) si Moody's coloca en revisión a negativo; (2) spreads OAS; (3) liquidez de bonos corporativos; (4) si S&P o Fitch siguen; (5) refinanciamiento en 2H26",
-    "riesgos": "Moody's es oficial e influyente, pero gasto en IA puede ser positivo a largo plazo si genera ROI; mercado podría ignorar si earnings sorprenden"
-   },
-   "macro": {
-    "nasdaq": "Presión bajista por repricing de deuda",
-    "bonos": "Spreads corporativos se amplían (yields suben)",
-    "dolar": "Sesgo alcista por flight-to-quality"
-   },
-   "updates": []
-  },
-  {
-   "id": "950260752",
-   "fecha": "2026-07-24T21:57:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/tesla-tsla-spacex-spcx-stock-starship-test-flight-musk-bad-week.html",
-   "via": "CNBC",
-   "original": "Musk&apos;s bad week: Tesla suffers worst slump since 2022, SpaceX drops ahead of Starship test flight",
-   "titulo": "Tesla sufre peor semana desde 2022; SpaceX presiona antes de lanzamiento de Starship",
-   "resumen": "Acciones de Tesla registran su peor desempeño semanal desde 2022, mientras SpaceX enfrenta presión de mercado previa a prueba de vuelo de Starship. Movimientos reflejan inquietud sobre rentabilidad de Tesla y riesgos operacionales en misiones espaciales.",
-   "analisis": {
-    "porque": "Tesla es componente clave de índices tech (NASDAQ, S&P 500) y cartera de Musk; caída amplificada por exposición a fondos pasivos. SpaceX/X subyacen al portafolio de Musk; presión puede afectar su capacity de inversión.",
-    "queOcurrio": "Tesla sufre caída semanal severa (sin % específico); SpaceX nota presión pre-lanzamiento de Starship (que el titular ubica post-IPO, pero nota reportaje de 2026).",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "TSLA",
-    "NASDAQ",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "TSLA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Tesla",
-    "TSLA",
-    "SpaceX",
-    "Musk",
-    "Starship",
-    "mercados"
-   ],
-   "tgText": "📉 TSLA: peor semana desde 2022. SpaceX bajo presión pre-lanzamiento Starship. Portafolio Musk debilitado. Impacto en NASDAQ y tech.",
-   "xText": "🔴 Tesla cae (peor semana desde 2022); SpaceX presionada antes de Starship. Portafolio Musk debilitado. #TSLA #SpaceX",
-   "discordText": "**Tesla & SpaceX en Presión**\n• TSLA: peor semana desde 2022\n• SpaceX: tensión pre-lanzamiento Starship\n• Portafolio Musk bajo estrés\n• Impacto en índices tech",
-   "pushText": "TSLA: peor semana desde 2022; SpaceX presionada antes de Starship",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "TSLA cae (ya en movimiento); arrastre a QQQ, SPY por ponderación; ETFs de tech ajustan",
-    "despues": "Activos ligados a Musk (X, cripto en su esfera) pueden sufrir; inversores Musk-exposed se cubren",
-    "escenarios": "Traders monitorean: (1) si caída es corrección técnica o repricing fundamental; (2) resultados de Starship; (3) próximos earnings de TSLA; (4) liquidez de posiciones",
-    "riesgos": "Titular sin % ni contexto de por qué cae Tesla; si Starship tiene éxito, presión en SpaceX puede revertirse"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "979039293",
-   "fecha": "2026-07-24T21:09:24.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/treasury-yields-fed-mortgage-rates.html",
-   "via": "CNBC",
-   "original": "Why bond investors are pushing up some of your interest rates",
-   "titulo": "Inversores de bonos presionan tasas de interés al alza en múltiples segmentos",
-   "resumen": "Inversores de renta fija están activamente presionando rendimientos al alza en bonos de múltiples vencimientos y emisores. El movimiento refleja repricing de expectativas de tasas y posiciones alcistas de largo plazo en bonos.",
-   "analisis": {
-    "porque": "Presión de rendimientos afecta costo de financiamiento para corporaciones y gobiernos. Presiona valuaciones de activos sensibles a tasa (equities, REITs) y modifican carry trades.",
-    "queOcurrio": "Inversores en bonos están vendiendo o reduciendo exposición, empujando rendimientos al alza en segmentos variados (sólo Treasury, corporativos, etc. no especificado).",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "S&P 500",
-    "NASDAQ",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Equities",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "bonos",
-    "rendimientos",
-    "tasas",
-    "renta-fija",
-    "mercado"
-   ],
-   "tgText": "📈 Bonos: inversores presionan rendimientos al alza en múltiples segmentos. Repricing de expectativas de tasas. Impacto en equities y financiamiento corporativo.",
-   "xText": "📊 Presión alcista en bonos: rendimientos suben por ventas de renta fija. Mercados reprecian expectativas de tasas. #Bonds #Yields",
-   "discordText": "**Rendimientos en Alza**\n• Inversores venden bonos activamente\n• Presión alcista en múltiples segmentos\n• Repricing de tasas esperadas\n• Impacto en costo de financiamiento",
-   "pushText": "Bonos: inversores presionan rendimientos al alza en múltiples segmentos",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Treasury yields (2Y, 10Y) suben; corporativos siguen; spreads OAS se comprimen o amplían según riesgo crediticio",
-    "despues": "Equities caen (costo de capital sube); USD fuerte; carry trades se desapalancan",
-    "escenarios": "Traders vigilarán: (1) si movimiento es temporal (technical) o refleja repricing fundamental; (2) volumen de flujos; (3) posición de hedge funds; (4) próximos datos de inflación",
-    "riesgos": "Titular sin detalles de qué segmentos específicos; movimiento podría revertirse si datos económicos se suavizan"
-   },
-   "macro": {
-    "bonos": "Presión alcista en rendimientos",
-    "sp500": "Sesgo bajista por repricing de costo de capital",
-    "dolar": "Sesgo alcista por yields más altos"
-   },
-   "updates": []
-  },
-  {
-   "id": "948750899",
-   "fecha": "2026-07-24T20:17:40.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html",
-   "via": "CNBC",
-   "original": "Megacap earnings and Fed meeting could test a market on edge next week. Here’s what’s ahead",
-   "titulo": "Ganancia megacap y reunión de Fed podrían sacudir mercado tenso la próxima semana",
-   "resumen": "La próxima semana traerá reportes de earnings de megacap y la reunión de la Reserva Federal, dos catalizadores clave para un mercado que opera con elevada sensibilidad. El titular no especifica números ni expectativas concretas, pero subraya el ambiente de tensión en valuaciones.",
-   "analisis": {
-    "porque": "Earnings y decisiones de política monetaria son los principales motores de valuación. En mercados 'al borde' (como señala el titular), cualquier sorpresa puede desencadenar ajustes rápidos.",
-    "queOcurrio": "Se anuncia que resultados trimestrales de grandes caps y comunicado de la Fed convergen en una semana, creando riesgo de volatilidad bifurcada.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P 500",
-    "NASDAQ",
-    "DXY",
-    "Bonos",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "earnings",
-    "Fed",
-    "megacap",
-    "volatilidad",
-    "mercado"
-   ],
-   "tgText": "📊 Próxima semana crítica: earnings megacap + reunión Fed. Mercado 'al borde' según CNBC. Máxima volatilidad esperada. Traders en alerta. #Markets",
-   "xText": "⚠️ Semana decisiva: earnings megacap + Fed convergen. Mercado en tensión extrema. Volatilidad muy alta esperada. #FOMC #Earnings",
-   "discordText": "**Semana Crítica de Mercados**\n• Reportes de earnings megacap\n• Reunión de la Reserva Federal\n• Mercado operando en modo tenso\n• Riesgo de volatilidad bifurcada",
-   "pushText": "Fed + Earnings megacap convergen: máxima volatilidad la próxima semana",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Índices amplios (S&P 500, NASDAQ) reaccionan a tono de Fed y surpresas de earnings; bonos por implicaciones de tasa terminal",
-    "despues": "Activos defensivos (oro, swaps de tasas); USD según ciclo esperado; acciones individuales según beat/miss",
-    "escenarios": "Traders vigilarán: (1) si Fed mantiene o sorprende en pausa; (2) si earnings reflejan slowdown o momentum; (3) forward guidance; (4) compresión de spreads",
-    "riesgos": "Confluencia de dos eventos de alto impacto amplifica riesgo de 'flash' moves; titular es prospectivo, no cuantificado"
-   },
-   "macro": {
-    "sp500": "Volatilidad muy alta esperada",
-    "nasdaq": "Volatilidad muy alta esperada",
-    "bonos": "Repricing según Fed",
-    "dolar": "Sesgo alcista si Fed mantiene tono hawkish"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7644,6 +7612,16 @@
   "https://www.cnbc.com/2026/07/28/jay-clayton-bill-pulte-senate-vote-trump-spy-chief.html",
   "https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html",
   "https://www.cnbc.com/2026/07/29/us-iran-war-hormuz-centcom.html",
-  "https://www.cnbc.com/2026/07/28/trump-asks-supreme-court-to-toss-83point3m-defamation-award-to-e-jean-carroll.html"
+  "https://www.cnbc.com/2026/07/28/trump-asks-supreme-court-to-toss-83point3m-defamation-award-to-e-jean-carroll.html",
+  "https://www.cnbc.com/2026/07/28/beshear-mcconnell-health-resign-senate-vacancy.html",
+  "https://www.cnbc.com/2026/07/28/morgan-stanley-says-buy-these-quality-stocks-they-also-pay-dividends.html",
+  "https://www.cnbc.com/2026/07/28/the-dow-jumps-as-the-ai-trade-wobbles-plus-a-portfolio-name-goes-on-the-ma-hunt.html",
+  "https://www.cnbc.com/2026/07/28/hyperscalers-face-higher-capex-scrutiny-after-alphabet-report-panned.html",
+  "https://www.cnbc.com/2026/07/28/microsoft-short-interest-hits-decade-high-ahead-of-q2-earnings.html",
+  "https://www.cnbc.com/2026/07/28/apple-touches-5-trillion-market-cap-for-first-time-.html",
+  "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html",
+  "https://www.cnbc.com/2026/07/29/why-america-super-rich-love-football-clubs-british.html",
+  "https://www.cnbc.com/2026/07/29/bts-concerts-hybe-record-results-shares-crash.html",
+  "https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html"
  ]
 }
