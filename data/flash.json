@@ -1,61 +1,7 @@
 {
- "lastId": 33688,
- "actualizado": "2026-07-29T08:11:09.054Z",
+ "lastId": 33690,
+ "actualizado": "2026-07-29T09:35:27.611Z",
  "items": [
-  {
-   "id": "33688",
-   "fecha": "2026-07-29T08:05:04+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33688",
-   "via": "DeItaone",
-   "original": "$F - FORD MOTOR SHARES UP 3.9% PREMARKET AFTER CO RAISES FY PROFIT OUTLOOK",
-   "titulo": "Ford sube 3,9% previo a apertura tras elevar guidance anual; F-Series recuperándose",
-   "resumen": "Acciones de Ford subieron 3,9% en premarket tras elevar guía de ganancias fiscales 2026. Compañía reportó desempeño superior a estimaciones en Q2 y señala recuperación sostenida en línea F-Series, flagship de ingresos. Mejora refleja demanda resiliente de vehículos pickup estadounidenses pese a presión macroeconómica.",
-   "analisis": {
-    "porque": "Ford es indicador clave de salud de demanda doméstica y consumo estadounidense. Elevación de guidance reduce riesgo de recesión proyectada y señala confianza de management en ciclo económico. Sector automotriz afecta cadena de suministro global y empleo.",
-    "queOcurrio": "Ford elevó guidance anual de ganancias y reportó ganancias Q2 superiores a estimaciones, con recuperación visible en F-Series. Acción sube 3,9% en premarket. El titular original (906159879) ya cubría este evento; esta es actualización de precio y momentum.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "F",
-    "S&P500",
-    "Sector Automotriz"
-   ],
-   "sesgos": [
-    {
-     "activo": "F",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "ford",
-    "earnings",
-    "guidance-raise",
-    "f-series",
-    "demanda-consumo"
-   ],
-   "tgText": "🚗 Ford (F) +3,9% premarket. Guía anual elevada, Q2 beats estimaciones, F-Series en recuperación. Señal alcista de demanda doméstica y confianza de management.",
-   "xText": "Ford +3,9% previo a apertura. Elevó guidance anual tras Q2 mejor de lo esperado. F-Series en recuperación. Señal positiva de demanda automotriz en EE.UU.",
-   "discordText": "**Ford Guidance Raise** (Actualización)\n• Precio premarket: +3,9%\n• Q2: resultados beat\n• Guía FY: elevada\n• F-Series: recuperación confirmada\n• Implicación: demanda resiliente",
-   "pushText": "Ford +3,9% premarket: guía anual elevada, F-Series recuperándose",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de Ford responden inmediatamente. Sector automotriz (GM, Tesla, proveedores) podría extender ganancia si mercado interpreta como fortaleza de demanda doméstica.",
-    "despues": "S&P500 se beneficia marginalmente por sector de peso. Bonos corporativos automotrices bajan yields. Proveedores de partes (Aptiv, Lear) podrían ver upside.",
-    "escenarios": "Traders monitorean: (1) if guidance raise refleja demanda real o inventario normalizándose; (2) márgenes de ganancias en H2 2026; (3) exposición a aranceles Trump sobre partes importadas; (4) competencia de EV erosionando pickup market.",
-    "riesgos": "Guía anual puede ser conservadora. Recuperación de F-Series podría ser temporal si demanda de consumo se debilita próximos trimestres. Trump tariffs podrían impactar costos posteriores."
-   },
-   "macro": null,
-   "updates": []
-  },
   {
    "id": "33687",
    "fecha": "2026-07-29T08:00:57+00:00",
@@ -134,6 +80,151 @@
     "bonos": "Bajista (yields suben)",
     "petroleo": "Neutral (Fed no controla oferta)"
    },
+   "updates": [
+    {
+     "fecha": "2026-07-29T08:22:17+00:00",
+     "id": "33690",
+     "texto": "Mercados de predicción (Kalshi) cotizan 77% de probabilidad de que la Fed mantenga tasas hoy; 23% de alza sorpresa de 25 puntos base. Citadel Securities anticipa que el presidente Kevin Warsh subirá tasas para reforzar credibilidad antiinflacionaria y señalar el fin de la era de forward guidance. División clara entre trader y operadores institucionales sobre intención de Warsh.",
+     "tgUrl": "https://t.me/walterbloomberg/33690"
+    }
+   ],
+   "actualizado": "2026-07-29T08:22:17+00:00"
+  },
+  {
+   "id": "33689",
+   "fecha": "2026-07-29T08:17:08+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33689",
+   "via": "DeItaone",
+   "original": "MIDDLE EAST CONFLICT ESCALATES Fighting between Iran and the US intensified overnight as Iran launched ballistic missiles at US forces, while the US and Saudi Arabia responded with strikes on Iran-backed militias in Iraq, ending a brief diplomatic pause. Saudi Arabia said it intercepted drones targeting its oil facilities for a second consecutive day. The US said all Iranian missiles aimed at its ",
+   "titulo": "Escalada en Oriente Medio: Irán lanza misiles, petróleo salta 4% y Hormuz se cierra",
+   "resumen": "Los enfrentamientos entre Irán y EE.UU. se intensificaron con lanzamiento de misiles balísticos iraníes y contraataques estadounidenses en Irak. El conflicto se expande a Arabia Saudí y Yemen con ataques hutíes. El petróleo Brent alcanzó USD 87/barril (+4%), el Estrecho de Hormuz permanece efectivamente cerrado y el transporte marítimo sufre disrupciones severas. Las perspectivas de negociación diplomática EE.UU.-Irán se desvanecen.",
+   "analisis": {
+    "porque": "Conflicto geopolítico activo que interrumpe oferta energética global, eleva prima de riesgo en crudo y genera incertidumbre sobre inflación y recesión. Afecta directamente decisiones de política monetaria y volatilidad de mercados.",
+    "queOcurrio": "Reanudación de hostilidades tras breve pausa diplomática. Irán lanzó misiles balísticos contra posiciones estadounidenses; EE.UU. y Arabia Saudí respondieron contra milicias respaldadas por Irán en Irak. Houthis atacaron instalaciones petrolíferas saudíes por segundo día consecutivo. Cierre efectivo del Estrecho de Hormuz.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (vía Walter Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Brent Crude",
+    "S&P 500",
+    "NASDAQ",
+    "Dólar (DXY)",
+    "Bonos USA",
+    "Oro",
+    "Energía",
+    "Transporte marítimo"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "misiles-balísticos",
+    "petróleo",
+    "hormuz",
+    "conflicto-oriente-medio",
+    "brent-crude",
+    "suministro-energético",
+    "volatilidad-mercados"
+   ],
+   "tgText": "🔥 ESCALADA CRÍTICA: Irán lanza misiles balísticos contra EE.UU.; petróleo +4% a USD 87/barril. Hormuz cerrado, ataques hutíes en expansión. Riesgo geopolítico al máximo.",
+   "xText": "⚠️ Escalada Irán-EE.UU.: misiles balísticos, petróleo +4% a USD 87/barril, Hormuz cerrado. Conflicto se expande a Arabia Saudí y Yemen. Alto riesgo de inflación.",
+   "discordText": "**GEOPOLÍTICA - BREAKING**\n• Irán lanza misiles contra bases estadounidenses\n• EE.UU./Arabia Saudí contraatacan en Irak\n• Petróleo Brent: USD 87/barril (+4%)\n• Estrecho de Hormuz efectivamente cerrado\n• Ataques hutíes contra instalaciones saudíes",
+   "pushText": "ALERTA: Escalada Irán-EE.UU., petróleo +4%, Hormuz cerrado",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo (Brent/WTI): reacción inmediata por interrupción de suministro y cierre del Estrecho de Hormuz. Traders de energía y fondos de cobertura rebalancean posiciones.",
+    "despues": "Bonos USA (yield sube por inflación esperada), Dólar (flight-to-safety), Oro (hedge geopolítico), S&P 500 (riesgo de recesión por choque de costos energéticos).",
+    "escenarios": "Traders vigilan: (1) Extensión del conflicto a actores regionales; (2) duración del cierre de Hormuz; (3) impacto en inflación de febrero-2026; (4) respuesta de bancos centrales a presión inflacionaria; (5) posibilidad de escalada naval en Mar Rojo.",
+    "riesgos": "Escalada descontrolada podría duplicar precios de crudo. Riesgo de cierre prolongado de Hormuz (20-30% del tráfico petrolero mundial). Impacto asimétrico en economías importadoras de petróleo. Posible error de cálculo militar."
+   },
+   "macro": {
+    "petroleo": "alcista muy fuerte (+4% a USD 87/barril)",
+    "dolar": "alcista por flight-to-safety",
+    "oro": "alcista por cobertura geopolítica",
+    "bonos": "alcista (yields suben por inflación esperada)",
+    "nasdaq": "bajista por presión inflacionaria",
+    "sp500": "bajista por choque de costos",
+    "bitcoin": "neutral a alcista (cobertura alternativa)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33688",
+   "fecha": "2026-07-29T08:05:04+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33688",
+   "via": "DeItaone",
+   "original": "$F - FORD MOTOR SHARES UP 3.9% PREMARKET AFTER CO RAISES FY PROFIT OUTLOOK",
+   "titulo": "Ford sube 3,9% previo a apertura tras elevar guidance anual; F-Series recuperándose",
+   "resumen": "Acciones de Ford subieron 3,9% en premarket tras elevar guía de ganancias fiscales 2026. Compañía reportó desempeño superior a estimaciones en Q2 y señala recuperación sostenida en línea F-Series, flagship de ingresos. Mejora refleja demanda resiliente de vehículos pickup estadounidenses pese a presión macroeconómica.",
+   "analisis": {
+    "porque": "Ford es indicador clave de salud de demanda doméstica y consumo estadounidense. Elevación de guidance reduce riesgo de recesión proyectada y señala confianza de management en ciclo económico. Sector automotriz afecta cadena de suministro global y empleo.",
+    "queOcurrio": "Ford elevó guidance anual de ganancias y reportó ganancias Q2 superiores a estimaciones, con recuperación visible en F-Series. Acción sube 3,9% en premarket. El titular original (906159879) ya cubría este evento; esta es actualización de precio y momentum.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "F",
+    "S&P500",
+    "Sector Automotriz"
+   ],
+   "sesgos": [
+    {
+     "activo": "F",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "ford",
+    "earnings",
+    "guidance-raise",
+    "f-series",
+    "demanda-consumo"
+   ],
+   "tgText": "🚗 Ford (F) +3,9% premarket. Guía anual elevada, Q2 beats estimaciones, F-Series en recuperación. Señal alcista de demanda doméstica y confianza de management.",
+   "xText": "Ford +3,9% previo a apertura. Elevó guidance anual tras Q2 mejor de lo esperado. F-Series en recuperación. Señal positiva de demanda automotriz en EE.UU.",
+   "discordText": "**Ford Guidance Raise** (Actualización)\n• Precio premarket: +3,9%\n• Q2: resultados beat\n• Guía FY: elevada\n• F-Series: recuperación confirmada\n• Implicación: demanda resiliente",
+   "pushText": "Ford +3,9% premarket: guía anual elevada, F-Series recuperándose",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de Ford responden inmediatamente. Sector automotriz (GM, Tesla, proveedores) podría extender ganancia si mercado interpreta como fortaleza de demanda doméstica.",
+    "despues": "S&P500 se beneficia marginalmente por sector de peso. Bonos corporativos automotrices bajan yields. Proveedores de partes (Aptiv, Lear) podrían ver upside.",
+    "escenarios": "Traders monitorean: (1) if guidance raise refleja demanda real o inventario normalizándose; (2) márgenes de ganancias en H2 2026; (3) exposición a aranceles Trump sobre partes importadas; (4) competencia de EV erosionando pickup market.",
+    "riesgos": "Guía anual puede ser conservadora. Recuperación de F-Series podría ser temporal si demanda de consumo se debilita próximos trimestres. Trump tariffs podrían impactar costos posteriores."
+   },
+   "macro": null,
    "updates": []
   },
   {
@@ -7442,59 +7533,6 @@
     "despues": "S&P500 amplío; sector de consumo si Amazon lidera; índices de volatilidad (VIX) comprimidos.",
     "escenarios": "Traders monitorean rotaciones de flujos; niveles técnicos de soporte/resistencia; gamma exposure en opciones de Amazon.",
     "riesgos": "Momentum puede revertirse bruscamente; earnings decepcionantes desinflan posiciones; correcciones técnicas frecuentes en pre-earnings."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 988736880,
-   "fecha": "2026-07-25T12:47:39.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/stocks-to-buy-before-its-too-late.html",
-   "via": "CNBC",
-   "original": "Morgan Stanley says buy these stocks ahead of their earnings, before it&apos;s too late",
-   "titulo": "Morgan Stanley recomienda compra de acciones antes de earnings; Amazon lidera momentum",
-   "resumen": "Morgan Stanley identifica un grupo de acciones con momentum favorable de cara a la temporada de resultados, incluyendo Amazon. El análisis sugiere oportunidades de compra antes de que los mercados reaccionen completamente a los earnings. El titular no especifica qué otras acciones están en el radar.",
-   "analisis": {
-    "porque": "Recomendaciones de grandes casas de bolsa pueden catalizar movimientos de capital institucional previos a earnings; Amazon es megacap con impacto en índices amplios.",
-    "queOcurrio": "Morgan Stanley publica análisis recomendando compra de acciones con momentum hacia temporada de earnings.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Amazon"
-   ],
-   "sesgos": [
-    {
-     "activo": "Amazon",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "earnings",
-    "morgan-stanley",
-    "amazon",
-    "recomendacion-compra"
-   ],
-   "tgText": "Morgan Stanley recomienda compra de acciones con momentum antes de earnings. Amazon lidera la lista. Analistas ven oportunidades previas a resultados corporativos.",
-   "xText": "Morgan Stanley: compren estas acciones antes de earnings. Amazon en el radar. Momentum alcista en megacaps antes de temporada de resultados.",
-   "discordText": "**Morgan Stanley recomienda acciones con momentum**\n• Análisis previo a temporada de earnings\n• Amazon lidera la recomendación\n• Oportunidad de compra antes de reacciones de mercado",
-   "pushText": "Morgan Stanley: compren acciones con momentum antes de earnings",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Amazon (AMZN) y sector tecnología NASDAQ reaccionan a recomendación de compra de casa de bolsa de primer nivel.",
-    "despues": "S&P500 amplió y otros megacaps en cartera de Morgan Stanley; sector de consumo discrecional si Amazon liderase movilización de flujos.",
-    "escenarios": "Traders vigilarán entrada institucional pre-earnings; volúmenes en opciones de Amazon; cobertura de otros analistas replicando recomendación.",
-    "riesgos": "Recomendación es prospectiva; earnings podrían ser decepcionantes; competencia de recomendaciones cruzadas de otras casas."
    },
    "macro": null,
    "updates": []
