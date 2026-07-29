@@ -1,7 +1,378 @@
 {
  "lastId": 33682,
- "actualizado": "2026-07-28T22:29:13.722Z",
+ "actualizado": "2026-07-29T02:03:39.608Z",
  "items": [
+  {
+   "id": 903463089,
+   "fecha": "2026-07-29T01:17:13.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/trump-asks-supreme-court-to-toss-83point3m-defamation-award-to-e-jean-carroll.html",
+   "via": "CNBC",
+   "original": "Trump, DOJ ask Supreme Court to toss $83.3M defamation award to E. Jean Carroll",
+   "titulo": "Trump y DOJ piden a Corte Suprema anular condena de USD 83.3M en caso Carroll",
+   "resumen": "Administración Trump y Departamento de Justicia solicitan a la Corte Suprema anular veredicto de defamación de USD 83.3 millones contra Trump en caso E. Jean Carroll. El movimiento refleja continuación de litigio civil de alto perfil con implicaciones legales y políticas.",
+   "analisis": {
+    "porque": "Litigio es relevante para mercados por: (1) riesgo residual a valuación Trump Media, (2) incertidumbre legal/política que puede afectar confianza de inversores, (3) precedente legal sobre responsabilidad personal de figura política/empresarial.",
+    "queOcurrio": "Trump y DOJ juntos peticionan Corte Suprema para anular sentencia de USD 83.3M en juicio Carroll por defamación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Trump Media (TMTG)",
+    "Índices Mercado Valores",
+    "Confianza Inversores"
+   ],
+   "sesgos": [
+    {
+     "activo": "Trump Media",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Emergencia",
+   "keywords": [
+    "Trump",
+    "E-Jean-Carroll",
+    "defamación",
+    "Corte-Suprema",
+    "USD-83M",
+    "litigio"
+   ],
+   "tgText": "⚖️ Trump y DOJ piden anular condena de USD 83.3M en caso Carroll ante Corte Suprema. Continuidad de litigio civil de alto perfil.",
+   "xText": "Trump y DOJ solicitan anulación de sentencia USD 83.3M en caso Carroll a Corte Suprema. Litigio continúa con implicaciones legales y políticas.",
+   "discordText": "**Trump Legal: Corte Suprema**\n• Petición: anular USD 83.3M\n• Caso: defamación E. Jean Carroll\n• Demandantes: Trump + DOJ\n• Riesgo legal: persistente",
+   "pushText": "Trump y DOJ piden anular sentencia de USD 83.3M a Corte Suprema",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "Trump Media (TMTG) puede oscilar levemente sobre noticias legales, pero impacto es secundario vs. valuación/demanda.",
+    "despues": "Mercado general poco afectado a menos que sentencia final re-confirme o amplifique; riesgo es político/reputacional, no financiero directo.",
+    "escenarios": "Traders monitorean: (1) velocidad Corte Suprema, (2) cobertura mediática de veredicto, (3) impacto potencial en confianza de inversores en Trump Media.",
+    "riesgos": "Corte Suprema puede rechazar petición o afirmar sentencia; litigio continúa siendo distracción política."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 900829983,
+   "fecha": "2026-07-29T00:59:08.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/us-iran-war-hormuz-centcom.html",
+   "via": "CNBC",
+   "original": "Iran launches surprise ballistic missile attack on U.S. forces in the Middle East",
+   "titulo": "Irán lanza ataque sorpresa con misiles balísticos contra fuerzas estadounidenses en Oriente Medio",
+   "resumen": "Irán ejecutó ataque con misiles balísticos contra posiciones militares estadounidenses en Oriente Medio, en acción que escaló tensiones ya elevadas. El ataque fue reportado como sorpresa, disparando volatilidad inmediata en mercados de energía, divisas y equities.",
+   "analisis": {
+    "porque": "Ataque directo Irán-EE.UU. con armas balísticas es evento de riesgo geopolítico extremo; afecta petróleo, refugio en oro, volatilidad global, percepción de tasas y ciclo económico.",
+    "queOcurrio": "Irán lanzó misiles balísticos contra fuerzas USA en Oriente Medio en operación descrita como sorpresa.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo Crudo",
+    "Oro",
+    "VIX",
+    "Bonos USA",
+    "DXY",
+    "EURUSD",
+    "Bitcoin",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Crudo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Breaking News",
+   "keywords": [
+    "Irán",
+    "EE.UU.",
+    "misiles",
+    "balísticos",
+    "Oriente-Medio",
+    "geopolítica",
+    "breaking"
+   ],
+   "tgText": "🚨 BREAKING: Irán lanza ataque con misiles balísticos contra fuerzas USA en Oriente Medio. Volatilidad extrema esperada en petróleo, oro, VIX y equities.",
+   "xText": "🚨 Irán lanza sorpresivo ataque con misiles balísticos vs. fuerzas USA en Oriente Medio. Volatilidad geopolítica extrema: petróleo alcista, VIX en alza.",
+   "discordText": "**🚨 BREAKING NEWS**\n• Irán lanza misiles balísticos\n• Objetivo: fuerzas USA en Oriente Medio\n• Ataque sorpresa reportado\n• Volatilidad extrema esperada",
+   "pushText": "🚨 Irán lanza misiles balísticos contra fuerzas USA",
+   "importancia": 10,
+   "reaccion": {
+    "primero": "Petróleo (WTI/Brent) salta 3-8%+; VIX explota 30-50%+ en minutos; oro sube fuerte (flight-to-safety); dólar volátil por ajuste de posiciones.",
+    "despues": "Equities globales bajo presión inmediata; yields de treasuries caen (demanda de refugio); spread corporativo sube; criptomonedas volátiles por risk-off.",
+    "escenarios": "Traders monitorean: (1) respuesta militar USA (represalias), (2) cierre Estrecho de Ormuz, (3) afectación suministros petróleo global, (4) sesgo político/electoral USA.",
+    "riesgos": "Riesgo de escalada incontrolada; noticia es confirmada (CNBC) pero respuesta militar futura es impredecible; volatilidad puede persistir días/semanas."
+   },
+   "macro": {
+    "petroleo": "alcista muy fuerte",
+    "oro": "alcista muy fuerte",
+    "dolar": "mixto (volatilidad alta, presión de risk-off vs. safety)",
+    "bonos": "bajista (yields caen por refugio)",
+    "nasdaq": "bajista por risk-off",
+    "sp500": "bajista por risk-off",
+    "bitcoin": "volátil (presión de deleveraging + refugio mixto)"
+   },
+   "updates": []
+  },
+  {
+   "id": 988345677,
+   "fecha": "2026-07-29T00:52:49.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html",
+   "via": "CNBC",
+   "original": "Oil jumps as U.S.-Iran resume strikes after a brief pause",
+   "titulo": "Petróleo sube tras reanudación de ataques EE.UU.-Irán después de pausa breve",
+   "resumen": "Nuevo escalamiento en conflicto Irán-EE.UU. con reanudación de ataques tras pausa breve. Petróleo crudo reacciona al alza reflejando riesgo geopolítico elevado y potencial disrupción de suministros. El conflicto continúa intensificando tensiones en Oriente Medio.",
+   "analisis": {
+    "porque": "Petróleo es activo crítico para inflación global, márgenes de energía e índices de volatilidad; cualquier disrupción de Oriente Medio afecta precios spot e inflacionarias.",
+    "queOcurrio": "EE.UU. e Irán reanudaron ataques tras periodo breve sin combate. Petróleo respondió con alza reflejo del riesgo geopolítico reinstalado.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo Crudo",
+    "DXY",
+    "Oro",
+    "Bonos USA",
+    "Sectores energía",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Crudo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "EE.UU.",
+    "ataques",
+    "petróleo",
+    "geopolítica",
+    "Oriente-Medio",
+    "supply-risk"
+   ],
+   "tgText": "⚠️ BREAKING: Ataques Irán-EE.UU. reanudan tras pausa breve. Petróleo sube por riesgo geopolítico. Vigilar disrupción de suministros y volatilidad VIX.",
+   "xText": "Ataques Irán-EE.UU. se reanudan tras pausa breve; petróleo alza. Riesgo geopolítico elevado en Oriente Medio con posible impacto en inflación global.",
+   "discordText": "**⚠️ BREAKING: Escalada Irán-EE.UU.**\n• Ataques reanudados tras pausa\n• Petróleo en alza\n• Riesgo de disrupción suministros\n• Implicación: volatilidad VIX, presión inflacionaria",
+   "pushText": "⚠️ Ataques Irán-EE.UU. reanudan; petróleo sube",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "WTI/Brent suben inmediatamente (2-5%+); VIX típicamente sube 10-20% en minutos; oro y yenes suben como activos de refugio.",
+    "despues": "Bonos USA (yields bajan), equities globales en presión, tasas esperadas del Fed pueden caer si FX volatilidad crece.",
+    "escenarios": "Traders monitorean: (1) cierre Estrecho de Ormuz (37% petróleo global), (2) represalias adicionales, (3) respuesta política USA, (4) impacto en CPI próximo.",
+    "riesgos": "Escalada puede ser temporal (como otras en 2024) o evolucionar a conflicto regional; noticia es confirmada pero implicaciones no son lineales."
+   },
+   "macro": {
+    "petroleo": "alcista",
+    "dolar": "neutral (presión de volatilidad vs. flight-to-safety)",
+    "oro": "alcista",
+    "bonos": "bajista (yields bajan, precios suben)",
+    "nasdaq": "bajista potencial si volatilidad persiste",
+    "sp500": "bajista potencial"
+   },
+   "updates": []
+  },
+  {
+   "id": 997102130,
+   "fecha": "2026-07-29T00:00:33.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/sk-hynix-earnings-profit-revenue-hbm-memory.html",
+   "via": "CNBC",
+   "original": "SK Hynix second-quarter revenue more than triples — but misses estimates",
+   "titulo": "SK Hynix Q2: ingresos se triplican pero no alcanza estimaciones de mercado",
+   "resumen": "SK Hynix reportó que sus ingresos del segundo trimestre más que se triplicaron respecto al año previo, pero la cifra quedó por debajo de las estimaciones del consenso. El resultado sugiere presión en precios de DRAM/NAND a pesar del fuerte crecimiento anual, reflejando oferta amplia en el sector de semiconductores.",
+   "analisis": {
+    "porque": "SK Hynix es productor clave de memoria (DRAM/NAND); sus resultados indican dinámicas de precios en chips críticos para IA, data centers y electrónica de consumo.",
+    "queOcurrio": "Ingresos Q2 triplicados año-a-año pero faltaron a estimaciones consensus. El titular no especifica márgenes ni outlook, solo el miss en línea de ingresos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Semiconductores",
+    "KOSPI",
+    "Chip stocks globales"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "SK-Hynix",
+    "Q2-2026",
+    "DRAM",
+    "NAND",
+    "memoria",
+    "miss-consenso",
+    "semicondutores"
+   ],
+   "tgText": "📉 SK Hynix Q2: ingresos 3x pero por debajo de estimaciones. Señala presión en precios de memoria (DRAM/NAND) pese a crecimiento anual sólido.",
+   "xText": "SK Hynix Q2: ingresos 3x YoY pero miss vs. consenso. Dinámicas de precios en DRAM/NAND sugieren oferta holgada en semiconductores.",
+   "discordText": "**SK Hynix Q2 Earnings**\n• Ingresos 3x YoY\n• Miss vs. consenso\n• Presión en precios DRAM/NAND\n• Riesgo: oferta amplia en memoria",
+   "pushText": "SK Hynix Q2: 3x ingresos pero por debajo estimaciones; presión en precios",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones SK Hynix (KOSPI) y ADR en Nasdaq suelen caer 2-5% por miss de estimaciones.",
+    "despues": "Micron, Intel, NVIDIA (consumo de memoria) y fondos semiconductores pueden reaccionar si se interpreta como presión macro en demanda.",
+    "escenarios": "Traders monitorean: (1) margen operacional y FCF, (2) demanda de data centers (IA), (3) recuperación de smartphones/PCs, (4) competencia de TSMC.",
+    "riesgos": "Miss podría señalar demanda más débil de la esperada; conversación sobre ciclo de superciclo de chips podría refrescarse."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 917551498,
+   "fecha": "2026-07-28T23:49:14.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/space-launches-faa-environmental-spacex-blue-origin-sean-duffy.html",
+   "via": "CNBC",
+   "original": "SpaceX, Blue Origin could get quicker launch approval under FAA move to waive environmental rules",
+   "titulo": "SpaceX y Blue Origin podrían obtener aprobaciones de lanzamiento más rápidas con reforma ambiental de FAA",
+   "resumen": "FAA anuncia movimiento para eximir a SpaceX y Blue Origin de ciertos trámites ambientales, acelerando aprobaciones de lanzamiento. La medida busca agilizar operaciones comerciales de transporte espacial, reflejando priorización regulatoria de la administración hacia competidores estadounidenses.",
+   "analisis": {
+    "porque": "Cambios regulatorios de FAA afectan directamente CAPEX, márgenes operacionales y ritmo de lanzamientos de empresas espaciales; impacta valuación de SpaceX y perspectivas de Blue Origin.",
+    "queOcurrio": "FAA implementa movimiento para waiver requisitos ambientales en aprobaciones de lanzamiento para SpaceX y Blue Origin, acelerando trámites.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "SpaceX (privada)",
+    "Blue Origin (privada)",
+    "Sector Aeroespacial",
+    "ContratistasDefensa"
+   ],
+   "sesgos": [
+    {
+     "activo": "SpaceX",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Blue Origin",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "Blue-Origin",
+    "FAA",
+    "lanzamientos",
+    "regulación",
+    "ambiental",
+    "aerospace"
+   ],
+   "tgText": "🚀 FAA acelera aprobaciones de lanzamiento para SpaceX y Blue Origin mediante exención de trámites ambientales. Positivo para operaciones y márgenes espaciales.",
+   "xText": "FAA waivea requisitos ambientales para SpaceX y Blue Origin; aprobaciones de lanzamiento se aceleran. Positivo para expansion de capacidad de transporte espacial.",
+   "discordText": "**SpaceX / Blue Origin Regulatory Win**\n• FAA waivea trámites ambientales\n• Aprobaciones más rápidas\n• Positivo para CAPEX y operaciones\n• Contexto: prioridad admin. espacial USA",
+   "pushText": "FAA acelera aprobaciones para SpaceX y Blue Origin",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "SpaceX (privada, no cotiza públicamente) y Blue Origin (privada) no tienen movimiento directo en bolsa; inversores privados pueden reasignar capital.",
+    "despues": "Contratistas aeroespaciales (Lockheed Martin, Northrop Grumman, Axiom Space) y proveedores de cadena de suministro podrían beneficiarse de aceleration de proyectos.",
+    "escenarios": "Traders monitorean: (1) velocidad real de nuevos lanzamientos, (2) impacto CAPEX/OPEX a 2-3 años, (3) competencia con contratistas tradicionales, (4) presupuesto defensa USA.",
+    "riesgos": "Reforma ambiental podría enfrentar desafíos legales; waiver no garantiza aceleración comercial real si hay cuello de botella manufacturing."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 906159879,
+   "fecha": "2026-07-28T22:49:50.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/28/ford-motor-f-earnings-q2-2026.html",
+   "via": "CNBC",
+   "original": "Ford raises guidance after Q2 earnings beat, says F-Series recovery is on track",
+   "titulo": "Ford eleva guía anual tras superar ganancias Q2; recuperación de F-Series en marcha",
+   "resumen": "Ford reportó resultados del segundo trimestre por encima de estimaciones y elevó su guidance anual. La compañía señala que la recuperación de su línea F-Series (camionetas) está en línea con lo proyectado. El anuncio refleja mejora en márgenes operacionales y demanda sostenida en el segmento de vehículos comerciales.",
+   "analisis": {
+    "porque": "Indica fortaleza en demanda automotriz y márgenes, con implicaciones para el sector manufacturero estadounidense y perspectivas de ganancias corporativas.",
+    "queOcurrio": "Ford superó estimaciones de ganancias Q2 y elevó guidance para el año fiscal completo, citando recuperación en su línea de camionetas F-Series.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NYSE:F",
+    "Sector Automotriz",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "NYSE:F",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Ford",
+    "Q2-2026",
+    "earnings-beat",
+    "guidance-lift",
+    "F-Series",
+    "automotriz"
+   ],
+   "tgText": "🚗 Ford supera estimaciones en Q2 y eleva guidance anual. La recuperación de F-Series progresa según lo esperado. Señal positiva para demanda automotriz.",
+   "xText": "Ford bate estimaciones Q2 y eleva guidance anual tras recuperación sostenida de F-Series. Mejora en márgenes operacionales refleja fortaleza de demanda en comerciales.",
+   "discordText": "**Ford Q2 Beat + Guidance Lift**\n• Ganancia supera expectativas\n• Guidance anual elevada\n• F-Series recovery on track\n• Implicación: fortaleza en demanda automotriz",
+   "pushText": "Ford supera Q2 y eleva guidance; F-Series en recuperación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NYSE:F reacciona directamente por revisión de earnings y guidance; suele moverse 2-4% intraday.",
+    "despues": "Sector automotriz (otros OEMs) y S&P500 pueden seguir si la noticia se interpreta como señal macro de demanda.",
+    "escenarios": "Traders monitorean: (1) sostenibilidad de márgenes en Q3-Q4, (2) impacto de competencia china, (3) costos laborales post-acuerdo UAW.",
+    "riesgos": "Guidance podría ser conservadora; si F-Series enfrenta headwinds posteriores, revisión bajista sería más probable."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33680",
    "fecha": "2026-07-28T22:13:59+00:00",
@@ -7168,404 +7539,6 @@
     "dolar": "Sesgo alcista si Fed mantiene tono hawkish"
    },
    "updates": []
-  },
-  {
-   "id": "961780697",
-   "fecha": "2026-07-24T20:07:36.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/bond-market-anxiety-ai-capex-spending.html",
-   "via": "CNBC",
-   "original": "Bond market anxiety is growing over AI capex budgets",
-   "titulo": "Ansiedad en mercado de bonos por presupuestos de capex en IA",
-   "resumen": "Inversores en bonos expresan preocupación por los masivos gastos de capital que empresas tecnológicas están destinando a infraestructura de inteligencia artificial. Esta inquietud refleja temores sobre sostenibilidad de tales inversiones y su impacto en márgenes corporativos, presionando los rendimientos de bonos.",
-   "analisis": {
-    "porque": "El gasto acelerado en IA capex podría comprometer la rentabilidad futura y afectar la capacidad de pago de deuda, generando presión alcista en rendimientos de bonos y ajuste en valuaciones tecnológicas.",
-    "queOcurrio": "Inversores de renta fija manifiestan ansias sobre la magnitud de inversiones en IA que realizan compañías megacap, cuestionando si los retornos justifican el desembolso.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "NASDAQ",
-    "Tech stocks",
-    "TLT",
-    "IEF"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Tech stocks",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "IA",
-    "capex",
-    "bonos",
-    "rendimientos",
-    "tecnología",
-    "deuda"
-   ],
-   "tgText": "📉 Bonos: inversores alertan sobre gastos masivos de IA en megacaps. Presión alcista en rendimientos por preocupaciones sobre rentabilidad futura y servicio de deuda.",
-   "xText": "🔴 Tensión en mercado de bonos: los enormes capex en IA de empresas tech amenazan márgenes y capacidad de pago. Rendimientos bajo presión alcista. #Markets #IA",
-   "discordText": "**Ansiedad en Bonos por IA Capex**\n• Inversores cuestionan sostenibilidad de gastos de capital en IA\n• Riesgo para márgenes corporativos y servicio de deuda\n• Rendimientos bajo presión alcista",
-   "pushText": "Bonos: inversores alertan sobre gastos de IA en megacaps",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "TLT y bonos de largo plazo (presión alcista en rendimientos) por repricing de expectativas de tasa terminal más alta",
-    "despues": "Acciones tech como NVDA, META, GOOGL sufren por compresión de márgenes; USD fuerte por yields más altos",
-    "escenarios": "Traders monitorean: (1) si compañías ajustan guías de capex; (2) spread corporativo; (3) inflación de servicios por inversión; (4) respuesta de Fed a presión de bonos",
-    "riesgos": "El titular señala 'ansiedad' (sentimiento) sin citar datos duros; si capex genera rendimientos, el mercado puede revisar posición"
-   },
-   "macro": {
-    "bonos": "Presión alcista en rendimientos de largo plazo (10Y US Treasury)",
-    "nasdaq": "Sesgo bajista por repricing de valuaciones tech",
-    "dolar": "Sesgo alcista por yields más competitivos"
-   },
-   "updates": []
-  },
-  {
-   "id": 972901430,
-   "fecha": "2026-07-24T20:04:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/treasury-yields-bonds-us-debt.html",
-   "via": "CNBC",
-   "original": "Treasury yields slide as oil prices fall amid hopes for new U.S.-Iran peace talks",
-   "titulo": "Rendimientos de Tesoros bajan; esperanza en negociaciones USA-Irán impulsa alivio",
-   "resumen": "Rendimientos de bonos del Tesoro USA caen con la expectativa de nuevas negociaciones entre USA e Irán (respaldadas por China). El movimiento refleja reducción de prima de riesgo geopolítico y aumento de demanda de activos defensivos.",
-   "analisis": {
-    "porque": "Mercados de bonos reaccionan a cambios en percepciones de riesgo geopolítico. Caída de rendimientos indica flujos hacia seguridad (Tesoros), fortaleza del USD y expectativa de tasas sin cambios de la Fed.",
-    "queOcurrio": "Rendimientos de Tesoros bajan después de que reportes señalan posibles negociaciones USA-Irán con aval chino, reduciendo riesgo de escalada militar.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos USA",
-    "Rendimientos USA",
-    "DXY",
-    "Oro",
-    "Petróleo"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Rendimientos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "Tesoros",
-    "rendimientos",
-    "Irán",
-    "negociaciones",
-    "bonos"
-   ],
-   "tgText": "📉 Rendimientos USA caen con optimismo en negociaciones Irán-USA. Demanda defensiva de Tesoros sube.",
-   "xText": "Rendimientos del Tesoro caen ante expectativa de negociaciones USA-Irán con respaldo chino. Inversores buscan seguridad en bonos.",
-   "discordText": "**Rendimientos bajan: esperanza diplomática**\n• Caída en yields del Tesoro\n• Demanda defensiva de bonos USA\n• Riesgo geopolítico disminuye\n• DXY presionado a la baja",
-   "pushText": "Rendimientos USA bajan por negociaciones Irán-USA",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Mercado de bonos USA (precios suben, rendimientos bajan). Curva de rendimientos se aplana.",
-    "despues": "DXY se debilita; oro pierde atractivo defensivo; petróleo sigue bajo presión.",
-    "escenarios": "Traders vigilan: (1) Nivel de rendimientos a 2, 10 y 30 años; (2) Impacto en decisiones de política monetaria de Fed; (3) Flujos de inversión internacional en Tesoros.",
-    "riesgos": "Movimiento basado en rumor de negociaciones, no confirmación oficial. Reversión rápida si Trump descarta diálogos o Irán rechaza propuestas."
-   },
-   "macro": {
-    "bonos": "presión alcista (precios suben)",
-    "rendimientos": "presión bajista",
-    "dolar": "debilidad esperada",
-    "petroleo": "debilidad esperada"
-   },
-   "updates": []
-  },
-  {
-   "id": 970965200,
-   "fecha": "2026-07-24T19:58:24.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/odds-that-the-straits-traffic-returns-to-normal-drop-on-kalshi.html",
-   "via": "CNBC",
-   "original": "Strait of Hormuz traffic may not return to normal for 12 months or more, according to prediction markets",
-   "titulo": "Mercados de predicción: tráfico en Estrecho de Hormuz podría tardar 12+ meses en normalizarse",
-   "resumen": "Mercados de predicción estiman que el tráfico de buques en el Estrecho de Hormuz podría tomar 12 meses o más en recuperarse a niveles normales. Esto refleja evaluación de mercado sobre duración del conflicto geopolítico y riesgos en suministro de energía.",
-   "analisis": {
-    "porque": "Mercados de predicción agreguen información sobre percepciones de riesgo geopolítico a largo plazo. Normalización lenta del Hormuz implica presión sostenida en precios de energía, aseguros de buques y cadenas de suministro globales.",
-    "queOcurrio": "Predicción de mercado señala que restablecimiento de flujos normales en Hormuz tomaría 12 meses o más, sugiriendo escalada o conflicto prolongado.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Transporte Marítimo",
-    "Seguros",
-    "Energía"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Transporte Marítimo",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Hormuz",
-    "tráfico marítimo",
-    "energía",
-    "suministros",
-    "riesgo geopolítico"
-   ],
-   "tgText": "⚓ Mercados de predicción: Hormuz tardará 12+ meses en normalizarse. Presión sostenida en energía y logística.",
-   "xText": "Mercados de predicción estiman normalización del Estrecho de Hormuz en 12+ meses. Implica presión prolongada en precios de energía y costos logísticos globales.",
-   "discordText": "**Hormuz: normalización a largo plazo**\n• Mercados de predicción: 12+ meses\n• Tráfico marítimo bajo riesgo prolongado\n• Presión sostenida en energía\n• Seguros y logística en alerta",
-   "pushText": "Hormuz podría tardar 12+ meses en normalizarse según mercados de predicción",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo (WTI/Brent) mantiene presión alcista por riesgo de suministro. Oro sube como defensivo.",
-    "despues": "Transporte marítimo, seguros, empresas de logística; cadenas de suministro globales; rentabilidad de energías renovables.",
-    "escenarios": "Traders vigilan: (1) Confirmación de bloqueos o restricciones en Hormuz; (2) Rutas alternativas (Canal de Suez); (3) Capacidad de almacenamiento global de petróleo; (4) Impacto inflacionario en energía.",
-    "riesgos": "Mercados de predicción son agregación de apuestas especulativas, no pronósticos fundados. Cambios diplomáticos rápidos podrían normalizar flujos antes de 12 meses."
-   },
-   "macro": {
-    "petroleo": "presión alcista por riesgo geopolítico prolongado",
-    "oro": "presión alcista como defensivo",
-    "inflacion": "riesgo al alza por presión energética"
-   },
-   "updates": []
-  },
-  {
-   "id": 937842717,
-   "fecha": "2026-07-24T19:41:08.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/1-hyperscaler-megacap-down-3-to-go-alphabet-raises-the-stakes-on-ai-spending.html",
-   "via": "CNBC",
-   "original": "1 hyperscaler megacap down, 3 to go. Alphabet raises the stakes on AI spending",
-   "titulo": "Alphabet aumenta apuestas en IA: 1 megacap down, 3 aún por reaccionar",
-   "resumen": "Alphabet eleva significativamente gastos de capital en IA, continuando la tendencia de inversión masiva en inteligencia artificial. El titular sugiere que una megacap ha sufrido presión por estos gastos (posiblemente Amazon según Moody's 901451174) y advierte que otras tres aún podrían enfrentar impacto similar.",
-   "analisis": {
-    "porque": "Mercado vigila intensamente el gasto de capex en IA por impacto directo en márgenes, flujo libre de caja y rentabilidad de empresas megacap. Elevadas inversiones presionan valuaciones a corto plazo pero compiten por dominancia en IA.",
-    "queOcurrio": "Alphabet anuncia elevación de inversiones en IA, reflejando carrera competitiva con Microsoft, Meta y otras. Mercado ya ha castigado una megacap; tres restantes podrían seguir.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Alphabet",
-    "Microsoft",
-    "Meta",
-    "Amazon"
-   ],
-   "sesgos": [
-    {
-     "activo": "Alphabet",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Megacaps",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Alphabet",
-    "IA",
-    "capex",
-    "megacap",
-    "inversión"
-   ],
-   "tgText": "💰 Alphabet escala inversión en IA. 1 megacap ya bajo presión, 3 más en riesgo de castigo por capex.",
-   "xText": "Alphabet intensifica gasto de capital en IA. Mercado ya presionó a una megacap; Microsoft, Meta y Amazon podrían sufrir similar impacto en márgenes.",
-   "discordText": "**Alphabet eleva capex en IA**\n• Presión en márgenes de ganancias\n• 1 megacap ya castigada\n• 3 restantes (Microsoft, Meta, Amazon) en riesgo\n• Carrera competitiva continúa",
-   "pushText": "Alphabet sube inversión en IA; presión en megacaps por márgenes",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Alphabet, Microsoft, Meta, Amazon (megacaps de IA). NASDAQ presionado por reducción de márgenes esperada.",
-    "despues": "S&P500, rendimientos de bonos (si hay preocupación sobre flujos de caja), sectores defensivos ganadores.",
-    "escenarios": "Traders vigilan: (1) Guías de ganancias y márgenes de cada megacap; (2) ROI esperado de inversiones en IA; (3) Rotación hacia empresas con menores capex; (4) Impacto en earnings per share.",
-    "riesgos": "Gasto en IA es apuesta de largo plazo; presión de corto plazo en valuaciones puede no sostenerse si ROI se materializa. El titular no especifica qué megacap ya fue castigada ni cuándo."
-   },
-   "macro": {
-    "nasdaq": "presión mediata por márgenes en megacap",
-    "sp500": "neutral a bajista dependiendo de ponderación tech"
-   },
-   "updates": []
-  },
-  {
-   "id": 972520974,
-   "fecha": "2026-07-24T19:39:50.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/trump-tariffs-eu-trade-google-apple-tech.html",
-   "via": "CNBC",
-   "original": "Trump threatens EU with &apos;substantial TARIFF&apos; for &apos;ROBBING&apos; U.S. tech giants",
-   "titulo": "Trump amenaza a UE con aranceles sustanciales por \"robo\" a gigantes tecnológicos",
-   "resumen": "El presidente Trump advierte sobre imposición de aranceles significativos contra la Unión Europea, acusándola de perjudicar a las empresas tecnológicas estadounidenses. El titular no especifica magnitud ni sectores exactos afectados, aunque el contexto sugiere empresas como Nvidia, Microsoft y Meta mencionadas en otros comunicados del mismo período.",
-   "analisis": {
-    "porque": "Amenaza arancelaria directa contra UE impacta valuaciones de tech megacap, márgenes de exportación y geopolítica comercial; históricamente genera volatilidad inmediata en índices y paridades cambiarias.",
-    "queOcurrio": "Trump anuncia aranceles \"sustanciales\" contra la Unión Europea, alegando que ésta está \"robando\" a gigantes tecnológicos estadounidenses.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "DXY",
-    "EURUSD",
-    "Nvidia",
-    "Microsoft",
-    "Meta",
-    "Alphabet"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "EURUSD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Tech Megacap",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "aranceles",
-    "Unión Europea",
-    "tecnología",
-    "comercio"
-   ],
-   "tgText": "🚨 Trump amenaza aranceles sustanciales contra UE por \"robo\" a tech. Megacaps en riesgo. NASDAQ presionado.",
-   "xText": "Trump anuncia aranceles sustanciales contra UE acusándola de perjudicar a gigantes tech USA. Riesgo inmediato para NASDAQ y valuaciones de Nvidia, Microsoft, Meta.",
-   "discordText": "**Trump vs UE: aranceles en vista**\n• Amenaza aranceles \"sustanciales\"\n• Acusa UE de \"robar\" a tech\n• NASDAQ presionado\n• Sin detalles de magnitud",
-   "pushText": "Trump amenaza aranceles a UE por afectar tecnología USA",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "NASDAQ y acciones tech (Nvidia, Microsoft, Meta, Alphabet) por exposición directa a aranceles sobre exportaciones/componentes. EUR/USD también reacciona inmediatamente.",
-    "despues": "S&P500 total, DXY (fortalecimiento por riesgo comercial), bonos USA (demanda defensiva), mercados europeos.",
-    "escenarios": "Traders vigilan: (1) Magnitud y calendario de aranceles; (2) Represalias de UE; (3) Impacto en márgenes de ganancia de tech; (4) Rotación hacia defensivos.",
-    "riesgos": "Amenaza sin detalles específicos (magnitud, sectores, fechas). Podrían ser tácticas negociadoras. Riesgo de escalada o reversión si hay acuerdos."
-   },
-   "macro": {
-    "dolar": "presión alcista por riesgo geopolítico",
-    "nasdaq": "presión bajista por riesgo arancelario en tech",
-    "eurusd": "debilidad esperada por sanciones comerciales a UE"
-   },
-   "updates": []
-  },
-  {
-   "id": 926185907,
-   "fecha": "2026-07-24T19:12:09.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/24/oil-price-trump-hormuz-red-sea-iran-war.html",
-   "via": "CNBC",
-   "original": "Oil falls on report Pakistan is pushing for new U.S.-Iran talks with China&apos;s backing",
-   "titulo": "Petróleo cede tras reportes de negociaciones USA-Irán con aval chino",
-   "resumen": "El petróleo retrocede después de que se reporta que Pakistán presiona por nuevas conversaciones de paz entre USA e Irán con respaldo de China. Esta es una actualización de tensiones previas (id 955719162). El movimiento refleja reducción de riesgo geopolítico en el Golfo Pérsico.",
-   "analisis": {
-    "porque": "Mercado de energía ajusta precios al reducirse expectativa de escalada militar en Oriente Medio. Petróleo crudo y derivados son sensibles a cambios percibidos en riesgo de suministro.",
-    "queOcurrio": "Reportes indican que Pakistán busca reiniciar negociaciones USA-Irán con apoyo de China, reduciendo tensiones previas sobre \"ataque masivo\" anunciado por Trump.",
-    "estado": "rumor",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "WTI",
-    "Brent",
-    "DXY",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Petróleo",
-    "Irán",
-    "USA",
-    "Pakistán",
-    "China",
-    "negociaciones"
-   ],
-   "tgText": "📉 Petróleo baja: Pakistán busca negociaciones Irán-USA con China. Riesgo geopolítico se reduce en Golfo.",
-   "xText": "Petróleo retrocede tras reportes de nuevas negociaciones USA-Irán con respaldo chino, reduciendo tensión en Golfo Pérsico.",
-   "discordText": "**Petróleo baja: diplomacia en el Golfo**\n• Pakistán presiona negociaciones\n• China respalda diálogos Irán-USA\n• Reducción de riesgo geopolítico\n• WTI/Brent bajo presión",
-   "pushText": "Petróleo cede por reportes de negociaciones Irán-USA",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "WTI y Brent crudo por reducción de prima de riesgo geopolítico. USD debilita por menor demanda defensiva.",
-    "despues": "Oro (activo defensivo pierde atractivo), energías (incluidas renovables), activos de riesgo en Oriente Medio.",
-    "escenarios": "Traders vigilan: (1) Confirmación oficial de negociaciones; (2) Posición de Iran (rechazó acuerdos previos); (3) Flujos en Estrecho de Hormuz; (4) Volatilidad del petróleo según avances diplomáticos.",
-    "riesgos": "Es rumor basado en reportes de Pakistán, no confirmación oficial. Irán ha rechazado propuestas previas (ver id 33529). Reversión rápida si Trump descarta negociaciones."
-   },
-   "macro": {
-    "petroleo": "presión bajista",
-    "dolar": "debilidad relativa",
-    "oro": "presión bajista por menos demanda defensiva"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7661,6 +7634,16 @@
   "https://www.cnbc.com/2026/07/27/crypto-stocks-rally-thanks-to-rotation-from-ai-infrastructure-bitcoin-miners-lag.html",
   "https://www.cnbc.com/2026/07/27/india-cjp-modi-protest-genz-jobs.html",
   "https://www.cnbc.com/2026/07/28/indonesian-stocks-enter-bull-market.html",
-  "https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html"
+  "https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html",
+  "https://www.cnbc.com/select/average-car-loan-term/",
+  "https://www.cnbc.com/2026/07/28/ford-motor-f-earnings-q2-2026.html",
+  "https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html",
+  "https://www.cnbc.com/2026/07/28/space-launches-faa-environmental-spacex-blue-origin-sean-duffy.html",
+  "https://www.cnbc.com/2026/07/29/sk-hynix-earnings-profit-revenue-hbm-memory.html",
+  "https://www.cnbc.com/2026/07/28/russia-sanctions-congress-key-vote-lindsey-graham-ukraine.html",
+  "https://www.cnbc.com/2026/07/28/jay-clayton-bill-pulte-senate-vote-trump-spy-chief.html",
+  "https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html",
+  "https://www.cnbc.com/2026/07/29/us-iran-war-hormuz-centcom.html",
+  "https://www.cnbc.com/2026/07/28/trump-asks-supreme-court-to-toss-83point3m-defamation-award-to-e-jean-carroll.html"
  ]
 }
