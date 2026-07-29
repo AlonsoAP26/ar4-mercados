@@ -119,7 +119,13 @@ async function main() {
 
 TAREA: redacta el CALENDARIO DE DIVIDENDOS DE ${mesNombre.toUpperCase()}: qué empresas cotizadas grandes pagan dividendo ese mes, con sus fechas ex-dividendo confirmadas, fechas de pago y montos por acción ya declarados.
 
-PASO 1 — INVESTIGA. Usa la búsqueda web varias veces para localizar dividendos YA DECLARADOS (anunciados oficialmente por la empresa) cuya fecha ex-dividendo caiga en ${mesNombre}. Busca por ejemplo: "calendario dividendos ${mesNombre} fecha ex-dividendo", "dividend declaration ex-dividend date ${mesNombre}", y por empresa concreta (Vale, Petrobras, Apple, Microsoft, JPMorgan y otras grandes que encuentres). Prioriza empresas conocidas por el lector latinoamericano; Vale y Petrobras son especialmente relevantes.
+PASO 1 — INVESTIGA. Localiza dividendos YA DECLARADOS (anunciados oficialmente) cuya FECHA EX-DIVIDENDO caiga dentro de ${mesNombre}.
+
+EMPIEZA POR CALENDARIOS AGREGADOS, no empresa por empresa: una sola página de calendario de dividendos lista decenas de empresas con sus fechas, y es mucho más eficiente que buscar de una en una. Prueba consultas del tipo "dividend calendar ${mesNombre} ex-dividend date large cap", "ex-dividend date agosto 2026 acciones", "calendário de dividendos ${MESES[objetivo.getUTCMonth()]} 2026 B3". Luego confirma los casos concretos que vayas a publicar.
+
+EL UNIVERSO ES AMPLIO — la tabla NO se limita a las cinco empresas del panel de precios de abajo (ese panel solo te da cotizaciones verificadas para comentar, no es la lista de candidatas). Incluye las grandes pagadoras de dividendo que el lector reconozca: tecnológicas y financieras estadounidenses (Microsoft, Apple, JPMorgan, Coca-Cola, Johnson & Johnson, Procter & Gamble, Exxon, Chevron, Verizon, AbbVie y similares) y los nombres latinoamericanos de referencia (Vale, Petrobras, Itaú, Bradesco, Ambev, América Móvil y similares).
+
+APUNTA A UNA TABLA DE 6 A 12 EMPRESAS. Si tras buscar en serio solo puedes confirmar menos, publica solo las confirmadas — pero no te quedes corto por no haber buscado lo suficiente: agota primero los calendarios agregados.
 
 PASO 2 — ESCRIBE solo con lo que verificaste.
 
@@ -138,7 +144,7 @@ Esta pieza la usarán traders reales para decidir cuándo entrar o salir de una 
 
 - Cada fecha, cada monto y cada rendimiento debe venir de (a) el panel real de arriba, o (b) un resultado concreto de tu búsqueda web. NO HAY TERCERA OPCIÓN.
 - PROHIBIDO estimar, proyectar o "asumir que repetirá el del trimestre pasado". Si un dividendo aún no está declarado oficialmente, NO va en el calendario.
-- Si solo puedes verificar 3 o 4 empresas, publica esas 3 o 4. Un calendario corto y correcto vale; uno largo y a medias inventar, no.
+- Si tras agotar la búsqueda solo puedes confirmar unas pocas empresas, publica solo esas. Un calendario corto y correcto vale; uno largo a base de inventar, no. Pero que sea corto por falta de datos reales, nunca por haber buscado poco.
 - "sources" debe contener SOLO URLs que aparezcan literalmente en tus resultados de búsqueda. Si citas una URL que no salió de la búsqueda, la pieza se descarta automáticamente.
 - Usa coma decimal (formato español): 0,25 / 1.234,50. Los montos en su moneda original, indicando cuál (USD, BRL...).
 
@@ -206,7 +212,9 @@ Responde EXCLUSIVAMENTE con un objeto JSON válido (sin markdown, sin \`\`\`), c
       max_tokens: 32000,
       thinking: { type: 'adaptive' },
       output_config: { effort: 'medium' },
-      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 12 }],
+      // Mas cupo que en la noticia diaria: aqui hay que barrer calendarios
+      // agregados y luego confirmar cada empresa que entra en la tabla.
+      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 15 }],
       messages
     });
     allContent.push(...(data.content || []));
