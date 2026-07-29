@@ -2503,6 +2503,12 @@ a { color: inherit; text-decoration: none; }
 
 /* Página de noticia: layout con sidebar inteligente */
 .noticia-layout { display: grid; grid-template-columns: 1fr 320px; gap: 32px; align-items: start; }
+/* Un item de grid no baja de su ancho minimo de contenido salvo que se le diga.
+   Sin este min-width:0, cualquier contenido ancho dentro del cuerpo de la
+   noticia (la tabla del calendario de dividendos fue el primer caso) estira la
+   columna y hace que TODA la pagina scrollee en horizontal en movil, en vez de
+   scrollear solo la tabla dentro de su .compare-table-wrap. */
+.noticia-main { min-width: 0; }
 .noticia-sidebar { position: sticky; top: 16px; display: flex; flex-direction: column; gap: 16px; }
 @media (max-width: 980px) {
   .noticia-layout { grid-template-columns: 1fr; }
