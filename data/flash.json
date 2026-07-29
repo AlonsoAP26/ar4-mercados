@@ -1,7 +1,367 @@
 {
  "lastId": 33723,
- "actualizado": "2026-07-29T19:37:16.040Z",
+ "actualizado": "2026-07-29T21:31:46.487Z",
  "items": [
+  {
+   "id": 930836156,
+   "fecha": "2026-07-29T21:26:17.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html",
+   "via": "CNBC",
+   "original": "Meta&apos;s stock plunges almost 10% on disappointing guidance, dwindling free cash flow",
+   "titulo": "Meta se desploma casi 10% por guidance decepcionante y caída de flujo de caja libre",
+   "resumen": "Las acciones de Meta cayeron casi 10% en operaciones después de horas tras publicar guidance de ganancias por debajo de expectativas y reportar disminución en flujo de caja libre. La debilidad refleja presiones en monetización publicitaria y gastos elevados en infraestructura de IA, cuestionando la eficiencia de inversiones en modelos de IA generativa.",
+   "analisis": {
+    "porque": "Mega-cap tecnológica afecta ponderación en Nasdaq 100 y S&P 500; flujo de caja libre es métrica crítica para inversores; señal sobre gastos en IA de toda industria tech",
+    "queOcurrio": "Meta anunció guidance de ganancias inferior a expectativas y disminución de flujo de caja libre en su reporte",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "META",
+    "NASDAQ",
+    "S&P500",
+    "Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "META",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Meta",
+    "META",
+    "Guidance",
+    "Flujo Caja Libre",
+    "IA",
+    "Tecnología"
+   ],
+   "tgText": "📉 Meta cae 10% tras guidance débil y caída de flujo de caja. Gastos en IA y presión publicitaria presionan márgenes. Impacto en Nasdaq.",
+   "xText": "META plunge 10%: Guidance inferior + caída flujo caja. Gastos en IA inflan costos. Riesgo para sector Tech. #NASDAQ #Earnings",
+   "discordText": "**Meta: Caída 10% tras Earnings**\n• Guidance por debajo de expectativas\n• Flujo caja libre en baja\n• Presión en gastos de IA\n→ Impacto negativo Nasdaq",
+   "pushText": "Meta cae 10% por guidance débil y caída de flujo de caja libre",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "META: caída directa por revisión a la baja de ganancias; arrastre a Nasdaq 100 y mega-caps tech",
+    "despues": "S&P 500, otros proveedores IA (MSFT, GOOGL, NVDA), bonos corporativos de tech, sector consumer digital",
+    "escenarios": "Traders vigilarán si caída de META es síntoma de agotamiento de ciclo de inversión en IA o problema específico de Meta; rotación a defensivos; comparar con MSFT (sólido) y AMZN para confirmar patrón",
+    "riesgos": "Caída podría ser exagerada si market asume lo peor; flujo de caja podría recuperarse si gastos en IA se normalizan; riesgo de contagio a otros mega-caps"
+   },
+   "macro": {
+    "nasdaq": "bajista",
+    "sp500": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": 976241422,
+   "fecha": "2026-07-29T21:22:20.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/starbucks-sbux-q3-2026-earnings.html",
+   "via": "CNBC",
+   "original": "Starbucks stock jumps as coffee giant raises full-year outlook",
+   "titulo": "Starbucks sube tras elevar guidance anual; café y márgenes operacionales mejoran",
+   "resumen": "Starbucks elevó su perspectiva de ganancias para el año completo, impulsando un salto de su cotización en después de horas. La mejora en guidance refleja recuperación en márgenes operacionales y demanda de café más resiliente de la esperado, desafiando presiones inflacionarias previas en la cadena de suministros.",
+   "analisis": {
+    "porque": "Movimiento de acción individual en índices amplios; señal de resiliencia de consumo en retail de alimentos; afecta confianza en sector consumer discretionary",
+    "queOcurrio": "Starbucks anunció elevación de guidance anual de ganancias, generando subida de acción después de horas de mercado",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "SBUX",
+    "S&P500",
+    "Consumer Discretionary",
+    "Retail"
+   ],
+   "sesgos": [
+    {
+     "activo": "SBUX",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Consumer Discretionary",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Starbucks",
+    "SBUX",
+    "Guidance",
+    "Retail",
+    "Consumo",
+    "Márgenes"
+   ],
+   "tgText": "☕ Starbucks eleva guidance anual. Márgenes operacionales mejoran y demanda de café muestra resiliencia. SBUX en alza después de horas.",
+   "xText": "SBUX: Starbucks sube con elevación de guidance. Resiliencia de márgenes y demanda de café desafían presiones inflacionarias. #Retail",
+   "discordText": "**Starbucks: Elevación de Guidance**\n• Guidance anual mejorada\n• Márgenes operacionales más fuertes\n• Demanda resiliente vs inflación\n→ SBUX en alza post-cierre",
+   "pushText": "Starbucks eleva guidance; márgenes y demanda superan expectativas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "SBUX: revaluación directa por mejora de ganancias futuras",
+    "despues": "Sector Consumer Discretionary, índices de retail, confianza del consumidor",
+    "escenarios": "Traders vigilarán si mejora en SBUX es síntoma de resiliencia en consumo o anomalía; comparar con otros retailers para validar ciclo de consumo",
+    "riesgos": "Mejora podría ser insostenible si presiones inflacionarias regresan; guidance podría no alcanzarse si condiciones económicas empeoran"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 995817277,
+   "fecha": "2026-07-29T21:08:27.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/carvana-cvna-earnings-q2-2026.html",
+   "via": "CNBC",
+   "original": "Carvana stock falls 15% as auto retailer&apos;s 2026 earnings guidance misses Wall Street&apos;s expectations",
+   "titulo": "Carvana cae 15% tras fallar guidance 2026; retail automotriz enfrenta headwinds",
+   "resumen": "Las acciones de Carvana se desplomaron 15% después de que el minorista automotriz en línea publicara guidance de ganancias para 2026 por debajo de las expectativas de Wall Street. La caída refleja presiones persistentes en demanda automotriz y márgenes comprimidos en el segmento de venta directa al consumidor.",
+   "analisis": {
+    "porque": "Retail automotriz es indicador de confianza del consumidor y ciclo de crédito automotriz; caída significativa de acción específica afecta pequeña porción de índices pero valida debilidad en consumo de bienes durables",
+    "queOcurrio": "Carvana divulgó guidance de ganancias 2026 que no cumple expectativas de mercado, provocando caída de 15% en acción",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "CVNA",
+    "S&P500",
+    "Retail Automotriz",
+    "Consumer Discretionary"
+   ],
+   "sesgos": [
+    {
+     "activo": "CVNA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Consumer Discretionary",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Carvana",
+    "CVNA",
+    "Guidance",
+    "Retail Auto",
+    "Consumo",
+    "Márgenes"
+   ],
+   "tgText": "🚗 Carvana cae 15% por guidance 2026 débil. Presión en demanda auto y márgenes comprimidos. Señal de debilidad en consumo de durables.",
+   "xText": "CVNA plunge 15%: Guidance 2026 falla. Retail auto enfrenta presión en demanda y márgenes. Indicador de confianza consumidor débil. #Retail",
+   "discordText": "**Carvana: Caída 15% en Guidance**\n• 2026 guidance por debajo de expectativas\n• Presión en demanda automotriz\n• Márgenes comprimidos\n→ Señal debilidad consumo durables",
+   "pushText": "Carvana cae 15% por guidance 2026 decepcionante",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "CVNA: caída directa por revisión a la baja; comparables en retail auto pueden sufrir contagio",
+    "despues": "Confianza de consumidor, crédito automotriz, bienes durables, S&P 500",
+    "escenarios": "Traders vigilarán si debilidad es específica de Carvana (modelo DTC) o síntoma sistémico de mercado auto; impacto en fabricantes (F, GM) y financieras de crédito auto",
+    "riesgos": "Caída podría exagerada si Carvana es outlier; debilidad en auto podría indicar ciclo de crédito en riesgo"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 920374616,
+   "fecha": "2026-07-29T20:58:06.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/gundlach-says-the-bond-market-is-signaling-the-fed-has-to-act-on-inflation.html",
+   "via": "CNBC",
+   "original": "Jeffrey Gundlach says the bond market is telling Warsh the Fed has to start acting on inflation",
+   "titulo": "Gundlach: Mercado de bonos advierte Fed que debe actuar contra inflación",
+   "resumen": "El gestor de bonos Jeffrey Gundlach señaló que el mercado de bonos está enviando un mensaje claro a la Fed: debe tomar medidas sobre inflación. Sus comentarios refuerzan la brecha entre la retórica de control de la Fed y las señales de pricing del mercado de renta fija de largo plazo.",
+   "analisis": {
+    "porque": "Opinión de prominente gestor de bonos valida dinámicas de mercado vs política monetaria; influencia en estrategias de inversión de grandes portafolios; afecta expectativas de tasas futuras",
+    "queOcurrio": "Gundlach comentó que el mercado de bonos está indicando a la Fed la necesidad de actuar sobre inflación",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos USA",
+    "Rendimientos USA",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "FED",
+   "keywords": [
+    "Gundlach",
+    "Bonos",
+    "Fed",
+    "Inflación",
+    "Tasas",
+    "Política Monetaria"
+   ],
+   "tgText": "💬 Gundlach: Mercado de bonos advierte Fed sobre inflación. Pricing confirma presión para actuar. Refuerza brecha retórica-mercado.",
+   "xText": "Gundlach: Mercado bonos dice Fed debe actuar vs inflación. Dinámicas de bonos adelantan presión por tasas. #Bonos #Fed",
+   "discordText": "**Gundlach: Mercado Bonos Presiona Fed**\n• Gestor de bonos: mercado envía mensaje claro\n• Fed debe actuar sobre inflación\n• Confirma brecha retórica vs pricing\n→ Dinámicas de tasas en presión",
+   "pushText": "Gundlach: Mercado de bonos presiona Fed a actuar sobre inflación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Rendimientos de bonos USA: confirmación de presión alcista; DXY puede seguir fuerza",
+    "despues": "Expectativas de tasas Sep, S&P 500 (si tasas suben, presión en valuaciones)",
+    "escenarios": "Traders vigilarán si Fed responde a presión de mercado; si ignora señales de bonos, volatilidad podría intensificarse; comparar con otros gestores para validar consenso",
+    "riesgos": "Opinión de Gundlach es respetada pero no garantiza movimiento Fed; mercado podría estar equivocado sobre magnitud de inflación persistente"
+   },
+   "macro": {
+    "bonos": "neutral (pero presión alcista en rendimientos)",
+    "rendimientos": "alcista",
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 970280468,
+   "fecha": "2026-07-29T20:57:08.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
+   "via": "CNBC",
+   "original": "Microsoft beats Q4 cloud expectations as full-year Azure revenue tops $100 billion",
+   "titulo": "Microsoft supera expectativas en nube: ingresos anuales de Azure alcanzan USD 100.000M",
+   "resumen": "Microsoft reportó resultados del Q4 por encima de las previsiones de Wall Street, con ingresos anuales de Azure superando los USD 100.000 millones. El desempeño de la división de computación en la nube refuerza la posición dominante de la compañía en infraestructura de IA y servicios empresariales, marcando un hito significativo en su cartera de negocios.",
+   "analisis": {
+    "porque": "Afecta valoración de mega-cap tecnológica y confianza en ciclo de inversión en IA; mueve índices Nasdaq y carteras de crecimiento",
+    "queOcurrio": "Microsoft anunció que sus ingresos anuales de Azure superaron USD 100.000 millones en el Q4, superando expectativas previas",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "MSFT",
+    "S&P500",
+    "Indices Tecnológicos"
+   ],
+   "sesgos": [
+    {
+     "activo": "MSFT",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Microsoft",
+    "Azure",
+    "Cloud",
+    "Q4",
+    "Resultados",
+    "IA",
+    "Ingresos"
+   ],
+   "tgText": "📊 Microsoft supera expectativas: Azure registra USD 100.000M en ingresos anuales. Dominio en infraestructura de IA confirmado. MSFT en alza.",
+   "xText": "MSFT: Azure alcanza USD 100B en ingresos anuales, superando previsiones. Mega-cap tecnológica refuerza liderazgo en IA. #NASDAQ",
+   "discordText": "**Microsoft Q4: Azure rompe récord**\n• Ingresos anuales: USD 100.000M\n• Supera expectativas Wall Street\n• Domina mercado cloud + IA\n→ Positivo para MSFT y NASDAQ",
+   "pushText": "Microsoft supera expectativas con Azure en USD 100B anuales",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "MSFT y Nasdaq 100: mega-cap beneficiada directa por revaluación de crecimiento de IA",
+    "despues": "S&P 500, otros proveedores cloud (AMZN, GOOGL), bonos corporativos de tech",
+    "escenarios": "Traders vigilarán si meta de rentabilidad de IA de Microsoft se mantiene en guidance futuro; comparar con competidores cloud para rotación sectorial",
+    "riesgos": "Posible reacción limitada si mercado ya había precalculado este resultado; competencia en cloud (AWS, Google Cloud) podría eclipsar el hito"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "dow": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": 936531796,
+   "fecha": "2026-07-29T20:44:19.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html",
+   "via": "CNBC",
+   "original": "Fed meeting recap: Warsh says Fed won&apos;t hesitate to stop inflation, but bond market has doubts",
+   "titulo": "Mercado de bonos cuestiona compromiso de la Fed con lucha anti-inflacionaria",
+   "resumen": "El presidente de la Fed, Lael Warsh, reafirmó que la institución no dudará en frenar la inflación, pero el mercado de bonos envía señales contradictorias sobre la credibilidad de ese compromiso. Según indicadores de bonos de largo plazo, los operadores dudan sobre la consistencia de la política monetaria en los próximos meses.",
+   "analisis": {
+    "porque": "Dinámicas de mercado de bonos anticipan futuras decisiones de política monetaria; desconexión entre retórica de Fed y expectativas de mercado afecta curva de rendimientos, valuación de activos y decisiones de inversión de largo plazo",
+    "queOcurrio": "Warsh declaró que Fed no titubearía en combatir inflación, pero mercado de bonos muestra escépticismo sobre ese compromiso via pricing de bonos",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Bonos USA",
+    "Rendimientos USA",
+    "Curva de Rendimientos",
+    "DXY",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "Inflación",
+    "Bonos",
+    "Warsh",
+    "Política Monetaria",
+    "Mercado Bonos"
+   ],
+   "tgText": "🏦 Warsh confirma: Fed contra inflación. Pero mercado de bonos desconfía. Curva de rendimientos muestra escepticismo sobre próximos pasos de Fed.",
+   "xText": "Fed vs Bonos: Warsh dice 'no titubearemos' vs inflación, pero mercado duda. Desconexión entre retórica y expectativas. #Bonos #Política Monetaria",
+   "discordText": "**Fed: Brecha Retórica vs Mercado Bonos**\n• Warsh reafirma lucha vs inflación\n• Mercado de bonos muestra escepticismo\n• Dinámicas anticipan próximas decisiones\n→ Volatilidad en bonos y DXY",
+   "pushText": "Mercado de bonos cuestiona compromiso de Fed con control de inflación",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Bonos USA (especialmente largo plazo): volatilidad en pricing y curva de rendimientos; DXY puede subir si mercado anticipa tasas más altas",
+    "despues": "S&P 500, activos de renta fija corporativa, divisas emergentes, oro",
+    "escenarios": "Traders vigilarán próximas declaraciones de Fed para resolver confusión; watch para September meeting; si bonos siguen mostrando escepticismo, Fed podría perder credibilidad en control de inflación",
+    "riesgos": "Desconexión prolongada entre Fed y mercado podría generar volatilidad; si Fed efectivamente actúa, bonos pueden rebotarse; si no actúa, credibilidad de control inflacionario en riesgo"
+   },
+   "macro": {
+    "bonos": "neutral (pero pricing muestra escepticismo)",
+    "rendimientos": "alcista (mercado anticipa más volatilidad)",
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
   {
    "id": "33723",
    "fecha": "2026-07-29T18:01:25+00:00",
@@ -7161,327 +7521,6 @@
     "cny": "Presión bajista si China-EE.UU arranceles se expanden"
    },
    "updates": []
-  },
-  {
-   "id": "983731290",
-   "fecha": "2026-07-26T14:44:29.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/gen-x-investors-dotcom-bubble-retirement-portfolio.html",
-   "via": "CNBC",
-   "original": "For Gen X investors, dotcom bubble haunts stock market portfolios closing in on retirement",
-   "titulo": "Gen X: la burbuja de las puntocom vuelve a acechar carteras de jubilación",
-   "resumen": "Análisis señala que generación X, que enfrentó la burbuja dot-com en años 2000, ahora se acerca a jubilación con portafolios que repiten patrones de concentración en tecnología. El titular advierte sobre riesgos de replicar ciclos pasados de volatilidad extrema cercana a retiro.",
-   "analisis": {
-    "porque": "Identifica riesgo sistémico en asignación de portafolios de demografía masiva (Gen X) próxima a jubilación; ciclos históricos de valoración extrema en tech sugieren corrección venidera.",
-    "queOcurrio": "Análisis de CNBC contrasta vulnerabilidad actual de Gen X en carteras tech-heavy con trauma históricamente documentado del 2000-2002.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Tecnología"
-   ],
-   "sesgos": [
-    {
-     "activo": "Tecnología",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "gen-x",
-    "burbuja-tech",
-    "jubilacion",
-    "riesgo-portafolio",
-    "valuacion",
-    "nasdaq"
-   ],
-   "tgText": "⚠️ Gen X y riesgo de burbuja tech: generación próxima a jubilación replica patrones de concentración de 2000. Carteras de retiro bajo presión de valuación extrema.",
-   "xText": "⚠️ Gen X acecha la historia: análisis advierte sobre concentración en tech cercana a jubilación, similar a escenario pre-burbuja 2000. Riesgo de valoración alto.",
-   "discordText": "**Riesgo sistémico Gen X: carteras tech en jubilación**\n• Generación próxima a retiro, concentrada en tecnología\n• Paralelo con trauma de burbuja dot-com 2000-2002\n• Riesgo de volatilidad extrema en fase crítica",
-   "pushText": "Gen X: riesgo de burbuja tech en carteras de jubilación",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Sector tecnológico vulnerable a profit-taking institucional de Gen X que comienza rotación defensiva; NASDAQ cae si se confirma desapalancamiento de magnitud",
-    "despues": "Bonos suben si asignación se rota a renta fija; dólar neutral si rotación es doméstica; volatilidad extrema si corrección de tech es abrupta",
-    "escenarios": "Traders monitoreán: (1) Flujos de fondos mutuales desde tech a conservador, (2) Volumen anómalo en opciones puts sobre QQQ/XLK, (3) Valuaciones forward P/E de mega-cap tech, (4) Correlación Gen X con rebalanceo de 401k",
-    "riesgos": "Análisis es especulativo sobre timing; burbuja tech podría persistir si tasas caen; título mezcla preocupación histórica sin datar nueva evidencia"
-   },
-   "macro": {
-    "nasdaq": "Presión bajista por desapalancamiento generacional esperado",
-    "sp500": "Rotación sectorial esperada hacia defensivas",
-    "bonos": "Potencial demanda alcista de Gen X defensiva"
-   },
-   "updates": []
-  },
-  {
-   "id": "942715835",
-   "fecha": "2026-07-26T14:06:53.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/how-can-ai-wealth-be-shared-with-all-americans.html",
-   "via": "CNBC",
-   "original": "How AI wealth could be distributed to all Americans",
-   "titulo": "¿Cómo distribuir la riqueza de IA a todos los estadounidenses?",
-   "resumen": "Artículo de análisis examina propuestas de cómo el boom de riqueza generado por IA podría redistribuirse a población estadounidense más amplia. Discute mecanismos de políticas públicas y reforma fiscal para capturar valor de IA. Contexto: debate en Washington sobre impuestos a ganancias de IA.",
-   "analisis": {
-    "porque": "Reforma fiscal sobre IA y distribución de riqueza tecnológica es debate macro de mercados: podría impactar márgenes de tech, costo de capital, y política de Fed sobre inflación de activos.",
-    "queOcurrio": "Análisis sobre mecanismos de redistribución de valor de IA a población general; propuestas de reforma fiscal en debate.",
-    "estado": "rumor",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Tecnología"
-   ],
-   "sesgos": [
-    {
-     "activo": "Tecnología",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "ia-inteligencia-artificial",
-    "redistribucion-riqueza",
-    "reforma-fiscal",
-    "politica-monetaria",
-    "tech-regulacion"
-   ],
-   "tgText": "💡 Debate en marcha: cómo redistribuir riqueza de IA a estadounidenses. Reforma fiscal podría impactar márgenes de tech y política de Fed.",
-   "xText": "💡 EE.UU debate: mecanismos de redistribución de riqueza de IA. Reforma fiscal potencial sobre ganancias tecnológicas en agenda.",
-   "discordText": "**Debate: redistribución de riqueza de IA**\n• Propuestas de reforma fiscal en análisis\n• Mecanismos de captura de valor de IA\n• Impacto potencial en márgenes de tech",
-   "pushText": "Debate sobre redistribución de riqueza generada por IA en EE.UU",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Acciones de mega-cap tech (Nvidia, Microsoft, Google) presionan bajista si reforma fiscal a IA avanza; NASDAQ cae por concern de captura de ganancias",
-    "despues": "Bonos suben si reforma incluye redistribución vía impuestos; dólar neutral; commodities sin efecto directo",
-    "escenarios": "Traders vigilarán: (1) Propuestas específicas de imposición a IA en Congress, (2) Reacción de administración a debate, (3) Consenso político sobre timing e implementación",
-    "riesgos": "Análisis es especulativo; reforma fiscal es proceso lento; inversores tech pueden descontar totalmente o ignorar hasta que sea inminente"
-   },
-   "macro": {
-    "nasdaq": "Potencial presión bajista por reforma fiscal especulativa",
-    "sp500": "Sesgo neutral a bajista si reforma toma momentum"
-   },
-   "updates": []
-  },
-  {
-   "id": "974181596",
-   "fecha": "2026-07-26T13:30:02.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/opportunity-zone-investors-face-deferred-capital-gains-tax-bill.html",
-   "via": "CNBC",
-   "original": "Some high-earning investors will soon owe taxes on years of deferred capital gains",
-   "titulo": "Inversores de alto patrimonio enfrentan nuevos impuestos sobre ganancias de capital diferidas",
-   "resumen": "El titular refiere a cambios tributarios que afectarán a inversores de altos ingresos respecto a ganancias de capital que han sido diferidas en años anteriores. La medida impactaría la planificación fiscal de patrimonios relevantes en EE.UU. El titular no especifica fechas exactas de implementación ni montos específicos en juego.",
-   "analisis": {
-    "porque": "Afecta directamente estrategias de inversión y repatriación de capitales en mercados estadounidenses; genera recalcidad de portafolios entre inversores institucionales y de alto patrimonio.",
-    "queOcurrio": "Anuncio de cambios tributarios que gravan ganancias de capital históricamente diferidas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Bonos",
-    "USD"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "impuestos",
-    "ganancias-capital",
-    "inversores-patrimoniales",
-    "reformas-tributarias",
-    "EE.UU"
-   ],
-   "tgText": "📊 Cambios tributarios en EE.UU: inversores de alto patrimonio enfrentarán nuevos impuestos sobre ganancias de capital diferidas. Impacto en repatriación de capitales e inversión.",
-   "xText": "📊 Reforma tributaria en EE.UU: nuevos impuestos para inversores de alto patrimonio sobre ganancias de capital diferidas. Replanificación de portafolios en curso.",
-   "discordText": "**Reforma tributaria en inversores patrimoniales**\n• Nuevos impuestos sobre ganancias de capital diferidas\n• Afecta estrategias de inversión en EE.UU\n• Impacto en repatriación de capitales",
-   "pushText": "Nuevos impuestos tributarios a ganancias de capital diferidas en EE.UU",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de sectores de alto crecimiento (NASDAQ) pueden caer por venta preventiva de patrimonios",
-    "despues": "Bonos del tesoro podrían subir si se anticipa menor demanda de activos riesgosos; dólar tendería al alza por rotación defensiva",
-    "escenarios": "Traders vigilarán anuncios específicos de tasas y cronogramas de implementación; movimientos en sectores tech y financiero donde concentran ganancias diferidas",
-    "riesgos": "El titular carece de detalles sobre montos, tasas y fechas; reformas tributarias pueden dilatarse o modificarse en trámite legislativo"
-   },
-   "macro": {
-    "dolar": "Potencial al alza por repatriación defensiva",
-    "nasdaq": "Presión a corto plazo por ajuste de portafolios",
-    "sp500": "Sesgo bajista en anticipación",
-    "bonos": "Potencial alcista por rotación defensiva",
-    "oro": "Posible demanda defensiva"
-   },
-   "updates": []
-  },
-  {
-   "id": 903504830,
-   "fecha": "2026-07-26T11:46:51.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/what-more-expensive-corporate-debt-could-mean-for-the-ai-buildout.html",
-   "via": "CNBC",
-   "original": "What more expensive corporate debt could mean for the AI buildout",
-   "titulo": "Deuda corporativa más cara podría frenar inversión en IA, advierten analistas",
-   "resumen": "Analistas señalan que el encarecimiento de la deuda corporativa crearía fricción en el financiamiento de proyectos de IA capital-intensivos. El titular no especifica tasas, spreads actuales ni qué empresas de tech podrían verse afectadas con mayor severidad. Contexto: en 2026 el buildout de IA sigue siendo motor de valuaciones tech.",
-   "analisis": {
-    "porque": "Deuda corporativa más cara afecta directamente la ecuación de NPV de capex en IA. Si costo de financiamiento sube, proyectos con retornos marginales se invalidan. Impacta valuaciones tech (especialmente data centers, semiconductores).",
-    "queOcurrio": "Analistas previenen que deuda corporativa más cara podría ralentizar inversión en buildout de IA. No se cita comunicado de Fed, bancos centrales ni cambio oficial de tasas.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Bonos",
-    "Rendimientos USA",
-    "Semiconductor stocks"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos corporativos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Data center plays",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "deuda-corporativa",
-    "tasas-interes",
-    "ia-capex",
-    "financiamiento",
-    "tech"
-   ],
-   "tgText": "💡 Analistas advierten: deuda corporativa cara frenaría inversión en IA. Proyectos capital-intensivos con retornos marginales podrían invalidarse si tasas suben.",
-   "xText": "Alerta: encarecimiento de deuda corporativa presionaría inversión en IA. Fricción en financiamiento de data centers y chips impactaría valuaciones tech. #NASDAQ #IA",
-   "discordText": "**Deuda corporativa cara amenaza buildout de IA**\n• Analistas alertan sobre fricción en financiamiento\n• Proyectos capital-intensivos en riesgo\n• Impacto en NASDAQ y valuaciones tech\n• Retornos marginales se tornan inviables con tasas altas",
-   "pushText": "Deuda cara frenaría inversión en IA, advierte Wall Street",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "NASDAQ cede (menos capex esperado en tech), spreads de bonos corporativos se cotizan más anchos.",
-    "despues": "Semiconductor stocks presionan (menos demanda de chips de IA), data center plays (AWS, Azure, data center REITs) retroceden.",
-    "escenarios": "Traders vigilan: (1) próximas decisiones de Fed (si mantiene tasas altas), (2) spreads de bonos corporativos tipo tech/infraestructura, (3) earnings de Nvidia, AMD, Cloud players con guidance capex.",
-    "riesgos": "Análisis prospectivo sin datos duros. Si tasas bajan o spreads se cierren, sesgo se invierte. Dependencia de políticas monetarias futuras."
-   },
-   "macro": {
-    "nasdaq": "Bajista potencial",
-    "bonos": "Bajistas (spreads anchos)",
-    "rendimientos": "Impacto si suben"
-   },
-   "updates": []
-  },
-  {
-   "id": 923498551,
-   "fecha": "2026-07-26T11:37:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/luxury-retailers-turn-to-outlets-for-growth-analysts-say-these-stocks-can-benefit.html",
-   "via": "CNBC",
-   "original": "Luxury retailers turn to outlets for growth. Analysts say these stocks can benefit",
-   "titulo": "Retailers de lujo apuestan por outlets; analistas ven oportunidad en estas acciones",
-   "resumen": "Retailers de lujo abren o expanden outlets como estrategia de crecimiento. Analistas identifican oportunidades de mercado. El titular no especifica qué compañías, ubicaciones, o timing de expansion. Contexto: sector lujo enfrenta presión de demanda en 2026.",
-   "analisis": {
-    "porque": "Outlet strategy de lujo = monetizar exceso de stock, capturar segmento middle-market, diversificar canales. Afecta márgenes y flujo de caja retail. Tema sectorial relevante en earnings season.",
-    "queOcurrio": "Retailers de lujo pivotan hacia outlets como motor de crecimiento. Analistas ven plays positivos en sector.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "Consumer Discretionary"
-   ],
-   "sesgos": [
-    {
-     "activo": "Retail Lujo",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "retail-lujo",
-    "outlets",
-    "estrategia-crecimiento",
-    "márgenes"
-   ],
-   "tgText": "Retailers lujo apuestan por outlets como motor de crecimiento. Analistas ven plays positivos en sector de discretionary.",
-   "xText": "Lujo en outlets: retailers abren nuevo canal. Analistas optimistas con acciones del sector para capturar demanda middle-market. #Retail #Discretionary",
-   "discordText": "**Retailers lujo abren estrategia de outlets**\n• Nuevo canal de distribución\n• Objetivo: monetizar stock, capturar middle-market\n• Analistas ven oportunidades\n• Impacto en márgenes y flujos",
-   "pushText": "Retailers lujo expanden outlets; Wall Street optimista",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Consumer Discretionary sector se cotiza alcista si mercado interpreta como innovación defensiva.",
-    "despues": "Acciones retail específicas se beneficiarían si guía capex/inversiones es positiva.",
-    "escenarios": "Traders vigilan: (1) earnings de retailers lujo con detalle de outlet performance, (2) márgenes brutos si estrategia presiona precios, (3) reacción de mercado a 'trading down' de consumidores.",
-    "riesgos": "Outlet strategy puede señalar debilidad de demanda en full-price. Presión de márgenes si mix de ventas se desplaza a descuento."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 923745369,
-   "fecha": "2026-07-26T11:33:11.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/top-analysts-back-these-3-stocks-for-their-long-term-growth-potential.html",
-   "via": "CNBC",
-   "original": "Top Wall Street analysts back these 3 stocks for their long-term growth potential",
-   "titulo": "Top analistas de Wall Street respaldan 3 acciones por potencial de crecimiento a largo plazo",
-   "resumen": "Analistas de Wall Street seleccionan tres acciones para posiciones de largo plazo. El titular no especifica qué compañías son, sectores, ni criterios de selección. Información incompleta imposibilita análisis de mercado específico.",
-   "analisis": {
-    "porque": "Respaldos de analistas top-tier pueden atraer flujos institucionales sostenidos. Sin embargo, titular carece de detalles para impacto de mercado.",
-    "queOcurrio": "Analistas de Wall Street respaldan 3 acciones no identificadas para crecimiento a largo plazo.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "S&P500"
-   ],
-   "sesgos": [],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "analistas-wall-street",
-    "selección-acciones",
-    "crecimiento-largo-plazo"
-   ],
-   "tgText": "Analistas top de Wall Street respaldan 3 acciones para crecimiento a largo plazo. (Acciones no especificadas en titular).",
-   "xText": "Wall Street: 3 acciones seleccionadas para potencial de crecimiento a largo plazo. Detalles en CNBC.",
-   "discordText": "**Analistas Wall Street avalan 3 acciones**\n• Selección para largo plazo\n• Potencial de crecimiento\n• (Detalles no en titular)",
-   "pushText": "Analistas recomiendan 3 acciones para largo plazo",
-   "importancia": 4,
-   "reaccion": null,
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7597,6 +7636,16 @@
   "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html",
   "https://www.cnbc.com/2026/07/29/why-america-super-rich-love-football-clubs-british.html",
   "https://www.cnbc.com/2026/07/29/bts-concerts-hybe-record-results-shares-crash.html",
-  "https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html"
+  "https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html",
+  "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
+  "https://www.cnbc.com/2026/07/29/gundlach-says-the-bond-market-is-signaling-the-fed-has-to-act-on-inflation.html",
+  "https://www.cnbc.com/2026/07/29/carvana-cvna-earnings-q2-2026.html",
+  "https://www.cnbc.com/2026/07/29/stocks-making-the-biggest-moves-after-hours-msft-meta-sbux-cvna.html",
+  "https://www.cnbc.com/2026/07/29/qualcomm-qcom-earnings-report-q3-2026-.html",
+  "https://www.cnbc.com/select/chase-sapphire-preferred-100k-bonus-ending-soon-2026/",
+  "https://www.cnbc.com/2026/07/29/starbucks-sbux-q3-2026-earnings.html",
+  "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html",
+  "https://www.cnbc.com/2026/07/29/todd-blanche-attorney-general-trump-irs-audit-cornyn.html"
  ]
 }
