@@ -1,7 +1,154 @@
 {
- "lastId": 33714,
- "actualizado": "2026-07-29T13:28:21.357Z",
+ "lastId": 33716,
+ "actualizado": "2026-07-29T15:30:52.013Z",
  "items": [
+  {
+   "id": "33716",
+   "fecha": "2026-07-29T14:11:27+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33716",
+   "via": "DeItaone",
+   "original": "ELON MUSK SETTLES LONG-RUNNING LEGAL BATTLE WITH X ADVERTISERS - FT",
+   "titulo": "Elon Musk resuelve batalla legal de años con anunciantes de X",
+   "resumen": "Elon Musk ha llegado a un acuerdo para cerrar un litigio prolongado con anunciantes de la plataforma X (antes Twitter). El titular no especifica términos del acuerdo ni montos involucrados. Este cierre representa un alivio para la operación de X después de meses de tensiones con grandes anunciantes por moderación de contenidos y políticas publicitarias.",
+   "analisis": {
+    "porque": "Reduce riesgo legal y regulatorio para X, permitiendo normalizar relaciones comerciales cruciales con el sector publicitario global. El acuerdo señala estabilización operativa tras caída de ingresos por publicidad post-adquisición.",
+    "queOcurrio": "Musk y anunciantes de X finalizaron un litigio de larga duración mediante acuerdo de conformidad.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "X (valuación privada)",
+    "Publicidad digital",
+    "Nasdaq"
+   ],
+   "sesgos": [
+    {
+     "activo": "X/Musk empresas",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "elon-musk",
+    "x-twitter",
+    "litigio",
+    "anunciantes",
+    "riesgo-legal"
+   ],
+   "tgText": "Elon Musk cierra batalla legal con anunciantes de X. Acuerdo resuelve tensiones sobre moderación y políticas publicitarias. Términos no especificados.",
+   "xText": "Elon Musk llega a acuerdo para cerrar litigio con anunciantes de X tras meses de tensiones. Movimiento reduce riesgos legales para la plataforma.",
+   "discordText": "**X: Musk resuelve litigio con anunciantes**\n• Acuerdo cierra batalla legal prolongada\n• Reduce riesgo regulatorio y comercial\n• Términos no divulgados",
+   "pushText": "Musk cierra litigio con anunciantes de X",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Valuación privada de X y confianza de anunciantes: cierre de litigio reduce fricción comercial.",
+    "despues": "Empresas de publicidad digital y plataformas competidoras podrían evaluar normalizacion de relaciones con X.",
+    "escenarios": "Traders monitoreaban: (1) magnitud de potencial pago de X, (2) capacidad de recuperar anunciantes, (3) riesgos regulatorios pendientes. Acuerdo mitiga escenario adverso.",
+    "riesgos": "Términos no divulgados; posible pago oculto importante. Litigio no es la única presión sobre ingresos publicitarios de X."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33689",
+   "fecha": "2026-07-29T08:17:08+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33689",
+   "via": "DeItaone",
+   "original": "MIDDLE EAST CONFLICT ESCALATES Fighting between Iran and the US intensified overnight as Iran launched ballistic missiles at US forces, while the US and Saudi Arabia responded with strikes on Iran-backed militias in Iraq, ending a brief diplomatic pause. Saudi Arabia said it intercepted drones targeting its oil facilities for a second consecutive day. The US said all Iranian missiles aimed at its ",
+   "titulo": "Escalada en Oriente Medio: Irán lanza misiles, petróleo salta 4% y Hormuz se cierra",
+   "resumen": "Los enfrentamientos entre Irán y EE.UU. se intensificaron con lanzamiento de misiles balísticos iraníes y contraataques estadounidenses en Irak. El conflicto se expande a Arabia Saudí y Yemen con ataques hutíes. El petróleo Brent alcanzó USD 87/barril (+4%), el Estrecho de Hormuz permanece efectivamente cerrado y el transporte marítimo sufre disrupciones severas. Las perspectivas de negociación diplomática EE.UU.-Irán se desvanecen.",
+   "analisis": {
+    "porque": "Conflicto geopolítico activo que interrumpe oferta energética global, eleva prima de riesgo en crudo y genera incertidumbre sobre inflación y recesión. Afecta directamente decisiones de política monetaria y volatilidad de mercados.",
+    "queOcurrio": "Reanudación de hostilidades tras breve pausa diplomática. Irán lanzó misiles balísticos contra posiciones estadounidenses; EE.UU. y Arabia Saudí respondieron contra milicias respaldadas por Irán en Irak. Houthis atacaron instalaciones petrolíferas saudíes por segundo día consecutivo. Cierre efectivo del Estrecho de Hormuz.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters (vía Walter Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Brent Crude",
+    "S&P 500",
+    "NASDAQ",
+    "Dólar (DXY)",
+    "Bonos USA",
+    "Oro",
+    "Energía",
+    "Transporte marítimo"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "misiles-balísticos",
+    "petróleo",
+    "hormuz",
+    "conflicto-oriente-medio",
+    "brent-crude",
+    "suministro-energético",
+    "volatilidad-mercados"
+   ],
+   "tgText": "🔥 ESCALADA CRÍTICA: Irán lanza misiles balísticos contra EE.UU.; petróleo +4% a USD 87/barril. Hormuz cerrado, ataques hutíes en expansión. Riesgo geopolítico al máximo.",
+   "xText": "⚠️ Escalada Irán-EE.UU.: misiles balísticos, petróleo +4% a USD 87/barril, Hormuz cerrado. Conflicto se expande a Arabia Saudí y Yemen. Alto riesgo de inflación.",
+   "discordText": "**GEOPOLÍTICA - BREAKING**\n• Irán lanza misiles contra bases estadounidenses\n• EE.UU./Arabia Saudí contraatacan en Irak\n• Petróleo Brent: USD 87/barril (+4%)\n• Estrecho de Hormuz efectivamente cerrado\n• Ataques hutíes contra instalaciones saudíes",
+   "pushText": "ALERTA: Escalada Irán-EE.UU., petróleo +4%, Hormuz cerrado",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo (Brent/WTI): reacción inmediata por interrupción de suministro y cierre del Estrecho de Hormuz. Traders de energía y fondos de cobertura rebalancean posiciones.",
+    "despues": "Bonos USA (yield sube por inflación esperada), Dólar (flight-to-safety), Oro (hedge geopolítico), S&P 500 (riesgo de recesión por choque de costos energéticos).",
+    "escenarios": "Traders vigilan: (1) Extensión del conflicto a actores regionales; (2) duración del cierre de Hormuz; (3) impacto en inflación de febrero-2026; (4) respuesta de bancos centrales a presión inflacionaria; (5) posibilidad de escalada naval en Mar Rojo.",
+    "riesgos": "Escalada descontrolada podría duplicar precios de crudo. Riesgo de cierre prolongado de Hormuz (20-30% del tráfico petrolero mundial). Impacto asimétrico en economías importadoras de petróleo. Posible error de cálculo militar."
+   },
+   "macro": {
+    "petroleo": "alcista muy fuerte (+4% a USD 87/barril)",
+    "dolar": "alcista por flight-to-safety",
+    "oro": "alcista por cobertura geopolítica",
+    "bonos": "alcista (yields suben por inflación esperada)",
+    "nasdaq": "bajista por presión inflacionaria",
+    "sp500": "bajista por choque de costos",
+    "bitcoin": "neutral a alcista (cobertura alternativa)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-29T13:51:14+00:00",
+     "id": "33715",
+     "texto": "El Consejo de Seguridad de Irak ordenó al ministerio de asuntos exteriores emprender acciones legales contra operaciones militares estadounidenses y sauditas. Actualización de la escalada geopolítica regional que comenzó con ataques iranís previos. El titular no especifica los ataques concretos ni contexto completo de la disputa.",
+     "tgUrl": "https://t.me/walterbloomberg/33715"
+    },
+    {
+     "fecha": "2026-07-29T12:17:18+00:00",
+     "id": "33702",
+     "texto": "Trump confirmó en entrevista Fox que EE.UU. llevará a cabo strikes contra Irán en respuesta a ataques balísticos contra objetivos estadounidenses en Jordania. Añadió que ataques nocturnos a milicias respaldadas por Irán en Irak fueron coordinados con Bagdad y advirtió de futuras acciones contra proxies iraníes. Esto escala la tensión geopolítica más allá de repercusión anunciada el 29/07.",
+     "tgUrl": "https://t.me/walterbloomberg/33702"
+    }
+   ],
+   "actualizado": "2026-07-29T13:51:14+00:00"
+  },
   {
    "id": "33709",
    "fecha": "2026-07-29T12:35:21+00:00",
@@ -182,97 +329,6 @@
     "petroleo": "alcista +2% a +3%"
    },
    "updates": []
-  },
-  {
-   "id": "33689",
-   "fecha": "2026-07-29T08:17:08+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33689",
-   "via": "DeItaone",
-   "original": "MIDDLE EAST CONFLICT ESCALATES Fighting between Iran and the US intensified overnight as Iran launched ballistic missiles at US forces, while the US and Saudi Arabia responded with strikes on Iran-backed militias in Iraq, ending a brief diplomatic pause. Saudi Arabia said it intercepted drones targeting its oil facilities for a second consecutive day. The US said all Iranian missiles aimed at its ",
-   "titulo": "Escalada en Oriente Medio: Irán lanza misiles, petróleo salta 4% y Hormuz se cierra",
-   "resumen": "Los enfrentamientos entre Irán y EE.UU. se intensificaron con lanzamiento de misiles balísticos iraníes y contraataques estadounidenses en Irak. El conflicto se expande a Arabia Saudí y Yemen con ataques hutíes. El petróleo Brent alcanzó USD 87/barril (+4%), el Estrecho de Hormuz permanece efectivamente cerrado y el transporte marítimo sufre disrupciones severas. Las perspectivas de negociación diplomática EE.UU.-Irán se desvanecen.",
-   "analisis": {
-    "porque": "Conflicto geopolítico activo que interrumpe oferta energética global, eleva prima de riesgo en crudo y genera incertidumbre sobre inflación y recesión. Afecta directamente decisiones de política monetaria y volatilidad de mercados.",
-    "queOcurrio": "Reanudación de hostilidades tras breve pausa diplomática. Irán lanzó misiles balísticos contra posiciones estadounidenses; EE.UU. y Arabia Saudí respondieron contra milicias respaldadas por Irán en Irak. Houthis atacaron instalaciones petrolíferas saudíes por segundo día consecutivo. Cierre efectivo del Estrecho de Hormuz.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (vía Walter Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Brent Crude",
-    "S&P 500",
-    "NASDAQ",
-    "Dólar (DXY)",
-    "Bonos USA",
-    "Oro",
-    "Energía",
-    "Transporte marítimo"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "irán",
-    "misiles-balísticos",
-    "petróleo",
-    "hormuz",
-    "conflicto-oriente-medio",
-    "brent-crude",
-    "suministro-energético",
-    "volatilidad-mercados"
-   ],
-   "tgText": "🔥 ESCALADA CRÍTICA: Irán lanza misiles balísticos contra EE.UU.; petróleo +4% a USD 87/barril. Hormuz cerrado, ataques hutíes en expansión. Riesgo geopolítico al máximo.",
-   "xText": "⚠️ Escalada Irán-EE.UU.: misiles balísticos, petróleo +4% a USD 87/barril, Hormuz cerrado. Conflicto se expande a Arabia Saudí y Yemen. Alto riesgo de inflación.",
-   "discordText": "**GEOPOLÍTICA - BREAKING**\n• Irán lanza misiles contra bases estadounidenses\n• EE.UU./Arabia Saudí contraatacan en Irak\n• Petróleo Brent: USD 87/barril (+4%)\n• Estrecho de Hormuz efectivamente cerrado\n• Ataques hutíes contra instalaciones saudíes",
-   "pushText": "ALERTA: Escalada Irán-EE.UU., petróleo +4%, Hormuz cerrado",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo (Brent/WTI): reacción inmediata por interrupción de suministro y cierre del Estrecho de Hormuz. Traders de energía y fondos de cobertura rebalancean posiciones.",
-    "despues": "Bonos USA (yield sube por inflación esperada), Dólar (flight-to-safety), Oro (hedge geopolítico), S&P 500 (riesgo de recesión por choque de costos energéticos).",
-    "escenarios": "Traders vigilan: (1) Extensión del conflicto a actores regionales; (2) duración del cierre de Hormuz; (3) impacto en inflación de febrero-2026; (4) respuesta de bancos centrales a presión inflacionaria; (5) posibilidad de escalada naval en Mar Rojo.",
-    "riesgos": "Escalada descontrolada podría duplicar precios de crudo. Riesgo de cierre prolongado de Hormuz (20-30% del tráfico petrolero mundial). Impacto asimétrico en economías importadoras de petróleo. Posible error de cálculo militar."
-   },
-   "macro": {
-    "petroleo": "alcista muy fuerte (+4% a USD 87/barril)",
-    "dolar": "alcista por flight-to-safety",
-    "oro": "alcista por cobertura geopolítica",
-    "bonos": "alcista (yields suben por inflación esperada)",
-    "nasdaq": "bajista por presión inflacionaria",
-    "sp500": "bajista por choque de costos",
-    "bitcoin": "neutral a alcista (cobertura alternativa)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-29T12:17:18+00:00",
-     "id": "33702",
-     "texto": "Trump confirmó en entrevista Fox que EE.UU. llevará a cabo strikes contra Irán en respuesta a ataques balísticos contra objetivos estadounidenses en Jordania. Añadió que ataques nocturnos a milicias respaldadas por Irán en Irak fueron coordinados con Bagdad y advirtió de futuras acciones contra proxies iraníes. Esto escala la tensión geopolítica más allá de repercusión anunciada el 29/07.",
-     "tgUrl": "https://t.me/walterbloomberg/33702"
-    }
-   ],
-   "actualizado": "2026-07-29T12:17:18+00:00"
   },
   {
    "id": "33699",
@@ -7471,60 +7527,6 @@
     "bonos": "alcistas (Bunds especialmente)",
     "petroleo": "neutral"
    },
-   "updates": []
-  },
-  {
-   "id": "914399192",
-   "fecha": "2026-07-25T20:19:21.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/us-appeals-court-rules-trump-cannot-implement-mail-in-voting-order.html",
-   "via": "CNBC",
-   "original": "U.S. appeals court rules Trump cannot implement mail-in voting order",
-   "titulo": "Corte de apelaciones de EE.UU. rechaza orden de Trump sobre votación por correo",
-   "resumen": "Tribunal de apelaciones estadounidense bloquea ejecución de orden ejecutiva de Trump sobre voto por correo. Confirmado: decisión judicial. Refleja continuidad de disputas legales sobre votación. Impacto limitado en mercados salvo si genera incertidumbre política prolongada.",
-   "analisis": {
-    "porque": "Incertidumbre política puede impactar confianza de inversores y volatilidad de activos cyclical; afecta narrative de gobernanza pero impacto directo en mercados es marginal",
-    "queOcurrio": "Corte de apelaciones federal rechaza implementación de orden ejecutiva presidencial sobre procesos de votación por correo",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "Bonos USA",
-    "Acciones Cyclical"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista-refugio"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "trump",
-    "orden-ejecutiva",
-    "voto-correo",
-    "corte-apelaciones",
-    "incertidumbre-politica"
-   ],
-   "tgText": "⚖️ Corte de apelaciones rechaza orden Trump sobre votación por correo. Decisión limita poder ejecutivo en reformas electorales. Impacto directo en mercados limitado; sigue incertidumbre política.",
-   "xText": "⚖️ Corte de apelaciones bloquea orden Trump sobre voto por correo. Revés judicial para administración. Mercados monitorean riesgos políticos; impacto limitado a corto plazo.",
-   "discordText": "**Corte rechaza orden Trump sobre voto por correo**\n• Fallo de apelaciones limita orden ejecutiva\n• Continúa disputa sobre reformas electorales\n• Impacto limitado en mercados de bonos y acciones",
-   "pushText": "Corte de apelaciones rechaza orden Trump sobre votación",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "Bonos USA (seguridad política) podrían reaccionar levemente al alza; DXY neutral; acciones cyclical sin movimiento directo",
-    "despues": "Monitoreo de próximas disputas ejecutivas; riesgo de volatilidad si escala a temas económicos",
-    "escenarios": "Traders monitorizan: (1) si Trump apela o acepta fallo, (2) correlación con próximas medidas ejecutivas (aranceles, regulación), (3) sentimiento riesgo-país EEUU",
-    "riesgos": "Riesgo bajo a mercados; riesgo político moderado si escala conflicto institucional"
-   },
-   "macro": null,
    "updates": []
   }
  ],
