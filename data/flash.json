@@ -1,7 +1,219 @@
 {
- "lastId": 33716,
- "actualizado": "2026-07-29T15:30:52.013Z",
+ "lastId": 33719,
+ "actualizado": "2026-07-29T16:52:49.704Z",
  "items": [
+  {
+   "id": "33704",
+   "fecha": "2026-07-29T12:20:45+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33704",
+   "via": "DeItaone",
+   "original": "S&P 500, NASDAQ FUTURES TURN NEGATIVE AFTER TRUMP'S COMMENTS ON IRAN",
+   "titulo": "Futuros S&P 500 y Nasdaq caen tras comentarios hawkish de Trump sobre Irán",
+   "resumen": "Inmediatamente después de que Trump confirmara represalias militares contra Irán, los futuros del S&P 500 y Nasdaq giraron al territorio negativo. La volatilidad se intensificó por coincidencia con expectativas de decisión Fed (pausa vs alza). Movimiento refleja arbitraje entre riesgo geopolítico e incertidumbre de política monetaria.",
+   "analisis": {
+    "porque": "Combinación de escalada geopolítica (Irán) + incertidumbre Fed amplifica aversión al riesgo. Mercados reprician activos de renta variable a la baja; buscan safe-haven (bonos, dólar, oro).",
+    "queOcurrio": "Tras comentarios de Trump sobre represalias contra Irán, futuros de equities estadounidenses pasaron de neutral/ligeramente positivo a negativo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "Nasdaq",
+    "Futuros S&P",
+    "Futuros Nasdaq",
+    "Petróleo",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Breaking News",
+   "keywords": [
+    "S&P 500",
+    "Nasdaq",
+    "futuros",
+    "Irán",
+    "volatilidad",
+    "geopolítica"
+   ],
+   "tgText": "Futuros S&P 500/Nasdaq giran negativos tras Trump confirmar represalias contra Irán. Volatilidad extrema; trasfondo Fed antes del anuncio.",
+   "xText": "S&P 500 y Nasdaq futures caen tras Trump confirmar ataques a Irán. Combinación de riesgo geopolítico + incertidumbre Fed.",
+   "discordText": "**Futuros Equities - Giro Negativo**\n• S&P 500 y Nasdaq futures ↓\n• Trigger: represalias Trump vs Irán\n• Contexto: Fed decision inminente\n→ Aversión a riesgo, safe-haven",
+   "pushText": "Futuros S&P/Nasdaq caen tras represalias Iran; volatilidad extrema pre-Fed",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Futuros ceden 0,5-1,5%; VIX salta 2-4 puntos; petróleo gira alcista (+2-3%).",
+    "despues": "Bonos del Tesoro suben (yields bajan 10-15 pb); dólar se fortalece; oro sube; spreads de credit se amplían; sectores defensivos buscan rotación.",
+    "escenarios": "Traders monitorean: (1) profundidad de la caída si escalada Irán continúa, (2) si Fed reacciona dovish por riesgo geopolítico, (3) si Nasdaq especialmente presionado por tech exposure a energía/petróleo.",
+    "riesgos": "Escalada no controlada Irán + sorpresa de alza Fed = crash -2% a -3% en equities; volatilidad sostenida presiona stop-loss de hedge funds."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "alcista",
+    "sp500": "bajista -0,5% a -1,5%",
+    "nasdaq": "bajista -0,5% a -2%",
+    "bonos": "alcista (yields bajan)",
+    "petroleo": "alcista +2% a +3%"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-29T15:55:35+00:00",
+     "id": "33719",
+     "texto": "El S&P 500 extendió pérdidas a caída del 1,00% durante la sesión. Esta actualización marca aceleración de la corrección inicialmente reportada tras comentarios hawkish sobre Irán. El contexto incluye tensos reportes geopolíticos sobre ataques en Oriente Medio y pánico de retracción en sectores defensivos.",
+     "tgUrl": "https://t.me/walterbloomberg/33719"
+    }
+   ],
+   "actualizado": "2026-07-29T15:55:35+00:00"
+  },
+  {
+   "id": "33718",
+   "fecha": "2026-07-29T15:52:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33718",
+   "via": "DeItaone",
+   "original": "A US-OWNED AND OPERATED, MARSHALL ISLANDS-FLAGGED LNG FLOATING STORAGE FACILITY WAS STRUCK BY AT LEAST ONE UNMANNED AERIAL VEHICLE (UAV) WHILST AT THE DAMIETTA, EGYPT - AMBREY",
+   "titulo": "Instalación LNG estadounidense en Egito atacada por drones no tripulados",
+   "resumen": "Una instalación flotante de almacenamiento LNG, estadounidense operada y con bandera de Islas Marshall, fue alcanzada por al menos un vehículo aéreo no tripulado mientras se encontraba en Damietta, Egipto, según reportó AMBREY. El incidente agrega presión a infraestructura energética crítica en Oriente Medio en contexto de escaladas geopolíticas.",
+   "analisis": {
+    "porque": "Ataques a infraestructura LNG en Oriente Medio generan riesgo sobre suministros globales y precios de energía; afecta rutas comerciales y narrativa de riesgo sistémico",
+    "queOcurrio": "Una barcaza LNG estadounidense en Damietta, Egipto, fue golpeada por al menos un UAV no identificado, según tracker de riesgo marítimo AMBREY",
+    "estado": "confirmado",
+    "fuenteOriginal": "AMBREY (plataforma de alertas de riesgo marítimo)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Gas Natural",
+    "USD",
+    "Oro",
+    "Bonos",
+    "Energía"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Gas Natural",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "lng-ataque",
+    "drones",
+    "oriente-medio",
+    "suministro-energético",
+    "riesgo-marítimo",
+    "infraestructura"
+   ],
+   "tgText": "⚠️ BREAKING: Instalación LNG estadounidense en Damietta (Egipto) atacada por drone. AMBREY confirma impacto. Presión sobre petróleo y rutas comerciales globales.",
+   "xText": "Instalación LNG estadounidense golpeada por drone en Damietta, Egipto. AMBREY confirma ataque. Riesgo de nuevo shock en suministros energéticos globales.",
+   "discordText": "**ATAQUE A INFRAESTRUCTURA LNG**\n🔴 Damietta, Egipto\n• Instalación flotante estadounidense golpeada por UAV\n• Fuente: AMBREY (tracker marítimo)\n• Riesgo a suministros LNG globales\n• Presión al petróleo y gas natural",
+   "pushText": "Instalación LNG estadounidense atacada por drone en Damietta, Egipto",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI, Brent): típicamente reacciona en primeros 15 min a noticias de infraestructura en Oriente Medio; riesgo de gap alcista",
+    "despues": "Gas Natural, productos energéticos, dólar (safe haven), oro; posibles moves en futuros de energía nocturna en Asia",
+    "escenarios": "Traders vigilarán si ataque fue aislado o señal de escalada sostenida; si genera daño operacional o es simbólico; posibles reportes de reparación/impacto en flujo de LNG",
+    "riesgos": "Titular no especifica magnitud de daño, víctimas o si hay reclamación de responsabilidad; riesgo de escalada conforme se confirmen detalles"
+   },
+   "macro": {
+    "petroleo": "alcista, rotura de resistencia probable",
+    "gas_natural": "alcista, potencial salto",
+    "usd": "alcista (risk-off)",
+    "sp500": "bajista (energy shock fears)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33717",
+   "fecha": "2026-07-29T15:48:52+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33717",
+   "via": "DeItaone",
+   "original": "BOFA CLIENTS KEEP BUYING THE DIP Bank of America clients remained aggressive buyers of U.S. equities last week, extending their buying streak to four consecutive weeks, even as the S&P 500 slipped 0.6%. Institutional investors led the move, posting their largest weekly net purchases since December 2020 and the second-biggest on BofA's records dating back to 2008. Retail investors also continued bu",
+   "titulo": "Clientes BofA compran acciones en caída; inversores institucionales marcan compras récord",
+   "resumen": "Clientes del Bank of America extendieron a cuatro semanas consecutivas sus compras netas de acciones estadounidenses, con inversores institucionales registrando las mayores compras semanales desde diciembre 2020 y el segundo récord en datos de BofA desde 2008. Los minoristas también compraron, mientras fondos de cobertura vendieron por tercera semana. Tecnología, Financieras e Industriales lideraron entradas, con industriales marcando demanda récord. Recompras corporativas bajaron durante earnings pero permanecen 19% arriba vs año anterior.",
+   "analisis": {
+    "porque": "El comportamiento de compra institucional agresiva en correcciones es indicador contra-cíclico fuerte que suele preceder rebounds; señala confianza fundamental y contrasta con volatilidad reciente",
+    "queOcurrio": "Banco of America reporta que sus clientes institucionales realizaron compras netas de acciones por cuarto ciclo semanal consecutivo, con magnitud segunda en su registro histórico desde 2008, incluso con S&P 500 retrocediendo 0,6% en la semana",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bank of America (reportes de flujos de cliente)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Tecnología",
+    "Financieras",
+    "Industriales"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Industriales",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "flujos-institucionales",
+    "compras-acciones",
+    "bofa",
+    "inversión-contracíclica",
+    "fondos-de-cobertura"
+   ],
+   "tgText": "BofA: clientes institucionales marcan 4ª semana de compras netas. Récord histórico en magnitud (2º desde 2008) pese a caída S&P 500. Minoristas también compran; hedge funds venden 3ª semana.",
+   "xText": "Clientes BofA en modo comprador: inversores institucionales con compras récord por 4ª semana consecutiva, segundo máximo histórico desde 2008. Minoristas también compran. Hedge funds: vendedores tercera semana.",
+   "discordText": "**Flujos BofA: Compra Institucional Masiva**\n• 4ª semana consecutiva de compras netas\n• Inversores institucionales: 2º récord desde 2008\n• Minoristas: siguen comprando\n• Hedge funds: venden por 3ª semana\n• Recompras corporativas: +19% vs año anterior",
+   "pushText": "Clientes BofA marcan 4ª semana de compras; institucionales en récord histórico",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "S&P 500 e índices amplios (SPX, NDX): flujos institucionales contra-cíclicos suelen anticipar reversiones de corto plazo",
+    "despues": "Sectores de entrada fuerte (Tech, Financieras, Industriales); pequeña capitalización si el movimiento gana volumen",
+    "escenarios": "Traders suelen vigilar si este flujo institucional soporta los mínimos de sesión o si es bounce técnico sin confirmar; comprobar si hedge funds rompen la venta o la aceleran en próximos días",
+    "riesgos": "El titular no especifica si estas compras son tácticas (rebote corto plazo) o cambio de postura fundamental; hedge funds aún vendiendo puede limitar upside"
+   },
+   "macro": {
+    "sp500": "sesgo alcista de corto plazo por flujos institucionales contra-cíclicos",
+    "nasdaq": "sesgo alcista por entradas fuertes en tecnología",
+    "dow": "sesgo alcista por demanda récord en industriales"
+   },
+   "updates": []
+  },
   {
    "id": "33716",
    "fecha": "2026-07-29T14:11:27+00:00",
@@ -259,75 +471,6 @@
     "riesgos": "Restricción podría reducir liquidez de ETFs apalancados, elevando spreads bid-ask; si medida es temporal, alivio podría ser fugaz y volatilidad retornar."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33704",
-   "fecha": "2026-07-29T12:20:45+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33704",
-   "via": "DeItaone",
-   "original": "S&P 500, NASDAQ FUTURES TURN NEGATIVE AFTER TRUMP'S COMMENTS ON IRAN",
-   "titulo": "Futuros S&P 500 y Nasdaq caen tras comentarios hawkish de Trump sobre Irán",
-   "resumen": "Inmediatamente después de que Trump confirmara represalias militares contra Irán, los futuros del S&P 500 y Nasdaq giraron al territorio negativo. La volatilidad se intensificó por coincidencia con expectativas de decisión Fed (pausa vs alza). Movimiento refleja arbitraje entre riesgo geopolítico e incertidumbre de política monetaria.",
-   "analisis": {
-    "porque": "Combinación de escalada geopolítica (Irán) + incertidumbre Fed amplifica aversión al riesgo. Mercados reprician activos de renta variable a la baja; buscan safe-haven (bonos, dólar, oro).",
-    "queOcurrio": "Tras comentarios de Trump sobre represalias contra Irán, futuros de equities estadounidenses pasaron de neutral/ligeramente positivo a negativo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P 500",
-    "Nasdaq",
-    "Futuros S&P",
-    "Futuros Nasdaq",
-    "Petróleo",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Breaking News",
-   "keywords": [
-    "S&P 500",
-    "Nasdaq",
-    "futuros",
-    "Irán",
-    "volatilidad",
-    "geopolítica"
-   ],
-   "tgText": "Futuros S&P 500/Nasdaq giran negativos tras Trump confirmar represalias contra Irán. Volatilidad extrema; trasfondo Fed antes del anuncio.",
-   "xText": "S&P 500 y Nasdaq futures caen tras Trump confirmar ataques a Irán. Combinación de riesgo geopolítico + incertidumbre Fed.",
-   "discordText": "**Futuros Equities - Giro Negativo**\n• S&P 500 y Nasdaq futures ↓\n• Trigger: represalias Trump vs Irán\n• Contexto: Fed decision inminente\n→ Aversión a riesgo, safe-haven",
-   "pushText": "Futuros S&P/Nasdaq caen tras represalias Iran; volatilidad extrema pre-Fed",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Futuros ceden 0,5-1,5%; VIX salta 2-4 puntos; petróleo gira alcista (+2-3%).",
-    "despues": "Bonos del Tesoro suben (yields bajan 10-15 pb); dólar se fortalece; oro sube; spreads de credit se amplían; sectores defensivos buscan rotación.",
-    "escenarios": "Traders monitorean: (1) profundidad de la caída si escalada Irán continúa, (2) si Fed reacciona dovish por riesgo geopolítico, (3) si Nasdaq especialmente presionado por tech exposure a energía/petróleo.",
-    "riesgos": "Escalada no controlada Irán + sorpresa de alza Fed = crash -2% a -3% en equities; volatilidad sostenida presiona stop-loss de hedge funds."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "alcista",
-    "sp500": "bajista -0,5% a -1,5%",
-    "nasdaq": "bajista -0,5% a -2%",
-    "bonos": "alcista (yields bajan)",
-    "petroleo": "alcista +2% a +3%"
-   },
    "updates": []
   },
   {
@@ -7391,141 +7534,6 @@
     "ethereum": null,
     "bonos": null,
     "petroleo": null
-   },
-   "updates": []
-  },
-  {
-   "id": "978536191",
-   "fecha": "2026-07-25T21:11:49.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/25/samsung-electronics-wins-200-billion-broadcom-ai-chip-partnership.html",
-   "via": "CNBC",
-   "original": "Samsung Electronics wins $200 billion Broadcom AI chip partnership, boosting foundry push",
-   "titulo": "Samsung gana alianza de IA con Broadcom por USD 200 mil millones en chips",
-   "resumen": "Samsung Electronics asegura asociación estratégica con Broadcom valorada en USD 200 mil millones, reforzando su posición en foundry de chips de IA. Confirmado: anuncio de alianza. El titular no especifica duración del contrato, volúmenes específicos ni calendarios de entrega.",
-   "analisis": {
-    "porque": "Señal de consolidación de capacidad de foundry global para chips de IA; impacta competencia TSMC/Samsung y demanda de equipamiento (ASML, Applied Materials)",
-    "queOcurrio": "Samsung y Broadcom formalizan alianza estratégica de USD 200 mil millones para fabricación de chips de IA",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "Semiconductores",
-    "Samsung",
-    "Broadcom",
-    "TSMC",
-    "ASML",
-    "Applied Materials"
-   ],
-   "sesgos": [
-    {
-     "activo": "Samsung",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Broadcom",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "TSMC",
-     "sesgo": "neutral-competencia"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "samsung",
-    "broadcom",
-    "chips-ia",
-    "alianza-estrategica",
-    "foundry",
-    "semiconductores"
-   ],
-   "tgText": "🔧 Samsung y Broadcom sellan alianza de USD 200MM para chips de IA. Refuerza posición de Samsung en foundry. Impacto en TSMC y cadena de supply de semiconductores. Broadcom y equipo (ASML) podrían beneficiarse.",
-   "xText": "🔧 Samsung gana contrato de USD 200MM con Broadcom para chips IA. Alianza estratégica refuerza competencia TSMC en foundry. Broadcom, ASML y Applied Materials en el radar.",
-   "discordText": "**Samsung-Broadcom: Alianza IA USD 200MM**\n• Samsung refuerza posición foundry\n• Competitive threat para TSMC\n• Positivo para equipamiento (ASML, Applied Materials)\n• Catalizador para sector semiconductores",
-   "pushText": "Samsung-Broadcom: Alianza de USD 200MM para chips de IA",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Broadcom sube por contrato de larga duración; Samsung por validación de estrategia foundry; semiconductores como índice suben",
-    "despues": "TSMC presionado por competencia; ASML y Applied Materials alcistas por implicancias de capex en foundry; equipamiento de manufactura sube",
-    "escenarios": "Traders monitorizan: (1) duración real del contrato vs valor reportado, (2) capacidad de Samsung para entregar volúmenes comparables a TSMC, (3) impacto en precios de chips IA, (4) competencia geopolítica USA-Taiwan",
-    "riesgos": "USD 200MM es valuación agregada posible en 5-10 años; no implica ingresos anuales; éxito depende de capacidad técnica de Samsung; TSMC sigue dominando"
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "dolar": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33536",
-   "fecha": "2026-07-25T20:50:38+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33536",
-   "via": "DeItaone",
-   "original": "CHRISTOPHER STREET DAY IN BERLIN CALLED OFF AFTER CAR CRASHED INTO CROWD AT BERLIN TIERGARTEN, SAYS BILD NEWSPAPER",
-   "titulo": "Incidente en Berlín: automóvil impacta multitud durante marcha; evento cancelado",
-   "resumen": "Un automóvil se estrelló contra una multitud durante el Christopher Street Day en Berlín-Tiergarten, según reporta el diario Bild. El evento fue cancelado como consecuencia. La policía de Berlín confirmó varios heridos en el incidente, aunque no especifica cifras ni causas del atropellamiento.",
-   "analisis": {
-    "porque": "Incidentes de seguridad pública en capitales europeas afectan sentimiento de riesgo geopolítico y estabilidad, con potencial impacto en bonos alemanes y spreads de deuda eurozona si se confirma intencionalidad.",
-    "queOcurrio": "Un vehículo colisionó con asistentes a desfile del Christopher Street Day en Berlín. El evento fue cancelado tras el suceso.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bild, Policía de Berlín vía X"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "EURUSD",
-    "Bonos alemanes",
-    "DAX",
-    "STOXX 600"
-   ],
-   "sesgos": [
-    {
-     "activo": "EURUSD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos alemanes",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Emergencia",
-   "keywords": [
-    "berlín",
-    "seguridad",
-    "alemania",
-    "europa",
-    "incidente"
-   ],
-   "tgText": "🚨 Automóvil impacta multitud en marcha de Berlín; evento cancelado. Policía confirma heridos. Causa pendiente de esclarecer. Vigilar reacción de DAX y spreads de deuda alemana.",
-   "xText": "BREAKING: Vehículo se estrella contra multitud en Christopher Street Day de Berlín. Evento cancelado, varios heridos reportados. Policía investiga. Vigilar sentimiento de riesgo en Europa.",
-   "discordText": "**INCIDENTE EN BERLÍN**\n• Automóvil impacta asistentes a marcha en Tiergarten\n• Evento cancelado\n• Policía confirma heridos\n• Impacto potencial en DAX y bonos alemanes",
-   "pushText": "Automóvil impacta multitud en Berlín; evento cancelado",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bonos alemanes (Bund) tendrán demanda defensiva si se interpreta como riesgo sistémico; EUR/USD bajo presión por aversión al riesgo en zona eurozona.",
-    "despues": "DAX y otros índices europeos sufrirán ventas técnicas; posible fortalecimiento del franco suizo y busca de activos seguros.",
-    "escenarios": "Traders vigilarán: (1) si el incidente tiene móvil terrorista/intencional vs accidental, (2) cobertura de seguros y responsabilidad civil en empresas alemanas, (3) reacción política y medidas de seguridad que podrían afectar apertura de mercados.",
-    "riesgos": "Titular basado en reportajes iniciales (Bild); cifra de heridos y causa aún no verificadas. Posible escalada narrativa si se confirma intencionalidad."
-   },
-   "macro": {
-    "dolar": "fortalecimiento por flight-to-safety",
-    "oro": "alcista (demanda defensiva)",
-    "nasdaq": "neutral a bajista (contagio emocional limitado)",
-    "dow": "neutral a bajista",
-    "sp500": "neutral",
-    "bitcoin": "volátil, depende contexto geopolítico mayor",
-    "ethereum": "neutral",
-    "bonos": "alcistas (Bunds especialmente)",
-    "petroleo": "neutral"
    },
    "updates": []
   }
