@@ -2859,6 +2859,14 @@ a.activity-row:hover { background: rgba(255,255,255,0.04); color: var(--text-hi)
   .sorteo-ref-row .filter-chip { flex: 1; text-align: center; min-height: 42px; }
 }
 
+/* Banderas SVG del calendario económico */
+.ecal-cur { display: flex; align-items: center; gap: 7px; }
+.ecal-flag {
+  flex-shrink: 0;
+  border-radius: 2.5px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.14);
+}
+
 /* Tarjeta lateral clickeable (Top analistas -> pestaña Ranking) */
 .sidebar-card-link { cursor: pointer; transition: border-color 0.15s ease, transform 0.15s ease; }
 .sidebar-card-link:hover { border-color: rgba(212,175,55,0.55); transform: translateY(-2px); }

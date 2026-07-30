@@ -6,12 +6,42 @@
   // donde el módulo se usa solo para incrustar mini-calendarios (.ar4-ecal-embed).
   const rootEl = document.getElementById('ar4Calendar');
 
+  // Banderas SVG en miniatura (18x12): los emojis de bandera no se dibujan en
+  // Windows (salía solo "EU"/"GB") y la regla de la casa es SVG serio, no emoji.
+  // Diseños simplificados pero reconocibles de cada bandera real.
+  function flagSVG(inner) {
+    return '<svg class="ecal-flag" viewBox="0 0 18 12" width="18" height="12" aria-hidden="true">' + inner + '</svg>';
+  }
+  const FLAGS = {
+    USD: flagSVG('<rect width="18" height="12" fill="#B22234"/><g fill="#fff"><rect y="1.7" width="18" height="1.7"/><rect y="5.1" width="18" height="1.7"/><rect y="8.5" width="18" height="1.7"/></g><rect width="8" height="6.8" fill="#3C3B6E"/><g fill="#fff"><circle cx="2" cy="1.7" r="0.55"/><circle cx="4.5" cy="1.7" r="0.55"/><circle cx="6.5" cy="1.7" r="0.55"/><circle cx="3.2" cy="3.4" r="0.55"/><circle cx="5.6" cy="3.4" r="0.55"/><circle cx="2" cy="5.1" r="0.55"/><circle cx="4.5" cy="5.1" r="0.55"/><circle cx="6.5" cy="5.1" r="0.55"/></g>'),
+    EUR: flagSVG('<rect width="18" height="12" fill="#003399"/><g fill="#FFCC00"><circle cx="9" cy="2.4" r="0.65"/><circle cx="11.6" cy="3.4" r="0.65"/><circle cx="12.6" cy="6" r="0.65"/><circle cx="11.6" cy="8.6" r="0.65"/><circle cx="9" cy="9.6" r="0.65"/><circle cx="6.4" cy="8.6" r="0.65"/><circle cx="5.4" cy="6" r="0.65"/><circle cx="6.4" cy="3.4" r="0.65"/></g>'),
+    GBP: flagSVG('<rect width="18" height="12" fill="#012169"/><path d="M0 0 L18 12 M18 0 L0 12" stroke="#fff" stroke-width="2.4"/><path d="M0 0 L18 12 M18 0 L0 12" stroke="#C8102E" stroke-width="1.1"/><path d="M9 0 V12 M0 6 H18" stroke="#fff" stroke-width="3.4"/><path d="M9 0 V12 M0 6 H18" stroke="#C8102E" stroke-width="1.9"/>'),
+    JPY: flagSVG('<rect width="18" height="12" fill="#fff"/><rect width="18" height="12" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="0.5"/><circle cx="9" cy="6" r="3.4" fill="#BC002D"/>'),
+    CAD: flagSVG('<rect width="18" height="12" fill="#fff"/><rect width="4.5" height="12" fill="#D80621"/><rect x="13.5" width="4.5" height="12" fill="#D80621"/><path d="M9 2.6 L9.8 4.4 L11.4 4 L10.6 5.8 L12 6.6 L9.9 7 L9.9 8.8 L9 8 L8.1 8.8 L8.1 7 L6 6.6 L7.4 5.8 L6.6 4 L8.2 4.4 Z" fill="#D80621"/>'),
+    AUD: flagSVG('<rect width="18" height="12" fill="#00247D"/><g transform="scale(0.5)"><path d="M0 0 L18 12 M18 0 L0 12" stroke="#fff" stroke-width="2.4"/><path d="M9 0 V12 M0 6 H18" stroke="#fff" stroke-width="3.2"/><path d="M9 0 V12 M0 6 H18" stroke="#C8102E" stroke-width="1.8"/></g><g fill="#fff"><circle cx="13.5" cy="3" r="0.7"/><circle cx="15.5" cy="6" r="0.7"/><circle cx="12.5" cy="8.5" r="0.7"/><circle cx="4.5" cy="9.5" r="0.9"/></g>'),
+    NZD: flagSVG('<rect width="18" height="12" fill="#00247D"/><g transform="scale(0.5)"><path d="M0 0 L18 12 M18 0 L0 12" stroke="#fff" stroke-width="2.4"/><path d="M9 0 V12 M0 6 H18" stroke="#fff" stroke-width="3.2"/><path d="M9 0 V12 M0 6 H18" stroke="#C8102E" stroke-width="1.8"/></g><g fill="#C8102E" stroke="#fff" stroke-width="0.4"><circle cx="13.5" cy="3.2" r="0.8"/><circle cx="15.3" cy="6" r="0.8"/><circle cx="12.8" cy="8.6" r="0.8"/></g>'),
+    CHF: flagSVG('<rect width="18" height="12" fill="#D52B1E"/><rect x="7.6" y="2.6" width="2.8" height="6.8" fill="#fff"/><rect x="5.6" y="4.6" width="6.8" height="2.8" fill="#fff"/>'),
+    CNY: flagSVG('<rect width="18" height="12" fill="#DE2910"/><path d="M3.4 1.8 L4.1 3.4 L5.8 3.5 L4.5 4.6 L4.9 6.2 L3.4 5.3 L1.9 6.2 L2.3 4.6 L1 3.5 L2.7 3.4 Z" fill="#FFDE00"/><g fill="#FFDE00"><circle cx="7" cy="1.6" r="0.5"/><circle cx="7.8" cy="3.2" r="0.5"/><circle cx="7.8" cy="5" r="0.5"/><circle cx="7" cy="6.6" r="0.5"/></g>'),
+    MXN: flagSVG('<rect width="6" height="12" fill="#006847"/><rect x="6" width="6" height="12" fill="#fff"/><rect x="12" width="6" height="12" fill="#CE1126"/><circle cx="9" cy="6" r="1.6" fill="#8C6239" opacity="0.85"/>'),
+    BRL: flagSVG('<rect width="18" height="12" fill="#009B3A"/><path d="M9 1.6 L16 6 L9 10.4 L2 6 Z" fill="#FEDF00"/><circle cx="9" cy="6" r="2.4" fill="#002776"/>'),
+    SGD: flagSVG('<rect width="18" height="12" fill="#fff"/><rect width="18" height="6" fill="#EF3340"/><path d="M5.4 3 A2.1 2.1 0 1 0 5.4 3.01 Z" fill="#EF3340"/><circle cx="5.6" cy="3" r="1.7" fill="#fff"/><circle cx="4.6" cy="3" r="1.7" fill="#EF3340"/><g fill="#fff"><circle cx="7" cy="2" r="0.35"/><circle cx="8" cy="2.8" r="0.35"/><circle cx="7.6" cy="4" r="0.35"/><circle cx="6.4" cy="4" r="0.35"/><circle cx="6" cy="2.8" r="0.35"/></g>'),
+    ZAR: flagSVG('<rect width="18" height="12" fill="#fff"/><rect width="18" height="4" fill="#E03C31"/><rect y="8" width="18" height="4" fill="#001489"/><path d="M0 0 L8 6 L0 12 Z" fill="#007749"/><path d="M0 1.5 L6 6 L0 10.5 Z" fill="#FFB81C"/><path d="M0 3 L4 6 L0 9 Z" fill="#000"/>'),
+    SEK: flagSVG('<rect width="18" height="12" fill="#006AA7"/><rect x="5" width="2.4" height="12" fill="#FECC02"/><rect y="4.8" width="18" height="2.4" fill="#FECC02"/>'),
+    NOK: flagSVG('<rect width="18" height="12" fill="#BA0C2F"/><rect x="4.6" width="3.2" height="12" fill="#fff"/><rect y="4.4" width="18" height="3.2" fill="#fff"/><rect x="5.4" width="1.6" height="12" fill="#00205B"/><rect y="5.2" width="18" height="1.6" fill="#00205B"/>'),
+    HKD: flagSVG('<rect width="18" height="12" fill="#DE2910"/><g fill="#fff"><ellipse cx="9" cy="4.6" rx="0.9" ry="1.6"/><ellipse cx="10.9" cy="5.6" rx="0.9" ry="1.6" transform="rotate(72 10.9 5.6)"/><ellipse cx="10.2" cy="7.6" rx="0.9" ry="1.6" transform="rotate(144 10.2 7.6)"/><ellipse cx="7.8" cy="7.6" rx="0.9" ry="1.6" transform="rotate(216 7.8 7.6)"/><ellipse cx="7.1" cy="5.6" rx="0.9" ry="1.6" transform="rotate(288 7.1 5.6)"/></g>'),
+    INR: flagSVG('<rect width="18" height="4" fill="#FF9933"/><rect y="4" width="18" height="4" fill="#fff"/><rect y="8" width="18" height="4" fill="#138808"/><circle cx="9" cy="6" r="1.5" fill="none" stroke="#000080" stroke-width="0.5"/><circle cx="9" cy="6" r="0.4" fill="#000080"/>'),
+    KRW: flagSVG('<rect width="18" height="12" fill="#fff"/><rect width="18" height="12" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="0.5"/><path d="M9 3.4 A2.6 2.6 0 0 1 9 8.6 A1.3 1.3 0 0 1 9 6 A1.3 1.3 0 0 0 9 3.4" fill="#CD2E3A"/><path d="M9 8.6 A2.6 2.6 0 0 1 9 3.4 A1.3 1.3 0 0 1 9 6 A1.3 1.3 0 0 0 9 8.6" fill="#0047A0"/>'),
+    TRY: flagSVG('<rect width="18" height="12" fill="#E30A17"/><circle cx="7.4" cy="6" r="2.6" fill="#fff"/><circle cx="8.1" cy="6" r="2.1" fill="#E30A17"/><path d="M11.5 6 L13.6 6.7 L12.3 5 L12.3 7 L13.6 5.3 Z" fill="#fff"/>'),
+    RUB: flagSVG('<rect width="18" height="4" fill="#fff"/><rect y="4" width="18" height="4" fill="#0039A6"/><rect y="8" width="18" height="4" fill="#D52B1E"/><rect width="18" height="12" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="0.5"/>')
+  };
+  const FLAG_MUNDO = flagSVG('<rect width="18" height="12" fill="#0f1626"/><circle cx="9" cy="6" r="4" fill="none" stroke="#d4af37" stroke-width="0.8"/><path d="M5 6 H13 M9 2 C10.8 3.5 10.8 8.5 9 10 C7.2 8.5 7.2 3.5 9 2" fill="none" stroke="#d4af37" stroke-width="0.6"/>');
+
   const CURRENCY_LABEL = {
-    USD: '🇺🇸 EE.UU.', EUR: '🇪🇺 Eurozona', GBP: '🇬🇧 R. Unido', JPY: '🇯🇵 Japón',
-    CAD: '🇨🇦 Canadá', AUD: '🇦🇺 Australia', NZD: '🇳🇿 N. Zelanda', CHF: '🇨🇭 Suiza',
-    CNY: '🇨🇳 China', MXN: '🇲🇽 México', BRL: '🇧🇷 Brasil', SGD: '🇸🇬 Singapur',
-    ZAR: '🇿🇦 Sudáfrica', SEK: '🇸🇪 Suecia', NOK: '🇳🇴 Noruega', HKD: '🇭🇰 Hong Kong',
-    INR: '🇮🇳 India', KRW: '🇰🇷 Corea', TRY: '🇹🇷 Turquía', RUB: '🇷🇺 Rusia'
+    USD: 'EE.UU.', EUR: 'Eurozona', GBP: 'R. Unido', JPY: 'Japón',
+    CAD: 'Canadá', AUD: 'Australia', NZD: 'N. Zelanda', CHF: 'Suiza',
+    CNY: 'China', MXN: 'México', BRL: 'Brasil', SGD: 'Singapur',
+    ZAR: 'Sudáfrica', SEK: 'Suecia', NOK: 'Noruega', HKD: 'Hong Kong',
+    INR: 'India', KRW: 'Corea', TRY: 'Turquía', RUB: 'Rusia'
   };
 
   const IMPACT_LABEL = { High: { es: 'Alto', cls: 'high' }, Medium: { es: 'Medio', cls: 'medium' }, Low: { es: 'Bajo', cls: 'low' }, Holiday: { es: 'Feriado', cls: 'low' } };
@@ -281,7 +311,7 @@
   // que pasa a un tooltip; compact=false (calendario completo): con explicación.
   function rowHTML(e, compact) {
     const imp = IMPACT_LABEL[e.impact] || IMPACT_LABEL.Low;
-    const cur = CURRENCY_LABEL[e.country] || ('🌐 ' + e.country);
+    const cur = (FLAGS[e.country] || FLAG_MUNDO) + ' ' + (CURRENCY_LABEL[e.country] || e.country);
     const esName = translateEvent(e.title);
     const cat = classify(e.title);
     const showOriginal = esName.replace(/\s*\([^)]*\)\s*$/, '').toLowerCase() !== e.title.toLowerCase();
