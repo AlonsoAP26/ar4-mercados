@@ -1,7 +1,328 @@
 {
- "lastId": 33760,
- "actualizado": "2026-07-30T13:10:38.325Z",
+ "lastId": 33768,
+ "actualizado": "2026-07-30T15:23:05.537Z",
  "items": [
+  {
+   "id": "33768",
+   "fecha": "2026-07-30T15:07:41+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33768",
+   "via": "DeItaone",
+   "original": "ABC SAYS TRUMP ADMINISTRATION IS RETALIATING AGAINST NETWORK OVER ITS NEWS COVERAGE IN EARLY LICENSE REVIEW, SENDING WARNING TO ALL OTHER MEDIA COMPANIES -- FILING",
+   "titulo": "ABC acusa represalia Trump por cobertura crítica; riesgo regulatorio para medios",
+   "resumen": "ABC denunció que administración Trump retalia contra la red por cobertura editorial negativa durante revisión de licencia temprana. Movimiento enciende alerta sobre presión regulatoria contra medios críticos, con aviso implícito a otras compañías de comunicación.",
+   "analisis": {
+    "porque": "Riesgo regulatorio directo para empresas de medios. Disney (propietaria de ABC) y competidores enfrentan incertidumbre sobre renovación de licencias. Afecta valuación de broadcast networks y crea precedente de represalia estatal.",
+    "queOcurrio": "ABC formalizó queja (filing) de represalia regulatoria por crítica editorial. Administración retala mediante revisión acelerada de licencia.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "DIS",
+    "Medios Broadcast",
+    "Renta Fija Corporativa"
+   ],
+   "sesgos": [
+    {
+     "activo": "DIS",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Medios Broadcast",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Breaking News",
+   "keywords": [
+    "ABC",
+    "Trump",
+    "represalia",
+    "licencia",
+    "regulación",
+    "libertad prensa"
+   ],
+   "tgText": "⚠️ **ABC denuncia represalia Trump**: Filing oficial contra retaliación regulatoria por cobertura crítica. Precedente de riesgo para medios. DIS presionado.",
+   "xText": "ABC files: Trump admin retaliates over news coverage via early license review. Regulatory risk escalates for media. Warning to all networks. #DIS",
+   "discordText": "**ABC / Trump: represalia regulatoria**\n• Filing oficial de denuncia\n• Retaliación por cobertura editorial\n• Riesgo: renovación de licencias\n• Implicación: aviso a otros medios",
+   "pushText": "ABC acusa represalia Trump por cobertura crítica, riesgo regulatorio",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Disney (DIS) cae por riesgo de licencia; broadcasters siguen en venta (Paramount, Fox, etc.)",
+    "despues": "Sector medios en descuento general; potencial rally defensivo en plataformas (Netflix, Amazon Prime) vistas como menos expuestas. Bonos corporativos de medios se amplían (spreads suben).",
+    "escenarios": "Traders vigilan: ¿es represalia aislada o señal de war on media broader? ¿Afectará renovación de licencia de DIS en 2026-27? ¿Otros medios recibirán presión similar? Precedente legal/constitucional muy relevante.",
+    "riesgos": "Riesgo de reversión si Trump/admin clarifica no hay represalia real o si cortes bloquean intento. También: politización de mercados si esto se normaliza (volatilidad estructural en medios)."
+   },
+   "macro": {
+    "dis": "bajista medio plazo",
+    "medios": "bajista",
+    "bonos_corporativos": "venta (spreads amplios)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33766",
+   "fecha": "2026-07-30T13:31:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33766",
+   "via": "DeItaone",
+   "original": "$MSFT - *MICROSOFT SHARES JUMP 12% IN BIGGEST ONE-DAY GAIN SINCE 2020",
+   "titulo": "Microsoft salta 12% en su mayor ganancia diaria desde 2020",
+   "resumen": "Las acciones de Microsoft registraron su mayor avance en un día desde 2020, con un salto del 12%. El titular no especifica el catalizador exacto del movimiento, aunque coincide con comentarios positivos sobre política de la Reserva Federal y contexto de fortaleza tecnológica en mercados de IA.",
+   "analisis": {
+    "porque": "Microsoft es componente clave del Nasdaq-100 y refleja sentimiento hacia el sector tecnológico y narrativa de IA. Un movimiento de esta magnitud impacta índices amplios y suele indicar rotación o compra institucional significativa.",
+    "queOcurrio": "Microsoft experimentó ganancia del 12% en sesión única, catalogada como la mayor desde 2020.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "MSFT",
+    "S&P500",
+    "QQQ",
+    "Tecnología"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "MSFT",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "MSFT",
+    "tecnología",
+    "IA",
+    "Nasdaq",
+    "rally"
+   ],
+   "tgText": "🟢 **MSFT dispara 12%** en mayor ganancia diaria desde 2020. Impacto inmediato en Nasdaq y sector tecnológico. Catalizador exacto no especificado en titulares iniciales.",
+   "xText": "Microsoft salta 12%, mayor ganancia diaria desde 2020. Impulso significativo para Nasdaq y sector tech. #MSFT #Trading",
+   "discordText": "**Microsoft +12%** • Mayor ganancia desde 2020\n• Impacta directamente Nasdaq-100\n• Refleja fortaleza sector IA\n• Catalizador pendiente de confirmar",
+   "pushText": "MSFT +12%: mayor ganancia desde 2020, Nasdaq impulsado",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Nasdaq-100 y QQQ reaccionan inmediatamente por weight de Microsoft; seguido por S&P 500 que recibe arrastre alcista del sector tech",
+    "despues": "Otros mega-cap tech (AAPL, NVDA, GOOG) tienden a seguir; bonos USA podrían debilitarse si se interpreta como apetito por riesgo renovado",
+    "escenarios": "Traders vigilan si es compra sostenida (institucional) o pump especulativo; también monitorean si el rally se extiende a small-caps o queda confinado a mega-cap. Clave: volumen y seguimiento mañana.",
+    "riesgos": "El titular no especifica catalizador; risk de reversión si fue venta forzada de cortos o especulación. Confirmar con earnings/guidance pendiente."
+   },
+   "macro": {
+    "nasdaq": "alcista fuerte",
+    "sp500": "alcista",
+    "bonos": "potencial venta (flight to risk)",
+    "dolar": "neutral a bajista (riesgo-on)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-30T13:59:38+00:00",
+     "id": "33767",
+     "texto": "Corrección de alza: Microsoft en realidad sube 15% (no 12%), encaminándose a su mayor ganancia porcentual en sesión diaria desde 2008. Movimiento excepcional que sugiere catalizador institucional o revaluación significativa del stock.",
+     "tgUrl": "https://t.me/walterbloomberg/33767"
+    }
+   ],
+   "actualizado": "2026-07-30T13:59:38+00:00"
+  },
+  {
+   "id": "33747",
+   "fecha": "2026-07-30T11:00:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33747",
+   "via": "DeItaone",
+   "original": "FERRARI BEATS ESTIMATES, MAINTAINS FY OUTLOOK Results Net Profit: €463M vs. €429M est. ✅ Revenue: €1.94B vs. €1.87B est. ✅ Adj. EBITDA: €755M vs. €729M est. ✅ Industrial FCF: €276M Shipments: 3,366 vehicles Guidance FY Adj. EBITDA: Maintained at at least €2.97B, in line with €2.97B est.",
+   "titulo": "Ferrari supera estimaciones en ganancias y mantiene guía para el año",
+   "resumen": "Ferrari reportó ganancia neta de €463M versus €429M estimado, ingresos de €1,94B versus €1,87B estimado, y EBITDA ajustado de €755M versus €729M estimado. Entregó 3.366 vehículos. Mantiene guía de EBITDA ajustado de al menos €2,97B para el año fiscal, en línea con expectativas. El fabricante de autos de lujo mostró solidez operativa.",
+   "analisis": {
+    "porque": "Resultados de Ferrari reflejan salud de demanda de lujo en mercados desarrollados (especialmente EEUU y Europa). Dato positivo para índices que incluyen autos premium y para inversores en sectores cíclicos.",
+    "queOcurrio": "Ferrari reportó ganancias y ingresos por encima de lo esperado, mantuvo su guía anual sin cambios, señalizando confianza en demanda de autos de lujo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Reporte de resultados oficial Ferrari"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "RACE (Ferrari)",
+    "STOXX Europe 600",
+    "Autos de lujo"
+   ],
+   "sesgos": [
+    {
+     "activo": "RACE",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Sector autos premium",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "ferrari",
+    "resultados",
+    "luxury",
+    "autos",
+    "europa"
+   ],
+   "tgText": "✅ Ferrari supera estimaciones: Ganancia neta €463M vs €429M est., ingresos €1,94B vs €1,87B est. Mantiene guía anual. Demanda de lujo sólida en EEUU y Europa. Señal positiva para sector autos premium.",
+   "xText": "📈 Ferrari supera expectativas en Q2: ganancias +8% vs estimado, ingresos +4%. Mantiene guía anual. Demanda de autos de lujo se sostiene en mercados desarrollados. Señal de resiliencia económica. #Empresas",
+   "discordText": "**Ferrari: Resultados positivos**\n• Ganancia neta: €463M (+8% vs est.)\n• Ingresos: €1,94B (+4% vs est.)\n• EBITDA ajustado: €755M vs €729M est.\n• Entregas: 3.366 vehículos\n• Mantiene guía FY: €2,97B+\n→ Sector lujo sigue firme",
+   "pushText": "Ferrari supera estimaciones y mantiene guía anual",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "RACE (acción Ferrari) podría subir 1-2% en apertura. Índices de autos europeos (DAX, STOXX600) reciben apoyo marginal.",
+    "despues": "Sector de lujo general (LVMH, Kering) podría interpretarse como señal positiva de demanda. Pero impacto limitado porque Ferrari es pequeña en peso global.",
+    "escenarios": "Traders vigilaban si luxe resistía presión macro. Confirmación de que demanda sigue. Próximo: resultados de otras luxe brands (LVMH, Hermès) en próximas semanas serán más impactantes.",
+    "riesgos": "Confirmado por reporte oficial. Riesgo bajo; es simplemente dato corporativo."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-30T13:31:13+00:00",
+     "id": "33765",
+     "texto": "Ferrari confirma recuperación de ventas en Medio Oriente en Q2 tras cierre de Q1, con demanda robusta de nuevo modelo Luce EV en todas regiones. Contribuciones mayores a lo esperado por servicios de personalización refuerzan margen de segundo trimestre.",
+     "tgUrl": "https://t.me/walterbloomberg/33765"
+    }
+   ],
+   "actualizado": "2026-07-30T13:31:13+00:00"
+  },
+  {
+   "id": "33763",
+   "fecha": "2026-07-30T13:29:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33763",
+   "via": "DeItaone",
+   "original": "HASSETT: THINK WARSH’S JOB JUST GOT A BIT EASIER WITH TODAY’S INFLATION DATA",
+   "titulo": "Hassett: Datos de inflación de hoy facilitan labor de futuro presidente Fed",
+   "resumen": "Kevin Hassett sugirió que los datos de inflación del día (PCE de junio moderado, confirmado en noticia 33756) debilitaron caso para política restrictiva, facilitando margen de maniobra para Warsh si es designado presidente de la Reserva Federal.",
+   "analisis": {
+    "porque": "Confirmación indirecta de que administración ve datos como justificación para acomodación. Referencia a Warsh como futuro Fed chair es señal de intención. Impacta expectativas de mercado sobre futuro ciclo de tasas.",
+    "queOcurrio": "Hassett vinculó moderación inflacionaria de hoy con mayor facilidad para próximo presidente de Fed.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Rendimientos USA",
+    "Bonos",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Hassett",
+    "Warsh",
+    "inflación",
+    "política monetaria",
+    "PCE"
+   ],
+   "tgText": "📉 **Hassett: inflación de hoy facilita labor de futuro Fed chair** (Warsh). Confirmación de narrativa de acomodación. Bonos alcistas, dólar débil.",
+   "xText": "Hassett: Today's inflation data makes Warsh's Fed job easier. Implicit endorsement of easing path. Bond-friendly signal. #FED",
+   "discordText": "**Hassett vincula inflación a política Fed**\n• Datos PCE de hoy → margen para Warsh\n• Validación de acomodación futura\n• Bonos reforzados\n• Dólar presionado",
+   "pushText": "Hassett: inflación facilita labor futura de Fed, señal de acomodación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos USA suben (yields bajan), dólar debilita inmediatamente",
+    "despues": "Equidad mantiene sesgo alcista; carry trades renacen si dólar sigue cayendo",
+    "escenarios": "Mercado refuerza apuesta de 2-3 cortes de tasas en 2026. Si Warsh es oficialmente nominado, rally de bonos largo plazo probable. Traders esperan menor restricción que bajo Powell.",
+    "riesgos": "Statements de admin sobre Fed son presión política; riesgo si Fed resiste. También riesgo de que inflación repunte inesperadamente (PCE core aún moderada pero geopolítica/oferta podrían cambiar)."
+   },
+   "macro": {
+    "rendimientos": "bajista",
+    "bonos": "alcista",
+    "dolar": "bajista",
+    "sp500": "alcista moderado"
+   },
+   "updates": []
+  },
+  {
+   "id": "33761",
+   "fecha": "2026-07-30T13:28:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33761",
+   "via": "DeItaone",
+   "original": "HASSETT: I AM VERY BULLISH ON FED POLICY GOING IN THE PROPER DIRECTION.",
+   "titulo": "Hassett: Política de la Fed va en la dirección correcta, con optimismo real",
+   "resumen": "Kevin Hassett, asesor económico de la administración, expresó optimismo sobre la trayectoria de la política monetaria de la Reserva Federal. Sus comentarios sugieren visión positiva del equipo oficial sobre reciente inflexión de la Fed hacia mayor acomodación.",
+   "analisis": {
+    "porque": "Statements de oficiales de la administración sobre Fed son factores de mercado directo. Hassett avalando política de Warsh (potencial futuro presidente de Fed) da confianza institucional a rally de renta fija y debilidad de dólar.",
+    "queOcurrio": "Hassett confirmó confianza en dirección de política monetaria de la Fed.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Rendimientos USA",
+    "DXY",
+    "Bonos",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Hassett",
+    "política monetaria",
+    "Fed",
+    "Warsh",
+    "acomodación"
+   ],
+   "tgText": "📊 **Hassett optimista con política Fed**: asesor económico oficial respaldó dirección de Reserva Federal. Favorece bonos y equidad en contexto de acomodación esperada.",
+   "xText": "Hassett: Fed policy goes in proper direction. Asesor oficial respalda acomodación monetaria. Positivo para equidad, presión bajista sobre rendimientos. #FED",
+   "discordText": "**Hassett valida política Fed**\n• Optimismo oficial sobre dirección\n• Respalda movimiento hacia acomodación\n• Favorable bonos (yields bajan)\n• Positivo para equidad",
+   "pushText": "Hassett: Fed en dirección correcta, optimismo oficial",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos USA reaccionan con baja de yields; dólar debilita",
+    "despues": "Equidad sigue con sesgo alcista por expectativas de tasas más bajas; spreads de credit se comprimen",
+    "escenarios": "Mercado confirma narrativa de \"Fed pivot\". Traders vigilan si Warsh será designado a Fed (Hassett lo respalda implícitamente). Confirmación de expectativas de corte de tasas en próximos meses.",
+    "riesgos": "Statements de administración pueden ser interpretados como presión política sobre Fed; riesgo de crítica si Fed no sigue expectativa. Validación limitada: es opinión, no anuncio oficial."
+   },
+   "macro": {
+    "rendimientos": "bajista",
+    "dolar": "bajista",
+    "sp500": "alcista moderado",
+    "bonos": "alcista (precios suben)"
+   },
+   "updates": []
+  },
   {
    "id": 33757,
    "fecha": "2026-07-30T12:31:36+00:00",
@@ -476,60 +797,6 @@
     "bonos": "bajista",
     "petroleo": "alcista"
    },
-   "updates": []
-  },
-  {
-   "id": "33747",
-   "fecha": "2026-07-30T11:00:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33747",
-   "via": "DeItaone",
-   "original": "FERRARI BEATS ESTIMATES, MAINTAINS FY OUTLOOK Results Net Profit: €463M vs. €429M est. ✅ Revenue: €1.94B vs. €1.87B est. ✅ Adj. EBITDA: €755M vs. €729M est. ✅ Industrial FCF: €276M Shipments: 3,366 vehicles Guidance FY Adj. EBITDA: Maintained at at least €2.97B, in line with €2.97B est.",
-   "titulo": "Ferrari supera estimaciones en ganancias y mantiene guía para el año",
-   "resumen": "Ferrari reportó ganancia neta de €463M versus €429M estimado, ingresos de €1,94B versus €1,87B estimado, y EBITDA ajustado de €755M versus €729M estimado. Entregó 3.366 vehículos. Mantiene guía de EBITDA ajustado de al menos €2,97B para el año fiscal, en línea con expectativas. El fabricante de autos de lujo mostró solidez operativa.",
-   "analisis": {
-    "porque": "Resultados de Ferrari reflejan salud de demanda de lujo en mercados desarrollados (especialmente EEUU y Europa). Dato positivo para índices que incluyen autos premium y para inversores en sectores cíclicos.",
-    "queOcurrio": "Ferrari reportó ganancias y ingresos por encima de lo esperado, mantuvo su guía anual sin cambios, señalizando confianza en demanda de autos de lujo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Reporte de resultados oficial Ferrari"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "RACE (Ferrari)",
-    "STOXX Europe 600",
-    "Autos de lujo"
-   ],
-   "sesgos": [
-    {
-     "activo": "RACE",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Sector autos premium",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "ferrari",
-    "resultados",
-    "luxury",
-    "autos",
-    "europa"
-   ],
-   "tgText": "✅ Ferrari supera estimaciones: Ganancia neta €463M vs €429M est., ingresos €1,94B vs €1,87B est. Mantiene guía anual. Demanda de lujo sólida en EEUU y Europa. Señal positiva para sector autos premium.",
-   "xText": "📈 Ferrari supera expectativas en Q2: ganancias +8% vs estimado, ingresos +4%. Mantiene guía anual. Demanda de autos de lujo se sostiene en mercados desarrollados. Señal de resiliencia económica. #Empresas",
-   "discordText": "**Ferrari: Resultados positivos**\n• Ganancia neta: €463M (+8% vs est.)\n• Ingresos: €1,94B (+4% vs est.)\n• EBITDA ajustado: €755M vs €729M est.\n• Entregas: 3.366 vehículos\n• Mantiene guía FY: €2,97B+\n→ Sector lujo sigue firme",
-   "pushText": "Ferrari supera estimaciones y mantiene guía anual",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "RACE (acción Ferrari) podría subir 1-2% en apertura. Índices de autos europeos (DAX, STOXX600) reciben apoyo marginal.",
-    "despues": "Sector de lujo general (LVMH, Kering) podría interpretarse como señal positiva de demanda. Pero impacto limitado porque Ferrari es pequeña en peso global.",
-    "escenarios": "Traders vigilaban si luxe resistía presión macro. Confirmación de que demanda sigue. Próximo: resultados de otras luxe brands (LVMH, Hermès) en próximas semanas serán más impactantes.",
-    "riesgos": "Confirmado por reporte oficial. Riesgo bajo; es simplemente dato corporativo."
-   },
-   "macro": null,
    "updates": []
   },
   {
@@ -7326,268 +7593,6 @@
     "riesgos": "Riesgo de que General Motors gane, afectando F negativamente. Riesgo de que proceso se extienda más de lo esperado o requisitos técnicos no sean alcanzables."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33610",
-   "fecha": "2026-07-27T16:43:20+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33610",
-   "via": "DeItaone",
-   "original": "TRUMP PUSHES FOR LOWER FED RATES President Trump said the Federal Reserve should cut interest rates and argued the U.S. should have the world's lowest borrowing costs. He added that Fed board members are \"political\" and said Fed Governor Kevin Warsh would have to work with the board.",
-   "titulo": "Trump presiona por recortes de tasas; critica a la Fed como «política»",
-   "resumen": "El presidente Trump argumentó que Estados Unidos debería tener las tasas de interés más bajas del mundo y criticó a los miembros de la Junta de la Reserva Federal por ser \"políticos\". Señaló que el gobernador de la Fed Kevin Warsh tendría que trabajar con la junta. El comentario refleja tensión persistente entre Trump y la política monetaria de la Fed.",
-   "analisis": {
-    "porque": "Las presiones presidenciales sobre la Fed afectan expectativas de política monetaria, volatilidad de bonos y el dólar. Si la Fed cede a presiones políticas, erosiona credibilidad y puede elevar prima de riesgo inflacionario.",
-    "queOcurrio": "Trump declaró públicamente que la Fed debería implementar recortes de tasas significativos, argumentando que EE.UU. debe tener el costo de financiamiento más bajo globalmente.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "FED",
-   "keywords": [
-    "trump-fed",
-    "politica-monetaria",
-    "recorte-tasas",
-    "presion-presidencial"
-   ],
-   "tgText": "🔴 Trump presiona a la Fed por recortes de tasas; critica a miembros como \"políticos\". Argumenta que EE.UU. debería tener tasas más bajas del mundo.",
-   "xText": "Trump critica a la Fed por ser \"política\" y presiona para recortes de tasas. Argumenta que EE.UU. debe tener el costo de financiamiento más bajo globalmente. Impacto en bonos y dólar.",
-   "discordText": "**TRUMP vs FED**\n• Presiona por recortes de tasas\n• Critica junta como \"política\"\n• Menciona trabajo de Warsh con la junta\n→ Volatilidad en bonos, dólar bajo presión",
-   "pushText": "Trump presiona a la Fed: exige tasas más bajas",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Bonos USA (yields caen) y DXY (debilita) por expectativa de tasas menores; también USDIDX y futuros de tasas.",
-    "despues": "Acciones (S&P500, NASDAQ alcistas por tasas más bajas), commodities alcistas (oro, petróleo) por debilitamiento de moneda.",
-    "escenarios": "Traders vigilan si comentarios de Trump generan expectativa de cortes antes de la reunión de la Fed esta semana. Si Fed mantiene línea dura, choque de expectativas. Si hay señales de flexibilización, rally de renta variable.",
-    "riesgos": "Riesgo de que la Fed reafirme independencia y contradiga presiones; si ignora a Trump, credibilidad reforzada pero mercado baja. Riesgo de escalada retórica si Trump interpreta decisiones de Fed como \"políticas\"."
-   },
-   "macro": {
-    "dolar": "bajista corto plazo",
-    "bonos": "alcistas (yields bajan)",
-    "nasdaq": "alcista (tasas menores)",
-    "sp500": "alcista",
-    "oro": "alcista (dólar débil)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33593",
-   "fecha": "2026-07-27T14:38:18+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33593",
-   "via": "DeItaone",
-   "original": "NASDAQ AND S&P 500 ERASE GAINS; NASDAQ DOWN 0.5%, S&P 500 DOWN 0.1%",
-   "titulo": "NASDAQ y S&P 500 borran ganancias; NASDAQ cae 0,5%, S&P 500 cae 0,1%",
-   "resumen": "El rally matutino en Wall Street se revirtió. NASDAQ pasó de ganancias a caída de 0,5%, mientras que S&P 500 invirtió su avance (+1,08% previo) a pérdida de 0,1%. La reversión coincide con caída adicional de ASML (-8% por crisis de litografía DUV china) y presión continua en tech. El Dow Jones resistió mejor, manteniendo ganancias menores.",
-   "analisis": {
-    "porque": "Inversión de ganancias refleja shock de revaluación en semiconductores tras noticia china. Demuestra fragilidad del rally: basado en aerolíneas y defensivos, no en tech (nervio del NASDAQ). Señal de debilidad estructural en mercado de renta variable.",
-    "queOcurrio": "Índices que subieron 1%+ por la mañana se invirtieron hacia mediodía tras cascada de ventas en semicon por noticia DUV china (33587). NASDAQ más vulnerable por peso de tech.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "S&P 500",
-    "Dow Jones",
-    "Tech",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dow Jones",
-     "sesgo": "alcista (defensivo)"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Breaking News",
-   "keywords": [
-    "mercado-accionario",
-    "tech",
-    "reversión",
-    "semicon",
-    "volatilidad"
-   ],
-   "tgText": "🔴 GIRO RADICAL: NASDAQ -0,5%, S&P 500 -0,1% tras borrar ganancias matutinas. Semicon desploma por noticia china. Rally defensivo se colapsa. Dow resiste.",
-   "xText": "GIRO EN WALL STREET: NASDAQ invierte -0,5%, S&P 500 -0,1%. Ganancias de la mañana borradas por venta de semicon tras noticia China. Dow aguanta mejor.",
-   "discordText": "**REVERSIÓN EN WALL STREET**\n• NASDAQ: -0,5% (inversión de ganancias)\n• S&P 500: -0,1% (de +1,08% a rojo)\n• Dow: Resiste con ganancias menores\n→ Catalizador: Crisis ASML/semicon por DUV china",
-   "pushText": "NASDAQ -0,5%, S&P 500 invierte pérdidas. Venta semicon domina.",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "NASDAQ (alto peso semicon) presionado primero. Tech liders (NVDA, QCOM) venden en cascada. VIX sube (volatilidad implícita).",
-    "despues": "S&P 500 sigue al alza pero con margen menor (energía, industria resisten). Bonos suben (flight-to-safety). Dólar gana. Futuros bajan.",
-    "escenarios": "Traders vigilan: (1) ¿se estabiliza ASML? (2) ¿NVIDIA cae >2%? (3) ¿cierre rojo en NASDAQ? (4) ¿spreads en credit se disparan? (5) ¿Fed da señal de alivio?",
-    "riesgos": "Reversión indica fragilidad del rally. Si semicon sigue cayendo, NASDAQ podría cerrar -1%+ y spillover a Asia/Europa mañana. Riesgo de cascada de stop-losses."
-   },
-   "macro": {
-    "nasdaq": "Bajista -0,5%",
-    "sp500": "Bajista -0,1%",
-    "bonos": "Alcistas (yields bajan)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33588",
-   "fecha": "2026-07-27T13:35:21+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33588",
-   "via": "DeItaone",
-   "original": "GOLDMAN SEES GAS PRICE RISKS Goldman Sachs maintained its Q3 2026 TTF gas forecast at €60/MWh but said risks remain skewed to the upside. If U.S.-Iran talks succeed, prices could fall below €50/MWh. However, if Middle East energy exports recover only gradually through 2027, December 2026 TTF prices could exceed €100/MWh.",
-   "titulo": "Goldman Sachs advierte de riesgos alcistas en gas europeo hasta €100/MWh",
-   "resumen": "Goldman Sachs mantuvo su forecast para TTF (gas natural holandés) en Q3 2026 a €60/MWh pero alertó que riesgos están sesgados al alza. Si negociaciones USA-Irán tienen éxito, precios podrían caer bajo €50/MWh. Sin embargo, si exportaciones energéticas de Medio Oriente se recuperan lentamente hasta 2027, precios de TTF en diciembre 2026 podrían superar €100/MWh.",
-   "analisis": {
-    "porque": "Gas europeo es insumo crítico para industria y energía. Presión inflacionaria directa en Eurozona si TTF >€85. Afecta BCE, CRB, Stoxx 600 y utilidades. Geopolitíca Irán-USA determina escenarios.",
-    "queOcurrio": "Goldman sacó análisis de escenarios para TTF con rango €50-€100 según resolución de conflicto Irán-Hormuz. Mantiene base case €60 pero asimetría de riesgos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Goldman Sachs Research"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "TTF (Gas Europeo)",
-    "Energía Europea",
-    "Stoxx 600",
-    "Bonos Bunds",
-    "EUR",
-    "Utilidades Europa"
-   ],
-   "sesgos": [
-    {
-     "activo": "TTF",
-     "sesgo": "bajista a corto plazo, alcista si escalada geopolítica"
-    },
-    {
-     "activo": "Stoxx 600",
-     "sesgo": "neutral a bajista si gas sube"
-    },
-    {
-     "activo": "EUR",
-     "sesgo": "neutral a bajista si inflación sube"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "gas-natural",
-    "TTF",
-    "Europa",
-    "Irán",
-    "negociaciones",
-    "inflación"
-   ],
-   "tgText": "⚡ Goldman Sachs: TTF en riesgo alcista. Base case €60/MWh pero podría superar €100 si recuperación Medio Oriente es lenta. Escenario bajista €50 si éxito negociaciones Irán-USA.",
-   "xText": "Goldman Sachs ve TTF (gas europeo) con riesgos alcistas. Base case €60/MWh. Upside a €100+ si crisis Hormuz persiste. Downside €50 si pacto Irán-USA avanza.",
-   "discordText": "**Gas Europeo: Análisis Goldman Sachs**\n• Base case Q3: €60/MWh\n• Escenario bajista: <€50 (pacto Irán-USA)\n• Escenario alcista: >€100 (crisis persistente)\n→ Riesgos sesgados al alza hasta 2027",
-   "pushText": "Goldman Sachs ve gas europeo en riesgo alcista, potencial a €100/MWh",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "TTF futures reaccionan directamente. Si mercado ve escalada Irán probable, TTF sube. Utilidades europeas presionadas (márgenes comprimidos). CRB Energy sube.",
-    "despues": "EURIBOR sube por expectativas de presión inflacionaria. Bonos Bunds caen (yields suben). EUR débil. Stoxx 600 presionado. Valuaciones de utilities se revisan.",
-    "escenarios": "Traders vigilan: (1) ¿progreso negociaciones Irán-USA esta semana? (2) ¿Trump escala o pausa? (3) ¿inventarios de gas europeos suficientes? (4) ¿alternativas LNG disponibles? (5) ¿BCE ajusta proyecciones de inflación?",
-    "riesgos": "Análisis es prospectivo y dependiente de resolución geopolítica. Si Irán-USA pactan, el escenario >€100 colapsa. Mercado podría girar rápidamente."
-   },
-   "macro": {
-    "petroleo": "Alcista si escalada geopolítica",
-    "eur": "Bajista si gas sube (inflación)",
-    "bunds": "Bajista en yields si inflación sube"
-   },
-   "updates": []
-  },
-  {
-   "id": "33587",
-   "fecha": "2026-07-27T13:33:32+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33587",
-   "via": "DeItaone",
-   "original": "CHIP STOCKS DROP ON CHINA DUV REPORT ASML and U.S. chip equipment stocks fell after a report said a state-backed Chinese firm has begun mass-producing domestic DUV lithography machines. Investors fear the breakthrough could reduce China's reliance on ASML and other Western suppliers, weakening future sales and undermining the long-term impact of U.S. export restrictions.",
-   "titulo": "Semiconductores caen por avance chino en litografía DUV",
-   "resumen": "ASML y proveedores de equipos para chips estadounidenses cayeron tras reporte de que firma china respaldada por el Estado inició producción en masa de máquinas de litografía DUV domésticas. Los inversores temen que el avance reduzca dependencia china de ASML y otros proveedores occidentales, debilitando futuras ventas y el impacto de restricciones estadounidenses de exportación. ASML se desplomó hasta 8% durante la sesión.",
-   "analisis": {
-    "porque": "Quiebra narrativa central de inversión en semicon occidental: supremacía tecnológica. China acortando brecha en tecnología crítica es riesgo estratégico para valuaciones de ASML, que depende >50% de ventas a China. Afecta política comercial USA-China y expectativas de sanciones futuras.",
-    "queOcurrio": "Reporte de Bloomberg/Reuters sobre empresa china (no nombrada en titular) que logró producción en masa de DUV doméstico, sorteando restricciones de exportación occidental. Mercado interpretó como validación de tecnología alternativa.",
-    "estado": "rumor",
-    "fuenteOriginal": "Bloomberg/Reuters (reporte sin confirmación oficial de empresa china)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "ASML",
-    "Semiconductores USA",
-    "Proveedores de equipos chip",
-    "BESI",
-    "NASDAQ",
-    "Comercio USA-China"
-   ],
-   "sesgos": [
-    {
-     "activo": "ASML",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "ASML",
-    "semiconductores",
-    "China",
-    "DUV",
-    "litografía",
-    "tecnología-crítica",
-    "sanciones-USA",
-    "guerra-comercial"
-   ],
-   "tgText": "⚠️ ASML desploma 8% tras reporte de éxito chino en litografía DUV. Riesgo de independencia tecnológica china quiebra valuación occidental de semicon. Implicaciones geopolíticas graves.",
-   "xText": "ASML cae 8% (suspensión por volatilidad). China logró producción en masa de DUV doméstica. Amenaza a narrativa de supremacía tech occidental. Fuerte venta en semicon USA.",
-   "discordText": "**⚠️ CRISIS EN SEMICONDUCTORES**\n• ASML: -8% (suspensión de trading)\n• BESI: -7,4%\n• Causa: Reporte de éxito chino en DUV\n• Riesgo: China reduce dependencia ASML\n→ Impacto: Restricciones USA inefectivas, revaluación chips occidentales",
-   "pushText": "⚠️ ASML cae 8%, trading suspendido. China domina litografía DUV.",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "ASML colapsa (cotiza Amsterdam) → derivada a proveedores secundarios (BESI, CAMM, NXPI). Efecto cascada en semicon USA (NVIDIA, QUALCOMM, INTEL).",
-    "despues": "NASDAQ sufre presión de realización. Bonos suben (flight-to-safety). Dólar sube (riesgo geopolítico). Acciones tech defensivas ganan. Sector manufactura global revisa forward guidance.",
-    "escenarios": "Traders vigilan: (1) ¿se confirma identidad/escala de producción china? (2) ¿Trump escala sanciones? (3) ¿ASML reduce guidance 2026-27? (4) ¿hay represalia comercial china? (5) ¿contagio a índices como STOXX 600?",
-    "riesgos": "Titular es RUMOR sin confirmación oficial. Empresa china no nombrada. Reporte podría ser inflado. Reversión posible si datos se desmienten. Pero mercado no lo descarta: sesgo real hacia venta."
-   },
-   "macro": {
-    "nasdaq": "Bajista -0,5% a -1% potencial",
-    "dolar": "Alcista por risk-off"
-   },
    "updates": []
   }
  ],
