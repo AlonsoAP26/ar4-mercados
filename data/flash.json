@@ -1,7 +1,129 @@
 {
- "lastId": 33772,
- "actualizado": "2026-07-30T19:56:27.661Z",
+ "lastId": 33774,
+ "actualizado": "2026-07-30T21:09:27.528Z",
  "items": [
+  {
+   "id": "33774",
+   "fecha": "2026-07-30T20:55:57+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33774",
+   "via": "DeItaone",
+   "original": "APPLE BEATS ESTIMATES ON IPHONE, MAC STRENGTH Results EPS: $2.02 ($1.91 ex-tariff refunds) vs. $1.89 est. ✅ Revenue: $109.42B vs. $108.65B est. ✅ Gross Margin: 50.1% (48.1% ex-tariff refunds) vs. 47.9% est. ✅ iPhone Revenue: $54.25B vs. $53.86B est. ✅ Mac Revenue: $10.35B vs. $8.74B est. ✅ iPad Revenue: $6.19B vs. $6.92B est. ❌ Services Revenue: $30.74B vs. $31.22B est. ❌ Wearables Revenue: $7.88B",
+   "titulo": "Apple supera estimaciones con fortaleza en iPhone y Mac; márgenes se expanden",
+   "resumen": "Apple reportó EPS de $2,02 (vs. $1,89 est.) e ingresos de $109,42B (vs. $108,65B est.). iPhone generó $54,25B (+$0,39B vs. est.), Mac alcanzó $10,35B (+$1,61B), e ingresos por servicios cayeron a $30,74B vs. $31,22B esperado. Margen bruto llegó a 50,1% (ex-reembolsos de aranceles: 48,1% vs. 47,9% est.). China creció 22,4% YoY. Las acciones cayeron ~4% en trading extendido pese a superar expectativas.",
+   "analisis": {
+    "porque": "Resulta crítico para inversores tech en Latinoamérica: muestra fortaleza de demanda de hardware pese a presiones arancelarias, pero el declive en servicios y la caída post-earnings sugieren cautela sobre valoraciones actuales. El margen bruto sorprendentemente fuerte (con reembolsos de aranceles) indica presión de costos de manufactura.",
+    "queOcurrio": "Apple publicó resultados que superaron expectativas de EPS y ingresos totales, con márgenes brutos expandidos. Sin embargo, los ingresos de servicios cayeron vs. estimaciones y las acciones perdieron ~4% en after-hours, indicando posible profit-taking o dudas sobre guía futura.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Institucional (vía @DeItaone)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "AAPL",
+    "NASDAQ",
+    "S&P500",
+    "Tecnología"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAPL",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Apple",
+    "earnings",
+    "iPhone",
+    "servicios",
+    "márgenes",
+    "China",
+    "AAPL"
+   ],
+   "tgText": "📱 Apple supera EPS ($2,02 vs $1,89) e ingresos ($109,42B vs $108,65B), pero servicios decepcionan. Márgenes en 50,1%. Acción cae 4% post-earnings. Fortaleza en China: +22,4% YoY.",
+   "xText": "Apple bate estimaciones: EPS $2,02 vs $1,89 est., ingresos $109,42B vs $108,65B. iPhone y Mac sólidos, pero servicios caen. Márgenes en 50,1%. Acciones ↓4% post-earnings. #AAPL #Tech",
+   "discordText": "**Apple Earnings Beat (AAPL)**\n• EPS: $2,02 vs $1,89 est. ✅\n• Ingresos: $109,42B vs $108,65B est. ✅\n• iPhone: $54,25B; Mac: $10,35B ✅\n• Servicios: $30,74B (bajo) ❌\n• Margen bruto: 50,1% ✅\n• China: +22,4% YoY ✅\n• Acción: ↓~4% after-hours",
+   "pushText": "Apple supera estimaciones pero cae 4%; servicios decepcionan",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "AAPL y NASDAQ futures reaccionan inmediatamente: caída inicial sugiere que el mercado había precificado un beat más fuerte o teme ralentización en servicios.",
+    "despues": "S&P500 e índices tech globales revisan posiciones; potencial efecto dominó en otras megacaps tecnológicas (Microsoft, Google) si se interpreta como señal de madurez del ciclo de ciclo.",
+    "escenarios": "Traders vigilarán: (1) si la caída de ~4% es corrección técnica o cambio de sentimiento hacia tech; (2) guía de márgenes futura (¿sostenibles los 50%?); (3) si la debilidad en servicios anticipa desaceleración de consumo; (4) impacto de aranceles en márgenes ex-reembolsos.",
+    "riesgos": "El titular no especifica si la caída es debida a guía débil, forward estimates bajistas o simple profit-taking. Riesgo de malinterpretación si el mercado esperaba beat más robusto en servicios."
+   },
+   "macro": {
+    "nasdaq": "Presión inicial; vigilar si se extiende a otras techs",
+    "sp500": "Posible ajuste de valuaciones en sector",
+    "aapl": "Volatilidad aumentada; traders revisan modelos de margen"
+   },
+   "updates": []
+  },
+  {
+   "id": "33773",
+   "fecha": "2026-07-30T20:26:43+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33773",
+   "via": "DeItaone",
+   "original": "TRUMP ORDERS RESTRICTIONS ON EXPORT OF CRITICAL MINERALS SCRAP - WHITE HOUSE OFFICIALS",
+   "titulo": "Trump ordena restricciones a exportación de chatarra de minerales críticos",
+   "resumen": "Funcionarios de la Casa Blanca confirmaron que Trump ha ordenado restricciones sobre la exportación de chatarra de minerales críticos. El titular no especifica magnitud de restricciones, sectores afectados, fechas de implementación ni mercados objetivo. La medida se enmarca en estrategia de seguridad de cadenas de suministro de EE.UU., pero no se detallan excepciones aliados ni cargas fiscales.",
+   "analisis": {
+    "porque": "Impacta directamente a inversores en minería, manufactura y supply-chain: afecta competitividad global de EE.UU., costos de materias primas para electrónica/defensa, y relaciones comerciales. Precedente de medidas proteccionistas trumpistas (aranceles, restricciones a exportación) que volatilizan sectores cíclicos.",
+    "queOcurrio": "Trump ordenó restricciones a exportación de chatarra de minerales críticos; confirmado por funcionarios de Casa Blanca pero sin detalles operacionales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (vía @DeItaone, citando oficiales de Casa Blanca)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Materias Primas",
+    "Minería",
+    "Dólar",
+    "Bonos",
+    "Índices Cíclicos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Minería (cobre, litio, cobalto)",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Materias Primas",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Política Comercial|Materias Primas",
+   "keywords": [
+    "Trump",
+    "minerales-críticos",
+    "restricción-exportación",
+    "chatarra",
+    "supply-chain",
+    "seguridad-nacional"
+   ],
+   "tgText": "🏭 Trump ordena restricciones a exportación de chatarra de minerales críticos. Casa Blanca confirma pero sin detalles operacionales. Posible alza en precios de materias primas y volatilidad en minería.",
+   "xText": "Trump restringe exportación de chatarra de minerales críticos (Casa Blanca confirma). Medida proteccionista de supply-chain; impacto en minería y costos de manufactura aún por definirse. #Trump #Minería",
+   "discordText": "**Trump: Restricciones a Minerales Críticos**\n• Orden de restricción a exportación de chatarra confirmada\n• Fuente: Funcionarios Casa Blanca\n• Detalles: Aún no especificados (alcance, excepciones, timeline)\n• Contexto: Estrategia de seguridad de suministros de EE.UU.",
+   "pushText": "Trump ordena restricciones a exportación de minerales críticos",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Materias primas (cobre, litio, cobalto, oro, plata) pueden subir anticipando oferta global limitada de chatarra reciclada. Minería latinoamericana (Perú, Chile, Argentina) atenta a detalles.",
+    "despues": "Electrónica, manufactura, defensa vigilarán costos de inputs. Posible fortaleza del dólar (percepción de proteccionismo = menos importaciones = menos demanda de divisas extranjeras).",
+    "escenarios": "Traders monitorean: (1) si la restricción es temporal o estructural; (2) si hay excepciones para aliados (USMCA, etc.); (3) posible represalia china/UE; (4) si gatilla nueva ola de proteccionismo.",
+    "riesgos": "Titular muy vago: no especifica qué minerales, qué volúmenes, cuándo entra en vigor, ni qué sucede con cómplices. Riesgo de sobre-interpretación. Posible que sea anuncio sin ejecución inmediata."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33772",
    "fecha": "2026-07-30T19:23:10+00:00",
@@ -7536,116 +7658,6 @@
    "pushText": "CME lanza futuros de oro 24/7 con demanda fuerte; mayor liquidez para traders",
    "importancia": 4,
    "reaccion": null,
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 929131088,
-   "fecha": "2026-07-27T18:15:18.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/trump-warsh-interest-rates.html",
-   "via": "CNBC",
-   "original": "Trump backs &apos;fantastic&apos; Warsh while calling for lower rates and citing &apos;bad intentions&apos; of other Fed officials",
-   "titulo": "Trump respalda a Warsh para la Fed y critica intenciones de otros funcionarios",
-   "resumen": "El expresidente Trump manifestó apoyo a Marcus Warsh como candidato para la Reserva Federal, calificándolo de \"fantástico\". Simultáneamente, reivindicó su postura de tasas más bajas y cuestionó las \"malas intenciones\" de otros funcionarios de la Fed. El titular no especifica si estas declaraciones fueron realizadas en un acto público o comunicado.",
-   "analisis": {
-    "porque": "Las preferencias presidenciales sobre composición de la Fed impactan expectativas de política monetaria, volatilidad de tipos y posicionamiento en renta fija.",
-    "queOcurrio": "Trump expresó respaldo explícito a Warsh e insistió en su agenda de reducción de tasas, criticando otras posiciones dentro del banco central.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "Dólar",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "tasas",
-    "Trump",
-    "Warsh",
-    "política-monetaria"
-   ],
-   "tgText": "🏦 Trump respalda a Warsh para la Fed y critica intenciones de otros funcionarios. Reitera demanda por tasas más bajas. Impacto en bonos y dólar.",
-   "xText": "Trump respalda a Warsh para la Fed y exige tasas más bajas, criticando otros funcionarios. Expectativas de política monetaria en juego. $DXY en vigilancia.",
-   "discordText": "**Fed | Trump y Warsh**\n• Apoyo explícito a Marcus Warsh como candidato\n• Crítica a \"malas intenciones\" en otros funcionarios\n• Reafirma demanda de reducción de tasas\n→ Impacto en yields y DXY",
-   "pushText": "Trump respalda a Warsh para la Fed; reitera demanda por tasas más bajas",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Bonos y rendimientos USA (yield curve) por expectativa de ciclo de tasas más acomodaticio",
-    "despues": "Dólar (DXY) por diferencial de tasas; acciones de financieras por rentabilidad de margen",
-    "escenarios": "Traders monitorean: (1) Si Trump logra influir en próximas decisiones de la Fed; (2) Confirmación de Warsh y comisión del Senado; (3) Divergencia entre retórica presidencial y comunicaciones oficiales de la Fed",
-    "riesgos": "Riesgo institucional: presión política sobre autonomía de la Fed; riesgo de titulación: no especifica si son declaraciones públicas formales o comentarios informales"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 961359101,
-   "fecha": "2026-07-27T17:25:45.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/netflix-woes-setting-up-for-a-hollywood-ending-says-trader-mike-khouw.html",
-   "via": "CNBC",
-   "original": "Netflix woes setting up for a Hollywood ending, says trader Mike Khouw",
-   "titulo": "Netflix enfrenta crecientes dificultades; analista predice \"final cinematográfico\"",
-   "resumen": "El operador Mike Khouw advierte sobre problemas operacionales en Netflix, sugiriendo que la plataforma se encamina hacia un \"final cinematográfico\" (implicación de crisis o giro radical). El titular no especifica los problemas concretos ni el horizonte temporal de la predicción.",
-   "analisis": {
-    "porque": "Netflix es una acción de peso en NASDAQ con capitalización de mercado significativa; análisis de traders influyentes generan reposicionamiento en tech.",
-    "queOcurrio": "Un operador conocido (Mike Khouw) expresó perspectiva negativa sobre Netflix, utilizando lenguaje figurado sobre desenlace.",
-    "estado": "rumor",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Netflix (NFLX)",
-    "Comunicaciones"
-   ],
-   "sesgos": [
-    {
-     "activo": "Netflix (NFLX)",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Netflix",
-    "NFLX",
-    "streaming",
-    "tech",
-    "operadores"
-   ],
-   "tgText": "📺 Trader Mike Khouw advierte sobre Netflix: predice \"final cinematográfico\" para la plataforma. Señales técnicas o fundamentales no detalladas en titular.",
-   "xText": "Mike Khouw predice \"final cinematográfico\" para Netflix. Alerta sobre problemas operacionales en NFLX. Traders vigilan reajuste en posiciones tech.",
-   "discordText": "**Netflix (NFLX) | Alerta Operador**\n• Mike Khouw advierte perspectiva negativa\n• Predice \"desenlace cinematográfico\"\n• Problemas no especificados en titular\n→ NFLX bajo presión",
-   "pushText": "Netflix en alerta: trader predice \"final cinematográfico\" para la plataforma",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NFLX por análisis de trader; posible venta de fondos que siguen comentarios de influenciadores en medios",
-    "despues": "Otros stocks de comunicación/streaming (DIS, PARA); NASDAQ por rotación sector tech",
-    "escenarios": "Traders monitorean: (1) Confirmación de problemas específicos (churn, ingresos, competencia); (2) Reporte de earnings próximo; (3) Posiciones cortas y cobertura; (4) Reacción de gestores pasivos en índices",
-    "riesgos": "Riesgo alto de falta de contexto: titular no especifica qué problemas (slowing growth, competition, regulación, etc.); riesgo de amplificación mediática de comentario casual de operador"
-   },
    "macro": null,
    "updates": []
   }
