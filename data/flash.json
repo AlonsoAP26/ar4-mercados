@@ -1,7 +1,371 @@
 {
- "lastId": 33723,
- "actualizado": "2026-07-30T07:54:04.515Z",
+ "lastId": 33733,
+ "actualizado": "2026-07-30T09:28:54.699Z",
  "items": [
+  {
+   "id": "33732",
+   "fecha": "2026-07-30T09:08:02+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33732",
+   "via": "DeItaone",
+   "original": "JAPAN PM TAKAICHI PLANS TO CUT FOOD SALES TAX TO 1% FROM APRIL 2027 JAPAN'S TAKAICHI: FOOD TAX CUT EFFECTIVE FOR TWO YEARS",
+   "titulo": "Japón planea reducir IVA de alimentos de 8% a 1% desde abril 2027",
+   "resumen": "Ministra de Economía de Japón, Takaichi, anunció plan para cortar tasa de IVA sobre alimentos de 8% a 1% efectivo abril 2027, con duración de dos años según fuente. Medida busca contener presiones inflacionarias sobre consumo doméstico y aliviar carga sobre hogares tras incrementos de precios de alimentos.",
+   "analisis": {
+    "porque": "Política fiscal expansiva en Japón impacta valuación del yen (depreciación esperada), diferenciales de tasas JPY vs USD/EUR, y rentabilidad de corporaciones japonesas exportadoras. También refleja presiones políticas anti-inflacionarias que podrían influir en postura del BOJ respecto a ciclo de tasas.",
+    "queOcurrio": "Gobierno japonés anunció reducción de IVA sobre alimentos a 1% por dos años desde abril 2027.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (anuncio oficial Ministra Takaichi)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "JPY",
+    "Nikkei 225",
+    "JGB (Bonos Japoneses)",
+    "Exportadores Japón"
+   ],
+   "sesgos": [
+    {
+     "activo": "JPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nikkei 225",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "JGB",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "japon-iva",
+    "alimentos-impuestos",
+    "politica-fiscal",
+    "inflacion-japon"
+   ],
+   "tgText": "📊 Japón: Ministra Takaichi anuncia corte de IVA en alimentos (8%→1%) desde abril 2027, duración 2 años. Busca aliviar inflación de alimentos. JPY en vigilancia.",
+   "xText": "Japón reduce IVA en alimentos a 1% (desde 8%) abril 2027, 2 años. Estímulo fiscal anti-inflacionario. JPY monitoreado. #Japon #Economia",
+   "discordText": "**Política Fiscal Japón**\n• Reducción IVA alimentos: 8% → 1%\n• Efectivo: Abril 2027 (duración 2 años)\n• Objetivo: Contener inflación de alimentos\n• **Impacto**: JPY↓ Nikkei↑",
+   "pushText": "Japón reduce IVA en alimentos a 1% desde abril 2027",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "JPY/USD (debilidad de yen por política fiscal expansiva/inflacionaria). Nikkei 225 (ganancia de valuación para exportadores).",
+    "despues": "JGB yields (vigilancia de BOJ response); carry trades JPY; USD/JPY forwards.",
+    "escenarios": "Traders monitorean si BOJ responde con ajuste de tasas o yield curve control. Política fiscal expansiva en Japón mientras Fed potencialmente hawkish = divergencia de tasas.",
+    "riesgos": "Medida es de **dos años**, no permanente: impacto presupuestario limitado. BOJ puede esterilizar efectos monetarios."
+   },
+   "macro": {
+    "jpy": "bajista",
+    "nikkei": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33730",
+   "fecha": "2026-07-30T08:54:24+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33730",
+   "via": "DeItaone",
+   "original": "IRAN TO RECEIVE CHINESE AIR DEFENCE MISSILES: REUTERS Iran is expected to receive an initial shipment of up to 400 Chinese-made MANPADS within weeks under a deal worth $60–70 million, Reuters reported, citing sources. The systems would strengthen Iran's short-range air defences after months of conflict with the U.S. and Israel. China denied the report, while Pakistan rejected claims it would facil",
+   "titulo": "Irán recibirá sistemas de defensa aérea chinos MANPADS en semanas, según fuentes",
+   "resumen": "Irán espera recibir hasta 400 sistemas de defensa aérea portátiles tipo MANPADS fabricados por China en las próximas semanas, según contrato reportado por Reuters por USD 60–70 millones. Los sistemas fortalecerían defensas de corto alcance de Irán tras meses de conflicto con EE.UU. e Israel. China negó el reporte; Pakistán rechazó participación en facilitación de entregas.",
+   "analisis": {
+    "porque": "Escalada de suministro de armas chinas a Irán amplía tensión geopolítica Oriente Medio, incrementando riesgo de confrontación militar directa EE.UU.–Irán e Israel–Irán. Históricamente mueve precios de petróleo, divisas de riesgo y commodities defensivos (oro). Ya hay huelgas aéreas confirmadas según titular 33728.",
+    "queOcurrio": "Reuters reporta (vía fuentes anónimas) que China está vendiendo sistemas de defensa aérea portátiles a Irán bajo contrato valuado en USD 60–70M. China negó; Pakistán rechazó rol en facilitación.",
+    "estado": "rumor",
+    "fuenteOriginal": "Reuters (fuentes anónimas)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Dólar",
+    "Mercados Emergentes Irán",
+    "Bonos Globales",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran-defensa",
+    "china-armas",
+    "manpads",
+    "oriente-medio",
+    "escalada-geopolitica"
+   ],
+   "tgText": "🔴 BREAKING: Irán recibirá 400 MANPADS chinos en semanas por USD 60–70M, reporta Reuters. China y Pakistán niegan. Sube riesgo Israel–Irán; oro/petróleo en alerta. Str. 33728.",
+   "xText": "🔥 Irán recibe MANPADS chinos en semanas (USD 60–70M): Reuters. Escalada geopolítica Oriente Medio. Petróleo y oro al alza. China niega. #Geopolítica #Petróleo",
+   "discordText": "**⚠️ Escalada Irán – China**\n• Reuters: Irán recibirá 400 MANPADS (USD 60–70M)\n• China/Pakistán niegan participación\n• Riesgo confrontación EE.UU.–Irán/Israel sube\n• **Mercados**: Petróleo↑ Oro↑ Riesgo↑",
+   "pushText": "Irán recibirá MANPADS chinos; tensión Oriente Medio sube",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo (WTI/Brent) reacciona por temor bloqueo Golfo Pérsico/Estrecho Hormuz. Oro como activo refugio. Dólar por flight-to-safety.",
+    "despues": "Bonos USA (yields bajan por riesgo sistémico). Mercados emergentes con exposición Oriente Medio/Irán venden. Defensivos (utilidades, consumo defensivo) vs cíclicos.",
+    "escenarios": "Traders monitorean si huelgas aéreas confirmadas escalan a confrontación directa EE.UU.–Irán. Dólares de comercio de petróleo e importaciones de defensa israelí. Ciclo de represalias (ver 33728 misil ruso en Polonia).",
+    "riesgos": "Reuters cita fuentes anónimas (no confirmación oficial). China/Pakistán deniegan. Titular puede ser desinformación. Pero contexto 33728 (misil Rusia–Polonia) sugiere escalada multi-frente plausible."
+   },
+   "macro": {
+    "petroleo": "alcista",
+    "oro": "alcista",
+    "dolar": "alcista",
+    "bonos": "bajista (yields bajan por riesgo)",
+    "sp500": "bajista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-30T08:51:52+00:00",
+     "id": "33729",
+     "texto": "Reportes de múltiples fuentes indican que Irán recibirá sistemas de defensa aérea portátiles (MANPADS) fabricados por China en las próximas semanas. La información coincide con escalada de tensiones Oriente Medio tras ataques recientes entre EE.UU.–Irán e Israel–Irán. Transferencia forma parte de acuerdo de defensa más amplio.",
+     "tgUrl": "https://t.me/walterbloomberg/33729"
+    }
+   ],
+   "actualizado": "2026-07-30T08:51:52+00:00"
+  },
+  {
+   "id": "33728",
+   "fecha": "2026-07-30T08:39:32+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33728",
+   "via": "DeItaone",
+   "original": "RUSSIAN MISSILE LANDS IN POLAND Polish Prime Minister Donald Tusk said a missile landed in Poland, but there was no immediate danger as it struck an uninhabited area. Tusk said Poland was prepared to shoot it down. While it appears to have been a Russian missile, authorities have not yet confirmed its exact type.",
+   "titulo": "Misil ruso cae en Polonia; autoridades confirman impacto en zona deshabitada",
+   "resumen": "Primer Ministro polaco Donald Tusk confirmó que un misil (aparentemente ruso) aterrizó en territorio polaco en zona deshabitada sin causar daños inmediatos. Tusk afirmó que Polonia estaba preparada para derribarlo. Autoridades aún no han confirmado tipo exacto de misil, pero indicios apuntan a origen ruso tras escalada reciente de ataques estadounidenses a objetivos vinculados a Irán.",
+   "analisis": {
+    "porque": "Incidente confirma expansión espacial de conflicto Rusia–Ucrania hacia la OTAN (Polonia miembro). Riesgo de escalada hacia artículo 5 de NATO aumenta. Genera volatilidad en índices europeos, spreads CDS de riesgo soberano y divisas de frontera (PLN, EUR vs USD).",
+    "queOcurrio": "Un misil cruzó espacio aéreo polaco (OTAN) y cayó en zona deshabitada sin daños reportados. Primer Ministro confirmó origen aparentemente ruso; no hay verificación independiente de tipo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (vía comunicado oficial de Premier Tusk)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "EUR",
+    "PLN",
+    "DAX",
+    "STOXX 600",
+    "Bonos Alemanes",
+    "CDS Europa del Este",
+    "Oro",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "EUR",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "PLN",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos Alemanes",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "polonia-nato",
+    "misil-ruso",
+    "escalada-ucrania",
+    "riesgo-soberano",
+    "articulo-5"
+   ],
+   "tgText": "⚠️ BREAKING: Misil ruso cae en Polonia (OTAN). Premier Tusk confirma impacto en zona deshabitada. Riesgo Artículo 5 se intensifica. EUR/PLN venden; oro/bonos Bunds suben. Contexto: 33730.",
+   "xText": "🚨 Misil ruso aterriza en Polonia (OTAN); PM Tusk confirma. Riesgo escalada OTAN-Rusia sube. EUR/PLN caen, Bunds suben, oro refugio. #Geopolítica #NATO",
+   "discordText": "**🚨 ESCALADA GEOPOLÍTICA: MISIL EN POLONIA (OTAN)**\n• Confirmado: Misil ruso en territorio polaco (zona deshabitada)\n• PM Tusk: Polonia preparada para defensa\n• Tipo de misil: No confirmado aún\n• **Mercados**: EUR↓ PLN↓ Bunds↑ Oro↑ Riesgo↑",
+   "pushText": "Misil ruso cae en Polonia; escalada OTAN-Rusia sube",
+   "importancia": 10,
+   "reaccion": {
+    "primero": "EUR/USD (debilidad del EUR por riesgo geopolítico europeo). PLN/USD (debilidad de divisa de frontera). Bonos Bund alemanes (flight-to-quality). Oro.",
+    "despues": "DAX, STOXX 600 (volatilidad de renta variable europea). CDS de bonos soberanos de Europa del Este (Polonia, Balcánicos). Diferencial EUR-USD (carry unwinding).",
+    "escenarios": "Traders vigilan: (1) si incidente activa Artículo 5 de NATO (represalia colectiva); (2) alcance temporal de cierre de espacio aéreo polaco; (3) respuesta oficial de Biden/UE; (4) si hay más incidentes. Correlación inversa con renta variable US.",
+    "riesgos": "Confirmed por oficial polaco pero tipo de misil no verificado. Posible malidentificación. Riesgo de mal cálculo político/militar en escalada."
+   },
+   "macro": {
+    "eur": "bajista",
+    "pln": "bajista",
+    "oro": "alcista",
+    "bonos": "alcista (yields bajan)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33725",
+   "fecha": "2026-07-30T08:28:40+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33725",
+   "via": "DeItaone",
+   "original": "MARKET MOVERS 🟢 UPGRADES $LMND: KBW upgraded to Market Perform $SFM: JP Morgan upgraded to Overweight; PT raised to $103 from $80 🔴 DOWNGRADES $CAPR: Piper Sandler downgraded to Neutral; PT cut to $2 from $58 $OPCH: Deutsche Bank downgraded to Hold; PT cut to $24 from $26 $PFSI: Piper Sandler downgraded to Neutral; PT cut to $86 from $106 $TENB: Piper Sandler downgraded to Neutral; PT cut to $30",
+   "titulo": "Upgrades y downgrades de analistas: Meta se retira de favoritos de Evercore",
+   "resumen": "Evercore ISI removió Meta de su lista TAP Outperform pero mantuvo rating Outperform, cortando precio objetivo de $930 a $820. Citó preocupaciones sobre gasto en IA, visibilidad limitada en capex futuro y falta de monetización clara de IA. Simultáneamente, KBW mejoró Lemonade, JP Morgan elevó SalesForce a Overweight ($80→$103), mientras Piper Sandler degradó Capivent ($58→$2), PFSI ($106→$86) y Tenby ($35→$30).",
+   "analisis": {
+    "porque": "Las revisiones de precio objetivo y cambios de ratings de bancos de inversión líderes impactan directamente la valuación de grandes caps de tecnología que pesan en índices amplios. Meta representa ~7% del Nasdaq; ajuste bajista del 12% en PT afecta carteras institucionales.",
+    "queOcurrio": "Analistas institucionales revisaron recomendaciones sobre múltiples acciones tech y fintech. El downgrade de Meta refleja dudas sobre retorno de inversión en IA pese a Q2 sólido.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Nasdaq",
+    "Meta",
+    "Lemonade",
+    "SalesForce",
+    "Capivent",
+    "PFSI",
+    "Tenby"
+   ],
+   "sesgos": [
+    {
+     "activo": "Meta",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "SalesForce",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "meta-downgrade",
+    "evercore",
+    "tech-earnings",
+    "ai-monetization",
+    "price-target"
+   ],
+   "tgText": "📊 Evercore corta PT de Meta de $930→$820 tras dudas sobre IA. Piper Sandler degrada CAPR ($58→$2), PFSI, TENB. JP Morgan eleva SFM a Overweight ($103).",
+   "xText": "Meta baja en PT de Evercore ($930→$820) por dudas en monetización IA. JP Morgan sube SalesForce a Overweight. Volatilidad en tech earnings continúa. #Nasdaq #Meta",
+   "discordText": "**Movimientos de Analistas Financieros**\n• **Meta**: Evercore retira de favoritos, PT $820 (de $930)\n• **SalesForce**: JP Morgan eleva a Overweight, PT $103\n• **Downgrades**: CAPR, PFSI, TENB por Piper Sandler",
+   "pushText": "Meta baja en PT de Evercore; SalesForce sube a Overweight de JP Morgan",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Nasdaq y Tech Select Sector, dado que Meta es componente mayor. Venta de posiciones en Meta podría trigger profit-taking en mega-caps de IA.",
+    "despues": "Bonos corporativos tech; CDS de big tech; forwards de divisas de países con exposición a FAANG.",
+    "escenarios": "Traders monitorean si downgrade dispara cascada de revisiones bajistas entre otros analistas (consenso herding). Verán si Meta logra demostrar monetización de IA en próxima guidance.",
+    "riesgos": "PT pueden ser overtaken por resultados operacionales. Bancos competidores pueden mantener ratings alcistas creando divergencia."
+   },
+   "macro": {
+    "nasdaq": "bajista de corto plazo",
+    "dolar": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33704",
+   "fecha": "2026-07-29T12:20:45+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33704",
+   "via": "DeItaone",
+   "original": "S&P 500, NASDAQ FUTURES TURN NEGATIVE AFTER TRUMP'S COMMENTS ON IRAN",
+   "titulo": "Futuros S&P 500 y Nasdaq caen tras comentarios hawkish de Trump sobre Irán",
+   "resumen": "Inmediatamente después de que Trump confirmara represalias militares contra Irán, los futuros del S&P 500 y Nasdaq giraron al territorio negativo. La volatilidad se intensificó por coincidencia con expectativas de decisión Fed (pausa vs alza). Movimiento refleja arbitraje entre riesgo geopolítico e incertidumbre de política monetaria.",
+   "analisis": {
+    "porque": "Combinación de escalada geopolítica (Irán) + incertidumbre Fed amplifica aversión al riesgo. Mercados reprician activos de renta variable a la baja; buscan safe-haven (bonos, dólar, oro).",
+    "queOcurrio": "Tras comentarios de Trump sobre represalias contra Irán, futuros de equities estadounidenses pasaron de neutral/ligeramente positivo a negativo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "Nasdaq",
+    "Futuros S&P",
+    "Futuros Nasdaq",
+    "Petróleo",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Breaking News",
+   "keywords": [
+    "S&P 500",
+    "Nasdaq",
+    "futuros",
+    "Irán",
+    "volatilidad",
+    "geopolítica"
+   ],
+   "tgText": "Futuros S&P 500/Nasdaq giran negativos tras Trump confirmar represalias contra Irán. Volatilidad extrema; trasfondo Fed antes del anuncio.",
+   "xText": "S&P 500 y Nasdaq futures caen tras Trump confirmar ataques a Irán. Combinación de riesgo geopolítico + incertidumbre Fed.",
+   "discordText": "**Futuros Equities - Giro Negativo**\n• S&P 500 y Nasdaq futures ↓\n• Trigger: represalias Trump vs Irán\n• Contexto: Fed decision inminente\n→ Aversión a riesgo, safe-haven",
+   "pushText": "Futuros S&P/Nasdaq caen tras represalias Iran; volatilidad extrema pre-Fed",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Futuros ceden 0,5-1,5%; VIX salta 2-4 puntos; petróleo gira alcista (+2-3%).",
+    "despues": "Bonos del Tesoro suben (yields bajan 10-15 pb); dólar se fortalece; oro sube; spreads de credit se amplían; sectores defensivos buscan rotación.",
+    "escenarios": "Traders monitorean: (1) profundidad de la caída si escalada Irán continúa, (2) si Fed reacciona dovish por riesgo geopolítico, (3) si Nasdaq especialmente presionado por tech exposure a energía/petróleo.",
+    "riesgos": "Escalada no controlada Irán + sorpresa de alza Fed = crash -2% a -3% en equities; volatilidad sostenida presiona stop-loss de hedge funds."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "alcista",
+    "sp500": "bajista -0,5% a -1,5%",
+    "nasdaq": "bajista -0,5% a -2%",
+    "bonos": "alcista (yields bajan)",
+    "petroleo": "alcista +2% a +3%"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-30T08:25:30+00:00",
+     "id": "33724",
+     "texto": "Ministerio de Relaciones Exteriores de Pakistán reportó que conversaciones EE.UU.–Irán avanzan para restaurar estabilidad, particularmente en Estrecho de Hormuz. Islamabad instó a ambas partes a resolver tensiones vía diálogo diplomático. Comentarios llegan mientras tensiones regionales permanecen altas tras ataques recientes a fuerzas estadounidenses y represalias aéreas de EE.UU.",
+     "tgUrl": "https://t.me/walterbloomberg/33724"
+    },
+    {
+     "fecha": "2026-07-29T15:55:35+00:00",
+     "id": "33719",
+     "texto": "El S&P 500 extendió pérdidas a caída del 1,00% durante la sesión. Esta actualización marca aceleración de la corrección inicialmente reportada tras comentarios hawkish sobre Irán. El contexto incluye tensos reportes geopolíticos sobre ataques en Oriente Medio y pánico de retracción en sectores defensivos.",
+     "tgUrl": "https://t.me/walterbloomberg/33719"
+    }
+   ],
+   "actualizado": "2026-07-30T08:25:30+00:00"
+  },
   {
    "id": "917878295",
    "fecha": "2026-07-30T07:17:34.000Z",
@@ -1138,83 +1502,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33704",
-   "fecha": "2026-07-29T12:20:45+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33704",
-   "via": "DeItaone",
-   "original": "S&P 500, NASDAQ FUTURES TURN NEGATIVE AFTER TRUMP'S COMMENTS ON IRAN",
-   "titulo": "Futuros S&P 500 y Nasdaq caen tras comentarios hawkish de Trump sobre Irán",
-   "resumen": "Inmediatamente después de que Trump confirmara represalias militares contra Irán, los futuros del S&P 500 y Nasdaq giraron al territorio negativo. La volatilidad se intensificó por coincidencia con expectativas de decisión Fed (pausa vs alza). Movimiento refleja arbitraje entre riesgo geopolítico e incertidumbre de política monetaria.",
-   "analisis": {
-    "porque": "Combinación de escalada geopolítica (Irán) + incertidumbre Fed amplifica aversión al riesgo. Mercados reprician activos de renta variable a la baja; buscan safe-haven (bonos, dólar, oro).",
-    "queOcurrio": "Tras comentarios de Trump sobre represalias contra Irán, futuros de equities estadounidenses pasaron de neutral/ligeramente positivo a negativo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P 500",
-    "Nasdaq",
-    "Futuros S&P",
-    "Futuros Nasdaq",
-    "Petróleo",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Breaking News",
-   "keywords": [
-    "S&P 500",
-    "Nasdaq",
-    "futuros",
-    "Irán",
-    "volatilidad",
-    "geopolítica"
-   ],
-   "tgText": "Futuros S&P 500/Nasdaq giran negativos tras Trump confirmar represalias contra Irán. Volatilidad extrema; trasfondo Fed antes del anuncio.",
-   "xText": "S&P 500 y Nasdaq futures caen tras Trump confirmar ataques a Irán. Combinación de riesgo geopolítico + incertidumbre Fed.",
-   "discordText": "**Futuros Equities - Giro Negativo**\n• S&P 500 y Nasdaq futures ↓\n• Trigger: represalias Trump vs Irán\n• Contexto: Fed decision inminente\n→ Aversión a riesgo, safe-haven",
-   "pushText": "Futuros S&P/Nasdaq caen tras represalias Iran; volatilidad extrema pre-Fed",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Futuros ceden 0,5-1,5%; VIX salta 2-4 puntos; petróleo gira alcista (+2-3%).",
-    "despues": "Bonos del Tesoro suben (yields bajan 10-15 pb); dólar se fortalece; oro sube; spreads de credit se amplían; sectores defensivos buscan rotación.",
-    "escenarios": "Traders monitorean: (1) profundidad de la caída si escalada Irán continúa, (2) si Fed reacciona dovish por riesgo geopolítico, (3) si Nasdaq especialmente presionado por tech exposure a energía/petróleo.",
-    "riesgos": "Escalada no controlada Irán + sorpresa de alza Fed = crash -2% a -3% en equities; volatilidad sostenida presiona stop-loss de hedge funds."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "alcista",
-    "sp500": "bajista -0,5% a -1,5%",
-    "nasdaq": "bajista -0,5% a -2%",
-    "bonos": "alcista (yields bajan)",
-    "petroleo": "alcista +2% a +3%"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-29T15:55:35+00:00",
-     "id": "33719",
-     "texto": "El S&P 500 extendió pérdidas a caída del 1,00% durante la sesión. Esta actualización marca aceleración de la corrección inicialmente reportada tras comentarios hawkish sobre Irán. El contexto incluye tensos reportes geopolíticos sobre ataques en Oriente Medio y pánico de retracción en sectores defensivos.",
-     "tgUrl": "https://t.me/walterbloomberg/33719"
-    }
-   ],
-   "actualizado": "2026-07-29T15:55:35+00:00"
   },
   {
    "id": "33718",
@@ -7215,261 +7502,6 @@
     "riesgos": "Proyecciones dependen de demanda EEUU persistente. Transición a EV con costos podrían comprometer márgenes. Aranceles sobre partes importadas es riesgo latente."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33549",
-   "fecha": "2026-07-27T08:40:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33549",
-   "via": "DeItaone",
-   "original": "$F - JEFFERIES TURNS BULLISH ON FORD Jefferies upgrades $F to Buy and raises its price target to $17.50 (from $14.50). The firm expects Q2 to mark a low point, with production recovering and healthy U.S. demand potentially supporting higher guidance. Jefferies also sees improving capital allocation, stronger cash flow, and projects FY adjusted EBIT of $10.3B, near the top of Ford’s guidance range.",
-   "titulo": "Jefferies mejora calificación de Ford a Compra; target $17,50 tras recuperación esperada",
-   "resumen": "Jefferies eleva Ford a Buy con precio objetivo de $17,50 desde $14,50. La casa de análisis espera que Q2 marque el mínimo del ciclo, con recuperación de producción y demanda estadounidense sólida impulsando guías al alza. Jefferies proyecta EBIT ajustado de $10,3B para 2026, cerca del techo de la guía corporativa.",
-   "analisis": {
-    "porque": "Ford es símbolo de recuperación de fabricantes tradicionales. Un upgrade institucional con target de precio atrae reposicionamiento de carteras y volatilidad en sector automotor. Señala confianza en ciclo de demanda y márgenes.",
-    "queOcurrio": "Casa de análisis Jefferies cambia de neutral/reduce a compra en Ford, subiendo precio objetivo 20,7% y mejorando proyecciones de earnings.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "$F",
-    "S&P500",
-    "Sector Automotor"
-   ],
-   "sesgos": [
-    {
-     "activo": "$F",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Automotriz USA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Ford",
-    "upgrade-analista",
-    "automotriz",
-    "ciclo-productivo",
-    "demanda-USA"
-   ],
-   "tgText": "🚗 Jefferies sube Ford a Compra con target $17,50 (+43%). Espera Q2 como mínimo cíclico, recuperación de producción y demanda EEUU sólida con EBIT $10,3B en 2026.",
-   "xText": "🚗 Jefferies: Ford compra con target $17,50 (+43% vs $14,50). Proyecta EBIT $10,3B 2026 tras recuperación de Q2 en adelante.",
-   "discordText": "**Ford Upgrade Jefferies**\n• De neutral a **Compra**\n• Target: $17,50 (+43% upside)\n• EBIT 2026: $10,3B proyectado\n• Cree Q2 es el mínimo cíclico",
-   "pushText": "Ford sube a Compra con target $17,50 desde $14,50",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "$F reacciona directamente con posible impulso alcista si hay cobertura corta o acumulación institucional. Sector automotor puede seguir.",
-    "despues": "S&P 500 puede responder si el upgrade refleja visibilidad más amplia sobre demanda EEUU. Bonos corporativos del sector podrían comprimirse si márgenes mejoran.",
-    "escenarios": "Traders vigilan: (1) si otros analistas siguen el upgrade; (2) próximos reportes de producción y ventas Ford; (3) impacto de aranceles en costos; (4) capacidad de mantener guías al alza.",
-    "riesgos": "Target depende de recuperación de demanda EEUU, sensible a recesión o cambio en confianza del consumidor. Aranceles podrían erosionar márgenes proyectados."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33548",
-   "fecha": "2026-07-27T08:32:34+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33548",
-   "via": "DeItaone",
-   "original": "CHIP STOCKS SURGE US-listed chip stocks climb in premarket trading. • $SNDK +4.1%, $WDC +4.0% • $MU +3.3%, $INTC +2.8%, $AMD +2.7% • $AVGO +2.1%, $NVDA +1.2% • $SOXX +2.8%",
-   "titulo": "Semiconductores repuntan en premercado con rally generalizado de chips",
-   "resumen": "Las acciones de semiconductores estadounidenses avanzan en sesión previa al mercado. SanDisk y Western Digital lideran con ganancias de 4,1% y 4,0%. Micron, Intel y AMD suben entre 2,7% y 3,3%, mientras Nvidia y Broadcom muestran avances moderados. El índice sectorial SOXX gana 2,8%, reflejando recuperación en demanda o cobertura corta.",
-   "analisis": {
-    "porque": "El sector de semiconductores es motor del tecnológico y sensible a ciclos de demanda de IA, data centers y consumo. Un rally simultáneo en múltiples fabricantes puede señalar cambio de sentimiento o reposicionamiento de cartera.",
-    "queOcurrio": "Amplio avance en precios de acciones de chips estadounidenses antes de la apertura del mercado regular, con Storage y Memory liderando.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "SOXX",
-    "$SNDK",
-    "$WDC",
-    "$MU",
-    "$INTC",
-    "$AMD",
-    "$AVGO",
-    "$NVDA"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "semiconductores",
-    "chips",
-    "SOXX",
-    "premarket",
-    "rally-sectorial"
-   ],
-   "tgText": "💹 Semiconductores suben en premarket: SanDisk +4,1%, Western Digital +4,0%, Micron +3,3%, SOXX +2,8%. Rally generalizado en storage, memory y procesadores.",
-   "xText": "💻 Rally en semiconductores: SanDisk +4,1%, WDC +4,0%, MU +3,3%, INTC +2,8%, AMD +2,7%. SOXX sube 2,8% en premarket.",
-   "discordText": "**Semiconductor Rally en Premarket**\n• SanDisk +4,1% | Western Digital +4,0%\n• Micron +3,3% | Intel +2,8% | AMD +2,7%\n• SOXX Index +2,8%\nRecuperación generalizada en sector chips.",
-   "pushText": "Semiconductores repuntan en premarket con SOXX +2,8%",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NASDAQ y QQQ reaccionan inmediatamente al alza por peso del Tech en índices. Fondos de IA/semiconductores pueden moverse agresivamente.",
-    "despues": "S&P 500 sigue si el rally se amplía a large caps. Volatilidad implícita (VIX) podría bajar si hay cambio de sentimiento riesgo-on.",
-    "escenarios": "Traders vigilan: (1) si rally persiste en apertura regular; (2) reportes de demanda de chips o data centers; (3) si es rotación desde bonos hacia equities; (4) impacto de aranceles en importaciones de semiconductores.",
-    "riesgos": "El titular no especifica qué causó el rally. Podría ser cobertura corta o rumor no confirmado de novedades positivas. Reversión posible si no hay catalizador real."
-   },
-   "macro": {
-    "nasdaq": "alcista a corto plazo",
-    "petroleo": null,
-    "dolar": "neutral",
-    "oro": null
-   },
-   "updates": []
-  },
-  {
-   "id": "906427901",
-   "fecha": "2026-07-27T05:04:43.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html",
-   "via": "CNBC",
-   "original": "Why Trump&apos;s new tariff blitz is very different this time round",
-   "titulo": "Por qué la nueva ofensiva arancelaria de Trump es muy diferente esta vez",
-   "resumen": "Análisis de CNBC sobre diferencias estructurales en nueva propuesta arancelaria de Trump respecto a gestiones anteriores. El titular no especifica cuáles son esas diferencias, magnitudes de aranceles, ni sectores objetivo. Sugiere cambio de enfoque o estrategia versus ciclos previos de tensiones comerciales.",
-   "analisis": {
-    "porque": "Política arancelaria afecta directamente precios, márgenes empresariales, inflación y flujos comerciales globales. Impacto material en acciones, divisas y commodities. Relevancia geopolítica y macroeconómica alta.",
-    "queOcurrio": "CNBC analiza nueva iniciativa arancelaria de Trump, destacando que presenta diferencias significativas respecto a ciclos previos de su administración.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Russell2000",
-    "Dólar",
-    "Sectores Exportadores",
-    "Retail",
-    "Manufactura",
-    "Oro",
-    "Bonos Tesoro"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "aranceles",
-    "política-comercial",
-    "geopolítica",
-    "impuestos"
-   ],
-   "tgText": "📊 Análisis CNBC: nueva ofensiva arancelaria de Trump presenta diferencias estructurales vs ciclos previos. Potencial impacto material en márgenes empresariales e inflación.",
-   "xText": "📊 Trump: nueva estrategia arancelaria difiere de ciclos anteriores, según análisis de CNBC. Mayor impacto en márgenes y precios potencial.",
-   "discordText": "**Aranceles Trump: Análisis de Diferencias**\n• Nueva ofensiva comercial vs gestiones previas\n• Diferencias estructurales no especificadas\n• Potencial impacto en márgenes e inflación",
-   "pushText": "Trump: nueva ofensiva arancelaria con diferencias estructurales",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "S&P 500 y NASDAQ reaccionan a riesgo arancelario. Dólar tiende a fortalecerse por incertidumbre. Oro sube como activo refugio.",
-    "despues": "Sectores específicos según objetivo de aranceles (manufacturas, retail, semiconductores, automotriz). Empresas con cadenas globales presionadas.",
-    "escenarios": "Traders monitorean detalles de propuesta arancelaria cuando se formalicen. Evaluación de impacto inflacionario. Análisis de represalias comerciales. Riesgo de escalada geopolítica.",
-    "riesgos": "Título no especifica magnitudes ni sectores objetivo. Análisis opinativo de medio. Riesgo: especulación sobre intención política sin fundamentos confirmados."
-   },
-   "macro": {
-    "sp500": "bajista",
-    "nasdaq": "bajista",
-    "dolar": "alcista",
-    "oro": "alcista",
-    "bonos": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "908728183",
-   "fecha": "2026-07-27T04:18:35.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/goldman-sachs-asian-currencies-ai-boom-.html",
-   "via": "CNBC",
-   "original": "Goldman Sachs lists Asian currencies riding the AI boom",
-   "titulo": "Goldman Sachs destaca monedas asiáticas que capitalizan el auge de la IA",
-   "resumen": "Goldman Sachs publica análisis sobre monedas asiáticas que se benefician del boom de inteligencia artificial. El titular no especifica cuáles son esas monedas, ni qué mecanismo las favorece. Aparentemente vincula aumento de demanda de semiconductores/energía en Asia con fortaleza de divisas regionales.",
-   "analisis": {
-    "porque": "Señala rotación de capital hacia activos asiáticos ligados a cadena de valor de IA (semiconductores, energía, data centers). Afecta valuaciones de divisas, acciones tech asiáticas y commodities.",
-    "queOcurrio": "Goldman Sachs publicó reporte identificando monedas asiáticas como beneficiarias del auge de IA global, sin detallar cuáles específicamente.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Divisas Asiáticas",
-    "CNY",
-    "JPY",
-    "SGD",
-    "IDR",
-    "KRW",
-    "Acciones Tech Asia",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "Divisas Asiáticas",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Acciones Tech Asia",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Goldman-Sachs",
-    "monedas-asiáticas",
-    "IA",
-    "inteligencia-artificial",
-    "sentimiento"
-   ],
-   "tgText": "💡 Goldman Sachs: monedas asiáticas se benefician del auge de IA. Análisis destaca fortaleza de divisas regionales por demanda de chips y infraestructura.",
-   "xText": "💡 Goldman Sachs identifica monedas asiáticas ganando con boom de IA. Divisas regionales se fortalecen por cadena de suministro de semiconductores.",
-   "discordText": "**Goldman Sachs: Monedas Asiáticas y IA**\n• Análisis destaca beneficiarios de auge de inteligencia artificial\n• Enfoque en divisas asiáticas\n• Vinculación: demanda de chips y energía",
-   "pushText": "Goldman Sachs: monedas asiáticas ganan con IA",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Divisas asiáticas (CNY, SGD, KRW) tienden a fortalecerse por entrada de capitales en acciones tech. Moeda nikkei y dólar singapurense sensibles.",
-    "despues": "Acciones de semiconductores asiáticos, productores de energía, operadores de data centers. Petróleo y cobre por demanda incremental.",
-    "escenarios": "Traders monitorean rotación de fondos hacia Asia. Evalúan si impulso de IA es sostenible o burbuja. Vigilancia de flujos de capital y valuaciones regionales.",
-    "riesgos": "Reporte de banco de inversión es bias hacia activos asiáticos. Título no especifica qué monedas ni fundamentos. Riesgo: sobrevaloración y corrección."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "nasdaq": "neutral"
-   },
    "updates": []
   }
  ],
