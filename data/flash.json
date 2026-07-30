@@ -1,7 +1,362 @@
 {
  "lastId": 33723,
- "actualizado": "2026-07-29T21:31:46.487Z",
+ "actualizado": "2026-07-30T05:23:16.423Z",
  "items": [
+  {
+   "id": 979069989,
+   "fecha": "2026-07-30T02:52:30.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/china-us-robot-humanoid-ban-trump-visit.html",
+   "via": "CNBC",
+   "original": "China threatens retaliation against U.S. humanoid robot ban, says it &apos;severely damages&apos; relations",
+   "titulo": "China amenaza represalias por prohibición EE.UU. de robots humanoides; tensión comercial sube",
+   "resumen": "China anuncia represalias contra EE.UU. por restricción de robots humanoides, acusando a Washington de \"daño grave\" a relaciones bilaterales. Escala de tensión comercial y tecnológica en IA.",
+   "analisis": {
+    "porque": "Geopolítica tech IA: prohibición EE.UU. de robots humanoides chinos gatilla represalias comerciales. Riesgo: aranceles reciprocales, restricciones a acceso de tech EE.UU. en China. Afecta valuaciones tech globales y sentimiento de riesgo.",
+    "queOcurrio": "EE.UU. restringe robots humanoides chinos; China amenaza represalias",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "DXY",
+    "S&P 500",
+    "Nasdaq",
+    "EURUSD",
+    "Oro",
+    "Petróleo"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Tech",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "China",
+    "EE.UU.",
+    "robots",
+    "humanoides",
+    "represalias",
+    "aranceles",
+    "tech"
+   ],
+   "tgText": "BREAKING: China amenaza represalias por prohibición EE.UU. de robots humanoides. Escala: daño \"grave\" a relaciones bilaterales. Riesgo aranceles reciprocales.",
+   "xText": "🚨 China vs EE.UU.: Prohibición robots humanoides genera amenaza de represalias. Tensión tech-comercial escala. Riesgo aranceles. Mercado espera reacción. #Geopolítica",
+   "discordText": "🚨 **ESCALADA: China-EE.UU. en Robots**\n• EE.UU. restringe robots humanoides chino\n• China amenaza represalias\n• Daño \"grave\" a relaciones bilaterales\n• Riesgo: aranceles reciprocales, restricciones tech",
+   "pushText": "BREAKING: China amenaza represalias por prohibición EE.UU. de robots humanoides",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Nasdaq, S&P 500 (venta de riesgo por tensión comercial; MSFT, AAPL, NVDA en foco por exposición China)",
+    "despues": "DXY fortalece (demanda de safe haven), Oro sube (cobertura geopolítica), Petróleo volátil (si tensión afecta comercio Oriente Medio)",
+    "escenarios": "Traders vigilan: 1) comunicado oficial chino (represalias concretas vs vagas amenazas), 2) listado de sectores/empresas en represalia china, 3) respuesta EE.UU., 4) impact en cadenas de suministro tech",
+    "riesgos": "Riesgo alto: si es escalada en serio vs. postura habitual. Monitorear oficialismo chino (CCTV/Xinhua) para confirmar. Rumor si es solo Bloomberg/agencia occidental sin fuente china verificable."
+   },
+   "macro": {
+    "dolar": "alcista por safe haven",
+    "oro": "alcista por riesgo geopolítico",
+    "nasdaq": "bajista por exposición China",
+    "petroleo": "volátil por riesgo geopolítico",
+    "sp500": "bajista por efecto contagio"
+   },
+   "updates": []
+  },
+  {
+   "id": 975621833,
+   "fecha": "2026-07-30T02:15:40.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/china-ai-supplier-zhongji-innolight-hong-kong-debut.html",
+   "via": "CNBC",
+   "original": "China AI supplier Zhongji Innolight slips in Hong Kong debut after $6.8 billion IPO",
+   "titulo": "Chip maker chino Zhongji Innolight cae en debut Hong Kong; IPO de USD 6.800M debajo de expectativas",
+   "resumen": "Zhongji Innolight (proveedor de semiconductores IA chino) se desploma en su debut en la Bolsa de Hong Kong tras IPO de USD 6.800 millones. Refleja enfriamiento de demanda de tech china en mercados globales.",
+   "analisis": {
+    "porque": "Debilidad en demanda de chips chino-IA sugiere saturación o caída de confianza en competitividad china. Impacta sentimiento sobre empresas tech chinas y relaciones EE.UU.-China. Señal de apetito decreciente para China en IPO.",
+    "queOcurrio": "Zhongji Innolight IPO por USD 6.800M en Hong Kong; acción cae en primer día",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Hang Seng",
+    "Tech China",
+    "Semiconductores"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tech China",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Zhongji Innolight",
+    "IPO",
+    "Hong Kong",
+    "chips",
+    "China",
+    "IA"
+   ],
+   "tgText": "IPO china Zhongji Innolight (USD 6.800M) debuta con caída en Hong Kong. Señal: enfriamiento en demanda de tech china y confianza inversor.",
+   "xText": "Zhongji Innolight cae en debut Hong Kong. IPO china USD 6.8B rechazada por mercado. Señal bearish para tech chino. #China #Semiconductores",
+   "discordText": "**China Chip IPO: Zhongji Innolight Falla**\n• IPO USD 6.800M en Hong Kong\n• Acción cae en primer día (débil demanda)\n• Señal: enfriamiento en chips IA chinos",
+   "pushText": "IPO china Zhongji Innolight cae en debut; débil demanda de chips IA chino",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Hang Seng, índices tech chinos (debilidad en demanda de semiconductores chinos)",
+    "despues": "Semiconductores globales compitiendo vs China; USD fortalecido vs yuan",
+    "escenarios": "Traders vigilan: 1) otras IPOs chinas próximas (apetito bajista), 2) datos de exportación chip China, 3) aranceles EE.UU. impactando competitividad",
+    "riesgos": "Titulo no especifica magnitud de caída ni razones exactas (demanda débil? valuación alta?)"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 983209807,
+   "fecha": "2026-07-30T01:58:00.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/india-meta-democracy-protest-boost-instagram-meta.html",
+   "via": "CNBC",
+   "original": "Inside India newsletter: Meta&apos;s clout in the world&apos;s largest democracy is surging — inviting scrutiny",
+   "titulo": "Meta consolida poder en India y atrae escrutinio regulatorio",
+   "resumen": "Influencia de Meta (WhatsApp, Instagram, Facebook) crece en mundo democrático más grande, despertando alarmas regulatorias. Presencia dominante en telecomunicaciones y redes sociales convierte a Meta en blanco de política local.",
+   "analisis": {
+    "porque": "Riesgo regulatorio geográfico explícito. India es mercado clave para crecimiento ad de Meta; escrutinio afecta monetización y expansión. Precedente para otros gobiernos.",
+    "queOcurrio": "Clout de Meta en India crece pero llama atención regulatoria local",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "META"
+   ],
+   "sesgos": [
+    {
+     "activo": "META",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Meta",
+    "India",
+    "regulación",
+    "escrutinio",
+    "geopolítica"
+   ],
+   "tgText": "Meta domina India (WhatsApp, Instagram, Facebook) pero escrutinio regulatorio crece. Riesgo: políticas locales pueden limitar monetización en mercado clave.",
+   "xText": "Meta's power in India surge pero reguladores encienden alarmas. Riesgo geopolítico real para crecimiento ad. #Meta #India #Regulación",
+   "discordText": "**Meta en India: Poder + Escrutinio**\n• Domina telecomunicaciones y redes sociales\n• Gobierno local toma nota regulatoria\n• Riesgo: restricciones a monetización",
+   "pushText": "Meta consolida poder en India; reguladores encienden alarmas",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "META (riesgo regulatorio India impacta proyecciones de crecimiento ad en mercado emergente clave)",
+    "despues": "Tech emergentes y ETFs India-exposed podrían ver repricing si se confirman restricciones",
+    "escenarios": "Traders monitorean: 1) anuncios regulatorios en India, 2) reporte de earnings META sobre India revenue growth, 3) precedentes en otras democracias",
+    "riesgos": "Contexto vago (\"inviting scrutiny\" no especifica acciones concretas). Riesgo: rumor vs confirmado."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 936038120,
+   "fecha": "2026-07-30T01:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/kevin-warsh-fed-treasury-yields-inflation-credibility-interest-rates.html",
+   "via": "CNBC",
+   "original": "Analysis: Fed Chairman Warsh&apos;s credibility in question after leaving interest rates unchanged",
+   "titulo": "Credibilidad de Warsh en duda tras mantener tasas sin claridad sobre septiembre",
+   "resumen": "Analistas cuestionan la credibilidad del presidente Powell sucesor (posible), Warsh, por mantener tasas en 3,5%-3,75% sin proporcionar dirección clara sobre el próximo movimiento. Genera incertidumbre sobre sesgo futuro de política monetaria.",
+   "analisis": {
+    "porque": "Claridad de forward guidance es crítica para mercados de bonos y FX. Ambigüedad reduce credibilidad del banco central y eleva volatilidad de expectativas de tasa. Afecta valuaciones de renta fija y dólar.",
+    "queOcurrio": "Fed mantiene tasas sin resolver expectativa sobre septiembre; comentarios no despejaron dudas",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "Bonos USA",
+    "Rendimientos USA",
+    "EURUSD",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "Powell",
+    "Warsh",
+    "tasas",
+    "credibilidad",
+    "septiembre"
+   ],
+   "tgText": "Fed mantiene tasas pero Warsh siembra dudas sobre claridad. Credibilidad cuestionada por falta de forward guidance. Bonos volatilizados.",
+   "xText": "Warsh's Fed clarity problem: tasas estables pero sin hoja de ruta clara. Mercado de bonos desconfía. Dólar bajo presión. #Fed #Bonos",
+   "discordText": "**Fed: Credibilidad de Warsh en Duda**\n• Tasas mantienen 3,5%-3,75%\n• Forward guidance ausente para septiembre\n• Mercado bonos: poca claridad = menos confianza",
+   "pushText": "Fed mantiene tasas pero crea incertidumbre; credibilidad de Warsh cuestionada",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Bonos USA (venta en plazo largo por incertidumbre), DXY (debilidad por menos confianza en Fed)",
+    "despues": "EURUSD (apreciación vs dólar débil), acciones (volatilidad de tasa agresiva para valuaciones)",
+    "escenarios": "Traders vigilan: 1) si Fed clarifica en comunicados posteriores, 2) curva de expectativas de tasa para próximos 3 meses, 3) discursos de gobernadores",
+    "riesgos": "Ya publicada; esta es análisis posterior. Riesgo: interpretación de \"credibilidad\" es editorial"
+   },
+   "macro": {
+    "dolar": "presión bajista por pérdida de confianza",
+    "bonos": "volatilidad alcista (yields suben por venta)",
+    "sp500": "neutral a bajista por tasa incierta"
+   },
+   "updates": []
+  },
+  {
+   "id": 985815003,
+   "fecha": "2026-07-30T00:58:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/zuckerberg-metas-ai-capacity-dilemma-what-to-sell-vs-what-to-keep.html",
+   "via": "CNBC",
+   "original": "Zuckerberg lays out Meta&apos;s AI capacity dilemma: What to sell vs. what to keep",
+   "titulo": "Zuckerberg enfrenta dilema crítico: qué vender vs qué retener en IA",
+   "resumen": "Zuckerberg expone la tensión estratégica de Meta: capacidad de IA limitada requiere decisiones sobre qué servicios monetizar y cuáles retener internamente. Subraya el trade-off entre venta y capacidad productiva propia.",
+   "analisis": {
+    "porque": "Revela presión operativa real en Meta por capex masivo en IA. Decisiones sobre pricing y capacidad impactarán márgenes futuros. Directamente vinculado a guidance decepcionante.",
+    "queOcurrio": "Zuckerberg articula el dilema de capacidad: insuficiente poder computacional para servir todos los usos imaginados de IA",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "META",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "META",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Meta",
+    "Zuckerberg",
+    "IA",
+    "capacidad",
+    "monetización"
+   ],
+   "tgText": "Zuckerberg reconoce dilema de Meta: capacidad de IA insuficiente. Debe elegir qué servicios monetizar vs retener. Refleja presión real sobre márgenes.",
+   "xText": "Meta enfrenta dilema: no hay IA suficiente para todos. Zuckerberg decide qué vende, qué retiene. Presión clara sobre márgenes futuros. #Meta",
+   "discordText": "**Meta: Dilema de Capacidad IA**\n• Computación insuficiente para todos los usos\n• Decisión sobre monetización vs retención interna\n• Impacto directo en márgenes futuros",
+   "pushText": "Meta enfrenta escasez de capacidad IA; Zuckerberg debe elegir qué monetizar",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "META (presión sobre márgenes futuros por restricción de capacidad)",
+    "despues": "Comparables de cloud/AI reevalúan pricing power; Amazon AWS y Google Cloud monitoreados para contraste",
+    "escenarios": "Traders observan si Meta debe reducir inversión en IA o si margenes contraerán por capacidad limitada",
+    "riesgos": "Es continuación de noticia reciente; contexto de guidance débil puede estar sesgando lectura"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 970280468,
+   "fecha": "2026-07-29T20:57:08.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
+   "via": "CNBC",
+   "original": "Microsoft beats Q4 cloud expectations as full-year Azure revenue tops $100 billion",
+   "titulo": "Microsoft supera expectativas en nube: ingresos anuales de Azure alcanzan USD 100.000M",
+   "resumen": "Microsoft reportó resultados del Q4 por encima de las previsiones de Wall Street, con ingresos anuales de Azure superando los USD 100.000 millones. El desempeño de la división de computación en la nube refuerza la posición dominante de la compañía en infraestructura de IA y servicios empresariales, marcando un hito significativo en su cartera de negocios.",
+   "analisis": {
+    "porque": "Afecta valoración de mega-cap tecnológica y confianza en ciclo de inversión en IA; mueve índices Nasdaq y carteras de crecimiento",
+    "queOcurrio": "Microsoft anunció que sus ingresos anuales de Azure superaron USD 100.000 millones en el Q4, superando expectativas previas",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "MSFT",
+    "S&P500",
+    "Indices Tecnológicos"
+   ],
+   "sesgos": [
+    {
+     "activo": "MSFT",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Microsoft",
+    "Azure",
+    "Cloud",
+    "Q4",
+    "Resultados",
+    "IA",
+    "Ingresos"
+   ],
+   "tgText": "📊 Microsoft supera expectativas: Azure registra USD 100.000M en ingresos anuales. Dominio en infraestructura de IA confirmado. MSFT en alza.",
+   "xText": "MSFT: Azure alcanza USD 100B en ingresos anuales, superando previsiones. Mega-cap tecnológica refuerza liderazgo en IA. #NASDAQ",
+   "discordText": "**Microsoft Q4: Azure rompe récord**\n• Ingresos anuales: USD 100.000M\n• Supera expectativas Wall Street\n• Domina mercado cloud + IA\n→ Positivo para MSFT y NASDAQ",
+   "pushText": "Microsoft supera expectativas con Azure en USD 100B anuales",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "MSFT y Nasdaq 100: mega-cap beneficiada directa por revaluación de crecimiento de IA",
+    "despues": "S&P 500, otros proveedores cloud (AMZN, GOOGL), bonos corporativos de tech",
+    "escenarios": "Traders vigilarán si meta de rentabilidad de IA de Microsoft se mantiene en guidance futuro; comparar con competidores cloud para rotación sectorial",
+    "riesgos": "Posible reacción limitada si mercado ya había precalculado este resultado; competencia en cloud (AWS, Google Cloud) podría eclipsar el hito"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "dow": "neutral"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-30T00:55:21.000Z",
+     "id": 963990905,
+     "texto": "Microsoft vuelve a entregar resultados sólidos en su earnings call, impulsando optimismo en el sector tecnológico. Simultáneamente, Meta enfrenta escepticismo de analistas sobre su retorno de inversión en IA, con cuestionamientos sobre si el mercado debe \"ser más paciente\" con sus gastos.",
+     "tgUrl": "https://www.cnbc.com/2026/07/29/microsoft-aces-earnings-call-while-meta-frustration-grows-do-we-just-need-to-be-a-bit-more-patient.html"
+    }
+   ],
+   "actualizado": "2026-07-30T00:55:21.000Z"
+  },
   {
    "id": 930836156,
    "fecha": "2026-07-29T21:26:17.000Z",
@@ -233,67 +588,6 @@
     "bonos": "neutral (pero presión alcista en rendimientos)",
     "rendimientos": "alcista",
     "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": 970280468,
-   "fecha": "2026-07-29T20:57:08.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
-   "via": "CNBC",
-   "original": "Microsoft beats Q4 cloud expectations as full-year Azure revenue tops $100 billion",
-   "titulo": "Microsoft supera expectativas en nube: ingresos anuales de Azure alcanzan USD 100.000M",
-   "resumen": "Microsoft reportó resultados del Q4 por encima de las previsiones de Wall Street, con ingresos anuales de Azure superando los USD 100.000 millones. El desempeño de la división de computación en la nube refuerza la posición dominante de la compañía en infraestructura de IA y servicios empresariales, marcando un hito significativo en su cartera de negocios.",
-   "analisis": {
-    "porque": "Afecta valoración de mega-cap tecnológica y confianza en ciclo de inversión en IA; mueve índices Nasdaq y carteras de crecimiento",
-    "queOcurrio": "Microsoft anunció que sus ingresos anuales de Azure superaron USD 100.000 millones en el Q4, superando expectativas previas",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "MSFT",
-    "S&P500",
-    "Indices Tecnológicos"
-   ],
-   "sesgos": [
-    {
-     "activo": "MSFT",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Microsoft",
-    "Azure",
-    "Cloud",
-    "Q4",
-    "Resultados",
-    "IA",
-    "Ingresos"
-   ],
-   "tgText": "📊 Microsoft supera expectativas: Azure registra USD 100.000M en ingresos anuales. Dominio en infraestructura de IA confirmado. MSFT en alza.",
-   "xText": "MSFT: Azure alcanza USD 100B en ingresos anuales, superando previsiones. Mega-cap tecnológica refuerza liderazgo en IA. #NASDAQ",
-   "discordText": "**Microsoft Q4: Azure rompe récord**\n• Ingresos anuales: USD 100.000M\n• Supera expectativas Wall Street\n• Domina mercado cloud + IA\n→ Positivo para MSFT y NASDAQ",
-   "pushText": "Microsoft supera expectativas con Azure en USD 100B anuales",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "MSFT y Nasdaq 100: mega-cap beneficiada directa por revaluación de crecimiento de IA",
-    "despues": "S&P 500, otros proveedores cloud (AMZN, GOOGL), bonos corporativos de tech",
-    "escenarios": "Traders vigilarán si meta de rentabilidad de IA de Microsoft se mantiene en guidance futuro; comparar con competidores cloud para rotación sectorial",
-    "riesgos": "Posible reacción limitada si mercado ya había precalculado este resultado; competencia en cloud (AWS, Google Cloud) podría eclipsar el hito"
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "sp500": "alcista",
-    "dow": "neutral"
    },
    "updates": []
   },
@@ -7192,335 +7486,6 @@
     "nasdaq": "Alcista"
    },
    "updates": []
-  },
-  {
-   "id": 904417170,
-   "fecha": "2026-07-26T23:39:46.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/jim-cramer-heres-the-tech-stock-to-buy-in-a-market-losing-patience-with-tech.html",
-   "via": "CNBC",
-   "original": "Here&apos;s the tech stock to buy in a market losing patience with tech",
-   "titulo": "Qué acción tech comprar cuando el mercado pierde paciencia con sector",
-   "resumen": "Editorial de CNBC identifica qué acción tech sería defensiva en escenario de rotación del mercado fuera de tech. No especifica cuál es, ni justificación de selección. Timing coincide con presión reciente en NASDAQ post-earnings.",
-   "analisis": {
-    "porque": "Señal de que mercado evalúa reversión de posiciones mega-cap tech. Editorial tactical refleja sentimiento de traders. Sin embargo, acción específica no está identificada.",
-    "queOcurrio": "CNBC sugiere existe tech stock defensiva ante pérdida de paciencia del mercado con sector.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "tech-rotacion",
-    "paciencia-mercado",
-    "defensivo",
-    "nasdaq"
-   ],
-   "tgText": "CNBC sugiere acción tech defensiva en escenario de rotación del mercado. (Acción específica no identificada en titular).",
-   "xText": "Mercado pierde paciencia con tech: ¿cuál es la acción defensiva? CNBC identifica play. Detalle en enlace.",
-   "discordText": "**Tech en scrutinio del mercado**\n• CNBC identifica acción defensiva\n• Escenario: rotación fuera de mega-cap\n• (Ticker no en titular)",
-   "pushText": "CNBC apunta a tech defensiva vs rotación",
-   "importancia": 5,
-   "reaccion": null,
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "968273537",
-   "fecha": "2026-07-26T22:04:38.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/stock-market-today-live-updates.html",
-   "via": "CNBC",
-   "original": "Nasdaq futures rally ahead of big week of earnings, Fed meeting: Live updates",
-   "titulo": "Futuros Nasdaq avanzan en semana clave: reunión de Fed y temporada de earnings",
-   "resumen": "Los futuros del Nasdaq registran alzas mientras mercados se preparan para una semana de elevada importancia: decisión de política monetaria de la Reserva Federal y cierre de temporada de reportes de ganancias corporativas. El titular indica sentimiento alcista previo a estos eventos críticos.",
-   "analisis": {
-    "porque": "Decisión de Fed y resultados corporativos son catalizadores clave que definen dirección de mercados accionarios; futuros al alza sugieren posicionamiento optimista previo a anuncios.",
-    "queOcurrio": "Futuros Nasdaq avanzan días antes de reunión de Fed y publicación masiva de earnings empresariales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Bonos",
-    "USD",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "fed",
-    "reunion-politica-monetaria",
-    "earnings",
-    "nasdaq",
-    "mercados",
-    "volatilidad"
-   ],
-   "tgText": "🚀 BREAKING: Futuros Nasdaq avanzan en semana decisiva. Reunión de Fed y temporada de earnings corporativas definen volatilidad. Traders posicionados al alza.",
-   "xText": "🚀 Futuros Nasdaq en alza en semana de Fed + earnings masivos. Mercados apuestan por continuidad alcista. Volatilidad extrema esperada.",
-   "discordText": "**Semana crítica en mercados: Nasdaq futuros al alza**\n• Reunión de Reserva Federal en agenda\n• Cierre de temporada de earnings\n• Sentimiento alcista previo a catalizadores",
-   "pushText": "Nasdaq futuros avanzan: semana de Fed y earnings por delante",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Futuros Nasdaq y S&P500 reaccionan directamente; volatilidad del índice VIX comprimida antes del anuncio, expansión esperada después",
-    "despues": "Bonos y dólar responden a decisión de tasas de Fed; materias primas volátiles si decisión implica cambio de ciclo monetario",
-    "escenarios": "Traders vigilarán: (1) Dot plot de proyecciones de tasa terminal, (2) Tono de conferencia de Chair, (3) Resultados de Tech mega-cap (Amazon, Nvidia, etc.), (4) Guidance forward de S&P500",
-    "riesgos": "Sorpresa hawkish de Fed revierte posicionamiento alcista; earnings débiles pueden contradecir rally; volatilidad extrema en ambas direcciones es probable"
-   },
-   "macro": {
-    "nasdaq": "Potencial continuidad alcista si Fed señala pausa o cortes de tasas",
-    "sp500": "Directamente expuesto a decisión de Fed y earnings sorpresas",
-    "bonos": "Presión al alza en rendimientos si Fed mantiene tasas altas",
-    "dolar": "Presión alcista si Fed agresiva; bajista si señala flexibilización",
-    "vix": "Compresión pre-Fed, expansión post-anuncio esperada"
-   },
-   "updates": []
-  },
-  {
-   "id": "953271695",
-   "fecha": "2026-07-26T20:50:54.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/here-are-the-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
-   "via": "CNBC",
-   "original": "Here are the 3 big things we&apos;re watching in the stock market in the week ahead",
-   "titulo": "Tres grandes factores a vigilar en mercados accionarios en la semana próxima",
-   "resumen": "Preview de CNBC señala tres factores críticos que moverán mercados accionarios en semana venidera. El titular no especifica cuáles son los tres en el encabezado; probable cobertura de Fed, earnings corporativas y datos económicos, típicos en semanas de volatilidad.",
-   "analisis": {
-    "porque": "Identificación de catalizadores semanales es crítica para traders; artículo resume factores que generarán volatilidad y oportunidades de posicionamiento.",
-    "queOcurrio": "CNBC publica vista previa de semana con advertencia de tres factores clave a vigilar en acciones.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [],
-   "volatilidad": "media",
-   "categoria": "Breaking News",
-   "keywords": [
-    "mercados-accionarios",
-    "preview-semanal",
-    "volatilidad",
-    "catalizadores"
-   ],
-   "tgText": "📋 CNBC Preview: tres factores críticos en agenda para mercados accionarios semana próxima. Volatilidad esperada.",
-   "xText": "📋 Semana próxima: CNBC destaca tres factores críticos para mercados accionarios. Volatilidad en radar.",
-   "discordText": "**Preview semanal: mercados accionarios**\n• Tres factores clave a vigilar (detalles en cobertura completa)\n• Probable volatilidad en semana",
-   "pushText": "Tres factores clave para mercados accionarios en semana próxima",
-   "importancia": 5,
-   "reaccion": null,
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33532",
-   "fecha": "2026-07-25T17:33:24+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33532",
-   "via": "DeItaone",
-   "original": "TRUMP HALTS PLANNED IRAN STRIKES Trump reportedly ordered the U.S. military not to carry out planned strikes on Iran on Friday, despite having previously approved attack plans, according to Axios. The decision came hours after Oman-mediated talks resumed over reopening the Strait of Hormuz, with reports suggesting negotiations have made progress.",
-   "titulo": "Trump detiene ataques planeados contra Irán; negociaciones sobre Estrecho de Hormuz avanzan",
-   "resumen": "Trump ordenó al ejército estadounidense cancelar ataques planeados contra Irán el viernes, según Axios. La decisión llega horas después de que se reanudaron negociaciones mediadas por Omán para reapertura del Estrecho de Hormuz, con reportes sugiriendo progreso en las conversaciones. Eliminados riesgos de escalada inmediata.",
-   "analisis": {
-    "porque": "Reduce volatilidad geopolítica en una de las rutas comerciales más críticas globales. Afecta directamente precios de petróleo, seguros de envío y percepciones de riesgo de mercado. Señala posible apertura diplomática tras meses de tensión.",
-    "queOcurrio": "Tras haber aprobado previamente planes de ataque, Trump ordenó su cancelación. Coincide con avances en negociaciones sobre reapertura del Estrecho de Hormuz mediadas por Omán.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Axios"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "Bonos",
-    "Energía",
-    "Mercados Emergentes",
-    "EUR/USD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Trump",
-    "Estrecho de Hormuz",
-    "petróleo",
-    "negociaciones",
-    "geopolítica"
-   ],
-   "tgText": "🚨 TRUMP CANCELA ATAQUES A IRÁN: Ejército ordenado detener operaciones planeadas. Negociaciones sobre Hormuz avanzan con mediación de Omán. Petróleo y oro caen por alivio geopolítico.",
-   "xText": "ACTUALIZACIÓN: Trump cancela ataques a Irán tras avances en negociaciones sobre Hormuz. Reducción de riesgo geopolítico impulsa caída de petróleo y oro. Mercados respiran.",
-   "discordText": "**GEOPOLÍTICA - ACTUALIZACIÓN**\n• Trump cancela ataques planeados a Irán\n• Negociaciones sobre Hormuz muestran progreso\n• Alivio en mercados de riesgo: petróleo y oro caen\n• Fuente: Axios",
-   "pushText": "Trump cancela ataques a Irán; negociaciones avanzan",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent cae por reducción inmediata de riesgo de suministro. Oro disminuye al retirarse demanda de refugio seguro.",
-    "despues": "Rendimientos de Tesoros bajan (menor prima de riesgo). Dólar débil. Mercados emergentes (especialmente Latinoamérica) podrían apreciarse al mejorar ambiente de riesgo.",
-    "escenarios": "Traders vigilarán: (1) continuidad de negociaciones Omán-USA-Irán, (2) si se reactivan ataques o escalada, (3) comunicados de Irán rechazando términos, (4) impacto en flujos de petróleo.",
-    "riesgos": "Este es UPDATE de noticia previa. Riesgo: Trump cambia de decisión, Irán rechaza negociaciones, nueva escalada con mínimo aviso. Fuente Axios (no oficial militar)."
-   },
-   "macro": {
-    "dolar": "bajista a corto plazo por alivio geopolítico",
-    "oro": "bajista por salida de refugio seguro",
-    "petroleo": "bajista por reducción de prima de riesgo",
-    "bonos": "alcista (rendimientos bajan)",
-    "sp500": "alcista (menos incertidumbre)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-26T19:03:50+00:00",
-     "id": "33546",
-     "texto": "El portavoz del Ministerio de Relaciones Exteriores de Irán, Baghaei, confirmó que persisten los intercambios de mensajes entre Irán y Estados Unidos, así como la actividad de mediadores internacionales. Esta declaración llega tras la pausa de ataques estadounidenses y avances en negociaciones sobre el Estrecho de Hormuz.",
-     "tgUrl": "https://t.me/walterbloomberg/33546"
-    },
-    {
-     "fecha": "2026-07-26T17:43:22+00:00",
-     "id": "33545",
-     "texto": "El canciller iraní declaró que un ataque ucraniano a un buque comercial iraní en el Mar Caspio «no quedará sin respuesta» tras reportarse una explosión que dejó un marinero muerto y otro herido. Las conversaciones incluyeron a la jefa de política exterior de la UE y el canciller ruso. Escala la retórica mientras se negocian cuestiones en el Estrecho de Hormuz.",
-     "tgUrl": "https://t.me/walterbloomberg/33545"
-    },
-    {
-     "fecha": "2026-07-26T15:25:35+00:00",
-     "id": "33544",
-     "texto": "CBS News reporta que funcionarios omaníes viajaron a Teherán el viernes para negociaciones, factor que explica la pausa en bombardeos estadounidenses ordenada por Trump. Omán actúa como intermediario clave en esfuerzos de desescalada, aunque el titular no proporciona detalles de lo discutido o próximos pasos.",
-     "tgUrl": "https://t.me/walterbloomberg/33544"
-    },
-    {
-     "fecha": "2026-07-26T14:58:16+00:00",
-     "id": "33543",
-     "texto": "Funcionario iraní confirma a Reuters que Teherán mantendrá operaciones suspendidas mientras EE.UU. pause bombardeos. Tras 13 noches consecutivas de ataques, Washington lleva 2 días sin acciones militares. Irán también frenó represalias, pero mantiene postura de \"ataque por ataque\". Asesores de Trump citaron preocupaciones por reservas de defensa aérea. Omaníes viajan a Teherán para negociaciones. Tensión regional persiste con Houthis expandiendo ataques a infraestructura petrolera saudita.",
-     "tgUrl": "https://t.me/walterbloomberg/33543"
-    },
-    {
-     "fecha": "2026-07-26T13:16:14+00:00",
-     "id": "33542",
-     "texto": "Una fuente senior iraní expresó a Reuters que prevalece el escepticismo sobre la durabilidad de la pausa estadounidense, indicando que hay «más dudas que optimismo» en Teherán. Sugiere desconfianza sobre las intenciones finales de Washington y su compromiso real con negociaciones.",
-     "tgUrl": "https://t.me/walterbloomberg/33542"
-    },
-    {
-     "fecha": "2026-07-26T13:14:34+00:00",
-     "id": "33541",
-     "texto": "Una fuente senior iraní confirmó a Reuters que Irán seguirá sin lanzar ataques mientras Estados Unidos mantenga la pausa actual en operaciones militares. Condiciona la escalada a movimientos estadounidenses, vinculando directamente la contención mutua a negociaciones.",
-     "tgUrl": "https://t.me/walterbloomberg/33541"
-    },
-    {
-     "fecha": "2026-07-26T13:10:03+00:00",
-     "id": "33540",
-     "texto": "El embajador estadounidense ante la ONU Mike Waltz confirmó que la administración Trump está permitiendo que las negociaciones con Irán avancen. El comentario refleja la pausa en ataques anunciada previamente y sugiere disposición a diálogo diplomático, aunque sin comprometerse a un acuerdo definitivo.",
-     "tgUrl": "https://t.me/walterbloomberg/33540"
-    },
-    {
-     "fecha": "2026-07-26T12:23:57+00:00",
-     "id": "33539",
-     "texto": "Agencia Tasnim reporta explosión de petrolero tras impacto con mina naval en Estrecho de Hormuz. Suceso ocurre días después de que Trump detuviera ataques planeados contra Irán. Incidente refuerza riesgos geopolíticos en ruta crítica de 21% del comercio mundial de crudo. El titular no especifica bajas, daños estructurales ni si la mina fue colocada deliberadamente.",
-     "tgUrl": "https://t.me/walterbloomberg/33539"
-    },
-    {
-     "fecha": "2026-07-25T18:21:27+00:00",
-     "id": "33534",
-     "texto": "Presidente ucraniano Volodimir Zelenskiy afirma que vigilancia satelital rusa facilita y coordina ataques de Irán en Oriente Medio, implicando cooperación directa Moscú-Teherán en operaciones conjuntas más allá del teatro ucraniano.",
-     "tgUrl": "https://t.me/walterbloomberg/33534"
-    }
-   ],
-   "actualizado": "2026-07-26T19:03:50+00:00"
-  },
-  {
-   "id": "934469403",
-   "fecha": "2026-07-26T17:15:58.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/26/shein-reveals-key-financials-ahead-of-hong-kong-ipo.html",
-   "via": "CNBC",
-   "original": "Shein flags tariff hits after posting quarterly loss ahead of Hong Kong IPO",
-   "titulo": "Shein advierte sobre impacto de aranceles tras pérdida trimestral antes de IPO Hong Kong",
-   "resumen": "Plataforma de e-commerce Shein registró pérdida en trimestre reciente y advierte que aranceles comerciales impactarán negativamente sus márgenes. Noticia llega días antes de su IPO planificado en Hong Kong, generando dudas sobre valuación y proyecciones de rentabilidad.",
-   "analisis": {
-    "porque": "Shein es exponente de tensiones arancelarias globales (EE.UU.-China) en retail online; adviso de margen erosionado días antes de IPO sugiere sinceramiento forzado y riesgo de pricing de oferta pública.",
-    "queOcurrio": "Shein reporta pérdida trimestral y advierte sobre impacto de aranceles en márgenes operacionales previo a IPO en Hong Kong.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Hang Seng",
-    "Retail",
-    "CNY",
-    "Comercio"
-   ],
-   "sesgos": [
-    {
-     "activo": "Retail Online",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "shein",
-    "ipo",
-    "hong-kong",
-    "aranceles",
-    "retail",
-    "e-commerce",
-    "margenes"
-   ],
-   "tgText": "📉 Shein alerta sobre aranceles antes de IPO Hong Kong. Pérdida trimestral y presión de márgenes generan dudas sobre valuación de oferta pública.",
-   "xText": "📉 Shein: pérdida trimestral + advertencia arancelaría antes de IPO en Hong Kong. Riesgo de pricing agresivo en oferta por presión de márgenes.",
-   "discordText": "**Shein: resultados débiles y alerta arancelaría pre-IPO**\n• Pérdida trimestral reportada\n• Advertencia sobre impacto de aranceles en márgenes\n• IPO Hong Kong en calendario; valuación en riesgo",
-   "pushText": "Shein advierte sobre aranceles previo a IPO Hong Kong",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Hang Seng cae si IPO es repricing a la baja; pares de retail global (Amazon, Alibaba) pueden caer por contagio de concern arancelaría",
-    "despues": "Yuan presiona si tensiones arancelarias EE.UU-China se intensifican; commodities sensibles a demanda China afectados",
-    "escenarios": "Traders vigilan: (1) Reducción de precio de IPO respecto a valorizaciones pre-anuncio, (2) Cancelación total de oferta si rechazo de inversionistas, (3) Impacto cascada en other offshore tech IPOs de Hong Kong",
-    "riesgos": "Shein podría mantener IPO de todos modos con descuento; aranceles aún no implementados formalmente; mercado Hong Kong tiene appetite limitado para tech presionada"
-   },
-   "macro": {
-    "hang_seng": "Presión por IPO debilitada y tensiones arancelarias",
-    "retail": "Erosión de márgenes sector retail por guerra comercial",
-    "cny": "Presión bajista si China-EE.UU arranceles se expanden"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7646,6 +7611,16 @@
   "https://www.cnbc.com/select/chase-sapphire-preferred-100k-bonus-ending-soon-2026/",
   "https://www.cnbc.com/2026/07/29/starbucks-sbux-q3-2026-earnings.html",
   "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html",
-  "https://www.cnbc.com/2026/07/29/todd-blanche-attorney-general-trump-irs-audit-cornyn.html"
+  "https://www.cnbc.com/2026/07/29/todd-blanche-attorney-general-trump-irs-audit-cornyn.html",
+  "https://www.cnbc.com/2026/07/29/microsoft-aces-earnings-call-while-meta-frustration-grows-do-we-just-need-to-be-a-bit-more-patient.html",
+  "https://www.cnbc.com/2026/07/29/zuckerberg-metas-ai-capacity-dilemma-what-to-sell-vs-what-to-keep.html",
+  "https://www.cnbc.com/2026/07/29/kevin-warsh-fed-treasury-yields-inflation-credibility-interest-rates.html",
+  "https://www.cnbc.com/2026/07/30/india-meta-democracy-protest-boost-instagram-meta.html",
+  "https://www.cnbc.com/2026/07/30/china-ai-supplier-zhongji-innolight-hong-kong-debut.html",
+  "https://www.cnbc.com/2026/07/30/china-us-robot-humanoid-ban-trump-visit.html",
+  "https://www.cnbc.com/2026/07/30/us-iran-war-hormuz-centcom-trump-.html",
+  "https://www.cnbc.com/2026/07/29/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/07/30/europe-heatwaves-economy-wildfires-summer.html",
+  "https://www.cnbc.com/2026/07/30/samsung-q2-earnings-ai-chip-.html"
  ]
 }
