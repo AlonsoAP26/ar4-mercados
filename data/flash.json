@@ -1,7 +1,139 @@
 {
- "lastId": 33769,
- "actualizado": "2026-07-30T16:57:10.586Z",
+ "lastId": 33771,
+ "actualizado": "2026-07-30T18:17:30.318Z",
  "items": [
+  {
+   "id": "33771",
+   "fecha": "2026-07-30T17:39:02+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33771",
+   "via": "DeItaone",
+   "original": "IRAN'S ARMY SAYS IT LAUNCHED ATTACK ON U.S. ASSETS IN BAHRAIN'S SHEIKH ISSA BASE - STATE MEDIA",
+   "titulo": "Irán ataca base estadounidense en Baréin; escalada geopolítica eleva tensiones",
+   "resumen": "El ejército iraní confirmó haber lanzado un ataque contra activos estadounidenses en la base Sheikh Issa de Baréin, según medios estatales iraníes. El ataque representa una escalada en las tensiones entre Irán y EE.UU. en el Golfo Pérsico, región crítica para el suministro energético global. Esto ocurre en contexto de crecientes fricciones geopolíticas en Oriente Medio.",
+   "analisis": {
+    "porque": "Cualquier conflicto en el Golfo Pérsico impacta directamente precios de petróleo, spreads de riesgo, divisas de emergentes y apetito por activos de riesgo. El Estrecho de Ormuz controla ~30% del crudo mundial.",
+    "queOcurrio": "Irán reportó (vía medios estatales) un ataque a instalaciones estadounidenses en Baréin. El titular no especifica daños confirmados ni escala del ataque.",
+    "estado": "rumor",
+    "fuenteOriginal": "FARS (agencia estatal iraní) republicada por Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "DXY",
+    "EURUSD",
+    "Oro",
+    "S&P 500",
+    "NASDAQ",
+    "Bonos USA",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Golfo Pérsico",
+    "Baréin",
+    "conflicto",
+    "petróleo",
+    "riesgo geopolítico"
+   ],
+   "tgText": "🚨 ESCALADA: Ejército iraní anuncia ataque contra base USA en Baréin. Petróleo y oro suben; acciones ceden. Ormuz bajo presión.",
+   "xText": "🔴 BREAKING: Irán reporta ataque a activos USA en Baréin. Tensión Golfo Pérsico sube. Petróleo responde al alza; mercados evalúan impacto.",
+   "discordText": "**GEOPOLÍTICA - BREAKING**\n• Irán ataca base Sheikh Issa en Baréin\n• Confirmado por FARS (medios estatales)\n• Impacto: petróleo +, acciones -, oro +\n• Seguimiento en tiempo real",
+   "pushText": "⚠️ Irán ataca base USA en Baréin; petróleo sube",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent: suben por riesgo de disrupción en Ormuz y cadena de suministro. Spread de crudo OPEC amplía.",
+    "despues": "Oro sube (activo refugio). Dólar se fortalece (demanda de USD en crisis). S&P 500 cede (reducción de apetito por riesgo). Bonos USA: rendimientos pueden subir si hay expectativa de respuesta militar USA; pueden bajar si mercado teme recesión por shock energético.",
+    "escenarios": "Traders vigilarán: (1) confirmación de daños reales vs. comunicado propagandístico, (2) respuesta militar de EE.UU., (3) cierre del Estrecho de Ormuz (escenario worst-case), (4) reacción de Arabia Saudí y aliados del Golfo, (5) impacto en inflación si petróleo sube sostenidamente.",
+    "riesgos": "El titular proviene de medios estatales iraníes (FARS): alto riesgo de exageración o desinformación. Falta confirmación independiente de daños. No se especifica escala del ataque. Confusión inicial puede amplificar volatilidad."
+   },
+   "macro": {
+    "petroleo": "↑↑ Riesgo alcista por disrupción Golfo",
+    "oro": "↑ Demanda refugio",
+    "dolar": "↑ Búsqueda de seguridad",
+    "nasdaq": "↓ Reducción apetito riesgo",
+    "sp500": "↓ Incertidumbre geopolítica",
+    "bonos": "Volátil; depende de expectativa de acción USA"
+   },
+   "updates": []
+  },
+  {
+   "id": "33770",
+   "fecha": "2026-07-30T17:13:48+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33770",
+   "via": "DeItaone",
+   "original": "MUSK PLANS MAJOR MIDTERM SPENDING Elon Musk has reportedly authorized his super PAC to spend up to $120 million to support Republican candidates in this year’s US midterm elections. The funding, expected to total $100 million-$120 million, would target campaigns in at least eight states.",
+   "titulo": "Musk autoriza gasto de $100-120 millones en elecciones intermedias republicanas",
+   "resumen": "Elon Musk autorizó a su super PAC gastar entre $100 y $120 millones para apoyar candidatos republicanos en las elecciones intermedias de EE.UU. de 2026, enfocándose en al menos ocho estados. El anuncio refleja un compromiso político directo de Musk en el proceso electoral estadounidense.",
+   "analisis": {
+    "porque": "Musk controla Tesla, SpaceX, X y otras empresas con exposición regulatoria federal. Su gasto electoral señala alineación política que puede influir en políticas de impuestos, regulación ambiental, competencia tecnológica y defensa. Inversionistas monitorean riesgos de sesgo regulatorio.",
+    "queOcurrio": "Musk autorizó a su super PAC un gasto de $100-120 millones en apoyo a candidatos republicanos para elecciones intermedias 2026 en 8+ estados. El titular no especifica candidatos ni estrategia territorial exacta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (reportaje sobre decisión de Musk)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "TSLA",
+    "S&P 500",
+    "NASDAQ",
+    "Regulación tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "TSLA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Sector Tech",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Musk",
+    "elecciones",
+    "super PAC",
+    "campaña",
+    "política regulatoria",
+    "Tesla"
+   ],
+   "tgText": "📊 POLÍTICA: Musk autoriza $100-120M para campañas republicanas 2026 en 8 estados. Impacto potencial: regulación tech, impuestos corporativos.",
+   "xText": "💼 Musk autoriza $100-120M para candidatos republicanos en intermedias 2026. Inversionistas vigilan impacto en política regulatoria de tech.",
+   "discordText": "**EMPRESAS / POLÍTICA**\n• Musk autorizó $100-120M para super PAC republicano\n• Objetivo: 8+ estados, elecciones intermedias 2026\n• Implicación: riesgos regulatorios para TSLA y portafolio Musk",
+   "pushText": "💰 Musk gasta $100-120M en campaña republicana 2026",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "TSLA: neutro a corto plazo (mercado ya conoce postura política de Musk). Inversionistas evalúan riesgo de respuesta regulatoria demócrata a largo plazo.",
+    "despues": "Sector tech en general: vigilancia de políticas de impuestos corporativos, regulación de IA, competencia China (donde está expuesta Tesla). Bonos corporativos de tech pueden tocar sesgo bajista si hay expectativa de aumento de impuestos.",
+    "escenarios": "Traders vigilarán: (1) si el gasto influye en resultados intermedias 2026, (2) cambios en comisiones regulatorias bajo nuevo Congreso, (3) posibles represalias regulatorias si demócratas retienen control, (4) impacto en valuación de Tesla según percepción de riesgo político.",
+    "riesgos": "El gasto electoral no garantiza resultados. Musk ya ha financiado campañas antes; este anuncio es más continuación que novedad. Riesgo bajo de sorpresa en mercado."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33769",
    "fecha": "2026-07-30T15:28:07+00:00",
@@ -7484,137 +7616,6 @@
     "riesgos": "Riesgo de resistencia de clientes a nuevos modelos; riesgo de saturación competitiva (carriers copian); riesgo macroeconómico: demanda de viajes es procíclica y vulnerable a recesión"
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33614",
-   "fecha": "2026-07-27T16:46:01+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33614",
-   "via": "DeItaone",
-   "original": "MORGAN STANLEY RAISES ISM FORECAST Morgan Stanley lifted its July ISM Manufacturing PMI forecast to 53.8 from 53.3, citing stronger Texas factory activity, rising production, and solid new orders. The bank said longer delivery times and higher inventories point to stronger demand rather than supply chain disruptions, while price pressures eased despite higher energy costs.",
-   "titulo": "Morgan Stanley eleva PMI manufacturero de julio a 53,8; demanda más fuerte",
-   "resumen": "Morgan Stanley elevó su pronóstico del PMI Manufacturero de julio a 53,8 desde 53,3, citando actividad fabril más sólida en Texas, aumento de producción y órdenes firmes. El banco interpreta tiempos de entrega más largos e inventarios mayores como señal de demanda sólida, no disrupciones de cadena de suministro. Presiones de precio se moderaron a pesar de costos energéticos mayores.",
-   "analisis": {
-    "porque": "Datos de PMI manufacturero son leading indicator de actividad económica y salud empresarial. Revisión al alza y narrativa de demanda fuerte (no supply shock) es alcista para renta variable. Moderación de precios reduce temores inflacionarios.",
-    "queOcurrio": "Morgan Stanley revisó al alza su expectativa del PMI manufacturero de EE.UU. para julio, argumentando que indicadores muestran demanda resiliente en lugar de presiones de oferta. Presiones de precios menos intensas que en meses previos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Dólar",
-    "Bonos",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "pmi-manufactura",
-    "demanda",
-    "economia-usa",
-    "morgan-stanley",
-    "july-data"
-   ],
-   "tgText": "📊 Morgan Stanley eleva PMI Manufacturero julio a 53,8. Demanda sólida en Texas, producción y órdenes firmes. Presiones de precio se moderan.",
-   "xText": "Morgan Stanley sube pronóstico PMI manufactura julio a 53,8 (vs 53,3). Demanda fuerte, no disrupciones de supply chain. Presiones de precio moderadas a pesar de energía cara.",
-   "discordText": "**MORGAN STANLEY - PMI MANUFACTURA**\n• Eleva pronóstico a 53,8 (vs 53,3)\n• Demanda fuerte (Texas, producción, órdenes)\n• Sin disrupciones supply chain\n• Presiones de precio moderadas\n→ Economía más resiliente; alcista para equities",
-   "pushText": "Morgan Stanley sube PMI: economía muestra demanda fuerte",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Índices de equities (S&P500, NASDAQ) responden positivamente a datos de demanda sólida. Dólar podría fortalecerse (economía fuerte).",
-    "despues": "Bonos caen si mercado reprecifica crecimiento. Oro baja (dólar fuerte, riesgo-off menor).",
-    "escenarios": "Traders vigilan: (1) Si datos reales de PMI el 1 de agosto coinciden con revisión de Morgan Stanley, confirmación alcista. (2) Si resulta higher, mayor confianza en economía. (3) Si resulta lower, Goldman y otros advertidores sobre macro risks tendrían razón.",
-    "riesgos": "Riesgo de que Morgan Stanley sea demasiado optimista. Riesgo de que datos reales decepcionen. Riesgo de que interpretación de inventarios altos sea incorrecta (exceso, no demanda)."
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "sp500": "alcista",
-    "dolar": "alcista moderado",
-    "bonos": "bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33612",
-   "fecha": "2026-07-27T16:45:04+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33612",
-   "via": "DeItaone",
-   "original": "GOLDMAN WARNS MACRO RISKS RISING Goldman Sachs said rising oil volatility is shifting investor focus from company earnings to broader macro risks, including inflation and higher interest rates. The bank expects the Fed to hold rates this week but said markets are pricing a more hawkish outlook. Goldman also raised its U.S. and European default forecasts while remaining underweight credit.",
-   "titulo": "Goldman Sachs alerta: volatilidad del petróleo pivota riesgo hacia macro",
-   "resumen": "Goldman Sachs advierte que la volatilidad creciente del petróleo está desviando la atención de inversores desde earnings corporativos hacia riesgos macroeconómicos más amplios, incluyendo inflación y tasas de interés. El banco espera que la Fed mantenga tasas esta semana, pero señala que mercados están precificando un outlook más hawkish. También elevó previsiones de default.",
-   "analisis": {
-    "porque": "Cambio de foco de earnings a macroeconomía indica giro del sentimiento de mercado. Goldman señala riesgos de inflación y tasas más altas, lo que afecta valuaciones. Elevación de forecasts de default es bajista para credit.",
-    "queOcurrio": "Goldman Sachs publicó análisis indicando que volatilidad energética está generando rotación de capital desde valoraciones de compañías hacia macro hedging. Mantiene postura underweight en crédito.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "S&P500",
-    "NASDAQ",
-    "Bonos",
-    "Crédito",
-    "Volatilidad"
-   ],
-   "sesgos": [
-    {
-     "activo": "Crédito",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Acciones cyclicas",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Inflación",
-   "keywords": [
-    "goldman-sachs",
-    "volatilidad-petroleo",
-    "riesgo-macro",
-    "default",
-    "inflacion"
-   ],
-   "tgText": "⚠️ Goldman Sachs: volatilidad del petróleo pivota riesgo desde earnings a macroeconomía. Eleva forecasts de default, mantiene underweight en crédito.",
-   "xText": "Goldman: volatilidad petrolera desplaza foco de earnings a riesgos macro (inflación, tasas). Eleva previsiones de default, underweight en crédito. Fed mantiene tasas esta semana según banco.",
-   "discordText": "**GOLDMAN SACHS ALERTA**\n• Volatilidad petrolera pivota a riesgo macro\n• Enfoque desviado de earnings → inflación/tasas\n• Elevó forecasts de default\n• Underweight credit\n→ Presión en bonos y crédito",
-   "pushText": "Goldman alerta: volatilidad petrolera gira riesgos hacia macro",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Mercados de crédito (spreads se abren), bonos de alto yield caen, índices de volatilidad suben. EUR/USD sensible a inflación.",
-    "despues": "Rotación en equities hacia defensivas (servicios, utilidades). Petróleo sensible a datos de demanda.",
-    "escenarios": "Traders vigilan: (1) Si Fed mantiene pero señaliza futuro hawkish, widening de spreads. (2) Si inflación resurge, commodities suben más. (3) Si crédito corporativo se deteriora, flight-to-quality en treasuries.",
-    "riesgos": "Riesgo de que análisis de Goldman sea interpretado como \"recession warning\", generando pánico en equities. Riesgo de que volatilidad petrolera sea transitoria y análisis pierda relevancia."
-   },
-   "macro": {
-    "petroleo": "volátil",
-    "bonos": "spreads se abren (yields suben)",
-    "nasdaq": "bajista (sensible a tasas y crédito)",
-    "sp500": "presión"
-   },
    "updates": []
   }
  ],
