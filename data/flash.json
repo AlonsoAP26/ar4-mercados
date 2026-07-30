@@ -1,7 +1,121 @@
 {
  "lastId": 33723,
- "actualizado": "2026-07-30T05:23:16.423Z",
+ "actualizado": "2026-07-30T07:54:04.515Z",
  "items": [
+  {
+   "id": "917878295",
+   "fecha": "2026-07-30T07:17:34.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/rolls-royce-earnings-q2-stock-defense-ai.html",
+   "via": "CNBC",
+   "original": "Rolls-Royce jumps 4% as it sees boost from both the defense boom and AI data center buildout",
+   "titulo": "Rolls-Royce sube 4% impulsada por boom de defensa y centros IA",
+   "resumen": "Rolls-Royce se aprecia 4% tras señales positivas de crecimiento en dos frentes: aumento de gasto en defensa global y expansión de centros de datos para IA. El titular no especifica nuevos contratos ni cifras de ingresos esperados. Refuerza sesgo alcista sobre industriales de defensa y proveedores de infraestructura de IA.",
+   "analisis": {
+    "porque": "Rolls-Royce (RR. UK) es proveedor clave de motores de defensa y componentes para infraestructura industrial; boom de defensa + capex IA crea doble catalizador.",
+    "queOcurrio": "Acción de Rolls-Royce sube 4% en respuesta a perspectivas positivas en defensa e IA data centers.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "RR (Rolls-Royce)",
+    "Índices europeos",
+    "Defensa",
+    "Industriales",
+    "IA infrastructure"
+   ],
+   "sesgos": [
+    {
+     "activo": "RR",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Rolls-Royce",
+    "defensa",
+    "IA",
+    "centros-datos",
+    "industriales",
+    "infraestructura"
+   ],
+   "tgText": "🚀 Rolls-Royce +4%: boom de defensa + capex IA impulsan al alza. Proveedor clave de motores militares y componentes de infraestructura.",
+   "xText": "Rolls-Royce sube 4%: sesgo alcista por aumento de gasto en defensa y expansión de centros de IA. Doble catalizador de crecimiento #RR",
+   "discordText": "**Rolls-Royce: +4% por defensa + IA**\n• Aumento de gasto en defensa global\n• Expansión de centros de datos IA\n• Proveedor de motores militares\n• Doble impulso de ingresos esperado",
+   "pushText": "Rolls-Royce +4%: boom de defensa e IA data centers impulsan al alza",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "RR sube por confirmación de visibilidad de ingresos en defensa e infraestructura de IA",
+    "despues": "Otros industriales de defensa (BAE, Airbus) pueden revaluar; equities europeos si RR es proxy de tendencia",
+    "escenarios": "Traders buscan validación de capex IA vs deflación tecnológica; monitorean incremento de gasto militar por geopolítica",
+    "riesgos": "Ningún contrato específico mencionado; riesgo de ralentización de capex IA si ciclo de inversión revierte"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "927594693",
+   "fecha": "2026-07-30T06:56:06.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/us-treasury-yields-divided-fed-interest-rates-hold-steady-.html",
+   "via": "CNBC",
+   "original": "Treasury sell-off continues after divided Fed holds interest rates steady",
+   "titulo": "Venta de bonos continúa tras Fed dividida mantiene tasas sin cambios",
+   "resumen": "El mercado de bonos sigue bajo presión tras decisión de la Fed de mantener tasas de referencia sin cambios. Señala que mercado cuestiona compromiso de la Fed con control inflacionario. Continuación de cobertura sobre repricing de bonos y división de criterios en junta monetaria.",
+   "analisis": {
+    "porque": "Repricing de bonos indica que mercado prevé tasas más altas por incertidumbre; erosiona demanda de renta fija y presiona rendimientos al alza.",
+    "queOcurrio": "Venta de bonos continúa tras Fed mantener tasas sin claridad sobre próximas decisiones; mercado cuestiona credibilidad anti-inflacionaria.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "TLT",
+    "IEF",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "bonos",
+    "Fed",
+    "tasas",
+    "rendimientos",
+    "inflación",
+    "venta-masiva"
+   ],
+   "tgText": "📉 Venta de bonos continúa: mercado cuestiona compromiso de Fed contra inflación. Rendimientos suben tras decisión sin cambios.",
+   "xText": "Venta de bonos sigue tras Fed mantiene tasas: mercado duda de credibilidad anti-inflacionaria. Rendimientos USA presionados al alza #FedWatch",
+   "discordText": "**Venta de bonos: erosión de confianza**\n• Fed mantiene tasas sin claridad\n• Mercado presiona bonos a la baja\n• Rendimientos suben (riesgo de tasas futuras)\n• Cuestionamiento de credibilidad monetaria",
+   "pushText": "Venta de bonos continúa: mercado duda de Fed tras mantener tasas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Rendimientos de bonos suben; TLT, IEF caen por repricing",
+    "despues": "DXY puede fortalecerse por tasas más altas; acciones de renta baja sensibles",
+    "escenarios": "Traders monitorean curvatura de rendimientos; buscan señales de inflación persistente vs pausa monetaria; vigilancia sobre Q3 inflation data",
+    "riesgos": "Venta puede acelerarse si inflación reaparece; riesgo de crisis de liquidez en bonos largo plazo"
+   },
+   "macro": {
+    "bonos": "bajista",
+    "rendimientos": "alcista",
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
   {
    "id": 979069989,
    "fecha": "2026-07-30T02:52:30.000Z",
@@ -358,6 +472,291 @@
    "actualizado": "2026-07-30T00:55:21.000Z"
   },
   {
+   "id": "998022225",
+   "fecha": "2026-07-30T00:54:16.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/were-raising-our-price-target-on-starbucks-after-a-home-run-quarter-.html",
+   "via": "CNBC",
+   "original": "We&apos;re raising our price target on Starbucks after a home-run quarter",
+   "titulo": "Starbucks sube tras elevar price target tras trimestre de récord",
+   "resumen": "Analistas elevan precio objetivo de Starbucks post-resultados de trimestre fuerte. El titular no especifica qué analista ni cifras exactas de elevación. Actualización de cobertura posterior a reporte de earnings que mostró márgenes operacionales mejorados.",
+   "analisis": {
+    "porque": "Revisión alcista de precio objetivo refleja mejora fundamental en rentabilidad y demanda de café; señal de momentum para consumo discrecional.",
+    "queOcurrio": "Analista(s) elevan precio objetivo de Starbucks post-resultados de trimestre superior a expectativas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "SBUX",
+    "S&P500",
+    "Consumo Discrecional",
+    "XLY"
+   ],
+   "sesgos": [
+    {
+     "activo": "SBUX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Starbucks",
+    "SBUX",
+    "earnings",
+    "price-target",
+    "consumo-discrecional"
+   ],
+   "tgText": "☕ Starbucks sube: analistas elevan price target tras trimestre de récord. Márgenes operacionales y demanda de café impulsan al alza.",
+   "xText": "Starbucks recibe upgrades de precio objetivo tras trimestre fuerte. Márgenes mejorados y demand de café sustentan sesgo alcista #SBUX",
+   "discordText": "**Starbucks: elevación de precio objetivo**\n• Trimestre superior a expectativas\n• Márgenes operacionales mejorados\n• Demanda de café sostenida\n• Sesgo alcista confirmado por analistas",
+   "pushText": "Starbucks sube: precio objetivo elevado tras trimestre de récord",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "SBUX sube por confirmación de rentabilidad; consumo discrecional positivo",
+    "despues": "Sector retail y F&B revalúan; S&P500 gana por peso de consumo",
+    "escenarios": "Traders buscan si Starbucks logra mantener márgenes en contexto inflacionario; viabilidad de alza de precios vs deflación de café",
+    "riesgos": "Precio objetivo exacto no especificado; riesgo de reversión si condiciones de café o consumidor cambian"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "928028518",
+   "fecha": "2026-07-29T23:36:34.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html",
+   "via": "CNBC",
+   "original": "What a divided Fed means for investors",
+   "titulo": "Una Fed dividida: implicaciones para inversores",
+   "resumen": "CNBC analiza el impacto de divisiones internas en la Junta de Gobernadores de la Reserva Federal sobre las decisiones de inversión. Señala incertidumbre sobre trayectoria futura de tasas y credibilidad de comunicación de política monetaria. Continuación de cobertura sobre falta de consenso (referido a Warsh).",
+   "analisis": {
+    "porque": "Divisiones en la Fed erosionan credibilidad de forward guidance y crean ambigüedad sobre tasas futuras; afecta comportamiento de bonos, acciones y opciones.",
+    "queOcurrio": "Análisis editorial sobre fragmentación de criterios dentro de la Fed respecto a política monetaria.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "VIX",
+    "S&P500",
+    "NASDAQ",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "división",
+    "política-monetaria",
+    "credibilidad",
+    "tasas-futuras"
+   ],
+   "tgText": "⚠️ Fed dividida genera dudas sobre política monetaria. CNBC analiza implicaciones para inversores: incertidumbre sobre trayectoria de tasas.",
+   "xText": "Una Fed dividida: CNBC analiza cómo fragmentación interna afecta credibilidad de comunicación monetaria e incertidumbre de tasas futuras #FedWatch",
+   "discordText": "**Fed dividida: riesgo de credibilidad**\n• Fragmentación interna en decisiones monetarias\n• Debilita forward guidance\n• Impacto: bonos, opciones, curva de rendimientos\n• Incertidumbre sobre próximas subidas/bajadas",
+   "pushText": "Fed dividida: fragmentación interna genera incertidumbre sobre futuro de tasas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Mercado de bonos reprecia riesgo de tasas; volatilidad en curva de rendimientos",
+    "despues": "Equities ajustan valuaciones según escenarios de tasas; DXY reacciona a credibilidad del banco central",
+    "escenarios": "Traders monitorean próximas comunicaciones de gobernadores; buscan consenso en proyecciones de tasas; atención a postura hawkish vs dovish",
+    "riesgos": "Es análisis editorial sin datos nuevos; la división puede reflejar incertidumbre económica genuina o debilidad de comunicación de la Fed"
+   },
+   "macro": {
+    "bonos": "bajista",
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "926076712",
+   "fecha": "2026-07-29T23:09:42.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/29/openai-cfo-sarah-friar-tells-employees-arr-in-july-topped-all-of-q2.html",
+   "via": "CNBC",
+   "original": "OpenAI CFO Sarah Friar tells employees that annualized revenue in July topped all of Q2",
+   "titulo": "OpenAI anuncia ingresos anualizados en julio por encima de todo Q2",
+   "resumen": "Sarah Friar, CFO de OpenAI, informó a empleados que los ingresos anualizados en julio superaron la totalidad del segundo trimestre. Confirmado por comunicación interna de ejecutivo. Señala aceleración sustancial de monetización, aunque el titular no especifica cifras absolutas ni desglose por producto.",
+   "analisis": {
+    "porque": "OpenAI es protagonista central en carrera de IA global; aceleración de ingresos impacta valuación, inversión en infraestructura de chips y competencia con Microsoft/Google.",
+    "queOcurrio": "CFO comunica internamente que ingresos anualizados de julio superaron el total de Q2 (abril-junio).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC (citando comunicación interna OpenAI)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "Nvidia",
+    "Microsoft",
+    "Alphabet",
+    "Magnitud de capex en IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nvidia",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Microsoft",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "OpenAI",
+    "IA",
+    "ingresos",
+    "monetización",
+    "SaaS",
+    "tech"
+   ],
+   "tgText": "🚀 OpenAI acelera: ingresos anualizados en julio superan todo Q2. CFO Friar confirma monetización explosiva. Ventaja competitiva en carrera de IA.",
+   "xText": "OpenAI CFO: ingresos anualizados en julio ya superan todo Q2. Aceleración de monetización redefine valuación de líderes de IA #ChatGPT #Tech",
+   "discordText": "**OpenAI: Aceleración de ingresos confirmada**\n• CFO Sarah Friar comunica a empleados\n• Ingresos anualizados julio > Q2 completo\n• Señal de monetización acelerada en IA\n• Impacta: Nvidia, Microsoft, NASDAQ",
+   "pushText": "OpenAI: ingresos anualizados en julio superan todo Q2, confirma aceleración",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Nasdaq futures y acciones de IA (Nvidia, Microsoft) suben por confirmación de demanda sostenida en LLMs",
+    "despues": "Semiconductor, cloud computing y activos tech correlacionados; posibles ajustes alcistas en capex esperado",
+    "escenarios": "Traders buscan validar que auge de IA sigue financieramente viable; presión para Microsoft de mantener ventaja en OpenAI partnership; impulso a competidores de GPU",
+    "riesgos": "Cifras absolutas no especificadas; comparativa julio vs Q2 no indica si crecimiento es lineal o explosivo; competencia de China en modelos baratos podría frenar monetización"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33687",
+   "fecha": "2026-07-29T08:00:57+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33687",
+   "via": "DeItaone",
+   "original": "FED DECISION: WHAT TO WATCH The Fed is expected to keep rates at 3.5%-3.75%, but markets still see a roughly one-in-three chance of a surprise hike. The focus is on Chair Kevin Warsh's message as higher oil prices fuel inflation concerns despite softer June CPI. Morgan Stanley expects no hikes this year, while BofA believes Warsh could begin raising rates as soon as September.",
+   "titulo": "Fed mantiene tasas en 3,5%-3,75% pero Warsh genera incertidumbre sobre septiembre",
+   "resumen": "La Reserva Federal confirmó mantención de tasas de referencia en rango 3,5%-3,75%. Chair Kevin Warsh generó volatilidad al no descartar alzas futuras pese a inflación moderada. Mercados estiman probabilidad uno-en-tres de sorpresa alcista. Morgan Stanley proyecta cero alzas en 2026; BofA sugiere posibles subidas desde septiembre ante presión inflacionaria del petróleo.",
+   "analisis": {
+    "porque": "La decisión de la Fed afecta directamente valuaciones de activos riesgosos, tasas de rendimiento y expectativas inflacionarias. La ambigüedad de Warsh genera incertidumbre sobre trayectoria futura de política monetaria, impactando estrategias de treasuries, acciones y divisas.",
+    "queOcurrio": "Fed mantuvo tasas sin cambios pero el lenguaje del Chair Kevin Warsh no eliminó posibilidad de alzas futuras, contrario a expectativas de mercado de continuidad de pausa. Divergencia entre proyecciones de Morgan Stanley (sin alzas 2026) y BofA (posibles alzas sept) refleja incertidumbre sobre inflación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "Oro",
+    "Petróleo"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "fed-decision",
+    "tasas-interes",
+    "kevin-warsh",
+    "politica-monetaria",
+    "inflacion"
+   ],
+   "tgText": "🚨 Fed mantiene tasas pero Warsh no descarta alzas futuras. Probabilidad uno-en-tres de sorpresa alcista. Divergencia: Morgan Stanley vs BofA en proyecciones de septiembre. Volatilidad extrema en treasuries y renta variable.",
+   "xText": "Fed pausa tasas en 3,5%-3,75% pero Chair Warsh genera incertidumbre. 33% de probabilidad de alza sorpresa. Morgan Stanley: sin alzas 2026. BofA: posibles subidas en septiembre. Mercados en máxima volatilidad.",
+   "discordText": "**Fed Decision Impact**\n• Tasas: 3,5%-3,75% (sin cambios)\n• Chair Warsh abre puerta a futuras alzas\n• Prob. alza sorpresa: ~33%\n• Debate: septiembre decisivo\n• Volatilidad: EXTREMA",
+   "pushText": "Fed pausa pero Warsh mantiene incertidumbre sobre septiembre",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Bonos y Treasuries de largo plazo reaccionan primero al cambio de expectativas de tasas. Baja en precios de bonos (suba de yields) si mercado interpreta como hawkish.",
+    "despues": "S&P500 y NASDAQ sufren presión por valuaciones más altas de tasas. Dólar fortalecido (DXY al alza). Materias primas como oro se benefician por debilidad esperada de activos riesgosos.",
+    "escenarios": "Traders vigilarán: (1) dots plot de proyecciones de septiembre en próxima rueda de prensa; (2) lecturas CPI julio para confirmar presión inflacionaria; (3) si petróleo sostiene alzas inflacionarias; (4) comunicaciones de Warsh en próximas semanas sobre trayectoria.",
+    "riesgos": "Titular interpreta 'mensaje' de Warsh que no es oficial. Si Fed en comunicado posterior aclara posición más dovish, sesgo bajista en DXY se revierten. Riesgo de falsa señal sobre intenciones futuras."
+   },
+   "macro": {
+    "dolar": "Alcista por expectativa de tasas más altas",
+    "oro": "Bajista por fortaleza de dólar",
+    "nasdaq": "Bajista por tasa de descuento más alta",
+    "dow": "Bajista por incertidumbre de tasas",
+    "sp500": "Bajista moderado",
+    "bitcoin": "Bajista si dólar sube sostenidamente",
+    "ethereum": null,
+    "bonos": "Bajista (yields suben)",
+    "petroleo": "Neutral (Fed no controla oferta)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-29T22:54:09.000Z",
+     "id": "967366665",
+     "texto": "CNBC sintetiza los principales puntos de la última decisión de política monetaria de la Fed. El titular no especifica detalles concretos sobre cambios de tasas, proyecciones de inflación o señales sobre futuras decisiones. Actualización de cobertura sobre la reunión ya reportada.",
+     "tgUrl": "https://www.cnbc.com/2026/07/29/here-are-the-five-big-takeaways-from-this-weeks-fed-meeting.html"
+    },
+    {
+     "fecha": "2026-07-29T18:00:50+00:00",
+     "id": "33722",
+     "texto": "La Reserva Federal dejó las tasas sin cambios en 3,50%–3,75% con una votación 9–3. Los gobernadores Hammack, Kashkari y Logan disintieron a favor de una alza de 25 puntos básicos. El comunicado señala inflación aún por encima del 2% objetivo y economía en expansión sólida, pero la disidencia interna creciente sobre política monetaria más restrictiva marca un quiebre significativo.",
+     "tgUrl": "https://t.me/walterbloomberg/33722"
+    },
+    {
+     "fecha": "2026-07-29T18:00:17+00:00",
+     "id": "33721",
+     "texto": "La Reserva Federal confirmó la decisión de mantener las tasas de interés sin cambios en su rango objetivo. Esta actualización cierra el ciclo de decisiones de política monetaria tras semanas de incertidumbre sobre el timing de futuras reducciones. El titular no especifica detalles adicionales sobre forward guidance o proyecciones para septiembre.",
+     "tgUrl": "https://t.me/walterbloomberg/33721"
+    },
+    {
+     "fecha": "2026-07-29T08:22:17+00:00",
+     "id": "33690",
+     "texto": "Mercados de predicción (Kalshi) cotizan 77% de probabilidad de que la Fed mantenga tasas hoy; 23% de alza sorpresa de 25 puntos base. Citadel Securities anticipa que el presidente Kevin Warsh subirá tasas para reforzar credibilidad antiinflacionaria y señalar el fin de la era de forward guidance. División clara entre trader y operadores institucionales sobre intención de Warsh.",
+     "tgUrl": "https://t.me/walterbloomberg/33690"
+    }
+   ],
+   "actualizado": "2026-07-29T22:54:09.000Z"
+  },
+  {
    "id": 930836156,
    "fecha": "2026-07-29T21:26:17.000Z",
    "tgUrl": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html",
@@ -680,106 +1079,6 @@
    "reaccion": null,
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33687",
-   "fecha": "2026-07-29T08:00:57+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33687",
-   "via": "DeItaone",
-   "original": "FED DECISION: WHAT TO WATCH The Fed is expected to keep rates at 3.5%-3.75%, but markets still see a roughly one-in-three chance of a surprise hike. The focus is on Chair Kevin Warsh's message as higher oil prices fuel inflation concerns despite softer June CPI. Morgan Stanley expects no hikes this year, while BofA believes Warsh could begin raising rates as soon as September.",
-   "titulo": "Fed mantiene tasas en 3,5%-3,75% pero Warsh genera incertidumbre sobre septiembre",
-   "resumen": "La Reserva Federal confirmó mantención de tasas de referencia en rango 3,5%-3,75%. Chair Kevin Warsh generó volatilidad al no descartar alzas futuras pese a inflación moderada. Mercados estiman probabilidad uno-en-tres de sorpresa alcista. Morgan Stanley proyecta cero alzas en 2026; BofA sugiere posibles subidas desde septiembre ante presión inflacionaria del petróleo.",
-   "analisis": {
-    "porque": "La decisión de la Fed afecta directamente valuaciones de activos riesgosos, tasas de rendimiento y expectativas inflacionarias. La ambigüedad de Warsh genera incertidumbre sobre trayectoria futura de política monetaria, impactando estrategias de treasuries, acciones y divisas.",
-    "queOcurrio": "Fed mantuvo tasas sin cambios pero el lenguaje del Chair Kevin Warsh no eliminó posibilidad de alzas futuras, contrario a expectativas de mercado de continuidad de pausa. Divergencia entre proyecciones de Morgan Stanley (sin alzas 2026) y BofA (posibles alzas sept) refleja incertidumbre sobre inflación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "DXY",
-    "Bonos",
-    "Rendimientos USA",
-    "Oro",
-    "Petróleo"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "fed-decision",
-    "tasas-interes",
-    "kevin-warsh",
-    "politica-monetaria",
-    "inflacion"
-   ],
-   "tgText": "🚨 Fed mantiene tasas pero Warsh no descarta alzas futuras. Probabilidad uno-en-tres de sorpresa alcista. Divergencia: Morgan Stanley vs BofA en proyecciones de septiembre. Volatilidad extrema en treasuries y renta variable.",
-   "xText": "Fed pausa tasas en 3,5%-3,75% pero Chair Warsh genera incertidumbre. 33% de probabilidad de alza sorpresa. Morgan Stanley: sin alzas 2026. BofA: posibles subidas en septiembre. Mercados en máxima volatilidad.",
-   "discordText": "**Fed Decision Impact**\n• Tasas: 3,5%-3,75% (sin cambios)\n• Chair Warsh abre puerta a futuras alzas\n• Prob. alza sorpresa: ~33%\n• Debate: septiembre decisivo\n• Volatilidad: EXTREMA",
-   "pushText": "Fed pausa pero Warsh mantiene incertidumbre sobre septiembre",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Bonos y Treasuries de largo plazo reaccionan primero al cambio de expectativas de tasas. Baja en precios de bonos (suba de yields) si mercado interpreta como hawkish.",
-    "despues": "S&P500 y NASDAQ sufren presión por valuaciones más altas de tasas. Dólar fortalecido (DXY al alza). Materias primas como oro se benefician por debilidad esperada de activos riesgosos.",
-    "escenarios": "Traders vigilarán: (1) dots plot de proyecciones de septiembre en próxima rueda de prensa; (2) lecturas CPI julio para confirmar presión inflacionaria; (3) si petróleo sostiene alzas inflacionarias; (4) comunicaciones de Warsh en próximas semanas sobre trayectoria.",
-    "riesgos": "Titular interpreta 'mensaje' de Warsh que no es oficial. Si Fed en comunicado posterior aclara posición más dovish, sesgo bajista en DXY se revierten. Riesgo de falsa señal sobre intenciones futuras."
-   },
-   "macro": {
-    "dolar": "Alcista por expectativa de tasas más altas",
-    "oro": "Bajista por fortaleza de dólar",
-    "nasdaq": "Bajista por tasa de descuento más alta",
-    "dow": "Bajista por incertidumbre de tasas",
-    "sp500": "Bajista moderado",
-    "bitcoin": "Bajista si dólar sube sostenidamente",
-    "ethereum": null,
-    "bonos": "Bajista (yields suben)",
-    "petroleo": "Neutral (Fed no controla oferta)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-29T18:00:50+00:00",
-     "id": "33722",
-     "texto": "La Reserva Federal dejó las tasas sin cambios en 3,50%–3,75% con una votación 9–3. Los gobernadores Hammack, Kashkari y Logan disintieron a favor de una alza de 25 puntos básicos. El comunicado señala inflación aún por encima del 2% objetivo y economía en expansión sólida, pero la disidencia interna creciente sobre política monetaria más restrictiva marca un quiebre significativo.",
-     "tgUrl": "https://t.me/walterbloomberg/33722"
-    },
-    {
-     "fecha": "2026-07-29T18:00:17+00:00",
-     "id": "33721",
-     "texto": "La Reserva Federal confirmó la decisión de mantener las tasas de interés sin cambios en su rango objetivo. Esta actualización cierra el ciclo de decisiones de política monetaria tras semanas de incertidumbre sobre el timing de futuras reducciones. El titular no especifica detalles adicionales sobre forward guidance o proyecciones para septiembre.",
-     "tgUrl": "https://t.me/walterbloomberg/33721"
-    },
-    {
-     "fecha": "2026-07-29T08:22:17+00:00",
-     "id": "33690",
-     "texto": "Mercados de predicción (Kalshi) cotizan 77% de probabilidad de que la Fed mantenga tasas hoy; 23% de alza sorpresa de 25 puntos base. Citadel Securities anticipa que el presidente Kevin Warsh subirá tasas para reforzar credibilidad antiinflacionaria y señalar el fin de la era de forward guidance. División clara entre trader y operadores institucionales sobre intención de Warsh.",
-     "tgUrl": "https://t.me/walterbloomberg/33690"
-    }
-   ],
-   "actualizado": "2026-07-29T18:00:50+00:00"
   },
   {
    "id": "33720",
@@ -7172,320 +7471,6 @@
     "nasdaq": "neutral"
    },
    "updates": []
-  },
-  {
-   "id": "987033363",
-   "fecha": "2026-07-27T03:29:54.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/cxmt-china-market-debut-chipmaker-ipo.html",
-   "via": "CNBC",
-   "original": "China memory chipmaker CXMT skyrockets 500% in blockbuster Shanghai debut",
-   "titulo": "Fabricante de memoria CXMT se dispara 500% en debut espectacular en Shanghái",
-   "resumen": "La empresa china de chips de memoria CXMT sube 500% en su primer día de cotización en la bolsa de Shanghái. Este es un movimiento extraordinario típico de debuts IPO especulativos en mercados chinos. El titular no especifica valuación, capitalización o contexto de demanda de chips a nivel global.",
-   "analisis": {
-    "porque": "Refleja especulación inversora en sector semiconductores chino e inversión estratégica estatal. Señal de apetito por riesgo en mercados chinos y confianza en cadena de suministro doméstica de semiconductores.",
-    "queOcurrio": "CXMT debutó en bolsa de Shanghái con rally de 500%, movimiento extremo que sugiere fuerte demanda especulativa de inversores.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Mercado Chino",
-    "Semiconductores",
-    "CXMT",
-    "Índice Shanghai",
-    "Acciones Tecnología China"
-   ],
-   "sesgos": [
-    {
-     "activo": "Semiconductores Chinos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Acciones Tecnología China",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "CXMT",
-    "IPO",
-    "Shanghái",
-    "semiconductores",
-    "memoria-chip",
-    "rally"
-   ],
-   "tgText": "🚀 CXMT sube 500% en debut en bolsa de Shanghái. Espectacular rally en fabricante de chips de memoria. Refleja apetito especulativo en sector semiconductores chino.",
-   "xText": "🚀 Fabricante chino de chips CXMT sube 500% en debut en Shanghái. Rally espectacular refleja fuerte demanda especulativa en sector de semiconductores.",
-   "discordText": "**IPO Explosiva: CXMT +500%**\n• Debut espectacular en bolsa de Shanghái\n• Fabricante de chips de memoria\n• Rally refleja especulación en semiconductores chinos",
-   "pushText": "CXMT explota +500% en debut en Shanghái",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Acciones de semiconductores chinas y sector tech en Shanghái reaccionan positivamente. CXMT establece nuevos máximos.",
-    "despues": "Valuaciones del sector tecnológico chino en bolsas globales; competidores internacionales de chips pueden enfrentar presión.",
-    "escenarios": "Traders monitorean si movimiento es burbuja especulativa o señal legítima de demanda de semiconductores. Vigilancia de bloqueos occidentales a tecnología china y capacidades reales de CXMT.",
-    "riesgos": "Rally de 500% es claramente especulativo; corrección severa es probable. Titulo no verifica ingresos, utilidades o fundamentos. Riesgo regulatorio geopolítico significativo."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "954917769",
-   "fecha": "2026-07-27T03:29:11.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/indonesia-central-bank-governor-perry-warjiyo-steps-down.html",
-   "via": "CNBC",
-   "original": "Indonesia central bank governor Perry Warjiyo steps down in surprise move",
-   "titulo": "Gobernador del banco central de Indonesia renuncia sorpresivamente",
-   "resumen": "Perry Warjiyo, gobernador del banco central de Indonesia (Bank Indonesia), renuncia de forma inesperada. El titular no proporciona razones de la renuncia, contexto político, ni planes de sucesión. La salida sorpresiva de autoridad monetaria central puede generar incertidumbre sobre continuidad de política.",
-   "analisis": {
-    "porque": "Cambio en liderazgo de banco central genera incertidumbre sobre dirección de política monetaria. Afecta credibilidad institucional, valuación de activos indonesios y divisas emergentes. Potencial volatilidad en mercados locales.",
-    "queOcurrio": "Perry Warjiyo, gobernador del Bank Indonesia, presentó su renuncia de forma sorpresiva sin contexto claro en el titular.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "IDR",
-    "Bolsa Indonesia",
-    "Bonos Indonesia",
-    "Mercados Emergentes",
-    "ASEAN"
-   ],
-   "sesgos": [
-    {
-     "activo": "IDR",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos Indonesia",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "Indonesia",
-    "banco-central",
-    "Perry-Warjiyo",
-    "renuncia",
-    "política-monetaria"
-   ],
-   "tgText": "🇮🇩 Gobernador del Banco de Indonesia Perry Warjiyo renuncia sorpresivamente. Genera incertidumbre sobre continuidad de política monetaria y credibilidad institucional.",
-   "xText": "🇮🇩 Perry Warjiyo renuncia como gobernador de Bank Indonesia en movimiento sorpresivo. Potencial volatilidad en activos indonesios.",
-   "discordText": "**Indonesia: Renuncia Sorpresiva en BC**\n• Perry Warjiyo deja gobernatura del Bank Indonesia\n• Contexto de renuncia no especificado\n• Incertidumbre sobre política monetaria futura",
-   "pushText": "Indonesia: gobernador del BC renuncia sorpresivamente",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Rupia indonesa (IDR) tiende a debilitarse por incertidumbre institucional. Bonos soberanos pueden enfrentar presión de ventas.",
-    "despues": "Acciones en bolsa de Yakarta. Otros mercados emergentes pueden experimentar efecto contagio si renuncia refleja crisis política.",
-    "escenarios": "Traders monitorean anuncio oficial de sucesor. Evaluación de continuidad de política antiinflacionaria. Análisis de estabilidad política indonesia. Riesgo de deterioro en credibilidad monetaria.",
-    "riesgos": "Título no explica motivos de renuncia; podría haber contexto político no revelado. Especulación sobre crisis institucional es probable."
-   },
-   "macro": {
-    "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "983015583",
-   "fecha": "2026-07-27T02:02:04.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/china-industrial-profit-growth-exports-oil-drops.html",
-   "via": "CNBC",
-   "original": "China industrial profit growth slows again in June as retreating oil prices sap earnings lift",
-   "titulo": "Crecimiento de ganancias industriales de China se desacelera en junio por caída de precios del petróleo",
-   "resumen": "Las ganancias industriales de China ralentizan su crecimiento en junio conforme los precios del petróleo retroceden, erosionando los márgenes de beneficio empresarial. El titular no especifica cifras exactas ni comparaciones interanuales. Este dato refleja presiones deflacionarias y debilidad en la demanda global de energía que afecta directamente a productores chinos.",
-   "analisis": {
-    "porque": "China es motor económico global; ralentización de ganancias industriales señala desaceleración económica y presiona activos de riesgo. Afecta cotización de empresas exportadoras y demanda de materias primas.",
-    "queOcurrio": "Las ganancias industriales chinas muestran desaceleración en junio debido a caída de precios del crudo, lo que reduce ingresos de sectores energéticos y dependientes.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "China HDR",
-    "Petróleo",
-    "Cobre",
-    "Dólar Australiano",
-    "Índices Asiáticos",
-    "Empresas chinas exportadoras"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Acciones Chinas",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar Australiano",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "China",
-    "ganancias-industriales",
-    "petróleo",
-    "desaceleración",
-    "márgenes"
-   ],
-   "tgText": "📊 China: desaceleración de ganancias industriales en junio. Caída de precios del petróleo erosiona márgenes de beneficio empresarial. Señal de debilidad económica global.",
-   "xText": "📊 Ganancias industriales de China se desaceleran en junio por caída del petróleo. Mayor evidencia de presiones deflacionarias y debilidad en demanda global.",
-   "discordText": "**China: Ganancias Industriales Ralentizan**\n• Junio muestra desaceleración en crecimiento de beneficios\n• Caída de precios del petróleo principal factor\n• Impacta márgenes de empresas exportadoras",
-   "pushText": "China: ganancias industriales desaceleran en junio",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent) reacciona directamente; caída presiona ingresos de sector energético chino",
-    "despues": "Acciones de empresas chinas exportadoras, índices asiáticos, divisas vinculadas a China (AUD, NZD)",
-    "escenarios": "Traders monitorean si desaceleración china se profundiza. Vigilancia de próximos datos de manufactura PMI. Evaluación de impacto en demanda de commodities.",
-    "riesgos": "Titular no proporciona cifras exactas; podría tratarse de ciclo normal de ganancias. Impacto limitado si se interpreta como corrección técnica."
-   },
-   "macro": {
-    "petroleo": "bajista",
-    "nasdaq": "neutro",
-    "sp500": "neutro",
-    "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": 999290167,
-   "fecha": "2026-07-27T00:34:22.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
-   "via": "CNBC",
-   "original": "Singapore tightens monetary policy as rising oil prices rekindle inflation risk",
-   "titulo": "Singapur tightens monetary policy as rising oil prices rekindle inflation risk",
-   "resumen": "Banco Central de Singapur endurece política monetaria para frenar inflación derivada de precios de petróleo al alza. No se especifican cambios de tasas, timing, ni impacto esperado en SGD o activos asiáticos. Conexión con caída de petróleo reportada en título 905321019 genera contradicción (petróleo cae vs sube).",
-   "analisis": {
-    "porque": "Acción de bancos centrales asiáticos afecta flujos de carry trade, valuación de monedas, demanda de activos de riesgo. Singapur es hub financiero. Señal de inflación global.",
-    "queOcurrio": "MAS (Monetary Authority of Singapore) endurece stance monetario ante riesgo inflacionario de petróleo caro.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Oro",
-    "Petróleo",
-    "SGD",
-    "Emergentes",
-    "Bonos",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "SGD",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Emergentes",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "singapur-mas",
-    "politica-monetaria",
-    "inflacion",
-    "petroleo",
-    "carry-trade"
-   ],
-   "tgText": "MAS endurece política monetaria ante riesgo inflacionario por petróleo caro. Impacto en carry trade y valuación de emergentes.",
-   "xText": "Singapur aprieta monetaria: inflación por petróleo caro en alerta. MAS se prepara ante riesgos de precios de energía. Impacto carry trade. #AsiaFX",
-   "discordText": "**Singapur endurece política monetaria**\n• Banco Central (MAS) aprieta stance\n• Razón: riesgo inflacionario de petróleo\n• Impacto: SGD alcista, emergentes bajistas\n• Presión en carry trade",
-   "pushText": "Singapur aprieta política monetaria por inflación",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "SGD se aprecia (carry trade menos atractivo), flujos salen de emergentes asiáticos.",
-    "despues": "Oro presiona (política tightening), petróleo presiona más (demanda asia menor), bonos asiáticos se reprician con tasas más altas esperadas.",
-    "escenarios": "Traders vigilan: (1) magnitud de tightening (cuántos bps), (2) si otros bancos centrales asiáticos siguen (PBOC, BoT), (3) reacción de carry traders que financiaban en SGD.",
-    "riesgos": "Contradicción potencial: si petróleo cae (como reporta 905321019), urgencia inflacionaria se reduce. Credibilidad de acción MAS depende de datos de inflación posteriores."
-   },
-   "macro": {
-    "sgd": "Alcista",
-    "oro": "Bajista",
-    "petroleo": "Presión adicional a baja",
-    "emergentes": "Bajistas"
-   },
-   "updates": []
-  },
-  {
-   "id": 905321019,
-   "fecha": "2026-07-26T23:58:00.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/oil-price-wti-brent-slide-as-iran-reportedly-may-halt-attacks.html",
-   "via": "CNBC",
-   "original": "Oil slides 5% as Iran reportedly signals halt to attacks if U.S. pause holds",
-   "titulo": "Petróleo cae 5% tras señales de Irán de pausar ataques si EE.UU. mantiene tregua",
-   "resumen": "El crudo se desplomó 5% después de que Irán señalara disposición a detener ataques si Estados Unidos mantiene la pausa en operaciones militares. La noticia representa una desescalada en tensiones geopolíticas que ha presionado los precios energéticos. El titular no especifica el nivel de precios actuales ni diferencia entre tipos de crudo.",
-   "analisis": {
-    "porque": "El petróleo es activo macro crítico; caídas de 5% afectan inflación, márgenes corporativos y curvas de rendimiento. Desescalada geopolítica reduce prima de riesgo en energía.",
-    "queOcurrio": "Irán reportadamente señaló disponibilidad para pausar ataques bajo condición de que EE.UU. mantenga tregua. Esto sigue a tensiones previas documentadas en feed.",
-    "estado": "rumor",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "DXY",
-    "S&P500",
-    "Oro",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "irán",
-    "petróleo",
-    "tensiones-geopolíticas",
-    "desescalada",
-    "energía"
-   ],
-   "tgText": "📉 Petróleo cae 5% tras señales de Irán de pausar ataques si tregua de EE.UU. se mantiene. Desescalada geopolítica reduce prima de riesgo en crudo.",
-   "xText": "Petróleo desplomado 5% tras señales de desescalada Irán-EE.UU. Irán reporta disposición a pausar ataques si se mantiene tregua. Impacto en inflación y márgenes corporativos. #Energía #Mercados",
-   "discordText": "**Petróleo cae 5% por señales de tregua Irán-EE.UU.**\n• Irán señala disponibilidad de pausar ataques\n• Condición: mantención de pausa estadounidense\n• Desescalada reduce prima de riesgo en energía\n• Impacto directo en inflación esperada",
-   "pushText": "Petróleo -5% por desescalada Irán-EE.UU.",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo cae primero por reducción de riesgo geopolítico; traders de energía ajustan posiciones cortas.",
-    "despues": "Oro cede (sesgo risk-on), dólar se debilita (menos demanda de refugio), S&P500 sube (menos inflación esperada, márgenes mejorados).",
-    "escenarios": "Traders vigilan: (1) confirmación oficial de tregua Irán-EE.UU., (2) si caída de crudo presiona inflación esperada para Fed, (3) reacciones de petrolers (Exxon, Chevron, etc.).",
-    "riesgos": "Estado 'rumor': escalada repentina podría revertir rápidamente. Volatilidad extrema en futuros de crudo. Comunicación oficial Irán suele ser no-verificable."
-   },
-   "macro": {
-    "petroleo": "Bajista 5% inmediato",
-    "oro": "Bajista por risk-on",
-    "dolar": "Bajista (menos demanda refugio)",
-    "sp500": "Alcista (inflación menor, márgenes)",
-    "bonos": "Alcista (rendimientos caen con inflación esperada menor)",
-    "nasdaq": "Alcista"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7621,6 +7606,16 @@
   "https://www.cnbc.com/2026/07/30/us-iran-war-hormuz-centcom-trump-.html",
   "https://www.cnbc.com/2026/07/29/stock-market-today-live-updates.html",
   "https://www.cnbc.com/2026/07/30/europe-heatwaves-economy-wildfires-summer.html",
-  "https://www.cnbc.com/2026/07/30/samsung-q2-earnings-ai-chip-.html"
+  "https://www.cnbc.com/2026/07/30/samsung-q2-earnings-ai-chip-.html",
+  "https://www.cnbc.com/2026/07/29/here-are-the-five-big-takeaways-from-this-weeks-fed-meeting.html",
+  "https://www.cnbc.com/2026/07/29/openai-cfo-sarah-friar-tells-employees-arr-in-july-topped-all-of-q2.html",
+  "https://www.cnbc.com/2026/07/30/us-wants-asia-to-use-its-ai-but-china-dominates-cheaper-models.html",
+  "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html",
+  "https://www.cnbc.com/2026/07/29/spacex-memphis-ai-data-centers-face-house-energy-committee-demands.html",
+  "https://www.cnbc.com/2026/07/29/were-raising-our-price-target-on-starbucks-after-a-home-run-quarter-.html",
+  "https://www.cnbc.com/2026/07/30/strait-hormuz-drone-shipping-risks.html",
+  "https://www.cnbc.com/2026/07/30/us-treasury-yields-divided-fed-interest-rates-hold-steady-.html",
+  "https://www.cnbc.com/2026/07/30/rolls-royce-earnings-q2-stock-defense-ai.html",
+  "https://www.cnbc.com/2026/07/30/shell-2q-earnings-iran-war-oil.html"
  ]
 }
