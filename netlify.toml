@@ -7,6 +7,13 @@
   # cada pocos minutos sin gastar minutos de build de Netlify.
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!data/flash.json'"
 
+# El sitemap se genera al vuelo desde los JSON publicados: cada noticia nueva
+# entra al mapa sola, sin regenerar archivos.
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/.netlify/functions/sitemap"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

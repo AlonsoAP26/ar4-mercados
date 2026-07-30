@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /_s.html
+Disallow: /preview-avatares.html
+
+Sitemap: https://ar4mercados.com/sitemap.xml
