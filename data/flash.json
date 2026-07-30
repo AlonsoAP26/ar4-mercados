@@ -1,7 +1,412 @@
 {
- "lastId": 33748,
- "actualizado": "2026-07-30T11:30:51.471Z",
+ "lastId": 33760,
+ "actualizado": "2026-07-30T13:10:38.325Z",
  "items": [
+  {
+   "id": 33757,
+   "fecha": "2026-07-30T12:31:36+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33757",
+   "via": "DeItaone",
+   "original": "US GDP +1.5% RATE IN 2Q; CONSENSUS +1.8%",
+   "titulo": "PIB de EE.UU. en Q2 crece 1,5%; desaceleración vs. estimaciones debilita narrativa",
+   "resumen": "El PIB de EE.UU. en el segundo trimestre avanzó 1,5% tasa anualizada, por debajo de la estimación de 1,8%. La desaceleración respecto a Q1 sugiere que el crecimiento económico pierde momentum, debilitando argumentos contra recortes de tasas de la Fed y elevando preocupaciones sobre un posible escenario de estancamiento económico con inflación persistente.",
+   "analisis": {
+    "porque": "El crecimiento del PIB es indicador fundamental de salud económica y justificación para niveles de tasas. Un crecimiento por debajo de expectativas refuerza urgencia de flexibilización de política y reduce riesgos de sobrecalentamiento inflacionario.",
+    "queOcurrio": "Estimado avance anualizado del PIB para Q2 publicado en 1,5%, significativamente por debajo del consenso de 1,8%.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Oficina de Análisis Económico (BEA) de EE.UU. vía Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "NASDAQ-100",
+    "Rendimientos USA",
+    "USD",
+    "Oro",
+    "Bonos Tesoro"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Datos Económicos|FED",
+   "keywords": [
+    "pib-usa",
+    "crecimiento-económico",
+    "q2",
+    "desaceleración",
+    "fed-policy"
+   ],
+   "tgText": "📊 PIB Q2 EE.UU.: 1,5% anualizado (vs. 1,8% est.). Crecimiento desacelera; preocupaciones sobre momentum económico acentúan caso para recortes de tasas Fed.",
+   "xText": "🇺🇸 PIB Q2 cae a 1,5% vs. 1,8% est. Desaceleración económica eleva urgencia de flexibilización de tasas de la Fed.",
+   "discordText": "**PIB EE.UU. Q2 - Sorpresa a la Baja**\n• Tasa anualizada: 1,5% (vs. 1,8% est.)\n• Impacto: Desaceleración del crecimiento\n→ Refuerza narrativa de recortes Fed próximos",
+   "pushText": "PIB Q2 en 1,5% vs. 1,8% est.; crecimiento desacelera",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Equities (S&P 500, NASDAQ) volatilidad mixta: cortoplacistas ven debilidad económica (bajista), pero largoplazistas ven menores tasas futuras (alcista). USD cae por expectativa de tasas más bajas.",
+    "despues": "Rendimientos USA caen (bonos suben); oro sube por USD débil y demanda de activos seguros. Volatilidad del VIX podría elevarse por incertidumbre sobre recesión.",
+    "escenarios": "Traders vigilan componentes de PIB (consumo, inversión) en reporte detallado. Si debilidad es estructural (menor consumo) vs. temporal, riesgos recesivos suben. Fed probablemente acelera cronograma de recortes. Mercado precisa si es \"softening\" manejable o inicio de contracción.",
+    "riesgos": "Datos preliminares pueden ser revisados. Volatilidad elevada esperada; rumores de recesión podrían exagerar movimientos. Si componentes de gasto sorprenden a la baja, preocupación por desempleo creciente escalará."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "nasdaq": "mixto",
+    "dow": "mixto",
+    "sp500": "mixto",
+    "bonos": "alcista",
+    "oro": "alcista",
+    "petroleo": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": 33756,
+   "fecha": "2026-07-30T12:30:58+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33756",
+   "via": "DeItaone",
+   "original": "*US JUNE PCE PRICE INDEX FALLS 0.1% M/M; EST. -0.1% *US JUNE PCE PRICE INDEX RISES 3.7% Y/Y; EST. +3.7% *US JUNE CORE PCE PRICE INDEX RISES 0.1% M/M; EST. +0.2% *US JUNE CORE PCE PRICE INDEX RISES 3.3% Y/Y; EST. +3.3%",
+   "titulo": "PCE de junio cae en línea; inflación de núcleo se modera según esperado",
+   "resumen": "El índice PCE de precios al consumidor de junio cayó 0,1% mensual (coincidiendo consenso), mientras la tasa interanual se mantuvo en 3,7%. El PCE de núcleo subió 0,1% mensual (vs. +0,2% estimado) y 3,3% interanual (en línea). Los datos sugieren inflación subyacente moderándose gradualmente, fortaleciendo caso para futuros recortes de tasas de la Fed.",
+   "analisis": {
+    "porque": "El PCE es el indicador de inflación preferido de la Fed para decisiones de política monetaria. Una lectura más templada de núcleo refuerza narrativa de inflación controlada y allana camino a reducciones de tasas sin riesgo de reaceleración inflacionaria.",
+    "queOcurrio": "Datos de PCE de junio publicados con sorpresa a la baja en componente mensual de núcleo; tasa interanual alineada a expectativas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Oficina de Análisis Económico (BEA) de EE.UU. vía Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Rendimientos USA 10Y",
+    "USD",
+    "S&P 500",
+    "NASDAQ-100",
+    "Oro",
+    "Bonos Tesoro"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Inflación|Datos Económicos|FED",
+   "keywords": [
+    "pce-junio",
+    "inflación-usa",
+    "núcleo-inflacionario",
+    "fed-policy",
+    "tasas"
+   ],
+   "tgText": "📈 PCE junio: -0,1% MoM (est. -0,1%) | 3,7% YoY (est. 3,7%). Núcleo +0,1% MoM (vs. +0,2% est.). Inflación subyacente moderándose; caso para recortes de tasas se fortalece.",
+   "xText": "🇺🇸 PCE junio alineado; núcleo sorprende a la baja (+0,1% vs. +0,2% est.). Inflación moderándose: escenario favorable para próximos recortes de tasas Fed.",
+   "discordText": "**PCE Junio - Inflación Controlada**\n• PCE: -0,1% MoM / 3,7% YoY (en línea)\n• Núcleo: +0,1% MoM (vs. +0,2% est.) / 3,3% YoY\n→ Presiones subyacentes ceden; fortalece caso para reducción de tasas",
+   "pushText": "PCE de junio modera; inflación de núcleo sorprende a la baja",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Rendimientos USA 10Y caen: mercado reprecia menor costo de capital futuro con Fed más flexible; USD débil por tasas reales bajas.",
+    "despues": "Equities (S&P 500, NASDAQ, tech) suben por menor costo de financiamiento; oro sube por USD más débil y expectativa de tasas bajas.",
+    "escenarios": "Traders vigilan si Fed se compromete a recorte en septiembre vs. postergar. Reducción de tasas es casi priced in; sorpresas alcistas o recaída en inflación podrían extender esperas. Curva de rendimientos se aplana más.",
+    "riesgos": "Datos de junio ya antiguos; energía y alimentación pueden ser volátiles. Si componentes de servicios repuntan en julio/agosto, podría frenar optimismo de recortes."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "bonos": "alcista",
+    "oro": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 33754,
+   "fecha": "2026-07-30T12:30:21+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33754",
+   "via": "DeItaone",
+   "original": "US JOBLESS CLAIMS ROSE TO 197,000 JUL 25 WEEK (CONSENSUS 200,000)",
+   "titulo": "Solicitudes de empleo en EE.UU. sorprenden al baja; mercado laboral sigue templado",
+   "resumen": "Las solicitudes de desempleo en EE.UU. para la semana del 25 de julio fueron 197.000, por debajo de las 200.000 estimadas. El dato sugiere un mercado laboral resiliente pero sin sobrecalentamiento, alineándose con narrativa de debilitamiento gradual que permite futuras reducciones de tasas de la Fed sin acelerar deflación.",
+   "analisis": {
+    "porque": "Las solicitudes de empleo son indicador adelantado clave del mercado laboral y presiones salariales. Una lectura por debajo de consenso reduce presión inflacionaria esperada y abre espacio para política monetaria más acomodaticia.",
+    "queOcurrio": "Datos semanales de jobless claims publicados en 197.000 vs. 200.000 consenso, mostrando solidez laboral moderada.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Departamento de Trabajo de EE.UU. vía Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "USD",
+    "S&P 500",
+    "NASDAQ-100",
+    "Bonos USA",
+    "Rendimientos USA 10Y",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "USD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empleo|Datos Económicos|FED",
+   "keywords": [
+    "jobless-claims",
+    "empleo-USA",
+    "mercado-laboral",
+    "fed-policy",
+    "inflación"
+   ],
+   "tgText": "💼 Jobless claims EE.UU.: 197K (vs. 200K est.). Mercado laboral resiliente sin sobrecalentamiento, reforzando caso para flexibilización de tasas de la Fed.",
+   "xText": "🇺🇸 Solicitudes de empleo en 197K (-3K vs. est.). Mercado laboral mantiene equilibrio: sólido pero sin presiones inflacionarias excesivas.",
+   "discordText": "**Jobless Claims EE.UU. - Sorpresa a la Baja**\n• Semana 25 julio: 197K (vs. 200K est.)\n• Lectura: Mercado laboral resiliente sin sobrecalentamiento\n→ Abre espacio para futuro recorte de tasas Fed",
+   "pushText": "Jobless claims en 197K sorprenden a la baja; mercado laboral resiliente",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "USD debilitado: datos débiles de empleo relativo vs. expectativas impulsan apuestas a recortes más próximos de la Fed; bonos sube (rendimientos caen).",
+    "despues": "Equities (S&P 500, NASDAQ) alcistas por menor costo de capital y expectativa de crecimiento sin inflación; oro sube por USD más débil y tasas reales bajas.",
+    "escenarios": "Traders vigilan si esta tendencia de solicitudes moderadas persiste o es ruido semanal. Fed requiere confirmación con nóminas (payroll) no agropecuarias en próximo reporte mensual. Riesgo: si desempleo sigue subiendo, refuerza caso de recortes urgentes.",
+    "riesgos": "Datos semanales muy volátiles; ajustes estacionales pueden distorsionar. No indica cambios en nóminas masivas ni desempleo general; requiere confirmación en reportes de NFP."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "bitcoin": "alcista",
+    "bonos": "alcista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": 33753,
+   "fecha": "2026-07-30T12:14:17+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33753",
+   "via": "DeItaone",
+   "original": "CHINESE EVS GAIN GROUND IN ARGENTINA Chinese EV makers are rapidly expanding in Argentina as President Javier Milei's tariff-free import policy boosts sales despite closer ties with the US. BYD has become a top-10 car brand less than a year after entering the market, while Chinese imports hit a five-year high. Lower-cost Chinese EVs are helping reduce car prices and reshape Argentina's auto market",
+   "titulo": "Vehículos eléctricos chinos ganan terreno en Argentina bajo política de Milei",
+   "resumen": "Fabricantes de vehículos eléctricos chinos (BYD, otros) se expanden rápidamente en Argentina bajo la política de importaciones libre de aranceles del presidente Javier Milei. BYD alcanzó estatus de marca top-10 en menos de un año. Importaciones chinas de EV alcanzan máximo de cinco años. EVs más económicos reducen precios de autos y transforman mercado automotor argentino.",
+   "analisis": {
+    "porque": "Desplazamiento de fabricantes tradicionales (europeos, estadounidenses) por competidores chinos más baratos en Argentina señala tendencia de captura de mercados latinoamericanos por China. Impacta valuación de fabricantes tradicionales y dinámicas de comercio regional.",
+    "queOcurrio": "Reportes de penetración acelerada de marcas EV chinas (BYD destacada) en mercado argentino bajo régimen arancelario abierto, con importaciones chinas en máximos de 5 años.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Reportajes de mercado (CNBC, medios de trading) vía Bloomberg"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "BYD",
+    "Fabricantes automotores europeos",
+    "Tesla",
+    "Mercados emergentes Latam"
+   ],
+   "sesgos": [
+    {
+     "activo": "BYD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Fabricantes tradicionales",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas|Geopolítica Comercial",
+   "keywords": [
+    "china-ev",
+    "argentina",
+    "milei",
+    "importaciones",
+    "competencia-automotriz"
+   ],
+   "tgText": "🇨🇳🚗 BYD y EV chinos lideran en Argentina bajo política arancelaria abierta de Milei. Importaciones chinas en máximo de 5 años; desplazan competidores tradicionales.",
+   "xText": "🇦🇷 Vehículos eléctricos chinos conquistan Argentina: BYD es top-10 en <1 año. Importaciones chinas aceleran bajo política libre de aranceles.",
+   "discordText": "**Expansión de EV Chinos en Latam**\n• BYD: Top-10 en Argentina en <1 año\n• Importaciones chinas: Máximo 5 años\n• Impacto: Reconfiguración de mercado automotor regional",
+   "pushText": "BYD lidera mercado de EV en Argentina; competidores tradicionales retroceden",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "BYD (Hong Kong 1211, Shanghai 002594) sube en bolsa por prueba de expansión regional; no impacto inmediato significativo en EE.UU. o Europa.",
+    "despues": "Fabricantes europeos (Volkswagen, Renault) y estadounidenses (Tesla) vigilados por exposición a Latam. Riesgo de márgenes comprimidos en región por competencia de precios.",
+    "escenarios": "Traders vigilan si expansión china en Latam se acelera en otros países tras éxito argentino bajo gobierno pro-mercado pero alineado con EE.UU. Riesgo de represalias comerciales de EE.UU. contra importaciones chinas a Latam.",
+    "riesgos": "Noticia regional de bajo impacto global inmediato. Riesgo: si Milei endurece postura arancelaria o EE.UU. presiona, dinámicas pueden revertirse rápidamente."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33752,
+   "fecha": "2026-07-30T12:10:18+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33752",
+   "via": "DeItaone",
+   "original": "HORMUZ BOTTLENECK PERSISTS Crude exports from the Middle East Gulf remain constrained despite a four-day pause in US strikes on Iran, according to Kpler. Vessel clearances stayed near recent lows, while Gulf loading activity fell by more than half. Kpler said security risks, higher war-risk insurance and Iranian interdictions continue to restrict exports, with ship-to-ship transfers easing storage",
+   "titulo": "Cuello de botella en Ormuz persiste; exportaciones de crudo del Golfo restringidas",
+   "resumen": "A pesar de pausa de cuatro días en ataques estadounidenses contra Irán, las exportaciones de crudo desde el Golfo Pérsico permanecen constreñidas según Kpler. Riesgos de seguridad, mayor costo de seguros de guerra e interdiciones iraníes continúan limitando oferta. Transferencias buque a buque alivian almacenamiento pero no potencian suministro global.",
+   "analisis": {
+    "porque": "La persistencia de restricciones en exportaciones del Golfo mantiene presiones sobre oferta global de crudo, soportando precios de petróleo y energía. Impacta costos de transporte, margen de refinerías y competitividad de exportadores energéticos latinoamericanos.",
+    "queOcurrio": "Analista Kpler reporta que actividad de carga en Golfo cayó más de 50% y autorizaciones de buques permanecen en mínimos recientes; seguridad geopolítica sigue siendo barrera clave.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Kpler (servicio de inteligencia logística) vía Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "Energía (XLE)",
+    "Dólar",
+    "Mercados emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Energía",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas|Geopolítica",
+   "keywords": [
+    "petróleo-golfo",
+    "ormuz",
+    "irán-usa",
+    "oferta-crudo",
+    "geopolítica"
+   ],
+   "tgText": "🛢️ Cuello de botella Ormuz persiste: exportaciones de crudo del Golfo constreñidas a pesar de tregua de 4 días. Riesgos de seguridad e interdiciones mantienen oferta bajo presión.",
+   "xText": "⚠️ Bloqueo Ormuz continúa: exportaciones de Golfo limitadas por seguridad e interdiciones iraníes. Presiones alcistas sobre precios de petróleo permanecen.",
+   "discordText": "**Crisis Ormuz - Oferta Constreñida**\n• Carga del Golfo: -50% actividad\n• Factores: Riesgos de seguridad, seguros de guerra, interdiciones\n→ Presiones alcistas sobre crudo; impacta costos globales",
+   "pushText": "Ormuz: restricciones de petróleo persisten a pesar de tregua",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo (WTI, Brent) soportado en torno a $75-80: oferta limitada bajo techo de precios; productores del Golfo operan con márgenes elevados pero exportan menos volumen.",
+    "despues": "Energía (XLE, $XOM, $CVX) se beneficia de márgenes; inversores en mercados emergentes exportadores (México, Brasil) ven soporte de precios. Inflación esperada de energía frena optimismo de recortes de tasas.",
+    "escenarios": "Traders vigilan: (1) escalada geopolítica que podría cerrar Ormuz (riesgo muy alto); (2) resolución diplomática EE.UU.-Irán (riesgo menor inmediato); (3) recorrido estacional de verano que típicamente soporta demanda. Futuros de petróleo volátiles a noticias de conflicto.",
+    "riesgos": "Escalada inesperada podría enviar crudo a $90+. Resolución rápida podría ceder $10-15. Titular no especifica si el cuello de botella es temporal o estructural."
+   },
+   "macro": {
+    "petroleo": "alcista",
+    "dolar": "neutral",
+    "energia": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 33750,
+   "fecha": "2026-07-30T12:02:53+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33750",
+   "via": "DeItaone",
+   "original": "*GERMAN JULY CPI RISES TO 2.8% Y/Y VS 2.7% EST *GERMAN JULY CPI INCREASES 0.8% M/M VS 0.7% EST *GERMANY'S EU-HARMONISED CPI HOLDS AT 2.8% Y/Y, MATCHES EST *GERMANY'S EU-HARMONISED CPI RISES 0.9% M/M VS 0.8% EST",
+   "titulo": "IPC alemán sube más de lo esperado en julio; inflación de núcleo acelera",
+   "resumen": "La inflación alemana de julio alcanzó 2,8% interanual (vs. 2,7% estimado) y 0,8% mensual (vs. 0,7% esperado). El IPC armonizado de la UE se mantuvo en 2,8% interanual pero subió 0,9% mensual versus 0,8% estimado. Los datos sugieren presiones inflacionarias persistentes en la mayor economía europea, complicando perspectivas de futuros recortes de tasas del BCE.",
+   "analisis": {
+    "porque": "La inflación alemana superior a expectativas refuerza argumentos hawkish en el BCE y reduce probabilidad de recortes agresivos. Afecta directamente valuaciones de deuda y expectativas de política monetaria en la eurozona.",
+    "queOcurrio": "Datos oficiales de IPC alemán publicados con sorpresa alcista tanto en tasa interanual como mensual, incluyendo componente armonizado UE.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Agencia de estadísticas alemana (Destatis) vía Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "EUR/USD",
+    "EURIBOR",
+    "Bonos alemanes",
+    "DAX",
+    "Rendimientos eurozona"
+   ],
+   "sesgos": [
+    {
+     "activo": "EUR/USD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos alemanes",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DAX",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Inflación|Bancos Centrales",
+   "keywords": [
+    "inflación-Alemania",
+    "IPC-julio",
+    "BCE",
+    "presiones-inflacionarias",
+    "eurozona"
+   ],
+   "tgText": "📊 IPC Alemania: 2,8% YoY (vs. 2,7% est.) y +0,8% MoM (vs. +0,7% est.). Presiones inflacionarias persisten en eurozona, complicando perspectivas del BCE para recortes de tasas.",
+   "xText": "🇩🇪 Inflación alemana supera expectativas: 2,8% interanual (+0,1pp vs. est.) y +0,8% mensual. Presiones alcistas desafían planes de flexibilización del BCE.",
+   "discordText": "**IPC Alemania - Sorpresa Alcista**\n• Interanual: 2,8% (vs. 2,7% est.)\n• Mensual: +0,8% (vs. +0,7% est.)\n• IPC armonizado UE: 2,8% YoY / +0,9% MoM\n→ Dificulta recortes de tasas del BCE",
+   "pushText": "IPC Alemania al 2,8% supera expectativas; presiones inflacionarias persisten",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "EUR/USD bajista: inversores reprueban perspectivas de política monetaria menos acomodaticia de lo esperado, impulsando fortaleza del USD relativo.",
+    "despues": "Bonos alemanes y eurozona a 10 años: rendimientos suben (precios caen); DAX y acciones financieras europeas bajo presión; spreads periféricos podrían ampliarse.",
+    "escenarios": "Traders vigilan señales del BCE sobre timing de próximos recortes; eventual sorpresa inflacionaria persistente podría requerir mantención de tasas más tiempo. Riesgo de repricing de curva de rendimientos.",
+    "riesgos": "Datos de inflación pueden ser volátiles mes a mes; datos de energía y componentes transitorios no desglosados en titular. Reacción podría ser más moderada si mercados ya anticipaban presiones."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "euro": "bajista",
+    "nasdaq": "neutral-bajista",
+    "dow": "neutral-bajista",
+    "sp500": "neutral-bajista",
+    "bonos": "bajista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": "33748",
    "fecha": "2026-07-30T11:04:02+00:00",
@@ -7182,359 +7587,6 @@
    "macro": {
     "nasdaq": "Bajista -0,5% a -1% potencial",
     "dolar": "Alcista por risk-off"
-   },
-   "updates": []
-  },
-  {
-   "id": "33585",
-   "fecha": "2026-07-27T13:31:49+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33585",
-   "via": "DeItaone",
-   "original": "AIRLINES JUMP AS OIL PLUNGES U.S. airline stocks rallied after crude oil prices fell more than 7%, boosting expectations for lower fuel costs. JetBlue surged 6.5%, while United and Alaska Air gained 4% each, American Airlines rose 3.7%, Delta added 3.5%, and Southwest climbed 2.4%. The S&P Composite 1500 Passenger Airlines Index advanced 3.5%.",
-   "titulo": "Aerolíneas repuntan 3.5% con caída del petróleo superior a 7%",
-   "resumen": "Las acciones del sector aeronáutico estadounidense registraron ganancias significativas tras la caída de los precios del crudo por encima del 7%. JetBlue lideró con avance de 6,5%, seguido por United y Alaska Air con 4% cada una. El índice S&P Composite 1500 de aerolíneas comerciales avanzó 3,5%. La caída del petróleo reduce expectativas de costos de combustible más elevados.",
-   "analisis": {
-    "porque": "Petróleo más barato mejora márgenes de las aerolíneas directamente. Es un catalizador de corto plazo para el sector y señala presiones sobre commodity que pueden impactar inflación y expectativas de política monetaria.",
-    "queOcurrio": "El crudo cayó más de 7% generando rally defensivo en aerolíneas, con ganancias concentradas en las de mayor consumo de combustible.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Aerolíneas USA",
-    "S&P 500",
-    "Energía"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Aerolíneas",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "aerolíneas",
-    "petróleo",
-    "crudo",
-    "costos-combustible",
-    "sector-transporte"
-   ],
-   "tgText": "🛫 Aerolíneas suben 3,5% con caída de petróleo >7%. JetBlue +6,5%, United +4%, Alaska Air +4%. Presión bajista en crudo por geopolítica y demanda débil.",
-   "xText": "Aerolíneas disparan con crudo en caída >7%. JetBlue +6,5%, United/Alaska +4% cada una. S&P Composite Airlines índice +3,5%. Margen de combustible mejora significativamente.",
-   "discordText": "**Sector Aerolíneas en Rally**\n• JetBlue: +6,5%\n• United & Alaska Air: +4% c/u\n• American: +3,7%\n• S&P Composite Airlines: +3,5%\n→ Catalizador: Petróleo -7% reduce costo de combustible",
-   "pushText": "Aerolíneas suben 3,5% tras caída de petróleo >7%",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Sector aerolíneas (Transporte) sube inmediatamente por mejora de márgenes de combustible. Efecto directo en P&L trimestral.",
-    "despues": "S&P 500 presionado al alza (efecto composición). Energy stocks presionados a la baja. Índices defensivos ganan tracción.",
-    "escenarios": "Traders vigilan si la caída de crudo persiste (implicaría shock de oferta geopolítico vs. debilidad de demanda). Impacto en CRB, expectativas de inflación y posición Fed.",
-    "riesgos": "Caída de petróleo podría revertirse rápidamente si tensiones Irán-Hormuz se intensifican (ver titulares 33586, 33600). Ganancia podría ser temporal."
-   },
-   "macro": {
-    "petroleo": "Bajista -7%, impacta precios finales",
-    "sp500": "Alcista leve por composición y margen de ganancias",
-    "nasdaq": "Neutral a alcista leve"
-   },
-   "updates": []
-  },
-  {
-   "id": "33581",
-   "fecha": "2026-07-27T13:20:01+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33581",
-   "via": "DeItaone",
-   "original": "BITCOIN RISES AS TENSIONS EASE Bitcoin gained 0.5% as risk sentiment improved after President Trump delayed a major escalation against Iran, raising hopes for renewed diplomacy. Investors are also watching progress on the U.S. Clarity Act, while Strategy reported no new Bitcoin purchases last week.",
-   "titulo": "Bitcoin sube 0.5% tras alivio de tensiones geopolíticas con Irán y avances en Clarity Act",
-   "resumen": "Bitcoin ganó 0.5% tras mejora en sentimiento de riesgo por pausa de Trump en ataques a Irán, esperanza en diplomacia renovada. Inversores monitorizan progreso en U.S. Clarity Act. Strategy reportó sin compras netas de Bitcoin la semana pasada.",
-   "analisis": {
-    "porque": "Vincula Bitcoin a sentimiento de riesgo global y narrativa regulatoria positiva (Clarity Act); movimiento modesto pero señaliza monitoreo institucional de factores macropolíticos.",
-    "queOcurrio": "Bitcoin subió 0.5% en contexto de alivio geopolítico (pausa Irán-Trump) y expectativas de regulación favorable de criptomonedas en EE.UU.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (movimientos mercado + análisis)"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Bitcoin",
-    "Criptomonedas",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bitcoin",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Riesgo-on",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "bitcoin-rally",
-    "geopolítica-cripto",
-    "clarity-act",
-    "riesgo-sentimiento",
-    "regulación-usa"
-   ],
-   "tgText": "₿ Bitcoin sube 0.5% tras alivio geopolítico Irán-Trump y avances en Clarity Act. Strategy sin compras netas BTC semana pasada. Sentimiento mixto.",
-   "xText": "₿ BTC +0.5% tras pausa Trump-Irán y esperanza en Clarity Act. Sin embargo, Strategy reportó sin compras netas BTC. Sentimiento cautamente positivo. #Bitcoin #Cripto",
-   "discordText": "**Bitcoin: Ganancia modesta por alivio geopolítico**\n• Movimiento: +0.5%\n• Drivers: Pausa Irán-Trump, Clarity Act progress\n• Dato: Strategy sin compras netas BTC semana pasada\n• Sentimiento: Cautamente alcista en riesgo-on",
-   "pushText": "Bitcoin sube 0.5% tras alivio de tensiones Irán; monitorean Clarity Act",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "Bitcoin reacciona a sentimiento de riesgo global; caída de VIX / alivio geopolítico favorece alza",
-    "despues": "Criptomonedas altcoins podrían subir si Bitcoin crea momentum; equities riesgo-on podrían beneficiarse paralelamente",
-    "escenarios": "Traders vigilarán: (1) si Clarity Act avanza en Senado (markup esperado próximas semanas); (2) si geopolítica se estabiliza o escalada resurge; (3) datos macroeconómicos que afecten sentiment riesgo",
-    "riesgos": "Riesgo de que avance en Clarity Act sea modesto o dilatado; riesgo de nueva escalada geopolítica revierte alivio; riesgo de que Strategy u otros grandes inversores aún sin compras (señal de cautela)"
-   },
-   "macro": {
-    "bitcoin": "alcista moderado por riesgo-on",
-    "dxy": "presión bajista si riesgo-on continúa",
-    "bonos": "neutral a alcista si alivio geopolítico persiste"
-   },
-   "updates": []
-  },
-  {
-   "id": "33574",
-   "fecha": "2026-07-27T13:01:53+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33574",
-   "via": "DeItaone",
-   "original": "$NVDA - *NVIDIA MAKES INVESTMENT IN SAFE SUPERINTELLIGENCE; NO TERMS",
-   "titulo": "Nvidia invierte en Safe Superintelligence; términos no divulgados",
-   "resumen": "Nvidia realizó inversión en Safe Superintelligence (SSI), firma enfocada en IA segura. El titular no especifica montos, términos ni participación accionaria. Movimiento refuerza posición de Nvidia en ecosistema IA.",
-   "analisis": {
-    "porque": "Señal de inversión estratégica en investigación de IA avanzada; posiciona a Nvidia como jugador en seguridad de IA, área de crecimiento crítica. Sin términos públicos, impacto limitado pero simbólico.",
-    "queOcurrio": "Nvidia anunció inversión en Safe Superintelligence, startup de IA segura, sin detallar montos ni términos del acuerdo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (comunicado Nvidia)"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "NVDA",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVDA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "nvidia-inversión",
-    "safe-ai",
-    "superintelligencia",
-    "ia-segura",
-    "ecosistema-chips"
-   ],
-   "tgText": "💡 Nvidia invierte en Safe Superintelligence (SSI), firma de IA segura. Términos no divulgados, pero refuerza posición Nvidia en ecosistema IA.",
-   "xText": "🤖 Nvidia invierte en Safe Superintelligence. Términos sin divulgar, pero refuerza estrategia en IA segura y ecosistema de chips para modelo avanzados. #NVDA #IA",
-   "discordText": "**Nvidia: Inversión en Safe Superintelligence**\n• Destinatario: Safe Superintelligence (SSI)\n• Montos: No divulgados\n• Estrategia: Posiciona Nvidia en IA segura\n• Impacto: Simbólico, refuerza ecosistema",
-   "pushText": "Nvidia invierte en Safe Superintelligence; términos confidenciales",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "NVDA podría subir modestamente por señal estratégica positiva en IA segura",
-    "despues": "NASDAQ podría reflejar sentimiento positivo sobre competencia IA responsable",
-    "escenarios": "Traders vigilarán: (1) si Nvidia anuncia montos o participación accionaria futura; (2) si SSI desarrolla breakthroughs en IA segura que afecten demanda de chips NVIDIA",
-    "riesgos": "Riesgo de que inversión sea menor y impacto estratégico limitado; riesgo regulatorio si IA segura implica restricciones a exportación de chips"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33571",
-   "fecha": "2026-07-27T12:56:14+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33571",
-   "via": "DeItaone",
-   "original": "$AMZN - AMAZON LEO HAS PROPOSED NEW CONSTELLATION OF UP TO 5,105 SATELLITES TO CONNECT COMPATIBLE MOBILE DEVICES DIRECTLY FROM SPACE",
-   "titulo": "Amazon Leo propone constelación de 5.105 satélites para conectividad móvil directa",
-   "resumen": "Amazon anunció propuesta de constelación satelital de hasta 5.105 satélites (Leo) para conectar dispositivos móviles compatibles directamente desde el espacio. Asociación con operadores de redes móviles comenzaría despliegue en 2028.",
-   "analisis": {
-    "porque": "Evento corporativo mayor de infraestructura espacial; afecta valuación de Amazon, competencia con SpaceX/Starlink, y perspectivas de conectividad global. Capex significativo en años próximos.",
-    "queOcurrio": "Amazon Leo reveló planes formales para constelación de satélites de banda ancha, con despliegue iniciando en 2028 en colaboración con operadores móviles globales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (comunicado Amazon)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AMZN",
-    "NASDAQ",
-    "S&P500",
-    "Competencia Telecom"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Operadores telecom",
-     "sesgo": "mixto"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "amazon-leo",
-    "satélites-internet",
-    "conectividad-espacial",
-    "infraestructura-capex",
-    "competencia-starlink"
-   ],
-   "tgText": "🛰️ Amazon Leo propone 5.105 satélites para conectividad móvil directa. Despliegue inicia 2028 con socios operadores móviles. Rivalizará con SpaceX/Starlink.",
-   "xText": "🚀 BREAKING: Amazon Leo anuncia constelación de 5.105 satélites, despliegue 2028. Competencia directa con SpaceX/Starlink. Impacto en capex & conectividad global. #AMZN #Tech",
-   "discordText": "**Amazon Leo: Anuncio de constelación satelital**\n• Propuesta: 5.105 satélites\n• Objetivo: Conectividad móvil directa desde órbita\n• Socios: Operadores de redes móviles globales\n• Despliegue: Inicia 2028\n• Impacto: Competencia con SpaceX/Starlink, Capex importante",
-   "pushText": "Amazon Leo anuncia constelación de 5.105 satélites; despliegue en 2028",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "AMZN sube por visión de crecimiento en infraestructura; SPCX/competencia espacial podría caer si percibe presión",
-    "despues": "NASDAQ sube por sector tech innovador; operadores telecom (TMUS, VZ, CMCSA) podrían caer o subir según percepción de amenaza/oportunidad",
-    "escenarios": "Traders vigilarán: (1) capacidad de Amazon de financiar proyecto sin impactar margen EBITDA; (2) respuesta de SpaceX/Starlink; (3) aprobaciones regulatorias FCC; (4) anuncios de socios telecom confirmando participación",
-    "riesgos": "Riesgo de capital intensity afecte márgenes Amazon; riesgo regulatorio si FCC rechaza o condiciona; riesgo de escalada de competencia espacial elevando costos"
-   },
-   "macro": {
-    "nasdaq": "alcista por innovación infraestructura",
-    "sp500": "alcista por diversificación Amazon",
-    "dolar": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33570",
-   "fecha": "2026-07-27T12:50:32+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33570",
-   "via": "DeItaone",
-   "original": "$TSLA - *DEUTSCHE BANK CUTS TESLA PRICE TARGET TO $420 *DEUTSCHE BANK MAINTAINS BUY RATING ON TESLA *ANALYST EDISON YU LOWERS TESLA TARGET FROM $465",
-   "titulo": "Deutsche Bank reduce target de Tesla a $420; mantiene rating Compra a pesar de mayor presión",
-   "resumen": "Deutsche Bank bajó target de precio de Tesla de $465 a $420 (analista Edison Yu), reducción de ~9.7%, pero mantiene calificación Compra. El movimiento refleja mayor conservadurismo en valuación pero confianza fundamental en compañía.",
-   "analisis": {
-    "porque": "Afecta directamente valuación de TSLA; señal mixta que reduce targets alcistas pero no cambia sentimiento positivo institucional. Releva presiones en múltiplos tecnológicos post-earnings.",
-    "queOcurrio": "Analista senior de Deutsche Bank redujo target de $465 a $420 para Tesla, pero no bajó recomendación de Compra, sugiriendo margen de seguridad incluso con target más bajo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (comunicado Deutsche Bank)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "TSLA",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "TSLA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "tesla-valuation",
-    "target-cut",
-    "deutsche-bank",
-    "ev-stocks",
-    "semiconductor-pressure"
-   ],
-   "tgText": "📉 Deutsche Bank baja target de Tesla de $465 a $420 (Edison Yu), caída de ~10%. Mantiene rating Compra, señal mixta en valuaciones tech.",
-   "xText": "📊 DB reduce target TSLA de $465→$420 (-9.7%) pero mantiene Compra. Refleja presión en múltiplos tech, pero confianza fundamental persiste. #Tesla #Mercados",
-   "discordText": "**Tesla: Deutsche Bank reduce target a $420**\n• Target anterior: $465 → Nuevo: $420 (-9.7%)\n• Rating: Mantiene Compra\n• Señal: Presión en valuaciones tech, pero fundamentales OK\n• Analista: Edison Yu (DB)",
-   "pushText": "Deutsche Bank reduce target Tesla de $465 a $420; mantiene Compra",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "TSLA podría caer en sesión si mercado percibe como downgrade suave; correlación con NASDAQ si revisión refleja presión en tech valuations",
-    "despues": "Posible rebalancing de posiciones grandes en TSLA; impacto secundario en índices si provoca venta en tech mega-cap",
-    "escenarios": "Traders vigilarán: (1) si otros analistas siguen con reducciones similares; (2) reacción de TSLA a earnings próximos; (3) if target change reflects margin/delivery concerns",
-    "riesgos": "Riesgo de que sea inicio de cascada de downgrades en EV stocks; riesgo contrario si TSLA supera expectations y target se revisa nuevamente al alza"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33567",
-   "fecha": "2026-07-27T12:23:01+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33567",
-   "via": "DeItaone",
-   "original": "US SETS 20% TARIFF CAP ON CHINA China says the US agreed during trade talks to cap replacement tariffs on Chinese goods at 20%. Current tariffs stand at 12.5%, leaving room for further increases. Beijing warned it will respond to any new US measures, while urging Washington to remove unilateral tariffs and continue negotiations. Meanwhile, a separate US probe into China's manufacturing sector coul",
-   "titulo": "EE.UU. fija techo de aranceles a China en 20%; negociaciones avanzan con advertencias",
-   "resumen": "China confirmó que EE.UU. acordó limitar aranceles de reemplazo en bienes chinos a 20%, versus los actuales 12,5%. Beijing advirtió que responderá a nuevas medidas unilaterales y urge la eliminación de aranceles existentes. Paralelamente, una investigación estadounidense sobre manufactura china podría generar derechos adicionales.",
-   "analisis": {
-    "porque": "Impacta directamente en negociaciones comerciales bilaterales, volatilidad del dólar, y expectativas de empresas multinacionales con exposición a China. Define techo máximo en escalada arancelaria.",
-    "queOcurrio": "Según reportes de China, durante conversaciones comerciales se estableció cap de 20% en aranceles de reemplazo, dejando espacio para futuros incrementos desde el 12,5% actual.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (vía comunicado chino)"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "CNY",
-    "S&P500",
-    "NASDAQ",
-    "Bonos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "CNY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Comercio Internacional",
-   "keywords": [
-    "aranceles-china",
-    "trump-negociaciones",
-    "comercio-bilateral",
-    "dólar",
-    "renminbi"
-   ],
-   "tgText": "🔴 EE.UU. y China acuerdan techo arancelario de 20% en negociaciones comerciales. Límite deixa espacio para incrementos desde 12,5% actual. Beijing advierte respuesta si medidas continúan.",
-   "xText": "📊 EE.UU. acepta cap de 20% en aranceles a China (vs 12,5% hoy) en negociaciones. Deja margen para nuevas subidas. Beijing reserva derecho a responder. #Comercio #Mercados",
-   "discordText": "**Aranceles China: Techo de 20% acordado**\n• EE.UU. acepta limitar aranceles de reemplazo en 20%\n• Actuales en 12,5%, deja espacio para incrementos\n• China advierte respuesta a nuevas medidas\n• Sigue investigación sobre manufactura china",
-   "pushText": "EE.UU. fija techo de 20% en aranceles a China; negociaciones avanzan",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "DXY cae por menor escalada arancelaria esperada; CNY sube por claridad en techo máximo",
-    "despues": "S&P500 y NASDAQ podrían repuntar (reducción de incertidumbre); yields de bonos USA podrían ceder ante menor riesgo geopolítico",
-    "escenarios": "Traders vigilarán: (1) si EE.UU. activa investigación sobre manufactura china cercano; (2) respuesta de Beijing a nuevas medidas; (3) si el techo se mantiene o se incrementa tras próximas negociaciones",
-    "riesgos": "China podría no cumplir si percibe que EE.UU. viola acuerdo; investigación separada podría romper consenso; escalada política antes de 2026"
-   },
-   "macro": {
-    "dolar": "presión bajista por menor escalada esperada",
-    "nasdaq": "alcista por reducción de incertidumbre",
-    "sp500": "alcista por estabilidad comercial",
-    "petroleo": "neutral a bajista si menos tensión geopolítica",
-    "bonos": "yields ceden si baja riesgo sistémico"
    },
    "updates": []
   }
