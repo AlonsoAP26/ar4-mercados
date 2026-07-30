@@ -1,7 +1,88 @@
 {
- "lastId": 33771,
- "actualizado": "2026-07-30T18:17:30.318Z",
+ "lastId": 33772,
+ "actualizado": "2026-07-30T19:56:27.661Z",
  "items": [
+  {
+   "id": "33772",
+   "fecha": "2026-07-30T19:23:10+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33772",
+   "via": "DeItaone",
+   "original": "TRUMP'S BOARD OF PEACE BELIEVE HAMAS COULD SIGN AN AGREEMENT IN COMING DAYS TO BEGIN DISARMING AND DEMILITARIZING GAZA STRIP -AXIOS",
+   "titulo": "Trump Board of Peace: Hamás podría firmar acuerdo de desarme en Gaza en días",
+   "resumen": "Según Axios, el equipo de paz de Trump cree que Hamás podría suscribir un acuerdo en los próximos días para comenzar el desarme y desmilitarización de la Franja de Gaza. El titular no especifica detalles del acuerdo ni confirmación oficial de Hamás. Representa un posible giro en las negociaciones de alto el fuego.",
+   "analisis": {
+    "porque": "Cualquier avance en resolución del conflicto Gaza-Israel reduce prima de riesgo geopolítico, beneficiando activos de riesgo (acciones, criptomonedas) y presionando activos refugio (oro, bonos).",
+    "queOcurrio": "El Board of Peace cercano a Trump señala optimismo sobre negociaciones de cese de armas y restructuración de Gaza en corto plazo.",
+    "estado": "rumor",
+    "fuenteOriginal": "Axios (via Walter Bloomberg)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Oro",
+    "Petróleo",
+    "DXY",
+    "Bonos",
+    "Bitcoin"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Gaza",
+    "Hamás",
+    "Trump",
+    "negociaciones",
+    "paz",
+    "Oriente Medio"
+   ],
+   "tgText": "📍 Board of Peace de Trump señala que Hamás podría firmar acuerdo de desarme en Gaza en días. Optimismo sobre resolución reduciría prima geopolítica (fuente: Axios).",
+   "xText": "🔴 Equipo de paz Trump: Hamás podría firmar acuerdo de desarmamiento en Gaza próximos días. Señal de posible giro en negociaciones; reduciría tensión geopolítica. #Geopolítica",
+   "discordText": "**📍 Negociaciones Gaza: Posible acuerdo Hamás**\n• Trump Board of Peace: Hamás podría suscribir acuerdo desarmamiento en días\n• Reduciría prima de riesgo geopolítico\n• Aún no confirmado oficialmente",
+   "pushText": "Trump Board: Hamás podría firmar acuerdo de desarme Gaza en días",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Oro y refugios se debilitarían por menor apetencia de seguridad; petróleo caería si se anticipa estabilidad en Oriente Medio.",
+    "despues": "Acciones globales (S&P, NASDAQ, índices europeos) repuntarían por aversión reducida al riesgo; bitcoin y criptomonedas se beneficiarían del sentimiento alcista.",
+    "escenarios": "Traders vigilarían: (1) si Hamás confirma oficialmente participación; (2) reacción de Israel y otros actores; (3) impacto en precios de petróleo Brent/WTI; (4) spread de bonos soberanos de países exportadores de crudo.",
+    "riesgos": "Fuente anónima tipo 'personas familiarizadas'. Hamás aún no ha confirmado. Negociaciones Gaza son volátiles; acuerdos pueden colapsar sin aviso. Impacto real limitado si no hay confirmación oficial."
+   },
+   "macro": {
+    "dolar": "Presión bajista si se confirma baja tensión geopolítica",
+    "oro": "Presión bajista; activos refugio pierden demanda",
+    "nasdaq": "Sesgo alcista por menor prima de riesgo",
+    "dow": "Sesgo alcista por rotación hacia riesgo",
+    "sp500": "Sesgo alcista por aversión reducida",
+    "bitcoin": "Sesgo alcista; ambiente risk-on",
+    "ethereum": "Sesgo alcista; ambiente risk-on",
+    "bonos": "Rendimientos presionados si baja tensión",
+    "petroleo": "Presión bajista; menos riesgo de suministro"
+   },
+   "updates": []
+  },
   {
    "id": "33771",
    "fecha": "2026-07-30T17:39:02+00:00",
@@ -7564,56 +7645,6 @@
     "despues": "Otros stocks de comunicación/streaming (DIS, PARA); NASDAQ por rotación sector tech",
     "escenarios": "Traders monitorean: (1) Confirmación de problemas específicos (churn, ingresos, competencia); (2) Reporte de earnings próximo; (3) Posiciones cortas y cobertura; (4) Reacción de gestores pasivos en índices",
     "riesgos": "Riesgo alto de falta de contexto: titular no especifica qué problemas (slowing growth, competition, regulación, etc.); riesgo de amplificación mediática de comentario casual de operador"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 919967507,
-   "fecha": "2026-07-27T17:14:58.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/jetblue-new-fare-options-basic-economy-first-class.html",
-   "via": "CNBC",
-   "original": "JetBlue overhauls fare options, from basic first to flexible economy. Here&apos;s what to know",
-   "titulo": "JetBlue reestructura opciones de tarifas: desde básico hasta economía flexible",
-   "resumen": "JetBlue Airways anunció rediseño integral de su estructura de tarifas, eliminando distinción entre \"básica\" y otros niveles, e introduciendo nueva opción de \"economía flexible\". La aerolínea busca mejorar monetización de clientes. El titular no especifica impacto esperado en márgenes ni si otros carriers seguirán.",
-   "analisis": {
-    "porque": "Movimiento de pricing power en sector viajes; señala estrategia de margen en contexto de presión de costos e inflación laboral aeroportuaria.",
-    "queOcurrio": "JetBlue presentó nuevo modelo de tarifas simplificado con opciones más granulares para capturar mayor valor por pasajero.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "JetBlue (JBLU)",
-    "Aviación",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "JetBlue (JBLU)",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "JetBlue",
-    "JBLU",
-    "tarifas",
-    "aviación",
-    "precio"
-   ],
-   "tgText": "✈️ JetBlue reestructura tarifas para mejorar monetización. Nueva opción de \"economía flexible\" y simplificación de niveles. Impacto en márgenes por confirmar.",
-   "xText": "JetBlue rediseña estructura de tarifas con nueva opción de economía flexible. Estrategia de pricing power en sector aeroportuario. JBLU.",
-   "discordText": "**JetBlue (JBLU) | Reestructura Tarifas**\n• Eliminación de distinción entre niveles básicos\n• Nueva opción \"economía flexible\"\n• Objetivo: mejorar monetización por pasajero\n→ Potencial alcista en márgenes",
-   "pushText": "JetBlue reestructura tarifas para mejorar margen",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "JBLU por mejora esperada en ASM (available seat miles) yield",
-    "despues": "Otros carriers (DAL, UAL, AAL, SWA) si sigue en industria;  sector viajes/turismo",
-    "escenarios": "Traders vigilan: (1) Adopción de clientes en nuevas opciones; (2) Competencia de otros carriers en pricing; (3) Efecto en demanda (elasticidad de precio); (4) Impacto en costos operacionales y costos laborales aéreos",
-    "riesgos": "Riesgo de resistencia de clientes a nuevos modelos; riesgo de saturación competitiva (carriers copian); riesgo macroeconómico: demanda de viajes es procíclica y vulnerable a recesión"
    },
    "macro": null,
    "updates": []
