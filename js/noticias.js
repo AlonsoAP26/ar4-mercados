@@ -353,6 +353,29 @@ async function renderSidebar(n, noticias) {
   if (typeof window.AR4_injectSponsor === 'function') window.AR4_injectSponsor('noticiaBody', { mobileOnly: true });
 }
 
+
+// Datos estructurados (JSON-LD) para Google: se inyectan al renderizar el
+// detalle. Google ejecuta JS al indexar, asi que los lee sin problema.
+function inyectarJsonLd(tipo, titulo, descripcion, fecha, urlPagina) {
+  try {
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': tipo,
+      headline: titulo,
+      description: descripcion || '',
+      datePublished: fecha,
+      inLanguage: 'es',
+      mainEntityOfPage: urlPagina,
+      image: 'https://ar4mercados.com/og-image.jpg',
+      author: { '@type': 'Organization', name: 'AR4 Mercados' },
+      publisher: { '@type': 'Organization', name: 'AR4 Mercados', logo: { '@type': 'ImageObject', url: 'https://ar4mercados.com/icons/icon-512.png' } }
+    });
+    document.head.appendChild(s);
+  } catch (e) {}
+}
+
 async function initNoticiaDetail() {
   const body = document.getElementById('noticiaBody');
   if (!body) return;
@@ -373,6 +396,8 @@ async function initNoticiaDetail() {
     body.innerHTML = '<p class="footer-text">Noticia no encontrada. <a href="noticias.html">Volver a Noticias</a>.</p>';
     return;
   }
+
+  inyectarJsonLd('NewsArticle', n.title, n.excerpt, n.date, 'https://ar4mercados.com/noticia.html?slug=' + encodeURIComponent(n.slug));
 
   document.title = n.title + ' — AR4 Mercados';
   const descTag = document.getElementById('pageDesc');

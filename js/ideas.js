@@ -337,6 +337,29 @@ function initIdeaChart(idea) {
   }
 }
 
+
+// Datos estructurados (JSON-LD) para Google: se inyectan al renderizar el
+// detalle. Google ejecuta JS al indexar, asi que los lee sin problema.
+function inyectarJsonLd(tipo, titulo, descripcion, fecha, urlPagina) {
+  try {
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': tipo,
+      headline: titulo,
+      description: descripcion || '',
+      datePublished: fecha,
+      inLanguage: 'es',
+      mainEntityOfPage: urlPagina,
+      image: 'https://ar4mercados.com/og-image.jpg',
+      author: { '@type': 'Organization', name: 'AR4 Mercados' },
+      publisher: { '@type': 'Organization', name: 'AR4 Mercados', logo: { '@type': 'ImageObject', url: 'https://ar4mercados.com/icons/icon-512.png' } }
+    });
+    document.head.appendChild(s);
+  } catch (e) {}
+}
+
 async function initIdeaDetail() {
   const body = document.getElementById('ideaBody');
   if (!body) return;
@@ -353,6 +376,7 @@ async function initIdeaDetail() {
   }
 
   const idea = ideas.find(a => a.slug === slug);
+  if (idea) inyectarJsonLd('Article', idea.title, idea.excerpt, idea.date, 'https://ar4mercados.com/idea.html?slug=' + encodeURIComponent(idea.slug));
   if (!idea) {
     body.innerHTML = '<p class="footer-text">Análisis no encontrado. <a href="ideas.html">Volver a Ideas de Trading</a>.</p>';
     return;

@@ -20,6 +20,7 @@ const FIJAS = [
   ['calendario.html', 'daily', '0.7'],
   ['membresia.html', 'weekly', '0.6'],
   ['nosotros.html', 'monthly', '0.5'],
+  ['metodologia.html', 'monthly', '0.5'],
   ['verificar.html', 'monthly', '0.4'],
   ['terminos.html', 'yearly', '0.2'],
   ['privacidad.html', 'yearly', '0.2']
@@ -56,15 +57,17 @@ async function articulos(ruta, pagina) {
 exports.handler = async () => {
   const hoy = new Date().toISOString().slice(0, 10);
   const fijas = FIJAS.map(([p, freq, prio]) => url(BASE + '/' + p, hoy, freq, prio));
-  const [noticias, ideas, psico] = await Promise.all([
+  const [noticias, ideas, psico, brokers] = await Promise.all([
     articulos('noticias.json', 'noticia.html'),
     articulos('ideas.json', 'idea.html'),
-    articulos('articulos.json', 'articulo.html')
+    articulos('articulos.json', 'articulo.html'),
+    // Las reviews de brokers también son páginas indexables (broker.html?slug=X)
+    articulos('brokers.json', 'broker.html')
   ]);
 
   const xml = '<?xml version="1.0" encoding="UTF-8"?>' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' +
-    fijas.join('') + noticias.join('') + ideas.join('') + psico.join('') +
+    fijas.join('') + noticias.join('') + ideas.join('') + psico.join('') + brokers.join('') +
     '</urlset>';
 
   return {
