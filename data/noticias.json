@@ -4925,5 +4925,374 @@
       ],
       "patronUltimaVela": "vela bajista de cuerpo amplio"
     }
+  },
+  {
+    "title": "Microsoft supera el consenso en el 4T fiscal y Azure crece 43%; la acción salta 15%",
+    "excerpt": "Microsoft reportó ingresos de USD 90.000 millones y EPS de 4,74 dólares, ambos por encima del consenso, impulsados por la nube y la IA.",
+    "symbol": "NASDAQ:MSFT",
+    "trend": "up",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Azure y la nube empujan el trimestre</h3><p>Microsoft reportó tras el cierre del miércoles sus resultados del cuarto trimestre fiscal 2026, correspondiente al período cerrado el 30 de junio. La compañía informó ingresos de 90.000 millones de dólares y una ganancia por acción de 4,74 dólares, con la utilidad operativa en 40.600 millones de dólares, ambos indicadores en alza del 18% interanual. El resultado quedó por encima de lo previsto: los ingresos superaron el consenso de 87.600 millones de dólares y el EPS batió la estimación de 4,24 dólares, una diferencia cercana al 11,8%. Azure y los servicios de nube crecieron 43% en el trimestre, la variable que el mercado seguía más de cerca antes del reporte.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El mercado responde con un salto de dos dígitos</h3><p>La reacción bursátil fue inmediata: la acción de Microsoft (NASDAQ:MSFT) cotiza este jueves en 451,10 dólares, con un avance del 15,5% en la sesión y del 18,2% en la semana, según el histórico de precios de Yahoo Finance. El papel llegaba a este reporte tras meses de presión: acumulaba caídas de casi 30% desde su máximo histórico por la preocupación del mercado sobre el retorno de la inversión en infraestructura de inteligencia artificial. El indicador de fuerza relativa (RSI 14) subió a 71,8, en zona de sobrecompra técnica, tras el salto del día.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Microsoft Cloud marca récord anual</h3><p>Para el año fiscal completo, Microsoft reportó ingresos superiores a 331.000 millones de dólares, un alza de 18%, y utilidad operativa por encima de 155.000 millones de dólares, un incremento de 21%. El negocio de Microsoft Cloud superó los 214.000 millones de dólares en el año, con un crecimiento de 27%, mientras que Azure superó por primera vez los 100.000 millones de dólares de ingresos anuales, con una expansión de 41%. La compañía destacó que la demanda comercial de nube e infraestructura de IA sigue superando la capacidad disponible.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Adopción de IA en productos corporativos</h3><p>Microsoft 365 Copilot superó los 30 millones de asientos pagos y GitHub Copilot alcanzó 50 millones de usuarios, cifras que la compañía presentó como evidencia de que la inversión en inteligencia artificial ya se traduce en adopción comercial. El gasto de capital se mantuvo elevado, en torno a 41.000 millones de dólares en el trimestre, reflejo de la construcción continua de centros de datos y hardware de IA.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Más allá del titular: márgenes y reservas comerciales</h3><p>El margen bruto se ubicó en 67%, una contracción interanual atribuida al cambio de mix de negocio y al peso de la infraestructura de IA en la estructura de costos, mientras que el margen operativo llegó a 45%, levemente superior al del año anterior. Los pedidos comerciales (commercial bookings) subieron 18% excluyendo el impacto de OpenAI, y la obligación de desempeño remanente comercial (RPO) se ubicó en 678.000 millones de dólares, un indicador de ingresos contratados aún no reconocidos. En el panel de mercado, MSFT opera por encima de su media móvil de 200 sesiones y acumula un avance de 20,9% en el mes, aunque su máximo de 52 semanas (555,45 dólares) queda todavía lejos del precio actual, señal de que la acción recupera terreno perdido más que marca nuevos récords.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El resultado de Microsoft reduce, al menos por un trimestre, las dudas sobre si el gasto masivo en infraestructura de IA se traduce en crecimiento real de ingresos: Azure al 43% y un Microsoft Cloud que ya supera los 214.000 millones de dólares anuales son la evidencia que buscaba el mercado. El RSI en 71,8 advierte que la acción entra en zona técnica de sobrecompra tras el salto de 15,5% del día, lo que puede traducirse en mayor volatilidad de corto plazo o una consolidación antes de retomar la tendencia. Para inversionistas de la región, el reporte es relevante como termómetro del apetito por las grandes tecnológicas ligadas a IA (Apple, Nvidia, Alphabet, Amazon) que integran los principales ETF e índices globales seguidos desde Latinoamérica, y como referencia de si el ciclo de capex de los hiperescaladores logra sostener el rally del Nasdaq. Vale la pena seguir el próximo guion de gasto de capital para el año fiscal 2027 y la evolución del margen bruto, la variable que el mercado vigilará si la inversión en IA sigue presionando la rentabilidad.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "Investing.com",
+        "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-microsoft-q4-2026-beats-forecasts-stock-jumps-8-93CH-4822020"
+      },
+      {
+        "name": "The Motley Fool",
+        "url": "https://www.fool.com/investing/2026/07/29/is-microsoft-a-buy-after-its-latest-earnings-report/"
+      },
+      {
+        "name": "24/7 Wall St.",
+        "url": "https://247wallst.com/investing/2026/07/29/live-microsoft-reports-q4-earnings-tonight-will-its-massive-ai-capex-finally-pay-off/"
+      }
+    ],
+    "aiSummary": {
+      "que": "Microsoft superó el consenso de ingresos y ganancias en su 4T fiscal 2026, con Azure creciendo 43% y la acción disparándose 15,5% en la sesión.",
+      "porque": "El mercado necesitaba confirmar que el gasto masivo en infraestructura de IA se traduce en crecimiento de ingresos de nube, tras meses de presión sobre la acción por dudas de retorno de inversión.",
+      "activos": [
+        "NASDAQ:MSFT",
+        "NASDAQ:NVDA",
+        "NASDAQ:AAPL",
+        "NASDAQ:GOOGL"
+      ],
+      "siguiente": "La guía de gasto de capital para el año fiscal 2027 y la evolución del margen bruto ante el peso de la infraestructura de IA."
+    },
+    "aiScenarios": {
+      "alcista": 50,
+      "lateral": 35,
+      "bajista": 15
+    },
+    "aiDetects": {
+      "probabilidad": 62,
+      "riesgo": "Medio",
+      "lectura": "El salto post-earnings mejora el sesgo de corto plazo, pero el RSI en zona de sobrecompra sugiere posible pausa o toma de ganancias antes de continuar."
+    },
+    "timeline": [
+      {
+        "cuando": "Ayer (29 de julio)",
+        "texto": "Microsoft reportó resultados del 4T fiscal 2026 tras el cierre de mercado, con ingresos de 90.000 millones de dólares y EPS de 4,74 dólares."
+      },
+      {
+        "cuando": "Ayer (29 de julio)",
+        "texto": "La compañía confirmó que Azure creció 43% en el trimestre y que Microsoft Cloud superó los 214.000 millones de dólares en el año fiscal."
+      },
+      {
+        "cuando": "Hoy (30 de julio)",
+        "texto": "La acción de Microsoft sube 15,5% en la sesión y cotiza en 451,10 dólares, según el histórico de Yahoo Finance."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es Azure y por qué importa tanto para Microsoft?",
+        "a": "Azure es la plataforma de servicios en la nube de Microsoft, que compite con AWS de Amazon y Google Cloud. Es el principal motor de crecimiento de la compañía y el que más ligado está al negocio de inteligencia artificial."
+      },
+      {
+        "q": "¿Qué significa que una acción entre en 'sobrecompra' según el RSI?",
+        "a": "El RSI (índice de fuerza relativa) mide la velocidad de los movimientos de precio. Un valor por encima de 70, como el 71,8 de Microsoft, sugiere que el activo pudo subir demasiado rápido y podría enfrentar una pausa o corrección técnica."
+      },
+      {
+        "q": "¿Por qué preocupa el gasto de capital (capex) en IA de las grandes tecnológicas?",
+        "a": "Porque implica desembolsos multimillonarios en centros de datos y chips cuyo retorno tarda en materializarse, y los inversionistas quieren ver que ese gasto se traduce en ingresos reales, como ocurrió esta vez con el crecimiento de Azure."
+      },
+      {
+        "q": "¿Cómo afecta este resultado a los mercados latinoamericanos?",
+        "a": "Microsoft integra los principales índices globales (S&P 500, Nasdaq) que forman parte de fondos y ETF ampliamente utilizados por inversionistas de la región, por lo que su desempeño influye en el apetito general por activos tecnológicos."
+      }
+    ],
+    "impactScore": 8,
+    "relatedSymbols": [
+      "NASDAQ:AAPL",
+      "NASDAQ:NVDA",
+      "NASDAQ:GOOGL",
+      "FOREXCOM:NSXUSD"
+    ],
+    "category": "Empresas",
+    "heroType": "index",
+    "slug": "microsoft-supera-el-consenso-en-el-4t-fiscal-y-azure-crece-4-ms85w6vs",
+    "author": "AR4 Mercados",
+    "date": "2026-07-30",
+    "sourceName": "Investing.com",
+    "sourceUrl": "https://www.investing.com/news/transcripts/earnings-call-transcript-microsoft-q4-2026-beats-forecasts-stock-jumps-8-93CH-4822020",
+    "marketPanel": [
+      {
+        "symbol": "NASDAQ:AAPL",
+        "nombre": "Apple (AAPL)",
+        "yahooSymbol": "AAPL",
+        "fuente": "Yahoo Finance (AAPL)",
+        "fechaUltimaVela": "2026-07-30",
+        "precio": 333.43,
+        "cierreAnterior": 338.19,
+        "variacionDiaPct": -1.4,
+        "variacionSemanaPct": 3.7,
+        "variacionMesPct": 15.2,
+        "variacionAnioPct": 57.8,
+        "rangoDiaReal": {
+          "minimo": 329.59,
+          "maximo": 334.75
+        },
+        "rsi14": 61.7,
+        "lecturaRsi": "neutral",
+        "media50": 309.3,
+        "media200": 277.65,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 8.06,
+        "maximo52sem": 344.57,
+        "minimo52sem": 201.5,
+        "distanciaAMaximo52semPct": -3.2,
+        "distanciaAMinimo52semPct": 65.5,
+        "soportes": [
+          319.35,
+          305.02,
+          287.38
+        ],
+        "resistencias": [
+          334.99
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      },
+      {
+        "symbol": "NASDAQ:MSFT",
+        "nombre": "Microsoft (MSFT)",
+        "yahooSymbol": "MSFT",
+        "fuente": "Yahoo Finance (MSFT)",
+        "fechaUltimaVela": "2026-07-30",
+        "precio": 451.1,
+        "cierreAnterior": 390.54,
+        "variacionDiaPct": 15.5,
+        "variacionSemanaPct": 18.2,
+        "variacionMesPct": 20.9,
+        "variacionAnioPct": -12,
+        "rangoDiaReal": {
+          "minimo": 432.44,
+          "maximo": 458.69
+        },
+        "rsi14": 71.8,
+        "lecturaRsi": "sobrecompra",
+        "media50": 398.46,
+        "media200": 433.83,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 15.9,
+        "maximo52sem": 555.45,
+        "minimo52sem": 349.2,
+        "distanciaAMaximo52semPct": -18.8,
+        "distanciaAMinimo52semPct": 29.2,
+        "soportes": [
+          438.68,
+          411.35,
+          409.58
+        ],
+        "resistencias": [
+          466.32,
+          483.74,
+          489.67
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "NASDAQ:NVDA",
+        "nombre": "NVIDIA (NVDA)",
+        "yahooSymbol": "NVDA",
+        "fuente": "Yahoo Finance (NVDA)",
+        "fechaUltimaVela": "2026-07-30",
+        "precio": 195.04,
+        "cierreAnterior": 190.01,
+        "variacionDiaPct": 2.6,
+        "variacionSemanaPct": -6.6,
+        "variacionMesPct": -2.5,
+        "variacionAnioPct": 11.1,
+        "rangoDiaReal": {
+          "minimo": 191.52,
+          "maximo": 197.25
+        },
+        "rsi14": 43.1,
+        "lecturaRsi": "neutral",
+        "media50": 206.57,
+        "media200": 193.05,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 7.5069,
+        "maximo52sem": 236.54,
+        "minimo52sem": 164.07,
+        "distanciaAMaximo52semPct": -17.5,
+        "distanciaAMinimo52semPct": 18.9,
+        "soportes": [
+          194.74,
+          191.14,
+          189.8
+        ],
+        "resistencias": [
+          196,
+          197.63,
+          212.71
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "NYSE:VALE",
+        "nombre": "Vale (VALE)",
+        "yahooSymbol": "VALE",
+        "fuente": "Yahoo Finance (VALE)",
+        "fechaUltimaVela": "2026-07-30",
+        "precio": 14.99,
+        "cierreAnterior": 14.65,
+        "variacionDiaPct": 2.3,
+        "variacionSemanaPct": 1.1,
+        "variacionMesPct": -0.3,
+        "variacionAnioPct": 51.6,
+        "rangoDiaReal": {
+          "minimo": 14.67,
+          "maximo": 15
+        },
+        "rsi14": 53.3,
+        "lecturaRsi": "neutral",
+        "media50": 15.25,
+        "media200": 14.79,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.3627,
+        "maximo52sem": 17.94,
+        "minimo52sem": 9.36,
+        "distanciaAMaximo52semPct": -16.4,
+        "distanciaAMinimo52semPct": 60.1,
+        "soportes": [
+          14.78,
+          14.63,
+          14.01
+        ],
+        "resistencias": [
+          15.16,
+          15.3,
+          16.36
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      },
+      {
+        "symbol": "NYSE:PBR",
+        "nombre": "Petrobras (PBR)",
+        "yahooSymbol": "PBR",
+        "fuente": "Yahoo Finance (PBR)",
+        "fechaUltimaVela": "2026-07-30",
+        "precio": 19.12,
+        "cierreAnterior": 18.59,
+        "variacionDiaPct": 2.9,
+        "variacionSemanaPct": 0.6,
+        "variacionMesPct": 18.3,
+        "variacionAnioPct": 48.9,
+        "rangoDiaReal": {
+          "minimo": 18.54,
+          "maximo": 19.15
+        },
+        "rsi14": 63.3,
+        "lecturaRsi": "neutral",
+        "media50": 17.89,
+        "media200": 16.22,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4936,
+        "maximo52sem": 22.24,
+        "minimo52sem": 11.43,
+        "distanciaAMaximo52semPct": -14,
+        "distanciaAMinimo52semPct": 67.3,
+        "soportes": [
+          19.11,
+          18.53,
+          17.96
+        ],
+        "resistencias": [
+          19.2,
+          19.31,
+          20.28
+        ],
+        "patronUltimaVela": "envolvente alcista (el cuerpo cubre por completo el de la vela bajista previa)"
+      },
+      {
+        "symbol": "NYSE:MELI",
+        "nombre": "MercadoLibre (MELI)",
+        "yahooSymbol": "MELI",
+        "fuente": "Yahoo Finance (MELI)",
+        "fechaUltimaVela": "2026-07-30",
+        "precio": 1885.73,
+        "cierreAnterior": 1863.31,
+        "variacionDiaPct": 1.2,
+        "variacionSemanaPct": 4.8,
+        "variacionMesPct": 11.1,
+        "variacionAnioPct": -20.9,
+        "rangoDiaReal": {
+          "minimo": 1829.3,
+          "maximo": 1888
+        },
+        "rsi14": 66.3,
+        "lecturaRsi": "neutral",
+        "media50": 1721.61,
+        "media200": 1893.95,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 56.28,
+        "maximo52sem": 2548.5,
+        "minimo52sem": 1495,
+        "distanciaAMaximo52semPct": -26,
+        "distanciaAMinimo52semPct": 26.1,
+        "soportes": [
+          1771.17,
+          1738,
+          1657.22
+        ],
+        "resistencias": [
+          1890,
+          1904.24,
+          2014.46
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      }
+    ],
+    "marketData": {
+      "symbol": "NASDAQ:MSFT",
+      "nombre": "Microsoft (MSFT)",
+      "yahooSymbol": "MSFT",
+      "fuente": "Yahoo Finance (MSFT)",
+      "fechaUltimaVela": "2026-07-30",
+      "precio": 451.1,
+      "cierreAnterior": 390.54,
+      "variacionDiaPct": 15.5,
+      "variacionSemanaPct": 18.2,
+      "variacionMesPct": 20.9,
+      "variacionAnioPct": -12,
+      "rangoDiaReal": {
+        "minimo": 432.44,
+        "maximo": 458.69
+      },
+      "rsi14": 71.8,
+      "lecturaRsi": "sobrecompra",
+      "media50": 398.46,
+      "media200": 433.83,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 15.9,
+      "maximo52sem": 555.45,
+      "minimo52sem": 349.2,
+      "distanciaAMaximo52semPct": -18.8,
+      "distanciaAMinimo52semPct": 29.2,
+      "soportes": [
+        438.68,
+        411.35,
+        409.58
+      ],
+      "resistencias": [
+        466.32,
+        483.74,
+        489.67
+      ],
+      "patronUltimaVela": "vela alcista sin patron destacable"
+    }
   }
 ]
