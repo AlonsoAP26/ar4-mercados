@@ -1,7 +1,82 @@
 {
- "lastId": 33768,
- "actualizado": "2026-07-30T15:23:05.537Z",
+ "lastId": 33769,
+ "actualizado": "2026-07-30T16:57:10.586Z",
  "items": [
+  {
+   "id": "33769",
+   "fecha": "2026-07-30T15:28:07+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33769",
+   "via": "DeItaone",
+   "original": "U.S. MILITARY: NO U.S. AIRCRAFT WERE DESTROYED OR DAMAGED IN RECENT ATTEMPTED IRANIAN ATTACKS",
+   "titulo": "EE.UU. confirma que ninguna aeronave fue destruida en ataque iraní",
+   "resumen": "El Pentágono confirmó oficialmente que ningún avión militar estadounidense sufrió daños o destrucción durante los ataques iraníes recientes. Este comunicado llega tras tensiones geopolíticas elevadas y representa una desescalada en la narrativa de conflicto directo entre ambas potencias.",
+   "analisis": {
+    "porque": "Reduce riesgo geopolítico inmediato y alivia presión sobre petróleo, divisas de safe-haven y volatilidad esperada. Los mercados habían priced-in escenarios de escalada militar.",
+    "queOcurrio": "Comunicado oficial del Departamento de Defensa estadounidense negando pérdidas materiales en ataques iraníes anteriores.",
+    "estado": "confirmado",
+    "fuenteOriginal": "U.S. Military (comunicado oficial)"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "S&P500",
+    "VIX",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Pentágono",
+    "Ataque militar",
+    "Tensión geopolítica",
+    "Mercados"
+   ],
+   "tgText": "🛡️ CONFIRMADO: EE.UU. anuncia que ninguna aeronave fue dañada en ataque iraní. Comunicado oficial reduce riesgo de escalada; petróleo y oro podrían ceder presión.",
+   "xText": "🔴 Pentágono confirma: CERO daños en aeronaves estadounidenses tras ataques iraníes. Desescalada geopolítica alivia presión en petróleo y activos refugio.",
+   "discordText": "**Comunicado Oficial - Pentágono**\n• Ninguna aeronave destruida o dañada en ataques iraníes recientes\n• Reduce narrativa de conflicto directo\n• Impacto: Presión bajista esperada en petróleo, oro y VIX",
+   "pushText": "Pentágono: sin daños en ataques iraníes. Desescalada geopolítica inminente.",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI/Brent) cede presión inmediatamente por menor riesgo de corte de suministro del Golfo. Oro pierde demanda como safe-haven.",
+    "despues": "DXY debilitaría por salida de inversores de activos refugio hacia riesgo. Acciones cíclicas (energía, construcción) podrían recuperarse.",
+    "escenarios": "Traders monitores: (1) Si se confirma nueva escalada, revertirán ganancias; (2) Si Irán responde con retórica pero sin acción, petróleo sigue cediendo; (3) Vigilancia de comunicados de Teherán en próximas 24h.",
+    "riesgos": "Riesgo de escalada posterior si Irán responde diplomaticamente o con contra-ataque simbólico. Comunicado oficial reduce pero no elimina riesgo geopolítico de fondo."
+   },
+   "macro": {
+    "dolar": "Presión bajista por salida de safe-haven",
+    "oro": "Presión bajista por menor demanda defensiva",
+    "nasdaq": "Sesgo alcista por cierre de riesgo geopolítico",
+    "dow": "Sesgo alcista moderado",
+    "sp500": "Sesgo alcista moderado",
+    "bitcoin": "Neutral-alcista por menor volatilidad esperada",
+    "ethereum": "Neutral",
+    "bonos": "Presión bajista por menor demanda defensiva",
+    "petroleo": "Presión bajista significativa por alivio de riesgo de supply"
+   },
+   "updates": []
+  },
   {
    "id": "33768",
    "fecha": "2026-07-30T15:07:41+00:00",
@@ -7540,59 +7615,6 @@
     "nasdaq": "bajista (sensible a tasas y crédito)",
     "sp500": "presión"
    },
-   "updates": []
-  },
-  {
-   "id": "33611",
-   "fecha": "2026-07-27T16:44:24+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33611",
-   "via": "DeItaone",
-   "original": "$F - FORD JOINS ARMY TRUCK BID Ford is competing for the U.S. Army's next tactical truck contract, marking its biggest military bid in decades. The company will develop three prototype vehicles based on its F-Series Super Duty pickups, joining General Motors as the Pentagon seeks to modernize military vehicles amid rising global security demands.",
-   "titulo": "Ford compite por contrato de camión táctico del Ejército estadounidense",
-   "resumen": "Ford se suma a la competencia por el próximo contrato de camión táctico del Ejército estadounidense, su mayor licitación militar en décadas. La compañía desarrollará tres prototipos basados en sus pickups F-Series Super Duty, compitiendo contra General Motors. El contrato responde a la modernización de vehículos militares ante crecientes demandas de seguridad global.",
-   "analisis": {
-    "porque": "Contrato militar de largo plazo genera flujo de caja predecible y margen robusto. Oportunidad de diversificación para Ford más allá de mercado civil. Si gana, impacta positivo en guidance de flujo libre y valuación.",
-    "queOcurrio": "Ford anunció su participación formal en la licitación del Ejército para vehículos tácticos, desarrollando tres prototipos. General Motors también compite. Plazo y monto del contrato no especificados en titular.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "F",
-    "GM"
-   ],
-   "sesgos": [
-    {
-     "activo": "F",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "GM",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "ford",
-    "military-contract",
-    "ejercito-usa",
-    "f-series",
-    "gm"
-   ],
-   "tgText": "📈 Ford compite por contrato de camión táctico del Ejército. Desarrollará 3 prototipos basados en F-Series Super Duty, su mayor licitación militar en décadas.",
-   "xText": "Ford entra en competencia por contrato militar de camión táctico del Ejército. Desarrollará prototipos basados en F-Series Super Duty, compitiendo contra GM.",
-   "discordText": "**FORD - OPORTUNIDAD MILITAR**\n• Licitación por camión táctico del Ejército\n• 3 prototipos F-Series Super Duty\n• Mayor bid militar en décadas\n• Compite contra GM\n→ Potencial flujo predecible a largo plazo",
-   "pushText": "Ford compite por contrato militar de camiones",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de Ford (F) podrían tener sesgo alcista si mercado precifica probabilidad de ganancias. General Motors monitorea.",
-    "despues": "Proveedores de componentes automotrices podrían beneficiarse si Ford gana.",
-    "escenarios": "Traders vigilan: (1) Anuncios sobre selección de ganador (típicamente toma meses a años). (2) Si Ford gana, update positivo en guías de cash flow. (3) Comparación de márgenes de contrato militar vs. civil.",
-    "riesgos": "Riesgo de que General Motors gane, afectando F negativamente. Riesgo de que proceso se extienda más de lo esperado o requisitos técnicos no sean alcanzables."
-   },
-   "macro": null,
    "updates": []
   }
  ],
