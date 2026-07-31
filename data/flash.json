@@ -1,7 +1,342 @@
 {
- "lastId": 33774,
- "actualizado": "2026-07-31T06:07:17.663Z",
+ "lastId": 33782,
+ "actualizado": "2026-07-31T09:16:10.255Z",
  "items": [
+  {
+   "id": "33781",
+   "fecha": "2026-07-31T08:56:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33781",
+   "via": "DeItaone",
+   "original": "YEN SUDDENLY JUMPS",
+   "titulo": "Yen salta abruptamente; alerta de riesgo de intervención del BoJ",
+   "resumen": "El yen se fortalece de forma repentina. Traders alertan sobre riesgo inminente de intervención del Banco de Japón. El movimiento abrupto sugiere posible acción de política monetaria o respuesta a volatilidad extrema. Contexto: BoJ mantuvo tasas en 1% y advirtió que inflación central excede meta del 2%.",
+   "analisis": {
+    "porque": "Señal de posible intervención bancaria central puede impactar pares FX, riesgo de revaluación yen, carry trades en riesgo",
+    "queOcurrio": "Yen se fortalece abruptamente; traders detectan posible preparación de intervención BoJ",
+    "estado": "rumor",
+    "fuenteOriginal": "Bloomberg (reportajes de traders)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "JPY",
+    "USDJPY",
+    "EURJPY",
+    "AUDJPY",
+    "Nikkei",
+    "Mercados Emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Carry Trades",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "yen",
+    "BoJ",
+    "intervención",
+    "FX",
+    "carry-trades",
+    "volatilidad"
+   ],
+   "tgText": "⚠️ Yen salta abruptamente. Traders alertan riesgo de intervención BoJ. USDJPY bajo presión. Carry trades en riesgo. Volatilidad muy alta.",
+   "xText": "JPY fortalece de repente. Traders alertan intervención BoJ inminente. USDJPY, EURJPY presionados. Riesgo para carry trades. #FX #Volatility",
+   "discordText": "**YEN SALTA - ALERTA INTERVENCIÓN BOJ**\n• Movimiento: Fortalecimiento abrupto del JPY\n• Riesgo: Intervención BoJ inminente\n• Impacto: USDJPY, carry trades bajo presión\n• Volatilidad: Muy alta",
+   "pushText": "Yen salta; alerta de intervención BoJ",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae en cascada si intervención se confirma; carry trades liquidados; pares emergentes con correlación yen se presionan (AUDJPY, NZDJPY)",
+    "despues": "Spillover a equities Japan (Nikkei); oro podría subir en busca de seguridad; volatilidad en mercados de emergentes (Indonesia, India con carry exposure)",
+    "escenarios": "Traders vigilarán comunicado oficial BoJ; si intervención se confirma, buscarán nivel de USDJPY nuevo equilibrio; monitoreo de carry unwinds en posiciones grandes (hedge funds, prop desks); posible re-repricing de tasas Japan",
+    "riesgos": "Riesgo sistémico si desmantelamiento carry trades es desordenado; liquidaciones forzadas en posiciones grandes; contagio a otros mercados emergentes; volatilidad FX impredecible"
+   },
+   "macro": {
+    "dolar": "presión bajista USDJPY",
+    "yen": "fortalecimiento abrupto; riesgo intervención",
+    "nasdaq": "spillover negativo potencial si carry trades liquidados",
+    "oro": "potencial alza por búsqueda de seguridad"
+   },
+   "updates": []
+  },
+  {
+   "id": "33779",
+   "fecha": "2026-07-31T08:33:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33779",
+   "via": "DeItaone",
+   "original": "$AMZN - BERNSTEIN RAISES AMAZON PT ON AWS, AI MOMENTUM Bernstein raised its Amazon price target to $320 from $315, maintaining an Outperform rating. The firm cited stronger-than-expected 37% AWS revenue growth, a $25B AI revenue run rate, expanding AI chip business and clear returns on AI investment. Bernstein also highlighted Amazon's higher 2026 capex of $220B, backed by strong demand and attrac",
+   "titulo": "Bernstein sube objetivo de Amazon a $320; valida tasa de ingresos IA de $25B",
+   "resumen": "Bernstein elevó objetivo de Amazon a $320 desde $315, manteniendo calificación de Outperform. La firma destacó crecimiento de AWS del 37% superior a estimaciones, tasa de ingresos IA de $25B, expansión del negocio de chips IA y claridad en retornos de inversión. Respalda plan de capex 2026 de $220B con demanda fuerte y periodos de recuperación atractivos.",
+   "analisis": {
+    "porque": "Segunda validación alcista en horas de dos analistas tier-1; documenta tracción concreta en $25B IA run-rate; confirma thesis de ROI positivo en capex masivo",
+    "queOcurrio": "Bernstein revisa objetivo al alza $5 tras analizar reportes de AWS, IA chip business y periodos de payback de capex",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bernstein Research vía Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "AMZN",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Amazon",
+    "Bernstein",
+    "AWS",
+    "IA",
+    "capex",
+    "ROI"
+   ],
+   "tgText": "📊 Bernstein sube objetivo de Amazon a $320. Valida crecimiento AWS del 37% y tasa de ingresos IA de $25B. Rating Outperform. Capex $220B con ROI claro.",
+   "xText": "$AMZN: Bernstein alza PT a $320. AWS +37%, revenue IA $25B validado. Capex 2026 de $220B con payback atractivo. Rating: Outperform. #AI",
+   "discordText": "**AMZN: Bernstein sube objetivo a $320**\n• PT: $315 → $320\n• Tracción: AWS +37%, IA revenue run-rate $25B\n• Capex 2026: $220B con retornos claros\n• Rating: Outperform",
+   "pushText": "Bernstein sube objetivo de Amazon a $320; valida $25B IA run-rate",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "AMZN mantiene sesgo alcista acumulativo; segundo analista en horas refuerza narrativa; impulso acumulativo a NASDAQ",
+    "despues": "Refuerzo de rotación AMZN alcista vs AAPL bajista en mega-caps; posible comparación en reportes de hedge funds",
+    "escenarios": "Traders vigilarán si capex guidance de $220B se mantiene en guidance Q4; si márgenes operativos se sostienen con capex creciente; convergencia de objetivos de analistas alrededor de $315-375",
+    "riesgos": "Riesgo de que $25B IA run-rate sea sobrestimado o incierto en cuanto a sostenibilidad; cambio en ciclo capex si tasas suben; competencia en infraestructura IA (Nvidia, Oracle Cloud)"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33778",
+   "fecha": "2026-07-31T08:01:21+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33778",
+   "via": "DeItaone",
+   "original": "$AAPL - APPLE SHARES FALL 6.6% PREMARKET AFTER CURRENT-QUARTER SALES FORECAST MISSES WALL STREET TARGET",
+   "titulo": "Apple cae 6,6% en premarket tras guidance Q4 decepcionante",
+   "resumen": "Acciones de Apple caen 6,6% en operaciones previas a apertura tras pronóstico de ventas para Q4 por debajo de expectativas de Wall Street. El titular confirma presión en márgenes e ingresos que afecta outlook inmediato. Movimiento anterior a apertura genera volatilidad en mega-cap tech e índices.",
+   "analisis": {
+    "porque": "Reacción inmediata de precio a guidance miss; amplifica sesgo bajista en Apple; impacta sentimiento general de tech mega-caps",
+    "queOcurrio": "AAPL trading 6,6% a la baja en premarket en reacción a guidance Q4 insuficiente",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "AAPL",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAPL",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Apple",
+    "premarket",
+    "guidance",
+    "caída",
+    "Q4"
+   ],
+   "tgText": "📉 AAPL -6.6% en premarket por guidance Q4 debajo de expectativas. Presión en ingresos y márgenes confirmada. NASDAQ a la baja con Apple.",
+   "xText": "$AAPL -6.6% premarket. Guidance Q4 miss. Presión en ingresos/márgenes. NASDAQ impactado por peso del ticker. #TradingAlert",
+   "discordText": "**AAPL PREMARKET -6.6%**\n• Causa: Guidance Q4 por debajo de expectativas\n• Impacto: NASDAQ también a la baja\n• Volatilidad: Muy alta\n• Sesgo: Bajista confirmado",
+   "pushText": "Apple -6.6% premarket; guidance Q4 miss",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "AAPL cae en cascada; stops de algoritmos activan; volatilidad se amplifica en megacaps",
+    "despues": "NASDAQ sigue negativamente; S&P 500 baja leve; posible liquidación técnica en tech si se rompen soportes",
+    "escenarios": "Traders observarán nivel de soporte 2600 AAPL; si NASDAQ baja >1%, validaría inversión de sentimiento desde cierre anterior; posibles rebalances de índices",
+    "riesgos": "Riesgo de brecha downside mayor si sesión US abre con spillover negativo; riesgo de venta en cascada si se rompen soportes técnicos clave; re-pricing de valuaciones tech"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33777",
+   "fecha": "2026-07-31T08:00:47+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33777",
+   "via": "DeItaone",
+   "original": "U.S. S&P 500 E-MINI FUTURES UP 0.45%, NASDAQ 100 FUTURES UP 1.2%, DOW FUTURES UP 0.5%",
+   "titulo": "Futuros US suben moderadamente en sesión abierta: NASDAQ +1,2%",
+   "resumen": "Futuros de índices US operan al alza antes de apertura: S&P 500 E-Mini +0,45%, Nasdaq-100 +1,2%, Dow Jones +0,5%. Movimiento refleja sentimiento mixto: impulso alcista por validación de IA en Amazon versus presión por guidance débil de Apple. Volatilidad moderada.",
+   "analisis": {
+    "porque": "Snapshot de sentimiento pre-apertura; NASDAQ alcista (peso Amazon supera presión Apple); datos de volatilidad (VIX bajo) confirman ausencia de pánico",
+    "queOcurrio": "Índices futures US operan en positivo antes de sesión principal de 31 Jul 2026",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "DJI"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "futuros",
+    "apertura",
+    "NASDAQ",
+    "S&P500",
+    "sentimiento"
+   ],
+   "tgText": "📈 Futuros US al alza en apertura: NASDAQ +1.2%, S&P500 +0.45%, DJI +0.5%. Impulso Amazon supera presión Apple. VIX bajo.",
+   "xText": "ES +0.45%, NQ +1.2%, YM +0.5%. NASDAQ impulso por AMZN validación IA. Apertura sesión principal en minutos. #Markets",
+   "discordText": "**FUTUROS US: Apertura alcista**\n• S&P 500: +0.45%\n• NASDAQ: +1.2% (Amazon sube, Apple presión)\n• Dow Jones: +0.5%\n• Volatilidad: Baja",
+   "pushText": "Futuros US al alza; NASDAQ +1.2% por impulso Amazon",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "NQ (NASDAQ futures) adelanta sesión; ES (S&P) sigue con menor momentum",
+    "despues": "Comparación con cierre Asia-Pacific; spillover de presión yen en mercados financieros",
+    "escenarios": "Traders esperarán apertura de sesión oficial para confirmar si sostenible; si Goldman/Bernstein Amazon impulsa compras reales vs covering de shorts; vigilancia de levels técnicos en AAPL para escaladas de venta",
+    "riesgos": "Riesgo de reversión si datos de empleo US resultan débiles; gap risk si yen intervención amplía spreads; rotación rápida si datos eco debajo de expectativas"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33776",
+   "fecha": "2026-07-31T07:43:18+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33776",
+   "via": "DeItaone",
+   "original": "$AAPL - GOLDMAN CUTS APPLE PT ON SOFTER OUTLOOK Goldman Sachs cut its Apple price target to $360 from $370, while maintaining a Buy rating. The firm said Q3 results were largely in line, but weaker-than-expected Q4 guidance on revenue growth and margins weighed on the outlook. Goldman expects sentiment to improve as price increases, new AI features and product launches support revenue and margins.",
+   "titulo": "Goldman baja objetivo de Apple a $360; guía Q4 débil presiona outlook",
+   "resumen": "Goldman Sachs redujo objetivo de precio de Apple a $360 desde $370, manteniendo calificación de Compra. La firma señala que resultados Q3 fueron alineados pero guía Q4 de ingresos y márgenes más débil de lo esperado. Espera mejora cuando aumentos de precios, nuevas funciones IA y lanzamientos de productos impulsen ingresos y márgenes.",
+   "analisis": {
+    "porque": "Confirmación analítica de debilidad en guía; Apple cae 6.6% en premarket tras guidance decepcionante; impacta valuación mega-cap y sentimiento tech",
+    "queOcurrio": "Goldman Sachs baja objetivo en $10 tras evaluar guía Q4 débil; mantiene Compra anticipando recuperación por IA y ciclo de upgrades",
+    "estado": "confirmado",
+    "fuenteOriginal": "Goldman Sachs vía Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "AAPL",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAPL",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Apple",
+    "precio-objetivo",
+    "guía-débil",
+    "Q4",
+    "márgenes"
+   ],
+   "tgText": "📉 Goldman baja objetivo de Apple a $360. Guía Q4 de ingresos y márgenes debajo de expectativas. AAPL -6.6% en premarket. Rating: Compra.",
+   "xText": "$AAPL: Goldman baja PT a $360 por guía Q4 débil. Rating Buy mantenido. Espera recuperación con IA y lanzamientos. #Tech #Trading",
+   "discordText": "**AAPL: Goldman reduce objetivo a $360**\n• PT: $370 → $360 (baja $10)\n• Razón: Guía Q4 de ingresos/márgenes débil\n• Premarket: -6.6%\n• Rating: Compra (anticipa recuperación por IA)",
+   "pushText": "Goldman baja objetivo de Apple a $360; guía Q4 débil",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "AAPL cae en premarket; venta inicial cubre stop-losses de shorts cubiertos; NASDAQ reacciona negativamente por peso de Apple (6.9% del índice)",
+    "despues": "S&P 500 podría presionarse si venta se amplifica; posibles rotaciones hacia value; comparación con Amazon genera narrativa de divergencia (Amazon sube con capex IA, Apple baja por guía débil)",
+    "escenarios": "Traders vigilarán si baja del objetivo es inicio de revisiones bajistas más amplias; si guía Q4 incluye presión de demanda China o saturación de iPhone; si recuperación IA ('Apple Intelligence') será suficiente en H1 2026",
+    "riesgos": "Riesgo sistémico: si Apple y Nvidia ven presión simultánea, mercado podría cuestionar valuaciones tech al pico; riesgo de que 'Apple Intelligence' no impulse upgrades esperados; exposición China débil confirmada"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33775",
+   "fecha": "2026-07-31T07:42:04+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33775",
+   "via": "DeItaone",
+   "original": "$AMZN - GOLDMAN RAISES AMAZON PT TO $375 Goldman Sachs raised its Amazon price target to $375 from $335, maintaining a Buy rating. The firm cited accelerating AWS growth, strong AI and custom chip momentum, a higher 2026 capex plan of $220B, robust $496B backlog, solid Prime demand, and 26% advertising growth, saying the results reinforce Amazon's long-term AI and cloud leadership.",
+   "titulo": "Goldman sube objetivo de Amazon a $375; valida liderazgo en IA y nube",
+   "resumen": "Goldman Sachs elevó el precio objetivo de Amazon a $375 desde $335, manteniendo calificación de Compra. El análisis destaca aceleración del crecimiento de AWS (37% según Bernstein), impulso en IA, chips propios, plan de capex 2026 de $220B, cartera de $496B y crecimiento publicitario del 26%. Refuerza posición de liderazgo a largo plazo en cloud e IA.",
+   "analisis": {
+    "porque": "Actualización alcista de objetivo clave por analista de primer nivel; valida narrativa de monetización de inversión masiva en IA que movió AMZN +20% en julio",
+    "queOcurrio": "Goldman Sachs ajusta al alza objetivo de precio en $40 adicionales tras evaluar tracción de AWS, márgenes de IA y viabilidad de plan de capex agresivo",
+    "estado": "confirmado",
+    "fuenteOriginal": "Goldman Sachs vía Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "AMZN",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Amazon",
+    "Goldman-Sachs",
+    "objetivo-precio",
+    "AWS",
+    "IA",
+    "capex"
+   ],
+   "tgText": "📈 Goldman sube objetivo de Amazon a $375. Valida liderazgo en AWS y IA con crecimiento del 37% y capex de $220B en 2026. AMZN +1.2% en futuros.",
+   "xText": "Goldman eleva PT de $AMZN a $375 desde $335. AWS crece 37%, inversión IA de $220B validada por retornos. Posición: Buy. #Trading",
+   "discordText": "**AMZN: Goldman sube objetivo a $375**\n• PT anterior: $335 → Nuevo: $375\n• Catalizadores: AWS +37%, IA, chips propios\n• Rating: Compra mantenido\n• 2026 capex: $220B con ROI claro",
+   "pushText": "Goldman alza objetivo de Amazon a $375 por IA y AWS",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "AMZN reacciona al alza inmediatamente por validación de tesis de capex; NASDAQ sigue por peso en índice (3.5% del índice)",
+    "despues": "Posibles rotaciones en mega-cap tech si el mercado interpreta como confirmación de divergencia IA positiva en Amazon vs presión en Apple",
+    "escenarios": "Traders vigilarán si Goldman revisa al alza EPS 2026-2027 en próximos reportes; confirmación de demanda de capex sostenible; comparación vs objetivos de competidores (Microsoft, Nvidia)",
+    "riesgos": "Riesgo de que capex de $220B no genere ROI esperado; cambios en ciclo de tasas podrían pesar en capex intensivo; competencia en IA cloud acelerada"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 989869556,
    "fecha": "2026-07-31T06:05:22.000Z",
@@ -7225,386 +7560,6 @@
     "despues": "Posible arrastre a otros medios digitales y empresas en crisis de eficiencia similares (insustancial para índices amplios).",
     "escenarios": "Traders vigilarán: (1) ejecución real del recorte, (2) retención de talento editorial crítico, (3) impacto en ingresos publicitarios, (4) quemada de caja posterior.",
     "riesgos": "Recortes masivos pueden afectar calidad de contenido y atracción de anunciantes. Ganancia inicial podría revertirse si no hay mejora de rentabilidad real."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33632",
-   "fecha": "2026-07-28T07:57:27+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33632",
-   "via": "DeItaone",
-   "original": "U.S. CRUDE FUTURES DOWN 2.5% TO $80.54/BBL, LOWEST SINCE JULY 20",
-   "titulo": "Petróleo cae a mínimo de 8 días: WTI en $80,54/barril",
-   "resumen": "Futuros de crudo estadounidense caen 2,5% a $80,54 por barril, nivel más bajo desde el 20 de julio. La caída continúa la tendencia de debilidad post-desescalada en tensiones EE.UU.-Irán, reflejando normalización de premios geopolíticos y debilitamiento de demanda.",
-   "analisis": {
-    "porque": "Petróleo es barométro de riesgo geopolítico y demanda. Caída significa mercado precifica fin de escalada y revisa demanda a la baja.",
-    "queOcurrio": "WTI cae 2,5% en la sesión, rompiendo soporte de 8 días y alcanzando nivel más bajo desde el 20 de julio.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg Energy (via Walter Bloomberg)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "WTI",
-    "Brent",
-    "DXY",
-    "Energéticas",
-    "XLE"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Energéticas",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "petroleo",
-    "wti",
-    "desescalada-iran",
-    "precio-energia"
-   ],
-   "tgText": "📉 Petróleo WTI a $80,54/bbl (-2,5%), mínimo desde 20 de julio. Desescalada Iran-EEUU y debilidad de demanda pesan. Energéticas bajo presión.",
-   "xText": "WTI cae 2,5% a $80,54/bbl, mínimo de 8 días. Desescalada geopolítica y dudas de demanda siguen pesando en precio del crudo.",
-   "discordText": "**CRUDO EN BAJA**\n• WTI: $80,54/bbl (-2,5%)\n• Mínimo desde 20 julio\n• Factores: desescalada Iran + debilidad demanda",
-   "pushText": "Petróleo WTI baja a $80,54/bbl (mínimo de 8 días)",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones energéticas (XLE, Exxon, Chevron) reaccionan directamente; luego USD (fortalecimiento por menor presión inflacionaria).",
-    "despues": "Bonos (yields bajan leve); inflación esperada cede; divisas emergentes alivio (menos presión inflacionaria importada).",
-    "escenarios": "Traders vigilan si $80 es soporte o se quiebra hacia $78-77. Monitorean data de inventarios US (EIA miércoles). Diferencian caída por demanda vs sobreoferta.",
-    "riesgos": "Titular no incluye volumen ni contexto de inventarios. Riesgo que caída sea sobre-extendida si hay noticia alcista (OPEC+, disrupción suministro)."
-   },
-   "macro": {
-    "petroleo": "Bajista; -2,5% a $80,54",
-    "dolar": "Neutral a alcista (menor presión inflacionaria)",
-    "bonos": "Levemente alcista (inflation-lower play)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33629",
-   "fecha": "2026-07-28T07:35:17+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33629",
-   "via": "DeItaone",
-   "original": "FED DISSENTS COULD SIGNAL SEPTEMBER HIKE Investors are watching this week's Fed vote for clues on interest rates. A 10-2 split is expected, with two officials backing a 25bp rate hike. If more than three members dissent, it could signal growing support for a September hike. Still, T. Rowe Price expects the Fed to keep rates unchanged over the next 12 months.",
-   "titulo": "Mercados atentos a disidencias en Fed: posible señal de suba de tasas en septiembre",
-   "resumen": "Inversores escrutarán votación de la Fed esta semana buscando señales sobre tasas de interés. Se espera un voto 10-2 con dos funcionarios respaldando suba de 25 puntos básicos. Si más de tres miembros disienten, podría indicar creciente apoyo para suba en septiembre. T. Rowe Price prevé tasas sin cambios en próximos 12 meses.",
-   "analisis": {
-    "porque": "Las disidencias en votaciones Fed son señal de posibles cambios de rumbo futuro. Mercado reprecia tasas e inciertidumbre según composición de votos.",
-    "queOcurrio": "Se espera reunión Fed esta semana; voto esperado 10-2 pero mercado monitorea si disidencias superan 3 miembros (señal de cambio de tono).",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (via Walter Bloomberg, referencia T. Rowe Price)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos USA",
-    "Rendimientos USA",
-    "DXY",
-    "S&P 500",
-    "FX"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "fed",
-    "tasas-interes",
-    "politica-monetaria",
-    "disidencias",
-    "septiembre"
-   ],
-   "tgText": "🏦 Fed en foco: voto esperado 10-2 esta semana. Si >3 disidencias favor de suba, señalaría apoyo para septiembre. T. Rowe Price: sin cambios en 12m.",
-   "xText": "Fed esta semana: esperan voto 10-2, pero >3 disidencias podrían indicar creciente apoyo para suba en septiembre. T. Rowe Price espera estancamiento 12m.",
-   "discordText": "**FED EN OBSERVACIÓN**\n• Voto esperado: 10-2 (sin cambios)\n• Señal: si >3 disidencias → apoyo para septiembre\n• Consenso T. Rowe: sin cambios próximos 12m",
-   "pushText": "Fed esta semana: mercados vigilan disidencias como señal de tasas en septiembre",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Yields US 2Y y 10Y reaccionan; luego mercado de futuros de tasas (Fed Funds Futures) reprecia probabilidad de suba.",
-    "despues": "USD (fortalecimiento si hay señales de más subas); acciones tech (sensibles a tasas); bonos corporativos.",
-    "escenarios": "Traders monitorean: (a) si voto es unánime, señal de 'dovish pause'; (b) si >3 disidencias, crecimiento de 'hawks'. Clave: qué dicen funcionarios en conferencia. T. Rowe Price es contrapeso dovish.",
-    "riesgos": "Titular no especifica qué funcionarios disienten ni en qué sentido. 'Más de 3 disidencias' es umbral editorial, no confirmado. Riesgo over-reading de una disidencia rutinaria."
-   },
-   "macro": {
-    "bonos": "Neutral; yields vigilados",
-    "dolar": "Neutral a alcista si se confirma tono hawkish",
-    "sp500": "Neutral; sensibilidad a tasas"
-   },
-   "updates": []
-  },
-  {
-   "id": 906059417,
-   "fecha": "2026-07-28T05:06:22.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html",
-   "via": "CNBC",
-   "original": "Oil extends losses as a pause in U.S.-Iran hostilities raises de-escalation hopes",
-   "titulo": "Petróleo extiende caídas tras desescalada en hostilidades EE.UU.-Irán",
-   "resumen": "Los precios del petróleo continúan bajo presión tras signos de desescalada en las tensiones entre Estados Unidos e Irán, elevando expectativas de resolución diplomática. El movimiento refuerza la tendencia bajista registrada en sesiones previas y alimenta esperanza de estabilidad geopolítica en el Golfo Pérsico.",
-   "analisis": {
-    "porque": "Prime riesgo geopolítico para oferta de energía global; desescalada reduce prima de riesgo en barril y presiona precios.",
-    "queOcurrio": "Mercado de petróleo asimila mejora en ambiente diplomático entre EE.UU. e Irán, extendiendo liquidación de posiciones especulativas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo WTI",
-    "Brent",
-    "Energía",
-    "Dólar",
-    "Inflación"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Inflación",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Energía",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "petróleo",
-    "Irán",
-    "EE.UU.",
-    "geopolítica",
-    "energía",
-    "desescalada"
-   ],
-   "tgText": "⛽ Petróleo extiende caídas por desescalada Irán-EE.UU. Presión en WTI y Brent mantiene expectativa alcista en mercados de renta variable.",
-   "xText": "Petróleo sigue bajista tras signos de desescalada en hostilidades EE.UU.-Irán. Presión sobre prima de riesgo geopolítico beneficia renta variable y bonos.",
-   "discordText": "**Petróleo | Desescalada Geopolítica**\n• Hostilidades EE.UU.-Irán muestran signos de baja\n• WTI y Brent extiendan caídas\n• Esperanza diplomática reduce prima de riesgo\n→ Positivo para equities y inflación",
-   "pushText": "Petróleo baja por desescalada Irán-EE.UU.; presión en WTI",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "WTI y Brent por liquidación de posiciones de cobertura geopolítica; después inflación y bonos",
-    "despues": "Energy stocks internacionales; spreads de crédito por baja de presión inflacionaria; carry trades (JPY) si baja de tasas se consolida",
-    "escenarios": "Traders vigilan: (1) Confirmación oficial de negociaciones EE.UU.-Irán; (2) Comportamiento de reservas estratégicas (SPR); (3) Producción OPEC+ y cumplimiento de cuotas; (4) Impacto en componente de energía de inflación subyacente",
-    "riesgos": "Riesgo de reversión rápida si escala nuevamente conflicto; riesgo de titulación: \"pausa\" no implica acuerdo permanente; factores de demanda global (recesión) pueden también presionar precios"
-   },
-   "macro": {
-    "petroleo": "Bajista en corto plazo por desescalada; riesgo de reversión en escalada"
-   },
-   "updates": []
-  },
-  {
-   "id": 915629764,
-   "fecha": "2026-07-28T03:55:40.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/indonesian-stocks-enter-bull-market.html",
-   "via": "CNBC",
-   "original": "Indonesian stocks stage massive turnaround, hitting bull market status after clocking a five-year low just last month",
-   "titulo": "Bolsa indonesa repunta dramáticamente hacia territorio alcista tras mínimo de 5 años",
-   "resumen": "Las acciones indonesas experimentan giro espectacular, alcanzando estatus de mercado alcista (bull market) apenas un mes después de tocar mínimos de cinco años. El movimiento refleja recuperación de confianza en mercados emergentes asiáticos. El titular no especifica catalizadores puntuales ni fundamentos de la recuperación.",
-   "analisis": {
-    "porque": "Sentimiento en mercados emergentes impacta flujos de capital global; reversión en Indonesia señala volatilidad extrema y potencial de contagio en Asia.",
-    "queOcurrio": "Índice bursátil indonesio pasó de mínimo de largo plazo a terreno alcista (ganancia >= 20% desde mínimo) en período de un mes.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "IDX (Indonesia)",
-    "Mercados Emergentes",
-    "Asia",
-    "Dólar"
-   ],
-   "sesgos": [
-    {
-     "activo": "Indonesia",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Mercados Emergentes",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Emergencia",
-   "keywords": [
-    "Indonesia",
-    "mercados-emergentes",
-    "Asia",
-    "bull-market",
-    "volatilidad"
-   ],
-   "tgText": "🇮🇩 Indonesia entra en bull market tras rebotar de mínimo de 5 años en solo un mes. Señal de volatilidad extrema en mercados emergentes asiáticos.",
-   "xText": "Indonesia pasa de mínimo de 5 años a bull market en 1 mes. Giro dramático en confianza de inversores en mercados emergentes de Asia. IDX en vigilancia.",
-   "discordText": "**Indonesia | Reversión Dramática**\n• Índice bursátil toca mínimo de 5 años\n• Semanas después: alcanza estatus bull market\n• Refleja volatilidad extrema en EM asiáticos\n→ Cambio de sentimiento hacia renta variable emergente",
-   "pushText": "Indonesia entra en bull market tras rebotar de mínimo de 5 años",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "IDX directamente; después mercados emergentes regionalmente (Tailandia, Malasia, Filipinas) si contagio positivo",
-    "despues": "Fondos EM globales; carry trades en monedas asiáticas (IDR); bonos soberanos indonesios",
-    "escenarios": "Traders vigilan: (1) Sostenibilidad del rebote (es V-shaped recovery o dead cat bounce); (2) Flujos de fondos EM internacionales; (3) Fundamentos de Indonesia (inflación, déficit fiscal, deuda externa); (4) Contagio a otros EM asiáticos o divergencia",
-    "riesgos": "Riesgo altísimo de reversión: movimiento de mínimo a bull market en un mes sugiere volatilidad extrema y potencial de vuelco; riesgo de falta de catalizadores en titular; riesgo macroeconómico global (recesión EE.UU., tasas)"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 974924578,
-   "fecha": "2026-07-28T02:26:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/stock-market-today-live-updates.html",
-   "via": "CNBC",
-   "original": "U.S. stock futures slip, South Korea&apos;s Kospi plunges over 8%: Live updates",
-   "titulo": "Futuros USA caen mientras KOSPI colapsa 8%: contagio regional en renta variable",
-   "resumen": "Futuros de acciones estadounidenses caen mientras el índice KOSPI de Corea del Sur se desploma más de 8%, señalando propagación de estrés desde Asia hacia mercados globales. Temores sobre ciclo económico y demanda de semiconductores.",
-   "analisis": {
-    "porque": "Venta coordinada en múltiples geografías amplifica riesgo sistémico; correlación entre mercados asiáticos y occidentales indica reversión mayor de sentimiento riesgo-on",
-    "queOcurrio": "Futuros US en baja; KOSPI cae 8%+ en sesión en tiempo real, reflejando venta regional acelerada",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "KOSPI",
-    "Futuros USA",
-    "Acciones Tecnológicas",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "KOSPI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Breaking News",
-   "keywords": [
-    "kospi",
-    "futuros-usa",
-    "venta-masiva",
-    "contagio-asia",
-    "risk-off",
-    "semiconductor"
-   ],
-   "tgText": "🔴 BREAKING: KOSPI se desmorona 8%+. Futuros USA caen. Venta masiva en Asia contagia mercados globales. Riesgo sistémico en aumento.",
-   "xText": "🚨 KOSPI cae 8%+, futuros USA bajan. Estrés regional de Asia se propaga a Occidente. Liquidaciones coordinadas en renta variable. Risk-off acelerado. #Markets",
-   "discordText": "**⚠️ BREAKING: Caída coordinada en Asia-USA**\n• KOSPI: -8%+\n• Futuros USA: bajistas\n• Venta masiva propaga contagio regional\n• Risk-off dominante",
-   "pushText": "KOSPI -8%, futuros USA caen: riesgo sistémico regional",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Índices asiaticos (KOSPI, Nikkei, Shanghai) y futuros S&P500, NASDAQ—reacción inmediata de stop-loss y deunwinding",
-    "despues": "Bonos (busca de seguridad), dólar (flight-to-safety), oro; volatilidad implícita (VIX); carry trades liquidándose",
-    "escenarios": "Traders buscan soporte técnico clave en KOSPI (200 DMA), resistencia en futuros; vigilancia en volumen de venta y cascada de liquidaciones; riesgo de circuit breaker",
-    "riesgos": "Momento de máxima volatilidad; riesgo de pánico y oversold excesivo; contagio potencial a mercados de renta fija y fx"
-   },
-   "macro": {
-    "dolar": "alcista (flight-to-safety)",
-    "oro": "alcista (demanda de refugio)",
-    "nasdaq": "bajista (presión sectorial tech)",
-    "dow": "bajista (contagio regional)",
-    "sp500": "bajista (futuros caen)",
-    "bitcoin": "neutral-bajista (correlación riesgo)",
-    "ethereum": "neutral-bajista (correlación riesgo)",
-    "bonos": "alcista (demanda refugio)",
-    "petroleo": "bajista (preocupaciones demanda)"
-   },
-   "updates": []
-  },
-  {
-   "id": 932356747,
-   "fecha": "2026-07-28T01:48:30.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/sk-hynix-plunges-semiconductor-selloff-deepens-samsung-softbank.html",
-   "via": "CNBC",
-   "original": "Shares of SK Hynix plunge 10% in Seoul as semiconductor selloff deepens",
-   "titulo": "SK Hynix cae 10% en Seúl mientras venta de semiconductores se profundiza",
-   "resumen": "Acciones de SK Hynix desplomaron 10% en la bolsa de Seúl, ampliando la caída del sector de semiconductores. La venta refleja preocupaciones sobre demanda global y márgenes en memoria DRAM/NAND.",
-   "analisis": {
-    "porque": "Indicador de estrés en cadena de suministro global de chips; presión sobre valuaciones de fabricantes asiáticos y exposición de fondos occidentales",
-    "queOcurrio": "SK Hynix registró caída de 10% en sesión de Seúl mientras continúa liquidación sectorial de semiconductores",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "SK Hynix",
-    "KOSPI",
-    "Semiconductores",
-    "NASDAQ",
-    "ASML",
-    "Taiwan Semiconductor"
-   ],
-   "sesgos": [
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "KOSPI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Acciones Tecnológicas",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "sk-hynix",
-    "semiconductores",
-    "dram",
-    "venta-masiva",
-    "asia",
-    "kospi"
-   ],
-   "tgText": "⚠️ SK Hynix se desmorona 10% en Seúl. Venta de semiconductores se profundiza. Temores sobre demanda global y márgenes golpean supply chain de chips.",
-   "xText": "SK Hynix cae 10% en Seúl; caída de semiconductores se agrava. Presión sobre DRAM/NAND y cadena global de suministro. Riesgo sistémico en tech exposure. #KOSPI",
-   "discordText": "**SK Hynix: -10% en Seúl**\n• Venta sectorial de semiconductores acelerada\n• Presión sobre márgenes DRAM/NAND\n• Contagio potencial a mercados occidentales",
-   "pushText": "SK Hynix -10%: venta de semiconductores se intensifica",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "KOSPI, SK Hynix y pares asiáticos—liquidación acelerada; contagio a futuros occidentales",
-    "despues": "NASDAQ, S&P 500 (exposición a semiconductores); fondos emergentes; carry trades deshaciendo posiciones",
-    "escenarios": "Traders monitorean resistencia KOSPI, correlación con futuros US, sobreventa técnica en semiconductores y reversal potencial; vigilancia en ASML y rivales occidentales",
-    "riesgos": "Caída abrupta puede generar liquidaciones forzadas; efecto dominó en mercados de renta variable de Asia y Occidente si continúa"
    },
    "macro": null,
    "updates": []
