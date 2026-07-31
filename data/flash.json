@@ -1,6 +1,6 @@
 {
- "lastId": 33824,
- "actualizado": "2026-07-31T21:21:18.041Z",
+ "lastId": 33826,
+ "actualizado": "2026-07-31T22:29:12.718Z",
  "items": [
   {
    "id": "33821",
@@ -72,13 +72,25 @@
    },
    "updates": [
     {
+     "fecha": "2026-07-31T22:17:48+00:00",
+     "id": "33825",
+     "texto": "Senior security official iraní condenó vía TASNIM reportes de potenciales ataques estadounidenses e israelíes a infraestructuras iraníes, calificándolos como 'forma de imprudencia'. Declaración refuerza posición combativa y señala preparación para respuesta. Contexto: escalada tras reportes de disparos iraníes contra Jordania.",
+     "tgUrl": "https://t.me/walterbloomberg/33825"
+    },
+    {
+     "fecha": "2026-07-31T22:19:25+00:00",
+     "id": "33826",
+     "texto": "Funcionario iraní senior confirmó que plan de respuesta incluye infraestructuras críticas de Israel y energética estadounidense en la región. Escala amenaza tras reporte de posibles ataques de EE.UU. e Israel a infraestructuras iraníes. Declaración de TASNIM (agencia estatal iraní) eleva tensión geopolítica y riesgos de disrupción en mercados energéticos globales.",
+     "tgUrl": "https://t.me/walterbloomberg/33826"
+    },
+    {
      "fecha": "2026-07-31T20:56:57+00:00",
      "id": "33823",
      "texto": "Washington e Israel coordinan una campaña potencial contra objetivos de energía en Irán, con posibles operaciones este fin de semana según CBS. Trump aún no ha dado aprobación final. Los funcionarios evalúan el impacto económico y coordinan para completar operaciones antes de la apertura de mercados del lunes. White House y autoridades israelíes alinean planes operacionales.",
      "tgUrl": "https://t.me/walterbloomberg/33823"
     }
    ],
-   "actualizado": "2026-07-31T20:56:57+00:00"
+   "actualizado": "2026-07-31T22:17:48+00:00"
   },
   {
    "id": "33822",
