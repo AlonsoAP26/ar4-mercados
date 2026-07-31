@@ -5327,3 +5327,29 @@ td > .dk-chip:first-child { margin-left: 0; }
 /* ===== Insignia de transparencia: Agente IA ===== */
 .ai-chip { display: inline-flex; align-items: center; gap: 4px; margin-left: 6px; padding: 1px 8px; font-size: 0.62rem; letter-spacing: 0.8px; text-transform: uppercase; color: #9db8e8; border: 1px solid rgba(122,168,255,0.4); border-radius: 12px; vertical-align: 2px; white-space: nowrap; }
 .ai-chip svg { flex: none; }
+
+/* ===== Cifras coloreadas en titulares del Flash (el ojo busca números) ===== */
+.fl-num-up { color: var(--green); font-weight: 700; }
+.fl-num-dn { color: var(--red); font-weight: 700; }
+.fl-num-nt { color: var(--gold-bright); font-weight: 700; }
+
+/* ===== Pulso del flash más reciente: "esto está pasando AHORA" ===== */
+.fl-strip-item:first-child > .sdot { animation: fl-pulso 2s ease-in-out infinite; }
+@keyframes fl-pulso {
+  0%, 100% { box-shadow: 0 0 6px currentColor, 0 0 0 0 rgba(212,175,55,0.4); }
+  50% { box-shadow: 0 0 6px currentColor, 0 0 0 7px rgba(212,175,55,0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fl-strip-item:first-child > .sdot { animation: none; }
+}
+
+/* ===== Jerarquía en el hero: ambos dorados, pero la comunidad manda ===== */
+.hero-centrado .hero-actions .btn-gold:first-child {
+  padding: 15px 32px;
+  font-size: 1.01rem;
+  box-shadow: 0 10px 32px rgba(212,175,55,0.42);
+}
+.hero-centrado .hero-actions .btn-gold:first-child:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 38px rgba(212,175,55,0.5);
+}

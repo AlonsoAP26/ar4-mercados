@@ -29,6 +29,35 @@
   // Icono SVG monocromo (regla de la casa: sin emojis en la UI).
   const BRK_ICON = '<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px;margin-right:3px;"><path d="M13 2 4.5 13.5H11L9.5 22 19 9.5h-6.5L13 2z"/></svg>';
 
+  // Cifras coloreadas dentro del titular: el ojo del trader escanea números.
+  // Un verbo direccional tiñe las cifras que le siguen (verde sube / rojo cae);
+  // sin dirección clara van en dorado neutro. Años sueltos y códigos (Q2, 10Y,
+  // G10) se quedan como texto: colorearlos sería ruido, no información.
+  const VERBO_UP = /^(sube|suben|salta|saltan|dispara|disparan|gana|ganan|avanza|avanzan|repunta|repuntan|crece|crecen|supera|superan|expande|expanden|mejora|mejoran|alza|rally|alcista)$/;
+  const VERBO_DN = /^(cae|caen|baja|bajan|pierde|pierden|desploma|desploman|retrocede|retroceden|hunde|hunden|recorta|recortan|rebaja|rebajan|contrae|contraen|desacelera|desaceleran|bajista|pérdidas|perdidas)$/;
+  const MES = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)$/;
+  function tituloHTML(raw) {
+    const partes = String(raw == null ? '' : raw).split(/(\s+)/);
+    const limpiar = (t) => t.toLowerCase().replace(/^[¿¡("'“]+|[),.;:!?"'”]+$/g, '');
+    let dir = '';
+    return partes.map((tok, i) => {
+      if (!tok.trim()) return esc(tok);
+      const limpio = limpiar(tok);
+      if (VERBO_UP.test(limpio)) { dir = 'up'; return esc(tok); }
+      if (VERBO_DN.test(limpio)) { dir = 'dn'; return esc(tok); }
+      if (!/\d/.test(tok)) return esc(tok);
+      // Años y fechas ("30 de julio") son contexto, no dato de mercado.
+      if (/^(19|20)\d{2}$/.test(limpio)) return esc(tok);
+      if (limpiar(partes[i + 2] || '') === 'de' && MES.test(limpiar(partes[i + 4] || ''))) return esc(tok);
+      // Códigos tipo Q2, 10Y, G10 (letras pegadas al número, sin % ni moneda).
+      if (/[a-z]/i.test(limpio.replace(/[bmk]$/i, '')) && !/[%$€£¥]/.test(tok)) return esc(tok);
+      // Conteos sueltos de un dígito ("2 buques") sin dirección: ruido, no cifra.
+      if (!dir && /^\d$/.test(limpio)) return esc(tok);
+      const cls = dir ? 'fl-num-' + dir : 'fl-num-nt';
+      return '<span class="' + cls + '">' + esc(tok) + '</span>';
+    }).join('');
+  }
+
   // Los titulares pueden traer varias categorías separadas por "|"
   // (p. ej. "Aranceles|Empresas|Geopolítica"). El filtro compara contra cada
   // una; antes usaba igualdad exacta y esos titulares no salían en ningún filtro.
@@ -71,7 +100,7 @@
         <span class="fl-imp"><span class="sdot ${dot}"></span> impacto ${esc(it.impacto)}</span>
         <span class="fl-time" data-t="${esc(it.actualizado || it.fecha)}">${timeAgo(it.actualizado || it.fecha)}</span>
       </div>
-      <h3 class="fl-title">${esc(it.titulo)}</h3>
+      <h3 class="fl-title">${tituloHTML(it.titulo)}</h3>
       ${upd ? `<div class="fl-update-tag">Nueva información disponible · ${upd} actualización${upd > 1 ? 'es' : ''}</div>` : ''}
       <p class="fl-resumen">${esc(it.resumen)}</p>
       <div class="fl-meta">
@@ -127,7 +156,7 @@
         <div class="fl-strip-row">${top.map((it) => `
           <a href="noticias.html#flash" class="fl-strip-item">
             ${it.breaking ? '<span class="fl-brk">' + BRK_ICON + '</span>' : `<span class="sdot ${IMP_DOT[it.impacto] || 'sdot-n'}"></span>`}
-            <span class="fl-strip-title">${esc(it.titulo)}</span>
+            <span class="fl-strip-title">${tituloHTML(it.titulo)}</span>
             <span class="fl-strip-time" data-t="${esc(it.actualizado || it.fecha)}">${timeAgo(it.actualizado || it.fecha)}</span>
           </a>`).join('')}</div>` : '';
     }
