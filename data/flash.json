@@ -1,7 +1,150 @@
 {
  "lastId": 33774,
- "actualizado": "2026-07-30T23:58:23.778Z",
+ "actualizado": "2026-07-31T02:53:53.267Z",
  "items": [
+  {
+   "id": "940624544",
+   "fecha": "2026-07-31T02:06:06.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
+   "via": "CNBC",
+   "original": "China&apos;s factory activity unexpectedly contracts in July as export rush fades",
+   "titulo": "Actividad fabril china se contrae en julio; impulso exportador se desvanece",
+   "resumen": "Datos muestran contracción inesperada de actividad manufacturera china en julio, interrumpiendo breve período de recuperación. La debilidad fabril refleja desvanecimiento del impulso exportador tras período de envíos acelerados y presiones de demanda doméstica.",
+   "analisis": {
+    "porque": "China es motor de demanda global; contracción fabril sugiere ralentización de ciclo económico global. Impacta commodities, exportadores Asia, índices globales y expectativas de crecimiento.",
+    "queOcurrio": "Actividad manufacturera china contrae inesperadamente en julio tras breve recuperación; impulso exportador se desvanece.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "CNY",
+    "Índices China",
+    "Commodities",
+    "Exportadores Asia",
+    "Oro",
+    "Petróleo",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "CNY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Commodities",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Índices China",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "China",
+    "manufactura",
+    "contracción",
+    "exportaciones",
+    "crecimiento"
+   ],
+   "tgText": "📊 Manufactura china se contrae en julio; impulso exportador se desvanece. Señal de ralentización de demanda global y presiones económicas.",
+   "xText": "Actividad fabril china contrae en julio, sorpresa a baja. Impulso exportador se desvanece. Riesgo: ralentización de demanda global.",
+   "discordText": "**China: manufacturera débil**\n• Contracción julio (sorpresa negativa)\n• Impulso exportador se desvanece\n• Riesgo: ralentización global",
+   "pushText": "Manufactura china se contrae en julio; demanda global en riesgo",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "CNY se debilita (riesgo devaluación). Índices de bolsa china caen (Shanghai Composite, Shenzhen). Commodities presionan (crudo, cobre).",
+    "despues": "Exportadores asiáticos (Japón, Corea, Taiwan) reevalúan perspectivas. USD fortalece vs. emergentes. Indices globales reaccionan.",
+    "escenarios": "Traders vigilarán: (1) si es contracción transitoria o inicio de debilitamiento estructural, (2) respuesta policy de Pekín (estímulo), (3) impacto en PMI de otros países, (4) cadenas de suministro globales",
+    "riesgos": "Titular solo menciona 'survey'; sin especificar si es PMI Caixin, PMI oficial NBS u otra métrica. Posible sesgo de fuente. Datos preliminares pueden revisarse."
+   },
+   "macro": {
+    "cny": "bajista",
+    "indices-china": "bajista",
+    "petróleo": "bajista",
+    "oro": "potencialmente alcista (risk-off)",
+    "nasdaq": "neutral a bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "976957756",
+   "fecha": "2026-07-31T00:52:26.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/sk-hynix-samsung-ai-rally-chipmakers.html",
+   "via": "CNBC",
+   "original": "SK Hynix shares surge 25%, while Samsung soars over 20% as AI rally roars back",
+   "titulo": "SK Hynix y Samsung se disparan 25% y 20% respectivamente; rally de IA en semiconductores vuelve",
+   "resumen": "Acciones de SK Hynix y Samsung registran ganancias significativas de 25% y 20% respectivamente, impulsadas por renovación del rally de inteligencia artificial en el sector de semiconductores. El movimiento refleja recuperación de demanda de chips y memoria para aplicaciones IA tras presiones previas.",
+   "analisis": {
+    "porque": "Señala renovación de apetito por semiconductores de memoria (DRAM, NAND), cruciales para infraestructura IA. Impacta índices tech y narrativa global de capex IA como motor de crecimiento.",
+    "queOcurrio": "SK Hynix sube 25% y Samsung 20%, impulsadas por rally renovado en demanda de semiconductores para IA.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "SK Hynix",
+    "Samsung",
+    "Semiconductores",
+    "NVDA",
+    "AMD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "SK Hynix",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Samsung",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SK-Hynix",
+    "Samsung",
+    "semiconductores",
+    "IA",
+    "memoria",
+    "rally"
+   ],
+   "tgText": "🚀 SK Hynix +25%, Samsung +20%: rally IA en semiconductores renace. Demanda de chips memoria para aplicaciones IA reaviva apetito por sector.",
+   "xText": "SK Hynix dispara 25%, Samsung 20%. Rally IA en semiconductores vuelve con fuerza. Demanda de memoria para infraestructura IA reaviva sector.",
+   "discordText": "**Semiconductores: rally IA reanuda fuerza**\n• SK Hynix: +25% 🟢\n• Samsung: +20% 🟢\n• Impulso: demanda chips memoria IA",
+   "pushText": "SK Hynix +25%, Samsung +20% por rally IA",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "SK Hynix y Samsung reaccionan inmediatamente por renovación de demanda. NASDAQ sigue alcista por reconocimiento de ciclo semiconductor positivo.",
+    "despues": "NVDA, AMD, QCOM podrían extender ganancias por efecto sectorial. Índices tech globales (KOSPI para Samsung/SK Hynix, Nasdaq para peers US) acompañan.",
+    "escenarios": "Traders vigilarán: (1) si rally es sostenible o corrección técnica, (2) datos de pedidos/inventario de memoria, (3) impacto en márgenes de productores ante surge de demanda, (4) competencia de TSMC",
+    "riesgos": "Rally podría ser corrección técnica en lugar de renovación de demanda fundamental. Titular no especifica catalizador exacto (earnings positivos, guía alcista, datos de demanda). Riesgo de reversión rápida."
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "semiconductores": "alcista muy fuerte",
+    "sk-hynix": "alcista",
+    "samsung": "alcista"
+   },
+   "updates": []
+  },
   {
    "id": 948862787,
    "fecha": "2026-07-30T23:50:41.000Z",
@@ -331,6 +474,248 @@
     "riesgos": "Inestabilidad podría ser transitoria; también podría indicar cambios permanentes en búsqueda; Reddit es IPO reciente con volatilidad natural alta."
    },
    "macro": null,
+   "updates": []
+  },
+  {
+   "id": "912005534",
+   "fecha": "2026-07-30T21:53:07.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/coinbase-coin-earnings-q2-2026.html",
+   "via": "CNBC",
+   "original": "Coinbase shares fall after crypto exchange posts disappointing second-quarter results",
+   "titulo": "Coinbase cae tras resultados Q2 decepcionantes; criptomercado bajo presión",
+   "resumen": "Acciones de Coinbase caen después de que el intercambio de criptomonedas reporte resultados de segundo trimestre por debajo de expectativas. El evento presiona la narrativa de recuperación cripto y refleja debilidad en volúmenes de negociación y adopción.",
+   "analisis": {
+    "porque": "Coinbase es barómetro del mercado cripto retail y institucional. Resultados débiles sugieren ralentización de adoption o volatilidad baja en precios cripto, impactando valoraciones del sector.",
+    "queOcurrio": "Coinbase reporta Q2 2026 con resultados decepcionantes; acción reacciona a la baja.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "COIN",
+    "Bitcoin",
+    "Ethereum",
+    "Criptomercado"
+   ],
+   "sesgos": [
+    {
+     "activo": "COIN",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Criptomercado",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "Coinbase",
+    "Q2-resultados",
+    "criptomonedas",
+    "volúmenes",
+    "adoption"
+   ],
+   "tgText": "📉 Coinbase cae por Q2 decepcionante. Resultados débiles presionan narrativa de recuperación cripto y reflejan flojedad en volúmenes.",
+   "xText": "Coinbase cae tras Q2 decepcionante. Resultados débiles presionan sector cripto y cuestionan dinámica de adopción.",
+   "discordText": "**Coinbase: resultados débiles**\n• Q2 2026 decepcionante\n• Acción cae 📉\n• Presión en narrativa cripto",
+   "pushText": "Coinbase cae; Q2 decepcionante",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "COIN cae directamente. Bitcoin y Ethereum podrían reaccionar a la baja si el evento señala debilidad en demanda de trading cripto.",
+    "despues": "Otros exchanges cripto (Kraken, Gemini si cotizaran) sufrirían presión similar. Sentimiento cripto negativo podría extenderse.",
+    "escenarios": "Traders vigilarán: (1) qué causó decepción (volúmenes, márgenes, usuarios), (2) guía forward de Coinbase, (3) correlación con precios BTC/ETH, (4) posible efecto contagio en otros players cripto",
+    "riesgos": "Titular no especifica magnitud de la decepción ni comparativa con consenso. Podría tratarse de miss marginal o fallo operativo serio."
+   },
+   "macro": {
+    "bitcoin": "neutral a bajista",
+    "ethereum": "neutral a bajista",
+    "coin": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "988280950",
+   "fecha": "2026-07-30T21:31:31.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+   "via": "CNBC",
+   "original": "Amazon hikes 2026 capex to $220 billion due to higher memory costs",
+   "titulo": "Amazon amplía capex a $220B en 2026 por costos de memoria; inversión IA se intensifica",
+   "resumen": "Amazon incrementa su gasto de capital para 2026 a $220 mil millones, impulsado por mayores costos de memoria asociados a infraestructura de inteligencia artificial. La escalada confirma la estrategia agresiva del gigante tecnológico en data centers y capacidad computacional para sustentar demanda de servicios IA, profundizando apuestas previas.",
+   "analisis": {
+    "porque": "Señala intensificación de guerra de capex entre gigantes tech en IA; afecta narrativa de rentabilidad a corto plazo y presiona márgenes operativos. Relevante para evaluación de sostenibilidad de inversiones masivas en IA.",
+    "queOcurrio": "Amazon anuncia incremento de gasto de capital a $220 mil millones para 2026, con mayor asignación a costos de memoria por infraestructura IA.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "AMZN",
+    "Semiconductores",
+    "Tech Mega Cap"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Tech Mega Cap",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Amazon",
+    "capex",
+    "IA",
+    "infraestructura",
+    "memoria",
+    "data-center"
+   ],
+   "tgText": "📊 Amazon sube capex a $220B para 2026 por costos memoria IA. Inversión masiva en infraestructura confirma apuesta estratégica pero presiona márgenes corto plazo.",
+   "xText": "Amazon eleva gasto capital a $220B en 2026 por costos memoria en IA. Intensifica carrera tech por infraestructura computacional. Impacto: márgenes y rentabilidad bajo presión.",
+   "discordText": "**Amazon amplía capex a $220B (2026)**\n• Incremento por costos memoria IA\n• Presión en márgenes operativos\n• Estrategia agresiva en data centers",
+   "pushText": "Amazon sube capex a $220B por IA; presiona márgenes",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "AMZN reacciona directamente: mercado evalúa sostenibilidad de rentabilidad con capex tan agresivo. Riesgo de rebaja de márgenes operativos futura.",
+    "despues": "Semiconductores (AMD, NVDA, QCOM) podrían subir por demanda de chips; NASDAQ y tech mega cap evalúan si este es modelo sectorial",
+    "escenarios": "Traders vigilarán: (1) si capex justifica ingresos IA futuros, (2) presión en FCF y ratios de rentabilidad, (3) si competencia (MSFT, GOOG) sigue escalada similar",
+    "riesgos": "Titular no especifica si $220B es aumento respecto a presupuesto anterior ni breakdown exacto entre IA vs. otros segmentos. Riesgo de interpretación distinta según call de earnings."
+   },
+   "macro": {
+    "nasdaq": "presión media por margen de duda en rentabilidad",
+    "amzn": "neutral a bajista corto plazo",
+    "semiconductores": "potencialmente alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "966969587",
+   "fecha": "2026-07-30T21:29:19.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html",
+   "via": "CNBC",
+   "original": "AI investor Leopold Aschenbrenner forced to unwind all public stock positions after steep losses, sources say",
+   "titulo": "Inversor IA Leopold Aschenbrenner forzado a desmontar posiciones por pérdidas significativas",
+   "resumen": "Leopold Aschenbrenner, conocido inversor en inteligencia artificial, se ve obligado a liquidar todas sus posiciones públicas en acciones tras enfrentar pérdidas significativas. El evento refleja volatilidad extrema en estrategias de apuestas concentradas en IA y riesgo de desapalancamiento forzado.",
+   "analisis": {
+    "porque": "Ilustra riesgo de apalancamiento y concentración extrema en trades temáticos de IA. Puede señalar punto de capitulación en narrativa de IA o marcar límite de fondeo especulativo. Precedente similar: despalancamientos globales.",
+    "queOcurrio": "Aschenbrenner, inversor prominente en IA, fuerza liquidación de todas posiciones públicas tras pérdidas marcadas. Fuentes anónimas citan acción.",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "Tech Mega Cap",
+    "Acciones IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech temático IA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Aschenbrenner",
+    "IA",
+    "pérdidas",
+    "despalancamiento",
+    "riesgo-liquidez"
+   ],
+   "tgText": "⚠️ Inversor IA Aschenbrenner liquida posiciones por pérdidas. Señal de riesgo de apalancamiento en trades temáticos IA y potencial despalancamiento.",
+   "xText": "Inversor IA Leopold Aschenbrenner forzado a liquidar posiciones por pérdidas. Alerta sobre riesgo de despalancamiento en trades temáticos IA.",
+   "discordText": "**Alerta: Despalancamiento IA**\n• Inversor Aschenbrenner liquida posiciones\n• Causa: pérdidas significativas\n• Riesgo: efecto dominó en estrategias concentradas",
+   "pushText": "Inversor IA Aschenbrenner liquida posiciones por pérdidas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones temáticas de IA podrían caer por efecto psicológico y presión de liquidaciones conectadas. NASDAQ reacciona con cautela.",
+    "despues": "Si hay confirmación de mayor despalancamiento, fondos correlacionados podrían sufrir presión. Volatilidad implícita (VIX) podría subir.",
+    "escenarios": "Traders vigilarán: (1) si hay más liquidaciones forzadas similares, (2) nivel de apalancamiento en hedge funds temáticos, (3) contagio a correlacionados, (4) puntos de resistencia técnica en acciones IA",
+    "riesgos": "Información proviene de 'fuentes' anónimas: estatus es rumor no confirmado oficialmente. Podría ser manipulación o información parcial. Impacto real depende de si hay liquidaciones en cascada."
+   },
+   "macro": {
+    "nasdaq": "bajista potencial",
+    "volatilidad": "muy alta"
+   },
+   "updates": []
+  },
+  {
+   "id": "907659257",
+   "fecha": "2026-07-30T21:19:16.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/rivian-rivn-q2-2026-earnings.html",
+   "via": "CNBC",
+   "original": "Rivian reduces 2026 spending plans, narrows earnings guidance",
+   "titulo": "Rivian reduce gasto 2026 y limita guía de ganancias; presión en EV startup",
+   "resumen": "Rivian anuncia reducción de planes de gasto capital para 2026 y estrecha su guía de ganancias, señalando desafíos de rentabilidad y presiones operativas. La acción refleja desaceleración de demanda de vehículos eléctricos premium y necesidad de ajuste de estructura de costos.",
+   "analisis": {
+    "porque": "Rivian es proxy de salud del segmento EV premium. Reducción de capex y guía acotada cuestionan viabilidad de producción escalada y narrativa de crecimiento. Relevante para evaluación de competencia vs. Tesla.",
+    "queOcurrio": "Rivian reduce planes de gasto capital para 2026 y estrecha su guía de ganancias, indicando presiones de rentabilidad.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "RIVN",
+    "EV",
+    "Automóvil",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "RIVN",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "EV",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Rivian",
+    "capex",
+    "guía-earnings",
+    "EV",
+    "rentabilidad"
+   ],
+   "tgText": "📉 Rivian reduce capex 2026 y limita guía ganancias. EV startup presionada por demanda débil y desafíos de rentabilidad.",
+   "xText": "Rivian recorta capex 2026 y acota guía earnings. EV startup enfrenta desafíos de demanda y rentabilidad.",
+   "discordText": "**Rivian: presión operativa**\n• Capex 2026 reducido\n• Guía ganancias acotada\n• EV startup bajo presión demanda",
+   "pushText": "Rivian reduce capex; limita guía de ganancias",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "RIVN cae. Mercado reprecia expectativas de producción y rentabilidad futura.",
+    "despues": "Otros EV makers (Lucid, Fisker) podrían sufrir presión por efecto sectorial de pesimismo.",
+    "escenarios": "Traders vigilarán: (1) si recorte de capex limita capacidad de producción competitiva, (2) márgenes unitarios de vehículos, (3) impacto en timelines de modelos nuevos, (4) cash runway vs. burn rate",
+    "riesgos": "Titular no especifica magnitud de recorte de capex ni detalles de guía acotada (ingresos, EBITDA, unidades). Contexto insuficiente para evaluar severidad real."
+   },
+   "macro": {
+    "rivn": "bajista",
+    "ev": "neutral"
+   },
    "updates": []
   },
   {
@@ -7222,398 +7607,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "916473851",
-   "fecha": "2026-07-27T20:52:29.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/from-oil-to-shock-heres-what-kalshi-traders-expect-warsh-to-say.html",
-   "via": "CNBC",
-   "original": "From &apos;oil&apos; to &apos;shock&apos;, here&apos;s what Kalshi traders expect Fed Chairman Kevin Warsh will say this week",
-   "titulo": "Operadores de Kalshi predicen temas clave para discurso de Kevin Warsh",
-   "resumen": "Según apuestas en plataforma Kalshi, operadores esperan que el presidente de la Reserva Federal Kevin Warsh aborde temas como 'petróleo', 'shock' y otros términos vinculados a política monetaria y riesgos macroeconómicos durante presentaciones esta semana.",
-   "analisis": {
-    "porque": "Indica expectativas de mercado sobre mensajería de autoridad monetaria clave; puede adelantar volatilidad en renta fija, divisas y commodities según agenda percibida de la Fed.",
-    "queOcurrio": "Operadores de Kalshi (plataforma de apuestas de predicción regulada) apuestan sobre terminología que Warsh utilizará en sus intervenciones.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Dólar",
-    "Petróleo",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "FED",
-   "keywords": [
-    "Kevin-Warsh",
-    "Fed",
-    "política-monetaria",
-    "expectativas-mercado",
-    "Kalshi"
-   ],
-   "tgText": "🏦 Kalshi: operadores apuestan sobre términos en discurso de Warsh. Monitorear señales sobre política monetaria y riesgos macroeconómicos.",
-   "xText": "🏦 Apuestas en Kalshi sugieren que Kevin Warsh enfatizará 'petróleo' y 'shock' en discursos esta semana. Monitorear signaling de la Fed.",
-   "discordText": "**Warsh: Expectativas de Mercado**\n• Kalshi: operadores apuestan sobre terminología\n• Énfasis esperado en petróleo y choques\n• Monitorear signaling de Fed\n• Impacto bajo en mercados",
-   "pushText": "Kalshi anticipa énfasis en petróleo/choques en discurso de Warsh",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Bonos y dólar podrían reaccionar si el tono sugiere mayor preocupación sobre inflación o choques.",
-    "despues": "Acciones defensivas si el mensaje es hawkish; commodities si hay énfasis inflacionario.",
-    "escenarios": "Traders monitoran: (1) lenguaje exacto sobre política monetaria, (2) señales sobre inflación/desempleo, (3) velocidad esperada de cambios de tasas.",
-    "riesgos": "Apuestas en Kalshi son especulativas; no tienen poder predictivo comprobado. La noticia es meta-análisis de rumor, no confirmación de hechos."
-   },
-   "macro": {
-    "bonos": "Potencial volatilidad según tono esperado",
-    "dolar": "Sensible a signals de tasas"
-   },
-   "updates": []
-  },
-  {
-   "id": "998094364",
-   "fecha": "2026-07-27T20:51:08.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/trump-says-us-has-sold-more-than-13-billion-of-venezuela-oil-.html",
-   "via": "CNBC",
-   "original": "Trump says U.S. has sold more than $13 billion of Venezuela oil since Maduro&apos;s capture",
-   "titulo": "Trump anuncia venta de más de $13 mil millones en petróleo venezolano",
-   "resumen": "El presidente Trump informó que Estados Unidos ha vendido más de $13 mil millones en crudo venezolano desde la captura de Maduro. La noticia refleja cambios geopolíticos en la región y potencial aumento en suministros de petróleo. El titular no especifica el período exacto ni el precio de realización de estas ventas.",
-   "analisis": {
-    "porque": "Afecta directamente la oferta global de petróleo, expectativas de precios, y la postura comercial de EE.UU. hacia Latinoamérica. Impacta activos energéticos y percepciones de riesgo geopolítico.",
-    "queOcurrio": "Trump declaró que EE.UU. ha vendido petróleo venezolano por valor superior a $13 mil millones desde eventos recientes vinculados a Maduro.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "XLE",
-    "Dólar",
-    "Mercados Latinoamericanos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Mercados Latinoamericanos",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "petróleo-venezolano",
-    "Trump",
-    "suministro-energético",
-    "comercio-bilateral",
-    "WTI"
-   ],
-   "tgText": "🛢️ Trump confirma venta de $13B+ en petróleo venezolano. Presión bajista esperada en WTI; mercados monitorean impacto en suministro global y dinámicas geopolíticas.",
-   "xText": "🛢️ Trump anuncia venta de $13B+ en crudo venezolano desde captura de Maduro. Potencial presión bajista en WTI; vigila suministro global y geopolítica regional.",
-   "discordText": "**Petróleo Venezolano: $13B+ en Ventas**\n• Trump confirma venta de crudo por $13 mil millones\n• Cambios en dinámicas geopolíticas regionales\n• Expectativa: presión bajista en WTI\n• Monitorear suministro global",
-   "pushText": "Trump vende $13B+ en petróleo venezolano; presión esperada en WTI",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "WTI y Brent caerían por expectativa de mayor oferta global; correlación inversa con riesgo geopolítico disminuido.",
-    "despues": "Dólar se fortalecería por mayor capacidad de EE.UU. para monetizar recursos; mercados energéticos globales se rebalancearían.",
-    "escenarios": "Traders vigilarán: (1) volumen real de exportaciones y cronograma, (2) respuesta de productores OPEC+, (3) sustentabilidad del suministro, (4) impacto en márgenes de refinerías.",
-    "riesgos": "Dato citado sin especificar período; no se confirma si incluye pronósticos futuros o solo ventas ejecutadas. Potencial exageración política."
-   },
-   "macro": {
-    "petroleo": "Presión bajista por aumento de oferta esperada"
-   },
-   "updates": []
-  },
-  {
-   "id": 974801677,
-   "fecha": "2026-07-27T19:46:20.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/nvidias-potential-250b-backstop-for-openai-is-another-strike-against-the-ai-trade.html",
-   "via": "CNBC",
-   "original": "Nvidia&apos;s potential $250B backstop for OpenAI is another strike against the AI trade",
-   "titulo": "Respaldo de Nvidia a OpenAI genera nuevas dudas sobre el valuación del sector IA",
-   "resumen": "Nvidia estaría considerando un respaldo de $250 mil millones para OpenAI, generando cuestionamientos sobre la sostenibilidad del financiamiento en el sector de IA. El analista señala que esta maniobra replica patrones de burbuja financiera.",
-   "analisis": {
-    "porque": "Amplifica las dudas sobre la viabilidad económica real del ecosistema IA y potencial sobrevaloración de tecnológicas",
-    "queOcurrio": "CNBC reporta que Nvidia considera un respaldo financiero masivo para OpenAI, lo que reaviva el debate sobre financiamiento circular en IA",
-    "estado": "rumor",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Nvidia",
-    "NASDAQ",
-    "S&P500",
-    "Acciones Tecnológicas"
-   ],
-   "sesgos": [
-    {
-     "activo": "Nvidia",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Acciones IA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "nvidia",
-    "openai",
-    "financiamiento-ia",
-    "burbuja-tecnologica",
-    "valuacion"
-   ],
-   "tgText": "🔴 Nvidia considera respaldo de $250B a OpenAI; reaviva dudas sobre financiamiento circular y sobrevaloración del sector IA. Mercados cuestionan sostenibilidad.",
-   "xText": "Nvidia contempla $250B para OpenAI—nuevo riesgo de burbuja IA. El financiamiento circular y valuaciones astronómicas generan alerta en mercados sobre sector tecnológico. #NASDAQ #IA",
-   "discordText": "**Nvidia considera $250B para OpenAI**\n• Reaviva debate sobre financiamiento circular en IA\n• Cuestiona viabilidad de sector\n• Patrón de burbuja financiera detectado",
-   "pushText": "Nvidia y OpenAI: dudas de burbuja IA amplificadas",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Nvidia y mega-cap tecnológicas—temor a sobrevaloración y corrección",
-    "despues": "Índices tech (NASDAQ, S&P 500); fondos indexados expondrían liquidaciones",
-    "escenarios": "Traders monitorean ratio CAPE, liquidez en opciones de tech y posicionamiento largo abarrotado; buscan señales de reversal de narrativa IA",
-    "riesgos": "Información es de fuente no oficial; podría ser especulación. Confirmación oficial cambiaría narrativa radicalmente"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33600",
-   "fecha": "2026-07-27T15:08:14+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33600",
-   "via": "DeItaone",
-   "original": "TRUMP WARNS OF MILITARY ACTION President Trump said the window for negotiations is limited, warning that if talks fail, the U.S. will resume a “very powerful” military operation.",
-   "titulo": "Trump advierte sobre ventana limitada de negociaciones con Irán; amenaza operación militar",
-   "resumen": "El presidente Trump declaró que la ventana para negociaciones es limitada, advirtiendo que si las conversaciones fallan, EE.UU. reanudará una operación militar \"muy poderosa\". La amenaza coincide con tensiones en el Estrecho de Hormuz (33586) donde no hay progreso en uso de corredor sureño respaldado por EE.UU. El titular no especifica cronología ni detalles de negociaciones.",
-   "analisis": {
-    "porque": "Geopolítica Irán-Hormuz impacta directamente precios de petróleo (commodity crítico), gas (TTF), seguros de transporte marino, y expectativas de inflación. Amenaza militar reduce probabilidad de pacto, elevando riesgo de crisis de oferta energética.",
-    "queOcurrio": "Trump emitió advertencia sobre negociaciones Irán, implicando corta ventana de tiempo y posible escalada militar si fallan. No se especifica qué se negocia ni con quién (Irán directamente, mediadores, etc.).",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC/Reuters (cita directa Trump)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "TTF (Gas)",
-    "USD",
-    "Bonos",
-    "Seguros Marinos",
-    "Geopolítica"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista (riesgo oferta)"
-    },
-    {
-     "activo": "TTF",
-     "sesgo": "alcista (riesgo oferta)"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "alcista (risk-off)"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "Hormuz",
-    "negociaciones",
-    "militar",
-    "petróleo",
-    "energía"
-   ],
-   "tgText": "⚠️ TRUMP AMENAZA OPERACIÓN MILITAR: Advierte ventana limitada de negociaciones con Irán. Si fallan, EE.UU. reanudará operación \"muy poderosa\". Riesgo alcista en petróleo y gas.",
-   "xText": "⚠️ TRUMP: Ventana de negociaciones con Irán es limitada. Amenaza operación militar si fallan conversaciones. Riesgo de crisis de oferta energética en Hormuz.",
-   "discordText": "**⚠️ AMENAZA MILITAR TRUMP**\n• Declaración: Ventana de negociaciones limitada\n• Advertencia: Reanudará operación militar \"muy poderosa\"\n• Contexto: Irán rechaza corredor Hormuz sureño\n→ Implicación: Riesgo de escalada Irán-USA, crisis de oferta energética",
-   "pushText": "⚠️ Trump amenaza operación militar si negociaciones Irán fallan",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo bruto reacciona al alza (riesgo de cierre de Hormuz). WTI y Brent suben 2-5% en horas siguientes. Mercados de futuros reprician riesgo geopolítico.",
-    "despues": "TTF gas sube (correlación directa a Medio Oriente). CRB Energy Index alcista. Dólar sube (demanda de seguridad). Bonos suben en rendimiento (inflación esperada). Seguros de transporte marino suben. Índices accionarios presionados.",
-    "escenarios": "Traders vigilan: (1) ¿Trump fija fecha límite para negociaciones? (2) ¿hay movimientos militares USA/aliados? (3) ¿Irán escala retóricamente? (4) ¿barcos responden cambiando rutas o asegurándose? (5) ¿hay mediadores (Omán, Qatar)?",
-    "riesgos": "Retórica Trump puede ser herramienta de negociación (bluff) o intención real. Mercado no puede diferenciar. Riesgo de sobreacción si mercado percibe 70%+ probabilidad de escalada. Reversión posible si paquete de pacto emerge."
-   },
-   "macro": {
-    "petroleo": "Alcista +2-5% potencial",
-    "ttf": "Alcista +5-10% potencial",
-    "usd": "Alcista por risk-off",
-    "sp500": "Bajista por shock de oferta"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-27T19:32:50+00:00",
-     "id": "33625",
-     "texto": "Trump declara que se están llevando a cabo negociaciones muy amistosas con Irán, contradictorio con el tono amenazante de hace horas. Señal de potencial desescalada en tensión geopolítica.",
-     "tgUrl": "https://t.me/walterbloomberg/33625"
-    },
-    {
-     "fecha": "2026-07-27T19:28:59+00:00",
-     "id": "33624",
-     "texto": "El comando militar conjunto iraní reitera que no dejará sin respuesta ninguna amenaza militar de EE.UU., según Mehr News Agency. Declaración refuerza postura defensiva ante presiones de administración Trump.",
-     "tgUrl": "https://t.me/walterbloomberg/33624"
-    },
-    {
-     "fecha": "2026-07-27T19:25:46+00:00",
-     "id": "33623",
-     "texto": "El alto mando conjunto militar iraní califica como «escalada de conflicto regional» cualquier intento de bloqueo marítimo ilegal por parte de EE.UU. Continúa endurecimiento de retórica tras advertencia anterior de Trump sobre ventana limitada de negociaciones y amenaza de operación militar.",
-     "tgUrl": "https://t.me/walterbloomberg/33623"
-    }
-   ],
-   "actualizado": "2026-07-27T19:32:50+00:00"
-  },
-  {
-   "id": 979072277,
-   "fecha": "2026-07-27T19:26:55.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/yields-are-surging-on-these-inflation-protected-bonds-how-to-use-them.html",
-   "via": "CNBC",
-   "original": "Yields are surging on these inflation-protected bonds. How they may fit into your portfolio",
-   "titulo": "Rendimientos de bonos inflacionados repuntan: implicación para portafolios en entorno inflacionario",
-   "resumen": "CNBC reporta que rendimientos en bonos protegidos contra inflación (TIPS) están en ascenso, ofreciendo retornos más atractivos. Análisis explora cómo integrar estas posiciones en carteras frente a persistencia de presiones de precios.",
-   "analisis": {
-    "porque": "TIPS más rendidores podrían forzar rotación desde acciones hacia renta fija real; cambio en relación riesgo-rendimiento de portafolios mixtos",
-    "queOcurrio": "Rendimientos en TIPS suben, mejorando propuesta de valor vs. activos riesgosos",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "TIPS",
-    "Acciones",
-    "Oro",
-    "USD"
-   ],
-   "sesgos": [
-    {
-     "activo": "TIPS",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Acciones",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Inflación",
-   "keywords": [
-    "tips",
-    "bonos-inflacion",
-    "rendimientos",
-    "portafolio",
-    "rotacion-activos"
-   ],
-   "tgText": "📈 Rendimientos de TIPS repuntan. Bonos inflacionados ofrecen retorno atractivo. Presión para rotar desde renta variable hacia protección de precios.",
-   "xText": "TIPS repuntan en rendimiento. Bonos protegidos contra inflación más atractivos. Potencial rotación desde acciones hacia renta fija real. #Bonds #Inflation",
-   "discordText": "**TIPS: Rendimientos en alza**\n• Bonos inflacionados más atractivos\n• Rota relación riesgo-rendimiento\n• Presión para diversificación defensiva",
-   "pushText": "TIPS repuntan: rotación potencial hacia bonos",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "TIPS y bonos largo plazo—flujos defensivos; correlación negativa con acciones",
-    "despues": "Índices accionarios (si hay rotación); dólar (tasa real); oro (inflación)",
-    "escenarios": "Gestores de portafolio monitorean curva TIPS, spread real vs. nominal, y posicionamiento en renta fija para rebalancear",
-    "riesgos": "Cambio de política monetaria podría revertir movimiento; titular no proporciona números específicos de rendimiento"
-   },
-   "macro": {
-    "dolar": "alcista (tasas reales positivas)",
-    "oro": "neutral-alcista (inflación)",
-    "bonos": "alcista (TIPS atractivos)"
-   },
-   "updates": []
-  },
-  {
-   "id": 976597071,
-   "fecha": "2026-07-27T19:14:30.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/crypto-stocks-rally-thanks-to-rotation-from-ai-infrastructure-bitcoin-miners-lag.html",
-   "via": "CNBC",
-   "original": "Crypto stocks rally thanks to rotation from AI infrastructure; bitcoin miners lag",
-   "titulo": "Acciones de criptomonedas suben por rotación desde infraestructura de IA; mineros rezagados",
-   "resumen": "Las acciones vinculadas a criptomonedas experimentan rally impulsado por rotación de inversores desde valores de infraestructura de IA. Sin embargo, empresas mineras de bitcoin quedan rezagadas en el movimiento. El titular no especifica el volumen de rotación ni qué activos de IA son abandonados.",
-   "analisis": {
-    "porque": "Señala cambio de apetito por riesgo entre sectores especulativos; reposicionamiento de carteras en mercados altamente correlacionados con liquidez de fondos.",
-    "queOcurrio": "Mercado de crypto-stocks experimenta repunte selectivo (no miners) atribuido a entrada de capital desde vendedores de IA infrastructure stocks.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Criptomonedas",
-    "Bitcoin",
-    "Ethereum",
-    "NASDAQ",
-    "Mineros cripto (MARA, RIOT, HUT, CLSK)"
-   ],
-   "sesgos": [
-    {
-     "activo": "Criptomonedas",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Mineros cripto",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Infraestructura IA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "crypto",
-    "Bitcoin",
-    "mineros",
-    "IA",
-    "rotación",
-    "NASDAQ"
-   ],
-   "tgText": "⛏️ Acciones cripto suben por rotación desde IA, pero mineros quedan rezagados. Señal de cambio de apetito especulativo entre fondos.",
-   "xText": "Rally en crypto-stocks por rotación desde infraestructura de IA. Mineros de Bitcoin no acompañan. MARA, RIOT rezagados vs. otros nombres cripto.",
-   "discordText": "**Criptomonedas | Rotación desde IA**\n• Acciones cripto experimentan repunte\n• Impulsado por salida desde IA infrastructure\n• Mineros (MARA, RIOT) quedan rezagados\n→ Cambio de apetito en especulativos",
-   "pushText": "Crypto-stocks suben por rotación desde IA; mineros rezagados",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bitcoin y altcoin-exposed stocks (COIN, MSTR); después mineros (MARA, RIOT) si persiste rotación",
-    "despues": "Nvidia y semiconductor plays si retirada de IA infrastructure es significativa; NASDAQ por presión en mega-cap tech",
-    "escenarios": "Traders vigilan: (1) Volumen de venta en IA infrastructure (Nvidia, ASML, SMCI); (2) Fortaleza de Bitcoin spot ETF inflows; (3) Si mineros siguen rezagados o se recuperan; (4) Correlación cripto-equities en entorno de posible baja de tasas",
-    "riesgos": "Riesgo de volatilidad extrema en ambos sectores; rotación puede ser temporal o retracement en trade de IA; titular no cuantifica magnitud del flujo"
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7769,6 +7762,16 @@
   "https://www.cnbc.com/2026/07/30/amazon-soars-after-ceo-makes-the-case-for-its-massive-ai-investment.html",
   "https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html",
   "https://www.cnbc.com/2026/07/31/shein-ipo-hong-kong-ftc-investigation-tariffs-fast-fashion-.html",
-  "https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html"
+  "https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html",
+  "https://www.cnbc.com/2026/07/30/rivian-rivn-q2-2026-earnings.html",
+  "https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html",
+  "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+  "https://www.cnbc.com/2026/07/30/nexus-data-centers-in-advanced-talks-to-secure-15b-for-google-backed-anthropic-data-center.html",
+  "https://www.cnbc.com/2026/07/30/coinbase-coin-earnings-q2-2026.html",
+  "https://www.cnbc.com/2026/07/30/china-us-exports-drop.html",
+  "https://www.cnbc.com/2026/07/31/indonesia-venture-capital-corruption-danantara-mdi-ventures-tanihub.html",
+  "https://www.cnbc.com/2026/07/30/tim-cook-sees-apples-hybrid-ai-strategy-as-a-competitive-weapon-.html",
+  "https://www.cnbc.com/2026/07/31/sk-hynix-samsung-ai-rally-chipmakers.html",
+  "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html"
  ]
 }
