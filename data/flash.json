@@ -1,7 +1,367 @@
 {
  "lastId": 33821,
- "actualizado": "2026-07-31T17:10:01.792Z",
+ "actualizado": "2026-07-31T20:11:02.280Z",
  "items": [
+  {
+   "id": 953611755,
+   "fecha": "2026-07-31T19:55:13.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
+   "via": "CNBC",
+   "original": "Dwindling cash and soaring memory costs: Tech&apos;s AI buildout has ballooning price tag",
+   "titulo": "Capex IA descontrolado: costos de memoria disparan; construcción tech encarece exponencialmente",
+   "resumen": "La inversión masiva en infraestructura IA por parte de tech giants enfrenta presión de costos crecientes, particularmente en memoria (chips, GPUs). Crecimiento exponencial del precio de la construcción IA amenaza rentabilidad de proyectos. El titular no especifica qué fabricantes de memoria ni magnitudes exactas de sobrecostos.",
+   "analisis": {
+    "porque": "Si el costo de infraestructura IA crece más rápido que la capacidad generadora de ingresos, retorno de inversión se erosiona. Afecta valuación de megacaps tech y rentabilidad de capex.",
+    "queOcurrio": "Reportaje sobre presión de costos en buildout de IA: caja dineraria en riesgo, costos de memoria (GPUs, chips de memoria) se disparan.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NVDA",
+    "NASDAQ",
+    "S&P500",
+    "MSFT",
+    "GOOGL",
+    "META"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "neutro-bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech Megacaps",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "IA capex",
+    "costos memoria",
+    "GPUs",
+    "infraestructura IA",
+    "rentabilidad",
+    "Nvidia"
+   ],
+   "tgText": "⚠️ Capex IA sin control: costos memoria y construcción se disparan. Rentabilidad de megacaps tech en riesgo.",
+   "xText": "📉 Crisis capex IA: costos de memoria suben exponencialmente, presionando márgenes de tech. Valuaciones en riesgo.",
+   "discordText": "**Tech/IA** → Presión de costos en buildout IA\n• Memoria (GPUs, chips) dispara precios\n• Rentabilidad capex en duda\n• Megacaps afectadas",
+   "pushText": "Capex IA: costos de memoria explotan; rentabilidad de tech en cuestión",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "NVDA presionada si costo de producción sube; margen de proveedores de semiconductores bajo escrutinio.",
+    "despues": "MSFT, GOOGL, META revisan guía capex; NASDAQ baja si margen operativo esperado desciende.",
+    "escenarios": "Traders vigilarán: (1) earnings de semis (NVDA, TSMC) para margen; (2) guía capex revisada en earnings tech; (3) ROI IA esperado.",
+    "riesgos": "Titular reportaje de análisis, no dato oficial; capex IA podría ser eficiente si ingresos crecen más rápido. Sesgo bajista puede ser exagerado."
+   },
+   "macro": {
+    "nasdaq": "bajista",
+    "sp500": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": 990405539,
+   "fecha": "2026-07-31T19:07:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
+   "via": "CNBC",
+   "original": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
+   "titulo": "Leopold Aschenbrenner: fondo IA de $45B colapsa; pérdidas masivas en días",
+   "resumen": "Aschenbrenner, gestor de hedge fund especializado en IA, sufrió pérdidas catastróficas en su fondo de $45 mil millones en cuestión de días. Evento de riesgo sistémico potencial si fondos apalancados. El titular no especifica causa exacta del colapso ni si hay efectos dominó en mercado.",
+   "analisis": {
+    "porque": "Colapso de fondos apalancados pueden gatillar liquidaciones forzadas, contagio sistémico y presión en activos correlacionados. Señal de riesgo en posiciones crowded de IA.",
+    "queOcurrio": "Fondo IA de Aschenbrenner experimentó pérdidas masivas en días desde $45B de AUM.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Volatilidad",
+    "Tech stocks"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech stocks",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Emergencia",
+   "keywords": [
+    "hedge fund",
+    "colapso fondo",
+    "Leopold Aschenbrenner",
+    "IA",
+    "apalancamiento",
+    "riesgo sistémico"
+   ],
+   "tgText": "🚨 Fondo IA de Aschenbrenner ($45B) colapsa en días. Riesgo sistémico: vigilar liquidaciones y contagio.",
+   "xText": "⚠️ Hedge fund IA de Aschenbrenner sufre colapso masivo; $45B evaporados. Riesgo contagio sistémico potencial.",
+   "discordText": "**⚠️ EMERGENCIA** → Colapso fondo IA Aschenbrenner\n• $45B en pérdidas masivas\n• Riesgo sistémico potencial\n• Vigilar liquidaciones forzadas",
+   "pushText": "🚨 CRISIS: Fondo IA de Aschenbrenner colapsa; riesgo sistémico",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "VIX salta; NASDAQ presionado por liquidaciones forzadas de posiciones crowded en tech.",
+    "despues": "Contagio potencial a otros fondos apalancados; Credit spreads se amplían; USD sube por risk-off.",
+    "escenarios": "Traders vigilarán: (1) exposición sistémica de fondo en derivados/swaps; (2) contraparte riesgo; (3) liquidaciones en marcha; (4) efecto dominó en positions correlacionadas.",
+    "riesgos": "Riesgo alto si apalancamiento fue extremo. Potencial cascada de margin calls. Necesario confirmar magnitud real del colapso y contrapartes afectadas."
+   },
+   "macro": {
+    "nasdaq": "bajista",
+    "sp500": "bajista",
+    "volatilidad": "muy alta"
+   },
+   "updates": []
+  },
+  {
+   "id": 965017639,
+   "fecha": "2026-07-31T19:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/stock-market-next-week-outlook-for-aug-3-7-2026.html",
+   "via": "CNBC",
+   "original": "August kicks off next week with jobs report, earnings as momentum recovers. Here&apos;s what&apos;s ahead",
+   "titulo": "Agosto abre con reportes de empleo y earnings; momentum en equities se recupera",
+   "resumen": "Agosto inicia semana clave con reportes de empleo y temporada de ganancias corporativas. Señal de que momentum en mercados accionarios muestra signos de recuperación. El titular no especifica números esperados de empleo ni estimados de ganancias.",
+   "analisis": {
+    "porque": "Datos de empleo (non-farm payrolls) impactan directamente decisiones de política monetaria de la Fed; earnings valida crecimiento corporativo. Ambos son eventos de alto impacto.",
+    "queOcurrio": "Agosto comienza con dos eventos macroeconómicos críticos: reportes de empleo USA y temporada de earnings corporativos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "Rendimientos USA",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empleo",
+   "keywords": [
+    "empleo",
+    "non-farm payrolls",
+    "earnings",
+    "temporada de ganancias",
+    "momentum"
+   ],
+   "tgText": "💼 Agosto abre con reportes empleo + earnings. Momentum equities se recupera. Volatilidad esperada en Bonos y USD.",
+   "xText": "📈 Agosto: NFP + earnings corporativos. Mercados accionarios muestran recuperación de momentum. Bonos vigilados.",
+   "discordText": "**Empleo/Earnings** → Agosto clave con dos eventos críticos\n• Reportes empleo USA\n• Temporada earnings corporativos\n• Momentum alcista esperado",
+   "pushText": "Agosto: empleo y earnings principales catalistas; momentum accionario en recuperación",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "S&P500, NASDAQ abiertos a volatilidad según sorpresa de empleo (vs. estimado 100K-150K típicamente).",
+    "despues": "Bonos reaccionan si empleo es fuerte (presión alcista en rendimientos); USD sube con sorpresas alcistas.",
+    "escenarios": "Traders vigilarán: (1) NFP real vs. consenso; (2) cambios en tasa desempleo; (3) guía forward en earnings; (4) impacto en fed funds futures.",
+    "riesgos": "Titular es de avance de evento, no de dato real; sorpresas pueden invertir sesgo alcista rápidamente."
+   },
+   "macro": {
+    "dolar": "neutral (depende sorpresa NFP)",
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "bonos": "bajista (precios) si empleo fuerte"
+   },
+   "updates": []
+  },
+  {
+   "id": 975785698,
+   "fecha": "2026-07-31T18:46:45.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/top-investment-ideas-as-interest-rate-uncertainty-grips-market-.html",
+   "via": "CNBC",
+   "original": "Investors may want to focus on front end of yield curve — as Street anticipates next Fed meetings",
+   "titulo": "Street vigila parte corta de curva; anticipan reuniones críticas de la Fed en próximas sesiones",
+   "resumen": "Analistas recomiendan enfoque en el frente corto de la curva de rendimientos ante anticipadas reuniones de la Fed. Señal de que mercados esperan cambios en política monetaria de corto plazo. El titular no especifica fechas exactas de reuniones ni decisiones esperadas.",
+   "analisis": {
+    "porque": "El posicionamiento en la curva de rendimientos (duración corta vs. larga) es central en estrategias de hedge y asignación; afecta directamente precios de bonos y expectativas de tasas.",
+    "queOcurrio": "Street (analistas y traders) enfoca atención en tramos de 2-5 años de la curva de rendimientos ante próximas decisiones de la Fed.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA (corto plazo)",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "curva de rendimientos",
+    "política monetaria",
+    "bonos",
+    "tasas cortas"
+   ],
+   "tgText": "📈 Street enfoca en parte corta de curva antes de reuniones Fed. Expectativa de cambios en tasas cortas próximamente.",
+   "xText": "💹 Analistas vigilan frente corto de curva de rendimientos ante próximas reuniones de la Fed. Señal de volatilidad esperada.",
+   "discordText": "**Fed/Bonos** → Street apunta al frente corto de la curva\n• Anticipan cambios en tasas cortas\n• Reuniones críticas por venir",
+   "pushText": "Traders enfocados en corto plazo de curva; Fed reuniones claves adelante",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos a corto plazo (2Y, 3Y) volátiles; spread 2Y-10Y vigilado por carry traders.",
+    "despues": "Si hay alza de tasas cortas, NASDAQ y acciones de crecimiento presionadas; USD sube.",
+    "escenarios": "Traders buscan: (1) cambios en pendiente de curva; (2) inflación real vs. nominal esperada; (3) decisiones de política monetaria de corto vs. largo plazo.",
+    "riesgos": "Titular genérico sin detalles de qué reuniones ni cuándo; puede ser preparación de mercado sin novedad inmediata."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 989858790,
+   "fecha": "2026-07-31T18:34:20.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/andy-jassy-soothed-concerns-over-amazons-massive-ai-spending-heres-how-he-did-it-.html",
+   "via": "CNBC",
+   "original": "Andy Jassy soothed concerns over Amazon&apos;s massive AI spending. Here&apos;s how he did it",
+   "titulo": "Jassy tranquiliza inversores sobre gasto masivo en IA de Amazon",
+   "resumen": "El CEO Andy Jassy de Amazon abordó preocupaciones sobre los gastos de capital e inversión en IA. El titular no especifica el mecanismo exacto de cómo calmó a inversores ni cifras concretas de gasto, pero se alinea con validación previa de Bernstein sobre flujo de ingresos IA.",
+   "analisis": {
+    "porque": "Los capex masivos en IA generan dudas sobre retorno de inversión; claridad sobre rentabilidad es central para valuación de megacaps tech y confianza de inversores.",
+    "queOcurrio": "Jassy presentó argumentos para calmar preocupaciones sobre el alcance del gasto en IA de Amazon.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "AMZN",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Amazon",
+    "IA",
+    "capex",
+    "gasto capital",
+    "rentabilidad",
+    "Andy Jassy"
+   ],
+   "tgText": "🤖 Jassy (Amazon) tranquiliza sobre gasto masivo en IA. Inversores buscan ratios de retorno esperados.",
+   "xText": "📊 CEO Amazon Jassy seda preocupaciones por IA capex; mercado atiende argumentos de rentabilidad a futuro.",
+   "discordText": "**Empresas/Tech** → Amazon (Jassy) aborda gasto IA\n• Tranquiliza inversores sobre capex\n• Énfasis en retorno de inversión",
+   "pushText": "Amazon: Jassy calma temores sobre inversión masiva en IA",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "AMZN reacciona alcista si mercado percibe claridad sobre ROI; NASDAQ sigue.",
+    "despues": "Efecto contagio en otras megacaps tech (MSFT, GOOGL, NVDA) si validación de IA spending resuena.",
+    "escenarios": "Traders vigilan: (1) ratios de retorno esperado en IA; (2) guidance de capex futuro; (3) competencia en gastos (Meta, Microsoft).",
+    "riesgos": "Titular no cita números específicos; mercado puede reinterpretar si guía futura es menos optimista."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 960457473,
+   "fecha": "2026-07-31T18:16:18.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/kevin-warsh-fed-inflation-rate-hike-markets.html",
+   "via": "CNBC",
+   "original": "Analysis: Markets heard a dovish Kevin Warsh. The Fed chairman&apos;s own words suggest a rate hike",
+   "titulo": "Warsh señala alza de tasas a pesar de mensaje «dovish»; mercados reprecian escenario",
+   "resumen": "El análisis de CNBC sobre las declaraciones del presidente de la Fed, Kevin Warsh, revela que sus propias palabras sugieren una posible subida de tasas, contradictoriamente interpretadas como dovish por los mercados. El titular no especifica la fecha de estas declaraciones ni el contexto exacto de Warsh.",
+   "analisis": {
+    "porque": "La dirección futura de tasas es el principal driver de valuaciones de activos de riesgo y rendimientos de bonos. Una interpretación errónea del guidance de la Fed genera volatilidad cuando se corrige.",
+    "queOcurrio": "El mercado interpretó como dovish las palabras de Warsh, pero el análisis de CNBC sugiere que sus comentarios apuntan hacia una subida de tasas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "S&P500",
+    "NASDAQ",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "Kevin Warsh",
+    "tasas de interés",
+    "política monetaria",
+    "guidance"
+   ],
+   "tgText": "🏦 Análisis: Declaraciones de Warsh (Fed) sugieren alza de tasas pese a lectura dovish del mercado. Reprecio esperado en bonos y acciones.",
+   "xText": "📊 Warsh (Fed) dice alza de tasas en sus propias palabras, aunque mercados leyeron dovish. Sesgo alcista en rendimientos, bajista en riesgo.",
+   "discordText": "**Fed/Tasas** → Warsh señala subida de tasas a pesar de mensaje dovish\n• Mercados mal interpretaron declaraciones\n• Reprecio en bonos y equities esperado",
+   "pushText": "Warsh (Fed): alza de tasas según su propio análisis; mercados se reposicionan",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Rendimientos USA (10Y, 2Y) suben inmediatamente al reprecio de tasas alcistas; USD fortalecido.",
+    "despues": "S&P500, NASDAQ corrigen a la baja; bonos corporativos presionados; carry trades desenvueltos.",
+    "escenarios": "Traders vigilarán: (1) próximas reuniones de la Fed para confirmar/negar alza; (2) datos de empleo en agosto; (3) curva de rendimientos y su forma.",
+    "riesgos": "El titular es análisis editorial de CNBC, no cita directas de Warsh; interpretación puede variar. Riesgo de sobrerreacción."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "bajista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bonos": "bajista (precios)",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": "33821",
    "fecha": "2026-07-31T16:26:22+00:00",
@@ -7308,370 +7668,6 @@
     }
    ],
    "actualizado": "2026-07-28T20:44:40+00:00"
-  },
-  {
-   "id": 968507002,
-   "fecha": "2026-07-28T20:02:50.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/apple-touches-5-trillion-market-cap-for-first-time-.html",
-   "via": "CNBC",
-   "original": "Apple touches $5 trillion market cap for first time",
-   "titulo": "Apple alcanza USD 5 billones en capitalización de mercado por primera vez",
-   "resumen": "Apple toca USD 5 billones en market cap por primera vez en su historia. Hito refleja dominio en ecosistema y demanda de dispositivos premium. No hay contexto sobre qué catalizadores impulsan el evento.",
-   "analisis": {
-    "porque": "Hito simbólico pero relevante: Apple es ahora más grande que PIB de la mayoría de países. Refleja concentración de valor en mega-cap y apetito inversor por 'winners' en IA/servicios.",
-    "queOcurrio": "Apple market cap toca USD 5 billones por primera vez.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "AAPL",
-    "S&P 500",
-    "Nasdaq-100"
-   ],
-   "sesgos": [
-    {
-     "activo": "AAPL",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "apple-5trillion",
-    "market-cap",
-    "mega-cap",
-    "aapl"
-   ],
-   "tgText": "Apple alcanza USD 5T en market cap. Hito histórico refleja concentración de valor en mega-cap tech. Señal de apetito por 'winners'.",
-   "xText": "Apple toca USD 5 billones en capitalización de mercado por primera vez. Refleja dominio ecosistema y demanda premium.",
-   "discordText": "**Apple: USD 5T market cap**\n• Primer hito histórico\n• Mayor que PIB de casi todos los países\n• Refleja concentración en mega-cap",
-   "pushText": "Apple alcanza USD 5T en market cap",
-   "importancia": 4,
-   "reaccion": null,
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 955343449,
-   "fecha": "2026-07-28T20:01:40.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/microsoft-short-interest-hits-decade-high-ahead-of-q2-earnings.html",
-   "via": "CNBC",
-   "original": "Microsoft short interest hits decade high ahead of Q2 earnings as AI spending raises new questions",
-   "titulo": "Short interest en Microsoft toca máximo de década antes de Q2; dudas sobre gasto en IA",
-   "resumen": "Short interest en Microsoft alcanza máximo en 10 años previo a earnings Q2. Los vendedores en corto apuestan a debilidad; dudas sobre gastos en IA y rentabilidad emergen. El titular no especifica nivel exacto ni ratios de shorts respecto al float.",
-   "analisis": {
-    "porque": "Indica posicionamiento de mercado bajista extremo en Microsoft. Riesgo de squeeze alcista o confirmación de dudas fundamentales en earnings. Crítico para volatilidad alrededor de anuncio.",
-    "queOcurrio": "Short interest en MSFT alcanza máximo de 10 años antes de Q2 earnings. Mercado duda sobre rentabilidad de IA spending.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "MSFT",
-    "Nasdaq-100",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "MSFT",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "microsoft-shorts",
-    "q2-earnings",
-    "ai-spending",
-    "squeeze-risk",
-    "short-interest"
-   ],
-   "tgText": "⚠️ Shorts en MSFT tocan máximo de 10 años pre-Q2. Riesgo de squeeze alcista si earnings sorprende. IA spending en duda.",
-   "xText": "Short interest en MSFT alcanza máximo de década previo Q2. Posicionamiento bajista extremo con dudas sobre rentabilidad de IA spending.",
-   "discordText": "**Microsoft: máximo histórico de shorts**\n• Short interest toca máximo de 10 años\n• Antes de Q2 earnings\n• Dudas sobre ROI IA spending\n• ⚠️ Riesgo de squeeze alcista",
-   "pushText": "MSFT shorts en máximo de década; riesgo de squeeze ante Q2 earnings",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "MSFT reacciona primero. Si beat Q2, riesgo de short squeeze masivo (covers forzados). Si miss, confirms bajista setup.",
-    "despues": "Nasdaq-100 amplifica movimiento si squeeze ocurre (vol spike). Bonos sensibles si earnings anima/desinflama inflación de capex tech.",
-    "escenarios": "Traders vigilan: (1) fecha exacta de Q2 earnings y guidance IA; (2) nivel de short utilization y borrow rates; (3) si earnings sorprende al alza (squeeze catalyst) o a la baja (confirmación bearish).",
-    "riesgos": "Titular no cuantifica shorts; podría ser posicionamiento normal post-bid. Earnings es evento conocido; mercado ya precifica cierta incertidumbre. Squeeze no garantizado si earnings es simplemente mixto."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 993589338,
-   "fecha": "2026-07-28T19:45:10.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/hyperscalers-face-higher-capex-scrutiny-after-alphabet-report-panned.html",
-   "via": "CNBC",
-   "original": "Amazon, Meta and Microsoft face skeptical investors this week after Google report sparked sell-off",
-   "titulo": "Amazon, Meta y Microsoft enfrentan escepticismo tras reporte de Google desata venta masiva",
-   "resumen": "Reporte de Google genera venta masiva en mega-cap tecnológico. Amazon, Meta y Microsoft enfrenta escepticismo de inversores esta semana. El titular no especifica contenido del reporte de Google ni magnitud de la venta.",
-   "analisis": {
-    "porque": "Señala debilitamiento de confianza en narrativa de AI spending de gigantes tech. Riesgo directo a valuaciones de mega-cap y múltiplos del índice.",
-    "queOcurrio": "Reporte de Google genera venta en tech. Inversores muestran escepticismo hacia Amazon, Meta, Microsoft antes de reportes.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Nasdaq-100",
-    "S&P 500",
-    "GOOG",
-    "AMZN",
-    "META",
-    "MSFT"
-   ],
-   "sesgos": [
-    {
-     "activo": "Nasdaq-100",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Mega-cap Tech",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "google-report",
-    "mega-cap-tech",
-    "ai-spending",
-    "venta-masiva",
-    "amazon-meta-microsoft"
-   ],
-   "tgText": "🔴 Reporte de Google dispara venta en tech. Amazon, Meta, Microsoft bajo fuego inversor. Riesgo para Nasdaq-100 y S&P.",
-   "xText": "Reporte de Google genera venta masiva en tech. Amazon, Meta, Microsoft enfrentan escepticismo. Presión en Nasdaq-100 ante dudas sobre AI spending.",
-   "discordText": "**Venta masiva en tech tras reporte Google**\n• Amazon, Meta, Microsoft bajo presión\n• Escepticismo inversor sobre AI spending\n• Riesgo para Nasdaq-100 y S&P 500",
-   "pushText": "Google report desata venta en mega-cap tech; AMZN, META, MSFT bajo presión",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Nasdaq-100 y GAFAM lideran caídas. MSFT, AMZN, META reacciona primero por preocupaciones sobre ROI de inversión IA.",
-    "despues": "S&P 500 amplía pérdidas si el sello baja cruza 4.200. Bonos USA se fortalecen por flight-to-safety. VIX se expande.",
-    "escenarios": "Traders vigilan: (1) contenido del reporte de Google (margen, capex, ROI IA); (2) confirmación en earnings próximos de AMZN, META, MSFT; (3) si venta es técnica (chartista) o fundamental.",
-    "riesgos": "Titular sin especificar qué reporte de Google dispara venta. Podría ser sesgo seleccionador de CNBC. Venta podría ser corrección tras rally previo."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 949481380,
-   "fecha": "2026-07-28T19:15:15.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/the-dow-jumps-as-the-ai-trade-wobbles-plus-a-portfolio-name-goes-on-the-ma-hunt.html",
-   "via": "CNBC",
-   "original": "The Dow jumps as the AI trade wobbles. Plus, a portfolio name goes on the M&A hunt",
-   "titulo": "Dow sube mientras el rally de IA se tambalea; cartera entra en búsqueda de adquisiciones",
-   "resumen": "El índice Dow Jones registra ganancias mientras la euforia por inteligencia artificial muestra signos de debilitamiento. Simultáneamente, una cartera de inversión activa búsqueda de objetivos de M&A. El titular no especifica qué activos tecnológicos están bajo presión ni detalles del proceso de adquisición.",
-   "analisis": {
-    "porque": "Señala rotación de flujos desde mega-cap tecnológico hacia defensivos (Dow) y posible consolidación sectorial. Crítico para estrategias de asignación activa.",
-    "queOcurrio": "El Dow sube mientras AI trade pierde momentum. Una cartera inicia búsqueda de M&A.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Dow Jones",
-    "Nasdaq",
-    "Tecnología",
-    "Acciones de alto crecimiento"
-   ],
-   "sesgos": [
-    {
-     "activo": "Dow Jones",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Tech Mega-Cap",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "dow-jones",
-    "ai-trade",
-    "rotacion-sectorial",
-    "m&a",
-    "nasdaq"
-   ],
-   "tgText": "Dow sube mientras presión en IA. Cartera busca M&A. Señal de rotación desde tech mega-cap hacia defensivos.",
-   "xText": "Dow gana terreno conforme euforia en IA se debilita. Cartera activada en búsqueda de M&A. Rotación defensiva en marcha.",
-   "discordText": "**Dow en alza, IA bajo presión**\n• Rotación desde mega-cap tech hacia Dow\n• Cartera de inversión en búsqueda de M&A\n• Señal de consolidación sectorial",
-   "pushText": "Dow sube mientras cae presión en IA; rotación defensiva en marcha",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Dow Jones y sectores defensivos lideran; presión continúa en Nasdaq-100 por salidas de mega-cap tech.",
-    "despues": "Bancos regionales y utilidades podrían extender ganancias. Small-caps atraen flujos si rotación persiste.",
-    "escenarios": "Traders vigilan: (1) si rotación es coyuntural o refleja dudas sobre rentabilidad de IA; (2) si M&A impulsa M&A-arb; (3) nivel de soporte en Nasdaq.",
-    "riesgos": "Titular sin detalles de magnitud de rotación. Podría ser movimiento intradía normal. Acceso a la cartera específica no indicado."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33676",
-   "fecha": "2026-07-28T19:00:10+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33676",
-   "via": "DeItaone",
-   "original": "IRANIAN FOREIGN MINISTER SAYS HE WAS ASSURED BY UKRAINIAN COUNTERPART THAT ATTACK ON IRANIAN SHIP WAS 'UNINTENTIONAL AND UKRAINE SEEKS NO ESCALATION' IRANIAN FM ARAQCHI: IRAN DOES NOT SEEK ESCALATION EITHER, BUT MADE CLEAR ANY ATTACK ON OUR CITIZENS OR INTERESTS IS UNACCEPTABLE; THERE MUST BE RESTITUTION FOR LOSSES",
-   "titulo": "Irán y Ucrania buscan desescalada tras incidente en barco: restablecimiento de compensación",
-   "resumen": "El ministro de Relaciones Exteriores iraní Araqchi reportó que su homólogo ucraniano le aseguró que el ataque a un buque iranί fue 'no intencional' y que Ucrania no busca escalada. Irán reiteró que no persigue escalada pero exige restitución de pérdidas y rechaza futuros ataques a ciudadanos e intereses iraníes.",
-   "analisis": {
-    "porque": "Reduce riesgo de conflicto regional abierto entre Irán-Ucrania que podría desestabilizar petróleo y mercados de riesgo global. Señal de contención diplomática en teatro de guerra Rusia-Ucrania.",
-    "queOcurrio": "Diálogo entre cancilleres de Irán y Ucrania. Irán recibió 'aseguramiento' de que ataque a barco fue accidental. Ambos países evitaron escenario de represalia directa, aunque Irán condiciona paz a indemnización.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (reproduciendo comunicado oficial iranί)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo Brent",
-    "Petróleo WTI",
-    "Irán (riesgo país)",
-    "USD",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Mercados de riesgo",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "iran-ucrania",
-    "conflicto-regional",
-    "petroleo",
-    "desescalada",
-    "oriente-medio"
-   ],
-   "tgText": "⚖️ Irán y Ucrania buscan calmar tensiones: canciller ucraniano aseguró que ataque fue accidental. Irán exige compensación pero renuncia a represalia. Presión bajista en petróleo.",
-   "xText": "🛢️ Irán-Ucrania evitan escalada: Teherán acepta explicación de 'accidente' del ataque a barco. Exige compensación pero frena represalias. Alivio geopolítico para crudo. #energy",
-   "discordText": "**Desescalada Irán-Ucrania**\n• Canciller ucraniano aseguró ataque a buque fue 'no intencional'\n• Irán renuncia a represalias inmediatas\n• Condición: restitución de pérdidas + respeto a ciudadanos/intereses\n• Impacto: bajista para petróleo y prima de riesgo geopolítico",
-   "pushText": "Irán y Ucrania desescalan tensión tras incidente en barco. Petróleo bajo presión.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: caída inmediata por alivio de riesgo de bloqueo del Estrecho de Ormuz o represalia que interrumpa exportaciones. Oro también retrocede por menor demanda de refugio.",
-    "despues": "Spread de riesgo soberano iranί se estrecha. Mercados de riesgo (EM, acciones globales) pueden subir por menor tensión geopolítica. USD débil (menor demanda de seguro).",
-    "escenarios": "Traders vigilarán: (1) si Irán efectivamente renuncia a represalias directas, (2) negociación de monto de compensación, (3) reacción de Rusia a esta desescalada, (4) spillover a negociaciones Israel-Palestina.",
-    "riesgos": "Comunicado es unilateral (lado iranί). No hay confirmación de Ucrania publicada en este titular. Riesgo de que desescalada sea temporal o retórica."
-   },
-   "macro": {
-    "petroleo": "bajista por alivio geopolítico",
-    "oro": "bajista por menor refugio",
-    "dolar": "potencial debilitamiento"
-   },
-   "updates": []
-  },
-  {
-   "id": "33674",
-   "fecha": "2026-07-28T18:31:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33674",
-   "via": "DeItaone",
-   "original": "TRUMP ADMINISTRATION PLANS ON TUESDAY TO ROLL OUT BANS ON FOREIGN IMPORTS OF NEW MODELS OF ROBOTS AND INVERTERS, TARGETING CHINA — U.S. OFFICIALS",
-   "titulo": "Trump planea prohibiciones a importaciones de robots e inversores solares chinos",
-   "resumen": "La administración Trump anunciará el martes restricciones a importaciones extranjeras de nuevos modelos de robots e inversores (equipos solares), enfocándose en China. El titular no especifica mecanismo de restricción (aranceles, cuotas u prohibición directa) ni sectores secundarios afectados. Fuente: U.S. Officials citados por agregador institucional.",
-   "analisis": {
-    "porque": "Impacta cadenas de suministro de manufactura, energía renovable y tecnología. Afecta directamente a proveedores chinos, fabricantes de equipos solares estadounidenses y costos de automatización industrial. Genera incertidumbre sobre represalias comerciales.",
-    "queOcurrio": "Anuncio oficial previsto para martes de restricciones a importaciones de robots e inversores solares de origen extranjero, con enfoque en China.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (vía U.S. Officials)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "DXY",
-    "CNY",
-    "S&P500",
-    "Nasdaq",
-    "Solares (ICLN)",
-    "Manufactura",
-    "Tecnología"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "CNY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Fabricantes solares USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Importadores de equipos",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "aranceles",
-    "China",
-    "robots",
-    "energía solar",
-    "restricciones comerciales",
-    "inversores solares"
-   ],
-   "tgText": "🚨 Trump anuncia restricciones a importaciones de robots e inversores solares chinos para el martes. Impacto en costos de manufactura y energía renovable. Genera presión en cadenas de suministro.",
-   "xText": "Trump planea prohibir importaciones de robots e inversores solares chinos desde el martes. Presión sobre cadenas globales de manufactura y energía renovable. #geopolítica",
-   "discordText": "**TRUMP: RESTRICCIONES COMERCIALES A ROBOTS Y ENERGÍA SOLAR CHINA**\n\n• Anuncio previsto: martes\n• Afecta: importaciones de robots e inversores solares\n• Objetivo: China\n• Impacto: cadenas de suministro, manufactura, renovables\n• Estado: confirmado por U.S. Officials",
-   "pushText": "Trump anuncia restricciones a robots e inversores solares chinos",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "DXY (fortaleza dólar por nacionalismo comercial) y CNY (debilidad por represalias esperadas). Sector solar y manufactura en NYSE/Nasdaq bajo presión inmediata.",
-    "despues": "Índices amplios (S&P 500, Nasdaq) si escala a sectores más amplios. Futuros de materias primas (aluminio, silicio, acero) por costos de insumos. Bonos si hay inflación de costos.",
-    "escenarios": "Traders vigilarán: (1) alcance de restricciones (¿solo arancel o prohibición?), (2) represalias chinas a bienes/servicios USA, (3) impacto en transición energética y costos solares, (4) precedente para futuras restricciones sectores tech.",
-    "riesgos": "No especifica magnitud ni mecanismo exacto de restricción. Posible escalada arancelaria con represalias. Incertidumbre regulatoria paraliza inversión. Riesgo de que sea anuncio político sin efectos inmediatos."
-   },
-   "macro": {
-    "dolar": "Alcista por nacionalismo y proteccionismo (tasas de refugio)",
-    "oro": "Neutral a alcista por riesgo geopolítico",
-    "nasdaq": "Bajista: expone tecnología y manufactura de chips",
-    "dow": "Mixto: industrial protegida vs. financiero con riesgos",
-    "sp500": "Bajista por incertidumbre arancelaria",
-    "bitcoin": "Neutral a alcista por cobertura de riesgo macro",
-    "ethereum": "Neutral",
-    "bonos": "Alcistas si enfría crecimiento; bajistas si hay inflación de costos",
-    "petroleo": "Neutral (no mencionado en restricciones)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-28T18:59:40+00:00",
-     "id": "33675",
-     "texto": "La administración Trump expandirá su orden de restricción a importaciones chinas incluyendo robots humanoides, robots cuadrúpedos e inversores de potencia conectados. Justifica la medida en riesgos de ciberseguridad y seguridad nacional de la cadena de suministro de IA estadounidense, buscando redirigir manufactura hacia EE.UU. ante demanda creciente de infraestructura de IA.",
-     "tgUrl": "https://t.me/walterbloomberg/33675"
-    }
-   ],
-   "actualizado": "2026-07-28T18:59:40+00:00"
   }
  ],
  "rssVistos": [
@@ -7845,6 +7841,16 @@
   "https://www.cnbc.com/2026/07/31/south-korea-kospi-samsung-sk-hynix-meltdown-record-rebound.html",
   "https://www.cnbc.com/2026/07/31/oil-prices-today-brent-wti-hormuz-trump-iran-.html",
   "https://www.cnbc.com/2026/07/31/cxmts-sk-hynix-samsung-micron-memory-chip.html",
-  "https://www.cnbc.com/2026/07/31/boj-rates-yen-intervention-inflation-japan.html"
+  "https://www.cnbc.com/2026/07/31/boj-rates-yen-intervention-inflation-japan.html",
+  "https://www.cnbc.com/2026/07/31/kevin-warsh-fed-inflation-rate-hike-markets.html",
+  "https://www.cnbc.com/2026/07/31/clear-street-pre-ipo-platform-databricks.html",
+  "https://www.cnbc.com/2026/07/31/andy-jassy-soothed-concerns-over-amazons-massive-ai-spending-heres-how-he-did-it-.html",
+  "https://www.cnbc.com/2026/07/31/top-investment-ideas-as-interest-rate-uncertainty-grips-market-.html",
+  "https://www.cnbc.com/2026/07/31/trump-ukraine-patriot-missile-license-russia.html",
+  "https://www.cnbc.com/2026/07/31/stock-market-next-week-outlook-for-aug-3-7-2026.html",
+  "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
+  "https://www.cnbc.com/2026/07/31/spider-man-brand-new-day-box-office-preview-sales.html",
+  "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
+  "https://www.cnbc.com/2026/07/31/fifa-world-cup-private-equity-sports.html"
  ]
 }
