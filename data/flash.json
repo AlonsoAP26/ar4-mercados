@@ -1,7 +1,200 @@
 {
  "lastId": 33774,
- "actualizado": "2026-07-31T02:53:53.267Z",
+ "actualizado": "2026-07-31T06:07:17.663Z",
  "items": [
+  {
+   "id": 989869556,
+   "fecha": "2026-07-31T06:05:22.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/boj-rates-yen-intervention-inflation-japan.html",
+   "via": "CNBC",
+   "original": "BOJ holds rates at 1%, warns of core inflation exceeding 2% target",
+   "titulo": "BoJ mantiene tasas en 1% y advierte que inflación central excede su meta del 2%",
+   "resumen": "El Banco de Japón reafirmó su tasa de política en 1% tras su reunión, pero advirtió que la inflación subyacente se mantiene por encima del objetivo del 2%. La declaración señala presión inflacionaria persistente y sugiere mayor disposición a futuros aumentos de tasas.",
+   "analisis": {
+    "porque": "Cambios en política monetaria del BoJ impactan directamente en el yen, bonos japoneses y equities nipones. Inflación por encima de meta aumenta probabilidad de futuras alzas de tasas, alterando los carry trades.",
+    "queOcurrio": "El BoJ dejó tasas en 1% pero informó que la inflación subyacente continúa superando su objetivo del 2%, aumentando expectativas de futuras decisiones restrictivas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "JPY",
+    "USDJPY",
+    "Bonos japoneses",
+    "Nikkei",
+    "Yen",
+    "Carry trades"
+   ],
+   "sesgos": [
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nikkei",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "boj-rates",
+    "japan-inflation",
+    "monetary-policy",
+    "yen-strength",
+    "carry-trades"
+   ],
+   "tgText": "BoJ mantiene tasas en 1% pero advierte: inflación subyacente sigue por encima del 2%. Presión para futuras alzas de tasas. JPY se fortalece.",
+   "xText": "BoJ pausa tasas en 1%, pero advierte que inflación central excede meta del 2%. Mayor presión para futuras restricciones monetarias. JPY sube.",
+   "discordText": "**BoJ: Tasas en 1%, inflación arriba de meta**\n• Tasa mantenida sin cambios\n• Inflación subyacente >2%\n• Señal alcista para futuras alzas\n• JPY se fortalece, Nikkei bajo presión",
+   "pushText": "BoJ mantiene tasas pero advierte sobre inflación; JPY se fortalece",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente (yen se aprecia) por expectativas de futuras alzas de tasas del BoJ",
+    "despues": "Nikkei, equities nipones defensivas retroceden; carry trades se desmontan (inyección de yen a mercados); bonos JGB largo plazo suben (precios cae rendimientos)",
+    "escenarios": "Traders monitorean: (1) timing de próxima alza de tasas; (2) velocidad de normalización monetaria en Japón vs. otros BC; (3) impacto en carry trades USD/JPY; (4) competitividad exportadora nipona si yen se fortalece.",
+    "riesgos": "Mayor volatilidad en mercados de FX y acciones. Riesgo de unwind acelerado de carry trades si BoJ señala alza más próxima que lo esperado. Datos de inflación futuros son críticos."
+   },
+   "macro": {
+    "dolar": "Bajista (vs. JPY; apreciación del yen)",
+    "oro": "Alcista (yen fuerte = demanda de activos defensivos)",
+    "nasdaq": "Neutral a bajista (carry trades se desmontan)",
+    "dow": "Neutral a bajista",
+    "sp500": "Bajo presión por carry trade unwind",
+    "bitcoin": "Bajo presión por desapalancamiento de carry trades",
+    "ethereum": "Bajo presión",
+    "bonos": "Alcistas en Japón (JGB); neutral-bajistas en USA",
+    "petroleo": "Neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": 979991496,
+   "fecha": "2026-07-31T04:31:37.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/cxmts-sk-hynix-samsung-micron-memory-chip.html",
+   "via": "CNBC",
+   "original": "CXMT&apos;s blockbuster debut in Shanghai sets stage for next test against global memory giants",
+   "titulo": "Debut de CXMT en Shanghai establece nueva prueba contra gigantes globales de memoria",
+   "resumen": "CXMT realizó un debut exitoso en la bolsa de Shanghai, posicionándose como competidor en el mercado de semiconductores de memoria frente a fabricantes líderes globales. El evento refleja la estrategia china de reducir dependencia tecnológica mediante campeones nacionales en chips.",
+   "analisis": {
+    "porque": "Nuevos competidores en memoria DRAM/NAND alteran dinámicas de precio, márgenes y concentración de mercado. Afecta a Samsung, SK Hynix y Micron, además de fabricantes de chips que dependen de suministros de memoria.",
+    "queOcurrio": "CXMT, fabricante chino de chips de memoria, completó su salida a bolsa en Shanghai con un 'debut bloqueador', posicionándose como rival de Samsung, SK Hynix y Micron en mercados de DRAM y NAND.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Semiconductores",
+    "Samsung",
+    "SK Hynix",
+    "Micron",
+    "NASDAQ",
+    "ASX"
+   ],
+   "sesgos": [
+    {
+     "activo": "Memory-chip-makers",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "CXMT",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "semiconductors",
+    "memory-chips",
+    "china-tech",
+    "ipo-shanghai",
+    "dram-nand"
+   ],
+   "tgText": "CXMT debuta en Shanghai como nuevo rival en memoria. Competidor chino desafía a Samsung, SK Hynix y Micron en mercado global de chips.",
+   "xText": "CXMT debuta en Bolsa de Shanghai como nuevo competidor en memoria DRAM/NAND. Desafío para líderes globales Samsung, SK Hynix, Micron.",
+   "discordText": "**CXMT: Debut en Shanghai**\n• Nuevo fabricante chino de memoria\n• Compite contra Samsung, SK Hynix, Micron\n• Estrategia china de independencia tecnológica",
+   "pushText": "CXMT debuta en Shanghai como nuevo competidor de memory chips",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Samsung (SSNLF, 005930.KS), SK Hynix (000660.KS) y Micron (MU) reaccionan a presión competitiva de CXMT en precios de memoria",
+    "despues": "Fabricantes de electrónica que compran memoria (Apple, Intel, TSMC) monitorean oportunidades de diversificación de proveedores",
+    "escenarios": "Traders observan si CXMT logra producción a escala, competitividad en costos y acceso a mercados internacionales. Riesgo: presión de márgenes en líderes si CXMT dumping de precios. Oportunidad: rivalidad = precios menores para clientes.",
+    "riesgos": "CXMT es desconocida en mercados globales; riesgos de confiabilidad, gobernanza y sanciones estadounidenses. El título no especifica valoración de IPO ni demanda."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 922145475,
+   "fecha": "2026-07-31T04:25:53.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/oil-prices-today-brent-wti-hormuz-trump-iran-.html",
+   "via": "CNBC",
+   "original": "Oil prices ease as recovering Hormuz Strait traffic tempers war premium",
+   "titulo": "Petróleo baja ante recuperación del tráfico del Estrecho de Ormuz y menor prima geopolítica",
+   "resumen": "Los precios del petróleo retrocedieron tras indicios de recuperación en el tráfico marítimo a través del Estrecho de Ormuz, reduciendo la prima de riesgo geopolítico que se había acumulado. Menor tensión de oferta tiende a presionar valores que suben con temores de interrupción de suministros.",
+   "analisis": {
+    "porque": "El Estrecho de Ormuz canaliza ~30% del petróleo mundial; cualquier cambio en su flujo es crítico para precios. Recuperación = alivio de riesgos de escasez = presión bajista en crudo.",
+    "queOcurrio": "Tras informes de normalizacion del tráfico en Ormuz, los mercados de petróleo registraron caídas como resultado de desconexión de la prima de riesgo acumulada por tensiones geopolíticas previas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "USD",
+    "Energía"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "oil-prices",
+    "strait-of-hormuz",
+    "geopolitical-risk",
+    "energy-markets"
+   ],
+   "tgText": "Petróleo cae por recuperación de tráfico en Ormuz. Menor prima geopolítica tras normalización de flujos marítimos en zona estratégica.",
+   "xText": "Precios del crudo retroceden tras recuperación del Estrecho de Ormuz. Disminuye la prima de riesgo geopolítico.",
+   "discordText": "**Petróleo: Presión bajista por Ormuz**\n• Recuperación de tráfico marítimo\n• Reducción de prima geopolítica\n• Alivio de riesgo de escasez",
+   "pushText": "Petróleo baja por recuperación del tráfico en Ormuz",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo WTI y Brent reaccionan inmediatamente a cambios de flujo en Ormuz; USD/energías también se ajustan",
+    "despues": "Acciones de energía (XLE, OIL) y empresas de utilidades con exposición a costos de crudo pueden subir (beneficiadas); consumidores de energía neutral",
+    "escenarios": "Traders monitorean si la normalización es permanente o temporal. Riesgo tail: nueva tensión geopolítica reabre prima. Datos de tráfico reales vs. rumores.",
+    "riesgos": "Volatilidad de Ormuz es inherente. Una nueva disrupción podría revertir estas ganancias rápidamente. El titular no especifica si es confirmación oficial o reportes de fuentes comerciales."
+   },
+   "macro": {
+    "dolar": "Bajista (dólar suele fortalecerse con susto de energía)",
+    "oro": "Neutral",
+    "nasdaq": "Neutral",
+    "dow": "Neutral a alcista (si energía baja, utilidades suben)",
+    "sp500": "Neutral",
+    "bitcoin": "Sin impacto directo",
+    "ethereum": "Sin impacto directo",
+    "bonos": "Alcista (menor inflación de energía)",
+    "petroleo": "Bajista"
+   },
+   "updates": []
+  },
   {
    "id": "940624544",
    "fecha": "2026-07-31T02:06:06.000Z",
@@ -841,6 +1034,59 @@
    "updates": []
   },
   {
+   "id": 972352512,
+   "fecha": "2026-07-30T20:13:00.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
+   "via": "CNBC",
+   "original": "Jersey Mike&apos;s stock falls 6% in public market debut after pricing shares at $23",
+   "titulo": "Jersey Mike's cae 6% en su debut bursátil tras cerrar a precio de oferta",
+   "resumen": "Las acciones de Jersey Mike's cayeron 6% en su primer día de cotización pública tras ser fijadas en USD 23 por acción. La debilidad en el debut refleja presión de demanda limitada o rotaciones de inversores tempranos, típico en IPOs en ambientes de incertidumbre macroeconómica.",
+   "analisis": {
+    "porque": "Las caídas en debuts de IPOs señalan apetito limitado de riesgo del mercado por nuevas emisiones, especialmente en sectores sensibles al consumidor como food-service. Impacta confianza en pipeline de salidas a bolsa.",
+    "queOcurrio": "Jersey Mike's, cadena de franquicias de sándwiches, debutó en mercados públicos a USD 23/acción pero cerró con pérdidas del 6% en su primer día.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Consumer Discretionary"
+   ],
+   "sesgos": [
+    {
+     "activo": "IPO-market",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Consumer-stocks",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "ipo-debut",
+    "jersey-mikes",
+    "restaurant-stocks",
+    "capital-markets"
+   ],
+   "tgText": "Jersey Mike's cae 6% en su debut en bolsa. Fijado en USD 23, las acciones cerraron débiles reflejando presión en el apetito por nuevas emisiones.",
+   "xText": "Jersey Mike's debuta en bolsa con caída del 6%. Señal de cautela del mercado hacia nuevas IPOs en sector consumidor.",
+   "discordText": "**Jersey Mike's: Debut bursátil bajo presión**\n• Precio de oferta: USD 23/acción\n• Cierre del primer día: -6%\n• Indicador de demanda débil por nuevas emisiones",
+   "pushText": "Jersey Mike's cae 6% en debut en bolsa",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "IPO-tracker ETFs y fondos especializados en nuevas emisiones pueden ajustarse a la baja",
+    "despues": "Otras cadenas de comida rápida (QSR, MCD) monitorean valoraciones y confianza de inversores",
+    "escenarios": "Traders observan si el débil debut de Jersey Mike's genera contagio a otras IPOs previstas o reduce el pipeline. Proxy del apetito por riesgo en equities de pequeño cap.",
+    "riesgos": "Una caída del 6% en debut es moderada; no necesariamente indica crash. Podría ser rotación normal post-oferta."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
    "id": "33772",
    "fecha": "2026-07-30T19:23:10+00:00",
    "tgUrl": "https://t.me/walterbloomberg/33772",
@@ -919,6 +1165,132 @@
     "bonos": "Rendimientos presionados si baja tensión",
     "petroleo": "Presión bajista; menos riesgo de suministro"
    },
+   "updates": []
+  },
+  {
+   "id": 919596006,
+   "fecha": "2026-07-30T19:06:57.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/heres-where-jeffrey-gundlach-is-investing-after-the-fed-held-rates-steady.html",
+   "via": "CNBC",
+   "original": "Here&apos;s where Jeffrey Gundlach is investing after the Fed held rates steady",
+   "titulo": "Gundlach revela su estrategia de inversión tras mantener tasas de la Fed",
+   "resumen": "Jeffrey Gundlach, gestor de activos reconocido, expone su posicionamiento de cartera tras la decisión de la Reserva Federal de mantener tasas sin cambios. El titular no especifica sectores ni instrumentos concretos, pero refleja la reacción estratégica de grandes inversores a la pausa de política monetaria estadounidense.",
+   "analisis": {
+    "porque": "Las decisiones de grandes gestores de fondos impactan la dirección de flujos de capital. La estrategia post-Fed de Gundlach influye en la confianza de inversores institucionales y retail sobre dónde rotar carteras.",
+    "queOcurrio": "Tras la Fed mantener tasas estables, Gundlach comunicó su estrategia de inversión, pero el titular no detalla qué activos seleccionó ni el razonamiento específico.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Bonos",
+    "DXY",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "fed-rates",
+    "gundlach",
+    "asset-allocation",
+    "monetary-policy"
+   ],
+   "tgText": "Gundlach publica su estrategia tras decisión de la Fed de mantener tasas. Gran gestor revela dónde rota capital en ambiente de tasas estables.",
+   "xText": "Jeffrey Gundlach da a conocer su posicionamiento tras la pausa de tasas de la Fed. Atención a dónde apuesta el dinero institucional en este escenario.",
+   "discordText": "**Gundlach publica estrategia post-Fed**\n• Mantención de tasas por la Reserva Federal\n• Gestor revela rotación de cartera\n• Impacto en confianza institucional",
+   "pushText": "Gundlach anuncia estrategia de inversión tras Fed mantener tasas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos (TLT, IEF) y USD (DXY) reaccionan primero a señales de rotación de gestores grandes",
+    "despues": "Acciones de sectores defensivos vs. cíclicos pueden rotar según el detalle de la estrategia de Gundlach",
+    "escenarios": "Traders monitorean si Gundlach sugiere cobertura contra inflación (oro), giro defensivo (bonos largos) o apuesta a equities. La claridad sobre tasas 'sticky' define el sesgo.",
+    "riesgos": "El titular carece de detalles. El impacto real dependerá del acceso a la estrategia completa de Gundlach."
+   },
+   "macro": {
+    "dolar": "Neutral a alcista si rota a activos defensivos",
+    "oro": "Alcista si busca cobertura inflacionaria",
+    "nasdaq": "Neutral; depende de rotación sectorial",
+    "dow": "Neutral",
+    "sp500": "Neutral; datos específicos requeridos",
+    "bitcoin": "Sin impacto directo",
+    "ethereum": "Sin impacto directo",
+    "bonos": "Alcista si Gundlach incrementa duración",
+    "petroleo": "Sin impacto directo"
+   },
+   "updates": []
+  },
+  {
+   "id": 938492725,
+   "fecha": "2026-07-30T18:51:42.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/30/china-open-source-trump-ai.html",
+   "via": "CNBC",
+   "original": "China’s open-weight model lead exposes America’s AI blind spot",
+   "titulo": "El modelo open-weight de China expone el punto ciego de IA de Estados Unidos",
+   "resumen": "China está demostrando liderazgo en modelos de lenguaje de código abierto (open-weight), exponiendo una brecha estratégica en la capacidad estadounidense para controlar la distribución de tecnología de IA avanzada. El movimiento cuestiona la efectividad de restricciones de exportación tecnológica.",
+   "analisis": {
+    "porque": "La ventaja de IA es competitiva globalmente. Si China lidera en modelos open-source, erosiona la ventaja de monopolios tecnológicos estadounidenses (OpenAI, Meta, Google) y afecta valuaciones de empresas de IA. Impacta también geopolítica tecnológica y sanciones.",
+    "queOcurrio": "Modelos de IA abiertos chinos están ganando tracción, cuestionando las restricciones estadounidenses sobre exportación de chip y tecnología como mecanismo de control geopolítico.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Tecnología",
+    "NASDAQ",
+    "Semiconductores",
+    "IA",
+    "NVDA",
+    "Meta",
+    "Google"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tech-stocks-USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NVDA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "China-tech",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "ai-geopolitics",
+    "open-source-models",
+    "china-tech",
+    "us-export-controls",
+    "semiconductor-competition"
+   ],
+   "tgText": "Modelos open-weight chinos cuestionan estrategia de control de IA de EE.UU. China avanza en IA mientras sanciones pierden efectividad.",
+   "xText": "China lidera en modelos de IA abiertos, exponiendo brecha estratégica de EE.UU. Cuestiona restricciones de exportación tecnológica.",
+   "discordText": "**China: Ventaja en IA open-source**\n• Modelos chinos abiertos ganan tracción\n• Cuestiona restricciones de exportación de chips\n• Riesgo para monopolios de IA estadounidenses\n• Impacto geopolítico en tecnología",
+   "pushText": "Modelos de IA chinos cuestionan estrategia de control tecnológico de EE.UU.",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "NVIDIA (NVDA), Broadcom (AVGO), AMD retroceden por riesgos a demanda de chips avanzados si China domina en software de IA",
+    "despues": "Meta (META), OpenAI (no cotiza), Google (GOOGL) monitorean presión competitiva de modelos abiertos. Mercado valora menos monopolios si hay alternativas abiertas.",
+    "escenarios": "Traders observan: (1) si restricciones de EE.UU. se erosionan; (2) presión en márgenes de fabricantes de chips; (3) competencia en precios de servicios de IA; (4) riesgo de sanciones escaladas.",
+    "riesgos": "El titular es análisis editorial; no es anuncio de política oficial. Riesgo: escalada de sanciones tecnológicas entre EE.UU. y China. Volatilidad geopolítica alta."
+   },
+   "macro": null,
    "updates": []
   },
   {
@@ -7236,377 +7608,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 979054363,
-   "fecha": "2026-07-28T01:34:28.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/nasdaq-kospi-wall-street-korea-markets-skhynox-samsung.html",
-   "via": "CNBC",
-   "original": "U.S. and Korean tech stocks are now tightly linked — and that could be a worry for investors",
-   "titulo": "Acciones tech de EE.UU. y Corea del Sur ahora vinculadas: riesgo contagio para inversores",
-   "resumen": "Análisis de CNBC documenta acoplamiento creciente entre mercados tecnológicos estadounidenses y surcoreanos, multiplicando riesgo de contagio cruzado. Volatilidad en semiconductores de Corea traspasa fronteras hacia NASDAQ.",
-   "analisis": {
-    "porque": "Mayor correlación reduce diversificación; caídas en Asia pueden gatillar ventas automáticas en portafolios occidentales; feedback loop de liquidaciones",
-    "queOcurrio": "CNBC reporta que stocks tech de EE.UU. y Corea del Sur ahora exhiben sincronización inusualmente alta en movimientos",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "KOSPI",
-    "Semiconductores",
-    "Acciones Tech",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "KOSPI",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "nasdaq",
-    "kospi",
-    "correlacion",
-    "semiconductores",
-    "riesgo-sistémico",
-    "tech"
-   ],
-   "tgText": "📊 Tech de USA y Corea del Sur ahora acopladas. Mayor correlación = menos diversificación. Riesgo contagio bidireccional en semiconductores amplificado.",
-   "xText": "Tech USA-Corea: acoplamiento creciente. Menor diversificación, mayor contagio. NASDAQ y KOSPI sincronizan movimientos. Riesgo sistémico en cartera tech global.",
-   "discordText": "**USA-Corea Tech: Acoplamiento crítico**\n• Correlación entre NASDAQ y KOSPI en máximos\n• Menor diversificación geográfica\n• Riesgo contagio multiplicado",
-   "pushText": "Tech USA-Corea acopladas: riesgo contagio amplificado",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Fondos multirregionales de tech—rebalancing forced; pares KOSPI-NASDAQ",
-    "despues": "Índices amplios (S&P500, KOSPI); volatilidad implícita; correlaciones sector",
-    "escenarios": "Traders buscan puntos de divergencia y arbitraje regional; monitorean rotación de sectores y geografías",
-    "riesgos": "Mayor correlación reduce valor de diversificación; caída sostenida en un lado propaga al otro automáticamente"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 981510389,
-   "fecha": "2026-07-27T23:36:49.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/tuesdays-big-stock-stories-whats-likely-to-move-the-market.html",
-   "via": "CNBC",
-   "original": "Tuesday&apos;s big stock stories: What’s likely to move the market in the next trading session",
-   "titulo": "Grandes resultados y reunión de Fed: qué vigilan operadores esta semana en Wall Street",
-   "resumen": "Resumen de CNBC sobre catalizadores clave para la próxima semana: earnings de megacaps y decisión de política monetaria de la Reserva Federal. Expectativas sobre forward guidance y reacciones del mercado.",
-   "analisis": {
-    "porque": "Confluencia de data corporativa y decisión de tasas de interés determinan dirección de mercado; volumen y volatilidad elevados esperados",
-    "queOcurrio": "CNBC destaca que semana incluye reportes de ganancias importantes y reunión de la Fed",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Bonos USA",
-    "DXY",
-    "Acciones Megacap"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "fed",
-    "earnings",
-    "politica-monetaria",
-    "fomc",
-    "wall-street",
-    "catalizadores"
-   ],
-   "tgText": "📅 Semana decisiva: Grandes earnings + reunión Fed. Operadores vigilantes ante posible forward guidance. Volatilidad en máximos esperados.",
-   "xText": "Semana clave en Wall Street: Earnings megacaps + decisión Fed. Catalizadores para dirección de mercados. Volatilidad elevada esperada. #Fed #Earnings",
-   "discordText": "**Semana decisiva en mercados**\n• Grandes reportes de ganancias\n• Reunión y decisión de la Fed\n• Forward guidance esperado\n• Volatilidad en máximos",
-   "pushText": "Earnings + Fed: semana crítica para mercados",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Acciones megacap previo a earnings; tasas después de decisión Fed",
-    "despues": "Índices amplios (S&P500, NASDAQ); dólar; commodities",
-    "escenarios": "Traders monitorean surprises de ganancias, margins corporativos, y proyecciones de tasas; vigilancia en forward guidance para próximas decisiones",
-    "riesgos": "Earnings decepcionantes o hawkish Fed podrían gatillar venta coordinada; titular es genérico, no proporciona números"
-   },
-   "macro": {
-    "dolar": "neutral (depende Fed)",
-    "sp500": "neutral (depende earnings)",
-    "nasdaq": "neutral (depende earnings tech)"
-   },
-   "updates": []
-  },
-  {
-   "id": "920113870",
-   "fecha": "2026-07-27T22:20:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/jim-cramer-warns-ai-circular-financing-echoes-dot-com-bubble.html",
-   "via": "CNBC",
-   "original": "Jim Cramer warns AI&apos;s circular financing frenzy echoes the dot-com bubble",
-   "titulo": "Jim Cramer advierte: financiamiento circular de IA replica burbuja de puntocom",
-   "resumen": "El analista Jim Cramer emitió una advertencia sobre las dinámicas de financiamiento en el sector de IA, comparándolas con los patrones que precedieron al colapso de la burbuja tecnológica de 2000. Señala ciclos de inversión circular y valuaciones desacopladas de fundamentos.",
-   "analisis": {
-    "porque": "Opinión influyente en retail y traders; reaviva debate sobre sostenibilidad de valuaciones tech. Puede catalizar revisión de posiciones en semiconductores y IA.",
-    "queOcurrio": "Cramer advirtió que el financiamiento frenético en IA replica patrones especulativos del dot-com, incluyendo lógica circular de inversiones.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Semiconductores",
-    "Nvidia",
-    "Mega-cap Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Jim-Cramer",
-    "burbuja-IA",
-    "dot-com",
-    "financiamiento-circular",
-    "valuaciones"
-   ],
-   "tgText": "📺 Cramer: IA replica burbuja puntocom. Financiamiento circular y valuaciones fuera de fundamentos. Alerta sobre riesgos sistémicos en sector.",
-   "xText": "📺 Jim Cramer advierte que dinámicas de financiamiento en IA replican patrones de burbuja dot-com 2000. Reaviva debate sobre valuaciones.",
-   "discordText": "**Cramer: Burbuja IA vs Dot-Com**\n• Comparación de patrones de financiamiento circular\n• Valuaciones desacopladas de fundamentos\n• Alerta sobre sostenibilidad del ciclo\n• Monitorear volatilidad en tech",
-   "pushText": "Cramer: financiamiento de IA replica burbuja dot-com",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Semiconductores y mega-cap tech bajo presión; especialmente Nvidia por mayor exposición a IA.",
-    "despues": "Potencial rotación hacia defensivos; bonos pueden beneficiarse si presión se intensifica.",
-    "escenarios": "Traders monitorean: (1) si otros analistas amplan la advertencia, (2) salidas retail de tech, (3) revisiones bajistas de analistas de Wall Street, (4) correlaciones con VIX.",
-    "riesgos": "Opinion editorial, no dato empírico; Cramer tiene historial mixto de llamadas. No es confirmación de burbuja, solo advertencia especulativa."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33620",
-   "fecha": "2026-07-27T18:49:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33620",
-   "via": "DeItaone",
-   "original": "$NVDA - NVIDIA CREDIT RISK JUMPS The cost of insuring Nvidia's debt surged to a record after reports the company is discussing more than $750 billion in AI infrastructure financing tied to OpenAI. Investors are growing concerned about Nvidia's expanding financial commitments, with analysts warning complex financing structures could increase credit risks.",
-   "titulo": "Costo de aseguro de deuda de Nvidia salta a máximo histórico; acuerdo OpenAI genera dudas",
-   "resumen": "El costo de cobertura de riesgo crediticio de Nvidia alcanzó máximos históricos tras reportes de negociaciones de financiamiento de infraestructura IA por más de $750 mil millones vinculado a OpenAI. Inversores expresan preocupación por compromisos financieros ampliados y complejidad de estructuras de financiamiento, elevando riesgos de crédito percibidos.",
-   "analisis": {
-    "porque": "Señal de mercado de crédito sobre endeudamiento corporativo; CDS widening indica erosión de confianza en perfil financiero de Nvidia; afecta costo de capital futuro y valuación de deuda.",
-    "queOcurrio": "Spread de CDS de Nvidia alcanzó nivel máximo histórico tras anuncios de Nvidia discutiendo financiamiento por $750B+ para infraestructura IA relacionada con OpenAI.",
-    "estado": "rumor",
-    "fuenteOriginal": "no indicada (reportes de mercado)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NVDA",
-    "Semiconductores",
-    "Bonos corporativos",
-    "Deuda Nvidia",
-    "NASDAQ",
-    "CDS Nvidia"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVDA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos corporativos de tech",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas|Breaking News",
-   "keywords": [
-    "nvidia-cds",
-    "riesgo-crediticio",
-    "deuda-historico",
-    "openai-financiamiento",
-    "apalancamiento-nvidia"
-   ],
-   "tgText": "⚠️ CDS Nvidia en máximo histórico. Mercado de crédito señala alarma: financiamiento de $750B+ para IA genera dudas sobre apalancamiento. Costo de capital corporativo en riesgo.",
-   "xText": "🚨 CDS Nvidia alcanza máximo histórico. Mercado de crédito advierte: negociación de financiamiento $750B+ para infraestructura IA eleva riesgos. Preocupaciones sobre estructura y endeudamiento.",
-   "discordText": "**⚠️ NVIDIA en alerta de crédito**\n• CDS en máximo histórico\n• Negociaciones de financiamiento $750B+ OpenAI\n• Mercado señala riesgos de apalancamiento y estructuras complejas\n• Presión en deuda corporativa de tech",
-   "pushText": "CDS Nvidia en máximo histórico por financiamiento de $750B; crédito en alerta",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Bonos de Nvidia (IG spread) se amplían inmediatamente; CDS sigue widening; NVDA equity bajo presión si mercado teme dilución de accionistas o covenant breaches.",
-    "despues": "Semiconductores conexos (AMD, ASML, TSMC) pueden sufrir contagio por re-rating de sector; spreads corporativos de tech se amplían; tasas de financiamiento de grandes caps en presión.",
-    "escenarios": "Traders vigilan: (1) comunicados oficiales de Nvidia sobre términos del acuerdo; (2) rating agencies (Moody's, S&P) vs. mercado de CDS; (3) capacidad de servicio de deuda vs. flujos de caja IA; (4) si $750B es financiamiento externo o canje de equity.",
-    "riesgos": "Titular es RUMOR (reportes sin confirmación oficial); CDS puede revertir si Nvidia aclara términos; riesgo de que estructura sea equity financing vs. deuda, inversando la narrativa; contagio sistémico si se interpreta como señal de sobreendeudamiento de mega-cap tech."
-   },
-   "macro": {
-    "dolar": "Neutral",
-    "oro": "Neutral a levemente alcista si aversión a riesgo sube",
-    "nasdaq": "Bajista por repricing de tech megacap",
-    "dow": "Neutral",
-    "sp500": "Bajista si Nvidia repricing es contagioso",
-    "bitcoin": "Neutral a bajista si flight-to-safety domina",
-    "ethereum": "Bajista por correlación con riesgo de crédito tech",
-    "bonos": "Alcista (yields bajan) si aversión a riesgo domina corporativos",
-    "petroleo": "Neutral"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-27T21:29:40.000Z",
-     "id": "931574249",
-     "texto": "Actualización: fuentes reportan que Nvidia y OpenAI discuten un mecanismo de respaldo financiero de hasta $250 mil millones destinado a financiar planes de infraestructura de inteligencia artificial. Esto amplía la escala de lo previamente reportado sobre el acuerdo entre ambas compañías.",
-     "tgUrl": "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html"
-    }
-   ],
-   "actualizado": "2026-07-27T21:29:40.000Z"
-  },
-  {
-   "id": "33591",
-   "fecha": "2026-07-27T13:56:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33591",
-   "via": "DeItaone",
-   "original": "$SPCX - SPACEX SHARES HIT ALL-TIME LOW, LAST DOWN 3.9% AT $110.6",
-   "titulo": "SpaceX cae a mínimo histórico, baja 3,9% a $110,60",
-   "resumen": "Las acciones de SpaceX ($SPCX) alcanzaron un mínimo histórico, cayendo 3,9% hasta $110,60 en la sesión de hoy. El titular no especifica la causa inmediata de la venta, aunque se alinea con presión general en tech y creciente competencia en sector aeroespacial. La caída se suma a debilidad más amplia del NASDAQ durante la jornada.",
-   "analisis": {
-    "porque": "SpaceX es pilar de narrativa tech y manufactura USA avanzada. Mínimos históricos señalan cambio de sentimiento en space economy o valuación. Afecta capitales de riesgo en tech y percepción de crecimiento futuro.",
-    "queOcurrio": "SpaceX cotiza privadamente en secundarios (no es IPO pública). Caída a mínimos históricos en rondas privadas o trading OTC señala realización masiva o cambio en expectativas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (datos de trading secundario)"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "SpaceX",
-    "Tech Private Equity",
-    "NASDAQ",
-    "Space Economy"
-   ],
-   "sesgos": [
-    {
-     "activo": "SpaceX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX",
-    "tech",
-    "private-equity",
-    "space-economy",
-    "valuación"
-   ],
-   "tgText": "📉 SpaceX toca mínimo histórico: -3,9% a $110,60. Señal de realización en private equity tech. Presión en narrativa de space economy.",
-   "xText": "SpaceX cae a mínimo histórico: -3,9% a $110,60. Refleja presión generalizada en private equity tech y revaluación de space economy.",
-   "discordText": "**SpaceX en Mínimo Histórico**\n• Precio: $110,60 (-3,9%)\n• Mercado: Secundario/OTC\n• Señal: Realización en private equity tech\n• Contexto: NASDAQ débil, tech presionado",
-   "pushText": "SpaceX toca mínimo histórico a $110,60",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Private equity tech sufre realización generalizada. Fondos de VC revisan portfolios. Confianza en valuaciones space economy se debilita.",
-    "despues": "NASDAQ continúa bajo presión. Startups tech sienten presión de financiación. Sentimiento risk-off en inversión temprana.",
-    "escenarios": "Traders vigilan: (1) ¿hay ventas de accionistas clave? (2) ¿presión de margin calls? (3) ¿revisión de roadmap operacional? (4) ¿impacto en IPO futura?",
-    "riesgos": "SpaceX no es cotizada públicamente. Precios son de mercados secundarios de baja liquidez. Volatilidad puede ser artefacto de bajo volumen. No debe interpretarse como desempeño operacional."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-07-27T21:26:03.000Z",
-     "id": "984407945",
-     "texto": "Actualización: SpaceX ha experimentado pérdidas de capitalización de mercado equivalentes al valor total de una empresa Tesla. La caída refleja presiones sobre el sector espacial comercial y dinámicas de valuación de startups de alto riesgo.",
-     "tgUrl": "https://www.cnbc.com/2026/07/27/spacex-has-now-lost-the-equivalent-of-a-full-tesla-in-market-capitalization.html"
-    }
-   ],
-   "actualizado": "2026-07-27T21:26:03.000Z"
-  },
-  {
-   "id": "989599366",
-   "fecha": "2026-07-27T21:12:26.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/27/apple-most-valuable-company-nvidia.html",
-   "via": "CNBC",
-   "original": "Apple ends day as world&apos;s most valuable company, passing Nvidia",
-   "titulo": "Apple supera a Nvidia y se corona como empresa más valiosa del mundo",
-   "resumen": "Apple cerró la sesión como la empresa más valiosa globalmente, superando a Nvidia. El cambio refleja volatilidad en mega-cap tech y rotaciones de capital entre líderes del sector de inteligencia artificial y tecnología.",
-   "analisis": {
-    "porque": "Indicador de dinámicas de flujo de capital en tech; rotación desde semiconductores/IA hacia consumo. Afecta percepciones de riesgo sectorial y rebalanceos de portfolios.",
-    "queOcurrio": "Apple eclipsó a Nvidia en capitalización bursátil, posicionándose como la compañía más valiosa.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Apple",
-    "Nvidia",
-    "NASDAQ",
-    "S&P 500",
-    "Tech mega-cap"
-   ],
-   "sesgos": [
-    {
-     "activo": "Apple",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nvidia",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Apple",
-    "Nvidia",
-    "mega-cap",
-    "capitalización-bursátil",
-    "rotación-tech"
-   ],
-   "tgText": "📈 Apple supera a Nvidia como empresa más valiosa del mundo. Señal de rotación de capital desde IA/semiconductores hacia consumo.",
-   "xText": "📈 Apple se posiciona como empresa más valiosa globalmente, superando a Nvidia. Refleja dinámicas de rotación en mega-cap tech.",
-   "discordText": "**Apple Supera a Nvidia**\n• Apple ahora es la empresa más valiosa\n• Rotación desde semiconductores/IA\n• Dinámicas de rebalanceo en mega-cap\n• Monitorear continuidad del movimiento",
-   "pushText": "Apple supera a Nvidia; rotación en mega-cap tech",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Semiconductores bajo presión; Apple sube por flight-to-quality y diversificación de riesgo.",
-    "despues": "Potencial impacto en indices ponderados por capitalización; rebalanceos de fondos índice.",
-    "escenarios": "Traders monitoran: (1) si rotación es temporal o estructural, (2) fundamentales de ambas compañías, (3) flujos de hedge funds, (4) posicionamiento en opciones.",
-    "riesgos": "Es un snapshot de un día; volatilidad normal en mega-cap; no implica debilidad fundamental de Nvidia."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7772,6 +7773,14 @@
   "https://www.cnbc.com/2026/07/31/indonesia-venture-capital-corruption-danantara-mdi-ventures-tanihub.html",
   "https://www.cnbc.com/2026/07/30/tim-cook-sees-apples-hybrid-ai-strategy-as-a-competitive-weapon-.html",
   "https://www.cnbc.com/2026/07/31/sk-hynix-samsung-ai-rally-chipmakers.html",
-  "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html"
+  "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
+  "https://www.cnbc.com/2026/07/30/mcdonalds-charts-are-starting-to-coil-in-the-direction-of-a-buy-signal-jay-woods-says.html",
+  "https://www.cnbc.com/2026/07/30/china-open-source-trump-ai.html",
+  "https://www.cnbc.com/2026/07/30/heres-where-jeffrey-gundlach-is-investing-after-the-fed-held-rates-steady.html",
+  "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
+  "https://www.cnbc.com/2026/07/31/south-korea-kospi-samsung-sk-hynix-meltdown-record-rebound.html",
+  "https://www.cnbc.com/2026/07/31/oil-prices-today-brent-wti-hormuz-trump-iran-.html",
+  "https://www.cnbc.com/2026/07/31/cxmts-sk-hynix-samsung-micron-memory-chip.html",
+  "https://www.cnbc.com/2026/07/31/boj-rates-yen-intervention-inflation-japan.html"
  ]
 }
