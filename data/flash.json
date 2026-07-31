@@ -1,7 +1,348 @@
 {
- "lastId": 33784,
- "actualizado": "2026-07-31T09:41:16.879Z",
+ "lastId": 33790,
+ "actualizado": "2026-07-31T11:48:23.277Z",
  "items": [
+  {
+   "id": "33789",
+   "fecha": "2026-07-31T11:40:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33789",
+   "via": "DeItaone",
+   "original": "MARKET MOVERS 🟢 UPGRADES $BAX: Citigroup upgraded to Neutral; PT raised to $28 from $17 $CORZ: KBW upgraded to Outperform; PT raised to $28 from $25 $PTEN: JP Morgan upgraded to Neutral; PT raised to $12 from $10 $KPTI: H.C. Wainwright upgraded to Neutral 🔴 DOWNGRADES $RBLX: Benchmark downgraded to Sell; PT cut to $50 from $60 $BXMT: KBW downgraded to Market Perform; PT cut to $16 from $20 $NBTB",
+   "titulo": "Cambios de rating: Citi sube BAX a Neutral; KBW mejora CORZ y baja BXMT",
+   "resumen": "Múltiples upgrades y downgrades: Citigroup elevó BAX a Neutral ($17→$28 PT); KBW mejoró CORZ a Outperform ($25→$28); JP Morgan elevó PTEN a Neutral ($10→$12); H.C. Wainwright mejoró KPTI a Neutral. Downgrades: Benchmark bajó RBLX a Sell ($60→$50); KBW redujo BXMT ($20→$16); Stephens bajó NBTB a Equal-Weight ($52→$55).",
+   "analisis": {
+    "porque": "Cambios de rating mueven valuaciones de micro-caps y pueden señalar realineamiento sectorial (bancos, gaming, semiconductores); impacta apetito selectivo de hedge funds y retail",
+    "queOcurrio": "Siete cambios de rating en 24h: upgrades BAX, CORZ, PTEN, KPTI; downgrades RBLX, BXMT, NBTB con ajustes de precio-objetivo",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "BAX",
+    "CORZ",
+    "PTEN",
+    "KPTI",
+    "RBLX",
+    "BXMT",
+    "NBTB"
+   ],
+   "sesgos": [
+    {
+     "activo": "BAX",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "CORZ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "PTEN",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "RBLX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "BXMT",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "ratings",
+    "upgrades",
+    "downgrades",
+    "BAX",
+    "CORZ",
+    "RBLX",
+    "BXMT"
+   ],
+   "tgText": "Rating moves: BAX neutral $28 (Citi), CORZ outperform $28 (KBW), PTEN neutral $12 (JPM). Downgrades: RBLX sell $50 (Benchmark), BXMT $16 (KBW).",
+   "xText": "Rating cambios: BAX, CORZ, PTEN, KPTI upgradeados. RBLX, BXMT, NBTB downgradeados. Impacto selectivo en micro-caps.",
+   "discordText": "**Rating Changes**\n📈 Upgrades: BAX $28, CORZ $28, PTEN $12, KPTI\n📉 Downgrades: RBLX $50, BXMT $16, NBTB $55",
+   "pushText": "Rating moves en micro-caps: BAX neutral, RBLX sell",
+   "importancia": 3,
+   "reaccion": {
+    "primero": "Acciones individuales reaccionan según PT: RBLX puede abrir gap down; BAX y CORZ podrían subir",
+    "despues": "Impacto limitado a retail traders y hedge funds micro-cap; mínimo efecto en índices amplios",
+    "escenarios": "Traders vigilarán volumen de compra/venta post-rating; riesgo de que rating upgrade sea trampa si fundamentales no mejoran",
+    "riesgos": "Rating no es predicción; riesgo de que PT se vuelva obsoleto rápidamente si earnings decepcionan"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33788",
+   "fecha": "2026-07-31T10:34:13+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33788",
+   "via": "DeItaone",
+   "original": "$XOM - EXXONMISSES ESTIMATES AS OUTPUT REMAINS STRONG Results Adj. EPS: $3.52 vs. $3.54-$3.60 est. ❌ Adj. Earnings: $14.68B vs. $15.10B est. ❌ Production: 4.514M boepd Permian Production: Record 1.8M+ boepd Operations Guyana: Fifth FPSO to begin production in Q4. Outages: 150K boepd offline in UAE; 450K boepd remains offline in Qatar. Capital Return Dividend: $1.03/share declared for Q3.",
+   "titulo": "Exxon Mobil falla en estimaciones con producción récord en Guyana; Permian a 1,8M bbl/d",
+   "resumen": "Exxon Mobil no alcanzó estimaciones de EPS ajustado ($3,52 vs. $3,54-$3,60 est.) ni ganancia neta ($14,68B vs. $15,10B est.), pero mantiene producción sólida a 4,514M boepd con hito histórico en Permian (1,8M+) y quinta plataforma FPSO en Guyana iniciando Q4.",
+   "analisis": {
+    "porque": "Fracaso en guidance pese a producción récord señala presión de márgenes o volatilidad de precios; inversiones masivas en upstream (Guyana, Permian) impactan expectativa de flujo de caja y dividendos",
+    "queOcurrio": "EPS ajustado $3,52 vs. estimación $3,54-$3,60; ganancia $14,68B vs. $15,10B esperados; producción 4,514M boepd; Permian en récord 1,8M+ boepd; quinta FPSO Guyana en Q4; 150K boepd offline UAE, 450K offline Qatar",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "XOM",
+    "Petróleo",
+    "S&P500",
+    "Energía"
+   ],
+   "sesgos": [
+    {
+     "activo": "XOM",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Energía",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Exxon",
+    "earnings",
+    "Guyana",
+    "Permian",
+    "petróleo",
+    "producción"
+   ],
+   "tgText": "XOM falla estimaciones ($3,52 vs $3,54-$3,60) pero producción récord: 1,8M+ bbl/d Permian, quinta FPSO Guyana en Q4. Presión de márgenes.",
+   "xText": "Exxon Mobil miss: EPS $3,52 vs $3,54-$3,60 est. Producción Permian récord 1,8M+ boepd; quinta FPSO Guyana Q4. Presión de márgenes.",
+   "discordText": "**Exxon Mobil Q2 2026**\n• EPS ajustado: $3,52 vs $3,54-$3,60 est. ❌\n• Ganancia: $14,68B vs $15,10B est. ❌\n• Permian: 1,8M+ boepd (récord)\n• Guyana: 5ª FPSO en Q4",
+   "pushText": "Exxon falla estimaciones; producción Permian récord 1,8M bbl/d",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acción XOM puede caer pre-cierre por miss de EPS; sector energía monitorea si la producción récord sostiene outlook",
+    "despues": "Petróleo (WTI, Brent) podría ceder si miss sugiere caída de demanda de downstream; índices energéticos (XLE) bajo presión",
+    "escenarios": "Traders vigilarán guidance de full-year; la presión de márgenes vs. producción alta sugiere guerra de precios; Guyana y Permian son activos estratégicos para valuación a largo plazo",
+    "riesgos": "Offline de 150K-450K boepd podría revertirse (force majeure temporal); miss podría amplificarse si guidance se reduce"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33787",
+   "fecha": "2026-07-31T10:14:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33787",
+   "via": "DeItaone",
+   "original": "JAPAN LIKELY SPENT MORE THAN Y6 TLN ON CURRENCY INTERVENTION ON JULY 30, DATA SUGGEST",
+   "titulo": "Japón gastó más de ¥6 billones en intervención cambiaria el 30 de julio",
+   "resumen": "Japón realizó intervención cambiaria por más de ¥6 billones (aproximadamente $40.000 millones USD) el 30 de julio, según sugieren datos de mercado. La acción refleja esfuerzos del BoJ por contener depreciación del yen tras la decisión de mantener tasas en 1% publicada días antes.",
+   "analisis": {
+    "porque": "Intervención masiva del BoJ anticipa volatilidad del carry-trade JPY y afecta divisas globales, treasuries y mercados de riesgo; presión alcista en dólar pero riesgo de reversión si Japón sigue interviniendo",
+    "queOcurrio": "Intervención cambiaria japonesa de más de ¥6 billones (~$40B USD) en 30 de julio, datos indican",
+    "estado": "confirmado",
+    "fuenteOriginal": "Reuters"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "JPY",
+    "USDJPY",
+    "Carry-trades",
+    "Treasuries",
+    "S&P500",
+    "VIX",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Equities",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "Japón",
+    "BoJ",
+    "intervención cambiaria",
+    "yen",
+    "USDJPY",
+    "carry-trade"
+   ],
+   "tgText": "🚨 Japón interviene por ¥6 billones (~$40B) el 30 jul. BoJ resiste depreciación del yen. Impacto: carry-trades, treasuries y equities.",
+   "xText": "Japón interviene ¥6 billones (~$40B) el 30 jul para contener yen débil. BoJ lucha contra carry-trades. Impacto global en divisas y equity risk.",
+   "discordText": "**Intervención BoJ Masiva**\n• ¥6+ billones (~$40B USD) el 30 julio\n• Objetivo: contener deprecación del yen\n• Impacto: carry-trades, treasuries, equities",
+   "pushText": "BoJ interviene ¥6 billones para contener yen; impacto global carry-trades",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente; yen se aprecia vs basket de divisas; carry-traders liquidan posiciones largas en equities/bonos",
+    "despues": "VIX sube por cierre forzado de carry-trades; treasuries bajan (yields caen); equities globales ceden; petróleo bajo presión; oro sube por flight-to-safety",
+    "escenarios": "Traders vigilarán frecuencia de intervenciones: ¿es única o sostenida? Si es sostenida, riesgo de que el yen se aprecie más y genere pánico de liquidación; impacto especialmente en Asia-Pacific y repos de carry-trades",
+    "riesgos": "Escalada: si yen sigue apreciándose pese intervención, BoJ podría anunciar medidas adicionales (tasa negativa nueva, compra de activos); riesgo sistémico de desapalancamiento acelerado"
+   },
+   "macro": {
+    "dolar": "bajista",
+    "yen": "alcista",
+    "nasdaq": "bajista",
+    "s&p500": "bajista",
+    "petroleo": "bajista",
+    "oro": "alcista",
+    "bonos": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33786",
+   "fecha": "2026-07-31T10:05:07+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33786",
+   "via": "DeItaone",
+   "original": "$AMZN - AMAZON - DURING Q2 2026, WE RECEIVED ABOUT $640 MILLION OF TARIFF REFUNDS UNDER IEEPA - FILING",
+   "titulo": "Amazon recibió $640M en reembolsos de aranceles en Q2 2026 bajo IEEPA",
+   "resumen": "Amazon reportó la recepción de aproximadamente $640 millones en reembolsos de aranceles durante el segundo trimestre de 2026 bajo la Ley de Poderes Económicos de Emergencia Internacional (IEEPA, por sus siglas en inglés), según documenta en su presentación regulatoria.",
+   "analisis": {
+    "porque": "Reembolso significativo de aranceles mejora márgenes operativos netos e impacta rentabilidad de inversiones masivas en IA que CEO Jassy había justificado; señal de alivio de presión de costos de importación",
+    "queOcurrio": "Amazon recibió $640M en reembolsos de aranceles IEEPA en Q2 2026, confirmado en filing regulatorio",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "AMZN",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Tech",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Amazon",
+    "AMZN",
+    "aranceles",
+    "IEEPA",
+    "reembolsos",
+    "márgenes"
+   ],
+   "tgText": "Amazon reporta $640M en reembolsos de aranceles Q2 2026 bajo IEEPA. Alivio para márgenes operativos en contexto de inversión masiva IA.",
+   "xText": "Amazon: $640M en reembolsos de aranceles Q2 2026 (IEEPA). Mejora de márgenes operativos en contexto de inversión IA.",
+   "discordText": "**Amazon Reembolsos Q2 2026**\n• $640M recibidos bajo IEEPA\n• Mejora de márgenes operativos\n• Alivia presión de costos de importación",
+   "pushText": "Amazon recibe $640M en reembolsos de aranceles Q2",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "AMZN podría recibir bid técnico al confirmar ingresos inesperados; margen neto mejoraría respecto a estimaciones",
+    "despues": "Sector retail y logística monitorean si otros peers reciben reembolsos similares; impacto en costo de importaciones de competidores",
+    "escenarios": "Traders verificarán si los $640M se capitalizan en guidance o se reinvierten en CapEx/IA; relevancia para modelo de margen a largo plazo de Amazon",
+    "riesgos": "Reembolso podría ser una vez (one-time); no está claro si es continuidad o excepción; riesgo de que aranceles vuelvan a aumentar"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "976957756",
+   "fecha": "2026-07-31T00:52:26.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/sk-hynix-samsung-ai-rally-chipmakers.html",
+   "via": "CNBC",
+   "original": "SK Hynix shares surge 25%, while Samsung soars over 20% as AI rally roars back",
+   "titulo": "SK Hynix y Samsung se disparan 25% y 20% respectivamente; rally de IA en semiconductores vuelve",
+   "resumen": "Acciones de SK Hynix y Samsung registran ganancias significativas de 25% y 20% respectivamente, impulsadas por renovación del rally de inteligencia artificial en el sector de semiconductores. El movimiento refleja recuperación de demanda de chips y memoria para aplicaciones IA tras presiones previas.",
+   "analisis": {
+    "porque": "Señala renovación de apetito por semiconductores de memoria (DRAM, NAND), cruciales para infraestructura IA. Impacta índices tech y narrativa global de capex IA como motor de crecimiento.",
+    "queOcurrio": "SK Hynix sube 25% y Samsung 20%, impulsadas por rally renovado en demanda de semiconductores para IA.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "SK Hynix",
+    "Samsung",
+    "Semiconductores",
+    "NVDA",
+    "AMD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "SK Hynix",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Samsung",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SK-Hynix",
+    "Samsung",
+    "semiconductores",
+    "IA",
+    "memoria",
+    "rally"
+   ],
+   "tgText": "🚀 SK Hynix +25%, Samsung +20%: rally IA en semiconductores renace. Demanda de chips memoria para aplicaciones IA reaviva apetito por sector.",
+   "xText": "SK Hynix dispara 25%, Samsung 20%. Rally IA en semiconductores vuelve con fuerza. Demanda de memoria para infraestructura IA reaviva sector.",
+   "discordText": "**Semiconductores: rally IA reanuda fuerza**\n• SK Hynix: +25% 🟢\n• Samsung: +20% 🟢\n• Impulso: demanda chips memoria IA",
+   "pushText": "SK Hynix +25%, Samsung +20% por rally IA",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "SK Hynix y Samsung reaccionan inmediatamente por renovación de demanda. NASDAQ sigue alcista por reconocimiento de ciclo semiconductor positivo.",
+    "despues": "NVDA, AMD, QCOM podrían extender ganancias por efecto sectorial. Índices tech globales (KOSPI para Samsung/SK Hynix, Nasdaq para peers US) acompañan.",
+    "escenarios": "Traders vigilarán: (1) si rally es sostenible o corrección técnica, (2) datos de pedidos/inventario de memoria, (3) impacto en márgenes de productores ante surge de demanda, (4) competencia de TSMC",
+    "riesgos": "Rally podría ser corrección técnica en lugar de renovación de demanda fundamental. Titular no especifica catalizador exacto (earnings positivos, guía alcista, datos de demanda). Riesgo de reversión rápida."
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "semiconductores": "alcista muy fuerte",
+    "sk-hynix": "alcista",
+    "samsung": "alcista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-31T09:50:30+00:00",
+     "id": "33785",
+     "texto": "Los fabricantes de chips coreanos registraron su mayor rebote en tiempo récord tras la compra de activos de IA en dificultades por parte de Citadel. El índice Kospi subió 18%, impulsado por el cierre de posiciones cortas de fondos de cobertura y desapalancamiento minorista tras semanas de ventas severas vinculadas a IA.",
+     "tgUrl": "https://t.me/walterbloomberg/33785"
+    }
+   ],
+   "actualizado": "2026-07-31T09:50:30+00:00"
+  },
   {
    "id": "33784",
    "fecha": "2026-07-31T09:24:27+00:00",
@@ -732,77 +1073,6 @@
     "petróleo": "bajista",
     "oro": "potencialmente alcista (risk-off)",
     "nasdaq": "neutral a bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "976957756",
-   "fecha": "2026-07-31T00:52:26.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/sk-hynix-samsung-ai-rally-chipmakers.html",
-   "via": "CNBC",
-   "original": "SK Hynix shares surge 25%, while Samsung soars over 20% as AI rally roars back",
-   "titulo": "SK Hynix y Samsung se disparan 25% y 20% respectivamente; rally de IA en semiconductores vuelve",
-   "resumen": "Acciones de SK Hynix y Samsung registran ganancias significativas de 25% y 20% respectivamente, impulsadas por renovación del rally de inteligencia artificial en el sector de semiconductores. El movimiento refleja recuperación de demanda de chips y memoria para aplicaciones IA tras presiones previas.",
-   "analisis": {
-    "porque": "Señala renovación de apetito por semiconductores de memoria (DRAM, NAND), cruciales para infraestructura IA. Impacta índices tech y narrativa global de capex IA como motor de crecimiento.",
-    "queOcurrio": "SK Hynix sube 25% y Samsung 20%, impulsadas por rally renovado en demanda de semiconductores para IA.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "SK Hynix",
-    "Samsung",
-    "Semiconductores",
-    "NVDA",
-    "AMD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "SK Hynix",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Samsung",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "SK-Hynix",
-    "Samsung",
-    "semiconductores",
-    "IA",
-    "memoria",
-    "rally"
-   ],
-   "tgText": "🚀 SK Hynix +25%, Samsung +20%: rally IA en semiconductores renace. Demanda de chips memoria para aplicaciones IA reaviva apetito por sector.",
-   "xText": "SK Hynix dispara 25%, Samsung 20%. Rally IA en semiconductores vuelve con fuerza. Demanda de memoria para infraestructura IA reaviva sector.",
-   "discordText": "**Semiconductores: rally IA reanuda fuerza**\n• SK Hynix: +25% 🟢\n• Samsung: +20% 🟢\n• Impulso: demanda chips memoria IA",
-   "pushText": "SK Hynix +25%, Samsung +20% por rally IA",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "SK Hynix y Samsung reaccionan inmediatamente por renovación de demanda. NASDAQ sigue alcista por reconocimiento de ciclo semiconductor positivo.",
-    "despues": "NVDA, AMD, QCOM podrían extender ganancias por efecto sectorial. Índices tech globales (KOSPI para Samsung/SK Hynix, Nasdaq para peers US) acompañan.",
-    "escenarios": "Traders vigilarán: (1) si rally es sostenible o corrección técnica, (2) datos de pedidos/inventario de memoria, (3) impacto en márgenes de productores ante surge de demanda, (4) competencia de TSMC",
-    "riesgos": "Rally podría ser corrección técnica en lugar de renovación de demanda fundamental. Titular no especifica catalizador exacto (earnings positivos, guía alcista, datos de demanda). Riesgo de reversión rápida."
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "semiconductores": "alcista muy fuerte",
-    "sk-hynix": "alcista",
-    "samsung": "alcista"
    },
    "updates": []
   },
@@ -7334,249 +7604,6 @@
     }
    ],
    "actualizado": "2026-07-28T09:46:50+00:00"
-  },
-  {
-   "id": "33630",
-   "fecha": "2026-07-28T07:43:34+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33630",
-   "via": "DeItaone",
-   "original": "IRAN'S GOVERNMENT SPOKESPERSON SAYS IRAN LOST AROUND 230 MLN CUBIC METERS OF ITS GAS PRODUCTION CAPACITY BECAUSE OF WAR WITH U.S.",
-   "titulo": "Irán reporta pérdida de 230 millones m³ en capacidad de gas por conflicto con EEUU",
-   "resumen": "Un portavoz del gobierno de Irán declara que el país perdió alrededor de 230 millones de metros cúbicos de capacidad de producción de gas natural como resultado del conflicto con Estados Unidos. No se especifican detalles sobre infraestructura dañada, plazos de recuperación o mecanismo de pérdida.",
-   "analisis": {
-    "porque": "Irán es productor significativo de gas; pérdidas de capacidad pueden afectar suministros globales y precios de energía, especialmente si afecta exportaciones de GNL.",
-    "queOcurrio": "Portavoz oficial de Irán reporta pérdida de 230 MMm³ de capacidad gasífera por 'guerra con EEUU'. Titular no detalla si es daño físico, sanciones o ambos.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "Portavoz Gobierno Irán (vía medios estatales presumiblemente, no confirmado independientemente)"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Gas Natural",
-    "GNL",
-    "Energéticas",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Gas Natural",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "iran",
-    "gas-natural",
-    "sanciones-eeuu",
-    "suministro-energia",
-    "conflicto"
-   ],
-   "tgText": "⚠️ Irán reporta pérdida 230M m³ capacidad gas por conflicto EEUU. Reclamo no verificado independientemente. Impacto en suministros globales GNL aún incierto.",
-   "xText": "Portavoz Irán: pérdida 230M m³ capacidad gas por conflicto EEUU. Reclamo oficial; sin verificación independiente ni detalles de mecanismo de pérdida.",
-   "discordText": "**IRÁN: PÉRDIDA CAPACIDAD GAS**\n• Reportado: 230M m³ producción\n• Atribuido: conflicto con EEUU\n• Estado: No verificado independientemente\n• Impacto GNL: incierto",
-   "pushText": "Irán reporta pérdida 230M m³ gas; reclamo sin verificación independiente",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "Gas natural europeo (TTF) monitorea; petróleo neutral (Irán ya bajo sanciones). Poco movimiento esperado si es reclamo retórico.",
-    "despues": "Si se confirma disrupción real de GNL: precios energía europeos suben; luego divisas emergentes (presión inflacionaria).",
-    "escenarios": "Traders diferencian: (a) 'noise geopolítico' → no reprecia; (b) disrupción confirmada de infraestructura → riesgo de suministro. Clave es si cifra es verosímil (Irán produce ~280 MMm³/día).",
-    "riesgos": "Portavoz oficial sin verificación independiente; número redondo (230M) sugiere cifra política. No se especifica si es pérdida permanente o temporal, ni mecanismo. Riesgo alto de exageración propagandística."
-   },
-   "macro": {
-    "gas": "Neutral a bajista (presión si real)",
-    "petroleo": "Neutral (Irán ya bajo sanciones)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-28T09:42:58+00:00",
-     "id": "33643",
-     "texto": "Disturbios civiles forzaron el cierre de operaciones en el Complejo de Petróleo y Gas Mellitah de Libia tras invasión de manifestantes. El cierre interrumpió líneas críticas de distribución de gas, generando advertencias sobre potencial apagón regional. Mellitah es centro neurálgico de procesamiento y transporte de petróleo y gas de Libia, elevando riesgos de disrupciones en suministro energético regional.",
-     "tgUrl": "https://t.me/walterbloomberg/33643"
-    }
-   ],
-   "actualizado": "2026-07-28T09:42:58+00:00"
-  },
-  {
-   "id": "33640",
-   "fecha": "2026-07-28T09:33:46+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33640",
-   "via": "DeItaone",
-   "original": "$META - *META, BLACKROCK TO DEVELOP DATA CENTER CAMPUS IN EL PASO, TEXAS",
-   "titulo": "Meta y BlackRock desarrollarán campus de centros de datos en El Paso, Texas",
-   "resumen": "Meta y BlackRock anunciaron una asociación estratégica para construir un campus de centros de datos en El Paso, Texas. El proyecto representa una expansión significativa de infraestructura para soportar demanda de computación en IA y servicios en la nube. La inversión refuerza la estrategia de Meta en infraestructura de largo plazo y diversificación geográfica de operaciones.",
-   "analisis": {
-    "porque": "Señal de confianza institucional en crecimiento de IA; impacta perspectiva de capex de Meta y demanda de energía en Texas; relevante para sectores de datacenter, semiconductores y utilities",
-    "queOcurrio": "Meta y BlackRock anunciaron desarrollo conjunto de campus de centros de datos ubicado en El Paso, Texas",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "META",
-    "NASDAQ",
-    "BLK",
-    "Utilities USA",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "META",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Utilities",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Meta",
-    "BlackRock",
-    "datacenter",
-    "IA",
-    "infraestructura",
-    "Texas",
-    "capex"
-   ],
-   "tgText": "Meta y BlackRock desarrollarán campus de centros de datos en El Paso, Texas. Expansión estratégica de infraestructura para IA y computación en nube.",
-   "xText": "📍 Meta + BlackRock: nuevo campus de datacenters en El Paso, Texas. Apuesta conjunta por infraestructura de IA y computación en la nube. $META sigue expandiendo su footprint.",
-   "discordText": "**Meta + BlackRock anuncian desarrollo de datacenter en Texas**\n• Ubicación: El Paso, Texas\n• Objetivo: Infraestructura para IA y servicios en nube\n• Impacto: Refuerza visión de capex de Meta; beneficia utilities locales",
-   "pushText": "Meta y BlackRock construirán campus de centros de datos en El Paso",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "META en mercado pre-apertura; expectativa de crecimiento de capex futuro e infraestructura",
-    "despues": "BLK (señal de confianza institucional en IA), utilities de Texas, semiconductores (demanda de equipos)",
-    "escenarios": "Traders monitorean: (1) Magnitud de inversión total esperada; (2) impacto de capex anual en márgenes; (3) si otros tech-megacap replican inversiones en infraestructura regional; (4) implicaciones regulatorias/ambientales en Texas",
-    "riesgos": "Titular no especifica monto de inversión, cronograma o detalles técnicos; posible que anuncio sea preliminar"
-   },
-   "macro": {
-    "nasdaq": "alcista leve",
-    "petroleo": "neutral (demanda de energía en largo plazo)",
-    "bonos": "neutral a bajista leve (capex futuro implica inversión corporativa continua)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33639",
-   "fecha": "2026-07-28T09:27:01+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33639",
-   "via": "DeItaone",
-   "original": "MORGAN STANLEY STAYS BULLISH ON AI Morgan Stanley says the AI supply chain still offers attractive risk/reward after the recent pullback, calling the selloff largely technical and driven by profit-taking. The bank expects AI compute demand to outpace supply for years and remains bullish on AI capability gains, adoption, and the long-term growth in AI-related capital spending.",
-   "titulo": "Morgan Stanley mantiene postura alcista en IA: oferta detrás de demanda años",
-   "resumen": "Morgan Stanley reafirmó visión alcista en sector IA tras caída reciente. Estima que demanda de compute superará oferta por años; descarta que la venta sea algo más que realización de ganancias técnicas. Mantiene optimismo sobre adopción de IA y crecimiento de capex relacionado.",
-   "analisis": {
-    "porque": "Postura de bancos de inversión sobre IA modera pánico de mercado y sostendrá demanda institucional. Morgan Stanley es influencia clave en rebalanceos de portafolio tech.",
-    "queOcurrio": "Morgan Stanley emitió nota reafirmando alcismo en IA; califica caída reciente como técnica y por profit-taking, no fundamental. Argumenta deficit de supply de compute persistirá años.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Nvidia",
-    "Tech Stocks",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "Nvidia",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "IA",
-    "Morgan-Stanley",
-    "bullish",
-    "supply-deficit",
-    "capex-tecnologia",
-    "profit-taking"
-   ],
-   "tgText": "Morgan Stanley se mantiene alcista en IA: demanda vs. oferta de compute desfavorable años. Venta vista como técnica, no fundamental.",
-   "xText": "Morgan Stanley bullish en IA: demanda de compute superará oferta años. Venta reciente vista como profit-taking técnico, no cambio fundamental.",
-   "discordText": "**Morgan Stanley: Alcismo en IA**\n• Mantiene visión bullish\n• Demanda > Oferta de compute (años)\n• Caída reciente = técnica/profit-taking\n• Optimismo en capex IA largo plazo",
-   "pushText": "Morgan Stanley bullish IA: demanda > oferta años, caída es técnica",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NASDAQ y acciones de semiconductores (Nvidia, ASML, AMD) podrían repuntar en sesión posterior si nota genera repricing alcista.",
-    "despues": "Fondos tecnológicos y ETFs de IA rebalancean hacia posiciones largas; posible levantamiento de stop-losses de corto plazo.",
-    "escenarios": "Traders vigilarán: (1) si otras casas de bolsa replican postura alcista, (2) flujos institucionales hacia tech/semiconductores, (3) guidance de Nvidia/TSMC en próximos earnings, (4) datos de capex corporativo.",
-    "riesgos": "Nota de Morgan Stanley es análisis forward-looking; deficit de supply es asunción, no garantía. Compresión de márgenes de chip makers si competen por cuota. Cambio de postura tech global o exceso de capacidad podría invertir tesis."
-   },
-   "macro": {
-    "nasdaq": "sesgo alcista de corto plazo"
-   },
-   "updates": []
-  },
-  {
-   "id": "33637",
-   "fecha": "2026-07-28T08:40:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33637",
-   "via": "DeItaone",
-   "original": "BARCLAYS SHIFTS TO WALL STREET PAY MODEL Barclays will boost bonuses and reduce fixed salaries for senior bankers, aligning pay more closely with Wall Street. Performance pay rose nearly 30% to £1.3B in H1, while salaries increased less than 1%. The bank expects an additional £100M–£150M in compensation costs in H2 as it expands bonus-heavy pay following the UK's removal of the bonus cap.",
-   "titulo": "Barclays adopta modelo de compensación de Wall Street con bonos hasta 30% más altos",
-   "resumen": "Barclays anunció cambio en estructura salarial para banqueros senior: reducirá salarios fijos e incrementará bonos hasta un 30% en H1 2026. En H2 espera costos adicionales de £100–150M para expandir modelo variable alineado con Wall Street tras levantamiento del tope de bonificación en Reino Unido.",
-   "analisis": {
-    "porque": "Cambios estructurales en compensación bancaria señalan: (1) presión competitiva por talento vs Wall Street, (2) mejora de márgenes operativos esperada (bonos varían con desempeño), (3) posible despido enmascarado de ejecutivos con salarios altos.",
-    "queOcurrio": "Barclays confirmó cambio de modelo salarial: menos salario fijo, más bonus. Performance pay creció 30% a £1,3B en H1; salarios subieron <1%. Espera £100–150M costos adicionales en H2 por expansión de bonos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Barclays",
-    "Bancos Europeos",
-    "BARC"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bancos Europeos",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Barclays",
-    "compensacion-bancaria",
-    "bonus-cap",
-    "Wall-Street",
-    "reestructuracion-salarial",
-    "Reino-Unido"
-   ],
-   "tgText": "Barclays cambia modelo salarial: +30% bonos, menos salarios fijos. Espera £100–150M costos adicionales H2. Alineación con Wall Street tras levantamiento de tope de bonificación.",
-   "xText": "Barclays adopta modelo de Wall Street: bonos +30%, menos salarios fijos. £100–150M costos adicionales esperados en H2 por expansión de compensación variable.",
-   "discordText": "**Barclays: Cambio en Compensación**\n• Bonos +30% (£1,3B en H1)\n• Salarios fijos prácticamente congelados (<1%)\n• £100–150M costos adicionales en H2\n• Alineación con Wall Street",
-   "pushText": "Barclays sube bonos 30% y reduce salarios: modelo Wall Street",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Acciones de Barclays podrían estabilizarse si mercado ve mejora competitiva por talento; sector bancario UK monitorea competencia salarial.",
-    "despues": "Otros bancos europeos (HSBC, Standard Chartered, Santander) podrían seguir; presión de costos si adoptan modelo similar.",
-    "escenarios": "Traders vigilarán: (1) ejecución de cambio sin pérdida de talento crítico, (2) impacto en márgenes 2H 2026, (3) reacción regulatoria de FCA, (4) benchmarking con competidores.",
-    "riesgos": "Costos adicionales £100–150M podrían comprimir márgenes netos si ingresos no crecen. Riesgo de despidos post-reestructuración. UK reguladores podrían cuestionar alineación de bonus post-cap."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
