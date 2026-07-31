@@ -392,6 +392,13 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-hi);
 }
 .btn-outline:hover { border-color: var(--gold); }
+/* Contorno dorado: el acompañante elegante del CTA principal en el hero. */
+.btn-outline-gold {
+  background: transparent;
+  border-color: rgba(212, 175, 55, 0.55);
+  color: var(--gold-bright);
+}
+.btn-outline-gold:hover { border-color: var(--gold-bright); background: rgba(212, 175, 55, 0.08); }
 .btn-block { display: block; text-align: center; width: 100%; margin-top: 16px; }
 
 /* Risk strip */
