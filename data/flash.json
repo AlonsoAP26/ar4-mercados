@@ -1,7 +1,396 @@
 {
- "lastId": 33811,
- "actualizado": "2026-07-31T15:34:33.838Z",
+ "lastId": 33821,
+ "actualizado": "2026-07-31T17:10:01.792Z",
  "items": [
+  {
+   "id": "33821",
+   "fecha": "2026-07-31T16:26:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33821",
+   "via": "DeItaone",
+   "original": "*TRUMP SAYS IRAN LIED DURING NEGOTIATIONS *TRUMP SAYS IRAN FIRED FIVE MISSILES AT JORDAN",
+   "titulo": "Trump: Irán disparó cinco misiles contra Jordania; acusa incumplimiento en negociaciones",
+   "resumen": "El presidente Trump acusó a Irán de disparar cinco misiles contra Jordania y de mentir durante negociaciones diplomáticas. Allegación marca nuevo punto de escalada tras horas de retórica mixta (presión/diplomacia). El titular no especifica daños o contexto temporal exacto.",
+   "analisis": {
+    "porque": "Alegación concreta de acción militar directa representa escalada inmediata de conflicto. Si verificada, impacta dramaticamente precios de petróleo, activos defensivos, y evaluación de probabilidad de conflicto regional ampliado.",
+    "queOcurrio": "Trump acusó a Irán de disparar cinco misiles contra Jordania y de incumplimiento en negociaciones, sin especificar daños o verifiación independiente.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "muy alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "S&P 500",
+    "Bonos",
+    "DXY",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Misiles",
+    "Jordania",
+    "Conflicto",
+    "Escalada",
+    "Trump",
+    "Oriente Medio"
+   ],
+   "tgText": "🚨 BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania. Escalada militar directa tras horas de retórica mixta. Petróleo y oro en alerta máxima.",
+   "xText": "BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania e incumplir negociaciones. Escalada geopolítica inmediata impacta precios de petróleo y oro.",
+   "discordText": "**🚨 BREAKING: Escalada en Oriente Medio**\n• Trump: Irán disparó 5 misiles contra Jordania\n• Acusa incumplimiento en negociaciones\n• Marca nuevo punto de tensión directa\n• Petróleo y oro en alerta de volatilidad máxima",
+   "pushText": "BREAKING: Irán disparó 5 misiles contra Jordania (según Trump)",
+   "importancia": 10,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent: reacción alcista INMEDIATA si acusación se verifica; riesgo de ruptura de flujos por Golfo Pérsico",
+    "despues": "Oro (demanda defensiva), bonos (búsqueda de seguridad), S&P 500 (sesgo bajista por aversión al riesgo), DXY (fortalecimiento del dólar como activo seguro)",
+    "escenarios": "Traders vigilan URGENTE: (1) Verificación independiente de ataques misiles (Jordania, Israel, Arabia Saudita), (2) Cantidad de daños y confirmar si fueron interceptados, (3) Respuesta militar estadounidense/israelí (probabilidad muy elevada), (4) Impacto en flujos de petróleo del Golfo Pérsico (clausura del Estrecho de Ormuz = escenario extremo), (5) Extensión del conflicto a aliados de Irán (Hezbolá, militias proxy), (6) Reacción de China y Rusia",
+    "riesgos": "CRÍTICO: Verificación de allegación no disponible en tiempo real; titulares posteriores podrían refutar; reversión rápida si Trump aclara que misiles fueron interceptados sin daños; riesgo de conflicto regional ampliado si respuesta militar es desproporcionada"
+   },
+   "macro": {
+    "petroleo": "alcista muy significativo si acusación se verifica; escenario de $120+ por barril posible",
+    "oro": "alcista por demanda defensiva",
+    "dolar": "alcista por seguridad relativa",
+    "nasdaq": "bajista por aversión al riesgo",
+    "sp500": "bajista por aversión al riesgo",
+    "bonos": "alcistas (búsqueda de seguridad)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33820",
+   "fecha": "2026-07-31T16:23:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33820",
+   "via": "DeItaone",
+   "original": "TRUMP ON IRAN: CAN REACH A DEAL",
+   "titulo": "Trump: Podría alcanzarse un acuerdo con Irán",
+   "resumen": "El presidente Trump sugirió posibilidad de negociación y acuerdo bilateral con Irán, en contraste aparente con serie de declaraciones de presión militar de horas previas. Señal de disponibilidad potencial al diálogo diplomático tras periodo de tensión escalada.",
+   "analisis": {
+    "porque": "Giro narrativo hacia diplomacia abre escenario de reducción de tensión y descongelamiento parcial de sanciones. Impacta precios de petróleo (reversión de prima), activos defensivos, y evaluación de riesgo geopolítico.",
+    "queOcurrio": "Trump sugirió que podría existir vía para acuerdo con Irán, sin especificar condiciones o plazos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "S&P 500",
+    "Bonos",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Acuerdo",
+    "Diplomacia",
+    "Trump",
+    "Negociación",
+    "Oriente Medio"
+   ],
+   "tgText": "🔄 Trump abre puerta a acuerdo con Irán tras horas de presión militar. Giro hacia diplomacia genera volatilidad en petróleo y activos defensivos.",
+   "xText": "Trump: podría alcanzarse acuerdo con Irán. Giro diplomático tras tensión escalada, impacta precios de petróleo y riesgo geopolítico.",
+   "discordText": "**Giro diplomático: Trump abre negociación con Irán**\n• Sugiere posibilidad de acuerdo bilateral\n• Contrasta con presión militar previa (últimas horas)\n• Volatilidad esperada en Oriente Medio",
+   "pushText": "Trump: posible acuerdo con Irán tras presión militar",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent: reversión bajista esperada si mercado interpreta como reducción de prima de riesgo y apertura diplomática",
+    "despues": "Oro, bonos (sesgo bajista por reducción de demanda defensiva), S&P 500 (sesgo alcista por alivio de tensión)",
+    "escenarios": "Traders vigilan: (1) Confirmación de vías de negociación concretas, (2) Condiciones ofrecidas/demandadas (levantamiento de sanciones, inspecciones nucleares), (3) Cronología y probabilidad real vs. tanteo retórico, (4) Reacción de Israel y aliados regionales, (5) Impacto en flujos de petróleo si acuerdo se materializa",
+    "riesgos": "Retórica diplomática puede no materializarse, suba de tensión rápida si negociaciones fallan, incertidumbre sobre seriedad de intenciones de Trump"
+   },
+   "macro": {
+    "petroleo": "bajista significativo si acuerdo se verifica",
+    "oro": "bajista por alivio de tensión",
+    "nasdaq": "alcista por reducción de prima de riesgo",
+    "sp500": "alcista por reducción de prima de riesgo",
+    "dolar": "neutral a ligeramente alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33800",
+   "fecha": "2026-07-31T12:38:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33800",
+   "via": "DeItaone",
+   "original": "TRUMP WARNS ISRAEL ON GAZA DEAL A U.S. official said President Donald Trump would be \"very disappointed\" if Israel fails to honor the agreed 20-point Gaza peace plan. The U.S. expects Israel to comply, while Hamas' disarmament is expected to be refined over the coming weeks, with progress anticipated within one to two months despite opposition from members of Israel's governing coalition.",
+   "titulo": "Trump advierte a Israel sobre cumplimiento del plan de paz en Gaza",
+   "resumen": "Un funcionario estadounidense declaró que el Presidente Donald Trump estaría \"muy decepcionado\" si Israel incumple el plan de paz acordado de 20 puntos en Gaza. EE.UU. espera cumplimiento de Israel, mientras desarmamento de Hamas será refinado en próximas semanas con progreso esperado en uno o dos meses, pese a oposición de miembros de la coalición de gobierno israelí.",
+   "analisis": {
+    "porque": "Volatilidad geopolítica afecta precios de energía, valuaciones de empresas defensoras, safe-haven assets (oro, bonos), y mercados emergentes. Advertencia Trump a Israel sugiere presión política US que podría escalar riesgo de ruptura de acuerdo.",
+    "queOcurrio": "Trump amenaza simbólicamente a Israel por posible incumplimiento del plan de paz Gaza. Funcionario US indicó timeline de 1-2 meses para progreso en desarmamiento de Hamas. Oposición política israelí persiste.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos USA",
+    "S&P500",
+    "Emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "israel-gaza",
+    "trump",
+    "geopolitica",
+    "medio-oriente",
+    "riesgos"
+   ],
+   "tgText": "Trump advierte a Israel sobre plan de paz Gaza. Funcionario US: muy decepcionado si hay incumplimiento. Desarmamiento Hamas en 1-2 meses. Coalición israelí se opone. Riesgo de ruptura.",
+   "xText": "Trump presiona a Israel: \"muy decepcionado\" si incumple acuerdo Gaza. Progreso en desarmamiento Hamas esperado en 1-2 meses. Oposición política israelí persiste.",
+   "discordText": "**Trump presiona a Israel en Gaza**\n• Amenaza con decepción si incumple plan\n• Desarmamiento Hamas en 1-2 meses esperado\n• Coalición israelí se opone\n• Riesgo de ruptura del acuerdo\n• Volatilidad geopolítica continúa",
+   "pushText": "Trump advierte a Israel sobre cumplimiento del acuerdo de paz en Gaza",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo sube ligeramente (prima de riesgo geopolítico si acuerdo se rompe)",
+    "despues": "Oro sube (safe-haven), S&P500 baja si riesgo de escalada percibido, emergentes caen (risk-off)",
+    "escenarios": "Traders vigilarán comunicaciones futuras de Trump y gobiernos de Israel/Hamas. Cualquier signo de colapso del acuerdo podría disparar petróleo a $90+. Hamas podría rechazar términos de desarmamiento.",
+    "riesgos": "Declaración de funcionario US, no confirmación de Trump directo. Presión US podría ser táctica negociadora, no amenaza real. Timeline de 1-2 meses es estimado, sujeto a cambios rápidos."
+   },
+   "macro": {
+    "petroleo": "alcista",
+    "oro": "alcista",
+    "sp500": "bajista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-31T16:12:50+00:00",
+     "id": "33818",
+     "texto": "El presidente Trump caracterizó un acuerdo entre Israel y Hamas como «gran paso» para la región de Oriente Medio. Noticia supone continuidad de la advertencia previa del 30 de julio sobre cumplimiento del plan de paz en Gaza, ahora con tono positivo sobre progreso de negociaciones.",
+     "tgUrl": "https://t.me/walterbloomberg/33818"
+    }
+   ],
+   "actualizado": "2026-07-31T16:12:50+00:00"
+  },
+  {
+   "id": "33816",
+   "fecha": "2026-07-31T16:11:37+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33816",
+   "via": "DeItaone",
+   "original": "TRUMP: IRAN ARE BEING DECIMATED",
+   "titulo": "Trump: Irán está siendo «decimado»",
+   "resumen": "El presidente Trump utilizó lenguaje de intensidad extrema para describir la situación de Irán, caracterizándola como «decimación». Declaración coherente con serie de anuncios sobre presión militar y financiera contra el país en últimas horas.",
+   "analisis": {
+    "porque": "Retórica escalada de máxima tensión geopolítica. Señal de intención política de presión sostenida. Impacta percepción de riesgo en Oriente Medio, precios de petróleo, y activos defensivos.",
+    "queOcurrio": "Trump emitió declaración de máxima dureza describiendo situación de Irán como «decimación», sin especificar áreas concretas de impacto.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "S&P 500",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Trump",
+    "Retórica",
+    "Tensión",
+    "Geopolítica"
+   ],
+   "tgText": "🔴 Trump: Irán está siendo «decimado». Retórica escalada tras serie de medidas de presión militar y financiera.",
+   "xText": "Trump: Irán está siendo «decimado». Máxima intensidad retórica en tensión geopolítica de Oriente Medio.",
+   "discordText": "**Trump intensifica retórica contra Irán**\n• Declara que Irán está siendo «decimado»\n• Lenguaje de máxima tensión geopolítica",
+   "pushText": "Trump: Irán siendo «decimado»",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Petróleo: sesgo bajista si mercado interpreta como desinflamiento de amenaza",
+    "despues": "Oro, bonos defensivos",
+    "escenarios": "Traders vigilan: (1) Verificación de escalada real vs. retórica, (2) Reacción inmediata de Irán, (3) Volatilidad de corto plazo en commodities",
+    "riesgos": "Retórica puede no traducirse en acción, reversión rápida si cambia narrativa, riesgo de mal interpretación de intenciones reales"
+   },
+   "macro": {
+    "petroleo": "bajista corto plazo por descenso de prima de riesgo"
+   },
+   "updates": []
+  },
+  {
+   "id": "33815",
+   "fecha": "2026-07-31T16:06:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33815",
+   "via": "DeItaone",
+   "original": "U.S. TREASURY CHIEF ON IRAN: WE ARE SEARCHING FOR THEIR ASSETS ALL AROUND THE WORLD U.S. TREASURY CHIEF ON IRAN: MONEY WILL GO TO IRANIAN PEOPLE",
+   "titulo": "Tesorería USA persigue activos iraníes a nivel global; fondos destinados al pueblo",
+   "resumen": "La Secretaría del Tesoro estadounidense declaró estar en búsqueda de activos iraníes alrededor del mundo, con intención de que los fondos recuperados se destinen al pueblo iraní. La declaración, emitida en contexto de sanciones intensificadas, subraya expansión de medidas financieras contra Teherán.",
+   "analisis": {
+    "porque": "Amplía arsenal de sanciones financieras contra Irán. Impacta inversión global en activos relacionados con Irán, operaciones bancarias internacionales de entidades iraníes, y prima de riesgo sobre activos de mercados emergentes.",
+    "queOcurrio": "Funcionario de Tesoro confirmó búsqueda activa de activos iraníes a escala mundial y propósito de repatriación de fondos al pueblo iraní como parte de política de sanciones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "Oro",
+    "Mercados emergentes",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Sanciones",
+    "Tesoro USA",
+    "Activos congelados",
+    "Política exterior"
+   ],
+   "tgText": "📋 Tesoro USA intensifica búsqueda de activos iraníes a nivel global. Fondos recuperados se destinarían al pueblo iraní.",
+   "xText": "Tesoro USA: búsqueda activa de activos iraníes mundialmente. Fondos confiscados destinados al pueblo iraní.",
+   "discordText": "**Tesoro USA amplía sanciones contra Irán**\n• Persecución de activos a escala global\n• Fondos para repatriación al pueblo iraní",
+   "pushText": "Tesoro USA busca activos iraníes globalmente",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "DXY: alcista marginal por fortalecimiento de control financiero estadounidense",
+    "despues": "Bonos iraníes (acceso limitado), activos de mercados emergentes susceptibles a congelamiento",
+    "escenarios": "Traders vigilan: (1) Efectividad de persecución de activos, (2) Represalias comerciales de Irán o aliados, (3) Impacto en inversión en Oriente Medio más amplio",
+    "riesgos": "Medidas recíprocas de Irán, congelamiento impredecible de activos particulares, impacto limitado si activos ya congelados previamente"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33813",
+   "fecha": "2026-07-31T15:56:20+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33813",
+   "via": "DeItaone",
+   "original": "TRUMP: IRAN'S MISSILE CAPABILITY WEAKENED President Donald Trump said Iran still has \"a few missiles,\" but far fewer than it did four to five months ago. Trump added that Iran's missile production capabilities have almost completely disappeared, signaling continued pressure on the country's military capabilities.",
+   "titulo": "Trump: capacidad de misiles de Irán se ha debilitado significativamente",
+   "resumen": "El presidente Trump afirmó que Irán posee ahora «pocos misiles» en comparación con hace 4-5 meses, señalando que sus capacidades de producción de misiles han «casi desaparecido completamente». La declaración refleja presión militar sostenida sobre el país y marca una escalada en la postura de política exterior estadounidense hacia Teherán.",
+   "analisis": {
+    "porque": "Impacta mercados de energía (Irán = productor OPEP), geopolítica de Oriente Medio, y precios de petróleo. Señales de tensión militar sostenida afectan prima de riesgo en commodities y activos defensivos.",
+    "queOcurrio": "Trump declaró públicamente que la capacidad militar iraní de misiles ha menguado drásticamente en los últimos 4-5 meses, con producción casi eliminada.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "S&P 500",
+    "DXY",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Trump",
+    "Misiles",
+    "Oriente Medio",
+    "Geopolítica",
+    "Petróleo",
+    "Tensión militar"
+   ],
+   "tgText": "🔴 Trump afirma que capacidad de misiles de Irán se ha debilitado «casi completamente» en últimos 4-5 meses. Presión militar sostenida sobre Teherán escalala tensión en Oriente Medio.",
+   "xText": "Trump: Irán ha perdido casi completamente su capacidad de producción de misiles en últimos 4-5 meses. Señal de escalada militar sostenida en Oriente Medio.",
+   "discordText": "**Irán: Declive militar según Trump**\n• Capacidad de misiles reducida drásticamente\n• Producción casi eliminada (últimos 4-5 meses)\n• Presión militar estadounidense en Oriente Medio",
+   "pushText": "Trump: capacidad de misiles de Irán casi desaparecida",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent: reacción bajista esperada por reducción de riesgo geopolítico en Ormuz",
+    "despues": "Oro (activo seguro), bonos estadounidenses (busca de seguridad si se intensifica conflicto), DXY (fortaleza del dólar)",
+    "escenarios": "Traders vigilan: (1) Confirmación de presión militar sostenida vs. bluff retórico, (2) Respuesta de Irán y grupos aliados, (3) Impacto en flujos de petróleo del Golfo Pérsico, (4) Riesgo de represalia asimétrica",
+    "riesgos": "Riesgo de escalada inesperada, respuesta iraní no-convencional, verificación independiente de capacidades militares no disponible en titular"
+   },
+   "macro": {
+    "petroleo": "bajista corto plazo por reducción de prima de riesgo",
+    "oro": "alcista por incertidumbre geopolítica residual",
+    "dolar": "neutral a alcista (seguridad relativa)",
+    "nasdaq": "alcista por alivio de riesgo",
+    "sp500": "alcista por alivio de riesgo"
+   },
+   "updates": []
+  },
   {
    "id": "33811",
    "fecha": "2026-07-31T14:40:48+00:00",
@@ -470,70 +859,6 @@
    "macro": {
     "dolar": "bajista",
     "oro": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33800",
-   "fecha": "2026-07-31T12:38:49+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33800",
-   "via": "DeItaone",
-   "original": "TRUMP WARNS ISRAEL ON GAZA DEAL A U.S. official said President Donald Trump would be \"very disappointed\" if Israel fails to honor the agreed 20-point Gaza peace plan. The U.S. expects Israel to comply, while Hamas' disarmament is expected to be refined over the coming weeks, with progress anticipated within one to two months despite opposition from members of Israel's governing coalition.",
-   "titulo": "Trump advierte a Israel sobre cumplimiento del plan de paz en Gaza",
-   "resumen": "Un funcionario estadounidense declaró que el Presidente Donald Trump estaría \"muy decepcionado\" si Israel incumple el plan de paz acordado de 20 puntos en Gaza. EE.UU. espera cumplimiento de Israel, mientras desarmamento de Hamas será refinado en próximas semanas con progreso esperado en uno o dos meses, pese a oposición de miembros de la coalición de gobierno israelí.",
-   "analisis": {
-    "porque": "Volatilidad geopolítica afecta precios de energía, valuaciones de empresas defensoras, safe-haven assets (oro, bonos), y mercados emergentes. Advertencia Trump a Israel sugiere presión política US que podría escalar riesgo de ruptura de acuerdo.",
-    "queOcurrio": "Trump amenaza simbólicamente a Israel por posible incumplimiento del plan de paz Gaza. Funcionario US indicó timeline de 1-2 meses para progreso en desarmamiento de Hamas. Oposición política israelí persiste.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos USA",
-    "S&P500",
-    "Emergentes"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "israel-gaza",
-    "trump",
-    "geopolitica",
-    "medio-oriente",
-    "riesgos"
-   ],
-   "tgText": "Trump advierte a Israel sobre plan de paz Gaza. Funcionario US: muy decepcionado si hay incumplimiento. Desarmamiento Hamas en 1-2 meses. Coalición israelí se opone. Riesgo de ruptura.",
-   "xText": "Trump presiona a Israel: \"muy decepcionado\" si incumple acuerdo Gaza. Progreso en desarmamiento Hamas esperado en 1-2 meses. Oposición política israelí persiste.",
-   "discordText": "**Trump presiona a Israel en Gaza**\n• Amenaza con decepción si incumple plan\n• Desarmamiento Hamas en 1-2 meses esperado\n• Coalición israelí se opone\n• Riesgo de ruptura del acuerdo\n• Volatilidad geopolítica continúa",
-   "pushText": "Trump advierte a Israel sobre cumplimiento del acuerdo de paz en Gaza",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo sube ligeramente (prima de riesgo geopolítico si acuerdo se rompe)",
-    "despues": "Oro sube (safe-haven), S&P500 baja si riesgo de escalada percibido, emergentes caen (risk-off)",
-    "escenarios": "Traders vigilarán comunicaciones futuras de Trump y gobiernos de Israel/Hamas. Cualquier signo de colapso del acuerdo podría disparar petróleo a $90+. Hamas podría rechazar términos de desarmamiento.",
-    "riesgos": "Declaración de funcionario US, no confirmación de Trump directo. Presión US podría ser táctica negociadora, no amenaza real. Timeline de 1-2 meses es estimado, sujeto a cambios rápidos."
-   },
-   "macro": {
-    "petroleo": "alcista",
-    "oro": "alcista",
-    "sp500": "bajista"
    },
    "updates": []
   },
@@ -7347,301 +7672,6 @@
     }
    ],
    "actualizado": "2026-07-28T18:59:40+00:00"
-  },
-  {
-   "id": "33670",
-   "fecha": "2026-07-28T14:45:47+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33670",
-   "via": "DeItaone",
-   "original": "MUSK'S FORTUNE PLUNGES, STILL TOPS $700B Elon Musk has lost roughly $650 billion in wealth since SpaceX's June peak as Tesla and SpaceX shares continue to slide. Despite the sharp decline, Musk remains worth more than $700 billion—around 45 times the fortune of China's CXMT billionaire Zhu Yiming. Investors remain focused on whether AI-driven growth can justify lofty valuations.",
-   "titulo": "Fortuna de Musk se desploma USD 650K millones; sigue arriba de USD 700K millones",
-   "resumen": "Elon Musk ha perdido aproximadamente USD 650.000 millones en riqueza desde el pico de SpaceX en junio, mientras que acciones de Tesla y SpaceX continúan cayendo. A pesar de la caída severa, Musk sigue siendo acreedor de más de USD 700 mil millones, aproximadamente 45 veces la fortuna del multimillonario chino Zhu Yiming. Mercados continúan evaluando si el crecimiento impulsado por IA puede justificar valuaciones elevadas.",
-   "analisis": {
-    "porque": "Cambio en fortuna de individuos mega-ricos refleja sentimiento de mercado sobre sus empresas; Musk es figura pública que afecta percepción de Tesla/SpaceX; caída de USD 650B señala volatilidad severa en activos de riesgo",
-    "queOcurrio": "Fortuna de Musk bajó USD 650K millones desde junio, aunque permanece sobre USD 700K millones",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "TSLA",
-    "SPCX",
-    "Renta variable especulativa"
-   ],
-   "sesgos": [
-    {
-     "activo": "TSLA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "SPCX",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "musk-fortuna-caída",
-    "tesla-spacex-presión",
-    "multimillonarios-volatilidad"
-   ],
-   "tgText": "💰 Fortuna de Musk cae USD 650K millones desde junio. Sigue en USD 700K millones (45x riqueza de billonario chino Zhu Yiming). Tesla y SpaceX bajo presión.",
-   "xText": "💰 Elon Musk: -USD 650K millones desde junio. Permanece con USD 700K millones de fortuna. Caída refleja presión en TSLA y SPCX por dudas sobre IA.",
-   "discordText": "**FORTUNA DE MUSK EN CAÍDA**\n• Pérdida de USD 650 mil millones desde junio\n• Nivel actual: USD 700+ mil millones\n• Comparativa: 45x la riqueza del multimillonario chino Zhu Yiming\n• Drivers: TSLA y SPCX bajo presión por dudas IA\n• Contexto: Volatilidad extrema en activos de riesgo",
-   "pushText": "Fortuna de Musk cae USD 650K millones. Sigue en USD 700K millones.",
-   "importancia": 3,
-   "reaccion": {
-    "primero": "TSLA y SPCX reaccionan directamente (son activos principales de Musk); efecto psicológico en inversores de confianza en CEO",
-    "despues": "Otros activos especulativos pueden seguir si hay contagio de sentimiento",
-    "escenarios": "Traders monitorean si Musk venderá acciones para diversificar (riesgo de oferta); si permanecerá como accionista control; nivel de USD 700K billones es psicológicamente importante",
-    "riesgos": "Titular es dato anecdótico sin movimiento de mercado inmediato; fortuna depende de valuación de TSLA/SPCX que a su vez dependen de mercado"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33669",
-   "fecha": "2026-07-28T14:24:26+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33669",
-   "via": "DeItaone",
-   "original": "$AAPL - APPLE TOPS $5 TRILLION VALUATION Apple briefly reached a $5 trillion market capitalization in Tuesday trading, becoming only the second company after Nvidia to hit the milestone. The move reflects shifting investor confidence as Wall Street reassesses the AI race. Nvidia, which previously peaked near $5.7 trillion, has pulled back amid concerns over slowing AI spending.",
-   "titulo": "Apple alcanza USD 5 billones en capitalización; Nvidia pierde liderazgo en carrera de IA",
-   "resumen": "Apple brevemente alcanzó capitalización de USD 5 billones el martes, convirtiéndose en segundo emisor tras Nvidia en lograr hito. Movimiento refleja reasignación de confianza inversora en carrera de IA. Nvidia, que previamente operó cerca de USD 5,7 billones, retrocede ante preocupaciones por desaceleración en gasto de IA.",
-   "analisis": {
-    "porque": "Cambio de liderazgo de mercado indica rotación de capitales; señal de mercado sobre quién será ganador en ciclo de IA; psicología inversora de máximos históricos afecta sentimiento general",
-    "queOcurrio": "Apple alcanzó brevemente USD 5 billones de capitalización, segundo solo a Nvidia. Nvidia retrocede de máximo de USD 5,7 billones por dudas sobre gasto futuro en IA",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "AAPL",
-    "NVDA",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "AAPL",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NVDA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Tech mega-cap",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "apple-5billones",
-    "nvidia-dudas-ia",
-    "liderazgo-mercado",
-    "rotación-capital",
-    "valuación-tech"
-   ],
-   "tgText": "🍎 Apple alcanza USD 5 billones en capitalización (segundo hito tras Nvidia). Nvidia cae de USD 5,7T ante dudas sobre gasto en IA. Rotación en mercado de mega-cap.",
-   "xText": "🍎 AAPL brevemente en USD 5T, segundo solo a NVDA. Nvidia se retira desde USD 5,7T por preocupaciones en gasto IA. Rotación de capital en mega-cap tech.",
-   "discordText": "**APPLE ALCANZA USD 5 BILLONES**\n• Capitalización de USD 5 billones (segundo hito en mercado)\n• Refleja rotación de confianza: fuera de NVDA, hacia AAPL\n• Nvidia retrocede de USD 5,7T (pico anterior)\n• Señal: Mercado cuestiona durabilidad de gasto IA de Big Tech\n• Impacto: Rotación sectorial, no crash generalizado (es reposicionamiento)",
-   "pushText": "Apple alcanza USD 5T. Rotación desde Nvidia por dudas sobre IA.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "AAPL sube por reasignación de capitales y FOMO; NVDA cae por profit-taking y realización de dudas sobre ROI; fondos reequilibran tenencias",
-    "despues": "Otros mega-cap tech (MSFT, AMZN, GOOGL) por efecto sectorial; índices como NASDAQ y S&P 500 siguen movimiento neto",
-    "escenarios": "Traders monitorean si AAPL mantiene nivel de USD 5T (soporte psicológico); si NVDA fija piso o continúa cayendo; rotación puede ser cambio de tema (de 'boom IA' a 'valoración de Apple'); earnings próximos determinarán si rotación es justificada",
-    "riesgos": "Titular no especifica si AAPL alcanzó USD 5T por fortaleza propia o solo por oferta corta de NVDA; brevedad del nivel de AAPL sugiere que fue toque intraday, no soporte duradero"
-   },
-   "macro": {
-    "nasdaq": "neutral",
-    "sp500": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33668",
-   "fecha": "2026-07-28T14:23:49+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33668",
-   "via": "DeItaone",
-   "original": "SPOT SILVER FALLS NEARLY 3% TO $56.73/OZ",
-   "titulo": "Plata cae 3% a USD 56,73/oz; presión en metales ante caída de tasas esperada",
-   "resumen": "Plata operó a baja el martes, cayendo casi 3% a USD 56,73 por onza. Movimiento refleja presión general en metales preciosos por expectativas de cortes de tasas de la Reserva Federal y debilidad relativa de demanda de activos de riesgo en contexto de liquidación tecnológica.",
-   "analisis": {
-    "porque": "Plata es activo sensible a tasas reales; caída de tasas reduce costo de oportunidad de mantener metales no-yield bearing; demanda industrial (electrónica, solar) vulnerable a recesión",
-    "queOcurrio": "Plata retrocedió casi 3% a USD 56,73/oz",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Plata",
-    "Oro",
-    "Metales preciosos",
-    "USD",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Plata",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "plata-caída",
-    "metales-preciosos",
-    "tasas-baja",
-    "usd-fortaleza"
-   ],
-   "tgText": "📉 Plata cae 3% a USD 56,73/oz. Presión por expectativa de cortes de tasas Fed y liquidación en tech. Metales preciosos bajo presión.",
-   "xText": "📉 Plata -3% a USD 56,73/oz. Caída de tasas esperada y liquidación tech presionan metales preciosos. Demanda industrial débil.",
-   "discordText": "**PLATA BAJO PRESIÓN**\n• Caída de 3% a USD 56,73/oz\n• Factores: expectativa de cortes de tasas Fed, debilidad en tech/renta variable\n• Metales preciosos: presión general por caída de tasas reales\n• Demanda industrial: débil por incertidumbre económica",
-   "pushText": "Plata -3% a USD 56,73/oz. Presión por tasas bajas y liquidación tech.",
-   "importancia": 3,
-   "reaccion": {
-    "primero": "Plata cae por caída de tasas reales; oro puede tener respuesta mixta (safe-haven vs tasas bajas)",
-    "despues": "Otros metales industriales (cobre) pueden reaccionar si debilidad es por recesión; demanda solar/tech se afecta",
-    "escenarios": "Traders monitorean nivel USD 56 como soporte; correlación con tasas reales (10Y TIPS); si Fed corta agresivamente, plata puede caer más; si hay rally en equities, plata sube",
-    "riesgos": "Titular no ofrece contexto; caída de 3% es moderada; falta información sobre volumen y si es tendencia o rebote"
-   },
-   "macro": {
-    "bonos": "alcista (demanda por caída de tasas)",
-    "dolar": "mixto"
-   },
-   "updates": []
-  },
-  {
-   "id": "33667",
-   "fecha": "2026-07-28T14:23:06+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33667",
-   "via": "DeItaone",
-   "original": "NASDAQ NEARS CORRECTION AS AI FEARS GROW The Nasdaq 100 fell 1.6% Tuesday, putting the index on the verge of a market correction after a 10% drop from its June peak. Investors are increasingly worried that massive AI spending by Big Tech may not deliver strong returns. Focus now shifts to earnings from Microsoft, Meta and Amazon, which could determine whether the tech selloff deepens or stabilizes",
-   "titulo": "Nasdaq en riesgo de corrección al caer 10% desde junio; dudas sobre rentabilidad de IA",
-   "resumen": "El Nasdaq 100 retrocedió 1,6% en martes, aproximándose a corrección técnica tras caída de 10% desde su pico de junio. Inversores cuestionan si el gasto masivo en IA de las megacap tecnológicas generará retornos suficientes. Mercados atentos a reportes de Microsoft, Meta y Amazon que determinarán si la venta continúa o se estabiliza.",
-   "analisis": {
-    "porque": "Movimiento de índices tecnológicos determina volatilidad sistémica y reorienta flujos de capital global; dudas sobre valuaciones de IA son factor clave para ciclo de tasas",
-    "queOcurrio": "Nasdaq 100 cayó 1,6%, acumulando 10% de pérdida desde máximo de junio, activando temores sobre retorno de inversión en inteligencia artificial",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "QQQ",
-    "MSFT",
-    "META",
-    "AMZN",
-    "NVDA",
-    "Nasdaq 100"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Acciones tecnológicas",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NVDA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "nasdaq-corrección",
-    "IA-dudas",
-    "big-tech",
-    "valuaciones",
-    "liquidación-tecnológica"
-   ],
-   "tgText": "📉 Nasdaq 100 cae 1,6% y aproxima corrección del 10% desde junio. Inversores cuestionan rentabilidad de inversión masiva en IA. Atención a earnings de Microsoft, Meta y Amazon.",
-   "xText": "📉 NASDAQ 100 -1,6% hoy, 10% bajo máximo de junio. Dudas sobre retorno de gasto en IA presionan megacap tech. Reportes de MSFT, META, AMZN serán decisivos.",
-   "discordText": "**NASDAQ EN RIESGO DE CORRECCIÓN**\n• Índice Nasdaq 100 cae 1,6%, acumula 10% de pérdida desde junio\n• Crecientes dudas sobre rentabilidad de inversión masiva en IA\n• Próximos días: earnings de Microsoft, Meta, Amazon serán críticos\n• Riesgo: profundización de venta técnica si no hay sorpresas positivas",
-   "pushText": "Nasdaq 100 -1,6%, riesgo de corrección. Dudas sobre IA pesan en tech.",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "NASDAQ y QQQ reaccionan inmediatamente por ser índices sintéticos; luego NVDA, MSFT, META, AMZN por ser componentes de mayor peso",
-    "despues": "S&P 500 y DOW por efecto contagio; luego futuros de tasas (si venta lleva a espectativa de corte de tasas Fed); posible fortalecimiento del dólar por flight-to-safety",
-    "escenarios": "Traders monitorean nivel técnico de corrección formal (-10%); volumen en venta; si earnings sorprenden al alza podría haber rebote; si confirman preocupaciones sobre ROI en IA, venta continúa",
-    "riesgos": "Titular no detalla si caída fue por profit-taking técnico o cambio fundamental en tesis de IA; falta confirmar si Meta, MSFT, AMZN realmente decepcionarán"
-   },
-   "macro": {
-    "nasdaq": "bajista",
-    "sp500": "bajista",
-    "dow": "neutral",
-    "bonos": "alcista (demanda de seguridad)",
-    "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33664",
-   "fecha": "2026-07-28T14:17:41+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33664",
-   "via": "DeItaone",
-   "original": "$SPCX - SPACEX SLUMPS NEARLY 50% FROM JUNE PEAK SpaceX fell another 5.5%, leaving the stock 47% below its June 16 high and wiping out more than $1.2 trillion in market value. The decline has been driven by AI valuation concerns, geopolitical uncertainty, and heavy short selling. Investors are also watching a major August 6 lock-up expiry, which will significantly increase the number of tradable sh",
-   "titulo": "SpaceX se desploma 47% desde junio; lock-up de agosto amplificará presiones",
-   "resumen": "SpaceX cayó 5,5% adicional el martes, acumulando pérdida de 47% desde máximo del 16 de junio, borrando más de 1,2 billones de dólares en capitalización. Declive impulsado por dudas de valuación en IA, incertidumbre geopolítica y ventas en corto. Vencimiento de lock-up el 6 de agosto aumentará oferta de acciones disponibles para negociar.",
-   "analisis": {
-    "porque": "Indicador de cambio de sentimiento en activos de riesgo; SpaceX es proxy de especulación en tech/space-economy; lock-up es catalizador técnico definido que puede profundizar venta",
-    "queOcurrio": "SpaceX cayó 5,5% hoy, llegando a 47% de caída desde 16 de junio, perdiendo USD 1,2 billones en valor de mercado por dudas sobre IA, geopolítica y short-selling",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "SPCX",
-    "Acciones tecnológicas",
-    "Renta variable especulativa"
-   ],
-   "sesgos": [
-    {
-     "activo": "SPCX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Tech especulativo",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "spacex-caída",
-    "lock-up-agosto",
-    "cortos",
-    "tech-valuación",
-    "especulación"
-   ],
-   "tgText": "🚀 SpaceX cae 47% desde junio (USD 1,2T perdidos). Hoy otro -5,5%. Lock-up del 6 agosto aumentará oferta y presión vendedora. Duda sobre IA y geopolítica pesan.",
-   "xText": "🚀 SPCX -47% desde junio, hoy -5,5%. Lock-up del 6 de agosto será catalizador: más oferta de acciones presionará aún más. IA, geopolítica, cortos en acción.",
-   "discordText": "**SPACEX EN CAÍDA LIBRE**\n• Acumula -47% desde 16 de junio (perdida USD 1,2 billones)\n• Hoy cae -5,5% adicional\n• Catalizador próximo: **Lock-up vence 6 de agosto** (más oferta disponible)\n• Factores: dudas IA, geopolítica, heavily shorted\n• Riesgo: lock-up amplificará presión vendedora",
-   "pushText": "SpaceX -47% desde junio. Lock-up del 6 de agosto acelerará venta.",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "SPCX reacciona directamente por ser accionista principal Musk; luego Tesla si están correlacionados; posible contagio a índices tech si SpaceX sale de cartera de fondos",
-    "despues": "Otros activos de riesgo especulativo (crypto, small-caps, especulativos); posible fortalecimiento de bonos por flight-to-safety",
-    "escenarios": "Traders monitorean volumen en lock-up (si muchos accionistas venden simultaneously, caída podría acelerarse); nivel de soporte técnico en 47%; si cortos se cubren, posible rebote volátil",
-    "riesgos": "Titular atribuye caída a 'dudas de IA' sin especificar qué; lock-up es catalizador certero pero timing exacto de venta es incierto; correlación con Tesla no garantizada"
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
