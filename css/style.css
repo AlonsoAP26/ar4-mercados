@@ -5342,14 +5342,3 @@ td > .dk-chip:first-child { margin-left: 0; }
 @media (prefers-reduced-motion: reduce) {
   .fl-strip-item:first-child > .sdot { animation: none; }
 }
-
-/* ===== Jerarquía en el hero: ambos dorados, pero la comunidad manda ===== */
-.hero-centrado .hero-actions .btn-gold:first-child {
-  padding: 15px 32px;
-  font-size: 1.01rem;
-  box-shadow: 0 10px 32px rgba(212,175,55,0.42);
-}
-.hero-centrado .hero-actions .btn-gold:first-child:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 38px rgba(212,175,55,0.5);
-}
