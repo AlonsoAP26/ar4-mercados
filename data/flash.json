@@ -1,7 +1,140 @@
 {
- "lastId": 33782,
- "actualizado": "2026-07-31T09:16:10.255Z",
+ "lastId": 33784,
+ "actualizado": "2026-07-31T09:41:16.879Z",
  "items": [
+  {
+   "id": "33784",
+   "fecha": "2026-07-31T09:24:27+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33784",
+   "via": "DeItaone",
+   "original": "EUROZONE INFLATION REACCELERATES Eurozone inflation rose to 2.9% in July from 2.8%, matching forecasts, as higher oil prices following renewed US-Iran tensions lifted energy costs. The data reinforced expectations the ECB will raise interest rates again, with markets and economists now focused on a potential September hike. Core and services inflation also accelerated, while the eurozone economy c",
+   "titulo": "Inflación eurozona repunta a 2,9% en julio; BCE apunta a alza de tasas en septiembre",
+   "resumen": "La inflación de la eurozona aceleró a 2,9% en julio desde 2,8% en junio, impulsada por el repunte de precios del petróleo tras tensiones renovadas entre EE.UU. e Irán. La inflación de servicios y núcleo también se aceleró. El dato refuerza expectativas de que el BCE subirá tasas de referencia nuevamente, con mercados y economistas enfocados en un potencial movimiento en septiembre. La economía eurozona mantiene resiliencia.",
+   "analisis": {
+    "porque": "Presiona directamente expectativas de política monetaria del BCE. Una inflación por encima del objetivo del 2% y acelerada justifica más subidas de tasas, impactando valuaciones de renta variable europea, EUR/USD y mercados de bonos.",
+    "queOcurrio": "Inflación de eurozona pasó de 2,8% a 2,9% en julio, confirmando pronósticos. Energía lideró el alza por tensiones geopolíticas Irán-EE.UU. Mercados ahora esperan decisión de alza de tasas en septiembre.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "EURUSD",
+    "EUR/JPY",
+    "Bonos Eurozona",
+    "STOXX 600",
+    "DAX",
+    "Petróleo",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "EUR",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos Eurozona",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "STOXX 600",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Inflación|Bancos Centrales|Datos Económicos",
+   "keywords": [
+    "eurozona-inflación",
+    "BCE",
+    "tasas-septiembre",
+    "energía",
+    "irán"
+   ],
+   "tgText": "📊 Inflación eurozona aceleró a 2,9% en julio vs 2,8% previo. Energía sube por tensiones Irán-EE.UU. BCE probablemente subirá tasas en septiembre. EUR presionado.",
+   "xText": "📈 Eurozona: inflación repunta a 2,9% en julio (energía +tensiones geopolíticas). Refuerza caso para nueva alza de tasas del BCE en septiembre. EUR/bonos bajo presión.",
+   "discordText": "**Inflación Eurozona** aceleró a **2,9%** (vs 2,8% previo)\n• Energía sube por conflicto Irán-EE.UU.\n• **BCE probablemente subirá tasas en septiembre**\n• EURUSD bajo presión; bonos caen",
+   "pushText": "Inflación eurozona sube a 2,9%; BCE apunta a alza de tasas en sept",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "EUR/USD cae (tasas más altas atraen demanda, pero presión inicial por recesión); bonos de eurozona caen (rendimientos suben con expectativa de alza de tasas).",
+    "despues": "STOXX 600 y bolsas europeas bajo presión por ciclo de endurecimiento. Pares EUR/JPY pueden apreciarse si divergencia de política sigue. Petróleo mantiene soporte por geopolítica.",
+    "escenarios": "Traders vigilarán: (1) si BCE confirma en acta expectativa de alza para septiembre; (2) si inflación core/servicios se modera en próximos meses; (3) si tensiones Irán-EE.UU. escalan y presionan más energía.",
+    "riesgos": "Titular oficial de Bloomberg; dato confirmado. Riesgo: si economía eurozona muestra debilidad en próximas semanas, mercados pueden recalcular odds de alza del BCE."
+   },
+   "macro": {
+    "dolar": "presión bajista por suba de tasas BCE",
+    "euro": "alcista a corto (tasas suben)",
+    "bonos": "bajistas (rendimientos suben)",
+    "petroleo": "alcista (geopolítica Irán)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33783",
+   "fecha": "2026-07-31T09:20:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33783",
+   "via": "DeItaone",
+   "original": "IRAN'S FARS SAYS IRGC STOPPED TWO TANKERS FROM PASSING THROUGH STRAIT OF HORMUZ; 4 OTHER TANKERS CHANGED COURSE",
+   "titulo": "ACTUALIZACIÓN: Irán detiene 2 buques en Estrecho de Ormuz; 4 tanques cambian ruta",
+   "resumen": "Fuerzas de la Guardia Revolucionaria Islámica (IRGC) de Irán detuvieron dos buques cisterna e impidieron su paso por el Estrecho de Ormuz. Otros cuatro tanques modificaron su ruta. El incidente refleja escalada en tensiones geopolíticas entre EE.UU. e Irán, afectando suministro global de petróleo y seguridad de navegación comercial.",
+   "analisis": {
+    "porque": "Escalada concreta de tensiones en corredor crítico que transporta ~20% del petróleo mundial. Genera prima de riesgo geopolítico inmediata en petróleo y correlatos (divisas de emergentes, bonos de riesgo).",
+    "queOcurrio": "IRGC detuvo 2 buques y bloqueó su paso por Estrecho de Ormuz; 4 tanques cambiaron curso. Medida de Irán probablemente en respuesta a tensiones con EE.UU.",
+    "estado": "confirmado",
+    "fuenteOriginal": "FARS (agencia estatal iraní)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "EURUSD",
+    "USD/CNY",
+    "Acciones defensa",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica|Materias Primas|Breaking News",
+   "keywords": [
+    "iran",
+    "estrecho-ormuz",
+    "tanques",
+    "irgc",
+    "petróleo",
+    "seguridad-marina"
+   ],
+   "tgText": "🚨 Irán detiene 2 buques en Estrecho de Ormuz; 4 cambian ruta. Prima geopolítica dispara petróleo. Afecta 20% del suministro global. Tensiones EE.UU.-Irán escalan.",
+   "xText": "⚠️ IRGC detiene 2 buques e impide paso por Estrecho de Ormuz; 4 tanques desvían ruta. Escalada crítica en zona que mueve 20% del petróleo mundial.",
+   "discordText": "**🚨 ESCALADA IRÁN-ORMUZ**\n• IRGC detuvo **2 buques cisterna**\n• **4 tanques cambiaron ruta**\n• Bloqueo de corredor del 20% suministro mundial\n• Prima geopolítica dispara petróleo",
+   "pushText": "Irán detiene buques en Ormuz; escalada crítica en suministro de petróleo",
+   "importancia": 10,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent salen alcistas inmediato (+2-4% esperado); oro sube por safe-haven; USD se aprecia por demanda defensiva.",
+    "despues": "Bonos USA bajan (rentabilidades suben por riesgo geopolítico); acciones defensoras y energía oil&gas suben. Emergentes bajan si petróleo presiona inflación global.",
+    "escenarios": "Traders vigilarán: (1) si EE.UU. responde militarmente o con sanciones; (2) si Irán abre más canales de bloqueo; (3) comunicados de OPEC+ sobre ajustes de oferta; (4) si Corea del Sur/Japón (importadores grandes) señalan preocupación.",
+    "riesgos": "FARS es fuente estatal iraní, no Bloomberg/Reuters directa, lo que introduce sesgo propagandístico. Afirmación sobre 'bloqueo' no verificada de fuentes occidentales. Riesgo: escalada rápida si EE.UU. envía activos militares al Golfo."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33781",
    "fecha": "2026-07-31T08:56:35+00:00",
@@ -7441,125 +7574,6 @@
     "despues": "Otros bancos europeos (HSBC, Standard Chartered, Santander) podrían seguir; presión de costos si adoptan modelo similar.",
     "escenarios": "Traders vigilarán: (1) ejecución de cambio sin pérdida de talento crítico, (2) impacto en márgenes 2H 2026, (3) reacción regulatoria de FCA, (4) benchmarking con competidores.",
     "riesgos": "Costos adicionales £100–150M podrían comprimir márgenes netos si ingresos no crecen. Riesgo de despidos post-reestructuración. UK reguladores podrían cuestionar alineación de bonus post-cap."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33626",
-   "fecha": "2026-07-28T07:30:00+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33626",
-   "via": "DeItaone",
-   "original": "JAPAN EARTHQUAKE HAS PRELIMINARY MAGNITUDE OF 7.1 - NIED TSUNAMI WARNING ISSUED AFTER JAPAN EARTHQUAKE - NHK",
-   "titulo": "Sismo de magnitud 7,1 en Japón genera alerta de tsunami",
-   "resumen": "Japón fue golpeado por un terremoto de magnitud preliminar 7,1, según el Instituto Nacional de Investigación en Ciencias de la Tierra (NIED). Se emitió alerta de tsunami de 1 metro. El titular no especifica zona epicentral ni daños reportados hasta el momento.",
-   "analisis": {
-    "porque": "Terremotos de magnitud 7+ pueden disrumpir suministros de semiconductores, manufactura electrónica y energía. Japón es hub crítico de suministros globales (chips, baterías, óptica).",
-    "queOcurrio": "Terremoto magnitud 7,1 en Japón con alerta de tsunami de 1 metro emitida; no se detallan zona ni daños.",
-    "estado": "confirmado",
-    "fuenteOriginal": "NHK (broadcaster oficial Japón) via NIED"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Semiconductores",
-    "TSMC",
-    "Sony",
-    "Panasonic",
-    "Yen",
-    "Nikkei",
-    "Índices Asia"
-   ],
-   "sesgos": [
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Yen",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Emergencia",
-   "keywords": [
-    "terremoto-japon",
-    "tsunami",
-    "magnitud-7-1",
-    "disrupcion-supply-chain",
-    "semiconductor"
-   ],
-   "tgText": "🚨 Terremoto M7,1 en Japón con alerta tsunami (1m). Riesgo de disrupción en semiconductores, electrónica y energía. Sin detalles de daños aún. Mercados vigilando.",
-   "xText": "Japón: terremoto M7,1 genera alerta de tsunami de 1m. Riesgo de disrupción supply chain semiconductores. Detalles de daños aún sin confirmar.",
-   "discordText": "🚨 **TERREMOTO JAPÓN**\n• Magnitud: 7,1 (preliminar)\n• Alerta tsunami: 1 metro\n• Fuente: NIED/NHK\n• Riesgo: disrupción chips/electrónica/energía",
-   "pushText": "Alerta: terremoto M7,1 en Japón; tsunami de 1m; monitorear disrupción supply chain",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Yen sube por 'safe-haven' y riesgo géopolitico; Nikkei cae. Semiconductores (TSMC, Sony) bajan por riesgo supply.",
-    "despues": "Índices Tech globales si se confirma daño crítico; bonos (risk-off); crude baja (menor actividad económica); seguros (re-insurers).",
-    "escenarios": "Traders esperan: (a) daño mínimo a infraestructura crítica → bounce rápido; (b) plantas semiconductoras disrumpidas → re-pricing de supply-chain risk. Monitorean reports de daño estructural en fábricas.",
-    "riesgos": "Magnitud 'preliminar' puede cambiar. Tsunami de 1m es bajo para Japón; riesgo real depende de ubicación epicentro (no especificada). Información temprana sin detalles de daños."
-   },
-   "macro": {
-    "yen": "Alcista (safe-haven)",
-    "nikkei": "Bajista si daño se confirma",
-    "semiconductores": "Bajista (supply risk)",
-    "bonos": "Neutral a alcista (risk-off leve)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-28T08:21:13+00:00",
-     "id": "33636",
-     "texto": "TSMC evacuó a sus empleados de la planta de Kumamoto después de que un nuevo terremoto de magnitud importante sacudiera el sur de Japón. El fabricante de semiconductores es crítico para la cadena de suministro global de chips. El titular no especifica daños o impacto operativo.",
-     "tgUrl": "https://t.me/walterbloomberg/33636"
-    }
-   ],
-   "actualizado": "2026-07-28T08:21:13+00:00"
-  },
-  {
-   "id": "33635",
-   "fecha": "2026-07-28T08:20:53+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33635",
-   "via": "DeItaone",
-   "original": "$BZFD - BUZZFEED SHARES RISE 13.3% PREMARKET AFTER CO APPROVES PLAN TO REDUCE WORKFORCE BY NEARLY 35%",
-   "titulo": "BuzzFeed sube 13,3% en premarket tras aprobación de recorte de 35% de personal",
-   "resumen": "Las acciones de BuzzFeed ($BZFD) subieron 13,3% en operaciones previas a la sesión después de que la empresa aprobó un plan de reducción de personal de casi 35%. El mercado interpreta el recorte como medida de austeridad y mejora de márgenes operativos.",
-   "analisis": {
-    "porque": "Recortes corporativos suelen interpretarse como ajustes de eficiencia que mejoran rentabilidad. Para empresas en dificultades como BuzzFeed, significa reducción de quemada de efectivo.",
-    "queOcurrio": "BuzzFeed anunció y aprobó reducción de ~35% de su fuerza laboral. Mercado reaccionó positivamente en premarket.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "BZFD"
-   ],
-   "sesgos": [
-    {
-     "activo": "BZFD",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "BuzzFeed",
-    "BZFD",
-    "recorte-personal",
-    "reestructuracion",
-    "eficiencia-operativa"
-   ],
-   "tgText": "📈 BZFD sube 13,3% en premarket tras aprobación de recorte de 35% de personal. Mercado ve mejora de márgenes operativos.",
-   "xText": "BuzzFeed ($BZFD) +13,3% premarket tras aprobación de recorte de ~35% de personal. Mercado interpreta como mejora de eficiencia operativa.",
-   "discordText": "**BZFD: Recorte de Personal**\n• Sube 13,3% en premarket\n• Aprobado recorte de ~35% de empleados\n• Mercado ve mejora de márgenes",
-   "pushText": "BZFD +13,3% premarket: aprobado recorte de 35% de personal",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "BZFD reacciona positivamente por expectativa de reducción de gastos operativos y mejora de flujo de caja.",
-    "despues": "Posible arrastre a otros medios digitales y empresas en crisis de eficiencia similares (insustancial para índices amplios).",
-    "escenarios": "Traders vigilarán: (1) ejecución real del recorte, (2) retención de talento editorial crítico, (3) impacto en ingresos publicitarios, (4) quemada de caja posterior.",
-    "riesgos": "Recortes masivos pueden afectar calidad de contenido y atracción de anunciantes. Ganancia inicial podría revertirse si no hay mejora de rentabilidad real."
    },
    "macro": null,
    "updates": []
