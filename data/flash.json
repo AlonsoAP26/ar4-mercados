@@ -1,7 +1,140 @@
 {
- "lastId": 33821,
- "actualizado": "2026-07-31T20:11:02.280Z",
+ "lastId": 33824,
+ "actualizado": "2026-07-31T21:21:18.041Z",
  "items": [
+  {
+   "id": "33821",
+   "fecha": "2026-07-31T16:26:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33821",
+   "via": "DeItaone",
+   "original": "*TRUMP SAYS IRAN LIED DURING NEGOTIATIONS *TRUMP SAYS IRAN FIRED FIVE MISSILES AT JORDAN",
+   "titulo": "Trump: Irán disparó cinco misiles contra Jordania; acusa incumplimiento en negociaciones",
+   "resumen": "El presidente Trump acusó a Irán de disparar cinco misiles contra Jordania y de mentir durante negociaciones diplomáticas. Allegación marca nuevo punto de escalada tras horas de retórica mixta (presión/diplomacia). El titular no especifica daños o contexto temporal exacto.",
+   "analisis": {
+    "porque": "Alegación concreta de acción militar directa representa escalada inmediata de conflicto. Si verificada, impacta dramaticamente precios de petróleo, activos defensivos, y evaluación de probabilidad de conflicto regional ampliado.",
+    "queOcurrio": "Trump acusó a Irán de disparar cinco misiles contra Jordania y de incumplimiento en negociaciones, sin especificar daños o verifiación independiente.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "muy alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "S&P 500",
+    "Bonos",
+    "DXY",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Misiles",
+    "Jordania",
+    "Conflicto",
+    "Escalada",
+    "Trump",
+    "Oriente Medio"
+   ],
+   "tgText": "🚨 BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania. Escalada militar directa tras horas de retórica mixta. Petróleo y oro en alerta máxima.",
+   "xText": "BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania e incumplir negociaciones. Escalada geopolítica inmediata impacta precios de petróleo y oro.",
+   "discordText": "**🚨 BREAKING: Escalada en Oriente Medio**\n• Trump: Irán disparó 5 misiles contra Jordania\n• Acusa incumplimiento en negociaciones\n• Marca nuevo punto de tensión directa\n• Petróleo y oro en alerta de volatilidad máxima",
+   "pushText": "BREAKING: Irán disparó 5 misiles contra Jordania (según Trump)",
+   "importancia": 10,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent: reacción alcista INMEDIATA si acusación se verifica; riesgo de ruptura de flujos por Golfo Pérsico",
+    "despues": "Oro (demanda defensiva), bonos (búsqueda de seguridad), S&P 500 (sesgo bajista por aversión al riesgo), DXY (fortalecimiento del dólar como activo seguro)",
+    "escenarios": "Traders vigilan URGENTE: (1) Verificación independiente de ataques misiles (Jordania, Israel, Arabia Saudita), (2) Cantidad de daños y confirmar si fueron interceptados, (3) Respuesta militar estadounidense/israelí (probabilidad muy elevada), (4) Impacto en flujos de petróleo del Golfo Pérsico (clausura del Estrecho de Ormuz = escenario extremo), (5) Extensión del conflicto a aliados de Irán (Hezbolá, militias proxy), (6) Reacción de China y Rusia",
+    "riesgos": "CRÍTICO: Verificación de allegación no disponible en tiempo real; titulares posteriores podrían refutar; reversión rápida si Trump aclara que misiles fueron interceptados sin daños; riesgo de conflicto regional ampliado si respuesta militar es desproporcionada"
+   },
+   "macro": {
+    "petroleo": "alcista muy significativo si acusación se verifica; escenario de $120+ por barril posible",
+    "oro": "alcista por demanda defensiva",
+    "dolar": "alcista por seguridad relativa",
+    "nasdaq": "bajista por aversión al riesgo",
+    "sp500": "bajista por aversión al riesgo",
+    "bonos": "alcistas (búsqueda de seguridad)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-31T20:56:57+00:00",
+     "id": "33823",
+     "texto": "Washington e Israel coordinan una campaña potencial contra objetivos de energía en Irán, con posibles operaciones este fin de semana según CBS. Trump aún no ha dado aprobación final. Los funcionarios evalúan el impacto económico y coordinan para completar operaciones antes de la apertura de mercados del lunes. White House y autoridades israelíes alinean planes operacionales.",
+     "tgUrl": "https://t.me/walterbloomberg/33823"
+    }
+   ],
+   "actualizado": "2026-07-31T20:56:57+00:00"
+  },
+  {
+   "id": "33822",
+   "fecha": "2026-07-31T20:32:17+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33822",
+   "via": "DeItaone",
+   "original": "WARSH CONSIDERS REDUCING FREQUENCY OF FED POLICY MEETINGS: NYT",
+   "titulo": "Warsh planea reducir frecuencia de reuniones de política monetaria de la Fed",
+   "resumen": "El columnista y exfuncionario de la Fed Kevin Warsh contempla una reducción en la frecuencia de las reuniones de política monetaria, según reporta NYT. El titular no especifica detalles sobre timing o magnitud propuesta. Esta posición se suma a señales previas de Warsh sobre mayor firmeza en tasas a pesar de mensajes dovish.",
+   "analisis": {
+    "porque": "Reforma institucional de la Fed que afectaría cadencia de decisiones de tasas. Menos reuniones implica menos puntos de entrada para cambios de política, afectando expectativas de mercado y volatilidad de bonos.",
+    "queOcurrio": "Warsh considera reducir frecuencia de reuniones de política monetaria de la Fed, según NYT.",
+    "estado": "confirmado",
+    "fuenteOriginal": "NYT"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "fed-meetings",
+    "warsh",
+    "policy-frequency",
+    "monetary-reform",
+    "fed-structure"
+   ],
+   "tgText": "📊 Warsh (ex-Fed) propone reducir frecuencia de reuniones de política monetaria de la Fed. Cambio institucional que afectaría cadencia de decisiones de tasas.",
+   "xText": "Kevin Warsh contempla reducción de frecuencia en reuniones de política monetaria de la Fed, según NYT. Posible reforma institucional de alcance significativo.",
+   "discordText": "**📋 REFORMA FED**\n• Warsh propone menos reuniones de política monetaria\n• Afectaría cadencia de decisiones\n• Cambio institucional importante",
+   "pushText": "Warsh propone reducir frecuencia de reuniones de la Fed",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Rendimientos de bonos largos (10Y+): inicialmente neutrales; mercado espera claridad sobre impacto en predictibilidad de política.",
+    "despues": "DXY y curva de tasas podrían repreciar si se interpreta como mayor rigidez monetaria.",
+    "escenarios": "Traders vigilan: (1) si propuesta es seria o especulativa; (2) apoyo de otros exfuncionarios de Fed; (3) impacto en expectativas de tasas 2027; (4) reacción de mercados de futuros de Fondos Federales.",
+    "riesgos": "Warsh no es funcionario actual (es columnista/ex-asesor); propuesta podría ser descartada. Impacto limitado si no hay seguimiento institucional real."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 953611755,
    "fecha": "2026-07-31T19:55:13.000Z",
@@ -359,76 +492,6 @@
     "sp500": "bajista",
     "bonos": "bajista (precios)",
     "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33821",
-   "fecha": "2026-07-31T16:26:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33821",
-   "via": "DeItaone",
-   "original": "*TRUMP SAYS IRAN LIED DURING NEGOTIATIONS *TRUMP SAYS IRAN FIRED FIVE MISSILES AT JORDAN",
-   "titulo": "Trump: Irán disparó cinco misiles contra Jordania; acusa incumplimiento en negociaciones",
-   "resumen": "El presidente Trump acusó a Irán de disparar cinco misiles contra Jordania y de mentir durante negociaciones diplomáticas. Allegación marca nuevo punto de escalada tras horas de retórica mixta (presión/diplomacia). El titular no especifica daños o contexto temporal exacto.",
-   "analisis": {
-    "porque": "Alegación concreta de acción militar directa representa escalada inmediata de conflicto. Si verificada, impacta dramaticamente precios de petróleo, activos defensivos, y evaluación de probabilidad de conflicto regional ampliado.",
-    "queOcurrio": "Trump acusó a Irán de disparar cinco misiles contra Jordania y de incumplimiento en negociaciones, sin especificar daños o verifiación independiente.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "muy alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "S&P 500",
-    "Bonos",
-    "DXY",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Misiles",
-    "Jordania",
-    "Conflicto",
-    "Escalada",
-    "Trump",
-    "Oriente Medio"
-   ],
-   "tgText": "🚨 BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania. Escalada militar directa tras horas de retórica mixta. Petróleo y oro en alerta máxima.",
-   "xText": "BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania e incumplir negociaciones. Escalada geopolítica inmediata impacta precios de petróleo y oro.",
-   "discordText": "**🚨 BREAKING: Escalada en Oriente Medio**\n• Trump: Irán disparó 5 misiles contra Jordania\n• Acusa incumplimiento en negociaciones\n• Marca nuevo punto de tensión directa\n• Petróleo y oro en alerta de volatilidad máxima",
-   "pushText": "BREAKING: Irán disparó 5 misiles contra Jordania (según Trump)",
-   "importancia": 10,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent: reacción alcista INMEDIATA si acusación se verifica; riesgo de ruptura de flujos por Golfo Pérsico",
-    "despues": "Oro (demanda defensiva), bonos (búsqueda de seguridad), S&P 500 (sesgo bajista por aversión al riesgo), DXY (fortalecimiento del dólar como activo seguro)",
-    "escenarios": "Traders vigilan URGENTE: (1) Verificación independiente de ataques misiles (Jordania, Israel, Arabia Saudita), (2) Cantidad de daños y confirmar si fueron interceptados, (3) Respuesta militar estadounidense/israelí (probabilidad muy elevada), (4) Impacto en flujos de petróleo del Golfo Pérsico (clausura del Estrecho de Ormuz = escenario extremo), (5) Extensión del conflicto a aliados de Irán (Hezbolá, militias proxy), (6) Reacción de China y Rusia",
-    "riesgos": "CRÍTICO: Verificación de allegación no disponible en tiempo real; titulares posteriores podrían refutar; reversión rápida si Trump aclara que misiles fueron interceptados sin daños; riesgo de conflicto regional ampliado si respuesta militar es desproporcionada"
-   },
-   "macro": {
-    "petroleo": "alcista muy significativo si acusación se verifica; escenario de $120+ por barril posible",
-    "oro": "alcista por demanda defensiva",
-    "dolar": "alcista por seguridad relativa",
-    "nasdaq": "bajista por aversión al riesgo",
-    "sp500": "bajista por aversión al riesgo",
-    "bonos": "alcistas (búsqueda de seguridad)"
    },
    "updates": []
   },
@@ -7588,86 +7651,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33665",
-   "fecha": "2026-07-28T14:20:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33665",
-   "via": "DeItaone",
-   "original": "U.S., IRAN REMAIN FAR APART DESPITE CEASEFIRE The U.S. and Iran continue to send conflicting signals despite the ceasefire. Trump said Iran requested talks, but Tehran denied seeking negotiations and said no U.S. talks are underway. Iran is instead holding discussions with Oman on the Strait of Hormuz, though officials say the talks are unrelated to the U.S. and remain focused on Iran's security a",
-   "titulo": "Negociaciones EE.UU.-Irán vagas: Trump y Teherán dan señales contradictorias",
-   "resumen": "A pesar del cese de hostilidades, EE.UU. e Irán envían señales conflictivas. Trump afirma que Irán solicitó conversaciones, pero Teherán niega buscar negociaciones bilaterales y asegura que no hay diálogos con EE.UU. en curso. Irán conversa con Omán sobre Estrecho de Ormuz, aunque funcionarios afirman que diálogos son independientes y enfocados en seguridad soberana.",
-   "analisis": {
-    "porque": "Estrecho de Ormuz es paso crítico para 20% del comercio petrolero global; ambigüedad sobre negociaciones genera incertidumbre sobre escalada/desescalada; impacta precios de petróleo y primas de riesgo geopolítico",
-    "queOcurrio": "Trump dijo que Irán pidió negociaciones; Teherán lo negó públicamente. Irán habla con Omán sobre Estrecho de Ormuz pero oficialmente dice que no está relacionado con EE.UU.",
-    "estado": "rumor",
-    "fuenteOriginal": "Trump statement / Reuters / FARS"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "USD",
-    "Bonos",
-    "Renta variable global"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "iran-eeuu-negociaciones",
-    "estrecho-ormuz",
-    "cese-hostilidades",
-    "geopolítica-petróleo",
-    "trump-teherán"
-   ],
-   "tgText": "⚠️ Señales contradictorias EE.UU.-Irán: Trump dice que Irán pidió hablar; Teherán lo niega. Conversaciones con Omán sobre Ormuz pero se niega vínculo con EE.UU. Ambigüedad mantiene prima de riesgo.",
-   "xText": "⚠️ EE.UU.-IRÁN: Trump asegura que Irán pidió negociaciones; Teherán lo rechaza. Conversaciones con Omán en Ormuz son «independientes». Señales contradictorias mantienen incertidumbre.",
-   "discordText": "**AMBIGÜEDAD EE.UU.-IRÁN PERSISTE**\n• Trump: «Irán pidió negociaciones»\n• Teherán: «No buscamos hablar con EE.UU.»\n• Irán conversa con Omán sobre Estrecho de Ormuz\n• Oficial Iran: diálogos «independientes y sobre soberanía»\n• Implicancia: Incertidumbre sobre trayectoria de desescalada\n• Impacto en petróleo: riesgo geopolítico sin claridad",
-   "pushText": "EE.UU.-Irán: señales contradictorias mantienen incertidumbre geopolítica.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo WTI y Brent reaccionan a cambios en percepción de riesgo; si hay dudas, se mantiene prima alcista; si se aclara desescalada, caída",
-    "despues": "USD por flight-to-safety; bonos USA por demanda de seguridad; mercados de renta variable (especialmente energía y financiero) siguen mov. de petróleo",
-    "escenarios": "Traders monitorean: ¿Irán está negociando indirectamente a través de Omán? ¿Es solo maniobra diplomática? ¿Riesgo de escalada persiste?; volatilidad del petróleo probablemente continúe hasta claridad",
-    "riesgos": "Narrativa contradictoria: no es claro quién dice la verdad; 'fuente de la Casa Blanca' no es verificación oficial; comunicados de FARS (agencia estatal iran) pueden ser propaganda"
-   },
-   "macro": {
-    "petroleo": "neutral-bajista (desescalada reduce prima, pero ambigüedad mantiene incertidumbre)",
-    "dolar": "alcista (flight-to-safety por geopolítica)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-28T20:44:40+00:00",
-     "id": "33678",
-     "texto": "Funcionario estadounidense declara que Irán sobrepasa límites con demandas sobre el Estrecho de Ormuz, rechazadas por Washington, Omán y la comunidad internacional. La escalada retórica refuerza riesgos geopolíticos en una de las rutas comerciales más críticas para el petróleo mundial.",
-     "tgUrl": "https://t.me/walterbloomberg/33678"
-    },
-    {
-     "fecha": "2026-07-28T19:01:39+00:00",
-     "id": "33677",
-     "texto": "El primer ministro Netanyahu reportó que su encuentro con Trump fue 'excelente' y 'una de las mejores conversaciones' entre ambos. Confirmó plena asociación en prevención de armamento nuclear iranί. Conversaciones incluyeron expansión de Acuerdos de Abraham. Fuentes israelíes indican que sitio nuclear 'Pickaxe Mountain' de Irán no fue tema de discusión.",
-     "tgUrl": "https://t.me/walterbloomberg/33677"
-    },
-    {
-     "fecha": "2026-07-28T16:45:10+00:00",
-     "id": "33673",
-     "texto": "Irán reporta a través de IRIB (radio estatal) que no ha buscado negociaciones con Estados Unidos en los últimos 16-17 días. Esto actualiza el panorama de incertidumbre diplomática entre ambas potencias, relevante para volatilidad geopolítica y mercados de energía sensibles a escaladas regionales.",
-     "tgUrl": "https://t.me/walterbloomberg/33673"
-    }
-   ],
-   "actualizado": "2026-07-28T20:44:40+00:00"
   }
  ],
  "rssVistos": [
