@@ -1,7 +1,401 @@
 {
- "lastId": 33790,
- "actualizado": "2026-07-31T11:48:23.277Z",
+ "lastId": 33802,
+ "actualizado": "2026-07-31T13:21:31.947Z",
  "items": [
+  {
+   "id": "33801",
+   "fecha": "2026-07-31T12:40:02+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33801",
+   "via": "DeItaone",
+   "original": "BCA RESEARCH TURNS BULLISH ON GOLD BCA Research said it's time to buy gold, arguing the recent selloff is nearing an end as headwinds from higher real yields fade. The firm expects a weaker U.S. dollar to become a tailwind for gold, while continued central bank buying, geopolitical risks, and reserve diversification should provide long-term support.",
+   "titulo": "BCA Research recomienda compra de oro tras reversión de vientos contrarios",
+   "resumen": "BCA Research emitió recomendación de compra en oro, argumentando que la reciente venta masiva está próxima a finalizar conforme los vientos contrarios de rendimientos reales más altos se desvanecen. El firm espera debilitamiento del dólar como nuevo catalizador, mientras que compras de bancos centrales, riesgos geopolíticos y diversificación de reservas continuarán brindando soporte a largo plazo.",
+   "analisis": {
+    "porque": "Oro es activo hedge contra inflación, debilidad de divisas y estrés geopolítico. Recomendación bullish valida narrativa de que ciclo de ventas ha agotado presión de tasas reales. Impacta flujos a ETFs de oro y operaciones macro.",
+    "queOcurrio": "BCA Research emitió call de compra en oro basada en: (1) reversión de rendimientos reales altos, (2) expectativa de USD débil, (3) apoyo structural de bancos centrales y geopolítica.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Oro",
+    "DXY",
+    "Rendimientos USA",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "oro",
+    "compra",
+    "tasas-reales",
+    "dolar-debil",
+    "bancos-centrales"
+   ],
+   "tgText": "BCA Research recomienda compra de oro. Venta reciente cerca de su fin, rendimientos reales caen, USD se debilitará. Apoyo de bancos centrales y geopolítica sostendrán precio.",
+   "xText": "BCA Research: es momento de comprar oro. Venta masiva está cercana al fin, rendimientos reales se revierten, USD débil próximo. Bancos centrales y geopolítica respaldarán.",
+   "discordText": "**BCA Research alcista en oro**\n• Recomienda compra tras venta reciente\n• Rendimientos reales altos perdiendo fuerza\n• USD esperado débil como catalizador\n• Compras de bancos centrales sostendrán\n• Riesgos geopolíticos dan soporte",
+   "pushText": "BCA Research recomienda comprar oro tras venta reciente",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Oro sube (call bullish de casa de investigación importante genera compras)",
+    "despues": "DXY baja si oro sube (correlación negativa histórica USD-oro), rendimientos USA podrían bajar si mercado acepta narrativa de tasas reales normalizando",
+    "escenarios": "Traders vigilarán si nivel técnico de oro en $2.400-$2.500 resiste. Cualquier sorpresa hawkish de Fed podría revertir la recomendación. Geopolítica permanece como wildcard.",
+    "riesgos": "Recomendación es análisis de BCA, no confirmación de movimiento de precios. Oro puede seguir cayendo si tasas reales suben más. Rendimientos USA podrían subir, no bajar, si inflación persiste."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33800",
+   "fecha": "2026-07-31T12:38:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33800",
+   "via": "DeItaone",
+   "original": "TRUMP WARNS ISRAEL ON GAZA DEAL A U.S. official said President Donald Trump would be \"very disappointed\" if Israel fails to honor the agreed 20-point Gaza peace plan. The U.S. expects Israel to comply, while Hamas' disarmament is expected to be refined over the coming weeks, with progress anticipated within one to two months despite opposition from members of Israel's governing coalition.",
+   "titulo": "Trump advierte a Israel sobre cumplimiento del plan de paz en Gaza",
+   "resumen": "Un funcionario estadounidense declaró que el Presidente Donald Trump estaría \"muy decepcionado\" si Israel incumple el plan de paz acordado de 20 puntos en Gaza. EE.UU. espera cumplimiento de Israel, mientras desarmamento de Hamas será refinado en próximas semanas con progreso esperado en uno o dos meses, pese a oposición de miembros de la coalición de gobierno israelí.",
+   "analisis": {
+    "porque": "Volatilidad geopolítica afecta precios de energía, valuaciones de empresas defensoras, safe-haven assets (oro, bonos), y mercados emergentes. Advertencia Trump a Israel sugiere presión política US que podría escalar riesgo de ruptura de acuerdo.",
+    "queOcurrio": "Trump amenaza simbólicamente a Israel por posible incumplimiento del plan de paz Gaza. Funcionario US indicó timeline de 1-2 meses para progreso en desarmamiento de Hamas. Oposición política israelí persiste.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos USA",
+    "S&P500",
+    "Emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "israel-gaza",
+    "trump",
+    "geopolitica",
+    "medio-oriente",
+    "riesgos"
+   ],
+   "tgText": "Trump advierte a Israel sobre plan de paz Gaza. Funcionario US: muy decepcionado si hay incumplimiento. Desarmamiento Hamas en 1-2 meses. Coalición israelí se opone. Riesgo de ruptura.",
+   "xText": "Trump presiona a Israel: \"muy decepcionado\" si incumple acuerdo Gaza. Progreso en desarmamiento Hamas esperado en 1-2 meses. Oposición política israelí persiste.",
+   "discordText": "**Trump presiona a Israel en Gaza**\n• Amenaza con decepción si incumple plan\n• Desarmamiento Hamas en 1-2 meses esperado\n• Coalición israelí se opone\n• Riesgo de ruptura del acuerdo\n• Volatilidad geopolítica continúa",
+   "pushText": "Trump advierte a Israel sobre cumplimiento del acuerdo de paz en Gaza",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo sube ligeramente (prima de riesgo geopolítico si acuerdo se rompe)",
+    "despues": "Oro sube (safe-haven), S&P500 baja si riesgo de escalada percibido, emergentes caen (risk-off)",
+    "escenarios": "Traders vigilarán comunicaciones futuras de Trump y gobiernos de Israel/Hamas. Cualquier signo de colapso del acuerdo podría disparar petróleo a $90+. Hamas podría rechazar términos de desarmamiento.",
+    "riesgos": "Declaración de funcionario US, no confirmación de Trump directo. Presión US podría ser táctica negociadora, no amenaza real. Timeline de 1-2 meses es estimado, sujeto a cambios rápidos."
+   },
+   "macro": {
+    "petroleo": "alcista",
+    "oro": "alcista",
+    "sp500": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33799",
+   "fecha": "2026-07-31T12:36:55+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33799",
+   "via": "DeItaone",
+   "original": "📊 SEPTEMBER FED HIKE BACK IN PLAY The Fed held rates steady and offered no guidance, but markets viewed the meeting as dovish after Chair Kevin Warsh suggested tighter financial conditions may already be doing some of the Fed's work. Despite the pause, three FOMC officials dissented in favor of a 25 bp hike. Kalshi now prices a 53% chance of a September rate hike, versus 46% for no change. https:",
+   "titulo": "Mercados reprecian alza de tasas para septiembre en 53% tras reunión de Fed",
+   "resumen": "Después de mantener tasas sin cambios, mercados interpretaron la reunión de la Fed como dovish tras comentarios de Chair Kevin Warsh sugiriendo que condiciones financieras más restrictivas ya están ejecutando parte del trabajo de política. Kalshi ahora fija probabilidad de alza de 25 pb en septiembre en 53%, versus 46% para mantener. Tres miembros del FOMC disintieron a favor de alza.",
+   "analisis": {
+    "porque": "Repricing de probabilidad de alza monetaria impacta directamente expectativas de tasas futuras, valuaciones de bonos, carry trades y flujos de renta fija. Señal mixta (dovish retórica pero disidencias) genera incertidumbre sobre política próxima.",
+    "queOcurrio": "Fed pausó alzas. Warsh sugirió que restricción financiera ya trabaja. Pero 3 miembros votaron por alza, y mercados vieron esto como dovish, elevando odds de septiembre aunque no de forma unánime.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "muy alto",
+   "breaking": true,
+   "activos": [
+    "Rendimientos USA",
+    "Bonos USA",
+    "DXY",
+    "S&P500",
+    "NASDAQ",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "fed-tasas",
+    "septiembre-hike",
+    "politica-monetaria",
+    "warsh",
+    "fomc"
+   ],
+   "tgText": "Fed pausa tasas pero mercados ven dovish. Kalshi fija 53% para alza en septiembre vs 46% mantener. Warsh dice restricción financiera ya funciona. 3 miembros FOMC disintieron. Volatilidad esperable.",
+   "xText": "Fed pausa. Warsh: restricción financiera ya trabaja. Mercados ahora ven 53% para alza en septiembre vs 46%. FOMC tuvo 3 disidencias hawkish. Incertidumbre permanece.",
+   "discordText": "**Fed pausa, mercados ajustan odds de septiembre**\n• Tasas mantenidas sin cambios\n• Warsh: restricción financiera ya está operando\n• Kalshi: 53% para alza en septiembre\n• 46% para mantener tasas\n• 3 miembros FOMC votaron por alza\n• Señal mixta, incertidumbre alta",
+   "pushText": "Kalshi: 53% para alza de Fed en septiembre tras reunión dovish",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Rendimientos USA ajustan inmediatamente; bonos venden tras repricing alcista de septiembre",
+    "despues": "DXY sube (tasas alcistas benefician USD), S&P500 y NASDAQ bajan (valuaciones sensibles a tasa), oro repunta (incertidumbre y tasas reales más altas atraen hedge",
+    "escenarios": "Traders vigilarán comentarios de miembros FOMC en próximas semanas para confirmar si hay consenso hacia alza en septiembre. Datos de inflación (agosto) y empleo serán decisivos. Disidencias sugieren FOMC dividido.",
+    "riesgos": "Repricing es rápido; datos débiles podrían revertir probabilidades. Comunicación de la Fed aún es ambigua (dovish en tono pero acción en septiembre posible). Volatilidad esperable en próximas semanas."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "alcista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bonos": "bajista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33798",
+   "fecha": "2026-07-31T12:26:26+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33798",
+   "via": "DeItaone",
+   "original": "MOONSHOT BUILDS AI ON ALIBABA'S NVIDIA CLUSTER Chinese AI startup Moonshot built its Kimi model using access to an Alibaba computing cluster of around 20,000 Nvidia GPUs, according to Bloomberg. The partnership highlights Alibaba's role in supplying large-scale AI infrastructure as competition among Chinese AI developers intensifies.",
+   "titulo": "Startup china Moonshot construye modelo IA en cluster Alibaba de 20.000 GPUs Nvidia",
+   "resumen": "Moonshot, startup de IA china, construyó su modelo Kimi accediendo a cluster de cómputo de Alibaba con aproximadamente 20.000 GPUs Nvidia, según Bloomberg. La asociación subraya rol de Alibaba como proveedor de infraestructura de IA a escala mientras competencia entre desarrolladores de IA chinos se intensifica.",
+   "analisis": {
+    "porque": "Acceso a GPUs Nvidia a escala masiva es cuello de botella crítico en desarrollo de IA. Partnership Alibaba-Moonshot valida modelo de negocio de renta de infraestructura y refleja concentración de poder en proveedores de hardware. Impacta demanda de Nvidia e incentivos de M&A en China.",
+    "queOcurrio": "Moonshot entrenó modelo Kimi usando acceso a infraestructura de Alibaba (20k GPUs). Bloomberg reportó la partnership, indicando que Alibaba actúa como plataforma de servicios para startups de IA chinas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NVDA",
+    "BABA",
+    "NASDAQ",
+    "Semiconductores"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "BABA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "nvidia",
+    "alibaba",
+    "ia-china",
+    "infraestructura",
+    "gpu"
+   ],
+   "tgText": "Moonshot entrena IA con 20.000 GPUs Nvidia vía Alibaba. Partnership valida modelo de renta de infraestructura. Alibaba consolida posición como proveedor cloud para IA china. NVDA beneficiada por demanda continua.",
+   "xText": "Moonshot usa 20k GPUs Nvidia en cluster Alibaba para entrenar Kimi. Alibaba se consolida como proveedor cloud crítico en IA china. Demanda de Nvidia continúa fuerte.",
+   "discordText": "**Moonshot construye IA en infraestructura Alibaba**\n• Modelo Kimi entrenado en 20.000 GPUs Nvidia\n• Cluster propiedad de Alibaba\n• Alibaba como plataforma de servicios IA\n• Competencia entre startups chinas de IA intensifica\n• Demanda de Nvidia continúa creciendo",
+   "pushText": "Moonshot entrena modelo IA en 20k GPUs Nvidia de Alibaba",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NVDA: continuidad de demanda de GPUs refuerza narrativa de dependencia tecnológica china en Nvidia",
+    "despues": "BABA se beneficia (servicio de infraestructura genera ingresos recurrentes), valoración de Moonshot implícita mejora, startups chinas de IA ven evidencia de disponibilidad de recursos",
+    "escenarios": "Traders vigilarán si modelo de negocio de Alibaba en renta de IA infraestructura se expande (precios, clientes). Riesgo: restricciones comerciales US-China podrían interrumpir suministro de GPUs.",
+    "riesgos": "Bloomberg reporta partnership; no hay confirmación oficial de términos económicos. Regulación China sobre IA y controles de exportación US podrían cambiar dinámicas. Margen de Alibaba en este servicio no especificado."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33793",
+   "fecha": "2026-07-31T12:06:27+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33793",
+   "via": "DeItaone",
+   "original": "MORGAN STANLEY CUTS CHINA GDP FORECAST Morgan Stanley lowered its 2026 China GDP forecast to 4.6% from 4.8% after weaker-than-expected June activity. The bank cited slowing infrastructure spending, softer consumer demand and continued property weakness. It expects policy support to stay focused on AI and energy infrastructure rather than consumption, while still forecasting modest growth improveme",
+   "titulo": "Morgan Stanley rebaja PIB China 2026 a 4,6% por debilitamiento de actividad",
+   "resumen": "Morgan Stanley redujo su pronóstico de crecimiento PIB de China para 2026 de 4,8% a 4,6% tras actividad inferior a lo esperado en junio. El banco citó contracción en gasto de infraestructura, debilitamiento de demanda de consumo y persistencia de problemas en sector inmobiliario. Espera que apoyo de política se enfoque en IA y energía, no consumo.",
+   "analisis": {
+    "porque": "China representa ~18% del PIB global. Rebaja de crecimiento impacta expectativas de demanda global, márgenes corporativos internacionales y flujos hacia economías emergentes. Recomposición de estímulo (IA vs consumo) afecta sectores específicos.",
+    "queOcurrio": "Morgan Stanley formalizó corte de estimación de crecimiento chino tras datos débiles de junio. Diagnóstico apunta a debilitamiento estructural, no coyuntural, con política pública reorientada hacia tecnología.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "CSI300",
+    "NASDAQ",
+    "S&P500",
+    "Cobre",
+    "Petróleo",
+    "CNY"
+   ],
+   "sesgos": [
+    {
+     "activo": "CSI300",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Cobre",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "CNY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "china-gdp",
+    "crecimiento-economico",
+    "estimaciones",
+    "mercados-emergentes"
+   ],
+   "tgText": "Morgan Stanley rebaja PIB China 2026 a 4,6% (de 4,8%) por debilitamiento de gasto de infraestructura, consumo débil e inmuebles. Estímulo se enfocará en IA, no consumo. Presión en commodities y exportadores asiáticos.",
+   "xText": "Morgan Stanley baja estimado de crecimiento China 2026 a 4,6%. Infraestructura débil, consumo flojo, problemas inmobiliarios persisten. Estímulo irá a IA, no consumo.",
+   "discordText": "**Morgan Stanley rebaja crecimiento de China**\n• PIB 2026: 4,6% (vs 4,8% anterior)\n• Gasto de infraestructura en contracción\n• Demanda de consumo débil\n• Sector inmobiliario con presión continua\n• Estímulo enfocado en IA, no demanda",
+   "pushText": "Morgan Stanley rebaja pronóstico de PIB China 2026 a 4,6%",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "CSI300 cae; demanda de commodities bajo presión (cobre, hierro bajan)",
+    "despues": "Petróleo retrocede (menos crecimiento = menos demanda energética), CNY se debilita, exportadores asiáticos sufren (semiconductores, maquinaria), valuaciones tech se cuestionan si estímulo será suficiente",
+    "escenarios": "Traders vigilarán si rebaja de China fuerza al PBOC a estímulo más agresivo. Datos de actividad chino de agosto serán críticos para confirmar o desmentir debilitamiento.",
+    "riesgos": "Pronóstico sujeto a cambios de política china no anticipados. Estímulo podría ser más grande de lo esperado, revirtiendo la baja."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "nasdaq": "bajista",
+    "sp500": "bajista",
+    "petroleo": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33792",
+   "fecha": "2026-07-31T12:05:27+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33792",
+   "via": "DeItaone",
+   "original": "BOFA: INFLATION EXPECTATIONS TEST FED CREDIBILITY BofA said 5Y5Y forward inflation expectations have become the key gauge of Fed credibility as markets question whether policymakers will follow through on inflation-fighting rhetoric. The bank said recent gains in forward breakevens reflect weakening confidence in the Fed, though levels remain within historical ranges. BofA still expects the Fed to",
+   "titulo": "BofA: expectativas de inflación a 5Y5Y cuestionan credibilidad de la Fed",
+   "resumen": "Bank of America señala que las expectativas de inflación forward a 5 años sobre 5 años se han convertido en el indicador clave de credibilidad de la Fed. Los recientes incrementos en los breakevens reflejan debilitamiento de confianza en los hacedores de política, aunque los niveles permanecen dentro de rangos históricos. BofA mantiene expectativa de alzas de tasas iniciando en septiembre.",
+   "analisis": {
+    "porque": "Las expectativas de inflación a largo plazo son señal crítica de ancla de inflación. Su deterioro sugiere mercados dudan que la Fed cumpla con retórica de control inflacionario, impactando valuaciones de activos renta fija y expectativas de política monetaria.",
+    "queOcurrio": "BofA identificó que los mercados están probando la credibilidad de la Fed a través de métricas de inflación forward. El movimiento en breakevens indica debilitamiento de confianza, aunque aún dentro de límites históricos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Bonos USA",
+    "Rendimientos USA",
+    "DXY",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "expectativas-inflacion",
+    "fed-credibilidad",
+    "breakevens",
+    "politica-monetaria"
+   ],
+   "tgText": "BofA: deterioro en expectativas de inflación 5Y5Y pone en duda credibilidad de la Fed. Mercados cuestionan si el banco central cumplirá con promesas de control. Tasas podrían subir desde septiembre.",
+   "xText": "BofA alerta: expectativas de inflación forward débiles cuestionan credibilidad de la Fed. Los mercados dudan del cumplimiento en control inflacionario. Septiembre sigue siendo clave para decisiones.",
+   "discordText": "**BofA: credibilidad de la Fed bajo presión**\n• Expectativas de inflación 5Y5Y muestran debilitamiento de confianza\n• Mercados dudan del compromiso anti-inflación\n• Alzas de tasas esperadas en septiembre\n• Niveles aún dentro de rangos históricos",
+   "pushText": "BofA: expectativas de inflación cuestionan credibilidad de la Fed",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Rendimientos USA suben; el mercado vende bonos ante expectativas de mayor inflación persistente",
+    "despues": "DXY se fortalece (USD alcista), S&P500 bajo presión (valuaciones sensibles a tasas), oro puede subir ante incertidumbre de política",
+    "escenarios": "Traders vigilarán si la Fed responde con retórica más hawkish en próximas comunicaciones. Un deterioro sostenido de breakevens podría forzar acción en septiembre más agresiva de lo esperado.",
+    "riesgos": "El titular parte de análisis de BofA, no dato oficial de mercado. Breakevens pueden revertir si Fed comunica commitment más fuerte en control."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "neutral-alcista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bonos": "bajista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": "33789",
    "fecha": "2026-07-31T11:40:11+00:00",
@@ -7249,361 +7643,6 @@
     "petroleo": "bajista (según BofA)"
    },
    "updates": []
-  },
-  {
-   "id": "33660",
-   "fecha": "2026-07-28T12:17:55+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33660",
-   "via": "DeItaone",
-   "original": "$KLAR - APPLE LAUNCHES KLARNA DEVICE LEASING PROGRAM IN U.S. Apple launched Apple Upgrade, a new U.S. leasing program with Klarna covering iPhone, Apple Watch, Mac, and iPad. Customers can upgrade, buy, or return devices at lease-end, while Apple Card users earn 3% Daily Cash. Apple is discontinuing its iPhone Upgrade Program and iPhone Payments in the U.S. as the new leasing option replaces them.",
-   "titulo": "Klarna se asegura como socio oficial de leasing de dispositivos Apple en EE.UU.",
-   "resumen": "Klarna fue seleccionada como partner exclusivo para el nuevo programa \"Apple Upgrade\" en Estados Unidos. El acuerdo cubre arrendamientos de iPhone, Apple Watch, Mac e iPad. Clientes con Apple Card ganan 3% en Daily Cash. Klarna reemplaza programas previos de financiamiento de Apple.",
-   "analisis": {
-    "porque": "Altamente positivo para Klarna: acceso exclusivo a base masiva de usuarios Apple (200M+ iPhones en EE.UU.), validación empresarial de su modelo de BNPL a escala, y visibilidad en conversión de compra.",
-    "queOcurrio": "Klarna fue designado como socio exclusivo para programa de leasing de Apple Upgrade en EE.UU.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "KLAR",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "KLAR",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Klarna",
-    "Apple",
-    "BNPL",
-    "leasing",
-    "financiamiento"
-   ],
-   "tgText": "📲 Klarna asegurado como partner exclusivo de Apple Upgrade en EE.UU. Acceso a base masiva de usuarios Apple. Validación empresarial de BNPL.",
-   "xText": "Klarna es partner exclusivo de Apple Upgrade: acceso a base masiva de iPhone users en EE.UU. para leasing de dispositivos. Catalizador clave para BNPL.",
-   "discordText": "**KLAR - Partnership Estratégico con Apple**\n• Klarna = socio exclusivo de Apple Upgrade (leasing)\n• Alcance a 200M+ usuarios de iPhone en EE.UU.\n• Refuerza posición de Klarna en BNPL a escala\n• Validación empresarial; potencial upside en volume",
-   "pushText": "Klarna se asegura como partner exclusivo de leasing Apple en EE.UU.",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "KLAR debería reaccionar al alza: validación de modelo de BNPL a escala, acceso a base de usuarios ultra-masiva, y control de experiencia financiera en punto de venta.",
-    "despues": "Competidores de BNPL (AFRM, UPST) podrían caer en comparación. Acciones de bancos tradiciones (depósitos de Apple Card transfers) podrían presionarse levemente.",
-    "escenarios": "Traders monitorean: (1) volumen de conversión a leasing vs. compura outright; (2) tasa de default en cartera de Klarna; (3) rentabilidad del acuerdo para Klarna (márgenes); (4) señal de competencia con Square/Block.",
-    "riesgos": "Acuerdo podría incluir subsidy de tasas que presione márgenes de Klarna. Riesgo de concentración de crédito en single customer (Apple). Si defaults suben, impacto reputacional."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33658",
-   "fecha": "2026-07-28T12:16:08+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33658",
-   "via": "DeItaone",
-   "original": "$AAPL - APPLE REVAMPS DEVICE FINANCING WITH NEW LEASING PROGRAM Apple launched its new Apple Upgrade leasing program in the U.S. through Klarna, offering iPhones from $17.99/month and Apple Watches from $11.99/month. The program includes 12–24 month leases for iPhone/Watch and 24–36 months for Mac/iPad. Apple is also discontinuing its iPhone Upgrade Program and iPhone Payments in the U.S.",
-   "titulo": "Apple relanza financiamiento de dispositivos con programa de leasing vía Klarna",
-   "resumen": "Apple lanzó su nuevo programa \"Apple Upgrade\" en EE.UU., ofreciendo arrendamientos de 12–36 meses para iPhone, Apple Watch, Mac e iPad vía Klarna. Los iPhones comienzan desde $17,99/mes, Apple Watches desde $11,99/mes. Apple descontinuó sus programas de upgrade e pagos previos de iPhone.",
-   "analisis": {
-    "porque": "Cambio estratégico en monetización de hardware: pasar de compra a modelo de suscripción/leasing genera ingresos recurrentes y vincula más a clientes. Positivo para márgenes recurrentes pero podría presionar ventas unitarias de iPhone en corto plazo.",
-    "queOcurrio": "Apple anunció nuevo programa de leasing de dispositivos en asociación con Klarna, discontinuando opciones previas de financiamiento.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AAPL",
-    "NASDAQ",
-    "KLAR"
-   ],
-   "sesgos": [
-    {
-     "activo": "AAPL",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "KLAR",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Apple",
-    "leasing",
-    "Klarna",
-    "iPhone",
-    "modelo de suscripción"
-   ],
-   "tgText": "📱 Apple relanza financiamiento: nuevos arrendamientos vía Klarna desde $17,99/mes (iPhone). Descontinúa Upgrade Program. Shift a modelo recurrente.",
-   "xText": "Apple lanza programa Apple Upgrade con Klarna: arrendamientos de iPhone desde $17,99/mes. Discontinúa iPhone Upgrade Program. Estrategia de ingresos recurrentes.",
-   "discordText": "**AAPL - Nuevo Programa de Leasing**\n• Lanzamiento de \"Apple Upgrade\" vía Klarna en EE.UU.\n• iPhone: $17,99–$45,99/mes (12–24 meses)\n• Descontinúa Upgrade Program anterior\n• Beneficio para KLAR; potencial presión en ventas unitarias de AAPL",
-   "pushText": "Apple lanza leasing de dispositivos vía Klarna; descontinúa Upgrade Program",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "AAPL podría experimentar volatilidad: mercado valora ingresos recurrentes pero teme erosión de demanda unitaria de iPhone en corto plazo. KLAR debería reaccionar al alza.",
-    "despues": "Competidores de fintech de consumo (SQ, PYPL) podrían considerarse si ven presión en su base de usuarios. Acciones de retail electrónico podrían caer levemente si se interpreta como reducción de compras de reemplazo.",
-    "escenarios": "Traders monitorean: (1) impacto en ASP (average selling price) reportado en próximos earnings; (2) adopción del programa vs. expectativas; (3) implicancia para márgenes de servicios de Apple.",
-    "riesgos": "Modelo de leasing históricamente tiene mayores tasas de default; Klarna enfrenta presiones de rentabilidad. Cambio podría fragmentar cliente base."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33654",
-   "fecha": "2026-07-28T11:38:00+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33654",
-   "via": "DeItaone",
-   "original": "$TSLA - TESLA TO BUY POWER FROM KKR-BACKED ARIZONA SOLAR, BATTERY PLANT",
-   "titulo": "Tesla firma acuerdo de energía solar con planta de baterías respaldada por KKR",
-   "resumen": "Tesla acordó comprar energía de una instalación solar y batería en Arizona respaldada por el fondo KKR. El acuerdo refleja la estrategia de Tesla de asegurar suministros de energía renovable para sus operaciones de manufactura. El titular no especifica términos financieros ni duración del contrato.",
-   "analisis": {
-    "porque": "Relevante para inversores de Tesla por su implicancia en costos operativos, estrategia de sustentabilidad y seguridad energética de la gigafactoría de Arizona.",
-    "queOcurrio": "Tesla acordó comprar poder de una planta solar y de baterías respaldada por KKR en Arizona.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "TSLA",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "TSLA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Tesla",
-    "energía renovable",
-    "Arizona",
-    "KKR",
-    "costos operativos"
-   ],
-   "tgText": "🔋 Tesla asegura suministro de energía solar en Arizona mediante acuerdo con planta respaldada por KKR. Estrategia de sustentabilidad en manufactura.",
-   "xText": "Tesla firma acuerdo de energía renovable en Arizona con planta respaldada por KKR. Movimiento estratégico para asegurar costos de energía en gigafactoría.",
-   "discordText": "**TSLA - Acuerdo Energético en Arizona**\n• Tesla compra energía solar de planta respaldada por KKR\n• Refuerza estrategia de energías renovables\n• Implicancia en costos operativos de manufactura",
-   "pushText": "Tesla asegura energía solar en Arizona vía KKR",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "TSLA podría reaccionar al alza en corto plazo ante estrategia de reducción de costos energéticos.",
-    "despues": "Acciones de energías renovables y proveedores de baterías podrían seguir si se interpreta como mayor demanda.",
-    "escenarios": "Traders monitorean: (1) implicancia en márgenes operativos; (2) síntoma de presión de costos en Arizona; (3) validación de estrategia de integración vertical energética.",
-    "riesgos": "El título no detalla si los términos son comercialmente favorables; contrato podría estar disponible públicamente solo tras 8-K."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33652",
-   "fecha": "2026-07-28T11:31:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33652",
-   "via": "DeItaone",
-   "original": "$BA - BOEING MISSES EPS, REVENUE BEATS AS FCF TURNS POSITIVE Results *Adj. EPS: -$0.76 vs. -$0.30 est. ❌ *Revenue: $24.56B vs. $24.25B est. ✅ *Free Cash Flow: $631M *Backlog: $715B Operations *737 production transitioning to 47 aircraft/month. *777X: First delivery still expected in 2027. *737-7/10: Certification expected in 2026, first deliveries in 2027. Notable *Q2 included a $280M loss on the ",
-   "titulo": "Boeing pierde en EPS pero supera ingresos; flujo de caja vira positivo a $631M",
-   "resumen": "Boeing reportó EPS ajustado de -$0,76 (vs. -$0,30 esperado, miss), pero ingresos de $24,56B superaron proyección de $24,25B. El flujo de caja libre fue positivo en $631M. La producción de 737 transita a 47 aviones/mes; 777X se espera entregar en 2027. Q2 incluyó pérdida de $280M en programa del Air Force One.",
-   "analisis": {
-    "porque": "Miss en EPS más profundo de lo esperado refleja presiones de costos y provisiones; FCF positivo es señal de estabilización operacional; vista a largo plazo depende de normalización de 737 y 777X; relevante para inversores en defensa/aeroespacial",
-    "queOcurrio": "Boeing reportó EPS ajustado -$0,76 (worse than expected miss -$0,30); ingresos $24,56B (beat); FCF $631M positivo; 737 en ramp a 47 unidades/mes",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "BA",
-    "Defensa/Aeroespacial",
-    "S&P500",
-    "Bonos Corporativos"
-   ],
-   "sesgos": [
-    {
-     "activo": "BA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Defensa/Aeroespacial",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Boeing",
-    "earnings",
-    "Q2",
-    "737",
-    "777X",
-    "Air Force One",
-    "flujo caja",
-    "pérdida"
-   ],
-   "tgText": "Boeing: EPS -$0,76 vs -$0,30 est (miss peor). Ingresos beat $24,56B. FCF positivo $631M. 737 ramp a 47/mes; 777X en 2027. Pérdida AF1 de $280M presiona.",
-   "xText": "📊 BA: Q2 EPS -$0,76 (miss), ingresos $24,56B (beat). FCF +$631M positivo. 737→47/mes, 777X 2027. Pérdida AF1 $280M. Recuperación lenta pero con aire.",
-   "discordText": "**Boeing: miss en EPS pero flujo de caja vira positivo**\n• EPS: -$0,76 vs -$0,30 est ❌ (miss peor)\n• Ingresos: $24,56B vs $24,25B ✅\n• FCF: +$631M (positivo)\n• 737: ramp a 47/mes\n• Nota: Pérdida AF1 de $280M\n→ Recuperación lenta, no sin frenos",
-   "pushText": "Boeing: EPS miss -$0,76 pero FCF positivo; 737 sigue ramp",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "BA en apertura; miss más profundo podría generar volatilidad en defensa/aeroespacial",
-    "despues": "S&P500 (peso modesto), bonos corporativos de BA (yield bajo presión si credit spread sube), contratistas de defensa (RTX, LMT, NOC, GD)",
-    "escenarios": "Traders vigilan: (1) Si FCF positivo marca inflexión duradera o es transitorio; (2) timeline realista de ramp de 737 a 50+/mes; (3) si 777X delivery en 2027 es alcanzable o pospuesto; (4) exposición de BA a restricciones comerciales chinas; (5) cobertura de costos en programas de defensa (AF One, KC-46)",
-    "riesgos": "EPS negativo continúa; provisiones podrían ampliarse si nuevos problemas emergen en cadena de suministro; 777X retrasos históricos"
-   },
-   "macro": {
-    "sp500": "neutral a bajista leve",
-    "bonos": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33650",
-   "fecha": "2026-07-28T10:59:54+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33650",
-   "via": "DeItaone",
-   "original": "$KO - COCA-COLA RAISES PROFIT OUTLOOK Coca-Cola beat Q2 expectations, reporting EPS of $0.97 vs. $0.93 expected, with global unit case volume up 5%. The company reaffirmed ~5% organic revenue growth for FY, raised its annual profit outlook, and expects 3% EPS and 1% revenue currency tailwinds. Shares rose 2% in premarket trading.",
-   "titulo": "Coca-Cola supera estimaciones y eleva guía anual tras sólido desempeño en Q2",
-   "resumen": "Coca-Cola reportó ganancias por acción de $0,97 (vs. $0,93 esperado) y crecimiento de volumen de casos unitarios de 5% a nivel global. La compañía reafirmó crecimiento de ingresos orgánicos de ~5% para el año completo y elevó su outlook de ganancias, antici­pando tailwinds de 3% en EPS y 1% en ingresos por divisas. Las acciones subieron 2% en premarket.",
-   "analisis": {
-    "porque": "Supera consenso del mercado; elevación de guía refuerza confianza en demanda de consumo y pricing power en contexto macroeconómico incierto; relevante para defensivos y bonos corporativos",
-    "queOcurrio": "Coca-Cola reportó Q2 EPS $0,97 vs $0,93 esperado; elevó guía anual de ganancias; anticipó tailwinds de divisa de 3% EPS y 1% ingresos",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "KO",
-    "Consumo Defensivo",
-    "S&P500",
-    "Bonos Corporativos",
-    "Mercados Emergentes"
-   ],
-   "sesgos": [
-    {
-     "activo": "KO",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Consumo Defensivo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Coca-Cola",
-    "earnings",
-    "Q2",
-    "guía elevada",
-    "consumo",
-    "pricing power",
-    "moneda"
-   ],
-   "tgText": "Coca-Cola supera estimaciones en Q2 (EPS $0,97 vs $0,93) y eleva guía anual. Crecimiento de volumen de 5% y tailwinds de divisa refuerzan confianza en demanda de consumo.",
-   "xText": "📊 KO: Q2 EPS $0,97 (beat), eleva FY outlook. Volumen global +5%, anticiando tailwinds de divisa. Acciones +2% premarket. Defensivos mantienen fortaleza. $KO",
-   "discordText": "**Coca-Cola supera Q2 y eleva guía anual**\n• EPS: $0,97 vs $0,93 esperado ✅\n• Volumen: +5% global\n• Guía FY: Elevada; tailwinds de 3% EPS y 1% ingresos\n• Acción: +2% premarket\n→ Defensivos con momentum",
-   "pushText": "Coca-Cola supera Q2 y eleva guía anual tras sólido desempeño",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "KO en apertura; pull toward defensivos vs. growth en contexto de incertidumbre macroeconómica",
-    "despues": "S&P500, bonos corporativos de grado de inversión, otros consumo defensivo (PEP, MO, KMB)",
-    "escenarios": "Traders monitorean: (1) Si earnings positivos en consumo defensivo anticipan rotación hacia defensivos; (2) implicaciones de tailwinds de divisa para ingresos globales; (3) si pricing power se sostiene en inflación más baja; (4) si supera en consumo refleja resilencia en mercados emergentes",
-    "riesgos": "Tailwinds de divisa son transitorios; fortaleza de dólar en próximos trimestres podría revertir ganancias; consumidor de mercados emergentes aún sensible a tasas"
-   },
-   "macro": {
-    "sp500": "alcista leve",
-    "bonos": "alcista leve (defensivos)",
-    "dolar": "neutral a bajista leve (beneficia ingresos globales si se debilita)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33628",
-   "fecha": "2026-07-28T07:34:30+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33628",
-   "via": "DeItaone",
-   "original": "TECH STOCKS HIT AS CHIP SELLOFF DEEPENS US tech stocks look set to fall as a global chip selloff accelerates, driven by concerns over AI spending and rising competition from China. Nasdaq 100 futures dropped 1%, while semiconductor stocks tumbled across Asia, with South Korea's Kospi down 11%. Despite the pullback, some strategists see the selloff as a healthy correction within a longer-term AI gr",
-   "titulo": "Venta de semiconductores se profundiza: Nasdaq 100 cae 1% en futuros",
-   "resumen": "Las acciones tecnológicas estadounidenses caen conforme el selloff global en chips se acelera, impulsado por preocupaciones sobre gasto en IA y competencia creciente desde China. Futuros del Nasdaq 100 bajaron 1%, mientras semiconductores se desploман en Asia con el Kospi de Corea del Sur cayendo 11%. Algunos estrategas ven la corrección como saludable dentro de la tendencia alcista de IA a largo plazo.",
-   "analisis": {
-    "porque": "El deterioro sincronizado en semiconductores afecta directamente valuaciones tech y liquidez en índices de mayor volatilidad. Señala rotación de riesgo fuera de narrativa IA.",
-    "queOcurrio": "Futuros tech caen en sesión previa a apertura estadounidense; contagio confirmado en Asia con caídas bilaterales en índices y acciones semiconductoras.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (via Walter Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "Nasdaq 100",
-    "Semiconductores",
-    "S&P 500",
-    "Kospi",
-    "SK Hynix",
-    "ASML",
-    "Intel"
-   ],
-   "sesgos": [
-    {
-     "activo": "Nasdaq 100",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "semiconductores",
-    "nasdaq",
-    "selloff-tech",
-    "ai-correction",
-    "korea"
-   ],
-   "tgText": "🔴 NASDAQ 100 cae 1% en futuros. Venta de chips acelerándose globalmente por dudas en gasto IA y competencia china. Kospi -11%. Algunos ven corrección como saludable.",
-   "xText": "Semiconductor selloff se profundiza: Nasdaq 100 -1% en futuros, Kospi -11%. Preocupación por gasto IA y competencia china. Estrategas ven corrección como normal en tendencia alcista.",
-   "discordText": "**NASDAQ BAJO PRESIÓN**\n• Futuros Nasdaq 100: -1%\n• Kospi (Corea): -11%\n• Driver: Dudas gasto IA + competencia China\n• Analistas: corrección saludable dentro rally",
-   "pushText": "Nasdaq 100 -1%: venta global en semiconductores se profundiza",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Semiconductores grandes (SK Hynix, ASML, Intel) reactúan primero por exposición directa; luego índices tech por peso en cartera.",
-    "despues": "S&P 500 general, bonos (flight-to-safety), dólar (riesgo-off); posible rotación a defensivos.",
-    "escenarios": "Traders vigilan si venta se contiene en -1,5% o acelera; soporte clave en 18.500 Nasdaq 100. Diferenciación entre 'corrección sana' vs 'quiebre de narrativa IA'.",
-    "riesgos": "Contagio psicológico a otras techs sin relación directa. Riesgo que corrección sea señal de debilidad en demanda corporativa IA (capex). El titular no especifica magnitud de selloff en otras geografías."
-   },
-   "macro": {
-    "nasdaq": "Futuros -1%, presión",
-    "sp500": "Neutral a bajista; futuros -0,25%",
-    "dolar": "Neutral a alcista (risk-off)",
-    "bonos": "Neutral a alcista (flight-to-safety leve)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-28T09:46:50+00:00",
-     "id": "33647",
-     "texto": "La caída de semiconductores se extendió por mercados asiáticos tras liquidación aguda en EE.UU. El KOSPI de Corea del Sur plomó 10%, activando dos pausas de trading por volatilidad. El Nikkei japonés cayó 4%. Acciones de chips estadounidenses (Micron, Super Micro, Intel, Nvidia) permanecen bajo presión en premarket, impulsadas por preocupaciones sobre gastos en IA y avances tecnológicos de China.",
-     "tgUrl": "https://t.me/walterbloomberg/33647"
-    }
-   ],
-   "actualizado": "2026-07-28T09:46:50+00:00"
   }
  ],
  "rssVistos": [
