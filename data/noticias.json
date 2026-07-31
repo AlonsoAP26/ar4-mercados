@@ -5294,5 +5294,305 @@
       ],
       "patronUltimaVela": "vela alcista sin patron destacable"
     }
+  },
+  {
+    "title": "Wall Street cierra julio en máximos pese al salto de los rendimientos a 19 años",
+    "excerpt": "El S&P 500 sumó 0,7% hasta 7.489,72 puntos, impulsado por Amazon, mientras el bono a 30 años tocó su nivel más alto desde 2007.",
+    "symbol": "FOREXCOM:SPXUSD",
+    "trend": "up",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Amazon empuja al selectivo a un cierre de mes en verde</h3><p>Wall Street cerró la última sesión de julio con avances generalizados. El S&P 500 sumó 0,7% y terminó en 7.489,72 puntos, el Nasdaq 100 avanzó 0,6% hasta 28.274,19 unidades y el Nasdaq Composite subió 1% hasta 25.373,85 puntos. El Dow Jones de Industriales ganó 276,97 puntos (0,53%) y cerró en 52.485,03, su cuarto mes consecutivo al alza. El impulso llegó de la mano de Amazon, cuyas acciones repuntaron tras conocerse que la compañía elevó su beneficio neto a USD 62.600 millones en el segundo trimestre, un 243% más que un año atrás, muy por encima de lo previsto por el consenso.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Los rendimientos largos siguen presionando</h3><p>El repunte accionario convivió con una renovada tensión en el mercado de bonos. El rendimiento del Tesoro a 30 años tocó un máximo de 19 años, cercano al 5,24%, mientras que el rendimiento a 10 años superó el 4,7%, su nivel más alto desde enero de 2025. El movimiento refleja que los inversores de renta fija empiezan a dudar del compromiso del nuevo presidente de la Fed, Kevin Warsh, con el control de la inflación, luego de que el FOMC mantuviera esta semana su rango de tasas entre 3,50% y 3,75% con tres votos disidentes a favor de subirlas.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El Nasdaq 100 borra parte del daño de la semana pasada</h3><p>El indicador tecnológico acumula una caída de 5,1% en el mes, tras la fuerte corrección sufrida a mediados de julio, pero en la semana recupera 0,5% y en el día suma 0,6%, con un RSI de 14 días en 45 puntos, en zona neutral y sin señales de sobreventa extrema. El S&P 500, en cambio, muestra una semana más firme, con una ganancia acumulada de 1% y un RSI de 52,8, también neutral, cotizando por encima de su media móvil de 200 sesiones y a menos de 2% de su máximo de 52 semanas de 7.620,9 puntos.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Un dólar más débil abre una ventana para la región</h3><p>El índice dólar (DXY) cerró la sesión en 99,80, con una caída de 0,2% en el día y de 1,6% tanto en la semana como en el mes, ubicándose en zona de sobreventa técnica con un RSI de 35,1. Para Latinoamérica, la combinación de un dólar más débil y un Wall Street que cierra julio en máximos ofrece un contexto de apetito por riesgo, aunque el salto de los rendimientos largos estadounidenses es la variable a monitorear de cerca, dado su historial de encarecer el financiamiento externo de la región.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que muestran los datos duros</h3><p>El Ibovespa brasileño cerró en 177.999 puntos, con una suba diaria de 0,5% que se enmarca en un avance semanal de 2,3% y mensual de 3%, con un RSI de 57,7 que todavía deja margen antes de zona de sobrecompra. El índice cotiza por encima de su media de 200 sesiones, aunque permanece un 10,7% por debajo de su máximo de 52 semanas de 199.355 puntos. En Estados Unidos, la sesión estuvo marcada además por la confianza del consumidor de la Universidad de Michigan, que subió a 55,2 puntos en julio, por encima del consenso de 54,0 y con una mejora de 11,5% respecto al mes previo, aunque todavía 10,5% por debajo del nivel de julio de 2025. La votación de la Fed de esta semana fue de 9 a 3, con Beth Hammack, Neel Kashkari y Lorie Logan pidiendo una suba de un cuarto de punto que no prosperó.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El cierre de julio deja una foto mixta: acciones en máximos relativos gracias a resultados corporativos sólidos, pero un mercado de bonos que empieza a cuestionar la hoja de ruta de la nueva conducción de la Fed. La divergencia entre un S&P 500 firme y un Nasdaq 100 que todavía arrastra una caída mensual de 5,1% sugiere que la recuperación no es homogénea y que el capital sigue rotando hacia compañías con resultados defendibles, como Amazon, y alejándose de nombres más castigados por el gasto en inteligencia artificial. Para la región, la clave de las próximas semanas pasa por dos frentes: si el DXY, ya en terreno de sobreventa técnica, encuentra piso y revierte la debilidad reciente, y si la escalada de los rendimientos largos estadounidenses —en máximos de 19 años— empieza a filtrarse en el costo de financiamiento de emisores soberanos y corporativos latinoamericanos. Vale seguir de cerca el comportamiento del Ibovespa, que sostiene una tendencia alcista de mediano plazo, como termómetro del apetito por activos emergentes en un escenario de tasas largas al alza en EE.UU.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html"
+      },
+      {
+        "name": "Bolsamania",
+        "url": "https://www.bolsamania.com/noticias/resultados-anuncios/amazon-supera-previsiones-mercado-segundo-trimestre-alcanza-los-62600-millones-de-beneficio--23160027.html"
+      },
+      {
+        "name": "BeInCrypto",
+        "url": "https://beincrypto.com/30-year-treasury-yield-2007-high/"
+      },
+      {
+        "name": "Yahoo Finanzas",
+        "url": "https://es.finance.yahoo.com/noticias/rendimiento-tesoro-30-a%C3%B1os-alcanza-144700333.html"
+      }
+    ],
+    "aiSummary": {
+      "que": "El S&P 500 y el Nasdaq cerraron julio en alza, apalancados en los resultados de Amazon, mientras el rendimiento del bono a 30 años tocó un máximo de 19 años.",
+      "porque": "Los inversores celebran las ganancias corporativas del segundo trimestre pero al mismo tiempo exigen más rendimiento a la deuda larga ante dudas sobre la firmeza antiinflacionaria de la nueva Fed de Kevin Warsh.",
+      "activos": [
+        "S&P 500",
+        "Nasdaq 100",
+        "Ibovespa",
+        "DXY",
+        "Amazon"
+      ],
+      "siguiente": "Vigilar si el rendimiento del Tesoro a 30 años sigue escalando y cómo reacciona el dólar, ya en zona de sobreventa técnica según el RSI del DXY."
+    },
+    "aiScenarios": {
+      "alcista": 40,
+      "lateral": 35,
+      "bajista": 25
+    },
+    "aiDetects": {
+      "probabilidad": 58,
+      "riesgo": "Medio",
+      "lectura": "El sesgo alcista de corto plazo en el S&P 500 se sostiene, pero el salto de los rendimientos largos añade una fuente de fricción que puede limitar el impulso en las próximas ruedas."
+    },
+    "timeline": [
+      {
+        "cuando": "Hace 2 días",
+        "texto": "La Fed mantuvo su rango de tasas entre 3,50% y 3,75% con tres votos disidentes a favor de subirlas, lo que disparó el rendimiento del bono a 30 años a un máximo de 19 años."
+      },
+      {
+        "cuando": "Ayer",
+        "texto": "Wall Street rebotó con fuerza tras la caída previa: el Nasdaq Composite saltó 2,78% impulsado por Microsoft, que subió más de 15% tras superar expectativas en Azure."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El S&P 500 sumó 0,7% hasta 7.489,72 puntos y el Nasdaq Composite avanzó 1%, con Amazon como gran protagonista tras reportar un beneficio neto de USD 62.600 millones, un 243% más interanual."
+      },
+      {
+        "cuando": "Próxima semana",
+        "texto": "El mercado seguirá de cerca la evolución de los rendimientos largos de EE.UU. y su impacto en activos emergentes como el Ibovespa."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué sube el rendimiento del bono a 30 años si la Fed no subió tasas?",
+        "a": "Porque el mercado de bonos fija sus propias expectativas de inflación y crecimiento a largo plazo; si duda de que la Fed controle la inflación, exige más rendimiento para prestar a plazos largos."
+      },
+      {
+        "q": "¿Qué es el RSI y por qué se menciona en este resumen?",
+        "a": "El RSI (índice de fuerza relativa) mide si un activo está sobrecomprado o sobrevendido en las últimas 14 sesiones; valores cercanos a 30 sugieren sobreventa y cercanos a 70, sobrecompra."
+      },
+      {
+        "q": "¿Cómo afecta un dólar más débil (DXY a la baja) a Latinoamérica?",
+        "a": "Un DXY más débil suele aliviar la presión sobre las monedas emergentes y abaratar la deuda denominada en dólares para gobiernos y empresas de la región."
+      },
+      {
+        "q": "¿Por qué importa el resultado de Amazon para el mercado en general?",
+        "a": "Amazon es una de las siete grandes tecnológicas que concentran gran parte del peso del S&P 500 y el Nasdaq, por lo que sus resultados mueven a los índices completos."
+      }
+    ],
+    "impactScore": 7,
+    "relatedSymbols": [
+      "FOREXCOM:NSXUSD",
+      "BMFBOVESPA:IBOV",
+      "CAPITALCOM:DXY",
+      "NASDAQ:AMZN",
+      "NASDAQ:MSFT"
+    ],
+    "category": "Índices",
+    "heroType": "index",
+    "slug": "wall-street-cierra-julio-en-maximos-pese-al-salto-de-los-ren-ms9ixirr",
+    "author": "AR4 Mercados",
+    "date": "2026-07-31",
+    "sourceName": "CNBC",
+    "sourceUrl": "https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html",
+    "marketPanel": [
+      {
+        "symbol": "FOREXCOM:SPXUSD",
+        "nombre": "S&P 500",
+        "yahooSymbol": "^GSPC",
+        "fuente": "Yahoo Finance (^GSPC)",
+        "fechaUltimaVela": "2026-07-31",
+        "precio": 7489.72,
+        "cierreAnterior": 7437.63,
+        "variacionDiaPct": 0.7,
+        "variacionSemanaPct": 1,
+        "variacionMesPct": 0.1,
+        "variacionAnioPct": 17.7,
+        "rangoDiaReal": {
+          "minimo": 7399.83,
+          "maximo": 7512.04
+        },
+        "rsi14": 52.8,
+        "lecturaRsi": "neutral",
+        "media50": 7471.51,
+        "media200": 7024.11,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 89.4,
+        "maximo52sem": 7620.9,
+        "minimo52sem": 6212.69,
+        "distanciaAMaximo52semPct": -1.7,
+        "distanciaAMinimo52semPct": 20.6,
+        "soportes": [
+          7426.54,
+          7376,
+          7333.68
+        ],
+        "resistencias": [
+          7536.42,
+          7579.71,
+          7620.9
+        ],
+        "patronUltimaVela": "martillo (mecha inferior larga: rechazo de precios bajos)"
+      },
+      {
+        "symbol": "FOREXCOM:NSXUSD",
+        "nombre": "Nasdaq 100",
+        "yahooSymbol": "^NDX",
+        "fuente": "Yahoo Finance (^NDX)",
+        "fechaUltimaVela": "2026-07-31",
+        "precio": 28274.19,
+        "cierreAnterior": 28106.35,
+        "variacionDiaPct": 0.6,
+        "variacionSemanaPct": 0.5,
+        "variacionMesPct": -5.1,
+        "variacionAnioPct": 21.1,
+        "rangoDiaReal": {
+          "minimo": 27954.24,
+          "maximo": 28606.78
+        },
+        "rsi14": 45,
+        "lecturaRsi": "neutral",
+        "media50": 29389.66,
+        "media200": 26508.73,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 628.64,
+        "maximo52sem": 30762.2,
+        "minimo52sem": 22673.88,
+        "distanciaAMaximo52semPct": -8.1,
+        "distanciaAMinimo52semPct": 24.7,
+        "soportes": [
+          28214.11,
+          25086.36,
+          24954.18
+        ],
+        "resistencias": [
+          29678.89,
+          29856.94,
+          30328.79
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "BMFBOVESPA:IBOV",
+        "nombre": "Ibovespa (Brasil)",
+        "yahooSymbol": "^BVSP",
+        "fuente": "Yahoo Finance (^BVSP)",
+        "fechaUltimaVela": "2026-07-31",
+        "precio": 177999,
+        "cierreAnterior": 177159,
+        "variacionDiaPct": 0.5,
+        "variacionSemanaPct": 2.3,
+        "variacionMesPct": 3,
+        "variacionAnioPct": 34.1,
+        "rangoDiaReal": {
+          "minimo": 177013.84,
+          "maximo": 178718.91
+        },
+        "rsi14": 57.7,
+        "lecturaRsi": "neutral",
+        "media50": 173092.2,
+        "media200": 172168.67,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 2370.17,
+        "maximo52sem": 199355,
+        "minimo52sem": 131883,
+        "distanciaAMaximo52semPct": -10.7,
+        "distanciaAMinimo52semPct": 35,
+        "soportes": [
+          177479.5,
+          175039,
+          173544
+        ],
+        "resistencias": [
+          178350.5,
+          186057.5,
+          187334
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-07-31",
+        "precio": 99.8,
+        "cierreAnterior": 100.01,
+        "variacionDiaPct": -0.2,
+        "variacionSemanaPct": -1.6,
+        "variacionMesPct": -1.6,
+        "variacionAnioPct": -0.1,
+        "rangoDiaReal": {
+          "minimo": 99.69,
+          "maximo": 100.46
+        },
+        "rsi14": 35.1,
+        "lecturaRsi": "neutral",
+        "media50": 100.42,
+        "media200": 99.14,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.5219,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -2,
+        "distanciaAMinimo52semPct": 4.5,
+        "soportes": [
+          99.34,
+          98.79,
+          97.78
+        ],
+        "resistencias": [
+          100.54,
+          101.68
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      }
+    ],
+    "marketData": {
+      "symbol": "FOREXCOM:SPXUSD",
+      "nombre": "S&P 500",
+      "yahooSymbol": "^GSPC",
+      "fuente": "Yahoo Finance (^GSPC)",
+      "fechaUltimaVela": "2026-07-31",
+      "precio": 7489.72,
+      "cierreAnterior": 7437.63,
+      "variacionDiaPct": 0.7,
+      "variacionSemanaPct": 1,
+      "variacionMesPct": 0.1,
+      "variacionAnioPct": 17.7,
+      "rangoDiaReal": {
+        "minimo": 7399.83,
+        "maximo": 7512.04
+      },
+      "rsi14": 52.8,
+      "lecturaRsi": "neutral",
+      "media50": 7471.51,
+      "media200": 7024.11,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 89.4,
+      "maximo52sem": 7620.9,
+      "minimo52sem": 6212.69,
+      "distanciaAMaximo52semPct": -1.7,
+      "distanciaAMinimo52semPct": 20.6,
+      "soportes": [
+        7426.54,
+        7376,
+        7333.68
+      ],
+      "resistencias": [
+        7536.42,
+        7579.71,
+        7620.9
+      ],
+      "patronUltimaVela": "martillo (mecha inferior larga: rechazo de precios bajos)"
+    }
   }
 ]
