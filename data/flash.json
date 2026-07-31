@@ -1,7 +1,416 @@
 {
- "lastId": 33802,
- "actualizado": "2026-07-31T13:21:31.947Z",
+ "lastId": 33811,
+ "actualizado": "2026-07-31T15:34:33.838Z",
  "items": [
+  {
+   "id": "33811",
+   "fecha": "2026-07-31T14:40:48+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33811",
+   "via": "DeItaone",
+   "original": "CITI SEES BUY-THE-DIP SHIFT IN KOSPI Citi said investors have shifted to buying Kospi pullbacks, citing record foreign inflows, improving pension fund demand and tighter retail trading rules. The bank maintained its 10,000 Kospi target, saying solid memory-chip fundamentals, attractive valuations and potential government support should continue to underpin the market.",
+   "titulo": "Citi mantiene objetivo Kospi 10.000; fondos extranjeros crean nuevo soporte",
+   "resumen": "Citi señala que inversores han pasado a comprar retrocesos en Kospi coreano, citando flujos récord de fondos extranjeros, demanda mejorada de fondos de pensiones y nuevas restricciones al trading retail. Mantiene target 10.000 por fundamentales de chips y potencial apoyo estatal.",
+   "analisis": {
+    "porque": "Flujos extranjeros récord y cambios regulatorios en Corea crean soporte estructural; oportunidad de carry/rotación hacia mercados emergentes asiáticos; señal de confianza en semiconductores",
+    "queOcurrio": "Citi valida compra de pullbacks en Kospi por flujos extranjeros, mejora de pensiones y restricciones retail; reitera 10.000",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "KOSPI",
+    "SK Hynix",
+    "Samsung",
+    "Semiconductores EM",
+    "KRW"
+   ],
+   "sesgos": [
+    {
+     "activo": "KOSPI",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores KR",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "kospi-korea",
+    "foreign-inflows",
+    "semiconductores-asia",
+    "sk-hynix",
+    "samsung",
+    "carry-trade"
+   ],
+   "tgText": "📈 Citi: Kospi atrae flujos extranjeros récord; valida compra de pullbacks. Target 10.000 por fundamentals chips + apoyo estatal. Rally semiconductor sigue en Asia.",
+   "xText": "📈 Citi mantiene Kospi 10.000. Flujos extranjeros récord + demanda pensiones crean soporte. Chips fuertes; restricciones retail limpian mercado.",
+   "discordText": "**KOSPI: FLUJOS EXTRANJEROS RÉCORD**\n• Citi mantiene target 10.000\n• Inversores compran pullbacks\n• Fondos extranjeros en máximos\n• Demanda pensiones mejora\n• Semiconductores soportados",
+   "pushText": "Kospi atrae flujos récord; Citi mantiene 10.000 por semiconductores",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "KOSPI sube (flujos extranjeros); SK Hynix y Samsung se aprecian (cartera coreana pesada en semis); KRW puede fortalecerse (inflows extranjeros)",
+    "despues": "Semiconductores globales (NVDA, AMD, ASML) podrían beneficiarse de sentimiento positivo; mercados EM rotación hacia Asia si patrón se replica; carry trade en KRW gana tracción",
+    "escenarios": "Traders vigilarán: niveles técnicos Kospi (9.800 soporte), próximas ganancias SK/Samsung (Q3), volatilidad geopolítica KR-NK, cambios en restricciones retail",
+    "riesgos": "Reversión de flujos si Fed sigue hawkish (atractivo de activos USA); debilidad de chips globales podría presionar Kospi; riesgo geopolítico península coreana"
+   },
+   "macro": {
+    "kospi": "alcista",
+    "semiconductores": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33779",
+   "fecha": "2026-07-31T08:33:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33779",
+   "via": "DeItaone",
+   "original": "$AMZN - BERNSTEIN RAISES AMAZON PT ON AWS, AI MOMENTUM Bernstein raised its Amazon price target to $320 from $315, maintaining an Outperform rating. The firm cited stronger-than-expected 37% AWS revenue growth, a $25B AI revenue run rate, expanding AI chip business and clear returns on AI investment. Bernstein also highlighted Amazon's higher 2026 capex of $220B, backed by strong demand and attrac",
+   "titulo": "Bernstein sube objetivo de Amazon a $320; valida tasa de ingresos IA de $25B",
+   "resumen": "Bernstein elevó objetivo de Amazon a $320 desde $315, manteniendo calificación de Outperform. La firma destacó crecimiento de AWS del 37% superior a estimaciones, tasa de ingresos IA de $25B, expansión del negocio de chips IA y claridad en retornos de inversión. Respalda plan de capex 2026 de $220B con demanda fuerte y periodos de recuperación atractivos.",
+   "analisis": {
+    "porque": "Segunda validación alcista en horas de dos analistas tier-1; documenta tracción concreta en $25B IA run-rate; confirma thesis de ROI positivo en capex masivo",
+    "queOcurrio": "Bernstein revisa objetivo al alza $5 tras analizar reportes de AWS, IA chip business y periodos de payback de capex",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bernstein Research vía Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "AMZN",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Amazon",
+    "Bernstein",
+    "AWS",
+    "IA",
+    "capex",
+    "ROI"
+   ],
+   "tgText": "📊 Bernstein sube objetivo de Amazon a $320. Valida crecimiento AWS del 37% y tasa de ingresos IA de $25B. Rating Outperform. Capex $220B con ROI claro.",
+   "xText": "$AMZN: Bernstein alza PT a $320. AWS +37%, revenue IA $25B validado. Capex 2026 de $220B con payback atractivo. Rating: Outperform. #AI",
+   "discordText": "**AMZN: Bernstein sube objetivo a $320**\n• PT: $315 → $320\n• Tracción: AWS +37%, IA revenue run-rate $25B\n• Capex 2026: $220B con retornos claros\n• Rating: Outperform",
+   "pushText": "Bernstein sube objetivo de Amazon a $320; valida $25B IA run-rate",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "AMZN mantiene sesgo alcista acumulativo; segundo analista en horas refuerza narrativa; impulso acumulativo a NASDAQ",
+    "despues": "Refuerzo de rotación AMZN alcista vs AAPL bajista en mega-caps; posible comparación en reportes de hedge funds",
+    "escenarios": "Traders vigilarán si capex guidance de $220B se mantiene en guidance Q4; si márgenes operativos se sostienen con capex creciente; convergencia de objetivos de analistas alrededor de $315-375",
+    "riesgos": "Riesgo de que $25B IA run-rate sea sobrestimado o incierto en cuanto a sostenibilidad; cambio en ciclo capex si tasas suben; competencia en infraestructura IA (Nvidia, Oracle Cloud)"
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-31T14:40:14+00:00",
+     "id": "33810",
+     "texto": "Acciones de Amazon suben 15,2%, su mayor ganancia porcentual en 14 años. Consolida movimiento alcista tras validación de Bernstein sobre liderazgo en IA/nube ($25B en tasa de ingresos IA) y revaloración del potencial de monetización en nube.",
+     "tgUrl": "https://t.me/walterbloomberg/33810"
+    }
+   ],
+   "actualizado": "2026-07-31T14:40:14+00:00"
+  },
+  {
+   "id": "33809",
+   "fecha": "2026-07-31T14:13:26+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33809",
+   "via": "DeItaone",
+   "original": "TREASURY SELLOFF GATHERS MOMENTUM U.S. Treasury yields climbed across the curve after Fed officials Lorie Logan and Beth Hammack defended their calls for a 25 bp rate hike, boosting expectations of near-term tightening. The 10-year Treasury yield rose to 4.737%, its highest intraday level since January 2025, as investors increased bets on higher rates.",
+   "titulo": "Venta de Treasuries escala: rendimiento 10Y roza máximo desde enero 2025",
+   "resumen": "El rendimiento del bono 10Y alcanzó 4,737%, máximo intradía desde enero 2025, tras defensas de funcionarios Fed (Logan, Hammack) de alzas de tasas de 25pb. Venta se amplía en toda la curva por repricing de expectativas de endurecimiento monetario.",
+   "analisis": {
+    "porque": "Repricing masivo de expectativas de tasas afecta valuación de acciones, bonos y valuaciones de empresas; riesgo de ciclo más largo de alza",
+    "queOcurrio": "Rendimiento 10Y sube a 4,737% (máximo desde enero 2025) tras discursos de Fed defendiendo alzas de tasas",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Bonos USA",
+    "Rendimientos 10Y",
+    "NASDAQ",
+    "S&P 500",
+    "Russell 2000",
+    "Utilities"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech/NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Utilities",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Financieras",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "treasuries-selloff",
+    "rendimientos-10y",
+    "fed-logan",
+    "fed-hammack",
+    "repricing-tasas"
+   ],
+   "tgText": "📊 Venta de Treasuries se acelera: rendimiento 10Y sube a 4,737% (máximo desde enero). Logan y Hammack defienden alzas de 25pb; mercado reprecia alza de tasas más agresiva.",
+   "xText": "📈 Rendimiento 10Y alcanza 4,737% (máximo desde enero 2025). Funcionarios Fed (Logan, Hammack) defienden alzas de 25pb, desatando repricing masivo de expectativas.",
+   "discordText": "**VENTA DE TREASURIES ESCALA**\n• 10Y roza 4,737% (máximo desde enero 2025)\n• Logan y Hammack defienden alzas de 25pb\n• Repricing en toda la curva\n• Tech y crecimiento presionados",
+   "pushText": "Treasuries desplomados: 10Y sube a máximo desde enero; Fed hawkish presiona",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "NASDAQ y Tech sufren presión inmediata (valuaciones caen con tasas); rendimientos bonos suben más (venta se auto-refuerza)",
+    "despues": "S&P 500 se rezaga pero también baja; Utilities y financieras se aprecia (tasas más altas = spread bancario); Treasuries de corta duración pueden estabilizarse; dólar sube",
+    "escenarios": "Traders vigilarán: próximo CPI (27 agosto), datos empleo (1 agosto), speeches adicionales de Fed, cambios en curva (inversión), volatilidad VIX, rotación sector",
+    "riesgos": "Venta podría ser insostenible si datos económicos decepcionan (flight-to-safety); Fed podría moderar retórica si mercados se desplomasen; posible overshoot si hay pánico institucional"
+   },
+   "macro": {
+    "bonos": "bajista",
+    "rendimientos10y": "alcista",
+    "nasdaq": "bajista",
+    "sp500": "bajista",
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33807",
+   "fecha": "2026-07-31T14:02:30+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33807",
+   "via": "DeItaone",
+   "original": "U.S. CONSUMER SENTIMENT TOPS ESTIMATES University of Michigan consumer sentiment rose to 55.2 in July, above the 54.0 consensus and up from 49.5 in June. One-year inflation expectations held at 4.2%, down from 4.6% in June, while the five-year outlook remained at 3.3%, pointing to stable long-term inflation expectations.",
+   "titulo": "Sentimiento consumidor USA sube a 55,2 en julio; expectativas inflacionarias estables",
+   "resumen": "Sentimiento del consumidor según Universidad de Michigan alcanzó 55,2 en julio, superando consenso 54,0 y anterior 49,5 junio. Expectativas inflacionarias 1Y se estabilizan en 4,2% (desde 4,6%); 5Y se mantienen en 3,3%.",
+   "analisis": {
+    "porque": "Mejora sorpresiva de sentimiento contradice narrativa de debilitamiento económico; anclaje de expectativas inflacionarias 5Y refuerza credibilidad Fed pero sigue 130pb arriba meta",
+    "queOcurrio": "Sentimiento sube a 55,2 (vs 54,0 esperado); inflación 1Y baja a 4,2%; 5Y estable 3,3%",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "USD",
+    "Rendimientos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Acciones",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "michigan-sentiment",
+    "consumer-confidence",
+    "inflacion-expectations",
+    "1y-4pct",
+    "5y-ancla"
+   ],
+   "tgText": "📊 Sentimiento consumidor USA sube a 55,2 (vs 54,0 esperado). Inflación 1Y baja a 4,2%; 5Y estable 3,3%. Sorpresa alcista pero expectativas siguen elevadas.",
+   "xText": "📊 Sentimiento consumidor USA 55,2 (beat 54,0). Expectativas 1Y bajan a 4,2%; 5Y ancladas 3,3%. Sorpresa positiva contradice debilitamiento.",
+   "discordText": "**SENTIMIENTO CONSUMIDOR MEJORA**\n• 55,2 vs 54,0 esperado (beat)\n• Inflación 1Y: 4,2% (baja desde 4,6%)\n• Inflación 5Y: 3,3% (estable, anclada)\n• Contrasta con narrativa debilitamiento",
+   "pushText": "Sentimiento consumidor sube a 55,2; expectativas inflacionarias estables",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "S&P 500 y NASDAQ reciben soporte (consumidor más resiliente); rendimientos podrían aplanar brevemente (datos positivos pero inflación sigue elevada)",
+    "despues": "Si se confirma resiliencia en consumo, mercado podría reducir bets de recesión; pero expectativas 5Y en 3,3% siguen cuestionando credibilidad Fed para llevar inflación a 2%",
+    "escenarios": "Traders vigilarán: próximos datos de gasto/empleo, evolución de inflación core, coherencia con postura Fed hawkish",
+    "riesgos": "Sentimiento podría retroceder si tasas suben más (efecto riqueza negativo en acciones/vivienda); expectativas 1Y siguen altas pese a baja"
+   },
+   "macro": {
+    "sp500": "alcista",
+    "nasdaq": "alcista",
+    "bonos": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33799",
+   "fecha": "2026-07-31T12:36:55+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33799",
+   "via": "DeItaone",
+   "original": "📊 SEPTEMBER FED HIKE BACK IN PLAY The Fed held rates steady and offered no guidance, but markets viewed the meeting as dovish after Chair Kevin Warsh suggested tighter financial conditions may already be doing some of the Fed's work. Despite the pause, three FOMC officials dissented in favor of a 25 bp hike. Kalshi now prices a 53% chance of a September rate hike, versus 46% for no change. https:",
+   "titulo": "Mercados reprecian alza de tasas para septiembre en 53% tras reunión de Fed",
+   "resumen": "Después de mantener tasas sin cambios, mercados interpretaron la reunión de la Fed como dovish tras comentarios de Chair Kevin Warsh sugiriendo que condiciones financieras más restrictivas ya están ejecutando parte del trabajo de política. Kalshi ahora fija probabilidad de alza de 25 pb en septiembre en 53%, versus 46% para mantener. Tres miembros del FOMC disintieron a favor de alza.",
+   "analisis": {
+    "porque": "Repricing de probabilidad de alza monetaria impacta directamente expectativas de tasas futuras, valuaciones de bonos, carry trades y flujos de renta fija. Señal mixta (dovish retórica pero disidencias) genera incertidumbre sobre política próxima.",
+    "queOcurrio": "Fed pausó alzas. Warsh sugirió que restricción financiera ya trabaja. Pero 3 miembros votaron por alza, y mercados vieron esto como dovish, elevando odds de septiembre aunque no de forma unánime.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "muy alto",
+   "breaking": true,
+   "activos": [
+    "Rendimientos USA",
+    "Bonos USA",
+    "DXY",
+    "S&P500",
+    "NASDAQ",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "fed-tasas",
+    "septiembre-hike",
+    "politica-monetaria",
+    "warsh",
+    "fomc"
+   ],
+   "tgText": "Fed pausa tasas pero mercados ven dovish. Kalshi fija 53% para alza en septiembre vs 46% mantener. Warsh dice restricción financiera ya funciona. 3 miembros FOMC disintieron. Volatilidad esperable.",
+   "xText": "Fed pausa. Warsh: restricción financiera ya trabaja. Mercados ahora ven 53% para alza en septiembre vs 46%. FOMC tuvo 3 disidencias hawkish. Incertidumbre permanece.",
+   "discordText": "**Fed pausa, mercados ajustan odds de septiembre**\n• Tasas mantenidas sin cambios\n• Warsh: restricción financiera ya está operando\n• Kalshi: 53% para alza en septiembre\n• 46% para mantener tasas\n• 3 miembros FOMC votaron por alza\n• Señal mixta, incertidumbre alta",
+   "pushText": "Kalshi: 53% para alza de Fed en septiembre tras reunión dovish",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Rendimientos USA ajustan inmediatamente; bonos venden tras repricing alcista de septiembre",
+    "despues": "DXY sube (tasas alcistas benefician USD), S&P500 y NASDAQ bajan (valuaciones sensibles a tasa), oro repunta (incertidumbre y tasas reales más altas atraen hedge",
+    "escenarios": "Traders vigilarán comentarios de miembros FOMC en próximas semanas para confirmar si hay consenso hacia alza en septiembre. Datos de inflación (agosto) y empleo serán decisivos. Disidencias sugieren FOMC dividido.",
+    "riesgos": "Repricing es rápido; datos débiles podrían revertir probabilidades. Comunicación de la Fed aún es ambigua (dovish en tono pero acción en septiembre posible). Volatilidad esperable en próximas semanas."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "alcista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bonos": "bajista",
+    "petroleo": "neutral"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-31T14:01:25+00:00",
+     "id": "33806",
+     "texto": "La gobernadora Lorie Logan argumentó a favor de alzas de 25pb inmediatas, citando que inflación no avanza hacia meta 2% de forma sostenible. Señaló que acción modesta ahora reduce riesgo de endurecimiento más agresivo después; descartó esperar choques inesperados.",
+     "tgUrl": "https://t.me/walterbloomberg/33806"
+    }
+   ],
+   "actualizado": "2026-07-31T14:01:25+00:00"
+  },
+  {
+   "id": "33781",
+   "fecha": "2026-07-31T08:56:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33781",
+   "via": "DeItaone",
+   "original": "YEN SUDDENLY JUMPS",
+   "titulo": "Yen salta abruptamente; alerta de riesgo de intervención del BoJ",
+   "resumen": "El yen se fortalece de forma repentina. Traders alertan sobre riesgo inminente de intervención del Banco de Japón. El movimiento abrupto sugiere posible acción de política monetaria o respuesta a volatilidad extrema. Contexto: BoJ mantuvo tasas en 1% y advirtió que inflación central excede meta del 2%.",
+   "analisis": {
+    "porque": "Señal de posible intervención bancaria central puede impactar pares FX, riesgo de revaluación yen, carry trades en riesgo",
+    "queOcurrio": "Yen se fortalece abruptamente; traders detectan posible preparación de intervención BoJ",
+    "estado": "rumor",
+    "fuenteOriginal": "Bloomberg (reportajes de traders)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "JPY",
+    "USDJPY",
+    "EURJPY",
+    "AUDJPY",
+    "Nikkei",
+    "Mercados Emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Carry Trades",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "yen",
+    "BoJ",
+    "intervención",
+    "FX",
+    "carry-trades",
+    "volatilidad"
+   ],
+   "tgText": "⚠️ Yen salta abruptamente. Traders alertan riesgo de intervención BoJ. USDJPY bajo presión. Carry trades en riesgo. Volatilidad muy alta.",
+   "xText": "JPY fortalece de repente. Traders alertan intervención BoJ inminente. USDJPY, EURJPY presionados. Riesgo para carry trades. #FX #Volatility",
+   "discordText": "**YEN SALTA - ALERTA INTERVENCIÓN BOJ**\n• Movimiento: Fortalecimiento abrupto del JPY\n• Riesgo: Intervención BoJ inminente\n• Impacto: USDJPY, carry trades bajo presión\n• Volatilidad: Muy alta",
+   "pushText": "Yen salta; alerta de intervención BoJ",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae en cascada si intervención se confirma; carry trades liquidados; pares emergentes con correlación yen se presionan (AUDJPY, NZDJPY)",
+    "despues": "Spillover a equities Japan (Nikkei); oro podría subir en busca de seguridad; volatilidad en mercados de emergentes (Indonesia, India con carry exposure)",
+    "escenarios": "Traders vigilarán comunicado oficial BoJ; si intervención se confirma, buscarán nivel de USDJPY nuevo equilibrio; monitoreo de carry unwinds en posiciones grandes (hedge funds, prop desks); posible re-repricing de tasas Japan",
+    "riesgos": "Riesgo sistémico si desmantelamiento carry trades es desordenado; liquidaciones forzadas en posiciones grandes; contagio a otros mercados emergentes; volatilidad FX impredecible"
+   },
+   "macro": {
+    "dolar": "presión bajista USDJPY",
+    "yen": "fortalecimiento abrupto; riesgo intervención",
+    "nasdaq": "spillover negativo potencial si carry trades liquidados",
+    "oro": "potencial alza por búsqueda de seguridad"
+   },
+   "updates": [
+    {
+     "fecha": "2026-07-31T13:34:55+00:00",
+     "id": "33803",
+     "texto": "El Tesoro de EE.UU. informó a bancos a través de la Fed de Nueva York que podría intervenir en el mercado del yen el viernes y que se preparen para «acciones futuras». Amplía la alerta de riesgo cambiario emitida previamente tras la volatilidad del BoJ.",
+     "tgUrl": "https://t.me/walterbloomberg/33803"
+    }
+   ],
+   "actualizado": "2026-07-31T13:34:55+00:00"
+  },
   {
    "id": "33801",
    "fecha": "2026-07-31T12:40:02+00:00",
@@ -125,83 +534,6 @@
     "petroleo": "alcista",
     "oro": "alcista",
     "sp500": "bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33799",
-   "fecha": "2026-07-31T12:36:55+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33799",
-   "via": "DeItaone",
-   "original": "📊 SEPTEMBER FED HIKE BACK IN PLAY The Fed held rates steady and offered no guidance, but markets viewed the meeting as dovish after Chair Kevin Warsh suggested tighter financial conditions may already be doing some of the Fed's work. Despite the pause, three FOMC officials dissented in favor of a 25 bp hike. Kalshi now prices a 53% chance of a September rate hike, versus 46% for no change. https:",
-   "titulo": "Mercados reprecian alza de tasas para septiembre en 53% tras reunión de Fed",
-   "resumen": "Después de mantener tasas sin cambios, mercados interpretaron la reunión de la Fed como dovish tras comentarios de Chair Kevin Warsh sugiriendo que condiciones financieras más restrictivas ya están ejecutando parte del trabajo de política. Kalshi ahora fija probabilidad de alza de 25 pb en septiembre en 53%, versus 46% para mantener. Tres miembros del FOMC disintieron a favor de alza.",
-   "analisis": {
-    "porque": "Repricing de probabilidad de alza monetaria impacta directamente expectativas de tasas futuras, valuaciones de bonos, carry trades y flujos de renta fija. Señal mixta (dovish retórica pero disidencias) genera incertidumbre sobre política próxima.",
-    "queOcurrio": "Fed pausó alzas. Warsh sugirió que restricción financiera ya trabaja. Pero 3 miembros votaron por alza, y mercados vieron esto como dovish, elevando odds de septiembre aunque no de forma unánime.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "muy alto",
-   "breaking": true,
-   "activos": [
-    "Rendimientos USA",
-    "Bonos USA",
-    "DXY",
-    "S&P500",
-    "NASDAQ",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "fed-tasas",
-    "septiembre-hike",
-    "politica-monetaria",
-    "warsh",
-    "fomc"
-   ],
-   "tgText": "Fed pausa tasas pero mercados ven dovish. Kalshi fija 53% para alza en septiembre vs 46% mantener. Warsh dice restricción financiera ya funciona. 3 miembros FOMC disintieron. Volatilidad esperable.",
-   "xText": "Fed pausa. Warsh: restricción financiera ya trabaja. Mercados ahora ven 53% para alza en septiembre vs 46%. FOMC tuvo 3 disidencias hawkish. Incertidumbre permanece.",
-   "discordText": "**Fed pausa, mercados ajustan odds de septiembre**\n• Tasas mantenidas sin cambios\n• Warsh: restricción financiera ya está operando\n• Kalshi: 53% para alza en septiembre\n• 46% para mantener tasas\n• 3 miembros FOMC votaron por alza\n• Señal mixta, incertidumbre alta",
-   "pushText": "Kalshi: 53% para alza de Fed en septiembre tras reunión dovish",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Rendimientos USA ajustan inmediatamente; bonos venden tras repricing alcista de septiembre",
-    "despues": "DXY sube (tasas alcistas benefician USD), S&P500 y NASDAQ bajan (valuaciones sensibles a tasa), oro repunta (incertidumbre y tasas reales más altas atraen hedge",
-    "escenarios": "Traders vigilarán comentarios de miembros FOMC en próximas semanas para confirmar si hay consenso hacia alza en septiembre. Datos de inflación (agosto) y empleo serán decisivos. Disidencias sugieren FOMC dividido.",
-    "riesgos": "Repricing es rápido; datos débiles podrían revertir probabilidades. Comunicación de la Fed aún es ambigua (dovish en tono pero acción en septiembre posible). Volatilidad esperable en próximas semanas."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "alcista",
-    "nasdaq": "bajista",
-    "dow": "bajista",
-    "sp500": "bajista",
-    "bonos": "bajista",
-    "petroleo": "neutral"
    },
    "updates": []
   },
@@ -866,124 +1198,6 @@
     "despues": "Bonos USA bajan (rentabilidades suben por riesgo geopolítico); acciones defensoras y energía oil&gas suben. Emergentes bajan si petróleo presiona inflación global.",
     "escenarios": "Traders vigilarán: (1) si EE.UU. responde militarmente o con sanciones; (2) si Irán abre más canales de bloqueo; (3) comunicados de OPEC+ sobre ajustes de oferta; (4) si Corea del Sur/Japón (importadores grandes) señalan preocupación.",
     "riesgos": "FARS es fuente estatal iraní, no Bloomberg/Reuters directa, lo que introduce sesgo propagandístico. Afirmación sobre 'bloqueo' no verificada de fuentes occidentales. Riesgo: escalada rápida si EE.UU. envía activos militares al Golfo."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33781",
-   "fecha": "2026-07-31T08:56:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33781",
-   "via": "DeItaone",
-   "original": "YEN SUDDENLY JUMPS",
-   "titulo": "Yen salta abruptamente; alerta de riesgo de intervención del BoJ",
-   "resumen": "El yen se fortalece de forma repentina. Traders alertan sobre riesgo inminente de intervención del Banco de Japón. El movimiento abrupto sugiere posible acción de política monetaria o respuesta a volatilidad extrema. Contexto: BoJ mantuvo tasas en 1% y advirtió que inflación central excede meta del 2%.",
-   "analisis": {
-    "porque": "Señal de posible intervención bancaria central puede impactar pares FX, riesgo de revaluación yen, carry trades en riesgo",
-    "queOcurrio": "Yen se fortalece abruptamente; traders detectan posible preparación de intervención BoJ",
-    "estado": "rumor",
-    "fuenteOriginal": "Bloomberg (reportajes de traders)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "JPY",
-    "USDJPY",
-    "EURJPY",
-    "AUDJPY",
-    "Nikkei",
-    "Mercados Emergentes"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Carry Trades",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "yen",
-    "BoJ",
-    "intervención",
-    "FX",
-    "carry-trades",
-    "volatilidad"
-   ],
-   "tgText": "⚠️ Yen salta abruptamente. Traders alertan riesgo de intervención BoJ. USDJPY bajo presión. Carry trades en riesgo. Volatilidad muy alta.",
-   "xText": "JPY fortalece de repente. Traders alertan intervención BoJ inminente. USDJPY, EURJPY presionados. Riesgo para carry trades. #FX #Volatility",
-   "discordText": "**YEN SALTA - ALERTA INTERVENCIÓN BOJ**\n• Movimiento: Fortalecimiento abrupto del JPY\n• Riesgo: Intervención BoJ inminente\n• Impacto: USDJPY, carry trades bajo presión\n• Volatilidad: Muy alta",
-   "pushText": "Yen salta; alerta de intervención BoJ",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae en cascada si intervención se confirma; carry trades liquidados; pares emergentes con correlación yen se presionan (AUDJPY, NZDJPY)",
-    "despues": "Spillover a equities Japan (Nikkei); oro podría subir en busca de seguridad; volatilidad en mercados de emergentes (Indonesia, India con carry exposure)",
-    "escenarios": "Traders vigilarán comunicado oficial BoJ; si intervención se confirma, buscarán nivel de USDJPY nuevo equilibrio; monitoreo de carry unwinds en posiciones grandes (hedge funds, prop desks); posible re-repricing de tasas Japan",
-    "riesgos": "Riesgo sistémico si desmantelamiento carry trades es desordenado; liquidaciones forzadas en posiciones grandes; contagio a otros mercados emergentes; volatilidad FX impredecible"
-   },
-   "macro": {
-    "dolar": "presión bajista USDJPY",
-    "yen": "fortalecimiento abrupto; riesgo intervención",
-    "nasdaq": "spillover negativo potencial si carry trades liquidados",
-    "oro": "potencial alza por búsqueda de seguridad"
-   },
-   "updates": []
-  },
-  {
-   "id": "33779",
-   "fecha": "2026-07-31T08:33:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33779",
-   "via": "DeItaone",
-   "original": "$AMZN - BERNSTEIN RAISES AMAZON PT ON AWS, AI MOMENTUM Bernstein raised its Amazon price target to $320 from $315, maintaining an Outperform rating. The firm cited stronger-than-expected 37% AWS revenue growth, a $25B AI revenue run rate, expanding AI chip business and clear returns on AI investment. Bernstein also highlighted Amazon's higher 2026 capex of $220B, backed by strong demand and attrac",
-   "titulo": "Bernstein sube objetivo de Amazon a $320; valida tasa de ingresos IA de $25B",
-   "resumen": "Bernstein elevó objetivo de Amazon a $320 desde $315, manteniendo calificación de Outperform. La firma destacó crecimiento de AWS del 37% superior a estimaciones, tasa de ingresos IA de $25B, expansión del negocio de chips IA y claridad en retornos de inversión. Respalda plan de capex 2026 de $220B con demanda fuerte y periodos de recuperación atractivos.",
-   "analisis": {
-    "porque": "Segunda validación alcista en horas de dos analistas tier-1; documenta tracción concreta en $25B IA run-rate; confirma thesis de ROI positivo en capex masivo",
-    "queOcurrio": "Bernstein revisa objetivo al alza $5 tras analizar reportes de AWS, IA chip business y periodos de payback de capex",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bernstein Research vía Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "AMZN",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Amazon",
-    "Bernstein",
-    "AWS",
-    "IA",
-    "capex",
-    "ROI"
-   ],
-   "tgText": "📊 Bernstein sube objetivo de Amazon a $320. Valida crecimiento AWS del 37% y tasa de ingresos IA de $25B. Rating Outperform. Capex $220B con ROI claro.",
-   "xText": "$AMZN: Bernstein alza PT a $320. AWS +37%, revenue IA $25B validado. Capex 2026 de $220B con payback atractivo. Rating: Outperform. #AI",
-   "discordText": "**AMZN: Bernstein sube objetivo a $320**\n• PT: $315 → $320\n• Tracción: AWS +37%, IA revenue run-rate $25B\n• Capex 2026: $220B con retornos claros\n• Rating: Outperform",
-   "pushText": "Bernstein sube objetivo de Amazon a $320; valida $25B IA run-rate",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "AMZN mantiene sesgo alcista acumulativo; segundo analista en horas refuerza narrativa; impulso acumulativo a NASDAQ",
-    "despues": "Refuerzo de rotación AMZN alcista vs AAPL bajista en mega-caps; posible comparación en reportes de hedge funds",
-    "escenarios": "Traders vigilarán si capex guidance de $220B se mantiene en guidance Q4; si márgenes operativos se sostienen con capex creciente; convergencia de objetivos de analistas alrededor de $315-375",
-    "riesgos": "Riesgo de que $25B IA run-rate sea sobrestimado o incierto en cuanto a sostenibilidad; cambio en ciclo capex si tasas suben; competencia en infraestructura IA (Nvidia, Oracle Cloud)"
    },
    "macro": null,
    "updates": []
@@ -7427,221 +7641,6 @@
     "riesgos": "Titular atribuye caída a 'dudas de IA' sin especificar qué; lock-up es catalizador certero pero timing exacto de venta es incierto; correlación con Tesla no garantizada"
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33651",
-   "fecha": "2026-07-28T11:02:24+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33651",
-   "via": "DeItaone",
-   "original": "$PYPL - PAYPAL BEATS, RAISES FY OUTLOOK *Q2 EPS: $1.38 vs. $1.28 est. *Revenue: $8.68B vs. $8.47B est. *Payment Volume: $486.5B vs. $468.5B est. Outlook *FY adj. EPS: Raised to ~$5.38 (vs. $5.31 est.) *Q3 adj. EPS: Low-single-digit decline expected. Capital Return & Cost Cuts *Dividend: $0.14/share *Buybacks: $6B planned for FY *Cost savings: At least $1.5B over the next 2–3 years.",
-   "titulo": "PayPal supera expectativas y eleva outlook de FY; activa programa de recompra por $6B",
-   "resumen": "PayPal reportó EPS ajustado de $1,38 (vs. $1,28 estimado) e ingresos de $8,68B (vs. $8,47B esperado). Volumen de pagos alcanzó $486,5B, superando proyección de $468,5B. La compañía elevó su outlook de EPS ajustado anual a ~$5,38 y anunció recompra de $6B y ahorros de costos de $1,5B en 2–3 años.",
-   "analisis": {
-    "porque": "Beat significativo en crecimiento de volumen de pagos; señal de fortaleza en fintech y e-commerce; recompra y ahorro de costos refuerzan retorno al accionista; impacta visión de eficiencia operacional en sector",
-    "queOcurrio": "PayPal reportó Q2 EPS $1,38 vs $1,28; elevó FY outlook a $5,38; anunció $6B en recompras y $1,5B ahorros de costos",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "PYPL",
-    "NASDAQ",
-    "Fintech",
-    "E-commerce",
-    "Pagos Digitales"
-   ],
-   "sesgos": [
-    {
-     "activo": "PYPL",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Fintech",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "PayPal",
-    "earnings",
-    "Q2",
-    "volumen pagos",
-    "recompra",
-    "eficiencia",
-    "fintech"
-   ],
-   "tgText": "PayPal supera Q2: EPS $1,38 vs $1,28; volumen de pagos $486,5B. Eleva FY outlook a $5,38 y anuncia $6B recompra + $1,5B ahorros. Fintech con momentum.",
-   "xText": "📈 PYPL: Q2 EPS $1,38 (beat), volumen de pagos $486,5B (supera est). FY outlook a $5,38, $6B buyback + $1,5B cost cuts. Eficiencia operacional acelera.",
-   "discordText": "**PayPal supera Q2 y fortalece shareholder returns**\n• EPS: $1,38 vs $1,28 esperado ✅\n• Volumen pagos: $486,5B vs $468,5B est ✅\n• FY outlook: Elevada a $5,38\n• Recompra: $6B; Ahorros: $1,5B en 2-3 años\n→ Eficiencia operacional en radar",
-   "pushText": "PayPal supera Q2 y eleva outlook; activa recompra de $6B",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "PYPL en apertura; rally por beat en volumen y guidance; potencial recompra sostiene demanda de acciones",
-    "despues": "NASDAQ, otros fintech (SQ, COIN), e-commerce proxy, índices de pagos digitales",
-    "escenarios": "Traders monitorean: (1) Si volumen de pagos refleja recuperación en e-commerce post-inflation; (2) si programa de ahorro de costos es creíble (capex reduction vs. headcount); (3) si recompra de $6B sostenible sin presionar cashflow; (4) competencia de plataformas de pagos alternativas y billeteras digitales",
-    "riesgos": "Outlook elevada podría presagiar Q3 más débil; $1,5B ahorros podrían requerir cortes de personal que afecten operaciones; macroeconomía débil podría ralentizar crecimiento de volumen"
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "bonos": "neutral",
-    "bitcoin": "neutral (fintech, no cripto-específico)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-28T12:21:08+00:00",
-     "id": "33663",
-     "texto": "El CEO de PayPal respondió a reportes de interés de adquisición afirmando que \"no comentamos sobre especulación de mercado\". Este comentario llega después del anuncio reciente de PayPal de superar expectativas de earnings y elevar guidance de año fiscal, además de activar programa de recompra por $6B.",
-     "tgUrl": "https://t.me/walterbloomberg/33663"
-    }
-   ],
-   "actualizado": "2026-07-28T12:21:08+00:00"
-  },
-  {
-   "id": "33662",
-   "fecha": "2026-07-28T12:20:52+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33662",
-   "via": "DeItaone",
-   "original": "U.S. PRIVATE HIRING SLOWS FOR FIFTH STRAIGHT WEEK ADP data showed U.S. private employers added an average of 15,000 jobs per week in the four weeks ending July 11, marking a fifth consecutive weekly slowdown. Hiring has fallen from 35,750 in early May to 15,000, signaling continued cooling in the labor market ahead of upcoming employment reports.",
-   "titulo": "Contratación privada en EE.UU. se desacelera por quinta semana consecutiva; ADP toca 15k promedio",
-   "resumen": "Datos de ADP muestran que empleadores privados en EE.UU. agregaron un promedio de 15.000 empleos por semana en las cuatro semanas hasta el 11 de julio. Representa quinta semana consecutiva de caída, con contrataciones cayendo desde 35.750 en principios de mayo. Señal de enfriamiento laboral antes de reportes de empleo próximos.",
-   "analisis": {
-    "porque": "Crítico para narrativa de Reserva Federal: si el mercado laboral se enfría más rápido de lo esperado, reduce presión inflacionaria pero aumenta riesgo de recesión. Afecta expectativas de tasas y valuaciones de renta variable.",
-    "queOcurrio": "ADP reportó contratación privada promedio de 15k jobs/semana (4 semanas hasta 11 julio), quinta caída consecutiva desde 35,75k en mayo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Bonos",
-    "DXY",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empleo",
-   "keywords": [
-    "ADP",
-    "empleo",
-    "mercado laboral",
-    "contratación",
-    "enfriamiento"
-   ],
-   "tgText": "💼 ADP: contratación privada en mínimo de 15k promedio semanal; quinta caída consecutiva desde 35,75k en mayo. Enfriamiento laboral preocupante.",
-   "xText": "ADP: contratación privada USA promedio 15k/semana (caída 5ª semana). Cayó 57% desde mayo. Mercado laboral enfría rápido; presión sobre Fed para pausar.",
-   "discordText": "**EMPLEO - Contratación Privada se Desmorona**\n• ADP: 15k jobs/semana promedio (4 sem. hasta 11 jul)\n• Quinta semana de caídas consecutivas\n• Bajó de 35,75k en mayo (caída 57%)\n• Señal de enfriamiento acelerado\n• Impacto: reduce presión inflacionaria, aumenta riesgo recesión",
-   "pushText": "ADP: contratación privada en mínimo; 5ª semana de caídas consecutivas",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Bonos USA deberían fortalecerse (yields al alza) interpretándose como señal de debilitamiento laboral que pospone alza de tasas. DXY podría caer si el mercado anticipa reducción de tasas en más adelante.",
-    "despues": "Acciones defensivas (utilidades, consumo de bienes) podrían superar a cíclicas. Tecnología podría subir si bonos caen en yields.",
-    "escenarios": "Traders vigilan: (1) próximo Non-Farm Payroll (NFP) oficial en primer viernes de agosto para confirmar; (2) narrativa de Fed sobre sostenibilidad laboral; (3) si caída continúa, aumenta probabilidad de rate cuts antes de fin de 2026.",
-    "riesgos": "ADP históricamente tiene divergencias con NFP oficial. Si NFP sorprende al alza, mercado descartará este dato."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "oro": "alcista",
-    "nasdaq": "neutral",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "alcista",
-    "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33661",
-   "fecha": "2026-07-28T12:18:43+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33661",
-   "via": "DeItaone",
-   "original": "BOFA: JULY FED RATE HIKE WOULD BE UNPRECEDENTED BofA expects the Fed to hold rates in July, despite markets pricing a small chance of a hike. The bank says a July increase would be unprecedented, noting the Fed has never hiked since 1994 with less than 60% odds priced in. BofA sees higher oil prices as the main inflation risk and remains bullish on the U.S. dollar.",
-   "titulo": "BofA descarta suba de tasas en julio; advierte sobre riesgos de petróleo para inflación",
-   "resumen": "Bank of America espera que la Fed mantenga tasas en julio, a pesar del pequeño pricing de alza de mercados. BofA señala que una suba en julio sería \"sin precedentes\" dado que la Fed nunca ha alzado desde 1994 con probabilidades menores al 60%. El banco identifica precios de petróleo elevados como principal riesgo inflacionario y mantiene postura alcista en el dólar.",
-   "analisis": {
-    "porque": "Altamente relevante para bonos, divisas y expectativas de política monetaria. Redimensiona el \"ruido\" de mercados sobre suba de julio y refuerza narrativa de pausa. Comenta sobre dólar y materias primas.",
-    "queOcurrio": "BofA emitió view: Fed pausará en julio; advierte sobre petróleo como factor inflacionario; mantiene bullish en USD.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Rendimientos USA",
-    "DXY",
-    "Petróleo",
-    "Bonos",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "tasas de interés",
-    "julio",
-    "BofA",
-    "petróleo",
-    "dólar"
-   ],
-   "tgText": "📊 BofA descarta alza de tasas en julio (precedentes lo respaldan). Riesgo inflacionario = petróleo. Bullish en USD. Releva debate de mercados.",
-   "xText": "BofA: Fed pausará en julio (sin precedentes alza desde 1994 con <60% odds). Petróleo = riesgo inflacionario clave. Bullish USD. Redimensiona narrativa.",
-   "discordText": "**FED - Pausa en Julio Confirmada por BofA**\n• Fed esperada mantener tasas en julio\n• Suba sería \"sin precedentes\" por odds <60%\n• Riesgo inflacionario = petróleo elevado\n• BofA: bullish en dólar\n• Refuerza expectativa de pausa",
-   "pushText": "BofA descarta alza de Fed en julio; petróleo es riesgo inflacionario",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Bonos USA y USD deberían fortalecerse si el mercado asimila descuento de alza de julio. DXY podría presionarse al alza.",
-    "despues": "Equities podrían reaccionar al alza si se interpreta como entorno rates-friendly. Petróleo podría presionarse a baja si mercado cree que Fed no se verá forzada a ser más agresiva.",
-    "escenarios": "Traders monitorean: (1) próximos datos de PCE/inflación (si sorprenden al alza, BofA podría cambiar tesis); (2) precio del petróleo en próximas 2 semanas; (3) próximo FOMC 31-julio-2026.",
-    "riesgos": "Si petróleo sube bruscamente o inflación sorprende al alza, BofA estaría equivocado. Narrativa depende de datos inminentes."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "neutral",
-    "nasdaq": "neutral a alcista",
-    "dow": "neutral a alcista",
-    "sp500": "neutral a alcista",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "alcista",
-    "petroleo": "bajista (según BofA)"
-   },
    "updates": []
   }
  ],
