@@ -1,6 +1,6 @@
 {
  "lastId": 33826,
- "actualizado": "2026-08-01T03:16:45.162Z",
+ "actualizado": "2026-08-01T06:15:26.058Z",
  "items": [
   {
    "id": "33821",
@@ -145,61 +145,6 @@
     "capex-ia": "Dependiente del contenido final de regulación",
     "semiconductores": "Riesgo de downside si capex ralentiza"
    },
-   "updates": []
-  },
-  {
-   "id": "33822",
-   "fecha": "2026-07-31T20:32:17+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33822",
-   "via": "DeItaone",
-   "original": "WARSH CONSIDERS REDUCING FREQUENCY OF FED POLICY MEETINGS: NYT",
-   "titulo": "Warsh planea reducir frecuencia de reuniones de política monetaria de la Fed",
-   "resumen": "El columnista y exfuncionario de la Fed Kevin Warsh contempla una reducción en la frecuencia de las reuniones de política monetaria, según reporta NYT. El titular no especifica detalles sobre timing o magnitud propuesta. Esta posición se suma a señales previas de Warsh sobre mayor firmeza en tasas a pesar de mensajes dovish.",
-   "analisis": {
-    "porque": "Reforma institucional de la Fed que afectaría cadencia de decisiones de tasas. Menos reuniones implica menos puntos de entrada para cambios de política, afectando expectativas de mercado y volatilidad de bonos.",
-    "queOcurrio": "Warsh considera reducir frecuencia de reuniones de política monetaria de la Fed, según NYT.",
-    "estado": "confirmado",
-    "fuenteOriginal": "NYT"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "fed-meetings",
-    "warsh",
-    "policy-frequency",
-    "monetary-reform",
-    "fed-structure"
-   ],
-   "tgText": "📊 Warsh (ex-Fed) propone reducir frecuencia de reuniones de política monetaria de la Fed. Cambio institucional que afectaría cadencia de decisiones de tasas.",
-   "xText": "Kevin Warsh contempla reducción de frecuencia en reuniones de política monetaria de la Fed, según NYT. Posible reforma institucional de alcance significativo.",
-   "discordText": "**📋 REFORMA FED**\n• Warsh propone menos reuniones de política monetaria\n• Afectaría cadencia de decisiones\n• Cambio institucional importante",
-   "pushText": "Warsh propone reducir frecuencia de reuniones de la Fed",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Rendimientos de bonos largos (10Y+): inicialmente neutrales; mercado espera claridad sobre impacto en predictibilidad de política.",
-    "despues": "DXY y curva de tasas podrían repreciar si se interpreta como mayor rigidez monetaria.",
-    "escenarios": "Traders vigilan: (1) si propuesta es seria o especulativa; (2) apoyo de otros exfuncionarios de Fed; (3) impacto en expectativas de tasas 2027; (4) reacción de mercados de futuros de Fondos Federales.",
-    "riesgos": "Warsh no es funcionario actual (es columnista/ex-asesor); propuesta podría ser descartada. Impacto limitado si no hay seguimiento institucional real."
-   },
-   "macro": null,
    "updates": []
   },
   {
@@ -855,6 +800,123 @@
     "bonos": "Ajuste según confirmación de caída de riesgo",
     "volatilidad": "Media; espera de ruptura"
    },
+   "updates": []
+  },
+  {
+   "id": "33822",
+   "fecha": "2026-07-31T20:32:17+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33822",
+   "via": "DeItaone",
+   "original": "WARSH CONSIDERS REDUCING FREQUENCY OF FED POLICY MEETINGS: NYT",
+   "titulo": "Warsh planea reducir frecuencia de reuniones de política monetaria de la Fed",
+   "resumen": "El columnista y exfuncionario de la Fed Kevin Warsh contempla una reducción en la frecuencia de las reuniones de política monetaria, según reporta NYT. El titular no especifica detalles sobre timing o magnitud propuesta. Esta posición se suma a señales previas de Warsh sobre mayor firmeza en tasas a pesar de mensajes dovish.",
+   "analisis": {
+    "porque": "Reforma institucional de la Fed que afectaría cadencia de decisiones de tasas. Menos reuniones implica menos puntos de entrada para cambios de política, afectando expectativas de mercado y volatilidad de bonos.",
+    "queOcurrio": "Warsh considera reducir frecuencia de reuniones de política monetaria de la Fed, según NYT.",
+    "estado": "confirmado",
+    "fuenteOriginal": "NYT"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "fed-meetings",
+    "warsh",
+    "policy-frequency",
+    "monetary-reform",
+    "fed-structure"
+   ],
+   "tgText": "📊 Warsh (ex-Fed) propone reducir frecuencia de reuniones de política monetaria de la Fed. Cambio institucional que afectaría cadencia de decisiones de tasas.",
+   "xText": "Kevin Warsh contempla reducción de frecuencia en reuniones de política monetaria de la Fed, según NYT. Posible reforma institucional de alcance significativo.",
+   "discordText": "**📋 REFORMA FED**\n• Warsh propone menos reuniones de política monetaria\n• Afectaría cadencia de decisiones\n• Cambio institucional importante",
+   "pushText": "Warsh propone reducir frecuencia de reuniones de la Fed",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Rendimientos de bonos largos (10Y+): inicialmente neutrales; mercado espera claridad sobre impacto en predictibilidad de política.",
+    "despues": "DXY y curva de tasas podrían repreciar si se interpreta como mayor rigidez monetaria.",
+    "escenarios": "Traders vigilan: (1) si propuesta es seria o especulativa; (2) apoyo de otros exfuncionarios de Fed; (3) impacto en expectativas de tasas 2027; (4) reacción de mercados de futuros de Fondos Federales.",
+    "riesgos": "Warsh no es funcionario actual (es columnista/ex-asesor); propuesta podría ser descartada. Impacto limitado si no hay seguimiento institucional real."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-07-31T16:51:30.000Z",
+     "id": "981786594",
+     "texto": "Nuevos datos muestran que la inflación se encuentra en sus niveles más bajos en años, justo cuando el presidente de la Reserva Federal enfrenta presiones para ajustar la política monetaria. El titular no especifica qué indicadores concretos ni las métricas exactas, pero sugiere un escenario de desinflación que podría reconfigurar las expectativas de tasas.",
+     "tgUrl": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html"
+    }
+   ],
+   "actualizado": "2026-07-31T16:51:30.000Z"
+  },
+  {
+   "id": "925170123",
+   "fecha": "2026-07-31T16:50:38.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/us-lawmakers-doordash-chinese-ai-models.html",
+   "via": "CNBC",
+   "original": "U.S. lawmakers request information from DoorDash on use of Chinese AI models",
+   "titulo": "Congreso presiona a DoorDash por uso de modelos IA chinos; riesgos regulatorios en entregas",
+   "resumen": "Legisladores estadounidenses han requerido información a DoorDash sobre su utilización de modelos de inteligencia artificial de origen chino. El titular no especifica el alcance de esos modelos (infraestructura, algoritmos, datos) ni las posibles consecuencias regulatorias, pero refleja tensiones geopolíticas crecientes en tecnología.",
+   "analisis": {
+    "porque": "DoorDash (DASH) es una empresa de delivery pública. Presión regulatoria sobre proveedores tech chinos afecta costos de cumplimiento, potencial de sanciones y narrativa de riesgos geopolíticos en el sector de tech/plataformas.",
+    "queOcurrio": "Legisladores solicitan información a DoorDash respecto del uso de modelos IA chinos, lo que sugiere investigación de cumplimiento regulatorio sobre dependencias tecnológicas adversas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DASH",
+    "NASDAQ",
+    "Sector Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "DASH",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Sector Tech",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "doordash-dash",
+    "ia-china",
+    "regulacion",
+    "geopolitica-tech",
+    "cumplimiento"
+   ],
+   "tgText": "📱 Congreso presiona a DoorDash por uso de modelos IA chinos. Investigación regulatoria refleja tensiones geopolíticas en tech. DASH y peers en vigilancia por riesgos de cumplimiento.",
+   "xText": "🔍 Legisladores requieren info a DoorDash sobre IA china. Presión regulatoria crece en dependencias tech adversas. DASH bajo escrutinio geopolítico. #Tech #Regulacion",
+   "discordText": "**DoorDash bajo presión regulatoria**\n• Congreso investiga uso de modelos IA chinos\n• Riesgos de cumplimiento y sanciones potenciales\n• Tensiones geopolíticas en sector delivery/tech\n• DASH en vigilancia",
+   "pushText": "DoorDash investigada por uso de IA china; presión regulatoria en tech",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "DASH (cotización directa): mercado preciaría riesgos regulatorios y costos de cumplimiento potenciales. Volatilidad intradiaria probable.",
+    "despues": "Peers de delivery (Uber Eats, etc.), sector tech más amplio si el precedente se extiende; índices NASDAQ y empresas con exposición a proveedores chinos de IA.",
+    "escenarios": "Traders vigilarán: (1) respuesta oficial de DoorDash y timeline de investigación; (2) posibles multas o restricciones regulatorias; (3) si legisladores ampl ían investigación a otros peers; (4) adopción acelerada de IA alternativa (doméstica).",
+    "riesgos": "El titular no especifica magnitud del uso de IA china ni si es crítico. Riesgo de que sea ruido regulatorio sin consecuencias comerciales reales. Respuesta oficial podría neutralizar preocupaciones."
+   },
+   "macro": null,
    "updates": []
   },
   {
@@ -7588,57 +7650,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 903463089,
-   "fecha": "2026-07-29T01:17:13.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/trump-asks-supreme-court-to-toss-83point3m-defamation-award-to-e-jean-carroll.html",
-   "via": "CNBC",
-   "original": "Trump, DOJ ask Supreme Court to toss $83.3M defamation award to E. Jean Carroll",
-   "titulo": "Trump y DOJ piden a Corte Suprema anular condena de USD 83.3M en caso Carroll",
-   "resumen": "Administración Trump y Departamento de Justicia solicitan a la Corte Suprema anular veredicto de defamación de USD 83.3 millones contra Trump en caso E. Jean Carroll. El movimiento refleja continuación de litigio civil de alto perfil con implicaciones legales y políticas.",
-   "analisis": {
-    "porque": "Litigio es relevante para mercados por: (1) riesgo residual a valuación Trump Media, (2) incertidumbre legal/política que puede afectar confianza de inversores, (3) precedente legal sobre responsabilidad personal de figura política/empresarial.",
-    "queOcurrio": "Trump y DOJ juntos peticionan Corte Suprema para anular sentencia de USD 83.3M en juicio Carroll por defamación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Trump Media (TMTG)",
-    "Índices Mercado Valores",
-    "Confianza Inversores"
-   ],
-   "sesgos": [
-    {
-     "activo": "Trump Media",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Emergencia",
-   "keywords": [
-    "Trump",
-    "E-Jean-Carroll",
-    "defamación",
-    "Corte-Suprema",
-    "USD-83M",
-    "litigio"
-   ],
-   "tgText": "⚖️ Trump y DOJ piden anular condena de USD 83.3M en caso Carroll ante Corte Suprema. Continuidad de litigio civil de alto perfil.",
-   "xText": "Trump y DOJ solicitan anulación de sentencia USD 83.3M en caso Carroll a Corte Suprema. Litigio continúa con implicaciones legales y políticas.",
-   "discordText": "**Trump Legal: Corte Suprema**\n• Petición: anular USD 83.3M\n• Caso: defamación E. Jean Carroll\n• Demandantes: Trump + DOJ\n• Riesgo legal: persistente",
-   "pushText": "Trump y DOJ piden anular sentencia de USD 83.3M a Corte Suprema",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "Trump Media (TMTG) puede oscilar levemente sobre noticias legales, pero impacto es secundario vs. valuación/demanda.",
-    "despues": "Mercado general poco afectado a menos que sentencia final re-confirme o amplifique; riesgo es político/reputacional, no financiero directo.",
-    "escenarios": "Traders monitorean: (1) velocidad Corte Suprema, (2) cobertura mediática de veredicto, (3) impacto potencial en confianza de inversores en Trump Media.",
-    "riesgos": "Corte Suprema puede rechazar petición o afirmar sentencia; litigio continúa siendo distracción política."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7832,6 +7843,8 @@
   "https://www.cnbc.com/2026/07/31/trump-ai-executive-order-nears-key-deadline-regulation-debate-heats-up.html",
   "https://www.cnbc.com/2026/07/31/trump-appeals-irs-lawsuit-blanche-fund.html",
   "https://www.cnbc.com/2026/07/31/trump-pirro-reflecting-pool-olympian-david-hearn.html",
-  "https://www.cnbc.com/2026/07/31/soccer-fifa-scraps-world-cup-sell-off-plan-after-resistance-from-members.html"
+  "https://www.cnbc.com/2026/07/31/soccer-fifa-scraps-world-cup-sell-off-plan-after-resistance-from-members.html",
+  "https://www.cnbc.com/2026/07/31/us-lawmakers-doordash-chinese-ai-models.html",
+  "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html"
  ]
 }
