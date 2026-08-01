@@ -1,7 +1,84 @@
 {
- "lastId": 33828,
- "actualizado": "2026-08-01T10:22:28.470Z",
+ "lastId": 33829,
+ "actualizado": "2026-08-01T11:43:33.315Z",
  "items": [
+  {
+   "id": "33829",
+   "fecha": "2026-08-01T10:29:55+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33829",
+   "via": "DeItaone",
+   "original": "IRANIAN MEDIA SAYS EXPLOSION HEARD IN WESTERN IRAN'S ESLAMABAD GHARB, CAUSE AND SPECIFIC LOCATION UNKNOWN",
+   "titulo": "Explosión en Irán occidental; causa desconocida genera tensión geopolítica",
+   "resumen": "Medios iraníes reportan explosión en la región de Eslamabad Gharb, occidente de Irán. No se especifica la causa ni la ubicación exacta del incidente. El titular no proporciona detalles sobre si fue accidente, ataque o prueba de defensa aérea. Llega en contexto de escalada reciente entre Irán y USA bajo administración Trump.",
+   "analisis": {
+    "porque": "Cualquier incidente en Irán genera repricing de riesgo geopolítico: petróleo, dólar y valores defensivos se reprician según se interprete como accidente vs. ataque. Dado contexto Trump-Irán (misiles a Jordania, negociaciones rotas), mercados pueden sospecicularizar sobre escalada.",
+    "queOcurrio": "Según medios iraníes, se escuchó una explosión en zona occidental de Irán. No hay confirmación de causa, magnitud, víctimas ni ubicación precisa.",
+    "estado": "rumor",
+    "fuenteOriginal": "Medios iraníes (sin fuente Bloomberg/Reuters directa verificada en el titular)"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "Oro",
+    "Bonos",
+    "S&P500",
+    "Nasdaq"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "explosión",
+    "Oriente Medio",
+    "escalada",
+    "geopolítica",
+    "Trump",
+    "petróleo"
+   ],
+   "tgText": "🚨 Explosión reportada en Irán occidental (Eslamabad Gharb). Causa desconocida. Mercados reprician riesgo geopolítico: petróleo sube, dólar fuerte, equities en alerta. Contexto Trump-Irán tenso.",
+   "xText": "BREAKING: Explosión en Eslamabad Gharb, Irán occidental. Causa aún desconocida. Repricing geopolítico en tiempo real: petróleo, dólar y oro al alza. Equities defensivos bajo presión. #Geopolitica",
+   "discordText": "**EXPLOSIÓN EN IRÁN OCCIDENTAL**\n• Zona: Eslamabad Gharb, occidente de Irán\n• Causa: Desconocida\n• Fuente: Medios iraníes\n• Impacto mercados: Repricing de riesgo geopolítico\n• Activos: Petróleo↑ Dólar↑ Oro↑ Equities↓",
+   "pushText": "⚡ Explosión en Irán: causa desconocida. Petróleo y dólar suben por riesgo geopolítico.",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Petróleo (WTI/Brent) sube por cierre de suministros o escalada percibida; dólar se fortalece como activo refugio.",
+    "despues": "Oro sigue a dólar fuerte. S&P 500 y Nasdaq caen si se interpreta como escalada Irán-USA. Bonos suben (yields caen) por flight-to-safety.",
+    "escenarios": "Traders vigilan: (1) Si es ataque israelí/USA, escalada masiva. (2) Si es accidente/sabotaje interno, alivio de tensión. (3) Si es prueba aérea, sesgo neutral. Falta claridad es lo que genera volatilidad.",
+    "riesgos": "Titular sin verificación directa Bloomberg/Reuters; medios iraníes pueden exagerar o minimizar. Falta ubicación y causa exacta. Riesgo de fake news o interpretaciones erradas en 2-3 horas iniciales."
+   },
+   "macro": {
+    "dolar": "Alcista (refugio)",
+    "oro": "Alcista (refugio)",
+    "nasdaq": "Bajista (riesgo geopolítico)",
+    "dow": "Bajista",
+    "sp500": "Bajista",
+    "bitcoin": "Neutral-bajista",
+    "ethereum": "Neutral-bajista",
+    "bonos": "Alcista (yields caen)",
+    "petroleo": "Alcista (oferta bajo riesgo)"
+   },
+   "updates": []
+  },
   {
    "id": "33828",
    "fecha": "2026-08-01T08:50:58+00:00",
@@ -7590,75 +7667,6 @@
     "riesgos": "Escalada es típica en ciclos comerciales pero imprevisible. Titular es respuesta diplomática sin medidas concretas anunciadas todavía. Potencial de sobrerreacción de mercado."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33683",
-   "fecha": "2026-07-29T07:01:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33683",
-   "via": "DeItaone",
-   "original": "FED IN FOCUS The Fed is widely expected to keep rates unchanged, but Chairman Kevin Warsh has made this meeting unusually unpredictable. The key isn't just the decision — it's the message. If rates stay on hold, markets will look for clues on September. If the Fed surprises with a hike, investors will want to know whether it's the start of a tougher inflation fight or a one-off move.",
-   "titulo": "Expectativa de pausa de Fed, pero Warsh introduce incertidumbre sobre futuro de tasas",
-   "resumen": "Mercados dan por descontado que Fed mantendrá tasas sin cambios. Sin embargo, el Chair Kevin Warsh ha generado volatilidad al no descartar movimientos futuros. La ambigüedad clave es si un posible alza de tasas sería inicio de endurecimiento inflacionario o medida aislada. Expectativa de pausa contrasta con señales contradictorias de liderazgo Fed.",
-   "analisis": {
-    "porque": "Incertidumbre sobre trayectoria futura de tasas es más volátil que decisión presente. Mercados valorizan activos según expectativa de tasas futuras; ambigüedad de Warsh crea reasignación de capital y cambio en curvas de rendimiento.",
-    "queOcurrio": "Fed se espera mantenga tasas pero Chair Warsh no eliminó posibilidad de movimientos posteriores, contrario a mercado que descuenta pausa indefinida. El foco está en mensaje vs decisión presente.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Rendimientos USA",
-    "Bonos",
-    "S&P500",
-    "NASDAQ",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "fed-meeting",
-    "interest-rates",
-    "kevin-warsh",
-    "monetary-policy"
-   ],
-   "tgText": "⚠️ Fed pausa confirmada pero Warsh introduce incertidumbre. Mercado pregunta: ¿inicio de endurecimiento o movimiento aislado? Volatilidad extrema en curva de tasas.",
-   "xText": "Fed pausa tasas pero Chair Warsh crea incertidumbre sobre futuro. Mercado debatirá si posible alza = endurecimiento inflacionario o movimiento único. Volatilidad alta.",
-   "discordText": "**Fed Ambiguity Premium**\n• Decisión: tasas sin cambios\n• Sorpresa: Warsh abre puertas futuras\n• Debate: ¿alza = endurecimiento o aislada?\n• Volatilidad: ALTA en treasuries\n• Next: Sept será clave",
-   "pushText": "Fed pausa pero Warsh crea incertidumbre sobre futuro de tasas",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Curva de rendimientos (2yr-10yr) ajusta inmediatamente. Si mercado interpreta Warsh como hawkish, long-end yields suben más.",
-    "despues": "Valuaciones de growth stock (NASDAQ) se represimizan por tasas de descuento más altas. Dólar se fortalece ante expectativa de tasas reales más altas.",
-    "escenarios": "Traders monitorean: (1) lenguaje exacto de Warsh en comunicado; (2) dot plot de próxima FOMC si revela intenciones; (3) CPI julio para validar presión inflacionaria; (4) comunicaciones posteriores de Warsh eliminando ambigüedad.",
-    "riesgos": "Incertidumbre es bullish para volatilidad pero riesgo de falsa señal. Si Fed aclara posteriormente posición dovish, sesgo bajista en yields se revierten violentamente."
-   },
-   "macro": {
-    "dolar": "Alcista por expectativa de tasas más altas",
-    "oro": "Bajista por fortaleza de dólar",
-    "nasdaq": "Bajista por tasa de descuento",
-    "dow": "Neutral a bajista",
-    "sp500": "Bajista moderado",
-    "bitcoin": "Bajista si dólar se fortalece",
-    "ethereum": null,
-    "bonos": "Bajista (yields suben)",
-    "petroleo": "Neutral"
-   },
    "updates": []
   }
  ],
