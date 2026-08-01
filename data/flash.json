@@ -1,7 +1,79 @@
 {
- "lastId": 33826,
- "actualizado": "2026-08-01T06:15:26.058Z",
+ "lastId": 33827,
+ "actualizado": "2026-08-01T08:36:33.978Z",
  "items": [
+  {
+   "id": "33827",
+   "fecha": "2026-08-01T07:48:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33827",
+   "via": "DeItaone",
+   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
+   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
+   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "analisis": {
+    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
+    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Carry Trades",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "intervención-divisas",
+    "yen-japón",
+    "usdjpy",
+    "tesoro-usa",
+    "banco-central-japón",
+    "carry-trades"
+   ],
+   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
+   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
+   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
+   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
+    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
+    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
+    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+   },
+   "macro": {
+    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
+    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
+    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
+    "dow": "neutral a alcista por debilitamiento de dólar",
+    "sp500": "neutral a alcista por debilitamiento de dólar",
+    "bitcoin": "alcista potencial por debilitamiento de dólar",
+    "ethereum": "alcista potencial por debilitamiento de dólar",
+    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
+    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   },
+   "updates": []
+  },
   {
    "id": "33821",
    "fecha": "2026-07-31T16:26:22+00:00",
@@ -7594,61 +7666,6 @@
     "bonos": "Presión alcista (yields suben) si petróleo + inflación; pero safe-haven (yields bajan) si riesgo equity intensifica",
     "petroleo": "En alza; monitores ISM, inventarios OPEC, geopolítica"
    },
-   "updates": []
-  },
-  {
-   "id": 959685845,
-   "fecha": "2026-07-29T04:12:30.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html",
-   "via": "CNBC",
-   "original": "Asian technology stocks extend sell-off with SoftBank down 10% as AI plays take a hit",
-   "titulo": "Acciones tech asiáticas extienden venta; SoftBank cae 10% mientras AI plays sufren golpe",
-   "resumen": "Acciones tecnológicas en Asia amplían caídas. SoftBank desciende 10%, líder en contagio de venta de AI-related stocks. Movimiento refleja propagación global de escepticismo sobre rentabilidad de inversión en IA.",
-   "analisis": {
-    "porque": "Señala que venta de tech no es fenómeno aislado USA; Asia sigue con debilidad. SoftBank es barómetro importante (portfolio VC/tech). Riesgo de propagación a índices globales.",
-    "queOcurrio": "Tech stocks asiáticos extienden venta. SoftBank cae 10%. AI plays sufren presión global.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Nikkei",
-    "Hang Seng",
-    "Tech Asia",
-    "SoftBank",
-    "Nasdaq-100"
-   ],
-   "sesgos": [
-    {
-     "activo": "Tech Asia",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "SoftBank",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "asia-tech-selloff",
-    "softbank-10pct",
-    "ai-trade-weakness",
-    "global-contagion"
-   ],
-   "tgText": "Tech Asia en venta; SoftBank cae 10%. Contagio global de escepticismo AI. Riesgo para índices asiáticos y Nasdaq.",
-   "xText": "Acciones tech asiáticas extienden venta. SoftBank baja 10% liderando caída de AI plays. Contagio global de debilidad.",
-   "discordText": "**Asia tech bajo presión**\n• SoftBank cae 10%\n• Contagio en AI plays\n• Propagación global de escepticismo\n• Riesgo para Nikkei/Hang Seng",
-   "pushText": "Tech Asia en caída; SoftBank -10% lidera venta de AI plays",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Nikkei, Hang Seng reaccionan primero. SoftBank es indicador de salud del ecosistema venture-backed tech asiático.",
-    "despues": "Nasdaq-100 podría extender caídas si Asia confirma venta es estructural. Dólar USA se fortalece (flight-to-safety).",
-    "escenarios": "Traders vigilan: (1) si venta en Asia es spillover de Google/MSFT o factor local; (2) posiciones de SoftBank Vision Fund en mega-cap USA; (3) si emerge pain en carry trades JPY.",
-    "riesgos": "Venta podría ser cierre de posiciones pre-fin de mes. SoftBank es exposición asimétrica; su caída no necesariamente presiona Nikkei proporcionalmente."
-   },
-   "macro": null,
    "updates": []
   }
  ],
