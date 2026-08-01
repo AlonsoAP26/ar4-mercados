@@ -1,7 +1,74 @@
 {
- "lastId": 33827,
- "actualizado": "2026-08-01T08:36:33.978Z",
+ "lastId": 33828,
+ "actualizado": "2026-08-01T10:22:28.470Z",
  "items": [
+  {
+   "id": "33828",
+   "fecha": "2026-08-01T08:50:58+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33828",
+   "via": "DeItaone",
+   "original": "SPACE RACE: CHINA CLOSES THE GAP China is rapidly expanding its satellite capabilities, narrowing the technology gap with the U.S. Advanced surveillance, AI-powered imagery, the BeiDou navigation system, and new communications satellites are improving Beijing's ability to track military activity, support precision strikes, and strengthen its space network. U.S. officials warn these advances could ",
+   "titulo": "China cierra brecha tecnológica espacial; satélites avanzados desafían supremacía militar USA",
+   "resumen": "China expande rápidamente capacidades satelitales con sistemas de vigilancia avanzada, imágenes potenciadas por IA y satélites de comunicaciones. El sistema de navegación BeiDou mejora la capacidad de Beijing para rastrear actividad militar y apoyar ataques de precisión. Oficiales estadounidenses advierten que estos avances podrían desafiar la superioridad militar estadounidense y remodelar el equilibrio de poder en el espacio.",
+   "analisis": {
+    "porque": "Tensión geopolítica creciente entre USA y China genera volatilidad en defensas, satélites, semiconductores y activos ligados a conflicto potencial. Inversionistas vigilan exposición en contractors de defensa y tecnología estadounidense.",
+    "queOcurrio": "Funcionarios estadounidenses reconocen avance significativo de China en tecnología espacial y satelital, incluyendo capacidades de vigilancia, inteligencia artificial aplicada e infraestructura de navegación/comunicaciones de doble uso.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "SPY",
+    "DXY",
+    "Defensa USA (RTX, LMT, NOC)",
+    "Semiconductores (NVDA, QCOM)",
+    "Bonos Tesoro",
+    "Petróleo"
+   ],
+   "sesgos": [
+    {
+     "activo": "Contractors defensa USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores avanzados",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos Tesoro 10Y",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "China",
+    "satélites",
+    "defensa USA",
+    "espacio",
+    "IA militar",
+    "BeiDou",
+    "supremacía tecnológica"
+   ],
+   "tgText": "🛰️ China cierra brecha espacial con satélites avanzados e IA. Oficiales USA advierten desafío a superioridad militar. Contractors defensa y semiconductores bajo vigilancia de mercados.",
+   "xText": "China acelera capacidades satelitales de vigilancia e IA, reduciendo brecha con USA. Funcionarios advierten riesgo a supremacía militar espacial. Impacto en defensa y tech.",
+   "discordText": "**China Cierra Brecha Espacial**\n• Satélites avanzados + imágenes IA + BeiDou\n• Mejora rastreo militar y capacidad de ataque de precisión\n• Oficiales USA advierten riesgo a superioridad\n• Afecta: Defensa, semiconductores, geopolítica",
+   "pushText": "China avanza en tecnología espacial; desafía supremacía militar USA",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Contractors defensa (RTX, LMT, NOC) suben por percepción de mayor gasto defensivo; DXY sube por flight-to-safety.",
+    "despues": "Semiconductores avanzados (NVDA, QCOM) suben por demanda de chips para defensa; bonos USA bajan (rendimientos suben) por riesgo geopolítico.",
+    "escenarios": "Traders monitorean: (1) Anuncios de inversión defensiva USA; (2) Restricciones adicionales a exportación de semiconductores a China; (3) Declaraciones de oficiales de defensa; (4) Escalada retórica en próximas semanas.",
+    "riesgos": "Titular citado como confirmado por Bloomberg pero atribuido a 'advertencias de oficiales USA' sin fuente específica. Riesgo de sobrerreacción si se interpreta como cambio de política oficial. Escalada retórica típica no siempre implica acción inmediata de mercados."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33827",
    "fecha": "2026-08-01T07:48:11+00:00",
@@ -7591,80 +7658,6 @@
     "ethereum": null,
     "bonos": "Bajista (yields suben)",
     "petroleo": "Neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": 981575619,
-   "fecha": "2026-07-29T05:20:15.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html",
-   "via": "CNBC",
-   "original": "S&P 500 futures edge lower as oil climbs; South Korea stocks fall 8% amid chip rout: Live updates",
-   "titulo": "Futuros S&P 500 debiles; petróleo sube mientras acciones SK caen 8% en ruta de chips",
-   "resumen": "Futuros S&P 500 retroceden. Petróleo sube en contexto de geopolítica. Acciones de Corea del Sur caen 8% por presión en sector semiconductores. Datos en vivo desde Asia; titular no especifica catalizador de caída de chips.",
-   "analisis": {
-    "porque": "Trifecta de riesgos: debilidad en índices USA, presión en semiconductores (sector clave IA/capex), suba de petróleo (inflación). Crítico para asset allocation global.",
-    "queOcurrio": "Futuros S&P 500 debiles. Petróleo sube. SK stocks caen 8% por chip rout.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P 500",
-    "Petróleo",
-    "KOSPI",
-    "Semiconductores",
-    "Nasdaq-100"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "KOSPI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "sp500-futures-weak",
-    "oil-rally",
-    "korea-stocks-8pct",
-    "chip-rout",
-    "geopolitica"
-   ],
-   "tgText": "🔴 Futuros S&P 500 débiles; petróleo sube. SK stocks caen 8% por crisis chips. Confluencia de riesgos: demanda débil + inflación.",
-   "xText": "S&P 500 futures débiles con petróleo en alza. Acciones SK caen 8% en caída de semiconductores. Riesgo inflacionario + debilidad en demanda.",
-   "discordText": "**Futuros débiles, petróleo en alza**\n• S&P 500 futures retroceden\n• Petróleo sube por geopolítica\n• SK stocks -8% por chip rout\n• ⚠️ Confluencia de riesgos",
-   "pushText": "S&P 500 futures débiles; petróleo sube; SK -8% en caída de chips",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "S&P 500 abre en rojo. Petróleo sube presionando DXY y esperanza de inflación (contrario a bono alcista). Semiconductores (NVIDIA, AMD) bajo presión.",
-    "despues": "Si petróleo rompe resistencias, CRB index amplía, alimentando dudas inflacionarias (presión en bonos, fortaleza USD). SK weakness contagia a supply chains.",
-    "escenarios": "Traders vigilan: (1) si caída de chips es coyuntural o refleja capex downcycle; (2) nivel de precios de petróleo vs. umbral inflacionario; (3) spillover de SK a Taiwan (TSMC exposure).",
-    "riesgos": "Titular es 'live updates'; datos podrían cambiar antes de apertura USA. Caída de SK podría ser profit-taking post-rally, no structural. Petróleo afectado por geopolítica conocida (Irán, etc.)."
-   },
-   "macro": {
-    "dolar": "Presión alcista por flight-to-safety + petróleo sube inflación esperada",
-    "oro": "Podría subir si risk-off intensifica; compite con DXY fortaleza",
-    "nasdaq": "Bajo presión por chips rout (QCOM, NVDA, AMD) y continuidad venta tech",
-    "dow": "Defensivo; podría resistir si sectores cíclicos sufren",
-    "sp500": "Rojo en futuros; riesgos: chips, petróleo, debilidad demanda",
-    "bitcoin": "Caída si riesgo-off; podría buscar soporte si petróleo sube (asset inflation esperada)",
-    "ethereum": "Correlacionado a tech/semiconductores; presión",
-    "bonos": "Presión alcista (yields suben) si petróleo + inflación; pero safe-haven (yields bajan) si riesgo equity intensifica",
-    "petroleo": "En alza; monitores ISM, inventarios OPEC, geopolítica"
    },
    "updates": []
   }
