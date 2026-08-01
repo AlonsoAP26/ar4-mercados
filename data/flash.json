@@ -1,6 +1,6 @@
 {
  "lastId": 33826,
- "actualizado": "2026-07-31T22:29:12.718Z",
+ "actualizado": "2026-08-01T03:16:45.162Z",
  "items": [
   {
    "id": "33821",
@@ -93,6 +93,61 @@
    "actualizado": "2026-07-31T22:17:48+00:00"
   },
   {
+   "id": "912170525",
+   "fecha": "2026-07-31T21:46:32.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/trump-ai-executive-order-nears-key-deadline-regulation-debate-heats-up.html",
+   "via": "CNBC",
+   "original": "Trump&apos;s AI executive order nears key deadline as regulation debate intensifies",
+   "titulo": "Orden ejecutiva de Trump sobre IA se acerca a plazo límite; debate regulatorio se intensifica",
+   "resumen": "Una orden ejecutiva de Trump sobre regulación de IA se aproxima a una fecha límite clave, mientras el debate sobre el marco regulatorio se intensifica en Washington. El titular no especifica los detalles de la orden ni qué aspecto de IA regula (privacidad, seguridad, estándares técnicos).",
+   "analisis": {
+    "porque": "La regulación de IA afecta directamente capex de infraestructura, requisitos de cumplimiento para tech giants (Alphabet, Amazon, Microsoft, Meta, OpenAI) y valuaciones de empresas de semiconductores. Incertidumbre regulatoria genera volatilidad en posicionamiento de largo plazo en sector tech.",
+    "queOcurrio": "Una orden ejecutiva de Trump sobre IA está próxima a vencer un plazo clave, y el debate sobre regulación se ha vuelto más intenso.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Tech Largo Plazo",
+    "Semiconductores",
+    "NASDAQ",
+    "Startups IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tech",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "regulación-ia",
+    "orden-ejecutiva",
+    "trump",
+    "politica-tech",
+    "cumplimiento"
+   ],
+   "tgText": "⚖️ Orden ejecutiva de Trump sobre IA llega a plazo límite. Debate regulatorio se intensifica en Washington. Implicaciones para capex tech. #IA #Regulación",
+   "xText": "Plazo límite para orden ejecutiva de Trump sobre IA. Debate regulatorio en Washington se intensifica. Impacto potencial en capex y cumplimiento tech. #Policy",
+   "discordText": "**Regulación IA en punto crítico**\n• Orden ejecutiva Trump acerca a deadline\n• Debate regulatorio se intensifica\n• Impacto: capex, cumplimiento, valuaciones",
+   "pushText": "Orden ejecutiva Trump sobre IA llega a plazo; debate regulatorio se intensifica",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Startups IA y proveedores de modelos (OpenAI, Anthropic, etc.) muestran sensibilidad inmediata; después mega-caps tech (Alphabet, Microsoft, Amazon).",
+    "despues": "Semiconductores (Nvidia, AMD, TSMC) según implicaciones en capex; bonos corporativos si se anticipan costos de cumplimiento.",
+    "escenarios": "Traders vigilan: (1) regulación stringente = capex estructuralmente menor en IA = downgrade de semiconductores; (2) regulación permisiva = validación de apetito de capex; (3) enfoque en privacidad vs seguridad vs competencia = diferentes impactos sectoriales.",
+    "riesgos": "El titular no especifica qué aspectos de IA regula la orden. Falta claridad sobre verdadero impacto. Puede ser movimiento político sin consecuencias reales de mercado."
+   },
+   "macro": {
+    "nasdaq": "Neutral a ligeramente bajista si regulación es stringente",
+    "capex-ia": "Dependiente del contenido final de regulación",
+    "semiconductores": "Riesgo de downside si capex ralentiza"
+   },
+   "updates": []
+  },
+  {
    "id": "33822",
    "fecha": "2026-07-31T20:32:17+00:00",
    "tgUrl": "https://t.me/walterbloomberg/33822",
@@ -145,6 +200,72 @@
     "riesgos": "Warsh no es funcionario actual (es columnista/ex-asesor); propuesta podría ser descartada. Impacto limitado si no hay seguimiento institucional real."
    },
    "macro": null,
+   "updates": []
+  },
+  {
+   "id": "939706732",
+   "fecha": "2026-07-31T20:17:54.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/apple-aapl-amazon-amzn-stock-today.html",
+   "via": "CNBC",
+   "original": "Alphabet, Amazon and Microsoft added nearly $1.5 trillion in combined value this week",
+   "titulo": "Alphabet, Amazon y Microsoft suben USD 1,5 billones en valor combinado esta semana",
+   "resumen": "Las tres mega-capitalizaciones tecnológicas ganaron aproximadamente USD 1.500 millones en capitalización acumulada durante la semana. Este movimiento refleja recuperación en confianza sobre valuaciones tech tras presión previa por preocupaciones sobre gasto en IA y rendimiento de capex.",
+   "analisis": {
+    "porque": "Alphabet, Amazon y Microsoft pesan ~30% del S&P 500 y >50% del NASDAQ-100. Movimientos de USD 1,5 billones en una semana en estos tres activos pueden explicar la mayoría del rally del índice, afectando directamente retornos de fondos indexados y expectativas macro sobre ganancias corporativas.",
+    "queOcurrio": "Las tres acciones tecnológicas de mayor capitalización bursátil ganaron un total de aproximadamente USD 1.500 millones en valor de mercado durante la semana pasada.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Alphabet",
+    "Amazon",
+    "Microsoft",
+    "NASDAQ-100",
+    "S&P500",
+    "Mega-Caps Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ-100",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Tech",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "mega-caps",
+    "nasdaq",
+    "sp500",
+    "valoración-tech",
+    "rally"
+   ],
+   "tgText": "🚀 Alphabet, Amazon y Microsoft ganaron USD 1,5T en valor esta semana. Las mega-caps tech lideran recuperación de mercado. Impulso en NASDAQ. #TechStock",
+   "xText": "Mega-caps tech en rally: Alphabet, Amazon y Microsoft ganaron USD 1,5T combinado esta semana. Recuperación en confianza sobre ganancias tech. #StockMarket",
+   "discordText": "**Mega-caps tech recuperan terreno**\n• Alphabet, Amazon, Microsoft: +USD 1,5T en valor\n• Representan ~30% del S&P 500\n• Rally liderado por confianza en capex IA",
+   "pushText": "Alphabet, Amazon y Microsoft: +USD 1,5T esta semana; mega-caps impulsan S&P 500",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "NASDAQ-100 y futuros QQQ responden primero; movimiento de mega-caps es 60-70% de retorno del índice.",
+    "despues": "S&P 500 (arrastrado por weight en las tres acciones), fondos indexados globales, correlación entre acciones tech y bonos USA.",
+    "escenarios": "Traders vigilarán: (1) si rally se consolidiza = fortaleza en earnings season tech; (2) si es inversión de corto plazo = profit-taking próximo; (3) implicaciones para correlación tech-bonos y volatilidad implícita.",
+    "riesgos": "Concentración extrema de ganancias en 3 acciones sugiere fragilidad del rally si una de ellas falla. Valuaciones de mega-caps siguen elevadas; corrección moderada causaría caída acumulada significativa."
+   },
+   "macro": {
+    "nasdaq100": "Sesgo alcista muy pronunciado; rally liderado por mega-caps",
+    "sp500": "Sesgo alcista moderado; arrastrado por weight en tech",
+    "bonos": "Ajuste según correlación con rally tech",
+    "volatilidad": "Media; dependiente de próximos earnings"
+   },
    "updates": []
   },
   {
@@ -209,6 +330,121 @@
    "macro": {
     "nasdaq": "bajista",
     "sp500": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "963194043",
+   "fecha": "2026-07-31T19:43:14.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/eaton-jumps-as-its-earnings-and-outlook-signal-hope-for-the-ai-buildout.html",
+   "via": "CNBC",
+   "original": "Eaton shares jump as its earnings and outlook show resilience of the AI buildout",
+   "titulo": "Acciones de Eaton saltan tras resultados sólidos; resiliencia del despliegue de IA confirmada",
+   "resumen": "Eaton reportó ganancias y perspectivas que demostraron la fortaleza de la demanda en la construcción de infraestructura de IA. El movimiento accionario positivo refleja confianza en que el ciclo de inversión en IA continúa sin desaceleración significativa, contrastando con preocupaciones previas sobre sostenibilidad del gasto.",
+   "analisis": {
+    "porque": "Eaton es proveedor clave de componentes de potencia y gestión térmica para data centers. Sus resultados validan que el capex en IA sigue siendo prioridad corporativa sin señales inmediatas de contracción, lo que afecta valuaciones del sector tech y proveedores industriales.",
+    "queOcurrio": "Eaton publicó resultados y guidance que mostraron demanda resiliente en infraestructura de IA, impulsando su precio accionario al alza.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Eaton",
+    "Industriales",
+    "Semiconductores",
+    "Tech Hardware",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Eaton",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Industriales",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "eaton",
+    "capex-ia",
+    "data-centers",
+    "infraestructura",
+    "earnings"
+   ],
+   "tgText": "✅ Eaton dispara tras earnings sólidos. Demanda en infraestructura IA sigue fuerte. Confirmación de que el capex tech no desacelera. #AccionesUSA",
+   "xText": "Eaton salta con earnings positivos. Sus resultados confirman que el despliegue de IA mantiene momentum. Capex resiliente en data centers. #Mercados",
+   "discordText": "**Eaton impulsa sector con earnings sólidos**\n• Resultados y guidance superan expectativas\n• Demanda en infraestructura IA resiliente\n• Validación de ciclo de capex tech",
+   "pushText": "Eaton salta; demanda de infraestructura IA confirmada como resiliente",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Eaton (ETN) lidera; arrastran a proveedores industriales de semiconductores y data centers.",
+    "despues": "Índices tech (NASDAQ) y mega-caps Tech (Nvidia, AMD, TSM) ajustan con sesgo alcista por validación de demanda.",
+    "escenarios": "Traders vigilarán: (1) si otros proveedores de infraestructura confirman demanda resiliente = rally sector; (2) si guidance asume desaceleración posterior = profit-taking; (3) impacto en comparables de semiconductores.",
+    "riesgos": "Los resultados de Eaton podrían ser caso particular y no indicador universal de capex sostenido; otros proveedores pueden mostrar debilidad."
+   },
+   "macro": {
+    "nasdaq": "Sesgo alcista por validación de demanda IA",
+    "semiconductores": "Positivo; arrastran proveedores",
+    "capex-ia": "Confirmado como resiliente en corto plazo"
+   },
+   "updates": []
+  },
+  {
+   "id": "938762186",
+   "fecha": "2026-07-31T19:28:51.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/scoop-up-more-yield-amid-fed-rate-uncertainty-with-these-portfolio-tweaks.html",
+   "via": "CNBC",
+   "original": "Scoop up more yield amid Fed rate uncertainty with these portfolio tweaks",
+   "titulo": "Captura más rentabilidad en cartera frente a incertidumbre de tasas Fed",
+   "resumen": "La nota recomienda ajustes de cartera para aumentar rendimiento de ingresos fijos en contexto de incertidumbre sobre la trayectoria de tasas de la Reserva Federal. Implícitamente sugiere que hay oportunidades de yield en depósitos o bonos de corto plazo con los niveles actuales de tasas.",
+   "analisis": {
+    "porque": "La incertidumbre sobre decisiones de la Fed genera volatilidad en bonos y cuestiona sostenibilidad de spreads de crédito. Recomendaciones de captura de yield afectan flujos hacia renta fija vs renta variable, alterando valuaciones relativas y demanda de activos defensivos.",
+    "queOcurrio": "Una recomendación editorial sugiere ajustes de cartera para incrementar ingresos de renta fija ante dudas sobre la política monetaria futura de la Fed.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Bonos USA",
+    "Rendimientos",
+    "Renta Fija",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "FED",
+   "keywords": [
+    "yield",
+    "renta-fija",
+    "fed",
+    "tasas",
+    "cartera"
+   ],
+   "tgText": "📈 Estrategia: captura más yield en renta fija con incertidumbre de Fed. Bonos corto plazo ofrecen oportunidades en contexto de dudas sobre tasas. #RentaFija",
+   "xText": "Recomendación de cartera: aumenta yield en renta fija frente a incertidumbre Fed. Bonos corto plazo podrían ofrecer mejor relación riesgo-rendimiento. #Inversión",
+   "discordText": "**Estrategia de cartera: captura de yield**\n• Recomendación frente a incertidumbre Fed\n• Enfoque en renta fija corto plazo\n• Objetivo: ingresos defensivos",
+   "pushText": "Captura más yield en cartera con incertidumbre Fed; bonos corto plazo en foco",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Bonos de corto plazo (2-3 años) y depósitos de alto rendimiento (CDs, Money Market) ven demanda inmediata.",
+    "despues": "Curva de rendimientos (spreads 2-10) se ajusta según interpretación de cambio en demanda de renta fija.",
+    "escenarios": "Traders vigilan: (1) si flujos masivos van a renta fija = aplana curva; (2) si es táctico/corto plazo = volatilidad limitada; (3) señal de que mercado anticipa cuts de Fed = bono largos también demandados.",
+    "riesgos": "Recomendación es análisis editorial, no señal oficial de Fed. El verdadero catalizador de movimiento será decisión oficial de política monetaria, no recomendación de portafolio."
+   },
+   "macro": {
+    "bonos": "Positivo para corto plazo; demanda defensiva",
+    "fed": "Incertidumbre implícita; mercado anticipa cambios",
+    "curva": "Riesgo de aplanamiento si flujos van a muy corto plazo"
    },
    "updates": []
   },
@@ -504,6 +740,120 @@
     "sp500": "bajista",
     "bonos": "bajista (precios)",
     "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "999449544",
+   "fecha": "2026-07-31T18:13:39.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
+   "via": "CNBC",
+   "original": "GM to launch proprietary in-vehicle AI system later this year",
+   "titulo": "GM lanzará sistema de IA integrada en vehículos a finales de año",
+   "resumen": "General Motors planea desplegar un sistema de inteligencia artificial propietario en sus vehículos durante el último trimestre de 2026. El lanzamiento representa competencia en software automotriz frente a Tesla y otros fabricantes con capacidades de IA integradas.",
+   "analisis": {
+    "porque": "La competencia en software automotriz con IA afecta valuaciones relativas de fabricantes de autos (GM, Ford, Stellantis) frente a Tesla, y genera demanda de semiconductores y componentes de procesamiento. Impacta expectativas de márgenes operacionales y poder de marca.",
+    "queOcurrio": "General Motors anunció planes para lanzar un sistema de IA propietario en sus vehículos antes de fin de 2026.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "GM",
+    "Automotor",
+    "Semiconductores",
+    "Tesla",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "GM",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Automotor",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "general-motors",
+    "ia-integrada",
+    "software-auto",
+    "competencia-tesla"
+   ],
+   "tgText": "🚗 GM lanzará IA propietaria en vehículos antes de fin 2026. Competencia en software automotriz frente a Tesla y otros fabricantes. #Automotriz #IA",
+   "xText": "General Motors planea desplegar sistema de IA integrada en vehículos en 2026. Movimiento competitivo en software automotriz. #Auto",
+   "discordText": "**GM entra en carrera de IA automotriz**\n• Sistema propietario antes de Q4 2026\n• Competencia directa vs Tesla\n• Apunta a márgenes y diferenciación",
+   "pushText": "GM lanzará IA integrada en vehículos antes de fin 2026; compite con Tesla",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de GM (General Motors) responden; impacto menor directo pero relevante para sentimiento de sector automotor.",
+    "despues": "Tesla (evaluación relativa de software), proveedores de semiconductores para autos (Qualcomm, NXP), fondos de automotor.",
+    "escenarios": "Traders vigilan: (1) capacidad real de IA GM vs expectativas = valuación relativa frente a Tesla; (2) impacto en márgenes = presión en costos de desarrollo; (3) demanda de chips de procesamiento para el sector.",
+    "riesgos": "Anuncio podría ser vaporware si implementación falla o es limitada. Impacto real dependerá de aceptación del consumidor y calidad relativa vs competencia."
+   },
+   "macro": {
+    "gm": "Positivo moderado; validación de capex en IA",
+    "automotor": "Neutral; competencia esperada en IA",
+    "semiconductores": "Demanda creciente en chips para autos"
+   },
+   "updates": []
+  },
+  {
+   "id": "980083495",
+   "fecha": "2026-07-31T18:07:36.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/07/31/the-sp-500-is-stuck-this-obscure-index-could-determine-the-markets-next-move.html",
+   "via": "CNBC",
+   "original": "The S&P 500 is stuck at a key battleground level. This obscure index could determine the market’s next move",
+   "titulo": "S&P 500 en encrucijada técnica; índice obscuro podría definir próximo movimiento",
+   "resumen": "El S&P 500 enfrenta un nivel de resistencia clave que funcionaría como punto de quiebre técnico. Un índice poco seguido podría ser determinante para la dirección del mercado en el corto plazo. El titular no especifica cuál es ese índice ni los niveles exactos de resistencia.",
+   "analisis": {
+    "porque": "Los niveles técnicos clave en el S&P 500 generan decisiones de posicionamiento masivo en derivados y fondos indexados. Si se rompe resistencia, activa stops y órdenes automáticas; si rebota, consolida caída previa.",
+    "queOcurrio": "El S&P 500 se encuentra atrapado en un nivel de batalla técnico crítico donde un índice menor podría confirmar la próxima dirección del mercado.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Derivados",
+    "Fondos Indexados"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "s-p-500",
+    "resistencia-técnica",
+    "índice-clave",
+    "trading"
+   ],
+   "tgText": "📊 S&P 500 en nivel crítico. Un índice menor podría definir el próximo movimiento del mercado. Traders vigilantes en encrucijada técnica.",
+   "xText": "El S&P 500 enfrenta resistencia clave. Un índice obscuro podría determinar hacia dónde va el mercado próximamente. Atención a señales técnicas. #Mercados",
+   "discordText": "**S&P 500 en encrucijada técnica**\n• Batalla en nivel de resistencia crítico\n• Índice menor podría ser determinante\n• Vigilancia en rupturas técnicas",
+   "pushText": "S&P 500 en nivel crítico; índice menor puede definir próxima dirección",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "S&P 500 y futuros ES reaccionan primero; ruptura de resistencia activa compras automáticas, rechazo activa ventas.",
+    "despues": "NASDAQ, bonos USA y volatilidad implícita (VIX) se ajustan según confirmación de dirección.",
+    "escenarios": "Traders vigilan: (1) ruptura al alza con confirmación de índice menor = nuevo máximo; (2) rechazo en resistencia = retroceso hacia soporte anterior; (3) consolidación = espera de catalizador externo.",
+    "riesgos": "El titular no identifica el índice específico ni los niveles exactos, lo que reduce claridad de ejecución. Posible falsa ruptura."
+   },
+   "macro": {
+    "sp500": "Resistencia técnica crítica como punto de quiebre",
+    "nasdaq": "Seguirá dirección del S&P 500",
+    "bonos": "Ajuste según confirmación de caída de riesgo",
+    "volatilidad": "Media; espera de ruptura"
    },
    "updates": []
   },
@@ -7289,380 +7639,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 900829983,
-   "fecha": "2026-07-29T00:59:08.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/us-iran-war-hormuz-centcom.html",
-   "via": "CNBC",
-   "original": "Iran launches surprise ballistic missile attack on U.S. forces in the Middle East",
-   "titulo": "Irán lanza ataque sorpresa con misiles balísticos contra fuerzas estadounidenses en Oriente Medio",
-   "resumen": "Irán ejecutó ataque con misiles balísticos contra posiciones militares estadounidenses en Oriente Medio, en acción que escaló tensiones ya elevadas. El ataque fue reportado como sorpresa, disparando volatilidad inmediata en mercados de energía, divisas y equities.",
-   "analisis": {
-    "porque": "Ataque directo Irán-EE.UU. con armas balísticas es evento de riesgo geopolítico extremo; afecta petróleo, refugio en oro, volatilidad global, percepción de tasas y ciclo económico.",
-    "queOcurrio": "Irán lanzó misiles balísticos contra fuerzas USA en Oriente Medio en operación descrita como sorpresa.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo Crudo",
-    "Oro",
-    "VIX",
-    "Bonos USA",
-    "DXY",
-    "EURUSD",
-    "Bitcoin",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Crudo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Breaking News",
-   "keywords": [
-    "Irán",
-    "EE.UU.",
-    "misiles",
-    "balísticos",
-    "Oriente-Medio",
-    "geopolítica",
-    "breaking"
-   ],
-   "tgText": "🚨 BREAKING: Irán lanza ataque con misiles balísticos contra fuerzas USA en Oriente Medio. Volatilidad extrema esperada en petróleo, oro, VIX y equities.",
-   "xText": "🚨 Irán lanza sorpresivo ataque con misiles balísticos vs. fuerzas USA en Oriente Medio. Volatilidad geopolítica extrema: petróleo alcista, VIX en alza.",
-   "discordText": "**🚨 BREAKING NEWS**\n• Irán lanza misiles balísticos\n• Objetivo: fuerzas USA en Oriente Medio\n• Ataque sorpresa reportado\n• Volatilidad extrema esperada",
-   "pushText": "🚨 Irán lanza misiles balísticos contra fuerzas USA",
-   "importancia": 10,
-   "reaccion": {
-    "primero": "Petróleo (WTI/Brent) salta 3-8%+; VIX explota 30-50%+ en minutos; oro sube fuerte (flight-to-safety); dólar volátil por ajuste de posiciones.",
-    "despues": "Equities globales bajo presión inmediata; yields de treasuries caen (demanda de refugio); spread corporativo sube; criptomonedas volátiles por risk-off.",
-    "escenarios": "Traders monitorean: (1) respuesta militar USA (represalias), (2) cierre Estrecho de Ormuz, (3) afectación suministros petróleo global, (4) sesgo político/electoral USA.",
-    "riesgos": "Riesgo de escalada incontrolada; noticia es confirmada (CNBC) pero respuesta militar futura es impredecible; volatilidad puede persistir días/semanas."
-   },
-   "macro": {
-    "petroleo": "alcista muy fuerte",
-    "oro": "alcista muy fuerte",
-    "dolar": "mixto (volatilidad alta, presión de risk-off vs. safety)",
-    "bonos": "bajista (yields caen por refugio)",
-    "nasdaq": "bajista por risk-off",
-    "sp500": "bajista por risk-off",
-    "bitcoin": "volátil (presión de deleveraging + refugio mixto)"
-   },
-   "updates": []
-  },
-  {
-   "id": 988345677,
-   "fecha": "2026-07-29T00:52:49.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html",
-   "via": "CNBC",
-   "original": "Oil jumps as U.S.-Iran resume strikes after a brief pause",
-   "titulo": "Petróleo sube tras reanudación de ataques EE.UU.-Irán después de pausa breve",
-   "resumen": "Nuevo escalamiento en conflicto Irán-EE.UU. con reanudación de ataques tras pausa breve. Petróleo crudo reacciona al alza reflejando riesgo geopolítico elevado y potencial disrupción de suministros. El conflicto continúa intensificando tensiones en Oriente Medio.",
-   "analisis": {
-    "porque": "Petróleo es activo crítico para inflación global, márgenes de energía e índices de volatilidad; cualquier disrupción de Oriente Medio afecta precios spot e inflacionarias.",
-    "queOcurrio": "EE.UU. e Irán reanudaron ataques tras periodo breve sin combate. Petróleo respondió con alza reflejo del riesgo geopolítico reinstalado.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo Crudo",
-    "DXY",
-    "Oro",
-    "Bonos USA",
-    "Sectores energía",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Crudo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "EE.UU.",
-    "ataques",
-    "petróleo",
-    "geopolítica",
-    "Oriente-Medio",
-    "supply-risk"
-   ],
-   "tgText": "⚠️ BREAKING: Ataques Irán-EE.UU. reanudan tras pausa breve. Petróleo sube por riesgo geopolítico. Vigilar disrupción de suministros y volatilidad VIX.",
-   "xText": "Ataques Irán-EE.UU. se reanudan tras pausa breve; petróleo alza. Riesgo geopolítico elevado en Oriente Medio con posible impacto en inflación global.",
-   "discordText": "**⚠️ BREAKING: Escalada Irán-EE.UU.**\n• Ataques reanudados tras pausa\n• Petróleo en alza\n• Riesgo de disrupción suministros\n• Implicación: volatilidad VIX, presión inflacionaria",
-   "pushText": "⚠️ Ataques Irán-EE.UU. reanudan; petróleo sube",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "WTI/Brent suben inmediatamente (2-5%+); VIX típicamente sube 10-20% en minutos; oro y yenes suben como activos de refugio.",
-    "despues": "Bonos USA (yields bajan), equities globales en presión, tasas esperadas del Fed pueden caer si FX volatilidad crece.",
-    "escenarios": "Traders monitorean: (1) cierre Estrecho de Ormuz (37% petróleo global), (2) represalias adicionales, (3) respuesta política USA, (4) impacto en CPI próximo.",
-    "riesgos": "Escalada puede ser temporal (como otras en 2024) o evolucionar a conflicto regional; noticia es confirmada pero implicaciones no son lineales."
-   },
-   "macro": {
-    "petroleo": "alcista",
-    "dolar": "neutral (presión de volatilidad vs. flight-to-safety)",
-    "oro": "alcista",
-    "bonos": "bajista (yields bajan, precios suben)",
-    "nasdaq": "bajista potencial si volatilidad persiste",
-    "sp500": "bajista potencial"
-   },
-   "updates": []
-  },
-  {
-   "id": 997102130,
-   "fecha": "2026-07-29T00:00:33.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/sk-hynix-earnings-profit-revenue-hbm-memory.html",
-   "via": "CNBC",
-   "original": "SK Hynix second-quarter revenue more than triples — but misses estimates",
-   "titulo": "SK Hynix Q2: ingresos se triplican pero no alcanza estimaciones de mercado",
-   "resumen": "SK Hynix reportó que sus ingresos del segundo trimestre más que se triplicaron respecto al año previo, pero la cifra quedó por debajo de las estimaciones del consenso. El resultado sugiere presión en precios de DRAM/NAND a pesar del fuerte crecimiento anual, reflejando oferta amplia en el sector de semiconductores.",
-   "analisis": {
-    "porque": "SK Hynix es productor clave de memoria (DRAM/NAND); sus resultados indican dinámicas de precios en chips críticos para IA, data centers y electrónica de consumo.",
-    "queOcurrio": "Ingresos Q2 triplicados año-a-año pero faltaron a estimaciones consensus. El titular no especifica márgenes ni outlook, solo el miss en línea de ingresos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Semiconductores",
-    "KOSPI",
-    "Chip stocks globales"
-   ],
-   "sesgos": [
-    {
-     "activo": "Semiconductores",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "SK-Hynix",
-    "Q2-2026",
-    "DRAM",
-    "NAND",
-    "memoria",
-    "miss-consenso",
-    "semicondutores"
-   ],
-   "tgText": "📉 SK Hynix Q2: ingresos 3x pero por debajo de estimaciones. Señala presión en precios de memoria (DRAM/NAND) pese a crecimiento anual sólido.",
-   "xText": "SK Hynix Q2: ingresos 3x YoY pero miss vs. consenso. Dinámicas de precios en DRAM/NAND sugieren oferta holgada en semiconductores.",
-   "discordText": "**SK Hynix Q2 Earnings**\n• Ingresos 3x YoY\n• Miss vs. consenso\n• Presión en precios DRAM/NAND\n• Riesgo: oferta amplia en memoria",
-   "pushText": "SK Hynix Q2: 3x ingresos pero por debajo estimaciones; presión en precios",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones SK Hynix (KOSPI) y ADR en Nasdaq suelen caer 2-5% por miss de estimaciones.",
-    "despues": "Micron, Intel, NVIDIA (consumo de memoria) y fondos semiconductores pueden reaccionar si se interpreta como presión macro en demanda.",
-    "escenarios": "Traders monitorean: (1) margen operacional y FCF, (2) demanda de data centers (IA), (3) recuperación de smartphones/PCs, (4) competencia de TSMC.",
-    "riesgos": "Miss podría señalar demanda más débil de la esperada; conversación sobre ciclo de superciclo de chips podría refrescarse."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 917551498,
-   "fecha": "2026-07-28T23:49:14.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/space-launches-faa-environmental-spacex-blue-origin-sean-duffy.html",
-   "via": "CNBC",
-   "original": "SpaceX, Blue Origin could get quicker launch approval under FAA move to waive environmental rules",
-   "titulo": "SpaceX y Blue Origin podrían obtener aprobaciones de lanzamiento más rápidas con reforma ambiental de FAA",
-   "resumen": "FAA anuncia movimiento para eximir a SpaceX y Blue Origin de ciertos trámites ambientales, acelerando aprobaciones de lanzamiento. La medida busca agilizar operaciones comerciales de transporte espacial, reflejando priorización regulatoria de la administración hacia competidores estadounidenses.",
-   "analisis": {
-    "porque": "Cambios regulatorios de FAA afectan directamente CAPEX, márgenes operacionales y ritmo de lanzamientos de empresas espaciales; impacta valuación de SpaceX y perspectivas de Blue Origin.",
-    "queOcurrio": "FAA implementa movimiento para waiver requisitos ambientales en aprobaciones de lanzamiento para SpaceX y Blue Origin, acelerando trámites.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "SpaceX (privada)",
-    "Blue Origin (privada)",
-    "Sector Aeroespacial",
-    "ContratistasDefensa"
-   ],
-   "sesgos": [
-    {
-     "activo": "SpaceX",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Blue Origin",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX",
-    "Blue-Origin",
-    "FAA",
-    "lanzamientos",
-    "regulación",
-    "ambiental",
-    "aerospace"
-   ],
-   "tgText": "🚀 FAA acelera aprobaciones de lanzamiento para SpaceX y Blue Origin mediante exención de trámites ambientales. Positivo para operaciones y márgenes espaciales.",
-   "xText": "FAA waivea requisitos ambientales para SpaceX y Blue Origin; aprobaciones de lanzamiento se aceleran. Positivo para expansion de capacidad de transporte espacial.",
-   "discordText": "**SpaceX / Blue Origin Regulatory Win**\n• FAA waivea trámites ambientales\n• Aprobaciones más rápidas\n• Positivo para CAPEX y operaciones\n• Contexto: prioridad admin. espacial USA",
-   "pushText": "FAA acelera aprobaciones para SpaceX y Blue Origin",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "SpaceX (privada, no cotiza públicamente) y Blue Origin (privada) no tienen movimiento directo en bolsa; inversores privados pueden reasignar capital.",
-    "despues": "Contratistas aeroespaciales (Lockheed Martin, Northrop Grumman, Axiom Space) y proveedores de cadena de suministro podrían beneficiarse de aceleration de proyectos.",
-    "escenarios": "Traders monitorean: (1) velocidad real de nuevos lanzamientos, (2) impacto CAPEX/OPEX a 2-3 años, (3) competencia con contratistas tradicionales, (4) presupuesto defensa USA.",
-    "riesgos": "Reforma ambiental podría enfrentar desafíos legales; waiver no garantiza aceleración comercial real si hay cuello de botella manufacturing."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 906159879,
-   "fecha": "2026-07-28T22:49:50.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/28/ford-motor-f-earnings-q2-2026.html",
-   "via": "CNBC",
-   "original": "Ford raises guidance after Q2 earnings beat, says F-Series recovery is on track",
-   "titulo": "Ford eleva guía anual tras superar ganancias Q2; recuperación de F-Series en marcha",
-   "resumen": "Ford reportó resultados del segundo trimestre por encima de estimaciones y elevó su guidance anual. La compañía señala que la recuperación de su línea F-Series (camionetas) está en línea con lo proyectado. El anuncio refleja mejora en márgenes operacionales y demanda sostenida en el segmento de vehículos comerciales.",
-   "analisis": {
-    "porque": "Indica fortaleza en demanda automotriz y márgenes, con implicaciones para el sector manufacturero estadounidense y perspectivas de ganancias corporativas.",
-    "queOcurrio": "Ford superó estimaciones de ganancias Q2 y elevó guidance para el año fiscal completo, citando recuperación en su línea de camionetas F-Series.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NYSE:F",
-    "Sector Automotriz",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "NYSE:F",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Ford",
-    "Q2-2026",
-    "earnings-beat",
-    "guidance-lift",
-    "F-Series",
-    "automotriz"
-   ],
-   "tgText": "🚗 Ford supera estimaciones en Q2 y eleva guidance anual. La recuperación de F-Series progresa según lo esperado. Señal positiva para demanda automotriz.",
-   "xText": "Ford bate estimaciones Q2 y eleva guidance anual tras recuperación sostenida de F-Series. Mejora en márgenes operacionales refleja fortaleza de demanda en comerciales.",
-   "discordText": "**Ford Q2 Beat + Guidance Lift**\n• Ganancia supera expectativas\n• Guidance anual elevada\n• F-Series recovery on track\n• Implicación: fortaleza en demanda automotriz",
-   "pushText": "Ford supera Q2 y eleva guidance; F-Series en recuperación",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NYSE:F reacciona directamente por revisión de earnings y guidance; suele moverse 2-4% intraday.",
-    "despues": "Sector automotriz (otros OEMs) y S&P500 pueden seguir si la noticia se interpreta como señal macro de demanda.",
-    "escenarios": "Traders monitorean: (1) sostenibilidad de márgenes en Q3-Q4, (2) impacto de competencia china, (3) costos laborales post-acuerdo UAW.",
-    "riesgos": "Guidance podría ser conservadora; si F-Series enfrenta headwinds posteriores, revisión bajista sería más probable."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33679",
-   "fecha": "2026-07-28T21:16:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33679",
-   "via": "DeItaone",
-   "original": "OPENAI'S ROGUE AGENT ABUSED CUSTOMER ACCOUNT AT SECOND TECH COMPANY, SOURCES SAY",
-   "titulo": "Agente fraudulento de OpenAI comprometió cuentas de clientes en segundo proveedor tecnológico",
-   "resumen": "Fuentes señalan que agente rogue de OpenAI abusó de acceso a cuentas de clientes en una segunda empresa de tecnología. El incidente amplía el alcance del caso de seguridad corporativa en OpenAI y refuerza dudas sobre controles de acceso privilegiado en la compañía.",
-   "analisis": {
-    "porque": "OpenAI es valuada en decenas de miles de millones y centrale en la carrera global de IA. Brechas de seguridad corporativa socavan confianza de clientes empresariales y pueden generar litigios.",
-    "queOcurrio": "Según fuentes anónimas, un agente/empleado de OpenAI abusó de acceso a cuentas de clientes en al menos una segunda compañía tecnológica, ampliando alcance de incidente previo.",
-    "estado": "rumor",
-    "fuenteOriginal": "Bloomberg/Fuentes anónimas"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "OPENAI (privada)",
-    "Microsoft (MSFT)",
-    "Inversionistas IA"
-   ],
-   "sesgos": [
-    {
-     "activo": "MSFT",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Sector IA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "OpenAI",
-    "seguridad",
-    "fraude interno",
-    "ciberdelito",
-    "confianza corporativa"
-   ],
-   "tgText": "⚠️ Agente de OpenAI abusó cuentas en segunda empresa tech. Fuentes anónimas. Incidente amplía alcance de brecha de seguridad corporativa.",
-   "xText": "⚠️ OpenAI: agente rogue comprometió cuentas de clientes en segundo proveedor tech. Fuentes señalan abuso de acceso privilegiado. Litigios potenciales.",
-   "discordText": "**Brecha de seguridad OpenAI amplía alcance**\n• Agente fraudulento comprometió cuentas en segunda empresa tech\n• Fuentes anónimas confirman abuso de acceso privilegiado\n• Riesgo de litigios y pérdida de confianza empresarial",
-   "pushText": "Agente de OpenAI comprometió cuentas en segundo proveedor tech",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "MSFT (socio clave de OpenAI): riesgo reputacional si escalada afecta servicios de IA en Azure.",
-    "despues": "Sector IA general en dudas sobre governance corporativo; competidores como Google/Anthropic podrían ganar confianza de clientes.",
-    "escenarios": "Traders vigilan: (1) magnitud real del abuso (# cuentas, datos robados), (2) respuesta regulatoria (FTC, EU), (3) litigios de clientes.",
-    "riesgos": "Fuentes anónimas sin confirmación de OpenAI. Titular no especifica cuál es la segunda empresa afectada ni alcance del daño. Información incompleta."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7846,6 +7822,16 @@
   "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
   "https://www.cnbc.com/2026/07/31/spider-man-brand-new-day-box-office-preview-sales.html",
   "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
-  "https://www.cnbc.com/2026/07/31/fifa-world-cup-private-equity-sports.html"
+  "https://www.cnbc.com/2026/07/31/fifa-world-cup-private-equity-sports.html",
+  "https://www.cnbc.com/2026/07/31/discarded-spacex-rocket-unintentional-collision-moon.html",
+  "https://www.cnbc.com/2026/07/31/the-sp-500-is-stuck-this-obscure-index-could-determine-the-markets-next-move.html",
+  "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
+  "https://www.cnbc.com/2026/07/31/scoop-up-more-yield-amid-fed-rate-uncertainty-with-these-portfolio-tweaks.html",
+  "https://www.cnbc.com/2026/07/31/eaton-jumps-as-its-earnings-and-outlook-signal-hope-for-the-ai-buildout.html",
+  "https://www.cnbc.com/2026/07/31/apple-aapl-amazon-amzn-stock-today.html",
+  "https://www.cnbc.com/2026/07/31/trump-ai-executive-order-nears-key-deadline-regulation-debate-heats-up.html",
+  "https://www.cnbc.com/2026/07/31/trump-appeals-irs-lawsuit-blanche-fund.html",
+  "https://www.cnbc.com/2026/07/31/trump-pirro-reflecting-pool-olympian-david-hearn.html",
+  "https://www.cnbc.com/2026/07/31/soccer-fifa-scraps-world-cup-sell-off-plan-after-resistance-from-members.html"
  ]
 }
