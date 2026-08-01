@@ -1,7 +1,103 @@
 {
- "lastId": 33829,
- "actualizado": "2026-08-01T17:44:29.255Z",
+ "lastId": 33830,
+ "actualizado": "2026-08-01T21:05:26.457Z",
  "items": [
+  {
+   "id": "33821",
+   "fecha": "2026-07-31T16:26:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33821",
+   "via": "DeItaone",
+   "original": "*TRUMP SAYS IRAN LIED DURING NEGOTIATIONS *TRUMP SAYS IRAN FIRED FIVE MISSILES AT JORDAN",
+   "titulo": "Trump: Irán disparó cinco misiles contra Jordania; acusa incumplimiento en negociaciones",
+   "resumen": "El presidente Trump acusó a Irán de disparar cinco misiles contra Jordania y de mentir durante negociaciones diplomáticas. Allegación marca nuevo punto de escalada tras horas de retórica mixta (presión/diplomacia). El titular no especifica daños o contexto temporal exacto.",
+   "analisis": {
+    "porque": "Alegación concreta de acción militar directa representa escalada inmediata de conflicto. Si verificada, impacta dramaticamente precios de petróleo, activos defensivos, y evaluación de probabilidad de conflicto regional ampliado.",
+    "queOcurrio": "Trump acusó a Irán de disparar cinco misiles contra Jordania y de incumplimiento en negociaciones, sin especificar daños o verifiación independiente.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "muy alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "S&P 500",
+    "Bonos",
+    "DXY",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Misiles",
+    "Jordania",
+    "Conflicto",
+    "Escalada",
+    "Trump",
+    "Oriente Medio"
+   ],
+   "tgText": "🚨 BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania. Escalada militar directa tras horas de retórica mixta. Petróleo y oro en alerta máxima.",
+   "xText": "BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania e incumplir negociaciones. Escalada geopolítica inmediata impacta precios de petróleo y oro.",
+   "discordText": "**🚨 BREAKING: Escalada en Oriente Medio**\n• Trump: Irán disparó 5 misiles contra Jordania\n• Acusa incumplimiento en negociaciones\n• Marca nuevo punto de tensión directa\n• Petróleo y oro en alerta de volatilidad máxima",
+   "pushText": "BREAKING: Irán disparó 5 misiles contra Jordania (según Trump)",
+   "importancia": 10,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent: reacción alcista INMEDIATA si acusación se verifica; riesgo de ruptura de flujos por Golfo Pérsico",
+    "despues": "Oro (demanda defensiva), bonos (búsqueda de seguridad), S&P 500 (sesgo bajista por aversión al riesgo), DXY (fortalecimiento del dólar como activo seguro)",
+    "escenarios": "Traders vigilan URGENTE: (1) Verificación independiente de ataques misiles (Jordania, Israel, Arabia Saudita), (2) Cantidad de daños y confirmar si fueron interceptados, (3) Respuesta militar estadounidense/israelí (probabilidad muy elevada), (4) Impacto en flujos de petróleo del Golfo Pérsico (clausura del Estrecho de Ormuz = escenario extremo), (5) Extensión del conflicto a aliados de Irán (Hezbolá, militias proxy), (6) Reacción de China y Rusia",
+    "riesgos": "CRÍTICO: Verificación de allegación no disponible en tiempo real; titulares posteriores podrían refutar; reversión rápida si Trump aclara que misiles fueron interceptados sin daños; riesgo de conflicto regional ampliado si respuesta militar es desproporcionada"
+   },
+   "macro": {
+    "petroleo": "alcista muy significativo si acusación se verifica; escenario de $120+ por barril posible",
+    "oro": "alcista por demanda defensiva",
+    "dolar": "alcista por seguridad relativa",
+    "nasdaq": "bajista por aversión al riesgo",
+    "sp500": "bajista por aversión al riesgo",
+    "bonos": "alcistas (búsqueda de seguridad)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-01T20:30:48+00:00",
+     "id": "33830",
+     "texto": "El ministro de Relaciones Exteriores de Irán comunicó por teléfono a su homólogo saudí que cualquier «agresión» de Estados Unidos e Israel, o participación de países regionales, será respondida con una «respuesta decisiva». El aviso se produce después de reportes sobre tensiones militares en Oriente Medio y disparos de misiles iraníes documentados previamente.",
+     "tgUrl": "https://t.me/walterbloomberg/33830"
+    },
+    {
+     "fecha": "2026-07-31T22:17:48+00:00",
+     "id": "33825",
+     "texto": "Senior security official iraní condenó vía TASNIM reportes de potenciales ataques estadounidenses e israelíes a infraestructuras iraníes, calificándolos como 'forma de imprudencia'. Declaración refuerza posición combativa y señala preparación para respuesta. Contexto: escalada tras reportes de disparos iraníes contra Jordania.",
+     "tgUrl": "https://t.me/walterbloomberg/33825"
+    },
+    {
+     "fecha": "2026-07-31T22:19:25+00:00",
+     "id": "33826",
+     "texto": "Funcionario iraní senior confirmó que plan de respuesta incluye infraestructuras críticas de Israel y energética estadounidense en la región. Escala amenaza tras reporte de posibles ataques de EE.UU. e Israel a infraestructuras iraníes. Declaración de TASNIM (agencia estatal iraní) eleva tensión geopolítica y riesgos de disrupción en mercados energéticos globales.",
+     "tgUrl": "https://t.me/walterbloomberg/33826"
+    },
+    {
+     "fecha": "2026-07-31T20:56:57+00:00",
+     "id": "33823",
+     "texto": "Washington e Israel coordinan una campaña potencial contra objetivos de energía en Irán, con posibles operaciones este fin de semana según CBS. Trump aún no ha dado aprobación final. Los funcionarios evalúan el impacto económico y coordinan para completar operaciones antes de la apertura de mercados del lunes. White House y autoridades israelíes alinean planes operacionales.",
+     "tgUrl": "https://t.me/walterbloomberg/33823"
+    }
+   ],
+   "actualizado": "2026-08-01T20:30:48+00:00"
+  },
   {
    "id": "33827",
    "fecha": "2026-08-01T07:48:11+00:00",
@@ -866,96 +962,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33821",
-   "fecha": "2026-07-31T16:26:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33821",
-   "via": "DeItaone",
-   "original": "*TRUMP SAYS IRAN LIED DURING NEGOTIATIONS *TRUMP SAYS IRAN FIRED FIVE MISSILES AT JORDAN",
-   "titulo": "Trump: Irán disparó cinco misiles contra Jordania; acusa incumplimiento en negociaciones",
-   "resumen": "El presidente Trump acusó a Irán de disparar cinco misiles contra Jordania y de mentir durante negociaciones diplomáticas. Allegación marca nuevo punto de escalada tras horas de retórica mixta (presión/diplomacia). El titular no especifica daños o contexto temporal exacto.",
-   "analisis": {
-    "porque": "Alegación concreta de acción militar directa representa escalada inmediata de conflicto. Si verificada, impacta dramaticamente precios de petróleo, activos defensivos, y evaluación de probabilidad de conflicto regional ampliado.",
-    "queOcurrio": "Trump acusó a Irán de disparar cinco misiles contra Jordania y de incumplimiento en negociaciones, sin especificar daños o verifiación independiente.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "muy alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "S&P 500",
-    "Bonos",
-    "DXY",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Misiles",
-    "Jordania",
-    "Conflicto",
-    "Escalada",
-    "Trump",
-    "Oriente Medio"
-   ],
-   "tgText": "🚨 BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania. Escalada militar directa tras horas de retórica mixta. Petróleo y oro en alerta máxima.",
-   "xText": "BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania e incumplir negociaciones. Escalada geopolítica inmediata impacta precios de petróleo y oro.",
-   "discordText": "**🚨 BREAKING: Escalada en Oriente Medio**\n• Trump: Irán disparó 5 misiles contra Jordania\n• Acusa incumplimiento en negociaciones\n• Marca nuevo punto de tensión directa\n• Petróleo y oro en alerta de volatilidad máxima",
-   "pushText": "BREAKING: Irán disparó 5 misiles contra Jordania (según Trump)",
-   "importancia": 10,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent: reacción alcista INMEDIATA si acusación se verifica; riesgo de ruptura de flujos por Golfo Pérsico",
-    "despues": "Oro (demanda defensiva), bonos (búsqueda de seguridad), S&P 500 (sesgo bajista por aversión al riesgo), DXY (fortalecimiento del dólar como activo seguro)",
-    "escenarios": "Traders vigilan URGENTE: (1) Verificación independiente de ataques misiles (Jordania, Israel, Arabia Saudita), (2) Cantidad de daños y confirmar si fueron interceptados, (3) Respuesta militar estadounidense/israelí (probabilidad muy elevada), (4) Impacto en flujos de petróleo del Golfo Pérsico (clausura del Estrecho de Ormuz = escenario extremo), (5) Extensión del conflicto a aliados de Irán (Hezbolá, militias proxy), (6) Reacción de China y Rusia",
-    "riesgos": "CRÍTICO: Verificación de allegación no disponible en tiempo real; titulares posteriores podrían refutar; reversión rápida si Trump aclara que misiles fueron interceptados sin daños; riesgo de conflicto regional ampliado si respuesta militar es desproporcionada"
-   },
-   "macro": {
-    "petroleo": "alcista muy significativo si acusación se verifica; escenario de $120+ por barril posible",
-    "oro": "alcista por demanda defensiva",
-    "dolar": "alcista por seguridad relativa",
-    "nasdaq": "bajista por aversión al riesgo",
-    "sp500": "bajista por aversión al riesgo",
-    "bonos": "alcistas (búsqueda de seguridad)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-31T22:17:48+00:00",
-     "id": "33825",
-     "texto": "Senior security official iraní condenó vía TASNIM reportes de potenciales ataques estadounidenses e israelíes a infraestructuras iraníes, calificándolos como 'forma de imprudencia'. Declaración refuerza posición combativa y señala preparación para respuesta. Contexto: escalada tras reportes de disparos iraníes contra Jordania.",
-     "tgUrl": "https://t.me/walterbloomberg/33825"
-    },
-    {
-     "fecha": "2026-07-31T22:19:25+00:00",
-     "id": "33826",
-     "texto": "Funcionario iraní senior confirmó que plan de respuesta incluye infraestructuras críticas de Israel y energética estadounidense en la región. Escala amenaza tras reporte de posibles ataques de EE.UU. e Israel a infraestructuras iraníes. Declaración de TASNIM (agencia estatal iraní) eleva tensión geopolítica y riesgos de disrupción en mercados energéticos globales.",
-     "tgUrl": "https://t.me/walterbloomberg/33826"
-    },
-    {
-     "fecha": "2026-07-31T20:56:57+00:00",
-     "id": "33823",
-     "texto": "Washington e Israel coordinan una campaña potencial contra objetivos de energía en Irán, con posibles operaciones este fin de semana según CBS. Trump aún no ha dado aprobación final. Los funcionarios evalúan el impacto económico y coordinan para completar operaciones antes de la apertura de mercados del lunes. White House y autoridades israelíes alinean planes operacionales.",
-     "tgUrl": "https://t.me/walterbloomberg/33823"
-    }
-   ],
-   "actualizado": "2026-07-31T22:17:48+00:00"
   },
   {
    "id": "912170525",
