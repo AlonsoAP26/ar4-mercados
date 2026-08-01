@@ -1,7 +1,248 @@
 {
  "lastId": 33829,
- "actualizado": "2026-08-01T14:16:28.047Z",
+ "actualizado": "2026-08-01T17:44:29.255Z",
  "items": [
+  {
+   "id": "33827",
+   "fecha": "2026-08-01T07:48:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33827",
+   "via": "DeItaone",
+   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
+   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
+   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "analisis": {
+    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
+    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Carry Trades",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "intervención-divisas",
+    "yen-japón",
+    "usdjpy",
+    "tesoro-usa",
+    "banco-central-japón",
+    "carry-trades"
+   ],
+   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
+   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
+   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
+   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
+    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
+    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
+    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+   },
+   "macro": {
+    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
+    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
+    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
+    "dow": "neutral a alcista por debilitamiento de dólar",
+    "sp500": "neutral a alcista por debilitamiento de dólar",
+    "bitcoin": "alcista potencial por debilitamiento de dólar",
+    "ethereum": "alcista potencial por debilitamiento de dólar",
+    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
+    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-01T15:44:08.000Z",
+     "id": "969625772",
+     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
+     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
+    }
+   ],
+   "actualizado": "2026-08-01T15:44:08.000Z"
+  },
+  {
+   "id": "945498443",
+   "fecha": "2026-08-01T14:41:54.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/-berkshire-hathaway-shares-hit-eight-month-high.html",
+   "via": "CNBC",
+   "original": "Berkshire Hathaway shares hit eight-month high",
+   "titulo": "Acciones de Berkshire Hathaway alcanzan máximo de ocho meses",
+   "resumen": "Berkshire Hathaway toca nuevo máximo de ocho meses. El movimiento refleja confianza en la gestión de Buffett ante volatilidad macroeconómica. Sin contexto específico del titular sobre catalizador, el movimiento sugiere fortaleza relativa de defensivos de calidad.",
+   "analisis": {
+    "porque": "BRK.B es termómetro de confianza en defensivos; máximo de 8 meses en contexto de volatilidad indica que inversores buscan calidad y dividend. Señal bullish para acciones value/defensivas.",
+    "queOcurrio": "Acciones de Berkshire Hathaway alcanzan máximo de ocho meses. El titular no especifica catalizador concreto.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "BRK.B",
+    "S&P500",
+    "Dow Jones",
+    "Value stocks"
+   ],
+   "sesgos": [
+    {
+     "activo": "BRK.B",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Value stocks",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Berkshire Hathaway",
+    "BRK.B",
+    "máximo",
+    "defensivos",
+    "value"
+   ],
+   "tgText": "📈 Berkshire Hathaway toca máximo de 8 meses. Fortaleza en defensivos de calidad. Confianza en gestión Buffett. CNBC.",
+   "xText": "BRK.B en máximo de 8 meses. Señal alcista para defensivos y value stocks en contexto de volatilidad macro. Confianza en calidad. #Berkshire",
+   "discordText": "**Empresas**\n• Berkshire Hathaway: máximo de 8 meses\n• BRK.B alcista\n• Fortaleza relativa de defensivos\n📈 Value stocks ganando confianza",
+   "pushText": "BRK.B toca máximo: defensivos en alza.",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "BRK.B sube, otros defensivos (utilities, consumo esencial) pueden seguir.",
+    "despues": "Posible rotación de growth a value si la tendencia continúa; spreads credit defensivos podrían mejorar.",
+    "escenarios": "Traders vigilan: (1) si es breakout técnico o reversión temporal, (2) flujos hacia value vs. growth, (3) nivel de soporte si hay pullback.",
+    "riesgos": "Máximo sin contexto; podría ser ruido técnico. Si hay corrección mayor en equities, BRK.B podría ceder junto con defensivos."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "989473142",
+   "fecha": "2026-08-01T14:17:57.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/trump-medias-new-data-service-gives-faster-access-to-trumps-posts.html",
+   "via": "CNBC",
+   "original": "Trump Media&apos;s new paid data service goes live, giving clients faster access to Trump’s posts",
+   "titulo": "Trump Media lanza servicio de datos pagado con acceso prioritario a posts",
+   "resumen": "Trump Media activa nuevo servicio de datos pagado que ofrece a clientes acceso más rápido a posts de Trump. Monetización de la plataforma genera ingresos nuevos pero permanece bajo escrutinio sobre viabilidad de modelo de negocio.",
+   "analisis": {
+    "porque": "Trump Media intenta diversificar ingresos más allá de publicidad. Servicio de datos pagado podría mejorar rentabilidad, pero escalabilidad y demanda real son inciertas. Afecta valuación de DJT si genera cash positivo.",
+    "queOcurrio": "Trump Media pone en funcionamiento nuevo servicio de datos pagado que prioriza acceso a posts de Trump para suscriptores.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "DJT",
+    "Social media stocks",
+    "Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "DJT",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Trump Media",
+    "DJT",
+    "monetización",
+    "datos",
+    "servicio pagado"
+   ],
+   "tgText": "💼 Trump Media lanza servicio de datos pagado: acceso prioritario a posts. Intenta diversificar ingresos. DJT volatilidad. CNBC.",
+   "xText": "Trump Media activa nuevo servicio de datos pagado. Intento de monetización más allá de publicidad tradicional. Impacto en DJT todavía incierto. #TrumpMedia",
+   "discordText": "**Empresas**\n• Trump Media: servicio de datos pagado en vivo\n• Acceso prioritario a posts\n• Estrategia: diversificar ingresos\n⚖️ Viabilidad de modelo aún por probar",
+   "pushText": "Trump Media: nuevo servicio de datos pagado lanzado.",
+   "importancia": 3,
+   "reaccion": {
+    "primero": "DJT puede ser volátil; inversores evalúan viabilidad del modelo de negocio.",
+    "despues": "Si genera traction real (subscribers), positivo para cash flow; si falla, presión sobre DJT.",
+    "escenarios": "Traders vigilan: (1) número de suscriptores iniciales, (2) ARPU (ingresos por usuario), (3) si es scalable o niche, (4) impacto en publicidad tradicional.",
+    "riesgos": "Demanda real de este servicio es muy incierta; podría ser marketing más que monetización efectiva. Trump Media sigue bajo presión de viabilidad fundamental."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "921007803",
+   "fecha": "2026-08-01T14:10:03.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/uber-waymo-autonomous-vehicle-regulation.html",
+   "via": "CNBC",
+   "original": "Within Uber-Waymo split, a key labor battle over AVs is being waged in the nation&apos;s capital",
+   "titulo": "Batalla laboral clave entre Uber-Waymo en capital USA sobre vehículos autónomos",
+   "resumen": "En el contexto del acuerdo Uber-Waymo, disputa laboral importante sobre regulación de vehículos autónomos se libra en Washington DC. Implicaciones para empleo en ride-sharing y automación laboral son críticas; resultado influye en capex y modelos de negocio de ambas compañías.",
+   "analisis": {
+    "porque": "Regulación de AVs afecta directamente capex, costos operativos y márgenes de Uber y Waymo. Batalla legislativa en DC determina si AVs escalan o se frenan; impacta empleo, costos y valuaciones tech.",
+    "queOcurrio": "Conflicto laboral entre Uber y Waymo sobre regulación de vehículos autónomos se negocia en la capital estadounidense, en paralelo al acuerdo comercial entre ambas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "UBER",
+    "GOOGL/Waymo",
+    "Nasdaq",
+    "Empleo USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "UBER",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "GOOGL",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Uber",
+    "Waymo",
+    "vehículos autónomos",
+    "regulación",
+    "empleo",
+    "labor"
+   ],
+   "tgText": "⚖️ Batalla laboral Uber-Waymo en Washington: regulación de AVs en juego. Impacto en empleo y costos operativos crítico. CNBC.",
+   "xText": "Regulación AVs bajo presión: Uber-Waymo libran batalla laboral en DC. Resultado define viabilidad de escalamiento y costos operativos. #Tecnología #Labor",
+   "discordText": "**Empresas - Regulación**\n• Uber vs. Waymo: batalla laboral en DC\n• Tema: vehículos autónomos\n• Stakes: empleo, regulación, capex\n⚙️ Resultado crítico para business models",
+   "pushText": "Uber-Waymo: batalla laboral sobre AVs en Washington.",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "UBER y GOOGL pueden ser volátiles si sale regulación desfavorable; restricciones en AVs presionan margenes.",
+    "despues": "Empleo (labor stocks defensivos si restricciones), opex de ride-sharing, valuaciones de Waymo/Alphabet ajustan.",
+    "escenarios": "Traders vigilan: (1) qué lado gana la batalla legislativa, (2) si restricciones retrasan AV scaling, (3) impacto en márgenes operativos, (4) costos de cumplimiento regulatorio.",
+    "riesgos": "Titular no especifica qué aspecto laboral exacto está en disputa; podría ser negociación administrativa sin impacto real en timeline de AVs."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "949862737",
    "fecha": "2026-08-01T13:44:01.000Z",
@@ -302,6 +543,68 @@
    "updates": []
   },
   {
+   "id": "938524239",
+   "fecha": "2026-08-01T12:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/open-ai-hugging-face-hack-cyber-warnings.html",
+   "via": "CNBC",
+   "original": "OpenAI&apos;s Hugging Face hack confirmed months of AI cyber warnings: &apos;Pandora&apos;s box is open&apos;",
+   "titulo": "Hack de Hugging Face en OpenAI confirma meses de alertas sobre ciberseguridad IA",
+   "resumen": "Confirmado incidente de ciberseguridad en Hugging Face (plataforma central para modelos IA abiertos). Expertos advierten que 'la caja de Pandora está abierta', reflejando preocupaciones de largo plazo sobre vulnerabilidades críticas en infraestructura IA que gobiernos y empresas no han contenido adecuadamente.",
+   "analisis": {
+    "porque": "Riesgo sistémico para la industria IA: si modelos fundamentales se comprometen, afecta toda la cadena de valor (cloud, hardware, aplicaciones). Justifica regulación más estricta y auditoría de costos IA.",
+    "queOcurrio": "Se confirmó hack en Hugging Face, plataforma de repositorio de modelos IA de código abierto. Expertos señalan que las advertencias sobre ciberseguridad IA se han ignorado durante meses.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NVDA",
+    "TSLA",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "Nasdaq"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "MSFT",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "ciberseguridad",
+    "IA",
+    "OpenAI",
+    "Hugging Face",
+    "hack",
+    "riesgo sistémico"
+   ],
+   "tgText": "🔓 Hack en Hugging Face confirmado: expertos alertan sobre vulnerabilidades críticas en infraestructura IA. Riesgo sistémico para Big Tech. CNBC.",
+   "xText": "Ciberseguridad IA: hack en Hugging Face confirma meses de advertencias ignoradas. 'Pandora's box abierta'. Impacto potencial en todo el ecosistema tech. #IA #CiberSeguridad",
+   "discordText": "**Ciberseguridad - IA**\n• Hack en Hugging Face confirmado\n• Infraestructura IA más expuesta de lo creído\n• Riesgo: regulación más estricta incoming\n⚠️ Presión en Big Tech inversores",
+   "pushText": "Hugging Face hackeada: ciberseguridad IA bajo presión.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "MSFT, GOOGL, AMZN presionadas (exponen sus modelos a riesgo); NVDA neutral (hardware no afectado directamente).",
+    "despues": "Bonos corporativos tech pueden ampliarse (spreads), sector cybersecurity (CrowdStrike, Palo Alto) podría subir, regulación se acelera.",
+    "escenarios": "Traders vigilan: (1) magnitud del hack (datos robados vs. acceso), (2) reacción regulatoria (nueva legislación IA), (3) costos de remediación en Big Tech, (4) Capex adicional en seguridad.",
+    "riesgos": "Titular no especifica qué datos se comprometieron; podría ser overblown si el hack es menor. Reacción de mercado depende de escalada regulatoria, no del incidente aislado."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
    "id": "951771643",
    "fecha": "2026-08-01T12:00:01.000Z",
    "tgUrl": "https://www.cnbc.com/2026/08/01/best-buy-ceo-jason-bonfig-smaller-stores.html",
@@ -349,6 +652,75 @@
     "riesgos": "Falta detalle del nuevo formato. Riesgo de que modelo no sea escalable o que cierre más stores de lo esperado (capex reduction vs. real retrenchment)."
    },
    "macro": null,
+   "updates": []
+  },
+  {
+   "id": "991041002",
+   "fecha": "2026-08-01T10:56:11.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/tankers-near-oman-come-under-fire.html",
+   "via": "CNBC",
+   "original": "Tankers near Oman come under fire as Iran threatens to choke off shipping routes",
+   "titulo": "Tanqueros cerca de Omán bajo fuego; Irán amenaza cerrar rutas de envío",
+   "resumen": "Buques cisterna en aguas cercanas a Omán reportan ataques mientras Irán intensifica amenazas sobre el Estrecho de Ormuz. La tensión geopolítica escala en una de las rutas comerciales más críticas para el petróleo global, afectando directamente el comercio marítimo internacional y los precios de energía.",
+   "analisis": {
+    "porque": "Cualquier disrupción del Estrecho de Ormuz impacta directamente precios de petróleo y gas, volatilizando energía, divisas y acciones defensivas. Afecta cadenas de suministro globales.",
+    "queOcurrio": "Incidentes de fuego contra tanqueros en zonas cercanas a Omán coinciden con advertencias iraníes de cerrar rutas comerciales marítimas estratégicas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "DXY",
+    "S&P500",
+    "Energía",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Ormuz",
+    "petróleo",
+    "geopolítica",
+    "tanqueros",
+    "shipping"
+   ],
+   "tgText": "⚠️ Tanqueros bajo fuego cerca de Omán. Irán amenaza cerrar Estrecho de Ormuz. Petróleo presionado al alza; riesgo supply global. CNBC.",
+   "xText": "Escalada crítica: ataques a tanqueros en Omán mientras Irán amenaza cerrar Ormuz. Petróleo en alerta máxima. Impacto geopolítico en suministros globales. #Petróleo #Geopolítica",
+   "discordText": "**Geopolítica - BREAKING**\n• Tanqueros bajo fuego cerca de Omán\n• Irán intensifica amenazas sobre Ormuz\n• Riesgo: disrupción supply petróleo\n📈 Petróleo alcista | 📉 Equities presionadas",
+   "pushText": "Irán amenaza Ormuz: tanqueros bajo fuego. Petróleo sube.",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI/Brent) reacciona inmediatamente por riesgo de supply; oro sigue como activo refugio ante tensión geopolítica.",
+    "despues": "Energetics (XLE, HOU), divisas (DXY sube), bonos (yields caen), acciones defensivas suben; equities globales se presionan.",
+    "escenarios": "Traders vigilan: (1) escalada real vs. amenaza retórica, (2) respuesta militar de USA/aliados, (3) confirmación de daño a infraestructura, (4) cierre efectivo de Ormuz.",
+    "riesgos": "Titulares de fuego sin verificación de daño; riesgo de falsa alarma que después corrija mercado bruscamente. Diálogo diplomático podría desescalar rápido."
+   },
+   "macro": {
+    "petroleo": "↑ alcista",
+    "oro": "↑ alcista",
+    "dolar": "↑ levemente alcista",
+    "nasdaq": "↓ presionado",
+    "sp500": "↓ presionado",
+    "bonos": "↑ yields caen (refugio)"
+   },
    "updates": []
   },
   {
@@ -493,78 +865,6 @@
     "riesgos": "Titular citado como confirmado por Bloomberg pero atribuido a 'advertencias de oficiales USA' sin fuente específica. Riesgo de sobrerreacción si se interpreta como cambio de política oficial. Escalada retórica típica no siempre implica acción inmediata de mercados."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33827",
-   "fecha": "2026-08-01T07:48:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33827",
-   "via": "DeItaone",
-   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
-   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
-   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
-   "analisis": {
-    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
-    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times (vía Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "USDJPY",
-    "DXY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Carry Trades",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "intervención-divisas",
-    "yen-japón",
-    "usdjpy",
-    "tesoro-usa",
-    "banco-central-japón",
-    "carry-trades"
-   ],
-   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
-   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
-   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
-   "pushText": "USA y Japón intervienen en divisas para sostener yen",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
-    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
-    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
-    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
-   },
-   "macro": {
-    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
-    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
-    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
-    "dow": "neutral a alcista por debilitamiento de dólar",
-    "sp500": "neutral a alcista por debilitamiento de dólar",
-    "bitcoin": "alcista potencial por debilitamiento de dólar",
-    "ethereum": "alcista potencial por debilitamiento de dólar",
-    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
-    "petroleo": "neutral a alcista por debilitamiento de dólar"
-   },
    "updates": []
   },
   {
@@ -7296,338 +7596,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33689",
-   "fecha": "2026-07-29T08:17:08+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33689",
-   "via": "DeItaone",
-   "original": "MIDDLE EAST CONFLICT ESCALATES Fighting between Iran and the US intensified overnight as Iran launched ballistic missiles at US forces, while the US and Saudi Arabia responded with strikes on Iran-backed militias in Iraq, ending a brief diplomatic pause. Saudi Arabia said it intercepted drones targeting its oil facilities for a second consecutive day. The US said all Iranian missiles aimed at its ",
-   "titulo": "Escalada en Oriente Medio: Irán lanza misiles, petróleo salta 4% y Hormuz se cierra",
-   "resumen": "Los enfrentamientos entre Irán y EE.UU. se intensificaron con lanzamiento de misiles balísticos iraníes y contraataques estadounidenses en Irak. El conflicto se expande a Arabia Saudí y Yemen con ataques hutíes. El petróleo Brent alcanzó USD 87/barril (+4%), el Estrecho de Hormuz permanece efectivamente cerrado y el transporte marítimo sufre disrupciones severas. Las perspectivas de negociación diplomática EE.UU.-Irán se desvanecen.",
-   "analisis": {
-    "porque": "Conflicto geopolítico activo que interrumpe oferta energética global, eleva prima de riesgo en crudo y genera incertidumbre sobre inflación y recesión. Afecta directamente decisiones de política monetaria y volatilidad de mercados.",
-    "queOcurrio": "Reanudación de hostilidades tras breve pausa diplomática. Irán lanzó misiles balísticos contra posiciones estadounidenses; EE.UU. y Arabia Saudí respondieron contra milicias respaldadas por Irán en Irak. Houthis atacaron instalaciones petrolíferas saudíes por segundo día consecutivo. Cierre efectivo del Estrecho de Hormuz.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters (vía Walter Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Brent Crude",
-    "S&P 500",
-    "NASDAQ",
-    "Dólar (DXY)",
-    "Bonos USA",
-    "Oro",
-    "Energía",
-    "Transporte marítimo"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "irán",
-    "misiles-balísticos",
-    "petróleo",
-    "hormuz",
-    "conflicto-oriente-medio",
-    "brent-crude",
-    "suministro-energético",
-    "volatilidad-mercados"
-   ],
-   "tgText": "🔥 ESCALADA CRÍTICA: Irán lanza misiles balísticos contra EE.UU.; petróleo +4% a USD 87/barril. Hormuz cerrado, ataques hutíes en expansión. Riesgo geopolítico al máximo.",
-   "xText": "⚠️ Escalada Irán-EE.UU.: misiles balísticos, petróleo +4% a USD 87/barril, Hormuz cerrado. Conflicto se expande a Arabia Saudí y Yemen. Alto riesgo de inflación.",
-   "discordText": "**GEOPOLÍTICA - BREAKING**\n• Irán lanza misiles contra bases estadounidenses\n• EE.UU./Arabia Saudí contraatacan en Irak\n• Petróleo Brent: USD 87/barril (+4%)\n• Estrecho de Hormuz efectivamente cerrado\n• Ataques hutíes contra instalaciones saudíes",
-   "pushText": "ALERTA: Escalada Irán-EE.UU., petróleo +4%, Hormuz cerrado",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo (Brent/WTI): reacción inmediata por interrupción de suministro y cierre del Estrecho de Hormuz. Traders de energía y fondos de cobertura rebalancean posiciones.",
-    "despues": "Bonos USA (yield sube por inflación esperada), Dólar (flight-to-safety), Oro (hedge geopolítico), S&P 500 (riesgo de recesión por choque de costos energéticos).",
-    "escenarios": "Traders vigilan: (1) Extensión del conflicto a actores regionales; (2) duración del cierre de Hormuz; (3) impacto en inflación de febrero-2026; (4) respuesta de bancos centrales a presión inflacionaria; (5) posibilidad de escalada naval en Mar Rojo.",
-    "riesgos": "Escalada descontrolada podría duplicar precios de crudo. Riesgo de cierre prolongado de Hormuz (20-30% del tráfico petrolero mundial). Impacto asimétrico en economías importadoras de petróleo. Posible error de cálculo militar."
-   },
-   "macro": {
-    "petroleo": "alcista muy fuerte (+4% a USD 87/barril)",
-    "dolar": "alcista por flight-to-safety",
-    "oro": "alcista por cobertura geopolítica",
-    "bonos": "alcista (yields suben por inflación esperada)",
-    "nasdaq": "bajista por presión inflacionaria",
-    "sp500": "bajista por choque de costos",
-    "bitcoin": "neutral a alcista (cobertura alternativa)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-29T13:51:14+00:00",
-     "id": "33715",
-     "texto": "El Consejo de Seguridad de Irak ordenó al ministerio de asuntos exteriores emprender acciones legales contra operaciones militares estadounidenses y sauditas. Actualización de la escalada geopolítica regional que comenzó con ataques iranís previos. El titular no especifica los ataques concretos ni contexto completo de la disputa.",
-     "tgUrl": "https://t.me/walterbloomberg/33715"
-    },
-    {
-     "fecha": "2026-07-29T12:17:18+00:00",
-     "id": "33702",
-     "texto": "Trump confirmó en entrevista Fox que EE.UU. llevará a cabo strikes contra Irán en respuesta a ataques balísticos contra objetivos estadounidenses en Jordania. Añadió que ataques nocturnos a milicias respaldadas por Irán en Irak fueron coordinados con Bagdad y advirtió de futuras acciones contra proxies iraníes. Esto escala la tensión geopolítica más allá de repercusión anunciada el 29/07.",
-     "tgUrl": "https://t.me/walterbloomberg/33702"
-    }
-   ],
-   "actualizado": "2026-07-29T13:51:14+00:00"
-  },
-  {
-   "id": "33709",
-   "fecha": "2026-07-29T12:35:21+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33709",
-   "via": "DeItaone",
-   "original": "$UAL - TRUMP, UNITED AIRLINES CEO KIRBY TO UNVEIL $22 BILLION PLAN TO EXPAND, IMPROVE WASHINGTON DULLES AIRPORT - SOURCES",
-   "titulo": "Trump y CEO de United Airlines anuncian plan de USD 22.000M para expandir Dulles",
-   "resumen": "Trump y Scott Kirby, CEO de United Airlines, anunciarán planes de expansión de USD 22.000 millones en el aeropuerto Dulles de Washington. No se especifican detalles de inversión, cronograma o estructura de financiamiento. Iniciativa privada-pública enfocada en mejorar infraestructura aeroportuaria de una de las principales compuertas de la capital estadounidense.",
-   "analisis": {
-    "porque": "Inversión en infraestructura aeroportuaria genera demanda de materials (construcción), empleo, y mejora outlook de United Airlines. Afecta valuación de UAL y sectores de construcción/servicios.",
-    "queOcurrio": "Anuncio de asociación entre Trump y United Airlines para invertir USD 22.000M en modernización y expansión del aeropuerto Dulles de Washington.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "UAL",
-    "Sector Aéreo",
-    "Construcción",
-    "Infraestructura"
-   ],
-   "sesgos": [
-    {
-     "activo": "UAL",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Sector Aéreo",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "United Airlines",
-    "Dulles",
-    "inversión",
-    "infraestructura",
-    "Trump",
-    "USD 22B"
-   ],
-   "tgText": "Trump y CEO de United Airlines anuncian USD 22.000M para expandir Dulles. Beneficia a UAL y cadena de suministro de construcción.",
-   "xText": "Alianza Trump-United Airlines: USD 22.000M para modernizar Dulles airport. Impulsa UAL y demanda de infraestructura.",
-   "discordText": "**United Airlines - Inversión Dulles**\n• Anuncio de USD 22.000M con Trump\n• Expansión y modernización de Dulles\n• Apoyo a demanda de construcción e infraestructura\n→ Positivo para UAL, sector aéreo",
-   "pushText": "Trump y United Airlines: USD 22.000M para expandir Dulles airport",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "UAL sube 1-2% en apertura si se confirma impacto positivo en flujos de pasajeros y capacidad.",
-    "despues": "Sectores de construcción, ingeniería civil y acero podrían beneficiarse de demanda de materiales; salarios de empleo de construcción mejoran, presionando narrativa de inflación salarial.",
-    "escenarios": "Traders monitorean: (1) detalles de financiamiento (privado vs subsidios federales), (2) si proyecto mejora margen operativo de United, (3) competencia (American, Delta) y si anuncian expansiones similares.",
-    "riesgos": "Proyecto podría no cristalizarse o retrasos típicos de obra pública; si requiere subsidios federales, genera debate fiscal; competencia de otras aerolineas podría diluir beneficio competitivo."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33705",
-   "fecha": "2026-07-29T12:24:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33705",
-   "via": "DeItaone",
-   "original": "*SOUTH KOREA FINANCE MINISTRY TO STABILIZE STOCK MARKET *SOUTH KOREA FINANCE MINISTRY TO RESTRICT LEVERAGED ETF TRADING",
-   "titulo": "Corea del Sur implementa restricciones a ETFs apalancados tras volatilidad de mercado",
-   "resumen": "El Ministerio de Finanzas de Corea del Sur anunció medidas para estabilizar el mercado de valores, incluyendo restricciones a trading de ETFs apalancados y sistemas de monitoreo 24 horas. Se establecerá límite de exposición retail a estos instrumentos. Respuesta regulatoria a volatilidad e inestabilidad de última semana en bolsa surcoreana.",
-   "analisis": {
-    "porque": "Regulación de apalancamiento retail reduce riesgo sistémico local pero señala presión en volatilidad de mercados asiáticos. Afecta estrategias de carry trades y posicionamiento en mercados emergentes.",
-    "queOcurrio": "Regulador surcoreano implementó techo de exposición retail a ETFs apalancados y reforzó vigilancia de mercado 24/7.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "KOSPI",
-    "Mercados Asiáticos",
-    "ETFs",
-    "Volatilidad Emergentes"
-   ],
-   "sesgos": [
-    {
-     "activo": "KOSPI",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Volatilidad",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Emergencia",
-   "keywords": [
-    "Corea del Sur",
-    "ETFs apalancados",
-    "regulación",
-    "volatilidad",
-    "KOSPI",
-    "riesgo sistémico"
-   ],
-   "tgText": "SK implementa tope a ETFs apalancados y monitoreo 24/7. Medida defensiva ante volatilidad retail; afecta estrategias de apalancamiento en emergentes.",
-   "xText": "Corea del Sur limita ETFs apalancados retail y activa vigilancia 24/7. Regulador frena leverage tras volatilidad de mercado.",
-   "discordText": "**Corea del Sur - Regulación de Apalancamiento**\n• Restricción a exposición retail en ETFs apalancados\n• Monitoreo 24 horas del mercado de valores\n• Medida de estabilización post-volatilidad\n→ Reduce riesgo sistémico local",
-   "pushText": "SK limita ETFs apalancados; monitoreo 24/7 para estabilidad de mercado",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "KOSPI puede estabilizarse ya que se reduce presión de liquidaciones en cascada; volatilidad intradiaria disminuye.",
-    "despues": "Mercados emergentes globales notan reducción de presión de apalancamiento retail; yuan chino y otras monedas EM podrían beneficiarse de menor venta forzada.",
-    "escenarios": "Traders monitorean: (1) si otras bolsas asiáticas adoptan medidas similares (Japón, Taiwan), (2) si esta regulación es temporal o permanente, (3) si impacta flujos de carry trades que financian posiciones en EM.",
-    "riesgos": "Restricción podría reducir liquidez de ETFs apalancados, elevando spreads bid-ask; si medida es temporal, alivio podría ser fugaz y volatilidad retornar."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33699",
-   "fecha": "2026-07-29T12:01:50+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33699",
-   "via": "DeItaone",
-   "original": "FED PLAYBOOK: JPM'S S&P 500 SCENARIOS JPMorgan expects the Fed to hold rates, with a hawkish hold as its base case (50%), leaving the S&P 500 roughly flat to down 0.5%. A dovish hold (28%) is seen as the most bullish outcome, lifting the index up to 1%. A 25bp hike (20%) could send the S&P 500 down 1.5%-2%, with the Nasdaq likely underperforming.",
-   "titulo": "JPMorgan proyecta S&P 500 plano o caída 0,5% si Fed mantiene tasas hawkish",
-   "resumen": "JPMorgan establece escenarios post-decisión Fed: caso base es pausa hawkish (50% probabilidad) con S&P 500 plano a -0,5%. Pausa dovish (28%) alcista hasta +1%, mientras que alza de 25pb (20%) presionaría índice -1,5% a -2%, golpeando especialmente a Nasdaq. Análisis de mercado previo a anuncio de la institución.",
-   "analisis": {
-    "porque": "El escenario Fed determina directamente movimientos de renta variable y tasas. JPMorgan es referencia institucional que mueve expectativas en mercados de futuros y opciones.",
-    "queOcurrio": "JPMorgan publicó matriz de escenarios con probabilidades ponderadas para decisión inminente de la Fed, diferenciando postura hawkish, dovish e hipótesis de sorpresa alcista.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P 500",
-    "Nasdaq",
-    "Rendimientos USA",
-    "Futuros S&P",
-    "Futuros Nasdaq"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "tasas",
-    "S&P 500",
-    "Nasdaq",
-    "JPMorgan",
-    "escenarios"
-   ],
-   "tgText": "JPMorgan: caso base Fed hawkish deja S&P plano a -0,5%. Pausa dovish hasta +1%, alza 25pb presiona -1,5% a -2%, golpeando tech.",
-   "xText": "JPMorgan mapea decisión Fed: pausa hawkish (50%) deja S&P plano/-0,5%; dovish (+1%); alza 25pb (-1,5%/-2%, Nasdaq débil).",
-   "discordText": "**JPMorgan - Escenarios Post-Fed**\n• Pausa hawkish (50%): S&P plano/-0,5%\n• Pausa dovish (28%): hasta +1%\n• Alza 25pb (20%): -1,5%/-2%, Nasdaq pressiona",
-   "pushText": "JPMorgan: Fed hawkish mantendría S&P plano; alza sorpresa golpearía -1,5%",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Futuros S&P y Nasdaq reaccionan inmediatamente; curva de rendimientos invierte según narrativa hawkish.",
-    "despues": "Dólar se fortalece (si fed hawkish); gold vende; volatilidad VIX sube si mercado precia sorpresa de alza.",
-    "escenarios": "Traders monitorean: (1) si Fed comunica pausa duradera o temporal, (2) señales de Powel sobre septiembre, (3) si dato de empleo débil mañana cambia probabilidades.",
-    "riesgos": "Sorpresa de alza (20%) movería mercados -1,5% a -2%; expectativas de dovish débiles vs realidad hawkish generaría whipsaw."
-   },
-   "macro": {
-    "dolar": "alcista si hawkish",
-    "oro": "bajista si hawkish",
-    "nasdaq": "bajista -1,5% a -2%",
-    "dow": "bajista -0,5% a -1%",
-    "sp500": "bajista -0,5% a -2%",
-    "bonos": "alcista (baja de rendimientos)",
-    "petroleo": "neutral a bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33698",
-   "fecha": "2026-07-29T11:45:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33698",
-   "via": "DeItaone",
-   "original": "ZUCKERBERG PUSHES FOR FASTER AI Mark Zuckerberg urged the U.S. to accelerate AI development, arguing the technology's benefits outweigh its risks and warning against regulations that could slow innovation. The Meta CEO also opposed restricting open-source AI models, saying the focus should be on boosting U.S. competitiveness rather than limiting access. His comments come as Meta ramps up AI spendi",
-   "titulo": "Zuckerberg impulsa desregulación de IA; se opone a restricciones en modelos open-source",
-   "resumen": "Mark Zuckerberg instó al gobierno estadounidense a acelerar desarrollo de IA, argumentando que beneficios superan riesgos y adviriendo contra regulaciones que frenen innovación. El CEO de Meta se opuso a restricciones en modelos de IA abiertos, enfatizando que el enfoque debe estar en competitividad estadounidense. Sus comentarios precedieron resultados de Meta.",
-   "analisis": {
-    "porque": "Señala posicionamiento político de megacap tech sobre marco regulatorio de IA; impacta percepción de riesgo legislativo en sector; relevante para valuaciones de Meta y competencia en capex IA.",
-    "queOcurrio": "CEO de Meta abogó por desregulación relativa de desarrollo de IA y mantuvo postura pro open-source, alineándose con presión interna de Meta hacia mayor gasto en infraestructura IA.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "META",
-    "Nasdaq",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "META",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Meta",
-    "Zuckerberg",
-    "IA",
-    "regulación",
-    "open-source",
-    "capex",
-    "competitividad"
-   ],
-   "tgText": "💬 Zuckerberg pide desregulación de IA y se opone a restricciones en modelos open-source. Enfatiza competitividad EE.UU. sobre capex. Meta acelera gasto en IA previo a earnings.",
-   "xText": "💬 Zuckerberg impulsa desregulación de IA y rechaza restricciones a open-source. Enfoque en competitividad EE.UU.; Meta acelera capex IA previo a resultados.",
-   "discordText": "**Meta: Zuckerberg Defiende Desregulación IA**\n• Pide aceleración de desarrollo sin restricciones\n• Rechaza límites a modelos open-source\n• Énfasis en competitividad estadounidense",
-   "pushText": "Zuckerberg pide desregulación de IA; se opone a restricciones open-source",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "META: posible sesgo alcista si mercado valida reducción de riesgo regulatorio; NASDAQ por sector tech",
-    "despues": "Acciones de chipmakers y proveedores de infraestructura IA (NVDA, AMD); debate sobre marco regulatorio en equities de tech",
-    "escenarios": "Traders validan posición de Meta en debate regulatorio; observan si postura influye en política; monitorean competencia capex con otras megacaps (AMZN, MSFT, GOOG)",
-    "riesgos": "Postura es marketing político de Meta; cambios reales en regulación son inciertos; impacto en valuaciones depende de percepciones no hechos"
-   },
-   "macro": {
-    "nasdaq": "Neutral-alcista por reducción de riesgo regulatorio percibida"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7833,6 +7801,15 @@
   "https://www.cnbc.com/2026/08/01/condo-buyers-mortgage-rules-fannie-mae-freddie-mac.html",
   "https://www.cnbc.com/2026/08/01/these-stocks-reporting-next-week-have-history-of-beating-expectations.html",
   "https://www.cnbc.com/2026/08/01/stocks-to-buy-now-before-they-report-earnings.html",
-  "https://www.cnbc.com/2026/08/01/traders-go-full-time-on-prediction-markets-using-ai-bots-and-antennas.html"
+  "https://www.cnbc.com/2026/08/01/traders-go-full-time-on-prediction-markets-using-ai-bots-and-antennas.html",
+  "https://www.cnbc.com/2026/08/01/iran-ceasefire-power-structure.html",
+  "https://www.cnbc.com/2026/08/01/tankers-near-oman-come-under-fire.html",
+  "https://www.cnbc.com/2026/08/01/open-ai-hugging-face-hack-cyber-warnings.html",
+  "https://www.cnbc.com/2026/08/01/uber-waymo-autonomous-vehicle-regulation.html",
+  "https://www.cnbc.com/2026/08/01/trump-medias-new-data-service-gives-faster-access-to-trumps-posts.html",
+  "https://www.cnbc.com/2026/08/01/-berkshire-hathaway-shares-hit-eight-month-high.html",
+  "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html",
+  "https://www.cnbc.com/select/best-5-year-cds/",
+  "https://www.cnbc.com/2026/08/01/trumps-settlement-fund-threat-injects-uncertainty-into-ag-talks.html"
  ]
 }
