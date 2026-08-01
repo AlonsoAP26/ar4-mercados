@@ -1,7 +1,356 @@
 {
  "lastId": 33829,
- "actualizado": "2026-08-01T11:43:33.315Z",
+ "actualizado": "2026-08-01T14:16:28.047Z",
  "items": [
+  {
+   "id": "949862737",
+   "fecha": "2026-08-01T13:44:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/stocks-to-buy-now-before-they-report-earnings.html",
+   "via": "CNBC",
+   "original": "Buy these stocks ahead of earnings. Bank of America says they offer plenty of upside",
+   "titulo": "Bank of America recomienda comprar estas acciones pre-earnings con upside potencial",
+   "resumen": "Banco de América identifica valores que cotizan antes de reporte trimestral con potencial alcista significativo. El titular no especifica cuáles son las acciones ni el sector, pero sugiere que BofA detecta oportunidades de mispricing en el mercado pre-earnings.",
+   "analisis": {
+    "porque": "Recomendaciones de grandes inversores institucionales pueden influir demanda y ajustes de valuación. Revela qué buscan los fondos: potencial de beat en earnings y revisión de múltiplos.",
+    "queOcurrio": "Bank of America emite recomendación de compra en acciones seleccionadas con tesis de upside previo a publicación de resultados.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Acciones genéricas"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings",
+    "Bank of America",
+    "recomendación compra",
+    "upside",
+    "pre-earnings"
+   ],
+   "tgText": "📈 BofA identifica acciones con potencial alcista previo a earnings. Recomendación de compra en seleccionadas. Mercado precia oportunidades pre-resultados.",
+   "xText": "🎯 Bank of America: acciones con upside potencial en pre-earnings. Fondos detectan mispricing. A vigilar próximos reportes trimestrales.",
+   "discordText": "**BofA: Oportunidades Pre-Earnings**\n• Recomendación de compra en seleccionadas\n• Potencial de upside detectado\n• Vigilar beatings en próximos reportes",
+   "pushText": "BofA recomienda comprar acciones con upside en pre-earnings",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones recomendadas por BofA suben por demanda de hedge funds e inversores institucionales replicando research.",
+    "despues": "S&P 500 sigue con lag según composición de cartera; NASDAQ si hay concentración tech.",
+    "escenarios": "Traders vigilar: (1) qué acciones específicas publica BofA; (2) earnings beat/miss en reportes; (3) revisión de guidance; (4) si research desencadena momentum pre-earnings o corrección post-beat.",
+    "riesgos": "Título genérico: no especifica acciones ni sectores. Riesgo de que recomendación no se transparente o que earnings decepcionemos. Falta contexto de la tesis fundamental."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "940249726",
+   "fecha": "2026-08-01T13:37:52.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/these-stocks-reporting-next-week-have-history-of-beating-expectations.html",
+   "via": "CNBC",
+   "original": "These stocks reporting next week have a history of beating expectations",
+   "titulo": "Acciones con reporte esta semana superan expectativas históricamente",
+   "resumen": "Análisis de CNBC destaca que empresas que reportan earnings esta semana tienen historial de batir estimaciones. El titular no detalla qué sectores o acciones específicas, pero sugiere sesgo alcista en próximos reportes si el patrón histórico se sostiene.",
+   "analisis": {
+    "porque": "Si earnings superan expectativas de forma sistemática, mercados reprician al alza. Hay implicación de upside earnings surprises que pueden impulsar índices.",
+    "queOcurrio": "CNBC revisa histórico de earnings beats de empresas que reportan esta semana, encontrando patrón alcista de superación de guías.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings",
+    "beat",
+    "expectativas",
+    "S&P500",
+    "reporte trimestral"
+   ],
+   "tgText": "📊 Acciones que reportan esta semana superan expectativas históricamente. Sesgo alcista si patrón se sostiene. Mercados pueden reprecia al alza con earnings beats.",
+   "xText": "📈 Historial de earnings beats: empresas que reportan esta semana típicamente superan guidance. Potencial upside en próximas sesiones.",
+   "discordText": "**Earnings Beats Históricos**\n• Acciones que reportan esta semana superan expectativas\n• Patrón alcista en sesiones recientes\n• Vigilar próximos reportes para confirmación",
+   "pushText": "Acciones de esta semana tienen historial de batir expectativas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones que reportan suben en intraday/post-earnings si resulta beat; S&P 500 repunte si dispersión de ganadores es amplia.",
+    "despues": "NASDAQ sigue si hay concentración de beats en tech; fondos de valor revierten si industrial/financiero decepcionan.",
+    "escenarios": "Traders vigilar: (1) magnitude de beats (% vs. estimate); (2) revisión de forward guidance; (3) comentario management sobre demanda/márgenes; (4) reacción de precio pos-earnings.",
+    "riesgos": "Análisis histórico no predice futuro. Riesgo de reversión de patrón. No especifica acciones ni detalla qué impulsa beats."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "947225609",
+   "fecha": "2026-08-01T13:30:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/condo-buyers-mortgage-rules-fannie-mae-freddie-mac.html",
+   "via": "CNBC",
+   "original": "Buying a condo with a mortgage may soon get more complicated. Here&apos;s why",
+   "titulo": "Comprar condominio con hipoteca se complica: cambios regulatorios esperados",
+   "resumen": "CNBC advierte que proceso de financiamiento para compra de condominios enfrentará mayor complejidad regulatoria próximamente. El titular no especifica qué cambios ni entidades regulatorias, pero implica que requisitos de crédito o reservas comunes serán más estrictos.",
+   "analisis": {
+    "porque": "Cambios en regulación hipotecaria afectan demanda inmobiliaria, valuaciones de REITs y acciones de constructoras. Impacta costos de financiamiento y acceso al crédito.",
+    "queOcurrio": "Próximamente se esperan cambios regulatorios que complicarán el proceso de obtener hipoteca para condominios.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "REITs",
+    "Constructoras",
+    "Financieras",
+    "Tasas Hipotecarias",
+    "Vivienda"
+   ],
+   "sesgos": [
+    {
+     "activo": "REITs",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Constructoras",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "hipoteca",
+    "condominio",
+    "regulación",
+    "crédito",
+    "vivienda",
+    "REIT"
+   ],
+   "tgText": "🏠 Regulación: compra de condominios con hipoteca se complica próximamente. Cambios esperados en requisitos de crédito. Impacto potencial en demanda inmobiliaria y REITs.",
+   "xText": "🔴 Alerta vivienda: cambios regulatorios harán más difícil hipoteca para condominios. Vigilar impacto en constructoras y REITs.",
+   "discordText": "**Regulación Hipotecaria**\n• Compra de condominios + hipoteca se complica\n• Cambios regulatorios esperados\n• Impacto en REITs y constructoras",
+   "pushText": "Cambios regulatorios complican hipotecas para condominios",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de REITs y constructoras residenciales corrigen a la baja por presión de demanda esperada.",
+    "despues": "Financieras (bancos hipotecarios) revisas provisiones y márgenes; tasas hipotecarias pueden presionarse si regulación es restrictiva.",
+    "escenarios": "Traders vigilar: (1) detalle de cambios regulatorios (qué entidad, qué requisitos); (2) impacto en origination de hipotecas Q3/Q4; (3) revisión de valuaciones de REITs; (4) competencia de private capital en vivienda.",
+    "riesgos": "Título no especifica cambios concretos ni timeline. Falta información sobre qué reguladores o si ya están aprobados. Alto riesgo de no-verificable."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "979747342",
+   "fecha": "2026-08-01T12:30:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/glp-1-prescriptions-weight-loss-walmart-costco-amazon.html",
+   "via": "CNBC",
+   "original": "As Americans go direct with GLP-1 prescriptions, Walmart, Costco, Amazon will be big weight-loss winners",
+   "titulo": "Walmart, Costco y Amazon emergen como ganadores en tendencia de GLP-1 directo",
+   "resumen": "Conforme estadounidenses acceden directamente a prescripciones de GLP-1 (drogas para pérdida de peso), retailers y plataformas de e-commerce se posicionan como intermediarios clave. Walmart, Costco y Amazon aprovecharán la demanda sin pasar por farmacias tradicionales, generando ingresos adicionales en categoría de salud.",
+   "analisis": {
+    "porque": "Reconfiguración de cadena de suministro farmacéutico favorece a gigantes retail con logística integrada. Impacto material en márgenes y crecimiento de estos emisores.",
+    "queOcurrio": "Tendencia de consumidores obteniendo GLP-1 directamente (telemedicina, plataformas directas) en lugar de canales tradicionales, posicionando a Walmart, Costco y Amazon como beneficiarios.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "WMT",
+    "COST",
+    "AMZN",
+    "NASDAQ",
+    "S&P500",
+    "Retail"
+   ],
+   "sesgos": [
+    {
+     "activo": "WMT",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "COST",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "GLP-1",
+    "Walmart",
+    "Costco",
+    "Amazon",
+    "retail",
+    "e-commerce",
+    "telemedicina",
+    "pérdida de peso"
+   ],
+   "tgText": "💊 Walmart, Costco y Amazon ganan acceso directo a mercado GLP-1 via prescripciones digitales. Nuevo canal de ingresos en healthcare sin intermediarios tradicionales. Alcista para WMT, COST, AMZN.",
+   "xText": "🛒 Cambio en cadena de GLP-1: Walmart, Costco, Amazon se posicionan como ganadores directos. Telemedicina + logística integrada = margen nuevo. Favorable para valuaciones retail.",
+   "discordText": "**GLP-1: Ganadores Retail**\n• Walmart, Costco, Amazon acceso directo a prescripciones\n• Telemedicina + logística = margen nuevo\n• Impacto positivo en crecimiento e ingresos",
+   "pushText": "Walmart, Costco y Amazon ganan en mercado directo de GLP-1",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "WMT y COST saltan directamente por nuevo stream de ingresos en healthcare de alto margen.",
+    "despues": "AMZN sigue con reprecio; sector retail más amplio re-valúa exposición a farmacia/salud.",
+    "escenarios": "Traders vigilar: (1) guides de management en próximos earnings sobre GLP-1 revenue; (2) competencia de farmacias tradicionales (CVS, Walgreens); (3) regulación de telemedicina/prescripción directa; (4) márgenes comparados vs. venta tradicional.",
+    "riesgos": "Titular no especifica timeline ni volumen esperado de ingresos. Riesgo de que regulación frene telemedicina directa."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "979311374",
+   "fecha": "2026-08-01T12:16:13.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/from-a-fed-decision-to-big-tech-earnings-what-drove-last-weeks-volatile-market.html",
+   "via": "CNBC",
+   "original": "From a Fed decision to Big Tech earnings: What drove last week&apos;s volatile market",
+   "titulo": "Volatilidad de mercados: decisiones de Fed y earnings de Big Tech dominan semana",
+   "resumen": "CNBC analiza los factores que impulsaron la volatilidad del mercado la semana pasada, destacando la decisión de política monetaria de la Reserva Federal y los reportes de ganancias del sector tecnológico. El titular no especifica si habrá nuevas decisiones pendientes ni el impacto preciso en índices principales.",
+   "analisis": {
+    "porque": "Identifica los drivers macroeconómicos clave que movieron mercados: política monetaria y earnings corporativos. Los inversores necesitan entender qué variables continúan generando presión sobre valuaciones.",
+    "queOcurrio": "Análisis retrospectivo de volatilidad vinculada a decisión de Fed y publicación de resultados de gigantes tecnológicos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "DXW",
+    "Bonos",
+    "Rendimientos USA",
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "AMZN"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "volatilidad",
+    "Fed",
+    "Big Tech",
+    "earnings",
+    "NASDAQ",
+    "política monetaria"
+   ],
+   "tgText": "📊 Volatilidad en mercados: Fed y earnings de Tech fueron los drivers principales la semana pasada. Inversores atentos a próximas publicaciones de resultados.",
+   "xText": "🔄 Volatilidad tecada por Fed + Big Tech earnings la semana pasada. Mercados ajustan valuaciones mientras se procesan datos macroeconómicos. NASDAQ sigue en la mira.",
+   "discordText": "**Volatilidad de Mercados**\n• Decisión de Fed + earnings de Big Tech impulsaron movimientos\n• NASDAQ bajo presión por valuaciones\n• Traders vigilar próximos reportes trimestrales",
+   "pushText": "Fed y Tech earnings dominaron volatilidad de mercados",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NASDAQ reacciona primero debido a exposición de Big Tech a decisiones de tasa y márgenes corporativos.",
+    "despues": "S&P 500 sigue con lag; bonos reprician rendimientos según implicaciones de política monetaria.",
+    "escenarios": "Traders monitorean: (1) próximas guías de earnings tech; (2) señales de la Fed sobre tasas futuras; (3) márgenes corporativos vs. presión de capex en IA.",
+    "riesgos": "El titular es análisis retrospectivo, no predictivo. Riesgo de que nueva información macroeconómica revierta valoraciones."
+   },
+   "macro": {
+    "dolar": "neutral",
+    "oro": "neutral",
+    "nasdaq": "bajista corto plazo",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": null,
+    "ethereum": null,
+    "bonos": "bajista (rendimientos alcistas)",
+    "petroleo": null
+   },
+   "updates": []
+  },
+  {
+   "id": "951771643",
+   "fecha": "2026-08-01T12:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/best-buy-ceo-jason-bonfig-smaller-stores.html",
+   "via": "CNBC",
+   "original": "To keep growing, incoming Best Buy CEO says he first wants to go smaller",
+   "titulo": "CEO entrante de Best Buy: ir más pequeño es clave para crecer",
+   "resumen": "Nuevo CEO de Best Buy señala que estrategia de crecimiento futuro pasa por reducir tamaño de tienda/operaciones (modelo de tienda más pequeña o especializada). El titular no detalla formato exacto, pero sugiere cambio de modelo retail tradicional de grandes formatos.",
+   "analisis": {
+    "porque": "Cambio estratégico en Best Buy puede impactar márgenes, capex y comparable sales. Reposicionamiento retail away from big-box hacia modelo urbano/especializado es relevante para cadena y sector.",
+    "queOcurrio": "CEO entrante de Best Buy anuncia que estrategia de crecimiento priorizará tiendas/modelos más pequeños.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "BBY",
+    "Retail",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "BBY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Best Buy",
+    "CEO",
+    "tiendas pequeñas",
+    "retail",
+    "estrategia"
+   ],
+   "tgText": "🏬 CEO de Best Buy: estrategia de crecimiento mediante tiendas más pequeñas. Cambio de modelo big-box tradicional. Vigilar impacto en márgenes y capex.",
+   "xText": "📍 Best Buy: nuevo CEO apunta a modelo de tiendas más pequeñas para crecer. Reposicionamiento del retailer electrónico.",
+   "discordText": "**Best Buy: Cambio Estratégico**\n• CEO entrante: ir más pequeño para crecer\n• Abandono parcial de big-box\n• Modelo urbano/especializado esperado",
+   "pushText": "Best Buy CEO: crecimiento mediante tiendas más pequeñas",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "BBY puede subir si mercado valúa cambio como positivo (bajar capex, mejorar márgenes urbanos).",
+    "despues": "Sector retail observa si modelo prospera; competidores evalúan replicar.",
+    "escenarios": "Traders vigilar: (1) guidance de earnings post-anuncio; (2) capex guidance vs. modelo anterior; (3) comp sales en nuevas tiendas pequeñas; (4) rentabilidad vs. stores grandes.",
+    "riesgos": "Falta detalle del nuevo formato. Riesgo de que modelo no sea escalable o que cierre más stores de lo esperado (capex reduction vs. real retrenchment)."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33829",
    "fecha": "2026-08-01T10:29:55+00:00",
@@ -7279,395 +7628,6 @@
     "nasdaq": "Neutral-alcista por reducción de riesgo regulatorio percibida"
    },
    "updates": []
-  },
-  {
-   "id": "33680",
-   "fecha": "2026-07-28T22:13:59+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33680",
-   "via": "DeItaone",
-   "original": "IRAN LAUNCHED BALLISTIC MISSILES TOWARDS A U.S. BASE IN JORDAN -AXIOS",
-   "titulo": "Irán lanza misiles balísticos contra base militar estadounidense en Jordania",
-   "resumen": "Irán lanzó múltiples misiles balísticos contra una base militar de EE.UU. ubicada en Jordania, según reportó Axios citando fuentes estadounidenses. El Pentágono confirmó que todos los proyectiles fueron interceptados exitosamente sin reportar bajas iniciales. El incidente marca una escalada directa en las tensiones entre Irán y EE.UU. después de semanas de señales contradictorias en negociaciones.",
-   "analisis": {
-    "porque": "Escalada geopolítica directa genera volatilidad en petróleo, divisas de riesgo y activos defensivos. Los mercados reprecia el riesgo de conflicto regional ampliado",
-    "queOcurrio": "Irán ejecutó ataque de misiles balísticos contra instalación militar estadounidense; EE.UU. reporta intercepciones exitosas",
-    "estado": "confirmado",
-    "fuenteOriginal": "Axios / U.S. Military"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Oro",
-    "DXY",
-    "EURUSD",
-    "NASDAQ",
-    "S&P500",
-    "VIX",
-    "Bonos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "misiles",
-    "EE.UU.",
-    "Jordania",
-    "conflicto",
-    "Medio Oriente",
-    "escalada militar"
-   ],
-   "tgText": "🚨 BREAKING: Irán lanza misiles balísticos contra base de EE.UU. en Jordania. Pentágono reporta intercepciones exitosas. Petróleo y oro suben ante escalada geopolítica. Vigilar volatilidad en mercados de riesgo.",
-   "xText": "🚨 Irán atacó base militar de EE.UU. en Jordania con misiles balísticos. Pentágono confirma intercepciones. Escalada directa dispara petróleo, oro y volatilidad. Mercados en alerta máxima.",
-   "discordText": "**BREAKING - Escalada Irán-EE.UU.**\n• Irán lanzó misiles balísticos contra base en Jordania\n• Pentágono reporta todas las intercepciones exitosas\n• Petróleo y oro en alza; volatilidad máxima\n• Monitorear riesgos de ampliación del conflicto",
-   "pushText": "Irán ataca base de EE.UU. con misiles; todos interceptados. Escalada geopolítica dispara petróleo.",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo WTI y Brent: riesgos de cierre del Estrecho de Ormuz reprician al alza instantáneamente",
-    "despues": "Oro como activo refugio; USD se fortalece por flight-to-safety; acciones de defensa suben; bonos caen (tasas suben por presión inflacionaria del petróleo)",
-    "escenarios": "Traders monitorean: (1) si Irán anuncia represalias adicionales; (2) respuesta militar de EE.UU. o Israel; (3) cierre de Ormuz; (4) reacción de OPEC+ sobre producción; (5) contagio a mercados emergentes de Medio Oriente",
-    "riesgos": "Escalada descontrolada hacia conflicto regional mayor; espiral de represalias; daño a infraestructura energética global; disrupciones en supply chain"
-   },
-   "macro": {
-    "dolar": "alcista por flight-to-safety",
-    "oro": "alcista por demanda refugio",
-    "nasdaq": "bajista por aversión a riesgo",
-    "dow": "bajista con peso en defensa",
-    "sp500": "bajista",
-    "bitcoin": "volátil, puede actuar como refugio heterodoxo",
-    "ethereum": "correlacionado con riesgo",
-    "bonos": "caen (yields suben) por presión inflacionaria del petróleo",
-    "petroleo": "alcista muy fuerte, riesgo de $85-90 por barril"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-29T11:38:37+00:00",
-     "id": "33696",
-     "texto": "Irán rechazó afirmaciones del presidente Trump sobre supuestas negociaciones en las últimas dos semanas. Un funcionario iraní senior insistió en que Teherán no cederá el control del Estrecho de Ormuz, calificándolo como central para objetivos de guerra. Los comentarios precedieron nuevos ataques de misiles balísticos contra bases estadounidenses en Jordania.",
-     "tgUrl": "https://t.me/walterbloomberg/33696"
-    },
-    {
-     "fecha": "2026-07-28T22:28:51+00:00",
-     "id": "33682",
-     "texto": "Confirmación del Pentágono: Todos los misiles iraníes fueron interceptados exitosamente. Declaración oficial sin reporte de bajas estadounidenses iniciales.",
-     "tgUrl": "https://t.me/walterbloomberg/33682"
-    },
-    {
-     "fecha": "2026-07-28T22:28:16+00:00",
-     "id": "33681",
-     "texto": "Confirmación oficial del Pentágono: Fuerzas de la Guardia Revolucionaria Islámica lanzaron múltiples misiles balísticos desde Irán a las 17:45 ET. Timestamp: 28 de julio 2026, 22:28 UTC.",
-     "tgUrl": "https://t.me/walterbloomberg/33681"
-    }
-   ],
-   "actualizado": "2026-07-29T11:38:37+00:00"
-  },
-  {
-   "id": "33695",
-   "fecha": "2026-07-29T11:36:47+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33695",
-   "via": "DeItaone",
-   "original": "ECOMMERCE MOMENTUM BUILDS Bernstein raised its U.S. eCommerce forecasts after estimating Q2 sales growth of 11%, up from 5-6% in recent quarters. The firm expects strong results from Etsy, eBay and Wayfair, while Amazon's earnings will hinge more on AWS, where investors are looking for 30%+ cloud growth. Bernstein also expects AI-driven capex to rise further in 2027.",
-   "titulo": "Bernstein eleva previsiones de e-commerce tras crecimiento Q2 del 11%; AWS en foco",
-   "resumen": "Bernstein subió proyecciones de e-commerce estadounidense tras estimar crecimiento de ventas Q2 del 11%, versus 5-6% en trimestres previos. Anticipa resultados sólidos en Etsy, eBay y Wayfair; ganancias de Amazon dependerán de AWS con expectativa de crecimiento cloud >30%. Espera aumento de capex impulsado por IA en 2027.",
-   "analisis": {
-    "porque": "Revisa al alza perspectivas de demanda de consumo digital; enfatiza dependencia de resultados cloud para megacap tech; proyecta continuidad de gastos en infraestructura IA.",
-    "queOcurrio": "Casa de análisis Bernstein elevó forecasts de e-commerce tras validar aceleración en Q2 a tasa superior a lo previsto; ajusta mirada hacia AWS como driver de retorno en Amazon.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Nasdaq",
-    "S&P 500",
-    "AMZN",
-    "ETSY",
-    "EBAY",
-    "W"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "e-commerce",
-    "Bernstein",
-    "Amazon",
-    "AWS",
-    "crecimiento digital",
-    "capex IA"
-   ],
-   "tgText": "📈 Bernstein sube previsiones de e-commerce (Q2: +11%). Etsy, eBay, Wayfair en foco; AWS será clave para Amazon (>30% esperado). Capex de IA acelerará en 2027.",
-   "xText": "📈 Bernstein eleva forecasts de e-commerce tras crecimiento Q2 del 11%. AWS será decisivo en retorno de Amazon; capex IA crecerá en 2027.",
-   "discordText": "**E-commerce Acelera Según Bernstein**\n• Crecimiento Q2 del 11% (vs 5-6% previo)\n• Etsy, eBay, Wayfair con perspectiva positiva\n• AWS y capex IA como motores 2027",
-   "pushText": "Bernstein sube previsiones de e-commerce; AWS clave para Amazon en 2027",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "AMZN, NASDAQ: impacto positivo en valuaciones de tech/e-commerce por confirmación de demanda digital elevada",
-    "despues": "ETSY, EBAY, W: reacciones positivas propias; índices de consumo digital",
-    "escenarios": "Traders validan fortaleza de demanda; observan si capex IA de 2027 presiona márgenes; monitorean confirmación en earnings próximos",
-    "riesgos": "Estimaciones de Bernstein pueden no coincidir con guías oficiales de compañías; proyecciones de capex IA especulativas"
-   },
-   "macro": {
-    "nasdaq": "Sesgo alcista por demanda digital confirmada"
-   },
-   "updates": []
-  },
-  {
-   "id": "33691",
-   "fecha": "2026-07-29T10:12:24+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33691",
-   "via": "DeItaone",
-   "original": "ARAMCO REROUTES OIL TO ASIA Saudi Aramco is considering a new pricing system for crude shipped from Egypt's Sidi Kerir to Asia as Houthi attacks disrupt Red Sea routes. Asian refiners are seeking discounts to offset higher shipping costs and longer transit times around Africa. The move highlights growing pressure on global oil flows as security risks in the Middle East continue to disrupt key expo",
-   "titulo": "Aramco redirige crudo a Asia ante ataques hutíes; nuevos precios presionan flujos globales",
-   "resumen": "Saudi Aramco evalúa un nuevo sistema de precios para crudo exportado desde Sidi Kerir (Egipto) hacia Asia, ante disrupciones por ataques hutíes en el Mar Rojo. Refinadores asiáticos demandan descuentos para compensar costos de envío elevados y rutas más largas alrededor de África. El movimiento refleja presión creciente sobre flujos petroleros globales.",
-   "analisis": {
-    "porque": "Impacta estructura de precios del petróleo, márgenes de refinerías y equilibrio de oferta regional. Señala persistencia de riesgos geopolíticos en suministro global.",
-    "queOcurrio": "Aramco estudia reconfiguración de precios para crudo redirigido desde Suez hacia Asia vía ruta africana, con descuentos solicitados por refinadores para absorber costos de transporte incrementados.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "WTI",
-    "Brent",
-    "Acciones energía global"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "neutral-bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "Aramco",
-    "petróleo",
-    "Mar Rojo",
-    "hutíes",
-    "precios crudo",
-    "Asia",
-    "geopolítica"
-   ],
-   "tgText": "🛢️ Aramco negocia nuevos precios de crudo hacia Asia ante disrupciones en Mar Rojo. Refinadores piden descuentos por costos elevados de ruta africana. Presión en flujos petroleros globales.",
-   "xText": "🛢️ Saudi Aramco rediseña precios de crudo hacia Asia. Ataques hutíes fuerzan rutas alternativas; refinadores demandan descuentos por costos de envío más altos vía África.",
-   "discordText": "**Aramco Redirige Crudo**\n• Nuevo sistema de precios para exportaciones a Asia\n• Refinadores solicitan descuentos por ruta africana\n• Ataques hutíes presionan flujos globales",
-   "pushText": "Aramco evalúa reprecios de crudo a Asia por disrupciones en Mar Rojo",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: reacción a cambios de precios de exportación y expectativas de demanda asiática",
-    "despues": "Acciones de energía: integrados y refinadores; compañías de transporte marítimo",
-    "escenarios": "Traders monitorean si descuentos señalan menor demanda regional o si reflejan solo costos de transporte; validez de nueva estructura de precios",
-    "riesgos": "Titular no especifica plazos ni magnitud de descuentos; información de fuentes anónimas posible"
-   },
-   "macro": {
-    "petroleo": "Neutral presión bajista por descuentos; geopolitica contrapesa"
-   },
-   "updates": []
-  },
-  {
-   "id": "33688",
-   "fecha": "2026-07-29T08:05:04+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33688",
-   "via": "DeItaone",
-   "original": "$F - FORD MOTOR SHARES UP 3.9% PREMARKET AFTER CO RAISES FY PROFIT OUTLOOK",
-   "titulo": "Ford sube 3,9% previo a apertura tras elevar guidance anual; F-Series recuperándose",
-   "resumen": "Acciones de Ford subieron 3,9% en premarket tras elevar guía de ganancias fiscales 2026. Compañía reportó desempeño superior a estimaciones en Q2 y señala recuperación sostenida en línea F-Series, flagship de ingresos. Mejora refleja demanda resiliente de vehículos pickup estadounidenses pese a presión macroeconómica.",
-   "analisis": {
-    "porque": "Ford es indicador clave de salud de demanda doméstica y consumo estadounidense. Elevación de guidance reduce riesgo de recesión proyectada y señala confianza de management en ciclo económico. Sector automotriz afecta cadena de suministro global y empleo.",
-    "queOcurrio": "Ford elevó guidance anual de ganancias y reportó ganancias Q2 superiores a estimaciones, con recuperación visible en F-Series. Acción sube 3,9% en premarket. El titular original (906159879) ya cubría este evento; esta es actualización de precio y momentum.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "F",
-    "S&P500",
-    "Sector Automotriz"
-   ],
-   "sesgos": [
-    {
-     "activo": "F",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "ford",
-    "earnings",
-    "guidance-raise",
-    "f-series",
-    "demanda-consumo"
-   ],
-   "tgText": "🚗 Ford (F) +3,9% premarket. Guía anual elevada, Q2 beats estimaciones, F-Series en recuperación. Señal alcista de demanda doméstica y confianza de management.",
-   "xText": "Ford +3,9% previo a apertura. Elevó guidance anual tras Q2 mejor de lo esperado. F-Series en recuperación. Señal positiva de demanda automotriz en EE.UU.",
-   "discordText": "**Ford Guidance Raise** (Actualización)\n• Precio premarket: +3,9%\n• Q2: resultados beat\n• Guía FY: elevada\n• F-Series: recuperación confirmada\n• Implicación: demanda resiliente",
-   "pushText": "Ford +3,9% premarket: guía anual elevada, F-Series recuperándose",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de Ford responden inmediatamente. Sector automotriz (GM, Tesla, proveedores) podría extender ganancia si mercado interpreta como fortaleza de demanda doméstica.",
-    "despues": "S&P500 se beneficia marginalmente por sector de peso. Bonos corporativos automotrices bajan yields. Proveedores de partes (Aptiv, Lear) podrían ver upside.",
-    "escenarios": "Traders monitorean: (1) if guidance raise refleja demanda real o inventario normalizándose; (2) márgenes de ganancias en H2 2026; (3) exposición a aranceles Trump sobre partes importadas; (4) competencia de EV erosionando pickup market.",
-    "riesgos": "Guía anual puede ser conservadora. Recuperación de F-Series podría ser temporal si demanda de consumo se debilita próximos trimestres. Trump tariffs podrían impactar costos posteriores."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33685",
-   "fecha": "2026-07-29T07:10:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33685",
-   "via": "DeItaone",
-   "original": "BITCOIN EYES THE FED Bitcoin climbed 0.8% to $64,344 as the dollar weakened ahead of the Fed's rate decision. Markets expect no change, but any hawkish signals could lift the dollar and pressure BTC. Geopolitical tensions add near-term risk, while growing crypto adoption and corporate bitcoin buying continue to support the long-term outlook.",
-   "titulo": "Bitcoin sube 0,8% a USD 64.344 ante debilitamiento del dólar previo a decisión de Fed",
-   "resumen": "Bitcoin avanzó 0,8% a USD 64.344 mientras dólar se deprecia en espera de decisión de la Fed. Analistas proyectan presión bajista si Fed adopta tono hawkish que fortalezca divisa. Tensiones geopolíticas representan riesgo de corto plazo; adopción corporativa y compras institucionales sostienen perspectiva largo plazo.",
-   "analisis": {
-    "porque": "Correlación negativa histórica BTC-dólar impacta demanda de cripto. Decisión Fed sobre tasas redirecciona flujos de capital hacia o desde activos riesgosos. Geopolítica afecta aversión al riesgo y volatilidad.",
-    "queOcurrio": "Bitcoin ganó 0,8% alcanzando USD 64.344, impulsado por debilitamiento del dólar. Titular advierte que señales hawkish de Fed podrían invertir ganancia al fortalecer divisa. Geopolítica mencionada como factor de riesgo; adopción corporativa como soporte.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bitcoin",
-    "DXY",
-    "Criptomonedas"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bitcoin",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "bitcoin",
-    "fed-decision",
-    "dolar",
-    "criptomonedas",
-    "volatilidad"
-   ],
-   "tgText": "₿ Bitcoin: +0,8% a USD 64.344 por debilidad del dólar. Fed es crucial: si es hawkish, presión bajista. Riesgos geopolíticos cercanos; soporte en adopción corporativa a largo plazo.",
-   "xText": "Bitcoin +0,8% → USD 64.344 sobre debilidad de dólar. Fed decision clave: hawkish = presión bajista. Geopolítica de riesgo, adopción corporativa de soporte largo plazo.",
-   "discordText": "**Bitcoin Eyes Fed**\n• Precio: +0,8% a USD 64.344\n• Driver: debilidad de dólar\n• Riesgo: Fed hawkish → presión\n• Soporte: adopción corporativa\n• Tensión geopolítica: corto plazo",
-   "pushText": "Bitcoin sube 0,8% a USD 64.344 pero Fed hawkish podría revertir ganancia",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bitcoin reacciona inmediatamente a anuncio de Fed vía movimiento del dólar. Debilidad de DXY = soporte para BTC; fortaleza = presión.",
-    "despues": "Altcoins siguen a Bitcoin con mayor volatilidad. Stablecoins ven cambios en volumen según aversión al riesgo. Acciones tech se correlacionan por sector de adopción crypto.",
-    "escenarios": "Traders monitorean: (1) tono de Powell post-decisión; (2) nivel de resistencia USD 64.500; (3) soporte en USD 63.000; (4) noticias geopolíticas que disparen flight-to-safety.",
-    "riesgos": "Titular asume que Fed será hawkish sin certeza. Geopolítica mencionada vagamente sin especificar eventos. Adopción corporativa es soporte teórico; no hay dato nuevo sobre compras institucionales."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33684",
-   "fecha": "2026-07-29T07:04:55+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33684",
-   "via": "DeItaone",
-   "original": "CHINA FOREIGN MINISTRY, ON U.S. BAN ON CHINESE ROBOTS: CHINA ALWAYS OPPOSES U.S. GENERALISATION OF CONCEPT OF NATIONAL SECURITY",
-   "titulo": "China rechaza veto estadounidense a robots: acusa generalización del concepto de seguridad nacional",
-   "resumen": "Ministerio de Relaciones Exteriores de China emitió declaración oficial rechazando prohibición estadounidense a importaciones de robots chinos anunciada por Trump. Beijing acusa a Washington de usar argumentos de 'seguridad nacional' de forma generalizada y arbitraria. Disputa refleja escalada de tensión comercial-tecnológica bilateral en sector de automatización industrial.",
-   "analisis": {
-    "porque": "Conflicto comercial EE.UU.-China sobre tecnología afecta cadenas de suministro globales, valuaciones de tech y volatilidad de índices. Restricciones a exportación de robots impactan costos industriales en EE.UU., márgenes de manufactureros y competitividad relativa.",
-    "queOcurrio": "China respondió oficialmente al veto estadounidense a robots (titulado en [33674]). Ministerio rechazó acusación de seguridad nacional como generalización injustificada. Respuesta diplomatic pero firme, típica de escaladas comerciales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Reuters/CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "DXY",
-    "Materias Primas"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "china-usa",
-    "trade-war",
-    "robots",
-    "tech-restrictions",
-    "tariffs"
-   ],
-   "tgText": "🔴 China rechaza veto de EE.UU. a robots: acusa uso arbitrario de 'seguridad nacional'. Escalada comercial bilateral en tech. Impacto en cadenas suministro y márgenes industriales.",
-   "xText": "China responde: veto a robots es generalización arbitraria de seguridad nacional. Escalada comercial EE.UU.-China en automatización industrial. Riesgo para suministros y márgenes.",
-   "discordText": "**US-China Tech Escalation**\n• China: rechaza veto a robots\n• Acusación: 'seguridad nacional' genérica\n• Sector: automatización industrial\n• Impacto: cadenas suministro\n• Riesgo: escalada comercial",
-   "pushText": "China rechaza veto a robots: acusa generalización de seguridad nacional",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NASDAQ-100 (tech pesado) reacciona a riesgo de nuevas restricciones comerciales. Acciones de manufactureros que dependen de equipo chino ven presión.",
-    "despues": "S&P500 sigue a NASDAQ. Dólar se fortalece por aversión al riesgo. Commodities bajan si mercado proyecta crecimiento más débil global.",
-    "escenarios": "Traders vigilarán: (1) si China impone contramedidas arancelarias; (2) sectores automotriz/semiconductores vulnerables a supply chain disruption; (3) si restricciones se expanden a otras tecnologías; (4) proximidad a negociaciones Trump-Xi.",
-    "riesgos": "Escalada es típica en ciclos comerciales pero imprevisible. Titular es respuesta diplomática sin medidas concretas anunciadas todavía. Potencial de sobrerreacción de mercado."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7863,6 +7823,16 @@
   "https://www.cnbc.com/2026/07/31/trump-pirro-reflecting-pool-olympian-david-hearn.html",
   "https://www.cnbc.com/2026/07/31/soccer-fifa-scraps-world-cup-sell-off-plan-after-resistance-from-members.html",
   "https://www.cnbc.com/2026/07/31/us-lawmakers-doordash-chinese-ai-models.html",
-  "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html"
+  "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html",
+  "https://www.cnbc.com/2026/08/01/best-buy-ceo-jason-bonfig-smaller-stores.html",
+  "https://www.cnbc.com/2026/08/01/wildfires-rage-in-greece-firefighters-battle-blazes-in-france-spain.html",
+  "https://www.cnbc.com/2026/08/01/from-a-fed-decision-to-big-tech-earnings-what-drove-last-weeks-volatile-market.html",
+  "https://www.cnbc.com/2026/08/01/glp-1-prescriptions-weight-loss-walmart-costco-amazon.html",
+  "https://www.cnbc.com/2026/08/01/spain-installs-sea-barrier-in-north-african-enclave-after-border-rush.html",
+  "https://www.cnbc.com/video/2026/08/01/robert-reich-kahlil-greene-talk-politics-protest-and-capitalism.html",
+  "https://www.cnbc.com/2026/08/01/condo-buyers-mortgage-rules-fannie-mae-freddie-mac.html",
+  "https://www.cnbc.com/2026/08/01/these-stocks-reporting-next-week-have-history-of-beating-expectations.html",
+  "https://www.cnbc.com/2026/08/01/stocks-to-buy-now-before-they-report-earnings.html",
+  "https://www.cnbc.com/2026/08/01/traders-go-full-time-on-prediction-markets-using-ai-bots-and-antennas.html"
  ]
 }
