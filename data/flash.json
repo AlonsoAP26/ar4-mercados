@@ -1,6 +1,6 @@
 {
- "lastId": 33833,
- "actualizado": "2026-08-02T09:01:14.974Z",
+ "lastId": 33834,
+ "actualizado": "2026-08-02T12:04:57.942Z",
  "items": [
   {
    "id": "33833",
@@ -81,7 +81,15 @@
     "petroleo": "bajista",
     "bonos": "neutral a alcista"
    },
-   "updates": []
+   "updates": [
+    {
+     "fecha": "2026-08-02T11:52:45+00:00",
+     "id": "33834",
+     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
+     "tgUrl": "https://t.me/walterbloomberg/33834"
+    }
+   ],
+   "actualizado": "2026-08-02T11:52:45+00:00"
   },
   {
    "id": "983636816",
