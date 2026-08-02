@@ -1,7 +1,434 @@
 {
  "lastId": 33834,
- "actualizado": "2026-08-02T12:04:57.942Z",
+ "actualizado": "2026-08-02T15:07:56.545Z",
  "items": [
+  {
+   "id": "33827",
+   "fecha": "2026-08-01T07:48:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33827",
+   "via": "DeItaone",
+   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
+   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
+   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "analisis": {
+    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
+    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Carry Trades",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "intervención-divisas",
+    "yen-japón",
+    "usdjpy",
+    "tesoro-usa",
+    "banco-central-japón",
+    "carry-trades"
+   ],
+   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
+   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
+   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
+   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
+    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
+    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
+    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+   },
+   "macro": {
+    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
+    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
+    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
+    "dow": "neutral a alcista por debilitamiento de dólar",
+    "sp500": "neutral a alcista por debilitamiento de dólar",
+    "bitcoin": "alcista potencial por debilitamiento de dólar",
+    "ethereum": "alcista potencial por debilitamiento de dólar",
+    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
+    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-02T14:18:01.000Z",
+     "id": "964297321",
+     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
+     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
+    },
+    {
+     "fecha": "2026-08-02T01:41:08+00:00",
+     "id": "33831",
+     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
+     "tgUrl": "https://t.me/walterbloomberg/33831"
+    },
+    {
+     "fecha": "2026-08-01T15:44:08.000Z",
+     "id": "969625772",
+     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
+     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
+    }
+   ],
+   "actualizado": "2026-08-02T14:18:01.000Z"
+  },
+  {
+   "id": "977976252",
+   "fecha": "2026-08-02T13:09:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html",
+   "via": "CNBC",
+   "original": "OPEC agrees September oil hike, completing rollback of voluntary cuts",
+   "titulo": "OPEC completa reducción de cortes voluntarios con nuevo incremento en septiembre",
+   "resumen": "OPEC acordó un aumento de producción de petróleo para septiembre, completando el desmantelamiento de los cortes voluntarios implementados en meses anteriores. La decisión marca un giro significativo en política de suministro tras presiones de demanda y dinámicas geopolíticas. El mercado ajusta exposición a crudo antes del cambio de producción.",
+   "analisis": {
+    "porque": "Los cambios en producción de OPEC impactan precios globales de energía, costos de transporte, inflación de combustibles y márgenes de energéticas. Afecta también dinámicas geopolíticas con Irán y Rusia.",
+    "queOcurrio": "OPEC acordó formalmente un aumento de producción en septiembre, completando la reversión de cortes voluntarios previos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "Energéticas",
+    "Transporte",
+    "Inflación"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Energéticas integradas",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Inflación",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "OPEC",
+    "petróleo",
+    "producción",
+    "cortes",
+    "energía",
+    "suministro"
+   ],
+   "tgText": "🛢️ OPEC acuerda aumento de producción en septiembre. Desmantelamiento completo de cortes voluntarios. Presión bajista en crudo; seguimiento en WTI/Brent y energéticas.",
+   "xText": "OPEC acuerda aumento de producción para septiembre, completando fin de cortes voluntarios. Presión en precios de petróleo; seguimiento en valuaciones de energéticas.",
+   "discordText": "**OPEC: Incremento de producción en septiembre**\n• Fin formal de cortes voluntarios\n• Presión esperada en precios WTI/Brent\n• Vigilancia: márgenes de energéticas integradas",
+   "pushText": "OPEC acuerda aumento de producción en septiembre; fin de cortes voluntarios",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "WTI y Brent caerán/se ajustarán primero por oferta incremental; traders de futuros reposicionarán",
+    "despues": "Energéticas integradas (XLE, XLV rivales) se ajustarán por márgenes comprimidos; dinero de commodities podría fluir a otros sectores",
+    "escenarios": "Traders vigilarán: (1) Magnitud del aumento vs. inventarios globales, (2) Reacción de precios spot en próximos días, (3) Implicaciones para rentabilidad de shale USA, (4) Dinámicas geopolíticas Irán-Rusia si afectan efectiva cumplimiento",
+    "riesgos": "Titular no especifica volumen exacto del aumento; efectiva implementación en septiembre depende de cumplimiento OPEC+"
+   },
+   "macro": {
+    "petroleo": "Presión bajista por oferta incremental; WTI/Brent en vigilancia",
+    "inflacion": "Presión disminuida en costos energéticos para economía global",
+    "dolar": "Ajuste neutral; competencia commodity vs. USD",
+    "nasdaq": null,
+    "dow": null,
+    "sp500": null,
+    "bitcoin": null,
+    "ethereum": null,
+    "bonos": null,
+    "oro": null
+   },
+   "updates": []
+  },
+  {
+   "id": "33821",
+   "fecha": "2026-07-31T16:26:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33821",
+   "via": "DeItaone",
+   "original": "*TRUMP SAYS IRAN LIED DURING NEGOTIATIONS *TRUMP SAYS IRAN FIRED FIVE MISSILES AT JORDAN",
+   "titulo": "Trump: Irán disparó cinco misiles contra Jordania; acusa incumplimiento en negociaciones",
+   "resumen": "El presidente Trump acusó a Irán de disparar cinco misiles contra Jordania y de mentir durante negociaciones diplomáticas. Allegación marca nuevo punto de escalada tras horas de retórica mixta (presión/diplomacia). El titular no especifica daños o contexto temporal exacto.",
+   "analisis": {
+    "porque": "Alegación concreta de acción militar directa representa escalada inmediata de conflicto. Si verificada, impacta dramaticamente precios de petróleo, activos defensivos, y evaluación de probabilidad de conflicto regional ampliado.",
+    "queOcurrio": "Trump acusó a Irán de disparar cinco misiles contra Jordania y de incumplimiento en negociaciones, sin especificar daños o verifiación independiente.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "muy alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "S&P 500",
+    "Bonos",
+    "DXY",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Misiles",
+    "Jordania",
+    "Conflicto",
+    "Escalada",
+    "Trump",
+    "Oriente Medio"
+   ],
+   "tgText": "🚨 BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania. Escalada militar directa tras horas de retórica mixta. Petróleo y oro en alerta máxima.",
+   "xText": "BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania e incumplir negociaciones. Escalada geopolítica inmediata impacta precios de petróleo y oro.",
+   "discordText": "**🚨 BREAKING: Escalada en Oriente Medio**\n• Trump: Irán disparó 5 misiles contra Jordania\n• Acusa incumplimiento en negociaciones\n• Marca nuevo punto de tensión directa\n• Petróleo y oro en alerta de volatilidad máxima",
+   "pushText": "BREAKING: Irán disparó 5 misiles contra Jordania (según Trump)",
+   "importancia": 10,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent: reacción alcista INMEDIATA si acusación se verifica; riesgo de ruptura de flujos por Golfo Pérsico",
+    "despues": "Oro (demanda defensiva), bonos (búsqueda de seguridad), S&P 500 (sesgo bajista por aversión al riesgo), DXY (fortalecimiento del dólar como activo seguro)",
+    "escenarios": "Traders vigilan URGENTE: (1) Verificación independiente de ataques misiles (Jordania, Israel, Arabia Saudita), (2) Cantidad de daños y confirmar si fueron interceptados, (3) Respuesta militar estadounidense/israelí (probabilidad muy elevada), (4) Impacto en flujos de petróleo del Golfo Pérsico (clausura del Estrecho de Ormuz = escenario extremo), (5) Extensión del conflicto a aliados de Irán (Hezbolá, militias proxy), (6) Reacción de China y Rusia",
+    "riesgos": "CRÍTICO: Verificación de allegación no disponible en tiempo real; titulares posteriores podrían refutar; reversión rápida si Trump aclara que misiles fueron interceptados sin daños; riesgo de conflicto regional ampliado si respuesta militar es desproporcionada"
+   },
+   "macro": {
+    "petroleo": "alcista muy significativo si acusación se verifica; escenario de $120+ por barril posible",
+    "oro": "alcista por demanda defensiva",
+    "dolar": "alcista por seguridad relativa",
+    "nasdaq": "bajista por aversión al riesgo",
+    "sp500": "bajista por aversión al riesgo",
+    "bonos": "alcistas (búsqueda de seguridad)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-02T13:00:01.000Z",
+     "id": "922814982",
+     "texto": "Inversores que ganaron en el spike de precios de petróleo por tensiones Irán-USA ahora enfrentan dilema sobre mantener posiciones largas. El trade se complica por señales mixtas: acuerdos diplomáticos parciales (pausa de Trump a ataques), oferta incremental de OPEC, e incertidumbre geopolítica persistente. Volatilidad esperada en reversión de posiciones.",
+     "tgUrl": "https://www.cnbc.com/2026/08/02/oil-prices-iran-war-energy-market.html"
+    },
+    {
+     "fecha": "2026-08-01T20:30:48+00:00",
+     "id": "33830",
+     "texto": "El ministro de Relaciones Exteriores de Irán comunicó por teléfono a su homólogo saudí que cualquier «agresión» de Estados Unidos e Israel, o participación de países regionales, será respondida con una «respuesta decisiva». El aviso se produce después de reportes sobre tensiones militares en Oriente Medio y disparos de misiles iraníes documentados previamente.",
+     "tgUrl": "https://t.me/walterbloomberg/33830"
+    },
+    {
+     "fecha": "2026-07-31T22:17:48+00:00",
+     "id": "33825",
+     "texto": "Senior security official iraní condenó vía TASNIM reportes de potenciales ataques estadounidenses e israelíes a infraestructuras iraníes, calificándolos como 'forma de imprudencia'. Declaración refuerza posición combativa y señala preparación para respuesta. Contexto: escalada tras reportes de disparos iraníes contra Jordania.",
+     "tgUrl": "https://t.me/walterbloomberg/33825"
+    },
+    {
+     "fecha": "2026-07-31T22:19:25+00:00",
+     "id": "33826",
+     "texto": "Funcionario iraní senior confirmó que plan de respuesta incluye infraestructuras críticas de Israel y energética estadounidense en la región. Escala amenaza tras reporte de posibles ataques de EE.UU. e Israel a infraestructuras iraníes. Declaración de TASNIM (agencia estatal iraní) eleva tensión geopolítica y riesgos de disrupción en mercados energéticos globales.",
+     "tgUrl": "https://t.me/walterbloomberg/33826"
+    },
+    {
+     "fecha": "2026-07-31T20:56:57+00:00",
+     "id": "33823",
+     "texto": "Washington e Israel coordinan una campaña potencial contra objetivos de energía en Irán, con posibles operaciones este fin de semana según CBS. Trump aún no ha dado aprobación final. Los funcionarios evalúan el impacto económico y coordinan para completar operaciones antes de la apertura de mercados del lunes. White House y autoridades israelíes alinean planes operacionales.",
+     "tgUrl": "https://t.me/walterbloomberg/33823"
+    }
+   ],
+   "actualizado": "2026-08-02T13:00:01.000Z"
+  },
+  {
+   "id": "988351782",
+   "fecha": "2026-08-02T12:01:00.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/top-analysts-are-bullish-on-these-dividend-stocks-for-passive-income-.html",
+   "via": "CNBC",
+   "original": "Top Wall Street analysts are bullish on these 3 dividend stocks for passive income",
+   "titulo": "Principales analistas de Wall Street recomiendan 3 acciones de dividendo para renta pasiva",
+   "resumen": "Analistas de Wall Street priorizan tres acciones que ofrecen dividendos atractivos para ingresos pasivos en contexto de tasas de interés elevadas. Selección busca equilibrio entre rendimiento y seguridad de pago. Atrae inversores de renta fija buscando alternativas yield en equities.",
+   "analisis": {
+    "porque": "En contexto de tasas altas, dividendo de acciones atrae inversores con tolerancia a riesgo equity pero preferencia por flujo de caja. Señal de valuaciones accesibles en ciertos sectores.",
+    "queOcurrio": "Analistas de Wall Street recomiendan tres acciones de dividendo para portafolios de renta pasiva.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Acciones de dividendo",
+    "Renta fija alternativa"
+   ],
+   "sesgos": [
+    {
+     "activo": "Dividendo stocks",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "dividendo",
+    "renta pasiva",
+    "Wall Street",
+    "ingresos",
+    "yields"
+   ],
+   "tgText": "💰 Wall Street recomienda 3 acciones de dividendo para ingresos pasivos. Estrategia defendible en tasas altas. Revisar yield vs. riesgo flotante.",
+   "xText": "Analistas de Wall Street destacan 3 acciones de dividendo para portafolios de renta. Oportunidad en yields en contexto de tasas elevadas.",
+   "discordText": "**Wall Street: 3 acciones dividendo recomendadas**\n• Estrategia renta pasiva en tasas altas\n• Balance yield-riesgo\n• Lectura en artículo completo",
+   "pushText": "Wall Street recomienda 3 dividendos stocks para renta pasiva",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Acciones de dividendo específicas nombradas por CNBC subirán si tienen soporte técnico/fundamental",
+    "despues": "Sector general de dividendo podría ver demanda si rotación de inversores buscadores de yield",
+    "escenarios": "Traders vigilarán: (1) Identidad de 3 acciones (no incluidas en titular), (2) Yields vs. bonos, (3) Sostenibilidad de pago en recesión potencial, (4) Flujos hacia defensivas",
+    "riesgos": "Titular no especifica acciones ni yields concretos; recomendación basada en contexto limitado"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "946341966",
+   "fecha": "2026-08-02T11:59:15.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/nasdaq-100-just-had-worst-month-since-march-2025-these-stocks-held-up.html",
+   "via": "CNBC",
+   "original": "The Nasdaq-100 just had its worst month since March 2025. These stocks held up and are expected to outperform ahead",
+   "titulo": "Nasdaq-100 tuvo peor mes desde marzo 2025: estas acciones resistieron y crecerán",
+   "resumen": "El Nasdaq-100 cerró agosto como su peor mes desde marzo de 2025, reflejando volatilidad en tecnología y crecimiento. CNBC identifica acciones defensivas o de sector específico que mostraron resiliencia y analistas espera que continúen outperforming. Señal de rotación sectorial en marcha.",
+   "analisis": {
+    "porque": "Identifica ganadores en período volátil; permite a inversores reposicionarse hacia acciones con momentum y downside protection. Impacta asignación de carteras en tech.",
+    "queOcurrio": "Nasdaq-100 tuvo su peor mes desde marzo 2025; algunos valores específicos resistieron y se espera outperformance futuro.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ-100",
+    "Nasdaq",
+    "Tecnología",
+    "Crecimiento"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ-100",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Acciones defensivas/momentum",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Nasdaq-100",
+    "volatilidad",
+    "peor mes",
+    "rotación sectorial",
+    "outperformance"
+   ],
+   "tgText": "📊 Nasdaq-100: peor mes desde marzo 2025. CNBC destaca valores que resistieron presión. Rotación sectorial en marcha; seguimiento en defensivas.",
+   "xText": "Nasdaq-100 registró su peor mes desde marzo 2025. Analistas esperan que acciones resilientes continúen ganando. Señal de rotación sectorial.",
+   "discordText": "**Nasdaq-100: peor mes desde marzo 2025**\n• Volatilidad generalizada en tech\n• Valores defensivos mostraron resiliencia\n• Expectativa de rotación sectorial continua",
+   "pushText": "Nasdaq-100: peor mes desde marzo 2025; valores defensivos lideran outperformance",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Tech growth (QQQ) refleja presión; valores identificados como resilientes subirán/estabilizarán primero",
+    "despues": "Sectores defensivos (utilidades, consumo básico, healthcare) podrían continuar ganancia en rotación más amplia",
+    "escenarios": "Traders vigilarán: (1) Qué acciones específicas nominadas por CNBC como resilientes (titular no las nombra), (2) Si rotación continúa o es bounce temporal, (3) Niveles de soporte Nasdaq-100 post-agosto, (4) Earnings de grandes tech en septiembre",
+    "riesgos": "Titular no especifica qué acciones/sectores consideró; análisis depende de contenido completo del artículo no incluido"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "918908961",
+   "fecha": "2026-08-02T11:56:25.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/amd-sandisk-are-two-of-the-big-chip-stocks-with-earnings-momentum.html",
+   "via": "CNBC",
+   "original": "AMD and Sandisk are two of the big chip stocks with earnings momentum in the new week",
+   "titulo": "AMD y SanDisk lideran el momentum de earnings en semiconductores esta semana",
+   "resumen": "AMD y SanDisk se posicionan como dos de las principales acciones de chips con momentum en reportes de ganancias. El sector semiconductor enfrenta escrutinio de analistas sobre márgenes, demanda de IA y ciclos de inventario. Ambas empresas reportarán resultados que el mercado monitoreará para evaluar salud del ecosistema de chips.",
+   "analisis": {
+    "porque": "Los resultados de grandes fabricantes de chips determinan perspectivas sobre gasto en IA, data centers y recuperación de demanda post-corrección de inventario. Afecta toda la cadena de semiconductores.",
+    "queOcurrio": "CNBC identifica AMD y SanDisk como acciones de chips con momentum esperado en la semana de earnings.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Semiconductores",
+    "AMD",
+    "SNDK"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings",
+    "semiconductores",
+    "AMD",
+    "SanDisk",
+    "chips",
+    "momentum"
+   ],
+   "tgText": "AMD y SanDisk encabezan earnings de chips esta semana. Mercado atento a márgenes, demanda IA e inventarios. Pivote clave para outlook del sector.",
+   "xText": "AMD y SanDisk reportan ganancias esta semana con momentum en semiconductores. Analistas vigilan márgenes y demanda de IA como indicador de salud del sector.",
+   "discordText": "**AMD y SanDisk en foco esta semana**\n• Earnings de chips con momentum\n• Mercado atento a: márgenes, demanda IA, inventarios\n• Pivote importante para outlook sector",
+   "pushText": "AMD y SanDisk: earnings clave en semiconductores esta semana",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Semiconductores (SOX) reaccionarán primero según results beat/miss en márgenes y guidance IA",
+    "despues": "NASDAQ y valores de data centers (Nvidia, Intel) se ajustarán según implicaciones de demanda",
+    "escenarios": "Traders monitorearan: (1) Márgenes brutos vs. expectativas, (2) Commentary sobre demanda IA/data centers, (3) Guidance forward y ciclo de inventario, (4) Comparables con Nvidia/Intel ya reportados",
+    "riesgos": "El titular no especifica números o expectativas concretas; earnings pueden sorprender en cualquier dirección"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33833",
    "fecha": "2026-08-02T08:57:35+00:00",
@@ -225,188 +652,6 @@
     "petroleo": "muy alcista; Brent potencial superar $90/bbl si cierre Ormuz"
    },
    "updates": []
-  },
-  {
-   "id": "33827",
-   "fecha": "2026-08-01T07:48:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33827",
-   "via": "DeItaone",
-   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
-   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
-   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
-   "analisis": {
-    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
-    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times (vía Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "USDJPY",
-    "DXY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Carry Trades",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "intervención-divisas",
-    "yen-japón",
-    "usdjpy",
-    "tesoro-usa",
-    "banco-central-japón",
-    "carry-trades"
-   ],
-   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
-   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
-   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
-   "pushText": "USA y Japón intervienen en divisas para sostener yen",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
-    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
-    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
-    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
-   },
-   "macro": {
-    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
-    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
-    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
-    "dow": "neutral a alcista por debilitamiento de dólar",
-    "sp500": "neutral a alcista por debilitamiento de dólar",
-    "bitcoin": "alcista potencial por debilitamiento de dólar",
-    "ethereum": "alcista potencial por debilitamiento de dólar",
-    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
-    "petroleo": "neutral a alcista por debilitamiento de dólar"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-02T01:41:08+00:00",
-     "id": "33831",
-     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
-     "tgUrl": "https://t.me/walterbloomberg/33831"
-    },
-    {
-     "fecha": "2026-08-01T15:44:08.000Z",
-     "id": "969625772",
-     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
-     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
-    }
-   ],
-   "actualizado": "2026-08-02T01:41:08+00:00"
-  },
-  {
-   "id": "33821",
-   "fecha": "2026-07-31T16:26:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33821",
-   "via": "DeItaone",
-   "original": "*TRUMP SAYS IRAN LIED DURING NEGOTIATIONS *TRUMP SAYS IRAN FIRED FIVE MISSILES AT JORDAN",
-   "titulo": "Trump: Irán disparó cinco misiles contra Jordania; acusa incumplimiento en negociaciones",
-   "resumen": "El presidente Trump acusó a Irán de disparar cinco misiles contra Jordania y de mentir durante negociaciones diplomáticas. Allegación marca nuevo punto de escalada tras horas de retórica mixta (presión/diplomacia). El titular no especifica daños o contexto temporal exacto.",
-   "analisis": {
-    "porque": "Alegación concreta de acción militar directa representa escalada inmediata de conflicto. Si verificada, impacta dramaticamente precios de petróleo, activos defensivos, y evaluación de probabilidad de conflicto regional ampliado.",
-    "queOcurrio": "Trump acusó a Irán de disparar cinco misiles contra Jordania y de incumplimiento en negociaciones, sin especificar daños o verifiación independiente.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "muy alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "S&P 500",
-    "Bonos",
-    "DXY",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Misiles",
-    "Jordania",
-    "Conflicto",
-    "Escalada",
-    "Trump",
-    "Oriente Medio"
-   ],
-   "tgText": "🚨 BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania. Escalada militar directa tras horas de retórica mixta. Petróleo y oro en alerta máxima.",
-   "xText": "BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania e incumplir negociaciones. Escalada geopolítica inmediata impacta precios de petróleo y oro.",
-   "discordText": "**🚨 BREAKING: Escalada en Oriente Medio**\n• Trump: Irán disparó 5 misiles contra Jordania\n• Acusa incumplimiento en negociaciones\n• Marca nuevo punto de tensión directa\n• Petróleo y oro en alerta de volatilidad máxima",
-   "pushText": "BREAKING: Irán disparó 5 misiles contra Jordania (según Trump)",
-   "importancia": 10,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent: reacción alcista INMEDIATA si acusación se verifica; riesgo de ruptura de flujos por Golfo Pérsico",
-    "despues": "Oro (demanda defensiva), bonos (búsqueda de seguridad), S&P 500 (sesgo bajista por aversión al riesgo), DXY (fortalecimiento del dólar como activo seguro)",
-    "escenarios": "Traders vigilan URGENTE: (1) Verificación independiente de ataques misiles (Jordania, Israel, Arabia Saudita), (2) Cantidad de daños y confirmar si fueron interceptados, (3) Respuesta militar estadounidense/israelí (probabilidad muy elevada), (4) Impacto en flujos de petróleo del Golfo Pérsico (clausura del Estrecho de Ormuz = escenario extremo), (5) Extensión del conflicto a aliados de Irán (Hezbolá, militias proxy), (6) Reacción de China y Rusia",
-    "riesgos": "CRÍTICO: Verificación de allegación no disponible en tiempo real; titulares posteriores podrían refutar; reversión rápida si Trump aclara que misiles fueron interceptados sin daños; riesgo de conflicto regional ampliado si respuesta militar es desproporcionada"
-   },
-   "macro": {
-    "petroleo": "alcista muy significativo si acusación se verifica; escenario de $120+ por barril posible",
-    "oro": "alcista por demanda defensiva",
-    "dolar": "alcista por seguridad relativa",
-    "nasdaq": "bajista por aversión al riesgo",
-    "sp500": "bajista por aversión al riesgo",
-    "bonos": "alcistas (búsqueda de seguridad)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-01T20:30:48+00:00",
-     "id": "33830",
-     "texto": "El ministro de Relaciones Exteriores de Irán comunicó por teléfono a su homólogo saudí que cualquier «agresión» de Estados Unidos e Israel, o participación de países regionales, será respondida con una «respuesta decisiva». El aviso se produce después de reportes sobre tensiones militares en Oriente Medio y disparos de misiles iraníes documentados previamente.",
-     "tgUrl": "https://t.me/walterbloomberg/33830"
-    },
-    {
-     "fecha": "2026-07-31T22:17:48+00:00",
-     "id": "33825",
-     "texto": "Senior security official iraní condenó vía TASNIM reportes de potenciales ataques estadounidenses e israelíes a infraestructuras iraníes, calificándolos como 'forma de imprudencia'. Declaración refuerza posición combativa y señala preparación para respuesta. Contexto: escalada tras reportes de disparos iraníes contra Jordania.",
-     "tgUrl": "https://t.me/walterbloomberg/33825"
-    },
-    {
-     "fecha": "2026-07-31T22:19:25+00:00",
-     "id": "33826",
-     "texto": "Funcionario iraní senior confirmó que plan de respuesta incluye infraestructuras críticas de Israel y energética estadounidense en la región. Escala amenaza tras reporte de posibles ataques de EE.UU. e Israel a infraestructuras iraníes. Declaración de TASNIM (agencia estatal iraní) eleva tensión geopolítica y riesgos de disrupción en mercados energéticos globales.",
-     "tgUrl": "https://t.me/walterbloomberg/33826"
-    },
-    {
-     "fecha": "2026-07-31T20:56:57+00:00",
-     "id": "33823",
-     "texto": "Washington e Israel coordinan una campaña potencial contra objetivos de energía en Irán, con posibles operaciones este fin de semana según CBS. Trump aún no ha dado aprobación final. Los funcionarios evalúan el impacto económico y coordinan para completar operaciones antes de la apertura de mercados del lunes. White House y autoridades israelíes alinean planes operacionales.",
-     "tgUrl": "https://t.me/walterbloomberg/33823"
-    }
-   ],
-   "actualizado": "2026-08-01T20:30:48+00:00"
   },
   {
    "id": "988397861",
@@ -7438,211 +7683,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 995817277,
-   "fecha": "2026-07-29T21:08:27.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/carvana-cvna-earnings-q2-2026.html",
-   "via": "CNBC",
-   "original": "Carvana stock falls 15% as auto retailer&apos;s 2026 earnings guidance misses Wall Street&apos;s expectations",
-   "titulo": "Carvana cae 15% tras fallar guidance 2026; retail automotriz enfrenta headwinds",
-   "resumen": "Las acciones de Carvana se desplomaron 15% después de que el minorista automotriz en línea publicara guidance de ganancias para 2026 por debajo de las expectativas de Wall Street. La caída refleja presiones persistentes en demanda automotriz y márgenes comprimidos en el segmento de venta directa al consumidor.",
-   "analisis": {
-    "porque": "Retail automotriz es indicador de confianza del consumidor y ciclo de crédito automotriz; caída significativa de acción específica afecta pequeña porción de índices pero valida debilidad en consumo de bienes durables",
-    "queOcurrio": "Carvana divulgó guidance de ganancias 2026 que no cumple expectativas de mercado, provocando caída de 15% en acción",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "CVNA",
-    "S&P500",
-    "Retail Automotriz",
-    "Consumer Discretionary"
-   ],
-   "sesgos": [
-    {
-     "activo": "CVNA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Consumer Discretionary",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Carvana",
-    "CVNA",
-    "Guidance",
-    "Retail Auto",
-    "Consumo",
-    "Márgenes"
-   ],
-   "tgText": "🚗 Carvana cae 15% por guidance 2026 débil. Presión en demanda auto y márgenes comprimidos. Señal de debilidad en consumo de durables.",
-   "xText": "CVNA plunge 15%: Guidance 2026 falla. Retail auto enfrenta presión en demanda y márgenes. Indicador de confianza consumidor débil. #Retail",
-   "discordText": "**Carvana: Caída 15% en Guidance**\n• 2026 guidance por debajo de expectativas\n• Presión en demanda automotriz\n• Márgenes comprimidos\n→ Señal debilidad consumo durables",
-   "pushText": "Carvana cae 15% por guidance 2026 decepcionante",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "CVNA: caída directa por revisión a la baja; comparables en retail auto pueden sufrir contagio",
-    "despues": "Confianza de consumidor, crédito automotriz, bienes durables, S&P 500",
-    "escenarios": "Traders vigilarán si debilidad es específica de Carvana (modelo DTC) o síntoma sistémico de mercado auto; impacto en fabricantes (F, GM) y financieras de crédito auto",
-    "riesgos": "Caída podría exagerada si Carvana es outlier; debilidad en auto podría indicar ciclo de crédito en riesgo"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 920374616,
-   "fecha": "2026-07-29T20:58:06.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/gundlach-says-the-bond-market-is-signaling-the-fed-has-to-act-on-inflation.html",
-   "via": "CNBC",
-   "original": "Jeffrey Gundlach says the bond market is telling Warsh the Fed has to start acting on inflation",
-   "titulo": "Gundlach: Mercado de bonos advierte Fed que debe actuar contra inflación",
-   "resumen": "El gestor de bonos Jeffrey Gundlach señaló que el mercado de bonos está enviando un mensaje claro a la Fed: debe tomar medidas sobre inflación. Sus comentarios refuerzan la brecha entre la retórica de control de la Fed y las señales de pricing del mercado de renta fija de largo plazo.",
-   "analisis": {
-    "porque": "Opinión de prominente gestor de bonos valida dinámicas de mercado vs política monetaria; influencia en estrategias de inversión de grandes portafolios; afecta expectativas de tasas futuras",
-    "queOcurrio": "Gundlach comentó que el mercado de bonos está indicando a la Fed la necesidad de actuar sobre inflación",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos USA",
-    "Rendimientos USA",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Rendimientos",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "FED",
-   "keywords": [
-    "Gundlach",
-    "Bonos",
-    "Fed",
-    "Inflación",
-    "Tasas",
-    "Política Monetaria"
-   ],
-   "tgText": "💬 Gundlach: Mercado de bonos advierte Fed sobre inflación. Pricing confirma presión para actuar. Refuerza brecha retórica-mercado.",
-   "xText": "Gundlach: Mercado bonos dice Fed debe actuar vs inflación. Dinámicas de bonos adelantan presión por tasas. #Bonos #Fed",
-   "discordText": "**Gundlach: Mercado Bonos Presiona Fed**\n• Gestor de bonos: mercado envía mensaje claro\n• Fed debe actuar sobre inflación\n• Confirma brecha retórica vs pricing\n→ Dinámicas de tasas en presión",
-   "pushText": "Gundlach: Mercado de bonos presiona Fed a actuar sobre inflación",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Rendimientos de bonos USA: confirmación de presión alcista; DXY puede seguir fuerza",
-    "despues": "Expectativas de tasas Sep, S&P 500 (si tasas suben, presión en valuaciones)",
-    "escenarios": "Traders vigilarán si Fed responde a presión de mercado; si ignora señales de bonos, volatilidad podría intensificarse; comparar con otros gestores para validar consenso",
-    "riesgos": "Opinión de Gundlach es respetada pero no garantiza movimiento Fed; mercado podría estar equivocado sobre magnitud de inflación persistente"
-   },
-   "macro": {
-    "bonos": "neutral (pero presión alcista en rendimientos)",
-    "rendimientos": "alcista",
-    "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": 936531796,
-   "fecha": "2026-07-29T20:44:19.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html",
-   "via": "CNBC",
-   "original": "Fed meeting recap: Warsh says Fed won&apos;t hesitate to stop inflation, but bond market has doubts",
-   "titulo": "Mercado de bonos cuestiona compromiso de la Fed con lucha anti-inflacionaria",
-   "resumen": "El presidente de la Fed, Lael Warsh, reafirmó que la institución no dudará en frenar la inflación, pero el mercado de bonos envía señales contradictorias sobre la credibilidad de ese compromiso. Según indicadores de bonos de largo plazo, los operadores dudan sobre la consistencia de la política monetaria en los próximos meses.",
-   "analisis": {
-    "porque": "Dinámicas de mercado de bonos anticipan futuras decisiones de política monetaria; desconexión entre retórica de Fed y expectativas de mercado afecta curva de rendimientos, valuación de activos y decisiones de inversión de largo plazo",
-    "queOcurrio": "Warsh declaró que Fed no titubearía en combatir inflación, pero mercado de bonos muestra escépticismo sobre ese compromiso via pricing de bonos",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Bonos USA",
-    "Rendimientos USA",
-    "Curva de Rendimientos",
-    "DXY",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Rendimientos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "Inflación",
-    "Bonos",
-    "Warsh",
-    "Política Monetaria",
-    "Mercado Bonos"
-   ],
-   "tgText": "🏦 Warsh confirma: Fed contra inflación. Pero mercado de bonos desconfía. Curva de rendimientos muestra escepticismo sobre próximos pasos de Fed.",
-   "xText": "Fed vs Bonos: Warsh dice 'no titubearemos' vs inflación, pero mercado duda. Desconexión entre retórica y expectativas. #Bonos #Política Monetaria",
-   "discordText": "**Fed: Brecha Retórica vs Mercado Bonos**\n• Warsh reafirma lucha vs inflación\n• Mercado de bonos muestra escepticismo\n• Dinámicas anticipan próximas decisiones\n→ Volatilidad en bonos y DXY",
-   "pushText": "Mercado de bonos cuestiona compromiso de Fed con control de inflación",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Bonos USA (especialmente largo plazo): volatilidad en pricing y curva de rendimientos; DXY puede subir si mercado anticipa tasas más altas",
-    "despues": "S&P 500, activos de renta fija corporativa, divisas emergentes, oro",
-    "escenarios": "Traders vigilarán próximas declaraciones de Fed para resolver confusión; watch para September meeting; si bonos siguen mostrando escepticismo, Fed podría perder credibilidad en control de inflación",
-    "riesgos": "Desconexión prolongada entre Fed y mercado podría generar volatilidad; si Fed efectivamente actúa, bonos pueden rebotarse; si no actúa, credibilidad de control inflacionario en riesgo"
-   },
-   "macro": {
-    "bonos": "neutral (pero pricing muestra escepticismo)",
-    "rendimientos": "alcista (mercado anticipa más volatilidad)",
-    "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33723",
-   "fecha": "2026-07-29T18:01:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33723",
-   "via": "DeItaone",
-   "original": "FED HOLDS RATES, HAWKISH SPLIT EMERGES The Federal Reserve left its benchmark rate unchanged at 3.50%–3.75%, saying inflation remains above its 2% target while the economy continues to expand at a solid pace. The decision passed 9–3, with Hammack, Kashkari and Logan dissenting in favor of a 25-basis-point rate hike. The Fed also highlighted strong productivity, resilient job growth and ongoing amp",
-   "titulo": null,
-   "resumen": "Información duplicada de decisión Fed con énfasis adicional en productividad fuerte y reservas bancarias amplias como contexto de estabilidad para mantener postura restrictiva.",
-   "analisis": null,
-   "impacto": null,
-   "breaking": false,
-   "activos": [],
-   "sesgos": [],
-   "volatilidad": null,
-   "categoria": null,
-   "keywords": [],
-   "tgText": null,
-   "xText": null,
-   "discordText": null,
-   "pushText": null,
-   "importancia": null,
-   "reaccion": null,
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7859,6 +7899,16 @@
   "https://www.cnbc.com/select/best-5-year-cds/",
   "https://www.cnbc.com/2026/08/01/trumps-settlement-fund-threat-injects-uncertainty-into-ag-talks.html",
   "https://www.cnbc.com/2026/08/01/goldman-traders-are-on-pace-for-a-record-year-a-close-up-look-at-how-theyre-doing-it.html",
-  "https://www.cnbc.com/2026/08/01/capital-one-closed-trump-organization-accounts-after-investigation.html"
+  "https://www.cnbc.com/2026/08/01/capital-one-closed-trump-organization-accounts-after-investigation.html",
+  "https://www.cnbc.com/2026/08/02/amd-sandisk-are-two-of-the-big-chip-stocks-with-earnings-momentum.html",
+  "https://www.cnbc.com/2026/08/02/nasdaq-100-just-had-worst-month-since-march-2025-these-stocks-held-up.html",
+  "https://www.cnbc.com/2026/08/02/flights-are-getting-even-more-expensive-as-fuel-prices-rise.html",
+  "https://www.cnbc.com/2026/08/02/top-analysts-are-bullish-on-these-dividend-stocks-for-passive-income-.html",
+  "https://www.cnbc.com/2026/08/02/ukrainian-drones-kill-two-russia-governors-say.html",
+  "https://www.cnbc.com/2026/08/02/ai-model-competition-us-china.html",
+  "https://www.cnbc.com/2026/08/02/oil-prices-iran-war-energy-market.html",
+  "https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html",
+  "https://www.cnbc.com/2026/08/02/state-student-loans.html",
+  "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
  ]
 }
