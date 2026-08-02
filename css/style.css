@@ -5380,8 +5380,12 @@ td > .dk-chip:first-child { margin-left: 0; }
   .section-head h2, .section-head h3 { min-width: 0; }
   .section-head > p, .section-head .badge-live, .section-head .rl-tier-badge, .section-head .eyebrow { flex-basis: 100%; }
   .section-head .rl-tier-badge, .section-head .badge-live { width: max-content; }
-  /* Tabla del Trust Score (Metodología) como tarjetas apiladas legibles */
+  /* Tabla del Trust Score (Metodología) como tarjetas apiladas legibles.
+     Posiciones explícitas: con columna definida + fila automática, el grid
+     colocaba la descripción ANTES que su etiqueta. */
   .met-tabla .admin-row { grid-template-columns: 1fr auto; gap: 3px 12px; align-items: baseline; }
-  .met-tabla .admin-row > span:nth-child(3) { grid-column: 1 / -1; color: var(--text-mid); }
+  .met-tabla .admin-row > span:nth-child(1) { grid-row: 1; grid-column: 1; }
+  .met-tabla .admin-row > span:nth-child(2) { grid-row: 1; grid-column: 2; justify-self: end; }
+  .met-tabla .admin-row > span:nth-child(3) { grid-row: 2; grid-column: 1 / -1; color: var(--text-mid); text-align: left; }
   .met-tabla .admin-row-head { display: none; }
 }
