@@ -1,7 +1,108 @@
 {
- "lastId": 33834,
- "actualizado": "2026-08-02T15:07:56.545Z",
+ "lastId": 33836,
+ "actualizado": "2026-08-02T17:26:24.431Z",
  "items": [
+  {
+   "id": "33833",
+   "fecha": "2026-08-02T08:57:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33833",
+   "via": "DeItaone",
+   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
+   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
+   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
+   "analisis": {
+    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
+    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "DXY",
+    "EURUSD",
+    "Oro",
+    "VIX",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "nuclear",
+    "Ormuz",
+    "negociaciones",
+    "pausa militar",
+    "Oriente Medio"
+   ],
+   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
+   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
+   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
+   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
+    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
+    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
+    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
+   },
+   "macro": {
+    "dolar": "alcista corto plazo (alivio geopolítico)",
+    "oro": "bajista corto plazo",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "petroleo": "bajista",
+    "bonos": "neutral a alcista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-02T16:40:18+00:00",
+     "id": "33836",
+     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
+     "tgUrl": "https://t.me/walterbloomberg/33836"
+    },
+    {
+     "fecha": "2026-08-02T16:35:19+00:00",
+     "id": "33835",
+     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
+     "tgUrl": "https://t.me/walterbloomberg/33835"
+    },
+    {
+     "fecha": "2026-08-02T11:52:45+00:00",
+     "id": "33834",
+     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
+     "tgUrl": "https://t.me/walterbloomberg/33834"
+    }
+   ],
+   "actualizado": "2026-08-02T16:40:18+00:00"
+  },
   {
    "id": "33827",
    "fecha": "2026-08-01T07:48:11+00:00",
@@ -428,95 +529,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33833",
-   "fecha": "2026-08-02T08:57:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33833",
-   "via": "DeItaone",
-   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
-   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
-   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
-   "analisis": {
-    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
-    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "DXY",
-    "EURUSD",
-    "Oro",
-    "VIX",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "nuclear",
-    "Ormuz",
-    "negociaciones",
-    "pausa militar",
-    "Oriente Medio"
-   ],
-   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
-   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
-   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
-   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
-    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
-    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
-    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
-   },
-   "macro": {
-    "dolar": "alcista corto plazo (alivio geopolítico)",
-    "oro": "bajista corto plazo",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "petroleo": "bajista",
-    "bonos": "neutral a alcista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-02T11:52:45+00:00",
-     "id": "33834",
-     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
-     "tgUrl": "https://t.me/walterbloomberg/33834"
-    }
-   ],
-   "actualizado": "2026-08-02T11:52:45+00:00"
   },
   {
    "id": "983636816",
