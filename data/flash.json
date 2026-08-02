@@ -1,6 +1,6 @@
 {
  "lastId": 33830,
- "actualizado": "2026-08-01T21:05:26.457Z",
+ "actualizado": "2026-08-02T00:15:01.728Z",
  "items": [
   {
    "id": "33821",
@@ -97,6 +97,61 @@
     }
    ],
    "actualizado": "2026-08-01T20:30:48+00:00"
+  },
+  {
+   "id": "988397861",
+   "fecha": "2026-08-01T20:22:15.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/goldman-traders-are-on-pace-for-a-record-year-a-close-up-look-at-how-theyre-doing-it.html",
+   "via": "CNBC",
+   "original": "Goldman traders are on pace for a record year. A close-up look at how they&apos;re doing it",
+   "titulo": "Traders de Goldman Sachs en camino a año récord; análisis de estrategias",
+   "resumen": "Según CNBC, los operadores de Goldman Sachs están encaminados hacia resultados sin precedentes en 2026. El titular no especifica sectores, estrategias particulares o cifras exactas de ganancias, pero sugiere desempeño excepcional en la división de trading del banco durante el año en curso.",
+   "analisis": {
+    "porque": "Indica fortaleza operativa en una división clave de banca de inversión. La salud de trading en Goldman típicamente refleja condiciones de volatilidad, spreads amplios y actividad M&A elevada, elementos que afectan apetito de riesgo general.",
+    "queOcurrio": "Operadores de Goldman Sachs están registrando ganancias que podrían alcanzar récords anuales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "GS",
+    "NYSE Banking Index",
+    "Spreads Bonos Corporativos",
+    "Volatilidad (VIX)"
+   ],
+   "sesgos": [
+    {
+     "activo": "GS",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Sector Financiero",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Goldman Sachs",
+    "trading",
+    "banca de inversión",
+    "resultados",
+    "2026"
+   ],
+   "tgText": "🏦 Traders de Goldman Sachs encaminados a año récord. El desempeño excepcional sugiere spreads amplios y alta actividad en mercados. Indicador de apetito de riesgo elevado.",
+   "xText": "📈 Goldman Sachs traders en camino a un año récord. Refuerza señales de fortaleza en banca de inversión y actividad de mercado robusta. #GS #FinanzasUSA",
+   "discordText": "**Goldman Sachs: Traders hacia récord anual**\n• Operadores en desempeño sin precedentes\n• Refleja spreads amplios y alta volatilidad\n• Positivo para sector financiero general",
+   "pushText": "GS traders hacia año récord; fortaleza en banca de inversión",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de GS suelen reaccionar positivamente a noticias de ganancia operativa. Trading fuerte indica spreads favorables y apetito de riesgo.",
+    "despues": "Otros bancos de inversión (JPM, MS, BLK) podrían beneficiarse por señalización de condiciones de mercado favorables. Índices financieros y spreads de crédito podrían estrecharse.",
+    "escenarios": "Traders vigilarán si esta fortaleza coincide con volatilidad sostenida en derivados, actividad M&A elevada o spreads sobreexpandidos. Evaluar si es sostenible o concentrada en periodos puntuales.",
+    "riesgos": "El titular carece de detalles; no especifica qué divisiones generan ganancias ni si son sostenibles. Posible que sea resultado de eventos únicos de volatilidad no repetibles."
+   },
+   "macro": null,
+   "updates": []
   },
   {
    "id": "33827",
@@ -7552,56 +7607,6 @@
     "dow": "sesgo alcista por demanda récord en industriales"
    },
    "updates": []
-  },
-  {
-   "id": "33716",
-   "fecha": "2026-07-29T14:11:27+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33716",
-   "via": "DeItaone",
-   "original": "ELON MUSK SETTLES LONG-RUNNING LEGAL BATTLE WITH X ADVERTISERS - FT",
-   "titulo": "Elon Musk resuelve batalla legal de años con anunciantes de X",
-   "resumen": "Elon Musk ha llegado a un acuerdo para cerrar un litigio prolongado con anunciantes de la plataforma X (antes Twitter). El titular no especifica términos del acuerdo ni montos involucrados. Este cierre representa un alivio para la operación de X después de meses de tensiones con grandes anunciantes por moderación de contenidos y políticas publicitarias.",
-   "analisis": {
-    "porque": "Reduce riesgo legal y regulatorio para X, permitiendo normalizar relaciones comerciales cruciales con el sector publicitario global. El acuerdo señala estabilización operativa tras caída de ingresos por publicidad post-adquisición.",
-    "queOcurrio": "Musk y anunciantes de X finalizaron un litigio de larga duración mediante acuerdo de conformidad.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "X (valuación privada)",
-    "Publicidad digital",
-    "Nasdaq"
-   ],
-   "sesgos": [
-    {
-     "activo": "X/Musk empresas",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "elon-musk",
-    "x-twitter",
-    "litigio",
-    "anunciantes",
-    "riesgo-legal"
-   ],
-   "tgText": "Elon Musk cierra batalla legal con anunciantes de X. Acuerdo resuelve tensiones sobre moderación y políticas publicitarias. Términos no especificados.",
-   "xText": "Elon Musk llega a acuerdo para cerrar litigio con anunciantes de X tras meses de tensiones. Movimiento reduce riesgos legales para la plataforma.",
-   "discordText": "**X: Musk resuelve litigio con anunciantes**\n• Acuerdo cierra batalla legal prolongada\n• Reduce riesgo regulatorio y comercial\n• Términos no divulgados",
-   "pushText": "Musk cierra litigio con anunciantes de X",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Valuación privada de X y confianza de anunciantes: cierre de litigio reduce fricción comercial.",
-    "despues": "Empresas de publicidad digital y plataformas competidoras podrían evaluar normalizacion de relaciones con X.",
-    "escenarios": "Traders monitoreaban: (1) magnitud de potencial pago de X, (2) capacidad de recuperar anunciantes, (3) riesgos regulatorios pendientes. Acuerdo mitiga escenario adverso.",
-    "riesgos": "Términos no divulgados; posible pago oculto importante. Litigio no es la única presión sobre ingresos publicitarios de X."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7816,6 +7821,7 @@
   "https://www.cnbc.com/2026/08/01/-berkshire-hathaway-shares-hit-eight-month-high.html",
   "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html",
   "https://www.cnbc.com/select/best-5-year-cds/",
-  "https://www.cnbc.com/2026/08/01/trumps-settlement-fund-threat-injects-uncertainty-into-ag-talks.html"
+  "https://www.cnbc.com/2026/08/01/trumps-settlement-fund-threat-injects-uncertainty-into-ag-talks.html",
+  "https://www.cnbc.com/2026/08/01/goldman-traders-are-on-pace-for-a-record-year-a-close-up-look-at-how-theyre-doing-it.html"
  ]
 }
