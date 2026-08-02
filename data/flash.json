@@ -1,7 +1,173 @@
 {
- "lastId": 33830,
- "actualizado": "2026-08-02T00:15:01.728Z",
+ "lastId": 33832,
+ "actualizado": "2026-08-02T03:59:25.253Z",
  "items": [
+  {
+   "id": "33832",
+   "fecha": "2026-08-02T01:42:51+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33832",
+   "via": "DeItaone",
+   "original": "IRAN THREATENS REGIONAL ENERGY STRIKES Iran warned it will retaliate if the U.S. launches fresh attacks, with state-linked media threatening oil and gas facilities in Saudi Arabia, the UAE, Qatar and Israel. Kuwait said it intercepted Iranian drones targeting vital sites. The escalating tensions are increasing risks to global energy supplies and shipping through the Strait of Hormuz and the Red Se",
+   "titulo": "Irán amenaza represalias contra infraestructura energética regional",
+   "resumen": "Irán advirtió represalias contra posibles nuevos ataques estadounidenses, con medios estatales amenazando golpes a instalaciones petroleras y gasísticas en Arabia Saudí, EAU, Qatar e Israel. Kuwait reportó interceptación de drones iraníes. Las tensiones escalan riesgos para suministros energéticos globales y tránsito por Estrecho de Ormuz y Mar Rojo.",
+   "analisis": {
+    "porque": "Amenazas a infraestructura energética en Golfo Pérsico impactan directamente precios de petróleo y gas, afectan seguros marítimos, rendimientos de bonos por prima de riesgo geopolítico y valoraciones de energéticas.",
+    "queOcurrio": "Irán amenazó represalias contra instalaciones de petróleo/gas en Arabia Saudí, EAU, Qatar e Israel si USA lanza nuevos ataques. Kuwait interceptó drones iraníes dirigidos a sitios vitales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (medios estatales iraníes y reportes de Kuwait)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "Gas Natural",
+    "Rendimientos USA",
+    "Oro",
+    "S&P 500",
+    "Energéticas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "irán",
+    "represalias",
+    "petróleo",
+    "golfo-pérsico",
+    "seguridad-energética",
+    "estrecho-ormuz",
+    "drones",
+    "saudí",
+    "riesgo-geopolítico"
+   ],
+   "tgText": "🔴 ALERTA: Irán amenaza represalias contra infraestructura energética en Golfo Pérsico. Kuwait interceptó drones. Riesgo máximo para precios de crudo y tránsito marítimo.",
+   "xText": "🔴 CRÍTICO: Irán amenaza ataques a petróleo/gas en Arabia Saudí, EAU, Qatar e Israel. Kuwait interceptó drones. Riesgo sistémico para Estrecho de Ormuz y suministros globales.",
+   "discordText": "**🔴 GEOPOLÍTICA - Amenaza Iraní Crítica**\n• Irán amenaza represalias contra infraestructura energética\n• Objetivos: Saudi Aramco, EAU, Qatar, Israel\n• Kuwait interceptó drones dirigidos a sitios vitales\n• Riesgo al suministro mundial y navegación Estrecho de Ormuz\n• Petróleo presionando al alza",
+   "pushText": "Irán amenaza atacar infraestructura petrolera regional; riesgo crítico para suministros globales",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo Brent y WTI suben inmediatamente por prima de riesgo de suministro; Golfo Pérsico es crítico para ~30% del comercio petrolero mundial.",
+    "despues": "Oro sube por demanda de refugio; bonos USA caen por expectativa de inflación energética; acciones de energéticas saudíes/emiratíes pueden saltar; S&P 500 cede por riesgo sistémico.",
+    "escenarios": "Traders vigilarán: (1) escalada de drones/ataques en próximas 48h, (2) respuesta USA/Israel, (3) cierre real del Estrecho (sólo 21% de petróleo global), (4) costo de seguros marítimos, (5) inventarios USA de crudo.",
+    "riesgos": "Riesgo de escalada rápida a conflicto abierto; cierre del Estrecho impactaría ~21 millones de bbl/día; amenazas de medios estatales iraníes tienen historial de no-materialización pero mercado valora tail risk."
+   },
+   "macro": {
+    "dolar": "alcista por demanda de refugio; USD fortalece vs emergentes",
+    "oro": "alcista; demanda defensiva por riesgo geopolítico",
+    "nasdaq": "bajista; pérdida de apetito por riesgo en tech",
+    "dow": "bajista; presión en acciones defensivas",
+    "sp500": "bajista; prima de riesgo geopolítico eleva yields y contrae múltiplos",
+    "bitcoin": "volátil; típicamente se fortalece en crisis geopolítica similar a oro",
+    "ethereum": "volátil pero secundario",
+    "bonos": "bajistas; yields suben por inflación energética esperada",
+    "petroleo": "muy alcista; Brent potencial superar $90/bbl si cierre Ormuz"
+   },
+   "updates": []
+  },
+  {
+   "id": "33827",
+   "fecha": "2026-08-01T07:48:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33827",
+   "via": "DeItaone",
+   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
+   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
+   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "analisis": {
+    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
+    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Carry Trades",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "intervención-divisas",
+    "yen-japón",
+    "usdjpy",
+    "tesoro-usa",
+    "banco-central-japón",
+    "carry-trades"
+   ],
+   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
+   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
+   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
+   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
+    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
+    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
+    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+   },
+   "macro": {
+    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
+    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
+    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
+    "dow": "neutral a alcista por debilitamiento de dólar",
+    "sp500": "neutral a alcista por debilitamiento de dólar",
+    "bitcoin": "alcista potencial por debilitamiento de dólar",
+    "ethereum": "alcista potencial por debilitamiento de dólar",
+    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
+    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-02T01:41:08+00:00",
+     "id": "33831",
+     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
+     "tgUrl": "https://t.me/walterbloomberg/33831"
+    },
+    {
+     "fecha": "2026-08-01T15:44:08.000Z",
+     "id": "969625772",
+     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
+     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
+    }
+   ],
+   "actualizado": "2026-08-02T01:41:08+00:00"
+  },
   {
    "id": "33821",
    "fecha": "2026-07-31T16:26:22+00:00",
@@ -152,86 +318,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33827",
-   "fecha": "2026-08-01T07:48:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33827",
-   "via": "DeItaone",
-   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
-   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
-   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
-   "analisis": {
-    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
-    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times (vía Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "USDJPY",
-    "DXY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Carry Trades",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "intervención-divisas",
-    "yen-japón",
-    "usdjpy",
-    "tesoro-usa",
-    "banco-central-japón",
-    "carry-trades"
-   ],
-   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
-   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
-   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
-   "pushText": "USA y Japón intervienen en divisas para sostener yen",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
-    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
-    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
-    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
-   },
-   "macro": {
-    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
-    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
-    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
-    "dow": "neutral a alcista por debilitamiento de dólar",
-    "sp500": "neutral a alcista por debilitamiento de dólar",
-    "bitcoin": "alcista potencial por debilitamiento de dólar",
-    "ethereum": "alcista potencial por debilitamiento de dólar",
-    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
-    "petroleo": "neutral a alcista por debilitamiento de dólar"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-01T15:44:08.000Z",
-     "id": "969625772",
-     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
-     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
-    }
-   ],
-   "actualizado": "2026-08-01T15:44:08.000Z"
   },
   {
    "id": "945498443",
@@ -7541,70 +7627,6 @@
     "gas_natural": "alcista, potencial salto",
     "usd": "alcista (risk-off)",
     "sp500": "bajista (energy shock fears)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33717",
-   "fecha": "2026-07-29T15:48:52+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33717",
-   "via": "DeItaone",
-   "original": "BOFA CLIENTS KEEP BUYING THE DIP Bank of America clients remained aggressive buyers of U.S. equities last week, extending their buying streak to four consecutive weeks, even as the S&P 500 slipped 0.6%. Institutional investors led the move, posting their largest weekly net purchases since December 2020 and the second-biggest on BofA's records dating back to 2008. Retail investors also continued bu",
-   "titulo": "Clientes BofA compran acciones en caída; inversores institucionales marcan compras récord",
-   "resumen": "Clientes del Bank of America extendieron a cuatro semanas consecutivas sus compras netas de acciones estadounidenses, con inversores institucionales registrando las mayores compras semanales desde diciembre 2020 y el segundo récord en datos de BofA desde 2008. Los minoristas también compraron, mientras fondos de cobertura vendieron por tercera semana. Tecnología, Financieras e Industriales lideraron entradas, con industriales marcando demanda récord. Recompras corporativas bajaron durante earnings pero permanecen 19% arriba vs año anterior.",
-   "analisis": {
-    "porque": "El comportamiento de compra institucional agresiva en correcciones es indicador contra-cíclico fuerte que suele preceder rebounds; señala confianza fundamental y contrasta con volatilidad reciente",
-    "queOcurrio": "Banco of America reporta que sus clientes institucionales realizaron compras netas de acciones por cuarto ciclo semanal consecutivo, con magnitud segunda en su registro histórico desde 2008, incluso con S&P 500 retrocediendo 0,6% en la semana",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bank of America (reportes de flujos de cliente)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Tecnología",
-    "Financieras",
-    "Industriales"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Industriales",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "flujos-institucionales",
-    "compras-acciones",
-    "bofa",
-    "inversión-contracíclica",
-    "fondos-de-cobertura"
-   ],
-   "tgText": "BofA: clientes institucionales marcan 4ª semana de compras netas. Récord histórico en magnitud (2º desde 2008) pese a caída S&P 500. Minoristas también compran; hedge funds venden 3ª semana.",
-   "xText": "Clientes BofA en modo comprador: inversores institucionales con compras récord por 4ª semana consecutiva, segundo máximo histórico desde 2008. Minoristas también compran. Hedge funds: vendedores tercera semana.",
-   "discordText": "**Flujos BofA: Compra Institucional Masiva**\n• 4ª semana consecutiva de compras netas\n• Inversores institucionales: 2º récord desde 2008\n• Minoristas: siguen comprando\n• Hedge funds: venden por 3ª semana\n• Recompras corporativas: +19% vs año anterior",
-   "pushText": "Clientes BofA marcan 4ª semana de compras; institucionales en récord histórico",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "S&P 500 e índices amplios (SPX, NDX): flujos institucionales contra-cíclicos suelen anticipar reversiones de corto plazo",
-    "despues": "Sectores de entrada fuerte (Tech, Financieras, Industriales); pequeña capitalización si el movimiento gana volumen",
-    "escenarios": "Traders suelen vigilar si este flujo institucional soporta los mínimos de sesión o si es bounce técnico sin confirmar; comprobar si hedge funds rompen la venta o la aceleran en próximos días",
-    "riesgos": "El titular no especifica si estas compras son tácticas (rebote corto plazo) o cambio de postura fundamental; hedge funds aún vendiendo puede limitar upside"
-   },
-   "macro": {
-    "sp500": "sesgo alcista de corto plazo por flujos institucionales contra-cíclicos",
-    "nasdaq": "sesgo alcista por entradas fuertes en tecnología",
-    "dow": "sesgo alcista por demanda récord en industriales"
    },
    "updates": []
   }
