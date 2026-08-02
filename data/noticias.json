@@ -5594,5 +5594,342 @@
       ],
       "patronUltimaVela": "martillo (mecha inferior larga: rechazo de precios bajos)"
     }
+  },
+  {
+    "title": "El PIB de EE.UU. crece apenas 1,5% en el 2T y el dólar profundiza su retroceso",
+    "excerpt": "La economía estadounidense se desaceleró más de lo previsto en el segundo trimestre. El índice dólar cae y el oro extiende su repunte ante mayores apuestas a un recorte de tasas.",
+    "symbol": "CAPITALCOM:DXY",
+    "trend": "down",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La cifra que sacudió el mercado</h3><p>El Producto Interno Bruto de Estados Unidos creció a una tasa anualizada de 1,5% en el segundo trimestre de 2026, según la estimación avanzada publicada por la Oficina de Análisis Económico (BEA) el 30 de julio. El dato quedó muy por debajo del 2,1% que anticipaba el consenso de analistas y marca una desaceleración frente al 2,1% del primer trimestre.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dólar cede terreno tras el dato</h3><p>La lectura débil de crecimiento reavivó las apuestas a que la Reserva Federal retome los recortes de tasas más adelante en el año, lo que presionó al dólar. El índice DXY cotiza hoy en 99,59 puntos, con una caída semanal de 1,9% y mensual de 1,3%. El indicador se ubica por encima de su media móvil de 200 sesiones, pero su RSI de 14 en 33 puntos refleja el impulso vendedor reciente sobre el billete verde.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El oro capitaliza la debilidad del billete verde</h3><p>El oro spot avanza 2% en la sesión y cotiza en USD 4.128,2 la onza, con una ganancia semanal de 1,3%. El metal se mueve por debajo de su media de 200 ruedas, con un RSI de 51,8 que no muestra sobrecompra, lo que deja margen para que el rally continúe si se consolida la narrativa de una Fed más flexible.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La inflación no da tregua pese a la desaceleración</h3><p>El mismo 30 de julio, la BEA difundió el índice de precios PCE de junio, la medida de inflación preferida de la Fed: el índice subyacente (core) se ubicó en 3,3% interanual, en línea con lo esperado, mientras que el headline llegó a 3,7% anual, también acorde al consenso. La combinación de crecimiento más flojo con inflación todavía elevada complica el mapa de decisiones del banco central de cara a septiembre.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lo que muestran los números detrás del titular</h3><p>El reporte de la BEA detalló que el gasto de los hogares sostuvo buena parte del crecimiento del trimestre, mientras que la acumulación de inventarios restó al resultado final. En paralelo, la Fed mantuvo su tasa de referencia sin cambios en el rango de 3,50%-3,75% en su reunión de julio, a la espera de mayor confirmación de que la inflación converge hacia el objetivo de 2%. En el mercado de divisas, el euro se benefició del dólar más débil: el EUR/USD opera en 1,1551, con una suba diaria de 0,2% y semanal de 1,4%, aunque su RSI de 63,5 ya empieza a acercarse a zona de sobrecompra. En Latinoamérica, el peso mexicano cotiza en 17,31 por dólar (-0,2% en el día, -0,8% en la semana) y el real brasileño en 5,0747 (-0,1% diario, -2,8% en el mes), ambos beneficiados por el mismo flujo de debilidad del billete verde.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La combinación de un PIB por debajo de lo esperado y una inflación subyacente que no cede terreno deja a la Fed en una posición incómoda antes de su reunión de septiembre. Si los próximos datos de empleo —el reporte de julio se conocerá el 7 de agosto— confirman una moderación adicional del mercado laboral, el mercado podría acelerar las apuestas por un recorte de tasas, lo que añadiría presión bajista sobre el DXY y viento de cola para el oro y las monedas emergentes. Por el contrario, una sorpresa de fortaleza en el empleo o un rebote en la inflación de julio podría frenar el actual impulso vendedor del dólar. Vale la pena seguir de cerca el rendimiento del bono del Tesoro a 30 años, que se mantiene en niveles no vistos en casi dos décadas, un factor que puede condicionar tanto al dólar como a los activos de riesgo en las próximas semanas.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "U.S. Bureau of Economic Analysis (BEA)",
+        "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026"
+      },
+      {
+        "name": "FX Leaders",
+        "url": "https://www.fxleaders.com/news/2026/07/30/why-is-the-dollar-falling-dxy-drops-to-100-as-gdp-slows-to-1-5/"
+      },
+      {
+        "name": "FXStreet",
+        "url": "https://www.fxstreet.com/news/us-gdp-expected-to-grow-at-21-in-q2-unshaken-by-iran-conflict-202607300830"
+      },
+      {
+        "name": "InvestingLive",
+        "url": "https://investinglive.com/news/us-june-pce-inflation-3-7-vs-3-7-expected-core-3-3-vs-3-3-expected/"
+      }
+    ],
+    "aiSummary": {
+      "que": "El PIB estadounidense del segundo trimestre creció 1,5% anualizado, por debajo del 2,1% esperado, y el dólar profundizó su retroceso mientras el oro extendió su repunte.",
+      "porque": "El dato reabre las apuestas por recortes de tasas de la Fed en un contexto donde la inflación subyacente (PCE) sigue en 3,3% interanual, muy por encima del objetivo del 2%.",
+      "activos": [
+        "DXY",
+        "Oro (XAU/USD)",
+        "EUR/USD",
+        "USD/MXN",
+        "USD/BRL"
+      ],
+      "siguiente": "El reporte de empleo de julio en EE.UU., previsto para el 7 de agosto, y la reunión de la Fed de septiembre serán las próximas referencias clave."
+    },
+    "aiScenarios": {
+      "alcista": 20,
+      "lateral": 35,
+      "bajista": 45
+    },
+    "aiDetects": {
+      "probabilidad": 62,
+      "riesgo": "Medio",
+      "lectura": "El sesgo bajista del dólar podría sostenerse si el mercado laboral confirma la desaceleración, aunque una inflación pegajosa limita la convicción de la Fed para recortar de inmediato."
+    },
+    "timeline": [
+      {
+        "cuando": "Hace 4 días",
+        "texto": "La Fed mantuvo su tasa de referencia sin cambios en 3,50%-3,75% en su reunión de julio."
+      },
+      {
+        "cuando": "Hace 3 días",
+        "texto": "La BEA publicó la estimación avanzada del PIB del 2T2026: 1,5% anualizado, por debajo del 2,1% esperado."
+      },
+      {
+        "cuando": "Hace 3 días",
+        "texto": "El mismo día se difundió el índice PCE de junio: 3,7% interanual headline y 3,3% núcleo, ambos en línea con el consenso."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El DXY cotiza en 99,59 puntos (-1,9% semanal) y el oro sube 2% en la sesión hasta USD 4.128,2 la onza."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué mide el PIB avanzado?",
+        "a": "Es la primera estimación del crecimiento económico trimestral que publica la BEA, sujeta a revisiones posteriores con más información."
+      },
+      {
+        "q": "¿Por qué un PIB más débil presiona al dólar?",
+        "a": "Porque el mercado interpreta que una economía que se enfría da a la Fed más margen para bajar tasas, lo que reduce el atractivo de los activos en dólares."
+      },
+      {
+        "q": "¿Qué es el índice PCE?",
+        "a": "Es la medida de inflación que sigue de cerca la Reserva Federal para sus decisiones de política monetaria, distinta del IPC tradicional."
+      },
+      {
+        "q": "¿Por qué sube el oro cuando el dólar cae?",
+        "a": "El oro cotiza en dólares a nivel global, por lo que un billete más débil suele abaratarlo para inversores con otras monedas y refuerza su atractivo como cobertura."
+      }
+    ],
+    "impactScore": 8,
+    "relatedSymbols": [
+      "FX:EURUSD",
+      "OANDA:XAUUSD",
+      "FX_IDC:USDMXN",
+      "FX_IDC:USDBRL"
+    ],
+    "category": "Forex",
+    "heroType": "forex",
+    "slug": "el-pib-de-eeuu-crece-apenas-15-en-el-2t-y-el-dolar-profundiz-mscdquw8",
+    "author": "AR4 Mercados",
+    "date": "2026-08-02",
+    "sourceName": "U.S. Bureau of Economic Analysis (BEA)",
+    "sourceUrl": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+    "marketPanel": [
+      {
+        "symbol": "FX:EURUSD",
+        "nombre": "EUR/USD",
+        "yahooSymbol": "EURUSD=X",
+        "fuente": "Yahoo Finance (EURUSD=X)",
+        "fechaUltimaVela": "2026-08-02",
+        "precio": 1.1551,
+        "cierreAnterior": 1.1524,
+        "variacionDiaPct": 0.2,
+        "variacionSemanaPct": 1.4,
+        "variacionMesPct": 1.1,
+        "variacionAnioPct": -0.6,
+        "rangoDiaReal": {
+          "minimo": 1.1546,
+          "maximo": 1.1562
+        },
+        "rsi14": 63.5,
+        "lecturaRsi": "neutral",
+        "media50": 1.1483,
+        "media200": 1.163,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0058,
+        "maximo52sem": 1.2024,
+        "minimo52sem": 1.1325,
+        "distanciaAMaximo52semPct": -3.9,
+        "distanciaAMinimo52semPct": 2,
+        "soportes": [
+          1.1519,
+          1.143,
+          1.1359
+        ],
+        "resistencias": [
+          1.1675,
+          1.1828,
+          1.1928
+        ],
+        "patronUltimaVela": "estrella fugaz (mecha superior larga: rechazo de precios altos)"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-08-02",
+        "precio": 99.59,
+        "cierreAnterior": 99.8,
+        "variacionDiaPct": -0.2,
+        "variacionSemanaPct": -1.9,
+        "variacionMesPct": -1.3,
+        "variacionAnioPct": -0.4,
+        "rangoDiaReal": {
+          "minimo": 99.55,
+          "maximo": 99.69
+        },
+        "rsi14": 33,
+        "lecturaRsi": "neutral",
+        "media50": 100.43,
+        "media200": 99.14,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.5021,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -2.2,
+        "distanciaAMinimo52semPct": 4.2,
+        "soportes": [
+          99.34,
+          98.79,
+          97.78
+        ],
+        "resistencias": [
+          100.54,
+          101.68
+        ],
+        "patronUltimaVela": "vela bajista de cuerpo amplio"
+      },
+      {
+        "symbol": "OANDA:XAUUSD",
+        "nombre": "Oro (XAU/USD, futuro COMEX)",
+        "yahooSymbol": "GC=F",
+        "fuente": "Yahoo Finance (GC=F)",
+        "fechaUltimaVela": "2026-08-02",
+        "precio": 4128.2,
+        "cierreAnterior": 4049.1,
+        "variacionDiaPct": 2,
+        "variacionSemanaPct": 1.3,
+        "variacionMesPct": 0.4,
+        "variacionAnioPct": 25.4,
+        "rangoDiaReal": {
+          "minimo": 4122.8,
+          "maximo": 4145.5
+        },
+        "rsi14": 51.8,
+        "lecturaRsi": "neutral",
+        "media50": 4192.86,
+        "media200": 4479.44,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 71.63,
+        "maximo52sem": 5586.2,
+        "minimo52sem": 3281,
+        "distanciaAMaximo52semPct": -26.1,
+        "distanciaAMinimo52semPct": 25.8,
+        "soportes": [
+          4100.8,
+          4028.31,
+          3963.55
+        ],
+        "resistencias": [
+          4152.1,
+          4199.7,
+          4258.9
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "FX_IDC:USDMXN",
+        "nombre": "USD/MXN (peso mexicano)",
+        "yahooSymbol": "USDMXN=X",
+        "fuente": "Yahoo Finance (USDMXN=X)",
+        "fechaUltimaVela": "2026-08-02",
+        "precio": 17.31,
+        "cierreAnterior": 17.34,
+        "variacionDiaPct": -0.2,
+        "variacionSemanaPct": -0.8,
+        "variacionMesPct": -1,
+        "variacionAnioPct": -7.2,
+        "rangoDiaReal": {
+          "minimo": 17.29,
+          "maximo": 17.33
+        },
+        "rsi14": 41.4,
+        "lecturaRsi": "neutral",
+        "media50": 17.41,
+        "media200": 17.66,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.1231,
+        "maximo52sem": 18.86,
+        "minimo52sem": 17.07,
+        "distanciaAMaximo52semPct": -8.3,
+        "distanciaAMinimo52semPct": 1.4,
+        "soportes": [
+          17.24,
+          17.14
+        ],
+        "resistencias": [
+          17.43,
+          17.64,
+          17.94
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "FX_IDC:USDBRL",
+        "nombre": "USD/BRL (real brasileno)",
+        "yahooSymbol": "USDBRL=X",
+        "fuente": "Yahoo Finance (USDBRL=X)",
+        "fechaUltimaVela": "2026-08-02",
+        "precio": 5.0747,
+        "cierreAnterior": 5.0781,
+        "variacionDiaPct": -0.1,
+        "variacionSemanaPct": -0.2,
+        "variacionMesPct": -2.8,
+        "variacionAnioPct": -6.8,
+        "rangoDiaReal": {
+          "minimo": 5.0747,
+          "maximo": 5.0789
+        },
+        "rsi14": 43.7,
+        "lecturaRsi": "neutral",
+        "media50": 5.1231,
+        "media200": 5.2115,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0611,
+        "maximo52sem": 5.6168,
+        "minimo52sem": 4.8812,
+        "distanciaAMaximo52semPct": -9.7,
+        "distanciaAMinimo52semPct": 4,
+        "soportes": [
+          5.0553,
+          4.9946,
+          4.9439
+        ],
+        "resistencias": [
+          5.1035,
+          5.1684,
+          5.2461
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      }
+    ],
+    "marketData": {
+      "symbol": "CAPITALCOM:DXY",
+      "nombre": "Indice dolar (DXY)",
+      "yahooSymbol": "DX-Y.NYB",
+      "fuente": "Yahoo Finance (DX-Y.NYB)",
+      "fechaUltimaVela": "2026-08-02",
+      "precio": 99.59,
+      "cierreAnterior": 99.8,
+      "variacionDiaPct": -0.2,
+      "variacionSemanaPct": -1.9,
+      "variacionMesPct": -1.3,
+      "variacionAnioPct": -0.4,
+      "rangoDiaReal": {
+        "minimo": 99.55,
+        "maximo": 99.69
+      },
+      "rsi14": 33,
+      "lecturaRsi": "neutral",
+      "media50": 100.43,
+      "media200": 99.14,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 0.5021,
+      "maximo52sem": 101.8,
+      "minimo52sem": 95.55,
+      "distanciaAMaximo52semPct": -2.2,
+      "distanciaAMinimo52semPct": 4.2,
+      "soportes": [
+        99.34,
+        98.79,
+        97.78
+      ],
+      "resistencias": [
+        100.54,
+        101.68
+      ],
+      "patronUltimaVela": "vela bajista de cuerpo amplio"
+    }
   }
 ]
