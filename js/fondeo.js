@@ -222,6 +222,7 @@ function renderFondeoCompareTable(firmas, filter) {
   ];
 
   wrap.innerHTML = `
+    <div class="hscroll-wrap">
     <div class="compare-table-wrap">
       <table class="compare-table">
         <thead><tr><th></th>${filtered.map((f) => `<th>${f.name}</th>`).join('')}</tr></thead>
@@ -230,6 +231,7 @@ function renderFondeoCompareTable(firmas, filter) {
           <tr><th></th>${filtered.map((f) => `<td><a href="fondeo-detail.html?slug=${encodeURIComponent(f.slug)}" class="btn btn-outline" style="padding:8px 14px;font-size:0.78rem;">Ver review →</a></td>`).join('')}</tr>
         </tbody>
       </table>
+    </div>
     </div>
   `;
 }

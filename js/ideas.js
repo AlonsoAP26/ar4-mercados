@@ -91,12 +91,14 @@ function renderTradeStatusCard(idea) {
   let stepperHTML = '';
   if (meta.stage >= 0) {
     stepperHTML = `
+      <div class="hscroll-wrap">
       <div class="trade-stepper">
         ${STAGE_LABELS.map((label, i) => `
           <div class="trade-step ${i <= meta.stage ? 'done' : ''} ${i === meta.stage ? 'current' : ''}">
             <span class="trade-step-dot"></span><span class="trade-step-label">${label}</span>
           </div>
         `).join('')}
+      </div>
       </div>
     `;
   } else {
@@ -256,6 +258,11 @@ function renderTVMiniChart(container, symbol) {
     support_host: 'https://www.tradingview.com'
   });
   container.appendChild(script);
+  // Si TradingView no carga (webview que lo bloquea), esconder el hueco:
+  // una caja con borde vacía de 480px se ve como página rota.
+  const wrap = container.closest('#ideaChart') || container;
+  wrap.style.display = '';
+  setTimeout(() => { if (!container.querySelector('iframe')) wrap.style.display = 'none'; }, 9000);
 }
 
 function renderPremiumChart(container, symbol) {

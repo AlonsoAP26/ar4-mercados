@@ -5349,3 +5349,39 @@ td > .dk-chip:first-child { margin-left: 0; }
 @media (prefers-reduced-motion: reduce) {
   .fl-strip-item:first-child > .sdot { animation: none; }
 }
+
+/* ===== Perfección móvil (auditoría de 20 páginas a 360px) ===== */
+/* Iconos de Nosotros: los SVG sin atributos de tamaño explotan al 100% del
+   ancho de la tarjeta (la clase venía de la era de los emojis). */
+.nos-value-icon svg, .nos-trust-icon svg { width: 30px; height: 30px; color: var(--gold); display: block; }
+/* Filas etiqueta/valor: aire garantizado aunque el valor ocupe varias líneas */
+.featured-facts li, .broker-facts li { gap: 14px; }
+.featured-facts strong { text-align: right; }
+/* Estrellas + nota siempre en la misma línea */
+.stars { white-space: nowrap; }
+/* Avatar de Aria en la tarjeta Premium: emblema garantizado por CSS
+   (el círculo quedaba vacío — ningún script lo rellenaba). */
+.ai-premium-avatar {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3Crect%20width='48'%20height='48'%20rx='14'%20fill='%230f1625'/%3E%3Cpath%20d='M24%2012%20L33%2034%20H28.6%20L26.9%2029.4%20H21.1%20L19.4%2034%20H15%20Z'%20fill='%23f0c75e'/%3E%3C/svg%3E") center/cover no-repeat;
+}
+/* Degradado que avisa "esto se desliza": tablas anchas y línea de progreso */
+.hscroll-wrap { position: relative; }
+.hscroll-wrap::after {
+  content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 34px;
+  pointer-events: none; border-radius: 0 12px 12px 0; opacity: 0;
+  background: linear-gradient(90deg, rgba(5,7,13,0), rgba(5,7,13,0.85));
+}
+@media (max-width: 700px) { .hscroll-wrap::after { opacity: 1; } }
+
+@media (max-width: 640px) {
+  /* Cabeceras de sección: el badge/párrafo baja a su propia línea en vez de
+     aplastar el título en una columna de una palabra por fila. */
+  .section-head { flex-wrap: wrap; gap: 6px 14px; }
+  .section-head h2, .section-head h3 { min-width: 0; }
+  .section-head > p, .section-head .badge-live, .section-head .rl-tier-badge, .section-head .eyebrow { flex-basis: 100%; }
+  .section-head .rl-tier-badge, .section-head .badge-live { width: max-content; }
+  /* Tabla del Trust Score (Metodología) como tarjetas apiladas legibles */
+  .met-tabla .admin-row { grid-template-columns: 1fr auto; gap: 3px 12px; align-items: baseline; }
+  .met-tabla .admin-row > span:nth-child(3) { grid-column: 1 / -1; color: var(--text-mid); }
+  .met-tabla .admin-row-head { display: none; }
+}

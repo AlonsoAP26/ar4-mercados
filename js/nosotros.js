@@ -42,6 +42,9 @@
       entries.forEach((e) => { if (e.isIntersecting) { fireCounter(e.target); cio.unobserve(e.target); } });
     }, { threshold: 0.4 });
     counterEls.forEach((el) => cio.observe(el));
+    // Red de seguridad: si el observer nunca dispara (webviews caprichosos),
+    // los contadores quedarían en 0 y la sección parece rota.
+    setTimeout(() => counterEls.forEach((el) => fireCounter(el)), 3000);
   } else {
     counterEls.forEach((el) => fireCounter(el));
   }

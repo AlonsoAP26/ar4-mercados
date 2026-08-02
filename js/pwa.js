@@ -107,20 +107,36 @@
     eventoInstalar.userChoice.then(function () { eventoInstalar = null; });
   }
 
+  // El aviso de instalación espera a que el saludo de Aria salga de pantalla:
+  // dos avisos flotantes a la vez se tapan entre sí en un celular de 360px.
+  // En verificar.html no se muestra nunca (taparía el formulario, que es
+  // exactamente lo que el visitante vino a usar).
+  function cuandoAriaLibre(fn) {
+    var intentos = 0;
+    (function tick() {
+      if (!document.querySelector('.chat-greeting.show')) return fn();
+      if (++intentos > 20) return fn();
+      setTimeout(tick, 3000);
+    })();
+  }
+  var SIN_AVISO_AQUI = /verificar/.test(location.pathname);
+
   // ---- Android / escritorio: diálogo nativo ----
   window.addEventListener('beforeinstallprompt', function (e) {
     e.preventDefault();
     eventoInstalar = e;
     document.querySelectorAll('[data-pwa-install]').forEach(function (b) { b.hidden = false; });
-    if (yaInstalada() || descartadoHacePoco()) return;
+    if (yaInstalada() || descartadoHacePoco() || SIN_AVISO_AQUI) return;
     setTimeout(function () {
-      construirAviso(
-        'Instala AR4 en tu celular',
-        'Ocupa menos de 1 MB. Te queda el ícono en la pantalla de inicio y abre al instante.',
-        '',
-        lanzarInstalacion,
-        'Instalar'
-      );
+      cuandoAriaLibre(function () {
+        construirAviso(
+          'Instala AR4 en tu celular',
+          'Ocupa menos de 1 MB. Te queda el ícono en la pantalla de inicio y abre al instante.',
+          '',
+          lanzarInstalacion,
+          'Instalar'
+        );
+      });
     }, 4000);
   });
 
@@ -132,16 +148,18 @@
   });
 
   // ---- iPhone: Safari no da diálogo, hay que explicar los dos toques ----
-  if (esIOS() && !yaInstalada() && !descartadoHacePoco()) {
+  if (esIOS() && !yaInstalada() && !descartadoHacePoco() && !SIN_AVISO_AQUI) {
     window.addEventListener('load', function () {
       setTimeout(function () {
-        construirAviso(
-          'Instala AR4 en tu iPhone',
-          'En dos toques te queda el ícono en la pantalla de inicio:',
-          '<ol class="ar4-pwa-pasos"><li>Toca <b>Compartir</b> en la barra de abajo</li>' +
-          '<li>Elige <b>Agregar a inicio</b></li></ol>',
-          null
-        );
+        cuandoAriaLibre(function () {
+          construirAviso(
+            'Instala AR4 en tu iPhone',
+            'En dos toques te queda el ícono en la pantalla de inicio:',
+            '<ol class="ar4-pwa-pasos"><li>Toca <b>Compartir</b> en la barra de abajo</li>' +
+            '<li>Elige <b>Agregar a inicio</b></li></ol>',
+            null
+          );
+        });
       }, 5000);
     });
   }
@@ -154,7 +172,7 @@
     var a = document.createElement('a');
     a.href = '#';
     a.setAttribute('data-pwa-install', '');
-    a.style.cssText = 'display:inline-flex;align-items:center;gap:7px;margin-top:12px;color:#d4af37;font-size:.85rem';
+    a.style.cssText = 'display:flex;width:max-content;align-items:center;gap:7px;margin-top:12px;color:#d4af37;font-size:.85rem';
     a.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18.5h2"/></svg>Instalar app';
     a.hidden = !(eventoInstalar || esIOS());
     columna.appendChild(a);
@@ -170,7 +188,7 @@
     a.target = '_blank';
     a.rel = 'noopener';
     a.setAttribute('data-wa-comunidad', '');
-    a.style.cssText = 'display:inline-flex;align-items:center;gap:7px;margin-top:10px;color:#22c07a;font-size:.85rem';
+    a.style.cssText = 'display:flex;width:max-content;align-items:center;gap:7px;margin-top:10px;color:#22c07a;font-size:.85rem';
     a.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg>Comunidad de WhatsApp';
     columna.appendChild(a);
   }

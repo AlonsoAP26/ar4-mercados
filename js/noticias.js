@@ -116,6 +116,11 @@ function renderNewsChart(container, symbol) {
     support_host: 'https://www.tradingview.com'
   });
   container.appendChild(script);
+  // Si TradingView no carga (webview que lo bloquea), esconder el hueco:
+  // una caja con borde vacía de 420px se ve como página rota.
+  const wrap = container.closest('#noticiaChart') || container;
+  wrap.style.display = '';
+  setTimeout(() => { if (!container.querySelector('iframe')) wrap.style.display = 'none'; }, 9000);
 }
 
 function plainText(html) {
@@ -150,13 +155,18 @@ function renderAiSummary(n) {
 }
 
 function lazyLoadWidget(container, buildFn) {
-  if (!('IntersectionObserver' in window)) { buildFn(); return; }
+  let built = false;
+  const build = () => { if (!built) { built = true; buildFn(); } };
+  if (!('IntersectionObserver' in window)) { build(); return; }
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) { buildFn(); observer.disconnect(); }
+      if (entry.isIntersecting) { build(); observer.disconnect(); }
     });
   }, { rootMargin: '200px' });
   observer.observe(container);
+  // Red de seguridad: en algunos webviews el observer nunca dispara y la
+  // caja queda vacía para siempre — construir igual pasados 6 s.
+  setTimeout(() => { observer.disconnect(); build(); }, 6000);
 }
 
 function renderMarketImpact(n) {
@@ -185,6 +195,9 @@ function renderMarketImpact(n) {
       locale: 'es'
     });
     widgetContainer.appendChild(script);
+    // Sección prometida ("COTIZACIONES EN VIVO") sin contenido = aspecto de
+    // error: si el widget no llegó a cargar, quitar título y todo.
+    setTimeout(() => { if (!widgetContainer.querySelector('iframe')) el.style.display = 'none'; }, 9000);
   });
 }
 

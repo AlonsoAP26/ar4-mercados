@@ -631,7 +631,7 @@
     "order": 12,
     "level": "intermedio",
     "title": "Medias Móviles y Estrategias de Cruces",
-    "excerpt": "Domina el cálculo real de SMA y EMA, entiende por qué las medias de 50 y 200 mueven mercados por profecía autocumplida, y arma una estrategia de cruce con stop por ATR — con éxitos y fracasos históric",
+    "excerpt": "Domina el cálculo real de SMA y EMA, entiende por qué las medias de 50 y 200 mueven mercados por profecía autocumplida, y arma una estrategia de cruce con stop por ATR — con éxitos y fracasos históricos.",
     "points": 15,
     "quiz": [
       {
@@ -1486,7 +1486,7 @@
     "order": 27,
     "level": "avanzado",
     "title": "Backtesting y Optimización de Estrategias",
-    "excerpt": "Aprende a convertir tus estrategias en estadística real: cómo backtestear con rigor, qué métricas importan y por qué el 90% de las cuentas fondeadas fallan justo en el puente entre el backtest y el di",
+    "excerpt": "Aprende a convertir tus estrategias en estadística real: cómo backtestear con rigor, qué métricas importan y por qué el 90% de las cuentas fondeadas fallan justo en el puente entre el backtest y el dinero real.",
     "points": 20,
     "quiz": [
       {
