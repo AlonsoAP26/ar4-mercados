@@ -1,66 +1,71 @@
 {
- "lastId": 33837,
- "actualizado": "2026-08-02T19:55:22.603Z",
+ "lastId": 33846,
+ "actualizado": "2026-08-02T22:03:39.916Z",
  "items": [
   {
-   "id": "33837",
-   "fecha": "2026-08-02T19:13:20+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33837",
+   "id": "33845",
+   "fecha": "2026-08-02T21:46:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33845",
    "via": "DeItaone",
-   "original": "ISRAEL HAS EXPRESSED CONCERNS TO THE U.S. ON PROPOSED HAMAS DISARMAMENT PLAN, NETANYAHU'S SPOKESPERSON TELLS REUTERS",
-   "titulo": "Israel expresa preocupaciones a EE.UU. sobre plan de desarmamento de Hamás",
-   "resumen": "Portavoz de Netanyahu comunicó a Reuters las inquietudes israelíes respecto a la propuesta estadounidense de desarmamento de Hamás. El titular no especifica detalles de las objeciones ni si afecta negociaciones en curso. Contexto: se suma a tensiones previas sobre acuerdos nucleares regionales y dinámicas de paz en Oriente Medio.",
+   "original": "TRUMP: HAVE DECIDED A PUNISHMENT FOR CANADA ON WILDFIRES , BUT WON'T SAY YET",
+   "titulo": "Trump anuncia sanción a Canadá por incendios forestales pero retiene detalles",
+   "resumen": "Trump declara haber decidido una \"sanción\" contra Canadá relacionada con incendios forestales que afectan a EE.UU., pero se rehúsa a revelar su naturaleza o magnitud. El titular no especifica si se trata de aranceles, restricciones comerciales u otra medida. Contexto: canadienses han rechazado responsabilidad por mala gestión.",
    "analisis": {
-    "porque": "Conflictos geopolíticos en Oriente Medio afectan precios de petróleo, spreads de riesgo soberano en activos regionales y volatilidad de mercados globales. Señala riesgos de escalada diplomática.",
-    "queOcurrio": "Portavoz israelí transmitió a Reuters preocupaciones sobre un plan de desarmamento de Hamás propuesto por EE.UU., sin más detalles sobre el contenido específico.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Reuters"
+    "porque": "Potencial medida comercial/arancelaria contra aliado comercial clave (Canadá es 2º socio USA) genera incertidumbre para mercados de energía, agricultura y acero. Mantiene narrativa proteccionista de Trump abierta.",
+    "queOcurrio": "Trump anuncia sanción a Canadá sin especificar tipo ni alcance.",
+    "estado": "rumor",
+    "fuenteOriginal": "Bloomberg"
    },
-   "impacto": "medio",
+   "impacto": "bajo",
    "breaking": false,
    "activos": [
-    "Petróleo",
-    "Bonos",
-    "Shekel israelí",
     "Dólar",
-    "S&P500"
+    "Bonos",
+    "Materias Primas",
+    "CAD",
+    "Petróleo Canada",
+    "Acero"
    ],
    "sesgos": [
     {
-     "activo": "Petróleo",
+     "activo": "CAD",
      "sesgo": "bajista"
     },
     {
-     "activo": "Bonos USA",
+     "activo": "Dólar",
      "sesgo": "alcista"
-    },
-    {
-     "activo": "Acciones globales",
-     "sesgo": "bajista"
     }
    ],
    "volatilidad": "media",
    "categoria": "Geopolítica",
    "keywords": [
-    "Israel",
-    "Hamás",
-    "Oriente Medio",
-    "Negociaciones",
-    "Netanyahu",
-    "EE.UU."
+    "trump-canada",
+    "aranceles",
+    "incendios",
+    "comercio"
    ],
-   "tgText": "Netanyahu expresó a EE.UU. preocupaciones sobre plan de desarmamento de Hamás. Sin detalles de objeciones. Tensión geopolítica persiste en Oriente Medio con potencial impacto en petróleo y mercados globales.",
-   "xText": "Israel comunica inquietudes a EE.UU. sobre desarmamiento de Hamás según portavoz de Netanyahu. Geopolítica en Oriente Medio sigue presionando mercados de riesgo.",
-   "discordText": "**Israel vs. Plan de Desarmamento de Hamás**\n• Portavoz de Netanyahu comunicó preocupaciones a EE.UU.\n• Sin especificar objecciones concretas\n• Impacto: volatilidad en petróleo y spreads de riesgo",
-   "pushText": "Israel cuestiona plan estadounidense sobre Hamás; tensiones geopolíticas persisten",
-   "importancia": 5,
+   "tgText": "⚠️ Trump anuncia sanción a Canadá por incendios pero oculta detalles. Genera incertidumbre sobre tipo/alcance. CAD presionado. Esperar aclaración.",
+   "xText": "Trump anuncia sanción a Canadá por incendios forestales pero rechaza revelar detalles. Incertidumbre sobre aranceles o restricciones comerciales mantiene CAD bajista.",
+   "discordText": "**⚠️ Trump: Sanción a Canadá (detalles retenidos)**\n\n• Causa: Incendios forestales\n• Tipo: No especificado (¿aranceles?)\n• Estado: Anunciado pero sin transparencia\n• Impacto CAD: Bajista por incertidumbre",
+   "pushText": "Trump anuncia sanción Canadá por incendios; detalles retenidos",
+   "importancia": 4,
    "reaccion": {
-    "primero": "Petróleo WTI/Brent por riesgo geopolítico de Oriente Medio; spreads de CDS soberanos de Israel.",
-    "despues": "Bonos USA (flight-to-safety), dólar (demanda de refugio), acciones defensivas vs. cíclicas.",
-    "escenarios": "Traders vigilan: (1) Si las preocupaciones israelíes bloquean negociaciones; (2) riesgo de escalada militar; (3) impacto en suministros energéticos regionales.",
-    "riesgos": "Titular vago en detalles; sin confirmación de qué plan específico o qué objeciones. Riesgo de sobrerreacción ante ruido diplomático."
+    "primero": "CAD bajo presión inmediata por riesgo de aranceles. Petróleo y gas canadienses en radar si medida afecta exportaciones.",
+    "despues": "Si es sanción arancelaria, acero y aluminio canadienses también afectados. Posible respuesta canadiense en represalia.",
+    "escenarios": "Traders esperan: (1) Aclaración de Trump sobre tipo exacto; (2) Reacción Gobierno canadiense; (3) Impacto en cadenas de suministro USA. Volatilidad CAD sostenida hasta revelación.",
+    "riesgos": "Riesgo alto: Trump puede cambiar de tono o escalarla. Falta contexto sobre causa causal (Canadá acusa a USA de falta de coordinación ambiental)."
    },
-   "macro": null,
+   "macro": {
+    "dolar": "Alcista leve (si hay aranceles)",
+    "oro": "Neutral",
+    "nasdaq": "Neutral",
+    "dow": "Neutral",
+    "sp500": "Neutral",
+    "bitcoin": "Neutral",
+    "ethereum": "Neutral",
+    "bonos": "Neutral",
+    "petroleo": "Bajista (si Canadá afectado)"
+   },
    "updates": []
   },
   {
@@ -144,6 +149,18 @@
    },
    "updates": [
     {
+     "fecha": "2026-08-02T21:45:46+00:00",
+     "id": "33844",
+     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
+     "tgUrl": "https://t.me/walterbloomberg/33844"
+    },
+    {
+     "fecha": "2026-08-02T21:44:13+00:00",
+     "id": "33843",
+     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
+     "tgUrl": "https://t.me/walterbloomberg/33843"
+    },
+    {
      "fecha": "2026-08-02T16:40:18+00:00",
      "id": "33836",
      "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
@@ -162,7 +179,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33834"
     }
    ],
-   "actualizado": "2026-08-02T16:40:18+00:00"
+   "actualizado": "2026-08-02T21:45:46+00:00"
   },
   {
    "id": "33827",
@@ -236,6 +253,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-08-02T21:43:11+00:00",
+     "id": "33842",
+     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
+     "tgUrl": "https://t.me/walterbloomberg/33842"
+    },
+    {
      "fecha": "2026-08-02T14:18:01.000Z",
      "id": "964297321",
      "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
@@ -254,7 +277,68 @@
      "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
     }
    ],
-   "actualizado": "2026-08-02T14:18:01.000Z"
+   "actualizado": "2026-08-02T21:43:11+00:00"
+  },
+  {
+   "id": "33837",
+   "fecha": "2026-08-02T19:13:20+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33837",
+   "via": "DeItaone",
+   "original": "ISRAEL HAS EXPRESSED CONCERNS TO THE U.S. ON PROPOSED HAMAS DISARMAMENT PLAN, NETANYAHU'S SPOKESPERSON TELLS REUTERS",
+   "titulo": "Israel expresa preocupaciones a EE.UU. sobre plan de desarmamento de Hamás",
+   "resumen": "Portavoz de Netanyahu comunicó a Reuters las inquietudes israelíes respecto a la propuesta estadounidense de desarmamento de Hamás. El titular no especifica detalles de las objeciones ni si afecta negociaciones en curso. Contexto: se suma a tensiones previas sobre acuerdos nucleares regionales y dinámicas de paz en Oriente Medio.",
+   "analisis": {
+    "porque": "Conflictos geopolíticos en Oriente Medio afectan precios de petróleo, spreads de riesgo soberano en activos regionales y volatilidad de mercados globales. Señala riesgos de escalada diplomática.",
+    "queOcurrio": "Portavoz israelí transmitió a Reuters preocupaciones sobre un plan de desarmamento de Hamás propuesto por EE.UU., sin más detalles sobre el contenido específico.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Reuters"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Bonos",
+    "Shekel israelí",
+    "Dólar",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Acciones globales",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Israel",
+    "Hamás",
+    "Oriente Medio",
+    "Negociaciones",
+    "Netanyahu",
+    "EE.UU."
+   ],
+   "tgText": "Netanyahu expresó a EE.UU. preocupaciones sobre plan de desarmamento de Hamás. Sin detalles de objeciones. Tensión geopolítica persiste en Oriente Medio con potencial impacto en petróleo y mercados globales.",
+   "xText": "Israel comunica inquietudes a EE.UU. sobre desarmamiento de Hamás según portavoz de Netanyahu. Geopolítica en Oriente Medio sigue presionando mercados de riesgo.",
+   "discordText": "**Israel vs. Plan de Desarmamento de Hamás**\n• Portavoz de Netanyahu comunicó preocupaciones a EE.UU.\n• Sin especificar objecciones concretas\n• Impacto: volatilidad en petróleo y spreads de riesgo",
+   "pushText": "Israel cuestiona plan estadounidense sobre Hamás; tensiones geopolíticas persisten",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent por riesgo geopolítico de Oriente Medio; spreads de CDS soberanos de Israel.",
+    "despues": "Bonos USA (flight-to-safety), dólar (demanda de refugio), acciones defensivas vs. cíclicas.",
+    "escenarios": "Traders vigilan: (1) Si las preocupaciones israelíes bloquean negociaciones; (2) riesgo de escalada militar; (3) impacto en suministros energéticos regionales.",
+    "riesgos": "Titular vago en detalles; sin confirmación de qué plan específico o qué objeciones. Riesgo de sobrerreacción ante ruido diplomático."
+   },
+   "macro": null,
+   "updates": []
   },
   {
    "id": "977976252",
@@ -7637,69 +7721,6 @@
     }
    ],
    "actualizado": "2026-07-29T22:54:09.000Z"
-  },
-  {
-   "id": 930836156,
-   "fecha": "2026-07-29T21:26:17.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html",
-   "via": "CNBC",
-   "original": "Meta&apos;s stock plunges almost 10% on disappointing guidance, dwindling free cash flow",
-   "titulo": "Meta se desploma casi 10% por guidance decepcionante y caída de flujo de caja libre",
-   "resumen": "Las acciones de Meta cayeron casi 10% en operaciones después de horas tras publicar guidance de ganancias por debajo de expectativas y reportar disminución en flujo de caja libre. La debilidad refleja presiones en monetización publicitaria y gastos elevados en infraestructura de IA, cuestionando la eficiencia de inversiones en modelos de IA generativa.",
-   "analisis": {
-    "porque": "Mega-cap tecnológica afecta ponderación en Nasdaq 100 y S&P 500; flujo de caja libre es métrica crítica para inversores; señal sobre gastos en IA de toda industria tech",
-    "queOcurrio": "Meta anunció guidance de ganancias inferior a expectativas y disminución de flujo de caja libre en su reporte",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "META",
-    "NASDAQ",
-    "S&P500",
-    "Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "META",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Tech",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Meta",
-    "META",
-    "Guidance",
-    "Flujo Caja Libre",
-    "IA",
-    "Tecnología"
-   ],
-   "tgText": "📉 Meta cae 10% tras guidance débil y caída de flujo de caja. Gastos en IA y presión publicitaria presionan márgenes. Impacto en Nasdaq.",
-   "xText": "META plunge 10%: Guidance inferior + caída flujo caja. Gastos en IA inflan costos. Riesgo para sector Tech. #NASDAQ #Earnings",
-   "discordText": "**Meta: Caída 10% tras Earnings**\n• Guidance por debajo de expectativas\n• Flujo caja libre en baja\n• Presión en gastos de IA\n→ Impacto negativo Nasdaq",
-   "pushText": "Meta cae 10% por guidance débil y caída de flujo de caja libre",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "META: caída directa por revisión a la baja de ganancias; arrastre a Nasdaq 100 y mega-caps tech",
-    "despues": "S&P 500, otros proveedores IA (MSFT, GOOGL, NVDA), bonos corporativos de tech, sector consumer digital",
-    "escenarios": "Traders vigilarán si caída de META es síntoma de agotamiento de ciclo de inversión en IA o problema específico de Meta; rotación a defensivos; comparar con MSFT (sólido) y AMZN para confirmar patrón",
-    "riesgos": "Caída podría ser exagerada si market asume lo peor; flujo de caja podría recuperarse si gastos en IA se normalizan; riesgo de contagio a otros mega-caps"
-   },
-   "macro": {
-    "nasdaq": "bajista",
-    "sp500": "bajista"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
