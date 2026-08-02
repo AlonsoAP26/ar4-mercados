@@ -1,7 +1,62 @@
 {
  "lastId": 33832,
- "actualizado": "2026-08-02T03:59:25.253Z",
+ "actualizado": "2026-08-02T06:41:33.603Z",
  "items": [
+  {
+   "id": "983636816",
+   "fecha": "2026-08-02T01:56:07.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/01/capital-one-closed-trump-organization-accounts-after-investigation.html",
+   "via": "CNBC",
+   "original": "Capital One says it closed Trump Organization&apos;s accounts after anti-money laundering probe",
+   "titulo": "Capital One cierra cuentas de Trump Organization tras investigación de lavado de dinero",
+   "resumen": "Capital One confirmó el cierre de cuentas bancarias vinculadas a Trump Organization después de una investigación por cumplimiento normativo en anti-lavado de dinero. El titular no especifica detalles sobre montos, timeline exacto o si la medida incluye solo cuentas corporativas o también personales del expresidente.",
+   "analisis": {
+    "porque": "Impacta la confianza en servicios financieros hacia figuras políticas de alto perfil y refuerza percepciones de riesgo regulatorio. Potencia volatilidad en acciones de Capital One y debate sobre política de compliance bancaria.",
+    "queOcurrio": "Capital One cerró cuentas de Trump Organization luego de una investigación de anti-lavado de dinero (AML).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "COF",
+    "Sector Financiero",
+    "Bonos Corporativos"
+   ],
+   "sesgos": [
+    {
+     "activo": "COF",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Sector Financiero",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Capital One",
+    "Trump Organization",
+    "lavado de dinero",
+    "compliance",
+    "regulación bancaria",
+    "cierre de cuentas"
+   ],
+   "tgText": "Capital One cierra cuentas de Trump Organization tras investigación de anti-lavado de dinero. Impacto en confianza regulatoria del sector financiero.",
+   "xText": "Capital One cierra cuentas de Trump Organization tras investigación AML. Refuerza presión regulatoria sobre servicios financieros y clientes de alto riesgo político. #Finanzas",
+   "discordText": "**Capital One cierra cuentas de Trump Organization**\n• Motivo: investigación anti-lavado de dinero (AML)\n• Impacto: presión regulatoria en banca\n• Estado: confirmado por CNBC",
+   "pushText": "Capital One cierra cuentas de Trump Organization por investigación de lavado de dinero",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Acciones de Capital One (COF) podrían caer levemente por riesgo reputacional y preocupaciones sobre endurecimiento regulatorio",
+    "despues": "Sector financiero en general si se interpreta como señal de mayor escrutinio; bonos corporativos bancarios bajo presión",
+    "escenarios": "Traders vigilan si otros bancos replican medida (cascada de riesgo político), si hay cargos penales posteriores, o si el cierre es permanente o temporal",
+    "riesgos": "Titular no clarifica si es acción preventiva estándar o respuesta a hallazgos concretos; riesgo de que se amplíe a otras entidades Trump"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33832",
    "fecha": "2026-08-02T01:42:51+00:00",
@@ -7558,77 +7613,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33718",
-   "fecha": "2026-07-29T15:52:49+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33718",
-   "via": "DeItaone",
-   "original": "A US-OWNED AND OPERATED, MARSHALL ISLANDS-FLAGGED LNG FLOATING STORAGE FACILITY WAS STRUCK BY AT LEAST ONE UNMANNED AERIAL VEHICLE (UAV) WHILST AT THE DAMIETTA, EGYPT - AMBREY",
-   "titulo": "Instalación LNG estadounidense en Egito atacada por drones no tripulados",
-   "resumen": "Una instalación flotante de almacenamiento LNG, estadounidense operada y con bandera de Islas Marshall, fue alcanzada por al menos un vehículo aéreo no tripulado mientras se encontraba en Damietta, Egipto, según reportó AMBREY. El incidente agrega presión a infraestructura energética crítica en Oriente Medio en contexto de escaladas geopolíticas.",
-   "analisis": {
-    "porque": "Ataques a infraestructura LNG en Oriente Medio generan riesgo sobre suministros globales y precios de energía; afecta rutas comerciales y narrativa de riesgo sistémico",
-    "queOcurrio": "Una barcaza LNG estadounidense en Damietta, Egipto, fue golpeada por al menos un UAV no identificado, según tracker de riesgo marítimo AMBREY",
-    "estado": "confirmado",
-    "fuenteOriginal": "AMBREY (plataforma de alertas de riesgo marítimo)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Gas Natural",
-    "USD",
-    "Oro",
-    "Bonos",
-    "Energía"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Gas Natural",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "lng-ataque",
-    "drones",
-    "oriente-medio",
-    "suministro-energético",
-    "riesgo-marítimo",
-    "infraestructura"
-   ],
-   "tgText": "⚠️ BREAKING: Instalación LNG estadounidense en Damietta (Egipto) atacada por drone. AMBREY confirma impacto. Presión sobre petróleo y rutas comerciales globales.",
-   "xText": "Instalación LNG estadounidense golpeada por drone en Damietta, Egipto. AMBREY confirma ataque. Riesgo de nuevo shock en suministros energéticos globales.",
-   "discordText": "**ATAQUE A INFRAESTRUCTURA LNG**\n🔴 Damietta, Egipto\n• Instalación flotante estadounidense golpeada por UAV\n• Fuente: AMBREY (tracker marítimo)\n• Riesgo a suministros LNG globales\n• Presión al petróleo y gas natural",
-   "pushText": "Instalación LNG estadounidense atacada por drone en Damietta, Egipto",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI, Brent): típicamente reacciona en primeros 15 min a noticias de infraestructura en Oriente Medio; riesgo de gap alcista",
-    "despues": "Gas Natural, productos energéticos, dólar (safe haven), oro; posibles moves en futuros de energía nocturna en Asia",
-    "escenarios": "Traders vigilarán si ataque fue aislado o señal de escalada sostenida; si genera daño operacional o es simbólico; posibles reportes de reparación/impacto en flujo de LNG",
-    "riesgos": "Titular no especifica magnitud de daño, víctimas o si hay reclamación de responsabilidad; riesgo de escalada conforme se confirmen detalles"
-   },
-   "macro": {
-    "petroleo": "alcista, rotura de resistencia probable",
-    "gas_natural": "alcista, potencial salto",
-    "usd": "alcista (risk-off)",
-    "sp500": "bajista (energy shock fears)"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7844,6 +7828,7 @@
   "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html",
   "https://www.cnbc.com/select/best-5-year-cds/",
   "https://www.cnbc.com/2026/08/01/trumps-settlement-fund-threat-injects-uncertainty-into-ag-talks.html",
-  "https://www.cnbc.com/2026/08/01/goldman-traders-are-on-pace-for-a-record-year-a-close-up-look-at-how-theyre-doing-it.html"
+  "https://www.cnbc.com/2026/08/01/goldman-traders-are-on-pace-for-a-record-year-a-close-up-look-at-how-theyre-doing-it.html",
+  "https://www.cnbc.com/2026/08/01/capital-one-closed-trump-organization-accounts-after-investigation.html"
  ]
 }
