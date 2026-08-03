@@ -1,7 +1,282 @@
 {
  "lastId": 33908,
- "actualizado": "2026-08-03T19:50:03.973Z",
+ "actualizado": "2026-08-03T21:53:43.954Z",
  "items": [
+  {
+   "id": 995917856,
+   "fecha": "2026-08-03T21:44:19.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/snap-q2-earnings-report-2026.html",
+   "via": "CNBC",
+   "original": "Snap&apos;s stock jumps 10% on earnings beat and strong sales forecast",
+   "titulo": "Snap salta 10% por earnings beat y pronóstico de ventas sólido",
+   "resumen": "Snap superó expectativas trimestrales con resultados positivos en ingresos y publicó guidance de ventas fuerte para próximos períodos. La acción subió 10% en sesión extendida. El titular no detalla cifras de ingresos ni márgenes específicos.",
+   "analisis": {
+    "porque": "Snap es barometro de salud publicitaria digital y gasto en redes sociales. Beat en earnings + guidance alcista afecta percepción de demanda publicitaria y revalúo de medianas techs.",
+    "queOcurrio": "Snap reportó resultados que superaron consenso y mantuvo un pronóstico positivo de ingresos, catalizando compra institucional en después de cierre.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "SNAP",
+    "NASDAQ",
+    "Publicidad Digital",
+    "Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "SNAP",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Snap",
+    "earnings",
+    "publicidad-digital",
+    "guidance"
+   ],
+   "tgText": "📱 SNAP +10% en after-hours tras beat en earnings. Guidance de ventas también sólida. Señal positiva para demanda publicitaria digital.",
+   "xText": "SNAP +10% post-earnings. Beat en ingresos + guidance positiva. Barometro de salud publicitaria digital mejora.",
+   "discordText": "**SNAP EARNINGS**\n• +10% en after-hours\n• Beat en resultados\n• Guidance de ventas fuerte\n• Señal: Demanda ads digital healthy",
+   "pushText": "SNAP +10%; beat earnings + guidance sólida",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "SNAP reacciona directamente por ser noticia de earnings; peers de publicidad digital (META, PINS) monitorean el patrón de fortaleza",
+    "despues": "Sector tech de medianas capitalizaciones puede seguir; índices NASDAQ responden si hay efecto agregado sobre crecimiento de tech",
+    "escenarios": "Traders observarán si el beat refleja recuperación de gasto publicitario post-recesión o si es efecto temporal. Compararán guidance vs competidores como Meta.",
+    "riesgos": "Sin cifras específicas de ingresos/márgenes en titular; rally podría revertirse si durante call de earnings sale contexto débil o si guidance es solo marginal"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 911409007,
+   "fecha": "2026-08-03T21:34:43.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+   "via": "CNBC",
+   "original": "Palantir soars 12% on blowout quarter, with U.S. commercial revenue soaring nearly 150%",
+   "titulo": "Palantir dispara 12% tras resultados extraordinarios; ingresos comerciales USA suben 150%",
+   "resumen": "Palantir Technologies reportó un trimestre excepcional con crecimiento de ingresos comerciales en USA cercano al 150%. La acción subió 12% en sesión extendida. El titular no especifica márgenes, guidance futura ni cifras absolutas de ingresos, solo el ritmo de crecimiento comercial.",
+   "analisis": {
+    "porque": "Movimiento de precio de double dígit en una acción de gran capitalización indica un reajuste significativo de expectativas de mercado sobre crecimiento y rentabilidad. Afecta valuaciones en tech y IA.",
+    "queOcurrio": "Palantir publicó resultados trimestrales que superaron expectativas, con énfasis en expansión acelerada del segmento comercial en Estados Unidos, generando compra masiva en after-hours.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "PLTR",
+    "NASDAQ",
+    "Tech",
+    "IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "PLTR",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Palantir",
+    "earnings",
+    "crecimiento-comercial",
+    "tech",
+    "IA"
+   ],
+   "tgText": "🚀 PLTR dispara 12% en after-hours tras trimestre extraordinario. Ingresos comerciales USA suben ~150%. Reajuste alcista de expectativas en tech/IA.",
+   "xText": "📈 Palantir sube 12% en after-hours con resultados excepcionales. Ingresos comerciales USA crecen ~150%. Movimiento significativo en tech.",
+   "discordText": "**PALANTIR EARNINGS BEAT**\n• Acción sube 12% en after-hours\n• Ingresos comerciales USA +150%\n• Reajuste alcista en expectativas\n• Impacto: Tech/IA",
+   "pushText": "PLTR +12% tras earnings; ingresos comerciales +150%",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "PLTR reacciona inmediatamente por ser noticia de earnings; volumen after-hours concentra traders institucionales",
+    "despues": "Sector tech y acciones IA vinculadas (NVDA, MSFT, CRM) pueden seguir por efecto momentum y revalúo de narrativa de crecimiento IA",
+    "escenarios": "Traders vigilarán si el rally se sostiene en apertura regular o es taking-profit; también si guidance futura es tan fuerte como los resultados. Monitorearán ratio P/E implícito.",
+    "riesgos": "El titular no incluye guidance ni márgenes operativos; podría haber decepción si la calidad de ganancias es débil o si management reduce outlook"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 968016161,
+   "fecha": "2026-08-03T20:57:02.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/trump-tariffs-25-states-lawsuit-supreme-court.html",
+   "via": "CNBC",
+   "original": "Twenty five states sue Trump administration over latest global tariffs",
+   "titulo": "Veinticinco estados demandan a administración Trump por aranceles globales recientes",
+   "resumen": "Un grupo de 25 estados estadounidenses interpuso demanda contra la administración Trump por una ronda reciente de aranceles globales. Afecta perspectiva de comercio internacional y potencial escalada regulatoria.",
+   "analisis": {
+    "porque": "Litigio sobre aranceles añade incertidumbre regulatoria a proyecciones corporativas y trade flow. Afecta expectativas de inflación, márgenes corporativos y dinámicas de mercado de divisas.",
+    "queOcurrio": "25 estados presentaron demanda contra administración Trump cuestionando legalidad o fundamentos de aranceles recientemente impuestos a nivel global.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "DXY",
+    "USD",
+    "Exportadores",
+    "Retail"
+   ],
+   "sesgos": [
+    {
+     "activo": "Aranceles",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Exportadores",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "aranceles",
+    "Trump",
+    "litigio",
+    "comercio-internacional",
+    "regulación"
+   ],
+   "tgText": "⚖️ 25 estados demandan a Trump por aranceles recientes. Agrega incertidumbre regulatoria a proyecciones comerciales y márgenes corporativos.",
+   "xText": "25 estados presentan demanda vs aranceles Trump. Añade incertidumbre legal a política comercial y proyecciones corporativas.",
+   "discordText": "**LITIGIO ARANCELES TRUMP**\n• 25 estados demandan\n• Cuestiona legalidad de aranceles recientes\n• Incertidumbre regulatoria creciente\n• Impacto: Trade, márgenes, divisas",
+   "pushText": "25 estados demandan a Trump por aranceles",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "USD y pares de divisas reaccionan a incertidumbre sobre implementación de aranceles; exportadores caen inicialmente por riesgo regulatorio",
+    "despues": "Retail, manufactura exportadora, índices amplios pueden revisar lower si litigio resulta en demoras o bloqueos de aranceles (ambos crean incertidumbre)",
+    "escenarios": "Traders monitorean calendar de litigio, precedentes legales similares y si administración responde con nuevos aranceles. Vigilarán comunicados oficiales.",
+    "riesgos": "Litigio podría fallar (Trump admin gana) o prosperar (bloqueo parcial); incertidumbre es el principal factor. Si falla rápido, mercado revisa expectativas."
+   },
+   "macro": {
+    "dolar": "Volatilidad media; incertidumbre sobre magnitud/timing de aranceles afecta demanda USD",
+    "nasdaq": "Neutro-bajista; tech exportadora expuesta a riesgos de aranceles",
+    "sp500": "Neutro-bajista; manufactureros y exportadores en riesgo",
+    "petroleo": "Neutral; no hay nexo directo con aranceles en este titular"
+   },
+   "updates": []
+  },
+  {
+   "id": 950125217,
+   "fecha": "2026-08-03T20:45:50.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/stocks-making-the-biggest-moves-after-hours-pltr-on-snap.html",
+   "via": "CNBC",
+   "original": "Stocks making the biggest moves after hours: Palantir, On Semiconductor, Snap & more",
+   "titulo": "Palantir, On Semiconductor, Snap y otros protagonizan mayores movimientos post-sesión",
+   "resumen": "Múltiples acciones registraron volatilidad significativa en sesión extendida, incluyendo Palantir (+12%, capturado arriba), On Semiconductor y Snap. El titular es agregador sin especificar causas de movimientos de On Semiconductor ni detalles de otros activos.",
+   "analisis": {
+    "porque": "Movimientos de double dígit en múltiples techs señalan reajuste de expectativas de mercado o earnings significativos. Volatilidad after-hours indica participación institucional.",
+    "queOcurrio": "Varios activos de tecnología experimentaron grandes movimientos de precio en sesión extendida; Palantir y Snap capturados en notas separadas; On Semiconductor sin contexto especificado.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "PLTR",
+    "SNAP",
+    "ON",
+    "NASDAQ",
+    "Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tech",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "after-hours",
+    "earnings-szn",
+    "tech-moves",
+    "volatilidad"
+   ],
+   "tgText": "📊 Múltiples techs en movimiento post-sesión: PLTR +12%, SNAP +10%, ON Semiconductor y otros. Temporada de earnings genera volatilidad.",
+   "xText": "Volatilidad post-sesión en tech: PLTR +12%, SNAP +10%, ON Semiconductor en movimiento. Temporada de earnings activa.",
+   "discordText": "**AFTER-HOURS TECH MOVES**\n• PLTR +12% (earnings beat)\n• SNAP +10% (earnings + guidance)\n• ON Semiconductor en movimiento\n• Contexto: Temporada earnings activa",
+   "pushText": "Tech en movimiento: PLTR +12%, SNAP +10%, others",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "PLTR y SNAP ya capturados; On Semiconductor reacciona a earnings o news corporativo no especificado",
+    "despues": "Otros techs siguen movimiento de peers; NASDAQ responde si hay efecto agregado",
+    "escenarios": "Traders buscan si rally se extiende a apertura regular o si hay taking-profit; usan volatilidad after-hours como indicador de ánimo institucional",
+    "riesgos": "Titular es agregador sin causas específicas para On Semiconductor; falta contexto de por qué sube/baja"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 953588981,
+   "fecha": "2026-08-03T20:09:19.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/faa-boeing-737-max-certification.html",
+   "via": "CNBC",
+   "original": "FAA clears smallest Boeing 737 Max to fly after years of delays",
+   "titulo": "FAA autoriza vuelo del Boeing 737 Max más pequeño tras años de demoras",
+   "resumen": "La Administración Federal de Aviación (FAA) otorgó aprobación definitiva para que el Boeing 737 Max 7 —la variante más compacta de la familia Max— entre en operación comercial. Esta autorización cierra un ciclo de certificación prolongado por revisiones de seguridad.",
+   "analisis": {
+    "porque": "Despeje regulatorio de Boeing libera restricción productiva y de ingresos; impulsa cash flow e impacta cadena de suministro aeronáutico. Afecta valuación de BA y proveedores.",
+    "queOcurrio": "FAA completó certificación y autorizó operaciones comerciales del 737 Max 7, modelo con menor capacidad que otras versiones Max pero crítico para portafolios de clientes.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "BA",
+    "Aeronáutica",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "BA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Aeronáutica",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Boeing",
+    "737-Max",
+    "FAA",
+    "certificación",
+    "aviación"
+   ],
+   "tgText": "✈️ FAA aprueba Boeing 737 Max 7 para vuelos comerciales tras años de revisión. Despeje regulatorio libera producción y cash flow.",
+   "xText": "FAA certifica Boeing 737 Max 7 para operaciones comerciales. Despeje de restricción regulatoria después de ciclo prolongado de certificación.",
+   "discordText": "**BOEING 737 MAX 7 - FAA CLEARANCE**\n• Certificación completada\n• Autorización para vuelos comerciales\n• Libera restricciones productivas\n• Impacto: BA + supply chain aeronáutica",
+   "pushText": "FAA aprueba Boeing 737 Max 7; despeje regulatorio",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Boeing (BA) reacciona al despeje de restricción de producción; afecta guidance de entregas y generación de flujo de caja",
+    "despues": "Proveedores aeronáuticos (Spirit AeroSystems, Raytheon, Lockheed) y energía (menor costo operativo) podrían beneficiarse. Índices industriales responden.",
+    "escenarios": "Traders vigilarán velocidad de ramp-up en producción, pedidos confirmados para Max 7, y si Boeing mejora guidance de 2026-2027. Monitorearán cash generation.",
+    "riesgos": "Aprobación regulatoria no garantiza demanda inmediata de clientes; Max 7 es versión menos demandada que Max 8. Riesgo: que new orders no materializan según mercado espera."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33908",
    "fecha": "2026-08-03T18:17:09+00:00",
@@ -7333,345 +7608,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33771",
-   "fecha": "2026-07-30T17:39:02+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33771",
-   "via": "DeItaone",
-   "original": "IRAN'S ARMY SAYS IT LAUNCHED ATTACK ON U.S. ASSETS IN BAHRAIN'S SHEIKH ISSA BASE - STATE MEDIA",
-   "titulo": "Irán ataca base estadounidense en Baréin; escalada geopolítica eleva tensiones",
-   "resumen": "El ejército iraní confirmó haber lanzado un ataque contra activos estadounidenses en la base Sheikh Issa de Baréin, según medios estatales iraníes. El ataque representa una escalada en las tensiones entre Irán y EE.UU. en el Golfo Pérsico, región crítica para el suministro energético global. Esto ocurre en contexto de crecientes fricciones geopolíticas en Oriente Medio.",
-   "analisis": {
-    "porque": "Cualquier conflicto en el Golfo Pérsico impacta directamente precios de petróleo, spreads de riesgo, divisas de emergentes y apetito por activos de riesgo. El Estrecho de Ormuz controla ~30% del crudo mundial.",
-    "queOcurrio": "Irán reportó (vía medios estatales) un ataque a instalaciones estadounidenses en Baréin. El titular no especifica daños confirmados ni escala del ataque.",
-    "estado": "rumor",
-    "fuenteOriginal": "FARS (agencia estatal iraní) republicada por Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "DXY",
-    "EURUSD",
-    "Oro",
-    "S&P 500",
-    "NASDAQ",
-    "Bonos USA",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Golfo Pérsico",
-    "Baréin",
-    "conflicto",
-    "petróleo",
-    "riesgo geopolítico"
-   ],
-   "tgText": "🚨 ESCALADA: Ejército iraní anuncia ataque contra base USA en Baréin. Petróleo y oro suben; acciones ceden. Ormuz bajo presión.",
-   "xText": "🔴 BREAKING: Irán reporta ataque a activos USA en Baréin. Tensión Golfo Pérsico sube. Petróleo responde al alza; mercados evalúan impacto.",
-   "discordText": "**GEOPOLÍTICA - BREAKING**\n• Irán ataca base Sheikh Issa en Baréin\n• Confirmado por FARS (medios estatales)\n• Impacto: petróleo +, acciones -, oro +\n• Seguimiento en tiempo real",
-   "pushText": "⚠️ Irán ataca base USA en Baréin; petróleo sube",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent: suben por riesgo de disrupción en Ormuz y cadena de suministro. Spread de crudo OPEC amplía.",
-    "despues": "Oro sube (activo refugio). Dólar se fortalece (demanda de USD en crisis). S&P 500 cede (reducción de apetito por riesgo). Bonos USA: rendimientos pueden subir si hay expectativa de respuesta militar USA; pueden bajar si mercado teme recesión por shock energético.",
-    "escenarios": "Traders vigilarán: (1) confirmación de daños reales vs. comunicado propagandístico, (2) respuesta militar de EE.UU., (3) cierre del Estrecho de Ormuz (escenario worst-case), (4) reacción de Arabia Saudí y aliados del Golfo, (5) impacto en inflación si petróleo sube sostenidamente.",
-    "riesgos": "El titular proviene de medios estatales iraníes (FARS): alto riesgo de exageración o desinformación. Falta confirmación independiente de daños. No se especifica escala del ataque. Confusión inicial puede amplificar volatilidad."
-   },
-   "macro": {
-    "petroleo": "↑↑ Riesgo alcista por disrupción Golfo",
-    "oro": "↑ Demanda refugio",
-    "dolar": "↑ Búsqueda de seguridad",
-    "nasdaq": "↓ Reducción apetito riesgo",
-    "sp500": "↓ Incertidumbre geopolítica",
-    "bonos": "Volátil; depende de expectativa de acción USA"
-   },
-   "updates": []
-  },
-  {
-   "id": "33770",
-   "fecha": "2026-07-30T17:13:48+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33770",
-   "via": "DeItaone",
-   "original": "MUSK PLANS MAJOR MIDTERM SPENDING Elon Musk has reportedly authorized his super PAC to spend up to $120 million to support Republican candidates in this year’s US midterm elections. The funding, expected to total $100 million-$120 million, would target campaigns in at least eight states.",
-   "titulo": "Musk autoriza gasto de $100-120 millones en elecciones intermedias republicanas",
-   "resumen": "Elon Musk autorizó a su super PAC gastar entre $100 y $120 millones para apoyar candidatos republicanos en las elecciones intermedias de EE.UU. de 2026, enfocándose en al menos ocho estados. El anuncio refleja un compromiso político directo de Musk en el proceso electoral estadounidense.",
-   "analisis": {
-    "porque": "Musk controla Tesla, SpaceX, X y otras empresas con exposición regulatoria federal. Su gasto electoral señala alineación política que puede influir en políticas de impuestos, regulación ambiental, competencia tecnológica y defensa. Inversionistas monitorean riesgos de sesgo regulatorio.",
-    "queOcurrio": "Musk autorizó a su super PAC un gasto de $100-120 millones en apoyo a candidatos republicanos para elecciones intermedias 2026 en 8+ estados. El titular no especifica candidatos ni estrategia territorial exacta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (reportaje sobre decisión de Musk)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "TSLA",
-    "S&P 500",
-    "NASDAQ",
-    "Regulación tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "TSLA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Sector Tech",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Musk",
-    "elecciones",
-    "super PAC",
-    "campaña",
-    "política regulatoria",
-    "Tesla"
-   ],
-   "tgText": "📊 POLÍTICA: Musk autoriza $100-120M para campañas republicanas 2026 en 8 estados. Impacto potencial: regulación tech, impuestos corporativos.",
-   "xText": "💼 Musk autoriza $100-120M para candidatos republicanos en intermedias 2026. Inversionistas vigilan impacto en política regulatoria de tech.",
-   "discordText": "**EMPRESAS / POLÍTICA**\n• Musk autorizó $100-120M para super PAC republicano\n• Objetivo: 8+ estados, elecciones intermedias 2026\n• Implicación: riesgos regulatorios para TSLA y portafolio Musk",
-   "pushText": "💰 Musk gasta $100-120M en campaña republicana 2026",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "TSLA: neutro a corto plazo (mercado ya conoce postura política de Musk). Inversionistas evalúan riesgo de respuesta regulatoria demócrata a largo plazo.",
-    "despues": "Sector tech en general: vigilancia de políticas de impuestos corporativos, regulación de IA, competencia China (donde está expuesta Tesla). Bonos corporativos de tech pueden tocar sesgo bajista si hay expectativa de aumento de impuestos.",
-    "escenarios": "Traders vigilarán: (1) si el gasto influye en resultados intermedias 2026, (2) cambios en comisiones regulatorias bajo nuevo Congreso, (3) posibles represalias regulatorias si demócratas retienen control, (4) impacto en valuación de Tesla según percepción de riesgo político.",
-    "riesgos": "El gasto electoral no garantiza resultados. Musk ya ha financiado campañas antes; este anuncio es más continuación que novedad. Riesgo bajo de sorpresa en mercado."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33769",
-   "fecha": "2026-07-30T15:28:07+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33769",
-   "via": "DeItaone",
-   "original": "U.S. MILITARY: NO U.S. AIRCRAFT WERE DESTROYED OR DAMAGED IN RECENT ATTEMPTED IRANIAN ATTACKS",
-   "titulo": "EE.UU. confirma que ninguna aeronave fue destruida en ataque iraní",
-   "resumen": "El Pentágono confirmó oficialmente que ningún avión militar estadounidense sufrió daños o destrucción durante los ataques iraníes recientes. Este comunicado llega tras tensiones geopolíticas elevadas y representa una desescalada en la narrativa de conflicto directo entre ambas potencias.",
-   "analisis": {
-    "porque": "Reduce riesgo geopolítico inmediato y alivia presión sobre petróleo, divisas de safe-haven y volatilidad esperada. Los mercados habían priced-in escenarios de escalada militar.",
-    "queOcurrio": "Comunicado oficial del Departamento de Defensa estadounidense negando pérdidas materiales en ataques iraníes anteriores.",
-    "estado": "confirmado",
-    "fuenteOriginal": "U.S. Military (comunicado oficial)"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "S&P500",
-    "VIX",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Pentágono",
-    "Ataque militar",
-    "Tensión geopolítica",
-    "Mercados"
-   ],
-   "tgText": "🛡️ CONFIRMADO: EE.UU. anuncia que ninguna aeronave fue dañada en ataque iraní. Comunicado oficial reduce riesgo de escalada; petróleo y oro podrían ceder presión.",
-   "xText": "🔴 Pentágono confirma: CERO daños en aeronaves estadounidenses tras ataques iraníes. Desescalada geopolítica alivia presión en petróleo y activos refugio.",
-   "discordText": "**Comunicado Oficial - Pentágono**\n• Ninguna aeronave destruida o dañada en ataques iraníes recientes\n• Reduce narrativa de conflicto directo\n• Impacto: Presión bajista esperada en petróleo, oro y VIX",
-   "pushText": "Pentágono: sin daños en ataques iraníes. Desescalada geopolítica inminente.",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent) cede presión inmediatamente por menor riesgo de corte de suministro del Golfo. Oro pierde demanda como safe-haven.",
-    "despues": "DXY debilitaría por salida de inversores de activos refugio hacia riesgo. Acciones cíclicas (energía, construcción) podrían recuperarse.",
-    "escenarios": "Traders monitores: (1) Si se confirma nueva escalada, revertirán ganancias; (2) Si Irán responde con retórica pero sin acción, petróleo sigue cediendo; (3) Vigilancia de comunicados de Teherán en próximas 24h.",
-    "riesgos": "Riesgo de escalada posterior si Irán responde diplomaticamente o con contra-ataque simbólico. Comunicado oficial reduce pero no elimina riesgo geopolítico de fondo."
-   },
-   "macro": {
-    "dolar": "Presión bajista por salida de safe-haven",
-    "oro": "Presión bajista por menor demanda defensiva",
-    "nasdaq": "Sesgo alcista por cierre de riesgo geopolítico",
-    "dow": "Sesgo alcista moderado",
-    "sp500": "Sesgo alcista moderado",
-    "bitcoin": "Neutral-alcista por menor volatilidad esperada",
-    "ethereum": "Neutral",
-    "bonos": "Presión bajista por menor demanda defensiva",
-    "petroleo": "Presión bajista significativa por alivio de riesgo de supply"
-   },
-   "updates": []
-  },
-  {
-   "id": "33768",
-   "fecha": "2026-07-30T15:07:41+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33768",
-   "via": "DeItaone",
-   "original": "ABC SAYS TRUMP ADMINISTRATION IS RETALIATING AGAINST NETWORK OVER ITS NEWS COVERAGE IN EARLY LICENSE REVIEW, SENDING WARNING TO ALL OTHER MEDIA COMPANIES -- FILING",
-   "titulo": "ABC acusa represalia Trump por cobertura crítica; riesgo regulatorio para medios",
-   "resumen": "ABC denunció que administración Trump retalia contra la red por cobertura editorial negativa durante revisión de licencia temprana. Movimiento enciende alerta sobre presión regulatoria contra medios críticos, con aviso implícito a otras compañías de comunicación.",
-   "analisis": {
-    "porque": "Riesgo regulatorio directo para empresas de medios. Disney (propietaria de ABC) y competidores enfrentan incertidumbre sobre renovación de licencias. Afecta valuación de broadcast networks y crea precedente de represalia estatal.",
-    "queOcurrio": "ABC formalizó queja (filing) de represalia regulatoria por crítica editorial. Administración retala mediante revisión acelerada de licencia.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "DIS",
-    "Medios Broadcast",
-    "Renta Fija Corporativa"
-   ],
-   "sesgos": [
-    {
-     "activo": "DIS",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Medios Broadcast",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Breaking News",
-   "keywords": [
-    "ABC",
-    "Trump",
-    "represalia",
-    "licencia",
-    "regulación",
-    "libertad prensa"
-   ],
-   "tgText": "⚠️ **ABC denuncia represalia Trump**: Filing oficial contra retaliación regulatoria por cobertura crítica. Precedente de riesgo para medios. DIS presionado.",
-   "xText": "ABC files: Trump admin retaliates over news coverage via early license review. Regulatory risk escalates for media. Warning to all networks. #DIS",
-   "discordText": "**ABC / Trump: represalia regulatoria**\n• Filing oficial de denuncia\n• Retaliación por cobertura editorial\n• Riesgo: renovación de licencias\n• Implicación: aviso a otros medios",
-   "pushText": "ABC acusa represalia Trump por cobertura crítica, riesgo regulatorio",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Disney (DIS) cae por riesgo de licencia; broadcasters siguen en venta (Paramount, Fox, etc.)",
-    "despues": "Sector medios en descuento general; potencial rally defensivo en plataformas (Netflix, Amazon Prime) vistas como menos expuestas. Bonos corporativos de medios se amplían (spreads suben).",
-    "escenarios": "Traders vigilan: ¿es represalia aislada o señal de war on media broader? ¿Afectará renovación de licencia de DIS en 2026-27? ¿Otros medios recibirán presión similar? Precedente legal/constitucional muy relevante.",
-    "riesgos": "Riesgo de reversión si Trump/admin clarifica no hay represalia real o si cortes bloquean intento. También: politización de mercados si esto se normaliza (volatilidad estructural en medios)."
-   },
-   "macro": {
-    "dis": "bajista medio plazo",
-    "medios": "bajista",
-    "bonos_corporativos": "venta (spreads amplios)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33766",
-   "fecha": "2026-07-30T13:31:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33766",
-   "via": "DeItaone",
-   "original": "$MSFT - *MICROSOFT SHARES JUMP 12% IN BIGGEST ONE-DAY GAIN SINCE 2020",
-   "titulo": "Microsoft salta 12% en su mayor ganancia diaria desde 2020",
-   "resumen": "Las acciones de Microsoft registraron su mayor avance en un día desde 2020, con un salto del 12%. El titular no especifica el catalizador exacto del movimiento, aunque coincide con comentarios positivos sobre política de la Reserva Federal y contexto de fortaleza tecnológica en mercados de IA.",
-   "analisis": {
-    "porque": "Microsoft es componente clave del Nasdaq-100 y refleja sentimiento hacia el sector tecnológico y narrativa de IA. Un movimiento de esta magnitud impacta índices amplios y suele indicar rotación o compra institucional significativa.",
-    "queOcurrio": "Microsoft experimentó ganancia del 12% en sesión única, catalogada como la mayor desde 2020.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "MSFT",
-    "S&P500",
-    "QQQ",
-    "Tecnología"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "MSFT",
-    "tecnología",
-    "IA",
-    "Nasdaq",
-    "rally"
-   ],
-   "tgText": "🟢 **MSFT dispara 12%** en mayor ganancia diaria desde 2020. Impacto inmediato en Nasdaq y sector tecnológico. Catalizador exacto no especificado en titulares iniciales.",
-   "xText": "Microsoft salta 12%, mayor ganancia diaria desde 2020. Impulso significativo para Nasdaq y sector tech. #MSFT #Trading",
-   "discordText": "**Microsoft +12%** • Mayor ganancia desde 2020\n• Impacta directamente Nasdaq-100\n• Refleja fortaleza sector IA\n• Catalizador pendiente de confirmar",
-   "pushText": "MSFT +12%: mayor ganancia desde 2020, Nasdaq impulsado",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Nasdaq-100 y QQQ reaccionan inmediatamente por weight de Microsoft; seguido por S&P 500 que recibe arrastre alcista del sector tech",
-    "despues": "Otros mega-cap tech (AAPL, NVDA, GOOG) tienden a seguir; bonos USA podrían debilitarse si se interpreta como apetito por riesgo renovado",
-    "escenarios": "Traders vigilan si es compra sostenida (institucional) o pump especulativo; también monitorean si el rally se extiende a small-caps o queda confinado a mega-cap. Clave: volumen y seguimiento mañana.",
-    "riesgos": "El titular no especifica catalizador; risk de reversión si fue venta forzada de cortos o especulación. Confirmar con earnings/guidance pendiente."
-   },
-   "macro": {
-    "nasdaq": "alcista fuerte",
-    "sp500": "alcista",
-    "bonos": "potencial venta (flight to risk)",
-    "dolar": "neutral a bajista (riesgo-on)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-30T13:59:38+00:00",
-     "id": "33767",
-     "texto": "Corrección de alza: Microsoft en realidad sube 15% (no 12%), encaminándose a su mayor ganancia porcentual en sesión diaria desde 2008. Movimiento excepcional que sugiere catalizador institucional o revaluación significativa del stock.",
-     "tgUrl": "https://t.me/walterbloomberg/33767"
-    }
-   ],
-   "actualizado": "2026-07-30T13:59:38+00:00"
   }
  ],
  "rssVistos": [
@@ -7910,6 +7846,16 @@
   "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html",
   "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html",
   "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html",
-  "https://www.cnbc.com/2026/08/03/ukraine-russia-war-putin-zelenskyy-winter.html"
+  "https://www.cnbc.com/2026/08/03/ukraine-russia-war-putin-zelenskyy-winter.html",
+  "https://www.cnbc.com/2026/08/03/trump-says-exxon-and-chevron-made-too-much-money-off-high-oil-prices-during-iran-conflict-i-dont-like-it.html",
+  "https://www.cnbc.com/2026/08/03/faa-boeing-737-max-certification.html",
+  "https://www.cnbc.com/2026/08/03/imax-stock-the-odyssey.html",
+  "https://www.cnbc.com/2026/08/03/trump-pirro-reflecting-pool-vandalism-case.html",
+  "https://www.cnbc.com/select/which-credit-card-earns-the-most-cash-back/",
+  "https://www.cnbc.com/2026/08/03/stocks-making-the-biggest-moves-after-hours-pltr-on-snap.html",
+  "https://www.cnbc.com/2026/08/03/larry-berg-major-league-soccer-commissioner.html",
+  "https://www.cnbc.com/2026/08/03/trump-tariffs-25-states-lawsuit-supreme-court.html",
+  "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+  "https://www.cnbc.com/2026/08/03/snap-q2-earnings-report-2026.html"
  ]
 }
