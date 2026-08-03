@@ -1,7 +1,409 @@
 {
- "lastId": 33846,
- "actualizado": "2026-08-03T05:53:05.663Z",
+ "lastId": 33854,
+ "actualizado": "2026-08-03T09:33:26.616Z",
  "items": [
+  {
+   "id": "33854",
+   "fecha": "2026-08-03T09:27:26+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33854",
+   "via": "DeItaone",
+   "original": "$TSLA - STIFEL CUTS TESLA PRICE TARGET, KEEPS BUY Stifel lowered its Tesla price target to $491 from $508, while maintaining a Buy rating. The firm cited weaker profitability after Q2, with gross margin falling to 16.8% and adjusted EBITDA missing expectations. Despite this, Stifel remains bullish on FSD and Robotaxi, pointing to a growing order backlog and the Model YL launch as key long-term cat",
+   "titulo": "Stifel rebaja target de Tesla a $491 pero mantiene Buy; margen bruto bajo presión",
+   "resumen": "Stifel redujo objetivo de precio de Tesla de $508 a $491 manteniendo calificación de Compra. La rebaja responde a margen bruto debilitado (16,8% en Q2) y EBITDA ajustado por debajo de expectativas. Analista mantiene optimismo en FSD, Robotaxi y lanzamiento de Model YL como catalizadores.",
+   "analisis": {
+    "porque": "Rebaja de target en medio de Buy rating es señal de revisión cautelosa; afecta a inversores en opciones y momentum. Márgenes débiles sugieren presión competitiva/costos en vehículos eléctricos.",
+    "queOcurrio": "Stifel bajó precio objetivo de $508 a $491 (3,3% de caída); mantiene Buy; cita margen bruto 16,8% vs. expectativas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "TSLA",
+    "Nasdaq 100",
+    "Automóvil eléctrico"
+   ],
+   "sesgos": [
+    {
+     "activo": "TSLA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Tesla",
+    "TSLA",
+    "Stifel",
+    "margen bruto",
+    "precio objetivo",
+    "FSD",
+    "Robotaxi"
+   ],
+   "tgText": "🚗 Stifel rebaja target TSLA de $508 a $491 (-3,3%) pero mantiene Buy. Margen bruto débil (16,8%). Optimista en FSD/Robotaxi y Model YL.",
+   "xText": "📊 TSLA: Stifel baja target a $491 vs $508 (Buy mantiene). Márgenes bajo presión (16,8% bruto). Confianza en FSD y Robotaxi. #Tesla",
+   "discordText": "**Stifel rebaja Tesla pero mantiene Buy**\n• Target anterior: $508\n• Target nuevo: $491 (-3,3%)\n• Rating: Buy (mantiene)\n• Margen bruto Q2: 16,8%\n• Catalizadores: FSD, Robotaxi, Model YL",
+   "pushText": "TSLA: Stifel baja target a $491 pero mantiene Buy; margen bruto débil",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "TSLA directo; volatilidad intradiaria por revaluación de múltiplos.",
+    "despues": "Nasdaq 100; sector automoción eléctrica; competidores de Tesla.",
+    "escenarios": "Traders vigilan: (1) confirmación de márgenes en próximo earnings; (2) tracción real de Robotaxi/FSD en órdenes; (3) reacción a nuevo target relativo a precio actual.",
+    "riesgos": "Rebaja parcial (3,3%) sugiere más downside posible si márgenes no recuperan. FSD/Robotaxi son high-risk catalysts sin ingresos confirmados aún. Competencia global presiona márgenes EV."
+   },
+   "macro": {
+    "nasdaq": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33827",
+   "fecha": "2026-08-01T07:48:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33827",
+   "via": "DeItaone",
+   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
+   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
+   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "analisis": {
+    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
+    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Carry Trades",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "intervención-divisas",
+    "yen-japón",
+    "usdjpy",
+    "tesoro-usa",
+    "banco-central-japón",
+    "carry-trades"
+   ],
+   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
+   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
+   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
+   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
+    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
+    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
+    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+   },
+   "macro": {
+    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
+    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
+    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
+    "dow": "neutral a alcista por debilitamiento de dólar",
+    "sp500": "neutral a alcista por debilitamiento de dólar",
+    "bitcoin": "alcista potencial por debilitamiento de dólar",
+    "ethereum": "alcista potencial por debilitamiento de dólar",
+    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
+    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-03T09:15:53+00:00",
+     "id": "33852",
+     "texto": "Datos del BOJ confirman intervención en mercado de divisas el viernes por aproximadamente 5,3 billones de yenes, coordinada con USA. Acción consistente con esfuerzos conjuntos para contener fortaleza del dólar frente al yen y apoyar estabilidad macroeconómica regional.",
+     "tgUrl": "https://t.me/walterbloomberg/33852"
+    },
+    {
+     "fecha": "2026-08-03T04:36:53.000Z",
+     "id": "913006923",
+     "texto": "Estados Unidos intervino en el mercado de divisas para sostener el yen japonés tras una depreciación significativa. La acción conjunta con Japón marca la primera intervención coordinada en años. El titular no especifica si fue una operación puntual o sostenida.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html"
+    },
+    {
+     "fecha": "2026-08-03T00:59:33.000Z",
+     "id": "918380960",
+     "texto": "Autoridades de EE.UU. y Japón confirmaron intervención conjunta en mercados de divisas para sostener el yen. Ambas naciones señalaron estar preparadas para intervenir nuevamente si las condiciones lo justifican. Esta acción busca estabilizar la moneda japonesa y contrarrestar volatilidad cambiaria.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
+    },
+    {
+     "fecha": "2026-08-02T21:43:11+00:00",
+     "id": "33842",
+     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
+     "tgUrl": "https://t.me/walterbloomberg/33842"
+    },
+    {
+     "fecha": "2026-08-02T14:18:01.000Z",
+     "id": "964297321",
+     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
+     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
+    },
+    {
+     "fecha": "2026-08-02T01:41:08+00:00",
+     "id": "33831",
+     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
+     "tgUrl": "https://t.me/walterbloomberg/33831"
+    },
+    {
+     "fecha": "2026-08-01T15:44:08.000Z",
+     "id": "969625772",
+     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
+     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
+    }
+   ],
+   "actualizado": "2026-08-03T09:15:53+00:00"
+  },
+  {
+   "id": "33851",
+   "fecha": "2026-08-03T08:49:39+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33851",
+   "via": "DeItaone",
+   "original": "$SPCX - SPACEX FACES LOCK-UP SELLING PRESSURE SpaceX shares are under pressure as insider lock-up expirations begin on August 6. Around 20–30% of locked shares will become eligible for sale initially, with staggered unlocks lifting tradable shares to roughly 40% by December 2026. The stock has already fallen below its IPO price, while investors await its first earnings report after Tuesday's close",
+   "titulo": "SpaceX presionada por vencimiento de lock-up: 20-30% de acciones elegibles desde agosto 6",
+   "resumen": "Las acciones de SpaceX enfrentan presión de venta de insiders tras vencimiento de lock-up el 6 de agosto. Inicialmente 20-30% de acciones bloqueadas serán elegibles; para diciembre 2026 llegarían a ~40%. El precio ya cayó bajo IPO; se espera reporte de earnings mañana.",
+   "analisis": {
+    "porque": "Vencimientos de lock-up masivos introducen riesgo de dilución y presión vendedora estructural. Mercados descuentan inmediatamente al ajustar múltiplos de valuación. Coincide con primer earnings, multiplicando volatilidad.",
+    "queOcurrio": "SpaceX anuncia vencimiento de lock-up el 6 de agosto; 20-30% de acciones pasan de bloqueadas a elegibles para venta; stock ya bajo IPO; earnings el martes.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "SPCX",
+    "Nasdaq",
+    "Tecnología"
+   ],
+   "sesgos": [
+    {
+     "activo": "SPCX",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "SPCX",
+    "lock-up",
+    "IPO",
+    "earnings",
+    "insiders"
+   ],
+   "tgText": "🚀 SpaceX enfrenta presión de lock-up: 20-30% de acciones elegibles desde ago 6. Alcanzará 40% en dic 2026. Stock bajo IPO. Earnings martes. #Riesgo",
+   "xText": "⚠️ SPCX: vencimiento lock-up ago 6 (20-30% elegible inicialmente, 40% para dic). Stock bajo IPO + earnings martes = volatilidad. #SpaceX",
+   "discordText": "**SpaceX enfrenta presión de insider selling**\n• Lock-up vence: 6 de agosto\n• Acciones elegibles: 20-30% inicial → 40% dic 2026\n• Precio: bajo IPO\n• Earnings: martes\n• Riesgo: dilución + volatilidad",
+   "pushText": "SPCX: presión de lock-up desde ago 6; acciones bajo IPO y earnings próximos",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "SPCX directo. Caída probable por oferta estructural de insiders y descuento preemptivo.",
+    "despues": "Nasdaq 100 (SPCX peso relativo bajo pero psicológico); otros recientes IPOs; tecnología si hay contagio de preocupación sobre calidad de IPOs.",
+    "escenarios": "Traders vigilan: (1) volumen de venta real tras lock-up; (2) si earnings sorprenden al alza/baja (ratio leverage); (3) demanda institucional vs. presión vendedora; (4) velocidad de normalización post-venta.",
+    "riesgos": "Earnings podría actuar como catalizador contrario (sorpresa positiva retiene precio). Lock-up es estructural pero timing depende de decisiones insiders. Posible compra de fondo si fundamentales son sólidos."
+   },
+   "macro": {
+    "nasdaq": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33850",
+   "fecha": "2026-08-03T08:22:54+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33850",
+   "via": "DeItaone",
+   "original": "OIL STOCKS FALL PREMARKET AS CRUDE PRICES DECLINE OVER 5% EXXONMOBIL DOWN 1.6%, CHEVRON DOWN 1.5%, CONOCOPHILLIPS FALLS 2% OCCIDENTAL PETROLEUM FALLS 2.3%, DEVON ENERGY DOWN 1.9%",
+   "titulo": "Petróleo desploma más de 5%; energéticas ceden con caídas de 1,5% a 2,3%",
+   "resumen": "El crudo cayó más del 5% en premarket, arrastrando a principales productoras: ExxonMobil (-1,6%), Chevron (-1,5%), ConocoPhillips (-2%), Occidental Petroleum (-2,3%), Devon Energy (-1,9%). La debilidad refleja presión en demanda global y/o sorpresa bajista en inventarios.",
+   "analisis": {
+    "porque": "Caídas de petróleo >5% señalan cambio estructural en demanda o riesgo de oferta excesiva. Afecta directamente márgenes de integradas y exploradoras; impacta inflación energética y curva de rendimientos.",
+    "queOcurrio": "Precio del crudo retrocedió >5% en premarket. Todas las grandes capitalizaciones energéticas retrocedieron 1,5-2,3%, consistente con shock bajista en commodities.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "S&P 500",
+    "Energéticas",
+    "XLE",
+    "RIG",
+    "DVN"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Energéticas",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Inflación",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "petróleo",
+    "energía",
+    "ExxonMobil",
+    "Chevron",
+    "commodities",
+    "caída"
+   ],
+   "tgText": "📉 Petróleo cae >5% arrastrando energéticas: XOM -1,6%, CVX -1,5%, COP -2%, OXY -2,3%, DVN -1,9%. Presión en demanda global.",
+   "xText": "⛽ Crudo desploma >5%; energéticas ceden: XOM -1,6%, CVX -1,5%, COP -2%, OXY -2,3%, DVN -1,9%. Shock de demanda? #Energía",
+   "discordText": "**Petróleo colapsa >5% en premarket**\n• ExxonMobil: -1,6%\n• Chevron: -1,5%\n• ConocoPhillips: -2%\n• Occidental: -2,3%\n• Devon Energy: -1,9%",
+   "pushText": "Petróleo cae >5%; energéticas en rojo de 1,5% a 2,3%",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "ETF energético XLE; acciones integradas (XOM, CVX). Caída por presión de demanda o revisión de proyecciones OPEC.",
+    "despues": "Índices amplios (S&P 500, Dow Jones); bonos (rendimientos bajan por deflación de energía); dólar (correlación mixta); empresas defensivas y de consumo discrecional.",
+    "escenarios": "Traders vigilan: (1) datos de inventarios USA esperados; (2) señales de desaceleración china/global; (3) decisión OPEC sobre próximos cortes; (4) rentabilidad de perforadores independientes.",
+    "riesgos": "Titular no especifica causa de caída. Podría ser dato de inventarios débil, recesión anticipada, o movimiento técnico. Reversión posible si es sobrereacción."
+   },
+   "macro": {
+    "petroleo": "bajista (corto plazo)",
+    "sp500": "neutral a bajista",
+    "inflacion": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33849",
+   "fecha": "2026-08-03T08:22:28+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33849",
+   "via": "DeItaone",
+   "original": "CHINA'S CXMT CONSIDERS SECOND MEMORY CHIP PLANT IN BEIJING, SOURCES SAY CXMT IN FINANCING TALKS WITH A LOCAL GOVERNMENT-BACKED TECH AND MANUFACTURING HUB FOR THE NEW CHIP PLANT, SOURCES SAY",
+   "titulo": "China CXMT planea segunda planta de chips en Beijing; negocia financiamiento",
+   "resumen": "China Microelectronics Technology (CXMT) estudia construcción de segunda planta de memoria en Beijing y mantiene conversaciones de financiamiento con entidad local de tech y manufactura respaldada por gobierno. Iniciativa refleja estrategia de fortalecer capacidad doméstica de semiconductores.",
+   "analisis": {
+    "porque": "Expansión de capacidad de chips en China amplifica ciclo de inversión estatal en semiconductores; impacta demanda de equipos (ASML, LRCX) y competencia global. Influye en narrativa de independencia tecnológica y sanciones a China.",
+    "queOcurrio": "CXMT negocia financiamiento para segunda planta de chips de memoria en Beijing con entity gubernamental.",
+    "estado": "rumor",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Semiconductores",
+    "ASML",
+    "LRCX",
+    "MU",
+    "SK Hynix",
+    "Geopolítica tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores globales",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "ASML",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "China",
+    "CXMT",
+    "semiconductores",
+    "chips",
+    "memoria",
+    "capacidad"
+   ],
+   "tgText": "🔌 China CXMT planea segunda planta de chips en Beijing; negocia financiamiento estatal. Apunta a independencia de semiconductores.",
+   "xText": "🇨🇳 CXMT (China) expande: segunda planta de chips en Beijing + financiamiento gubernamental. Estrategia de autosuficiencia tech. #Semiconductores",
+   "discordText": "**CXMT expande capacidad de chips en China**\n• Segunda planta: Beijing\n• Tipo: memoria\n• Financiamiento: entity estatal\n• Objetivo: independencia tech\n• Impacto: competencia global",
+   "pushText": "CXMT expande chips en China; segunda planta en Beijing con financiamiento estatal",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de equipamiento (ASML cae en riesgo geopolítico); fabricantes de memoria (MU, SK Hynix bajo presión de oferta futura).",
+    "despues": "Índices amplios China; tech occidental; bonos de fabricantes de semiconductores.",
+    "escenarios": "Traders vigilan: (1) confirmación oficial de inversión; (2) velocidad de construcción y salida a producción; (3) escalada de sanciones USA vs. capacidad china; (4) efecto en curva de precios de chips.",
+    "riesgos": "Titular usa 'sources say' = información no confirmada. Financiamiento estatal podría no materializarse o retrasarse. Sanciones USA podrían bloquear equipo crítico. Capacidad real de chip-making avanzado en China aún limitada."
+   },
+   "macro": {
+    "semiconductores": "bajista (largo plazo, competencia)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33848",
+   "fecha": "2026-08-03T07:48:21+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33848",
+   "via": "DeItaone",
+   "original": "BITCOIN SLIPS ON WALLET HACK FEARS Bitcoin dropped 1.3% to $62,591 amid concerns over a potential hack targeting Coldcard wallets. Coinkite urged users to move funds after researchers flagged a flaw that may have enabled attackers to steal roughly $70 million in under an hour. Adding pressure, bitcoin ETFs recorded outflows on Friday.",
+   "titulo": "Bitcoin cae 1,3% tras alerta de vulnerabilidad en wallets Coldcard",
+   "resumen": "Bitcoin retrocedió a $62.591 por preocupaciones sobre un fallo de seguridad en wallets Coldcard que habría permitido robo de ~$70 millones en menos de una hora. Coinkite instó a usuarios a transferir fondos. Los ETFs de Bitcoin registraron salidas el viernes, agregando presión vendedora al activo.",
+   "analisis": {
+    "porque": "Eventos de seguridad crítica en infraestructura cripto generan pánico de venta y erosionan confianza institucional. Afecta directamente valuación de Bitcoin y flujos de ETFs.",
+    "queOcurrio": "Investigadores identificaron vulnerabilidad en hardware wallets Coldcard; Coinkite advirtió a usuarios; Bitcoin descendió 1,3% simultáneamente con salidas de ETFs.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Bitcoin",
+    "Criptomonedas",
+    "ETFs cripto"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "Bitcoin",
+    "seguridad",
+    "wallet",
+    "Coldcard",
+    "criptomonedas",
+    "hack"
+   ],
+   "tgText": "🔓 Bitcoin cae 1,3% a $62.591 tras alerta de fallo crítico en wallets Coldcard que permitió robo de ~$70M. Coinkite insta a usuarios a mover fondos. ETFs registran salidas.",
+   "xText": "⚠️ BTC retrocede a $62.591 por vulnerabilidad en Coldcard wallets (+$70M robados en <1h). Coinkite alerta usuarios. ETFs con salidas. #Bitcoin #Crypto",
+   "discordText": "**Bitcoin en rojo por alerta de seguridad**\n• Caída: 1,3% a $62.591\n• Fallo crítico en wallets Coldcard\n• Robo potencial: ~$70 millones\n• ETFs con flujos negativos",
+   "pushText": "Bitcoin cae por fallo de seguridad Coldcard; alerta de robo de $70M",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Bitcoin y derivados cripto; caída inmediata por pánico de venta y desconfianza en custodias.",
+    "despues": "Altcoins correlacionadas; acciones de empresas cripto; ETFs de Bitcoin; posiblemente tasas de interés si domina narrativa de riesgo sistémico.",
+    "escenarios": "Traders vigilan: (1) alcance del exploit y monedas recuperables; (2) velocidad de patch; (3) contagio a otras wallets; (4) requisitos regulatorios derivados.",
+    "riesgos": "Titular no especifica cantidad exacta comprometida ni si el robo ya ocurrió o es hipotético. Posible exageración de alcance. Fuga de confianza si wallet es muy utilizada por instituciones."
+   },
+   "macro": {
+    "bitcoin": "bajista (corto plazo)"
+   },
+   "updates": []
+  },
   {
    "id": "905764130",
    "fecha": "2026-08-03T05:00:01.000Z",
@@ -197,116 +599,6 @@
     }
    ],
    "actualizado": "2026-08-03T04:44:30.000Z"
-  },
-  {
-   "id": "33827",
-   "fecha": "2026-08-01T07:48:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33827",
-   "via": "DeItaone",
-   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
-   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
-   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
-   "analisis": {
-    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
-    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times (vía Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "USDJPY",
-    "DXY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Carry Trades",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "intervención-divisas",
-    "yen-japón",
-    "usdjpy",
-    "tesoro-usa",
-    "banco-central-japón",
-    "carry-trades"
-   ],
-   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
-   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
-   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
-   "pushText": "USA y Japón intervienen en divisas para sostener yen",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
-    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
-    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
-    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
-   },
-   "macro": {
-    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
-    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
-    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
-    "dow": "neutral a alcista por debilitamiento de dólar",
-    "sp500": "neutral a alcista por debilitamiento de dólar",
-    "bitcoin": "alcista potencial por debilitamiento de dólar",
-    "ethereum": "alcista potencial por debilitamiento de dólar",
-    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
-    "petroleo": "neutral a alcista por debilitamiento de dólar"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-03T04:36:53.000Z",
-     "id": "913006923",
-     "texto": "Estados Unidos intervino en el mercado de divisas para sostener el yen japonés tras una depreciación significativa. La acción conjunta con Japón marca la primera intervención coordinada en años. El titular no especifica si fue una operación puntual o sostenida.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html"
-    },
-    {
-     "fecha": "2026-08-03T00:59:33.000Z",
-     "id": "918380960",
-     "texto": "Autoridades de EE.UU. y Japón confirmaron intervención conjunta en mercados de divisas para sostener el yen. Ambas naciones señalaron estar preparadas para intervenir nuevamente si las condiciones lo justifican. Esta acción busca estabilizar la moneda japonesa y contrarrestar volatilidad cambiaria.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
-    },
-    {
-     "fecha": "2026-08-02T21:43:11+00:00",
-     "id": "33842",
-     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
-     "tgUrl": "https://t.me/walterbloomberg/33842"
-    },
-    {
-     "fecha": "2026-08-02T14:18:01.000Z",
-     "id": "964297321",
-     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
-     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
-    },
-    {
-     "fecha": "2026-08-02T01:41:08+00:00",
-     "id": "33831",
-     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
-     "tgUrl": "https://t.me/walterbloomberg/33831"
-    },
-    {
-     "fecha": "2026-08-01T15:44:08.000Z",
-     "id": "969625772",
-     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
-     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
-    }
-   ],
-   "actualizado": "2026-08-03T04:36:53.000Z"
   },
   {
    "id": "956001660",
@@ -7422,292 +7714,6 @@
     "rendimientos": "alcista",
     "dolar": "alcista"
    },
-   "updates": []
-  },
-  {
-   "id": 979069989,
-   "fecha": "2026-07-30T02:52:30.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/china-us-robot-humanoid-ban-trump-visit.html",
-   "via": "CNBC",
-   "original": "China threatens retaliation against U.S. humanoid robot ban, says it &apos;severely damages&apos; relations",
-   "titulo": "China amenaza represalias por prohibición EE.UU. de robots humanoides; tensión comercial sube",
-   "resumen": "China anuncia represalias contra EE.UU. por restricción de robots humanoides, acusando a Washington de \"daño grave\" a relaciones bilaterales. Escala de tensión comercial y tecnológica en IA.",
-   "analisis": {
-    "porque": "Geopolítica tech IA: prohibición EE.UU. de robots humanoides chinos gatilla represalias comerciales. Riesgo: aranceles reciprocales, restricciones a acceso de tech EE.UU. en China. Afecta valuaciones tech globales y sentimiento de riesgo.",
-    "queOcurrio": "EE.UU. restringe robots humanoides chinos; China amenaza represalias",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "DXY",
-    "S&P 500",
-    "Nasdaq",
-    "EURUSD",
-    "Oro",
-    "Petróleo"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Tech",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "China",
-    "EE.UU.",
-    "robots",
-    "humanoides",
-    "represalias",
-    "aranceles",
-    "tech"
-   ],
-   "tgText": "BREAKING: China amenaza represalias por prohibición EE.UU. de robots humanoides. Escala: daño \"grave\" a relaciones bilaterales. Riesgo aranceles reciprocales.",
-   "xText": "🚨 China vs EE.UU.: Prohibición robots humanoides genera amenaza de represalias. Tensión tech-comercial escala. Riesgo aranceles. Mercado espera reacción. #Geopolítica",
-   "discordText": "🚨 **ESCALADA: China-EE.UU. en Robots**\n• EE.UU. restringe robots humanoides chino\n• China amenaza represalias\n• Daño \"grave\" a relaciones bilaterales\n• Riesgo: aranceles reciprocales, restricciones tech",
-   "pushText": "BREAKING: China amenaza represalias por prohibición EE.UU. de robots humanoides",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Nasdaq, S&P 500 (venta de riesgo por tensión comercial; MSFT, AAPL, NVDA en foco por exposición China)",
-    "despues": "DXY fortalece (demanda de safe haven), Oro sube (cobertura geopolítica), Petróleo volátil (si tensión afecta comercio Oriente Medio)",
-    "escenarios": "Traders vigilan: 1) comunicado oficial chino (represalias concretas vs vagas amenazas), 2) listado de sectores/empresas en represalia china, 3) respuesta EE.UU., 4) impact en cadenas de suministro tech",
-    "riesgos": "Riesgo alto: si es escalada en serio vs. postura habitual. Monitorear oficialismo chino (CCTV/Xinhua) para confirmar. Rumor si es solo Bloomberg/agencia occidental sin fuente china verificable."
-   },
-   "macro": {
-    "dolar": "alcista por safe haven",
-    "oro": "alcista por riesgo geopolítico",
-    "nasdaq": "bajista por exposición China",
-    "petroleo": "volátil por riesgo geopolítico",
-    "sp500": "bajista por efecto contagio"
-   },
-   "updates": []
-  },
-  {
-   "id": 975621833,
-   "fecha": "2026-07-30T02:15:40.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/china-ai-supplier-zhongji-innolight-hong-kong-debut.html",
-   "via": "CNBC",
-   "original": "China AI supplier Zhongji Innolight slips in Hong Kong debut after $6.8 billion IPO",
-   "titulo": "Chip maker chino Zhongji Innolight cae en debut Hong Kong; IPO de USD 6.800M debajo de expectativas",
-   "resumen": "Zhongji Innolight (proveedor de semiconductores IA chino) se desploma en su debut en la Bolsa de Hong Kong tras IPO de USD 6.800 millones. Refleja enfriamiento de demanda de tech china en mercados globales.",
-   "analisis": {
-    "porque": "Debilidad en demanda de chips chino-IA sugiere saturación o caída de confianza en competitividad china. Impacta sentimiento sobre empresas tech chinas y relaciones EE.UU.-China. Señal de apetito decreciente para China en IPO.",
-    "queOcurrio": "Zhongji Innolight IPO por USD 6.800M en Hong Kong; acción cae en primer día",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Hang Seng",
-    "Tech China",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "Tech China",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Zhongji Innolight",
-    "IPO",
-    "Hong Kong",
-    "chips",
-    "China",
-    "IA"
-   ],
-   "tgText": "IPO china Zhongji Innolight (USD 6.800M) debuta con caída en Hong Kong. Señal: enfriamiento en demanda de tech china y confianza inversor.",
-   "xText": "Zhongji Innolight cae en debut Hong Kong. IPO china USD 6.8B rechazada por mercado. Señal bearish para tech chino. #China #Semiconductores",
-   "discordText": "**China Chip IPO: Zhongji Innolight Falla**\n• IPO USD 6.800M en Hong Kong\n• Acción cae en primer día (débil demanda)\n• Señal: enfriamiento en chips IA chinos",
-   "pushText": "IPO china Zhongji Innolight cae en debut; débil demanda de chips IA chino",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Hang Seng, índices tech chinos (debilidad en demanda de semiconductores chinos)",
-    "despues": "Semiconductores globales compitiendo vs China; USD fortalecido vs yuan",
-    "escenarios": "Traders vigilan: 1) otras IPOs chinas próximas (apetito bajista), 2) datos de exportación chip China, 3) aranceles EE.UU. impactando competitividad",
-    "riesgos": "Titulo no especifica magnitud de caída ni razones exactas (demanda débil? valuación alta?)"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 983209807,
-   "fecha": "2026-07-30T01:58:00.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/india-meta-democracy-protest-boost-instagram-meta.html",
-   "via": "CNBC",
-   "original": "Inside India newsletter: Meta&apos;s clout in the world&apos;s largest democracy is surging — inviting scrutiny",
-   "titulo": "Meta consolida poder en India y atrae escrutinio regulatorio",
-   "resumen": "Influencia de Meta (WhatsApp, Instagram, Facebook) crece en mundo democrático más grande, despertando alarmas regulatorias. Presencia dominante en telecomunicaciones y redes sociales convierte a Meta en blanco de política local.",
-   "analisis": {
-    "porque": "Riesgo regulatorio geográfico explícito. India es mercado clave para crecimiento ad de Meta; escrutinio afecta monetización y expansión. Precedente para otros gobiernos.",
-    "queOcurrio": "Clout de Meta en India crece pero llama atención regulatoria local",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "META"
-   ],
-   "sesgos": [
-    {
-     "activo": "META",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Meta",
-    "India",
-    "regulación",
-    "escrutinio",
-    "geopolítica"
-   ],
-   "tgText": "Meta domina India (WhatsApp, Instagram, Facebook) pero escrutinio regulatorio crece. Riesgo: políticas locales pueden limitar monetización en mercado clave.",
-   "xText": "Meta's power in India surge pero reguladores encienden alarmas. Riesgo geopolítico real para crecimiento ad. #Meta #India #Regulación",
-   "discordText": "**Meta en India: Poder + Escrutinio**\n• Domina telecomunicaciones y redes sociales\n• Gobierno local toma nota regulatoria\n• Riesgo: restricciones a monetización",
-   "pushText": "Meta consolida poder en India; reguladores encienden alarmas",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "META (riesgo regulatorio India impacta proyecciones de crecimiento ad en mercado emergente clave)",
-    "despues": "Tech emergentes y ETFs India-exposed podrían ver repricing si se confirman restricciones",
-    "escenarios": "Traders monitorean: 1) anuncios regulatorios en India, 2) reporte de earnings META sobre India revenue growth, 3) precedentes en otras democracias",
-    "riesgos": "Contexto vago (\"inviting scrutiny\" no especifica acciones concretas). Riesgo: rumor vs confirmado."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 936038120,
-   "fecha": "2026-07-30T01:00:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/kevin-warsh-fed-treasury-yields-inflation-credibility-interest-rates.html",
-   "via": "CNBC",
-   "original": "Analysis: Fed Chairman Warsh&apos;s credibility in question after leaving interest rates unchanged",
-   "titulo": "Credibilidad de Warsh en duda tras mantener tasas sin claridad sobre septiembre",
-   "resumen": "Analistas cuestionan la credibilidad del presidente Powell sucesor (posible), Warsh, por mantener tasas en 3,5%-3,75% sin proporcionar dirección clara sobre el próximo movimiento. Genera incertidumbre sobre sesgo futuro de política monetaria.",
-   "analisis": {
-    "porque": "Claridad de forward guidance es crítica para mercados de bonos y FX. Ambigüedad reduce credibilidad del banco central y eleva volatilidad de expectativas de tasa. Afecta valuaciones de renta fija y dólar.",
-    "queOcurrio": "Fed mantiene tasas sin resolver expectativa sobre septiembre; comentarios no despejaron dudas",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "Bonos USA",
-    "Rendimientos USA",
-    "EURUSD",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "Powell",
-    "Warsh",
-    "tasas",
-    "credibilidad",
-    "septiembre"
-   ],
-   "tgText": "Fed mantiene tasas pero Warsh siembra dudas sobre claridad. Credibilidad cuestionada por falta de forward guidance. Bonos volatilizados.",
-   "xText": "Warsh's Fed clarity problem: tasas estables pero sin hoja de ruta clara. Mercado de bonos desconfía. Dólar bajo presión. #Fed #Bonos",
-   "discordText": "**Fed: Credibilidad de Warsh en Duda**\n• Tasas mantienen 3,5%-3,75%\n• Forward guidance ausente para septiembre\n• Mercado bonos: poca claridad = menos confianza",
-   "pushText": "Fed mantiene tasas pero crea incertidumbre; credibilidad de Warsh cuestionada",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Bonos USA (venta en plazo largo por incertidumbre), DXY (debilidad por menos confianza en Fed)",
-    "despues": "EURUSD (apreciación vs dólar débil), acciones (volatilidad de tasa agresiva para valuaciones)",
-    "escenarios": "Traders vigilan: 1) si Fed clarifica en comunicados posteriores, 2) curva de expectativas de tasa para próximos 3 meses, 3) discursos de gobernadores",
-    "riesgos": "Ya publicada; esta es análisis posterior. Riesgo: interpretación de \"credibilidad\" es editorial"
-   },
-   "macro": {
-    "dolar": "presión bajista por pérdida de confianza",
-    "bonos": "volatilidad alcista (yields suben por venta)",
-    "sp500": "neutral a bajista por tasa incierta"
-   },
-   "updates": []
-  },
-  {
-   "id": 985815003,
-   "fecha": "2026-07-30T00:58:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/zuckerberg-metas-ai-capacity-dilemma-what-to-sell-vs-what-to-keep.html",
-   "via": "CNBC",
-   "original": "Zuckerberg lays out Meta&apos;s AI capacity dilemma: What to sell vs. what to keep",
-   "titulo": "Zuckerberg enfrenta dilema crítico: qué vender vs qué retener en IA",
-   "resumen": "Zuckerberg expone la tensión estratégica de Meta: capacidad de IA limitada requiere decisiones sobre qué servicios monetizar y cuáles retener internamente. Subraya el trade-off entre venta y capacidad productiva propia.",
-   "analisis": {
-    "porque": "Revela presión operativa real en Meta por capex masivo en IA. Decisiones sobre pricing y capacidad impactarán márgenes futuros. Directamente vinculado a guidance decepcionante.",
-    "queOcurrio": "Zuckerberg articula el dilema de capacidad: insuficiente poder computacional para servir todos los usos imaginados de IA",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "META",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "META",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Meta",
-    "Zuckerberg",
-    "IA",
-    "capacidad",
-    "monetización"
-   ],
-   "tgText": "Zuckerberg reconoce dilema de Meta: capacidad de IA insuficiente. Debe elegir qué servicios monetizar vs retener. Refleja presión real sobre márgenes.",
-   "xText": "Meta enfrenta dilema: no hay IA suficiente para todos. Zuckerberg decide qué vende, qué retiene. Presión clara sobre márgenes futuros. #Meta",
-   "discordText": "**Meta: Dilema de Capacidad IA**\n• Computación insuficiente para todos los usos\n• Decisión sobre monetización vs retención interna\n• Impacto directo en márgenes futuros",
-   "pushText": "Meta enfrenta escasez de capacidad IA; Zuckerberg debe elegir qué monetizar",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "META (presión sobre márgenes futuros por restricción de capacidad)",
-    "despues": "Comparables de cloud/AI reevalúan pricing power; Amazon AWS y Google Cloud monitoreados para contraste",
-    "escenarios": "Traders observan si Meta debe reducir inversión en IA o si margenes contraerán por capacidad limitada",
-    "riesgos": "Es continuación de noticia reciente; contexto de guidance débil puede estar sesgando lectura"
-   },
-   "macro": null,
    "updates": []
   }
  ],
