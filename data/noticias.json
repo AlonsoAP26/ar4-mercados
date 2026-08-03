@@ -5931,5 +5931,339 @@
       ],
       "patronUltimaVela": "vela bajista de cuerpo amplio"
     }
+  },
+  {
+    "title": "El PMI manufacturero de EE.UU. sorprende con 55,6% en julio y el dólar rebota",
+    "excerpt": "El ISM manufacturero saltó a 55,6% frente al 54,0% esperado, su nivel más alto desde mayo de 2022, y el índice dólar recupera terreno.",
+    "symbol": "CAPITALCOM:DXY",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dato que sacudió la apertura de agosto</h3><p>El Instituto de Gestión de Suministros (ISM, por sus siglas en inglés) publicó este lunes 3 de agosto su reporte de julio con un resultado que superó ampliamente las proyecciones. El Manufacturing PMI registró 55,6%, 2,3 puntos porcentuales por encima del 53,3% de junio y muy por arriba del 54,0% que esperaba el consenso de analistas, según recogió Investing Live. Se trata de la lectura más alta desde mayo de 2022, cuando el índice marcó 55,9%.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Componentes que respaldan la sorpresa</h3><p>El desglose del reporte confirma que la mejora no fue superficial. El subíndice de Nuevas Órdenes avanzó a 56,7% desde 56,0% previo, mientras que Producción saltó a 58,5% desde 52,2%, y el componente de Empleo volvió a terreno de expansión al pasar de 49,7% a 52,8%, la primera lectura expansiva en casi tres años, de acuerdo con el detalle publicado por Investing Live. El comunicado oficial del ISM, difundido por PR Newswire, señaló que la economía manufacturera acumula 21 meses consecutivos de expansión.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dólar reacciona al alza</h3><p>La reacción inmediata en el mercado de divisas fue un repunte del billete verde. FXEmpire reportó que el índice dólar ganó terreno tras conocerse que el PMI manufacturero subió de 53,3% en junio a 55,6% en julio, superando el pronóstico de los analistas de 54%. El panel de mercado de AR4 Mercados muestra al índice dólar (DXY) cotizando en 99,99 puntos, con una suba del 0,2% en la jornada, aunque acumula una caída del 1,5% en la semana y del 0,9% en el mes. El euro/dólar, por su parte, opera en 1,1511, con un retroceso diario del 0,3%, aunque conserva una ganancia semanal del 1,2%.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Comentarios mixtos de las empresas encuestadas</h3><p>Susan Spence, presidenta del comité del ISM Manufacturing Business Survey, señaló que en julio la actividad manufacturera se mantuvo en expansión y creció al ritmo más rápido en más de cuatro años, aunque el 62% de los comentarios recibidos de las empresas encuestadas fueron negativos, citando volatilidad de precios y el conflicto en Medio Oriente entre los principales factores de preocupación, según el reporte de Steel Market Update.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Otros indicadores y el trasfondo del rebote del dólar</h3><p>El reporte del ISM llegó en un contexto donde el índice dólar venía de acumular pérdidas relevantes: el DXY cotiza actualmente en 99,99, por encima de su media móvil de 200 sesiones, pero todavía lejos de su máximo de 52 semanas de 101,8 y no tan alejado de su mínimo anual de 95,55. El RSI de 14 períodos se ubica en 38,7, en zona neutral pero cercana a terreno de sobreventa, lo que sugiere que el mercado tenía margen para un rebote técnico incluso antes de conocerse el dato. En paralelo, el oro (XAU/USD) opera en 4.107,6 dólares, con una suba diaria del 1,4%, mostrando que el apetito por cobertura no desapareció pese a la fortaleza puntual del dólar. Fuentes de mercado citadas por FXPremiere habían anticipado antes de la publicación que una lectura del ISM más fuerte de lo esperado, en especial con precios firmes, podía impulsar al dólar y a los rendimientos de bonos.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La sorpresa alcista del ISM manufacturero reabre el debate sobre la resiliencia de la economía estadounidense justo cuando el mercado especulaba con una Reserva Federal más dispuesta a recortar tasas. Un dato de actividad fabril tan robusto, con el componente de empleo volviendo a expansión tras casi tres años, complica el argumento de un enfriamiento generalizado y podría moderar las expectativas de flexibilización monetaria en el corto plazo. Para los próximos días, conviene monitorear si el rebote del DXY logra sostenerse por encima de la zona de 100 puntos o si se trata de un movimiento pasajero dentro de la tendencia bajista mensual del 0,9% que aún exhibe el índice. También será clave observar el componente de Precios Pagados, que en julio quedó en 71,1%, prácticamente en línea con lo esperado, como termómetro de presiones inflacionarias que podrían filtrarse a la política de la Fed. El euro/dólar, tras la corrección diaria del 0,3%, mantiene un RSI de 57,8 que todavía no muestra sobrecompra, dejando espacio para nuevos movimientos en ambas direcciones según se acumulen los próximos datos de empleo y precios en Estados Unidos.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "trend": "up",
+    "sources": [
+      {
+        "name": "PR Newswire",
+        "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-6-july-2026-ism-manufacturing-pmi-report-302840669.html"
+      },
+      {
+        "name": "Investing Live",
+        "url": "https://investinglive.com/news/us-ism-manufacturing-pmi-for-july-55-6-versus-54-0-estimate/"
+      },
+      {
+        "name": "FXEmpire",
+        "url": "https://www.fxempire.com/forecasts/article/u-s-dollar-rebounds-as-ism-manufacturing-pmi-exceeds-estimates-analysis-for-eur-usd-gbp-usd-usd-cad-usd-jpy-1614481"
+      },
+      {
+        "name": "Steel Market Update",
+        "url": "https://www.steelmarketupdate.com/2026/08/03/ism-manufacturing-sector-heated-up-in-july/"
+      }
+    ],
+    "aiSummary": {
+      "que": "El ISM manufacturero de EE.UU. subió a 55,6% en julio, muy por encima del 54,0% esperado y del 53,3% de junio, marcando la mejor lectura desde mayo de 2022.",
+      "porque": "Un dato de actividad fabril tan fuerte, con el empleo volviendo a expansión, cuestiona la narrativa de enfriamiento económico y reduce el margen para recortes de tasas inminentes de la Fed.",
+      "activos": [
+        "Índice dólar (DXY)",
+        "EUR/USD",
+        "Oro"
+      ],
+      "siguiente": "El mercado seguirá de cerca el componente de Precios Pagados del ISM y los próximos datos de empleo para calibrar la trayectoria de tasas de la Fed."
+    },
+    "aiScenarios": {
+      "alcista": 40,
+      "lateral": 35,
+      "bajista": 25
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Medio",
+      "lectura": "El rebote del dólar tras el dato tiene sustento fundamental, pero la tendencia mensual bajista del índice sigue vigente y podría limitar la continuidad del movimiento."
+    },
+    "timeline": [
+      {
+        "cuando": "Junio 2026",
+        "texto": "El ISM manufacturero había caído a 53,3%, por debajo de los 54,0 puntos esperados por el mercado."
+      },
+      {
+        "cuando": "Hoy (3 de agosto)",
+        "texto": "El ISM Manufacturing PMI de julio se publicó en 55,6%, superando el consenso de 54,0% y marcando el nivel más alto desde mayo de 2022."
+      },
+      {
+        "cuando": "Hoy (3 de agosto)",
+        "texto": "El índice dólar (DXY) repunta 0,2% en la jornada tras conocerse el dato, según reflejó el panel de mercado."
+      },
+      {
+        "cuando": "Próximos días",
+        "texto": "Los operadores prestarán atención al componente de Precios Pagados y a los próximos indicadores de empleo en EE.UU."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué mide el ISM Manufacturing PMI?",
+        "a": "Es un índice mensual elaborado a partir de encuestas a ejecutivos de compras del sector manufacturero de EE.UU. Una lectura por encima de 50% indica expansión de la actividad fabril."
+      },
+      {
+        "q": "¿Por qué un PMI fuerte puede fortalecer al dólar?",
+        "a": "Un dato de actividad económica mejor a lo esperado reduce la probabilidad de que el banco central recorte tasas de interés pronto, lo que suele atraer flujos hacia el dólar."
+      },
+      {
+        "q": "¿Qué es el componente de Precios Pagados del ISM?",
+        "a": "Mide cuánto están pagando las empresas manufactureras por insumos y materias primas, funcionando como un indicador adelantado de presiones inflacionarias."
+      },
+      {
+        "q": "¿Cómo afecta este dato a otras divisas latinoamericanas?",
+        "a": "Un dólar más firme globalmente suele presionar a la baja a monedas emergentes como el peso mexicano o el real brasileño, aunque el efecto depende de factores locales de cada economía."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "FX:EURUSD",
+      "OANDA:XAUUSD",
+      "FX_IDC:USDMXN",
+      "FX_IDC:USDBRL"
+    ],
+    "category": "Forex",
+    "heroType": "forex",
+    "slug": "el-pmi-manufacturero-de-eeuu-sorprende-con-556-en-julio-y-el-msdt9n1l",
+    "author": "AR4 Mercados",
+    "date": "2026-08-03",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-6-july-2026-ism-manufacturing-pmi-report-302840669.html",
+    "marketPanel": [
+      {
+        "symbol": "FX:EURUSD",
+        "nombre": "EUR/USD",
+        "yahooSymbol": "EURUSD=X",
+        "fuente": "Yahoo Finance (EURUSD=X)",
+        "fechaUltimaVela": "2026-08-03",
+        "precio": 1.1511,
+        "cierreAnterior": 1.1544,
+        "variacionDiaPct": -0.3,
+        "variacionSemanaPct": 1.2,
+        "variacionMesPct": 0.6,
+        "variacionAnioPct": -1.4,
+        "rangoDiaReal": {
+          "minimo": 1.151,
+          "maximo": 1.1515
+        },
+        "rsi14": 57.8,
+        "lecturaRsi": "neutral",
+        "media50": 1.148,
+        "media200": 1.1629,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0058,
+        "maximo52sem": 1.2024,
+        "minimo52sem": 1.1325,
+        "distanciaAMaximo52semPct": -4.3,
+        "distanciaAMinimo52semPct": 1.6,
+        "soportes": [
+          1.143,
+          1.1359
+        ],
+        "resistencias": [
+          1.1675,
+          1.1828,
+          1.1928
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-08-03",
+        "precio": 99.99,
+        "cierreAnterior": 99.8,
+        "variacionDiaPct": 0.2,
+        "variacionSemanaPct": -1.5,
+        "variacionMesPct": -0.9,
+        "variacionAnioPct": 0,
+        "rangoDiaReal": {
+          "minimo": 99.42,
+          "maximo": 100.02
+        },
+        "rsi14": 38.7,
+        "lecturaRsi": "neutral",
+        "media50": 100.44,
+        "media200": 99.14,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.5273,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -1.8,
+        "distanciaAMinimo52semPct": 4.6,
+        "soportes": [
+          99.34,
+          98.79,
+          97.78
+        ],
+        "resistencias": [
+          100.54,
+          101.68
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "OANDA:XAUUSD",
+        "nombre": "Oro (XAU/USD, futuro COMEX)",
+        "yahooSymbol": "GC=F",
+        "fuente": "Yahoo Finance (GC=F)",
+        "fechaUltimaVela": "2026-08-03",
+        "precio": 4107.6,
+        "cierreAnterior": 4049.1,
+        "variacionDiaPct": 1.4,
+        "variacionSemanaPct": 0.8,
+        "variacionMesPct": -0.1,
+        "variacionAnioPct": 24.7,
+        "rangoDiaReal": {
+          "minimo": 4104.6,
+          "maximo": 4110.3
+        },
+        "rsi14": 50.3,
+        "lecturaRsi": "neutral",
+        "media50": 4192.45,
+        "media200": 4479.34,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 69.12,
+        "maximo52sem": 5586.2,
+        "minimo52sem": 3281,
+        "distanciaAMaximo52semPct": -26.5,
+        "distanciaAMinimo52semPct": 25.2,
+        "soportes": [
+          4100.8,
+          4028.31,
+          3963.55
+        ],
+        "resistencias": [
+          4152.1,
+          4199.7,
+          4258.9
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "FX_IDC:USDMXN",
+        "nombre": "USD/MXN (peso mexicano)",
+        "yahooSymbol": "USDMXN=X",
+        "fuente": "Yahoo Finance (USDMXN=X)",
+        "fechaUltimaVela": "2026-08-03",
+        "precio": 17.33,
+        "cierreAnterior": 17.3,
+        "variacionDiaPct": 0.1,
+        "variacionSemanaPct": -0.7,
+        "variacionMesPct": -0.9,
+        "variacionAnioPct": -6.7,
+        "rangoDiaReal": {
+          "minimo": 17.3,
+          "maximo": 17.33
+        },
+        "rsi14": 43.1,
+        "lecturaRsi": "neutral",
+        "media50": 17.41,
+        "media200": 17.66,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.117,
+        "maximo52sem": 18.86,
+        "minimo52sem": 17.07,
+        "distanciaAMaximo52semPct": -8.2,
+        "distanciaAMinimo52semPct": 1.5,
+        "soportes": [
+          17.24,
+          17.14
+        ],
+        "resistencias": [
+          17.43,
+          17.64,
+          17.94
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      },
+      {
+        "symbol": "FX_IDC:USDBRL",
+        "nombre": "USD/BRL (real brasileno)",
+        "yahooSymbol": "USDBRL=X",
+        "fuente": "Yahoo Finance (USDBRL=X)",
+        "fechaUltimaVela": "2026-08-03",
+        "precio": 5.0894,
+        "cierreAnterior": 5.0727,
+        "variacionDiaPct": 0.3,
+        "variacionSemanaPct": -0.7,
+        "variacionMesPct": -1.8,
+        "variacionAnioPct": -5.8,
+        "rangoDiaReal": {
+          "minimo": 5.0881,
+          "maximo": 5.0894
+        },
+        "rsi14": 46.2,
+        "lecturaRsi": "neutral",
+        "media50": 5.1247,
+        "media200": 5.21,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0618,
+        "maximo52sem": 5.6168,
+        "minimo52sem": 4.8812,
+        "distanciaAMaximo52semPct": -9.4,
+        "distanciaAMinimo52semPct": 4.3,
+        "soportes": [
+          5.0553,
+          4.9946,
+          4.9439
+        ],
+        "resistencias": [
+          5.1035,
+          5.1684,
+          5.2461
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      }
+    ],
+    "marketData": {
+      "symbol": "CAPITALCOM:DXY",
+      "nombre": "Indice dolar (DXY)",
+      "yahooSymbol": "DX-Y.NYB",
+      "fuente": "Yahoo Finance (DX-Y.NYB)",
+      "fechaUltimaVela": "2026-08-03",
+      "precio": 99.99,
+      "cierreAnterior": 99.8,
+      "variacionDiaPct": 0.2,
+      "variacionSemanaPct": -1.5,
+      "variacionMesPct": -0.9,
+      "variacionAnioPct": 0,
+      "rangoDiaReal": {
+        "minimo": 99.42,
+        "maximo": 100.02
+      },
+      "rsi14": 38.7,
+      "lecturaRsi": "neutral",
+      "media50": 100.44,
+      "media200": 99.14,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 0.5273,
+      "maximo52sem": 101.8,
+      "minimo52sem": 95.55,
+      "distanciaAMaximo52semPct": -1.8,
+      "distanciaAMinimo52semPct": 4.6,
+      "soportes": [
+        99.34,
+        98.79,
+        97.78
+      ],
+      "resistencias": [
+        100.54,
+        101.68
+      ],
+      "patronUltimaVela": "vela alcista sin patron destacable"
+    }
   }
 ]

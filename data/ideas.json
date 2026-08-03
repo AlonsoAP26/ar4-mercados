@@ -1277,5 +1277,57 @@
       ],
       "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
     }
+  },
+  {
+    "title": "Bitcoin en zona neutral: doji bajo estructura bajista de medias móviles",
+    "excerpt": "BTC/USD cierra con patrón de indecisión a 63.440,61 tras variación nula del día. El precio cotiza entre sus medias de 50 y 200, alejado 35,2% de su máximo anual.",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Patrón de vela y momentum técnico sin dirección clara</h3><p>La última sesión cierra con un doji—patrón que refleja apertura y cierre casi idénticos—en el nivel de 63.440,61, con una variación diaria de apenas -0,1%. Este tipo de vela, caracterizada por mechas extendidas hacia ambos lados, representa indecisión del mercado sobre dónde proseguirá el movimiento. El rango real de la sesión fue amplio (mínimo 62.235,13 / máximo 64.020,32), lo que subraya la volatilidad intradiaria sin resolución direccional al cierre.</p><p>El Índice de Fuerza Relativa (RSI) en 47,3 confirma este estado neutral: sin alcanzar sobrecompra por encima de 70 ni sobreventa por debajo de 30, el indicador se posiciona en el territorio medio, incapaz de sugerir presión compradora o vendedora dominante.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Estructura de medias móviles en sesgo bajista de fondo</h3><p>Bitcoin cotiza actualmente por encima de su media móvil de 50 períodos (63.305,81) pero significativamente por debajo de su media de 200 períodos (70.964,63). Esta configuración—media de 50 por debajo de la media de 200—define una estructura bajista de fondo, donde el precio ha perdido soporte en los promedios de largo plazo.</p><p>La distancia entre el precio y la media de 200 es material: 7.523,02 puntos de separación, equivalentes a aproximadamente 10,6% de descuento. Esta brecha refleja una debilidad estructural que persiste incluso después de que el precio haya recuperado 1,9% en el mes. En contexto más amplio, la variación anual es de -28,1%, confirmando que el mercado sigue en corrección desde máximos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Soportes y resistencias reales con rango de volatilidad definido</h3><p><strong style=\"color:var(--green);\">Soportes:</strong> 63.062,22 · 62.553,19 · 62.201,14</p><p><strong style=\"color:var(--crimson-bright);\">Resistencias:</strong> 64.185,77 · 64.628,27 · 65.480,94</p><p>El precio está cotizando apenas 378,39 puntos por encima del primer soporte en 63.062,22, lo que sugiere una zona de contención a corta distancia. La resistencia inmediata se encuentra en 64.185,77, aproximadamente 745 puntos por encima del nivel actual. El Rango Promedio Verdadero (ATR) de 1.618,94 indica que la volatilidad diaria esperada es sustancial, compatible con movimientos que pueden alcanzar estos niveles con frecuencia.</p><p>Comparando con el máximo de 52 semanas en 97.860,6, el precio actual está a 35,2% de ese pico. El mínimo de 52 semanas en 57.747,77 está apenas 9,9% por debajo del nivel actual, indicando que los soportes de mediano plazo están relativamente cercanos.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Dinámicas semanales sin cambio de tendencia confirmado</h3><p>La variación de una semana es de -0,7%, mostrando una ligera presión bajista, mientras que el mes acumula +1,9%. Esta divergencia—semanal negativa, mensual positiva—refleja que el último mes tuvo recuperación, pero la semana reciente ha cedido esos avances parcialmente. Sin embargo, ninguno de estos movimientos es lo suficientemente sostenido como para invalidar la estructura bajista de las medias móviles.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Lectura de flujo institucional y estructuras de precio</h3><p>Desde la perspectiva de Smart Money Concepts, la estructura de precios en Bitcoin muestra actividad de órdenes institucionales dispersas sin formación clara de un Order Block (la última vela con cuerpo definido antes de un movimiento impulsivo fuerte). El doji de cierre no proporciona un Level de referencia de bloqueo de órdenes, lo que sugiere que los operadores institucionales están en fase de reconocimiento más que de ejecución directa.</p><p>Fair Value Gaps (espacios de precio dejados por movimientos impulsivos que el mercado tiende a rellenar) no son evidentes en el rango real de la sesión; el mercado ha cubierto la amplitud entre mínimo y máximo de forma continua. Sin embargo, la zona entre la media de 50 (63.305,81) y la media de 200 (70.964,63) funciona como un vacío de liquidez estructural de largo plazo: el precio necesitaría un impulso significativo para rellenar esa brecha hacia arriba.</p><p>Las zonas de liquidez institucional se concentran en dos áreas: (1) los soportes en cascada desde 63.062,22 hacia 62.201,14, donde probablemente existen órdenes de compra limitadas de traders de retail y posiciones alcistas cerradas; (2) la resistencia en 64.628,27, zona donde se acumulan stops de posiciones cortas y órdenes de venta institucionales. El rango de 52 semanas (máximo 97.860,6 / mínimo 57.747,77) define el corredor de liquidez absoluto del instrumento.</p><p>No hay ruptura de estructura (Break of Structure) vigente: el precio continúa operando dentro de rangos definidos sin marcar nuevos máximos o mínimos relativos que confirmen un cambio de carácter (CHoCH). La indecisión del doji refuerza esta lectura de continuidad en limbo.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario alcista: qué sería necesario para un giro estructural</h3><p>Para que Bitcoin iniciara un cambio de carácter alcista confirmado, el precio tendría que (1) romper y mantener por encima de la resistencia de 64.628,27 con cierre de vela por encima de ese nivel; (2) posteriormente, avanzar hacia 65.480,94, la resistencia más lejana del conjunto actual. La invalidación de este escenario llegaría si el precio cae por debajo del soporte en 62.553,19 con cierre confirmador, lo que reinstalaría la presión bajista.</p><p>Un movimiento alcista requeriría además que la media móvil de 50 períodos comience a acercarse a la media de 200, cerrando la brecha actual de 7.523 puntos. Esto no ha ocurrido aún. El objetivo intermedio en caso de confirmación alcista sería buscar cierre del FVG estructural entre 70.000 y 71.000, donde se posiciona la media de 200.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario bajista: consolidación del sesgo estructural</h3><p>El escenario más consistente con la estructura actual es que Bitcoin continúe oscilando dentro de sus soportes y resistencias sin ruptura relevante. En caso de presión vendedora sostenida, los niveles a vigilar en descenso serían: 63.062,22 (primer soporte real), luego 62.553,19 (segundo soporte). Una ruptura por debajo de este último, con confirmación de cierre, abriría la vía hacia 62.201,14.</p><p>La invalidación del escenario bajista ocurriría si el precio rompe decisivamente la media de 200 en 70.964,63 desde abajo, cerrando por encima con volumen confirmador. Mientras el precio permanezca bajo las medias móviles de largo plazo y en particular bajo su media de 200, el sesgo estructural permanece bajista incluso si hay rebotes tácticos. El máximo de 52 semanas en 97.860,6 queda como objetivo de largo plazo, pero a 34.420 puntos de distancia—una brecha de 54,3%—requeriría un cambio fundamental de contexto.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>",
+    "trend": "neutral",
+    "symbol": "BITSTAMP:BTCUSD",
+    "category": "Criptomonedas",
+    "slug": "bitcoin-en-zona-neutral-doji-bajo-estructura-bajista-de-medi-msdta6tj",
+    "author": "AR4 Mercados",
+    "date": "2026-08-03",
+    "marketData": {
+      "symbol": "BITSTAMP:BTCUSD",
+      "nombre": "Bitcoin (BTC/USD)",
+      "yahooSymbol": "BTC-USD",
+      "fuente": "Yahoo Finance (BTC-USD)",
+      "fechaUltimaVela": "2026-08-03",
+      "precio": 63440.61,
+      "cierreAnterior": 63482,
+      "variacionDiaPct": -0.1,
+      "variacionSemanaPct": -0.7,
+      "variacionMesPct": 1.9,
+      "variacionAnioPct": -28.1,
+      "rangoDiaReal": {
+        "minimo": 62235.13,
+        "maximo": 64020.32
+      },
+      "rsi14": 47.3,
+      "lecturaRsi": "neutral",
+      "media50": 63305.81,
+      "media200": 70964.63,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 1618.94,
+      "maximo52sem": 97860.6,
+      "minimo52sem": 57747.77,
+      "distanciaAMaximo52semPct": -35.2,
+      "distanciaAMinimo52semPct": 9.9,
+      "soportes": [
+        63062.22,
+        62553.19,
+        62201.14
+      ],
+      "resistencias": [
+        64185.77,
+        64628.27,
+        65480.94
+      ],
+      "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+    }
   }
 ]
