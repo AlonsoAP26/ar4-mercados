@@ -1,7 +1,446 @@
 {
- "lastId": 33860,
- "actualizado": "2026-08-03T10:40:07.039Z",
+ "lastId": 33873,
+ "actualizado": "2026-08-03T13:31:26.231Z",
  "items": [
+  {
+   "id": "33872",
+   "fecha": "2026-08-03T13:00:26+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33872",
+   "via": "DeItaone",
+   "original": "DEUTSCHE BANK SEES GOLD FAIR VALUE AT $4,700 Deutsche Bank says gold remains in an \"explosive phase\" that began in August 2024, with its models pointing to a year-end fair value of around $4,700/oz, above its $4,600 Q4 forecast. While some valuation models imply downside toward $2,600, the bank believes the correction has likely bottomed near $3,900, with official demand and supportive macro facto",
+   "titulo": "Deutsche Bank ve oro en fase explosiva: target año fin $4.700 vs consenso inferior",
+   "resumen": "Deutsche Bank mantiene perspectiva alcista en oro, citando fase explosiva iniciada en agosto 2024. Modelos del banco apuntan a fair value de $4.700/oz a cierre 2026, arriba de su previsión Q4 de $4.600. Aunque algunos modelos valuación implican corrección hacia $2.600, DB estima que piso se alcanzó en $3.900, con demanda oficial y fundamentos macro soportando outlook largo plazo.",
+   "analisis": {
+    "porque": "Revisión de valuación de oro hacia arriba refleja confluencia de factores macro (tasas reales bajas, incertidumbre geopolítica, demanda de bancos centrales). Afecta asignación de carteras defensivas, dólar y rendimientos reales. Ciclo alcista en materias primas puede favorecer rotación fuera de tech.",
+    "queOcurrio": "Banco alemán mantiene outlook alcista en oro y sube target 2026 a $4.700/oz, argumentando corrección ya tocó piso en $3.900",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Oro",
+    "DXY",
+    "Rendimientos USA",
+    "USDJPY",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "oro",
+    "deutsche-bank",
+    "valuación",
+    "materias-primas",
+    "macro"
+   ],
+   "tgText": "DB: oro en fase explosiva, target $4.700/oz año fin 2026 vs $4.600 Q4. Piso en $3.900. Demanda oficial y macro soportan alcismo largo plazo.",
+   "xText": "🏆 Deutsche Bank: oro en fase explosiva. Target 2026: $4.700/oz vs consenso. Piso tocado en $3.900. Demanda de BC soporta largo plazo.",
+   "discordText": "**Deutsche Bank: Oro Alcista**\n• Target 2026: $4.700/oz\n• Vs Q4: $4.600\n• Piso estimado: $3.900\n• Fase explosiva desde ago-24\n• Demanda oficial + macro alcista",
+   "pushText": "DB alza oro a $4.700 target 2026; fase explosiva desde agosto 2024",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Oro sube en reacción positiva a revisión; dólar presionado (correlación inversa); rendimientos reales pueden bajar",
+    "despues": "Rotación potencial fuera de tech hacia defensivos; mining stocks (GLD, GDX) beneficiados; competencia USD vs oro intensificada",
+    "escenarios": "Traders monitorean: (1) si rally de oro se sostiene sin nueva debilidad de tasa real; (2) demanda de BC no se revierte; (3) geopolítica (Oriente Medio, Rusia-Ucrania) mantiene premium; (4) timing de revisiones al alza de tasas USA",
+    "riesgos": "Target $4.700 puede ser optimista si tasas USA suben; ciclo alcista en oro podría revertirse si dólar fortalece; modelo de DB no es predicción, es escenario probabilístico"
+   },
+   "macro": {
+    "oro": "alcista",
+    "dolar": "bajista",
+    "rendimientos": "bajista",
+    "bonos": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33869",
+   "fecha": "2026-08-03T12:08:32+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33869",
+   "via": "DeItaone",
+   "original": "MORGAN STANLEY SEES CLOUD SPENDING SURGING TO $1.2T Morgan Stanley expects global cloud capital spending to reach $1.2 trillion in 2027, up 30% YoY and $170 billion above pre-Q2 estimates. The firm said all four major U.S. hyperscalers remain capacity constrained as AI demand continues to outpace supply. Alphabet ($GOOGL), Amazon ($AMZN) and Meta ($META) all raised 2026 capex guidance, while Micro",
+   "titulo": "Morgan Stanley eleva pronóstico capex en cloud a $1,2T 2027; hiperscalers saturados por IA",
+   "resumen": "Morgan Stanley proyecta capex global en cloud por $1,2 billones en 2027 (+30% YoY), $170 mil millones arriba de estimaciones previas. Los cuatro hiperscalers principales (GOOGL, AMZN, META, MSFT) permanecen con restricciones de capacidad. Alphabet, Amazon y Meta subieron guidance de capex 2026; MS mantiene su outlook. MS estima upside a $1,4 billones.",
+   "analisis": {
+    "porque": "Capex acelerado en infraestructura AI genera demanda sostenida de equipos (semiconductores, conectividad, datacenters), apoya valuaciones de hyperscalers y sus proveedores. Refleja cambio estructural hacia AI que respalda crecimiento multi-año.",
+    "queOcurrio": "Analistas elevan proyecciones de inversión en cloud/IA por demanda inelástica y restricciones de capacidad no resueltas en el corto plazo",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "MSFT",
+    "Semiconductores",
+    "XLK"
+   ],
+   "sesgos": [
+    {
+     "activo": "GOOGL",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "META",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "MSFT",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "capex-cloud",
+    "ia-infraestructura",
+    "hyperscalers",
+    "morgan-stanley",
+    "tech-spending"
+   ],
+   "tgText": "MS proyecta capex cloud $1,2T en 2027 (+30% YoY). Hiperscalers en máxima capacidad. GOOGL, AMZN, META suben guidance 2026. Upside potencial a $1,4T.",
+   "xText": "☁️ Morgan Stanley: capex cloud alcanzará $1,2T en 2027 (+30% YoY). Hiperscalers sin capacidad ociosa. GOOGL, AMZN, META aceleran inversiones en IA.",
+   "discordText": "**Morgan Stanley: Capex Cloud en Explosión**\n• 2027: $1,2T proyectado (+30% YoY)\n• Upside potencial: $1,4T\n• GOOGL, AMZN, META suben guidance\n• MSFT mantiene outlook\n• Hiperscalers saturados",
+   "pushText": "Morgan Stanley eleva capex cloud a $1,2T 2027; demanda de IA sin frenos",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "NASDAQ, GOOGL, AMZN, META alcistas por visibilidad de demanda multi-año; semiconductor ETFs (SMH) positivos",
+    "despues": "Bonos pueden ceder si expectativa de tasas reales se ajusta; utilities se rezagan; commodities de energía presionados (datacenter demand)",
+    "escenarios": "Traders monitorean: (1) si capacidad de supply chain de semiconductores puede satisfacer demanda; (2) si márgenes de hiperscalers se expanden o contraen; (3) timing de retorno sobre inversión en IA; (4) competencia geopolítica en tech",
+    "riesgos": "Proyecciones pueden ser optimistas si desaceleración global reduce adoption de IA; restricciones de exportación de chips EE.UU.-China podrían afectar proveedores; overinvestment en capacidad ociosa"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "bonos": "presión bajista",
+    "petroleo": "presión bajista por demanda de energía datacenter"
+   },
+   "updates": []
+  },
+  {
+   "id": "33868",
+   "fecha": "2026-08-03T12:02:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33868",
+   "via": "DeItaone",
+   "original": "DEUTSCHE BANK RAISES S&P 500 EPS FORECASTS Deutsche Bank lifted its 2026 S&P 500 EPS forecast to $358 (from $342) and 2027 to $420 (from $390) after strong Q2 earnings. A record 87% of companies have beaten estimates, with profits on track to grow 33% in Q2. The bank said earnings strength is broadening beyond Big Tech, supported by record margins and robust sales growth.",
+   "titulo": "Deutsche Bank sube pronósticos de ganancias S&P 500 a $358 en 2026 tras récord de earnings",
+   "resumen": "Deutsche Bank elevó sus estimaciones de EPS para el S&P 500 a $358 en 2026 (desde $342) y $420 en 2027 (desde $390), tras resultados de Q2 superiores a expectativas. El 87% de empresas ha batido estimaciones con crecimiento de ganancias del 33% trimestral, impulsado por márgenes récord y crecimiento robusto de ingresos más allá del sector tecnológico.",
+   "analisis": {
+    "porque": "Revaloración al alza de earnings fundamentales del índice principal afecta directamente valoraciones y flujos hacia renta variable. Señal de fortaleza económica corporativa desacoplada del sector tech.",
+    "queOcurrio": "Banco de inversión elevaría EPS estimates basado en desempeño Q2 2026 y amplitud de beats corporativos",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "Dow Jones",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings-q2",
+    "revaloración-eps",
+    "renta-variable",
+    "deutsche-bank",
+    "valuaciones"
+   ],
+   "tgText": "DB eleva pronósticos S&P 500: $358 EPS 2026 vs $342. 87% empresas baten Q2 con +33% ganancias. Márgenes récord impulsan amplitud más allá del tech.",
+   "xText": "📈 Deutsche Bank sube S&P 500 EPS a $358 para 2026. Récord del 87% de empresas bate Q2 con crecimiento de ganancias del 33%. Amplitud corporativa fortalecida.",
+   "discordText": "**Deutsche Bank eleva S&P 500 EPS 2026 a $358**\n• Antes: $342 → Ahora: $358\n• 2027: $420 (vs $390)\n• 87% empresas baten Q2\n• +33% crecimiento ganancias\n• Amplitud más allá tech",
+   "pushText": "Deutsche Bank sube S&P 500 EPS a $358 en 2026",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "S&P 500 y NASDAQ alcistas por revaloración de earnings base; bonos en presión por suba de tasa terminal esperada",
+    "despues": "Dólar podría fortalecerse (carry trades), oro debilitarse; spreads de crédito mejoran",
+    "escenarios": "Traders monitorean: (1) si ampliación de beats se sostiene en Q3; (2) impacto en guidance empresarial; (3) si márgenes se contraen por presiones de costos",
+    "riesgos": "Estimaciones pueden ser optimistas si desacelera demanda global o presiones salariales erosionan márgenes en H2"
+   },
+   "macro": {
+    "sp500": "alcista",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "bonos": "presión bajista",
+    "dolar": "potencialmente alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33866",
+   "fecha": "2026-08-03T11:42:43+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33866",
+   "via": "DeItaone",
+   "original": "$TSLA - TESLA EUROPE SALES SHOW MIXED JULY TREND Tesla's July registrations surged 86% in France and 52% in Denmark, but plunged 97% in Norway, 81% in Spain, and 60% in Sweden. The mixed results follow Tesla's record Q2 deliveries, with investors now awaiting registration data from Germany and the UK later this week.",
+   "titulo": "Tesla: registros europeos mixtos en julio; caída de 97% en Noruega contrastan con alzas en Francia",
+   "resumen": "Tesla reportó registros de julio divergentes en Europa: salto de 86% en Francia y 52% en Dinamarca, pero caída de 97% en Noruega, 81% en España y 60% en Suecia. Los datos llegan tras entregas récord de Q2, con inversores pendientes de datos de Alemania y UK (se esperan esta semana). Volatilidad sugiere sensibilidad a promociones y ciclos de demanda regionales.",
+   "analisis": {
+    "porque": "Datos de registración reflejan fortaleza/debilidad de demanda Tesla en mercados clave europeos. Caída severa en Noruega (mercado EV líder) y España son banderas rojas sobre saturación post-Q2 o erosión de demanda en momentum alcista. Mercado monitorea si recuperación es sostenible.",
+    "queOcurrio": "Registros Tesla en julio muestran extrema volatilidad regional: crecimientos en mercados occidentales vs colapso en mercados nórdicos/ibéricos",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "TSLA",
+    "Sector Automotriz Europeo"
+   ],
+   "sesgos": [
+    {
+     "activo": "TSLA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "tesla-europa",
+    "registros-julio",
+    "demanda-ev",
+    "europa",
+    "tsla"
+   ],
+   "tgText": "Tesla: julio mixto en Europa. Francia +86%, Dinamarca +52%, pero Noruega -97%, España -81%, Suecia -60%. Alemania/UK data pendiente esta semana.",
+   "xText": "🚗 Tesla julio mixto: Francia +86%, pero Noruega -97%, España -81%. Volatilidad regional aguda. Datos Alemania/UK esta semana clave para outlook demanda.",
+   "discordText": "**Tesla Registros Julio: Europa Divergente**\n• Francia: +86% ↑\n• Dinamarca: +52% ↑\n• Noruega: -97% ↓\n• España: -81% ↓\n• Suecia: -60% ↓\n• Alemania/UK pendiente",
+   "pushText": "Tesla julio: Francia sube 86%, Noruega cae 97%. Europa muy volátil.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "TSLA podría ceder si data Alemania/UK confirma debilidad regional; competidores EV europeos (BYD, VW, BMW) monitoreados",
+    "despues": "Si demanda baja, márgenes brutos bajo mayor presión; competencia local intensa en Europa; impacto en guidance FY2026",
+    "escenarios": "Traders monitorean: (1) si caída en Noruega refleja saturación o reacción a cambios regulatorios/incentivos; (2) data Alemania (mayor mercado EU) decisiva; (3) impacto en margen bruto Q3; (4) si Tesla comparte con mercado ajustes de demanda regional",
+    "riesgos": "Volatilidad regional sugiere ciclos cortos de demanda; competencia intensa en Europa reduce pricing power; posible reducción de guidance si trimestre comienza débil"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33827",
+   "fecha": "2026-08-01T07:48:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33827",
+   "via": "DeItaone",
+   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
+   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
+   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "analisis": {
+    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
+    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Carry Trades",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "intervención-divisas",
+    "yen-japón",
+    "usdjpy",
+    "tesoro-usa",
+    "banco-central-japón",
+    "carry-trades"
+   ],
+   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
+   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
+   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
+   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
+    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
+    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
+    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+   },
+   "macro": {
+    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
+    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
+    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
+    "dow": "neutral a alcista por debilitamiento de dólar",
+    "sp500": "neutral a alcista por debilitamiento de dólar",
+    "bitcoin": "alcista potencial por debilitamiento de dólar",
+    "ethereum": "alcista potencial por debilitamiento de dólar",
+    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
+    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-03T11:28:50+00:00",
+     "id": "33865",
+     "texto": "EE.UU. se sumó a intervención de compra de yen liderada por Japón, la primera acción coordinada desde 1998. El movimiento apunta a estabilizar la divisa nipona y reducir riesgo de que Japón liquidar Treasuries para financiar soporte cambiario. Analistas advierten que fortaleza duradera del yen requiere política más restrictiva del BoJ, no solo intervenciones puntuales.",
+     "tgUrl": "https://t.me/walterbloomberg/33865"
+    },
+    {
+     "fecha": "2026-08-03T09:15:53+00:00",
+     "id": "33852",
+     "texto": "Datos del BOJ confirman intervención en mercado de divisas el viernes por aproximadamente 5,3 billones de yenes, coordinada con USA. Acción consistente con esfuerzos conjuntos para contener fortaleza del dólar frente al yen y apoyar estabilidad macroeconómica regional.",
+     "tgUrl": "https://t.me/walterbloomberg/33852"
+    },
+    {
+     "fecha": "2026-08-03T04:36:53.000Z",
+     "id": "913006923",
+     "texto": "Estados Unidos intervino en el mercado de divisas para sostener el yen japonés tras una depreciación significativa. La acción conjunta con Japón marca la primera intervención coordinada en años. El titular no especifica si fue una operación puntual o sostenida.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html"
+    },
+    {
+     "fecha": "2026-08-03T00:59:33.000Z",
+     "id": "918380960",
+     "texto": "Autoridades de EE.UU. y Japón confirmaron intervención conjunta en mercados de divisas para sostener el yen. Ambas naciones señalaron estar preparadas para intervenir nuevamente si las condiciones lo justifican. Esta acción busca estabilizar la moneda japonesa y contrarrestar volatilidad cambiaria.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
+    },
+    {
+     "fecha": "2026-08-02T21:43:11+00:00",
+     "id": "33842",
+     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
+     "tgUrl": "https://t.me/walterbloomberg/33842"
+    },
+    {
+     "fecha": "2026-08-02T14:18:01.000Z",
+     "id": "964297321",
+     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
+     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
+    },
+    {
+     "fecha": "2026-08-02T01:41:08+00:00",
+     "id": "33831",
+     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
+     "tgUrl": "https://t.me/walterbloomberg/33831"
+    },
+    {
+     "fecha": "2026-08-01T15:44:08.000Z",
+     "id": "969625772",
+     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
+     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
+    }
+   ],
+   "actualizado": "2026-08-03T11:28:50+00:00"
+  },
+  {
+   "id": "33861",
+   "fecha": "2026-08-03T10:44:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33861",
+   "via": "DeItaone",
+   "original": "GOLDMAN WARNS ON FED COMMUNICATION SHIFT Goldman Sachs cautioned that reducing Fed policy guidance could increase market volatility and pricing errors. The bank argued Chair Kevin Warsh's proposal to give markets less insight into the Fed's reaction function would not improve policymaker feedback, but could instead delay monetary policy transmission and create unnecessary volatility in financial m",
+   "titulo": "Goldman Sachs advierte: reducir guidance de Fed aumentaría volatilidad, no mejoraría mercados",
+   "resumen": "Goldman Sachs cuestionó la propuesta del presidente Kevin Warsh de reducir la orientación de política de la Fed. El banco argumentó que menor transparencia sobre la función de reacción de la Fed no mejoraría feedback a los decisores, sino que retrasaría transmisión monetaria e introduciría volatilidad innecesaria en mercados financieros. Crítica frontal a cambio de comunicación sugerido.",
+   "analisis": {
+    "porque": "Debate sobre comunicación de la Fed afecta directamente transmisión de política monetaria, expectativas de tasas y volatilidad. Si guidance se reduce, mercados perderían ancla de expectativas, generando repricing abrupto. Relevancia institucional de GS da peso a crítica sobre diseño operativo de la Fed.",
+    "queOcurrio": "Goldman Sachs emite advertencia pública contra propuesta de Warsh de reducir guidance/transparencia de la Fed",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos USA",
+    "Rendimientos USA",
+    "S&P 500",
+    "Volatilidad (VIX)"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "fed-comunicación",
+    "kevin-warsh",
+    "transmisión-monetaria",
+    "goldman-sachs",
+    "política-monetaria"
+   ],
+   "tgText": "GS advierte: reducir guidance Fed aumentaría volatilidad, no mejoraría. Propuesta Warsh retrasaría transmisión monetaria y generaría repricing de tasas.",
+   "xText": "⚠️ Goldman Sachs vs Warsh: reducir Fed guidance agravaría volatilidad. Menos transparencia = retrasos en transmisión monetaria y repricings abruptos.",
+   "discordText": "**Goldman Sachs Advierte sobre Comunicación Fed**\n• Crítica a propuesta Warsh\n• Reducir guidance = más volatilidad\n• Retrasaría transmisión monetaria\n• Pérdida de ancla de expectativas\n• Riesgo de repricing de tasas",
+   "pushText": "Goldman Sachs advierte: reducir guidance Fed elevaría volatilidad",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Volatilidad (VIX) potencialmente alcista si mercado interpreta debate como cambio inminente; rendimientos pueden reaccionar por incertidumbre",
+    "despues": "Si propuesta Warsh avanza, curva de tipos se aplanaría por incertidumbre de transmisión; spreads de crédito se amplían; equities volátiles",
+    "escenarios": "Traders monitorean: (1) si Warsh presiona cambios en comunicación de la Fed; (2) reacción del mercado a menor transparencia (típicamente alcista para volatilidad); (3) impacto en expectativas de tasas terminal; (4) si otros bancos se suman a crítica de GS",
+    "riesgos": "Debate es especulativo; cambio actual en guidance no es inminente. GS tiene sesgo por efecto en operaciones de fixed income. Propuesta Warsh podría reducir sobrerreacción del mercado a comunicados (efecto ambiguo)."
+   },
+   "macro": {
+    "bonos": "neutral",
+    "rendimientos": "neutral",
+    "vix": "potencialmente alcista"
+   },
+   "updates": []
+  },
   {
    "id": "33860",
    "fecha": "2026-08-03T10:36:32+00:00",
@@ -459,122 +898,6 @@
     "nasdaq": "neutral"
    },
    "updates": []
-  },
-  {
-   "id": "33827",
-   "fecha": "2026-08-01T07:48:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33827",
-   "via": "DeItaone",
-   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
-   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
-   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
-   "analisis": {
-    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
-    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times (vía Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "USDJPY",
-    "DXY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Carry Trades",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "intervención-divisas",
-    "yen-japón",
-    "usdjpy",
-    "tesoro-usa",
-    "banco-central-japón",
-    "carry-trades"
-   ],
-   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
-   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
-   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
-   "pushText": "USA y Japón intervienen en divisas para sostener yen",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
-    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
-    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
-    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
-   },
-   "macro": {
-    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
-    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
-    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
-    "dow": "neutral a alcista por debilitamiento de dólar",
-    "sp500": "neutral a alcista por debilitamiento de dólar",
-    "bitcoin": "alcista potencial por debilitamiento de dólar",
-    "ethereum": "alcista potencial por debilitamiento de dólar",
-    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
-    "petroleo": "neutral a alcista por debilitamiento de dólar"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-03T09:15:53+00:00",
-     "id": "33852",
-     "texto": "Datos del BOJ confirman intervención en mercado de divisas el viernes por aproximadamente 5,3 billones de yenes, coordinada con USA. Acción consistente con esfuerzos conjuntos para contener fortaleza del dólar frente al yen y apoyar estabilidad macroeconómica regional.",
-     "tgUrl": "https://t.me/walterbloomberg/33852"
-    },
-    {
-     "fecha": "2026-08-03T04:36:53.000Z",
-     "id": "913006923",
-     "texto": "Estados Unidos intervino en el mercado de divisas para sostener el yen japonés tras una depreciación significativa. La acción conjunta con Japón marca la primera intervención coordinada en años. El titular no especifica si fue una operación puntual o sostenida.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html"
-    },
-    {
-     "fecha": "2026-08-03T00:59:33.000Z",
-     "id": "918380960",
-     "texto": "Autoridades de EE.UU. y Japón confirmaron intervención conjunta en mercados de divisas para sostener el yen. Ambas naciones señalaron estar preparadas para intervenir nuevamente si las condiciones lo justifican. Esta acción busca estabilizar la moneda japonesa y contrarrestar volatilidad cambiaria.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
-    },
-    {
-     "fecha": "2026-08-02T21:43:11+00:00",
-     "id": "33842",
-     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
-     "tgUrl": "https://t.me/walterbloomberg/33842"
-    },
-    {
-     "fecha": "2026-08-02T14:18:01.000Z",
-     "id": "964297321",
-     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
-     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
-    },
-    {
-     "fecha": "2026-08-02T01:41:08+00:00",
-     "id": "33831",
-     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
-     "tgUrl": "https://t.me/walterbloomberg/33831"
-    },
-    {
-     "fecha": "2026-08-01T15:44:08.000Z",
-     "id": "969625772",
-     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
-     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
-    }
-   ],
-   "actualizado": "2026-08-03T09:15:53+00:00"
   },
   {
    "id": "33851",
@@ -7370,368 +7693,6 @@
     }
    ],
    "actualizado": "2026-07-30T10:46:27+00:00"
-  },
-  {
-   "id": "33741",
-   "fecha": "2026-07-30T10:29:23+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33741",
-   "via": "DeItaone",
-   "original": "🇨🇳YUAN HITS 3-YEAR HIGH China's yuan climbed to its strongest level since early 2023 as the dollar weakened after the Federal Reserve held interest rates steady. The currency remains Asia's best performer, supported by Beijing's efforts to attract foreign investment and boost its global role. Analysts expect further gains, backed by strong exports and continued policy support.",
-   "titulo": "Yuan chino sube a máximo de 3 años tras debilitamiento del dólar",
-   "resumen": "El yuan alcanzó su nivel más fuerte desde principios de 2023 tras el debilitamiento del dólar posterior a la decisión de la Fed de mantener tasas sin cambios. La moneda china es el mejor activo de Asia, apoyado por esfuerzos de Beijing por atraer inversión extranjera y reforzar su rol global. Analistas esperan ganancias adicionales respaldadas por exportaciones sólidas y apoyo de política.",
-   "analisis": {
-    "porque": "Fortalecimiento del yuan refleja cambio en dinámicas de mercado global y confianza relativa en políticas chinas vs estadounidenses. Impacta competitividad exportadora de China, flujos de capital hacia Asia, valuaciones de acciones chinas.",
-    "queOcurrio": "Yuan subió a máximo de 3 años tras debilitamiento de dólar derivado de la incertidumbre de Fed. Beijing continúa atrayendo inversión extranjera y reforzando el rol internacional de su moneda.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "CNYUSD",
-    "ASEAN",
-    "Acciones chinas",
-    "HSI",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Yuan",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Acciones chinas",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Divisas",
-   "keywords": [
-    "yuan",
-    "china",
-    "dolar-debil",
-    "asia",
-    "inversiones-extranjeras"
-   ],
-   "tgText": "📈 Yuan chino en máximo de 3 años. Dólar débil + Beijing atrayendo inversión extranjera = fortalecimiento de moneda china. Analistas ven más ganancias adelante. Impacto: beneficia acciones chinas, exportaciones compiten mejor.",
-   "xText": "🇨🇳 Yuan toca máximo de 3 años vs dólar débil. Beijing refuerza atracción de inversión extranjera. Exportaciones chinas se benefician de moneda más fuerte. Próximo: vigilar datos económicos China. #Asia #Divisas",
-   "discordText": "**Yuan chino en máximo de 3 años**\n• CNYUSD: máximo desde ene 2023\n• Impulso: dólar débil por incertidumbre Fed\n• Beijing atrae inversión extranjera activamente\n• Analistas: más ganancias esperadas\n→ Favorece acciones chinas (HSI), exportadores",
-   "pushText": "Yuan chino alcanza máximo de 3 años tras debilitamiento del dólar",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones chinas (HSI, ASEAN) suben por efecto de moneda más fuerte y menor presión inflacionaria importada. Exportadores asiáticos se benefician de competitividad.",
-    "despues": "Multinacionales USA con alta exposición a China sienten presión de margen. Flujos hacia fondos emergentes se incrementan.",
-    "escenarios": "Traders monitoreaban si China seguiría tolerando fortalecimiento del yuan. Beijing parece apoyarlo para atraer capital extranjero. Próxima clave: datos de inflación PPI/CPI China a finales de agosto.",
-    "riesgos": "Si Fed cambia tono hawkish, dólar podría recuperarse y debilitar yuan nuevamente. Comercio USA-China sigue tenso; aranceles podrían cambiar dinámicas."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "oro": "neutral",
-    "nasdaq": "neutral",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "neutral",
-    "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33736",
-   "fecha": "2026-07-30T09:34:13+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33736",
-   "via": "DeItaone",
-   "original": "FED UNCERTAINTY CLOUDS DOLLAR OUTLOOK MUFG warned the dollar outlook has deteriorated after the Fed left rates unchanged and provided little clarity on its policy path. The bank said rising inflation expectations and fading confidence in the Fed could steepen the yield curve, with long-term yields rising faster than short-term rates—a pattern that has historically weighed on the U.S. dollar.",
-   "titulo": "MUFG alerta: dólar enfrenta vientos en contra por incertidumbre de Fed",
-   "resumen": "El banco MUFG advierte que las perspectivas del dólar se han deteriorado tras la decisión de la Fed de mantener tasas sin dar claridad sobre su próximo movimiento. El aumento de expectativas de inflación y la pérdida de confianza en la Fed podrían empinarse la curva de rendimientos, con subidas más rápidas en largo plazo que en corto plazo, un patrón históricamente negativo para el dólar.",
-   "analisis": {
-    "porque": "La perspectiva del dólar es crucial para mercados de divisas, commodities y flujos de capital emergentes. Una debilitación del dólar típicamente abarata commodities y favorece monedas emergentes. Afecta valuaciones de multinacionales estadounidenses.",
-    "queOcurrio": "MUFG emitió advertencia analítica sobre que la incertidumbre de Fed erosiona confianza en política monetaria USA, lo que reduciría demanda de dólar y generaría un aumento desigual de rendimientos que históricamente debilita la divisa.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "DXY",
-    "EURUSD",
-    "Emergentes",
-    "Petróleo",
-    "Oro",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "EURUSD",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Emergentes",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "FED",
-    "dolar",
-    "MUFG",
-    "incertidumbre",
-    "curva-rendimientos"
-   ],
-   "tgText": "📉 MUFG advierte: dólar enfrenta deterioro por incertidumbre de Fed. Mayor brecha entre rendimientos largo y corto plazo históricamente presiona divisa. Confianza erosionada en política monetaria USA. Favorecer: EUR, emergentes, commodities.",
-   "xText": "⚠️ MUFG: Dólar se debilita por incertidumbre de Fed e inflación persistente. Curva de rendimientos en riesgo de mayor inclinación. Impacto: favore a EUR, emergentes y commodities vs USD. #Divisas #Macro",
-   "discordText": "**MUFG: Alerta sobre debilitamiento del dólar**\n• Fed mantiene tasas sin claridad → erosiona confianza\n• Expectativas inflación suben → rendimientos divergen\n• Largo plazo sube más que corto → históricamente débil para USD\n→ Favorecer EUR, monedas emergentes, oro, petróleo",
-   "pushText": "MUFG advierte sobre debilitamiento del dólar por incertidumbre de Fed",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "EURUSD sube rápidamente (euro se fortalece vs dólar débil). DXY cae. Pares de emergentes como USDBRL, USDMXN se venden (debilitamiento del dólar).",
-    "despues": "Oro sube (menos dólar = oro más caro). Petróleo sube. S&P500 multinacionales con alta exposición a exportaciones podrían beneficiarse. Bonos USD a largo plazo continúan bajo presión.",
-    "escenarios": "Traders vigilan si Fed da señales en próximas semanas sobre si está tolerando inflación más alta o si reconsiderará tasas. Clave: ¿cuándo será el próximo move? Si la Fed sigue callada, dólar podría caer continuamente. Si da pista hawkish, sube.",
-    "riesgos": "Es análisis de banco, no confirmación oficial de movimiento de mercado. Podría fallar si Fed sorprende con comentarios hawkish. Geopolítica (Irán, Rusia) podría reforzar demanda de USD como refugio."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "oro": "alcista",
-    "nasdaq": "neutral",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "bitcoin": "alcista",
-    "ethereum": "alcista",
-    "bonos": "bajista",
-    "petroleo": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33735",
-   "fecha": "2026-07-30T09:33:15+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33735",
-   "via": "DeItaone",
-   "original": "TREASURY YIELDS SURGE AFTER FED HOLD U.S. 30-year Treasury yields climbed to a 19-year high of 5.24% after the Federal Reserve left rates unchanged but offered little guidance on its next move. Markets scaled back expectations for a September rate hike, while analysts warned uncertainty over the Fed's inflation stance, combined with Middle East tensions and higher oil prices, could keep long-term ",
-   "titulo": "Rendimientos del Tesoro USA alcanzan máximo de 19 años tras Fed indecisa",
-   "resumen": "Los rendimientos del Tesoro a 30 años subieron a 5,24%, el máximo en 19 años, luego de que la Reserva Federal mantuviera tasas sin cambios y ofreciera poca orientación sobre su próximo movimiento. Los mercados redujeron expectativas de alza en septiembre. La incertidumbre sobre la postura inflacionaria de la Fed, tensiones en Medio Oriente y precios más altos del petróleo podrían mantener los rendimientos elevados.",
-   "analisis": {
-    "porque": "Impacta directamente el costo de financiamiento en toda la economía, afecta valuaciones de acciones y define el apetito de riesgo global. Rendimientos en máximos de 19 años generan rotación de carteras y presión sobre sectores de crecimiento.",
-    "queOcurrio": "Tras decisión de Fed de mantener tasas entre 3,5%-3,75%, los rendimientos de largo plazo subieron significativamente, lo que indica que el mercado espera inflación persistente o que la Fed permanecerá restrictiva por más tiempo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Rendimientos USA",
-    "Bonos",
-    "S&P500",
-    "NASDAQ",
-    "DXY",
-    "TLT",
-    "IEF"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Tech/NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos de largo plazo",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "FED",
-   "keywords": [
-    "FED",
-    "rendimientos-tesoro",
-    "tasas",
-    "inflacion",
-    "mercados-bonos"
-   ],
-   "tgText": "🔴 Rendimientos del Tesoro a 30 años en máximo de 19 años: 5,24%. Fed mantiene tasas sin claridad. Mercados reducen expectativas de alza en septiembre. Inflación persistente y tensiones geopolíticas mantienen presión alcista.",
-   "xText": "📈 Rendimientos Tesoro USA tocan máximo de 19 años (5,24%) tras decisión de Fed sin orientación clara. Mercados creen que las tasas permanecerán altas por más tiempo. Impacto: presión en acciones tech y rotación hacia bonos. #Fed #Finanzas",
-   "discordText": "**Rendimientos Tesoro USA en máximo de 19 años**\n• Tesoro 30 años: 5,24% (máximo desde 2007)\n• Fed mantiene tasas sin cambios ni guía clara\n• Mercados bajan expectativa de alza Sept\n• Presión por inflación y tensiones geopolíticas\n→ Impacto: Rotación desde tech hacia renta fija",
-   "pushText": "Rendimientos Tesoro alcanzan máximo de 19 años tras Fed indecisa",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Acciones de tech y crecimiento (NASDAQ, especialmente semiconductores e IA) reaccionan primero a la baja, porque rendimientos más altos reducen el valor presente de flujos futuros. El dólar sube simultáneamente.",
-    "despues": "Bancos y financieras suben (beneficio de margen de tasas). Bonos corporativos de grado especulativo se venden. Mercados emergentes se presionan por fortaleza del dólar.",
-    "escenarios": "Traders monitoreaban si la Fed daría pista sobre septiembre. Ausencia de claridad generó venta de bonos largos. Vigilarán próximos datos de inflación PCE y comentarios de gobernadores. Si inflation prints siguen altos, rendimientos podrían quebrar 5,5%. Si caen, podrían volver a 5,0%.",
-    "riesgos": "Confirmado por fuente institucional. Riesgo de sobrerreacción si datos de inflación julio sorprenden al alza/baja en próximas semanas."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "bajista",
-    "nasdaq": "bajista",
-    "dow": "neutral-bajista",
-    "sp500": "neutral-bajista",
-    "bitcoin": "bajista",
-    "ethereum": "bajista",
-    "bonos": "bajista",
-    "petroleo": "se fortalece por geopolítica"
-   },
-   "updates": []
-  },
-  {
-   "id": "33732",
-   "fecha": "2026-07-30T09:08:02+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33732",
-   "via": "DeItaone",
-   "original": "JAPAN PM TAKAICHI PLANS TO CUT FOOD SALES TAX TO 1% FROM APRIL 2027 JAPAN'S TAKAICHI: FOOD TAX CUT EFFECTIVE FOR TWO YEARS",
-   "titulo": "Japón planea reducir IVA de alimentos de 8% a 1% desde abril 2027",
-   "resumen": "Ministra de Economía de Japón, Takaichi, anunció plan para cortar tasa de IVA sobre alimentos de 8% a 1% efectivo abril 2027, con duración de dos años según fuente. Medida busca contener presiones inflacionarias sobre consumo doméstico y aliviar carga sobre hogares tras incrementos de precios de alimentos.",
-   "analisis": {
-    "porque": "Política fiscal expansiva en Japón impacta valuación del yen (depreciación esperada), diferenciales de tasas JPY vs USD/EUR, y rentabilidad de corporaciones japonesas exportadoras. También refleja presiones políticas anti-inflacionarias que podrían influir en postura del BOJ respecto a ciclo de tasas.",
-    "queOcurrio": "Gobierno japonés anunció reducción de IVA sobre alimentos a 1% por dos años desde abril 2027.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (anuncio oficial Ministra Takaichi)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "JPY",
-    "Nikkei 225",
-    "JGB (Bonos Japoneses)",
-    "Exportadores Japón"
-   ],
-   "sesgos": [
-    {
-     "activo": "JPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nikkei 225",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "JGB",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "japon-iva",
-    "alimentos-impuestos",
-    "politica-fiscal",
-    "inflacion-japon"
-   ],
-   "tgText": "📊 Japón: Ministra Takaichi anuncia corte de IVA en alimentos (8%→1%) desde abril 2027, duración 2 años. Busca aliviar inflación de alimentos. JPY en vigilancia.",
-   "xText": "Japón reduce IVA en alimentos a 1% (desde 8%) abril 2027, 2 años. Estímulo fiscal anti-inflacionario. JPY monitoreado. #Japon #Economia",
-   "discordText": "**Política Fiscal Japón**\n• Reducción IVA alimentos: 8% → 1%\n• Efectivo: Abril 2027 (duración 2 años)\n• Objetivo: Contener inflación de alimentos\n• **Impacto**: JPY↓ Nikkei↑",
-   "pushText": "Japón reduce IVA en alimentos a 1% desde abril 2027",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "JPY/USD (debilidad de yen por política fiscal expansiva/inflacionaria). Nikkei 225 (ganancia de valuación para exportadores).",
-    "despues": "JGB yields (vigilancia de BOJ response); carry trades JPY; USD/JPY forwards.",
-    "escenarios": "Traders monitorean si BOJ responde con ajuste de tasas o yield curve control. Política fiscal expansiva en Japón mientras Fed potencialmente hawkish = divergencia de tasas.",
-    "riesgos": "Medida es de **dos años**, no permanente: impacto presupuestario limitado. BOJ puede esterilizar efectos monetarios."
-   },
-   "macro": {
-    "jpy": "bajista",
-    "nikkei": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33728",
-   "fecha": "2026-07-30T08:39:32+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33728",
-   "via": "DeItaone",
-   "original": "RUSSIAN MISSILE LANDS IN POLAND Polish Prime Minister Donald Tusk said a missile landed in Poland, but there was no immediate danger as it struck an uninhabited area. Tusk said Poland was prepared to shoot it down. While it appears to have been a Russian missile, authorities have not yet confirmed its exact type.",
-   "titulo": "Misil ruso cae en Polonia; autoridades confirman impacto en zona deshabitada",
-   "resumen": "Primer Ministro polaco Donald Tusk confirmó que un misil (aparentemente ruso) aterrizó en territorio polaco en zona deshabitada sin causar daños inmediatos. Tusk afirmó que Polonia estaba preparada para derribarlo. Autoridades aún no han confirmado tipo exacto de misil, pero indicios apuntan a origen ruso tras escalada reciente de ataques estadounidenses a objetivos vinculados a Irán.",
-   "analisis": {
-    "porque": "Incidente confirma expansión espacial de conflicto Rusia–Ucrania hacia la OTAN (Polonia miembro). Riesgo de escalada hacia artículo 5 de NATO aumenta. Genera volatilidad en índices europeos, spreads CDS de riesgo soberano y divisas de frontera (PLN, EUR vs USD).",
-    "queOcurrio": "Un misil cruzó espacio aéreo polaco (OTAN) y cayó en zona deshabitada sin daños reportados. Primer Ministro confirmó origen aparentemente ruso; no hay verificación independiente de tipo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (vía comunicado oficial de Premier Tusk)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "EUR",
-    "PLN",
-    "DAX",
-    "STOXX 600",
-    "Bonos Alemanes",
-    "CDS Europa del Este",
-    "Oro",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "EUR",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "PLN",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos Alemanes",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "polonia-nato",
-    "misil-ruso",
-    "escalada-ucrania",
-    "riesgo-soberano",
-    "articulo-5"
-   ],
-   "tgText": "⚠️ BREAKING: Misil ruso cae en Polonia (OTAN). Premier Tusk confirma impacto en zona deshabitada. Riesgo Artículo 5 se intensifica. EUR/PLN venden; oro/bonos Bunds suben. Contexto: 33730.",
-   "xText": "🚨 Misil ruso aterriza en Polonia (OTAN); PM Tusk confirma. Riesgo escalada OTAN-Rusia sube. EUR/PLN caen, Bunds suben, oro refugio. #Geopolítica #NATO",
-   "discordText": "**🚨 ESCALADA GEOPOLÍTICA: MISIL EN POLONIA (OTAN)**\n• Confirmado: Misil ruso en territorio polaco (zona deshabitada)\n• PM Tusk: Polonia preparada para defensa\n• Tipo de misil: No confirmado aún\n• **Mercados**: EUR↓ PLN↓ Bunds↑ Oro↑ Riesgo↑",
-   "pushText": "Misil ruso cae en Polonia; escalada OTAN-Rusia sube",
-   "importancia": 10,
-   "reaccion": {
-    "primero": "EUR/USD (debilidad del EUR por riesgo geopolítico europeo). PLN/USD (debilidad de divisa de frontera). Bonos Bund alemanes (flight-to-quality). Oro.",
-    "despues": "DAX, STOXX 600 (volatilidad de renta variable europea). CDS de bonos soberanos de Europa del Este (Polonia, Balcánicos). Diferencial EUR-USD (carry unwinding).",
-    "escenarios": "Traders vigilan: (1) si incidente activa Artículo 5 de NATO (represalia colectiva); (2) alcance temporal de cierre de espacio aéreo polaco; (3) respuesta oficial de Biden/UE; (4) si hay más incidentes. Correlación inversa con renta variable US.",
-    "riesgos": "Confirmed por oficial polaco pero tipo de misil no verificado. Posible malidentificación. Riesgo de mal cálculo político/militar en escalada."
-   },
-   "macro": {
-    "eur": "bajista",
-    "pln": "bajista",
-    "oro": "alcista",
-    "bonos": "alcista (yields bajan)"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
