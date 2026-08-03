@@ -1,7 +1,423 @@
 {
- "lastId": 33873,
- "actualizado": "2026-08-03T13:31:26.231Z",
+ "lastId": 33893,
+ "actualizado": "2026-08-03T16:06:37.433Z",
  "items": [
+  {
+   "id": "33833",
+   "fecha": "2026-08-02T08:57:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33833",
+   "via": "DeItaone",
+   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
+   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
+   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
+   "analisis": {
+    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
+    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "DXY",
+    "EURUSD",
+    "Oro",
+    "VIX",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "nuclear",
+    "Ormuz",
+    "negociaciones",
+    "pausa militar",
+    "Oriente Medio"
+   ],
+   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
+   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
+   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
+   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
+    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
+    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
+    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
+   },
+   "macro": {
+    "dolar": "alcista corto plazo (alivio geopolítico)",
+    "oro": "bajista corto plazo",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "petroleo": "bajista",
+    "bonos": "neutral a alcista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-03T15:27:15+00:00",
+     "id": "33890",
+     "texto": "Trump aseguró que marina estadounidense controla completamente acceso al Estrecho de Ormuz; nada entra a Irán sin aprobación USA. Acusa a Irán de negociar privately mientras niega públicamente; advierte sanciones permanecen hasta acuerdo o 'rendición total'. Reafirma postura: 'Irán nunca tendrá arma nuclear'.",
+     "tgUrl": "https://t.me/walterbloomberg/33890"
+    },
+    {
+     "fecha": "2026-08-03T13:51:37+00:00",
+     "id": "33879",
+     "texto": "Trump elogió desempeño de Chevron y atribuyó éxito a políticas energéticas de su administración, incluyendo retorno a Venezuela. Presionó a Chevron y sector petrolero para reducir precios al consumidor inmediatamente. Declaración parte de narrativa sobre control geopolítico del petróleo y sanciones a Irán.",
+     "tgUrl": "https://t.me/walterbloomberg/33879"
+    },
+    {
+     "fecha": "2026-08-03T10:28:26+00:00",
+     "id": "33859",
+     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
+     "tgUrl": "https://t.me/walterbloomberg/33859"
+    },
+    {
+     "fecha": "2026-08-03T10:03:27+00:00",
+     "id": "33856",
+     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
+     "tgUrl": "https://t.me/walterbloomberg/33856"
+    },
+    {
+     "fecha": "2026-08-03T04:44:30.000Z",
+     "id": "991847143",
+     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
+    },
+    {
+     "fecha": "2026-08-02T23:33:07.000Z",
+     "id": "990424278",
+     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
+    },
+    {
+     "fecha": "2026-08-02T21:45:46+00:00",
+     "id": "33844",
+     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
+     "tgUrl": "https://t.me/walterbloomberg/33844"
+    },
+    {
+     "fecha": "2026-08-02T21:44:13+00:00",
+     "id": "33843",
+     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
+     "tgUrl": "https://t.me/walterbloomberg/33843"
+    },
+    {
+     "fecha": "2026-08-02T16:40:18+00:00",
+     "id": "33836",
+     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
+     "tgUrl": "https://t.me/walterbloomberg/33836"
+    },
+    {
+     "fecha": "2026-08-02T16:35:19+00:00",
+     "id": "33835",
+     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
+     "tgUrl": "https://t.me/walterbloomberg/33835"
+    },
+    {
+     "fecha": "2026-08-02T11:52:45+00:00",
+     "id": "33834",
+     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
+     "tgUrl": "https://t.me/walterbloomberg/33834"
+    }
+   ],
+   "actualizado": "2026-08-03T15:27:15+00:00"
+  },
+  {
+   "id": "33888",
+   "fecha": "2026-08-03T14:59:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33888",
+   "via": "DeItaone",
+   "original": "STOCKS OF CRUDE OIL IN THE US STRATEGIC PETROLEUM RESERVE FELL BY ABOUT 2.85 MLN BARRELS TO 304.8 MLN BARRELS LAST WEEK, LOWEST SINCE 1983",
+   "titulo": "Reservas estratégicas USA caen a mínimo de 1983; SPR en 304,8M barriles",
+   "resumen": "Existencias de crudo en Reserva Estratégica Petrolera (SPR) cayeron ~2,85 millones de barriles la semana pasada a 304,8 millones. Nivel más bajo desde 1983 (hace 43 años). Refleja política de reabastecimiento agresivo bajo Trump y uso para gestionar inflación energética.",
+   "analisis": {
+    "porque": "SPR bajo mínimos = menos capacidad de amortiguación ante shocks de oferta; señal de que admin usa reserva como herramienta anti-inflación; relevante para elasticidad de oferta de crudo USA; afecta trajectoria de precios a medio plazo",
+    "queOcurrio": "SPR reportó caída de 2,85M barriles semanal a 304,8M total; es mínimo histórico desde 1983; refleja política de vaciado para contener inflación",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg / EIA (datos oficiales)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "Gasolina RBOB",
+    "DXY",
+    "Inflación USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Gasolina",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "spr",
+    "petroleo",
+    "reservas-estrategicas",
+    "crudo",
+    "inflacion",
+    "oferta"
+   ],
+   "tgText": "SPR USA en mínimo 43 años: 304,8M barriles (-2,85M semanal). Reserva estratégica casi vaciada; menos colchón ante shocks. Impacto: elasticidad oferta cae, petróleo vulnerable a sorpresas.",
+   "xText": "Reserva Estratégica Petrolera USA: 304,8M barriles, mínimo desde 1983. SPR casi agotada tras vaciado anti-inflación. Menos capacidad de amortiguación; riesgo de volatilidad en crudo.",
+   "discordText": "**SPR USA en mínimo histórico (1983)**\n• Nivel: 304,8M barriles\n• Caída semanal: -2,85M\n• Contexto: Reabastecimiento agresivo bajo Trump\n• Uso: Herramienta anti-inflación energética\n• Riesgo: Menos colchón ante disruptions\n• Impacto: Elasticidad oferta baja, crudo volátil",
+   "pushText": "SPR USA en mínimo 43 años; elasticidad oferta comprometida.",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Petróleo WTI/Brent vulnerable a news de disruption (ataque Irán, problemas en producción) sin SPR para absorber; traders elevan volatilidad implícita",
+    "despues": "Gasolina retail sube (menos oferta de emergencia); inflación energética resurge (presión sobre Fed); DXY puede caer si inflación corre riesgo de resurge (menos cortes de tasa)",
+    "escenarios": "Traders vigilan: (1) si hay shock en suministro (Golfo Persia, Libia, etc); (2) velocidad de reabastecimiento de SPR (compra = demand de crudo); (3) impacto en CPI energético; (4) si admin Trump acelera vacío más antes de salida",
+    "riesgos": "SPR vacío no significa crisis inmediata; USA productor neto de crudo; market puede compensar; riesgo de sobre-interpretación política vs económica"
+   },
+   "macro": {
+    "petroleo": "alcista (menos colchón)",
+    "gasolina": "alcista (oferta menos elástica)",
+    "dolar": "neutral (presión inflación vs tasas)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33885",
+   "fecha": "2026-08-03T14:26:47+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33885",
+   "via": "DeItaone",
+   "original": "WHITE HOUSE TO HOST AI COMPANIES ON TUESDAY TO REVIEW AI FRAMEWORK - THE INFORMATION",
+   "titulo": "Casa Blanca convoca a OpenAI, Google y Anthropic para revisar framework de IA; tests avanzados finalizados",
+   "resumen": "Administración Trump invitará staffers de principales empresas tech (OpenAI, Google, Anthropic) a Casa Blanca el martes para revisar framework de IA. Casa Blanca confirmó finalización de detalles de tests de modelos IA avanzados. Movimiento sugiere regulación selectiva y diálogo directo con líderes de IA.",
+   "analisis": {
+    "porque": "Regulatory clarity sobre IA crucial para valuación de tech; tests avanzados completados sugieren próximo paso es guidance o restricciones; afecta capex de IA de hiperscalers; define competitividad USA vs China; impacta startups vs incumbents",
+    "queOcurrio": "Casa Blanca convoca a OpenAI, Google, Anthropic para martes; confirmó finalización de testing framework para modelos IA avanzados; sin detalles de qué framework o restricciones",
+    "estado": "confirmado",
+    "fuenteOriginal": "The Information / Casa Blanca"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Nasdaq",
+    "S&P 500",
+    "GOOGL",
+    "MSFT",
+    "NVDA",
+    "META",
+    "PLTR"
+   ],
+   "sesgos": [
+    {
+     "activo": "GOOGL",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "MSFT",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "NVDA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "ia",
+    "regulacion",
+    "casa-blanca",
+    "openai",
+    "google",
+    "anthropic",
+    "framework"
+   ],
+   "tgText": "Casa Blanca convoca a OpenAI, Google, Anthropic martes para revisar IA framework. Tests avanzados finalizados. Señal de regulación selectiva en IA; impacto en capex hiperscalers y competencia USA-China.",
+   "xText": "Casa Blanca: OpenAI, Google, Anthropic convocados martes para framework IA. Tests avanzados completados. Regulatory clarity en IA afecta capex tech y competitividad global. Googl, MSFT, NVDA en vigilancia.",
+   "discordText": "**Casa Blanca convoca a líderes IA**\n• Convocadas: OpenAI, Google, Anthropic\n• Fecha: Martes\n• Tema: Review de IA framework\n• Novedad: Tests de modelos avanzados finalizados\n• Implicación: Próximo paso = regulación o guidance\n• Impacto: Valuación tech, capex IA, competencia USA",
+   "pushText": "Casa Blanca convoca IA leaders; framework y tests avanzados en marcha.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NASDAQ/GOOGL/MSFT/NVDA: reacción a news de regulación (riesgo negativo si restricciones severas, neutral si clarity favorece incumbents vs startups)",
+    "despues": "PLTR sube si regulación favorece empresas de defensa/security; META/AMZN monitoreadas por capex implications; bonos tech si market precia riesgo",
+    "escenarios": "Traders vigilan: (1) qué dice framework (restricciones en training data, export controls, seguridad); (2) si favorece incumbents (MSFT/GOOGL) vs startups; (3) impacto en capex IA 2026-2027; (4) alineación con política China",
+    "riesgos": "El titular no especifica qué framework o restricciones; meeting martes podría no derivar en cambio inmediato; rumores pueden diferir de realidad official; timing pre-election politics (ruido)"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33883",
+   "fecha": "2026-08-03T14:00:24+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33883",
+   "via": "DeItaone",
+   "original": "ISM U.S. MANUFACTURING ACTIVITY INDEX 55.6 IN JULY (CONSENSUS 54.0) VS 53.3 IN JUNE",
+   "titulo": "ISM manufacturero julio: 55,6 vs consenso 54,0; sorpresa alcista de 2,3 puntos",
+   "resumen": "Índice ISM de actividad manufacturera estadounidense marcó 55,6 en julio, superando expectativa de mercado (54,0) y mejorando versus 53,3 de junio. Dato confirma resiliencia del sector industrial y moderación de presiones deflacionarias. Sorpresa positiva en contexto de narrativa recesiva.",
+   "analisis": {
+    "porque": "ISM es indicador adelantado de salud manufacturera, empleo industrial y demanda agregada; supera expectativas sugiere momentum económico más fuerte; crucial para Fed en decisiones de tasa; contrarresta narrativa de debilitamiento",
+    "queOcurrio": "ISM Manufacturing reportó 55,6 (expansión) vs consenso 54,0 y prior 53,3; sorpresa al alza de +2,6 puntos vs expectativa",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg / ISM (dato oficial)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "DXY",
+    "Bonos USA",
+    "Rendimientos USA",
+    "USD",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "ism",
+    "manufacturero",
+    "economia",
+    "sorpresa-positiva",
+    "julio",
+    "emplep-industrial"
+   ],
+   "tgText": "ISM manufacturero sorprende al alza: 55,6 vs 54,0 esperado (prior 53,3). Expansión robusta sugiere resiliencia industrial y moderación deflacionaria. Positivo para equities, presiona bonos al alza.",
+   "xText": "ISM Manufacturing julio: 55,6 vs 54,0 (sorpresa +2,3). Expansión sólida, mejor que prior. Economía industrial más fuerte; presiona yields USA al alza, refuerza narrativa alcista en renta variable.",
+   "discordText": "**ISM Manufacturing sorprende al alza**\n• Índice: 55,6 (vs 54,0 esperado, prior 53,3)\n• Sorpresa: +2,3 puntos\n• Interpretación: Expansión robusta, resiliencia industrial\n• Implicación Fed: Menos presión por cortes de tasa\n• Impacto: Yields USA al alza, DXY sube, Oro cede",
+   "pushText": "ISM manufacturero sorprende al alza a 55,6; economía industrial resiliente.",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Bonos USA (yields al alza inmediatamente): mercado reduce apuestas de cortes agresivos de Fed; plazo 2-10Y bajo presión",
+    "despues": "DXY sube (dólar reforzado por expectativa de tasas más altas); oro cede; NASDAQ y S&P 500 pueden caer si yields suben mucho (trade-off entre earnings strength y tasa de descuento); energéticas salen ganando por demanda industrial",
+    "escenarios": "Traders monitorean: (1) si ISM precede a sorpresas en Non-Farm Payroll (viernes); (2) si Fed debe mantener hold más tiempo; (3) si mercado rebaja probabilidades de recession; (4) si infla presión sobre precious metals",
+    "riesgos": "ISM puede ser volátil mes a mes; un dato fuerte no garantiza momentum; mercado ya precia resiliencia; riesgo de reversal si datos siguientes flojean"
+   },
+   "macro": {
+    "dolar": "alcista (tasas altas)",
+    "oro": "bajista (yields suben, DXY sube)",
+    "nasdaq": "sesgo neutral-bajista (yield drag)",
+    "dow": "neutral-alcista (industrial beneficiado)",
+    "sp500": "neutral (mix sectorial)",
+    "bonos": "bajista (yields al alza)",
+    "petroleo": "neutral-alcista (demanda industrial)"
+   },
+   "updates": []
+  },
+  {
+   "id": "33878",
+   "fecha": "2026-08-03T13:50:54+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33878",
+   "via": "DeItaone",
+   "original": "JPMORGAN EXPANDS $750B HOUSING COMMITMENT JPMorgan Chase ($JPM) plans to deploy $750 billion through 2035 to expand U.S. housing supply and homeownership, a nearly 40% increase from the previous decade. The initiative aims to finance 1 million affordable housing units and help 500,000 buyers purchase homes, including 200,000 first-time buyers. The bank will also increase mortgage lending, hire 850",
+   "titulo": "JPMorgan desplegará $750B en vivienda hasta 2035, aumentando 40% su compromiso",
+   "resumen": "JPMorgan Chase anunció expansión de su iniciativa American Dream a $750 mil millones (vs $550B anterior) para financiar 1 millón de unidades de vivienda asequible y ayudar a 500 mil compradores. Incluye 200 mil compradores primerizos, contratación de 850 asesores hipotecarios y apoyo a reformas de política habitacional para aumentar construcción.",
+   "analisis": {
+    "porque": "Señal de confianza institucional en economía residencial estadounidense; JPM busca liderazgo en segmento de vivienda con apuesta de largo plazo; relevante para ciclo crediticio, construcción y consumo",
+    "queOcurrio": "JPMorgan Chase confirmó aumento de 37% en su compromiso de financiamiento habitacional a través de su American Dream Initiative, con objetivos específicos en unidades asequibles y primer-compradores",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "JPM",
+    "XLF",
+    "Sector Inmobiliario",
+    "Bonos Hipotecarios"
+   ],
+   "sesgos": [
+    {
+     "activo": "JPM",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Sector Construcción",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "XLF",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "jpmorgan",
+    "vivienda",
+    "american-dream",
+    "hipotecas",
+    "construccion"
+   ],
+   "tgText": "JPMorgan desplegará $750B en vivienda hasta 2035 (+37% vs década anterior). Financiará 1M unidades asequibles y ayudará a 500K compradores. Apuesta institucional en mercado residencial.",
+   "xText": "JPMorgan amplía compromiso de vivienda a $750B hasta 2035. Objetivo: 1M unidades asequibles, 500K compradores, 200K primerizos. Expansión de 37% en American Dream Initiative. $JPM",
+   "discordText": "**JPMorgan expande compromiso habitacional**\n• Despliegue: $750B hasta 2035 (+37%)\n• 1M unidades vivienda asequible\n• 500K compradores (200K primerizos)\n• 850 nuevos Home Lending Advisors\n• Enfoque en reformas de política habitacional",
+   "pushText": "JPM amplía $750B en vivienda hasta 2035; apuesta en sector residencial.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "JPM (financiero directo): señal de confianza en crédito residencial y crecimiento de márgenes de intermediación",
+    "despues": "XLF (sector financiero), constructoras (MTH, LEN, PHM), REITs hipotecarios; mercado de bonos si se interpretan como menor tasa de defaults",
+    "escenarios": "Traders observarán: (1) si este compromiso implica cambios en pricing de hipotecas; (2) impacto en provisiones de crédito; (3) si otras grandes financieras lo replican; (4) validación de demanda de vivienda a largo plazo",
+    "riesgos": "El titular no especifica fuentes de financiamiento; si tasas suben, el deployment podría ralentizarse; riesgo de que promesa sea parcialmente asegurada con ABS"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33872",
    "fecha": "2026-08-03T13:00:26+00:00",
@@ -506,143 +922,6 @@
     "sp500": "neutral"
    },
    "updates": []
-  },
-  {
-   "id": "33833",
-   "fecha": "2026-08-02T08:57:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33833",
-   "via": "DeItaone",
-   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
-   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
-   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
-   "analisis": {
-    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
-    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "DXY",
-    "EURUSD",
-    "Oro",
-    "VIX",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "nuclear",
-    "Ormuz",
-    "negociaciones",
-    "pausa militar",
-    "Oriente Medio"
-   ],
-   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
-   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
-   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
-   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
-    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
-    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
-    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
-   },
-   "macro": {
-    "dolar": "alcista corto plazo (alivio geopolítico)",
-    "oro": "bajista corto plazo",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "petroleo": "bajista",
-    "bonos": "neutral a alcista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-03T10:28:26+00:00",
-     "id": "33859",
-     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
-     "tgUrl": "https://t.me/walterbloomberg/33859"
-    },
-    {
-     "fecha": "2026-08-03T10:03:27+00:00",
-     "id": "33856",
-     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
-     "tgUrl": "https://t.me/walterbloomberg/33856"
-    },
-    {
-     "fecha": "2026-08-03T04:44:30.000Z",
-     "id": "991847143",
-     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
-    },
-    {
-     "fecha": "2026-08-02T23:33:07.000Z",
-     "id": "990424278",
-     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
-    },
-    {
-     "fecha": "2026-08-02T21:45:46+00:00",
-     "id": "33844",
-     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
-     "tgUrl": "https://t.me/walterbloomberg/33844"
-    },
-    {
-     "fecha": "2026-08-02T21:44:13+00:00",
-     "id": "33843",
-     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
-     "tgUrl": "https://t.me/walterbloomberg/33843"
-    },
-    {
-     "fecha": "2026-08-02T16:40:18+00:00",
-     "id": "33836",
-     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
-     "tgUrl": "https://t.me/walterbloomberg/33836"
-    },
-    {
-     "fecha": "2026-08-02T16:35:19+00:00",
-     "id": "33835",
-     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
-     "tgUrl": "https://t.me/walterbloomberg/33835"
-    },
-    {
-     "fecha": "2026-08-02T11:52:45+00:00",
-     "id": "33834",
-     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
-     "tgUrl": "https://t.me/walterbloomberg/33834"
-    }
-   ],
-   "actualizado": "2026-08-03T10:28:26+00:00"
   },
   {
    "id": "33858",
@@ -7405,294 +7684,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 33752,
-   "fecha": "2026-07-30T12:10:18+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33752",
-   "via": "DeItaone",
-   "original": "HORMUZ BOTTLENECK PERSISTS Crude exports from the Middle East Gulf remain constrained despite a four-day pause in US strikes on Iran, according to Kpler. Vessel clearances stayed near recent lows, while Gulf loading activity fell by more than half. Kpler said security risks, higher war-risk insurance and Iranian interdictions continue to restrict exports, with ship-to-ship transfers easing storage",
-   "titulo": "Cuello de botella en Ormuz persiste; exportaciones de crudo del Golfo restringidas",
-   "resumen": "A pesar de pausa de cuatro días en ataques estadounidenses contra Irán, las exportaciones de crudo desde el Golfo Pérsico permanecen constreñidas según Kpler. Riesgos de seguridad, mayor costo de seguros de guerra e interdiciones iraníes continúan limitando oferta. Transferencias buque a buque alivian almacenamiento pero no potencian suministro global.",
-   "analisis": {
-    "porque": "La persistencia de restricciones en exportaciones del Golfo mantiene presiones sobre oferta global de crudo, soportando precios de petróleo y energía. Impacta costos de transporte, margen de refinerías y competitividad de exportadores energéticos latinoamericanos.",
-    "queOcurrio": "Analista Kpler reporta que actividad de carga en Golfo cayó más de 50% y autorizaciones de buques permanecen en mínimos recientes; seguridad geopolítica sigue siendo barrera clave.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Kpler (servicio de inteligencia logística) vía Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "Energía (XLE)",
-    "Dólar",
-    "Mercados emergentes"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Energía",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Materias Primas|Geopolítica",
-   "keywords": [
-    "petróleo-golfo",
-    "ormuz",
-    "irán-usa",
-    "oferta-crudo",
-    "geopolítica"
-   ],
-   "tgText": "🛢️ Cuello de botella Ormuz persiste: exportaciones de crudo del Golfo constreñidas a pesar de tregua de 4 días. Riesgos de seguridad e interdiciones mantienen oferta bajo presión.",
-   "xText": "⚠️ Bloqueo Ormuz continúa: exportaciones de Golfo limitadas por seguridad e interdiciones iraníes. Presiones alcistas sobre precios de petróleo permanecen.",
-   "discordText": "**Crisis Ormuz - Oferta Constreñida**\n• Carga del Golfo: -50% actividad\n• Factores: Riesgos de seguridad, seguros de guerra, interdiciones\n→ Presiones alcistas sobre crudo; impacta costos globales",
-   "pushText": "Ormuz: restricciones de petróleo persisten a pesar de tregua",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo (WTI, Brent) soportado en torno a $75-80: oferta limitada bajo techo de precios; productores del Golfo operan con márgenes elevados pero exportan menos volumen.",
-    "despues": "Energía (XLE, $XOM, $CVX) se beneficia de márgenes; inversores en mercados emergentes exportadores (México, Brasil) ven soporte de precios. Inflación esperada de energía frena optimismo de recortes de tasas.",
-    "escenarios": "Traders vigilan: (1) escalada geopolítica que podría cerrar Ormuz (riesgo muy alto); (2) resolución diplomática EE.UU.-Irán (riesgo menor inmediato); (3) recorrido estacional de verano que típicamente soporta demanda. Futuros de petróleo volátiles a noticias de conflicto.",
-    "riesgos": "Escalada inesperada podría enviar crudo a $90+. Resolución rápida podría ceder $10-15. Titular no especifica si el cuello de botella es temporal o estructural."
-   },
-   "macro": {
-    "petroleo": "alcista",
-    "dolar": "neutral",
-    "energia": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": 33750,
-   "fecha": "2026-07-30T12:02:53+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33750",
-   "via": "DeItaone",
-   "original": "*GERMAN JULY CPI RISES TO 2.8% Y/Y VS 2.7% EST *GERMAN JULY CPI INCREASES 0.8% M/M VS 0.7% EST *GERMANY'S EU-HARMONISED CPI HOLDS AT 2.8% Y/Y, MATCHES EST *GERMANY'S EU-HARMONISED CPI RISES 0.9% M/M VS 0.8% EST",
-   "titulo": "IPC alemán sube más de lo esperado en julio; inflación de núcleo acelera",
-   "resumen": "La inflación alemana de julio alcanzó 2,8% interanual (vs. 2,7% estimado) y 0,8% mensual (vs. 0,7% esperado). El IPC armonizado de la UE se mantuvo en 2,8% interanual pero subió 0,9% mensual versus 0,8% estimado. Los datos sugieren presiones inflacionarias persistentes en la mayor economía europea, complicando perspectivas de futuros recortes de tasas del BCE.",
-   "analisis": {
-    "porque": "La inflación alemana superior a expectativas refuerza argumentos hawkish en el BCE y reduce probabilidad de recortes agresivos. Afecta directamente valuaciones de deuda y expectativas de política monetaria en la eurozona.",
-    "queOcurrio": "Datos oficiales de IPC alemán publicados con sorpresa alcista tanto en tasa interanual como mensual, incluyendo componente armonizado UE.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Agencia de estadísticas alemana (Destatis) vía Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "EUR/USD",
-    "EURIBOR",
-    "Bonos alemanes",
-    "DAX",
-    "Rendimientos eurozona"
-   ],
-   "sesgos": [
-    {
-     "activo": "EUR/USD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos alemanes",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DAX",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Inflación|Bancos Centrales",
-   "keywords": [
-    "inflación-Alemania",
-    "IPC-julio",
-    "BCE",
-    "presiones-inflacionarias",
-    "eurozona"
-   ],
-   "tgText": "📊 IPC Alemania: 2,8% YoY (vs. 2,7% est.) y +0,8% MoM (vs. +0,7% est.). Presiones inflacionarias persisten en eurozona, complicando perspectivas del BCE para recortes de tasas.",
-   "xText": "🇩🇪 Inflación alemana supera expectativas: 2,8% interanual (+0,1pp vs. est.) y +0,8% mensual. Presiones alcistas desafían planes de flexibilización del BCE.",
-   "discordText": "**IPC Alemania - Sorpresa Alcista**\n• Interanual: 2,8% (vs. 2,7% est.)\n• Mensual: +0,8% (vs. +0,7% est.)\n• IPC armonizado UE: 2,8% YoY / +0,9% MoM\n→ Dificulta recortes de tasas del BCE",
-   "pushText": "IPC Alemania al 2,8% supera expectativas; presiones inflacionarias persisten",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "EUR/USD bajista: inversores reprueban perspectivas de política monetaria menos acomodaticia de lo esperado, impulsando fortaleza del USD relativo.",
-    "despues": "Bonos alemanes y eurozona a 10 años: rendimientos suben (precios caen); DAX y acciones financieras europeas bajo presión; spreads periféricos podrían ampliarse.",
-    "escenarios": "Traders vigilan señales del BCE sobre timing de próximos recortes; eventual sorpresa inflacionaria persistente podría requerir mantención de tasas más tiempo. Riesgo de repricing de curva de rendimientos.",
-    "riesgos": "Datos de inflación pueden ser volátiles mes a mes; datos de energía y componentes transitorios no desglosados en titular. Reacción podría ser más moderada si mercados ya anticipaban presiones."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "euro": "bajista",
-    "nasdaq": "neutral-bajista",
-    "dow": "neutral-bajista",
-    "sp500": "neutral-bajista",
-    "bonos": "bajista",
-    "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33748",
-   "fecha": "2026-07-30T11:04:02+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33748",
-   "via": "DeItaone",
-   "original": "BOE HOLDS RATES, HAWKISH SPLIT The Bank of England kept its key rate unchanged at 3.75% in a 6-3 vote, with three policymakers backing a hike and none supporting a cut. The BOE expects inflation to peak at 3.2% in Q4 before returning to target in early 2028, while warning it could reach 4.5% if oil stays above $100. Policymakers said rate cuts remain possible if inflation risks ease.",
-   "titulo": "BoE mantiene tasas con división 6-3; advierte inflación podría alcanzar 4,5%",
-   "resumen": "El Banco de Inglaterra mantuvo su tasa de referencia en 3,75% en votación 6-3, con tres miembros a favor de alza y cero a favor de baja. Proyecta inflación pico de 3,2% en Q4 antes de retornar al objetivo en ene 2028, pero advierte que podría llegar a 4,5% si el petróleo permanece por encima de $100. Policymakers señalaron que reducciones de tasas siguen siendo posibles si riesgos inflacionarios disminuyen.",
-   "analisis": {
-    "porque": "Decisión del Banco de Inglaterra afecta directamente la libra esterlina, bonos UK, y acciones europeas. División 6-3 sugiere desacuerdo interno sobre política futura. Advertencia sobre inflación podría presionar equities defensivas.",
-    "queOcurrio": "BoE mantuvo tasas sin cambios en votación ajustada. Emitió advertencia de que inflación podría ser más alta si petróleo permanece elevado.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Comunicado oficial Banco de Inglaterra"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "GBPUSD",
-    "FTSE100",
-    "Bonos UK Gilt",
-    "EURUSD",
-    "Petróleo"
-   ],
-   "sesgos": [
-    {
-     "activo": "GBP",
-     "sesgo": "neutral-bajista"
-    },
-    {
-     "activo": "FTSE100",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bonos UK",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "boe",
-    "banco-inglaterra",
-    "tasas",
-    "inflacion",
-    "libra",
-    "uk"
-   ],
-   "tgText": "🇬🇧 BoE mantiene tasas 3,75% con división 6-3. Advierte: inflación podría alcanzar 4,5% si petróleo > $100. Proyecta pico inflación 3,2% en Q4. División sugiere ciclo de cortes sigue siendo posible. Libra bajo presión.",
-   "xText": "🔴 BoE divide 6-3 en favor de mantener tasas. Inflación UK en riesgo de 4,5% si petróleo sigue alto. Política futura incierta. Impacto: GBP débil, bonos UK bajo presión. #BancosCentrales",
-   "discordText": "**BoE: Tasas sin cambios pero división interna**\n• Voto: 6-3 a favor mantener en 3,75%\n• 3 miembros querían subir, 0 bajista\n• Inflación: pico 3,2% Q4, objetivo ene28\n• RIESGO: podría llegar a 4,5% si petróleo > $100\n• Señal: cortes de tasas aún posibles\n→ Presión sobre GBP, bonos UK en riesgo",
-   "pushText": "BoE mantiene tasas con división interna; advierte sobre riesgo inflacionario",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "GBPUSD cae 0,3-0,5% en reacción inicial (incertidumbre sobre próximos moves). Bonos UK Gilts a largo plazo se venden si mercado interpreta que BoE tolerará inflación más alta.",
-    "despues": "FTSE100 podría subir marginalmente (beneficio de GBP débil para exportadores). EUR se fortalece vs GBP. Acciones defensivas UK reciben apoyo.",
-    "escenarios": "Traders vigilaban si BoE daría pista sobre cortes. División 6-3 sugiere que cortes están sobre la mesa si inflación cede. Clave: próximos datos de inflación UK (estan en riesgo de ser altos por petróleo). Si inflación sube, presión sobre BoE para no cortar.",
-    "riesgos": "Confirmado por comunicado oficial BoE. Riesgo: si petróleo sube a $110+, inflación UK podría escaparse, forzando a BoE a mantener tasas más tiempo, contrastando con mercado que espera cortes."
-   },
-   "macro": {
-    "dolar": "neutral",
-    "oro": "alcista",
-    "nasdaq": "neutral",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "bajista",
-    "petroleo": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33730",
-   "fecha": "2026-07-30T08:54:24+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33730",
-   "via": "DeItaone",
-   "original": "IRAN TO RECEIVE CHINESE AIR DEFENCE MISSILES: REUTERS Iran is expected to receive an initial shipment of up to 400 Chinese-made MANPADS within weeks under a deal worth $60–70 million, Reuters reported, citing sources. The systems would strengthen Iran's short-range air defences after months of conflict with the U.S. and Israel. China denied the report, while Pakistan rejected claims it would facil",
-   "titulo": "Irán recibirá sistemas de defensa aérea chinos MANPADS en semanas, según fuentes",
-   "resumen": "Irán espera recibir hasta 400 sistemas de defensa aérea portátiles tipo MANPADS fabricados por China en las próximas semanas, según contrato reportado por Reuters por USD 60–70 millones. Los sistemas fortalecerían defensas de corto alcance de Irán tras meses de conflicto con EE.UU. e Israel. China negó el reporte; Pakistán rechazó participación en facilitación de entregas.",
-   "analisis": {
-    "porque": "Escalada de suministro de armas chinas a Irán amplía tensión geopolítica Oriente Medio, incrementando riesgo de confrontación militar directa EE.UU.–Irán e Israel–Irán. Históricamente mueve precios de petróleo, divisas de riesgo y commodities defensivos (oro). Ya hay huelgas aéreas confirmadas según titular 33728.",
-    "queOcurrio": "Reuters reporta (vía fuentes anónimas) que China está vendiendo sistemas de defensa aérea portátiles a Irán bajo contrato valuado en USD 60–70M. China negó; Pakistán rechazó rol en facilitación.",
-    "estado": "rumor",
-    "fuenteOriginal": "Reuters (fuentes anónimas)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Dólar",
-    "Mercados Emergentes Irán",
-    "Bonos Globales",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "iran-defensa",
-    "china-armas",
-    "manpads",
-    "oriente-medio",
-    "escalada-geopolitica"
-   ],
-   "tgText": "🔴 BREAKING: Irán recibirá 400 MANPADS chinos en semanas por USD 60–70M, reporta Reuters. China y Pakistán niegan. Sube riesgo Israel–Irán; oro/petróleo en alerta. Str. 33728.",
-   "xText": "🔥 Irán recibe MANPADS chinos en semanas (USD 60–70M): Reuters. Escalada geopolítica Oriente Medio. Petróleo y oro al alza. China niega. #Geopolítica #Petróleo",
-   "discordText": "**⚠️ Escalada Irán – China**\n• Reuters: Irán recibirá 400 MANPADS (USD 60–70M)\n• China/Pakistán niegan participación\n• Riesgo confrontación EE.UU.–Irán/Israel sube\n• **Mercados**: Petróleo↑ Oro↑ Riesgo↑",
-   "pushText": "Irán recibirá MANPADS chinos; tensión Oriente Medio sube",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo (WTI/Brent) reacciona por temor bloqueo Golfo Pérsico/Estrecho Hormuz. Oro como activo refugio. Dólar por flight-to-safety.",
-    "despues": "Bonos USA (yields bajan por riesgo sistémico). Mercados emergentes con exposición Oriente Medio/Irán venden. Defensivos (utilidades, consumo defensivo) vs cíclicos.",
-    "escenarios": "Traders monitorean si huelgas aéreas confirmadas escalan a confrontación directa EE.UU.–Irán. Dólares de comercio de petróleo e importaciones de defensa israelí. Ciclo de represalias (ver 33728 misil ruso en Polonia).",
-    "riesgos": "Reuters cita fuentes anónimas (no confirmación oficial). China/Pakistán deniegan. Titular puede ser desinformación. Pero contexto 33728 (misil Rusia–Polonia) sugiere escalada multi-frente plausible."
-   },
-   "macro": {
-    "petroleo": "alcista",
-    "oro": "alcista",
-    "dolar": "alcista",
-    "bonos": "bajista (yields bajan por riesgo)",
-    "sp500": "bajista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-30T10:46:27+00:00",
-     "id": "33746",
-     "texto": "La Guardia Revolucionaria Iraní aseguró que destruyó tres cazas F-35 estadounidenses y dañó otros tres en ataque a la base aérea de Al Azraq en Jordania, afirmando que fue represalia por un supuesto ataque aéreo de EEUU en la isla de Qeshm que mató a tres civiles. Las reivindicaciones no han sido verificadas independientemente y EEUU no ha emitido confirmación oficial.",
-     "tgUrl": "https://t.me/walterbloomberg/33746"
-    },
-    {
-     "fecha": "2026-07-30T08:51:52+00:00",
-     "id": "33729",
-     "texto": "Reportes de múltiples fuentes indican que Irán recibirá sistemas de defensa aérea portátiles (MANPADS) fabricados por China en las próximas semanas. La información coincide con escalada de tensiones Oriente Medio tras ataques recientes entre EE.UU.–Irán e Israel–Irán. Transferencia forma parte de acuerdo de defensa más amplio.",
-     "tgUrl": "https://t.me/walterbloomberg/33729"
-    }
-   ],
-   "actualizado": "2026-07-30T10:46:27+00:00"
   }
  ],
  "rssVistos": [
