@@ -1,7 +1,376 @@
 {
- "lastId": 33893,
- "actualizado": "2026-08-03T16:06:37.433Z",
+ "lastId": 33904,
+ "actualizado": "2026-08-03T18:02:19.980Z",
  "items": [
+  {
+   "id": 33901,
+   "fecha": "2026-08-03T17:36:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33901",
+   "via": "DeItaone",
+   "original": "CITADEL WARNS FED MESSAGING IS HURTING CREDIBILITY Citadel Securities said Fed Chair Kevin Warsh's policy framework is creating uncertainty by pledging to curb inflation without clearly explaining how. The firm warned that relying on higher market yields to tighten financial conditions risks a negative feedback loop, where delayed rate hikes fuel higher inflation expectations and push long-term Tr",
+   "titulo": "Citadel alerta: credibilidad de la Fed en riesgo por mensajería inconsistente",
+   "resumen": "Citadel Securities advierte que el marco de política del presidente de la Fed Kevin Warsh genera incertidumbre al comprometerse a controlar la inflación sin explicar claramente los mecanismos. La firma advierte que depender de mayores rendimientos de mercado para ajustar condiciones financieras podría crear un bucle negativo: retrasos en alzas de tasas alimentan expectativas inflacionarias más altas y presionan aún más los bonos del Tesoro.",
+   "analisis": {
+    "porque": "Cuestiona la credibilidad de la política monetaria estadounidense en un momento crítico de gestión de inflación. Afecta directamente las expectativas de mercado sobre trayectoria de tasas y valuaciones de bonos",
+    "queOcurrio": "Citadel Securities publicó crítica formal al marco de política de la Fed, señalando que la venta reciente en Treasuries refleja dudas sobre la credibilidad del banco central",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (citando Citadel Securities)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "Nasdaq",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "credibilidad-fed",
+    "política-monetaria",
+    "treasuries",
+    "inflación",
+    "tasas-de-interés"
+   ],
+   "tgText": "⚠️ Citadel advierte sobre pérdida de credibilidad de la Fed. Crítica al marco de Warsh: depender de rendimientos de mercado para ajustar crearía bucle negativo inflacionario. Venta de Treasuries refleja dudas.",
+   "xText": "🚨 Citadel: marco de la Fed genera incertidumbre sobre control inflacionario. Depender de rendimientos de mercado para ajustar crearía bucle negativo. Venta de Treasuries refleja dudas sobre credibilidad.",
+   "discordText": "**Alerta: Citadel critica credibilidad de la Fed**\n• Kevin Warsh promete controlar inflación sin explicar mecanismos\n• Riesgo de bucle negativo: retrasos en tasas → inflación mayor → Treasuries caen más\n• Venta reciente refleja dudas del mercado",
+   "pushText": "Citadel alerta: credibilidad de la Fed en riesgo por inconsistencias",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Rendimientos de Treasuries a largo plazo (10Y, 30Y) reaccionan primero por efecto directo en valuaciones de renta fija y expectativas inflacionarias",
+    "despues": "DXY sube (menor confianza en política monetaria USA); Nasdaq y S&P500 podrían ceder si crece incertidumbre sobre trayectoria de tasas",
+    "escenarios": "Traders vigilarán: (1) próximos comentarios de la Fed sobre mecanismos de política; (2) datos inflacionarios que validen o contradigan la preocupación de Citadel; (3) spreads de bonos corporativos vs Treasuries",
+    "riesgos": "El titular proviene de crítica institucional (no es ruido), pero es interpretación de Citadel sobre intención del Fed; la Fed podría responder con clarificación de framework"
+   },
+   "macro": {
+    "dolar": "alcista (menor confianza en Fed)",
+    "oro": "alcista (incertidumbre monetaria)",
+    "nasdaq": "bajista (si crece volatilidad de tasas)",
+    "dow": "neutral a bajista",
+    "sp500": "neutral a bajista",
+    "bitcoin": "mixto (volatilidad de tasas es headwind)",
+    "ethereum": "mixto",
+    "bonos": "bajista (venta en progress)",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": 33899,
+   "fecha": "2026-08-03T17:10:18+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33899",
+   "via": "DeItaone",
+   "original": "VENEZUELA OIL EXPORTS HIT FIVE-MONTH LOW Venezuela's crude exports fell 25% in July to 856,000 bpd, the lowest level in five months. The decline was driven by weaker demand from India, where imports halved as Middle Eastern oil supplies recovered following a pause in the Iran conflict. The U.S. and India remained Venezuela's largest buyers, while China has not imported Venezuelan crude since the r",
+   "titulo": "Exportaciones de petróleo venezolano caen a mínimo de 5 meses; demanda india colapsa",
+   "resumen": "Las exportaciones de crudo venezolano cayeron 25% en julio a 856.000 bpd, el nivel más bajo en cinco meses. India redujo importaciones a la mitad tras recuperación de suministros de Oriente Medio tras pausa del conflicto con Irán. USA e India permanecen como mayores compradores; China no importa crudo venezolano desde la remoción de Nicolás Maduro.",
+   "analisis": {
+    "porque": "Afecta disponibilidad global de crudo y presiona dinámicas de oferta-demanda de petróleo. La debilidad de demanda india es señal de debilitamiento de presiones en mercado energético global",
+    "queOcurrio": "Exportaciones venezolanas cayeron 25% mes a mes a 856 mil barriles diarios, impulsado por caída de importaciones indias (se redujeron a la mitad) y ausencia de compras chinas",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (datos de comercio de crudo)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "S&P500",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "venezuela",
+    "petróleo",
+    "exportaciones",
+    "india",
+    "suministro-global"
+   ],
+   "tgText": "📉 Venezuela: exportaciones de crudo caen 25% a mínimo de 5 meses (856k bpd). India redujo compras a la mitad tras recuperación de Oriente Medio. China no compra desde caída de Maduro.",
+   "xText": "📊 Petróleo venezolano: caída 25% a 856k bpd (mínimo 5 meses). Demanda india se desploma tras normalización de Oriente Medio. China fuera del mercado desde cambio político.",
+   "discordText": "**Venezuela: caída crítica de exportaciones de crudo**\n• Julio: 856k bpd (-25% mes a mes, mínimo 5 meses)\n• India redujo compras a la mitad → recuperación de Oriente Medio\n• China: sin importaciones desde remoción de Maduro",
+   "pushText": "Exportaciones de crudo venezolano caen 25% a mínimo de 5 meses",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "WTI y Brent reaccionan moderadamente: la noticia refleja debilidad de demanda, no shock de oferta; mercado ya precia presión geopolítica de Oriente Medio",
+    "despues": "Si presión se mantiene, USD podría fortalecerse (menos presión inflacionaria de energía). Acciones de energía evalúan si es tendencia o temporal",
+    "escenarios": "Traders vigilarán: (1) recuperación de demanda india si conflicto Irán escalara de nuevo; (2) si China reanuda compras tras cambio político en Venezuela; (3) impacto en precios globales si oferta se contrae más",
+    "riesgos": "Titular reporta datos, pero dinámicas pueden revertir rápidamente con cambios geopolíticos. Información podría estar atrasada 1-2 semanas"
+   },
+   "macro": {
+    "dolar": "alcista (menos presión inflacionaria de energía)",
+    "oro": "neutral",
+    "nasdaq": "neutral",
+    "dow": "neutral a alcista",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "alcista (presión inflacionaria menor)",
+    "petroleo": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": 33898,
+   "fecha": "2026-08-03T16:35:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33898",
+   "via": "DeItaone",
+   "original": "NASDAQ EXTENDS GAINS, LAST UP 2.1%",
+   "titulo": "Nasdaq extiende ganancias; sube 2,1% en sesión actual",
+   "resumen": "El índice Nasdaq registra avance de 2,1% en la sesión actual, extendiendo ganancias. El titular no especifica los drivers específicos de la alza ni contexto macroeconómico.",
+   "analisis": {
+    "porque": "Movimiento de índices amplios impacta sentimiento general, rotaciones de riesgo y evaluación de valuaciones de tecnología. Alza de 2,1% es significativa y requiere monitoreo de drivers",
+    "queOcurrio": "Nasdaq sube 2,1% en sesión actual",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Nasdaq",
+    "S&P500",
+    "Dow Jones",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "Nasdaq",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "nasdaq",
+    "mercados-amplios",
+    "sesión",
+    "ganancias"
+   ],
+   "tgText": "📈 Nasdaq extiende ganancias +2,1% en sesión. El titular no especifica drivers de la alza; monitorear contexto de technología y sentimiento de riesgo.",
+   "xText": "🔝 Nasdaq avanza +2,1% en sesión actual. Movimiento significativo; vigilar drivers específicos y rotaciones de riesgo entre sectores.",
+   "discordText": "**Nasdaq en alza**\n• Avance: +2,1% en sesión\n• Drivers no especificados en titular\n• Vigilar: rotaciones tech, sentimiento de riesgo, contexto macro",
+   "pushText": "Nasdaq sube 2,1% en sesión actual",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Nasdaq 100 y acciones de tecnología reaccionan primero; movimiento de 2,1% sugiere rotación de riesgo o revaluación de tasas",
+    "despues": "S&P500, Dow Jones pueden seguir; VIX podría comprimirse si la alza refleja menor volatilidad esperada",
+    "escenarios": "Traders vigilarán: (1) si la alza responde a datos económicos débiles (menor presión de tasas) o a noticias corporativas; (2) si es reversión técnica o cambio de tendencia; (3) contexto de geopolítica (Irán, Venezuela) que podría revertir ganancias",
+    "riesgos": "Titular es muy genérico; sin drivers especificados, podría revertirse rápidamente si contexto cambia. Alta probabilidad de rotación a defensivos si datos macroeconómicos empeoran"
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "bajista",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "bitcoin": "alcista",
+    "ethereum": "alcista",
+    "bonos": "bajista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": 33897,
+   "fecha": "2026-08-03T16:31:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33897",
+   "via": "DeItaone",
+   "original": "SAYLOR SAYS HE HAS NEVER SOLD ANY OF HIS PERSONALLY HELD BITCOIN Michael Saylor said he has never sold a single satoshi of his personal Bitcoin holdings. He clarified that Strategy ($MSTR ) is a public company—not his personal wallet—and may buy or sell Bitcoin as part of its capital management. Saylor added that the company's long-term conviction in Bitcoin remains unchanged.",
+   "titulo": "Saylor reafirma: nunca ha vendido Bitcoin personal; MSTR es entidad separada",
+   "resumen": "Michael Saylor aclaró que no ha vendido ni un satoshi de su tenencia personal de Bitcoin. Distinguió que MicroStrategy ($MSTR) es compañía pública independiente de su cartera personal, y puede comprar o vender Bitcoin como parte de gestión de capital. Saylor reafirmó la convicción de largo plazo de la empresa sobre Bitcoin.",
+   "analisis": {
+    "porque": "Saylor es figura influyente en adopción institucional de Bitcoin y su posición personal afecta señales de sentimiento de largo plazo. Aclaración disipa dudas sobre posibles ventas que podrían interpretarse como pérdida de fe",
+    "queOcurrio": "Saylor emitió aclaración pública diferenciando su posición personal (nunca vende) de las operaciones de MSTR (puede operar según capital management)",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (comunicación de Michael Saylor)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bitcoin",
+    "Ethereum",
+    "MSTR",
+    "Nasdaq"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "bitcoin",
+    "michael-saylor",
+    "mstr",
+    "tenencia-personal",
+    "sentimiento-institucional"
+   ],
+   "tgText": "💬 Saylor aclara: nunca vendió Bitcoin personal. MSTR es entidad separada que puede operar según necesidades de capital. Convicción de largo plazo en BTC sin cambios.",
+   "xText": "📌 Michael Saylor: nunca vendió satoshi alguno de su Bitcoin personal. MSTR opera independientemente. Convicción de largo plazo sobre Bitcoin intacta.",
+   "discordText": "**Saylor: posición personal de Bitcoin intacta**\n• Nunca vendió ni un satoshi de su tenencia personal\n• MSTR es entidad separada → puede operar según necesidades\n• Convicción de largo plazo sin cambios",
+   "pushText": "Saylor reafirma: nunca vendió Bitcoin personal; MSTR es entidad separada",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Bitcoin y MSTR reaccionan positivamente: aclaración disipa dudas sobre venta de holdings influyentes",
+    "despues": "Sentimiento institucional se fortalece; otras acciones de tecnología/cripto evalúan si señal refleja mayor confianza en BTC a largo plazo",
+    "escenarios": "Traders vigilarán: (1) futuras operaciones de MSTR en Bitcoin (compras vs ventas); (2) si aclaración devuelve confianza a tenedores institucionales; (3) movimientos de BTC en próximos días",
+    "riesgos": "Aclaración es interpretación de Saylor; no descarta que MSTR venda grandes posiciones en futuro. Titular es sentimiento, no dato duro de mercado"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33896,
+   "fecha": "2026-08-03T16:29:48+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33896",
+   "via": "DeItaone",
+   "original": "U.S. OFFICIALS SAY NO NEW IRAN TALKS PLANNED: CBS U.S. officials told CBS News there are no new negotiations with Iran planned, despite President Trump's comments that talks would begin Monday. Officials said discussions continue through mediators involving U.S. envoy Steve Witkoff and the Iranian team. Meanwhile, Iran said it is not negotiating directly with the U.S., insisting current talks are ",
+   "titulo": "Negociaciones Irán-USA: sin nuevas conversaciones directas planeadas",
+   "resumen": "Oficiales estadounidenses dijeron a CBS News que no hay nuevas negociaciones directas con Irán planeadas, contradiciendo comentarios previos de Trump sobre diálogos que iniciarían el lunes. Conversaciones continúan a través de mediadores, incluyendo envío especial Steve Witkoff. Irán rechaza negociaciones directas, insistiendo que los diálogos actuales son con Omán y se enfocusan en tránsito del Estrecho de Ormuz.",
+   "analisis": {
+    "porque": "Clarificación sobre estado real de negociaciones impacta evaluación de riesgo geopolítico, volatilidad del petróleo y prima de riesgo global. Discrepancia entre declaraciones de Trump y posición oficial sugiere brecha comunicacional",
+    "queOcurrio": "Desconexión entre posición de Trump (dice que iniciarán negociaciones) e información de oficiales de Estado Dept a CBS: no hay nuevas conversaciones directas planeadas. Mediación continúa vía Witkoff; Irán rechaza negociación directa",
+    "estado": "confirmado",
+    "fuenteOriginal": "CBS News (citando oficiales estadounidenses)"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "DXY",
+    "Gold",
+    "VIX",
+    "Mercados de Riesgos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran",
+    "trump",
+    "negociaciones",
+    "geopolitica",
+    "mediation-oman"
+   ],
+   "tgText": "⚠️ Oficiales USA a CBS: NO hay nuevas negociaciones Irán-USA planeadas, contradiciendo a Trump. Mediación continúa vía Witkoff/Irán rechaza diálogo directo. Enfoque: Estrecho Ormuz.",
+   "xText": "🚨 Brecha comunicacional: Trump dice negociaciones el lunes, pero oficiales USA dicen que no hay conversaciones nuevas planeadas. Mediación indirecta continúa.",
+   "discordText": "**Desconexión en negociaciones Irán-USA**\n• Oficiales USA dicen NO hay nuevas conversaciones directas planeadas\n• Contradice comentarios de Trump sobre diálogos el lunes\n• Mediación continúa vía Steve Witkoff; Irán rechaza diálogo directo\n• Enfoque: tránsito Estrecho Ormuz",
+   "pushText": "Oficiales USA: sin nuevas negociaciones Irán-USA planeadas",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "WTI y Brent reaccionan al alza: desconexión entre Trump e instituciones genera incertidumbre sobre resolución de conflicto; petróleo sube por prima de riesgo geopolítico",
+    "despues": "Oro, VIX y activos safe-haven se fortalecen; DXY podría subir (aversión al riesgo); rotación desde tecnología a defensivos",
+    "escenarios": "Traders vigilarán: (1) próximas declaraciones de Trump vs posición oficial (más desconexión = riesgo más alto); (2) cualquier escalada militar o ataque a buques en Estrecho Ormuz; (3) si mediación progresa o se estanca (Irán insiste solo con Omán)",
+    "riesgos": "Brecha entre retórica presidencial y realidad operativa genera incertidumbre. Si escalada militar ocurre, petróleo podría dispararse > 85 USD/bbl. Irán podría usar proxies para presionar sin escalada directa"
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "alcista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bitcoin": "mixto",
+    "ethereum": "mixto",
+    "bonos": "alcista (safe-haven)",
+    "petroleo": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 33894,
+   "fecha": "2026-08-03T16:10:57+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33894",
+   "via": "DeItaone",
+   "original": "$GME - GAMESTOP SHARES EXTEND LOSSES, LAST DOWN 12.8%",
+   "titulo": "GameStop extiende caídas; acciones ceden 12,8% en la sesión",
+   "resumen": "Acciones de GameStop ($GME) extienden pérdidas, con caída de 12,8% en la sesión actual. Esta actualización refleja el movimiento más pronunciado tras el anuncio previo de canje de $1.400M de convertibles por acciones.",
+   "analisis": {
+    "porque": "Caída pronunciada de 12,8% refleja presión de dilución accionaria derivada de canje de convertibles y posible liquidación de posiciones; impacta dinámicas de micro-cap y retail trading",
+    "queOcurrio": "GME cae 12,8% en sesión; extensión de movimiento bajista posterior al anuncio de canje de $1.400M de convertibles por acciones publicado previamente",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "GME",
+    "Nasdaq",
+    "Retail Stocks"
+   ],
+   "sesgos": [
+    {
+     "activo": "GME",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "gme",
+    "gamestop",
+    "dilución",
+    "convertibles",
+    "caída-accionaria"
+   ],
+   "tgText": "📉 GME cae 12,8% en sesión; extiende caídas por dilución de canje de $1.400M convertibles. Volumen y volatilidad muy alta.",
+   "xText": "🔴 GameStop ($GME) cede 12,8% tras dilución por canje de convertibles por acciones. Movimiento refleja presión de liquidez y revaluación.",
+   "discordText": "**GameStop en caída pronunciada**\n• Pérdida: -12,8% en sesión\n• Driver: dilución por canje de $1.4B convertibles\n• Volatilidad: muy alta | Vigilar soporte técnico",
+   "pushText": "GME cae 12,8%; extiende caídas por dilución de convertibles",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "GME cede primero (impacto directo de dilución); retail traders y shorters reaccionan simultáneamente",
+    "despues": "Índices micro-cap y Nasdaq podrían sentir presión si volumen es significativo; posible efecto dominó en otras acciones de retail trading",
+    "escenarios": "Traders vigilarán: (1) soportes técnicos y volúmenes de venta; (2) si shorts cubren o si liquidación continúa; (3) si es capitulation o inicio de mayor corrección",
+    "riesgos": "Volatilidad extrema en micro-caps; stops podrían generar cascadas de venta. Retórica de reddit/retail podría cambiar dinámicas. Movimiento podría revertirse si hay noticias corporativas positivas"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33833",
    "fecha": "2026-08-02T08:57:35+00:00",
@@ -7284,406 +7653,6 @@
     }
    ],
    "actualizado": "2026-07-30T13:31:13+00:00"
-  },
-  {
-   "id": "33763",
-   "fecha": "2026-07-30T13:29:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33763",
-   "via": "DeItaone",
-   "original": "HASSETT: THINK WARSH’S JOB JUST GOT A BIT EASIER WITH TODAY’S INFLATION DATA",
-   "titulo": "Hassett: Datos de inflación de hoy facilitan labor de futuro presidente Fed",
-   "resumen": "Kevin Hassett sugirió que los datos de inflación del día (PCE de junio moderado, confirmado en noticia 33756) debilitaron caso para política restrictiva, facilitando margen de maniobra para Warsh si es designado presidente de la Reserva Federal.",
-   "analisis": {
-    "porque": "Confirmación indirecta de que administración ve datos como justificación para acomodación. Referencia a Warsh como futuro Fed chair es señal de intención. Impacta expectativas de mercado sobre futuro ciclo de tasas.",
-    "queOcurrio": "Hassett vinculó moderación inflacionaria de hoy con mayor facilidad para próximo presidente de Fed.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Rendimientos USA",
-    "Bonos",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Hassett",
-    "Warsh",
-    "inflación",
-    "política monetaria",
-    "PCE"
-   ],
-   "tgText": "📉 **Hassett: inflación de hoy facilita labor de futuro Fed chair** (Warsh). Confirmación de narrativa de acomodación. Bonos alcistas, dólar débil.",
-   "xText": "Hassett: Today's inflation data makes Warsh's Fed job easier. Implicit endorsement of easing path. Bond-friendly signal. #FED",
-   "discordText": "**Hassett vincula inflación a política Fed**\n• Datos PCE de hoy → margen para Warsh\n• Validación de acomodación futura\n• Bonos reforzados\n• Dólar presionado",
-   "pushText": "Hassett: inflación facilita labor futura de Fed, señal de acomodación",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bonos USA suben (yields bajan), dólar debilita inmediatamente",
-    "despues": "Equidad mantiene sesgo alcista; carry trades renacen si dólar sigue cayendo",
-    "escenarios": "Mercado refuerza apuesta de 2-3 cortes de tasas en 2026. Si Warsh es oficialmente nominado, rally de bonos largo plazo probable. Traders esperan menor restricción que bajo Powell.",
-    "riesgos": "Statements de admin sobre Fed son presión política; riesgo si Fed resiste. También riesgo de que inflación repunte inesperadamente (PCE core aún moderada pero geopolítica/oferta podrían cambiar)."
-   },
-   "macro": {
-    "rendimientos": "bajista",
-    "bonos": "alcista",
-    "dolar": "bajista",
-    "sp500": "alcista moderado"
-   },
-   "updates": []
-  },
-  {
-   "id": "33761",
-   "fecha": "2026-07-30T13:28:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33761",
-   "via": "DeItaone",
-   "original": "HASSETT: I AM VERY BULLISH ON FED POLICY GOING IN THE PROPER DIRECTION.",
-   "titulo": "Hassett: Política de la Fed va en la dirección correcta, con optimismo real",
-   "resumen": "Kevin Hassett, asesor económico de la administración, expresó optimismo sobre la trayectoria de la política monetaria de la Reserva Federal. Sus comentarios sugieren visión positiva del equipo oficial sobre reciente inflexión de la Fed hacia mayor acomodación.",
-   "analisis": {
-    "porque": "Statements de oficiales de la administración sobre Fed son factores de mercado directo. Hassett avalando política de Warsh (potencial futuro presidente de Fed) da confianza institucional a rally de renta fija y debilidad de dólar.",
-    "queOcurrio": "Hassett confirmó confianza en dirección de política monetaria de la Fed.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Rendimientos USA",
-    "DXY",
-    "Bonos",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Hassett",
-    "política monetaria",
-    "Fed",
-    "Warsh",
-    "acomodación"
-   ],
-   "tgText": "📊 **Hassett optimista con política Fed**: asesor económico oficial respaldó dirección de Reserva Federal. Favorece bonos y equidad en contexto de acomodación esperada.",
-   "xText": "Hassett: Fed policy goes in proper direction. Asesor oficial respalda acomodación monetaria. Positivo para equidad, presión bajista sobre rendimientos. #FED",
-   "discordText": "**Hassett valida política Fed**\n• Optimismo oficial sobre dirección\n• Respalda movimiento hacia acomodación\n• Favorable bonos (yields bajan)\n• Positivo para equidad",
-   "pushText": "Hassett: Fed en dirección correcta, optimismo oficial",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bonos USA reaccionan con baja de yields; dólar debilita",
-    "despues": "Equidad sigue con sesgo alcista por expectativas de tasas más bajas; spreads de credit se comprimen",
-    "escenarios": "Mercado confirma narrativa de \"Fed pivot\". Traders vigilan si Warsh será designado a Fed (Hassett lo respalda implícitamente). Confirmación de expectativas de corte de tasas en próximos meses.",
-    "riesgos": "Statements de administración pueden ser interpretados como presión política sobre Fed; riesgo de crítica si Fed no sigue expectativa. Validación limitada: es opinión, no anuncio oficial."
-   },
-   "macro": {
-    "rendimientos": "bajista",
-    "dolar": "bajista",
-    "sp500": "alcista moderado",
-    "bonos": "alcista (precios suben)"
-   },
-   "updates": []
-  },
-  {
-   "id": 33757,
-   "fecha": "2026-07-30T12:31:36+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33757",
-   "via": "DeItaone",
-   "original": "US GDP +1.5% RATE IN 2Q; CONSENSUS +1.8%",
-   "titulo": "PIB de EE.UU. en Q2 crece 1,5%; desaceleración vs. estimaciones debilita narrativa",
-   "resumen": "El PIB de EE.UU. en el segundo trimestre avanzó 1,5% tasa anualizada, por debajo de la estimación de 1,8%. La desaceleración respecto a Q1 sugiere que el crecimiento económico pierde momentum, debilitando argumentos contra recortes de tasas de la Fed y elevando preocupaciones sobre un posible escenario de estancamiento económico con inflación persistente.",
-   "analisis": {
-    "porque": "El crecimiento del PIB es indicador fundamental de salud económica y justificación para niveles de tasas. Un crecimiento por debajo de expectativas refuerza urgencia de flexibilización de política y reduce riesgos de sobrecalentamiento inflacionario.",
-    "queOcurrio": "Estimado avance anualizado del PIB para Q2 publicado en 1,5%, significativamente por debajo del consenso de 1,8%.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Oficina de Análisis Económico (BEA) de EE.UU. vía Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P 500",
-    "NASDAQ-100",
-    "Rendimientos USA",
-    "USD",
-    "Oro",
-    "Bonos Tesoro"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Datos Económicos|FED",
-   "keywords": [
-    "pib-usa",
-    "crecimiento-económico",
-    "q2",
-    "desaceleración",
-    "fed-policy"
-   ],
-   "tgText": "📊 PIB Q2 EE.UU.: 1,5% anualizado (vs. 1,8% est.). Crecimiento desacelera; preocupaciones sobre momentum económico acentúan caso para recortes de tasas Fed.",
-   "xText": "🇺🇸 PIB Q2 cae a 1,5% vs. 1,8% est. Desaceleración económica eleva urgencia de flexibilización de tasas de la Fed.",
-   "discordText": "**PIB EE.UU. Q2 - Sorpresa a la Baja**\n• Tasa anualizada: 1,5% (vs. 1,8% est.)\n• Impacto: Desaceleración del crecimiento\n→ Refuerza narrativa de recortes Fed próximos",
-   "pushText": "PIB Q2 en 1,5% vs. 1,8% est.; crecimiento desacelera",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Equities (S&P 500, NASDAQ) volatilidad mixta: cortoplacistas ven debilidad económica (bajista), pero largoplazistas ven menores tasas futuras (alcista). USD cae por expectativa de tasas más bajas.",
-    "despues": "Rendimientos USA caen (bonos suben); oro sube por USD débil y demanda de activos seguros. Volatilidad del VIX podría elevarse por incertidumbre sobre recesión.",
-    "escenarios": "Traders vigilan componentes de PIB (consumo, inversión) en reporte detallado. Si debilidad es estructural (menor consumo) vs. temporal, riesgos recesivos suben. Fed probablemente acelera cronograma de recortes. Mercado precisa si es \"softening\" manejable o inicio de contracción.",
-    "riesgos": "Datos preliminares pueden ser revisados. Volatilidad elevada esperada; rumores de recesión podrían exagerar movimientos. Si componentes de gasto sorprenden a la baja, preocupación por desempleo creciente escalará."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "nasdaq": "mixto",
-    "dow": "mixto",
-    "sp500": "mixto",
-    "bonos": "alcista",
-    "oro": "alcista",
-    "petroleo": "bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": 33756,
-   "fecha": "2026-07-30T12:30:58+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33756",
-   "via": "DeItaone",
-   "original": "*US JUNE PCE PRICE INDEX FALLS 0.1% M/M; EST. -0.1% *US JUNE PCE PRICE INDEX RISES 3.7% Y/Y; EST. +3.7% *US JUNE CORE PCE PRICE INDEX RISES 0.1% M/M; EST. +0.2% *US JUNE CORE PCE PRICE INDEX RISES 3.3% Y/Y; EST. +3.3%",
-   "titulo": "PCE de junio cae en línea; inflación de núcleo se modera según esperado",
-   "resumen": "El índice PCE de precios al consumidor de junio cayó 0,1% mensual (coincidiendo consenso), mientras la tasa interanual se mantuvo en 3,7%. El PCE de núcleo subió 0,1% mensual (vs. +0,2% estimado) y 3,3% interanual (en línea). Los datos sugieren inflación subyacente moderándose gradualmente, fortaleciendo caso para futuros recortes de tasas de la Fed.",
-   "analisis": {
-    "porque": "El PCE es el indicador de inflación preferido de la Fed para decisiones de política monetaria. Una lectura más templada de núcleo refuerza narrativa de inflación controlada y allana camino a reducciones de tasas sin riesgo de reaceleración inflacionaria.",
-    "queOcurrio": "Datos de PCE de junio publicados con sorpresa a la baja en componente mensual de núcleo; tasa interanual alineada a expectativas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Oficina de Análisis Económico (BEA) de EE.UU. vía Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Rendimientos USA 10Y",
-    "USD",
-    "S&P 500",
-    "NASDAQ-100",
-    "Oro",
-    "Bonos Tesoro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Inflación|Datos Económicos|FED",
-   "keywords": [
-    "pce-junio",
-    "inflación-usa",
-    "núcleo-inflacionario",
-    "fed-policy",
-    "tasas"
-   ],
-   "tgText": "📈 PCE junio: -0,1% MoM (est. -0,1%) | 3,7% YoY (est. 3,7%). Núcleo +0,1% MoM (vs. +0,2% est.). Inflación subyacente moderándose; caso para recortes de tasas se fortalece.",
-   "xText": "🇺🇸 PCE junio alineado; núcleo sorprende a la baja (+0,1% vs. +0,2% est.). Inflación moderándose: escenario favorable para próximos recortes de tasas Fed.",
-   "discordText": "**PCE Junio - Inflación Controlada**\n• PCE: -0,1% MoM / 3,7% YoY (en línea)\n• Núcleo: +0,1% MoM (vs. +0,2% est.) / 3,3% YoY\n→ Presiones subyacentes ceden; fortalece caso para reducción de tasas",
-   "pushText": "PCE de junio modera; inflación de núcleo sorprende a la baja",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Rendimientos USA 10Y caen: mercado reprecia menor costo de capital futuro con Fed más flexible; USD débil por tasas reales bajas.",
-    "despues": "Equities (S&P 500, NASDAQ, tech) suben por menor costo de financiamiento; oro sube por USD más débil y expectativa de tasas bajas.",
-    "escenarios": "Traders vigilan si Fed se compromete a recorte en septiembre vs. postergar. Reducción de tasas es casi priced in; sorpresas alcistas o recaída en inflación podrían extender esperas. Curva de rendimientos se aplana más.",
-    "riesgos": "Datos de junio ya antiguos; energía y alimentación pueden ser volátiles. Si componentes de servicios repuntan en julio/agosto, podría frenar optimismo de recortes."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "bonos": "alcista",
-    "oro": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": 33754,
-   "fecha": "2026-07-30T12:30:21+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33754",
-   "via": "DeItaone",
-   "original": "US JOBLESS CLAIMS ROSE TO 197,000 JUL 25 WEEK (CONSENSUS 200,000)",
-   "titulo": "Solicitudes de empleo en EE.UU. sorprenden al baja; mercado laboral sigue templado",
-   "resumen": "Las solicitudes de desempleo en EE.UU. para la semana del 25 de julio fueron 197.000, por debajo de las 200.000 estimadas. El dato sugiere un mercado laboral resiliente pero sin sobrecalentamiento, alineándose con narrativa de debilitamiento gradual que permite futuras reducciones de tasas de la Fed sin acelerar deflación.",
-   "analisis": {
-    "porque": "Las solicitudes de empleo son indicador adelantado clave del mercado laboral y presiones salariales. Una lectura por debajo de consenso reduce presión inflacionaria esperada y abre espacio para política monetaria más acomodaticia.",
-    "queOcurrio": "Datos semanales de jobless claims publicados en 197.000 vs. 200.000 consenso, mostrando solidez laboral moderada.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Departamento de Trabajo de EE.UU. vía Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "USD",
-    "S&P 500",
-    "NASDAQ-100",
-    "Bonos USA",
-    "Rendimientos USA 10Y",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "USD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empleo|Datos Económicos|FED",
-   "keywords": [
-    "jobless-claims",
-    "empleo-USA",
-    "mercado-laboral",
-    "fed-policy",
-    "inflación"
-   ],
-   "tgText": "💼 Jobless claims EE.UU.: 197K (vs. 200K est.). Mercado laboral resiliente sin sobrecalentamiento, reforzando caso para flexibilización de tasas de la Fed.",
-   "xText": "🇺🇸 Solicitudes de empleo en 197K (-3K vs. est.). Mercado laboral mantiene equilibrio: sólido pero sin presiones inflacionarias excesivas.",
-   "discordText": "**Jobless Claims EE.UU. - Sorpresa a la Baja**\n• Semana 25 julio: 197K (vs. 200K est.)\n• Lectura: Mercado laboral resiliente sin sobrecalentamiento\n→ Abre espacio para futuro recorte de tasas Fed",
-   "pushText": "Jobless claims en 197K sorprenden a la baja; mercado laboral resiliente",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "USD debilitado: datos débiles de empleo relativo vs. expectativas impulsan apuestas a recortes más próximos de la Fed; bonos sube (rendimientos caen).",
-    "despues": "Equities (S&P 500, NASDAQ) alcistas por menor costo de capital y expectativa de crecimiento sin inflación; oro sube por USD más débil y tasas reales bajas.",
-    "escenarios": "Traders vigilan si esta tendencia de solicitudes moderadas persiste o es ruido semanal. Fed requiere confirmación con nóminas (payroll) no agropecuarias en próximo reporte mensual. Riesgo: si desempleo sigue subiendo, refuerza caso de recortes urgentes.",
-    "riesgos": "Datos semanales muy volátiles; ajustes estacionales pueden distorsionar. No indica cambios en nóminas masivas ni desempleo general; requiere confirmación en reportes de NFP."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "bitcoin": "alcista",
-    "bonos": "alcista",
-    "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": 33753,
-   "fecha": "2026-07-30T12:14:17+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33753",
-   "via": "DeItaone",
-   "original": "CHINESE EVS GAIN GROUND IN ARGENTINA Chinese EV makers are rapidly expanding in Argentina as President Javier Milei's tariff-free import policy boosts sales despite closer ties with the US. BYD has become a top-10 car brand less than a year after entering the market, while Chinese imports hit a five-year high. Lower-cost Chinese EVs are helping reduce car prices and reshape Argentina's auto market",
-   "titulo": "Vehículos eléctricos chinos ganan terreno en Argentina bajo política de Milei",
-   "resumen": "Fabricantes de vehículos eléctricos chinos (BYD, otros) se expanden rápidamente en Argentina bajo la política de importaciones libre de aranceles del presidente Javier Milei. BYD alcanzó estatus de marca top-10 en menos de un año. Importaciones chinas de EV alcanzan máximo de cinco años. EVs más económicos reducen precios de autos y transforman mercado automotor argentino.",
-   "analisis": {
-    "porque": "Desplazamiento de fabricantes tradicionales (europeos, estadounidenses) por competidores chinos más baratos en Argentina señala tendencia de captura de mercados latinoamericanos por China. Impacta valuación de fabricantes tradicionales y dinámicas de comercio regional.",
-    "queOcurrio": "Reportes de penetración acelerada de marcas EV chinas (BYD destacada) en mercado argentino bajo régimen arancelario abierto, con importaciones chinas en máximos de 5 años.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Reportajes de mercado (CNBC, medios de trading) vía Bloomberg"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "BYD",
-    "Fabricantes automotores europeos",
-    "Tesla",
-    "Mercados emergentes Latam"
-   ],
-   "sesgos": [
-    {
-     "activo": "BYD",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Fabricantes tradicionales",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas|Geopolítica Comercial",
-   "keywords": [
-    "china-ev",
-    "argentina",
-    "milei",
-    "importaciones",
-    "competencia-automotriz"
-   ],
-   "tgText": "🇨🇳🚗 BYD y EV chinos lideran en Argentina bajo política arancelaria abierta de Milei. Importaciones chinas en máximo de 5 años; desplazan competidores tradicionales.",
-   "xText": "🇦🇷 Vehículos eléctricos chinos conquistan Argentina: BYD es top-10 en <1 año. Importaciones chinas aceleran bajo política libre de aranceles.",
-   "discordText": "**Expansión de EV Chinos en Latam**\n• BYD: Top-10 en Argentina en <1 año\n• Importaciones chinas: Máximo 5 años\n• Impacto: Reconfiguración de mercado automotor regional",
-   "pushText": "BYD lidera mercado de EV en Argentina; competidores tradicionales retroceden",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "BYD (Hong Kong 1211, Shanghai 002594) sube en bolsa por prueba de expansión regional; no impacto inmediato significativo en EE.UU. o Europa.",
-    "despues": "Fabricantes europeos (Volkswagen, Renault) y estadounidenses (Tesla) vigilados por exposición a Latam. Riesgo de márgenes comprimidos en región por competencia de precios.",
-    "escenarios": "Traders vigilan si expansión china en Latam se acelera en otros países tras éxito argentino bajo gobierno pro-mercado pero alineado con EE.UU. Riesgo de represalias comerciales de EE.UU. contra importaciones chinas a Latam.",
-    "riesgos": "Noticia regional de bajo impacto global inmediato. Riesgo: si Milei endurece postura arancelaria o EE.UU. presiona, dinámicas pueden revertirse rápidamente."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
