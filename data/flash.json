@@ -1,173 +1,77 @@
 {
  "lastId": 33846,
- "actualizado": "2026-08-03T02:13:04.241Z",
+ "actualizado": "2026-08-03T05:53:05.663Z",
  "items": [
   {
-   "id": "956001660",
-   "fecha": "2026-08-03T01:45:41.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html",
+   "id": "905764130",
+   "fecha": "2026-08-03T05:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/ukraine-russia-war-putin-zelenskyy-winter.html",
    "via": "CNBC",
-   "original": "Stock futures rally as investors gear up for jobs report, key earnings: Live updates",
-   "titulo": "Futuros en alza mientras mercado se prepara para reporte de empleo y earnings clave",
-   "resumen": "Índices futuros en Estados Unidos muestran ganancias mientras los inversores se preparan para el reporte de empleos y resultados de ganancias importantes. El movimiento refleja optimismo previo a datos macroeconómicos y anuncios corporativos. No se especifican qué empresas reportan ni detalles del reporte de empleo.",
+   "original": "&apos;Winter is coming&apos;: Ukraine fears its toughest test since Russia&apos;s full-scale invasion",
+   "titulo": "Ucrania advierte su invierno más duro desde invasión: nuevos riesgos geopolíticos",
+   "resumen": "Funcionarios ucranianos expresan que el próximo invierno será la prueba más desafiante desde el inicio de la invasión rusa a gran escala. El titular no especifica si se refiere a daños infraestructurales, logísticos o militares.",
    "analisis": {
-    "porque": "Reportes de empleo son data macroeconómica crítica para decisiones de política monetaria; earnings determinan flujos de capital hacia sectores específicos",
-    "queOcurrio": "Futuros USA en territorio positivo en anticipación a reporte laboral y earnings de empresas clave",
+    "porque": "Impacta precios de petróleo (potencial intensificación del conflicto), oro (demanda refugio), bonos USA (aversión al riesgo). Señala riesgo de escalada militar durante meses fríos cuando la guerra se intensifica históricamente.",
+    "queOcurrio": "Líderes de Ucrania advierten que enfrentarán su mayor desafío desde febrero 2022 durante el próximo invierno, implícitamente sugiriendo riesgo de escalada o colapso de líneas defensivas.",
     "estado": "confirmado",
     "fuenteOriginal": "CNBC"
    },
    "impacto": "medio",
    "breaking": false,
    "activos": [
-    "S&P 500",
-    "Nasdaq-100",
-    "Dow Jones",
+    "Petróleo",
+    "Oro",
     "Bonos USA",
-    "Rendimientos USA",
-    "Dólar USD"
+    "Energía europea",
+    "EURUSD",
+    "VIX"
    ],
    "sesgos": [
     {
-     "activo": "S&P 500",
+     "activo": "Oro",
      "sesgo": "alcista"
     },
     {
-     "activo": "Nasdaq-100",
+     "activo": "Bonos USA",
      "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "EURUSD",
+     "sesgo": "bajista"
     }
    ],
    "volatilidad": "media",
-   "categoria": "Datos Económicos",
+   "categoria": "Geopolítica",
    "keywords": [
-    "empleo",
-    "earnings",
-    "futuros",
-    "S&P 500",
-    "Nasdaq",
-    "macroeconomía"
+    "ucrania",
+    "rusia",
+    "invierno",
+    "riesgo-geopolítico",
+    "energía"
    ],
-   "tgText": "📈 Futuros USA en alza en anticipación a reporte de empleo y earnings clave. Optimismo previo a datos macroeconómicos críticos para mercados.",
-   "xText": "📊 Futuros USA avanzan. Mercado se prepara para reporte de empleo y earnings importantes. Sentimiento alcista previa a macro crítica.",
-   "discordText": "**Futuros USA en alza**\n• Anticipación a reporte de empleo\n• Earnings importantes en el horizonte\n• Sentimiento alcista pre-data",
-   "pushText": "Futuros USA en alza por reporte de empleo y earnings próximos",
-   "importancia": 5,
+   "tgText": "⚠️ Ucrania advierte su invierno más duro desde invasión. Potencial intensificación del conflicto eleva prima de riesgo en petróleo, oro y energía europea.",
+   "xText": "🔴 Ucrania alerta sobre invierno crítico: mayor desafío desde invasión. Mercados esperan escalada geopolítica; petróleo y oro se fortalecen por aversión al riesgo.",
+   "discordText": "**Crisis invernal en Ucrania**\n• Funcionarios alertan sobre invierno más duro\n• Riesgo de intensificación del conflicto\n• Impacto alcista en petróleo, oro y bonos refugio",
+   "pushText": "Ucrania alerta sobre invierno crítico: riesgo de escalada geopolítica",
+   "importancia": 6,
    "reaccion": {
-    "primero": "S&P 500, Nasdaq-100, Dow: dirección según tono de datos de empleo",
-    "despues": "Bonos, rendimientos, dólar según implicaciones para política Fed",
-    "escenarios": "Traders monitorean NFP (no-farm payroll), tasa de desempleo y salarios por hora; reacciones varían si datos superan/fallan expectativas; earnings pueden ratificar o desafiar sentimiento",
-    "riesgos": "Riesgo de sorpresas en empleo que reviertan ganancias futuros; earnings débiles podrían revertir rally de anticipación"
+    "primero": "Oro sube como activo refugio ante mayor incertidumbre geopolítica. Petróleo puede subir si existe riesgo de disrupción de suministros de energía en Europa.",
+    "despues": "Bonos USA se fortalecen (rendimientos bajan) por flight-to-safety. Euro puede debilitarse si preocupación energética europea crece. VIX puede subir reflejando mayor volatilidad esperada.",
+    "escenarios": "Traders vigilan informes de inteligencia sobre posibles operaciones rusas invernales. Monitorean daños a infraestructura energética crítica. Vigilancia de sanciones europeas adicionales y medidas de apoyo a Ucrania.",
+    "riesgos": "Riesgo de sobre-reacción emocional sin datos de escalada real. Posible que el titular sea interpretación editorial sin anuncio oficial de cambio estratégico. Mercados pueden descontar riesgo de forma excesiva."
    },
    "macro": {
-    "sp500": "Alcista (futuros en alza)",
-    "nasdaq": "Alcista (futuros en alza)",
-    "dolar": "Potencialmente bajista si empleo débil reduce tasas",
-    "bonos": "Potencialmente alcistas si empleo es decepcionante"
+    "oro": "alcista (demanda refugio)",
+    "petroleo": "alcista moderado (riesgo geopolítico)",
+    "bonos": "alcista (flight-to-safety)",
+    "eurusd": "bajista (preocupación energética europea)",
+    "dolar": "alcista (fortalecimiento relativo por seguridad)"
    },
    "updates": []
-  },
-  {
-   "id": "33827",
-   "fecha": "2026-08-01T07:48:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33827",
-   "via": "DeItaone",
-   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
-   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
-   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
-   "analisis": {
-    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
-    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times (vía Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "USDJPY",
-    "DXY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Carry Trades",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "intervención-divisas",
-    "yen-japón",
-    "usdjpy",
-    "tesoro-usa",
-    "banco-central-japón",
-    "carry-trades"
-   ],
-   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
-   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
-   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
-   "pushText": "USA y Japón intervienen en divisas para sostener yen",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
-    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
-    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
-    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
-   },
-   "macro": {
-    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
-    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
-    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
-    "dow": "neutral a alcista por debilitamiento de dólar",
-    "sp500": "neutral a alcista por debilitamiento de dólar",
-    "bitcoin": "alcista potencial por debilitamiento de dólar",
-    "ethereum": "alcista potencial por debilitamiento de dólar",
-    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
-    "petroleo": "neutral a alcista por debilitamiento de dólar"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-03T00:59:33.000Z",
-     "id": "918380960",
-     "texto": "Autoridades de EE.UU. y Japón confirmaron intervención conjunta en mercados de divisas para sostener el yen. Ambas naciones señalaron estar preparadas para intervenir nuevamente si las condiciones lo justifican. Esta acción busca estabilizar la moneda japonesa y contrarrestar volatilidad cambiaria.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
-    },
-    {
-     "fecha": "2026-08-02T21:43:11+00:00",
-     "id": "33842",
-     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
-     "tgUrl": "https://t.me/walterbloomberg/33842"
-    },
-    {
-     "fecha": "2026-08-02T14:18:01.000Z",
-     "id": "964297321",
-     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
-     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
-    },
-    {
-     "fecha": "2026-08-02T01:41:08+00:00",
-     "id": "33831",
-     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
-     "tgUrl": "https://t.me/walterbloomberg/33831"
-    },
-    {
-     "fecha": "2026-08-01T15:44:08.000Z",
-     "id": "969625772",
-     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
-     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
-    }
-   ],
-   "actualizado": "2026-08-03T00:59:33.000Z"
   },
   {
    "id": "33833",
@@ -250,6 +154,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-08-03T04:44:30.000Z",
+     "id": "991847143",
+     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
+    },
+    {
      "fecha": "2026-08-02T23:33:07.000Z",
      "id": "990424278",
      "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
@@ -286,7 +196,180 @@
      "tgUrl": "https://t.me/walterbloomberg/33834"
     }
    ],
-   "actualizado": "2026-08-02T23:33:07.000Z"
+   "actualizado": "2026-08-03T04:44:30.000Z"
+  },
+  {
+   "id": "33827",
+   "fecha": "2026-08-01T07:48:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33827",
+   "via": "DeItaone",
+   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
+   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
+   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "analisis": {
+    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
+    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Carry Trades",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "intervención-divisas",
+    "yen-japón",
+    "usdjpy",
+    "tesoro-usa",
+    "banco-central-japón",
+    "carry-trades"
+   ],
+   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
+   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
+   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
+   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
+    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
+    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
+    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+   },
+   "macro": {
+    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
+    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
+    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
+    "dow": "neutral a alcista por debilitamiento de dólar",
+    "sp500": "neutral a alcista por debilitamiento de dólar",
+    "bitcoin": "alcista potencial por debilitamiento de dólar",
+    "ethereum": "alcista potencial por debilitamiento de dólar",
+    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
+    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-03T04:36:53.000Z",
+     "id": "913006923",
+     "texto": "Estados Unidos intervino en el mercado de divisas para sostener el yen japonés tras una depreciación significativa. La acción conjunta con Japón marca la primera intervención coordinada en años. El titular no especifica si fue una operación puntual o sostenida.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html"
+    },
+    {
+     "fecha": "2026-08-03T00:59:33.000Z",
+     "id": "918380960",
+     "texto": "Autoridades de EE.UU. y Japón confirmaron intervención conjunta en mercados de divisas para sostener el yen. Ambas naciones señalaron estar preparadas para intervenir nuevamente si las condiciones lo justifican. Esta acción busca estabilizar la moneda japonesa y contrarrestar volatilidad cambiaria.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
+    },
+    {
+     "fecha": "2026-08-02T21:43:11+00:00",
+     "id": "33842",
+     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
+     "tgUrl": "https://t.me/walterbloomberg/33842"
+    },
+    {
+     "fecha": "2026-08-02T14:18:01.000Z",
+     "id": "964297321",
+     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
+     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
+    },
+    {
+     "fecha": "2026-08-02T01:41:08+00:00",
+     "id": "33831",
+     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
+     "tgUrl": "https://t.me/walterbloomberg/33831"
+    },
+    {
+     "fecha": "2026-08-01T15:44:08.000Z",
+     "id": "969625772",
+     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
+     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
+    }
+   ],
+   "actualizado": "2026-08-03T04:36:53.000Z"
+  },
+  {
+   "id": "956001660",
+   "fecha": "2026-08-03T01:45:41.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html",
+   "via": "CNBC",
+   "original": "Stock futures rally as investors gear up for jobs report, key earnings: Live updates",
+   "titulo": "Futuros en alza mientras mercado se prepara para reporte de empleo y earnings clave",
+   "resumen": "Índices futuros en Estados Unidos muestran ganancias mientras los inversores se preparan para el reporte de empleos y resultados de ganancias importantes. El movimiento refleja optimismo previo a datos macroeconómicos y anuncios corporativos. No se especifican qué empresas reportan ni detalles del reporte de empleo.",
+   "analisis": {
+    "porque": "Reportes de empleo son data macroeconómica crítica para decisiones de política monetaria; earnings determinan flujos de capital hacia sectores específicos",
+    "queOcurrio": "Futuros USA en territorio positivo en anticipación a reporte laboral y earnings de empresas clave",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "Nasdaq-100",
+    "Dow Jones",
+    "Bonos USA",
+    "Rendimientos USA",
+    "Dólar USD"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nasdaq-100",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "empleo",
+    "earnings",
+    "futuros",
+    "S&P 500",
+    "Nasdaq",
+    "macroeconomía"
+   ],
+   "tgText": "📈 Futuros USA en alza en anticipación a reporte de empleo y earnings clave. Optimismo previo a datos macroeconómicos críticos para mercados.",
+   "xText": "📊 Futuros USA avanzan. Mercado se prepara para reporte de empleo y earnings importantes. Sentimiento alcista previa a macro crítica.",
+   "discordText": "**Futuros USA en alza**\n• Anticipación a reporte de empleo\n• Earnings importantes en el horizonte\n• Sentimiento alcista pre-data",
+   "pushText": "Futuros USA en alza por reporte de empleo y earnings próximos",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "S&P 500, Nasdaq-100, Dow: dirección según tono de datos de empleo",
+    "despues": "Bonos, rendimientos, dólar según implicaciones para política Fed",
+    "escenarios": "Traders monitorean NFP (no-farm payroll), tasa de desempleo y salarios por hora; reacciones varían si datos superan/fallan expectativas; earnings pueden ratificar o desafiar sentimiento",
+    "riesgos": "Riesgo de sorpresas en empleo que reviertan ganancias futuros; earnings débiles podrían revertir rally de anticipación"
+   },
+   "macro": {
+    "sp500": "Alcista (futuros en alza)",
+    "nasdaq": "Alcista (futuros en alza)",
+    "dolar": "Potencialmente bajista si empleo débil reduce tasas",
+    "bonos": "Potencialmente alcistas si empleo es decepcionante"
+   },
+   "updates": []
   },
   {
    "id": "952175997",
@@ -7626,75 +7709,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 970280468,
-   "fecha": "2026-07-29T20:57:08.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
-   "via": "CNBC",
-   "original": "Microsoft beats Q4 cloud expectations as full-year Azure revenue tops $100 billion",
-   "titulo": "Microsoft supera expectativas en nube: ingresos anuales de Azure alcanzan USD 100.000M",
-   "resumen": "Microsoft reportó resultados del Q4 por encima de las previsiones de Wall Street, con ingresos anuales de Azure superando los USD 100.000 millones. El desempeño de la división de computación en la nube refuerza la posición dominante de la compañía en infraestructura de IA y servicios empresariales, marcando un hito significativo en su cartera de negocios.",
-   "analisis": {
-    "porque": "Afecta valoración de mega-cap tecnológica y confianza en ciclo de inversión en IA; mueve índices Nasdaq y carteras de crecimiento",
-    "queOcurrio": "Microsoft anunció que sus ingresos anuales de Azure superaron USD 100.000 millones en el Q4, superando expectativas previas",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "MSFT",
-    "S&P500",
-    "Indices Tecnológicos"
-   ],
-   "sesgos": [
-    {
-     "activo": "MSFT",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Microsoft",
-    "Azure",
-    "Cloud",
-    "Q4",
-    "Resultados",
-    "IA",
-    "Ingresos"
-   ],
-   "tgText": "📊 Microsoft supera expectativas: Azure registra USD 100.000M en ingresos anuales. Dominio en infraestructura de IA confirmado. MSFT en alza.",
-   "xText": "MSFT: Azure alcanza USD 100B en ingresos anuales, superando previsiones. Mega-cap tecnológica refuerza liderazgo en IA. #NASDAQ",
-   "discordText": "**Microsoft Q4: Azure rompe récord**\n• Ingresos anuales: USD 100.000M\n• Supera expectativas Wall Street\n• Domina mercado cloud + IA\n→ Positivo para MSFT y NASDAQ",
-   "pushText": "Microsoft supera expectativas con Azure en USD 100B anuales",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "MSFT y Nasdaq 100: mega-cap beneficiada directa por revaluación de crecimiento de IA",
-    "despues": "S&P 500, otros proveedores cloud (AMZN, GOOGL), bonos corporativos de tech",
-    "escenarios": "Traders vigilarán si meta de rentabilidad de IA de Microsoft se mantiene en guidance futuro; comparar con competidores cloud para rotación sectorial",
-    "riesgos": "Posible reacción limitada si mercado ya había precalculado este resultado; competencia en cloud (AWS, Google Cloud) podría eclipsar el hito"
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "sp500": "alcista",
-    "dow": "neutral"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-30T00:55:21.000Z",
-     "id": 963990905,
-     "texto": "Microsoft vuelve a entregar resultados sólidos en su earnings call, impulsando optimismo en el sector tecnológico. Simultáneamente, Meta enfrenta escepticismo de analistas sobre su retorno de inversión en IA, con cuestionamientos sobre si el mercado debe \"ser más paciente\" con sus gastos.",
-     "tgUrl": "https://www.cnbc.com/2026/07/29/microsoft-aces-earnings-call-while-meta-frustration-grows-do-we-just-need-to-be-a-bit-more-patient.html"
-    }
-   ],
-   "actualizado": "2026-07-30T00:55:21.000Z"
   }
  ],
  "rssVistos": [
@@ -7930,6 +7944,9 @@
   "https://www.cnbc.com/2026/08/02/two-die-as-firefighting-helicopters-collide-in-greece.html",
   "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html",
   "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html",
-  "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html"
+  "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html",
+  "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html",
+  "https://www.cnbc.com/2026/08/03/ukraine-russia-war-putin-zelenskyy-winter.html"
  ]
 }
