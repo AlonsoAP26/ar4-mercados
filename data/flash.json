@@ -1,7 +1,411 @@
 {
- "lastId": 33854,
- "actualizado": "2026-08-03T09:33:26.616Z",
+ "lastId": 33860,
+ "actualizado": "2026-08-03T10:40:07.039Z",
  "items": [
+  {
+   "id": "33860",
+   "fecha": "2026-08-03T10:36:32+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33860",
+   "via": "DeItaone",
+   "original": "📅 THIS WEEK'S U.S. ECONOMIC CALENDAR (ET) 🟢 Monday • 9:45 AM – S&P Global Manufacturing PMI • 10:00 AM – ISM Manufacturing PMI (Est. 54.0), Construction Spending (Est. +0.3% m/m) • 4:00 PM – Auto Sales 🔵 Tuesday • 8:30 AM – Trade Balance (Est. -$73.0B) • 10:00 AM – JOLTS Job Openings (Est. 7.5M), Factory Orders (Est. +0.3% m/m) • 4:30 PM – API Crude Inventories 🟠 Wednesday • 8:15 AM – ADP Empl",
+   "titulo": "Semana clave para datos económicos: PMI, empleo y trade antes de reporte no-farm payroll del viernes",
+   "resumen": "Calendario económico denso (lunes-viernes): lunes PMI manufacturero y gasto en construcción; martes Trade Balance y JOLTS; miércoles ADP y PMI servicios; jueves jobless claims y productividad; viernes reporte de empleo (NFP +85K esperado, desempleo 4,3%). Datos críticos para Fed y expectativas de tasas.",
+   "analisis": {
+    "porque": "Semana de datos macros intensos define expectativas de política Fed. NFP del viernes es evento más importante; si decepciona, bonos y equities pueden reaccionar fuerte. PMI y employment data alimentan narrativa de ciclo económico.",
+    "queOcurrio": "Calendario oficial de eventos macroeconómicos clave concentrados en una semana, todos observables por mercado; establece marco para revisión de proyecciones de tasas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Bonos USA",
+    "DXY",
+    "NASDAQ",
+    "S&P500",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "empleo",
+    "PMI",
+    "NFP",
+    "Fed",
+    "inflación",
+    "datos económicos"
+   ],
+   "tgText": "📅 SEMANA CRÍTICA: lunes PMI+construcción | martes trade+JOLTS | miércoles ADP+servicios PMI | jueves claims+productividad | viernes NFP (+85K est., desempleo 4,3%). Marco para tasas Fed.",
+   "xText": "🔴 Semana de datos macro densa: PMI/construcción→trade/JOLTS→ADP→claims→NFP viernes. NFP es evento más importante: si falla +85K o desempleo sube, bonos y acciones reaccionan. Alta volatilidad esperada.",
+   "discordText": "**CALENDARIO ECONÓMICO SEMANAL**\n📊 **LUNES**: PMI fabril, gasto construcción\n📈 **MARTES**: Trade, JOLTS\n💼 **MIÉRCOLES**: ADP, PMI servicios\n📋 **JUEVES**: Claims, productividad\n🚨 **VIERNES**: **NFP +85K, desempleo 4,3%**",
+   "pushText": "Semana crítica de datos: NFP viernes es evento clave. Espera volatilidad.",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Reacciones diarias en bonos según cada dato; si PMI baja, 10Y cae; si PMI sube, 10Y sube. NFP viernes es evento dominante que puede revertir movimientos de semana.",
+    "despues": "Después de viernes, Fed revisa proyecciones; si empleo débil, expectativas de cortes suben y equities ganan. Si empleo fuerte, Fed mantiene restricción y bonos sufren.",
+    "escenarios": "Traders monitorean: (1) divergencia data débil vs. fuerte (cuadra la narrativa de desaceleración o de resistencia?); (2) consistencia con decisiones FOMC recientes; (3) si hay giros sorpresivos en estimaciones previo a viernes (revisiones de data antigua pueden mover mercado). NFP es showstopper: -50K vs. +85K esperado = pánico de recesión.",
+    "riesgos": "Estimaciones previas pueden ser revisadas (AP, ADP suelen no concordar con NFP). Sorpresa alcista o bajista en uno de los datos puede invertir dirección de mercado antes de viernes. Volatilidad de VIX podría subir si data no es clara."
+   },
+   "macro": {
+    "dolar": "neutral",
+    "bonos": "neutral",
+    "nasdaq": "neutral",
+    "sp500": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "33833",
+   "fecha": "2026-08-02T08:57:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33833",
+   "via": "DeItaone",
+   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
+   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
+   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
+   "analisis": {
+    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
+    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "DXY",
+    "EURUSD",
+    "Oro",
+    "VIX",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "nuclear",
+    "Ormuz",
+    "negociaciones",
+    "pausa militar",
+    "Oriente Medio"
+   ],
+   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
+   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
+   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
+   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
+    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
+    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
+    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
+   },
+   "macro": {
+    "dolar": "alcista corto plazo (alivio geopolítico)",
+    "oro": "bajista corto plazo",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "petroleo": "bajista",
+    "bonos": "neutral a alcista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-03T10:28:26+00:00",
+     "id": "33859",
+     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
+     "tgUrl": "https://t.me/walterbloomberg/33859"
+    },
+    {
+     "fecha": "2026-08-03T10:03:27+00:00",
+     "id": "33856",
+     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
+     "tgUrl": "https://t.me/walterbloomberg/33856"
+    },
+    {
+     "fecha": "2026-08-03T04:44:30.000Z",
+     "id": "991847143",
+     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
+    },
+    {
+     "fecha": "2026-08-02T23:33:07.000Z",
+     "id": "990424278",
+     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
+    },
+    {
+     "fecha": "2026-08-02T21:45:46+00:00",
+     "id": "33844",
+     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
+     "tgUrl": "https://t.me/walterbloomberg/33844"
+    },
+    {
+     "fecha": "2026-08-02T21:44:13+00:00",
+     "id": "33843",
+     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
+     "tgUrl": "https://t.me/walterbloomberg/33843"
+    },
+    {
+     "fecha": "2026-08-02T16:40:18+00:00",
+     "id": "33836",
+     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
+     "tgUrl": "https://t.me/walterbloomberg/33836"
+    },
+    {
+     "fecha": "2026-08-02T16:35:19+00:00",
+     "id": "33835",
+     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
+     "tgUrl": "https://t.me/walterbloomberg/33835"
+    },
+    {
+     "fecha": "2026-08-02T11:52:45+00:00",
+     "id": "33834",
+     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
+     "tgUrl": "https://t.me/walterbloomberg/33834"
+    }
+   ],
+   "actualizado": "2026-08-03T10:28:26+00:00"
+  },
+  {
+   "id": "33858",
+   "fecha": "2026-08-03T10:14:38+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33858",
+   "via": "DeItaone",
+   "original": "GOLDMAN REFRESHES U.S. CONVICTION LIST Goldman Sachs added Applied Materials ( $AMAT), Delta ( $DAL), Microsoft ( $MSFT), O'Reilly Automotive ( $ORLY), Viking Holdings ( $VIK) and UPS to its U.S. Conviction List. The firm removed Broadcom ( $AVGO), Dick's Sporting Goods ( $DKS), Johnson & Johnson ( $JNJ) and ServiceNow ( $NOW).",
+   "titulo": "Goldman Sachs rediseña su Conviction List: AMAT, DAL, MSFT, ORLY, VIK y UPS suben; AVGO, DKS, JNJ y NOW salen",
+   "resumen": "Goldman Sachs actualizó su lista de convicciones estratégicas agregando Applied Materials, Delta, Microsoft, O'Reilly Automotive, Viking Holdings y United Parcel Service. Removió Broadcom, Dick's Sporting Goods, Johnson & Johnson y ServiceNow. Cambio refleja reposicionamiento hacia semiconductores, transporte y tecnología; salida de retail y software en dificultades.",
+   "analisis": {
+    "porque": "Cambios en 'Conviction List' de Goldman (top picks de largo plazo) señalan cambios en preferencia institucional. Entrada de AMAT refuerza narrativa de demanda de chips por IA; salida de NOW sugiere debilidad en SaaS; entrada de DAL refleja recuperación de viajes.",
+    "queOcurrio": "Banco de inversión líder reasigna recomendaciones estratégicas, priorizando semiconductores (AMAT), transporte (DAL, UPS), retail automotriz (ORLY) y tech grande (MSFT). Abandona software empresarial debilitado (NOW, AVGO) y retail deportivo (DKS).",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "AMAT",
+    "DAL",
+    "MSFT",
+    "ORLY",
+    "VIK",
+    "UPS",
+    "AVGO",
+    "DKS",
+    "JNJ",
+    "NOW",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMAT",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "MSFT",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DAL",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "UPS",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "AVGO",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NOW",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JNJ",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Goldman Sachs",
+    "Conviction List",
+    "recomendaciones",
+    "semiconductores",
+    "transporte"
+   ],
+   "tgText": "📋 Goldman rediseña Conviction List: AMAT, MSFT, DAL, UPS entran; AVGO, NOW, JNJ salen. Giro hacia semis y transporte; abandona SaaS y retail débil. Señal institucional de rotación de favores.",
+   "xText": "Goldman's updated Conviction List: IN→AMAT/MSFT/DAL/UPS; OUT→AVGO/NOW/JNJ/DKS. Rotación a semis (IA), transporte, tech grande. Abandona software empresarial y retail. Lectura: normalizacion postboom SaaS.",
+   "discordText": "**GOLDMAN - CONVICTION LIST UPDATE**\n➕ ENTRAN: AMAT | DAL | MSFT | ORLY | VIK | UPS\n➖ SALEN: AVGO | DKS | JNJ | NOW\n🎯 Tema: semis (IA), transporte, tech. Pausa en SaaS.",
+   "pushText": "Goldman agrega AMAT, MSFT, DAL a Conviction List; quita AVGO, NOW.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "AMAT, MSFT, DAL podrían ganar liquidez corta plazo por confirmación de respaldo institucional; AVGO y NOW caerían si otros fondos copian rotación",
+    "despues": "Rotación más amplia hacia semis y transporte si el movimiento de Goldman señala cambio de consenso; defensivas (JNJ) podrían perder atracción",
+    "escenarios": "Traders buscarán evidencia de que otros bancos copiaran cambio (copycatting es frecuente en Wall Street). Clave: volumen en AMAT y ahora vs. promedios.",
+    "riesgos": "Salida de NOW es contraria a narrativa de SaaS recovery que algunos fondos mantienen; podría indicar divergencia de análisis. MSFT ya estaba en favor; upgrade es confirmación, no sorpresa."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33857",
+   "fecha": "2026-08-03T10:04:34+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33857",
+   "via": "DeItaone",
+   "original": "$GME - GAMESTOP SHARES DOWN 3.1% PREMARKET AFTER CO ANNOUNCES PRIVATE EXCHANGE OF $1.4 BLN OF CONVERTIBLE NOTES FOR EQUITY",
+   "titulo": "GameStop cae 3,1% en premarket tras canje de $1.400M de convertibles por acciones",
+   "resumen": "GameStop anunció intercambio privado de $1.400 millones en notas convertibles por acciones, operación que se refleja en caída premarket de 3,1%. El canje aumentará base accionaria pero evita pago en efectivo. Confirmado el movimiento estratégico de capital sin precisar términos específicos del canje.",
+   "analisis": {
+    "porque": "Dilución accionaria esperada reduce EPS e incrementa volatilidad de corto plazo. Aunque evita salida de caja, el mercado suele castigar primero la dilución antes de reconocer beneficio de desapalancamiento.",
+    "queOcurrio": "GME ejecutó canje de convertibles (deuda) por equity sin especificar ratio ni valuación de conversión. Premarket muestra venta inicial típica en diluciones anunciadas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "GME",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "GME",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "GameStop",
+    "convertibles",
+    "dilución",
+    "canje",
+    "deuda"
+   ],
+   "tgText": "📉 GME cae 3,1% premarket tras anuncio de canje de $1.400M en convertibles por acciones. Dilución esperada; mercado castiga primero, revalúa beneficio de desapalancamiento después.",
+   "xText": "GME -3,1% premarket: canje $1,4B convertibles→acciones reduce EPS por dilución pero mejora balance. Reacción típica: venta corta plazo antes de reconocer desapalancamiento.",
+   "discordText": "**GAMESTOP - CANJE DE DEUDA**\n📊 Operación: $1.400M convertibles → acciones\n📉 Premarket: -3,1%\n✅ Beneficio: sin salida de caja\n⚠️ Dilución: EPS bajo presión",
+   "pushText": "GME cae 3,1%: canje de $1.400M en convertibles por acciones genera dilución.",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "GME caerá en apertura si venta de premarket se sostiene; volumen será crítico para determinar si hay pánico o rebalanceo ordenado",
+    "despues": "Evaluadores de largo plazo podrían ver oportunidad si ven el canje como fortalecimiento de balance; corto plazo seguirá siendo bajista",
+    "escenarios": "Traders vigilarán ratio de conversión cuando sea divulgado (podría estar en comunicado o cartas a accionistas). Si es muy dilutivo, caída se amplifica.",
+    "riesgos": "Titular no especifica términos exactos del canje; ratio de conversión es dato crítico faltante. GME sigue siendo volátil por presencia de retail; pánico podría amplificar caída."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33855",
+   "fecha": "2026-08-03T09:57:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33855",
+   "via": "DeItaone",
+   "original": "MARKET MOVERS 🟢 UPGRADES $IR: Stifel upgraded to Buy; PT raised to $101 from $84 $PSN: Jefferies upgraded to Buy; PT cut to $52 from $60 $CRCL: TD Cowen initiated with Buy; PT $82 $RBLX: JP Morgan assumed coverage with Neutral; PT $40 🔴 DOWNGRADES $LAUR: JP Morgan downgraded to Neutral",
+   "titulo": "Wall Street reasigna calificaciones: upgrades en IR, PSN, CRCL; downgrade en LAUR",
+   "resumen": "Stifel elevó IR a Compra con precio objetivo de $101 (desde $84). Jefferies mejoró PSN a Compra pero recortó PT a $52 (desde $60). TD Cowen inició cobertura de CRCL con Compra en $82. JP Morgan asumió cobertura de RBLX con Neutral en $40. JP Morgan downgradeó LAUR a Neutral. Cambios reflejan reposicionamiento selectivo en valuaciones post-earnings.",
+   "analisis": {
+    "porque": "Cambios en recomendaciones de bancos de inversión líderes afectan liquidez y dirección de precio en acciones específicas. IR gana 20% en PT; PSN cede a pesar de upgrade por revisión de objetivo.",
+    "queOcurrio": "Cuatro upgrades y un downgrade simultáneos de casas de bolsa institucionales en cinco nombres diferentes, con volatilidad en objetivos de precio que sugiere desacuerdos entre analistas sobre valuación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "IR",
+    "PSN",
+    "CRCL",
+    "RBLX",
+    "LAUR",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "IR",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "PSN",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "CRCL",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "RBLX",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "LAUR",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "upgrades",
+    "downgrades",
+    "análisis",
+    "precio objetivo",
+    "acciones"
+   ],
+   "tgText": "📊 Wall Street: IR sube a Compra (+$17 PT), PSN mejora pero recorta objetivo, CRCL y RBLX reciben cobertura. LAUR baja a Neutral. Movimientos selectivos en valuaciones.",
+   "xText": "🔄 Reacomodo en análisis: IR sube a Compra ($101), PSN mejora pero baja objetivo ($52), CRCL inicia en $82, RBLX neutral $40, LAUR cae a Neutral. Volatilidad de corto plazo esperada.",
+   "discordText": "**CAMBIOS DE CALIFICACIONES**\n• **IR**: Stifel → Compra | PT $84→$101 (+20%)\n• **PSN**: Jefferies → Compra | PT $60→$52 (-13%)\n• **CRCL**: TD Cowen → Compra | PT $82\n• **RBLX**: JP Morgan → Neutral | PT $40\n• **LAUR**: JP Morgan → Neutral",
+   "pushText": "IR sube 20% en PT; PSN, CRCL reciben upgrades. LAUR baja.",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "IR probablemente suba en apertura por upgrade con elevación importante de PT; PSN fluctuará por resultado mixto (upgrade pero PT más bajo)",
+    "despues": "CRCL y RBLX seguirán la dirección del mercado; LAUR podría caer si hay venta cascada",
+    "escenarios": "Traders vigilarán volumen en IR para confirmar conviction; en PSN buscarán si upgrade es defensivo (el PT bajo sugiere riesgos). En RBLX, neutral con PT bajo es señal de espera.",
+    "riesgos": "Cambios en PT pueden no reflejar movimientos de precio si el mercado ya anticipó. Downgrade en LAUR es solitario; revisar si hay problemas fundamentales no divulgados."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33854",
    "fecha": "2026-08-03T09:27:26+00:00",
@@ -474,131 +878,6 @@
     "dolar": "alcista (fortalecimiento relativo por seguridad)"
    },
    "updates": []
-  },
-  {
-   "id": "33833",
-   "fecha": "2026-08-02T08:57:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33833",
-   "via": "DeItaone",
-   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
-   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
-   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
-   "analisis": {
-    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
-    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "DXY",
-    "EURUSD",
-    "Oro",
-    "VIX",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "nuclear",
-    "Ormuz",
-    "negociaciones",
-    "pausa militar",
-    "Oriente Medio"
-   ],
-   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
-   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
-   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
-   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
-    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
-    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
-    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
-   },
-   "macro": {
-    "dolar": "alcista corto plazo (alivio geopolítico)",
-    "oro": "bajista corto plazo",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "petroleo": "bajista",
-    "bonos": "neutral a alcista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-03T04:44:30.000Z",
-     "id": "991847143",
-     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
-    },
-    {
-     "fecha": "2026-08-02T23:33:07.000Z",
-     "id": "990424278",
-     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
-    },
-    {
-     "fecha": "2026-08-02T21:45:46+00:00",
-     "id": "33844",
-     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
-     "tgUrl": "https://t.me/walterbloomberg/33844"
-    },
-    {
-     "fecha": "2026-08-02T21:44:13+00:00",
-     "id": "33843",
-     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
-     "tgUrl": "https://t.me/walterbloomberg/33843"
-    },
-    {
-     "fecha": "2026-08-02T16:40:18+00:00",
-     "id": "33836",
-     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
-     "tgUrl": "https://t.me/walterbloomberg/33836"
-    },
-    {
-     "fecha": "2026-08-02T16:35:19+00:00",
-     "id": "33835",
-     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
-     "tgUrl": "https://t.me/walterbloomberg/33835"
-    },
-    {
-     "fecha": "2026-08-02T11:52:45+00:00",
-     "id": "33834",
-     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
-     "tgUrl": "https://t.me/walterbloomberg/33834"
-    }
-   ],
-   "actualizado": "2026-08-03T04:44:30.000Z"
   },
   {
    "id": "956001660",
@@ -7451,268 +7730,6 @@
     "pln": "bajista",
     "oro": "alcista",
     "bonos": "alcista (yields bajan)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33725",
-   "fecha": "2026-07-30T08:28:40+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33725",
-   "via": "DeItaone",
-   "original": "MARKET MOVERS 🟢 UPGRADES $LMND: KBW upgraded to Market Perform $SFM: JP Morgan upgraded to Overweight; PT raised to $103 from $80 🔴 DOWNGRADES $CAPR: Piper Sandler downgraded to Neutral; PT cut to $2 from $58 $OPCH: Deutsche Bank downgraded to Hold; PT cut to $24 from $26 $PFSI: Piper Sandler downgraded to Neutral; PT cut to $86 from $106 $TENB: Piper Sandler downgraded to Neutral; PT cut to $30",
-   "titulo": "Upgrades y downgrades de analistas: Meta se retira de favoritos de Evercore",
-   "resumen": "Evercore ISI removió Meta de su lista TAP Outperform pero mantuvo rating Outperform, cortando precio objetivo de $930 a $820. Citó preocupaciones sobre gasto en IA, visibilidad limitada en capex futuro y falta de monetización clara de IA. Simultáneamente, KBW mejoró Lemonade, JP Morgan elevó SalesForce a Overweight ($80→$103), mientras Piper Sandler degradó Capivent ($58→$2), PFSI ($106→$86) y Tenby ($35→$30).",
-   "analisis": {
-    "porque": "Las revisiones de precio objetivo y cambios de ratings de bancos de inversión líderes impactan directamente la valuación de grandes caps de tecnología que pesan en índices amplios. Meta representa ~7% del Nasdaq; ajuste bajista del 12% en PT afecta carteras institucionales.",
-    "queOcurrio": "Analistas institucionales revisaron recomendaciones sobre múltiples acciones tech y fintech. El downgrade de Meta refleja dudas sobre retorno de inversión en IA pese a Q2 sólido.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (vía @DeItaone)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Nasdaq",
-    "Meta",
-    "Lemonade",
-    "SalesForce",
-    "Capivent",
-    "PFSI",
-    "Tenby"
-   ],
-   "sesgos": [
-    {
-     "activo": "Meta",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "SalesForce",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "meta-downgrade",
-    "evercore",
-    "tech-earnings",
-    "ai-monetization",
-    "price-target"
-   ],
-   "tgText": "📊 Evercore corta PT de Meta de $930→$820 tras dudas sobre IA. Piper Sandler degrada CAPR ($58→$2), PFSI, TENB. JP Morgan eleva SFM a Overweight ($103).",
-   "xText": "Meta baja en PT de Evercore ($930→$820) por dudas en monetización IA. JP Morgan sube SalesForce a Overweight. Volatilidad en tech earnings continúa. #Nasdaq #Meta",
-   "discordText": "**Movimientos de Analistas Financieros**\n• **Meta**: Evercore retira de favoritos, PT $820 (de $930)\n• **SalesForce**: JP Morgan eleva a Overweight, PT $103\n• **Downgrades**: CAPR, PFSI, TENB por Piper Sandler",
-   "pushText": "Meta baja en PT de Evercore; SalesForce sube a Overweight de JP Morgan",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Nasdaq y Tech Select Sector, dado que Meta es componente mayor. Venta de posiciones en Meta podría trigger profit-taking en mega-caps de IA.",
-    "despues": "Bonos corporativos tech; CDS de big tech; forwards de divisas de países con exposición a FAANG.",
-    "escenarios": "Traders monitorean si downgrade dispara cascada de revisiones bajistas entre otros analistas (consenso herding). Verán si Meta logra demostrar monetización de IA en próxima guidance.",
-    "riesgos": "PT pueden ser overtaken por resultados operacionales. Bancos competidores pueden mantener ratings alcistas creando divergencia."
-   },
-   "macro": {
-    "nasdaq": "bajista de corto plazo",
-    "dolar": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33704",
-   "fecha": "2026-07-29T12:20:45+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33704",
-   "via": "DeItaone",
-   "original": "S&P 500, NASDAQ FUTURES TURN NEGATIVE AFTER TRUMP'S COMMENTS ON IRAN",
-   "titulo": "Futuros S&P 500 y Nasdaq caen tras comentarios hawkish de Trump sobre Irán",
-   "resumen": "Inmediatamente después de que Trump confirmara represalias militares contra Irán, los futuros del S&P 500 y Nasdaq giraron al territorio negativo. La volatilidad se intensificó por coincidencia con expectativas de decisión Fed (pausa vs alza). Movimiento refleja arbitraje entre riesgo geopolítico e incertidumbre de política monetaria.",
-   "analisis": {
-    "porque": "Combinación de escalada geopolítica (Irán) + incertidumbre Fed amplifica aversión al riesgo. Mercados reprician activos de renta variable a la baja; buscan safe-haven (bonos, dólar, oro).",
-    "queOcurrio": "Tras comentarios de Trump sobre represalias contra Irán, futuros de equities estadounidenses pasaron de neutral/ligeramente positivo a negativo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P 500",
-    "Nasdaq",
-    "Futuros S&P",
-    "Futuros Nasdaq",
-    "Petróleo",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Breaking News",
-   "keywords": [
-    "S&P 500",
-    "Nasdaq",
-    "futuros",
-    "Irán",
-    "volatilidad",
-    "geopolítica"
-   ],
-   "tgText": "Futuros S&P 500/Nasdaq giran negativos tras Trump confirmar represalias contra Irán. Volatilidad extrema; trasfondo Fed antes del anuncio.",
-   "xText": "S&P 500 y Nasdaq futures caen tras Trump confirmar ataques a Irán. Combinación de riesgo geopolítico + incertidumbre Fed.",
-   "discordText": "**Futuros Equities - Giro Negativo**\n• S&P 500 y Nasdaq futures ↓\n• Trigger: represalias Trump vs Irán\n• Contexto: Fed decision inminente\n→ Aversión a riesgo, safe-haven",
-   "pushText": "Futuros S&P/Nasdaq caen tras represalias Iran; volatilidad extrema pre-Fed",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Futuros ceden 0,5-1,5%; VIX salta 2-4 puntos; petróleo gira alcista (+2-3%).",
-    "despues": "Bonos del Tesoro suben (yields bajan 10-15 pb); dólar se fortalece; oro sube; spreads de credit se amplían; sectores defensivos buscan rotación.",
-    "escenarios": "Traders monitorean: (1) profundidad de la caída si escalada Irán continúa, (2) si Fed reacciona dovish por riesgo geopolítico, (3) si Nasdaq especialmente presionado por tech exposure a energía/petróleo.",
-    "riesgos": "Escalada no controlada Irán + sorpresa de alza Fed = crash -2% a -3% en equities; volatilidad sostenida presiona stop-loss de hedge funds."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "alcista",
-    "sp500": "bajista -0,5% a -1,5%",
-    "nasdaq": "bajista -0,5% a -2%",
-    "bonos": "alcista (yields bajan)",
-    "petroleo": "alcista +2% a +3%"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-30T08:25:30+00:00",
-     "id": "33724",
-     "texto": "Ministerio de Relaciones Exteriores de Pakistán reportó que conversaciones EE.UU.–Irán avanzan para restaurar estabilidad, particularmente en Estrecho de Hormuz. Islamabad instó a ambas partes a resolver tensiones vía diálogo diplomático. Comentarios llegan mientras tensiones regionales permanecen altas tras ataques recientes a fuerzas estadounidenses y represalias aéreas de EE.UU.",
-     "tgUrl": "https://t.me/walterbloomberg/33724"
-    },
-    {
-     "fecha": "2026-07-29T15:55:35+00:00",
-     "id": "33719",
-     "texto": "El S&P 500 extendió pérdidas a caída del 1,00% durante la sesión. Esta actualización marca aceleración de la corrección inicialmente reportada tras comentarios hawkish sobre Irán. El contexto incluye tensos reportes geopolíticos sobre ataques en Oriente Medio y pánico de retracción en sectores defensivos.",
-     "tgUrl": "https://t.me/walterbloomberg/33719"
-    }
-   ],
-   "actualizado": "2026-07-30T08:25:30+00:00"
-  },
-  {
-   "id": "917878295",
-   "fecha": "2026-07-30T07:17:34.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/rolls-royce-earnings-q2-stock-defense-ai.html",
-   "via": "CNBC",
-   "original": "Rolls-Royce jumps 4% as it sees boost from both the defense boom and AI data center buildout",
-   "titulo": "Rolls-Royce sube 4% impulsada por boom de defensa y centros IA",
-   "resumen": "Rolls-Royce se aprecia 4% tras señales positivas de crecimiento en dos frentes: aumento de gasto en defensa global y expansión de centros de datos para IA. El titular no especifica nuevos contratos ni cifras de ingresos esperados. Refuerza sesgo alcista sobre industriales de defensa y proveedores de infraestructura de IA.",
-   "analisis": {
-    "porque": "Rolls-Royce (RR. UK) es proveedor clave de motores de defensa y componentes para infraestructura industrial; boom de defensa + capex IA crea doble catalizador.",
-    "queOcurrio": "Acción de Rolls-Royce sube 4% en respuesta a perspectivas positivas en defensa e IA data centers.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "RR (Rolls-Royce)",
-    "Índices europeos",
-    "Defensa",
-    "Industriales",
-    "IA infrastructure"
-   ],
-   "sesgos": [
-    {
-     "activo": "RR",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Rolls-Royce",
-    "defensa",
-    "IA",
-    "centros-datos",
-    "industriales",
-    "infraestructura"
-   ],
-   "tgText": "🚀 Rolls-Royce +4%: boom de defensa + capex IA impulsan al alza. Proveedor clave de motores militares y componentes de infraestructura.",
-   "xText": "Rolls-Royce sube 4%: sesgo alcista por aumento de gasto en defensa y expansión de centros de IA. Doble catalizador de crecimiento #RR",
-   "discordText": "**Rolls-Royce: +4% por defensa + IA**\n• Aumento de gasto en defensa global\n• Expansión de centros de datos IA\n• Proveedor de motores militares\n• Doble impulso de ingresos esperado",
-   "pushText": "Rolls-Royce +4%: boom de defensa e IA data centers impulsan al alza",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "RR sube por confirmación de visibilidad de ingresos en defensa e infraestructura de IA",
-    "despues": "Otros industriales de defensa (BAE, Airbus) pueden revaluar; equities europeos si RR es proxy de tendencia",
-    "escenarios": "Traders buscan validación de capex IA vs deflación tecnológica; monitorean incremento de gasto militar por geopolítica",
-    "riesgos": "Ningún contrato específico mencionado; riesgo de ralentización de capex IA si ciclo de inversión revierte"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "927594693",
-   "fecha": "2026-07-30T06:56:06.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/us-treasury-yields-divided-fed-interest-rates-hold-steady-.html",
-   "via": "CNBC",
-   "original": "Treasury sell-off continues after divided Fed holds interest rates steady",
-   "titulo": "Venta de bonos continúa tras Fed dividida mantiene tasas sin cambios",
-   "resumen": "El mercado de bonos sigue bajo presión tras decisión de la Fed de mantener tasas de referencia sin cambios. Señala que mercado cuestiona compromiso de la Fed con control inflacionario. Continuación de cobertura sobre repricing de bonos y división de criterios en junta monetaria.",
-   "analisis": {
-    "porque": "Repricing de bonos indica que mercado prevé tasas más altas por incertidumbre; erosiona demanda de renta fija y presiona rendimientos al alza.",
-    "queOcurrio": "Venta de bonos continúa tras Fed mantener tasas sin claridad sobre próximas decisiones; mercado cuestiona credibilidad anti-inflacionaria.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "TLT",
-    "IEF",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "bonos",
-    "Fed",
-    "tasas",
-    "rendimientos",
-    "inflación",
-    "venta-masiva"
-   ],
-   "tgText": "📉 Venta de bonos continúa: mercado cuestiona compromiso de Fed contra inflación. Rendimientos suben tras decisión sin cambios.",
-   "xText": "Venta de bonos sigue tras Fed mantiene tasas: mercado duda de credibilidad anti-inflacionaria. Rendimientos USA presionados al alza #FedWatch",
-   "discordText": "**Venta de bonos: erosión de confianza**\n• Fed mantiene tasas sin claridad\n• Mercado presiona bonos a la baja\n• Rendimientos suben (riesgo de tasas futuras)\n• Cuestionamiento de credibilidad monetaria",
-   "pushText": "Venta de bonos continúa: mercado duda de Fed tras mantener tasas",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Rendimientos de bonos suben; TLT, IEF caen por repricing",
-    "despues": "DXY puede fortalecerse por tasas más altas; acciones de renta baja sensibles",
-    "escenarios": "Traders monitorean curvatura de rendimientos; buscan señales de inflación persistente vs pausa monetaria; vigilancia sobre Q3 inflation data",
-    "riesgos": "Venta puede acelerarse si inflación reaparece; riesgo de crisis de liquidez en bonos largo plazo"
-   },
-   "macro": {
-    "bonos": "bajista",
-    "rendimientos": "alcista",
-    "dolar": "alcista"
    },
    "updates": []
   }
