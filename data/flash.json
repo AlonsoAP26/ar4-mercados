@@ -1,72 +1,173 @@
 {
  "lastId": 33846,
- "actualizado": "2026-08-02T22:03:39.916Z",
+ "actualizado": "2026-08-03T02:13:04.241Z",
  "items": [
   {
-   "id": "33845",
-   "fecha": "2026-08-02T21:46:59+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33845",
-   "via": "DeItaone",
-   "original": "TRUMP: HAVE DECIDED A PUNISHMENT FOR CANADA ON WILDFIRES , BUT WON'T SAY YET",
-   "titulo": "Trump anuncia sanción a Canadá por incendios forestales pero retiene detalles",
-   "resumen": "Trump declara haber decidido una \"sanción\" contra Canadá relacionada con incendios forestales que afectan a EE.UU., pero se rehúsa a revelar su naturaleza o magnitud. El titular no especifica si se trata de aranceles, restricciones comerciales u otra medida. Contexto: canadienses han rechazado responsabilidad por mala gestión.",
+   "id": "956001660",
+   "fecha": "2026-08-03T01:45:41.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html",
+   "via": "CNBC",
+   "original": "Stock futures rally as investors gear up for jobs report, key earnings: Live updates",
+   "titulo": "Futuros en alza mientras mercado se prepara para reporte de empleo y earnings clave",
+   "resumen": "Índices futuros en Estados Unidos muestran ganancias mientras los inversores se preparan para el reporte de empleos y resultados de ganancias importantes. El movimiento refleja optimismo previo a datos macroeconómicos y anuncios corporativos. No se especifican qué empresas reportan ni detalles del reporte de empleo.",
    "analisis": {
-    "porque": "Potencial medida comercial/arancelaria contra aliado comercial clave (Canadá es 2º socio USA) genera incertidumbre para mercados de energía, agricultura y acero. Mantiene narrativa proteccionista de Trump abierta.",
-    "queOcurrio": "Trump anuncia sanción a Canadá sin especificar tipo ni alcance.",
-    "estado": "rumor",
-    "fuenteOriginal": "Bloomberg"
+    "porque": "Reportes de empleo son data macroeconómica crítica para decisiones de política monetaria; earnings determinan flujos de capital hacia sectores específicos",
+    "queOcurrio": "Futuros USA en territorio positivo en anticipación a reporte laboral y earnings de empresas clave",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
    },
-   "impacto": "bajo",
+   "impacto": "medio",
    "breaking": false,
    "activos": [
-    "Dólar",
-    "Bonos",
-    "Materias Primas",
-    "CAD",
-    "Petróleo Canada",
-    "Acero"
+    "S&P 500",
+    "Nasdaq-100",
+    "Dow Jones",
+    "Bonos USA",
+    "Rendimientos USA",
+    "Dólar USD"
    ],
    "sesgos": [
     {
-     "activo": "CAD",
-     "sesgo": "bajista"
+     "activo": "S&P 500",
+     "sesgo": "alcista"
     },
     {
-     "activo": "Dólar",
+     "activo": "Nasdaq-100",
      "sesgo": "alcista"
     }
    ],
    "volatilidad": "media",
-   "categoria": "Geopolítica",
+   "categoria": "Datos Económicos",
    "keywords": [
-    "trump-canada",
-    "aranceles",
-    "incendios",
-    "comercio"
+    "empleo",
+    "earnings",
+    "futuros",
+    "S&P 500",
+    "Nasdaq",
+    "macroeconomía"
    ],
-   "tgText": "⚠️ Trump anuncia sanción a Canadá por incendios pero oculta detalles. Genera incertidumbre sobre tipo/alcance. CAD presionado. Esperar aclaración.",
-   "xText": "Trump anuncia sanción a Canadá por incendios forestales pero rechaza revelar detalles. Incertidumbre sobre aranceles o restricciones comerciales mantiene CAD bajista.",
-   "discordText": "**⚠️ Trump: Sanción a Canadá (detalles retenidos)**\n\n• Causa: Incendios forestales\n• Tipo: No especificado (¿aranceles?)\n• Estado: Anunciado pero sin transparencia\n• Impacto CAD: Bajista por incertidumbre",
-   "pushText": "Trump anuncia sanción Canadá por incendios; detalles retenidos",
-   "importancia": 4,
+   "tgText": "📈 Futuros USA en alza en anticipación a reporte de empleo y earnings clave. Optimismo previo a datos macroeconómicos críticos para mercados.",
+   "xText": "📊 Futuros USA avanzan. Mercado se prepara para reporte de empleo y earnings importantes. Sentimiento alcista previa a macro crítica.",
+   "discordText": "**Futuros USA en alza**\n• Anticipación a reporte de empleo\n• Earnings importantes en el horizonte\n• Sentimiento alcista pre-data",
+   "pushText": "Futuros USA en alza por reporte de empleo y earnings próximos",
+   "importancia": 5,
    "reaccion": {
-    "primero": "CAD bajo presión inmediata por riesgo de aranceles. Petróleo y gas canadienses en radar si medida afecta exportaciones.",
-    "despues": "Si es sanción arancelaria, acero y aluminio canadienses también afectados. Posible respuesta canadiense en represalia.",
-    "escenarios": "Traders esperan: (1) Aclaración de Trump sobre tipo exacto; (2) Reacción Gobierno canadiense; (3) Impacto en cadenas de suministro USA. Volatilidad CAD sostenida hasta revelación.",
-    "riesgos": "Riesgo alto: Trump puede cambiar de tono o escalarla. Falta contexto sobre causa causal (Canadá acusa a USA de falta de coordinación ambiental)."
+    "primero": "S&P 500, Nasdaq-100, Dow: dirección según tono de datos de empleo",
+    "despues": "Bonos, rendimientos, dólar según implicaciones para política Fed",
+    "escenarios": "Traders monitorean NFP (no-farm payroll), tasa de desempleo y salarios por hora; reacciones varían si datos superan/fallan expectativas; earnings pueden ratificar o desafiar sentimiento",
+    "riesgos": "Riesgo de sorpresas en empleo que reviertan ganancias futuros; earnings débiles podrían revertir rally de anticipación"
    },
    "macro": {
-    "dolar": "Alcista leve (si hay aranceles)",
-    "oro": "Neutral",
-    "nasdaq": "Neutral",
-    "dow": "Neutral",
-    "sp500": "Neutral",
-    "bitcoin": "Neutral",
-    "ethereum": "Neutral",
-    "bonos": "Neutral",
-    "petroleo": "Bajista (si Canadá afectado)"
+    "sp500": "Alcista (futuros en alza)",
+    "nasdaq": "Alcista (futuros en alza)",
+    "dolar": "Potencialmente bajista si empleo débil reduce tasas",
+    "bonos": "Potencialmente alcistas si empleo es decepcionante"
    },
    "updates": []
+  },
+  {
+   "id": "33827",
+   "fecha": "2026-08-01T07:48:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33827",
+   "via": "DeItaone",
+   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
+   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
+   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "analisis": {
+    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
+    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Carry Trades",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "intervención-divisas",
+    "yen-japón",
+    "usdjpy",
+    "tesoro-usa",
+    "banco-central-japón",
+    "carry-trades"
+   ],
+   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
+   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
+   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
+   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
+    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
+    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
+    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+   },
+   "macro": {
+    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
+    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
+    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
+    "dow": "neutral a alcista por debilitamiento de dólar",
+    "sp500": "neutral a alcista por debilitamiento de dólar",
+    "bitcoin": "alcista potencial por debilitamiento de dólar",
+    "ethereum": "alcista potencial por debilitamiento de dólar",
+    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
+    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-03T00:59:33.000Z",
+     "id": "918380960",
+     "texto": "Autoridades de EE.UU. y Japón confirmaron intervención conjunta en mercados de divisas para sostener el yen. Ambas naciones señalaron estar preparadas para intervenir nuevamente si las condiciones lo justifican. Esta acción busca estabilizar la moneda japonesa y contrarrestar volatilidad cambiaria.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
+    },
+    {
+     "fecha": "2026-08-02T21:43:11+00:00",
+     "id": "33842",
+     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
+     "tgUrl": "https://t.me/walterbloomberg/33842"
+    },
+    {
+     "fecha": "2026-08-02T14:18:01.000Z",
+     "id": "964297321",
+     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
+     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
+    },
+    {
+     "fecha": "2026-08-02T01:41:08+00:00",
+     "id": "33831",
+     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
+     "tgUrl": "https://t.me/walterbloomberg/33831"
+    },
+    {
+     "fecha": "2026-08-01T15:44:08.000Z",
+     "id": "969625772",
+     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
+     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
+    }
+   ],
+   "actualizado": "2026-08-03T00:59:33.000Z"
   },
   {
    "id": "33833",
@@ -149,6 +250,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-08-02T23:33:07.000Z",
+     "id": "990424278",
+     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
+    },
+    {
      "fecha": "2026-08-02T21:45:46+00:00",
      "id": "33844",
      "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
@@ -179,105 +286,191 @@
      "tgUrl": "https://t.me/walterbloomberg/33834"
     }
    ],
-   "actualizado": "2026-08-02T21:45:46+00:00"
+   "actualizado": "2026-08-02T23:33:07.000Z"
   },
   {
-   "id": "33827",
-   "fecha": "2026-08-01T07:48:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33827",
-   "via": "DeItaone",
-   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
-   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
-   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
+   "id": "952175997",
+   "fecha": "2026-08-02T22:17:47.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/astrazeneca-and-bristol-myers-squibb-mull-400-billion-deal-report-.html",
+   "via": "CNBC",
+   "original": "AstraZeneca in talks with Bristol Myers Squibb on $400 billion megadeal, FT reports",
+   "titulo": "AstraZeneca en conversaciones con Bristol Myers Squibb por megafusión de $400 mil millones",
+   "resumen": "Financial Times reporta que AstraZeneca mantiene negociaciones con Bristol Myers Squibb respecto a una potencial combinación empresarial valuada en aproximadamente $400 mil millones. No se confirman términos ni probabilidad de cierre. De concretarse, sería una de las mayores fusiones del sector farmacéutico en años.",
    "analisis": {
-    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
-    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times (vía Bloomberg)"
+    "porque": "Fusión de este tamaño reestructura liderazgo farmacéutico, impacta valuaciones de ambas empresas, afecta exposición a biofármacos e inmunooncología",
+    "queOcurrio": "FT reporta conversaciones entre AstraZeneca y BMY sobre megafusión de ~$400B; estado de negociaciones no confirmado",
+    "estado": "rumor",
+    "fuenteOriginal": "Financial Times (citado por CNBC)"
    },
    "impacto": "alto",
    "breaking": true,
    "activos": [
-    "USDJPY",
-    "DXY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Carry Trades",
-    "EURUSD"
+    "AstraZeneca (AZN)",
+    "Bristol Myers Squibb (BMY)",
+    "Sector Farmacéutico",
+    "S&P 500",
+    "NASDAQ"
    ],
    "sesgos": [
     {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
+     "activo": "AstraZeneca",
+     "sesgo": "neutral"
     },
     {
-     "activo": "JPY",
-     "sesgo": "alcista"
+     "activo": "Bristol Myers Squibb",
+     "sesgo": "neutral"
     },
     {
-     "activo": "DXY",
-     "sesgo": "bajista"
+     "activo": "Sector Farmacéutico",
+     "sesgo": "neutral"
     }
    ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
    "keywords": [
-    "intervención-divisas",
-    "yen-japón",
-    "usdjpy",
-    "tesoro-usa",
-    "banco-central-japón",
-    "carry-trades"
+    "AstraZeneca",
+    "Bristol Myers Squibb",
+    "fusión",
+    "megadeal",
+    "farmacéutico"
    ],
-   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
-   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
-   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
-   "pushText": "USA y Japón intervienen en divisas para sostener yen",
+   "tgText": "💊 RUMOR: AstraZeneca en conversaciones con BMY por megafusión de $400B (FT). Sin confirmación oficial. Potencial reestructura del sector farmacéutico.",
+   "xText": "🏥 FT: AstraZeneca negocia con Bristol Myers Squibb megafusión de $400B. Sin confirmación. Potencial mayor reestructura farmacéutica en años.",
+   "discordText": "**RUMOR: Megafusión farmacéutica de $400B**\n• AstraZeneca - Bristol Myers Squibb en negociaciones\n• Fuente: Financial Times\n• ⚠️ Sin confirmación oficial",
+   "pushText": "RUMOR: AstraZeneca y BMY negocian fusión de $400 mil millones",
    "importancia": 8,
    "reaccion": {
-    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
-    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
-    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
-    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
+    "primero": "AZN y BMY: volatilidad inmediata; arbitrage entre precios de ambas acciones",
+    "despues": "Sector farmacéutico completo, competidores (JNJ, Pfizer), fondos de M&A",
+    "escenarios": "Traders esperan confirmación oficial, términos de acuerdo (ratio de intercambio), posibles condiciones regulatorias; vigilancia sobre anuncios posteriores de ambas empresas",
+    "riesgos": "Riesgo regulatorio (antitrust en EE.UU. y UE); fuente es reportaje no confirmado; potencial desmentida de cualquiera de las partes"
    },
-   "macro": {
-    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
-    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
-    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
-    "dow": "neutral a alcista por debilitamiento de dólar",
-    "sp500": "neutral a alcista por debilitamiento de dólar",
-    "bitcoin": "alcista potencial por debilitamiento de dólar",
-    "ethereum": "alcista potencial por debilitamiento de dólar",
-    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
-    "petroleo": "neutral a alcista por debilitamiento de dólar"
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33845",
+   "fecha": "2026-08-02T21:46:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33845",
+   "via": "DeItaone",
+   "original": "TRUMP: HAVE DECIDED A PUNISHMENT FOR CANADA ON WILDFIRES , BUT WON'T SAY YET",
+   "titulo": "Trump anuncia sanción a Canadá por incendios forestales pero retiene detalles",
+   "resumen": "Trump declara haber decidido una \"sanción\" contra Canadá relacionada con incendios forestales que afectan a EE.UU., pero se rehúsa a revelar su naturaleza o magnitud. El titular no especifica si se trata de aranceles, restricciones comerciales u otra medida. Contexto: canadienses han rechazado responsabilidad por mala gestión.",
+   "analisis": {
+    "porque": "Potencial medida comercial/arancelaria contra aliado comercial clave (Canadá es 2º socio USA) genera incertidumbre para mercados de energía, agricultura y acero. Mantiene narrativa proteccionista de Trump abierta.",
+    "queOcurrio": "Trump anuncia sanción a Canadá sin especificar tipo ni alcance.",
+    "estado": "rumor",
+    "fuenteOriginal": "Bloomberg"
    },
-   "updates": [
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Dólar",
+    "Bonos",
+    "Materias Primas",
+    "CAD",
+    "Petróleo Canada",
+    "Acero"
+   ],
+   "sesgos": [
     {
-     "fecha": "2026-08-02T21:43:11+00:00",
-     "id": "33842",
-     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
-     "tgUrl": "https://t.me/walterbloomberg/33842"
+     "activo": "CAD",
+     "sesgo": "bajista"
     },
     {
-     "fecha": "2026-08-02T14:18:01.000Z",
-     "id": "964297321",
-     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
-     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
-    },
-    {
-     "fecha": "2026-08-02T01:41:08+00:00",
-     "id": "33831",
-     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
-     "tgUrl": "https://t.me/walterbloomberg/33831"
-    },
-    {
-     "fecha": "2026-08-01T15:44:08.000Z",
-     "id": "969625772",
-     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
-     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
+     "activo": "Dólar",
+     "sesgo": "alcista"
     }
    ],
-   "actualizado": "2026-08-02T21:43:11+00:00"
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "trump-canada",
+    "aranceles",
+    "incendios",
+    "comercio"
+   ],
+   "tgText": "⚠️ Trump anuncia sanción a Canadá por incendios pero oculta detalles. Genera incertidumbre sobre tipo/alcance. CAD presionado. Esperar aclaración.",
+   "xText": "Trump anuncia sanción a Canadá por incendios forestales pero rechaza revelar detalles. Incertidumbre sobre aranceles o restricciones comerciales mantiene CAD bajista.",
+   "discordText": "**⚠️ Trump: Sanción a Canadá (detalles retenidos)**\n\n• Causa: Incendios forestales\n• Tipo: No especificado (¿aranceles?)\n• Estado: Anunciado pero sin transparencia\n• Impacto CAD: Bajista por incertidumbre",
+   "pushText": "Trump anuncia sanción Canadá por incendios; detalles retenidos",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "CAD bajo presión inmediata por riesgo de aranceles. Petróleo y gas canadienses en radar si medida afecta exportaciones.",
+    "despues": "Si es sanción arancelaria, acero y aluminio canadienses también afectados. Posible respuesta canadiense en represalia.",
+    "escenarios": "Traders esperan: (1) Aclaración de Trump sobre tipo exacto; (2) Reacción Gobierno canadiense; (3) Impacto en cadenas de suministro USA. Volatilidad CAD sostenida hasta revelación.",
+    "riesgos": "Riesgo alto: Trump puede cambiar de tono o escalarla. Falta contexto sobre causa causal (Canadá acusa a USA de falta de coordinación ambiental)."
+   },
+   "macro": {
+    "dolar": "Alcista leve (si hay aranceles)",
+    "oro": "Neutral",
+    "nasdaq": "Neutral",
+    "dow": "Neutral",
+    "sp500": "Neutral",
+    "bitcoin": "Neutral",
+    "ethereum": "Neutral",
+    "bonos": "Neutral",
+    "petroleo": "Bajista (si Canadá afectado)"
+   },
+   "updates": []
+  },
+  {
+   "id": "968506697",
+   "fecha": "2026-08-02T20:27:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/heres-my-power-rankings-for-the-big-4-hyperscalers-after-this-earnings-season.html",
+   "via": "CNBC",
+   "original": "Here&apos;s my power rankings for the big 4 hyperscalers after this earnings season",
+   "titulo": "Ranking de poder de los 4 hyperscalers tras temporada de earnings",
+   "resumen": "Analista clasificó a las cuatro grandes empresas de cloud computing (presumiblemente Apple, Amazon, Google, Microsoft) por su desempeño relativo tras reportes de ganancias recientes. El título no detalla la metodología ni resultados específicos. La temporada de earnings de Big Tech mostró variaciones en márgenes, crecimiento de IA y eficiencia operativa.",
+   "analisis": {
+    "porque": "Hyperscalers dominan índices tecnológicos y definen sentimiento macro sobre IA; rotación entre ellos impacta ponderaciones NASDAQ-100 y S&P 500",
+    "queOcurrio": "Analista publicó ranking comparativo de los cuatro principales proveedores cloud post-earnings; el titular no especifica criterios ni ranking",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ-100",
+    "S&P 500",
+    "Apple (AAPL)",
+    "Amazon (AMZN)",
+    "Google (GOOGL)",
+    "Microsoft (MSFT)"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ-100",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Hyperscalers",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "hyperscalers",
+    "Big Tech",
+    "earnings",
+    "cloud",
+    "IA",
+    "NASDAQ"
+   ],
+   "tgText": "📊 Ranking de poder de los 4 hyperscalers post-earnings: análisis comparativo de Apple, Amazon, Google, Microsoft. Impacto en ponderaciones NASDAQ y S&P 500.",
+   "xText": "📈 Ranking de hyperscalers tras earnings season: análisis de desempeño relativo de Apple, Amazon, Google, Microsoft. Implicaciones para índices tech.",
+   "discordText": "**Ranking de poder de hyperscalers post-earnings**\n• Análisis comparativo de 4 gigantes tech\n• Impacto en ponderaciones NASDAQ-100\n• Criterios y resultados no especificados en titular",
+   "pushText": "Ranking de poder de hyperscalers post-earnings publicado",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "NASDAQ-100, S&P 500: potencial rotación según posiciones del ranking",
+    "despues": "Acciones individuales de los hyperscalers (AAPL, AMZN, GOOGL, MSFT)",
+    "escenarios": "Traders esperan ver si hay cambios en jerarquía de liderazgo tech; monitorean implicaciones para exposición IA y márgenes operativos",
+    "riesgos": "Titular no aporta detalles de metodología ni resultados; análisis es subjetivo y el impacto depende de coincidencia con consenso"
+   },
+   "macro": null,
+   "updates": []
   },
   {
    "id": "33837",
@@ -338,6 +531,72 @@
     "riesgos": "Titular vago en detalles; sin confirmación de qué plan específico o qué objeciones. Riesgo de sobrerreacción ante ruido diplomático."
    },
    "macro": null,
+   "updates": []
+  },
+  {
+   "id": "972540029",
+   "fecha": "2026-08-02T14:30:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/02/why-people-are-dropping-out-of-the-workforce-and-not-looking-for-new-jobs-the-market-wore-me-down.html",
+   "via": "CNBC",
+   "original": "Why people are dropping out of the workforce and not looking for new jobs: &apos;The market wore me down&apos;",
+   "titulo": "Desempleo voluntario crece: trabajadores abandonan búsqueda tras desgaste del mercado laboral",
+   "resumen": "Reportaje sobre tendencia creciente de personas que abandonan voluntariamente la búsqueda de empleo, citando agotamiento por condiciones del mercado laboral. Refleja cambio en dinámicas laborales post-pandemia con énfasis en calidad de vida versus presión de empleo. Datos específicos sobre magnitud de fenómeno no incluidos en titular.",
+   "analisis": {
+    "porque": "Reducción voluntaria de participación laboral afecta tasas de desempleo, presión salarial, inflación y políticas de bancos centrales; impacta potencial de crecimiento económico",
+    "queOcurrio": "Reportaje de CNBC documenta tendencia de trabajadores abandoning búsqueda laboral activa por desgaste de condiciones de mercado",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Índice de Participación Laboral",
+    "Tasas de Desempleo",
+    "Salarios",
+    "Inflación",
+    "Bonos USA",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Inflación",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Salarios",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empleo",
+   "keywords": [
+    "desempleo",
+    "mercado laboral",
+    "participación",
+    "salarios",
+    "inflación"
+   ],
+   "tgText": "💼 Tendencia: trabajadores abandonan búsqueda de empleo por desgaste laboral. Impacto en tasa de participación, presión salarial e inflación.",
+   "xText": "📉 Más trabajadores salen del mercado laboral por agotamiento. Tendencia reduce participación, pero presiona salarios. Implicaciones para inflación y Fed.",
+   "discordText": "**Abandono voluntario de búsqueda laboral**\n• Trabajadores dejan mercado por desgaste\n• Impacto en tasa de participación\n• Presión salarial e inflacionaria",
+   "pushText": "Trabajadores abandonan búsqueda laboral por desgaste de mercado",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Índice de participación laboral, expectativas de Fed sobre mercado laboral",
+    "despues": "Bonos (presión de inflación salarial), acciones defensivas, sector de consumo discrecional",
+    "escenarios": "Traders monitorean si tendencia reduce presión inflacionaria (menos competencia laboral) o la mantiene (reducción de oferta de mano de obra = presión salarial); vigilancia sobre datos trimestrales de participación",
+    "riesgos": "Reportaje carece de datos cuantitativos; impacto real depende de magnitud del fenómeno; confusión entre desempleo involuntario versus retiro voluntario"
+   },
+   "macro": {
+    "inflacion": "Potencialmente alcista por presión salarial",
+    "salarios": "Potencialmente alcistas por reducción de oferta",
+    "bonos": "Potencialmente bajistas",
+    "sp500": "Neutral o ligeramente bajista"
+   },
    "updates": []
   },
   {
@@ -7436,291 +7695,6 @@
     }
    ],
    "actualizado": "2026-07-30T00:55:21.000Z"
-  },
-  {
-   "id": "998022225",
-   "fecha": "2026-07-30T00:54:16.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/were-raising-our-price-target-on-starbucks-after-a-home-run-quarter-.html",
-   "via": "CNBC",
-   "original": "We&apos;re raising our price target on Starbucks after a home-run quarter",
-   "titulo": "Starbucks sube tras elevar price target tras trimestre de récord",
-   "resumen": "Analistas elevan precio objetivo de Starbucks post-resultados de trimestre fuerte. El titular no especifica qué analista ni cifras exactas de elevación. Actualización de cobertura posterior a reporte de earnings que mostró márgenes operacionales mejorados.",
-   "analisis": {
-    "porque": "Revisión alcista de precio objetivo refleja mejora fundamental en rentabilidad y demanda de café; señal de momentum para consumo discrecional.",
-    "queOcurrio": "Analista(s) elevan precio objetivo de Starbucks post-resultados de trimestre superior a expectativas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "SBUX",
-    "S&P500",
-    "Consumo Discrecional",
-    "XLY"
-   ],
-   "sesgos": [
-    {
-     "activo": "SBUX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Starbucks",
-    "SBUX",
-    "earnings",
-    "price-target",
-    "consumo-discrecional"
-   ],
-   "tgText": "☕ Starbucks sube: analistas elevan price target tras trimestre de récord. Márgenes operacionales y demanda de café impulsan al alza.",
-   "xText": "Starbucks recibe upgrades de precio objetivo tras trimestre fuerte. Márgenes mejorados y demand de café sustentan sesgo alcista #SBUX",
-   "discordText": "**Starbucks: elevación de precio objetivo**\n• Trimestre superior a expectativas\n• Márgenes operacionales mejorados\n• Demanda de café sostenida\n• Sesgo alcista confirmado por analistas",
-   "pushText": "Starbucks sube: precio objetivo elevado tras trimestre de récord",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "SBUX sube por confirmación de rentabilidad; consumo discrecional positivo",
-    "despues": "Sector retail y F&B revalúan; S&P500 gana por peso de consumo",
-    "escenarios": "Traders buscan si Starbucks logra mantener márgenes en contexto inflacionario; viabilidad de alza de precios vs deflación de café",
-    "riesgos": "Precio objetivo exacto no especificado; riesgo de reversión si condiciones de café o consumidor cambian"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "928028518",
-   "fecha": "2026-07-29T23:36:34.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html",
-   "via": "CNBC",
-   "original": "What a divided Fed means for investors",
-   "titulo": "Una Fed dividida: implicaciones para inversores",
-   "resumen": "CNBC analiza el impacto de divisiones internas en la Junta de Gobernadores de la Reserva Federal sobre las decisiones de inversión. Señala incertidumbre sobre trayectoria futura de tasas y credibilidad de comunicación de política monetaria. Continuación de cobertura sobre falta de consenso (referido a Warsh).",
-   "analisis": {
-    "porque": "Divisiones en la Fed erosionan credibilidad de forward guidance y crean ambigüedad sobre tasas futuras; afecta comportamiento de bonos, acciones y opciones.",
-    "queOcurrio": "Análisis editorial sobre fragmentación de criterios dentro de la Fed respecto a política monetaria.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "VIX",
-    "S&P500",
-    "NASDAQ",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "división",
-    "política-monetaria",
-    "credibilidad",
-    "tasas-futuras"
-   ],
-   "tgText": "⚠️ Fed dividida genera dudas sobre política monetaria. CNBC analiza implicaciones para inversores: incertidumbre sobre trayectoria de tasas.",
-   "xText": "Una Fed dividida: CNBC analiza cómo fragmentación interna afecta credibilidad de comunicación monetaria e incertidumbre de tasas futuras #FedWatch",
-   "discordText": "**Fed dividida: riesgo de credibilidad**\n• Fragmentación interna en decisiones monetarias\n• Debilita forward guidance\n• Impacto: bonos, opciones, curva de rendimientos\n• Incertidumbre sobre próximas subidas/bajadas",
-   "pushText": "Fed dividida: fragmentación interna genera incertidumbre sobre futuro de tasas",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Mercado de bonos reprecia riesgo de tasas; volatilidad en curva de rendimientos",
-    "despues": "Equities ajustan valuaciones según escenarios de tasas; DXY reacciona a credibilidad del banco central",
-    "escenarios": "Traders monitorean próximas comunicaciones de gobernadores; buscan consenso en proyecciones de tasas; atención a postura hawkish vs dovish",
-    "riesgos": "Es análisis editorial sin datos nuevos; la división puede reflejar incertidumbre económica genuina o debilidad de comunicación de la Fed"
-   },
-   "macro": {
-    "bonos": "bajista",
-    "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "926076712",
-   "fecha": "2026-07-29T23:09:42.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/29/openai-cfo-sarah-friar-tells-employees-arr-in-july-topped-all-of-q2.html",
-   "via": "CNBC",
-   "original": "OpenAI CFO Sarah Friar tells employees that annualized revenue in July topped all of Q2",
-   "titulo": "OpenAI anuncia ingresos anualizados en julio por encima de todo Q2",
-   "resumen": "Sarah Friar, CFO de OpenAI, informó a empleados que los ingresos anualizados en julio superaron la totalidad del segundo trimestre. Confirmado por comunicación interna de ejecutivo. Señala aceleración sustancial de monetización, aunque el titular no especifica cifras absolutas ni desglose por producto.",
-   "analisis": {
-    "porque": "OpenAI es protagonista central en carrera de IA global; aceleración de ingresos impacta valuación, inversión en infraestructura de chips y competencia con Microsoft/Google.",
-    "queOcurrio": "CFO comunica internamente que ingresos anualizados de julio superaron el total de Q2 (abril-junio).",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC (citando comunicación interna OpenAI)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "Nvidia",
-    "Microsoft",
-    "Alphabet",
-    "Magnitud de capex en IA"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nvidia",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Microsoft",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "OpenAI",
-    "IA",
-    "ingresos",
-    "monetización",
-    "SaaS",
-    "tech"
-   ],
-   "tgText": "🚀 OpenAI acelera: ingresos anualizados en julio superan todo Q2. CFO Friar confirma monetización explosiva. Ventaja competitiva en carrera de IA.",
-   "xText": "OpenAI CFO: ingresos anualizados en julio ya superan todo Q2. Aceleración de monetización redefine valuación de líderes de IA #ChatGPT #Tech",
-   "discordText": "**OpenAI: Aceleración de ingresos confirmada**\n• CFO Sarah Friar comunica a empleados\n• Ingresos anualizados julio > Q2 completo\n• Señal de monetización acelerada en IA\n• Impacta: Nvidia, Microsoft, NASDAQ",
-   "pushText": "OpenAI: ingresos anualizados en julio superan todo Q2, confirma aceleración",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Nasdaq futures y acciones de IA (Nvidia, Microsoft) suben por confirmación de demanda sostenida en LLMs",
-    "despues": "Semiconductor, cloud computing y activos tech correlacionados; posibles ajustes alcistas en capex esperado",
-    "escenarios": "Traders buscan validar que auge de IA sigue financieramente viable; presión para Microsoft de mantener ventaja en OpenAI partnership; impulso a competidores de GPU",
-    "riesgos": "Cifras absolutas no especificadas; comparativa julio vs Q2 no indica si crecimiento es lineal o explosivo; competencia de China en modelos baratos podría frenar monetización"
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "sp500": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33687",
-   "fecha": "2026-07-29T08:00:57+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33687",
-   "via": "DeItaone",
-   "original": "FED DECISION: WHAT TO WATCH The Fed is expected to keep rates at 3.5%-3.75%, but markets still see a roughly one-in-three chance of a surprise hike. The focus is on Chair Kevin Warsh's message as higher oil prices fuel inflation concerns despite softer June CPI. Morgan Stanley expects no hikes this year, while BofA believes Warsh could begin raising rates as soon as September.",
-   "titulo": "Fed mantiene tasas en 3,5%-3,75% pero Warsh genera incertidumbre sobre septiembre",
-   "resumen": "La Reserva Federal confirmó mantención de tasas de referencia en rango 3,5%-3,75%. Chair Kevin Warsh generó volatilidad al no descartar alzas futuras pese a inflación moderada. Mercados estiman probabilidad uno-en-tres de sorpresa alcista. Morgan Stanley proyecta cero alzas en 2026; BofA sugiere posibles subidas desde septiembre ante presión inflacionaria del petróleo.",
-   "analisis": {
-    "porque": "La decisión de la Fed afecta directamente valuaciones de activos riesgosos, tasas de rendimiento y expectativas inflacionarias. La ambigüedad de Warsh genera incertidumbre sobre trayectoria futura de política monetaria, impactando estrategias de treasuries, acciones y divisas.",
-    "queOcurrio": "Fed mantuvo tasas sin cambios pero el lenguaje del Chair Kevin Warsh no eliminó posibilidad de alzas futuras, contrario a expectativas de mercado de continuidad de pausa. Divergencia entre proyecciones de Morgan Stanley (sin alzas 2026) y BofA (posibles alzas sept) refleja incertidumbre sobre inflación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "DXY",
-    "Bonos",
-    "Rendimientos USA",
-    "Oro",
-    "Petróleo"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "fed-decision",
-    "tasas-interes",
-    "kevin-warsh",
-    "politica-monetaria",
-    "inflacion"
-   ],
-   "tgText": "🚨 Fed mantiene tasas pero Warsh no descarta alzas futuras. Probabilidad uno-en-tres de sorpresa alcista. Divergencia: Morgan Stanley vs BofA en proyecciones de septiembre. Volatilidad extrema en treasuries y renta variable.",
-   "xText": "Fed pausa tasas en 3,5%-3,75% pero Chair Warsh genera incertidumbre. 33% de probabilidad de alza sorpresa. Morgan Stanley: sin alzas 2026. BofA: posibles subidas en septiembre. Mercados en máxima volatilidad.",
-   "discordText": "**Fed Decision Impact**\n• Tasas: 3,5%-3,75% (sin cambios)\n• Chair Warsh abre puerta a futuras alzas\n• Prob. alza sorpresa: ~33%\n• Debate: septiembre decisivo\n• Volatilidad: EXTREMA",
-   "pushText": "Fed pausa pero Warsh mantiene incertidumbre sobre septiembre",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Bonos y Treasuries de largo plazo reaccionan primero al cambio de expectativas de tasas. Baja en precios de bonos (suba de yields) si mercado interpreta como hawkish.",
-    "despues": "S&P500 y NASDAQ sufren presión por valuaciones más altas de tasas. Dólar fortalecido (DXY al alza). Materias primas como oro se benefician por debilidad esperada de activos riesgosos.",
-    "escenarios": "Traders vigilarán: (1) dots plot de proyecciones de septiembre en próxima rueda de prensa; (2) lecturas CPI julio para confirmar presión inflacionaria; (3) si petróleo sostiene alzas inflacionarias; (4) comunicaciones de Warsh en próximas semanas sobre trayectoria.",
-    "riesgos": "Titular interpreta 'mensaje' de Warsh que no es oficial. Si Fed en comunicado posterior aclara posición más dovish, sesgo bajista en DXY se revierten. Riesgo de falsa señal sobre intenciones futuras."
-   },
-   "macro": {
-    "dolar": "Alcista por expectativa de tasas más altas",
-    "oro": "Bajista por fortaleza de dólar",
-    "nasdaq": "Bajista por tasa de descuento más alta",
-    "dow": "Bajista por incertidumbre de tasas",
-    "sp500": "Bajista moderado",
-    "bitcoin": "Bajista si dólar sube sostenidamente",
-    "ethereum": null,
-    "bonos": "Bajista (yields suben)",
-    "petroleo": "Neutral (Fed no controla oferta)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-29T22:54:09.000Z",
-     "id": "967366665",
-     "texto": "CNBC sintetiza los principales puntos de la última decisión de política monetaria de la Fed. El titular no especifica detalles concretos sobre cambios de tasas, proyecciones de inflación o señales sobre futuras decisiones. Actualización de cobertura sobre la reunión ya reportada.",
-     "tgUrl": "https://www.cnbc.com/2026/07/29/here-are-the-five-big-takeaways-from-this-weeks-fed-meeting.html"
-    },
-    {
-     "fecha": "2026-07-29T18:00:50+00:00",
-     "id": "33722",
-     "texto": "La Reserva Federal dejó las tasas sin cambios en 3,50%–3,75% con una votación 9–3. Los gobernadores Hammack, Kashkari y Logan disintieron a favor de una alza de 25 puntos básicos. El comunicado señala inflación aún por encima del 2% objetivo y economía en expansión sólida, pero la disidencia interna creciente sobre política monetaria más restrictiva marca un quiebre significativo.",
-     "tgUrl": "https://t.me/walterbloomberg/33722"
-    },
-    {
-     "fecha": "2026-07-29T18:00:17+00:00",
-     "id": "33721",
-     "texto": "La Reserva Federal confirmó la decisión de mantener las tasas de interés sin cambios en su rango objetivo. Esta actualización cierra el ciclo de decisiones de política monetaria tras semanas de incertidumbre sobre el timing de futuras reducciones. El titular no especifica detalles adicionales sobre forward guidance o proyecciones para septiembre.",
-     "tgUrl": "https://t.me/walterbloomberg/33721"
-    },
-    {
-     "fecha": "2026-07-29T08:22:17+00:00",
-     "id": "33690",
-     "texto": "Mercados de predicción (Kalshi) cotizan 77% de probabilidad de que la Fed mantenga tasas hoy; 23% de alza sorpresa de 25 puntos base. Citadel Securities anticipa que el presidente Kevin Warsh subirá tasas para reforzar credibilidad antiinflacionaria y señalar el fin de la era de forward guidance. División clara entre trader y operadores institucionales sobre intención de Warsh.",
-     "tgUrl": "https://t.me/walterbloomberg/33690"
-    }
-   ],
-   "actualizado": "2026-07-29T22:54:09.000Z"
   }
  ],
  "rssVistos": [
@@ -7947,6 +7921,15 @@
   "https://www.cnbc.com/2026/08/02/oil-prices-iran-war-energy-market.html",
   "https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html",
   "https://www.cnbc.com/2026/08/02/state-student-loans.html",
-  "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
+  "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html",
+  "https://www.cnbc.com/2026/08/02/why-people-are-dropping-out-of-the-workforce-and-not-looking-for-new-jobs-the-market-wore-me-down.html",
+  "https://www.cnbc.com/2026/08/02/spider-man-brand-new-day-box-office-355-million-domestic-opening.html",
+  "https://www.cnbc.com/2026/08/02/bernie-moreno-max-miller-house-psychological-help-emily-moreno.html",
+  "https://www.cnbc.com/2026/08/02/heres-my-power-rankings-for-the-big-4-hyperscalers-after-this-earnings-season.html",
+  "https://www.cnbc.com/2026/08/02/astrazeneca-and-bristol-myers-squibb-mull-400-billion-deal-report-.html",
+  "https://www.cnbc.com/2026/08/02/two-die-as-firefighting-helicopters-collide-in-greece.html",
+  "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html",
+  "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html",
+  "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html"
  ]
 }
