@@ -1,7 +1,57 @@
 {
  "lastId": 33908,
- "actualizado": "2026-08-04T03:35:31.628Z",
+ "actualizado": "2026-08-04T06:15:29.048Z",
  "items": [
+  {
+   "id": 959819679,
+   "fecha": "2026-08-04T04:50:05.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/04/hsbc-profit-beats-estimates-higher-net-interest-income-fees.html",
+   "via": "CNBC",
+   "original": "HSBC pretax profit beats estimates, boosted by higher net interest income and fees",
+   "titulo": "HSBC supera ganancias trimestrales impulsado por ingresos por intereses e ingresos",
+   "resumen": "HSBC reporta ganancias pre-impuestos que superan estimaciones gracias a alza en ingresos netos por intereses y comisiones. El desempeño refleja ambiente de tasas elevadas favorable para márgenes bancarios europeos.",
+   "analisis": {
+    "porque": "Resultado de banco global líder refleja salud de márgenes en ambiente de tasas altas; indicador de rentabilidad bancaria global y confianza en demanda de servicios financieros.",
+    "queOcurrio": "HSBC reporta ganancias pre-impuestos superiores a estimaciones, impulsadas por ingresos por intereses más altos y comisiones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "HSBC",
+    "Bancos Europeos",
+    "Índices Europeos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bancos Europeos",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "hsbc",
+    "earnings",
+    "bancos",
+    "márgenes-netos",
+    "tasas-altas"
+   ],
+   "tgText": "🏦 HSBC supera estimaciones con ganancias impulsadas por márgenes de interés y comisiones en ambiente de tasas elevadas.",
+   "xText": "📊 HSBC earnings beat en Q2 por NII fuerte y comisiones. Confirmación de beneficios bancarios en tasas altas.",
+   "discordText": "**HSBC earnings positivos**\n• Supera estimaciones de ganancias\n• Márgenes de interés robustos\n• Comisiones sólidas en ambiente de tasas",
+   "pushText": "HSBC supera ganancias; márgenes de interés sólidos",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "HSBC directo; comparables bancarios europeos (BBVA, BNP) en sentimiento positivo.",
+    "despues": "Índices financieros europeos si earnings revisa confianza en banca regional; impacto limitado en mercados amplios.",
+    "escenarios": "Traders vigilan si guidance sugiere sostenibilidad de márgenes; monitorean exposición de HSBC a China y Asia-Pacífico; evalúan si tasas más bajas erosionarían márgenes.",
+    "riesgos": "Mercados asiáticos fuera de horario de reporte pueden no capturar movimiento inmediatamente; exposición a China es riesgo geopolítico."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 903259186,
    "fecha": "2026-08-04T03:00:01.000Z",
@@ -364,61 +414,6 @@
    "updates": []
   },
   {
-   "id": 911409007,
-   "fecha": "2026-08-03T21:34:43.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
-   "via": "CNBC",
-   "original": "Palantir soars 12% on blowout quarter, with U.S. commercial revenue soaring nearly 150%",
-   "titulo": "Palantir dispara 12% tras resultados extraordinarios; ingresos comerciales USA suben 150%",
-   "resumen": "Palantir Technologies reportó un trimestre excepcional con crecimiento de ingresos comerciales en USA cercano al 150%. La acción subió 12% en sesión extendida. El titular no especifica márgenes, guidance futura ni cifras absolutas de ingresos, solo el ritmo de crecimiento comercial.",
-   "analisis": {
-    "porque": "Movimiento de precio de double dígit en una acción de gran capitalización indica un reajuste significativo de expectativas de mercado sobre crecimiento y rentabilidad. Afecta valuaciones en tech y IA.",
-    "queOcurrio": "Palantir publicó resultados trimestrales que superaron expectativas, con énfasis en expansión acelerada del segmento comercial en Estados Unidos, generando compra masiva en after-hours.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "PLTR",
-    "NASDAQ",
-    "Tech",
-    "IA"
-   ],
-   "sesgos": [
-    {
-     "activo": "PLTR",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Palantir",
-    "earnings",
-    "crecimiento-comercial",
-    "tech",
-    "IA"
-   ],
-   "tgText": "🚀 PLTR dispara 12% en after-hours tras trimestre extraordinario. Ingresos comerciales USA suben ~150%. Reajuste alcista de expectativas en tech/IA.",
-   "xText": "📈 Palantir sube 12% en after-hours con resultados excepcionales. Ingresos comerciales USA crecen ~150%. Movimiento significativo en tech.",
-   "discordText": "**PALANTIR EARNINGS BEAT**\n• Acción sube 12% en after-hours\n• Ingresos comerciales USA +150%\n• Reajuste alcista en expectativas\n• Impacto: Tech/IA",
-   "pushText": "PLTR +12% tras earnings; ingresos comerciales +150%",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "PLTR reacciona inmediatamente por ser noticia de earnings; volumen after-hours concentra traders institucionales",
-    "despues": "Sector tech y acciones IA vinculadas (NVDA, MSFT, CRM) pueden seguir por efecto momentum y revalúo de narrativa de crecimiento IA",
-    "escenarios": "Traders vigilarán si el rally se sostiene en apertura regular o es taking-profit; también si guidance futura es tan fuerte como los resultados. Monitorearán ratio P/E implícito.",
-    "riesgos": "El titular no incluye guidance ni márgenes operativos; podría haber decepción si la calidad de ganancias es débil o si management reduce outlook"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
    "id": 968016161,
    "fecha": "2026-08-03T20:57:02.000Z",
    "tgUrl": "https://www.cnbc.com/2026/08/03/trump-tariffs-25-states-lawsuit-supreme-court.html",
@@ -531,60 +526,6 @@
    "updates": []
   },
   {
-   "id": 953588981,
-   "fecha": "2026-08-03T20:09:19.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/faa-boeing-737-max-certification.html",
-   "via": "CNBC",
-   "original": "FAA clears smallest Boeing 737 Max to fly after years of delays",
-   "titulo": "FAA autoriza vuelo del Boeing 737 Max más pequeño tras años de demoras",
-   "resumen": "La Administración Federal de Aviación (FAA) otorgó aprobación definitiva para que el Boeing 737 Max 7 —la variante más compacta de la familia Max— entre en operación comercial. Esta autorización cierra un ciclo de certificación prolongado por revisiones de seguridad.",
-   "analisis": {
-    "porque": "Despeje regulatorio de Boeing libera restricción productiva y de ingresos; impulsa cash flow e impacta cadena de suministro aeronáutico. Afecta valuación de BA y proveedores.",
-    "queOcurrio": "FAA completó certificación y autorizó operaciones comerciales del 737 Max 7, modelo con menor capacidad que otras versiones Max pero crítico para portafolios de clientes.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "BA",
-    "Aeronáutica",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "BA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Aeronáutica",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Boeing",
-    "737-Max",
-    "FAA",
-    "certificación",
-    "aviación"
-   ],
-   "tgText": "✈️ FAA aprueba Boeing 737 Max 7 para vuelos comerciales tras años de revisión. Despeje regulatorio libera producción y cash flow.",
-   "xText": "FAA certifica Boeing 737 Max 7 para operaciones comerciales. Despeje de restricción regulatoria después de ciclo prolongado de certificación.",
-   "discordText": "**BOEING 737 MAX 7 - FAA CLEARANCE**\n• Certificación completada\n• Autorización para vuelos comerciales\n• Libera restricciones productivas\n• Impacto: BA + supply chain aeronáutica",
-   "pushText": "FAA aprueba Boeing 737 Max 7; despeje regulatorio",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Boeing (BA) reacciona al despeje de restricción de producción; afecta guidance de entregas y generación de flujo de caja",
-    "despues": "Proveedores aeronáuticos (Spirit AeroSystems, Raytheon, Lockheed) y energía (menor costo operativo) podrían beneficiarse. Índices industriales responden.",
-    "escenarios": "Traders vigilarán velocidad de ramp-up en producción, pedidos confirmados para Max 7, y si Boeing mejora guidance de 2026-2027. Monitorearán cash generation.",
-    "riesgos": "Aprobación regulatoria no garantiza demanda inmediata de clientes; Max 7 es versión menos demandada que Max 8. Riesgo: que new orders no materializan según mercado espera."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
    "id": 936408330,
    "fecha": "2026-08-03T20:02:17.000Z",
    "tgUrl": "https://www.cnbc.com/2026/08/03/amazon-amzn-stock-market-cap-earnings.html",
@@ -649,6 +590,131 @@
     "bonos": null
    },
    "updates": []
+  },
+  {
+   "id": 953588981,
+   "fecha": "2026-08-03T20:09:19.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/faa-boeing-737-max-certification.html",
+   "via": "CNBC",
+   "original": "FAA clears smallest Boeing 737 Max to fly after years of delays",
+   "titulo": "FAA autoriza vuelo del Boeing 737 Max más pequeño tras años de demoras",
+   "resumen": "La Administración Federal de Aviación (FAA) otorgó aprobación definitiva para que el Boeing 737 Max 7 —la variante más compacta de la familia Max— entre en operación comercial. Esta autorización cierra un ciclo de certificación prolongado por revisiones de seguridad.",
+   "analisis": {
+    "porque": "Despeje regulatorio de Boeing libera restricción productiva y de ingresos; impulsa cash flow e impacta cadena de suministro aeronáutico. Afecta valuación de BA y proveedores.",
+    "queOcurrio": "FAA completó certificación y autorizó operaciones comerciales del 737 Max 7, modelo con menor capacidad que otras versiones Max pero crítico para portafolios de clientes.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "BA",
+    "Aeronáutica",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "BA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Aeronáutica",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Boeing",
+    "737-Max",
+    "FAA",
+    "certificación",
+    "aviación"
+   ],
+   "tgText": "✈️ FAA aprueba Boeing 737 Max 7 para vuelos comerciales tras años de revisión. Despeje regulatorio libera producción y cash flow.",
+   "xText": "FAA certifica Boeing 737 Max 7 para operaciones comerciales. Despeje de restricción regulatoria después de ciclo prolongado de certificación.",
+   "discordText": "**BOEING 737 MAX 7 - FAA CLEARANCE**\n• Certificación completada\n• Autorización para vuelos comerciales\n• Libera restricciones productivas\n• Impacto: BA + supply chain aeronáutica",
+   "pushText": "FAA aprueba Boeing 737 Max 7; despeje regulatorio",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Boeing (BA) reacciona al despeje de restricción de producción; afecta guidance de entregas y generación de flujo de caja",
+    "despues": "Proveedores aeronáuticos (Spirit AeroSystems, Raytheon, Lockheed) y energía (menor costo operativo) podrían beneficiarse. Índices industriales responden.",
+    "escenarios": "Traders vigilarán velocidad de ramp-up en producción, pedidos confirmados para Max 7, y si Boeing mejora guidance de 2026-2027. Monitorearán cash generation.",
+    "riesgos": "Aprobación regulatoria no garantiza demanda inmediata de clientes; Max 7 es versión menos demandada que Max 8. Riesgo: que new orders no materializan según mercado espera."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-03T19:23:04.000Z",
+     "id": 951767080,
+     "texto": "Boeing experimenta rally accionario impulsado por tres factores favorables no especificados en el titular. La noticia refleja renovación de sentimiento positivo en el fabricante de aeronaves tras período de presión regulatoria.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/a-trio-of-positive-developments-has-boeing-shares-soaring.html"
+    }
+   ],
+   "actualizado": "2026-08-03T19:23:04.000Z"
+  },
+  {
+   "id": 911409007,
+   "fecha": "2026-08-03T21:34:43.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
+   "via": "CNBC",
+   "original": "Palantir soars 12% on blowout quarter, with U.S. commercial revenue soaring nearly 150%",
+   "titulo": "Palantir dispara 12% tras resultados extraordinarios; ingresos comerciales USA suben 150%",
+   "resumen": "Palantir Technologies reportó un trimestre excepcional con crecimiento de ingresos comerciales en USA cercano al 150%. La acción subió 12% en sesión extendida. El titular no especifica márgenes, guidance futura ni cifras absolutas de ingresos, solo el ritmo de crecimiento comercial.",
+   "analisis": {
+    "porque": "Movimiento de precio de double dígit en una acción de gran capitalización indica un reajuste significativo de expectativas de mercado sobre crecimiento y rentabilidad. Afecta valuaciones en tech y IA.",
+    "queOcurrio": "Palantir publicó resultados trimestrales que superaron expectativas, con énfasis en expansión acelerada del segmento comercial en Estados Unidos, generando compra masiva en after-hours.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "PLTR",
+    "NASDAQ",
+    "Tech",
+    "IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "PLTR",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Palantir",
+    "earnings",
+    "crecimiento-comercial",
+    "tech",
+    "IA"
+   ],
+   "tgText": "🚀 PLTR dispara 12% en after-hours tras trimestre extraordinario. Ingresos comerciales USA suben ~150%. Reajuste alcista de expectativas en tech/IA.",
+   "xText": "📈 Palantir sube 12% en after-hours con resultados excepcionales. Ingresos comerciales USA crecen ~150%. Movimiento significativo en tech.",
+   "discordText": "**PALANTIR EARNINGS BEAT**\n• Acción sube 12% en after-hours\n• Ingresos comerciales USA +150%\n• Reajuste alcista en expectativas\n• Impacto: Tech/IA",
+   "pushText": "PLTR +12% tras earnings; ingresos comerciales +150%",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "PLTR reacciona inmediatamente por ser noticia de earnings; volumen after-hours concentra traders institucionales",
+    "despues": "Sector tech y acciones IA vinculadas (NVDA, MSFT, CRM) pueden seguir por efecto momentum y revalúo de narrativa de crecimiento IA",
+    "escenarios": "Traders vigilarán si el rally se sostiene en apertura regular o es taking-profit; también si guidance futura es tan fuerte como los resultados. Monitorearán ratio P/E implícito.",
+    "riesgos": "El titular no incluye guidance ni márgenes operativos; podría haber decepción si la calidad de ganancias es débil o si management reduce outlook"
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-03T18:34:52.000Z",
+     "id": 979642223,
+     "texto": "Análisis del mercado de opciones sobre Palantir Technologies explora si la empresa puede replicar el ciclo alcista estilo Microsoft. Los datos de opciones reflejan expectativa de continuidad en la tendencia alcista tras resultados recientes.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/can-palantir-pull-off-a-microsoft-style-comeback-heres-what-options-say.html"
+    }
+   ],
+   "actualizado": "2026-08-03T18:34:52.000Z"
   },
   {
    "id": "33908",
@@ -881,6 +947,62 @@
    "actualizado": "2026-08-03T18:13:56+00:00"
   },
   {
+   "id": 969300751,
+   "fecha": "2026-08-03T18:12:11.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/dividend-stocks-outperformed-the-sp-in-july-wall-street-says-these-names-will-go-higher-.html",
+   "via": "CNBC",
+   "original": "Dividend stocks outperformed the S&P in July. Wall Street says these names will go higher",
+   "titulo": "Acciones de dividendos superaron S&P 500 en julio; Wall Street alista nuevas compras",
+   "resumen": "Las acciones que pagan dividendos tuvieron mejor desempeño que el S&P 500 durante julio, según análisis de Wall Street. Analistas señalan que estos valores podrían continuar ganando terreno en un ambiente de tasas de interés elevadas.",
+   "analisis": {
+    "porque": "Rotación de capital hacia dividendos indica cambio de preferencia por ingresos en lugar de apreciación; refleja expectativa de tasas sostenidas y menor crecimiento. Afecta valuaciones y composición de carteras.",
+    "queOcurrio": "Acciones de dividendos superaron el S&P 500 en julio; Wall Street analistas predicen continuidad.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Acciones Dividendos",
+    "Utilities",
+    "Energía",
+    "REITs"
+   ],
+   "sesgos": [
+    {
+     "activo": "Acciones Dividendos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Tech de Crecimiento",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "dividendos",
+    "rotación-sectorial",
+    "s&p500",
+    "ingresos",
+    "tasas-altas"
+   ],
+   "tgText": "💰 Acciones de dividendos superan S&P 500 en julio; Wall Street ve espacio para más ganancias en ambiente de tasas elevadas.",
+   "xText": "📈 Dividend stocks outperform S&P 500 en julio. Wall Street bullish en continuidad para acciones generadoras de ingresos.",
+   "discordText": "**Rotación a dividendos en marcha**\n• Supera S&P 500 en julio\n• Reflects tasas altas y menor crecimiento\n• Wall Street ve espacio alcista continuado",
+   "pushText": "Dividendos superan S&P 500; Wall Street ve más ganancias",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Utilities, REITs y acciones de dividendos en energía; rendimientos en beneficio por ingresos asegurados en tasas altas.",
+    "despues": "Tech de crecimiento bajo presión relativa; inversores evalúan trade-off entre dividendo seguro vs apreciación.",
+    "escenarios": "Traders vigilan si rotación continúa o si estabilización de tasas genera retorno a growth; monitorean cambios en preferencia de asignación institucional.",
+    "riesgos": "Titular no especifica criterios de Wall Street ni horizonte de análisis; rotaciones pueden revertirse rápido si tasas bajan."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
    "id": 33901,
    "fecha": "2026-08-03T17:36:14+00:00",
    "tgUrl": "https://t.me/walterbloomberg/33901",
@@ -951,6 +1073,61 @@
    "updates": []
   },
   {
+   "id": 910493406,
+   "fecha": "2026-08-03T17:28:17.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/hugging-face-china-ai-race-open-models.html",
+   "via": "CNBC",
+   "original": "Hugging Face CEO says China is winning the AI race and dominating on open models",
+   "titulo": "CEO de Hugging Face advierte: China gana carrera de IA y domina modelos abiertos",
+   "resumen": "El líder de Hugging Face señala que China está ganando la competencia en inteligencia artificial, particularmente en modelos de código abierto, desafiando la supremacía tecnológica occidental. La evaluación toca un tema crítico para geopolítica tecnológica y competencia corporativa en IA.",
+   "analisis": {
+    "porque": "Afecta narrativa de liderazgo tecnológico occidental; impacta valuaciones de empresas USA de IA, política de exportación de chips y presupuestos de defensa tecnológica.",
+    "queOcurrio": "CEO de Hugging Face declara que China está ganando en carrera de IA, dominando en modelos abiertos frente a competidores occidentales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Semiconductores",
+    "Empresas IA",
+    "Geopolítica Tecnológica"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Big Tech IA",
+     "sesgo": "mixto"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "IA",
+    "China",
+    "modelos-abiertos",
+    "competencia-tecnológica",
+    "geopolítica"
+   ],
+   "tgText": "⚠️ CEO Hugging Face: China gana carrera de IA y domina modelos abiertos. Impacto en competencia tecnológica y valuaciones de empresas USA.",
+   "xText": "🤖 Hugging Face CEO: China ganando en IA y dominando modelos abiertos. Reto crítico para liderazgo tecnológico occidental.",
+   "discordText": "**China avanza en IA según Hugging Face**\n• CEO: China gana carrera y domina código abierto\n• Impacto en narrativa de supremacía tecnológica\n• Afecta valuaciones de Big Tech y semis USA",
+   "pushText": "Hugging Face: China gana carrera de IA y modelos abiertos",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Semiconductores y Big Tech de IA (NVIDIA, SMCI, etc.) por riesgo a márgenes y restricciones de exportación; luego mercado amplifica si hay reacción política.",
+    "despues": "Bonos USA pueden endurecerse por inversión defensiva en defensa tecnológica; narrativa geopolítica impacta confianza en activos tech.",
+    "escenarios": "Traders vigilan si reacción política genera restricciones de exportación de chips; revisan impacto en márgenes de fabless y foundries; anticipan posible aumento de gasto en defensa tecnológica.",
+    "riesgos": "Opinión de ejecutivo, no dato verificable; no especifica métricas de comparación; China publica poco sobre desarrollo de IA, dificulta validación."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
    "id": 33899,
    "fecha": "2026-08-03T17:10:18+00:00",
    "tgUrl": "https://t.me/walterbloomberg/33899",
@@ -1009,6 +1186,75 @@
     "ethereum": "neutral",
     "bonos": "alcista (presión inflacionaria menor)",
     "petroleo": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": 916011939,
+   "fecha": "2026-08-03T16:54:19.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
+   "via": "CNBC",
+   "original": "Manufacturing survey shows inflation worries &apos;worse than pandemic era,&apos; adding to Fed pressure",
+   "titulo": "Encuesta manufacturera muestra presión inflacionaria peor que era pandémica",
+   "resumen": "Un relevamiento de manufactura revela que las preocupaciones inflacionarias superan los niveles registrados durante la pandemia de COVID-19, intensificando la presión sobre la Reserva Federal para ajustar su política monetaria. El indicador sugiere que la inflación sigue siendo una amenaza persistente en el sector industrial.",
+   "analisis": {
+    "porque": "Evidencia empírica de inflación en manufactura con impacto directo en decisiones de política monetaria de la Fed; determina trayectoria de tasas de interés y mercados de renta fija.",
+    "queOcurrio": "Un survey manufacturero indica preocupaciones inflacionarias más agudas que durante la pandemia, presionando al banco central.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Fed",
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Inflación",
+   "keywords": [
+    "manufactura",
+    "inflación",
+    "Fed",
+    "política-monetaria",
+    "tasas"
+   ],
+   "tgText": "📊 Encuesta manufacturera muestra presión inflacionaria peor que en pandemia, intensificando presión sobre la Fed para ajustar tasas.",
+   "xText": "🚨 Survey manufacturero: preocupaciones inflacionarias superan niveles pandémicos. Presión creciente sobre Fed para movimientos de tasas.",
+   "discordText": "**Manufactura en alerta inflacionaria**\n• Encuesta muestra presión peor que pandemia\n• Presión directa sobre decisiones de la Fed\n• Impacto esperado en tasas y renta fija",
+   "pushText": "Manufactura: inflación peor que pandemia, presiona Fed",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Bonos USA y rendimientos de largo plazo (presión alcista en yields); luego DXY por expectativa de tasas más altas.",
+    "despues": "S&P500 y NASDAQ caen por anticipación de ciclo restrictivo extendido; criptomonedas bajo presión por tasas reales más altas.",
+    "escenarios": "Traders vigilan si Fed reconoce inflación persistente; mercado precifica aceleración de política restrictiva; impacto en forward guidance del banco central.",
+    "riesgos": "Titular no especifica si es PMI manufacturero, ISM u otra métrica; no detalla magnitud de preocupaciones versus pandemia."
+   },
+   "macro": {
+    "dolar": "alcista por tasas más altas",
+    "oro": "bajista por tasas reales crecientes",
+    "nasdaq": "bajista por ciclo restrictivo",
+    "dow": "bajista por ciclo restrictivo",
+    "sp500": "bajista por ciclo restrictivo",
+    "bonos": "presión de venta",
+    "petroleo": "neutral a alcista por demanda fuerte"
    },
    "updates": []
   },
@@ -7369,246 +7615,6 @@
     "coin": "bajista"
    },
    "updates": []
-  },
-  {
-   "id": "988280950",
-   "fecha": "2026-07-30T21:31:31.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
-   "via": "CNBC",
-   "original": "Amazon hikes 2026 capex to $220 billion due to higher memory costs",
-   "titulo": "Amazon amplía capex a $220B en 2026 por costos de memoria; inversión IA se intensifica",
-   "resumen": "Amazon incrementa su gasto de capital para 2026 a $220 mil millones, impulsado por mayores costos de memoria asociados a infraestructura de inteligencia artificial. La escalada confirma la estrategia agresiva del gigante tecnológico en data centers y capacidad computacional para sustentar demanda de servicios IA, profundizando apuestas previas.",
-   "analisis": {
-    "porque": "Señala intensificación de guerra de capex entre gigantes tech en IA; afecta narrativa de rentabilidad a corto plazo y presiona márgenes operativos. Relevante para evaluación de sostenibilidad de inversiones masivas en IA.",
-    "queOcurrio": "Amazon anuncia incremento de gasto de capital a $220 mil millones para 2026, con mayor asignación a costos de memoria por infraestructura IA.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "AMZN",
-    "Semiconductores",
-    "Tech Mega Cap"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMZN",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Tech Mega Cap",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Amazon",
-    "capex",
-    "IA",
-    "infraestructura",
-    "memoria",
-    "data-center"
-   ],
-   "tgText": "📊 Amazon sube capex a $220B para 2026 por costos memoria IA. Inversión masiva en infraestructura confirma apuesta estratégica pero presiona márgenes corto plazo.",
-   "xText": "Amazon eleva gasto capital a $220B en 2026 por costos memoria en IA. Intensifica carrera tech por infraestructura computacional. Impacto: márgenes y rentabilidad bajo presión.",
-   "discordText": "**Amazon amplía capex a $220B (2026)**\n• Incremento por costos memoria IA\n• Presión en márgenes operativos\n• Estrategia agresiva en data centers",
-   "pushText": "Amazon sube capex a $220B por IA; presiona márgenes",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "AMZN reacciona directamente: mercado evalúa sostenibilidad de rentabilidad con capex tan agresivo. Riesgo de rebaja de márgenes operativos futura.",
-    "despues": "Semiconductores (AMD, NVDA, QCOM) podrían subir por demanda de chips; NASDAQ y tech mega cap evalúan si este es modelo sectorial",
-    "escenarios": "Traders vigilarán: (1) si capex justifica ingresos IA futuros, (2) presión en FCF y ratios de rentabilidad, (3) si competencia (MSFT, GOOG) sigue escalada similar",
-    "riesgos": "Titular no especifica si $220B es aumento respecto a presupuesto anterior ni breakdown exacto entre IA vs. otros segmentos. Riesgo de interpretación distinta según call de earnings."
-   },
-   "macro": {
-    "nasdaq": "presión media por margen de duda en rentabilidad",
-    "amzn": "neutral a bajista corto plazo",
-    "semiconductores": "potencialmente alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "966969587",
-   "fecha": "2026-07-30T21:29:19.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html",
-   "via": "CNBC",
-   "original": "AI investor Leopold Aschenbrenner forced to unwind all public stock positions after steep losses, sources say",
-   "titulo": "Inversor IA Leopold Aschenbrenner forzado a desmontar posiciones por pérdidas significativas",
-   "resumen": "Leopold Aschenbrenner, conocido inversor en inteligencia artificial, se ve obligado a liquidar todas sus posiciones públicas en acciones tras enfrentar pérdidas significativas. El evento refleja volatilidad extrema en estrategias de apuestas concentradas en IA y riesgo de desapalancamiento forzado.",
-   "analisis": {
-    "porque": "Ilustra riesgo de apalancamiento y concentración extrema en trades temáticos de IA. Puede señalar punto de capitulación en narrativa de IA o marcar límite de fondeo especulativo. Precedente similar: despalancamientos globales.",
-    "queOcurrio": "Aschenbrenner, inversor prominente en IA, fuerza liquidación de todas posiciones públicas tras pérdidas marcadas. Fuentes anónimas citan acción.",
-    "estado": "rumor",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "NASDAQ",
-    "Tech Mega Cap",
-    "Acciones IA"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Tech temático IA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Aschenbrenner",
-    "IA",
-    "pérdidas",
-    "despalancamiento",
-    "riesgo-liquidez"
-   ],
-   "tgText": "⚠️ Inversor IA Aschenbrenner liquida posiciones por pérdidas. Señal de riesgo de apalancamiento en trades temáticos IA y potencial despalancamiento.",
-   "xText": "Inversor IA Leopold Aschenbrenner forzado a liquidar posiciones por pérdidas. Alerta sobre riesgo de despalancamiento en trades temáticos IA.",
-   "discordText": "**Alerta: Despalancamiento IA**\n• Inversor Aschenbrenner liquida posiciones\n• Causa: pérdidas significativas\n• Riesgo: efecto dominó en estrategias concentradas",
-   "pushText": "Inversor IA Aschenbrenner liquida posiciones por pérdidas",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones temáticas de IA podrían caer por efecto psicológico y presión de liquidaciones conectadas. NASDAQ reacciona con cautela.",
-    "despues": "Si hay confirmación de mayor despalancamiento, fondos correlacionados podrían sufrir presión. Volatilidad implícita (VIX) podría subir.",
-    "escenarios": "Traders vigilarán: (1) si hay más liquidaciones forzadas similares, (2) nivel de apalancamiento en hedge funds temáticos, (3) contagio a correlacionados, (4) puntos de resistencia técnica en acciones IA",
-    "riesgos": "Información proviene de 'fuentes' anónimas: estatus es rumor no confirmado oficialmente. Podría ser manipulación o información parcial. Impacto real depende de si hay liquidaciones en cascada."
-   },
-   "macro": {
-    "nasdaq": "bajista potencial",
-    "volatilidad": "muy alta"
-   },
-   "updates": []
-  },
-  {
-   "id": "907659257",
-   "fecha": "2026-07-30T21:19:16.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/rivian-rivn-q2-2026-earnings.html",
-   "via": "CNBC",
-   "original": "Rivian reduces 2026 spending plans, narrows earnings guidance",
-   "titulo": "Rivian reduce gasto 2026 y limita guía de ganancias; presión en EV startup",
-   "resumen": "Rivian anuncia reducción de planes de gasto capital para 2026 y estrecha su guía de ganancias, señalando desafíos de rentabilidad y presiones operativas. La acción refleja desaceleración de demanda de vehículos eléctricos premium y necesidad de ajuste de estructura de costos.",
-   "analisis": {
-    "porque": "Rivian es proxy de salud del segmento EV premium. Reducción de capex y guía acotada cuestionan viabilidad de producción escalada y narrativa de crecimiento. Relevante para evaluación de competencia vs. Tesla.",
-    "queOcurrio": "Rivian reduce planes de gasto capital para 2026 y estrecha su guía de ganancias, indicando presiones de rentabilidad.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "RIVN",
-    "EV",
-    "Automóvil",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "RIVN",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "EV",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Rivian",
-    "capex",
-    "guía-earnings",
-    "EV",
-    "rentabilidad"
-   ],
-   "tgText": "📉 Rivian reduce capex 2026 y limita guía ganancias. EV startup presionada por demanda débil y desafíos de rentabilidad.",
-   "xText": "Rivian recorta capex 2026 y acota guía earnings. EV startup enfrenta desafíos de demanda y rentabilidad.",
-   "discordText": "**Rivian: presión operativa**\n• Capex 2026 reducido\n• Guía ganancias acotada\n• EV startup bajo presión demanda",
-   "pushText": "Rivian reduce capex; limita guía de ganancias",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "RIVN cae. Mercado reprecia expectativas de producción y rentabilidad futura.",
-    "despues": "Otros EV makers (Lucid, Fisker) podrían sufrir presión por efecto sectorial de pesimismo.",
-    "escenarios": "Traders vigilarán: (1) si recorte de capex limita capacidad de producción competitiva, (2) márgenes unitarios de vehículos, (3) impacto en timelines de modelos nuevos, (4) cash runway vs. burn rate",
-    "riesgos": "Titular no especifica magnitud de recorte de capex ni detalles de guía acotada (ingresos, EBITDA, unidades). Contexto insuficiente para evaluar severidad real."
-   },
-   "macro": {
-    "rivn": "bajista",
-    "ev": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33774",
-   "fecha": "2026-07-30T20:55:57+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33774",
-   "via": "DeItaone",
-   "original": "APPLE BEATS ESTIMATES ON IPHONE, MAC STRENGTH Results EPS: $2.02 ($1.91 ex-tariff refunds) vs. $1.89 est. ✅ Revenue: $109.42B vs. $108.65B est. ✅ Gross Margin: 50.1% (48.1% ex-tariff refunds) vs. 47.9% est. ✅ iPhone Revenue: $54.25B vs. $53.86B est. ✅ Mac Revenue: $10.35B vs. $8.74B est. ✅ iPad Revenue: $6.19B vs. $6.92B est. ❌ Services Revenue: $30.74B vs. $31.22B est. ❌ Wearables Revenue: $7.88B",
-   "titulo": "Apple supera estimaciones con fortaleza en iPhone y Mac; márgenes se expanden",
-   "resumen": "Apple reportó EPS de $2,02 (vs. $1,89 est.) e ingresos de $109,42B (vs. $108,65B est.). iPhone generó $54,25B (+$0,39B vs. est.), Mac alcanzó $10,35B (+$1,61B), e ingresos por servicios cayeron a $30,74B vs. $31,22B esperado. Margen bruto llegó a 50,1% (ex-reembolsos de aranceles: 48,1% vs. 47,9% est.). China creció 22,4% YoY. Las acciones cayeron ~4% en trading extendido pese a superar expectativas.",
-   "analisis": {
-    "porque": "Resulta crítico para inversores tech en Latinoamérica: muestra fortaleza de demanda de hardware pese a presiones arancelarias, pero el declive en servicios y la caída post-earnings sugieren cautela sobre valoraciones actuales. El margen bruto sorprendentemente fuerte (con reembolsos de aranceles) indica presión de costos de manufactura.",
-    "queOcurrio": "Apple publicó resultados que superaron expectativas de EPS y ingresos totales, con márgenes brutos expandidos. Sin embargo, los ingresos de servicios cayeron vs. estimaciones y las acciones perdieron ~4% en after-hours, indicando posible profit-taking o dudas sobre guía futura.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Institucional (vía @DeItaone)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AAPL",
-    "NASDAQ",
-    "S&P500",
-    "Tecnología"
-   ],
-   "sesgos": [
-    {
-     "activo": "AAPL",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Apple",
-    "earnings",
-    "iPhone",
-    "servicios",
-    "márgenes",
-    "China",
-    "AAPL"
-   ],
-   "tgText": "📱 Apple supera EPS ($2,02 vs $1,89) e ingresos ($109,42B vs $108,65B), pero servicios decepcionan. Márgenes en 50,1%. Acción cae 4% post-earnings. Fortaleza en China: +22,4% YoY.",
-   "xText": "Apple bate estimaciones: EPS $2,02 vs $1,89 est., ingresos $109,42B vs $108,65B. iPhone y Mac sólidos, pero servicios caen. Márgenes en 50,1%. Acciones ↓4% post-earnings. #AAPL #Tech",
-   "discordText": "**Apple Earnings Beat (AAPL)**\n• EPS: $2,02 vs $1,89 est. ✅\n• Ingresos: $109,42B vs $108,65B est. ✅\n• iPhone: $54,25B; Mac: $10,35B ✅\n• Servicios: $30,74B (bajo) ❌\n• Margen bruto: 50,1% ✅\n• China: +22,4% YoY ✅\n• Acción: ↓~4% after-hours",
-   "pushText": "Apple supera estimaciones pero cae 4%; servicios decepcionan",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "AAPL y NASDAQ futures reaccionan inmediatamente: caída inicial sugiere que el mercado había precificado un beat más fuerte o teme ralentización en servicios.",
-    "despues": "S&P500 e índices tech globales revisan posiciones; potencial efecto dominó en otras megacaps tecnológicas (Microsoft, Google) si se interpreta como señal de madurez del ciclo de ciclo.",
-    "escenarios": "Traders vigilarán: (1) si la caída de ~4% es corrección técnica o cambio de sentimiento hacia tech; (2) guía de márgenes futura (¿sostenibles los 50%?); (3) si la debilidad en servicios anticipa desaceleración de consumo; (4) impacto de aranceles en márgenes ex-reembolsos.",
-    "riesgos": "El titular no especifica si la caída es debida a guía débil, forward estimates bajistas o simple profit-taking. Riesgo de malinterpretación si el mercado esperaba beat más robusto en servicios."
-   },
-   "macro": {
-    "nasdaq": "Presión inicial; vigilar si se extiende a otras techs",
-    "sp500": "Posible ajuste de valuaciones en sector",
-    "aapl": "Volatilidad aumentada; traders revisan modelos de margen"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7867,6 +7873,14 @@
   "https://www.cnbc.com/2026/08/03/bessent-fed-japan-yen-fima-repo-facility.html",
   "https://www.cnbc.com/2026/08/03/stock-market-today-live-updates.html",
   "https://www.cnbc.com/2026/08/04/india-lic-stake-sale-discount.html",
-  "https://www.cnbc.com/2026/08/04/grab-earnings-ai-forecast-cfo-.html"
+  "https://www.cnbc.com/2026/08/04/grab-earnings-ai-forecast-cfo-.html",
+  "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
+  "https://www.cnbc.com/2026/08/03/electric-lsv-stellantis-fiat-toppolino.html",
+  "https://www.cnbc.com/2026/08/03/hugging-face-china-ai-race-open-models.html",
+  "https://www.cnbc.com/2026/08/03/dividend-stocks-outperformed-the-sp-in-july-wall-street-says-these-names-will-go-higher-.html",
+  "https://www.cnbc.com/2026/08/03/can-palantir-pull-off-a-microsoft-style-comeback-heres-what-options-say.html",
+  "https://www.cnbc.com/2026/08/03/a-trio-of-positive-developments-has-boeing-shares-soaring.html",
+  "https://www.cnbc.com/2026/08/04/hsbc-profit-beats-estimates-higher-net-interest-income-fees.html",
+  "https://www.cnbc.com/2026/08/04/saudi-aramco-earnings-2q-oil-iran-war.html"
  ]
 }
