@@ -1,7 +1,41 @@
 {
- "lastId": 34004,
- "actualizado": "2026-08-04T20:45:28.894Z",
+ "lastId": 34010,
+ "actualizado": "2026-08-04T21:58:44.462Z",
  "items": [
+  {
+   "id": "34010",
+   "fecha": "2026-08-04T21:41:09+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34010",
+   "via": "DeItaone",
+   "original": "TRUMP CLAIMS RECORD POLL NUMBERS Trump says his “real” poll numbers are the highest they’ve ever been, rejecting media polls as “fake.” He credits tax cuts, jobs, border security, foreign investment, Venezuela, and Iran for his support. He urges Americans to “Vote Republican for greatness in America.”",
+   "titulo": "Trump reclama récords en encuestas de aprobación",
+   "resumen": "Trump afirmó tener «los números reales de encuestas más altos de todos los tiempos» y rechazó sondeos mediáticos como «falsos». Atribuye apoyo a recortes fiscales, empleo, seguridad fronteriza, inversión extranjera, Venezuela e Irán. Urge votar republicano. El titular no cita números verificables ni contexto electoral específico.",
+   "analisis": {
+    "porque": "Bajo impacto para mercados: es claim político sin soporte cuantificable. Irrelevante para trading macro a menos que genere cambios políticos mesurables. No tiene ángulo de mercado claro.",
+    "queOcurrio": "Trump hizo declaración pública sobre niveles de aprobación percibidos.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [],
+   "sesgos": [],
+   "volatilidad": "baja",
+   "categoria": "Breaking News",
+   "keywords": [
+    "trump",
+    "politica",
+    "encuestas"
+   ],
+   "tgText": null,
+   "xText": null,
+   "discordText": null,
+   "pushText": null,
+   "importancia": 2,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "34001",
    "fecha": "2026-08-04T20:42:09+00:00",
@@ -58,6 +92,81 @@
     "despues": "AMD, QCOM: mercado reprecia riesgo de exclusión en mercados edge/IoT/espacio; ambas pueden caer -1 a -2% en ajuste de expectativa de TAM. Semicon índice se refuerza por NVDA peso.",
     "escenarios": "Traders vigilan: (1) si exclusividad SpaceX es precedente para otros satélites/clientes (Amazon, OneWeb, etc.) o aislado, (2) márgenes Nvidia en aplicaciones espaciales vs data center, (3) geopolítica: Nvidia exclusiva SpaceX simplifica narrative anti-China en cadena crítica USA.",
     "riesgos": "Anuncio sin detalles de contrato; exclusividad podría ser aspiracional (roadmap) vs contractual vinculante. Si clientes SpaceX presionan costo/flexibilidad, cambio podría revertirse. AMD/QUALCOMM podrían reposicionarse con soluciones edge competitivas."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-04T21:38:25+00:00",
+     "id": "34009",
+     "texto": "Nvidia fue incluida en reunión entre administración Trump y empresas desarrolladoras de IA, según dos fuentes familiarizadas con las discusiones. El titular no especifica agenda, participantes exactos ni resultados, pero refleja rol central de Nvidia en políticas de IA de la administración.",
+     "tgUrl": "https://t.me/walterbloomberg/34009"
+    },
+    {
+     "fecha": "2026-08-04T21:05:42+00:00",
+     "id": "34005",
+     "texto": "Elon Musk confirmó que SpaceX espera recibir un «porcentaje significativo» de GPUs Nvidia durante 2027. Esta declaración refuerza la estrategia de dependencia de chips Nvidia para operaciones de inteligencia artificial y satélites. El titular no especifica volumen exacto ni timeline preciso.",
+     "tgUrl": "https://t.me/walterbloomberg/34005"
+    }
+   ],
+   "actualizado": "2026-08-04T21:38:25+00:00"
+  },
+  {
+   "id": "34008",
+   "fecha": "2026-08-04T21:36:19+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34008",
+   "via": "DeItaone",
+   "original": "TRUMP ADMINISTRATION TELLS AI COMPANIES IT WILL NOT SAFETY-TEST OPEN WEIGHT AI MODELS - SOURCES FAMILIAR WITH DISCUSSIONS",
+   "titulo": "Trump: no habrá pruebas de seguridad en modelos IA abiertos",
+   "resumen": "Administración Trump comunicó a empresas de IA que no realizará pruebas de seguridad (safety-testing) en modelos de IA de peso abierto, según fuentes familiarizadas con discusiones. Esto contrasta con el enfoque anterior hacia supervisión de capacidades avanzadas y podría acelerar despliegue de modelos open-source sin validación regulatoria.",
+   "analisis": {
+    "porque": "Señal de regulación más laxa en IA. Beneficia a desarrolladores open-source (Meta, etc.) y reduce costos de cumplimiento. Impacta valuación de Nvidia (demanda sin control) y empresas de IA cerradas. Riesgo geopolítico si sistemas abiertos se usan maliciosamente.",
+    "queOcurrio": "Fuentes familiarizadas reportan que Trump administration comunicó que no hará safety-testing en modelos open-weight.",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada (fuentes anónimas)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NVDA",
+    "META",
+    "GOOGL",
+    "MSFT",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "META",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "GOOGL",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Regulación",
+   "keywords": [
+    "ia-regulacion",
+    "open-models",
+    "trump-admin",
+    "safety-ai",
+    "nvidia-demand"
+   ],
+   "tgText": "Trump Admin: SIN pruebas de seguridad en modelos IA abiertos. Acelera despliegue sin validación. Meta gana; demanda Nvidia sube. Riesgo geopolítico.",
+   "xText": "🚨 Trump Admin: no habrá safety-testing en modelos IA abiertos. Regulación laxa = demanda de chips ↑, Meta/open-source aceleran. $NVDA $META $GOOGL",
+   "discordText": "**Regulación IA: giro hacia laxa**\n• Trump administration NO hará safety-testing en open-weight models\n• Acelera despliegue sin validación regulatoria\n• Impacto:\n  - Nvidia: demanda de chips sin restricción\n  - Meta/open-source: ventaja competitiva\n  - Geopolitical risk: sistemas abiertos sin control\n• Estado: Rumor (fuentes anónimas)",
+   "pushText": "Trump: sin pruebas de seguridad en IA abiertos",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "NVDA: remueve ceiling regulatorio, demanda sin restricción (buy signal para semiconductores)",
+    "despues": "META (impulsa open-source), GOOGL (mixed: Gemini vs open competition), MSFT (mixed: Copilot vs open models), NASDAQ tech",
+    "escenarios": "Traders vigilarán: (1) confirmación de policy en comunicados oficiales; (2) reacción de competidores (OpenAI, anthropic); (3) geopolitical blowback (China, EU reguladores); (4) volatilidad en valoraciones de IA-as-moat (vs open commoditization).",
+    "riesgos": "Riesgo ALTO: es rumor (fuentes anónimas, sin confirmación oficial). Si se revierte, mercado podría corregir fuerte. Riesgo geopolítico real: modelos abiertos sin control podrían generar presión regulatoria internacional."
    },
    "macro": null,
    "updates": []
@@ -7457,150 +7566,6 @@
     "dolar": "alcista"
    },
    "updates": []
-  },
-  {
-   "id": "33807",
-   "fecha": "2026-07-31T14:02:30+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33807",
-   "via": "DeItaone",
-   "original": "U.S. CONSUMER SENTIMENT TOPS ESTIMATES University of Michigan consumer sentiment rose to 55.2 in July, above the 54.0 consensus and up from 49.5 in June. One-year inflation expectations held at 4.2%, down from 4.6% in June, while the five-year outlook remained at 3.3%, pointing to stable long-term inflation expectations.",
-   "titulo": "Sentimiento consumidor USA sube a 55,2 en julio; expectativas inflacionarias estables",
-   "resumen": "Sentimiento del consumidor según Universidad de Michigan alcanzó 55,2 en julio, superando consenso 54,0 y anterior 49,5 junio. Expectativas inflacionarias 1Y se estabilizan en 4,2% (desde 4,6%); 5Y se mantienen en 3,3%.",
-   "analisis": {
-    "porque": "Mejora sorpresiva de sentimiento contradice narrativa de debilitamiento económico; anclaje de expectativas inflacionarias 5Y refuerza credibilidad Fed pero sigue 130pb arriba meta",
-    "queOcurrio": "Sentimiento sube a 55,2 (vs 54,0 esperado); inflación 1Y baja a 4,2%; 5Y estable 3,3%",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P 500",
-    "NASDAQ",
-    "USD",
-    "Rendimientos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Acciones",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "michigan-sentiment",
-    "consumer-confidence",
-    "inflacion-expectations",
-    "1y-4pct",
-    "5y-ancla"
-   ],
-   "tgText": "📊 Sentimiento consumidor USA sube a 55,2 (vs 54,0 esperado). Inflación 1Y baja a 4,2%; 5Y estable 3,3%. Sorpresa alcista pero expectativas siguen elevadas.",
-   "xText": "📊 Sentimiento consumidor USA 55,2 (beat 54,0). Expectativas 1Y bajan a 4,2%; 5Y ancladas 3,3%. Sorpresa positiva contradice debilitamiento.",
-   "discordText": "**SENTIMIENTO CONSUMIDOR MEJORA**\n• 55,2 vs 54,0 esperado (beat)\n• Inflación 1Y: 4,2% (baja desde 4,6%)\n• Inflación 5Y: 3,3% (estable, anclada)\n• Contrasta con narrativa debilitamiento",
-   "pushText": "Sentimiento consumidor sube a 55,2; expectativas inflacionarias estables",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "S&P 500 y NASDAQ reciben soporte (consumidor más resiliente); rendimientos podrían aplanar brevemente (datos positivos pero inflación sigue elevada)",
-    "despues": "Si se confirma resiliencia en consumo, mercado podría reducir bets de recesión; pero expectativas 5Y en 3,3% siguen cuestionando credibilidad Fed para llevar inflación a 2%",
-    "escenarios": "Traders vigilarán: próximos datos de gasto/empleo, evolución de inflación core, coherencia con postura Fed hawkish",
-    "riesgos": "Sentimiento podría retroceder si tasas suben más (efecto riqueza negativo en acciones/vivienda); expectativas 1Y siguen altas pese a baja"
-   },
-   "macro": {
-    "sp500": "alcista",
-    "nasdaq": "alcista",
-    "bonos": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33799",
-   "fecha": "2026-07-31T12:36:55+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33799",
-   "via": "DeItaone",
-   "original": "📊 SEPTEMBER FED HIKE BACK IN PLAY The Fed held rates steady and offered no guidance, but markets viewed the meeting as dovish after Chair Kevin Warsh suggested tighter financial conditions may already be doing some of the Fed's work. Despite the pause, three FOMC officials dissented in favor of a 25 bp hike. Kalshi now prices a 53% chance of a September rate hike, versus 46% for no change. https:",
-   "titulo": "Mercados reprecian alza de tasas para septiembre en 53% tras reunión de Fed",
-   "resumen": "Después de mantener tasas sin cambios, mercados interpretaron la reunión de la Fed como dovish tras comentarios de Chair Kevin Warsh sugiriendo que condiciones financieras más restrictivas ya están ejecutando parte del trabajo de política. Kalshi ahora fija probabilidad de alza de 25 pb en septiembre en 53%, versus 46% para mantener. Tres miembros del FOMC disintieron a favor de alza.",
-   "analisis": {
-    "porque": "Repricing de probabilidad de alza monetaria impacta directamente expectativas de tasas futuras, valuaciones de bonos, carry trades y flujos de renta fija. Señal mixta (dovish retórica pero disidencias) genera incertidumbre sobre política próxima.",
-    "queOcurrio": "Fed pausó alzas. Warsh sugirió que restricción financiera ya trabaja. Pero 3 miembros votaron por alza, y mercados vieron esto como dovish, elevando odds de septiembre aunque no de forma unánime.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "muy alto",
-   "breaking": true,
-   "activos": [
-    "Rendimientos USA",
-    "Bonos USA",
-    "DXY",
-    "S&P500",
-    "NASDAQ",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "FED",
-   "keywords": [
-    "fed-tasas",
-    "septiembre-hike",
-    "politica-monetaria",
-    "warsh",
-    "fomc"
-   ],
-   "tgText": "Fed pausa tasas pero mercados ven dovish. Kalshi fija 53% para alza en septiembre vs 46% mantener. Warsh dice restricción financiera ya funciona. 3 miembros FOMC disintieron. Volatilidad esperable.",
-   "xText": "Fed pausa. Warsh: restricción financiera ya trabaja. Mercados ahora ven 53% para alza en septiembre vs 46%. FOMC tuvo 3 disidencias hawkish. Incertidumbre permanece.",
-   "discordText": "**Fed pausa, mercados ajustan odds de septiembre**\n• Tasas mantenidas sin cambios\n• Warsh: restricción financiera ya está operando\n• Kalshi: 53% para alza en septiembre\n• 46% para mantener tasas\n• 3 miembros FOMC votaron por alza\n• Señal mixta, incertidumbre alta",
-   "pushText": "Kalshi: 53% para alza de Fed en septiembre tras reunión dovish",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Rendimientos USA ajustan inmediatamente; bonos venden tras repricing alcista de septiembre",
-    "despues": "DXY sube (tasas alcistas benefician USD), S&P500 y NASDAQ bajan (valuaciones sensibles a tasa), oro repunta (incertidumbre y tasas reales más altas atraen hedge",
-    "escenarios": "Traders vigilarán comentarios de miembros FOMC en próximas semanas para confirmar si hay consenso hacia alza en septiembre. Datos de inflación (agosto) y empleo serán decisivos. Disidencias sugieren FOMC dividido.",
-    "riesgos": "Repricing es rápido; datos débiles podrían revertir probabilidades. Comunicación de la Fed aún es ambigua (dovish en tono pero acción en septiembre posible). Volatilidad esperable en próximas semanas."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "alcista",
-    "nasdaq": "bajista",
-    "dow": "bajista",
-    "sp500": "bajista",
-    "bonos": "bajista",
-    "petroleo": "neutral"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-31T14:01:25+00:00",
-     "id": "33806",
-     "texto": "La gobernadora Lorie Logan argumentó a favor de alzas de 25pb inmediatas, citando que inflación no avanza hacia meta 2% de forma sostenible. Señaló que acción modesta ahora reduce riesgo de endurecimiento más agresivo después; descartó esperar choques inesperados.",
-     "tgUrl": "https://t.me/walterbloomberg/33806"
-    }
-   ],
-   "actualizado": "2026-07-31T14:01:25+00:00"
   }
  ],
  "rssVistos": [
