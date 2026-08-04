@@ -1,7 +1,80 @@
 {
- "lastId": 34010,
- "actualizado": "2026-08-04T21:58:44.462Z",
+ "lastId": 34011,
+ "actualizado": "2026-08-04T23:06:19.198Z",
  "items": [
+  {
+   "id": "34011",
+   "fecha": "2026-08-04T22:02:01+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34011",
+   "via": "DeItaone",
+   "original": "US TREASURY SECRETARY BESSENT: UPTICK IN JAPAN'S INFLATION WAS RESULT OF WEAK YEN, ENERGY PRICES",
+   "titulo": "Tesorero USA Bessent: inflación en Japón impulsada por debilidad del yen y precios energéticos",
+   "resumen": "El Secretario del Tesoro estadounidense Justin Bessent atribuye el repunte inflacionario japonés a dos factores estructurales: la depreciación del yen frente al dólar y el alza en los precios de la energía. El comentario se produce en contexto de divergencia de políticas monetarias entre Fed y Banco de Japón, reflejando presiones inflacionarias globales asimétricamente distribuidas.",
+   "analisis": {
+    "porque": "Revela la interpretación oficial USA sobre dinámicas de inflación importada en Japón, con implicaciones para el ajuste del yen, competitividad de exportaciones japonesas y coordinación de políticas monetarias globales. Afecta expectativas sobre tasas de BoJ y apreciación/depreciación de divisas.",
+    "queOcurrio": "Bessent comentó públicamente que la inflación reciente en Japón no responde a sobrecalentamiento doméstico sino a factores externos: tipo de cambio débil (yen depreciado) que encarece importaciones, y volatilidad de precios energéticos globales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "JPY",
+    "USDJPY",
+    "Nikkei 225",
+    "Bonos Japoneses",
+    "Petróleo",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos Japoneses",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Inflación|Bancos Centrales|Macroeconomía Global",
+   "keywords": [
+    "Japón",
+    "inflación",
+    "yen",
+    "Bessent",
+    "Tesorero USA",
+    "política monetaria",
+    "energía"
+   ],
+   "tgText": "🇺🇸 Bessent (Tesorero USA): inflación en Japón por yen débil y precios energéticos, no sobrecalentamiento. Impacta expectativas de BoJ y USDJPY.",
+   "xText": "Tesorero USA Bessent: inflación japonesa impulsada por depreciación del yen y precios energéticos globales, no presiones domésticas. Clave para dinámicas USDJPY. #Forex #Japón",
+   "discordText": "**Bessent (Tesorero USA):** inflación en Japón NO es doméstica\n• Culpables: yen débil + energía cara\n• Impacto: expectativas BoJ, USDJPY, competitividad exportadora",
+   "pushText": "Bessent: inflación japonesa por yen débil y energía, no demanda interna",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "USDJPY tiende a reaccionar primero ante señales sobre política monetaria relativa; comentarios sobre debilidad del yen refuerzan sesgo alcista en el par (USD aprecia vs JPY).",
+    "despues": "Bonos japoneses (caída de rendimientos si hay expectativa de mayor soporte del BoJ), Nikkei 225 (beneficio por competitividad con yen débil vs presión de importaciones caras), DXY (índice dólar podría consolidar fortaleza).",
+    "escenarios": "Traders monitorean si comentario de Bessent precede presión diplomática en BoJ para mantener tasas bajas; flujos de carry trade podrían intensificarse. Vigilancia sobre convergencia/divergencia de política monetaria G7.",
+    "riesgos": "Titular no incluye magnitudes específicas de inflación; el titular es declaración, no dato económico, por lo que interpretación política varía. Riesgo de sobrerreacción si mercado lee como presión sobre BoJ."
+   },
+   "macro": {
+    "dolar": "alcista (fortaleza vs yen)",
+    "oro": "neutral (presión energética global, pero expectativa de tasas bajas en Japón mitiga)",
+    "nasdaq": "neutral",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "neutral a alcista (Japón: caída de rendimientos esperada)",
+    "petroleo": "confirmado presión alcista sobre Japón (inflación importada)"
+   },
+   "updates": []
+  },
   {
    "id": "34010",
    "fecha": "2026-08-04T21:41:09+00:00",
@@ -7495,77 +7568,6 @@
     }
    ],
    "actualizado": "2026-07-31T14:40:14+00:00"
-  },
-  {
-   "id": "33809",
-   "fecha": "2026-07-31T14:13:26+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33809",
-   "via": "DeItaone",
-   "original": "TREASURY SELLOFF GATHERS MOMENTUM U.S. Treasury yields climbed across the curve after Fed officials Lorie Logan and Beth Hammack defended their calls for a 25 bp rate hike, boosting expectations of near-term tightening. The 10-year Treasury yield rose to 4.737%, its highest intraday level since January 2025, as investors increased bets on higher rates.",
-   "titulo": "Venta de Treasuries escala: rendimiento 10Y roza máximo desde enero 2025",
-   "resumen": "El rendimiento del bono 10Y alcanzó 4,737%, máximo intradía desde enero 2025, tras defensas de funcionarios Fed (Logan, Hammack) de alzas de tasas de 25pb. Venta se amplía en toda la curva por repricing de expectativas de endurecimiento monetario.",
-   "analisis": {
-    "porque": "Repricing masivo de expectativas de tasas afecta valuación de acciones, bonos y valuaciones de empresas; riesgo de ciclo más largo de alza",
-    "queOcurrio": "Rendimiento 10Y sube a 4,737% (máximo desde enero 2025) tras discursos de Fed defendiendo alzas de tasas",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Bonos USA",
-    "Rendimientos 10Y",
-    "NASDAQ",
-    "S&P 500",
-    "Russell 2000",
-    "Utilities"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Tech/NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Utilities",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Financieras",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "FED",
-   "keywords": [
-    "treasuries-selloff",
-    "rendimientos-10y",
-    "fed-logan",
-    "fed-hammack",
-    "repricing-tasas"
-   ],
-   "tgText": "📊 Venta de Treasuries se acelera: rendimiento 10Y sube a 4,737% (máximo desde enero). Logan y Hammack defienden alzas de 25pb; mercado reprecia alza de tasas más agresiva.",
-   "xText": "📈 Rendimiento 10Y alcanza 4,737% (máximo desde enero 2025). Funcionarios Fed (Logan, Hammack) defienden alzas de 25pb, desatando repricing masivo de expectativas.",
-   "discordText": "**VENTA DE TREASURIES ESCALA**\n• 10Y roza 4,737% (máximo desde enero 2025)\n• Logan y Hammack defienden alzas de 25pb\n• Repricing en toda la curva\n• Tech y crecimiento presionados",
-   "pushText": "Treasuries desplomados: 10Y sube a máximo desde enero; Fed hawkish presiona",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "NASDAQ y Tech sufren presión inmediata (valuaciones caen con tasas); rendimientos bonos suben más (venta se auto-refuerza)",
-    "despues": "S&P 500 se rezaga pero también baja; Utilities y financieras se aprecia (tasas más altas = spread bancario); Treasuries de corta duración pueden estabilizarse; dólar sube",
-    "escenarios": "Traders vigilarán: próximo CPI (27 agosto), datos empleo (1 agosto), speeches adicionales de Fed, cambios en curva (inversión), volatilidad VIX, rotación sector",
-    "riesgos": "Venta podría ser insostenible si datos económicos decepcionan (flight-to-safety); Fed podría moderar retórica si mercados se desplomasen; posible overshoot si hay pánico institucional"
-   },
-   "macro": {
-    "bonos": "bajista",
-    "rendimientos10y": "alcista",
-    "nasdaq": "bajista",
-    "sp500": "bajista",
-    "dolar": "alcista"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
