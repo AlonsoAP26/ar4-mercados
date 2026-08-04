@@ -1,7 +1,485 @@
 {
- "lastId": 33908,
- "actualizado": "2026-08-04T06:15:29.048Z",
+ "lastId": 33915,
+ "actualizado": "2026-08-04T09:11:16.668Z",
  "items": [
+  {
+   "id": "33914",
+   "fecha": "2026-08-04T09:07:23+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33914",
+   "via": "DeItaone",
+   "original": "DRY BULK SHIP HIT BY PROJECTILE NEAR STRAIT OF HORMUZ - MARITIME SECURITY SOURCES CREW MEMBERS ABANDONED DRY BULK SHIP HIT NEAR HORMUZ, ONE SEAFARER MISSING – MARITIME SECURITY SOURCES",
+   "titulo": "Barco de carga impactado por proyectil cerca del Estrecho de Ormuz; marinero desaparecido",
+   "resumen": "Un barco de carga seca fue impactado por un proyectil cerca del Estrecho de Ormuz, con la tripulación abandonando la nave. Fuentes de seguridad marítima reportan al menos un marinero desaparecido. El incidente subraya los riesgos crecientes en una de las rutas comerciales más críticas para el petróleo global.",
+   "analisis": {
+    "porque": "Ataques contra buques en Ormuz elevan prima de riesgo de seguros y costos de flete; impacto directo en precios de energía.",
+    "queOcurrio": "Barco carguero golpeado por proyectil, marinero desaparecido, tripulación evacuada.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Fuentes de Seguridad Marítima (Bloomberg)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Transporte Marítimo",
+    "Energía",
+    "Seguros"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Fletes",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Ormuz",
+    "ataque marítimo",
+    "buque carguero",
+    "seguridad",
+    "logística",
+    "petróleo"
+   ],
+   "tgText": "⚠️ Barco de carga atacado en Ormuz; marinero desaparecido. Escalada de riesgos marítimos en ruta crítica de petróleo.",
+   "xText": "⚠️ ALERTA: Barco carguero impactado por proyectil en Ormuz, marinero desaparecido. Riesgo de cierre de ruta crítica global #MarineInsecurity #Geopolitics",
+   "discordText": "**Ataque a buque en Ormuz**\n• Barco de carga seca impactado\n• Marinero desaparecido\n• Tripulación evacuada\n• Ruta crítica bajo estrés",
+   "pushText": "Alerta: barco atacado en Ormuz, marinero desaparecido",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo crudo salta; seguros marítimos y fletes de bunker suben inmediatamente.",
+    "despues": "Índices de transporte marítimo, compañías navieras, energía global.",
+    "escenarios": "Traders monitorean: 1) si hay más ataques, 2) respuesta militar, 3) cierre de Ormuz (ya en 10% según Aramco), 4) compras de crudo defensivas.",
+    "riesgos": "Escalada rápida podría paralizar ruta; petróleo podría romper $90+ en minutos. Riesgo de sobre-reacción vs confirmación de causas."
+   },
+   "macro": {
+    "petroleo": "alcista inmediato",
+    "bonos": "bajista",
+    "dolar": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33913",
+   "fecha": "2026-08-04T09:03:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33913",
+   "via": "DeItaone",
+   "original": "🇯🇵 JAPAN MAY NOT HAVE INTERVENED IN FX MARKET ON MONDAY, BANK OF JAPAN DATA SUGGESTS",
+   "titulo": "Banco de Japón no intervino en mercado FX el lunes, sugieren datos",
+   "resumen": "Según datos del Banco de Japón, la institución no parece haber intervenido en el mercado de divisas el lunes. El titular no especifica contexto, pero en contexto reciente de conversaciones sobre fortalecer el yen (plan Bessent), esto sugiere que BoJ mantuvo postura prudente o aguardó señales adicionales antes de actuar.",
+   "analisis": {
+    "porque": "Intervenciones de BoJ impactan USD/JPY, carry trades, y apetito por riesgo global. Ausencia de acción es también información de mercado.",
+    "queOcurrio": "BoJ no intervino en FX el lunes, según registros.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "USD/JPY",
+    "Yen",
+    "Carry Trades",
+    "NIKKEI"
+   ],
+   "sesgos": [
+    {
+     "activo": "USD/JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Yen",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "BoJ",
+    "Japón",
+    "intervención FX",
+    "yen",
+    "USD/JPY"
+   ],
+   "tgText": "🇯🇵 BoJ no intervino en FX el lunes. Yen bajo presión; USD/JPY sin soporte oficial.",
+   "xText": "🇯🇵 Datos BoJ: sin intervención en FX el lunes. USD/JPY mantiene presión alcista en contexto de carry trades.",
+   "discordText": "**BoJ aguarda en mercado FX**\n• Sin intervención el lunes\n• Yen bajo presión\n• USD/JPY sin soporte oficial\n• Vigilancia de carry trades",
+   "pushText": "BoJ: sin intervención FX el lunes",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "USD/JPY sube si BoJ se abstiene; operadores de carry trades mantienen posiciones cortas de yen.",
+    "despues": "NIKKEI, acciones cíclicas, bonos japoneses.",
+    "escenarios": "Traders monitorean: 1) próximas señales de BoJ, 2) pronunciamientos sobre yen, 3) si hay coordinación con Fed/Tesoro USA.",
+    "riesgos": "Ausencia de intervención es pasiva; riesgo de sorpresa si BoJ actúa sin avisar en próximos días. Carry trade puede desmoronarse rápidamente."
+   },
+   "macro": {
+    "dolar": "alcista vs yen",
+    "jpy": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33912",
+   "fecha": "2026-08-04T09:02:40+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33912",
+   "via": "DeItaone",
+   "original": "$AAPL: DZ Bank Downgrades to Hold from Buy - PT $310",
+   "titulo": "DZ Bank reduce Apple a Hold desde Buy; precio objetivo $310",
+   "resumen": "DZ Bank bajó la recomendación de Apple (AAPL) de Compra a Mantener, con precio objetivo de $310. El analista no especifica razón de downgrade en el titular, pero típicamente cambios de recomendación por valuación, demanda débil o presión de márgenes.",
+   "analisis": {
+    "porque": "Cambios en recomendaciones de grandes bancos de inversión pueden gatillar rotaciones en megacaps tech.",
+    "queOcurrio": "DZ Bank downgrade AAPL de Buy a Hold, PT $310.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "AAPL",
+    "NASDAQ",
+    "Tech",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAPL",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Apple",
+    "AAPL",
+    "downgrade",
+    "DZ Bank",
+    "recomendación",
+    "valuación"
+   ],
+   "tgText": "📉 DZ Bank reduce Apple a Hold desde Buy, PT $310. Potencial presión en megacap tech.",
+   "xText": "📉 DZ Bank: Apple AAPL downgrade de Buy a Hold, precio objetivo $310. Vigilar reacción en NASDAQ.",
+   "discordText": "**Apple bajo presión de analistas**\n• DZ Bank: Buy → Hold\n• Precio objetivo: $310\n• Riesgo: rotación desde megacaps",
+   "pushText": "DZ Bank: Apple downgrade a Hold",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "AAPL y peers mega-cap (MSFT, GOOGL) monitoreados por potencial venta técnica.",
+    "despues": "NASDAQ, índices tech-heavy, si hay efecto dominó en recomendaciones.",
+    "escenarios": "Traders vigilarán: 1) volumen de venta en AAPL, 2) si otros bancos siguen downgrade, 3) si es por valuación o demanda.",
+    "riesgos": "Titular no especifica razón; riesgo de ruido analítico sin fundamento macroeconómico claro."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33833",
+   "fecha": "2026-08-02T08:57:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33833",
+   "via": "DeItaone",
+   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
+   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
+   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
+   "analisis": {
+    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
+    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "DXY",
+    "EURUSD",
+    "Oro",
+    "VIX",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "nuclear",
+    "Ormuz",
+    "negociaciones",
+    "pausa militar",
+    "Oriente Medio"
+   ],
+   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
+   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
+   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
+   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
+    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
+    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
+    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
+   },
+   "macro": {
+    "dolar": "alcista corto plazo (alivio geopolítico)",
+    "oro": "bajista corto plazo",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "petroleo": "bajista",
+    "bonos": "neutral a alcista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-04T09:01:12+00:00",
+     "id": "33911",
+     "texto": "El CEO de Saudi Aramco, Amin Nasser, confirmó que el conflicto con Irán ha retirado 2.600 millones de barriles de crudo de la oferta global. El tránsito por el Estrecho de Ormuz cayó a 10% de niveles previos a la guerra; cada semana cerrado implica pérdida de 100 millones de barriles. La reconstrucción de inventarios podría tomar hasta 18 meses incluso si la ruta reabre hoy.",
+     "tgUrl": "https://t.me/walterbloomberg/33911"
+    },
+    {
+     "fecha": "2026-08-03T18:13:56+00:00",
+     "id": "33907",
+     "texto": "Trump afirma no permitir que Irán cobre tarifas por paso a través del Estrecho de Ormuz, reiterando soberanía de la zona como vía de tránsito internacional. Declara que no tolerará «peajes» iraníes, lo que implica resistencia a cualquier mecanismo de control iraniano sobre flujos.",
+     "tgUrl": "https://t.me/walterbloomberg/33907"
+    },
+    {
+     "fecha": "2026-08-03T18:03:53+00:00",
+     "id": "33906",
+     "texto": "Trump declara que negocia tener el Estrecho de Ormuz abierto en 24 horas. Afirmación refleja intención de resolver crisis mediante negociación acelerada, aunque el titular no especifica condiciones ni mécanismos. Marca compresión extrema de tiempos diplomáticos.",
+     "tgUrl": "https://t.me/walterbloomberg/33906"
+    },
+    {
+     "fecha": "2026-08-03T18:01:45+00:00",
+     "id": "33905",
+     "texto": "Trump reafirma ultimátum a Irán para firmar acuerdo, declarando que es su «última oportunidad». Esto se suma a declaraciones previas sobre mantener abierto el Estrecho de Ormuz y no permitir cobros de peaje por tránsito. Marca endurecimiento retórico en negociaciones nucleares tras pausa anunciada hace días.",
+     "tgUrl": "https://t.me/walterbloomberg/33905"
+    },
+    {
+     "fecha": "2026-08-03T15:27:15+00:00",
+     "id": "33890",
+     "texto": "Trump aseguró que marina estadounidense controla completamente acceso al Estrecho de Ormuz; nada entra a Irán sin aprobación USA. Acusa a Irán de negociar privately mientras niega públicamente; advierte sanciones permanecen hasta acuerdo o 'rendición total'. Reafirma postura: 'Irán nunca tendrá arma nuclear'.",
+     "tgUrl": "https://t.me/walterbloomberg/33890"
+    },
+    {
+     "fecha": "2026-08-03T13:51:37+00:00",
+     "id": "33879",
+     "texto": "Trump elogió desempeño de Chevron y atribuyó éxito a políticas energéticas de su administración, incluyendo retorno a Venezuela. Presionó a Chevron y sector petrolero para reducir precios al consumidor inmediatamente. Declaración parte de narrativa sobre control geopolítico del petróleo y sanciones a Irán.",
+     "tgUrl": "https://t.me/walterbloomberg/33879"
+    },
+    {
+     "fecha": "2026-08-03T10:28:26+00:00",
+     "id": "33859",
+     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
+     "tgUrl": "https://t.me/walterbloomberg/33859"
+    },
+    {
+     "fecha": "2026-08-03T10:03:27+00:00",
+     "id": "33856",
+     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
+     "tgUrl": "https://t.me/walterbloomberg/33856"
+    },
+    {
+     "fecha": "2026-08-03T04:44:30.000Z",
+     "id": "991847143",
+     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
+    },
+    {
+     "fecha": "2026-08-02T23:33:07.000Z",
+     "id": "990424278",
+     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
+    },
+    {
+     "fecha": "2026-08-02T21:45:46+00:00",
+     "id": "33844",
+     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
+     "tgUrl": "https://t.me/walterbloomberg/33844"
+    },
+    {
+     "fecha": "2026-08-02T21:44:13+00:00",
+     "id": "33843",
+     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
+     "tgUrl": "https://t.me/walterbloomberg/33843"
+    },
+    {
+     "fecha": "2026-08-02T16:40:18+00:00",
+     "id": "33836",
+     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
+     "tgUrl": "https://t.me/walterbloomberg/33836"
+    },
+    {
+     "fecha": "2026-08-02T16:35:19+00:00",
+     "id": "33835",
+     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
+     "tgUrl": "https://t.me/walterbloomberg/33835"
+    },
+    {
+     "fecha": "2026-08-02T11:52:45+00:00",
+     "id": "33834",
+     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
+     "tgUrl": "https://t.me/walterbloomberg/33834"
+    }
+   ],
+   "actualizado": "2026-08-04T09:01:12+00:00"
+  },
+  {
+   "id": "33910",
+   "fecha": "2026-08-04T08:59:44+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33910",
+   "via": "DeItaone",
+   "original": "BRENT CRUDE FUTURES UP 3% TO $86.33/BBL ON US-IRAN WAR UNCERTAINTY",
+   "titulo": "Petróleo sube 3% a $86,33/barril por incertidumbre en conflicto EE.UU.-Irán",
+   "resumen": "Los futuros de Brent suben 3% a $86,33 por barril debido a la incertidumbre generada por el conflicto entre EE.UU. e Irán. La escalada geopolítica eleva el riesgo sobre el suministro global de energía, particularmente en regiones críticas para el comercio petrolero.",
+   "analisis": {
+    "porque": "Conflictos en Oriente Medio impactan directamente precios de petróleo; el mercado está repricing riesgo geopolítico.",
+    "queOcurrio": "Brent sube 3% en sesión actual a $86,33/barril por tensiones EE.UU.-Irán.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Energía",
+    "DXY",
+    "Inflación"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Acciones de Energía",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Brent",
+    "petróleo",
+    "Irán",
+    "tensiones",
+    "Oriente Medio",
+    "suministro"
+   ],
+   "tgText": "🛢️ Brent sube 3% a $86,33/barril por incertidumbre EE.UU.-Irán. Riesgo geopolítico repriced en mercado de energía.",
+   "xText": "🛢️ Petróleo Brent +3% a $86,33/barril por conflicto EE.UU.-Irán. Tensiones geopolíticas elevan prima de riesgo en energía global. #Mercados #Energía",
+   "discordText": "**Petróleo al alza por geopolítica**\n• Brent: +3% a $86,33/barril\n• Conductor: incertidumbre EE.UU.-Irán\n• Impacto: riesgo de suministro global",
+   "pushText": "Petróleo +3% a $86,33 por tensiones EE.UU.-Irán",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo crudo y futuros de energía reaccionan inmediatamente por riesgo de oferta.",
+    "despues": "Acciones de energía (XLE, compañías petrolíferas), después mercado de bonos y dólar por presiones inflacionarias.",
+    "escenarios": "Traders monitorean: cierre del Estrecho de Ormuz, impacto en inventarios globales, respuesta de la OPEP, transmisión a inflación de core.",
+    "riesgos": "Escalada rápida del conflicto podría llevar petróleo a $90+; riesgo de sobreinterpretación de cada titular geopolítico."
+   },
+   "macro": {
+    "dolar": "presión alcista por safe-haven",
+    "oro": "alcista por geopolítica",
+    "nasdaq": "bajista por presión inflacionaria",
+    "sp500": "mixto (energía arriba, tech abajo)",
+    "petroleo": "alcista +3%"
+   },
+   "updates": []
+  },
+  {
+   "id": "33909",
+   "fecha": "2026-08-04T08:55:29+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33909",
+   "via": "DeItaone",
+   "original": "WARSH'S FED STRATEGY COULD WEAKEN THE DOLLAR Kevin Warsh's approach to monetary policy could hurt the U.S. dollar over time, according to Commerzbank. Warsh suggested markets can tighten financial conditions through higher long-term bond yields, reducing the need for Fed rate hikes. Commerzbank warns this risks damaging the Fed's credibility if inflation stays above target without decisive action.",
+   "titulo": "Estrategia de Warsh en Fed podría debilitar dólar si inflación permanece elevada",
+   "resumen": "Commerzbank advierte que el enfoque de Kevin Warsh hacia política monetaria podría dañar el dólar a largo plazo. Warsh sugiere que los mercados pueden endurecer condiciones financieras mediante alzas de yields, reduciendo necesidad de subidas de tasas. Si inversores pierden confianza en compromiso anti-inflación de la Fed, el dólar enfrentaría presión. DXY opera en +0,1% a 100,014.",
+   "analisis": {
+    "porque": "Cambios en composición de la Fed impactan credibilidad y expectativas de tasas; mercado reprices dólar según confianza en política monetaria.",
+    "queOcurrio": "Commerzbank crítica estrategia de Warsh; riesgo de pérdida de credibilidad si Fed no controla inflación con acción decisiva.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "USD",
+    "Bonos",
+    "Rendimientos USA",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Warsh",
+    "Fed",
+    "dólar",
+    "política monetaria",
+    "credibilidad",
+    "inflación"
+   ],
+   "tgText": "📊 Commerzbank alerta: estrategia Warsh en Fed riesga debilitar dólar si inflación no baja. Credibilidad de autoridad monetaria en juego.",
+   "xText": "📊 Commerzbank: enfoque Warsh (mercados controlan yields, Fed menos decisiva) podría erosionar credibilidad anti-inflación de Fed y presionar dólar. #FED #USD",
+   "discordText": "**Debate sobre rumbo de la Fed**\n• Warsh: mercados pueden endurecer financiero\n• Riesgo: pérdida de credibilidad si inflación alta\n• Impacto dólar: bajista si confianza se quiebra\n• DXY: +0,1% a 100,014",
+   "pushText": "Fed: Warsh strategy riesga dólar si inflación persiste",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Dólar (DXY, pares principales) reacciona a señales sobre credibilidad de tasas.",
+    "despues": "Bonos USA, oro, acciones cíclicas vs defensivas.",
+    "escenarios": "Traders monitorean: 1) próximas comentarios de Warsh, 2) datos de inflación, 3) decisiones de mercados de bonos (si yields suben sin Fed, Fed pierde control).",
+    "riesgos": "Crítica es de Commerzbank, no del mercado todavía. Riesgo de sobreinterpretación si Warsh es confirmado presidente de Fed (no especificado en titular)."
+   },
+   "macro": {
+    "dolar": "bajista por credibilidad",
+    "oro": "alcista",
+    "bonos": "bajista (yields suben sin control)"
+   },
+   "updates": []
+  },
   {
    "id": 959819679,
    "fecha": "2026-08-04T04:50:05.000Z",
@@ -778,173 +1256,6 @@
     "energia": "Sector energético bajo presión por riesgo regulatorio."
    },
    "updates": []
-  },
-  {
-   "id": "33833",
-   "fecha": "2026-08-02T08:57:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33833",
-   "via": "DeItaone",
-   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
-   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
-   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
-   "analisis": {
-    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
-    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "DXY",
-    "EURUSD",
-    "Oro",
-    "VIX",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "nuclear",
-    "Ormuz",
-    "negociaciones",
-    "pausa militar",
-    "Oriente Medio"
-   ],
-   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
-   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
-   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
-   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
-    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
-    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
-    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
-   },
-   "macro": {
-    "dolar": "alcista corto plazo (alivio geopolítico)",
-    "oro": "bajista corto plazo",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "petroleo": "bajista",
-    "bonos": "neutral a alcista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-03T18:13:56+00:00",
-     "id": "33907",
-     "texto": "Trump afirma no permitir que Irán cobre tarifas por paso a través del Estrecho de Ormuz, reiterando soberanía de la zona como vía de tránsito internacional. Declara que no tolerará «peajes» iraníes, lo que implica resistencia a cualquier mecanismo de control iraniano sobre flujos.",
-     "tgUrl": "https://t.me/walterbloomberg/33907"
-    },
-    {
-     "fecha": "2026-08-03T18:03:53+00:00",
-     "id": "33906",
-     "texto": "Trump declara que negocia tener el Estrecho de Ormuz abierto en 24 horas. Afirmación refleja intención de resolver crisis mediante negociación acelerada, aunque el titular no especifica condiciones ni mécanismos. Marca compresión extrema de tiempos diplomáticos.",
-     "tgUrl": "https://t.me/walterbloomberg/33906"
-    },
-    {
-     "fecha": "2026-08-03T18:01:45+00:00",
-     "id": "33905",
-     "texto": "Trump reafirma ultimátum a Irán para firmar acuerdo, declarando que es su «última oportunidad». Esto se suma a declaraciones previas sobre mantener abierto el Estrecho de Ormuz y no permitir cobros de peaje por tránsito. Marca endurecimiento retórico en negociaciones nucleares tras pausa anunciada hace días.",
-     "tgUrl": "https://t.me/walterbloomberg/33905"
-    },
-    {
-     "fecha": "2026-08-03T15:27:15+00:00",
-     "id": "33890",
-     "texto": "Trump aseguró que marina estadounidense controla completamente acceso al Estrecho de Ormuz; nada entra a Irán sin aprobación USA. Acusa a Irán de negociar privately mientras niega públicamente; advierte sanciones permanecen hasta acuerdo o 'rendición total'. Reafirma postura: 'Irán nunca tendrá arma nuclear'.",
-     "tgUrl": "https://t.me/walterbloomberg/33890"
-    },
-    {
-     "fecha": "2026-08-03T13:51:37+00:00",
-     "id": "33879",
-     "texto": "Trump elogió desempeño de Chevron y atribuyó éxito a políticas energéticas de su administración, incluyendo retorno a Venezuela. Presionó a Chevron y sector petrolero para reducir precios al consumidor inmediatamente. Declaración parte de narrativa sobre control geopolítico del petróleo y sanciones a Irán.",
-     "tgUrl": "https://t.me/walterbloomberg/33879"
-    },
-    {
-     "fecha": "2026-08-03T10:28:26+00:00",
-     "id": "33859",
-     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
-     "tgUrl": "https://t.me/walterbloomberg/33859"
-    },
-    {
-     "fecha": "2026-08-03T10:03:27+00:00",
-     "id": "33856",
-     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
-     "tgUrl": "https://t.me/walterbloomberg/33856"
-    },
-    {
-     "fecha": "2026-08-03T04:44:30.000Z",
-     "id": "991847143",
-     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
-    },
-    {
-     "fecha": "2026-08-02T23:33:07.000Z",
-     "id": "990424278",
-     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
-    },
-    {
-     "fecha": "2026-08-02T21:45:46+00:00",
-     "id": "33844",
-     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
-     "tgUrl": "https://t.me/walterbloomberg/33844"
-    },
-    {
-     "fecha": "2026-08-02T21:44:13+00:00",
-     "id": "33843",
-     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
-     "tgUrl": "https://t.me/walterbloomberg/33843"
-    },
-    {
-     "fecha": "2026-08-02T16:40:18+00:00",
-     "id": "33836",
-     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
-     "tgUrl": "https://t.me/walterbloomberg/33836"
-    },
-    {
-     "fecha": "2026-08-02T16:35:19+00:00",
-     "id": "33835",
-     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
-     "tgUrl": "https://t.me/walterbloomberg/33835"
-    },
-    {
-     "fecha": "2026-08-02T11:52:45+00:00",
-     "id": "33834",
-     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
-     "tgUrl": "https://t.me/walterbloomberg/33834"
-    }
-   ],
-   "actualizado": "2026-08-03T18:13:56+00:00"
   },
   {
    "id": 969300751,
@@ -7334,285 +7645,6 @@
     "sp500": "alcista",
     "bitcoin": null,
     "petroleo": null
-   },
-   "updates": []
-  },
-  {
-   "id": 935988815,
-   "fecha": "2026-07-30T22:48:58.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html",
-   "via": "CNBC",
-   "original": "Apple&apos;s stock drops 6% as supply constraints lead to weak revenue guidance: Live updates",
-   "titulo": "Apple cae 6% adicionales por restricciones de suministro; guía de ingresos débil",
-   "resumen": "Apple sufre nueva caída del 6% tras reportar restricciones de suministro que generan guía de ingresos débil para el próximo período. La compañía enfrenta presión en cadena de suministro en línea con desafíos globales en semiconductores y manufactura. El mercado reacciona negativamente pese a resultados de iPhone y Mac que superaron estimaciones previamente reportados.",
-   "analisis": {
-    "porque": "Apple es componente clave en Nasdaq y S&P 500. Guía débil redefine expectativas de crecimiento tech para próximos trimestres.",
-    "queOcurrio": "Actualización posterior: stock de Apple baja 6% adicionales debido a guía de ingresos débil impulsada por restricciones de suministro, contrastando con fortaleza de resultados actuales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Nasdaq",
-    "S&P 500",
-    "AAPL"
-   ],
-   "sesgos": [
-    {
-     "activo": "AAPL",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Apple",
-    "guía débil",
-    "cadena suministro",
-    "semiconductores",
-    "AAPL"
-   ],
-   "tgText": "Apple cae 6% por restricciones de suministro y guía de ingresos débil. Contrasta con resultados sólidos en iPhone/Mac. Nasdaq presionado. Cadena global bajo tensión.",
-   "xText": "⚠️ AAPL -6% por guía débil + restricciones suministro. Resultados fuertes en iPhone/Mac no evitan caída. Mercado enfocado en forward guidance; cadena global tensionada.",
-   "discordText": "**AAPL Update - Guía Débil Supera Resultados Fuertes**\n• Stock: -6% (movimiento adicional)\n• Causa: Restricciones suministro → guía ingresos débil\n• Positivos: iPhone, Mac superan estimaciones\n• Riesgo: Contagio a Nasdaq si cadena se deteriora",
-   "pushText": "Apple cae 6% por guía débil; restricciones suministro pesan más que resultados fuertes",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Nasdaq y S&P 500 reaccionan por peso de AAPL (~7% de Nasdaq). Sector electrónica/semiconductores.",
-    "despues": "Otros fabricantes de dispositivos, proveedores de componentes, equipos de manufactura.",
-    "escenarios": "Traders vigilan si restricciones afectan a MSFT, GOOGL u otros grandes tech. Contagio a índices si problema es sistémico en cadena. Revisión de estimaciones de Wall Street para tech en general.",
-    "riesgos": "Restricciones podrían ser transitorias o estructurales; guía puede ser conservadora (Apple históricamente suele serlo); recuperación de suministros puede sorprender al alza."
-   },
-   "macro": {
-    "nasdaq": "bajista",
-    "sp500": "bajista",
-    "bitcoin": null,
-    "petroleo": null
-   },
-   "updates": []
-  },
-  {
-   "id": 933715245,
-   "fecha": "2026-07-30T22:48:30.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/microsoft-xbox-asha-sharma-2030-plans.html",
-   "via": "CNBC",
-   "original": "Microsoft&apos;s Xbox chief lays out plan to pass rivals on margin by 2030 in memo to employees",
-   "titulo": "Jefe de Xbox de Microsoft presenta plan para alcanzar márgenes líderes en industria hacia 2030",
-   "resumen": "El jefe de Xbox de Microsoft, comunicado interno, esboza plan estratégico para mejorar márgenes operacionales y posicionar la división como líder en rentabilidad por 2030. Estrategia enfocada en servicios de suscripción, monetización de contenido y eficiencia operacional. Cambio refleja prioridades corporativas en márgenes frente a solo crecimiento de ingresos.",
-   "analisis": {
-    "porque": "Reconfiguración de estrategia de división importante de Microsoft. Márgenes mejorados en gaming podrían contribuir a EBITDA consolidado; señal de disciplina de costos post-adquisición Activision.",
-    "queOcurrio": "Ejecutivo de Xbox Microsoft comparte memo interno con plan de mejora de márgenes hacia 2030. Enfoque en servicios de suscripción y eficiencia.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "MSFT"
-   ],
-   "sesgos": [
-    {
-     "activo": "MSFT",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Microsoft",
-    "Xbox",
-    "márgenes",
-    "servicios suscripción",
-    "estrategia 2030"
-   ],
-   "tgText": "Xbox Microsoft: Plan para márgenes líderes industria hacia 2030. Enfoque servicios suscripción. Disciplina costos post-Activision. Impacto marginal en MSFT.",
-   "xText": "📱 MSFT Xbox: Jefe presenta plan para márgenes líderes hacia 2030. Enfoque: suscripción, eficiencia. Señal de disciplina de costos corporativa.",
-   "discordText": "**Xbox Strategic Update**\n• Plan: Márgenes líderes industria por 2030\n• Estrategia: Suscripción, eficiencia\n• Contexto: Post-Activision Blizzard\n• Impacto MSFT: Marginal",
-   "pushText": "Xbox Microsoft: Plan para márgenes líderes hacia 2030; enfoque en suscripción",
-   "importancia": 5,
-   "reaccion": null,
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 967101581,
-   "fecha": "2026-07-30T22:28:58.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/microsoft-msft-meta-stock-today-earnings.html",
-   "via": "CNBC",
-   "original": "Meta sinks 8%, continuing record losing streak, while Microsoft jumps 15% as AI trade splits",
-   "titulo": "Meta cae 8% en racha de pérdidas récord mientras Microsoft salta 15% por divergencia en IA",
-   "resumen": "Meta Platforms continúa su peor racha de desempeño mientras el mercado favorece a Microsoft en la competencia por liderazgo en inteligencia artificial. La divergencia refleja apuestas inversoras dispares sobre quién dominará la comercialización de modelos de IA. Microsoft acumula ganancias tras resultados sólidos en su división de nube y servicios de IA, mientras Meta enfrenta presión sobre rentabilidad y retorno de inversiones en IA.",
-   "analisis": {
-    "porque": "Movimientos significativos en mega-capitalizaciones tecnológicas afectan directamente índices (Nasdaq, S&P 500) y reconfiguran carteras. La divergencia IA revela realocación de capital entre ganadores/perdedores del sector.",
-    "queOcurrio": "Meta experimenta caída del 8% dentro de una racha de pérdidas récord; Microsoft salta 15%, aparentemente impulsado por confianza en su estrategia de IA.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Nasdaq",
-    "S&P 500",
-    "META",
-    "MSFT"
-   ],
-   "sesgos": [
-    {
-     "activo": "META",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Meta",
-    "Microsoft",
-    "IA",
-    "tech earnings",
-    "Nasdaq",
-    "divergencia sectorial"
-   ],
-   "tgText": "Meta cae 8% en racha récord de pérdidas mientras Microsoft salta 15%. La carrera por IA divide al mercado tech: ganadores vs perdedores se redefinen. Nasdaq en tensión.",
-   "xText": "📊 Divergencia IA en Nasdaq: Meta (-8%, racha récord) vs MSFT (+15%). Mercado apuesta por Microsoft en comercialización de IA. META presionado por inversiones sin retorno visible.",
-   "discordText": "**Tech Divergence - IA como factor clave**\n• META: -8%, racha pérdidas récord\n• MSFT: +15%, confianza en estrategia IA\n• Impacto: Nasdaq, grandes tecnológicas",
-   "pushText": "Meta cae 8% en racha récord; Microsoft sube 15% en divergencia IA",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Nasdaq y S&P 500: reacción inmediata por peso de MSFT y META en índices; rotación de capital desde tecnología defensiva hacia ofensiva en IA.",
-    "despues": "Otros valores tech grandes, fondos de capital de riesgo, bonos corporativos de tecnología.",
-    "escenarios": "Traders monitorean si caída de META se contagia a otros gigantes (GOOGL, NVDA) o si mercado mantiene divergencia. Revisión de valuaciones en IA. Composición de índices por cambios de ponderación.",
-    "riesgos": "Racha de pérdidas de Meta puede ser especulativa si se revierte; Microsoft podría no sostener ganancia si guidance decepciona en próximos reportes."
-   },
-   "macro": {
-    "nasdaq": "alcista (MSFT) vs bajista (META) → neutral en neto",
-    "sp500": "neutral",
-    "bitcoin": null,
-    "petroleo": null
-   },
-   "updates": []
-  },
-  {
-   "id": 925094308,
-   "fecha": "2026-07-30T22:28:38.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/reddit-rddt-q2-2026-earnings-report.html",
-   "via": "CNBC",
-   "original": "Reddit shares sink 11% on &apos;choppy&apos; search referrals even as results blow past estimates",
-   "titulo": "Reddit se desploma 11% por búsquedas \"inestables\" pese superar estimaciones de resultados",
-   "resumen": "Reddit cae fuertemente 11% tras reportar resultados que superan estimaciones, pero con referrals de búsqueda descritos como \"inestables\". La caída refleja preocupación sobre fiabilidad del tráfico desde motores de búsqueda, componente crítico del modelo de negocio. Mercado penaliza outlook de monetización aunque números actuales sean positivos.",
-   "analisis": {
-    "porque": "Reddit depende de tráfico de búsqueda para publicidad. Inestabilidad aquí amenaza crecimiento futuro y márgenes. Stock pequeño pero indicativo de presiones en nuevas empresas cotizadas.",
-    "queOcurrio": "Reddit publica resultados mejores a lo esperado pero advierte sobre búsquedas inestables/choppy, lo que genera venta masiva pese a resultados positivos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "RDDT",
-    "Nasdaq"
-   ],
-   "sesgos": [
-    {
-     "activo": "RDDT",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Reddit",
-    "búsqueda online",
-    "monetización",
-    "tráfico",
-    "IPO reciente"
-   ],
-   "tgText": "Reddit cae 11% por búsquedas inestables pese superar estimaciones. Tráfico = negocio clave. Mercado penaliza forward outlook. RDDT en volatilidad extrema.",
-   "xText": "📉 RDDT -11%: Resultados superan pero búsquedas 'choppy'. Tráfico = monetización. Mercado castiga forward guidance por incertidumbre en fuente clave.",
-   "discordText": "**Reddit Alert - Búsquedas Inestables**\n• Caída: -11% post-earnings\n• Positivo: Resultados superan estimaciones\n• Negativo: Búsquedas descriptas como inestables\n• Riesgo: Dependencia de tráfico búsqueda para ads",
-   "pushText": "Reddit cae 11% por búsquedas inestables; resultados positivos no evitan venta",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "RDDT directamente; Nasdaq (peso menor); acciones de plataformas digitales dependientes de búsqueda.",
-    "despues": "Publicistas, anunciantes en plataformas digitales; comparables de monetización.",
-    "escenarios": "Traders vigilarán si inestabilidad es temporal (cambios en algoritmos de búsqueda) o estructural (pérdida de relevancia). Comparables de Meta, Alphabet por presiones similares en tráfico.",
-    "riesgos": "Inestabilidad podría ser transitoria; también podría indicar cambios permanentes en búsqueda; Reddit es IPO reciente con volatilidad natural alta."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "912005534",
-   "fecha": "2026-07-30T21:53:07.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/coinbase-coin-earnings-q2-2026.html",
-   "via": "CNBC",
-   "original": "Coinbase shares fall after crypto exchange posts disappointing second-quarter results",
-   "titulo": "Coinbase cae tras resultados Q2 decepcionantes; criptomercado bajo presión",
-   "resumen": "Acciones de Coinbase caen después de que el intercambio de criptomonedas reporte resultados de segundo trimestre por debajo de expectativas. El evento presiona la narrativa de recuperación cripto y refleja debilidad en volúmenes de negociación y adopción.",
-   "analisis": {
-    "porque": "Coinbase es barómetro del mercado cripto retail y institucional. Resultados débiles sugieren ralentización de adoption o volatilidad baja en precios cripto, impactando valoraciones del sector.",
-    "queOcurrio": "Coinbase reporta Q2 2026 con resultados decepcionantes; acción reacciona a la baja.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "COIN",
-    "Bitcoin",
-    "Ethereum",
-    "Criptomercado"
-   ],
-   "sesgos": [
-    {
-     "activo": "COIN",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Criptomercado",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "Coinbase",
-    "Q2-resultados",
-    "criptomonedas",
-    "volúmenes",
-    "adoption"
-   ],
-   "tgText": "📉 Coinbase cae por Q2 decepcionante. Resultados débiles presionan narrativa de recuperación cripto y reflejan flojedad en volúmenes.",
-   "xText": "Coinbase cae tras Q2 decepcionante. Resultados débiles presionan sector cripto y cuestionan dinámica de adopción.",
-   "discordText": "**Coinbase: resultados débiles**\n• Q2 2026 decepcionante\n• Acción cae 📉\n• Presión en narrativa cripto",
-   "pushText": "Coinbase cae; Q2 decepcionante",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "COIN cae directamente. Bitcoin y Ethereum podrían reaccionar a la baja si el evento señala debilidad en demanda de trading cripto.",
-    "despues": "Otros exchanges cripto (Kraken, Gemini si cotizaran) sufrirían presión similar. Sentimiento cripto negativo podría extenderse.",
-    "escenarios": "Traders vigilarán: (1) qué causó decepción (volúmenes, márgenes, usuarios), (2) guía forward de Coinbase, (3) correlación con precios BTC/ETH, (4) posible efecto contagio en otros players cripto",
-    "riesgos": "Titular no especifica magnitud de la decepción ni comparativa con consenso. Podría tratarse de miss marginal o fallo operativo serio."
-   },
-   "macro": {
-    "bitcoin": "neutral a bajista",
-    "ethereum": "neutral a bajista",
-    "coin": "bajista"
    },
    "updates": []
   }
