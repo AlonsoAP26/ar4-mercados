@@ -1,7 +1,314 @@
 {
  "lastId": 33908,
- "actualizado": "2026-08-03T21:53:43.954Z",
+ "actualizado": "2026-08-04T03:35:31.628Z",
  "items": [
+  {
+   "id": 903259186,
+   "fecha": "2026-08-04T03:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/04/india-lic-stake-sale-discount.html",
+   "via": "CNBC",
+   "original": "India to raise up to $3.3 billion by selling stake in country’s largest life insurer at 10% discount",
+   "titulo": "India vende participación en mayor aseguradora de vida; recauda hasta $3.300 millones",
+   "resumen": "India anuncia oferta pública de participación estatal en Life Insurance Corporation of India (LIC) con descuento del 10%, buscando recaudar hasta $3.300 millones. Movimiento forma parte de agenda de privatización progresiva del gobierno indio.",
+   "analisis": {
+    "porque": "Señal de reformas de privatización en economía emergente clave; afecta dinámicas de flujos de capital hacia India y composición de fondos de índices emergentes.",
+    "queOcurrio": "India lanzará venta de participación en LIC con descuento, objetivo $3.3B en recaudación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Índices Emergentes",
+    "Rupee indio",
+    "LIC",
+    "MSCI India"
+   ],
+   "sesgos": [
+    {
+     "activo": "Mercados India",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Emergentes",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "India",
+    "LIC",
+    "privatización",
+    "oferta pública",
+    "asegurador"
+   ],
+   "tgText": "🇮🇳 India vende participación en LIC (mayor asegurador) con 10% descuento; recauda $3.3B. Privatización progresiva en economía emergente clave.",
+   "xText": "📊 India lanza venta de LIC con descuento; $3.3B en recaudación. Reformas de privatización continúan en economía emergente. #India",
+   "discordText": "**Privatización en India: venta de LIC**\n• Descuento del 10% en oferta pública\n• Recaudación objetivo: $3.3B\n• Reforma de agenda estatal",
+   "pushText": "India vende participación en LIC; $3.3B recaudado",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Mercados accionarios India: neutral a ligeramente positivo; validación de reformas.",
+    "despues": "Índices emergentes: si flujos se reasignan hacia India; rupee podría apreciarse levemente.",
+    "escenarios": "Traders vigilan: (1) demanda de oferta pública; (2) si privatización continúa en otros sectores; (3) impacto fiscal para presupuesto indio.",
+    "riesgos": "Riesgo de absorción de oferta si condiciones globales deterioran; impacto si privatización genera controversia política."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33897,
+   "fecha": "2026-08-03T16:31:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33897",
+   "via": "DeItaone",
+   "original": "SAYLOR SAYS HE HAS NEVER SOLD ANY OF HIS PERSONALLY HELD BITCOIN Michael Saylor said he has never sold a single satoshi of his personal Bitcoin holdings. He clarified that Strategy ($MSTR ) is a public company—not his personal wallet—and may buy or sell Bitcoin as part of its capital management. Saylor added that the company's long-term conviction in Bitcoin remains unchanged.",
+   "titulo": "Saylor reafirma: nunca ha vendido Bitcoin personal; MSTR es entidad separada",
+   "resumen": "Michael Saylor aclaró que no ha vendido ni un satoshi de su tenencia personal de Bitcoin. Distinguió que MicroStrategy ($MSTR) es compañía pública independiente de su cartera personal, y puede comprar o vender Bitcoin como parte de gestión de capital. Saylor reafirmó la convicción de largo plazo de la empresa sobre Bitcoin.",
+   "analisis": {
+    "porque": "Saylor es figura influyente en adopción institucional de Bitcoin y su posición personal afecta señales de sentimiento de largo plazo. Aclaración disipa dudas sobre posibles ventas que podrían interpretarse como pérdida de fe",
+    "queOcurrio": "Saylor emitió aclaración pública diferenciando su posición personal (nunca vende) de las operaciones de MSTR (puede operar según capital management)",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (comunicación de Michael Saylor)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bitcoin",
+    "Ethereum",
+    "MSTR",
+    "Nasdaq"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "bitcoin",
+    "michael-saylor",
+    "mstr",
+    "tenencia-personal",
+    "sentimiento-institucional"
+   ],
+   "tgText": "💬 Saylor aclara: nunca vendió Bitcoin personal. MSTR es entidad separada que puede operar según necesidades de capital. Convicción de largo plazo en BTC sin cambios.",
+   "xText": "📌 Michael Saylor: nunca vendió satoshi alguno de su Bitcoin personal. MSTR opera independientemente. Convicción de largo plazo sobre Bitcoin intacta.",
+   "discordText": "**Saylor: posición personal de Bitcoin intacta**\n• Nunca vendió ni un satoshi de su tenencia personal\n• MSTR es entidad separada → puede operar según necesidades\n• Convicción de largo plazo sin cambios",
+   "pushText": "Saylor reafirma: nunca vendió Bitcoin personal; MSTR es entidad separada",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Bitcoin y MSTR reaccionan positivamente: aclaración disipa dudas sobre venta de holdings influyentes",
+    "despues": "Sentimiento institucional se fortalece; otras acciones de tecnología/cripto evalúan si señal refleja mayor confianza en BTC a largo plazo",
+    "escenarios": "Traders vigilarán: (1) futuras operaciones de MSTR en Bitcoin (compras vs ventas); (2) si aclaración devuelve confianza a tenedores institucionales; (3) movimientos de BTC en próximos días",
+    "riesgos": "Aclaración es interpretación de Saylor; no descarta que MSTR venda grandes posiciones en futuro. Titular es sentimiento, no dato duro de mercado"
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-04T02:33:00.000Z",
+     "id": 962652701,
+     "texto": "Los futuros bursátiles abrieron con ganancias moderadas tras una sesión anterior extraordinaria que llevó al Dow Jones a un cierre histórico. La inercia alcista continúa en mercados; indicadores de apertura sugieren extensión del rally.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/stock-market-today-live-updates.html"
+    }
+   ],
+   "actualizado": "2026-08-04T02:33:00.000Z"
+  },
+  {
+   "id": 942595721,
+   "fecha": "2026-08-03T23:20:54.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/bessent-fed-japan-yen-fima-repo-facility.html",
+   "via": "CNBC",
+   "original": "Analysis: Federal Reserve may be pulled into Bessent’s effort to support Japan’s yen",
+   "titulo": "Fed podría involucrarse en plan de Bessent para fortalecer el yen japonés",
+   "resumen": "El Secretario del Tesoro Bessent buscaría apoyo de la Reserva Federal para intervenir en los mercados cambiarios y fortalecer el yen japonés, probablemente en respuesta a debilidad de la moneda. La participación potencial de la Fed marca escenario inusual donde autoridades de EE.UU. actúan coordinadamente sobre divisas.",
+   "analisis": {
+    "porque": "Intervención cambiaria es tema de política monetaria internacional; afecta dinámicas de carry trade, flujos de capital globales y posicionamiento en divisas.",
+    "queOcurrio": "Bessent estaría buscando que la Fed participe en esfuerzo para apreciar el yen contra el dólar.",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "Yen",
+    "Dólar",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Equities globales",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "Bessent",
+    "Fed",
+    "yen",
+    "intervención cambiaria",
+    "USDJPY",
+    "política monetaria"
+   ],
+   "tgText": "💱 Análisis: Bessent buscaría que Fed intervenga para fortalecer yen. Posible coordinación inusual USA-Japón. Impacto: debilitamiento de dólar y reversal de carry trades.",
+   "xText": "🔄 Bessent podría involucrar a Fed en intervención para fortalecer yen. Movimiento estratégico en divisas; implicaciones para carry trades y dólar. #USDJPY",
+   "discordText": "**Potencial intervención Fed en divisas**\n• Bessent busca participación de Fed\n• Objetivo: fortalecer yen japonés\n• Implica desaceleración de carry trades\n• Riesgo en valuaciones de equities",
+   "pushText": "Bessent busca que Fed intervenga para fortalecer yen; impacto en divisas",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "USDJPY: caída esperada si se confirma intervención; potencial liquidación acelerada de carry trades con destino yen.",
+    "despues": "Equities globales: impulso inicial positivo por debilitamiento de dólar; después pressión si carry trade se desmonta caóticamente. Bonos: ajuste de yields.",
+    "escenarios": "Traders vigilan: (1) si Fed confirma participación; (2) magnitud de intervención (coordinada vs unilateral); (3) velocidad de reversal de positions JPY short; (4) contagio a emergentes dependientes de flujos de yen débil.",
+    "riesgos": "Riesgo de intervención fallida (histórico con políticas cambiarias); volatilidad extrema en USDJPY; disruption de mercados derivados."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "nasdaq": "potencialmente alcista (corto plazo)",
+    "sp500": "potencialmente alcista (corto plazo)",
+    "bonos": "volatilidad alta"
+   },
+   "updates": []
+  },
+  {
+   "id": 971067004,
+   "fecha": "2026-08-03T22:48:18.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/big-techs-anthropic-and-openai-stakes-distort-corporate-earnings.html",
+   "via": "CNBC",
+   "original": "Big Tech&apos;s Anthropic and OpenAI stakes are distorting the corporate earnings picture",
+   "titulo": "Inversiones en Anthropic y OpenAI de Big Tech distorsionan cuadro de ganancias corporativas",
+   "resumen": "Las participaciones accionarias de empresas tech en startups de IA (Anthropic, OpenAI) generan distorsiones contables en reportes de earnings, inflando o sesgando márgenes. El análisis advierte sobre opacidad en evaluación de rentabilidad real de operaciones core de las megacaps.",
+   "analisis": {
+    "porque": "Cuestiona calidad de earnings de Big Tech; afecta análisis fundamental de valuaciones y decisiones de inversión. Tema de transparencia contable relevante para analistas.",
+    "queOcurrio": "Se reporta que inversiones de tech en IA startups están distorsionando presentación de resultados trimestrales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "MSFT",
+    "GOOGL",
+    "META"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "MSFT",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "GOOGL",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings quality",
+    "Anthropic",
+    "OpenAI",
+    "Big Tech",
+    "contabilidad",
+    "distorsión",
+    "valuaciones"
+   ],
+   "tgText": "⚠️ Análisis: Inversiones en Anthropic y OpenAI distorsionan earnings de Big Tech. Cuestionamiento sobre calidad de ganancias reportadas en MSFT, GOOGL, META.",
+   "xText": "📉 Advertencia contable: participaciones en Anthropic/OpenAI inflan earnings de Big Tech. Afecta análisis de valuaciones y transparencia. #Earnings #Tech",
+   "discordText": "**Distorsión de earnings por inversiones IA**\n• Participaciones en Anthropic y OpenAI sesgan reportes\n• Impacta margen de utilidad reportado\n• Cuestionamiento sobre calidad de ganancias\n• Relevante para valuaciones de megacaps",
+   "pushText": "Big Tech: inversiones IA distorsionan earnings; alerta contable",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Nasdaq tech: potencial revisión bajista de valuaciones si se valida que earnings calidad es menor de lo reportado.",
+    "despues": "Bonos corporativos tech: presión si mercado revalúa solvencia; S&P 500 si trend se generaliza a sector.",
+    "escenarios": "Traders vigilan: (1) auditorías de earnings por analistas independientes; (2) disclosure adicional de holdings en startups; (3) si hay re-pricing de múltiplos P/E.",
+    "riesgos": "Riesgo de reputación para auditores; posible litigio si distorsiones fueron materiales; confianza en reportes corporativos."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 949810077,
+   "fecha": "2026-08-03T22:20:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/jim-cramer-market-warmed-up-big-tech-ai-spending.html",
+   "via": "CNBC",
+   "original": "Jim Cramer says the market has warmed up to Big Tech&apos;s AI spending. Here&apos;s what flipped the switch",
+   "titulo": "Mercado normalizó gasto en IA de Big Tech; Cramer explica el cambio de sentimiento",
+   "resumen": "Jim Cramer comenta que el mercado ha absorbido positivamente el gasto masivo en capex de tecnología en inteligencia artificial, revirtiendo escepticismo anterior. El cambio de percepción sugiere que inversores ahora validan la estrategia de inversión en IA de las megacaps como generadora de retornos futuros.",
+   "analisis": {
+    "porque": "Señala reajuste en narrativa de mercado: de \"capex excesivo sin ROI\" a \"inversión estructural necesaria\". Define dinámicas de sector tech y múltiplos de valuación.",
+    "queOcurrio": "Cramer analiza que el sentimiento de mercado hacia inversiones en IA por parte de Big Tech pasó de crítico a favorable.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "MSFT",
+    "GOOGL",
+    "NVDA",
+    "META"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "MSFT",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "GOOGL",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Big Tech",
+    "IA",
+    "capex",
+    "sentimiento mercado",
+    "NVIDIA",
+    "Microsoft",
+    "Google",
+    "Meta"
+   ],
+   "tgText": "💡 Cramer: mercado cambió postura ante capex en IA de Big Tech. De escepticismo a validación de estrategia de megacaps. Positivo para MSFT, GOOGL, NVDA.",
+   "xText": "📊 Cramer: mercado normalizó inversión en IA de Big Tech. Cambio de narrativa de crítico a alcista refuerza rally en megacaps tech. #IA #MSFT #GOOGL",
+   "discordText": "**Cambio de sentimiento en Big Tech IA**\n• Mercado cambió de crítico a favorable en capex IA\n• Valida inversiones de MSFT, GOOGL, NVDA\n• Sustenta rally en megacaps",
+   "pushText": "Mercado valida gasto en IA de Big Tech; sentimiento gira alcista",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Megacaps tech (MSFT, GOOGL, NVDA, META): narrativa de justificación de capex sostiene valuaciones premium.",
+    "despues": "Nasdaq y S&P 500: flujos hacia defensoras de IA; posible rotación desde tech value/especulativas.",
+    "escenarios": "Traders vigilan: (1) confirmación de narrativa IA en próximos earnings; (2) si capex anuncia rendimientos medibles; (3) correlación de tech defensoras vs especulativas.",
+    "riesgos": "Riesgo si capex no produce ROI esperado; narrativa es frágil ante datos macroeconómicos negativos."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 995917856,
    "fecha": "2026-08-03T21:44:19.000Z",
@@ -275,6 +582,72 @@
     "riesgos": "Aprobación regulatoria no garantiza demanda inmediata de clientes; Max 7 es versión menos demandada que Max 8. Riesgo: que new orders no materializan según mercado espera."
    },
    "macro": null,
+   "updates": []
+  },
+  {
+   "id": 936408330,
+   "fecha": "2026-08-03T20:02:17.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/03/amazon-amzn-stock-market-cap-earnings.html",
+   "via": "CNBC",
+   "original": "Amazon tops $3 trillion market cap as stock continues post-earnings surge",
+   "titulo": "Amazon supera los $3 billones de capitalización tras sólido desempeño post-ganancias",
+   "resumen": "Amazon alcanzó una capitalización bursátil de $3 billones, consolidándose entre las empresas más valiosas del mundo. El movimiento refleja momentum positivo en el sector tecnológico tras divulgación de resultados trimestrales. Representa un hito histórico para la empresa y subraya la fortaleza de las megacaps en el rally actual.",
+   "analisis": {
+    "porque": "Refleja confianza de inversores en Big Tech y potencial de crecimiento en cloud/IA. Amazon es componente clave del Nasdaq y S&P 500, determinante para índices amplios.",
+    "queOcurrio": "Amazon alcanzó capitalización de $3 billones por primera vez, impulsado por resultados trimestrales positivos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "AMZN",
+    "Megacaps Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "AMZN",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Amazon",
+    "AMZN",
+    "capitalización",
+    "$3T",
+    "tech",
+    "megacap"
+   ],
+   "tgText": "📈 Amazon supera los $3T en capitalización tras earnings positivos. Megacap tech mantiene momentum alcista; impulsa al Nasdaq.",
+   "xText": "🚀 Amazon alcanza $3 billones en cap. de mercado post-earnings. Confirmación de fortaleza en Big Tech y cloud computing. #AMZN #Nasdaq",
+   "discordText": "**Amazon alcanza hito de $3T en capitalización**\n• Impulso post-ganancias trimestrales\n• Refuerza liderazgo entre megacaps tech\n• Positivo para Nasdaq y S&P 500",
+   "pushText": "Amazon supera $3T en capitalización; Big Tech mantiene rally",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "AMZN y Nasdaq-100: Amazon es 12-13% del índice; movimientos en la acción impactan directamente derivados.",
+    "despues": "S&P 500 y otros tech: efecto contagio en sector tecnológico; potencial debilidad relativa en value/defensivos.",
+    "escenarios": "Traders vigilan: (1) sostenibilidad de rally post-earnings; (2) si AMZN lidera rotación hacia megacaps defensivas; (3) implicaciones de valuaciones extremas.",
+    "riesgos": "Riesgo de corrección si expectativas de crecimiento IA no se materializan; concentración extrema en pocas acciones."
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "dolar": null,
+    "oro": null,
+    "bonos": null
+   },
    "updates": []
   },
   {
@@ -701,57 +1074,6 @@
     "bonos": "bajista",
     "petroleo": "neutral"
    },
-   "updates": []
-  },
-  {
-   "id": 33897,
-   "fecha": "2026-08-03T16:31:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33897",
-   "via": "DeItaone",
-   "original": "SAYLOR SAYS HE HAS NEVER SOLD ANY OF HIS PERSONALLY HELD BITCOIN Michael Saylor said he has never sold a single satoshi of his personal Bitcoin holdings. He clarified that Strategy ($MSTR ) is a public company—not his personal wallet—and may buy or sell Bitcoin as part of its capital management. Saylor added that the company's long-term conviction in Bitcoin remains unchanged.",
-   "titulo": "Saylor reafirma: nunca ha vendido Bitcoin personal; MSTR es entidad separada",
-   "resumen": "Michael Saylor aclaró que no ha vendido ni un satoshi de su tenencia personal de Bitcoin. Distinguió que MicroStrategy ($MSTR) es compañía pública independiente de su cartera personal, y puede comprar o vender Bitcoin como parte de gestión de capital. Saylor reafirmó la convicción de largo plazo de la empresa sobre Bitcoin.",
-   "analisis": {
-    "porque": "Saylor es figura influyente en adopción institucional de Bitcoin y su posición personal afecta señales de sentimiento de largo plazo. Aclaración disipa dudas sobre posibles ventas que podrían interpretarse como pérdida de fe",
-    "queOcurrio": "Saylor emitió aclaración pública diferenciando su posición personal (nunca vende) de las operaciones de MSTR (puede operar según capital management)",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (comunicación de Michael Saylor)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bitcoin",
-    "Ethereum",
-    "MSTR",
-    "Nasdaq"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bitcoin",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "bitcoin",
-    "michael-saylor",
-    "mstr",
-    "tenencia-personal",
-    "sentimiento-institucional"
-   ],
-   "tgText": "💬 Saylor aclara: nunca vendió Bitcoin personal. MSTR es entidad separada que puede operar según necesidades de capital. Convicción de largo plazo en BTC sin cambios.",
-   "xText": "📌 Michael Saylor: nunca vendió satoshi alguno de su Bitcoin personal. MSTR opera independientemente. Convicción de largo plazo sobre Bitcoin intacta.",
-   "discordText": "**Saylor: posición personal de Bitcoin intacta**\n• Nunca vendió ni un satoshi de su tenencia personal\n• MSTR es entidad separada → puede operar según necesidades\n• Convicción de largo plazo sin cambios",
-   "pushText": "Saylor reafirma: nunca vendió Bitcoin personal; MSTR es entidad separada",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Bitcoin y MSTR reaccionan positivamente: aclaración disipa dudas sobre venta de holdings influyentes",
-    "despues": "Sentimiento institucional se fortalece; otras acciones de tecnología/cripto evalúan si señal refleja mayor confianza en BTC a largo plazo",
-    "escenarios": "Traders vigilarán: (1) futuras operaciones de MSTR en Bitcoin (compras vs ventas); (2) si aclaración devuelve confianza a tenedores institucionales; (3) movimientos de BTC en próximos días",
-    "riesgos": "Aclaración es interpretación de Saylor; no descarta que MSTR venda grandes posiciones en futuro. Titular es sentimiento, no dato duro de mercado"
-   },
-   "macro": null,
    "updates": []
   },
   {
@@ -7287,327 +7609,6 @@
     "aapl": "Volatilidad aumentada; traders revisan modelos de margen"
    },
    "updates": []
-  },
-  {
-   "id": "33773",
-   "fecha": "2026-07-30T20:26:43+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33773",
-   "via": "DeItaone",
-   "original": "TRUMP ORDERS RESTRICTIONS ON EXPORT OF CRITICAL MINERALS SCRAP - WHITE HOUSE OFFICIALS",
-   "titulo": "Trump ordena restricciones a exportación de chatarra de minerales críticos",
-   "resumen": "Funcionarios de la Casa Blanca confirmaron que Trump ha ordenado restricciones sobre la exportación de chatarra de minerales críticos. El titular no especifica magnitud de restricciones, sectores afectados, fechas de implementación ni mercados objetivo. La medida se enmarca en estrategia de seguridad de cadenas de suministro de EE.UU., pero no se detallan excepciones aliados ni cargas fiscales.",
-   "analisis": {
-    "porque": "Impacta directamente a inversores en minería, manufactura y supply-chain: afecta competitividad global de EE.UU., costos de materias primas para electrónica/defensa, y relaciones comerciales. Precedente de medidas proteccionistas trumpistas (aranceles, restricciones a exportación) que volatilizan sectores cíclicos.",
-    "queOcurrio": "Trump ordenó restricciones a exportación de chatarra de minerales críticos; confirmado por funcionarios de Casa Blanca pero sin detalles operacionales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (vía @DeItaone, citando oficiales de Casa Blanca)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Materias Primas",
-    "Minería",
-    "Dólar",
-    "Bonos",
-    "Índices Cíclicos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Minería (cobre, litio, cobalto)",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Materias Primas",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Política Comercial|Materias Primas",
-   "keywords": [
-    "Trump",
-    "minerales-críticos",
-    "restricción-exportación",
-    "chatarra",
-    "supply-chain",
-    "seguridad-nacional"
-   ],
-   "tgText": "🏭 Trump ordena restricciones a exportación de chatarra de minerales críticos. Casa Blanca confirma pero sin detalles operacionales. Posible alza en precios de materias primas y volatilidad en minería.",
-   "xText": "Trump restringe exportación de chatarra de minerales críticos (Casa Blanca confirma). Medida proteccionista de supply-chain; impacto en minería y costos de manufactura aún por definirse. #Trump #Minería",
-   "discordText": "**Trump: Restricciones a Minerales Críticos**\n• Orden de restricción a exportación de chatarra confirmada\n• Fuente: Funcionarios Casa Blanca\n• Detalles: Aún no especificados (alcance, excepciones, timeline)\n• Contexto: Estrategia de seguridad de suministros de EE.UU.",
-   "pushText": "Trump ordena restricciones a exportación de minerales críticos",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Materias primas (cobre, litio, cobalto, oro, plata) pueden subir anticipando oferta global limitada de chatarra reciclada. Minería latinoamericana (Perú, Chile, Argentina) atenta a detalles.",
-    "despues": "Electrónica, manufactura, defensa vigilarán costos de inputs. Posible fortaleza del dólar (percepción de proteccionismo = menos importaciones = menos demanda de divisas extranjeras).",
-    "escenarios": "Traders monitorean: (1) si la restricción es temporal o estructural; (2) si hay excepciones para aliados (USMCA, etc.); (3) posible represalia china/UE; (4) si gatilla nueva ola de proteccionismo.",
-    "riesgos": "Titular muy vago: no especifica qué minerales, qué volúmenes, cuándo entra en vigor, ni qué sucede con cómplices. Riesgo de sobre-interpretación. Posible que sea anuncio sin ejecución inmediata."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 972352512,
-   "fecha": "2026-07-30T20:13:00.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
-   "via": "CNBC",
-   "original": "Jersey Mike&apos;s stock falls 6% in public market debut after pricing shares at $23",
-   "titulo": "Jersey Mike's cae 6% en su debut bursátil tras cerrar a precio de oferta",
-   "resumen": "Las acciones de Jersey Mike's cayeron 6% en su primer día de cotización pública tras ser fijadas en USD 23 por acción. La debilidad en el debut refleja presión de demanda limitada o rotaciones de inversores tempranos, típico en IPOs en ambientes de incertidumbre macroeconómica.",
-   "analisis": {
-    "porque": "Las caídas en debuts de IPOs señalan apetito limitado de riesgo del mercado por nuevas emisiones, especialmente en sectores sensibles al consumidor como food-service. Impacta confianza en pipeline de salidas a bolsa.",
-    "queOcurrio": "Jersey Mike's, cadena de franquicias de sándwiches, debutó en mercados públicos a USD 23/acción pero cerró con pérdidas del 6% en su primer día.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "Consumer Discretionary"
-   ],
-   "sesgos": [
-    {
-     "activo": "IPO-market",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Consumer-stocks",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "ipo-debut",
-    "jersey-mikes",
-    "restaurant-stocks",
-    "capital-markets"
-   ],
-   "tgText": "Jersey Mike's cae 6% en su debut en bolsa. Fijado en USD 23, las acciones cerraron débiles reflejando presión en el apetito por nuevas emisiones.",
-   "xText": "Jersey Mike's debuta en bolsa con caída del 6%. Señal de cautela del mercado hacia nuevas IPOs en sector consumidor.",
-   "discordText": "**Jersey Mike's: Debut bursátil bajo presión**\n• Precio de oferta: USD 23/acción\n• Cierre del primer día: -6%\n• Indicador de demanda débil por nuevas emisiones",
-   "pushText": "Jersey Mike's cae 6% en debut en bolsa",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "IPO-tracker ETFs y fondos especializados en nuevas emisiones pueden ajustarse a la baja",
-    "despues": "Otras cadenas de comida rápida (QSR, MCD) monitorean valoraciones y confianza de inversores",
-    "escenarios": "Traders observan si el débil debut de Jersey Mike's genera contagio a otras IPOs previstas o reduce el pipeline. Proxy del apetito por riesgo en equities de pequeño cap.",
-    "riesgos": "Una caída del 6% en debut es moderada; no necesariamente indica crash. Podría ser rotación normal post-oferta."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33772",
-   "fecha": "2026-07-30T19:23:10+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33772",
-   "via": "DeItaone",
-   "original": "TRUMP'S BOARD OF PEACE BELIEVE HAMAS COULD SIGN AN AGREEMENT IN COMING DAYS TO BEGIN DISARMING AND DEMILITARIZING GAZA STRIP -AXIOS",
-   "titulo": "Trump Board of Peace: Hamás podría firmar acuerdo de desarme en Gaza en días",
-   "resumen": "Según Axios, el equipo de paz de Trump cree que Hamás podría suscribir un acuerdo en los próximos días para comenzar el desarme y desmilitarización de la Franja de Gaza. El titular no especifica detalles del acuerdo ni confirmación oficial de Hamás. Representa un posible giro en las negociaciones de alto el fuego.",
-   "analisis": {
-    "porque": "Cualquier avance en resolución del conflicto Gaza-Israel reduce prima de riesgo geopolítico, beneficiando activos de riesgo (acciones, criptomonedas) y presionando activos refugio (oro, bonos).",
-    "queOcurrio": "El Board of Peace cercano a Trump señala optimismo sobre negociaciones de cese de armas y restructuración de Gaza en corto plazo.",
-    "estado": "rumor",
-    "fuenteOriginal": "Axios (via Walter Bloomberg)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Oro",
-    "Petróleo",
-    "DXY",
-    "Bonos",
-    "Bitcoin"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bitcoin",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Gaza",
-    "Hamás",
-    "Trump",
-    "negociaciones",
-    "paz",
-    "Oriente Medio"
-   ],
-   "tgText": "📍 Board of Peace de Trump señala que Hamás podría firmar acuerdo de desarme en Gaza en días. Optimismo sobre resolución reduciría prima geopolítica (fuente: Axios).",
-   "xText": "🔴 Equipo de paz Trump: Hamás podría firmar acuerdo de desarmamiento en Gaza próximos días. Señal de posible giro en negociaciones; reduciría tensión geopolítica. #Geopolítica",
-   "discordText": "**📍 Negociaciones Gaza: Posible acuerdo Hamás**\n• Trump Board of Peace: Hamás podría suscribir acuerdo desarmamiento en días\n• Reduciría prima de riesgo geopolítico\n• Aún no confirmado oficialmente",
-   "pushText": "Trump Board: Hamás podría firmar acuerdo de desarme Gaza en días",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Oro y refugios se debilitarían por menor apetencia de seguridad; petróleo caería si se anticipa estabilidad en Oriente Medio.",
-    "despues": "Acciones globales (S&P, NASDAQ, índices europeos) repuntarían por aversión reducida al riesgo; bitcoin y criptomonedas se beneficiarían del sentimiento alcista.",
-    "escenarios": "Traders vigilarían: (1) si Hamás confirma oficialmente participación; (2) reacción de Israel y otros actores; (3) impacto en precios de petróleo Brent/WTI; (4) spread de bonos soberanos de países exportadores de crudo.",
-    "riesgos": "Fuente anónima tipo 'personas familiarizadas'. Hamás aún no ha confirmado. Negociaciones Gaza son volátiles; acuerdos pueden colapsar sin aviso. Impacto real limitado si no hay confirmación oficial."
-   },
-   "macro": {
-    "dolar": "Presión bajista si se confirma baja tensión geopolítica",
-    "oro": "Presión bajista; activos refugio pierden demanda",
-    "nasdaq": "Sesgo alcista por menor prima de riesgo",
-    "dow": "Sesgo alcista por rotación hacia riesgo",
-    "sp500": "Sesgo alcista por aversión reducida",
-    "bitcoin": "Sesgo alcista; ambiente risk-on",
-    "ethereum": "Sesgo alcista; ambiente risk-on",
-    "bonos": "Rendimientos presionados si baja tensión",
-    "petroleo": "Presión bajista; menos riesgo de suministro"
-   },
-   "updates": []
-  },
-  {
-   "id": 919596006,
-   "fecha": "2026-07-30T19:06:57.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/heres-where-jeffrey-gundlach-is-investing-after-the-fed-held-rates-steady.html",
-   "via": "CNBC",
-   "original": "Here&apos;s where Jeffrey Gundlach is investing after the Fed held rates steady",
-   "titulo": "Gundlach revela su estrategia de inversión tras mantener tasas de la Fed",
-   "resumen": "Jeffrey Gundlach, gestor de activos reconocido, expone su posicionamiento de cartera tras la decisión de la Reserva Federal de mantener tasas sin cambios. El titular no especifica sectores ni instrumentos concretos, pero refleja la reacción estratégica de grandes inversores a la pausa de política monetaria estadounidense.",
-   "analisis": {
-    "porque": "Las decisiones de grandes gestores de fondos impactan la dirección de flujos de capital. La estrategia post-Fed de Gundlach influye en la confianza de inversores institucionales y retail sobre dónde rotar carteras.",
-    "queOcurrio": "Tras la Fed mantener tasas estables, Gundlach comunicó su estrategia de inversión, pero el titular no detalla qué activos seleccionó ni el razonamiento específico.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "Bonos",
-    "DXY",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "fed-rates",
-    "gundlach",
-    "asset-allocation",
-    "monetary-policy"
-   ],
-   "tgText": "Gundlach publica su estrategia tras decisión de la Fed de mantener tasas. Gran gestor revela dónde rota capital en ambiente de tasas estables.",
-   "xText": "Jeffrey Gundlach da a conocer su posicionamiento tras la pausa de tasas de la Fed. Atención a dónde apuesta el dinero institucional en este escenario.",
-   "discordText": "**Gundlach publica estrategia post-Fed**\n• Mantención de tasas por la Reserva Federal\n• Gestor revela rotación de cartera\n• Impacto en confianza institucional",
-   "pushText": "Gundlach anuncia estrategia de inversión tras Fed mantener tasas",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bonos (TLT, IEF) y USD (DXY) reaccionan primero a señales de rotación de gestores grandes",
-    "despues": "Acciones de sectores defensivos vs. cíclicos pueden rotar según el detalle de la estrategia de Gundlach",
-    "escenarios": "Traders monitorean si Gundlach sugiere cobertura contra inflación (oro), giro defensivo (bonos largos) o apuesta a equities. La claridad sobre tasas 'sticky' define el sesgo.",
-    "riesgos": "El titular carece de detalles. El impacto real dependerá del acceso a la estrategia completa de Gundlach."
-   },
-   "macro": {
-    "dolar": "Neutral a alcista si rota a activos defensivos",
-    "oro": "Alcista si busca cobertura inflacionaria",
-    "nasdaq": "Neutral; depende de rotación sectorial",
-    "dow": "Neutral",
-    "sp500": "Neutral; datos específicos requeridos",
-    "bitcoin": "Sin impacto directo",
-    "ethereum": "Sin impacto directo",
-    "bonos": "Alcista si Gundlach incrementa duración",
-    "petroleo": "Sin impacto directo"
-   },
-   "updates": []
-  },
-  {
-   "id": 938492725,
-   "fecha": "2026-07-30T18:51:42.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/30/china-open-source-trump-ai.html",
-   "via": "CNBC",
-   "original": "China’s open-weight model lead exposes America’s AI blind spot",
-   "titulo": "El modelo open-weight de China expone el punto ciego de IA de Estados Unidos",
-   "resumen": "China está demostrando liderazgo en modelos de lenguaje de código abierto (open-weight), exponiendo una brecha estratégica en la capacidad estadounidense para controlar la distribución de tecnología de IA avanzada. El movimiento cuestiona la efectividad de restricciones de exportación tecnológica.",
-   "analisis": {
-    "porque": "La ventaja de IA es competitiva globalmente. Si China lidera en modelos open-source, erosiona la ventaja de monopolios tecnológicos estadounidenses (OpenAI, Meta, Google) y afecta valuaciones de empresas de IA. Impacta también geopolítica tecnológica y sanciones.",
-    "queOcurrio": "Modelos de IA abiertos chinos están ganando tracción, cuestionando las restricciones estadounidenses sobre exportación de chip y tecnología como mecanismo de control geopolítico.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Tecnología",
-    "NASDAQ",
-    "Semiconductores",
-    "IA",
-    "NVDA",
-    "Meta",
-    "Google"
-   ],
-   "sesgos": [
-    {
-     "activo": "Tech-stocks-USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NVDA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "China-tech",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "ai-geopolitics",
-    "open-source-models",
-    "china-tech",
-    "us-export-controls",
-    "semiconductor-competition"
-   ],
-   "tgText": "Modelos open-weight chinos cuestionan estrategia de control de IA de EE.UU. China avanza en IA mientras sanciones pierden efectividad.",
-   "xText": "China lidera en modelos de IA abiertos, exponiendo brecha estratégica de EE.UU. Cuestiona restricciones de exportación tecnológica.",
-   "discordText": "**China: Ventaja en IA open-source**\n• Modelos chinos abiertos ganan tracción\n• Cuestiona restricciones de exportación de chips\n• Riesgo para monopolios de IA estadounidenses\n• Impacto geopolítico en tecnología",
-   "pushText": "Modelos de IA chinos cuestionan estrategia de control tecnológico de EE.UU.",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "NVIDIA (NVDA), Broadcom (AVGO), AMD retroceden por riesgos a demanda de chips avanzados si China domina en software de IA",
-    "despues": "Meta (META), OpenAI (no cotiza), Google (GOOGL) monitorean presión competitiva de modelos abiertos. Mercado valora menos monopolios si hay alternativas abiertas.",
-    "escenarios": "Traders observan: (1) si restricciones de EE.UU. se erosionan; (2) presión en márgenes de fabricantes de chips; (3) competencia en precios de servicios de IA; (4) riesgo de sanciones escaladas.",
-    "riesgos": "El titular es análisis editorial; no es anuncio de política oficial. Riesgo: escalada de sanciones tecnológicas entre EE.UU. y China. Volatilidad geopolítica alta."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7856,6 +7857,16 @@
   "https://www.cnbc.com/2026/08/03/larry-berg-major-league-soccer-commissioner.html",
   "https://www.cnbc.com/2026/08/03/trump-tariffs-25-states-lawsuit-supreme-court.html",
   "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
-  "https://www.cnbc.com/2026/08/03/snap-q2-earnings-report-2026.html"
+  "https://www.cnbc.com/2026/08/03/snap-q2-earnings-report-2026.html",
+  "https://www.cnbc.com/2026/08/03/here-are-some-of-jpmorgans-favorite-stocks-as-august-trading-kicks-off.html",
+  "https://www.cnbc.com/2026/08/03/amazon-amzn-stock-market-cap-earnings.html",
+  "https://www.cnbc.com/select/what-is-living-paycheck-to-paycheck/",
+  "https://www.cnbc.com/2026/08/03/jim-cramer-market-warmed-up-big-tech-ai-spending.html",
+  "https://www.cnbc.com/2026/08/03/big-techs-anthropic-and-openai-stakes-distort-corporate-earnings.html",
+  "https://www.cnbc.com/2026/08/03/cnbcs-the-china-connection-newsletter-ai-wins-create-investor-risks.html",
+  "https://www.cnbc.com/2026/08/03/bessent-fed-japan-yen-fima-repo-facility.html",
+  "https://www.cnbc.com/2026/08/03/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/08/04/india-lic-stake-sale-discount.html",
+  "https://www.cnbc.com/2026/08/04/grab-earnings-ai-forecast-cfo-.html"
  ]
 }
