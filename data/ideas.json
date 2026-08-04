@@ -1329,5 +1329,56 @@
       ],
       "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
     }
+  },
+  {
+    "title": "USD/COP: corrección del 20% anual deja la moneda local en máximos relativos",
+    "excerpt": "El peso colombiano acumula una ganancia del 20,4% anual frente al dólar. La estructura técnica muestra presión bajista de fondo, pero el precio cotiza cerca de su mínimo de 52 semanas.",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Fortaleza del peso: contexto de largo plazo</h3><p>USD/COP cierra en 3.200,67, consolidando una corrección pronunciada del par. La caída anual del 20,4% refleja una apreciación sostenida del peso colombiano respecto al dólar estadounidense. En la última semana, el retroceso es marginal (-0,3%), lo que sugiere una estabilización después de la caída mensual más significativa del -4,5%. Este movimiento coloca el precio apenas 2,6% por encima del mínimo de 52 semanas (3.119,66), mientras se aleja en -21,2% del máximo de 4.064,25 alcanzado en el período.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Estructura de medias móviles: confirmación de sesgo bajista</h3><p>Las medias móviles componen un patrón bajista definido. La media de 50 periodos se sitúa en 3.386,1 y la de 200 periodos en 3.631,89, ambas por encima del precio actual. El precio cotiza 186 pips por debajo de la media de 50 y 431 pips bajo la de 200, manifestando una presión sostenida hacia la baja. La estructura de medias (MA50 por debajo de MA200) confirma un sesgo bajista de fondo que persiste incluso con la proximidad del precio a mínimos cíclicos.</p><p>El indicador RSI(14) diario marca 40,1, un nivel neutral que evita señales de extremo. No hay sobreventa (que comenzaría alrededor de 30) ni condiciones de sobrecompra (por encima de 70). Este contexto técnico neutral sugiere que el momentum no está exhausto en ninguna dirección, pero la estructura de medias móviles anticipa que cualquier movimiento relevante tendería hacia la baja.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Niveles de referencia y rango de volatilidad</h3><p><strong style=\"color:var(--green);\">Soportes:</strong> 3.188,25 · 3.119,66<br><strong style=\"color:var(--crimson-bright);\">Resistencias:</strong> 3.286,6 · 3.478,96 · 3.504,26</p><p>El soporte más cercano en 3.188,25 está apenas 13 pips por debajo del precio actual, lo que establece un buffer técnico mínimo. El segundo soporte en 3.119,66 coincide con el mínimo de 52 semanas, un nivel de importancia elevada que ha frenado la presión vendedora en el período analizado. En la dirección opuesta, la primera resistencia en 3.286,6 está 86 pips arriba; las resistencias secundarias en 3.478,96 y 3.504,26 quedan más alejadas.</p><p>El ATR(14), que mide el rango promedio diario, marca 55,22 pips. Esta volatilidad limitada refuerza la idea de que el mercado está en una fase de compresión, sin impulsos claros en ninguna dirección. La última vela diaria no registra un patrón definido (null), lo que indica una sesión de consolidación sin una formación gráfica de relevancia inmediata.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es un análisis informativo del contexto de mercado, no constituye una recomendación de inversión ni una señal de compra/venta.</em></p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Dinámicas institucionales: Order Blocks y liquidez en extremos</h3><p>Desde la perspectiva del flujo institucional, USD/COP muestra características relevantes. La proximidad del precio al mínimo anual de 3.119,66 sugiere que el mercado ha liquidado la mayoría de las órdenes de venta acumuladas bajo este nivel. Sin embargo, la estructura técnica (medias móviles bajistas, precio bajo ambas) indica que los Order Blocks bajistas (zonas donde las instituciones tenían posiciones cortas ejecutadas en movimientos previos) permanecen activos en la zona de 3.386,1 (media de 50) y por encima.</p><p>Los Fair Value Gaps (vacíos de precio dejados por movimientos impulsivos) no son evidentes en el conjunto de datos disponibles, pero la estabilización en el rango 3.200-3.242 en la última sesión sugiere que el precio está explorando una zona de oferta/demanda equilibrada. La liquidez se concentra en dos puntos: el cierre de posiciones cortas alrededor del mínimo de 52 semanas (3.119,66, donde las órdenes de stop loss de vendedores cortos serían ejecutadas al romperse hacia arriba) y los stops de compradores frustrados por debajo de la media de 50 en 3.386,1.</p><p>No se observa un Break of Structure (BOS) claro ni un Change of Character (CHoCH) en la última sesión. El patrón de medias bajistas se mantiene intacto, y la caída del -1,3% diario es insuficiente para generar un giro estructural. El mercado permanece en una fase de transición donde la dirección siguiente dependerá del catalizador que rompa la compresión neutral del RSI.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario alcista: invalidación de la estructura bajista</h3><p>Un giro alcista requeriría que USD/COP rompa por encima de la media de 50 en 3.386,1 con convicción, acompañado de un aumento en la volatilidad (ATR superior a 55,22) y una lectura del RSI que suba hacia zona neutral-alcista (por encima de 50). El objetivo técnico próximo sería la resistencia en 3.478,96, una ruptura que invalidaría el sesgo bajista de las medias móviles e implicaría una reconexión del precio hacia la media de 200 en 3.631,89.</p><p>Para que este escenario gane tracción, el nivel de invalidación sería una caída por debajo del soporte de 3.119,66 (mínimo de 52 semanas). Si el precio rompiese este nivel, la apreciación del peso se aceleraría y se buscarían nuevos mínimos cíclicos, descartando cualquier intento alcista inmediato.</p><h3 style=\"margin:20px 0 10px;font-size:1.1rem;\">Escenario bajista: extensión de presión sobre peso colombiano</h3><p>Un movimiento bajista confirmado requeriría que el precio pierda el soporte de 3.188,25 con cierre diario definitivo, lo que llevaría el siguiente objetivo hacia 3.119,66 (mínimo de 52 semanas) y potencialmente hacia 3.064 si hay una ruptura violenta de este último nivel. El RSI desciendería hacia zona de sobreventa (inferior a 30), y la volatilidad se expandiría más allá de los 55 pips promedio.</p><p>En este escenario, la estructura bajista de medias móviles se refuerza, con el precio cotizando cada vez más distante bajo ambas. El objetivo técnico de mediano plazo sería la segunda resistencia en 3.478,96 quedando fuera del alcance, y una eventual reconexión con la media de 200 en 3.631,89 estaría completamente descartada. El nivel de invalidación sería un cierre por encima de 3.286,6 (primera resistencia), que restablecería el equilibrio y forzaría una revisión de las dinámicas bajistas.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión. Los escenarios descritos son posibilidades, no predicciones.</em></p>",
+    "trend": "down",
+    "symbol": "FX_IDC:USDCOP",
+    "category": "LatAm",
+    "slug": "usdcop-correccion-del-20-anual-deja-la-moneda-local-en-maxim-msf8rlnm",
+    "author": "AR4 Mercados",
+    "date": "2026-08-04",
+    "marketData": {
+      "symbol": "FX_IDC:USDCOP",
+      "nombre": "USD/COP (peso colombiano)",
+      "yahooSymbol": "USDCOP=X",
+      "fuente": "Yahoo Finance (USDCOP=X)",
+      "fechaUltimaVela": "2026-08-04",
+      "precio": 3200.67,
+      "cierreAnterior": 3242.13,
+      "variacionDiaPct": -1.3,
+      "variacionSemanaPct": -0.3,
+      "variacionMesPct": -4.5,
+      "variacionAnioPct": -20.4,
+      "rangoDiaReal": {
+        "minimo": 3200.67,
+        "maximo": 3200.67
+      },
+      "rsi14": 40.1,
+      "lecturaRsi": "neutral",
+      "media50": 3386.1,
+      "media200": 3631.89,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por debajo",
+      "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+      "atr14": 55.22,
+      "maximo52sem": 4064.25,
+      "minimo52sem": 3119.66,
+      "distanciaAMaximo52semPct": -21.2,
+      "distanciaAMinimo52semPct": 2.6,
+      "soportes": [
+        3188.25,
+        3119.66
+      ],
+      "resistencias": [
+        3286.6,
+        3478.96,
+        3504.26
+      ],
+      "patronUltimaVela": null
+    }
   }
 ]

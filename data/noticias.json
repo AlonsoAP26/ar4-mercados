@@ -6265,5 +6265,338 @@
       ],
       "patronUltimaVela": "vela alcista sin patron destacable"
     }
+  },
+  {
+    "title": "Las vacantes de empleo en EE.UU. caen a 7,359 millones y decepcionan al consenso",
+    "excerpt": "El informe JOLTS de junio mostró 7,359 millones de vacantes frente a 7,4 millones esperados, con una caída desde los 7,537 millones revisados de mayo.",
+    "symbol": "CAPITALCOM:DXY",
+    "trend": "down",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dato: menos vacantes de las previstas</h3><p>El Bureau of Labor Statistics de Estados Unidos publicó este martes 4 de agosto el informe JOLTS (Job Openings and Labor Turnover Survey) correspondiente a junio de 2026. Las vacantes de empleo se ubicaron en 7,359 millones, por debajo del consenso de mercado de 7,4 millones y con una caída frente a los 7,537 millones revisados al alza de mayo. La lectura implica un retroceso de 178.000 posiciones respecto al mes previo, según el detalle oficial, con descensos concentrados en salud, ocio y hospitalidad, comercio mayorista y servicios empresariales.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Un mercado laboral que se enfría de forma gradual</h3><p>La tasa de contratación se mantuvo baja en 3,4%, mientras que la tasa de renuncias quedó en 2% y la de despidos en 1,1%, un combo que analistas describen como propio de un mercado laboral estancado más que en franco deterioro. El reporte llega apenas un día después de que el ISM manufacturero de julio sorprendiera al alza con 55,6 puntos frente al 54,0 esperado, un contraste que complica la lectura para la Reserva Federal de cara a su próxima reunión de septiembre.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Reacción moderada en el dólar y los rendimientos</h3><p>El índice dólar (DXY) cotiza en 99,88, con una baja de 0,1% en la jornada, 1,5% en la semana y 1% en el mes, y su RSI de 14 días se ubica en 37,2, en zona neutral pero cerca de terreno de sobreventa. El euro (EUR/USD) se negocia en 1,1535, con un avance de 0,2% en el día, 1,3% en la semana y 0,8% en el mes. El billete verde sigue presionado también por el retroceso del petróleo y por la expectativa de que los rendimientos del Tesoro a 10 años, que rondan el 4,69%, mantengan un rango acotado mientras el mercado espera las siguientes piezas del rompecabezas laboral: la encuesta ADP, las peticiones semanales de desempleo y el informe de empleo no agrícola del viernes.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">La brecha entre el dato duro y el blando</h3><p>El propio informe del BLS confirma que <em>\"el número de vacantes de empleo se mantuvo prácticamente sin cambios en 7,4 millones en junio\"</em> en su lectura oficial redondeada, aunque la cifra exacta de 7,359 millones quedó por debajo del piso del consenso de 7,4 millones que manejaban los operadores. La revisión al alza de mayo, de 7,4 a 7,537 millones, matiza la lectura bajista: el nivel de junio sigue por encima de los mínimos del ciclo y se mantiene en un rango que la Reserva Federal describe como de \"equilibrio gradual\" entre oferta y demanda de trabajo. En paralelo, el oro (XAU/USD) opera en 4.134,3 dólares la onza, con un salto de 2,5% en el día y 2,4% en la semana, reflejo de una demanda de cobertura que combina la incertidumbre laboral con la tensión geopolítica remanente en Medio Oriente. El peso mexicano (USD/MXN) cotiza en 17,25, con una baja de 0,4% en el día y 1,1% en la semana, mientras que el real brasileño (USD/BRL) se ubica en 5,1272, con un leve avance de 0,5% en la jornada pero una baja de 0,2% en la semana, mostrando que el apetito por monedas emergentes se mantiene firme pese al ruido del dato estadounidense.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>El JOLTS de junio no alcanza para inclinar la balanza hacia un giro dovish de la Fed: la combinación de un ISM manufacturero fuerte con un mercado laboral que se enfría de manera ordenada, sin señales de despidos masivos, deja a la autoridad monetaria en una posición de espera antes de su reunión de septiembre. El mercado sigue asignando probabilidades relevantes a un movimiento de tasas ese mes, aunque la dirección exacta dependerá de los próximos datos duros de empleo, en particular la nómina no agrícola del viernes. Para los operadores de FX, el nivel de 99,88 en el DXY y el RSI de 37,2 sugieren que el dólar transita una fase de consolidación bajista sin sobreventa extrema, lo que deja margen para nuevos test a la baja si el informe de empleo del viernes confirma la desaceleración. El oro, con su RSI en 52,6, todavía tiene recorrido antes de entrar en sobrecompra, por lo que la atención de esta semana se concentrará en los datos de empleo restantes y en cualquier señal adicional sobre el rumbo de la política monetaria estadounidense.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "Bureau of Labor Statistics",
+        "url": "https://www.bls.gov/news.release/archives/jolts_08042026.htm"
+      },
+      {
+        "name": "Investing Live",
+        "url": "https://investinglive.com/news/jolts-job-openings-7-359m-vs-7-400m-estimate-lower-than-last-month/"
+      },
+      {
+        "name": "Trading Economics",
+        "url": "https://tradingeconomics.com/united-states/job-offers"
+      },
+      {
+        "name": "Qz",
+        "url": "https://qz.com/us-job-openings-june-2026-jolts-report-080426"
+      }
+    ],
+    "aiSummary": {
+      "que": "El informe JOLTS de junio mostró 7,359 millones de vacantes de empleo en EE.UU., por debajo de los 7,4 millones esperados y de los 7,537 millones revisados de mayo.",
+      "porque": "Es la primera pieza de una semana cargada de datos laborales que definirá las expectativas sobre la próxima reunión de la Fed en septiembre, en un contexto donde el ISM manufacturero ya sorprendió al alza.",
+      "activos": [
+        "DXY",
+        "EUR/USD",
+        "Oro",
+        "USD/MXN",
+        "USD/BRL"
+      ],
+      "siguiente": "Las peticiones semanales de desempleo del jueves y el informe de empleo no agrícola del viernes serán las próximas piezas clave para calibrar el rumbo de tasas."
+    },
+    "aiScenarios": {
+      "alcista": 25,
+      "lateral": 45,
+      "bajista": 30
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Medio",
+      "lectura": "El dólar mantiene un sesgo débil de corto plazo, pero la falta de un deterioro laboral abrupto limita la intensidad del movimiento hasta el informe de empleo del viernes."
+    },
+    "timeline": [
+      {
+        "cuando": "Ayer",
+        "texto": "El ISM manufacturero de julio sorprendió al alza con 55,6 puntos frente al 54,0 esperado por el consenso."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El BLS publicó el informe JOLTS de junio: 7,359 millones de vacantes vs 7,4 millones esperados, con mayo revisado a 7,537 millones."
+      },
+      {
+        "cuando": "Próxima semana",
+        "texto": "Se conocerán la encuesta ADP, las peticiones semanales de desempleo y el informe de empleo no agrícola de julio."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué mide el informe JOLTS?",
+        "a": "Es la encuesta de vacantes de empleo y rotación laboral del Bureau of Labor Statistics de EE.UU., que reporta ofertas de trabajo, contrataciones, renuncias y despidos cada mes."
+      },
+      {
+        "q": "¿Por qué le importa este dato a la Fed?",
+        "a": "Las vacantes de empleo son un indicador adelantado de la fortaleza del mercado laboral, una de las dos variables centrales del mandato dual de la Reserva Federal junto con la inflación."
+      },
+      {
+        "q": "¿Qué significa que el dato haya quedado por debajo del consenso?",
+        "a": "Indica que la demanda de trabajo se enfría más rápido de lo esperado por los analistas, lo que en general se interpreta como una señal que podría inclinar a la Fed hacia una postura menos restrictiva."
+      },
+      {
+        "q": "¿Por qué sube el oro en este contexto?",
+        "a": "El oro suele beneficiarse cuando aumenta la incertidumbre sobre el rumbo de las tasas de interés, ya que un ciclo de política monetaria menos restrictivo reduce el costo de oportunidad de mantener un activo que no paga interés."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "FX:EURUSD",
+      "OANDA:XAUUSD",
+      "FX_IDC:USDMXN",
+      "FX_IDC:USDBRL"
+    ],
+    "category": "Forex",
+    "heroType": "forex",
+    "slug": "las-vacantes-de-empleo-en-eeuu-caen-a-7359-millones-y-decepc-msf8r45j",
+    "author": "AR4 Mercados",
+    "date": "2026-08-04",
+    "sourceName": "Bureau of Labor Statistics",
+    "sourceUrl": "https://www.bls.gov/news.release/archives/jolts_08042026.htm",
+    "marketPanel": [
+      {
+        "symbol": "FX:EURUSD",
+        "nombre": "EUR/USD",
+        "yahooSymbol": "EURUSD=X",
+        "fuente": "Yahoo Finance (EURUSD=X)",
+        "fechaUltimaVela": "2026-08-04",
+        "precio": 1.1535,
+        "cierreAnterior": 1.1507,
+        "variacionDiaPct": 0.2,
+        "variacionSemanaPct": 1.3,
+        "variacionMesPct": 0.8,
+        "variacionAnioPct": -1.5,
+        "rangoDiaReal": {
+          "minimo": 1.1533,
+          "maximo": 1.1535
+        },
+        "rsi14": 60.2,
+        "lecturaRsi": "neutral",
+        "media50": 1.1478,
+        "media200": 1.1629,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0056,
+        "maximo52sem": 1.2024,
+        "minimo52sem": 1.1325,
+        "distanciaAMaximo52semPct": -4.1,
+        "distanciaAMinimo52semPct": 1.9,
+        "soportes": [
+          1.1519,
+          1.143,
+          1.1359
+        ],
+        "resistencias": [
+          1.1675,
+          1.1828,
+          1.1928
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-08-04",
+        "precio": 99.88,
+        "cierreAnterior": 99.96,
+        "variacionDiaPct": -0.1,
+        "variacionSemanaPct": -1.5,
+        "variacionMesPct": -1,
+        "variacionAnioPct": 1.2,
+        "rangoDiaReal": {
+          "minimo": 99.83,
+          "maximo": 100.06
+        },
+        "rsi14": 37.2,
+        "lecturaRsi": "neutral",
+        "media50": 100.46,
+        "media200": 99.15,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.5062,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -1.9,
+        "distanciaAMinimo52semPct": 4.5,
+        "soportes": [
+          99.34,
+          98.79,
+          97.78
+        ],
+        "resistencias": [
+          100.54,
+          101.68
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "OANDA:XAUUSD",
+        "nombre": "Oro (XAU/USD, futuro COMEX)",
+        "yahooSymbol": "GC=F",
+        "fuente": "Yahoo Finance (GC=F)",
+        "fechaUltimaVela": "2026-08-04",
+        "precio": 4134.3,
+        "cierreAnterior": 4033.7,
+        "variacionDiaPct": 2.5,
+        "variacionSemanaPct": 2.4,
+        "variacionMesPct": -0.5,
+        "variacionAnioPct": 23.5,
+        "rangoDiaReal": {
+          "minimo": 4132.1,
+          "maximo": 4135.5
+        },
+        "rsi14": 52.6,
+        "lecturaRsi": "neutral",
+        "media50": 4182.86,
+        "media200": 4478.76,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 71.17,
+        "maximo52sem": 5586.2,
+        "minimo52sem": 3310.1,
+        "distanciaAMaximo52semPct": -26,
+        "distanciaAMinimo52semPct": 24.9,
+        "soportes": [
+          4100.8,
+          4028.13,
+          3963.55
+        ],
+        "resistencias": [
+          4152.1,
+          4199.7,
+          4258.9
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "FX_IDC:USDMXN",
+        "nombre": "USD/MXN (peso mexicano)",
+        "yahooSymbol": "USDMXN=X",
+        "fuente": "Yahoo Finance (USDMXN=X)",
+        "fechaUltimaVela": "2026-08-04",
+        "precio": 17.25,
+        "cierreAnterior": 17.33,
+        "variacionDiaPct": -0.4,
+        "variacionSemanaPct": -1.1,
+        "variacionMesPct": -0.8,
+        "variacionAnioPct": -7.4,
+        "rangoDiaReal": {
+          "minimo": 17.24,
+          "maximo": 17.26
+        },
+        "rsi14": 38.7,
+        "lecturaRsi": "neutral",
+        "media50": 17.41,
+        "media200": 17.65,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.1188,
+        "maximo52sem": 18.86,
+        "minimo52sem": 17.07,
+        "distanciaAMaximo52semPct": -8.6,
+        "distanciaAMinimo52semPct": 1,
+        "soportes": [
+          17.24,
+          17.14
+        ],
+        "resistencias": [
+          17.3,
+          17.43,
+          17.64
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      },
+      {
+        "symbol": "FX_IDC:USDBRL",
+        "nombre": "USD/BRL (real brasileno)",
+        "yahooSymbol": "USDBRL=X",
+        "fuente": "Yahoo Finance (USDBRL=X)",
+        "fechaUltimaVela": "2026-08-04",
+        "precio": 5.1272,
+        "cierreAnterior": 5.1029,
+        "variacionDiaPct": 0.5,
+        "variacionSemanaPct": -0.2,
+        "variacionMesPct": -0.3,
+        "variacionAnioPct": -4.9,
+        "rangoDiaReal": {
+          "minimo": 5.1237,
+          "maximo": 5.1388
+        },
+        "rsi14": 51.9,
+        "lecturaRsi": "neutral",
+        "media50": 5.1266,
+        "media200": 5.2087,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por debajo",
+        "cruceMedias": "media 50 por debajo de la 200 (estructura bajista)",
+        "atr14": 0.0641,
+        "maximo52sem": 5.6168,
+        "minimo52sem": 4.8812,
+        "distanciaAMaximo52semPct": -8.7,
+        "distanciaAMinimo52semPct": 5,
+        "soportes": [
+          5.1171,
+          5.0572,
+          4.9946
+        ],
+        "resistencias": [
+          5.1684,
+          5.2461,
+          5.3108
+        ],
+        "patronUltimaVela": "inside bar (rango contenido dentro de la vela previa: compresion)"
+      }
+    ],
+    "marketData": {
+      "symbol": "CAPITALCOM:DXY",
+      "nombre": "Indice dolar (DXY)",
+      "yahooSymbol": "DX-Y.NYB",
+      "fuente": "Yahoo Finance (DX-Y.NYB)",
+      "fechaUltimaVela": "2026-08-04",
+      "precio": 99.88,
+      "cierreAnterior": 99.96,
+      "variacionDiaPct": -0.1,
+      "variacionSemanaPct": -1.5,
+      "variacionMesPct": -1,
+      "variacionAnioPct": 1.2,
+      "rangoDiaReal": {
+        "minimo": 99.83,
+        "maximo": 100.06
+      },
+      "rsi14": 37.2,
+      "lecturaRsi": "neutral",
+      "media50": 100.46,
+      "media200": 99.15,
+      "posicionVsMedia50": "por debajo",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 0.5062,
+      "maximo52sem": 101.8,
+      "minimo52sem": 95.55,
+      "distanciaAMaximo52semPct": -1.9,
+      "distanciaAMinimo52semPct": 4.5,
+      "soportes": [
+        99.34,
+        98.79,
+        97.78
+      ],
+      "resistencias": [
+        100.54,
+        101.68
+      ],
+      "patronUltimaVela": "vela bajista sin patron destacable"
+    }
   }
 ]
