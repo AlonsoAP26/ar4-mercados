@@ -1,7 +1,199 @@
 {
- "lastId": 33983,
- "actualizado": "2026-08-04T15:56:50.455Z",
+ "lastId": 33990,
+ "actualizado": "2026-08-04T17:47:48.022Z",
  "items": [
+  {
+   "id": 33990,
+   "fecha": "2026-08-04T16:24:28+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33990",
+   "via": "DeItaone",
+   "original": "IRAN, OMAN REPORT PROGRESS ON HORMUZ TALKS Iran's Foreign Ministry said negotiations with Oman on safe shipping routes through the Strait of Hormuz are progressing positively. The talks aim to establish a transit corridor that balances Iranian sovereignty with the national security interests of both countries. Tehran said technical and political discussions have been constructive, with the final a",
+   "titulo": "Irán y Omán reportan avances en negociaciones del Estrecho de Ormuz",
+   "resumen": "El ministerio de Relaciones Exteriores iraní informó que las negociaciones con Omán sobre corredores seguros en el Estrecho de Ormuz avanzan positivamente en niveles técnico y político. Las conversaciones buscan establecer una ruta de tránsito que equilibre la soberanía iraní con intereses de seguridad nacional. Teherán afirmó que los diálogos han sido constructivos, con anuncio final pendiente de conclusión de negociaciones.",
+   "analisis": {
+    "porque": "Confirmación de avances en resolución del cierre del Estrecho de Ormuz reducirían premio de riesgo geopolítico en petróleo y energía global. Afecta directamente precios de crudo y volatilidad de mercados desarrollados.",
+    "queOcurrio": "Irán reporta negociaciones con Omán en fase avanzada sobre corredores de tránsito seguro en Ormuz, con evaluación positiva de ambos lados (técnico y político).",
+    "estado": "confirmado",
+    "fuenteOriginal": "FARS (medios estatales iraníes)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "S&P500",
+    "EURUSD",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Estrecho-Ormuz",
+    "Irán",
+    "Omán",
+    "petróleo",
+    "riesgos-geopolíticos",
+    "negociaciones"
+   ],
+   "tgText": "🔴 Irán reporta avances en negociaciones con Omán sobre Estrecho de Ormuz. Ambos lados califican conversaciones como positivas en niveles técnico y político. Acuerdo final pendiente. Presión bajista potencial en petróleo.",
+   "xText": "🔴 ORMUZ: Irán reporta negociaciones positivas con Omán sobre corredores seguros en Estrecho. Evaluación constructiva en ambos niveles (técnico/político). Acuerdo final próximo. Sesgo bajista en petróleo si cierra deal.",
+   "discordText": "**Irán-Omán: Avances en Ormuz**\n• Negociaciones califican como positivas en aspectos técnico y político\n• Objetivo: corredor de tránsito que respete soberanía iraní\n• Anuncio final pendiente conclusión de diálogos\n• Riesgo bajista para petróleo si prospera acuerdo",
+   "pushText": "Irán: negociaciones Ormuz avanzan positivamente con Omán",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Petróleo crudo (WTI/Brent): caída si mercado precifica resolución de bloqueo; el Estrecho de Ormuz canaliza ~30% del comercio mundial de crudo.",
+    "despues": "Oro (flight-to-safety reverso), EURUSD (apetito de riesgo), S&P500 (sector energético y ciclo económico), rendimientos de bonos USA (alivio de inflación por energía).",
+    "escenarios": "Traders vigilarán: (1) si Irán confirma levantamiento efectivo de minas; (2) si Occidente acepta 'garantías de seguridad' iraní; (3) timeline para reapertura completa; (4) si acuerdo incluye compensaciones/sanciones.",
+    "riesgos": "Medios estatales iraníes no verificables independientemente; Irán pide control del Estrecho + derechos de tránsito (desacuerdo clave con EE.UU.); IRGC aún debe aprobar; ceasefire requiere confirmación; se reportó en junio ataque a barco de carga, mostrando volatilidad persistente."
+   },
+   "macro": {
+    "petroleo": "Presión bajista si negociaciones se consolidan",
+    "oro": "Sesgo bajista por reversión de flight-to-safety",
+    "dolar": "Presión bajista si apetito de riesgo mejora",
+    "sp500": "Sesgo alcista por reducción de prima de riesgo energético",
+    "bonos": "Rendimientos podrían bajar si inflación energética mejora"
+   },
+   "updates": []
+  },
+  {
+   "id": 33987,
+   "fecha": "2026-08-04T16:06:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33987",
+   "via": "DeItaone",
+   "original": "U.S. EYES POLYSILICON PRICE FLOOR The Trump administration is preparing a price floor and new tariffs on polysilicon and related products later this month, according to Reuters. The move aims to protect U.S. producers Hemlock Semiconductor (Corning: $GLW) and Wacker Chemie (ETR: WCH) from growing Chinese competition and strengthen domestic supply chains for solar panels, semiconductors, AI, and en",
+   "titulo": "Trump prepara precio mínimo y aranceles a polisilicio para proteger productores USA",
+   "resumen": "La administración Trump planea establecer un precio mínimo y nuevos aranceles sobre polisilicio y productos relacionados antes de fin de mes, según Reuters. La medida busca proteger a productores estadounidenses como Hemlock Semiconductor (Corning, GLW) y Wacker Chemie de competencia china, además de fortalecer cadenas de suministro domésticas para paneles solares, semiconductores, IA y energía.",
+   "analisis": {
+    "porque": "Política arancelaria directa afecta costos de semiconductores, tecnología solar y cadenas de IA. Impacta márgenes de fabricantes, precios para consumidores y competitividad global de sector tech-USA. Sesgo proteccionista acelera re-shoring pero riesgo de represalias comerciales.",
+    "queOcurrio": "Administración Trump prepara piso de precio (price floor) y aranceles nuevos sobre polisilicio y derivados (semiconductores, paneles solares) para fin de agosto. Meta: proteger Hemlock/Corning y Wacker Chemie de competencia china.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Reuters"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "GLW",
+    "Semiconductores",
+    "Paneles Solares",
+    "DXY",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Corning (GLW)",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "polisilicio",
+    "aranceles",
+    "Trump",
+    "semiconductores",
+    "paneles-solares",
+    "cadenas-suministro",
+    "proteccionismo"
+   ],
+   "tgText": "📊 Trump anuncia aranceles + precio mínimo en polisilicio (fin agosto). Protege Corning/Hemlock vs China. Impacto: margen semiconductores/solares, potencial represalia comercial. Sesgo alcista pequeños fabricantes USA, riesgo para NASDAQ.",
+   "xText": "⚠️ ARANCELES: Trump prepara precio mínimo + tariffs en polisilicio antes del 31/8. Objetivo: proteger Hemlock (Corning-GLW) y Wacker vs competencia china. Impacta márgenes chip, riesgo represalias. Vigilar NASDAQ.",
+   "discordText": "**Trump: Aranceles Polisilicio**\n• Precio mínimo + nuevos aranceles antes fin agosto\n• Objetivo: proteger Hemlock Semiconductor y Wacker Chemie\n• Alcance: polisilicio, semiconductores, paneles solares, cadenas IA\n• Riesgo: represalias comerciales China, presión costos industriales",
+   "pushText": "Trump prepara aranceles a polisilicio para fin de mes; protege Corning y productores USA",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "NASDAQ y fabricantes de semiconductores: sesgo mixto (pequeños productores USA ganan protección, pero cadenas de suministro de grandes integrados encarecen). Corning (GLW) típicamente reacciona al alza por protección.",
+    "despues": "DXY (dólar sube por política proteccionista), EURUSD (presión bajista), índices globales con exposición a tech (DAX, FTSE), acciones chinas de semiconductor.",
+    "escenarios": "Traders vigilarán: (1) si el piso de precio efectivamente sube costos sin competencia; (2) si China toma represalias arancelarias (baterías, EV, químicos); (3) si medida expande a otros segmentos semiconductores; (4) impacto en cadenas globales de IA (Nvidia, TSMC indirectamente).",
+    "riesgos": "Conflicto comercial EE.UU.-China puede escalar; el titular no especifica nivel exacto de arancel ni si aplica retroactivamente; pequeños fabricantes pueden no beneficiarse si demanda desciende por precios más altos; represalias chinas podrían afectar otros sectores USA."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 33985,
+   "fecha": "2026-08-04T16:03:46+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33985",
+   "via": "DeItaone",
+   "original": "TRUMP ADMINISTRATION PREPARING TO SET PRICE FLOOR, TARIFFS ON IMPORTS OF POLYSILICON AND DERIVATIVE PRODUCTS USED IN CHIPS AND SOLAR PANELS-SOURCES",
+   "titulo": "Casa Blanca prepara salvaguardas arancelarias en polisilicio y derivados antes de fin de mes",
+   "resumen": "Según fuentes citadas por Reuters, la administración Trump planea implementar un precio mínimo y nuevos aranceles sobre polisilicio y productos derivados (semiconductores, paneles solares) a finales de agosto. La iniciativa busca fortalecer productores estadounidenses frente a competencia china y asegurar cadenas de suministro críticas para chips, IA y energía renovable.",
+   "analisis": {
+    "porque": "Medida proteccionista sobre insumos críticos para electrónica avanzada. Afecta costos de fabricación y márgenes industriales USA; riesgo de represalia comercial china escala tensiones geopolíticas y volatilidad de mercados tech.",
+    "queOcurrio": "Fuentes de administración Trump indican preparación de precio mínimo y aranceles en polisilicio y derivados, anuncio esperado antes de fin de agosto.",
+    "estado": "rumor",
+    "fuenteOriginal": "Reuters (fuentes anónimas)"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Semiconductores",
+    "S&P500",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "polisilicio",
+    "aranceles",
+    "semiconductores",
+    "Trump",
+    "proteccionismo",
+    "cadenas-suministro"
+   ],
+   "tgText": "⚠️ RUMOR: Trump planea aranceles + piso de precio en polisilicio antes fin agosto. Fuentes anónimas citan planes de protección vs China. Impacto directo en margen de semiconductores, paneles solares e IA. Vigilar NASDAQ.",
+   "xText": "⚠️ Trump prepara aranceles polisilicio (fuentes): precio mínimo + tariffs antes 31/8. Impacta semiconductores, paneles, cadenas IA. Riesgo represalias China, presión NASDAQ. Vigilar anuncio oficial.",
+   "discordText": "**⚠️ RUMOR: Aranceles Polisilicio**\n• Fuentes: Trump planea precio mínimo + aranceles\n• Timeline: antes fin de agosto\n• Alcance: semiconductores, paneles solares, IA\n• Estado: no confirmado oficial; Reuters cita fuentes anónimas",
+   "pushText": "Fuentes: Trump prepara aranceles polisilicio antes fin agosto",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NASDAQ y fabricantes tech USA: sesgo mixto por protección vs encarecimiento de insumos. Semiconductores pequeños productores suben, grandes integrados bajo presión.",
+    "despues": "DXY, índices globales tech, acciones chinas semiconductor.",
+    "escenarios": "Vigilar: (1) confirmación oficial de niveles de arancel; (2) si China represalia; (3) timing de implementación; (4) cobertura de otros insumos críticos.",
+    "riesgos": "Fuente anónima, no confirmado oficialmente. Riesgo de escalada comercial. Impacto real en costos depende de nivel de arancel (no especificado en titular)."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "33833",
    "fecha": "2026-08-02T08:57:35+00:00",
@@ -7427,213 +7619,6 @@
     "sp500": "bajista",
     "bonos": "bajista",
     "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33789",
-   "fecha": "2026-07-31T11:40:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33789",
-   "via": "DeItaone",
-   "original": "MARKET MOVERS 🟢 UPGRADES $BAX: Citigroup upgraded to Neutral; PT raised to $28 from $17 $CORZ: KBW upgraded to Outperform; PT raised to $28 from $25 $PTEN: JP Morgan upgraded to Neutral; PT raised to $12 from $10 $KPTI: H.C. Wainwright upgraded to Neutral 🔴 DOWNGRADES $RBLX: Benchmark downgraded to Sell; PT cut to $50 from $60 $BXMT: KBW downgraded to Market Perform; PT cut to $16 from $20 $NBTB",
-   "titulo": "Cambios de rating: Citi sube BAX a Neutral; KBW mejora CORZ y baja BXMT",
-   "resumen": "Múltiples upgrades y downgrades: Citigroup elevó BAX a Neutral ($17→$28 PT); KBW mejoró CORZ a Outperform ($25→$28); JP Morgan elevó PTEN a Neutral ($10→$12); H.C. Wainwright mejoró KPTI a Neutral. Downgrades: Benchmark bajó RBLX a Sell ($60→$50); KBW redujo BXMT ($20→$16); Stephens bajó NBTB a Equal-Weight ($52→$55).",
-   "analisis": {
-    "porque": "Cambios de rating mueven valuaciones de micro-caps y pueden señalar realineamiento sectorial (bancos, gaming, semiconductores); impacta apetito selectivo de hedge funds y retail",
-    "queOcurrio": "Siete cambios de rating en 24h: upgrades BAX, CORZ, PTEN, KPTI; downgrades RBLX, BXMT, NBTB con ajustes de precio-objetivo",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "BAX",
-    "CORZ",
-    "PTEN",
-    "KPTI",
-    "RBLX",
-    "BXMT",
-    "NBTB"
-   ],
-   "sesgos": [
-    {
-     "activo": "BAX",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "CORZ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "PTEN",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "RBLX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "BXMT",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "ratings",
-    "upgrades",
-    "downgrades",
-    "BAX",
-    "CORZ",
-    "RBLX",
-    "BXMT"
-   ],
-   "tgText": "Rating moves: BAX neutral $28 (Citi), CORZ outperform $28 (KBW), PTEN neutral $12 (JPM). Downgrades: RBLX sell $50 (Benchmark), BXMT $16 (KBW).",
-   "xText": "Rating cambios: BAX, CORZ, PTEN, KPTI upgradeados. RBLX, BXMT, NBTB downgradeados. Impacto selectivo en micro-caps.",
-   "discordText": "**Rating Changes**\n📈 Upgrades: BAX $28, CORZ $28, PTEN $12, KPTI\n📉 Downgrades: RBLX $50, BXMT $16, NBTB $55",
-   "pushText": "Rating moves en micro-caps: BAX neutral, RBLX sell",
-   "importancia": 3,
-   "reaccion": {
-    "primero": "Acciones individuales reaccionan según PT: RBLX puede abrir gap down; BAX y CORZ podrían subir",
-    "despues": "Impacto limitado a retail traders y hedge funds micro-cap; mínimo efecto en índices amplios",
-    "escenarios": "Traders vigilarán volumen de compra/venta post-rating; riesgo de que rating upgrade sea trampa si fundamentales no mejoran",
-    "riesgos": "Rating no es predicción; riesgo de que PT se vuelva obsoleto rápidamente si earnings decepcionan"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33788",
-   "fecha": "2026-07-31T10:34:13+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33788",
-   "via": "DeItaone",
-   "original": "$XOM - EXXONMISSES ESTIMATES AS OUTPUT REMAINS STRONG Results Adj. EPS: $3.52 vs. $3.54-$3.60 est. ❌ Adj. Earnings: $14.68B vs. $15.10B est. ❌ Production: 4.514M boepd Permian Production: Record 1.8M+ boepd Operations Guyana: Fifth FPSO to begin production in Q4. Outages: 150K boepd offline in UAE; 450K boepd remains offline in Qatar. Capital Return Dividend: $1.03/share declared for Q3.",
-   "titulo": "Exxon Mobil falla en estimaciones con producción récord en Guyana; Permian a 1,8M bbl/d",
-   "resumen": "Exxon Mobil no alcanzó estimaciones de EPS ajustado ($3,52 vs. $3,54-$3,60 est.) ni ganancia neta ($14,68B vs. $15,10B est.), pero mantiene producción sólida a 4,514M boepd con hito histórico en Permian (1,8M+) y quinta plataforma FPSO en Guyana iniciando Q4.",
-   "analisis": {
-    "porque": "Fracaso en guidance pese a producción récord señala presión de márgenes o volatilidad de precios; inversiones masivas en upstream (Guyana, Permian) impactan expectativa de flujo de caja y dividendos",
-    "queOcurrio": "EPS ajustado $3,52 vs. estimación $3,54-$3,60; ganancia $14,68B vs. $15,10B esperados; producción 4,514M boepd; Permian en récord 1,8M+ boepd; quinta FPSO Guyana en Q4; 150K boepd offline UAE, 450K offline Qatar",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "XOM",
-    "Petróleo",
-    "S&P500",
-    "Energía"
-   ],
-   "sesgos": [
-    {
-     "activo": "XOM",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Energía",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Exxon",
-    "earnings",
-    "Guyana",
-    "Permian",
-    "petróleo",
-    "producción"
-   ],
-   "tgText": "XOM falla estimaciones ($3,52 vs $3,54-$3,60) pero producción récord: 1,8M+ bbl/d Permian, quinta FPSO Guyana en Q4. Presión de márgenes.",
-   "xText": "Exxon Mobil miss: EPS $3,52 vs $3,54-$3,60 est. Producción Permian récord 1,8M+ boepd; quinta FPSO Guyana Q4. Presión de márgenes.",
-   "discordText": "**Exxon Mobil Q2 2026**\n• EPS ajustado: $3,52 vs $3,54-$3,60 est. ❌\n• Ganancia: $14,68B vs $15,10B est. ❌\n• Permian: 1,8M+ boepd (récord)\n• Guyana: 5ª FPSO en Q4",
-   "pushText": "Exxon falla estimaciones; producción Permian récord 1,8M bbl/d",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acción XOM puede caer pre-cierre por miss de EPS; sector energía monitorea si la producción récord sostiene outlook",
-    "despues": "Petróleo (WTI, Brent) podría ceder si miss sugiere caída de demanda de downstream; índices energéticos (XLE) bajo presión",
-    "escenarios": "Traders vigilarán guidance de full-year; la presión de márgenes vs. producción alta sugiere guerra de precios; Guyana y Permian son activos estratégicos para valuación a largo plazo",
-    "riesgos": "Offline de 150K-450K boepd podría revertirse (force majeure temporal); miss podría amplificarse si guidance se reduce"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33787",
-   "fecha": "2026-07-31T10:14:15+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33787",
-   "via": "DeItaone",
-   "original": "JAPAN LIKELY SPENT MORE THAN Y6 TLN ON CURRENCY INTERVENTION ON JULY 30, DATA SUGGEST",
-   "titulo": "Japón gastó más de ¥6 billones en intervención cambiaria el 30 de julio",
-   "resumen": "Japón realizó intervención cambiaria por más de ¥6 billones (aproximadamente $40.000 millones USD) el 30 de julio, según sugieren datos de mercado. La acción refleja esfuerzos del BoJ por contener depreciación del yen tras la decisión de mantener tasas en 1% publicada días antes.",
-   "analisis": {
-    "porque": "Intervención masiva del BoJ anticipa volatilidad del carry-trade JPY y afecta divisas globales, treasuries y mercados de riesgo; presión alcista en dólar pero riesgo de reversión si Japón sigue interviniendo",
-    "queOcurrio": "Intervención cambiaria japonesa de más de ¥6 billones (~$40B USD) en 30 de julio, datos indican",
-    "estado": "confirmado",
-    "fuenteOriginal": "Reuters"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "JPY",
-    "USDJPY",
-    "Carry-trades",
-    "Treasuries",
-    "S&P500",
-    "VIX",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Equities",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "Japón",
-    "BoJ",
-    "intervención cambiaria",
-    "yen",
-    "USDJPY",
-    "carry-trade"
-   ],
-   "tgText": "🚨 Japón interviene por ¥6 billones (~$40B) el 30 jul. BoJ resiste depreciación del yen. Impacto: carry-trades, treasuries y equities.",
-   "xText": "Japón interviene ¥6 billones (~$40B) el 30 jul para contener yen débil. BoJ lucha contra carry-trades. Impacto global en divisas y equity risk.",
-   "discordText": "**Intervención BoJ Masiva**\n• ¥6+ billones (~$40B USD) el 30 julio\n• Objetivo: contener deprecación del yen\n• Impacto: carry-trades, treasuries, equities",
-   "pushText": "BoJ interviene ¥6 billones para contener yen; impacto global carry-trades",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente; yen se aprecia vs basket de divisas; carry-traders liquidan posiciones largas en equities/bonos",
-    "despues": "VIX sube por cierre forzado de carry-trades; treasuries bajan (yields caen); equities globales ceden; petróleo bajo presión; oro sube por flight-to-safety",
-    "escenarios": "Traders vigilarán frecuencia de intervenciones: ¿es única o sostenida? Si es sostenida, riesgo de que el yen se aprecie más y genere pánico de liquidación; impacto especialmente en Asia-Pacific y repos de carry-trades",
-    "riesgos": "Escalada: si yen sigue apreciándose pese intervención, BoJ podría anunciar medidas adicionales (tasa negativa nueva, compra de activos); riesgo sistémico de desapalancamiento acelerado"
-   },
-   "macro": {
-    "dolar": "bajista",
-    "yen": "alcista",
-    "nasdaq": "bajista",
-    "s&p500": "bajista",
-    "petroleo": "bajista",
-    "oro": "alcista",
-    "bonos": "alcista"
    },
    "updates": []
   }
