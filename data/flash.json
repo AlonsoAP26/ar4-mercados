@@ -1,7 +1,354 @@
 {
- "lastId": 33959,
- "actualizado": "2026-08-04T11:49:03.992Z",
+ "lastId": 33971,
+ "actualizado": "2026-08-04T13:28:28.418Z",
  "items": [
+  {
+   "id": "33969",
+   "fecha": "2026-08-04T13:12:24+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33969",
+   "via": "DeItaone",
+   "original": "UKRAINE: NO REPLACEMENT FOR BLACK SEA GRAIN EXPORTS Ukraine's farm minister says there is \"no real long-term substitute\" for Black Sea ports for grain exports. Alternative export routes will not reach full operational capacity before the end of August and can handle only around half of Ukraine's normal export volumes. The minister said Ukrainian farmers are already facing an average 30% drop in cr",
+   "titulo": "Ucrania: exportaciones grano sin sustituto puertos Mar Negro; precios caen 30%",
+   "resumen": "Ministro agricultura Ucrania afirma no hay 'sustituto real a largo plazo' para puertos Mar Negro en exportaciones de grano. Rutas alternativas no operarán a plena capacidad antes fin de agosto y solo pueden manejar ~50% volumen normal. Agricultores enfrentan caída promedio 30% en precios; pérdidas de infraestructura Mar Negro podrían alcanzar $1,5B-$3B.",
+   "analisis": {
+    "porque": "Riesgo de inflación alimentaria global por restricción oferta grano ucraniano. Presiona precios commodities agrícolas (trigo, maíz) y costo de alimentos al consumidor en Latinoamérica e importadores globales. Afecta política comercial, balanza comercial países importadores.",
+    "queOcurrio": "Ministro Ucrania advierte inviabilidad de rutas alternativas a puertos Mar Negro: capacidad 50% de lo normal, no lista antes fin agosto. Agricultores ven caída 30% precios. Pérdidas infraestructura $1,5B-$3B estimadas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Reuters"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Grano (Trigo, Maíz)",
+    "Commodities Agrícolas",
+    "Precios Alimentos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Trigo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Maíz",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "ucrania",
+    "grano",
+    "mar-negro",
+    "exportaciones",
+    "seguridad-alimentaria"
+   ],
+   "tgText": "⚠️ Ucrania: sin sustituto puertos Mar Negro para grano. Rutas alternativas solo 50% capacidad, no lista antes fin agosto. Precios agrícolas caen 30%; pérdidas $1,5B-$3B.",
+   "xText": "⚠️ Ucrania: puertos Mar Negro insustituibles para grano. Rutas alternativas ~50% capacidad. Agricultores -30% precios. Riesgo inflación alimentaria global.",
+   "discordText": "**Ucrania: Crisis Exportaciones Grano**\n• Puertos Mar Negro: Sin sustituto real a largo plazo\n• Rutas alternativas: 50% capacidad normal\n• Timeline: No operacionales antes fin agosto\n• Impacto: Precios agricultores -30%\n• Pérdidas infraestructura: $1,5B-$3B\n• Riesgo global: Seguridad alimentaria, inflación",
+   "pushText": "Ucrania advierte: grano sin salida; precios caen 30%, riesgo inflación global",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Precios trigo y maíz CBOT suben inmediatamente (minutos-horas) por menor oferta esperada; oferta apretada impulsa commodities alcistas",
+    "despues": "Inflación de precios alimentos clave importadores (Latam, Africa, Oriente Medio) sube presión; bancos centrales pueden ver inflación 'sticky'; dólar bajo presión si riesgo geopolítico intensifica",
+    "escenarios": "Traders vigilarán: (a) duración bloqueo Mar Negro; (b) capacidad real rutas alternativas; (c) demanda global grano en contexto de elevados precios; (d) respuesta política EE.UU./UE a Rusia",
+    "riesgos": "Si conflicto se resuelve, rutas Mar Negro abren rápidamente: colapso de precios agrícolas. Riesgo de volatilidad 'whipsaw' en CBOT. Narrativa de inflación alimentaria pueden presionar mercados equities si se interpreta como riesgo macro."
+   },
+   "macro": {
+    "petroleo": "alcista",
+    "trigo": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33966",
+   "fecha": "2026-08-04T13:06:43+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33966",
+   "via": "DeItaone",
+   "original": "MARKET MOVERS 🟢 UPGRADES $PLTR: Deutsche Bank upgraded to Buy $REPL: Leerink Partners upgraded to Outperform; PT raised to $17 from $11 🔴 DOWNGRADES $BOW: Deutsche Bank downgraded to Hold; PT raised to $34 from $31; Piper Sandler downgraded to Neutral; PT cut to $34 from $36; RBC downgraded to Sector Perform; PT cut to $34 from $38 $CI: Jefferies downgraded to Hold; PT cut to $307 from $336 $INT",
+   "titulo": "Nike downgrade JP Morgan a Underweight; precio objetivo cut a $40 desde $47",
+   "resumen": "JP Morgan redujo calificación de Nike (NKE) a Underweight, bajando precio objetivo de $47 a $40. El banco se une a otros downgrades del sector (Sportswear). El movimiento refleja presiones en demanda, márgenes y competencia en retail de ropa deportiva. Deutsche Bank también mantiene perspectiva negative con upgrade lateral a Buy solo en Palantir.",
+   "analisis": {
+    "porque": "Downgrade de JP Morgan (banco de gran seguimiento) en Nike es catalizador negativo para acción. Señala deterioro en fundamentales o expectativas de demanda. Afecta directamente valuación de Nike y sentimiento en sector retail/consumer discretionary.",
+    "queOcurrio": "JP Morgan redujo NKE a Underweight con precio objetivo bajado de $47 a $40 (15% downside). Otros bancos también bajaron posiciones en sector (PVH JP Morgan Underweight, WMT Oppenheimer Downgrade).",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NKE",
+    "S&P500",
+    "Consumer Discretionary"
+   ],
+   "sesgos": [
+    {
+     "activo": "NKE",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "nike-downgrade",
+    "jp-morgan",
+    "retail",
+    "consumer-discretionary",
+    "price-target"
+   ],
+   "tgText": "📉 JP Morgan downgrade Nike (NKE) a Underweight; PT cut $47→$40. Presiones demanda, márgenes, competencia. Retail sportswear bajo presión.",
+   "xText": "📉 Nike downgrade: JP Morgan a Underweight, PT $47→$40. Señal de deterioro demanda y márgenes en retail deportivo.",
+   "discordText": "**Nike (NKE) - Downgrade JP Morgan**\n• Anterior: PT $47\n• Nuevo PT: $40 (-15% downside)\n• Rating: Downgrade a Underweight\n• Drivers: Presión demanda, márgenes, competencia\n• Contexto: Sector retail sportswear débil",
+   "pushText": "Nike downgrade JP Morgan a Underweight; precio objetivo reducido a $40",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Nike (NKE) cae en afterhours/próxima sesión por downgrade de banco importante; típicamente -2% a -4% en reacción inicial",
+    "despues": "Consumer Discretionary ETF (XLY) puede corregir si múltiples downgrades en retail; S&P 500 bajo pequeña presión si interpretado como debilidad demanda",
+    "escenarios": "Traders vigilarán próximos earnings guidance de Nike para confirmar o desmentir deterioro. Monitorearán data de retail sales/consumidor. Buscarán si competidores (Adidas, Lululemon) mantienen tono o también degradan.",
+    "riesgos": "Downgrade puede ser prematuro si Nike recupera demanda Q3; riesgo de bottom-fishing si PT $40 es visto como atractivo por largo plazo. Narrativa de 'consumer weakness' puede cambiar si data de empleo sigue fuerte."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "33964",
+   "fecha": "2026-08-04T12:38:50+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33964",
+   "via": "DeItaone",
+   "original": "FED'S PAULSON: THIS IS A COMPLICATED TIME FOR MONETARY POLICY - CNBC PAULSON: INFLATION IS TOO HIGH, WANTS TO BRING IT DOWN PAULSON: NEED MILDLY RESTRICTIVE MONETARY POLICY AND FED LIKELY HAS THAT NOW",
+   "titulo": "Fed Paulson: política monetaria 'complicada', inflación muy alta, necesita ser restrictiva",
+   "resumen": "Christopher Paulson, miembro de la Fed, afirma en CNBC que la inflación es 'demasiado alta' y requiere política monetaria restrictiva. Señala que la Fed probablemente ya está en postura 'mildly restrictive' actual, pero advierte que de no haber progreso en desinflación, la Fed deberá tomar medidas adicionales.",
+   "analisis": {
+    "porque": "Señal clara de hawkish Fed member sobre necesidad de mantener/endurecer política. Contrasta con narrativa market de recortes inminentes, impactando expectativas de tasas, bonos y dólar. Mensaje sobre 'complication' sugiere Fed dividida en próximos pasos.",
+    "queOcurrio": "Fed Paulson declara inflación excesiva, respalda política restrictiva actual, advierte sobre acciones futuras si inflación no baja. Nota la complicación de momento para política monetaria.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "Bonos USA",
+    "Rendimientos USA",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "fed-paulson",
+    "inflación",
+    "política-monetaria",
+    "hawkish",
+    "tasas"
+   ],
+   "tgText": "🏦 Fed Paulson: inflación 'demasiado alta', política monetaria restrictiva necesaria. Advierte acción futura si sin progreso desinflación. Señal hawkish presiona yields.",
+   "xText": "🏦 Fed Paulson: inflación excesiva, política restrictiva requerida. Si no hay progreso, Fed actuará. Señal hawkish para yields y dólar.",
+   "discordText": "**Fed Paulson - Inflación y Política Monetaria**\n• Inflación: demasiado alta\n• Postura actual: mildly restrictive (apropiada)\n• Advertencia: si sin progreso en desinflación, Fed actuará\n• Contexto: momento 'complicado' para política",
+   "pushText": "Fed Paulson hawkish: inflación requiere restricción continua o endurecer",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Yields USA (especialmente 10Y) suben inmediatamente (5-30 min) por reafirmación hawkish y riesgo de tasas mantenidas altas/subidas",
+    "despues": "Dólar (DXY) se fortalece; acciones pueden corregir si mercado reprecia probabilidad de tasas más altas por más tiempo; oro y commodities bajo presión",
+    "escenarios": "Traders monitorearán próximos datos de inflación (PCE, CPI) para confirmar o desmentir tesis Paulson. Vigilarán si otros Fed speakers rebajan tono hawkish. Fed funds futures se ajustarán hacia tasas mantenidas.",
+    "riesgos": "Paulson es miembro minoritario; narrativa de mercado de recortes puede prevalecer si otros Fed speakers suavizan. Riesgo de sobre-reacción si mercado asume postura de Paulson = consenso Fed (no confirmado)."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "bonos": "bajista",
+    "sp500": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33963",
+   "fecha": "2026-08-04T12:36:52+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33963",
+   "via": "DeItaone",
+   "original": "SPOT SILVER RISES 3% TO $59.90/OZ",
+   "titulo": "Plata sube 3% a $59,90/oz en contexto de incertidumbre geopolítica y tasas",
+   "resumen": "Plata spot sube 3% hasta $59,90 por onza. Movimiento ocurre en contexto de incertidumbre geopolítica (conflicto Irán-EE.UU.), presiones de tasas (Fed restrictiva) y posible rotación hacia metales preciosos como cobertura. El rally sugiere renovado interés en activos de refugio.",
+   "analisis": {
+    "porque": "Plata es activo dual: refugio (guerra) + industrial (economía). Suba 3% señala rebalanceo hacia commodities defensivos en contexto de riesgo geopolítico elevado y ambiente de tasas restricitivo que reduce yield de bonos.",
+    "queOcurrio": "Precio spot plata sube 3% a $59,90/oz. Titular no especifica catalizador exacto, pero contexto incluye escalada Irán y comentarios hawkish Fed.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Plata",
+    "Oro",
+    "Commodities",
+    "USD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Plata",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "plata",
+    "precio-spot",
+    "refugio",
+    "commodities",
+    "geopolítica"
+   ],
+   "tgText": "⬆️ Plata sube 3% a $59,90/oz. Movimiento respaldado por geopolítica (Irán), Fed hawkish y rotación hacia refugio. Oro también apunta alcista.",
+   "xText": "⬆️ Plata +3% a $59,90/oz en contexto de riesgo geopolítico y tasas restricitivas. Rotación hacia metales preciosos como cobertura defensiva.",
+   "discordText": "**Plata: Rally +3% a $59,90/oz**\n• Catalizadores: Riesgo geopolítico (Irán), Fed hawkish\n• Postura: Rotación hacia refugio\n• Correlación: Oro también alcista\n• Contexto: Tasas restrictivas impulsan demanda defensiva",
+   "pushText": "Plata sube 3% a $59,90/oz; geopolítica e incertidumbre de tasas impulsan refugio",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Oro típicamente acompaña o lidera plata en movimientos defensivos; ambos suben cuando tasas reales bajan o riesgo geopolítico sube",
+    "despues": "Bonos USA pueden subir (yields bajen) si mercado ve escalada Irán; dólar bajo presión si reservas de valor van a oro vs USD",
+    "escenarios": "Traders vigilarán evolución Irán para ver si escalada justifica sostenimiento de rally. Monitorearán datos de inflación que pudieran cambiar narrativa de tasas. Si Fed suaviza, plata presionada (menos demanda defensiva).",
+    "riesgos": "Movimiento plata pequeño (3%); si no hay confirmación de Irán, rotación puede revertirse. Riesgo si dato de inflación es más débil, presionando demanda defensiva."
+   },
+   "macro": {
+    "oro": "alcista",
+    "dolar": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33962",
+   "fecha": "2026-08-04T12:33:08+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33962",
+   "via": "DeItaone",
+   "original": "SOCGEN: BUY THE DIP, SEES S&P 500 AT 8,000 Societe Generale says U.S. earnings strength is broadening beyond Big Tech and continues to support equities. The bank notes 86% of companies have beaten earnings estimates, margins are at record highs, and 2026 EPS forecasts have risen to $335. SocGen says AI investment remains strong and expects the S&P 500 to reach 8,000, urging investors to \"buy the m",
+   "titulo": "SocGen: S&P 500 hacia 8.000 puntos; 86% empresas baten EPS, márgenes récord",
+   "resumen": "Societe Generale suscribe narrativa de fortaleza earnings: 86% de empresas han superado estimaciones, márgenes en máximos históricos y EPS 2026 revisadas al alza a $335. El banco recomienda 'comprar caídas' y proyecta S&P 500 en 8.000, respaldado por inversión AI robusta e impulso corporativo generalizado.",
+   "analisis": {
+    "porque": "Target price agresivo de banco multinacional prestigioso puede catalizar rebalanceos 'risk-on'. El dato de 86% beat rate y márgenes récord refuerza narrativa de 'soft landing' corporativo que soporta múltiplos equities elevados.",
+    "queOcurrio": "SocGen proyecta S&P 500 en 8.000 basado en: 86% de compañías batiendo EPS, márgenes máximos, EPS 2026 en $335, inversión AI fuerte continua.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Tech stocks"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings-beat",
+    "s&p500",
+    "márgenes",
+    "ai-investment",
+    "target-price"
+   ],
+   "tgText": "📈 SocGen ve S&P 500 en 8.000: 86% empresas baten EPS, márgenes récord, EPS 2026 en $335. Recomienda 'buy the dip' con inversión AI robusta.",
+   "xText": "📈 SocGen: S&P 500 target 8.000. 86% empresas baten EPS, márgenes máximos, inversión AI fuerte. Recomienda comprar caídas.",
+   "discordText": "**SocGen: S&P 500 Target 8.000**\n• 86% de empresas baten estimaciones\n• Márgenes en máximos históricos\n• EPS 2026 subidas a $335\n• Inversión AI continúa fuerte\n• Estrategia: buy the momentum dip",
+   "pushText": "SocGen proyecta S&P 500 en 8.000; earnings beat generalizado sostiene alzas",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "S&P 500 y NASDAQ típicamente suben en corto plazo (horas) por respaldo institucional a narrativa alcista y target price agresivo",
+    "despues": "Rotación hacia 'mega-cap' / AI tech stocks; potencial aumento de valuaciones si mercado 'compra' la narrativa 2026 EPS $335",
+    "escenarios": "Traders vigilarán confirmación de earnings guidance forward; si próximas earnings decepcionan vs $335 EPS forecast, riesgo de corrección. Monitorearán señales de inflación que pudiera comprometer márgenes.",
+    "riesgos": "Proyección depende de supuesto de márgenes sostenibles; ciclos económicos tardíos históricamente ven margen squeeze. Riesgo si Fed no baja tasas como esperado."
+   },
+   "macro": {
+    "sp500": "alcista",
+    "nasdaq": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "33961",
+   "fecha": "2026-08-04T12:31:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33961",
+   "via": "DeItaone",
+   "original": "US JUN TRADE DEFICIT $73.26B; CONSENSUS DEFICIT $72.9B MAY TRADE BAL REVISED TO DEFICIT $77.65B FROM DEFICIT $77.58B JUN EXPORTS $314.73B, -0.9%; IMPORTS $387.99B, -1.8%",
+   "titulo": "Déficit comercial EE.UU. junio $73,26B supera consenso; exportaciones caen 0,9%",
+   "resumen": "El déficit comercial de junio alcanzó $73,26B, por encima del consenso de $72,9B, mientras mayo se revisó al alza a $77,65B. Las exportaciones cayeron 0,9% a $314,73B e importaciones bajaron 1,8% a $387,99B. El dato refleja debilidad en demanda externa y presiones en la balanza comercial estadounidense.",
+   "analisis": {
+    "porque": "El deterioro en la balanza comercial influye en las estimaciones de crecimiento GDP, afecta política comercial de Trump (aranceles/negociaciones) y presiona el dólar. Dato peor que consenso reanima debate sobre competitividad EE.UU.",
+    "queOcurrio": "Déficit comercial de junio superior a expectativas ($73,26B vs $72,9B); ambos componentes (exportaciones e importaciones) cayeron, señalando debilidad bilateral en comercio.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "S&P500",
+    "Bonos USA",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "déficit-comercial",
+    "junio-2026",
+    "exportaciones",
+    "importaciones",
+    "balanza-comercial"
+   ],
+   "tgText": "📊 Déficit comercial EE.UU. junio en $73,26B, por encima de consenso ($72,9B). Exportaciones -0,9%, importaciones -1,8%. Dato presiona dólar y reanima debate de competitividad.",
+   "xText": "📊 Déficit comercial EE.UU. junio: $73,26B (vs consenso $72,9B). Exportaciones -0,9%, importaciones -1,8%. Presión sobre dólar y política comercial.",
+   "discordText": "**Déficit Comercial EE.UU. - Junio 2026**\n• Déficit: $73,26B (+vs consenso $72,9B)\n• Exportaciones: $314,73B (-0,9%)\n• Importaciones: $387,99B (-1,8%)\n• Impacto: Presión dólar, GDP weakness",
+   "pushText": "Déficit comercial EE.UU. junio supera consenso; presión alcista sobre bonos",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "DXY cae por mayor déficit y expectativas de menor crecimiento GDP; típicamente presiona el dólar en 30-60 minutos post-dato",
+    "despues": "Bonos USA suben (yields bajan) por escenario de crecimiento débil; S&P 500 puede retraerse si mercado interpreta como ralentización económica",
+    "escenarios": "Traders vigilarán si dato refuerza caso de más recortes de tasas Fed; si es visto como presión política para nuevos aranceles Trump, equity risk subiría",
+    "riesgos": "Revisiones previas a mayo podrían suavizar impacto; narrativa de aranceles Trump es variable política que puede cambiar interpretación del mercado"
+   },
+   "macro": {
+    "dolar": "bajista",
+    "bonos": "alcista",
+    "nasdaq": "neutral",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": "33833",
    "fecha": "2026-08-02T08:57:35+00:00",
@@ -7288,351 +7635,6 @@
     "despues": "Bonos USA bajan (rentabilidades suben por riesgo geopolítico); acciones defensoras y energía oil&gas suben. Emergentes bajan si petróleo presiona inflación global.",
     "escenarios": "Traders vigilarán: (1) si EE.UU. responde militarmente o con sanciones; (2) si Irán abre más canales de bloqueo; (3) comunicados de OPEC+ sobre ajustes de oferta; (4) si Corea del Sur/Japón (importadores grandes) señalan preocupación.",
     "riesgos": "FARS es fuente estatal iraní, no Bloomberg/Reuters directa, lo que introduce sesgo propagandístico. Afirmación sobre 'bloqueo' no verificada de fuentes occidentales. Riesgo: escalada rápida si EE.UU. envía activos militares al Golfo."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33778",
-   "fecha": "2026-07-31T08:01:21+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33778",
-   "via": "DeItaone",
-   "original": "$AAPL - APPLE SHARES FALL 6.6% PREMARKET AFTER CURRENT-QUARTER SALES FORECAST MISSES WALL STREET TARGET",
-   "titulo": "Apple cae 6,6% en premarket tras guidance Q4 decepcionante",
-   "resumen": "Acciones de Apple caen 6,6% en operaciones previas a apertura tras pronóstico de ventas para Q4 por debajo de expectativas de Wall Street. El titular confirma presión en márgenes e ingresos que afecta outlook inmediato. Movimiento anterior a apertura genera volatilidad en mega-cap tech e índices.",
-   "analisis": {
-    "porque": "Reacción inmediata de precio a guidance miss; amplifica sesgo bajista en Apple; impacta sentimiento general de tech mega-caps",
-    "queOcurrio": "AAPL trading 6,6% a la baja en premarket en reacción a guidance Q4 insuficiente",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AAPL",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "AAPL",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Apple",
-    "premarket",
-    "guidance",
-    "caída",
-    "Q4"
-   ],
-   "tgText": "📉 AAPL -6.6% en premarket por guidance Q4 debajo de expectativas. Presión en ingresos y márgenes confirmada. NASDAQ a la baja con Apple.",
-   "xText": "$AAPL -6.6% premarket. Guidance Q4 miss. Presión en ingresos/márgenes. NASDAQ impactado por peso del ticker. #TradingAlert",
-   "discordText": "**AAPL PREMARKET -6.6%**\n• Causa: Guidance Q4 por debajo de expectativas\n• Impacto: NASDAQ también a la baja\n• Volatilidad: Muy alta\n• Sesgo: Bajista confirmado",
-   "pushText": "Apple -6.6% premarket; guidance Q4 miss",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "AAPL cae en cascada; stops de algoritmos activan; volatilidad se amplifica en megacaps",
-    "despues": "NASDAQ sigue negativamente; S&P 500 baja leve; posible liquidación técnica en tech si se rompen soportes",
-    "escenarios": "Traders observarán nivel de soporte 2600 AAPL; si NASDAQ baja >1%, validaría inversión de sentimiento desde cierre anterior; posibles rebalances de índices",
-    "riesgos": "Riesgo de brecha downside mayor si sesión US abre con spillover negativo; riesgo de venta en cascada si se rompen soportes técnicos clave; re-pricing de valuaciones tech"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33777",
-   "fecha": "2026-07-31T08:00:47+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33777",
-   "via": "DeItaone",
-   "original": "U.S. S&P 500 E-MINI FUTURES UP 0.45%, NASDAQ 100 FUTURES UP 1.2%, DOW FUTURES UP 0.5%",
-   "titulo": "Futuros US suben moderadamente en sesión abierta: NASDAQ +1,2%",
-   "resumen": "Futuros de índices US operan al alza antes de apertura: S&P 500 E-Mini +0,45%, Nasdaq-100 +1,2%, Dow Jones +0,5%. Movimiento refleja sentimiento mixto: impulso alcista por validación de IA en Amazon versus presión por guidance débil de Apple. Volatilidad moderada.",
-   "analisis": {
-    "porque": "Snapshot de sentimiento pre-apertura; NASDAQ alcista (peso Amazon supera presión Apple); datos de volatilidad (VIX bajo) confirman ausencia de pánico",
-    "queOcurrio": "Índices futures US operan en positivo antes de sesión principal de 31 Jul 2026",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "DJI"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "futuros",
-    "apertura",
-    "NASDAQ",
-    "S&P500",
-    "sentimiento"
-   ],
-   "tgText": "📈 Futuros US al alza en apertura: NASDAQ +1.2%, S&P500 +0.45%, DJI +0.5%. Impulso Amazon supera presión Apple. VIX bajo.",
-   "xText": "ES +0.45%, NQ +1.2%, YM +0.5%. NASDAQ impulso por AMZN validación IA. Apertura sesión principal en minutos. #Markets",
-   "discordText": "**FUTUROS US: Apertura alcista**\n• S&P 500: +0.45%\n• NASDAQ: +1.2% (Amazon sube, Apple presión)\n• Dow Jones: +0.5%\n• Volatilidad: Baja",
-   "pushText": "Futuros US al alza; NASDAQ +1.2% por impulso Amazon",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "NQ (NASDAQ futures) adelanta sesión; ES (S&P) sigue con menor momentum",
-    "despues": "Comparación con cierre Asia-Pacific; spillover de presión yen en mercados financieros",
-    "escenarios": "Traders esperarán apertura de sesión oficial para confirmar si sostenible; si Goldman/Bernstein Amazon impulsa compras reales vs covering de shorts; vigilancia de levels técnicos en AAPL para escaladas de venta",
-    "riesgos": "Riesgo de reversión si datos de empleo US resultan débiles; gap risk si yen intervención amplía spreads; rotación rápida si datos eco debajo de expectativas"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33776",
-   "fecha": "2026-07-31T07:43:18+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33776",
-   "via": "DeItaone",
-   "original": "$AAPL - GOLDMAN CUTS APPLE PT ON SOFTER OUTLOOK Goldman Sachs cut its Apple price target to $360 from $370, while maintaining a Buy rating. The firm said Q3 results were largely in line, but weaker-than-expected Q4 guidance on revenue growth and margins weighed on the outlook. Goldman expects sentiment to improve as price increases, new AI features and product launches support revenue and margins.",
-   "titulo": "Goldman baja objetivo de Apple a $360; guía Q4 débil presiona outlook",
-   "resumen": "Goldman Sachs redujo objetivo de precio de Apple a $360 desde $370, manteniendo calificación de Compra. La firma señala que resultados Q3 fueron alineados pero guía Q4 de ingresos y márgenes más débil de lo esperado. Espera mejora cuando aumentos de precios, nuevas funciones IA y lanzamientos de productos impulsen ingresos y márgenes.",
-   "analisis": {
-    "porque": "Confirmación analítica de debilidad en guía; Apple cae 6.6% en premarket tras guidance decepcionante; impacta valuación mega-cap y sentimiento tech",
-    "queOcurrio": "Goldman Sachs baja objetivo en $10 tras evaluar guía Q4 débil; mantiene Compra anticipando recuperación por IA y ciclo de upgrades",
-    "estado": "confirmado",
-    "fuenteOriginal": "Goldman Sachs vía Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AAPL",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "AAPL",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Apple",
-    "precio-objetivo",
-    "guía-débil",
-    "Q4",
-    "márgenes"
-   ],
-   "tgText": "📉 Goldman baja objetivo de Apple a $360. Guía Q4 de ingresos y márgenes debajo de expectativas. AAPL -6.6% en premarket. Rating: Compra.",
-   "xText": "$AAPL: Goldman baja PT a $360 por guía Q4 débil. Rating Buy mantenido. Espera recuperación con IA y lanzamientos. #Tech #Trading",
-   "discordText": "**AAPL: Goldman reduce objetivo a $360**\n• PT: $370 → $360 (baja $10)\n• Razón: Guía Q4 de ingresos/márgenes débil\n• Premarket: -6.6%\n• Rating: Compra (anticipa recuperación por IA)",
-   "pushText": "Goldman baja objetivo de Apple a $360; guía Q4 débil",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "AAPL cae en premarket; venta inicial cubre stop-losses de shorts cubiertos; NASDAQ reacciona negativamente por peso de Apple (6.9% del índice)",
-    "despues": "S&P 500 podría presionarse si venta se amplifica; posibles rotaciones hacia value; comparación con Amazon genera narrativa de divergencia (Amazon sube con capex IA, Apple baja por guía débil)",
-    "escenarios": "Traders vigilarán si baja del objetivo es inicio de revisiones bajistas más amplias; si guía Q4 incluye presión de demanda China o saturación de iPhone; si recuperación IA ('Apple Intelligence') será suficiente en H1 2026",
-    "riesgos": "Riesgo sistémico: si Apple y Nvidia ven presión simultánea, mercado podría cuestionar valuaciones tech al pico; riesgo de que 'Apple Intelligence' no impulse upgrades esperados; exposición China débil confirmada"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33775",
-   "fecha": "2026-07-31T07:42:04+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33775",
-   "via": "DeItaone",
-   "original": "$AMZN - GOLDMAN RAISES AMAZON PT TO $375 Goldman Sachs raised its Amazon price target to $375 from $335, maintaining a Buy rating. The firm cited accelerating AWS growth, strong AI and custom chip momentum, a higher 2026 capex plan of $220B, robust $496B backlog, solid Prime demand, and 26% advertising growth, saying the results reinforce Amazon's long-term AI and cloud leadership.",
-   "titulo": "Goldman sube objetivo de Amazon a $375; valida liderazgo en IA y nube",
-   "resumen": "Goldman Sachs elevó el precio objetivo de Amazon a $375 desde $335, manteniendo calificación de Compra. El análisis destaca aceleración del crecimiento de AWS (37% según Bernstein), impulso en IA, chips propios, plan de capex 2026 de $220B, cartera de $496B y crecimiento publicitario del 26%. Refuerza posición de liderazgo a largo plazo en cloud e IA.",
-   "analisis": {
-    "porque": "Actualización alcista de objetivo clave por analista de primer nivel; valida narrativa de monetización de inversión masiva en IA que movió AMZN +20% en julio",
-    "queOcurrio": "Goldman Sachs ajusta al alza objetivo de precio en $40 adicionales tras evaluar tracción de AWS, márgenes de IA y viabilidad de plan de capex agresivo",
-    "estado": "confirmado",
-    "fuenteOriginal": "Goldman Sachs vía Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "AMZN",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Amazon",
-    "Goldman-Sachs",
-    "objetivo-precio",
-    "AWS",
-    "IA",
-    "capex"
-   ],
-   "tgText": "📈 Goldman sube objetivo de Amazon a $375. Valida liderazgo en AWS y IA con crecimiento del 37% y capex de $220B en 2026. AMZN +1.2% en futuros.",
-   "xText": "Goldman eleva PT de $AMZN a $375 desde $335. AWS crece 37%, inversión IA de $220B validada por retornos. Posición: Buy. #Trading",
-   "discordText": "**AMZN: Goldman sube objetivo a $375**\n• PT anterior: $335 → Nuevo: $375\n• Catalizadores: AWS +37%, IA, chips propios\n• Rating: Compra mantenido\n• 2026 capex: $220B con ROI claro",
-   "pushText": "Goldman alza objetivo de Amazon a $375 por IA y AWS",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "AMZN reacciona al alza inmediatamente por validación de tesis de capex; NASDAQ sigue por peso en índice (3.5% del índice)",
-    "despues": "Posibles rotaciones en mega-cap tech si el mercado interpreta como confirmación de divergencia IA positiva en Amazon vs presión en Apple",
-    "escenarios": "Traders vigilarán si Goldman revisa al alza EPS 2026-2027 en próximos reportes; confirmación de demanda de capex sostenible; comparación vs objetivos de competidores (Microsoft, Nvidia)",
-    "riesgos": "Riesgo de que capex de $220B no genere ROI esperado; cambios en ciclo de tasas podrían pesar en capex intensivo; competencia en IA cloud acelerada"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 989869556,
-   "fecha": "2026-07-31T06:05:22.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/boj-rates-yen-intervention-inflation-japan.html",
-   "via": "CNBC",
-   "original": "BOJ holds rates at 1%, warns of core inflation exceeding 2% target",
-   "titulo": "BoJ mantiene tasas en 1% y advierte que inflación central excede su meta del 2%",
-   "resumen": "El Banco de Japón reafirmó su tasa de política en 1% tras su reunión, pero advirtió que la inflación subyacente se mantiene por encima del objetivo del 2%. La declaración señala presión inflacionaria persistente y sugiere mayor disposición a futuros aumentos de tasas.",
-   "analisis": {
-    "porque": "Cambios en política monetaria del BoJ impactan directamente en el yen, bonos japoneses y equities nipones. Inflación por encima de meta aumenta probabilidad de futuras alzas de tasas, alterando los carry trades.",
-    "queOcurrio": "El BoJ dejó tasas en 1% pero informó que la inflación subyacente continúa superando su objetivo del 2%, aumentando expectativas de futuras decisiones restrictivas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "JPY",
-    "USDJPY",
-    "Bonos japoneses",
-    "Nikkei",
-    "Yen",
-    "Carry trades"
-   ],
-   "sesgos": [
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nikkei",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "boj-rates",
-    "japan-inflation",
-    "monetary-policy",
-    "yen-strength",
-    "carry-trades"
-   ],
-   "tgText": "BoJ mantiene tasas en 1% pero advierte: inflación subyacente sigue por encima del 2%. Presión para futuras alzas de tasas. JPY se fortalece.",
-   "xText": "BoJ pausa tasas en 1%, pero advierte que inflación central excede meta del 2%. Mayor presión para futuras restricciones monetarias. JPY sube.",
-   "discordText": "**BoJ: Tasas en 1%, inflación arriba de meta**\n• Tasa mantenida sin cambios\n• Inflación subyacente >2%\n• Señal alcista para futuras alzas\n• JPY se fortalece, Nikkei bajo presión",
-   "pushText": "BoJ mantiene tasas pero advierte sobre inflación; JPY se fortalece",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente (yen se aprecia) por expectativas de futuras alzas de tasas del BoJ",
-    "despues": "Nikkei, equities nipones defensivas retroceden; carry trades se desmontan (inyección de yen a mercados); bonos JGB largo plazo suben (precios cae rendimientos)",
-    "escenarios": "Traders monitorean: (1) timing de próxima alza de tasas; (2) velocidad de normalización monetaria en Japón vs. otros BC; (3) impacto en carry trades USD/JPY; (4) competitividad exportadora nipona si yen se fortalece.",
-    "riesgos": "Mayor volatilidad en mercados de FX y acciones. Riesgo de unwind acelerado de carry trades si BoJ señala alza más próxima que lo esperado. Datos de inflación futuros son críticos."
-   },
-   "macro": {
-    "dolar": "Bajista (vs. JPY; apreciación del yen)",
-    "oro": "Alcista (yen fuerte = demanda de activos defensivos)",
-    "nasdaq": "Neutral a bajista (carry trades se desmontan)",
-    "dow": "Neutral a bajista",
-    "sp500": "Bajo presión por carry trade unwind",
-    "bitcoin": "Bajo presión por desapalancamiento de carry trades",
-    "ethereum": "Bajo presión",
-    "bonos": "Alcistas en Japón (JGB); neutral-bajistas en USA",
-    "petroleo": "Neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": 979991496,
-   "fecha": "2026-07-31T04:31:37.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/cxmts-sk-hynix-samsung-micron-memory-chip.html",
-   "via": "CNBC",
-   "original": "CXMT&apos;s blockbuster debut in Shanghai sets stage for next test against global memory giants",
-   "titulo": "Debut de CXMT en Shanghai establece nueva prueba contra gigantes globales de memoria",
-   "resumen": "CXMT realizó un debut exitoso en la bolsa de Shanghai, posicionándose como competidor en el mercado de semiconductores de memoria frente a fabricantes líderes globales. El evento refleja la estrategia china de reducir dependencia tecnológica mediante campeones nacionales en chips.",
-   "analisis": {
-    "porque": "Nuevos competidores en memoria DRAM/NAND alteran dinámicas de precio, márgenes y concentración de mercado. Afecta a Samsung, SK Hynix y Micron, además de fabricantes de chips que dependen de suministros de memoria.",
-    "queOcurrio": "CXMT, fabricante chino de chips de memoria, completó su salida a bolsa en Shanghai con un 'debut bloqueador', posicionándose como rival de Samsung, SK Hynix y Micron en mercados de DRAM y NAND.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Semiconductores",
-    "Samsung",
-    "SK Hynix",
-    "Micron",
-    "NASDAQ",
-    "ASX"
-   ],
-   "sesgos": [
-    {
-     "activo": "Memory-chip-makers",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "CXMT",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "semiconductors",
-    "memory-chips",
-    "china-tech",
-    "ipo-shanghai",
-    "dram-nand"
-   ],
-   "tgText": "CXMT debuta en Shanghai como nuevo rival en memoria. Competidor chino desafía a Samsung, SK Hynix y Micron en mercado global de chips.",
-   "xText": "CXMT debuta en Bolsa de Shanghai como nuevo competidor en memoria DRAM/NAND. Desafío para líderes globales Samsung, SK Hynix, Micron.",
-   "discordText": "**CXMT: Debut en Shanghai**\n• Nuevo fabricante chino de memoria\n• Compite contra Samsung, SK Hynix, Micron\n• Estrategia china de independencia tecnológica",
-   "pushText": "CXMT debuta en Shanghai como nuevo competidor de memory chips",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Samsung (SSNLF, 005930.KS), SK Hynix (000660.KS) y Micron (MU) reaccionan a presión competitiva de CXMT en precios de memoria",
-    "despues": "Fabricantes de electrónica que compran memoria (Apple, Intel, TSMC) monitorean oportunidades de diversificación de proveedores",
-    "escenarios": "Traders observan si CXMT logra producción a escala, competitividad en costos y acceso a mercados internacionales. Riesgo: presión de márgenes en líderes si CXMT dumping de precios. Oportunidad: rivalidad = precios menores para clientes.",
-    "riesgos": "CXMT es desconocida en mercados globales; riesgos de confiabilidad, gobernanza y sanciones estadounidenses. El título no especifica valoración de IPO ni demanda."
    },
    "macro": null,
    "updates": []
