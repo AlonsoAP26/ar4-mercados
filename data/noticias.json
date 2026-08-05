@@ -6598,5 +6598,297 @@
       ],
       "patronUltimaVela": "vela bajista sin patron destacable"
     }
+  },
+  {
+    "title": "Wall Street cierra dispar: el Dow marca récord y el Nasdaq retrocede 0,8%",
+    "excerpt": "El Dow Jones anotó su tercer cierre récord consecutivo mientras el S&P 500 y el Nasdaq cedieron terreno por la debilidad de las tecnológicas.",
+    "symbol": "FOREXCOM:SPXUSD",
+    "trend": "down",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Divergencia en Wall Street: récord del Dow, retroceso del Nasdaq</h3><p>La sesión del martes dejó una fotografía desacoplada en Wall Street. El Dow Jones Industrial Average sumó 263,12 puntos (0,49%) y cerró en un máximo histórico de 54.349,00 puntos, su tercer cierre récord consecutivo. En paralelo, el S&P 500 cedió 0,2% hasta 7.723,55 puntos y el Nasdaq 100 retrocedió 0,8% hasta 29.487,79 puntos, arrastrado por la debilidad de un grupo acotado de tecnológicas. Pese al recorte diario, el S&P 500 acumula una suba de 5,6% en la semana y 2,9% en el mes, mientras el Nasdaq 100 avanza 8,4% semanal y 1,1% mensual, ambos indicadores por encima de su media de 200 ruedas.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Ganadores acotados, pérdidas concentradas en tecnología</h3><p>El impulso del Dow estuvo concentrado: datos preliminares indicaron que apenas tres acciones explicaron el 79% de la suba del índice. Amgen lideró las ganancias tras reportar un crecimiento de 9% interanual en ventas de productos clave como Repatha. Del otro lado, el arrastre del Nasdaq vino de SpaceX y AMD, que retrocedieron tras sus reportes trimestrales, mientras Alphabet cayó 4,58% y Amazon retrocedió 1,66% según datos de mercado del día.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Dólar débil y optimismo geopolítico como telón de fondo</h3><p>El índice dólar (DXY) cerró en 99,69, con una baja de 0,2% en la jornada que se suma a un retroceso de 1,1% en la semana y 1,4% en el mes, ubicándose con un RSI de 14 en 35, en zona de sobreventa técnica. La sesión también estuvo marcada por señales de avance en una negociación entre Irán y Omán que daría a Teherán control sobre el tránsito de buques en el estrecho de Ormuz, un factor que alimentó el optimismo detrás del récord del Dow.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El Ibovespa se mantiene firme pese al ruido externo</h3><p>En Brasil, el Ibovespa cerró prácticamente sin cambios, con una baja marginal de 0,1% hasta 177.726,17 puntos, aunque conserva una ganancia de 2,2% en la semana y 3,3% en el mes, cotizando por encima de su media de 200 ruedas con un RSI de 56,9. El índice se mueve a menos de 22.000 puntos de su máximo de 52 semanas en 199.355 puntos.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lectura técnica: sobrecompra en el S&P 500, margen en el Nasdaq</h3><p>El S&P 500 exhibe un RSI de 14 en 65,2, en zona neutral pero cerca de niveles de sobrecompra, tras tocar un máximo de 52 semanas de 7.793,68 puntos frente a un piso anual de 6.289,37. El Nasdaq 100 muestra un RSI más moderado de 55,5, con margen adicional antes de zona de sobrecompra, y un rango de 52 semanas entre 22.841,42 y 30.762,20 puntos. Ambos índices operan por encima de su media móvil de 200 ruedas, un rasgo técnico que sostiene la tendencia de fondo pese al recorte diario en tecnológicas. El DXY, en cambio, con RSI de 35, se aproxima a zona de sobreventa después de perder 1,4% en el mes, en un contexto de flujo hacia activos de riesgo fuera de Estados Unidos.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La divergencia entre un Dow en récords y un Nasdaq que corrige por nombres puntuales (SpaceX, AMD, Alphabet) sugiere una rotación selectiva más que un cambio de tendencia: el S&P 500 y el Nasdaq 100 siguen por encima de su media de 200 ruedas y acumulan ganancias semanales de doble dígito relativo (5,6% y 8,4%). Para Latinoamérica, la combinación de un dólar débil (DXY en sobreventa técnica, -1,4% mensual) y un Ibovespa que resiste cerca de máximos anuales configura un escenario favorable para monedas y bolsas de la región, siempre que la temporada de earnings en EE.UU. no derive en una corrección más amplia en tecnológicas. El próximo catalizador a vigilar es si el avance en la negociación Irán-Omán se consolida, lo que podría aliviar la prima de riesgo geopolítico que viene sosteniendo al petróleo y, por espejo, presionando a divisas emergentes importadoras de crudo.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "ts2.tech",
+        "url": "https://ts2.tech/en/dow-jones-ends-at-new-high-with-three-stocks-responsible-for-79-of-rise-in-early-figures/"
+      },
+      {
+        "name": "Reuters vía Virginia Business",
+        "url": "https://virginiabusiness.com/dow-record-mideast-peace-spacex-amd-shares-fall/"
+      },
+      {
+        "name": "Trading Economics",
+        "url": "https://tradingeconomics.com/united-states/stock-market"
+      },
+      {
+        "name": "Investing.com",
+        "url": "https://za.investing.com/news/stock-market-news/us-stock-futures-rise-after-record-wall-st-close-spacex-amd-dip-post-earnin-4407317"
+      }
+    ],
+    "aiSummary": {
+      "que": "El Dow Jones tocó un récord histórico impulsado por Amgen, mientras el S&P 500 y el Nasdaq 100 retrocedieron por la corrección de SpaceX, AMD y Alphabet.",
+      "porque": "La temporada de earnings genera reacciones dispares por acción y un posible avance diplomático entre Irán y Omán reduce la prima de riesgo geopolítico que venía sosteniendo al petróleo.",
+      "activos": [
+        "S&P 500",
+        "Nasdaq 100",
+        "Dow Jones",
+        "DXY",
+        "Ibovespa"
+      ],
+      "siguiente": "El foco pasa a si la negociación Irán-Omán avanza y si la debilidad puntual en tecnológicas se contagia al resto del mercado."
+    },
+    "aiScenarios": {
+      "alcista": 40,
+      "lateral": 40,
+      "bajista": 20
+    },
+    "aiDetects": {
+      "probabilidad": 62,
+      "riesgo": "Medio",
+      "lectura": "La tendencia de fondo sigue alcista con ambos índices sobre su media de 200 ruedas, pero la corrección concentrada en tecnológicas de alta capitalización eleva la sensibilidad a nuevos reportes de resultados."
+    },
+    "timeline": [
+      {
+        "cuando": "Ayer",
+        "texto": "El S&P 500 cerró por primera vez por encima de 7.700 puntos y el Dow saltó más de 900 puntos en la sesión previa."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El Dow Jones sumó 263,12 puntos (0,49%) y cerró en récord de 54.349,00, su tercer máximo consecutivo, mientras el S&P 500 y el Nasdaq retrocedieron."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "SpaceX y AMD arrastraron al Nasdaq tras sus reportes trimestrales, y Alphabet cayó 4,58%."
+      },
+      {
+        "cuando": "Próximos días",
+        "texto": "El mercado seguirá de cerca el estado de la negociación entre Irán y Omán sobre el tránsito por el estrecho de Ormuz."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué el Dow puede subir mientras el S&P 500 y el Nasdaq bajan?",
+        "a": "Porque el Dow es un índice ponderado por precio de solo 30 acciones; el fuerte avance de unas pocas, como Amgen, puede empujarlo al alza aunque la mayoría del mercado retroceda."
+      },
+      {
+        "q": "¿Qué mide el RSI y por qué importa aquí?",
+        "a": "El RSI de 14 periodos mide la fuerza reciente de un activo entre 0 y 100; niveles cercanos a 70 sugieren sobrecompra y cercanos a 30, sobreventa. El DXY en 35 está cerca de zona de sobreventa técnica."
+      },
+      {
+        "q": "¿Cómo afecta un dólar débil a Latinoamérica?",
+        "a": "Un DXY más bajo suele aliviar presión sobre monedas emergentes y facilitar el financiamiento en dólares para economías de la región."
+      },
+      {
+        "q": "¿Qué es el estrecho de Ormuz y por qué le importa al mercado?",
+        "a": "Es un paso marítimo clave para el transporte de petróleo; cualquier señal de tensión o distensión allí mueve los precios del crudo y, con ello, a divisas emergentes ligadas a la energía."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "FOREXCOM:NSXUSD",
+      "CAPITALCOM:DXY",
+      "BMFBOVESPA:IBOV",
+      "NASDAQ:AMZN",
+      "NASDAQ:GOOGL"
+    ],
+    "category": "Índices",
+    "heroType": "index",
+    "slug": "wall-street-cierra-dispar-el-dow-marca-record-y-el-nasdaq-re-msgo5gid",
+    "author": "AR4 Mercados",
+    "date": "2026-08-05",
+    "sourceName": "ts2.tech",
+    "sourceUrl": "https://ts2.tech/en/dow-jones-ends-at-new-high-with-three-stocks-responsible-for-79-of-rise-in-early-figures/",
+    "marketPanel": [
+      {
+        "symbol": "FOREXCOM:SPXUSD",
+        "nombre": "S&P 500",
+        "yahooSymbol": "^GSPC",
+        "fuente": "Yahoo Finance (^GSPC)",
+        "fechaUltimaVela": "2026-08-05",
+        "precio": 7723.55,
+        "cierreAnterior": 7736.52,
+        "variacionDiaPct": -0.2,
+        "variacionSemanaPct": 5.6,
+        "variacionMesPct": 2.9,
+        "variacionAnioPct": 22,
+        "rangoDiaReal": {
+          "minimo": 7720.17,
+          "maximo": 7793.68
+        },
+        "rsi14": 65.2,
+        "lecturaRsi": "neutral",
+        "media50": 7485.68,
+        "media200": 7039.69,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 94.7,
+        "maximo52sem": 7793.68,
+        "minimo52sem": 6289.37,
+        "distanciaAMaximo52semPct": -0.9,
+        "distanciaAMinimo52semPct": 22.8,
+        "soportes": [
+          7426.54,
+          7376,
+          7333.68
+        ],
+        "resistencias": [],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      },
+      {
+        "symbol": "FOREXCOM:NSXUSD",
+        "nombre": "Nasdaq 100",
+        "yahooSymbol": "^NDX",
+        "fuente": "Yahoo Finance (^NDX)",
+        "fechaUltimaVela": "2026-08-05",
+        "precio": 29487.79,
+        "cierreAnterior": 29733.16,
+        "variacionDiaPct": -0.8,
+        "variacionSemanaPct": 8.4,
+        "variacionMesPct": 1.1,
+        "variacionAnioPct": 27.2,
+        "rangoDiaReal": {
+          "minimo": 29468.33,
+          "maximo": 29946.94
+        },
+        "rsi14": 55.5,
+        "lecturaRsi": "neutral",
+        "media50": 29386.89,
+        "media200": 26578.81,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 647.21,
+        "maximo52sem": 30762.2,
+        "minimo52sem": 22841.42,
+        "distanciaAMaximo52semPct": -4.1,
+        "distanciaAMinimo52semPct": 29.1,
+        "soportes": [
+          28852.66,
+          28567.16,
+          28214.11
+        ],
+        "resistencias": [
+          29678.89,
+          29856.94,
+          30328.79
+        ],
+        "patronUltimaVela": "vela bajista de cuerpo amplio"
+      },
+      {
+        "symbol": "BMFBOVESPA:IBOV",
+        "nombre": "Ibovespa (Brasil)",
+        "yahooSymbol": "^BVSP",
+        "fuente": "Yahoo Finance (^BVSP)",
+        "fechaUltimaVela": "2026-08-05",
+        "precio": 177726.17,
+        "cierreAnterior": 177895,
+        "variacionDiaPct": -0.1,
+        "variacionSemanaPct": 2.2,
+        "variacionMesPct": 3.3,
+        "variacionAnioPct": 34.2,
+        "rangoDiaReal": {
+          "minimo": 177690.45,
+          "maximo": 180194.52
+        },
+        "rsi14": 56.9,
+        "lecturaRsi": "neutral",
+        "media50": 173161.46,
+        "media200": 172716.05,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 2391.35,
+        "maximo52sem": 199355,
+        "minimo52sem": 132440,
+        "distanciaAMaximo52semPct": -10.8,
+        "distanciaAMinimo52semPct": 34.2,
+        "soportes": [
+          177479.5,
+          175039,
+          173544
+        ],
+        "resistencias": [
+          178350.5,
+          186057.5,
+          187334
+        ],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-08-05",
+        "precio": 99.69,
+        "cierreAnterior": 99.89,
+        "variacionDiaPct": -0.2,
+        "variacionSemanaPct": -1.1,
+        "variacionMesPct": -1.4,
+        "variacionAnioPct": 0.9,
+        "rangoDiaReal": {
+          "minimo": 99.63,
+          "maximo": 99.9
+        },
+        "rsi14": 35,
+        "lecturaRsi": "neutral",
+        "media50": 100.46,
+        "media200": 99.15,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4894,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -2.1,
+        "distanciaAMinimo52semPct": 4.3,
+        "soportes": [
+          99.34,
+          98.79,
+          97.78
+        ],
+        "resistencias": [
+          100.54,
+          101.68
+        ],
+        "patronUltimaVela": "vela bajista sin patron destacable"
+      }
+    ],
+    "marketData": {
+      "symbol": "FOREXCOM:SPXUSD",
+      "nombre": "S&P 500",
+      "yahooSymbol": "^GSPC",
+      "fuente": "Yahoo Finance (^GSPC)",
+      "fechaUltimaVela": "2026-08-05",
+      "precio": 7723.55,
+      "cierreAnterior": 7736.52,
+      "variacionDiaPct": -0.2,
+      "variacionSemanaPct": 5.6,
+      "variacionMesPct": 2.9,
+      "variacionAnioPct": 22,
+      "rangoDiaReal": {
+        "minimo": 7720.17,
+        "maximo": 7793.68
+      },
+      "rsi14": 65.2,
+      "lecturaRsi": "neutral",
+      "media50": 7485.68,
+      "media200": 7039.69,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 94.7,
+      "maximo52sem": 7793.68,
+      "minimo52sem": 6289.37,
+      "distanciaAMaximo52semPct": -0.9,
+      "distanciaAMinimo52semPct": 22.8,
+      "soportes": [
+        7426.54,
+        7376,
+        7333.68
+      ],
+      "resistencias": [],
+      "patronUltimaVela": "vela bajista sin patron destacable"
+    }
   }
 ]
