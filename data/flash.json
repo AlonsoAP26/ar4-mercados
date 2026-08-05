@@ -1,7 +1,432 @@
 {
- "lastId": 34069,
- "actualizado": "2026-08-05T15:34:25.768Z",
+ "lastId": 34074,
+ "actualizado": "2026-08-05T17:06:58.290Z",
  "items": [
+  {
+   "id": "33833",
+   "fecha": "2026-08-02T08:57:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33833",
+   "via": "DeItaone",
+   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
+   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
+   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
+   "analisis": {
+    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
+    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "DXY",
+    "EURUSD",
+    "Oro",
+    "VIX",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "nuclear",
+    "Ormuz",
+    "negociaciones",
+    "pausa militar",
+    "Oriente Medio"
+   ],
+   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
+   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
+   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
+   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
+    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
+    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
+    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
+   },
+   "macro": {
+    "dolar": "alcista corto plazo (alivio geopolítico)",
+    "oro": "bajista corto plazo",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "petroleo": "bajista",
+    "bonos": "neutral a alcista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-05T17:01:06+00:00",
+     "id": "34074",
+     "texto": "Vicecanciller iraní matiza postura sobre Estrecho de Ormuz: cumplimiento del MOU de Islamabad por EE.UU. es condición sine qua non pero no garantiza reapertura. Implica demandas adicionales no especificadas en el titular.",
+     "tgUrl": "https://t.me/walterbloomberg/34074"
+    },
+    {
+     "fecha": "2026-08-05T16:54:56+00:00",
+     "id": "34073",
+     "texto": "Vicecanciller iraní revela que se negoció ruta de tránsito con Omán que podría funcionar 2-4 meses. Actualización sobre negociaciones de reapertura del Estrecho de Ormuz: Irán mantiene condición de que EE.UU. retorne a compromisos del MOU de Islamabad, pero advierte que eso no es suficiente.",
+     "tgUrl": "https://t.me/walterbloomberg/34073"
+    },
+    {
+     "fecha": "2026-08-05T14:06:06+00:00",
+     "id": "34057",
+     "texto": "El Departamento de Tesoro de EE.UU. confirmó levantamiento de sanciones relacionadas con Irán, evento que se produce días después de que negociadores iraníes y omaníes finalizaran borrador de acuerdo sobre el Estrecho de Ormuz pendiente de aprobación del Líder Supremo de Irán. El movimiento es temporal y dirigido a facilitar negociaciones sobre transporte marítimo y abre puerta a renegociación de acuerdo nuclear.",
+     "tgUrl": "https://t.me/walterbloomberg/34057"
+    },
+    {
+     "fecha": "2026-08-05T13:09:11+00:00",
+     "id": "34049",
+     "texto": "El presidente Trump señaló negociaciones \"muy buenas\" con Irán sobre un posible acuerdo del Estrecho de Ormuz, sugiriendo cierre potencial hoy. Sin embargo, advirtió que EEUU golpearía a Irán \"muy duramente\" si Teherán se retira. Irán niega diálogos directos, afirmando que negociaciones ocurren solo vía Omán. La reapertura de la vía comercial clave podría catalizar negociaciones más amplias.",
+     "tgUrl": "https://t.me/walterbloomberg/34049"
+    },
+    {
+     "fecha": "2026-08-05T10:06:10+00:00",
+     "id": "34027",
+     "texto": "Medios estatales iraníes rechazaron afirmaciones de Trump sobre reapertura próxima del Estrecho de Ormuz, argumentando que cualquier acuerdo Irán-Omán es bilateral. IRIB advirtió que el estrecho permanecería cerrado si EE.UU. continúa con lo que Teherán califica como 'violaciones'. Legislador iraní negó que se logre estatus pre-conflicto.",
+     "tgUrl": "https://t.me/walterbloomberg/34027"
+    },
+    {
+     "fecha": "2026-08-05T09:01:07+00:00",
+     "id": "34017",
+     "texto": "Trump señala que acuerdo para reapertura del Estrecho de Ormuz podría concretarse en 48 horas; negociaciones USA-Irán-Omán avanzan. Axios reporta preparativos de acuerdo transitorio 60 días para restaurar tránsito energético clave. Alivio de preocupaciones petroleras, aunque amenazas hutíes persisten. Cualquier pacto sería temporal con riesgo de nuevas tensiones si negociaciones fracasan.",
+     "tgUrl": "https://t.me/walterbloomberg/34017"
+    },
+    {
+     "fecha": "2026-08-04T20:37:47+00:00",
+     "id": "33996",
+     "texto": "Fuentes militares advierten que EE.UU. ha gastado casi 80% de interceptores THAAD y ~50% de misiles Patriot desde inicio de la guerra con Irán. Mandos militares alertan de stockpiles 'peligrosamente bajos', elevando riesgos de respuesta a nuevos conflictos. Aliados del Golfo expresan preocupación por capacidad defensiva aérea compartida.",
+     "tgUrl": "https://t.me/walterbloomberg/33996"
+    },
+    {
+     "fecha": "2026-08-04T15:40:19+00:00",
+     "id": "33983",
+     "texto": "Irán considera permitir que Europa participe en operación de desminado del Estrecho de Ormuz, posible paso hacia reapertura con cooperación internacional.",
+     "tgUrl": "https://t.me/walterbloomberg/33983"
+    },
+    {
+     "fecha": "2026-08-04T13:46:51+00:00",
+     "id": "33975",
+     "texto": "Analistas de envíos se muestran escépticos sobre la recuperación rápida del tráfico en el Estrecho de Ormuz, a pesar del optimismo de Bessent sobre acuerdo USA-Irán. Kpler registró solo 9 barcos cruzando el domingo (2 petroleros). Flujos de crudo estimados en 3–5 mbd, muy por debajo de los 20 mbd pre-conflicto. Saudi Aramco advierte que reposición de inventarios podría tomar hasta 18 meses incluso con reapertura inmediata.",
+     "tgUrl": "https://t.me/walterbloomberg/33975"
+    },
+    {
+     "fecha": "2026-08-04T11:46:02+00:00",
+     "id": "33958",
+     "texto": "Futuros de Brent retroceden más del 1% ante optimismo de un posible acuerdo entre EE.UU. e Irán para resolver la situación del Estrecho de Ormuz. El mercado de energía descuenta reducción de primas de riesgo geopolítico.",
+     "tgUrl": "https://t.me/walterbloomberg/33958"
+    },
+    {
+     "fecha": "2026-08-04T11:44:15+00:00",
+     "id": "33955",
+     "texto": "El Secretario del Tesoro estadounidense Scott Bessent señaló en entrevista con CNBC que podría haber un acuerdo sobre la reapertura del Estrecho de Ormuz para el martes o miércoles. Bessent confirmó contacto cercano con Japón respecto a intervenciones cambiarias y advirtió que una debilitación del yen podría arrastrar otras divisas.",
+     "tgUrl": "https://t.me/walterbloomberg/33955"
+    },
+    {
+     "fecha": "2026-08-04T09:32:16+00:00",
+     "id": "33916",
+     "texto": "El Ministerio de Petróleo de Irak informó mediante medios estatales que buques transportando crudo iraquí han atravesado el Estrecho de Ormuz. Esta confirmación sigue a reportes previos sobre tensiones en la región y acuerdos anunciados para la reapertura del paso estratégico. El titular no especifica volúmenes ni fechas exactas del tránsito.",
+     "tgUrl": "https://t.me/walterbloomberg/33916"
+    },
+    {
+     "fecha": "2026-08-04T09:01:12+00:00",
+     "id": "33911",
+     "texto": "El CEO de Saudi Aramco, Amin Nasser, confirmó que el conflicto con Irán ha retirado 2.600 millones de barriles de crudo de la oferta global. El tránsito por el Estrecho de Ormuz cayó a 10% de niveles previos a la guerra; cada semana cerrado implica pérdida de 100 millones de barriles. La reconstrucción de inventarios podría tomar hasta 18 meses incluso si la ruta reabre hoy.",
+     "tgUrl": "https://t.me/walterbloomberg/33911"
+    },
+    {
+     "fecha": "2026-08-03T18:13:56+00:00",
+     "id": "33907",
+     "texto": "Trump afirma no permitir que Irán cobre tarifas por paso a través del Estrecho de Ormuz, reiterando soberanía de la zona como vía de tránsito internacional. Declara que no tolerará «peajes» iraníes, lo que implica resistencia a cualquier mecanismo de control iraniano sobre flujos.",
+     "tgUrl": "https://t.me/walterbloomberg/33907"
+    },
+    {
+     "fecha": "2026-08-03T18:03:53+00:00",
+     "id": "33906",
+     "texto": "Trump declara que negocia tener el Estrecho de Ormuz abierto en 24 horas. Afirmación refleja intención de resolver crisis mediante negociación acelerada, aunque el titular no especifica condiciones ni mécanismos. Marca compresión extrema de tiempos diplomáticos.",
+     "tgUrl": "https://t.me/walterbloomberg/33906"
+    },
+    {
+     "fecha": "2026-08-03T18:01:45+00:00",
+     "id": "33905",
+     "texto": "Trump reafirma ultimátum a Irán para firmar acuerdo, declarando que es su «última oportunidad». Esto se suma a declaraciones previas sobre mantener abierto el Estrecho de Ormuz y no permitir cobros de peaje por tránsito. Marca endurecimiento retórico en negociaciones nucleares tras pausa anunciada hace días.",
+     "tgUrl": "https://t.me/walterbloomberg/33905"
+    },
+    {
+     "fecha": "2026-08-03T15:27:15+00:00",
+     "id": "33890",
+     "texto": "Trump aseguró que marina estadounidense controla completamente acceso al Estrecho de Ormuz; nada entra a Irán sin aprobación USA. Acusa a Irán de negociar privately mientras niega públicamente; advierte sanciones permanecen hasta acuerdo o 'rendición total'. Reafirma postura: 'Irán nunca tendrá arma nuclear'.",
+     "tgUrl": "https://t.me/walterbloomberg/33890"
+    },
+    {
+     "fecha": "2026-08-03T13:51:37+00:00",
+     "id": "33879",
+     "texto": "Trump elogió desempeño de Chevron y atribuyó éxito a políticas energéticas de su administración, incluyendo retorno a Venezuela. Presionó a Chevron y sector petrolero para reducir precios al consumidor inmediatamente. Declaración parte de narrativa sobre control geopolítico del petróleo y sanciones a Irán.",
+     "tgUrl": "https://t.me/walterbloomberg/33879"
+    },
+    {
+     "fecha": "2026-08-03T10:28:26+00:00",
+     "id": "33859",
+     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
+     "tgUrl": "https://t.me/walterbloomberg/33859"
+    },
+    {
+     "fecha": "2026-08-03T10:03:27+00:00",
+     "id": "33856",
+     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
+     "tgUrl": "https://t.me/walterbloomberg/33856"
+    },
+    {
+     "fecha": "2026-08-03T04:44:30.000Z",
+     "id": "991847143",
+     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
+    },
+    {
+     "fecha": "2026-08-02T23:33:07.000Z",
+     "id": "990424278",
+     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
+    },
+    {
+     "fecha": "2026-08-02T21:45:46+00:00",
+     "id": "33844",
+     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
+     "tgUrl": "https://t.me/walterbloomberg/33844"
+    },
+    {
+     "fecha": "2026-08-02T21:44:13+00:00",
+     "id": "33843",
+     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
+     "tgUrl": "https://t.me/walterbloomberg/33843"
+    },
+    {
+     "fecha": "2026-08-02T16:40:18+00:00",
+     "id": "33836",
+     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
+     "tgUrl": "https://t.me/walterbloomberg/33836"
+    },
+    {
+     "fecha": "2026-08-02T16:35:19+00:00",
+     "id": "33835",
+     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
+     "tgUrl": "https://t.me/walterbloomberg/33835"
+    },
+    {
+     "fecha": "2026-08-02T11:52:45+00:00",
+     "id": "33834",
+     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
+     "tgUrl": "https://t.me/walterbloomberg/33834"
+    }
+   ],
+   "actualizado": "2026-08-05T17:01:06+00:00"
+  },
+  {
+   "id": "34072",
+   "fecha": "2026-08-05T16:12:46+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34072",
+   "via": "DeItaone",
+   "original": "*ALPHABET SHARES EXTEND DECLINE TO MORE THAN 5%",
+   "titulo": "Alphabet extiende caída a más del 5% en sesión",
+   "resumen": "Las acciones de Alphabet han extendido su caída diaria a más del 5%, sin que el titular especifique la causa raíz del movimiento. El contexto institucional sugiere presión post-earnings o revaluación de exposición IA/búsqueda en el mercado.",
+   "analisis": {
+    "porque": "Movimiento significativo en mayor capitalizador de NASDAQ; arrastra indices y genera reconocimiento de posiciones en fondos indexados; señal de potential cambio de apetito por mega-cap tech.",
+    "queOcurrio": "Alphabet cotiza con caída extendida de 5%+ en sesión.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "GOOGL",
+    "NASDAQ",
+    "Mega-cap Tech",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "GOOGL",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "alphabet",
+    "GOOGL",
+    "caída",
+    "5%",
+    "nasdaq"
+   ],
+   "tgText": "GOOGL cae más de 5% en sesión. Sin causa explícita en titular pero coincide con revisión de posiciones tech/IA. Monitorear impacto en NASDAQ y fondos indexados.",
+   "xText": "GOOGL en caída de 5%+. Titular no especifica causa pero señal potencial de presión en mega-cap tech y revaluación IA.",
+   "discordText": "**Alphabet (GOOGL) -5%+ en sesión**\n• Movimiento significativo sin causa directa en titular\n• Contexto: post-earnings, presión tech/IA\n• Impacto: NASDAQ, S&P500, fondos indexados",
+   "pushText": "GOOGL -5%+ sin causa clara; presión en mega-cap tech",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "NASDAQ 100 y S&P 500: GOOGL es ~6% del índice; caída de 5% arrastra -30 a -40 puntos base en índices.",
+    "despues": "Otros mega-cap tech (Microsoft, Apple, Tesla): vigilancia de rotación sectorial; volatilidad realizada sube, VIX potencialmente más alto.",
+    "escenarios": "Traders monitorean: (1) si se confirma presión post-earnings; (2) rotación fuera de mega-cap tech; (3) liquidaciones de call spreads; (4) rebalance de fondos indexados; (5) impact en P&L de hedge funds long tech.",
+    "riesgos": "Titular extremadamente escaso; no especifica causa (earnings, competencia IA, regulación, venta técnica). Riesgo de reversal rápido si es venta mecánica de fondos o short squeeze."
+   },
+   "macro": {
+    "nasdaq": "Presión significativa por composición GOOGL",
+    "sp500": "Impacto moderado pero monitoreado",
+    "dolar": "Sesgo alcista por flight-to-safety si tech presionado"
+   },
+   "updates": []
+  },
+  {
+   "id": "34071",
+   "fecha": "2026-08-05T15:53:21+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34071",
+   "via": "DeItaone",
+   "original": "MAJOR HEDGE FUNDS TARGETED IN WAVE OF ATTEMPTED CYBERATTACKS Major hedge funds including Citadel, Point72 and Two Sigma were targeted in a wave of sophisticated cyberattacks using AI-powered voice phishing (vishing) to trick employees into granting system access. Two Sigma said it successfully blocked the attack and found no evidence of a breach. Cybersecurity experts warn AI is making large-scale",
+   "titulo": "Citadel, Point72 y Two Sigma sufrieron ataque cibernético con vishing impulsado por IA",
+   "resumen": "Importantes hedge funds fueron objetivo de sofisticados ataques cibernéticos que usaban vishing (phishing de voz) potenciado por IA para engañar empleados y lograr acceso a sistemas. Two Sigma reportó haber bloqueado el ataque sin evidencia de brecha. Expertos advierten que IA abarata y facilita ataques a gran escala, elevando riesgos sistémicos en finanzas.",
+   "analisis": {
+    "porque": "Ataque a infraestructura crítica financiera; refleja escalada de riesgos cibernéticos sistémicos que reguladores y fondos de riesgo monitorean; impacta confianza en operaciones de trading.",
+    "queOcurrio": "Wave de ataques vishing (voz+IA) contra fondos de cobertura líderes; Two Sigma bloqueó pero otros fueron objetivos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Reuters (según Walter Bloomberg)"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Fondos de Cobertura",
+    "Índices Tecnología",
+    "Bonos Corporativos",
+    "Volatilidad"
+   ],
+   "sesgos": [
+    {
+     "activo": "Sector Financiero",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Ciberseguridad",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Emergencia",
+   "keywords": [
+    "ciberataque",
+    "vishing",
+    "IA",
+    "hedge-funds",
+    "dos-sigma",
+    "citadel",
+    "point72"
+   ],
+   "tgText": "⚠️ Citadel, Point72 y Two Sigma blancos de ataque cibernético con vishing potenciado por IA. Two Sigma bloqueó sin brecha. Expertos advierten riesgos sistémicos crecientes.",
+   "xText": "⚠️ Ataque cibernético a hedge funds: Citadel, Point72 y Two Sigma blancos de vishing con IA. Two Sigma sin brecha confirmada. Riesgos sistémicos financieros en alza.",
+   "discordText": "**Ataque cibernético a hedge funds**\n⚠️ Objetivos: Citadel, Point72, Two Sigma\n• Técnica: vishing (phishing de voz) + IA\n• Two Sigma: bloqueó, sin brecha\n• Riesgo: ataques sistémicos abaratados por IA",
+   "pushText": "Ataque cibernético a hedge funds con IA; Two Sigma bloqueó sin brecha",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Acciones de ciberseguridad (CrowdStrike, Palo Alto, Fortinet): sesgo alcista por demanda defensiva.",
+    "despues": "Hedge funds y financiero general: presión si se confirman brechas; bonos corporativos si hay impacto operativo sistémico.",
+    "escenarios": "Traders vigilan: (1) divulgación adicional de brechas; (2) regulación/requisitos cibernéticos más estrictos; (3) impacto en operaciones de trading de fondos; (4) cobertura de seguros de ciberriesgo.",
+    "riesgos": "Si la onda de ataques escalara a otros bancos/brokers, impacto sistémico potencial; el titular no especifica si hubo acceso parcial; IA-powered attacks son tendencia creciente pero aún predecible por expertos."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "34070",
+   "fecha": "2026-08-05T15:51:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34070",
+   "via": "DeItaone",
+   "original": "BOFA: S&P 500 HITS 2026 TARGET Bank of America said the S&P 500 has reached its 2026 target of 7,741, but technical indicators suggest the rally could extend toward 8,000, 8,234 and potentially 8,541. The bank sees 7,500 as key support but warns that weak August-October seasonality, stretched momentum, geopolitical risks and upcoming US payroll and inflation data could limit further gains.",
+   "titulo": "BofA: S&P 500 alcanza objetivo 2026 pero técnico alerta sobre resistencias",
+   "resumen": "Bank of America confirmó que el S&P 500 llegó a su objetivo de 7.741 para 2026, pero advierte que indicadores técnicos podrían extender el rally hacia 8.000, 8.234 y 8.541. Sin embargo, la debilidad estacional agosto-octubre, momentum estirado, riesgos geopolíticos y datos de empleo e inflación podrían limitar ganancias. Soporta en 7.500.",
+   "analisis": {
+    "porque": "Define niveles clave para operadores institucionales; alcance de objetivos anuales impacta posicionamiento de fondos indexados y estrategias de cobertura.",
+    "queOcurrio": "BofA validó su pronóstico anual del S&P 500 pero matiza con advertencias técnicas y estacionales.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "BofA",
+    "S&P500",
+    "objetivo-2026",
+    "técnico",
+    "resistencia"
+   ],
+   "tgText": "S&P 500 alcanzó objetivo BofA de 7.741. Técnico sugiere rally hacia 8.000-8.541 pero alerta por estacionalidad débil ago-oct y datos macro pendientes.",
+   "xText": "BofA: S&P 500 en target anual 7.741. Técnico apunta a 8.000-8.541 pero advierte: estacionalidad floja, inflación/empleo clave en próximas semanas.",
+   "discordText": "**BofA: S&P 500 en objetivo anual**\n• Nivel actual: 7.741\n• Resistencias: 8.000 → 8.234 → 8.541\n• Soporte: 7.500\n• Riesgos: estacionalidad débil ago-oct, datos macro",
+   "pushText": "S&P 500 alcanzó objetivo 2026; técnico apunta resistencias en 8.000-8.500",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "S&P 500 y NASDAQ: buscan break de 8.000 o retroceso a 7.500 según datos de empleo/inflación próximos.",
+    "despues": "Bonos USA (rendimientos suben si hay resistencia), USD fortalece, sectores defensivos si se ve contracción estacional.",
+    "escenarios": "Traders monitorean: (1) PMI servicios/manufacturero en agosto; (2) jobless claims y payroll sept; (3) CPI mensual; (4) posicionamiento long excesivo en índices.",
+    "riesgos": "Estacionalidad agosto-octubre es histórica pero no garantizada en 2026; geopolítica (Irán, Mar Rojo) podría acelerar correctivo; momentum estirado sugiere volatilidad realizada."
+   },
+   "macro": {
+    "sp500": "Alcance de objetivo anual; técnico apunta extensión pero con advertencias",
+    "nasdaq": "Similar a S&P; resistencias relevantes",
+    "bonos": "Rendimientos podrían presionar si agosto-octubre genera volatilidad",
+    "dolar": "Neutral a alcista en escenario de debilidad equity"
+   },
+   "updates": []
+  },
   {
    "id": "34037",
    "fecha": "2026-08-05T12:09:10+00:00",
@@ -288,239 +713,6 @@
     }
    ],
    "actualizado": "2026-08-05T14:19:36+00:00"
-  },
-  {
-   "id": "33833",
-   "fecha": "2026-08-02T08:57:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33833",
-   "via": "DeItaone",
-   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
-   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
-   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
-   "analisis": {
-    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
-    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "DXY",
-    "EURUSD",
-    "Oro",
-    "VIX",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "nuclear",
-    "Ormuz",
-    "negociaciones",
-    "pausa militar",
-    "Oriente Medio"
-   ],
-   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
-   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
-   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
-   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
-    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
-    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
-    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
-   },
-   "macro": {
-    "dolar": "alcista corto plazo (alivio geopolítico)",
-    "oro": "bajista corto plazo",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "petroleo": "bajista",
-    "bonos": "neutral a alcista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-05T14:06:06+00:00",
-     "id": "34057",
-     "texto": "El Departamento de Tesoro de EE.UU. confirmó levantamiento de sanciones relacionadas con Irán, evento que se produce días después de que negociadores iraníes y omaníes finalizaran borrador de acuerdo sobre el Estrecho de Ormuz pendiente de aprobación del Líder Supremo de Irán. El movimiento es temporal y dirigido a facilitar negociaciones sobre transporte marítimo y abre puerta a renegociación de acuerdo nuclear.",
-     "tgUrl": "https://t.me/walterbloomberg/34057"
-    },
-    {
-     "fecha": "2026-08-05T13:09:11+00:00",
-     "id": "34049",
-     "texto": "El presidente Trump señaló negociaciones \"muy buenas\" con Irán sobre un posible acuerdo del Estrecho de Ormuz, sugiriendo cierre potencial hoy. Sin embargo, advirtió que EEUU golpearía a Irán \"muy duramente\" si Teherán se retira. Irán niega diálogos directos, afirmando que negociaciones ocurren solo vía Omán. La reapertura de la vía comercial clave podría catalizar negociaciones más amplias.",
-     "tgUrl": "https://t.me/walterbloomberg/34049"
-    },
-    {
-     "fecha": "2026-08-05T10:06:10+00:00",
-     "id": "34027",
-     "texto": "Medios estatales iraníes rechazaron afirmaciones de Trump sobre reapertura próxima del Estrecho de Ormuz, argumentando que cualquier acuerdo Irán-Omán es bilateral. IRIB advirtió que el estrecho permanecería cerrado si EE.UU. continúa con lo que Teherán califica como 'violaciones'. Legislador iraní negó que se logre estatus pre-conflicto.",
-     "tgUrl": "https://t.me/walterbloomberg/34027"
-    },
-    {
-     "fecha": "2026-08-05T09:01:07+00:00",
-     "id": "34017",
-     "texto": "Trump señala que acuerdo para reapertura del Estrecho de Ormuz podría concretarse en 48 horas; negociaciones USA-Irán-Omán avanzan. Axios reporta preparativos de acuerdo transitorio 60 días para restaurar tránsito energético clave. Alivio de preocupaciones petroleras, aunque amenazas hutíes persisten. Cualquier pacto sería temporal con riesgo de nuevas tensiones si negociaciones fracasan.",
-     "tgUrl": "https://t.me/walterbloomberg/34017"
-    },
-    {
-     "fecha": "2026-08-04T20:37:47+00:00",
-     "id": "33996",
-     "texto": "Fuentes militares advierten que EE.UU. ha gastado casi 80% de interceptores THAAD y ~50% de misiles Patriot desde inicio de la guerra con Irán. Mandos militares alertan de stockpiles 'peligrosamente bajos', elevando riesgos de respuesta a nuevos conflictos. Aliados del Golfo expresan preocupación por capacidad defensiva aérea compartida.",
-     "tgUrl": "https://t.me/walterbloomberg/33996"
-    },
-    {
-     "fecha": "2026-08-04T15:40:19+00:00",
-     "id": "33983",
-     "texto": "Irán considera permitir que Europa participe en operación de desminado del Estrecho de Ormuz, posible paso hacia reapertura con cooperación internacional.",
-     "tgUrl": "https://t.me/walterbloomberg/33983"
-    },
-    {
-     "fecha": "2026-08-04T13:46:51+00:00",
-     "id": "33975",
-     "texto": "Analistas de envíos se muestran escépticos sobre la recuperación rápida del tráfico en el Estrecho de Ormuz, a pesar del optimismo de Bessent sobre acuerdo USA-Irán. Kpler registró solo 9 barcos cruzando el domingo (2 petroleros). Flujos de crudo estimados en 3–5 mbd, muy por debajo de los 20 mbd pre-conflicto. Saudi Aramco advierte que reposición de inventarios podría tomar hasta 18 meses incluso con reapertura inmediata.",
-     "tgUrl": "https://t.me/walterbloomberg/33975"
-    },
-    {
-     "fecha": "2026-08-04T11:46:02+00:00",
-     "id": "33958",
-     "texto": "Futuros de Brent retroceden más del 1% ante optimismo de un posible acuerdo entre EE.UU. e Irán para resolver la situación del Estrecho de Ormuz. El mercado de energía descuenta reducción de primas de riesgo geopolítico.",
-     "tgUrl": "https://t.me/walterbloomberg/33958"
-    },
-    {
-     "fecha": "2026-08-04T11:44:15+00:00",
-     "id": "33955",
-     "texto": "El Secretario del Tesoro estadounidense Scott Bessent señaló en entrevista con CNBC que podría haber un acuerdo sobre la reapertura del Estrecho de Ormuz para el martes o miércoles. Bessent confirmó contacto cercano con Japón respecto a intervenciones cambiarias y advirtió que una debilitación del yen podría arrastrar otras divisas.",
-     "tgUrl": "https://t.me/walterbloomberg/33955"
-    },
-    {
-     "fecha": "2026-08-04T09:32:16+00:00",
-     "id": "33916",
-     "texto": "El Ministerio de Petróleo de Irak informó mediante medios estatales que buques transportando crudo iraquí han atravesado el Estrecho de Ormuz. Esta confirmación sigue a reportes previos sobre tensiones en la región y acuerdos anunciados para la reapertura del paso estratégico. El titular no especifica volúmenes ni fechas exactas del tránsito.",
-     "tgUrl": "https://t.me/walterbloomberg/33916"
-    },
-    {
-     "fecha": "2026-08-04T09:01:12+00:00",
-     "id": "33911",
-     "texto": "El CEO de Saudi Aramco, Amin Nasser, confirmó que el conflicto con Irán ha retirado 2.600 millones de barriles de crudo de la oferta global. El tránsito por el Estrecho de Ormuz cayó a 10% de niveles previos a la guerra; cada semana cerrado implica pérdida de 100 millones de barriles. La reconstrucción de inventarios podría tomar hasta 18 meses incluso si la ruta reabre hoy.",
-     "tgUrl": "https://t.me/walterbloomberg/33911"
-    },
-    {
-     "fecha": "2026-08-03T18:13:56+00:00",
-     "id": "33907",
-     "texto": "Trump afirma no permitir que Irán cobre tarifas por paso a través del Estrecho de Ormuz, reiterando soberanía de la zona como vía de tránsito internacional. Declara que no tolerará «peajes» iraníes, lo que implica resistencia a cualquier mecanismo de control iraniano sobre flujos.",
-     "tgUrl": "https://t.me/walterbloomberg/33907"
-    },
-    {
-     "fecha": "2026-08-03T18:03:53+00:00",
-     "id": "33906",
-     "texto": "Trump declara que negocia tener el Estrecho de Ormuz abierto en 24 horas. Afirmación refleja intención de resolver crisis mediante negociación acelerada, aunque el titular no especifica condiciones ni mécanismos. Marca compresión extrema de tiempos diplomáticos.",
-     "tgUrl": "https://t.me/walterbloomberg/33906"
-    },
-    {
-     "fecha": "2026-08-03T18:01:45+00:00",
-     "id": "33905",
-     "texto": "Trump reafirma ultimátum a Irán para firmar acuerdo, declarando que es su «última oportunidad». Esto se suma a declaraciones previas sobre mantener abierto el Estrecho de Ormuz y no permitir cobros de peaje por tránsito. Marca endurecimiento retórico en negociaciones nucleares tras pausa anunciada hace días.",
-     "tgUrl": "https://t.me/walterbloomberg/33905"
-    },
-    {
-     "fecha": "2026-08-03T15:27:15+00:00",
-     "id": "33890",
-     "texto": "Trump aseguró que marina estadounidense controla completamente acceso al Estrecho de Ormuz; nada entra a Irán sin aprobación USA. Acusa a Irán de negociar privately mientras niega públicamente; advierte sanciones permanecen hasta acuerdo o 'rendición total'. Reafirma postura: 'Irán nunca tendrá arma nuclear'.",
-     "tgUrl": "https://t.me/walterbloomberg/33890"
-    },
-    {
-     "fecha": "2026-08-03T13:51:37+00:00",
-     "id": "33879",
-     "texto": "Trump elogió desempeño de Chevron y atribuyó éxito a políticas energéticas de su administración, incluyendo retorno a Venezuela. Presionó a Chevron y sector petrolero para reducir precios al consumidor inmediatamente. Declaración parte de narrativa sobre control geopolítico del petróleo y sanciones a Irán.",
-     "tgUrl": "https://t.me/walterbloomberg/33879"
-    },
-    {
-     "fecha": "2026-08-03T10:28:26+00:00",
-     "id": "33859",
-     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
-     "tgUrl": "https://t.me/walterbloomberg/33859"
-    },
-    {
-     "fecha": "2026-08-03T10:03:27+00:00",
-     "id": "33856",
-     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
-     "tgUrl": "https://t.me/walterbloomberg/33856"
-    },
-    {
-     "fecha": "2026-08-03T04:44:30.000Z",
-     "id": "991847143",
-     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
-    },
-    {
-     "fecha": "2026-08-02T23:33:07.000Z",
-     "id": "990424278",
-     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
-    },
-    {
-     "fecha": "2026-08-02T21:45:46+00:00",
-     "id": "33844",
-     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
-     "tgUrl": "https://t.me/walterbloomberg/33844"
-    },
-    {
-     "fecha": "2026-08-02T21:44:13+00:00",
-     "id": "33843",
-     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
-     "tgUrl": "https://t.me/walterbloomberg/33843"
-    },
-    {
-     "fecha": "2026-08-02T16:40:18+00:00",
-     "id": "33836",
-     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
-     "tgUrl": "https://t.me/walterbloomberg/33836"
-    },
-    {
-     "fecha": "2026-08-02T16:35:19+00:00",
-     "id": "33835",
-     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
-     "tgUrl": "https://t.me/walterbloomberg/33835"
-    },
-    {
-     "fecha": "2026-08-02T11:52:45+00:00",
-     "id": "33834",
-     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
-     "tgUrl": "https://t.me/walterbloomberg/33834"
-    }
-   ],
-   "actualizado": "2026-08-05T14:06:06+00:00"
   },
   {
    "id": "34054",
@@ -7466,203 +7658,6 @@
     "despues": "Financieras (bancos hipotecarios) revisas provisiones y márgenes; tasas hipotecarias pueden presionarse si regulación es restrictiva.",
     "escenarios": "Traders vigilar: (1) detalle de cambios regulatorios (qué entidad, qué requisitos); (2) impacto en origination de hipotecas Q3/Q4; (3) revisión de valuaciones de REITs; (4) competencia de private capital en vivienda.",
     "riesgos": "Título no especifica cambios concretos ni timeline. Falta información sobre qué reguladores o si ya están aprobados. Alto riesgo de no-verificable."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "979747342",
-   "fecha": "2026-08-01T12:30:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/glp-1-prescriptions-weight-loss-walmart-costco-amazon.html",
-   "via": "CNBC",
-   "original": "As Americans go direct with GLP-1 prescriptions, Walmart, Costco, Amazon will be big weight-loss winners",
-   "titulo": "Walmart, Costco y Amazon emergen como ganadores en tendencia de GLP-1 directo",
-   "resumen": "Conforme estadounidenses acceden directamente a prescripciones de GLP-1 (drogas para pérdida de peso), retailers y plataformas de e-commerce se posicionan como intermediarios clave. Walmart, Costco y Amazon aprovecharán la demanda sin pasar por farmacias tradicionales, generando ingresos adicionales en categoría de salud.",
-   "analisis": {
-    "porque": "Reconfiguración de cadena de suministro farmacéutico favorece a gigantes retail con logística integrada. Impacto material en márgenes y crecimiento de estos emisores.",
-    "queOcurrio": "Tendencia de consumidores obteniendo GLP-1 directamente (telemedicina, plataformas directas) en lugar de canales tradicionales, posicionando a Walmart, Costco y Amazon como beneficiarios.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "WMT",
-    "COST",
-    "AMZN",
-    "NASDAQ",
-    "S&P500",
-    "Retail"
-   ],
-   "sesgos": [
-    {
-     "activo": "WMT",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "COST",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "GLP-1",
-    "Walmart",
-    "Costco",
-    "Amazon",
-    "retail",
-    "e-commerce",
-    "telemedicina",
-    "pérdida de peso"
-   ],
-   "tgText": "💊 Walmart, Costco y Amazon ganan acceso directo a mercado GLP-1 via prescripciones digitales. Nuevo canal de ingresos en healthcare sin intermediarios tradicionales. Alcista para WMT, COST, AMZN.",
-   "xText": "🛒 Cambio en cadena de GLP-1: Walmart, Costco, Amazon se posicionan como ganadores directos. Telemedicina + logística integrada = margen nuevo. Favorable para valuaciones retail.",
-   "discordText": "**GLP-1: Ganadores Retail**\n• Walmart, Costco, Amazon acceso directo a prescripciones\n• Telemedicina + logística = margen nuevo\n• Impacto positivo en crecimiento e ingresos",
-   "pushText": "Walmart, Costco y Amazon ganan en mercado directo de GLP-1",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "WMT y COST saltan directamente por nuevo stream de ingresos en healthcare de alto margen.",
-    "despues": "AMZN sigue con reprecio; sector retail más amplio re-valúa exposición a farmacia/salud.",
-    "escenarios": "Traders vigilar: (1) guides de management en próximos earnings sobre GLP-1 revenue; (2) competencia de farmacias tradicionales (CVS, Walgreens); (3) regulación de telemedicina/prescripción directa; (4) márgenes comparados vs. venta tradicional.",
-    "riesgos": "Titular no especifica timeline ni volumen esperado de ingresos. Riesgo de que regulación frene telemedicina directa."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "979311374",
-   "fecha": "2026-08-01T12:16:13.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/from-a-fed-decision-to-big-tech-earnings-what-drove-last-weeks-volatile-market.html",
-   "via": "CNBC",
-   "original": "From a Fed decision to Big Tech earnings: What drove last week&apos;s volatile market",
-   "titulo": "Volatilidad de mercados: decisiones de Fed y earnings de Big Tech dominan semana",
-   "resumen": "CNBC analiza los factores que impulsaron la volatilidad del mercado la semana pasada, destacando la decisión de política monetaria de la Reserva Federal y los reportes de ganancias del sector tecnológico. El titular no especifica si habrá nuevas decisiones pendientes ni el impacto preciso en índices principales.",
-   "analisis": {
-    "porque": "Identifica los drivers macroeconómicos clave que movieron mercados: política monetaria y earnings corporativos. Los inversores necesitan entender qué variables continúan generando presión sobre valuaciones.",
-    "queOcurrio": "Análisis retrospectivo de volatilidad vinculada a decisión de Fed y publicación de resultados de gigantes tecnológicos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "DXW",
-    "Bonos",
-    "Rendimientos USA",
-    "AAPL",
-    "MSFT",
-    "GOOGL",
-    "AMZN"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "volatilidad",
-    "Fed",
-    "Big Tech",
-    "earnings",
-    "NASDAQ",
-    "política monetaria"
-   ],
-   "tgText": "📊 Volatilidad en mercados: Fed y earnings de Tech fueron los drivers principales la semana pasada. Inversores atentos a próximas publicaciones de resultados.",
-   "xText": "🔄 Volatilidad tecada por Fed + Big Tech earnings la semana pasada. Mercados ajustan valuaciones mientras se procesan datos macroeconómicos. NASDAQ sigue en la mira.",
-   "discordText": "**Volatilidad de Mercados**\n• Decisión de Fed + earnings de Big Tech impulsaron movimientos\n• NASDAQ bajo presión por valuaciones\n• Traders vigilar próximos reportes trimestrales",
-   "pushText": "Fed y Tech earnings dominaron volatilidad de mercados",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NASDAQ reacciona primero debido a exposición de Big Tech a decisiones de tasa y márgenes corporativos.",
-    "despues": "S&P 500 sigue con lag; bonos reprician rendimientos según implicaciones de política monetaria.",
-    "escenarios": "Traders monitorean: (1) próximas guías de earnings tech; (2) señales de la Fed sobre tasas futuras; (3) márgenes corporativos vs. presión de capex en IA.",
-    "riesgos": "El titular es análisis retrospectivo, no predictivo. Riesgo de que nueva información macroeconómica revierta valoraciones."
-   },
-   "macro": {
-    "dolar": "neutral",
-    "oro": "neutral",
-    "nasdaq": "bajista corto plazo",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "bitcoin": null,
-    "ethereum": null,
-    "bonos": "bajista (rendimientos alcistas)",
-    "petroleo": null
-   },
-   "updates": []
-  },
-  {
-   "id": "938524239",
-   "fecha": "2026-08-01T12:00:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/open-ai-hugging-face-hack-cyber-warnings.html",
-   "via": "CNBC",
-   "original": "OpenAI&apos;s Hugging Face hack confirmed months of AI cyber warnings: &apos;Pandora&apos;s box is open&apos;",
-   "titulo": "Hack de Hugging Face en OpenAI confirma meses de alertas sobre ciberseguridad IA",
-   "resumen": "Confirmado incidente de ciberseguridad en Hugging Face (plataforma central para modelos IA abiertos). Expertos advierten que 'la caja de Pandora está abierta', reflejando preocupaciones de largo plazo sobre vulnerabilidades críticas en infraestructura IA que gobiernos y empresas no han contenido adecuadamente.",
-   "analisis": {
-    "porque": "Riesgo sistémico para la industria IA: si modelos fundamentales se comprometen, afecta toda la cadena de valor (cloud, hardware, aplicaciones). Justifica regulación más estricta y auditoría de costos IA.",
-    "queOcurrio": "Se confirmó hack en Hugging Face, plataforma de repositorio de modelos IA de código abierto. Expertos señalan que las advertencias sobre ciberseguridad IA se han ignorado durante meses.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NVDA",
-    "TSLA",
-    "MSFT",
-    "GOOGL",
-    "AMZN",
-    "Nasdaq"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVDA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "ciberseguridad",
-    "IA",
-    "OpenAI",
-    "Hugging Face",
-    "hack",
-    "riesgo sistémico"
-   ],
-   "tgText": "🔓 Hack en Hugging Face confirmado: expertos alertan sobre vulnerabilidades críticas en infraestructura IA. Riesgo sistémico para Big Tech. CNBC.",
-   "xText": "Ciberseguridad IA: hack en Hugging Face confirma meses de advertencias ignoradas. 'Pandora's box abierta'. Impacto potencial en todo el ecosistema tech. #IA #CiberSeguridad",
-   "discordText": "**Ciberseguridad - IA**\n• Hack en Hugging Face confirmado\n• Infraestructura IA más expuesta de lo creído\n• Riesgo: regulación más estricta incoming\n⚠️ Presión en Big Tech inversores",
-   "pushText": "Hugging Face hackeada: ciberseguridad IA bajo presión.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "MSFT, GOOGL, AMZN presionadas (exponen sus modelos a riesgo); NVDA neutral (hardware no afectado directamente).",
-    "despues": "Bonos corporativos tech pueden ampliarse (spreads), sector cybersecurity (CrowdStrike, Palo Alto) podría subir, regulación se acelera.",
-    "escenarios": "Traders vigilan: (1) magnitud del hack (datos robados vs. acceso), (2) reacción regulatoria (nueva legislación IA), (3) costos de remediación en Big Tech, (4) Capex adicional en seguridad.",
-    "riesgos": "Titular no especifica qué datos se comprometieron; podría ser overblown si el hack es menor. Reacción de mercado depende de escalada regulatoria, no del incidente aislado."
    },
    "macro": null,
    "updates": []
