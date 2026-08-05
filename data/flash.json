@@ -1,7 +1,148 @@
 {
- "lastId": 34074,
- "actualizado": "2026-08-05T17:06:58.290Z",
+ "lastId": 34078,
+ "actualizado": "2026-08-05T18:46:31.829Z",
  "items": [
+  {
+   "id": "34078",
+   "fecha": "2026-08-05T18:20:30+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34078",
+   "via": "DeItaone",
+   "original": "OPENAI DRIVES MOST OF MICROSOFT'S AI REVENUE Microsoft disclosed it generated $24.1 billion in AI revenue from OpenAI in the year ended June, suggesting the ChatGPT maker accounts for more than half—and possibly around 70%—of its AI business. The figures highlight Microsoft's continued reliance on OpenAI, even as it develops its own AI models and invests in rivals such as Anthropic.",
+   "titulo": "OpenAI genera $24.1B en ingresos para Microsoft; representa más del 70% del negocio IA",
+   "resumen": "Microsoft divulgó que obtuvo $24.1 mil millones en ingresos de IA provenientes de OpenAI en el año fiscal terminado en junio, sugiriendo que ChatGPT representa más de la mitad y posiblemente alrededor del 70% del negocio IA total de Microsoft. Esto subraya la dependencia continua de Microsoft en OpenAI, incluso mientras desarrolla modelos propios e invierte en rivales como Anthropic.",
+   "analisis": {
+    "porque": "Revela la concentración de riesgo en la relación Microsoft-OpenAI y la magnitud real del negocio IA corporativo; impacta valuación y percepción de competencia en sector tech",
+    "queOcurrio": "Microsoft oficialmente comunicó los ingresos AI attributibles a OpenAI en su disclosure fiscal, mostrando dependencia de más del 70% de su unidad IA",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "MSFT",
+    "Nvidia",
+    "Anthropic-privada",
+    "Sector Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "MSFT",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NVIDIA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Sector Tech",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Microsoft",
+    "OpenAI",
+    "IA",
+    "ingresos",
+    "ChatGPT",
+    "dependencia-riesgo",
+    "valuación-tech"
+   ],
+   "tgText": "📊 MSFT: OpenAI genera $24.1B = 70% del negocio IA total. Revela alta concentración de riesgo en relación estratégica. Potencial revisión en múltiplos tech.",
+   "xText": "MSFT divulga que OpenAI representa $24.1B ó ~70% de sus ingresos IA. Alta dependencia del negocio ChatGPT subraya riesgo de concentración en relación estratégica crítica. #Tech #IA",
+   "discordText": "**Microsoft: OpenAI = 70% del negocio IA**\n• $24.1B en ingresos attributibles a ChatGPT\n• Dependencia muy alta en relación estratégica\n• Impacta múltiplos de valuación tech",
+   "pushText": "MSFT: OpenAI genera 70% de ingresos IA ($24.1B) — riesgo de concentración",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "MSFT y NASDAQ: mercado reprecia riesgo de dependencia en relación estratégica y potencial vulnerabilidad competitiva vs Anthropic, Google",
+    "despues": "Nvidia (impacto en demanda GPU para OpenAI), Anthropic-equivalentes privadas, índices tech amplios",
+    "escenarios": "Traders vigilarán: (1) reacción de inversores a concentración de riesgo en MSFT; (2) si mercado descuenta posible ruptura o renegociación de términos; (3) impacto en narrative de 'IA competencia' vs 'MSFT monopolio'",
+    "riesgos": "Titular oficial de Microsoft pero el análisis de '70%' es interpretación de Bloomberg; riesgo de malinterpretación sobre qué incluye 'ingresos IA'"
+   },
+   "macro": {
+    "nasdaq": "bajista-corto-plazo",
+    "dolar": "neutral",
+    "oro": "neutral",
+    "bonos": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34012",
+   "fecha": "2026-08-05T07:01:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34012",
+   "via": "DeItaone",
+   "original": "YEMEN'S HOUTHIS SAY THEY ATTACKED VESSEL IN THE RED SEA -MILITARY SPOKESPERSON",
+   "titulo": "Hutíes yemenís reportan ataque a buque en el Mar Rojo; escalada geopolítica",
+   "resumen": "Portavoz militar hutí confirma ataque a embarcación en el Mar Rojo. Los ataques hutíes han persistido durante meses, afectando rutas comerciales críticas entre Europa y Asia. El titular no especifica daños, tipo de buque ni consecuencias inmediatas. Contexto: negociaciones del Estrecho de Ormuz avanzan pero tensiones regionales permanecen.",
+   "analisis": {
+    "porque": "Los ataques en el Mar Rojo impactan seguros marítimos, costos logísticos globales y precios de energía. Afectan directamente a índices de transporte, compañías navieras y expectativas de inflación de importaciones en EEUU y Europa.",
+    "queOcurrio": "Portavoz militar hutí anuncia ataque a un buque en el Mar Rojo; no se confirman detalles de víctimas, daños o identidad del objetivo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Bonos",
+    "USD",
+    "Seguros",
+    "Transporte Marítimo",
+    "Renta Variable Global"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent/WTI",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Yemen",
+    "Hutíes",
+    "Mar Rojo",
+    "Geopolítica",
+    "Transporte Marítimo",
+    "Seguros"
+   ],
+   "tgText": "🔴 Hutíes yemenís reportan ataque a buque en Mar Rojo. Escalada en tensiones regionales presiona petróleo y seguros marítimos. Negociaciones del Estrecho avanzan pero riesgos persisten.",
+   "xText": "Portavoz hutí confirma ataque a embarcación en Mar Rojo. Impacta rutas comerciales críticas y presiona costos logísticos globales. Petróleo y seguros marítimos en vigilancia.",
+   "discordText": "**Hutíes: Ataque a Buque en Mar Rojo**\n• Portavoz militar yemení confirma operación\n• Afecta rutas comerciales Europa-Asia\n• Impacto: seguros, petróleo, logística global\n• Contexto: negociaciones Estrecho avanzando pero tensiones altas",
+   "pushText": "Hutíes atacan buque en Mar Rojo; presiona petróleo y logística global",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: mercados de energía reaccionan primero a escaladas en Mar Rojo por riesgo a suministros; USD sube por demanda de refugio.",
+    "despues": "Índices navieros (si existen en AR4), seguros marítimos, rendimientos de bonos USA (inflación esperada), metales preciosos.",
+    "escenarios": "Traders vigilan: (1) Si ataque causa cierre de ruta o corte logístico; (2) Represalias que escalen conflicto; (3) Impacto en inflación importada; (4) Reacción de EEUU/aliados.",
+    "riesgos": "Titular es comunicado hutí sin verificación independiente. Historial: muchos anuncios hutíes no resultan en ataques materiales. Riesgo de escalada desproporcionada en pricing de petróleo."
+   },
+   "macro": {
+    "petroleo": "sesgo alcista por riesgo de interrupción",
+    "dolar": "sesgo alcista por demanda de refugio",
+    "bonos": "sesgo bajista por expectativa de inflación importada"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-05T18:19:40+00:00",
+     "id": "34077",
+     "texto": "Los hutíes yemenís reportaron ataque a un buque petrolero saudí en el Golfo de Aden. Saudi Aramco no ha confirmado el incidente. La acción sigue patrón de ataques contra infraestructura energética en ruta crítica de comercio de petróleo.",
+     "tgUrl": "https://t.me/walterbloomberg/34077"
+    }
+   ],
+   "actualizado": "2026-08-05T18:19:40+00:00"
+  },
   {
    "id": "33833",
    "fecha": "2026-08-02T08:57:35+00:00",
@@ -82,6 +223,12 @@
     "bonos": "neutral a alcista"
    },
    "updates": [
+    {
+     "fecha": "2026-08-05T17:12:23+00:00",
+     "id": "34075",
+     "texto": "El viceministro de Relaciones Exteriores de Irán afirmó que no ha habido conversaciones con EE.UU. en días recientes. Actualiza panorama de negociaciones nucleares que Trump había pausado a cambio de acuerdo sobre Estrecho de Ormuz. Indica enfriamiento en diálogo bilateral.",
+     "tgUrl": "https://t.me/walterbloomberg/34075"
+    },
     {
      "fecha": "2026-08-05T17:01:06+00:00",
      "id": "34074",
@@ -245,7 +392,7 @@
      "tgUrl": "https://t.me/walterbloomberg/33834"
     }
    ],
-   "actualizado": "2026-08-05T17:01:06+00:00"
+   "actualizado": "2026-08-05T17:12:23+00:00"
   },
   {
    "id": "34072",
@@ -1441,72 +1588,6 @@
     "nasdaq": "bajista",
     "dolar": "neutral",
     "bonos": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "34012",
-   "fecha": "2026-08-05T07:01:14+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34012",
-   "via": "DeItaone",
-   "original": "YEMEN'S HOUTHIS SAY THEY ATTACKED VESSEL IN THE RED SEA -MILITARY SPOKESPERSON",
-   "titulo": "Hutíes yemenís reportan ataque a buque en el Mar Rojo; escalada geopolítica",
-   "resumen": "Portavoz militar hutí confirma ataque a embarcación en el Mar Rojo. Los ataques hutíes han persistido durante meses, afectando rutas comerciales críticas entre Europa y Asia. El titular no especifica daños, tipo de buque ni consecuencias inmediatas. Contexto: negociaciones del Estrecho de Ormuz avanzan pero tensiones regionales permanecen.",
-   "analisis": {
-    "porque": "Los ataques en el Mar Rojo impactan seguros marítimos, costos logísticos globales y precios de energía. Afectan directamente a índices de transporte, compañías navieras y expectativas de inflación de importaciones en EEUU y Europa.",
-    "queOcurrio": "Portavoz militar hutí anuncia ataque a un buque en el Mar Rojo; no se confirman detalles de víctimas, daños o identidad del objetivo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Bonos",
-    "USD",
-    "Seguros",
-    "Transporte Marítimo",
-    "Renta Variable Global"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent/WTI",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Yemen",
-    "Hutíes",
-    "Mar Rojo",
-    "Geopolítica",
-    "Transporte Marítimo",
-    "Seguros"
-   ],
-   "tgText": "🔴 Hutíes yemenís reportan ataque a buque en Mar Rojo. Escalada en tensiones regionales presiona petróleo y seguros marítimos. Negociaciones del Estrecho avanzan pero riesgos persisten.",
-   "xText": "Portavoz hutí confirma ataque a embarcación en Mar Rojo. Impacta rutas comerciales críticas y presiona costos logísticos globales. Petróleo y seguros marítimos en vigilancia.",
-   "discordText": "**Hutíes: Ataque a Buque en Mar Rojo**\n• Portavoz militar yemení confirma operación\n• Afecta rutas comerciales Europa-Asia\n• Impacto: seguros, petróleo, logística global\n• Contexto: negociaciones Estrecho avanzando pero tensiones altas",
-   "pushText": "Hutíes atacan buque en Mar Rojo; presiona petróleo y logística global",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: mercados de energía reaccionan primero a escaladas en Mar Rojo por riesgo a suministros; USD sube por demanda de refugio.",
-    "despues": "Índices navieros (si existen en AR4), seguros marítimos, rendimientos de bonos USA (inflación esperada), metales preciosos.",
-    "escenarios": "Traders vigilan: (1) Si ataque causa cierre de ruta o corte logístico; (2) Represalias que escalen conflicto; (3) Impacto en inflación importada; (4) Reacción de EEUU/aliados.",
-    "riesgos": "Titular es comunicado hutí sin verificación independiente. Historial: muchos anuncios hutíes no resultan en ataques materiales. Riesgo de escalada desproporcionada en pricing de petróleo."
-   },
-   "macro": {
-    "petroleo": "sesgo alcista por riesgo de interrupción",
-    "dolar": "sesgo alcista por demanda de refugio",
-    "bonos": "sesgo bajista por expectativa de inflación importada"
    },
    "updates": []
   },
@@ -7601,63 +7682,6 @@
     "despues": "NASDAQ sigue si hay concentración de beats en tech; fondos de valor revierten si industrial/financiero decepcionan.",
     "escenarios": "Traders vigilar: (1) magnitude de beats (% vs. estimate); (2) revisión de forward guidance; (3) comentario management sobre demanda/márgenes; (4) reacción de precio pos-earnings.",
     "riesgos": "Análisis histórico no predice futuro. Riesgo de reversión de patrón. No especifica acciones ni detalla qué impulsa beats."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "947225609",
-   "fecha": "2026-08-01T13:30:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/condo-buyers-mortgage-rules-fannie-mae-freddie-mac.html",
-   "via": "CNBC",
-   "original": "Buying a condo with a mortgage may soon get more complicated. Here&apos;s why",
-   "titulo": "Comprar condominio con hipoteca se complica: cambios regulatorios esperados",
-   "resumen": "CNBC advierte que proceso de financiamiento para compra de condominios enfrentará mayor complejidad regulatoria próximamente. El titular no especifica qué cambios ni entidades regulatorias, pero implica que requisitos de crédito o reservas comunes serán más estrictos.",
-   "analisis": {
-    "porque": "Cambios en regulación hipotecaria afectan demanda inmobiliaria, valuaciones de REITs y acciones de constructoras. Impacta costos de financiamiento y acceso al crédito.",
-    "queOcurrio": "Próximamente se esperan cambios regulatorios que complicarán el proceso de obtener hipoteca para condominios.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "REITs",
-    "Constructoras",
-    "Financieras",
-    "Tasas Hipotecarias",
-    "Vivienda"
-   ],
-   "sesgos": [
-    {
-     "activo": "REITs",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Constructoras",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "hipoteca",
-    "condominio",
-    "regulación",
-    "crédito",
-    "vivienda",
-    "REIT"
-   ],
-   "tgText": "🏠 Regulación: compra de condominios con hipoteca se complica próximamente. Cambios esperados en requisitos de crédito. Impacto potencial en demanda inmobiliaria y REITs.",
-   "xText": "🔴 Alerta vivienda: cambios regulatorios harán más difícil hipoteca para condominios. Vigilar impacto en constructoras y REITs.",
-   "discordText": "**Regulación Hipotecaria**\n• Compra de condominios + hipoteca se complica\n• Cambios regulatorios esperados\n• Impacto en REITs y constructoras",
-   "pushText": "Cambios regulatorios complican hipotecas para condominios",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de REITs y constructoras residenciales corrigen a la baja por presión de demanda esperada.",
-    "despues": "Financieras (bancos hipotecarios) revisas provisiones y márgenes; tasas hipotecarias pueden presionarse si regulación es restrictiva.",
-    "escenarios": "Traders vigilar: (1) detalle de cambios regulatorios (qué entidad, qué requisitos); (2) impacto en origination de hipotecas Q3/Q4; (3) revisión de valuaciones de REITs; (4) competencia de private capital en vivienda.",
-    "riesgos": "Título no especifica cambios concretos ni timeline. Falta información sobre qué reguladores o si ya están aprobados. Alto riesgo de no-verificable."
    },
    "macro": null,
    "updates": []
