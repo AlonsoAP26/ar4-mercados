@@ -1,7 +1,294 @@
 {
- "lastId": 34050,
- "actualizado": "2026-08-05T13:21:33.930Z",
+ "lastId": 34069,
+ "actualizado": "2026-08-05T15:34:25.768Z",
  "items": [
+  {
+   "id": "34037",
+   "fecha": "2026-08-05T12:09:10+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34037",
+   "via": "DeItaone",
+   "original": "FED'S KASHKARI: MY GOAL IS NOT TO SLOW ECONOMY, MY GOAL IS TO BRING DOWN INFLATION - CNBC",
+   "titulo": "Kashkari (FED): objetivo es bajar inflación, no ralentizar economía; hora de subir tasas",
+   "resumen": "El presidente de la Reserva Federal de Minneapolis, Neel Kashkari, aclaró en CNBC que el objetivo es desinflacionar, no contraer economía. Considera que \"ahora es el tiempo\" para comenzar a subir tasas lentamente. Descartó aumentos dramáticos, manteniéndose en línea con enfoque cauteloso del Comité. Señales de gradualismo en próximos movimientos de política monetaria.",
+   "analisis": {
+    "porque": "Oficial de la FED comunica tono de tasas alcistas próximas, reposiciona expectativas de mercado sobre timing de ciclo de subidas",
+    "queOcurrio": "Kashkari señala que el ciclo de subidas de tasas debe comenzar ahora, pero de forma lenta y no dramática",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Rendimientos USA",
+    "DXY",
+    "Bonos",
+    "Oro",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "FED",
+    "tasas",
+    "inflación",
+    "Kashkari",
+    "política-monetaria"
+   ],
+   "tgText": "Kashkari (FED): hora de subir tasas lentamente; objetivo es desinflación, no ralentización. Descarta aumentos dramáticos. Impacto en bonos y dólar.",
+   "xText": "Kashkari señala que FED debe comenzar a subir tasas ahora (lentamente). Objetivo: inflación baja, no contracción. Impacto alcista dólar, bajista oro.",
+   "discordText": "**Kashkari (FED) sobre tasas**\n• Ahora es momento de subir tasas lentamente\n• Objetivo: desinflación (no ralentización)\n• Descarta aumentos dramáticos\n• Impacto: alcista DXY, bajista Oro/S&P",
+   "pushText": "FED's Kashkari: hora de subir tasas lentamente; desinflación es objetivo",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Rendimientos USA (yields a largo plazo) saltan inmediatamente; dólar (DXY) sube por atractivo de tasas reales; oro cae por competencia con activos sin renta",
+    "despues": "S&P 500 y riesgo-on retroceden si mercado aprecia ciclo alcista próximo; bonos sufren capital losses si repricing es brusco; EUR/USD presionado",
+    "escenarios": "Traders cotejan contra Powell (¿confirmará?); vigilan si market pricing de tasas se acelera (forward guidance); ojo a reunión FOMC próxima; analizar si Kashkari representa consenso o halcón aislado",
+    "riesgos": "Kashkari es halcón históricamente; mercado podría revertir si Powell mantiene dovishness; datos de inflación próximos pueden cambiar tono; riesgo de volatilidad en largo de curva"
+   },
+   "macro": {
+    "dolar": "alcista",
+    "bonos": "bajista",
+    "oro": "bajista",
+    "sp500": "bajista",
+    "nasdaq": "bajista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-05T15:13:29+00:00",
+     "id": "34068",
+     "texto": "Neel Kashkari, presidente de la Fed de Minneapolis, reforzó su postura hawkish al pedir alzas de tasas de 25pb de forma inmediata para controlar la inflación. Kashkari, uno de los tres disidentes de la decisión del pasado viernes de mantener tasas, advirtió que demorar acciones podría obligar a la Fed a ajustes más agresivos si la inflación se enquista. Su visión contrasta con la mayoría del mercado.",
+     "tgUrl": "https://t.me/walterbloomberg/34068"
+    }
+   ],
+   "actualizado": "2026-08-05T15:13:29+00:00"
+  },
+  {
+   "id": "34063",
+   "fecha": "2026-08-05T14:57:42+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34063",
+   "via": "DeItaone",
+   "original": "🇺🇸 FED SEPTEMBER: MARKETS & WALL STREET ARE SPLIT 📊 Kalshi odds: • Hold: 49% • +25bp: 47% • >25bp: 2% 🏦 Wall Street outlook: • BofA: +25bp in Sep, then Oct & Dec • JPM: Hold in Sep, hike in Dec • Goldman: Hold, no more hikes • Morgan Stanley: Hold through year-end • Barclays: Hold through year-end • Citi: Hold in Sep, then cuts in Oct, Dec & Jan https://t.co/3TXWilnZWT",
+   "titulo": "Mercado y Wall Street divididos sobre Fed en septiembre; Kalshi 49% hold vs 47% alza",
+   "resumen": "El mercado de apuestas Kalshi muestra paridad casi perfecta: 49% probabilidad de mantener tasas en septiembre versus 47% para alza de 25pb. Wall Street está fragmentada: BofA espera tres alzas (sep/oct/dic), JPMorgan prevé hold en septiembre con alza en diciembre, Goldman descarta más hikes, Morgan Stanley y Barclays esperan pausa todo el año, Citi anticipa hold en septiembre seguido de cortes. Consenso inexistente.",
+   "analisis": {
+    "porque": "Incertidumbre máxima sobre trayectoria de tasas genera volatilidad. Divergencia entre BofA y Goldman/Morgan Stanley refleja debate real: ¿inflación controlada (cortes) o persistente (alzas)? Crítico para activos de riesgo, dólar y bonos.",
+    "queOcurrio": "Kalshi muestra 49% hold, 47% alza de 25pb, 2% >25bp. Wall Street completamente dividida entre tres escenarios: 1) Tres alzas (BofA), 2) Hold luego cortes (Citi, JPM parcial), 3) Pausa indefinida (Goldman, Morgan Stanley).",
+    "estado": "confirmado",
+    "fuenteOriginal": "Kalshi / Bloomberg / encuestas de bancos"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Rendimientos USA",
+    "DXY",
+    "S&P 500",
+    "Oro",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "septiembre",
+    "tasas",
+    "incertidumbre",
+    "Kalshi",
+    "Wall Street"
+   ],
+   "tgText": "⚖️ PARIDAD en Sept: Kalshi 49% hold vs 47% alza. Wall Street fragmentada: BofA (3 hikes) vs Goldman (0) vs Citi (cortes). Máxima incertidumbre.",
+   "xText": "⚖️ Mercado de apuestas Kalshi: 49% hold vs 47% alza 25pb en septiembre. Wall Street dividida: BofA→3 hikes, Goldman→0, Citi→cortes. $DXY $TLT",
+   "discordText": "**Sept FED: Máxima Divergencia**\n• Kalshi: 49% Hold | 47% +25bp\n• BofA: 3 alzas (sep/oct/dic)\n• Goldman: Sin más hikes\n• Citi: Hold sep, cortes después",
+   "pushText": "Sept FED: paridad en Kalshi, Wall Street dividida",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Volatilidad en Rendimientos USA (10-2y spread, volatilidad implícita en futuros de tasas). DXY fluctúa sin dirección clara.",
+    "despues": "S&P 500 reacciona al dato de empleo viernes; Oro puede saltar si incertidumbre persiste. Credit spreads se expanden ligeramente.",
+    "escenarios": "Traders esperarán: 1) ADP débil (payroll espera 75k vs 44k ADP) → más odds de hold, 2) Datos inflacionarios (próximas semanas) → definirán trayectoria. Viernes es clave. Riesgos: Powell puede sorprender con guidance diferente.",
+    "riesgos": "Kalshi es mercado de predicción, no garantía. Wall Street puede estar equivocada colectivamente. Sorpresa en empleo o inflación puede reconfigurar odds. Volatilidad elevada hasta que Fed comunique."
+   },
+   "macro": {
+    "dolar": "neutral (sin tendencia clara)",
+    "oro": "neutral (incertidumbre favorece compras defensivas)",
+    "nasdaq": "neutral",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bonos": "volátil",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34015",
+   "fecha": "2026-08-05T08:31:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34015",
+   "via": "DeItaone",
+   "original": "$SPCX : JP MORGAN RAISES TARGET PRICE TO $240 FROM $225",
+   "titulo": "JPMorgan alza target SpaceX a $240; refuerza sesgo alcista bancario post-earnings",
+   "resumen": "JPMorgan eleva objetivo de precio en SpaceX de $225 a $240, validando narrativa alcista post-IPO. Constituye cuarta institución en actualizar target en 2 horas; rango actual analista oscila $140 (Piper Sandler) a $240 (JPM), indicando incertidumbre pero sesgo alcista dominante entre majors.",
+   "analisis": {
+    "porque": "Mayor banco de inversión global amplía target en $15; señal de confianza en defensibilidad de margen IA y capex; presión alcista contrapesa disenso de Piper",
+    "queOcurrio": "JPMorgan sube target sin contexto detallado en titular; se asume basado en earnings beats similares a rationale de Mizuho/BofA",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "SPCX",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "SPCX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX-IPO",
+    "price-target-raise",
+    "JPMorgan",
+    "analyst-consensus",
+    "post-earnings"
+   ],
+   "tgText": "📈 JPMorgan alza target SPCX a $240 vs $225. Rango analista hoy: $140-$240. Consenso alcista de majors pero disenso visible con Piper Sandler.",
+   "xText": "$SPCX: JPMorgan eleva target $225→$240. Rango hoy: $140 (Piper)–$240 (JPM). Disenso entre bancos post-earnings pero majors se inclinan alcista.",
+   "discordText": "**SPCX | JPMorgan eleva $225→$240**\n• Cuarta institución actualizando hoy\n• Rango: $140–$240 (disenso maximal)\n• Sesgo alcista dominante en majors\n• Refleja confianza en margen IA y capex defensible",
+   "pushText": "JPMorgan eleva target SPCX a $240; sesgo alcista de majors vs Piper Sandler",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "SPCX: refuerzo alcista contrapesa Piper; si volumen alto, presión compradora en cortos; volatilidad intraday muy elevada típica en IPOs con disenso",
+    "despues": "QQQ si rotación tech persiste; valuaciones peers infraestructura; call options corto plazo (delta positivo intraday)",
+    "escenarios": "Traders ven: (1) majors (JPM, Mizuho, BofA) vs Piper = battle of narratives (calidad crecimiento vs dilución); (2) dónde cierra SPCX hoy marca pivote para semana; (3) si cae a $140 rompe supports, si sube a $240 requiere shorts cubrirse",
+    "riesgos": "JPM no detalló en titular; asunción es que rationale es similar a peers; riesgo que target sea defensivo vs Piper para no perder negocios con Musk"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "dolar": "neutral",
+    "bonos": "neutral"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-05T14:22:26+00:00",
+     "id": "34059",
+     "texto": "SpaceX se prepara para un evento sin precedentes: $101.000 millones en acciones se harán elegibles para compraventa el jueves (hoy o mañana según zona horaria), más que duplicando el float público de la compañía. El desbloqueo de nueve etapas de lockup llega tras una caída post-earnings aguda. Wall Street advierte presión vendedora podría persistir hasta diciembre, aunque mantiene outlook alcista a largo plazo (Starlink, IA, infraestructura espacial).",
+     "tgUrl": "https://t.me/walterbloomberg/34059"
+    },
+    {
+     "fecha": "2026-08-05T10:47:16+00:00",
+     "id": "34029",
+     "texto": "SpaceX anunció planes para construir una red móvil nacional completa combinando Starlink (satélites) con infraestructura terrestre, usando espectro adquirido a EchoStar. El anuncio hundió acciones de wireless (Verizon, AT&T, T-Mobile). AccionesSpaceX cayeron >10% post-earnings pese a resultados sólidos, reflejando preocupaciones por capex elevado.",
+     "tgUrl": "https://t.me/walterbloomberg/34029"
+    }
+   ],
+   "actualizado": "2026-08-05T14:22:26+00:00"
+  },
+  {
+   "id": "34036",
+   "fecha": "2026-08-05T12:06:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34036",
+   "via": "DeItaone",
+   "original": "SPOT GOLD EXTENDS GAINS, LAST UP NEARLY 3% AT $4,196.29/OZ",
+   "titulo": "Oro sube casi 3% a $4.196/oz; plata trepa 5% en rally de metales preciosos",
+   "resumen": "El oro extiende ganancias, subiendo casi 3% a $4.196/oz, mientras plata sube casi 5% a $62,53/oz. Rally en metales preciosos refleja presiones inflacionarias, demanda de cobertura y volatilidad geopolítica. El movimiento es consistente con debilitamiento esperado del dólar real o expectativas de depreciación.",
+   "analisis": {
+    "porque": "Metales preciosos son barómetro de inflación, volatilidad geopolítica y preferencia por activos refugio; movimientos coordinados indican cambios en rentabilidad real",
+    "queOcurrio": "Oro +2,9% a $4.196/oz; plata +4,9% a $62,53/oz en rally coordinado",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (spot prices)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Oro",
+    "Plata",
+    "DXY",
+    "Materias Primas",
+    "Inflación",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Plata",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "oro",
+    "plata",
+    "metales-preciosos",
+    "inflación",
+    "refugio"
+   ],
+   "tgText": "Metales preciosos en rally: oro +2,9% a $4.196/oz, plata +4,9% a $62,53/oz. Refleja presiones inflacionarias y demanda de cobertura geopolítica.",
+   "xText": "Rally en metales preciosos: Oro +2,9% a $4.196/oz; Plata +4,9% a $62,53/oz. Inflación y volatilidad geopolítica impulsan demanda de refugio.",
+   "discordText": "**Rally de metales preciosos**\n• Oro: +2,9% a $4.196/oz\n• Plata: +4,9% a $62,53/oz\n• Drivers: inflación, geopolítica, cobertura\n• Sesgo: debilitamiento dólar real",
+   "pushText": "Oro +2,9% a $4.196/oz, Plata +4,9%: rally de refugio",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "USD/JPY y EUR/USD presionados (dólar débil favorece oro); mineras de metales preciosos (Newmont, Barrick) suben con spot",
+    "despues": "Bonos largos pueden beneficiarse si mercado reprecia deflación; activos de valor podrían sentir presión si rally refleja aversión riesgo",
+    "escenarios": "Traders vigilan si este es repricing de inflación post-Kashkari o reacción geopolítica (Medio Oriente); si DXY cae sostenidamente, oro podría extender a $4.250+; si es justa corrección técnica, resistencia en $4.200",
+    "riesgos": "Movimiento podría revertir si FED confirma tasas altas (hace oro menos atractivo); volatilidad geopolítica es no-predecible; spike de plata sugiere especulación retail"
+   },
+   "macro": {
+    "oro": "alcista",
+    "plata": "alcista",
+    "dolar": "bajista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-05T14:19:36+00:00",
+     "id": "34058",
+     "texto": "El oro spot subió casi 4% adicionales a $4.238 por onza, extendiendo el rally iniciado en sesiones anteriores. La aceleración responde a incertidumbre sobre trayectoria de tasas de la Fed (Goldman descarta alzas, BofA espera tres) y tensiones geopolíticas en Oriente Medio (acuerdo Estrecho de Ormuz con Irán en etapa final). Demanda defensiva impulsa metales preciosos.",
+     "tgUrl": "https://t.me/walterbloomberg/34058"
+    }
+   ],
+   "actualizado": "2026-08-05T14:19:36+00:00"
+  },
   {
    "id": "33833",
    "fecha": "2026-08-02T08:57:35+00:00",
@@ -82,6 +369,12 @@
     "bonos": "neutral a alcista"
    },
    "updates": [
+    {
+     "fecha": "2026-08-05T14:06:06+00:00",
+     "id": "34057",
+     "texto": "El Departamento de Tesoro de EE.UU. confirmó levantamiento de sanciones relacionadas con Irán, evento que se produce días después de que negociadores iraníes y omaníes finalizaran borrador de acuerdo sobre el Estrecho de Ormuz pendiente de aprobación del Líder Supremo de Irán. El movimiento es temporal y dirigido a facilitar negociaciones sobre transporte marítimo y abre puerta a renegociación de acuerdo nuclear.",
+     "tgUrl": "https://t.me/walterbloomberg/34057"
+    },
     {
      "fecha": "2026-08-05T13:09:11+00:00",
      "id": "34049",
@@ -227,7 +520,75 @@
      "tgUrl": "https://t.me/walterbloomberg/33834"
     }
    ],
-   "actualizado": "2026-08-05T13:09:11+00:00"
+   "actualizado": "2026-08-05T14:06:06+00:00"
+  },
+  {
+   "id": "34054",
+   "fecha": "2026-08-05T13:46:21+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34054",
+   "via": "DeItaone",
+   "original": "*US S&P JULY SERVICES PMI AT 54.6 VS 51.2 PRIOR *US S&P JULY COMPOSITE PMI AT 54.5 VS 51.9 PRIOR",
+   "titulo": "PMI de servicios de EE.UU. sube a 54,6 en julio; compuesto repunta a 54,5",
+   "resumen": "El índice de gerentes de compras (PMI) de servicios de S&P Global subió a 54,6 en julio desde 51,2 en junio, superando expectativas. El PMI compuesto trepó a 54,5 desde 51,9, señalando expansión acelerada del sector servicios y mejora en la actividad económica general. Los datos contrastan con los débiles números de empleo privado del reporte ADP.",
+   "analisis": {
+    "porque": "El PMI de servicios es indicador adelantado crítico de salud económica. Lecturas por encima de 50 indican expansión; un salto de +3,4 puntos sugiere mejora sorpresiva que puede retrasar decisiones de recorte de tasas de la Fed.",
+    "queOcurrio": "S&P Global reportó PMI servicios de 54,6 (vs. 51,2 anterior) y compuesto de 54,5 (vs. 51,9 anterior), ambos mostrando expansión acelerada.",
+    "estado": "confirmado",
+    "fuenteOriginal": "S&P Global / Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "Bonos USA",
+    "Rendimientos USA",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "PMI-servicios",
+    "actividad-económica",
+    "expansión",
+    "Fed",
+    "tasas"
+   ],
+   "tgText": "📊 PMI servicios EE.UU. sube a 54,6 (vs 51,2). Compuesto repunta a 54,5. Expansión acelerada desafía recortes de tasas.",
+   "xText": "📊 PMI servicios USA: 54,6 (+3,4pts). Compuesto: 54,5. Expansión sorpresiva en sector servicios tensiona debate de tasas de Fed. $SPY $QQQ",
+   "discordText": "**PMI Servicios EE.UU. Julio**\n• Servicios: 54,6 (vs 51,2 previo)\n• Compuesto: 54,5 (vs 51,9 previo)\n• Señal: Expansión acelerada",
+   "pushText": "PMI servicios EE.UU. sube a 54,6; economía acelera",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Bonos USA y rendimientos suben (mercado reduce odds de cortes de tasas inmediatos); DXY se fortalece por mayor demanda de reservas en USD.",
+    "despues": "S&P 500 y NASDAQ pueden subir si el mercado interpreta esto como inflación controlada + crecimiento; pero también pueden caer si traders ven riesgo de Fed más hawkish.",
+    "escenarios": "Traders vigilarán si este dato refuerza la postura hawkish de Kashkari y BofA (esperan tres alzas) versus el hold de Goldman. Importante antes del reporte de empleo del viernes.",
+    "riesgos": "El PMI servicios puede divergir del empleo no-agrícola; Goldman advierte que ADP tiene correlación débil con payroll oficial. El dato es confirmado pero su interpretación macroeconómica depende del contexto de inflación subyacente."
+   },
+   "macro": {
+    "dolar": "alcista (mayor demanda por tasas más altas esperadas)",
+    "oro": "bajista a corto plazo (tasas reales suben)",
+    "nasdaq": "neutro-alcista (crecimiento, pero presión por tasas)",
+    "dow": "alcista (defensivos + cíclicos)",
+    "sp500": "alcista",
+    "bonos": "bajista (yields suben)",
+    "petroleo": "neutro (crecimiento económico neutral para demanda)"
+   },
+   "updates": []
   },
   {
    "id": "34047",
@@ -414,141 +775,6 @@
    "updates": []
   },
   {
-   "id": "34037",
-   "fecha": "2026-08-05T12:09:10+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34037",
-   "via": "DeItaone",
-   "original": "FED'S KASHKARI: MY GOAL IS NOT TO SLOW ECONOMY, MY GOAL IS TO BRING DOWN INFLATION - CNBC",
-   "titulo": "Kashkari (FED): objetivo es bajar inflación, no ralentizar economía; hora de subir tasas",
-   "resumen": "El presidente de la Reserva Federal de Minneapolis, Neel Kashkari, aclaró en CNBC que el objetivo es desinflacionar, no contraer economía. Considera que \"ahora es el tiempo\" para comenzar a subir tasas lentamente. Descartó aumentos dramáticos, manteniéndose en línea con enfoque cauteloso del Comité. Señales de gradualismo en próximos movimientos de política monetaria.",
-   "analisis": {
-    "porque": "Oficial de la FED comunica tono de tasas alcistas próximas, reposiciona expectativas de mercado sobre timing de ciclo de subidas",
-    "queOcurrio": "Kashkari señala que el ciclo de subidas de tasas debe comenzar ahora, pero de forma lenta y no dramática",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Rendimientos USA",
-    "DXY",
-    "Bonos",
-    "Oro",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "FED",
-   "keywords": [
-    "FED",
-    "tasas",
-    "inflación",
-    "Kashkari",
-    "política-monetaria"
-   ],
-   "tgText": "Kashkari (FED): hora de subir tasas lentamente; objetivo es desinflación, no ralentización. Descarta aumentos dramáticos. Impacto en bonos y dólar.",
-   "xText": "Kashkari señala que FED debe comenzar a subir tasas ahora (lentamente). Objetivo: inflación baja, no contracción. Impacto alcista dólar, bajista oro.",
-   "discordText": "**Kashkari (FED) sobre tasas**\n• Ahora es momento de subir tasas lentamente\n• Objetivo: desinflación (no ralentización)\n• Descarta aumentos dramáticos\n• Impacto: alcista DXY, bajista Oro/S&P",
-   "pushText": "FED's Kashkari: hora de subir tasas lentamente; desinflación es objetivo",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Rendimientos USA (yields a largo plazo) saltan inmediatamente; dólar (DXY) sube por atractivo de tasas reales; oro cae por competencia con activos sin renta",
-    "despues": "S&P 500 y riesgo-on retroceden si mercado aprecia ciclo alcista próximo; bonos sufren capital losses si repricing es brusco; EUR/USD presionado",
-    "escenarios": "Traders cotejan contra Powell (¿confirmará?); vigilan si market pricing de tasas se acelera (forward guidance); ojo a reunión FOMC próxima; analizar si Kashkari representa consenso o halcón aislado",
-    "riesgos": "Kashkari es halcón históricamente; mercado podría revertir si Powell mantiene dovishness; datos de inflación próximos pueden cambiar tono; riesgo de volatilidad en largo de curva"
-   },
-   "macro": {
-    "dolar": "alcista",
-    "bonos": "bajista",
-    "oro": "bajista",
-    "sp500": "bajista",
-    "nasdaq": "bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "34036",
-   "fecha": "2026-08-05T12:06:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34036",
-   "via": "DeItaone",
-   "original": "SPOT GOLD EXTENDS GAINS, LAST UP NEARLY 3% AT $4,196.29/OZ",
-   "titulo": "Oro sube casi 3% a $4.196/oz; plata trepa 5% en rally de metales preciosos",
-   "resumen": "El oro extiende ganancias, subiendo casi 3% a $4.196/oz, mientras plata sube casi 5% a $62,53/oz. Rally en metales preciosos refleja presiones inflacionarias, demanda de cobertura y volatilidad geopolítica. El movimiento es consistente con debilitamiento esperado del dólar real o expectativas de depreciación.",
-   "analisis": {
-    "porque": "Metales preciosos son barómetro de inflación, volatilidad geopolítica y preferencia por activos refugio; movimientos coordinados indican cambios en rentabilidad real",
-    "queOcurrio": "Oro +2,9% a $4.196/oz; plata +4,9% a $62,53/oz en rally coordinado",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (spot prices)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Oro",
-    "Plata",
-    "DXY",
-    "Materias Primas",
-    "Inflación",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Plata",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "oro",
-    "plata",
-    "metales-preciosos",
-    "inflación",
-    "refugio"
-   ],
-   "tgText": "Metales preciosos en rally: oro +2,9% a $4.196/oz, plata +4,9% a $62,53/oz. Refleja presiones inflacionarias y demanda de cobertura geopolítica.",
-   "xText": "Rally en metales preciosos: Oro +2,9% a $4.196/oz; Plata +4,9% a $62,53/oz. Inflación y volatilidad geopolítica impulsan demanda de refugio.",
-   "discordText": "**Rally de metales preciosos**\n• Oro: +2,9% a $4.196/oz\n• Plata: +4,9% a $62,53/oz\n• Drivers: inflación, geopolítica, cobertura\n• Sesgo: debilitamiento dólar real",
-   "pushText": "Oro +2,9% a $4.196/oz, Plata +4,9%: rally de refugio",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "USD/JPY y EUR/USD presionados (dólar débil favorece oro); mineras de metales preciosos (Newmont, Barrick) suben con spot",
-    "despues": "Bonos largos pueden beneficiarse si mercado reprecia deflación; activos de valor podrían sentir presión si rally refleja aversión riesgo",
-    "escenarios": "Traders vigilan si este es repricing de inflación post-Kashkari o reacción geopolítica (Medio Oriente); si DXY cae sostenidamente, oro podría extender a $4.250+; si es justa corrección técnica, resistencia en $4.200",
-    "riesgos": "Movimiento podría revertir si FED confirma tasas altas (hace oro menos atractivo); volatilidad geopolítica es no-predecible; spike de plata sugiere especulación retail"
-   },
-   "macro": {
-    "oro": "alcista",
-    "plata": "alcista",
-    "dolar": "bajista"
-   },
-   "updates": []
-  },
-  {
    "id": "34031",
    "fecha": "2026-08-05T11:01:22+00:00",
    "tgUrl": "https://t.me/walterbloomberg/34031",
@@ -692,67 +918,6 @@
     "petroleo": null
    },
    "updates": []
-  },
-  {
-   "id": "34015",
-   "fecha": "2026-08-05T08:31:33+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34015",
-   "via": "DeItaone",
-   "original": "$SPCX : JP MORGAN RAISES TARGET PRICE TO $240 FROM $225",
-   "titulo": "JPMorgan alza target SpaceX a $240; refuerza sesgo alcista bancario post-earnings",
-   "resumen": "JPMorgan eleva objetivo de precio en SpaceX de $225 a $240, validando narrativa alcista post-IPO. Constituye cuarta institución en actualizar target en 2 horas; rango actual analista oscila $140 (Piper Sandler) a $240 (JPM), indicando incertidumbre pero sesgo alcista dominante entre majors.",
-   "analisis": {
-    "porque": "Mayor banco de inversión global amplía target en $15; señal de confianza en defensibilidad de margen IA y capex; presión alcista contrapesa disenso de Piper",
-    "queOcurrio": "JPMorgan sube target sin contexto detallado en titular; se asume basado en earnings beats similares a rationale de Mizuho/BofA",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "SPCX",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "SPCX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX-IPO",
-    "price-target-raise",
-    "JPMorgan",
-    "analyst-consensus",
-    "post-earnings"
-   ],
-   "tgText": "📈 JPMorgan alza target SPCX a $240 vs $225. Rango analista hoy: $140-$240. Consenso alcista de majors pero disenso visible con Piper Sandler.",
-   "xText": "$SPCX: JPMorgan eleva target $225→$240. Rango hoy: $140 (Piper)–$240 (JPM). Disenso entre bancos post-earnings pero majors se inclinan alcista.",
-   "discordText": "**SPCX | JPMorgan eleva $225→$240**\n• Cuarta institución actualizando hoy\n• Rango: $140–$240 (disenso maximal)\n• Sesgo alcista dominante en majors\n• Refleja confianza en margen IA y capex defensible",
-   "pushText": "JPMorgan eleva target SPCX a $240; sesgo alcista de majors vs Piper Sandler",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "SPCX: refuerzo alcista contrapesa Piper; si volumen alto, presión compradora en cortos; volatilidad intraday muy elevada típica en IPOs con disenso",
-    "despues": "QQQ si rotación tech persiste; valuaciones peers infraestructura; call options corto plazo (delta positivo intraday)",
-    "escenarios": "Traders ven: (1) majors (JPM, Mizuho, BofA) vs Piper = battle of narratives (calidad crecimiento vs dilución); (2) dónde cierra SPCX hoy marca pivote para semana; (3) si cae a $140 rompe supports, si sube a $240 requiere shorts cubrirse",
-    "riesgos": "JPM no detalló en titular; asunción es que rationale es similar a peers; riesgo que target sea defensivo vs Piper para no perder negocios con Musk"
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "dolar": "neutral",
-    "bonos": "neutral"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-05T10:47:16+00:00",
-     "id": "34029",
-     "texto": "SpaceX anunció planes para construir una red móvil nacional completa combinando Starlink (satélites) con infraestructura terrestre, usando espectro adquirido a EchoStar. El anuncio hundió acciones de wireless (Verizon, AT&T, T-Mobile). AccionesSpaceX cayeron >10% post-earnings pese a resultados sólidos, reflejando preocupaciones por capex elevado.",
-     "tgUrl": "https://t.me/walterbloomberg/34029"
-    }
-   ],
-   "actualizado": "2026-08-05T10:47:16+00:00"
   },
   {
    "id": "34025",
@@ -7500,125 +7665,6 @@
     "riesgos": "Titular no especifica qué datos se comprometieron; podría ser overblown si el hack es menor. Reacción de mercado depende de escalada regulatoria, no del incidente aislado."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "951771643",
-   "fecha": "2026-08-01T12:00:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/best-buy-ceo-jason-bonfig-smaller-stores.html",
-   "via": "CNBC",
-   "original": "To keep growing, incoming Best Buy CEO says he first wants to go smaller",
-   "titulo": "CEO entrante de Best Buy: ir más pequeño es clave para crecer",
-   "resumen": "Nuevo CEO de Best Buy señala que estrategia de crecimiento futuro pasa por reducir tamaño de tienda/operaciones (modelo de tienda más pequeña o especializada). El titular no detalla formato exacto, pero sugiere cambio de modelo retail tradicional de grandes formatos.",
-   "analisis": {
-    "porque": "Cambio estratégico en Best Buy puede impactar márgenes, capex y comparable sales. Reposicionamiento retail away from big-box hacia modelo urbano/especializado es relevante para cadena y sector.",
-    "queOcurrio": "CEO entrante de Best Buy anuncia que estrategia de crecimiento priorizará tiendas/modelos más pequeños.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "BBY",
-    "Retail",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "BBY",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Best Buy",
-    "CEO",
-    "tiendas pequeñas",
-    "retail",
-    "estrategia"
-   ],
-   "tgText": "🏬 CEO de Best Buy: estrategia de crecimiento mediante tiendas más pequeñas. Cambio de modelo big-box tradicional. Vigilar impacto en márgenes y capex.",
-   "xText": "📍 Best Buy: nuevo CEO apunta a modelo de tiendas más pequeñas para crecer. Reposicionamiento del retailer electrónico.",
-   "discordText": "**Best Buy: Cambio Estratégico**\n• CEO entrante: ir más pequeño para crecer\n• Abandono parcial de big-box\n• Modelo urbano/especializado esperado",
-   "pushText": "Best Buy CEO: crecimiento mediante tiendas más pequeñas",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "BBY puede subir si mercado valúa cambio como positivo (bajar capex, mejorar márgenes urbanos).",
-    "despues": "Sector retail observa si modelo prospera; competidores evalúan replicar.",
-    "escenarios": "Traders vigilar: (1) guidance de earnings post-anuncio; (2) capex guidance vs. modelo anterior; (3) comp sales en nuevas tiendas pequeñas; (4) rentabilidad vs. stores grandes.",
-    "riesgos": "Falta detalle del nuevo formato. Riesgo de que modelo no sea escalable o que cierre más stores de lo esperado (capex reduction vs. real retrenchment)."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "991041002",
-   "fecha": "2026-08-01T10:56:11.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/tankers-near-oman-come-under-fire.html",
-   "via": "CNBC",
-   "original": "Tankers near Oman come under fire as Iran threatens to choke off shipping routes",
-   "titulo": "Tanqueros cerca de Omán bajo fuego; Irán amenaza cerrar rutas de envío",
-   "resumen": "Buques cisterna en aguas cercanas a Omán reportan ataques mientras Irán intensifica amenazas sobre el Estrecho de Ormuz. La tensión geopolítica escala en una de las rutas comerciales más críticas para el petróleo global, afectando directamente el comercio marítimo internacional y los precios de energía.",
-   "analisis": {
-    "porque": "Cualquier disrupción del Estrecho de Ormuz impacta directamente precios de petróleo y gas, volatilizando energía, divisas y acciones defensivas. Afecta cadenas de suministro globales.",
-    "queOcurrio": "Incidentes de fuego contra tanqueros en zonas cercanas a Omán coinciden con advertencias iraníes de cerrar rutas comerciales marítimas estratégicas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "DXY",
-    "S&P500",
-    "Energía",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Ormuz",
-    "petróleo",
-    "geopolítica",
-    "tanqueros",
-    "shipping"
-   ],
-   "tgText": "⚠️ Tanqueros bajo fuego cerca de Omán. Irán amenaza cerrar Estrecho de Ormuz. Petróleo presionado al alza; riesgo supply global. CNBC.",
-   "xText": "Escalada crítica: ataques a tanqueros en Omán mientras Irán amenaza cerrar Ormuz. Petróleo en alerta máxima. Impacto geopolítico en suministros globales. #Petróleo #Geopolítica",
-   "discordText": "**Geopolítica - BREAKING**\n• Tanqueros bajo fuego cerca de Omán\n• Irán intensifica amenazas sobre Ormuz\n• Riesgo: disrupción supply petróleo\n📈 Petróleo alcista | 📉 Equities presionadas",
-   "pushText": "Irán amenaza Ormuz: tanqueros bajo fuego. Petróleo sube.",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent) reacciona inmediatamente por riesgo de supply; oro sigue como activo refugio ante tensión geopolítica.",
-    "despues": "Energetics (XLE, HOU), divisas (DXY sube), bonos (yields caen), acciones defensivas suben; equities globales se presionan.",
-    "escenarios": "Traders vigilan: (1) escalada real vs. amenaza retórica, (2) respuesta militar de USA/aliados, (3) confirmación de daño a infraestructura, (4) cierre efectivo de Ormuz.",
-    "riesgos": "Titulares de fuego sin verificación de daño; riesgo de falsa alarma que después corrija mercado bruscamente. Diálogo diplomático podría desescalar rápido."
-   },
-   "macro": {
-    "petroleo": "↑ alcista",
-    "oro": "↑ alcista",
-    "dolar": "↑ levemente alcista",
-    "nasdaq": "↓ presionado",
-    "sp500": "↓ presionado",
-    "bonos": "↑ yields caen (refugio)"
-   },
    "updates": []
   }
  ],
