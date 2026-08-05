@@ -1,7 +1,360 @@
 {
  "lastId": 34011,
- "actualizado": "2026-08-04T23:06:19.198Z",
+ "actualizado": "2026-08-05T02:47:00.662Z",
  "items": [
+  {
+   "id": 969303742,
+   "fecha": "2026-08-05T01:54:17.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/04/stock-market-today-live-updates.html",
+   "via": "CNBC",
+   "original": "S&P 500 futures are little changed after massive rally lifts index to fresh record: Live updates",
+   "titulo": "S&P 500 futures rozan récord histórico tras rally monumental nocturno",
+   "resumen": "Futuros del S&P 500 se mantienen sin cambios pero operan cerca de máximos históricos tras massive rally nocturno que elevó el índice a nivel récord. La sesión nocturna refleja momentum de riesgo sostenido en megacaps tech.",
+   "analisis": {
+    "porque": "S&P 500 a nuevo máximo histórico marcan sentimiento alcista en mercados de renta variable y confianza en narrativa de crecimiento/IA; futuros flat sugieren pausa pero sin quiebre",
+    "queOcurrio": "Rally nocturno de Wall Street llevó S&P 500 a nuevo récord; futuros abren planos pero en línea con cierre máximo",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "Futuros ES",
+    "Tech stocks"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "sp500-record",
+    "futuros-es",
+    "rally-nocturno",
+    "mercados-equity"
+   ],
+   "tgText": "📊 S&P 500 en máximos históricos. Futuros sin cambios post-rally nocturno. Mercado descansa en nivel récord. Soportes en vista.",
+   "xText": "S&P 500 cierra en máximo histórico. Futuros ES mantienen nivel post-rally. Pausa técnica pero momentum intacto. $SPY $ES=F",
+   "discordText": "**S&P 500: Nuevo máximo histórico**\n• Rally nocturno consolida récord\n• Futuros sin cambios pero operan en soporte de máximo\n• Pausa técnica sin quiebre de momentum",
+   "pushText": "S&P 500 en máximos históricos; futuros sin cambios",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Futuros ES/NQ responden a datos macro o reversal técnica (break de máximo vs. consolidación)",
+    "despues": "Renta fija podría presionarse si mercado reinterpreta máximo como 'overstretch'; VIX monitorea volatilidad",
+    "escenarios": "Traders vigilan: (1) volumen de confirmación del máximo, (2) si es breakout o trampa de alcista (bull trap), (3) resistencias próximas, (4) reacción de spreads credit",
+    "riesgos": "Máximos suelen atraer profit-taking; falta contexto de volumen; datos duros (inflación, FOMC) podrían romper relato"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 944558996,
+   "fecha": "2026-08-05T01:27:06.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/softbank-samsung-sk-hynix-samsung-tech-rally.html",
+   "via": "CNBC",
+   "original": "SoftBank jumps 10% as Asia tech stocks track Wall Street AI rally",
+   "titulo": "SoftBank salta 10% en rally de tech asiático tras euphoria IA de Wall Street",
+   "resumen": "SoftBank se aprecia 10% en sesión, liderando repunte de tech asiático tras massive rally impulsado por IA en Wall Street. El movimiento refleja sincronización de apetito de riesgo global hacia mega-caps tech y su exposición a ecosistema de IA.",
+   "analisis": {
+    "porque": "SoftBank es proxy clave de riesgo tech/IA en Asia; movimiento de 10% marca confianza en valuaciones tech y flujos globales de capital hacia mercados emergentes asiáticos",
+    "queOcurrio": "Bolsa de Tokyo refleja rally nocturno de Wall Street en acciones IA; SoftBank aprecia 10% en contexto de euphoria global por tech stocks",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Nikkei",
+    "SoftBank",
+    "NASDAQ",
+    "Tech asiático",
+    "JPY"
+   ],
+   "sesgos": [
+    {
+     "activo": "SoftBank",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nikkei",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "softbank",
+    "rally-ia",
+    "asia-tech",
+    "wall-street",
+    "nikkei"
+   ],
+   "tgText": "📈 SoftBank +10% en rally asiático. Tech Tokyo sincroniza euphoria IA de Wall Street. Mega-caps refuerzan posiciones en ecosistema IA global. Apetito de riesgo en verde.",
+   "xText": "SoftBank +10% liderando rally asiático tras euphoria IA nocturna en Wall Street. Tech sincronización global. $9984.T #TokyoMarkets",
+   "discordText": "**SoftBank: +10% en rally tech asiático**\n• Sincronización con euphoria IA nocturna (Wall Street)\n• Nikkei refleja appetite de riesgo global\n• Mega-caps asiáticos en movimiento alcista",
+   "pushText": "SoftBank +10%; rally asiático sincroniza con euphoria IA global",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "SoftBank directamente (+10%); Nikkei fuerte; JPY podría presionarse (carry-trade risk-on)",
+    "despues": "Otros mega-caps asiáticos (TSMC, Samsung); NASDAQ mantiene momentum; bonos pueden perder atractivo en contexto risk-on",
+    "escenarios": "Traders vigilan: (1) sostenibilidad del rally nocturno de Wall Street, (2) si es rotación o expansión de valuaciones, (3) impacto en JPY si risk-on persiste, (4) crecimiento de posiciones carry-trade",
+    "riesgos": "Rally podría ser efímero si datos macro USA decepcionan; contagio de volatilidad si Wall Street revierte"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 915932359,
+   "fecha": "2026-08-05T01:26:27.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html",
+   "via": "CNBC",
+   "original": "U.S. says Strait of Hormuz is &apos;free and open&apos; as Bessent says deal with Iran is close",
+   "titulo": "EEUU: Estrecho de Ormuz 'abierto y libre'; Tesorero Bessent confirma acuerdo Iran cercano",
+   "resumen": "Gobierno USA reitera que Estrecho de Ormuz permanece 'libre y abierto'. Tesorero Bessent confirma que un acuerdo nuclear con Irán está próximo, señal de desescalada geopolítica en zona crítica de energía global.",
+   "analisis": {
+    "porque": "Confirmación de desescalada Irán abre posibilidad de alivio en premios de riesgo de petróleo, tasas de interés y spread de spreads soberano de Medio Oriente",
+    "queOcurrio": "USA reafirma posición sobre libre tránsito en Ormuz; Tesorero reconoce proximidad de acuerdo nuclear con Irán",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Oro",
+    "Bonos",
+    "DXY",
+    "Mercados emergentes Golfo"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran-acuerdo",
+    "ormuz-abierto",
+    "desescalada",
+    "petroleo"
+   ],
+   "tgText": "🛢️ USA confirma Ormuz 'abierto'. Tesorero Bessent: acuerdo Irán cercano. Desescalada reduce prima geopolítica en petróleo. Alivio potencial en energía global.",
+   "xText": "USA reafirma Ormuz 'abierto y libre'; Bessent confirma acuerdo Irán próximo. Desescalada reduce prima geopolítica. Presión en petróleo, alivio en renta fija. $CL_F",
+   "discordText": "**Desescalada Irán: Confirmación USA**\n• Ormuz permanece 'abierto y libre'\n• Tesorero Bessent: acuerdo nuclear cercano\n• Reduce prima de riesgo geopolítico en petróleo",
+   "pushText": "Bessent confirma acuerdo Irán cercano; Ormuz abierto",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo cede presión (WTI/Brent descargan prima geopolítica); Oro retrocede (menos risk-off); Bonos pueden subir (tasas bajan si confianza aumenta)",
+    "despues": "Spreads soberano Golfo se contraen; mercados emergentes responden positivamente; DXY podría presionarse (renta fija competitiva reduce demanda USD",
+    "escenarios": "Traders vigilan: (1) velocidad de firma del acuerdo, (2) si incluye levantamiento de sanciones (impact en supplies), (3) comunicados de Irán que confirmen o desmienta, (4) reacción de Israel",
+    "riesgos": "Acuerdo aún está 'cercano' no cerrado; riesgo de colapso en negociaciones; escalada podría revertir rápidamente si declaraciones posteriores son hostile"
+   },
+   "macro": {
+    "dolar": "bajista (menos risk-off)",
+    "oro": "bajista (menos demanda safe-haven)",
+    "nasdaq": "neutral",
+    "dow": "alcista (desescalada)",
+    "sp500": "alcista (alivio prima riesgo)",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "alcistas (tasas bajan)",
+    "petroleo": "bajista (descarga prima geopolítica)"
+   },
+   "updates": []
+  },
+  {
+   "id": 926130933,
+   "fecha": "2026-08-05T00:51:10.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/04/spacex-spcx-earnings-live-updates-q2-2026.html",
+   "via": "CNBC",
+   "original": "SpaceX earnings takeaways: Soaring AI costs outweigh revenue beat in first report since IPO",
+   "titulo": "SpaceX: costos de IA se disparan pero ingresos superan expectativas en IPO",
+   "resumen": "SpaceX reporta ingresos superiores a previsiones en su primer reporte post-IPO, pero los costos operacionales de IA generan inquietud en Wall Street. El crecimiento de gastos en inteligencia artificial compite con el dinamismo de ingresos, marcando tensión entre expansión tecnológica y rentabilidad.",
+   "analisis": {
+    "porque": "SpaceX es activo clave para traders tech/space/AI; resultados post-IPO marcan expectativas de valuación y sostenibilidad de capex en IA",
+    "queOcurrio": "IPO inicial reportó ingresos beat vs. estimaciones; sin embargo, costos de IA escalaron notoriamente, preocupando al mercado sobre márgenes futuros",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "SpaceX",
+    "NASDAQ",
+    "Tech stocks",
+    "Nvidia"
+   ],
+   "sesgos": [
+    {
+     "activo": "SpaceX",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Nvidia",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "spacex-ipo",
+    "costos-ia",
+    "ingresos-beat",
+    "rentabilidad"
+   ],
+   "tgText": "🚀 SpaceX supera ingresos en IPO, pero costos IA preocupan. Wall Street escrutiña relación capex/beneficio en carrera tech-espacial. Tensions entre crecimiento y márgenes.",
+   "xText": "SpaceX: ingresos beat en IPO pero costos IA disparan inquietudes. Wall Street analiza sostenibilidad de gastos en IA vs. márgenes. $SPACEX (IPO reciente)",
+   "discordText": "**SpaceX Post-IPO: Resultados mixtos**\n• Ingresos superan expectativas\n• Costos de IA escalan notoriamente\n• Mercado cuestiona márgenes a futuro",
+   "pushText": "SpaceX vence en ingresos pero costos de IA inquietan Wall Street",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "SpaceX (tras IPO) sentiría presión si mercado interpreta capex-IA como insostenible; Tech stocks seguirían por riesgo sistémico de gasto IA",
+    "despues": "Nvidia podría presionar si traders ven fricciones en ROI de chips IA en operaciones espaciales; sector cleantech/satcom vigilaría competencia",
+    "escenarios": "Traders vigilan: (1) ratio de crecimiento IA vs. ingresos, (2) proyecciones de capex 2-3 años, (3) si SpaceX necesita más capex para satcom/Starlink, (4) comparativa vs. rentabilidad de peers tech",
+    "riesgos": "Titular no especifica monto de costos IA ni proyecciones; riesgo de pánico por interpretación de 'insostenibilidad'"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 967035277,
+   "fecha": "2026-08-05T00:32:29.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/wealthy-chinese-race-for-tax-advice-as-beijing-targets-offshore-trusts.html",
+   "via": "CNBC",
+   "original": "China&apos;s super-rich &apos;in shock&apos; and hunting for cash as Beijing issues surprise tax on offshore trusts",
+   "titulo": "China grava sorpresivamente trusts offshore; multimillonarios buscan liquidez de emergencia",
+   "resumen": "Beijing implementó una sorpresiva tributación a trusts offshore, dejando a la élite financiera china en 'estado de shock' y buscando liquidez de emergencia. La medida amplía el cerco fiscal sobre riqueza externa, afectando estructuras de planificación patrimonial de alto patrimonio.",
+   "analisis": {
+    "porque": "Reforma fiscal china impacta flujos de capital, confianza en activos chinos, demanda de divisas extranjeras y volatilidad en mercados emergentes vinculados a riqueza china",
+    "queOcurrio": "Gobierno chino anunció gravamen sorpresivo sobre trusts offshore sin aviso previo, causando pánico liquidador en UHNWI (ultra-high-net-worth) chinos",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "CNY",
+    "Hong Kong Hang Seng",
+    "Oro",
+    "DXY",
+    "Bonos chinos",
+    "Mercados emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "CNY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Hang Seng",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "china-impuestos",
+    "trusts-offshore",
+    "fuga-capital",
+    "panic-selling"
+   ],
+   "tgText": "⚠️ BREAKING: China grava trusts offshore sin aviso. Multimillonarios buscan liquidez de emergencia. Pánico fiscal dispara presión en CNY y activos chinos. Riesgos de fuga capital.",
+   "xText": "BREAKING: Beijing sorprende con gravamen a trusts offshore. Multimillonarios en pánico buscan liquidez. Presión inmediata en CNY, Hang Seng, bonos chinos. $CNY $HSI",
+   "discordText": "**⚠️ SHOCK FISCAL CHINA**\n• Nuevo gravamen sorpresivo a trusts offshore\n• Multimillonarios buscan liquidez de emergencia\n• Pánico: presión en CNY, Hang Seng, bonos chinos\n• Riesgos de fuga capital",
+   "pushText": "BREAKING: China grava trusts offshore; pánico de capital",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "CNY cae presionado por demanda de salida de capitales; Hang Seng sufre pánico vendedor; oro sube por flight-to-safety",
+    "despues": "Bonos chinos presionan (spreads wide); mercados emergentes contagio si China es proxy; DXY sube por demanda de USD; renta fija global se beneficia (safe-haven)",
+    "escenarios": "Traders vigilan: (1) dimensión real del gravamen y cobertura, (2) volumen de liquidaciones forzadas, (3) medidas de control de capital que China podría anunciar (restricciones a salida), (4) contagio a otros mercados emergentes, (5) impacto en IPOs chinas offshore",
+    "riesgos": "Titular describe como 'sorpresa' y 'shock'; riesgo de sobrereacción inicial; falta claridad si es confirmado oficial o rumor de media estatal china"
+   },
+   "macro": {
+    "dolar": "alcista (flight-to-safety, demanda USD)",
+    "oro": "alcista (risk-off, demanda de cobertura)",
+    "nasdaq": "potencial presión (contagio riesgo China, tech china)",
+    "dow": "neutral a bajista (contagio selectivo)",
+    "sp500": "presión moderada (riesgo emergentes)",
+    "bitcoin": "incierto (varía con interpretación de control capital)",
+    "ethereum": "neutral",
+    "bonos": "alcistas (rally de seguridad, caída de tasas)",
+    "petroleo": "presión (demanda China en riesgo)"
+   },
+   "updates": []
+  },
+  {
+   "id": 920806490,
+   "fecha": "2026-08-04T22:47:49.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/04/lucid-group-lcid-earnings-q2-2026.html",
+   "via": "CNBC",
+   "original": "Lucid begins &apos;operational reset&apos; as CEO says EV maker will delay midsize vehicle",
+   "titulo": "Lucid retrasa vehículo de tamaño medio tras 'reset operacional' bajo nuevo CEO",
+   "resumen": "Lucid Motors inicia un proceso de 'reset operacional' y anuncia el retraso en el lanzamiento de su vehículo de tamaño medio, según comunicó su CEO. La medida refleja ajustes estratégicos en la empresa de vehículos eléctricos de lujo, enfrentada a presiones de capital y competencia creciente en el segmento EV.",
+   "analisis": {
+    "porque": "Lucid es referente de EV de lujo con respaldo estatal (PIF Arabia Saudí); retrasos de producto impactan valoración, flujo de caja y confianza inversora en el sector EV",
+    "queOcurrio": "CEO anuncia reorganización operacional e impone demora en lanzamiento de vehículo mediano, señal de apretones financieros y reposicionamiento estratégico",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "LCID",
+    "NASDAQ",
+    "EV sector",
+    "Tesla"
+   ],
+   "sesgos": [
+    {
+     "activo": "LCID",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tesla",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "lucid-motors",
+    "vehículos-eléctricos",
+    "retraso-producto",
+    "capital-riesgo"
+   ],
+   "tgText": "🚗 Lucid retrasa vehículo mediano. CEO inicia 'reset operacional' en fabricante EV. Presiones de capital y competencia pesan en la estrategia del grupo respaldado por Arabia Saudí.",
+   "xText": "Lucid inicia 'reset operacional' y retrasa vehículo de tamaño medio. CEO reconoce desafíos estratégicos en fabricante EV de lujo. LCID bajo presión. $LCID",
+   "discordText": "**Lucid Motors: Reset operacional y retrasos**\n• CEO anuncia reorganización estratégica\n• Demora en lanzamiento de vehículo mediano\n• Refleja apretones de capital en EV de lujo",
+   "pushText": "Lucid retrasa vehículo mediano tras reset operacional",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "LCID caería por señal de problemas operacionales y menor dinamismo de ingresos",
+    "despues": "Otros EV de lujo (Tesla, Rivian) y ETFs de EV podrían ver presión selectiva si se interpreta como crisis de sector",
+    "escenarios": "Traders vigilarán: (1) magnitud del retraso, (2) impacto en burn-rate de caja, (3) si requiere capital nuevo del PIF, (4) comparativa vs Tesla en eficiencia operacional",
+    "riesgos": "El titular no especifica cuánto se retrasa ni detalle del reset; riesgo de interpretación excesiva"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "34011",
    "fecha": "2026-08-04T22:02:01+00:00",
@@ -7197,377 +7550,6 @@
     "dolar": "neutral a ligeramente alcista"
    },
    "updates": []
-  },
-  {
-   "id": "33800",
-   "fecha": "2026-07-31T12:38:49+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33800",
-   "via": "DeItaone",
-   "original": "TRUMP WARNS ISRAEL ON GAZA DEAL A U.S. official said President Donald Trump would be \"very disappointed\" if Israel fails to honor the agreed 20-point Gaza peace plan. The U.S. expects Israel to comply, while Hamas' disarmament is expected to be refined over the coming weeks, with progress anticipated within one to two months despite opposition from members of Israel's governing coalition.",
-   "titulo": "Trump advierte a Israel sobre cumplimiento del plan de paz en Gaza",
-   "resumen": "Un funcionario estadounidense declaró que el Presidente Donald Trump estaría \"muy decepcionado\" si Israel incumple el plan de paz acordado de 20 puntos en Gaza. EE.UU. espera cumplimiento de Israel, mientras desarmamento de Hamas será refinado en próximas semanas con progreso esperado en uno o dos meses, pese a oposición de miembros de la coalición de gobierno israelí.",
-   "analisis": {
-    "porque": "Volatilidad geopolítica afecta precios de energía, valuaciones de empresas defensoras, safe-haven assets (oro, bonos), y mercados emergentes. Advertencia Trump a Israel sugiere presión política US que podría escalar riesgo de ruptura de acuerdo.",
-    "queOcurrio": "Trump amenaza simbólicamente a Israel por posible incumplimiento del plan de paz Gaza. Funcionario US indicó timeline de 1-2 meses para progreso en desarmamiento de Hamas. Oposición política israelí persiste.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos USA",
-    "S&P500",
-    "Emergentes"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "israel-gaza",
-    "trump",
-    "geopolitica",
-    "medio-oriente",
-    "riesgos"
-   ],
-   "tgText": "Trump advierte a Israel sobre plan de paz Gaza. Funcionario US: muy decepcionado si hay incumplimiento. Desarmamiento Hamas en 1-2 meses. Coalición israelí se opone. Riesgo de ruptura.",
-   "xText": "Trump presiona a Israel: \"muy decepcionado\" si incumple acuerdo Gaza. Progreso en desarmamiento Hamas esperado en 1-2 meses. Oposición política israelí persiste.",
-   "discordText": "**Trump presiona a Israel en Gaza**\n• Amenaza con decepción si incumple plan\n• Desarmamiento Hamas en 1-2 meses esperado\n• Coalición israelí se opone\n• Riesgo de ruptura del acuerdo\n• Volatilidad geopolítica continúa",
-   "pushText": "Trump advierte a Israel sobre cumplimiento del acuerdo de paz en Gaza",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo sube ligeramente (prima de riesgo geopolítico si acuerdo se rompe)",
-    "despues": "Oro sube (safe-haven), S&P500 baja si riesgo de escalada percibido, emergentes caen (risk-off)",
-    "escenarios": "Traders vigilarán comunicaciones futuras de Trump y gobiernos de Israel/Hamas. Cualquier signo de colapso del acuerdo podría disparar petróleo a $90+. Hamas podría rechazar términos de desarmamiento.",
-    "riesgos": "Declaración de funcionario US, no confirmación de Trump directo. Presión US podría ser táctica negociadora, no amenaza real. Timeline de 1-2 meses es estimado, sujeto a cambios rápidos."
-   },
-   "macro": {
-    "petroleo": "alcista",
-    "oro": "alcista",
-    "sp500": "bajista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-07-31T16:12:50+00:00",
-     "id": "33818",
-     "texto": "El presidente Trump caracterizó un acuerdo entre Israel y Hamas como «gran paso» para la región de Oriente Medio. Noticia supone continuidad de la advertencia previa del 30 de julio sobre cumplimiento del plan de paz en Gaza, ahora con tono positivo sobre progreso de negociaciones.",
-     "tgUrl": "https://t.me/walterbloomberg/33818"
-    }
-   ],
-   "actualizado": "2026-07-31T16:12:50+00:00"
-  },
-  {
-   "id": "33816",
-   "fecha": "2026-07-31T16:11:37+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33816",
-   "via": "DeItaone",
-   "original": "TRUMP: IRAN ARE BEING DECIMATED",
-   "titulo": "Trump: Irán está siendo «decimado»",
-   "resumen": "El presidente Trump utilizó lenguaje de intensidad extrema para describir la situación de Irán, caracterizándola como «decimación». Declaración coherente con serie de anuncios sobre presión militar y financiera contra el país en últimas horas.",
-   "analisis": {
-    "porque": "Retórica escalada de máxima tensión geopolítica. Señal de intención política de presión sostenida. Impacta percepción de riesgo en Oriente Medio, precios de petróleo, y activos defensivos.",
-    "queOcurrio": "Trump emitió declaración de máxima dureza describiendo situación de Irán como «decimación», sin especificar áreas concretas de impacto.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "S&P 500",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Trump",
-    "Retórica",
-    "Tensión",
-    "Geopolítica"
-   ],
-   "tgText": "🔴 Trump: Irán está siendo «decimado». Retórica escalada tras serie de medidas de presión militar y financiera.",
-   "xText": "Trump: Irán está siendo «decimado». Máxima intensidad retórica en tensión geopolítica de Oriente Medio.",
-   "discordText": "**Trump intensifica retórica contra Irán**\n• Declara que Irán está siendo «decimado»\n• Lenguaje de máxima tensión geopolítica",
-   "pushText": "Trump: Irán siendo «decimado»",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Petróleo: sesgo bajista si mercado interpreta como desinflamiento de amenaza",
-    "despues": "Oro, bonos defensivos",
-    "escenarios": "Traders vigilan: (1) Verificación de escalada real vs. retórica, (2) Reacción inmediata de Irán, (3) Volatilidad de corto plazo en commodities",
-    "riesgos": "Retórica puede no traducirse en acción, reversión rápida si cambia narrativa, riesgo de mal interpretación de intenciones reales"
-   },
-   "macro": {
-    "petroleo": "bajista corto plazo por descenso de prima de riesgo"
-   },
-   "updates": []
-  },
-  {
-   "id": "33815",
-   "fecha": "2026-07-31T16:06:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33815",
-   "via": "DeItaone",
-   "original": "U.S. TREASURY CHIEF ON IRAN: WE ARE SEARCHING FOR THEIR ASSETS ALL AROUND THE WORLD U.S. TREASURY CHIEF ON IRAN: MONEY WILL GO TO IRANIAN PEOPLE",
-   "titulo": "Tesorería USA persigue activos iraníes a nivel global; fondos destinados al pueblo",
-   "resumen": "La Secretaría del Tesoro estadounidense declaró estar en búsqueda de activos iraníes alrededor del mundo, con intención de que los fondos recuperados se destinen al pueblo iraní. La declaración, emitida en contexto de sanciones intensificadas, subraya expansión de medidas financieras contra Teherán.",
-   "analisis": {
-    "porque": "Amplía arsenal de sanciones financieras contra Irán. Impacta inversión global en activos relacionados con Irán, operaciones bancarias internacionales de entidades iraníes, y prima de riesgo sobre activos de mercados emergentes.",
-    "queOcurrio": "Funcionario de Tesoro confirmó búsqueda activa de activos iraníes a escala mundial y propósito de repatriación de fondos al pueblo iraní como parte de política de sanciones.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "Oro",
-    "Mercados emergentes",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Sanciones",
-    "Tesoro USA",
-    "Activos congelados",
-    "Política exterior"
-   ],
-   "tgText": "📋 Tesoro USA intensifica búsqueda de activos iraníes a nivel global. Fondos recuperados se destinarían al pueblo iraní.",
-   "xText": "Tesoro USA: búsqueda activa de activos iraníes mundialmente. Fondos confiscados destinados al pueblo iraní.",
-   "discordText": "**Tesoro USA amplía sanciones contra Irán**\n• Persecución de activos a escala global\n• Fondos para repatriación al pueblo iraní",
-   "pushText": "Tesoro USA busca activos iraníes globalmente",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "DXY: alcista marginal por fortalecimiento de control financiero estadounidense",
-    "despues": "Bonos iraníes (acceso limitado), activos de mercados emergentes susceptibles a congelamiento",
-    "escenarios": "Traders vigilan: (1) Efectividad de persecución de activos, (2) Represalias comerciales de Irán o aliados, (3) Impacto en inversión en Oriente Medio más amplio",
-    "riesgos": "Medidas recíprocas de Irán, congelamiento impredecible de activos particulares, impacto limitado si activos ya congelados previamente"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33813",
-   "fecha": "2026-07-31T15:56:20+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33813",
-   "via": "DeItaone",
-   "original": "TRUMP: IRAN'S MISSILE CAPABILITY WEAKENED President Donald Trump said Iran still has \"a few missiles,\" but far fewer than it did four to five months ago. Trump added that Iran's missile production capabilities have almost completely disappeared, signaling continued pressure on the country's military capabilities.",
-   "titulo": "Trump: capacidad de misiles de Irán se ha debilitado significativamente",
-   "resumen": "El presidente Trump afirmó que Irán posee ahora «pocos misiles» en comparación con hace 4-5 meses, señalando que sus capacidades de producción de misiles han «casi desaparecido completamente». La declaración refleja presión militar sostenida sobre el país y marca una escalada en la postura de política exterior estadounidense hacia Teherán.",
-   "analisis": {
-    "porque": "Impacta mercados de energía (Irán = productor OPEP), geopolítica de Oriente Medio, y precios de petróleo. Señales de tensión militar sostenida afectan prima de riesgo en commodities y activos defensivos.",
-    "queOcurrio": "Trump declaró públicamente que la capacidad militar iraní de misiles ha menguado drásticamente en los últimos 4-5 meses, con producción casi eliminada.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "S&P 500",
-    "DXY",
-    "Bonos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Trump",
-    "Misiles",
-    "Oriente Medio",
-    "Geopolítica",
-    "Petróleo",
-    "Tensión militar"
-   ],
-   "tgText": "🔴 Trump afirma que capacidad de misiles de Irán se ha debilitado «casi completamente» en últimos 4-5 meses. Presión militar sostenida sobre Teherán escalala tensión en Oriente Medio.",
-   "xText": "Trump: Irán ha perdido casi completamente su capacidad de producción de misiles en últimos 4-5 meses. Señal de escalada militar sostenida en Oriente Medio.",
-   "discordText": "**Irán: Declive militar según Trump**\n• Capacidad de misiles reducida drásticamente\n• Producción casi eliminada (últimos 4-5 meses)\n• Presión militar estadounidense en Oriente Medio",
-   "pushText": "Trump: capacidad de misiles de Irán casi desaparecida",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent: reacción bajista esperada por reducción de riesgo geopolítico en Ormuz",
-    "despues": "Oro (activo seguro), bonos estadounidenses (busca de seguridad si se intensifica conflicto), DXY (fortaleza del dólar)",
-    "escenarios": "Traders vigilan: (1) Confirmación de presión militar sostenida vs. bluff retórico, (2) Respuesta de Irán y grupos aliados, (3) Impacto en flujos de petróleo del Golfo Pérsico, (4) Riesgo de represalia asimétrica",
-    "riesgos": "Riesgo de escalada inesperada, respuesta iraní no-convencional, verificación independiente de capacidades militares no disponible en titular"
-   },
-   "macro": {
-    "petroleo": "bajista corto plazo por reducción de prima de riesgo",
-    "oro": "alcista por incertidumbre geopolítica residual",
-    "dolar": "neutral a alcista (seguridad relativa)",
-    "nasdaq": "alcista por alivio de riesgo",
-    "sp500": "alcista por alivio de riesgo"
-   },
-   "updates": []
-  },
-  {
-   "id": "33811",
-   "fecha": "2026-07-31T14:40:48+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33811",
-   "via": "DeItaone",
-   "original": "CITI SEES BUY-THE-DIP SHIFT IN KOSPI Citi said investors have shifted to buying Kospi pullbacks, citing record foreign inflows, improving pension fund demand and tighter retail trading rules. The bank maintained its 10,000 Kospi target, saying solid memory-chip fundamentals, attractive valuations and potential government support should continue to underpin the market.",
-   "titulo": "Citi mantiene objetivo Kospi 10.000; fondos extranjeros crean nuevo soporte",
-   "resumen": "Citi señala que inversores han pasado a comprar retrocesos en Kospi coreano, citando flujos récord de fondos extranjeros, demanda mejorada de fondos de pensiones y nuevas restricciones al trading retail. Mantiene target 10.000 por fundamentales de chips y potencial apoyo estatal.",
-   "analisis": {
-    "porque": "Flujos extranjeros récord y cambios regulatorios en Corea crean soporte estructural; oportunidad de carry/rotación hacia mercados emergentes asiáticos; señal de confianza en semiconductores",
-    "queOcurrio": "Citi valida compra de pullbacks en Kospi por flujos extranjeros, mejora de pensiones y restricciones retail; reitera 10.000",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "KOSPI",
-    "SK Hynix",
-    "Samsung",
-    "Semiconductores EM",
-    "KRW"
-   ],
-   "sesgos": [
-    {
-     "activo": "KOSPI",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Semiconductores KR",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "kospi-korea",
-    "foreign-inflows",
-    "semiconductores-asia",
-    "sk-hynix",
-    "samsung",
-    "carry-trade"
-   ],
-   "tgText": "📈 Citi: Kospi atrae flujos extranjeros récord; valida compra de pullbacks. Target 10.000 por fundamentals chips + apoyo estatal. Rally semiconductor sigue en Asia.",
-   "xText": "📈 Citi mantiene Kospi 10.000. Flujos extranjeros récord + demanda pensiones crean soporte. Chips fuertes; restricciones retail limpian mercado.",
-   "discordText": "**KOSPI: FLUJOS EXTRANJEROS RÉCORD**\n• Citi mantiene target 10.000\n• Inversores compran pullbacks\n• Fondos extranjeros en máximos\n• Demanda pensiones mejora\n• Semiconductores soportados",
-   "pushText": "Kospi atrae flujos récord; Citi mantiene 10.000 por semiconductores",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "KOSPI sube (flujos extranjeros); SK Hynix y Samsung se aprecian (cartera coreana pesada en semis); KRW puede fortalecerse (inflows extranjeros)",
-    "despues": "Semiconductores globales (NVDA, AMD, ASML) podrían beneficiarse de sentimiento positivo; mercados EM rotación hacia Asia si patrón se replica; carry trade en KRW gana tracción",
-    "escenarios": "Traders vigilarán: niveles técnicos Kospi (9.800 soporte), próximas ganancias SK/Samsung (Q3), volatilidad geopolítica KR-NK, cambios en restricciones retail",
-    "riesgos": "Reversión de flujos si Fed sigue hawkish (atractivo de activos USA); debilidad de chips globales podría presionar Kospi; riesgo geopolítico península coreana"
-   },
-   "macro": {
-    "kospi": "alcista",
-    "semiconductores": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33779",
-   "fecha": "2026-07-31T08:33:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33779",
-   "via": "DeItaone",
-   "original": "$AMZN - BERNSTEIN RAISES AMAZON PT ON AWS, AI MOMENTUM Bernstein raised its Amazon price target to $320 from $315, maintaining an Outperform rating. The firm cited stronger-than-expected 37% AWS revenue growth, a $25B AI revenue run rate, expanding AI chip business and clear returns on AI investment. Bernstein also highlighted Amazon's higher 2026 capex of $220B, backed by strong demand and attrac",
-   "titulo": "Bernstein sube objetivo de Amazon a $320; valida tasa de ingresos IA de $25B",
-   "resumen": "Bernstein elevó objetivo de Amazon a $320 desde $315, manteniendo calificación de Outperform. La firma destacó crecimiento de AWS del 37% superior a estimaciones, tasa de ingresos IA de $25B, expansión del negocio de chips IA y claridad en retornos de inversión. Respalda plan de capex 2026 de $220B con demanda fuerte y periodos de recuperación atractivos.",
-   "analisis": {
-    "porque": "Segunda validación alcista en horas de dos analistas tier-1; documenta tracción concreta en $25B IA run-rate; confirma thesis de ROI positivo en capex masivo",
-    "queOcurrio": "Bernstein revisa objetivo al alza $5 tras analizar reportes de AWS, IA chip business y periodos de payback de capex",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bernstein Research vía Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "AMZN",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Amazon",
-    "Bernstein",
-    "AWS",
-    "IA",
-    "capex",
-    "ROI"
-   ],
-   "tgText": "📊 Bernstein sube objetivo de Amazon a $320. Valida crecimiento AWS del 37% y tasa de ingresos IA de $25B. Rating Outperform. Capex $220B con ROI claro.",
-   "xText": "$AMZN: Bernstein alza PT a $320. AWS +37%, revenue IA $25B validado. Capex 2026 de $220B con payback atractivo. Rating: Outperform. #AI",
-   "discordText": "**AMZN: Bernstein sube objetivo a $320**\n• PT: $315 → $320\n• Tracción: AWS +37%, IA revenue run-rate $25B\n• Capex 2026: $220B con retornos claros\n• Rating: Outperform",
-   "pushText": "Bernstein sube objetivo de Amazon a $320; valida $25B IA run-rate",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "AMZN mantiene sesgo alcista acumulativo; segundo analista en horas refuerza narrativa; impulso acumulativo a NASDAQ",
-    "despues": "Refuerzo de rotación AMZN alcista vs AAPL bajista en mega-caps; posible comparación en reportes de hedge funds",
-    "escenarios": "Traders vigilarán si capex guidance de $220B se mantiene en guidance Q4; si márgenes operativos se sostienen con capex creciente; convergencia de objetivos de analistas alrededor de $315-375",
-    "riesgos": "Riesgo de que $25B IA run-rate sea sobrestimado o incierto en cuanto a sostenibilidad; cambio en ciclo capex si tasas suben; competencia en infraestructura IA (Nvidia, Oracle Cloud)"
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-07-31T14:40:14+00:00",
-     "id": "33810",
-     "texto": "Acciones de Amazon suben 15,2%, su mayor ganancia porcentual en 14 años. Consolida movimiento alcista tras validación de Bernstein sobre liderazgo en IA/nube ($25B en tasa de ingresos IA) y revaloración del potencial de monetización en nube.",
-     "tgUrl": "https://t.me/walterbloomberg/33810"
-    }
-   ],
-   "actualizado": "2026-07-31T14:40:14+00:00"
   }
  ],
  "rssVistos": [
@@ -7834,6 +7816,16 @@
   "https://www.cnbc.com/2026/08/03/can-palantir-pull-off-a-microsoft-style-comeback-heres-what-options-say.html",
   "https://www.cnbc.com/2026/08/03/a-trio-of-positive-developments-has-boeing-shares-soaring.html",
   "https://www.cnbc.com/2026/08/04/hsbc-profit-beats-estimates-higher-net-interest-income-fees.html",
-  "https://www.cnbc.com/2026/08/04/saudi-aramco-earnings-2q-oil-iran-war.html"
+  "https://www.cnbc.com/2026/08/04/saudi-aramco-earnings-2q-oil-iran-war.html",
+  "https://www.cnbc.com/2026/08/04/china-apple-india-tata-electronics.html",
+  "https://www.cnbc.com/2026/08/04/lucid-group-lcid-earnings-q2-2026.html",
+  "https://www.cnbc.com/2026/08/05/europe-heatwave-travel-demand-asia.html",
+  "https://www.cnbc.com/2026/08/05/wealthy-chinese-race-for-tax-advice-as-beijing-targets-offshore-trusts.html",
+  "https://www.cnbc.com/2026/08/04/spacex-spcx-earnings-live-updates-q2-2026.html",
+  "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html",
+  "https://www.cnbc.com/2026/08/05/softbank-samsung-sk-hynix-samsung-tech-rally.html",
+  "https://www.cnbc.com/2026/08/04/spacex-ai-spending-unnerves-wall-street-despite-promising-quick-payoff.html",
+  "https://www.cnbc.com/2026/08/04/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/08/04/gm-chinese-automaker-extend-tie-up-amid-geopolitical-tensions-with-us.html"
  ]
 }
