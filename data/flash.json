@@ -1,7 +1,180 @@
 {
  "lastId": 34011,
- "actualizado": "2026-08-05T02:47:00.662Z",
+ "actualizado": "2026-08-05T05:42:01.659Z",
  "items": [
+  {
+   "id": "921182782",
+   "fecha": "2026-08-05T05:27:54.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/india-rbi-interest-rate-inflation-iran-war.html",
+   "via": "CNBC",
+   "original": "India&apos;s central bank keeps benchmark rates steady, cites &apos;moderate&apos; core inflation",
+   "titulo": "Banco Central de India mantiene tasas; cita inflación 'moderada' en núcleo",
+   "resumen": "El Reserve Bank of India (RBI) mantuvo su tasa de política monetaria en el último anuncio y citó como justificación una inflación 'moderada' en el núcleo. El titular no especifica la tasa exacta, próximas decisiones, ni forward guidance. Postura dovish relativa respecto a dudas globales.",
+   "analisis": {
+    "porque": "Decisiones de bancos centrales de economías emergentes afectan carry trades, flujos de capital a mercados emergentes, y valoración de divisas locales versus USD.",
+    "queOcurrio": "RBI decidió mantener tasas sin cambios, citando inflación de núcleo moderada como razón.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "INR",
+    "Emergentes",
+    "Bonos India",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "INR",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Emergentes",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "rbi",
+    "india",
+    "politica-monetaria",
+    "tasas",
+    "inflacion"
+   ],
+   "tgText": "🇮🇳 RBI mantiene tasas argumentando inflación 'moderada' en núcleo. Postura dovish relativa en mercados emergentes.",
+   "xText": "India: RBI hold en tasas, citando inflación moderada. Postura dovish para carry trades y flujos emergentes.",
+   "discordText": "**RBI mantiene tasas**\n• Decision: sin cambios\n• Justificación: inflación núcleo moderada\n• Impacto: neutral a alcista para emergentes\n• Vigilan: carry trades INR",
+   "pushText": "RBI mantiene tasas, cita inflación moderada",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "INR reacciona con estabilidad o ligera apreciación; carry trades se sienten apoyados",
+    "despues": "Bonos emergentes y fondos de renta variable India-focus pueden experimentar entrada de capital",
+    "escenarios": "Traders monitorean: próxima decisión, trend de inflación real vs. narrativa RBI, compresión de spreads USD-INR",
+    "riesgos": "Falta forward guidance; narrativa de inflación 'moderada' es subjetiva. Global rate expectations podrían cambiar y presionar INR."
+   },
+   "macro": {
+    "dolar": "neutral a presión",
+    "oro": "neutral",
+    "nasdaq": "neutral",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "neutral",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "986233766",
+   "fecha": "2026-08-05T05:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/the-stocks-goldman-gives-more-than-100percent-upside-.html",
+   "via": "CNBC",
+   "original": "The stocks Goldman gives more than 100% upside — with one as high as 168%",
+   "titulo": "Goldman Sachs identifica acciones con upside superior a 100%, una hasta 168%",
+   "resumen": "Goldman Sachs publicó una lista de acciones que ofrece, según su análisis, retornos superiores a 100% en el mediano plazo, con al menos una ofreciendo potencial de hasta 168%. El titular no identifica empresas específicas ni criterios de selección. Refleja postura constructiva del banco sobre mercados de renta variable.",
+   "analisis": {
+    "porque": "Reporte de grandes bancos de inversión sobre potencial alcista de acciones suele generar interés institucional y retail; señala confianza en rally de equities.",
+    "queOcurrio": "Goldman Sachs emitió research identificando múltiples acciones con potencial de retorno muy alto (>100%), incluyendo una con 168%.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Acciones USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Equities USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "goldman-sachs",
+    "stock-picks",
+    "upside-potential",
+    "research",
+    "equities"
+   ],
+   "tgText": "📈 Goldman Sachs: acciones con potencial >100% upside; una con 168%. Falta detalle de tickers y criterios.",
+   "xText": "Goldman Sachs lista acciones con >100% upside potential, incluyendo una con 168%. Postura constructiva en equities.",
+   "discordText": "**Goldman: Upside en acciones**\n• Multiple picks con >100% potencial\n• Una llega a 168%\n• Señal alcista del banco\n• Tickers no especificados en titular",
+   "pushText": "Goldman identifica acciones con potencial de 100%+ upside",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Retail investors y fondos pequeños pueden buscar cobertura del report en buscadores; demanda selectiva de picks",
+    "despues": "Si identidades se filtran/publican, esas acciones podrían experimentar pump; momentum traders atentos",
+    "escenarios": "Traders atienden: credibilidad de picks histórica de Goldman, sector overlap, si hay sesgo hacia concentración (tech vs. cyclicals)",
+    "riesgos": "Reporte genérico sin nombres específicos; falta validación de criterios. Histórico de predicciones de large caps es mixto."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "968121973",
+   "fecha": "2026-08-05T04:43:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/faa-says-it-is-investigating-trump-helicopter-safety-incident-in-washington.html",
+   "via": "CNBC",
+   "original": "FAA says it is investigating Trump helicopter safety incident in Washington",
+   "titulo": "FAA investiga incidente de seguridad en helicóptero de Trump en Washington",
+   "resumen": "La FAA anunció una investigación sobre un incidente de seguridad en un helicóptero en Washington D.C. vinculado a Trump. El titular no proporciona detalles del incidente, severidad, o implicaciones operativas. Información preliminar sin resolución.",
+   "analisis": {
+    "porque": "Incidentes de seguridad presidencial pueden afectar confianza institucional y, en contextos políticos tensos, generar volatilidad en bonos y derivados de riesgo geopolítico.",
+    "queOcurrio": "FAA inició investigación sobre incidente de seguridad en helicóptero presidencial en Washington.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Bonos USA",
+    "DXY",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Geopolítica",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "trump",
+    "faa",
+    "seguridad",
+    "helicoptero",
+    "investigacion"
+   ],
+   "tgText": "🔍 FAA investiga incidente de seguridad en helicóptero presidencial en Washington. Detalles aún no especificados.",
+   "xText": "FAA abre investigación sobre incidente de seguridad en helicóptero presidencial. Sin detalles de severidad.",
+   "discordText": "**FAA investiga helicóptero presidencial**\n• Incidente en Washington D.C.\n• Investigación de seguridad abierta\n• Detalles limitados\n• Impacto mercado potencial limitado",
+   "pushText": "FAA investiga incidente de seguridad en helicóptero presidencial",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "Bonos USA pueden experimentar micro-compra defensiva si escalara (impacto bajo inicial)",
+    "despues": "VIX y spreads de credit si se revela severidad; mercado de derivados vigila contexto político",
+    "escenarios": "Traders atienden: comunicado oficial FAA/Casa Blanca, comparativo con incidentes históricos, narrativa mediática sobre gobernanza",
+    "riesgos": "Titular es noticia de seguridad sin contexto financiero directo. Riesgo de escalada por politización; falta información técnica."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 969303742,
    "fecha": "2026-08-05T01:54:17.000Z",
@@ -356,6 +529,74 @@
    "updates": []
   },
   {
+   "id": "33992",
+   "fecha": "2026-08-04T20:18:55+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33992",
+   "via": "DeItaone",
+   "original": "$AMD - AMD BEATS, STRONG Q3 OUTLOOK DRIVEN BY DATA CENTER Results 🔸 Adj. EPS: $1.66 vs. $1.62 est. 🔸 Revenue: $11.54B vs. $11.28B est. 🔸 Data Center Revenue: $6.7B Guidance 🔸 Q3 Revenue: ~$13.0B ± $300M vs. $12.52B est. 🔸 Q3 Non-GAAP Gross Margin: ~56% 🔸 Data Center: Expects sales growth to accelerate in H2 2026",
+   "titulo": "AMD supera ganancias; guidance Q3 fuerte impulsado por data center",
+   "resumen": "AMD reportó EPS ajustado de $1.66 vs $1.62 estimado y revenue de $11.54B vs $11.28B consenso. Q3 guidance aproximadamente $13.0B ±$300M vs expectativa $12.52B. Margen bruto no-GAAP Q3 ~56%. Segmento Data Center anticipa aceleración de ventas en H2 2026 con revenue $6.7B.",
+   "analisis": {
+    "porque": "AMD es exponente clave en demanda de IA/data center. Guidance alcista para Q3 (+3.8% respecto consenso) con expansión de márgenes señala confianza en ciclo de capex de clientes cloud. Data Center es 58% del mix de revenue.",
+    "queOcurrio": "AMD divulgó resultados con beat modesto en EPS (+0.25%) y revenue (+2.3%). Guidance Q3 eleva expectativas con margen bruto 56% (expansión vs T1 típicamente 52-54%).",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "AMD",
+    "NVDA",
+    "Nasdaq",
+    "S&P500",
+    "Semiconductores"
+   ],
+   "sesgos": [
+    {
+     "activo": "AMD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NVDA",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "AMD",
+    "data-center",
+    "earnings-beat",
+    "margin-expansion",
+    "IA-chips"
+   ],
+   "tgText": "💹 AMD: EPS $1.66 vs $1.62 est., Revenue $11.54B vs $11.28B. Q3 guide $13.0B±$300M. Márgenes ~56%. Data Center acelera H2 2026.",
+   "xText": "AMD bate Q2: $1.66 EPS, $11.54B revenue. Q3 outlook $13B+ señala aceleración data center. Márgenes brutos 56% sostienen ciclo IA. $AMD",
+   "discordText": "**AMD Earnings**\n• EPS Adj: $1.66 vs $1.62 est.\n• Revenue: $11.54B vs $11.28B\n• Q3 Guide: ~$13.0B ±$300M\n• Gross Margin: ~56% | Data Center accelerating H2",
+   "pushText": "AMD bate con guidance Q3 fuerte; data center acelera en H2 2026",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "AMD: beat modesto pero guidance anticipado de aceleración reafirma ciclo de IA sin saturación; acción suele reaccionar +2-3% intraday. Semiconductores sector-wide refuerzan.",
+    "despues": "NVDA: mercado cotejan si AMD gana cuota data center o si ambos crecen con pastel en expansión. Nasdaq/S&P500 índices tech se refuerzan por confirmación de demanda.",
+    "escenarios": "Traders vigilan: (1) si margen bruto 56% es nivel sostenible (presión de ASP vs volumen), (2) detalles data center vs otros segmentos, (3) timing realización backlog, (4) competencia NVDA pricing power.",
+    "riesgos": "Guidance Q3 es forward-looking; si clientes cloud reducen capex por preocupaciones valuación o tasas, realización es riesgo. Márgenes 56% son récord y pueden ser insostenibles si commoditización acelera."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-04T22:09:17.000Z",
+     "id": "927510497",
+     "texto": "AMD reportó crecimiento de ingresos del 50% en el trimestre, con ventas de data center que se duplicaron. A pesar del desempeño operativo fuerte, la acción cayó en operaciones after-hours. El titular no especifica las razones de la caída ni menciona guidance de Q3.",
+     "tgUrl": "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html"
+    }
+   ],
+   "actualizado": "2026-08-04T22:09:17.000Z"
+  },
+  {
    "id": "34011",
    "fecha": "2026-08-04T22:02:01+00:00",
    "tgUrl": "https://t.me/walterbloomberg/34011",
@@ -459,6 +700,65 @@
    "pushText": null,
    "importancia": 2,
    "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "988619268",
+   "fecha": "2026-08-04T21:39:30.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/04/michael-burry-bets-against-rally-we-are-near-a-major-top.html",
+   "via": "CNBC",
+   "original": "Michael Burry bets against rally: &apos;We are near a major top, and possible a 1987-type fall&apos;",
+   "titulo": "Michael Burry advierte de 'top mayor' y caída tipo 1987 en mercados",
+   "resumen": "El inversor Michael Burry, conocido por anticipar la crisis de 2008, publicó en redes que los mercados están cerca de un máximo importante y podrían experimentar una caída similar a la de 1987. No especifica timeline ni activos concretos. Su historial de predicciones genera atención, pero el titular carece de datos técnicos o argumentos fundamentales detallados.",
+   "analisis": {
+    "porque": "Las advertencias de grandes inversores sobre correcciones o crashes afectan el apetito de riesgo y pueden acelerar toma de ganancias en rallies alcistas. Burry tiene credibilidad mediática tras 2008.",
+    "queOcurrio": "Burry emitió una advertencia pública sobre un posible crash de magnitud 1987, citando cercanía a 'major top'.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Dow Jones",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "michael-burry",
+    "crash-mercado",
+    "corrección",
+    "1987",
+    "bear-case"
+   ],
+   "tgText": "⚠️ Michael Burry advierte sobre máximo importante en mercados y posible caída tipo 1987. Sin detalles técnicos o timeline específico.",
+   "xText": "Burry alerta: 'Estamos cerca de un major top y posiblemente una caída tipo 1987'. Genera atención pero falta contexto técnico.",
+   "discordText": "**Michael Burry en alerta**\n• Advierte sobre máximo importante en mercados\n• Compara riesgo con crash de 1987\n• Sin timeline o activos específicos\n• Genera reacción en apetito de riesgo",
+   "pushText": "Burry advierte sobre posible crash tipo 1987 en mercados",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "S&P500 y NASDAQ tienden a revisar stops y liquidar posiciones alcistas; VIX se expande por cobertura de riesgo",
+    "despues": "Bonos (inversión defensiva), dólar (flight-to-safety), y acciones tech-pesadas si hay rotación",
+    "escenarios": "Traders monitorean: confirmación técnica de máximos, flujos de cobertura con puts, y consenso de analistas sobre valoraciones",
+    "riesgos": "Burry es predictor serial; muchas advertencias no se materializan en timeline esperado. Falta rigor técnico en el titular."
+   },
    "macro": null,
    "updates": []
   },
@@ -929,66 +1229,6 @@
     }
    ],
    "actualizado": "2026-08-04T20:37:47+00:00"
-  },
-  {
-   "id": "33992",
-   "fecha": "2026-08-04T20:18:55+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33992",
-   "via": "DeItaone",
-   "original": "$AMD - AMD BEATS, STRONG Q3 OUTLOOK DRIVEN BY DATA CENTER Results 🔸 Adj. EPS: $1.66 vs. $1.62 est. 🔸 Revenue: $11.54B vs. $11.28B est. 🔸 Data Center Revenue: $6.7B Guidance 🔸 Q3 Revenue: ~$13.0B ± $300M vs. $12.52B est. 🔸 Q3 Non-GAAP Gross Margin: ~56% 🔸 Data Center: Expects sales growth to accelerate in H2 2026",
-   "titulo": "AMD supera ganancias; guidance Q3 fuerte impulsado por data center",
-   "resumen": "AMD reportó EPS ajustado de $1.66 vs $1.62 estimado y revenue de $11.54B vs $11.28B consenso. Q3 guidance aproximadamente $13.0B ±$300M vs expectativa $12.52B. Margen bruto no-GAAP Q3 ~56%. Segmento Data Center anticipa aceleración de ventas en H2 2026 con revenue $6.7B.",
-   "analisis": {
-    "porque": "AMD es exponente clave en demanda de IA/data center. Guidance alcista para Q3 (+3.8% respecto consenso) con expansión de márgenes señala confianza en ciclo de capex de clientes cloud. Data Center es 58% del mix de revenue.",
-    "queOcurrio": "AMD divulgó resultados con beat modesto en EPS (+0.25%) y revenue (+2.3%). Guidance Q3 eleva expectativas con margen bruto 56% (expansión vs T1 típicamente 52-54%).",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AMD",
-    "NVDA",
-    "Nasdaq",
-    "S&P500",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMD",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NVDA",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "AMD",
-    "data-center",
-    "earnings-beat",
-    "margin-expansion",
-    "IA-chips"
-   ],
-   "tgText": "💹 AMD: EPS $1.66 vs $1.62 est., Revenue $11.54B vs $11.28B. Q3 guide $13.0B±$300M. Márgenes ~56%. Data Center acelera H2 2026.",
-   "xText": "AMD bate Q2: $1.66 EPS, $11.54B revenue. Q3 outlook $13B+ señala aceleración data center. Márgenes brutos 56% sostienen ciclo IA. $AMD",
-   "discordText": "**AMD Earnings**\n• EPS Adj: $1.66 vs $1.62 est.\n• Revenue: $11.54B vs $11.28B\n• Q3 Guide: ~$13.0B ±$300M\n• Gross Margin: ~56% | Data Center accelerating H2",
-   "pushText": "AMD bate con guidance Q3 fuerte; data center acelera en H2 2026",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "AMD: beat modesto pero guidance anticipado de aceleración reafirma ciclo de IA sin saturación; acción suele reaccionar +2-3% intraday. Semiconductores sector-wide refuerzan.",
-    "despues": "NVDA: mercado cotejan si AMD gana cuota data center o si ambos crecen con pastel en expansión. Nasdaq/S&P500 índices tech se refuerzan por confirmación de demanda.",
-    "escenarios": "Traders vigilan: (1) si margen bruto 56% es nivel sostenible (presión de ASP vs volumen), (2) detalles data center vs otros segmentos, (3) timing realización backlog, (4) competencia NVDA pricing power.",
-    "riesgos": "Guidance Q3 es forward-looking; si clientes cloud reducen capex por preocupaciones valuación o tasas, realización es riesgo. Márgenes 56% son récord y pueden ser insostenibles si commoditización acelera."
-   },
-   "macro": null,
-   "updates": []
   },
   {
    "id": "33991",
@@ -7311,245 +7551,6 @@
     "semiconductores": "Demanda creciente en chips para autos"
    },
    "updates": []
-  },
-  {
-   "id": "980083495",
-   "fecha": "2026-07-31T18:07:36.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/the-sp-500-is-stuck-this-obscure-index-could-determine-the-markets-next-move.html",
-   "via": "CNBC",
-   "original": "The S&P 500 is stuck at a key battleground level. This obscure index could determine the market’s next move",
-   "titulo": "S&P 500 en encrucijada técnica; índice obscuro podría definir próximo movimiento",
-   "resumen": "El S&P 500 enfrenta un nivel de resistencia clave que funcionaría como punto de quiebre técnico. Un índice poco seguido podría ser determinante para la dirección del mercado en el corto plazo. El titular no especifica cuál es ese índice ni los niveles exactos de resistencia.",
-   "analisis": {
-    "porque": "Los niveles técnicos clave en el S&P 500 generan decisiones de posicionamiento masivo en derivados y fondos indexados. Si se rompe resistencia, activa stops y órdenes automáticas; si rebota, consolida caída previa.",
-    "queOcurrio": "El S&P 500 se encuentra atrapado en un nivel de batalla técnico crítico donde un índice menor podría confirmar la próxima dirección del mercado.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Derivados",
-    "Fondos Indexados"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "s-p-500",
-    "resistencia-técnica",
-    "índice-clave",
-    "trading"
-   ],
-   "tgText": "📊 S&P 500 en nivel crítico. Un índice menor podría definir el próximo movimiento del mercado. Traders vigilantes en encrucijada técnica.",
-   "xText": "El S&P 500 enfrenta resistencia clave. Un índice obscuro podría determinar hacia dónde va el mercado próximamente. Atención a señales técnicas. #Mercados",
-   "discordText": "**S&P 500 en encrucijada técnica**\n• Batalla en nivel de resistencia crítico\n• Índice menor podría ser determinante\n• Vigilancia en rupturas técnicas",
-   "pushText": "S&P 500 en nivel crítico; índice menor puede definir próxima dirección",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "S&P 500 y futuros ES reaccionan primero; ruptura de resistencia activa compras automáticas, rechazo activa ventas.",
-    "despues": "NASDAQ, bonos USA y volatilidad implícita (VIX) se ajustan según confirmación de dirección.",
-    "escenarios": "Traders vigilan: (1) ruptura al alza con confirmación de índice menor = nuevo máximo; (2) rechazo en resistencia = retroceso hacia soporte anterior; (3) consolidación = espera de catalizador externo.",
-    "riesgos": "El titular no identifica el índice específico ni los niveles exactos, lo que reduce claridad de ejecución. Posible falsa ruptura."
-   },
-   "macro": {
-    "sp500": "Resistencia técnica crítica como punto de quiebre",
-    "nasdaq": "Seguirá dirección del S&P 500",
-    "bonos": "Ajuste según confirmación de caída de riesgo",
-    "volatilidad": "Media; espera de ruptura"
-   },
-   "updates": []
-  },
-  {
-   "id": "33822",
-   "fecha": "2026-07-31T20:32:17+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33822",
-   "via": "DeItaone",
-   "original": "WARSH CONSIDERS REDUCING FREQUENCY OF FED POLICY MEETINGS: NYT",
-   "titulo": "Warsh planea reducir frecuencia de reuniones de política monetaria de la Fed",
-   "resumen": "El columnista y exfuncionario de la Fed Kevin Warsh contempla una reducción en la frecuencia de las reuniones de política monetaria, según reporta NYT. El titular no especifica detalles sobre timing o magnitud propuesta. Esta posición se suma a señales previas de Warsh sobre mayor firmeza en tasas a pesar de mensajes dovish.",
-   "analisis": {
-    "porque": "Reforma institucional de la Fed que afectaría cadencia de decisiones de tasas. Menos reuniones implica menos puntos de entrada para cambios de política, afectando expectativas de mercado y volatilidad de bonos.",
-    "queOcurrio": "Warsh considera reducir frecuencia de reuniones de política monetaria de la Fed, según NYT.",
-    "estado": "confirmado",
-    "fuenteOriginal": "NYT"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "fed-meetings",
-    "warsh",
-    "policy-frequency",
-    "monetary-reform",
-    "fed-structure"
-   ],
-   "tgText": "📊 Warsh (ex-Fed) propone reducir frecuencia de reuniones de política monetaria de la Fed. Cambio institucional que afectaría cadencia de decisiones de tasas.",
-   "xText": "Kevin Warsh contempla reducción de frecuencia en reuniones de política monetaria de la Fed, según NYT. Posible reforma institucional de alcance significativo.",
-   "discordText": "**📋 REFORMA FED**\n• Warsh propone menos reuniones de política monetaria\n• Afectaría cadencia de decisiones\n• Cambio institucional importante",
-   "pushText": "Warsh propone reducir frecuencia de reuniones de la Fed",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Rendimientos de bonos largos (10Y+): inicialmente neutrales; mercado espera claridad sobre impacto en predictibilidad de política.",
-    "despues": "DXY y curva de tasas podrían repreciar si se interpreta como mayor rigidez monetaria.",
-    "escenarios": "Traders vigilan: (1) si propuesta es seria o especulativa; (2) apoyo de otros exfuncionarios de Fed; (3) impacto en expectativas de tasas 2027; (4) reacción de mercados de futuros de Fondos Federales.",
-    "riesgos": "Warsh no es funcionario actual (es columnista/ex-asesor); propuesta podría ser descartada. Impacto limitado si no hay seguimiento institucional real."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-07-31T16:51:30.000Z",
-     "id": "981786594",
-     "texto": "Nuevos datos muestran que la inflación se encuentra en sus niveles más bajos en años, justo cuando el presidente de la Reserva Federal enfrenta presiones para ajustar la política monetaria. El titular no especifica qué indicadores concretos ni las métricas exactas, pero sugiere un escenario de desinflación que podría reconfigurar las expectativas de tasas.",
-     "tgUrl": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html"
-    }
-   ],
-   "actualizado": "2026-07-31T16:51:30.000Z"
-  },
-  {
-   "id": "925170123",
-   "fecha": "2026-07-31T16:50:38.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/us-lawmakers-doordash-chinese-ai-models.html",
-   "via": "CNBC",
-   "original": "U.S. lawmakers request information from DoorDash on use of Chinese AI models",
-   "titulo": "Congreso presiona a DoorDash por uso de modelos IA chinos; riesgos regulatorios en entregas",
-   "resumen": "Legisladores estadounidenses han requerido información a DoorDash sobre su utilización de modelos de inteligencia artificial de origen chino. El titular no especifica el alcance de esos modelos (infraestructura, algoritmos, datos) ni las posibles consecuencias regulatorias, pero refleja tensiones geopolíticas crecientes en tecnología.",
-   "analisis": {
-    "porque": "DoorDash (DASH) es una empresa de delivery pública. Presión regulatoria sobre proveedores tech chinos afecta costos de cumplimiento, potencial de sanciones y narrativa de riesgos geopolíticos en el sector de tech/plataformas.",
-    "queOcurrio": "Legisladores solicitan información a DoorDash respecto del uso de modelos IA chinos, lo que sugiere investigación de cumplimiento regulatorio sobre dependencias tecnológicas adversas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "DASH",
-    "NASDAQ",
-    "Sector Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "DASH",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Sector Tech",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "doordash-dash",
-    "ia-china",
-    "regulacion",
-    "geopolitica-tech",
-    "cumplimiento"
-   ],
-   "tgText": "📱 Congreso presiona a DoorDash por uso de modelos IA chinos. Investigación regulatoria refleja tensiones geopolíticas en tech. DASH y peers en vigilancia por riesgos de cumplimiento.",
-   "xText": "🔍 Legisladores requieren info a DoorDash sobre IA china. Presión regulatoria crece en dependencias tech adversas. DASH bajo escrutinio geopolítico. #Tech #Regulacion",
-   "discordText": "**DoorDash bajo presión regulatoria**\n• Congreso investiga uso de modelos IA chinos\n• Riesgos de cumplimiento y sanciones potenciales\n• Tensiones geopolíticas en sector delivery/tech\n• DASH en vigilancia",
-   "pushText": "DoorDash investigada por uso de IA china; presión regulatoria en tech",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "DASH (cotización directa): mercado preciaría riesgos regulatorios y costos de cumplimiento potenciales. Volatilidad intradiaria probable.",
-    "despues": "Peers de delivery (Uber Eats, etc.), sector tech más amplio si el precedente se extiende; índices NASDAQ y empresas con exposición a proveedores chinos de IA.",
-    "escenarios": "Traders vigilarán: (1) respuesta oficial de DoorDash y timeline de investigación; (2) posibles multas o restricciones regulatorias; (3) si legisladores ampl ían investigación a otros peers; (4) adopción acelerada de IA alternativa (doméstica).",
-    "riesgos": "El titular no especifica magnitud del uso de IA china ni si es crítico. Riesgo de que sea ruido regulatorio sin consecuencias comerciales reales. Respuesta oficial podría neutralizar preocupaciones."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33820",
-   "fecha": "2026-07-31T16:23:15+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33820",
-   "via": "DeItaone",
-   "original": "TRUMP ON IRAN: CAN REACH A DEAL",
-   "titulo": "Trump: Podría alcanzarse un acuerdo con Irán",
-   "resumen": "El presidente Trump sugirió posibilidad de negociación y acuerdo bilateral con Irán, en contraste aparente con serie de declaraciones de presión militar de horas previas. Señal de disponibilidad potencial al diálogo diplomático tras periodo de tensión escalada.",
-   "analisis": {
-    "porque": "Giro narrativo hacia diplomacia abre escenario de reducción de tensión y descongelamiento parcial de sanciones. Impacta precios de petróleo (reversión de prima), activos defensivos, y evaluación de riesgo geopolítico.",
-    "queOcurrio": "Trump sugirió que podría existir vía para acuerdo con Irán, sin especificar condiciones o plazos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "S&P 500",
-    "Bonos",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Acuerdo",
-    "Diplomacia",
-    "Trump",
-    "Negociación",
-    "Oriente Medio"
-   ],
-   "tgText": "🔄 Trump abre puerta a acuerdo con Irán tras horas de presión militar. Giro hacia diplomacia genera volatilidad en petróleo y activos defensivos.",
-   "xText": "Trump: podría alcanzarse acuerdo con Irán. Giro diplomático tras tensión escalada, impacta precios de petróleo y riesgo geopolítico.",
-   "discordText": "**Giro diplomático: Trump abre negociación con Irán**\n• Sugiere posibilidad de acuerdo bilateral\n• Contrasta con presión militar previa (últimas horas)\n• Volatilidad esperada en Oriente Medio",
-   "pushText": "Trump: posible acuerdo con Irán tras presión militar",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent: reversión bajista esperada si mercado interpreta como reducción de prima de riesgo y apertura diplomática",
-    "despues": "Oro, bonos (sesgo bajista por reducción de demanda defensiva), S&P 500 (sesgo alcista por alivio de tensión)",
-    "escenarios": "Traders vigilan: (1) Confirmación de vías de negociación concretas, (2) Condiciones ofrecidas/demandadas (levantamiento de sanciones, inspecciones nucleares), (3) Cronología y probabilidad real vs. tanteo retórico, (4) Reacción de Israel y aliados regionales, (5) Impacto en flujos de petróleo si acuerdo se materializa",
-    "riesgos": "Retórica diplomática puede no materializarse, suba de tensión rápida si negociaciones fallan, incertidumbre sobre seriedad de intenciones de Trump"
-   },
-   "macro": {
-    "petroleo": "bajista significativo si acuerdo se verifica",
-    "oro": "bajista por alivio de tensión",
-    "nasdaq": "alcista por reducción de prima de riesgo",
-    "sp500": "alcista por reducción de prima de riesgo",
-    "dolar": "neutral a ligeramente alcista"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -7826,6 +7827,16 @@
   "https://www.cnbc.com/2026/08/05/softbank-samsung-sk-hynix-samsung-tech-rally.html",
   "https://www.cnbc.com/2026/08/04/spacex-ai-spending-unnerves-wall-street-despite-promising-quick-payoff.html",
   "https://www.cnbc.com/2026/08/04/stock-market-today-live-updates.html",
-  "https://www.cnbc.com/2026/08/04/gm-chinese-automaker-extend-tie-up-amid-geopolitical-tensions-with-us.html"
+  "https://www.cnbc.com/2026/08/04/gm-chinese-automaker-extend-tie-up-amid-geopolitical-tensions-with-us.html",
+  "https://www.cnbc.com/2026/08/04/michael-burry-bets-against-rally-we-are-near-a-major-top.html",
+  "https://www.cnbc.com/select/short-on-cash-each-month-how-to-find-extra-money/",
+  "https://www.cnbc.com/2026/08/04/todd-blanche-weaponization-fund-senate-confirmation.html",
+  "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html",
+  "https://www.cnbc.com/2026/08/04/cramer-one-hedge-fund-collapse-cleared-way-for-tech-rally.html",
+  "https://www.cnbc.com/2026/08/04/stocks-making-the-biggest-moves-after-the-bell-spcx-amd-pins-anet-wynn.html",
+  "https://www.cnbc.com/2026/08/04/pinterest-pins-q2-earnings-report-2026.html",
+  "https://www.cnbc.com/2026/08/05/faa-says-it-is-investigating-trump-helicopter-safety-incident-in-washington.html",
+  "https://www.cnbc.com/2026/08/05/the-stocks-goldman-gives-more-than-100percent-upside-.html",
+  "https://www.cnbc.com/2026/08/05/india-rbi-interest-rate-inflation-iran-war.html"
  ]
 }
