@@ -1,147 +1,69 @@
 {
- "lastId": 34078,
- "actualizado": "2026-08-05T18:46:31.829Z",
+ "lastId": 34081,
+ "actualizado": "2026-08-05T20:17:37.039Z",
  "items": [
   {
-   "id": "34078",
-   "fecha": "2026-08-05T18:20:30+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34078",
+   "id": "34081",
+   "fecha": "2026-08-05T19:50:11+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34081",
    "via": "DeItaone",
-   "original": "OPENAI DRIVES MOST OF MICROSOFT'S AI REVENUE Microsoft disclosed it generated $24.1 billion in AI revenue from OpenAI in the year ended June, suggesting the ChatGPT maker accounts for more than half—and possibly around 70%—of its AI business. The figures highlight Microsoft's continued reliance on OpenAI, even as it develops its own AI models and invests in rivals such as Anthropic.",
-   "titulo": "OpenAI genera $24.1B en ingresos para Microsoft; representa más del 70% del negocio IA",
-   "resumen": "Microsoft divulgó que obtuvo $24.1 mil millones en ingresos de IA provenientes de OpenAI en el año fiscal terminado en junio, sugiriendo que ChatGPT representa más de la mitad y posiblemente alrededor del 70% del negocio IA total de Microsoft. Esto subraya la dependencia continua de Microsoft en OpenAI, incluso mientras desarrolla modelos propios e invierte en rivales como Anthropic.",
+   "original": "TRUMP ADMINISTRATION PLANS TO IMPOSE TARIFF OF 15% ON POLYSILICON DERIVATIVES -SOURCES",
+   "titulo": "Trump anuncia arancel del 15% a derivados de polisilicio; impacta cadena solar",
+   "resumen": "Administración Trump planea imponer arancel del 15% sobre derivados de polisilicio, según fuentes consultadas. El polisilicio es insumo crítico para paneles solares. La medida se suma a aranceles previos sobre celdas y módulos solares. No se especifica fecha de implementación.",
    "analisis": {
-    "porque": "Revela la concentración de riesgo en la relación Microsoft-OpenAI y la magnitud real del negocio IA corporativo; impacta valuación y percepción de competencia en sector tech",
-    "queOcurrio": "Microsoft oficialmente comunicó los ingresos AI attributibles a OpenAI en su disclosure fiscal, mostrando dependencia de más del 70% de su unidad IA",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
+    "porque": "Polisilicio es 40-50% del costo de manufactura solar. Arancel del 15% aumenta materiales primas para productores USA de paneles (First Solar, Sunrun, etc.) y encarece instalación residencial/comercial. Afecta directamente LCOE (costo nivelado de energía) y adopción de renovables. Impacto en competitividad vs energía fósil y timeline de transición energética.",
+    "queOcurrio": "Fuentes anónimas informan a la administración Trump de plan para arancel del 15% sobre derivados de polisilicio. El titular no especifica fecha, excepciones por origen o si afectará importaciones específicas de China/Vietnam.",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada"
    },
-   "impacto": "alto",
-   "breaking": true,
+   "impacto": "medio",
+   "breaking": false,
    "activos": [
+    "First Solar (FSLR)",
+    "Sunrun (RUN)",
+    "NextEra Energy (NEE)",
+    "Invesco Solar ETF (TAN)",
     "NASDAQ",
-    "MSFT",
-    "Nvidia",
-    "Anthropic-privada",
-    "Sector Tech"
+    "S&P 500",
+    "Bonos verdes"
    ],
    "sesgos": [
     {
-     "activo": "MSFT",
+     "activo": "First Solar",
      "sesgo": "bajista"
     },
     {
-     "activo": "NVIDIA",
-     "sesgo": "neutral"
+     "activo": "Sunrun",
+     "sesgo": "bajista"
     },
     {
-     "activo": "Sector Tech",
-     "sesgo": "neutral"
+     "activo": "Sector solar USA",
+     "sesgo": "bajista"
     }
    ],
    "volatilidad": "media",
    "categoria": "Empresas",
    "keywords": [
-    "Microsoft",
-    "OpenAI",
-    "IA",
-    "ingresos",
-    "ChatGPT",
-    "dependencia-riesgo",
-    "valuación-tech"
+    "aranceles",
+    "polisilicio",
+    "energía-solar",
+    "Trump",
+    "proteccionismo",
+    "cadena-suministro"
    ],
-   "tgText": "📊 MSFT: OpenAI genera $24.1B = 70% del negocio IA total. Revela alta concentración de riesgo en relación estratégica. Potencial revisión en múltiplos tech.",
-   "xText": "MSFT divulga que OpenAI representa $24.1B ó ~70% de sus ingresos IA. Alta dependencia del negocio ChatGPT subraya riesgo de concentración en relación estratégica crítica. #Tech #IA",
-   "discordText": "**Microsoft: OpenAI = 70% del negocio IA**\n• $24.1B en ingresos attributibles a ChatGPT\n• Dependencia muy alta en relación estratégica\n• Impacta múltiplos de valuación tech",
-   "pushText": "MSFT: OpenAI genera 70% de ingresos IA ($24.1B) — riesgo de concentración",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "MSFT y NASDAQ: mercado reprecia riesgo de dependencia en relación estratégica y potencial vulnerabilidad competitiva vs Anthropic, Google",
-    "despues": "Nvidia (impacto en demanda GPU para OpenAI), Anthropic-equivalentes privadas, índices tech amplios",
-    "escenarios": "Traders vigilarán: (1) reacción de inversores a concentración de riesgo en MSFT; (2) si mercado descuenta posible ruptura o renegociación de términos; (3) impacto en narrative de 'IA competencia' vs 'MSFT monopolio'",
-    "riesgos": "Titular oficial de Microsoft pero el análisis de '70%' es interpretación de Bloomberg; riesgo de malinterpretación sobre qué incluye 'ingresos IA'"
-   },
-   "macro": {
-    "nasdaq": "bajista-corto-plazo",
-    "dolar": "neutral",
-    "oro": "neutral",
-    "bonos": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "34012",
-   "fecha": "2026-08-05T07:01:14+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34012",
-   "via": "DeItaone",
-   "original": "YEMEN'S HOUTHIS SAY THEY ATTACKED VESSEL IN THE RED SEA -MILITARY SPOKESPERSON",
-   "titulo": "Hutíes yemenís reportan ataque a buque en el Mar Rojo; escalada geopolítica",
-   "resumen": "Portavoz militar hutí confirma ataque a embarcación en el Mar Rojo. Los ataques hutíes han persistido durante meses, afectando rutas comerciales críticas entre Europa y Asia. El titular no especifica daños, tipo de buque ni consecuencias inmediatas. Contexto: negociaciones del Estrecho de Ormuz avanzan pero tensiones regionales permanecen.",
-   "analisis": {
-    "porque": "Los ataques en el Mar Rojo impactan seguros marítimos, costos logísticos globales y precios de energía. Afectan directamente a índices de transporte, compañías navieras y expectativas de inflación de importaciones en EEUU y Europa.",
-    "queOcurrio": "Portavoz militar hutí anuncia ataque a un buque en el Mar Rojo; no se confirman detalles de víctimas, daños o identidad del objetivo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Bonos",
-    "USD",
-    "Seguros",
-    "Transporte Marítimo",
-    "Renta Variable Global"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent/WTI",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Yemen",
-    "Hutíes",
-    "Mar Rojo",
-    "Geopolítica",
-    "Transporte Marítimo",
-    "Seguros"
-   ],
-   "tgText": "🔴 Hutíes yemenís reportan ataque a buque en Mar Rojo. Escalada en tensiones regionales presiona petróleo y seguros marítimos. Negociaciones del Estrecho avanzan pero riesgos persisten.",
-   "xText": "Portavoz hutí confirma ataque a embarcación en Mar Rojo. Impacta rutas comerciales críticas y presiona costos logísticos globales. Petróleo y seguros marítimos en vigilancia.",
-   "discordText": "**Hutíes: Ataque a Buque en Mar Rojo**\n• Portavoz militar yemení confirma operación\n• Afecta rutas comerciales Europa-Asia\n• Impacto: seguros, petróleo, logística global\n• Contexto: negociaciones Estrecho avanzando pero tensiones altas",
-   "pushText": "Hutíes atacan buque en Mar Rojo; presiona petróleo y logística global",
+   "tgText": "📊 Administración Trump planea arancel del 15% sobre derivados de polisilicio, informa fuentes. Insumo crítico para paneles solares; impactaría First Solar, Sunrun y cadena renovable USA.",
+   "xText": "📊 Trump administration plans 15% tariff on polysilicon derivatives—sources. Critical input for solar panels; could hit First Solar, Sunrun and US renewable chain. Date, exceptions not specified.",
+   "discordText": "**Trump: arancel del 15% a derivados polisilicio**\n• Insumo crítico para manufactura de paneles solares (40-50% costo)\n• Afecta productores USA: First Solar, Sunrun, NextEra\n• Fecha de implementación no especificada\n• Suma presión proteccionista sobre cadena renovable",
+   "pushText": "Trump planea arancel del 15% a derivados de polisilicio",
    "importancia": 6,
    "reaccion": {
-    "primero": "Petróleo Brent/WTI: mercados de energía reaccionan primero a escaladas en Mar Rojo por riesgo a suministros; USD sube por demanda de refugio.",
-    "despues": "Índices navieros (si existen en AR4), seguros marítimos, rendimientos de bonos USA (inflación esperada), metales preciosos.",
-    "escenarios": "Traders vigilan: (1) Si ataque causa cierre de ruta o corte logístico; (2) Represalias que escalen conflicto; (3) Impacto en inflación importada; (4) Reacción de EEUU/aliados.",
-    "riesgos": "Titular es comunicado hutí sin verificación independiente. Historial: muchos anuncios hutíes no resultan en ataques materiales. Riesgo de escalada desproporcionada en pricing de petróleo."
+    "primero": "FSLR (First Solar) y RUN (Sunrun) reaccionan primero por exposición directa a costos de polisilicio. Baja presión sobre márgenes si no pueden traspasar aumento a clientes.",
+    "despues": "ETF solar (TAN), NextEra Energy (NEE), Vivint Solar (si cotiza), proveedores de equipamiento solar. Sector renovable en general.",
+    "escenarios": "Traders monitorean: (1) anuncio oficial con fecha/excepciones; (2) respuesta de productores solares sobre pases de costos; (3) impacto en IRA (Inflation Reduction Act) incentivos; (4) retaliation potencial de China/Vietnam; (5) presión sobre costo LCOE y retorno de proyectos. Riesgo: si arancel se implementa rápido, Q3-Q4 2026 márgenes solares bajo presión.",
+    "riesgos": "Fuentes anónimas; administración aún no confirma formalmente. Posible que arancel sea negociado, reducido o excluya ciertos orígenes. Titular no especifica si aplica a todas las importaciones o solo algunas."
    },
-   "macro": {
-    "petroleo": "sesgo alcista por riesgo de interrupción",
-    "dolar": "sesgo alcista por demanda de refugio",
-    "bonos": "sesgo bajista por expectativa de inflación importada"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-05T18:19:40+00:00",
-     "id": "34077",
-     "texto": "Los hutíes yemenís reportaron ataque a un buque petrolero saudí en el Golfo de Aden. Saudi Aramco no ha confirmado el incidente. La acción sigue patrón de ataques contra infraestructura energética en ruta crítica de comercio de petróleo.",
-     "tgUrl": "https://t.me/walterbloomberg/34077"
-    }
-   ],
-   "actualizado": "2026-08-05T18:19:40+00:00"
+   "macro": null,
+   "updates": []
   },
   {
    "id": "33833",
@@ -223,6 +145,12 @@
     "bonos": "neutral a alcista"
    },
    "updates": [
+    {
+     "fecha": "2026-08-05T19:49:22+00:00",
+     "id": "34080",
+     "texto": "Reuters reporta que una propuesta mediada por Omán otorgaría a Irán mayor control sobre buques en el Estrecho de Hormuz, marcando una concesión geopolítica significativa. Funcionarios iraníes afirman avances sustanciales en negociaciones, aunque fuentes regionales advierten que cuestiones clave permanecen sin resolver. Washington ha históricamente rechazado cualquier control iraní sobre esta ruta crítica de envíos.",
+     "tgUrl": "https://t.me/walterbloomberg/34080"
+    },
     {
      "fecha": "2026-08-05T17:12:23+00:00",
      "id": "34075",
@@ -392,7 +320,214 @@
      "tgUrl": "https://t.me/walterbloomberg/33834"
     }
    ],
-   "actualizado": "2026-08-05T17:12:23+00:00"
+   "actualizado": "2026-08-05T19:49:22+00:00"
+  },
+  {
+   "id": "34079",
+   "fecha": "2026-08-05T19:16:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34079",
+   "via": "DeItaone",
+   "original": "IRAN'S PRESIDENT SAYS INTERACTION WITH COUNTRY'S SUPREME LEADER IS 'VERY DIFFICULT' CURRENTLY",
+   "titulo": "Irán: tensión interna entre presidente y líder supremo complica negociaciones",
+   "resumen": "Presidente de Irán declaró que la interacción con el líder supremo del país es 'muy difícil' actualmente. La afirmación sugiere fricción política interna. No se especifica causa exacta ni impacto inmediato en negociaciones de Hormuz o sanciones.",
+   "analisis": {
+    "porque": "Tensión ejecutiva en Irán reduce predictibilidad geopolítica. Si presidente (ejecutivo) y líder supremo (poder religioso/militar) divergen, acuerdos internacionales quedan bajo riesgo. Afecta credibilidad de negociaciones USA-Irán y expectativas sobre cumplimiento de pactos. Impacta prima de riesgo en petróleo y valuación de activos con exposición geopolítica.",
+    "queOcurrio": "Presidente iraní declaró públicamente que la interacción con su líder supremo es 'muy difícil' actualmente. El titular no especifica contexto de la fricción (sanciones, política interna, negociaciones fallidas).",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo Brent",
+    "Petróleo WTI",
+    "USD",
+    "DXY",
+    "Oro",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "política-interna",
+    "geopolítica",
+    "negociaciones",
+    "tensión",
+    "líder-supremo"
+   ],
+   "tgText": "⚖️ Presidente iraní reporta interacción 'muy difícil' con líder supremo. Sugiere tensión política interna que podría afectar credibilidad de negociaciones internacionales. Riesgo geopolítico en aumento.",
+   "xText": "⚖️ Iran's president says interaction with supreme leader 'very difficult' now. Signals internal political friction that could undermine international deal credibility. Geopolitical risk higher.",
+   "discordText": "**Irán: tensión interna presidente-líder supremo**\n• Presidente declara interacción 'muy difícil' actualmente\n• Señala fricción política potencial en ejecutivo iraní\n• Riesgo para credibilidad de negociaciones internacionales\n• Contexto exacto de fricción no especificado",
+   "pushText": "Tensión en Irán: presidente reporta dificultad con líder supremo",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: si tensión interna reduce capacidad iraní para mantener acuerdos, prima de riesgo sube. USD/JPY y DXY podrían apreciarse por 'flight to safety'. Oro también sube por incertidumbre.",
+    "despues": "VIX, rendimientos de bonos USA (podrían subir), acciones defensivas frente a cíclicas.",
+    "escenarios": "Traders monitorean: (1) comunicados posteriores del presidente o líder supremo sobre naturaleza de fricción; (2) impacto en negociaciones Ormuz (titular anterior); (3) posibles cambios en política exterior iraní; (4) reacciones de Arabia Saudí, Emiratos, Israel; (5) volatilidad esperada en energía en próximas semanas.",
+    "riesgos": "Titular muy vago: no especifica causa de fricción ni impacto esperado. Posible que sea declaración política doméstica sin repercusión internacional. Falta confirmación de medios institucionales (Bloomberg, Reuters directos)."
+   },
+   "macro": {
+    "dolar": "alcista potencial",
+    "oro": "alcista potencial",
+    "petroleo": "alcista potencial"
+   },
+   "updates": []
+  },
+  {
+   "id": "34078",
+   "fecha": "2026-08-05T18:20:30+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34078",
+   "via": "DeItaone",
+   "original": "OPENAI DRIVES MOST OF MICROSOFT'S AI REVENUE Microsoft disclosed it generated $24.1 billion in AI revenue from OpenAI in the year ended June, suggesting the ChatGPT maker accounts for more than half—and possibly around 70%—of its AI business. The figures highlight Microsoft's continued reliance on OpenAI, even as it develops its own AI models and invests in rivals such as Anthropic.",
+   "titulo": "OpenAI genera $24.1B en ingresos para Microsoft; representa más del 70% del negocio IA",
+   "resumen": "Microsoft divulgó que obtuvo $24.1 mil millones en ingresos de IA provenientes de OpenAI en el año fiscal terminado en junio, sugiriendo que ChatGPT representa más de la mitad y posiblemente alrededor del 70% del negocio IA total de Microsoft. Esto subraya la dependencia continua de Microsoft en OpenAI, incluso mientras desarrolla modelos propios e invierte en rivales como Anthropic.",
+   "analisis": {
+    "porque": "Revela la concentración de riesgo en la relación Microsoft-OpenAI y la magnitud real del negocio IA corporativo; impacta valuación y percepción de competencia en sector tech",
+    "queOcurrio": "Microsoft oficialmente comunicó los ingresos AI attributibles a OpenAI en su disclosure fiscal, mostrando dependencia de más del 70% de su unidad IA",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "MSFT",
+    "Nvidia",
+    "Anthropic-privada",
+    "Sector Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "MSFT",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NVIDIA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Sector Tech",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Microsoft",
+    "OpenAI",
+    "IA",
+    "ingresos",
+    "ChatGPT",
+    "dependencia-riesgo",
+    "valuación-tech"
+   ],
+   "tgText": "📊 MSFT: OpenAI genera $24.1B = 70% del negocio IA total. Revela alta concentración de riesgo en relación estratégica. Potencial revisión en múltiplos tech.",
+   "xText": "MSFT divulga que OpenAI representa $24.1B ó ~70% de sus ingresos IA. Alta dependencia del negocio ChatGPT subraya riesgo de concentración en relación estratégica crítica. #Tech #IA",
+   "discordText": "**Microsoft: OpenAI = 70% del negocio IA**\n• $24.1B en ingresos attributibles a ChatGPT\n• Dependencia muy alta en relación estratégica\n• Impacta múltiplos de valuación tech",
+   "pushText": "MSFT: OpenAI genera 70% de ingresos IA ($24.1B) — riesgo de concentración",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "MSFT y NASDAQ: mercado reprecia riesgo de dependencia en relación estratégica y potencial vulnerabilidad competitiva vs Anthropic, Google",
+    "despues": "Nvidia (impacto en demanda GPU para OpenAI), Anthropic-equivalentes privadas, índices tech amplios",
+    "escenarios": "Traders vigilarán: (1) reacción de inversores a concentración de riesgo en MSFT; (2) si mercado descuenta posible ruptura o renegociación de términos; (3) impacto en narrative de 'IA competencia' vs 'MSFT monopolio'",
+    "riesgos": "Titular oficial de Microsoft pero el análisis de '70%' es interpretación de Bloomberg; riesgo de malinterpretación sobre qué incluye 'ingresos IA'"
+   },
+   "macro": {
+    "nasdaq": "bajista-corto-plazo",
+    "dolar": "neutral",
+    "oro": "neutral",
+    "bonos": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34012",
+   "fecha": "2026-08-05T07:01:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34012",
+   "via": "DeItaone",
+   "original": "YEMEN'S HOUTHIS SAY THEY ATTACKED VESSEL IN THE RED SEA -MILITARY SPOKESPERSON",
+   "titulo": "Hutíes yemenís reportan ataque a buque en el Mar Rojo; escalada geopolítica",
+   "resumen": "Portavoz militar hutí confirma ataque a embarcación en el Mar Rojo. Los ataques hutíes han persistido durante meses, afectando rutas comerciales críticas entre Europa y Asia. El titular no especifica daños, tipo de buque ni consecuencias inmediatas. Contexto: negociaciones del Estrecho de Ormuz avanzan pero tensiones regionales permanecen.",
+   "analisis": {
+    "porque": "Los ataques en el Mar Rojo impactan seguros marítimos, costos logísticos globales y precios de energía. Afectan directamente a índices de transporte, compañías navieras y expectativas de inflación de importaciones en EEUU y Europa.",
+    "queOcurrio": "Portavoz militar hutí anuncia ataque a un buque en el Mar Rojo; no se confirman detalles de víctimas, daños o identidad del objetivo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Bonos",
+    "USD",
+    "Seguros",
+    "Transporte Marítimo",
+    "Renta Variable Global"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent/WTI",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Yemen",
+    "Hutíes",
+    "Mar Rojo",
+    "Geopolítica",
+    "Transporte Marítimo",
+    "Seguros"
+   ],
+   "tgText": "🔴 Hutíes yemenís reportan ataque a buque en Mar Rojo. Escalada en tensiones regionales presiona petróleo y seguros marítimos. Negociaciones del Estrecho avanzan pero riesgos persisten.",
+   "xText": "Portavoz hutí confirma ataque a embarcación en Mar Rojo. Impacta rutas comerciales críticas y presiona costos logísticos globales. Petróleo y seguros marítimos en vigilancia.",
+   "discordText": "**Hutíes: Ataque a Buque en Mar Rojo**\n• Portavoz militar yemení confirma operación\n• Afecta rutas comerciales Europa-Asia\n• Impacto: seguros, petróleo, logística global\n• Contexto: negociaciones Estrecho avanzando pero tensiones altas",
+   "pushText": "Hutíes atacan buque en Mar Rojo; presiona petróleo y logística global",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: mercados de energía reaccionan primero a escaladas en Mar Rojo por riesgo a suministros; USD sube por demanda de refugio.",
+    "despues": "Índices navieros (si existen en AR4), seguros marítimos, rendimientos de bonos USA (inflación esperada), metales preciosos.",
+    "escenarios": "Traders vigilan: (1) Si ataque causa cierre de ruta o corte logístico; (2) Represalias que escalen conflicto; (3) Impacto en inflación importada; (4) Reacción de EEUU/aliados.",
+    "riesgos": "Titular es comunicado hutí sin verificación independiente. Historial: muchos anuncios hutíes no resultan en ataques materiales. Riesgo de escalada desproporcionada en pricing de petróleo."
+   },
+   "macro": {
+    "petroleo": "sesgo alcista por riesgo de interrupción",
+    "dolar": "sesgo alcista por demanda de refugio",
+    "bonos": "sesgo bajista por expectativa de inflación importada"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-05T18:19:40+00:00",
+     "id": "34077",
+     "texto": "Los hutíes yemenís reportaron ataque a un buque petrolero saudí en el Golfo de Aden. Saudi Aramco no ha confirmado el incidente. La acción sigue patrón de ataques contra infraestructura energética en ruta crítica de comercio de petróleo.",
+     "tgUrl": "https://t.me/walterbloomberg/34077"
+    }
+   ],
+   "actualizado": "2026-08-05T18:19:40+00:00"
   },
   {
    "id": "34072",
@@ -7575,113 +7710,6 @@
     "despues": "Empleo (labor stocks defensivos si restricciones), opex de ride-sharing, valuaciones de Waymo/Alphabet ajustan.",
     "escenarios": "Traders vigilan: (1) qué lado gana la batalla legislativa, (2) si restricciones retrasan AV scaling, (3) impacto en márgenes operativos, (4) costos de cumplimiento regulatorio.",
     "riesgos": "Titular no especifica qué aspecto laboral exacto está en disputa; podría ser negociación administrativa sin impacto real en timeline de AVs."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "949862737",
-   "fecha": "2026-08-01T13:44:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/stocks-to-buy-now-before-they-report-earnings.html",
-   "via": "CNBC",
-   "original": "Buy these stocks ahead of earnings. Bank of America says they offer plenty of upside",
-   "titulo": "Bank of America recomienda comprar estas acciones pre-earnings con upside potencial",
-   "resumen": "Banco de América identifica valores que cotizan antes de reporte trimestral con potencial alcista significativo. El titular no especifica cuáles son las acciones ni el sector, pero sugiere que BofA detecta oportunidades de mispricing en el mercado pre-earnings.",
-   "analisis": {
-    "porque": "Recomendaciones de grandes inversores institucionales pueden influir demanda y ajustes de valuación. Revela qué buscan los fondos: potencial de beat en earnings y revisión de múltiplos.",
-    "queOcurrio": "Bank of America emite recomendación de compra en acciones seleccionadas con tesis de upside previo a publicación de resultados.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Acciones genéricas"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "earnings",
-    "Bank of America",
-    "recomendación compra",
-    "upside",
-    "pre-earnings"
-   ],
-   "tgText": "📈 BofA identifica acciones con potencial alcista previo a earnings. Recomendación de compra en seleccionadas. Mercado precia oportunidades pre-resultados.",
-   "xText": "🎯 Bank of America: acciones con upside potencial en pre-earnings. Fondos detectan mispricing. A vigilar próximos reportes trimestrales.",
-   "discordText": "**BofA: Oportunidades Pre-Earnings**\n• Recomendación de compra en seleccionadas\n• Potencial de upside detectado\n• Vigilar beatings en próximos reportes",
-   "pushText": "BofA recomienda comprar acciones con upside en pre-earnings",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones recomendadas por BofA suben por demanda de hedge funds e inversores institucionales replicando research.",
-    "despues": "S&P 500 sigue con lag según composición de cartera; NASDAQ si hay concentración tech.",
-    "escenarios": "Traders vigilar: (1) qué acciones específicas publica BofA; (2) earnings beat/miss en reportes; (3) revisión de guidance; (4) si research desencadena momentum pre-earnings o corrección post-beat.",
-    "riesgos": "Título genérico: no especifica acciones ni sectores. Riesgo de que recomendación no se transparente o que earnings decepcionemos. Falta contexto de la tesis fundamental."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "940249726",
-   "fecha": "2026-08-01T13:37:52.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/these-stocks-reporting-next-week-have-history-of-beating-expectations.html",
-   "via": "CNBC",
-   "original": "These stocks reporting next week have a history of beating expectations",
-   "titulo": "Acciones con reporte esta semana superan expectativas históricamente",
-   "resumen": "Análisis de CNBC destaca que empresas que reportan earnings esta semana tienen historial de batir estimaciones. El titular no detalla qué sectores o acciones específicas, pero sugiere sesgo alcista en próximos reportes si el patrón histórico se sostiene.",
-   "analisis": {
-    "porque": "Si earnings superan expectativas de forma sistemática, mercados reprician al alza. Hay implicación de upside earnings surprises que pueden impulsar índices.",
-    "queOcurrio": "CNBC revisa histórico de earnings beats de empresas que reportan esta semana, encontrando patrón alcista de superación de guías.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "earnings",
-    "beat",
-    "expectativas",
-    "S&P500",
-    "reporte trimestral"
-   ],
-   "tgText": "📊 Acciones que reportan esta semana superan expectativas históricamente. Sesgo alcista si patrón se sostiene. Mercados pueden reprecia al alza con earnings beats.",
-   "xText": "📈 Historial de earnings beats: empresas que reportan esta semana típicamente superan guidance. Potencial upside en próximas sesiones.",
-   "discordText": "**Earnings Beats Históricos**\n• Acciones que reportan esta semana superan expectativas\n• Patrón alcista en sesiones recientes\n• Vigilar próximos reportes para confirmación",
-   "pushText": "Acciones de esta semana tienen historial de batir expectativas",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones que reportan suben en intraday/post-earnings si resulta beat; S&P 500 repunte si dispersión de ganadores es amplia.",
-    "despues": "NASDAQ sigue si hay concentración de beats en tech; fondos de valor revierten si industrial/financiero decepcionan.",
-    "escenarios": "Traders vigilar: (1) magnitude de beats (% vs. estimate); (2) revisión de forward guidance; (3) comentario management sobre demanda/márgenes; (4) reacción de precio pos-earnings.",
-    "riesgos": "Análisis histórico no predice futuro. Riesgo de reversión de patrón. No especifica acciones ni detalla qué impulsa beats."
    },
    "macro": null,
    "updates": []
