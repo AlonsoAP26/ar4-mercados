@@ -1,7 +1,484 @@
 {
- "lastId": 34012,
- "actualizado": "2026-08-05T08:08:06.408Z",
+ "lastId": 34021,
+ "actualizado": "2026-08-05T09:35:08.607Z",
  "items": [
+  {
+   "id": "34021",
+   "fecha": "2026-08-05T09:24:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34021",
+   "via": "DeItaone",
+   "original": "MORGAN STANLEY SEES DATA CENTERS DRIVING CONSTRUCTION Morgan Stanley said data centers and infrastructure remain the strongest construction end markets, based on AI analysis of 28 companies' Q2 earnings calls. U.S. non-residential construction and repair activity stayed resilient, while residential markets weakened, particularly in the U.S. Most companies maintained guidance despite cost pressures",
+   "titulo": "Morgan Stanley: centros datos lideran construcción global; favorece Saint-Gobain, Kingspan",
+   "resumen": "Morgan Stanley identifica centros de datos como motor principal de construcción post-Q2 earnings (análisis 28 empresas). Construcción no-residencial USA resiliente; mercados residenciales debilitados. Mayoría mantiene guidance pese presiones costos. Favorece Saint-Gobain, Kingspan, Rockwool, Heidelberg Materials, Belimo; cauteloso en Nibe, Ariston, Geberit, Wienerberger.",
+   "analisis": {
+    "porque": "Validación de mega-trend IA/data center infrastructure que reshape mercados construcción global; confirma rotación capital hacia cloud/infraestructura vs vivienda; selección de picks/pans guía reallocación sectorial",
+    "queOcurrio": "Morgan Stanley analiza earnings calls y sistematiza que data centers dominan capital allocation en construcción; sector no-residencial resiliente vs residencial débil",
+    "estado": "confirmado",
+    "fuenteOriginal": "Morgan Stanley Research/Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Saint-Gobain",
+    "Kingspan",
+    "Rockwool",
+    "Heidelberg Materials",
+    "Belimo",
+    "Construcción EU",
+    "Índices Europa"
+   ],
+   "sesgos": [
+    {
+     "activo": "Data Center Constructoras",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Vivienda",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Saint-Gobain/Kingspan",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nibe/Ariston/Geberit",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "data-centers",
+    "construccion-global",
+    "earnings-analysis",
+    "capital-allocation",
+    "infraestructura-IA"
+   ],
+   "tgText": "🏗️ Morgan Stanley: centros datos lideran construcción global post-earnings. Favorece Saint-Gobain, Kingspan, Rockwool. Cauteloso Nibe, Ariston, Geberit. Vivienda débil.",
+   "xText": "Morgan Stanley: Centros datos dominan construcción post-Q2. Alcista: Saint-Gobain, Kingspan, Belimo. Bajista: Nibe, Ariston, Geberit. Vivienda USA presionada.",
+   "discordText": "**Construcción | Morgan Stanley Data Center Thesis**\n📊 28 empresas earnings analysis\n✅ Favorece: Saint-Gobain, Kingspan, Rockwool, Heidelberg, Belimo\n❌ Cauteloso: Nibe, Ariston, Geberit, Wienerberger\n📉 Vivienda débil; no-residencial resiliente",
+   "pushText": "Morgan Stanley: Datos centros lideran construcción global; selecciona picks y pans europeos",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Saint-Gobain, Kingspan: presión alcista intraday si mercado valida MS thesis (materiales construcción/vidrio para data center infrastructure); sell-off en vivienda stocks",
+    "despues": "Índices construcción Europa (DAX, CAC construcción sector); rendimientos bonos corporativos constructoras (spread compression alcista en picks)",
+    "escenarios": "Traders monitorean: (1) Si picks de MS outperform vs índice sector en próximos 20d; (2) Ciclo CAPEX data center sustainability 2026-27 (risk: correction si AI investment slows); (3) Cost inflation persistence en construcción (afecta márgenes picks)",
+    "riesgos": "Análisis es retrospectivo (Q2 calls) no predictivo; riesgo de reversion si data center build completado in 2026 vs drawn-out 2027-28; picks pueden ser crowded trades post-MS call"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "34001",
+   "fecha": "2026-08-04T20:42:09+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34001",
+   "via": "DeItaone",
+   "original": "$NVDA - SPACEX CEO ELON MUSK SAYS GOING FORWARD, WE'VE DECIDED TO BUILD EXCLUSIVELY ON NVIDIA",
+   "titulo": "SpaceX construirá exclusivamente sobre chips Nvidia; cambio de estrategia crítico",
+   "resumen": "Elon Musk anunció que SpaceX ha decidido construir exclusivamente sobre arquitectura Nvidia de cara adelante. Decisión implica consolidación de supply chain de procesamiento en ecosistema Nvidia para satélites, IA orbital y sistemas de tierra. Representa validación institucional de liderazgo Nvidia en cargas computacionales espaciales.",
+   "analisis": {
+    "porque": "SpaceX exclusividad con Nvidia amplifica dependencia sistémica de infraestructura de IA en proveedor único. Para mercados: (1) Nvidia gana moat defensivo en mercado satelital emergente, (2) SpaceX reduce riesgo geopolítico/supply chain, (3) señal alcista para stack Nvidia en aplicaciones edge/espacio. Contrasta con narrativa de 'alternativas' (AMD, Intel) ganando cuota.",
+    "queOcurrio": "Musk comunicó en presentación de resultados que SpaceX exclusivamente usará Nvidia forward. Cambio de arquitectura anterior (potencialmente mixta o alternativas) a monolítico Nvidia.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "NVDA",
+    "SPCX",
+    "Semiconductores",
+    "Nasdaq",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "NVDA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "AMD",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "Nvidia",
+    "SpaceX",
+    "exclusividad",
+    "IA-espacial",
+    "arquitectura-chips"
+   ],
+   "tgText": "🚀 SpaceX exclusivamente Nvidia: Musk anuncia cambio a arquitectura única Nvidia para todos los sistemas. Amplia moat defensivo Nvidia en espacio y satélites.",
+   "xText": "🚀 SpaceX elige exclusiva Nvidia: Musk confirma cambio a arquitectura única Nvidia para satélites e IA orbital. Valida dominio Nvidia en edge computing espacial. $NVDA",
+   "discordText": "**SpaceX-Nvidia Exclusiva**\n🚀 Elon Musk anuncia:\n• SpaceX construirá **exclusivamente sobre Nvidia**\n• Cambio de estrategia crítico para IA orbital\n• Amplía moat defensivo Nvidia en mercado espacial",
+   "pushText": "SpaceX elige exclusivamente Nvidia; amplia moat defensivo en IA espacial",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "NVDA: overnight futures suben +0.5-1% en Asian trade; desk semiconductios revisa múltiplos upside. Exclusividad elimina riesgo competitivo AMD/QUALCOMM en vertical espacial de alto margen.",
+    "despues": "AMD, QCOM: mercado reprecia riesgo de exclusión en mercados edge/IoT/espacio; ambas pueden caer -1 a -2% en ajuste de expectativa de TAM. Semicon índice se refuerza por NVDA peso.",
+    "escenarios": "Traders vigilan: (1) si exclusividad SpaceX es precedente para otros satélites/clientes (Amazon, OneWeb, etc.) o aislado, (2) márgenes Nvidia en aplicaciones espaciales vs data center, (3) geopolítica: Nvidia exclusiva SpaceX simplifica narrative anti-China en cadena crítica USA.",
+    "riesgos": "Anuncio sin detalles de contrato; exclusividad podría ser aspiracional (roadmap) vs contractual vinculante. Si clientes SpaceX presionan costo/flexibilidad, cambio podría revertirse. AMD/QUALCOMM podrían reposicionarse con soluciones edge competitivas."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-05T09:15:09+00:00",
+     "id": "34020",
+     "texto": "BofA Securities mantiene calificación Buy y objetivo $235 tras Q2 sólido. Subraya que ingresos y rentabilidad superaron expectativas y gestión reforzó outlook: $100B ARR dic 2026, $1T ingresos 2030. Aunque reconoce preocupaciones por capex superior e incertidumbre monetización IA/Starlink, permanece optimista en posición competitiva y elevó pronósticos.",
+     "tgUrl": "https://t.me/walterbloomberg/34020"
+    },
+    {
+     "fecha": "2026-08-05T08:12:23+00:00",
+     "id": "34013",
+     "texto": "Mizuho reitera calificación Outperform y objetivo de precio de $200 para SpaceX tras resultados Q2 sólidos: ingresos de $7.8B (+92% YoY) y EBITDA ajustado de $3.5B (+191% YoY). IA generó $2.6B en ingresos y alcanzó rentabilidad. Gestión proyecta $100B en ARR para diciembre y meta de $1T en ingresos para 2030.",
+     "tgUrl": "https://t.me/walterbloomberg/34013"
+    },
+    {
+     "fecha": "2026-08-04T21:38:25+00:00",
+     "id": "34009",
+     "texto": "Nvidia fue incluida en reunión entre administración Trump y empresas desarrolladoras de IA, según dos fuentes familiarizadas con las discusiones. El titular no especifica agenda, participantes exactos ni resultados, pero refleja rol central de Nvidia en políticas de IA de la administración.",
+     "tgUrl": "https://t.me/walterbloomberg/34009"
+    },
+    {
+     "fecha": "2026-08-04T21:05:42+00:00",
+     "id": "34005",
+     "texto": "Elon Musk confirmó que SpaceX espera recibir un «porcentaje significativo» de GPUs Nvidia durante 2027. Esta declaración refuerza la estrategia de dependencia de chips Nvidia para operaciones de inteligencia artificial y satélites. El titular no especifica volumen exacto ni timeline preciso.",
+     "tgUrl": "https://t.me/walterbloomberg/34005"
+    }
+   ],
+   "actualizado": "2026-08-05T09:15:09+00:00"
+  },
+  {
+   "id": "33833",
+   "fecha": "2026-08-02T08:57:35+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/33833",
+   "via": "DeItaone",
+   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
+   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
+   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
+   "analisis": {
+    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
+    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "DXY",
+    "EURUSD",
+    "Oro",
+    "VIX",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "nuclear",
+    "Ormuz",
+    "negociaciones",
+    "pausa militar",
+    "Oriente Medio"
+   ],
+   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
+   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
+   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
+   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
+    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
+    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
+    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
+   },
+   "macro": {
+    "dolar": "alcista corto plazo (alivio geopolítico)",
+    "oro": "bajista corto plazo",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "petroleo": "bajista",
+    "bonos": "neutral a alcista"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-05T09:01:07+00:00",
+     "id": "34017",
+     "texto": "Trump señala que acuerdo para reapertura del Estrecho de Ormuz podría concretarse en 48 horas; negociaciones USA-Irán-Omán avanzan. Axios reporta preparativos de acuerdo transitorio 60 días para restaurar tránsito energético clave. Alivio de preocupaciones petroleras, aunque amenazas hutíes persisten. Cualquier pacto sería temporal con riesgo de nuevas tensiones si negociaciones fracasan.",
+     "tgUrl": "https://t.me/walterbloomberg/34017"
+    },
+    {
+     "fecha": "2026-08-04T20:37:47+00:00",
+     "id": "33996",
+     "texto": "Fuentes militares advierten que EE.UU. ha gastado casi 80% de interceptores THAAD y ~50% de misiles Patriot desde inicio de la guerra con Irán. Mandos militares alertan de stockpiles 'peligrosamente bajos', elevando riesgos de respuesta a nuevos conflictos. Aliados del Golfo expresan preocupación por capacidad defensiva aérea compartida.",
+     "tgUrl": "https://t.me/walterbloomberg/33996"
+    },
+    {
+     "fecha": "2026-08-04T15:40:19+00:00",
+     "id": "33983",
+     "texto": "Irán considera permitir que Europa participe en operación de desminado del Estrecho de Ormuz, posible paso hacia reapertura con cooperación internacional.",
+     "tgUrl": "https://t.me/walterbloomberg/33983"
+    },
+    {
+     "fecha": "2026-08-04T13:46:51+00:00",
+     "id": "33975",
+     "texto": "Analistas de envíos se muestran escépticos sobre la recuperación rápida del tráfico en el Estrecho de Ormuz, a pesar del optimismo de Bessent sobre acuerdo USA-Irán. Kpler registró solo 9 barcos cruzando el domingo (2 petroleros). Flujos de crudo estimados en 3–5 mbd, muy por debajo de los 20 mbd pre-conflicto. Saudi Aramco advierte que reposición de inventarios podría tomar hasta 18 meses incluso con reapertura inmediata.",
+     "tgUrl": "https://t.me/walterbloomberg/33975"
+    },
+    {
+     "fecha": "2026-08-04T11:46:02+00:00",
+     "id": "33958",
+     "texto": "Futuros de Brent retroceden más del 1% ante optimismo de un posible acuerdo entre EE.UU. e Irán para resolver la situación del Estrecho de Ormuz. El mercado de energía descuenta reducción de primas de riesgo geopolítico.",
+     "tgUrl": "https://t.me/walterbloomberg/33958"
+    },
+    {
+     "fecha": "2026-08-04T11:44:15+00:00",
+     "id": "33955",
+     "texto": "El Secretario del Tesoro estadounidense Scott Bessent señaló en entrevista con CNBC que podría haber un acuerdo sobre la reapertura del Estrecho de Ormuz para el martes o miércoles. Bessent confirmó contacto cercano con Japón respecto a intervenciones cambiarias y advirtió que una debilitación del yen podría arrastrar otras divisas.",
+     "tgUrl": "https://t.me/walterbloomberg/33955"
+    },
+    {
+     "fecha": "2026-08-04T09:32:16+00:00",
+     "id": "33916",
+     "texto": "El Ministerio de Petróleo de Irak informó mediante medios estatales que buques transportando crudo iraquí han atravesado el Estrecho de Ormuz. Esta confirmación sigue a reportes previos sobre tensiones en la región y acuerdos anunciados para la reapertura del paso estratégico. El titular no especifica volúmenes ni fechas exactas del tránsito.",
+     "tgUrl": "https://t.me/walterbloomberg/33916"
+    },
+    {
+     "fecha": "2026-08-04T09:01:12+00:00",
+     "id": "33911",
+     "texto": "El CEO de Saudi Aramco, Amin Nasser, confirmó que el conflicto con Irán ha retirado 2.600 millones de barriles de crudo de la oferta global. El tránsito por el Estrecho de Ormuz cayó a 10% de niveles previos a la guerra; cada semana cerrado implica pérdida de 100 millones de barriles. La reconstrucción de inventarios podría tomar hasta 18 meses incluso si la ruta reabre hoy.",
+     "tgUrl": "https://t.me/walterbloomberg/33911"
+    },
+    {
+     "fecha": "2026-08-03T18:13:56+00:00",
+     "id": "33907",
+     "texto": "Trump afirma no permitir que Irán cobre tarifas por paso a través del Estrecho de Ormuz, reiterando soberanía de la zona como vía de tránsito internacional. Declara que no tolerará «peajes» iraníes, lo que implica resistencia a cualquier mecanismo de control iraniano sobre flujos.",
+     "tgUrl": "https://t.me/walterbloomberg/33907"
+    },
+    {
+     "fecha": "2026-08-03T18:03:53+00:00",
+     "id": "33906",
+     "texto": "Trump declara que negocia tener el Estrecho de Ormuz abierto en 24 horas. Afirmación refleja intención de resolver crisis mediante negociación acelerada, aunque el titular no especifica condiciones ni mécanismos. Marca compresión extrema de tiempos diplomáticos.",
+     "tgUrl": "https://t.me/walterbloomberg/33906"
+    },
+    {
+     "fecha": "2026-08-03T18:01:45+00:00",
+     "id": "33905",
+     "texto": "Trump reafirma ultimátum a Irán para firmar acuerdo, declarando que es su «última oportunidad». Esto se suma a declaraciones previas sobre mantener abierto el Estrecho de Ormuz y no permitir cobros de peaje por tránsito. Marca endurecimiento retórico en negociaciones nucleares tras pausa anunciada hace días.",
+     "tgUrl": "https://t.me/walterbloomberg/33905"
+    },
+    {
+     "fecha": "2026-08-03T15:27:15+00:00",
+     "id": "33890",
+     "texto": "Trump aseguró que marina estadounidense controla completamente acceso al Estrecho de Ormuz; nada entra a Irán sin aprobación USA. Acusa a Irán de negociar privately mientras niega públicamente; advierte sanciones permanecen hasta acuerdo o 'rendición total'. Reafirma postura: 'Irán nunca tendrá arma nuclear'.",
+     "tgUrl": "https://t.me/walterbloomberg/33890"
+    },
+    {
+     "fecha": "2026-08-03T13:51:37+00:00",
+     "id": "33879",
+     "texto": "Trump elogió desempeño de Chevron y atribuyó éxito a políticas energéticas de su administración, incluyendo retorno a Venezuela. Presionó a Chevron y sector petrolero para reducir precios al consumidor inmediatamente. Declaración parte de narrativa sobre control geopolítico del petróleo y sanciones a Irán.",
+     "tgUrl": "https://t.me/walterbloomberg/33879"
+    },
+    {
+     "fecha": "2026-08-03T10:28:26+00:00",
+     "id": "33859",
+     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
+     "tgUrl": "https://t.me/walterbloomberg/33859"
+    },
+    {
+     "fecha": "2026-08-03T10:03:27+00:00",
+     "id": "33856",
+     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
+     "tgUrl": "https://t.me/walterbloomberg/33856"
+    },
+    {
+     "fecha": "2026-08-03T04:44:30.000Z",
+     "id": "991847143",
+     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
+    },
+    {
+     "fecha": "2026-08-02T23:33:07.000Z",
+     "id": "990424278",
+     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
+     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
+    },
+    {
+     "fecha": "2026-08-02T21:45:46+00:00",
+     "id": "33844",
+     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
+     "tgUrl": "https://t.me/walterbloomberg/33844"
+    },
+    {
+     "fecha": "2026-08-02T21:44:13+00:00",
+     "id": "33843",
+     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
+     "tgUrl": "https://t.me/walterbloomberg/33843"
+    },
+    {
+     "fecha": "2026-08-02T16:40:18+00:00",
+     "id": "33836",
+     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
+     "tgUrl": "https://t.me/walterbloomberg/33836"
+    },
+    {
+     "fecha": "2026-08-02T16:35:19+00:00",
+     "id": "33835",
+     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
+     "tgUrl": "https://t.me/walterbloomberg/33835"
+    },
+    {
+     "fecha": "2026-08-02T11:52:45+00:00",
+     "id": "33834",
+     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
+     "tgUrl": "https://t.me/walterbloomberg/33834"
+    }
+   ],
+   "actualizado": "2026-08-05T09:01:07+00:00"
+  },
+  {
+   "id": "34015",
+   "fecha": "2026-08-05T08:31:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34015",
+   "via": "DeItaone",
+   "original": "$SPCX : JP MORGAN RAISES TARGET PRICE TO $240 FROM $225",
+   "titulo": "JPMorgan alza target SpaceX a $240; refuerza sesgo alcista bancario post-earnings",
+   "resumen": "JPMorgan eleva objetivo de precio en SpaceX de $225 a $240, validando narrativa alcista post-IPO. Constituye cuarta institución en actualizar target en 2 horas; rango actual analista oscila $140 (Piper Sandler) a $240 (JPM), indicando incertidumbre pero sesgo alcista dominante entre majors.",
+   "analisis": {
+    "porque": "Mayor banco de inversión global amplía target en $15; señal de confianza en defensibilidad de margen IA y capex; presión alcista contrapesa disenso de Piper",
+    "queOcurrio": "JPMorgan sube target sin contexto detallado en titular; se asume basado en earnings beats similares a rationale de Mizuho/BofA",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "SPCX",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "SPCX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX-IPO",
+    "price-target-raise",
+    "JPMorgan",
+    "analyst-consensus",
+    "post-earnings"
+   ],
+   "tgText": "📈 JPMorgan alza target SPCX a $240 vs $225. Rango analista hoy: $140-$240. Consenso alcista de majors pero disenso visible con Piper Sandler.",
+   "xText": "$SPCX: JPMorgan eleva target $225→$240. Rango hoy: $140 (Piper)–$240 (JPM). Disenso entre bancos post-earnings pero majors se inclinan alcista.",
+   "discordText": "**SPCX | JPMorgan eleva $225→$240**\n• Cuarta institución actualizando hoy\n• Rango: $140–$240 (disenso maximal)\n• Sesgo alcista dominante en majors\n• Refleja confianza en margen IA y capex defensible",
+   "pushText": "JPMorgan eleva target SPCX a $240; sesgo alcista de majors vs Piper Sandler",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "SPCX: refuerzo alcista contrapesa Piper; si volumen alto, presión compradora en cortos; volatilidad intraday muy elevada típica en IPOs con disenso",
+    "despues": "QQQ si rotación tech persiste; valuaciones peers infraestructura; call options corto plazo (delta positivo intraday)",
+    "escenarios": "Traders ven: (1) majors (JPM, Mizuho, BofA) vs Piper = battle of narratives (calidad crecimiento vs dilución); (2) dónde cierra SPCX hoy marca pivote para semana; (3) si cae a $140 rompe supports, si sube a $240 requiere shorts cubrirse",
+    "riesgos": "JPM no detalló en titular; asunción es que rationale es similar a peers; riesgo que target sea defensivo vs Piper para no perder negocios con Musk"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "dolar": "neutral",
+    "bonos": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34014",
+   "fecha": "2026-08-05T08:13:21+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34014",
+   "via": "DeItaone",
+   "original": "$SPCX - PIPER SANDLER CUTS SPACEX PRICE TARGET Piper Sandler lowered its SpaceX (NASDAQ: SPCX) price target to $140 from $156, while maintaining a Neutral rating. Despite strong first earnings that beat expectations, the firm sees valuation headwinds. Concerns include a 140% increase in tradable shares, higher-than-expected FY27 capex (~$65B), and uncertainty around the durability of AI cloud cont",
+   "titulo": "Piper Sandler baja target SpaceX a $140 por riesgo de valuación y capex superior",
+   "resumen": "Piper Sandler reduce objetivo de precio en SpaceX de $156 a $140, manteniendo rating Neutral. Pese a earnings sólidos, advierte sobre riesgos: aumento 140% en acciones negociables, capex FY27 estimado en ~$65B (superior a expectativas) e incertidumbre sobre durabilidad de contratos cloud IA. Espera presión hasta vencimiento lock-up verano 2027.",
+   "analisis": {
+    "porque": "Disenso analítico inmediato post-earnings; señala dilución accionaria y capex insostenible como frenos a valuación premium; riesgo de corrección en SpaceX post-IPO",
+    "queOcurrio": "Único banco importante que cita 'headwinds valuación' explícitamente; advierte sobre 140% aumento shares tradables (dilución) y capex que cuadriplica expectativas",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "SPCX",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "SPCX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Tech Growth",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX-IPO",
+    "price-target-cut",
+    "valuation-risk",
+    "capex-warning",
+    "share-dilution"
+   ],
+   "tgText": "⚠️ Piper Sandler baja target SPCX a $140 vs $156. Riesgos: dilución 140%, capex FY27 ~$65B, durabilidad contratos IA. Rating Neutral, espera presión hasta lock-up 2027.",
+   "xText": "Piper Sandler ↓ $SPCX target $140 vs $156 (Neutral). Advertencias: dilución 140% shares, capex $65B superior, incertidumbre contratos IA cloud. Presión hasta 2027.",
+   "discordText": "**SPCX | Piper Sandler Neutral $140 (-$16)**\n⚠️ Riesgos:\n• Dilución accionaria +140%\n• Capex FY27 ~$65B (vs esperado)\n• Durabilidad contratos IA incierta\n• Presión hasta lock-up jun 2027",
+   "pushText": "SPCX: Piper Sandler reduce target a $140, advierte dilución y capex alto",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "SPCX: presión bajista inmediata; crea divergencia visible entre Mizuho ($200) y Piper ($140) que dispara volatilidad y decisiones de cobertura corta; sell-off típico si institucionales reasignan",
+    "despues": "QQQ, S&P 500 si giro es parte de corrección tech más amplia; bonos corporativos SpaceX si yield spread se amplía; acciones satélites competidoras pueden revalorizarse",
+    "escenarios": "Traders monitorean: (1) cuál banco gana disenso (Mizuho vs Piper vs JPM/BofA); (2) velocidad de lock-up y presión de dilución real vs teórica; (3) si capex $65B afecta free cash flow 2027-28; (4) sostenibilidad márgenes IA vs. costo de capital",
+    "riesgos": "Disenso analítico legítimo pero ambos lados tienen razón parcial: earnings sí fueron sólidos (Mizuho) pero dilución/capex son reales (Piper); riesgo que headline de Piper deprime más que fundamentos"
+   },
+   "macro": {
+    "nasdaq": "bajista",
+    "dolar": "neutral",
+    "bonos": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": "34012",
    "fecha": "2026-08-05T07:01:14+00:00",
@@ -829,80 +1306,6 @@
    "updates": []
   },
   {
-   "id": "34001",
-   "fecha": "2026-08-04T20:42:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34001",
-   "via": "DeItaone",
-   "original": "$NVDA - SPACEX CEO ELON MUSK SAYS GOING FORWARD, WE'VE DECIDED TO BUILD EXCLUSIVELY ON NVIDIA",
-   "titulo": "SpaceX construirá exclusivamente sobre chips Nvidia; cambio de estrategia crítico",
-   "resumen": "Elon Musk anunció que SpaceX ha decidido construir exclusivamente sobre arquitectura Nvidia de cara adelante. Decisión implica consolidación de supply chain de procesamiento en ecosistema Nvidia para satélites, IA orbital y sistemas de tierra. Representa validación institucional de liderazgo Nvidia en cargas computacionales espaciales.",
-   "analisis": {
-    "porque": "SpaceX exclusividad con Nvidia amplifica dependencia sistémica de infraestructura de IA en proveedor único. Para mercados: (1) Nvidia gana moat defensivo en mercado satelital emergente, (2) SpaceX reduce riesgo geopolítico/supply chain, (3) señal alcista para stack Nvidia en aplicaciones edge/espacio. Contrasta con narrativa de 'alternativas' (AMD, Intel) ganando cuota.",
-    "queOcurrio": "Musk comunicó en presentación de resultados que SpaceX exclusivamente usará Nvidia forward. Cambio de arquitectura anterior (potencialmente mixta o alternativas) a monolítico Nvidia.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NVDA",
-    "SPCX",
-    "Semiconductores",
-    "Nasdaq",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVDA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "AMD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Nvidia",
-    "SpaceX",
-    "exclusividad",
-    "IA-espacial",
-    "arquitectura-chips"
-   ],
-   "tgText": "🚀 SpaceX exclusivamente Nvidia: Musk anuncia cambio a arquitectura única Nvidia para todos los sistemas. Amplia moat defensivo Nvidia en espacio y satélites.",
-   "xText": "🚀 SpaceX elige exclusiva Nvidia: Musk confirma cambio a arquitectura única Nvidia para satélites e IA orbital. Valida dominio Nvidia en edge computing espacial. $NVDA",
-   "discordText": "**SpaceX-Nvidia Exclusiva**\n🚀 Elon Musk anuncia:\n• SpaceX construirá **exclusivamente sobre Nvidia**\n• Cambio de estrategia crítico para IA orbital\n• Amplía moat defensivo Nvidia en mercado espacial",
-   "pushText": "SpaceX elige exclusivamente Nvidia; amplia moat defensivo en IA espacial",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "NVDA: overnight futures suben +0.5-1% en Asian trade; desk semiconductios revisa múltiplos upside. Exclusividad elimina riesgo competitivo AMD/QUALCOMM en vertical espacial de alto margen.",
-    "despues": "AMD, QCOM: mercado reprecia riesgo de exclusión en mercados edge/IoT/espacio; ambas pueden caer -1 a -2% en ajuste de expectativa de TAM. Semicon índice se refuerza por NVDA peso.",
-    "escenarios": "Traders vigilan: (1) si exclusividad SpaceX es precedente para otros satélites/clientes (Amazon, OneWeb, etc.) o aislado, (2) márgenes Nvidia en aplicaciones espaciales vs data center, (3) geopolítica: Nvidia exclusiva SpaceX simplifica narrative anti-China en cadena crítica USA.",
-    "riesgos": "Anuncio sin detalles de contrato; exclusividad podría ser aspiracional (roadmap) vs contractual vinculante. Si clientes SpaceX presionan costo/flexibilidad, cambio podría revertirse. AMD/QUALCOMM podrían reposicionarse con soluciones edge competitivas."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-08-04T21:38:25+00:00",
-     "id": "34009",
-     "texto": "Nvidia fue incluida en reunión entre administración Trump y empresas desarrolladoras de IA, según dos fuentes familiarizadas con las discusiones. El titular no especifica agenda, participantes exactos ni resultados, pero refleja rol central de Nvidia en políticas de IA de la administración.",
-     "tgUrl": "https://t.me/walterbloomberg/34009"
-    },
-    {
-     "fecha": "2026-08-04T21:05:42+00:00",
-     "id": "34005",
-     "texto": "Elon Musk confirmó que SpaceX espera recibir un «porcentaje significativo» de GPUs Nvidia durante 2027. Esta declaración refuerza la estrategia de dependencia de chips Nvidia para operaciones de inteligencia artificial y satélites. El titular no especifica volumen exacto ni timeline preciso.",
-     "tgUrl": "https://t.me/walterbloomberg/34005"
-    }
-   ],
-   "actualizado": "2026-08-04T21:38:25+00:00"
-  },
-  {
    "id": "34008",
    "fecha": "2026-08-04T21:36:19+00:00",
    "tgUrl": "https://t.me/walterbloomberg/34008",
@@ -1086,215 +1489,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33833",
-   "fecha": "2026-08-02T08:57:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33833",
-   "via": "DeItaone",
-   "original": "TRUMP PAUSES IRAN STRIKE FOR DEAL President Donald Trump said the U.S. will hold off on a planned attack on Iran if a rapid agreement is reached to curb Tehran’s nuclear program and fully reopen the Strait of Hormuz. Trump said Iran and other Middle Eastern countries requested time to finalize a deal, adding Israel supports the pause while the U.S. remains ready to strike if talks fail. Iran denie",
-   "titulo": "Trump pausa ataque a Irán a cambio de acuerdo nuclear y reapertura del Estrecho de Ormuz",
-   "resumen": "El presidente Trump anuncia pausa en ataque planificado contra Irán si se logra acuerdo rápido para frenar programa nuclear y reabrir Estrecho de Ormuz. Israel respalda pausa; EE.UU. permanece listo para atacar si negociaciones fallan. Irán niega haber solicitado pausa y dice fuerzas en máxima alerta. Irán advierte sobre respuesta proporcional; Arabia Saudita urge diálogo.",
-   "analisis": {
-    "porque": "Escalada geopolítica con potencial para afectar precios de petróleo, divisas (dólar, rial) y activos de riesgo. Pausa temporal reduce volatilidad pero riesgo de ruptura de negociaciones permanece alto.",
-    "queOcurrio": "Trump condiciona pausa de ataque militar a avances en negociaciones nucleares. Irán desmente solicitud de pausa pero ambos bandos aparentemente abiertos a diálogo.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "DXY",
-    "EURUSD",
-    "Oro",
-    "VIX",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Trump",
-    "Irán",
-    "nuclear",
-    "Ormuz",
-    "negociaciones",
-    "pausa militar",
-    "Oriente Medio"
-   ],
-   "tgText": "🛑 Trump pausa ataque a Irán si hay acuerdo nuclear rápido. Israel respalda; negociaciones abiertas pero riesgo de ruptura. Petróleo cede, oro sube.",
-   "xText": "Trump condiciona pausa de ataque a Irán a acuerdo nuclear rápido y reapertura del Estrecho de Ormuz. Israel respalda; EE.UU. listo si negociaciones fallan. Mercados reaccionan: petróleo baja, oro sube.",
-   "discordText": "**Trump pausa ataque a Irán**\n• Condición: acuerdo nuclear rápido + reapertura Estrecho Ormuz\n• Israel respalda pausa\n• Irán en máxima alerta pero abierto a diálogo\n• **Reacción**: Petróleo ↓, Oro ↑, VIX ↓",
-   "pushText": "Trump pausa ataque a Irán si hay acuerdo nuclear rápido",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo Brent/WTI: baja por alivio temporal de riesgo geopolítico; mercado esperaba escalada inmediata. Oro también presionado por cierre temporal de safe-haven.",
-    "despues": "Dólar (DXY) podría subir si alivio geopolítico reduce demanda de divisas seguras. Acciones de riesgo en emergentes podrían recuperarse. VIX hacia 15-17.",
-    "escenarios": "Traders monitoreán: (1) cronograma de negociaciones próximas; (2) señales de Irán sobre disposición real; (3) posición de Israel en si-no de ataque preventivo. (4) Comunicados de Casa Blanca sobre condiciones de pausa. Ruptura de negociaciones = spike inmediato en petróleo y oro.",
-    "riesgos": "Irán niega haber solicitado pausa (potencial contradicción de Trump). Históricamente negociaciones Iran-EE.UU. han colapsado. Riesgo de ataque sorpresa si condiciones no se cumplen. Titular no especifica plazo de negociaciones."
-   },
-   "macro": {
-    "dolar": "alcista corto plazo (alivio geopolítico)",
-    "oro": "bajista corto plazo",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "petroleo": "bajista",
-    "bonos": "neutral a alcista"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-04T20:37:47+00:00",
-     "id": "33996",
-     "texto": "Fuentes militares advierten que EE.UU. ha gastado casi 80% de interceptores THAAD y ~50% de misiles Patriot desde inicio de la guerra con Irán. Mandos militares alertan de stockpiles 'peligrosamente bajos', elevando riesgos de respuesta a nuevos conflictos. Aliados del Golfo expresan preocupación por capacidad defensiva aérea compartida.",
-     "tgUrl": "https://t.me/walterbloomberg/33996"
-    },
-    {
-     "fecha": "2026-08-04T15:40:19+00:00",
-     "id": "33983",
-     "texto": "Irán considera permitir que Europa participe en operación de desminado del Estrecho de Ormuz, posible paso hacia reapertura con cooperación internacional.",
-     "tgUrl": "https://t.me/walterbloomberg/33983"
-    },
-    {
-     "fecha": "2026-08-04T13:46:51+00:00",
-     "id": "33975",
-     "texto": "Analistas de envíos se muestran escépticos sobre la recuperación rápida del tráfico en el Estrecho de Ormuz, a pesar del optimismo de Bessent sobre acuerdo USA-Irán. Kpler registró solo 9 barcos cruzando el domingo (2 petroleros). Flujos de crudo estimados en 3–5 mbd, muy por debajo de los 20 mbd pre-conflicto. Saudi Aramco advierte que reposición de inventarios podría tomar hasta 18 meses incluso con reapertura inmediata.",
-     "tgUrl": "https://t.me/walterbloomberg/33975"
-    },
-    {
-     "fecha": "2026-08-04T11:46:02+00:00",
-     "id": "33958",
-     "texto": "Futuros de Brent retroceden más del 1% ante optimismo de un posible acuerdo entre EE.UU. e Irán para resolver la situación del Estrecho de Ormuz. El mercado de energía descuenta reducción de primas de riesgo geopolítico.",
-     "tgUrl": "https://t.me/walterbloomberg/33958"
-    },
-    {
-     "fecha": "2026-08-04T11:44:15+00:00",
-     "id": "33955",
-     "texto": "El Secretario del Tesoro estadounidense Scott Bessent señaló en entrevista con CNBC que podría haber un acuerdo sobre la reapertura del Estrecho de Ormuz para el martes o miércoles. Bessent confirmó contacto cercano con Japón respecto a intervenciones cambiarias y advirtió que una debilitación del yen podría arrastrar otras divisas.",
-     "tgUrl": "https://t.me/walterbloomberg/33955"
-    },
-    {
-     "fecha": "2026-08-04T09:32:16+00:00",
-     "id": "33916",
-     "texto": "El Ministerio de Petróleo de Irak informó mediante medios estatales que buques transportando crudo iraquí han atravesado el Estrecho de Ormuz. Esta confirmación sigue a reportes previos sobre tensiones en la región y acuerdos anunciados para la reapertura del paso estratégico. El titular no especifica volúmenes ni fechas exactas del tránsito.",
-     "tgUrl": "https://t.me/walterbloomberg/33916"
-    },
-    {
-     "fecha": "2026-08-04T09:01:12+00:00",
-     "id": "33911",
-     "texto": "El CEO de Saudi Aramco, Amin Nasser, confirmó que el conflicto con Irán ha retirado 2.600 millones de barriles de crudo de la oferta global. El tránsito por el Estrecho de Ormuz cayó a 10% de niveles previos a la guerra; cada semana cerrado implica pérdida de 100 millones de barriles. La reconstrucción de inventarios podría tomar hasta 18 meses incluso si la ruta reabre hoy.",
-     "tgUrl": "https://t.me/walterbloomberg/33911"
-    },
-    {
-     "fecha": "2026-08-03T18:13:56+00:00",
-     "id": "33907",
-     "texto": "Trump afirma no permitir que Irán cobre tarifas por paso a través del Estrecho de Ormuz, reiterando soberanía de la zona como vía de tránsito internacional. Declara que no tolerará «peajes» iraníes, lo que implica resistencia a cualquier mecanismo de control iraniano sobre flujos.",
-     "tgUrl": "https://t.me/walterbloomberg/33907"
-    },
-    {
-     "fecha": "2026-08-03T18:03:53+00:00",
-     "id": "33906",
-     "texto": "Trump declara que negocia tener el Estrecho de Ormuz abierto en 24 horas. Afirmación refleja intención de resolver crisis mediante negociación acelerada, aunque el titular no especifica condiciones ni mécanismos. Marca compresión extrema de tiempos diplomáticos.",
-     "tgUrl": "https://t.me/walterbloomberg/33906"
-    },
-    {
-     "fecha": "2026-08-03T18:01:45+00:00",
-     "id": "33905",
-     "texto": "Trump reafirma ultimátum a Irán para firmar acuerdo, declarando que es su «última oportunidad». Esto se suma a declaraciones previas sobre mantener abierto el Estrecho de Ormuz y no permitir cobros de peaje por tránsito. Marca endurecimiento retórico en negociaciones nucleares tras pausa anunciada hace días.",
-     "tgUrl": "https://t.me/walterbloomberg/33905"
-    },
-    {
-     "fecha": "2026-08-03T15:27:15+00:00",
-     "id": "33890",
-     "texto": "Trump aseguró que marina estadounidense controla completamente acceso al Estrecho de Ormuz; nada entra a Irán sin aprobación USA. Acusa a Irán de negociar privately mientras niega públicamente; advierte sanciones permanecen hasta acuerdo o 'rendición total'. Reafirma postura: 'Irán nunca tendrá arma nuclear'.",
-     "tgUrl": "https://t.me/walterbloomberg/33890"
-    },
-    {
-     "fecha": "2026-08-03T13:51:37+00:00",
-     "id": "33879",
-     "texto": "Trump elogió desempeño de Chevron y atribuyó éxito a políticas energéticas de su administración, incluyendo retorno a Venezuela. Presionó a Chevron y sector petrolero para reducir precios al consumidor inmediatamente. Declaración parte de narrativa sobre control geopolítico del petróleo y sanciones a Irán.",
-     "tgUrl": "https://t.me/walterbloomberg/33879"
-    },
-    {
-     "fecha": "2026-08-03T10:28:26+00:00",
-     "id": "33859",
-     "texto": "Irán descartó reabrir negociaciones nucleares con EE.UU. pese a comentarios de Trump sobre posible acuerdo. Teherán señaló enfoque en acuerdo de envío separado con Omán, no en reapertura del Estrecho de Ormuz. Acusó a Washington de violar memorándum de junio y advierte que sin cambios en medidas estadounidenses no habrá progreso.",
-     "tgUrl": "https://t.me/walterbloomberg/33859"
-    },
-    {
-     "fecha": "2026-08-03T10:03:27+00:00",
-     "id": "33856",
-     "texto": "John Williams (presidente Fed Nueva York) respaldó la posición de política actual, afirmando que esta sigue siendo adecuada para retornar inflación al 2%. Espera que presiones de precios por Medio Oriente se disuelvan. Descartó necesidad de seguir precios de mercado y negó amenaza de estabilidad financiera por inversiones en IA.",
-     "tgUrl": "https://t.me/walterbloomberg/33856"
-    },
-    {
-     "fecha": "2026-08-03T04:44:30.000Z",
-     "id": "991847143",
-     "texto": "Donald Trump anuncia que las conversaciones nucleares con Irán se reanudarán el lunes, después de que llamara de ataques militares planeados. El titular no especifica términos ni intermediarios en las negociaciones.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html"
-    },
-    {
-     "fecha": "2026-08-02T23:33:07.000Z",
-     "id": "990424278",
-     "texto": "Los precios del crudo descendieron más de 4% después de que Trump anunciara la cancelación del ataque militar planeado contra Irán. Esta decisión reduce la prima de riesgo geopolítico que había presionado al alza los precios energéticos. El movimiento refleja alivio en los mercados respecto a la escalada de tensiones en Medio Oriente.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html"
-    },
-    {
-     "fecha": "2026-08-02T21:45:46+00:00",
-     "id": "33844",
-     "texto": "Trump declara que nuevas negociaciones sobre programa nuclear iraní comenzarán el lunes por la tarde. Esto representa la formalización del diálogo bilateral tras la pausa de strikes. El titular no proporciona detalles sobre participantes, mediadores ni agenda específica.",
-     "tgUrl": "https://t.me/walterbloomberg/33844"
-    },
-    {
-     "fecha": "2026-08-02T21:44:13+00:00",
-     "id": "33843",
-     "texto": "Trump revela que Arabia Saudita, EAU, Qatar e Irán le pidieron pausar strikes planeados. Sostiene que un acuerdo sobre el Estrecho de Ormuz está cerca, seguido por negociaciones sobre el programa nuclear iraní. Las conversaciones formales comenzarían el lunes por la tarde. El titular no especifica términos ni cronograma definitivo.",
-     "tgUrl": "https://t.me/walterbloomberg/33843"
-    },
-    {
-     "fecha": "2026-08-02T16:40:18+00:00",
-     "id": "33836",
-     "texto": "Portavoz del Ministerio de Asuntos Exteriores de Irán precisa que el entendimiento bilateral con Omán sobre una nueva ruta NO implica apertura ni cierre del Estrecho de Ormuz. La aclaración enfatiza que se trata de un arreglo específico entre ambas naciones, no una solución regional definitiva ni alteración del estatus quo del estrecho.",
-     "tgUrl": "https://t.me/walterbloomberg/33836"
-    },
-    {
-     "fecha": "2026-08-02T16:35:19+00:00",
-     "id": "33835",
-     "texto": "El Ministerio de Asuntos Exteriores de Irán confirma que las negociaciones con Omán sobre una ruta alternativa en el Estrecho de Ormuz están en etapas finales. El acuerdo no implica cierre ni reapertura del estrecho, sino un entendimiento bilateral sobre una nueva vía de tránsito. Este desarrollo actualiza las conversaciones previas sobre desescalada nuclear y acceso energético regional.",
-     "tgUrl": "https://t.me/walterbloomberg/33835"
-    },
-    {
-     "fecha": "2026-08-02T11:52:45+00:00",
-     "id": "33834",
-     "texto": "Irán rechaza reportes sobre un acuerdo para reabrir el Estrecho de Ormuz, según fuentes citadas por Fars News. El régimen mantendrá el estrecho cerrado mientras acusa a EE.UU. de \"acciones hostiles\". Solo permitirá paso de buques por rutas designadas con autorización de la Armada de la Guardia Revolucionaria (IRGC).",
-     "tgUrl": "https://t.me/walterbloomberg/33834"
-    }
-   ],
-   "actualizado": "2026-08-04T20:37:47+00:00"
   },
   {
    "id": "33991",
@@ -7382,180 +7576,6 @@
     "nasdaq": "alcista",
     "sp500": "alcista",
     "bonos": "bajista (precios) si empleo fuerte"
-   },
-   "updates": []
-  },
-  {
-   "id": 975785698,
-   "fecha": "2026-07-31T18:46:45.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/top-investment-ideas-as-interest-rate-uncertainty-grips-market-.html",
-   "via": "CNBC",
-   "original": "Investors may want to focus on front end of yield curve — as Street anticipates next Fed meetings",
-   "titulo": "Street vigila parte corta de curva; anticipan reuniones críticas de la Fed en próximas sesiones",
-   "resumen": "Analistas recomiendan enfoque en el frente corto de la curva de rendimientos ante anticipadas reuniones de la Fed. Señal de que mercados esperan cambios en política monetaria de corto plazo. El titular no especifica fechas exactas de reuniones ni decisiones esperadas.",
-   "analisis": {
-    "porque": "El posicionamiento en la curva de rendimientos (duración corta vs. larga) es central en estrategias de hedge y asignación; afecta directamente precios de bonos y expectativas de tasas.",
-    "queOcurrio": "Street (analistas y traders) enfoca atención en tramos de 2-5 años de la curva de rendimientos ante próximas decisiones de la Fed.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA (corto plazo)",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "curva de rendimientos",
-    "política monetaria",
-    "bonos",
-    "tasas cortas"
-   ],
-   "tgText": "📈 Street enfoca en parte corta de curva antes de reuniones Fed. Expectativa de cambios en tasas cortas próximamente.",
-   "xText": "💹 Analistas vigilan frente corto de curva de rendimientos ante próximas reuniones de la Fed. Señal de volatilidad esperada.",
-   "discordText": "**Fed/Bonos** → Street apunta al frente corto de la curva\n• Anticipan cambios en tasas cortas\n• Reuniones críticas por venir",
-   "pushText": "Traders enfocados en corto plazo de curva; Fed reuniones claves adelante",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bonos a corto plazo (2Y, 3Y) volátiles; spread 2Y-10Y vigilado por carry traders.",
-    "despues": "Si hay alza de tasas cortas, NASDAQ y acciones de crecimiento presionadas; USD sube.",
-    "escenarios": "Traders buscan: (1) cambios en pendiente de curva; (2) inflación real vs. nominal esperada; (3) decisiones de política monetaria de corto vs. largo plazo.",
-    "riesgos": "Titular genérico sin detalles de qué reuniones ni cuándo; puede ser preparación de mercado sin novedad inmediata."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 989858790,
-   "fecha": "2026-07-31T18:34:20.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/andy-jassy-soothed-concerns-over-amazons-massive-ai-spending-heres-how-he-did-it-.html",
-   "via": "CNBC",
-   "original": "Andy Jassy soothed concerns over Amazon&apos;s massive AI spending. Here&apos;s how he did it",
-   "titulo": "Jassy tranquiliza inversores sobre gasto masivo en IA de Amazon",
-   "resumen": "El CEO Andy Jassy de Amazon abordó preocupaciones sobre los gastos de capital e inversión en IA. El titular no especifica el mecanismo exacto de cómo calmó a inversores ni cifras concretas de gasto, pero se alinea con validación previa de Bernstein sobre flujo de ingresos IA.",
-   "analisis": {
-    "porque": "Los capex masivos en IA generan dudas sobre retorno de inversión; claridad sobre rentabilidad es central para valuación de megacaps tech y confianza de inversores.",
-    "queOcurrio": "Jassy presentó argumentos para calmar preocupaciones sobre el alcance del gasto en IA de Amazon.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "AMZN",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Amazon",
-    "IA",
-    "capex",
-    "gasto capital",
-    "rentabilidad",
-    "Andy Jassy"
-   ],
-   "tgText": "🤖 Jassy (Amazon) tranquiliza sobre gasto masivo en IA. Inversores buscan ratios de retorno esperados.",
-   "xText": "📊 CEO Amazon Jassy seda preocupaciones por IA capex; mercado atiende argumentos de rentabilidad a futuro.",
-   "discordText": "**Empresas/Tech** → Amazon (Jassy) aborda gasto IA\n• Tranquiliza inversores sobre capex\n• Énfasis en retorno de inversión",
-   "pushText": "Amazon: Jassy calma temores sobre inversión masiva en IA",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "AMZN reacciona alcista si mercado percibe claridad sobre ROI; NASDAQ sigue.",
-    "despues": "Efecto contagio en otras megacaps tech (MSFT, GOOGL, NVDA) si validación de IA spending resuena.",
-    "escenarios": "Traders vigilan: (1) ratios de retorno esperado en IA; (2) guidance de capex futuro; (3) competencia en gastos (Meta, Microsoft).",
-    "riesgos": "Titular no cita números específicos; mercado puede reinterpretar si guía futura es menos optimista."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 960457473,
-   "fecha": "2026-07-31T18:16:18.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/kevin-warsh-fed-inflation-rate-hike-markets.html",
-   "via": "CNBC",
-   "original": "Analysis: Markets heard a dovish Kevin Warsh. The Fed chairman&apos;s own words suggest a rate hike",
-   "titulo": "Warsh señala alza de tasas a pesar de mensaje «dovish»; mercados reprecian escenario",
-   "resumen": "El análisis de CNBC sobre las declaraciones del presidente de la Fed, Kevin Warsh, revela que sus propias palabras sugieren una posible subida de tasas, contradictoriamente interpretadas como dovish por los mercados. El titular no especifica la fecha de estas declaraciones ni el contexto exacto de Warsh.",
-   "analisis": {
-    "porque": "La dirección futura de tasas es el principal driver de valuaciones de activos de riesgo y rendimientos de bonos. Una interpretación errónea del guidance de la Fed genera volatilidad cuando se corrige.",
-    "queOcurrio": "El mercado interpretó como dovish las palabras de Warsh, pero el análisis de CNBC sugiere que sus comentarios apuntan hacia una subida de tasas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "S&P500",
-    "NASDAQ",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "Kevin Warsh",
-    "tasas de interés",
-    "política monetaria",
-    "guidance"
-   ],
-   "tgText": "🏦 Análisis: Declaraciones de Warsh (Fed) sugieren alza de tasas pese a lectura dovish del mercado. Reprecio esperado en bonos y acciones.",
-   "xText": "📊 Warsh (Fed) dice alza de tasas en sus propias palabras, aunque mercados leyeron dovish. Sesgo alcista en rendimientos, bajista en riesgo.",
-   "discordText": "**Fed/Tasas** → Warsh señala subida de tasas a pesar de mensaje dovish\n• Mercados mal interpretaron declaraciones\n• Reprecio en bonos y equities esperado",
-   "pushText": "Warsh (Fed): alza de tasas según su propio análisis; mercados se reposicionan",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Rendimientos USA (10Y, 2Y) suben inmediatamente al reprecio de tasas alcistas; USD fortalecido.",
-    "despues": "S&P500, NASDAQ corrigen a la baja; bonos corporativos presionados; carry trades desenvueltos.",
-    "escenarios": "Traders vigilarán: (1) próximas reuniones de la Fed para confirmar/negar alza; (2) datos de empleo en agosto; (3) curva de rendimientos y su forma.",
-    "riesgos": "El titular es análisis editorial de CNBC, no cita directas de Warsh; interpretación puede variar. Riesgo de sobrerreacción."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "bajista",
-    "nasdaq": "bajista",
-    "dow": "bajista",
-    "sp500": "bajista",
-    "bonos": "bajista (precios)",
-    "petroleo": "neutral"
    },
    "updates": []
   }
