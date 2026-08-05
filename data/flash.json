@@ -1,7 +1,73 @@
 {
- "lastId": 34011,
- "actualizado": "2026-08-05T05:42:01.659Z",
+ "lastId": 34012,
+ "actualizado": "2026-08-05T08:08:06.408Z",
  "items": [
+  {
+   "id": "34012",
+   "fecha": "2026-08-05T07:01:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34012",
+   "via": "DeItaone",
+   "original": "YEMEN'S HOUTHIS SAY THEY ATTACKED VESSEL IN THE RED SEA -MILITARY SPOKESPERSON",
+   "titulo": "Hutíes yemenís reportan ataque a buque en el Mar Rojo; escalada geopolítica",
+   "resumen": "Portavoz militar hutí confirma ataque a embarcación en el Mar Rojo. Los ataques hutíes han persistido durante meses, afectando rutas comerciales críticas entre Europa y Asia. El titular no especifica daños, tipo de buque ni consecuencias inmediatas. Contexto: negociaciones del Estrecho de Ormuz avanzan pero tensiones regionales permanecen.",
+   "analisis": {
+    "porque": "Los ataques en el Mar Rojo impactan seguros marítimos, costos logísticos globales y precios de energía. Afectan directamente a índices de transporte, compañías navieras y expectativas de inflación de importaciones en EEUU y Europa.",
+    "queOcurrio": "Portavoz militar hutí anuncia ataque a un buque en el Mar Rojo; no se confirman detalles de víctimas, daños o identidad del objetivo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Bonos",
+    "USD",
+    "Seguros",
+    "Transporte Marítimo",
+    "Renta Variable Global"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent/WTI",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Yemen",
+    "Hutíes",
+    "Mar Rojo",
+    "Geopolítica",
+    "Transporte Marítimo",
+    "Seguros"
+   ],
+   "tgText": "🔴 Hutíes yemenís reportan ataque a buque en Mar Rojo. Escalada en tensiones regionales presiona petróleo y seguros marítimos. Negociaciones del Estrecho avanzan pero riesgos persisten.",
+   "xText": "Portavoz hutí confirma ataque a embarcación en Mar Rojo. Impacta rutas comerciales críticas y presiona costos logísticos globales. Petróleo y seguros marítimos en vigilancia.",
+   "discordText": "**Hutíes: Ataque a Buque en Mar Rojo**\n• Portavoz militar yemení confirma operación\n• Afecta rutas comerciales Europa-Asia\n• Impacto: seguros, petróleo, logística global\n• Contexto: negociaciones Estrecho avanzando pero tensiones altas",
+   "pushText": "Hutíes atacan buque en Mar Rojo; presiona petróleo y logística global",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo Brent/WTI: mercados de energía reaccionan primero a escaladas en Mar Rojo por riesgo a suministros; USD sube por demanda de refugio.",
+    "despues": "Índices navieros (si existen en AR4), seguros marítimos, rendimientos de bonos USA (inflación esperada), metales preciosos.",
+    "escenarios": "Traders vigilan: (1) Si ataque causa cierre de ruta o corte logístico; (2) Represalias que escalen conflicto; (3) Impacto en inflación importada; (4) Reacción de EEUU/aliados.",
+    "riesgos": "Titular es comunicado hutí sin verificación independiente. Historial: muchos anuncios hutíes no resultan en ataques materiales. Riesgo de escalada desproporcionada en pricing de petróleo."
+   },
+   "macro": {
+    "petroleo": "sesgo alcista por riesgo de interrupción",
+    "dolar": "sesgo alcista por demanda de refugio",
+    "bonos": "sesgo bajista por expectativa de inflación importada"
+   },
+   "updates": []
+  },
   {
    "id": "921182782",
    "fecha": "2026-08-05T05:27:54.000Z",
@@ -7490,65 +7556,6 @@
     "sp500": "bajista",
     "bonos": "bajista (precios)",
     "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "999449544",
-   "fecha": "2026-07-31T18:13:39.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
-   "via": "CNBC",
-   "original": "GM to launch proprietary in-vehicle AI system later this year",
-   "titulo": "GM lanzará sistema de IA integrada en vehículos a finales de año",
-   "resumen": "General Motors planea desplegar un sistema de inteligencia artificial propietario en sus vehículos durante el último trimestre de 2026. El lanzamiento representa competencia en software automotriz frente a Tesla y otros fabricantes con capacidades de IA integradas.",
-   "analisis": {
-    "porque": "La competencia en software automotriz con IA afecta valuaciones relativas de fabricantes de autos (GM, Ford, Stellantis) frente a Tesla, y genera demanda de semiconductores y componentes de procesamiento. Impacta expectativas de márgenes operacionales y poder de marca.",
-    "queOcurrio": "General Motors anunció planes para lanzar un sistema de IA propietario en sus vehículos antes de fin de 2026.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "GM",
-    "Automotor",
-    "Semiconductores",
-    "Tesla",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "GM",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Automotor",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "general-motors",
-    "ia-integrada",
-    "software-auto",
-    "competencia-tesla"
-   ],
-   "tgText": "🚗 GM lanzará IA propietaria en vehículos antes de fin 2026. Competencia en software automotriz frente a Tesla y otros fabricantes. #Automotriz #IA",
-   "xText": "General Motors planea desplegar sistema de IA integrada en vehículos en 2026. Movimiento competitivo en software automotriz. #Auto",
-   "discordText": "**GM entra en carrera de IA automotriz**\n• Sistema propietario antes de Q4 2026\n• Competencia directa vs Tesla\n• Apunta a márgenes y diferenciación",
-   "pushText": "GM lanzará IA integrada en vehículos antes de fin 2026; compite con Tesla",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de GM (General Motors) responden; impacto menor directo pero relevante para sentimiento de sector automotor.",
-    "despues": "Tesla (evaluación relativa de software), proveedores de semiconductores para autos (Qualcomm, NXP), fondos de automotor.",
-    "escenarios": "Traders vigilan: (1) capacidad real de IA GM vs expectativas = valuación relativa frente a Tesla; (2) impacto en márgenes = presión en costos de desarrollo; (3) demanda de chips de procesamiento para el sector.",
-    "riesgos": "Anuncio podría ser vaporware si implementación falla o es limitada. Impacto real dependerá de aceptación del consumidor y calidad relativa vs competencia."
-   },
-   "macro": {
-    "gm": "Positivo moderado; validación de capex en IA",
-    "automotor": "Neutral; competencia esperada en IA",
-    "semiconductores": "Demanda creciente en chips para autos"
    },
    "updates": []
   }
