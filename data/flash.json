@@ -1,7 +1,273 @@
 {
  "lastId": 34084,
- "actualizado": "2026-08-05T22:40:16.977Z",
+ "actualizado": "2026-08-06T02:02:04.780Z",
  "items": [
+  {
+   "id": 970922079,
+   "fecha": "2026-08-06T00:45:42.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/stock-market-today-live-updates.html",
+   "via": "CNBC",
+   "original": "Dow futures inch higher after blue-chip index posts new record close: Live updates",
+   "titulo": "Futuros del Dow avanzan tras cierre récord del índice: actualizaciones en vivo",
+   "resumen": "Futuros del Dow Jones avanzan en sesión previa después de que el índice blue-chip cierre en nuevo máximo histórico. Momentum alcista sugiere continuidad en mercado de acciones de gran capitalización.",
+   "analisis": {
+    "porque": "Avances en futuros del Dow previo a apertura de sesión regular indican appetite alcista de inversores overnight. Cierre en máximo histórico refuerza narrativa de fortaleza en equities de gran cap.",
+    "queOcurrio": "Futuros del Dow Jones operan al alza en sesión previa después de que el índice Dow Jones Industrial Average postea nuevo cierre en máximo histórico.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Dow Jones",
+    "S&P500",
+    "NASDAQ",
+    "Futuros"
+   ],
+   "sesgos": [
+    {
+     "activo": "Dow Jones",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Breaking News",
+   "keywords": [
+    "Dow Jones",
+    "futuros",
+    "máximo-histórico",
+    "momentum",
+    "acciones"
+   ],
+   "tgText": "Futuros del Dow avanzan tras nuevo máximo histórico de cierre. Momentum alcista en blue-chips continúa. Mercado posicionado para apertura positiva.",
+   "xText": "Futuros Dow+ tras nuevo all-time high. Momentum alcista en equities de gran cap se mantiene. Mercado con sesgo positivo para apertura.",
+   "discordText": "**Futuros Dow avanzan**\n• Tras cierre en máximo histórico\n• Momentum alcista en blue-chips\n• Sesgo positivo para apertura de sesión",
+   "pushText": "Futuros Dow+ tras nuevo máximo histórico del índice",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Dow Jones (futuros y spot) reacciona primero: momentum de máximos históricos típicamente autoperpetúa en opening bell.",
+    "despues": "S&P 500 y NASDAQ siguen según participación de componentes shared; sectores defensivos pueden underperform.",
+    "escenarios": "Traders observan: (1) si momentum sostiene a través de opening, (2) volúmenes de apertura, (3) niveles de resistencia siguientes.",
+    "riesgos": "Es noticia de momentum muy corto plazo. Riesgo: giro de mercado en apertura es común. Título es 'live update' típico de sesión, no cambio fundamental."
+   },
+   "macro": {
+    "dow": "Momentum alcista de corto plazo"
+   },
+   "updates": []
+  },
+  {
+   "id": 903883394,
+   "fecha": "2026-08-06T00:09:36.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/were-downgrading-honeywell-aerospace-after-a-shockingly-bad-earnings-debut.html",
+   "via": "CNBC",
+   "original": "We&apos;re downgrading Honeywell Aerospace after a shockingly bad earnings debut",
+   "titulo": "Honeywell Aerospace rebajado tras sorpresivo retroceso en ganancias de primer reporte",
+   "resumen": "Un analista rebaja recomendación en Honeywell Aerospace luego de un retroceso inesperado en ganancias en su reporte de resultados. La acción refleja deterioro en perspectivas de la división de aviación, crítica para perfil de rentabilidad de Honeywell.",
+   "analisis": {
+    "porque": "Rebaja de recomendación en división Aerospace de Honeywell, que representa parte material del EBITDA corporativo, impacta valuación y perspectivas de flujo de caja de la empresa. Aerospace es sector sensible a actividad económica global y ciclos de compra de aerolíneas.",
+    "queOcurrio": "Un analista rebaja su recomendación en Honeywell Aerospace tras 'sorprendentemente mal' desempeño de ganancias en primer reporte de resultados de la división o la empresa.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Honeywell",
+    "NASDAQ",
+    "S&P500",
+    "Dow Jones"
+   ],
+   "sesgos": [
+    {
+     "activo": "Honeywell",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Honeywell",
+    "Aerospace",
+    "downgrade",
+    "earnings",
+    "aviación"
+   ],
+   "tgText": "Honeywell Aerospace rebajado por analista. Sorprendente retroceso de ganancias genera presión bajista en acciones. Perspectivas de división crítica bajo escrutinio.",
+   "xText": "Analyst rebaja Honeywell Aerospace tras sorprendente caída de ganancias. Presión sobre perspectivas de rentabilidad de división clave para HON.",
+   "discordText": "**Rebaja en Honeywell Aerospace**\n• Analyst downgrade tras earnings débiles\n• Retroceso sorprendente de ganancias\n• Presión bajista en valuación",
+   "pushText": "Honeywell Aerospace rebajado tras mal desempeño de ganancias",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Honeywell (HON) reacciona primero: rebaja de analyst presiona valuación de empresa.",
+    "despues": "NASDAQ, S&P 500 y Dow observan si hay efecto contagio en sector defensa/industrial.",
+    "escenarios": "Traders monitorean: (1) si debilidad es específica de Honeywell o señal de ciclo Aerospace, (2) guía de management para 2026, (3) márgenes operativos de división.",
+    "riesgos": "Titular no especifica quién baja recomendación, magnitud de retroceso de ganancias o causa. 'Sorprendentemente mal' es subjetivo. Riesgo de que retroceso sea temporal o de una sola partida."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 999061441,
+   "fecha": "2026-08-05T23:26:03.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/jim-cramer-investors-should-consider-buying-spacex-kids.html",
+   "via": "CNBC",
+   "original": "Jim Cramer says investors should consider buying SpaceX for their kids",
+   "titulo": "Jim Cramer aconseja a inversores considerar SpaceX para carteras de hijos",
+   "resumen": "Jim Cramer, analista de CNBC, recomienda a inversores considerar la compra de SpaceX como inversión a largo plazo para sus hijos. Comentario refuerza sesgo alcista sobre SpaceX que se alinea con el reciente upgrade de JPMorgan que elevó el precio objetivo a $240.",
+   "analisis": {
+    "porque": "Recomendación de analista visible (Cramer) sobre SpaceX amplifica sesgo alcista. Aunque Cramer no es formal recommendation, su voz tiene influencia en retail investors. Se suma a upgrade reciente de JPMorgan.",
+    "queOcurrio": "Jim Cramer comentó que inversores deberían considerar comprar SpaceX para carteras de largo plazo destinadas a sus hijos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "SpaceX"
+   ],
+   "sesgos": [
+    {
+     "activo": "SpaceX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "Cramer",
+    "recomendación",
+    "inversión-largo-plazo"
+   ],
+   "tgText": "Cramer recomienda SpaceX para carteras de hijos. Refuerza sesgo alcista sobre compañía. Se suma a upgrade reciente de JPMorgan a $240.",
+   "xText": "Cramer sugiere comprar SpaceX para inversiones a largo plazo en carteras familiares. Sesgo alcista en línea con upgrade de JPMorgan.",
+   "discordText": "**Cramer sobre SpaceX**\n• Recomienda para inversiones a largo plazo\n• Cartera de hijos como horizonte temporal\n• Refuerza sesgo alcista",
+   "pushText": "Cramer recomienda SpaceX para inversiones de largo plazo",
+   "importancia": 4,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 974663510,
+   "fecha": "2026-08-05T23:20:15.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/etsy-layoffs-q2-earnings.html",
+   "via": "CNBC",
+   "original": "Etsy laying off 12% of staff in bid to streamline business, position for growth",
+   "titulo": "Etsy despide 12% de personal para optimizar operaciones y posicionarse para crecimiento",
+   "resumen": "Etsy anuncia reducción de personal del 12% como parte de estrategia de optimización operativa y posicionamiento para crecimiento futuro. Decisión refleja presiones de rentabilidad y eficiencia en plataforma de e-commerce, impactando perspectivas de márgenes y ganancias por acción.",
+   "analisis": {
+    "porque": "Reducción de costos operativos en el 12% del personal impacta márgenes de ganancia, EPS futuro y perspectivas de rentabilidad de Etsy. Mercados típicamente reaccionan a anuncios de reestructuración como señal de presiones en rentabilidad o cambio estratégico.",
+    "queOcurrio": "Etsy anunció despido del 12% de su plantilla como iniciativa de streamlining operativo para posicionarse en crecimiento futuro.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Etsy",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Etsy",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Etsy",
+    "reducción-personal",
+    "e-commerce",
+    "márgenes",
+    "reestructuración"
+   ],
+   "tgText": "Etsy despide 12% de personal. Reducción estratégica de costos busca optimizar operaciones e impulsar crecimiento. Impacto esperado en márgenes operativos positivo a mediano plazo.",
+   "xText": "Etsy recorta 12% de plantilla. Reestructuración estratégica de costos para mejorar márgenes. Mercado pendiente de orientación de ganancias ajustadas.",
+   "discordText": "**Etsy anuncia recorte de personal**\n• 12% de reducción de plantilla\n• Objetivo: optimización operativa\n• Impacto esperado en márgenes a mejora",
+   "pushText": "Etsy despide 12% del personal para optimizar operaciones",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Etsy (ETSY) reacciona primero: recorte es bajista si se interpreta como presión de rentabilidad, alcista si se ve como mejora de eficiencia.",
+    "despues": "NASDAQ y S&P 500 observan en contexto de tendencia de reestructuraciones en tech.",
+    "escenarios": "Traders observan: (1) magnitud de ahorros esperados, (2) impacto en crecimiento de ingresos, (3) si es una vez o señal de problemas operativos más amplios.",
+    "riesgos": "Titular no especifica ahorros esperados, cronograma, o detalles de quién es despedido. Riesgo de que mercado reinterprete como debilidad de demanda más que eficiencia."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 907249409,
+   "fecha": "2026-08-05T22:35:26.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/as-warsh-and-the-fed-contemplate-fewer-meetings-markets-brace-for-potential-volatility-ahead.html",
+   "via": "CNBC",
+   "original": "As Warsh and the Fed contemplate fewer meetings, markets brace for potential volatility ahead",
+   "titulo": "Fed contempla menos reuniones; mercados se preparan para volatilidad potencial",
+   "resumen": "David Warsh y la Reserva Federal evalúan reducir la frecuencia de reuniones de política monetaria. La noticia genera expectativa sobre cambios en la comunicación y cadencia de decisiones de tasas de interés, factores críticos para la valuación de activos de renta variable y fija.",
+   "analisis": {
+    "porque": "Cambios en la estructura de reuniones del Fed afectan directamente la comunicación de política monetaria, el flujo de información a mercados y la volatilidad implícita de activos.",
+    "queOcurrio": "Se reporta que Warsh y la Fed contemplan reducir el número de reuniones de política monetaria, generando incertidumbre sobre el calendario futuro de decisiones de tasas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Dow Jones",
+    "Bonos",
+    "Rendimientos USA",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "política-monetaria",
+    "reuniones",
+    "tasas-interés",
+    "volatilidad"
+   ],
+   "tgText": "Fed contempla reducir reuniones de política monetaria. Cambio en cadencia de decisiones genera expectativa sobre comunicación futura y volatilidad en bonos y acciones.",
+   "xText": "Warsh y la Fed evalúan menos reuniones. Potencial cambio en calendario de decisiones de tasas genera incertidumbre. Mercados en alerta por impacto en bonos y equities.",
+   "discordText": "**Fed contempla reducir reuniones**\n• Warsh evalúa cambios de frecuencia\n• Afecta comunicación de política monetaria\n• Volatilidad esperada en bonos y acciones",
+   "pushText": "Fed evalúa reducir reuniones de política monetaria",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Mercado de bonos reacciona primero: cambios en cadencia de comunicación del Fed impactan curva de rendimientos y spreads de crédito.",
+    "despues": "S&P 500 y NASDAQ ajustan valuaciones por cambios en expectativas de tasas; DXY responde a revaluación de política monetaria americana.",
+    "escenarios": "Traders monitorean: (1) si reducción implica menos volatilidad futura, (2) cómo reacciona forward guidance, (3) impacto en expectativas de tasas para 2027.",
+    "riesgos": "Titular no especifica número de reuniones propuesto ni calendario efectivo. Incertidumbre sobre implementación real. Riesgo de interpretación divergente entre mercados."
+   },
+   "macro": {
+    "dolar": "Presión alcista si se interpreta como Fed más restrictiva",
+    "nasdaq": "Presión bajista por mayor volatilidad esperada",
+    "bonos": "Volatilidad en curva; spreads bajo presión",
+    "sp500": "Neutral a bajista por incertidumbre"
+   },
+   "updates": []
+  },
   {
    "id": "34084",
    "fecha": "2026-08-05T22:33:38+00:00",
@@ -7432,301 +7698,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "983636816",
-   "fecha": "2026-08-02T01:56:07.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/capital-one-closed-trump-organization-accounts-after-investigation.html",
-   "via": "CNBC",
-   "original": "Capital One says it closed Trump Organization&apos;s accounts after anti-money laundering probe",
-   "titulo": "Capital One cierra cuentas de Trump Organization tras investigación de lavado de dinero",
-   "resumen": "Capital One confirmó el cierre de cuentas bancarias vinculadas a Trump Organization después de una investigación por cumplimiento normativo en anti-lavado de dinero. El titular no especifica detalles sobre montos, timeline exacto o si la medida incluye solo cuentas corporativas o también personales del expresidente.",
-   "analisis": {
-    "porque": "Impacta la confianza en servicios financieros hacia figuras políticas de alto perfil y refuerza percepciones de riesgo regulatorio. Potencia volatilidad en acciones de Capital One y debate sobre política de compliance bancaria.",
-    "queOcurrio": "Capital One cerró cuentas de Trump Organization luego de una investigación de anti-lavado de dinero (AML).",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "COF",
-    "Sector Financiero",
-    "Bonos Corporativos"
-   ],
-   "sesgos": [
-    {
-     "activo": "COF",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Sector Financiero",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Capital One",
-    "Trump Organization",
-    "lavado de dinero",
-    "compliance",
-    "regulación bancaria",
-    "cierre de cuentas"
-   ],
-   "tgText": "Capital One cierra cuentas de Trump Organization tras investigación de anti-lavado de dinero. Impacto en confianza regulatoria del sector financiero.",
-   "xText": "Capital One cierra cuentas de Trump Organization tras investigación AML. Refuerza presión regulatoria sobre servicios financieros y clientes de alto riesgo político. #Finanzas",
-   "discordText": "**Capital One cierra cuentas de Trump Organization**\n• Motivo: investigación anti-lavado de dinero (AML)\n• Impacto: presión regulatoria en banca\n• Estado: confirmado por CNBC",
-   "pushText": "Capital One cierra cuentas de Trump Organization por investigación de lavado de dinero",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Acciones de Capital One (COF) podrían caer levemente por riesgo reputacional y preocupaciones sobre endurecimiento regulatorio",
-    "despues": "Sector financiero en general si se interpreta como señal de mayor escrutinio; bonos corporativos bancarios bajo presión",
-    "escenarios": "Traders vigilan si otros bancos replican medida (cascada de riesgo político), si hay cargos penales posteriores, o si el cierre es permanente o temporal",
-    "riesgos": "Titular no clarifica si es acción preventiva estándar o respuesta a hallazgos concretos; riesgo de que se amplíe a otras entidades Trump"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33832",
-   "fecha": "2026-08-02T01:42:51+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33832",
-   "via": "DeItaone",
-   "original": "IRAN THREATENS REGIONAL ENERGY STRIKES Iran warned it will retaliate if the U.S. launches fresh attacks, with state-linked media threatening oil and gas facilities in Saudi Arabia, the UAE, Qatar and Israel. Kuwait said it intercepted Iranian drones targeting vital sites. The escalating tensions are increasing risks to global energy supplies and shipping through the Strait of Hormuz and the Red Se",
-   "titulo": "Irán amenaza represalias contra infraestructura energética regional",
-   "resumen": "Irán advirtió represalias contra posibles nuevos ataques estadounidenses, con medios estatales amenazando golpes a instalaciones petroleras y gasísticas en Arabia Saudí, EAU, Qatar e Israel. Kuwait reportó interceptación de drones iraníes. Las tensiones escalan riesgos para suministros energéticos globales y tránsito por Estrecho de Ormuz y Mar Rojo.",
-   "analisis": {
-    "porque": "Amenazas a infraestructura energética en Golfo Pérsico impactan directamente precios de petróleo y gas, afectan seguros marítimos, rendimientos de bonos por prima de riesgo geopolítico y valoraciones de energéticas.",
-    "queOcurrio": "Irán amenazó represalias contra instalaciones de petróleo/gas en Arabia Saudí, EAU, Qatar e Israel si USA lanza nuevos ataques. Kuwait interceptó drones iraníes dirigidos a sitios vitales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (medios estatales iraníes y reportes de Kuwait)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "Gas Natural",
-    "Rendimientos USA",
-    "Oro",
-    "S&P 500",
-    "Energéticas"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo Brent",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Petróleo WTI",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "irán",
-    "represalias",
-    "petróleo",
-    "golfo-pérsico",
-    "seguridad-energética",
-    "estrecho-ormuz",
-    "drones",
-    "saudí",
-    "riesgo-geopolítico"
-   ],
-   "tgText": "🔴 ALERTA: Irán amenaza represalias contra infraestructura energética en Golfo Pérsico. Kuwait interceptó drones. Riesgo máximo para precios de crudo y tránsito marítimo.",
-   "xText": "🔴 CRÍTICO: Irán amenaza ataques a petróleo/gas en Arabia Saudí, EAU, Qatar e Israel. Kuwait interceptó drones. Riesgo sistémico para Estrecho de Ormuz y suministros globales.",
-   "discordText": "**🔴 GEOPOLÍTICA - Amenaza Iraní Crítica**\n• Irán amenaza represalias contra infraestructura energética\n• Objetivos: Saudi Aramco, EAU, Qatar, Israel\n• Kuwait interceptó drones dirigidos a sitios vitales\n• Riesgo al suministro mundial y navegación Estrecho de Ormuz\n• Petróleo presionando al alza",
-   "pushText": "Irán amenaza atacar infraestructura petrolera regional; riesgo crítico para suministros globales",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Petróleo Brent y WTI suben inmediatamente por prima de riesgo de suministro; Golfo Pérsico es crítico para ~30% del comercio petrolero mundial.",
-    "despues": "Oro sube por demanda de refugio; bonos USA caen por expectativa de inflación energética; acciones de energéticas saudíes/emiratíes pueden saltar; S&P 500 cede por riesgo sistémico.",
-    "escenarios": "Traders vigilarán: (1) escalada de drones/ataques en próximas 48h, (2) respuesta USA/Israel, (3) cierre real del Estrecho (sólo 21% de petróleo global), (4) costo de seguros marítimos, (5) inventarios USA de crudo.",
-    "riesgos": "Riesgo de escalada rápida a conflicto abierto; cierre del Estrecho impactaría ~21 millones de bbl/día; amenazas de medios estatales iraníes tienen historial de no-materialización pero mercado valora tail risk."
-   },
-   "macro": {
-    "dolar": "alcista por demanda de refugio; USD fortalece vs emergentes",
-    "oro": "alcista; demanda defensiva por riesgo geopolítico",
-    "nasdaq": "bajista; pérdida de apetito por riesgo en tech",
-    "dow": "bajista; presión en acciones defensivas",
-    "sp500": "bajista; prima de riesgo geopolítico eleva yields y contrae múltiplos",
-    "bitcoin": "volátil; típicamente se fortalece en crisis geopolítica similar a oro",
-    "ethereum": "volátil pero secundario",
-    "bonos": "bajistas; yields suben por inflación energética esperada",
-    "petroleo": "muy alcista; Brent potencial superar $90/bbl si cierre Ormuz"
-   },
-   "updates": []
-  },
-  {
-   "id": "988397861",
-   "fecha": "2026-08-01T20:22:15.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/goldman-traders-are-on-pace-for-a-record-year-a-close-up-look-at-how-theyre-doing-it.html",
-   "via": "CNBC",
-   "original": "Goldman traders are on pace for a record year. A close-up look at how they&apos;re doing it",
-   "titulo": "Traders de Goldman Sachs en camino a año récord; análisis de estrategias",
-   "resumen": "Según CNBC, los operadores de Goldman Sachs están encaminados hacia resultados sin precedentes en 2026. El titular no especifica sectores, estrategias particulares o cifras exactas de ganancias, pero sugiere desempeño excepcional en la división de trading del banco durante el año en curso.",
-   "analisis": {
-    "porque": "Indica fortaleza operativa en una división clave de banca de inversión. La salud de trading en Goldman típicamente refleja condiciones de volatilidad, spreads amplios y actividad M&A elevada, elementos que afectan apetito de riesgo general.",
-    "queOcurrio": "Operadores de Goldman Sachs están registrando ganancias que podrían alcanzar récords anuales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "GS",
-    "NYSE Banking Index",
-    "Spreads Bonos Corporativos",
-    "Volatilidad (VIX)"
-   ],
-   "sesgos": [
-    {
-     "activo": "GS",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Sector Financiero",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Goldman Sachs",
-    "trading",
-    "banca de inversión",
-    "resultados",
-    "2026"
-   ],
-   "tgText": "🏦 Traders de Goldman Sachs encaminados a año récord. El desempeño excepcional sugiere spreads amplios y alta actividad en mercados. Indicador de apetito de riesgo elevado.",
-   "xText": "📈 Goldman Sachs traders en camino a un año récord. Refuerza señales de fortaleza en banca de inversión y actividad de mercado robusta. #GS #FinanzasUSA",
-   "discordText": "**Goldman Sachs: Traders hacia récord anual**\n• Operadores en desempeño sin precedentes\n• Refleja spreads amplios y alta volatilidad\n• Positivo para sector financiero general",
-   "pushText": "GS traders hacia año récord; fortaleza en banca de inversión",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de GS suelen reaccionar positivamente a noticias de ganancia operativa. Trading fuerte indica spreads favorables y apetito de riesgo.",
-    "despues": "Otros bancos de inversión (JPM, MS, BLK) podrían beneficiarse por señalización de condiciones de mercado favorables. Índices financieros y spreads de crédito podrían estrecharse.",
-    "escenarios": "Traders vigilarán si esta fortaleza coincide con volatilidad sostenida en derivados, actividad M&A elevada o spreads sobreexpandidos. Evaluar si es sostenible o concentrada en periodos puntuales.",
-    "riesgos": "El titular carece de detalles; no especifica qué divisiones generan ganancias ni si son sostenibles. Posible que sea resultado de eventos únicos de volatilidad no repetibles."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "945498443",
-   "fecha": "2026-08-01T14:41:54.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/-berkshire-hathaway-shares-hit-eight-month-high.html",
-   "via": "CNBC",
-   "original": "Berkshire Hathaway shares hit eight-month high",
-   "titulo": "Acciones de Berkshire Hathaway alcanzan máximo de ocho meses",
-   "resumen": "Berkshire Hathaway toca nuevo máximo de ocho meses. El movimiento refleja confianza en la gestión de Buffett ante volatilidad macroeconómica. Sin contexto específico del titular sobre catalizador, el movimiento sugiere fortaleza relativa de defensivos de calidad.",
-   "analisis": {
-    "porque": "BRK.B es termómetro de confianza en defensivos; máximo de 8 meses en contexto de volatilidad indica que inversores buscan calidad y dividend. Señal bullish para acciones value/defensivas.",
-    "queOcurrio": "Acciones de Berkshire Hathaway alcanzan máximo de ocho meses. El titular no especifica catalizador concreto.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "BRK.B",
-    "S&P500",
-    "Dow Jones",
-    "Value stocks"
-   ],
-   "sesgos": [
-    {
-     "activo": "BRK.B",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Value stocks",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Berkshire Hathaway",
-    "BRK.B",
-    "máximo",
-    "defensivos",
-    "value"
-   ],
-   "tgText": "📈 Berkshire Hathaway toca máximo de 8 meses. Fortaleza en defensivos de calidad. Confianza en gestión Buffett. CNBC.",
-   "xText": "BRK.B en máximo de 8 meses. Señal alcista para defensivos y value stocks en contexto de volatilidad macro. Confianza en calidad. #Berkshire",
-   "discordText": "**Empresas**\n• Berkshire Hathaway: máximo de 8 meses\n• BRK.B alcista\n• Fortaleza relativa de defensivos\n📈 Value stocks ganando confianza",
-   "pushText": "BRK.B toca máximo: defensivos en alza.",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "BRK.B sube, otros defensivos (utilities, consumo esencial) pueden seguir.",
-    "despues": "Posible rotación de growth a value si la tendencia continúa; spreads credit defensivos podrían mejorar.",
-    "escenarios": "Traders vigilan: (1) si es breakout técnico o reversión temporal, (2) flujos hacia value vs. growth, (3) nivel de soporte si hay pullback.",
-    "riesgos": "Máximo sin contexto; podría ser ruido técnico. Si hay corrección mayor en equities, BRK.B podría ceder junto con defensivos."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "989473142",
-   "fecha": "2026-08-01T14:17:57.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/01/trump-medias-new-data-service-gives-faster-access-to-trumps-posts.html",
-   "via": "CNBC",
-   "original": "Trump Media&apos;s new paid data service goes live, giving clients faster access to Trump’s posts",
-   "titulo": "Trump Media lanza servicio de datos pagado con acceso prioritario a posts",
-   "resumen": "Trump Media activa nuevo servicio de datos pagado que ofrece a clientes acceso más rápido a posts de Trump. Monetización de la plataforma genera ingresos nuevos pero permanece bajo escrutinio sobre viabilidad de modelo de negocio.",
-   "analisis": {
-    "porque": "Trump Media intenta diversificar ingresos más allá de publicidad. Servicio de datos pagado podría mejorar rentabilidad, pero escalabilidad y demanda real son inciertas. Afecta valuación de DJT si genera cash positivo.",
-    "queOcurrio": "Trump Media pone en funcionamiento nuevo servicio de datos pagado que prioriza acceso a posts de Trump para suscriptores.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "DJT",
-    "Social media stocks",
-    "Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "DJT",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Trump Media",
-    "DJT",
-    "monetización",
-    "datos",
-    "servicio pagado"
-   ],
-   "tgText": "💼 Trump Media lanza servicio de datos pagado: acceso prioritario a posts. Intenta diversificar ingresos. DJT volatilidad. CNBC.",
-   "xText": "Trump Media activa nuevo servicio de datos pagado. Intento de monetización más allá de publicidad tradicional. Impacto en DJT todavía incierto. #TrumpMedia",
-   "discordText": "**Empresas**\n• Trump Media: servicio de datos pagado en vivo\n• Acceso prioritario a posts\n• Estrategia: diversificar ingresos\n⚖️ Viabilidad de modelo aún por probar",
-   "pushText": "Trump Media: nuevo servicio de datos pagado lanzado.",
-   "importancia": 3,
-   "reaccion": {
-    "primero": "DJT puede ser volátil; inversores evalúan viabilidad del modelo de negocio.",
-    "despues": "Si genera traction real (subscribers), positivo para cash flow; si falla, presión sobre DJT.",
-    "escenarios": "Traders vigilan: (1) número de suscriptores iniciales, (2) ARPU (ingresos por usuario), (3) si es scalable o niche, (4) impacto en publicidad tradicional.",
-    "riesgos": "Demanda real de este servicio es muy incierta; podría ser marketing más que monetización efectiva. Trump Media sigue bajo presión de viabilidad fundamental."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
@@ -8013,6 +7984,16 @@
   "https://www.cnbc.com/2026/08/04/pinterest-pins-q2-earnings-report-2026.html",
   "https://www.cnbc.com/2026/08/05/faa-says-it-is-investigating-trump-helicopter-safety-incident-in-washington.html",
   "https://www.cnbc.com/2026/08/05/the-stocks-goldman-gives-more-than-100percent-upside-.html",
-  "https://www.cnbc.com/2026/08/05/india-rbi-interest-rate-inflation-iran-war.html"
+  "https://www.cnbc.com/2026/08/05/india-rbi-interest-rate-inflation-iran-war.html",
+  "https://www.cnbc.com/2026/08/05/as-warsh-and-the-fed-contemplate-fewer-meetings-markets-brace-for-potential-volatility-ahead.html",
+  "https://www.cnbc.com/2026/08/05/stocks-making-the-biggest-moves-after-hours-sndk-wdc-elf-app.html",
+  "https://www.cnbc.com/2026/08/05/etsy-layoffs-q2-earnings.html",
+  "https://www.cnbc.com/2026/08/05/jim-cramer-investors-should-consider-buying-spacex-kids.html",
+  "https://www.cnbc.com/2026/08/05/thursdays-big-stock-stories-whats-likely-to-move-the-market.html",
+  "https://www.cnbc.com/2026/08/05/were-downgrading-honeywell-aerospace-after-a-shockingly-bad-earnings-debut.html",
+  "https://www.cnbc.com/2026/08/06/india-lic-shares-economy-disinvestment-.html",
+  "https://www.cnbc.com/2026/08/06/salmonella-outbreak-linked-to-mexican-jalapenos-sickens-345-across-27-us-states.html",
+  "https://www.cnbc.com/2026/08/05/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/08/06/us-iran-war-hormuz-trump-bessent-deal.html"
  ]
 }
