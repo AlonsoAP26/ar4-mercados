@@ -1,7 +1,316 @@
 {
- "lastId": 34084,
- "actualizado": "2026-08-06T08:01:22.807Z",
+ "lastId": 34091,
+ "actualizado": "2026-08-06T11:50:51.297Z",
  "items": [
+  {
+   "id": "34091",
+   "fecha": "2026-08-06T11:23:18+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34091",
+   "via": "DeItaone",
+   "original": "MUFG: DOLLAR STILL UNDERVALUED MUFG says the U.S. dollar remains undervalued against 8 of the 9 other G10 currencies, suggesting extra risk premium is still priced in. The bank cites expectations for a Middle East ceasefire, U.S.-Japan yen intervention, and concerns over Fed independence after reports President Trump has spoken repeatedly with Fed Chair Kevin Warsh. Despite a small rebound, the DX",
+   "titulo": "MUFG: dólar aún infravalorado frente a 8 de 9 divisas G10",
+   "resumen": "Mitsubishi UFJ Financial Group sostiene que el dólar estadounidense permanece infravalorado versus 8 de las 9 divisas del G10, sugiriendo prima de riesgo adicional aún priced in. El banco cita expectativas de alto al fuego en Medio Oriente, intervención yen USD-JPY de EE.UU.-Japón, y preocupaciones sobre independencia de la Fed tras reportes de conversaciones frecuentes entre Trump y Warsh. A pesar de recuperación menor, el DXY permanece cerca de mínimo de 7 semanas.",
+   "analisis": {
+    "porque": "Evaluación de valuación de moneda de reserva mundial impacta todo mercado cambiario, competitividad comercial y carry trades.",
+    "queOcurrio": "MUFG publica análisis mostrando DXY aún con descuento de valuación relativa vs G10.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "EURUSD",
+    "GBPUSD",
+    "JPYUSD",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "EURUSD",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "dolar",
+    "DXY",
+    "G10",
+    "valuacion",
+    "MUFG",
+    "carry",
+    "geopolitica"
+   ],
+   "tgText": "💱 MUFG: dólar infravalorado vs 8/9 divisas G10. DXY tiene prima de riesgo sin descontar. Contexto: paz Medio Oriente + intervención USD-JPY + dudas Fed.",
+   "xText": "MUFG: dólar aún infravalorado frente a 8/9 monedas G10. DXY a mín. 7 semanas con riesgos geopolíticos aún priced.",
+   "discordText": "**Valuación USD: MUFG alcista**\n• Dólar infravalorado vs 8/9 divisas G10\n• DXY cerca de mínimo 7 semanas\n• Drivers: alto al fuego Medio Oriente, intervención yen, dudas independencia Fed\n• Implicación: potencial apreciación",
+   "pushText": "MUFG: dólar infravalorado frente a 8 de 9 divisas G10",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "DXY sube si se confirma thesis de infravaloración; EUR/USD, GBP/USD caen.",
+    "despues": "Carry trades impactados (especialmente JPY carry); commodities expresados en USD bajan en precio nominal.",
+    "escenarios": "Traders monitorean: (1) noticias sobre alto al fuego Medio Oriente (materialización de riesgo); (2) data de intervención oficial yen; (3) claridad sobre Fed independencia.",
+    "riesgos": "Postura hawkish Fed (como Warsh) podría fortalecer dólar más de lo que MUFG espera; risk-off sudden impacta carry; intervención masiva BoJ cambia dinámica."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "neutral",
+    "nasdaq": "neutral",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "neutral",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34090",
+   "fecha": "2026-08-06T11:21:30+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34090",
+   "via": "DeItaone",
+   "original": "$SPCX - SPACEX FACES MASSIVE SHARE UNLOCK Up to 911.5M SpaceX shares unlock today—more than 140% of the current public float—raising the risk of near-term volatility. The stock fell 12% after earnings despite beating on revenue and posting an unexpected AI profit. More unlocks follow on Aug. 12 and 20 days later, with 4B+ shares becoming tradable by year-end, creating a potential overhang even as ",
+   "titulo": "SpaceX enfrenta desbloqueo masivo de 911.5M acciones hoy; riesgo de volatilidad",
+   "resumen": "Hasta 911.5M acciones de SpaceX se desbloquean hoy, superando 140% del free float público actual. Luego de vencer 12% tras earnings (que vencieron en revenue pero sorprendieron con ganancia en IA), siguen desbloqueos el 12 agosto y 20 días después. Más de 4.000M acciones podrían volverse negociables antes de fin de año, creando sobreoferta potencial aunque fundamentals largo plazo permanecen fuertes.",
+   "analisis": {
+    "porque": "Lock-up expiry es evento mecánico de oferta que puede presionar precio independientemente de fundamentals; afecta acciones privadas/semi-públicas.",
+    "queOcurrio": "Desbloqueo de 911.5M acciones SpaceX que superan 140% del float; activos se desbloquearán en múltiples tranches hasta fin de año.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "SPCX (SpaceX)"
+   ],
+   "sesgos": [
+    {
+     "activo": "SPCX",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "lock-up",
+    "unlock",
+    "dilucion",
+    "volatilidad",
+    "acciones"
+   ],
+   "tgText": "🚀 911.5M acciones SpaceX se desbloquean HOY (140% del float actual). Más tranches el 12/ago y después. 4B+ acciones negociables antes fin de año.",
+   "xText": "SpaceX: 911.5M acciones se desbloquean hoy (+140% vs float). Múltiples tranches generarán 4B+ acciones negociables para fin 2026.",
+   "discordText": "**SpaceX Lock-up Expiry**\n• Hoy: 911.5M acciones desbloquean (140% del free float)\n• Agosto 12 + 20 días después: más tranches\n• Año: 4B+ acciones potencialmente negociables\n• Risk: presión de oferta vs fundamentals sólidos",
+   "pushText": "SpaceX: desbloqueo masivo de 911.5M acciones hoy",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "SPCX cae por presión mecánica de oferta; volatilidad intradiaria elevada.",
+    "despues": "Potencial contagio a ETFs tech/space; rebalanceos si SPX cae; treasuries suben si riesgo de mercado baja.",
+    "escenarios": "Traders monitorean: (1) tamaño de cada tranche y spreads bid-ask; (2) si insiders venden agresivamente o retienen; (3) data de comercio institucional.",
+    "riesgos": "Lock-up expiry es predecible pero tamaño/timing exacto de ventas es incierto; reacción podría ser peor si mercado ya está débil; rally reciente podría revertirse."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "34089",
+   "fecha": "2026-08-06T11:18:28+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34089",
+   "via": "DeItaone",
+   "original": "WARSH OPEN TO SEPTEMBER RATE HIKE FT reports Fed Governor Kevin Warsh would be prepared to raise rates in September if upcoming inflation data comes in hot and markets increase expectations for higher borrowing costs, according to people familiar with his thinking.",
+   "titulo": "Fed Governor Warsh abierto a alza de tasas en septiembre si inflación lo amerita",
+   "resumen": "Según Financial Times, el Gobernador de la Reserva Federal Kevin Warsh estaría preparado para respaldar un aumento de tasas en septiembre si los próximos datos de inflación resultan elevados y los mercados aumentan expectativas de tasas más altas. La declaración refleja postura hawkish selectiva dentro de la junta, contrastando con posibles presiones políticas sobre independencia de la Fed.",
+   "analisis": {
+    "porque": "Señal sobre orientación futura de política monetaria afecta expectativas de mercado, curva de rendimientos y valuación de activos de riesgo.",
+    "queOcurrio": "Gobernador de Fed indica disposición condicional a subir tasas en reunión de septiembre, sujeto a datos de inflación.",
+    "estado": "rumor",
+    "fuenteOriginal": "Financial Times (reportaje de fuentes anónimas)"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Rendimientos USA",
+    "DXY",
+    "S&P500",
+    "NASDAQ",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "tasas",
+    "Warsh",
+    "hawkish",
+    "septiembre",
+    "inflación"
+   ],
+   "tgText": "🏦 Gobernador Warsh (Fed) abierto a subir tasas en sept. si inflación sube y mercados elevan expectativas. Señal hawkish en contexto de presiones políticas.",
+   "xText": "Kevin Warsh (Fed) consideraría alza de tasas en septiembre si inflación calienta. Postura hawkish vs presiones políticas sobre independencia.",
+   "discordText": "**Fed: Warsh abierto a subida**\n• Condición: inflación caliente + mercados esperan tasas altas\n• Contexto: presión política sobre independencia Fed\n• Impacto: curva de rendimientos, valuación de riesgo",
+   "pushText": "Warsh (Fed) abierto a subir tasas en sept. si inflación lo amerita",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Futuros de tasas (Fed Funds futures) y curva 2y10y reaccionan inmediatamente; yields de bonos del Tesoro suben.",
+    "despues": "S&P500 y NASDAQ bajan por aumento de costo de capital; DXY sube (USD fortalecido); oro baja.",
+    "escenarios": "Traders monitorean: (1) próximos datos CPI/PCE para validar scenario alcista; (2) composición de junta y voto de otros gobernadores; (3) statements de Powell para clarificar posición oficial.",
+    "riesgos": "Rumor basado en fuentes anónimas, no confirmado; política podría impedir alza real; data inflacionaria podría desmentir postura."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "bajista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bitcoin": "bajista",
+    "ethereum": "bajista",
+    "bonos": "bajista (yields suben)",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34088",
+   "fecha": "2026-08-06T11:15:57+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34088",
+   "via": "DeItaone",
+   "original": "BOFA SEES URANIUM RALLY CONTINUING 🔸BofA raised its 2027 uranium price forecast to $130/lb, implying ~52% upside from current spot prices. 🔸Bullish view is driven by tight supply, lower utility contract coverage (48% vs. 56% last year), and growing nuclear investment. 🔸U.S. plans include 400GW nuclear capacity by 2050, 10 new AP1000 reactors, and $2.7B for domestic enrichment. 🔸BofA maintained",
+   "titulo": "BofA proyecta uranio a $130/lb en 2027; mantiene compra en Cameco",
+   "resumen": "Bank of America elevó su pronóstico de precio del uranio para 2027 a $130 por libra, implicando 52% de alza desde niveles actuales. El banco sustenta su visión alcista en oferta ajustada, menor cobertura de contratos de servicios (48% vs 56% hace un año) y creciente inversión nuclear. EE.UU. planea 400 GW de capacidad nuclear hacia 2050 e invierte $2.700M en enriquecimiento doméstico. BofA redujo 5% su objetivo de precio en Cameco (CCJ) a $133 por guía de costos 2026 más elevada.",
+   "analisis": {
+    "porque": "Redefinición de expectativas de precios para uranio impacta toda la cadena de suministro, oferta y demanda de activos relacionados. Cambio en PT de Cameco afecta valuaciones del sector.",
+    "queOcurrio": "Upgrade de forecasting en uranio con validación fundamental de déficit de oferta; downgrade selectivo en acción específica por costos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Reuters"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Uranio",
+    "CCJ",
+    "URA",
+    "Materias Primas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Uranio",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "CCJ",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "uranio",
+    "energía nuclear",
+    "BofA",
+    "Cameco",
+    "2027",
+    "oferta ajustada"
+   ],
+   "tgText": "🔋 BofA ve uranio a $130/lb (+52%) en 2027 por déficit de oferta y expansión nuclear EE.UU. Reduce PT Cameco 5% a $133 por costos 2026 mayores.",
+   "xText": "BofA alza pronóstico uranio 2027 a $130/lb (+52%) apoyado en déficit de oferta y plan nuclear de 400GW para EE.UU. CCJ baja PT a $133.",
+   "discordText": "**Uranio: Upgrade de BofA**\n• Precio 2027: $130/lb (+52% vs hoy)\n• Driver: oferta ajustada, menor cobertura contratos\n• EE.UU. invertirá en 400GW nuclear + enriquecimiento\n• CCJ: PT reducido 5% a $133 por costos",
+   "pushText": "BofA: uranio a $130/lb en 2027 por déficit de oferta",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "ETFs de uranio (URA) y acciones de minería (CCJ, DYL) reaccionan por cambio en demanda de combustible nuclear.",
+    "despues": "Bonos corporativos de utilities nucleares; acciones de energía limpia que compiten con nuclear.",
+    "escenarios": "Traders monitorean si data de utilización de contratos valida thesis de déficit; seguimiento a decisiones de inversión nuclear en G10.",
+    "riesgos": "Rechazo político a expansión nuclear; competencia de renovables abaratadas; ciclo económico débil reduce demanda de electricidad."
+   },
+   "macro": {
+    "dolar": "neutral",
+    "oro": "neutral",
+    "nasdaq": "neutral",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "neutral",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34085",
+   "fecha": "2026-08-06T10:45:01+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34085",
+   "via": "DeItaone",
+   "original": "SITUATIONAL AWARENESS' $400M COMEBACK Days after nearing collapse, Leopold Aschenbrenner’s Situational Awareness fund made a $400M investment in a private company. The deal follows a $100M investment last month, signaling a rapid recovery after margin calls shook the firm. Aschenbrenner sold most public stocks to Citadel to stabilize finances while preserving key private stakes. Assets fell from $",
+   "titulo": "Situational Awareness de Aschenbrenner rebota con inversión $400M tras casi colapsar",
+   "resumen": "Días después de enfrentar peligro de colapso por margin calls, el fondo Situational Awareness de Leopold Aschenbrenner realizó inversión de $400M en compañía privada, sumada a $100M invertidos hace un mes. Aschenbrenner liquidó la mayoría de acciones públicas a Citadel para estabilizar finanzas mientras preservaba posiciones privadas clave. Activos cayeron de $45.000M a ~$10.000M, pero inversores mayormente permanecieron. Gestor afirma fondo sobrevivió, se reconstruirá más fuerte y aprendió de crisis.",
+   "analisis": {
+    "porque": "Crisis de liquidez en fondo multi-billonario generó volatilidad en mercados privados y públicos; recuperación señaliza end de contagio inmediato pero marca cambio en risk posture.",
+    "queOcurrio": "Fondo rescatado de margin calls mediante venta de públicos a Citadel; redimensionado de $45B a $10B con enfoque en privados.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Fondos de cobertura",
+    "Mercados privados",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Fondos de cobertura",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Mercados privados",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Situational Awareness",
+    "Aschenbrenner",
+    "fondo cobertura",
+    "margin call",
+    "liquidez",
+    "rescate"
+   ],
+   "tgText": "📊 Situational Awareness (Aschenbrenner) sobrevive crisis: inversión $400M en privados tras reducción de $45B a $10B. Citadel compró posiciones públicas.",
+   "xText": "Situational Awareness sobrevive margin calls: Aschenbrenner inyecta $400M en privados tras liquidar públicos a Citadel. Fondo pasa de $45B a $10B.",
+   "discordText": "**Situational Awareness: Recuperación de crisis**\n• $400M inversión nueva en privados\n• Liquidó mayoría públicos a Citadel\n• Activos: $45B → $10B\n• Inversores se mantienen; gestor promete reconstrucción",
+   "pushText": "Situational Awareness rebota con $400M inversión tras crisis de margin calls",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones que Citadel compró (no especificadas en titular) podrían estabilizarse; presión de venta desaparece.",
+    "despues": "Fondos de cobertura similares monitorean si contagio sistémico fue contenido; mercado privado respira.",
+    "escenarios": "Traders vigilar: (1) si Citadel mantiene posiciones o vende gradualmente; (2) otros gestores grandes con apalancamiento similar; (3) volatilidad en privados.",
+    "riesgos": "Título no especifica qué acciones vendidas o a Citadel; riesgo de dumping futuro; crisis podría reactivarse si mercados caen más."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "973432453",
    "fecha": "2026-08-06T07:59:41.000Z",
@@ -7339,292 +7648,6 @@
     "riesgos": "Cambios en PT pueden no reflejar movimientos de precio si el mercado ya anticipó. Downgrade en LAUR es solitario; revisar si hay problemas fundamentales no divulgados."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33854",
-   "fecha": "2026-08-03T09:27:26+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33854",
-   "via": "DeItaone",
-   "original": "$TSLA - STIFEL CUTS TESLA PRICE TARGET, KEEPS BUY Stifel lowered its Tesla price target to $491 from $508, while maintaining a Buy rating. The firm cited weaker profitability after Q2, with gross margin falling to 16.8% and adjusted EBITDA missing expectations. Despite this, Stifel remains bullish on FSD and Robotaxi, pointing to a growing order backlog and the Model YL launch as key long-term cat",
-   "titulo": "Stifel rebaja target de Tesla a $491 pero mantiene Buy; margen bruto bajo presión",
-   "resumen": "Stifel redujo objetivo de precio de Tesla de $508 a $491 manteniendo calificación de Compra. La rebaja responde a margen bruto debilitado (16,8% en Q2) y EBITDA ajustado por debajo de expectativas. Analista mantiene optimismo en FSD, Robotaxi y lanzamiento de Model YL como catalizadores.",
-   "analisis": {
-    "porque": "Rebaja de target en medio de Buy rating es señal de revisión cautelosa; afecta a inversores en opciones y momentum. Márgenes débiles sugieren presión competitiva/costos en vehículos eléctricos.",
-    "queOcurrio": "Stifel bajó precio objetivo de $508 a $491 (3,3% de caída); mantiene Buy; cita margen bruto 16,8% vs. expectativas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "TSLA",
-    "Nasdaq 100",
-    "Automóvil eléctrico"
-   ],
-   "sesgos": [
-    {
-     "activo": "TSLA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Tesla",
-    "TSLA",
-    "Stifel",
-    "margen bruto",
-    "precio objetivo",
-    "FSD",
-    "Robotaxi"
-   ],
-   "tgText": "🚗 Stifel rebaja target TSLA de $508 a $491 (-3,3%) pero mantiene Buy. Margen bruto débil (16,8%). Optimista en FSD/Robotaxi y Model YL.",
-   "xText": "📊 TSLA: Stifel baja target a $491 vs $508 (Buy mantiene). Márgenes bajo presión (16,8% bruto). Confianza en FSD y Robotaxi. #Tesla",
-   "discordText": "**Stifel rebaja Tesla pero mantiene Buy**\n• Target anterior: $508\n• Target nuevo: $491 (-3,3%)\n• Rating: Buy (mantiene)\n• Margen bruto Q2: 16,8%\n• Catalizadores: FSD, Robotaxi, Model YL",
-   "pushText": "TSLA: Stifel baja target a $491 pero mantiene Buy; margen bruto débil",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "TSLA directo; volatilidad intradiaria por revaluación de múltiplos.",
-    "despues": "Nasdaq 100; sector automoción eléctrica; competidores de Tesla.",
-    "escenarios": "Traders vigilan: (1) confirmación de márgenes en próximo earnings; (2) tracción real de Robotaxi/FSD en órdenes; (3) reacción a nuevo target relativo a precio actual.",
-    "riesgos": "Rebaja parcial (3,3%) sugiere más downside posible si márgenes no recuperan. FSD/Robotaxi son high-risk catalysts sin ingresos confirmados aún. Competencia global presiona márgenes EV."
-   },
-   "macro": {
-    "nasdaq": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33851",
-   "fecha": "2026-08-03T08:49:39+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33851",
-   "via": "DeItaone",
-   "original": "$SPCX - SPACEX FACES LOCK-UP SELLING PRESSURE SpaceX shares are under pressure as insider lock-up expirations begin on August 6. Around 20–30% of locked shares will become eligible for sale initially, with staggered unlocks lifting tradable shares to roughly 40% by December 2026. The stock has already fallen below its IPO price, while investors await its first earnings report after Tuesday's close",
-   "titulo": "SpaceX presionada por vencimiento de lock-up: 20-30% de acciones elegibles desde agosto 6",
-   "resumen": "Las acciones de SpaceX enfrentan presión de venta de insiders tras vencimiento de lock-up el 6 de agosto. Inicialmente 20-30% de acciones bloqueadas serán elegibles; para diciembre 2026 llegarían a ~40%. El precio ya cayó bajo IPO; se espera reporte de earnings mañana.",
-   "analisis": {
-    "porque": "Vencimientos de lock-up masivos introducen riesgo de dilución y presión vendedora estructural. Mercados descuentan inmediatamente al ajustar múltiplos de valuación. Coincide con primer earnings, multiplicando volatilidad.",
-    "queOcurrio": "SpaceX anuncia vencimiento de lock-up el 6 de agosto; 20-30% de acciones pasan de bloqueadas a elegibles para venta; stock ya bajo IPO; earnings el martes.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "SPCX",
-    "Nasdaq",
-    "Tecnología"
-   ],
-   "sesgos": [
-    {
-     "activo": "SPCX",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX",
-    "SPCX",
-    "lock-up",
-    "IPO",
-    "earnings",
-    "insiders"
-   ],
-   "tgText": "🚀 SpaceX enfrenta presión de lock-up: 20-30% de acciones elegibles desde ago 6. Alcanzará 40% en dic 2026. Stock bajo IPO. Earnings martes. #Riesgo",
-   "xText": "⚠️ SPCX: vencimiento lock-up ago 6 (20-30% elegible inicialmente, 40% para dic). Stock bajo IPO + earnings martes = volatilidad. #SpaceX",
-   "discordText": "**SpaceX enfrenta presión de insider selling**\n• Lock-up vence: 6 de agosto\n• Acciones elegibles: 20-30% inicial → 40% dic 2026\n• Precio: bajo IPO\n• Earnings: martes\n• Riesgo: dilución + volatilidad",
-   "pushText": "SPCX: presión de lock-up desde ago 6; acciones bajo IPO y earnings próximos",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "SPCX directo. Caída probable por oferta estructural de insiders y descuento preemptivo.",
-    "despues": "Nasdaq 100 (SPCX peso relativo bajo pero psicológico); otros recientes IPOs; tecnología si hay contagio de preocupación sobre calidad de IPOs.",
-    "escenarios": "Traders vigilan: (1) volumen de venta real tras lock-up; (2) si earnings sorprenden al alza/baja (ratio leverage); (3) demanda institucional vs. presión vendedora; (4) velocidad de normalización post-venta.",
-    "riesgos": "Earnings podría actuar como catalizador contrario (sorpresa positiva retiene precio). Lock-up es estructural pero timing depende de decisiones insiders. Posible compra de fondo si fundamentales son sólidos."
-   },
-   "macro": {
-    "nasdaq": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33850",
-   "fecha": "2026-08-03T08:22:54+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33850",
-   "via": "DeItaone",
-   "original": "OIL STOCKS FALL PREMARKET AS CRUDE PRICES DECLINE OVER 5% EXXONMOBIL DOWN 1.6%, CHEVRON DOWN 1.5%, CONOCOPHILLIPS FALLS 2% OCCIDENTAL PETROLEUM FALLS 2.3%, DEVON ENERGY DOWN 1.9%",
-   "titulo": "Petróleo desploma más de 5%; energéticas ceden con caídas de 1,5% a 2,3%",
-   "resumen": "El crudo cayó más del 5% en premarket, arrastrando a principales productoras: ExxonMobil (-1,6%), Chevron (-1,5%), ConocoPhillips (-2%), Occidental Petroleum (-2,3%), Devon Energy (-1,9%). La debilidad refleja presión en demanda global y/o sorpresa bajista en inventarios.",
-   "analisis": {
-    "porque": "Caídas de petróleo >5% señalan cambio estructural en demanda o riesgo de oferta excesiva. Afecta directamente márgenes de integradas y exploradoras; impacta inflación energética y curva de rendimientos.",
-    "queOcurrio": "Precio del crudo retrocedió >5% en premarket. Todas las grandes capitalizaciones energéticas retrocedieron 1,5-2,3%, consistente con shock bajista en commodities.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "S&P 500",
-    "Energéticas",
-    "XLE",
-    "RIG",
-    "DVN"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Energéticas",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Inflación",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "petróleo",
-    "energía",
-    "ExxonMobil",
-    "Chevron",
-    "commodities",
-    "caída"
-   ],
-   "tgText": "📉 Petróleo cae >5% arrastrando energéticas: XOM -1,6%, CVX -1,5%, COP -2%, OXY -2,3%, DVN -1,9%. Presión en demanda global.",
-   "xText": "⛽ Crudo desploma >5%; energéticas ceden: XOM -1,6%, CVX -1,5%, COP -2%, OXY -2,3%, DVN -1,9%. Shock de demanda? #Energía",
-   "discordText": "**Petróleo colapsa >5% en premarket**\n• ExxonMobil: -1,6%\n• Chevron: -1,5%\n• ConocoPhillips: -2%\n• Occidental: -2,3%\n• Devon Energy: -1,9%",
-   "pushText": "Petróleo cae >5%; energéticas en rojo de 1,5% a 2,3%",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "ETF energético XLE; acciones integradas (XOM, CVX). Caída por presión de demanda o revisión de proyecciones OPEC.",
-    "despues": "Índices amplios (S&P 500, Dow Jones); bonos (rendimientos bajan por deflación de energía); dólar (correlación mixta); empresas defensivas y de consumo discrecional.",
-    "escenarios": "Traders vigilan: (1) datos de inventarios USA esperados; (2) señales de desaceleración china/global; (3) decisión OPEC sobre próximos cortes; (4) rentabilidad de perforadores independientes.",
-    "riesgos": "Titular no especifica causa de caída. Podría ser dato de inventarios débil, recesión anticipada, o movimiento técnico. Reversión posible si es sobrereacción."
-   },
-   "macro": {
-    "petroleo": "bajista (corto plazo)",
-    "sp500": "neutral a bajista",
-    "inflacion": "bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33849",
-   "fecha": "2026-08-03T08:22:28+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33849",
-   "via": "DeItaone",
-   "original": "CHINA'S CXMT CONSIDERS SECOND MEMORY CHIP PLANT IN BEIJING, SOURCES SAY CXMT IN FINANCING TALKS WITH A LOCAL GOVERNMENT-BACKED TECH AND MANUFACTURING HUB FOR THE NEW CHIP PLANT, SOURCES SAY",
-   "titulo": "China CXMT planea segunda planta de chips en Beijing; negocia financiamiento",
-   "resumen": "China Microelectronics Technology (CXMT) estudia construcción de segunda planta de memoria en Beijing y mantiene conversaciones de financiamiento con entidad local de tech y manufactura respaldada por gobierno. Iniciativa refleja estrategia de fortalecer capacidad doméstica de semiconductores.",
-   "analisis": {
-    "porque": "Expansión de capacidad de chips en China amplifica ciclo de inversión estatal en semiconductores; impacta demanda de equipos (ASML, LRCX) y competencia global. Influye en narrativa de independencia tecnológica y sanciones a China.",
-    "queOcurrio": "CXMT negocia financiamiento para segunda planta de chips de memoria en Beijing con entity gubernamental.",
-    "estado": "rumor",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Semiconductores",
-    "ASML",
-    "LRCX",
-    "MU",
-    "SK Hynix",
-    "Geopolítica tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "Semiconductores globales",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "ASML",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "China",
-    "CXMT",
-    "semiconductores",
-    "chips",
-    "memoria",
-    "capacidad"
-   ],
-   "tgText": "🔌 China CXMT planea segunda planta de chips en Beijing; negocia financiamiento estatal. Apunta a independencia de semiconductores.",
-   "xText": "🇨🇳 CXMT (China) expande: segunda planta de chips en Beijing + financiamiento gubernamental. Estrategia de autosuficiencia tech. #Semiconductores",
-   "discordText": "**CXMT expande capacidad de chips en China**\n• Segunda planta: Beijing\n• Tipo: memoria\n• Financiamiento: entity estatal\n• Objetivo: independencia tech\n• Impacto: competencia global",
-   "pushText": "CXMT expande chips en China; segunda planta en Beijing con financiamiento estatal",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acciones de equipamiento (ASML cae en riesgo geopolítico); fabricantes de memoria (MU, SK Hynix bajo presión de oferta futura).",
-    "despues": "Índices amplios China; tech occidental; bonos de fabricantes de semiconductores.",
-    "escenarios": "Traders vigilan: (1) confirmación oficial de inversión; (2) velocidad de construcción y salida a producción; (3) escalada de sanciones USA vs. capacidad china; (4) efecto en curva de precios de chips.",
-    "riesgos": "Titular usa 'sources say' = información no confirmada. Financiamiento estatal podría no materializarse o retrasarse. Sanciones USA podrían bloquear equipo crítico. Capacidad real de chip-making avanzado en China aún limitada."
-   },
-   "macro": {
-    "semiconductores": "bajista (largo plazo, competencia)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33848",
-   "fecha": "2026-08-03T07:48:21+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33848",
-   "via": "DeItaone",
-   "original": "BITCOIN SLIPS ON WALLET HACK FEARS Bitcoin dropped 1.3% to $62,591 amid concerns over a potential hack targeting Coldcard wallets. Coinkite urged users to move funds after researchers flagged a flaw that may have enabled attackers to steal roughly $70 million in under an hour. Adding pressure, bitcoin ETFs recorded outflows on Friday.",
-   "titulo": "Bitcoin cae 1,3% tras alerta de vulnerabilidad en wallets Coldcard",
-   "resumen": "Bitcoin retrocedió a $62.591 por preocupaciones sobre un fallo de seguridad en wallets Coldcard que habría permitido robo de ~$70 millones en menos de una hora. Coinkite instó a usuarios a transferir fondos. Los ETFs de Bitcoin registraron salidas el viernes, agregando presión vendedora al activo.",
-   "analisis": {
-    "porque": "Eventos de seguridad crítica en infraestructura cripto generan pánico de venta y erosionan confianza institucional. Afecta directamente valuación de Bitcoin y flujos de ETFs.",
-    "queOcurrio": "Investigadores identificaron vulnerabilidad en hardware wallets Coldcard; Coinkite advirtió a usuarios; Bitcoin descendió 1,3% simultáneamente con salidas de ETFs.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Bitcoin",
-    "Criptomonedas",
-    "ETFs cripto"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bitcoin",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "Bitcoin",
-    "seguridad",
-    "wallet",
-    "Coldcard",
-    "criptomonedas",
-    "hack"
-   ],
-   "tgText": "🔓 Bitcoin cae 1,3% a $62.591 tras alerta de fallo crítico en wallets Coldcard que permitió robo de ~$70M. Coinkite insta a usuarios a mover fondos. ETFs registran salidas.",
-   "xText": "⚠️ BTC retrocede a $62.591 por vulnerabilidad en Coldcard wallets (+$70M robados en <1h). Coinkite alerta usuarios. ETFs con salidas. #Bitcoin #Crypto",
-   "discordText": "**Bitcoin en rojo por alerta de seguridad**\n• Caída: 1,3% a $62.591\n• Fallo crítico en wallets Coldcard\n• Robo potencial: ~$70 millones\n• ETFs con flujos negativos",
-   "pushText": "Bitcoin cae por fallo de seguridad Coldcard; alerta de robo de $70M",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Bitcoin y derivados cripto; caída inmediata por pánico de venta y desconfianza en custodias.",
-    "despues": "Altcoins correlacionadas; acciones de empresas cripto; ETFs de Bitcoin; posiblemente tasas de interés si domina narrativa de riesgo sistémico.",
-    "escenarios": "Traders vigilan: (1) alcance del exploit y monedas recuperables; (2) velocidad de patch; (3) contagio a otras wallets; (4) requisitos regulatorios derivados.",
-    "riesgos": "Titular no especifica cantidad exacta comprometida ni si el robo ya ocurrió o es hipotético. Posible exageración de alcance. Fuga de confianza si wallet es muy utilizada por instituciones."
-   },
-   "macro": {
-    "bitcoin": "bajista (corto plazo)"
-   },
    "updates": []
   }
  ],
