@@ -1,7 +1,179 @@
 {
  "lastId": 34084,
- "actualizado": "2026-08-06T05:27:04.580Z",
+ "actualizado": "2026-08-06T08:01:22.807Z",
  "items": [
+  {
+   "id": "973432453",
+   "fecha": "2026-08-06T07:59:41.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/softbank-q1-earnings-intel-bytedance-stakes.html",
+   "via": "CNBC",
+   "original": "SoftBank gets $8.2 billion boost from Intel as OpenAI takes a backseat",
+   "titulo": "SoftBank recibe inyección de $8.200M de Intel mientras OpenAI pasa a segundo plano",
+   "resumen": "SoftBank obtuvo $8.200 millones de Intel, reflejando reposicionamiento en alianzas de IA. El cambio de protagonismo (Intel ganando, OpenAI relegada) sugiere diversificación estratégica de inversiones en infraestructura semiconductora versus sofware IA.",
+   "analisis": {
+    "porque": "SoftBank es jugador clave en capital de riesgo y M&A de tech; movimiento hacia Intel indica mercado reprecifica valor relativo entre chips y modelos de IA.",
+    "queOcurrio": "SoftBank recibió $8.200 millones de Intel, mientras su exposición a OpenAI aparenta disminuir en importancia relativa.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "INTC",
+    "NVDA",
+    "Semiconductores",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "INTC",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "SoftBank",
+    "Intel",
+    "INTC",
+    "IA",
+    "inversión-estrategica",
+    "OpenAI"
+   ],
+   "tgText": "SoftBank recibe $8.2B de Intel. Reposicionamiento estratégico hacia infraestructura semiconductor vs. OpenAI.",
+   "xText": "📊 SoftBank + Intel: $8.2B. Giro estratégico hacia chips sobre modelos IA. Intel gana relevancia en ecosistema IA. #INTC #Tech",
+   "discordText": "**Empresas - Tech Estratégico**\n• SoftBank recibe $8.2B de Intel\n• Reposicionamiento hacia semiconductores\n• OpenAI pasa a segundo plano en alianzas\n• Impacto: alcista para INTC y ecosistema de chips",
+   "pushText": "SoftBank recibe $8.2B de Intel; giro hacia chips",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "INTC sube por validación de demanda de infraestructura; NVDA podría presionarse si mercado ve sustitución de CUDA por soluciones Intel",
+    "despues": "Semiconductores se fortalecen; activos OpenAI (acciones indirectas) podrían ceder",
+    "escenarios": "Traders vigilaban si OpenAI seguiría liderando capital de riesgo IA. Intel ganando relevancia sugiere que chips (limitados) valen más que modelos (abundantes).",
+    "riesgos": "Intel aún enfrenta desafíos de manufactura; inversión no garantiza tecnología competitiva con TSMC/Samsung."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "924415159",
+   "fecha": "2026-08-06T07:43:19.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/nintendo-first-quarter-earnings-switch2.html",
+   "via": "CNBC",
+   "original": "Nintendo&apos;s fiscal first-quarter profit and revenue beat estimates, despite Switch 2 sales slump",
+   "titulo": "Nintendo supera estimaciones en Q1 fiscal pero Switch 2 muestra venta débil",
+   "resumen": "Nintendo reportó ganancias y ventas superiores a estimaciones en su primer trimestre fiscal, pero las ventas de Switch 2 decepcionaron. El contraste refleja fortaleza operativa actual pero incertidumbre sobre trayectoria de nueva consola.",
+   "analisis": {
+    "porque": "Nintendo es barómetro de ciclo de consolas; debilidad en Switch 2 podría señalar saturación de mercado o falta de killer apps, afectando expectativas de ingresos futuros.",
+    "queOcurrio": "Nintendo superó ganancias y ventas esperadas, pero las ventas de Switch 2 quedaron por debajo de estimaciones, generando incertidumbre sobre el lanzamiento.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NTDOY",
+    "Nasdaq",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "NTDOY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Nintendo",
+    "NTDOY",
+    "Switch-2",
+    "ganancias",
+    "videojuegos",
+    "consola"
+   ],
+   "tgText": "Nintendo supera Q1 fiscal pero Switch 2 venta débil. Tension entre beat actual y dudas sobre próximo ciclo.",
+   "xText": "🎮 Nintendo: beat en Q1 pero Switch 2 decepciona. Incertidumbre sobre nuevo ciclo de consolas. #Gaming #NTDOY",
+   "discordText": "**Empresas - Gaming**\n• Nintendo: beat en ganancias y ventas Q1\n• Switch 2: ventas débiles, por debajo de estimaciones\n• Impacto: neutral a bajista para ciclo futuro",
+   "pushText": "Nintendo beat pero Switch 2 decepciona en ventas",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "NTDOY reacciona mixta: beat actual positivo, pero guidance débil para Switch 2 genera presión",
+    "despues": "Sector entertainment/gaming podría revisar exposición a Nintendo",
+    "escenarios": "Traders valúan Nintendo en dos escenarios: (1) fortaleza actual vs. (2) debilidad potencial de Switch 2 en próximos trimestres. Sell-the-news posible si market ya esperaba beat.",
+    "riesgos": "Switch 2 es lanzamiento crítico; si falla penetración, múltiplos podrían contraerse significativamente."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "990102072",
+   "fecha": "2026-08-06T05:27:12.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/asia-tech-selloff-wall-street-samsung-sk-hynix.html",
+   "via": "CNBC",
+   "original": "Asian tech stocks drop with SK Hynix plunging 10% after Wall Street AI names fall",
+   "titulo": "Acciones tech asiáticas caen; SK Hynix se desploma 10% tras retroceso de nombres IA en Wall Street",
+   "resumen": "Acciones de tecnología asiática bajaron con SK Hynix liderando pérdidas (-10%) después de que grandes nombres de IA en Wall Street experimentaran caídas. La presión refleja preocupaciones sobre valuaciones de semiconductores y posible debilitamiento de demanda de chips para IA.",
+   "analisis": {
+    "porque": "SK Hynix es proveedor crítico de memoria para centros de datos IA; caídas en acciones tech USA suelen trasladarse a Asia con lag temporal, afectando toda la cadena de semiconductores.",
+    "queOcurrio": "Acciones de tech asiático cayeron, con SK Hynix cayendo 10% en reacción a debilidad de nombres de IA en NYSE/NASDAQ.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "SK Hynix",
+    "Semiconductores",
+    "NASDAQ",
+    "Nikkei",
+    "Hang Seng",
+    "TSMC"
+   ],
+   "sesgos": [
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "SK Hynix",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SK-Hynix",
+    "semiconductores",
+    "IA",
+    "tech-asiatico",
+    "memoria-DRAM",
+    "contagio"
+   ],
+   "tgText": "⚠️ SK Hynix cae 10%; tech asiático presionado tras debilidad de IA en Wall Street. Preocupaciones sobre demanda de chips.",
+   "xText": "🔴 SK Hynix se desploma 10%. Acciones tech asiáticas caen por debilidad de IA en USA. Contagio en semiconductores y memoria. #Semiconductores",
+   "discordText": "**Breaking - Mercados**\n• SK Hynix: -10% en sesión asiática\n• Tech asiático bajo presión tras retroceso IA en Wall Street\n• Cadena de suministro: memory chips impactados\n• **Volatilidad alta** en semiconductores globales",
+   "pushText": "⚠️ SK Hynix -10%; tech asia cae por debilidad IA",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "SK Hynix y TSMC caen primero; memoria DRAM/NAND bajo presión; índices asiáticos (Nikkei, Hang Seng) reaccionan a la baja",
+    "despues": "Semiconductores USA (SOX, NVDA, AMD) podrían ampliar caídas; contagio a índices amplios (S&P500) si el pánico persiste",
+    "escenarios": "Traders monitoreaban si caídas en IA (Magnificent 7) arrastraban supply chain. SK Hynix -10% confirma contagio de valuaciones a semiconductores mundiales.",
+    "riesgos": "Si caída es correccionaria (repricing), rebote rápido posible; si es inicio de desaceleración de capex IA, caídas podrían extenderse."
+   },
+   "macro": {
+    "nasdaq": "bajista",
+    "sp500": "bajista"
+   },
+   "updates": []
+  },
   {
    "id": 912835090,
    "fecha": "2026-08-06T03:43:32.000Z",
@@ -943,6 +1115,139 @@
    "updates": []
   },
   {
+   "id": "933729279",
+   "fecha": "2026-08-05T20:47:22.000Z",
+   "tgUrl": "https://www.cnbc.com/video/2026/08/05/jpmorgan-ceo-jamie-dimon-says-he-is-not-worried-about-ai-data-center-boom-fizzling-out.html",
+   "via": "CNBC",
+   "original": "JPMorgan CEO Jamie Dimon says he is not worried about AI data center boom fizzling out",
+   "titulo": "Jamie Dimon confía en que boom de centros de datos IA no se desvanecerá",
+   "resumen": "El CEO de JPMorgan Jamie Dimon descartó preocupaciones sobre un posible colapso en la inversión en centros de datos para IA, reafirmando confianza en la sostenibilidad del ciclo. Esta postura contrasta con dudas crecientes del mercado sobre la rentabilidad real de la infraestructura de IA.",
+   "analisis": {
+    "porque": "Las declaraciones del CEO de JPMorgan, uno de los mayores analistas de ciclos económicos, influyen en percepciones sobre la viabilidad de inversiones masivas en IA y el riesgo de burbuja tecnológica.",
+    "queOcurrio": "Dimon señaló no estar preocupado por el posible fin del boom de inversión en centros de datos de IA, respaldando la tesis de continuidad del ciclo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Semiconductores",
+    "NVDA",
+    "TSLA",
+    "META"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NVDA",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "JPMorgan",
+    "IA",
+    "centros-datos",
+    "Dimon",
+    "infraestructura"
+   ],
+   "tgText": "JPMorgan CEO Dimon: no teme que boom de IA en centros de datos se desvanezca. Respalda ciclo de inversión tech.",
+   "xText": "📊 Dimon (JPMorgan): confianza en que inversión en centros de datos IA seguirá. Respalda narrativa alcista de tech y semiconductores. #IA #Mercados",
+   "discordText": "**Empresas - Tech/IA**\n• JPMorgan CEO Dimon confía en sostenibilidad de boom de centros de datos IA\n• Respalda ciclo de inversión en infraestructura\n• Impacto: alcista para tech, semiconductores",
+   "pushText": "Dimon (JPMorgan): ciclo de IA en centros de datos seguirá adelante",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Semiconductores y NASDAQ reaccionan al alza por validación de ejecutivo influyente sobre continuidad de ciclo IA",
+    "despues": "Acciones de cloud computing (TSLA, META) podrían beneficiarse; bonos de tech ganan estabilidad",
+    "escenarios": "Traders monitorean si declaraciones de grandes banqueros confirman o desmienten temores sobre rentabilidad real de capex en IA. Dimon respalda tesis alcista.",
+    "riesgos": "CEO puede estar protegiendo posiciones de JPMorgan en tech; el mercado debe validar independientemente si ROI de capex es genuino."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "935440970",
+   "fecha": "2026-08-05T20:36:16.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/fed-governor-cook-says-shes-prepared-to-act-on-rate-hike-to-address-inflation.html",
+   "via": "CNBC",
+   "original": "Fed Governor Cook says she&apos;s &apos;prepared to act&apos; on rate hike to address inflation",
+   "titulo": "Gobernadora de la Fed Cook señala disposición a subir tasas si inflación lo amerita",
+   "resumen": "La gobernadora Michelle Cook manifestó estar \"preparada para actuar\" con alzas de tasas de interés para combatir la inflación. El comentario refleja la postura hawkish persistente dentro de la Junta de la Reserva Federal, en momentos donde el mercado evalúa el balance entre presiones inflacionarias y riesgo de desaceleración económica.",
+   "analisis": {
+    "porque": "Las señales sobre política monetaria de la Fed son cruciales para la valuación de activos de renta fija, divisas y acciones. Una posición más dura sobre tasas altera expectativas de costos de financiamiento.",
+    "queOcurrio": "Gobernadora Cook indicó disposición a implementar nuevas alzas de tasas si la inflación lo requiere, manteniendo un tono restrictivo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "NASDAQ",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "tasas-interes",
+    "inflacion",
+    "politica-monetaria",
+    "Cook"
+   ],
+   "tgText": "Gobernadora Cook (Fed) señala disposición a subir tasas si inflación lo amerita. Mantiene postura hawkish en FOMC.",
+   "xText": "🇺🇸 La gobernadora de la Fed Cook reitera disposición a alzar tasas contra inflación. Dólar y rendimientos USA podrían presionarse al alza. #FED #Mercados",
+   "discordText": "**Fed - Política Monetaria**\n• Gobernadora Cook: \"preparada para actuar\" con alzas de tasas\n• Combate a inflación sigue siendo prioridad\n• Impacto: medio en bonos y dólar",
+   "pushText": "Fed: Cook reafirma disposición a alzar tasas contra inflación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Dólar (DXY) y rendimientos de bonos USA sube por expectativa de tasas más altas",
+    "despues": "Acciones tech (NASDAQ) presionadas; oro como refugio podría ceder",
+    "escenarios": "Traders monitoreaban si Cook moderaba o endurecía tono. Confirmación hawkish refuerza apuesta a tasas más altas por más tiempo.",
+    "riesgos": "Si la inflación desciende en próximos reportes, el mercado podría descontar menos alzas futuras; comentarios de gobernadores son guidance pero no decisiones finales."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "bajista",
+    "nasdaq": "bajista",
+    "dow": "neutro",
+    "sp500": "bajista",
+    "bonos": "bajista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
    "id": "34081",
    "fecha": "2026-08-05T19:50:11+00:00",
    "tgUrl": "https://t.me/walterbloomberg/34081",
@@ -1001,6 +1306,62 @@
     "despues": "ETF solar (TAN), NextEra Energy (NEE), Vivint Solar (si cotiza), proveedores de equipamiento solar. Sector renovable en general.",
     "escenarios": "Traders monitorean: (1) anuncio oficial con fecha/excepciones; (2) respuesta de productores solares sobre pases de costos; (3) impacto en IRA (Inflation Reduction Act) incentivos; (4) retaliation potencial de China/Vietnam; (5) presión sobre costo LCOE y retorno de proyectos. Riesgo: si arancel se implementa rápido, Q3-Q4 2026 márgenes solares bajo presión.",
     "riesgos": "Fuentes anónimas; administración aún no confirma formalmente. Posible que arancel sea negociado, reducido o excluya ciertos orígenes. Titular no especifica si aplica a todas las importaciones o solo algunas."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "983415080",
+   "fecha": "2026-08-05T19:28:32.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/were-increasing-our-eli-lilly-price-target-after-another-beat-and-raise-quarter.html",
+   "via": "CNBC",
+   "original": "We&apos;re increasing our Eli Lilly price target after another beat-and-raise quarter",
+   "titulo": "Analistas alzan precio objetivo de Eli Lilly tras otro trimestre de sorpresas positivas",
+   "resumen": "Analistas incrementaron su precio objetivo para Eli Lilly tras un nuevo trimestre con resultados que superaron estimaciones (beat-and-raise). El patrón consistente de beats refleja momentum operacional fuerte en farmacéutica, con demanda sostenida en medicamentos GLP-1 y otros productos.",
+   "analisis": {
+    "porque": "Movimientos de precio objetivo por parte de analistas influyen en sentimiento de mercado y pueden generar compras institucionales. Eli Lilly es índice de confianza en sector salud y ciclo de ganancias.",
+    "queOcurrio": "Analistas subieron target price de Eli Lilly después de que la compañía nuevamente superó expectativas de ganancias y aumentó guidance.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "LLY",
+    "S&P500",
+    "Sector Salud",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "LLY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Sector Salud",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Eli-Lilly",
+    "LLY",
+    "ganancias",
+    "beat-and-raise",
+    "precio-objetivo",
+    "farmaceutica"
+   ],
+   "tgText": "Analistas suben precio objetivo de Eli Lilly (LLY) tras beat-and-raise en Q1. Demanda de GLP-1 sostiene momentum.",
+   "xText": "💊 Analistas alzan target de Eli Lilly (LLY) tras otro trimestre de beats. Sector farmacéutico mantiene dinámica positiva. #LLY #Salud",
+   "discordText": "**Empresas - Sector Salud**\n• Analistas suben precio objetivo de Eli Lilly\n• Nuevo trimestre con beat-and-raise confirmado\n• Driver: demanda de GLP-1 sostenida\n• Sesgo: alcista para farmacéutica",
+   "pushText": "Analistas alzan target de Eli Lilly tras beat-and-raise",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "LLY sube por revisión alcista de analistas y confirmación de momentum operacional",
+    "despues": "Sector salud podría fortalecerse; defensivas cobran valor en portafolios",
+    "escenarios": "Traders vigilaban si Eli Lilly mantenía momentum post-GLP-1. Beat-and-raise refuerza narrativa de demanda secular en medicamentos.",
+    "riesgos": "Valuaciones de farmacéuticas ya reflejan expectativas altas; compresión de márgenes por competencia futura en GLP-1 podría desmentir narrativa."
    },
    "macro": null,
    "updates": []
@@ -7265,396 +7626,9 @@
     "bitcoin": "bajista (corto plazo)"
    },
    "updates": []
-  },
-  {
-   "id": "905764130",
-   "fecha": "2026-08-03T05:00:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/ukraine-russia-war-putin-zelenskyy-winter.html",
-   "via": "CNBC",
-   "original": "&apos;Winter is coming&apos;: Ukraine fears its toughest test since Russia&apos;s full-scale invasion",
-   "titulo": "Ucrania advierte su invierno más duro desde invasión: nuevos riesgos geopolíticos",
-   "resumen": "Funcionarios ucranianos expresan que el próximo invierno será la prueba más desafiante desde el inicio de la invasión rusa a gran escala. El titular no especifica si se refiere a daños infraestructurales, logísticos o militares.",
-   "analisis": {
-    "porque": "Impacta precios de petróleo (potencial intensificación del conflicto), oro (demanda refugio), bonos USA (aversión al riesgo). Señala riesgo de escalada militar durante meses fríos cuando la guerra se intensifica históricamente.",
-    "queOcurrio": "Líderes de Ucrania advierten que enfrentarán su mayor desafío desde febrero 2022 durante el próximo invierno, implícitamente sugiriendo riesgo de escalada o colapso de líneas defensivas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos USA",
-    "Energía europea",
-    "EURUSD",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "EURUSD",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "ucrania",
-    "rusia",
-    "invierno",
-    "riesgo-geopolítico",
-    "energía"
-   ],
-   "tgText": "⚠️ Ucrania advierte su invierno más duro desde invasión. Potencial intensificación del conflicto eleva prima de riesgo en petróleo, oro y energía europea.",
-   "xText": "🔴 Ucrania alerta sobre invierno crítico: mayor desafío desde invasión. Mercados esperan escalada geopolítica; petróleo y oro se fortalecen por aversión al riesgo.",
-   "discordText": "**Crisis invernal en Ucrania**\n• Funcionarios alertan sobre invierno más duro\n• Riesgo de intensificación del conflicto\n• Impacto alcista en petróleo, oro y bonos refugio",
-   "pushText": "Ucrania alerta sobre invierno crítico: riesgo de escalada geopolítica",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Oro sube como activo refugio ante mayor incertidumbre geopolítica. Petróleo puede subir si existe riesgo de disrupción de suministros de energía en Europa.",
-    "despues": "Bonos USA se fortalecen (rendimientos bajan) por flight-to-safety. Euro puede debilitarse si preocupación energética europea crece. VIX puede subir reflejando mayor volatilidad esperada.",
-    "escenarios": "Traders vigilan informes de inteligencia sobre posibles operaciones rusas invernales. Monitorean daños a infraestructura energética crítica. Vigilancia de sanciones europeas adicionales y medidas de apoyo a Ucrania.",
-    "riesgos": "Riesgo de sobre-reacción emocional sin datos de escalada real. Posible que el titular sea interpretación editorial sin anuncio oficial de cambio estratégico. Mercados pueden descontar riesgo de forma excesiva."
-   },
-   "macro": {
-    "oro": "alcista (demanda refugio)",
-    "petroleo": "alcista moderado (riesgo geopolítico)",
-    "bonos": "alcista (flight-to-safety)",
-    "eurusd": "bajista (preocupación energética europea)",
-    "dolar": "alcista (fortalecimiento relativo por seguridad)"
-   },
-   "updates": []
-  },
-  {
-   "id": "956001660",
-   "fecha": "2026-08-03T01:45:41.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html",
-   "via": "CNBC",
-   "original": "Stock futures rally as investors gear up for jobs report, key earnings: Live updates",
-   "titulo": "Futuros en alza mientras mercado se prepara para reporte de empleo y earnings clave",
-   "resumen": "Índices futuros en Estados Unidos muestran ganancias mientras los inversores se preparan para el reporte de empleos y resultados de ganancias importantes. El movimiento refleja optimismo previo a datos macroeconómicos y anuncios corporativos. No se especifican qué empresas reportan ni detalles del reporte de empleo.",
-   "analisis": {
-    "porque": "Reportes de empleo son data macroeconómica crítica para decisiones de política monetaria; earnings determinan flujos de capital hacia sectores específicos",
-    "queOcurrio": "Futuros USA en territorio positivo en anticipación a reporte laboral y earnings de empresas clave",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P 500",
-    "Nasdaq-100",
-    "Dow Jones",
-    "Bonos USA",
-    "Rendimientos USA",
-    "Dólar USD"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nasdaq-100",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "empleo",
-    "earnings",
-    "futuros",
-    "S&P 500",
-    "Nasdaq",
-    "macroeconomía"
-   ],
-   "tgText": "📈 Futuros USA en alza en anticipación a reporte de empleo y earnings clave. Optimismo previo a datos macroeconómicos críticos para mercados.",
-   "xText": "📊 Futuros USA avanzan. Mercado se prepara para reporte de empleo y earnings importantes. Sentimiento alcista previa a macro crítica.",
-   "discordText": "**Futuros USA en alza**\n• Anticipación a reporte de empleo\n• Earnings importantes en el horizonte\n• Sentimiento alcista pre-data",
-   "pushText": "Futuros USA en alza por reporte de empleo y earnings próximos",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "S&P 500, Nasdaq-100, Dow: dirección según tono de datos de empleo",
-    "despues": "Bonos, rendimientos, dólar según implicaciones para política Fed",
-    "escenarios": "Traders monitorean NFP (no-farm payroll), tasa de desempleo y salarios por hora; reacciones varían si datos superan/fallan expectativas; earnings pueden ratificar o desafiar sentimiento",
-    "riesgos": "Riesgo de sorpresas en empleo que reviertan ganancias futuros; earnings débiles podrían revertir rally de anticipación"
-   },
-   "macro": {
-    "sp500": "Alcista (futuros en alza)",
-    "nasdaq": "Alcista (futuros en alza)",
-    "dolar": "Potencialmente bajista si empleo débil reduce tasas",
-    "bonos": "Potencialmente alcistas si empleo es decepcionante"
-   },
-   "updates": []
-  },
-  {
-   "id": "952175997",
-   "fecha": "2026-08-02T22:17:47.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/astrazeneca-and-bristol-myers-squibb-mull-400-billion-deal-report-.html",
-   "via": "CNBC",
-   "original": "AstraZeneca in talks with Bristol Myers Squibb on $400 billion megadeal, FT reports",
-   "titulo": "AstraZeneca en conversaciones con Bristol Myers Squibb por megafusión de $400 mil millones",
-   "resumen": "Financial Times reporta que AstraZeneca mantiene negociaciones con Bristol Myers Squibb respecto a una potencial combinación empresarial valuada en aproximadamente $400 mil millones. No se confirman términos ni probabilidad de cierre. De concretarse, sería una de las mayores fusiones del sector farmacéutico en años.",
-   "analisis": {
-    "porque": "Fusión de este tamaño reestructura liderazgo farmacéutico, impacta valuaciones de ambas empresas, afecta exposición a biofármacos e inmunooncología",
-    "queOcurrio": "FT reporta conversaciones entre AstraZeneca y BMY sobre megafusión de ~$400B; estado de negociaciones no confirmado",
-    "estado": "rumor",
-    "fuenteOriginal": "Financial Times (citado por CNBC)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AstraZeneca (AZN)",
-    "Bristol Myers Squibb (BMY)",
-    "Sector Farmacéutico",
-    "S&P 500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "AstraZeneca",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Bristol Myers Squibb",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Sector Farmacéutico",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "AstraZeneca",
-    "Bristol Myers Squibb",
-    "fusión",
-    "megadeal",
-    "farmacéutico"
-   ],
-   "tgText": "💊 RUMOR: AstraZeneca en conversaciones con BMY por megafusión de $400B (FT). Sin confirmación oficial. Potencial reestructura del sector farmacéutico.",
-   "xText": "🏥 FT: AstraZeneca negocia con Bristol Myers Squibb megafusión de $400B. Sin confirmación. Potencial mayor reestructura farmacéutica en años.",
-   "discordText": "**RUMOR: Megafusión farmacéutica de $400B**\n• AstraZeneca - Bristol Myers Squibb en negociaciones\n• Fuente: Financial Times\n• ⚠️ Sin confirmación oficial",
-   "pushText": "RUMOR: AstraZeneca y BMY negocian fusión de $400 mil millones",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "AZN y BMY: volatilidad inmediata; arbitrage entre precios de ambas acciones",
-    "despues": "Sector farmacéutico completo, competidores (JNJ, Pfizer), fondos de M&A",
-    "escenarios": "Traders esperan confirmación oficial, términos de acuerdo (ratio de intercambio), posibles condiciones regulatorias; vigilancia sobre anuncios posteriores de ambas empresas",
-    "riesgos": "Riesgo regulatorio (antitrust en EE.UU. y UE); fuente es reportaje no confirmado; potencial desmentida de cualquiera de las partes"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33845",
-   "fecha": "2026-08-02T21:46:59+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33845",
-   "via": "DeItaone",
-   "original": "TRUMP: HAVE DECIDED A PUNISHMENT FOR CANADA ON WILDFIRES , BUT WON'T SAY YET",
-   "titulo": "Trump anuncia sanción a Canadá por incendios forestales pero retiene detalles",
-   "resumen": "Trump declara haber decidido una \"sanción\" contra Canadá relacionada con incendios forestales que afectan a EE.UU., pero se rehúsa a revelar su naturaleza o magnitud. El titular no especifica si se trata de aranceles, restricciones comerciales u otra medida. Contexto: canadienses han rechazado responsabilidad por mala gestión.",
-   "analisis": {
-    "porque": "Potencial medida comercial/arancelaria contra aliado comercial clave (Canadá es 2º socio USA) genera incertidumbre para mercados de energía, agricultura y acero. Mantiene narrativa proteccionista de Trump abierta.",
-    "queOcurrio": "Trump anuncia sanción a Canadá sin especificar tipo ni alcance.",
-    "estado": "rumor",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Dólar",
-    "Bonos",
-    "Materias Primas",
-    "CAD",
-    "Petróleo Canada",
-    "Acero"
-   ],
-   "sesgos": [
-    {
-     "activo": "CAD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Dólar",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "trump-canada",
-    "aranceles",
-    "incendios",
-    "comercio"
-   ],
-   "tgText": "⚠️ Trump anuncia sanción a Canadá por incendios pero oculta detalles. Genera incertidumbre sobre tipo/alcance. CAD presionado. Esperar aclaración.",
-   "xText": "Trump anuncia sanción a Canadá por incendios forestales pero rechaza revelar detalles. Incertidumbre sobre aranceles o restricciones comerciales mantiene CAD bajista.",
-   "discordText": "**⚠️ Trump: Sanción a Canadá (detalles retenidos)**\n\n• Causa: Incendios forestales\n• Tipo: No especificado (¿aranceles?)\n• Estado: Anunciado pero sin transparencia\n• Impacto CAD: Bajista por incertidumbre",
-   "pushText": "Trump anuncia sanción Canadá por incendios; detalles retenidos",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "CAD bajo presión inmediata por riesgo de aranceles. Petróleo y gas canadienses en radar si medida afecta exportaciones.",
-    "despues": "Si es sanción arancelaria, acero y aluminio canadienses también afectados. Posible respuesta canadiense en represalia.",
-    "escenarios": "Traders esperan: (1) Aclaración de Trump sobre tipo exacto; (2) Reacción Gobierno canadiense; (3) Impacto en cadenas de suministro USA. Volatilidad CAD sostenida hasta revelación.",
-    "riesgos": "Riesgo alto: Trump puede cambiar de tono o escalarla. Falta contexto sobre causa causal (Canadá acusa a USA de falta de coordinación ambiental)."
-   },
-   "macro": {
-    "dolar": "Alcista leve (si hay aranceles)",
-    "oro": "Neutral",
-    "nasdaq": "Neutral",
-    "dow": "Neutral",
-    "sp500": "Neutral",
-    "bitcoin": "Neutral",
-    "ethereum": "Neutral",
-    "bonos": "Neutral",
-    "petroleo": "Bajista (si Canadá afectado)"
-   },
-   "updates": []
-  },
-  {
-   "id": "968506697",
-   "fecha": "2026-08-02T20:27:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/heres-my-power-rankings-for-the-big-4-hyperscalers-after-this-earnings-season.html",
-   "via": "CNBC",
-   "original": "Here&apos;s my power rankings for the big 4 hyperscalers after this earnings season",
-   "titulo": "Ranking de poder de los 4 hyperscalers tras temporada de earnings",
-   "resumen": "Analista clasificó a las cuatro grandes empresas de cloud computing (presumiblemente Apple, Amazon, Google, Microsoft) por su desempeño relativo tras reportes de ganancias recientes. El título no detalla la metodología ni resultados específicos. La temporada de earnings de Big Tech mostró variaciones en márgenes, crecimiento de IA y eficiencia operativa.",
-   "analisis": {
-    "porque": "Hyperscalers dominan índices tecnológicos y definen sentimiento macro sobre IA; rotación entre ellos impacta ponderaciones NASDAQ-100 y S&P 500",
-    "queOcurrio": "Analista publicó ranking comparativo de los cuatro principales proveedores cloud post-earnings; el titular no especifica criterios ni ranking",
-    "estado": "no-verificable",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ-100",
-    "S&P 500",
-    "Apple (AAPL)",
-    "Amazon (AMZN)",
-    "Google (GOOGL)",
-    "Microsoft (MSFT)"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ-100",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Hyperscalers",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "hyperscalers",
-    "Big Tech",
-    "earnings",
-    "cloud",
-    "IA",
-    "NASDAQ"
-   ],
-   "tgText": "📊 Ranking de poder de los 4 hyperscalers post-earnings: análisis comparativo de Apple, Amazon, Google, Microsoft. Impacto en ponderaciones NASDAQ y S&P 500.",
-   "xText": "📈 Ranking de hyperscalers tras earnings season: análisis de desempeño relativo de Apple, Amazon, Google, Microsoft. Implicaciones para índices tech.",
-   "discordText": "**Ranking de poder de hyperscalers post-earnings**\n• Análisis comparativo de 4 gigantes tech\n• Impacto en ponderaciones NASDAQ-100\n• Criterios y resultados no especificados en titular",
-   "pushText": "Ranking de poder de hyperscalers post-earnings publicado",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "NASDAQ-100, S&P 500: potencial rotación según posiciones del ranking",
-    "despues": "Acciones individuales de los hyperscalers (AAPL, AMZN, GOOGL, MSFT)",
-    "escenarios": "Traders esperan ver si hay cambios en jerarquía de liderazgo tech; monitorean implicaciones para exposición IA y márgenes operativos",
-    "riesgos": "Titular no aporta detalles de metodología ni resultados; análisis es subjetivo y el impacto depende de coincidencia con consenso"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33837",
-   "fecha": "2026-08-02T19:13:20+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33837",
-   "via": "DeItaone",
-   "original": "ISRAEL HAS EXPRESSED CONCERNS TO THE U.S. ON PROPOSED HAMAS DISARMAMENT PLAN, NETANYAHU'S SPOKESPERSON TELLS REUTERS",
-   "titulo": "Israel expresa preocupaciones a EE.UU. sobre plan de desarmamento de Hamás",
-   "resumen": "Portavoz de Netanyahu comunicó a Reuters las inquietudes israelíes respecto a la propuesta estadounidense de desarmamento de Hamás. El titular no especifica detalles de las objeciones ni si afecta negociaciones en curso. Contexto: se suma a tensiones previas sobre acuerdos nucleares regionales y dinámicas de paz en Oriente Medio.",
-   "analisis": {
-    "porque": "Conflictos geopolíticos en Oriente Medio afectan precios de petróleo, spreads de riesgo soberano en activos regionales y volatilidad de mercados globales. Señala riesgos de escalada diplomática.",
-    "queOcurrio": "Portavoz israelí transmitió a Reuters preocupaciones sobre un plan de desarmamento de Hamás propuesto por EE.UU., sin más detalles sobre el contenido específico.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Reuters"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Bonos",
-    "Shekel israelí",
-    "Dólar",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Acciones globales",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Israel",
-    "Hamás",
-    "Oriente Medio",
-    "Negociaciones",
-    "Netanyahu",
-    "EE.UU."
-   ],
-   "tgText": "Netanyahu expresó a EE.UU. preocupaciones sobre plan de desarmamento de Hamás. Sin detalles de objeciones. Tensión geopolítica persiste en Oriente Medio con potencial impacto en petróleo y mercados globales.",
-   "xText": "Israel comunica inquietudes a EE.UU. sobre desarmamiento de Hamás según portavoz de Netanyahu. Geopolítica en Oriente Medio sigue presionando mercados de riesgo.",
-   "discordText": "**Israel vs. Plan de Desarmamento de Hamás**\n• Portavoz de Netanyahu comunicó preocupaciones a EE.UU.\n• Sin especificar objecciones concretas\n• Impacto: volatilidad en petróleo y spreads de riesgo",
-   "pushText": "Israel cuestiona plan estadounidense sobre Hamás; tensiones geopolíticas persisten",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent por riesgo geopolítico de Oriente Medio; spreads de CDS soberanos de Israel.",
-    "despues": "Bonos USA (flight-to-safety), dólar (demanda de refugio), acciones defensivas vs. cíclicas.",
-    "escenarios": "Traders vigilan: (1) Si las preocupaciones israelíes bloquean negociaciones; (2) riesgo de escalada militar; (3) impacto en suministros energéticos regionales.",
-    "riesgos": "Titular vago en detalles; sin confirmación de qué plan específico o qué objeciones. Riesgo de sobrerreacción ante ruido diplomático."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/24/paramount-wbd-merger-delay.html",
-  "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html",
-  "https://www.cnbc.com/2026/07/24/tesla-tsla-spacex-spcx-stock-starship-test-flight-musk-bad-week.html",
-  "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html",
-  "https://www.cnbc.com/2026/07/24/trump-tariffs-lawsuit-301-ieepa.html",
-  "https://www.cnbc.com/2026/07/24/spacex-launches-massive-starship-rocket-in-first-test-flight-since-ipo.html",
-  "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-  "https://www.cnbc.com/select/should-you-use-0-percent-apr-card-pay-off-debt/",
   "https://www.cnbc.com/2026/07/24/oil-tanker-red-sea-hormuz-black-sea-iran-ukraine.html",
   "https://www.cnbc.com/2026/07/24/us-iran-war-trump-hormuz-houthis.html",
   "https://www.cnbc.com/2026/07/24/oil-price-trump-hormuz-red-sea-iran-war.html",
@@ -7946,6 +7920,14 @@
   "https://www.cnbc.com/2026/08/05/hollywood-2026-billion-dollar-movies.html",
   "https://www.cnbc.com/2026/08/06/jpmorgan-jamie-dimon-leverage-market-disruption.html",
   "https://www.cnbc.com/2026/08/06/asia-tech-sell-off-has-not-derailed-ai-investment-cycle-jp-morgan-says.html",
-  "https://www.cnbc.com/2026/08/06/bain-capital-to-buy-gong-cha-as-mbk-grapples-with-regulatory-pressure.html"
+  "https://www.cnbc.com/2026/08/06/bain-capital-to-buy-gong-cha-as-mbk-grapples-with-regulatory-pressure.html",
+  "https://www.cnbc.com/2026/08/05/google-chief-scientist-jeff-dean-leaving-company-after-27-years.html",
+  "https://www.cnbc.com/2026/08/05/were-increasing-our-eli-lilly-price-target-after-another-beat-and-raise-quarter.html",
+  "https://www.cnbc.com/2026/08/05/fed-governor-cook-says-shes-prepared-to-act-on-rate-hike-to-address-inflation.html",
+  "https://www.cnbc.com/video/2026/08/05/jpmorgan-ceo-jamie-dimon-says-he-is-not-worried-about-ai-data-center-boom-fizzling-out.html",
+  "https://www.cnbc.com/2026/08/06/asia-tech-selloff-wall-street-samsung-sk-hynix.html",
+  "https://www.cnbc.com/2026/08/05/google-is-expanding-its-ai-empire-and-losing-the-people-who-built-it.html",
+  "https://www.cnbc.com/2026/08/06/nintendo-first-quarter-earnings-switch2.html",
+  "https://www.cnbc.com/2026/08/06/softbank-q1-earnings-intel-bytedance-stakes.html"
  ]
 }
