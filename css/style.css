@@ -1888,8 +1888,8 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.9rem;
   cursor: pointer;
   /* Área táctil cómoda en el celular (antes medía 28px de alto) */
-  min-width: 38px;
-  min-height: 38px;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5395,4 +5395,26 @@ td > .dk-chip:first-child { margin-left: 0; }
   .met-tabla .admin-row > span:nth-child(2) { grid-row: 1; grid-column: 2; justify-self: end; }
   .met-tabla .admin-row > span:nth-child(3) { grid-row: 2; grid-column: 1 / -1; color: var(--text-mid); text-align: left; }
   .met-tabla .admin-row-head { display: none; }
+}
+
+/* ===== Objetivo tactil de 44px en movil (WCAG 2.5.8) =====
+   Enlaces de texto y controles de cabecera median 20-34px de alto: el dedo
+   fallaba el toque. Se agranda el area sensible con una capa invisible
+   (::after), asi el diseno no se mueve ni un pixel. En el pie si conviene
+   separar de verdad las filas: alli el espacio extra se agradece. */
+@media (max-width: 900px) {
+  .see-all, .ecal-embed-link, .nav-menu-btn, .header-actions a.nav-premium,
+  .header-actions a#authBtn.nav-auth-cta { position: relative; }
+  .see-all::after, .ecal-embed-link::after, .nav-menu-btn::after,
+  .header-actions a.nav-premium::after,
+  .header-actions a#authBtn.nav-auth-cta::after {
+    content: ""; position: absolute; left: 0; right: 0; top: 50%;
+    height: 44px; transform: translateY(-50%);
+  }
+  /* El boton Premium es un cuadrado estrecho: tambien se ensancha a 44px */
+  .header-actions a.nav-premium::after { left: 50%; right: auto; width: 44px; transform: translate(-50%, -50%); }
+  .site-footer .footer-grid a { padding: 12px 0; }
+  .to-top { width: 44px; height: 44px; }
+  /* Enlaces del menu desplegable: 42px -> 44px */
+  .main-nav a { padding-top: 11px; padding-bottom: 11px; }
 }
