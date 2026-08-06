@@ -5359,6 +5359,13 @@ td > .dk-chip:first-child { margin-left: 0; }
 .featured-facts strong { text-align: right; }
 /* Estrellas + nota siempre en la misma línea */
 .stars { white-space: nowrap; }
+/* ...salvo en móvil: la tarjeta de aliado no lleva puntuación sino una frase
+   larga ("Bróker nuevo · sin calificación pública verificada aún"). Con nowrap
+   esa línea fijaba el ancho mínimo de la tarjeta en 408px y empujaba
+   /brokers, /copytrading y /fondeo a scroll horizontal. */
+@media (max-width: 900px) {
+  .stars { white-space: normal; }
+}
 /* Avatar de Aria en la tarjeta Premium: emblema garantizado por CSS
    (el círculo quedaba vacío — ningún script lo rellenaba). */
 .ai-premium-avatar {
