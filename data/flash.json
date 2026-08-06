@@ -1,7 +1,388 @@
 {
- "lastId": 34091,
- "actualizado": "2026-08-06T11:50:51.297Z",
+ "lastId": 34101,
+ "actualizado": "2026-08-06T13:25:17.829Z",
  "items": [
+  {
+   "id": 34101,
+   "fecha": "2026-08-06T13:22:51+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34101",
+   "via": "DeItaone",
+   "original": "TRUMP SAID TO CALL WARSH IN LATEST SIGNAL OF PUSH TO REMAKE FED Bloomberg reports President Trump has held periodic phone calls with Fed Chair Kevin Warsh since May, discussing the economy and Warsh's outlook without directing policy. The conversations come amid Trump's broader push to reshape the Fed, though the White House insists Warsh remains independent. The calls are likely to fuel ongoing s",
+   "titulo": "Trump llamó a Warsh periódicamente desde mayo; debate sobre independencia Fed intensifica",
+   "resumen": "Bloomberg reporta que el presidente Trump ha mantenido llamadas periódicas con el presidente de la Fed Kevin Warsh desde mayo, discutiendo economía y perspectivas sin dirigir política monetaria directamente. Las conversaciones ocurren en contexto de esfuerzos más amplios de Trump para remodelar la Fed. La Casa Blanca insiste en la independencia de Warsh, pero los mercados intensifican el escrutinio sobre autonomía de política monetaria.",
+   "analisis": {
+    "porque": "Rumor/confirmación de presión política sobre Fed reduce credibilidad institucional independiente; mercados reprician expectativas de tasas si Fed se percibe bajo influencia política. Historicamente, estos eventos generan volatilidad de USD y bonos.",
+    "queOcurrio": "Trump llamó periódicamente a Warsh desde mayo (Bloomberg). Conversaciones sobre economía/perspectivas, sin dirección directa. Contexto: esfuerzo de Trump de remodelar Fed. Casa Blanca defiende independencia Warsh.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "S&P500",
+    "USD/JPY"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "USD/JPY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "fed",
+    "trump",
+    "warsh",
+    "independencia",
+    "politica-monetaria",
+    "presion"
+   ],
+   "tgText": "⚖️ Trump llamó a Warsh periódicamente desde mayo. Debate sobre independencia Fed se intensifica; mercados repriciarán política monetaria.",
+   "xText": "Nuevo: Trump llamó periódicamente a Warsh (Fed chair) desde mayo. Debate sobre independencia Fed; mercados vigilan presión política sobre tasa.",
+   "discordText": "**⚖️ Presión Trump sobre Fed: Warsh recibe llamadas**\n• Conversaciones periódicas Trump-Warsh desde mayo\n• Tema: economía, perspectivas (sin dirección directa reportada)\n• Casa Blanca defiende independencia Fed\n• ⚠️ Mercados cuestionan credibilidad institucional",
+   "pushText": "Trump llamó a Warsh (Fed): presión política intensifica debate sobre independencia",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "DXY cae (pérdida de credibilidad USD en independencia); bonos suben (yields bajan con menor confianza en rigor Fed)",
+    "despues": "USD/JPY cae; EUR/USD sube; mercados reprician ciclo de tasas esperado; carry trades podrían ver presión si tasas bajan",
+    "escenarios": "Traders monitorean: próximas decisiones Fed (sepiembre); si Warsh señala independencia explícita; próximos comentarios Trump sobre Fed; mercados repriciando recortes",
+    "riesgos": "Rumor de presión política reduce credibilidad institucional; si Fed efectivamente responde a presión, dólar pierde confianza; volatilidadpolítica amplificada"
+   },
+   "macro": {
+    "dolar": "bajista",
+    "bonos": "alcista",
+    "rendimientos": "bajista",
+    "sp500": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 34099,
+   "fecha": "2026-08-06T13:05:04+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34099",
+   "via": "DeItaone",
+   "original": "$OKLO - OKLO HITS KEY NUCLEAR MILESTONE Oklo's small modular reactor reached criticality, marking a major milestone where a self-sustaining nuclear chain reaction is achieved. The milestone supports U.S. efforts to accelerate next-generation nuclear technology, though no SMRs are operating commercially in the U.S. yet. The announcement aligns with the White House's push to expand nuclear power, in",
+   "titulo": "Oklo logra hito: reactor modular pequeño alcanza criticidad en EE.UU.",
+   "resumen": "El reactor modular pequeño (SMR) de Oklo alcanzó criticidad, demostrando una reacción nuclear autosuficiente. Marca hito importante para tecnología nuclear de próxima generación en EE.UU., alineado con impulso de la Casa Blanca para expandir energía nuclear (objetivo 400GW para 2050). Aún no hay SMRs operando comercialmente en EE.UU., pero el avance refuerza confianza en viabilidad del sector.",
+   "analisis": {
+    "porque": "Validación de tecnología nuclear emergente; impulsa narrativa de energía limpia/base-load para data centers IA; relevante para inversores en utilities, uranio, energías limpias. Potencial catalizador de M&A o financiamiento en sector nuclear.",
+    "queOcurrio": "Oklo ($OKLO) logró criticidad en SMR: cadena nuclear autosuficiente operativa. Alinea con objetivo White House de 400GW para 2050. Sin SMRs comerciales operando en EE.UU. aún.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "OKLO",
+    "Uranio",
+    "Utilities",
+    "Energías Limpias",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "OKLO",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Uranio",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Utilities Limpias",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "oklo",
+    "smr",
+    "reactor-modular",
+    "nuclear",
+    "energia-limpia",
+    "ia"
+   ],
+   "tgText": "⚛️ Oklo logra criticidad en SMR: hito nuclear clave. Valida tecnología para centros de datos IA. Casa Blanca impulsa 400GW nuclear para 2050.",
+   "xText": "Hito nuclear: Oklo alcanza criticidad en reactor modular pequeño. Avance respalda meta de energía nuclear limpia para data centers IA (400GW 2050).",
+   "discordText": "**⚛️ Oklo: Criticidad Alcanzada**\n• SMR alcanzó reacción nuclear autosuficiente\n• Hito clave para energía limpia/IA\n• White House: objetivo 400GW para 2050\n• ⚠️ Aún sin SMRs comerciales en EE.UU.",
+   "pushText": "Oklo alcanza criticidad en SMR: validación nuclear para data centers IA",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "OKLO sube fuertemente (validación tecnológica); uranio sube (demanda nuclear creciente); utilities limpias suben",
+    "despues": "Tech/AI datacenter names pueden subir (energía asegurada); competidores SMR monitoreados; M&A especulación en sector",
+    "escenarios": "Traders vigilarán: próximos hitos operacionales Oklo; aprobaciones regulatorias; financiamiento anunciado; competencia SMR global; demanda data centers",
+    "riesgos": "Tecnología aún no comercial (regulatorio); economía SMR no probada; competencia global; costos de escalamiento desconocidos"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 34097,
+   "fecha": "2026-08-06T12:49:51+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34097",
+   "via": "DeItaone",
+   "original": "FOMO DRIVES RECORD S&P 500 CALL BUYING Investors are piling into S&P 500 call options, with more than 4 million contracts traded Tuesday—a record—as bullish sentiment accelerates. Analysts say strong earnings, improving market breadth, and fading macro concerns are fueling a \"one-way\" flow into upside bets. UBS expects the S&P 500 to reach 8,100 by year-end, while Bloomberg Intelligence says trade",
+   "titulo": "Récord histórico: 4M contratos de calls S&P 500 comprados en martes; FOMO domina",
+   "resumen": "Inversores compraron más de 4 millones de contratos de opciones de compra sobre el S&P 500 el martes, un récord histórico. El flujo refleja sentimiento alcista impulsado por ganancias sólidas, amplitud de mercado mejorada y desvanecimiento de preocupaciones macroeconómicas. UBS proyecta S&P 500 a 8.100 EOY; Bloomberg Intelligence advierte que miedo a quedarse fuera (FOMO) supera preocupaciones de cobertura de riesgo a la baja.",
+   "analisis": {
+    "porque": "Indicador crítico de sentimiento extremo bullish: potencial combustible para más alza (gamma leverage), pero también señal de alerta técnica si ocurre cerca de máximos históricos. Relevante para traders de opciones, volatilidad implícita y rotaciones de cartera.",
+    "queOcurrio": "Récord de 4M+ contratos de calls SP500 comprados (martes): FOMO supera hedging. UBS objetivo 8.100 EOY; Bloomberg Intelligence: miedo a perderse ganancias > hedging de riesgo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "VIX",
+    "Opciones",
+    "NASDAQ",
+    "Russell 2000"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Opciones Call",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Mercados",
+   "keywords": [
+    "sp500",
+    "call-options",
+    "fomo",
+    "opciones",
+    "sentimiento",
+    "gamma"
+   ],
+   "tgText": "📊 Récord: 4M+ contratos de calls SP500 comprados. FOMO supera hedging. UBS: 8.100 EOY. Alerta: extremo bullish cerca de máximos.",
+   "xText": "Récord histórico: 4M+ contratos de calls S&P 500 comprados. Sentimiento FOMO extremo supera hedging. UBS proyecta 8.100 EOY.",
+   "discordText": "**📈 FOMO en máximos: Récord de Calls SP500**\n• 4M+ contratos comprados (martes)\n• FOMO > hedging de riesgo\n• UBS target 8.100 EOY\n• ⚠️ Posible alerta: extremo bullish",
+   "pushText": "Récord de calls SP500: 4M+ contratos; FOMO extremo cerca de máximos",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "VIX desciende (menor demanda de puts); SP500 puede continuar alza por gamma en corto plazo; operadores de opciones presionan al alza",
+    "despues": "Si momentum se quiebra, desapalancamiento gamma puede acelerar caída; volatilidad implícita sube bruscamente; puts baratos si crash",
+    "escenarios": "Traders vigilarán: cierre de posiciones call (profit-taking); si SP500 cruza 8.000; mezcla de gamma/delta hedging; si FOMO se convierte en pánico",
+    "riesgos": "Extremo bullish históricamente precede correcciones; apalancamiento oculto; catalizador macro negativo destapa posiciones; reversión de sentimiento rápida"
+   },
+   "macro": {
+    "sp500": "alcista",
+    "vix": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": 34096,
+   "fecha": "2026-08-06T12:31:20+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34096",
+   "via": "DeItaone",
+   "original": "*US PRELIM 2Q LABOR PRODUCTIVITY RISES 1.4% Q/Q; EST. +0.6%",
+   "titulo": "Productividad laboral 2Q sorprende: +1,4% vs. +0,6% esperado",
+   "resumen": "La productividad laboral preliminar del segundo trimestre subió 1,4% trimestral, muy por encima del estimado +0,6%. El dato refleja ganancias de eficiencia probablemente impulsadas por automatización e IA. Contrasta con preocupaciones sobre inflación de costos unitarios laborales y refuerza narrativa de fortaleza económica con contenimiento de presiones inflacionarias.",
+   "analisis": {
+    "porque": "Clave para debate inflacionario: productividad más fuerte = menor inflación de costos laborales a pesar de salarios en alza. Apoya tesis de 'Goldilocks' pero también respalda postura hawkish si crecimiento sigue acelerando. Relevante para decisiones de política monetaria.",
+    "queOcurrio": "Productividad 2Q preliminar +1,4% QoQ vs. +0,6% esperado. El titular no especifica si incluye datos de costos unitarios laborales, información esencial para leer inflación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Rendimientos USA",
+    "DXY",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "productividad",
+    "labor",
+    "2q",
+    "inflacion",
+    "ia",
+    "automatizacion"
+   ],
+   "tgText": "🚀 Productividad 2Q sube 1,4% (vs. +0,6% esperado). Ganancias impulsadas por IA y automatización sugieren contenimiento de inflación de costos laborales.",
+   "xText": "Productividad laboral 2Q +1,4% vs. +0,6% esperado. Fuerte ganancia de eficiencia por IA/automatización refuerza caso de inflación contenida con crecimiento.",
+   "discordText": "**📈 Productividad Sorprende al Alza**\n• 2Q preliminar: +1,4% QoQ (vs. +0,6% esperado)\n• IA/automatización aceleran eficiencia\n• Apoya narrativa: crecimiento + inflación contenida",
+   "pushText": "Productividad +1,4% vs. +0,6%: eficiencia vía IA refuerza Goldilocks",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "NASDAQ y tech alcistas (ganancias IA validadas); S&P500 consolida; yields pueden subir levemente si growth story se refuerza",
+    "despues": "Defensivas se debilitan; financieras ganan si yields suben; materiales y energy pueden presionarse si dólar se fortalece",
+    "escenarios": "Traders vigilarán datos de costos unitarios laborales; cuándo se revise productividad definitiva; próximos reportes de earnings para validar tesis IA",
+    "riesgos": "Dato preliminar; revisiones podrían ser significativas; el titular no cita costos unitarios laborales, información crítica faltante"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "dolar": "neutral",
+    "rendimientos": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": 34095,
+   "fecha": "2026-08-06T12:30:43+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34095",
+   "via": "DeItaone",
+   "original": "US JOBLESS CLAIMS +1K TO 199K IN AUG-1 WK; SURVEY 204K US JUL-25 WEEK CONTINUING CLAIMS +24K TO 1,801,000 US JUL-25 WEEK JOBLESS CLAIMS REVISED TO 198K",
+   "titulo": "Desempleo en EE.UU. sorprende al baja: 199K claims en semana de agosto",
+   "resumen": "Las solicitudes semanales de desempleo cayeron 1.000 a 199.000 en la semana del 1 de agosto, por debajo del pronóstico de 204.000. Las reclamaciones continuas subieron 24.000 a 1.801.000 en la semana del 25 de julio. El dato revisa al alza la semana previa a 198.000, mostrando un mercado laboral más resiliente de lo esperado.",
+   "analisis": {
+    "porque": "Alimenta debate sobre trayectoria de la Fed: mercado laboral más fuerte reduce presión para recortes agresivos y respalda postura hawkish. Coincide con sentimiento de Yardeni y posibles conversaciones Trump-Warsh sobre política monetaria.",
+    "queOcurrio": "Claims cayeron a 199K (vs. 204K esperado), reclamaciones continuas +24K a 1.801K. Revisión al alza de la semana previa sugiere fortaleza laboral subyacente.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "Bonos",
+    "Rendimientos USA",
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empleo",
+   "keywords": [
+    "jobless-claims",
+    "mercado-laboral",
+    "fed",
+    "tasa-desempleo"
+   ],
+   "tgText": "📊 Claims bajan a 199K vs. 204K esperado. Mercado laboral sorprende al alza, reforzando debate hawkish en Fed. Reclamaciones continuas +24K a 1.801K.",
+   "xText": "US jobless claims caen a 199K vs. 204K esperado en semana del 1 ago. Mercado laboral más fuerte apoya postura hawkish de la Fed. Reclamaciones continuas suben 24K.",
+   "discordText": "**📊 Empleo EE.UU.: Sorpresa al baja**\n• Claims: 199K (vs. 204K esperado)\n• Reclamaciones continuas: +24K a 1.801K\n• Revela fortaleza laboral; refuerza caso hawkish Fed",
+   "pushText": "Claims caen a 199K: sorpresa laboral alcista refuerza presión sobre Fed",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "DXY sube (fortaleza económica reduce recortes Fed); bonos caen (yields suben con expectativa de tasas más altas)",
+    "despues": "S&P500 puede consolidar o rotar hacia defensivas; tech potencialmente presionado si mercado repricia ciclo de tasas",
+    "escenarios": "Traders vigilarán si esto respalda narrativa hawkish vs. Yardeni; cuándo next CPI/PPI; impacto en probabilidades de recortes en sept/dic",
+    "riesgos": "Dato semanal volátil; revisiones posteriores podrían cambiar narrativa; contexto vacacional puede distorsionar"
+   },
+   "macro": {
+    "dolar": "alcista",
+    "bonos": "bajista",
+    "sp500": "neutral",
+    "rendimientos": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 34094,
+   "fecha": "2026-08-06T12:19:02+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34094",
+   "via": "DeItaone",
+   "original": "*ALPHABET SEEKS TO RAISE AS MUCH AS $25 BILLION FROM BOND SALE",
+   "titulo": "Alphabet lanza colocación de bonos por hasta $25.000M en múltiples tramos",
+   "resumen": "Alphabet inicia venta de 10 tramos de bonos en dólares de grado de inversión con el objetivo de recaudar hasta $25.000 millones. La operación, confirmada con el ticker $GOOGL, refleja fortaleza crediticia del gigante tech y acceso favorable a mercados de capital. El tamaño sugiere financiamiento para inversiones en IA, infraestructura de centros de datos o recompra de acciones.",
+   "analisis": {
+    "porque": "Señal de confianza corporativa y acceso de capital abundante para tech; impulsa demanda en mercados de renta fija (crédito investment grade); potencial impacto en curva de tasas si volumen es importante. Refuerza narrativa de empresas tech sólidas pese a preocupaciones macroeconómicas.",
+    "queOcurrio": "Alphabet lanza venta de 10 tramos de bonos IG en USD buscando recaudar hasta $25B. El titular no especifica cupones, plazo o uso de fondos exacto.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "Bonos",
+    "S&P500",
+    "GOOGL",
+    "Índices de Crédito",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "GOOGL",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bonos IG",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "alphabet",
+    "bond-sale",
+    "capital-markets",
+    "googl",
+    "25bn"
+   ],
+   "tgText": "💰 Alphabet lanza colocación de bonos por $25B en 10 tramos (USD, grado inversión). Señal de confianza corporativa; refleja acceso de capital abundante en tech.",
+   "xText": "Alphabet inicia venta de $25B en bonos (10 tramos, USD, investment grade). Operación de gran tamaño refleja fortaleza crediticia y acceso favorable a capital.",
+   "discordText": "**💰 Alphabet: Bonos por $25B**\n• 10 tramos en USD, grado inversión\n• Señal de confianza corporativa\n• Financiamiento para IA/infraestructura/recompras",
+   "pushText": "$GOOGL: Vende $25B en bonos; fortaleza crediticia en tech",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Mercados de crédito IG absorben volumen; yields pueden bajar levemente (demanda); GOOGL neutral a alcista en acciones",
+    "despues": "Si yield del sector IG sube con operación, otros emitentes tech pueden seguir; bancos que subastan verán atracción de flujos",
+    "escenarios": "Traders monitorean sobresuscripción y pricing (cupones); cierre de la operación; impacto en curva de crédito; si hay más emisores tech siguiendo",
+    "riesgos": "Factores externos: cambios en tasas de interés, volatilidad en mercados de crédito, cambios en apetito de riesgo"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "34091",
    "fecha": "2026-08-06T11:23:18+00:00",
@@ -7194,458 +7575,6 @@
     "despues": "Si demanda baja, márgenes brutos bajo mayor presión; competencia local intensa en Europa; impacto en guidance FY2026",
     "escenarios": "Traders monitorean: (1) si caída en Noruega refleja saturación o reacción a cambios regulatorios/incentivos; (2) data Alemania (mayor mercado EU) decisiva; (3) impacto en margen bruto Q3; (4) si Tesla comparte con mercado ajustes de demanda regional",
     "riesgos": "Volatilidad regional sugiere ciclos cortos de demanda; competencia intensa en Europa reduce pricing power; posible reducción de guidance si trimestre comienza débil"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33827",
-   "fecha": "2026-08-01T07:48:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33827",
-   "via": "DeItaone",
-   "original": "U.S. JOINS JAPAN TO SUPPORT YEN The U.S. Treasury reportedly bought yen alongside Japan for the first time in over a decade, according to the Financial Times, as officials sought to halt the currency’s sharp decline. Treasury Secretary Scott Bessent also appeared to signal intervention plans in meeting notes. Japan reportedly intervened again Friday and said it remains ready to use additional tool",
-   "titulo": "USA y Japón intervienen conjuntamente en mercado de divisas para sostener el yen",
-   "resumen": "El Tesoro estadounidense compró yen junto con Japón por primera vez en más de una década, según Financial Times, en un esfuerzo por frenar la caída pronunciada de la moneda japonesa. El secretario del Tesoro Scott Bessent señaló planes de intervención adicional. Japón reafirmó su disposición a usar herramientas para estabilizar los mercados.",
-   "analisis": {
-    "porque": "Las intervenciones coordinadas en divisas afectan la volatilidad del par USD/JPY, impactando expectativas de tasas globales y carry trades. Señala consenso entre autoridades monetarias sobre estabilidad cambiaria.",
-    "queOcurrio": "USA y Japón ejecutaron compras de yen de forma coordinada, primer evento de este tipo desde 2012 aproximadamente, indicando deterioro significativo en el valor de la moneda japonesa que requirió respuesta oficial conjunta.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Financial Times (vía Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "USDJPY",
-    "DXY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Carry Trades",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "intervención-divisas",
-    "yen-japón",
-    "usdjpy",
-    "tesoro-usa",
-    "banco-central-japón",
-    "carry-trades"
-   ],
-   "tgText": "🚨 USA y Japón intervienen conjuntamente para sostener yen. Primer compra coordinada en +10 años. Bessent señala más acciones. USDJPY bajo presión; vigilar carry trades y volatilidad.",
-   "xText": "BREAKING: USA y Japón compran yen coordinadamente por primera vez en >10 años. Bessent promete más intervenciones. Yen bajo presión extrema. USDJPY, carry trades en foco. #FX #Mercados",
-   "discordText": "**INTERVENCIÓN DIVISAS USA-JAPÓN**\n• Tesoro USA compró yen junto a Japón (1ª vez en +10 años)\n• Objetivo: frenar caída pronunciada del yen\n• Bessent señala planes adicionales\n• USDJPY en volatilidad alta; carry trades vigilados",
-   "pushText": "USA y Japón intervienen en divisas para sostener yen",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY cae inmediatamente por presión sobre dólar y fortaleza de yen; carry trades desenrollan posiciones largos JPY",
-    "despues": "DXY baja por debilitamiento relativo del dólar; pares de riesgo (AUDJPY, NZDJPY, GBPJPY) se contraen; bonos japoneses pueden apreciarse",
-    "escenarios": "Traders vigilarán: (1) si intervención es sostenida o puntual, (2) nuevos anuncios de Bessent sobre coordinación con otros bancos centrales, (3) impacto en volatilidad implícita de opciones FX, (4) reposicionamiento de fondos de cobertura en carry trades, (5) reacción del BoJ en próxima reunión",
-    "riesgos": "Intervención coordinada puede indicar debilidad estructural del yen no reversible con medidas puntuales; riesgo de escalada hacia más intervenciones; Financial Times cita fuentes anónimas en reportería inicial"
-   },
-   "macro": {
-    "dolar": "presión bajista inmediata en DXY por intervención coordinada",
-    "oro": "neutral a ligeramente alcista por debilitamiento de dólar",
-    "nasdaq": "leve sesgo alcista por debilitamiento del dólar fortalecedor de competitividad exportadora USA",
-    "dow": "neutral a alcista por debilitamiento de dólar",
-    "sp500": "neutral a alcista por debilitamiento de dólar",
-    "bitcoin": "alcista potencial por debilitamiento de dólar",
-    "ethereum": "alcista potencial por debilitamiento de dólar",
-    "bonos": "tasas japonesas bajo presión bajista; bonos USA pueden beneficiarse de estabilidad",
-    "petroleo": "neutral a alcista por debilitamiento de dólar"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-03T11:28:50+00:00",
-     "id": "33865",
-     "texto": "EE.UU. se sumó a intervención de compra de yen liderada por Japón, la primera acción coordinada desde 1998. El movimiento apunta a estabilizar la divisa nipona y reducir riesgo de que Japón liquidar Treasuries para financiar soporte cambiario. Analistas advierten que fortaleza duradera del yen requiere política más restrictiva del BoJ, no solo intervenciones puntuales.",
-     "tgUrl": "https://t.me/walterbloomberg/33865"
-    },
-    {
-     "fecha": "2026-08-03T09:15:53+00:00",
-     "id": "33852",
-     "texto": "Datos del BOJ confirman intervención en mercado de divisas el viernes por aproximadamente 5,3 billones de yenes, coordinada con USA. Acción consistente con esfuerzos conjuntos para contener fortaleza del dólar frente al yen y apoyar estabilidad macroeconómica regional.",
-     "tgUrl": "https://t.me/walterbloomberg/33852"
-    },
-    {
-     "fecha": "2026-08-03T04:36:53.000Z",
-     "id": "913006923",
-     "texto": "Estados Unidos intervino en el mercado de divisas para sostener el yen japonés tras una depreciación significativa. La acción conjunta con Japón marca la primera intervención coordinada en años. El titular no especifica si fue una operación puntual o sostenida.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html"
-    },
-    {
-     "fecha": "2026-08-03T00:59:33.000Z",
-     "id": "918380960",
-     "texto": "Autoridades de EE.UU. y Japón confirmaron intervención conjunta en mercados de divisas para sostener el yen. Ambas naciones señalaron estar preparadas para intervenir nuevamente si las condiciones lo justifican. Esta acción busca estabilizar la moneda japonesa y contrarrestar volatilidad cambiaria.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html"
-    },
-    {
-     "fecha": "2026-08-02T21:43:11+00:00",
-     "id": "33842",
-     "texto": "Trump declara que la intervención estadounidense en el mercado de divisas del yen fue una demostración de solidaridad con Japón, no medida de política monetaria agresiva. Confirma coordinación bilateral en mercado cambiario. El titular no especifica el monto de intervención ni impacto esperado.",
-     "tgUrl": "https://t.me/walterbloomberg/33842"
-    },
-    {
-     "fecha": "2026-08-02T14:18:01.000Z",
-     "id": "964297321",
-     "texto": "Gobiernos de Japón y USA tomaron acciones coordinadas en mercados de divisas para defender el yen, según anuncio oficial. Medida responde a debilitamiento persistente de JPY vs. USD por diferenciales de tasas. Intervención marca apoyo coordinado tras semanas de presión en moneda japonesa y posible señal de límite de tolerancia política.",
-     "tgUrl": "https://www.cnbc.com/2026/08/02/japan-to-announce-tokyo-washington-took-joint-action-on-yen-reuters.html"
-    },
-    {
-     "fecha": "2026-08-02T01:41:08+00:00",
-     "id": "33831",
-     "texto": "El ministro de Finanzas japonés Katayama anunciará el lunes que Tokio y Washington tomaron medidas coordinadas para detener la depreciación del yen. La confirmación oficial de la intervención conjunta se conocerá en próximas horas, reflejando preocupación por la volatilidad cambiaria y sus efectos en la economía japonesa.",
-     "tgUrl": "https://t.me/walterbloomberg/33831"
-    },
-    {
-     "fecha": "2026-08-01T15:44:08.000Z",
-     "id": "969625772",
-     "texto": "Tesoro USA interviene para apoyar el yen tras pasos de Banco de Japón. Acción coordinada busca contener debilidad del yen y frenar volatilidad de tipos de cambio. Señal de preocupación conjunta sobre estabilidad de divisas en contexto de incertidumbre macroeconómica.",
-     "tgUrl": "https://www.cnbc.com/2026/08/01/us-treasury-intervenes-to-support-yen-after-japan-steps-in-ft.html"
-    }
-   ],
-   "actualizado": "2026-08-03T11:28:50+00:00"
-  },
-  {
-   "id": "33861",
-   "fecha": "2026-08-03T10:44:14+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33861",
-   "via": "DeItaone",
-   "original": "GOLDMAN WARNS ON FED COMMUNICATION SHIFT Goldman Sachs cautioned that reducing Fed policy guidance could increase market volatility and pricing errors. The bank argued Chair Kevin Warsh's proposal to give markets less insight into the Fed's reaction function would not improve policymaker feedback, but could instead delay monetary policy transmission and create unnecessary volatility in financial m",
-   "titulo": "Goldman Sachs advierte: reducir guidance de Fed aumentaría volatilidad, no mejoraría mercados",
-   "resumen": "Goldman Sachs cuestionó la propuesta del presidente Kevin Warsh de reducir la orientación de política de la Fed. El banco argumentó que menor transparencia sobre la función de reacción de la Fed no mejoraría feedback a los decisores, sino que retrasaría transmisión monetaria e introduciría volatilidad innecesaria en mercados financieros. Crítica frontal a cambio de comunicación sugerido.",
-   "analisis": {
-    "porque": "Debate sobre comunicación de la Fed afecta directamente transmisión de política monetaria, expectativas de tasas y volatilidad. Si guidance se reduce, mercados perderían ancla de expectativas, generando repricing abrupto. Relevancia institucional de GS da peso a crítica sobre diseño operativo de la Fed.",
-    "queOcurrio": "Goldman Sachs emite advertencia pública contra propuesta de Warsh de reducir guidance/transparencia de la Fed",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos USA",
-    "Rendimientos USA",
-    "S&P 500",
-    "Volatilidad (VIX)"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "fed-comunicación",
-    "kevin-warsh",
-    "transmisión-monetaria",
-    "goldman-sachs",
-    "política-monetaria"
-   ],
-   "tgText": "GS advierte: reducir guidance Fed aumentaría volatilidad, no mejoraría. Propuesta Warsh retrasaría transmisión monetaria y generaría repricing de tasas.",
-   "xText": "⚠️ Goldman Sachs vs Warsh: reducir Fed guidance agravaría volatilidad. Menos transparencia = retrasos en transmisión monetaria y repricings abruptos.",
-   "discordText": "**Goldman Sachs Advierte sobre Comunicación Fed**\n• Crítica a propuesta Warsh\n• Reducir guidance = más volatilidad\n• Retrasaría transmisión monetaria\n• Pérdida de ancla de expectativas\n• Riesgo de repricing de tasas",
-   "pushText": "Goldman Sachs advierte: reducir guidance Fed elevaría volatilidad",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Volatilidad (VIX) potencialmente alcista si mercado interpreta debate como cambio inminente; rendimientos pueden reaccionar por incertidumbre",
-    "despues": "Si propuesta Warsh avanza, curva de tipos se aplanaría por incertidumbre de transmisión; spreads de crédito se amplían; equities volátiles",
-    "escenarios": "Traders monitorean: (1) si Warsh presiona cambios en comunicación de la Fed; (2) reacción del mercado a menor transparencia (típicamente alcista para volatilidad); (3) impacto en expectativas de tasas terminal; (4) si otros bancos se suman a crítica de GS",
-    "riesgos": "Debate es especulativo; cambio actual en guidance no es inminente. GS tiene sesgo por efecto en operaciones de fixed income. Propuesta Warsh podría reducir sobrerreacción del mercado a comunicados (efecto ambiguo)."
-   },
-   "macro": {
-    "bonos": "neutral",
-    "rendimientos": "neutral",
-    "vix": "potencialmente alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33860",
-   "fecha": "2026-08-03T10:36:32+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33860",
-   "via": "DeItaone",
-   "original": "📅 THIS WEEK'S U.S. ECONOMIC CALENDAR (ET) 🟢 Monday • 9:45 AM – S&P Global Manufacturing PMI • 10:00 AM – ISM Manufacturing PMI (Est. 54.0), Construction Spending (Est. +0.3% m/m) • 4:00 PM – Auto Sales 🔵 Tuesday • 8:30 AM – Trade Balance (Est. -$73.0B) • 10:00 AM – JOLTS Job Openings (Est. 7.5M), Factory Orders (Est. +0.3% m/m) • 4:30 PM – API Crude Inventories 🟠 Wednesday • 8:15 AM – ADP Empl",
-   "titulo": "Semana clave para datos económicos: PMI, empleo y trade antes de reporte no-farm payroll del viernes",
-   "resumen": "Calendario económico denso (lunes-viernes): lunes PMI manufacturero y gasto en construcción; martes Trade Balance y JOLTS; miércoles ADP y PMI servicios; jueves jobless claims y productividad; viernes reporte de empleo (NFP +85K esperado, desempleo 4,3%). Datos críticos para Fed y expectativas de tasas.",
-   "analisis": {
-    "porque": "Semana de datos macros intensos define expectativas de política Fed. NFP del viernes es evento más importante; si decepciona, bonos y equities pueden reaccionar fuerte. PMI y employment data alimentan narrativa de ciclo económico.",
-    "queOcurrio": "Calendario oficial de eventos macroeconómicos clave concentrados en una semana, todos observables por mercado; establece marco para revisión de proyecciones de tasas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Bonos USA",
-    "DXY",
-    "NASDAQ",
-    "S&P500",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "empleo",
-    "PMI",
-    "NFP",
-    "Fed",
-    "inflación",
-    "datos económicos"
-   ],
-   "tgText": "📅 SEMANA CRÍTICA: lunes PMI+construcción | martes trade+JOLTS | miércoles ADP+servicios PMI | jueves claims+productividad | viernes NFP (+85K est., desempleo 4,3%). Marco para tasas Fed.",
-   "xText": "🔴 Semana de datos macro densa: PMI/construcción→trade/JOLTS→ADP→claims→NFP viernes. NFP es evento más importante: si falla +85K o desempleo sube, bonos y acciones reaccionan. Alta volatilidad esperada.",
-   "discordText": "**CALENDARIO ECONÓMICO SEMANAL**\n📊 **LUNES**: PMI fabril, gasto construcción\n📈 **MARTES**: Trade, JOLTS\n💼 **MIÉRCOLES**: ADP, PMI servicios\n📋 **JUEVES**: Claims, productividad\n🚨 **VIERNES**: **NFP +85K, desempleo 4,3%**",
-   "pushText": "Semana crítica de datos: NFP viernes es evento clave. Espera volatilidad.",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Reacciones diarias en bonos según cada dato; si PMI baja, 10Y cae; si PMI sube, 10Y sube. NFP viernes es evento dominante que puede revertir movimientos de semana.",
-    "despues": "Después de viernes, Fed revisa proyecciones; si empleo débil, expectativas de cortes suben y equities ganan. Si empleo fuerte, Fed mantiene restricción y bonos sufren.",
-    "escenarios": "Traders monitorean: (1) divergencia data débil vs. fuerte (cuadra la narrativa de desaceleración o de resistencia?); (2) consistencia con decisiones FOMC recientes; (3) si hay giros sorpresivos en estimaciones previo a viernes (revisiones de data antigua pueden mover mercado). NFP es showstopper: -50K vs. +85K esperado = pánico de recesión.",
-    "riesgos": "Estimaciones previas pueden ser revisadas (AP, ADP suelen no concordar con NFP). Sorpresa alcista o bajista en uno de los datos puede invertir dirección de mercado antes de viernes. Volatilidad de VIX podría subir si data no es clara."
-   },
-   "macro": {
-    "dolar": "neutral",
-    "bonos": "neutral",
-    "nasdaq": "neutral",
-    "sp500": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33858",
-   "fecha": "2026-08-03T10:14:38+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33858",
-   "via": "DeItaone",
-   "original": "GOLDMAN REFRESHES U.S. CONVICTION LIST Goldman Sachs added Applied Materials ( $AMAT), Delta ( $DAL), Microsoft ( $MSFT), O'Reilly Automotive ( $ORLY), Viking Holdings ( $VIK) and UPS to its U.S. Conviction List. The firm removed Broadcom ( $AVGO), Dick's Sporting Goods ( $DKS), Johnson & Johnson ( $JNJ) and ServiceNow ( $NOW).",
-   "titulo": "Goldman Sachs rediseña su Conviction List: AMAT, DAL, MSFT, ORLY, VIK y UPS suben; AVGO, DKS, JNJ y NOW salen",
-   "resumen": "Goldman Sachs actualizó su lista de convicciones estratégicas agregando Applied Materials, Delta, Microsoft, O'Reilly Automotive, Viking Holdings y United Parcel Service. Removió Broadcom, Dick's Sporting Goods, Johnson & Johnson y ServiceNow. Cambio refleja reposicionamiento hacia semiconductores, transporte y tecnología; salida de retail y software en dificultades.",
-   "analisis": {
-    "porque": "Cambios en 'Conviction List' de Goldman (top picks de largo plazo) señalan cambios en preferencia institucional. Entrada de AMAT refuerza narrativa de demanda de chips por IA; salida de NOW sugiere debilidad en SaaS; entrada de DAL refleja recuperación de viajes.",
-    "queOcurrio": "Banco de inversión líder reasigna recomendaciones estratégicas, priorizando semiconductores (AMAT), transporte (DAL, UPS), retail automotriz (ORLY) y tech grande (MSFT). Abandona software empresarial debilitado (NOW, AVGO) y retail deportivo (DKS).",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "AMAT",
-    "DAL",
-    "MSFT",
-    "ORLY",
-    "VIK",
-    "UPS",
-    "AVGO",
-    "DKS",
-    "JNJ",
-    "NOW",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMAT",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DAL",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "UPS",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "AVGO",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NOW",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "JNJ",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Goldman Sachs",
-    "Conviction List",
-    "recomendaciones",
-    "semiconductores",
-    "transporte"
-   ],
-   "tgText": "📋 Goldman rediseña Conviction List: AMAT, MSFT, DAL, UPS entran; AVGO, NOW, JNJ salen. Giro hacia semis y transporte; abandona SaaS y retail débil. Señal institucional de rotación de favores.",
-   "xText": "Goldman's updated Conviction List: IN→AMAT/MSFT/DAL/UPS; OUT→AVGO/NOW/JNJ/DKS. Rotación a semis (IA), transporte, tech grande. Abandona software empresarial y retail. Lectura: normalizacion postboom SaaS.",
-   "discordText": "**GOLDMAN - CONVICTION LIST UPDATE**\n➕ ENTRAN: AMAT | DAL | MSFT | ORLY | VIK | UPS\n➖ SALEN: AVGO | DKS | JNJ | NOW\n🎯 Tema: semis (IA), transporte, tech. Pausa en SaaS.",
-   "pushText": "Goldman agrega AMAT, MSFT, DAL a Conviction List; quita AVGO, NOW.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "AMAT, MSFT, DAL podrían ganar liquidez corta plazo por confirmación de respaldo institucional; AVGO y NOW caerían si otros fondos copian rotación",
-    "despues": "Rotación más amplia hacia semis y transporte si el movimiento de Goldman señala cambio de consenso; defensivas (JNJ) podrían perder atracción",
-    "escenarios": "Traders buscarán evidencia de que otros bancos copiaran cambio (copycatting es frecuente en Wall Street). Clave: volumen en AMAT y ahora vs. promedios.",
-    "riesgos": "Salida de NOW es contraria a narrativa de SaaS recovery que algunos fondos mantienen; podría indicar divergencia de análisis. MSFT ya estaba en favor; upgrade es confirmación, no sorpresa."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33857",
-   "fecha": "2026-08-03T10:04:34+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33857",
-   "via": "DeItaone",
-   "original": "$GME - GAMESTOP SHARES DOWN 3.1% PREMARKET AFTER CO ANNOUNCES PRIVATE EXCHANGE OF $1.4 BLN OF CONVERTIBLE NOTES FOR EQUITY",
-   "titulo": "GameStop cae 3,1% en premarket tras canje de $1.400M de convertibles por acciones",
-   "resumen": "GameStop anunció intercambio privado de $1.400 millones en notas convertibles por acciones, operación que se refleja en caída premarket de 3,1%. El canje aumentará base accionaria pero evita pago en efectivo. Confirmado el movimiento estratégico de capital sin precisar términos específicos del canje.",
-   "analisis": {
-    "porque": "Dilución accionaria esperada reduce EPS e incrementa volatilidad de corto plazo. Aunque evita salida de caja, el mercado suele castigar primero la dilución antes de reconocer beneficio de desapalancamiento.",
-    "queOcurrio": "GME ejecutó canje de convertibles (deuda) por equity sin especificar ratio ni valuación de conversión. Premarket muestra venta inicial típica en diluciones anunciadas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "GME",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "GME",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "GameStop",
-    "convertibles",
-    "dilución",
-    "canje",
-    "deuda"
-   ],
-   "tgText": "📉 GME cae 3,1% premarket tras anuncio de canje de $1.400M en convertibles por acciones. Dilución esperada; mercado castiga primero, revalúa beneficio de desapalancamiento después.",
-   "xText": "GME -3,1% premarket: canje $1,4B convertibles→acciones reduce EPS por dilución pero mejora balance. Reacción típica: venta corta plazo antes de reconocer desapalancamiento.",
-   "discordText": "**GAMESTOP - CANJE DE DEUDA**\n📊 Operación: $1.400M convertibles → acciones\n📉 Premarket: -3,1%\n✅ Beneficio: sin salida de caja\n⚠️ Dilución: EPS bajo presión",
-   "pushText": "GME cae 3,1%: canje de $1.400M en convertibles por acciones genera dilución.",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "GME caerá en apertura si venta de premarket se sostiene; volumen será crítico para determinar si hay pánico o rebalanceo ordenado",
-    "despues": "Evaluadores de largo plazo podrían ver oportunidad si ven el canje como fortalecimiento de balance; corto plazo seguirá siendo bajista",
-    "escenarios": "Traders vigilarán ratio de conversión cuando sea divulgado (podría estar en comunicado o cartas a accionistas). Si es muy dilutivo, caída se amplifica.",
-    "riesgos": "Titular no especifica términos exactos del canje; ratio de conversión es dato crítico faltante. GME sigue siendo volátil por presencia de retail; pánico podría amplificar caída."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33855",
-   "fecha": "2026-08-03T09:57:25+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33855",
-   "via": "DeItaone",
-   "original": "MARKET MOVERS 🟢 UPGRADES $IR: Stifel upgraded to Buy; PT raised to $101 from $84 $PSN: Jefferies upgraded to Buy; PT cut to $52 from $60 $CRCL: TD Cowen initiated with Buy; PT $82 $RBLX: JP Morgan assumed coverage with Neutral; PT $40 🔴 DOWNGRADES $LAUR: JP Morgan downgraded to Neutral",
-   "titulo": "Wall Street reasigna calificaciones: upgrades en IR, PSN, CRCL; downgrade en LAUR",
-   "resumen": "Stifel elevó IR a Compra con precio objetivo de $101 (desde $84). Jefferies mejoró PSN a Compra pero recortó PT a $52 (desde $60). TD Cowen inició cobertura de CRCL con Compra en $82. JP Morgan asumió cobertura de RBLX con Neutral en $40. JP Morgan downgradeó LAUR a Neutral. Cambios reflejan reposicionamiento selectivo en valuaciones post-earnings.",
-   "analisis": {
-    "porque": "Cambios en recomendaciones de bancos de inversión líderes afectan liquidez y dirección de precio en acciones específicas. IR gana 20% en PT; PSN cede a pesar de upgrade por revisión de objetivo.",
-    "queOcurrio": "Cuatro upgrades y un downgrade simultáneos de casas de bolsa institucionales en cinco nombres diferentes, con volatilidad en objetivos de precio que sugiere desacuerdos entre analistas sobre valuación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "IR",
-    "PSN",
-    "CRCL",
-    "RBLX",
-    "LAUR",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "IR",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "PSN",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "CRCL",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "RBLX",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "LAUR",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "upgrades",
-    "downgrades",
-    "análisis",
-    "precio objetivo",
-    "acciones"
-   ],
-   "tgText": "📊 Wall Street: IR sube a Compra (+$17 PT), PSN mejora pero recorta objetivo, CRCL y RBLX reciben cobertura. LAUR baja a Neutral. Movimientos selectivos en valuaciones.",
-   "xText": "🔄 Reacomodo en análisis: IR sube a Compra ($101), PSN mejora pero baja objetivo ($52), CRCL inicia en $82, RBLX neutral $40, LAUR cae a Neutral. Volatilidad de corto plazo esperada.",
-   "discordText": "**CAMBIOS DE CALIFICACIONES**\n• **IR**: Stifel → Compra | PT $84→$101 (+20%)\n• **PSN**: Jefferies → Compra | PT $60→$52 (-13%)\n• **CRCL**: TD Cowen → Compra | PT $82\n• **RBLX**: JP Morgan → Neutral | PT $40\n• **LAUR**: JP Morgan → Neutral",
-   "pushText": "IR sube 20% en PT; PSN, CRCL reciben upgrades. LAUR baja.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "IR probablemente suba en apertura por upgrade con elevación importante de PT; PSN fluctuará por resultado mixto (upgrade pero PT más bajo)",
-    "despues": "CRCL y RBLX seguirán la dirección del mercado; LAUR podría caer si hay venta cascada",
-    "escenarios": "Traders vigilarán volumen en IR para confirmar conviction; en PSN buscarán si upgrade es defensivo (el PT bajo sugiere riesgos). En RBLX, neutral con PT bajo es señal de espera.",
-    "riesgos": "Cambios en PT pueden no reflejar movimientos de precio si el mercado ya anticipó. Downgrade en LAUR es solitario; revisar si hay problemas fundamentales no divulgados."
    },
    "macro": null,
    "updates": []
