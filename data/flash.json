@@ -1,7 +1,330 @@
 {
- "lastId": 34101,
- "actualizado": "2026-08-06T13:25:17.829Z",
+ "lastId": 34108,
+ "actualizado": "2026-08-06T15:40:33.219Z",
  "items": [
+  {
+   "id": "34106",
+   "fecha": "2026-08-06T15:04:04+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34106",
+   "via": "DeItaone",
+   "original": "📈KALSHI TRADERS SEE S&P 500 HITTING 8,000 Kalshi traders now assign a 66.9% probability that the S&P 500 reaches 8,000 in 2026, after the index rallied more than 5% in four sessions. The S&P is now just 3.6% below the milestone. The rebound has been fueled by renewed AI optimism, strong Q2 earnings, and easing Middle East tensions. Kalshi also prices a roughly 33% chance the S&P climbs above 8,20",
+   "titulo": "Traders asignan 66,9% probabilidad a S&P 500 en 8.000 antes de fin de 2026",
+   "resumen": "Mercados de predicción Kalshi registran optimismo alcista tras rally de 5% en cuatro sesiones del S&P 500. El índice se encuentra 3,6% por debajo de la marca de 8.000. Los traders también precian 33% de probabilidad de que el S&P supere 8.200 este año. El rebote ha sido impulsado por renovado optimismo en IA, resultados Q2 sólidos y desescalada de tensiones en Medio Oriente.",
+   "analisis": {
+    "porque": "Refleja expectativas de mercado sobre sostenibilidad del rally actual y sentimiento hacia valuaciones tech-pesadas. Kalshi es agregador confiable de posiciones de traders institucionales.",
+    "queOcurrio": "Mercados de predicción Kalshi asignaron probabilidades específicas al S&P 500: 66,9% de alcanzar 8.000 y 33% de superar 8.200 en 2026, tras movimiento de 5% en cuatro sesiones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Kalshi"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Acciones Tech",
+    "SPY",
+    "QQQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "S&P500",
+    "Kalshi",
+    "predicciones-mercado",
+    "bullish",
+    "8000",
+    "sentimiento-alcista"
+   ],
+   "tgText": "📈 Kalshi: 66,9% de probabilidad que S&P 500 alcance 8.000 en 2026. El índice ya está 3,6% por debajo. Impulso: IA optimista + earnings Q2 + Medio Oriente.",
+   "xText": "📊 Traders de Kalshi asignan 66,9% probabilidad al S&P 500 en 8.000 (2026). Index rally 5% en 4 sesiones. Impulsos: optimismo IA, earnings sólidos, geopolítica.",
+   "discordText": "**Kalshi: S&P 500 a 8.000 en 2026**\n• 66,9% probabilidad asignada por traders\n• Índice 3,6% debajo del nivel\n• Impulsores: IA renovada, Q2 earnings, Medio Oriente",
+   "pushText": "S&P 500: 66,9% probabilidad de alcanzar 8.000 en 2026 según Kalshi",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "S&P 500 y NASDAQ tienden a reaccionar inmediatamente a cambios en sentimiento agregado de traders institucionales. Kalshi tiene reputación de precisión predictiva.",
+    "despues": "Acciones tech megacap (Nvidia, Apple, Microsoft) y ETFs como SPY, QQQ seguirían movimientos del índice base.",
+    "escenarios": "Traders monitorean: (1) sostenibilidad del rally actual sin corrección; (2) si llegada a 8.000 activa realización de ganancias; (3) datos de inflación/Fed en próximas semanas como catalizador alcista/bajista.",
+    "riesgos": "Las probabilidades de Kalshi reflejan sentimiento actual, no predicción fundamentada. Cambios rápidos en datos macro (CPI, jobless claims) pueden revertir posiciones. Rally de 5% en 4 sesiones es inusualmente agresivo."
+   },
+   "macro": {
+    "sp500": "Alcista — sentimiento institucional muy optimista hacia múltiplos actuales",
+    "nasdaq": "Alcista — IA sigue siendo driver principal",
+    "bonos": "Neutral — no hay cambio en expectativas de tasas según el titular",
+    "dolar": "Neutral — no mencionado"
+   },
+   "updates": []
+  },
+  {
+   "id": "34105",
+   "fecha": "2026-08-06T14:30:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34105",
+   "via": "DeItaone",
+   "original": "U.S. MILITARY: AWARE OF NORTH KOREA MISSILE LAUNCH AND ARE CONSULTING WITH ALLIES",
+   "titulo": "EE.UU. confirma lanzamiento de misil norcoreano; coordina con aliados",
+   "resumen": "Ejército estadounidense confirmó awareness de lanzamiento de misil por Corea del Norte y señaló que está en consulta con aliados. Evento es parte de escalada creciente en la Península de Corea y riesgos geopolíticos en región Indo-Pacífico.",
+   "analisis": {
+    "porque": "Escalada geopolítica afecta apetito por riesgo en mercados y prima de riesgo de activos vinculados a defensa/semiconductores asiáticos. Refuerza narrativa de tensiones East Asia que impacta valuaciones tech.",
+    "queOcurrio": "Ejército estadounidense confirmó que está consciente de lanzamiento de misil norcoreano y está consultando con aliados (Japón, Corea del Sur presumiblemente).",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/US Military"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "VIX",
+    "Oro",
+    "Yenes JPY",
+    "Defensa USA",
+    "Semiconductores Asiáticos",
+    "S&P500",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Corea-del-Norte",
+    "misil",
+    "geopolitica",
+    "USA-aliados",
+    "tensiones"
+   ],
+   "tgText": "🚨 CNRK lanza misil; USA confirma y coordina con aliados. Escalada geopolítica en Indo-Pacífico aviva apetito por riesgo. Impacto en semiconductores/defensa.",
+   "xText": "🚨 USA confirma lanzamiento de misil norcoreano; consultando con aliados. Escalada geopolítica. Oro/JPY alcistas. Riesgo sector tech asiático.",
+   "discordText": "**⚠️ Escalada Corea del Norte**\n• USA confirma lanzamiento de misil\n• En consulta con aliados\n• Impacto: oro alcista, riesgo equities, JPY más fuerte\n• Sector defensa: atención",
+   "pushText": "USA confirma lanzamiento de misil norcoreano; coordina con aliados",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "VIX tiende a subir inmediatamente ante noticias geopolíticas. Oro y yenes japoneses son activos de refugio y suben rápidamente.",
+    "despues": "S&P 500 y acciones tech pueden caer por aversión al riesgo. Defensivos (servicios de defensa, utilities) pueden subir. Semiconductores asiáticos bajo presión.",
+    "escenarios": "Traders monitorean: (1) escalada mayor o comunicado de calma/diálogo; (2) si USA o aliados responden con ejercicios militares; (3) impacto en supply chain semiconductor si región se desestabiliza.",
+    "riesgos": "Escalada impredecible. Datos limitados en titular sobre tipo/alcance de misil. Mercados ya están saturados de shocks geopolíticos (Medio Oriente); reacción podría ser moderada vs 2022-2023."
+   },
+   "macro": {
+    "oro": "Alcista — activo de refugio ante escalada",
+    "jpy": "Alcista — moneda de refugio, vecino directo",
+    "vix": "Alcista — volatilidad implícita sube",
+    "sp500": "Bajista — aversión al riesgo reduce demanda equities"
+   },
+   "updates": []
+  },
+  {
+   "id": "34090",
+   "fecha": "2026-08-06T11:21:30+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34090",
+   "via": "DeItaone",
+   "original": "$SPCX - SPACEX FACES MASSIVE SHARE UNLOCK Up to 911.5M SpaceX shares unlock today—more than 140% of the current public float—raising the risk of near-term volatility. The stock fell 12% after earnings despite beating on revenue and posting an unexpected AI profit. More unlocks follow on Aug. 12 and 20 days later, with 4B+ shares becoming tradable by year-end, creating a potential overhang even as ",
+   "titulo": "SpaceX enfrenta desbloqueo masivo de 911.5M acciones hoy; riesgo de volatilidad",
+   "resumen": "Hasta 911.5M acciones de SpaceX se desbloquean hoy, superando 140% del free float público actual. Luego de vencer 12% tras earnings (que vencieron en revenue pero sorprendieron con ganancia en IA), siguen desbloqueos el 12 agosto y 20 días después. Más de 4.000M acciones podrían volverse negociables antes de fin de año, creando sobreoferta potencial aunque fundamentals largo plazo permanecen fuertes.",
+   "analisis": {
+    "porque": "Lock-up expiry es evento mecánico de oferta que puede presionar precio independientemente de fundamentals; afecta acciones privadas/semi-públicas.",
+    "queOcurrio": "Desbloqueo de 911.5M acciones SpaceX que superan 140% del float; activos se desbloquearán en múltiples tranches hasta fin de año.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "SPCX (SpaceX)"
+   ],
+   "sesgos": [
+    {
+     "activo": "SPCX",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "lock-up",
+    "unlock",
+    "dilucion",
+    "volatilidad",
+    "acciones"
+   ],
+   "tgText": "🚀 911.5M acciones SpaceX se desbloquean HOY (140% del float actual). Más tranches el 12/ago y después. 4B+ acciones negociables antes fin de año.",
+   "xText": "SpaceX: 911.5M acciones se desbloquean hoy (+140% vs float). Múltiples tranches generarán 4B+ acciones negociables para fin 2026.",
+   "discordText": "**SpaceX Lock-up Expiry**\n• Hoy: 911.5M acciones desbloquean (140% del free float)\n• Agosto 12 + 20 días después: más tranches\n• Año: 4B+ acciones potencialmente negociables\n• Risk: presión de oferta vs fundamentals sólidos",
+   "pushText": "SpaceX: desbloqueo masivo de 911.5M acciones hoy",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "SPCX cae por presión mecánica de oferta; volatilidad intradiaria elevada.",
+    "despues": "Potencial contagio a ETFs tech/space; rebalanceos si SPX cae; treasuries suben si riesgo de mercado baja.",
+    "escenarios": "Traders monitorean: (1) tamaño de cada tranche y spreads bid-ask; (2) si insiders venden agresivamente o retienen; (3) data de comercio institucional.",
+    "riesgos": "Lock-up expiry es predecible pero tamaño/timing exacto de ventas es incierto; reacción podría ser peor si mercado ya está débil; rally reciente podría revertirse."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-06T14:26:02+00:00",
+     "id": "34104",
+     "texto": "Tras el desbloqueo esperado de 911,5 millones de acciones de SpaceX, las acciones tomaron dirección alcista subiendo 5,1%. Revierte la presión de oferta anticipada que había generado preocupación por volatilidad.",
+     "tgUrl": "https://t.me/walterbloomberg/34104"
+    }
+   ],
+   "actualizado": "2026-08-06T14:26:02+00:00"
+  },
+  {
+   "id": "34103",
+   "fecha": "2026-08-06T14:06:59+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34103",
+   "via": "DeItaone",
+   "original": "DEEPSEEK RESUMES FUNDRAISING, SEEKING $8B AT $74B VALUATION",
+   "titulo": "DeepSeek reanuda fundraising buscando $8B a valuación de $74B",
+   "resumen": "DeepSeek, empresa china de IA, reinicia ronda de financiación apuntando a recaudar $8.000 millones con valuación de $74.000 millones. Representa posicionamiento en competencia global de modelos de lenguaje frente a OpenAI y otras rivales occidentales.",
+   "analisis": {
+    "porque": "Señal de salud financiera y ambición en carrera de IA. Valuación de $74B comparable a empresas tech maduras occidentales. Refleja apetito de inversores globales por IA no occidental y competencia intensificada en espacio de LLMs.",
+    "queOcurrio": "DeepSeek anunció reanudación de fundraising buscando $8B a valuación de $74B, lo que sucede tras haber casi colapsado según reportes previos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Acciones Tech",
+    "NASDAQ",
+    "Stocks IA Occidentales",
+    "Nvidia",
+    "OpenAI"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nvidia",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "OpenAI",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "DeepSeek",
+    "IA",
+    "China",
+    "fundraising",
+    "competencia-global",
+    "valuacion"
+   ],
+   "tgText": "🤖 DeepSeek levanta $8B a $74B valuación en ronda B. Señal de resurgimiento chino en IA tras casi colapsar. Competencia global se intensifica vs OpenAI/Occidente.",
+   "xText": "🇨🇳 DeepSeek reanuda fundraising: $8B @ $74B valuation. Competencia en IA se intensifica. Refleja apetito global por alternativas a LLMs occidentales.",
+   "discordText": "**DeepSeek: Reanuda fundraising**\n• $8B en nueva ronda\n• Valuación: $74B\n• Contexto: resurgimiento tras casi colapsar\n• Implicación: competencia IA global se intensifica",
+   "pushText": "DeepSeek recauda $8B a $74B valuación; reanuda expansión en IA global",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Acciones de Nvidia, ASML, y servicios cloud (AWS, Azure) pueden reaccionar bajista si mercado interpreta como competencia a modelos occidentales.",
+    "despues": "OpenAI y Anthropic podrían enfrentar presión en narrativa de valuación. Inversores reevalúan defensibilidad de moats de empresas IA occidentales.",
+    "escenarios": "Traders monitorean: (1) si DeepSeek logra eficiencia en costos de entrenamiento (reportes previos sugieren esto); (2) aceptación regulatoria en Occidente; (3) diferenciales de valuación entre IA occidental vs china.",
+    "riesgos": "Titular no detalla fuentes de inversión o condiciones. Resurgimiento de DeepSeek tras reportes de colapso podría ser reversal temporal. Geopolítica USA-China agrega incertidumbre regulatoria."
+   },
+   "macro": {
+    "nasdaq": "Bajista — competencia IA intensificada reduce premios valuación tech",
+    "dolar": "Neutral — posible largo plazo si presiona márgenes de tech USA"
+   },
+   "updates": []
+  },
+  {
+   "id": "34102",
+   "fecha": "2026-08-06T14:00:36+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34102",
+   "via": "DeItaone",
+   "original": "US JUN WHOLESALE INVENTORIES +0.2%; EXPECTED +0.3%",
+   "titulo": "Inventarios mayoristas EE.UU. junio: +0,2% vs +0,3% esperado; suaviza presión inflacionaria",
+   "resumen": "Inventarios mayoristas estadounidenses en junio avanzaron 0,2% mensual, por debajo de la expectativa de +0,3%. Dato sugiere moderación en presión de precios y potencial normalización gradual de cadena de suministros. Impacta narrativa inflacionaria en próximos meses.",
+   "analisis": {
+    "porque": "Dato más bajo que esperado alivia presiones inflacionarias y respalda narrativa de soft landing. Afecta expectativas de tasas de la Fed: menor presión inflacionaria podría favorecer cortes en futuras reuniones.",
+    "queOcurrio": "Inventarios mayoristas en junio crecieron 0,2%, inferior al consenso de +0,3%.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/Datos Oficiales USA"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos USA",
+    "Rendimientos USA",
+    "DXY",
+    "Oro",
+    "S&P500",
+    "Nasdaq"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "inventarios-mayoristas",
+    "inflacion",
+    "datos-economicos",
+    "soft-landing"
+   ],
+   "tgText": "📊 Inventarios mayoristas junio: +0,2% vs +0,3% esperado. Presión inflacionaria suavizada. Respalda escenario soft landing y potencial margen para Fed.",
+   "xText": "📉 Inventarios mayoristas USA junio +0,2% (vs +0,3% est). Presión inflacionaria moderada. Alcista para bonos, bajista para USD. Soft landing narrativa.",
+   "discordText": "**Inventarios mayoristas: Dato débil**\n• Junio: +0,2% vs +0,3% esperado\n• Implicación: presión inflacionaria suavizada\n• Mercado: alcista bonos, bajista USD\n• Narrativa: soft landing reforzada",
+   "pushText": "Inventarios mayoristas +0,2% en junio; suaviza presión inflacionaria",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Mercados de bonos USA reaccionan al alza (yields bajan) ante sorpresa inflacionaria bajista. DXY tiende a debilitarse.",
+    "despues": "Oro típicamente sube en contexto de yields más bajos. Acciones pueden beneficiarse de mayor margen de holgura de la Fed, pero dato es secundario frente a CPI.",
+    "escenarios": "Traders monitorean: (1) si este patrón se mantiene en datos futuros de inventarios; (2) consistencia con CPI de agosto (próximas semanas); (3) implicaciones para reunión de septiembre de la Fed.",
+    "riesgos": "Dato es rezagado (junio). Un mes de inventarios débiles no invalida tendencia inflacionaria de largo plazo. Fed podría mantener postura cautelosa sin sorpresas adicionales."
+   },
+   "macro": {
+    "bonos": "Alcista — yields bajan ante sorpresa inflacionaria",
+    "dolar": "Bajista — menor presión de tasas reduce atractivo del USD",
+    "oro": "Alcista — yields más bajos favorecen metal",
+    "sp500": "Neutral a ligeramente alcista — margen Fed mayor pero dato secundario"
+   },
+   "updates": []
+  },
   {
    "id": 34101,
    "fecha": "2026-08-06T13:22:51+00:00",
@@ -449,55 +772,6 @@
     "bonos": "neutral",
     "petroleo": "neutral"
    },
-   "updates": []
-  },
-  {
-   "id": "34090",
-   "fecha": "2026-08-06T11:21:30+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34090",
-   "via": "DeItaone",
-   "original": "$SPCX - SPACEX FACES MASSIVE SHARE UNLOCK Up to 911.5M SpaceX shares unlock today—more than 140% of the current public float—raising the risk of near-term volatility. The stock fell 12% after earnings despite beating on revenue and posting an unexpected AI profit. More unlocks follow on Aug. 12 and 20 days later, with 4B+ shares becoming tradable by year-end, creating a potential overhang even as ",
-   "titulo": "SpaceX enfrenta desbloqueo masivo de 911.5M acciones hoy; riesgo de volatilidad",
-   "resumen": "Hasta 911.5M acciones de SpaceX se desbloquean hoy, superando 140% del free float público actual. Luego de vencer 12% tras earnings (que vencieron en revenue pero sorprendieron con ganancia en IA), siguen desbloqueos el 12 agosto y 20 días después. Más de 4.000M acciones podrían volverse negociables antes de fin de año, creando sobreoferta potencial aunque fundamentals largo plazo permanecen fuertes.",
-   "analisis": {
-    "porque": "Lock-up expiry es evento mecánico de oferta que puede presionar precio independientemente de fundamentals; afecta acciones privadas/semi-públicas.",
-    "queOcurrio": "Desbloqueo de 911.5M acciones SpaceX que superan 140% del float; activos se desbloquearán en múltiples tranches hasta fin de año.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "SPCX (SpaceX)"
-   ],
-   "sesgos": [
-    {
-     "activo": "SPCX",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX",
-    "lock-up",
-    "unlock",
-    "dilucion",
-    "volatilidad",
-    "acciones"
-   ],
-   "tgText": "🚀 911.5M acciones SpaceX se desbloquean HOY (140% del float actual). Más tranches el 12/ago y después. 4B+ acciones negociables antes fin de año.",
-   "xText": "SpaceX: 911.5M acciones se desbloquean hoy (+140% vs float). Múltiples tranches generarán 4B+ acciones negociables para fin 2026.",
-   "discordText": "**SpaceX Lock-up Expiry**\n• Hoy: 911.5M acciones desbloquean (140% del free float)\n• Agosto 12 + 20 días después: más tranches\n• Año: 4B+ acciones potencialmente negociables\n• Risk: presión de oferta vs fundamentals sólidos",
-   "pushText": "SpaceX: desbloqueo masivo de 911.5M acciones hoy",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "SPCX cae por presión mecánica de oferta; volatilidad intradiaria elevada.",
-    "despues": "Potencial contagio a ETFs tech/space; rebalanceos si SPX cae; treasuries suben si riesgo de mercado baja.",
-    "escenarios": "Traders monitorean: (1) tamaño de cada tranche y spreads bid-ask; (2) si insiders venden agresivamente o retienen; (3) data de comercio institucional.",
-    "riesgos": "Lock-up expiry es predecible pero tamaño/timing exacto de ventas es incierto; reacción podría ser peor si mercado ya está débil; rally reciente podría revertirse."
-   },
-   "macro": null,
    "updates": []
   },
   {
@@ -7321,260 +7595,6 @@
     "despues": "XLF (sector financiero), constructoras (MTH, LEN, PHM), REITs hipotecarios; mercado de bonos si se interpretan como menor tasa de defaults",
     "escenarios": "Traders observarán: (1) si este compromiso implica cambios en pricing de hipotecas; (2) impacto en provisiones de crédito; (3) si otras grandes financieras lo replican; (4) validación de demanda de vivienda a largo plazo",
     "riesgos": "El titular no especifica fuentes de financiamiento; si tasas suben, el deployment podría ralentizarse; riesgo de que promesa sea parcialmente asegurada con ABS"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33872",
-   "fecha": "2026-08-03T13:00:26+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33872",
-   "via": "DeItaone",
-   "original": "DEUTSCHE BANK SEES GOLD FAIR VALUE AT $4,700 Deutsche Bank says gold remains in an \"explosive phase\" that began in August 2024, with its models pointing to a year-end fair value of around $4,700/oz, above its $4,600 Q4 forecast. While some valuation models imply downside toward $2,600, the bank believes the correction has likely bottomed near $3,900, with official demand and supportive macro facto",
-   "titulo": "Deutsche Bank ve oro en fase explosiva: target año fin $4.700 vs consenso inferior",
-   "resumen": "Deutsche Bank mantiene perspectiva alcista en oro, citando fase explosiva iniciada en agosto 2024. Modelos del banco apuntan a fair value de $4.700/oz a cierre 2026, arriba de su previsión Q4 de $4.600. Aunque algunos modelos valuación implican corrección hacia $2.600, DB estima que piso se alcanzó en $3.900, con demanda oficial y fundamentos macro soportando outlook largo plazo.",
-   "analisis": {
-    "porque": "Revisión de valuación de oro hacia arriba refleja confluencia de factores macro (tasas reales bajas, incertidumbre geopolítica, demanda de bancos centrales). Afecta asignación de carteras defensivas, dólar y rendimientos reales. Ciclo alcista en materias primas puede favorecer rotación fuera de tech.",
-    "queOcurrio": "Banco alemán mantiene outlook alcista en oro y sube target 2026 a $4.700/oz, argumentando corrección ya tocó piso en $3.900",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Oro",
-    "DXY",
-    "Rendimientos USA",
-    "USDJPY",
-    "Bonos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "oro",
-    "deutsche-bank",
-    "valuación",
-    "materias-primas",
-    "macro"
-   ],
-   "tgText": "DB: oro en fase explosiva, target $4.700/oz año fin 2026 vs $4.600 Q4. Piso en $3.900. Demanda oficial y macro soportan alcismo largo plazo.",
-   "xText": "🏆 Deutsche Bank: oro en fase explosiva. Target 2026: $4.700/oz vs consenso. Piso tocado en $3.900. Demanda de BC soporta largo plazo.",
-   "discordText": "**Deutsche Bank: Oro Alcista**\n• Target 2026: $4.700/oz\n• Vs Q4: $4.600\n• Piso estimado: $3.900\n• Fase explosiva desde ago-24\n• Demanda oficial + macro alcista",
-   "pushText": "DB alza oro a $4.700 target 2026; fase explosiva desde agosto 2024",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Oro sube en reacción positiva a revisión; dólar presionado (correlación inversa); rendimientos reales pueden bajar",
-    "despues": "Rotación potencial fuera de tech hacia defensivos; mining stocks (GLD, GDX) beneficiados; competencia USD vs oro intensificada",
-    "escenarios": "Traders monitorean: (1) si rally de oro se sostiene sin nueva debilidad de tasa real; (2) demanda de BC no se revierte; (3) geopolítica (Oriente Medio, Rusia-Ucrania) mantiene premium; (4) timing de revisiones al alza de tasas USA",
-    "riesgos": "Target $4.700 puede ser optimista si tasas USA suben; ciclo alcista en oro podría revertirse si dólar fortalece; modelo de DB no es predicción, es escenario probabilístico"
-   },
-   "macro": {
-    "oro": "alcista",
-    "dolar": "bajista",
-    "rendimientos": "bajista",
-    "bonos": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33869",
-   "fecha": "2026-08-03T12:08:32+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33869",
-   "via": "DeItaone",
-   "original": "MORGAN STANLEY SEES CLOUD SPENDING SURGING TO $1.2T Morgan Stanley expects global cloud capital spending to reach $1.2 trillion in 2027, up 30% YoY and $170 billion above pre-Q2 estimates. The firm said all four major U.S. hyperscalers remain capacity constrained as AI demand continues to outpace supply. Alphabet ($GOOGL), Amazon ($AMZN) and Meta ($META) all raised 2026 capex guidance, while Micro",
-   "titulo": "Morgan Stanley eleva pronóstico capex en cloud a $1,2T 2027; hiperscalers saturados por IA",
-   "resumen": "Morgan Stanley proyecta capex global en cloud por $1,2 billones en 2027 (+30% YoY), $170 mil millones arriba de estimaciones previas. Los cuatro hiperscalers principales (GOOGL, AMZN, META, MSFT) permanecen con restricciones de capacidad. Alphabet, Amazon y Meta subieron guidance de capex 2026; MS mantiene su outlook. MS estima upside a $1,4 billones.",
-   "analisis": {
-    "porque": "Capex acelerado en infraestructura AI genera demanda sostenida de equipos (semiconductores, conectividad, datacenters), apoya valuaciones de hyperscalers y sus proveedores. Refleja cambio estructural hacia AI que respalda crecimiento multi-año.",
-    "queOcurrio": "Analistas elevan proyecciones de inversión en cloud/IA por demanda inelástica y restricciones de capacidad no resueltas en el corto plazo",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "GOOGL",
-    "AMZN",
-    "META",
-    "MSFT",
-    "Semiconductores",
-    "XLK"
-   ],
-   "sesgos": [
-    {
-     "activo": "GOOGL",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "META",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "capex-cloud",
-    "ia-infraestructura",
-    "hyperscalers",
-    "morgan-stanley",
-    "tech-spending"
-   ],
-   "tgText": "MS proyecta capex cloud $1,2T en 2027 (+30% YoY). Hiperscalers en máxima capacidad. GOOGL, AMZN, META suben guidance 2026. Upside potencial a $1,4T.",
-   "xText": "☁️ Morgan Stanley: capex cloud alcanzará $1,2T en 2027 (+30% YoY). Hiperscalers sin capacidad ociosa. GOOGL, AMZN, META aceleran inversiones en IA.",
-   "discordText": "**Morgan Stanley: Capex Cloud en Explosión**\n• 2027: $1,2T proyectado (+30% YoY)\n• Upside potencial: $1,4T\n• GOOGL, AMZN, META suben guidance\n• MSFT mantiene outlook\n• Hiperscalers saturados",
-   "pushText": "Morgan Stanley eleva capex cloud a $1,2T 2027; demanda de IA sin frenos",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "NASDAQ, GOOGL, AMZN, META alcistas por visibilidad de demanda multi-año; semiconductor ETFs (SMH) positivos",
-    "despues": "Bonos pueden ceder si expectativa de tasas reales se ajusta; utilities se rezagan; commodities de energía presionados (datacenter demand)",
-    "escenarios": "Traders monitorean: (1) si capacidad de supply chain de semiconductores puede satisfacer demanda; (2) si márgenes de hiperscalers se expanden o contraen; (3) timing de retorno sobre inversión en IA; (4) competencia geopolítica en tech",
-    "riesgos": "Proyecciones pueden ser optimistas si desaceleración global reduce adoption de IA; restricciones de exportación de chips EE.UU.-China podrían afectar proveedores; overinvestment en capacidad ociosa"
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "sp500": "alcista",
-    "bonos": "presión bajista",
-    "petroleo": "presión bajista por demanda de energía datacenter"
-   },
-   "updates": []
-  },
-  {
-   "id": "33868",
-   "fecha": "2026-08-03T12:02:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33868",
-   "via": "DeItaone",
-   "original": "DEUTSCHE BANK RAISES S&P 500 EPS FORECASTS Deutsche Bank lifted its 2026 S&P 500 EPS forecast to $358 (from $342) and 2027 to $420 (from $390) after strong Q2 earnings. A record 87% of companies have beaten estimates, with profits on track to grow 33% in Q2. The bank said earnings strength is broadening beyond Big Tech, supported by record margins and robust sales growth.",
-   "titulo": "Deutsche Bank sube pronósticos de ganancias S&P 500 a $358 en 2026 tras récord de earnings",
-   "resumen": "Deutsche Bank elevó sus estimaciones de EPS para el S&P 500 a $358 en 2026 (desde $342) y $420 en 2027 (desde $390), tras resultados de Q2 superiores a expectativas. El 87% de empresas ha batido estimaciones con crecimiento de ganancias del 33% trimestral, impulsado por márgenes récord y crecimiento robusto de ingresos más allá del sector tecnológico.",
-   "analisis": {
-    "porque": "Revaloración al alza de earnings fundamentales del índice principal afecta directamente valoraciones y flujos hacia renta variable. Señal de fortaleza económica corporativa desacoplada del sector tech.",
-    "queOcurrio": "Banco de inversión elevaría EPS estimates basado en desempeño Q2 2026 y amplitud de beats corporativos",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "S&P 500",
-    "NASDAQ",
-    "Dow Jones",
-    "Bonos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "earnings-q2",
-    "revaloración-eps",
-    "renta-variable",
-    "deutsche-bank",
-    "valuaciones"
-   ],
-   "tgText": "DB eleva pronósticos S&P 500: $358 EPS 2026 vs $342. 87% empresas baten Q2 con +33% ganancias. Márgenes récord impulsan amplitud más allá del tech.",
-   "xText": "📈 Deutsche Bank sube S&P 500 EPS a $358 para 2026. Récord del 87% de empresas bate Q2 con crecimiento de ganancias del 33%. Amplitud corporativa fortalecida.",
-   "discordText": "**Deutsche Bank eleva S&P 500 EPS 2026 a $358**\n• Antes: $342 → Ahora: $358\n• 2027: $420 (vs $390)\n• 87% empresas baten Q2\n• +33% crecimiento ganancias\n• Amplitud más allá tech",
-   "pushText": "Deutsche Bank sube S&P 500 EPS a $358 en 2026",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "S&P 500 y NASDAQ alcistas por revaloración de earnings base; bonos en presión por suba de tasa terminal esperada",
-    "despues": "Dólar podría fortalecerse (carry trades), oro debilitarse; spreads de crédito mejoran",
-    "escenarios": "Traders monitorean: (1) si ampliación de beats se sostiene en Q3; (2) impacto en guidance empresarial; (3) si márgenes se contraen por presiones de costos",
-    "riesgos": "Estimaciones pueden ser optimistas si desacelera demanda global o presiones salariales erosionan márgenes en H2"
-   },
-   "macro": {
-    "sp500": "alcista",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "bonos": "presión bajista",
-    "dolar": "potencialmente alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33866",
-   "fecha": "2026-08-03T11:42:43+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33866",
-   "via": "DeItaone",
-   "original": "$TSLA - TESLA EUROPE SALES SHOW MIXED JULY TREND Tesla's July registrations surged 86% in France and 52% in Denmark, but plunged 97% in Norway, 81% in Spain, and 60% in Sweden. The mixed results follow Tesla's record Q2 deliveries, with investors now awaiting registration data from Germany and the UK later this week.",
-   "titulo": "Tesla: registros europeos mixtos en julio; caída de 97% en Noruega contrastan con alzas en Francia",
-   "resumen": "Tesla reportó registros de julio divergentes en Europa: salto de 86% en Francia y 52% en Dinamarca, pero caída de 97% en Noruega, 81% en España y 60% en Suecia. Los datos llegan tras entregas récord de Q2, con inversores pendientes de datos de Alemania y UK (se esperan esta semana). Volatilidad sugiere sensibilidad a promociones y ciclos de demanda regionales.",
-   "analisis": {
-    "porque": "Datos de registración reflejan fortaleza/debilidad de demanda Tesla en mercados clave europeos. Caída severa en Noruega (mercado EV líder) y España son banderas rojas sobre saturación post-Q2 o erosión de demanda en momentum alcista. Mercado monitorea si recuperación es sostenible.",
-    "queOcurrio": "Registros Tesla en julio muestran extrema volatilidad regional: crecimientos en mercados occidentales vs colapso en mercados nórdicos/ibéricos",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "TSLA",
-    "Sector Automotriz Europeo"
-   ],
-   "sesgos": [
-    {
-     "activo": "TSLA",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "tesla-europa",
-    "registros-julio",
-    "demanda-ev",
-    "europa",
-    "tsla"
-   ],
-   "tgText": "Tesla: julio mixto en Europa. Francia +86%, Dinamarca +52%, pero Noruega -97%, España -81%, Suecia -60%. Alemania/UK data pendiente esta semana.",
-   "xText": "🚗 Tesla julio mixto: Francia +86%, pero Noruega -97%, España -81%. Volatilidad regional aguda. Datos Alemania/UK esta semana clave para outlook demanda.",
-   "discordText": "**Tesla Registros Julio: Europa Divergente**\n• Francia: +86% ↑\n• Dinamarca: +52% ↑\n• Noruega: -97% ↓\n• España: -81% ↓\n• Suecia: -60% ↓\n• Alemania/UK pendiente",
-   "pushText": "Tesla julio: Francia sube 86%, Noruega cae 97%. Europa muy volátil.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "TSLA podría ceder si data Alemania/UK confirma debilidad regional; competidores EV europeos (BYD, VW, BMW) monitoreados",
-    "despues": "Si demanda baja, márgenes brutos bajo mayor presión; competencia local intensa en Europa; impacto en guidance FY2026",
-    "escenarios": "Traders monitorean: (1) si caída en Noruega refleja saturación o reacción a cambios regulatorios/incentivos; (2) data Alemania (mayor mercado EU) decisiva; (3) impacto en margen bruto Q3; (4) si Tesla comparte con mercado ajustes de demanda regional",
-    "riesgos": "Volatilidad regional sugiere ciclos cortos de demanda; competencia intensa en Europa reduce pricing power; posible reducción de guidance si trimestre comienza débil"
    },
    "macro": null,
    "updates": []
