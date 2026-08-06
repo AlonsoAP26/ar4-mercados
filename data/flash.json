@@ -1,7 +1,137 @@
 {
  "lastId": 34084,
- "actualizado": "2026-08-06T02:02:04.780Z",
+ "actualizado": "2026-08-06T05:27:04.580Z",
  "items": [
+  {
+   "id": 912835090,
+   "fecha": "2026-08-06T03:43:32.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/asia-tech-sell-off-has-not-derailed-ai-investment-cycle-jp-morgan-says.html",
+   "via": "CNBC",
+   "original": "Asia tech sell-off has not derailed AI investment cycle, J.P. Morgan says",
+   "titulo": "Venta de tech asiático no ha descarrilado ciclo de inversión en IA: JPMorgan",
+   "resumen": "JPMorgan señala que la reciente venta masiva de tecnología en Asia no ha interrumpido el ciclo de inversión global en inteligencia artificial. El análisis sugiere que el selloff es más correctivo que estructural, y la demanda de IA sigue intacta.",
+   "analisis": {
+    "porque": "Confirmación de JPMorgan sobre resiliencia del ciclo IA es relevante para narrative de crecimiento tech global. Afecta posicionamiento en Nasdaq, semiconductores y acciones de IA.",
+    "queOcurrio": "JPMorgan analiza el reciente crash de tech asiático y concluye que el ciclo de inversión IA permanece robusto a pesar del volatilidad regional.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Nasdaq",
+    "Tech Asiático",
+    "Semiconductores",
+    "Acciones IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Nasdaq",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Tech Asiático",
+     "sesgo": "neutral-alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas|Datos Económicos",
+   "keywords": [
+    "JPMorgan",
+    "IA",
+    "Asia-tech",
+    "ciclo-inversión",
+    "semicondutores"
+   ],
+   "tgText": "💻 JPMorgan: venta de tech asiático es correctiva, no descarrila ciclo IA. Demanda de IA sigue intacta globalmente.",
+   "xText": "📈 JPMorgan: venta tech en Asia es ajuste temporal; ciclo de inversión en IA mantiene momentum. Resiliencia de demanda confirmada.",
+   "discordText": "**JPMorgan: Ciclo IA resiliente**\n• Venta asiática de tech es correctiva\n• Ciclo de inversión IA no se ha interrumpido\n• Demanda global de IA sigue robusta",
+   "pushText": "JPMorgan: ciclo IA resiliente a pesar de venta asiática",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Nasdaq repunta tras validación de JPMorgan; acciones de semiconductores (NVDA, AMD, TSMC) se fortalecen",
+    "despues": "Tech de IA global se reevalúa al alza; inversores reposicionan exposición a IA después del selloff",
+    "escenarios": "Traders monitorean datos de inversión capex en centros de datos; vigilancia de guías de empresas semiconductoras; posible rally en acciones de IA beaten-down",
+    "riesgos": "Análisis es prospectivo; si datos de inversión real no confirman, narrativa se revierte; riesgo de flash-crash en tech asiático si contagio continúa"
+   },
+   "macro": {
+    "nasdaq": "alcista",
+    "sp500": "alcista",
+    "dolar": "neutral",
+    "bitcoin": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": 936274873,
+   "fecha": "2026-08-06T02:02:39.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/jpmorgan-jamie-dimon-leverage-market-disruption.html",
+   "via": "CNBC",
+   "original": "JPMorgan&apos;s Jamie Dimon warns of high leverage: &apos;Somebody will disrupt the market&apos;",
+   "titulo": "Jamie Dimon advierte sobre alto apalancamiento: «Alguien disrumpirá el mercado»",
+   "resumen": "El CEO de JPMorgan Chase advierte sobre niveles elevados de apalancamiento en los mercados financieros, sugiriendo que algún evento de disrupción es posible. La advertencia refleja preocupaciones sobre la fragilidad del sistema ante shocks externos, en línea con alertas previas del banco sobre volatilidad potencial.",
+   "analisis": {
+    "porque": "Las advertencias de líderes bancarios sobre apalancamiento sistémico suelen anticipar cambios en la política de riesgo y pueden presagiar volatilidad. Afecta directamente la confianza en mercados y decisiones de posicionamiento.",
+    "queOcurrio": "Dimon emitió una advertencia pública sobre riesgos de apalancamiento excesivo en el sistema financiero, implicando vulnerabilidad ante eventos perturbadores.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Bonos",
+    "Acciones Financieras",
+    "VIX",
+    "Índices Globales"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Bancos Centrales|Empresas|Breaking News",
+   "keywords": [
+    "JPMorgan",
+    "apalancamiento",
+    "riesgo-sistémico",
+    "Jamie-Dimon",
+    "volatilidad"
+   ],
+   "tgText": "🔴 Jamie Dimon (JPMorgan) advierte: alto apalancamiento en mercados. «Alguien disruptará». Señal de alerta sobre fragilidad sistémica.",
+   "xText": "⚠️ Jamie Dimon advierte sobre riesgos de apalancamiento excesivo: «Alguien disrumpirá el mercado». Preocupación sistémica en Wall Street.",
+   "discordText": "**JPMorgan alerta: riesgo de disrupción**\n• CEO Jamie Dimon advierte sobre apalancamiento elevado\n• Sugiere vulnerabilidad sistémica en mercados\n• Refleja preocupaciones de riesgo de choque externo",
+   "pushText": "JPMorgan: Dimon alerta sobre apalancamiento y riesgo de disrupción",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "S&P 500 y futuros: baja inicial por aversión al riesgo; luego bonos se aprecia por flight-to-safety",
+    "despues": "Acciones financieras caen; volatilidad implícita (VIX) sube; spreads de crédito se amplían",
+    "escenarios": "Traders monitorean si esta advertencia coincide con ajustes de posiciones de hedge funds; vigilancia de eventos cat-bond o desenpalancamiento forzado",
+    "riesgos": "Dimon ha emitido advertencias previas sin materiarse inmediatamente; el impacto depende de si hay evidencia de estrés real en el sistema"
+   },
+   "macro": {
+    "dolar": "alcista (flight-to-safety)",
+    "oro": "alcista (cobertura)",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bitcoin": "neutral-bajista",
+    "ethereum": "neutral-bajista",
+    "bonos": "alcista",
+    "petroleo": "bajista"
+   },
+   "updates": []
+  },
   {
    "id": 970922079,
    "fecha": "2026-08-06T00:45:42.000Z",
@@ -594,6 +724,223 @@
     }
    ],
    "actualizado": "2026-08-05T21:57:58+00:00"
+  },
+  {
+   "id": 922998852,
+   "fecha": "2026-08-05T21:33:15.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/sp-500-is-experiencing-a-violent-surge-often-seen-at-key-market-tops.html",
+   "via": "CNBC",
+   "original": "S&P 500 is experiencing violent surge often seen at major market tops. One chart analyst is worried",
+   "titulo": "S&P 500 registra alza violenta típica de topos de mercado; analista técnico preocupado",
+   "resumen": "Un analista técnico señala que el actual repunte violento del S&P 500 exhibe patrones históricamente asociados con picos de mercado. La advertencia apunta a divergencias técnicas y sobrecalentamiento, sugiriendo cautela en niveles actuales.",
+   "analisis": {
+    "porque": "Los patrones técnicos de picos de mercado (exhaustión alcista, divergencias) son referentes clave para traders. Anticipa reversiones o correcciones significativas.",
+    "queOcurrio": "Un analista técnico observa en gráficos del S&P 500 señales de sobrecalentamiento y patrones típicos previos a máximos de mercado.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Nasdaq",
+    "Futuros USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Breaking News|Datos Económicos",
+   "keywords": [
+    "S&P500",
+    "análisis-técnico",
+    "topo-mercado",
+    "divergencias",
+    "sobrecalentamiento"
+   ],
+   "tgText": "📊 Alerta técnica: S&P 500 muestra patrones de «topo» de mercado. Analista advierte sobre sobrecalentamiento e inminente reversión.",
+   "xText": "⚠️ Análisis técnico: S&P 500 exhibe señales de pico de mercado (exhaustión alcista, divergencias). Traders alertas a reversión.",
+   "discordText": "**S&P 500: Patrón técnico de pico**\n• Alza violenta con señales de sobrecalentamiento\n• Divergencias técnicas presentes\n• Analista alerta sobre reversión potencial",
+   "pushText": "S&P 500 muestra patrones técnicos de topo de mercado",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Futuros S&P 500 caen si se confirman estas señales; stop-losses técnicos se activan",
+    "despues": "Rotación defensiva: energía, utilities, pharma se aprecia; tech y growth se deprecian",
+    "escenarios": "Traders monitorean retrocesos de Fibonacci (38.2%, 50%, 61.8%); vigilancia de volumen en retroceso; posibles cascadas de liquidación técnica",
+    "riesgos": "Análisis técnico es subjetivo; la «violencia» del alza puede continuar si hay catalistas fundamentales positivos; falsa señal típica antes de nuevos máximos"
+   },
+   "macro": {
+    "sp500": "bajista (a corto plazo por técnica)",
+    "nasdaq": "bajista",
+    "dolar": "alcista (volatilidad)",
+    "bonos": "alcista (risk-off)",
+    "oro": "alcista",
+    "bitcoin": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": 952385739,
+   "fecha": "2026-08-05T21:32:34.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/spacex-tesla-megapack-ai-data-centers.html",
+   "via": "CNBC",
+   "original": "SpaceX ramps up Tesla Megapack purchases in Q2 to power its AI data centers",
+   "titulo": "SpaceX amplía compras de Tesla Megapack en Q2 para alimentar centros de datos IA",
+   "resumen": "SpaceX incrementó significativamente sus adquisiciones de baterías Tesla Megapack durante el segundo trimestre 2026 para potenciar su infraestructura de centros de datos enfocados en IA. El dato refleja demanda creciente de soluciones energéticas en la industria de inteligencia artificial.",
+   "analisis": {
+    "porque": "La demanda de baterías y almacenamiento energético para centros de datos IA es métrica clave de crecimiento en el sector tech. Impacta outlook de Tesla y refleja inversión de capital en infraestructura IA.",
+    "queOcurrio": "SpaceX aceleró compras de Megapacks (baterías de almacenamiento Tesla) en Q2 para respaldar centros de datos de IA.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Tesla",
+    "Nasdaq",
+    "Energy Storage",
+    "Tech Stocks"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tesla",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Nasdaq",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas|Datos Económicos",
+   "keywords": [
+    "SpaceX",
+    "Tesla",
+    "Megapack",
+    "centros-datos",
+    "IA",
+    "energía"
+   ],
+   "tgText": "🔋 SpaceX amplia compras de baterías Tesla Megapack en Q2 para potenciar centros de datos IA. Señal de inversión acelerada.",
+   "xText": "📈 SpaceX acelera compras de Tesla Megapack en Q2 para infraestructura IA. Indicador de demanda de almacenamiento energético robusto.",
+   "discordText": "**SpaceX + Tesla: Expansión de baterías**\n• SpaceX aumentó compras de Megapack en Q2\n• Objetivo: alimentar centros de datos IA\n• Refleja inversión de capital en infraestructura",
+   "pushText": "SpaceX amplía compras de baterías Tesla para centros de datos IA",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Tesla acciones suben por confirmación de demanda de Megapack; sector energético se fortalece",
+    "despues": "Proveedores de semiconductores y equipos para centros de datos (NVDA, AMD) podrían ver revalidación de ciclo IA",
+    "escenarios": "Traders monitorean capacidad productiva de Tesla Megapack; catalista potencial para earnings guidance; impacto en márgenes de almacenamiento energético",
+    "riesgos": "El titular no especifica volumen exacto; demanda podría ser cíclica; competencia de otros proveedores de baterías"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 994170396,
+   "fecha": "2026-08-05T21:22:36.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/disney-parks-travel-attendance-revenue.html",
+   "via": "CNBC",
+   "original": "How Disney parks are bucking a travel slowdown",
+   "titulo": "Disney Parks esquiva desaceleración de viajes; reporta resultados resilientes",
+   "resumen": "Disney Parks y Experiences reporta desempeño robusto en un contexto de desaceleración general del turismo, sugiriendo poder de pricing y demanda resiliente de entretenimiento premium. El segmento mantiene márgenes fuertes pese a macro challenging.",
+   "analisis": {
+    "porque": "Resiliencia de Disney Parks es indicador clave de fortaleza del consumidor premium y gasto de ocio. Afecta outlook de DIS y narrativa de recesión blanda.",
+    "queOcurrio": "Disney Parks reporta resultados positivos a pesar de slowdown más amplio en viajes y turismo, validando poder de pricing y lealtad de marca.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Disney (DIS)",
+    "Consumo Discrecional",
+    "Entertainment"
+   ],
+   "sesgos": [
+    {
+     "activo": "Disney",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas|Datos Económicos",
+   "keywords": [
+    "Disney",
+    "Parks",
+    "turismo",
+    "consumo",
+    "earnings"
+   ],
+   "tgText": "🎢 Disney Parks esquiva slowdown de viajes. Demanda resiliente de entretenimiento premium refuerza narrativa de consumidor fuerte.",
+   "xText": "📊 Disney Parks reporta resultados positivos a pesar de desaceleración turística. Poder de pricing y marca validados.",
+   "discordText": "**Disney Parks: Resiliencia confirmada**\n• Desempeño robusto en contexto de slowdown de viajes\n• Poder de pricing intacto\n• Demanda de entretenimiento premium sigue fuerte",
+   "pushText": "Disney Parks reporta resultados resilientes contra slowdown de viajes",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "DIS repunta; consumo discrecional se valida; S&P 500 recibe apoyo de narrativa de consumidor",
+    "despues": "Revaluación de sectores de viajes y turismo; hoteles y aerolíneas podrían beneficiarse de derrame de demanda si Parks es proxy de fortaleza macro",
+    "escenarios": "Traders vigilan guidance de Disney sobre pricing power; monitoreo de ocupancia y average spend per guest en próximos trimestres",
+    "riesgos": "Resiliencia podría ser temporal (pent-up demand post-reciente baja); competencia de otras atracciones; riesgo macroeconómico si consumidor se debilita"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 960469753,
+   "fecha": "2026-08-05T21:00:48.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/05/elf-beauty-elf-q1-2027-earnings.html",
+   "via": "CNBC",
+   "original": "E.l.f. Beauty sees $50 million windfall in tariff refunds as profits surge 100%",
+   "titulo": "E.l.f. Beauty obtiene reembolso de $50M en aranceles; ganancias se disparan 100%",
+   "resumen": "E.l.f. Beauty (Eyes Lips Face) reporta un reembolso sorpresa de $50 millones en refundiciones de aranceles, lo que impulsa sus ganancias un 100%. El windfall refleja beneficios retroactivos de política arancelaria y mejora sustancial de márgenes trimestrales.",
+   "analisis": {
+    "porque": "Refundos arancelarios son catalistas de earnings beat puntuales; señalan mejora de cash flow y márgenes. Para retail de cosméticos, es relevante en contexto de presión de aranceles en cadena de suministro.",
+    "queOcurrio": "E.l.f. Beauty recibió reembolso de $50M en aranceles que duplicó sus ganancias netas en el trimestre.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "ELF (acción)",
+    "Retail Cosméticos",
+    "Small Cap"
+   ],
+   "sesgos": [
+    {
+     "activo": "ELF",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas|Datos Económicos",
+   "keywords": [
+    "E.l.f.Beauty",
+    "aranceles",
+    "reembolso",
+    "ganancias",
+    "retail"
+   ],
+   "tgText": "💄 E.l.f. Beauty: reembolso de $50M en aranceles dispara ganancias 100%. Windfall positivo pero temporal en márgenes.",
+   "xText": "📊 E.l.f. Beauty reporta reembolso de $50M en aranceles que dobla ganancias trimestrales. Beneficio puntual de política comercial.",
+   "discordText": "**E.l.f. Beauty: Windfall arancelario**\n• Reembolso de $50M en refundiciones de aranceles\n• Ganancias se duplican (100% alza)\n• Beneficio puntual, posible volatilidad de guidance",
+   "pushText": "E.l.f. Beauty: reembolso de $50M dispara ganancias a 100%",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "ELF sube en after-hours por sorpresa positiva de earnings; traders revisan posiciones de retail cosméticos",
+    "despues": "Revaluación de otras empresas de retail sobre posibles refundos arancelarios; fortalecimiento de small caps beneficiadas",
+    "escenarios": "Traders vigilan si este reembolso es único o si hay potencial de más en futuro; impacto en forward guidance y expectations de márgenes normalizados",
+    "riesgos": "Reembolso es puntual y no sostenible; riesgo de decepción si guidance futura no refleja crecimiento orgánico; aranceles futuros podrían revertir beneficio"
+   },
+   "macro": null,
+   "updates": []
   },
   {
    "id": "34081",
@@ -7297,414 +7644,9 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "972540029",
-   "fecha": "2026-08-02T14:30:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/why-people-are-dropping-out-of-the-workforce-and-not-looking-for-new-jobs-the-market-wore-me-down.html",
-   "via": "CNBC",
-   "original": "Why people are dropping out of the workforce and not looking for new jobs: &apos;The market wore me down&apos;",
-   "titulo": "Desempleo voluntario crece: trabajadores abandonan búsqueda tras desgaste del mercado laboral",
-   "resumen": "Reportaje sobre tendencia creciente de personas que abandonan voluntariamente la búsqueda de empleo, citando agotamiento por condiciones del mercado laboral. Refleja cambio en dinámicas laborales post-pandemia con énfasis en calidad de vida versus presión de empleo. Datos específicos sobre magnitud de fenómeno no incluidos en titular.",
-   "analisis": {
-    "porque": "Reducción voluntaria de participación laboral afecta tasas de desempleo, presión salarial, inflación y políticas de bancos centrales; impacta potencial de crecimiento económico",
-    "queOcurrio": "Reportaje de CNBC documenta tendencia de trabajadores abandoning búsqueda laboral activa por desgaste de condiciones de mercado",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Índice de Participación Laboral",
-    "Tasas de Desempleo",
-    "Salarios",
-    "Inflación",
-    "Bonos USA",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Inflación",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Salarios",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empleo",
-   "keywords": [
-    "desempleo",
-    "mercado laboral",
-    "participación",
-    "salarios",
-    "inflación"
-   ],
-   "tgText": "💼 Tendencia: trabajadores abandonan búsqueda de empleo por desgaste laboral. Impacto en tasa de participación, presión salarial e inflación.",
-   "xText": "📉 Más trabajadores salen del mercado laboral por agotamiento. Tendencia reduce participación, pero presiona salarios. Implicaciones para inflación y Fed.",
-   "discordText": "**Abandono voluntario de búsqueda laboral**\n• Trabajadores dejan mercado por desgaste\n• Impacto en tasa de participación\n• Presión salarial e inflacionaria",
-   "pushText": "Trabajadores abandonan búsqueda laboral por desgaste de mercado",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Índice de participación laboral, expectativas de Fed sobre mercado laboral",
-    "despues": "Bonos (presión de inflación salarial), acciones defensivas, sector de consumo discrecional",
-    "escenarios": "Traders monitorean si tendencia reduce presión inflacionaria (menos competencia laboral) o la mantiene (reducción de oferta de mano de obra = presión salarial); vigilancia sobre datos trimestrales de participación",
-    "riesgos": "Reportaje carece de datos cuantitativos; impacto real depende de magnitud del fenómeno; confusión entre desempleo involuntario versus retiro voluntario"
-   },
-   "macro": {
-    "inflacion": "Potencialmente alcista por presión salarial",
-    "salarios": "Potencialmente alcistas por reducción de oferta",
-    "bonos": "Potencialmente bajistas",
-    "sp500": "Neutral o ligeramente bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "977976252",
-   "fecha": "2026-08-02T13:09:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html",
-   "via": "CNBC",
-   "original": "OPEC agrees September oil hike, completing rollback of voluntary cuts",
-   "titulo": "OPEC completa reducción de cortes voluntarios con nuevo incremento en septiembre",
-   "resumen": "OPEC acordó un aumento de producción de petróleo para septiembre, completando el desmantelamiento de los cortes voluntarios implementados en meses anteriores. La decisión marca un giro significativo en política de suministro tras presiones de demanda y dinámicas geopolíticas. El mercado ajusta exposición a crudo antes del cambio de producción.",
-   "analisis": {
-    "porque": "Los cambios en producción de OPEC impactan precios globales de energía, costos de transporte, inflación de combustibles y márgenes de energéticas. Afecta también dinámicas geopolíticas con Irán y Rusia.",
-    "queOcurrio": "OPEC acordó formalmente un aumento de producción en septiembre, completando la reversión de cortes voluntarios previos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "WTI",
-    "Brent",
-    "Energéticas",
-    "Transporte",
-    "Inflación"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Energéticas integradas",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Inflación",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "OPEC",
-    "petróleo",
-    "producción",
-    "cortes",
-    "energía",
-    "suministro"
-   ],
-   "tgText": "🛢️ OPEC acuerda aumento de producción en septiembre. Desmantelamiento completo de cortes voluntarios. Presión bajista en crudo; seguimiento en WTI/Brent y energéticas.",
-   "xText": "OPEC acuerda aumento de producción para septiembre, completando fin de cortes voluntarios. Presión en precios de petróleo; seguimiento en valuaciones de energéticas.",
-   "discordText": "**OPEC: Incremento de producción en septiembre**\n• Fin formal de cortes voluntarios\n• Presión esperada en precios WTI/Brent\n• Vigilancia: márgenes de energéticas integradas",
-   "pushText": "OPEC acuerda aumento de producción en septiembre; fin de cortes voluntarios",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "WTI y Brent caerán/se ajustarán primero por oferta incremental; traders de futuros reposicionarán",
-    "despues": "Energéticas integradas (XLE, XLV rivales) se ajustarán por márgenes comprimidos; dinero de commodities podría fluir a otros sectores",
-    "escenarios": "Traders vigilarán: (1) Magnitud del aumento vs. inventarios globales, (2) Reacción de precios spot en próximos días, (3) Implicaciones para rentabilidad de shale USA, (4) Dinámicas geopolíticas Irán-Rusia si afectan efectiva cumplimiento",
-    "riesgos": "Titular no especifica volumen exacto del aumento; efectiva implementación en septiembre depende de cumplimiento OPEC+"
-   },
-   "macro": {
-    "petroleo": "Presión bajista por oferta incremental; WTI/Brent en vigilancia",
-    "inflacion": "Presión disminuida en costos energéticos para economía global",
-    "dolar": "Ajuste neutral; competencia commodity vs. USD",
-    "nasdaq": null,
-    "dow": null,
-    "sp500": null,
-    "bitcoin": null,
-    "ethereum": null,
-    "bonos": null,
-    "oro": null
-   },
-   "updates": []
-  },
-  {
-   "id": "33821",
-   "fecha": "2026-07-31T16:26:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33821",
-   "via": "DeItaone",
-   "original": "*TRUMP SAYS IRAN LIED DURING NEGOTIATIONS *TRUMP SAYS IRAN FIRED FIVE MISSILES AT JORDAN",
-   "titulo": "Trump: Irán disparó cinco misiles contra Jordania; acusa incumplimiento en negociaciones",
-   "resumen": "El presidente Trump acusó a Irán de disparar cinco misiles contra Jordania y de mentir durante negociaciones diplomáticas. Allegación marca nuevo punto de escalada tras horas de retórica mixta (presión/diplomacia). El titular no especifica daños o contexto temporal exacto.",
-   "analisis": {
-    "porque": "Alegación concreta de acción militar directa representa escalada inmediata de conflicto. Si verificada, impacta dramaticamente precios de petróleo, activos defensivos, y evaluación de probabilidad de conflicto regional ampliado.",
-    "queOcurrio": "Trump acusó a Irán de disparar cinco misiles contra Jordania y de incumplimiento en negociaciones, sin especificar daños o verifiación independiente.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "muy alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "S&P 500",
-    "Bonos",
-    "DXY",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P 500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Irán",
-    "Misiles",
-    "Jordania",
-    "Conflicto",
-    "Escalada",
-    "Trump",
-    "Oriente Medio"
-   ],
-   "tgText": "🚨 BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania. Escalada militar directa tras horas de retórica mixta. Petróleo y oro en alerta máxima.",
-   "xText": "BREAKING: Trump acusa a Irán de disparar 5 misiles contra Jordania e incumplir negociaciones. Escalada geopolítica inmediata impacta precios de petróleo y oro.",
-   "discordText": "**🚨 BREAKING: Escalada en Oriente Medio**\n• Trump: Irán disparó 5 misiles contra Jordania\n• Acusa incumplimiento en negociaciones\n• Marca nuevo punto de tensión directa\n• Petróleo y oro en alerta de volatilidad máxima",
-   "pushText": "BREAKING: Irán disparó 5 misiles contra Jordania (según Trump)",
-   "importancia": 10,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent: reacción alcista INMEDIATA si acusación se verifica; riesgo de ruptura de flujos por Golfo Pérsico",
-    "despues": "Oro (demanda defensiva), bonos (búsqueda de seguridad), S&P 500 (sesgo bajista por aversión al riesgo), DXY (fortalecimiento del dólar como activo seguro)",
-    "escenarios": "Traders vigilan URGENTE: (1) Verificación independiente de ataques misiles (Jordania, Israel, Arabia Saudita), (2) Cantidad de daños y confirmar si fueron interceptados, (3) Respuesta militar estadounidense/israelí (probabilidad muy elevada), (4) Impacto en flujos de petróleo del Golfo Pérsico (clausura del Estrecho de Ormuz = escenario extremo), (5) Extensión del conflicto a aliados de Irán (Hezbolá, militias proxy), (6) Reacción de China y Rusia",
-    "riesgos": "CRÍTICO: Verificación de allegación no disponible en tiempo real; titulares posteriores podrían refutar; reversión rápida si Trump aclara que misiles fueron interceptados sin daños; riesgo de conflicto regional ampliado si respuesta militar es desproporcionada"
-   },
-   "macro": {
-    "petroleo": "alcista muy significativo si acusación se verifica; escenario de $120+ por barril posible",
-    "oro": "alcista por demanda defensiva",
-    "dolar": "alcista por seguridad relativa",
-    "nasdaq": "bajista por aversión al riesgo",
-    "sp500": "bajista por aversión al riesgo",
-    "bonos": "alcistas (búsqueda de seguridad)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-02T13:00:01.000Z",
-     "id": "922814982",
-     "texto": "Inversores que ganaron en el spike de precios de petróleo por tensiones Irán-USA ahora enfrentan dilema sobre mantener posiciones largas. El trade se complica por señales mixtas: acuerdos diplomáticos parciales (pausa de Trump a ataques), oferta incremental de OPEC, e incertidumbre geopolítica persistente. Volatilidad esperada en reversión de posiciones.",
-     "tgUrl": "https://www.cnbc.com/2026/08/02/oil-prices-iran-war-energy-market.html"
-    },
-    {
-     "fecha": "2026-08-01T20:30:48+00:00",
-     "id": "33830",
-     "texto": "El ministro de Relaciones Exteriores de Irán comunicó por teléfono a su homólogo saudí que cualquier «agresión» de Estados Unidos e Israel, o participación de países regionales, será respondida con una «respuesta decisiva». El aviso se produce después de reportes sobre tensiones militares en Oriente Medio y disparos de misiles iraníes documentados previamente.",
-     "tgUrl": "https://t.me/walterbloomberg/33830"
-    },
-    {
-     "fecha": "2026-07-31T22:17:48+00:00",
-     "id": "33825",
-     "texto": "Senior security official iraní condenó vía TASNIM reportes de potenciales ataques estadounidenses e israelíes a infraestructuras iraníes, calificándolos como 'forma de imprudencia'. Declaración refuerza posición combativa y señala preparación para respuesta. Contexto: escalada tras reportes de disparos iraníes contra Jordania.",
-     "tgUrl": "https://t.me/walterbloomberg/33825"
-    },
-    {
-     "fecha": "2026-07-31T22:19:25+00:00",
-     "id": "33826",
-     "texto": "Funcionario iraní senior confirmó que plan de respuesta incluye infraestructuras críticas de Israel y energética estadounidense en la región. Escala amenaza tras reporte de posibles ataques de EE.UU. e Israel a infraestructuras iraníes. Declaración de TASNIM (agencia estatal iraní) eleva tensión geopolítica y riesgos de disrupción en mercados energéticos globales.",
-     "tgUrl": "https://t.me/walterbloomberg/33826"
-    },
-    {
-     "fecha": "2026-07-31T20:56:57+00:00",
-     "id": "33823",
-     "texto": "Washington e Israel coordinan una campaña potencial contra objetivos de energía en Irán, con posibles operaciones este fin de semana según CBS. Trump aún no ha dado aprobación final. Los funcionarios evalúan el impacto económico y coordinan para completar operaciones antes de la apertura de mercados del lunes. White House y autoridades israelíes alinean planes operacionales.",
-     "tgUrl": "https://t.me/walterbloomberg/33823"
-    }
-   ],
-   "actualizado": "2026-08-02T13:00:01.000Z"
-  },
-  {
-   "id": "988351782",
-   "fecha": "2026-08-02T12:01:00.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/top-analysts-are-bullish-on-these-dividend-stocks-for-passive-income-.html",
-   "via": "CNBC",
-   "original": "Top Wall Street analysts are bullish on these 3 dividend stocks for passive income",
-   "titulo": "Principales analistas de Wall Street recomiendan 3 acciones de dividendo para renta pasiva",
-   "resumen": "Analistas de Wall Street priorizan tres acciones que ofrecen dividendos atractivos para ingresos pasivos en contexto de tasas de interés elevadas. Selección busca equilibrio entre rendimiento y seguridad de pago. Atrae inversores de renta fija buscando alternativas yield en equities.",
-   "analisis": {
-    "porque": "En contexto de tasas altas, dividendo de acciones atrae inversores con tolerancia a riesgo equity pero preferencia por flujo de caja. Señal de valuaciones accesibles en ciertos sectores.",
-    "queOcurrio": "Analistas de Wall Street recomiendan tres acciones de dividendo para portafolios de renta pasiva.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Acciones de dividendo",
-    "Renta fija alternativa"
-   ],
-   "sesgos": [
-    {
-     "activo": "Dividendo stocks",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "dividendo",
-    "renta pasiva",
-    "Wall Street",
-    "ingresos",
-    "yields"
-   ],
-   "tgText": "💰 Wall Street recomienda 3 acciones de dividendo para ingresos pasivos. Estrategia defendible en tasas altas. Revisar yield vs. riesgo flotante.",
-   "xText": "Analistas de Wall Street destacan 3 acciones de dividendo para portafolios de renta. Oportunidad en yields en contexto de tasas elevadas.",
-   "discordText": "**Wall Street: 3 acciones dividendo recomendadas**\n• Estrategia renta pasiva en tasas altas\n• Balance yield-riesgo\n• Lectura en artículo completo",
-   "pushText": "Wall Street recomienda 3 dividendos stocks para renta pasiva",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Acciones de dividendo específicas nombradas por CNBC subirán si tienen soporte técnico/fundamental",
-    "despues": "Sector general de dividendo podría ver demanda si rotación de inversores buscadores de yield",
-    "escenarios": "Traders vigilarán: (1) Identidad de 3 acciones (no incluidas en titular), (2) Yields vs. bonos, (3) Sostenibilidad de pago en recesión potencial, (4) Flujos hacia defensivas",
-    "riesgos": "Titular no especifica acciones ni yields concretos; recomendación basada en contexto limitado"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "946341966",
-   "fecha": "2026-08-02T11:59:15.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/nasdaq-100-just-had-worst-month-since-march-2025-these-stocks-held-up.html",
-   "via": "CNBC",
-   "original": "The Nasdaq-100 just had its worst month since March 2025. These stocks held up and are expected to outperform ahead",
-   "titulo": "Nasdaq-100 tuvo peor mes desde marzo 2025: estas acciones resistieron y crecerán",
-   "resumen": "El Nasdaq-100 cerró agosto como su peor mes desde marzo de 2025, reflejando volatilidad en tecnología y crecimiento. CNBC identifica acciones defensivas o de sector específico que mostraron resiliencia y analistas espera que continúen outperforming. Señal de rotación sectorial en marcha.",
-   "analisis": {
-    "porque": "Identifica ganadores en período volátil; permite a inversores reposicionarse hacia acciones con momentum y downside protection. Impacta asignación de carteras en tech.",
-    "queOcurrio": "Nasdaq-100 tuvo su peor mes desde marzo 2025; algunos valores específicos resistieron y se espera outperformance futuro.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ-100",
-    "Nasdaq",
-    "Tecnología",
-    "Crecimiento"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ-100",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Acciones defensivas/momentum",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Nasdaq-100",
-    "volatilidad",
-    "peor mes",
-    "rotación sectorial",
-    "outperformance"
-   ],
-   "tgText": "📊 Nasdaq-100: peor mes desde marzo 2025. CNBC destaca valores que resistieron presión. Rotación sectorial en marcha; seguimiento en defensivas.",
-   "xText": "Nasdaq-100 registró su peor mes desde marzo 2025. Analistas esperan que acciones resilientes continúen ganando. Señal de rotación sectorial.",
-   "discordText": "**Nasdaq-100: peor mes desde marzo 2025**\n• Volatilidad generalizada en tech\n• Valores defensivos mostraron resiliencia\n• Expectativa de rotación sectorial continua",
-   "pushText": "Nasdaq-100: peor mes desde marzo 2025; valores defensivos lideran outperformance",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Tech growth (QQQ) refleja presión; valores identificados como resilientes subirán/estabilizarán primero",
-    "despues": "Sectores defensivos (utilidades, consumo básico, healthcare) podrían continuar ganancia en rotación más amplia",
-    "escenarios": "Traders vigilarán: (1) Qué acciones específicas nominadas por CNBC como resilientes (titular no las nombra), (2) Si rotación continúa o es bounce temporal, (3) Niveles de soporte Nasdaq-100 post-agosto, (4) Earnings de grandes tech en septiembre",
-    "riesgos": "Titular no especifica qué acciones/sectores consideró; análisis depende de contenido completo del artículo no incluido"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "918908961",
-   "fecha": "2026-08-02T11:56:25.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/02/amd-sandisk-are-two-of-the-big-chip-stocks-with-earnings-momentum.html",
-   "via": "CNBC",
-   "original": "AMD and Sandisk are two of the big chip stocks with earnings momentum in the new week",
-   "titulo": "AMD y SanDisk lideran el momentum de earnings en semiconductores esta semana",
-   "resumen": "AMD y SanDisk se posicionan como dos de las principales acciones de chips con momentum en reportes de ganancias. El sector semiconductor enfrenta escrutinio de analistas sobre márgenes, demanda de IA y ciclos de inventario. Ambas empresas reportarán resultados que el mercado monitoreará para evaluar salud del ecosistema de chips.",
-   "analisis": {
-    "porque": "Los resultados de grandes fabricantes de chips determinan perspectivas sobre gasto en IA, data centers y recuperación de demanda post-corrección de inventario. Afecta toda la cadena de semiconductores.",
-    "queOcurrio": "CNBC identifica AMD y SanDisk como acciones de chips con momentum esperado en la semana de earnings.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Semiconductores",
-    "AMD",
-    "SNDK"
-   ],
-   "sesgos": [
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "earnings",
-    "semiconductores",
-    "AMD",
-    "SanDisk",
-    "chips",
-    "momentum"
-   ],
-   "tgText": "AMD y SanDisk encabezan earnings de chips esta semana. Mercado atento a márgenes, demanda IA e inventarios. Pivote clave para outlook del sector.",
-   "xText": "AMD y SanDisk reportan ganancias esta semana con momentum en semiconductores. Analistas vigilan márgenes y demanda de IA como indicador de salud del sector.",
-   "discordText": "**AMD y SanDisk en foco esta semana**\n• Earnings de chips con momentum\n• Mercado atento a: márgenes, demanda IA, inventarios\n• Pivote importante para outlook sector",
-   "pushText": "AMD y SanDisk: earnings clave en semiconductores esta semana",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Semiconductores (SOX) reaccionarán primero según results beat/miss en márgenes y guidance IA",
-    "despues": "NASDAQ y valores de data centers (Nvidia, Intel) se ajustarán según implicaciones de demanda",
-    "escenarios": "Traders monitorearan: (1) Márgenes brutos vs. expectativas, (2) Commentary sobre demanda IA/data centers, (3) Guidance forward y ciclo de inventario, (4) Comparables con Nvidia/Intel ya reportados",
-    "riesgos": "El titular no especifica números o expectativas concretas; earnings pueden sorprender en cualquier dirección"
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/24/bond-market-anxiety-ai-capex-spending.html",
-  "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html",
-  "https://www.cnbc.com/2026/07/24/trump-doj-subpoenas-new-york-times-google.html",
-  "https://www.cnbc.com/2026/07/24/treasury-yields-fed-mortgage-rates.html",
   "https://www.cnbc.com/2026/07/24/paramount-wbd-merger-delay.html",
   "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html",
   "https://www.cnbc.com/2026/07/24/tesla-tsla-spacex-spcx-stock-starship-test-flight-musk-bad-week.html",
@@ -7994,6 +7936,16 @@
   "https://www.cnbc.com/2026/08/06/india-lic-shares-economy-disinvestment-.html",
   "https://www.cnbc.com/2026/08/06/salmonella-outbreak-linked-to-mexican-jalapenos-sickens-345-across-27-us-states.html",
   "https://www.cnbc.com/2026/08/05/stock-market-today-live-updates.html",
-  "https://www.cnbc.com/2026/08/06/us-iran-war-hormuz-trump-bessent-deal.html"
+  "https://www.cnbc.com/2026/08/06/us-iran-war-hormuz-trump-bessent-deal.html",
+  "https://www.cnbc.com/2026/08/05/marc-benioff-gets-a-new-coo-as-salesforce-promotes-miguel-milano-.html",
+  "https://www.cnbc.com/2026/08/05/elf-beauty-elf-q1-2027-earnings.html",
+  "https://www.cnbc.com/select/credit-card-perks-that-save-money-on-entertainment/",
+  "https://www.cnbc.com/2026/08/05/disney-parks-travel-attendance-revenue.html",
+  "https://www.cnbc.com/2026/08/05/spacex-tesla-megapack-ai-data-centers.html",
+  "https://www.cnbc.com/2026/08/05/sp-500-is-experiencing-a-violent-surge-often-seen-at-key-market-tops.html",
+  "https://www.cnbc.com/2026/08/05/hollywood-2026-billion-dollar-movies.html",
+  "https://www.cnbc.com/2026/08/06/jpmorgan-jamie-dimon-leverage-market-disruption.html",
+  "https://www.cnbc.com/2026/08/06/asia-tech-sell-off-has-not-derailed-ai-investment-cycle-jp-morgan-says.html",
+  "https://www.cnbc.com/2026/08/06/bain-capital-to-buy-gong-cha-as-mbk-grapples-with-regulatory-pressure.html"
  ]
 }
