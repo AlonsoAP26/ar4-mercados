@@ -368,7 +368,19 @@
   if (loginBtn) loginBtn.addEventListener('click', () => netlifyIdentity.open('login'));
   if (refreshBtn) refreshBtn.addEventListener('click', load);
 
-  netlifyIdentity.on('init', () => { load(); startAutoRefresh(); loadDiplomas(); loadAgentes(); });
-  netlifyIdentity.on('login', () => { netlifyIdentity.close(); load(); loadDiplomas(); loadAgentes(); });
+  // Arranque con red de seguridad: si el widget de Identity ya había
+  // disparado su 'init' ANTES de que este script registrara el listener,
+  // el evento nunca llega y el panel se quedaba en "Cargando..." para
+  // siempre. El temporizador garantiza el arranque en todos los casos y
+  // el candado evita arrancar dos veces.
+  let arrancado = false;
+  function arrancar() {
+    if (arrancado) return;
+    arrancado = true;
+    load(); startAutoRefresh(); loadDiplomas(); loadAgentes();
+  }
+  netlifyIdentity.on('init', arrancar);
+  setTimeout(arrancar, 2000);
+  netlifyIdentity.on('login', () => { netlifyIdentity.close(); arrancado = true; load(); loadDiplomas(); loadAgentes(); });
   netlifyIdentity.on('logout', () => { lastTotal = null; load(); });
 })();
