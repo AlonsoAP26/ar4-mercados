@@ -1,7 +1,353 @@
 {
- "lastId": 34108,
- "actualizado": "2026-08-06T15:40:33.219Z",
+ "lastId": 34139,
+ "actualizado": "2026-08-07T00:34:19.879Z",
  "items": [
+  {
+   "id": "34130",
+   "fecha": "2026-08-06T18:16:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34130",
+   "via": "DeItaone",
+   "original": "BOFA: LOWER-INCOME JOBS, WAGES OUTPACE HIGHER EARNERS Bank of America says the U.S. labor market is moving beyond the \"K-shaped\" economy. Lower-income households saw 3% YoY job growth in July versus 1% for higher-income workers, while after-tax wage growth reached 5.2%, topping 4.2% for higher-income households for the first time since December 2024. BofA says stronger wage gains, alongside solid ",
+   "titulo": "Economía K menos pronunciada: salarios de ingresos bajos crecen 5,2% vs 4,2% altos",
+   "resumen": "Bank of America reportó un giro en dinámicas laborales estadounidenses alejándose del patrón 'K-shaped'. En julio, hogares de ingresos bajos vieron crecimiento de empleo de 3% interanual (vs 1% para altos ingresos), mientras crecimiento salarial después de impuestos alcanzó 5,2% (superando 4,2% de altos ingresos por primera vez desde diciembre 2024). BofA señala que ganancias salariales sólidas, junto a productividad robusta, sostienen gasto del consumidor sin presionar inflación.",
+   "analisis": {
+    "porque": "Dinámicas redistributivas del mercado laboral afectan consumo (70% del PIB EE.UU.). Convergencia salarial reduce riesgo inflacionario si demanda proviene de segmentos con mayor propensión al ahorro. Fortalece narrativa de aterrizaje suave.",
+    "queOcurrio": "BofA documenta reversión de bifurcación laboral: empleo de ingresos bajos +3% y/y vs +1% altos; salarios después-impuestos +5,2% vs +4,2% altos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bank of America"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Bonos",
+    "USD",
+    "Consumo discrecional"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empleo",
+   "keywords": [
+    "mercado-laboral-USA",
+    "salarios",
+    "convergencia-ingresos",
+    "consumo",
+    "inflación-baja"
+   ],
+   "tgText": "📊 BofA: Dinámicas laborales cambian. Ingresos bajos: +3% empleo y/y, +5,2% salarios netos. Altos: +1% empleo, +4,2% salarios. Convergen por primera vez en 7 meses. Soporta gasto sin presión inflacionaria.",
+   "xText": "📈 Giro laboral USA: salarios de ingresos bajos (+5,2%) superan altos (+4,2%) por primera vez desde dic-24. Dinámicas K-shaped se suavizan, según BofA.",
+   "discordText": "**Mercado laboral USA: convergencia salarial**\n• Ingresos bajos: +3% empleo y/y (+5,2% salarios netos)\n• Ingresos altos: +1% empleo y/y (+4,2% salarios)\n• Primer mes desde dic-24 que bajos superan altos\n→ K-shaped economy se modera; consumo sin presión inflacionaria",
+   "pushText": "Salarios de ingresos bajos superan altos por primera vez desde dic-24",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos treasuries pueden revalorizarse si mercado ve dinámicas salariales menos inflacionarias. Yields bajan.",
+    "despues": "Consumo discrecional se mantiene resiliente. S&P500 mantiene sesgo alcista. USD se debilita levemente.",
+    "escenarios": "Traders monitorean si convergencia es duradera o refleja volatilidad estacional. Vigilancia de próximas lecturas de empleo (payrolls).",
+    "riesgos": "Si redistribución laboral acelerarse, presión sobre márgenes corporativos. Datos de BofA son internos; otra fuentes pueden diferir."
+   },
+   "macro": {
+    "bonos": "sesgo alcista (yields bajan si inflación moderada)",
+    "sp500": "sesgo alcista",
+    "consumo": "resilencia esperada"
+   },
+   "updates": []
+  },
+  {
+   "id": "34128",
+   "fecha": "2026-08-06T18:02:34+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34128",
+   "via": "DeItaone",
+   "original": "CFRA RAISES S&P 500 TARGET TO 8,050 CFRA lifted its 2026 S&P 500 year-end target to 8,050 from 7,400, implying about 4% upside from current levels. The firm also sees the index reaching 8,650 in 2027, citing strong earnings, resilient consumers, easing oil prices, AI investment, and favorable midterm election seasonality. CFRA joins a growing list of Wall Street firms turning more bullish on U.S. ",
+   "titulo": "CFRA eleva target S&P 500 a 8.050 para 2026; ve 8.650 en 2027",
+   "resumen": "CFRA Research elevó su objetivo de cierre de año para el S&P 500 a 8.050 (vs 7.400 anterior), implicando 4% de upside adicional. La casa también proyecta 8.650 para 2027. El optimismo se sustenta en ganancias corporativas sólidas, resiliencia del consumidor, caída de precios de crudo, inversión en IA y seasonalidad favorable de elecciones de mitad de mandato.",
+   "analisis": {
+    "porque": "Objetivos de casas de inversión influyen en reposicionamiento de carteras y expectativas de rentabilidad. Un upgrade de CFRA sumado a lista creciente de firmas alcistas tensa valuaciones hacia arriba.",
+    "queOcurrio": "CFRA subió target 2026 de 7.400 a 8.050 y añadió 2027 en 8.650, citando solidez macroeconómica y ciclos de IA.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CFRA Research"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "S&P500-target",
+    "CFRA",
+    "2026",
+    "alcismo-Wall-Street",
+    "valuaciones"
+   ],
+   "tgText": "🎯 CFRA sube target S&P 500 a 8.050 (de 7.400). Ve 8.650 en 2027. Sustenta en ganancias sólidas, consumidor resiliente, IA e inversión. Se suma a ola alcista en Wall Street.",
+   "xText": "📈 CFRA eleva S&P 500 a 8.050 para fin 2026 (+4% desde actual) y 8.650 en 2027. Impulsado por ganancias, resiliencia del consumidor e inversión en IA.",
+   "discordText": "**CFRA eleva targets S&P 500**\n• 2026: 8.050 (antes 7.400) → +4% upside\n• 2027: 8.650\n**Drivers:** ganancias sólidas, consumidor resiliente, caída crudo, IA, seasonalidad electoral",
+   "pushText": "CFRA sube target S&P 500 a 8.050; ve upside 4% adicional",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "S&P500 toma referencia de targets de grandes casas. Upgrade puede atraer reposicionamiento de fondos indexados.",
+    "despues": "Rotación hacia large-cap de calidad y names de IA. Posible debilitamiento de defensivos.",
+    "escenarios": "Traders monitorean si nivel 8.050 se consolida o es objetivo ambicioso. Observan flujos de fondos pasivos tras upgrade.",
+    "riesgos": "Target no es predicción; depende de realización de earnings y sin sorpresas de inflación. Mercado puede fallar en alcanzar objetivo si macro se deteriora."
+   },
+   "macro": {
+    "sp500": "sesgo alcista significativo",
+    "nasdaq": "sesgo alcista",
+    "bonos": "presión bajista si alcismo sustrae demanda de renta fija"
+   },
+   "updates": []
+  },
+  {
+   "id": "34127",
+   "fecha": "2026-08-06T17:57:04+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34127",
+   "via": "DeItaone",
+   "original": "U.S. SAUDI OIL IMPORTS FALL TO ZERO U.S. imports of Saudi crude fell to zero in July for the first full month since 1985, as Gulf supply disruptions forced refiners to find alternatives. U.S. refiners cut Middle East purchases amid the Hormuz conflict, with Venezuela emerging as a key replacement, boosting exports to the U.S. to around 600,000 bpd. Saudi crude imports are expected to rebound to ab",
+   "titulo": "Importaciones de crudo saudí a EE.UU. caen a cero en julio; primer mes completo desde 1985",
+   "resumen": "Las importaciones estadounidenses de crudo saudí cayeron a cero en julio, marcando el primer mes completo sin compras desde 1985. Los refinadores estadounidenses redujeron compras de Medio Oriente ante conflictos en el Estrecho de Ormuz, reemplazando suministro con crudo venezolano (exportaciones a EE.UU. rondaron 600.000 barriles/día). Según Kpler, importaciones saudíes se espera regresen a unos 300.000 barriles/día este mes.",
+   "analisis": {
+    "porque": "Diversificación de fuentes de crudo reduce dependencia de Medio Oriente, bajando prima geopolítica en precios de petróleo. Venezuela aporta elasticidad. Sin embargo, geopolítica de Ormuz sigue siendo riesgo de tail y volatilidad de precios.",
+    "queOcurrio": "Importaciones saudíes de EE.UU. llegaron a cero en julio (primer mes completo desde 1985); reemplazadas por venezolano (~600k bpd). Se espera recuperación a ~300k bpd en agosto.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Kpler"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "USD",
+    "Equities energía"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral a bajista (menor demanda Medio Oriente)"
+    },
+    {
+     "activo": "Energía USA",
+     "sesgo": "alcista (margen refinería)"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "petróleo",
+    "Saudi-Arabia",
+    "Venezuela",
+    "importaciones-USA",
+    "geopolítica-Ormuz"
+   ],
+   "tgText": "⛽ Hito histórico: importaciones de crudo saudí a EE.UU. caen a CERO en julio (primer mes entero desde 1985). Reemplazadas por venezolano (~600k bpd). Recuperación esperada a ~300k bpd en agosto.",
+   "xText": "⛽ Histórico: Cero importaciones saudíes a EE.UU. en julio (primera vez desde 1985). Reemplazadas por Venezuelan crude (~600k bpd). Diversificación ante riesgos Ormuz.",
+   "discordText": "**HISTÓRICO: Cero crudo saudí importado a EE.UU. en julio**\n• Primer mes completo sin compras desde 1985\n• **Razón:** Conflictos Ormuz; búsqueda alternativas\n• **Reemplazo:** Venezuela aporta ~600k bpd\n• **Perspectiva:** Saudíes se esperan regresen a ~300k bpd en agosto\n→ Mayor diversificación de fuentes",
+   "pushText": "Cero importaciones saudíes en julio; primer mes completo desde 1985",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo WTI puede caer levemente si mercado interpreta mayor disponibilidad de alternativas no-OPEC.",
+    "despues": "Márgenes de refinación USA pueden mejorar si acceso a crudo venezolano más barato. Equities energía estadounidenses podrían revalorizarse.",
+    "escenarios": "Traders monitorean si reemplazo venezolano es sostenible (sanciones USA) o temporal. Vigilancia de geopolítica Ormuz y riesgo de escalada con Irán.",
+    "riesgos": "Riesgo tail: si cierre de Ormuz, recuperación saudí no suficiente para llenar brecha. Política de sanciones USA hacia Venezuela puede cambiar dinámicas."
+   },
+   "macro": {
+    "petroleo": "presión bajista potencial si diversificación es creíble",
+    "energia": "margen refinería alcista si acceso a crudo cheaper",
+    "usd": "presión neutral a bajista (menor prima geopolítica"
+   },
+   "updates": []
+  },
+  {
+   "id": "34126",
+   "fecha": "2026-08-06T17:14:06+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34126",
+   "via": "DeItaone",
+   "original": "U.S. PENDING HOME SALES HIT 5-MONTH LOW U.S. pending home sales fell to a five-month low as elevated mortgage rates kept buyers on the sidelines. Pending sales dropped 3.7% W/W and 1.9% Y/Y to 311,150, the lowest level in over five months. The average 30-year mortgage rate rose to 6.69%, while mortgage purchase applications fell 4% W/W. Despite weaker demand, the median home sale price increased 2",
+   "titulo": "Ventas inmobiliarias pendientes caen a mínimo de 5 meses; tasas hipotecarias en 6,69%",
+   "resumen": "Las ventas inmobiliarias pendientes en EE.UU. cayeron a nivel más bajo en cinco meses. Pendientes bajaron 3,7% semanal y 1,9% interanual a 311.150 unidades. Las tasas hipotecarias de 30 años subieron a 6,69%, mientras solicitudes de compra hipotecaria cayeron 4% semanal. Pese a debilidad en demanda, el precio mediano de venta creció 2,9% interanual a $406.362.",
+   "analisis": {
+    "porque": "Sector inmobiliario representa 15-20% del PIB EE.UU. Caidas en ventas pendientes anticipan debilidad en construcción y consumo futuro. Precios resilientes pero volúmenes bajos señalan mercado bifurcado.",
+    "queOcurrio": "Caida generalizada en actividad inmobiliaria: pendientes -3,7% semanal, tasas suben a 6,69%, pero precios mantienen crecimiento y/y.",
+    "estado": "confirmado",
+    "fuenteOriginal": "no indicada (típico de datos NAR - National Association of Realtors)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "USD",
+    "Bonos",
+    "Acciones construcción"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Acciones construcción",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "vivienda-USA",
+    "ventas-pendientes",
+    "hipotecas",
+    "tasas-6,69%",
+    "precios-resilientes"
+   ],
+   "tgText": "🏠 Ventas inmobiliarias pendientes EE.UU. caen a mínimo 5 meses (-3,7% sem, -1,9% y/y). Tasas hipotecarias suben a 6,69%. Precios aún crecen 2,9% y/y pese a débil demanda.",
+   "xText": "📉 Sector inmobiliario EE.UU. se enfría: pendientes bajan a mínimo 5 meses (-3,7% sem), tasas en 6,69%. Precio mediano sube 2,9% y/y pero volumen cae.",
+   "discordText": "**Inmobiliaria USA: demanda débil, precios resilientes**\n• Pendientes: -3,7% sem, -1,9% y/y → 311.150 (mín. 5 meses)\n• Tasa hipotecaria: 6,69%\n• Solicitudes compra: -4% sem\n• Precio mediano: +2,9% y/y a $406.362",
+   "pushText": "Ventas inmobiliarias EE.UU. caen a mínimo 5 meses; tasas en 6,69%",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos (yields pueden bajar si mercado interpreta debilidad como presión sobre crecimiento). Acciones de constructoras ceden.",
+    "despues": "USD pierde impulso si datos sugieren menor crecimiento. Equities defensivas ganan si se confirma desaceleración.",
+    "escenarios": "Traders observan si debilidad inmobiliaria presiona otras líneas de consumo o es aislada por tasas altas. Vigilancia de futuros reportes de empleo en construcción.",
+    "riesgos": "Datos pendientes anticipan actividad inmediata; el verdadero cierre ocurre después. Precios altos pueden frenar compra adicional si tasas no bajan."
+   },
+   "macro": {
+    "bonos": "sesgo alcista (yields bajan en debilidad)",
+    "usd": "presión bajista si debilidad inmobiliaria sugiere menor crecimiento",
+    "construccion": "sesgo bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "34125",
+   "fecha": "2026-08-06T17:09:52+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34125",
+   "via": "DeItaone",
+   "original": "GOOGLE WARNS OF HACKING CAMPAIGN TARGETING WALL STREET Google says ransomware hackers have targeted dozens of major U.S. financial firms using phone-based social engineering to steal employee credentials. Hackers created fake IT helpdesk websites targeting firms including Blackstone, Apollo, KKR, TPG, CME Group, Moody's, Bridgewater and Bain Capital. Google said some victims paid ransoms, though i",
+   "titulo": "Google alerta: hackers dirigen campaña de phishing contra Wall Street; 25+ firmas visadas",
+   "resumen": "Google advirtió que hackers lanzaron campaña de ransomware contra docenas de firmas financieras estadounidenses, usando ingeniería social telefónica para robar credenciales de empleados. Crearon sitios falsos de help desk IT dirigidos a Blackstone, Apollo, KKR, TPG, CME Group, Moody's, Bridgewater y Bain Capital. Algunos blancos pagaron rescates, aunque Google no los identificó. El ataque no requirió técnicas sofisticadas, sino convicción para revelar contraseñas y códigos MFA.",
+   "analisis": {
+    "porque": "Ataques coordinados contra infraestructura financiera crítica representan riesgo sistémico. Compromiso de sistemas de trading, risk management o clearing podría disrumpir mercados. Aseguradoras de ciberseguro, reguladores y operadores de infraestructura toman acciones defensivas.",
+    "queOcurrio": "Google identificó campaña de phishing sofisticada dirigida a 25+ instituciones financieras usando falsificación de sitios IT para robar credentials. Algunos victimarios pagaron rescates.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Google"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "CME",
+    "MOODYS",
+    "Seguros cibernéticos",
+    "Índices financieros"
+   ],
+   "sesgos": [
+    {
+     "activo": "Seguros cibernéticos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Infraestructura financiera",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Emergencia",
+   "keywords": [
+    "ciberataque",
+    "ransomware",
+    "Wall-Street",
+    "phishing",
+    "CME-Moody's-Blackstone",
+    "seguridad-financiera"
+   ],
+   "tgText": "🚨 ALERTA: Google reporta campaña ransomware masiva contra 25+ firmas financieras USA (CME, Moody's, Blackstone, Apollo, KKR, TPG, Bridgewater, Bain). Phishing + ingeniería social. Algunos pagaron rescates.",
+   "xText": "🔴 ALERTA CIBERATAQUE: Google advierte de campaña ransomware contra 25+ firmas financieras (CME, Moody's, Blackstone, etc.). Usó phishing y falsos sitios IT. Riesgo sistémico.",
+   "discordText": "**🚨 ALERTA CIBERATAQUE FINANCIERO**\n**Objetivo:** 25+ instituciones Wall Street\n**Método:** Ingeniería social + sitios falsos help desk\n**Víctimas conocidas:** CME, Moody's, Blackstone, Apollo, KKR, TPG, Bridgewater, Bain\n**Impacto:** Algunos pagaron rescates; riesgo de compromisos de sistemas\n**Acción:** Reguladores y firmas refuerzan seguridad MFA",
+   "pushText": "🚨 Ciberataque masivo contra 25+ firmas financieras USA; CME, Moody's, Blackstone entre víctimas",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Acciones de CME, servicios de clearing y operadores de infraestructura caen por riesgo de disrupción. Seguros cibernéticos suben.",
+    "despues": "Bonos treasuries pueden subir si temor sistémico lleva a flight-to-safety. USD se fortalece. Índices financieros ceden.",
+    "escenarios": "Traders monitorean comunicados de empresas atacadas sobre daño real. Reguladores (SEC, CFTC, OCC) podrían convocar a respuesta. Vigilancia de intento de extorsión o venta de datos.",
+    "riesgos": "Riesgo de disrupción de servicios de trading/clearing si sistemas comprometidos. Potencial contaminación de datos de clientes. Escalada si más firmas comprometidas."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "34122",
+   "fecha": "2026-08-06T16:38:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34122",
+   "via": "DeItaone",
+   "original": "INVESTOR SENTIMENT IMPROVES AFTER FED PAUSE AAII sentiment turned more bullish after the Fed held rates steady. • Bullish sentiment: 37.0% (up 6.0 pts), just below the 37.5% historical average • Bearish sentiment: 38.0% (down 4.1 pts), but still above its long-term average • Neutral sentiment: 25.0% (down 1.9 pts) • Bull-bear spread: Improved to -0.9% from -11.1% • A majority of respondents said t",
+   "titulo": "Sentimiento inversor mejora tras pausa de la Fed; alcismo sube a 37%",
+   "resumen": "El sentimiento de inversores según AAII mejoró significativamente tras la pausa de tasas de la Fed. El sentimiento alcista subió 6,0 puntos a 37,0%, mientras el bajista cayó 4,1 puntos a 38,0%. El diferencial alcista-bajista pasó de -11,1% a -0,9%, reflejando un giro en la confianza del mercado tras la decisión de mantener tasas sin cambios.",
+   "analisis": {
+    "porque": "El sentimiento es indicador líder de flujos de capital e intención de compra. Mejoras en el diferencial alcista-bajista suelen preceder incrementos de exposición accionaria.",
+    "queOcurrio": "AAII registró mejora generalizada en sentimiento tras la pausa de tasas: alcismo +6 pts, bajismo -4,1 pts, con spread alcista-bajista mejorando 10,2 puntos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "AAII (American Association of Individual Investors)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "sentimiento-inversor",
+    "AAII",
+    "Fed-pausa",
+    "alcismo",
+    "mercados-acciones"
+   ],
+   "tgText": "📊 Sentimiento AAII mejora tras pausa Fed: alcismo sube a 37%, bajismo cae a 38%. Spread alcista-bajista pasa de -11,1% a -0,9%, reflejando confianza renovada en renta variable.",
+   "xText": "📈 Giro en sentimiento: AAII registra alcismo en 37% (+6pts) tras pausa de Fed. Diferencial alcista-bajista se recupera desde -11,1% a -0,9%. Mayor confianza en equities.",
+   "discordText": "**Sentimiento AAII mejora tras pausa de tasas**\n• Alcismo: 37,0% (+6,0 pts)\n• Bajismo: 38,0% (-4,1 pts)\n• Spread: -0,9% vs -11,1% anterior\n→ Mayoría respalda decisión de Fed de mantener tasas",
+   "pushText": "Sentimiento alcista sube a 37% tras pausa de Fed",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "S&P500 suele reaccionar al alza tras mejoras en AAII, reflejo de intención de compra mayorista.",
+    "despues": "NASDAQ y growth stocks, seguidos por bonos (menor demanda defensiva).",
+    "escenarios": "Traders monitorean si mejora sostenida lleva a inversión real o es rally técnico de corto plazo. Vigilancia de flujos de fondos en próximas sesiones.",
+    "riesgos": "Sentimiento puede revertir rápidamente ante sorpresas macroeconómicas. AAII es dato semanal, puede tener volatilidad."
+   },
+   "macro": {
+    "sp500": "sesgo alcista",
+    "nasdaq": "sesgo alcista",
+    "bonos": "presión vendedora potencial si alcismo reduce demanda defensiva"
+   },
+   "updates": []
+  },
   {
    "id": "34106",
    "fecha": "2026-08-06T15:04:04+00:00",
@@ -7208,395 +7554,6 @@
     "bonos": "bajista",
     "petroleo": "neutral"
    },
-   "updates": []
-  },
-  {
-   "id": 33896,
-   "fecha": "2026-08-03T16:29:48+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33896",
-   "via": "DeItaone",
-   "original": "U.S. OFFICIALS SAY NO NEW IRAN TALKS PLANNED: CBS U.S. officials told CBS News there are no new negotiations with Iran planned, despite President Trump's comments that talks would begin Monday. Officials said discussions continue through mediators involving U.S. envoy Steve Witkoff and the Iranian team. Meanwhile, Iran said it is not negotiating directly with the U.S., insisting current talks are ",
-   "titulo": "Negociaciones Irán-USA: sin nuevas conversaciones directas planeadas",
-   "resumen": "Oficiales estadounidenses dijeron a CBS News que no hay nuevas negociaciones directas con Irán planeadas, contradiciendo comentarios previos de Trump sobre diálogos que iniciarían el lunes. Conversaciones continúan a través de mediadores, incluyendo envío especial Steve Witkoff. Irán rechaza negociaciones directas, insistiendo que los diálogos actuales son con Omán y se enfocusan en tránsito del Estrecho de Ormuz.",
-   "analisis": {
-    "porque": "Clarificación sobre estado real de negociaciones impacta evaluación de riesgo geopolítico, volatilidad del petróleo y prima de riesgo global. Discrepancia entre declaraciones de Trump y posición oficial sugiere brecha comunicacional",
-    "queOcurrio": "Desconexión entre posición de Trump (dice que iniciarán negociaciones) e información de oficiales de Estado Dept a CBS: no hay nuevas conversaciones directas planeadas. Mediación continúa vía Witkoff; Irán rechaza negociación directa",
-    "estado": "confirmado",
-    "fuenteOriginal": "CBS News (citando oficiales estadounidenses)"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "WTI",
-    "Brent",
-    "DXY",
-    "Gold",
-    "VIX",
-    "Mercados de Riesgos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "iran",
-    "trump",
-    "negociaciones",
-    "geopolitica",
-    "mediation-oman"
-   ],
-   "tgText": "⚠️ Oficiales USA a CBS: NO hay nuevas negociaciones Irán-USA planeadas, contradiciendo a Trump. Mediación continúa vía Witkoff/Irán rechaza diálogo directo. Enfoque: Estrecho Ormuz.",
-   "xText": "🚨 Brecha comunicacional: Trump dice negociaciones el lunes, pero oficiales USA dicen que no hay conversaciones nuevas planeadas. Mediación indirecta continúa.",
-   "discordText": "**Desconexión en negociaciones Irán-USA**\n• Oficiales USA dicen NO hay nuevas conversaciones directas planeadas\n• Contradice comentarios de Trump sobre diálogos el lunes\n• Mediación continúa vía Steve Witkoff; Irán rechaza diálogo directo\n• Enfoque: tránsito Estrecho Ormuz",
-   "pushText": "Oficiales USA: sin nuevas negociaciones Irán-USA planeadas",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "WTI y Brent reaccionan al alza: desconexión entre Trump e instituciones genera incertidumbre sobre resolución de conflicto; petróleo sube por prima de riesgo geopolítico",
-    "despues": "Oro, VIX y activos safe-haven se fortalecen; DXY podría subir (aversión al riesgo); rotación desde tecnología a defensivos",
-    "escenarios": "Traders vigilarán: (1) próximas declaraciones de Trump vs posición oficial (más desconexión = riesgo más alto); (2) cualquier escalada militar o ataque a buques en Estrecho Ormuz; (3) si mediación progresa o se estanca (Irán insiste solo con Omán)",
-    "riesgos": "Brecha entre retórica presidencial y realidad operativa genera incertidumbre. Si escalada militar ocurre, petróleo podría dispararse > 85 USD/bbl. Irán podría usar proxies para presionar sin escalada directa"
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": "alcista",
-    "nasdaq": "bajista",
-    "dow": "bajista",
-    "sp500": "bajista",
-    "bitcoin": "mixto",
-    "ethereum": "mixto",
-    "bonos": "alcista (safe-haven)",
-    "petroleo": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": 33894,
-   "fecha": "2026-08-03T16:10:57+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33894",
-   "via": "DeItaone",
-   "original": "$GME - GAMESTOP SHARES EXTEND LOSSES, LAST DOWN 12.8%",
-   "titulo": "GameStop extiende caídas; acciones ceden 12,8% en la sesión",
-   "resumen": "Acciones de GameStop ($GME) extienden pérdidas, con caída de 12,8% en la sesión actual. Esta actualización refleja el movimiento más pronunciado tras el anuncio previo de canje de $1.400M de convertibles por acciones.",
-   "analisis": {
-    "porque": "Caída pronunciada de 12,8% refleja presión de dilución accionaria derivada de canje de convertibles y posible liquidación de posiciones; impacta dinámicas de micro-cap y retail trading",
-    "queOcurrio": "GME cae 12,8% en sesión; extensión de movimiento bajista posterior al anuncio de canje de $1.400M de convertibles por acciones publicado previamente",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "GME",
-    "Nasdaq",
-    "Retail Stocks"
-   ],
-   "sesgos": [
-    {
-     "activo": "GME",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "gme",
-    "gamestop",
-    "dilución",
-    "convertibles",
-    "caída-accionaria"
-   ],
-   "tgText": "📉 GME cae 12,8% en sesión; extiende caídas por dilución de canje de $1.400M convertibles. Volumen y volatilidad muy alta.",
-   "xText": "🔴 GameStop ($GME) cede 12,8% tras dilución por canje de convertibles por acciones. Movimiento refleja presión de liquidez y revaluación.",
-   "discordText": "**GameStop en caída pronunciada**\n• Pérdida: -12,8% en sesión\n• Driver: dilución por canje de $1.4B convertibles\n• Volatilidad: muy alta | Vigilar soporte técnico",
-   "pushText": "GME cae 12,8%; extiende caídas por dilución de convertibles",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "GME cede primero (impacto directo de dilución); retail traders y shorters reaccionan simultáneamente",
-    "despues": "Índices micro-cap y Nasdaq podrían sentir presión si volumen es significativo; posible efecto dominó en otras acciones de retail trading",
-    "escenarios": "Traders vigilarán: (1) soportes técnicos y volúmenes de venta; (2) si shorts cubren o si liquidación continúa; (3) si es capitulation o inicio de mayor corrección",
-    "riesgos": "Volatilidad extrema en micro-caps; stops podrían generar cascadas de venta. Retórica de reddit/retail podría cambiar dinámicas. Movimiento podría revertirse si hay noticias corporativas positivas"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33888",
-   "fecha": "2026-08-03T14:59:15+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33888",
-   "via": "DeItaone",
-   "original": "STOCKS OF CRUDE OIL IN THE US STRATEGIC PETROLEUM RESERVE FELL BY ABOUT 2.85 MLN BARRELS TO 304.8 MLN BARRELS LAST WEEK, LOWEST SINCE 1983",
-   "titulo": "Reservas estratégicas USA caen a mínimo de 1983; SPR en 304,8M barriles",
-   "resumen": "Existencias de crudo en Reserva Estratégica Petrolera (SPR) cayeron ~2,85 millones de barriles la semana pasada a 304,8 millones. Nivel más bajo desde 1983 (hace 43 años). Refleja política de reabastecimiento agresivo bajo Trump y uso para gestionar inflación energética.",
-   "analisis": {
-    "porque": "SPR bajo mínimos = menos capacidad de amortiguación ante shocks de oferta; señal de que admin usa reserva como herramienta anti-inflación; relevante para elasticidad de oferta de crudo USA; afecta trajectoria de precios a medio plazo",
-    "queOcurrio": "SPR reportó caída de 2,85M barriles semanal a 304,8M total; es mínimo histórico desde 1983; refleja política de vaciado para contener inflación",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg / EIA (datos oficiales)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "Gasolina RBOB",
-    "DXY",
-    "Inflación USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Gasolina",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "spr",
-    "petroleo",
-    "reservas-estrategicas",
-    "crudo",
-    "inflacion",
-    "oferta"
-   ],
-   "tgText": "SPR USA en mínimo 43 años: 304,8M barriles (-2,85M semanal). Reserva estratégica casi vaciada; menos colchón ante shocks. Impacto: elasticidad oferta cae, petróleo vulnerable a sorpresas.",
-   "xText": "Reserva Estratégica Petrolera USA: 304,8M barriles, mínimo desde 1983. SPR casi agotada tras vaciado anti-inflación. Menos capacidad de amortiguación; riesgo de volatilidad en crudo.",
-   "discordText": "**SPR USA en mínimo histórico (1983)**\n• Nivel: 304,8M barriles\n• Caída semanal: -2,85M\n• Contexto: Reabastecimiento agresivo bajo Trump\n• Uso: Herramienta anti-inflación energética\n• Riesgo: Menos colchón ante disruptions\n• Impacto: Elasticidad oferta baja, crudo volátil",
-   "pushText": "SPR USA en mínimo 43 años; elasticidad oferta comprometida.",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Petróleo WTI/Brent vulnerable a news de disruption (ataque Irán, problemas en producción) sin SPR para absorber; traders elevan volatilidad implícita",
-    "despues": "Gasolina retail sube (menos oferta de emergencia); inflación energética resurge (presión sobre Fed); DXY puede caer si inflación corre riesgo de resurge (menos cortes de tasa)",
-    "escenarios": "Traders vigilan: (1) si hay shock en suministro (Golfo Persia, Libia, etc); (2) velocidad de reabastecimiento de SPR (compra = demand de crudo); (3) impacto en CPI energético; (4) si admin Trump acelera vacío más antes de salida",
-    "riesgos": "SPR vacío no significa crisis inmediata; USA productor neto de crudo; market puede compensar; riesgo de sobre-interpretación política vs económica"
-   },
-   "macro": {
-    "petroleo": "alcista (menos colchón)",
-    "gasolina": "alcista (oferta menos elástica)",
-    "dolar": "neutral (presión inflación vs tasas)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33885",
-   "fecha": "2026-08-03T14:26:47+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33885",
-   "via": "DeItaone",
-   "original": "WHITE HOUSE TO HOST AI COMPANIES ON TUESDAY TO REVIEW AI FRAMEWORK - THE INFORMATION",
-   "titulo": "Casa Blanca convoca a OpenAI, Google y Anthropic para revisar framework de IA; tests avanzados finalizados",
-   "resumen": "Administración Trump invitará staffers de principales empresas tech (OpenAI, Google, Anthropic) a Casa Blanca el martes para revisar framework de IA. Casa Blanca confirmó finalización de detalles de tests de modelos IA avanzados. Movimiento sugiere regulación selectiva y diálogo directo con líderes de IA.",
-   "analisis": {
-    "porque": "Regulatory clarity sobre IA crucial para valuación de tech; tests avanzados completados sugieren próximo paso es guidance o restricciones; afecta capex de IA de hiperscalers; define competitividad USA vs China; impacta startups vs incumbents",
-    "queOcurrio": "Casa Blanca convoca a OpenAI, Google, Anthropic para martes; confirmó finalización de testing framework para modelos IA avanzados; sin detalles de qué framework o restricciones",
-    "estado": "confirmado",
-    "fuenteOriginal": "The Information / Casa Blanca"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Nasdaq",
-    "S&P 500",
-    "GOOGL",
-    "MSFT",
-    "NVDA",
-    "META",
-    "PLTR"
-   ],
-   "sesgos": [
-    {
-     "activo": "GOOGL",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "NVDA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Nasdaq",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "ia",
-    "regulacion",
-    "casa-blanca",
-    "openai",
-    "google",
-    "anthropic",
-    "framework"
-   ],
-   "tgText": "Casa Blanca convoca a OpenAI, Google, Anthropic martes para revisar IA framework. Tests avanzados finalizados. Señal de regulación selectiva en IA; impacto en capex hiperscalers y competencia USA-China.",
-   "xText": "Casa Blanca: OpenAI, Google, Anthropic convocados martes para framework IA. Tests avanzados completados. Regulatory clarity en IA afecta capex tech y competitividad global. Googl, MSFT, NVDA en vigilancia.",
-   "discordText": "**Casa Blanca convoca a líderes IA**\n• Convocadas: OpenAI, Google, Anthropic\n• Fecha: Martes\n• Tema: Review de IA framework\n• Novedad: Tests de modelos avanzados finalizados\n• Implicación: Próximo paso = regulación o guidance\n• Impacto: Valuación tech, capex IA, competencia USA",
-   "pushText": "Casa Blanca convoca IA leaders; framework y tests avanzados en marcha.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NASDAQ/GOOGL/MSFT/NVDA: reacción a news de regulación (riesgo negativo si restricciones severas, neutral si clarity favorece incumbents vs startups)",
-    "despues": "PLTR sube si regulación favorece empresas de defensa/security; META/AMZN monitoreadas por capex implications; bonos tech si market precia riesgo",
-    "escenarios": "Traders vigilan: (1) qué dice framework (restricciones en training data, export controls, seguridad); (2) si favorece incumbents (MSFT/GOOGL) vs startups; (3) impacto en capex IA 2026-2027; (4) alineación con política China",
-    "riesgos": "El titular no especifica qué framework o restricciones; meeting martes podría no derivar en cambio inmediato; rumores pueden diferir de realidad official; timing pre-election politics (ruido)"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33883",
-   "fecha": "2026-08-03T14:00:24+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33883",
-   "via": "DeItaone",
-   "original": "ISM U.S. MANUFACTURING ACTIVITY INDEX 55.6 IN JULY (CONSENSUS 54.0) VS 53.3 IN JUNE",
-   "titulo": "ISM manufacturero julio: 55,6 vs consenso 54,0; sorpresa alcista de 2,3 puntos",
-   "resumen": "Índice ISM de actividad manufacturera estadounidense marcó 55,6 en julio, superando expectativa de mercado (54,0) y mejorando versus 53,3 de junio. Dato confirma resiliencia del sector industrial y moderación de presiones deflacionarias. Sorpresa positiva en contexto de narrativa recesiva.",
-   "analisis": {
-    "porque": "ISM es indicador adelantado de salud manufacturera, empleo industrial y demanda agregada; supera expectativas sugiere momentum económico más fuerte; crucial para Fed en decisiones de tasa; contrarresta narrativa de debilitamiento",
-    "queOcurrio": "ISM Manufacturing reportó 55,6 (expansión) vs consenso 54,0 y prior 53,3; sorpresa al alza de +2,6 puntos vs expectativa",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg / ISM (dato oficial)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P 500",
-    "NASDAQ",
-    "DXY",
-    "Bonos USA",
-    "Rendimientos USA",
-    "USD",
-    "Oro"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "ism",
-    "manufacturero",
-    "economia",
-    "sorpresa-positiva",
-    "julio",
-    "emplep-industrial"
-   ],
-   "tgText": "ISM manufacturero sorprende al alza: 55,6 vs 54,0 esperado (prior 53,3). Expansión robusta sugiere resiliencia industrial y moderación deflacionaria. Positivo para equities, presiona bonos al alza.",
-   "xText": "ISM Manufacturing julio: 55,6 vs 54,0 (sorpresa +2,3). Expansión sólida, mejor que prior. Economía industrial más fuerte; presiona yields USA al alza, refuerza narrativa alcista en renta variable.",
-   "discordText": "**ISM Manufacturing sorprende al alza**\n• Índice: 55,6 (vs 54,0 esperado, prior 53,3)\n• Sorpresa: +2,3 puntos\n• Interpretación: Expansión robusta, resiliencia industrial\n• Implicación Fed: Menos presión por cortes de tasa\n• Impacto: Yields USA al alza, DXY sube, Oro cede",
-   "pushText": "ISM manufacturero sorprende al alza a 55,6; economía industrial resiliente.",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Bonos USA (yields al alza inmediatamente): mercado reduce apuestas de cortes agresivos de Fed; plazo 2-10Y bajo presión",
-    "despues": "DXY sube (dólar reforzado por expectativa de tasas más altas); oro cede; NASDAQ y S&P 500 pueden caer si yields suben mucho (trade-off entre earnings strength y tasa de descuento); energéticas salen ganando por demanda industrial",
-    "escenarios": "Traders monitorean: (1) si ISM precede a sorpresas en Non-Farm Payroll (viernes); (2) si Fed debe mantener hold más tiempo; (3) si mercado rebaja probabilidades de recession; (4) si infla presión sobre precious metals",
-    "riesgos": "ISM puede ser volátil mes a mes; un dato fuerte no garantiza momentum; mercado ya precia resiliencia; riesgo de reversal si datos siguientes flojean"
-   },
-   "macro": {
-    "dolar": "alcista (tasas altas)",
-    "oro": "bajista (yields suben, DXY sube)",
-    "nasdaq": "sesgo neutral-bajista (yield drag)",
-    "dow": "neutral-alcista (industrial beneficiado)",
-    "sp500": "neutral (mix sectorial)",
-    "bonos": "bajista (yields al alza)",
-    "petroleo": "neutral-alcista (demanda industrial)"
-   },
-   "updates": []
-  },
-  {
-   "id": "33878",
-   "fecha": "2026-08-03T13:50:54+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33878",
-   "via": "DeItaone",
-   "original": "JPMORGAN EXPANDS $750B HOUSING COMMITMENT JPMorgan Chase ($JPM) plans to deploy $750 billion through 2035 to expand U.S. housing supply and homeownership, a nearly 40% increase from the previous decade. The initiative aims to finance 1 million affordable housing units and help 500,000 buyers purchase homes, including 200,000 first-time buyers. The bank will also increase mortgage lending, hire 850",
-   "titulo": "JPMorgan desplegará $750B en vivienda hasta 2035, aumentando 40% su compromiso",
-   "resumen": "JPMorgan Chase anunció expansión de su iniciativa American Dream a $750 mil millones (vs $550B anterior) para financiar 1 millón de unidades de vivienda asequible y ayudar a 500 mil compradores. Incluye 200 mil compradores primerizos, contratación de 850 asesores hipotecarios y apoyo a reformas de política habitacional para aumentar construcción.",
-   "analisis": {
-    "porque": "Señal de confianza institucional en economía residencial estadounidense; JPM busca liderazgo en segmento de vivienda con apuesta de largo plazo; relevante para ciclo crediticio, construcción y consumo",
-    "queOcurrio": "JPMorgan Chase confirmó aumento de 37% en su compromiso de financiamiento habitacional a través de su American Dream Initiative, con objetivos específicos en unidades asequibles y primer-compradores",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "JPM",
-    "XLF",
-    "Sector Inmobiliario",
-    "Bonos Hipotecarios"
-   ],
-   "sesgos": [
-    {
-     "activo": "JPM",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Sector Construcción",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "XLF",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "jpmorgan",
-    "vivienda",
-    "american-dream",
-    "hipotecas",
-    "construccion"
-   ],
-   "tgText": "JPMorgan desplegará $750B en vivienda hasta 2035 (+37% vs década anterior). Financiará 1M unidades asequibles y ayudará a 500K compradores. Apuesta institucional en mercado residencial.",
-   "xText": "JPMorgan amplía compromiso de vivienda a $750B hasta 2035. Objetivo: 1M unidades asequibles, 500K compradores, 200K primerizos. Expansión de 37% en American Dream Initiative. $JPM",
-   "discordText": "**JPMorgan expande compromiso habitacional**\n• Despliegue: $750B hasta 2035 (+37%)\n• 1M unidades vivienda asequible\n• 500K compradores (200K primerizos)\n• 850 nuevos Home Lending Advisors\n• Enfoque en reformas de política habitacional",
-   "pushText": "JPM amplía $750B en vivienda hasta 2035; apuesta en sector residencial.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "JPM (financiero directo): señal de confianza en crédito residencial y crecimiento de márgenes de intermediación",
-    "despues": "XLF (sector financiero), constructoras (MTH, LEN, PHM), REITs hipotecarios; mercado de bonos si se interpretan como menor tasa de defaults",
-    "escenarios": "Traders observarán: (1) si este compromiso implica cambios en pricing de hipotecas; (2) impacto en provisiones de crédito; (3) si otras grandes financieras lo replican; (4) validación de demanda de vivienda a largo plazo",
-    "riesgos": "El titular no especifica fuentes de financiamiento; si tasas suben, el deployment podría ralentizarse; riesgo de que promesa sea parcialmente asegurada con ABS"
-   },
-   "macro": null,
    "updates": []
   }
  ],
