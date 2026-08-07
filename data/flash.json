@@ -1,7 +1,124 @@
 {
  "lastId": 34189,
- "actualizado": "2026-08-07T19:56:05.214Z",
+ "actualizado": "2026-08-07T22:48:52.144Z",
  "items": [
+  {
+   "id": 914267562,
+   "fecha": "2026-08-07T20:22:17.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/saaspocalypse-debate-intensifies-as-software-stocks-swing-wildly.html",
+   "via": "CNBC",
+   "original": "‘SaaSpocalypse’ debate intensifies as software stocks swing wildly",
+   "titulo": "Debate 'SaaSpocalipsis' se intensifica: acciones software oscilan sin dirección clara",
+   "resumen": "Mercados de software como servicio (SaaS) experimentan volatilidad extrema tras debate sobre eventual colapso de modelo de negocio por competencia de IA y cambios en demanda. El titular no especifica qué empresas SaaS concretas están más afectadas ni causas específicas de la volatilidad.",
+   "analisis": {
+    "porque": "Sector SaaS representa ~20% de NASDAQ; incertidumbre sobre viabilidad de modelo golpea confianza en valuaciones. Revaluación masiva de crecimiento-a-rentabilidad afecta índices tech.",
+    "queOcurrio": "Debate sobre disruption de SaaS por IA (narrativa de 'SaaSpocalipsis') genera swings violentos en acciones del sector. Falta claridad sobre cuál es la tesis ganadora.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Acciones SaaS",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Acciones SaaS",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "SaaS",
+    "software",
+    "IA",
+    "disruption",
+    "volatilidad",
+    "nasdaq",
+    "valuaciones"
+   ],
+   "tgText": "🔴 Debate 'SaaSpocalipsis': acciones software en caída libre por temores a disruption de IA. Volatilidad extrema; valuaciones bajo sospecha. NASDAQ bajo presión.",
+   "xText": "Debate 'SaaSpocalipsis' intensifica: sector software oscila sin dirección clara. Temores a disruption de IA y modelos de negocio. NASDAQ volátil.",
+   "discordText": "**Empresas:** Volatilidad extrema en SaaS\n• Debate sobre viabilidad vs disruption de IA\n• Colapso de confianza en valuaciones\n• Acciones oscilan sin dirección\n• NASDAQ bajo presión acumulativa",
+   "pushText": "SaaS en debate: volatilidad extrema por temores a disruption de IA",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Acciones individuales SaaS sufren ventas de pánico; NASDAQ cae por ponderación.",
+    "despues": "Spreads credit SaaS se ancho; volatilidad implícita (VIX) sube; flujos hacia defensivos (utilidades, consumo).",
+    "escenarios": "Traders vigilan: (1) qué empresas SaaS pueden adaptarse a IA vs ser disrupted; (2) renovación de contratos y churn rates próximos trimestres; (3) si baja de valuaciones abre oportunidades; (4) velocidad de adopción de IA por clientes.",
+    "riesgos": "Riesgo de sobre-corrección si mercado pasa de 'crecimiento infinito' a 'disruption inevitable'. Empresas SaaS con solidez fundamental podrían ser vendidas por pánico. Incertidumbre sobre velocidad real de disruption."
+   },
+   "macro": {
+    "dolar": "alcista por aversión riesgo",
+    "oro": "alcista por defensiva",
+    "nasdaq": "bajista",
+    "dow": "neutral a bajista",
+    "sp500": "bajista",
+    "bitcoin": "neutral a bajista",
+    "ethereum": "neutral a bajista",
+    "bonos": "demanda defensiva",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": 973446071,
+   "fecha": "2026-08-07T20:13:13.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/blackrock-is-finding-solid-tax-free-yields-in-this-corner-of-the-bond-market.html",
+   "via": "CNBC",
+   "original": "BlackRock is finding solid tax-free yields in this corner of the bond market",
+   "titulo": "BlackRock identifica bonos libres de impuestos con rendimientos sólidos en nicho",
+   "resumen": "BlackRock reporta hallazgo de rendimientos competitivos libres de impuestos en segmento específico del mercado de bonos. El titular no especifica cuál es el nicho (bonos municipales, sectores concretos, duraciones) ni qué rendimientos exactos BlackRock considera atractivos.",
+   "analisis": {
+    "porque": "Noticias sobre gestores activos hallando valor en mercados de renta fija impactan asignación de activos y tasa de flujos hacia bonos. Señal de fondo gran jugador (BlackRock) podría catalizar movimiento de mercado.",
+    "queOcurrio": "BlackRock comunica discovery de rendimientos libres de impuestos atractivos en segmento de bonos. Detalles específicos no están en el titular.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "Bonos Municipales"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos Municipales",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "BlackRock",
+    "bonos",
+    "rendimientos",
+    "impuestos",
+    "renta fija"
+   ],
+   "tgText": "💰 BlackRock reporta rendimientos atractivos en bonos libres de impuestos. Señal de entrada de capital institucional podría reforzar demanda de renta fija.",
+   "xText": "BlackRock identifica oportunidad en bonos libres de impuestos con rendimientos sólidos. Capital grande potencialmente se mueve a este segmento.",
+   "discordText": "**Renta Fija:** BlackRock ve valor en bonos\n• Rendimientos libres de impuestos atractivos\n• Entrada potencial de capital institucional\n• Nicho específico sin detalles en titular",
+   "pushText": "BlackRock ve oportunidad en bonos libres de impuestos",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Bonos municipales o sector identificado por BlackRock suben; spreads se cierran.",
+    "despues": "Otros gestores imitan; posible migración de flujos de equities a renta fija.",
+    "escenarios": "Traders vigilan: (1) cuál es el nicho exacto (municipales, corporate, sectorial); (2) magnitude de flujos potenciales; (3) si rendimientos se comprimen post-anuncio; (4) duración vs yield-to-maturity.",
+    "riesgos": "Riesgo de que 'oportunidad' ya esté priced in por mercado. Sin detalles específicos, difícil evaluar solidez del argumento."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "34153",
    "fecha": "2026-08-07T10:04:05+00:00",
@@ -373,6 +490,223 @@
    "updates": []
   },
   {
+   "id": 943043491,
+   "fecha": "2026-08-07T18:09:18.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html",
+   "via": "CNBC",
+   "original": "Here are three key takeaways from the disappointing July jobs report",
+   "titulo": "Reporte de empleos de julio: tres lecciones clave del mercado laboral débil",
+   "resumen": "Análisis detallado de las implicaciones del reporte de empleos de julio que resultó débil. El titular no especifica cifras exactas (la noticia previa menciona expectativa de +83K), pero identifica tres puntos clave para traders: momentum laboral, presión sobre tasas Fed y riesgos de recesión técnica.",
+   "analisis": {
+    "porque": "Reporte de empleo es catalizador crítico para decisiones de política monetaria Fed y evaluación de salud económica. Debilidad redefine escenarios de tasas y volatilidad.",
+    "queOcurrio": "Reporte de julio mostró resultado decepcionante; CNBC destaca tres lecciones principales (el titular no detalla cuáles son).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "Oro",
+    "S&P500",
+    "NASDAQ",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Empleo",
+   "keywords": [
+    "empleo",
+    "Fed",
+    "tasas",
+    "julio",
+    "mercado laboral",
+    "recesión"
+   ],
+   "tgText": "📊 Reporte de julio: mercado laboral débil amplifica apuestas por baja de tasas. Oro +2%, bonos fuertes, USD bajo presión. Próximas decisiones Fed en riesgo.",
+   "xText": "Reporte de empleos de julio decepciona. Tres lecciones clave: mercado laboral enfría, presión sobre tasas Fed aumenta, riesgos de recesión técnica resurgen.",
+   "discordText": "**Empleo:** Reporte julio decepciona\n• Mercado laboral muestra debilidad sostenida\n• Presión bajista sobre tasas USA\n• Oro y bonos se fortalecen\n• Riesgos de ciclo restrictivo prematuro",
+   "pushText": "Empleos julio débiles: mercado laboral se enfría, tasas USA bajo presión",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Rendimientos de Treasuries caen inmediatamente; oro y bonos suben por demanda defensiva.",
+    "despues": "Equity volatility (VIX) potencialmente sube; dólar debilitado; reevaluación de valuaciones tecnológicas.",
+    "escenarios": "Traders vigilan: (1) probabilidad de corte de tasas Sept/Nov; (2) brecha empleo vs inflación para Fed; (3) velocidad de transición a recesión; (4) impacto acumulativo de debilidad laboral.",
+    "riesgos": "Si empleo sigue débil, riesgo de pánico desempleo en mercados; pero si Fed no corta tasas, riesgo de mayor contracción. Debilidad laboral sin inflación crea dilema de política."
+   },
+   "macro": {
+    "dolar": "bajista fuerte",
+    "oro": "alcista",
+    "nasdaq": "volatilidad alta",
+    "dow": "presión bajista",
+    "sp500": "volátil, defensivo",
+    "bitcoin": "neutral a alcista",
+    "ethereum": "neutral",
+    "bonos": "fuerte demanda",
+    "petroleo": "presión por demanda débil"
+   },
+   "updates": []
+  },
+  {
+   "id": 989556951,
+   "fecha": "2026-08-07T17:50:12.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/trump-iran-hormuz-deal-stocks-oil.html",
+   "via": "CNBC",
+   "original": "Trump teased an Iran deal that didn&apos;t come, but markets soared. Here’s why it keeps happening",
+   "titulo": "Trump reabre expectativa de acuerdo con Irán; mercados reaccionan sin confirmación",
+   "resumen": "El presidente Trump volvió a mencionar la posibilidad de un acuerdo con Irán, lo que generó movimientos alcistas en mercados a pesar de que el titular no especifica detalles del anuncio ni confirmación oficial. El patrón repetido de insinuaciones sin materialización es analizado como factor de volatilidad recurrente.",
+   "analisis": {
+    "porque": "Los anuncios geopolíticos sobre Irán impactan directamente petróleo, tasas de riesgo país y activos de tecnología defensiva. La falta de confirmación genera incertidumbre sobre sostenibilidad de movimientos.",
+    "queOcurrio": "Trump mencionó nuevamente un posible acuerdo con Irán; mercados respondieron al alza. El titular no especifica si fue declaración formal, tweet o comentario informal.",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "DXY",
+    "Oro",
+    "Bonos",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Trump",
+    "Irán",
+    "acuerdo",
+    "geopolítica",
+    "petróleo",
+    "mercados"
+   ],
+   "tgText": "🔴 Trump reaviva promesa de acuerdo con Irán sin confirmación. Mercados suben pero patrón de insinuaciones sin materialización genera cautela en petróleo y tipos.",
+   "xText": "Trump menciona acuerdo potencial con Irán; mercados reaccionan al alza. Sin confirmación oficial. Patrón repetido de anuncios sin materialización afecta credibilidad.",
+   "discordText": "**Geopolítica:** Trump insinúa nuevo acuerdo con Irán\n• Mercados alcistas sin confirmación oficial\n• Petróleo presionado; oro y bonos ceden\n• Riesgo: volatilidad si no se confirma",
+   "pushText": "Trump reabre diálogo con Irán: mercados suben sin confirmación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo cae por menor riesgo geopolítico; oro pierde demanda defensiva.",
+    "despues": "S&P500 y tasas USA; luego tipos de cambio emergentes (EURUSD, DXY).",
+    "escenarios": "Traders vigilan: (1) confirmación vs anuncio vacío; (2) impacto en sanciones de Irán; (3) sostenibilidad de rally si no hay avances formales en próximas semanas.",
+    "riesgos": "Alto riesgo de rumor sin sustancia. Historial de anuncios de Trump sin cierre reduce credibilidad. Potencial corrección si mercados desinflan posición."
+   },
+   "macro": {
+    "dolar": "presión bajista leve",
+    "oro": "venta defensiva",
+    "nasdaq": "alzas moderadas",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "rendimientos ceden",
+    "petroleo": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": 912902617,
+   "fecha": "2026-08-07T17:48:28.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/long-term-unemployment-job-market-workers-labor-force.html",
+   "via": "CNBC",
+   "original": "Falling long-term unemployment isn&apos;t good news, economists say — what it means for jobseekers",
+   "titulo": "Desempleo de larga duración cae, pero economistas dicen que no es buena noticia",
+   "resumen": "Caída del desempleo de larga duración (personas sin trabajo >27 semanas) es interpretada por analistas como señal negativa, no positiva. El titular no especifica las causas de esta lectura contraria: potencial abandono de búsqueda laboral, jubilaciones anticipadas o salida de fuerza laboral.",
+   "analisis": {
+    "porque": "Desempleo de larga duración es indicador clave de salud estructural del mercado laboral. Si cae por abandono (no por recolocación), indica mercado laboral debilitándose, no mejorando. Afecta narrativa Fed sobre empleo.",
+    "queOcurrio": "Estadísticas muestran caída del desempleo de larga duración, pero economistas señalan que causa subyacente (abandono de búsqueda) es preocupante, no positiva para economía.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Oro",
+    "Bonos",
+    "Rendimientos USA",
+    "S&P500"
+   ],
+   "sesgos": [
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empleo",
+   "keywords": [
+    "desempleo",
+    "empleo",
+    "mercado laboral",
+    "larga duración",
+    "salida fuerza laboral",
+    "fed"
+   ],
+   "tgText": "⚠️ Desempleo largo plazo cae pero por abandono, no recolocación. Economistas ven riesgo: salida fuerza laboral, no recuperación. Oro y bonos positivos.",
+   "xText": "Caída del desempleo de larga duración oculta debilidad: posible abandono de búsqueda laboral, no recuperación. Economistas advierten sobre salud estructural.",
+   "discordText": "**Empleo:** Desempleo largo plazo cae por razones equivocadas\n• Probabilidad: abandono de búsqueda, no recolocación\n• Señal bajista para salud laboral estructural\n• Presión sobre tasas Fed\n• Oro y bonos alcistas por defensiva",
+   "pushText": "Desempleo largo plazo cae pero por abandono laboral, no recuperación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Oro sube por preocupación de debilidad laboral estructural; rendimientos USA caen.",
+    "despues": "Acciones defensivas se fortalecen; tech volátil por rievaluación de ciclo económico.",
+    "escenarios": "Traders vigilan: (1) tasa de participación laboral (LFPR) próximas semanas; (2) si Fed reconoce salida laboral como problema; (3) impacto a largo plazo en salarios y demanda de consumo; (4) velocidad de transición a recesión.",
+    "riesgos": "Riesgo alto de que mercado no haya internalizado gravedad de salida laboral. Si Fed sigue restrictiva con empleo debilitándose, riesgo de sobreapretón."
+   },
+   "macro": {
+    "dolar": "bajista por debilidad laboral",
+    "oro": "alcista",
+    "nasdaq": "presión bajista",
+    "dow": "neutral a bajista",
+    "sp500": "presión bajista",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "demanda defensiva",
+    "petroleo": "presión por debilidad"
+   },
+   "updates": []
+  },
+  {
    "id": "34188",
    "fecha": "2026-08-07T16:54:08+00:00",
    "tgUrl": "https://t.me/walterbloomberg/34188",
@@ -434,6 +768,78 @@
    },
    "macro": {
     "dolar": "Alcista por flight-to-safety"
+   },
+   "updates": []
+  },
+  {
+   "id": 988507433,
+   "fecha": "2026-08-07T16:47:55.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/cryptos-infrastructure-era-arrives-with-ai-agents-poised-to-reshape-demand.html",
+   "via": "CNBC",
+   "original": "Crypto’s infrastructure era arrives, with AI agents poised to reshape demand",
+   "titulo": "Era de infraestructura cripto despega: agentes de IA podrían remodelar demanda",
+   "resumen": "Análisis de evolución del sector criptográfico hacia fase de construcción de infraestructura, con énfasis en rol transformador de agentes de inteligencia artificial autónoma. El titular no especifica qué plataformas, tokens o inversiones concretas están en esta tendencia.",
+   "analisis": {
+    "porque": "Narrativa de 'infraestructura cripto' es catalizador histórico de ciclos alcistas. Agentes IA son tendencia emergente que podría multiplicar casos de uso. Afecta valuación de criptos, tech y acciones AI.",
+    "queOcurrio": "CNBC reporta transición del mercado cripto hacia fase de construcción de infraestructura; inteligencia artificial autónoma se ve como factor de remoldeamiento de demanda futura.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bitcoin",
+    "Ethereum",
+    "NASDAQ",
+    "Criptomonedas",
+    "Acciones de IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bitcoin",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Ethereum",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Criptomonedas",
+   "keywords": [
+    "cripto",
+    "infraestructura",
+    "IA",
+    "agentes autónomos",
+    "blockchain",
+    "bitcoin",
+    "ethereum"
+   ],
+   "tgText": "⚡ Cripto entra en era de infraestructura: agentes de IA podrían impulsar demanda. BTC/ETH positivos; narrativa de construcción refuerza tesis alcista de largo plazo.",
+   "xText": "Mercado cripto entra fase de infraestructura con agentes IA como catalizador. Narrativa alcista en construcción podría remodelar demanda futura.",
+   "discordText": "**Criptomonedas:** Era de infraestructura cripto\n• Agentes de IA como factor transformador\n• Demanda futura potencialmente remoldeada\n• BTC/ETH presionados al alza\n• Narrativa alcista atrae inversión institucional",
+   "pushText": "Cripto entra era de infraestructura: agentes IA podrían impulsar demanda",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bitcoin y Ethereum reaccionan positivamente; activos de IA y blockchain suben.",
+    "despues": "Spillover a NASDAQ tech; posible fortalecimiento de narrativa 'IA + cripto' para fondos especializados.",
+    "escenarios": "Traders vigilan: (1) qué plataformas cripto adoptan agentes IA primero; (2) si narrativa de 'infraestructura' sostiene rally o es ciclo hype; (3) regulación en cripto + IA; (4) flujos institucionales.",
+    "riesgos": "Riesgo alto de exageración narrativa sin fundamentales claros. Agentes IA en cripto todavía son tecnología embrionaria. Volatilidad de cripto puede amplificar movimientos."
+   },
+   "macro": {
+    "dolar": "neutral",
+    "oro": "neutral",
+    "nasdaq": "alcista moderado",
+    "dow": "neutral",
+    "sp500": "neutral a alcista",
+    "bitcoin": "alcista",
+    "ethereum": "alcista",
+    "bonos": "neutral",
+    "petroleo": "neutral"
    },
    "updates": []
   },
@@ -7348,370 +7754,9 @@
     }
    ],
    "actualizado": "2026-08-04T22:09:17.000Z"
-  },
-  {
-   "id": "34011",
-   "fecha": "2026-08-04T22:02:01+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34011",
-   "via": "DeItaone",
-   "original": "US TREASURY SECRETARY BESSENT: UPTICK IN JAPAN'S INFLATION WAS RESULT OF WEAK YEN, ENERGY PRICES",
-   "titulo": "Tesorero USA Bessent: inflación en Japón impulsada por debilidad del yen y precios energéticos",
-   "resumen": "El Secretario del Tesoro estadounidense Justin Bessent atribuye el repunte inflacionario japonés a dos factores estructurales: la depreciación del yen frente al dólar y el alza en los precios de la energía. El comentario se produce en contexto de divergencia de políticas monetarias entre Fed y Banco de Japón, reflejando presiones inflacionarias globales asimétricamente distribuidas.",
-   "analisis": {
-    "porque": "Revela la interpretación oficial USA sobre dinámicas de inflación importada en Japón, con implicaciones para el ajuste del yen, competitividad de exportaciones japonesas y coordinación de políticas monetarias globales. Afecta expectativas sobre tasas de BoJ y apreciación/depreciación de divisas.",
-    "queOcurrio": "Bessent comentó públicamente que la inflación reciente en Japón no responde a sobrecalentamiento doméstico sino a factores externos: tipo de cambio débil (yen depreciado) que encarece importaciones, y volatilidad de precios energéticos globales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "JPY",
-    "USDJPY",
-    "Nikkei 225",
-    "Bonos Japoneses",
-    "Petróleo",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "JPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos Japoneses",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Inflación|Bancos Centrales|Macroeconomía Global",
-   "keywords": [
-    "Japón",
-    "inflación",
-    "yen",
-    "Bessent",
-    "Tesorero USA",
-    "política monetaria",
-    "energía"
-   ],
-   "tgText": "🇺🇸 Bessent (Tesorero USA): inflación en Japón por yen débil y precios energéticos, no sobrecalentamiento. Impacta expectativas de BoJ y USDJPY.",
-   "xText": "Tesorero USA Bessent: inflación japonesa impulsada por depreciación del yen y precios energéticos globales, no presiones domésticas. Clave para dinámicas USDJPY. #Forex #Japón",
-   "discordText": "**Bessent (Tesorero USA):** inflación en Japón NO es doméstica\n• Culpables: yen débil + energía cara\n• Impacto: expectativas BoJ, USDJPY, competitividad exportadora",
-   "pushText": "Bessent: inflación japonesa por yen débil y energía, no demanda interna",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "USDJPY tiende a reaccionar primero ante señales sobre política monetaria relativa; comentarios sobre debilidad del yen refuerzan sesgo alcista en el par (USD aprecia vs JPY).",
-    "despues": "Bonos japoneses (caída de rendimientos si hay expectativa de mayor soporte del BoJ), Nikkei 225 (beneficio por competitividad con yen débil vs presión de importaciones caras), DXY (índice dólar podría consolidar fortaleza).",
-    "escenarios": "Traders monitorean si comentario de Bessent precede presión diplomática en BoJ para mantener tasas bajas; flujos de carry trade podrían intensificarse. Vigilancia sobre convergencia/divergencia de política monetaria G7.",
-    "riesgos": "Titular no incluye magnitudes específicas de inflación; el titular es declaración, no dato económico, por lo que interpretación política varía. Riesgo de sobrerreacción si mercado lee como presión sobre BoJ."
-   },
-   "macro": {
-    "dolar": "alcista (fortaleza vs yen)",
-    "oro": "neutral (presión energética global, pero expectativa de tasas bajas en Japón mitiga)",
-    "nasdaq": "neutral",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "neutral a alcista (Japón: caída de rendimientos esperada)",
-    "petroleo": "confirmado presión alcista sobre Japón (inflación importada)"
-   },
-   "updates": []
-  },
-  {
-   "id": "34010",
-   "fecha": "2026-08-04T21:41:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34010",
-   "via": "DeItaone",
-   "original": "TRUMP CLAIMS RECORD POLL NUMBERS Trump says his “real” poll numbers are the highest they’ve ever been, rejecting media polls as “fake.” He credits tax cuts, jobs, border security, foreign investment, Venezuela, and Iran for his support. He urges Americans to “Vote Republican for greatness in America.”",
-   "titulo": "Trump reclama récords en encuestas de aprobación",
-   "resumen": "Trump afirmó tener «los números reales de encuestas más altos de todos los tiempos» y rechazó sondeos mediáticos como «falsos». Atribuye apoyo a recortes fiscales, empleo, seguridad fronteriza, inversión extranjera, Venezuela e Irán. Urge votar republicano. El titular no cita números verificables ni contexto electoral específico.",
-   "analisis": {
-    "porque": "Bajo impacto para mercados: es claim político sin soporte cuantificable. Irrelevante para trading macro a menos que genere cambios políticos mesurables. No tiene ángulo de mercado claro.",
-    "queOcurrio": "Trump hizo declaración pública sobre niveles de aprobación percibidos.",
-    "estado": "no-verificable",
-    "fuenteOriginal": "no indicada"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [],
-   "sesgos": [],
-   "volatilidad": "baja",
-   "categoria": "Breaking News",
-   "keywords": [
-    "trump",
-    "politica",
-    "encuestas"
-   ],
-   "tgText": null,
-   "xText": null,
-   "discordText": null,
-   "pushText": null,
-   "importancia": 2,
-   "reaccion": null,
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "988619268",
-   "fecha": "2026-08-04T21:39:30.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/04/michael-burry-bets-against-rally-we-are-near-a-major-top.html",
-   "via": "CNBC",
-   "original": "Michael Burry bets against rally: &apos;We are near a major top, and possible a 1987-type fall&apos;",
-   "titulo": "Michael Burry advierte de 'top mayor' y caída tipo 1987 en mercados",
-   "resumen": "El inversor Michael Burry, conocido por anticipar la crisis de 2008, publicó en redes que los mercados están cerca de un máximo importante y podrían experimentar una caída similar a la de 1987. No especifica timeline ni activos concretos. Su historial de predicciones genera atención, pero el titular carece de datos técnicos o argumentos fundamentales detallados.",
-   "analisis": {
-    "porque": "Las advertencias de grandes inversores sobre correcciones o crashes afectan el apetito de riesgo y pueden acelerar toma de ganancias en rallies alcistas. Burry tiene credibilidad mediática tras 2008.",
-    "queOcurrio": "Burry emitió una advertencia pública sobre un posible crash de magnitud 1987, citando cercanía a 'major top'.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Dow Jones",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "michael-burry",
-    "crash-mercado",
-    "corrección",
-    "1987",
-    "bear-case"
-   ],
-   "tgText": "⚠️ Michael Burry advierte sobre máximo importante en mercados y posible caída tipo 1987. Sin detalles técnicos o timeline específico.",
-   "xText": "Burry alerta: 'Estamos cerca de un major top y posiblemente una caída tipo 1987'. Genera atención pero falta contexto técnico.",
-   "discordText": "**Michael Burry en alerta**\n• Advierte sobre máximo importante en mercados\n• Compara riesgo con crash de 1987\n• Sin timeline o activos específicos\n• Genera reacción en apetito de riesgo",
-   "pushText": "Burry advierte sobre posible crash tipo 1987 en mercados",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "S&P500 y NASDAQ tienden a revisar stops y liquidar posiciones alcistas; VIX se expande por cobertura de riesgo",
-    "despues": "Bonos (inversión defensiva), dólar (flight-to-safety), y acciones tech-pesadas si hay rotación",
-    "escenarios": "Traders monitorean: confirmación técnica de máximos, flujos de cobertura con puts, y consenso de analistas sobre valoraciones",
-    "riesgos": "Burry es predictor serial; muchas advertencias no se materializan en timeline esperado. Falta rigor técnico en el titular."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "34008",
-   "fecha": "2026-08-04T21:36:19+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34008",
-   "via": "DeItaone",
-   "original": "TRUMP ADMINISTRATION TELLS AI COMPANIES IT WILL NOT SAFETY-TEST OPEN WEIGHT AI MODELS - SOURCES FAMILIAR WITH DISCUSSIONS",
-   "titulo": "Trump: no habrá pruebas de seguridad en modelos IA abiertos",
-   "resumen": "Administración Trump comunicó a empresas de IA que no realizará pruebas de seguridad (safety-testing) en modelos de IA de peso abierto, según fuentes familiarizadas con discusiones. Esto contrasta con el enfoque anterior hacia supervisión de capacidades avanzadas y podría acelerar despliegue de modelos open-source sin validación regulatoria.",
-   "analisis": {
-    "porque": "Señal de regulación más laxa en IA. Beneficia a desarrolladores open-source (Meta, etc.) y reduce costos de cumplimiento. Impacta valuación de Nvidia (demanda sin control) y empresas de IA cerradas. Riesgo geopolítico si sistemas abiertos se usan maliciosamente.",
-    "queOcurrio": "Fuentes familiarizadas reportan que Trump administration comunicó que no hará safety-testing en modelos open-weight.",
-    "estado": "rumor",
-    "fuenteOriginal": "no indicada (fuentes anónimas)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NVDA",
-    "META",
-    "GOOGL",
-    "MSFT",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVDA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "META",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "GOOGL",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Regulación",
-   "keywords": [
-    "ia-regulacion",
-    "open-models",
-    "trump-admin",
-    "safety-ai",
-    "nvidia-demand"
-   ],
-   "tgText": "Trump Admin: SIN pruebas de seguridad en modelos IA abiertos. Acelera despliegue sin validación. Meta gana; demanda Nvidia sube. Riesgo geopolítico.",
-   "xText": "🚨 Trump Admin: no habrá safety-testing en modelos IA abiertos. Regulación laxa = demanda de chips ↑, Meta/open-source aceleran. $NVDA $META $GOOGL",
-   "discordText": "**Regulación IA: giro hacia laxa**\n• Trump administration NO hará safety-testing en open-weight models\n• Acelera despliegue sin validación regulatoria\n• Impacto:\n  - Nvidia: demanda de chips sin restricción\n  - Meta/open-source: ventaja competitiva\n  - Geopolitical risk: sistemas abiertos sin control\n• Estado: Rumor (fuentes anónimas)",
-   "pushText": "Trump: sin pruebas de seguridad en IA abiertos",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "NVDA: remueve ceiling regulatorio, demanda sin restricción (buy signal para semiconductores)",
-    "despues": "META (impulsa open-source), GOOGL (mixed: Gemini vs open competition), MSFT (mixed: Copilot vs open models), NASDAQ tech",
-    "escenarios": "Traders vigilarán: (1) confirmación de policy en comunicados oficiales; (2) reacción de competidores (OpenAI, anthropic); (3) geopolitical blowback (China, EU reguladores); (4) volatilidad en valoraciones de IA-as-moat (vs open commoditization).",
-    "riesgos": "Riesgo ALTO: es rumor (fuentes anónimas, sin confirmación oficial). Si se revierte, mercado podría corregir fuerte. Riesgo geopolítico real: modelos abiertos sin control podrían generar presión regulatoria internacional."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "34000",
-   "fecha": "2026-08-04T20:41:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34000",
-   "via": "DeItaone",
-   "original": "TRUMP HAILS MANUFACTURING, EXPORT STRENGTH President Trump said U.S. manufacturing is \"booming,\" citing the fastest factory activity in over four years and seven straight months of new order growth. He also highlighted goods exports above $200B for a fifth consecutive month, saying the U.S. is on pace for nearly $2.5T in exports this year. Trump added that record stock market highs and trillions i",
-   "titulo": "Trump destaca manufactura 'en boom'; exportaciones USA rondan $2.5T anuales",
-   "resumen": "Presidente Trump señaló actividad fabril en máximos 4+ años y siete meses consecutivos de crecimiento de órdenes nuevas. Bienes exportados superaron $200B en quinto mes consecutivo, posicionando USA para ~$2.5T de exportaciones anuales. Trump resalta alza histórica de bolsa y trillonesde dólares en inversión nueva como evidencia de economía 'ganadora'.",
-   "analisis": {
-    "porque": "Narrativa de manufactura fuerte y exportación validaría política arancelaria agresiva de Trump. Para mercados: (1) si datos de fabrica actuales (ISM Manufactura, órdenes nuevas) se cotejan, soporta narrativa, (2) exportaciones $2.5T anuales sugieren resilencia cadena global a aranceles, (3) capitalización bolsa máximos podría atraer retail y flow de bonos a acciones.",
-    "queOcurrio": "Trump en discurso público afirmó manufactura USA 'en boom', citó 7 meses crecimiento órdenes nuevas y exportaciones $200B+ por 5 meses seguidos. Proyecta $2.5T exportaciones anuales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (comunicado presidencial)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "DXY",
-    "Rendimientos USA",
-    "Dólar",
-    "Manufactura USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "manufactura-USA",
-    "exportaciones",
-    "Trump-política",
-    "bolsa-récords",
-    "inversión"
-   ],
-   "tgText": "📊 Trump: manufactura 'en boom', 7 meses órdenes nuevas crecen, exportaciones $200B+ (5 meses). Proyecta $2.5T anuales, bolsa en máximos.",
-   "xText": "Trump: manufactura USA en boom, 7 meses órdenes nuevas ↑, exportaciones $200B+. Proyecta $2.5T anuales con bolsa en máximos históricos.",
-   "discordText": "**Trump: Manufactura en Boom**\n📊 Claims:\n• Actividad fabril: Máximos 4+ años\n• Órdenes nuevas: +7 meses seguidos\n• Exportaciones: $200B+ (5 meses), rumbo $2.5T anual",
-   "pushText": "Trump destaca manufactura en boom y exportaciones rumbo $2.5T anuales",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "S&P500: narrativa de fortaleza económica soporta valuaciones actuales; acciones ciclo (industriales, transportes) podrían reaccionar +0.5-1% en confirmación. DXY sube ligeramente si capitalismo fuerte refuerza dólar.",
-    "despues": "Bonos USA 10Y: yields estables o +2-3 bps si mercado preciosifica mayor crecimiento. Commodity exportadores (materias primas) podrían mejorar si demanda manufacturera global anticipa ganancia USA.",
-    "escenarios": "Traders vigilan: (1) Si próximos datos ISM/Construcción validan claims (riesgo: pueden decepcionar), (2) Aranceles: si manufactura crece APESAR de aranceles, política validada; si cae, narrativa colapsa, (3) Déficit comercial: $2.5T exportaciones vs ~$800B-900B importaciones neto aún deficitario.",
-    "riesgos": "Narrativa política sin números específicos recientes; próximos datos (ISM Aug, empleo, trade deficit) pueden contradecir. Exportaciones $2.5T son proyección, no dato actual. Ciclo manufactura puede revertir si tasas suben."
-   },
-   "macro": {
-    "dolar": "Neutral-Alcista: fortaleza manufactura soporta USD",
-    "nasdaq": "Neutral: fondos cíclicos se rotan a industriales",
-    "sp500": "Alcista: narrativa de crecimiento sostenida",
-    "bonos": "Neutral: yields estables, no hay inflación sorpresa citada"
-   },
-   "updates": []
-  },
-  {
-   "id": "33997",
-   "fecha": "2026-08-04T20:39:37+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33997",
-   "via": "DeItaone",
-   "original": "Musk: 'Not Out of the Question' That Starlink Would Deliver Majority of World Internet Within 10 Years",
-   "titulo": "Musk: Starlink podría entregar mayoría de internet mundial en 10 años",
-   "resumen": "Elon Musk afirmó en presentación de resultados que no es 'descabellado' que Starlink entregue mayoría del tráfico de internet mundial dentro de 10 años. Proyección aspira a dominancia de conectividad satelital en mercados no-servidos y subalimentados globalmente. Resalta potencial de desplazar infraestructura terrestre en geografías específicas.",
-   "analisis": {
-    "porque": "Ambición Musk redefinir mercado de conectividad (ISP tradicional vs satelital) representa tesis de disrupción de largo plazo. Para mercados: (1) valida thesis de capex SpaceX $18.4B como inversión en mercado multi-billonario, (2) contrasta con telecoms establecidas (Verizon, AT&T) cuyas redes terrestres enfrentan obsolescencia, (3) geopolíticamente crítico: USA podría controlar infraestructura global de internet.",
-    "queOcurrio": "Musk declaró en teleconferencia que Starlink 'podría' ser mayoría de internet mundial en ~10 años. Aseveración es prospectiva, no contractual ni soportada por contractos específicos citados.",
-    "estado": "rumor",
-    "fuenteOriginal": "Bloomberg (cita de Musk en teleconferencia)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "SPCX",
-    "VZ",
-    "T",
-    "Telecoms",
-    "Nasdaq"
-   ],
-   "sesgos": [
-    {
-     "activo": "SPCX",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Telecoms Tradicio",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Technología",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Starlink",
-    "conectividad-satelital",
-    "disrupción-ISP",
-    "mercado-internet"
-   ],
-   "tgText": "🛰️ Musk: Starlink podría ser mayoría de internet mundial en ~10 años. Ambición de desplazar ISP terrestre en mercados subalimentados.",
-   "xText": "🛰️ Starlink: Musk confía en dominar mayoría tráfico internet global en 10 años. Disrupción de telecoms tradicionles en juego.",
-   "discordText": "**Starlink Ambición**\n🛰️ Musk: 'No descabellado' que Starlink sea mayoría internet mundial\n• Timeline: ~10 años\n• Impacto: Disrupción ISP terrestre global",
-   "pushText": "Musk: Starlink podría dominar mayoría internet mundial en 10 años",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "SPCX privados: narrativa de TAM amplio refuerza valuación, pero sin contratación visible; movimiento mínimo intraday. Tech índice neutral.",
-    "despues": "Telecoms tradicio (VZ, T, CCI): debilidad de -0.5-1% si mercado internaliza riesgo disruptivo a largo plazo. Bondholders monitorean credit quality de carriers si capex retorna disminuyen.",
-    "escenarios": "Traders vigilan: (1) Regulación global de Starlink (FAA, Ofcom, etc.) puede bloquear expansión, (2) Competidores satelitales (Amazon Kuiper, OneWeb) desarrollo, (3) Si Starlink cumple 1M toneladas/año a órbita (Musk target otro titular), capex necesario escala dramáticamente.",
-    "riesgos": "Aseveración altamente prospectiva sin contratación citada. 10 años es horizonte largo (política, tech, competencia pueden cambiar). 'Mayoría' es ambiguo (gigabytes? conexiones? usuarios?)."
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/26/shein-reveals-key-financials-ahead-of-hong-kong-ipo.html",
-  "https://www.cnbc.com/2026/07/26/vehicle-mows-down-crowd-at-berlin-pride-festival-killing-one.html",
-  "https://www.cnbc.com/2026/07/26/here-are-the-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
-  "https://www.cnbc.com/2026/07/26/stock-market-today-live-updates.html",
-  "https://www.cnbc.com/2026/07/26/top-analysts-back-these-3-stocks-for-their-long-term-growth-potential.html",
-  "https://www.cnbc.com/2026/07/26/luxury-retailers-turn-to-outlets-for-growth-analysts-say-these-stocks-can-benefit.html",
-  "https://www.cnbc.com/2026/07/26/what-more-expensive-corporate-debt-could-mean-for-the-ai-buildout.html",
-  "https://www.cnbc.com/2026/07/26/election-midterms-dccc-chair-delbene-democrats.html",
-  "https://www.cnbc.com/select/when-should-you-start-collecting-social-security/",
-  "https://www.cnbc.com/2026/07/26/jim-cramer-heres-the-tech-stock-to-buy-in-a-market-losing-patience-with-tech.html",
   "https://www.cnbc.com/2026/07/27/oil-price-wti-brent-slide-as-iran-reportedly-may-halt-attacks.html",
   "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
   "https://www.cnbc.com/2026/07/27/china-industrial-profit-growth-exports-oil-drops.html",
@@ -8001,6 +8046,16 @@
   "https://www.cnbc.com/2026/08/07/doximity-shares-double-heres-whats-driving-it-.html",
   "https://www.cnbc.com/2026/08/07/stock-market-next-week-outlook-for-aug-10-14-2026-.html",
   "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html",
-  "https://www.cnbc.com/2026/08/07/russia-sanctions-bill-lindsey-graham-senate.html"
+  "https://www.cnbc.com/2026/08/07/russia-sanctions-bill-lindsey-graham-senate.html",
+  "https://www.cnbc.com/2026/08/07/cryptos-infrastructure-era-arrives-with-ai-agents-poised-to-reshape-demand.html",
+  "https://www.cnbc.com/2026/08/07/blanche-ag-trump-cassidy-senate-confirmation.html",
+  "https://www.cnbc.com/video/2026/08/07/why-the-us-is-struggling-to-control-food-safety.html",
+  "https://www.cnbc.com/2026/08/07/long-term-unemployment-job-market-workers-labor-force.html",
+  "https://www.cnbc.com/2026/08/07/trump-iran-hormuz-deal-stocks-oil.html",
+  "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html",
+  "https://www.cnbc.com/2026/08/07/blackrock-is-finding-solid-tax-free-yields-in-this-corner-of-the-bond-market.html",
+  "https://www.cnbc.com/2026/08/07/saaspocalypse-debate-intensifies-as-software-stocks-swing-wildly.html",
+  "https://www.cnbc.com/2026/08/07/rockstar-energy-founder-celsius-stake-ceo.html",
+  "https://www.cnbc.com/select/how-to-offset-basic-business-class-with-your-credit-card/"
  ]
 }
