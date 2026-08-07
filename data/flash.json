@@ -1,7 +1,291 @@
 {
- "lastId": 34185,
- "actualizado": "2026-08-07T16:07:22.865Z",
+ "lastId": 34189,
+ "actualizado": "2026-08-07T17:05:11.619Z",
  "items": [
+  {
+   "id": "34153",
+   "fecha": "2026-08-07T10:04:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34153",
+   "via": "DeItaone",
+   "original": "🇺🇸 JULY JOBS REPORT: ALL EYES ON FRIDAY The July Nonfarm Payrolls report is due Friday at 8:30 AM ET. Prediction Markets • Kalshi: +72K Bank Forecasts • Highest: Citigroup, Santander +115K • Lowest: Deutsche Bank +65K • Median: +80K WSJ Consensus • Payrolls: +83K (vs. +57K prior) • Unemployment: 4.2% • Avg. Hourly Earnings: +0.3% M/M, +3.5% Y/Y https://t.co/OfZHvZl7Ng",
+   "titulo": "Reporte de empleos de julio en EE.UU.: expectativas de +83K y desempleo al 4,2%",
+   "resumen": "El informe de nóminas no agrícolas de julio se publica el viernes a las 8:30 AM ET. Las predicciones oscilan entre +65K (Deutsche Bank) y +115K (Citigroup/Santander), con consenso del WSJ en +83K versus +57K en junio. Se espera desempleo estable en 4,2% y salarios +0,3% mensual (+3,5% anual). Este dato es crítico para orientar la política monetaria de la Fed.",
+   "analisis": {
+    "porque": "Los datos de empleo son el segundo pilar de la Fed para decisiones de tasas. Un resultado débil (<70K) podría acelerar recortes de tasas; uno fuerte (>100K) presionaría al alza. Impacta directamente bonos, dólar y acciones.",
+    "queOcurrio": "Se ha publicado la preview oficial del reporte con múltiples pronósticos bancarios y de mercados de predicción (Kalshi). El titular no incluye el dato real aún; es una anticipación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/WSJ Consensus (agregación oficial)"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "DXY",
+    "NASDAQ",
+    "S&P500",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista si empleos sorprenden al alza"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista si sorpresa positiva en nóminas"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral-bajista si datos fuertes elevan tasas"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empleo|Datos Económicos",
+   "keywords": [
+    "nóminas-julio",
+    "desempleo",
+    "fed",
+    "mercados-trabajo",
+    "bonos-usa"
+   ],
+   "tgText": "🇺🇸 MAÑANA: Reporte empleos julio. Consenso +83K vs +57K anterior. Desempleo 4,2%, salarios +0,3% MoM. Dato clave para Fed. Publicación viernes 8:30 AM ET.",
+   "xText": "📊 VIERNES 8:30 AM ET: Nóminas julio EE.UU. El mercado espera +83K (vs +57K). Desempleo 4,2%. Dato crítico para próxima decisión de tasas de la Fed. #Markets",
+   "discordText": "**Reporte Empleos JULIO - EE.UU.**\n• Fecha: Viernes 8:30 AM ET\n• Consenso: +83K nóminas (anterior +57K)\n• Rango bancario: +65K a +115K\n• Desempleo esperado: 4,2%\n• Salarios: +0,3% MoM, +3,5% YoY\n→ Impacto alto en tasas Fed, bonos, dólar",
+   "pushText": "Empleos julio EE.UU. mañana: mercado espera +83K; dato clave para Fed",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Bonos USA (yields): sorpresa al alza en nóminas → yields suben (precios caen); sorpresa a la baja → yields bajan.",
+    "despues": "DXY (dólar) sigue a yields; NASDAQ sensible a cambios en expectativa de tasas; S&P500 menos volátil pero afectado por sector financiero.",
+    "escenarios": "Traders monitorean desviación vs consenso (+/-20K margen típico de reacción fuerte). Especial atención a salarios: aceleración sugiere inflación persistente; desaceleración facilita Fed pivote a recortes.",
+    "riesgos": "Revisión de junio podría restar importancia; dato podría ser 'no-verificable' hasta publicación oficial; volatilidad extrema esperada en primeros minutos post-anuncio."
+   },
+   "macro": {
+    "dolar": "alcista si nóminas sorprenden al alza",
+    "bonos": "bajista si datos fuertes (yields suben)",
+    "nasdaq": "bajista si sorpresa positiva eleva tasas esperadas",
+    "sp500": "neutral-bajista si empleos fuertes contradicen expectations de recortes",
+    "petroleo": "neutral (datos empleo no mueven crudo directamente)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-07T16:54:43+00:00",
+     "id": "34189",
+     "texto": "Bank of America sostiene expectativa de 75 puntos base en alzas de tasas Fed este año, iniciando en septiembre, a pesar de datos de empleo decepcionantes (nóminas -23K en julio, revisión a baja de 103K previos). Desempleo bajó a 4,1%, pero crecimiento salarial desaceleró a 3,2%. BofA argumenta que inflación sigue siendo prioridad central de la Fed.",
+     "tgUrl": "https://t.me/walterbloomberg/34189"
+    },
+    {
+     "fecha": "2026-08-07T12:35:25+00:00",
+     "id": "34171",
+     "texto": "El mercado laboral estadounidense sorprendió negativamente con una pérdida de 23.000 puestos en julio, muy por debajo del pronóstico de +83.000. Junio fue revisado a la baja a +20.000 empleos. La tasa de desempleo cayó inesperadamente a 4,1% desde 4,2%. El dato débil intensifica debates sobre la política de la Reserva Federal ante inflación persistente.",
+     "tgUrl": "https://t.me/walterbloomberg/34171"
+    },
+    {
+     "fecha": "2026-08-07T11:06:17+00:00",
+     "id": "34160",
+     "texto": "Traders de bonos se preparan para el reporte de empleos de viernes con mercados preciosando más de 50% de probabilidad de suba de tasas de la Fed en septiembre. Economistas esperan adición de ~80.000 empleos en julio. Datos fuertes, especialmente presión salarial, podrían elevar expectativas de hike. Reporte débil las reduciría. Datos inflacionarios de la próxima semana también serán críticos.",
+     "tgUrl": "https://t.me/walterbloomberg/34160"
+    }
+   ],
+   "actualizado": "2026-08-07T16:54:43+00:00"
+  },
+  {
+   "id": "34188",
+   "fecha": "2026-08-07T16:54:08+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34188",
+   "via": "DeItaone",
+   "original": "TRUMP TO APPEAL WHITE HOUSE SECURITY RULING President Trump says his administration will immediately appeal to the Supreme Court after an appellate court backed an injunction affecting construction at the White House. Trump called the ruling a national security threat, saying the project includes bomb shelters, secure military facilities, missile-resistant structures and advanced medical capabilit",
+   "titulo": "Trump apelará fallo de seguridad de Casa Blanca ante Corte Suprema",
+   "resumen": "Presidente Trump anuncia apelación inmediata a la Corte Suprema tras fallo de tribunal de apelaciones respaldando injunción que afecta construcción en Casa Blanca. Trump asevera que proyecto incluye refugios bomba, instalaciones militares seguras, estructuras resistentes misiles y capacidades médicas avanzadas. Argumenta que demandante carece de legitimidad procesal y que fallo jeopardiza seguridad nacional.",
+   "analisis": {
+    "porque": "Riesgo geopolítico y de estabilidad institucional EE.UU. Escalada legal con Corte Suprema sugiere polarización política sostenida. Potenciales implicaciones para sentimiento risk-on/risk-off, USD (safer haven), y equities (incertidumbre regulatoria).",
+    "queOcurrio": "Trump anuncia apelación a Corte Suprema contra fallo de tribunal de apelaciones que respalda injunción limitando construcción de seguridad en Casa Blanca. Trump citrifica proyecto como crítico para defensa nacional (bunkers, instalaciones militares, resistencia misiles) y acusa demandante de falta de legitimidad procesal.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Trump statement / no indicada (presumiblemente declaración oficial o wire service)"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "USD",
+    "S&P500",
+    "VIX",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "USD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "trump-whitehouse",
+    "seguridad-nacional",
+    "corte-suprema",
+    "institucion",
+    "polarizacion-usa"
+   ],
+   "tgText": "⚖️ Trump apelará a Corte Suprema por fallo de construcción en Casa Blanca. Dice que proyecto es crítico para seguridad (bunkers, misiles). Escalada legal institucional.",
+   "xText": "Trump apela a Suprema por fallo de seguridad Casa Blanca. Argumenta proyecto de defensa crítico. Creciente polarización institucional EE.UU.",
+   "discordText": "**Trump apela a Corte Suprema**\n• Fallo de apelaciones respalda injunción contra construcción Casa Blanca\n• Trump citrifica como riesgo de seguridad nacional\n• Proyecto incluye: bunkers, instalaciones militares, resistencia misiles\n• Escalada legal: implicaciones de inestabilidad institucional",
+   "pushText": "Trump escala legal en Suprema por construcción Casa Blanca; riesgo institucional",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "USD alcista (riesgo geopolítico y de incertidumbre institucional eleva demanda de 'safe haven'). VIX sube leve por volatilidad de precedente legal.",
+    "despues": "S&P500 baja (descuento de incertidumbre regulatoria a largo plazo). Oro sube (flight-to-safety).",
+    "escenarios": "Traders vigilarán: (1) timeline de Corte Suprema (puede durar meses), (2) si Suprema fallará a favor o en contra de Trump (implicaciones de poder presidencial vs. revisión judicial), (3) riesgo de cascada de litigios similares si fallo es adverso a presidencia.",
+    "riesgos": "Titular es declaración de Trump (no verificado independientemente). Riesgo de retorica exagerada ('amenaza seguridad nacional'). Fallo judicial final puede tardar años. Impacto mercado es más riesgo geopolítico indefinido que certidumbre."
+   },
+   "macro": {
+    "dolar": "Alcista por flight-to-safety"
+   },
+   "updates": []
+  },
+  {
+   "id": "34187",
+   "fecha": "2026-08-07T16:41:18+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34187",
+   "via": "DeItaone",
+   "original": "US productivity growth is accelerating: US labor productivity rose +1.4% annualized rate in Q2 2026, more than double the +0.6% expected. This follows an upwardly revised +0.8% increase in Q1, marking the 5th consecutive quarter of productivity gains. At the same time, US manufacturing productivity jumped +1.9%, driven by a +4.6% surge in output, the strongest increase since Q4 2021. However, thes",
+   "titulo": "Productividad EE.UU. se acelera: +1,4% en Q2 pero salarios reales caen -3,2%",
+   "resumen": "Productividad estadounidense creció 1,4% anualizado en Q2 2026, superando expectativas de 0,6%. Manufactura saltó 1,9% con producción +4,6% (máximo desde Q4 2021). Marca 5to trimestre consecutivo de ganancias. Tensión: compensación ajustada por inflación cayó -3,2% (peor desde Q4 2022), mientras costos laborales unitarios subieron 1,3%, por debajo del +2,1% esperado.",
+   "analisis": {
+    "porque": "Datos de productividad dual enfrentan mercados: ganancias corporativas vs. presión inflacionaria por deterioro de ingresos reales. Refuerza narrativa de Fed sobre inflación persistente y justifica nuevas alzas de tasas. Mercados monitorean si contracción salarial sostenida cataliza recesión o simplemente reposiciona márgenes.",
+    "queOcurrio": "Productividad aceleró a 1,4% en Q2 (vs. 0,6% esperado y 0,8% revisado en Q1), impulsada por manufactura (+1,9%). Paradójicamente, compensación real de trabajadores se desplomó -3,2%, la peor caída en 21 meses, mientras costos laborales unitarios se enfriaron (1,3% vs. 2,1% previsto).",
+    "estado": "confirmado",
+    "fuenteOriginal": "TheKobeissiLetter (síntesis de datos oficiales BLS/FRED)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "productividad-USA",
+    "salarios-reales",
+    "inflacion-laboral",
+    "manufactura",
+    "Q2-2026"
+   ],
+   "tgText": "📊 Productividad de EE.UU. crece 1,4% (vs 0,6% esperado) pero salarios reales caen -3,2%. Manufactura en máximos desde Q4 2021. Presión inflacionaria mantiene a Fed justificada para más alzas.",
+   "xText": "🚨 Productividad EE.UU. aceleró a +1,4% en Q2 (superó expectativas), pero compensación real de trabajadores cayó -3,2%. Costos laborales unitarios +1,3% < esperado. Tensión ganancias vs. inflación.",
+   "discordText": "**Productividad EE.UU. acelera en Q2**\n• Creció **+1,4%** (vs +0,6% esperado)\n• Manufactura **+1,9%** con producción **+4,6%**\n• Pero: Salarios reales cayeron **-3,2%** (peor en 21 meses)\n• Costos laborales: **+1,3%** < **+2,1%** esperado\n⚠️ Beneficia márgenes corporativos, pero deterioro salarial eleva riesgos de demanda",
+   "pushText": "Productividad EE.UU. +1,4% pero salarios reales -3,2%: tensión máxima en mercados",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Rendimientos de bonos USA suben (tasas 10Y presionadas al alza por validación de inflación persistente). S&P500 y NASDAQ reaccionan mixto: ganancias corporativas alcistas vs. temor a debilitamiento de demanda por salarios reales deprimidos.",
+    "despues": "DXY sube (Fed narrativa de más alzas). Oro gana (inflación real, devaluación de ahorros). Emergentes ceden presión (USD más fuerte).",
+    "escenarios": "Traders vigilarán: (1) señales de Powell sobre 'necesidad urgente' de más alzas, (2) datos de consumo de agosto (riesgo de contracción si demanda se enfría), (3) expectativa de recesión salarial si patrón persiste 2-3 trimestres más, (4) divergencia ganancias/ingresos reales como predictor de corrección equity.",
+    "riesgos": "Titular es resumen de datos oficiales (confirmado), pero interpretación de 'inflación persistente justifica más alzas' asume causalidad. Si caída salarial acelera en próximos trimestres, Fed podría pivotar (riesgo de sorpresa a la baja en tasas)."
+   },
+   "macro": {
+    "dolar": "Alcista: datos validan narrativa de Fed hawkish",
+    "oro": "Alcista: inflación real erode ahorros",
+    "nasdaq": "Mixto: ganancias corporativas vs. riesgo demanda",
+    "dow": "Mixto: similar a NASDAQ",
+    "sp500": "Mixto: similar",
+    "bonos": "Bajista: rendimientos suben",
+    "petroleo": "Neutral en corto plazo",
+    "bitcoin": "Neutral a alcista (hedge inflación)"
+   },
+   "updates": []
+  },
+  {
+   "id": "34186",
+   "fecha": "2026-08-07T16:31:33+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34186",
+   "via": "DeItaone",
+   "original": "OPENAI SLOWS RELEASE OF ASTRA MODEL CITING CYBER CAPABILITIES- AXIOS",
+   "titulo": "OpenAI retrasa lanzamiento de Astra por capacidades cibernéticas",
+   "resumen": "OpenAI ralentiza liberación del modelo Astra citando preocupaciones sobre capacidades cibernéticas del sistema. Según Axios, la empresa prioriza evaluación de riesgos de seguridad antes del despliegue público. Detalles específicos de las capacidades cuestionadas o cronograma revisado no están indicados en el titular.",
+   "analisis": {
+    "porque": "Impacto sectorial en IA/tech y confianza inversora en OpenAI. Retrasos en lanzamientos inflaman narrativa de 'cuidado regulatorio' vs. 'prisas competitivas' (vs. Anthropic, Google). Puede mover valoración de OpenAI en rondas privadas y expectativas de IPO.",
+    "queOcurrio": "OpenAI ha ralentizado lanzamiento de modelo Astra debido a evaluación de sus capacidades cibernéticas. El titular no especifica qué capacidades exactas generan preocupación, cronograma revisado, o si es retraso indefinido.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Axios (portavoz OpenAI o fuente interna)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Nvidia",
+    "OpenAI (privada)",
+    "Tech sector ETFs"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Nvidia",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "openai",
+    "astra-model",
+    "ia-seguridad",
+    "ciberseguridad",
+    "regulacion-ia"
+   ],
+   "tgText": "🤖 OpenAI frena lanzamiento de Astra por capacidades cibernéticas. Evaluación de riesgos prioriza seguridad vs. competencia. Detalles de retraso y capacidades no especificados.",
+   "xText": "OpenAI retrasa Astra por capacidades cibernéticas. Evaluación de seguridad previo a lanzamiento público. Sin cronograma revisado revelado aún.",
+   "discordText": "**OpenAI retrasa modelo Astra**\n• Ralentiza lanzamiento por **capacidades cibernéticas**\n• Priorizará evaluación riesgos seguridad\n• El titular no especifica detalles ni cronograma nuevo\n⚠️ Narrative: responsabilidad vs. competencia en IA",
+   "pushText": "OpenAI retrasa Astra por ciberseguridad; detalles sin especificar",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NASDAQ tech sector: neutral a levemente negativo (postura defensiva vs. esperado aceleracionismo). OpenAI privada: reputación de 'prudencia' alcista con inversores, pero retraso bajista vs. competidores.",
+    "despues": "Peers (Anthropic, Google DeepMind, Xai): potencial suba de narrativa de responsabilidad. Reguladores: validación de demanda por oversight.",
+    "escenarios": "Traders vigilarán: (1) definición exacta de 'capacidades cibernéticas' (¿hacking?, ¿weapon design?), (2) si otros modelos (Claude, Gemini) tienen restricciones similares, (3) impacto en ronda de financiación de OpenAI si retrasos se propagan.",
+    "riesgos": "Titular es vago ('capacidades cibernéticas' sin especificar). Riesgo de interpretación excesiva (pánico regulatorio innecesario vs. simple red-teaming prudente). Posibilidad de que sea posturing competitivo vs. riesgo real."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "34185",
    "fecha": "2026-08-07T16:02:12+00:00",
@@ -682,86 +966,6 @@
     }
    ],
    "actualizado": "2026-08-07T13:40:48+00:00"
-  },
-  {
-   "id": "34153",
-   "fecha": "2026-08-07T10:04:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34153",
-   "via": "DeItaone",
-   "original": "🇺🇸 JULY JOBS REPORT: ALL EYES ON FRIDAY The July Nonfarm Payrolls report is due Friday at 8:30 AM ET. Prediction Markets • Kalshi: +72K Bank Forecasts • Highest: Citigroup, Santander +115K • Lowest: Deutsche Bank +65K • Median: +80K WSJ Consensus • Payrolls: +83K (vs. +57K prior) • Unemployment: 4.2% • Avg. Hourly Earnings: +0.3% M/M, +3.5% Y/Y https://t.co/OfZHvZl7Ng",
-   "titulo": "Reporte de empleos de julio en EE.UU.: expectativas de +83K y desempleo al 4,2%",
-   "resumen": "El informe de nóminas no agrícolas de julio se publica el viernes a las 8:30 AM ET. Las predicciones oscilan entre +65K (Deutsche Bank) y +115K (Citigroup/Santander), con consenso del WSJ en +83K versus +57K en junio. Se espera desempleo estable en 4,2% y salarios +0,3% mensual (+3,5% anual). Este dato es crítico para orientar la política monetaria de la Fed.",
-   "analisis": {
-    "porque": "Los datos de empleo son el segundo pilar de la Fed para decisiones de tasas. Un resultado débil (<70K) podría acelerar recortes de tasas; uno fuerte (>100K) presionaría al alza. Impacta directamente bonos, dólar y acciones.",
-    "queOcurrio": "Se ha publicado la preview oficial del reporte con múltiples pronósticos bancarios y de mercados de predicción (Kalshi). El titular no incluye el dato real aún; es una anticipación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/WSJ Consensus (agregación oficial)"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "DXY",
-    "NASDAQ",
-    "S&P500",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista si empleos sorprenden al alza"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista si sorpresa positiva en nóminas"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral-bajista si datos fuertes elevan tasas"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empleo|Datos Económicos",
-   "keywords": [
-    "nóminas-julio",
-    "desempleo",
-    "fed",
-    "mercados-trabajo",
-    "bonos-usa"
-   ],
-   "tgText": "🇺🇸 MAÑANA: Reporte empleos julio. Consenso +83K vs +57K anterior. Desempleo 4,2%, salarios +0,3% MoM. Dato clave para Fed. Publicación viernes 8:30 AM ET.",
-   "xText": "📊 VIERNES 8:30 AM ET: Nóminas julio EE.UU. El mercado espera +83K (vs +57K). Desempleo 4,2%. Dato crítico para próxima decisión de tasas de la Fed. #Markets",
-   "discordText": "**Reporte Empleos JULIO - EE.UU.**\n• Fecha: Viernes 8:30 AM ET\n• Consenso: +83K nóminas (anterior +57K)\n• Rango bancario: +65K a +115K\n• Desempleo esperado: 4,2%\n• Salarios: +0,3% MoM, +3,5% YoY\n→ Impacto alto en tasas Fed, bonos, dólar",
-   "pushText": "Empleos julio EE.UU. mañana: mercado espera +83K; dato clave para Fed",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Bonos USA (yields): sorpresa al alza en nóminas → yields suben (precios caen); sorpresa a la baja → yields bajan.",
-    "despues": "DXY (dólar) sigue a yields; NASDAQ sensible a cambios en expectativa de tasas; S&P500 menos volátil pero afectado por sector financiero.",
-    "escenarios": "Traders monitorean desviación vs consenso (+/-20K margen típico de reacción fuerte). Especial atención a salarios: aceleración sugiere inflación persistente; desaceleración facilita Fed pivote a recortes.",
-    "riesgos": "Revisión de junio podría restar importancia; dato podría ser 'no-verificable' hasta publicación oficial; volatilidad extrema esperada en primeros minutos post-anuncio."
-   },
-   "macro": {
-    "dolar": "alcista si nóminas sorprenden al alza",
-    "bonos": "bajista si datos fuertes (yields suben)",
-    "nasdaq": "bajista si sorpresa positiva eleva tasas esperadas",
-    "sp500": "neutral-bajista si empleos fuertes contradicen expectations de recortes",
-    "petroleo": "neutral (datos empleo no mueven crudo directamente)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-07T12:35:25+00:00",
-     "id": "34171",
-     "texto": "El mercado laboral estadounidense sorprendió negativamente con una pérdida de 23.000 puestos en julio, muy por debajo del pronóstico de +83.000. Junio fue revisado a la baja a +20.000 empleos. La tasa de desempleo cayó inesperadamente a 4,1% desde 4,2%. El dato débil intensifica debates sobre la política de la Reserva Federal ante inflación persistente.",
-     "tgUrl": "https://t.me/walterbloomberg/34171"
-    },
-    {
-     "fecha": "2026-08-07T11:06:17+00:00",
-     "id": "34160",
-     "texto": "Traders de bonos se preparan para el reporte de empleos de viernes con mercados preciosando más de 50% de probabilidad de suba de tasas de la Fed en septiembre. Economistas esperan adición de ~80.000 empleos en julio. Datos fuertes, especialmente presión salarial, podrían elevar expectativas de hike. Reporte débil las reduciría. Datos inflacionarios de la próxima semana también serán críticos.",
-     "tgUrl": "https://t.me/walterbloomberg/34160"
-    }
-   ],
-   "actualizado": "2026-08-07T12:35:25+00:00"
   },
   {
    "id": "34170",
@@ -7523,195 +7727,6 @@
     "nasdaq": "bajista probable",
     "bonos-corporativos": "bajista probable",
     "tasas": "alcista probable"
-   },
-   "updates": []
-  },
-  {
-   "id": "33981",
-   "fecha": "2026-08-04T14:29:02+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33981",
-   "via": "DeItaone",
-   "original": "MORGAN STANLEY: OPEN AI MODELS EXPAND THE MARKET Morgan Stanley says the rise of open-weight AI models such as Kimi K3, Qwen, and Llama should accelerate AI adoption by lowering costs, not hurt the industry's leaders. The bank argues cheaper AI will drive broader enterprise usage, citing the \"Jevons Paradox.\" Morgan Stanley expects open and closed models to coexist, with 63% of enterprises already",
-   "titulo": "Morgan Stanley: modelos IA abiertos aceleran adopción; Nvidia gana en ambos escenarios",
-   "resumen": "Morgan Stanley sostiene que la proliferación de modelos IA de pesos abiertos (Kimi K3, Qwen, Llama) acelerará adopción empresarial al reducir costos, sin perjudicar líderes del sector. El banco cita la 'Paradoja de Jevons' (demanda se expande con caída de precios) y observa que 63% de empresas ya usan modelos abiertos y cerrados. Concluye: Nvidia permanece como mayor ganador regardless de arquitectura prevalente.",
-   "analisis": {
-    "porque": "Resolución de un riesgo clave del mercado IA: narrativa de que modelos baratos (open-source) canibalizarían márgenes de líderes como Nvidia, OpenAI, Anthropic.",
-    "queOcurrio": "Morgan Stanley publica análisis tranquilizador sobre coexistencia de modelos IA abiertos y cerrados, con Nvidia como ganador inevitable en infraestructura.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg / Morgan Stanley"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NVIDIA",
-    "Magnificent Seven",
-    "NASDAQ",
-    "Semis"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVIDIA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Semis",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "IA",
-    "open-source",
-    "modelos-abiertos",
-    "NVIDIA",
-    "infraestructura"
-   ],
-   "tgText": "💡 Morgan Stanley: modelos IA abiertos aceleran adopción sin canibalizar líderes. 63% empresas usan ambos tipos. Nvidia gana en infraestructura regardless arquitectura.",
-   "xText": "Morgan Stanley tranquiliza: modelos IA abiertos (Llama, Qwen, Kimi K3) no amenazan líderes, aceleran adopción. Nvidia ganador en infraestructura sea cual sea la arquitectura.",
-   "discordText": "**IA Abierta No Es Amenaza – Morgan Stanley**\n• Modelos abiertos aceleran adopción\n• 63% empresas usan modelos abiertos + cerrados\n• Nvidia ganador inevitable en infraestructura\n• Paradoja de Jevons: demanda se expande",
-   "pushText": "Morgan Stanley: IA abierta acelera adopción. Nvidia gana en infraestructura.",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "NVIDIA (alcista por confirmación de posición estructural en capex IA), Magnificent Seven (alcista por reducción de riesgo de cannibalización).",
-    "despues": "Semis y fabless se estabilizan; Open-source AI companies (Meta) podrían también beneficiarse indirectamente.",
-    "escenarios": "Traders vigilan si análisis de Morgan Stanley es adoptado por otros desks institucionales, influyendo en asignación de capital hacia IA hard-ware vs software.",
-    "riesgos": "Análisis es bullish-case de Morgan Stanley; desacuerdos de otros bancos u evidencia de presión real en márgenes podrían contradecirlo."
-   },
-   "macro": {
-    "nasdaq": "alcista probable",
-    "semis": "alcista probable"
-   },
-   "updates": []
-  },
-  {
-   "id": "33976",
-   "fecha": "2026-08-04T14:00:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33976",
-   "via": "DeItaone",
-   "original": "U.S. JOLTS JOB OPENINGS 7.359 MLN IN JUNE (CONSENSUS 7.400 MLN)",
-   "titulo": "JOLTS junio: ofertas laborales caen a 7,359M vs consenso 7,400M; mercado más tibio",
-   "resumen": "Ofertas de empleo (JOLTS) en EE.UU. para junio llegaron a 7,359 millones, por debajo del consenso de 7,400 millones. Dato sugiere enfriamiento moderado del mercado laboral estadounidense, consistente con la normalización post-inflación.",
-   "analisis": {
-    "porque": "Dato laboral oficial influye directamente en decisiones de política monetaria de la Fed; JOLTS por debajo de consenso señala desaceleración del mercado de trabajo.",
-    "queOcurrio": "JOLTS junio 7,359M vs consenso 7,400M; variación menor pero en dirección de enfriamiento.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg / BLS"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bonos USA",
-    "S&P500",
-    "NASDAQ",
-    "USD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "USD",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empleo",
-   "keywords": [
-    "JOLTS",
-    "empleo-USA",
-    "mercado-laboral",
-    "ofertas-trabajo"
-   ],
-   "tgText": "📊 JOLTS junio: 7,359M ofertas (vs consenso 7,400M). Leve enfriamiento del mercado laboral USA; impacto neutral para tasas Fed.",
-   "xText": "JOLTS junio 7,359M vs consenso 7,400M. Oferta laboral ligeramente por debajo pero sin sorpresa relevante. Señal de normalización moderada.",
-   "discordText": "**JOLTS Junio EE.UU.**\n• 7,359M ofertas vs 7,400M consenso\n• Leve enfriamiento laboral\n• Dato neutral para política Fed",
-   "pushText": "JOLTS junio 7,359M vs 7,400M. Enfriamiento moderado.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bonos de largo plazo (posible soporte alcista por enfriamiento laboral); USD pierde fuerza ligeramente.",
-    "despues": "S&P 500 y NASDAQ reaccionan según contexto macro general (Fed policy expectations); si se confirma patrón de debilidad laboral, buscarán más señales.",
-    "escenarios": "Traders monitorean si JOLTS continúa cayendo en julio-agosto (señal de debilitamiento real) o estabiliza (solo normalización post-inflación).",
-    "riesgos": "Dato es 'normal' dentro del rango esperado; no contiene sorpresa material. Requiere contexto de otros indicadores laborales (BLS, desempleo)."
-   },
-   "macro": {
-    "bonos": "alcista probable",
-    "dolar": "bajista probable",
-    "sp500": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33972",
-   "fecha": "2026-08-04T13:31:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33972",
-   "via": "DeItaone",
-   "original": "S&P 500 BREAKS OUT, RECORD HIGH IN SIGHT The S&P 500 has regained momentum, closing just 0.12% below its record high after a nearly 4% three-day rally. Mega-cap stocks are leading the advance, with the Magnificent Seven posting their strongest three-day gain since May 2025. Technically, the index has broken above a multi-month consolidation pattern, signaling buyers are back in control. A new reco",
-   "titulo": "S&P 500 rompe consolidación; récord histórico en mira con soporte en 7.560",
-   "resumen": "El S&P 500 cerró a solo 0.12% del máximo histórico tras recuperación de casi 4% en tres días. Los mega-caps y el grupo Magnificent Seven lideran, con la ruptura técnica de un patrón consolidación multimensual sugiriendo control de compradores. Rango objetivo 7.900–8.000 puntos si se confirma el nuevo máximo.",
-   "analisis": {
-    "porque": "Movimiento técnico alcista puro en el índice accionario más vigilado; confirma rotación hacia riesgo tras volatilidad previa y puede activar compras programadas.",
-    "queOcurrio": "S&P 500 rompe consolidación multimensual, cierra 0.12% bajo récord histórico, mega-caps y Magnificent Seven post mejor racha 3-día desde mayo 2025.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Magnificent Seven",
-    "Mega-caps"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "S&P500",
-    "récord-histórico",
-    "technical-breakout",
-    "Magnificent-Seven",
-    "mega-caps"
-   ],
-   "tgText": "📈 S&P 500 rompe consolidación, 0.12% bajo máximo histórico. Mega-caps lideran con mejor racha 3-día desde mayo 2025. Soporte: 7.560; objetivo: 7.900–8.000.",
-   "xText": "S&P 500 rompe nivel técnico, a 0.12% del récord histórico tras rally de 4% en 3 días. Magnificent Seven post mejor racha desde mayo 2025. Objetivo: 7.900–8.000.",
-   "discordText": "**S&P 500 rompe consolidación técnica**\n• Cierra 0.12% bajo máximo histórico\n• Mega-caps y Magnificent Seven lideran\n• Mejor racha 3-día desde mayo 2025\n• Soporte: 7.560 | Objetivo: 7.900–8.000",
-   "pushText": "S&P 500 rompe técnico, 0.12% del máximo histórico. Objetivo 7.900–8.000.",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "S&P 500 y NASDAQ, por confirmación de ruptura técnica y momentum de mega-caps; probable activación de stop-loss reversal y compras programadas.",
-    "despues": "Bonos de largo plazo (venta por expectativa de tasa sostenida), dólar (fortalecimiento por apetito riesgo USA), oro (debilidad por entorno risk-on).",
-    "escenarios": "Traders vigilan cierre diario confirmando ruptura, volumen en el movimiento hacia 7.900, y si la reciente caída de petróleo libera capital para renta variable.",
-    "riesgos": "Que el titular no especifique volumen accionario; caída abrupta de crédito o datos de empleo débiles podrían revertir el momentum rápidamente."
-   },
-   "macro": {
-    "sp500": "alcista confirmado",
-    "nasdaq": "alcista confirmado",
-    "dolar": "alcista probable",
-    "bonos": "bajista probable",
-    "oro": "bajista probable"
    },
    "updates": []
   }
