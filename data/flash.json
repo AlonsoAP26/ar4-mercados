@@ -1,7 +1,204 @@
 {
- "lastId": 34160,
- "actualizado": "2026-08-07T11:09:14.074Z",
+ "lastId": 34164,
+ "actualizado": "2026-08-07T11:55:34.883Z",
  "items": [
+  {
+   "id": "34155",
+   "fecha": "2026-08-07T10:29:09+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34155",
+   "via": "DeItaone",
+   "original": "GLOBAL BOND INFLOWS SURGE AS EQUITY DEMAND COOLS Global bond funds attracted $23 billion this week, driven by strong demand for US high-yield debt. US bond inflows jumped to $17.8 billion from $7.9 billion last week, while Canadian and eurozone government bonds also saw solid demand. Meanwhile, global equity inflows slowed sharply to $32.9 billion, down from $63.7 billion the previous week.",
+   "titulo": "Flujos hacia bonos globales aceleran mientras demanda de acciones se enfría",
+   "resumen": "Fondos de bonos globales atrajeron $23 mil millones esta semana, impulsados por demanda fuerte de deuda de alto rendimiento estadounidense. Entradas de bonos estadounidenses saltaron a $17,8 mil millones desde $7,9 mil millones la semana previa. Simultáneamente, entradas de acciones globales se desaceleraron nítidamente a $32,9 mil millones desde $63,7 mil millones, evidenciando rotación defensiva en mercados.",
+   "analisis": {
+    "porque": "Señaliza cambio estructural en asignación de portafolios: los gestores reducen riesgo de equities hacia renta fija, reflejo de preocupaciones inflacionarias, expectativas de tipos más altos, o volatilidad electoral/geopolítica. Afecta valuaciones de acciones y presión alcista en rendimientos de bonos.",
+    "queOcurrio": "Confirmado: flujos de activos medidos por gestoras institucionales muestran rotación defensiva. Bonos de alto rendimiento lideron demanda, especialmente en EE.UU., mientras equities pierden atracción.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "Acciones Globales"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Equities Globales",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "flujos-bonos",
+    "rotacion-defensiva",
+    "deuda-alto-rendimiento",
+    "renta-fija",
+    "equities"
+   ],
+   "tgText": "📊 FLUJOS: Bonos atrajeron $23B esta semana vs equities en retroceso. Entradas de renta fija en EE.UU. +$10B. Rotación defensiva clara en mercados globales.",
+   "xText": "📊 Rotación defensiva: bonos globales atrajeron $23B esta semana mientras equities cayeron a $32,9B (desde $63,7B). Flujos de alto rendimiento USA liderean demanda.",
+   "discordText": "**FLUJOS INSTITUCIONALES**\n• Bonos globales: +$23B (fuerte demanda de HY USD)\n• Equities globales: -$30,8B (retroceso vs semana previa)\n• Rotación clara hacia defensivo\n→ Vigilan: rendimientos USA, spreads de crédito",
+   "pushText": "Rotación defensiva: bonos atrajeron $23B, equities en retroceso",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Rendimientos USA reaccionan primero (presión alcista si se confirma patrón); bonos corporativos de alto rendimiento también se ven beneficiados",
+    "despues": "S&P 500 y NASDAQ podrían sentir presión vendedora si rotación persiste; dólar podría fortalecerse en contexto de repricing de tipos",
+    "escenarios": "Traders vigilan si esta es rotación transitoria por volatilidad de corto plazo o reflejo de recalibración de duración. Esperan reporte de empleo USA (viernes) para confirmar necesidad de defensivo.",
+    "riesgos": "El titular no especifica si esta tendencia incluye mercados emergentes o está concentrada en G10. Volatilidad geopolítica (Ormuz, Taiwán) podría revertir flujos hacia equities cíclicos."
+   },
+   "macro": {
+    "dolar": "sesgo alcista (flujos de seguridad)",
+    "oro": "neutral",
+    "nasdaq": "sesgo bajista (menos demanda equities)",
+    "dow": "sesgo bajista",
+    "sp500": "sesgo bajista",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "sesgo alcista",
+    "petroleo": "neutral"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-07T11:49:18+00:00",
+     "id": "34164",
+     "texto": "Barclays advierte que la estrategia \"Sell America\" resurge en dólar y bonos estadounidenses, impulsada por incertidumbre sobre política de la Fed, riesgo de desmantelamiento de carry trades en yen y preocupaciones sobre gasto en IA. Pese a nueva máximos en acciones por sólidas ganancias corporativas, Barclays alerta que data caliente de empleo o inflación podría avivar volatilidad y concerns sobre Fed.",
+     "tgUrl": "https://t.me/walterbloomberg/34164"
+    }
+   ],
+   "actualizado": "2026-08-07T11:49:18+00:00"
+  },
+  {
+   "id": "34163",
+   "fecha": "2026-08-07T11:20:32+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34163",
+   "via": "DeItaone",
+   "original": "SPACEX UPGRADED TO BUY — $160 TARGET Argus upgraded SpaceX ($SPCX ) from Hold to Buy with a $160 price target, citing strong growth and operational performance. Revenue reached $7.8 billion, up 92%, while SpaceX signaled a year-end 2026 revenue run rate approaching $100 billion. Despite higher AI infrastructure spending and expected share-price volatility, Argus believes SpaceX’s rapid growth and ",
+   "titulo": "Argus upgradea SpaceX a compra con target $160; crecimiento 92%",
+   "resumen": "Argus Research upgrade SpaceX de Hold a Buy con precio objetivo de $160. La casa de análisis destaca ingresos de $7.8 mil millones (crecimiento 92%) y proyección de tasa de ingresos anualizada de casi $100 mil millones para fin 2026. A pesar de volatilidad esperada y mayor gasto en infraestructura IA, estima que crecimiento acelerado y perspectivas de largo plazo superan riesgos.",
+   "analisis": {
+    "porque": "SpaceX es empresa privada pero impacta sentimiento sobre tech growth, IA, y gasto en infraestructura. Upgrade institucional refleja confianza en valuación y momentum de crecimiento.",
+    "queOcurrio": "Casa de análisis Argus eleva calificación de SpaceX tras reportar crecimiento de ingresos del 92% y proyectar run-rate de ~$100B para fin 2026.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Tecnología",
+    "NASDAQ",
+    "SpaceX"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tecnología",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "crecimiento",
+    "IA",
+    "infraestructura",
+    "upgrade",
+    "Argus"
+   ],
+   "tgText": "Argus upgradea SpaceX a BUY con target $160. Ingresos crecen 92% a $7.8B; proyecta run-rate de $100B para fin 2026. Infraestructura IA impulsa expansión.",
+   "xText": "🚀 Argus upgradea SpaceX: Hold → Buy, target $160. Ingresos +92% ($7.8B), run-rate $100B fin 2026. Crecimiento IA compensa volatilidad esperada. #Tech #Growth",
+   "discordText": "**Argus Research**: SpaceX upgrade Hold → Buy, target $160\n• Ingresos: $7.8B (+92% YoY)\n• Proyección: run-rate ~$100B fin 2026\n• Catalizador: expansión infraestructura IA\n• Riesgos: volatilidad de precio esperada",
+   "pushText": "Argus upgradea SpaceX a compra con target $160; crecimiento 92%",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Sentiment sobre growth tech y IA sube; NASDAQ índices tech reagrupan con optimismo de crecimiento",
+    "despues": "Inversores revisan estimados de capex en sector tech; bonos corporativos de growth podrían presionarse levemente por múltiplos",
+    "escenarios": "Traders vigilan si crecimiento sostenido de SpaceX se replica en otros tech. Riesgo: si Fed torna más hawkish, múltiplos de growth se contraen rápidamente.",
+    "riesgos": "SpaceX es privada; valuación $160 es estimate; volatilidad de carry trades en IA podría revertir sentiment de corto plazo"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "34162",
+   "fecha": "2026-08-07T11:19:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34162",
+   "via": "DeItaone",
+   "original": "GOLDMAN: YEN INTERVENTION REINFORCES DOLLAR DOMINANCE Goldman Sachs says the latest US-Japan intervention to support the yen strengthens, rather than weakens, the dollar’s status as the world’s leading reserve currency. Washington’s intervention in EUR/JPY and Japan’s potential access to the Fed’s FIMA dollar facility highlight the depth and liquidity of US financial markets. Goldman argues no com",
+   "titulo": "Goldman: intervención en yen refuerza dominio del dólar como reserva",
+   "resumen": "Goldman Sachs analiza que la intervención conjunta EE.UU.-Japón en el yen y el acceso potencial a la línea FIMA de la Fed no debilitan sino refuerzan el estatus del dólar como moneda de reserva global. Los analistas sostienen que ningún activo competidor iguala la liquidez, infraestructura y utilidad del dólar en períodos de estrés financiero.",
+   "analisis": {
+    "porque": "Refuerza la narrativa de fortaleza del dólar en medio de volatilidad de divisas y carry trades. Impacta expectativas sobre el EUR/USD y estructura de mercados de divisas.",
+    "queOcurrio": "Goldman Sachs publica análisis institucional sobre las implicaciones de la intervención coordinada en el yen, concluyendo que beneficia la posición del dólar.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "EURUSD",
+    "USDJPY"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "EURUSD",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "dólar",
+    "yen",
+    "intervención",
+    "reserva",
+    "Goldman Sachs",
+    "FIMA"
+   ],
+   "tgText": "Goldman: intervención yen refuerza dólar como reserva global. Ningún activo competidor iguala liquidez e infraestructura USD en estrés financiero.",
+   "xText": "Goldman: intervención EE.UU.-Japón en yen refuerza (no debilita) el dólar como moneda de reserva. Liquidez USD sigue sin rival. #DXY #USDJPY",
+   "discordText": "**Goldman Sachs**: Intervención coordinada en yen refuerza estatus del dólar como moneda de reserva global\n• Acceso a línea FIMA de Fed destaca profundidad mercados USA\n• Ningún activo competidor iguala liquidez y utilidad del USD",
+   "pushText": "Goldman: intervención yen refuerza dominio del dólar como reserva global",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "DXY (índice dólar) sube por confirmación de fortaleza estructural; EURUSD baja",
+    "despues": "Pares emergentes contra USD podrían debilitarse; bonos USA podrían beneficiarse por demanda de reserva",
+    "escenarios": "Traders vigilarán si nuevo dato inflacionario o data de empleo cambia narrativa de fortaleza USD. Riesgo: salida de carry trades podría invertir brevemente la dinámica.",
+    "riesgos": "El análisis es interpretativo; nuevos shocks de volatilidad podrían reabrir debates sobre estabilidad del sistema de reservas"
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "neutral",
+    "bonos": "alcista"
+   },
+   "updates": []
+  },
   {
    "id": "34153",
    "fecha": "2026-08-07T10:04:05+00:00",
@@ -203,81 +400,6 @@
     "riesgos": "El titular especifica que Kimi K3 'no hackeó sistemas externos', lo que reduce gravedad real. Investigadores USA podrían tener sesgo anti-China que amplifica narrativa. Contexto de evaluación/motivaciones no está claro."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "34155",
-   "fecha": "2026-08-07T10:29:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34155",
-   "via": "DeItaone",
-   "original": "GLOBAL BOND INFLOWS SURGE AS EQUITY DEMAND COOLS Global bond funds attracted $23 billion this week, driven by strong demand for US high-yield debt. US bond inflows jumped to $17.8 billion from $7.9 billion last week, while Canadian and eurozone government bonds also saw solid demand. Meanwhile, global equity inflows slowed sharply to $32.9 billion, down from $63.7 billion the previous week.",
-   "titulo": "Flujos hacia bonos globales aceleran mientras demanda de acciones se enfría",
-   "resumen": "Fondos de bonos globales atrajeron $23 mil millones esta semana, impulsados por demanda fuerte de deuda de alto rendimiento estadounidense. Entradas de bonos estadounidenses saltaron a $17,8 mil millones desde $7,9 mil millones la semana previa. Simultáneamente, entradas de acciones globales se desaceleraron nítidamente a $32,9 mil millones desde $63,7 mil millones, evidenciando rotación defensiva en mercados.",
-   "analisis": {
-    "porque": "Señaliza cambio estructural en asignación de portafolios: los gestores reducen riesgo de equities hacia renta fija, reflejo de preocupaciones inflacionarias, expectativas de tipos más altos, o volatilidad electoral/geopolítica. Afecta valuaciones de acciones y presión alcista en rendimientos de bonos.",
-    "queOcurrio": "Confirmado: flujos de activos medidos por gestoras institucionales muestran rotación defensiva. Bonos de alto rendimiento lideron demanda, especialmente en EE.UU., mientras equities pierden atracción.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "Acciones Globales"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Equities Globales",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "flujos-bonos",
-    "rotacion-defensiva",
-    "deuda-alto-rendimiento",
-    "renta-fija",
-    "equities"
-   ],
-   "tgText": "📊 FLUJOS: Bonos atrajeron $23B esta semana vs equities en retroceso. Entradas de renta fija en EE.UU. +$10B. Rotación defensiva clara en mercados globales.",
-   "xText": "📊 Rotación defensiva: bonos globales atrajeron $23B esta semana mientras equities cayeron a $32,9B (desde $63,7B). Flujos de alto rendimiento USA liderean demanda.",
-   "discordText": "**FLUJOS INSTITUCIONALES**\n• Bonos globales: +$23B (fuerte demanda de HY USD)\n• Equities globales: -$30,8B (retroceso vs semana previa)\n• Rotación clara hacia defensivo\n→ Vigilan: rendimientos USA, spreads de crédito",
-   "pushText": "Rotación defensiva: bonos atrajeron $23B, equities en retroceso",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Rendimientos USA reaccionan primero (presión alcista si se confirma patrón); bonos corporativos de alto rendimiento también se ven beneficiados",
-    "despues": "S&P 500 y NASDAQ podrían sentir presión vendedora si rotación persiste; dólar podría fortalecerse en contexto de repricing de tipos",
-    "escenarios": "Traders vigilan si esta es rotación transitoria por volatilidad de corto plazo o reflejo de recalibración de duración. Esperan reporte de empleo USA (viernes) para confirmar necesidad de defensivo.",
-    "riesgos": "El titular no especifica si esta tendencia incluye mercados emergentes o está concentrada en G10. Volatilidad geopolítica (Ormuz, Taiwán) podría revertir flujos hacia equities cíclicos."
-   },
-   "macro": {
-    "dolar": "sesgo alcista (flujos de seguridad)",
-    "oro": "neutral",
-    "nasdaq": "sesgo bajista (menos demanda equities)",
-    "dow": "sesgo bajista",
-    "sp500": "sesgo bajista",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "sesgo alcista",
-    "petroleo": "neutral"
-   },
    "updates": []
   },
   {
@@ -7468,124 +7590,6 @@
     "riesgos": "Change in leadership podría interpretarse como debilidad operativa. Miss en ventas podría ser señal más amplia de crash de consumidor."
    },
    "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33914",
-   "fecha": "2026-08-04T09:07:23+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33914",
-   "via": "DeItaone",
-   "original": "DRY BULK SHIP HIT BY PROJECTILE NEAR STRAIT OF HORMUZ - MARITIME SECURITY SOURCES CREW MEMBERS ABANDONED DRY BULK SHIP HIT NEAR HORMUZ, ONE SEAFARER MISSING – MARITIME SECURITY SOURCES",
-   "titulo": "Barco de carga impactado por proyectil cerca del Estrecho de Ormuz; marinero desaparecido",
-   "resumen": "Un barco de carga seca fue impactado por un proyectil cerca del Estrecho de Ormuz, con la tripulación abandonando la nave. Fuentes de seguridad marítima reportan al menos un marinero desaparecido. El incidente subraya los riesgos crecientes en una de las rutas comerciales más críticas para el petróleo global.",
-   "analisis": {
-    "porque": "Ataques contra buques en Ormuz elevan prima de riesgo de seguros y costos de flete; impacto directo en precios de energía.",
-    "queOcurrio": "Barco carguero golpeado por proyectil, marinero desaparecido, tripulación evacuada.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Fuentes de Seguridad Marítima (Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Transporte Marítimo",
-    "Energía",
-    "Seguros"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Fletes",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Ormuz",
-    "ataque marítimo",
-    "buque carguero",
-    "seguridad",
-    "logística",
-    "petróleo"
-   ],
-   "tgText": "⚠️ Barco de carga atacado en Ormuz; marinero desaparecido. Escalada de riesgos marítimos en ruta crítica de petróleo.",
-   "xText": "⚠️ ALERTA: Barco carguero impactado por proyectil en Ormuz, marinero desaparecido. Riesgo de cierre de ruta crítica global #MarineInsecurity #Geopolitics",
-   "discordText": "**Ataque a buque en Ormuz**\n• Barco de carga seca impactado\n• Marinero desaparecido\n• Tripulación evacuada\n• Ruta crítica bajo estrés",
-   "pushText": "Alerta: barco atacado en Ormuz, marinero desaparecido",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo crudo salta; seguros marítimos y fletes de bunker suben inmediatamente.",
-    "despues": "Índices de transporte marítimo, compañías navieras, energía global.",
-    "escenarios": "Traders monitorean: 1) si hay más ataques, 2) respuesta militar, 3) cierre de Ormuz (ya en 10% según Aramco), 4) compras de crudo defensivas.",
-    "riesgos": "Escalada rápida podría paralizar ruta; petróleo podría romper $90+ en minutos. Riesgo de sobre-reacción vs confirmación de causas."
-   },
-   "macro": {
-    "petroleo": "alcista inmediato",
-    "bonos": "bajista",
-    "dolar": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33913",
-   "fecha": "2026-08-04T09:03:59+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33913",
-   "via": "DeItaone",
-   "original": "🇯🇵 JAPAN MAY NOT HAVE INTERVENED IN FX MARKET ON MONDAY, BANK OF JAPAN DATA SUGGESTS",
-   "titulo": "Banco de Japón no intervino en mercado FX el lunes, sugieren datos",
-   "resumen": "Según datos del Banco de Japón, la institución no parece haber intervenido en el mercado de divisas el lunes. El titular no especifica contexto, pero en contexto reciente de conversaciones sobre fortalecer el yen (plan Bessent), esto sugiere que BoJ mantuvo postura prudente o aguardó señales adicionales antes de actuar.",
-   "analisis": {
-    "porque": "Intervenciones de BoJ impactan USD/JPY, carry trades, y apetito por riesgo global. Ausencia de acción es también información de mercado.",
-    "queOcurrio": "BoJ no intervino en FX el lunes, según registros.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "USD/JPY",
-    "Yen",
-    "Carry Trades",
-    "NIKKEI"
-   ],
-   "sesgos": [
-    {
-     "activo": "USD/JPY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Yen",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "BoJ",
-    "Japón",
-    "intervención FX",
-    "yen",
-    "USD/JPY"
-   ],
-   "tgText": "🇯🇵 BoJ no intervino en FX el lunes. Yen bajo presión; USD/JPY sin soporte oficial.",
-   "xText": "🇯🇵 Datos BoJ: sin intervención en FX el lunes. USD/JPY mantiene presión alcista en contexto de carry trades.",
-   "discordText": "**BoJ aguarda en mercado FX**\n• Sin intervención el lunes\n• Yen bajo presión\n• USD/JPY sin soporte oficial\n• Vigilancia de carry trades",
-   "pushText": "BoJ: sin intervención FX el lunes",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "USD/JPY sube si BoJ se abstiene; operadores de carry trades mantienen posiciones cortas de yen.",
-    "despues": "NIKKEI, acciones cíclicas, bonos japoneses.",
-    "escenarios": "Traders monitorean: 1) próximas señales de BoJ, 2) pronunciamientos sobre yen, 3) si hay coordinación con Fed/Tesoro USA.",
-    "riesgos": "Ausencia de intervención es pasiva; riesgo de sorpresa si BoJ actúa sin avisar en próximos días. Carry trade puede desmoronarse rápidamente."
-   },
-   "macro": {
-    "dolar": "alcista vs yen",
-    "jpy": "bajista"
-   },
    "updates": []
   }
  ],
