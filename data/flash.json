@@ -1,7 +1,238 @@
 {
  "lastId": 34139,
- "actualizado": "2026-08-07T00:34:19.879Z",
+ "actualizado": "2026-08-07T01:41:23.522Z",
  "items": [
+  {
+   "id": 993298022,
+   "fecha": "2026-08-07T01:28:57.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/meta-to-pay-into-567-million-fund-after-child-harms-case-new-mexico.html",
+   "via": "CNBC",
+   "original": "Meta ordered to pay $567 million into abatement fund as remedy to child harms case in New Mexico",
+   "titulo": "Meta ordenada pagar $567M en fondo de remediación por daños a menores",
+   "resumen": "Meta fue ordenada por corte en Nuevo México a depositar $567 millones en fondo de abatement como remedio en caso de daños causados a menores en sus plataformas. La sentencia refleja creciente escrutinio regulatorio sobre responsabilidad de redes sociales respecto a seguridad infantil. El monto es significativo aunque menor que demandas pendientes en otras jurisdicciones.",
+   "analisis": {
+    "porque": "Sentencias regulatorias de este monto impactan flujo de caja libre y márgenes operativos de Meta. Precedente en Nuevo México puede catalizar litigios similares en otros estados y jurisdicciones.",
+    "queOcurrio": "Corte de Nuevo México ordenó a Meta depositar $567 millones en fondo de remediación por daños alegados a menores en sus plataformas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "META",
+    "NASDAQ",
+    "Litigios Tech"
+   ],
+   "sesgos": [
+    {
+     "activo": "META",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "Meta",
+    "litigio",
+    "menores",
+    "regulación",
+    "seguridad-infantil"
+   ],
+   "tgText": "⚖️ META PAGA $567M: Corte de Nuevo México ordena depósito en fondo de remediación por daños a menores. Precedente para litigios similares.",
+   "xText": "Meta pagará $567M en Nuevo México por daños a menores. Sentencia abre precedente para litigios regulatorios similares en otros estados.",
+   "discordText": "**META: SENTENCIA REGULATORIA**\n• Corte Nuevo México: $567M para fondo remediación\n• Daños alegados a menores\n• Precedente para litigios en otros estados",
+   "pushText": "Meta paga $567M por caso de menores",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "META puede caer levemente en sesión siguiente; es costo previsible más que sorpresa de litigio.",
+    "despues": "Sectores tech sociales (SNAP, PINS, GOOGL) monitorean riesgo regulatorio similar.",
+    "escenarios": "Traders vigilarán si Meta apela; si sentencia es precedente para demandas federales o en CA, TX, NY. Impacto a largo plazo en política de menores de plataforma.",
+    "riesgos": "Monto es material pero absorbible para Meta (cap. mercado ~$1.5T). Riesgo real es casoísmo regulatorio multi-estado que eleve costo de litigio."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 958421872,
+   "fecha": "2026-08-07T01:00:40.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/oil-rises-supply-fears-iran-draft-plan-strait-hormuz.html",
+   "via": "CNBC",
+   "original": "Oil rises amid supply disruption fears following Iran&apos;s restrictive draft plan for the Strait of Hormuz",
+   "titulo": "Crudo sube por temores de disrupción en Estrecho de Ormuz tras plan de Irán",
+   "resumen": "El precio del petróleo registró alzas en sesión asiática ante preocupaciones sobre potencial disrupción del suministro. Irán habría presentado un plan restrictivo para el Estrecho de Ormuz, clave geopolítica que canaliza aproximadamente el 21% del crudo global. El movimiento refleja prima de riesgo en energía por tensiones regionales.",
+   "analisis": {
+    "porque": "El Estrecho de Ormuz es cuello de botella crítico para energía global. Cualquier restricción o amenaza afecta directamente precios de WTI/Brent y costo de producción global.",
+    "queOcurrio": "Irán presentó un plan descrito como 'restrictivo' para el Estrecho de Ormuz, generando temores de disrupción del flujo de petróleo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo",
+    "WTI",
+    "Brent",
+    "DXY",
+    "Inflación"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Inflación",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Ormuz",
+    "petróleo",
+    "geopolítica",
+    "suministro"
+   ],
+   "tgText": "🛢️ ALERTA GEOPOLÍTICA: Petróleo sube por plan restrictivo de Irán en Estrecho de Ormuz (21% crudo global). Prima de riesgo activada.",
+   "xText": "⚠️ Petróleo alcista: Irán presenta plan restrictivo para Estrecho de Ormuz. Amenaza a 21% del suministro global. Riesgo geopolítico activo.",
+   "discordText": "**GEOPOLÍTICA: IRÁN Y ORMUZ**\n• Petróleo sube por plan restrictivo de Irán\n• Estrecho de Ormuz: 21% del crudo global\n• Prima de riesgo de suministro activa",
+   "pushText": "Petróleo sube: Irán con plan restrictivo en Ormuz",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Futuros de WTI y Brent reaccionan inmediatamente; luego USD se fortalece por demanda de safe-haven.",
+    "despues": "Acciones energéticas (XLE, CVX, COP) y mercados emergentes suelen debilitarse; bonos de largo plazo pueden revalorizarse.",
+    "escenarios": "Traders monitoreán escalada real vs. retórica; históricamente ciertos 'planes' de Irán no se materializan. Vigilarán stocks de petróleo global y comportamiento de armadores.",
+    "riesgos": "El titular no especifica detalles del 'plan restrictivo'; podría ser amenaza sin ejecución. Reacción exagerada si mercado ya estaba tensionado."
+   },
+   "macro": {
+    "petroleo": "alcista por riesgo geopolítico",
+    "dolar": "alcista por safe-haven",
+    "bonos": "potencial fortalecimiento de rendimientos largos por inflación"
+   },
+   "updates": []
+  },
+  {
+   "id": 991535810,
+   "fecha": "2026-08-07T00:05:26.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/japan-us-yen-intervention-global-currency-markets.html",
+   "via": "CNBC",
+   "original": "A &apos;weaponized&apos; yen: How the U.S.-Japan intervention may reshape global currency markets",
+   "titulo": "Yen 'militarizado': cómo la intervención EE.UU.-Japón remodela mercados de divisas",
+   "resumen": "El análisis examina cómo la reciente intervención coordinada entre EE.UU. y Japón en mercados de divisas está redefiniendo dinámicas cambiarias globales. La caracterización del yen como 'militarizado' sugiere que las autoridades buscan evitar volatilidad extrema y movimientos especulativos. El tema refleja importancia creciente de coordinación entre bancos centrales.",
+   "analisis": {
+    "porque": "Intervenciones cambiarias coordinadas afectan flujos de capital, competitividad exportadora y cálculos de carry trade. Reshaping de FX globals impacta mercados emergentes y fondos de divisas.",
+    "queOcurrio": "EE.UU. y Japón realizaron intervención coordinada en mercados de divisas; análisis señala que esto está transformando dinámicas de mercado cambiario.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "USDJPY",
+    "DXY",
+    "JPY",
+    "Emerging Markets",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "divisas",
+    "yen",
+    "intervención",
+    "BOJ",
+    "Fed",
+    "carry-trade"
+   ],
+   "tgText": "💱 ENAMORADO DEL FLOTANTE: Intervención EE.UU.-Japón remodela dinámicas de FX. Yen 'militarizado' para frenar volatilidad y especulación.",
+   "xText": "EE.UU.-Japón intervienen en divisas: yen 'militarizado' para reshaping de mercados cambiarios globales.",
+   "discordText": "**DIVISAS: INTERVENCIÓN COORDINADA**\n• EE.UU. y Japón actúan en coordinado\n• Yen 'militarizado' contra especulación\n• Redefinición de dinámicas cambiarias globales",
+   "pushText": "Intervención USD-JPY remodela dinámicas cambiarias",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "USDJPY baja directamente; carry trades redimensionan posiciones cortas en yen.",
+    "despues": "Fondos de EM ajustan exposiciones; volatilidad en AUD, NZD, otros pares ligados a BoJ.",
+    "escenarios": "Traders vigilarán si intervención es puntual o sostenida; monitorean nivel técnico en USDJPY (140-145 histórico).",
+    "riesgos": "El titular no especifica monto ni timing de intervención; coordinar no siempre es permanente. Carry trades pueden re-armarse si diferencial de tasas se mantiene."
+   },
+   "macro": {
+    "dolar": "presión bajista por intervención",
+    "jpy": "fortalecimiento por coordinación",
+    "bonos": "reajuste por política BOJ/Fed"
+   },
+   "updates": []
+  },
+  {
+   "id": 914223963,
+   "fecha": "2026-08-06T22:01:34.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/airbnb-abnb-q2-earningsreport.html",
+   "via": "CNBC",
+   "original": "Airbnb stock soars 9% on earnings and revenue beat, strong guidance for third quarter",
+   "titulo": "Airbnb dispara 9% tras superar ganancias y proyectar sólido Q3",
+   "resumen": "Las acciones de Airbnb subieron 9% en operaciones después de horas tras reportar resultados trimestrales que superaron estimaciones de ganancias e ingresos. La compañía proporcionó guidance positivo para el tercer trimestre. El movimiento refleja confianza en la recuperación del segmento de viajes y demanda de hospedaje alternativo.",
+   "analisis": {
+    "porque": "Movimiento relevante en megacap de turismo con alta ponderación en índices. Señal de demanda del consumidor y viabilidad de modelos de plataforma en contexto macroeconómico actual.",
+    "queOcurrio": "Airbnb publicó resultados que superaron expectativas de mercado en ganancias y revenue, además de ofrecer proyecciones constructivas para Q3.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "NASDAQ",
+    "ABNB"
+   ],
+   "sesgos": [
+    {
+     "activo": "ABNB",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "earnings-beat",
+    "turismo",
+    "hospedaje",
+    "consumidor"
+   ],
+   "tgText": "📈 AIRBNB SUBE 9% EN AFTER HOURS: Supera ganancias e ingresos con proyecciones sólidas para Q3. Señal positiva de demanda de viajes.",
+   "xText": "🏨 Airbnb +9% after-hours tras earnings beat y revenue beat. Q3 guidance constructivo. Señal bullish para sector turismo.",
+   "discordText": "**AIRBNB (ABNB)** +9% después de horas\n• Superó estimaciones de ganancias e ingresos\n• Q3 guidance positivo\n• Sesgo alcista en viajes/hospedaje",
+   "pushText": "ABNB +9%: earnings beat con guidance constructivo",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "ABNB y otras acciones de viajes (EXPE, RCL) suelen reaccionar inmediatamente por rotación sectorial.",
+    "despues": "Índices como NASDAQ pueden incorporar el sesgo alcista en demanda de consumidor discrecional.",
+    "escenarios": "Traders vigilarán si el beat refleja demanda genuina o gestión de reservas; monitoreán guiding forward de ocupación y precios promedio.",
+    "riesgos": "El titular no especifica márgenes ni presión de costos; beat podría ser temporal si condiciones macroeconómicas se deterioran."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "34130",
    "fecha": "2026-08-06T18:16:03+00:00",
@@ -7305,269 +7536,9 @@
     "petroleo": "neutral"
    },
    "updates": []
-  },
-  {
-   "id": 910493406,
-   "fecha": "2026-08-03T17:28:17.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/hugging-face-china-ai-race-open-models.html",
-   "via": "CNBC",
-   "original": "Hugging Face CEO says China is winning the AI race and dominating on open models",
-   "titulo": "CEO de Hugging Face advierte: China gana carrera de IA y domina modelos abiertos",
-   "resumen": "El líder de Hugging Face señala que China está ganando la competencia en inteligencia artificial, particularmente en modelos de código abierto, desafiando la supremacía tecnológica occidental. La evaluación toca un tema crítico para geopolítica tecnológica y competencia corporativa en IA.",
-   "analisis": {
-    "porque": "Afecta narrativa de liderazgo tecnológico occidental; impacta valuaciones de empresas USA de IA, política de exportación de chips y presupuestos de defensa tecnológica.",
-    "queOcurrio": "CEO de Hugging Face declara que China está ganando en carrera de IA, dominando en modelos abiertos frente a competidores occidentales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Semiconductores",
-    "Empresas IA",
-    "Geopolítica Tecnológica"
-   ],
-   "sesgos": [
-    {
-     "activo": "Semiconductores USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Big Tech IA",
-     "sesgo": "mixto"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "IA",
-    "China",
-    "modelos-abiertos",
-    "competencia-tecnológica",
-    "geopolítica"
-   ],
-   "tgText": "⚠️ CEO Hugging Face: China gana carrera de IA y domina modelos abiertos. Impacto en competencia tecnológica y valuaciones de empresas USA.",
-   "xText": "🤖 Hugging Face CEO: China ganando en IA y dominando modelos abiertos. Reto crítico para liderazgo tecnológico occidental.",
-   "discordText": "**China avanza en IA según Hugging Face**\n• CEO: China gana carrera y domina código abierto\n• Impacto en narrativa de supremacía tecnológica\n• Afecta valuaciones de Big Tech y semis USA",
-   "pushText": "Hugging Face: China gana carrera de IA y modelos abiertos",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Semiconductores y Big Tech de IA (NVIDIA, SMCI, etc.) por riesgo a márgenes y restricciones de exportación; luego mercado amplifica si hay reacción política.",
-    "despues": "Bonos USA pueden endurecerse por inversión defensiva en defensa tecnológica; narrativa geopolítica impacta confianza en activos tech.",
-    "escenarios": "Traders vigilan si reacción política genera restricciones de exportación de chips; revisan impacto en márgenes de fabless y foundries; anticipan posible aumento de gasto en defensa tecnológica.",
-    "riesgos": "Opinión de ejecutivo, no dato verificable; no especifica métricas de comparación; China publica poco sobre desarrollo de IA, dificulta validación."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33899,
-   "fecha": "2026-08-03T17:10:18+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33899",
-   "via": "DeItaone",
-   "original": "VENEZUELA OIL EXPORTS HIT FIVE-MONTH LOW Venezuela's crude exports fell 25% in July to 856,000 bpd, the lowest level in five months. The decline was driven by weaker demand from India, where imports halved as Middle Eastern oil supplies recovered following a pause in the Iran conflict. The U.S. and India remained Venezuela's largest buyers, while China has not imported Venezuelan crude since the r",
-   "titulo": "Exportaciones de petróleo venezolano caen a mínimo de 5 meses; demanda india colapsa",
-   "resumen": "Las exportaciones de crudo venezolano cayeron 25% en julio a 856.000 bpd, el nivel más bajo en cinco meses. India redujo importaciones a la mitad tras recuperación de suministros de Oriente Medio tras pausa del conflicto con Irán. USA e India permanecen como mayores compradores; China no importa crudo venezolano desde la remoción de Nicolás Maduro.",
-   "analisis": {
-    "porque": "Afecta disponibilidad global de crudo y presiona dinámicas de oferta-demanda de petróleo. La debilidad de demanda india es señal de debilitamiento de presiones en mercado energético global",
-    "queOcurrio": "Exportaciones venezolanas cayeron 25% mes a mes a 856 mil barriles diarios, impulsado por caída de importaciones indias (se redujeron a la mitad) y ausencia de compras chinas",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (datos de comercio de crudo)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "WTI",
-    "Brent",
-    "S&P500",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "venezuela",
-    "petróleo",
-    "exportaciones",
-    "india",
-    "suministro-global"
-   ],
-   "tgText": "📉 Venezuela: exportaciones de crudo caen 25% a mínimo de 5 meses (856k bpd). India redujo compras a la mitad tras recuperación de Oriente Medio. China no compra desde caída de Maduro.",
-   "xText": "📊 Petróleo venezolano: caída 25% a 856k bpd (mínimo 5 meses). Demanda india se desploma tras normalización de Oriente Medio. China fuera del mercado desde cambio político.",
-   "discordText": "**Venezuela: caída crítica de exportaciones de crudo**\n• Julio: 856k bpd (-25% mes a mes, mínimo 5 meses)\n• India redujo compras a la mitad → recuperación de Oriente Medio\n• China: sin importaciones desde remoción de Maduro",
-   "pushText": "Exportaciones de crudo venezolano caen 25% a mínimo de 5 meses",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "WTI y Brent reaccionan moderadamente: la noticia refleja debilidad de demanda, no shock de oferta; mercado ya precia presión geopolítica de Oriente Medio",
-    "despues": "Si presión se mantiene, USD podría fortalecerse (menos presión inflacionaria de energía). Acciones de energía evalúan si es tendencia o temporal",
-    "escenarios": "Traders vigilarán: (1) recuperación de demanda india si conflicto Irán escalara de nuevo; (2) si China reanuda compras tras cambio político en Venezuela; (3) impacto en precios globales si oferta se contrae más",
-    "riesgos": "Titular reporta datos, pero dinámicas pueden revertir rápidamente con cambios geopolíticos. Información podría estar atrasada 1-2 semanas"
-   },
-   "macro": {
-    "dolar": "alcista (menos presión inflacionaria de energía)",
-    "oro": "neutral",
-    "nasdaq": "neutral",
-    "dow": "neutral a alcista",
-    "sp500": "neutral",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "alcista (presión inflacionaria menor)",
-    "petroleo": "bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": 916011939,
-   "fecha": "2026-08-03T16:54:19.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
-   "via": "CNBC",
-   "original": "Manufacturing survey shows inflation worries &apos;worse than pandemic era,&apos; adding to Fed pressure",
-   "titulo": "Encuesta manufacturera muestra presión inflacionaria peor que era pandémica",
-   "resumen": "Un relevamiento de manufactura revela que las preocupaciones inflacionarias superan los niveles registrados durante la pandemia de COVID-19, intensificando la presión sobre la Reserva Federal para ajustar su política monetaria. El indicador sugiere que la inflación sigue siendo una amenaza persistente en el sector industrial.",
-   "analisis": {
-    "porque": "Evidencia empírica de inflación en manufactura con impacto directo en decisiones de política monetaria de la Fed; determina trayectoria de tasas de interés y mercados de renta fija.",
-    "queOcurrio": "Un survey manufacturero indica preocupaciones inflacionarias más agudas que durante la pandemia, presionando al banco central.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Fed",
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "S&P500",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Inflación",
-   "keywords": [
-    "manufactura",
-    "inflación",
-    "Fed",
-    "política-monetaria",
-    "tasas"
-   ],
-   "tgText": "📊 Encuesta manufacturera muestra presión inflacionaria peor que en pandemia, intensificando presión sobre la Fed para ajustar tasas.",
-   "xText": "🚨 Survey manufacturero: preocupaciones inflacionarias superan niveles pandémicos. Presión creciente sobre Fed para movimientos de tasas.",
-   "discordText": "**Manufactura en alerta inflacionaria**\n• Encuesta muestra presión peor que pandemia\n• Presión directa sobre decisiones de la Fed\n• Impacto esperado en tasas y renta fija",
-   "pushText": "Manufactura: inflación peor que pandemia, presiona Fed",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Bonos USA y rendimientos de largo plazo (presión alcista en yields); luego DXY por expectativa de tasas más altas.",
-    "despues": "S&P500 y NASDAQ caen por anticipación de ciclo restrictivo extendido; criptomonedas bajo presión por tasas reales más altas.",
-    "escenarios": "Traders vigilan si Fed reconoce inflación persistente; mercado precifica aceleración de política restrictiva; impacto en forward guidance del banco central.",
-    "riesgos": "Titular no especifica si es PMI manufacturero, ISM u otra métrica; no detalla magnitud de preocupaciones versus pandemia."
-   },
-   "macro": {
-    "dolar": "alcista por tasas más altas",
-    "oro": "bajista por tasas reales crecientes",
-    "nasdaq": "bajista por ciclo restrictivo",
-    "dow": "bajista por ciclo restrictivo",
-    "sp500": "bajista por ciclo restrictivo",
-    "bonos": "presión de venta",
-    "petroleo": "neutral a alcista por demanda fuerte"
-   },
-   "updates": []
-  },
-  {
-   "id": 33898,
-   "fecha": "2026-08-03T16:35:15+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33898",
-   "via": "DeItaone",
-   "original": "NASDAQ EXTENDS GAINS, LAST UP 2.1%",
-   "titulo": "Nasdaq extiende ganancias; sube 2,1% en sesión actual",
-   "resumen": "El índice Nasdaq registra avance de 2,1% en la sesión actual, extendiendo ganancias. El titular no especifica los drivers específicos de la alza ni contexto macroeconómico.",
-   "analisis": {
-    "porque": "Movimiento de índices amplios impacta sentimiento general, rotaciones de riesgo y evaluación de valuaciones de tecnología. Alza de 2,1% es significativa y requiere monitoreo de drivers",
-    "queOcurrio": "Nasdaq sube 2,1% en sesión actual",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "Nasdaq",
-    "S&P500",
-    "Dow Jones",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "Nasdaq",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "nasdaq",
-    "mercados-amplios",
-    "sesión",
-    "ganancias"
-   ],
-   "tgText": "📈 Nasdaq extiende ganancias +2,1% en sesión. El titular no especifica drivers de la alza; monitorear contexto de technología y sentimiento de riesgo.",
-   "xText": "🔝 Nasdaq avanza +2,1% en sesión actual. Movimiento significativo; vigilar drivers específicos y rotaciones de riesgo entre sectores.",
-   "discordText": "**Nasdaq en alza**\n• Avance: +2,1% en sesión\n• Drivers no especificados en titular\n• Vigilar: rotaciones tech, sentimiento de riesgo, contexto macro",
-   "pushText": "Nasdaq sube 2,1% en sesión actual",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Nasdaq 100 y acciones de tecnología reaccionan primero; movimiento de 2,1% sugiere rotación de riesgo o revaluación de tasas",
-    "despues": "S&P500, Dow Jones pueden seguir; VIX podría comprimirse si la alza refleja menor volatilidad esperada",
-    "escenarios": "Traders vigilarán: (1) si la alza responde a datos económicos débiles (menor presión de tasas) o a noticias corporativas; (2) si es reversión técnica o cambio de tendencia; (3) contexto de geopolítica (Irán, Venezuela) que podría revertir ganancias",
-    "riesgos": "Titular es muy genérico; sin drivers especificados, podría revertirse rápidamente si contexto cambia. Alta probabilidad de rotación a defensivos si datos macroeconómicos empeoran"
-   },
-   "macro": {
-    "dolar": "bajista",
-    "oro": "bajista",
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "bitcoin": "alcista",
-    "ethereum": "alcista",
-    "bonos": "bajista",
-    "petroleo": "neutral"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/24/oil-tanker-red-sea-hormuz-black-sea-iran-ukraine.html",
-  "https://www.cnbc.com/2026/07/24/us-iran-war-trump-hormuz-houthis.html",
-  "https://www.cnbc.com/2026/07/24/oil-price-trump-hormuz-red-sea-iran-war.html",
-  "https://www.cnbc.com/2026/07/24/trump-tariffs-eu-trade-google-apple-tech.html",
-  "https://www.cnbc.com/2026/07/24/1-hyperscaler-megacap-down-3-to-go-alphabet-raises-the-stakes-on-ai-spending.html",
-  "https://www.cnbc.com/2026/07/24/cyclospora-cdc-says-outbreak-is-in-nine-states.html",
-  "https://www.cnbc.com/2026/07/24/odds-that-the-straits-traffic-returns-to-normal-drop-on-kalshi.html",
-  "https://www.cnbc.com/2026/07/24/treasury-yields-bonds-us-debt.html",
-  "https://www.cnbc.com/2026/07/25/finland-sand-battery-renewable-energy-storage.html",
-  "https://www.cnbc.com/2026/07/25/trump-mixes-jokes-with-barbs-at-white-house-correspondents-dinner.html",
   "https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html",
   "https://www.cnbc.com/select/tariffs-gas-prices-are-straining-budgets/",
   "https://www.cnbc.com/2026/07/25/saudi-military-strikes-iran-backed-houthi-targets-yemen.html",
@@ -7857,6 +7828,16 @@
   "https://www.cnbc.com/2026/08/06/asia-tech-selloff-wall-street-samsung-sk-hynix.html",
   "https://www.cnbc.com/2026/08/05/google-is-expanding-its-ai-empire-and-losing-the-people-who-built-it.html",
   "https://www.cnbc.com/2026/08/06/nintendo-first-quarter-earnings-switch2.html",
-  "https://www.cnbc.com/2026/08/06/softbank-q1-earnings-intel-bytedance-stakes.html"
+  "https://www.cnbc.com/2026/08/06/softbank-q1-earnings-intel-bytedance-stakes.html",
+  "https://www.cnbc.com/2026/08/06/stocks-making-the-biggest-moves-after-hours-sg-abnb-dkng-ttd.html",
+  "https://www.cnbc.com/2026/08/06/airbnb-abnb-q2-earningsreport.html",
+  "https://www.cnbc.com/2026/08/06/doge-elon-musk-gao-government-cost-cuts.html",
+  "https://www.cnbc.com/2026/08/06/jim-cramer-5-investing-themes-stocks-to-buy.html",
+  "https://www.cnbc.com/2026/08/06/grindr-grnd-stock-earnings-ai.html",
+  "https://www.cnbc.com/2026/08/07/south-korea-investment-stock-baby-accounts.html",
+  "https://www.cnbc.com/2026/08/07/japan-us-yen-intervention-global-currency-markets.html",
+  "https://www.cnbc.com/2026/08/06/stock-market-today-live-updates.html",
+  "https://www.cnbc.com/2026/08/07/oil-rises-supply-fears-iran-draft-plan-strait-hormuz.html",
+  "https://www.cnbc.com/2026/08/06/meta-to-pay-into-567-million-fund-after-child-harms-case-new-mexico.html"
  ]
 }
