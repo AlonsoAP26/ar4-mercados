@@ -1,7 +1,121 @@
 {
  "lastId": 34139,
- "actualizado": "2026-08-07T05:52:42.783Z",
+ "actualizado": "2026-08-07T08:11:39.788Z",
  "items": [
+  {
+   "id": "974761671",
+   "fecha": "2026-08-07T08:03:43.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/volkswagen-vw-porsche-autos-job-cuts.html",
+   "via": "CNBC",
+   "original": "Volkswagen controlling families call for faster overhaul to fend off Chinese rivals",
+   "titulo": "Familias dueñas de Volkswagen piden reestructuración acelerada frente a rivales chinos",
+   "resumen": "Los accionistas controladores de Volkswagen instan a la empresa a acelerar su reestructuración para competir contra fabricantes de autos eléctricos chinos. La presión refleja temores sobre competitividad y márgenes en la transición a vehículos eléctricos.",
+   "analisis": {
+    "porque": "La presión accionaria sobre Volkswagen indica debilidad competitiva en EV frente a rivales chinos (BYD, NIO) y riesgos de pérdida de cuota de mercado; afecta valuación de OEMs europeos y expectativas sobre inversión industrial en UE.",
+    "queOcurrio": "Familias propietarias de Volkswagen demandan aceleración de reestructuración para enfrentar competencia china en vehículos eléctricos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Volkswagen (VOW)",
+    "Autos Europeos",
+    "Energía Verde",
+    "EUR/USD",
+    "Índices Europeos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Volkswagen",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Autos Europeos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Volkswagen",
+    "reestructuración",
+    "autos eléctricos",
+    "competencia china",
+    "BYD"
+   ],
+   "tgText": "Accionistas Volkswagen presionan reestructuración acelerada frente a competidores chinos en EV. Señal de debilidad competitiva en transición.",
+   "xText": "Accionistas de Volkswagen exigen reestructuración más rápida para competir contra chinos en EV. Presión sobre márgenes y cuota de mercado.",
+   "discordText": "**Volkswagen bajo presión accionaria**\n• Familias dueñas piden reestructuración acelerada\n• Competencia china en EV (BYD, NIO) imparable\n• Riesgo: pérdida de cuota de mercado",
+   "pushText": "VW presionada a reestructuración acelerada vs competencia china",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones Volkswagen (VOW) caerán si mercado interpreta presión como falta de confianza en gestión actual; índices automotores europeos (DAX) enfrentan presión.",
+    "despues": "Bonos corporativos de VW podrían verse afectados si mercado anticipa costos altos de reestructuración; EUR/USD neutral pero riesgo industrial europeo visible.",
+    "escenarios": "Traders vigilarán anuncios de inversión en fábricas de baterías, alianzas con proveedores chinos y planes de recorte de costos; cualquier capex reducción sería señal bajista.",
+    "riesgos": "El titular no especifica qué reestructuración exacta se busca; riesgo de que sea presión política sin impacto real operacional."
+   },
+   "macro": {
+    "volkswagen": "bajista",
+    "autos europeos": "bajista",
+    "dax": "neutral a bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "930570611",
+   "fecha": "2026-08-07T07:52:04.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/wildfires-insurance-cover-zurich-allianz-munich.html",
+   "via": "CNBC",
+   "original": "Europe’s wildfire ‘protection gap’ is growing, insurers warn",
+   "titulo": "Europa enfrenta 'brecha de protección' creciente contra incendios; aseguradoras advierten",
+   "resumen": "Aseguradoras europeas advierten sobre una creciente 'brecha de protección' (cobertura insuficiente) en pólizas contra incendios forestales. El fenómeno refleja cambio climático acelerado y riesgos catastróficos no asegurados que podrían afectar economías regionales.",
+   "analisis": {
+    "porque": "La brecha de cobertura aseguradora en incendios representa riesgo fiscal para gobiernos europeos (que deben cubrir pérdidas), impacto en precios de seguros (inflación de costos) y presión sobre reservas de compañías aseguradoras; indica falla de mercado en pricing de riesgo climático.",
+    "queOcurrio": "Aseguradoras europeas alertan sobre aumento de incendios forestales con cobertura insuficiente en pólizas de propiedad y agrícola.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Seguros Europeos",
+    "Bonos Soberanos EUR",
+    "Energía",
+    "Índices Europeos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Seguros Europeos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Emergencia",
+   "keywords": [
+    "seguros",
+    "incendios forestales",
+    "cambio climático",
+    "Europa",
+    "riesgo catastrófico"
+   ],
+   "tgText": "⚠️ Aseguradoras: brecha de protección crece contra incendios forestales en Europa. Riesgo fiscal para gobiernos y presión en precios de seguros.",
+   "xText": "Aseguradoras europeas advierten brecha de cobertura creciente en pólizas incendios forestales. Riesgo climático no asegurado presionará presupuestos públicos.",
+   "discordText": "**Crisis de cobertura aseguradora en Europa**\n⚠️ Brecha de protección crece contra incendios\n• Cambio climático acelera frecuencia\n• Riesgo fiscal para gobiernos\n• Presión en primas de seguros",
+   "pushText": "Brecha aseguradora contra incendios crece en Europa",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de aseguradoras europeas (Munich Re, Allianz, AXA, Zurich) enfrentarán presión si mercado teme reservas insuficientes; spreads de CDS podrían ampliarse.",
+    "despues": "Bonos soberanos europeos (especialmente de países mediterráneos como Grecia, Italia) podrían presionarse si fiscales anticipa gastos de reconstrucción; EUR/USD neutral.",
+    "escenarios": "Traders vigilarán reportes de Q3 de aseguradoras (pérdidas estimadas por incendios 2026), legislación europea de pricing de carbono, y datos de frecuencia/severidad de eventos climáticos.",
+    "riesgos": "El titular no cuantifica la brecha o magnitud de pérdidas potenciales; podría ser advertencia preventiva sin impacto inmediato medible."
+   },
+   "macro": {
+    "seguros europeos": "bajista",
+    "bonos soberanos eur": "neutral a bajista"
+   },
+   "updates": []
+  },
   {
    "id": 926102345,
    "fecha": "2026-08-07T04:44:17.000Z",
@@ -569,61 +683,135 @@
    "updates": []
   },
   {
-   "id": "34130",
-   "fecha": "2026-08-06T18:16:03+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34130",
-   "via": "DeItaone",
-   "original": "BOFA: LOWER-INCOME JOBS, WAGES OUTPACE HIGHER EARNERS Bank of America says the U.S. labor market is moving beyond the \"K-shaped\" economy. Lower-income households saw 3% YoY job growth in July versus 1% for higher-income workers, while after-tax wage growth reached 5.2%, topping 4.2% for higher-income households for the first time since December 2024. BofA says stronger wage gains, alongside solid ",
-   "titulo": "Economía K menos pronunciada: salarios de ingresos bajos crecen 5,2% vs 4,2% altos",
-   "resumen": "Bank of America reportó un giro en dinámicas laborales estadounidenses alejándose del patrón 'K-shaped'. En julio, hogares de ingresos bajos vieron crecimiento de empleo de 3% interanual (vs 1% para altos ingresos), mientras crecimiento salarial después de impuestos alcanzó 5,2% (superando 4,2% de altos ingresos por primera vez desde diciembre 2024). BofA señala que ganancias salariales sólidas, junto a productividad robusta, sostienen gasto del consumidor sin presionar inflación.",
+   "id": "973473858",
+   "fecha": "2026-08-06T20:07:51.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/copper-jumps-to-its-highest-level-ever-what-the-metal-is-telling-us-.html",
+   "via": "CNBC",
+   "original": "Copper jumps to its highest level ever. What the metal is telling us",
+   "titulo": "Cobre alcanza máximo histórico; señales de presión inflacionaria y demanda",
+   "resumen": "El cobre cotiza en niveles históricos más elevados, reflejando presiones de demanda global y restricciones de oferta. El movimiento sugiere expectativas de inflación persistente y crecimiento económico en sectores dependientes del metal (construcción, energía renovable, tecnología).",
    "analisis": {
-    "porque": "Dinámicas redistributivas del mercado laboral afectan consumo (70% del PIB EE.UU.). Convergencia salarial reduce riesgo inflacionario si demanda proviene de segmentos con mayor propensión al ahorro. Fortalece narrativa de aterrizaje suave.",
-    "queOcurrio": "BofA documenta reversión de bifurcación laboral: empleo de ingresos bajos +3% y/y vs +1% altos; salarios después-impuestos +5,2% vs +4,2% altos.",
+    "porque": "El cobre es indicador adelantado de inflación y crecimiento económico global; máximos históricos alertan a inversores sobre ciclos inflacionarios y presiones en cadenas de suministro de energía verde y electrónica.",
+    "queOcurrio": "Cobre salta a su nivel más alto de toda la historia registrada.",
     "estado": "confirmado",
-    "fuenteOriginal": "Bank of America"
+    "fuenteOriginal": "CNBC"
    },
-   "impacto": "medio",
-   "breaking": false,
+   "impacto": "alto",
+   "breaking": true,
    "activos": [
-    "S&P500",
-    "Bonos",
-    "USD",
-    "Consumo discrecional"
+    "Cobre",
+    "Materias Primas",
+    "Inflación",
+    "Bonos USA",
+    "DXY",
+    "Oro"
    ],
    "sesgos": [
     {
-     "activo": "Bonos",
+     "activo": "Cobre",
      "sesgo": "alcista"
     },
     {
-     "activo": "S&P500",
+     "activo": "Inflación",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "cobre",
+    "máximo histórico",
+    "inflación",
+    "demanda global",
+    "commodities"
+   ],
+   "tgText": "🚨 Cobre toca máximo histórico. Señal de inflación persistente y demanda global fuerte. Presión sobre bonos USA esperada.",
+   "xText": "Cobre en máximo histórico 📈 Indicador de inflación y crecimiento global activado. Mercados vigilan presión en rendimientos y política monetaria.",
+   "discordText": "**Cobre en máximo histórico**\n🚨 Nivel más alto jamás registrado\n• Señala inflación persistente\n• Demanda global robusta en energía verde y tech\n• Presión esperada en bonos USA y DXY",
+   "pushText": "Cobre alcanza máximo histórico; alertas inflacionarias",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Bonos USA (especialmente 10Y) caerán presionados por expectativas inflacionarias; DXY podría fortalecerse si mercados pricean más ciclos alcistas de tasas.",
+    "despues": "Oro podría subir como hedge inflacionario; equities cíclicos (energía, construcción, semiconductores) podrían beneficiarse si el cobre señala demanda real, pero equities defensivos enfrentarían vientos en contra.",
+    "escenarios": "Traders vigilarán si los bancos centrales (especialmente Fed) reaccionan con lenguaje hawkish; máximos de cobre históricos típicamente preceden volatilidad en bonos y divisas.",
+    "riesgos": "El titular no especifica si el movimiento responde a restricciones de oferta física o especulación; si es especulativo, la corrección podría ser abrupta. Datos chinos de consumo serán críticos para validar."
+   },
+   "macro": {
+    "cobre": "alcista muy fuerte",
+    "inflacion": "alcista",
+    "bonos": "bajista",
+    "dolar": "alcista",
+    "oro": "alcista"
+   },
+   "updates": []
+  },
+  {
+   "id": "920260316",
+   "fecha": "2026-08-06T19:38:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
+   "via": "CNBC",
+   "original": "Analysis: Trump treats Fed Chairman Kevin Warsh as an ally. That creates economic risks",
+   "titulo": "Trump ve a Kevin Warsh como aliado: riesgos de independencia monetaria",
+   "resumen": "Análisis señala que Donald Trump trata al Presidente de la Reserva Federal Kevin Warsh como aliado político, lo que genera riesgos sobre la independencia de política monetaria. La dinámica podría presionar a la Fed hacia decisiones más acomodativas que las justificadas por fundamentos económicos.",
+   "analisis": {
+    "porque": "La presión política sobre la Fed socava su credibilidad anti-inflacionaria y puede distorsionar decisiones de tasas, afectando expectativas inflacionarias a largo plazo, valuaciones de activos y confianza en instituciones monetarias.",
+    "queOcurrio": "Análisis editorial de CNBC sugiere relación de alianza entre Trump y Warsh, presidente de la Fed, que podría comprometer independencia monetaria.",
+    "estado": "análisis",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Dólar",
+    "Bonos USA",
+    "Oro",
+    "S&P 500",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Dólar",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
      "sesgo": "alcista"
     }
    ],
-   "volatilidad": "baja",
-   "categoria": "Empleo",
+   "volatilidad": "media",
+   "categoria": "FED",
    "keywords": [
-    "mercado-laboral-USA",
-    "salarios",
-    "convergencia-ingresos",
-    "consumo",
-    "inflación-baja"
+    "Fed",
+    "Trump",
+    "Kevin Warsh",
+    "política monetaria",
+    "independencia",
+    "tasas de interés"
    ],
-   "tgText": "📊 BofA: Dinámicas laborales cambian. Ingresos bajos: +3% empleo y/y, +5,2% salarios netos. Altos: +1% empleo, +4,2% salarios. Convergen por primera vez en 7 meses. Soporta gasto sin presión inflacionaria.",
-   "xText": "📈 Giro laboral USA: salarios de ingresos bajos (+5,2%) superan altos (+4,2%) por primera vez desde dic-24. Dinámicas K-shaped se suavizan, según BofA.",
-   "discordText": "**Mercado laboral USA: convergencia salarial**\n• Ingresos bajos: +3% empleo y/y (+5,2% salarios netos)\n• Ingresos altos: +1% empleo y/y (+4,2% salarios)\n• Primer mes desde dic-24 que bajos superan altos\n→ K-shaped economy se modera; consumo sin presión inflacionaria",
-   "pushText": "Salarios de ingresos bajos superan altos por primera vez desde dic-24",
-   "importancia": 6,
+   "tgText": "⚠️ Análisis: Trump ve a Warsh (Fed) como aliado. Riesgo de presión política sobre independencia monetaria. Impacto en dólar y bonos.",
+   "xText": "Análisis CNBC: relación Trump-Warsh (Fed) como aliados crea riesgos de independencia monetaria. Presión potencial sobre dólar y rendimientos.",
+   "discordText": "**Riesgos de independencia monetaria en Fed**\n⚠️ Trump trata a Warsh como aliado político\n• Potencial presión hacia política acomodativa\n• Riesgo para credibilidad anti-inflacionaria\n• Impacto esperado: dólar débil, oro fuerte",
+   "pushText": "Análisis: presión política sobre independencia de Fed",
+   "importancia": 7,
    "reaccion": {
-    "primero": "Bonos treasuries pueden revalorizarse si mercado ve dinámicas salariales menos inflacionarias. Yields bajan.",
-    "despues": "Consumo discrecional se mantiene resiliente. S&P500 mantiene sesgo alcista. USD se debilita levemente.",
-    "escenarios": "Traders monitorean si convergencia es duradera o refleja volatilidad estacional. Vigilancia de próximas lecturas de empleo (payrolls).",
-    "riesgos": "Si redistribución laboral acelerarse, presión sobre márgenes corporativos. Datos de BofA son internos; otra fuentes pueden diferir."
+    "primero": "Dólar (DXY) cae si mercados ven presión política reduciendo credibilidad hawkish de la Fed; oro sube como hedge de moneda débil.",
+    "despues": "Rendimientos USA podrían comprimirse si especulación sobre tasas más bajas emergen; equities podrían beneficiarse de tasas bajas, pero volatilidad implícita aumentaría.",
+    "escenarios": "Traders vigilarán comunicados de Warsh y votos de política monetaria próximos para señales de independencia vs. presión política; cualquier comentario de Trump sobre la Fed amplificaría volatilidad.",
+    "riesgos": "Es análisis editorial, no confirmación de hechos; el impacto depende de si Warsh cede a presión (no verificable aún). Riesgo de que sea interpretación periodística de relaciones normales."
    },
    "macro": {
-    "bonos": "sesgo alcista (yields bajan si inflación moderada)",
-    "sp500": "sesgo alcista",
-    "consumo": "resilencia esperada"
+    "dolar": "bajista",
+    "oro": "alcista",
+    "bonos": "bajista",
+    "sp500": "alcista corto plazo, riesgo largo plazo"
    },
    "updates": []
   },
@@ -681,6 +869,73 @@
     "sp500": "sesgo alcista significativo",
     "nasdaq": "sesgo alcista",
     "bonos": "presión bajista si alcismo sustrae demanda de renta fija"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-06T18:18:14.000Z",
+     "id": "938802444",
+     "texto": "CFRA Research incrementa su proyección de precios para el índice S&P 500 a fin de año a 8.050 puntos, reflejando mayor optimismo sobre el mercado accionario estadounidense. La actualización sugiere confianza en la trayectoria alcista del mercado de renta variable en los próximos meses.",
+     "tgUrl": "https://www.cnbc.com/2026/08/06/cfra-gets-more-bullish-hikes-sp-500-year-end-target-to-8050.html"
+    }
+   ],
+   "actualizado": "2026-08-06T18:18:14.000Z"
+  },
+  {
+   "id": "34130",
+   "fecha": "2026-08-06T18:16:03+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34130",
+   "via": "DeItaone",
+   "original": "BOFA: LOWER-INCOME JOBS, WAGES OUTPACE HIGHER EARNERS Bank of America says the U.S. labor market is moving beyond the \"K-shaped\" economy. Lower-income households saw 3% YoY job growth in July versus 1% for higher-income workers, while after-tax wage growth reached 5.2%, topping 4.2% for higher-income households for the first time since December 2024. BofA says stronger wage gains, alongside solid ",
+   "titulo": "Economía K menos pronunciada: salarios de ingresos bajos crecen 5,2% vs 4,2% altos",
+   "resumen": "Bank of America reportó un giro en dinámicas laborales estadounidenses alejándose del patrón 'K-shaped'. En julio, hogares de ingresos bajos vieron crecimiento de empleo de 3% interanual (vs 1% para altos ingresos), mientras crecimiento salarial después de impuestos alcanzó 5,2% (superando 4,2% de altos ingresos por primera vez desde diciembre 2024). BofA señala que ganancias salariales sólidas, junto a productividad robusta, sostienen gasto del consumidor sin presionar inflación.",
+   "analisis": {
+    "porque": "Dinámicas redistributivas del mercado laboral afectan consumo (70% del PIB EE.UU.). Convergencia salarial reduce riesgo inflacionario si demanda proviene de segmentos con mayor propensión al ahorro. Fortalece narrativa de aterrizaje suave.",
+    "queOcurrio": "BofA documenta reversión de bifurcación laboral: empleo de ingresos bajos +3% y/y vs +1% altos; salarios después-impuestos +5,2% vs +4,2% altos.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bank of America"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "Bonos",
+    "USD",
+    "Consumo discrecional"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empleo",
+   "keywords": [
+    "mercado-laboral-USA",
+    "salarios",
+    "convergencia-ingresos",
+    "consumo",
+    "inflación-baja"
+   ],
+   "tgText": "📊 BofA: Dinámicas laborales cambian. Ingresos bajos: +3% empleo y/y, +5,2% salarios netos. Altos: +1% empleo, +4,2% salarios. Convergen por primera vez en 7 meses. Soporta gasto sin presión inflacionaria.",
+   "xText": "📈 Giro laboral USA: salarios de ingresos bajos (+5,2%) superan altos (+4,2%) por primera vez desde dic-24. Dinámicas K-shaped se suavizan, según BofA.",
+   "discordText": "**Mercado laboral USA: convergencia salarial**\n• Ingresos bajos: +3% empleo y/y (+5,2% salarios netos)\n• Ingresos altos: +1% empleo y/y (+4,2% salarios)\n• Primer mes desde dic-24 que bajos superan altos\n→ K-shaped economy se modera; consumo sin presión inflacionaria",
+   "pushText": "Salarios de ingresos bajos superan altos por primera vez desde dic-24",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos treasuries pueden revalorizarse si mercado ve dinámicas salariales menos inflacionarias. Yields bajan.",
+    "despues": "Consumo discrecional se mantiene resiliente. S&P500 mantiene sesgo alcista. USD se debilita levemente.",
+    "escenarios": "Traders monitorean si convergencia es duradera o refleja volatilidad estacional. Vigilancia de próximas lecturas de empleo (payrolls).",
+    "riesgos": "Si redistribución laboral acelerarse, presión sobre márgenes corporativos. Datos de BofA son internos; otra fuentes pueden diferir."
+   },
+   "macro": {
+    "bonos": "sesgo alcista (yields bajan si inflación moderada)",
+    "sp500": "sesgo alcista",
+    "consumo": "resilencia esperada"
    },
    "updates": []
   },
@@ -7261,244 +7516,9 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 949810077,
-   "fecha": "2026-08-03T22:20:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/jim-cramer-market-warmed-up-big-tech-ai-spending.html",
-   "via": "CNBC",
-   "original": "Jim Cramer says the market has warmed up to Big Tech&apos;s AI spending. Here&apos;s what flipped the switch",
-   "titulo": "Mercado normalizó gasto en IA de Big Tech; Cramer explica el cambio de sentimiento",
-   "resumen": "Jim Cramer comenta que el mercado ha absorbido positivamente el gasto masivo en capex de tecnología en inteligencia artificial, revirtiendo escepticismo anterior. El cambio de percepción sugiere que inversores ahora validan la estrategia de inversión en IA de las megacaps como generadora de retornos futuros.",
-   "analisis": {
-    "porque": "Señala reajuste en narrativa de mercado: de \"capex excesivo sin ROI\" a \"inversión estructural necesaria\". Define dinámicas de sector tech y múltiplos de valuación.",
-    "queOcurrio": "Cramer analiza que el sentimiento de mercado hacia inversiones en IA por parte de Big Tech pasó de crítico a favorable.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "MSFT",
-    "GOOGL",
-    "NVDA",
-    "META"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "GOOGL",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Big Tech",
-    "IA",
-    "capex",
-    "sentimiento mercado",
-    "NVIDIA",
-    "Microsoft",
-    "Google",
-    "Meta"
-   ],
-   "tgText": "💡 Cramer: mercado cambió postura ante capex en IA de Big Tech. De escepticismo a validación de estrategia de megacaps. Positivo para MSFT, GOOGL, NVDA.",
-   "xText": "📊 Cramer: mercado normalizó inversión en IA de Big Tech. Cambio de narrativa de crítico a alcista refuerza rally en megacaps tech. #IA #MSFT #GOOGL",
-   "discordText": "**Cambio de sentimiento en Big Tech IA**\n• Mercado cambió de crítico a favorable en capex IA\n• Valida inversiones de MSFT, GOOGL, NVDA\n• Sustenta rally en megacaps",
-   "pushText": "Mercado valida gasto en IA de Big Tech; sentimiento gira alcista",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Megacaps tech (MSFT, GOOGL, NVDA, META): narrativa de justificación de capex sostiene valuaciones premium.",
-    "despues": "Nasdaq y S&P 500: flujos hacia defensoras de IA; posible rotación desde tech value/especulativas.",
-    "escenarios": "Traders vigilan: (1) confirmación de narrativa IA en próximos earnings; (2) si capex anuncia rendimientos medibles; (3) correlación de tech defensoras vs especulativas.",
-    "riesgos": "Riesgo si capex no produce ROI esperado; narrativa es frágil ante datos macroeconómicos negativos."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 995917856,
-   "fecha": "2026-08-03T21:44:19.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/snap-q2-earnings-report-2026.html",
-   "via": "CNBC",
-   "original": "Snap&apos;s stock jumps 10% on earnings beat and strong sales forecast",
-   "titulo": "Snap salta 10% por earnings beat y pronóstico de ventas sólido",
-   "resumen": "Snap superó expectativas trimestrales con resultados positivos en ingresos y publicó guidance de ventas fuerte para próximos períodos. La acción subió 10% en sesión extendida. El titular no detalla cifras de ingresos ni márgenes específicos.",
-   "analisis": {
-    "porque": "Snap es barometro de salud publicitaria digital y gasto en redes sociales. Beat en earnings + guidance alcista afecta percepción de demanda publicitaria y revalúo de medianas techs.",
-    "queOcurrio": "Snap reportó resultados que superaron consenso y mantuvo un pronóstico positivo de ingresos, catalizando compra institucional en después de cierre.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": true,
-   "activos": [
-    "SNAP",
-    "NASDAQ",
-    "Publicidad Digital",
-    "Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "SNAP",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Snap",
-    "earnings",
-    "publicidad-digital",
-    "guidance"
-   ],
-   "tgText": "📱 SNAP +10% en after-hours tras beat en earnings. Guidance de ventas también sólida. Señal positiva para demanda publicitaria digital.",
-   "xText": "SNAP +10% post-earnings. Beat en ingresos + guidance positiva. Barometro de salud publicitaria digital mejora.",
-   "discordText": "**SNAP EARNINGS**\n• +10% en after-hours\n• Beat en resultados\n• Guidance de ventas fuerte\n• Señal: Demanda ads digital healthy",
-   "pushText": "SNAP +10%; beat earnings + guidance sólida",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "SNAP reacciona directamente por ser noticia de earnings; peers de publicidad digital (META, PINS) monitorean el patrón de fortaleza",
-    "despues": "Sector tech de medianas capitalizaciones puede seguir; índices NASDAQ responden si hay efecto agregado sobre crecimiento de tech",
-    "escenarios": "Traders observarán si el beat refleja recuperación de gasto publicitario post-recesión o si es efecto temporal. Compararán guidance vs competidores como Meta.",
-    "riesgos": "Sin cifras específicas de ingresos/márgenes en titular; rally podría revertirse si durante call de earnings sale contexto débil o si guidance es solo marginal"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 968016161,
-   "fecha": "2026-08-03T20:57:02.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/trump-tariffs-25-states-lawsuit-supreme-court.html",
-   "via": "CNBC",
-   "original": "Twenty five states sue Trump administration over latest global tariffs",
-   "titulo": "Veinticinco estados demandan a administración Trump por aranceles globales recientes",
-   "resumen": "Un grupo de 25 estados estadounidenses interpuso demanda contra la administración Trump por una ronda reciente de aranceles globales. Afecta perspectiva de comercio internacional y potencial escalada regulatoria.",
-   "analisis": {
-    "porque": "Litigio sobre aranceles añade incertidumbre regulatoria a proyecciones corporativas y trade flow. Afecta expectativas de inflación, márgenes corporativos y dinámicas de mercado de divisas.",
-    "queOcurrio": "25 estados presentaron demanda contra administración Trump cuestionando legalidad o fundamentos de aranceles recientemente impuestos a nivel global.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P 500",
-    "DXY",
-    "USD",
-    "Exportadores",
-    "Retail"
-   ],
-   "sesgos": [
-    {
-     "activo": "Aranceles",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Exportadores",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "aranceles",
-    "Trump",
-    "litigio",
-    "comercio-internacional",
-    "regulación"
-   ],
-   "tgText": "⚖️ 25 estados demandan a Trump por aranceles recientes. Agrega incertidumbre regulatoria a proyecciones comerciales y márgenes corporativos.",
-   "xText": "25 estados presentan demanda vs aranceles Trump. Añade incertidumbre legal a política comercial y proyecciones corporativas.",
-   "discordText": "**LITIGIO ARANCELES TRUMP**\n• 25 estados demandan\n• Cuestiona legalidad de aranceles recientes\n• Incertidumbre regulatoria creciente\n• Impacto: Trade, márgenes, divisas",
-   "pushText": "25 estados demandan a Trump por aranceles",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "USD y pares de divisas reaccionan a incertidumbre sobre implementación de aranceles; exportadores caen inicialmente por riesgo regulatorio",
-    "despues": "Retail, manufactura exportadora, índices amplios pueden revisar lower si litigio resulta en demoras o bloqueos de aranceles (ambos crean incertidumbre)",
-    "escenarios": "Traders monitorean calendar de litigio, precedentes legales similares y si administración responde con nuevos aranceles. Vigilarán comunicados oficiales.",
-    "riesgos": "Litigio podría fallar (Trump admin gana) o prosperar (bloqueo parcial); incertidumbre es el principal factor. Si falla rápido, mercado revisa expectativas."
-   },
-   "macro": {
-    "dolar": "Volatilidad media; incertidumbre sobre magnitud/timing de aranceles afecta demanda USD",
-    "nasdaq": "Neutro-bajista; tech exportadora expuesta a riesgos de aranceles",
-    "sp500": "Neutro-bajista; manufactureros y exportadores en riesgo",
-    "petroleo": "Neutral; no hay nexo directo con aranceles en este titular"
-   },
-   "updates": []
-  },
-  {
-   "id": 950125217,
-   "fecha": "2026-08-03T20:45:50.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/stocks-making-the-biggest-moves-after-hours-pltr-on-snap.html",
-   "via": "CNBC",
-   "original": "Stocks making the biggest moves after hours: Palantir, On Semiconductor, Snap & more",
-   "titulo": "Palantir, On Semiconductor, Snap y otros protagonizan mayores movimientos post-sesión",
-   "resumen": "Múltiples acciones registraron volatilidad significativa en sesión extendida, incluyendo Palantir (+12%, capturado arriba), On Semiconductor y Snap. El titular es agregador sin especificar causas de movimientos de On Semiconductor ni detalles de otros activos.",
-   "analisis": {
-    "porque": "Movimientos de double dígit en múltiples techs señalan reajuste de expectativas de mercado o earnings significativos. Volatilidad after-hours indica participación institucional.",
-    "queOcurrio": "Varios activos de tecnología experimentaron grandes movimientos de precio en sesión extendida; Palantir y Snap capturados en notas separadas; On Semiconductor sin contexto especificado.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "PLTR",
-    "SNAP",
-    "ON",
-    "NASDAQ",
-    "Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "Tech",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "after-hours",
-    "earnings-szn",
-    "tech-moves",
-    "volatilidad"
-   ],
-   "tgText": "📊 Múltiples techs en movimiento post-sesión: PLTR +12%, SNAP +10%, ON Semiconductor y otros. Temporada de earnings genera volatilidad.",
-   "xText": "Volatilidad post-sesión en tech: PLTR +12%, SNAP +10%, ON Semiconductor en movimiento. Temporada de earnings activa.",
-   "discordText": "**AFTER-HOURS TECH MOVES**\n• PLTR +12% (earnings beat)\n• SNAP +10% (earnings + guidance)\n• ON Semiconductor en movimiento\n• Contexto: Temporada earnings activa",
-   "pushText": "Tech en movimiento: PLTR +12%, SNAP +10%, others",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "PLTR y SNAP ya capturados; On Semiconductor reacciona a earnings o news corporativo no especificado",
-    "despues": "Otros techs siguen movimiento de peers; NASDAQ responde si hay efecto agregado",
-    "escenarios": "Traders buscan si rally se extiende a apertura regular o si hay taking-profit; usan volatilidad after-hours como indicador de ánimo institucional",
-    "riesgos": "Titular es agregador sin causas específicas para On Semiconductor; falta contexto de por qué sube/baja"
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/25/crypto-diversified-investment-portfolio.html",
-  "https://www.cnbc.com/2026/07/25/blackstone-brookfield-and-kkr-sign-16-billion-oil-deal-with-kuwait.html",
-  "https://www.cnbc.com/2026/07/25/how-this-70-year-old-honey-bee-farmer-is-keeping-his-family-farm-alive.html",
-  "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
-  "https://www.cnbc.com/2026/07/25/trump-ai-data-center-backlash.html",
   "https://www.cnbc.com/2026/07/25/here-are-4-forces-that-drove-a-tough-week-for-stocks.html",
   "https://www.cnbc.com/2026/07/25/us-appeals-court-rules-trump-cannot-implement-mail-in-voting-order.html",
   "https://www.cnbc.com/2026/07/25/samsung-electronics-wins-200-billion-broadcom-ai-chip-partnership.html",
@@ -7793,6 +7813,11 @@
   "https://www.cnbc.com/2026/08/06/michigan-eases-lettuce-advice-as-state-health-department-says-cyclosporiasis-reports-decline.html",
   "https://www.cnbc.com/2026/08/07/us-iran-war-trump-hormuz-diplomacy-oil-.html",
   "https://www.cnbc.com/2026/08/07/meta-india-zuckerberg-apology-genz-protest.html",
-  "https://www.cnbc.com/2026/08/07/china-july-trade-exports-imports-surplus-imbalance-tariffs-.html"
+  "https://www.cnbc.com/2026/08/07/china-july-trade-exports-imports-surplus-imbalance-tariffs-.html",
+  "https://www.cnbc.com/2026/08/06/cfra-gets-more-bullish-hikes-sp-500-year-end-target-to-8050.html",
+  "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
+  "https://www.cnbc.com/2026/08/06/copper-jumps-to-its-highest-level-ever-what-the-metal-is-telling-us-.html",
+  "https://www.cnbc.com/2026/08/07/wildfires-insurance-cover-zurich-allianz-munich.html",
+  "https://www.cnbc.com/2026/08/07/volkswagen-vw-porsche-autos-job-cuts.html"
  ]
 }
