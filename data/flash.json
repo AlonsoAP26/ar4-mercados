@@ -1,7 +1,79 @@
 {
  "lastId": 34139,
- "actualizado": "2026-08-07T01:41:23.522Z",
+ "actualizado": "2026-08-07T05:52:42.783Z",
  "items": [
+  {
+   "id": 926102345,
+   "fecha": "2026-08-07T04:44:17.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/china-july-trade-exports-imports-surplus-imbalance-tariffs-.html",
+   "via": "CNBC",
+   "original": "China&apos;s exports growth beats estimates in July, as AI-driven shipments surge",
+   "titulo": "Exportaciones chinas en julio superan estimaciones; envíos IA impulsan crecimiento",
+   "resumen": "China reporta crecimiento de exportaciones en julio superior a consenso analítico, impulsado por envíos vinculados a inteligencia artificial y semiconductores. El titular no proporciona tasa de crecimiento específica ni desglose por sectores.",
+   "analisis": {
+    "porque": "Dato de exportaciones china impacta expectativas de crecimiento global, términos de intercambio, cadenas de suministro tech y demanda mundial. Crecimiento AI-driven sugiere reposicionamiento de cadena de valor hacia IA. Afecta valuaciones tech y outlook de demanda global.",
+    "queOcurrio": "China publica dato de exportaciones de julio que supera estimaciones, con impulso notable de envíos relacionados con IA y semiconductores.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Semiconductores (SMH)",
+    "Oro",
+    "Petróleo",
+    "CNY"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "CNY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "china-exportaciones",
+    "inteligencia-artificial",
+    "semiconductores",
+    "crecimiento-global",
+    "demanda"
+   ],
+   "tgText": "🇨🇳 China supera estimaciones en exportaciones julio (impulsadas por IA). Demanda de chips/IA sigue fuerte. NASDAQ y semiconductores alcistas.",
+   "xText": "🇨🇳 Exportaciones China julio superan estimaciones. Envíos IA/semiconductores surgen como motor. Positivo para NASDAQ y supply chain tech global.",
+   "discordText": "**China - Exportaciones Julio**\n• Resultado: **supera estimaciones**\n• Motor: envíos IA y semiconductores\n• Impacto: demanda global (alcista)\n• Beneficiarios: NASDAQ, SMH",
+   "pushText": "🇨🇳 Exportaciones China superan estimaciones; IA impulsa crecimiento",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "NASDAQ y semiconductores (SMH, NVDA, TSM, QCOM) suben primero por confirmación de demanda de IA.",
+    "despues": "S&P500 sigue alcista. Petróleo puede subir por optimismo de demanda global. CNY potencialmente se aprecia.",
+    "escenarios": "Traders vigilarán: (1) si crecimiento es sostenible o pico temporal; (2) si impulso IA desplaza otras exportaciones (riesgo de concentración); (3) implicancias para outlook de crecimiento global 2H26; (4) si tensiones comerciales EE.UU.-China se mitigan. Escenario alcista: demanda IA sigue fuerte; bear: es reversión de inventarios.",
+    "riesgos": "Titular no da tasa de crecimiento específica. Posible que sea reposicionamiento de cadena de suministro (transitorio). Riesgo geopolítico: si tensiones USA-China resurgen, presión a baja."
+   },
+   "macro": {
+    "dolar": "Potencial debilidad si demanda global sube (baja en DXY)",
+    "oro": "Neutral a bajista si riesgo-on sube por optimismo China",
+    "nasdaq": "Alcista por confirmación de demanda IA",
+    "dow": "Neutral a alcista por impacto en S&P500",
+    "sp500": "Alcista por optimismo demanda global",
+    "petroleo": "Potencial suba si demanda global sube"
+   },
+   "updates": []
+  },
   {
    "id": 993298022,
    "fecha": "2026-08-07T01:28:57.000Z",
@@ -231,6 +303,269 @@
     "riesgos": "El titular no especifica márgenes ni presión de costos; beat podría ser temporal si condiciones macroeconómicas se deterioran."
    },
    "macro": null,
+   "updates": []
+  },
+  {
+   "id": 996895349,
+   "fecha": "2026-08-06T21:24:38.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/sweetgreen-cuts-full-year-outlook-as-cyclospora-fears-weigh-on-sales.html",
+   "via": "CNBC",
+   "original": "Sweetgreen cuts full-year outlook as cyclospora fears weigh on sales",
+   "titulo": "Sweetgreen reduce guidance anual por temores de ciclospora",
+   "resumen": "Sweetgreen reduce su outlook de ganancias para 2026 debido a preocupaciones sobre brotes de ciclospora (parásito de origen hídrico) que impactan ventas. El titular no especifica magnitud de reducción ni timeline esperado para normalización.",
+   "analisis": {
+    "porque": "Sweetgreen es empresa cotizada (SBRA) con operaciones de food service. Guidance downside señala riesgo de brotes/contaminación en cadena de suministros de alimentos frescos. Afecta márgenes y confianza de consumidor en vertical casual dining.",
+    "queOcurrio": "Sweetgreen anuncia reducción de full-year outlook (guidance 2026) debido a impacto de ciclospora en ventas y operaciones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "SBRA"
+   ],
+   "sesgos": [
+    {
+     "activo": "SBRA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "sweetgreen-sbra",
+    "ciclospora",
+    "food-safety",
+    "guidance-downgrade",
+    "casual-dining"
+   ],
+   "tgText": "🥗 Sweetgreen reduce guidance 2026 por ciclospora. Brote de parásito impacta ventas. SBRA bajista; vigila evolución de crisis de seguridad alimentaria.",
+   "xText": "🥗 Sweetgreen reduce outlook anual por ciclospora. Crisis de seguridad alimentaria pesa en casual dining y márgenes operacionales.",
+   "discordText": "**Sweetgreen - Guidance Downgrade**\n• Causa: brote de ciclospora\n• Impacto: ventas reducidas\n• Ticker: **SBRA**\n• Outlook 2026: **BAJISTA**",
+   "pushText": "🥗 Sweetgreen reduce guidance por ciclospora",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "SBRA caerá en pre-market/apertura al anuncio de guidance downgrade.",
+    "despues": "Otros jugadores casual dining (PANW, MCD, etc.) podrían caer si brote se expande a múltiples cadenas o regiones.",
+    "escenarios": "Traders vigilarán: (1) comunicaciones de otras cadenas sobre exposición a ciclospora; (2) actualizaciones de salud pública sobre magnitud de brote; (3) timeline de control/normalización; (4) impacto en percepción de food safety del consumidor. Riesgo: si brote persiste, pressure on forward guidance de sector.",
+    "riesgos": "Ciclospora es parásito en agua; puede afectar múltiples proveedores/cadenas. Riesgo sistémico a casual dining si no se controla. Titular no especifica magnitud de reduction de guidance."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 908159069,
+   "fecha": "2026-08-06T20:50:59.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/virginia-governor-nextera-nee-dominion-data-center.html",
+   "via": "CNBC",
+   "original": "Virginia governor to intervene in NextEra, Dominion merger over electricity price concerns",
+   "titulo": "Virginia interviene en fusión NextEra-Dominion por preocupaciones de tarifas",
+   "resumen": "El gobernador de Virginia anunció intervención regulatoria en la fusión propuesta entre NextEra Energy y Dominion Energy, citando preocupaciones sobre aumentos en tarifas eléctricas. El titular no especifica si bloqueará la fusión o qué condiciones impondría.",
+   "analisis": {
+    "porque": "NextEra y Dominion son empresas de utilidades con exposición a mercados de renta variable e índices. Intervención regulatoria añade riesgo de fusión y afecta expectativas de cash flows post-merger. Virginia es jurisdicción clave para Dominion.",
+    "queOcurrio": "Gobernador de Virginia señala intervención sobre la propuesta fusión NextEra-Dominion, argumentando protección contra incrementos de tarifas eléctricas para consumidores.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "NEE",
+    "D"
+   ],
+   "sesgos": [
+    {
+     "activo": "NEE",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "D",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "nextEra-energy",
+    "dominion-energy",
+    "fusión",
+    "regulación-estatal",
+    "tarifas-eléctricas"
+   ],
+   "tgText": "⚡ Virginia interviene en fusión NextEra-Dominion por temores a tarifas. Riesgo regulatorio sube; posible retraso o condiciones. NEE y D bajistas.",
+   "xText": "⚡ Gobernador Virginia bloquea o condiciona fusión NextEra-Dominion por aumentos de tarifas. Riesgo regulatorio crítico para NEE y D.",
+   "discordText": "**NextEra-Dominion: Intervención Virginia**\n• Gobernador: preocupación por tarifas\n• Riesgo: bloqueo o condiciones duras\n• Tickers: **NEE**, **D**\n• Impacto fusión: **MEDIO-ALTO**",
+   "pushText": "⚡ Virginia interviene en fusión NextEra-Dominion por tarifas",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "NEE y D caerán en apertura/sesión post-noticia. Mercado repricia riesgo de fusión (menor probabilidad o timing extendido).",
+    "despues": "Sectores de utilidades (XLU) podrían caer si se interpreta como endurecimiento regulatorio más amplio.",
+    "escenarios": "Traders vigilarán: (1) claridad regulatoria de Virginia en próximos días; (2) si otros estados replican preocupaciones; (3) si NextEra/Dominion retiran oferta o negocian condiciones; (4) timing de votaciones/aprobaciones. Escenario bear: bloqueo; bull: aprobación con concesiones menores.",
+    "riesgos": "Intervención aún no es bloqueo formal. Riesgo de interpretación inicial como más dura de lo que resultará. Posible que sea presión negociadora estándar de estados."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 960169676,
+   "fecha": "2026-08-06T20:30:05.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/american-airlines-flight-upgrades-become-harder-to-get.html",
+   "via": "CNBC",
+   "original": "American Airlines will stop upgrading elite flyers to business from coach on long domestic flights",
+   "titulo": "American Airlines suspende upgrades a business class en vuelos domésticos largos",
+   "resumen": "American Airlines elimina la política de upgrade automático de pasajeros elite a business class en vuelos domésticos largos. Esta medida afecta un beneficio clave para clientes frecuentes. El titular no especifica vigencia de la medida ni impacto financiero estimado.",
+   "analisis": {
+    "porque": "American Airlines es componente del S&P 500 y índices de viajes. Cambio en políticas de ingresos/retención de clientes elite afecta monetización y atracción de viajeros premium. Puede indicar presión en márgenes u optimización de costos.",
+    "queOcurrio": "American Airlines anuncia que dejará de ofrecer upgrades automáticos a business class desde coach en vuelos domésticos largos para clientes elite.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "AAL"
+   ],
+   "sesgos": [
+    {
+     "activo": "AAL",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "american-airlines",
+    "política-clientes",
+    "viajes-aéreos",
+    "ingresos"
+   ],
+   "tgText": "✈️ American Airlines elimina upgrades automáticos a business en vuelos domésticos para clientes elite. Impacto: retención y monetización de premium.",
+   "xText": "✈️ American Airlines suspende upgrades a business class en vuelos domésticos largos. Señal de presión en márgenes de viajeros premium.",
+   "discordText": "**American Airlines - Cambio de Política**\n• Elimina: upgrades automáticos a business (elite)\n• Aplica: vuelos domésticos largos\n• Impacto: retención de clientes premium\n• Ticker: **AAL**",
+   "pushText": "✈️ American Airlines suspende upgrades a business class",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "Ticket AAL podría caer ligeramente si inversores leen como pérdida de value-add para elite (reducción de lealtad).",
+    "despues": "Sector aéreo (DAL, UAL, Southwest) podría seguir si interpreta como tendencia de presión de márgenes.",
+    "escenarios": "Traders monitorearan: (1) si medida es permanente o temporal; (2) si impacta tasa de retención de elite; (3) si otras aerolíneas replican. Bajo riesgo = change management estándar.",
+    "riesgos": "Titular no especifica vigencia ni cifra de clientes afectados. Posible que sea medida temporal o de prueba."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 938331572,
+   "fecha": "2026-08-06T20:17:23.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/what-fridays-jobs-report-could-mean-for-investors.html",
+   "via": "CNBC",
+   "original": "What Friday&apos;s jobs report could mean for investors",
+   "titulo": "¿Qué significa el reporte de empleos del viernes para los inversores?",
+   "resumen": "Análisis editorial sobre las implicancias del reporte de empleo de julio para inversores. El titular no proporciona detalles específicos sobre escenarios ni análisis cuantitativo. Es contexto interpretativo del dato que se publica el viernes.",
+   "analisis": {
+    "porque": "Complementa la expectativa del reporte de empleo. Orienta al lector sobre qué variables seguir y cómo traducir el dato a impacto de portafolio.",
+    "queOcurrio": "CNBC publica análisis anticipatorio sobre el significado del reporte de empleos para decisiones de inversión.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empleo",
+   "keywords": [
+    "empleos-julio",
+    "estrategia-inversores",
+    "análisis-fed"
+   ],
+   "tgText": "📈 Análisis: qué significa el reporte de empleos de viernes para tu cartera. CNBC orienta sobre variables clave a seguir.",
+   "xText": "📈 Análisis CNBC: impacto del reporte de empleos viernes en inversores. Variables clave para seguimiento de mercado.",
+   "discordText": "**Empleos Viernes - Implicancias para Inversores**\n• Análisis editorial CNBC\n• Qué vigilar: tasas, valuaciones, sectores\n• Impacto esperado: **MEDIO**",
+   "pushText": "📈 Qué significa el reporte de empleos viernes para inversores",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "No aplica directamente (es análisis, no dato). Pero el reporte que comenta moverá primero rendimientos USA.",
+    "despues": "S&P500 y sectores sensibles a tasas ajustarán después.",
+    "escenarios": "Traders seguirán la narrativa CNBC sobre qué parametrización del dato implica cambio en Fed forward guidance.",
+    "riesgos": "Es análisis editorial; no es dato confirmado. Riesgo de sesgos en interpretación de CNBC."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 936274687,
+   "fecha": "2026-08-06T20:15:22.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html",
+   "via": "CNBC",
+   "original": "The July jobs numbers are due out Friday. Here&apos;s what to expect",
+   "titulo": "Empleos de julio en EE.UU.: qué esperar del informe de viernes",
+   "resumen": "El reporte de empleo de julio se publicará el viernes. El titular no especifica cifras esperadas ni consenso analítico. Este dato es crítico para la política monetaria de la Fed, ya que la fortaleza del mercado laboral influye directamente en decisiones de tasas de interés y estrategia de estímulo económico.",
+   "analisis": {
+    "porque": "El informe de empleo es el principal indicador que monitorea la Fed para decisiones de política monetaria. Afecta expectativas de tasas, valuaciones de renta variable y divisas.",
+    "queOcurrio": "Anuncio de que el reporte de empleos de julio será publicado el viernes (fecha en titular: 2026-08-06 UTC, reporte probable 2026-08-08).",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empleo",
+   "keywords": [
+    "empleos-julio",
+    "nonfarm-payrolls",
+    "fed-decisiones",
+    "mercado-laboral"
+   ],
+   "tgText": "📊 Reporte de empleos de julio se publica el viernes. Dato crítico para decisiones de tasas de la Fed. Espera volatilidad alta en renta variable y bonos.",
+   "xText": "📊 Empleos julio: reporte crítico el viernes. La Fed monitoreará de cerca la fortaleza del mercado laboral para decisiones de tasas. Alto impacto esperado.",
+   "discordText": "**Empleos Julio - Reporte Viernes**\n• Publicación: viernes (fecha por confirmar)\n• Impacto: **MUY ALTO** en Fed decisions\n• Afecta: S&P500, NASDAQ, DXY, bonos\n• Volatilidad esperada: **MUY ALTA**",
+   "pushText": "📊 Reporte de empleos julio viernes: crítico para decisiones Fed",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Rendimientos USA y DXY reaccionarán primero según expectativas vs. resultado (si datos fuertes = tasas más altas = suba en rendimientos y dólar)",
+    "despues": "S&P500 y NASDAQ ajustarán valuaciones según implicancias para tasas. Bonos soberanos globales también se recalibrarán.",
+    "escenarios": "Traders vigilarán: (1) desempleo vs. estimaciones; (2) creación neta de empleos (consenso no especificado en titular); (3) salarios promedio; (4) participación laboral. Si sorprende al alza, presión alcista en tasas; si decepciona, potencial compra de risk-on.",
+    "riesgos": "El titular no proporciona estimaciones consensuadas ni cifras esperadas. La volatilidad el viernes será extremadamente alta. Riesgo de gap overnight si datos sorprenden masivamente."
+   },
+   "macro": {
+    "dolar": "Sensible a sorpresas de empleo (datos fuertes = suba en DXY)",
+    "oro": "Inverso a tasas: si empleos fuertes sube tasas, oro cae",
+    "nasdaq": "Ajusta valuaciones según implicancias para tasa sin riesgo",
+    "dow": "Idem NASDAQ",
+    "sp500": "Presión bajista si empleos fuertes (suba en tasas), alcista si débil",
+    "bonos": "Rendimientos suben si empleos sorprenden al alza",
+    "petroleo": "Bajo impacto directo; afecta si cambia outlook económico"
+   },
    "updates": []
   },
   {
@@ -7156,399 +7491,9 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 936408330,
-   "fecha": "2026-08-03T20:02:17.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/amazon-amzn-stock-market-cap-earnings.html",
-   "via": "CNBC",
-   "original": "Amazon tops $3 trillion market cap as stock continues post-earnings surge",
-   "titulo": "Amazon supera los $3 billones de capitalización tras sólido desempeño post-ganancias",
-   "resumen": "Amazon alcanzó una capitalización bursátil de $3 billones, consolidándose entre las empresas más valiosas del mundo. El movimiento refleja momentum positivo en el sector tecnológico tras divulgación de resultados trimestrales. Representa un hito histórico para la empresa y subraya la fortaleza de las megacaps en el rally actual.",
-   "analisis": {
-    "porque": "Refleja confianza de inversores en Big Tech y potencial de crecimiento en cloud/IA. Amazon es componente clave del Nasdaq y S&P 500, determinante para índices amplios.",
-    "queOcurrio": "Amazon alcanzó capitalización de $3 billones por primera vez, impulsado por resultados trimestrales positivos.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "AMZN",
-    "Megacaps Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "AMZN",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Amazon",
-    "AMZN",
-    "capitalización",
-    "$3T",
-    "tech",
-    "megacap"
-   ],
-   "tgText": "📈 Amazon supera los $3T en capitalización tras earnings positivos. Megacap tech mantiene momentum alcista; impulsa al Nasdaq.",
-   "xText": "🚀 Amazon alcanza $3 billones en cap. de mercado post-earnings. Confirmación de fortaleza en Big Tech y cloud computing. #AMZN #Nasdaq",
-   "discordText": "**Amazon alcanza hito de $3T en capitalización**\n• Impulso post-ganancias trimestrales\n• Refuerza liderazgo entre megacaps tech\n• Positivo para Nasdaq y S&P 500",
-   "pushText": "Amazon supera $3T en capitalización; Big Tech mantiene rally",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "AMZN y Nasdaq-100: Amazon es 12-13% del índice; movimientos en la acción impactan directamente derivados.",
-    "despues": "S&P 500 y otros tech: efecto contagio en sector tecnológico; potencial debilidad relativa en value/defensivos.",
-    "escenarios": "Traders vigilan: (1) sostenibilidad de rally post-earnings; (2) si AMZN lidera rotación hacia megacaps defensivas; (3) implicaciones de valuaciones extremas.",
-    "riesgos": "Riesgo de corrección si expectativas de crecimiento IA no se materializan; concentración extrema en pocas acciones."
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "sp500": "alcista",
-    "dolar": null,
-    "oro": null,
-    "bonos": null
-   },
-   "updates": []
-  },
-  {
-   "id": 953588981,
-   "fecha": "2026-08-03T20:09:19.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/faa-boeing-737-max-certification.html",
-   "via": "CNBC",
-   "original": "FAA clears smallest Boeing 737 Max to fly after years of delays",
-   "titulo": "FAA autoriza vuelo del Boeing 737 Max más pequeño tras años de demoras",
-   "resumen": "La Administración Federal de Aviación (FAA) otorgó aprobación definitiva para que el Boeing 737 Max 7 —la variante más compacta de la familia Max— entre en operación comercial. Esta autorización cierra un ciclo de certificación prolongado por revisiones de seguridad.",
-   "analisis": {
-    "porque": "Despeje regulatorio de Boeing libera restricción productiva y de ingresos; impulsa cash flow e impacta cadena de suministro aeronáutico. Afecta valuación de BA y proveedores.",
-    "queOcurrio": "FAA completó certificación y autorizó operaciones comerciales del 737 Max 7, modelo con menor capacidad que otras versiones Max pero crítico para portafolios de clientes.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "BA",
-    "Aeronáutica",
-    "S&P 500"
-   ],
-   "sesgos": [
-    {
-     "activo": "BA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Aeronáutica",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Boeing",
-    "737-Max",
-    "FAA",
-    "certificación",
-    "aviación"
-   ],
-   "tgText": "✈️ FAA aprueba Boeing 737 Max 7 para vuelos comerciales tras años de revisión. Despeje regulatorio libera producción y cash flow.",
-   "xText": "FAA certifica Boeing 737 Max 7 para operaciones comerciales. Despeje de restricción regulatoria después de ciclo prolongado de certificación.",
-   "discordText": "**BOEING 737 MAX 7 - FAA CLEARANCE**\n• Certificación completada\n• Autorización para vuelos comerciales\n• Libera restricciones productivas\n• Impacto: BA + supply chain aeronáutica",
-   "pushText": "FAA aprueba Boeing 737 Max 7; despeje regulatorio",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Boeing (BA) reacciona al despeje de restricción de producción; afecta guidance de entregas y generación de flujo de caja",
-    "despues": "Proveedores aeronáuticos (Spirit AeroSystems, Raytheon, Lockheed) y energía (menor costo operativo) podrían beneficiarse. Índices industriales responden.",
-    "escenarios": "Traders vigilarán velocidad de ramp-up en producción, pedidos confirmados para Max 7, y si Boeing mejora guidance de 2026-2027. Monitorearán cash generation.",
-    "riesgos": "Aprobación regulatoria no garantiza demanda inmediata de clientes; Max 7 es versión menos demandada que Max 8. Riesgo: que new orders no materializan según mercado espera."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-08-03T19:23:04.000Z",
-     "id": 951767080,
-     "texto": "Boeing experimenta rally accionario impulsado por tres factores favorables no especificados en el titular. La noticia refleja renovación de sentimiento positivo en el fabricante de aeronaves tras período de presión regulatoria.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/a-trio-of-positive-developments-has-boeing-shares-soaring.html"
-    }
-   ],
-   "actualizado": "2026-08-03T19:23:04.000Z"
-  },
-  {
-   "id": 911409007,
-   "fecha": "2026-08-03T21:34:43.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
-   "via": "CNBC",
-   "original": "Palantir soars 12% on blowout quarter, with U.S. commercial revenue soaring nearly 150%",
-   "titulo": "Palantir dispara 12% tras resultados extraordinarios; ingresos comerciales USA suben 150%",
-   "resumen": "Palantir Technologies reportó un trimestre excepcional con crecimiento de ingresos comerciales en USA cercano al 150%. La acción subió 12% en sesión extendida. El titular no especifica márgenes, guidance futura ni cifras absolutas de ingresos, solo el ritmo de crecimiento comercial.",
-   "analisis": {
-    "porque": "Movimiento de precio de double dígit en una acción de gran capitalización indica un reajuste significativo de expectativas de mercado sobre crecimiento y rentabilidad. Afecta valuaciones en tech y IA.",
-    "queOcurrio": "Palantir publicó resultados trimestrales que superaron expectativas, con énfasis en expansión acelerada del segmento comercial en Estados Unidos, generando compra masiva en after-hours.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "PLTR",
-    "NASDAQ",
-    "Tech",
-    "IA"
-   ],
-   "sesgos": [
-    {
-     "activo": "PLTR",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Palantir",
-    "earnings",
-    "crecimiento-comercial",
-    "tech",
-    "IA"
-   ],
-   "tgText": "🚀 PLTR dispara 12% en after-hours tras trimestre extraordinario. Ingresos comerciales USA suben ~150%. Reajuste alcista de expectativas en tech/IA.",
-   "xText": "📈 Palantir sube 12% en after-hours con resultados excepcionales. Ingresos comerciales USA crecen ~150%. Movimiento significativo en tech.",
-   "discordText": "**PALANTIR EARNINGS BEAT**\n• Acción sube 12% en after-hours\n• Ingresos comerciales USA +150%\n• Reajuste alcista en expectativas\n• Impacto: Tech/IA",
-   "pushText": "PLTR +12% tras earnings; ingresos comerciales +150%",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "PLTR reacciona inmediatamente por ser noticia de earnings; volumen after-hours concentra traders institucionales",
-    "despues": "Sector tech y acciones IA vinculadas (NVDA, MSFT, CRM) pueden seguir por efecto momentum y revalúo de narrativa de crecimiento IA",
-    "escenarios": "Traders vigilarán si el rally se sostiene en apertura regular o es taking-profit; también si guidance futura es tan fuerte como los resultados. Monitorearán ratio P/E implícito.",
-    "riesgos": "El titular no incluye guidance ni márgenes operativos; podría haber decepción si la calidad de ganancias es débil o si management reduce outlook"
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-08-03T18:34:52.000Z",
-     "id": 979642223,
-     "texto": "Análisis del mercado de opciones sobre Palantir Technologies explora si la empresa puede replicar el ciclo alcista estilo Microsoft. Los datos de opciones reflejan expectativa de continuidad en la tendencia alcista tras resultados recientes.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/can-palantir-pull-off-a-microsoft-style-comeback-heres-what-options-say.html"
-    }
-   ],
-   "actualizado": "2026-08-03T18:34:52.000Z"
-  },
-  {
-   "id": "33908",
-   "fecha": "2026-08-03T18:17:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33908",
-   "via": "DeItaone",
-   "original": "TRUMP: CHEVRON, EXXON MADE TOO MUCH MONEY",
-   "titulo": "Trump critica ganancias «excesivas» de Chevron y Exxon",
-   "resumen": "Trump declara que Chevron y Exxon han ganado demasiado dinero, sin especificar acciones o regulaciones concretas. Crítica es retórica sobre márgenes de energéticas, típica en contexto de presión sobre precios de petróleo y energía durante negociaciones geopolíticas.",
-   "analisis": {
-    "porque": "Crítica presidencial a ganancias de energéticas suele generar volatilidad en valores (XLE, CVX, XOM) y puede presagiar presiones regulatorias o impositivas futuras. Afecta valuación de sector.",
-    "queOcurrio": "Trump comenta que Chevron y Exxon han ganado demasiado dinero, sin detalles de medidas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "XLE",
-    "CVX",
-    "XOM",
-    "S&P500",
-    "Energía"
-   ],
-   "sesgos": [
-    {
-     "activo": "XLE",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "CVX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "XOM",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Trump",
-    "Chevron",
-    "Exxon",
-    "ganancias excesivas",
-    "energía"
-   ],
-   "tgText": "🛢️ Trump critica ganancias «excesivas» de Chevron y Exxon. Sin detalles de acción, pero genera volatilidad en XLE, CVX, XOM. Vigilar anuncios de regulación.",
-   "xText": "Trump: Chevron y Exxon ganaron demasiado. Crítica sin acciones concretas aún, pero presiona valores energéticos. #Empresas",
-   "discordText": "**Trump Critica Márgenes de Energéticas**\n• Declara que Chevron y Exxon ganaron «excesivo»\n• Sin medidas regulatorias anunciadas\n• **Riesgo**: Presión futura en impuestos o márgenes",
-   "pushText": "Trump: Chevron y Exxon ganaron demasiado.",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "XLE, CVX, XOM venden por riesgo regulatorio; sector energético presionado.",
-    "despues": "Si Trump anuncia medidas concretas (impuestos extras, controles de precio), caída se acelera.",
-    "escenarios": "Traders vigilan: (1) anuncios de regulación específica; (2) si es presión retórica o hay intención de acción legislativa; (3) impacto en cash flow y dividendos de energéticas.",
-    "riesgos": "Riesgo de interpretación excesiva; titular no anuncia nada concreto. Podría ser presión coyuntural durante negociaciones de Ormuz para bajar precios de crudo."
-   },
-   "macro": {
-    "petroleo": "Presión retórica que busca bajar precios de crudo; efecto indirecto.",
-    "energia": "Sector energético bajo presión por riesgo regulatorio."
-   },
-   "updates": []
-  },
-  {
-   "id": 969300751,
-   "fecha": "2026-08-03T18:12:11.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/dividend-stocks-outperformed-the-sp-in-july-wall-street-says-these-names-will-go-higher-.html",
-   "via": "CNBC",
-   "original": "Dividend stocks outperformed the S&P in July. Wall Street says these names will go higher",
-   "titulo": "Acciones de dividendos superaron S&P 500 en julio; Wall Street alista nuevas compras",
-   "resumen": "Las acciones que pagan dividendos tuvieron mejor desempeño que el S&P 500 durante julio, según análisis de Wall Street. Analistas señalan que estos valores podrían continuar ganando terreno en un ambiente de tasas de interés elevadas.",
-   "analisis": {
-    "porque": "Rotación de capital hacia dividendos indica cambio de preferencia por ingresos en lugar de apreciación; refleja expectativa de tasas sostenidas y menor crecimiento. Afecta valuaciones y composición de carteras.",
-    "queOcurrio": "Acciones de dividendos superaron el S&P 500 en julio; Wall Street analistas predicen continuidad.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "Acciones Dividendos",
-    "Utilities",
-    "Energía",
-    "REITs"
-   ],
-   "sesgos": [
-    {
-     "activo": "Acciones Dividendos",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Tech de Crecimiento",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "dividendos",
-    "rotación-sectorial",
-    "s&p500",
-    "ingresos",
-    "tasas-altas"
-   ],
-   "tgText": "💰 Acciones de dividendos superan S&P 500 en julio; Wall Street ve espacio para más ganancias en ambiente de tasas elevadas.",
-   "xText": "📈 Dividend stocks outperform S&P 500 en julio. Wall Street bullish en continuidad para acciones generadoras de ingresos.",
-   "discordText": "**Rotación a dividendos en marcha**\n• Supera S&P 500 en julio\n• Reflects tasas altas y menor crecimiento\n• Wall Street ve espacio alcista continuado",
-   "pushText": "Dividendos superan S&P 500; Wall Street ve más ganancias",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Utilities, REITs y acciones de dividendos en energía; rendimientos en beneficio por ingresos asegurados en tasas altas.",
-    "despues": "Tech de crecimiento bajo presión relativa; inversores evalúan trade-off entre dividendo seguro vs apreciación.",
-    "escenarios": "Traders vigilan si rotación continúa o si estabilización de tasas genera retorno a growth; monitorean cambios en preferencia de asignación institucional.",
-    "riesgos": "Titular no especifica criterios de Wall Street ni horizonte de análisis; rotaciones pueden revertirse rápido si tasas bajan."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33901,
-   "fecha": "2026-08-03T17:36:14+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33901",
-   "via": "DeItaone",
-   "original": "CITADEL WARNS FED MESSAGING IS HURTING CREDIBILITY Citadel Securities said Fed Chair Kevin Warsh's policy framework is creating uncertainty by pledging to curb inflation without clearly explaining how. The firm warned that relying on higher market yields to tighten financial conditions risks a negative feedback loop, where delayed rate hikes fuel higher inflation expectations and push long-term Tr",
-   "titulo": "Citadel alerta: credibilidad de la Fed en riesgo por mensajería inconsistente",
-   "resumen": "Citadel Securities advierte que el marco de política del presidente de la Fed Kevin Warsh genera incertidumbre al comprometerse a controlar la inflación sin explicar claramente los mecanismos. La firma advierte que depender de mayores rendimientos de mercado para ajustar condiciones financieras podría crear un bucle negativo: retrasos en alzas de tasas alimentan expectativas inflacionarias más altas y presionan aún más los bonos del Tesoro.",
-   "analisis": {
-    "porque": "Cuestiona la credibilidad de la política monetaria estadounidense en un momento crítico de gestión de inflación. Afecta directamente las expectativas de mercado sobre trayectoria de tasas y valuaciones de bonos",
-    "queOcurrio": "Citadel Securities publicó crítica formal al marco de política de la Fed, señalando que la venta reciente en Treasuries refleja dudas sobre la credibilidad del banco central",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (citando Citadel Securities)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Bonos",
-    "Rendimientos USA",
-    "DXY",
-    "Nasdaq",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "FED",
-   "keywords": [
-    "credibilidad-fed",
-    "política-monetaria",
-    "treasuries",
-    "inflación",
-    "tasas-de-interés"
-   ],
-   "tgText": "⚠️ Citadel advierte sobre pérdida de credibilidad de la Fed. Crítica al marco de Warsh: depender de rendimientos de mercado para ajustar crearía bucle negativo inflacionario. Venta de Treasuries refleja dudas.",
-   "xText": "🚨 Citadel: marco de la Fed genera incertidumbre sobre control inflacionario. Depender de rendimientos de mercado para ajustar crearía bucle negativo. Venta de Treasuries refleja dudas sobre credibilidad.",
-   "discordText": "**Alerta: Citadel critica credibilidad de la Fed**\n• Kevin Warsh promete controlar inflación sin explicar mecanismos\n• Riesgo de bucle negativo: retrasos en tasas → inflación mayor → Treasuries caen más\n• Venta reciente refleja dudas del mercado",
-   "pushText": "Citadel alerta: credibilidad de la Fed en riesgo por inconsistencias",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Rendimientos de Treasuries a largo plazo (10Y, 30Y) reaccionan primero por efecto directo en valuaciones de renta fija y expectativas inflacionarias",
-    "despues": "DXY sube (menor confianza en política monetaria USA); Nasdaq y S&P500 podrían ceder si crece incertidumbre sobre trayectoria de tasas",
-    "escenarios": "Traders vigilarán: (1) próximos comentarios de la Fed sobre mecanismos de política; (2) datos inflacionarios que validen o contradigan la preocupación de Citadel; (3) spreads de bonos corporativos vs Treasuries",
-    "riesgos": "El titular proviene de crítica institucional (no es ruido), pero es interpretación de Citadel sobre intención del Fed; la Fed podría responder con clarificación de framework"
-   },
-   "macro": {
-    "dolar": "alcista (menor confianza en Fed)",
-    "oro": "alcista (incertidumbre monetaria)",
-    "nasdaq": "bajista (si crece volatilidad de tasas)",
-    "dow": "neutral a bajista",
-    "sp500": "neutral a bajista",
-    "bitcoin": "mixto (volatilidad de tasas es headwind)",
-    "ethereum": "mixto",
-    "bonos": "bajista (venta en progress)",
-    "petroleo": "neutral"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html",
-  "https://www.cnbc.com/select/tariffs-gas-prices-are-straining-budgets/",
-  "https://www.cnbc.com/2026/07/25/saudi-military-strikes-iran-backed-houthi-targets-yemen.html",
-  "https://www.cnbc.com/2026/07/24/lebron-james-76ers-philadelphia-24th-nba-season.html",
-  "https://www.cnbc.com/2026/07/25/ups-fedex-dhl-healthare-logistics-glp.html",
-  "https://www.cnbc.com/2026/07/25/buffett-favors-an-estate-tax-but-like-virtually-all-billionaires-he-wont-be-paying-it.html",
-  "https://www.cnbc.com/2026/07/25/the-odyssey-imax-70mm-screenings.html",
-  "https://www.cnbc.com/2026/07/25/stocks-to-buy-before-its-too-late.html",
-  "https://www.cnbc.com/2026/07/25/amazon-other-stocks-with-momentum-heading-into-earnings.html",
-  "https://www.cnbc.com/2026/07/25/maine-democrats-are-meeting-to-pick-a-new-senate-nominee.html",
   "https://www.cnbc.com/2026/07/25/crypto-diversified-investment-portfolio.html",
   "https://www.cnbc.com/2026/07/25/blackstone-brookfield-and-kkr-sign-16-billion-oil-deal-with-kuwait.html",
   "https://www.cnbc.com/2026/07/25/how-this-70-year-old-honey-bee-farmer-is-keeping-his-family-farm-alive.html",
@@ -7838,6 +7783,16 @@
   "https://www.cnbc.com/2026/08/07/japan-us-yen-intervention-global-currency-markets.html",
   "https://www.cnbc.com/2026/08/06/stock-market-today-live-updates.html",
   "https://www.cnbc.com/2026/08/07/oil-rises-supply-fears-iran-draft-plan-strait-hormuz.html",
-  "https://www.cnbc.com/2026/08/06/meta-to-pay-into-567-million-fund-after-child-harms-case-new-mexico.html"
+  "https://www.cnbc.com/2026/08/06/meta-to-pay-into-567-million-fund-after-child-harms-case-new-mexico.html",
+  "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html",
+  "https://www.cnbc.com/2026/08/06/what-fridays-jobs-report-could-mean-for-investors.html",
+  "https://www.cnbc.com/2026/08/06/american-airlines-flight-upgrades-become-harder-to-get.html",
+  "https://www.cnbc.com/2026/08/06/virginia-governor-nextera-nee-dominion-data-center.html",
+  "https://www.cnbc.com/2026/08/06/mitch-mcconnell-health-update-senate-gop.html",
+  "https://www.cnbc.com/2026/08/06/sweetgreen-cuts-full-year-outlook-as-cyclospora-fears-weigh-on-sales.html",
+  "https://www.cnbc.com/2026/08/06/michigan-eases-lettuce-advice-as-state-health-department-says-cyclosporiasis-reports-decline.html",
+  "https://www.cnbc.com/2026/08/07/us-iran-war-trump-hormuz-diplomacy-oil-.html",
+  "https://www.cnbc.com/2026/08/07/meta-india-zuckerberg-apology-genz-protest.html",
+  "https://www.cnbc.com/2026/08/07/china-july-trade-exports-imports-surplus-imbalance-tariffs-.html"
  ]
 }
