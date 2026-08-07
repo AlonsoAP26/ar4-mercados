@@ -6890,5 +6890,291 @@
       "resistencias": [],
       "patronUltimaVela": "vela bajista sin patron destacable"
     }
+  },
+  {
+    "title": "Wall Street pausa antes del dato de empleo y el dólar gana terreno en la previa",
+    "excerpt": "El S&P 500 cede 0,2% y el Ibovespa cae 1,2% en una jornada de cautela previa al informe de empleo de EE.UU. del viernes.",
+    "symbol": "FOREXCOM:SPXUSD",
+    "trend": "down",
+    "body": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Toma de ganancias tras el rally y cierre mixto en Nueva York</h3><p>El S&P 500 cerró la sesión en 7.709,96 puntos, con una baja de 0,2% en el día, mientras el Nasdaq 100 retrocedió 0,4% hasta 29.373,33 unidades. El movimiento se dio después de una sesión previa marcada por un cierre en <cite index=\"1-13,1-14\">máximos históricos para el Dow Jones, mientras el S&P 500 y el Nasdaq terminaron a la baja</cite>. Según describió Kyle Rodda, analista senior de mercados de Capital.com, <cite index=\"1-15\">\"Wall Street se deslizó hacia el cierre, presionado por las acciones tecnológicas tras el masivo rally de la jornada anterior hacia máximos históricos\"</cite>, en referencia a la toma de beneficios que siguió a las subidas récord.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El foco pasa al informe de empleo de julio</h3><p>El mercado opera con cautela de cara a la publicación del reporte de nóminas no agrícolas de julio, que se conoce este viernes 7 de agosto. <cite index=\"3-0\">El informe de nóminas no agrícolas de julio se publica el viernes 7 de agosto, con una previsión de entre 80.000 y 91.000 nuevos empleos</cite>, mientras <cite index=\"3-1\">la tasa de desempleo podría subir al 4,3%</cite>. Ese dato es el que definirá si la Reserva Federal tiene margen para continuar con recortes de tasas en los próximos meses.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">El dólar firme y el Ibovespa entre los más golpeados</h3><p>El índice dólar (DXY) avanzó 0,3% hasta 99,98, reflejando una postura defensiva de los inversores antes del dato laboral. En la región, el Ibovespa fue el índice más castigado del día, con una caída de 1,2% hasta 175.546,36 puntos, aunque conserva una ganancia de 2,9% en el mes. El S&P 500 acumula un alza de 3,7% en la semana y de 3% en el mes, señal de que la pausa de hoy responde más a un reacomodo táctico que a un cambio de tendencia: el índice se mantiene por encima de su media de 200 sesiones y con un RSI de 64, en zona neutral.</p>",
+    "bodyPremium": "<h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Lectura técnica y el trasfondo geopolítico</h3><p>El Nasdaq 100 exhibe un RSI(14) de 54,4, todavía en terreno neutral y lejos de condiciones de sobrecompra, con el precio operando muy por debajo de su máximo de 52 semanas de 30.762,2 puntos. El S&P 500, en cambio, cotiza a solo 1,1% de su techo anual de 7.793,68, lo que explica la falta de apetito para perseguir nuevas compras antes de conocer el dato de empleo. En paralelo, persiste sobre la mesa la posibilidad de un acuerdo entre Estados Unidos e Irán para <cite index=\"1-1\">reabrir el estrecho de Ormuz</cite>, un factor que los operadores siguen de cerca porque, según Rodda, <cite index=\"1-16\">\"un avance en las conversaciones de paz entre EE.UU. e Irán podría proveer ese catalizador\"</cite> que el mercado necesita para retomar el impulso alcista. El DXY, con un RSI de 40,8, sigue en terreno débil pese al repunte diario, y acumula una baja de 1,1% en el mes.</p><h3 style=\"margin:20px 0 10px;font-size:1.15rem;\">Conclusión y análisis final</h3><p>La pausa de hoy en los índices estadounidenses luce más como una consolidación previa a un catalizador binario que como el inicio de una corrección: el S&P 500 sigue por encima de su media de 200 sesiones y a un paso de su récord histórico. El dato de empleo del viernes será determinante para el tramo corto de la curva de tasas y, por extensión, para el dólar: una cifra débil (por debajo del rango de 80.000-91.000 empleos estimado) reforzaría las apuestas de recortes de la Fed y podría aliviar la presión sobre monedas latinoamericanas; una cifra fuerte, en cambio, prolongaría la firmeza reciente del DXY. Para la región, el retroceso del Ibovespa es la variable a vigilar en las próximas ruedas, mientras se mantiene el respaldo de fondo que ofrece el petróleo si finalmente se confirma la reapertura del estrecho de Ormuz. En el corto plazo, el nivel de 7.760 puntos en el S&P 500 —cercano a su media móvil de 50 sesiones según lecturas técnicas recientes— funciona como referencia de soporte inmediato para el mercado estadounidense.</p><p style=\"color:var(--text-low);font-size:0.82rem;margin-top:10px;\"><em>Este contenido es informativo y de contexto de mercado, no constituye asesoría financiera ni una recomendación de inversión.</em></p>",
+    "sources": [
+      {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/08/05/stock-market-today-live-updates.html"
+      },
+      {
+        "name": "TheStreet",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-6-2026"
+      },
+      {
+        "name": "Economía y Finanzas",
+        "url": "https://www.economiafinanzas.com/el-mercado-laboral-estadounidense-en-el-punto-de-mira-las-nominas-no-agricolas-de-julio-marcaran-el-rumbo-de-la-fed/"
+      }
+    ],
+    "aiSummary": {
+      "que": "Los principales índices de EE.UU. cerraron con leves bajas y el Ibovespa retrocedió con más fuerza, mientras el dólar se afirmó antes del reporte de empleo de julio en EE.UU.",
+      "porque": "Los inversores tomaron ganancias tras el rally reciente y adoptaron una postura cautelosa a la espera de un dato laboral clave que puede redefinir el camino de tasas de la Fed.",
+      "activos": [
+        "S&P 500",
+        "Nasdaq 100",
+        "Ibovespa",
+        "Índice dólar (DXY)"
+      ],
+      "siguiente": "El informe de nóminas no agrícolas de julio, con foco en si se cumple el rango estimado de 80.000 a 91.000 empleos y en la tasa de desempleo."
+    },
+    "aiScenarios": {
+      "alcista": 35,
+      "lateral": 40,
+      "bajista": 25
+    },
+    "aiDetects": {
+      "probabilidad": 55,
+      "riesgo": "Medio",
+      "lectura": "La tendencia de fondo sigue alcista, pero la proximidad a máximos históricos y la expectativa por el dato de empleo elevan la sensibilidad a sorpresas de corto plazo."
+    },
+    "timeline": [
+      {
+        "cuando": "Antier",
+        "texto": "El S&P 500 y el Dow Jones marcaron nuevos máximos históricos impulsados por un fuerte rally corporativo."
+      },
+      {
+        "cuando": "Ayer",
+        "texto": "El Dow Jones cerró en récord mientras el S&P 500 y el Nasdaq retrocedieron por toma de ganancias en tecnológicas."
+      },
+      {
+        "cuando": "Hoy",
+        "texto": "El S&P 500 cede 0,2% y el Nasdaq 100 baja 0,4%; el Ibovespa cae 1,2% y el DXY sube 0,3% antes del dato de empleo."
+      },
+      {
+        "cuando": "Próximamente",
+        "texto": "Se publica el informe de nóminas no agrícolas de julio, con una previsión de 80.000 a 91.000 nuevos empleos."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es el informe de nóminas no agrícolas (NFP)?",
+        "a": "Es el reporte mensual del Departamento de Trabajo de EE.UU. que mide la creación o pérdida de empleos fuera del sector agrícola y es clave para las decisiones de la Fed."
+      },
+      {
+        "q": "¿Por qué sube el índice dólar (DXY) antes de un dato de empleo?",
+        "a": "Porque los inversores suelen posicionarse de forma defensiva ante la incertidumbre, y el dólar actúa como refugio hasta conocer cifras que definan el rumbo de las tasas."
+      },
+      {
+        "q": "¿Qué relación tiene el estrecho de Ormuz con los mercados bursátiles?",
+        "a": "Es una vía clave para el transporte de petróleo; cualquier señal de reapertura o tensión afecta el precio del crudo y, con ello, el ánimo de los mercados globales."
+      },
+      {
+        "q": "¿Por qué el Ibovespa cae más que los índices de EE.UU.?",
+        "a": "Los mercados emergentes suelen ser más sensibles a los movimientos del dólar y a la toma de riesgo global, lo que amplifica tanto las subidas como las caídas."
+      }
+    ],
+    "impactScore": 6,
+    "relatedSymbols": [
+      "FOREXCOM:NSXUSD",
+      "BMFBOVESPA:IBOV",
+      "CAPITALCOM:DXY",
+      "TVC:USOIL"
+    ],
+    "category": "Índices",
+    "heroType": "index",
+    "slug": "wall-street-pausa-antes-del-dato-de-empleo-y-el-dolar-gana-t-msi8ye0i",
+    "author": "AR4 Mercados",
+    "date": "2026-08-07",
+    "sourceName": "CNBC",
+    "sourceUrl": "https://www.cnbc.com/2026/08/05/stock-market-today-live-updates.html",
+    "marketPanel": [
+      {
+        "symbol": "FOREXCOM:SPXUSD",
+        "nombre": "S&P 500",
+        "yahooSymbol": "^GSPC",
+        "fuente": "Yahoo Finance (^GSPC)",
+        "fechaUltimaVela": "2026-08-06",
+        "precio": 7709.96,
+        "cierreAnterior": 7723.55,
+        "variacionDiaPct": -0.2,
+        "variacionSemanaPct": 3.7,
+        "variacionMesPct": 3,
+        "variacionAnioPct": 22.4,
+        "rangoDiaReal": {
+          "minimo": 7698.15,
+          "maximo": 7742.85
+        },
+        "rsi14": 64,
+        "lecturaRsi": "neutral",
+        "media50": 7489.49,
+        "media200": 7044.92,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 91.13,
+        "maximo52sem": 7793.68,
+        "minimo52sem": 6301.11,
+        "distanciaAMaximo52semPct": -1.1,
+        "distanciaAMinimo52semPct": 22.4,
+        "soportes": [
+          7426.54,
+          7376,
+          7333.68
+        ],
+        "resistencias": [],
+        "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+      },
+      {
+        "symbol": "FOREXCOM:NSXUSD",
+        "nombre": "Nasdaq 100",
+        "yahooSymbol": "^NDX",
+        "fuente": "Yahoo Finance (^NDX)",
+        "fechaUltimaVela": "2026-08-06",
+        "precio": 29373.33,
+        "cierreAnterior": 29487.79,
+        "variacionDiaPct": -0.4,
+        "variacionSemanaPct": 4.5,
+        "variacionMesPct": 0.4,
+        "variacionAnioPct": 27.6,
+        "rangoDiaReal": {
+          "minimo": 29123.38,
+          "maximo": 29569.76
+        },
+        "rsi14": 54.4,
+        "lecturaRsi": "neutral",
+        "media50": 29374.33,
+        "media200": 26601.59,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 632.87,
+        "maximo52sem": 30762.2,
+        "minimo52sem": 22841.42,
+        "distanciaAMaximo52semPct": -4.5,
+        "distanciaAMinimo52semPct": 28.6,
+        "soportes": [
+          28852.66,
+          28567.16,
+          28214.11
+        ],
+        "resistencias": [
+          29678.89,
+          29856.94,
+          30328.79
+        ],
+        "patronUltimaVela": "vela alcista sin patron destacable"
+      },
+      {
+        "symbol": "BMFBOVESPA:IBOV",
+        "nombre": "Ibovespa (Brasil)",
+        "yahooSymbol": "^BVSP",
+        "fuente": "Yahoo Finance (^BVSP)",
+        "fechaUltimaVela": "2026-08-06",
+        "precio": 175546.36,
+        "cierreAnterior": 177726,
+        "variacionDiaPct": -1.2,
+        "variacionSemanaPct": -0.9,
+        "variacionMesPct": 2.9,
+        "variacionAnioPct": 32,
+        "rangoDiaReal": {
+          "minimo": 0,
+          "maximo": 0
+        },
+        "rsi14": 50.4,
+        "lecturaRsi": "neutral",
+        "media50": 173157.51,
+        "media200": 172880.76,
+        "posicionVsMedia50": "por encima",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 14915.25,
+        "maximo52sem": 199355,
+        "minimo52sem": 0,
+        "distanciaAMaximo52semPct": -11.9,
+        "distanciaAMinimo52semPct": null,
+        "soportes": [
+          175039,
+          173544,
+          172219
+        ],
+        "resistencias": [
+          178350.5,
+          186057.5,
+          187334
+        ],
+        "patronUltimaVela": null
+      },
+      {
+        "symbol": "CAPITALCOM:DXY",
+        "nombre": "Indice dolar (DXY)",
+        "yahooSymbol": "DX-Y.NYB",
+        "fuente": "Yahoo Finance (DX-Y.NYB)",
+        "fechaUltimaVela": "2026-08-07",
+        "precio": 99.98,
+        "cierreAnterior": 99.69,
+        "variacionDiaPct": 0.3,
+        "variacionSemanaPct": 0,
+        "variacionMesPct": -1.1,
+        "variacionAnioPct": 1.2,
+        "rangoDiaReal": {
+          "minimo": 99.94,
+          "maximo": 99.98
+        },
+        "rsi14": 40.8,
+        "lecturaRsi": "neutral",
+        "media50": 100.48,
+        "media200": 99.16,
+        "posicionVsMedia50": "por debajo",
+        "posicionVsMedia200": "por encima",
+        "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+        "atr14": 0.4752,
+        "maximo52sem": 101.8,
+        "minimo52sem": 95.55,
+        "distanciaAMaximo52semPct": -1.8,
+        "distanciaAMinimo52semPct": 4.6,
+        "soportes": [
+          99.38,
+          98.79,
+          97.78
+        ],
+        "resistencias": [
+          100.54,
+          101.68
+        ],
+        "patronUltimaVela": "vela alcista de cuerpo amplio"
+      }
+    ],
+    "marketData": {
+      "symbol": "FOREXCOM:SPXUSD",
+      "nombre": "S&P 500",
+      "yahooSymbol": "^GSPC",
+      "fuente": "Yahoo Finance (^GSPC)",
+      "fechaUltimaVela": "2026-08-06",
+      "precio": 7709.96,
+      "cierreAnterior": 7723.55,
+      "variacionDiaPct": -0.2,
+      "variacionSemanaPct": 3.7,
+      "variacionMesPct": 3,
+      "variacionAnioPct": 22.4,
+      "rangoDiaReal": {
+        "minimo": 7698.15,
+        "maximo": 7742.85
+      },
+      "rsi14": 64,
+      "lecturaRsi": "neutral",
+      "media50": 7489.49,
+      "media200": 7044.92,
+      "posicionVsMedia50": "por encima",
+      "posicionVsMedia200": "por encima",
+      "cruceMedias": "media 50 por encima de la 200 (estructura alcista)",
+      "atr14": 91.13,
+      "maximo52sem": 7793.68,
+      "minimo52sem": 6301.11,
+      "distanciaAMaximo52semPct": -1.1,
+      "distanciaAMinimo52semPct": 22.4,
+      "soportes": [
+        7426.54,
+        7376,
+        7333.68
+      ],
+      "resistencias": [],
+      "patronUltimaVela": "doji (apertura y cierre casi iguales: indecision)"
+    }
   }
 ]
