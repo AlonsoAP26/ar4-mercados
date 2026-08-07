@@ -1,7 +1,293 @@
 {
- "lastId": 34164,
- "actualizado": "2026-08-07T11:55:34.883Z",
+ "lastId": 34173,
+ "actualizado": "2026-08-07T12:55:04.754Z",
  "items": [
+  {
+   "id": "34173",
+   "fecha": "2026-08-07T12:41:36+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34173",
+   "via": "DeItaone",
+   "original": "*YEN JUMPS 1% AGAINST DOLLAR AFTER US JOBS DATA",
+   "titulo": "Yen salta 1% contra dólar tras débil reporte de empleos estadounidenses",
+   "resumen": "El yen japonés se apreció 1% frente al dólar estadounidense inmediatamente después de la publicación del débil reporte de empleo de julio. La moneda japonesa se beneficia de contexto de tasas estadounidenses más bajas esperadas, que reduce el carry trade appeal del dólar.",
+   "analisis": {
+    "porque": "Movimientos en pares de divisas afectan competitividad exportadora, carry trades, y valuación relativa de activos globales. Apreciación del yen reduce presión inflacionaria en Japón pero daña exportadores.",
+    "queOcurrio": "Yen ganó 1% versus dólar tras datos de empleo USA débiles que reducen expectativas de tasas.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": true,
+   "activos": [
+    "USDJPY",
+    "JPY",
+    "Nikkei",
+    "Exportadores japoneses"
+   ],
+   "sesgos": [
+    {
+     "activo": "USDJPY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "JPY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos",
+   "keywords": [
+    "yen-apreciacion",
+    "usdjpy",
+    "tasas-bajas",
+    "carry-trade",
+    "divisas-forex"
+   ],
+   "tgText": "💱 YEN FORTALECE: Se aprecia 1% vs dólar tras empleo USA débil. Caída de tasas esperadas reduce carry appeal. USDJPY bajo presión.",
+   "xText": "YEN +1% vs USD: Reacción a empleo débil USA (tasas bajas esperadas). Carry trade desfavorable; USDJPY baja presión.",
+   "discordText": "**YEN APRECIA 1%** 💱\n• Vs USD: +1% tras datos empleo débil\n• Driver: tasas USA más bajas esperadas\n• Efecto: carry trade menos atractivo\n• Impacto Nikkei: potencial negativo para exportadores",
+   "pushText": "Yen sube 1% tras débil empleo USA; USDJPY bajo presión",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "USDJPY cae inmediatamente; pares como EURJPY y GBPJPY también presionados",
+    "despues": "Exportadores japoneses suben presión competitiva; Nikkei podría sufrir; bonos japoneses se benefician (tasas bajan si carry trade se deshace)",
+    "escenarios": "Traders monitorean: (1) velocidad de desmantelamiento de carry trades yen; (2) reacciones del BoJ a apreciación (podrían intervenir); (3) impacto en crecimiento exportador japones",
+    "riesgos": "Movimiento de 1% es significativo pero podría revertirse si mercado recalibra; intervención BoJ/USA posible si apreciación acelerada (ya hay antecedentes)"
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "neutral",
+    "nasdaq": "neutral",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "alcista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34153",
+   "fecha": "2026-08-07T10:04:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34153",
+   "via": "DeItaone",
+   "original": "🇺🇸 JULY JOBS REPORT: ALL EYES ON FRIDAY The July Nonfarm Payrolls report is due Friday at 8:30 AM ET. Prediction Markets • Kalshi: +72K Bank Forecasts • Highest: Citigroup, Santander +115K • Lowest: Deutsche Bank +65K • Median: +80K WSJ Consensus • Payrolls: +83K (vs. +57K prior) • Unemployment: 4.2% • Avg. Hourly Earnings: +0.3% M/M, +3.5% Y/Y https://t.co/OfZHvZl7Ng",
+   "titulo": "Reporte de empleos de julio en EE.UU.: expectativas de +83K y desempleo al 4,2%",
+   "resumen": "El informe de nóminas no agrícolas de julio se publica el viernes a las 8:30 AM ET. Las predicciones oscilan entre +65K (Deutsche Bank) y +115K (Citigroup/Santander), con consenso del WSJ en +83K versus +57K en junio. Se espera desempleo estable en 4,2% y salarios +0,3% mensual (+3,5% anual). Este dato es crítico para orientar la política monetaria de la Fed.",
+   "analisis": {
+    "porque": "Los datos de empleo son el segundo pilar de la Fed para decisiones de tasas. Un resultado débil (<70K) podría acelerar recortes de tasas; uno fuerte (>100K) presionaría al alza. Impacta directamente bonos, dólar y acciones.",
+    "queOcurrio": "Se ha publicado la preview oficial del reporte con múltiples pronósticos bancarios y de mercados de predicción (Kalshi). El titular no incluye el dato real aún; es una anticipación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/WSJ Consensus (agregación oficial)"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "DXY",
+    "NASDAQ",
+    "S&P500",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista si empleos sorprenden al alza"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista si sorpresa positiva en nóminas"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral-bajista si datos fuertes elevan tasas"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empleo|Datos Económicos",
+   "keywords": [
+    "nóminas-julio",
+    "desempleo",
+    "fed",
+    "mercados-trabajo",
+    "bonos-usa"
+   ],
+   "tgText": "🇺🇸 MAÑANA: Reporte empleos julio. Consenso +83K vs +57K anterior. Desempleo 4,2%, salarios +0,3% MoM. Dato clave para Fed. Publicación viernes 8:30 AM ET.",
+   "xText": "📊 VIERNES 8:30 AM ET: Nóminas julio EE.UU. El mercado espera +83K (vs +57K). Desempleo 4,2%. Dato crítico para próxima decisión de tasas de la Fed. #Markets",
+   "discordText": "**Reporte Empleos JULIO - EE.UU.**\n• Fecha: Viernes 8:30 AM ET\n• Consenso: +83K nóminas (anterior +57K)\n• Rango bancario: +65K a +115K\n• Desempleo esperado: 4,2%\n• Salarios: +0,3% MoM, +3,5% YoY\n→ Impacto alto en tasas Fed, bonos, dólar",
+   "pushText": "Empleos julio EE.UU. mañana: mercado espera +83K; dato clave para Fed",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Bonos USA (yields): sorpresa al alza en nóminas → yields suben (precios caen); sorpresa a la baja → yields bajan.",
+    "despues": "DXY (dólar) sigue a yields; NASDAQ sensible a cambios en expectativa de tasas; S&P500 menos volátil pero afectado por sector financiero.",
+    "escenarios": "Traders monitorean desviación vs consenso (+/-20K margen típico de reacción fuerte). Especial atención a salarios: aceleración sugiere inflación persistente; desaceleración facilita Fed pivote a recortes.",
+    "riesgos": "Revisión de junio podría restar importancia; dato podría ser 'no-verificable' hasta publicación oficial; volatilidad extrema esperada en primeros minutos post-anuncio."
+   },
+   "macro": {
+    "dolar": "alcista si nóminas sorprenden al alza",
+    "bonos": "bajista si datos fuertes (yields suben)",
+    "nasdaq": "bajista si sorpresa positiva eleva tasas esperadas",
+    "sp500": "neutral-bajista si empleos fuertes contradicen expectations de recortes",
+    "petroleo": "neutral (datos empleo no mueven crudo directamente)"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-07T12:35:25+00:00",
+     "id": "34171",
+     "texto": "El mercado laboral estadounidense sorprendió negativamente con una pérdida de 23.000 puestos en julio, muy por debajo del pronóstico de +83.000. Junio fue revisado a la baja a +20.000 empleos. La tasa de desempleo cayó inesperadamente a 4,1% desde 4,2%. El dato débil intensifica debates sobre la política de la Reserva Federal ante inflación persistente.",
+     "tgUrl": "https://t.me/walterbloomberg/34171"
+    },
+    {
+     "fecha": "2026-08-07T11:06:17+00:00",
+     "id": "34160",
+     "texto": "Traders de bonos se preparan para el reporte de empleos de viernes con mercados preciosando más de 50% de probabilidad de suba de tasas de la Fed en septiembre. Economistas esperan adición de ~80.000 empleos en julio. Datos fuertes, especialmente presión salarial, podrían elevar expectativas de hike. Reporte débil las reduciría. Datos inflacionarios de la próxima semana también serán críticos.",
+     "tgUrl": "https://t.me/walterbloomberg/34160"
+    }
+   ],
+   "actualizado": "2026-08-07T12:35:25+00:00"
+  },
+  {
+   "id": "34170",
+   "fecha": "2026-08-07T12:32:01+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34170",
+   "via": "DeItaone",
+   "original": "US INTEREST RATE FUTURES REDUCE CHANCES OF FED HIKE IN SEPTEMBER AFTER JOBS DATA",
+   "titulo": "Futuros de tasas reducen probabilidad de suba de tasas Fed en septiembre",
+   "resumen": "Tras el débil reporte de empleo, los futuros de tasas de interés redujeron significativamente las probabilidades de una suba de tasas por la Reserva Federal en septiembre. Según datos de Kalshi, el mercado ahora precia 62% de probabilidad de no cambio versus 34% para una suba de 25 pb.",
+   "analisis": {
+    "porque": "Las expectativas de tasas futuras son determinantes para valuación de bonos, monedas, criptomonedas y acciones de crecimiento. Cambio en probabilidades se materializa inmediatamente en precios.",
+    "queOcurrio": "Mercados de derivados revaluaron probabilidad de decisión Fed en septiembre: 62% sin cambio, 34% para +25pb (versus escenarios previos más hawkish).",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (Kalshi trading data)"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Rendimientos USA",
+    "DXY",
+    "EURUSD",
+    "Bitcoin",
+    "Ethereum",
+    "NASDAQ",
+    "Bonos USA",
+    "JPY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bitcoin",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "FED",
+   "keywords": [
+    "fed-septiembre",
+    "tasas-interes",
+    "probabilidades",
+    "mercado-derivados",
+    "política-monetaria"
+   ],
+   "tgText": "📈 MERCADOS PIVOTEAN: Futuros bajan a 62% probabilidad de NO cambio de tasas en Sep (vs 34% para +25pb). Reacción al empleo débil de julio refuerza narrativa dovish.",
+   "xText": "FED PIVOT: Kalshi traders ahora 62% para sin cambio en Sep vs 34% para +25pb, tras jobs débil. Bonos y yen se benefician, dólar presionado.",
+   "discordText": "**GIRO FED EN DERIVADOS** 💹\n• No cambio: 62% (sube vs antes)\n• +25pb: 34% (cae tras datos empleo)\n• Fuente: Kalshi (mercado predicción)\n• Sesgo: Dovish refuerza tras débil nómina",
+   "pushText": "Mercados reducen apuesta a suba Fed en septiembre a 34%",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Tasas USA a 2Y y 10Y caen (precios bonos suben); USD se debilita; pares como EURUSD y GBPUSD se aprecian contra el dólar",
+    "despues": "Bitcoin y cripto suben (contexto de tasas bajas); acciones tech ganan; oro mantiene presión alcista; acciones defensivas se ralentizan",
+    "escenarios": "Traders monitorean: (1) si otros datos económicos confirman debilidad (CPI, retail); (2) comunicaciones de funcionarios Fed (Powell, etc.); (3) si mercado sobrecorrige y precios resienten si datos son menos débiles",
+    "riesgos": "Cambio puede revertirse si datos próximos sorprenden al alza; Fed podría sorprender manteniendo tono más restrictivo de lo esperado; volatilidad en futuros de tasas si hay ruido comunicacional"
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "alcista",
+    "nasdaq": "alcista",
+    "dow": "neutral",
+    "sp500": "alcista",
+    "bitcoin": "alcista",
+    "ethereum": "alcista",
+    "bonos": "alcista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34165",
+   "fecha": "2026-08-07T12:11:18+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34165",
+   "via": "DeItaone",
+   "original": "BofA WARNS BULLISH SENTIMENT HAS GONE TOO FAR Bank of America says investor optimism has reached its most extreme level since 2021, signaling it may be time to cut risk. Its Bull & Bear indicator jumped to 9.7, driven by strong stock markets, credit inflows and tighter spreads. BofA recommends rotating toward defensive assets, bonds and the US dollar. The warning comes as global equities hit recor",
+   "titulo": "BofA advierte: optimismo de inversores alcanzó extremo desde 2021; recomienda rotación defensiva",
+   "resumen": "Bank of America emite alerta sobre exceso de sentimiento alcista en mercados globales, con su indicador Bull & Bear alcanzando 9,7 (máximo desde 2021). El banco atribuye el pico a fuertes mercados accionarios, ingresos de crédito y spreads comprimidos. BofA recomienda girar hacia activos defensivos, bonos y dólar como protección.",
+   "analisis": {
+    "porque": "Indicadores de sentimiento extremo de instituciones como BofA preceden ajustes de valuación. Advertencia de banco sistémico influye en rebalance de cartera y redimensionamiento de riesgos.",
+    "queOcurrio": "BofA publicó advertencia sobre exuberancia de inversores basada en Bull & Bear Indicator en 9,7 (máximo en 5 años) y recomendó rotación defensiva.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (Bank of America analysis)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos USA",
+    "DXY",
+    "Acciones defensivas"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Bancos Centrales",
+   "keywords": [
+    "sentimiento-mercado",
+    "bofa-warning",
+    "bull-bear-indicator",
+    "riesgo-corrección",
+    "rotación-cartera"
+   ],
+   "tgText": "⚠️ BOFA ALERTA: Sentimiento alcista en máximo desde 2021 (9,7 en Bull&Bear). Recomienda rotar a defensivas, bonos y USD. Equities accionarias en zona de riesgo.",
+   "xText": "BOFA WARNING: Bull&Bear Indicator en 9,7 (máximo 5 años). Sentimiento \"demasiado exuberante\". Recomendación: defensivas, bonos, USD. Mercados globales en alerta.",
+   "discordText": "**ALERTA BOFA: EXUBERANCIA** ⚠️\n• Bull&Bear: 9,7 (máximo desde 2021)\n• Drivers: acciones fuertes, crédito entrante, spreads comprimidos\n• Recomendación: rotar a defensivas + bonos + USD\n• Contexto: equities globales en máximos",
+   "pushText": "BofA alerta sobre exceso de optimismo en mercados; recomienda defensiva",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones cíclicas y tech (NASDAQ) podrían bajo presión si inversores heeding warning; rotación hacia defensivas (utilities, staples); bonos se benefician",
+    "despues": "USD fortalece si rotación hacia dólar se confirma; spreads de crédito podrían ampliarse; volatilidad implícita sube anticipando corrección",
+    "escenarios": "Traders monitorean: (1) si instituciones efectivamente giran carteras; (2) si próximos earnings sorprenden al alza o a la baja (catalizador); (3) si datos económicos débiles confirman necesidad de defensiva",
+    "riesgos": "Advertencia es opinión editorial de BofA, no predicción garantizada; inversores podrían ignorarla si narrative de crecimiento persiste; timing de corrección es incierto"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "34155",
    "fecha": "2026-08-07T10:29:09+00:00",
@@ -198,80 +484,6 @@
     "bonos": "alcista"
    },
    "updates": []
-  },
-  {
-   "id": "34153",
-   "fecha": "2026-08-07T10:04:05+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34153",
-   "via": "DeItaone",
-   "original": "🇺🇸 JULY JOBS REPORT: ALL EYES ON FRIDAY The July Nonfarm Payrolls report is due Friday at 8:30 AM ET. Prediction Markets • Kalshi: +72K Bank Forecasts • Highest: Citigroup, Santander +115K • Lowest: Deutsche Bank +65K • Median: +80K WSJ Consensus • Payrolls: +83K (vs. +57K prior) • Unemployment: 4.2% • Avg. Hourly Earnings: +0.3% M/M, +3.5% Y/Y https://t.co/OfZHvZl7Ng",
-   "titulo": "Reporte de empleos de julio en EE.UU.: expectativas de +83K y desempleo al 4,2%",
-   "resumen": "El informe de nóminas no agrícolas de julio se publica el viernes a las 8:30 AM ET. Las predicciones oscilan entre +65K (Deutsche Bank) y +115K (Citigroup/Santander), con consenso del WSJ en +83K versus +57K en junio. Se espera desempleo estable en 4,2% y salarios +0,3% mensual (+3,5% anual). Este dato es crítico para orientar la política monetaria de la Fed.",
-   "analisis": {
-    "porque": "Los datos de empleo son el segundo pilar de la Fed para decisiones de tasas. Un resultado débil (<70K) podría acelerar recortes de tasas; uno fuerte (>100K) presionaría al alza. Impacta directamente bonos, dólar y acciones.",
-    "queOcurrio": "Se ha publicado la preview oficial del reporte con múltiples pronósticos bancarios y de mercados de predicción (Kalshi). El titular no incluye el dato real aún; es una anticipación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/WSJ Consensus (agregación oficial)"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Bonos",
-    "DXY",
-    "NASDAQ",
-    "S&P500",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos",
-     "sesgo": "bajista si empleos sorprenden al alza"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista si sorpresa positiva en nóminas"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "neutral-bajista si datos fuertes elevan tasas"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empleo|Datos Económicos",
-   "keywords": [
-    "nóminas-julio",
-    "desempleo",
-    "fed",
-    "mercados-trabajo",
-    "bonos-usa"
-   ],
-   "tgText": "🇺🇸 MAÑANA: Reporte empleos julio. Consenso +83K vs +57K anterior. Desempleo 4,2%, salarios +0,3% MoM. Dato clave para Fed. Publicación viernes 8:30 AM ET.",
-   "xText": "📊 VIERNES 8:30 AM ET: Nóminas julio EE.UU. El mercado espera +83K (vs +57K). Desempleo 4,2%. Dato crítico para próxima decisión de tasas de la Fed. #Markets",
-   "discordText": "**Reporte Empleos JULIO - EE.UU.**\n• Fecha: Viernes 8:30 AM ET\n• Consenso: +83K nóminas (anterior +57K)\n• Rango bancario: +65K a +115K\n• Desempleo esperado: 4,2%\n• Salarios: +0,3% MoM, +3,5% YoY\n→ Impacto alto en tasas Fed, bonos, dólar",
-   "pushText": "Empleos julio EE.UU. mañana: mercado espera +83K; dato clave para Fed",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "Bonos USA (yields): sorpresa al alza en nóminas → yields suben (precios caen); sorpresa a la baja → yields bajan.",
-    "despues": "DXY (dólar) sigue a yields; NASDAQ sensible a cambios en expectativa de tasas; S&P500 menos volátil pero afectado por sector financiero.",
-    "escenarios": "Traders monitorean desviación vs consenso (+/-20K margen típico de reacción fuerte). Especial atención a salarios: aceleración sugiere inflación persistente; desaceleración facilita Fed pivote a recortes.",
-    "riesgos": "Revisión de junio podría restar importancia; dato podría ser 'no-verificable' hasta publicación oficial; volatilidad extrema esperada en primeros minutos post-anuncio."
-   },
-   "macro": {
-    "dolar": "alcista si nóminas sorprenden al alza",
-    "bonos": "bajista si datos fuertes (yields suben)",
-    "nasdaq": "bajista si sorpresa positiva eleva tasas esperadas",
-    "sp500": "neutral-bajista si empleos fuertes contradicen expectations de recortes",
-    "petroleo": "neutral (datos empleo no mueven crudo directamente)"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-07T11:06:17+00:00",
-     "id": "34160",
-     "texto": "Traders de bonos se preparan para el reporte de empleos de viernes con mercados preciosando más de 50% de probabilidad de suba de tasas de la Fed en septiembre. Economistas esperan adición de ~80.000 empleos en julio. Datos fuertes, especialmente presión salarial, podrían elevar expectativas de hike. Reporte débil las reduciría. Datos inflacionarios de la próxima semana también serán críticos.",
-     "tgUrl": "https://t.me/walterbloomberg/34160"
-    }
-   ],
-   "actualizado": "2026-08-07T11:06:17+00:00"
   },
   {
    "id": "34157",
@@ -7425,171 +7637,6 @@
    "macro": {
     "dolar": "neutral (presión bajista leve en JPY supporta)"
    },
-   "updates": []
-  },
-  {
-   "id": "33947",
-   "fecha": "2026-08-04T11:32:53+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33947",
-   "via": "DeItaone",
-   "original": "*TESLA CHINA JULY DELIVERIES RISE 37.8% Y/Y: CPCA *CPCA SAYS TESLA CHINA JULY DELIVERIES HIT 93,579 UNITS",
-   "titulo": "Tesla China: entregas julio suben 37,8% anual a 93.579 unidades",
-   "resumen": "Tesla incrementó entregas en China durante julio en 37,8% interanual, alcanzando 93.579 vehículos según reporte de CPCA (China Passenger Car Association). Cifra demuestra recuperación de demanda en mercado clave tras políticas de estímulo estatal.",
-   "analisis": {
-    "porque": "China es 25% de ingresos de Tesla. Recuperación forte señala éxito de subsidios chinos y demanda de EV. Impacta margen global de TSLA, sentimiento sobre EV y competencia con BYD.",
-    "queOcurrio": "Entregas en China aceleran 37,8% YoY en julio, superando expectativas de crecimiento modesto. CPCA (fuente oficial china de datos automotrices) confirma cifra.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CPCA"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "TSLA",
-    "Tecnología",
-    "Nasdaq",
-    "Automóvil Global"
-   ],
-   "sesgos": [
-    {
-     "activo": "TSLA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "XLK (Tech)",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "Tesla",
-    "China",
-    "entregas",
-    "EV",
-    "crecimiento"
-   ],
-   "tgText": "🚗 Tesla China: entregas julio +37,8% YoY a 93.579 unidades. Fuerte recuperación en mercado clave impulsada por estímulos. Margen global TSLA puede mejorar.",
-   "xText": "🚗 Tesla China July +37.8% YoY → 93,579 units. Strong rebound on stimulus. Key for TSLA global margin & competitive position vs BYD.",
-   "discordText": "**Empresas | Tecnología**\n• **Tesla China**: +37,8% YoY → 93.579 entregas julio\n• Recuperación por estímulos chinos\n• Impacto positivo en márgenes TSLA global\n• Competencia BYD sigue vieja",
-   "pushText": "Tesla China julio +37,8% YoY a 93.579 unidades.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "TSLA puede subir 1-2% en reacción positiva; Nasdaq Tech mira con atención",
-    "despues": "Comparables de auto global (F, GM) y EV plays observan competencia; BYD presión a margen de TSLA",
-    "escenarios": "Traders vigilan: (1) si estímulos chinos son temporales o sostenibles, (2) margen operativo de TSLA en China vs BYD/NIO, (3) cuota de mercado EV en China",
-    "riesgos": "Datos CPCA pueden incluir vehículos de garantía extendida no vendidos. Estímulos pueden revertirse. BYD sigue siendo competencia fuerte con menor precio."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33946",
-   "fecha": "2026-08-04T11:30:50+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33946",
-   "via": "DeItaone",
-   "original": "CME GROUP JULY VOLUME HITS NEW RECORD OF 27 MILLION CONTRACTS, UP 23% YEAR OVER YEAR",
-   "titulo": "CME Group: volumen julio récord de 27 millones contratos, +23% YoY",
-   "resumen": "CME Group reportó volumen de trading de 27 millones de contratos en julio, nuevo máximo histórico, lo que representa un aumento de 23% respecto a igual mes del año anterior. Actividad refleja volatilidad geopolítica, expectativas de Fed y trading de divisas.",
-   "analisis": {
-    "porque": "Volumen CME es indicador adelantado de volatilidad y liquidez de mercado. Récord sugiere traders posicionándose en futuros ante cambios de política (Fed, geopolítica). Bullish para CME Group (operador de bolsa).",
-    "queOcurrio": "CME registró máximo histórico de 27M contratos en julio, +23% YoY. Impulsado por aumento en actividad de divisas, tasas y commodities.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CME Group"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "CME (Bolsa)",
-    "Futuros",
-    "Volatilidad Implícita",
-    "USD",
-    "Tasas"
-   ],
-   "sesgos": [
-    {
-     "activo": "CME",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Volatilidad Implícita",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "CME",
-    "volumen",
-    "futuros",
-    "trading",
-    "liquidez"
-   ],
-   "tgText": "📈 CME Group: volumen julio récord 27M contratos, +23% YoY. Máximo histórico refleja volatilidad geopolítica y ajustes de posiciones. Bullish para operador de bolsa.",
-   "xText": "📈 CME Group reports record July volume: 27M contracts, +23% YoY. New all-time high signals elevated trading activity & volatility. Bullish for exchange operator.",
-   "discordText": "**Datos Económicos**\n• CME Group volumen julio: 27M contratos (récord)\n• Crecimiento +23% YoY\n• Refleja volatilidad geopolítica y ajustes Fed\n• Bullish para operador de bolsa CME",
-   "pushText": "CME volumen julio récord: 27M contratos, +23% YoY.",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "CME (acción) sube 0.5-1% en noticia positiva de ingresos potenciales por comisiones",
-    "despues": "Otros exchanges (ICE, NDAQ) pueden reflejar momentum de trading",
-    "escenarios": "Traders ven oportunidad de liquidez; analysts monitorean si sustentable. Volumen alto puede bajar comisión por contrato si competencia",
-    "riesgos": "Volumen no garantiza rentabilidad; depende de pricing de comisiones. Reversión posible si volatilidad normaliza."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33944",
-   "fecha": "2026-08-04T11:01:40+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33944",
-   "via": "DeItaone",
-   "original": "$MCD - MCDONALD'S EPS BEATS, SALES COME IN SLIGHTLY LIGHT Results • Adj. EPS: $3.38 vs. $3.32 est. • Revenue: $7.10B vs. $7.13B est. • EPS: $3.32 • Global Comparable Sales: +1.3% vs. +1.39% est. • U.S. Comparable Sales: +0.8% vs. +1.06% est. • Global Systemwide Sales: +5.0% (+4.0% constant currency) Other • Pre-tax Charges: $52M • Leadership: Named Skye Anderson President of McDonald's USA, succee",
-   "titulo": "$MCD: McDonald's supera EPS pero ventas quedan bajo expectativas",
-   "resumen": "McDonald's reportó ganancias por acción ajustadas de $3,38 vs. estimado $3,32, pero ingresos de $7,10B quedaron por debajo del consenso de $7,13B. Ventas comparables globales crecieron 1,3% (esperado 1,39%) y en USA apenas 0,8% vs. 1,06% estimado. Nombra a Skye Anderson como presidente de McDonald's USA.",
-   "analisis": {
-    "porque": "MCD es proxy de consumidor global y presión de precios. Beat en EPS pero miss en ingresos señala márgenes comprimidos y debilidad de tráfico de clientes. Impacta confianza en ciclo de consumo.",
-    "queOcurrio": "Ganancias superan estimado pero ventas decepcionan. Crecimiento comparable débil en USA (0,8% vs. +1,06% esperado) sugiere sensibilidad de cliente a precios elevados. Leadership change en USA.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "MCD",
-    "Consumer Discretionary",
-    "S&P500",
-    "Nasdaq"
-   ],
-   "sesgos": [
-    {
-     "activo": "MCD",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "XLY (Consumer Discretionary)",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "McDonald's",
-    "earnings",
-    "consumidor",
-    "USA"
-   ],
-   "tgText": "📊 MCD gana en EPS ($3,38 vs. $3,32 est.) pero decepciona en ventas ($7,10B vs. $7,13B). Comp sales USA débil: +0,8% vs. +1,06%. Señal de estrés en consumidor.",
-   "xText": "MCD: EPS beat ($3,38 vs $3,32E) pero ingresos miss ($7,10B vs $7,13BE). Comp sales USA +0,8% vs +1,06%E. Presión de precios en cliente visible.",
-   "discordText": "**Earnings | Empresas**\n• **MCD**: EPS beat pero revenue miss\n• Comp sales USA débil: +0,8% vs +1,06%E\n• Indicador de estrés en consumidor\n• Nuevo liderazgo en USA (Skye Anderson)",
-   "pushText": "MCD: EPS beat pero ventas decepcionan. Consumidor presionado.",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Acción MCD puede bajar 2-3% en pre-market por misguide en ingresos; Consumer Discretionary ETF (XLY) podría caer 0.5-1%",
-    "despues": "Resto de quick-service restaurants y consumer names vigilan mismo tema. Expectativas de margen bajo presión.",
-    "escenarios": "Traders analizan: (1) si debilidad es cíclica o estructural, (2) si guía forward es bajista, (3) impacto en valuaciones de defensivos de consumo",
-    "riesgos": "Change in leadership podría interpretarse como debilidad operativa. Miss en ventas podría ser señal más amplia de crash de consumidor."
-   },
-   "macro": null,
    "updates": []
   }
  ],
