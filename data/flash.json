@@ -1,6 +1,6 @@
 {
  "lastId": 34189,
- "actualizado": "2026-08-07T17:05:11.619Z",
+ "actualizado": "2026-08-07T19:56:05.214Z",
  "items": [
   {
    "id": "34153",
@@ -68,6 +68,12 @@
    },
    "updates": [
     {
+     "fecha": "2026-08-07T19:14:22.000Z",
+     "id": "916752701",
+     "texto": "El mercado laboral estadounidense sorprendió a la baja en julio con una pérdida neta de 23.000 empleos, contradiciendo las expectativas de +83.000. Este dato debilita significativamente el argumento de fortaleza económica y refuerza las apuestas por recortes de tasas de la Reserva Federal en próximas reuniones. El titular no especifica la tasa de desempleo final.",
+     "tgUrl": "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html"
+    },
+    {
      "fecha": "2026-08-07T16:54:43+00:00",
      "id": "34189",
      "texto": "Bank of America sostiene expectativa de 75 puntos base en alzas de tasas Fed este año, iniciando en septiembre, a pesar de datos de empleo decepcionantes (nóminas -23K en julio, revisión a baja de 103K previos). Desempleo bajó a 4,1%, pero crecimiento salarial desaceleró a 3,2%. BofA argumenta que inflación sigue siendo prioridad central de la Fed.",
@@ -86,7 +92,285 @@
      "tgUrl": "https://t.me/walterbloomberg/34160"
     }
    ],
-   "actualizado": "2026-08-07T16:54:43+00:00"
+   "actualizado": "2026-08-07T19:14:22.000Z"
+  },
+  {
+   "id": "917535700",
+   "fecha": "2026-08-07T19:09:40.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/stock-market-next-week-outlook-for-aug-10-14-2026-.html",
+   "via": "CNBC",
+   "original": "The stakes for next week&apos;s inflation data just got higher. Here&apos;s what&apos;s ahead",
+   "titulo": "Inflación de próxima semana es crítica para decisiones de tasas Fed",
+   "resumen": "Próximos datos de inflación estadounidense (CPI) adquieren importancia capital para orientar decisiones de política monetaria de la Reserva Federal. En contexto de debilitamiento laboral ya confirmado, los números de precios serán decisivos para determinar velocidad y magnitud de recortes de tasas. El titular no especifica fechas ni consenso de proyecciones.",
+   "analisis": {
+    "porque": "Inflación es variable crítica que equilibra la ecuación de decisión de tasas; junto a empleo débil, determina urgencia de alivio monetario",
+    "queOcurrio": "Se destaca que datos de inflación de próxima semana tendrán peso decisorio en análisis de Fed para política monetaria",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Rendimientos USA",
+    "S&P500",
+    "NASDAQ",
+    "DXY",
+    "Oro",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Inflación",
+   "keywords": [
+    "cpi-usa",
+    "inflacion-agosto",
+    "fed-politica-monetaria",
+    "datos-economicos"
+   ],
+   "tgText": "📊 PRÓXIMA SEMANA CRÍTICA: Datos de inflación (CPI) serán determinantes para decisiones de tasas Fed. Con empleo débil, cualquier sorpresa inflacionaria marcará calendario de recortes.",
+   "xText": "⚠️ CPI de próxima semana es crítico para Fed. Con empleo contrayéndose, inflación será clave para velocidad de recortes de tasas. Volatilidad esperada en mercados.",
+   "discordText": "**DATOS CLAVE PRÓXIMA SEMANA**\n• **Qué:** Reporte de Inflación (CPI USA)\n• **Importancia:** Crítica para decisiones Fed\n• **Contexto:** Empleo débil + datos de precios = directriz de tasas",
+   "pushText": "📈 CPI próxima semana será determinante para tasas Fed",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Rendimientos de Treasuries (reacción inmediata según CPI; si sube más de lo esperado, yields suben; viceversa).",
+    "despues": "Dólar (sigue a rendimientos). Índices accionarios. Oro (inversa a yields).",
+    "escenarios": "Mercado vigilará: (1) CPI core vs headline, (2) comparativas año-a-año, (3) componentes volátiles (energía, alimentos). Cualquier sorpresa al alza extenderá hold de tasas; sorpresa a la baja acelera recortes.",
+    "riesgos": "Volatilidad extrema esperada. Posiciones especulativas en FX y bonos pueden ver stop-losses. Interpretación de Fed puede diferir de mercado."
+   },
+   "macro": {
+    "dolar": "neutral (dependerá de CPI)",
+    "oro": "neutral (dependerá de CPI)",
+    "bonos": "neutral (dependerá de CPI)",
+    "nasdaq": "neutral (dependerá de CPI)"
+   },
+   "updates": []
+  },
+  {
+   "id": "947782623",
+   "fecha": "2026-08-07T19:06:33.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/doximity-shares-double-heres-whats-driving-it-.html",
+   "via": "CNBC",
+   "original": "Shares of this digital medical platform jumped more than 100% overnight. Here’s why",
+   "titulo": "Acciones de plataforma médica digital disparan +100% en una noche",
+   "resumen": "Las acciones de una plataforma de salud digital experimentaron un salto de más del 100% en sesión nocturna. El movimiento refleja evento corporativo específico (no detallade en el titular). El título no especifica nombre de empresa, catalizador exacto ni volumen de negociación.",
+   "analisis": {
+    "porque": "Volatilidad extrema puede señalar fusión, cambio de control, resultado de litigio o anuncio transformacional; relevante para traders de gap e historia de valuación",
+    "queOcurrio": "Acciones de compañía de telemedicina/salud digital suben 100%+ overnight",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Healthcare sector"
+   ],
+   "sesgos": [
+    {
+     "activo": "Sectores de Salud Digital",
+     "sesgo": "alcista (evento específico)"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empresas",
+   "keywords": [
+    "salud-digital",
+    "gap-alcista",
+    "telemedicina",
+    "m&a-sector-salud"
+   ],
+   "tgText": "📱 VOLATILIDAD: Acciones de plataforma médica digital disparan +100% overnight. CNBC no especifica empresa ni catalizador; vigilar comunicado de prensa.",
+   "xText": "📈 Salto de 100%+ en acciones de salud digital nocturno. Probable M&A, litigio o anuncio corporativo. Verificar details en comunicado oficial.",
+   "discordText": "**MOVIMIENTO EXTREMO**\n• **Activo:** Plataforma salud digital (sin identificar)\n• **Movimiento:** +100% overnight\n• **Catalizador:** No especificado en titular",
+   "pushText": "📈 Acciones de salud digital +100% overnight; catalizador TBD",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "Stock específico (potencial reversión si fue sobreventa previa o vol spike infundado). Sectores afines de salud digital.",
+    "despues": "Bonos corporativos si es M&A. Índices amplios si es movimiento de revaluación sistémica.",
+    "escenarios": "Traders vigilarán: (1) comunicado corporativo oficial, (2) volumen de negociación y distribución, (3) si es short squeeze, (4) viabilidad fundamental del movimiento.",
+    "riesgos": "ALTO: Titular insuficiente. Riesgo de reversión brusca si movimiento fue especulativo puro. Verificar comunicados de empresa antes de posicionar."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "938447694",
+   "fecha": "2026-08-07T18:38:17.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/trump-lisa-cook-federal-reserve.html",
+   "via": "CNBC",
+   "original": "Trump revives effort to fire Fed&apos;s Lisa Cook",
+   "titulo": "Trump reaviva intento de destituir a Lisa Cook de la Reserva Federal",
+   "resumen": "El expresidente Trump ha reactivado esfuerzos para lograr la salida de Lisa Cook, gobernadora de la Reserva Federal. Cook ha sido blanco de críticas políticas por su posicionamiento en debates de política monetaria. El titular no especifica mecanismos legales, cargos específicos ni probabilidad de éxito de la iniciativa.",
+   "analisis": {
+    "porque": "Refleja tensión política sobre independencia de Fed; mercados valúan riesgo de politización de decisiones monetarias",
+    "queOcurrio": "Trump revive campaña para remover a gobernadora Cook de la Junta de la Reserva Federal",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "DXY",
+    "S&P500",
+    "Bonos",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "fed-independencia",
+    "lisa-cook",
+    "politica-monetaria",
+    "trump"
+   ],
+   "tgText": "🏛️ RIESGO INSTITUCIONAL: Trump reaviva esfuerzos para remover a Lisa Cook de Fed. Preocupación sobre independencia de banco central; mercado vigila implicaciones para tasas.",
+   "xText": "⚠️ Trump reactiva intento de destituir a Lisa Cook (Fed). Riesgo de politización de decisiones monetarias. Mercados monitorizan impacto en credibilidad institucional.",
+   "discordText": "**PRESIÓN POLÍTICA SOBRE FED**\n• **Acción:** Trump revive intento de remover Cook\n• **Riesgo:** Erosión de independencia de banco central\n• **Mercado:** Valúa incertidumbre sobre futuro de política",
+   "pushText": "⚖️ Trump reaviva intento de destituir a Cook de Fed",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Dólar (debilita si mercado ve riesgo de Fed más dovish/politizada). Treasuries de largo plazo (spreads se abren).",
+    "despues": "S&P500 (potencialmente alcista si expectativa es Fed más laxa). Volatilidad implícita sube por incertidumbre institucional.",
+    "escenarios": "Traders vigilarán: (1) viabilidad legal del procedimiento, (2) posición de otros gobernadores, (3) comunicados de Fed sobre independencia. Riesgo de prime brokerage para posiciones de carry.",
+    "riesgos": "Riesgo legal/constitucional es muy alto (gobernadores de Fed tienen mandatos fijos). Mercado puede sobreestimar probabilidad, causando volatilidad infundada."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "906722796",
+   "fecha": "2026-08-07T18:30:23.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/prediction-markets-take-center-stage-in-latest-quarterly-earnings.html",
+   "via": "CNBC",
+   "original": "Prediction markets take center stage in latest round of quarterly earnings reports",
+   "titulo": "Mercados de predicción ganan relevancia en reportes de ganancias trimestrales",
+   "resumen": "Mercados de predicción (prediction markets) han ganado protagonismo en la última ronda de reportes de ganancias trimestrales, reflejando búsqueda de traders por herramientas alternativas de estimación. Estos mercados operan como agregadores de probabilidades sobre resultados empresariales. El titular no especifica qué plataformas, qué sectores o precisión relativa versus consensus.",
+   "analisis": {
+    "porque": "Indica cambio en dinámicas de información y precio en ciclos de earnings; traders adoptan fuentes de pronóstico descentralizadas",
+    "queOcurrio": "Prediction markets cobran mayor importancia como herramienta de análisis durante temporada de earnings trimestrales",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Volatilidad"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "prediction-markets",
+    "earnings",
+    "informatica-mercados",
+    "analisis-fundamental"
+   ],
+   "tgText": "📊 HERRAMIENTAS: Mercados de predicción cobran relevancia en temporada de earnings. Traders usan plataformas descentralizadas para estimar resultados corporativos.",
+   "xText": "🔮 Prediction markets ganan peso en análisis de earnings. Traders integran pronósticos descentralizados a lado de consensus Wall Street.",
+   "discordText": "**METODOLOGÍA EN EVOLUCIÓN**\n• **Tendencia:** Prediction markets más usados en earnings\n• **Razón:** Agregación de probabilidades alternativa\n• **Mercado:** Diversificación de fuentes de info",
+   "pushText": "📈 Prediction markets crecen en importancia durante earnings",
+   "importancia": 4,
+   "reaccion": {
+    "primero": "Volatilidad intradiaria en stocks antes de earnings (traders arbitran consensus vs prediction markets).",
+    "despues": "Posible revaluación de empresas donde prediction markets divergen significativamente de Wall Street.",
+    "escenarios": "Traders vigilarán si prediction markets anticipan mejor sorpresas de earnings que analistas tradicionales. Correlación con movimientos post-earnings.",
+    "riesgos": "Prediction markets pueden ser manipulados (bajo volumen en algunos). Muestra de sesgos de participantes."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "921696000",
+   "fecha": "2026-08-07T18:22:56.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/gold-bugs-spend-180-million-betting-alls-clear-for-metal-as-bond-yields-stall.html",
+   "via": "CNBC",
+   "original": "Gold bugs spend $180 million betting all&apos;s clear for metal as bond yields stall",
+   "titulo": "Traders apuestan $180M al alza del oro mientras rendimientos se estancan",
+   "resumen": "Especuladores han destinado aproximadamente $180 millones en posiciones alcistas sobre oro, reflejando confianza en que el metal continuará beneficiándose del entorno de tasas de interés estancadas. La apuesta sugiere anticipo de menor presión deflacionaria desde rendimientos de bonos. El titular no especifica instrumentos exactos ni plazo de las posiciones.",
+   "analisis": {
+    "porque": "Refleja rotación de capital hacia activos de refugio/valor real en contexto de posible suavización monetaria",
+    "queOcurrio": "Flujos especulativos de $180M hacia posiciones alcistas en oro ante rendimientos de bonos sin movimiento claro",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Oro",
+    "Rendimientos USA",
+    "DXY",
+    "Bonos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "oro",
+    "tasas-interes",
+    "bonos-usa",
+    "especulacion"
+   ],
+   "tgText": "💰 FLUJOS: $180M en apuestas alcistas de oro reflejan confianza en continuidad de yields bajos. Traders anticipan beneficio del metal en entorno de tasas estancadas.",
+   "xText": "📈 Especuladores desembolsan $180M en oro alcista ante rendimientos sin dirección clara. Apuesta refleja anticipación de tasas más bajas en mediano plazo.",
+   "discordText": "**FLUJOS HACIA ORO**\n• **Montante:** $180 millones en posiciones alcistas\n• **Catalizador:** Rendimientos de bonos estancados\n• **Interpretación:** Anticipación de menor presión de tasas",
+   "pushText": "💛 $180M en oro alcista; traders apuestan por tasas estancadas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Oro spot (sube con reafirmación de expectativas de tasas más bajas). Dólar debilita en paralelo.",
+    "despues": "Bonos de largo plazo (si yields caen más). Sectores defensivos en acciones.",
+    "escenarios": "Traders vigilarán próximos datos de inflación (CPI) para validar tesis de recortes. Nivel de $2.500-$2.600 USD/oz clave para extensión alcista.",
+    "riesgos": "Posiciones especulativas son reversibles rápidamente. Si datos económicos mejoran inesperadamente, gold puede caer."
+   },
+   "macro": {
+    "oro": "alcista (tasas bajas esperadas)",
+    "dolar": "bajista (carry menos atractivo)",
+    "bonos": "alcista (demanda refugio)"
+   },
+   "updates": []
   },
   {
    "id": "34188",
@@ -7415,333 +7699,9 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "33991",
-   "fecha": "2026-08-04T20:18:27+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33991",
-   "via": "DeItaone",
-   "original": "$SPCX - SPACEX POSTS BIG REVENUE BEAT, AI LOSSES NARROW Results 🔸Adj. EPS: -$0.09 vs. -$0.29 est. 🔸Revenue: $7.8B vs. $6.82B est. (+92% YoY) 🔸Adj. EBITDA: $3.5B vs. $2.0B est. 🔸AI Operating Loss: -$1.26B vs. -$2.39B est. 🔸Cash & Investments: $100B 🔸Backlog: $47.5B 🔸Segment Revenue: Connectivity $4.29B, AI $2.56B, Space $962M 🔸Net Loss: $541M 🔸Capex: $18.4B",
-   "titulo": "SpaceX supera ingresos; pérdidas de IA se reducen a la mitad vs estimaciones",
-   "resumen": "SpaceX reportó ingresos de $7.8B (+92% anual), superando consenso de $6.82B. Pérdida ajustada por acción de -$0.09 vs -$0.29 estimado. EBITDA ajustado de $3.5B vs $2.0B esperado. Pérdida operativa en IA se redujo de -$2.39B a -$1.26B. Backlog de $47.5B y efectivo de $100B posicionan compañía para capex de $18.4B.",
-   "analisis": {
-    "porque": "SpaceX es proveedor crítico de capacidad satelital y conectividad; resultados afectan valuación del ecosistema espacial y confianza en proyectos de infraestructura orbital. Margen EBITDA triple vs consenso sugiere eficiencias operativas no anticipadas.",
-    "queOcurrio": "SpaceX divulgó resultados trimestrales con revenue beat masivo, especialmente en segmento de conectividad ($4.29B). Pérdidas en división de IA mejoraron significativamente aunque siguen siendo negativas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "SPCX",
-    "NVDA",
-    "Tecnología",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "SPCX",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Sector Tecnología",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NVDA",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX",
-    "resultados-trimestrales",
-    "ingresos-satelital",
-    "capex-espacial"
-   ],
-   "tgText": "📊 SpaceX: ingresos $7.8B (+92% YoY) vs consenso $6.82B. EBITDA $3.5B vs $2.0B est. Pérdida IA mejora a -$1.26B vs -$2.39B. Backlog $47.5B, efectivo $100B.",
-   "xText": "SpaceX bate ingresos: $7.8B (+92% YoY) vs $6.82B. EBITDA $3.5B vs $2.0B. Pérdidas IA se reducen 47%. Backlog $47.5B posiciona expansión orbital. $SPCX",
-   "discordText": "**SpaceX Earnings Beat**\n• Revenue: $7.8B vs $6.82B est. (+92% YoY)\n• EBITDA Adj: $3.5B vs $2.0B\n• AI Op Loss: -$1.26B vs -$2.39B\n• Backlog: $47.5B | Cash: $100B",
-   "pushText": "SpaceX bate ingresos con +92% anual; pérdidas de IA se reducen a la mitad",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "SPCX/equivalentes privados: beat masivo en revenue y EBITDA genera revisión alcista de múltiplos de crecimiento; fondos tech reposicionan exposición espacial.",
-    "despues": "Sector de semiconductios (NVDA competidor pero también proveedor): mejora operativa sin dependencia exclusiva de IA revaloriza cadena. S&P500: componente tech se refuerza.",
-    "escenarios": "Traders vigilan: (1) si beat de conectividad es sostenible o pico cíclico, (2) capex $18.4B vs flujo de caja libre sostenibilidad, (3) backlog $47.5B realización timing, (4) pérdidas IA reducción trayectoria hacia rentabilidad.",
-    "riesgos": "Capex de $18.4B es 18% de revenue; si proyectos satelitales enfrentan retrasos regulatorios o competencia, margen mejora es reversible. Pérdidas IA siguen siendo material ($1.26B)."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33990,
-   "fecha": "2026-08-04T16:24:28+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33990",
-   "via": "DeItaone",
-   "original": "IRAN, OMAN REPORT PROGRESS ON HORMUZ TALKS Iran's Foreign Ministry said negotiations with Oman on safe shipping routes through the Strait of Hormuz are progressing positively. The talks aim to establish a transit corridor that balances Iranian sovereignty with the national security interests of both countries. Tehran said technical and political discussions have been constructive, with the final a",
-   "titulo": "Irán y Omán reportan avances en negociaciones del Estrecho de Ormuz",
-   "resumen": "El ministerio de Relaciones Exteriores iraní informó que las negociaciones con Omán sobre corredores seguros en el Estrecho de Ormuz avanzan positivamente en niveles técnico y político. Las conversaciones buscan establecer una ruta de tránsito que equilibre la soberanía iraní con intereses de seguridad nacional. Teherán afirmó que los diálogos han sido constructivos, con anuncio final pendiente de conclusión de negociaciones.",
-   "analisis": {
-    "porque": "Confirmación de avances en resolución del cierre del Estrecho de Ormuz reducirían premio de riesgo geopolítico en petróleo y energía global. Afecta directamente precios de crudo y volatilidad de mercados desarrollados.",
-    "queOcurrio": "Irán reporta negociaciones con Omán en fase avanzada sobre corredores de tránsito seguro en Ormuz, con evaluación positiva de ambos lados (técnico y político).",
-    "estado": "confirmado",
-    "fuenteOriginal": "FARS (medios estatales iraníes)"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "S&P500",
-    "EURUSD",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "Estrecho-Ormuz",
-    "Irán",
-    "Omán",
-    "petróleo",
-    "riesgos-geopolíticos",
-    "negociaciones"
-   ],
-   "tgText": "🔴 Irán reporta avances en negociaciones con Omán sobre Estrecho de Ormuz. Ambos lados califican conversaciones como positivas en niveles técnico y político. Acuerdo final pendiente. Presión bajista potencial en petróleo.",
-   "xText": "🔴 ORMUZ: Irán reporta negociaciones positivas con Omán sobre corredores seguros en Estrecho. Evaluación constructiva en ambos niveles (técnico/político). Acuerdo final próximo. Sesgo bajista en petróleo si cierra deal.",
-   "discordText": "**Irán-Omán: Avances en Ormuz**\n• Negociaciones califican como positivas en aspectos técnico y político\n• Objetivo: corredor de tránsito que respete soberanía iraní\n• Anuncio final pendiente conclusión de diálogos\n• Riesgo bajista para petróleo si prospera acuerdo",
-   "pushText": "Irán: negociaciones Ormuz avanzan positivamente con Omán",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Petróleo crudo (WTI/Brent): caída si mercado precifica resolución de bloqueo; el Estrecho de Ormuz canaliza ~30% del comercio mundial de crudo.",
-    "despues": "Oro (flight-to-safety reverso), EURUSD (apetito de riesgo), S&P500 (sector energético y ciclo económico), rendimientos de bonos USA (alivio de inflación por energía).",
-    "escenarios": "Traders vigilarán: (1) si Irán confirma levantamiento efectivo de minas; (2) si Occidente acepta 'garantías de seguridad' iraní; (3) timeline para reapertura completa; (4) si acuerdo incluye compensaciones/sanciones.",
-    "riesgos": "Medios estatales iraníes no verificables independientemente; Irán pide control del Estrecho + derechos de tránsito (desacuerdo clave con EE.UU.); IRGC aún debe aprobar; ceasefire requiere confirmación; se reportó en junio ataque a barco de carga, mostrando volatilidad persistente."
-   },
-   "macro": {
-    "petroleo": "Presión bajista si negociaciones se consolidan",
-    "oro": "Sesgo bajista por reversión de flight-to-safety",
-    "dolar": "Presión bajista si apetito de riesgo mejora",
-    "sp500": "Sesgo alcista por reducción de prima de riesgo energético",
-    "bonos": "Rendimientos podrían bajar si inflación energética mejora"
-   },
-   "updates": []
-  },
-  {
-   "id": 33987,
-   "fecha": "2026-08-04T16:06:49+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33987",
-   "via": "DeItaone",
-   "original": "U.S. EYES POLYSILICON PRICE FLOOR The Trump administration is preparing a price floor and new tariffs on polysilicon and related products later this month, according to Reuters. The move aims to protect U.S. producers Hemlock Semiconductor (Corning: $GLW) and Wacker Chemie (ETR: WCH) from growing Chinese competition and strengthen domestic supply chains for solar panels, semiconductors, AI, and en",
-   "titulo": "Trump prepara precio mínimo y aranceles a polisilicio para proteger productores USA",
-   "resumen": "La administración Trump planea establecer un precio mínimo y nuevos aranceles sobre polisilicio y productos relacionados antes de fin de mes, según Reuters. La medida busca proteger a productores estadounidenses como Hemlock Semiconductor (Corning, GLW) y Wacker Chemie de competencia china, además de fortalecer cadenas de suministro domésticas para paneles solares, semiconductores, IA y energía.",
-   "analisis": {
-    "porque": "Política arancelaria directa afecta costos de semiconductores, tecnología solar y cadenas de IA. Impacta márgenes de fabricantes, precios para consumidores y competitividad global de sector tech-USA. Sesgo proteccionista acelera re-shoring pero riesgo de represalias comerciales.",
-    "queOcurrio": "Administración Trump prepara piso de precio (price floor) y aranceles nuevos sobre polisilicio y derivados (semiconductores, paneles solares) para fin de agosto. Meta: proteger Hemlock/Corning y Wacker Chemie de competencia china.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Reuters"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "GLW",
-    "Semiconductores",
-    "Paneles Solares",
-    "DXY",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Corning (GLW)",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "polisilicio",
-    "aranceles",
-    "Trump",
-    "semiconductores",
-    "paneles-solares",
-    "cadenas-suministro",
-    "proteccionismo"
-   ],
-   "tgText": "📊 Trump anuncia aranceles + precio mínimo en polisilicio (fin agosto). Protege Corning/Hemlock vs China. Impacto: margen semiconductores/solares, potencial represalia comercial. Sesgo alcista pequeños fabricantes USA, riesgo para NASDAQ.",
-   "xText": "⚠️ ARANCELES: Trump prepara precio mínimo + tariffs en polisilicio antes del 31/8. Objetivo: proteger Hemlock (Corning-GLW) y Wacker vs competencia china. Impacta márgenes chip, riesgo represalias. Vigilar NASDAQ.",
-   "discordText": "**Trump: Aranceles Polisilicio**\n• Precio mínimo + nuevos aranceles antes fin agosto\n• Objetivo: proteger Hemlock Semiconductor y Wacker Chemie\n• Alcance: polisilicio, semiconductores, paneles solares, cadenas IA\n• Riesgo: represalias comerciales China, presión costos industriales",
-   "pushText": "Trump prepara aranceles a polisilicio para fin de mes; protege Corning y productores USA",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "NASDAQ y fabricantes de semiconductores: sesgo mixto (pequeños productores USA ganan protección, pero cadenas de suministro de grandes integrados encarecen). Corning (GLW) típicamente reacciona al alza por protección.",
-    "despues": "DXY (dólar sube por política proteccionista), EURUSD (presión bajista), índices globales con exposición a tech (DAX, FTSE), acciones chinas de semiconductor.",
-    "escenarios": "Traders vigilarán: (1) si el piso de precio efectivamente sube costos sin competencia; (2) si China toma represalias arancelarias (baterías, EV, químicos); (3) si medida expande a otros segmentos semiconductores; (4) impacto en cadenas globales de IA (Nvidia, TSMC indirectamente).",
-    "riesgos": "Conflicto comercial EE.UU.-China puede escalar; el titular no especifica nivel exacto de arancel ni si aplica retroactivamente; pequeños fabricantes pueden no beneficiarse si demanda desciende por precios más altos; represalias chinas podrían afectar otros sectores USA."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33985,
-   "fecha": "2026-08-04T16:03:46+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33985",
-   "via": "DeItaone",
-   "original": "TRUMP ADMINISTRATION PREPARING TO SET PRICE FLOOR, TARIFFS ON IMPORTS OF POLYSILICON AND DERIVATIVE PRODUCTS USED IN CHIPS AND SOLAR PANELS-SOURCES",
-   "titulo": "Casa Blanca prepara salvaguardas arancelarias en polisilicio y derivados antes de fin de mes",
-   "resumen": "Según fuentes citadas por Reuters, la administración Trump planea implementar un precio mínimo y nuevos aranceles sobre polisilicio y productos derivados (semiconductores, paneles solares) a finales de agosto. La iniciativa busca fortalecer productores estadounidenses frente a competencia china y asegurar cadenas de suministro críticas para chips, IA y energía renovable.",
-   "analisis": {
-    "porque": "Medida proteccionista sobre insumos críticos para electrónica avanzada. Afecta costos de fabricación y márgenes industriales USA; riesgo de represalia comercial china escala tensiones geopolíticas y volatilidad de mercados tech.",
-    "queOcurrio": "Fuentes de administración Trump indican preparación de precio mínimo y aranceles en polisilicio y derivados, anuncio esperado antes de fin de agosto.",
-    "estado": "rumor",
-    "fuenteOriginal": "Reuters (fuentes anónimas)"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Semiconductores",
-    "S&P500",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores USA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "polisilicio",
-    "aranceles",
-    "semiconductores",
-    "Trump",
-    "proteccionismo",
-    "cadenas-suministro"
-   ],
-   "tgText": "⚠️ RUMOR: Trump planea aranceles + piso de precio en polisilicio antes fin agosto. Fuentes anónimas citan planes de protección vs China. Impacto directo en margen de semiconductores, paneles solares e IA. Vigilar NASDAQ.",
-   "xText": "⚠️ Trump prepara aranceles polisilicio (fuentes): precio mínimo + tariffs antes 31/8. Impacta semiconductores, paneles, cadenas IA. Riesgo represalias China, presión NASDAQ. Vigilar anuncio oficial.",
-   "discordText": "**⚠️ RUMOR: Aranceles Polisilicio**\n• Fuentes: Trump planea precio mínimo + aranceles\n• Timeline: antes fin de agosto\n• Alcance: semiconductores, paneles solares, IA\n• Estado: no confirmado oficial; Reuters cita fuentes anónimas",
-   "pushText": "Fuentes: Trump prepara aranceles polisilicio antes fin agosto",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "NASDAQ y fabricantes tech USA: sesgo mixto por protección vs encarecimiento de insumos. Semiconductores pequeños productores suben, grandes integrados bajo presión.",
-    "despues": "DXY, índices globales tech, acciones chinas semiconductor.",
-    "escenarios": "Vigilar: (1) confirmación oficial de niveles de arancel; (2) si China represalia; (3) timing de implementación; (4) cobertura de otros insumos críticos.",
-    "riesgos": "Fuente anónima, no confirmado oficialmente. Riesgo de escalada comercial. Impacto real en costos depende de nivel de arancel (no especificado en titular)."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33982",
-   "fecha": "2026-08-04T14:39:21+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33982",
-   "via": "DeItaone",
-   "original": "CIO WARNS AI RALLY RELIES ON INVESTOR FAITH Hirtle CIO Brad Conger warns the AI trade is entering a \"kindness of strangers\" phase, with hyperscalers increasingly relying on debt as free cash flow weakens. He says investors are assuming cash flows will recover, calling that belief a possible \"comfortable delusion.\" AI-related debt has reached roughly $570B, with Citadel forecasting another $500B+ b",
-   "titulo": "CIO Hirtle: rally IA depende de 'benevolencia ajena'; deuda alcanza $570B, capex pesa años",
-   "resumen": "Brad Conger (CIO Hirtle) advierte que el rally de IA entra fase de dependencia de 'benevolencia de extraños', con hiperscalers financiándose con deuda ante flujo de caja libre declinante. Inversores apuestan a recuperación de cash flows ('ilusión cómoda'). Deuda IA suma ~$570B, Citadel proyecta +$500B+ adicionales hacia 2028. Alto capex IA presionará ganancias años via depreciación acelerada.",
-   "analisis": {
-    "porque": "Señal de alerta estructural: cuestionamiento de la viabilidad financiera del ciclo capex IA actual y dependencia de mercados de bonos; socava narrativa de rentabilidad sostenida.",
-    "queOcurrio": "CIO Hirtle publica advertencia sobre sostenibilidad financiera del rally IA, deuda creciente, y presión de capex en márgenes futuros.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg / Hirtle Research"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "Magnificent Seven",
-    "Bonos Corporativos",
-    "NVIDIA"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos Corporativos",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Magnificent Seven",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "IA-debt",
-    "capex",
-    "cash-flow",
-    "hiperscalers",
-    "rentabilidad",
-    "riesgo-financiero"
-   ],
-   "tgText": "⚠️ CIO Hirtle: rally IA depende 'benevolencia ajena'. Deuda IA $570B, +$500B hacia 2028. Capex presionará ganancias años via depreciación. Riesgo: flujo caja libre débil.",
-   "xText": "CIO Hirtle advierte: rally IA en fase 'kindness of strangers'. Deuda IA $570B, proyección +$500B 2028. Capex futuro comprimirá márgenes vía depreciación acelerada.",
-   "discordText": "**Alerta: IA Depende de Deuda, No Rentabilidad**\n• Deuda IA: $570B (Citadel: +$500B hacia 2028)\n• Flujo caja libre débil en hiperscalers\n• Capex presionará ganancias años via depreciación\n• Fase: 'kindness of strangers' (dependencia de bonos)",
-   "pushText": "Hirtle alerta: rally IA depende deuda, flujo caja débil. $570B deuda IA.",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "NASDAQ y Magnificent Seven caen por revisión a la baja de narrativa de rentabilidad; spreads de bonos corporativos se abren (tech/semis).",
-    "despues": "Tasas de referencia (10Y) podrían presionarse al alza (demanda de deuda IA compite con tesoros); valoraciones de mega-caps bajo escrutinio.",
-    "escenarios": "Traders vigilarán reportes trimestrales de capex futuro, guidance de free cash flow, y acceso a mercados de bonos de hyperscalers. Monitorean también si Fed mantiene tasas altas (stress deuda).",
-    "riesgos": "Análisis es perspectiva bajista de Hirtle; desacuerdo con bullish-case de Morgan Stanley sobre IA (publicado mismo día). Requiere validación en datos de flujo caja real."
-   },
-   "macro": {
-    "nasdaq": "bajista probable",
-    "bonos-corporativos": "bajista probable",
-    "tasas": "alcista probable"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/25/here-are-4-forces-that-drove-a-tough-week-for-stocks.html",
-  "https://www.cnbc.com/2026/07/25/us-appeals-court-rules-trump-cannot-implement-mail-in-voting-order.html",
-  "https://www.cnbc.com/2026/07/25/samsung-electronics-wins-200-billion-broadcom-ai-chip-partnership.html",
-  "https://www.cnbc.com/2026/07/26/cocoa-prices-chocolate-lindt-barry-callebaut-nestle.html",
-  "https://www.cnbc.com/2026/07/26/new-uk-prime-minister-burnham-says-he-would-be-prepared-to-call-out-trump.html",
-  "https://www.cnbc.com/2026/07/26/opportunity-zone-investors-face-deferred-capital-gains-tax-bill.html",
-  "https://www.cnbc.com/2026/07/26/how-different-generations-are-rewriting-the-american-dream-today.html",
-  "https://www.cnbc.com/2026/07/26/how-can-ai-wealth-be-shared-with-all-americans.html",
-  "https://www.cnbc.com/2026/07/26/gen-x-investors-dotcom-bubble-retirement-portfolio.html",
-  "https://www.cnbc.com/2026/07/26/ukraine-strikes-iranian-vessels-tehran-accuses-kyiv-of-hostile-act.html",
   "https://www.cnbc.com/2026/07/26/shein-reveals-key-financials-ahead-of-hong-kong-ipo.html",
   "https://www.cnbc.com/2026/07/26/vehicle-mows-down-crowd-at-berlin-pride-festival-killing-one.html",
   "https://www.cnbc.com/2026/07/26/here-are-the-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
@@ -8031,6 +7991,16 @@
   "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
   "https://www.cnbc.com/2026/08/06/copper-jumps-to-its-highest-level-ever-what-the-metal-is-telling-us-.html",
   "https://www.cnbc.com/2026/08/07/wildfires-insurance-cover-zurich-allianz-munich.html",
-  "https://www.cnbc.com/2026/08/07/volkswagen-vw-porsche-autos-job-cuts.html"
+  "https://www.cnbc.com/2026/08/07/volkswagen-vw-porsche-autos-job-cuts.html",
+  "https://www.cnbc.com/2026/08/07/trump-white-house-ballroom-appeals-court.html",
+  "https://www.cnbc.com/2026/08/07/burger-king-wendys-hamburger-restaurants.html",
+  "https://www.cnbc.com/2026/08/07/gold-bugs-spend-180-million-betting-alls-clear-for-metal-as-bond-yields-stall.html",
+  "https://www.cnbc.com/2026/08/07/prediction-markets-take-center-stage-in-latest-quarterly-earnings.html",
+  "https://www.cnbc.com/2026/08/07/trump-lisa-cook-federal-reserve.html",
+  "https://www.cnbc.com/2026/08/07/the-situational-awareness-unwind-is-only-one-reason-the-ai-trade-is-back.html",
+  "https://www.cnbc.com/2026/08/07/doximity-shares-double-heres-whats-driving-it-.html",
+  "https://www.cnbc.com/2026/08/07/stock-market-next-week-outlook-for-aug-10-14-2026-.html",
+  "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html",
+  "https://www.cnbc.com/2026/08/07/russia-sanctions-bill-lindsey-graham-senate.html"
  ]
 }
