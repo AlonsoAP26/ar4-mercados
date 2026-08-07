@@ -1,6 +1,6 @@
 {
  "lastId": 34189,
- "actualizado": "2026-08-07T22:48:52.144Z",
+ "actualizado": "2026-08-07T23:28:45.460Z",
  "items": [
   {
    "id": 914267562,
@@ -977,6 +977,63 @@
    "updates": []
   },
   {
+   "id": 974125211,
+   "fecha": "2026-08-07T16:28:54.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html",
+   "via": "CNBC",
+   "original": "Chesky says Airbnb will spend ‘a lot more’ on AI as earnings beat and stock surges 15%",
+   "titulo": "Airbnb bate ganancias y sube 15%; CEO anuncia inversión acelerada en IA",
+   "resumen": "Airbnb superó expectativas de resultados trimestrales y su acción se incrementó 15% en sesión. El CEO Brian Chesky confirmó que la empresa aumentará significativamente el gasto en inteligencia artificial. El titular no especifica el monto de inversión ni detalles de las iniciativas de IA que la compañía planea implementar.",
+   "analisis": {
+    "porque": "Movimiento de precio de gran magnitud (15%) señala confianza del mercado en resultados y estrategia de IA. Refleja tendencia sector turismo/tech en adopción de IA como vector de crecimiento. Impacta valuaciones de plataformas de marketplace.",
+    "queOcurrio": "Airbnb publicó resultados que superaron consenso analítico. CEO anunció aumento en inversión en IA. Mercado respondió con rally significativo.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "ABNB",
+    "NASDAQ",
+    "Sector Tech",
+    "Plataformas Digitales"
+   ],
+   "sesgos": [
+    {
+     "activo": "ABNB",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Airbnb",
+    "ganancias",
+    "IA",
+    "inteligencia-artificial",
+    "valuaciones-tech"
+   ],
+   "tgText": "🚀 AIRBNB SUBE 15% tras superar ganancias. CEO anuncia inversión acelerada en IA. Mercado responde con confianza a estrategia de adopción tecnológica.",
+   "xText": "ABNB +15% en sesión tras beat de ganancias. Chesky confirma aumento significativo en gasto de IA. Momentum positivo en plataformas de marketplace. #Tech #Earnings",
+   "discordText": "**AIRBNB: +15% POST-EARNINGS**\n• Resultados superaron consenso\n• CEO aumentará inversión en IA\n• Confianza del mercado en estrategia digital",
+   "pushText": "ABNB +15%: Beat de ganancias y expansión de IA",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "ABNB suele liderar; refleja confianza en modelo de negocio post-earnings",
+    "despues": "BOOKING, TRIP (competidores en viajes); NVIDIA, MSFT (proveedores de IA); NASDAQ",
+    "escenarios": "Traders vigilarán: (1) si aumento de gasto en IA comprime márgenes próximos trimestres, (2) si IA mejora pricing/demanda, (3) contagio a otras plataformas digital",
+    "riesgos": "Anuncio de inversión sin números específicos; riesgo de over-promising en IA; ciclo de ganancias podría normalizarse"
+   },
+   "macro": {
+    "nasdaq": "sesgo alcista a corto plazo"
+   },
+   "updates": []
+  },
+  {
    "id": "34185",
    "fecha": "2026-08-07T16:02:12+00:00",
    "tgUrl": "https://t.me/walterbloomberg/34185",
@@ -1035,6 +1092,69 @@
     "riesgos": "Extremo de sesgo no es predictor de crash inminente, pero sí señal de poco margen de seguridad alcista. Un shock exógeno (Ormuz, inflación) podría pivotar masivamente hacia puts. Riesgo de volatilidad comprimida."
    },
    "macro": null,
+   "updates": []
+  },
+  {
+   "id": 952968313,
+   "fecha": "2026-08-07T16:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/martin-heinrich-tax-breaks-overseas-oil-production.html",
+   "via": "CNBC",
+   "original": "Top Democrat proposes killing tax breaks for overseas oil production",
+   "titulo": "Demócrata prominente propone eliminar exenciones fiscales para producción petrolera en exterior",
+   "resumen": "Un legislador demócrata de alto rango presentó propuesta para terminar con los incentivos fiscales a empresas de petróleo y gas por producción fuera de Estados Unidos. La medida buscaría redirigir recursos hacia energías limpias. El titular no especifica el nombre del legislador, detalles de la propuesta ni probabilidad de aprobación legislativa.",
+   "analisis": {
+    "porque": "Política tributaria sobre energía fósil afecta márgenes de XOM, CVX y supermajors. Señal de presión demócrata sobre subsidios petroleros coincide con mandatos de descarbonización. Impacta valuaciones energéticas y composición de portafolios ESG.",
+    "queOcurrio": "Legislador demócrata propone eliminar exenciones fiscales para producción petrolera fuera de EE.UU.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "XOM",
+    "CVX",
+    "Energía",
+    "Petróleo",
+    "Bonos Energéticos"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "XOM",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Energías Limpias",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "politica-fiscal",
+    "petroleo",
+    "impuestos",
+    "exenciones",
+    "energia-fosil",
+    "descarbonizacion"
+   ],
+   "tgText": "⚖️ Demócrata propone eliminar exenciones fiscales para petróleo en exterior. Medida apunta a redirigir fondos hacia energías limpias. Presión creciente sobre márgenes de supermajors.",
+   "xText": "Legislador demócrata impulsa eliminación de incentivos fiscales a petroleras en producción extranjera. Apunta a energías limpias. Presión sobre XOM, CVX. #Energy #Politics",
+   "discordText": "**PROPUESTA TRIBUTARIA ENERGÉTICA**\n• Demócrata propone fin de exenciones fiscales petroleo exterior\n• Redirección hacia energías limpias\n• Impacto potencial en supermajors",
+   "pushText": "Demócrata propone eliminar subsidios petroleros en exterior",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "XOM, CVX reaccionan negativamente; márgenes amenazados",
+    "despues": "Energías renovables; bonos energéticos; índices amplios si sesgo fiscal fiscal",
+    "escenarios": "Traders vigilan: (1) probabilidad legislativa de aprobación (baja actualmente con control dividido), (2) detalles de qué exenciones y cronograma, (3) impacto en capex offshore y flujo de caja",
+    "riesgos": "Propuesta legislativa sin detalles. Probabilidad de aprobación incierta en Congreso dividido. Sesgo político editorial posible"
+   },
+   "macro": {
+    "petroleo": "sesgo potencialmente bajista si propuesta avanza"
+   },
    "updates": []
   },
   {
@@ -1174,6 +1294,122 @@
     "nasdaq": "Bajista si escalada se materializa (beneficia energía barata)",
     "dow": "Neutral-Alcista (energía sube, pero financieras desaceleran con incertidumbre)"
    },
+   "updates": []
+  },
+  {
+   "id": 923181293,
+   "fecha": "2026-08-07T15:13:11.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/business-business-premium-fares.html",
+   "via": "CNBC",
+   "original": "Companies scoff at airlines&apos; cheapest business class tickets. &apos;The real value is flexibility&apos;",
+   "titulo": "Corporativos cuestionan valor de la clase business más barata. 'La flexibilidad es lo real'",
+   "resumen": "Ejecutivos corporativos y jefes de viajes rechazan las opciones más económicas de clase ejecutiva de aerolíneas, argumentando que la verdadera prioridad es flexibilidad en cambios y cancelaciones. La tendencia sugiere presión sobre márgenes de cabinas premium en compañías aéreas. El titular no especifica qué aerolíneas están afectadas ni datos sobre reducción de demanda.",
+   "analisis": {
+    "porque": "Shift de demanda corporativa en aviación impacta pricing power de aerolíneas. Si corporativos evitan clase business barata para priorizar flexibilidad, airlines pierden estrategia de 'premium light'. Afecta métricas RASM (revenue por asiento disponible) y margen operativo.",
+    "queOcurrio": "Ejecutivos corporativos rechazan opciones de clase ejecutiva más económicas de aerolíneas, priorizando flexibilidad en cambios y cancelaciones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "AAL",
+    "DAL",
+    "UAL",
+    "ALGT",
+    "Sector Aviación"
+   ],
+   "sesgos": [
+    {
+     "activo": "Aviación",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "AAL",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DAL",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "aviacion",
+    "clase-business",
+    "pricing",
+    "margen-operativo",
+    "corporativos"
+   ],
+   "tgText": "✈️ Corporativos rechazan clase business barata de aerolíneas. Priorizan flexibilidad. Presión sobre márgenes de cabinas premium en AAL, DAL, UAL.",
+   "xText": "Ejecutivos corporativos cuestionan valor de clase business económica. Demandan flexibilidad sobre descuentos. Presión en RASM y márgenes de premium cabins. #Airlines",
+   "discordText": "**PRESIÓN EN AVIACIÓN PREMIUM**\n• Corporativos rechazan clase business barata\n• Flexibilidad > descuentos en prioridades\n• Riesgo para estrategia de pricing de airlines",
+   "pushText": "Corporativos evitan clase business barata; presión en márgenes aéreos",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "AAL, DAL, UAL bajan; RASM y márgenes bajo presión",
+    "despues": "Bonos corporativos de airlines; índices de servicios; consumidor discrecional",
+    "escenarios": "Traders vigilan: (1) reportes de yield y RASM próximos trimestres, (2) si preferencia por flexibilidad erosiona pricing power, (3) canibalización de clases premium por opciones alternativas",
+    "riesgos": "Anécdota corporativa; no hay datos de volumen sistémico. Posible sesgo de muestra en reportería"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": 913334106,
+   "fecha": "2026-08-07T15:02:12.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/07/whatnot-live-shopping-valuation-20-billion.html",
+   "via": "CNBC",
+   "original": "Whatnot valued at $20 billion as live shopping continues to boom",
+   "titulo": "Whatnot valorada en $20B; live shopping consolida tendencia de crecimiento",
+   "resumen": "La plataforma Whatnot alcanzó valuación de $20.000 millones en ronda de financiamiento. El hito refleja expansión del segmento de live shopping y comercio interactivo en línea. El titular no especifica participantes en la ronda ni detalles sobre ingresos o rentabilidad de la plataforma.",
+   "analisis": {
+    "porque": "Valuación unicornio en segmento emergente (live commerce) señala apetito de capital de riesgo. Sugiere rotación en modelos de e-commerce tradicional hacia formatos interactivos. Impacta expectativas sobre rentabilidad futura de plataformas digitales y competencia con Amazon, TikTok Shop.",
+    "queOcurrio": "Whatnot, plataforma de live shopping, alcanzó valuación de $20.000 millones en nueva ronda de inversión.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Startups Digital",
+    "E-commerce",
+    "AMZN",
+    "SHOP",
+    "TKLF"
+   ],
+   "sesgos": [
+    {
+     "activo": "E-commerce",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "AMZN",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "Whatnot",
+    "live-shopping",
+    "e-commerce",
+    "valuacion-unicornio",
+    "venture-capital"
+   ],
+   "tgText": "💰 Whatnot valuada en $20B. Live shopping consolida expansión. Señal de rotación en modelos de comercio digital hacia formatos interactivos.",
+   "xText": "Whatnot valuada $20B: live shopping suma momentum. Muestra apetito de VC por formatos interactivos en e-commerce vs canales tradicionales. #Startups #Commerce",
+   "discordText": "**WHATNOT: $20B VALUATION**\n• Plataforma live shopping alcanza hito\n• Tendencia de comercio interactivo en expansión\n• Competencia creciente vs modelos tradicionales",
+   "pushText": "Whatnot en $20B: live shopping en alza",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Valores de e-commerce (SHOP, AMZN); compiten en live commerce",
+    "despues": "Índices tech; startups privadas en rondas de Series",
+    "escenarios": "Traders vigilan: (1) si formato live shopping erosiona márgenes de plataformas tradicionales, (2) monetización de Whatnot vs rivales, (3) entrada de AMZN/TikTok con recursos mayores",
+    "riesgos": "Whatnot aún privada; sin datos de rentabilidad. Valuación de startups puede ser especulativa en contexto de múltiples elevados"
+   },
+   "macro": null,
    "updates": []
   },
   {
@@ -7508,260 +7744,9 @@
     "petroleo": "bajista (descarga prima geopolítica)"
    },
    "updates": []
-  },
-  {
-   "id": 926130933,
-   "fecha": "2026-08-05T00:51:10.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/04/spacex-spcx-earnings-live-updates-q2-2026.html",
-   "via": "CNBC",
-   "original": "SpaceX earnings takeaways: Soaring AI costs outweigh revenue beat in first report since IPO",
-   "titulo": "SpaceX: costos de IA se disparan pero ingresos superan expectativas en IPO",
-   "resumen": "SpaceX reporta ingresos superiores a previsiones en su primer reporte post-IPO, pero los costos operacionales de IA generan inquietud en Wall Street. El crecimiento de gastos en inteligencia artificial compite con el dinamismo de ingresos, marcando tensión entre expansión tecnológica y rentabilidad.",
-   "analisis": {
-    "porque": "SpaceX es activo clave para traders tech/space/AI; resultados post-IPO marcan expectativas de valuación y sostenibilidad de capex en IA",
-    "queOcurrio": "IPO inicial reportó ingresos beat vs. estimaciones; sin embargo, costos de IA escalaron notoriamente, preocupando al mercado sobre márgenes futuros",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "SpaceX",
-    "NASDAQ",
-    "Tech stocks",
-    "Nvidia"
-   ],
-   "sesgos": [
-    {
-     "activo": "SpaceX",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Nvidia",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "spacex-ipo",
-    "costos-ia",
-    "ingresos-beat",
-    "rentabilidad"
-   ],
-   "tgText": "🚀 SpaceX supera ingresos en IPO, pero costos IA preocupan. Wall Street escrutiña relación capex/beneficio en carrera tech-espacial. Tensions entre crecimiento y márgenes.",
-   "xText": "SpaceX: ingresos beat en IPO pero costos IA disparan inquietudes. Wall Street analiza sostenibilidad de gastos en IA vs. márgenes. $SPACEX (IPO reciente)",
-   "discordText": "**SpaceX Post-IPO: Resultados mixtos**\n• Ingresos superan expectativas\n• Costos de IA escalan notoriamente\n• Mercado cuestiona márgenes a futuro",
-   "pushText": "SpaceX vence en ingresos pero costos de IA inquietan Wall Street",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "SpaceX (tras IPO) sentiría presión si mercado interpreta capex-IA como insostenible; Tech stocks seguirían por riesgo sistémico de gasto IA",
-    "despues": "Nvidia podría presionar si traders ven fricciones en ROI de chips IA en operaciones espaciales; sector cleantech/satcom vigilaría competencia",
-    "escenarios": "Traders vigilan: (1) ratio de crecimiento IA vs. ingresos, (2) proyecciones de capex 2-3 años, (3) si SpaceX necesita más capex para satcom/Starlink, (4) comparativa vs. rentabilidad de peers tech",
-    "riesgos": "Titular no especifica monto de costos IA ni proyecciones; riesgo de pánico por interpretación de 'insostenibilidad'"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 967035277,
-   "fecha": "2026-08-05T00:32:29.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/05/wealthy-chinese-race-for-tax-advice-as-beijing-targets-offshore-trusts.html",
-   "via": "CNBC",
-   "original": "China&apos;s super-rich &apos;in shock&apos; and hunting for cash as Beijing issues surprise tax on offshore trusts",
-   "titulo": "China grava sorpresivamente trusts offshore; multimillonarios buscan liquidez de emergencia",
-   "resumen": "Beijing implementó una sorpresiva tributación a trusts offshore, dejando a la élite financiera china en 'estado de shock' y buscando liquidez de emergencia. La medida amplía el cerco fiscal sobre riqueza externa, afectando estructuras de planificación patrimonial de alto patrimonio.",
-   "analisis": {
-    "porque": "Reforma fiscal china impacta flujos de capital, confianza en activos chinos, demanda de divisas extranjeras y volatilidad en mercados emergentes vinculados a riqueza china",
-    "queOcurrio": "Gobierno chino anunció gravamen sorpresivo sobre trusts offshore sin aviso previo, causando pánico liquidador en UHNWI (ultra-high-net-worth) chinos",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "CNY",
-    "Hong Kong Hang Seng",
-    "Oro",
-    "DXY",
-    "Bonos chinos",
-    "Mercados emergentes"
-   ],
-   "sesgos": [
-    {
-     "activo": "CNY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Hang Seng",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "china-impuestos",
-    "trusts-offshore",
-    "fuga-capital",
-    "panic-selling"
-   ],
-   "tgText": "⚠️ BREAKING: China grava trusts offshore sin aviso. Multimillonarios buscan liquidez de emergencia. Pánico fiscal dispara presión en CNY y activos chinos. Riesgos de fuga capital.",
-   "xText": "BREAKING: Beijing sorprende con gravamen a trusts offshore. Multimillonarios en pánico buscan liquidez. Presión inmediata en CNY, Hang Seng, bonos chinos. $CNY $HSI",
-   "discordText": "**⚠️ SHOCK FISCAL CHINA**\n• Nuevo gravamen sorpresivo a trusts offshore\n• Multimillonarios buscan liquidez de emergencia\n• Pánico: presión en CNY, Hang Seng, bonos chinos\n• Riesgos de fuga capital",
-   "pushText": "BREAKING: China grava trusts offshore; pánico de capital",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "CNY cae presionado por demanda de salida de capitales; Hang Seng sufre pánico vendedor; oro sube por flight-to-safety",
-    "despues": "Bonos chinos presionan (spreads wide); mercados emergentes contagio si China es proxy; DXY sube por demanda de USD; renta fija global se beneficia (safe-haven)",
-    "escenarios": "Traders vigilan: (1) dimensión real del gravamen y cobertura, (2) volumen de liquidaciones forzadas, (3) medidas de control de capital que China podría anunciar (restricciones a salida), (4) contagio a otros mercados emergentes, (5) impacto en IPOs chinas offshore",
-    "riesgos": "Titular describe como 'sorpresa' y 'shock'; riesgo de sobrereacción inicial; falta claridad si es confirmado oficial o rumor de media estatal china"
-   },
-   "macro": {
-    "dolar": "alcista (flight-to-safety, demanda USD)",
-    "oro": "alcista (risk-off, demanda de cobertura)",
-    "nasdaq": "potencial presión (contagio riesgo China, tech china)",
-    "dow": "neutral a bajista (contagio selectivo)",
-    "sp500": "presión moderada (riesgo emergentes)",
-    "bitcoin": "incierto (varía con interpretación de control capital)",
-    "ethereum": "neutral",
-    "bonos": "alcistas (rally de seguridad, caída de tasas)",
-    "petroleo": "presión (demanda China en riesgo)"
-   },
-   "updates": []
-  },
-  {
-   "id": 920806490,
-   "fecha": "2026-08-04T22:47:49.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/04/lucid-group-lcid-earnings-q2-2026.html",
-   "via": "CNBC",
-   "original": "Lucid begins &apos;operational reset&apos; as CEO says EV maker will delay midsize vehicle",
-   "titulo": "Lucid retrasa vehículo de tamaño medio tras 'reset operacional' bajo nuevo CEO",
-   "resumen": "Lucid Motors inicia un proceso de 'reset operacional' y anuncia el retraso en el lanzamiento de su vehículo de tamaño medio, según comunicó su CEO. La medida refleja ajustes estratégicos en la empresa de vehículos eléctricos de lujo, enfrentada a presiones de capital y competencia creciente en el segmento EV.",
-   "analisis": {
-    "porque": "Lucid es referente de EV de lujo con respaldo estatal (PIF Arabia Saudí); retrasos de producto impactan valoración, flujo de caja y confianza inversora en el sector EV",
-    "queOcurrio": "CEO anuncia reorganización operacional e impone demora en lanzamiento de vehículo mediano, señal de apretones financieros y reposicionamiento estratégico",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "LCID",
-    "NASDAQ",
-    "EV sector",
-    "Tesla"
-   ],
-   "sesgos": [
-    {
-     "activo": "LCID",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Tesla",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "lucid-motors",
-    "vehículos-eléctricos",
-    "retraso-producto",
-    "capital-riesgo"
-   ],
-   "tgText": "🚗 Lucid retrasa vehículo mediano. CEO inicia 'reset operacional' en fabricante EV. Presiones de capital y competencia pesan en la estrategia del grupo respaldado por Arabia Saudí.",
-   "xText": "Lucid inicia 'reset operacional' y retrasa vehículo de tamaño medio. CEO reconoce desafíos estratégicos en fabricante EV de lujo. LCID bajo presión. $LCID",
-   "discordText": "**Lucid Motors: Reset operacional y retrasos**\n• CEO anuncia reorganización estratégica\n• Demora en lanzamiento de vehículo mediano\n• Refleja apretones de capital en EV de lujo",
-   "pushText": "Lucid retrasa vehículo mediano tras reset operacional",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "LCID caería por señal de problemas operacionales y menor dinamismo de ingresos",
-    "despues": "Otros EV de lujo (Tesla, Rivian) y ETFs de EV podrían ver presión selectiva si se interpreta como crisis de sector",
-    "escenarios": "Traders vigilarán: (1) magnitud del retraso, (2) impacto en burn-rate de caja, (3) si requiere capital nuevo del PIF, (4) comparativa vs Tesla en eficiencia operacional",
-    "riesgos": "El titular no especifica cuánto se retrasa ni detalle del reset; riesgo de interpretación excesiva"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33992",
-   "fecha": "2026-08-04T20:18:55+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33992",
-   "via": "DeItaone",
-   "original": "$AMD - AMD BEATS, STRONG Q3 OUTLOOK DRIVEN BY DATA CENTER Results 🔸 Adj. EPS: $1.66 vs. $1.62 est. 🔸 Revenue: $11.54B vs. $11.28B est. 🔸 Data Center Revenue: $6.7B Guidance 🔸 Q3 Revenue: ~$13.0B ± $300M vs. $12.52B est. 🔸 Q3 Non-GAAP Gross Margin: ~56% 🔸 Data Center: Expects sales growth to accelerate in H2 2026",
-   "titulo": "AMD supera ganancias; guidance Q3 fuerte impulsado por data center",
-   "resumen": "AMD reportó EPS ajustado de $1.66 vs $1.62 estimado y revenue de $11.54B vs $11.28B consenso. Q3 guidance aproximadamente $13.0B ±$300M vs expectativa $12.52B. Margen bruto no-GAAP Q3 ~56%. Segmento Data Center anticipa aceleración de ventas en H2 2026 con revenue $6.7B.",
-   "analisis": {
-    "porque": "AMD es exponente clave en demanda de IA/data center. Guidance alcista para Q3 (+3.8% respecto consenso) con expansión de márgenes señala confianza en ciclo de capex de clientes cloud. Data Center es 58% del mix de revenue.",
-    "queOcurrio": "AMD divulgó resultados con beat modesto en EPS (+0.25%) y revenue (+2.3%). Guidance Q3 eleva expectativas con margen bruto 56% (expansión vs T1 típicamente 52-54%).",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "AMD",
-    "NVDA",
-    "Nasdaq",
-    "S&P500",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "AMD",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NVDA",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "AMD",
-    "data-center",
-    "earnings-beat",
-    "margin-expansion",
-    "IA-chips"
-   ],
-   "tgText": "💹 AMD: EPS $1.66 vs $1.62 est., Revenue $11.54B vs $11.28B. Q3 guide $13.0B±$300M. Márgenes ~56%. Data Center acelera H2 2026.",
-   "xText": "AMD bate Q2: $1.66 EPS, $11.54B revenue. Q3 outlook $13B+ señala aceleración data center. Márgenes brutos 56% sostienen ciclo IA. $AMD",
-   "discordText": "**AMD Earnings**\n• EPS Adj: $1.66 vs $1.62 est.\n• Revenue: $11.54B vs $11.28B\n• Q3 Guide: ~$13.0B ±$300M\n• Gross Margin: ~56% | Data Center accelerating H2",
-   "pushText": "AMD bate con guidance Q3 fuerte; data center acelera en H2 2026",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "AMD: beat modesto pero guidance anticipado de aceleración reafirma ciclo de IA sin saturación; acción suele reaccionar +2-3% intraday. Semiconductores sector-wide refuerzan.",
-    "despues": "NVDA: mercado cotejan si AMD gana cuota data center o si ambos crecen con pastel en expansión. Nasdaq/S&P500 índices tech se refuerzan por confirmación de demanda.",
-    "escenarios": "Traders vigilan: (1) si margen bruto 56% es nivel sostenible (presión de ASP vs volumen), (2) detalles data center vs otros segmentos, (3) timing realización backlog, (4) competencia NVDA pricing power.",
-    "riesgos": "Guidance Q3 es forward-looking; si clientes cloud reducen capex por preocupaciones valuación o tasas, realización es riesgo. Márgenes 56% son récord y pueden ser insostenibles si commoditización acelera."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-08-04T22:09:17.000Z",
-     "id": "927510497",
-     "texto": "AMD reportó crecimiento de ingresos del 50% en el trimestre, con ventas de data center que se duplicaron. A pesar del desempeño operativo fuerte, la acción cayó en operaciones after-hours. El titular no especifica las razones de la caída ni menciona guidance de Q3.",
-     "tgUrl": "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html"
-    }
-   ],
-   "actualizado": "2026-08-04T22:09:17.000Z"
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/27/oil-price-wti-brent-slide-as-iran-reportedly-may-halt-attacks.html",
-  "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
-  "https://www.cnbc.com/2026/07/27/china-industrial-profit-growth-exports-oil-drops.html",
-  "https://www.cnbc.com/2026/07/27/indonesia-central-bank-governor-perry-warjiyo-steps-down.html",
-  "https://www.cnbc.com/2026/07/27/cxmt-china-market-debut-chipmaker-ipo.html",
   "https://www.cnbc.com/2026/07/27/seattle-shooting-leaves-two-dead-five-injured.html",
   "https://www.cnbc.com/2026/07/27/goldman-sachs-asian-currencies-ai-boom-.html",
   "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html",
@@ -8056,6 +8041,11 @@
   "https://www.cnbc.com/2026/08/07/blackrock-is-finding-solid-tax-free-yields-in-this-corner-of-the-bond-market.html",
   "https://www.cnbc.com/2026/08/07/saaspocalypse-debate-intensifies-as-software-stocks-swing-wildly.html",
   "https://www.cnbc.com/2026/08/07/rockstar-energy-founder-celsius-stake-ceo.html",
-  "https://www.cnbc.com/select/how-to-offset-basic-business-class-with-your-credit-card/"
+  "https://www.cnbc.com/select/how-to-offset-basic-business-class-with-your-credit-card/",
+  "https://www.cnbc.com/2026/08/07/marthas-vineyard-african-american-film-festival-set-for-record-attendance.html",
+  "https://www.cnbc.com/2026/08/07/whatnot-live-shopping-valuation-20-billion.html",
+  "https://www.cnbc.com/2026/08/07/business-business-premium-fares.html",
+  "https://www.cnbc.com/2026/08/07/martin-heinrich-tax-breaks-overseas-oil-production.html",
+  "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html"
  ]
 }
