@@ -1,7 +1,187 @@
 {
- "lastId": 34173,
- "actualizado": "2026-08-07T12:55:04.754Z",
+ "lastId": 34178,
+ "actualizado": "2026-08-07T14:09:05.384Z",
  "items": [
+  {
+   "id": "34163",
+   "fecha": "2026-08-07T11:20:32+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34163",
+   "via": "DeItaone",
+   "original": "SPACEX UPGRADED TO BUY — $160 TARGET Argus upgraded SpaceX ($SPCX ) from Hold to Buy with a $160 price target, citing strong growth and operational performance. Revenue reached $7.8 billion, up 92%, while SpaceX signaled a year-end 2026 revenue run rate approaching $100 billion. Despite higher AI infrastructure spending and expected share-price volatility, Argus believes SpaceX’s rapid growth and ",
+   "titulo": "Argus upgradea SpaceX a compra con target $160; crecimiento 92%",
+   "resumen": "Argus Research upgrade SpaceX de Hold a Buy con precio objetivo de $160. La casa de análisis destaca ingresos de $7.8 mil millones (crecimiento 92%) y proyección de tasa de ingresos anualizada de casi $100 mil millones para fin 2026. A pesar de volatilidad esperada y mayor gasto en infraestructura IA, estima que crecimiento acelerado y perspectivas de largo plazo superan riesgos.",
+   "analisis": {
+    "porque": "SpaceX es empresa privada pero impacta sentimiento sobre tech growth, IA, y gasto en infraestructura. Upgrade institucional refleja confianza en valuación y momentum de crecimiento.",
+    "queOcurrio": "Casa de análisis Argus eleva calificación de SpaceX tras reportar crecimiento de ingresos del 92% y proyectar run-rate de ~$100B para fin 2026.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Tecnología",
+    "NASDAQ",
+    "SpaceX"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tecnología",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "SpaceX",
+    "crecimiento",
+    "IA",
+    "infraestructura",
+    "upgrade",
+    "Argus"
+   ],
+   "tgText": "Argus upgradea SpaceX a BUY con target $160. Ingresos crecen 92% a $7.8B; proyecta run-rate de $100B para fin 2026. Infraestructura IA impulsa expansión.",
+   "xText": "🚀 Argus upgradea SpaceX: Hold → Buy, target $160. Ingresos +92% ($7.8B), run-rate $100B fin 2026. Crecimiento IA compensa volatilidad esperada. #Tech #Growth",
+   "discordText": "**Argus Research**: SpaceX upgrade Hold → Buy, target $160\n• Ingresos: $7.8B (+92% YoY)\n• Proyección: run-rate ~$100B fin 2026\n• Catalizador: expansión infraestructura IA\n• Riesgos: volatilidad de precio esperada",
+   "pushText": "Argus upgradea SpaceX a compra con target $160; crecimiento 92%",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Sentiment sobre growth tech y IA sube; NASDAQ índices tech reagrupan con optimismo de crecimiento",
+    "despues": "Inversores revisan estimados de capex en sector tech; bonos corporativos de growth podrían presionarse levemente por múltiplos",
+    "escenarios": "Traders vigilan si crecimiento sostenido de SpaceX se replica en otros tech. Riesgo: si Fed torna más hawkish, múltiplos de growth se contraen rápidamente.",
+    "riesgos": "SpaceX es privada; valuación $160 es estimate; volatilidad de carry trades en IA podría revertir sentiment de corto plazo"
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-07T14:03:13+00:00",
+     "id": "34178",
+     "texto": "Las acciones de SpaceX suben 5% luego de que Argus Research eleva su recomendación a Compra (Buy), confirmando target anterior de $160 que implica crecimiento de 92%. Esta es actualización de reportaje previo sobre el upgrade de valoración de la empresa de investigación.",
+     "tgUrl": "https://t.me/walterbloomberg/34178"
+    }
+   ],
+   "actualizado": "2026-08-07T14:03:13+00:00"
+  },
+  {
+   "id": "34177",
+   "fecha": "2026-08-07T13:53:02+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34177",
+   "via": "DeItaone",
+   "original": "CANADA AND U.S. DISCUSSING TRADE CONCESSIONS IN RETURN FOR PARTIAL TARIFF RELIEF - GLOBE AND MAIL",
+   "titulo": "Canadá y EE.UU. negocian concesiones comerciales para alivio parcial de aranceles",
+   "resumen": "Canadá y Estados Unidos discuten concesiones comerciales mutuas a cambio de reducción parcial de aranceles, según reporta Globe and Mail. Sugiere negociación bilateral activa más allá de retórica pública. El titular no especifica qué sectores o magnitud de aranceles están en discusión.",
+   "analisis": {
+    "porque": "Las negociaciones arancelarias entre Canadá y EE.UU. afectan precios de commodities, tipos de cambio USD/CAD y sectores exportadores clave (energía, autos, agricultura)",
+    "queOcurrio": "Canadá y EE.UU. mantienen negociaciones sobre concesiones comerciales para lograr alivio arancelario parcial, según reporte del Globe and Mail",
+    "estado": "rumor",
+    "fuenteOriginal": "Globe and Mail"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "USDCAD",
+    "CAD",
+    "Petróleo",
+    "Trigo",
+    "Autos"
+   ],
+   "sesgos": [
+    {
+     "activo": "CAD",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "USDCAD",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "aranceles-usa-canada",
+    "negociaciones-comerciales",
+    "politica-comercial",
+    "concesiones-bilaterales",
+    "comercio-norteamericano"
+   ],
+   "tgText": "🇺🇸🇨🇦 Canadá y EE.UU. negocian concesiones comerciales para alivio parcial de aranceles. Discusiones bilaterales según Globe and Mail.",
+   "xText": "Canadá-USA: negociaciones de concesiones comerciales para reducir aranceles parcialmente. Reporta Globe and Mail. Sigue el USDCAD. #Comercio",
+   "discordText": "**Negociaciones Canadá-USA:**\n• Discusión de concesiones comerciales bilaterales\n• Objetivo: reducción parcial de aranceles\n• Fuente: Globe and Mail\n→ Impacto: energía, autos, commodities",
+   "pushText": "Canadá y USA negocian alivio arancelario con concesiones comerciales",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "USDCAD (esperaría debilitamiento del USD vs CAD si hay alivio arancelario)",
+    "despues": "Petróleo crudo y acciones de autos/energía canadienses",
+    "escenarios": "Traders monitorean avances: alivio arancelario = positivo para CAD y commodities; fracaso = presión alcista en USD; magnitud de concesiones es clave",
+    "riesgos": "Es rumor sin confirmación oficial; negociaciones suelen filtrarse de forma selectiva; riesgo de colapso sin aviso"
+   },
+   "macro": {
+    "dolar": "Bajista si hay alivio (presión en USD vs CAD)"
+   },
+   "updates": []
+  },
+  {
+   "id": "34176",
+   "fecha": "2026-08-07T13:48:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34176",
+   "via": "DeItaone",
+   "original": "*HASSETT: TAKE OUT GOVT WORKERS, WORLD CUP, JOBS ROSE 100,000",
+   "titulo": "Hassett cuestiona cifra de empleos: descarta empleados públicos y eventos especiales",
+   "resumen": "Kevin Hassett, asesor económico, analiza el reporte de empleos de julio cuestionando la metodología: sugiere que excluir empleados gubernamentales y empleos asociados a la Copa del Mundo mostraría crecimiento de 100.000 puestos. Refleja el debate sobre la calidad y composición real del dato de empleo publicado.",
+   "analisis": {
+    "porque": "Cuestiona la integridad del dato de empleo oficial, afectando la credibilidad de las decisiones de política monetaria basadas en este indicador",
+    "queOcurrio": "Hassett propone una revisión alternativa del reporte de empleos de julio, sugiriendo que la cifra real sería mayor si se excluyen ciertos segmentos",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "NASDAQ",
+    "Bonos",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empleo",
+   "keywords": [
+    "empleos-metodologia",
+    "hassett",
+    "economia-usa",
+    "debate-datos",
+    "politica-economica"
+   ],
+   "tgText": "🔍 Hassett revisa cifra de empleos: excluyendo gobierno y World Cup, serían ~100K. Cuestionamiento sobre calidad del dato de empleo.",
+   "xText": "Hassett cuestiona reporte de empleos: sin gobierno ni World Cup sería mayor cifra. Debate sobre metodología y confiabilidad del indicador. #Empleo #USA",
+   "discordText": "**Análisis Hassett:**\n• Cuestiona metodología de reporte de empleos\n• Excluyendo empleados públicos y especiales\n• Sugiere cifra real cercana a 100K\n→ Debate sobre integridad de datos",
+   "pushText": "Hassett cuestiona metodología de empleos: sin gobierno sería 100K puestos",
+   "importancia": 5,
+   "reaccion": {
+    "primero": "Bonos podrían reaccionar si el cuestionamiento gana tracción mediática, afectando expectativas de tasas",
+    "despues": "Acciones si impacta confianza en datos de Fed",
+    "escenarios": "Traders monitorizan si Fed reconoce las críticas; en mercados tradicionales el cuestionamiento de datos genera desconfianza en decisiones de política",
+    "riesgos": "Es análisis crítico sin base metodológica oficial; riesgo principal es que se politice el dato de empleo"
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": "34173",
    "fecha": "2026-08-07T12:41:36+00:00",
@@ -65,7 +245,101 @@
     "bonos": "alcista",
     "petroleo": "neutral"
    },
-   "updates": []
+   "updates": [
+    {
+     "fecha": "2026-08-07T13:40:48+00:00",
+     "id": "34175",
+     "texto": "El reporte de julio mostró contrataciones más débiles y revisiones a la baja, pero el desempleo cayó a mínimo de dos años por menor búsqueda laboral. La Fed mantiene la inflación como principal preocupación. El reporte de IPC de la próxima semana será decisivo: inflación moderada apoyaría mantener tasas; lectura fuerte podría justificar una suba en septiembre.",
+     "tgUrl": "https://t.me/walterbloomberg/34175"
+    }
+   ],
+   "actualizado": "2026-08-07T13:40:48+00:00"
+  },
+  {
+   "id": "920260316",
+   "fecha": "2026-08-06T19:38:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
+   "via": "CNBC",
+   "original": "Analysis: Trump treats Fed Chairman Kevin Warsh as an ally. That creates economic risks",
+   "titulo": "Trump ve a Kevin Warsh como aliado: riesgos de independencia monetaria",
+   "resumen": "Análisis señala que Donald Trump trata al Presidente de la Reserva Federal Kevin Warsh como aliado político, lo que genera riesgos sobre la independencia de política monetaria. La dinámica podría presionar a la Fed hacia decisiones más acomodativas que las justificadas por fundamentos económicos.",
+   "analisis": {
+    "porque": "La presión política sobre la Fed socava su credibilidad anti-inflacionaria y puede distorsionar decisiones de tasas, afectando expectativas inflacionarias a largo plazo, valuaciones de activos y confianza en instituciones monetarias.",
+    "queOcurrio": "Análisis editorial de CNBC sugiere relación de alianza entre Trump y Warsh, presidente de la Fed, que podría comprometer independencia monetaria.",
+    "estado": "análisis",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Dólar",
+    "Bonos USA",
+    "Oro",
+    "S&P 500",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Dólar",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "Trump",
+    "Kevin Warsh",
+    "política monetaria",
+    "independencia",
+    "tasas de interés"
+   ],
+   "tgText": "⚠️ Análisis: Trump ve a Warsh (Fed) como aliado. Riesgo de presión política sobre independencia monetaria. Impacto en dólar y bonos.",
+   "xText": "Análisis CNBC: relación Trump-Warsh (Fed) como aliados crea riesgos de independencia monetaria. Presión potencial sobre dólar y rendimientos.",
+   "discordText": "**Riesgos de independencia monetaria en Fed**\n⚠️ Trump trata a Warsh como aliado político\n• Potencial presión hacia política acomodativa\n• Riesgo para credibilidad anti-inflacionaria\n• Impacto esperado: dólar débil, oro fuerte",
+   "pushText": "Análisis: presión política sobre independencia de Fed",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Dólar (DXY) cae si mercados ven presión política reduciendo credibilidad hawkish de la Fed; oro sube como hedge de moneda débil.",
+    "despues": "Rendimientos USA podrían comprimirse si especulación sobre tasas más bajas emergen; equities podrían beneficiarse de tasas bajas, pero volatilidad implícita aumentaría.",
+    "escenarios": "Traders vigilarán comunicados de Warsh y votos de política monetaria próximos para señales de independencia vs. presión política; cualquier comentario de Trump sobre la Fed amplificaría volatilidad.",
+    "riesgos": "Es análisis editorial, no confirmación de hechos; el impacto depende de si Warsh cede a presión (no verificable aún). Riesgo de que sea interpretación periodística de relaciones normales."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "alcista",
+    "bonos": "bajista",
+    "sp500": "alcista corto plazo, riesgo largo plazo"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-07T13:21:14+00:00",
+     "id": "34174",
+     "texto": "Kevin Warsh, posible presidente de la Reserva Federal, estudia disminuir las ocho reuniones anuales programadas desde 1981. Goldman Sachs y Barclays advierten que menos comunicación podría provocar malinterpretaciones del mercado y mayor volatilidad en cada decisión. La propuesta refleja tensiones sobre la influencia de la Fed en los mercados.",
+     "tgUrl": "https://t.me/walterbloomberg/34174"
+    },
+    {
+     "fecha": "2026-08-07T09:29:20+00:00",
+     "id": "34147",
+     "texto": "Trump declara que EE.UU. debería mantener las tasas de interés más bajas a nivel mundial y sugiere que la decisión de la Fed 'no está totalmente' en manos de Kevin Warsh. Critica la junta de Warsh como 'muy política', aunque califica al funcionario como 'excelente'. Pressión presidencial sobre política monetaria refleja reciente nombramiento de Warsh y rol futuro en debates de tasas.",
+     "tgUrl": "https://t.me/walterbloomberg/34147"
+    },
+    {
+     "fecha": "2026-08-07T09:14:01+00:00",
+     "id": "34140",
+     "texto": "Trump declaró que la decisión de tasas de interés de la Fed no depende únicamente del presidente Kevin Warsh, sino también de la junta, a la que calificó como «muy política». Aunque elogió a Warsh, sugirió que las presiones políticas inciden en las decisiones monetarias antes de las elecciones.",
+     "tgUrl": "https://t.me/walterbloomberg/34140"
+    }
+   ],
+   "actualizado": "2026-08-07T13:21:14+00:00"
   },
   {
    "id": "34153",
@@ -370,61 +644,6 @@
     }
    ],
    "actualizado": "2026-08-07T11:49:18+00:00"
-  },
-  {
-   "id": "34163",
-   "fecha": "2026-08-07T11:20:32+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34163",
-   "via": "DeItaone",
-   "original": "SPACEX UPGRADED TO BUY — $160 TARGET Argus upgraded SpaceX ($SPCX ) from Hold to Buy with a $160 price target, citing strong growth and operational performance. Revenue reached $7.8 billion, up 92%, while SpaceX signaled a year-end 2026 revenue run rate approaching $100 billion. Despite higher AI infrastructure spending and expected share-price volatility, Argus believes SpaceX’s rapid growth and ",
-   "titulo": "Argus upgradea SpaceX a compra con target $160; crecimiento 92%",
-   "resumen": "Argus Research upgrade SpaceX de Hold a Buy con precio objetivo de $160. La casa de análisis destaca ingresos de $7.8 mil millones (crecimiento 92%) y proyección de tasa de ingresos anualizada de casi $100 mil millones para fin 2026. A pesar de volatilidad esperada y mayor gasto en infraestructura IA, estima que crecimiento acelerado y perspectivas de largo plazo superan riesgos.",
-   "analisis": {
-    "porque": "SpaceX es empresa privada pero impacta sentimiento sobre tech growth, IA, y gasto en infraestructura. Upgrade institucional refleja confianza en valuación y momentum de crecimiento.",
-    "queOcurrio": "Casa de análisis Argus eleva calificación de SpaceX tras reportar crecimiento de ingresos del 92% y proyectar run-rate de ~$100B para fin 2026.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Tecnología",
-    "NASDAQ",
-    "SpaceX"
-   ],
-   "sesgos": [
-    {
-     "activo": "Tecnología",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX",
-    "crecimiento",
-    "IA",
-    "infraestructura",
-    "upgrade",
-    "Argus"
-   ],
-   "tgText": "Argus upgradea SpaceX a BUY con target $160. Ingresos crecen 92% a $7.8B; proyecta run-rate de $100B para fin 2026. Infraestructura IA impulsa expansión.",
-   "xText": "🚀 Argus upgradea SpaceX: Hold → Buy, target $160. Ingresos +92% ($7.8B), run-rate $100B fin 2026. Crecimiento IA compensa volatilidad esperada. #Tech #Growth",
-   "discordText": "**Argus Research**: SpaceX upgrade Hold → Buy, target $160\n• Ingresos: $7.8B (+92% YoY)\n• Proyección: run-rate ~$100B fin 2026\n• Catalizador: expansión infraestructura IA\n• Riesgos: volatilidad de precio esperada",
-   "pushText": "Argus upgradea SpaceX a compra con target $160; crecimiento 92%",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Sentiment sobre growth tech y IA sube; NASDAQ índices tech reagrupan con optimismo de crecimiento",
-    "despues": "Inversores revisan estimados de capex en sector tech; bonos corporativos de growth podrían presionarse levemente por múltiplos",
-    "escenarios": "Traders vigilan si crecimiento sostenido de SpaceX se replica en otros tech. Riesgo: si Fed torna más hawkish, múltiplos de growth se contraen rápidamente.",
-    "riesgos": "SpaceX es privada; valuación $160 es estimate; volatilidad de carry trades en IA podría revertir sentiment de corto plazo"
-   },
-   "macro": null,
-   "updates": []
   },
   {
    "id": "34162",
@@ -872,86 +1091,6 @@
     "oro": "alcista (risk-off)"
    },
    "updates": []
-  },
-  {
-   "id": "920260316",
-   "fecha": "2026-08-06T19:38:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
-   "via": "CNBC",
-   "original": "Analysis: Trump treats Fed Chairman Kevin Warsh as an ally. That creates economic risks",
-   "titulo": "Trump ve a Kevin Warsh como aliado: riesgos de independencia monetaria",
-   "resumen": "Análisis señala que Donald Trump trata al Presidente de la Reserva Federal Kevin Warsh como aliado político, lo que genera riesgos sobre la independencia de política monetaria. La dinámica podría presionar a la Fed hacia decisiones más acomodativas que las justificadas por fundamentos económicos.",
-   "analisis": {
-    "porque": "La presión política sobre la Fed socava su credibilidad anti-inflacionaria y puede distorsionar decisiones de tasas, afectando expectativas inflacionarias a largo plazo, valuaciones de activos y confianza en instituciones monetarias.",
-    "queOcurrio": "Análisis editorial de CNBC sugiere relación de alianza entre Trump y Warsh, presidente de la Fed, que podría comprometer independencia monetaria.",
-    "estado": "análisis",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Dólar",
-    "Bonos USA",
-    "Oro",
-    "S&P 500",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Dólar",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "Trump",
-    "Kevin Warsh",
-    "política monetaria",
-    "independencia",
-    "tasas de interés"
-   ],
-   "tgText": "⚠️ Análisis: Trump ve a Warsh (Fed) como aliado. Riesgo de presión política sobre independencia monetaria. Impacto en dólar y bonos.",
-   "xText": "Análisis CNBC: relación Trump-Warsh (Fed) como aliados crea riesgos de independencia monetaria. Presión potencial sobre dólar y rendimientos.",
-   "discordText": "**Riesgos de independencia monetaria en Fed**\n⚠️ Trump trata a Warsh como aliado político\n• Potencial presión hacia política acomodativa\n• Riesgo para credibilidad anti-inflacionaria\n• Impacto esperado: dólar débil, oro fuerte",
-   "pushText": "Análisis: presión política sobre independencia de Fed",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Dólar (DXY) cae si mercados ven presión política reduciendo credibilidad hawkish de la Fed; oro sube como hedge de moneda débil.",
-    "despues": "Rendimientos USA podrían comprimirse si especulación sobre tasas más bajas emergen; equities podrían beneficiarse de tasas bajas, pero volatilidad implícita aumentaría.",
-    "escenarios": "Traders vigilarán comunicados de Warsh y votos de política monetaria próximos para señales de independencia vs. presión política; cualquier comentario de Trump sobre la Fed amplificaría volatilidad.",
-    "riesgos": "Es análisis editorial, no confirmación de hechos; el impacto depende de si Warsh cede a presión (no verificable aún). Riesgo de que sea interpretación periodística de relaciones normales."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "oro": "alcista",
-    "bonos": "bajista",
-    "sp500": "alcista corto plazo, riesgo largo plazo"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-07T09:29:20+00:00",
-     "id": "34147",
-     "texto": "Trump declara que EE.UU. debería mantener las tasas de interés más bajas a nivel mundial y sugiere que la decisión de la Fed 'no está totalmente' en manos de Kevin Warsh. Critica la junta de Warsh como 'muy política', aunque califica al funcionario como 'excelente'. Pressión presidencial sobre política monetaria refleja reciente nombramiento de Warsh y rol futuro en debates de tasas.",
-     "tgUrl": "https://t.me/walterbloomberg/34147"
-    },
-    {
-     "fecha": "2026-08-07T09:14:01+00:00",
-     "id": "34140",
-     "texto": "Trump declaró que la decisión de tasas de interés de la Fed no depende únicamente del presidente Kevin Warsh, sino también de la junta, a la que calificó como «muy política». Aunque elogió a Warsh, sugirió que las presiones políticas inciden en las decisiones monetarias antes de las elecciones.",
-     "tgUrl": "https://t.me/walterbloomberg/34140"
-    }
-   ],
-   "actualizado": "2026-08-07T09:29:20+00:00"
   },
   {
    "id": "974761671",
@@ -7516,126 +7655,6 @@
    "macro": {
     "sp500": "alcista",
     "nasdaq": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33961",
-   "fecha": "2026-08-04T12:31:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33961",
-   "via": "DeItaone",
-   "original": "US JUN TRADE DEFICIT $73.26B; CONSENSUS DEFICIT $72.9B MAY TRADE BAL REVISED TO DEFICIT $77.65B FROM DEFICIT $77.58B JUN EXPORTS $314.73B, -0.9%; IMPORTS $387.99B, -1.8%",
-   "titulo": "Déficit comercial EE.UU. junio $73,26B supera consenso; exportaciones caen 0,9%",
-   "resumen": "El déficit comercial de junio alcanzó $73,26B, por encima del consenso de $72,9B, mientras mayo se revisó al alza a $77,65B. Las exportaciones cayeron 0,9% a $314,73B e importaciones bajaron 1,8% a $387,99B. El dato refleja debilidad en demanda externa y presiones en la balanza comercial estadounidense.",
-   "analisis": {
-    "porque": "El deterioro en la balanza comercial influye en las estimaciones de crecimiento GDP, afecta política comercial de Trump (aranceles/negociaciones) y presiona el dólar. Dato peor que consenso reanima debate sobre competitividad EE.UU.",
-    "queOcurrio": "Déficit comercial de junio superior a expectativas ($73,26B vs $72,9B); ambos componentes (exportaciones e importaciones) cayeron, señalando debilidad bilateral en comercio.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "S&P500",
-    "Bonos USA",
-    "EURUSD"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "déficit-comercial",
-    "junio-2026",
-    "exportaciones",
-    "importaciones",
-    "balanza-comercial"
-   ],
-   "tgText": "📊 Déficit comercial EE.UU. junio en $73,26B, por encima de consenso ($72,9B). Exportaciones -0,9%, importaciones -1,8%. Dato presiona dólar y reanima debate de competitividad.",
-   "xText": "📊 Déficit comercial EE.UU. junio: $73,26B (vs consenso $72,9B). Exportaciones -0,9%, importaciones -1,8%. Presión sobre dólar y política comercial.",
-   "discordText": "**Déficit Comercial EE.UU. - Junio 2026**\n• Déficit: $73,26B (+vs consenso $72,9B)\n• Exportaciones: $314,73B (-0,9%)\n• Importaciones: $387,99B (-1,8%)\n• Impacto: Presión dólar, GDP weakness",
-   "pushText": "Déficit comercial EE.UU. junio supera consenso; presión alcista sobre bonos",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "DXY cae por mayor déficit y expectativas de menor crecimiento GDP; típicamente presiona el dólar en 30-60 minutos post-dato",
-    "despues": "Bonos USA suben (yields bajan) por escenario de crecimiento débil; S&P 500 puede retraerse si mercado interpreta como ralentización económica",
-    "escenarios": "Traders vigilarán si dato refuerza caso de más recortes de tasas Fed; si es visto como presión política para nuevos aranceles Trump, equity risk subiría",
-    "riesgos": "Revisiones previas a mayo podrían suavizar impacto; narrativa de aranceles Trump es variable política que puede cambiar interpretación del mercado"
-   },
-   "macro": {
-    "dolar": "bajista",
-    "bonos": "alcista",
-    "nasdaq": "neutral",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "33950",
-   "fecha": "2026-08-04T11:33:56+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33950",
-   "via": "DeItaone",
-   "original": "🇯🇵 BESSENT BACKS JAPAN'S YEN STABILIZATION EFFORTS U.S. Treasury Secretary Scott Bessent said Washington has been in \"close contact\" with Japan over yen intervention. \"It's important to have a framework,\" Bessent said, adding Japan is making \"serious efforts\" to stem the yen's depreciation. He also said he has a good working relationship with his Japanese counterpart and believes Japan \"will put",
-   "titulo": "Bessent respalda esfuerzos Japón para estabilizar yen; sin detalle de intervención",
-   "resumen": "El Secretario del Tesoro estadounidense Scott Bessent declaró respaldo a los esfuerzos de Japón por estabilizar el yen, aseguró contacto cercano con Tokio y confía en que el Banco de Japón implementará políticas correctas. Bessent advirtió que debilitamiento del yen arrastraría otras divisas.",
-   "analisis": {
-    "porque": "Política de cambio del Tesoro USA de facto reconoce debilidad crónica del yen. Bessent endosa intervención BoJ, lo que da cobertura política a Tokio. Impacta outlook de JPY, carry trade y divisas emergentes.",
-    "queOcurrio": "Bessent confirmó que USA monitorea yen, respalda intervenciones BoJ y advierte efecto cascada a otras monedas. Sin detalle de acción coordinada formal USA-Japón.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "JPY",
-    "USD",
-    "USDJPY",
-    "Emergentes",
-    "Carry Trade"
-   ],
-   "sesgos": [
-    {
-     "activo": "JPY",
-     "sesgo": "alcista (para fortalecer)"
-    },
-    {
-     "activo": "Emergentes",
-     "sesgo": "bajista (mayor flujos a USA)"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "Bessent",
-    "yen",
-    "Japón",
-    "BOJ",
-    "politica-cambio"
-   ],
-   "tgText": "🇯🇵 Bessent (Tesoro USA): respalda esfuerzos Japón estabilizar yen. Advierte que debilitamiento JPY arrastría otras monedas. Endoso político a intervención BoJ.",
-   "xText": "🇯🇵 Bessent (US Treasury): backs Japan's yen stabilization efforts, warns yen weakness would drag other currencies. Political cover for BoJ intervention.",
-   "discordText": "**Bancos Centrales**\n• Bessent respalda esfuerzos BoJ estabilizar yen\n• Advierte cascada a otras monedas si JPY cae\n• Endoso político a intervención de Tokio\n• Contacto cercano USA-Japón confirmado",
-   "pushText": "Bessent respalda esfuerzos BoJ estabilizar yen.",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "USDJPY puede consolidar o bajar levemente (JPY fortalece) en corto plazo; volatilidad implícita USDJPY puede comprimir",
-    "despues": "Carry trades se ajustan; monedas EM vigilan flujos a USA",
-    "escenarios": "Traders atienden: (1) si endoso de Bessent lleva a intervención coordinada visible, (2) datos BoJ de intervención real, (3) impacto en tasas JGB",
-    "riesgos": "Bessent no confirmó mecanismo formal; solo respaldo político. Intervención BoJ sola podría ser insuficiente si presiones sistémicas continúan."
-   },
-   "macro": {
-    "dolar": "neutral (presión bajista leve en JPY supporta)"
    },
    "updates": []
   }
