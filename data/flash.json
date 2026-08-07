@@ -1,7 +1,72 @@
 {
- "lastId": 34178,
- "actualizado": "2026-08-07T14:09:05.384Z",
+ "lastId": 34182,
+ "actualizado": "2026-08-07T15:07:45.002Z",
  "items": [
+  {
+   "id": "34182",
+   "fecha": "2026-08-07T14:34:14+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34182",
+   "via": "DeItaone",
+   "original": "FED'S BARKIN: DOESN'T THINK THERE IS WAGE INFLATION RIGHT NOW",
+   "titulo": "Barkin (FED): No hay inflación salarial significativa en la economía",
+   "resumen": "Thomas Barkin, presidente de la FED de Richmond, declara que no observa inflación salarial relevante en la economía actual. Esta evaluación contrasta con preocupaciones pasadas sobre presiones de costos laborales y respalda un escenario de política monetaria menos restrictiva.",
+   "analisis": {
+    "porque": "La inflación salarial es componente crítico en las decisiones de política monetaria de la FED. Una evaluación dovish sobre presiones salariales abre espacio para menores tasas de interés y reduce presión inflacionaria esperada.",
+    "queOcurrio": "Barkin descarta la existencia de inflación salarial significativa en el presente, sugiriendo que presiones de costos laborales no son obstáculo inmediato para flexibilización monetaria.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "Bonos USA",
+    "Dólar",
+    "Oro"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "inflación salarial",
+    "Barkin",
+    "FED",
+    "política monetaria",
+    "mercado laboral"
+   ],
+   "tgText": "Barkin (FED): No hay inflación salarial significativa. Abre camino a política menos restrictiva. Bonos alcistas, dólar bajo presión.",
+   "xText": "FED Barkin: Sin inflación salarial relevante en economía. Dovish signal favorece bonos, equities y presiona USD. Expectativa de mayor flexibilización monetaria. $TLT $DXY",
+   "discordText": "**FED: Barkin descarta inflación salarial**\n• No hay presiones significativas de costos laborales\n• Abre espacio para política monetaria menos restrictiva\n• Bonos alcistas, dólar bajo presión",
+   "pushText": "FED sin inflación salarial: Barkin abre puerta a mayor flexibilización",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos USA (yields caen por expectativa de tasas más bajas); acciones tech (+) por menor presión inflacionaria",
+    "despues": "Oro sube (dólar débil); divisas EM fortalecidas; rotación desde defensivos; caída en USD",
+    "escenarios": "Traders observan si esta narrativa se confirma en reunión FOMC próxima; monitorean datos de salarios de próximos meses; correlacionan con inflación PCE",
+    "riesgos": "Barkin podría estar observando datos retrasados; inflación salarial podría regresar rápidamente si mercado laboral se tensa; expectativas de mercado ya precian cortes de tasas"
+   },
+   "macro": {
+    "dolar": "bajista, presión por dovish guidance",
+    "bonos": "alcistas, yields bajan",
+    "nasdaq": "alcista por menor restricción monetaria",
+    "sp500": "alcista, presión menor sobre márgenes corporativos"
+   },
+   "updates": []
+  },
   {
    "id": "34163",
    "fecha": "2026-08-07T11:20:32+00:00",
@@ -57,13 +122,176 @@
    "macro": null,
    "updates": [
     {
+     "fecha": "2026-08-07T14:29:50+00:00",
+     "id": "34181",
+     "texto": "Las acciones de SpaceX extienden sus ganancias del día, alcanzando un alza de 10,8%. El movimiento ocurre días después del upgrade de Argus Research (target $160), que proyectaba crecimiento del 92%. Nota: el título no especifica catalizador nuevo en esta sesión.",
+     "tgUrl": "https://t.me/walterbloomberg/34181"
+    },
+    {
      "fecha": "2026-08-07T14:03:13+00:00",
      "id": "34178",
      "texto": "Las acciones de SpaceX suben 5% luego de que Argus Research eleva su recomendación a Compra (Buy), confirmando target anterior de $160 que implica crecimiento de 92%. Esta es actualización de reportaje previo sobre el upgrade de valoración de la empresa de investigación.",
      "tgUrl": "https://t.me/walterbloomberg/34178"
     }
    ],
-   "actualizado": "2026-08-07T14:03:13+00:00"
+   "actualizado": "2026-08-07T14:29:50+00:00"
+  },
+  {
+   "id": "34180",
+   "fecha": "2026-08-07T14:19:22+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34180",
+   "via": "DeItaone",
+   "original": "FED'S BARKIN: MAY BE MOVING INTO A WORLD OF GREATER INSTABILITY",
+   "titulo": "Barkin (FED): Economía se mueve hacia mayor inestabilidad",
+   "resumen": "El presidente de la Reserva Federal de Richmond, Thomas Barkin, advierte que la economía podría estar entrando en un período de mayor inestabilidad. La declaración refleja preocupaciones sobre volatilidad macroeconómica sin especificar sectores o mecanismos específicos de riesgo.",
+   "analisis": {
+    "porque": "Las señales de banqueros centrales sobre estabilidad/inestabilidad económica influyen directamente en expectativas de política monetaria, volatilidad de mercado y rotaciones de cartera. Barkin es miembro con voto en el FOMC.",
+    "queOcurrio": "Barkin expresó que la economía podría estar transitando hacia un escenario de mayor inestabilidad, sin detallar causas específicas en el titular.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "Bonos USA",
+    "Volatilidad VIX",
+    "Dólar"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Volatilidad VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Barkin",
+    "FED",
+    "inestabilidad",
+    "política monetaria",
+    "riesgos sistémicos"
+   ],
+   "tgText": "Barkin (FED) advierte: economía avanza hacia mayor inestabilidad. Señal de banquero central genera vigilancia en expectativas de tasas y rotaciones defensivas.",
+   "xText": "Thomas Barkin (FED Richmond): economía en transición hacia mayor inestabilidad. Alerta de BC impacta mercados de renta variable y expectativas monetarias. $SPY $QQQ",
+   "discordText": "**FED: Barkin advierte mayor inestabilidad**\n• Presidente FED Richmond dice que economía se mueve hacia escenario de volatilidad creciente\n• Afecta: expectativas de tasas, rotaciones defensivas\n• Impacto: medio",
+   "pushText": "FED: Barkin advierte sobre mayor inestabilidad económica",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Bonos USA (yields caen por menor probabilidad de más subidas de tasas); VIX sube por aversión al riesgo",
+    "despues": "Acciones de defensivos suben; rotación desde tech hacia utilidades y consumo básico; USD débil si implica cortes de tasas",
+    "escenarios": "Traders vigilan si otros miembros del FOMC respaldan esta narrativa; si hay cambio hacia dovish guidance en próximas semanas; correlación con datos de empleo/inflación",
+    "riesgos": "Titular sin contexto específico sobre qué fuentes de inestabilidad; podría ser sobre ciclos normales o señal de preocupación seria por riesgos financieros"
+   },
+   "macro": {
+    "dolar": "potencial debilitamiento si menor probabilidad de tasas altas",
+    "bonos": "alcistas, yields bajan por expectativa de menor restricción",
+    "nasdaq": "presión bajista por rotación defensiva",
+    "sp500": "sesgo bajista por mayor volatilidad esperada"
+   },
+   "updates": []
+  },
+  {
+   "id": "920260316",
+   "fecha": "2026-08-06T19:38:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
+   "via": "CNBC",
+   "original": "Analysis: Trump treats Fed Chairman Kevin Warsh as an ally. That creates economic risks",
+   "titulo": "Trump ve a Kevin Warsh como aliado: riesgos de independencia monetaria",
+   "resumen": "Análisis señala que Donald Trump trata al Presidente de la Reserva Federal Kevin Warsh como aliado político, lo que genera riesgos sobre la independencia de política monetaria. La dinámica podría presionar a la Fed hacia decisiones más acomodativas que las justificadas por fundamentos económicos.",
+   "analisis": {
+    "porque": "La presión política sobre la Fed socava su credibilidad anti-inflacionaria y puede distorsionar decisiones de tasas, afectando expectativas inflacionarias a largo plazo, valuaciones de activos y confianza en instituciones monetarias.",
+    "queOcurrio": "Análisis editorial de CNBC sugiere relación de alianza entre Trump y Warsh, presidente de la Fed, que podría comprometer independencia monetaria.",
+    "estado": "análisis",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Dólar",
+    "Bonos USA",
+    "Oro",
+    "S&P 500",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Dólar",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "Trump",
+    "Kevin Warsh",
+    "política monetaria",
+    "independencia",
+    "tasas de interés"
+   ],
+   "tgText": "⚠️ Análisis: Trump ve a Warsh (Fed) como aliado. Riesgo de presión política sobre independencia monetaria. Impacto en dólar y bonos.",
+   "xText": "Análisis CNBC: relación Trump-Warsh (Fed) como aliados crea riesgos de independencia monetaria. Presión potencial sobre dólar y rendimientos.",
+   "discordText": "**Riesgos de independencia monetaria en Fed**\n⚠️ Trump trata a Warsh como aliado político\n• Potencial presión hacia política acomodativa\n• Riesgo para credibilidad anti-inflacionaria\n• Impacto esperado: dólar débil, oro fuerte",
+   "pushText": "Análisis: presión política sobre independencia de Fed",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Dólar (DXY) cae si mercados ven presión política reduciendo credibilidad hawkish de la Fed; oro sube como hedge de moneda débil.",
+    "despues": "Rendimientos USA podrían comprimirse si especulación sobre tasas más bajas emergen; equities podrían beneficiarse de tasas bajas, pero volatilidad implícita aumentaría.",
+    "escenarios": "Traders vigilarán comunicados de Warsh y votos de política monetaria próximos para señales de independencia vs. presión política; cualquier comentario de Trump sobre la Fed amplificaría volatilidad.",
+    "riesgos": "Es análisis editorial, no confirmación de hechos; el impacto depende de si Warsh cede a presión (no verificable aún). Riesgo de que sea interpretación periodística de relaciones normales."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "alcista",
+    "bonos": "bajista",
+    "sp500": "alcista corto plazo, riesgo largo plazo"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-07T14:10:14+00:00",
+     "id": "34179",
+     "texto": "Kevin Hassett, asesor económico de Trump, confirma comunicación frecuente entre Trump y Kevin Warsh (posible secretario del Tesoro) sobre temas económicos. Hassett descarta que Trump aconseje a Warsh sobre política de tipos de interés, reforzando la narrativa de independencia de la FED.",
+     "tgUrl": "https://t.me/walterbloomberg/34179"
+    },
+    {
+     "fecha": "2026-08-07T13:21:14+00:00",
+     "id": "34174",
+     "texto": "Kevin Warsh, posible presidente de la Reserva Federal, estudia disminuir las ocho reuniones anuales programadas desde 1981. Goldman Sachs y Barclays advierten que menos comunicación podría provocar malinterpretaciones del mercado y mayor volatilidad en cada decisión. La propuesta refleja tensiones sobre la influencia de la Fed en los mercados.",
+     "tgUrl": "https://t.me/walterbloomberg/34174"
+    },
+    {
+     "fecha": "2026-08-07T09:29:20+00:00",
+     "id": "34147",
+     "texto": "Trump declara que EE.UU. debería mantener las tasas de interés más bajas a nivel mundial y sugiere que la decisión de la Fed 'no está totalmente' en manos de Kevin Warsh. Critica la junta de Warsh como 'muy política', aunque califica al funcionario como 'excelente'. Pressión presidencial sobre política monetaria refleja reciente nombramiento de Warsh y rol futuro en debates de tasas.",
+     "tgUrl": "https://t.me/walterbloomberg/34147"
+    },
+    {
+     "fecha": "2026-08-07T09:14:01+00:00",
+     "id": "34140",
+     "texto": "Trump declaró que la decisión de tasas de interés de la Fed no depende únicamente del presidente Kevin Warsh, sino también de la junta, a la que calificó como «muy política». Aunque elogió a Warsh, sugirió que las presiones políticas inciden en las decisiones monetarias antes de las elecciones.",
+     "tgUrl": "https://t.me/walterbloomberg/34140"
+    }
+   ],
+   "actualizado": "2026-08-07T14:10:14+00:00"
   },
   {
    "id": "34177",
@@ -254,92 +482,6 @@
     }
    ],
    "actualizado": "2026-08-07T13:40:48+00:00"
-  },
-  {
-   "id": "920260316",
-   "fecha": "2026-08-06T19:38:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
-   "via": "CNBC",
-   "original": "Analysis: Trump treats Fed Chairman Kevin Warsh as an ally. That creates economic risks",
-   "titulo": "Trump ve a Kevin Warsh como aliado: riesgos de independencia monetaria",
-   "resumen": "Análisis señala que Donald Trump trata al Presidente de la Reserva Federal Kevin Warsh como aliado político, lo que genera riesgos sobre la independencia de política monetaria. La dinámica podría presionar a la Fed hacia decisiones más acomodativas que las justificadas por fundamentos económicos.",
-   "analisis": {
-    "porque": "La presión política sobre la Fed socava su credibilidad anti-inflacionaria y puede distorsionar decisiones de tasas, afectando expectativas inflacionarias a largo plazo, valuaciones de activos y confianza en instituciones monetarias.",
-    "queOcurrio": "Análisis editorial de CNBC sugiere relación de alianza entre Trump y Warsh, presidente de la Fed, que podría comprometer independencia monetaria.",
-    "estado": "análisis",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Dólar",
-    "Bonos USA",
-    "Oro",
-    "S&P 500",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Dólar",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "Trump",
-    "Kevin Warsh",
-    "política monetaria",
-    "independencia",
-    "tasas de interés"
-   ],
-   "tgText": "⚠️ Análisis: Trump ve a Warsh (Fed) como aliado. Riesgo de presión política sobre independencia monetaria. Impacto en dólar y bonos.",
-   "xText": "Análisis CNBC: relación Trump-Warsh (Fed) como aliados crea riesgos de independencia monetaria. Presión potencial sobre dólar y rendimientos.",
-   "discordText": "**Riesgos de independencia monetaria en Fed**\n⚠️ Trump trata a Warsh como aliado político\n• Potencial presión hacia política acomodativa\n• Riesgo para credibilidad anti-inflacionaria\n• Impacto esperado: dólar débil, oro fuerte",
-   "pushText": "Análisis: presión política sobre independencia de Fed",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Dólar (DXY) cae si mercados ven presión política reduciendo credibilidad hawkish de la Fed; oro sube como hedge de moneda débil.",
-    "despues": "Rendimientos USA podrían comprimirse si especulación sobre tasas más bajas emergen; equities podrían beneficiarse de tasas bajas, pero volatilidad implícita aumentaría.",
-    "escenarios": "Traders vigilarán comunicados de Warsh y votos de política monetaria próximos para señales de independencia vs. presión política; cualquier comentario de Trump sobre la Fed amplificaría volatilidad.",
-    "riesgos": "Es análisis editorial, no confirmación de hechos; el impacto depende de si Warsh cede a presión (no verificable aún). Riesgo de que sea interpretación periodística de relaciones normales."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "oro": "alcista",
-    "bonos": "bajista",
-    "sp500": "alcista corto plazo, riesgo largo plazo"
-   },
-   "updates": [
-    {
-     "fecha": "2026-08-07T13:21:14+00:00",
-     "id": "34174",
-     "texto": "Kevin Warsh, posible presidente de la Reserva Federal, estudia disminuir las ocho reuniones anuales programadas desde 1981. Goldman Sachs y Barclays advierten que menos comunicación podría provocar malinterpretaciones del mercado y mayor volatilidad en cada decisión. La propuesta refleja tensiones sobre la influencia de la Fed en los mercados.",
-     "tgUrl": "https://t.me/walterbloomberg/34174"
-    },
-    {
-     "fecha": "2026-08-07T09:29:20+00:00",
-     "id": "34147",
-     "texto": "Trump declara que EE.UU. debería mantener las tasas de interés más bajas a nivel mundial y sugiere que la decisión de la Fed 'no está totalmente' en manos de Kevin Warsh. Critica la junta de Warsh como 'muy política', aunque califica al funcionario como 'excelente'. Pressión presidencial sobre política monetaria refleja reciente nombramiento de Warsh y rol futuro en debates de tasas.",
-     "tgUrl": "https://t.me/walterbloomberg/34147"
-    },
-    {
-     "fecha": "2026-08-07T09:14:01+00:00",
-     "id": "34140",
-     "texto": "Trump declaró que la decisión de tasas de interés de la Fed no depende únicamente del presidente Kevin Warsh, sino también de la junta, a la que calificó como «muy política». Aunque elogió a Warsh, sugirió que las presiones políticas inciden en las decisiones monetarias antes de las elecciones.",
-     "tgUrl": "https://t.me/walterbloomberg/34140"
-    }
-   ],
-   "actualizado": "2026-08-07T13:21:14+00:00"
   },
   {
    "id": "34153",
@@ -7540,121 +7682,6 @@
     "dolar": "alcista",
     "bonos": "bajista",
     "sp500": "bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33963",
-   "fecha": "2026-08-04T12:36:52+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33963",
-   "via": "DeItaone",
-   "original": "SPOT SILVER RISES 3% TO $59.90/OZ",
-   "titulo": "Plata sube 3% a $59,90/oz en contexto de incertidumbre geopolítica y tasas",
-   "resumen": "Plata spot sube 3% hasta $59,90 por onza. Movimiento ocurre en contexto de incertidumbre geopolítica (conflicto Irán-EE.UU.), presiones de tasas (Fed restrictiva) y posible rotación hacia metales preciosos como cobertura. El rally sugiere renovado interés en activos de refugio.",
-   "analisis": {
-    "porque": "Plata es activo dual: refugio (guerra) + industrial (economía). Suba 3% señala rebalanceo hacia commodities defensivos en contexto de riesgo geopolítico elevado y ambiente de tasas restricitivo que reduce yield de bonos.",
-    "queOcurrio": "Precio spot plata sube 3% a $59,90/oz. Titular no especifica catalizador exacto, pero contexto incluye escalada Irán y comentarios hawkish Fed.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Plata",
-    "Oro",
-    "Commodities",
-    "USD"
-   ],
-   "sesgos": [
-    {
-     "activo": "Plata",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Materias Primas",
-   "keywords": [
-    "plata",
-    "precio-spot",
-    "refugio",
-    "commodities",
-    "geopolítica"
-   ],
-   "tgText": "⬆️ Plata sube 3% a $59,90/oz. Movimiento respaldado por geopolítica (Irán), Fed hawkish y rotación hacia refugio. Oro también apunta alcista.",
-   "xText": "⬆️ Plata +3% a $59,90/oz en contexto de riesgo geopolítico y tasas restricitivas. Rotación hacia metales preciosos como cobertura defensiva.",
-   "discordText": "**Plata: Rally +3% a $59,90/oz**\n• Catalizadores: Riesgo geopolítico (Irán), Fed hawkish\n• Postura: Rotación hacia refugio\n• Correlación: Oro también alcista\n• Contexto: Tasas restrictivas impulsan demanda defensiva",
-   "pushText": "Plata sube 3% a $59,90/oz; geopolítica e incertidumbre de tasas impulsan refugio",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Oro típicamente acompaña o lidera plata en movimientos defensivos; ambos suben cuando tasas reales bajan o riesgo geopolítico sube",
-    "despues": "Bonos USA pueden subir (yields bajen) si mercado ve escalada Irán; dólar bajo presión si reservas de valor van a oro vs USD",
-    "escenarios": "Traders vigilarán evolución Irán para ver si escalada justifica sostenimiento de rally. Monitorearán datos de inflación que pudieran cambiar narrativa de tasas. Si Fed suaviza, plata presionada (menos demanda defensiva).",
-    "riesgos": "Movimiento plata pequeño (3%); si no hay confirmación de Irán, rotación puede revertirse. Riesgo si dato de inflación es más débil, presionando demanda defensiva."
-   },
-   "macro": {
-    "oro": "alcista",
-    "dolar": "bajista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33962",
-   "fecha": "2026-08-04T12:33:08+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33962",
-   "via": "DeItaone",
-   "original": "SOCGEN: BUY THE DIP, SEES S&P 500 AT 8,000 Societe Generale says U.S. earnings strength is broadening beyond Big Tech and continues to support equities. The bank notes 86% of companies have beaten earnings estimates, margins are at record highs, and 2026 EPS forecasts have risen to $335. SocGen says AI investment remains strong and expects the S&P 500 to reach 8,000, urging investors to \"buy the m",
-   "titulo": "SocGen: S&P 500 hacia 8.000 puntos; 86% empresas baten EPS, márgenes récord",
-   "resumen": "Societe Generale suscribe narrativa de fortaleza earnings: 86% de empresas han superado estimaciones, márgenes en máximos históricos y EPS 2026 revisadas al alza a $335. El banco recomienda 'comprar caídas' y proyecta S&P 500 en 8.000, respaldado por inversión AI robusta e impulso corporativo generalizado.",
-   "analisis": {
-    "porque": "Target price agresivo de banco multinacional prestigioso puede catalizar rebalanceos 'risk-on'. El dato de 86% beat rate y márgenes récord refuerza narrativa de 'soft landing' corporativo que soporta múltiplos equities elevados.",
-    "queOcurrio": "SocGen proyecta S&P 500 en 8.000 basado en: 86% de compañías batiendo EPS, márgenes máximos, EPS 2026 en $335, inversión AI fuerte continua.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Tech stocks"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "earnings-beat",
-    "s&p500",
-    "márgenes",
-    "ai-investment",
-    "target-price"
-   ],
-   "tgText": "📈 SocGen ve S&P 500 en 8.000: 86% empresas baten EPS, márgenes récord, EPS 2026 en $335. Recomienda 'buy the dip' con inversión AI robusta.",
-   "xText": "📈 SocGen: S&P 500 target 8.000. 86% empresas baten EPS, márgenes máximos, inversión AI fuerte. Recomienda comprar caídas.",
-   "discordText": "**SocGen: S&P 500 Target 8.000**\n• 86% de empresas baten estimaciones\n• Márgenes en máximos históricos\n• EPS 2026 subidas a $335\n• Inversión AI continúa fuerte\n• Estrategia: buy the momentum dip",
-   "pushText": "SocGen proyecta S&P 500 en 8.000; earnings beat generalizado sostiene alzas",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "S&P 500 y NASDAQ típicamente suben en corto plazo (horas) por respaldo institucional a narrativa alcista y target price agresivo",
-    "despues": "Rotación hacia 'mega-cap' / AI tech stocks; potencial aumento de valuaciones si mercado 'compra' la narrativa 2026 EPS $335",
-    "escenarios": "Traders vigilarán confirmación de earnings guidance forward; si próximas earnings decepcionan vs $335 EPS forecast, riesgo de corrección. Monitorearán señales de inflación que pudiera comprometer márgenes.",
-    "riesgos": "Proyección depende de supuesto de márgenes sostenibles; ciclos económicos tardíos históricamente ven margen squeeze. Riesgo si Fed no baja tasas como esperado."
-   },
-   "macro": {
-    "sp500": "alcista",
-    "nasdaq": "alcista"
    },
    "updates": []
   }
