@@ -1,7 +1,207 @@
 {
- "lastId": 34182,
- "actualizado": "2026-08-07T15:07:45.002Z",
+ "lastId": 34185,
+ "actualizado": "2026-08-07T16:07:22.865Z",
  "items": [
+  {
+   "id": "34185",
+   "fecha": "2026-08-07T16:02:12+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34185",
+   "via": "DeItaone",
+   "original": "OPTIONS TRADERS RAMP UP BULLISH BETS Traders are piling into bullish options as market optimism strengthens. Cboe’s skew measure fell Friday to its lowest level since December 2024. A lower skew indicates call options are becoming more expensive relative to puts, signaling increased demand for bets on further market gains.",
+   "titulo": "Traders apuestan fuerte por ganancias: índice de sesgo de opciones cae a mínimos de 8 meses",
+   "resumen": "Operadores de opciones intensifican posiciones alcistas a medida que el optimismo de mercado se fortalece. El indicador Skew del Cboe cayó el viernes a su nivel más bajo desde diciembre de 2024, señalando que las opciones de compra (call) se encarecen respecto a las de venta (put), revelando demanda creciente de apuestas alcistas.",
+   "analisis": {
+    "porque": "El sesgo de opciones es un indicador adelantado de sentimiento. Cuando cae significa que los traders están pagando más por protección alcista y menos por cobertura bajista, anticipando ganancias. Puede indicar tope cercano de mercado si es extremo.",
+    "queOcurrio": "El skew Cboe descendió a niveles no vistos en 8 meses, mostrando concentración de apuestas alcistas en el mercado de opciones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos|Breaking News",
+   "keywords": [
+    "opciones",
+    "skew",
+    "sesgo",
+    "volatilidad",
+    "Cboe",
+    "call",
+    "put",
+    "sentimiento"
+   ],
+   "tgText": "📊 Sesgo de opciones al mínimo: traders apilan apuestas alcistas. Cboe Skew cae a nivel Dec 2024. Calls más caras que puts = optimismo extremo.",
+   "xText": "Operadores de opciones se vuelcan a apuestas alcistas: Cboe Skew al mínimo en 8 meses. Calls más caras que puts. Sentimiento alcista extremo en mercado. #Trading",
+   "discordText": "**Traders disparan apuestas alcistas en opciones**\n- Cboe Skew cae a mínimos desde diciembre 2024\n- Calls más caras que puts = demanda alcista intensa\n- Indicador adelantado de sentimiento extremo",
+   "pushText": "Traders apilan apuestas alcistas: sesgo de opciones al mínimo",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "S&P 500 y NASDAQ (en dirección alcista, pero sesgo extremo advierte tope cercano). VIX baja (volatilidad reprimida).",
+    "despues": "Si hay corrección, quienes cubrieron con puts ganarán. Potencial para volatilidad sorpresiva si el mercado se revierte.",
+    "escenarios": "Traders vigilan si este extremo es tope de rally. Buscarán divergencias: si precio sigue subiendo pero skew no cae más, señal de debilitamiento. Vigilancia sobre qué activa el reversal (inflación, Fed, geopolítica).",
+    "riesgos": "Extremo de sesgo no es predictor de crash inminente, pero sí señal de poco margen de seguridad alcista. Un shock exógeno (Ormuz, inflación) podría pivotar masivamente hacia puts. Riesgo de volatilidad comprimida."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "34184",
+   "fecha": "2026-08-07T15:43:15+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34184",
+   "via": "DeItaone",
+   "original": "GOLDMAN: INFLATION NOW MATTERS MORE THAN JOBS Goldman Sachs chief economist Jan Hatzius says upcoming inflation data will be more important for the Fed than employment figures. The key question is whether June’s softer inflation was a one-off or the beginning of a broader trend. Goldman expects the latter, with Hatzius predicting inflation will continue to soften.",
+   "titulo": "Goldman: datos de inflación importarán más que empleo para decisiones de la Fed",
+   "resumen": "Jan Hatzius, economista jefe de Goldman Sachs, señala que los próximos datos de inflación serán más determinantes para la política monetaria de la Fed que las cifras de empleo. Goldman espera que la inflación de junio represente el inicio de una tendencia de suavización sostenida, no un evento aislado.",
+   "analisis": {
+    "porque": "Reorienta el foco del mercado sobre qué variable económica conducirá las decisiones de tasas de la Fed en los próximos meses. Una inflación en descenso acelera expectativas de recortes de tasas.",
+    "queOcurrio": "Goldman Sachs proyecta que la inflación continuará debilitándose, cambiando el peso de la evaluación monetaria desde empleo hacia precios.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "Rendimientos USA",
+    "DXY",
+    "S&P 500",
+    "NASDAQ"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Rendimientos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED|Inflación|Datos Económicos",
+   "keywords": [
+    "Fed",
+    "inflación",
+    "tasas",
+    "Goldman Sachs",
+    "política monetaria",
+    "Hatzius"
+   ],
+   "tgText": "🔔 Goldman: inflación será clave para Fed. Hatzius espera debilitamiento continuo; empleo pasa a segundo plano. Alcista para renta variable y bonos.",
+   "xText": "Goldman Sachs: próximos datos de inflación prevalecerán sobre empleo en decisiones de la Fed. Espera debilitamiento sostenido de precios. Bullish para acciones y bonos. #Mercados",
+   "discordText": "**Goldman: Inflación será más importante que empleo**\n- Hatzius ve datos de precios como factor determinante para Fed\n- Proyecta suavización continua de inflación (no aislada)\n- Impacta decisiones de tasas",
+   "pushText": "Goldman: inflación más importante que empleo para Fed",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Bonos (rendimientos caen si mercado ve suavización). Luego renta variable (ganancias de valuación con tasas más bajas).",
+    "despues": "Dólar bajo presión (Fed pivotea a más relajada). Commodities alcistas (dólar débil). Criptomonedas podrían ganar con expectativas de liquidez.",
+    "escenarios": "Traders vigilarán próximos CPI/PCE como catalizadores. Cualquier sorpresa alcista de inflación puede reversar sesgo. Mercado podría repricing de cortes de tasas si datos decepcionen.",
+    "riesgos": "Hatzius es proyección, no certeza. Un rebote de inflación en próximos meses contravendría el escenario de Goldman. Rumor de politización sobre independencia de Fed (Trump/Warsh) podría afectar credibilidad de proyecciones."
+   },
+   "macro": {
+    "dolar": "Bajista (expectativa de tasas más bajas)",
+    "oro": "Alcista (tasas reales más bajas)",
+    "nasdaq": "Alcista (tech gana con tasas bajas)",
+    "dow": "Alcista (ciclo de recortes mejora crediticio)",
+    "sp500": "Alcista (valuaciones se expanden)",
+    "bitcoin": "Alcista (liquidez y tasas bajas favorecen riesgo)",
+    "ethereum": "Alcista",
+    "bonos": "Alcista (precios suben, rendimientos caen)",
+    "petroleo": "Neutral-Alcista (dólar débil soporta)"
+   },
+   "updates": []
+  },
+  {
+   "id": "34183",
+   "fecha": "2026-08-07T15:42:25+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34183",
+   "via": "DeItaone",
+   "original": "IRANIAN DEPUTY FOREIGN MINISTER GHARIBABADI SAYS GULF SECURITY MUST BE ENSURED BY REGIONAL COUNTRIES, WITHOUT FOREIGN INTERVENTION -STATE NEWS AGENCY IRNA",
+   "titulo": "Irán: Seguridad del Golfo debe garantizarse solo por países de la región, sin injerencia externa",
+   "resumen": "El viceministro de Asuntos Exteriores de Irán, Gharibabadi, declara que la estabilidad del Golfo Pérsico debe ser responsabilidad exclusiva de los países regionales, sin participación de potencias externas. La declaración reitera la postura iraní de soberanía regional ante la presencia estadounidense.",
+   "analisis": {
+    "porque": "Refleja tensión geopolítica persistente en Medio Oriente y reclamo iraní de influencia regional. Ante contexto de negociaciones sobre Ormuz (noticia reciente en AR4: reapertura de Estrecho), afecta evaluación de riesgo geopolítico en petróleo y energía.",
+    "queOcurrio": "Irán reafirma que la seguridad del Golfo debe ser garantizada por actores regionales únicamente, cuestionando implícitamente la presencia militar estadounidense.",
+    "estado": "confirmado",
+    "fuenteOriginal": "IRNA (agencia estatal iraní)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo",
+    "Gas Natural",
+    "DXY"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Gas Natural",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Irán",
+    "Golfo Pérsico",
+    "Ormuz",
+    "geopolítica",
+    "seguridad regional",
+    "petróleo"
+   ],
+   "tgText": "⚠️ Irán reclama soberanía en Golfo: sin injerencia externa en seguridad regional. Reitera fricción con presencia USA. Petróleo vigilante de escalada.",
+   "xText": "Irán: seguridad del Golfo es responsabilidad de países regionales, sin injerencia externa. Reclamo de soberanía ante negociaciones de Ormuz. Riesgo geopolítico vigente. #Oil",
+   "discordText": "**Irán reclama control de seguridad en Golfo**\n- Gharibabadi: sin injerencia de potencias externas\n- Contexto: negociaciones Ormuz avanzan\n- Petróleo en vigilancia por escalada potencial",
+   "pushText": "Irán: seguridad del Golfo solo para países regionales",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo (riesgo geopolítico reprecifica prima). Gas Natural (suministro energético en riesgo si Ormuz se cierra nuevamente).",
+    "despues": "DXY bajista si geopolítica escalada genera flight-to-quality débil (contraintuitivamente). Bonos pueden beneficiarse si se percibe riesgo de oferta energética.",
+    "escenarios": "Traders monitorizarán: 1) declaraciones iraníes subsecuentes (escalada retórica), 2) estado de negociaciones Ormuz (¿avanzan o retroceden?), 3) respuesta de USA, 4) impacto en flujos de petróleo. Cierres de Ormuz históricos disparan petróleo +$10/bbl.",
+    "riesgos": "IRNA es fuente estatal; declaraciones pueden ser postura de negociación, no amenaza inmediata. Riesgo de falsa alarma. Pero el titular refleja fricción real; escalada es posible si negociaciones Ormuz colapsan."
+   },
+   "macro": {
+    "petroleo": "Alcista (prima geopolítica)",
+    "dolar": "Neutral (depende de amplitud de riesgo)",
+    "nasdaq": "Bajista si escalada se materializa (beneficia energía barata)",
+    "dow": "Neutral-Alcista (energía sube, pero financieras desaceleran con incertidumbre)"
+   },
+   "updates": []
+  },
   {
    "id": "34182",
    "fecha": "2026-08-07T14:34:14+00:00",
@@ -7512,176 +7712,6 @@
     "dolar": "alcista probable",
     "bonos": "bajista probable",
     "oro": "bajista probable"
-   },
-   "updates": []
-  },
-  {
-   "id": "33969",
-   "fecha": "2026-08-04T13:12:24+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33969",
-   "via": "DeItaone",
-   "original": "UKRAINE: NO REPLACEMENT FOR BLACK SEA GRAIN EXPORTS Ukraine's farm minister says there is \"no real long-term substitute\" for Black Sea ports for grain exports. Alternative export routes will not reach full operational capacity before the end of August and can handle only around half of Ukraine's normal export volumes. The minister said Ukrainian farmers are already facing an average 30% drop in cr",
-   "titulo": "Ucrania: exportaciones grano sin sustituto puertos Mar Negro; precios caen 30%",
-   "resumen": "Ministro agricultura Ucrania afirma no hay 'sustituto real a largo plazo' para puertos Mar Negro en exportaciones de grano. Rutas alternativas no operarán a plena capacidad antes fin de agosto y solo pueden manejar ~50% volumen normal. Agricultores enfrentan caída promedio 30% en precios; pérdidas de infraestructura Mar Negro podrían alcanzar $1,5B-$3B.",
-   "analisis": {
-    "porque": "Riesgo de inflación alimentaria global por restricción oferta grano ucraniano. Presiona precios commodities agrícolas (trigo, maíz) y costo de alimentos al consumidor en Latinoamérica e importadores globales. Afecta política comercial, balanza comercial países importadores.",
-    "queOcurrio": "Ministro Ucrania advierte inviabilidad de rutas alternativas a puertos Mar Negro: capacidad 50% de lo normal, no lista antes fin agosto. Agricultores ven caída 30% precios. Pérdidas infraestructura $1,5B-$3B estimadas.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Reuters"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Grano (Trigo, Maíz)",
-    "Commodities Agrícolas",
-    "Precios Alimentos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Trigo",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Maíz",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "ucrania",
-    "grano",
-    "mar-negro",
-    "exportaciones",
-    "seguridad-alimentaria"
-   ],
-   "tgText": "⚠️ Ucrania: sin sustituto puertos Mar Negro para grano. Rutas alternativas solo 50% capacidad, no lista antes fin agosto. Precios agrícolas caen 30%; pérdidas $1,5B-$3B.",
-   "xText": "⚠️ Ucrania: puertos Mar Negro insustituibles para grano. Rutas alternativas ~50% capacidad. Agricultores -30% precios. Riesgo inflación alimentaria global.",
-   "discordText": "**Ucrania: Crisis Exportaciones Grano**\n• Puertos Mar Negro: Sin sustituto real a largo plazo\n• Rutas alternativas: 50% capacidad normal\n• Timeline: No operacionales antes fin agosto\n• Impacto: Precios agricultores -30%\n• Pérdidas infraestructura: $1,5B-$3B\n• Riesgo global: Seguridad alimentaria, inflación",
-   "pushText": "Ucrania advierte: grano sin salida; precios caen 30%, riesgo inflación global",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Precios trigo y maíz CBOT suben inmediatamente (minutos-horas) por menor oferta esperada; oferta apretada impulsa commodities alcistas",
-    "despues": "Inflación de precios alimentos clave importadores (Latam, Africa, Oriente Medio) sube presión; bancos centrales pueden ver inflación 'sticky'; dólar bajo presión si riesgo geopolítico intensifica",
-    "escenarios": "Traders vigilarán: (a) duración bloqueo Mar Negro; (b) capacidad real rutas alternativas; (c) demanda global grano en contexto de elevados precios; (d) respuesta política EE.UU./UE a Rusia",
-    "riesgos": "Si conflicto se resuelve, rutas Mar Negro abren rápidamente: colapso de precios agrícolas. Riesgo de volatilidad 'whipsaw' en CBOT. Narrativa de inflación alimentaria pueden presionar mercados equities si se interpreta como riesgo macro."
-   },
-   "macro": {
-    "petroleo": "alcista",
-    "trigo": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "33966",
-   "fecha": "2026-08-04T13:06:43+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33966",
-   "via": "DeItaone",
-   "original": "MARKET MOVERS 🟢 UPGRADES $PLTR: Deutsche Bank upgraded to Buy $REPL: Leerink Partners upgraded to Outperform; PT raised to $17 from $11 🔴 DOWNGRADES $BOW: Deutsche Bank downgraded to Hold; PT raised to $34 from $31; Piper Sandler downgraded to Neutral; PT cut to $34 from $36; RBC downgraded to Sector Perform; PT cut to $34 from $38 $CI: Jefferies downgraded to Hold; PT cut to $307 from $336 $INT",
-   "titulo": "Nike downgrade JP Morgan a Underweight; precio objetivo cut a $40 desde $47",
-   "resumen": "JP Morgan redujo calificación de Nike (NKE) a Underweight, bajando precio objetivo de $47 a $40. El banco se une a otros downgrades del sector (Sportswear). El movimiento refleja presiones en demanda, márgenes y competencia en retail de ropa deportiva. Deutsche Bank también mantiene perspectiva negative con upgrade lateral a Buy solo en Palantir.",
-   "analisis": {
-    "porque": "Downgrade de JP Morgan (banco de gran seguimiento) en Nike es catalizador negativo para acción. Señala deterioro en fundamentales o expectativas de demanda. Afecta directamente valuación de Nike y sentimiento en sector retail/consumer discretionary.",
-    "queOcurrio": "JP Morgan redujo NKE a Underweight con precio objetivo bajado de $47 a $40 (15% downside). Otros bancos también bajaron posiciones en sector (PVH JP Morgan Underweight, WMT Oppenheimer Downgrade).",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NKE",
-    "S&P500",
-    "Consumer Discretionary"
-   ],
-   "sesgos": [
-    {
-     "activo": "NKE",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "nike-downgrade",
-    "jp-morgan",
-    "retail",
-    "consumer-discretionary",
-    "price-target"
-   ],
-   "tgText": "📉 JP Morgan downgrade Nike (NKE) a Underweight; PT cut $47→$40. Presiones demanda, márgenes, competencia. Retail sportswear bajo presión.",
-   "xText": "📉 Nike downgrade: JP Morgan a Underweight, PT $47→$40. Señal de deterioro demanda y márgenes en retail deportivo.",
-   "discordText": "**Nike (NKE) - Downgrade JP Morgan**\n• Anterior: PT $47\n• Nuevo PT: $40 (-15% downside)\n• Rating: Downgrade a Underweight\n• Drivers: Presión demanda, márgenes, competencia\n• Contexto: Sector retail sportswear débil",
-   "pushText": "Nike downgrade JP Morgan a Underweight; precio objetivo reducido a $40",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Nike (NKE) cae en afterhours/próxima sesión por downgrade de banco importante; típicamente -2% a -4% en reacción inicial",
-    "despues": "Consumer Discretionary ETF (XLY) puede corregir si múltiples downgrades en retail; S&P 500 bajo pequeña presión si interpretado como debilidad demanda",
-    "escenarios": "Traders vigilarán próximos earnings guidance de Nike para confirmar o desmentir deterioro. Monitorearán data de retail sales/consumidor. Buscarán si competidores (Adidas, Lululemon) mantienen tono o también degradan.",
-    "riesgos": "Downgrade puede ser prematuro si Nike recupera demanda Q3; riesgo de bottom-fishing si PT $40 es visto como atractivo por largo plazo. Narrativa de 'consumer weakness' puede cambiar si data de empleo sigue fuerte."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "33964",
-   "fecha": "2026-08-04T12:38:50+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33964",
-   "via": "DeItaone",
-   "original": "FED'S PAULSON: THIS IS A COMPLICATED TIME FOR MONETARY POLICY - CNBC PAULSON: INFLATION IS TOO HIGH, WANTS TO BRING IT DOWN PAULSON: NEED MILDLY RESTRICTIVE MONETARY POLICY AND FED LIKELY HAS THAT NOW",
-   "titulo": "Fed Paulson: política monetaria 'complicada', inflación muy alta, necesita ser restrictiva",
-   "resumen": "Christopher Paulson, miembro de la Fed, afirma en CNBC que la inflación es 'demasiado alta' y requiere política monetaria restrictiva. Señala que la Fed probablemente ya está en postura 'mildly restrictive' actual, pero advierte que de no haber progreso en desinflación, la Fed deberá tomar medidas adicionales.",
-   "analisis": {
-    "porque": "Señal clara de hawkish Fed member sobre necesidad de mantener/endurecer política. Contrasta con narrativa market de recortes inminentes, impactando expectativas de tasas, bonos y dólar. Mensaje sobre 'complication' sugiere Fed dividida en próximos pasos.",
-    "queOcurrio": "Fed Paulson declara inflación excesiva, respalda política restrictiva actual, advierte sobre acciones futuras si inflación no baja. Nota la complicación de momento para política monetaria.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "DXY",
-    "Bonos USA",
-    "Rendimientos USA",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "DXY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "fed-paulson",
-    "inflación",
-    "política-monetaria",
-    "hawkish",
-    "tasas"
-   ],
-   "tgText": "🏦 Fed Paulson: inflación 'demasiado alta', política monetaria restrictiva necesaria. Advierte acción futura si sin progreso desinflación. Señal hawkish presiona yields.",
-   "xText": "🏦 Fed Paulson: inflación excesiva, política restrictiva requerida. Si no hay progreso, Fed actuará. Señal hawkish para yields y dólar.",
-   "discordText": "**Fed Paulson - Inflación y Política Monetaria**\n• Inflación: demasiado alta\n• Postura actual: mildly restrictive (apropiada)\n• Advertencia: si sin progreso en desinflación, Fed actuará\n• Contexto: momento 'complicado' para política",
-   "pushText": "Fed Paulson hawkish: inflación requiere restricción continua o endurecer",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "Yields USA (especialmente 10Y) suben inmediatamente (5-30 min) por reafirmación hawkish y riesgo de tasas mantenidas altas/subidas",
-    "despues": "Dólar (DXY) se fortalece; acciones pueden corregir si mercado reprecia probabilidad de tasas más altas por más tiempo; oro y commodities bajo presión",
-    "escenarios": "Traders monitorearán próximos datos de inflación (PCE, CPI) para confirmar o desmentir tesis Paulson. Vigilarán si otros Fed speakers rebajan tono hawkish. Fed funds futures se ajustarán hacia tasas mantenidas.",
-    "riesgos": "Paulson es miembro minoritario; narrativa de mercado de recortes puede prevalecer si otros Fed speakers suavizan. Riesgo de sobre-reacción si mercado asume postura de Paulson = consenso Fed (no confirmado)."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "bonos": "bajista",
-    "sp500": "bajista"
    },
    "updates": []
   }
