@@ -1,7 +1,332 @@
 {
- "lastId": 34140,
- "actualizado": "2026-08-07T09:15:07.465Z",
+ "lastId": 34154,
+ "actualizado": "2026-08-07T10:14:31.964Z",
  "items": [
+  {
+   "id": "34153",
+   "fecha": "2026-08-07T10:04:05+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34153",
+   "via": "DeItaone",
+   "original": "🇺🇸 JULY JOBS REPORT: ALL EYES ON FRIDAY The July Nonfarm Payrolls report is due Friday at 8:30 AM ET. Prediction Markets • Kalshi: +72K Bank Forecasts • Highest: Citigroup, Santander +115K • Lowest: Deutsche Bank +65K • Median: +80K WSJ Consensus • Payrolls: +83K (vs. +57K prior) • Unemployment: 4.2% • Avg. Hourly Earnings: +0.3% M/M, +3.5% Y/Y https://t.co/OfZHvZl7Ng",
+   "titulo": "Reporte de empleos de julio en EE.UU.: expectativas de +83K y desempleo al 4,2%",
+   "resumen": "El informe de nóminas no agrícolas de julio se publica el viernes a las 8:30 AM ET. Las predicciones oscilan entre +65K (Deutsche Bank) y +115K (Citigroup/Santander), con consenso del WSJ en +83K versus +57K en junio. Se espera desempleo estable en 4,2% y salarios +0,3% mensual (+3,5% anual). Este dato es crítico para orientar la política monetaria de la Fed.",
+   "analisis": {
+    "porque": "Los datos de empleo son el segundo pilar de la Fed para decisiones de tasas. Un resultado débil (<70K) podría acelerar recortes de tasas; uno fuerte (>100K) presionaría al alza. Impacta directamente bonos, dólar y acciones.",
+    "queOcurrio": "Se ha publicado la preview oficial del reporte con múltiples pronósticos bancarios y de mercados de predicción (Kalshi). El titular no incluye el dato real aún; es una anticipación.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg/WSJ Consensus (agregación oficial)"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Bonos",
+    "DXY",
+    "NASDAQ",
+    "S&P500",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista si empleos sorprenden al alza"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista si sorpresa positiva en nóminas"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "neutral-bajista si datos fuertes elevan tasas"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Empleo|Datos Económicos",
+   "keywords": [
+    "nóminas-julio",
+    "desempleo",
+    "fed",
+    "mercados-trabajo",
+    "bonos-usa"
+   ],
+   "tgText": "🇺🇸 MAÑANA: Reporte empleos julio. Consenso +83K vs +57K anterior. Desempleo 4,2%, salarios +0,3% MoM. Dato clave para Fed. Publicación viernes 8:30 AM ET.",
+   "xText": "📊 VIERNES 8:30 AM ET: Nóminas julio EE.UU. El mercado espera +83K (vs +57K). Desempleo 4,2%. Dato crítico para próxima decisión de tasas de la Fed. #Markets",
+   "discordText": "**Reporte Empleos JULIO - EE.UU.**\n• Fecha: Viernes 8:30 AM ET\n• Consenso: +83K nóminas (anterior +57K)\n• Rango bancario: +65K a +115K\n• Desempleo esperado: 4,2%\n• Salarios: +0,3% MoM, +3,5% YoY\n→ Impacto alto en tasas Fed, bonos, dólar",
+   "pushText": "Empleos julio EE.UU. mañana: mercado espera +83K; dato clave para Fed",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Bonos USA (yields): sorpresa al alza en nóminas → yields suben (precios caen); sorpresa a la baja → yields bajan.",
+    "despues": "DXY (dólar) sigue a yields; NASDAQ sensible a cambios en expectativa de tasas; S&P500 menos volátil pero afectado por sector financiero.",
+    "escenarios": "Traders monitorean desviación vs consenso (+/-20K margen típico de reacción fuerte). Especial atención a salarios: aceleración sugiere inflación persistente; desaceleración facilita Fed pivote a recortes.",
+    "riesgos": "Revisión de junio podría restar importancia; dato podría ser 'no-verificable' hasta publicación oficial; volatilidad extrema esperada en primeros minutos post-anuncio."
+   },
+   "macro": {
+    "dolar": "alcista si nóminas sorprenden al alza",
+    "bonos": "bajista si datos fuertes (yields suben)",
+    "nasdaq": "bajista si sorpresa positiva eleva tasas esperadas",
+    "sp500": "neutral-bajista si empleos fuertes contradicen expectations de recortes",
+    "petroleo": "neutral (datos empleo no mueven crudo directamente)"
+   },
+   "updates": []
+  },
+  {
+   "id": "34151",
+   "fecha": "2026-08-07T09:45:38+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34151",
+   "via": "DeItaone",
+   "original": "SPOT SILVER EXTENDS GAINS, RISES 5% TO $64.56/OZ",
+   "titulo": "Plata spot se dispara 5% a $64,56/oz; alcance máximo en semana de volatilidad",
+   "resumen": "La plata al contado extiende ganancias, registrando alza de 5% y cotizando en $64,56 por onza. El movimiento refleja demanda por activos alternativos en contexto de volatilidad e incertidumbre macroeconómica. El titular no especifica causales exactos de la compra ni contexto de sesiones anteriores.",
+   "analisis": {
+    "porque": "Plata es barómetro de apetito por riesgo e inflación esperada. Alza de 5% en corto plazo sugiere: (a) cobertura defensiva por volatilidad macro, (b) expectativas inflacionarias, o (c) debilidad del dólar. Afecta carteras con exposición a metales preciosos y activos de riesgo.",
+    "queOcurrio": "Cotización de plata alcanza $64,56/oz, ganancia de 5% sin fecha exacta de período de comparación indicada en titular.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Plata",
+    "Oro",
+    "DXY",
+    "Bonos",
+    "Inflación"
+   ],
+   "sesgos": [
+    {
+     "activo": "Plata",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "bajista (plata sube típicamente si dólar débil)"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista (correlación positiva)"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Materias Primas",
+   "keywords": [
+    "plata-metal",
+    "commodities",
+    "precious-metals",
+    "volatilidad-macro",
+    "inflación"
+   ],
+   "tgText": "💰 Plata dispara +5% a $64,56/oz. Movimiento refleja compra defensiva y expectativas inflacionarias en contexto de volatilidad. Monitorear dólar débil como driver.",
+   "xText": "📊 Plata alcanza $64,56/oz (+5%). Ascenso refuerza apetito por activos defensivos. Dólar débil y macro uncertain son drivers. Oro sigue. #Commodities",
+   "discordText": "**PLATA: +5% a $64,56/oz**\n• Ganancias extendidas en semana volátil\n• Drivers: dólar débil, apetito defensivo\n• Relación: oro también sube\n• Context: macro incertidumbre",
+   "pushText": "Plata sube 5% a $64,56/oz en compra defensiva",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "DXY (dólar): plata alcista típicamente indica dólar débil o caída esperada. Rendimientos USA también bajo presión.",
+    "despues": "Oro refuerza tendencia alcista (ambos metales correlacionados). Minería de metales preciosos podría beneficiarse. Bonos podrían presionarse si inflación es el driver.",
+    "escenarios": "Traders vigilarían si alza persiste post-reporte empleos (si empleos débiles → más recortes Fed → dólar débil → plata sube). Si sorpresa al alza en nóminas, plata podría revertir.",
+    "riesgos": "Titular no especifica período exacto de comparación; podría ser alza de 5% intradía, no validada en cierre. Contexto macroeconómico no detallado. Posible corrección técnica si overbought."
+   },
+   "macro": {
+    "dolar": "bajista (plata sube si dólar débil)",
+    "oro": "alcista (movimiento correlacionado)",
+    "bonos": "bajista si inflación impulsa plata",
+    "nasdaq": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "34150",
+   "fecha": "2026-08-07T09:40:55+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34150",
+   "via": "DeItaone",
+   "original": "WALL STREET HEADS FOR BEST WEEK IN MONTHS US stocks are on track for their strongest week in months, fueled by a rebound in AI stocks, strong earnings and hopes for a Strait of Hormuz deal. The S&P 500 is up 2.9% this week, while the Dow has gained 2.7%. The Nasdaq is outperforming with a 3.8% rise. Previously beaten-down tech names also surged, with Coherent jumping 27% and Lumentum gaining 17%.",
+   "titulo": "Wall Street prepara su mejor semana en meses: rebote en IA y optimismo por Ormuz",
+   "resumen": "El S&P 500 sube 2,9% en la semana, Nasdaq +3,8%, liderados por acciones de IA castigadas anteriormente. Coherent saltó 27% y Lumentum +17%. El rally se alimenta de recuperación de semiconductores, resultados corporativos sólidos y expectativas sobre apertura del Estrecho de Ormuz que restauraría flujos de crudo. Mercado anticipa semana fuerte.",
+   "analisis": {
+    "porque": "Las ganancias semanales de esta magnitud señalan cambio de sentimiento: recuperación de fondos en tech, apetito por riesgo renovado y cobertura geopolítica en energía. Impacta rotaciones sectoriales y volatilidad de índices.",
+    "queOcurrio": "Mercados accionales estadounidenses registran semana al alza con outperformance del Nasdaq. Acciones específicas de semiconductores y componentes ópticos rebotan fuertemente. El titular no especifica fechas exactas de inicio de la semana.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "S&P500",
+    "Dow Jones",
+    "Semiconductores",
+    "$NVDA",
+    "$COHR",
+    "$LUMU",
+    "Petróleo"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Petróleo",
+     "sesgo": "alcista (esperanza Ormuz)"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas|Mercados Generales",
+   "keywords": [
+    "wall-street",
+    "rally-semana",
+    "ia-semiconductores",
+    "nasdaq-rebote",
+    "energía-ormuz"
+   ],
+   "tgText": "📈 Wall Street cierra mejor semana en meses. S&P500 +2,9%, Nasdaq +3,8%. Semiconductor rebound: Coherent +27%, Lumentum +17%. Impulsos: IA, earnings, optimismo Ormuz.",
+   "xText": "🚀 SEMANA FUERTE: S&P500 +2,9%, Nasdaq liderando +3,8%. Semiconductores disparados (Coherent +27%). Drivers: rebote IA, earnings sólidos, Ormuz talks. #Markets",
+   "discordText": "**MEJOR SEMANA EN MESES**\n• S&P 500: +2,9%\n• Nasdaq: +3,8% (outperformance)\n• Dow Jones: +2,7%\n• Stars: Coherent +27%, Lumentum +17%\n→ Rebote de castigados en IA; optimismo Estrecho Ormuz",
+   "pushText": "Wall Street brinda mejor semana en meses: Nasdaq +3,8%, semiconductores disparados",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Nasdaq y índices tech lideran por rotación de capital hacia nombres de IA castigados. Semiconductores beneficiarios directos de demanda esperada.",
+    "despues": "Petróleo podría consolidar ganancias si deal Ormuz progresa (menos riesgo de disrupción); financieras si tasas se estabilizan; defensivos podrían perder relativo.",
+    "escenarios": "Traders monitoreaban oversold en IA; rebote técnico típico. Clave es si sostenibilidad depende de: (a) datos macro débiles justificando recortes Fed, o (b) optimismo geopolítico. Vigilancia en close viernes (empleos).",
+    "riesgos": "Rally podría ser puramente técnico/mean reversion sin cambio fundamental. Ormuz talks aún inciertos (aprobación Supreme Leader de Irán pendiente). Posible profit-taking antes de reporte empleos."
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "34149",
+   "fecha": "2026-08-07T09:35:49+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34149",
+   "via": "DeItaone",
+   "original": "TRUMP SAYS HORMUZ DEAL IS “MOVING ALONG” Donald Trump says negotiations over reopening the Strait of Hormuz are progressing, despite Iranian lawmakers considering restrictions on US- and Israeli-linked ships. Iran and Oman are discussing a framework that could give Tehran greater control over vessel entry while introducing new fees and restrictions. However, tensions remain high and approval from ",
+   "titulo": "Negociaciones Estrecho de Ormuz avanzan; petróleo sube con esperanza de reapertura",
+   "resumen": "Trump señala que negociaciones para reapertura del Estrecho de Ormuz avanzan. Irán y Omán discuten marco que daría Teherán mayor control sobre entrada de naves e introducción de nuevas tarifas. Aprobación del Líder Supremo de Irán aún incierta. Brent sube sobre $83/barril. Reapertura podría restaurar flujos energéticos y reanudar diálogo EE.UU.-Irán.",
+   "analisis": {
+    "porque": "Ormuz controla ~21% de flujo petrolero global. Reapertura eliminaría riesgo de disrupción energética, presionaría precios de petróleo a la baja y reduciría prima de riesgo geopolítico. Crítico para inflación, energía de EM, y estabilidad macro.",
+    "queOcurrio": "Trump declara que negociaciones avanzan. Irán-Omán discuten framework con nuevas restricciones y tarifas a naves. Aprobación final por Supreme Leader de Irán pende. Brent reacciona alcista (esperanza de resolución).",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg (cita directa Trump)"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Petróleo Brent",
+    "Petróleo WTI",
+    "Energía",
+    "Dólar",
+    "Oro",
+    "USDTRY",
+    "Emergentes"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo",
+     "sesgo": "neutral-bajista a largo plazo (reapertura = oferta)"
+    },
+    {
+     "activo": "Dólar",
+     "sesgo": "neutral (menos riesgo geo = menos safe-haven)"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista (riesgo geo disminuye)"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica|Materias Primas|Energía",
+   "keywords": [
+    "ormuz",
+    "iran-negociaciones",
+    "petroleo",
+    "energia",
+    "geopolitica-medio-oriente"
+   ],
+   "tgText": "🛢️ Trump: negociaciones Ormuz avanzan. Irán-Omán discuten marco con nuevas restricciones. Aprobación Supreme Leader pendiente. Brent >$83. Riesgo geo disminuye.",
+   "xText": "🌍 ORMUZ: Trump reporta avance en negociaciones. Brent sube >$83 con esperanza de reapertura. Irán busca control + tarifas. Líder Supremo debe aprobar. #Energy",
+   "discordText": "**NEGOCIACIONES ORMUZ EN PROGRESO**\n• Trump: talks avanzan (\"moving along\")\n• Framework: Irán-Omán\n• Cambios: control entrada naves, nuevas tarifas\n• Pendiente: aprobación Líder Supremo\n• Mercado: Brent +$83/bbl (optimista)\n→ Posible deescalada geo",
+   "pushText": "Ormuz talks avanzan; Brent sobre $83 con esperanza de reapertura",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Petróleo reacciona alcista a corto (prima riesgo baja = precios suben por liquidación de largo); a largo plazo presión bajista (reapertura = aumento oferta).",
+    "despues": "Dólar podría debilitarse si menos riesgo geo reduce demanda de safe-haven. Oro bajo presión. Mercados emergentes energo-dependientes beneficiados (menos costo energía).",
+    "escenarios": "Traders monitorean: (a) aprobación del Líder Supremo (no garantizada), (b) términos finales (tarifas podrían compensar EE.UU. por acceso), (c) timeline de implementación. Fracaso en negociaciones reactiva spike de petróleo.",
+    "riesgos": "Aprobación aún incierta. Trump reclama 'progreso' pero detalle escaso. Posible que negociaciones fracasen o se demoren meses. Mercado podría sobre-reaccionar por optimismo prematuro."
+   },
+   "macro": {
+    "petroleo": "neutral-bajista a LP (oferta aumenta); alcista a CP si escepticismo",
+    "dolar": "bajista (menos riesgo = menos demanda USD)",
+    "oro": "bajista (riesgo disminuye)",
+    "emergentes": "alcista (menor costo energía)"
+   },
+   "updates": []
+  },
+  {
+   "id": "34148",
+   "fecha": "2026-08-07T09:33:48+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34148",
+   "via": "DeItaone",
+   "original": "$NVDA - US REVIEWS CHINA’S OFFSHORE NVIDIA CHIP ACCESS AFTER AI GAINS",
+   "titulo": "EE.UU. revisa restricciones sobre acceso de China a chips offshore de Nvidia",
+   "resumen": "Autoridades estadounidenses examinan el acceso de China a semiconductores avanzados de Nvidia mediante centros de datos ubicados en el extranjero. La revisión ocurre mientras ganancias de IA en China despiertan preocupaciones sobre ventaja tecnológica. El titular no especifica cronograma ni detalles de posibles nuevas sanciones.",
+   "analisis": {
+    "porque": "Restricciones a exportaciones de chips son arma geopolítica crítica en carrera de IA EE.UU.-China. Afecta valuaciones de Nvidia, proveedores de semiconductores y relaciones comerciales bilaterales. Impacta potencial de ganancias de firmas de IA y seguridad nacional.",
+    "queOcurrio": "Gobierno de EE.UU. revisa políticas de control sobre venta de chips Nvidia a China vía operaciones offshore. Contexto: ganancias recientes en IA china elevan alarmas en Washington.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "$NVDA",
+    "Semiconductores",
+    "Tecnología",
+    "Trade War Risk"
+   ],
+   "sesgos": [
+    {
+     "activo": "$NVDA",
+     "sesgo": "bajista (riesgo de restricciones más severas)"
+    },
+    {
+     "activo": "Semiconductores",
+     "sesgo": "bajista (contagio sectorial)"
+    },
+    {
+     "activo": "Tech",
+     "sesgo": "bajista (geopolítica)"
+    }
+   ],
+   "volatilidad": "alta",
+   "categoria": "Geopolítica|Empresas|Trade",
+   "keywords": [
+    "nvidia",
+    "chips",
+    "china-trade",
+    "geopolitica",
+    "semiconductores-restricciones"
+   ],
+   "tgText": "⚠️ EE.UU. revisa restricciones a Nvidia sobre chips para China vía offshore. Concern: ganancias IA china. Impacto: $NVDA, supply chain semiconductores. #GeoPolitica",
+   "xText": "🔴 BREAKING: EE.UU. examina más restricciones sobre acceso de China a chips Nvidia offshore. Preocupación por avances IA chinos. Riesgo para $NVDA. #Tech",
+   "discordText": "**⚠️ RESTRICCIONES CHIPS - GEOPOLITICA**\n• EE.UU. revisa políticas export Nvidia\n• Objetivo: limitar acceso China a IA avanzada\n• Context: ganancias IA china preocupan\n• Impacto: $NVDA, semiconductores, tech\n→ Breaking; riesgo mercado hoy",
+   "pushText": "ALERTA: EE.UU. revisa restricciones Nvidia a China; riesgo tech",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "$NVDA reacciona inmediatamente a riesgo de restricciones más severas a ingresos de China (principal mercado offshore). Semiconductores en cascada.",
+    "despues": "Tech índices (Nasdaq) bajo presión por contagio. AMD, QCOM y proveedores TSMC podrían extender baja. Futuros de trade war suben (riesgo).",
+    "escenarios": "Mercado busca claridad: ¿restricciones definitivas o revisión administrativa? Precedente: restricciones 2023 ya afectaron NVDA pero empresa se adaptó. Nueva ola podría impactar guidance 2026-2027.",
+    "riesgos": "Titular no precisa si esto es nuevo anuncio o revisión administrativa rutinaria. Podría ser escalada geopolítica real o simple monitoreo. Reacción desproporcionada si mercado interpreta como inminente ban."
+   },
+   "macro": {
+    "nasdaq": "bajista",
+    "sp500": "bajista (contagio tech)",
+    "dolar": "alcista (safe-haven)",
+    "oro": "alcista (risk-off)"
+   },
+   "updates": []
+  },
   {
    "id": "920260316",
    "fecha": "2026-08-06T19:38:44.000Z",
@@ -68,13 +393,19 @@
    },
    "updates": [
     {
+     "fecha": "2026-08-07T09:29:20+00:00",
+     "id": "34147",
+     "texto": "Trump declara que EE.UU. debería mantener las tasas de interés más bajas a nivel mundial y sugiere que la decisión de la Fed 'no está totalmente' en manos de Kevin Warsh. Critica la junta de Warsh como 'muy política', aunque califica al funcionario como 'excelente'. Pressión presidencial sobre política monetaria refleja reciente nombramiento de Warsh y rol futuro en debates de tasas.",
+     "tgUrl": "https://t.me/walterbloomberg/34147"
+    },
+    {
      "fecha": "2026-08-07T09:14:01+00:00",
      "id": "34140",
      "texto": "Trump declaró que la decisión de tasas de interés de la Fed no depende únicamente del presidente Kevin Warsh, sino también de la junta, a la que calificó como «muy política». Aunque elogió a Warsh, sugirió que las presiones políticas inciden en las decisiones monetarias antes de las elecciones.",
      "tgUrl": "https://t.me/walterbloomberg/34140"
     }
    ],
-   "actualizado": "2026-08-07T09:14:01+00:00"
+   "actualizado": "2026-08-07T09:29:20+00:00"
   },
   {
    "id": "974761671",
@@ -7230,299 +7561,6 @@
     "oro": "alcista",
     "bonos": "bajista (yields suben sin control)"
    },
-   "updates": []
-  },
-  {
-   "id": 959819679,
-   "fecha": "2026-08-04T04:50:05.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/04/hsbc-profit-beats-estimates-higher-net-interest-income-fees.html",
-   "via": "CNBC",
-   "original": "HSBC pretax profit beats estimates, boosted by higher net interest income and fees",
-   "titulo": "HSBC supera ganancias trimestrales impulsado por ingresos por intereses e ingresos",
-   "resumen": "HSBC reporta ganancias pre-impuestos que superan estimaciones gracias a alza en ingresos netos por intereses y comisiones. El desempeño refleja ambiente de tasas elevadas favorable para márgenes bancarios europeos.",
-   "analisis": {
-    "porque": "Resultado de banco global líder refleja salud de márgenes en ambiente de tasas altas; indicador de rentabilidad bancaria global y confianza en demanda de servicios financieros.",
-    "queOcurrio": "HSBC reporta ganancias pre-impuestos superiores a estimaciones, impulsadas por ingresos por intereses más altos y comisiones.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "HSBC",
-    "Bancos Europeos",
-    "Índices Europeos"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bancos Europeos",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "hsbc",
-    "earnings",
-    "bancos",
-    "márgenes-netos",
-    "tasas-altas"
-   ],
-   "tgText": "🏦 HSBC supera estimaciones con ganancias impulsadas por márgenes de interés y comisiones en ambiente de tasas elevadas.",
-   "xText": "📊 HSBC earnings beat en Q2 por NII fuerte y comisiones. Confirmación de beneficios bancarios en tasas altas.",
-   "discordText": "**HSBC earnings positivos**\n• Supera estimaciones de ganancias\n• Márgenes de interés robustos\n• Comisiones sólidas en ambiente de tasas",
-   "pushText": "HSBC supera ganancias; márgenes de interés sólidos",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "HSBC directo; comparables bancarios europeos (BBVA, BNP) en sentimiento positivo.",
-    "despues": "Índices financieros europeos si earnings revisa confianza en banca regional; impacto limitado en mercados amplios.",
-    "escenarios": "Traders vigilan si guidance sugiere sostenibilidad de márgenes; monitorean exposición de HSBC a China y Asia-Pacífico; evalúan si tasas más bajas erosionarían márgenes.",
-    "riesgos": "Mercados asiáticos fuera de horario de reporte pueden no capturar movimiento inmediatamente; exposición a China es riesgo geopolítico."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 903259186,
-   "fecha": "2026-08-04T03:00:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/04/india-lic-stake-sale-discount.html",
-   "via": "CNBC",
-   "original": "India to raise up to $3.3 billion by selling stake in country’s largest life insurer at 10% discount",
-   "titulo": "India vende participación en mayor aseguradora de vida; recauda hasta $3.300 millones",
-   "resumen": "India anuncia oferta pública de participación estatal en Life Insurance Corporation of India (LIC) con descuento del 10%, buscando recaudar hasta $3.300 millones. Movimiento forma parte de agenda de privatización progresiva del gobierno indio.",
-   "analisis": {
-    "porque": "Señal de reformas de privatización en economía emergente clave; afecta dinámicas de flujos de capital hacia India y composición de fondos de índices emergentes.",
-    "queOcurrio": "India lanzará venta de participación en LIC con descuento, objetivo $3.3B en recaudación.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Índices Emergentes",
-    "Rupee indio",
-    "LIC",
-    "MSCI India"
-   ],
-   "sesgos": [
-    {
-     "activo": "Mercados India",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Emergentes",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "India",
-    "LIC",
-    "privatización",
-    "oferta pública",
-    "asegurador"
-   ],
-   "tgText": "🇮🇳 India vende participación en LIC (mayor asegurador) con 10% descuento; recauda $3.3B. Privatización progresiva en economía emergente clave.",
-   "xText": "📊 India lanza venta de LIC con descuento; $3.3B en recaudación. Reformas de privatización continúan en economía emergente. #India",
-   "discordText": "**Privatización en India: venta de LIC**\n• Descuento del 10% en oferta pública\n• Recaudación objetivo: $3.3B\n• Reforma de agenda estatal",
-   "pushText": "India vende participación en LIC; $3.3B recaudado",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Mercados accionarios India: neutral a ligeramente positivo; validación de reformas.",
-    "despues": "Índices emergentes: si flujos se reasignan hacia India; rupee podría apreciarse levemente.",
-    "escenarios": "Traders vigilan: (1) demanda de oferta pública; (2) si privatización continúa en otros sectores; (3) impacto fiscal para presupuesto indio.",
-    "riesgos": "Riesgo de absorción de oferta si condiciones globales deterioran; impacto si privatización genera controversia política."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 33897,
-   "fecha": "2026-08-03T16:31:35+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/33897",
-   "via": "DeItaone",
-   "original": "SAYLOR SAYS HE HAS NEVER SOLD ANY OF HIS PERSONALLY HELD BITCOIN Michael Saylor said he has never sold a single satoshi of his personal Bitcoin holdings. He clarified that Strategy ($MSTR ) is a public company—not his personal wallet—and may buy or sell Bitcoin as part of its capital management. Saylor added that the company's long-term conviction in Bitcoin remains unchanged.",
-   "titulo": "Saylor reafirma: nunca ha vendido Bitcoin personal; MSTR es entidad separada",
-   "resumen": "Michael Saylor aclaró que no ha vendido ni un satoshi de su tenencia personal de Bitcoin. Distinguió que MicroStrategy ($MSTR) es compañía pública independiente de su cartera personal, y puede comprar o vender Bitcoin como parte de gestión de capital. Saylor reafirmó la convicción de largo plazo de la empresa sobre Bitcoin.",
-   "analisis": {
-    "porque": "Saylor es figura influyente en adopción institucional de Bitcoin y su posición personal afecta señales de sentimiento de largo plazo. Aclaración disipa dudas sobre posibles ventas que podrían interpretarse como pérdida de fe",
-    "queOcurrio": "Saylor emitió aclaración pública diferenciando su posición personal (nunca vende) de las operaciones de MSTR (puede operar según capital management)",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg (comunicación de Michael Saylor)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Bitcoin",
-    "Ethereum",
-    "MSTR",
-    "Nasdaq"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bitcoin",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Criptomonedas",
-   "keywords": [
-    "bitcoin",
-    "michael-saylor",
-    "mstr",
-    "tenencia-personal",
-    "sentimiento-institucional"
-   ],
-   "tgText": "💬 Saylor aclara: nunca vendió Bitcoin personal. MSTR es entidad separada que puede operar según necesidades de capital. Convicción de largo plazo en BTC sin cambios.",
-   "xText": "📌 Michael Saylor: nunca vendió satoshi alguno de su Bitcoin personal. MSTR opera independientemente. Convicción de largo plazo sobre Bitcoin intacta.",
-   "discordText": "**Saylor: posición personal de Bitcoin intacta**\n• Nunca vendió ni un satoshi de su tenencia personal\n• MSTR es entidad separada → puede operar según necesidades\n• Convicción de largo plazo sin cambios",
-   "pushText": "Saylor reafirma: nunca vendió Bitcoin personal; MSTR es entidad separada",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Bitcoin y MSTR reaccionan positivamente: aclaración disipa dudas sobre venta de holdings influyentes",
-    "despues": "Sentimiento institucional se fortalece; otras acciones de tecnología/cripto evalúan si señal refleja mayor confianza en BTC a largo plazo",
-    "escenarios": "Traders vigilarán: (1) futuras operaciones de MSTR en Bitcoin (compras vs ventas); (2) si aclaración devuelve confianza a tenedores institucionales; (3) movimientos de BTC en próximos días",
-    "riesgos": "Aclaración es interpretación de Saylor; no descarta que MSTR venda grandes posiciones en futuro. Titular es sentimiento, no dato duro de mercado"
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-08-04T02:33:00.000Z",
-     "id": 962652701,
-     "texto": "Los futuros bursátiles abrieron con ganancias moderadas tras una sesión anterior extraordinaria que llevó al Dow Jones a un cierre histórico. La inercia alcista continúa en mercados; indicadores de apertura sugieren extensión del rally.",
-     "tgUrl": "https://www.cnbc.com/2026/08/03/stock-market-today-live-updates.html"
-    }
-   ],
-   "actualizado": "2026-08-04T02:33:00.000Z"
-  },
-  {
-   "id": 942595721,
-   "fecha": "2026-08-03T23:20:54.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/bessent-fed-japan-yen-fima-repo-facility.html",
-   "via": "CNBC",
-   "original": "Analysis: Federal Reserve may be pulled into Bessent’s effort to support Japan’s yen",
-   "titulo": "Fed podría involucrarse en plan de Bessent para fortalecer el yen japonés",
-   "resumen": "El Secretario del Tesoro Bessent buscaría apoyo de la Reserva Federal para intervenir en los mercados cambiarios y fortalecer el yen japonés, probablemente en respuesta a debilidad de la moneda. La participación potencial de la Fed marca escenario inusual donde autoridades de EE.UU. actúan coordinadamente sobre divisas.",
-   "analisis": {
-    "porque": "Intervención cambiaria es tema de política monetaria internacional; afecta dinámicas de carry trade, flujos de capital globales y posicionamiento en divisas.",
-    "queOcurrio": "Bessent estaría buscando que la Fed participe en esfuerzo para apreciar el yen contra el dólar.",
-    "estado": "rumor",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "USDJPY",
-    "DXY",
-    "Yen",
-    "Dólar",
-    "NASDAQ",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "USDJPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "DXY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Equities globales",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "Bessent",
-    "Fed",
-    "yen",
-    "intervención cambiaria",
-    "USDJPY",
-    "política monetaria"
-   ],
-   "tgText": "💱 Análisis: Bessent buscaría que Fed intervenga para fortalecer yen. Posible coordinación inusual USA-Japón. Impacto: debilitamiento de dólar y reversal de carry trades.",
-   "xText": "🔄 Bessent podría involucrar a Fed en intervención para fortalecer yen. Movimiento estratégico en divisas; implicaciones para carry trades y dólar. #USDJPY",
-   "discordText": "**Potencial intervención Fed en divisas**\n• Bessent busca participación de Fed\n• Objetivo: fortalecer yen japonés\n• Implica desaceleración de carry trades\n• Riesgo en valuaciones de equities",
-   "pushText": "Bessent busca que Fed intervenga para fortalecer yen; impacto en divisas",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "USDJPY: caída esperada si se confirma intervención; potencial liquidación acelerada de carry trades con destino yen.",
-    "despues": "Equities globales: impulso inicial positivo por debilitamiento de dólar; después pressión si carry trade se desmonta caóticamente. Bonos: ajuste de yields.",
-    "escenarios": "Traders vigilan: (1) si Fed confirma participación; (2) magnitud de intervención (coordinada vs unilateral); (3) velocidad de reversal de positions JPY short; (4) contagio a emergentes dependientes de flujos de yen débil.",
-    "riesgos": "Riesgo de intervención fallida (histórico con políticas cambiarias); volatilidad extrema en USDJPY; disruption de mercados derivados."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "nasdaq": "potencialmente alcista (corto plazo)",
-    "sp500": "potencialmente alcista (corto plazo)",
-    "bonos": "volatilidad alta"
-   },
-   "updates": []
-  },
-  {
-   "id": 971067004,
-   "fecha": "2026-08-03T22:48:18.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/03/big-techs-anthropic-and-openai-stakes-distort-corporate-earnings.html",
-   "via": "CNBC",
-   "original": "Big Tech&apos;s Anthropic and OpenAI stakes are distorting the corporate earnings picture",
-   "titulo": "Inversiones en Anthropic y OpenAI de Big Tech distorsionan cuadro de ganancias corporativas",
-   "resumen": "Las participaciones accionarias de empresas tech en startups de IA (Anthropic, OpenAI) generan distorsiones contables en reportes de earnings, inflando o sesgando márgenes. El análisis advierte sobre opacidad en evaluación de rentabilidad real de operaciones core de las megacaps.",
-   "analisis": {
-    "porque": "Cuestiona calidad de earnings de Big Tech; afecta análisis fundamental de valuaciones y decisiones de inversión. Tema de transparencia contable relevante para analistas.",
-    "queOcurrio": "Se reporta que inversiones de tech en IA startups están distorsionando presentación de resultados trimestrales.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "NASDAQ",
-    "S&P500",
-    "MSFT",
-    "GOOGL",
-    "META"
-   ],
-   "sesgos": [
-    {
-     "activo": "NASDAQ",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "GOOGL",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "earnings quality",
-    "Anthropic",
-    "OpenAI",
-    "Big Tech",
-    "contabilidad",
-    "distorsión",
-    "valuaciones"
-   ],
-   "tgText": "⚠️ Análisis: Inversiones en Anthropic y OpenAI distorsionan earnings de Big Tech. Cuestionamiento sobre calidad de ganancias reportadas en MSFT, GOOGL, META.",
-   "xText": "📉 Advertencia contable: participaciones en Anthropic/OpenAI inflan earnings de Big Tech. Afecta análisis de valuaciones y transparencia. #Earnings #Tech",
-   "discordText": "**Distorsión de earnings por inversiones IA**\n• Participaciones en Anthropic y OpenAI sesgan reportes\n• Impacta margen de utilidad reportado\n• Cuestionamiento sobre calidad de ganancias\n• Relevante para valuaciones de megacaps",
-   "pushText": "Big Tech: inversiones IA distorsionan earnings; alerta contable",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Nasdaq tech: potencial revisión bajista de valuaciones si se valida que earnings calidad es menor de lo reportado.",
-    "despues": "Bonos corporativos tech: presión si mercado revalúa solvencia; S&P 500 si trend se generaliza a sector.",
-    "escenarios": "Traders vigilan: (1) auditorías de earnings por analistas independientes; (2) disclosure adicional de holdings en startups; (3) si hay re-pricing de múltiplos P/E.",
-    "riesgos": "Riesgo de reputación para auditores; posible litigio si distorsiones fueron materiales; confianza en reportes corporativos."
-   },
-   "macro": null,
    "updates": []
   }
  ],
