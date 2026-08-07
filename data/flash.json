@@ -1,7 +1,81 @@
 {
- "lastId": 34139,
- "actualizado": "2026-08-07T08:11:39.788Z",
+ "lastId": 34140,
+ "actualizado": "2026-08-07T09:15:07.465Z",
  "items": [
+  {
+   "id": "920260316",
+   "fecha": "2026-08-06T19:38:44.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
+   "via": "CNBC",
+   "original": "Analysis: Trump treats Fed Chairman Kevin Warsh as an ally. That creates economic risks",
+   "titulo": "Trump ve a Kevin Warsh como aliado: riesgos de independencia monetaria",
+   "resumen": "Análisis señala que Donald Trump trata al Presidente de la Reserva Federal Kevin Warsh como aliado político, lo que genera riesgos sobre la independencia de política monetaria. La dinámica podría presionar a la Fed hacia decisiones más acomodativas que las justificadas por fundamentos económicos.",
+   "analisis": {
+    "porque": "La presión política sobre la Fed socava su credibilidad anti-inflacionaria y puede distorsionar decisiones de tasas, afectando expectativas inflacionarias a largo plazo, valuaciones de activos y confianza en instituciones monetarias.",
+    "queOcurrio": "Análisis editorial de CNBC sugiere relación de alianza entre Trump y Warsh, presidente de la Fed, que podría comprometer independencia monetaria.",
+    "estado": "análisis",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": false,
+   "activos": [
+    "Dólar",
+    "Bonos USA",
+    "Oro",
+    "S&P 500",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Dólar",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "Fed",
+    "Trump",
+    "Kevin Warsh",
+    "política monetaria",
+    "independencia",
+    "tasas de interés"
+   ],
+   "tgText": "⚠️ Análisis: Trump ve a Warsh (Fed) como aliado. Riesgo de presión política sobre independencia monetaria. Impacto en dólar y bonos.",
+   "xText": "Análisis CNBC: relación Trump-Warsh (Fed) como aliados crea riesgos de independencia monetaria. Presión potencial sobre dólar y rendimientos.",
+   "discordText": "**Riesgos de independencia monetaria en Fed**\n⚠️ Trump trata a Warsh como aliado político\n• Potencial presión hacia política acomodativa\n• Riesgo para credibilidad anti-inflacionaria\n• Impacto esperado: dólar débil, oro fuerte",
+   "pushText": "Análisis: presión política sobre independencia de Fed",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Dólar (DXY) cae si mercados ven presión política reduciendo credibilidad hawkish de la Fed; oro sube como hedge de moneda débil.",
+    "despues": "Rendimientos USA podrían comprimirse si especulación sobre tasas más bajas emergen; equities podrían beneficiarse de tasas bajas, pero volatilidad implícita aumentaría.",
+    "escenarios": "Traders vigilarán comunicados de Warsh y votos de política monetaria próximos para señales de independencia vs. presión política; cualquier comentario de Trump sobre la Fed amplificaría volatilidad.",
+    "riesgos": "Es análisis editorial, no confirmación de hechos; el impacto depende de si Warsh cede a presión (no verificable aún). Riesgo de que sea interpretación periodística de relaciones normales."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "alcista",
+    "bonos": "bajista",
+    "sp500": "alcista corto plazo, riesgo largo plazo"
+   },
+   "updates": [
+    {
+     "fecha": "2026-08-07T09:14:01+00:00",
+     "id": "34140",
+     "texto": "Trump declaró que la decisión de tasas de interés de la Fed no depende únicamente del presidente Kevin Warsh, sino también de la junta, a la que calificó como «muy política». Aunque elogió a Warsh, sugirió que las presiones políticas inciden en las decisiones monetarias antes de las elecciones.",
+     "tgUrl": "https://t.me/walterbloomberg/34140"
+    }
+   ],
+   "actualizado": "2026-08-07T09:14:01+00:00"
+  },
   {
    "id": "974761671",
    "fecha": "2026-08-07T08:03:43.000Z",
@@ -746,72 +820,6 @@
     "bonos": "bajista",
     "dolar": "alcista",
     "oro": "alcista"
-   },
-   "updates": []
-  },
-  {
-   "id": "920260316",
-   "fecha": "2026-08-06T19:38:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/06/trump-fed-chairman-kevin-warsh-relationship.html",
-   "via": "CNBC",
-   "original": "Analysis: Trump treats Fed Chairman Kevin Warsh as an ally. That creates economic risks",
-   "titulo": "Trump ve a Kevin Warsh como aliado: riesgos de independencia monetaria",
-   "resumen": "Análisis señala que Donald Trump trata al Presidente de la Reserva Federal Kevin Warsh como aliado político, lo que genera riesgos sobre la independencia de política monetaria. La dinámica podría presionar a la Fed hacia decisiones más acomodativas que las justificadas por fundamentos económicos.",
-   "analisis": {
-    "porque": "La presión política sobre la Fed socava su credibilidad anti-inflacionaria y puede distorsionar decisiones de tasas, afectando expectativas inflacionarias a largo plazo, valuaciones de activos y confianza en instituciones monetarias.",
-    "queOcurrio": "Análisis editorial de CNBC sugiere relación de alianza entre Trump y Warsh, presidente de la Fed, que podría comprometer independencia monetaria.",
-    "estado": "análisis",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "Dólar",
-    "Bonos USA",
-    "Oro",
-    "S&P 500",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Dólar",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Bonos USA",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "FED",
-   "keywords": [
-    "Fed",
-    "Trump",
-    "Kevin Warsh",
-    "política monetaria",
-    "independencia",
-    "tasas de interés"
-   ],
-   "tgText": "⚠️ Análisis: Trump ve a Warsh (Fed) como aliado. Riesgo de presión política sobre independencia monetaria. Impacto en dólar y bonos.",
-   "xText": "Análisis CNBC: relación Trump-Warsh (Fed) como aliados crea riesgos de independencia monetaria. Presión potencial sobre dólar y rendimientos.",
-   "discordText": "**Riesgos de independencia monetaria en Fed**\n⚠️ Trump trata a Warsh como aliado político\n• Potencial presión hacia política acomodativa\n• Riesgo para credibilidad anti-inflacionaria\n• Impacto esperado: dólar débil, oro fuerte",
-   "pushText": "Análisis: presión política sobre independencia de Fed",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "Dólar (DXY) cae si mercados ven presión política reduciendo credibilidad hawkish de la Fed; oro sube como hedge de moneda débil.",
-    "despues": "Rendimientos USA podrían comprimirse si especulación sobre tasas más bajas emergen; equities podrían beneficiarse de tasas bajas, pero volatilidad implícita aumentaría.",
-    "escenarios": "Traders vigilarán comunicados de Warsh y votos de política monetaria próximos para señales de independencia vs. presión política; cualquier comentario de Trump sobre la Fed amplificaría volatilidad.",
-    "riesgos": "Es análisis editorial, no confirmación de hechos; el impacto depende de si Warsh cede a presión (no verificable aún). Riesgo de que sea interpretación periodística de relaciones normales."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "oro": "alcista",
-    "bonos": "bajista",
-    "sp500": "alcista corto plazo, riesgo largo plazo"
    },
    "updates": []
   },
