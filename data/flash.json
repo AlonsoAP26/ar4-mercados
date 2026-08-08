@@ -1,7 +1,149 @@
 {
  "lastId": 34191,
- "actualizado": "2026-08-08T14:50:27.182Z",
+ "actualizado": "2026-08-08T18:04:59.956Z",
  "items": [
+  {
+   "id": "925819429",
+   "fecha": "2026-08-08T17:25:25.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/hunter-biden-says-joe-bidens-cancer-has-spread-is-very-debilitating.html",
+   "via": "CNBC",
+   "original": "Hunter Biden says Joe Biden’s cancer has spread further and is ‘very painful’",
+   "titulo": "Hunter Biden reporta que cáncer de Joe Biden se ha expandido y causa 'dolor muy intenso'",
+   "resumen": "Hunter Biden divulga información sobre la salud del presidente Joe Biden, indicando que su diagnóstico de cáncer ha avanzado y causa dolor significativo. Esta declaración personal no proviene de fuentes médicas oficiales ni del gobierno, sino de una comunicación de su hijo.",
+   "analisis": {
+    "porque": "Incertidumbre sobre salud presidencial impacta confianza en decisiones de política económica y expectativas de continuidad regulatoria. Afecta riesgo político de corto plazo.",
+    "queOcurrio": "Hunter Biden reveló información sobre progresión de cáncer presidencial, pero sin especificar diagnóstico original, timeline o pronóstico médico oficial.",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "S&P 500",
+    "DXY",
+    "Bonos Treasuries",
+    "Volatilidad (VIX)"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos Treasuries",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Emergencia",
+   "keywords": [
+    "joe-biden",
+    "salud-presidencial",
+    "riesgo-politico",
+    "incertidumbre",
+    "sucesor"
+   ],
+   "tgText": "URGENTE: Hunter Biden reporta expansión del cáncer de Joe Biden y 'dolor muy intenso'. Fuente no oficial eleva incertidumbre sobre continuidad de política económica.",
+   "xText": "Hunter Biden: cáncer de Joe Biden se ha expandido y causa 'dolor muy intenso'. Información personal sin confirmación médica oficial genera riesgo político.",
+   "discordText": "🚨 **BREAKING: Salud presidencial** \n• Hunter Biden reporta expansión de cáncer \n• Fuente: comunicación personal, no médica oficial \n• Alto riesgo político para mercados",
+   "pushText": "URGENTE: Hunter Biden reporta progresión del cáncer presidencial",
+   "importancia": 9,
+   "reaccion": {
+    "primero": "Índices broad (S&P 500, NASDAQ) suelen caer por riesgo político. Dólar sube por flight-to-safety. VIX se dispara.",
+    "despues": "Bonos Treasuries suben (yields bajan), defensivos ganan, futuros políticos de sucesión afectan sectores específicos.",
+    "escenarios": "Traders monitorean: (1) si hay confirmación oficial del gobierno, (2) timeline de capacidad presidencial, (3) probabilidad de cambio en gabinete o política, (4) implicancias para elecciones, (5) continuidad de decisiones Fed/regulatorias.",
+    "riesgos": "CRÍTICO: Información de segunda mano sin confirmación médica oficial. Hunter Biden no es vocero de salud presidencial. Riesgo de desinformación o exageración. Altísima volatilidad esperada si no hay aclaración oficial inmediata. Potencial para fake news y cascadas de pánico."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "alcista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bitcoin": "bajista",
+    "ethereum": "bajista",
+    "bonos": "alcista",
+    "petroleo": "bajista"
+   },
+   "updates": []
+  },
+  {
+   "id": "938074421",
+   "fecha": "2026-08-08T15:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/rate-uncertainty-sparking-demand-for-clo-exposure-among-etfs-vettafi.html",
+   "via": "CNBC",
+   "original": "Next big push in ETF industry? Why these risk assets are gaining traction as interest rate uncertainty persists",
+   "titulo": "ETF de activos riesgosos ganan tracción mientras persiste incertidumbre en tasas",
+   "resumen": "El sector de ETF experimenta un movimiento hacia activos de mayor riesgo en contexto de incertidumbre sobre trayectoria de tasas de interés. El titular no especifica cuáles activos (bonos de alto rendimiento, emergentes, equities, commodities) ni qué productos ETF ganan flujos, solo que hay 'tracción' en el segmento.",
+   "analisis": {
+    "porque": "Migración de flujos hacia riesgo señala cambios en expectativas de tasas y apetito institucional. Impacta valuaciones de bonos, acciones defensivas y mercados emergentes.",
+    "queOcurrio": "Productos ETF de activos riesgosos ganan popularidad sin detallar qué clase específica ni volumen de flujos.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Bonos de alto rendimiento (HYG, JNK)",
+    "Mercados emergentes (EEM)",
+    "Commodities (GLD, USO)",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "High Yield Bonds",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Emerging Markets",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos Treasuries",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "FED",
+   "keywords": [
+    "etf",
+    "flujos-capital",
+    "activos-riesgosos",
+    "incertidumbre-tasas",
+    "fed"
+   ],
+   "tgText": "ETF de activos riesgosos ganan tracción mientras incertidumbre sobre tasas persiste. Migraciones de capital hacia productos de mayor riesgo sin detalles de volumen específico.",
+   "xText": "Flujos ETF se desplazan hacia activos riesgosos en contexto de incertidumbre de tasas Fed. Sector ve incremento sin claridad sobre destino exacto.",
+   "discordText": "**Flujos ETF se reorientan** • Ganancia en activos riesgosos • Incertidumbre en tasas como motor • Detalles de clases específicas no precisados",
+   "pushText": "ETF riesgosos atraen capital en contexto de incertidumbre de tasas",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "High yield bonds (HYG, JNK, ANGL), mercados emergentes (EEM, VWO) suelen ser sensibles a rotaciones out-of-cash.",
+    "despues": "Equities cyclical, commodities, FX emergentes",
+    "escenarios": "Traders vigilan: (1) qué activos específicos reciben flujos, (2) si refleja cambio en dot plot Fed vs. expectativas de cortes, (3) sostenibilidad si hay nuevos datos inflacionarios, (4) comportamiento de yields Treasuries.",
+    "riesgos": "Falta especificidad total: no dice cuáles activos riesgosos, ni magnitud de flujos, ni si es tendencia sostenida o tactismo. 'Tracción' es vago. Riesgo de sobrerreacción si se asume cambio estructural."
+   },
+   "macro": {
+    "dolar": "bajista",
+    "oro": "alcista",
+    "nasdaq": "alcista",
+    "dow": "alcista",
+    "sp500": "alcista",
+    "bitcoin": "alcista",
+    "ethereum": "alcista",
+    "bonos": "bajista",
+    "petroleo": "alcista"
+   },
+   "updates": []
+  },
   {
    "id": "34191",
    "fecha": "2026-08-08T14:41:38+00:00",
@@ -68,6 +210,208 @@
     "petroleo": "Presión bajista por expectativa de acuerdo, pero débil sin confirmación oficial",
     "oro": "Sesgo bajista por reducción de prima de riesgo geopolítico",
     "dolar": "Neutral a ligeramente bajista si mercados reducen demanda defensiva"
+   },
+   "updates": []
+  },
+  {
+   "id": "959052274",
+   "fecha": "2026-08-08T14:07:30.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/heres-how-we-played-the-massive-rebound-in-ai-stocks-this-week.html",
+   "via": "CNBC",
+   "original": "Here’s how we played the massive rebound in AI stocks this week",
+   "titulo": "Gestores despliegan estrategia tras rebote masivo de acciones de IA esta semana",
+   "resumen": "Gestores de fondos describen cómo aprovecharon el rebote significativo en acciones de inteligencia artificial durante la semana. El titular no detalla qué acciones específicas, magnitud del rebote ni si fue reacción a datos macro o eventos empresariales. Refleja actividad táctica en el sector.",
+   "analisis": {
+    "porque": "Los rebotes en IA generan oportunidades tácticas y señalizan cambios en sentimiento del sector. Importa para entender rotaciones y entrada/salida de capital institucional.",
+    "queOcurrio": "Gestores ejecutaron posiciones durante rebote de acciones de IA sin especificar detalles de magnitud o catalizador.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "NASDAQ",
+    "Megacap Tech (NVDA, MSFT, GOOGL, TSLA, META)",
+    "S&P 500"
+   ],
+   "sesgos": [
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Megacap Tech",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "ia-stocks",
+    "rebote",
+    "trading-tactico",
+    "nvidia-megacap",
+    "nasdaq"
+   ],
+   "tgText": "Gestores aprovechan rebote masivo de acciones de IA esta semana. Describen estrategias de entrada en el sector sin detallar magnitud del movimiento ni catalizador específico.",
+   "xText": "Traders ejecutan posiciones en rebote de IA stocks. Gestores detallan cómo jugaron el movimiento sin especificar qué provocó el giro alcista.",
+   "discordText": "**IA stocks en rebote** • Gestores activos durante el movimiento • Estrategias tácticas en ejecución • Detalles de magnitud y catalizador no especificados",
+   "pushText": "Gestores aprovechan rebote de IA stocks esta semana",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "NVIDIA, Microsoft, Alphabet y Broadcom tienden a liderar movimientos de sentimiento en IA.",
+    "despues": "Chips semiconductores (SMH ETF), infraestructura data-center, software de IA.",
+    "escenarios": "Traders monitorean: (1) sostenibilidad del rebote vs. venta técnica, (2) si hay rebalances de fondos, (3) si es reacción a earnings o guidance, (4) si hay acumulación o distribución en volumen.",
+    "riesgos": "Titular extremadamente vago: no indica si rebote fue 2%, 10% o mayor. No cita catalizador. 'Cómo jugaron' suena anecdótico sin confirmación de volumen institucional real. Alto riesgo de sesgo de confirmación."
+   },
+   "macro": {
+    "dolar": "neutral",
+    "oro": "neutral",
+    "nasdaq": "alcista",
+    "dow": "neutral",
+    "sp500": "neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "neutral",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "970648175",
+   "fecha": "2026-08-08T13:40:35.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/dems-plan-trump-investigations-instead-of-impeachment-reuters.html",
+   "via": "CNBC",
+   "original": "Democrats plan Trump investigations over impeachment if they win House, sources say",
+   "titulo": "Demócratas planean investigaciones sobre Trump si ganan control de la Cámara",
+   "resumen": "Fuentes anónimas señalan que el Partido Demócrata planifica investigaciones sobre Donald Trump, incluyendo cuestiones de destitución, en caso de obtener mayoría en la Cámara de Representantes. El titular no proporciona detalles sobre cronograma, fundamentos específicos ni probabilidad electoral actual.",
+   "analisis": {
+    "porque": "Riesgo político estructural afecta confianza en estabilidad institucional y expectativas de política fiscal/regulatoria. Impacta primas de riesgo y comportamiento de inversores institucionales.",
+    "queOcurrio": "Fuentes no identificadas indican planes demócratas de investigaciones sobre Trump tras potencial control de Cámara.",
+    "estado": "rumor",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "DXY",
+    "Bonos",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "DXY",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Equities de defensa",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "riesgo-politico-usa",
+    "democratas",
+    "trump",
+    "investigaciones",
+    "incertidumbre-electoral"
+   ],
+   "tgText": "Demócratas planean investigaciones sobre Trump si ganan Cámara, según fuentes. Sin detalles sobre cronograma ni probabilidad electoral. Riesgo político de medio plazo.",
+   "xText": "Fuentes: Demócratas preparan investigaciones sobre Trump en caso de victoria electoral en Cámara. Riesgo político estructural para mercados.",
+   "discordText": "**Riesgo político: Demócratas planean investigaciones**\n• Fuentes anónimas sobre planes post-electorales\n• Detalles sobre cronograma no especificados\n• Afecta prima de riesgo político USA",
+   "pushText": "Demócratas planean investigaciones sobre Trump si ganan Cámara",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "S&P 500 tiende a bajar por incertidumbre política. Dólar sube por flight-to-safety.",
+    "despues": "Bonos, acciones defensivas, sectores sensibles a regulación (Big Tech, financial).",
+    "escenarios": "Traders vigilan: (1) probabilidades electorales actuales, (2) timeline de investigaciones, (3) potencial de impeachment vs. impacto legislativo real, (4) consecuencias para política económica/regulatoria, (5) volatilidad electoral.",
+    "riesgos": "Fuente anónima, sin detalles específicos. 'Planean' no es confirmación de acción real. Riesgo de sobre-politización de mercados. Las investigaciones podrían no avanzar legislativamente."
+   },
+   "macro": {
+    "dolar": "alcista",
+    "oro": "alcista",
+    "nasdaq": "bajista",
+    "dow": "bajista",
+    "sp500": "bajista",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "alcista",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "997990477",
+   "fecha": "2026-08-08T13:28:00.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/berkshire-hathaway-earnings-q2-2026.html",
+   "via": "CNBC",
+   "original": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett&apos;s massive cash hoard",
+   "titulo": "Berkshire Hathaway despliega el efectivo de Buffett tras ganancias positivas",
+   "resumen": "Las ganancias de Berkshire Hathaway aumentaron en el último trimestre y el CEO Greg Abel comienza a desplegar la massive tesorería acumulada por Warren Buffett. El titular no especifica el monto ni destino exacto de las inversiones, pero señala un cambio en la postura de caja del conglomerado tras períodos de acumulación.",
+   "analisis": {
+    "porque": "El movimiento de capital desde tesorería hacia activos indica señales sobre valuaciones y confianza del mayor inversor del mundo. Impacta sentimiento de mercado y puede presionar sobre activos defensivos.",
+    "queOcurrio": "Berkshire reportó ganancias al alza y Abel inicia despliegue de efectivo acumulado histórico.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Berkshire Hathaway (BRK.B)",
+    "S&P 500",
+    "Bonos",
+    "Acciones defensivas"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "BRK.B",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "berkshire-hathaway",
+    "buffett",
+    "tesoreria",
+    "inversiones",
+    "capital-deployment"
+   ],
+   "tgText": "Berkshire Hathaway comienza a desplegar el efectivo histórico de Buffett tras ganancias positivas. CEO Abel da paso a nueva etapa de inversión tras períodos de acumulación.",
+   "xText": "BRK comienza despliegue de tesorería tras ganancias trimestrales positivas. Greg Abel moviliza el cash acumulado por Buffett.",
+   "discordText": "**Berkshire Hathaway en movimiento** • Ganancias al alza en Q2 • CEO Abel inicia despliegue de efectivo histórico • Señal de confianza en valuaciones actuales",
+   "pushText": "Berkshire activa su caja histórica tras ganancias positivas",
+   "importancia": 7,
+   "reaccion": {
+    "primero": "Acciones de cartera de Berkshire (financieras, energía, tecnología selecta) suelen beneficiarse con el aumento de demanda institucional.",
+    "despues": "Bonos a largo plazo podrían presionarse si el despliegue es sostenido. Activos defensivos pueden perder atractivo relativo.",
+    "escenarios": "Traders monitorean: (1) destino específico del capital, (2) velocidad de despliegue mensual, (3) sectores priorizados, (4) si indica cambio en outlook de Buffett sobre valuaciones.",
+    "riesgos": "El titular carece de detalles sobre montos y destino específico. El 'despliegue' podría ser parcial o gradual. Riesgo de sobrerreacción si se asume reversión total de postura cash."
+   },
+   "macro": {
+    "dolar": "neutral",
+    "oro": "neutral",
+    "nasdaq": "ligeramente alcista",
+    "dow": "neutral",
+    "sp500": "ligeramente alcista",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "ligeramente bajista",
+    "petroleo": "neutral"
    },
    "updates": []
   },
@@ -141,6 +485,56 @@
     "bonos": "Sesgo alcista (tasas bajan)",
     "bitcoin": "Neutral a ligeramente bajista por reducción de prima de riesgo macro"
    },
+   "updates": []
+  },
+  {
+   "id": "933978652",
+   "fecha": "2026-08-08T13:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/retirement-investing-equity-income-stocks.html",
+   "via": "CNBC",
+   "original": "For retirees, staying in the stock market is critical. How much exposure is the make-or-break question",
+   "titulo": "Jubilados deben mantener exposición en bolsa; el nivel es la pregunta clave",
+   "resumen": "Análisis sobre estrategia de asignación de activos para jubilados enfatiza la importancia de mantener exposición accionaria pero cuestiona el nivel óptimo. El titular no proporciona recomendaciones específicas ni datos sobre tasas de retiro, longevidad o condiciones de mercado actual, solo plantea el debate.",
+   "analisis": {
+    "porque": "La composición de carteras de pensionistas afecta demanda estructural de equities, bonos y defensivos. Tiene impacto en valuaciones a largo plazo y estabilidad de mercados.",
+    "queOcurrio": "Análisis periodístico plantea que jubilados requieren exposición de renta variable pero el porcentaje es el tema de debate central.",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "Bonos",
+    "Acciones defensivas",
+    "Dividend stocks"
+   ],
+   "sesgos": [
+    {
+     "activo": "Equities",
+     "sesgo": "neutral"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "jubilacion",
+    "asignacion-activos",
+    "equities",
+    "renta-variable",
+    "planificacion"
+   ],
+   "tgText": "Análisis: jubilados necesitan exposición accionaria pero el nivel óptimo sigue siendo pregunta clave. No hay consenso sobre % exacto según condiciones.",
+   "xText": "Debate sobre carteras de jubilados: exposición a equities es crítica pero ¿cuánta? El nivel sigue siendo la pregunta sin respuesta única.",
+   "discordText": "**Estrategia de jubilación en debate** • Equities son necesarios pero ¿cuánto? • Nivel óptimo varía por perfil • Sin recomendaciones específicas",
+   "pushText": "Jubilados necesitan equities pero ¿cuánta exposición es óptima?",
+   "importancia": 4,
+   "reaccion": null,
+   "macro": null,
    "updates": []
   },
   {
@@ -7349,406 +7743,9 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "34042",
-   "fecha": "2026-08-05T12:17:38+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34042",
-   "via": "DeItaone",
-   "original": "$GOOGL - GOOGLE IS IN TALKS FOR A $1.5 BILLION-PLUS DEAL WITH AI CODING AGENT STARTUP MECHANIZE - BUSINESS INSIDER",
-   "titulo": "Google en negociaciones para adquirir startup IA Mechanize por $1.500M+",
-   "resumen": "Google está en conversaciones avanzadas para adquirir Mechanize, startup especializada en agentes de codificación IA, por más de $1.500 millones. La transacción refleja estrategia de Google de fortalecer capacidades en IA generativa y automatización de desarrollo. Mechanize se suma a cartera de adquisiciones IA del grupo.",
-   "analisis": {
-    "porque": "Adquisición IA refleja consolidación en compresión de márgenes tecnológicos y competencia con OpenAI/Microsoft; tamaño del deal ($1,5B+) indica apuesta estratégica",
-    "queOcurrio": "Google en talks para comprar Mechanize (IA coding agents) por $1,5B+, según Business Insider",
-    "estado": "rumor",
-    "fuenteOriginal": "Business Insider (fuentes anónimas)"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "GOOGL",
-    "MSFT",
-    "AAPL",
-    "Semiconductores",
-    "IA"
-   ],
-   "sesgos": [
-    {
-     "activo": "GOOGL",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "MSFT",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "Google",
-    "adquisición",
-    "IA",
-    "Mechanize",
-    "agentes-codificación"
-   ],
-   "tgText": "Google en talks para comprar Mechanize (IA coding) por $1,5B+. Refleja apuesta en automatización de desarrollo. Fuente: Business Insider.",
-   "xText": "Google negocia compra de Mechanize (agentes IA codificación) por $1,5B+. Apuesta en carrera IA vs OpenAI/Microsoft. Business Insider.",
-   "discordText": "**Google-Mechanize: deal de $1,5B+ en negociación**\n• Target: startup IA coding agents\n• Objetivo: fortalecer IA generativa\n• Fuente: Business Insider\n• Estado: rumor (no confirmado)",
-   "pushText": "Google negocia compra de startup IA Mechanize por $1,5B+",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "GOOGL ligeramente alcista en noticia de M&A estratégica; tech mega-caps que compiten (MSFT, AAPL) monitorean para benchmarking",
-    "despues": "Sector IA y startups B2B software observan si $1,5B es ceiling valuación o floor; competencia por talento IA se intensifica",
-    "escenarios": "Si deal cierra, consolidaría stack IA de Google (Google Cloud, DeepMind, now Mechanize); traders vigilarán anuncios MSFT (¿contraparte en OpenAI?) y Apple IA roadmap",
-    "riesgos": "Deal aún no confirmado (rumor Business Insider); valuación de startups IA es volátil; riesgo regulatorio (antitrust si Google es too-big)"
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "34040",
-   "fecha": "2026-08-05T12:12:11+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34040",
-   "via": "DeItaone",
-   "original": "AI DRIVES MARKETS TO NEW HIGHS S&P 500 futures rose 0.4% on Wednesday, putting the index on track for a second straight record close as strong earnings reinforced confidence in AI spending. Investors shrugged off mixed corporate results, focusing instead on continued investment in AI infrastructure. Nvidia gained after Elon Musk highlighted his computing ambitions, while Sandisk and Western Digita",
-   "titulo": "IA impulsa S&P 500 a nuevos máximos; 87% de empresas superan ganancias",
-   "resumen": "El S&P 500 se encamina a un segundo cierre récord consecutivo impulsado por inversión en infraestructura IA. A pesar de resultados corporativos mixtos, el 87% de las empresas del índice ha superado estimaciones de ganancias. Nvidia ganó con anuncios de Elon Musk sobre ambiciones computacionales. Los futuros subieron 0,4%, reforzando confianza en que ganancia resiliente y demanda IA mantendrán el mercado alcista.",
-   "analisis": {
-    "porque": "Indica continuidad del rally técnico basado en fundamentales IA y earnings strength, relevante para valuaciones y rotación sectorial",
-    "queOcurrio": "Futuros del S&P 500 suben 0,4% con narrativa de earnings beat y capex IA manteniendo momentum alcista",
-    "estado": "confirmado",
-    "fuenteOriginal": "no indicada (agregador Bloomberg)"
-   },
-   "impacto": "alto",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Nvidia",
-    "Semiconductores"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nvidia",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "IA",
-    "earnings",
-    "S&P-500",
-    "récord",
-    "infraestructura-IA"
-   ],
-   "tgText": "S&P 500 en camino a segundo cierre récord. 87% de empresas superan ganancias; IA mantiene rally. Nvidia sube con ambiciones computacionales de Musk.",
-   "xText": "S&P 500 hacia nuevo máximo: 87% de empresas superan expectations. Rally impulsado por inversión IA y ganancia resiliente. Nvidia lidera con Musk en escena.",
-   "discordText": "**S&P 500 a nuevos máximos**\n• Futuros +0,4% hacia segundo cierre récord\n• 87% de empresas superan ganancias\n• IA y capex impulsan momentum\n• Nvidia gana con anuncios Musk",
-   "pushText": "S&P 500 hacia nuevo máximo: 87% superan ganancias, IA lidera rally",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "NASDAQ y grandes caps tech (Nvidia, Broadcom, Marvell) reaccionan al optimismo IA y earnings beat",
-    "despues": "S&P 500 amplía ganancias; índices de small-cap y defensivos pueden quedar rezagados en rotación riesgo-on",
-    "escenarios": "Traders vigilan sostenibilidad de valuaciones en tech si earnings beat es priced-in; riesgo de take-profits si FOMC mantiene tono hawkish; atención a guidance Q3 en semiconductores",
-    "riesgos": "Saturación de narrativa IA; correcciones técnicas por sobrecompra; cambio en composición de earnings beats (más value menos growth podría rotar flujos)"
-   },
-   "macro": {
-    "nasdaq": "alcista",
-    "sp500": "alcista",
-    "dolar": "neutral",
-    "bonos": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "34031",
-   "fecha": "2026-08-05T11:01:22+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34031",
-   "via": "DeItaone",
-   "original": "U.S. MORTGAGE DEMAND WEAKENS AS RATES HIT ONE-YEAR HIGH U.S. mortgage applications fell 2.9% in the week ended July 31, according to the MBA. The purchase index declined 3.6%, while the refinance index fell 1.9%. The average 30-year mortgage rate rose 5 bps to 6.81%, its highest level in more than a year, weighing on homebuying and refinancing activity.",
-   "titulo": "Demanda hipotecaria cae 2,9% en USA; tasas a máximo de un año en 6,81%",
-   "resumen": "Solicitudes hipotecarias estadounidenses cayeron 2,9% en semana del 31 de julio, según MBA. Índice de compra bajó 3,6% e índice de refinanciamiento 1,9%. Tasa promedio hipotecaria a 30 años subió 5 pb a 6,81%, máximo en más de un año, pesando en actividad compradora y refinanciamiento.",
-   "analisis": {
-    "porque": "Demanda hipotecaria es proxy de momentum de vivienda y salud del consumidor; tasas crecientes señalan ajuste de política de bancos centrales y presión en deuda de hogares.",
-    "queOcurrio": "Solicitudes hipotecarias bajaron semana a semana; tasas subieron a máximos anuales, indicando enfriamiento de mercado de vivienda tras rally.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg / MBA"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Vivienda",
-    "USD",
-    "Bonos USA",
-    "Constructoras",
-    "Bancos hipotecarios",
-    "Rendimientos USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Vivienda",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Rendimientos USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Constructoras",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "hipotecas",
-    "demanda vivienda",
-    "tasas hipotecarias",
-    "MBA",
-    "refinanciamiento",
-    "compra vivienda"
-   ],
-   "tgText": "🏠 Demanda hipotecaria USA cae 2,9%; tasas suben a 6,81% (máximo de 1 año). Compras -3,6%, refinanciamiento -1,9%.",
-   "xText": "US mortgage demand weakens: Applications down 2.9% wk/wk. 30-yr rate hits 6.81% (1-yr high). Purchase index -3.6%, refi -1.9%.",
-   "discordText": "**Hipotecas USA se enfrían**: \n• Solicitudes: -2,9% semana a semana\n• Tasa 30 años: 6,81% (máximo 1 año)\n• Índice compra: -3,6%\n• Índice refinanciamiento: -1,9%",
-   "pushText": "Demanda hipotecaria USA cae; tasas a máximo anual de 6,81%",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Bonos USA (yields) ajustan; mercado reconoce presión alcista de tasas. Constructoras de vivienda podrían bajar.",
-    "despues": "Bancos hipotecarios revisan volúmenes. Consumo de hogares ajusta expectativas si refinanciamiento se frena. Mercado de vivienda de alto precio especialmente impactado.",
-    "escenarios": "Traders vigilarán: (1) si caída es temporal o trend, (2) respuesta de Fed a enfriamiento de demanda, (3) estabilidad de depósitos en bancos hipotecarios, (4) impacto en consumo agregado.",
-    "riesgos": "Dato semanal es volátil. Contexto de verano puede sesgar. Si tasas bajan, demanda puede rebotar rápidamente."
-   },
-   "macro": {
-    "dolar": "alcista",
-    "oro": null,
-    "nasdaq": null,
-    "dow": null,
-    "sp500": null,
-    "bitcoin": null,
-    "ethereum": null,
-    "bonos": "bajista",
-    "petroleo": null
-   },
-   "updates": []
-  },
-  {
-   "id": "34030",
-   "fecha": "2026-08-05T10:48:43+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34030",
-   "via": "DeItaone",
-   "original": "$LLY - ELI LILLY RAISES FY OUTLOOK AFTER STRONG Q2 BEAT Results 🔸 Adj. EPS: $8.38 vs. $6.01 est. ✅ 🔸 Revenue: $22.97B vs. $20.73B est. ✅ 🔸 EPS: $7.94 🔸 Mounjaro Revenue: $9.94B (+91% YoY) 🔸 Zepbound Revenue: $4.93B vs. $4.64B est. ✅ (+44% U.S. YoY) Guidance 🔸 FY Revenue: Raised to $85B–$87B (from $82B–$85B) 🔸 FY Adj. EPS: $35.50–$36.50 Other 🔸 Restructuring & Special Charges: $703M in Q2",
-   "titulo": "Eli Lilly dispara ganancias 39% en Q2; sube guía anual impulsado por Mounjaro y Zepbound",
-   "resumen": "Eli Lilly reportó EPS ajustado de $8,38 vs. $6,01 esperado (+39%) e ingresos de $22,97B vs. $20,73B (+11%), superando en ambas métricas. Mounjaro generó $9,94B (+91% YoY) y Zepbound $4,93B. Alzó guía de ingresos 2026 a $85-87B (vs. $82-85B) y EPS ajustado a $35,50-36,50.",
-   "analisis": {
-    "porque": "Eli Lilly es indicador clave del crecimiento del mercado de GLP-1; resultados impactan valuaciones de healthcare, competencia con Novo Nordisk y expectativas de rentabilidad futura.",
-    "queOcurrio": "LLY reportó resultados trimestrales ampliamente por encima de consenso. Mounjaro (diabetes) y Zepbound (obesidad) ejecutaron excepcional. Alzó guía de ingresos y ganancias.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "LLY",
-    "Healthcare",
-    "GLP-1 peers",
-    "NVO",
-    "AMGN",
-    "ABBV"
-   ],
-   "sesgos": [
-    {
-     "activo": "LLY",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NVO",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Healthcare",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Eli Lilly",
-    "GLP-1",
-    "Mounjaro",
-    "Zepbound",
-    "earnings beat",
-    "obesity",
-    "diabetes"
-   ],
-   "tgText": "🚀 LLY: EPS +39% a $8,38; ingresos $22,97B (+11%). Mounjaro +91% YoY. Alza guía 2026 a $85-87B de ingresos.",
-   "xText": "LLY crushes Q2: EPS $8.38 vs $6.01 est (+39%), revenues $22.97B vs $20.73B. Mounjaro +91% YoY. Guides FY revenue to $85-87B.",
-   "discordText": "**Eli Lilly domina Q2**: \n• EPS ajustado: $8,38 vs $6,01 esperado (+39%)\n• Ingresos: $22,97B vs $20,73B\n• Mounjaro: $9,94B (+91% YoY)\n• Zepbound: $4,93B\n• Alza guía anual",
-   "pushText": "LLY dispara ganancias 39% con Mounjaro y Zepbound en explosión",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "LLY sube fuertemente (breaking news). Competidores GLP-1 como NVO ajustan a la baja. Healthcare sector indexa.",
-    "despues": "Peers de pharmaceutical (AMGN, ABBV, JNJ) reasignan valuaciones. Expectativas de demanda de medicinas de obesidad se revisan al alza. Bonos corporativos farmacéuticos pueden ajustarse.",
-    "escenarios": "Traders vigilarán: (1) si demanda GLP-1 continúa acelerada o alcanza plateau, (2) presión regulatoria sobre precios, (3) competencia de nuevos entrantes, (4) márgenes netos ante capex expansión.",
-    "riesgos": "Valuación de LLY ya es exigente; corrección post-earnings posible si guía decepciona en detalles. Riesgo regulatorio en pricing de medicinas de obesidad."
-   },
-   "macro": {
-    "dolar": null,
-    "oro": null,
-    "nasdaq": "alcista",
-    "dow": "alcista",
-    "sp500": "alcista",
-    "bitcoin": null,
-    "ethereum": null,
-    "bonos": "neutral",
-    "petroleo": null
-   },
-   "updates": []
-  },
-  {
-   "id": "34025",
-   "fecha": "2026-08-05T10:03:30+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34025",
-   "via": "DeItaone",
-   "original": "DIMON PUSHES AI SECURITY ALLIANCE JPMorgan CEO Jamie Dimon is urging more than 40 companies across banking, energy, utilities, telecom and transport to join the Alliance for Critical Infrastructure to address AI-related risks. The initiative aims to improve information sharing, strengthen safeguards and coordinate with the Trump administration on AI security. The revamped group is expected to be f",
-   "titulo": "JPMorgan lidera alianza de ciberseguridad IA con 40+ empresas de infraestructura crítica",
-   "resumen": "CEO Jamie Dimon instó a más de 40 empresas de banca, energía, utilities, telecom y transporte a unirse a 'Alliance for Critical Infrastructure' para abordar riesgos de IA. Iniciativa busca mejorar intercambio de información, fortalecer salvaguardas y coordinar con administración Trump. Grupo será operativo a fin de año ante amenaza de ciberataques por IA avanzada.",
-   "analisis": {
-    "porque": "Señal de que sector corporativo percibe riesgo material de IA en ciberseguridad; implicaciones para regulación tech, inversión en ciberseguridad y rentabilidad de infraestructura crítica.",
-    "queOcurrio": "JPMorgan lideró formación de consorcio de ciberseguridad IA con decenas de empresas críticas. Coordinará con gobierno Trump. Operativo por fin de año.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Ciberseguridad",
-    "JPM",
-    "Infraestructura Crítica",
-    "Energía",
-    "Telecom",
-    "Tech"
-   ],
-   "sesgos": [
-    {
-     "activo": "Ciberseguridad",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "JPM",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "JPMorgan",
-    "IA",
-    "ciberseguridad",
-    "infraestructura crítica",
-    "alianza",
-    "riesgo"
-   ],
-   "tgText": "🛡️ JPMorgan lidera alianza de ciberseguridad IA con 40+ empresas críticas. Operativa a fin de año para frenar ciberataques.",
-   "xText": "JPMorgan leads AI security alliance: 40+ companies from banking, energy, utilities, telecom join Critical Infrastructure Alliance. Operational by year-end.",
-   "discordText": "**JPMorgan forma alianza ciberseguridad IA**: \n• 40+ empresas de sectores críticos\n• Objetivo: mejorar compartir información\n• Coordinación con administración Trump\n• Operativa fin de año",
-   "pushText": "JPMorgan lidera alianza ciberseguridad con 40+ empresas críticas",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Acciones de ciberseguridad (CrowdStrike, Palo Alto, etc.) podrían reaccionar levemente al alza por señal de demanda de soluciones.",
-    "despues": "Reguladores monitorean alianza. Potencial para regulación futura de IA. Empresas de infraestructura crítica aumentan capex en ciberseguridad.",
-    "escenarios": "Traders vigilarán: (1) si alianza genera estándares de mercado o es cosmética, (2) respuesta regulatoria, (3) impacto real en reducción de ciberataques, (4) competencia entre proveedores de ciberseguridad.",
-    "riesgos": "Anuncio podría ser principalmente PR. Riesgo de que alianza sea inefectiva o fraude regulatorio. Falta claridad sobre presupuesto y compromisos reales."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "34022",
-   "fecha": "2026-08-05T09:49:42+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34022",
-   "via": "DeItaone",
-   "original": "BOFA ANTICIPATE STRONGER JAPANESE YEN FOLLOWING INTERVENTION, CHANGE YEAR END DOLLAR/YEN FORECAST TO 149 FROM 152 - CURRENTLY TRADES AT 157.7",
-   "titulo": "BofA rebaja pronóstico USD/JPY a 149 tras intervención japonesa; yen se fortalece",
-   "resumen": "Bank of America anticipa un yen más fuerte tras intervención oficial japonesa y redujo su pronóstico de tipo de cambio dólar/yen de fin de año de 152 a 149, desde un nivel actual de 157.7. El banco espera reversión hacia la paridad más fuerte en los próximos meses como resultado de las medidas de política cambiaria.",
-   "analisis": {
-    "porque": "Señal de cambio en expectativas de tipos de cambio entre las dos mayores economías de Asia; afecta valuaciones de empresas exportadoras, carry trades y bonos de largo plazo en JPY.",
-    "queOcurrio": "BofA cambió su guía de USD/JPY de 152 a 149 reconociendo intervención del Banco de Japón y presión alcista sobre el yen.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "USD/JPY",
-    "Nikkei 225",
-    "Bonos JGB",
-    "Exportadores japoneses",
-    "Carry trades"
-   ],
-   "sesgos": [
-    {
-     "activo": "USD/JPY",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Nikkei 225",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "BOJ",
-    "intervención cambiaria",
-    "yen",
-    "USD/JPY",
-    "Japón"
-   ],
-   "tgText": "🇯🇵 BofA baja pronóstico USD/JPY a 149 desde 152 tras intervención del BOJ. Yen se fortalece desde 157.7.",
-   "xText": "BOJ intervention bears fruit: BofA cuts USD/JPY year-end forecast from 152 to 149. Yen strengthening from 157.7 spot. Major shift in FX expectations.",
-   "discordText": "**Intervención BOJ efectiva**: BofA reduce USD/JPY target a 149 (vs 152 previo). Cambio de expectativas después de acción oficial.",
-   "pushText": "BofA rebaja USD/JPY a 149 tras intervención japonesa",
-   "importancia": 7,
-   "reaccion": {
-    "primero": "USD/JPY cae directamente; carry trades ajustados (especialmente posiciones cortas en JPY). Inmediato.",
-    "despues": "Nikkei y exportadores japoneses suben; bonos JGB ajustan; mercados emergentes con exposición a yen también se reajustan.",
-    "escenarios": "Traders vigilarán si BOJ confirma más intervenciones, impacto en volatilidad de mercado de bonos japoneses, y ajustes en posiciones de carry trade superleveraged.",
-    "riesgos": "El titular no especifica magnitud de intervención ni duración esperada. Riesgo de que intervención sea temporal y mercado revierta."
-   },
-   "macro": {
-    "dolar": "bajista",
-    "oro": null,
-    "nasdaq": null,
-    "dow": null,
-    "sp500": null,
-    "bitcoin": null,
-    "ethereum": null,
-    "bonos": "neutral",
-    "petroleo": null
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/27/jim-cramer-warns-ai-circular-financing-echoes-dot-com-bubble.html",
-  "https://www.cnbc.com/2026/07/27/trump-supreme-court-mail-in-voting-restrictions.html",
-  "https://www.cnbc.com/2026/07/27/yields-are-surging-on-these-inflation-protected-bonds-how-to-use-them.html",
-  "https://www.cnbc.com/2026/07/27/nvidias-potential-250b-backstop-for-openai-is-another-strike-against-the-ai-trade.html",
-  "https://www.cnbc.com/2026/07/27/cyclospora-outbreak-food-industry-consolidation.html",
-  "https://www.cnbc.com/2026/07/27/big-earnings-and-a-fed-meetings-what-nyse-insider-jay-woods-is-watching-this-week.html",
-  "https://www.cnbc.com/2026/07/27/cnbcs-the-china-connection-newsletter-a-us-china-debate-thats-becoming-bigger-than-tariffs.html",
-  "https://www.cnbc.com/2026/07/27/tuesdays-big-stock-stories-whats-likely-to-move-the-market.html",
   "https://www.cnbc.com/2026/07/27/anthropic-ceo-dario-amodei-isnt-advocating-open-weight-model-ban.html",
   "https://www.cnbc.com/2026/07/28/nasdaq-kospi-wall-street-korea-markets-skhynox-samsung.html",
   "https://www.cnbc.com/2026/07/28/sk-hynix-plunges-semiconductor-selloff-deepens-samsung-softbank.html",
@@ -8040,6 +8037,14 @@
   "https://www.cnbc.com/2026/08/08/hugging-face-ai-hack-cybersecurity-black-hat.html",
   "https://www.cnbc.com/2026/08/08/cyclospora-salads-lettuce-restaurants.html",
   "https://www.cnbc.com/2026/08/08/elevator-giant-otis-stock-wall-street.html",
-  "https://www.cnbc.com/2026/08/08/space-debris-junk-spacex-rocket-moon-crash.html"
+  "https://www.cnbc.com/2026/08/08/space-debris-junk-spacex-rocket-moon-crash.html",
+  "https://www.cnbc.com/2026/08/08/retirement-investing-equity-income-stocks.html",
+  "https://www.cnbc.com/2026/08/08/berkshire-hathaway-earnings-q2-2026.html",
+  "https://www.cnbc.com/2026/08/08/moneymaxxing-trend-save-budget-build-wealth.html",
+  "https://www.cnbc.com/2026/08/08/dems-plan-trump-investigations-instead-of-impeachment-reuters.html",
+  "https://www.cnbc.com/2026/08/08/heres-how-we-played-the-massive-rebound-in-ai-stocks-this-week.html",
+  "https://www.cnbc.com/2026/08/08/rate-uncertainty-sparking-demand-for-clo-exposure-among-etfs-vettafi.html",
+  "https://www.cnbc.com/2026/08/08/hunter-biden-says-joe-bidens-cancer-has-spread-is-very-debilitating.html",
+  "https://www.cnbc.com/2026/08/08/uae-ship-targeted-missile-us-iran-tensions-stay-high.html"
  ]
 }
