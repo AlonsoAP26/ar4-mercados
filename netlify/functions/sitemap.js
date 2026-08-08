@@ -56,18 +56,23 @@ async function articulos(ruta, pagina) {
 
 exports.handler = async () => {
   const hoy = new Date().toISOString().slice(0, 10);
-  const fijas = FIJAS.map(([p, freq, prio]) => url(BASE + '/' + p, hoy, freq, prio));
-  const [noticias, ideas, psico, brokers] = await Promise.all([
-    articulos('noticias.json', 'noticia.html'),
-    articulos('ideas.json', 'idea.html'),
-    articulos('articulos.json', 'articulo.html'),
-    // Las reviews de brokers también son páginas indexables (broker.html?slug=X)
-    articulos('brokers.json', 'broker.html')
+  // URLs SIN .html: deben coincidir EXACTAMENTE con las etiquetas canónicas de
+  // cada página — si el sitemap dice una cosa y la canónica otra, Google
+  // reporta "Página alternativa" / "Duplicada" por cada URL del mapa.
+  const fijas = FIJAS.map(([p, freq, prio]) => url(BASE + '/' + p.replace('.html', ''), hoy, freq, prio));
+  const [noticias, ideas, psico, brokers, modulos] = await Promise.all([
+    articulos('noticias.json', 'noticia'),
+    articulos('ideas.json', 'idea'),
+    articulos('articulos.json', 'articulo'),
+    // Las reviews de brokers también son páginas indexables (broker?slug=X)
+    articulos('brokers.json', 'broker'),
+    // Los 30 módulos del temario gratuito: contenido educativo indexable.
+    articulos('educacion.json', 'modulo')
   ]);
 
   const xml = '<?xml version="1.0" encoding="UTF-8"?>' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' +
-    fijas.join('') + noticias.join('') + ideas.join('') + psico.join('') + brokers.join('') +
+    fijas.join('') + noticias.join('') + ideas.join('') + psico.join('') + brokers.join('') + modulos.join('') +
     '</urlset>';
 
   return {

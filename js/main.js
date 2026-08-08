@@ -1,3 +1,16 @@
+// Canónica por artículo: las páginas de detalle comparten un solo HTML, pero
+// cada slug es una página distinta para Google — sin esto, todos los artículos
+// se veían como duplicados de /noticia (o /idea, /broker...) y no se indexaban
+// individualmente. Debe coincidir con el formato del sitemap.
+window.AR4_canonicalDetalle = function (pagina, slug) {
+  var url = 'https://ar4mercados.com/' + pagina + '?slug=' + encodeURIComponent(slug);
+  var link = document.querySelector('link[rel="canonical"]');
+  if (!link) { link = document.createElement('link'); link.setAttribute('rel', 'canonical'); document.head.appendChild(link); }
+  link.setAttribute('href', url);
+  var og = document.querySelector('meta[property="og:url"]');
+  if (og) og.setAttribute('content', url);
+};
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const navMenuBtn = document.getElementById('navMenuBtn');

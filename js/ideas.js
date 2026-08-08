@@ -373,6 +373,7 @@ async function initIdeaDetail() {
 
   const params = new URLSearchParams(window.location.search);
   const slug = params.get('slug');
+  if (slug && window.AR4_canonicalDetalle) window.AR4_canonicalDetalle('idea', slug);
 
   let ideas;
   try {
