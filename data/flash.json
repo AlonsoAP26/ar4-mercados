@@ -1,7 +1,79 @@
 {
- "lastId": 34189,
- "actualizado": "2026-08-08T12:17:05.391Z",
+ "lastId": 34190,
+ "actualizado": "2026-08-08T13:27:43.133Z",
  "items": [
+  {
+   "id": "34190",
+   "fecha": "2026-08-08T13:20:58+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34190",
+   "via": "DeItaone",
+   "original": "IRAN SAYS HORMUZ DEAL CLOSE, BUT CONDITIONS REMAIN Iran says it is “very close” to a shipping agreement with Oman over the Strait of Hormuz, but warned the deal alone won’t reopen the vital waterway. Tehran says reopening depends on Washington accepting additional conditions, including compensation. The US says it will lift its blockade of Iranian ports once unrestricted commercial shipping resume",
+   "titulo": "Irán cerca de acuerdo sobre Estrecho de Ormuz; Washington pone nuevas condiciones",
+   "resumen": "Irán afirma estar \"muy cerca\" de un acuerdo de envíos con Omán sobre el Estrecho de Ormuz, pero advierte que la reapertura depende de que Washington acepte condiciones adicionales, incluida compensación. EE.UU. dice que levantará el bloqueo de puertos iraníes una vez que reanude el comercio sin restricciones. Emiratos acusó a Irán de otro ataque con misiles contra una nave.",
+   "analisis": {
+    "porque": "El Estrecho de Ormuz canaliza ~21% del petróleo mundial. Cualquier disruption o resolución impacta directamente precios de energía, rendimientos globales y dinámicas de riesgo geopolítico. Las condiciones de compensación añaden complejidad a negociaciones.",
+    "queOcurrio": "Teherán reporta avances en negociación trilateral (Irán-Omán-implícitamente EE.UU.) para reapertura de la ruta marítima vital. Simultaneamente, tensiones militares continúan (ataque con misiles acusado por EAU). El titular no especifica si hay mesa formal de negociación o solo comunicados unilaterales.",
+    "estado": "rumor",
+    "fuenteOriginal": "no indicada"
+   },
+   "impacto": "alto",
+   "breaking": true,
+   "activos": [
+    "Petróleo WTI",
+    "Brent",
+    "Oro",
+    "DXY",
+    "Bonos USA",
+    "NASDAQ",
+    "Energéticas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Mercados de riesgo",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "muy alta",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Ormuz",
+    "Irán",
+    "petróleo",
+    "comercio marítimo",
+    "tensión EEUU-Irán",
+    "energía"
+   ],
+   "tgText": "🚨 Irán reporta proximidad a acuerdo sobre Ormuz con Omán pero pide compensación a EEUU. Tensiones militares continúan. Riesgo alto para petróleo global.",
+   "xText": "🚨 Irán \"muy cerca\" de acuerdo Ormuz pero EE.UU. debe aceptar compensación. EAU reporta nuevo ataque iraní. Petróleo y geopolítica en máxima tensión.",
+   "discordText": "**Geopolítica - Ormuz**\n• Irán cerca de acuerdo con Omán pero EEUU debe aceptar condiciones\n• Compensación incluida en demandas iraníes\n• EAU acusa nuevo ataque con misiles\n• 21% petróleo global en riesgo",
+   "pushText": "Irán-Ormuz: acuerdo cerca pero con nuevas condiciones; tensiones continúan",
+   "importancia": 8,
+   "reaccion": {
+    "primero": "Crudo (WTI/Brent) baja por expectativa de reapertura; oro cae por menor prima de riesgo geopolítico",
+    "despues": "Acciones energéticas ajustan; dólar puede debilitarse si mercados prician 'riesgo resuelto'; bonos USA suben (tasas bajan)",
+    "escenarios": "Traders vigilarán: (1) si conversaciones formalizan o quedan en comunicados; (2) si EE.UU. acepta compensación (ruptura de política); (3) si nuevos ataques escalan tensión; (4) timeline de implementación vs. demandas geopolíticas rivales (Israel-Hezbollah, etc.)",
+    "riesgos": "Fuente no verificada: Teherán puede exagerar proximidad para presión política. Ataques 'acusados' sin confirmación tercera parte. EEUU no ha confirmado contactos directos. Cualquier escalada militar anula acuerdo."
+   },
+   "macro": {
+    "dolar": "Sesgo bajista si acuerdo se concreta (menor prima de riesgo)",
+    "oro": "Sesgo bajista por menor riesgo geopolítico",
+    "petroleo": "Sesgo bajista inmediato (~-1% a -3% si mercado cree reapertura)",
+    "nasdaq": "Sesgo alcista marginal por energía más barata",
+    "dow": "Sesgo alcista marginal",
+    "sp500": "Sesgo alcista marginal",
+    "bonos": "Sesgo alcista (tasas bajan)",
+    "bitcoin": "Neutral a ligeramente bajista por reducción de prima de riesgo macro"
+   },
+   "updates": []
+  },
   {
    "id": "934535904",
    "fecha": "2026-08-08T12:04:15.000Z",
@@ -7663,92 +7735,6 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": "34001",
-   "fecha": "2026-08-04T20:42:09+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34001",
-   "via": "DeItaone",
-   "original": "$NVDA - SPACEX CEO ELON MUSK SAYS GOING FORWARD, WE'VE DECIDED TO BUILD EXCLUSIVELY ON NVIDIA",
-   "titulo": "SpaceX construirá exclusivamente sobre chips Nvidia; cambio de estrategia crítico",
-   "resumen": "Elon Musk anunció que SpaceX ha decidido construir exclusivamente sobre arquitectura Nvidia de cara adelante. Decisión implica consolidación de supply chain de procesamiento en ecosistema Nvidia para satélites, IA orbital y sistemas de tierra. Representa validación institucional de liderazgo Nvidia en cargas computacionales espaciales.",
-   "analisis": {
-    "porque": "SpaceX exclusividad con Nvidia amplifica dependencia sistémica de infraestructura de IA en proveedor único. Para mercados: (1) Nvidia gana moat defensivo en mercado satelital emergente, (2) SpaceX reduce riesgo geopolítico/supply chain, (3) señal alcista para stack Nvidia en aplicaciones edge/espacio. Contrasta con narrativa de 'alternativas' (AMD, Intel) ganando cuota.",
-    "queOcurrio": "Musk comunicó en presentación de resultados que SpaceX exclusivamente usará Nvidia forward. Cambio de arquitectura anterior (potencialmente mixta o alternativas) a monolítico Nvidia.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "NVDA",
-    "SPCX",
-    "Semiconductores",
-    "Nasdaq",
-    "S&P500"
-   ],
-   "sesgos": [
-    {
-     "activo": "NVDA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "AMD",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Semiconductores",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "Nvidia",
-    "SpaceX",
-    "exclusividad",
-    "IA-espacial",
-    "arquitectura-chips"
-   ],
-   "tgText": "🚀 SpaceX exclusivamente Nvidia: Musk anuncia cambio a arquitectura única Nvidia para todos los sistemas. Amplia moat defensivo Nvidia en espacio y satélites.",
-   "xText": "🚀 SpaceX elige exclusiva Nvidia: Musk confirma cambio a arquitectura única Nvidia para satélites e IA orbital. Valida dominio Nvidia en edge computing espacial. $NVDA",
-   "discordText": "**SpaceX-Nvidia Exclusiva**\n🚀 Elon Musk anuncia:\n• SpaceX construirá **exclusivamente sobre Nvidia**\n• Cambio de estrategia crítico para IA orbital\n• Amplía moat defensivo Nvidia en mercado espacial",
-   "pushText": "SpaceX elige exclusivamente Nvidia; amplia moat defensivo en IA espacial",
-   "importancia": 9,
-   "reaccion": {
-    "primero": "NVDA: overnight futures suben +0.5-1% en Asian trade; desk semiconductios revisa múltiplos upside. Exclusividad elimina riesgo competitivo AMD/QUALCOMM en vertical espacial de alto margen.",
-    "despues": "AMD, QCOM: mercado reprecia riesgo de exclusión en mercados edge/IoT/espacio; ambas pueden caer -1 a -2% en ajuste de expectativa de TAM. Semicon índice se refuerza por NVDA peso.",
-    "escenarios": "Traders vigilan: (1) si exclusividad SpaceX es precedente para otros satélites/clientes (Amazon, OneWeb, etc.) o aislado, (2) márgenes Nvidia en aplicaciones espaciales vs data center, (3) geopolítica: Nvidia exclusiva SpaceX simplifica narrative anti-China en cadena crítica USA.",
-    "riesgos": "Anuncio sin detalles de contrato; exclusividad podría ser aspiracional (roadmap) vs contractual vinculante. Si clientes SpaceX presionan costo/flexibilidad, cambio podría revertirse. AMD/QUALCOMM podrían reposicionarse con soluciones edge competitivas."
-   },
-   "macro": null,
-   "updates": [
-    {
-     "fecha": "2026-08-05T09:15:09+00:00",
-     "id": "34020",
-     "texto": "BofA Securities mantiene calificación Buy y objetivo $235 tras Q2 sólido. Subraya que ingresos y rentabilidad superaron expectativas y gestión reforzó outlook: $100B ARR dic 2026, $1T ingresos 2030. Aunque reconoce preocupaciones por capex superior e incertidumbre monetización IA/Starlink, permanece optimista en posición competitiva y elevó pronósticos.",
-     "tgUrl": "https://t.me/walterbloomberg/34020"
-    },
-    {
-     "fecha": "2026-08-05T08:12:23+00:00",
-     "id": "34013",
-     "texto": "Mizuho reitera calificación Outperform y objetivo de precio de $200 para SpaceX tras resultados Q2 sólidos: ingresos de $7.8B (+92% YoY) y EBITDA ajustado de $3.5B (+191% YoY). IA generó $2.6B en ingresos y alcanzó rentabilidad. Gestión proyecta $100B en ARR para diciembre y meta de $1T en ingresos para 2030.",
-     "tgUrl": "https://t.me/walterbloomberg/34013"
-    },
-    {
-     "fecha": "2026-08-04T21:38:25+00:00",
-     "id": "34009",
-     "texto": "Nvidia fue incluida en reunión entre administración Trump y empresas desarrolladoras de IA, según dos fuentes familiarizadas con las discusiones. El titular no especifica agenda, participantes exactos ni resultados, pero refleja rol central de Nvidia en políticas de IA de la administración.",
-     "tgUrl": "https://t.me/walterbloomberg/34009"
-    },
-    {
-     "fecha": "2026-08-04T21:05:42+00:00",
-     "id": "34005",
-     "texto": "Elon Musk confirmó que SpaceX espera recibir un «porcentaje significativo» de GPUs Nvidia durante 2027. Esta declaración refuerza la estrategia de dependencia de chips Nvidia para operaciones de inteligencia artificial y satélites. El titular no especifica volumen exacto ni timeline preciso.",
-     "tgUrl": "https://t.me/walterbloomberg/34005"
-    }
-   ],
-   "actualizado": "2026-08-05T09:15:09+00:00"
   }
  ],
  "rssVistos": [
