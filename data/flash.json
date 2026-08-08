@@ -1,7 +1,63 @@
 {
  "lastId": 34189,
- "actualizado": "2026-08-07T23:28:45.460Z",
+ "actualizado": "2026-08-08T07:16:51.635Z",
  "items": [
+  {
+   "id": "941792491",
+   "fecha": "2026-08-08T05:21:12.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/ukraine-russia-war-fire-point-drones.html",
+   "via": "CNBC",
+   "original": "Inside the startup drone maker powering Ukraine&apos;s deep-strike campaign",
+   "titulo": "Fabricante de drones ucraniano revoluciona ataques de largo alcance contra Rusia",
+   "resumen": "CNBC accede al interior de una startup productora de drones que impulsa la campaña de ataques en profundidad de Ucrania. El titular no especifica el nombre de la empresa, financiamiento, valuación o impacto militar concreto. Contexto: el sector de defensa y tecnología militar atrae capital de riesgo significativo en mercados occidentales.",
+   "analisis": {
+    "porque": "Afecta percepciones sobre conflicto geopolítico, financiamiento de defensa, y valuaciones de empresas de tecnología militar. Influye en sentimiento hacia acciones de defensa, sanciones a Rusia y flujos de capital hacia startups de dual-use technology.",
+    "queOcurrio": "CNBC reporta acceso a una startup de drones ucranianos involucrada en operaciones militares de largo alcance. No hay confirmación de identidad, métricas financieras o impacto militar específico.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Índices Defensa",
+    "Rendimientos USA",
+    "DXY",
+    "EURUSD"
+   ],
+   "sesgos": [
+    {
+     "activo": "Acciones de Defensa",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "EURUSD",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "Ucrania",
+    "drones",
+    "defensa",
+    "startup",
+    "tecnología militar",
+    "conflicto Rusia"
+   ],
+   "tgText": "📰 CNBC: startup ucraniana de drones impulsa ataques en profundidad contra Rusia. Refleja atracción de capital hacia tech de defensa en Occidente. Afecta sentimiento de mercados de defensa y dinámicas geopolíticas.",
+   "xText": "🇺🇦 Startup de drones ucraniana revoluciona estrategia de largo alcance. CNBC accede a operaciones. Implicaciones para valuaciones de defensa y flujos de capital en Occidente. #Geopolítica",
+   "discordText": "**Ucrania: Startup de Drones en Operaciones de Largo Alcance**\n• CNBC accede al interior de fabricante de drones ucraniano\n• Impulsa campaña de ataques en profundidad\n• Impacto: percepción de riesgo geopolítico, financiamiento de defensa",
+   "pushText": "Startup ucraniana de drones revoluciona ataques militares de largo alcance",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones de defensa occidentales (Lockheed Martin, Raytheon) suben por percepción de demanda sostenida; EURUSD cae por riesgo geopolítico elevado",
+    "despues": "Bonos alemanes podrían caer; rendimientos USA pueden subir si mercados reprician inflación de gastos de defensa",
+    "escenarios": "Traders monitorean: (1) escalada geopolítica que justifique presupuestos de defensa; (2) regulación de exportaciones de tecnología; (3) si startup obtiene financiamiento público/privado occidental",
+    "riesgos": "El titular no da identidad de la empresa ni métricas; riesgo de que sea confirmación de capacidades conocidas sin novedad de mercado real. Geopolítica es volátil; noticias pueden ser desmentidas o contextualizadas diferente."
+   },
+   "macro": null,
+   "updates": []
+  },
   {
    "id": 914267562,
    "fecha": "2026-08-07T20:22:17.000Z",
@@ -7679,75 +7735,9 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 915932359,
-   "fecha": "2026-08-05T01:26:27.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html",
-   "via": "CNBC",
-   "original": "U.S. says Strait of Hormuz is &apos;free and open&apos; as Bessent says deal with Iran is close",
-   "titulo": "EEUU: Estrecho de Ormuz 'abierto y libre'; Tesorero Bessent confirma acuerdo Iran cercano",
-   "resumen": "Gobierno USA reitera que Estrecho de Ormuz permanece 'libre y abierto'. Tesorero Bessent confirma que un acuerdo nuclear con Irán está próximo, señal de desescalada geopolítica en zona crítica de energía global.",
-   "analisis": {
-    "porque": "Confirmación de desescalada Irán abre posibilidad de alivio en premios de riesgo de petróleo, tasas de interés y spread de spreads soberano de Medio Oriente",
-    "queOcurrio": "USA reafirma posición sobre libre tránsito en Ormuz; Tesorero reconoce proximidad de acuerdo nuclear con Irán",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Petróleo",
-    "Oro",
-    "Bonos",
-    "DXY",
-    "Mercados emergentes Golfo"
-   ],
-   "sesgos": [
-    {
-     "activo": "Petróleo",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Oro",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "iran-acuerdo",
-    "ormuz-abierto",
-    "desescalada",
-    "petroleo"
-   ],
-   "tgText": "🛢️ USA confirma Ormuz 'abierto'. Tesorero Bessent: acuerdo Irán cercano. Desescalada reduce prima geopolítica en petróleo. Alivio potencial en energía global.",
-   "xText": "USA reafirma Ormuz 'abierto y libre'; Bessent confirma acuerdo Irán próximo. Desescalada reduce prima geopolítica. Presión en petróleo, alivio en renta fija. $CL_F",
-   "discordText": "**Desescalada Irán: Confirmación USA**\n• Ormuz permanece 'abierto y libre'\n• Tesorero Bessent: acuerdo nuclear cercano\n• Reduce prima de riesgo geopolítico en petróleo",
-   "pushText": "Bessent confirma acuerdo Irán cercano; Ormuz abierto",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "Petróleo cede presión (WTI/Brent descargan prima geopolítica); Oro retrocede (menos risk-off); Bonos pueden subir (tasas bajan si confianza aumenta)",
-    "despues": "Spreads soberano Golfo se contraen; mercados emergentes responden positivamente; DXY podría presionarse (renta fija competitiva reduce demanda USD",
-    "escenarios": "Traders vigilan: (1) velocidad de firma del acuerdo, (2) si incluye levantamiento de sanciones (impact en supplies), (3) comunicados de Irán que confirmen o desmienta, (4) reacción de Israel",
-    "riesgos": "Acuerdo aún está 'cercano' no cerrado; riesgo de colapso en negociaciones; escalada podría revertir rápidamente si declaraciones posteriores son hostile"
-   },
-   "macro": {
-    "dolar": "bajista (menos risk-off)",
-    "oro": "bajista (menos demanda safe-haven)",
-    "nasdaq": "neutral",
-    "dow": "alcista (desescalada)",
-    "sp500": "alcista (alivio prima riesgo)",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "alcistas (tasas bajan)",
-    "petroleo": "bajista (descarga prima geopolítica)"
-   },
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/27/seattle-shooting-leaves-two-dead-five-injured.html",
   "https://www.cnbc.com/2026/07/27/goldman-sachs-asian-currencies-ai-boom-.html",
   "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html",
   "https://www.cnbc.com/select/smart-ways-to-chip-away-at-student-loan-balance/",
@@ -8046,6 +8036,7 @@
   "https://www.cnbc.com/2026/08/07/whatnot-live-shopping-valuation-20-billion.html",
   "https://www.cnbc.com/2026/08/07/business-business-premium-fares.html",
   "https://www.cnbc.com/2026/08/07/martin-heinrich-tax-breaks-overseas-oil-production.html",
-  "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html"
+  "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html",
+  "https://www.cnbc.com/2026/08/08/ukraine-russia-war-fire-point-drones.html"
  ]
 }
