@@ -1,7 +1,72 @@
 {
  "lastId": 34189,
- "actualizado": "2026-08-08T07:16:51.635Z",
+ "actualizado": "2026-08-08T09:01:37.965Z",
  "items": [
+  {
+   "id": "985147746",
+   "fecha": "2026-08-08T08:48:40.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/us-senate-passes-short-term-funding-bill-to-avert-federal-shutdown.html",
+   "via": "CNBC",
+   "original": "U.S. Senate passes short-term funding bill to avert federal shutdown before election",
+   "titulo": "Senado EE.UU. aprueba proyecto de financiamiento temporal para evitar cierre federal",
+   "resumen": "El Senado estadounidense aprobó un proyecto de ley de financiamiento a corto plazo que evita el cierre parcial del gobierno federal antes de las elecciones. El titular no especifica los detalles de la medida ni su duración exacta. Esta acción reduce riesgo de volatilidad fiscal inmediata y permite continuidad de operaciones gubernamentales críticas durante período electoral.",
+   "analisis": {
+    "porque": "El cierre federal genera volatilidad en mercados, afecta confianza institucional y puede impactar negociaciones políticas clave. Su evitación reduce incertidumbre fiscal de corto plazo.",
+    "queOcurrio": "Senado aprobó proyecto de financiamiento temporal que previene cierre del gobierno antes de elecciones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P500",
+    "DXY",
+    "Bonos",
+    "Rendimientos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos",
+     "sesgo": "neutral"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Emergencia",
+   "keywords": [
+    "cierre-federal",
+    "financiamiento",
+    "senado-usa",
+    "riesgo-fiscal",
+    "elecciones"
+   ],
+   "tgText": "📊 Senado aprueba financiamiento temporal evitando cierre federal antes de elecciones. Reduce riesgo de volatilidad fiscal inmediata. Mercados responden con estabilidad.",
+   "xText": "🇺🇸 Senado EE.UU. aprueba proyecto temporal que evita cierre federal antes de elecciones. Decisión reduce incertidumbre fiscal de corto plazo.",
+   "discordText": "**Senado aprueba financiamiento temporal**\n• Evita cierre federal antes de elecciones\n• Reduce volatilidad fiscal inmediata\n• Impacto: medio en mercados",
+   "pushText": "Senado aprueba financiamiento temporal; cierre federal evitado",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "S&P500 y bonos del Tesoro: reducen prima de riesgo fiscal, favoreciendo renta variable",
+    "despues": "Dólar (DXY) podría debilitarse si mercados interpretan menor presión política para apretamiento fiscal",
+    "escenarios": "Traders monitorizan: (1) renovación/extensión de medidas antes del vencimiento; (2) cambios políticos post-elección; (3) impacto en límite de deuda federal próximos meses",
+    "riesgos": "El titular no especifica duración exacta o monto. Nueva votación podría generar volatilidad si hay desacuerdo futuro. Riesgo político elevado en año electoral."
+   },
+   "macro": {
+    "dolar": "neutral-bajista si se interpreta menor riesgo fiscal",
+    "oro": "neutral",
+    "nasdaq": "alcista-neutral",
+    "dow": "alcista-neutral",
+    "sp500": "alcista-neutral",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "alcista (menores spreads de riesgo)",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
   {
    "id": "941792491",
    "fecha": "2026-08-08T05:21:12.000Z",
@@ -7675,70 +7740,9 @@
    },
    "macro": null,
    "updates": []
-  },
-  {
-   "id": 944558996,
-   "fecha": "2026-08-05T01:27:06.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/05/softbank-samsung-sk-hynix-samsung-tech-rally.html",
-   "via": "CNBC",
-   "original": "SoftBank jumps 10% as Asia tech stocks track Wall Street AI rally",
-   "titulo": "SoftBank salta 10% en rally de tech asiático tras euphoria IA de Wall Street",
-   "resumen": "SoftBank se aprecia 10% en sesión, liderando repunte de tech asiático tras massive rally impulsado por IA en Wall Street. El movimiento refleja sincronización de apetito de riesgo global hacia mega-caps tech y su exposición a ecosistema de IA.",
-   "analisis": {
-    "porque": "SoftBank es proxy clave de riesgo tech/IA en Asia; movimiento de 10% marca confianza en valuaciones tech y flujos globales de capital hacia mercados emergentes asiáticos",
-    "queOcurrio": "Bolsa de Tokyo refleja rally nocturno de Wall Street en acciones IA; SoftBank aprecia 10% en contexto de euphoria global por tech stocks",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Nikkei",
-    "SoftBank",
-    "NASDAQ",
-    "Tech asiático",
-    "JPY"
-   ],
-   "sesgos": [
-    {
-     "activo": "SoftBank",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nikkei",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Empresas",
-   "keywords": [
-    "softbank",
-    "rally-ia",
-    "asia-tech",
-    "wall-street",
-    "nikkei"
-   ],
-   "tgText": "📈 SoftBank +10% en rally asiático. Tech Tokyo sincroniza euphoria IA de Wall Street. Mega-caps refuerzan posiciones en ecosistema IA global. Apetito de riesgo en verde.",
-   "xText": "SoftBank +10% liderando rally asiático tras euphoria IA nocturna en Wall Street. Tech sincronización global. $9984.T #TokyoMarkets",
-   "discordText": "**SoftBank: +10% en rally tech asiático**\n• Sincronización con euphoria IA nocturna (Wall Street)\n• Nikkei refleja appetite de riesgo global\n• Mega-caps asiáticos en movimiento alcista",
-   "pushText": "SoftBank +10%; rally asiático sincroniza con euphoria IA global",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "SoftBank directamente (+10%); Nikkei fuerte; JPY podría presionarse (carry-trade risk-on)",
-    "despues": "Otros mega-caps asiáticos (TSMC, Samsung); NASDAQ mantiene momentum; bonos pueden perder atractivo en contexto risk-on",
-    "escenarios": "Traders vigilan: (1) sostenibilidad del rally nocturno de Wall Street, (2) si es rotación o expansión de valuaciones, (3) impacto en JPY si risk-on persiste, (4) crecimiento de posiciones carry-trade",
-    "riesgos": "Rally podría ser efímero si datos macro USA decepcionan; contagio de volatilidad si Wall Street revierte"
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/27/goldman-sachs-asian-currencies-ai-boom-.html",
   "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html",
   "https://www.cnbc.com/select/smart-ways-to-chip-away-at-student-loan-balance/",
   "https://www.cnbc.com/2026/07/27/trump-says-us-has-sold-more-than-13-billion-of-venezuela-oil-.html",
@@ -8037,6 +8041,7 @@
   "https://www.cnbc.com/2026/08/07/business-business-premium-fares.html",
   "https://www.cnbc.com/2026/08/07/martin-heinrich-tax-breaks-overseas-oil-production.html",
   "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html",
-  "https://www.cnbc.com/2026/08/08/ukraine-russia-war-fire-point-drones.html"
+  "https://www.cnbc.com/2026/08/08/ukraine-russia-war-fire-point-drones.html",
+  "https://www.cnbc.com/2026/08/08/us-senate-passes-short-term-funding-bill-to-avert-federal-shutdown.html"
  ]
 }
