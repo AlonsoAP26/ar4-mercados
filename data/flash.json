@@ -1,7 +1,76 @@
 {
- "lastId": 34190,
- "actualizado": "2026-08-08T13:27:43.133Z",
+ "lastId": 34191,
+ "actualizado": "2026-08-08T14:50:27.182Z",
  "items": [
+  {
+   "id": "34191",
+   "fecha": "2026-08-08T14:41:38+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34191",
+   "via": "DeItaone",
+   "original": "IRANIAN PRESIDENT PEZESHKIAN SAYS NOW IS THE BEST TIME FOR AN AGREEMENT BECAUSE IRAN IS 'STRONG AND UNITED AND SEEN AS VICTORIOUS IN WAR' - IRANIAN MEDIA",
+   "titulo": "Irán reafirma postura negociadora; dice estar \"fuerte y unido\" para acuerdo",
+   "resumen": "El presidente iraní Pezeshkian declaró que el presente es el mejor momento para un acuerdo porque Irán se encuentra \"fuerte, unido y percibido como victorioso en la guerra\". La declaración, difundida por medios iraníes, refuerza la narrativa de Teherán sobre negociaciones en curso. El titular no especifica avances concretos ni respuesta oficial de EE.UU.",
+   "analisis": {
+    "porque": "Las negociaciones sobre Irán impactan directamente los precios del petróleo, el riesgo geopolítico y los rendimientos de bonos. Una resolución reduciría volatilidad en Oriente Medio; un colapso la aumentaría. Los mercados monitorean señales de ambos bandos para calibrar exposición de riesgo.",
+    "queOcurrio": "Declaración del presidente iraní sobre disposición negociadora, presentando a Irán en posición de fortaleza. Es continuación de reportes previos sobre proximidad de acuerdo sobre Estrecho de Ormuz.",
+    "estado": "rumor",
+    "fuenteOriginal": "Medios iraníes (FARS)"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Petróleo WTI",
+    "Petróleo Brent",
+    "DXY",
+    "Oro",
+    "VIX",
+    "Bonos USA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Petróleo Brent",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Petróleo WTI",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Oro",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Geopolítica",
+   "keywords": [
+    "iran-acuerdo",
+    "oriente-medio",
+    "petroleo",
+    "negociaciones",
+    "pezeshkian"
+   ],
+   "tgText": "🇮🇷 Irán afirma estar en mejor posición para negociar acuerdo. Pezeshkian dice que Irán está \"fuerte y unido\". Mercados del petróleo pendientes de confirmación oficial.",
+   "xText": "🇮🇷 Presidente iraní Pezeshkian: ahora es el mejor momento para un acuerdo porque Irán está \"fuerte, unido y victorioso en guerra\". Mercados atentos a negociaciones sobre Estrecho de Ormuz.",
+   "discordText": "**Irán reafirma disposición negociadora**\n• Pezeshkian: mejor momento para acuerdo\n• Irán se presenta como \"fuerte y unido\"\n• Impacto: petróleo y riesgo geopolítico",
+   "pushText": "Irán dice estar listo para acuerdo; petróleo pendiente de confirmación",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Petróleo Brent y WTI reaccionan primero a señales de negociación. Si la declaración se percibe como constructiva, tienden a bajar por menor riesgo de interrupciones. Si genera escepticismo, pueden subir.",
+    "despues": "Oro (activo de refugio), DXY (dólar), y spreads de bonos soberanos emergentes. VIX podría contraerse si se interpreta como reducción de riesgo geopolítico.",
+    "escenarios": "Traders vigilan: (1) respuesta oficial de Washington, (2) comunicados de mediadores (Oman, Qatar), (3) movimientos de posiciones en futuros de petróleo que adelantan expectativas, (4) volatilidad en pares EURUSD y GBPUSD como indicador de riesgo general.",
+    "riesgos": "Fuente es medios iraníes, no verificado por terceros. Historial de declaraciones de Teherán sin seguimiento. Riesgo de interpretación errónea sobre solidez del acuerdo. Posibles anuncios sorpresivos de Washington que reviertan expectativas."
+   },
+   "macro": {
+    "petroleo": "Presión bajista por expectativa de acuerdo, pero débil sin confirmación oficial",
+    "oro": "Sesgo bajista por reducción de prima de riesgo geopolítico",
+    "dolar": "Neutral a ligeramente bajista si mercados reducen demanda defensiva"
+   },
+   "updates": []
+  },
   {
    "id": "34190",
    "fecha": "2026-08-08T13:20:58+00:00",
@@ -7668,72 +7737,6 @@
     "bonos": "neutral",
     "petroleo": null
    },
-   "updates": []
-  },
-  {
-   "id": "34021",
-   "fecha": "2026-08-05T09:24:49+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34021",
-   "via": "DeItaone",
-   "original": "MORGAN STANLEY SEES DATA CENTERS DRIVING CONSTRUCTION Morgan Stanley said data centers and infrastructure remain the strongest construction end markets, based on AI analysis of 28 companies' Q2 earnings calls. U.S. non-residential construction and repair activity stayed resilient, while residential markets weakened, particularly in the U.S. Most companies maintained guidance despite cost pressures",
-   "titulo": "Morgan Stanley: centros datos lideran construcción global; favorece Saint-Gobain, Kingspan",
-   "resumen": "Morgan Stanley identifica centros de datos como motor principal de construcción post-Q2 earnings (análisis 28 empresas). Construcción no-residencial USA resiliente; mercados residenciales debilitados. Mayoría mantiene guidance pese presiones costos. Favorece Saint-Gobain, Kingspan, Rockwool, Heidelberg Materials, Belimo; cauteloso en Nibe, Ariston, Geberit, Wienerberger.",
-   "analisis": {
-    "porque": "Validación de mega-trend IA/data center infrastructure que reshape mercados construcción global; confirma rotación capital hacia cloud/infraestructura vs vivienda; selección de picks/pans guía reallocación sectorial",
-    "queOcurrio": "Morgan Stanley analiza earnings calls y sistematiza que data centers dominan capital allocation en construcción; sector no-residencial resiliente vs residencial débil",
-    "estado": "confirmado",
-    "fuenteOriginal": "Morgan Stanley Research/Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "Saint-Gobain",
-    "Kingspan",
-    "Rockwool",
-    "Heidelberg Materials",
-    "Belimo",
-    "Construcción EU",
-    "Índices Europa"
-   ],
-   "sesgos": [
-    {
-     "activo": "Data Center Constructoras",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Vivienda",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Saint-Gobain/Kingspan",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "Nibe/Ariston/Geberit",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "data-centers",
-    "construccion-global",
-    "earnings-analysis",
-    "capital-allocation",
-    "infraestructura-IA"
-   ],
-   "tgText": "🏗️ Morgan Stanley: centros datos lideran construcción global post-earnings. Favorece Saint-Gobain, Kingspan, Rockwool. Cauteloso Nibe, Ariston, Geberit. Vivienda débil.",
-   "xText": "Morgan Stanley: Centros datos dominan construcción post-Q2. Alcista: Saint-Gobain, Kingspan, Belimo. Bajista: Nibe, Ariston, Geberit. Vivienda USA presionada.",
-   "discordText": "**Construcción | Morgan Stanley Data Center Thesis**\n📊 28 empresas earnings analysis\n✅ Favorece: Saint-Gobain, Kingspan, Rockwool, Heidelberg, Belimo\n❌ Cauteloso: Nibe, Ariston, Geberit, Wienerberger\n📉 Vivienda débil; no-residencial resiliente",
-   "pushText": "Morgan Stanley: Datos centros lideran construcción global; selecciona picks y pans europeos",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Saint-Gobain, Kingspan: presión alcista intraday si mercado valida MS thesis (materiales construcción/vidrio para data center infrastructure); sell-off en vivienda stocks",
-    "despues": "Índices construcción Europa (DAX, CAC construcción sector); rendimientos bonos corporativos constructoras (spread compression alcista en picks)",
-    "escenarios": "Traders monitorean: (1) Si picks de MS outperform vs índice sector en próximos 20d; (2) Ciclo CAPEX data center sustainability 2026-27 (risk: correction si AI investment slows); (3) Cost inflation persistence en construcción (afecta márgenes picks)",
-    "riesgos": "Análisis es retrospectivo (Q2 calls) no predictivo; riesgo de reversion si data center build completado in 2026 vs drawn-out 2027-28; picks pueden ser crowded trades post-MS call"
-   },
-   "macro": null,
    "updates": []
   }
  ],
