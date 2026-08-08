@@ -1,7 +1,284 @@
 {
  "lastId": 34189,
- "actualizado": "2026-08-08T09:01:37.965Z",
+ "actualizado": "2026-08-08T12:17:05.391Z",
  "items": [
+  {
+   "id": "934535904",
+   "fecha": "2026-08-08T12:04:15.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/space-debris-junk-spacex-rocket-moon-crash.html",
+   "via": "CNBC",
+   "original": "How cleaning up space debris could grow to become a big business",
+   "titulo": "Otis quiere ser un defensivo en mercados volátiles pero aún debe probarlo",
+   "resumen": "Análisis sobre posicionamiento de Otis Worldwide (ascensores/escaleras mecánicas) como valor defensivo ante volatilidad de mercado. Nota escepticismo sobre capacidad de resistencia en recesión.",
+   "analisis": {
+    "porque": "Afecta evaluación de defensivos en cartera; relevante para inversores buscando estabilidad en volatilidad; cuestiona narrativa de 'defensive trade'",
+    "queOcurrio": "Otis presenta narrativa defensiva; analistas dudan de validez basado en histórico o fundamentales",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Otis (OTIS)",
+    "Defensivos",
+    "Construcción/Infraestructura"
+   ],
+   "sesgos": [
+    {
+     "activo": "Otis",
+     "sesgo": "neutral a bajista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "otis-worldwide",
+    "defensivos",
+    "volatilidad",
+    "construcción",
+    "análisis-fundamental"
+   ],
+   "tgText": "Otis posiciona como defensivo ante volatilidad, pero analistas cuestionan su solidez. Relevancia para estrategias defensivas en cartera.",
+   "xText": "Otis plantea narrativa defensiva en volatilidad, aunque analistas dudan de su resiliencia. Implicaciones para selección de defensivos.",
+   "discordText": "**Otis: ¿Defensivo real o narrativa?**\n• Posicionamiento defensivo cuestionado\n• Duda sobre resiliencia en recesión\n• Impacto selectivo en defensivos",
+   "pushText": "Otis aspira a defensivo pero analistas son escépticos",
+   "importancia": 4,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "989660589",
+   "fecha": "2026-08-08T12:00:01.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/hugging-face-ai-hack-cybersecurity-black-hat.html",
+   "via": "CNBC",
+   "original": "Hugging Face hack marks start of dangerous AI cyber era and many firms &apos;don&apos;t even know it&apos;",
+   "titulo": "Hack a Hugging Face marca el inicio de una era cibernética peligrosa en IA; firmas ignorantes del riesgo",
+   "resumen": "Incidente de ciberseguridad en Hugging Face (plataforma de modelos de IA) es interpretado como señal de vulnerabilidad sistémica en ecosistema IA. Titular sugiere que muchas empresas no están preparadas para riesgos cibernéticos emergentes en IA.",
+   "analisis": {
+    "porque": "Impacta confianza en infraestructura IA; relevante para inversión en ciberseguridad, regulación de IA, seguros cyber; posible revaluación de riesgos en carteras tech/IA",
+    "queOcurrio": "Breach de seguridad en Hugging Face; análisis sugiere falta de preparación sectorial ante riesgos cyber en IA",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Ciberseguridad",
+    "Tech/IA",
+    "Seguros Cyber",
+    "Cloud",
+    "Confianza en IA"
+   ],
+   "sesgos": [
+    {
+     "activo": "Ciberseguridad (CRWD, CrowdStrike, etc.)",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Plataformas IA abiertas",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Cloud (AWS, Azure, GCP)",
+     "sesgo": "neutral a bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Emergencia",
+   "keywords": [
+    "hugging-face-hack",
+    "ciberseguridad-ia",
+    "vulnerabilidad",
+    "breach",
+    "riesgo-sistémico",
+    "inteligencia-artificial"
+   ],
+   "tgText": "Hack a Hugging Face evidencia vulnerabilidades en seguridad de IA. Muchas empresas no están preparadas para riesgos cyber emergentes; beneficia acciones de ciberseguridad.",
+   "xText": "Breach en Hugging Face señala era peligrosa de ciberseguridad en IA. Muchas firmas desprevenidas ante riesgos emergentes. Implicaciones para confianza en ecosistema IA.",
+   "discordText": "**Ciberseguridad en IA: Hugging Face breached**\n• Vulnerabilidad sistémica en plataformas IA\n• Falta de preparación empresarial\n• Beneficiarios: acciones ciberseguridad",
+   "pushText": "Hack a Hugging Face: alerta de riesgos cyber en IA",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones ciberseguridad (CRWD, PALO, OKTA, etc.) alcista; Hugging Face (si cotiza) y plataformas IA abiertas bajista",
+    "despues": "Cloud públicos (AMZN, MSFT, GOOGL) si hay preocupación de seguridad; seguros cyber; regulación de IA",
+    "escenarios": "Traders vigilan: (1) Alcance real del breach; (2) Reacciones regulatorias; (3) Adopción de soluciones ciberseguridad; (4) Costo de remediación; (5) Confianza en IA open-source",
+    "riesgos": "Titular es interpretativo ('marca el inicio'); no está claro alcance exacto del hack; potencial para amplificación de FUD en medios"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "991498295",
+   "fecha": "2026-08-08T11:55:25.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/ai-and-job-losses-how-the-next-automation-wave-will-impact-the-workforce.html",
+   "via": "CNBC",
+   "original": "AI and job losses: How the next automation wave will impact the workforce",
+   "titulo": "IA y desempleo: cómo la próxima ola de automatización impactará el mercado laboral",
+   "resumen": "Análisis sobre el impacto de la inteligencia artificial en el empleo. El titular no proporciona datos cuantitativos específicos, proyecciones de pérdidas laborales ni sectores particulares afectados; es descripción temática general.",
+   "analisis": {
+    "porque": "Relevancia estratégica para política monetaria (Fed), inversión en educación/retraining, volatilidad en acciones tech vs. defensa; influye en narrativa de desigualdad y gasto público",
+    "queOcurrio": "Artículo editorial/análisis sobre relación entre IA y desempleo futuro",
+    "estado": "no-verificable",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Tech/IA",
+    "Educación",
+    "Defensa",
+    "Mercado Laboral",
+    "Fed Policy"
+   ],
+   "sesgos": [
+    {
+     "activo": "Tech (software/IA)",
+     "sesgo": "bajista"
+    },
+    {
+     "activo": "Educación/Retraining",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empleo",
+   "keywords": [
+    "ia-empleo",
+    "automatización",
+    "desempleo",
+    "mercado-laboral",
+    "transformación-digital",
+    "retraining"
+   ],
+   "tgText": "Análisis sobre impacto de IA en empleo. Relevante para política Fed, salarios y narrativa de desigualdad. Sin cifras concretas en el titular.",
+   "xText": "CNBC analiza cómo la próxima ola de IA impactará el mercado laboral. Implicaciones para política monetaria, retraining y desigualdad económica.",
+   "discordText": "**IA y empleo: La próxima onda de automatización**\n• Impacto estructural en mercado laboral\n• Relevancia para política monetaria Fed\n• Mercados vigilan desempleo sectorial",
+   "pushText": "Análisis: IA y desempleo, la próxima ola de automatización",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones tech/IA (posible sesgo bajista si se cubre disruption) vs. defensa (sesgo alcista); bonos USA (si hay presión por gasto en retraining)",
+    "despues": "Salarios reales; narrativa de desigualdad y gasto fiscal; forex (USD si aumenta esperanza de intervención fiscal)",
+    "escenarios": "Traders vigilan: (1) Próximos reportes de empleo sectorial; (2) Niveles de desempleo desagregado; (3) Presión política para gasto en educación; (4) Revalúa de acciones tech si se percibe riesgo de regulación",
+    "riesgos": "Es análisis sin datos nuevos; el impacto real depende de implementación y timeline (años); potencial sesgo ideológico del reportaje"
+   },
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "921047389",
+   "fecha": "2026-08-08T11:51:08.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/formula-one-is-lagging-other-sport-stocks-why-analysts-think-its-poised-to-race-ahead.html",
+   "via": "CNBC",
+   "original": "Formula One is lagging other sport stocks. Why analysts think it&apos;s poised to race ahead",
+   "titulo": "Fórmula 1 rezaga otros deportes en bolsa; analistas ven potencial para acelerar",
+   "resumen": "Análisis sobre desempeño relativo de acciones de Fórmula 1 comparado con otros deportes cotizados. Analistas anticipan mejor rendimiento futuro. El titular no especifica drivers de recuperación esperada ni horizontes temporales.",
+   "analisis": {
+    "porque": "Relevancia sectorial limitada; afecta carteras de entretenimiento/media y apuestas deportivas; posible señal de revaluación en deportes como clase de activos",
+    "queOcurrio": "Acciones de F1 registran underperformance vs. pares deportivos; consensus alcista de analistas",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "bajo",
+   "breaking": false,
+   "activos": [
+    "Formula 1 (Liberty Media)",
+    "Entretenimiento/Media",
+    "Apuestas Deportivas"
+   ],
+   "sesgos": [
+    {
+     "activo": "Formula 1",
+     "sesgo": "alcista"
+    }
+   ],
+   "volatilidad": "baja",
+   "categoria": "Empresas",
+   "keywords": [
+    "formula-1",
+    "liberty-media",
+    "deportes-cotizados",
+    "entretenimiento",
+    "revaluación"
+   ],
+   "tgText": "Análisis: F1 rezaga otros deportes en bolsa pero analistas ven potencial de recuperación. Relevancia limitada para mercados amplios.",
+   "xText": "F1 underperforma vs. otros deportes cotizados, pero analistas proyectan aceleración. Implicaciones para entretenimiento y apuestas deportivas.",
+   "discordText": "**Fórmula 1: Rezago con potencial**\n• Underperformance vs. pares deportivos\n• Consenso alcista de analistas\n• Impacto limitado en mercados amplios",
+   "pushText": "F1 rezaga pero analistas ven potencial de recuperación",
+   "importancia": 4,
+   "reaccion": null,
+   "macro": null,
+   "updates": []
+  },
+  {
+   "id": "34185",
+   "fecha": "2026-08-07T16:02:12+00:00",
+   "tgUrl": "https://t.me/walterbloomberg/34185",
+   "via": "DeItaone",
+   "original": "OPTIONS TRADERS RAMP UP BULLISH BETS Traders are piling into bullish options as market optimism strengthens. Cboe’s skew measure fell Friday to its lowest level since December 2024. A lower skew indicates call options are becoming more expensive relative to puts, signaling increased demand for bets on further market gains.",
+   "titulo": "Traders apuestan fuerte por ganancias: índice de sesgo de opciones cae a mínimos de 8 meses",
+   "resumen": "Operadores de opciones intensifican posiciones alcistas a medida que el optimismo de mercado se fortalece. El indicador Skew del Cboe cayó el viernes a su nivel más bajo desde diciembre de 2024, señalando que las opciones de compra (call) se encarecen respecto a las de venta (put), revelando demanda creciente de apuestas alcistas.",
+   "analisis": {
+    "porque": "El sesgo de opciones es un indicador adelantado de sentimiento. Cuando cae significa que los traders están pagando más por protección alcista y menos por cobertura bajista, anticipando ganancias. Puede indicar tope cercano de mercado si es extremo.",
+    "queOcurrio": "El skew Cboe descendió a niveles no vistos en 8 meses, mostrando concentración de apuestas alcistas en el mercado de opciones.",
+    "estado": "confirmado",
+    "fuenteOriginal": "Bloomberg"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "S&P 500",
+    "NASDAQ",
+    "VIX"
+   ],
+   "sesgos": [
+    {
+     "activo": "S&P 500",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "NASDAQ",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "VIX",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Datos Económicos|Breaking News",
+   "keywords": [
+    "opciones",
+    "skew",
+    "sesgo",
+    "volatilidad",
+    "Cboe",
+    "call",
+    "put",
+    "sentimiento"
+   ],
+   "tgText": "📊 Sesgo de opciones al mínimo: traders apilan apuestas alcistas. Cboe Skew cae a nivel Dec 2024. Calls más caras que puts = optimismo extremo.",
+   "xText": "Operadores de opciones se vuelcan a apuestas alcistas: Cboe Skew al mínimo en 8 meses. Calls más caras que puts. Sentimiento alcista extremo en mercado. #Trading",
+   "discordText": "**Traders disparan apuestas alcistas en opciones**\n- Cboe Skew cae a mínimos desde diciembre 2024\n- Calls más caras que puts = demanda alcista intensa\n- Indicador adelantado de sentimiento extremo",
+   "pushText": "Traders apilan apuestas alcistas: sesgo de opciones al mínimo",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "S&P 500 y NASDAQ (en dirección alcista, pero sesgo extremo advierte tope cercano). VIX baja (volatilidad reprimida).",
+    "despues": "Si hay corrección, quienes cubrieron con puts ganarán. Potencial para volatilidad sorpresiva si el mercado se revierte.",
+    "escenarios": "Traders vigilan si este extremo es tope de rally. Buscarán divergencias: si precio sigue subiendo pero skew no cae más, señal de debilitamiento. Vigilancia sobre qué activa el reversal (inflación, Fed, geopolítica).",
+    "riesgos": "Extremo de sesgo no es predictor de crash inminente, pero sí señal de poco margen de seguridad alcista. Un shock exógeno (Ormuz, inflación) podría pivotar masivamente hacia puts. Riesgo de volatilidad comprimida."
+   },
+   "macro": null,
+   "updates": [
+    {
+     "fecha": "2026-08-08T11:49:22.000Z",
+     "id": "901386950",
+     "texto": "Semana récord en volumen de opciones apalancó el alza del S&P 500, mientras el índice de volatilidad VIX se acerca a mínimos anuales. El titular no especifica magnitudes exactas ni qué subyacentes lideraron la actividad de opciones.",
+     "tgUrl": "https://www.cnbc.com/2026/08/08/record-breaking-week-for-options-powers-sp-500-surge.html"
+    }
+   ],
+   "actualizado": "2026-08-08T11:49:22.000Z"
+  },
   {
    "id": "985147746",
    "fecha": "2026-08-08T08:48:40.000Z",
@@ -63,6 +340,79 @@
     "bitcoin": "neutral",
     "ethereum": "neutral",
     "bonos": "alcista (menores spreads de riesgo)",
+    "petroleo": "neutral"
+   },
+   "updates": []
+  },
+  {
+   "id": "940163239",
+   "fecha": "2026-08-08T06:28:46.000Z",
+   "tgUrl": "https://www.cnbc.com/2026/08/08/trump-admin-to-invest-3-billion-in-defense-linked-minerals-projects.html",
+   "via": "CNBC",
+   "original": "Trump administration to invest $3 billion in minerals projects to boost U.S. defense supply chains",
+   "titulo": "Trump inyecta $3B en minerales estratégicos para reforzar cadenas de defensa EE.UU.",
+   "resumen": "La administración Trump invertirá $3 mil millones en proyectos de minerales para fortalecer las cadenas de suministro de defensa estadounidenses. La medida busca reducir dependencia de importaciones críticas de materiales esenciales para tecnología militar y defensa. El titular no especifica sectores minerales concretos ni calendario de ejecución.",
+   "analisis": {
+    "porque": "Impulsa demanda estructural de commodities estratégicos (litio, cobalto, cobre, tungsteno) y favorece empresas mineras domésticas; señala gasto público en defensa/infraestructura con implicaciones inflacionarias",
+    "queOcurrio": "Anuncio de inversión de $3B en proyectos de minerales para cadenas de suministro de defensa",
+    "estado": "confirmado",
+    "fuenteOriginal": "CNBC"
+   },
+   "impacto": "medio",
+   "breaking": false,
+   "activos": [
+    "Minería USA",
+    "Litio",
+    "Cobre",
+    "Cobalto",
+    "Índices Defensa",
+    "USD",
+    "Inflación"
+   ],
+   "sesgos": [
+    {
+     "activo": "Minería USA",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Commodities estratégicos",
+     "sesgo": "alcista"
+    },
+    {
+     "activo": "Bonos USA",
+     "sesgo": "bajista"
+    }
+   ],
+   "volatilidad": "media",
+   "categoria": "Empresas",
+   "keywords": [
+    "inversión-minería",
+    "defensa-usa",
+    "cadena-suministro",
+    "commodities-estratégicos",
+    "trump",
+    "infraestructura"
+   ],
+   "tgText": "Trump invertirá $3B en minerales estratégicos para fortalecer cadenas de suministro de defensa. Favorecería a mineras domésticas y commodities como litio y cobre.",
+   "xText": "Trump anuncia $3B para minerales estratégicos en defensa EE.UU. Minería doméstica y commodities críticos bajo los reflectores. Implicaciones para litio, cobre, cobalto.",
+   "discordText": "**Minería estratégica: Trump invierte $3B en defensa**\n• Fortalecimiento de cadenas de suministro críticas\n• Foco en materiales para tecnología militar\n• Posible sesgo alcista en minería doméstica",
+   "pushText": "Trump asigna $3B a proyectos de minerales para cadenas de defensa",
+   "importancia": 6,
+   "reaccion": {
+    "primero": "Acciones mineras domésticas (US Minerals, similares) y ETFs de minería; USD por gasto público",
+    "despues": "Commodities (litio, cobre spot); rendimientos USA por presiones inflacionarias; bonos si se interpreta como mayor deuda",
+    "escenarios": "Traders vigilan: (1) Cuantificación real del gasto y timeline; (2) Efecto sobre precios de materias primas; (3) Impacto fiscal e inflacionario a medio plazo",
+    "riesgos": "Anuncio sin detalles de implementación; posible retraso o cambio en prioridades; no está claro si es gasto nuevo o redistribución"
+   },
+   "macro": {
+    "dolar": "alcista por gasto público",
+    "oro": "neutral",
+    "nasdaq": "neutral",
+    "dow": "alcista (defensa)",
+    "sp500": "alcista sectorial",
+    "bitcoin": "neutral",
+    "ethereum": "neutral",
+    "bonos": "bajista",
     "petroleo": "neutral"
    },
    "updates": []
@@ -1152,67 +1502,6 @@
    "macro": {
     "nasdaq": "sesgo alcista a corto plazo"
    },
-   "updates": []
-  },
-  {
-   "id": "34185",
-   "fecha": "2026-08-07T16:02:12+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34185",
-   "via": "DeItaone",
-   "original": "OPTIONS TRADERS RAMP UP BULLISH BETS Traders are piling into bullish options as market optimism strengthens. Cboe’s skew measure fell Friday to its lowest level since December 2024. A lower skew indicates call options are becoming more expensive relative to puts, signaling increased demand for bets on further market gains.",
-   "titulo": "Traders apuestan fuerte por ganancias: índice de sesgo de opciones cae a mínimos de 8 meses",
-   "resumen": "Operadores de opciones intensifican posiciones alcistas a medida que el optimismo de mercado se fortalece. El indicador Skew del Cboe cayó el viernes a su nivel más bajo desde diciembre de 2024, señalando que las opciones de compra (call) se encarecen respecto a las de venta (put), revelando demanda creciente de apuestas alcistas.",
-   "analisis": {
-    "porque": "El sesgo de opciones es un indicador adelantado de sentimiento. Cuando cae significa que los traders están pagando más por protección alcista y menos por cobertura bajista, anticipando ganancias. Puede indicar tope cercano de mercado si es extremo.",
-    "queOcurrio": "El skew Cboe descendió a niveles no vistos en 8 meses, mostrando concentración de apuestas alcistas en el mercado de opciones.",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P 500",
-    "NASDAQ",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "VIX",
-     "sesgo": "bajista"
-    }
-   ],
-   "volatilidad": "media",
-   "categoria": "Datos Económicos|Breaking News",
-   "keywords": [
-    "opciones",
-    "skew",
-    "sesgo",
-    "volatilidad",
-    "Cboe",
-    "call",
-    "put",
-    "sentimiento"
-   ],
-   "tgText": "📊 Sesgo de opciones al mínimo: traders apilan apuestas alcistas. Cboe Skew cae a nivel Dec 2024. Calls más caras que puts = optimismo extremo.",
-   "xText": "Operadores de opciones se vuelcan a apuestas alcistas: Cboe Skew al mínimo en 8 meses. Calls más caras que puts. Sentimiento alcista extremo en mercado. #Trading",
-   "discordText": "**Traders disparan apuestas alcistas en opciones**\n- Cboe Skew cae a mínimos desde diciembre 2024\n- Calls más caras que puts = demanda alcista intensa\n- Indicador adelantado de sentimiento extremo",
-   "pushText": "Traders apilan apuestas alcistas: sesgo de opciones al mínimo",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "S&P 500 y NASDAQ (en dirección alcista, pero sesgo extremo advierte tope cercano). VIX baja (volatilidad reprimida).",
-    "despues": "Si hay corrección, quienes cubrieron con puts ganarán. Potencial para volatilidad sorpresiva si el mercado se revierte.",
-    "escenarios": "Traders vigilan si este extremo es tope de rally. Buscarán divergencias: si precio sigue subiendo pero skew no cae más, señal de debilitamiento. Vigilancia sobre qué activa el reversal (inflación, Fed, geopolítica).",
-    "riesgos": "Extremo de sesgo no es predictor de crash inminente, pero sí señal de poco margen de seguridad alcista. Un shock exógeno (Ormuz, inflación) podría pivotar masivamente hacia puts. Riesgo de volatilidad comprimida."
-   },
-   "macro": null,
    "updates": []
   },
   {
@@ -7460,298 +7749,9 @@
     }
    ],
    "actualizado": "2026-08-05T09:15:09+00:00"
-  },
-  {
-   "id": "34014",
-   "fecha": "2026-08-05T08:13:21+00:00",
-   "tgUrl": "https://t.me/walterbloomberg/34014",
-   "via": "DeItaone",
-   "original": "$SPCX - PIPER SANDLER CUTS SPACEX PRICE TARGET Piper Sandler lowered its SpaceX (NASDAQ: SPCX) price target to $140 from $156, while maintaining a Neutral rating. Despite strong first earnings that beat expectations, the firm sees valuation headwinds. Concerns include a 140% increase in tradable shares, higher-than-expected FY27 capex (~$65B), and uncertainty around the durability of AI cloud cont",
-   "titulo": "Piper Sandler baja target SpaceX a $140 por riesgo de valuación y capex superior",
-   "resumen": "Piper Sandler reduce objetivo de precio en SpaceX de $156 a $140, manteniendo rating Neutral. Pese a earnings sólidos, advierte sobre riesgos: aumento 140% en acciones negociables, capex FY27 estimado en ~$65B (superior a expectativas) e incertidumbre sobre durabilidad de contratos cloud IA. Espera presión hasta vencimiento lock-up verano 2027.",
-   "analisis": {
-    "porque": "Disenso analítico inmediato post-earnings; señala dilución accionaria y capex insostenible como frenos a valuación premium; riesgo de corrección en SpaceX post-IPO",
-    "queOcurrio": "Único banco importante que cita 'headwinds valuación' explícitamente; advierte sobre 140% aumento shares tradables (dilución) y capex que cuadriplica expectativas",
-    "estado": "confirmado",
-    "fuenteOriginal": "Bloomberg/Reuters"
-   },
-   "impacto": "alto",
-   "breaking": true,
-   "activos": [
-    "SPCX",
-    "NASDAQ"
-   ],
-   "sesgos": [
-    {
-     "activo": "SPCX",
-     "sesgo": "bajista"
-    },
-    {
-     "activo": "Tech Growth",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "muy alta",
-   "categoria": "Empresas",
-   "keywords": [
-    "SpaceX-IPO",
-    "price-target-cut",
-    "valuation-risk",
-    "capex-warning",
-    "share-dilution"
-   ],
-   "tgText": "⚠️ Piper Sandler baja target SPCX a $140 vs $156. Riesgos: dilución 140%, capex FY27 ~$65B, durabilidad contratos IA. Rating Neutral, espera presión hasta lock-up 2027.",
-   "xText": "Piper Sandler ↓ $SPCX target $140 vs $156 (Neutral). Advertencias: dilución 140% shares, capex $65B superior, incertidumbre contratos IA cloud. Presión hasta 2027.",
-   "discordText": "**SPCX | Piper Sandler Neutral $140 (-$16)**\n⚠️ Riesgos:\n• Dilución accionaria +140%\n• Capex FY27 ~$65B (vs esperado)\n• Durabilidad contratos IA incierta\n• Presión hasta lock-up jun 2027",
-   "pushText": "SPCX: Piper Sandler reduce target a $140, advierte dilución y capex alto",
-   "importancia": 8,
-   "reaccion": {
-    "primero": "SPCX: presión bajista inmediata; crea divergencia visible entre Mizuho ($200) y Piper ($140) que dispara volatilidad y decisiones de cobertura corta; sell-off típico si institucionales reasignan",
-    "despues": "QQQ, S&P 500 si giro es parte de corrección tech más amplia; bonos corporativos SpaceX si yield spread se amplía; acciones satélites competidoras pueden revalorizarse",
-    "escenarios": "Traders monitorean: (1) cuál banco gana disenso (Mizuho vs Piper vs JPM/BofA); (2) velocidad de lock-up y presión de dilución real vs teórica; (3) si capex $65B afecta free cash flow 2027-28; (4) sostenibilidad márgenes IA vs. costo de capital",
-    "riesgos": "Disenso analítico legítimo pero ambos lados tienen razón parcial: earnings sí fueron sólidos (Mizuho) pero dilución/capex son reales (Piper); riesgo que headline de Piper deprime más que fundamentos"
-   },
-   "macro": {
-    "nasdaq": "bajista",
-    "dolar": "neutral",
-    "bonos": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "921182782",
-   "fecha": "2026-08-05T05:27:54.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/05/india-rbi-interest-rate-inflation-iran-war.html",
-   "via": "CNBC",
-   "original": "India&apos;s central bank keeps benchmark rates steady, cites &apos;moderate&apos; core inflation",
-   "titulo": "Banco Central de India mantiene tasas; cita inflación 'moderada' en núcleo",
-   "resumen": "El Reserve Bank of India (RBI) mantuvo su tasa de política monetaria en el último anuncio y citó como justificación una inflación 'moderada' en el núcleo. El titular no especifica la tasa exacta, próximas decisiones, ni forward guidance. Postura dovish relativa respecto a dudas globales.",
-   "analisis": {
-    "porque": "Decisiones de bancos centrales de economías emergentes afectan carry trades, flujos de capital a mercados emergentes, y valoración de divisas locales versus USD.",
-    "queOcurrio": "RBI decidió mantener tasas sin cambios, citando inflación de núcleo moderada como razón.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "INR",
-    "Emergentes",
-    "Bonos India",
-    "DXY"
-   ],
-   "sesgos": [
-    {
-     "activo": "INR",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Emergentes",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Bancos Centrales",
-   "keywords": [
-    "rbi",
-    "india",
-    "politica-monetaria",
-    "tasas",
-    "inflacion"
-   ],
-   "tgText": "🇮🇳 RBI mantiene tasas argumentando inflación 'moderada' en núcleo. Postura dovish relativa en mercados emergentes.",
-   "xText": "India: RBI hold en tasas, citando inflación moderada. Postura dovish para carry trades y flujos emergentes.",
-   "discordText": "**RBI mantiene tasas**\n• Decision: sin cambios\n• Justificación: inflación núcleo moderada\n• Impacto: neutral a alcista para emergentes\n• Vigilan: carry trades INR",
-   "pushText": "RBI mantiene tasas, cita inflación moderada",
-   "importancia": 6,
-   "reaccion": {
-    "primero": "INR reacciona con estabilidad o ligera apreciación; carry trades se sienten apoyados",
-    "despues": "Bonos emergentes y fondos de renta variable India-focus pueden experimentar entrada de capital",
-    "escenarios": "Traders monitorean: próxima decisión, trend de inflación real vs. narrativa RBI, compresión de spreads USD-INR",
-    "riesgos": "Falta forward guidance; narrativa de inflación 'moderada' es subjetiva. Global rate expectations podrían cambiar y presionar INR."
-   },
-   "macro": {
-    "dolar": "neutral a presión",
-    "oro": "neutral",
-    "nasdaq": "neutral",
-    "dow": "neutral",
-    "sp500": "neutral",
-    "bitcoin": "neutral",
-    "ethereum": "neutral",
-    "bonos": "neutral",
-    "petroleo": "neutral"
-   },
-   "updates": []
-  },
-  {
-   "id": "986233766",
-   "fecha": "2026-08-05T05:00:01.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/05/the-stocks-goldman-gives-more-than-100percent-upside-.html",
-   "via": "CNBC",
-   "original": "The stocks Goldman gives more than 100% upside — with one as high as 168%",
-   "titulo": "Goldman Sachs identifica acciones con upside superior a 100%, una hasta 168%",
-   "resumen": "Goldman Sachs publicó una lista de acciones que ofrece, según su análisis, retornos superiores a 100% en el mediano plazo, con al menos una ofreciendo potencial de hasta 168%. El titular no identifica empresas específicas ni criterios de selección. Refleja postura constructiva del banco sobre mercados de renta variable.",
-   "analisis": {
-    "porque": "Reporte de grandes bancos de inversión sobre potencial alcista de acciones suele generar interés institucional y retail; señala confianza en rally de equities.",
-    "queOcurrio": "Goldman Sachs emitió research identificando múltiples acciones con potencial de retorno muy alto (>100%), incluyendo una con 168%.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "medio",
-   "breaking": false,
-   "activos": [
-    "S&P500",
-    "NASDAQ",
-    "Acciones USA"
-   ],
-   "sesgos": [
-    {
-     "activo": "Equities USA",
-     "sesgo": "alcista"
-    },
-    {
-     "activo": "NASDAQ",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Empresas",
-   "keywords": [
-    "goldman-sachs",
-    "stock-picks",
-    "upside-potential",
-    "research",
-    "equities"
-   ],
-   "tgText": "📈 Goldman Sachs: acciones con potencial >100% upside; una con 168%. Falta detalle de tickers y criterios.",
-   "xText": "Goldman Sachs lista acciones con >100% upside potential, incluyendo una con 168%. Postura constructiva en equities.",
-   "discordText": "**Goldman: Upside en acciones**\n• Multiple picks con >100% potencial\n• Una llega a 168%\n• Señal alcista del banco\n• Tickers no especificados en titular",
-   "pushText": "Goldman identifica acciones con potencial de 100%+ upside",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Retail investors y fondos pequeños pueden buscar cobertura del report en buscadores; demanda selectiva de picks",
-    "despues": "Si identidades se filtran/publican, esas acciones podrían experimentar pump; momentum traders atentos",
-    "escenarios": "Traders atienden: credibilidad de picks histórica de Goldman, sector overlap, si hay sesgo hacia concentración (tech vs. cyclicals)",
-    "riesgos": "Reporte genérico sin nombres específicos; falta validación de criterios. Histórico de predicciones de large caps es mixto."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": "968121973",
-   "fecha": "2026-08-05T04:43:44.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/05/faa-says-it-is-investigating-trump-helicopter-safety-incident-in-washington.html",
-   "via": "CNBC",
-   "original": "FAA says it is investigating Trump helicopter safety incident in Washington",
-   "titulo": "FAA investiga incidente de seguridad en helicóptero de Trump en Washington",
-   "resumen": "La FAA anunció una investigación sobre un incidente de seguridad en un helicóptero en Washington D.C. vinculado a Trump. El titular no proporciona detalles del incidente, severidad, o implicaciones operativas. Información preliminar sin resolución.",
-   "analisis": {
-    "porque": "Incidentes de seguridad presidencial pueden afectar confianza institucional y, en contextos políticos tensos, generar volatilidad en bonos y derivados de riesgo geopolítico.",
-    "queOcurrio": "FAA inició investigación sobre incidente de seguridad en helicóptero presidencial en Washington.",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "Bonos USA",
-    "DXY",
-    "VIX"
-   ],
-   "sesgos": [
-    {
-     "activo": "Bonos USA",
-     "sesgo": "neutral"
-    },
-    {
-     "activo": "Geopolítica",
-     "sesgo": "neutral"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Geopolítica",
-   "keywords": [
-    "trump",
-    "faa",
-    "seguridad",
-    "helicoptero",
-    "investigacion"
-   ],
-   "tgText": "🔍 FAA investiga incidente de seguridad en helicóptero presidencial en Washington. Detalles aún no especificados.",
-   "xText": "FAA abre investigación sobre incidente de seguridad en helicóptero presidencial. Sin detalles de severidad.",
-   "discordText": "**FAA investiga helicóptero presidencial**\n• Incidente en Washington D.C.\n• Investigación de seguridad abierta\n• Detalles limitados\n• Impacto mercado potencial limitado",
-   "pushText": "FAA investiga incidente de seguridad en helicóptero presidencial",
-   "importancia": 4,
-   "reaccion": {
-    "primero": "Bonos USA pueden experimentar micro-compra defensiva si escalara (impacto bajo inicial)",
-    "despues": "VIX y spreads de credit si se revela severidad; mercado de derivados vigila contexto político",
-    "escenarios": "Traders atienden: comunicado oficial FAA/Casa Blanca, comparativo con incidentes históricos, narrativa mediática sobre gobernanza",
-    "riesgos": "Titular es noticia de seguridad sin contexto financiero directo. Riesgo de escalada por politización; falta información técnica."
-   },
-   "macro": null,
-   "updates": []
-  },
-  {
-   "id": 969303742,
-   "fecha": "2026-08-05T01:54:17.000Z",
-   "tgUrl": "https://www.cnbc.com/2026/08/04/stock-market-today-live-updates.html",
-   "via": "CNBC",
-   "original": "S&P 500 futures are little changed after massive rally lifts index to fresh record: Live updates",
-   "titulo": "S&P 500 futures rozan récord histórico tras rally monumental nocturno",
-   "resumen": "Futuros del S&P 500 se mantienen sin cambios pero operan cerca de máximos históricos tras massive rally nocturno que elevó el índice a nivel récord. La sesión nocturna refleja momentum de riesgo sostenido en megacaps tech.",
-   "analisis": {
-    "porque": "S&P 500 a nuevo máximo histórico marcan sentimiento alcista en mercados de renta variable y confianza en narrativa de crecimiento/IA; futuros flat sugieren pausa pero sin quiebre",
-    "queOcurrio": "Rally nocturno de Wall Street llevó S&P 500 a nuevo récord; futuros abren planos pero en línea con cierre máximo",
-    "estado": "confirmado",
-    "fuenteOriginal": "CNBC"
-   },
-   "impacto": "bajo",
-   "breaking": false,
-   "activos": [
-    "S&P 500",
-    "NASDAQ",
-    "Futuros ES",
-    "Tech stocks"
-   ],
-   "sesgos": [
-    {
-     "activo": "S&P 500",
-     "sesgo": "alcista"
-    }
-   ],
-   "volatilidad": "baja",
-   "categoria": "Datos Económicos",
-   "keywords": [
-    "sp500-record",
-    "futuros-es",
-    "rally-nocturno",
-    "mercados-equity"
-   ],
-   "tgText": "📊 S&P 500 en máximos históricos. Futuros sin cambios post-rally nocturno. Mercado descansa en nivel récord. Soportes en vista.",
-   "xText": "S&P 500 cierra en máximo histórico. Futuros ES mantienen nivel post-rally. Pausa técnica pero momentum intacto. $SPY $ES=F",
-   "discordText": "**S&P 500: Nuevo máximo histórico**\n• Rally nocturno consolida récord\n• Futuros sin cambios pero operan en soporte de máximo\n• Pausa técnica sin quiebre de momentum",
-   "pushText": "S&P 500 en máximos históricos; futuros sin cambios",
-   "importancia": 5,
-   "reaccion": {
-    "primero": "Futuros ES/NQ responden a datos macro o reversal técnica (break de máximo vs. consolidación)",
-    "despues": "Renta fija podría presionarse si mercado reinterpreta máximo como 'overstretch'; VIX monitorea volatilidad",
-    "escenarios": "Traders vigilan: (1) volumen de confirmación del máximo, (2) si es breakout o trampa de alcista (bull trap), (3) resistencias próximas, (4) reacción de spreads credit",
-    "riesgos": "Máximos suelen atraer profit-taking; falta contexto de volumen; datos duros (inflación, FOMC) podrían romper relato"
-   },
-   "macro": null,
-   "updates": []
   }
  ],
  "rssVistos": [
-  "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html",
-  "https://www.cnbc.com/select/smart-ways-to-chip-away-at-student-loan-balance/",
-  "https://www.cnbc.com/2026/07/27/trump-says-us-has-sold-more-than-13-billion-of-venezuela-oil-.html",
-  "https://www.cnbc.com/2026/07/27/from-oil-to-shock-heres-what-kalshi-traders-expect-warsh-to-say.html",
-  "https://www.cnbc.com/2026/07/27/stocks-making-the-biggest-moves-after-hours-cdns-rmbs-well.html",
-  "https://www.cnbc.com/2026/07/27/apple-most-valuable-company-nvidia.html",
-  "https://www.cnbc.com/2026/07/27/spacex-has-now-lost-the-equivalent-of-a-full-tesla-in-market-capitalization.html",
-  "https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html",
-  "https://www.cnbc.com/2026/07/27/altman-trump-china-open-weight-ai.html",
   "https://www.cnbc.com/2026/07/27/jim-cramer-warns-ai-circular-financing-echoes-dot-com-bubble.html",
   "https://www.cnbc.com/2026/07/27/trump-supreme-court-mail-in-voting-restrictions.html",
   "https://www.cnbc.com/2026/07/27/yields-are-surging-on-these-inflation-protected-bonds-how-to-use-them.html",
@@ -8042,6 +8042,15 @@
   "https://www.cnbc.com/2026/08/07/martin-heinrich-tax-breaks-overseas-oil-production.html",
   "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html",
   "https://www.cnbc.com/2026/08/08/ukraine-russia-war-fire-point-drones.html",
-  "https://www.cnbc.com/2026/08/08/us-senate-passes-short-term-funding-bill-to-avert-federal-shutdown.html"
+  "https://www.cnbc.com/2026/08/08/us-senate-passes-short-term-funding-bill-to-avert-federal-shutdown.html",
+  "https://www.cnbc.com/2026/08/08/trump-admin-to-invest-3-billion-in-defense-linked-minerals-projects.html",
+  "https://www.cnbc.com/2026/08/08/senate-republicans-narrowly-confirm-todd-blanche-as-attorney-general.html",
+  "https://www.cnbc.com/2026/08/08/record-breaking-week-for-options-powers-sp-500-surge.html",
+  "https://www.cnbc.com/2026/08/08/formula-one-is-lagging-other-sport-stocks-why-analysts-think-its-poised-to-race-ahead.html",
+  "https://www.cnbc.com/2026/08/08/ai-and-job-losses-how-the-next-automation-wave-will-impact-the-workforce.html",
+  "https://www.cnbc.com/2026/08/08/hugging-face-ai-hack-cybersecurity-black-hat.html",
+  "https://www.cnbc.com/2026/08/08/cyclospora-salads-lettuce-restaurants.html",
+  "https://www.cnbc.com/2026/08/08/elevator-giant-otis-stock-wall-street.html",
+  "https://www.cnbc.com/2026/08/08/space-debris-junk-spacex-rocket-moon-crash.html"
  ]
 }
